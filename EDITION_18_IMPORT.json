@@ -1,0 +1,9 @@
+{
+  "edition": 18,
+  "base_commit": "28f090c03092bfa38c23eeb6bfeffb0471e123a5",
+  "overlay_sha256": "43bd2c2641b76f1235c546b10fc0d338f5669df6495ccf755658d3fdf8839e42",
+  "overlay_files": 757,
+  "overlay_uncompressed_bytes": 155443747,
+  "applied_at_utc": "2026-11-24T18:07:05.083504+00:00",
+  "scope": "Publication of locally built, source-mapped edition 18; no claim of a complete mathematical audit"
+}

@@ -1,0 +1,77 @@
+{
+  "created_utc": "2026-11-24T17:15:34.995523+00:00",
+  "dpi": 180,
+  "files": [
+    {
+      "path": "main.pdf",
+      "sha256": "c524e85b036fad4427f5798e52b317b356c51b10ea535a058ad04daccb0a9074",
+      "bytes": 5982587,
+      "page_count": 1210,
+      "rendered": [
+        {
+          "physical_page": 993,
+          "path": "checks/early_final_visual/main_physical_0993.png",
+          "sha256": "af2942f12a19c5e2cba09365a9b59a3b3e30b87f54707e88a45670adec62891c"
+        },
+        {
+          "physical_page": 994,
+          "path": "checks/early_final_visual/main_physical_0994.png",
+          "sha256": "76c3b78058473ef00d470207946e8ba2872e6e01c8853ee1bbe9ac987f2fee49"
+        },
+        {
+          "physical_page": 996,
+          "path": "checks/early_final_visual/main_physical_0996.png",
+          "sha256": "f85a9ad7f4273f5e522459a308b17a155ca7fb5553e59b4aadb82b268022561d"
+        },
+        {
+          "physical_page": 999,
+          "path": "checks/early_final_visual/main_physical_0999.png",
+          "sha256": "d2f9a1e34b417071da1bf01668ff000ef8a1e23738bb5deddedd43568e94e2d8"
+        },
+        {
+          "physical_page": 1000,
+          "path": "checks/early_final_visual/main_physical_1000.png",
+          "sha256": "de2f2e3b431e974d3cdf748ecd8c5cb0675be6629476f5219e6ebcb804a70728"
+        },
+        {
+          "physical_page": 1015,
+          "path": "checks/early_final_visual/main_physical_1015.png",
+          "sha256": "f28c26a8b76fe24b7c401bd33bff8d9445157f4239c682a8123e035375bbf633"
+        },
+        {
+          "physical_page": 1016,
+          "path": "checks/early_final_visual/main_physical_1016.png",
+          "sha256": "cd57cfe9a982374fc6378036f0fc2d0093bf0ffda22b7bbd63b8994bb68e32d0"
+        }
+      ]
+    },
+    {
+      "path": "report.pdf",
+      "sha256": "ff2122b0a7c7306c79b7c15f6b09e7013eb33eab222c346795ae4c7be4051fb0",
+      "bytes": 1770945,
+      "page_count": 357,
+      "rendered": [
+        {
+          "physical_page": 41,
+          "path": "checks/early_final_visual/report_physical_0041.png",
+          "sha256": "2b4568e95508692378813326da36cc2fb30c1436f26cbeea611003ae43704cb6"
+        },
+        {
+          "physical_page": 42,
+          "path": "checks/early_final_visual/report_physical_0042.png",
+          "sha256": "e40fbc58710a7f033aa9426f96a34220012c67aa49cf5f93bf798d567e21fee4"
+        },
+        {
+          "physical_page": 49,
+          "path": "checks/early_final_visual/report_physical_0049.png",
+          "sha256": "a1987b2a4c3ad05579518704e65208f8b2cc9f7e8eefc57a9f5cd67107220419"
+        },
+        {
+          "physical_page": 50,
+          "path": "checks/early_final_visual/report_physical_0050.png",
+          "sha256": "637871048ba4d2dc3df0cfc39f7df82aa144143f0dc71db137d9e0a8de35593e"
+        }
+      ]
+    }
+  ]
+}

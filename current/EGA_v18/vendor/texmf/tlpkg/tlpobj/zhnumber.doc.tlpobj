@@ -1,0 +1,8 @@
+name zhnumber.doc
+category Package
+revision 66115
+shortdesc doc files of zhnumber
+relocated 1
+docfiles size=75
+ RELOC/doc/latex/zhnumber/README.md
+ RELOC/doc/latex/zhnumber/zhnumber.pdf

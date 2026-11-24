@@ -1,0 +1,65 @@
+{
+  "pass": true,
+  "date": "2026-11-25",
+  "scope": "Exact integer and symbolic examples under the polar-matrix convention of 16.1 and corrected discriminant of 16.5; not a classification proof or a full audit of 16.9.",
+  "source_batches": [
+    69,
+    70,
+    71
+  ],
+  "standard_forms": [
+    {
+      "rank": 1,
+      "polar_determinant": 2,
+      "corrected_discriminant": 1,
+      "expected_unit": 1
+    },
+    {
+      "rank": 2,
+      "polar_determinant": -1,
+      "corrected_discriminant": -1,
+      "expected_unit": -1
+    },
+    {
+      "rank": 3,
+      "polar_determinant": -2,
+      "corrected_discriminant": -1,
+      "expected_unit": -1
+    },
+    {
+      "rank": 4,
+      "polar_determinant": 1,
+      "corrected_discriminant": 1,
+      "expected_unit": 1
+    },
+    {
+      "rank": 5,
+      "polar_determinant": 2,
+      "corrected_discriminant": 1,
+      "expected_unit": 1
+    },
+    {
+      "rank": 6,
+      "polar_determinant": -1,
+      "corrected_discriminant": -1,
+      "expected_unit": -1
+    },
+    {
+      "rank": 7,
+      "polar_determinant": -2,
+      "corrected_discriminant": -1,
+      "expected_unit": -1
+    },
+    {
+      "rank": 8,
+      "polar_determinant": 1,
+      "corrected_discriminant": 1,
+      "expected_unit": 1
+    }
+  ],
+  "ternary_form": "a*x^2+b*y^2+c*z^2+d*x*y+e*x*z+f*y*z",
+  "ternary_corrected_discriminant": "4*a*b*c - a*f**2 - b*e**2 - c*d**2 + d*e*f",
+  "rank_one_plus_rank_one_discriminant": "4*a*b",
+  "standard_ternary_corrected_discriminant": -1,
+  "sympy_version": "1.14.0"
+}

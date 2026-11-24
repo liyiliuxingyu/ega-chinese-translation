@@ -1,0 +1,464 @@
+{
+  "schema_version": 1,
+  "status": "integrated_locally_compiled_with_limited_source_and_visual_review",
+  "scope": "EGA V first part 8.1--8.13; Dot batches100--108; no change to 8.14 onward",
+  "input_order": [
+    "continuations/v18_batch100.tex",
+    "continuations/v18_batch101.tex",
+    "continuations/v18_batch102.tex",
+    "continuations/v18_batch103.tex",
+    "continuations/v18_batch104.tex",
+    "continuations/v18_batch105.tex",
+    "continuations/v18_batch106.tex",
+    "continuations/v18_batch107.tex",
+    "continuations/v18_batch108.tex"
+  ],
+  "report": "reports/v18_middle_notes.tex",
+  "legacy_original": {
+    "path": "continuations/v_dot_early.tex",
+    "sha256": "74de97b880e50e2c1dadf3bb8f6f041be8c8b0ce47cb75396f2903e85111b0a3",
+    "replacement_lines_1based": [
+      54,
+      431
+    ],
+    "keep_from_line_1based": 432,
+    "extracted_segment": "integration/middle_legacy_segment.tex",
+    "segment_sha256": "86c61c7dd3d274b8265608d416a9ed1768c7df03aceec3dd730aa8d95d1a21c6",
+    "notes_count": 77
+  },
+  "batches": [
+    {
+      "batch": 100,
+      "source": "dot_updates_20261124/batches/batch100/EGA第五卷_法文覆盖审计_例外超平面余维.tex",
+      "source_sha256": "32a45d49a9e675a0ba885d91fb399f867556622b479c7410b59fab6018c38b61",
+      "source_bytes": 9454,
+      "source_lines": 67,
+      "body_source_line_ranges_1based": [
+        [
+          20,
+          40
+        ]
+      ],
+      "report_source_line_ranges_1based": [
+        [
+          41,
+          62
+        ]
+      ],
+      "removed": "standalone preamble, cover, batch range/next/status; explicit page-break commands",
+      "body_file": "continuations/v18_batch100.tex",
+      "body_sha256": "6a4ac3026991fab7c4abd24943fd59b954ad05f8d30ac69ad206b720bc1c156b",
+      "source_pages_physical": {
+        "french": "30--32",
+        "english": "21--22"
+      },
+      "progress_sha256": "df4a63ce5280431385b627b93a146645e1404fcd98738ef76506e18f64357095",
+      "progress_path": "dot_updates_20261124/batches/batch100/PROGRESS.json"
+    },
+    {
+      "batch": 101,
+      "source": "dot_updates_20261124/batches/batch101/EGA第五卷_法文覆盖审计_Serre条件与截面.tex",
+      "source_sha256": "cf137f173e3493dc429d02a876c7d3b4f8192c0da59601aba6377fd42d2841f7",
+      "source_bytes": 8115,
+      "source_lines": 81,
+      "body_source_line_ranges_1based": [
+        [
+          18,
+          28
+        ]
+      ],
+      "report_source_line_ranges_1based": [
+        [
+          31,
+          76
+        ]
+      ],
+      "removed": "standalone preamble, cover, batch range/next/status; explicit page-break commands",
+      "body_file": "continuations/v18_batch101.tex",
+      "body_sha256": "247b6806c2b136a67fb8ad8a917f41755dcc918b4446c3126b210da8e87f7af6",
+      "source_pages_physical": {
+        "french": "32--33",
+        "english": "22"
+      },
+      "progress_sha256": "0be41177705b9909f1d9ba690a9de33248b6da0e0c3c330c065c03f621fb46f6",
+      "progress_path": "dot_updates_20261124/batches/batch101/PROGRESS.json"
+    },
+    {
+      "batch": 102,
+      "source": "dot_updates_20261124/batches/batch102/EGA第五卷_法文覆盖审计_截面余维下降.tex",
+      "source_sha256": "43a43f4e0ad9772ea3d8442d655dd1a1f5b6a880a3dc2fa7673996c8e0b1d576",
+      "source_bytes": 9740,
+      "source_lines": 92,
+      "body_source_line_ranges_1based": [
+        [
+          22,
+          63
+        ]
+      ],
+      "report_source_line_ranges_1based": [
+        [
+          66,
+          90
+        ]
+      ],
+      "removed": "standalone preamble, cover, batch range/next/status; explicit page-break commands",
+      "body_file": "continuations/v18_batch102.tex",
+      "body_sha256": "b70141753750f7c76ba1cf4554cd58e48ca01786009502ceb63ee3caf1c7066d",
+      "source_pages_physical": {
+        "french": "33--34",
+        "english": "22--24"
+      },
+      "progress_sha256": "aa2aaeb5abceef98ceb4ea5d439c6c266bcf89ce52c0255c7eabad28c8d5d790",
+      "progress_path": "dot_updates_20261124/batches/batch102/PROGRESS.json"
+    },
+    {
+      "batch": 103,
+      "source": "dot_updates_20261124/batches/batch103/EGA第五卷_法文覆盖审计_Serre原阶保持判据.tex",
+      "source_sha256": "a52731a64e23c38385057cebdce369235289008a31f9efcb340e2c19dee42d18",
+      "source_bytes": 8913,
+      "source_lines": 97,
+      "body_source_line_ranges_1based": [
+        [
+          22,
+          66
+        ]
+      ],
+      "report_source_line_ranges_1based": [
+        [
+          68,
+          68
+        ],
+        [
+          71,
+          96
+        ]
+      ],
+      "removed": "standalone preamble, cover, batch range/next/status; explicit page-break commands",
+      "body_file": "continuations/v18_batch103.tex",
+      "body_sha256": "cd31fd5292757f8510038dba80380e3d743516b09845a671994252f63579749f",
+      "source_pages_physical": {
+        "french": "32、34--35",
+        "english": "24--25"
+      },
+      "progress_sha256": "fd7d4b53e5cafab58c9c842da2507b0bee156e63a6740c3394e8a8e5758d7a72",
+      "progress_path": "dot_updates_20261124/batches/batch103/PROGRESS.json"
+    },
+    {
+      "batch": 104,
+      "source": "dot_updates_20261124/batches/batch104/EGA第五卷_余法射影丛与奇异零概形.tex",
+      "source_sha256": "9587c069d0e167f1b1ea11e6e941c0780fd5382871460ab0ca382a9362a4280e",
+      "source_bytes": 10765,
+      "source_lines": 111,
+      "body_source_line_ranges_1based": [
+        [
+          21,
+          54
+        ],
+        [
+          59,
+          97
+        ],
+        [
+          102,
+          106
+        ]
+      ],
+      "report_source_line_ranges_1based": [
+        [
+          55,
+          57
+        ],
+        [
+          99,
+          100
+        ]
+      ],
+      "removed": "standalone preamble, cover, batch range/next/status; explicit page-break commands",
+      "body_file": "continuations/v18_batch104.tex",
+      "body_sha256": "ed3156e67771f6ce72b487a2f58aee1cf931d99cc57595af2ce8bde67325dbef",
+      "source_pages_physical": {
+        "french": "36--39",
+        "english": "25--27"
+      },
+      "progress_sha256": "0839d93189a074bfd1b1b869739ca76c591662cc83491b100ef275494bb0a613",
+      "progress_path": "dot_updates_20261124/batches/batch104/PROGRESS.json"
+    },
+    {
+      "batch": 105,
+      "source": "dot_updates_20261124/batches/batch105/EGA第五卷_奇异参数维数与超奇异判据.tex",
+      "source_sha256": "e108cfb10434a7df121b88c76dd0e7fcd7dc820264abfae66b2b03c6b2bba6bf",
+      "source_bytes": 8113,
+      "source_lines": 70,
+      "body_source_line_ranges_1based": [
+        [
+          21,
+          24
+        ],
+        [
+          32,
+          41
+        ],
+        [
+          51,
+          52
+        ]
+      ],
+      "report_source_line_ranges_1based": [
+        [
+          26,
+          29
+        ],
+        [
+          43,
+          49
+        ],
+        [
+          55,
+          66
+        ]
+      ],
+      "removed": "standalone preamble, cover, batch range/next/status; explicit page-break commands",
+      "body_file": "continuations/v18_batch105.tex",
+      "body_sha256": "e6e2e35372f0fea1901b6a29167685cd866197faed65716635fde49690d71b5f",
+      "source_pages_physical": {
+        "french": "39--40；另对读41--42",
+        "english": "27--29"
+      },
+      "progress_sha256": "a35bef110131e9d02f2c7d098ea3c9ae02abaa2d1279cf16720deba219dd22c0",
+      "progress_path": "dot_updates_20261124/batches/batch105/PROGRESS.json"
+    },
+    {
+      "batch": 106,
+      "source": "dot_updates_20261124/batches/batch106/EGA第五卷_对偶超曲面的泛双有理性.tex",
+      "source_sha256": "f84a56e6673ebc30c1b263b54712bdc276ad6c51497c847a3a4a3716eaf58801",
+      "source_bytes": 9046,
+      "source_lines": 86,
+      "body_source_line_ranges_1based": [
+        [
+          22,
+          44
+        ],
+        [
+          52,
+          73
+        ],
+        [
+          78,
+          82
+        ]
+      ],
+      "report_source_line_ranges_1based": [
+        [
+          46,
+          50
+        ],
+        [
+          75,
+          76
+        ]
+      ],
+      "removed": "standalone preamble, cover, batch range/next/status; explicit page-break commands",
+      "body_file": "continuations/v18_batch106.tex",
+      "body_sha256": "e2b3aa80ce37895df6425ebd3b673bf18dcee7dea784b68504f24e78b153e8eb",
+      "source_pages_physical": {
+        "french": "41--43",
+        "english": "28--30"
+      },
+      "progress_sha256": "7e8e6b51622363cc8fb5b7caf63ca0c2c6176224448f90ae578b8e01d9a46b82",
+      "progress_path": "dot_updates_20261124/batches/batch106/PROGRESS.json"
+    },
+    {
+      "batch": 107,
+      "source": "dot_updates_20261124/batches/batch107/EGA第五卷_双切超平面与特征零判据.tex",
+      "source_sha256": "1a2d6b72fde07c5bb56c1727609661cd32026a740dc2eead12b88ae06d3af948",
+      "source_bytes": 9038,
+      "source_lines": 72,
+      "body_source_line_ranges_1based": [
+        [
+          18,
+          23
+        ],
+        [
+          37,
+          44
+        ],
+        [
+          54,
+          58
+        ],
+        [
+          63,
+          64
+        ],
+        [
+          70,
+          71
+        ]
+      ],
+      "report_source_line_ranges_1based": [
+        [
+          25,
+          35
+        ],
+        [
+          46,
+          51
+        ],
+        [
+          60,
+          61
+        ],
+        [
+          66,
+          67
+        ]
+      ],
+      "removed": "standalone preamble, cover, batch range/next/status; explicit page-break commands",
+      "body_file": "continuations/v18_batch107.tex",
+      "body_sha256": "cbff8c38b38f159aeba2152e324ad5d94fd373f03e0e3b2d6d231bc84bca5462",
+      "source_pages_physical": {
+        "french": "43--45",
+        "english": "30--31"
+      },
+      "progress_sha256": "16d0f99e6e63b00e7836095fbffa06b46f38fca55d3c3fa5b02b2038715c3a19",
+      "progress_path": "dot_updates_20261124/batches/batch107/PROGRESS.json"
+    },
+    {
+      "batch": 108,
+      "source": "dot_updates_20261124/batches/batch108/EGA第五卷_几何正则性的例外超平面.tex",
+      "source_sha256": "f74fc5b785687d3e89b1e301bbc6ccf85e673c515e1d7ad24d82cdf358b8e479",
+      "source_bytes": 9589,
+      "source_lines": 91,
+      "body_source_line_ranges_1based": [
+        [
+          18,
+          41
+        ],
+        [
+          64,
+          69
+        ]
+      ],
+      "report_source_line_ranges_1based": [
+        [
+          43,
+          62
+        ],
+        [
+          72,
+          87
+        ]
+      ],
+      "removed": "standalone preamble, cover, batch range/next/status; explicit page-break commands",
+      "body_file": "continuations/v18_batch108.tex",
+      "body_sha256": "1bb924ec62be92e11bc1b67f4bf748135060ee4b72d3eb82479c20303aaabd4a",
+      "source_pages_physical": {
+        "french": "45--46",
+        "english": "31；另对读32"
+      },
+      "progress_sha256": "657cc22c86a0732b1deb19574c8ec845479851a398ae02aca079e2ca843bd4fd",
+      "progress_path": "dot_updates_20261124/batches/batch108/PROGRESS.json"
+    }
+  ],
+  "source_pdfs": [
+    {
+      "path": "archive_20261121/03_sources/EGA5_francais.pdf",
+      "bytes": 16097021,
+      "sha256": "24cf8204184b58b18a46e5f63ecc36d6e791b3c8c96a09daac93de96ebd8e830",
+      "page_count": 171
+    },
+    {
+      "path": "archive_20261121/03_sources/EGAVaiello.pdf",
+      "bytes": 677332,
+      "sha256": "23a20ef32fd16a1bd623c0c08ac080d04fc94f248de12133b713a19d6b0330d9",
+      "page_count": 112
+    }
+  ],
+  "visual_review": {
+    "rendered_directory": "integration/middle_source_pages",
+    "actually_viewed_physical_pages": {
+      "french": [
+        34,
+        35,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46
+      ],
+      "english": [
+        24,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32
+      ]
+    },
+    "limits": "Only listed page images were actually inspected. Other rendered pages are not counted as reviewed. This is not a complete review of all mathematics."
+  },
+  "unresolved": [
+    "8.7(c) original sentence after the tangent-map introduction remains missing at French40/41 page join.",
+    "8.8 preamble/title not recovered; geometric integrality, locally closed immersion and positive codimension are explicit translator working hypotheses.",
+    "French36 overwritten paragraph number unresolved; thematic heading retained without invented number.",
+    "French35 final rewritten general-criterion sentence and several French45 marginal fragments remain unreadable.",
+    "8.13 no-zero-dimensional-geometric-associated-points assumption is a translator addition, not a recovered source statement.",
+    "8.13(a) uses n>=1; original negative Serre index convention is unstated.",
+    "8.14 and subsequent propositions are retained by parent and not newly audited by this integration.",
+    "External references retained from batches have not all been newly verified; independent proof review remains limited."
+  ],
+  "report_sha256": "0de65261e6f2b99f6f0fafa7f92c760425bfd78ac54d66e8bdc91193fb1db825",
+  "local_probe_validation": [
+    {
+      "kind": "body",
+      "path": "integration/middle_probe_body.pdf",
+      "bytes": 435090,
+      "sha256": "f3b67201f3d94dcbfe19ea0c379be146810089ae82cf0505e50de8b055b28b9e",
+      "page_count": 17,
+      "source_probe": "integration/middle_probe_body.tex",
+      "final_visual_sample_physical_pages": [
+        1,
+        5,
+        6,
+        9,
+        11,
+        14,
+        15,
+        16,
+        17
+      ],
+      "latex_log": "integration/middle_probe_body.log",
+      "log_sha256": "9c478876837cc148294ff802d13e1c800f8170c8d518579b4bae1f8d09f3b323",
+      "overfull_count": 0,
+      "undefined_control_sequence_count": 0,
+      "latex_error_count": 0
+    },
+    {
+      "kind": "report",
+      "path": "integration/middle_probe_report.pdf",
+      "bytes": 490016,
+      "sha256": "db799c256a4958953e066b86f912912dbb84648c032118d374831fee4ed42eee",
+      "page_count": 24,
+      "source_probe": "integration/middle_probe_report.tex",
+      "final_visual_sample_physical_pages": [
+        1,
+        9,
+        12,
+        13,
+        19,
+        24
+      ],
+      "latex_log": "integration/middle_probe_report.log",
+      "log_sha256": "ba57c42579f071dc4a650a36d2436ea158af5e6e4d91c54dec0b5a2045463cf1",
+      "overfull_count": 0,
+      "undefined_control_sequence_count": 0,
+      "latex_error_count": 0
+    }
+  ],
+  "final_visual_review": "integration/middle_visual_review.json",
+  "generator_note": "Re-running middle_integrate.py regenerates sources and resets integration status to pending; it does not repeat compilation or visual review."
+}

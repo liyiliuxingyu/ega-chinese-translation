@@ -1,0 +1,29 @@
+\section*{附录：已撤销（19.3.12）的历史译文}
+\addcontentsline{toc}{section}{附录：已撤销（19.3.12）的历史译文}
+以下仅保存第六版中的原文对照记录，全部陈述和推理都属于被撤销的条目，不是校订正文中的有效命题。本版正文只保留编号、撤销状态及脚注。
+\subsection*{历史条目（19.3.12）}
+\noindent\textbf{作者勘误提示。}作者在勘误清单三（Err$_{\mathrm{IV}}$，8）明确要求删除本条。以下保留初版陈述及证明的中文译文，仅供原文对照，不将其作为有效定理引用。\cmt{F6-A01}{正式勘误见EGA IV第四部分印刷第347页、上传PDF第346页：要求删除（$0_{\mathrm{IV}}$，19.3.12），理由是证明错误，$W_\lambda,U_\lambda,V_\lambda$ 不是线性流形。本书书末的相应作者勘误（见合订本书末）已选译。}
+
+设 $A$ 为拓扑环，$B$ 为形式光滑 $A$-代数，$C$ 为拓扑 $A$-代数，$\mathfrak j$ 为其理想，满足：
+
+$1^\circ$ $C$ 有开理想基本系 $(\mathfrak a_\lambda)$，使 $C_\lambda=C/\mathfrak a_\lambda$ 为Artin环，且典范同态 $C\to\varprojlim_\lambda C_\lambda$ 为拓扑环同构；
+
+$2^\circ$ $\mathfrak j$ 在 $C$ 中闭且拓扑幂零；
+
+$3^\circ$ $B$ 的每个开理想的平方仍开。
+
+则每个连续 $A$-同态 $u:B\to C/\mathfrak j$ 分解为 $B\xrightarrow{v}C\to C/\mathfrak j$，其中 $v$ 连续。
+
+令 $\mathfrak j_\lambda=(\mathfrak j+\mathfrak a_\lambda)/\mathfrak a_\lambda$，它是 $C_\lambda$ 的幂零理想；令 $u_\lambda$ 为 $B\xrightarrow{u}C/\mathfrak j\to C_\lambda/\mathfrak j_\lambda$ 的复合。先证明任意使 $u$ 分解为 $B\xrightarrow{w}C\to C/\mathfrak j$ 的 $A$-同态 $w$ 必连续。事实上，对每个 $\lambda$，存在 $B$ 的开理想 $\mathfrak k$，使 $u(\mathfrak k)\subset(\mathfrak j+\mathfrak a_\lambda)/\mathfrak j$。于是 $w(\mathfrak k)\subset\mathfrak j+\mathfrak a_\lambda$，故某个幂 $\mathfrak k^{2^m}$ 满足 $w(\mathfrak k^{2^m})\subset\mathfrak a_\lambda$。因 $\mathfrak k^{2^m}$ 开，连续性成立。因此只须寻找这样的 $A$-同态 $w$，不必再顾虑连续性。
+
+原证明继续说：全体 $A$-代数同态满足
+\[
+ \Hom(B,C)=\varprojlim_\lambda\Hom(B,C_\lambda),
+\]
+而所考虑的同态集合闭于配备乘积拓扑的 $C$-模 $C_\lambda^B$ 中；由于 $C_\lambda$ 为Artin环，该乘积线性紧。对每个 $\lambda$，令 $W_\lambda$ 为使 $u_\lambda$ 分解为 $B\xrightarrow{w_\lambda}C_\lambda\to C_\lambda/\mathfrak j_\lambda$ 的 $w_\lambda\in\Hom(B,C_\lambda)$ 的集合。原证明称 $W_\lambda$ 是 $C$-模 $\Hom(B,C_\lambda)$ 中的闭线性流形，并由 $B$ 形式光滑得其非空。在乘积
+\[
+ E_\lambda=\prod_{\mu\leq\lambda}\Hom(B,C_\mu)
+\]
+中，考虑满足 $w_\mu=\varphi_{\mu\lambda}\circ w_\lambda$（$\mu\leq\lambda$）且 $w_\lambda\in W_\lambda$ 的族构成的所谓闭线性子流形 $U_\lambda$；其中 $\varphi_{\mu\lambda}:C_\lambda\to C_\mu$ 为典范同态。最后，令 $V_\lambda$ 为全乘积 $\prod_\mu\Hom(B,C_\mu)$ 中，由 $U_\lambda$ 和所有 $\mu\nleq\lambda$ 对应因子的乘积形成的所谓闭线性流形。\cmt{F6-G03}{“模”“线性流形”等用语在此是被撤销原证明的论断，不是本译稿的认定。代数同态的乘法约束非线性；报告给出平方零以外的幂零增厚例子，直接说明固定剩余同态的提升集合也未必为仿射子空间。}
+原证明把问题归结为 $\bigcap_\lambda V_\lambda\ne\varnothing$，因为交中的元素按定义属于 $\varprojlim_\lambda\Hom(B,C_\lambda)$。此外，原证明使用 $\mathfrak j$ 闭以及 $C=\varprojlim C_\lambda$ 线性紧，来识别 $C/\mathfrak j\simeq\varprojlim C_\lambda/\mathfrak j_\lambda$，并把 $\varphi:C\to C/\mathfrak j$ 识别为 $\varprojlim\psi_\lambda$，其中 $\psi_\lambda:C_\lambda\to C_\lambda/\mathfrak j_\lambda$ 为典范映射，继而声称如（19.3.10）得到 $\varphi\circ w=u$。\par
+\noindent\textbf{〔撤销条目译文结束。〕}

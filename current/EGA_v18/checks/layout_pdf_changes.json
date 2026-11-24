@@ -1,0 +1,24 @@
+{
+  "scope": "After two documented layout-only fixes, compare every page of the final book with the previously visually inspected complete book. This records exact affected pages, not mathematical validity.",
+  "before_sha256": "c524e85b036fad4427f5798e52b317b356c51b10ea535a058ad04daccb0a9074",
+  "after_sha256": "2eccd0401f188108655f6d1b21950b9193c7a2d70f326a554218c4f41eb286d4",
+  "before_pages": 1210,
+  "after_pages": 1210,
+  "renderer": "PyMuPDF 1.26.6",
+  "dpi": 72,
+  "changed_pages": {
+    "text": [
+      3,
+      4,
+      1032
+    ],
+    "page_size": [],
+    "pixels": [
+      3,
+      4,
+      1032
+    ]
+  },
+  "equal_count": true,
+  "elapsed_seconds": 15.982
+}

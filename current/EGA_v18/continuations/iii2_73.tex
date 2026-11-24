@@ -1,0 +1,182 @@
+\subsection{模的同调函子的正合性判据}
+\source{第三卷第二部分，原印刷第48--53页}
+
+\egas{7.3.1}{命题}
+设 $A$ 是环（不必交换），$T_\bullet$ 为从 $\mathbf{Ab}_A$ 到 $\mathbf{Ab}$ 的协变同调函子（T，II，2.1），并与直和交换。设整数 $p$ 使得 $T_p,T_{p-1}$ 均已定义。下列条件等价：
+\begin{enumerate}[label=\alph*)]
+\item $T_p$ 右正合。
+\item $T_{p-1}$ 左正合。
+\item 对每个左 $A$-模 $M$，典范函子同态
+\begin{equation}
+ T_p(A_{\mathrm s})\otimes_A M\longrightarrow T_p(M)\tag{7.3.1.1}
+\end{equation}
+为同构。
+\item 对每个左 $A$-模 $M$，（7.3.1.1）为满态射。
+\item $T_p$ 同构于某个 $M\mapsto N\otimes_A M$，其中 $N$ 为右 $A$-模。
+\end{enumerate}
+若 $A,\mathfrak m$ 还满足（7.2.7）的条件，则以上条件还等价于：
+
+\noindent f) 典范同态 $T_p(\varepsilon):T_p(A_{\mathrm s})\to T_p(k)$ 为满态射。
+
+由同调函子的定义，每个已定义的 $T_i$ 都半正合；对短正合列 $0\to M'\xrightarrow{u}M\xrightarrow{v}M''\to0$，有
+\[
+ \Ker T_{p-1}(u)\simeq\Coker T_p(v).
+\]
+因此 a)、b) 等价，其余断言由（7.2.5）和（7.2.7）得出。
+
+\egas{7.3.2}{推论}
+设 $A$ 交换。沿用（7.3.1）的记号，并设 $T_p$ 右正合。若 $f\in A$ 不属于某个 $A$-模 $M$ 中任何非零元素的消去子，则它也不属于 $T_{p-1}(M)$ 中任何非零元素的消去子。特别地，若 $A$ 为整环，则 $T_{p-1}(A)$ 为无挠 $A$-模。
+
+事实上，若 $h_f$ 表示 $M$ 中的数乘 $x\mapsto fx$，假设就是 $h_f$ 单射；由（7.3.1，b），$T_{p-1}(h_f)$ 也单射。
+
+\egas{7.3.3}{命题}
+设 $A$ 为环，$T_\bullet:\mathbf{Ab}_A\to\mathbf{Ab}$ 为与直和交换的协变同调函子。设 $T_{p-1},T_p,T_{p+1}$ 均已定义。下列条件等价：
+\begin{enumerate}[label=\alph*)]
+\item $T_p$ 正合。
+\item $T_{p+1},T_p$ 都右正合。
+\item $T_p,T_{p-1}$ 都左正合。
+\item $T_{p+1}$ 右正合且 $T_{p-1}$ 左正合。
+\item 对每个 $A$-模 $M$，典范同态
+\begin{equation}
+ T_i(A_{\mathrm s})\otimes_A M\longrightarrow T_i(M)\tag{7.3.3.1}
+\end{equation}
+在 $i=p,p+1$ 时均为同构。
+\item[\textup{e')}] 对每个 $M$，（7.3.3.1）在 $i=p,p+1$ 时均为满态射。
+\item[\textup{f)}] 对每个 $M$，（7.3.3.1）在 $i=p$ 时为同构，且右 $A$-模 $T_p(A_{\mathrm s})$ 平坦。
+\item[\textup{f')}] 对每个 $M$，（7.3.3.1）在 $i=p$ 时为满态射，且右 $A$-模 $T_p(A_{\mathrm s})$ 平坦。
+\end{enumerate}
+a)、b)、c)、d) 的等价性来自（7.3.1）中 a)、b) 的等价性。b)、e)、e') 的等价性来自该命题 a)、c)、d) 的等价性。最后，$T_p(A_{\mathrm s})$ 平坦意味着 $M\mapsto T_p(A_{\mathrm s})\otimes_A M$ 左正合；a)、f)、f') 的等价性仍由（7.3.1）的 a)、c)、d) 得出。
+
+\egas{7.3.4}{推论}
+设 $A$ 交换，$T_p$ 正合，且 $T_p(A)$ 为有限表示 $A$-模。则函数
+\[
+ x\longmapsto\dim_{k(x)}T_p(k(x))
+\]
+在 $X=\Spec A$ 上局部恒定；故当 $\Spec A$ 连通时恒定。
+
+由（7.3.3，f），$T_p(A)$ 平坦，因而为有限型投射模，其相伴层局部自由（Bourbaki，\textit{Alg. comm.}，第II章，§5，第2目，定理1）。又由（7.3.3，e）有 $T_p(k(x))\simeq T_p(A)\otimes_A k(x)$。模 $T_p(A)$ 在 $x$ 处的秩局部恒定（同上），故得结论。
+
+\egas{7.3.5}{命题}
+设 $A$ 为左阿廷环，$A/\mathfrak m=k$ 为域，其中 $\mathfrak m$ 是其根基。则（7.3.3）的条件还分别等价于：
+
+\noindent g) 典范同态 $T_i(\varepsilon):T_i(A_{\mathrm s})\to T_i(k)$ 在 $i=p,p+1$ 时均为满态射。
+
+\noindent h) $T_p(\varepsilon)$ 为满态射，且右 $A$-模 $T_p(A_{\mathrm s})$ 平坦；等价地，它自由（Bourbaki，\textit{Alg. comm.}，第II章，§3，第2目，命题5推论2）。
+
+若再设 $A$ 交换且 $A$-模 $T_p(k)$ 的长度为有限数 $d$，则这些条件还分别等价于：
+
+\noindent i) 对每个有限长度 $A$-模 $M$，有
+\begin{equation}
+ \len T_p(M)=d\,\len M.\tag{7.3.5.1}
+\end{equation}
+\noindent j) 有
+\begin{equation}
+ \len T_p(A)=d\,\len A.\tag{7.3.5.2}
+\end{equation}
+g)、h) 与（7.3.3）的条件等价，直接来自（7.2.7）。为证明其余断言，使用下述引理。
+
+\egas{7.3.5.3}{引理}
+设 $\mathbf K,\mathbf K'$ 为阿贝尔范畴，$F:\mathbf K\to\mathbf K'$ 为协变加性、半正合函子，且对 $\mathbf K$ 的每个简单对象 $S$，$F(S)$ 在 $\mathbf K'$ 中具有有限长度。则每个有限长度对象 $E$ 的像 $F(E)$ 都有有限长度；对有限长度对象的短正合列 $0\to E'\to E\to E''\to0$，有
+\begin{equation}
+ \len F(E)\leq\len F(E')+\len F(E'').\tag{7.3.5.4}
+\end{equation}
+等号成立当且仅当 $0\to F(E')\to F(E)\to F(E'')\to0$ 正合。
+
+设短正合列的两个同态为 $u,v$。由假设，$F(E')\xrightarrow{F(u)}F(E)\xrightarrow{F(v)}F(E'')$ 正合。若两端有有限长度，则两像也有有限长度，由 $\Ker F(v)=\Im F(u)$ 得
+\begin{equation}
+ \begin{aligned}
+ \len F(E)&=\len\Im F(u)+\len\Im F(v)\\
+ &\leq\len F(E')+\len F(E'').
+ \end{aligned}\tag{7.3.5.5}
+\end{equation}
+对 $E$ 的长度归纳，已得第一断言。等号成立当且仅当
+\[
+ \len\Im F(u)=\len F(E'),\qquad
+ \len\Im F(v)=\len F(E''),
+\]
+也就是 $\Ker F(u)=0$ 且 $\Coker F(v)=0$。
+
+现在 $A$ 交换，有限长度 $M$ 的 Jordan--Hölder 列的商均同构于 $k$。由（7.3.5.4）对长度归纳可得
+\begin{equation}
+ \len T_p(M)\leq d\,\len M.\tag{7.3.5.6}
+\end{equation}
+若 $T_p$ 正合，（7.3.5.3）给出（7.3.5.1）；故（7.3.3，a）蕴含 i)。i) 蕴含 j)。最后证明下述引理。
+
+\egas{7.3.5.7}{引理}
+等式 $\len T_p(A)=d\,\len A$ 蕴含 $T_p(\varepsilon)$ 为满态射，且 $T_p(A)$ 为平坦 $A$-模。
+
+从 $0\to\mathfrak m\to A\xrightarrow{\varepsilon}k\to0$ 出发，由（7.3.5.4）及（7.3.5.6）得
+\[
+ \len T_p(A)\leq\len T_p(\mathfrak m)+\len T_p(k)
+ \leq d(\len\mathfrak m+\len k)=d\,\len A.
+\]
+等号成立时，由（7.3.5.3），列
+\begin{equation}
+ 0\longrightarrow T_p(\mathfrak m)\longrightarrow T_p(A)
+ \longrightarrow T_p(k)\longrightarrow0\tag{7.3.5.8}
+\end{equation}
+正合。由（7.2.7）及（7.2.5），$T_p$ 同构于 $M\mapsto N\otimes_A M$。由 Tor 长正合列，（7.3.5.8）的正合性给出 $\Tor_1^A(N,k)=0$；因此 $N=T_p(A)$ 平坦（0，10.1.3）。
+
+\egas{7.3.6}{引理}
+设 $A$ 为环，$T_\bullet:\mathbf{Ab}_A\to\mathbf{Ab}$ 为与直和交换的协变同调函子。假设 $T_p,T_{p+1}$ 已定义且 $T_p$ 左正合。则 $T_{p+1}$ 正合当且仅当右 $A$-模 $T_{p+1}(A_{\mathrm s})$ 平坦。
+
+由（7.3.1），典范同态 $T_{p+1}(A_{\mathrm s})\otimes_A M\to T_{p+1}(M)$ 为函子同构；应用平坦模的定义即可。
+
+\egas{7.3.7}{命题}
+设 $A$ 为环，$T_\bullet:\mathbf{Ab}_A\to\mathbf{Ab}$ 为与直和交换的协变同调函子，且存在 $i_0$ 使得 $i\leq i_0$ 时 $T_i$ 正合。那么对每个 $p>i_0$，下列条件等价：
+\begin{enumerate}[label=\alph*)]
+\item $T_q$ 对所有 $q\leq p$ 正合；
+\item $T_q(A_{\mathrm s})$ 对所有 $q\leq p$ 为平坦右 $A$-模；
+\item 对每个 $A$-模 $M$ 及每个 $q\leq p+1$，典范同态 $T_q(A_{\mathrm s})\otimes_A M\to T_q(M)$ 满射。
+\end{enumerate}
+由 $T_{i_0}$ 正合及（7.3.6），对 $q$ 归纳可得 a)、b) 等价；a)、c) 的等价性来自（7.3.3）的 a)、e') 等价。
+
+\egap{7.3.8}
+若 $A$ 为交换环，$B$ 为 $A$-代数（不必交换），$T_\bullet:\mathbf{Ab}_A\to\mathbf{Ab}$ 为协变同调函子，则由定义（7.1.3），从 $A$ 到 $B$ 标量扩张所得的函子
+\[
+ T_\bullet^{(B)}=(T_i^{(B)}):\mathbf{Ab}_B\longrightarrow\mathbf{Ab}
+\]
+仍为同调函子。
+
+\egas{7.3.9}{推论}
+设 $T_\bullet$ 满足（7.3.7）的一般条件，并与归纳极限交换；再设 $A$ 为整环，各 $T_i(A)$ 均为有限表示 $A$-模。则对每个整数 $N$，存在 $f\in A-\{0\}$，使得 $p\leq N$ 时 $T_p^{(A_f)}$ 正合。
+
+当 $i\leq i_0$ 时，$T_i$ 依假设正合，故 $T_i(A)$ 平坦。由（7.3.7，b），只须选择 $f$，使 $i_0\leq p\leq N$ 时 $T_p^{(A_f)}(A_f)=T_p(A_f)$ 自由。由（7.1.4），$T_p(A_f)=(T_p(A))_f$。若 $x$ 是 $\Spec A$ 的泛点，则 $(T_p(A))_x$ 为分式域上的有限维向量空间。各 $T_p(A)$ 有限表示，故存在这样的 $f$（Bourbaki，\textit{Alg. comm.}，第II章，§5，第1目，命题2推论）。
+
+注意：若仅有有限个 $T_i$ 非零，则可选择同一个 $f\ne0$，使所有 $T_i^{(A_f)}$ 正合。
+
+\egas{7.3.10}{推论}
+设 $T_\bullet$ 满足（7.3.7）的一般条件，且与归纳极限交换；设 $A$ 交换且诺特，各 $T_i(A)$ 均为有限型 $A$-模。那么对每个整数 $N$，存在 $\Spec A$ 的稠密开子集 $U$，使对每个 $p\leq N$，函数 $x\mapsto\dim_{k(x)}T_p(k(x))$ 在 $U$ 中恒定。
+\cmt{C3-E01}{“恒定”按字面不成立，一般只能断言“局部恒定”（并可在各不可约分支的稠密开子集上分别恒定）。反例及原证明中的另一处问题见核查报告；此处保留原陈述。}
+
+设 $\mathfrak p$ 为 $A$ 的极小素理想，$B=A/\mathfrak p$ 为整环，$\Spec B$ 认作 $\Spec A$ 的一个不可约分支。我们对 $p\leq N$ 归纳，证明存在 $f_p\in B-\{0\}$，令 $B'=B_{f_p}$ 后，对 $i\leq p$，$T_i^{(B')}$ 正合且 $T_i(B')$ 为有限型 $B'$-模。当 $p\leq i_0$ 时取 $f_p=1$：因 $T_p$ 正合，$T_p(B)$ 是 $T_p(A)$ 的商，故为有限型 $A$-模，也为有限型 $B$-模。
+
+设已得某个 $p$ 的结论。$f_p$ 是某个 $g_p\in A$ 的像。置 $A'=A_{g_p}$，则 $B'=A'/\mathfrak p'$，其中 $\mathfrak p'=\mathfrak p_{g_p}$ 为 $A'$ 的极小素理想。由 $T_i(A_{g_p})=(T_i(A))_{g_p}$，$T_i(A')$ 有限型。因此 $T_\bullet^{(A')}$ 满足相同的假设，而原文在此将 $i_0$ 换成 $p$，并归结为 $A'=A$ 且 $T_p$ 正合的情形。于是短正合列 $0\to\mathfrak p\to A\to A/\mathfrak p\to0$ 给出
+\[
+ T_{p+1}(A)\longrightarrow T_{p+1}(A/\mathfrak p)
+ \longrightarrow T_p(\mathfrak p)\longrightarrow T_p(A).
+\]
+最后一个同态单射，故 $T_{p+1}(A/\mathfrak p)$ 为 $T_{p+1}(A)$ 的商，因而有限型。注意（7.3.9）的论证只对 $p\leq N$ 使用 $T_p(A)$ 有限型这一事实，所以可将它用于整环 $B$、函子 $T_\bullet^{(B)}$ 以及 $N=p+1$，完成归纳。
+\cmt{C3-G02}{这里从商环上的函子正合性提升到原环上的正合性，未由先前归纳假设证明；报告将此与下段局部环等同的错误一起分列为证明缺口，不用一个排印改动掩盖。}
+
+于是可取 $f_{\mathfrak p}\in B-\{0\}$，使 $\Spec B_{f_{\mathfrak p}}$ 为 $\Spec B$ 中处处稠密且不遇 $\Spec A$ 其他不可约分支的开集 $V$。若对 $B_{f_{\mathfrak p}}$ 已证明命题，就会在 $V$ 中得到处处稠密的开集 $W$，使所述函数在 $W$ 恒定；原文在此使用了对 $x\in W$ 的等式 $A_x=(B_{f_{\mathfrak p}})_x$。
+\cmt{C3-G03}{上述局部环等式一般错误：取 $A=k[\epsilon]/(\epsilon^2)$、$\mathfrak p=(\epsilon)$，便得到 $A_x=A\ne k=B_x$。余域却可典范等同，不能将这两个说法混同。}
+对每个不可约分支重复这一论证，原文便认为推论得证。于是归结为 $A$ 整；此时（7.3.9）的论证可给出 $f\in A-\{0\}$，使 $p\leq N$ 时 $T_p(A_f)$ 为有限型自由 $A_f$-模，再由（7.3.4）得出结论。
+
+\egas{7.3.11}{命题}
+设 $A$ 为交换局部环，$k$ 为其剩余域，$T_\bullet:\mathbf{Ab}_A\to\mathbf{Ab}$ 为与直和交换的协变同调函子。假设存在 $i_0$ 使 $i\leq i_0$ 时 $T_i$ 正合，并且各 $T_i(A)$ 均有限表示。则（7.3.7）中等价的 a)、b)、c) 蕴含以下两个条件；若 $A$ 还约化，则也与它们等价：
+
+\noindent d) 对任意 $x\in\Spec A$ 及 $q\leq p$，有 $\dim_{k(x)}T_q(k(x))=\dim_kT_q(k)$。
+
+\noindent d') 对每个不可约分支的泛点 $x_i$ 及 $q\leq p$，有 $\dim_{k(x_i)}T_q(k(x_i))=\dim_kT_q(k)$。
+
+因 $T_q(A)$ 有限表示，（7.3.7，b）等价于 $q\leq p$ 时 $T_q(A)$ 自由（Bourbaki，\textit{Alg. comm.}，第II章，§3，第2目，命题5推论2）；条件 c) 又给出 $T_q(k(x))\simeq T_q(A)\otimes_A k(x)$，故得到 d)。d) 显然蕴含 d')。
+
+当 $A$ 约化时，证明 d') 蕴含 a)。因 $q\leq i_0$ 时 $T_q$ 正合，可作归纳。设对 $j\leq q<p$ 已知 $T_j$ 正合，证明 $T_{q+1}(A)$ 自由。由（7.3.7，c）及（7.3.3），对任意 $M$ 有 $T_{q+1}(A)\otimes_A M\simeq T_{q+1}(M)$。分别取 $M=k(x_i)$ 和 $M=k$，由 d') 得
+\[
+ \dim_{k(x_i)}\bigl(T_{q+1}(A)\otimes_A k(x_i)\bigr)
+ =\dim_kT_{q+1}(k).
+\]
+这蕴含 $T_{q+1}(A)$ 自由（Bourbaki，\textit{Alg. comm.}，第II章，§3，第2目，命题7），完成证明。
+
+对下一目（7.4）将研究的特殊同调函子，上述结果可大为加强：将得到只涉及某一个 $T_p$ 的正合性判据。

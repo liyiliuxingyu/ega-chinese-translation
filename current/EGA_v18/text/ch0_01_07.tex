@@ -1,0 +1,4508 @@
+\renewcommand{\B}{\mathfrak B}
+\setcounter{chapter}{-1}
+\chapter{预备知识}
+
+% BEGIN chapters/ch0_s1.tex
+\section{分式环}\hypertarget{heading:0:1}{}
+\setcounter{subsection}{-1}
+\subsection{环与代数}\hypertarget{heading:0:1.0}{}
+\src{11—12}
+
+\egapar{1.0.1}
+本专著所考虑的一切环都具有单位元；这样的环上的一切模都假定为酉模；
+环同态总是假定将单位元映为单位元。
+除非明确作出相反说明，环 $A$ 的子环总是假定包含 $A$ 的单位元。
+我们主要考虑交换环；当不加限定地说到环时，即默认为交换环。
+若 $A$ 是一个不一定交换的环，则除非明确作出相反说明，$A$-模总是指左模。
+
+\egapar{1.0.2}
+设 $A,B$ 为两个不一定交换的环，$\varphi\colon A\to B$ 为同态。
+任一左 $B$-模（分别地，右 $B$-模）$M$ 都可以通过规定
+\[
+ a\cdot m=\varphi(a)\cdot m
+ \qquad\text{（分别地， }m\cdot a=m\cdot\varphi(a)\text{）}
+\]
+而赋予左 $A$-模（分别地，右 $A$-模）结构。
+需要区别 $M$ 上的 $A$-模结构与 $B$-模结构时，将如此定义的左（分别地，右）$A$-模记为 $M_{[\varphi]}$。
+因此，若 $L$ 为 $A$-模，则同态 $u\colon L\to M_{[\varphi]}$ 就是一个交换群同态，满足
+\[
+ u(a\cdot x)=\varphi(a)\cdot u(x)\qquad(a\in A,\ x\in L).
+\]
+也称它为一个 $\varphi$-同态 $L\to M$，并称二元组 $(\varphi,u)$
+（或略不严格地说，$u$）为从 $(A,L)$ 到 $(B,M)$ 的\emph{二重同态}
+（\textit{di-homomorphisme}）。
+由环 $A$ 及 $A$-模 $L$ 组成的二元组 $(A,L)$，因而构成一个以二重同态为态射的范畴。
+
+\egapar{1.0.3}
+在（\hyperlink{para:0:1.0.2}{1.0.2}）的假设下，若 $\mathfrak I$ 为 $A$ 的左理想（分别地，右理想），
+则以 $B\mathfrak I$（分别地，$\mathfrak I B$）表示由 $\varphi(\mathfrak I)$ 生成的
+$B$ 的左理想 $B\varphi(\mathfrak I)$（分别地，右理想 $\varphi(\mathfrak I)B$）。
+它也是左 $B$-模（分别地，右 $B$-模）的典范同态
+\[
+ B\otimes_A\mathfrak I\longrightarrow B
+ \qquad\text{（分别地， }\mathfrak I\otimes_A B\longrightarrow B\text{）}
+\]
+的像。
+
+\egapar{1.0.4}
+若 $A$ 为交换环，而 $B$ 为不一定交换的环，则在 $B$ 上给定一个 $A$-代数结构，
+等价于给定一个环同态 $\varphi\colon A\to B$，使得 $\varphi(A)$ 包含在 $B$ 的中心内。
+这时，对 $A$ 的任一理想 $\mathfrak I$，$\mathfrak I B=B\mathfrak I$ 是 $B$ 的双边理想；
+对任一 $B$-模 $M$，$\mathfrak I M$ 是一个 $B$-模，并且等于 $(B\mathfrak I)M$。
+
+\egapar{1.0.5}
+我们不再重述有限型模及有限型交换代数的概念。
+说 $A$-模 $M$ 是有限型的，就是说存在正合列
+\[
+ A^p\longrightarrow M\longrightarrow0.
+\]
+若一个 $A$-模 $M$ 同构于某个同态 $A^p\to A^q$ 的余核，换言之，若存在正合列
+\[
+ A^p\longrightarrow A^q\longrightarrow M\longrightarrow0,
+\]
+则称 $M$ 具有\emph{有限表示}。
+注意，在诺特环 $A$ 上，每个有限型 $A$-模都具有有限表示。
+
+回忆一下，若 $A$-代数 $B$ 的每个元素都是某个以 $A$ 中元素为系数的首一多项式在 $B$ 中的根，
+则称 $B$ 在 $A$ 上是\emph{整的}。
+这也等价于说，$B$ 的每个元素都包含在 $B$ 的某个子代数中，而这个子代数是有限型 $A$-模。
+当此条件成立且 $B$ 交换时，由 $B$ 的任一有限子集生成的子代数都是有限型 $A$-模。
+因此，交换代数 $B$ 在 $A$ 上既整又有限型，当且仅当 $B$ 是有限型 $A$-模；
+此时也称 $B$ 为\emph{有限整 $A$-代数}，或在不致混淆时简称为\emph{有限 $A$-代数}。
+须注意，这些定义并不要求定义 $A$-代数结构的同态 $A\to B$ 是单射。
+
+\egapar{1.0.6}
+\emph{整环}是指满足下述条件的环：任一有限族非零元素的乘积都非零。
+等价地说，在这样的环中，$0\ne1$，且两个非零元素的乘积非零。
+环 $A$ 的\emph{素理想}是使 $A/\mathfrak p$ 成为整环的理想 $\mathfrak p$；
+这特别蕴含 $\mathfrak p\ne A$。
+环 $A$ 至少具有一个素理想，当且仅当 $A\ne\{0\}$。
+
+\egapar{1.0.7}
+\emph{局部环}是恰有一个极大理想的环 $A$；这个极大理想就是可逆元集合的补集，
+并包含所有不等于 $A$ 的理想。
+若 $A,B$ 为两个局部环，$\mathfrak m,\mathfrak n$ 分别为其极大理想，
+则称同态 $\varphi\colon A\to B$ 是\emph{局部的}，若
+$\varphi(\mathfrak m)\subseteq\mathfrak n$，或等价地，
+$\varphi^{-1}(\mathfrak n)=\mathfrak m$。
+通过取商，这样的同态定义了一个从剩余域 $A/\mathfrak m$ 到剩余域 $B/\mathfrak n$ 的单同态。
+两个局部同态的复合仍为局部同态。
+
+\subsection{理想的根；环的幂零根与根}\hypertarget{heading:0:1.1}{}
+\src{12}
+
+\egapar{1.1.1}
+设 $\mathfrak a$ 为环 $A$ 的理想。
+$\mathfrak a$ 的\emph{根}记为 $\mathfrak r(\mathfrak a)$，是所有满足
+$x^n\in\mathfrak a$（对至少一个整数 $n>0$）的元素 $x\in A$ 组成的集合；
+它是包含 $\mathfrak a$ 的理想。
+有 $\mathfrak r(\mathfrak r(\mathfrak a))=\mathfrak r(\mathfrak a)$；
+$\mathfrak a\subseteq\mathfrak b$ 蕴含
+$\mathfrak r(\mathfrak a)\subseteq\mathfrak r(\mathfrak b)$；
+有限个理想之交的根等于这些理想的根之交。
+若 $\varphi$ 为从环 $A'$ 到 $A$ 的同态，则对任一理想 $\mathfrak a\subseteq A$，有
+\[
+ \mathfrak r\bigl(\varphi^{-1}(\mathfrak a)\bigr)
+ =\varphi^{-1}\bigl(\mathfrak r(\mathfrak a)\bigr).
+\]
+一个理想是某个理想的根，当且仅当它是素理想的交。
+理想 $\mathfrak a$ 的根等于包含 $\mathfrak a$ 的素理想中所有极小者之交；
+若 $A$ 是诺特环，则这些极小素理想只有有限个。
+
+理想 $(0)$ 的根也称为 $A$ 的\emph{幂零根}；它是 $A$ 的所有幂零元组成的集合 $\mathfrak N$。
+若 $\mathfrak N=(0)$，则称环 $A$ 是\emph{约化的}。
+对任意环 $A$，它对其幂零根的商环 $A/\mathfrak N$ 都是约化环。
+
+\egapar{1.1.2}
+回忆一下，环 $A$（不一定交换）的\emph{根} $\mathfrak R(A)$，是 $A$ 的所有极大左理想的交，
+也等于所有极大右理想的交。
+$A/\mathfrak R(A)$ 的根为 $(0)$。
+
+\subsection{分式模与分式环}\hypertarget{heading:0:1.2}{}
+\src{13—14}
+
+\egapar{1.2.1}
+若环 $A$ 的子集 $S$ 满足 $1\in S$，且 $S$ 中任意两个元素的乘积仍在 $S$ 中，
+则称 $S$ 是\emph{乘法子集}。
+以下最重要的例子是：
+$1^\circ$，某个元素 $f\in A$ 的所有幂 $f^n$（$n\ge0$）组成的集合 $S_f$；
+$2^\circ$，$A$ 的一个素理想 $\mathfrak p$ 的补集 $A\setminus\mathfrak p$。
+
+\egapar{1.2.2}
+设 $S$ 为环 $A$ 的乘法子集，$M$ 为 $A$-模。
+在集合 $M\times S$ 中，规定二元组 $(m_1,s_1)$ 与 $(m_2,s_2)$ 之间的关系为
+\[
+ \text{“存在 }s\in S\text{，使得 }s(s_2m_1-s_1m_2)=0\text{”}.
+\]
+这是一个等价关系。
+以 $S^{-1}M$ 表示 $M\times S$ 对此关系的商集，以 $m/s$ 表示二元组 $(m,s)$ 在 $S^{-1}M$ 中的典范像；
+称映射 $i_M^S\colon m\mapsto m/1$（也记为 $i^S$）为从 $M$ 到 $S^{-1}M$ 的\emph{典范映射}。
+这个映射通常既不是单射也不是满射；其核由那些满足 $sm=0$（对某个 $s\in S$）的 $m\in M$ 组成。
+
+在 $S^{-1}M$ 中，通过规定
+\[
+ \frac{m_1}{s_1}+\frac{m_2}{s_2}
+ =\frac{s_2m_1+s_1m_2}{s_1s_2}
+\]
+定义加法群运算；可以验证，这与所考虑的 $S^{-1}M$ 中元素的表达方式无关。
+在 $S^{-1}A$ 上，再通过
+\[
+ \frac{a_1}{s_1}\frac{a_2}{s_2}=\frac{a_1a_2}{s_1s_2}
+\]
+定义乘法。最后，在 $S^{-1}M$ 上以 $S^{-1}A$ 为算子集合，通过
+\[
+ \frac a s\frac m{s'}=\frac{am}{ss'}
+\]
+定义外部运算。
+于是可以验证，$S^{-1}A$ 被赋予一个环结构，称为 $A$ 的\emph{以 $S$ 中元素为分母的分式环}；
+$S^{-1}M$ 被赋予一个 $S^{-1}A$-模结构，称为 $M$ 的\emph{以 $S$ 中元素为分母的分式模}。
+对每个 $s\in S$，$s/1$ 在 $S^{-1}A$ 中可逆，其逆元为 $1/s$。
+典范映射 $i_A^S$ 是环同态，$i_M^S$ 是 $A$-模同态；
+这里借助同态 $i_A^S\colon A\to S^{-1}A$ 将 $S^{-1}M$ 看作 $A$-模。
+
+\egapar{1.2.3}
+若对某个 $f\in A$ 有 $S=S_f=\{f^n\}_{n\ge0}$，则将 $S^{-1}A,S^{-1}M$ 分别记为 $A_f,M_f$。
+把 $A_f$ 看作 $A$ 上的代数时，也可以写成 $A_f=A[1/f]$。
+$A_f$ 同构于商代数 $A[T]/(fT-1)A[T]$。
+当 $f=1$ 时，$A_f,M_f$ 分别典范地等同于 $A,M$；若 $f$ 是幂零元，则 $A_f,M_f$ 均为零。
+
+当 $S=A\setminus\mathfrak p$，其中 $\mathfrak p$ 为 $A$ 的素理想时，
+将 $S^{-1}A,S^{-1}M$ 分别记为 $A_{\mathfrak p},M_{\mathfrak p}$。
+$A_{\mathfrak p}$ 是局部环，其极大理想 $\mathfrak q$ 由 $i_A^S(\mathfrak p)$ 生成，且
+$(i_A^S)^{-1}(\mathfrak q)=\mathfrak p$。
+通过取商，$i_A^S$ 给出从整环 $A/\mathfrak p$ 到域 $A_{\mathfrak p}/\mathfrak q$ 的单同态；
+后者等同于 $A/\mathfrak p$ 的分式域。
+
+\egapar{1.2.4}
+分式环 $S^{-1}A$ 连同典范同态 $i_A^S$ 是一个\emph{泛映射问题}的解：
+凡是从 $A$ 到环 $B$ 的同态 $u$，只要 $u(S)$ 中的元素在 $B$ 中均可逆，就唯一地分解为
+\[
+ u\colon A\xrightarrow{i_A^S}S^{-1}A\xrightarrow{u^*}B,
+\]
+其中 $u^*$ 为环同态。
+在相同假设下，设 $M$ 为 $A$-模，$N$ 为 $B$-模，$v\colon M\to N$ 为 $A$-模同态；
+这里使用 $u\colon A\to B$ 在 $N$ 上诱导的 $A$-模结构。\transnote{
+原版第 14 页括号内印作“由 $u\colon A\to B$ 定义的 $N$ 上的 $B$-模结构”。
+结合本句的“$A$-模同态”以及（\hyperlink{para:0:1.0.2}{1.0.2}），此处应为限制标量所得的 $A$-模结构，译文据此作了明示的记号校订。}
+则 $v$ 唯一地分解为
+\[
+ v\colon M\xrightarrow{i_M^S}S^{-1}M\xrightarrow{v^*}N,
+\]
+其中 $v^*$ 是 $S^{-1}A$-模同态；$N$ 上的 $S^{-1}A$-模结构由 $u^*$ 给定。
+
+\egapar{1.2.5}
+令元素 $(a/s)\otimes m$ 对应于 $(am)/s$，就定义了一个 $S^{-1}A$-模的典范同构
+\[
+ S^{-1}A\otimes_A M\xrightarrow{\sim}S^{-1}M.
+\]
+其逆同构将 $m/s$ 映为 $(1/s)\otimes m$。
+
+\egapar{1.2.6}
+对 $S^{-1}A$ 的每个理想 $\mathfrak a'$，$\mathfrak a=(i_A^S)^{-1}(\mathfrak a')$ 是 $A$ 的理想，
+且 $\mathfrak a'$ 是 $S^{-1}A$ 中由 $i_A^S(\mathfrak a)$ 生成的理想，它等同于 $S^{-1}\mathfrak a$（\hyperlink{para:0:1.3.2}{1.3.2}）。
+映射 $\mathfrak p'\mapsto(i_A^S)^{-1}(\mathfrak p')$，是从 $S^{-1}A$ 的素理想集合到
+$A$ 中满足 $\mathfrak p\cap S=\varnothing$ 的素理想集合的序同构。
+此外，这时局部环 $A_{\mathfrak p}$ 与 $(S^{-1}A)_{S^{-1}\mathfrak p}$ 典范同构（\hyperlink{para:0:1.5.1}{1.5.1}）。
+
+\egapar{1.2.7}
+若 $A$ 为整环，以 $K$ 表示其分式域，则对每个不含 $0$ 的乘法子集 $S$，
+典范映射 $i_A^S\colon A\to S^{-1}A$ 都是单射；
+于是 $S^{-1}A$ 典范地等同于 $K$ 的一个包含 $A$ 的子环。
+特别地，对 $A$ 的任一素理想 $\mathfrak p$，$A_{\mathfrak p}$ 是包含 $A$ 的局部环，
+其极大理想为 $\mathfrak pA_{\mathfrak p}$，并有 $\mathfrak pA_{\mathfrak p}\cap A=\mathfrak p$。
+
+\egapar{1.2.8}
+若 $A$ 是约化环（\hyperlink{para:0:1.1.1}{1.1.1}），则 $S^{-1}A$ 也约化。
+事实上，若 $x\in A,s\in S$ 且 $(x/s)^n=0$，则存在 $s'\in S$ 使 $s'x^n=0$，
+从而 $(s'x)^n=0$。由假设得 $s'x=0$，所以 $x/s=0$。
+
+\subsection{函子性质}\hypertarget{heading:0:1.3}{}
+\src{14—15}
+
+\egapar{1.3.1}
+设 $M,N$ 为两个 $A$-模，$u\colon M\to N$ 为 $A$-同态。
+若 $S$ 为 $A$ 的乘法子集，则由
+\[
+ (S^{-1}u)(m/s)=u(m)/s
+\]
+定义一个 $S^{-1}A$-同态 $S^{-1}M\to S^{-1}N$，记为 $S^{-1}u$。
+若将 $S^{-1}M,S^{-1}N$ 分别典范地等同于 $S^{-1}A\otimes_A M,S^{-1}A\otimes_A N$（\hyperlink{para:0:1.2.5}{1.2.5}），
+则 $S^{-1}u$ 等同于 $1\otimes u$。
+若 $P$ 为第三个 $A$-模，$v\colon N\to P$ 为 $A$-同态，则
+\[
+ S^{-1}(v\circ u)=(S^{-1}v)\circ(S^{-1}u).
+\]
+换言之，在固定 $A,S$ 时，$S^{-1}M$ 是关于 $M$ 的协变函子，
+从 $A$-模范畴取值于 $S^{-1}A$-模范畴。
+
+\egapar{1.3.2}
+函子 $S^{-1}M$ 是正合的；就是说，若列
+\[
+ M\xrightarrow{u}N\xrightarrow{v}P
+\]
+正合，则列
+\[
+ S^{-1}M\xrightarrow{S^{-1}u}S^{-1}N\xrightarrow{S^{-1}v}S^{-1}P
+\]
+也正合。
+特别地，若 $u\colon M\to N$ 为单射（分别地，满射），则 $S^{-1}u$ 也为单射（分别地，满射）。
+若 $N,P$ 是 $M$ 的两个子模，则 $S^{-1}N,S^{-1}P$ 典范地等同于 $S^{-1}M$ 的子模，且有
+\[
+ \begin{aligned}
+ S^{-1}(N+P)&=S^{-1}N+S^{-1}P,\\
+ S^{-1}(N\cap P)&=(S^{-1}N)\cap(S^{-1}P).
+ \end{aligned}
+\]
+
+\egapar{1.3.3}
+设 $(M_\alpha,\varphi_{\beta\alpha})$ 为 $A$-模的一个归纳系，
+则 $(S^{-1}M_\alpha,S^{-1}\varphi_{\beta\alpha})$ 是 $S^{-1}A$-模的归纳系。
+将 $S^{-1}M_\alpha$ 及 $S^{-1}\varphi_{\beta\alpha}$ 写为张量积（\hyperlink{para:0:1.2.5}{1.2.5}、\hyperlink{para:0:1.3.1}{1.3.1}），
+由张量积运算与归纳极限可交换，得到典范同构
+\[
+ S^{-1}\bigl(\ilim M_\alpha\bigr)\xrightarrow{\sim}\ilim S^{-1}M_\alpha.
+\]
+也就是说，关于 $M$ 的函子 $S^{-1}M$ 与归纳极限可交换。
+
+\egapar{1.3.4}
+设 $M,N$ 为两个 $A$-模。存在一个关于 $M,N$ 的典范函子性同构
+\[
+ (S^{-1}M)\otimes_{S^{-1}A}(S^{-1}N)
+ \xrightarrow{\sim}S^{-1}(M\otimes_A N),
+\]
+它将 $(m/s)\otimes(n/t)$ 映为 $(m\otimes n)/(st)$。
+
+\egapar{1.3.5}
+同样，有一个关于 $M,N$ 的函子性同态
+\[
+ S^{-1}\Hom_A(M,N)\longrightarrow
+ \Hom_{S^{-1}A}(S^{-1}M,S^{-1}N),
+\]
+将 $u/s$ 映为同态 $m/t\mapsto u(m)/(st)$。
+当 $M$ 具有有限表示时，这个同态是同构。
+$M$ 具有 $A^r$ 的形式时，这一点是显然的；
+从正合列 $A^p\to A^q\to M\to0$ 出发，利用函子 $S^{-1}M$ 的正合性以及
+$\Hom_A(M,N)$ 关于 $M$ 的左正合性，就过渡到一般情形。
+注意，当 $A$ 是诺特环而 $M$ 为有限型 $A$-模时，总会出现这种情形。
+
+\subsection{乘法子集的变换}\hypertarget{heading:0:1.4}{}
+\src{15—17}
+
+\egapar{1.4.1}
+设 $S,T$ 为环 $A$ 的两个乘法子集，且 $S\subseteq T$。
+存在一个典范同态 $\rho_A^{T,S}$（或简记为 $\rho^{T,S}$）从 $S^{-1}A$ 到 $T^{-1}A$，
+将 $S^{-1}A$ 中记为 $a/s$ 的元素映为 $T^{-1}A$ 中记为 $a/s$ 的元素；有
+$i_A^T=\rho_A^{T,S}\circ i_A^S$。
+对任一 $A$-模 $M$，同样存在一个 $S^{-1}A$-线性映射 $S^{-1}M\to T^{-1}M$，
+将 $S^{-1}M$ 中的 $m/s$ 映为 $T^{-1}M$ 中的 $m/s$；
+后者借助 $\rho_A^{T,S}$ 看作 $S^{-1}A$-模。
+这个映射记为 $\rho_M^{T,S}$，或简记为 $\rho^{T,S}$，并且仍有
+$i_M^T=\rho_M^{T,S}\circ i_M^S$。
+在（\hyperlink{para:0:1.2.5}{1.2.5}）的典范等同下，$\rho_M^{T,S}$ 等同于 $\rho_A^{T,S}\otimes1$。
+同态 $\rho^{T,S}$ 是从函子 $S^{-1}M$ 到函子 $T^{-1}M$ 的\emph{函子态射}，或\emph{自然变换}；
+就是说，对任一同态 $u\colon M\to N$，交换图
+\[
+\begin{tikzcd}[column sep=large,row sep=large]
+S^{-1}M \arrow[r,"S^{-1}u"] \arrow[d,"\rho_M^{T,S}"'] & S^{-1}N \arrow[d,"\rho_N^{T,S}"]\\
+T^{-1}M \arrow[r,"T^{-1}u"'] & T^{-1}N
+\end{tikzcd}
+\]
+成立。
+还须注意，$T^{-1}u$ 完全由 $S^{-1}u$ 决定，因为对 $m\in M,t\in T$，有
+\[
+ (T^{-1}u)(m/t)=(t/1)^{-1}\rho^{T,S}\bigl((S^{-1}u)(m/1)\bigr).
+\]
+
+\egapar{1.4.2}
+沿用上述记号。对两个 $A$-模 $M,N$，下列两个图交换（参阅（\hyperlink{para:0:1.3.4}{1.3.4}）、（\hyperlink{para:0:1.3.5}{1.3.5}））：
+\[
+\begin{tikzcd}[column sep=large,row sep=large]
+(S^{-1}M)\otimes_{S^{-1}A}(S^{-1}N) \arrow[r,"\sim"] \arrow[d] & S^{-1}(M\otimes_A N) \arrow[d]\\
+(T^{-1}M)\otimes_{T^{-1}A}(T^{-1}N) \arrow[r,"\sim"'] & T^{-1}(M\otimes_A N)
+\end{tikzcd}
+\]
+\[
+\begin{tikzcd}[column sep=large,row sep=large]
+S^{-1}\Hom_A(M,N) \arrow[r] \arrow[d] & \Hom_{S^{-1}A}(S^{-1}M,S^{-1}N) \arrow[d]\\
+T^{-1}\Hom_A(M,N) \arrow[r] & \Hom_{T^{-1}A}(T^{-1}M,T^{-1}N).
+\end{tikzcd}
+\]
+
+\egapar{1.4.3}
+在一个重要情形中，同态 $\rho^{T,S}$ 是双射：即 $T$ 中每个元素都是 $S$ 中某个元素的因子。
+这时通过 $\rho^{T,S}$ 将模 $S^{-1}M$ 与 $T^{-1}M$ 等同。
+若 $S$ 中元素在 $A$ 中的任一因子都属于 $S$，则称 $S$ 是\emph{饱和的}。
+将 $S$ 换成其所有元素的所有因子组成的集合 $T$，这个集合既是乘法子集又是饱和的，
+便知总可以只考虑 $S$ 饱和时的分式模 $S^{-1}M$。
+
+\egapar{1.4.4}
+若 $S,T,U$ 为 $A$ 的三个乘法子集，且 $S\subseteq T\subseteq U$，则
+\[
+ \rho^{U,S}=\rho^{U,T}\circ\rho^{T,S}.
+\]
+
+\egapar{1.4.5}
+考虑 $A$ 的一族滤过递增的乘法子集 $(S_\alpha)$；以 $\alpha\le\beta$ 表示
+$S_\alpha\subseteq S_\beta$。令 $S=\bigcup_\alpha S_\alpha$，这是一个乘法子集。
+当 $\alpha\le\beta$ 时，置 $\rho_{\beta\alpha}=\rho^{S_\beta,S_\alpha}$。
+由（\hyperlink{para:0:1.4.4}{1.4.4}），同态 $\rho_{\beta\alpha}$ 定义了归纳系
+$(S_\alpha^{-1}A,\rho_{\beta\alpha})$ 的归纳极限环 $A'$。
+以 $\rho_\alpha$ 表示典范映射 $S_\alpha^{-1}A\to A'$，并置
+$\varphi_\alpha=\rho^{S,S_\alpha}$。
+由（\hyperlink{para:0:1.4.4}{1.4.4}），对 $\alpha\le\beta$ 有
+$\varphi_\alpha=\varphi_\beta\circ\rho_{\beta\alpha}$，故可以唯一定义同态
+$\varphi\colon A'\to S^{-1}A$，使下图交换：
+\[
+\begin{tikzcd}[column sep=large,row sep=large]
+& S_\alpha^{-1}A \arrow[d,"\rho_{\beta\alpha}"] \arrow[ddl,"\rho_\alpha"',bend right=12] \arrow[ddr,"\varphi_\alpha",bend left=12] &\\
+& S_\beta^{-1}A \arrow[dl,"\rho_\beta"] \arrow[dr,"\varphi_\beta"'] &\\
+A' \arrow[rr,"\varphi"'] && S^{-1}A
+\end{tikzcd}
+\qquad(\alpha\le\beta).
+\]
+事实上，$\varphi$ 是同构。由构造立即可知它是满射。
+另一方面，若 $\rho_\alpha(a/s_\alpha)\in A'$ 满足
+$\varphi(\rho_\alpha(a/s_\alpha))=0$，则 $a/s_\alpha=0$ 在 $S^{-1}A$ 中成立，
+即存在 $s\in S$ 使 $sa=0$。
+但存在 $\beta\ge\alpha$ 使 $s\in S_\beta$，于是
+\[
+ \rho_\alpha(a/s_\alpha)=\rho_\beta(a/s_\alpha)=0,
+\]
+故 $\varphi$ 也是单射。
+$A$-模 $M$ 的情形同样处理，由此得到典范同构
+\[
+ \begin{aligned}
+ \ilim S_\alpha^{-1}A&\xrightarrow{\sim}(\ilim S_\alpha)^{-1}A,\\
+ \ilim S_\alpha^{-1}M&\xrightarrow{\sim}(\ilim S_\alpha)^{-1}M,
+ \end{aligned}
+\]
+第二个同构关于 $M$ 是函子性的。
+
+\egapar{1.4.6}
+设 $S_1,S_2$ 为 $A$ 的两个乘法子集，则 $S_1S_2$ 也是 $A$ 的乘法子集。
+以 $S'_2$ 表示 $S_2$ 在环 $S_1^{-1}A$ 中的典范像，它是这个环的乘法子集。
+对任一 $A$-模 $M$，存在函子性同构
+\[
+ (S'_2)^{-1}(S_1^{-1}M)\xrightarrow{\sim}(S_1S_2)^{-1}M,
+\]
+将 $(m/s_1)/(s_2/1)$ 映为 $m/(s_1s_2)$。
+
+\subsection{环的变换}\hypertarget{heading:0:1.5}{}
+\src{17—19}
+
+\egapar{1.5.1}
+设 $A,A'$ 为两个环，$\varphi\colon A'\to A$ 为同态，
+$S,S'$ 分别为 $A,A'$ 的乘法子集，且 $\varphi(S')\subseteq S$。
+由（\hyperlink{para:0:1.2.4}{1.2.4}），复合同态 $A'\xrightarrow{\varphi}A\to S^{-1}A$ 分解为
+\[
+ A'\longrightarrow S'^{-1}A'\xrightarrow{\varphi^{S'}}S^{-1}A;
+\]
+有 $\varphi^{S'}(a'/s')=\varphi(a')/\varphi(s')$。
+若 $A=\varphi(A')$ 且 $S=\varphi(S')$，则 $\varphi^{S'}$ 是满射。
+若 $A'=A$ 且 $\varphi$ 为恒等映射，则 $\varphi^{S'}$ 就是（\hyperlink{para:0:1.4.1}{1.4.1}）中定义的同态 $\rho^{S,S'}$。
+
+\egapar{1.5.2}
+在（\hyperlink{para:0:1.5.1}{1.5.1}）的假设下，设 $M$ 为 $A$-模。
+存在 $S'^{-1}A'$-模的典范函子性同态
+\[
+ \sigma\colon S'^{-1}(M_{[\varphi]})\longrightarrow
+ (S^{-1}M)_{[\varphi^{S'}]},
+\]
+它将 $S'^{-1}(M_{[\varphi]})$ 的每个元素 $m/s'$ 映为
+$(S^{-1}M)_{[\varphi^{S'}]}$ 中的 $m/\varphi(s')$。
+立即可以验证，这一定义与所考虑元素的表达式 $m/s'$ 无关。
+当 $S=\varphi(S')$ 时，$\sigma$ 是双射。
+当 $A'=A$ 且 $\varphi$ 为恒等映射时，$\sigma$ 就是（\hyperlink{para:0:1.4.1}{1.4.1}）中定义的同态 $\rho^{S,S'}$。
+
+特别取 $M=A$ 时，同态 $\varphi$ 在 $A$ 上定义一个 $A'$-代数结构。
+这时 $S'^{-1}(A_{[\varphi]})$ 带有环结构，作为环，它等同于 $(\varphi(S'))^{-1}A$；
+同态 $\sigma\colon S'^{-1}(A_{[\varphi]})\to S^{-1}A$ 是 $S'^{-1}A'$-代数同态。
+
+\egapar{1.5.3}
+设 $M,N$ 为两个 $A$-模。
+复合（\hyperlink{para:0:1.3.4}{1.3.4}）与（\hyperlink{para:0:1.5.2}{1.5.2}）中定义的同态，得到同态
+\[
+ \bigl((S^{-1}M)\otimes_{S^{-1}A}(S^{-1}N)\bigr)_{[\varphi^{S'}]}
+ \longleftarrow S'^{-1}\bigl((M\otimes_A N)_{[\varphi]}\bigr),
+\]
+当 $\varphi(S')=S$ 时它是同构。
+同样，复合（\hyperlink{para:0:1.3.5}{1.3.5}）与（\hyperlink{para:0:1.5.2}{1.5.2}）中的同态，得到
+\[
+ \begin{split}
+ S'^{-1}\bigl((\Hom_A(M,N))_{[\varphi]}\bigr)
+ \longrightarrow{}&\bigl(\Hom_{S^{-1}A}(S^{-1}M,S^{-1}N)\bigr)_{[\varphi^{S'}]},
+ \end{split}
+\]
+当 $\varphi(S')=S$ 且 $M$ 具有有限表示时，它是同构。
+
+\egapar{1.5.4}
+现在考虑一个 $A'$-模 $N'$，并构造张量积 $N'\otimes_{A'}A_{[\varphi]}$。
+通过规定 $a\cdot(n'\otimes b)=n'\otimes(ab)$，可将它看作 $A$-模。
+存在 $S^{-1}A$-模的函子性同构
+\[
+ \tau\colon (S'^{-1}N')\otimes_{S'^{-1}A'}(S^{-1}A)_{[\varphi^{S'}]}
+ \xrightarrow{\sim} S^{-1}(N'\otimes_{A'}A_{[\varphi]}),
+\]
+将 $(n'/s')\otimes(a/s)$ 映为 $(n'\otimes a)/(\varphi(s')s)$。
+事实上，分别将 $n'/s'$ 或 $a/s$ 换成同一元素的另一表达式时，
+可以验证 $(n'\otimes a)/(\varphi(s')s)$ 不变。
+另一方面，将 $(n'\otimes a)/s$ 对应于 $(n'/1)\otimes(a/s)$，就可以定义 $\tau$ 的逆同态。
+这里使用了如下事实：
+$S^{-1}(N'\otimes_{A'}A_{[\varphi]})$ 典范同构于
+$(N'\otimes_{A'}A_{[\varphi]})\otimes_A S^{-1}A$（\hyperlink{para:0:1.2.5}{1.2.5}），
+因而也典范同构于 $N'\otimes_{A'}(S^{-1}A)_{[\psi]}$，
+其中 $\psi$ 表示从 $A'$ 到 $S^{-1}A$ 的复合同态 $a'\mapsto\varphi(a')/1$。
+
+\egapar{1.5.5}
+若 $M',N'$ 为两个 $A'$-模，则复合（\hyperlink{para:0:1.3.4}{1.3.4}）与（\hyperlink{para:0:1.5.4}{1.5.4}）的同构，得到同构
+\[
+ \begin{split}
+ S'^{-1}M'\otimes_{S'^{-1}A'}S'^{-1}N'\otimes_{S'^{-1}A'}S^{-1}A
+ \xrightarrow{\sim}{}&
+ S^{-1}(M'\otimes_{A'}N'\otimes_{A'}A).
+ \end{split}
+\]
+同样，若 $M'$ 具有有限表示，则由（\hyperlink{para:0:1.3.5}{1.3.5}）及（\hyperlink{para:0:1.5.4}{1.5.4}）得到同构
+\[
+ \begin{split}
+ \Hom_{S'^{-1}A'}(S'^{-1}M',S'^{-1}N')\otimes_{S'^{-1}A'}S^{-1}A
+ \xrightarrow{\sim}{}& S^{-1}\bigl(\Hom_{A'}(M',N')\otimes_{A'}A\bigr).
+ \end{split}
+\]
+
+\egapar{1.5.6}
+在（\hyperlink{para:0:1.5.1}{1.5.1}）的假设下，设 $T,T'$ 分别为 $A,A'$ 的另一个乘法子集，
+且 $S\subseteq T$、$S'\subseteq T'$、$\varphi(T')\subseteq T$。
+于是下图交换：
+\[
+\begin{tikzcd}[column sep=large,row sep=large]
+ S'^{-1}A' \arrow[r,"\varphi^{S'}"] \arrow[d,"\rho^{T',S'}"'] & S^{-1}A \arrow[d,"\rho^{T,S}"]\\
+ T'^{-1}A' \arrow[r,"\varphi^{T'}"'] & T^{-1}A.
+\end{tikzcd}
+\]
+若 $M$ 为 $A$-模，则下图交换：
+\[
+\begin{tikzcd}[column sep=large,row sep=large]
+ S'^{-1}(M_{[\varphi]}) \arrow[r,"\sigma"] \arrow[d,"\rho^{T',S'}"'] & (S^{-1}M)_{[\varphi^{S'}]} \arrow[d,"\rho^{T,S}"]\\
+ T'^{-1}(M_{[\varphi]}) \arrow[r,"\sigma"'] & (T^{-1}M)_{[\varphi^{T'}]}.
+\end{tikzcd}
+\]
+最后，若 $N'$ 为 $A'$-模，则下图交换：
+\[
+\begin{tikzcd}[column sep=large,row sep=large]
+ (S'^{-1}N')\otimes_{S'^{-1}A'}(S^{-1}A)_{[\varphi^{S'}]}
+ \arrow[r,"\tau"] \arrow[d]
+ & S^{-1}(N'\otimes_{A'}A_{[\varphi]}) \arrow[d,"\rho^{T,S}"]\\
+ (T'^{-1}N')\otimes_{T'^{-1}A'}(T^{-1}A)_{[\varphi^{T'}]}
+ \arrow[r,"\tau"'] & T^{-1}(N'\otimes_{A'}A_{[\varphi]}).
+\end{tikzcd}
+\]
+其中左侧竖箭头由在 $S'^{-1}N'$ 上应用 $\rho_{N'}^{T',S'}$，
+并在 $S^{-1}A$ 上应用 $\rho_A^{T,S}$ 得到。
+
+\egapar{1.5.7}
+设 $A''$ 为第三个环，$\varphi'\colon A''\to A'$ 为环同态，
+$S''$ 为 $A''$ 的乘法子集，且 $\varphi'(S'')\subseteq S'$。
+置 $\varphi''=\varphi\circ\varphi'$，则有
+\[
+ (\varphi'')^{S''}=\varphi^{S'}\circ(\varphi')^{S''}.
+\]
+设 $M$ 为 $A$-模，显然有 $M_{[\varphi'']}=(M_{[\varphi]})_{[\varphi']}$。
+若 $\sigma',\sigma''$ 分别由 $\varphi',\varphi''$ 定义，其定义方式与（\hyperlink{para:0:1.5.2}{1.5.2}）中从 $\varphi$ 定义 $\sigma$ 相同，
+则有传递公式
+\[
+ \sigma''=\sigma\circ\sigma'.
+\]
+最后，设 $N''$ 为 $A''$-模。
+$A$-模 $N''\otimes_{A''}A_{[\varphi'']}$ 典范地等同于
+$(N''\otimes_{A''}A'_{[\varphi']})\otimes_{A'}A_{[\varphi]}$；
+同样，$S^{-1}A$-模
+\[
+ (S''^{-1}N'')\otimes_{S''^{-1}A''}(S^{-1}A)_{[(\varphi'')^{S''}]}
+\]
+典范地等同于
+\[
+ \bigl((S''^{-1}N'')\otimes_{S''^{-1}A''}
+       (S'^{-1}A')_{[(\varphi')^{S''}]}\bigr)
+       \otimes_{S'^{-1}A'}(S^{-1}A)_{[\varphi^{S'}]}.
+\]
+在这些等同之下，若 $\tau',\tau''$ 分别由 $\varphi',\varphi''$ 定义，其方式与（\hyperlink{para:0:1.5.4}{1.5.4}）中
+从 $\varphi$ 定义 $\tau$ 相同，则有传递公式
+\[
+ \tau''=\tau\circ(\tau'\otimes1).
+\]
+
+\egapar{1.5.8}
+设 $A$ 为环 $B$ 的子环。
+对 $A$ 的每个极小素理想 $\mathfrak p$，都存在 $B$ 的一个极小素理想 $\mathfrak q$，
+使得 $\mathfrak p=A\cap\mathfrak q$。
+事实上，$A_{\mathfrak p}$ 是 $B_{\mathfrak p}$ 的子环（\hyperlink{para:0:1.3.2}{1.3.2}），并且只有一个素理想
+$\mathfrak p'$（\hyperlink{para:0:1.2.6}{1.2.6}）。
+由于 $B_{\mathfrak p}$ 非零，它至少有一个素理想 $\mathfrak q'$，
+且必有 $\mathfrak q'\cap A_{\mathfrak p}=\mathfrak p'$。
+于是 $\mathfrak q'$ 在 $B$ 中的逆像素理想 $\mathfrak q_1$ 满足
+$\mathfrak q_1\cap A=\mathfrak p$；
+故对每个包含在 $\mathfrak q_1$ 中的 $B$ 的极小素理想 $\mathfrak q$，更有
+$\mathfrak q\cap A=\mathfrak p$。
+
+\subsection{将模 \texorpdfstring{$M_f$}{Mf} 等同于一个归纳极限}\hypertarget{heading:0:1.6}{}
+\src{19—20}
+
+\egapar{1.6.1}
+设 $M$ 为 $A$-模，$f$ 为 $A$ 的元素。
+考虑一个 $A$-模序列 $(M_n)$，其中每个模都等于 $M$；
+对每对整数 $m\le n$，令 $\varphi_{nm}\colon M_m\to M_n$ 为同态
+$z\mapsto f^{n-m}z$。
+立即可见，$((M_n),(\varphi_{nm}))$ 是一个 $A$-模归纳系。
+以 $N=\ilim M_n$ 表示其归纳极限。
+我们将定义一个从 $N$ 到 $M_f$ 的典范函子性 $A$-同构。
+
+为此，注意，对每个 $n$，$\theta_n\colon z\mapsto z/f^n$ 是从 $M=M_n$ 到 $M_f$ 的 $A$-同态，
+并且由定义，当 $m\le n$ 时有 $\theta_n\circ\varphi_{nm}=\theta_m$。
+因此存在 $A$-同态 $\theta\colon N\to M_f$，使得对每个 $n$ 有
+$\theta_n=\theta\circ\varphi_n$，其中 $\varphi_n$ 为典范同态 $M_n\to N$。
+按假设，$M_f$ 的每个元素都至少可以写成某个 $n$ 对应的 $z/f^n$，故 $\theta$ 显然是满射。
+另一方面，若 $\theta(\varphi_n(z))=0$，即 $z/f^n=0$，
+则存在整数 $k>0$ 使 $f^kz=0$，从而 $\varphi_{n+k,n}(z)=0$，故 $\varphi_n(z)=0$。
+因此可以通过 $\theta$ 将 $M_f$ 与 $\ilim M_n$ 等同。
+
+\egapar{1.6.2}
+现在将 $M_n,\varphi_{nm},\varphi_n$ 分别记为 $M_{f,n},\varphi^f_{nm},\varphi^f_n$。
+设 $g$ 为 $A$ 的另一个元素。
+由于 $f^n$ 整除 $f^ng^n$，有函子性同态
+\[
+ \rho_{fg,f}\colon M_f\longrightarrow M_{fg}
+ \qquad\text{（\hyperlink{para:0:1.4.1}{1.4.1}、\hyperlink{para:0:1.4.3}{1.4.3}）}.
+\]
+若分别将 $M_f,M_{fg}$ 等同于 $\ilim M_{f,n},\ilim M_{fg,n}$，
+则 $\rho_{fg,f}$ 等同于由
+\[
+ \rho^n_{fg,f}\colon M_{f,n}\longrightarrow M_{fg,n},
+ \qquad \rho^n_{fg,f}(z)=g^nz
+\]
+定义的各映射的归纳极限。
+事实上，这立即由下图的交换性得到：
+\[
+\begin{tikzcd}[column sep=large,row sep=large]
+ M_{f,n} \arrow[r,"\rho^n_{fg,f}"] \arrow[d,"\varphi^f_n"']
+ & M_{fg,n} \arrow[d,"\varphi^{fg}_n"]\\
+ M_f \arrow[r,"\rho_{fg,f}"'] & M_{fg}.
+\end{tikzcd}
+\]
+
+\subsection{模的支集}\hypertarget{heading:0:1.7}{}
+\src{20}
+
+\egapar{1.7.1}
+给定 $A$-模 $M$，称 $A$ 中所有满足 $M_{\mathfrak p}\ne0$ 的素理想 $\mathfrak p$ 组成的集合为
+$M$ 的\emph{支集}，记为 $\Supp(M)$。
+$M=0$ 当且仅当 $\Supp(M)=\varnothing$。
+这是因为，若对所有 $\mathfrak p$ 都有 $M_{\mathfrak p}=0$，
+则每个元素 $x\in M$ 的零化理想都不能包含在 $A$ 的任何素理想中，因而等于整个 $A$。
+
+\egapar{1.7.2}
+若 $0\to N\to M\to P\to0$ 为 $A$-模的正合列，则
+\[
+ \Supp(M)=\Supp(N)\cup\Supp(P).
+\]
+因为对 $A$ 的每个素理想 $\mathfrak p$，列
+$0\to N_{\mathfrak p}\to M_{\mathfrak p}\to P_{\mathfrak p}\to0$ 正合（\hyperlink{para:0:1.3.2}{1.3.2}），
+而 $M_{\mathfrak p}=0$ 当且仅当 $N_{\mathfrak p}=P_{\mathfrak p}=0$。
+
+\egapar{1.7.3}
+若 $M$ 是一族子模 $(M_\lambda)$ 的和，则对每个素理想 $\mathfrak p$，
+$M_{\mathfrak p}$ 是各 $(M_\lambda)_{\mathfrak p}$ 的和（\hyperlink{para:0:1.3.3}{1.3.3}、\hyperlink{para:0:1.3.2}{1.3.2}），故
+\[
+ \Supp(M)=\bigcup_\lambda\Supp(M_\lambda).
+\]
+
+\egapar{1.7.4}
+若 $M$ 是有限型 $A$-模，则 $\Supp(M)$ 是包含 $M$ 的零化理想的所有素理想组成的集合。
+事实上，若 $M$ 由单个元素 $x$ 生成，则 $M_{\mathfrak p}=0$ 的意思是存在
+$s\notin\mathfrak p$ 使 $s\cdot x=0$，也就是 $\mathfrak p$ 不包含 $x$ 的零化理想。
+现在若 $M$ 有有限生成元系 $(x_i)_{1\le i\le n}$，并以 $\mathfrak a_i$ 表示 $x_i$ 的零化理想，
+则由（\hyperlink{para:0:1.7.3}{1.7.3}），$\Supp(M)$ 是包含某个 $\mathfrak a_i$ 的素理想的集合，
+等价地，也是包含 $\mathfrak a=\bigcap_i\mathfrak a_i$ 的素理想的集合；
+而 $\mathfrak a$ 恰为 $M$ 的零化理想。
+
+\egapar{1.7.5}
+若 $M,N$ 为两个有限型 $A$-模，则
+\[
+ \Supp(M\otimes_A N)=\Supp(M)\cap\Supp(N).
+\]
+结合（\hyperlink{para:0:1.3.4}{1.3.4}），所需证明的是：对 $A$ 的素理想 $\mathfrak p$，
+条件 $M_{\mathfrak p}\otimes_{A_{\mathfrak p}}N_{\mathfrak p}\ne0$，
+等价于“$M_{\mathfrak p}\ne0$ 且 $N_{\mathfrak p}\ne0$”。
+换言之，只需证明：若 $P,Q$ 为局部环 $B$ 上的两个非零有限型模，则 $P\otimes_B Q\ne0$。
+设 $\mathfrak m$ 为 $B$ 的极大理想。
+由 Nakayama 引理，向量空间 $P/\mathfrak mP$ 和 $Q/\mathfrak mQ$ 均非零，故它们的张量积
+\[
+ (P/\mathfrak mP)\otimes_{B/\mathfrak m}(Q/\mathfrak mQ)
+ =(P\otimes_B Q)\otimes_B(B/\mathfrak m)
+\]
+也非零，由此得到结论。
+
+特别地，若 $M$ 是有限型 $A$-模，$\mathfrak a$ 是 $A$ 的理想，则
+$\Supp(M/\mathfrak aM)$ 是同时包含 $\mathfrak a$ 与 $M$ 的零化理想 $\mathfrak n$ 的素理想的集合（\hyperlink{para:0:1.7.4}{1.7.4}），
+也就是包含 $\mathfrak a+\mathfrak n$ 的素理想的集合。
+
+
+% END chapters/ch0_s1.tex
+
+\par
+
+% BEGIN chapters/ch0_s2.tex
+\section{不可约空间；诺特空间}\hypertarget{heading:0:2}{}
+\subsection{不可约空间}\hypertarget{heading:0:2.1}{}
+\src{21—22}
+
+\egapar{2.1.1}
+若拓扑空间 $X$ 非空，且不能表示成两个均不等于 $X$ 的闭子空间的并，则称 $X$ 是\emph{不可约的}。
+等价地说，$X\ne\varnothing$，且 $X$ 中任意两个非空开集的交非空，因而任意有限个非空开集的交也非空。
+在 $X$ 非空的条件下，这也等价于以下任一说法：每个非空开集都处处稠密；
+每个不等于 $X$ 的闭子集都无处稠密；或者，$X$ 的每个开集都是连通的。
+
+\egapar{2.1.2}
+拓扑空间 $X$ 的子空间 $Y$ 不可约，当且仅当其闭包 $\overline Y$ 不可约。
+特别地，单点子空间的闭包 $\overline{\{x\}}$ 总是不可约的。
+对于关系 $y\in\overline{\{x\}}$，等价地，
+$\overline{\{y\}}\subseteq\overline{\{x\}}$，
+我们称 $y$ 是 $x$ 的一个\emph{特殊化}，或称 $x$ 是 $y$ 的一个\emph{一般化}。
+若不可约空间 $X$ 中存在一点 $x$，使 $X=\overline{\{x\}}$，则称 $x$ 是 $X$ 的\emph{泛点}。
+这时 $X$ 的每个非空开集都包含 $x$，而每个包含 $x$ 的子空间都以 $x$ 为泛点。
+
+\egapar{2.1.3}
+回忆一下，\emph{Kolmogoroff 空间}是指满足下列分离公理的拓扑空间 $X$：
+\begin{quote}
+$(\mathrm T_0)$ 若 $x\ne y$ 为 $X$ 中的任意两点，则存在一个开集包含其中一点而不包含另一点。
+\end{quote}
+若不可约的 Kolmogoroff 空间具有泛点，则泛点唯一，因为每个非空开集都包含所有泛点。
+
+又回忆，若拓扑空间 $X$ 的任一开覆盖都可以抽取有限子覆盖，则称 $X$ 是\emph{拟紧的}；
+等价地，任一滤过递减的非空闭集族都具有非空交。
+若 $X$ 拟紧，则 $X$ 的每个非空闭子集 $A$ 都包含一个极小非空闭集 $M$，
+因为 $A$ 的非空闭子集所成的集合对于关系 $\supseteq$ 是归纳有序的。
+若 $X$ 还是 Kolmogoroff 空间，则 $M$ 必由一个点组成；略不严格地说，$M$ 是一个\emph{闭点}。
+
+\egapar{2.1.4}
+在不可约空间 $X$ 中，每个非空开子空间 $U$ 都不可约；若 $X$ 有泛点 $x$，则 $x$ 也是 $U$ 的泛点。
+
+设 $(U_\alpha)$ 为拓扑空间 $X$ 的一个覆盖，其指标集非空，且每个 $U_\alpha$ 都是非空开集。
+$X$ 不可约，当且仅当每个 $U_\alpha$ 都不可约，并且对任意 $\alpha,\beta$ 有
+$U_\alpha\cap U_\beta\ne\varnothing$。
+这一条件显然必要。
+为证明充分性，只须证明：若 $V$ 是 $X$ 的非空开集，则对每个 $\alpha$ 都有
+$V\cap U_\alpha\ne\varnothing$。
+因为这样 $V\cap U_\alpha$ 就在每个 $U_\alpha$ 中稠密，从而 $V$ 在 $X$ 中稠密。
+现在至少存在一个指标 $\gamma$ 使 $V\cap U_\gamma\ne\varnothing$，
+于是 $V\cap U_\gamma$ 在 $U_\gamma$ 中稠密。
+又由于对每个 $\alpha$ 有 $U_\alpha\cap U_\gamma\ne\varnothing$，
+故 $V\cap U_\alpha\cap U_\gamma\ne\varnothing$。
+
+\egapar{2.1.5}
+设 $X$ 为不可约空间，$f$ 为从 $X$ 到拓扑空间 $Y$ 的连续映射。
+则 $f(X)$ 不可约；若 $x$ 是 $X$ 的泛点，则 $f(x)$ 是 $f(X)$ 的泛点，
+因而也是 $\overline{f(X)}$ 的泛点。
+特别地，若 $Y$ 也不可约且只有一个泛点 $y$，则在 $x$ 为 $X$ 的泛点的上述情形下，
+$f(X)$ 处处稠密，当且仅当 $f(x)=y$。
+
+\egapar{2.1.6}
+拓扑空间 $X$ 的每个不可约子空间都包含在一个极大不可约子空间中，后者必为闭集。
+$X$ 的极大不可约子空间称为 $X$ 的\emph{不可约分支}。
+若 $Z_1,Z_2$ 为 $X$ 的两个不同不可约分支，则 $Z_1\cap Z_2$ 是在各子空间 $Z_1,Z_2$ 中
+均无处稠密的闭集。
+特别地，若 $X$ 的一个不可约分支具有泛点（\hyperlink{para:0:2.1.2}{2.1.2}），则此泛点不能属于任何其他不可约分支。
+若 $X$ 只有有限个不可约分支 $Z_i$（$1\le i\le n$），并令
+\[
+ U_i=Z_i\cap\left(X\setminus\bigcup_{j\ne i}Z_j\right),
+\]
+则各 $U_i$ 是开集、不可约、两两不交，且它们的并在 $X$ 中稠密。
+
+设 $U$ 为拓扑空间 $X$ 的开子集。
+若 $Z$ 为 $X$ 中与 $U$ 相交的不可约子集，则 $Z\cap U$ 在 $Z$ 中开且稠密，因而不可约。
+反过来，对 $U$ 的任一不可约闭子集 $Y$，它在 $X$ 中的闭包 $\overline Y$ 不可约，
+并且 $\overline Y\cap U=Y$。
+因此，$U$ 的不可约分支与 $X$ 中那些与 $U$ 相交的不可约分支之间存在一一对应。
+
+\egapar{2.1.7}
+若拓扑空间 $X$ 是有限个不可约闭子空间 $Y_i$ 的并，则 $X$ 的不可约分支就是集合
+$\{Y_i\}$ 中的极大元素。
+因为对 $X$ 的任一不可约闭子集 $Z$，$Z$ 是各 $Z\cap Y_i$ 的并，
+由此立刻推出 $Z$ 必包含在某个 $Y_i$ 中。
+设 $Y$ 为拓扑空间 $X$ 的子空间，并假定 $Y$ 只有有限个不可约分支
+$Y_i$（$1\le i\le n$），则它们在 $X$ 中的闭包 $\overline{Y_i}$ 是 $\overline Y$ 的不可约分支。
+
+\egapar{2.1.8}
+设 $Y$ 为不可约空间，且具有唯一泛点 $y$。
+设 $X$ 为拓扑空间，$f\colon X\to Y$ 为连续映射。
+则对 $X$ 中每个与 $f^{-1}(y)$ 相交的不可约分支 $Z$，$f(Z)$ 都在 $Y$ 中稠密。
+反命题未必成立；但是，若 $Z$ 有泛点 $z$，且 $f(Z)$ 在 $Y$ 中稠密，则必有 $f(z)=y$（\hyperlink{para:0:2.1.5}{2.1.5}）。
+此外，这时 $Z\cap f^{-1}(y)$ 是 $\{z\}$ 在 $f^{-1}(y)$ 中的闭包，因而不可约；
+而 $f^{-1}(y)$ 中每个包含 $z$ 的不可约子集都必包含在 $Z$ 中（\hyperlink{para:0:2.1.6}{2.1.6}），
+故 $z$ 是 $Z\cap f^{-1}(y)$ 的泛点。
+由于 $f^{-1}(y)$ 的每个不可约分支都包含在 $X$ 的某个不可约分支中，得到：
+若 $X$ 中每个与 $f^{-1}(y)$ 相交的不可约分支 $Z$ 都有泛点，
+则这些分支的集合与 $f^{-1}(y)$ 的不可约分支 $Z\cap f^{-1}(y)$ 的集合之间存在一一对应，
+并且 $Z$ 的泛点与 $Z\cap f^{-1}(y)$ 的泛点相同。
+
+% Begin the second subsection with its opening definition.
+\clearpage
+\subsection{诺特空间}\hypertarget{heading:0:2.2}{}
+\src{23}
+
+\egapar{2.2.1}
+若拓扑空间 $X$ 的开集集合满足极大条件，等价地，其闭集集合满足极小条件，
+则称 $X$ 是\emph{诺特的}。
+若每个 $x\in X$ 都有一个作为子空间是诺特空间的邻域，则称 $X$ 是\emph{局部诺特的}。
+
+\egapar{2.2.2}
+设 $E$ 为满足极小条件的有序集，$P$ 为 $E$ 的元素的一种性质，且满足下述条件：
+若 $a\in E$ 使得对每个 $x<a$ 都有 $P(x)$ 成立，则 $P(a)$ 成立。
+在这些条件下，$P(x)$ 对每个 $x\in E$ 都成立，这就是\emph{诺特归纳原理}。
+事实上，设 $F$ 为所有不满足 $P(x)$ 的元素 $x\in E$ 组成的集合；
+若 $F$ 非空，则它有极小元素 $a$。
+由于此时对每个 $x<a$ 都有 $P(x)$ 成立，故 $P(a)$ 也成立，矛盾。
+我们将特别在 $E$ 是诺特空间的闭子集的某个集合时应用此原理。
+
+\egapar{2.2.3}
+诺特空间的每个子空间都是诺特的。
+反过来，一个拓扑空间若是有限个诺特子空间的并，则它也是诺特的。
+
+\egapar{2.2.4}
+每个诺特空间都拟紧。
+反过来，一个拓扑空间若每个开集都拟紧，则它是诺特的。
+
+\egapar{2.2.5}
+诺特空间只有有限个不可约分支；这可以用诺特归纳法看出。
+
+
+% END chapters/ch0_s2.tex
+
+\par
+
+% BEGIN chapters/ch0_s3.tex
+\section{层的补充知识}\hypertarget{heading:0:3}{}
+\subsection{取值于一个范畴的层}\hypertarget{heading:0:3.1}{}
+\src{23—25}
+
+\egapar{3.1.1}
+设 $\Kcat$ 为范畴，$(A_\alpha)_{\alpha\in I}$、
+$(A_{\alpha\beta})_{(\alpha,\beta)\in I\times I}$ 为 $\Kcat$ 的两族对象，
+满足 $A_{\alpha\beta}=A_{\beta\alpha}$；
+$(\rho_{\alpha\beta})_{(\alpha,\beta)\in I\times I}$ 为一族态射
+$\rho_{\alpha\beta}\colon A_\alpha\to A_{\alpha\beta}$。
+设有一个对象 $A$ 及一族态射 $\rho_\alpha\colon A\to A_\alpha$。
+若对 $\Kcat$ 的每个对象 $B$，映射
+\[
+ \Hom(B,A)\longrightarrow\prod_\alpha\Hom(B,A_\alpha),
+ \qquad f\longmapsto(\rho_\alpha\circ f)_\alpha
+\]
+将 $\Hom(B,A)$ 双射到由那些对任意指标对 $(\alpha,\beta)$ 满足
+\[
+ \rho_{\alpha\beta}\circ f_\alpha
+ =\rho_{\beta\alpha}\circ f_\beta
+\]
+的族 $(f_\alpha)$ 组成的集合，则称二元组 $(A,(\rho_\alpha))$ 是由
+$(A_\alpha)$、$(A_{\alpha\beta})$ 及 $(\rho_{\alpha\beta})$ 定义的\emph{泛问题的解}。
+立即可见，这样的解若存在，则在相差一个同构的意义下唯一。
+
+\egapar{3.1.2}
+我们不再重述拓扑空间 $X$ 上取值于范畴 $\Kcat$ 的预层 $U\mapsto\F(U)$ 的定义
+(G, I, 1.9)。若这样的预层满足下列公理，则称其为\emph{取值于 $\Kcat$ 的层}：
+\begin{quote}
+\textbf{(F)} 对 $X$ 的任一开集 $U$ 及其由包含在 $U$ 中的开集 $U_\alpha$ 组成的任一覆盖，
+以 $\rho_\alpha$、$\rho_{\alpha\beta}$ 分别表示限制态射
+\[
+ \F(U)\longrightarrow\F(U_\alpha),
+ \qquad
+ \F(U_\alpha)\longrightarrow\F(U_\alpha\cap U_\beta).
+\]
+则由 $\F(U)$ 及族 $(\rho_\alpha)$ 组成的二元组，是关于
+$(\F(U_\alpha))$、$(\F(U_\alpha\cap U_\beta))$ 及 $(\rho_{\alpha\beta})$
+的泛问题的解（\hyperlink{para:0:3.1.1}{3.1.1}）。\origfootnote{
+这是一般射影极限概念的一个特例，此处的射影系不一定滤过；参阅 (T, I, 1.8)，
+以及导言中提到的正在编写的著作。}
+\end{quote}
+这等价于说，对 $\Kcat$ 的每个对象 $T$，$U\mapsto\Hom(T,\F(U))$ 是集合层。
+
+\egapar{3.1.3}
+设 $\Kcat$ 是由某种“附有态射的结构类型”$\Sigma$ 定义的范畴；
+也就是说，$\Kcat$ 的对象是带有 $\Sigma$ 型结构的集合，其态射就是 $\Sigma$ 的态射。
+再假定 $\Kcat$ 满足下列条件：
+\begin{quote}
+\textbf{(E)} 若 $(A,(\rho_\alpha))$ 是范畴 $\Kcat$ 中由族
+$(A_\alpha)$、$(A_{\alpha\beta})$、$(\rho_{\alpha\beta})$ 定义的泛映射问题的解，
+则它在集合范畴中也是这些族所定义的泛映射问题的解；
+也就是说，把 $A$、$A_\alpha$、$A_{\alpha\beta}$ 看作集合，
+把 $\rho_\alpha$、$\rho_{\alpha\beta}$ 看作映射时，这一结论仍成立。\origfootnote{
+可以证明，这也等价于说典范函子 $\Kcat\to(\mathrm{Ens})$ 与射影极限可交换，
+这里的射影系不一定滤过。}
+\end{quote}
+在这些条件下，(F) 蕴含：$U\mapsto\F(U)$ 作为集合预层是一个层。
+此外，由 (F)，映射 $u\colon T\to\F(U)$ 是 $\Kcat$ 的态射，当且仅当每个复合映射
+$\rho_\alpha\circ u\colon T\to\F(U_\alpha)$ 都是态射。
+这就是说，$\F(U)$ 上的 $\Sigma$ 型结构是相对于各态射 $\rho_\alpha$ 的\emph{初始结构}。
+反过来，假定 $X$ 上取值于 $\Kcat$ 的预层 $U\mapsto\F(U)$ 是一个集合层，
+并满足上述条件，则它显然满足 (F)，故是取值于 $\Kcat$ 的层。
+
+\egapar{3.1.4}
+当 $\Sigma$ 是群结构或环结构这一类型时，取值于 $\Kcat$ 的预层 $U\mapsto\F(U)$
+一旦是集合层，就自动成为取值于 $\Kcat$ 的层，也就是 (G) 意义下的群层或环层。\origfootnote{
+这是因为，在范畴 $\Kcat$ 中，每个作为集合映射是双射的态射都是同构。
+例如，当 $\Kcat$ 是拓扑空间范畴时，这一点不再成立。}
+但是，例如当 $\Kcat$ 是拓扑环范畴，而其态射为连续同态时，就不再如此。
+这时，一个取值于 $\Kcat$ 的层，就是满足以下条件的环层 $U\mapsto\F(U)$：
+对每个开集 $U$ 及其由开集 $U_\alpha\subseteq U$ 组成的任一覆盖，
+环 $\F(U)$ 的拓扑是使所有同态 $\F(U)\to\F(U_\alpha)$ 连续的最粗拓扑。
+在此情形下，把不带拓扑的环层 $U\mapsto\F(U)$ 称为这一拓扑环层的\emph{底层环层}。
+
+因此，拓扑环层的态射 $u_V\colon\F(V)\to\G(V)$，其中 $V$ 遍历 $X$ 的所有开集，
+是其底层环层的同态，并且要求对每个开集 $V\subseteq X$，$u_V$ 都连续。
+为区别于底层环层的任意同态，称这些态射为\emph{拓扑环层的连续同态}。
+对拓扑空间层及拓扑群层，有类似的定义和约定。
+
+\egapar{3.1.5}
+显然，对任意范畴 $\Kcat$，若 $\F$ 为 $X$ 上取值于 $\Kcat$ 的预层（分别地，层），
+且 $U$ 为 $X$ 的开集，则开集 $V\subseteq U$ 对应的各 $\F(V)$ 构成取值于 $\Kcat$ 的预层
+（分别地，层）。称其为 $\F$ 在 $U$ 上\emph{诱导的预层}（分别地，\emph{诱导的层}），记为 $\F|U$。
+对 $X$ 上取值于 $\Kcat$ 的预层态射 $u\colon\F\to\G$，
+以 $u|U$ 表示由所有 $V\subseteq U$ 对应的 $u_V$ 组成的态射 $\F|U\to\G|U$。
+
+\egapar{3.1.6}
+现在假定范畴 $\Kcat$ 具有归纳极限 (T, 1.8)。
+于是，对 $X$ 上取值于 $\Kcat$ 的每个预层，特别是每个层 $\F$，以及每个 $x\in X$，
+都可以将\emph{茎} $\F_x$ 定义为 $\Kcat$ 中如下的归纳极限对象：
+令 $U$ 遍历 $x$ 在 $X$ 中的所有开邻域，这些邻域关于 $\supseteq$ 构成滤过集，
+并采用态射 $\rho_U^V\colon\F(V)\to\F(U)$，取各 $\F(U)$ 的归纳极限。
+若 $u\colon\F\to\G$ 为取值于 $\Kcat$ 的预层态射，则对每个 $x\in X$，
+将态射 $u_x\colon\F_x\to\G_x$ 定义为各 $u_U\colon\F(U)\to\G(U)$
+沿 $x$ 的开邻域集合的归纳极限。
+如此，对每个 $x\in X$，$\F_x$ 就成为关于 $\F$ 的、取值于 $\Kcat$ 的协变函子。
+
+当 $\Kcat$ 还由某种附有态射的结构类型 $\Sigma$ 定义时，
+仍将 $\F(U)$ 的元素称为层 $\F$ 在 $U$ 上的\emph{截面}，并把 $\F(U)$ 写作 $\Gamma(U,\F)$。
+对 $s\in\Gamma(U,\F)$ 及包含在 $U$ 中的开集 $V$，把 $\rho_V^U(s)$ 写作 $s|V$。
+对每个 $x\in U$，$s$ 在 $\F_x$ 中的典范像是 $s$ 在点 $x$ 的\emph{芽}，记为 $s_x$。
+我们绝不在这个意义下使用记号 $s(x)$；该记号保留给本专著中将要考虑的特殊层的另一个概念（\hyperlink{para:0:5.5.1}{5.5.1}）。
+若 $u\colon\F\to\G$ 为取值于 $\Kcat$ 的层态射，则对任意 $s\in\Gamma(U,\F)$，
+将 $u_U(s)$ 写作 $u(s)$。
+
+若 $\F$ 是交换群层、环层或模层，则将所有满足 $\F_x\ne\{0\}$ 的点 $x\in X$ 组成的集合
+称为 $\F$ 的\emph{支集}，记为 $\Supp(\F)$；这个集合在 $X$ 中未必是闭的。
+
+当 $\Kcat$ 由附有态射的结构类型定义时，对取值于 $\Kcat$ 的层，
+我们将一贯避免引入“展布空间”（\textit{espaces étalés}）的观点。
+换言之，我们绝不把层看成一个拓扑空间，甚至不把它看成其各茎的并所成的集合；
+也不把 $X$ 上这种层的态射 $u\colon\F\to\G$ 看成拓扑空间之间的连续映射。
+
+\subsection{开集基上的预层}\hypertarget{heading:0:3.2}{}
+\src{25—28}
+
+\egapar{3.2.1}
+以下我们只考虑具有广义射影极限的范畴 $\Kcat$；
+所谓广义，是说对应的预序集不一定滤过，参阅 (T, 1.8)。
+设 $X$ 为拓扑空间，$\B$ 为 $X$ 的拓扑的一个开集基。
+我们把下列数据称为\emph{$\B$ 上取值于 $\Kcat$ 的预层}：
+给每个 $U\in\B$ 配备一个对象 $\F(U)\in\Kcat$，
+并给每对满足 $U\subseteq V$ 的 $\B$ 中元素配备一个态射
+\[
+ \rho_U^V\colon\F(V)\longrightarrow\F(U),
+\]
+使得 $\rho_U^U$ 为恒等态射，且当 $U,V,W\in\B$、$U\subseteq V\subseteq W$ 时，有
+$\rho_U^W=\rho_U^V\circ\rho_V^W$。
+
+可以给它配备一个通常意义下取值于 $\Kcat$ 的预层 $U\mapsto\F'(U)$：
+对任一开集 $U$，令
+\[
+ \F'(U)=\plim_{\substack{V\in\B\\V\subseteq U}}\F(V).
+\]
+这里 $V$ 遍历包含在 $U$ 中的基元素所成的有序集，其次序为 $\subseteq$，一般并不滤过。
+当 $V\subseteq W\subseteq U$ 且 $V,W\in\B$ 时，各 $\F(V)$ 关于 $\rho_V^W$ 构成射影系。
+事实上，若 $U,U'$ 为 $X$ 的开集且 $U\subseteq U'$，
+就把 $\rho'{}^{U'}_U$ 定义为各典范态射 $\F'(U')\to\F(V)$（$V\subseteq U$）的射影极限；
+也就是说，它是唯一的态射 $\F'(U')\to\F'(U)$，与各典范态射 $\F'(U)\to\F(V)$ 复合后，
+得到相应的典范态射 $\F'(U')\to\F(V)$。
+立即可以验证各 $\rho'{}^{U'}_U$ 的传递性。
+此外，若 $U\in\B$，则典范态射 $\F'(U)\to\F(U)$ 是同构，从而可以将这两个对象等同。\origfootnote{
+若 $X$ 为诺特空间，即使只假定 $\Kcat$ 对有限射影系具有射影极限，也仍可定义 $\F'(U)$，
+并证明它是通常意义下的预层。
+事实上，若 $U$ 为 $X$ 的任意开集，则存在由 $\B$ 的元素组成的有限覆盖 $(V_i)$；
+对每对指标 $(i,j)$，取 $V_i\cap V_j$ 的一个由 $\B$ 的元素组成的有限覆盖 $(V_{ijk})$。
+令 $I$ 由指标 $i$ 与三元组 $(i,j,k)$ 组成，并只规定次序关系
+$i>(i,j,k)$、$j>(i,j,k)$。
+取 $\F'(U)$ 为各 $\F(V_i)$ 与 $\F(V_{ijk})$ 所成系统的射影极限；
+容易验证这与覆盖 $(V_i)$ 和 $(V_{ijk})$ 的选择无关，且 $U\mapsto\F'(U)$ 为预层。}
+
+\egapar{3.2.2}
+如此定义的预层 $\F'$ 是层，当且仅当 $\B$ 上的预层 $\F$ 满足以下条件：
+\begin{quote}
+\textbf{($\mathrm F_0$)} 对任一 $U\in\B$，任一由包含在 $U$ 中的基元素 $U_\alpha\in\B$
+组成的覆盖 $(U_\alpha)$，以及 $\Kcat$ 的任一对象 $T$，映射
+\[
+ \Hom(T,\F(U))\longrightarrow\prod_\alpha\Hom(T,\F(U_\alpha)),
+ \qquad f\longmapsto(\rho_{U_\alpha}^U\circ f)_\alpha
+\]
+是从 $\Hom(T,\F(U))$ 到下述族 $(f_\alpha)$ 的集合的双射：
+对每对指标 $(\alpha,\beta)$ 和每个满足 $V\in\B$、$V\subseteq U_\alpha\cap U_\beta$ 的 $V$，都有
+\[
+ \rho_V^{U_\alpha}\circ f_\alpha
+ =\rho_V^{U_\beta}\circ f_\beta.
+\]
+\end{quote}
+\origfootnote{
+这也就是说，由 $\F(U)$ 及 $\rho_\alpha=\rho_{U_\alpha}^U$ 组成的二元组，是（\hyperlink{para:0:3.1.1}{3.1.1}）的泛问题的解。
+这里取 $A_\alpha=\F(U_\alpha)$、$A_{\alpha\beta}=\prod\F(V)$，
+其中 $V$ 遍历包含在 $U_\alpha\cap U_\beta$ 中的基元素；
+$\rho_{\alpha\beta}=(\rho''_V)\colon\F(U_\alpha)\to\prod\F(V)$，
+其组成态射满足：当 $V,V',W\in\B$、$V\cup V'\subseteq U_\alpha\cap U_\beta$、$W\subseteq V\cap V'$ 时，
+有 $\rho_W^V\circ\rho''_V=\rho_W^{V'}\circ\rho''_{V'}$。}
+
+该条件显然必要。
+为证明充分性，先考虑 $X$ 的拓扑的另一个基 $\B'\subseteq\B$。
+设 $\F''$ 为从子族 $(\F(V))_{V\in\B'}$ 导出的预层；我们证明 $\F''$ 与 $\F'$ 典范同构。
+首先，对任一开集 $U$，典范态射 $\F'(U)\to\F(V)$ 对 $V\in\B'$、$V\subseteq U$ 的射影极限，
+给出态射 $\F'(U)\to\F''(U)$。
+若 $U\in\B$，则此态射为同构：因为根据假设，各典范态射 $\F''(U)\to\F(V)$，
+其中 $V\in\B'$、$V\subseteq U$，分解为
+$\F''(U)\to\F(U)\to\F(V)$；
+立即可以看出，如此定义的态射 $\F(U)\to\F''(U)$ 与 $\F''(U)\to\F(U)$ 的两个复合均为恒等态射。
+因此，对任一开集 $U$，各态射 $\F''(U)\to\F''(W)=\F(W)$，其中 $W\in\B$、$W\subseteq U$，
+满足刻画各 $\F(W)$ 的射影极限的条件。
+由射影极限在相差同构意义下的唯一性，就证明了我们的断言。
+
+现在，设 $U$ 为 $X$ 的任一开集，$(U_\alpha)$ 为其开覆盖，
+并以 $\B'$ 表示 $\B$ 中那些至少包含在某个 $U_\alpha$ 内的基元素组成的子族。
+显然，$\B'$ 仍是 $X$ 的拓扑的一个基。\transnote{
+原文此处写作“$X$ 的拓扑的一个基”。当 $U\ne X$ 时，所定义的 $\B'$ 实际上是开子空间 $U$ 的拓扑基；
+以下只对 $U$ 及各 $U_\alpha$ 取射影极限，应在这个开子空间内理解此句。这里保留原句并标明其适用范围。}
+故 $\F'(U)$ 是各 $\F(V)$ 对 $V\in\B'$、$V\subseteq U$ 的射影极限，
+而 $\F'(U_\alpha)$ 是对 $V\in\B'$、$V\subseteq U_\alpha$ 的射影极限。
+由射影极限的定义立即可验证公理 (F)。
+
+当 ($\mathrm F_0$) 成立时，我们也略不严格地将基 $\B$ 上的预层 $\F$ 称为一个\emph{层}。
+
+\egapar{3.2.3}
+设 $\F,\G$ 为基 $\B$ 上取值于 $\Kcat$ 的两个预层。
+态射 $u\colon\F\to\G$ 定义为一族态射
+$u_V\colon\F(V)\to\G(V)$（$V\in\B$），满足与限制态射 $\rho_U^V$ 的通常相容条件。
+采用（\hyperlink{para:0:3.2.1}{3.2.1}）的记号，对每个开集 $U$，取 $u'_U$ 为各 $u_V$ 对 $V\in\B$、$V\subseteq U$ 的射影极限，
+就得到相应通常预层之间的态射 $u'\colon\F'\to\G'$。
+与限制态射的相容性由射影极限的函子性得出。
+
+\egapar{3.2.4}
+若范畴 $\Kcat$ 具有归纳极限，而 $\F$ 为基 $\B$ 上取值于 $\Kcat$ 的预层，
+则对每个 $x\in X$，属于 $\B$ 的 $x$ 的邻域在 $x$ 的邻域集合中，关于 $\supseteq$ 构成共尾子集。
+因此，若 $\F'$ 为与 $\F$ 对应的通常预层，则茎 $\F'_x$ 等于
+$\ilim_{V\in\B,\,x\in V}\F(V)$。
+若 $u\colon\F\to\G$ 为 $\B$ 上取值于 $\Kcat$ 的预层态射，
+$u'\colon\F'\to\G'$ 为相应通常预层之间的态射，
+则 $u'_x$ 同样是各态射 $u_V\colon\F(V)\to\G(V)$ 对 $V\in\B$、$x\in V$ 的归纳极限。
+
+\egapar{3.2.5}
+回到（\hyperlink{para:0:3.2.1}{3.2.1}）的一般条件。
+若 $\F$ 为取值于 $\Kcat$ 的通常层，$\F_0$ 为将 $\F$ 限制到 $\B$ 所得的基上的层，
+则按（\hyperlink{para:0:3.2.1}{3.2.1}）的方法由 $\F_0$ 构造的通常层 $\F_1$，由条件 (F) 及射影极限的唯一性，
+与 $\F$ 典范同构。
+通常将 $\F$ 与 $\F_1$ 等同。
+
+若 $\G$ 为 $X$ 上取值于 $\Kcat$ 的另一个通常层，$u\colon\F\to\G$ 为态射，
+则上述说明表明：只给出 $V\in\B$ 时的 $u_V\colon\F(V)\to\G(V)$，就完全决定了 $u$。
+反过来，若已给出每个 $V\in\B$ 对应的 $u_V$，
+则只须对 $V,W\in\B$、$V\subseteq W$ 验证它们与限制态射 $\rho_V^W$ 的交换图，
+便存在唯一态射 $u'\colon\F\to\G$，使对每个 $V\in\B$ 有 $u'_V=u_V$（\hyperlink{para:0:3.2.3}{3.2.3}）。
+
+\egapar{3.2.6}
+仍假定 $\Kcat$ 具有射影极限。
+则 $X$ 上取值于 $\Kcat$ 的层范畴也具有射影极限。
+事实上，若 $(\F_\lambda)$ 为 $X$ 上取值于 $\Kcat$ 的层的一个射影系，则
+\[
+ \F(U)=\plim_\lambda\F_\lambda(U)
+\]
+定义了取值于 $\Kcat$ 的预层；
+由射影极限的传递性可验证公理 (F)，而 $\F$ 是各 $\F_\lambda$ 的射影极限这一事实也是显然的。
+
+当 $\Kcat$ 是集合范畴时，对任一射影系 $(\G_\lambda)$，
+若对每个 $\lambda$，$\G_\lambda$ 是 $\F_\lambda$ 的子层，
+则 $\plim\G_\lambda$ 典范地等同于 $\plim\F_\lambda$ 的子层。
+若 $\Kcat$ 是交换群范畴，则协变函子 $\plim\F_\lambda$ 是可加且左正合的。
+
+\subsection{层的粘合}\hypertarget{heading:0:3.3}{}
+\src{28—29}
+
+\egapar{3.3.1}
+仍假定范畴 $\Kcat$ 具有广义射影极限。
+设 $X$ 为拓扑空间，$\mathfrak U=(U_\lambda)_{\lambda\in L}$ 为 $X$ 的开覆盖。
+对每个 $\lambda\in L$，设 $\F_\lambda$ 为 $U_\lambda$ 上取值于 $\Kcat$ 的层。
+假定对每对指标 $(\lambda,\mu)$，给定同构
+\[
+ \theta_{\lambda\mu}\colon
+ \F_\mu|(U_\lambda\cap U_\mu)
+ \xrightarrow{\sim}
+ \F_\lambda|(U_\lambda\cap U_\mu).
+\]
+再假定对每个三元组 $(\lambda,\mu,\nu)$，
+以 $\theta'_{\lambda\mu}$、$\theta'_{\lambda\nu}$、$\theta'_{\mu\nu}$
+表示相应同构在 $U_\lambda\cap U_\mu\cap U_\nu$ 上的限制，则有
+\[
+ \theta'_{\lambda\nu}=\theta'_{\lambda\mu}\circ\theta'_{\mu\nu};
+\]
+这是各 $\theta_{\lambda\mu}$ 的\emph{粘合条件}。
+
+于是存在 $X$ 上取值于 $\Kcat$ 的层 $\F$，并且对每个 $\lambda$ 存在同构
+$\eta_\lambda\colon\F|U_\lambda\xrightarrow{\sim}\F_\lambda$，
+使得对每对 $(\lambda,\mu)$，若以 $\eta'_\lambda,\eta'_\mu$ 表示它们在
+$U_\lambda\cap U_\mu$ 上的限制，则有
+\[
+ \theta_{\lambda\mu}=\eta'_\lambda\circ(\eta'_\mu)^{-1}.
+\]
+此外，这些条件将 $\F$ 及各 $\eta_\lambda$ 确定到唯一同构。
+事实上，唯一性立即由（\hyperlink{para:0:3.2.5}{3.2.5}）得出。
+
+为证明 $\F$ 的存在性，以 $\B$ 表示那些至少包含在某个 $U_\lambda$ 中的开集组成的基。
+对每个 $U\in\B$，利用 Hilbert 的 $\tau$ 函数，
+从所有满足 $U\subseteq U_\lambda$ 的指标 $\lambda$ 所对应的对象 $\F_\lambda(U)$ 中选取一个。
+将此对象记为 $\F(U)$。
+当 $U\subseteq V$、$U,V\in\B$ 时，借助各 $\theta_{\lambda\mu}$，限制态射 $\rho_U^V$ 的定义是显然的，
+而传递条件是粘合条件的推论。
+此外，($\mathrm F_0$) 的验证是直接的，故如此定义的基上的预层确实是层。
+由一般方法（\hyperlink{para:0:3.2.1}{3.2.1}）得到一个通常层，仍记为 $\F$，它满足所要求的条件。
+称 $\F$ 是\emph{通过同构 $\theta_{\lambda\mu}$ 将各层 $\F_\lambda$ 粘合所得的层}；
+通常借助 $\eta_\lambda$ 将 $\F_\lambda$ 与 $\F|U_\lambda$ 等同。
+
+显然，$X$ 上取值于 $\Kcat$ 的任一层 $\F$ 都可以看作将各
+$\F_\lambda=\F|U_\lambda$ 通过恒等同构 $\theta_{\lambda\mu}$ 粘合所得的层，
+其中 $(U_\lambda)$ 为 $X$ 的任意开覆盖。
+
+\egapar{3.3.2}
+沿用上述记号。
+对每个 $\lambda\in L$，设 $\G_\lambda$ 为 $U_\lambda$ 上取值于 $\Kcat$ 的另一个层。
+假定对每对 $(\lambda,\mu)$ 给定同构
+\[
+ \omega_{\lambda\mu}\colon
+ \G_\mu|(U_\lambda\cap U_\mu)
+ \xrightarrow{\sim}\G_\lambda|(U_\lambda\cap U_\mu),
+\]
+且这些同构满足粘合条件。
+最后假定对每个 $\lambda$ 给定态射 $u_\lambda\colon\F_\lambda\to\G_\lambda$，并且下图交换：
+\begin{equation}
+\begin{tikzcd}[column sep=large,row sep=large]
+\F_\mu|(U_\lambda\cap U_\mu)
+ \arrow[r,"u_\mu"] \arrow[d,"\theta_{\lambda\mu}"']
+ &\G_\mu|(U_\lambda\cap U_\mu) \arrow[d,"\omega_{\lambda\mu}"]\\
+\F_\lambda|(U_\lambda\cap U_\mu)
+ \arrow[r,"u_\lambda"'] &\G_\lambda|(U_\lambda\cap U_\mu).
+\end{tikzcd}
+\tag{3.3.2.1}\label{eq:0:3.3.2.1}
+\end{equation}
+若 $\G$ 是通过各 $\omega_{\lambda\mu}$ 粘合 $\G_\lambda$ 所得的层，
+则存在唯一态射 $u\colon\F\to\G$，使下图交换：
+\[
+\begin{tikzcd}[column sep=large,row sep=large]
+ \F|U_\lambda \arrow[r,"u|U_\lambda"] \arrow[d,"\sim"']
+ & \G|U_\lambda \arrow[d,"\sim"]\\
+ \F_\lambda \arrow[r,"u_\lambda"'] & \G_\lambda.
+\end{tikzcd}
+\]
+这立即由（\hyperlink{para:0:3.2.3}{3.2.3}）得出。
+族 $(u_\lambda)$ 与 $u$ 之间的对应，是从
+$\prod_\lambda\Hom(\F_\lambda,\G_\lambda)$ 中满足（\hyperref[eq:0:3.3.2.1]{3.3.2.1}）的部分
+到 $\Hom(\F,\G)$ 的函子性双射。
+
+\egapar{3.3.3}
+采用（\hyperlink{para:0:3.3.1}{3.3.1}）的记号，设 $V$ 为 $X$ 的开集。
+立即可知，各 $\theta_{\lambda\mu}$ 在 $V\cap U_\lambda\cap U_\mu$ 上的限制，
+对诱导层 $\F_\lambda|(V\cap U_\lambda)$ 满足粘合条件；
+将这些诱导层粘合得到的 $V$ 上的层，典范地等同于 $\F|V$。
+
+\subsection{预层的直像}\hypertarget{heading:0:3.4}{}
+\src{29—30}
+
+\egapar{3.4.1}
+设 $X,Y$ 为两个拓扑空间，$\psi\colon X\to Y$ 为连续映射。
+设 $\F$ 为 $X$ 上取值于范畴 $\Kcat$ 的预层。
+对每个开集 $U\subseteq Y$，置 $\G(U)=\F(\psi^{-1}(U))$；
+若 $U,V$ 为 $Y$ 的开集且 $U\subseteq V$，
+以 $\rho_U^V$ 表示态射 $\F(\psi^{-1}(V))\to\F(\psi^{-1}(U))$。
+立即可见，各 $\G(U)$ 及 $\rho_U^V$ 定义了 $Y$ 上取值于 $\Kcat$ 的预层，
+称为 $\F$ 在 $\psi$ 下的\emph{直像}，记为 $\psi_*(\F)$。
+若 $\F$ 是层，则立即可以对预层 $\G(U)$ 验证公理 (F)，故 $\psi_*(\F)$ 是层。
+
+\egapar{3.4.2}
+设 $\F_1,\F_2$ 为 $X$ 上取值于 $\Kcat$ 的两个预层，$u\colon\F_1\to\F_2$ 为态射。
+当 $U$ 遍历 $Y$ 的开子集时，态射族
+\[
+ u_{\psi^{-1}(U)}\colon\F_1(\psi^{-1}(U))\longrightarrow\F_2(\psi^{-1}(U))
+\]
+满足与限制态射的相容条件，因而定义态射
+$\psi_*(u)\colon\psi_*(\F_1)\to\psi_*(\F_2)$。
+若 $v\colon\F_2\to\F_3$ 为到第三个这种预层的态射，则
+$\psi_*(v\circ u)=\psi_*(v)\circ\psi_*(u)$。
+换言之，$\psi_*(\F)$ 是关于 $\F$ 的协变函子，
+从 $X$ 上取值于 $\Kcat$ 的预层范畴（分别地，层范畴），
+取值于 $Y$ 上取值于 $\Kcat$ 的预层范畴（分别地，层范畴）。
+
+\egapar{3.4.3}
+设 $Z$ 为第三个拓扑空间，$\psi'\colon Y\to Z$ 为连续映射，并令 $\psi''=\psi'\circ\psi$。
+显然，对 $X$ 上每个取值于 $\Kcat$ 的预层 $\F$，有
+$\psi''_*(\F)=\psi'_*(\psi_*(\F))$；
+对每个这样的预层态射 $u\colon\F\to\G$，还有
+$\psi''_*(u)=\psi'_*(\psi_*(u))$。
+因此，$\psi''_*$ 是函子 $\psi'_*$ 与 $\psi_*$ 的复合，可写为
+\[
+ (\psi'\circ\psi)_*=\psi'_*\circ\psi_*.
+\]
+此外，对 $Y$ 的任一开集 $U$，诱导预层 $\F|\psi^{-1}(U)$
+在限制映射 $\psi|\psi^{-1}(U)$ 下的直像，就是诱导预层 $\psi_*(\F)|U$。
+
+\egapar{3.4.4}
+假定范畴 $\Kcat$ 具有归纳极限，$\F$ 为 $X$ 上取值于 $\Kcat$ 的预层。
+对每个 $x\in X$，各态射
+$\Gamma(\psi^{-1}(U),\F)\to\F_x$，其中 $U$ 为 $\psi(x)$ 在 $Y$ 中的开邻域，
+构成一个归纳系；取其归纳极限得到茎之间的态射
+\[
+ \psi_x\colon(\psi_*(\F))_{\psi(x)}\longrightarrow\F_x.
+\]
+通常这个态射既不是单射也不是满射。
+它是函子性的：事实上，若 $u\colon\F\to\G$ 为 $X$ 上取值于 $\Kcat$ 的预层态射，则下图交换：
+\[
+\begin{tikzcd}[column sep=large,row sep=large]
+ (\psi_*(\F))_{\psi(x)} \arrow[r,"\psi_x"] \arrow[d,"(\psi_*(u))_{\psi(x)}"']
+ & \F_x \arrow[d,"u_x"]\\
+ (\psi_*(\G))_{\psi(x)} \arrow[r,"\psi_x"'] & \G_x.
+\end{tikzcd}
+\]
+若 $Z$ 为第三个拓扑空间，$\psi'\colon Y\to Z$ 为连续映射，$\psi''=\psi'\circ\psi$，
+则对每个 $x\in X$，有 $\psi''_x=\psi_x\circ\psi'_{\psi(x)}$。
+
+\egapar{3.4.5}
+在（\hyperlink{para:0:3.4.4}{3.4.4}）的假设下，再假定 $\psi$ 是从 $X$ 到 $Y$ 的子空间 $\psi(X)$ 的同胚。
+则对每个 $x\in X$，$\psi_x$ 是同构。
+这特别适用于 $Y$ 的子集 $X$ 到 $Y$ 的典范单射 $j$。
+
+\egapar{3.4.6}
+假定 $\Kcat$ 是群范畴、环范畴等等。
+若 $\F$ 为 $X$ 上取值于 $\Kcat$ 的层，支集为 $S$，且 $y\notin\overline{\psi(S)}$，
+则由 $\psi_*(\F)$ 的定义，$(\psi_*(\F))_y=\{0\}$。
+也就是说，$\psi_*(\F)$ 的支集包含在 $\overline{\psi(S)}$ 中，
+但未必包含在 $\psi(S)$ 中。
+在相同假设下，若 $j$ 为子集 $X$ 到 $Y$ 的典范单射，则层 $j_*(\F)$ 在 $X$ 上诱导 $\F$。
+若 $X$ 还是 $Y$ 的闭子集，则 $j_*(\F)$ 是 $Y$ 上在 $X$ 上诱导 $\F$、
+在 $Y\setminus X$ 上诱导零层的层 (G, II, 2.9.2)；
+但是，若只假定 $X$ 局部闭而不闭，则 $j_*(\F)$ 通常不等于这一层。
+
+\subsection{预层的逆像}\hypertarget{heading:0:3.5}{}
+\src{30—33}
+
+\egapar{3.5.1}
+在（\hyperlink{para:0:3.4.1}{3.4.1}）的假设下，若 $\F,\G$ 分别为 $X,Y$ 上取值于 $\Kcat$ 的预层，
+则 $Y$ 上的预层态射 $u\colon\G\to\psi_*(\F)$ 也称为从 $\G$ 到 $\F$ 的一个
+\emph{$\psi$-态射}，也记作 $\G\to\F$。
+还以 $\Hom_\psi(\G,\F)$ 表示 $\psi$-态射的集合 $\Hom_Y(\G,\psi_*(\F))$。
+
+对每一对 $(U,V)$，其中 $U$ 为 $X$ 的开集，$V$ 为 $Y$ 的开集，且 $\psi(U)\subseteq V$，
+将限制态射 $\F(\psi^{-1}(V))\to\F(U)$ 与态射
+$u_V\colon\G(V)\to\psi_*(\F)(V)=\F(\psi^{-1}(V))$ 复合，
+得到态射 $u_{U,V}\colon\G(V)\to\F(U)$。
+立即可见，这些态射使下图交换：
+\begin{equation}
+\begin{tikzcd}[column sep=large,row sep=large]
+ \G(V) \arrow[r,"u_{U,V}"] \arrow[d] & \F(U) \arrow[d]\\
+ \G(V') \arrow[r,"u_{U',V'}"'] & \F(U').
+\end{tikzcd}
+\tag{3.5.1.1}\label{eq:0:3.5.1.1}
+\end{equation}
+这里 $U'\subseteq U$、$V'\subseteq V$、$\psi(U')\subseteq V'$。
+反过来，给定一族使图（\hyperref[eq:0:3.5.1.1]{3.5.1.1}）交换的态射 $(u_{U,V})$，就定义了一个 $\psi$-态射 $u$；
+只须取 $u_V=u_{\psi^{-1}(V),V}$。
+
+若 $\Kcat$ 具有广义射影极限，而 $\B,\B'$ 分别为 $X,Y$ 的拓扑基，
+则为了定义\emph{层}的 $\psi$-态射 $u$，
+只须对 $U\in\B$、$V\in\B'$、$\psi(U)\subseteq V$ 给出 $u_{U,V}$，
+并对 $U,U'\in\B$、$V,V'\in\B'$ 验证相容条件（\hyperref[eq:0:3.5.1.1]{3.5.1.1}）。
+事实上，对 $Y$ 的任一开集 $W$，只须将 $u_W$ 定义为
+各 $u_{U,V}$ 对 $V\in\B'$、$V\subseteq W$、$U\in\B$、$\psi(U)\subseteq V$ 的射影极限。
+
+若 $\Kcat$ 具有归纳极限，则对每个 $x\in X$ 及 $\psi(x)$ 在 $Y$ 中的任一开邻域 $V$，有态射
+\[
+ \G(V)\longrightarrow\F(\psi^{-1}(V))\longrightarrow\F_x.
+\]
+这些态射构成归纳系，取归纳极限得到态射 $\G_{\psi(x)}\to\F_x$。
+
+\egapar{3.5.2}
+在（\hyperlink{para:0:3.4.3}{3.4.3}）的假设下，设 $\F,\G,\HH$ 分别为 $X,Y,Z$ 上取值于 $\Kcat$ 的预层，
+$u\colon\G\to\psi_*(\F)$、$v\colon\HH\to\psi'_*(\G)$
+分别为 $\psi$-态射和 $\psi'$-态射。
+由此得到一个 $\psi''$-态射
+\[
+ w\colon\HH\xrightarrow{v}\psi'_*(\G)
+ \xrightarrow{\psi'_*(u)}\psi'_*(\psi_*(\F))=\psi''_*(\F),
+\]
+根据定义，称它为 $u$ 与 $v$ 的\emph{复合}。
+因此，由拓扑空间 $X$ 及其上一个取值于 $\Kcat$ 的预层 $\F$ 组成的二元组 $(X,\F)$，可以看作一个范畴的对象。
+其中的态射 $(\psi,\theta)\colon(X,\F)\to(Y,\G)$，
+由连续映射 $\psi\colon X\to Y$ 及 $\psi$-态射 $\theta\colon\G\to\F$ 组成。
+
+\egapar{3.5.3}
+设 $\psi\colon X\to Y$ 为连续映射，$\G$ 为 $Y$ 上取值于 $\Kcat$ 的预层。
+称二元组 $(\G',\rho)$ 为 $\G$ 在 $\psi$ 下的\emph{逆像}，若 $\G'$ 为 $X$ 上取值于 $\Kcat$ 的\emph{层}，
+$\rho\colon\G\to\G'$ 为 $\psi$-态射，即同态 $\G\to\psi_*(\G')$，
+并且对 $X$ 上取值于 $\Kcat$ 的每个层 $\F$，映射
+\begin{equation}
+ \Hom_X(\G',\F)\longrightarrow\Hom_\psi(\G,\F)
+ =\Hom_Y(\G,\psi_*(\F)),
+ \tag{3.5.3.1}\label{eq:0:3.5.3.1}
+\end{equation}
+将 $v$ 映为 $\psi_*(v)\circ\rho$，是一个双射。
+由于此映射关于 $\F$ 是函子性的，它定义了关于 $\F$ 的函子同构。
+二元组 $(\G',\rho)$ 是一个泛问题的解，故只要存在，就由上述条件确定到唯一同构。
+这时写作 $\G'=\psi^*(\G)$、$\rho=\rho_\G$。
+我们也略不严格地称 $\psi^*(\G)$ 为 $\G$ 在 $\psi$ 下的\emph{逆像层}，
+其中总将 $\psi^*(\G)$ 看作配备了典范 $\psi$-态射
+$\rho_\G\colon\G\to\psi^*(\G)$，也就是 $Y$ 上预层的典范同态
+\begin{equation}
+ \rho_\G\colon\G\longrightarrow\psi_*(\psi^*(\G)).
+ \tag{3.5.3.2}\label{eq:0:3.5.3.2}
+\end{equation}
+
+对任一同态 $v\colon\psi^*(\G)\to\F$，其中 $\F$ 是 $X$ 上取值于 $\Kcat$ 的层，置
+\[
+ v^\flat=\psi_*(v)\circ\rho_\G\colon\G\longrightarrow\psi_*(\F).
+\]
+由定义，每个预层态射 $u\colon\G\to\psi_*(\F)$ 都唯一地写成 $v^\flat$，
+将相应的 $v$ 记为 $u^\sharp$。
+换言之，任一预层态射 $u\colon\G\to\psi_*(\F)$ 都唯一地分解为
+\begin{equation}
+ u\colon\G\xrightarrow{\rho_\G}\psi_*(\psi^*(\G))
+ \xrightarrow{\psi_*(u^\sharp)}\psi_*(\F).
+ \tag{3.5.3.3}\label{eq:0:3.5.3.3}
+\end{equation}
+
+\egapar{3.5.4}
+现在假定范畴 $\Kcat$ 使得\origfootnote{
+在导言中提到的著作里，我们将给出关于范畴 $\Kcat$ 的非常一般的条件，
+以保证取值于 $\Kcat$ 的预层的逆像存在。}
+$Y$ 上取值于 $\Kcat$ 的任一预层 $\G$ 都具有在 $\psi$ 下的逆像，记为 $\psi^*(\G)$。
+我们将证明，可以把 $\psi^*(\G)$ 定义为关于 $\G$ 的协变函子，
+从 $Y$ 上取值于 $\Kcat$ 的预层范畴取值于 $X$ 上取值于 $\Kcat$ 的层范畴，
+使对应 $v\mapsto v^\flat$ 成为关于 $\G,\F$ 的双函子同构
+\begin{equation}
+ \Hom_X(\psi^*(\G),\F)\xrightarrow{\sim}\Hom_Y(\G,\psi_*(\F)).
+ \tag{3.5.4.1}\label{eq:0:3.5.4.1}
+\end{equation}
+
+事实上，对 $Y$ 上取值于 $\Kcat$ 的任一预层态射 $w\colon\G_1\to\G_2$，考虑复合态射
+\[
+ \G_1\xrightarrow{w}\G_2\xrightarrow{\rho_{\G_2}}\psi_*(\psi^*(\G_2)).
+\]
+与它对应的态射 $(\rho_{\G_2}\circ w)^\sharp\colon\psi^*(\G_1)\to\psi^*(\G_2)$，记为 $\psi^*(w)$。
+由（\hyperref[eq:0:3.5.3.3]{3.5.3.3}），有
+\begin{equation}
+ \psi_*(\psi^*(w))\circ\rho_{\G_1}=\rho_{\G_2}\circ w.
+ \tag{3.5.4.2}\label{eq:0:3.5.4.2}
+\end{equation}
+对每个态射 $u\colon\G_2\to\psi_*(\F)$，其中 $\F$ 为 $X$ 上取值于 $\Kcat$ 的层，
+由（\hyperref[eq:0:3.5.3.3]{3.5.3.3}）、（\hyperref[eq:0:3.5.4.2]{3.5.4.2}）及 $v^\flat$ 的定义，得到
+\[
+ \begin{aligned}
+ (u^\sharp\circ\psi^*(w))^\flat
+ &=\psi_*(u^\sharp)\circ\psi_*(\psi^*(w))\circ\rho_{\G_1}\\
+ &=\psi_*(u^\sharp)\circ\rho_{\G_2}\circ w
+ =u\circ w,
+ \end{aligned}
+\]
+即
+\begin{equation}
+ (u\circ w)^\sharp=u^\sharp\circ\psi^*(w).
+ \tag{3.5.4.3}\label{eq:0:3.5.4.3}
+\end{equation}
+特别取 $u$ 为态射 $\G_2\xrightarrow{w'}\G_3\xrightarrow{\rho_{\G_3}}\psi_*(\psi^*(\G_3))$，则有
+\[
+ \begin{aligned}
+ \psi^*(w'\circ w)
+ &=(\rho_{\G_3}\circ w'\circ w)^\sharp\\
+ &=(\rho_{\G_3}\circ w')^\sharp\circ\psi^*(w)
+ =\psi^*(w')\circ\psi^*(w),
+ \end{aligned}
+\]
+由此得到我们的断言。
+
+最后，对 $X$ 上取值于 $\Kcat$ 的任一层 $\F$，令 $i_\F$ 为 $\psi_*(\F)$ 的恒等态射，并以
+\[
+ \sigma_\F\colon\psi^*(\psi_*(\F))\longrightarrow\F
+\]
+表示态射 $(i_\F)^\sharp$。
+公式（\hyperref[eq:0:3.5.4.3]{3.5.4.3}）特别给出下列分解：
+\begin{equation}
+ u^\sharp\colon\psi^*(\G)\xrightarrow{\psi^*(u)}\psi^*(\psi_*(\F))
+ \xrightarrow{\sigma_\F}\F,
+ \tag{3.5.4.4}\label{eq:0:3.5.4.4}
+\end{equation}
+其中 $u\colon\G\to\psi_*(\F)$ 为任一态射。
+称 $\sigma_\F$ 为\emph{典范态射}。
+
+\egapar{3.5.5}
+设 $\psi'\colon Y\to Z$ 为连续映射，并假定 $Z$ 上取值于 $\Kcat$ 的任一预层 $\HH$
+都有在 $\psi'$ 下的逆像 $\psi'^*(\HH)$。
+于是，在（\hyperlink{para:0:3.5.4}{3.5.4}）的假设下，$Z$ 上取值于 $\Kcat$ 的每个预层 $\HH$，
+都有在 $\psi''=\psi'\circ\psi$ 下的逆像，并有典范函子性同构
+\begin{equation}
+ \psi''{}^*(\HH)\xrightarrow{\sim}\psi^*(\psi'^*(\HH)).
+ \tag{3.5.5.1}\label{eq:0:3.5.5.1}
+\end{equation}
+事实上，考虑到 $\psi''_*=\psi'_*\circ\psi_*$，这立即由定义得出。
+此外，若 $u\colon\G\to\psi_*(\F)$ 为 $\psi$-态射，
+$v\colon\HH\to\psi'_*(\G)$ 为 $\psi'$-态射，
+$w=\psi'_*(u)\circ v$ 为其复合（\hyperlink{para:0:3.5.2}{3.5.2}），则立即可验证 $w^\sharp$ 为复合态射
+\[
+ w^\sharp\colon\psi^*(\psi'^*(\HH))
+ \xrightarrow{\psi^*(v^\sharp)}\psi^*(\G)\xrightarrow{u^\sharp}\F.
+\]
+
+\egapar{3.5.6}
+特别取 $\psi$ 为恒等映射 $i_X\colon X\to X$。
+若 $X$ 上取值于 $\Kcat$ 的预层 $\F$ 在 $\psi$ 下的逆像存在，
+则称这个逆像为\emph{与预层 $\F$ 相伴的层}。
+因此，从 $\F$ 到一个取值于 $\Kcat$ 的层 $\F'$ 的任一态射 $u\colon\F\to\F'$，
+都唯一地分解为
+\[
+ \F\longrightarrow i_X^*(\F)\longrightarrow\F'.
+\]
+
+\subsection{常值层与局部常值层}\hypertarget{heading:0:3.6}{}
+\src{33}
+
+\egapar{3.6.1}
+若 $X$ 上取值于 $\Kcat$ 的预层 $\F$，对每个非空开集 $U\subseteq X$ 都使典范态射
+$\F(X)\to\F(U)$ 为同构，则称 $\F$ 为\emph{常值预层}。
+注意，$\F$ 未必是层。
+若一个层与某个常值预层相伴（\hyperlink{para:0:3.5.6}{3.5.6}），则称其为\emph{常值层}
+（原文：\textit{faisceau simple}）。
+若每个 $x\in X$ 都有一个开邻域 $U$，使 $\F|U$ 为常值层，
+则称层 $\F$ 为\emph{局部常值层}（原文：\textit{faisceau localement simple}）。
+
+\egapar{3.6.2}
+假定 $X$ 不可约（\hyperlink{para:0:2.1.1}{2.1.1}）。则以下性质等价：
+\begin{enumerate}[label=\alph*)]
+\item $\F$ 是 $X$ 上的常值预层；
+\item $\F$ 是 $X$ 上的常值层；
+\item $\F$ 是 $X$ 上的局部常值层。
+\end{enumerate}
+事实上，设 $\F$ 为 $X$ 上的常值预层。
+若 $U,V$ 为 $X$ 的两个非空开集，则 $U\cap V$ 非空；
+由于 $\F(X)\to\F(U)\to\F(U\cap V)$ 的复合以及 $\F(X)\to\F(U)$ 都是同构，
+故 $\F(U)\to\F(U\cap V)$ 也是同构。
+同样，$\F(V)\to\F(U\cap V)$ 也是同构。
+由此立即得到（\hyperlink{para:0:3.1.2}{3.1.2}）的公理 (F)，故 $\F$ 同构于其相伴层，因而 a) 蕴含 b)。
+
+现在，设 $(U_\alpha)$ 为 $X$ 的一个由非空开集组成的开覆盖，
+而 $\F$ 为 $X$ 上的一个层，使得每个 $\F|U_\alpha$ 都是常值层。
+由于 $U_\alpha$ 不可约，由前述讨论，$\F|U_\alpha$ 为常值预层。
+由于 $U_\alpha\cap U_\beta$ 非空，两个态射
+$\F(U_\alpha)\to\F(U_\alpha\cap U_\beta)$ 与
+$\F(U_\beta)\to\F(U_\alpha\cap U_\beta)$ 均为同构，
+从而对每对指标得到典范同构 $\theta_{\alpha\beta}\colon\F(U_\alpha)\to\F(U_\beta)$。
+这时对 $U=X$ 应用条件 (F)，可见对每个指标 $\alpha_0$，
+$\F(U_{\alpha_0})$ 及各 $\theta_{\alpha_0\alpha}$ 也是相应泛问题的解。
+由唯一性可知，$\F(X)\to\F(U_{\alpha_0})$ 为同构，故 c) 蕴含 a)。
+
+\subsection{群预层或环预层的逆像}\hypertarget{heading:0:3.7}{}
+\src{34}
+
+\egapar{3.7.1}
+我们将证明，当 $\Kcat$ 取为集合范畴时，任一取值于 $\Kcat$ 的预层 $\G$ 在 $\psi$ 下的逆像总是存在。
+关于 $X,Y,\psi$ 的记号及假设沿用（\hyperlink{para:0:3.5.3}{3.5.3}）。
+事实上，对任一开集 $U\subseteq X$，如下定义 $\G'(U)$：
+其元素 $s'$ 是一个族 $(s'_x)_{x\in U}$，其中对每个 $x\in U$ 有 $s'_x\in\G_{\psi(x)}$；
+且对每个 $x\in U$，满足下述条件：
+存在 $\psi(x)$ 在 $Y$ 中的一个开邻域 $V$，
+$x$ 的一个邻域 $W\subseteq\psi^{-1}(V)\cap U$，以及元素 $s\in\G(V)$，
+使得对每个 $z\in W$ 有 $s'_z=s_{\psi(z)}$。
+立即可以验证，$U\mapsto\G'(U)$ 满足层的公理。
+
+现在设 $\F$ 为 $X$ 上的集合层，
+$u\colon\G\to\psi_*(\F)$ 与 $v\colon\G'\to\F$ 为态射。
+如下定义 $u^\sharp$ 和 $v^\flat$：
+若 $s'$ 是 $\G'$ 在点 $x\in X$ 的一个邻域 $U$ 上的截面，
+而 $V$ 为 $\psi(x)$ 的开邻域，$s\in\G(V)$ 使得对 $x$ 的某个包含在
+$\psi^{-1}(V)\cap U$ 中的邻域中的每个 $z$，都有 $s'_z=s_{\psi(z)}$，
+则规定 $u^\sharp(s')$ 在 $x$ 的芽为 $s_{\psi(x)}$ 经（\hyperlink{para:0:3.5.1}{3.5.1}）所定义的茎映射后的像\transnote{
+原版此处的公式右端写为 $u_{\psi(x)}(s_{\psi(x)})$。
+若 $u_{\psi(x)}$ 按 $Y$ 上预层同态 $u\colon\G\to\psi_*(\F)$ 的茎映射理解，
+其值位于 $(\psi_*(\F))_{\psi(x)}$，还须接上（\hyperlink{para:0:3.4.4}{3.4.4}）的比较映射 $\psi_x$ 才位于 $\F_x$。
+译文将这个复合显式写出；它正是（\hyperlink{para:0:3.5.1}{3.5.1}）末段使用的映射。}，即
+\[
+ (u^\sharp(s'))_x=\psi_x\bigl(u_{\psi(x)}(s_{\psi(x)})\bigr).
+\]
+
+同样，若 $s\in\G(V)$，其中 $V$ 为 $Y$ 的开集，则 $v^\flat(s)$ 是 $\F$ 在 $\psi^{-1}(V)$ 上的截面，
+它是 $\G'$ 的截面 $s'$ 在 $v$ 下的像，而 $s'$ 由对每个 $x\in\psi^{-1}(V)$ 规定
+$s'_x=s_{\psi(x)}$ 给出。
+
+此外，典范同态（\hyperlink{para:0:3.5.3}{3.5.3}）$\rho\colon\G\to\psi_*(\psi^*(\G))$ 如下定义：
+对每个开集 $V\subseteq Y$ 及每个截面 $s\in\Gamma(V,\G)$，
+$\rho(s)$ 是 $\psi^*(\G)$ 在 $\psi^{-1}(V)$ 上的截面
+$(s_{\psi(x)})_{x\in\psi^{-1}(V)}$。
+关系
+\[
+ (u^\sharp)^\flat=u,\qquad (v^\flat)^\sharp=v,
+ \qquad v^\flat=\psi_*(v)\circ\rho
+\]
+的验证是直接的；由此证明了我们的断言。
+
+若 $w\colon\G_1\to\G_2$ 为 $Y$ 上的集合预层同态，
+可以验证，$\psi^*(w)$ 的显式描述如下：
+若 $s'=(s'_x)_{x\in U}$ 为 $\psi^*(\G_1)$ 在 $X$ 的开集 $U$ 上的截面，
+则 $(\psi^*(w))(s')$ 就是族 $(w_{\psi(x)}(s'_x))_{x\in U}$。
+最后，立即可知，对 $Y$ 的任一开集 $V$，$\G|V$ 在 $\psi$ 限制于 $\psi^{-1}(V)$ 的映射下的逆像，
+与诱导层 $\psi^*(\G)|\psi^{-1}(V)$ 相同。
+
+当 $\psi$ 为恒等映射 $i_X$ 时，就重新得到与预层相伴的集合层的定义 (G, II, 1.2)。
+当 $\Kcat$ 为群范畴或不一定交换的环的范畴时，上述讨论无须改动仍然适用。
+
+若 $X$ 为拓扑空间 $Y$ 的任意子集，$j\colon X\to Y$ 为典范单射，
+则对 $Y$ 上取值于范畴 $\Kcat$ 的任一层 $\G$，
+称逆像 $j^*(\G)$（若存在）为\emph{$\G$ 在 $X$ 上诱导的层}。
+对集合层、群层或环层，这重新给出了通常的定义 (G, II, 1.5)。
+
+\egapar{3.7.2}
+保留（\hyperlink{para:0:3.5.3}{3.5.3}）的记号与假设，并假定 $\G$ 为 $Y$ 上的群层（分别地，环层）。
+由 $\psi^*(\G)$ 的截面定义（\hyperlink{para:0:3.7.1}{3.7.1}），结合（\hyperlink{para:0:3.4.4}{3.4.4}）可知，茎的同态
+\[
+ \psi_x\circ\rho_{\psi(x)}\colon
+ \G_{\psi(x)}\longrightarrow(\psi^*(\G))_x
+\]
+是关于 $\G$ 的函子性同构，从而可以将这两个茎等同。
+在此等同下，$u_x^\sharp$ 就是（\hyperlink{para:0:3.5.1}{3.5.1}）中定义的同态。
+特别地，有
+\[
+ \Supp(\psi^*(\G))=\psi^{-1}(\Supp(\G)).
+\]
+这一结果的直接推论是：在交换群层的阿贝尔范畴中，函子 $\psi^*(\G)$ 关于 $\G$ 是正合的。
+
+\subsection{伪离散空间层}\hypertarget{heading:0:3.8}{}
+\src{35；止于（\hyperlink{para:0:3.8.3}{3.8.3}）}
+
+\egapar{3.8.1}
+设 $X$ 为拓扑空间，其拓扑具有由拟紧开集组成的基 $\B$。
+设 $\F$ 为 $X$ 上的集合层。
+若给每个 $\F(U)$ 赋予离散拓扑，则 $U\mapsto\F(U)$ 为拓扑空间预层。
+我们将证明，存在与它相伴的拓扑空间层 $\F'$（\hyperlink{para:0:3.5.6}{3.5.6}），
+使得对每个拟紧开集 $U$，$\Gamma(U,\F')$ 就是离散空间 $\F(U)$。
+为此，只须证明 $\B$ 上的离散拓扑空间预层 $U\mapsto\F(U)$ 满足（\hyperlink{para:0:3.2.2}{3.2.2}）的条件 ($\mathrm F_0$)。
+更一般地，只须证明：若 $U$ 是拟紧开集，$(U_\alpha)$ 是由 $\B$ 的元素组成的 $U$ 的覆盖，
+则 $\Gamma(U,\F)$ 上使各映射 $\Gamma(U,\F)\to\Gamma(U_\alpha,\F)$ 连续的最粗拓扑
+$\mathscr T$ 是离散拓扑。
+
+现在存在有限个指标 $\alpha_i$ 使 $U=\bigcup_i U_{\alpha_i}$。
+设 $s\in\Gamma(U,\F)$，以 $s_i$ 表示它在 $\Gamma(U_{\alpha_i},\F)$ 中的像。
+根据定义，单点集 $\{s_i\}$ 的各逆像的交是 $s$ 在拓扑 $\mathscr T$ 下的一个邻域。
+但由于 $\F$ 为集合层，且各 $U_{\alpha_i}$ 覆盖 $U$，这个交只有 $s$ 一个元素；
+由此得到我们的断言。
+
+注意，若 $U$ 是 $X$ 的非拟紧开集，则拓扑空间 $\Gamma(U,\F')$ 的底层集合仍为 $\Gamma(U,\F)$，
+但其拓扑一般不离散：它是使各映射
+\[
+ \Gamma(U,\F)\longrightarrow\Gamma(V,\F)
+ \qquad(V\in\B,\ V\subseteq U)
+\]
+连续的最粗拓扑，其中各 $\Gamma(V,\F)$ 带离散拓扑。
+
+上述讨论无须改动就适用于群层或不一定交换的环层，并分别为它们配备拓扑群层或拓扑环层。
+为简便起见，称层 $\F'$ 为与集合层（分别地，群层、环层）$\F$ 相伴的
+\emph{伪离散空间层}（分别地，\emph{伪离散群层}、\emph{伪离散环层}）。
+
+\egapar{3.8.2}
+设 $\F,\G$ 为 $X$ 上的两个集合层（分别地，群层、环层），$u\colon\F\to\G$ 为同态。
+以 $\F',\G'$ 分别表示与 $\F,\G$ 相伴的伪离散层，则 $u$ 也是一个连续同态 $\F'\to\G'$。
+事实上，这由（\hyperlink{para:0:3.2.5}{3.2.5}）得出。
+
+\egapar{3.8.3}
+设 $\F$ 为集合层，$\HH$ 为 $\F$ 的子层，$\F',\HH'$ 分别为与 $\F,\HH$ 相伴的伪离散层。
+则对每个开集 $U\subseteq X$，$\Gamma(U,\HH')$ 在 $\Gamma(U,\F')$ 中是闭的。
+事实上，它是各 $\Gamma(V,\HH)$（$V\in\B$、$V\subseteq U$）在连续映射
+\[
+ \Gamma(U,\F')\longrightarrow\Gamma(V,\F)
+\]
+下的逆像之交，而 $\Gamma(V,\HH)$ 在离散空间 $\Gamma(V,\F)$ 中是闭的。
+
+
+% END chapters/ch0_s3.tex
+
+\par
+
+% BEGIN chapters/ch0_s4.tex
+\section{赋环空间}\hypertarget{heading:0:4}{}
+\subsection{赋环空间、\texorpdfstring{$\A$}{A}-模层与\texorpdfstring{$\A$}{A}-代数层}\hypertarget{heading:0:4.1}{}
+\src{35—39}
+
+\egapar{4.1.1}
+一个\emph{赋环空间}（分别地，\emph{赋拓扑环空间}）是一个二元组 $(X,\A)$，
+其中 $X$ 是拓扑空间，$\A$ 是 $X$ 上的环层（环不必交换；分别地，$\A$ 是拓扑环层）。
+称 $X$ 为赋环空间 $(X,\A)$ 的\emph{底拓扑空间}，称 $\A$ 为其\emph{结构层}。
+结构层记作 $\OO_X$；它在点 $x\in X$ 的茎记作 $\OO_{X,x}$，在不会引起混淆时也简记为 $\OO_x$。
+
+用 $1$ 或 $e$ 表示 $\OO_X$ 在 $X$ 上的\emph{单位截面}，即环 $\Gamma(X,\OO_X)$ 的单位元。
+
+本专著主要考察交换环层；因此，未加说明地谈到赋环空间 $(X,\A)$ 时，均默认 $\A$ 是交换环层。
+
+结构层不必交换的赋环空间（分别地，赋拓扑环空间）构成一个范畴：
+把态射 $(X,\A)\to(Y,\BB)$ 定义为二元组 $\Psi=(\psi,\theta)$，
+其中 $\psi\colon X\to Y$ 是连续映射，$\theta\colon\BB\to\A$ 是环层的一个 $\psi$-态射（\hyperlink{para:0:3.5.1}{3.5.1}）
+（分别地，是拓扑环层的一个 $\psi$-态射）。
+另一个态射 $\Psi'=(\psi',\theta')\colon(Y,\BB)\to(Z,\C)$ 与 $\Psi$ 的复合，
+记为 $\Psi''=\Psi'\circ\Psi$，是态射 $(\psi'',\theta'')$，其中
+\[
+ \psi''=\psi'\circ\psi,\qquad
+ \theta''=\psi'_*(\theta)\circ\theta'
+\]
+（参见（\hyperlink{para:0:3.5.2}{3.5.2}））。对于赋环空间，回顾（\hyperlink{para:0:3.5.5}{3.5.5}），有
+\[
+ \theta''{}^\sharp=\theta^\sharp\circ\psi^*(\theta'{}^\sharp).
+\]
+因此，若 $\theta^\sharp$ 与 $\theta'{}^\sharp$ 都是单射同态（分别地，满射同态），
+则 $\theta''{}^\sharp$ 也如此；这里用到了对每个 $x\in X$，
+$\psi_x\circ\rho_{\psi(x)}$ 都是同构这一事实（\hyperlink{para:0:3.7.2}{3.7.2}）。
+由以上事实立即验证：当 $\psi$ 是单射连续映射，且 $\theta^\sharp$ 是环层的满射同态时，
+$(\psi,\theta)$ 是赋环空间范畴中的\emph{单态射}（T，I.1）。
+
+在不会引起混淆时，我们往往略去记号上的区别，以 $\Psi$ 代替 $\psi$；
+例如，对于 $Y$ 的子集 $U$，写 $\Psi^{-1}(U)$ 而不写 $\psi^{-1}(U)$。
+
+\egapar{4.1.2}
+对于 $X$ 的任意子集 $M$，二元组 $(M,\A|M)$ 显然是赋环空间，称为由 $(X,\A)$
+\emph{在 $M$ 上诱导的赋环空间}，也称为 $(X,\A)$ \emph{在 $M$ 上的限制}。
+若 $j\colon M\to X$ 是典范包含映射，$\omega$ 是 $\A|M$ 的恒等映射，则
+\[
+ (j,\omega^\flat)\colon(M,\A|M)\longrightarrow(X,\A)
+\]
+是赋环空间的单态射，称为\emph{典范包含态射}。
+态射 $\Psi\colon(X,\A)\to(Y,\BB)$ 与这一包含态射的复合，称为 $\Psi$ 在 $M$ 上的限制。
+
+\egapar{4.1.3}
+我们不再重述赋环空间 $(X,\A)$ 上的 $\A$-\emph{模层}，或\emph{代数层}的定义（G，II，2.2）。
+当 $\A$ 是不必交换的环层时，除非明确作相反说明，$\A$-模层始终指\emph{左 $\A$-模层}。
+$\A$ 的子模层称为 $\A$ 中的\emph{理想层}（左、右或双边理想层），也称为 $\A$-\emph{理想层}。
+
+当 $\A$ 是交换环层时，在 $\A$-模层的定义中处处以代数结构代替模结构，
+就得到 $X$ 上的 $\A$-\emph{代数层}的定义。
+等价地，一个不必交换的 $\A$-代数层是一个 $\A$-模层 $\C$，连同一个 $\A$-模层同态
+$\varphi\colon\C\otimes_{\A}\C\to\C$ 和一个在 $X$ 上的截面 $e$，满足：
+第一，图
+\[
+\begin{tikzcd}[column sep=large]
+\C\otimes_{\A}\C\otimes_{\A}\C
+ \arrow[r,"\varphi\otimes1"]\arrow[d,"1\otimes\varphi"'] &
+\C\otimes_{\A}\C\arrow[d,"\varphi"]\\
+\C\otimes_{\A}\C\arrow[r,"\varphi"'] & \C
+\end{tikzcd}
+\]
+交换；第二，对每个开集 $U\subseteq X$ 及每个截面 $s\in\Gamma(U,\C)$，有
+\[
+ \varphi\bigl((e|U)\otimes s\bigr)
+ =\varphi\bigl(s\otimes(e|U)\bigr)=s.
+\]
+称 $\C$ 是\emph{交换的} $\A$-代数层，还要求图
+\[
+\begin{tikzcd}[column sep=large]
+ \C\otimes_{\A}\C\arrow[rr,"\sigma"]\arrow[dr,"\varphi"']&&
+ \C\otimes_{\A}\C\arrow[dl,"\varphi"]\\
+ &\C&
+\end{tikzcd}
+\]
+交换，其中 $\sigma$ 是张量积 $\C\otimes_{\A}\C$ 的典范对称同构。
+
+$\A$-代数层同态也像（G，II，2.2）中的 $\A$-模层同态那样定义，
+但它们当然不再构成一个阿贝尔群。
+
+若 $\F$ 是 $\A$-代数层 $\C$ 的一个子 $\A$-模层，
+则\emph{由 $\F$ 生成的 $\C$ 的子 $\A$-代数层}是各同态
+\[
+ \bigotimes_{\A}^{n}\F\longrightarrow\C\qquad(n\geq0)
+\]
+的像之和。它也是下述代数预层 $U\mapsto\BB(U)$ 的相伴层：
+$\BB(U)$ 是由子模 $\Gamma(U,\F)$ 生成的 $\Gamma(U,\C)$ 的子代数。
+
+\egapar{4.1.4}
+称拓扑空间 $X$ 上的环层 $\A$ \emph{在点 $x$ 约化}，是指茎 $\A_x$ 是约化环（\hyperlink{para:0:1.1.1}{1.1.1}）；
+称 $\A$ \emph{约化}，是指它在 $X$ 的每一点都约化。
+回顾：一个环 $A$ 称为\emph{正则环}，是指对 $A$ 的每个素理想 $\mathfrak p$，
+局部环 $A_{\mathfrak p}$ 都是正则局部环。
+称 $X$ 上的环层 $\A$ \emph{在点 $x$ 正则}（分别地，\emph{正则}），
+是指茎 $\A_x$ 是正则环（分别地，$\A$ 在每一点都正则）。
+最后，称 $\A$ \emph{在点 $x$ 正规}（分别地，\emph{正规}），是指 $\A_x$ 是整闭整环
+（分别地，$\A$ 在每一点都正规）。
+称赋环空间 $(X,\A)$ 具有上述某一性质，是指其环层 $\A$ 具有该性质。
+
+一个\emph{分次环层} $\A$，按定义是作为阿贝尔群层等于一族阿贝尔群层
+$(\A_n)_{n\in\mathbf Z}$ 的直和（G，II，2.7）的环层，并满足
+$\A_m\A_n\subseteq\A_{m+n}$。
+一个\emph{分次 $\A$-模层}是一个 $\A$-模层 $\F$，它等于一族阿贝尔群层
+$(\F_n)_{n\in\mathbf Z}$ 的直和，并满足 $\A_m\F_n\subseteq\F_{m+n}$。
+这些条件也分别等价于在每一点 $x$ 都有
+\[
+ (\A_m)_x(\A_n)_x\subseteq(\A_{m+n})_x,
+ \qquad
+ (\A_m)_x(\F_n)_x\subseteq(\F_{m+n})_x.
+\]
+
+\egapar{4.1.5}
+给定一个结构层不必交换的赋环空间 $(X,\A)$，我们不再重述双函子
+\[
+ \F\otimes_{\A}\G,\qquad
+ \shHom_{\A}(\F,\G),\qquad
+ \Hom_{\A}(\F,\G)
+\]
+的定义（G，II，2.8 与 2.2）。视具体情形，它们定义在左或右 $\A$-模层的范畴上，
+取值于阿贝尔群层的范畴（更一般地，若 $\C$ 是 $\A$ 的中心，则取值于 $\C$-模层的范畴）。
+\transnote{本句依原文并列三种记号；其中前两种为层，而 $\Hom_{\A}(\F,\G)$ 表示模层的全体同态所成的阿贝尔群。后者与同态层的关系由下文的截面公式给出。}
+对于每个 $x\in X$，茎 $(\F\otimes_{\A}\G)_x$ 典范地等同于
+$\F_x\otimes_{\A_x}\G_x$。
+还可以定义典范函子性同态
+\[
+ \bigl(\shHom_{\A}(\F,\G)\bigr)_x
+ \longrightarrow\Hom_{\A_x}(\F_x,\G_x),
+\]
+它一般既不是单射，也不是满射。
+上述双函子都是加性的，特别地，与有限直和可交换。
+$\F\otimes_{\A}\G$ 关于 $\F$ 和 $\G$ 均右正合，并与归纳极限可交换；
+$\A\otimes_{\A}\G$ 与 $\F\otimes_{\A}\A$ 分别典范地等同于 $\G$ 与 $\F$。
+函子 $\shHom_{\A}(\F,\G)$ 与 $\Hom_{\A}(\F,\G)$ 关于 $\F$ 和 $\G$ 均左正合。
+更准确地说，若有正合列 $0\to\G'\to\G\to\G''$，则
+\[
+ 0\longrightarrow\shHom_{\A}(\F,\G')
+ \longrightarrow\shHom_{\A}(\F,\G)
+ \longrightarrow\shHom_{\A}(\F,\G'')
+\]
+正合；若有正合列 $\F'\to\F\to\F''\to0$，则
+\[
+ 0\longrightarrow\shHom_{\A}(\F'',\G)
+ \longrightarrow\shHom_{\A}(\F,\G)
+ \longrightarrow\shHom_{\A}(\F',\G)
+\]
+正合。函子 $\Hom$ 也具有相应的性质。
+此外，$\shHom_{\A}(\A,\G)$ 典范地等同于 $\G$；对每个开集 $U\subseteq X$，有
+\[
+ \Gamma\bigl(U,\shHom_{\A}(\F,\G)\bigr)
+ =\Hom_{\A|U}(\F|U,\G|U).
+\]
+
+对于每个左 $\A$-模层（分别地，右 $\A$-模层）$\F$，
+称右 $\A$-模层（分别地，左 $\A$-模层）$\shHom_{\A}(\F,\A)$ 为 $\F$ 的\emph{对偶}，
+记为 $\dual{\F}$。
+
+最后，若 $\A$ 是交换环层，$\F$ 是 $\A$-模层，则
+$U\mapsto\bigwedge^p\Gamma(U,\F)$ 是一个预层，
+其相伴层是一个 $\A$-模层，记为 $\bigwedge^p\F$，称为 $\F$ 的\emph{第 $p$ 次外幂}。
+容易验证，从预层 $U\mapsto\bigwedge^p\Gamma(U,\F)$ 到相伴层 $\bigwedge^p\F$ 的典范映射是单射，
+并且对每个 $x\in X$，有
+\[
+ \left(\bigwedge^p\F\right)_x=\bigwedge^p(\F_x).
+\]
+显然，$\bigwedge^p\F$ 是关于 $\F$ 的协变函子。
+\transnote{本句关于典范映射为单射的断言，在所列的一般性下不成立，而不仅是对任意预层不能自动成立。
+在（I，\hyperlink{para:1:2.3.2}{2.3.2}）由 $s=t^{-1}$ 粘合的两张仿射图上，取按 $e_s=t e_t$ 粘合的可逆层 $\LL$。
+则 $\Gamma(X,\OO_X)=k$，而 $\LL$ 的全局截面对应于
+$b(t)=t\,a(1/t)$ 的多项式对，故 $\Gamma(X,\LL)\simeq k^2$。
+另一方面，$\bigwedge^2\LL=0$，所以非零的
+$\bigwedge_k^2\Gamma(X,\LL)\simeq k$ 到 $\Gamma(X,\bigwedge^2\LL)=0$ 的典范映射不是单射。
+正文保留原著断言；上述反例为译者补充。各外幂分别在相应的截面环或茎环上取。}
+
+\egapar{4.1.6}
+设 $\A$ 是不必交换的环层，$\J$ 是 $\A$ 的左理想层，$\F$ 是左 $\A$-模层。
+记 $\J\F$ 为典范映射 $\J\otimes_{\mathbf Z}\F\to\F$ 的像所给出的 $\F$ 的子 $\A$-模层，
+这里 $\mathbf Z$ 表示常值预层 $U\mapsto\mathbf Z$ 的相伴层。
+显然，对于每个 $x\in X$，有 $(\J\F)_x=\J_x\F_x$。
+当 $\A$ 交换时，$\J\F$ 也是 $\J\otimes_{\A}\F\to\F$ 的典范像。
+立即可见，$\J\F$ 也是预层
+\[
+ U\longmapsto\Gamma(U,\J)\Gamma(U,\F)
+\]
+的相伴 $\A$-模层。
+若 $\J_1,\J_2$ 是 $\A$ 的两个左理想层，则
+$\J_1(\J_2\F)=(\J_1\J_2)\F$。
+
+\egapar{4.1.7}
+设 $(X_\lambda,\A_\lambda)_{\lambda\in L}$ 是一族赋环空间。
+对于每对指标 $(\lambda,\mu)$，假定给定了 $X_\lambda$ 的一个开子集 $V_{\lambda\mu}$，以及赋环空间的同构
+\[
+ \varphi_{\mu\lambda}\colon
+ (V_{\lambda\mu},\A_\lambda|V_{\lambda\mu})
+ \xrightarrow{\sim}
+ (V_{\mu\lambda},\A_\mu|V_{\mu\lambda}),
+\]
+其中 $V_{\lambda\lambda}=X_\lambda$，$\varphi_{\lambda\lambda}$ 为恒等态射。
+再假定，对于每个三元组 $(\lambda,\mu,\nu)$，若以 $\varphi'_{\mu\lambda}$ 表示
+$\varphi_{\mu\lambda}$ 在 $V_{\lambda\mu}\cap V_{\lambda\nu}$ 上的限制，则它是
+\[
+ (V_{\lambda\mu}\cap V_{\lambda\nu},
+  \A_\lambda|(V_{\lambda\mu}\cap V_{\lambda\nu}))
+\]
+到
+\[
+ (V_{\mu\lambda}\cap V_{\mu\nu},
+  \A_\mu|(V_{\mu\lambda}\cap V_{\mu\nu}))
+\]
+的同构，并且有
+\[
+ \varphi'_{\lambda\nu}
+ =\varphi'_{\lambda\mu}\circ\varphi'_{\mu\nu}
+\]
+（各 $\varphi_{\mu\lambda}$ 的\emph{粘合条件}）。
+首先，沿各 $V_{\lambda\mu}$，利用 $\varphi_{\mu\lambda}$ 把各 $X_\lambda$ 粘合，得到拓扑空间 $X$。
+把 $X_\lambda$ 与 $X$ 中相应的开子集 $X'_\lambda$ 等同，则由假设，三个集合
+\[
+ V_{\lambda\mu}\cap V_{\lambda\nu},\quad
+ V_{\mu\lambda}\cap V_{\mu\nu},\quad
+ V_{\nu\lambda}\cap V_{\nu\mu}
+\]
+都与 $X'_\lambda\cap X'_\mu\cap X'_\nu$ 等同。
+于是可以把 $X_\lambda$ 的赋环空间结构搬移到 $X'_\lambda$ 上。
+若 $\A'_\lambda$ 是由 $\A_\lambda$ 搬移所得的环层，则各 $\A'_\lambda$ 满足粘合条件（\hyperlink{para:0:3.3.1}{3.3.1}），
+因而定义了 $X$ 上的环层 $\A$。
+称 $(X,\A)$ 是\emph{沿各 $V_{\lambda\mu}$、利用各 $\varphi_{\mu\lambda}$ 粘合各
+$(X_\lambda,\A_\lambda)$ 所得的赋环空间}。
+
+\subsection{\texorpdfstring{$\A$}{A}-模层的直像}\hypertarget{heading:0:4.2}{}
+\src{39—40}
+
+\egapar{4.2.1}
+设 $(X,\A),(Y,\BB)$ 为赋环空间，
+$\Psi=(\psi,\theta)\colon(X,\A)\to(Y,\BB)$ 为态射。
+于是 $\psi_*(\A)$ 是 $Y$ 上的环层，$\theta\colon\BB\to\psi_*(\A)$ 是环层同态。
+设 $\F$ 为 $\A$-模层；它的直像 $\psi_*(\F)$ 是 $Y$ 上的阿贝尔群层。
+对每个开集 $U\subseteq Y$，
+\[
+ \Gamma(U,\psi_*(\F))=\Gamma(\psi^{-1}(U),\F)
+\]
+是环 $\Gamma(U,\psi_*(\A))=\Gamma(\psi^{-1}(U),\A)$ 上的模。
+定义这些模结构的双线性映射与限制运算相容，因此在 $\psi_*(\F)$ 上定义了
+$\psi_*(\A)$-模层结构。
+再利用同态 $\theta\colon\BB\to\psi_*(\A)$，就得到 $\psi_*(\F)$ 上的 $\BB$-模层结构；
+称这个 $\BB$-模层为\emph{$\F$ 在态射 $\Psi$ 下的直像}，记作 $\Psi_*(\F)$。
+
+若 $\F_1,\F_2$ 是 $X$ 上的两个 $\A$-模层，$u\colon\F_1\to\F_2$ 为 $\A$-同态，
+则考察 $Y$ 上各开集的截面，立即可见 $\psi_*(u)$ 是
+$\psi_*(\F_1)\to\psi_*(\F_2)$ 的 $\psi_*(\A)$-同态，因而也是
+$\Psi_*(\F_1)\to\Psi_*(\F_2)$ 的 $\BB$-同态。
+作为 $\BB$-同态，把它记作 $\Psi_*(u)$。
+这样，$\Psi_*$ 是从 $\A$-模层范畴到 $\BB$-模层范畴的协变函子。
+而且，立即可见该函子左正合（G，II，2.12）。
+
+在 $\psi_*(\A)$ 上，$\BB$-模层结构与环层结构共同定义了一个 $\BB$-代数层结构；
+将这一 $\BB$-代数层记作 $\Psi_*(\A)$。
+
+\egapar{4.2.2}
+设 $\M,\N$ 是两个 $\A$-模层。对 $Y$ 的每个开集 $U$，有典范映射
+\[
+ \Gamma(\psi^{-1}(U),\M)\times\Gamma(\psi^{-1}(U),\N)
+ \longrightarrow\Gamma(\psi^{-1}(U),\M\otimes_{\A}\N).
+\]
+它在环 $\Gamma(\psi^{-1}(U),\A)=\Gamma(U,\psi_*(\A))$ 上双线性，
+因而在 $\Gamma(U,\BB)$ 上也双线性。于是得到同态
+\[
+ \Gamma(U,\Psi_*(\M))\otimes_{\Gamma(U,\BB)}\Gamma(U,\Psi_*(\N))
+ \longrightarrow\Gamma(U,\Psi_*(\M\otimes_{\A}\N)).
+\]
+容易验证，这些同态与限制运算相容，因而给出一个典范函子性 $\BB$-模层同态
+\begin{equation}
+ \Psi_*(\M)\otimes_{\BB}\Psi_*(\N)
+ \longrightarrow\Psi_*(\M\otimes_{\A}\N).
+ \tag{4.2.2.1}\label{eq:0:4.2.2.1}
+\end{equation}
+这个同态一般既不是单射，也不是满射。
+若 $\PP$ 是第三个 $\A$-模层，则立即验证图
+\begin{equation}
+\begin{tikzcd}[column sep=small,row sep=large]
+\Psi_*(\M)\otimes_{\BB}\Psi_*(\N)\otimes_{\BB}\Psi_*(\PP)
+ \arrow[r]\arrow[d] &
+\Psi_*(\M\otimes_{\A}\N)\otimes_{\BB}\Psi_*(\PP)\arrow[d]\\
+\Psi_*(\M)\otimes_{\BB}\Psi_*(\N\otimes_{\A}\PP)\arrow[r]&
+\Psi_*(\M\otimes_{\A}\N\otimes_{\A}\PP)
+\end{tikzcd}
+\tag{4.2.2.2}\label{eq:0:4.2.2.2}
+\end{equation}
+交换。
+
+\egapar{4.2.3}
+设 $\M,\N$ 为两个 $\A$-模层。
+对每个开集 $U\subseteq Y$，为简化记号，置 $V=\psi^{-1}(U)$；依定义，有
+\[
+ \Gamma(\psi^{-1}(U),\shHom_{\A}(\M,\N))
+ =\Hom_{\A|V}(\M|V,\N|V).
+\]
+映射 $u\mapsto\Psi_*(u)$ 是同态
+\[
+ \Hom_{\A|V}(\M|V,\N|V)
+ \longrightarrow
+ \Hom_{\BB|U}(\Psi_*(\M)|U,\Psi_*(\N)|U),
+\]
+这里同态是就 $\Gamma(U,\BB)$-模结构而言的。
+这些同态与限制运算相容，因而定义了典范函子性 $\BB$-模层同态
+\begin{equation}
+ \Psi_*(\shHom_{\A}(\M,\N))
+ \longrightarrow\shHom_{\BB}(\Psi_*(\M),\Psi_*(\N)).
+ \tag{4.2.3.1}\label{eq:0:4.2.3.1}
+\end{equation}
+
+\egapar{4.2.4}
+若 $\C$ 是 $\A$-代数层，则复合同态
+\[
+ \Psi_*(\C)\otimes_{\BB}\Psi_*(\C)
+ \longrightarrow\Psi_*(\C\otimes_{\A}\C)
+ \longrightarrow\Psi_*(\C)
+\]
+在 $\Psi_*(\C)$ 上定义了 $\BB$-代数层结构；这由（\hyperref[eq:0:4.2.2.2]{4.2.2.2}）得到。
+同样，若 $\M$ 是 $\C$-模层，则 $\Psi_*(\M)$ 典范地具有 $\Psi_*(\C)$-模层结构。
+
+\egapar{4.2.5}
+特别考察 $X$ 是 $Y$ 的闭子空间、$\psi$ 是典范包含映射 $j\colon X\to Y$ 的情形。
+设 $\BB'=\BB|X=j^*(\BB)$ 是环层 $\BB$ 在 $X$ 上的限制。
+利用同态 $\theta^\sharp\colon\BB'\to\A$，可把 $\A$-模层 $\M$ 看作 $\BB'$-模层；
+于是 $\Psi_*(\M)$ 是在 $X$ 上诱导 $\M$、在其余部分诱导零层的 $\BB$-模层。
+若 $\N$ 是另一个 $\A$-模层，则
+\[
+ \Psi_*(\M)\otimes_{\BB}\Psi_*(\N)
+ \simeq\Psi_*(\M\otimes_{\BB'}\N),
+\]
+并且
+\[
+ \shHom_{\BB}(\Psi_*(\M),\Psi_*(\N))
+ \simeq\Psi_*(\shHom_{\BB'}(\M,\N)),
+\]
+这些等同都是典范的。
+
+\egapar{4.2.6}
+设 $(Z,\C)$ 是第三个赋环空间，
+$\Psi'=(\psi',\theta')\colon(Y,\BB)\to(Z,\C)$ 是态射。
+若 $\Psi''=\Psi'\circ\Psi$，则显然
+\[
+ \Psi''_*=\Psi'_*\circ\Psi_*.
+\]
+
+\separation
+\subsection{\texorpdfstring{$\BB$}{B}-模层的逆像}\hypertarget{heading:0:4.3}{}
+\src{40—42}
+
+\egapar{4.3.1}
+假设及记号仍如（\hyperlink{para:0:4.2.1}{4.2.1}）。设 $\G$ 是 $\BB$-模层，$\psi^*(\G)$ 为其逆像（\hyperlink{para:0:3.7.1}{3.7.1}），
+它是 $X$ 上的阿贝尔群层。
+由 $\psi^*(\G)$ 与 $\psi^*(\BB)$ 的截面定义（\hyperlink{para:0:3.7.1}{3.7.1}），
+可见 $\psi^*(\G)$ 典范地具有 $\psi^*(\BB)$-模层结构。
+另一方面，同态 $\theta^\sharp\colon\psi^*(\BB)\to\A$ 赋予 $\A$ 以
+$\psi^*(\BB)$-模层结构；为避免混淆，必要时记此结构为 $\A_{[\theta]}$。
+于是张量积
+\[
+ \psi^*(\G)\otimes_{\psi^*(\BB)}\A_{[\theta]}
+\]
+具有 $\A$-模层结构。
+称这个 $\A$-模层为\emph{$\G$ 在态射 $\Psi$ 下的逆像}，记作 $\Psi^*(\G)$。
+
+若 $\G_1,\G_2$ 是 $Y$ 上的两个 $\BB$-模层，$v\colon\G_1\to\G_2$ 为 $\BB$-同态，
+则立即验证 $\psi^*(v)$ 是 $\psi^*(\G_1)\to\psi^*(\G_2)$ 的 $\psi^*(\BB)$-同态；
+故 $\psi^*(v)\otimes1$ 是 $\Psi^*(\G_1)\to\Psi^*(\G_2)$ 的 $\A$-同态，
+记为 $\Psi^*(v)$。
+由此把 $\Psi^*$ 定义成从 $\BB$-模层范畴到 $\A$-模层范畴的协变函子。
+与 $\psi^*$ 不同，这个函子一般不正合，而只是右正合；
+这是因为在 $\psi^*(\BB)$-模层范畴中，与 $\A$ 作张量积是右正合函子。
+
+依（\hyperlink{para:0:3.7.2}{3.7.2}），对每个 $x\in X$，有
+\[
+ (\Psi^*(\G))_x
+ =\G_{\psi(x)}\otimes_{\BB_{\psi(x)}}\A_x.
+\]
+因此，$\Psi^*(\G)$ 的支集包含于 $\psi^{-1}(\Supp(\G))$。
+
+\egapar{4.3.2}
+设 $(\G_\lambda)$ 是 $\BB$-模层的归纳系，$\G=\ilim\G_\lambda$ 是其归纳极限。
+典范同态 $\G_\lambda\to\G$ 定义了 $\psi^*(\BB)$-同态
+$\psi^*(\G_\lambda)\to\psi^*(\G)$，从而得到典范同态
+\[
+ \ilim\psi^*(\G_\lambda)\longrightarrow\psi^*(\G).
+\]
+层的归纳极限在一点的茎等于各层在该点的茎的归纳极限（G，II，1.11），
+故以上典范同态是双射（\hyperlink{para:0:3.7.2}{3.7.2}）。
+又因张量积与层的归纳极限可交换，故有典范函子性 $\A$-模层同构
+\[
+ \ilim\Psi^*(\G_\lambda)
+ \xrightarrow{\sim}\Psi^*(\ilim\G_\lambda).
+\]
+另一方面，对于 $\BB$-模层的有限直和 $\bigoplus_i\G_i$，显然
+$\psi^*(\bigoplus_i\G_i)=\bigoplus_i\psi^*(\G_i)$。
+与 $\A$ 作张量积，得到
+\begin{equation}
+ \Psi^*\!\left(\bigoplus_i\G_i\right)
+ =\bigoplus_i\Psi^*(\G_i).
+ \tag{4.3.2.1}\label{eq:0:4.3.2.1}
+\end{equation}
+通过取归纳极限，并利用以上结果，得到该等式对于任意直和也成立。
+
+\egapar{4.3.3}
+设 $\G_1,\G_2$ 是两个 $\BB$-模层。
+由阿贝尔群层逆像的定义（\hyperlink{para:0:3.7.1}{3.7.1}），立即得到典范 $\psi^*(\BB)$-模层同态
+\[
+ \psi^*(\G_1)\otimes_{\psi^*(\BB)}\psi^*(\G_2)
+ \longrightarrow\psi^*(\G_1\otimes_{\BB}\G_2).
+\]
+因为层的张量积在一点的茎就是各层在该点的茎的张量积（G，II，2.8），
+由（\hyperlink{para:0:3.7.2}{3.7.2}）可知，以上同态实际上是同构。
+与 $\A$ 作张量积，得到典范函子性同构
+\begin{equation}
+ \Psi^*(\G_1)\otimes_{\A}\Psi^*(\G_2)
+ \xrightarrow{\sim}\Psi^*(\G_1\otimes_{\BB}\G_2).
+ \tag{4.3.3.1}\label{eq:0:4.3.3.1}
+\end{equation}
+
+\egapar{4.3.4}
+设 $\C$ 是 $\BB$-代数层。
+给定 $\C$ 的代数层结构，等价于给定一个满足结合性与交换性条件的 $\BB$-同态
+$\C\otimes_{\BB}\C\to\C$；这些条件可在各茎上验证。
+利用以上同构，可把它搬移成满足相同条件的 $\A$-模层同态
+\[
+ \Psi^*(\C)\otimes_{\A}\Psi^*(\C)\longrightarrow\Psi^*(\C),
+\]
+于是 $\Psi^*(\C)$ 具有 $\A$-代数层结构。
+特别地，由定义立即可见，$\A$-代数层 $\Psi^*(\BB)$ 等于 $\A$，这里的相等取到典范同构为止。
+
+同样，若 $\M$ 是 $\C$-模层，则给定该模层结构，等价于给定满足结合性条件的
+$\BB$-同态 $\C\otimes_{\BB}\M\to\M$；
+通过搬移，得到 $\Psi^*(\M)$ 上的 $\Psi^*(\C)$-模层结构。
+
+\egapar{4.3.5}
+设 $\J$ 是 $\BB$ 的理想层。
+因函子 $\psi^*$ 正合，$\psi^*(\BB)$-模层 $\psi^*(\J)$ 典范地等同于 $\psi^*(\BB)$ 的一个理想层。
+典范包含同态 $\psi^*(\J)\to\psi^*(\BB)$ 给出 $\A$-模层同态
+\[
+ \Psi^*(\J)=\psi^*(\J)\otimes_{\psi^*(\BB)}\A_{[\theta]}
+ \longrightarrow\A.
+\]
+把 $\Psi^*(\J)$ 在此同态下的像记为 $\Psi^*(\J)\A$；在不致混淆时，也记为 $\J\A$。
+因此，依定义有
+\[
+ \J\A=\theta^\sharp(\psi^*(\J))\A.
+\]
+特别地，利用 $\psi^*(\J)$ 与 $\J$ 的茎的典范等同（\hyperlink{para:0:3.7.2}{3.7.2}），对每个 $x\in X$，有
+\[
+ (\J\A)_x=\theta_x(\J_{\psi(x)})\A_x.
+\]
+若 $\J_1,\J_2$ 是 $\BB$ 的两个理想层，则
+\[
+ (\J_1\J_2)\A=\J_1(\J_2\A)=(\J_1\A)(\J_2\A).
+\]
+若 $\F$ 是 $\A$-模层，则置 $\J\F=(\J\A)\F$。
+
+\egapar{4.3.6}
+设 $(Z,\C)$ 是第三个赋环空间，
+$\Psi'=(\psi',\theta')\colon(Y,\BB)\to(Z,\C)$ 是态射，$\Psi''=\Psi'\circ\Psi$。
+由定义（\hyperlink{para:0:4.3.1}{4.3.1}）及（\hyperref[eq:0:4.3.3.1]{4.3.3.1}），有
+\[
+ \Psi''{}^*=\Psi^*\circ\Psi'{}^*.
+\]
+
+\subsection{直像与逆像的关系}\hypertarget{heading:0:4.4}{}
+\src{42—44}
+
+\egapar{4.4.1}
+假设及记号仍如（\hyperlink{para:0:4.2.1}{4.2.1}），设 $\G$ 为 $\BB$-模层。
+按定义，$\BB$-模层同态 $u\colon\G\to\Psi_*(\F)$ 也称为从 $\G$ 到 $\F$ 的
+\emph{$\Psi$-态射}，或简称从 $\G$ 到 $\F$ 的\emph{同态}；
+在不会引起混淆时，写作 $u\colon\G\to\F$。
+给定这样的同态，等价于对每对开集 $U\subseteq X,V\subseteq Y$，只要 $\psi(U)\subseteq V$，
+给定一个 $\Gamma(V,\BB)$-模同态
+\[
+ u_{U,V}\colon\Gamma(V,\G)\longrightarrow\Gamma(U,\F),
+\]
+其中利用环同态 $\theta_{U,V}\colon\Gamma(V,\BB)\to\Gamma(U,\A)$，
+把 $\Gamma(U,\F)$ 看作 $\Gamma(V,\BB)$-模。
+各 $u_{U,V}$ 还须使图（\hyperref[eq:0:3.5.1.1]{3.5.1.1}）交换。
+事实上，要定义 $u$，只需对 $X,Y$ 的拓扑基 $\B,\B'$ 中的 $U,V$ 给定这些 $u_{U,V}$，
+并对于这些限制验证（\hyperref[eq:0:3.5.1.1]{3.5.1.1}）的交换性。
+
+\egapar{4.4.2}
+在（\hyperlink{para:0:4.2.1}{4.2.1}）及（\hyperlink{para:0:4.2.6}{4.2.6}）的假设下，设 $\HH$ 为 $\C$-模层，
+$v\colon\HH\to\Psi'_*(\G)$ 为 $\Psi'$-态射。则
+\[
+ w\colon\HH\xrightarrow{v}\Psi'_*(\G)
+ \xrightarrow{\Psi'_*(u)}\Psi'_*(\Psi_*(\F))
+\]
+是一个 $\Psi''$-态射，称为 $u$ 与 $v$ 的复合。
+
+\egapar{4.4.3}
+现在证明，可以定义关于 $\G,\F$ 的双函子的典范同构
+\begin{equation}
+ \Hom_{\A}(\Psi^*(\G),\F)
+ \xrightarrow{\sim}\Hom_{\BB}(\G,\Psi_*(\F)).
+ \tag{4.4.3.1}\label{eq:0:4.4.3.1}
+\end{equation}
+将它记为 $v\mapsto v^\flat_{\Psi}$，在不致混淆时简记为 $v\mapsto v^\flat$；
+其逆同构记为 $u\mapsto u^\sharp_{\Psi}$ 或 $u\mapsto u^\sharp$。
+定义如下：把 $v\colon\Psi^*(\G)\to\F$ 与典范映射 $\psi^*(\G)\to\Psi^*(\G)$ 复合，
+得到群层同态 $v'\colon\psi^*(\G)\to\F$；它也是 $\psi^*(\BB)$-模层同态。
+由（\hyperlink{para:0:3.7.1}{3.7.1}），得到同态
+\[
+ v'{}^\flat\colon\G\longrightarrow\psi_*(\F)=\Psi_*(\F).
+\]
+不难验证，它也是 $\BB$-模层同态；置 $v^\flat=v'{}^\flat$。
+同样，从 $\BB$-模层同态 $u\colon\G\to\Psi_*(\F)$，由（\hyperlink{para:0:3.7.1}{3.7.1}）得到
+$\psi^*(\BB)$-模层同态 $u'{}^\sharp\colon\psi^*(\G)\to\F$；
+与 $\A$ 作张量积，得到 $\A$-模层同态 $\Psi^*(\G)\to\F$，记为 $u^\sharp$。
+立即验证
+\[
+ (u^\sharp)^\flat=u,\qquad(v^\flat)^\sharp=v,
+\]
+以及同构 $v\mapsto v^\flat$ 关于 $\F$ 的函子性。
+再像（\hyperlink{para:0:3.5.4}{3.5.4}）那样，形式地推得 $u\mapsto u^\sharp$ 关于 $\G$ 的函子性；
+这一论证也能证明（\hyperlink{para:0:4.3.1}{4.3.1}）中已直接证明的 $\Psi^*$ 的函子性。
+
+若 $v$ 取为 $\Psi^*(\G)$ 的恒等同态，则 $v^\flat$ 为同态
+\begin{equation}
+ \rho_{\G}\colon\G\longrightarrow\Psi_*(\Psi^*(\G));
+ \tag{4.4.3.2}\label{eq:0:4.4.3.2}
+\end{equation}
+若 $u$ 取为 $\Psi_*(\F)$ 的恒等同态，则 $u^\sharp$ 为同态
+\begin{equation}
+ \sigma_{\F}\colon\Psi^*(\Psi_*(\F))\longrightarrow\F.
+ \tag{4.4.3.3}\label{eq:0:4.4.3.3}
+\end{equation}
+这些同态称为\emph{典范同态}。它们一般既不是单射，也不是满射。
+这里也有与（\hyperref[eq:0:3.5.3.3]{3.5.3.3}）及（\hyperref[eq:0:3.5.4.4]{3.5.4.4}）类似的典范分解。
+
+注意，若 $s$ 是 $\G$ 在 $Y$ 的开集 $V$ 上的截面，则 $\rho_{\G}(s)$ 是
+$\Psi^*(\G)$ 在 $\psi^{-1}(V)$ 上的截面 $s'\otimes1$，其中对每个
+$x\in\psi^{-1}(V)$，有 $s'_x=s_{\psi(x)}$。
+还要注意，若 $u\colon\G\to\Psi_*(\F)$ 为同态，则对每个 $x\in X$，它在茎上定义同态
+\[
+ u_x\colon\G_{\psi(x)}\longrightarrow\F_x.
+\]
+这个同态由典范同态 $\xi\mapsto\xi\otimes1$ 与 $(u^\sharp)_x$ 复合而成：
+\[
+ \G_{\psi(x)}\longrightarrow
+ \G_{\psi(x)}\otimes_{\BB_{\psi(x)}}\A_x
+ =(\Psi^*(\G))_x
+ \xrightarrow{(u^\sharp)_x}\F_x.
+\]
+$u_x$ 也可由同态
+\[
+ \Gamma(V,\G)\longrightarrow\Gamma(\psi^{-1}(V),\F)
+ \longrightarrow\F_x
+\]
+取归纳极限得到，其中 $V$ 遍历 $\psi(x)$ 的开邻域。
+
+\egapar{4.4.4}
+设 $\F_1,\F_2$ 为 $\A$-模层，$\G_1,\G_2$ 为 $\BB$-模层，
+$u_i$ 是从 $\G_i$ 到 $\F_i$ 的同态（$i=1,2$）。
+记 $u_1\otimes u_2$ 为满足
+\[
+ u^\sharp=(u_1)^\sharp\otimes(u_2)^\sharp
+\]
+的同态 $u\colon\G_1\otimes_{\BB}\G_2\to\F_1\otimes_{\A}\F_2$，
+这里使用了（\hyperref[eq:0:4.3.3.1]{4.3.3.1}）的等同。
+可以验证，$u$ 也是复合同态
+\[
+ \G_1\otimes_{\BB}\G_2
+ \longrightarrow\Psi_*(\F_1)\otimes_{\BB}\Psi_*(\F_2)
+ \longrightarrow\Psi_*(\F_1\otimes_{\A}\F_2),
+\]
+其中第一箭头是普通的张量积 $u_1\otimes u_2$，第二箭头是典范同态（\hyperref[eq:0:4.2.2.1]{4.2.2.1}）。
+
+\egapar{4.4.5}
+设 $(\G_\lambda)_{\lambda\in L}$ 是 $\BB$-模层的归纳系；对每个 $\lambda\in L$，
+设 $u_\lambda\colon\G_\lambda\to\Psi_*(\F)$ 为同态，且它们组成一个归纳系。
+置 $\G=\ilim\G_\lambda$，$u=\ilim u_\lambda$。
+则各 $(u_\lambda)^\sharp$ 组成同态 $\Psi^*(\G_\lambda)\to\F$ 的归纳系，
+其归纳极限恰为 $u^\sharp$。
+
+\egapar{4.4.6}
+设 $\M,\N$ 为两个 $\BB$-模层，$V$ 是 $Y$ 的开集，$U=\psi^{-1}(V)$。
+映射 $v\mapsto\Psi^*(v)$ 是同态
+\[
+ \Hom_{\BB|V}(\M|V,\N|V)
+ \longrightarrow
+ \Hom_{\A|U}(\Psi^*(\M)|U,\Psi^*(\N)|U),
+\]
+这里按 $\Gamma(V,\BB)$-模结构理解：右端自然具有
+$\Gamma(U,\psi^*(\BB))$-模结构，再借助典范同态（\hyperlink{para:0:3.7.2}{3.7.2}）
+\[
+ \Gamma(V,\BB)\longrightarrow\Gamma(U,\psi^*(\BB)),
+\]
+也成为 $\Gamma(V,\BB)$-模。
+立即可见，这些同态与限制相容，因而定义典范函子性同态
+\[
+ \gamma\colon\shHom_{\BB}(\M,\N)
+ \longrightarrow\Psi_*\bigl(\shHom_{\A}(\Psi^*(\M),\Psi^*(\N))\bigr).
+\]
+与之对应的同态为
+\[
+ \gamma^\sharp\colon\Psi^*(\shHom_{\BB}(\M,\N))
+ \longrightarrow\shHom_{\A}(\Psi^*(\M),\Psi^*(\N)).
+\]
+这些典范同态关于 $\M,\N$ 均具有函子性。
+
+\egapar{4.4.7}
+设 $\F$ 是 $\A$-代数层，$\G$ 是 $\BB$-代数层。
+若 $u\colon\G\to\Psi_*(\F)$ 是 $\BB$-代数层同态，
+则 $u^\sharp\colon\Psi^*(\G)\to\F$ 是 $\A$-代数层同态。
+这由图
+\[
+\begin{tikzcd}[column sep=large]
+ \G\otimes_{\BB}\G\arrow[r]\arrow[d]&\G\arrow[d,"u"]\\
+ \Psi_*(\F\otimes_{\A}\F)\arrow[r]&\Psi_*(\F)
+\end{tikzcd}
+\]
+的交换性及（\hyperlink{para:0:4.4.4}{4.4.4}）得到。
+同样，若 $v\colon\Psi^*(\G)\to\F$ 是 $\A$-代数层同态，
+则 $v^\flat\colon\G\to\Psi_*(\F)$ 是 $\BB$-代数层同态。
+
+\egapar{4.4.8}
+设 $(Z,\C)$ 是第三个赋环空间，
+$\Psi'=(\psi',\theta')\colon(Y,\BB)\to(Z,\C)$ 为态射，
+$\Psi''\colon(X,\A)\to(Z,\C)$ 为复合态射 $\Psi'\circ\Psi$。
+设 $\HH$ 为 $\C$-模层，$v'$ 是从 $\HH$ 到 $\G$ 的同态。
+复合 $v''=v\circ v'$ 按定义是由
+\[
+ \HH\xrightarrow{v'}\Psi'_*(\G)
+ \xrightarrow{\Psi'_*(v)}\Psi'_*(\Psi_*(\F))
+\]
+给出的从 $\HH$ 到 $\F$ 的同态。
+可以验证，$v''{}^\sharp$ 就是同态
+\[
+ \Psi^*(\Psi'{}^*(\HH))
+ \xrightarrow{\Psi^*(v'{}^\sharp)}\Psi^*(\G)
+ \xrightarrow{v^\sharp}\F.
+\]
+\transnote{原版本条使用 $v''=v\circ v'$，而末式最后一箭头标为 $u^\sharp$。
+本译稿统一记为 $v^\sharp$；这里的 $v$ 是 $\G\to\Psi_*(\F)$ 的同态，即前文同型的 $u$。}
+
+
+% END chapters/ch0_s4.tex
+
+\par
+
+% BEGIN chapters/ch0_s5.tex
+\section{拟凝聚层与凝聚层}\hypertarget{heading:0:5}{}
+\subsection{拟凝聚层}\hypertarget{heading:0:5.1}{}
+\src{44—45}
+
+\egapar{5.1.1}
+设 $(X,\OO_X)$ 是赋环空间，$\F$ 是 $\OO_X$-模层。
+给定一个 $\OO_X$-模层同态 $u\colon\OO_X\to\F$，等价于给定截面
+$s=u(1)\in\Gamma(X,\F)$。
+事实上，给定 $s$ 后，对每个截面 $t\in\Gamma(U,\OO_X)$，必有
+$u(t)=t\cdot(s|U)$；称 $u$ 是\emph{由截面 $s$ 定义的}。
+现在设 $I$ 为任意指标集，考察直和层 $\OO_X^{(I)}$。
+对每个 $i\in I$，令 $h_i$ 为第 $i$ 个因子到 $\OO_X^{(I)}$ 的典范包含同态。
+已知 $u\mapsto(u\circ h_i)_{i\in I}$ 给出从
+$\Hom_{\OO_X}(\OO_X^{(I)},\F)$ 到直积
+$\bigl(\Hom_{\OO_X}(\OO_X,\F)\bigr)^I$ 的同构。
+因此，$u\colon\OO_X^{(I)}\to\F$ 这些同态与 $\F$ 在 $X$ 上的截面族
+$(s_i)_{i\in I}$ 之间存在典范的一一对应。
+与 $(s_i)$ 对应的同态 $u$ 把
+$(a_i)\in\Gamma(U,\OO_X)^{(I)}$ 映到 $\sum_{i\in I}a_i\cdot(s_i|U)$。
+
+若由 $(s_i)$ 定义的同态 $\OO_X^{(I)}\to\F$ 是满射，则称 $\F$ \emph{由截面族 $(s_i)$ 生成}；
+等价地，对每个 $x\in X$，$\OO_x$-模 $\F_x$ 由各 $(s_i)_x$ 生成。
+若 $\F$ 由其在 $X$ 上的全部截面组成的族，或其中某个子族生成，
+则称 $\F$ \emph{由其在 $X$ 上的截面生成}。
+换言之，存在某个适当的 $I$，使得有满射同态 $\OO_X^{(I)}\to\F$。
+
+注意，一个 $\OO_X$-模层 $\F$ 可能具有如下性质：存在 $x_0\in X$，
+使得无论取 $x_0$ 的哪个开邻域 $U$，$\F|U$ 都不由其在 $U$ 上的截面生成。
+只需取 $X=\mathbf R$，$\OO_X$ 为常值层 $\mathbf Z$，
+$\F$ 为 $\OO_X$ 中满足 $\F_0=\{0\}$ 而 $\F_x=\mathbf Z$（$x\ne0$）的子模层，
+并取 $x_0=0$：对于 $0$ 的一个邻域 $U$，$\F|U$ 在 $U$ 上的截面只有零截面。
+\transnote{上述“只有零截面”的说法应在 $0$ 的连通开邻域（例如开区间）上理解。
+若开邻域另有不含 $0$ 的连通分支，该分支上可以有非零截面；这不影响原文所述“不由截面生成”的反例。}
+
+\egapar{5.1.2}
+设 $f\colon X\to Y$ 为赋环空间态射。
+若 $\OO_X$-模层 $\F$ 由其在 $X$ 上的截面生成，则典范同态
+\[
+ f^*(f_*(\F))\longrightarrow\F
+\]
+（\hyperref[eq:0:4.4.3.3]{4.4.3.3}）是满射。
+事实上，沿用（\hyperlink{para:0:5.1.1}{5.1.1}）的记号，$s_i\otimes1$ 是 $f^*(f_*(\F))$ 在 $X$ 上的截面，
+它在 $\F$ 中的像是 $s_i$。
+在（\hyperlink{para:0:5.1.1}{5.1.1}）的例子中取 $f$ 为恒等态射，可见此命题的逆命题一般不成立。
+
+\egapar{5.1.3}
+称 $\OO_X$-模层 $\F$ 是\emph{拟凝聚的}，是指对每个 $x\in X$，
+存在 $x$ 的一个开邻域 $U$，使 $\F|U$ 同构于某个形如
+\[
+ \OO_X^{(I)}|U\longrightarrow\OO_X^{(J)}|U
+\]
+的同态的余核，其中 $I,J$ 是任意指标集。
+显然，$\OO_X$ 自身是拟凝聚 $\OO_X$-模层，
+任意一族拟凝聚 $\OO_X$-模层的直和也是拟凝聚 $\OO_X$-模层。
+称 $\OO_X$-代数层 $\A$ \emph{拟凝聚}，是指它作为 $\OO_X$-模层拟凝聚。
+
+\egapar{5.1.4}
+设 $f\colon X\to Y$ 为赋环空间态射。
+若 $\G$ 是拟凝聚 $\OO_Y$-模层，则 $f^*(\G)$ 是拟凝聚 $\OO_X$-模层。
+事实上，对每个 $x\in X$，在 $Y$ 中存在 $f(x)$ 的开邻域 $V$，
+使 $\G|V$ 为同态 $\OO_Y^{(I)}|V\to\OO_Y^{(J)}|V$ 的余核。
+若 $U=f^{-1}(V)$，$f_U$ 是 $f$ 在 $U$ 上的限制，则
+\[
+ f^*(\G)|U=f_U^*(\G|V).
+\]
+由于 $f_U^*$ 右正合且与直和可交换，$f_U^*(\G|V)$ 是同态
+$\OO_X^{(I)}|U\to\OO_X^{(J)}|U$ 的余核。
+
+\subsection{有限型层}\hypertarget{heading:0:5.2}{}
+\src{45—47}
+
+\egapar{5.2.1}
+称 $\OO_X$-模层 $\F$ 是\emph{有限型的}，是指对每个 $x\in X$，
+存在开邻域 $U$，使 $\F|U$ 由有限个在 $U$ 上的截面生成；
+也就是说，$\F|U$ 同构于某个形如 $(\OO_X|U)^p$ 的层的商层，其中 $p$ 有限。
+有限型层的每个商层仍是有限型层；有限个有限型层的直和、张量积也都是有限型层。
+有限型 $\OO_X$-模层未必拟凝聚，例如 $\OO_X/\F$，其中 $\F$ 是（\hyperlink{para:0:5.1.1}{5.1.1}）中的例子。
+若 $\F$ 有限型，则对每个 $x\in X$，$\F_x$ 都是有限型 $\OO_x$-模；
+但（\hyperlink{para:0:5.1.1}{5.1.1}）的例子表明，这个必要条件一般并不充分。
+
+\egapar{5.2.2}
+设 $\F$ 是有限型 $\OO_X$-模层。
+若 $s_i$（$1\leq i\leq n$）是 $\F$ 在点 $x\in X$ 的一个开邻域 $U$ 上的截面，
+且各 $(s_i)_x$ 生成 $\F_x$，则存在开邻域 $V\subseteq U$，
+使得对每个 $y\in V$，各 $(s_i)_y$ 都生成 $\F_y$（FAC，I，2，12，命题 1）。
+特别地，由此得到 $\F$ 的支集是闭集。
+
+同样，若同态 $u\colon\F\to\G$ 满足 $u_x=0$，
+则存在 $x$ 的邻域 $U$，使得对每个 $y\in U$，都有 $u_y=0$。
+
+\egapar{5.2.3}
+假设 $X$ 拟紧，$\F,\G$ 是两个 $\OO_X$-模层，其中 $\G$ 有限型，
+$u\colon\F\to\G$ 是满射同态。
+再假设 $\F$ 是某个 $\OO_X$-模层归纳系 $(\F_\lambda)$ 的归纳极限。
+则存在指标 $\mu$，使同态 $\F_\mu\to\G$ 是满射。
+
+事实上，对每个 $x\in X$，存在 $x$ 的开邻域 $U(x)$ 及 $\G$ 在其上的有限个截面 $s_i$，
+使得对每个 $y\in U(x)$，各 $(s_i)_y$ 都生成 $\G_y$。
+于是存在开邻域 $V(x)\subseteq U(x)$ 及 $\F$ 在 $V(x)$ 上的有限个截面 $t_i$，
+使每个 $i$ 都满足 $s_i|V(x)=u(t_i)$。
+还可假设这些 $t_i$ 是同一个层 $\F_{\lambda(x)}$ 在 $V(x)$ 上的截面的典范像。
+取有限个这样的邻域 $V(x_j)$ 覆盖 $X$，再取一个不小于所有 $\lambda(x_j)$ 的指标 $\mu$。
+显然，这个指标满足要求。
+
+仍假设 $X$ 拟紧。若有限型 $\OO_X$-模层 $\F$ 由其在 $X$ 上的截面生成（\hyperlink{para:0:5.1.1}{5.1.1}），
+则 $\F$ 由这些截面的某个有限子族生成。
+事实上，只需用有限个开邻域 $U_k$ 覆盖 $X$，使得对每个 $k$，
+存在 $\F$ 在 $X$ 上的有限个截面 $s_{k,j}$，其在 $U_k$ 上的限制生成 $\F|U_k$。
+显然，这些 $s_{k,j}$ 就生成 $\F$。
+
+\egapar{5.2.4}
+设 $f\colon X\to Y$ 为赋环空间态射。
+若 $\G$ 是有限型 $\OO_Y$-模层，则 $f^*(\G)$ 是有限型 $\OO_X$-模层。
+事实上，对每个 $x\in X$，存在 $f(x)$ 的开邻域 $V$ 以及满射同态
+$v\colon\OO_Y^p|V\to\G|V$。
+若 $U=f^{-1}(V)$，$f_U$ 为 $f$ 在 $U$ 上的限制，则
+$f^*(\G)|U=f_U^*(\G|V)$。
+因为 $f_U^*$ 右正合（\hyperlink{para:0:4.3.1}{4.3.1}）且与直和可交换（\hyperlink{para:0:4.3.2}{4.3.2}），
+$f_U^*(v)$ 是满射同态 $\OO_X^p|U\to f^*(\G)|U$。
+
+\egapar{5.2.5}
+称 $\OO_X$-模层 $\F$ \emph{具有有限表示}，是指对每个 $x\in X$，
+存在开邻域 $U$，使 $\F|U$ 同构于某个 $(\OO_X|U)$-同态
+\[
+ \OO_X^p|U\longrightarrow\OO_X^q|U
+\]
+的余核，其中 $p,q$ 是两个正整数。
+这样的 $\OO_X$-模层因而是有限型且拟凝聚的。
+若 $f\colon X\to Y$ 为赋环空间态射，$\G$ 为具有有限表示的 $\OO_Y$-模层，
+则（\hyperlink{para:0:5.1.4}{5.1.4}）的论证表明，$f^*(\G)$ 也具有有限表示。
+
+\egapar{5.2.6}
+设 $\F$ 是具有有限表示的 $\OO_X$-模层（\hyperlink{para:0:5.2.5}{5.2.5}）。
+则对每个 $\OO_X$-模层 $\HH$，典范函子性同态
+\[
+ \bigl(\shHom_{\OO_X}(\F,\HH)\bigr)_x
+ \longrightarrow\Hom_{\OO_x}(\F_x,\HH_x)
+\]
+是双射（T，4.1.1）。
+
+\egapar{5.2.7}
+设 $\F,\G$ 是两个具有有限表示的 $\OO_X$-模层。
+若对于某个 $x\in X$，$\F_x$ 与 $\G_x$ 是同构的 $\OO_x$-模，
+则存在 $x$ 的开邻域 $U$，使 $\F|U$ 与 $\G|U$ 同构。
+事实上，设 $\varphi\colon\F_x\to\G_x$ 与 $\psi\colon\G_x\to\F_x$ 为互逆同构。
+依（\hyperlink{para:0:5.2.6}{5.2.6}），存在开邻域 $V$，以及
+$\shHom_{\OO_X}(\F,\G)$、$\shHom_{\OO_X}(\G,\F)$ 在 $V$ 上的截面 $u,v$，
+分别满足 $u_x=\varphi,v_x=\psi$。
+由于 $(u\circ v)_x$ 与 $(v\circ u)_x$ 是恒等自同构，
+存在开邻域 $U\subseteq V$，使 $(u\circ v)|U$ 与 $(v\circ u)|U$ 都是恒等自同构。
+命题得证。
+
+\subsection{凝聚层}\hypertarget{heading:0:5.3}{}
+\src{47—48}
+
+\egapar{5.3.1}
+称 $\OO_X$-模层 $\F$ 是\emph{凝聚的}，是指它满足以下两个条件：
+\begin{enumerate}[label=\alph*)]
+\item $\F$ 是有限型的。
+\item 对每个开集 $U\subseteq X$、每个正整数 $n$，以及每个同态
+$u\colon\OO_X^n|U\to\F|U$，$u$ 的核都是有限型的。
+\end{enumerate}
+注意，这两个条件都是局部性的。
+以下回顾的凝聚层性质，其大部分证明可参阅（FAC），I，2。
+
+\egapar{5.3.2}
+每个凝聚 $\OO_X$-模层都具有有限表示（\hyperlink{para:0:5.2.5}{5.2.5}）；
+逆命题未必成立，因为 $\OO_X$ 本身未必是凝聚 $\OO_X$-模层。
+
+凝聚 $\OO_X$-模层的每个有限型子 $\OO_X$-模层都是凝聚的；
+有限个凝聚 $\OO_X$-模层的直和也是凝聚 $\OO_X$-模层。
+
+\egapar{5.3.3}
+若 $0\to\F\to\G\to\HH\to0$ 是 $\OO_X$-模层的正合列，
+且其中两个模层凝聚，则第三个也凝聚。
+
+\egapar{5.3.4}
+若 $\F,\G$ 是两个凝聚 $\OO_X$-模层，$u\colon\F\to\G$ 为同态，
+则 $\Im(u),\Ker(u),\Coker(u)$ 都是凝聚 $\OO_X$-模层。
+特别地，若 $\F,\G$ 是某个凝聚 $\OO_X$-模层的凝聚子模层，
+则 $\F+\G$ 与 $\F\cap\G$ 都凝聚。
+
+\egapar{5.3.5}
+若 $\F,\G$ 是两个凝聚 $\OO_X$-模层，则
+$\F\otimes_{\OO_X}\G$ 与 $\shHom_{\OO_X}(\F,\G)$ 也凝聚。
+
+\egapar{5.3.6}
+设 $\F$ 是凝聚 $\OO_X$-模层，$\J$ 是 $\OO_X$ 的凝聚理想层。
+则 $\OO_X$-模层 $\J\F$ 凝聚，因为它是典范同态
+$\J\otimes_{\OO_X}\F\to\F$ 的像（\hyperlink{para:0:5.3.4}{5.3.4} 与 \hyperlink{para:0:5.3.5}{5.3.5}）。
+
+\egapar{5.3.7}
+称 $\OO_X$-代数层 $\A$ \emph{凝聚}，是指 $\A$ 作为 $\OO_X$-模层凝聚。
+特别地，$\OO_X$ 是\emph{凝聚环层}，当且仅当对每个开集 $U\subseteq X$，
+以及每个形如 $u\colon\OO_X^n|U\to\OO_X|U$ 的同态，
+其核都是有限型 $(\OO_X|U)$-模层。
+
+若 $\OO_X$ 是凝聚环层，则由（\hyperlink{para:0:5.3.4}{5.3.4}），每个具有有限表示的 $\OO_X$-模层 $\F$ 都凝聚。
+
+$\OO_X$-模层 $\F$ 的\emph{零化理想层}是典范同态
+\[
+ \OO_X\longrightarrow\shHom_{\OO_X}(\F,\F)
+\]
+的核 $\J$；该同态把每个截面 $s\in\Gamma(U,\OO_X)$ 映到
+$\Hom_{\OO_X|U}(\F|U,\F|U)$ 中由 $s$ 给出的乘法同态。
+若 $\OO_X$ 与 $\F$ 都凝聚，则 $\J$ 凝聚（\hyperlink{para:0:5.3.4}{5.3.4} 与 \hyperlink{para:0:5.3.5}{5.3.5}），
+且对每个 $x\in X$，$\J_x$ 是 $\F_x$ 的零化理想（\hyperlink{para:0:5.2.6}{5.2.6}）。
+
+\egapar{5.3.8}
+假设 $\OO_X$ 凝聚。设 $\F$ 是凝聚 $\OO_X$-模层，$x\in X$，
+$M$ 是 $\F_x$ 的一个有限型子模。
+则存在 $x$ 的开邻域 $U$，以及 $\F|U$ 的一个凝聚子 $(\OO_X|U)$-模层 $\G$，
+使 $\G_x=M$（T，4.1，引理 1）。
+
+这一结果，连同凝聚 $\OO_X$-模层的子模层的性质，给出了 $\OO_X$ 凝聚时各环 $\OO_x$ 必须满足的条件。
+例如，依（\hyperlink{para:0:5.3.4}{5.3.4}），$\OO_x$ 中两个有限型理想的交仍须是有限型理想。
+
+\egapar{5.3.9}
+假设 $\OO_X$ 凝聚。设 $M$ 为具有有限表示的 $\OO_x$-模，
+因此它同构于某个同态 $\varphi\colon\OO_x^p\to\OO_x^q$ 的余核。
+则存在 $x$ 的开邻域 $U$，以及一个凝聚 $(\OO_X|U)$-模层 $\F$，使 $\F_x$ 同构于 $M$。
+事实上，依（\hyperlink{para:0:5.2.6}{5.2.6}），存在 $\shHom_{\OO_X}(\OO_X^p,\OO_X^q)|U$ 的截面 $u$，
+使 $u_x=\varphi$；同态 $u\colon\OO_X^p|U\to\OO_X^q|U$ 的余核 $\F$ 就满足要求（\hyperlink{para:0:5.3.4}{5.3.4}）。
+\transnote{原版先写 $\varphi\colon\OO_x^p\to\OO_x^q$，而末句写为
+$u\colon\OO_X^q|U\to\OO_X^p|U$；译文使 $u$ 的源、靶与前面的 $\varphi$ 一致。}
+
+\egapar{5.3.10}
+假设 $\OO_X$ 凝聚，$\J$ 是 $\OO_X$ 的凝聚理想层。
+一个 $(\OO_X/\J)$-模层 $\F$ 凝聚，当且仅当它作为 $\OO_X$-模层凝聚。
+特别地，$\OO_X/\J$ 是凝聚环层。
+
+\egapar{5.3.11}
+设 $f\colon X\to Y$ 为赋环空间态射，并假设 $\OO_X$ 凝聚。
+则对每个凝聚 $\OO_Y$-模层 $\G$，$f^*(\G)$ 都是凝聚 $\OO_X$-模层。
+事实上，沿用（\hyperlink{para:0:5.2.4}{5.2.4}）的记号，可假设 $\G|V$ 是同态
+$v\colon\OO_Y^q|V\to\OO_Y^p|V$ 的余核。
+由于 $f_U^*$ 右正合，$f^*(\G)|U=f_U^*(\G|V)$ 是同态
+$f_U^*(v)\colon\OO_X^q|U\to\OO_X^p|U$ 的余核，由此得到结论。
+
+\egapar{5.3.12}
+设 $Y$ 是 $X$ 的闭子集，$j\colon Y\to X$ 为典范包含映射，
+$\OO_Y$ 是 $Y$ 上的环层，并置 $\OO_X=j_*(\OO_Y)$。
+一个 $\OO_Y$-模层 $\G$ 是有限型的（分别地，拟凝聚的、凝聚的），
+当且仅当 $j_*(\G)$ 是有限型 $\OO_X$-模层（分别地，拟凝聚 $\OO_X$-模层、凝聚 $\OO_X$-模层）。
+
+\subsection{局部自由层}\hypertarget{heading:0:5.4}{}
+\src{48—53}
+
+\egapar{5.4.1}
+设 $X$ 是赋环空间。称 $\OO_X$-模层 $\F$ \emph{局部自由}，是指对每个 $x\in X$，
+存在 $x$ 的开邻域 $U$，使 $\F|U$ 同构于形如 $\OO_X^{(I)}|U$ 的 $(\OO_X|U)$-模层，
+其中 $I$ 可以依赖于 $U$。
+若在这些邻域上都可取 $I$ 为有限集，则称 $\F$ 具有\emph{有限秩}；
+若 $I$ 的元素个数在这些邻域上都等于同一个有限数 $n$，则称 $\F$ 的\emph{秩为 $n$}。
+秩为 $1$ 的局部自由 $\OO_X$-模层也称为\emph{可逆层}（参见（\hyperlink{para:0:5.4.3}{5.4.3}））。
+若 $\F$ 是有限秩局部自由 $\OO_X$-模层，则对每个 $x\in X$，
+$\F_x$ 是有限秩 $n(x)$ 的自由 $\OO_x$-模，且存在 $x$ 的邻域 $U$，
+使 $\F|U$ 的秩为 $n(x)$；因此，若 $X$ 连通，$n(x)$ 就是常数。
+
+显然，每个局部自由层都是拟凝聚的；若 $\OO_X$ 是凝聚环层，
+则每个有限秩局部自由 $\OO_X$-模层都凝聚。
+
+若 $\LL$ 局部自由，则 $\LL\otimes_{\OO_X}\F$ 是 $\OO_X$-模层范畴中关于 $\F$ 的正合函子。
+
+我们主要考察有限秩局部自由 $\OO_X$-模层；以后未加说明地谈到局部自由层时，均默认其秩有限。
+
+\egapar{5.4.2}
+若 $\LL,\F$ 是两个 $\OO_X$-模层，则有典范函子性同态
+\begin{equation}
+ \dual{\LL}\otimes_{\OO_X}\F
+ =\shHom_{\OO_X}(\LL,\OO_X)\otimes_{\OO_X}\F
+ \longrightarrow\shHom_{\OO_X}(\LL,\F).
+ \tag{5.4.2.1}\label{eq:0:5.4.2.1}
+\end{equation}
+它的定义如下。
+对每个开集 $U$，以及每对 $(u,t)$，其中
+\[
+ u\in\Gamma(U,\shHom_{\OO_X}(\LL,\OO_X))
+ =\Hom_{\OO_X|U}(\LL|U,\OO_X|U),
+ \qquad t\in\Gamma(U,\F),
+\]
+令其对应于 $\Hom_{\OO_X|U}(\LL|U,\F|U)$ 中的同态；
+这个同态在每个 $x\in U$ 把 $s_x\in\LL_x$ 映到 $u_x(s_x)t_x\in\F_x$。
+若 $\LL$ 局部自由且秩有限，则此同态是双射。
+因为这是局部性质，只需考虑 $\LL=\OO_X^n$ 的情形。
+又因对每个 $\OO_X$-模层 $\F$，$\shHom_{\OO_X}(\OO_X^n,\F)$ 都典范同构于 $\F^n$，
+所以进一步归结到 $\LL=\OO_X$ 的情形，而此时结论显然成立。
+
+\egapar{5.4.3}
+若 $\LL$ 可逆，则其对偶 $\dual{\LL}=\shHom_{\OO_X}(\LL,\OO_X)$ 也可逆；
+因为问题是局部的，立即归结到 $\LL=\OO_X$ 的情形。
+此外，有典范同构
+\begin{equation}
+ \shHom_{\OO_X}(\LL,\OO_X)\otimes_{\OO_X}\LL
+ \xrightarrow{\sim}\OO_X.
+ \tag{5.4.3.1}\label{eq:0:5.4.3.1}
+\end{equation}
+事实上，依（\hyperlink{para:0:5.4.2}{5.4.2}），只需定义典范同构
+$\shHom_{\OO_X}(\LL,\LL)\simeq\OO_X$。
+而对每个 $\OO_X$-模层 $\F$，已有典范同态
+$\OO_X\to\shHom_{\OO_X}(\F,\F)$（\hyperlink{para:0:5.3.7}{5.3.7}）。
+只须证明当 $\F=\LL$ 可逆时此同态为双射；这是局部问题，仍归结到 $\LL=\OO_X$ 的显然情形。
+
+由此，置 $\LL^{-1}=\shHom_{\OO_X}(\LL,\OO_X)$，并称 $\LL^{-1}$ 为 $\LL$ 的\emph{逆层}。
+当 $X$ 只有一个点、$\OO_X$ 为极大理想是 $\mathfrak m$ 的局部环 $A$ 时，
+“可逆层”这一术语可作如下解释。
+设 $M,M'$ 是两个 $A$-模，其中 $M$ 有限型，并且 $M\otimes_A M'$ 同构于 $A$。
+因为
+\[
+ (A/\mathfrak m)\otimes_A(M\otimes_A M')
+ \simeq(M/\mathfrak mM)\otimes_{A/\mathfrak m}(M'/\mathfrak mM'),
+\]
+右端这两个 $A/\mathfrak m$-向量空间的张量积同构于 $A/\mathfrak m$，
+故 $M/\mathfrak mM$ 与 $M'/\mathfrak mM'$ 的维数都必须为 $1$。
+于是，对每个不属于 $\mathfrak mM$ 的元素 $\xi\in M$，有
+$M=A\xi+\mathfrak mM$；因 $M$ 有限型，由 Nakayama 引理，$M=A\xi$。
+再者，$\xi$ 的零化理想零化 $M\otimes_A M'\simeq A$，故该理想为 $\{0\}$。
+所以 $M$ 同构于 $A$。
+
+在一般情形，这表明：若 $\LL$ 是有限型 $\OO_X$-模层，
+存在 $\OO_X$-模层 $\F$ 使 $\LL\otimes_{\OO_X}\F\simeq\OO_X$，
+并且各环 $\OO_x$ 都是局部环，则每个 $\LL_x$ 都是同构于 $\OO_x$ 的 $\OO_x$-模。
+若还假设 $\OO_X$ 与 $\LL$ 凝聚，则由（\hyperlink{para:0:5.2.7}{5.2.7}）可得 $\LL$ 可逆。
+
+\egapar{5.4.4}
+若 $\LL,\LL'$ 是两个可逆 $\OO_X$-模层，则 $\LL\otimes_{\OO_X}\LL'$ 也可逆。
+因为这是局部问题，可假设 $\LL=\OO_X$，此时结果显然。
+对每个整数 $n\geq1$，以 $\LL^{\otimes n}$ 表示 $n$ 个 $\LL$ 的张量积。
+约定 $\LL^{\otimes0}=\OO_X$；对 $n\geq1$，置
+$\LL^{\otimes(-n)}=(\LL^{-1})^{\otimes n}$。
+采用这些记号，则对任意整数 $m,n$，存在典范函子性同构
+\begin{equation}
+ \LL^{\otimes m}\otimes_{\OO_X}\LL^{\otimes n}
+ \xrightarrow{\sim}\LL^{\otimes(m+n)}.
+ \tag{5.4.4.1}\label{eq:0:5.4.4.1}
+\end{equation}
+事实上，依定义，立即归结到 $m=-1,n=1$ 的情形，而此时该同构已在（\hyperlink{para:0:5.4.3}{5.4.3}）中定义。
+
+\egapar{5.4.5}
+设 $f\colon Y\to X$ 为赋环空间态射。
+若 $\LL$ 为局部自由 $\OO_X$-模层（分别地，可逆 $\OO_X$-模层），
+则 $f^*(\LL)$ 为局部自由 $\OO_Y$-模层（分别地，可逆 $\OO_Y$-模层）。
+这是以下事实的直接结果：局部同构的两个 $\OO_X$-模层的逆像仍局部同构；
+$f^*$ 与有限直和可交换；并且 $f^*(\OO_X)=\OO_Y$（\hyperlink{para:0:4.3.4}{4.3.4}）。
+此外，已知存在典范函子性同态
+\[
+ f^*(\dual{\LL})\longrightarrow\dual{f^*(\LL)}
+\]
+（\hyperlink{para:0:4.4.6}{4.4.6}）。若 $\LL$ 局部自由，则此同态为双射；
+事实上，仍可归结到 $\LL=\OO_X$ 的显然情形。
+由此得到，若 $\LL$ 可逆，则对每个整数 $n$，
+$f^*(\LL^{\otimes n})$ 典范地等同于 $(f^*(\LL))^{\otimes n}$。
+
+\egapar{5.4.6}
+设 $\LL$ 为可逆 $\OO_X$-模层。
+以 $\Gamma_*(X,\LL)$，或简记 $\Gamma_*(\LL)$，表示阿贝尔群直和
+\[
+ \bigoplus_{n\in\mathbf Z}\Gamma(X,\LL^{\otimes n}).
+\]
+赋予它一个分次环结构如下：
+若 $s_1\in\Gamma(X,\LL^{\otimes m})$、$s_2\in\Gamma(X,\LL^{\otimes n})$，
+令 $(s_1,s_2)$ 对应于 $\LL^{\otimes(m+n)}$ 在 $X$ 上的截面，
+即在典范同构（\hyperref[eq:0:5.4.4.1]{5.4.4.1}）下与 $\LL^{\otimes m}\otimes_{\OO_X}\LL^{\otimes n}$
+的截面 $s_1\otimes s_2$ 对应的截面。
+立即可验证此乘法的结合性。
+显然，$\Gamma_*(X,\LL)$ 是关于 $\LL$ 的协变函子，取值于分次环范畴。
+\transnote{本条的分次包括所有整数次数。涉及负张量幂时，对一般同态
+$\LL\to\LL'$，对偶给出的箭头方向相反；因此，关于 $\LL$ 的上述协变函子性
+须在以同构为态射的可逆层范畴中理解。本条后文关于 $\LL$ 的同类表述亦同。
+关于 $\F$ 的函子性以及赋环空间态射下的逆像构造不受此问题影响。}
+
+若 $\F$ 是任意 $\OO_X$-模层，置
+\[
+ \Gamma_*(\LL,\F)
+ =\bigoplus_{n\in\mathbf Z}
+   \Gamma(X,\F\otimes_{\OO_X}\LL^{\otimes n}).
+\]
+把这个阿贝尔群赋成分次环 $\Gamma_*(\LL)$ 上的分次模如下：
+对于 $s\in\Gamma(X,\LL^{\otimes m})$、
+$t\in\Gamma(X,\F\otimes_{\OO_X}\LL^{\otimes n})$，
+令 $(s,t)$ 对应于 $\F\otimes_{\OO_X}\LL^{\otimes(m+n)}$ 的截面，
+即利用（\hyperref[eq:0:5.4.4.1]{5.4.4.1}）与 $s\otimes t$ 典范对应的截面。
+模公理的验证是直接的。
+固定 $X,\LL$ 时，$\Gamma_*(\LL,\F)$ 是关于 $\F$ 的协变函子，
+取值于分次 $\Gamma_*(\LL)$-模范畴；固定 $X,\F$ 时，它是关于 $\LL$ 的协变函子，取值于阿贝尔群范畴。
+
+若 $f\colon Y\to X$ 为赋环空间态射，则典范同态（\hyperref[eq:0:4.4.3.2]{4.4.3.2}）
+\[
+ \rho\colon\LL^{\otimes n}\longrightarrow f_*(f^*(\LL^{\otimes n}))
+\]
+定义阿贝尔群同态
+\[
+ \Gamma(X,\LL^{\otimes n})\longrightarrow\Gamma(Y,f^*(\LL^{\otimes n})).
+\]
+因为 $f^*(\LL^{\otimes n})=(f^*(\LL))^{\otimes n}$，
+由典范同态（\hyperref[eq:0:4.4.3.2]{4.4.3.2}）与（\hyperref[eq:0:5.4.4.1]{5.4.4.1}）的定义可见，以上同态定义了函子性分次环同态
+\[
+ \Gamma_*(\LL)\longrightarrow\Gamma_*(f^*(\LL)).
+\]
+同一个典范同态（\hyperlink{para:0:4.4.3}{4.4.3}）还定义阿贝尔群同态
+\[
+ \Gamma(X,\F\otimes_{\OO_X}\LL^{\otimes n})
+ \longrightarrow\Gamma(Y,f^*(\F\otimes_{\OO_X}\LL^{\otimes n})).
+\]
+又因
+\[
+ f^*(\F\otimes_{\OO_X}\LL^{\otimes n})
+ =f^*(\F)\otimes_{\OO_Y}(f^*(\LL))^{\otimes n}
+ \qquad\text{（\hyperref[eq:0:4.3.3.1]{4.3.3.1}），}
+\]
+让 $n$ 变化，这些同态定义了分次模的二重同态
+\[
+ \Gamma_*(\LL,\F)\longrightarrow\Gamma_*(f^*(\LL),f^*(\F)).
+\]
+
+\egapar{5.4.7}
+可以证明，存在一个由可逆 $\OO_X$-模层组成的\emph{集合} $\mathfrak M$，
+也记为 $\mathfrak M(X)$，使每个可逆 $\OO_X$-模层恰好与 $\mathfrak M$ 中的一个元素同构。
+\origfootnote{参见导言中提到的那部正在准备的著作。}
+在 $\mathfrak M$ 中定义合成法则：令 $\mathfrak M$ 中两个元素 $\LL,\LL'$ 的乘积为
+$\mathfrak M$ 中唯一与 $\LL\otimes\LL'$ 同构的元素。
+在此合成法则下，$\mathfrak M$ 是一个群，且同构于上同调群
+$H^1(X,\OO_X^*)$。
+这里 $\OO_X^*$ 是 $\OO_X$ 的子层，满足：对每个开集 $U\subseteq X$，
+$\Gamma(U,\OO_X^*)$ 是环 $\Gamma(U,\OO_X)$ 的可逆元群；
+因此 $\OO_X^*$ 是乘法记法的阿贝尔群层。
+
+为证明这一点，注意对于每个开集 $U\subseteq X$，
+截面群 $\Gamma(U,\OO_X^*)$ 典范地等同于 $(\OO_X|U)$-模层 $\OO_X|U$ 的自同构群。
+这一等同把 $\OO_X^*$ 在 $U$ 上的截面 $\varepsilon$ 对应到 $\OO_X|U$ 的自同构 $u$，
+它在每个 $x\in U$ 满足 $u_x(s_x)=\varepsilon_xs_x$。
+设 $\mathfrak U=(U_\lambda)$ 是 $X$ 的开覆盖。
+对每对指标 $(\lambda,\mu)$ 给定 $\OO_X|(U_\lambda\cap U_\mu)$ 的自同构 $\theta_{\lambda\mu}$，
+等价于给定覆盖 $\mathfrak U$ 的一个取值于 $\OO_X^*$ 的 $1$-余链。
+各 $\theta_{\lambda\mu}$ 满足粘合条件（\hyperlink{para:0:3.3.1}{3.3.1}），等价于相应余链是余闭链。
+同样，对每个 $\lambda$ 给定 $\OO_X|U_\lambda$ 的自同构 $\omega_\lambda$，
+等价于给定覆盖 $\mathfrak U$ 的一个取值于 $\OO_X^*$ 的 $0$-余链；
+它的余边界对应于自同构族
+\[
+ (\omega_\lambda|(U_\lambda\cap U_\mu))
+ \circ(\omega_\mu|(U_\lambda\cap U_\mu))^{-1}.
+\]
+
+对于 $\mathfrak U$ 的每个取值于 $\OO_X^*$ 的 $1$-余闭链，
+利用与之对应的自同构族 $(\theta_{\lambda\mu})$ 粘合，得到一个可逆 $\OO_X$-模层；
+令该余闭链对应到 $\mathfrak M$ 中与所得模层同构的元素。
+上同调等价的两个余闭链，对应于 $\mathfrak M$ 中相同的元素（\hyperlink{para:0:3.3.2}{3.3.2}）。
+也就是说，我们定义了映射
+$\varphi_{\mathfrak U}\colon H^1(\mathfrak U,\OO_X^*)\to\mathfrak M$。
+若 $\mathfrak V$ 是 $X$ 的另一个开覆盖，且比 $\mathfrak U$ 更细，则图
+\[
+\begin{tikzcd}[column sep=large,row sep=large]
+ H^1(\mathfrak U,\OO_X^*)\arrow[d]\arrow[dr,"\varphi_{\mathfrak U}"]&\\
+ H^1(\mathfrak V,\OO_X^*)\arrow[r,"\varphi_{\mathfrak V}"']&\mathfrak M
+\end{tikzcd}
+\]
+交换，其中竖直箭头为典范同态（G，II，5.7）；这由（\hyperlink{para:0:3.3.3}{3.3.3}）得到。
+取归纳极限，便得到映射
+\[
+ H^1(X,\OO_X^*)\longrightarrow\mathfrak M,
+\]
+这里用到 Čech 上同调群 $\check H^1(X,\OO_X^*)$ 与第一上同调群
+$H^1(X,\OO_X^*)$ 的已知等同（G，II，5.9，定理 5.9.1 的推论）。
+此映射为满射：依定义，对于每个可逆 $\OO_X$-模层 $\LL$，
+存在 $X$ 的开覆盖 $(U_\lambda)$，使 $\LL$ 由各 $\OO_X|U_\lambda$ 粘合而成（\hyperlink{para:0:3.3.1}{3.3.1}）。
+此映射也为单射：只须对映射 $H^1(\mathfrak U,\OO_X^*)\to\mathfrak M$ 证明这一点，
+而它由（\hyperlink{para:0:3.3.2}{3.3.2}）得到。
+
+剩下只需证明所得双射是群同态。
+给定两个可逆 $\OO_X$-模层 $\LL,\LL'$，可以取开覆盖 $(U_\lambda)$，
+使 $\LL|U_\lambda$ 与 $\LL'|U_\lambda$ 对每个 $\lambda$ 都同构于 $\OO_X|U_\lambda$。
+于是，对每个指标 $\lambda$，存在
+$a_\lambda\in\Gamma(U_\lambda,\LL)$ 与 $a'_\lambda\in\Gamma(U_\lambda,\LL')$，
+使这两个截面模的元素分别为 $s_\lambda a_\lambda$ 与 $s'_\lambda a'_\lambda$，
+其中 $s_\lambda,s'_\lambda$ 遍历 $\Gamma(U_\lambda,\OO_X)$。
+相应余闭链 $(\varepsilon_{\lambda\mu})$ 与 $(\varepsilon'_{\lambda\mu})$ 满足：在 $U_\lambda\cap U_\mu$ 上，
+\[
+ s_\lambda a_\lambda=s_\mu a_\mu
+ \quad\Longleftrightarrow\quad
+ s_\mu=\varepsilon_{\lambda\mu}s_\lambda,
+\]
+相应地，
+\[
+ s'_\lambda a'_\lambda=s'_\mu a'_\mu
+ \quad\Longleftrightarrow\quad
+ s'_\mu=\varepsilon'_{\lambda\mu}s'_\lambda.
+\]
+由于 $\LL\otimes_{\OO_X}\LL'$ 在 $U_\lambda$ 上的截面都是
+$s_\lambda s'_\lambda(a_\lambda\otimes a'_\lambda)$ 的有限和，
+显然，余闭链 $(\varepsilon_{\lambda\mu}\varepsilon'_{\lambda\mu})$
+对应于 $\LL\otimes_{\OO_X}\LL'$。
+证明完成。
+\origfootnote{关于本结果的一般形式，参见原书第 51 页脚注所引著作。}
+
+\egapar{5.4.8}
+设 $f=(\psi,\omega)\colon Y\to X$ 为赋环空间态射。
+可逆 $\OO_X$-模层范畴中的函子 $f^*(\LL)$ 定义了从集合 $\mathfrak M(X)$
+到集合 $\mathfrak M(Y)$ 的映射，略去记号上的区别，也把它记为 $f^*$。
+\transnote{原版此处印作“自由 $\OO_X$-模层的范畴”（\textit{Modules libres}）；
+按前后文的 $\mathfrak M(X)$ 定义，此处所指是可逆模层，译文据此注明其对象范围。}
+另一方面，有典范同态（T，3.2.2）
+\begin{equation}
+ H^1(X,\OO_X^*)\longrightarrow H^1(Y,\OO_Y^*).
+ \tag{5.4.8.1}\label{eq:0:5.4.8.1}
+\end{equation}
+在（\hyperlink{para:0:5.4.7}{5.4.7}）的典范等同
+$\mathfrak M(X)=H^1(X,\OO_X^*)$、$\mathfrak M(Y)=H^1(Y,\OO_Y^*)$ 下，
+同态（\hyperref[eq:0:5.4.8.1]{5.4.8.1}）与映射 $f^*$ 等同。
+
+事实上，若 $\LL$ 来自与 $X$ 的开覆盖 $(U_\lambda)$ 对应的余闭链
+$(\varepsilon_{\lambda\mu})$，则只需证明 $f^*(\LL)$ 来自一个余闭链，
+其上同调类是 $(\varepsilon_{\lambda\mu})$ 的上同调类在（\hyperref[eq:0:5.4.8.1]{5.4.8.1}）下的像。
+设 $\theta_{\lambda\mu}$ 是与 $\varepsilon_{\lambda\mu}$ 对应的
+$\OO_X|(U_\lambda\cap U_\mu)$ 的自同构。
+显然，$f^*(\LL)$ 是利用自同构 $f^*(\theta_{\lambda\mu})$，
+粘合各 $\OO_Y|\psi^{-1}(U_\lambda)$ 所得的层。
+所以只需验证这些自同构对应于余闭链 $(\omega^\sharp(\varepsilon_{\lambda\mu}))$，
+而这由定义立即得到。
+这里把 $\varepsilon_{\lambda\mu}$ 与其在 $\rho$ 下的典范像等同（\hyperlink{para:0:3.7.2}{3.7.2}），
+即把它看作 $\psi^*(\OO_X)$ 在 $\psi^{-1}(U_\lambda\cap U_\mu)$ 上的截面。
+
+\egapar{5.4.9}
+设 $\E,\F$ 是两个 $\OO_X$-模层，且 $\F$ 局部自由。
+设 $\G$ 是 $\F$ 以 $\E$ 为核的一个扩张，即存在正合列
+\[
+ 0\longrightarrow\E\longrightarrow\G\xrightarrow{p}\F\longrightarrow0.
+\]
+则对每个 $x\in X$，存在 $x$ 的开邻域 $U$，
+使 $\G|U$ 同构于直和 $\E|U\oplus\F|U$。
+事实上，只需考虑 $\F=\OO_X^n$ 的情形。
+设 $e_i$（$1\leq i\leq n$）是 $\OO_X^n$ 的典范截面（\hyperlink{para:0:5.5.5}{5.5.5}）。
+存在 $x$ 的开邻域 $U$，以及 $\G$ 在 $U$ 上的 $n$ 个截面 $s_i$，
+使 $p(s_i)=e_i|U$（$1\leq i\leq n$）。
+令 $f\colon\F|U\to\G|U$ 为这些截面所定义的同态（\hyperlink{para:0:5.1.1}{5.1.1}）。
+立即可见，对于每个开集 $V\subseteq U$ 及每个截面 $s\in\Gamma(V,\G)$，
+都有 $s-f(p(s))\in\Gamma(V,\E)$，从而得到结论。
+
+\egapar{5.4.10}
+设 $f\colon X\to Y$ 为赋环空间态射，$\F$ 是 $\OO_X$-模层，
+$\LL$ 是有限秩局部自由 $\OO_Y$-模层。则存在典范同构
+\begin{equation}
+ f_*(\F)\otimes_{\OO_Y}\LL
+ \xrightarrow{\sim}f_*(\F\otimes_{\OO_X}f^*(\LL)).
+ \tag{5.4.10.1}\label{eq:0:5.4.10.1}
+\end{equation}
+事实上，对于任意 $\OO_Y$-模层 $\LL$，都有典范同态
+\[
+ \begin{aligned}
+ f_*(\F)\otimes_{\OO_Y}\LL
+ &\xrightarrow{1\otimes\rho}
+ f_*(\F)\otimes_{\OO_Y}f_*(f^*(\LL))\\
+ &\xrightarrow{\alpha}f_*(\F\otimes_{\OO_X}f^*(\LL)),
+ \end{aligned}
+\]
+其中 $\rho$ 是同态（\hyperref[eq:0:4.4.3.2]{4.4.3.2}），$\alpha$ 是同态（\hyperref[eq:0:4.2.2.1]{4.2.2.1}）。
+要证明当 $\LL$ 局部自由时此同态为双射，只需注意问题在 $Y$ 上是局部的，
+从而可设 $\LL=\OO_Y^n$。
+又因 $f_*$ 与 $f^*$ 都与有限直和可交换，可进一步设 $n=1$；
+这时，命题由定义及等式 $f^*(\OO_Y)=\OO_X$ 立即得到。
+
+\subsection{茎为局部环的赋环空间上的层}\hypertarget{heading:0:5.5}{}
+\src{53—54}
+
+\egapar{5.5.1}
+称赋环空间 $(X,\OO_X)$ 为\emph{茎为局部环的赋环空间}，
+是指对每个 $x\in X$，$\OO_x$ 都是局部环；
+在本书考察的赋环空间中，这类空间将占绝大多数。
+此时，用 $\mathfrak m_x$ 表示 $\OO_x$ 的极大理想，
+用 $k(x)$ 表示剩余域 $\OO_x/\mathfrak m_x$。
+对于任意 $\OO_X$-模层 $\F$、任意开集 $U\subseteq X$、任意 $x\in U$，
+以及任意截面 $f\in\Gamma(U,\F)$，
+以 $f(x)$ 表示芽 $f_x\in\F_x$ 模 $\mathfrak m_x\F_x$ 的类，
+称它为\emph{$f$ 在点 $x$ 的值}。
+因此，关系 $f(x)=0$ 意味着 $f_x\in\mathfrak m_x\F_x$；
+当它成立时，略用术语，称 $f$ \emph{在 $x$ 处为零}。
+须注意，不要把这个关系与 $f_x=0$ 混淆。
+
+\egapar{5.5.2}
+设 $X$ 是茎为局部环的赋环空间，$\LL$ 是可逆 $\OO_X$-模层，$f$ 是 $\LL$ 在 $X$ 上的截面。
+对于一点 $x\in X$，以下三个性质等价：
+\begin{enumerate}[label=\alph*)]
+\item $f_x$ 是 $\LL_x$ 的一个生成元。
+\item $f_x\notin\mathfrak m_x\LL_x$，也就是说，$f(x)\ne0$。
+\item 存在 $x$ 的开邻域 $V$ 和 $\LL^{-1}$ 在 $V$ 上的截面 $g$，
+使 $f\otimes g$ 在 $\Gamma(V,\OO_X)$ 中的典范像（\hyperlink{para:0:5.4.3}{5.4.3}）为单位截面。
+\end{enumerate}
+事实上，问题是局部的，可以只考虑 $\LL=\OO_X$ 的情形。
+此时 a) 与 b) 的等价性显然，c) 推出 b) 也显然。
+另一方面，若 $f_x\notin\mathfrak m_x$，则 $f_x$ 在 $\OO_x$ 中可逆；设 $f_xg_x=1_x$。
+依截面芽的定义，这表示存在 $x$ 的邻域 $V$ 和 $\OO_X$ 在 $V$ 上的截面 $g$，
+使得在 $V$ 上有 $fg=1$，从而得到 c)。
+
+由条件 c) 立即可知，满足等价条件 a)、b)、c) 的各点组成的集合 $X_f$ 是 $X$ 的开集。
+按（\hyperlink{para:0:5.5.1}{5.5.1}）的术语，它就是 $f$ 不为零的点的集合。
+
+\egapar{5.5.3}
+在（\hyperlink{para:0:5.5.2}{5.5.2}）的假设下，再设 $\LL'$ 为另一个可逆 $\OO_X$-模层。
+若 $f\in\Gamma(X,\LL)$，$g\in\Gamma(X,\LL')$，则
+\[
+ X_f\cap X_g=X_{f\otimes g}.
+\]
+事实上，问题是局部的，立即可归结到 $\LL=\LL'=\OO_X$ 的情形；
+此时 $f\otimes g$ 典范地等同于乘积 $fg$，命题显然成立。
+
+\egapar{5.5.4}
+设 $\F$ 是秩为 $n$ 的局部自由 $\OO_X$-模层。
+立即可见，当 $p\leq n$ 时，$\bigwedge^p\F$ 是秩为 $\binom np$ 的局部自由 $\OO_X$-模层；
+当 $p>n$ 时，它为零层。
+这是因为问题是局部的，可归结到 $\F=\OO_X^n$ 的情形。
+此外，对每个 $x\in X$，
+\[
+ (\bigwedge^p\F)_x\big/\mathfrak m_x(\bigwedge^p\F)_x
+\]
+是 $k(x)$ 上维数为 $\binom np$ 的向量空间，
+并且典范地等同于 $\bigwedge^p(\F_x/\mathfrak m_x\F_x)$。
+设 $s_1,\ldots,s_p$ 为 $\F$ 在开集 $U$ 上的截面，
+置 $s=s_1\wedge\cdots\wedge s_p$，它是 $\bigwedge^p\F$ 在 $U$ 上的截面（\hyperlink{para:0:4.1.5}{4.1.5}）。
+有
+\[
+ s(x)=s_1(x)\wedge\cdots\wedge s_p(x).
+\]
+因此，$s_1(x),\ldots,s_p(x)$ 线性相关，等价于 $s(x)=0$。
+由此得到，$s_1(x),\ldots,s_p(x)$ 线性无关的点 $x$ 组成一个开集。
+事实上，归结到 $\F=\OO_X^n$ 后，只需对 $s$ 在
+$\bigwedge^p\F=\OO_X^{\binom np}$ 的各因子上的投影应用（\hyperlink{para:0:5.5.2}{5.5.2}）。
+
+特别地，若 $s_1,\ldots,s_n$ 是 $\F$ 在 $U$ 上的 $n$ 个截面，
+且对每个 $x\in U$，$s_1(x),\ldots,s_n(x)$ 都线性无关，
+则由这些截面定义的同态 $u\colon\OO_X^n|U\to\F|U$（\hyperlink{para:0:5.1.1}{5.1.1}）是同构。
+事实上，可以只考虑 $\F=\OO_X^n$ 并把 $\bigwedge^n\F$ 与 $\OO_X$ 典范等同的情形。
+这时，$s=s_1\wedge\cdots\wedge s_n$ 是 $\OO_X$ 在 $U$ 上的可逆截面，
+利用 Cramer 公式即可定义 $u$ 的逆同态。
+
+\egapar{5.5.5}
+设 $\E,\F$ 是两个有限秩局部自由 $\OO_X$-模层，$u\colon\E\to\F$ 为同态。
+存在 $x\in X$ 的邻域 $U$，使 $u|U$ 为单射，且 $\F|U$ 是 $u(\E)|U$
+与某个局部自由子 $(\OO_X|U)$-模层 $\G$ 的直和，
+其充要条件是 $u_x\colon\E_x\to\F_x$ 取商后给出的向量空间同态
+\[
+ \E_x/\mathfrak m_x\E_x\longrightarrow\F_x/\mathfrak m_x\F_x
+\]
+为单射。
+
+条件的必要性如下：此时 $\F_x$ 是自由 $\OO_x$-模 $u_x(\E_x)$ 与 $\G_x$ 的直和，
+因此 $\F_x/\mathfrak m_x\F_x$ 是
+$u_x(\E_x)/\mathfrak m_xu_x(\E_x)$ 与 $\G_x/\mathfrak m_x\G_x$ 的直和。
+
+为证充分性，可以只考虑 $\E=\OO_X^m$ 的情形。
+设 $e_i$ 为 $\OO_X^m$ 的截面，使对于每个 $y\in X$，
+$(e_i)_y$ 都等于 $\OO_y^m$ 的典范基的第 $i$ 个元素；这些称为 $\OO_X^m$ 的\emph{典范截面}。
+令 $s_1,\ldots,s_m$ 为这些截面在 $u$ 下的像。
+按假设，$s_1(x),\ldots,s_m(x)$ 线性无关。
+若 $\F$ 的秩为 $n$，则存在 $x$ 的邻域 $V$，以及 $\F$ 在 $V$ 上的 $n-m$ 个截面
+$s_{m+1},\ldots,s_n$，使各 $s_i(x)$（$1\leq i\leq n$）构成
+$\F_x/\mathfrak m_x\F_x$ 的一组基。
+依（\hyperlink{para:0:5.5.4}{5.5.4}），存在邻域 $U\subseteq V$，使得对每个 $y\in U$，
+各 $s_i(y)$（$1\leq i\leq n$）都构成 $\F_y/\mathfrak m_y\F_y$ 的一组基。
+再依（\hyperlink{para:0:5.5.4}{5.5.4}），得到从 $\F|U$ 到 $\OO_X^n|U$ 的同构，
+把 $s_i|U$（$1\leq i\leq m$）分别映到 $e_i|U$。
+证明完成。
+
+
+% END chapters/ch0_s5.tex
+
+\par
+
+% BEGIN chapters/ch0_s6.tex
+\section{平坦性}\hypertarget{heading:0:6}{}
+\src{54—55（引言）}
+
+\egapar{6.0}
+平坦性的概念归于 J.-P. Serre\cite{b16}。
+以下对于已经在 N. Bourbaki 的《交换代数》中阐述的结果，省略其证明，读者可参阅该书。
+我们假设所有环都交换。
+\origfootnote{关于这些结果中的大部分如何推广到非交换情形，参见上述 N. Bourbaki 的论述。}
+
+若 $M,N$ 为两个 $A$-模，$M'$ 是 $M$ 的子模，$N'$ 是 $N$ 的子模，
+则以 $\Im(M'\otimes_A N')$ 表示典范映射
+$M'\otimes_A N'\to M\otimes_A N$ 的像，即 $M\otimes_A N$ 的相应子模。
+
+\subsection{平坦模}\hypertarget{heading:0:6.1}{}
+\src{55}
+
+\egapar{6.1.1}
+设 $M$ 为 $A$-模。以下性质等价：
+\begin{enumerate}[label=\alph*)]
+\item $M\otimes_A N$ 是 $A$-模范畴中关于 $N$ 的正合函子。
+\item 对每个 $i>0$ 和每个 $A$-模 $N$，都有 $\Tor_i^A(M,N)=0$。
+\item 对每个 $A$-模 $N$，都有 $\Tor_1^A(M,N)=0$。
+\end{enumerate}
+当 $M$ 满足这些条件时，称 $M$ 是\emph{平坦 $A$-模}。
+显然，每个自由 $A$-模都是平坦的。
+
+要使 $M$ 为平坦 $A$-模，只需对于 $A$ 的每个有限型理想 $\mathfrak I$，
+典范映射 $M\otimes_A\mathfrak I\to M\otimes_A A=M$ 为单射。
+
+\egapar{6.1.2}
+平坦 $A$-模的归纳极限仍为平坦 $A$-模。
+$A$-模的直和 $\bigoplus_{\lambda\in L}M_\lambda$ 平坦，当且仅当每个 $M_\lambda$ 都平坦。
+特别地，每个射影 $A$-模都平坦。
+
+设 $0\to M'\to M\to M''\to0$ 为 $A$-模的正合列，且 $M''$ 平坦。
+则对每个 $A$-模 $N$，序列
+\[
+ 0\longrightarrow M'\otimes_A N\longrightarrow M\otimes_A N
+ \longrightarrow M''\otimes_A N\longrightarrow0
+\]
+正合。此外，此时 $M$ 平坦，当且仅当 $M'$ 平坦。
+但有可能 $M,M'$ 都平坦，而 $M''=M/M'$ 不平坦。
+
+\egapar{6.1.3}
+设 $M$ 为平坦 $A$-模，$N$ 为任意 $A$-模。对于 $N$ 的两个子模 $N',N''$，有
+\[
+ \begin{aligned}
+ \Im\bigl(M\otimes_A(N'+N'')\bigr)
+ &=\Im(M\otimes_A N')+\Im(M\otimes_A N''),\\
+ \Im\bigl(M\otimes_A(N'\cap N'')\bigr)
+ &=\Im(M\otimes_A N')\cap\Im(M\otimes_A N''),
+ \end{aligned}
+\]
+这里的像都取在 $M\otimes_A N$ 中。
+
+\egapar{6.1.4}
+设 $M,N$ 为两个 $A$-模，$M'\subseteq M,N'\subseteq N$ 为子模，
+并假设 $M/M'$ 与 $N/N'$ 中至少一个平坦。则
+\[
+ \Im(M'\otimes_A N')
+ =\Im(M'\otimes_A N)\cap\Im(M\otimes_A N'),
+\]
+这里的像取在 $M\otimes_A N$ 中。
+特别地，若 $\mathfrak I$ 是 $A$ 的理想，且 $M/M'$ 平坦，则
+$\mathfrak I M'=M'\cap\mathfrak I M$。
+
+\subsection{环的变更}\hypertarget{heading:0:6.2}{}
+\src{55—56}
+
+当一个加法群 $M$ 具有相对于环 $A,B,\ldots$ 的若干模结构时，
+我们有时说 $M$ 是 $A$-平坦的、$B$-平坦的，等等，
+来代替“$M$ 作为 $A$-模、$B$-模等是平坦的”这一说法。
+
+\egapar{6.2.1}
+设 $A,B$ 为两个环，$M$ 为 $A$-模，$N$ 为 $(A,B)$-双模。
+若 $M$ 平坦，且 $N$ 是 $B$-平坦的，则 $M\otimes_A N$ 是 $B$-平坦的。
+特别地，若 $M,N$ 都是平坦 $A$-模，则 $M\otimes_A N$ 是平坦 $A$-模。
+若 $B$ 为 $A$-代数，$M$ 为平坦 $A$-模，则 $B$-模 $M_{(B)}=M\otimes_A B$ 平坦。
+最后，若 $B$ 为作为 $A$-模平坦的 $A$-代数，$N$ 为平坦 $B$-模，则 $N$ 也是 $A$-平坦的。
+
+\egapar{6.2.2}
+设 $A$ 为环，$B$ 为作为 $A$-模平坦的 $A$-代数。
+设 $M,N$ 为两个 $A$-模，且 $M$ 具有有限表示。
+则典范同态
+\begin{equation}
+ \Hom_A(M,N)\otimes_A B
+ \longrightarrow\Hom_B(M\otimes_A B,N\otimes_A B)
+ \tag{6.2.2.1}\label{eq:0:6.2.2.1}
+\end{equation}
+是同构；此同态把 $u\otimes b$ 映到同态
+$m\otimes b'\mapsto u(m)\otimes bb'$。
+
+\egapar{6.2.3}
+设 $(A_\lambda,\varphi_{\mu\lambda})$ 为环的滤过归纳系，$A=\ilim A_\lambda$。
+另设对每个 $\lambda$，$M_\lambda$ 是 $A_\lambda$-模；
+对 $\lambda\leq\mu$，$\theta_{\mu\lambda}\colon M_\lambda\to M_\mu$ 是
+$\varphi_{\mu\lambda}$-同态，且 $(M_\lambda,\theta_{\mu\lambda})$ 构成归纳系。
+于是 $M=\ilim M_\lambda$ 是 $A$-模。
+若对每个 $\lambda$，$M_\lambda$ 都是平坦 $A_\lambda$-模，则 $M$ 是平坦 $A$-模。
+
+事实上，设 $\mathfrak I$ 是 $A$ 的有限型理想。
+依归纳极限的定义，存在指标 $\lambda$ 及 $A_\lambda$ 的理想 $\mathfrak I_\lambda$，
+使 $\mathfrak I=\mathfrak I_\lambda A$。
+对 $\mu\geq\lambda$，置 $\mathfrak I_\mu=\mathfrak I_\lambda A_\mu$，
+则还有 $\mathfrak I=\ilim_{\mu\geq\lambda}\mathfrak I_\mu$。
+因归纳极限函子正合且与张量积可交换，有
+\[
+ M\otimes_A\mathfrak I
+ =\ilim_{\mu\geq\lambda}(M_\mu\otimes_{A_\mu}\mathfrak I_\mu)
+ =\ilim_{\mu\geq\lambda}\mathfrak I_\mu M_\mu
+ =\mathfrak I M.
+\]
+
+\subsection{平坦性的局部化}\hypertarget{heading:0:6.3}{}
+\src{56—57}
+
+\egapar{6.3.1}
+若 $A$ 为环，$S$ 为 $A$ 的乘法子集，则 $S^{-1}A$ 是平坦 $A$-模。
+事实上，对每个 $A$-模 $N$，$N\otimes_A S^{-1}A$ 与 $S^{-1}N$ 等同（\hyperlink{para:0:1.2.5}{1.2.5}），
+而已知 $S^{-1}N$ 是关于 $N$ 的正合函子（\hyperlink{para:0:1.3.2}{1.3.2}）。
+
+若 $M$ 为平坦 $A$-模，则 $S^{-1}M=M\otimes_A S^{-1}A$ 为平坦 $S^{-1}A$-模（\hyperlink{para:0:6.2.1}{6.2.1}），
+由以上结果及（\hyperlink{para:0:6.2.1}{6.2.1}），它也是 $A$-平坦的。
+特别地，若 $P$ 为 $S^{-1}A$-模，则可把它看作与 $S^{-1}P$ 同构的 $A$-模；
+$P$ 是 $A$-平坦的，当且仅当它是 $S^{-1}A$-平坦的。
+
+\egapar{6.3.2}
+设 $A$ 为环，$B$ 为 $A$-代数，$T$ 为 $B$ 的乘法子集。
+若 $P$ 为 $A$-平坦的 $B$-模，则 $T^{-1}P$ 是 $A$-平坦的。
+事实上，对于任意 $A$-模 $N$，有
+\[
+ \begin{aligned}
+ (T^{-1}P)\otimes_A N
+ &=(T^{-1}B\otimes_B P)\otimes_A N\\
+ &=T^{-1}B\otimes_B(P\otimes_A N)
+ =T^{-1}(P\otimes_A N).
+ \end{aligned}
+\]
+而 $T^{-1}(P\otimes_A N)$ 是关于 $N$ 的正合函子，
+因为它是关于 $N$ 的正合函子 $P\otimes_A N$ 与关于 $Q$ 的正合函子 $T^{-1}Q$ 的复合。
+若 $S$ 是 $A$ 的乘法子集，且其在 $B$ 中的像包含于 $T$，
+则 $T^{-1}P=S^{-1}(T^{-1}P)$，因而依（\hyperlink{para:0:6.3.1}{6.3.1}）也是 $S^{-1}A$-平坦的。
+
+\egapar{6.3.3}
+设 $\varphi\colon A\to B$ 为环同态，$M$ 为 $B$-模。以下性质等价：
+\begin{enumerate}[label=\alph*)]
+\item $M$ 是平坦 $A$-模。
+\item 对 $B$ 的每个极大理想 $\mathfrak n$，$M_{\mathfrak n}$ 是平坦 $A$-模。
+\item 对 $B$ 的每个极大理想 $\mathfrak n$，置 $\mathfrak m=\varphi^{-1}(\mathfrak n)$，
+则 $M_{\mathfrak n}$ 是平坦 $A_{\mathfrak m}$-模。
+\end{enumerate}
+由于 $M_{\mathfrak n}=(M_{\mathfrak n})_{\mathfrak m}$，
+b) 与 c) 的等价性由（\hyperlink{para:0:6.3.1}{6.3.1}）得到；a) 推出 b) 是（\hyperlink{para:0:6.3.2}{6.3.2}）的特殊情形。
+只须证明 b) 推出 a)，即对每个 $A$-模的单射同态 $u\colon N'\to N$，
+同态 $v=1\otimes u\colon M\otimes_A N'\to M\otimes_A N$ 为单射。
+$v$ 也是 $B$-模同态；已知要使它为单射，只需对 $B$ 的每个极大理想 $\mathfrak n$，
+同态 $v_{\mathfrak n}\colon(M\otimes_A N')_{\mathfrak n}\to(M\otimes_A N)_{\mathfrak n}$ 为单射。
+而
+\[
+ (M\otimes_A N)_{\mathfrak n}
+ =B_{\mathfrak n}\otimes_B(M\otimes_A N)
+ =M_{\mathfrak n}\otimes_A N,
+\]
+所以 $v_{\mathfrak n}$ 正是
+$1\otimes u\colon M_{\mathfrak n}\otimes_A N'\to M_{\mathfrak n}\otimes_A N$；
+因 $M_{\mathfrak n}$ 为 $A$-平坦的，该同态为单射。
+
+特别地，取 $B=A$ 可知：$A$-模 $M$ 平坦，当且仅当对 $A$ 的每个极大理想 $\mathfrak m$，
+$M_{\mathfrak m}$ 都是 $A_{\mathfrak m}$-平坦的。
+
+\egapar{6.3.4}
+设 $M$ 为 $A$-模。若 $M$ 平坦，且 $f\in A$ 不是 $A$ 中的零因子，
+则 $f$ 不零化 $M$ 的任何非零元素。
+因为把 $M$ 与 $M\otimes_A A$ 等同后，同态 $m\mapsto fm$ 写成 $1\otimes u$，
+其中 $u$ 是 $A$ 中的乘法 $a\mapsto fa$；
+若 $u$ 为单射，则因 $M$ 平坦，$1\otimes u$ 也为单射。
+特别地，若 $A$ 是整环，则 $M$ 无挠。
+
+反之，假设 $A$ 为整环，$M$ 无挠，且对 $A$ 的每个极大理想 $\mathfrak m$，
+$A_{\mathfrak m}$ 都是离散赋值环，则 $M$ 是 $A$-平坦的。
+事实上，只需证明 $M_{\mathfrak m}$ 是 $A_{\mathfrak m}$-平坦的（\hyperlink{para:0:6.3.3}{6.3.3}），
+因此可以假设 $A$ 本身就是离散赋值环。
+又因 $M$ 是其有限型子模的归纳极限，且这些子模无挠，
+还可只考虑 $M$ 有限型的情形（\hyperlink{para:0:6.1.2}{6.1.2}）。
+此时，命题由 $M$ 是自由 $A$-模这一事实得到。
+
+特别地，若 $A$ 为整环，环同态 $\varphi\colon A\to B$ 使 $B$ 成为非零的平坦 $A$-模，
+则 $\varphi$ 必为单射。
+反之，若 $B$ 为整环，$A$ 为 $B$ 的子环，且对 $A$ 的每个极大理想 $\mathfrak m$，
+$A_{\mathfrak m}$ 都是离散赋值环，则 $B$ 为 $A$-平坦的。
+
+\subsection{忠实平坦模}\hypertarget{heading:0:6.4}{}
+\src{57—58}
+
+\egapar{6.4.1}
+对于 $A$-模 $M$，以下四个性质等价：
+\begin{enumerate}[label=\alph*)]
+\item $A$-模序列 $N'\to N\to N''$ 正合，当且仅当序列
+$M\otimes_A N'\to M\otimes_A N\to M\otimes_A N''$ 正合。
+\item $M$ 平坦，且对每个 $A$-模 $N$，关系 $M\otimes_A N=0$ 蕴含 $N=0$。
+\item $M$ 平坦，且对每个 $A$-模同态 $v\colon N\to N'$，
+关系 $1_M\otimes v=0$ 蕴含 $v=0$，其中 $1_M$ 为 $M$ 的恒等自同构。
+\item $M$ 平坦，且对 $A$ 的每个极大理想 $\mathfrak m$，有 $\mathfrak mM\ne M$。
+\end{enumerate}
+当 $M$ 满足这些条件时，称 $M$ 为\emph{忠实平坦 $A$-模}；此时 $M$ 必为忠实模。
+此外，若 $u\colon N\to N'$ 为 $A$-模同态，则 $u$ 是单射（分别地，满射、双射），
+当且仅当 $1\otimes u\colon M\otimes_A N\to M\otimes_A N'$ 是单射（分别地，满射、双射）。
+
+\egapar{6.4.2}
+非零自由模是忠实平坦的；一个平坦模与一个忠实平坦模的直和也是忠实平坦的。
+若 $S$ 为 $A$ 的乘法子集，则 $S^{-1}A$ 只有在 $S$ 全由可逆元组成时才是忠实平坦 $A$-模，
+此时 $S^{-1}A\simeq A$。
+
+\egapar{6.4.3}
+设 $0\to M'\to M\to M''\to0$ 为 $A$-模的正合列。
+若 $M',M''$ 都平坦，且其中一个忠实平坦，则 $M$ 忠实平坦。
+
+\egapar{6.4.4}
+设 $A,B$ 为两个环，$M$ 为 $A$-模，$N$ 为 $(A,B)$-双模。
+若 $M$ 忠实平坦，且 $N$ 为忠实平坦 $B$-模，则 $M\otimes_A N$ 为忠实平坦 $B$-模。
+特别地，若 $M,N$ 都为忠实平坦 $A$-模，则 $M\otimes_A N$ 也为忠实平坦 $A$-模。
+若 $B$ 为 $A$-代数，$M$ 为忠实平坦 $A$-模，则 $B$-模 $M_{(B)}$ 忠实平坦。
+
+\egapar{6.4.5}
+若 $M$ 为忠实平坦 $A$-模，$S$ 为 $A$ 的乘法子集，
+则 $S^{-1}M$ 为忠实平坦 $S^{-1}A$-模，
+因为 $S^{-1}M=M\otimes_A S^{-1}A$（\hyperlink{para:0:6.4.4}{6.4.4}）。
+反之，若对 $A$ 的每个极大理想 $\mathfrak m$，
+$M_{\mathfrak m}$ 都为忠实平坦 $A_{\mathfrak m}$-模，则 $M$ 为忠实平坦 $A$-模。
+因为 $M$ 是 $A$-平坦的（\hyperlink{para:0:6.3.3}{6.3.3}），并且
+\[
+ \begin{aligned}
+ M_{\mathfrak m}/\mathfrak mM_{\mathfrak m}
+ &=(M\otimes_A A_{\mathfrak m})
+   \otimes_{A_{\mathfrak m}}(A_{\mathfrak m}/\mathfrak mA_{\mathfrak m})\\
+ &=M\otimes_A(A/\mathfrak m)=M/\mathfrak mM.
+ \end{aligned}
+\]
+所以假设蕴含对 $A$ 的每个极大理想 $\mathfrak m$，$M/\mathfrak mM\ne0$，
+由（\hyperlink{para:0:6.4.1}{6.4.1}）即得结论。
+
+\subsection{标量限制}\hypertarget{heading:0:6.5}{}
+\src{58}
+
+\egapar{6.5.1}
+设 $A$ 为环，$\varphi\colon A\to B$ 为把 $B$ 赋成 $A$-代数的环同态。
+假设存在一个 $B$-模 $N$，它作为 $A$-模是忠实平坦的。
+则对每个 $A$-模 $M$，从 $M$ 到 $B\otimes_A M=M_{(B)}$ 的同态 $x\mapsto1\otimes x$ 为单射。
+特别地，$\varphi$ 为单射；
+对 $A$ 的每个理想 $\mathfrak a$，有 $\varphi^{-1}(\mathfrak aB)=\mathfrak a$；
+对 $A$ 的每个极大理想（分别地，素理想）$\mathfrak m$，
+存在 $B$ 的一个极大理想（分别地，素理想）$\mathfrak n$，
+使 $\varphi^{-1}(\mathfrak n)=\mathfrak m$。
+
+\egapar{6.5.2}
+当（\hyperlink{para:0:6.5.1}{6.5.1}）的条件满足时，通过 $\varphi$ 把 $A$ 与 $B$ 的子环等同；
+更一般地，对每个 $A$-模 $M$，把 $M$ 与 $M_{(B)}$ 的子 $A$-模等同。
+注意，若此时 $B$ 为诺特环，则 $A$ 也为诺特环。
+因为映射 $\mathfrak a\mapsto\mathfrak aB$ 是从 $A$ 的理想集到 $B$ 的理想集的保序单射；
+若 $A$ 中存在无限严格递增的理想序列，就会导致 $B$ 中也存在这样的序列。
+
+\subsection{忠实平坦环}\hypertarget{heading:0:6.6}{}
+\src{58—59}
+
+\egapar{6.6.1}
+设 $\varphi\colon A\to B$ 为把 $B$ 赋成 $A$-代数的环同态。以下五个性质等价：
+\begin{enumerate}[label=\alph*)]
+\item $B$ 为忠实平坦 $A$-模；换言之，$M_{(B)}$ 是关于 $M$ 的正合且忠实的函子。
+\item $\varphi$ 为单射，且 $A$-模 $B/\varphi(A)$ 平坦。
+\item $A$-模 $B$ 平坦，即函子 $M_{(B)}$ 正合；并且对每个 $A$-模 $M$，
+从 $M$ 到 $M_{(B)}$ 的同态 $x\mapsto1\otimes x$ 为单射。
+\item $A$-模 $B$ 平坦，且对 $A$ 的每个理想 $\mathfrak a$，有
+$\varphi^{-1}(\mathfrak aB)=\mathfrak a$。
+\item $A$-模 $B$ 平坦，且对 $A$ 的每个极大理想 $\mathfrak m$，
+存在 $B$ 的极大理想 $\mathfrak n$，使 $\varphi^{-1}(\mathfrak n)=\mathfrak m$。
+\end{enumerate}
+当这些条件成立时，把 $A$ 与 $B$ 的子环等同。
+
+\egapar{6.6.2}
+设 $A$ 为局部环，$\mathfrak m$ 为其极大理想，$B$ 为满足 $\mathfrak mB\ne B$ 的 $A$-代数。
+例如，当 $B$ 为局部环且 $A\to B$ 是局部同态时，这一条件就成立。
+若 $B$ 为平坦 $A$-模，则 $B$ 为忠实平坦 $A$-模。
+事实上，因 $\mathfrak mB\ne B$，存在 $B$ 的极大理想 $\mathfrak n$ 包含 $\mathfrak mB$。
+由于 $\varphi^{-1}(\mathfrak n)$ 包含 $\mathfrak m$ 而不包含 $1$，
+有 $\varphi^{-1}(\mathfrak n)=\mathfrak m$，故可应用（\hyperlink{para:0:6.6.1}{6.6.1}）的判据 e)。
+
+在以上条件下，若 $B$ 为诺特环，则 $A$ 也为诺特环（\hyperlink{para:0:6.5.2}{6.5.2}）。
+
+\egapar{6.6.3}
+设 $B$ 为忠实平坦的 $A$-代数。
+对于任意 $A$-模 $M$ 及其子 $A$-模 $M'$，有
+\[
+ M'=M\cap M'_{(B)},
+\]
+这里把 $M$ 与 $M_{(B)}$ 的子 $A$-模等同。
+$M$ 为平坦 $A$-模（分别地，忠实平坦 $A$-模），
+当且仅当 $M_{(B)}$ 为平坦 $B$-模（分别地，忠实平坦 $B$-模）。
+
+\egapar{6.6.4}
+设 $B$ 为 $A$-代数，$N$ 为忠实平坦 $B$-模。
+$B$ 为平坦 $A$-模（分别地，忠实平坦 $A$-模），
+当且仅当 $N$ 为平坦 $A$-模（分别地，忠实平坦 $A$-模）。
+
+特别地，设 $C$ 为 $B$-代数。
+若环 $C$ 在 $B$ 上忠实平坦，且 $B$ 在 $A$ 上忠实平坦，则 $C$ 在 $A$ 上忠实平坦；
+若 $C$ 在 $B$ 上和在 $A$ 上都忠实平坦，则 $B$ 在 $A$ 上忠实平坦。
+
+\subsection{赋环空间的平坦态射}\hypertarget{heading:0:6.7}{}
+\src{59—60}
+
+\egapar{6.7.1}
+设 $f\colon X\to Y$ 为赋环空间态射，$\F$ 为 $\OO_X$-模层。
+若 $\F_x$ 是平坦 $\OO_{f(x)}$-模，称 $\F$ \emph{在点 $x\in X$ 是 $f$-平坦的}；
+当 $f$ 不致混淆时，也称为\emph{在 $x$ 是 $Y$-平坦的}。
+若 $\F$ 在每个 $x\in f^{-1}(y)$ 都是 $f$-平坦的，称 $\F$ \emph{在 $y\in Y$ 之上是 $f$-平坦的}。
+若 $\F$ 在 $X$ 的每一点都 $f$-平坦，称 $\F$ \emph{是 $f$-平坦的}。
+若 $\OO_X$ 在 $x$ 是 $f$-平坦的（分别地，在 $y$ 之上是 $f$-平坦的、是 $f$-平坦的），
+则称态射 $f$ \emph{在 $x$ 平坦}（分别地，\emph{在 $y$ 之上平坦}、\emph{平坦}）。
+
+\egapar{6.7.2}
+沿用（\hyperlink{para:0:6.7.1}{6.7.1}）的记号。
+若 $\F$ 在 $x$ 是 $f$-平坦的，则对 $y=f(x)$ 的每个开邻域 $U$，
+\[
+ (f^*(\G)\otimes_{\OO_X}\F)_x
+\]
+是 $(\OO_Y|U)$-模层范畴中关于 $\G$ 的正合函子。
+事实上，这个茎典范地等同于 $\G_y\otimes_{\OO_y}\F_x$，结论由定义得到。
+特别地，若 $f$ 是平坦态射，则 $f^*$ 在 $\OO_Y$-模层范畴中为正合函子。
+
+\egapar{6.7.3}
+反之，假设环层 $\OO_Y$ 凝聚，并假设对 $y$ 的每个开邻域 $U$，
+函子 $(f^*(\G)\otimes_{\OO_X}\F)_x$ 在凝聚 $(\OO_Y|U)$-模层范畴中关于 $\G$ 正合。
+则 $\F$ 在 $x$ 是 $f$-平坦的。
+事实上，只需证明对于 $\OO_y$ 的每个有限型理想 $\mathfrak I$，
+典范同态 $\mathfrak I\otimes_{\OO_y}\F_x\to\F_x$ 为单射（\hyperlink{para:0:6.1.1}{6.1.1}）。
+而由（\hyperlink{para:0:5.3.8}{5.3.8}），存在 $y$ 的开邻域 $U$，以及 $\OO_Y|U$ 的凝聚理想层 $\J$，
+使 $\J_y=\mathfrak I$；由此即得结论。
+
+\egapar{6.7.4}
+（\hyperlink{heading:0:6.1}{6.1}）中关于平坦模的结果，立即转写为关于在一点 $f$-平坦的层的命题。
+
+若 $0\to\F'\to\F\to\F''\to0$ 是 $\OO_X$-模层的正合列，
+且 $\F''$ 在点 $x\in X$ 是 $f$-平坦的，
+则对于 $y=f(x)$ 的每个开邻域 $U$ 及每个 $(\OO_Y|U)$-模层 $\G$，序列
+\[
+ \begin{aligned}
+ 0\longrightarrow(f^*(\G)\otimes_{\OO_X}\F')_x
+ &\longrightarrow(f^*(\G)\otimes_{\OO_X}\F)_x\\
+ &\longrightarrow(f^*(\G)\otimes_{\OO_X}\F'')_x
+ \longrightarrow0
+ \end{aligned}
+\]
+正合。此时，$\F$ 在 $x$ 是 $f$-平坦的，当且仅当 $\F'$ 在 $x$ 是 $f$-平坦的。
+对于在 $y\in Y$ 之上 $f$-平坦的 $\OO_X$-模层，以及 $f$-平坦的 $\OO_X$-模层，
+都有相应的类似命题。
+
+\egapar{6.7.5}
+设 $f\colon X\to Y,g\colon Y\to Z$ 为两个赋环空间态射，
+$x\in X,y=f(x)$，$\F$ 为 $\OO_X$-模层。
+若 $\F$ 在 $x$ 是 $f$-平坦的，且态射 $g$ 在 $y$ 平坦，
+则 $\F$ 在 $x$ 是 $(g\circ f)$-平坦的（\hyperlink{para:0:6.2.1}{6.2.1}）。
+特别地，若 $f,g$ 都是平坦态射，则 $g\circ f$ 平坦。
+
+\egapar{6.7.6}
+设 $X,Y$ 为赋环空间，$f\colon X\to Y$ 为平坦态射。
+则双函子的典范同态（\hyperlink{para:0:4.4.6}{4.4.6}）
+\begin{equation}
+ f^*(\shHom_{\OO_Y}(\F,\G))
+ \longrightarrow\shHom_{\OO_X}(f^*(\F),f^*(\G))
+ \tag{6.7.6.1}\label{eq:0:6.7.6.1}
+\end{equation}
+在 $\F$ 具有有限表示时为同构（\hyperlink{para:0:5.2.5}{5.2.5}）。
+
+事实上，问题是局部的，可以假设存在正合列
+$\OO_Y^p\to\OO_Y^q\to\F\to0$。
+由关于 $f$ 的假设，（\hyperref[eq:0:6.7.6.1]{6.7.6.1}）的两边都是关于 $\F$ 的左正合函子。
+因此只需在 $\F=\OO_Y$ 时证明命题，而此时结论显然。
+
+\egapar{6.7.8}
+称赋环空间态射 $f\colon X\to Y$ \emph{忠实平坦}，
+是指 $f$ 为满射，且对每个 $x\in X$，$\OO_x$ 都是忠实平坦 $\OO_{f(x)}$-模。
+当 $X,Y$ 是茎为局部环的赋环空间时（\hyperlink{para:0:5.5.1}{5.5.1}），
+这等价于说态射 $f$ 为满射且平坦（\hyperlink{para:0:6.6.2}{6.6.2}）。
+\transnote{原版在（\hyperlink{para:0:6.7.6}{6.7.6}）之后直接编号为（\hyperlink{para:0:6.7.8}{6.7.8}），此处照录。
+本句引用（\hyperlink{para:0:6.6.2}{6.6.2}）从平坦推出忠实平坦时，还须保证每个茎同态
+$\OO_{Y,f(x)}\to\OO_{X,x}$ 是局部同态，或至少满足
+$\mathfrak m_{f(x)}\OO_{X,x}\ne\OO_{X,x}$。
+仅知道两边的茎环都是局部环，并不提供这个条件。
+例如，在两个单点赋环空间上，取结构环同态 $\mathbb Z_{(p)}\hookrightarrow\mathbb Q$。
+对应态射的底空间映射满射，并且它平坦（\hyperlink{para:0:6.3.1}{6.3.1}），但
+$\mathbb Q\otimes_{\mathbb Z_{(p)}}\mathbb F_p=0$，而 $\mathbb F_p\ne0$，所以它不忠实平坦。
+这里该茎同态不是局部同态。正文保留原版措辞；反例为译者补充。}
+当 $f$ 忠实平坦时，$f^*$ 是 $\OO_Y$-模层范畴中的正合且忠实的函子（\hyperlink{para:0:6.6.1}{6.6.1}，a)）。
+一个 $\OO_Y$-模层 $\G$ 是 $Y$-平坦的，当且仅当 $f^*(\G)$ 是 $Y$-平坦的（\hyperlink{para:0:6.6.3}{6.6.3}）。
+
+
+% END chapters/ch0_s6.tex
+
+\par
+
+% BEGIN chapters/ch0_s7_1.tex
+\section{进制环}\hypertarget{heading:0:7}{}
+\subsection{可容许环}\hypertarget{heading:0:7.1}{}
+\src{60—62}
+
+\egapar{7.1.1}
+回顾一下：在拓扑环 $A$（不必是分离的）中，若 $0$ 是序列 $(x^n)_{n\geq 0}$ 的一个极限，
+则称元素 $x$ 是\emph{拓扑幂零的}。若 $A$ 中存在一个由理想（它们必然是开的）组成的
+$0$ 的基本邻域系，则称拓扑环 $A$ 是\emph{线性拓扑化的}。
+
+\egastatement{7.1.2}{定义}
+在线性拓扑化环 $A$ 中，若理想 $\frJ$ 是开的，并且对于 $0$ 的每个邻域 $V$，
+都存在整数 $n>0$ 使得 $\frJ^n\subset V$，则称 $\frJ$ 是一个\emph{定义理想}
+（通常也略称序列 $(\frJ^n)$ 趋于 $0$）。若线性拓扑化环 $A$ 中存在定义理想，
+则称 $A$ 是\emph{预可容许的}；若 $A$ 是预可容许的，并且还是分离且完备的，
+则称 $A$ 是\emph{可容许的}。
+
+显然，若 $\frJ$ 是定义理想，$\frQ$ 是 $A$ 的开理想，则 $\frJ\cap\frQ$ 仍是定义理想；
+因而，预可容许环 $A$ 的定义理想组成 $0$ 的一个基本邻域系。
+
+\egastatement{7.1.3}{引理}
+设 $A$ 是线性拓扑化环。
+\begin{enumerate}[label=(\roman*)]
+\item 元素 $x\in A$ 为拓扑幂零元，当且仅当对于 $A$ 的每个开理想 $\frJ$，
+$x$ 在 $A/\frJ$ 中的典范像是幂零元。$A$ 中拓扑幂零元的集合 $\frT$ 是一个理想。
+\item 再设 $A$ 是预可容许的，且 $\frJ$ 是 $A$ 的一个定义理想。
+元素 $x\in A$ 为拓扑幂零元，当且仅当它在 $A/\frJ$ 中的典范像是幂零元；
+理想 $\frT$ 是 $A/\frJ$ 的幂零根的逆像，因而是开的。
+\end{enumerate}
+
+(i) 直接由定义得到。为证明 (ii)，只需注意，对于 $A$ 中 $0$ 的每个邻域 $V$，
+存在 $n>0$ 使得 $\frJ^n\subset V$；若 $x\in A$ 满足 $x^m\in\frJ$，
+则对 $q\geq n$ 有 $x^{mq}\in V$，故 $x$ 是拓扑幂零元。
+
+\egastatement{7.1.4}{命题}
+设 $A$ 是预可容许环，$\frJ$ 是 $A$ 的一个定义理想。
+\begin{enumerate}[label=(\roman*)]
+\item $A$ 的理想 $\frJ'$ 包含于某个定义理想，当且仅当存在整数 $n>0$ 使得
+$\frJ'{}^n\subset\frJ$。
+\item 元素 $x\in A$ 属于某个定义理想，当且仅当它是拓扑幂零元。
+\end{enumerate}
+
+(i) 若 $\frJ'{}^n\subset\frJ$，则对于 $A$ 中 $0$ 的每个开邻域 $V$，
+存在 $m$ 使得 $\frJ^m\subset V$，从而 $\frJ'{}^{mn}\subset V$。
+
+(ii) 必要性显然。反之，若条件成立，则存在 $n$ 使得 $x^n\in\frJ$；
+因此 $\frJ'=\frJ+Ax$ 是定义理想，因为它是开的，而且 $\frJ'{}^n\subset\frJ$。
+
+\egastatement{7.1.5}{推论}
+在预可容许环 $A$ 中，每个开素理想都包含所有定义理想。
+
+\egastatement{7.1.6}{推论}
+沿用（\hyperlink{para:0:7.1.4}{7.1.4}）的记号和假设。对于 $A$ 的理想 $\frJ_0$，以下性质等价：
+\begin{enumerate}[label=\alph*)]
+\item $\frJ_0$ 是 $A$ 的最大定义理想；
+\item $\frJ_0$ 是一个极大定义理想；
+\item $\frJ_0$ 是定义理想，而且环 $A/\frJ_0$ 是约化的。
+\end{enumerate}
+具有这些性质的理想 $\frJ_0$ 存在，当且仅当 $A/\frJ$ 的幂零根是幂零理想；
+此时 $\frJ_0$ 就等于 $A$ 中拓扑幂零元所成的理想 $\frT$。
+
+显然 a) 蕴含 b)；由（\hyperlink{para:0:7.1.4}{7.1.4}，(ii)）和（\hyperlink{para:0:7.1.3}{7.1.3}，(ii)），b) 蕴含 c)；
+出于同样的理由，c) 蕴含 a)。最后的断言由（\hyperlink{para:0:7.1.4}{7.1.4}，(i)）和（\hyperlink{para:0:7.1.3}{7.1.3}，(ii)）得到。
+
+当 $A/\frJ$ 的幂零根 $\frT/\frJ$ 是幂零理想时，以 $A_{\mathrm{red}}$ 记商环
+$A/\frT$；这是一个约化环。
+
+\egastatement{7.1.7}{推论}
+预可容许的诺特环具有最大定义理想。
+
+\egastatement{7.1.8}{推论}
+设预可容许环 $A$ 的某个定义理想 $\frJ$ 的各次幂 $\frJ^n$（$n>0$）
+组成 $0$ 的一个基本邻域系。则 $A$ 的任意定义理想 $\frJ'$ 的各次幂
+$\frJ'{}^n$ 也具有这一性质。
+
+\egastatement{7.1.9}{定义}
+若预可容许环 $A$ 具有一个定义理想 $\frJ$，使得 $\frJ^n$ 组成 $A$ 中 $0$ 的
+一个基本邻域系（等价地，各 $\frJ^n$ 都是开的），则称 $A$ 是\emph{预进制环}。
+分离且完备的预进制环称为\emph{进制环}。
+
+若 $\frJ$ 是预进制环（分别地，进制环）$A$ 的一个定义理想，也称 $A$ 为
+\emph{$\frJ$-预进制环}（分别地，\emph{$\frJ$-进制环}），并称其拓扑为
+\emph{$\frJ$-预进拓扑}（分别地，\emph{$\frJ$-进拓扑}）。更一般地，若 $M$ 是
+$A$-模，则以子模 $\frJ^nM$ 为 $0$ 的基本邻域系的拓扑称为
+$\frJ$-预进拓扑（分别地，$\frJ$-进拓扑）。由（\hyperlink{para:0:7.1.8}{7.1.8}），这些拓扑与定义理想
+$\frJ$ 的选择无关。\transnote{本册保留原著对 \textit{préadique} 与 \textit{adique} 的术语区分；
+不要仅因出现“进”字便略去原文中的分离性、完备性条件。对模的陈述还应逐项核对其所列假设。}
+
+\egastatement{7.1.10}{命题}
+设 $A$ 是可容许环，$\frJ$ 是 $A$ 的一个定义理想。则 $\frJ$ 包含于 $A$ 的根基中。
+\transnote{这里的“根基”是（\hyperlink{para:0:1.1.2}{1.1.2}）中的 Jacobson 根基，而不是幂零根。}
+
+这一命题与下列任意一个推论等价。
+
+\egastatement{7.1.11}{推论}
+对每个 $x\in\frJ$，元素 $1+x$ 在 $A$ 中可逆。
+
+\egastatement{7.1.12}{推论}
+元素 $f\in A$ 在 $A$ 中可逆，当且仅当它在 $A/\frJ$ 中的典范像可逆。
+
+\egastatement{7.1.13}{推论}
+对于每个有限型 $A$-模 $M$，关系 $M=\frJ M$
+（等价于 $M\otimes_A(A/\frJ)=0$）蕴含 $M=0$。
+
+\egastatement{7.1.14}{推论}
+设 $u:M\to N$ 是 $A$-模同态，且 $N$ 是有限型的。则 $u$ 为满射，当且仅当
+\[
+ u\otimes 1:M\otimes_A(A/\frJ)\longrightarrow N\otimes_A(A/\frJ)
+\]
+为满射。
+
+事实上，（\hyperlink{para:0:7.1.10}{7.1.10}）与（\hyperlink{para:0:7.1.11}{7.1.11}）的等价性由 Bourbaki，\textit{Alg.}，第 VIII 章，
+§6，第 3 节，定理 1 得到；（\hyperlink{para:0:7.1.10}{7.1.10}）与（\hyperlink{para:0:7.1.13}{7.1.13}）的等价性由同处定理 2 得到。
+（\hyperlink{para:0:7.1.10}{7.1.10}）蕴含（\hyperlink{para:0:7.1.14}{7.1.14}），由同处命题 6 的推论 4 得到；另一方面，
+将（\hyperlink{para:0:7.1.14}{7.1.14}）用于零同态，便得到（\hyperlink{para:0:7.1.13}{7.1.13}）。最后，由（\hyperlink{para:0:7.1.10}{7.1.10}），若 $f$ 在
+$A/\frJ$ 中的像可逆，则 $f$ 不属于 $A$ 的任何极大理想，所以 $f$ 在 $A$ 中可逆；
+也就是说，（\hyperlink{para:0:7.1.10}{7.1.10}）蕴含（\hyperlink{para:0:7.1.12}{7.1.12}）。反之，（\hyperlink{para:0:7.1.12}{7.1.12}）蕴含（\hyperlink{para:0:7.1.11}{7.1.11}）。
+
+因而只须证明（\hyperlink{para:0:7.1.11}{7.1.11}）。由于 $A$ 分离且完备，又由于序列 $(\frJ^n)$ 趋于 $0$，
+级数
+\[
+ \sum_{n=0}^{\infty}(-1)^n x^n
+\]
+显然在 $A$ 中收敛；若以 $y$ 记其和，则有 $y(1+x)=1$。
+
+
+% END chapters/ch0_s7_1.tex
+
+\par
+
+% BEGIN chapters/ch0_s7_2.tex
+\subsection{进制环与射影极限}\hypertarget{heading:0:7.2}{}
+\src{62—66}
+
+\egapar{7.2.1}
+离散环的任意射影极限显然都是线性拓扑化、分离且完备的环。
+反之，设 $A$ 是线性拓扑化环，$(\frJ_\lambda)$ 是 $A$ 中由理想组成的
+$0$ 的一个开基本邻域系。典范映射 $\varphi_\lambda:A\to A/\frJ_\lambda$
+组成连续同态的射影系，因而定义连续同态
+\[
+ \varphi:A\longrightarrow\plim_\lambda A/\frJ_\lambda.
+\]
+若 $A$ 是分离的，则 $\varphi$ 是 $A$ 到 $\plim A/\frJ_\lambda$ 的一个稠密子环的
+拓扑同构；若 $A$ 还完备，则 $\varphi$ 是 $A$ 到 $\plim A/\frJ_\lambda$ 的拓扑同构。
+
+\egastatement{7.2.2}{引理}
+线性拓扑化环为可容许环，当且仅当它同构于某个射影极限 $A=\plim A_\lambda$，
+其中 $(A_\lambda,u_{\lambda\mu})$ 是离散环的射影系，其指标集是一个关于 $\leq$
+滤过的有序集 $L$，具有记为 $0$ 的最小元，而且满足下列条件：
+\begin{enumerate}[label=\arabic*°]
+\item 各典范同态 $u_\lambda:A\to A_\lambda$ 都是满射；
+\item 同态 $u_{0\lambda}:A_\lambda\to A_0$ 的核 $\frJ_\lambda$ 是幂零理想。
+\end{enumerate}
+此时，$u_0:A\to A_0$ 的核 $\frJ$ 等于 $\plim\frJ_\lambda$。
+
+必要性由（\hyperlink{para:0:7.2.1}{7.2.1}）得到：取一个由定义理想组成的 $0$ 的基本邻域系
+$(\frJ_\lambda)$，使这些理想都包含于其中某个 $\frJ_0$，再应用（\hyperlink{para:0:7.1.4}{7.1.4}，(i)）。
+充分性由射影极限的定义和（\hyperlink{para:0:7.1.2}{7.1.2}）得到；最后的断言是直接的。
+
+\egapar{7.2.3}
+设 $A$ 是可容许拓扑环，$\frJ$ 是 $A$ 的一个包含于某个定义理想的理想
+（依（\hyperlink{para:0:7.1.4}{7.1.4}），这等价于 $(\frJ^n)$ 趋于 $0$）。可以在 $A$ 上考虑以各次幂
+$\frJ^n$（$n>0$）为 $0$ 的基本邻域系的环拓扑；仍称之为 $\frJ$-预进拓扑。
+$A$ 可容许的假设蕴含 $\bigcap_n\frJ^n=0$，所以 $A$ 上的 $\frJ$-预进拓扑是分离的。
+设
+\[
+ \comp A=\plim_n A/\frJ^n
+\]
+是 $A$ 关于这一拓扑的完备化，其中各 $A/\frJ^n$ 均赋以离散拓扑；以 $u$ 记环同态
+$A\to\comp A$（它不一定连续），即同态序列 $u_n:A\to A/\frJ^n$ 的射影极限。
+另一方面，$A$ 上的 $\frJ$-预进拓扑比给定的拓扑 $\mathscr T$ 更细；
+由于 $A$ 关于 $\mathscr T$ 是分离且完备的，可以将从赋有 $\frJ$-预进拓扑的 $A$
+到赋有 $\mathscr T$ 的 $A$ 的恒等映射作连续延拓，得到连续同态
+$v:\comp A\to A$。
+
+\NewNote{\textbf{作者勘误提示：}本命题已有作者正式勘误：须增加各理想幂在原拓扑中闭的条件，原证明不正确。此前译注中的待核标记应结合该勘误阅读。 参见\hyperlink{errIII:3}{《勘误与增补（清单二）》第3条}。}
+\egastatement{7.2.4}{命题}
+若 $A$ 是可容许环，且 $\frJ$ 包含于 $A$ 的某个定义理想，则 $A$ 关于
+$\frJ$-预进拓扑是分离且完备的。
+
+事实上，沿用（\hyperlink{para:0:7.2.3}{7.2.3}）的记号，显然 $v\circ u$ 是 $A$ 的恒等映射。
+另一方面，$u_n\circ v:\comp A\to A/\frJ^n$ 是典范映射 $u_n$ 的连续延拓
+（这里 $A$ 赋以 $\frJ$-预进拓扑，$A/\frJ^n$ 赋以离散拓扑）；
+也就是说，它是从 $\comp A=\plim_k A/\frJ^k$ 到 $A/\frJ^n$ 的典范映射。
+因此，$u\circ v$ 是这一映射序列的射影极限，按定义就是 $\comp A$ 的恒等映射；命题得证。
+\transnote{上述陈述和论证依底本保留。原文在此将 $u_n\circ v$ 直接称为“连续延拓”，
+但此前只说明了 $v$ 对 $A$ 的原拓扑连续，并未另证这一复合映射到离散商环的连续性；
+不能仅凭较粗拓扑下的连续性略去这一步。本译稿不在此补写原文没有给出的论证。}
+
+\NewNote{\textbf{作者勘误提示：}作者要求本推论同样增加理想幂闭的条件。 参见\hyperlink{errIII:3}{《勘误与增补（清单二）》第3条}。}
+\egastatement{7.2.5}{推论}
+在（\hyperlink{para:0:7.2.3}{7.2.3}）的假设下，下列条件等价：
+\begin{enumerate}[label=\alph*)]
+\item 同态 $u$ 连续；
+\item 同态 $v$ 双连续；
+\item $A$ 是 $\frJ$-进制环。
+\end{enumerate}
+
+\NewNote{\textbf{作者勘误提示：}作者要求本推论同样增加理想幂闭的条件。 参见\hyperlink{errIII:3}{《勘误与增补（清单二）》第3条}。}
+\egastatement{7.2.6}{推论}
+设 $A$ 是可容许环，$\frJ$ 是 $A$ 的定义理想。则 $A$ 为诺特环，当且仅当
+$A/\frJ$ 是诺特环，而且 $\frJ/\frJ^2$ 是有限型 $(A/\frJ)$-模。
+
+这些条件显然必要。反之，设它们成立。由（\hyperlink{para:0:7.2.4}{7.2.4}），$A$ 关于 $\frJ$-预进拓扑完备，
+所以 $A$ 为诺特环，当且仅当关于滤过 $(\frJ^n)$ 的相伴分次环 $\grad(A)$ 是诺特环
+（[1]，18-07 页，定理 4）。设 $a_1,\ldots,a_n$ 是 $\frJ$ 的元素，
+其模 $\frJ^2$ 的类生成 $(A/\frJ)$-模 $\frJ/\frJ^2$。
+用归纳法立即可见：关于 $a_i$（$1\leq i\leq n$）的总次数为 $m$ 的单项式，
+其模 $\frJ^{m+1}$ 的类生成 $(A/\frJ)$-模 $\frJ^m/\frJ^{m+1}$。
+于是 $\grad(A)$ 同构于 $(A/\frJ)[T_1,\ldots,T_n]$ 的一个商环，其中 $T_i$ 是不定元。
+证明完成。
+
+\egastatement{7.2.7}{命题}
+设 $(A_i,u_{ij})$ 是离散环的射影系，$i\in\mathbb N$；对每个整数 $i$，
+以 $\frJ_i$ 记同态 $u_{0i}:A_i\to A_0$ 在 $A_i$ 中的核。假设：
+\begin{enumerate}[label=\alph*)]
+\item 当 $i\leq j$ 时，$u_{ij}$ 是满射，且其核为 $\frJ_j^{i+1}$
+（所以 $A_i$ 同构于 $A_j/\frJ_j^{i+1}$）；
+\item $\frJ_1/\frJ_1^2\;(=\frJ_1)$ 是环 $A_0=A_1/\frJ_1$ 上的有限型模。
+\end{enumerate}
+令 $A=\plim_i A_i$；对每个整数 $n\geq0$，以 $u_n$ 记典范同态
+$A\to A_n$，并以 $\frJ^{(n+1)}\subset A$ 记其核。则：
+\begin{enumerate}[label=(\roman*)]
+\item $A$ 是进制环，且 $\frJ=\frJ^{(1)}$ 是它的定义理想；
+\item 对每个 $n\geq1$，有 $\frJ^{(n)}=\frJ^n$；
+\item $\frJ/\frJ^2$ 同构于 $\frJ_1=\frJ_1/\frJ_1^2$，因而是环
+$A_0=A/\frJ$ 上的有限型模。
+\end{enumerate}
+
+各 $u_{ij}$ 的满射性蕴含 $u_n$ 是满射；此外，假设 a) 蕴含 $\frJ_j^{j+1}=0$，
+所以 $A$ 是可容许环（\hyperlink{para:0:7.2.2}{7.2.2}）。依定义，各 $\frJ^{(n)}$ 组成 $A$ 中 $0$ 的一个
+基本邻域系，故 (ii) 蕴含 (i)。又有 $\frJ=\plim_i\frJ_i$，且映射
+$\frJ\to\frJ_i$ 都是满射，因此 (ii) 还蕴含 (iii)。只须证明 (ii)。
+
+依定义，$\frJ^{(n)}$ 由 $A$ 中满足 $x_k=0$（$k<n$）的元素
+$(x_k)_{k\geq0}$ 组成，所以
+\[
+ \frJ^{(n)}\frJ^{(m)}\subset\frJ^{(n+m)};
+\]
+也就是说，各 $\frJ^{(n)}$ 构成 $A$ 的一个滤过。另一方面，
+$\frJ^{(n)}/\frJ^{(n+1)}$ 同构于 $\frJ^{(n)}$ 在 $A_n$ 中的投影；
+由 $\frJ^{(n)}=\plim_{i\geq n}\frJ_i^n$，这一投影就是 $\frJ_n^n$，
+它是 $A_0=A_n/\frJ_n$ 上的模。
+
+取 $\frJ=\frJ^{(1)}$ 的 $r$ 个元素 $a_i=(a_{ik})_{k\geq0}$，使
+$a_{11},\ldots,a_{r1}$ 生成 $A_0$-模 $\frJ_1$。
+我们将证明：关于 $a_i$ 的总次数为 $n$ 的单项式所成的集合 $S_n$，
+生成 $A$ 的理想 $\frJ^{(n)}$。
+由于 $\frJ_i^{i+1}=0$，首先显然有 $S_n\subset\frJ^{(n)}$；
+又因 $A$ 关于滤过 $(\frJ^{(m)})$ 完备，只需证明 $S_n$ 中元素模
+$\frJ^{(n+1)}$ 的类所成的集合 $\overline S_n$，在上述滤过下，
+生成 $\grad(A)$ 上的分次模 $\grad(\frJ^{(n)})$
+（[1]，18-06 页，引理）。
+根据 $\grad(A)$ 的乘法定义，只须证明：对每个 $m$，$\overline S_m$
+生成 $A_0$-模 $\frJ^{(m)}/\frJ^{(m+1)}$；等价地，$\frJ_m^m$
+由关于 $a_{jm}$（$1\leq j\leq r$）的次数为 $m$ 的单项式生成。
+
+为此，只须证明 $\frJ_m$ 作为 $A_m$-模，由关于 $a_{jm}$ 的次数不超过 $m$
+的单项式生成。$m=1$ 时，命题依定义显然；现对 $m$ 作归纳，并令
+$\frJ'_m$ 为这些单项式生成的 $\frJ_m$ 的 $A_m$-子模。
+关系 $\frJ_{m-1}=\frJ_m/\frJ_m^m$ 和归纳假设给出
+\[
+ \frJ_m=\frJ'_m+\frJ_m^m.
+\]
+由于 $\frJ_m^{m+1}=0$，由此得到 $\frJ_m^m=\frJ_m'{}^m$，最终得到
+$\frJ_m=\frJ'_m$。
+
+\egastatement{7.2.8}{推论}
+在（\hyperlink{para:0:7.2.7}{7.2.7}）的条件下，$A$ 是诺特环，当且仅当 $A_0$ 是诺特环。
+
+这直接由（\hyperlink{para:0:7.2.6}{7.2.6}）得到。
+
+\egastatement{7.2.9}{命题}
+假设（\hyperlink{para:0:7.2.7}{7.2.7}）的条件成立。对每个整数 $i$，设 $M_i$ 是 $A_i$-模；
+当 $i\leq j$ 时，设 $v_{ij}:M_j\to M_i$ 是 $u_{ij}$-同态，
+使得 $(M_i,v_{ij})$ 构成射影系。再假设 $M_0$ 是有限型 $A_0$-模，
+各 $v_{ij}$ 都是满射，而且其核为 $\frJ_j^{i+1}M_j$。
+则 $M=\plim_i M_i$ 是有限型 $A$-模，且满射 $u_n$-同态
+$v_n:M\to M_n$ 的核为 $\frJ^{n+1}M$
+（因而 $M_n$ 可等同于 $M/\frJ^{n+1}M=M\otimes_A(A/\frJ^{n+1})$）。
+
+取 $M$ 的 $s$ 个元素 $z_h=(z_{hk})_{k\geq0}$，使得 $z_{h0}$（$1\leq h\leq s$）
+生成 $M_0$；我们将证明这些 $z_h$ 生成 $A$-模 $M$。
+$A$-模 $M$ 关于由 $M^{(n)}$ 组成的滤过分离且完备，其中 $M^{(n)}$ 是
+$M$ 中满足 $y_k=0$（$k<n$）的元素 $y=(y_k)_{k\geq0}$ 所成的集合。
+显然有
+\[
+ \frJ^{(n)}M\subset M^{(n)},\qquad
+ M^{(n)}/M^{(n+1)}=\frJ_n^nM_n.
+\]
+因此，只须证明 $z_h$ 模 $M^{(1)}$ 的类，
+\transnote{底本印刷第 65 页此处作 $M^{(0)}$。按本段刚给出的定义，$M^{(0)}=M$；
+相伴分次模的零次部分是 $M^{(0)}/M^{(1)}$。本译文据此将此处模数写为 $M^{(1)}$。}
+在环 $\grad(A)$ 上生成关于上述滤过的分次模 $\grad(M)$
+（[1]，18-06 页，引理）。为此，容易看出，只须再证明各 $z_{hn}$
+（$1\leq h\leq s$）生成 $A_n$-模 $M_n$。
+
+仍对 $n$ 作归纳；$n=0$ 时，命题依定义显然。关系
+$M_{n-1}=M_n/\frJ_n^nM_n$ 和归纳假设表明：若 $M'_n$ 是 $z_{hn}$
+生成的 $M_n$ 的子模，则
+\[
+ M_n=M'_n+\frJ_n^nM_n.
+\]
+由于 $\frJ_n$ 是幂零理想，这蕴含 $M_n=M'_n$。
+同样转到相伴分次模的论证表明，$\frJ^{(n)}M$ 到 $M^{(n)}$ 的典范映射为满射
+（因而为双射）；也就是说，$\frJ^{(n)}M=\frJ^nM$ 是
+$M\to M_{n-1}$ 的核（$n\geq1$）。
+\transnote{底本本段末句印作“$M\to M_n$ 的核”。按 $M^{(n)}$ 的定义，
+应为 $M\to M_{n-1}$；相应地，$M\to M_n$ 的核为 $\frJ^{n+1}M$，与命题正文一致。}
+
+\egastatement{7.2.10}{推论}
+设 $(N_i,w_{ij})$ 是满足（\hyperlink{para:0:7.2.9}{7.2.9}）条件的另一个 $A_i$-模射影系，并令
+$N=\plim N_i$。则 $A_i$-同态 $h_i:M_i\to N_i$ 的射影系 $(h_i)$
+与 $A$-模同态 $h:M\to N$ 之间存在一一对应；后者对 $\frJ$-进拓扑必然连续。
+
+显然，若 $h:M\to N$ 是 $A$-同态，则 $h(\frJ^nM)\subset\frJ^nN$，
+由此得到 $h$ 的连续性。因而，通过取商，$h$ 给出一个 $A_i$-同态
+$h_i:M_i\to N_i$ 的射影系，且 $h$ 正是其射影极限。推论得证。
+
+\egastatement{7.2.11}{注记}
+设 $A$ 是进制环，且有定义理想 $\frJ$，使得 $\frJ/\frJ^2$ 是有限型
+$(A/\frJ)$-模。显然，环 $A_i=A/\frJ^{i+1}$ 满足（\hyperlink{para:0:7.2.7}{7.2.7}）的条件；
+由于 $A$ 是各 $A_i$ 的射影极限，命题（\hyperlink{para:0:7.2.7}{7.2.7}）描述了所考虑类型的所有进制环
+（特别是所有诺特进制环）。
+
+\egastatement{7.2.12}{例}
+设 $B$ 是环，$\frJ$ 是 $B$ 的一个理想，使得 $\frJ/\frJ^2$ 是有限型
+$(B/\frJ)$-模（等价地，是有限型 $B$-模）；令
+\[
+ A=\plim_n B/\frJ^{n+1}.
+\]
+则 $A$ 是赋有 $\frJ$-预进拓扑的 $B$ 的分离完备化。
+若 $A_n=B/\frJ^{n+1}$，则各 $A_n$ 显然满足（\hyperlink{para:0:7.2.7}{7.2.7}）的条件；
+所以 $A$ 是进制环。以 $\overline{\frJ}$ 记 $\frJ$ 的典范像在 $A$ 中的闭包，
+则 $\overline{\frJ}$ 是 $A$ 的定义理想，$\overline{\frJ}{}^n$ 是
+$\frJ^n$ 的典范像的闭包，$A/\overline{\frJ}{}^n$ 可等同于 $B/\frJ^n$，
+而 $\overline{\frJ}/\overline{\frJ}{}^2$ 与 $\frJ/\frJ^2$
+作为 $(A/\overline{\frJ})$-模同构。
+
+同样，若 $N$ 满足 $N/\frJ N$ 是有限型 $B$-模，并令
+$M_i=N/\frJ^{i+1}N$，则 $M=\plim M_i$ 是有限型 $A$-模，
+同构于 $N$ 关于 $\frJ$-预进拓扑的分离完备化；
+$\overline{\frJ}{}^nM$ 可等同于 $\frJ^nN$ 的典范像的闭包，
+而 $M/\overline{\frJ}{}^nM$ 可等同于 $N/\frJ^nN$。
+
+
+% END chapters/ch0_s7_2.tex
+
+\par
+
+% BEGIN chapters/ch0_s7_3.tex
+\subsection{诺特预进制环}\hypertarget{heading:0:7.3}{}
+\src{66—68}
+
+\egapar{7.3.1}
+设 $A$ 是环，$\frJ$ 是 $A$ 的理想，$M$ 是 $A$-模。以
+\[
+ \comp A=\plim_n A/\frJ^n,\qquad
+ \comp M=\plim_n M/\frJ^nM
+\]
+分别记 $A$ 和 $M$ 关于 $\frJ$-预进拓扑的分离完备化。
+设 $M'\xrightarrow{u}M\xrightarrow{v}M''\to0$ 是 $A$-模正合列；
+由 $M/\frJ^nM=M\otimes_A(A/\frJ^n)$，对每个 $n$，序列
+\[
+ M'/\frJ^nM'\xrightarrow{u_n}M/\frJ^nM
+ \xrightarrow{v_n}M''/\frJ^nM''\longrightarrow0
+\]
+都是正合的。又由于
+$v(\frJ^nM)=\frJ^nv(M)=\frJ^nM''$，
+$\comp v=\plim v_n$ 为满射（Bourbaki，\textit{Top. gén.}，第 IX 章，
+第 2 版，60 页，推论 2）。
+另一方面，若 $z=(z_k)$ 属于 $\comp v$ 的核，则对每个整数 $k$，
+存在 $z'_k\in M'/\frJ^kM'$ 使得 $u_k(z'_k)=z_k$。
+由此可知存在 $z'=(z'_n)\in\comp{M'}$，使得 $\comp u(z')$ 的前 $k$ 个分量
+与 $z$ 的相应分量相同；换言之，$\comp{M'}$ 在 $\comp u$ 下的像在
+$\Ker\comp v$ 中稠密。
+
+若再设 $A$ 是诺特环，则由（\hyperlink{para:0:7.2.12}{7.2.12}），$\comp A$ 也是诺特环，
+因为此时 $\frJ/\frJ^2$ 是有限型 $A$-模。此外还有下述定理。
+
+\egastatement{7.3.2}{Krull 定理}
+设 $A$ 是诺特环，$\frJ$ 是 $A$ 的理想，$M$ 是有限型 $A$-模，
+$M'$ 是 $M$ 的子模。则 $M$ 的 $\frJ$-预进拓扑在 $M'$ 上诱导的拓扑，
+就是 $M'$ 的 $\frJ$-预进拓扑。
+
+这直接由下述引理得到。
+
+\egastatement{7.3.2.1}{Artin--Rees 引理}
+在（\hyperlink{para:0:7.3.2}{7.3.2}）的假设下，存在整数 $p$，使得当 $n\geq p$ 时，有
+\[
+ M'\cap\frJ^nM=\frJ^{n-p}(M'\cap\frJ^pM).
+\]
+证明见 [1]，2-04 页。
+
+\egastatement{7.3.3}{推论}
+在（\hyperlink{para:0:7.3.2}{7.3.2}）的假设下，典范映射 $M\otimes_A\comp A\to\comp M$ 是双射，
+且在有限型 $A$-模范畴中，$M\otimes_A\comp A$ 作为 $M$ 的函子是正合的；
+因而，$\frJ$-进分离完备化 $\comp A$ 是平坦 $A$-模（\hyperlink{para:0:6.1.1}{6.1.1}）。
+
+首先注意，在有限型 $A$-模范畴中，$\comp M$ 是关于 $M$ 的正合函子。
+事实上，设
+$0\to M'\xrightarrow{u}M\xrightarrow{v}M''\to0$ 是正合列。
+已知 $\comp v:\comp M\to\comp{M''}$ 为满射（\hyperlink{para:0:7.3.1}{7.3.1}）；
+另一方面，若 $i:M\to\comp M$ 是典范同态，则由 Krull 定理，
+$i(u(M'))$ 在 $\comp M$ 中的闭包可等同于 $M'$ 关于 $\frJ$-预进拓扑的
+分离完备化。因此 $\comp u$ 为单射；再由（\hyperlink{para:0:7.3.1}{7.3.1}），$\comp u$ 的像就是
+$\comp v$ 的核。
+
+典范映射 $M\otimes_A\comp A\to\comp M$ 可由映射
+\[
+ M\otimes_A\comp A\longrightarrow
+ M\otimes_A(A/\frJ^n)=M/\frJ^nM
+\]
+取射影极限而得到。当 $M$ 具有 $A^p$ 的形式时，这个映射显然是双射。
+若 $M$ 是有限型 $A$-模，则存在正合列 $A^p\to A^q\to M\to0$。
+利用有限型 $A$-模范畴中函子 $M\otimes_A\comp A$ 和 $\comp M$ 关于 $M$
+的右正合性，得到交换图
+\[
+\begin{tikzcd}[column sep=large,row sep=large]
+ A^p\otimes_A\comp A \arrow[r] \arrow[d] &
+ A^q\otimes_A\comp A \arrow[r] \arrow[d] &
+ M\otimes_A\comp A \arrow[r] \arrow[d] &0\\
+ \comp A^p \arrow[r] &\comp A^q \arrow[r] &\comp M\arrow[r]&0.
+\end{tikzcd}
+\]
+两行均正合，且前两个竖直箭头均为同构，立即得到结论。
+
+\egastatement{7.3.4}{推论}
+设 $A$ 是诺特环，$\frJ$ 是 $A$ 的理想，$M,N$ 是两个有限型 $A$-模。
+存在典范的、函子性的同构
+\[
+ \comp{M\otimes_A N}\xrightarrow{\sim}
+ \comp M\otimes_{\comp A}\comp N,
+ \qquad
+ \comp{\Hom_A(M,N)}\xrightarrow{\sim}
+ \Hom_{\comp A}(\comp M,\comp N).
+\]
+这由（\hyperlink{para:0:7.3.3}{7.3.3}）、（\hyperlink{para:0:6.2.1}{6.2.1}）和（\hyperlink{para:0:6.2.2}{6.2.2}）得到。
+
+\egastatement{7.3.5}{推论}
+设 $A$ 是诺特环，$\frJ$ 是 $A$ 的理想。下列条件等价：
+\begin{enumerate}[label=\alph*)]
+\item $\frJ$ 包含于 $A$ 的根基中；
+\item $\comp A$ 是忠实平坦 $A$-模（\hyperlink{para:0:6.4.1}{6.4.1}）；
+\item 每个有限型 $A$-模关于 $\frJ$-预进拓扑都是分离的；
+\item 每个有限型 $A$-模的每个子模关于 $\frJ$-预进拓扑都是闭的。
+\end{enumerate}
+
+由于 $\comp A$ 是平坦 $A$-模，条件 b) 与 c) 等价：b) 等价于，对于每个有限型
+$A$-模 $M$，典范映射 $M\to\comp M=M\otimes_A\comp A$ 是单射（\hyperlink{para:0:6.6.1}{6.6.1}，c)）。
+c) 显然蕴含 d)，因为若 $N$ 是有限型 $A$-模 $M$ 的子模，则 $M/N$ 关于
+$\frJ$-预进拓扑分离，故 $N$ 在 $M$ 中闭。
+
+下面证明 d) 蕴含 a)。若 $\mathfrak m$ 是 $A$ 的极大理想，则
+$\mathfrak m$ 关于 $\frJ$-预进拓扑在 $A$ 中闭，因此
+\[
+ \mathfrak m=\bigcap_{p\geq0}(\mathfrak m+\frJ^p).
+\]
+由于 $\mathfrak m+\frJ^p$ 必等于 $A$ 或 $\mathfrak m$，对充分大的 $p$，
+有 $\mathfrak m+\frJ^p=\mathfrak m$，因而 $\frJ^p\subset\mathfrak m$；
+由 $\mathfrak m$ 为素理想，得 $\frJ\subset\mathfrak m$。
+
+最后，a) 蕴含 b)。事实上，设 $P$ 是有限型 $A$-模 $M$ 中的 $\{0\}$ 关于
+$\frJ$-预进拓扑的闭包。由 Krull 定理（\hyperlink{para:0:7.3.2}{7.3.2}），$M$ 的 $\frJ$-预进拓扑在
+$P$ 上诱导的拓扑就是 $P$ 的 $\frJ$-预进拓扑，所以 $\frJ P=P$。
+$P$ 是有限型的，且 $\frJ$ 包含于 $A$ 的根基中；由 Nakayama 引理，得 $P=0$。
+
+注意，当 $A$ 是诺特局部环、$\frJ\ne A$ 是 $A$ 的任意理想时，
+（\hyperlink{para:0:7.3.5}{7.3.5}）的各个条件均成立。
+
+\egastatement{7.3.6}{推论}
+若 $A$ 是诺特 $\frJ$-进制环，则每个有限型 $A$-模关于 $\frJ$-预进拓扑
+都分离且完备。
+
+由于此时 $\comp A=A$，结论立即由（\hyperlink{para:0:7.3.3}{7.3.3}）得到。
+因此，命题（\hyperlink{para:0:7.2.9}{7.2.9}）描述了诺特进制环上的所有有限型模。
+
+\egastatement{7.3.7}{推论}
+在（\hyperlink{para:0:7.3.2}{7.3.2}）的假设下，典范映射 $M\to\comp M=M\otimes_A\comp A$ 的核，
+是被 $1+\frJ$ 中某个元素零化的所有 $x\in M$ 所成的集合。
+
+事实上，$x\in M$ 属于这个核，当且仅当子模 $Ax$ 的分离完备化为零
+（由（\hyperlink{para:0:7.3.2}{7.3.2}））；换言之，当且仅当 $x\in\frJ x$。
+
+
+% END chapters/ch0_s7_3.tex
+
+\par
+
+% BEGIN chapters/ch0_s7_4.tex
+\subsection{局部环上的拟有限模}\hypertarget{heading:0:7.4}{}
+\src{68—69}
+
+\egastatement{7.4.1}{定义}
+给定局部环 $A$，其极大理想为 $\mathfrak m$。若 $M/\mathfrak mM$ 在剩余域
+$k=A/\mathfrak m$ 上具有有限秩，则称 $A$-模 $M$ 是（在 $A$ 上）\emph{拟有限的}。
+
+若 $A$ 是诺特环，则 $M$ 关于 $\mathfrak m$-预进拓扑的分离完备化
+$\comp M$ 是有限型 $\comp A$-模。事实上，此时 $\mathfrak m/\mathfrak m^2$
+是有限型 $A$-模，故结论由（\hyperlink{para:0:7.2.12}{7.2.12}）以及关于 $M/\mathfrak mM$ 的假设得到。
+
+特别地，若还假设 $A$ 完备，且 $M$ 关于 $\mathfrak m$-预进拓扑分离
+（也就是说，$\bigcap_n\mathfrak m^nM=0$），则 $M$ 本身就是有限型 $A$-模。
+事实上，此时 $\comp M$ 是有限型 $A$-模，而 $M$ 可等同于 $\comp M$ 的一个子模，
+故 $M$ 也是有限型的（而且由（\hyperlink{para:0:7.3.6}{7.3.6}），它与其完备化相同）。
+
+\egastatement{7.4.2}{命题}
+设 $A,B$ 是两个局部环，$\mathfrak m,\mathfrak n$ 分别为其极大理想，
+并假设 $B$ 是诺特环。设 $\varphi:A\to B$ 是局部同态，$M$ 是有限型 $B$-模。
+若 $M$ 是拟有限 $A$-模，则 $M$ 上的 $\mathfrak m$-预进拓扑与
+$\mathfrak n$-预进拓扑相同，因而都是分离的。
+
+注意，依假设，$M/\mathfrak mM$ 作为 $A$-模具有有限长度，
+所以作为 $B$-模也具有有限长度。由此可知，$\mathfrak n$ 是 $B$ 中唯一包含
+$M/\mathfrak mM$ 的零化理想的素理想：事实上，由（\hyperlink{para:0:1.7.4}{1.7.4}）和（\hyperlink{para:0:1.7.2}{1.7.2}），
+立即归结到 $M/\mathfrak mM$ 为单模的情形；此时它必同构于 $B/\mathfrak n$，
+断言显然成立。\transnote{这一证明段落按非零情形叙述；若 $M=0$，命题关于两种拓扑的结论直接成立，
+但“唯一包含零化理想的素理想”这一中间说法不适用于零模。}
+另一方面，由于 $M$ 是有限型 $B$-模，包含 $M/\mathfrak mM$ 的零化理想的素理想，
+恰是包含 $\mathfrak mB+\mathfrak b$ 的素理想，其中 $\mathfrak b$ 是
+$B$-模 $M$ 的零化理想（\hyperlink{para:0:1.7.5}{1.7.5}）。
+$B$ 为诺特环，故由 [11]，127 页，推论 4，可知 $\mathfrak mB+\mathfrak b$
+是 $B$ 的定义理想；也就是说，存在 $k>0$ 使得
+\[
+ \mathfrak n^k\subset\mathfrak mB+\mathfrak b\subset\mathfrak n.
+\]
+从而，对每个 $h>0$，有
+\[
+ \mathfrak n^{kh}M\subset(\mathfrak mB+\mathfrak b)^hM
+ =\mathfrak m^hM\subset\mathfrak n^hM.
+\]
+这证明了 $M$ 上的 $\mathfrak m$-预进拓扑与 $\mathfrak n$-预进拓扑相同；
+又由（\hyperlink{para:0:7.3.5}{7.3.5}），后者是分离的。
+
+\egastatement{7.4.3}{推论}
+在（\hyperlink{para:0:7.4.2}{7.4.2}）的假设下，若 $A$ 还是诺特环，并且关于 $\mathfrak m$-预进拓扑完备，
+则 $M$ 是有限型 $A$-模。
+
+事实上，此时 $M$ 关于 $\mathfrak m$-预进拓扑分离，结论由（\hyperlink{para:0:7.4.1}{7.4.1}）中的说明得到。
+
+\egapar{7.4.4}
+（\hyperlink{para:0:7.4.2}{7.4.2}）最重要的应用情形是 $B$ 本身为拟有限 $A$-模。
+这等价于说，$B/\mathfrak mB$ 是域 $k=A/\mathfrak m$ 上的有限秩代数；
+根据上文，这个条件又可以分解为以下两个条件的合取：
+\begin{enumerate}[label=(\roman*)]
+\item $\mathfrak mB$ 是 $B$ 的定义理想；
+\item $B/\mathfrak n$ 是域 $A/\mathfrak m$ 的有限秩扩张。
+\end{enumerate}
+在这种情形下，每个有限型 $B$-模显然都是拟有限 $A$-模。
+
+\egastatement{7.4.5}{推论}
+在（\hyperlink{para:0:7.4.2}{7.4.2}）的假设下，若 $\mathfrak b$ 是 $B$-模 $M$ 的零化理想，
+则 $B/\mathfrak b$ 是拟有限 $A$-模。
+
+设 $M\ne0$（否则推论显然）。可以将 $M$ 看成诺特局部环 $B/\mathfrak b$
+上的模；它的零化理想此时为零，所以（\hyperlink{para:0:7.4.2}{7.4.2}）的证明表明
+$\mathfrak m(B/\mathfrak b)$ 是 $B/\mathfrak b$ 的定义理想。
+此外，$M/\mathfrak nM$ 是域 $A/\mathfrak m$ 上的有限秩向量空间，因为它是
+$M/\mathfrak mM$ 的商，而后者依假设在 $A/\mathfrak m$ 上具有有限秩。
+由 $M\ne0$ 及 Nakayama 引理，有 $M\ne\mathfrak nM$。
+由于 $M/\mathfrak nM$ 是 $B/\mathfrak n$ 上的非零向量空间，
+它在 $A/\mathfrak m$ 上具有有限秩，便蕴含 $B/\mathfrak n$ 在
+$A/\mathfrak m$ 上也具有有限秩。对环 $B/\mathfrak b$ 应用（\hyperlink{para:0:7.4.4}{7.4.4}），即得结论。
+
+
+% END chapters/ch0_s7_4.tex
+
+\par
+
+% BEGIN chapters/ch0_s7_5.tex
+\subsection{限制形式幂级数环}\hypertarget{heading:0:7.5}{}
+\src{69—72}
+
+\egapar{7.5.1}
+设 $A$ 是线性拓扑化、分离且完备的拓扑环；设 $(\frJ_\lambda)$ 是 $A$ 中由
+（开）理想组成的 $0$ 的一个基本邻域系，从而 $A$ 可典范地等同于
+$\plim A/\frJ_\lambda$（\hyperlink{para:0:7.2.1}{7.2.1}）。对每个 $\lambda$，令
+$B_\lambda=(A/\frJ_\lambda)[T_1,\ldots,T_r]$，其中 $T_j$ 是不定元；
+各 $B_\lambda$ 显然组成离散环的射影系。记
+\[
+ \plim_\lambda B_\lambda=A\{T_1,\ldots,T_r\}.
+\]
+我们将证明，这个拓扑环与所选的理想基本系 $(\frJ_\lambda)$ 无关。
+更确切地说，设 $A'$ 是形式幂级数环 $A[[T_1,\ldots,T_r]]$ 中由下列级数组成的子环：
+\[
+ \sum_{\alpha}c_\alpha T^\alpha,
+ \qquad \alpha=(\alpha_1,\ldots,\alpha_r)\in\mathbb N^r,
+ \qquad \lim c_\alpha=0,
+\]
+这里的极限是沿 $\mathbb N^r$ 的有限子集之补集所组成的滤子取的。
+这样的级数称为以 $T_j$ 为变量、以 $A$ 中元素为系数的\emph{限制形式幂级数}。
+
+对 $A$ 中 $0$ 的每个邻域 $V$，令 $V'$ 为所有满足每个 $c_\alpha\in V$ 的
+$x=\sum_\alpha c_\alpha T^\alpha\in A'$ 所成的集合。
+立即可验证，各 $V'$ 组成 $0$ 的一个基本邻域系，在 $A'$ 上定义一个分离的环拓扑。
+下面典范地定义一个从环 $A\{T_1,\ldots,T_r\}$ 到 $A'$ 的拓扑同构。
+
+对每个 $\alpha\in\mathbb N^r$ 及每个 $\lambda$，设 $\varphi_{\lambda,\alpha}$ 是从
+$(A/\frJ_\lambda)[T_1,\ldots,T_r]$ 到 $A/\frJ_\lambda$ 的取系数映射，
+即将多项式映为其中 $T^\alpha$ 的系数。显然，各 $\varphi_{\lambda,\alpha}$
+组成 $(A/\frJ_\lambda)$-模同态的射影系，其射影极限为连续同态
+\[
+ \varphi_\alpha:A\{T_1,\ldots,T_r\}\longrightarrow A.
+\]
+我们将证明，对于每个 $y\in A\{T_1,\ldots,T_r\}$，形式幂级数
+$\sum_\alpha\varphi_\alpha(y)T^\alpha$ 是限制的。
+事实上，设 $y_\lambda$ 是 $y$ 在 $B_\lambda$ 中的分量，$H_\lambda$ 是
+多项式 $y_\lambda$ 的非零系数所对应的 $\alpha\in\mathbb N^r$ 的有限集合。
+若 $\frJ_\mu\subset\frJ_\lambda$ 且 $\alpha\notin H_\lambda$，则
+$y_\mu$ 的 $T^\alpha$ 系数在 $A/\frJ_\lambda$ 中的像为零；
+取极限，得到 $\varphi_\alpha(y)\in\frJ_\lambda$（$\alpha\notin H_\lambda$）。
+因此，可以令
+\[
+ \varphi(y)=\sum_\alpha\varphi_\alpha(y)T^\alpha
+\]
+来定义环同态 $\varphi:A\{T_1,\ldots,T_r\}\to A'$，且 $\varphi$ 显然连续。
+
+反之，设 $\theta_\lambda:A\to A/\frJ_\lambda$ 是典范同态。
+对每个 $z=\sum_\alpha c_\alpha T^\alpha\in A'$ 和每个 $\lambda$，
+只有有限多个指标 $\alpha$ 满足 $\theta_\lambda(c_\alpha)\ne0$，因此
+\[
+ \psi_\lambda(z)=\sum_\alpha\theta_\lambda(c_\alpha)T^\alpha
+\]
+属于 $B_\lambda$。各 $\psi_\lambda$ 连续，并组成同态的射影系；其射影极限为连续同态
+$\psi:A'\to A\{T_1,\ldots,T_r\}$。最后，直接验证
+$\varphi\circ\psi$ 和 $\psi\circ\varphi$ 均为恒等自同构，即告完成。
+
+\egapar{7.5.2}
+通过（\hyperlink{para:0:7.5.1}{7.5.1}）中定义的同构，将 $A\{T_1,\ldots,T_r\}$ 与限制形式幂级数环
+$A'$ 等同。典范同构
+\[
+ \bigl((A/\frJ_\lambda)[T_1,\ldots,T_r]\bigr)[T_{r+1},\ldots,T_s]
+ \xrightarrow{\sim}(A/\frJ_\lambda)[T_1,\ldots,T_s]
+\]
+通过取射影极限，定义典范同构
+\[
+ \bigl(A\{T_1,\ldots,T_r\}\bigr)\{T_{r+1},\ldots,T_s\}
+ \xrightarrow{\sim} A\{T_1,\ldots,T_s\}.
+\]
+
+\egapar{7.5.3}
+对每个从 $A$ 到线性拓扑化、分离且完备的环 $B$ 的连续同态 $u:A\to B$，
+以及 $B$ 的任意 $r$ 个元素组成的系 $(b_1,\ldots,b_r)$，
+存在唯一连续同态
+\[
+ \overline u:A\{T_1,\ldots,T_r\}\longrightarrow B,
+\]
+使得对每个 $a\in A$ 有 $\overline u(a)=u(a)$，且对 $1\leq j\leq r$
+有 $\overline u(T_j)=b_j$。事实上，只须令
+\[
+ \overline u\left(\sum_\alpha c_\alpha T^\alpha\right)
+ =\sum_\alpha u(c_\alpha)b_1^{\alpha_1}\cdots b_r^{\alpha_r}.
+\]
+族 $(u(c_\alpha)b_1^{\alpha_1}\cdots b_r^{\alpha_r})$ 在 $B$ 中可求和，
+以及 $\overline u$ 的连续性，都可直接验证，留给读者。
+注意，这一性质（对于任意 $B$ 及任意 $b_j$）在唯一同构的意义下刻画了
+拓扑环 $A\{T_1,\ldots,T_r\}$。
+
+\egastatement{7.5.4}{命题}
+\begin{enumerate}[label=(\roman*)]
+\item 若 $A$ 是可容许环，则 $A'=A\{T_1,\ldots,T_r\}$ 也是可容许环。
+\item 设 $A$ 是进制环，$\frJ$ 是 $A$ 的定义理想，且 $\frJ/\frJ^2$ 是有限型
+$(A/\frJ)$-模。令 $\frJ'=\frJ A'$，则 $A'$ 是 $\frJ'$-进制环，
+而且 $\frJ'/\frJ'{}^2$ 是有限型 $(A'/\frJ')$-模。
+若 $A$ 还是诺特环，则 $A'$ 也是诺特环。
+\end{enumerate}
+
+(i) 若 $\frJ$ 是 $A$ 的理想，而 $\frJ'$ 是 $A'$ 中所有满足
+$c_\alpha\in\frJ$ 的 $\sum_\alpha c_\alpha T^\alpha$ 所成的理想，
+则 $(\frJ')^n\subset(\frJ^n)'$。因此，若 $\frJ$ 是 $A$ 的定义理想，
+则 $\frJ'$ 是 $A'$ 的定义理想。
+
+(ii) 令 $A_i=A/\frJ^{i+1}$；当 $i\leq j$ 时，以 $u_{ij}$ 记典范同态
+$A/\frJ^{j+1}\to A/\frJ^{i+1}$。
+令 $A'_i=A_i[T_1,\ldots,T_r]$，并以 $u'_{ij}:A'_j\to A'_i$ 记将
+$u_{ij}$ 作用于 $A'_j$ 的多项式系数所得到的同态。
+我们证明射影系 $(A'_i,u'_{ij})$ 满足（\hyperlink{para:0:7.2.7}{7.2.7}）的条件；由于 $\frJ'$ 是
+$A'\to A'_0$ 的核，这将证明 (ii) 的第一个断言。
+
+显然，各 $u'_{ij}$ 都是满射。$u'_{0i}$ 的核 $\frJ'_i$ 由
+$A_i[T_1,\ldots,T_r]$ 中所有系数属于 $\frJ/\frJ^{i+1}$ 的多项式组成；
+特别地，$\frJ'_1$ 由 $A_1[T_1,\ldots,T_r]$ 中所有系数属于
+$\frJ/\frJ^2$ 的多项式组成。由于 $\frJ/\frJ^2$ 是有限型
+$A_1=A/\frJ^2$-模，可见 $\frJ'_1/\frJ_1'{}^2$ 是有限型 $A'_1$-模
+（等价地，是有限型 $A'_0=A'_1/\frJ'_1$-模）。
+
+下面证明 $u'_{ij}$ 的核为 $\frJ_j'{}^{i+1}$。
+显然 $\frJ_j'{}^{i+1}$ 包含于该核。另一方面，取 $\frJ$ 的元素
+$a_1,\ldots,a_m$，使其模 $\frJ^2$ 的类生成 $\frJ/\frJ^2$。
+立即可验证：关于 $a_k$（$1\leq k\leq m$）的次数不超过 $j$ 的单项式，
+其模 $\frJ^{j+1}$ 的类生成 $\frJ/\frJ^{j+1}$；
+次数大于 $i$ 且不超过 $j$ 的单项式的类，因而生成
+$\frJ^{i+1}/\frJ^{j+1}$。
+以这样的元素为系数的、关于 $T_k$ 的单项式，是
+$\frJ'_j$ 中 $i+1$ 个元素的乘积，由此得到断言。
+最后，若 $A$ 是诺特环，则
+$A'/\frJ'=(A/\frJ)[T_1,\ldots,T_r]$ 是诺特环；
+所以 $A'$ 是诺特环（\hyperlink{para:0:7.2.8}{7.2.8}）。
+
+\egastatement{7.5.5}{命题}
+设 $A$ 是诺特 $\frJ$-进制环，$B$ 是可容许拓扑环，
+$\varphi:A\to B$ 是连续同态，赋予 $B$ 一个 $A$-代数结构。下列条件等价：
+\begin{enumerate}[label=\alph*)]
+\item $B$ 是诺特 $\frJ B$-进制环，而且 $B/\frJ B$ 是有限型 $(A/\frJ)$-代数。
+\item $B$ 在拓扑 $A$-代数意义下同构于 $\plim B_n$，其中当 $m\geq n$ 时，
+有 $B_n=B_m/\frJ^{n+1}B_m$，而 $B_1$ 是有限型 $A_1=A/\frJ^2$-代数。
+\item $B$ 在拓扑 $A$-代数意义下同构于某个形如 $A\{T_1,\ldots,T_r\}$ 的代数
+关于一个理想的商（由（\hyperlink{para:0:7.3.6}{7.3.6}）及（\hyperlink{para:0:7.5.4}{7.5.4}，(ii)），这个理想必然闭）。
+\end{enumerate}
+
+由于 $A$ 是诺特环，$A'=A\{T_1,\ldots,T_r\}$ 也是诺特环（\hyperlink{para:0:7.5.4}{7.5.4}），
+所以 c) 蕴含 $B$ 为诺特环。由于 $\frJ'=\frJ A'$ 是 $A'$ 中 $0$ 的开邻域，
+且各 $\frJ'{}^n$ 组成 $0$ 的一个基本邻域系，它们的像 $\frJ^nB$
+组成 $B$ 中 $0$ 的一个基本邻域系。已知 $B$ 分离且完备，所以 $B$ 是
+$\frJ B$-进制环。最后，$B/\frJ B$ 作为 $(A/\frJ)$-代数，是
+$A'/\frJ A'=(A/\frJ)[T_1,\ldots,T_r]$ 的商，因而是有限型的。
+这就证明了 c) 蕴含 a)。
+
+若 $B$ 是诺特 $\frJ B$-进制环，则 $B$ 同构于 $\plim B_n$，其中
+$B_n=B/\frJ^{n+1}B$（\hyperlink{para:0:7.2.11}{7.2.11}），而 $\frJ B/\frJ^2B$ 是有限型
+$(B/\frJ B)$-模。设 $(a_j)_{1\leq j\leq s}$ 是这个模的一个生成系，
+$(c_i)_{1\leq i\leq r}$ 是 $B/\frJ^2B$ 的一组元素，
+其模 $\frJ B/\frJ^2B$ 的类生成 $(A/\frJ)$-代数 $B/\frJ B$。
+立即可见，各 $c_i$ 生成 $(A/\frJ^2)$-代数 $B/\frJ^2B$，
+所以 a) 蕴含 b)。
+
+只须再证明 b) 蕴含 c)。由假设，$B_1$ 是诺特环；
+又因 $B_1/\frJ B_1=B_0$，有 $\frJ^2B_1=0$，故
+$\frJ_1=\frJ B_1=\frJ B/\frJ^2B$ 是有限型 $B_1$-模。
+因此，射影系 $(B_n)$ 满足（\hyperlink{para:0:7.2.7}{7.2.7}）的条件，且 $B$ 是 $\frJ B$-进制环。
+
+取 $B$ 的有限个元素 $(c_i)_{1\leq i\leq r}$，使其模 $\frJ B$ 的类生成
+$(A/\frJ)$-代数 $B/\frJ B$；并且，使这些元素以 $\frJ$ 中元素为系数的
+线性组合，其模 $\frJ^2B$ 的类生成 $B_1$-模 $\frJ B/\frJ^2B$。
+存在连续 $A$-同态 $u:A'=A\{T_1,\ldots,T_r\}\to B$，
+它在 $A$ 上限制为 $\varphi$，且对 $1\leq i\leq r$ 有 $u(T_i)=c_i$（\hyperlink{para:0:7.5.3}{7.5.3}）。
+若证明 $u$ 为满射，即得到 c)：因为由 $u(A')=B$ 得到
+$u(\frJ^nA')=\frJ^nB$，也就是说，$u$ 是拓扑环的严格态射，
+所以 $B$ 同构于 $A'$ 关于某个闭理想的商。
+\transnote{底本印刷第 72 页在这两处写作 $u(A)=B$ 和 $u(\frJ^nA)=\frJ^nB$。
+按本段同态的定义域，应为 $A'$；本译文补回这两个撇号。}
+
+由于 $B$ 关于 $\frJ B$-进拓扑完备，只须证明（[1]，18-07 页）：
+由 $u$ 关于 $A'$ 与 $B$ 上的 $\frJ$-进滤过典范诱导的同态
+$\grad(A')\to\grad(B)$ 是满射。
+依定义，由 $u$ 诱导的同态
+\[
+ A'/\frJ A'\longrightarrow B/\frJ B,
+ \qquad
+ \frJ A'/\frJ^2A'\longrightarrow\frJ B/\frJ^2B
+\]
+都是满射。对 $n$ 作归纳，立即得到
+\[
+ \frJ A'/\frJ^nA'\longrightarrow\frJ B/\frJ^nB
+\]
+也是满射，进而
+\[
+ \frJ^nA'/\frJ^{n+1}A'\longrightarrow
+ \frJ^nB/\frJ^{n+1}B
+\]
+也是满射。证明完成。
+
+
+% END chapters/ch0_s7_5.tex
+
+\par
+
+% BEGIN chapters/ch0_s7_6.tex
+\subsection{完备分式环}\hypertarget{heading:0:7.6}{}
+\src{72—75}
+
+\egapar{7.6.1}
+设 $A$ 是线性拓扑化环，$(\frJ_\lambda)$ 是 $A$ 中由理想组成的 $0$ 的一个基本邻域系，
+$S$ 是 $A$ 的乘法子集。设 $u_\lambda:A\to A_\lambda=A/\frJ_\lambda$ 是典范同态；
+当 $\frJ_\mu\subset\frJ_\lambda$ 时，设 $u_{\lambda\mu}:A_\mu\to A_\lambda$
+是典范同态。令 $S_\lambda=u_\lambda(S)$，从而
+$u_{\lambda\mu}(S_\mu)=S_\lambda$。
+各 $u_{\lambda\mu}$ 典范地给出满同态
+$S_\mu^{-1}A_\mu\to S_\lambda^{-1}A_\lambda$，这些环关于上述同态构成射影系；
+以 $A\{S^{-1}\}$ 记该系的射影极限。
+这个定义与所选的基本邻域系 $(\frJ_\lambda)$ 无关；事实上，有下述命题。
+
+\egastatement{7.6.2}{命题}
+环 $A\{S^{-1}\}$ 在拓扑意义下同构于环 $S^{-1}A$ 的分离完备化，
+这里 $S^{-1}A$ 所赋的拓扑以各 $S^{-1}\frJ_\lambda$ 为 $0$ 的一个基本邻域系。
+
+事实上，若 $v_\lambda:S^{-1}A\to S_\lambda^{-1}A_\lambda$ 是由
+$u_\lambda$ 诱导的典范同态，则 $v_\lambda$ 的核为 $S^{-1}\frJ_\lambda$，
+且 $v_\lambda$ 是满射。由（\hyperlink{para:0:7.2.1}{7.2.1}）即得命题。
+
+\egastatement{7.6.3}{推论}
+若 $S'$ 是 $S$ 在 $A$ 的分离完备化 $\comp A$ 中的典范像，
+则 $A\{S^{-1}\}$ 可典范地等同于 $\comp A\{S'{}^{-1}\}$。
+
+注意，即使 $A$ 分离且完备，$S^{-1}A$ 关于各 $S^{-1}\frJ_\lambda$ 所定义的拓扑
+也不一定分离且完备。例如，取 $S$ 为各 $f^n$（$n\geq0$）组成的集合，
+其中 $f$ 是拓扑幂零元，但不是幂零元。此时 $S^{-1}A$ 非零；
+另一方面，对每个 $\lambda$，存在 $n$ 使得 $f^n\in\frJ_\lambda$，
+从而 $1=f^n/f^n\in S^{-1}\frJ_\lambda$，故
+$S^{-1}\frJ_\lambda=S^{-1}A$。
+
+\egastatement{7.6.4}{推论}
+若在 $A$ 中有 $0\notin\overline S$，则环 $A\{S^{-1}\}$ 非零。
+
+事实上，在环 $S^{-1}A$ 中，$0$ 不属于 $\{1\}$ 的闭包；
+否则，对 $A$ 的每个开理想 $\frJ_\lambda$，都有 $1\in S^{-1}\frJ_\lambda$，
+从而对每个 $\lambda$ 都有 $\frJ_\lambda\cap S\ne\varnothing$，与假设矛盾。
+
+\egapar{7.6.5}
+称 $A\{S^{-1}\}$ 为 $A$ 的\emph{以 $S$ 中元素为分母的完备分式环}。
+沿用上述记号，显然 $S^{-1}\frJ_\lambda$ 在 $A$ 中的逆像包含
+$\frJ_\lambda$，所以典范映射 $A\to S^{-1}A$ 连续。
+将它与典范映射 $S^{-1}A\to A\{S^{-1}\}$ 复合，得到典范连续同态
+\[
+ A\longrightarrow A\{S^{-1}\},
+\]
+它是各同态 $A\to S_\lambda^{-1}A_\lambda$ 的射影极限。
+
+\egapar{7.6.6}
+由 $A\{S^{-1}\}$ 与典范映射 $A\to A\{S^{-1}\}$ 组成的对，
+由下列泛性质刻画：对于每个从 $A$ 到线性拓扑化、分离且完备的环 $B$ 的连续同态
+$u$，若 $u(S)$ 由 $B$ 中的可逆元组成，则 $u$ 唯一分解为
+\[
+ A\longrightarrow A\{S^{-1}\}\xrightarrow{u'}B,
+\]
+其中 $u'$ 连续。
+
+事实上，$u$ 唯一分解为 $A\to S^{-1}A\xrightarrow{v'}B$；
+对于 $B$ 的每个开理想 $\frK$，$u^{-1}(\frK)$ 包含某个 $\frJ_\lambda$，
+所以 $v'{}^{-1}(\frK)$ 必包含 $S^{-1}\frJ_\lambda$，从而 $v'$ 连续。
+由于 $B$ 分离且完备，$v'$ 唯一分解为
+$S^{-1}A\to A\{S^{-1}\}\xrightarrow{u'}B$，其中 $u'$ 连续；断言得证。
+
+\egapar{7.6.7}
+设 $B$ 是另一个线性拓扑化环，$T$ 是 $B$ 的乘法子集，
+$\varphi:A\to B$ 是连续同态，且 $\varphi(S)\subset T$。
+由上文，连续同态 $A\to B\to B\{T^{-1}\}$ 唯一分解为
+\[
+ A\longrightarrow A\{S^{-1}\}\xrightarrow{\varphi'}B\{T^{-1}\},
+\]
+其中 $\varphi'$ 连续。特别地，若 $B=A$ 且 $\varphi$ 是恒等映射，
+则当 $S\subset T$ 时，存在连续同态
+\[
+ \rho^{T,S}:A\{S^{-1}\}\longrightarrow A\{T^{-1}\},
+\]
+它由 $S^{-1}A\to T^{-1}A$ 通过取分离完备化而得到。
+若 $U$ 是 $A$ 的第三个乘法子集，且 $S\subset T\subset U$，则
+\[
+ \rho^{U,S}=\rho^{U,T}\circ\rho^{T,S}.
+\]
+
+\egapar{7.6.8}
+设 $S_1,S_2$ 是 $A$ 的两个乘法子集，$S'_2$ 是 $S_2$ 在
+$A\{S_1^{-1}\}$ 中的典范像。存在典范拓扑同构
+\[
+ A\{S_1^{-1}\}\{S_2'{}^{-1}\}
+ \xrightarrow{\sim}A\{S_1^{-1}S_2^{-1}\}.
+\]
+这可以从典范同构
+$(S_1S_2)^{-1}A\simeq S_2''{}^{-1}(S_1^{-1}A)$ 得到，
+其中 $S''_2$ 是 $S_2$ 在 $S_1^{-1}A$ 中的典范像；这一同构是双连续的。
+
+\egapar{7.6.9}
+设 $\mathfrak a$ 是 $A$ 的开理想。可以假设对每个 $\lambda$ 都有
+$\frJ_\lambda\subset\mathfrak a$，于是环 $S^{-1}A$ 中有
+$S^{-1}\frJ_\lambda\subset S^{-1}\mathfrak a$；
+也就是说，$S^{-1}\mathfrak a$ 是 $S^{-1}A$ 的开理想。
+以 $\mathfrak a\{S^{-1}\}$ 记它的分离完备化，等于
+\[
+ \plim_\lambda
+ \bigl(S^{-1}\mathfrak a/S^{-1}\frJ_\lambda\bigr).
+\]
+这是 $A\{S^{-1}\}$ 的一个开理想，同构于 $S^{-1}\mathfrak a$ 的典范像的闭包。
+此外，存在离散环的典范同构
+\[
+ A\{S^{-1}\}/\mathfrak a\{S^{-1}\}
+ \simeq S^{-1}A/S^{-1}\mathfrak a=S^{-1}(A/\mathfrak a).
+\]
+反之，若 $\mathfrak a'$ 是 $A\{S^{-1}\}$ 的开理想，
+则 $\mathfrak a'$ 包含某个形如 $\frJ_\lambda\{S^{-1}\}$ 的理想，
+因而是 $S^{-1}A/S^{-1}\frJ_\lambda$ 的某个理想的逆像；
+由（\hyperlink{para:0:1.2.6}{1.2.6}），该理想必来自某个 $S^{-1}\mathfrak a$，其中
+$\mathfrak a\supset\frJ_\lambda$。于是有
+$\mathfrak a'=\mathfrak a\{S^{-1}\}$。特别地，由（\hyperlink{para:0:1.2.6}{1.2.6}），得到下述命题。
+
+\egastatement{7.6.10}{命题}
+映射 $\mathfrak p\mapsto\mathfrak p\{S^{-1}\}$ 是从 $A$ 中满足
+$\mathfrak p\cap S=\varnothing$ 的开素理想所成的集合，
+到 $A\{S^{-1}\}$ 的开素理想所成的集合的保序双射。
+此外，$A\{S^{-1}\}/\mathfrak p\{S^{-1}\}$ 的分式域
+与 $A/\mathfrak p$ 的分式域典范同构。
+
+\egastatement{7.6.11}{命题}
+\begin{enumerate}[label=(\roman*)]
+\item 若 $A$ 是可容许环，则 $A'=A\{S^{-1}\}$ 也是可容许环；
+而且对 $A$ 的每个定义理想 $\frJ$，$\frJ'=\frJ\{S^{-1}\}$ 是 $A'$ 的定义理想。
+\item 设 $A$ 是进制环，$\frJ$ 是 $A$ 的定义理想，且
+$\frJ/\frJ^2$ 是有限型 $(A/\frJ)$-模。则 $A'$ 是 $\frJ'$-进制环，
+$\frJ'/\frJ'{}^2$ 是有限型 $(A'/\frJ')$-模。
+若 $A$ 还是诺特环，则 $A'$ 也是诺特环。
+\end{enumerate}
+
+(i) 若 $\frJ$ 是 $A$ 的定义理想，则 $S^{-1}\frJ$ 显然是拓扑环
+$S^{-1}A$ 的定义理想，因为 $(S^{-1}\frJ)^n=S^{-1}\frJ^n$。
+设 $A''$ 是与 $S^{-1}A$ 相伴的分离环，$\frJ''$ 是 $S^{-1}\frJ$ 在 $A''$
+中的像。$S^{-1}\frJ^n$ 的像为 $\frJ''{}^n$，所以 $\frJ''{}^n$ 在 $A''$ 中趋于 $0$。
+由于 $\frJ'$ 是 $\frJ''$ 在 $A'$ 中的闭包，$\frJ'{}^n$ 包含于
+$\frJ''{}^n$ 的闭包，因而在 $A'$ 中趋于 $0$。
+
+(ii) 令 $A_i=A/\frJ^{i+1}$；当 $i\leq j$ 时，以 $u_{ij}$ 记典范同态
+$A/\frJ^{j+1}\to A/\frJ^{i+1}$。设 $S_i$ 是 $S$ 在 $A_i$ 中的典范像，
+并令 $A'_i=S_i^{-1}A_i$；再以 $u'_{ij}:A'_j\to A'_i$ 记由
+$u_{ij}$ 典范诱导的同态。
+我们证明射影系 $(A'_i,u'_{ij})$ 满足命题（\hyperlink{para:0:7.2.7}{7.2.7}）的条件。
+显然，各 $u'_{ij}$ 都是满射；另一方面，由（\hyperlink{para:0:1.3.2}{1.3.2}），$u'_{ij}$ 的核为
+\[
+ S_j^{-1}(\frJ^{i+1}/\frJ^{j+1})=\frJ_j'{}^{i+1},
+ \qquad
+ \frJ'_j=S_j^{-1}(\frJ/\frJ^{j+1}).
+\]
+最后，$\frJ'_1/\frJ_1'{}^2=S_1^{-1}(\frJ/\frJ^2)$；
+由于 $\frJ/\frJ^2$ 是有限型 $(A/\frJ^2)$-模，
+$\frJ'_1/\frJ_1'{}^2$ 是有限型 $A'_1$-模。
+若 $A$ 是诺特环，则 $A'_0=S_0^{-1}(A/\frJ)$ 也是诺特环。
+由（\hyperlink{para:0:7.2.8}{7.2.8}），命题的证明完成。
+
+\egastatement{7.6.12}{推论}
+在（\hyperlink{para:0:7.6.11}{7.6.11}，(ii)）的假设下，有
+\[
+ \bigl(\frJ\{S^{-1}\}\bigr)^n=\frJ^n\{S^{-1}\}.
+\]
+这由（\hyperlink{para:0:7.2.7}{7.2.7}）和（\hyperlink{para:0:7.6.11}{7.6.11}）的证明得到。
+
+\egastatement{7.6.13}{命题}
+设 $A$ 是诺特进制环，$S$ 是 $A$ 的乘法子集。则 $A\{S^{-1}\}$ 是平坦 $A$-模。
+
+事实上，若 $\frJ$ 是 $A$ 的定义理想，则 $A\{S^{-1}\}$ 是诺特环
+$S^{-1}A$ 关于 $S^{-1}\frJ$-预进拓扑的分离完备化；
+因而由（\hyperlink{para:0:7.3.3}{7.3.3}），$A\{S^{-1}\}$ 是平坦 $S^{-1}A$-模。
+又由于 $S^{-1}A$ 是平坦 $A$-模（\hyperlink{para:0:6.3.1}{6.3.1}），
+由平坦性的传递性（\hyperlink{para:0:6.2.1}{6.2.1}）即得命题。
+
+\egastatement{7.6.14}{推论}
+在（\hyperlink{para:0:7.6.13}{7.6.13}）的假设下，设 $S'\subset S$ 是 $A$ 的另一个乘法子集。
+则 $A\{S^{-1}\}$ 是平坦 $A\{S'{}^{-1}\}$-模。
+
+事实上，由（\hyperlink{para:0:7.6.8}{7.6.8}），$A\{S^{-1}\}$ 可典范地等同于
+$A\{S'{}^{-1}\}\{S_0^{-1}\}$，其中 $S_0$ 是 $S$ 在
+$A\{S'{}^{-1}\}$ 中的典范像；而 $A\{S'{}^{-1}\}$ 是诺特环（\hyperlink{para:0:7.6.11}{7.6.11}）。
+
+\egapar{7.6.15}
+对线性拓扑化环 $A$ 的每个元素 $f$，以 $A_{\{f\}}$ 记完备分式环
+$A\{S_f^{-1}\}$，其中 $S_f$ 是各 $f^n$（$n\geq0$）所成的乘法集合；
+对 $A$ 的每个开理想 $\mathfrak a$，将 $\mathfrak a\{S_f^{-1}\}$ 记为
+$\mathfrak a_{\{f\}}$。若 $g$ 是 $A$ 的另一个元素，
+则存在典范连续同态 $A_{\{f\}}\to A_{\{fg\}}$（\hyperlink{para:0:7.6.7}{7.6.7}）。
+因而，当 $f$ 遍历 $A$ 的乘法子集 $S$ 时，各 $A_{\{f\}}$ 关于上述同态
+构成滤过的环归纳系；令
+\[
+ A_{\{S\}}=\ilim_{f\in S}A_{\{f\}}.
+\]
+对每个 $f\in S$，存在同态 $A_{\{f\}}\to A\{S^{-1}\}$（\hyperlink{para:0:7.6.7}{7.6.7}），
+且这些同态组成归纳系；取归纳极限，便定义典范同态
+$A_{\{S\}}\to A\{S^{-1}\}$。
+
+\egastatement{7.6.16}{命题}
+若 $A$ 是诺特环，则 $A\{S^{-1}\}$ 是平坦 $A_{\{S\}}$-模。
+\transnote{底本此处只写“诺特环”。紧接的证明引用（\hyperlink{para:0:7.6.14}{7.6.14}），而该推论承接
+（\hyperlink{para:0:7.6.13}{7.6.13}）的诺特进制环假设。本译文保留底本陈述，不将缺少的假设静默补入；
+在后文（\hyperlink{para:0:7.6.18}{7.6.18}）的应用中，$A$ 明确被假设为诺特进制环。}
+
+事实上，由（\hyperlink{para:0:7.6.14}{7.6.14}），对每个 $f\in S$，$A\{S^{-1}\}$ 都在环
+$A_{\{f\}}$ 上平坦；由（\hyperlink{para:0:6.2.3}{6.2.3}）即得结论。
+
+\egastatement{7.6.17}{命题}
+设 $\mathfrak p$ 是可容许环 $A$ 的开素理想，令 $S=A-\mathfrak p$。
+则 $A\{S^{-1}\}$ 与 $A_{\{S\}}$ 都是局部环，
+典范同态 $A_{\{S\}}\to A\{S^{-1}\}$ 是局部同态；
+而且这两个环的剩余域都与 $A/\mathfrak p$ 的分式域典范同构。
+
+事实上，取 $A$ 的定义理想 $\frJ\subset\mathfrak p$；有
+$S^{-1}\frJ\subset S^{-1}\mathfrak p=\mathfrak pA_{\mathfrak p}$，
+故 $A_{\mathfrak p}/S^{-1}\frJ$ 是局部环。
+由（\hyperlink{para:0:7.1.12}{7.1.12}）、（\hyperlink{para:0:7.6.9}{7.6.9}）和（\hyperlink{para:0:7.6.11}{7.6.11}，(i)）可知，$A\{S^{-1}\}$ 是局部环。
+令 $\mathfrak m=\ilim_{f\in S}\mathfrak p_{\{f\}}$，这是 $A_{\{S\}}$ 的一个理想；
+我们将证明 $A_{\{S\}}$ 中每个不属于 $\mathfrak m$ 的元素都可逆。
+
+这样的元素是某个 $z\in A_{\{f\}}$ 在 $A_{\{S\}}$ 中的像，
+其中 $f\in S$ 且 $z\notin\mathfrak p_{\{f\}}$。
+其在
+$A_{\{f\}}/\frJ_{\{f\}}=S_f^{-1}(A/\frJ)$ 中的典范像 $z_0$
+因而不属于 $S_f^{-1}(\mathfrak p/\frJ)$（\hyperlink{para:0:7.6.9}{7.6.9}）；
+也就是说，$z_0=\overline x/\overline f^{\,k}$，其中 $x\notin\mathfrak p$，
+而 $\overline x,\overline f$ 分别是 $x,f$ 模 $\frJ$ 的类。
+由 $x\in S$，有 $g=xf\in S$；在 $S_g^{-1}A$ 中，
+$x/f^k\in S_f^{-1}A$ 的典范像
+\[
+ y_0=\frac{x^{k+1}}{g^k}
+\]
+具有逆元 $x^{k-1}f^{2k}/g^k$。
+因而，$y_0$ 在 $S_g^{-1}A/S_g^{-1}\frJ$ 中的像可逆；
+由（\hyperlink{para:0:7.6.9}{7.6.9}）和（\hyperlink{para:0:7.1.12}{7.1.12}），$z$ 在 $A_{\{g\}}$ 中的典范像 $y$ 可逆。
+所以 $z$ 在 $A_{\{S\}}$ 中的像（等于 $y$ 的像）可逆。
+
+因此，$A_{\{S\}}$ 是局部环，其极大理想为 $\mathfrak m$。
+此外，$\mathfrak p_{\{f\}}$ 在 $A\{S^{-1}\}$ 中的像包含于该环的极大理想
+$\mathfrak p\{S^{-1}\}$；所以 $\mathfrak m$ 的像也包含于
+$\mathfrak p\{S^{-1}\}$，从而典范同态
+$A_{\{S\}}\to A\{S^{-1}\}$ 是局部同态。
+最后，$A\{S^{-1}\}/\mathfrak p\{S^{-1}\}$ 的每个元素，都是某个适当
+$f\in S$ 所对应的环 $S_f^{-1}A$ 中某个元素的像，
+故同态 $A_{\{S\}}\to A\{S^{-1}\}/\mathfrak p\{S^{-1}\}$ 为满射；
+取商后，即得到两个剩余域之间的同构。
+
+\egastatement{7.6.18}{推论}
+在（\hyperlink{para:0:7.6.17}{7.6.17}）的假设下，若 $A$ 还是诺特进制环，则局部环 $A\{S^{-1}\}$
+和 $A_{\{S\}}$ 都是诺特环，而且 $A\{S^{-1}\}$ 是忠实平坦 $A_{\{S\}}$-模。
+
+已知 $A\{S^{-1}\}$ 是诺特环（\hyperlink{para:0:7.6.11}{7.6.11}，(ii)），
+且在 $A_{\{S\}}$ 上平坦（\hyperlink{para:0:7.6.16}{7.6.16}）。
+由于同态 $A_{\{S\}}\to A\{S^{-1}\}$ 是局部同态，
+由（\hyperlink{para:0:6.6.2}{6.6.2}），$A\{S^{-1}\}$ 是忠实平坦 $A_{\{S\}}$-模；
+进而由（\hyperlink{para:0:6.5.2}{6.5.2}），$A_{\{S\}}$ 是诺特环。
+
+
+% END chapters/ch0_s7_6.tex
+
+\par
+
+% BEGIN chapters/ch0_s7_7.tex
+\subsection{完备张量积}\hypertarget{heading:0:7.7}{}
+\src{75—77}
+
+\egapar{7.7.1}
+设 $A$ 是线性拓扑化环，$M,N$ 是两个线性拓扑化 $A$-模。
+设 $\frJ,V,W$ 分别是 $A,M,N$ 中 $0$ 的开邻域，它们都是 $A$-模，
+且满足 $\frJ M\subset V$、$\frJ N\subset W$，从而 $M/V$ 与 $N/W$
+都可看成 $(A/\frJ)$-模。
+当 $\frJ,V,W$ 遍历满足上述条件的开邻域系时，模
+$(M/V)\otimes_{A/\frJ}(N/W)$ 显然构成一个定义在环射影系 $A/\frJ$
+上的模射影系。因此，取射影极限，便得到 $A$ 的分离完备化 $\comp A$ 上的一个模，
+称为 $M$ 与 $N$ 的\emph{完备张量积}，记为 $(M\otimes_A N)^\wedge$。
+
+注意，$M/V$ 与 $\comp M/\overline V$ 典范同构，其中 $\comp M$ 是 $M$ 的
+分离完备化，$\overline V$ 是 $V$ 的像在 $\comp M$ 中的闭包。
+由此可见，完备张量积 $(M\otimes_A N)^\wedge$ 可典范地等同于
+$(\comp M\otimes_{\comp A}\comp N)^\wedge$；后者也记为
+$\comp M\ctensor_{\comp A}\comp N$。
+
+\egapar{7.7.2}
+沿用上述记号，张量积 $(M/V)\otimes_A(N/W)$ 与
+$(M/V)\otimes_{A/\frJ}(N/W)$ 可典范地等同；
+因而也可等同于
+\[
+ (M\otimes_A N)\big/
+ \bigl(\Im(V\otimes_A N)+\Im(M\otimes_A W)\bigr).
+\]
+所以，$(M\otimes_A N)^\wedge$ 是 $A$-模 $M\otimes_A N$ 的分离完备化，
+其中所赋的拓扑以各子模
+\[
+ \Im(V\otimes_A N)+\Im(M\otimes_A W)
+\]
+为 $0$ 的一个基本邻域系，$V,W$ 分别遍历 $M,N$ 的开子模。
+为简便起见，称这一拓扑为 $M,N$ 上给定拓扑的\emph{张量积拓扑}。
+
+\egapar{7.7.3}
+设 $M',N'$ 是两个线性拓扑化 $A$-模，$u:M\to M'$、$v:N\to N'$ 是连续同态。
+显然，$u\otimes v$ 关于 $M\otimes N$ 和 $M'\otimes N'$ 上的张量积拓扑连续；
+取分离完备化，得到连续同态
+\[
+ (M\otimes N)^\wedge\longrightarrow(M'\otimes N')^\wedge,
+\]
+记为 $u\ctensor v$。
+因此，在以线性拓扑化 $A$-模为对象的范畴中，
+$(M\otimes_A N)^\wedge$ 是关于 $M,N$ 的双函子。
+
+\egapar{7.7.4}
+同样可以定义任意有限个线性拓扑化 $A$-模的完备张量积；
+显然，这个积具有通常的结合性与交换性。
+
+\egapar{7.7.5}
+若 $B,C$ 是两个线性拓扑化的拓扑 $A$-代数，则 $B\otimes_A C$ 上的张量积拓扑，
+以该代数中的理想
+\[
+ \Im(\frK\otimes_A C)+\Im(B\otimes_A\mathfrak L)
+\]
+为 $0$ 的一个基本邻域系，其中 $\frK$、$\mathfrak L$ 分别遍历 $B,C$ 的开理想。
+因此，$(B\otimes_A C)^\wedge$ 具有拓扑 $\comp A$-代数结构，
+它是 $(A/\frJ)$-代数射影系
+\[
+ (B/\frK)\otimes_{A/\frJ}(C/\mathfrak L)
+\]
+的射影极限，其中 $\frJ$ 是满足
+$\frJ B\subset\frK$、$\frJ C\subset\mathfrak L$ 的 $A$ 的开理想
+（这样的理想总存在）。称这一代数为代数 $B,C$ 的\emph{完备张量积}。
+
+\egapar{7.7.6}
+当 $B\otimes_A C$ 赋以张量积拓扑时，$A$-代数同态
+$b\mapsto b\otimes1$、$c\mapsto1\otimes c$，分别从 $B,C$ 到 $B\otimes_A C$，
+都是连续的。将它们与 $B\otimes_A C$ 到其分离完备化的典范同态复合，
+便得到典范同态
+\[
+ \rho:B\longrightarrow(B\otimes_A C)^\wedge,
+ \qquad
+ \sigma:C\longrightarrow(B\otimes_A C)^\wedge.
+\]
+代数 $(B\otimes_A C)^\wedge$ 及同态 $\rho,\sigma$ 还具有下列泛性质：
+对于每个线性拓扑化、分离且完备的 $A$-代数 $D$，以及任意一对连续
+$A$-同态 $u:B\to D$、$v:C\to D$，存在唯一连续 $A$-同态
+\[
+ w:(B\otimes_A C)^\wedge\longrightarrow D,
+\]
+使得 $u=w\circ\rho$、$v=w\circ\sigma$。
+
+事实上，已经存在唯一 $A$-同态 $w_0:B\otimes_A C\to D$，
+使得 $u(b)=w_0(b\otimes1)$、$v(c)=w_0(1\otimes c)$。
+只须证明 $w_0$ 连续，因为此后取分离完备化便得到连续同态 $w$。
+设 $\mathfrak M$ 是 $D$ 的开理想；由假设，存在开理想
+$\frK\subset B$、$\mathfrak L\subset C$，满足
+$u(\frK)\subset\mathfrak M$、$v(\mathfrak L)\subset\mathfrak M$。
+于是 $\Im(\frK\otimes C)+\Im(B\otimes\mathfrak L)$ 在 $w_0$ 下的像
+仍包含于 $\mathfrak M$，断言得证。
+
+\egastatement{7.7.7}{命题}
+若 $B,C$ 是两个预可容许的 $A$-代数，则 $(B\otimes_A C)^\wedge$ 是可容许的。
+若 $\frK$、$\mathfrak L$ 分别是 $B,C$ 的定义理想，则
+\[
+ \mathfrak H=\Im(\frK\otimes C)+\Im(B\otimes\mathfrak L)
+\]
+的典范像在 $(B\otimes_A C)^\wedge$ 中的闭包是一个定义理想。
+
+只须证明 $\mathfrak H^n$ 关于张量积拓扑趋于 $0$；
+这直接由下列包含关系得到：
+\[
+ \mathfrak H^{2n}\subset
+ \Im(\frK^n\otimes C)+\Im(B\otimes\mathfrak L^n).
+\]
+
+\egastatement{7.7.8}{命题}
+设 $A$ 是预进制环，$\frJ$ 是 $A$ 的定义理想，$M$ 是赋有 $\frJ$-预进拓扑的
+有限型 $A$-模。对于每个诺特进制的拓扑 $A$-代数 $B$，
+$B\otimes_A M$ 可等同于完备张量积 $(B\otimes_A M)^\wedge$。
+
+若 $\frK$ 是 $B$ 的定义理想，则由假设，存在整数 $m$ 使得
+$\frJ^mB\subset\frK$，所以
+\begin{align*}
+ \Im(B\otimes_A\frJ^{nm}M)
+ &=\Im(\frJ^{nm}B\otimes_A M)\\
+ &\subset\Im(\frK^nB\otimes_A M)
+ =\frK^n(B\otimes_A M).
+\end{align*}
+由此可知，$B\otimes_A M$ 上由 $B$ 和 $M$ 的拓扑构成的张量积拓扑，
+就是 $\frK$-预进拓扑。
+由于 $B\otimes_A M$ 是有限型 $B$-模，命题立即由（\hyperlink{para:0:7.3.6}{7.3.6}）得到。
+
+
+% END chapters/ch0_s7_7.tex
+
+\par
+
+% BEGIN chapters/ch0_s7_8.tex
+\subsection{同态模上的拓扑}\hypertarget{heading:0:7.8}{}
+\src{77—78}
+
+\egapar{7.8.1}
+设 $A$ 是诺特 $\frJ$-进制环，$M,N$ 是两个赋有 $\frJ$-预进拓扑的有限型
+$A$-模。已知它们分离且完备（\hyperlink{para:0:7.3.6}{7.3.6}）；此外，每个 $A$-同态 $M\to N$
+都自动连续，且 $A$-模 $\Hom_A(M,N)$ 是有限型的。
+对每个整数 $i\geq0$，令
+\[
+ A_i=A/\frJ^{i+1},\qquad
+ M_i=M/\frJ^{i+1}M,\qquad
+ N_i=N/\frJ^{i+1}N.
+\]
+当 $i\leq j$ 时，每个同态 $u_j:M_j\to N_j$ 都将 $\frJ^{i+1}M_j$
+映入 $\frJ^{i+1}N_j$，所以通过取商，得到同态 $u_i:M_i\to N_i$。
+由此定义典范同态
+\[
+ \Hom_{A_j}(M_j,N_j)\longrightarrow\Hom_{A_i}(M_i,N_i).
+\]
+各 $\Hom_{A_i}(M_i,N_i)$ 关于这些同态组成射影系；
+由（\hyperlink{para:0:7.2.10}{7.2.10}），有典范同构
+\[
+ \varphi:\Hom_A(M,N)\longrightarrow
+ \plim_i\Hom_{A_i}(M_i,N_i).
+\]
+此外，还有下述命题。
+
+\egastatement{7.8.2}{命题}
+若 $M,N$ 是诺特 $\frJ$-进制环 $A$ 上的有限型模，则子模
+$\Hom_A(M,\frJ^{i+1}N)$ 组成 $\Hom_A(M,N)$ 中关于 $\frJ$-进拓扑的
+$0$ 的一个基本邻域系；而且典范同态
+\[
+ \varphi:\Hom_A(M,N)\longrightarrow
+ \plim_i\Hom_{A_i}(M_i,N_i)
+\]
+是拓扑同构。
+
+事实上，可以将 $M$ 看成有限型自由 $A$-模 $L$ 的商，
+从而将 $\Hom_A(M,N)$ 等同于 $\Hom_A(L,N)$ 的子模。
+在这个等同下，$\Hom_A(M,\frJ^{i+1}N)$ 是
+$\Hom_A(M,N)$ 与 $\Hom_A(L,\frJ^{i+1}N)$ 的交。
+由（\hyperlink{para:0:7.3.2}{7.3.2}），$\Hom_A(L,N)$ 的 $\frJ$-进拓扑在
+$\Hom_A(M,N)$ 上诱导的拓扑就是 $\frJ$-进拓扑。
+因而，第一个断言归结到 $M=L=A^m$ 的情形；此时
+\[
+ \Hom_A(L,N)=N^m,\qquad
+ \Hom_A(L,\frJ^{i+1}N)=(\frJ^{i+1}N)^m=\frJ^{i+1}N^m,
+\]
+结论显然。
+
+\begin{sloppypar}
+为证明第二个断言，注意当 $j\leq i$ 时，$\Hom_A(M,\frJ^{i+1}N)$ 在
+$\Hom_{A_j}(M_j,N_j)$ 中的像为零，故 $\varphi$ 连续。
+反之，$\Hom_{A_i}(M_i,N_i)$ 中的 $0$ 在 $\Hom_A(M,N)$ 中的逆像为
+$\Hom_A(M,\frJ^{i+1}N)$，所以 $\varphi$ 双连续。
+\end{sloppypar}
+
+
+若只假设 $A$ 是诺特 $\frJ$-预进制环，$M,N$ 是两个关于
+$\frJ$-预进拓扑分离的有限型 $A$-模，则上述证明表明，
+（\hyperlink{para:0:7.8.2}{7.8.2}）的第一个断言仍成立，而且 $\varphi$ 是
+$\Hom_A(M,N)$ 到 $\plim_i\Hom_{A_i}(M_i,N_i)$ 的一个子模的拓扑同构。
+
+\egastatement{7.8.3}{命题}
+在（\hyperlink{para:0:7.8.2}{7.8.2}）的假设下，从 $M$ 到 $N$ 的单射同态
+（分别地，满射同态、双射同态）所成的集合，是 $\Hom_A(M,N)$ 的开子集。
+
+事实上，由（\hyperlink{para:0:7.3.5}{7.3.5}）和（\hyperlink{para:0:7.1.14}{7.1.14}），$u$ 为满射，当且仅当相应同态
+$u_0:M/\frJ M\to N/\frJ N$ 为满射。因此，从 $M$ 到 $N$ 的满射同态所成的集合，
+是某个离散空间的子集在连续映射
+$\Hom_A(M,N)\to\Hom_{A_0}(M_0,N_0)$ 下的逆像。
+
+现证明单射同态所成的集合是开的。设 $v$ 是这样的同态，令 $M'=v(M)$。
+由 Artin--Rees 引理（\hyperlink{para:0:7.3.2.1}{7.3.2.1}），存在整数 $k\geq0$，使得对每个 $m>0$，有
+\[
+ M'\cap\frJ^{m+k}N\subset\frJ^mM'.
+\]
+我们将证明，对于 $w\in\frJ^{k+1}\Hom_A(M,N)$，$u=v+w$ 为单射；
+这便完成证明。
+
+设 $x\in M$ 满足 $u(x)=0$。对每个 $i\geq0$，我们证明
+$x\in\frJ^iM$ 蕴含 $x\in\frJ^{i+1}M$；由此得到
+$x\in\bigcap_{i\geq0}\frJ^iM=(0)$。
+事实上，此时 $w(x)\in\frJ^{i+k+1}N$；另一方面，$w(x)=-v(x)\in M'$，所以
+\[
+ v(x)\in M'\cap\frJ^{i+k+1}N\subset\frJ^{i+1}M'.
+\]
+由于 $v$ 是 $M$ 到 $M'$ 的同构，得 $x\in\frJ^{i+1}M$。证毕。
+
+\begin{flushright}
+（待续。）
+\end{flushright}
+
+
+% END chapters/ch0_s7_8.tex
+
+\par
+
+
+

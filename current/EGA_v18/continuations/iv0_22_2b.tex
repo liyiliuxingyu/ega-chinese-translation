@@ -1,0 +1,124 @@
+% 底本：EGAIV.1.pdf，PDF第188--189页，原分册印刷第189--190页。
+\egas{22.2.7}{注记}
+（i）设 $\Lambda$ 为诺特局部环，剩余域为 $k$。由（19.7.1）和（19.7.2），确定那些底层环为诺特完备局部环、并且\emph{对预进制拓扑形式光滑}的 $\Lambda$-代数 $A$，等价于将 $\Lambda$ 换成 $k$ 后的同类问题。因此，该问题原则上已由（22.2.5）解决：它归结为所求 $k$-代数的剩余域作为 $k$ 的扩张的结构。\cmt{M13-A02}{原文只写“形式光滑”。作者《勘误与增补（清单三）》B部第15项，明确要求在本条加入“对预进制拓扑”。正文已直接采用修订表述。此处是同构类层面的归结，并不声称所选同构唯一。}
+
+（ii）$\Upsilon_{K/k}$ 在 $K$ 上维数有限，\emph{并不蕴含} $K/k$ 具有“有限纯不可分重数”（参见19.6.6）。例如，设 $k_0$ 为特征 $p>0$ 的完美域，$k=k_0(T)$ 为一元有理函数域，$K=k^{p^{-\infty}}$ 为 $k$ 的最小完美扩张。由（21.4.4），
+\[
+ \Omega^1_K=\Omega^1_{K/k}=0.
+\]
+依定义（20.6.1.1），有 $\Upsilon_{K/k}=\Omega^1_k\otimes_k K$。因 $k^p=k_0(T^p)$，$T$ 是 $k/k^p$ 的一个 $p$-基，所以 $\Omega^1_k$ 在 $k$ 上为一维（21.4.5）；从而 $\Upsilon_{K/k}$ 在 $K$ 上也为一维。但对每个 $n$，局部环 $K\otimes_k k^{p^{-n}}$ 的剩余域都同构于 $K$，后者在 $k^{p^{-n}}$ 上不可分。\cmt{M13-G06}{这是原作者的反例，不计作译者新反例。具体地，$k^{p^{-n}}=k_0(T^{1/p^n})$，而 $T^{1/p^{n+1}}\in K$ 在该域上仍给出非平凡纯不可分扩张；因此任何有限次此类基域扩张都不能使剩余域扩张可分。底本中的负上标已按页面核对。}
+
+定理（22.2.2）可推广如下。
+
+\egas{22.2.8}{命题}
+在（22.2.1）的条件下，设 $k$ 的特征为 $p>0$；令 $(k_\alpha)$ 为 $k$ 的一族滤过递减子域，满足
+\[
+ \bigcap_\alpha k_\alpha(k^p)=k^p.
+\]
+在（22.2.2）中保留条件（i）时，条件（ii）可由下列任一条件替代：
+
+\noindent a) 存在 $\alpha_0$，使对每个 $\alpha\ge\alpha_0$，典范同态
+\[
+ \Omega^1_{k/k_\alpha}\otimes_k K
+ \longrightarrow\Omega^1_{A/k_\alpha}\otimes_A K
+\]
+均为单射。
+
+\noindent b) 存在 $\alpha_0$，使对每个 $\alpha\ge\alpha_0$，$A$ 对 $\mathfrak m$-预进制拓扑，相对于 $k_\alpha$ 是形式光滑的 $k$-代数。
+
+\noindent c) 对每个 $\alpha$ 和每个整数 $n\ge0$，典范同态
+\[
+ \Omega^1_{k/k_\alpha}\otimes_k(A/\mathfrak m^{n+1})
+ \longrightarrow
+ \Omega^1_{A/k_\alpha}\otimes_A(A/\mathfrak m^{n+1})
+\]
+均可左逆。
+
+\eproof
+若 $A$ 是形式光滑的 $k$-代数，它相对于 $k$ 的任意子域也形式光滑。由（20.7.2）和（19.1.7）得到c)。再由（20.7.2），c)蕴含b)；b)蕴含a)。
+
+由（22.2.3），余下只须证明a)蕴含典范同态
+\[
+ u:\Omega^1_k\otimes_k K\longrightarrow\Omega^1_A\otimes_A K
+\]
+单射。对每个 $\alpha$，有交换图
+\[
+\begin{tikzcd}[column sep=large,row sep=large]
+ \Omega^1_k\otimes_k K\arrow[r,"u"]\arrow[d,"v_\alpha"']&
+ \Omega^1_A\otimes_A K\arrow[d]\\
+ \Omega^1_{k/k_\alpha}\otimes_k K\arrow[r,"u_\alpha"']&
+ \Omega^1_{A/k_\alpha}\otimes_A K.
+\end{tikzcd}
+\]
+对 $\alpha\ge\alpha_0$，$u_\alpha$ 单射，故 $\Ker u\subseteq\Ker v_\alpha$。由（21.8.3）及其在扩张标量后的单射性论证，
+\[
+ \bigcap_\alpha\Ker v_\alpha=0
+\]
+成立，因为 $\bigcap_\alpha k_\alpha(k^p)=k^p$。删去一个起始段不改变该交：对任意 $\alpha$，取同时大于 $\alpha$ 和 $\alpha_0$ 的指标即可。因此 $\Ker u=0$。
+\cmt{M13-N05}{与（22.2.3）一样，原文是在上一定理中替换条件（ii）；证明从“$A$ 形式光滑”开始时已经使用条件（i）。正文显式保留（i）。这里并未宣称张量积一般与任意逆极限交换；所用的是（21.8.3）证明中先限制到有限维子空间，再用逆极限左正合性的论证。}
+\finishproof
+
+\egas{22.2.9}{命题}
+在（22.2.1）的假设下，下列条件等价：
+
+\noindent a) $A/\mathfrak m^2$ 是 $K$ 以 $\mathfrak m/\mathfrak m^2$ 为核的 $k$-平凡 $k$-扩张。
+
+\noindent b) $\chi_{A/k}=0$。
+
+\noindent c) 典范同态（20.5.11.2）
+\[
+ \delta_{K/A/k}:\mathfrak m/\mathfrak m^2
+ \longrightarrow\Omega^1_{A/k}\otimes_A K
+\]
+单射；也就是说，下列序列正合：
+\begin{equation}
+ 0\longrightarrow\mathfrak m/\mathfrak m^2
+ \longrightarrow\Omega^1_{A/k}\otimes_A K
+ \longrightarrow\Omega^1_{K/k}\longrightarrow0.
+ \tag{22.2.9.1}
+\end{equation}
+
+\eproof
+b)与c)的等价性来自（20.6.22.1）；c)与a)的等价性来自（20.5.12），因为（22.2.9.1）若正合，就因其各项均为向量空间而分裂。
+\finishproof
+
+若 $K/k$ 可分，则由 $\chi_{A/k}$ 的定义（22.2.1）及（20.6.3），上述等价条件成立。
+
+\egas{22.2.10}{推论}
+在（22.2.1）的假设下，取 $k$ 的一个子域 $k_0$。下列条件等价：
+
+\noindent a) $A/\mathfrak m^2$ 是 $K$ 以 $\mathfrak m/\mathfrak m^2$ 为核的 $k_0$-平凡 $k$-扩张。
+
+\noindent b) 复合同态
+\[
+ \Upsilon_{K/k_0}\longrightarrow\Upsilon_{K/k}
+ \xrightarrow{\chi_{A/k}}\mathfrak m/\mathfrak m^2
+\]
+为零。
+
+\noindent c) $\chi_{A/k}$ 可分解为
+\[
+ \Upsilon_{K/k}\longrightarrow\Upsilon_{K/k/k_0}
+ \xrightarrow{\chi'}\mathfrak m/\mathfrak m^2.
+\]
+若这些条件成立，则 $\chi'$ 唯一，并且就是 $k_0$-平凡 $k$-扩张 $A/\mathfrak m^2$ 的特征同态。
+
+\eproof
+b)中的复合就是 $\chi_{A/k_0}$，所以a)与b)的等价性由（22.2.9）得到。又由（20.6.18.1）的正合列
+\[
+ \Upsilon_{K/k_0}\longrightarrow\Upsilon_{K/k}
+ \longrightarrow\Upsilon_{K/k/k_0}\longrightarrow0,
+\]
+b)与c)等价。由于 $\Upsilon_{K/k}\to\Upsilon_{K/k/k_0}$ 满射，$\chi'$ 唯一；它与该 $k_0$-平凡 $k$-扩张的特征同态相同，则由（20.6.22.2）的自然性得到。\cmt{M13-T01}{原证明末句写成“$k_0$-扩张 $A/\mathfrak m^2$ 的特征同态”。在这里，定义域 $\Upsilon_{K/k/k_0}$ 对应的对象是“$k$-扩张，相对于 $k_0$ 平凡”；若只取 $k_0$-扩张，其绝对特征同态在本假设下反而为零。正文按该段陈述与定义域明确了结构层次。}
+\finishproof
+
+\egas{22.2.11}{推论}
+在（22.2.1）的假设下，令 $p$ 为 $k$ 的特征指数；设 $(k_\alpha)$ 为一族滤过递减子域，满足 $\bigcap_\alpha k_\alpha(k^p)=k^p$。若 $\Upsilon_{K/k}$ 在 $K$ 上维数有限，则存在指标 $\alpha$，使 $A/\mathfrak m^2$ 作为 $K$ 以 $\mathfrak m/\mathfrak m^2$ 为核的 $k_\alpha$-扩张是 $k_\alpha$-平凡的。
+
+\eproof
+由（21.8.3），存在指标 $\alpha$，使典范同态
+\[
+ \Upsilon_{K/k}\longrightarrow\Upsilon_{K/k/k_\alpha}
+\]
+双射。所以在（22.2.10）中用 $k_\alpha$ 代替 $k_0$ 时，其条件b)成立，进而a)成立。\cmt{M13-N06}{在特征零情形，特征指数 $p=1$；此时 $K$ 对任一 $k_\alpha$ 可分，平方零扩张的分裂也可直接由（19.6.1）得到。这里“$k_\alpha$-平凡”不等于“$k$-平凡”，不能从结论删除结构域下标。}
+\finishproof

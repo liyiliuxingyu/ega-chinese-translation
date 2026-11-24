@@ -1,0 +1,801 @@
+This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2025/dev/Debian) (preloaded format=xelatex)
+ restricted \write18 enabled.
+entering extended mode
+(./report.tex
+LaTeX2e <2024-11-01> patch level 2
+L3 programming layer <2025-01-18>
+(./preamble.tex
+(/workspace/scratch/a886fd56dd2f/github_20261124/ega-chinese-translation/curren
+t/EGA_v18/vendor/texmf/tex/latex/ctex/ctexbook.cls
+(/workspace/scratch/a886fd56dd2f/github_20261124/ega-chinese-translation/curren
+t/EGA_v18/vendor/texmf/tex/latex/ctex/config/ctexbackend.cfg)
+(/usr/share/texlive/texmf-dist/tex/latex/l3kernel/expl3.sty
+(/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-xetex.def))
+Document Class: ctexbook 2022/07/14 v2.5.10 Chinese adapter for class book (CTE
+X)
+
+(/workspace/scratch/a886fd56dd2f/github_20261124/ega-chinese-translation/curren
+t/EGA_v18/vendor/texmf/tex/latex/ctex/ctexhook.sty)
+(/workspace/scratch/a886fd56dd2f/github_20261124/ega-chinese-translation/curren
+t/EGA_v18/vendor/texmf/tex/latex/ctex/ctexpatch.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/base/fix-cm.sty
+(/usr/share/texlive/texmf-dist/tex/latex/base/ts1enc.def))
+(/workspace/scratch/a886fd56dd2f/github_20261124/ega-chinese-translation/curren
+t/EGA_v18/vendor/texmf/tex/latex/ctex/config/ctexopts.cfg)
+(/usr/share/texlive/texmf-dist/tex/latex/base/book.cls
+Document Class: book 2024/06/29 v1.4n Standard LaTeX document class
+(/usr/share/texlive/texmf-dist/tex/latex/base/bk10.clo))
+(/workspace/scratch/a886fd56dd2f/github_20261124/ega-chinese-translation/curren
+t/EGA_v18/vendor/texmf/tex/latex/ctex/engine/ctex-engine-xetex.def
+(/workspace/scratch/a886fd56dd2f/github_20261124/ega-chinese-translation/curren
+t/EGA_v18/vendor/texmf/tex/xelatex/xecjk/xeCJK.sty
+(/usr/share/texlive/texmf-dist/tex/latex/l3packages/xtemplate/xtemplate.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/fontspec/fontspec.sty
+(/usr/share/texlive/texmf-dist/tex/latex/l3packages/xparse/xparse.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/fontspec/fontspec-xetex.sty
+(/usr/share/texlive/texmf-dist/tex/latex/base/fontenc.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/fontspec/fontspec.cfg)))
+(/workspace/scratch/a886fd56dd2f/github_20261124/ega-chinese-translation/curren
+t/EGA_v18/vendor/texmf/tex/xelatex/xecjk/xeCJK.cfg)))
+(/workspace/scratch/a886fd56dd2f/github_20261124/ega-chinese-translation/curren
+t/EGA_v18/vendor/texmf/tex/latex/zhnumber/zhnumber.sty
+(/workspace/scratch/a886fd56dd2f/github_20261124/ega-chinese-translation/curren
+t/EGA_v18/vendor/texmf/tex/latex/zhnumber/zhnumber-utf8.cfg))
+(/workspace/scratch/a886fd56dd2f/github_20261124/ega-chinese-translation/curren
+t/EGA_v18/vendor/texmf/tex/latex/ctex/scheme/ctex-scheme-chinese-book.def
+(/workspace/scratch/a886fd56dd2f/github_20261124/ega-chinese-translation/curren
+t/EGA_v18/vendor/texmf/tex/latex/ctex/config/ctex-name-utf8.cfg))
+(/workspace/scratch/a886fd56dd2f/github_20261124/ega-chinese-translation/curren
+t/EGA_v18/vendor/texmf/tex/latex/ctex/ctex-c5size.clo)
+(/workspace/scratch/a886fd56dd2f/github_20261124/ega-chinese-translation/curren
+t/EGA_v18/vendor/texmf/tex/latex/ctex/fontset/ctex-fontset-fandol.def))
+(/workspace/scratch/a886fd56dd2f/github_20261124/ega-chinese-translation/curren
+t/EGA_v18/vendor/texmf/tex/latex/ctex/config/ctex.cfg)
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
+For additional information on amsmath, use the `?' option.
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amstext.sty
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amssymb.sty
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amsfonts.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/amscls/amsthm.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/mathtools/mathtools.sty
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/tools/calc.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/mathtools/mhsetup.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/jknapltx/mathrsfs.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/tikz-cd/tikz-cd.sty
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfutil-latex.def)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfrcs.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/pgf.revision.tex)))
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/basiclayer/pgfcore.sty
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/graphics.cfg)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-def/xetex.def)))
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/systemlayer/pgfsys.sty
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsys.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfkeyslibraryfiltered
+.code.tex)) (/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgf.cfg)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-xetex.def
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-dvipdfmx.def
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-common-pdf.de
+f))))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsyssoftpath.code.
+tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsysprotocol.code.
+tex)) (/usr/share/texlive/texmf-dist/tex/latex/xcolor/xcolor.sty
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/color.cfg)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/mathcolor.ltx))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcore.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathutil.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathparser.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.basic.code
+.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.trigonomet
+ric.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.random.cod
+e.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.comparison
+.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.base.code.
+tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.round.code
+.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.misc.code.
+tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.integerari
+thmetics.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathcalc.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfloat.code.tex))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfint.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepoints.code.te
+x)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathconstruct.
+code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathusage.code
+.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorescopes.code.te
+x)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoregraphicstate.c
+ode.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransformation
+s.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorequick.code.tex
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreobjects.code.t
+ex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathprocessing
+.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorearrows.code.te
+x)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreshade.code.tex
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreimage.code.tex
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreexternal.code.
+tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorelayers.code.te
+x)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransparency.c
+ode.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepatterns.code.
+tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorerdf.code.tex))
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/modules/pgfmoduleshapes.code.tex
+) (/usr/share/texlive/texmf-dist/tex/generic/pgf/modules/pgfmoduleplot.code.tex
+)
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-0-65
+.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-1-18
+.sty)) (/usr/share/texlive/texmf-dist/tex/latex/pgf/utilities/pgffor.sty
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/utilities/pgfkeys.sty
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex))
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/math/pgfmath.sty
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgffor.code.tex))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/tikz.code.tex
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/pgflibraryplothandlers
+.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/modules/pgfmodulematrix.code.tex
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
+zlibrarytopaths.code.tex)))
+(/usr/share/texlive/texmf-dist/tex/generic/tikz-cd/tikzlibrarycd.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
+zlibrarymatrix.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
+zlibraryquotes.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/pgflibraryarrows.meta.
+code.tex))) (/usr/share/texlive/texmf-dist/tex/latex/enumitem/enumitem.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/tools/longtable.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/booktabs/booktabs.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/tools/array.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/needspace/needspace.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/footmisc/footmisc.sty
+(/usr/share/texlive/texmf-dist/tex/latex/bigfoot/perpage.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/adjustbox/adjustbox.sty
+(/usr/share/texlive/texmf-dist/tex/latex/xkeyval/xkeyval.sty
+(/usr/share/texlive/texmf-dist/tex/generic/xkeyval/xkeyval.tex
+(/usr/share/texlive/texmf-dist/tex/generic/xkeyval/xkvutils.tex)))
+(/usr/share/texlive/texmf-dist/tex/latex/adjustbox/adjcalc.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/adjustbox/trimclip.sty
+(/usr/share/texlive/texmf-dist/tex/latex/collectbox/collectbox.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/adjustbox/tc-xetex.def))
+(/usr/share/texlive/texmf-dist/tex/latex/ifoddpage/ifoddpage.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/varwidth/varwidth.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/hyperref.sty
+(/usr/share/texlive/texmf-dist/tex/generic/iftex/iftex.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/kvsetkeys/kvsetkeys.sty)
+(/usr/share/texlive/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty)
+(/usr/share/texlive/texmf-dist/tex/generic/pdfescape/pdfescape.sty
+(/usr/share/texlive/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty)
+(/usr/share/texlive/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty
+(/usr/share/texlive/texmf-dist/tex/generic/infwarerr/infwarerr.sty)))
+(/usr/share/texlive/texmf-dist/tex/latex/hycolor/hycolor.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
+(/usr/share/texlive/texmf-dist/tex/latex/refcount/refcount.sty)
+(/usr/share/texlive/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
+(/usr/share/texlive/texmf-dist/tex/latex/kvoptions/kvoptions.sty)))
+(/usr/share/texlive/texmf-dist/tex/latex/etoolbox/etoolbox.sty)
+(/usr/share/texlive/texmf-dist/tex/generic/stringenc/stringenc.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/pd1enc.def)
+(/usr/share/texlive/texmf-dist/tex/generic/intcalc/intcalc.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/puenc.def)
+(/usr/share/texlive/texmf-dist/tex/latex/url/url.sty)
+(/usr/share/texlive/texmf-dist/tex/generic/bitset/bitset.sty
+(/usr/share/texlive/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/base/atbegshi-ltx.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/hxetex.def
+(/usr/share/texlive/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
+(/usr/share/texlive/texmf-dist/tex/latex/base/atveryend-ltx.sty)
+(/usr/share/texlive/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty)))
+(/usr/share/texlive/texmf-dist/tex/latex/bookmark/bookmark.sty
+(/usr/share/texlive/texmf-dist/tex/latex/bookmark/bkm-dvipdfm.def)))
+No file report.aux.
+
+Package hyperref Warning: Rerun to get /PageLabels entry.
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd)
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd)
+(/usr/share/texlive/texmf-dist/tex/latex/jknapltx/ursfs.fd)
+[1]
+[2]
+[3]
+[4]
+No file report.toc.
+
+[5]
+[6] (./reports/v18_integration_audit.tex
+[1]
+
+LaTeX Font Warning: Font shape `U/rsfs/m/n' in size <10.53937> not available
+(Font)              size <10.95> substituted on input line 20.
+
+
+[2]
+[3]) (./reports/v18_late_notes.tex
+[4]
+[5]
+[6]
+[7]
+[8]
+[9]
+[10]
+[11]
+[12]
+[13]
+[14]
+[15]
+[16] (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/ueuf.fd)
+[17]
+[18]
+
+LaTeX Font Warning: Font shape `U/rsfs/m/n' in size <7.52812> not available
+(Font)              size <8> substituted on input line 443.
+
+
+[19]
+[20]) (./reports/v18_early_notes.tex
+[21]
+[22]
+[23]
+[24]
+[25]
+[26]
+[27]
+[28]
+[29]
+[30]
+[31]
+[32]
+[33]
+[34]
+[35]
+[36]
+[37]) (./reports/v18_middle_notes.tex
+[38]
+[39]
+[40]
+[41]
+[42]
+[43]
+[44]
+[45]
+[46]
+Underfull \vbox (badness 1394) has occurred while \output is active
+[47]
+[48]
+[49]
+[50]
+Underfull \vbox (badness 2894) has occurred while \output is active
+[51]
+[52]
+[53]
+[54]
+[55]
+[56]
+[57]
+[58]
+[59]
+[60]
+[61]
+[62]
+[63])
+[64]
+[65]
+[66] (./reports/supplement_III_audit.tex
+[67]
+[68]
+[69]
+[70]) (./reports/seventeenth_integration.tex
+[71]
+[72]
+[73]) (./reports/dot_early_audit.tex
+[74]
+Underfull \vbox (badness 6316) has occurred while \output is active
+[75]
+[76]
+[77]
+[78]
+[79]) (./reports/dot_middle_audit.tex
+[80]
+[81]
+[82] [83]
+[84]
+[85]
+[86]) (./reports/dot_late_audit.tex
+[87]
+[88]
+[89]
+[90]
+[91]) (./reports/short_collation_audit.tex
+[92]
+[93]
+[94])
+[95]
+[96]
+[97]
+[98] (./reports/sixteenth_audit.tex
+[99]
+[100] [101]
+[102]
+[103]
+[104])
+[105]
+[106]
+[107]
+[108] (./reports/fifteenth_audit.tex
+[109]
+[110] [111]
+[112]
+[113]
+[114]
+[115]
+[116]
+[117])
+[118]
+[119]
+[120] (./reports/fourteenth_audit.tex
+[121]
+[122]
+Underfull \hbox (badness 10000) in paragraph at lines 12--12
+[]|\TU/FandolSong-Regular(0)/m/n/10.53937 原 书 页 ／
+
+Underfull \hbox (badness 10000) in paragraph at lines 13--13
+[]|\TU/lmr/m/n/10.53937 N14-E01 \TU/FandolSong-Regular(0)/m/n/10.53937 ／
+
+Underfull \hbox (badness 10000) in paragraph at lines 14--14
+[]|\TU/lmr/m/n/10.53937 N14-E02 \TU/FandolSong-Regular(0)/m/n/10.53937 ／
+
+Underfull \hbox (badness 10000) in paragraph at lines 15--15
+[]|\TU/lmr/m/n/10.53937 N14-E03 \TU/FandolSong-Regular(0)/m/n/10.53937 ／
+
+Underfull \hbox (badness 4886) in paragraph at lines 15--16
+[]|\TU/FandolSong-Regular(0)/m/n/10.53937 原 反 例 缺 少 生 成 元 $\OML/cmm/m/it/10.539
+37 Z$\TU/FandolSong-Regular(0)/m/n/10.53937 ；|  正 文 改 为
+
+Underfull \hbox (badness 10000) in paragraph at lines 16--16
+[]|\TU/lmr/m/n/10.53937 N14-G01 \TU/FandolSong-Regular(0)/m/n/10.53937 ／
+
+Underfull \hbox (badness 10000) in paragraph at lines 17--17
+[]|\TU/lmr/m/n/10.53937 195–203 \TU/FandolSong-Regular(0)/m/n/10.53937 ／
+
+[123]
+[124]
+[125]
+[126]
+[127])
+Underfull \vbox (badness 1024) has occurred while \output is active
+[128]
+[129]
+[130]
+[131]
+[132] (./reports/thirteenth_audit.tex
+[133]
+[134]
+Underfull \hbox (badness 10000) in paragraph at lines 12--12
+[]|\TU/lmr/m/n/10.53937 M13-N03\TU/FandolSong-Regular(0)/m/n/10.53937 、|
+
+Underfull \hbox (badness 10000) in paragraph at lines 18--18
+[]|\TU/FandolSong-Regular(0)/m/n/10.53937 其 余 \TU/lmr/m/n/10.53937 M13-
+[135]
+[136]
+[137]
+[138]
+[139])
+[140]
+[141]
+[142] (./reports/twelfth_audit.tex
+[143]
+[144]
+Underfull \hbox (badness 10000) in paragraph at lines 19--19
+[]|\TU/lmr/m/n/10.53937 L12-T01–
+
+Underfull \hbox (badness 10000) in paragraph at lines 20--20
+[]|\TU/lmr/m/n/10.53937 L12-G01–
+
+Underfull \hbox (badness 10000) in paragraph at lines 21--21
+[]|\TU/lmr/m/n/10.53937 L12-N01–
+[145]
+[146]
+[147]
+[148]
+[149]
+
+LaTeX Font Warning: Font shape `U/rsfs/m/n' in size <15.05624> not available
+(Font)              size <14.4> substituted on input line 201.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 201.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `superscript' on input line 201.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 201.
+
+
+[150]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 269.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 269.
+
+
+[151]
+[152])
+[153]
+[154]
+[155]
+[156] (./reports/eleventh_audit.tex
+[157]
+[158]
+Underfull \hbox (badness 10000) in paragraph at lines 22--22
+[]|\TU/lmr/m/n/10.53937 K11-G01–
+
+Underfull \hbox (badness 10000) in paragraph at lines 23--23
+[]|\TU/lmr/m/n/10.53937 K11-N01–
+[159]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 29.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 29.
+
+
+[160]
+[161]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 107.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 107.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 107.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\otimes' on input line 107.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 107.
+
+
+Underfull \vbox (badness 1082) has occurred while \output is active
+[162]
+[163]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 216.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 216.
+
+
+[164]
+[165])
+[166]
+[167]
+[168] (./reports/tenth_audit.tex
+[169]
+[170]
+Underfull \hbox (badness 3612) in paragraph at lines 14--15
+[]|\TU/FandolSong-Regular(0)/m/n/10.53937 证 明 末 尾 的 引 文 改 为 陈 述 已 给 出 的
+
+Underfull \hbox (badness 10000) in paragraph at lines 17--17
+[]|\TU/lmr/m/n/10.53937 20.7.11\TU/FandolSong-Regular(0)/m/n/10.53937 、|
+
+Underfull \hbox (badness 10000) in paragraph at lines 20--20
+[]|\TU/lmr/m/n/10.53937 J10-G01\TU/FandolSong-Regular(0)/m/n/10.53937 、|
+
+Underfull \hbox (badness 10000) in paragraph at lines 20--20
+[]|\TU/lmr/m/n/10.53937 20.6.11\TU/FandolSong-Regular(0)/m/n/10.53937 、|
+[171]
+[172]
+[173]
+[174]
+[175]
+[176]
+[177]
+[178])
+[179]
+[180]
+[181]
+[182] (./reports/ninth_audit.tex
+[183]
+[184] [185]
+[186]
+[187]
+[188]
+[189]
+[190]
+[191]
+[192])
+[193]
+[194]
+[195]
+[196] (./reports/eighth_audit.tex
+[197]
+[198]
+Underfull \hbox (badness 10000) in paragraph at lines 14--14
+[]|\TU/lmr/m/n/10.53937 19.7.1.6\TU/FandolSong-Regular(0)/m/n/10.53937 ；|
+
+Underfull \hbox (badness 10000) in paragraph at lines 14--14
+\TU/lmr/m/n/10.53937 19.8.8\TU/FandolSong-Regular(0)/m/n/10.53937 ；|
+
+Underfull \hbox (badness 10000) in paragraph at lines 15--15
+[]|\TU/lmr/m/n/10.53937 19.7.1.5\TU/FandolSong-Regular(0)/m/n/10.53937 ；|
+
+Underfull \hbox (badness 10000) in paragraph at lines 16--16
+[]|\TU/lmr/m/n/10.53937 H8-N01–
+[199]
+[200]
+[201]
+[202]
+[203]
+[204])
+[205]
+[206]
+[207]
+[208] (./reports/seventh_audit.tex
+[209]
+[210]
+Underfull \hbox (badness 2762) in paragraph at lines 16--16
+[]|\TU/FandolSong-Regular(0)/m/n/10.53937 拓 扑 条 件 需 明
+
+Underfull \hbox (badness 10000) in paragraph at lines 17--17
+[]|\TU/lmr/m/n/10.53937 G7-T01–
+
+Underfull \hbox (badness 10000) in paragraph at lines 18--18
+[]|\TU/lmr/m/n/10.53937 G7-H02–
+
+Underfull \hbox (badness 2762) in paragraph at lines 18--18
+[]|\TU/FandolSong-Regular(0)/m/n/10.53937 使 用 范 围 与 核
+[211]
+[212]
+[213]
+[214]
+[215]
+[216]
+[217]
+[218]
+Underfull \hbox (badness 2213) in paragraph at lines 225--226
+[]\TU/FandolSong-Regular(0)/m/n/10.53937 编 译、|  目 录 及 交 叉 引 用 检 查、|  实 际 页 数、| 
+ 原 条 目 保 留 检 查 和 选
+
+Underfull \hbox (badness 3954) in paragraph at lines 225--226
+\TU/FandolSong-Regular(0)/m/n/10.53937 定 页 面 的 渲 染 检 查，|  均 记 录 在 工 程 的 \TU/lmt
+t/m/n/10.53937 checks/validation.json \TU/FandolSong-Regular(0)/m/n/10.53937 及
+
+Underfull \hbox (badness 1789) in paragraph at lines 225--226
+\TU/lmtt/m/n/10.53937 checks/REVIEW.md\TU/FandolSong-Regular(0)/m/n/10.53937 。|
+  这 些 检 查 回 答 文 件 是 否 可 编 译 和 版 面 是 否 可 读，|
+(./reports/withdrawn_19312_history.tex
+[219]
+[220]))
+[221]
+[222]
+[223]
+[224] (./reports/sixth_audit.tex
+[225]
+[226] [227]
+[228]
+[229]
+[230]
+[231]
+[232]
+[233]
+[234]
+[235])
+[236]
+[237]
+[238] (./reports/fifth_audit.tex
+[239]
+[240]
+[241]
+[242]
+[243]
+[244]
+[245]
+[246]
+[247]
+[248])
+[249]
+[250]
+[251]
+[252] (./reports/fourth_audit.tex
+[253]
+[254]
+第I章
+
+[255]
+[256]
+[257]
+[258]
+[259]
+[260]
+[261]
+[262]
+[263]
+[264])
+[265]
+[266]
+[267]
+[268] (./reports/third_order_audit.tex
+[269]
+[270]
+Underfull \hbox (badness 10000) in paragraph at lines 12--12
+[]|\TU/lmr/m/n/10.53937 C3-G02\TU/FandolSong-Regular(0)/m/n/10.53937 、|
+[271]
+[272]
+[273]
+[274]
+[275]
+[276] [277]
+[278]
+[279]
+Underfull \hbox (badness 1360) in paragraph at lines 227--228
+[]\TU/FandolSong-Regular(0)/m/n/10.53937 这 里 已 有 有 限 生 成 元 $\OML/cmm/m/it/10.53
+937 s[]; [] ; s[]$\TU/FandolSong-Regular(0)/m/n/10.53937 。|  将 它 们 映 入 一 维 剩 余 
+向 量 空 间
+)
+[280]
+[281]
+[282] (./reports/current_audit.tex
+[283]
+[284]
+Underfull \hbox (badness 10000) in paragraph at lines 14--14
+[]|\TU/lmr/m/n/10.53937 B2-T01–
+
+Underfull \hbox (badness 10000) in paragraph at lines 15--15
+[]|\TU/lmr/m/n/10.53937 B2-T06–
+
+Underfull \hbox (badness 10000) in paragraph at lines 16--16
+[]|\TU/lmr/m/n/10.53937 B2-H01–
+
+Underfull \hbox (badness 10000) in paragraph at lines 17--17
+[]|\TU/lmr/m/n/10.53937 B2-P01–
+[285]
+[286]
+[287]
+
+LaTeX Warning: Reference `eq:new-intersection' on page 288 undefined on input l
+ine 99.
+
+
+[288]
+[289]
+[290]
+[291]
+[292]
+[293]
+[294]
+[295]
+[296])
+[297]
+[298]
+[299]
+[300] (./reports/batch1_audit.tex
+[301]
+[302]
+Underfull \hbox (badness 10000) in paragraph at lines 13--13
+[]|\TU/lmr/m/n/10.53937 V \TU/FandolSong-Regular(0)/m/n/10.53937 合 并 稿
+
+Underfull \hbox (badness 10000) in paragraph at lines 19--19
+[]|\TU/lmr/m/n/10.53937 T04–
+
+Underfull \hbox (badness 10000) in paragraph at lines 20--20
+[]|\TU/lmr/m/n/10.53937 T08–
+[303]
+[304]
+[305]
+[306]
+[307]
+[308]
+[309]
+[310]
+[311]
+[312]
+[313]
+[314])
+[315]
+[316]
+[317]
+[318] (./reports/legacy_I_II.tex
+[319]
+[320]
+第II章
+
+Underfull \hbox (badness 10000) in paragraph at lines 24--24
+[]|\TU/lmr/m/n/9.03374 100\TU/FandolSong-Regular(0)/m/n/9.03374 、|
+
+Underfull \hbox (badness 10000) in paragraph at lines 24--24
+\TU/lmr/m/n/9.03374 111\TU/FandolSong-Regular(0)/m/n/9.03374 、|
+
+[321]
+[322]
+第III章
+
+[323]
+[324]
+[325]
+[326]
+[327]
+[328]
+[329]
+[330]
+第IV章
+
+[331]
+[332]
+[333]
+[334]
+[335]
+[336]
+第V章
+
+[337]
+[338]
+第VI章
+)
+[339] (./report.aux)
+
+LaTeX Font Warning: Size substitutions with differences
+(Font)              up to 0.65625pt have occurred.
+
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+ )
+(see the transcript file for additional information)
+Output written on report.xdv (345 pages, 3276592 bytes).
+Transcript written on report.log.

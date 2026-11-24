@@ -1,0 +1,168 @@
+[
+  {
+    "pdf": "main.pdf",
+    "pdf_sha256": "c524e85b036fad4427f5798e52b317b356c51b10ea535a058ad04daccb0a9074",
+    "pdf_page_count": 1210,
+    "physical_page": 1021,
+    "dpi": 140,
+    "image": "checks/middle_final_visual_pages/main_1021.png",
+    "image_sha256": "f91a787c3881334c3b1dbb3bb3a70a43a436445f850b675e3b621e9baed79cdf",
+    "visually_reviewed": true,
+    "review_method": "full-page PNG opened with image viewer; text extraction used only for locating"
+  },
+  {
+    "pdf": "main.pdf",
+    "pdf_sha256": "c524e85b036fad4427f5798e52b317b356c51b10ea535a058ad04daccb0a9074",
+    "pdf_page_count": 1210,
+    "physical_page": 1024,
+    "dpi": 140,
+    "image": "checks/middle_final_visual_pages/main_1024.png",
+    "image_sha256": "810c1314a471e0fe3edfbef32883f72d7c050c6964b81abd68e66165848f6e71",
+    "visually_reviewed": true,
+    "review_method": "full-page PNG opened with image viewer; text extraction used only for locating"
+  },
+  {
+    "pdf": "main.pdf",
+    "pdf_sha256": "c524e85b036fad4427f5798e52b317b356c51b10ea535a058ad04daccb0a9074",
+    "pdf_page_count": 1210,
+    "physical_page": 1025,
+    "dpi": 140,
+    "image": "checks/middle_final_visual_pages/main_1025.png",
+    "image_sha256": "1c5c36bcb5ac9548e95e603cf1de1b82f05116e0d0b71adf2e01f0c424b1bedd",
+    "visually_reviewed": true,
+    "review_method": "full-page PNG opened with image viewer; text extraction used only for locating"
+  },
+  {
+    "pdf": "main.pdf",
+    "pdf_sha256": "c524e85b036fad4427f5798e52b317b356c51b10ea535a058ad04daccb0a9074",
+    "pdf_page_count": 1210,
+    "physical_page": 1026,
+    "dpi": 140,
+    "image": "checks/middle_final_visual_pages/main_1026.png",
+    "image_sha256": "85728b8e2634f1218e524eb0a9eb8ffe544deda4f447840d0ba32a4081e9589c",
+    "visually_reviewed": true,
+    "review_method": "full-page PNG opened with image viewer; text extraction used only for locating"
+  },
+  {
+    "pdf": "main.pdf",
+    "pdf_sha256": "c524e85b036fad4427f5798e52b317b356c51b10ea535a058ad04daccb0a9074",
+    "pdf_page_count": 1210,
+    "physical_page": 1027,
+    "dpi": 140,
+    "image": "checks/middle_final_visual_pages/main_1027.png",
+    "image_sha256": "5b3a3fe43f3e5a5209f16fafba62c8c988fe6a31dae7a924940565c60c41b84d",
+    "visually_reviewed": true,
+    "review_method": "full-page PNG opened with image viewer; text extraction used only for locating"
+  },
+  {
+    "pdf": "main.pdf",
+    "pdf_sha256": "c524e85b036fad4427f5798e52b317b356c51b10ea535a058ad04daccb0a9074",
+    "pdf_page_count": 1210,
+    "physical_page": 1031,
+    "dpi": 140,
+    "image": "checks/middle_final_visual_pages/main_1031.png",
+    "image_sha256": "d6611ded10bbe87d80393a989a4de79981b08ad31215e07a832de19c60ab0cc9",
+    "visually_reviewed": true,
+    "review_method": "full-page PNG opened with image viewer; text extraction used only for locating"
+  },
+  {
+    "pdf": "main.pdf",
+    "pdf_sha256": "c524e85b036fad4427f5798e52b317b356c51b10ea535a058ad04daccb0a9074",
+    "pdf_page_count": 1210,
+    "physical_page": 1032,
+    "dpi": 140,
+    "image": "checks/middle_final_visual_pages/main_1032.png",
+    "image_sha256": "874f4f7877cbc02162bdd278c5be4593d4247c42564333f5076c17b4acb86d5f",
+    "visually_reviewed": true,
+    "review_method": "full-page PNG opened with image viewer; text extraction used only for locating"
+  },
+  {
+    "pdf": "main.pdf",
+    "pdf_sha256": "c524e85b036fad4427f5798e52b317b356c51b10ea535a058ad04daccb0a9074",
+    "pdf_page_count": 1210,
+    "physical_page": 1033,
+    "dpi": 140,
+    "image": "checks/middle_final_visual_pages/main_1033.png",
+    "image_sha256": "f751f6e2bac1d5bd040ab63c9d32c6ef0332f2bee8daf443bb1b406de7763261",
+    "visually_reviewed": true,
+    "review_method": "full-page PNG opened with image viewer; text extraction used only for locating"
+  },
+  {
+    "pdf": "report.pdf",
+    "pdf_sha256": "ff2122b0a7c7306c79b7c15f6b09e7013eb33eab222c346795ae4c7be4051fb0",
+    "pdf_page_count": 357,
+    "physical_page": 59,
+    "dpi": 140,
+    "image": "checks/middle_final_visual_pages/report_0059.png",
+    "image_sha256": "0fcfd4e87d0318ab2064fa31858d96fea854372b9ea8dc698dca97b4bdee9296",
+    "visually_reviewed": true,
+    "review_method": "full-page PNG opened with image viewer; text extraction used only for locating"
+  },
+  {
+    "pdf": "report.pdf",
+    "pdf_sha256": "ff2122b0a7c7306c79b7c15f6b09e7013eb33eab222c346795ae4c7be4051fb0",
+    "pdf_page_count": 357,
+    "physical_page": 66,
+    "dpi": 140,
+    "image": "checks/middle_final_visual_pages/report_0066.png",
+    "image_sha256": "c97970168ae30cd58a21dfb3a2b72f2f32e26ea039ecc00828a81703ba9946e8",
+    "visually_reviewed": true,
+    "review_method": "full-page PNG opened with image viewer; text extraction used only for locating"
+  },
+  {
+    "pdf": "report.pdf",
+    "pdf_sha256": "ff2122b0a7c7306c79b7c15f6b09e7013eb33eab222c346795ae4c7be4051fb0",
+    "pdf_page_count": 357,
+    "physical_page": 67,
+    "dpi": 140,
+    "image": "checks/middle_final_visual_pages/report_0067.png",
+    "image_sha256": "409e8e26899811bf607d97740532b8fdf600f8899bc96d0b5561ed2cf16fd682",
+    "visually_reviewed": true,
+    "review_method": "full-page PNG opened with image viewer; text extraction used only for locating"
+  },
+  {
+    "pdf": "report.pdf",
+    "pdf_sha256": "ff2122b0a7c7306c79b7c15f6b09e7013eb33eab222c346795ae4c7be4051fb0",
+    "pdf_page_count": 357,
+    "physical_page": 70,
+    "dpi": 140,
+    "image": "checks/middle_final_visual_pages/report_0070.png",
+    "image_sha256": "7a7a31a9185a3eeb6d0486e55bd9b1c1d0843edb5bf5317a52cf358dee0f4f10",
+    "visually_reviewed": true,
+    "review_method": "full-page PNG opened with image viewer; text extraction used only for locating"
+  },
+  {
+    "pdf": "report.pdf",
+    "pdf_sha256": "ff2122b0a7c7306c79b7c15f6b09e7013eb33eab222c346795ae4c7be4051fb0",
+    "pdf_page_count": 357,
+    "physical_page": 71,
+    "dpi": 140,
+    "image": "checks/middle_final_visual_pages/report_0071.png",
+    "image_sha256": "7f5fc4fbd392912a74e9d5bea8af9343eb5e67ec73c4db3f47d77e16b4cbfdbe",
+    "visually_reviewed": true,
+    "review_method": "full-page PNG opened with image viewer; text extraction used only for locating"
+  },
+  {
+    "pdf": "report.pdf",
+    "pdf_sha256": "ff2122b0a7c7306c79b7c15f6b09e7013eb33eab222c346795ae4c7be4051fb0",
+    "pdf_page_count": 357,
+    "physical_page": 77,
+    "dpi": 140,
+    "image": "checks/middle_final_visual_pages/report_0077.png",
+    "image_sha256": "62a4fd7f38346b7f65c487bf9b217b863aa3b8fd2a989c806672cc12294e823d",
+    "visually_reviewed": true,
+    "review_method": "full-page PNG opened with image viewer; text extraction used only for locating"
+  },
+  {
+    "pdf": "main.pdf",
+    "pdf_sha256": "2eccd0401f188108655f6d1b21950b9193c7a2d70f326a554218c4f41eb286d4",
+    "pdf_page_count": 1210,
+    "physical_page": 1032,
+    "printed_page": 1012,
+    "dpi": 140,
+    "image": "checks/middle_final_visual_pages/main_final_1032.png",
+    "image_sha256": "93edcad4afff0fb0a0616a26dce92bf1af7d671728670d44d6f38ee64fc8f013",
+    "visually_reviewed": true,
+    "review_method": "full-page PNG opened with image viewer after final module build"
+  }
+]

@@ -1,0 +1,75 @@
+{
+  "schema_version": 1,
+  "review_kind": "read_only_followup_static_review_plus_pure_predicate_checks",
+  "files": [
+    {
+      "path": "tools/apply_edition18_update.py",
+      "bytes": 8739,
+      "sha256": "b8f5d3a65bb32b097e5cc9a19f4411b5b700e690e5421334e4611aec7a19ea3f"
+    },
+    {
+      "path": "tools/package_edition18.py",
+      "bytes": 6577,
+      "sha256": "2aa0ca2101e57680b7f08504c2456a4c855230a8f91a2c0cdd8571d701b5681e"
+    }
+  ],
+  "prior_review": {
+    "path": "integration/middle_publish_tool_review.json",
+    "sha256": "b6406712381c7ff5778614c435c6b22c47e248d5da10dab6d4a646c1e46e8665",
+    "unchanged": true
+  },
+  "issues": [
+    {
+      "id": "PUB-M-01",
+      "status": "resolved_in_reviewed_source",
+      "evidence": "package safe_name rejects noncanonical/absolute/parent/.git/backslash paths; safe_file rejects file or ancestor symlinks and requires resolved containment. pack rejects duplicate inputs and unsafe output member names; fixed exports must appear in the verified manifest; publication metadata is an exact four-name allowlist."
+    },
+    {
+      "id": "PUB-M-02",
+      "status": "resolved_in_reviewed_source",
+      "evidence": "apply records already_applied without returning. Archive SHA, member count/size and manifest payload checks run first. Same-SHA branch additionally compares current manifest bytes with archive manifest bytes, hashes all current payload files after rejecting symlinks, runs verify_repository.py --strict, then returns without writing."
+    }
+  ],
+  "checks": [
+    {
+      "file": "tools/apply_edition18_update.py",
+      "python_syntax": "pass",
+      "pure_safe_name_cases": {
+        "../escape": false,
+        "/tmp/escape": false,
+        "current/EGA_v18/../../escape": false,
+        "current//EGA_v18/main.tex": false,
+        "current/EGA_v18/./main.tex": false,
+        "current\\EGA_v18\\main.tex": false,
+        ".git/config": false,
+        ".GIT/config": false,
+        "current/EGA_v18/main.tex": true,
+        ".github/workflows/publish-edition18.yml": true
+      }
+    },
+    {
+      "file": "tools/package_edition18.py",
+      "python_syntax": "pass",
+      "pure_safe_name_cases": {
+        "../escape": false,
+        "/tmp/escape": false,
+        "current/EGA_v18/../../escape": false,
+        "current//EGA_v18/main.tex": false,
+        "current/EGA_v18/./main.tex": false,
+        "current\\EGA_v18\\main.tex": false,
+        ".git/config": false,
+        ".GIT/config": false,
+        "current/EGA_v18/main.tex": true,
+        ".github/workflows/publish-edition18.yml": true
+      },
+      "safe_file_unsafe_path_rejection": "pass for three listed paths; no files created"
+    }
+  ],
+  "remaining_scope_limits": [
+    "This is not an execution of the full publication workflow or a final overlay/ZIP validation.",
+    "verify-only still intentionally omits Git ancestry and previous-manifest preservation guards; its result is limited to archive/reconstructed byte checks.",
+    "Final package self-containment and immutable raw-byte retention must still be confirmed against the final generated manifest and real output ZIPs."
+  ],
+  "conclusion": "Both original issues are resolved in the reviewed source. No new blocking issue found within this targeted read-only follow-up.",
+  "mutations": "Only this follow-up JSON/MD were written. Reviewed tools, original audit, project sources, archives and GitHub were not modified."
+}

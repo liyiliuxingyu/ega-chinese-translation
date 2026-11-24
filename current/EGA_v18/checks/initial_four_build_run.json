@@ -1,0 +1,14 @@
+{
+  "command": [
+    "bash",
+    "build.sh",
+    "--verify-single"
+  ],
+  "working_directory": ".",
+  "started_at_utc": "2026-11-24T17:11:40.898493+00:00",
+  "finished_at_utc": "2026-11-24T17:16:41.255554+00:00",
+  "elapsed_seconds": 300.357,
+  "exit_code": 0,
+  "console": "checks/build_console_20261125.txt",
+  "scope": "Actual build of book/report, modular and independent single-file variants; not mathematical proof validation."
+}

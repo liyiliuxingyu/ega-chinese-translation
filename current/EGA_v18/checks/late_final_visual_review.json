@@ -1,0 +1,246 @@
+{
+  "record_type": "bounded_final_module_pdf_visual_review",
+  "created_utc": "2026-11-24T17:19:09.704788+00:00",
+  "reviewer": "dot_evidence",
+  "reviewed_pdf_snapshots": {
+    "main.pdf": {
+      "sha256": "c524e85b036fad4427f5798e52b317b356c51b10ea535a058ad04daccb0a9074",
+      "physical_pages": 1210
+    },
+    "report.pdf": {
+      "sha256": "ff2122b0a7c7306c79b7c15f6b09e7013eb33eab222c346795ae4c7be4051fb0",
+      "physical_pages": 357
+    }
+  },
+  "current_pdf_identity_at_record_write": {
+    "main.pdf": {
+      "sha256": "3c15085d0e9380fb4953d0a4637a3709d0f39bd10cfa5e42ba09661bbc49986b",
+      "physical_pages": 0,
+      "state": "父代理正在重编；写入时读到未完成的临时PDF，0页及其哈希不是交付产物身份。"
+    },
+    "report.pdf": {
+      "sha256": "ff2122b0a7c7306c79b7c15f6b09e7013eb33eab222c346795ae4c7be4051fb0",
+      "physical_pages": 357
+    }
+  },
+  "reviewed_pages_count": 14,
+  "pages": [
+    {
+      "pdf": "main.pdf",
+      "physical_page": 984,
+      "printed_page_label": "964",
+      "image": "checks/late_final_visual_pages/main_0984.png",
+      "image_sha256": "5e4531b99f43149d7c7a17d0efc7bf39ce1c3e78b72244956b90330e15a366b6",
+      "image_size_pixels": [
+        804,
+        1137
+      ],
+      "actual_visual_review": true,
+      "observation": "引理16.3的投影维数 rk E−2、标准偶/奇二次型及16.5公式均在版心内；脚注L18-069-02和L18-070-01/02与相应正文可对应，页底无裁切。",
+      "visible_layout_issue": false
+    },
+    {
+      "pdf": "main.pdf",
+      "physical_page": 985,
+      "printed_page_label": "965",
+      "image": "checks/late_final_visual_pages/main_0985.png",
+      "image_sha256": "b1f2e579dbccacc0cee3b7ed80fb0d766b73f9ea4175204f9fe55683f82b1b17",
+      "image_size_pixels": [
+        804,
+        1137
+      ],
+      "actual_visual_review": true,
+      "observation": "校正判别式定义、16.6奇偶条件与16.8正交直和公式可读；奇秩加奇秩的因子4清楚，正文与三条页脚原误说明分开，无公式越界。",
+      "visible_layout_issue": false
+    },
+    {
+      "pdf": "main.pdf",
+      "physical_page": 1091,
+      "printed_page_label": "1071",
+      "image": "checks/late_final_visual_pages/main_1091.png",
+      "image_sha256": "706b93f554da866cf5fe6e697bb61e1b3205f948a0bc1b712c5642c3d18ac55b",
+      "image_size_pixels": [
+        804,
+        1137
+      ],
+      "actual_visual_review": true,
+      "observation": "2.3/2.4的对偶射影参数及2.6的 f* M 扭转因子清楚可见；四条来源/译校脚注均在页底，公式未伸入边白。",
+      "visible_layout_issue": false
+    },
+    {
+      "pdf": "main.pdf",
+      "physical_page": 1104,
+      "printed_page_label": "1084",
+      "image": "checks/late_final_visual_pages/main_1104.png",
+      "image_sha256": "ba707ff49d4789f0ca847852625a023c3ae5d29faca7c7bfb4e871a7aca6432f",
+      "image_size_pixels": [
+        804,
+        1137
+      ],
+      "actual_visual_review": true,
+      "observation": "推前计算末项 L⊗g*(E∨) 与命题4.1及纤维单射公式可读；对偶订正脚注L18-081-06置于本页，无遮挡或脚注裁切。",
+      "visible_layout_issue": false
+    },
+    {
+      "pdf": "main.pdf",
+      "physical_page": 1110,
+      "printed_page_label": "1090",
+      "image": "checks/late_final_visual_pages/main_1110.png",
+      "image_sha256": "4878782ccbcfebaee6fd409d46ce501a8a9224a813021db98e2986a3ba0a2f63",
+      "image_size_pixels": [
+        804,
+        1137
+      ],
+      "actual_visual_review": true,
+      "observation": "4.3切空间 Hom 的目标 O_X0 明确，两个切空间映射公式排版完整；作者追加说明与译校脚注L18-084-07区分清楚。",
+      "visible_layout_issue": false
+    },
+    {
+      "pdf": "main.pdf",
+      "physical_page": 1111,
+      "printed_page_label": "1091",
+      "image": "checks/late_final_visual_pages/main_1111.png",
+      "image_sha256": "a342b1dfbd125455cf27a503065a5b4ff350954fdba134661aba9ddf291391b5",
+      "image_size_pixels": [
+        804,
+        1137
+      ],
+      "actual_visual_review": true,
+      "observation": "4.4(b)的 Δ={A+div(f)} 与(c)的 E′=hE、A′=A−div(h) 显示完整；原误说明L18-085-04处于脚注，未压到页码。",
+      "visible_layout_issue": false
+    },
+    {
+      "pdf": "main.pdf",
+      "physical_page": 1114,
+      "printed_page_label": "1094",
+      "image": "checks/late_final_visual_pages/main_1114.png",
+      "image_sha256": "c7adb3e10382bbf4dfb5d86150654ee6fc7a857bb24a5dec7371c5ec7dc6bfc9",
+      "image_size_pixels": [
+        804,
+        1137
+      ],
+      "actual_visual_review": true,
+      "observation": "信件落款后以独立标题“信末划删段落（另录）”保留删段；位置说明、删段正文和L18-086-06/07清楚分开，未将删段混入签名前的正文。",
+      "visible_layout_issue": false
+    },
+    {
+      "pdf": "main.pdf",
+      "physical_page": 1115,
+      "printed_page_label": "1095",
+      "image": "checks/late_final_visual_pages/main_1115.png",
+      "image_sha256": "fec0ad10e96f53a9872dbb447532ebc39259182546904d2fe30bcd8dc029272d",
+      "image_size_pixels": [
+        804,
+        1137
+      ],
+      "actual_visual_review": true,
+      "observation": "“来源补遗：邻接手稿与卷首异扫”与法150手写提纲的层级清楚；§20—24及不明字标记可见，五条脚注未相互覆盖。",
+      "visible_layout_issue": false
+    },
+    {
+      "pdf": "main.pdf",
+      "physical_page": 1116,
+      "printed_page_label": "1096",
+      "image": "checks/late_final_visual_pages/main_1116.png",
+      "image_sha256": "2a4bd9a78bd1ac6cd81caf569d7a117eca2a7dee7a2a60df5151c0c2bb4da79c",
+      "image_size_pixels": [
+        804,
+        1137
+      ],
+      "actual_visual_review": true,
+      "observation": "旋转半周笔记的存疑公式保留不清标记；法153异扫以来源身份及报告L18-087指向说明，不再印出拟定目录正文第二份；两条页脚清楚。",
+      "visible_layout_issue": false
+    },
+    {
+      "pdf": "main.pdf",
+      "physical_page": 1117,
+      "printed_page_label": "1097",
+      "image": "checks/late_final_visual_pages/main_1117.png",
+      "image_sha256": "66c267a2678cebcffa69532a190f1ece488912dc06c5615b778e74411963340f",
+      "image_size_pixels": [
+        804,
+        1137
+      ],
+      "actual_visual_review": true,
+      "observation": "删划补译章以“非定稿”及编排说明开头；法126块的标题、起止来源说明、纤维公式和页脚清楚，未排作已采纳定理。",
+      "visible_layout_issue": false
+    },
+    {
+      "pdf": "main.pdf",
+      "physical_page": 1118,
+      "printed_page_label": "1098",
+      "image": "checks/late_final_visual_pages/main_1118.png",
+      "image_sha256": "7311f5899be90b09e9a5f1176a04c91dcf1e4d09c1899537923f1f960d7355c0",
+      "image_size_pixels": [
+        804,
+        1137
+      ],
+      "actual_visual_review": true,
+      "observation": "法126参数公式的对偶及秩至少2限制可见；法136的D未辨标记、L_U公式及局部到整体公式完整。V18-D136-01引标附引导句，未形成孤立脚注号；四条页脚均可读。",
+      "visible_layout_issue": false
+    },
+    {
+      "pdf": "main.pdf",
+      "physical_page": 1119,
+      "printed_page_label": "1099",
+      "image": "checks/late_final_visual_pages/main_1119.png",
+      "image_sha256": "d7006111bdc2129de5df13c73126be411ed83213bfb48e75a22bd2655ca166fb",
+      "image_size_pixels": [
+        804,
+        1137
+      ],
+      "actual_visual_review": true,
+      "observation": "法136恢复式先张量O(−1)再推前，脚注明确正秩/非空纤维限制；法140正文明确“按原弱假设，这条断言不能采用”，原弱命题及反例留在脚注。未竟逗号和未辨说明保留；长脚注未裁切或与页码碰撞。",
+      "visible_layout_issue": false
+    },
+    {
+      "pdf": "report.pdf",
+      "physical_page": 26,
+      "printed_page_label": "8",
+      "image": "checks/late_final_visual_pages/report_0026.png",
+      "image_sha256": "180f4f3d687fed237fc2ba60f05466cef81d93748b2c049a67467341d525c7b4",
+      "image_size_pixels": [
+        804,
+        1137
+      ],
+      "actual_visual_review": true,
+      "observation": "三元二次型与校正判别式排成两行，第二行含4abc−af²−be²−cd²+def，完整落在版心内；随后直和系数说明及L18-071标题未碰撞。",
+      "visible_layout_issue": false
+    },
+    {
+      "pdf": "report.pdf",
+      "physical_page": 39,
+      "printed_page_label": "21",
+      "image": "checks/late_final_visual_pages/report_0039.png",
+      "image_sha256": "9607aec0e59ac0255483570d8c89c03d94ddd0426415e8a33484f38cc0aafafd",
+      "image_size_pixels": [
+        804,
+        1137
+      ],
+      "actual_visual_review": true,
+      "observation": "报告中保留法153同文的16项拟定目录和页末说明；列表、说明及原缺损脚注完整在版心内，作为报告中的可追溯材料展示。",
+      "visible_layout_issue": false
+    }
+  ],
+  "conclusion": "实际查看所列14个整本页面；在这些页面中未发现公式越出正文版心、文字遮挡、脚注裁切或孤立脚注引标。来源身份、订正式/原误脚注以及未辨标记按所列观察可见。",
+  "issues": [],
+  "previous_resolved_findings": [
+    {
+      "location": "report L18-070",
+      "finding": "局部探针中三元二次型与校正判别式一行过长",
+      "resolution": "现为两行显示；本次实际查看报告物理第26页确认在版心内。"
+    },
+    {
+      "location": "V18-D136-01",
+      "finding": "局部探针中显示公式后脚注引标曾独立一行",
+      "resolution": "引标移至引导句末；本次实际查看主稿物理第1118页确认无孤立引标。"
+    }
+  ],
+  "limits": [
+    "这是批69—87及三个新增删划块的代表页视觉检查，不是1210页主稿/357页报告的逐页检查。",
+    "不把视觉排版检查等同于数学证明全部有效、全文完成或全部法文手稿已辨读；数学与原文的有限核查范围另见integration/late_verification及late_deleted_source_blocks。",
+    "物理页和印刷页标签均属于reviewed_pdf_snapshots所列SHA256；没有沿用局部65页探针页码。",
+    "父代理随后仅修改前言分页及旧8.14相邻脚注号分隔并重编主稿；该后续文件不能仅凭文件名视为已由本记录审阅，须以父代理逐页等价映射或新增复查记录衔接。",
+    "本次没有改动正文、报告TeX或编译配置。"
+  ]
+}

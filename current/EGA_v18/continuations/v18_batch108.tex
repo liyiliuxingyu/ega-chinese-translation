@@ -1,0 +1,44 @@
+% V18 integration from immutable Dot batch 108: EGA第五卷_几何正则性的例外超平面.tex
+\begingroup
+\def\PP{\mathbb P}\def\OO{\mathcal O}\def\Ocal{\mathcal O}
+\def\F{\mathcal F}\def\G{\mathcal G}\def\N{\mathcal N}
+\def\PD{\check P}\def\Pdual{\check P}
+\def\Ys{Y^{\mathrm{sing}}}\def\Ysing{Y^{\mathrm{sing}}}
+\def\Ds{Y^{\mathrm{sup\,sing}}}\def\Ysup{Y^{\mathrm{sup\,sing}}}
+\def\cod{\operatorname{codim}}\def\Sing{\operatorname{Sing}}
+\def\depth{\operatorname{depth}}\def\coprof{\operatorname{coprof}}
+\def\Ass{\operatorname{Ass}}\def\Supp{\operatorname{Supp}}
+\def\Gr{\operatorname{Gr}}\def\Spec{\operatorname{Spec}}\def\Proj{\operatorname{Proj}}
+\source{Dot第108批；法文底本物理第45--46页，英编稿物理第31；另对读32页}
+\noindent\textbf{译校记号约定。}下文用 $k$ 表基域，改用 $n$ 表原稿条件 $(R_k)$ 的下标。$(R_j)$ 表示余维不超过 $j$ 的点处局部环正则；几何 $(R_j)$ 要在代数闭扩张上检验。设 $X'$ 为 $X/k$ 的光滑开集，$T=X\setminus X'$；$Y_\xi$ 是由参数 $\xi\in\PD$ 确定的超平面截面，$Y'_\xi$ 是其在 $X'$ 上的开部分，$T_\xi$ 是 $T$ 在 $Y_\xi$ 上的逆像。对偶空间中的余维取闭包后计算。几何分支和奇异点均在扩域后理解。
+
+\egas{8.13}{命题（经译校的陈述）}
+仍设 $f:X\to P$ 无分歧，且 $X$ 无孤立点；设 $X$ 几何满足 $(R_n)$。为使下述含截面正则性要求的结论成立，另要求 $X$ 在几何基变换后没有零维伴随点。\transnote{末句为译校补足，不在法稿45页可辨的增补中。原证依赖8.2；其准确前提涉及全部伴随点，不只是底空间中孤立的点。若仅字面要求无孤立点，见核查报告“D18-108”的第二个反例。几何约化且无零维分支时，不需额外验证此条件。}
+令 $Z_j$ 为 $\PD$ 中不满足以下联合条件的参数集\transnote{法46页打字清楚给出条件 $R_k$，英31误作 $E_k$。此处“正则截面”指局部方程是非零因子，而不是说其零点概形光滑。}：
+\[
+ \varphi_\xi\ \text{在 }X_{k(\xi)}\text{ 上为正则截面},
+ \qquad Y_\xi\ \text{几何满足 }(R_j).
+\]
+于是：
+\begin{enumerate}
+\item[(a)] 若 $X'$ 的所有维数至多 $n$ 的几何不可约分支均相对于 $f$ 为直纹型，则 $\cod(Z_{n-1},\PD)\ge2$。
+\item[(b)] 若 $X$ 的每个维数不超过 $n+1$ 的几何不可约分支 $X_i$ 都由 $X/k$ 的光滑点组成，并且相对于 $f$ 是直纹型的，则 $\cod(Z_n,\PD)\ge2$。\transnote{法46页读作不超过 $k+1$，英31作 $k-1$。截面使维数降一，故需控制至 $n+1$ 维的分支；英32推论8.14(b)对几何正常截面要求控制至二维分支，也与 $n=1$ 时的 $n+1$ 一致。核查报告“D18-108”收有检验该差别的二次曲面例子。}
+\end{enumerate}
+这里“直纹型”沿用8.12：该分支在光滑处的切参数之像的闭包余维至少二，不要求抽象簇带有给定的直纹结构。\transnote{这里明确采用切参数像的余维条件，作为本条及补证中“直纹型”的工作含义；不是把作者试探性的临时术语改成通常直纹簇的定义。下标为 $n-1$ 的(a)按 $n\ge1$ 阅读；原页未说明负下标 Serre 条件的约定，本版不据此另设 $(R_{-1})$。}
+
+
+\subsection*{原稿证明译文}
+事实上，对每个 $\xi$，$Y_\xi$ 的几何奇异集是 $\Sing(Y'_\xi)$ 与 $T_\xi$ 的并。这里限于 $\varphi_\xi$ 正则的参数；据8.2，这只舍弃余维至少二的参数。故该奇异集在 $Y_\xi$ 中的余维等于
+\[
+ \min\bigl\{\cod(\Sing(Y'_\xi),Y'_\xi),
+                   \ \cod(T_\xi,Y_\xi)\bigr\}.
+\]
+只考虑 $\Sing(Y'_\xi)$ 有限的 $\xi$；这也无妨，因为这样仍只舍弃余维至少二的集合。此时 $Y'_\xi$ 的几何奇异点都是孤立的。由此及8.4可以得到结论。\transnote{原稿略去的两类奇异集合估计、伴随点前提和两个检验完整保存于核查报告“D18-108”项，属译校文字，不是原文。}
+
+\subsection*{划改记录}
+\begin{itemize}
+\item 法45页：框内被大叉划去的旧开头曾列 $X'$ 并对切关联像加条件，后接特征零及8.11；不是可直接并入现陈述的额外假设。正文从可辨的未划去部分与手写替代读出无分歧、无孤立点及几何 $(R_n)$。
+\item 法46页：两条原打字稿中的“必要性”被划改，正文按可辨的修订层只译充分性；证明后另有拟改成充要条件的大段草稿，被整段括划，不作为命题结论。
+\item 法46页：用可辨的手写替代“$\Sing(Y'_\xi)$ 有限”校正旧打字层；原稿在证明附近留有边注和改写线，未确证字样不补造。英编稿31页第48注实际附在8.13以前的编排备忘，不属于本命题的证明；第108批将它误指到这里，本版已按原页位置纠正，原注仍保留于8.12后。
+\end{itemize}
+\endgroup

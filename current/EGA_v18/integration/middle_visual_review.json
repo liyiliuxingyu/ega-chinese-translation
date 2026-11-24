@@ -1,0 +1,165 @@
+{
+  "schema_version": 1,
+  "scope": "Only the assigned 8.1--8.13 local probes and listed original source page images; not the assembled main/report PDFs or all proofs.",
+  "pdfs": [
+    {
+      "kind": "body",
+      "path": "integration/middle_probe_body.pdf",
+      "bytes": 435090,
+      "sha256": "f3b67201f3d94dcbfe19ea0c379be146810089ae82cf0505e50de8b055b28b9e",
+      "page_count": 17,
+      "source_probe": "integration/middle_probe_body.tex",
+      "final_visual_sample_physical_pages": [
+        1,
+        5,
+        6,
+        9,
+        11,
+        14,
+        15,
+        16,
+        17
+      ],
+      "latex_log": "integration/middle_probe_body.log",
+      "log_sha256": "9c478876837cc148294ff802d13e1c800f8170c8d518579b4bae1f8d09f3b323",
+      "overfull_count": 0,
+      "undefined_control_sequence_count": 0,
+      "latex_error_count": 0
+    },
+    {
+      "kind": "report",
+      "path": "integration/middle_probe_report.pdf",
+      "bytes": 490016,
+      "sha256": "db799c256a4958953e066b86f912912dbb84648c032118d374831fee4ed42eee",
+      "page_count": 24,
+      "source_probe": "integration/middle_probe_report.tex",
+      "final_visual_sample_physical_pages": [
+        1,
+        9,
+        12,
+        13,
+        19,
+        24
+      ],
+      "latex_log": "integration/middle_probe_report.log",
+      "log_sha256": "ba57c42579f071dc4a650a36d2436ea158af5e6e4d91c54dec0b5a2045463cf1",
+      "overfull_count": 0,
+      "undefined_control_sequence_count": 0,
+      "latex_error_count": 0
+    }
+  ],
+  "source_page_images_actually_viewed": {
+    "EGA5_francais.pdf": [
+      34,
+      35,
+      39,
+      40,
+      41,
+      42,
+      43,
+      44,
+      45,
+      46
+    ],
+    "EGAVaiello.pdf": [
+      24,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32
+    ]
+  },
+  "source_render_index": "integration/middle_source_pages/render_index.json",
+  "layout_render_index": "integration/middle_layout_pages/render_index.json",
+  "observations": [
+    {
+      "kind": "body",
+      "pages": [
+        1
+      ],
+      "observation": "节标题、8.1与8.2编号、相邻脚注分隔清楚，未见遮挡或溢出。"
+    },
+    {
+      "kind": "body",
+      "pages": [
+        5,
+        6
+      ],
+      "observation": "8.5严格coprof>n公式、拟有限情形与8.6深度不等式可读；脚注留在版心内。"
+    },
+    {
+      "kind": "body",
+      "pages": [
+        9
+      ],
+      "observation": "交换图横列两端0、E到相对切丛的箭头及alpha/beta箭头均实际可见，箭头标签与对象未叠压。"
+    },
+    {
+      "kind": "body",
+      "pages": [
+        11
+      ],
+      "observation": "8.7(c)缺文提示与8.8工作假设脚注可读；没有用现代补证覆盖原缺口。"
+    },
+    {
+      "kind": "body",
+      "pages": [
+        14,
+        15
+      ],
+      "observation": "8.12行列式线丛公式、作者自述及编排备忘完整可见；原独立行脚注10已附回所属末句。"
+    },
+    {
+      "kind": "body",
+      "pages": [
+        16,
+        17
+      ],
+      "observation": "8.13更正陈述、两个维数界、简短原证明、附加假设脚注及划改记录可读，末页未截断。"
+    },
+    {
+      "kind": "report",
+      "pages": [
+        1
+      ],
+      "observation": "报告章标题按默认ctexbook换为两行，编者补证/历史说明与正文的界限清楚。"
+    },
+    {
+      "kind": "report",
+      "pages": [
+        9
+      ],
+      "observation": "极化型等式改为两行aligned后无溢出，随后的对偶切映射补证段落可读。"
+    },
+    {
+      "kind": "report",
+      "pages": [
+        12,
+        13
+      ],
+      "observation": "8.13条件性补证与两个反例的公式可读，进入旧注保存部分的边界说明可见。"
+    },
+    {
+      "kind": "report",
+      "pages": [
+        19,
+        24
+      ],
+      "observation": "旧二次覆盖反例与末尾M071—M077旧注均保持为历史记录；没有被旧进度声明冒充本轮已审定状态。"
+    }
+  ],
+  "resolved_layout_defects": [
+    "104批交换图补回原图E到相对切丛的箭头及横列两端0。",
+    "相邻脚注标号之间加入逗号，避免视觉上合成一个多位数。",
+    "报告极化型长公式拆为两行。",
+    "8.12后报告指引脚注附回末句，消除独立成行标号。"
+  ],
+  "limitations": [
+    "未逐页人工查看局部正文全部17页或报告全部24页；仅列明页面计入最终视觉样本。",
+    "源码/文字抽取与页面渲染不等于全数学独立证明。",
+    "合订本主稿与报告最终分页由父代理统一构建、复查。",
+    "其他已渲染但未打开的原始页面不计为本轮图像核查。"
+  ]
+}

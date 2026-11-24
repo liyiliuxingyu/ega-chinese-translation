@@ -1,0 +1,18 @@
+{
+  "date": "2026-11-25",
+  "changes": [
+    {
+      "file": "frontmatter.tex",
+      "before_sha256": "803c04895977b73625ddb82cc0ea7c141dffa5de2dc73dd813eb1d93b884129f",
+      "after_sha256": "372c532d7eef1764f2061590564175c6b13433520d2c57366883d154481fd74c",
+      "change": "Insert clearpage before collection-scope heading to keep it with the table; no text changed."
+    },
+    {
+      "file": "continuations/v18_first_8_14_onward.tex",
+      "before_sha256": "23270423431c43b155459e095c7ed7082e5854f48774acb1ce64049ab5bb1b22",
+      "after_sha256": "8d1391ef8ef3ac8787111f16d40e3d284d27103bc475abb68ceed335507a715a",
+      "change": "Insert two superscript commas between adjacent footnote calls in 8.14; no statement or footnote text changed."
+    }
+  ],
+  "reason": "Actually observed in first whole-book PDF, pages 3 and 1032."
+}

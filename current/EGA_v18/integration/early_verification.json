@@ -1,0 +1,249 @@
+{
+  "scope": "Structural/literal retention and original-byte checks only; no full mathematical audit.",
+  "passed": true,
+  "batches": [
+    {
+      "batch": 88,
+      "checks": {
+        "source_hash": true,
+        "output_hash": true,
+        "footnotes_preserved_after_explicit_edits": true,
+        "migrated_math_fragments_found_verbatim": true
+      },
+      "source_footnotes": 8,
+      "missing_notes": [],
+      "mathematical_fragments": 279,
+      "missing_math": [],
+      "anchors": [
+        "2.1",
+        "2.2",
+        "2.3",
+        "2.4",
+        "2.5",
+        "2.6",
+        "2.7"
+      ]
+    },
+    {
+      "batch": 89,
+      "checks": {
+        "source_hash": true,
+        "output_hash": true,
+        "footnotes_preserved_after_explicit_edits": true,
+        "migrated_math_fragments_found_verbatim": true
+      },
+      "source_footnotes": 5,
+      "missing_notes": [],
+      "mathematical_fragments": 148,
+      "missing_math": [],
+      "anchors": [
+        "2.8",
+        "2.9",
+        "2.10",
+        "2.11",
+        "2.12",
+        "2.13"
+      ]
+    },
+    {
+      "batch": 90,
+      "checks": {
+        "source_hash": true,
+        "output_hash": true,
+        "footnotes_preserved_after_explicit_edits": true,
+        "migrated_math_fragments_found_verbatim": true
+      },
+      "source_footnotes": 5,
+      "missing_notes": [],
+      "mathematical_fragments": 132,
+      "missing_math": [],
+      "anchors": [
+        "2.14",
+        "2.15",
+        "2.16",
+        "2.17",
+        "2.18"
+      ]
+    },
+    {
+      "batch": 91,
+      "checks": {
+        "source_hash": true,
+        "output_hash": true,
+        "footnotes_preserved_after_explicit_edits": true,
+        "migrated_math_fragments_found_verbatim": true
+      },
+      "source_footnotes": 5,
+      "missing_notes": [],
+      "mathematical_fragments": 99,
+      "missing_math": [],
+      "anchors": [
+        "3.1",
+        "3.1.1",
+        "3.2",
+        "3.3"
+      ]
+    },
+    {
+      "batch": 92,
+      "checks": {
+        "source_hash": true,
+        "output_hash": true,
+        "footnotes_preserved_after_explicit_edits": true,
+        "migrated_math_fragments_found_verbatim": true
+      },
+      "source_footnotes": 11,
+      "missing_notes": [],
+      "mathematical_fragments": 157,
+      "missing_math": [],
+      "anchors": [
+        "4.1",
+        "4.2",
+        "4.3"
+      ]
+    },
+    {
+      "batch": 93,
+      "checks": {
+        "source_hash": true,
+        "output_hash": true,
+        "footnotes_preserved_after_explicit_edits": true,
+        "migrated_math_fragments_found_verbatim": true
+      },
+      "source_footnotes": 5,
+      "missing_notes": [],
+      "mathematical_fragments": 115,
+      "missing_math": [],
+      "anchors": [
+        "4.4",
+        "5.1"
+      ]
+    },
+    {
+      "batch": 94,
+      "checks": {
+        "source_hash": true,
+        "output_hash": true,
+        "footnotes_preserved_after_explicit_edits": true,
+        "migrated_math_fragments_found_verbatim": true
+      },
+      "source_footnotes": 9,
+      "missing_notes": [],
+      "mathematical_fragments": 162,
+      "missing_math": [],
+      "anchors": [
+        "5.2",
+        "5.3",
+        "5.4"
+      ]
+    },
+    {
+      "batch": 95,
+      "checks": {
+        "source_hash": true,
+        "output_hash": true,
+        "footnotes_preserved_after_explicit_edits": true,
+        "migrated_math_fragments_found_verbatim": true
+      },
+      "source_footnotes": 8,
+      "missing_notes": [],
+      "mathematical_fragments": 115,
+      "missing_math": [],
+      "anchors": [
+        "5.5",
+        "5.6",
+        "5.7"
+      ]
+    },
+    {
+      "batch": 96,
+      "checks": {
+        "source_hash": true,
+        "output_hash": true,
+        "footnotes_preserved_after_explicit_edits": true,
+        "migrated_math_fragments_found_verbatim": true
+      },
+      "source_footnotes": 4,
+      "missing_notes": [],
+      "mathematical_fragments": 62,
+      "missing_math": [],
+      "anchors": [
+        "6.1"
+      ]
+    },
+    {
+      "batch": 97,
+      "checks": {
+        "source_hash": true,
+        "output_hash": true,
+        "footnotes_preserved_after_explicit_edits": true,
+        "migrated_math_fragments_found_verbatim": true
+      },
+      "source_footnotes": 5,
+      "missing_notes": [],
+      "mathematical_fragments": 111,
+      "missing_math": [],
+      "anchors": [
+        "7.1"
+      ]
+    },
+    {
+      "batch": 98,
+      "checks": {
+        "source_hash": true,
+        "output_hash": true,
+        "footnotes_preserved_after_explicit_edits": true,
+        "migrated_math_fragments_found_verbatim": true
+      },
+      "source_footnotes": 5,
+      "missing_notes": [],
+      "mathematical_fragments": 83,
+      "missing_math": [],
+      "anchors": [
+        "7.2",
+        "7.3"
+      ]
+    },
+    {
+      "batch": 99,
+      "checks": {
+        "source_hash": true,
+        "output_hash": true,
+        "footnotes_preserved_after_explicit_edits": true,
+        "migrated_math_fragments_found_verbatim": true
+      },
+      "source_footnotes": 2,
+      "missing_notes": [],
+      "mathematical_fragments": 88,
+      "missing_math": [],
+      "anchors": [
+        "7.4",
+        "7.5"
+      ]
+    }
+  ],
+  "raw_batch_footnotes_total": 72,
+  "old_annotations_retained_verbatim": 69,
+  "body_anchor_count": 39,
+  "duplicate_body_anchors": {},
+  "old_sources": {
+    "text/v5_01_02.tex": {
+      "record_matches": true,
+      "archive_matches": true
+    },
+    "text/v5_03_06.tex": {
+      "record_matches": true,
+      "archive_matches": true
+    },
+    "continuations/v_dot_early.tex": {
+      "record_matches": true,
+      "archive_matches": true
+    }
+  },
+  "obsolete_body_progress_hits": [],
+  "limitations": [
+    "Mathematical-fragment membership is not a semantic equivalence proof.",
+    "All raw original batch sources stay immutable in dot_updates_20261124.",
+    "Coverage of source pages is limited to the separately recorded actual image inspection."
+  ]
+}

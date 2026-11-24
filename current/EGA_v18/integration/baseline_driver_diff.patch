@@ -1,0 +1,222 @@
+--- v17/main.tex
++++ v18/main.tex
+@@ -92,12 +92,55 @@
+ \input{continuations/v_suppIII_66.tex}
+ \input{continuations/v_suppIII_67.tex}
+ \input{continuations/v_suppIII_68.tex}
++\renewcommand{\newscope}{V-Q}
++\input{continuations/v18_batch069.tex}
++\input{continuations/v18_batch070.tex}
++\input{continuations/v18_batch071.tex}
++\input{continuations/v18_batch072.tex}
+ \renewcommand{\newscope}{V-H}
+-\input{text/v5_01_02.tex}
+-\input{text/v5_03_06.tex}
+-\input{continuations/v_dot_early.tex}
++\input{continuations/v18_first_preface.tex}
++\input{continuations/v18_batch088.tex}
++\input{continuations/v18_batch089.tex}
++\input{continuations/v18_batch090.tex}
++\input{continuations/v18_batch091.tex}
++\input{continuations/v18_batch092.tex}
++\input{continuations/v18_batch093.tex}
++\input{continuations/v18_batch094.tex}
++\input{continuations/v18_batch095.tex}
++\input{continuations/v18_batch096.tex}
++\input{continuations/v18_batch097.tex}
++\input{continuations/v18_batch098.tex}
++\input{continuations/v18_batch099.tex}
++\input{continuations/v18_batch100.tex}
++\input{continuations/v18_batch101.tex}
++\input{continuations/v18_batch102.tex}
++\input{continuations/v18_batch103.tex}
++\input{continuations/v18_batch104.tex}
++\input{continuations/v18_batch105.tex}
++\input{continuations/v18_batch106.tex}
++\input{continuations/v18_batch107.tex}
++\input{continuations/v18_batch108.tex}
++\input{continuations/v18_first_8_14_onward.tex}
+ \input{continuations/v_dot_middle.tex}
+ \input{continuations/v_dot_late.tex}
++\renewcommand{\newscope}{V-L}
++\input{continuations/v18_batch073.tex}
++\input{continuations/v18_batch074.tex}
++\input{continuations/v18_batch075.tex}
++\input{continuations/v18_batch076.tex}
++\input{continuations/v18_batch077.tex}
++\input{continuations/v18_batch078.tex}
++\input{continuations/v18_batch079.tex}
++\input{continuations/v18_batch080.tex}
++\input{continuations/v18_batch081.tex}
++\input{continuations/v18_batch082.tex}
++\input{continuations/v18_batch083.tex}
++\input{continuations/v18_batch084.tex}
++\input{continuations/v18_batch085.tex}
++\input{continuations/v18_batch086.tex}
++\input{continuations/v18_batch087.tex}
++\renewcommand{\newscope}{V-D}
++\input{continuations/v18_deleted_addenda.tex}
+ \backmatter
+ \setcounter{secnumdepth}{-2}
+ \part{各原分册的书末资料}
+--- v17/preamble.tex
++++ v18/preamble.tex
+@@ -156,8 +156,8 @@
+ \newcommand{\bTor}{\operatorname{\mathbf{Tor}}}
+ \newcommand{\termTor}{\mathop{\mathscr{T}\!or^{\mathrm{term}}}\nolimits}
+ \newcommand{\NewNote}[1]{\par\smallskip\noindent\textbf{编排说明。}#1\par\smallskip}
+-\hypersetup{pdftitle={代数几何基础：按内容顺序编排的中文译校合订本（第十七版·第五卷增补第三辑）},pdfauthor={原著 A. Grothendieck；与 J. Dieudonné 合作；预备笔记英译编者见各篇},pdfsubject={第0章归并；正文连续；已译范围和未译范围分开列明}}
+-\title{代数几何基础\\中文译校合订本\\[1em]\large 按内容顺序编排·第十七版（第五卷增补第三辑）}
++\hypersetup{pdftitle={代数几何基础：按内容顺序编排的中文译校合订本（第十八版·Dot续稿与回校整合）},pdfauthor={原著 A. Grothendieck；与 J. Dieudonné 合作；预备笔记英译编者见各篇},pdfsubject={第0章归并；正文连续；已译范围和未译范围分开列明}}
++\title{代数几何基础\\中文译校合订本\\[1em]\large 按内容顺序编排·第十八版（Dot续稿与回校整合）}
+ \author{A. Grothendieck\\与 J. Dieudonné 合作撰写\\[.6em]\normalsize 预备笔记英译及编辑：Piotr Blass、Joseph Blass}
+ \date{}
+ 
+--- v17/frontmatter.tex
++++ v18/frontmatter.tex
+@@ -1,49 +1,42 @@
+ \maketitle
+ \head{本版编排与收录说明}
+ \noindent\textbf{本书是当前已译内容的中文工作合订稿，尚非全部上传材料的完结全译本。}
+-本版以实际恢复的第十六版源码为基础，合入Dot的五十六批EGA V实存译稿：五十四批接入第一篇，另两批作为既有短篇的同文校订。对照底本补译了第11节和第14节的一处漏接。没有把文件名、任务完成状态或旧聊天中的进度声称当作译文证据。
++第十八版在第十七版增补第三辑的实际源码上，整合后来恢复的四十个Dot工程包（原批号69--108）。其中69--87为后续正文、书信与来源补遗；88--108为第一篇已有段落的法英回校。回校稿替换对应旧段，既有8.14之后的正文继续保留。批次源稿和第十七版原件均另行归档。此外，本轮据法文物理126、136、140页，补译三块此前未译的可辨删划草稿，另章标明其稿层身份与未辨文字。
+ 
+ \section*{正文次序}
+-依原著内容次序排列：导言；合并后的第0章预备知识；第I章概形的语言；第II章若干类态射的初等整体研究；第III章凝聚层的上同调研究；第IV章待译范围说明；第V卷预备笔记已译部分；各分册书末资料及来源记录。
+-第III章两部分的§§1--5与§§6--7直接衔接。第0章原分载于第一卷、第三卷第一部分及第四卷第一部分；合并后仍保留$0_{\mathrm I}$、$0_{\mathrm{III}}$、$0_{\mathrm{IV}}$等出处标识与原著交叉引用。
++依原著内容排列：导言；归并后的第0章预备知识；第I章概形的语言；第II章若干类态射的初等整体研究；第III章凝聚层的上同调研究；第IV章待译范围说明；第V卷预备笔记；各分册书末资料和来源记录。第III章两部分的§§1--5与§§6--7直接衔接。第0章原分载于第一卷、第三卷第一部分及第四卷第一部分；保留其出处和原著交叉引用。
+ 
+-第V卷保留作为预备知识的“函数的奇异零点与超奇异零点”短篇，随后是“超平面截面与锥投影”。短篇的PS载体与合并英文稿第二篇开头重合，正文只排印一次，并注明两者的接合位置。
++第V卷沿用既有按内容排列的次序：先列函数的奇异零点与超奇异零点、光滑型和初等奇点，再接光滑二次型附录；随后为超平面截面与锥投影第一篇，之后是第三篇射影丛、相对除子与线性系，最后收入致迪厄多内的书信、手写提纲补遗及三块删划草稿的补译。PS短篇与合并英文稿的同文只排印一次。法文扫描的物理页序与手稿阅读次序不完全一致，具体对应见译注及工程来源表。
+ 
++\clearpage
+ \section*{实际收录范围}
+ \begin{longtable}{@{}p{.25\linewidth}p{.67\linewidth}@{}}
+-\toprule 材料&已收入的连续译文及状态\\\midrule\endhead
+-第一卷（1960）&导言；第0章§§1--7；第I章§§1--10，止于（10.15.7）；相关书末资料。正文沿用既有源码。\\
+-第二卷（1961）&第II章§§1--8，止于（8.14.14）；参考文献、索引、目录及勘误清单一。正文沿用既有源码。\\
++\toprule 材料&本版源码中的连续范围及状态\\\midrule\endhead
++第一卷（1960）&导言；第0章§§1--7；第I章§§1--10，止于（10.15.7）及证明；相关书末资料。正文沿用既有源码。\\
++第二卷（1961）&第II章§§1--8，止于（8.14.14）及证明；参考文献、索引、目录及勘误清单一。正文沿用既有源码。\\
+ 第三卷第一部分（1961）&第0章§§8--13；第III章§§1--5，止于（5.5.2）；相关书末资料。\\
+-第三卷第二部分（1963）&第III章§§6--7，止于（7.9.14）；记号索引、术语索引、原目录及勘误清单二。\\
+-第四卷第一部分（1964）&第0章补篇章首及§§14--23，止于（23.2.10，ii）与原著“待续”。第IV章主体尚未译入。旧条目（19.7.1.5）的较弱原版拓扑范围仍待核。\\
+-第V卷英文预备笔记&\texttt{EGAV1-2.ps}全部六页可读文字，经同文校订；\texttt{EGAVaiello.pdf}卷首及第一篇§§1--15已连续收入，其中原载体缺文保持标记；第二篇第62--66页前部与上述短篇同文，不重复计量。\\
++第三卷第二部分（1963）&第III章§§6--7，止于（7.9.14）；记号、术语索引、原目录及勘误清单二。\\
++第四卷第一部分（1964）&第0章补篇§§14--23，止于（23.2.10，ii）及原“待续”。正式第IV章主体仍未连续译入。\\
++第V卷预备笔记&既有第一篇§§1--15和短篇及其后续；本版接入英文物理78--112页的光滑二次型附录、第三篇及书信，并收入法文物理150页提纲和153页异扫说明。第一篇§§1--7与8.1--8.13采用新增回校稿；后续原有段落保留。原稿缺文、删划与未决事项仍明示。\\
+ \bottomrule
+ \end{longtable}
+ 
+-\section*{第五卷第66--77页增补状态}
+-三辑合计连续收录第50--68批。第三辑新增第63--68批：由IV.17.15《光滑型：增广与初等奇点》章首至15.7末。新增译校附记和证明限于所列条件，累计核查报告同步补入第50--68批。正式第IV章未改。
++\section*{本版整合与订正的性质}
++本轮把已经实存的Dot译稿并入统一输入链和目录，统一其版式并核对接合边界；不能把这四十批既有译稿算成本轮从头完成的新翻译。编号、脚注和必要原文层次在正文保留，较长的独立译校补证和校勘记录归入累计报告，并记录原批次及去向。旧译的独有注释亦保存在相应历史比较材料中。
+ 
+-\section*{第十七版新增与校订}
+-五十四批Dot译稿接续于第十六版的第一篇§6之后。第11节在原包中缺失，本版据英文底本第41--43页补译全节及原脚注57--60；第14节第54--55页相对锥投影和扩展锥投影之间的漏接亦据底本补齐。新增翻译与Dot既有完成量分开记录。
++已确认的原文错误采用有依据的订正，原错及理由写入脚注；缺文、难辨字和未证的一般化保持标记。原作者文字、原稿删划、英文编者说明、原批译者补证及本轮整合说明各按其身份阅读。第8.7(c)的缺续等问题没有因更新版次而消失；对某一附加假设下的补证也不能推广为整条原断言已经成立。
+ 
+-Dot随后两批的第16节定义1至注4(c)，与旧短篇已有文字重合；本版合入其校订，保留既有注4(d)及后文，不再重复排印。另将旧短篇中若干已核定的基底、外幂、维数、行列式和Jacobian判据问题落实到正确正文；原式与依据置脚注，旧源码逐字归档。
++本版没有重新逐句审定第I、II、III章和第0章，也没有把全部历史报告的意见重新证明一遍。本轮实际的来源对读、改动、编译和版面检查范围，见累计报告开头及工程检查记录。原报告的“本轮”均指其制作当时。
+ 
+-本版核查明确区分错误、缺步、缺文及未决事项。例如（7.4）和命题14.4(a)中的一条断言有反例而尚无完整修订，正文说明按所印假设不能采用，原陈述或公式保存在脚注与报告中；这不是作者正式撤销。可确定的修订直接进入正文，较长反例和补证归入独立核查报告。
++\section*{真实接续位置}
++第五卷英文底本的后续材料已经接到其物理末页112页的书信；法文扫描另有物理150页提纲和153页异扫的处理记录。到达英文末页不表示法文171页全部完成逐页校勘，也不把不存在的英文第113页当作续译点。
+ 
+-原稿未给出的（8.8）完整陈述、（9.4）待写正文、（9.5）残文以及其他不可辨认处不凭数学常识补造。英译稿中的未证推广、作者写作提示与正式刊行的第I--IV章分开标示。英译编辑署名Piotr Blass、Joseph Blass保持；此前第十七版主要核对上传的英文载体；增补所实际参考的法文物理页及印页详见译注与报告，不宣称全卷逐页对校。
++第一篇最新法英回校止于命题8.13（法文物理45--46页；英文物理31--32页）。下一回校位置是法文物理46页下部“Combinant 8.13”及推论8.14，接物理47页，对读英文物理32页；8.14及后文已有译稿可对照使用。
+ 
+-\section*{真实接续点与核查边界}
+-第IV章主体从\texttt{EGAIV.1.pdf}阅读器第221页的内容提要继续，随后为章首说明与第223页（印刷第224页）的（1.1.1）。
+-
+-第V卷从\texttt{EGAVaiello.pdf}物理第78页附录IV.17.16《光滑二次型》继续。对应法文扫描物理第161页。第66页交换图已合入，不能再作为当前缺译点。
+-
+-此前的第I、II、III章及第0章数学正文继续保留；它们没有因本次编译而获得重新逐句审定。历史报告中的意见与未决项仍保留其状态。本轮也没有把所有Dot译稿的每个数学证明重新验证一遍；具体核查对象、依据及限制见独立报告。
++正式第IV章仍另从\texttt{EGAIV.1.pdf}物理221页内容提要、222--223页章首说明及223页（1.1.1）接续。第0章§§14--23与预备手稿的拟定章号均不能替代正式第IV章主体。
+ 
+ \section*{版式与使用}
+-使用真正的\texttt{\string\documentclass[UTF8,a4paper]\{ctexbook\}}，由类文件决定默认字体、字号、版心、标题、页眉及双面分页；不另设字体或页边距。保留原章号、条目号、公式号，交换图以TeX排版。为四位页码保留的目录宽度仍为2.4em，右侧预留3.4em，正文版心保持默认。
++使用真正的\texttt{\string\documentclass[UTF8,a4paper]\{ctexbook\}}。字体、字号、正文版心、标题和双面分页由类文件默认决定，不另设字体或页边距。原章号、条目号和公式号保留，交换图以TeX排版。总目录指向本合订本；原分册目录所列页码仍指原版。为四位页码保留目录宽度，正文版心不变。默认双面分页所需空白页保留。
+ 
+-前置部分用罗马页码，正文和书末资料连续编号；总目录指向本合订本，原分册目录所列页码仍指原版。默认双面所需的空白页保持。
+-提供统一PDF、可独立编译的单文件TeX、累计核查报告及可接续的完整工程。工程含原始交付、底本、源码映射、实际进度、构建入口与校验记录；这些技术检查不等同于全部数学证明的形式化验证。
++提供合订PDF、可独立编译的单文件TeX、累计核查报告和工程。单文件无需其他正文输入，仍需XeLaTeX、相关宏包和默认字体。源码清单、构建日志、逐页比较和抽样渲染各有具体用途，均不代替全书数学审定。
+ \tableofcontents
+-
+--- v17/report.tex
++++ v18/report.tex
+@@ -10,22 +10,30 @@
+ \newcommand{\lead}[1]{\par\noindent\textbf{#1}\quad}
+ \newenvironment{analysisproof}{\par\noindent\textbf{该轮核查的反例或补证。}\ }{\par}
+ 
+-\hypersetup{pdftitle={代数几何基础：第十七版·第五卷增补第三辑译校核查报告},pdfsubject={第五卷增补批次50--68及历史核查档案}}
+-\title{代数几何基础\\译校核查报告\\[1em]\large 第十七版·第五卷增补第三辑}
++\hypersetup{pdftitle={代数几何基础：第十八版·Dot续稿与回校整合译校核查报告},pdfsubject={Dot第69--108批整合、来源对读与历史核查档案}}
++\title{代数几何基础\\译校核查报告\\[1em]\large 第十八版·Dot续稿与回校整合}
+ \author{原著对照、反例与补证}
+ \date{}
+ \begin{document}
+ \frontmatter
+ \maketitle
+ \head{报告说明}
+-本报告先核查第五卷增补第50--68批，再保留原第十七版及更早全部报告章节。正式第IV章未新增，断点仍为上传底本物理第221页提要。以下两段为原第十七版的说明，仅用于定位其当时的核查状态。
++本报告首先记录第十八版对Dot原批号69--108的整合：附录光滑二次型、第三篇、书信及来源补遗的接入，以及第一篇§§1--7、8.1--8.13的回校替换。正文和译校补证分别保存，报告中的补证按其原批次归属列明，不冒充作者原文。
+ 
+-本报告记录本版对Dot五十六批实际EGA V译稿的接合核查：五十四批进入第一篇的连续译文，随后两批作为与既有短篇重合的校订来源。另据底本补译第11节及第14节的一段漏接。旧短篇已有明确错误也作有据订正，原错与理由保存在脚注。详细来源、反例、补证与未决事项分列如下。
++本次有实际源码接合、有限源页对读和新的技术构建。具体对读页、发现的问题、验证条件及未决范围分别见本版记录；不能把已有批次的所有陈述都列为本轮重新证明。第I、II、III章、第0章以及较早的第五卷后文沿用其实际源码，正式第IV章主体仍未连续译入。
+ 
+-第十六版及之前的核查记录完整保留，它们不是本版再次逐项审定的结论。旧版H8-P01、预备笔记的缺文和未证推广等仍须依各条状态阅读。工程编译、页面渲染和文件校验的范围单独记载，不能替代数学证明的独立审定。
++第十七版增补第三辑及更早报告完整保留在历史部分。旧记录中的“本轮”、未收入位置及错误判断属于当时版本；若第十八版有更精确的法英对照，应结合本版说明阅读。文件散列、编译、PDF比对和渲染检查只说明各自的技术结果，不能替代数学审定。
+ 
+ \tableofcontents
+ \mainmatter
++\input{reports/v18_integration_audit.tex}
++\input{reports/v18_late_notes.tex}
++\input{reports/v18_early_notes.tex}
++\input{reports/v18_middle_notes.tex}
++\setcounter{secnumdepth}{-2}
++\part{历史核查记录：第十七版及增补第三辑}
++\setcounter{secnumdepth}{2}
++\NewNote{以下保留第十七版及其增补报告。这里的旧范围和旧判断不自动代表第十八版状态；涉及新回校段落时，应对照本报告开头及本版正文脚注。}
+ \input{reports/supplement_III_audit.tex}
+ \input{reports/seventeenth_integration.tex}
+ \input{reports/dot_early_audit.tex}
+--- v17/flatten_sources.py
++++ v18/flatten_sources.py
+@@ -1,9 +1,9 @@
+ #!/usr/bin/env python3
+-r"""Flatten TeX \input files only; fail on unexpected include paths."""
++r"""Flatten standalone-line TeX inputs without inserting paragraph breaks."""
+ from pathlib import Path
+ import re
+ ROOT = Path(__file__).resolve().parent
+-PATTERN = re.compile(r'\\input\{([^}]+)\}')
++PATTERN = re.compile(r'^[ \t]*\\input\{([^}]+)\}[ \t]*(?:%[^\n]*)?(?:\n|$)', re.MULTILINE)
+ def expand(path: Path, stack: tuple[Path, ...] = ()) -> str:
+     path = path.resolve()
+     if ROOT not in path.parents:
+@@ -11,13 +11,20 @@
+     if path in stack:
+         raise ValueError(f'Recursive input: {path}')
+     text = path.read_text(encoding='utf-8')
++    if len(re.findall(r'\\input\{', text)) != len(PATTERN.findall(text)):
++        raise ValueError(f'Unsupported non-standalone input in {path}')
+     def replace(match: re.Match[str]) -> str:
+         child = ROOT / match.group(1)
+         if not child.suffix:
+             child = child.with_suffix('.tex')
+-        return (f'\n% BEGIN {child.relative_to(ROOT)}\n'
+-                + expand(child, stack + (path,))
+-                + f'\n% END {child.relative_to(ROOT)}\n')
++        body = expand(child, stack + (path,))
++        if not body.endswith('\n'):
++            body += '\n'
++        # Consume the original input line's endline.  Extra empty lines would
++        # create \par tokens absent from the modular source, notably around
++        # local macro groups.  Keep all blank lines already present in body.
++        return (f'% BEGIN {child.relative_to(ROOT)}\n' + body
++                + f'% END {child.relative_to(ROOT)}\n')
+     return PATTERN.sub(replace, text)
+ if __name__ == '__main__':
+     for source, target in [('main.tex', 'single.tex'), ('report.tex', 'report_single.tex')]:

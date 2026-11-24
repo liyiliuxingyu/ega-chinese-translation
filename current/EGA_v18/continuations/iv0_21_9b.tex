@@ -1,0 +1,243 @@
+% 底本：EGAIV.1.pdf，PDF第177--180页，原分册印刷第178--181页。
+下面的命题是（21.7.3）的一个“形式”对应。
+
+\egas{21.9.6}{命题}
+设 $k_0\subseteq k\subseteq K_0$ 为三个特征 $p>0$ 的域，且 $[K_0:k]<\infty$。
+置
+\[
+\begin{aligned}
+ L_0&=K_0((T_1,\ldots,T_r)),&
+ M_0&=K_0((T_1^p,\ldots,T_r^p)),\\
+ L&=k((T_1,\ldots,T_r)),&
+ M&=k((T_1^p,\ldots,T_r^p)),\\
+ N&=k((T_1^{p^2},\ldots,T_r^{p^2})).
+\end{aligned}
+\]
+设 $E/L_0$ 为有限型扩张。
+
+（i）若 $\Upsilon_{K_0/k_0}$ 有限维，则
+\begin{equation}
+\begin{split}
+ \rk_E\Omega^1_{E/M}-\rk_{K_0}\Omega^1_{K_0/k}
+ =r+\trdeg_{L_0}E\qquad\qquad\\
+ {}+d(E/K_0,k_0)+d(E/M_0,N/k_0).
+\end{split}\tag{21.9.6.1}
+\end{equation}
+特别地，
+\begin{equation}
+ \rk_E\Omega^1_{E/M}-\rk_{K_0}\Omega^1_{K_0/k}
+ \ge r+\trdeg_{L_0}E+d(E/K_0,k_0).
+ \tag{21.9.6.2}
+\end{equation}
+若（21.9.6.2）取等号，则将 $k$ 换为任一满足 $k_0\subseteq k'\subseteq k$ 的域后，
+该等号仍成立，只要所用域继续满足命题的有限性前提。
+\cmt{L12-N06}{原文说可把 $k$ 换为任意 $k_0$ 与 $k$ 之间的子域。
+此断言沿用命题开头 $[K_0:k]<\infty$ 的前提；若新 $k'$ 使 $[K_0:k']$ 无限，
+（21.9.6.2）的两个秩未必有限，不能自动解释为一个定义良好的整数差。
+正文把这一使用范围明确写出；下文单调性证明在有限秩范围内成立。}
+
+（ii）再假设 $[k_0:k_0^p]<\infty$。
+若 $(k_\alpha)$ 是 $K_0$ 的向下滤过的子域族，每个包含 $k_0$，
+满足 $[K_0:k_\alpha]<\infty$，且
+$\bigcap_\alpha k_\alpha(K_0^p)=k_0(K_0^p)$，
+则存在 $\alpha$，使 $k=k_\alpha$ 时（21.9.6.2）取等号。
+
+\eproof
+（i）由（21.1.5，ii），在 $\Omega^1_{E/M}$ 中把 $M$ 换成 $M(L_0^p)$ 不改变这个模。
+由于 $L_0^p=K_0^p((T_1^p,\ldots,T_r^p))$，且 $[k(K_0^p):k]<\infty$，
+\[
+ M(L_0^p)=k(K_0^p)((T_1^p,\ldots,T_r^p)).
+\]
+同样，把 $k$ 换成 $k(K_0^p)$ 不改变 $\Omega^1_{K_0/k}$。
+所以可假设 $K_0^p\subseteq k$，以下一直采用这一假设。
+\cmt{L12-G13}{这一替换还需要检查（21.9.6.1）右端的缺陷项。
+替换后 $N$ 成为 $N(M_0^p)$：利用 $[k(K_0^p):k]<\infty$ 可逐系数展开得到此等式。
+由（21.1.5.1），$\Upsilon_{E/M_0/N}$ 不变，故
+$d(E/M_0,N/k_0)=\dim_E\Ker(\Upsilon_{E/M_0/k_0}\to\Upsilon_{E/M_0/N})$ 不变。
+正文归约因而同时保持等式两端；这补明原文略去的一个相容性检查。}
+再引入
+\[
+ k'_0=k_0(K_0^p),\qquad N'=k'_0((T_1^{p^2},\ldots,T_r^{p^2})),
+\]
+于是有域的交换图
+\[
+\begin{tikzcd}[column sep=small,row sep=large]
+ &K_0\arrow[rr]&&M_0\arrow[r]&L_0\arrow[r]&E\\
+ &k\arrow[u]\arrow[r]&N\arrow[r]&M\arrow[u]\arrow[r]&L\arrow[u]&\\
+ k_0\arrow[r]&k'_0\arrow[u]\arrow[r]&N'\arrow[u]&&&
+\end{tikzcd}
+\]
+以 $\delta$ 表示（21.9.6.2）左端减去右端所得的差。
+由（21.7.3），
+\[
+ \rk_E\Omega^1_{E/M}-\rk_{M_0}\Omega^1_{M_0/M}
+ =\trdeg_{M_0}E+d(E/M_0,M).
+\]
+\cmt{L12-T07}{底本第179页在首次应用（21.7.3）的这一行把第二个微分模的分子、分母写反，
+成为 $\Omega^1_{M/M_0}$；但实际包含关系是 $M\subseteq M_0$。
+正文改为 $\Omega^1_{M_0/M}$，这也与原文紧接着的下一条秩等式一致。}
+$L_0/M_0$ 有限，故 $\trdeg_{M_0}E=\trdeg_{L_0}E$。
+又因 $K_0$ 在 $k=k(K_0^p)$ 上的一组 $p$-基也是 $M_0/M$ 的一组 $p$-基，
+由（21.4.5），
+\[
+ \rk_{M_0}\Omega^1_{M_0/M}=\rk_{K_0}\Omega^1_{K_0/k}.
+\]
+于是
+\begin{equation}
+ \delta=d(E/M_0,M)-d(E/K_0,k_0)-r.
+ \tag{21.9.6.3}
+\end{equation}
+先回忆下面的经典引理。
+
+\egas{21.9.6.4}{引理}
+对任意域 $k$，形式幂级数环的分式域
+$K=k((T_1,\ldots,T_r))$ 是 $k$ 的可分扩张。
+
+\eproof
+为使论述完整，简要回忆证明。
+只须对每个有限扩张 $k'/k$ 证明 $K\otimes_kk'$ 无非零幂零元
+（Bourbaki，\textit{Alg.}，第VIII章，§7，第3节，定理1的证明）。
+置 $A=k[[T_1,\ldots,T_r]]$、$S=A\setminus\{0\}$，则
+\[
+ K\otimes_kk'=S^{-1}(A\otimes_kk').
+\]
+因为 $k'/k$ 有限，$A\otimes_kk'$ 典范同构于整环
+$A'=k'[[T_1,\ldots,T_r]]$，且 $A$ 识别为 $A'$ 的子环。
+相应局部化仍为整环，因而约化。
+\finishproof
+
+\noindent\textit{命题（21.9.6）的证明续。}
+由此引理和（21.6.2，ii），$d(L_0/K_0,k_0)=0$，
+再由（21.6.4.4）得到
+\[
+ d(E/K_0,k_0)=d(E/L_0,k_0).
+\]
+另一方面，（21.6.4.4）、（21.6.4.2）分别给出
+\begin{align*}
+ d(E/M_0,M)&=d(E/L_0,M)+d(L_0/M_0,M),\\
+ d(L_0/M_0,M)&=d(L_0/M_0,M/N)+d(L_0/M_0,N).
+\end{align*}
+所以
+\begin{align*}
+ \delta={}&d(E/L_0,M)+d(L_0/M_0,N)-d(E/L_0,k_0)\\
+          &+d(L_0/M_0,M/N)-r.
+\end{align*}
+下面证明
+\begin{equation}
+ d(L_0/M_0,M/N)=r.
+ \tag{21.9.6.5}
+\end{equation}
+按定义，
+\[
+ d(L_0/M_0,M/N)
+ =\rk_{L_0}\Upsilon_{L_0/M/N}-\rk_{M_0}\Upsilon_{M_0/M/N}.
+\]
+考虑两条正合列
+\[
+\begin{gathered}
+ 0\longrightarrow\Upsilon_{L_0/M/N}
+ \longrightarrow\Omega^1_{M/N}\otimes_ML_0
+ \longrightarrow\Omega^1_{L_0/N}
+ \longrightarrow\Omega^1_{L_0/M}\longrightarrow0,\\
+ 0\longrightarrow\Upsilon_{M_0/M/N}
+ \longrightarrow\Omega^1_{M/N}\otimes_MM_0
+ \longrightarrow\Omega^1_{M_0/N}
+ \longrightarrow\Omega^1_{M_0/M}\longrightarrow0.
+\end{gathered}
+\]
+交错秩相减，得到
+\begin{align*}
+ d(L_0/M_0,M/N)
+ ={}&\rk_{L_0}\Omega^1_{L_0/M}-\rk_{L_0}\Omega^1_{L_0/N}\\
+ &-\rk_{M_0}\Omega^1_{M_0/M}+\rk_{M_0}\Omega^1_{M_0/N}.
+\end{align*}
+而 $N(L_0^p)\supseteq M$，故
+$\Omega^1_{L_0/N}=\Omega^1_{L_0/M}$（21.1.5，ii）。
+此外 $T_1^p,\ldots,T_r^p$ 构成 $M/N$ 的 $p$-基，
+$K_0/k$ 的一组 $p$-基又是 $M_0/M$ 的一组 $p$-基；
+因 $M_0^p\subseteq N$，由（21.4.5）和（21.1.10）得
+\[
+ \rk_{M_0}\Omega^1_{M_0/N}
+ =r+\rk_{K_0}\Omega^1_{K_0/k}
+ =r+\rk_{M_0}\Omega^1_{M_0/M}.
+\]
+这就证明了（21.9.6.5）。
+
+再由（21.6.4.2），
+\begin{align*}
+ d(E/L_0,M)-d(E/L_0,k_0)&=d(E/L_0,M/k_0),\\
+ d(L_0/M_0,N)&=d(L_0/M_0,N/k)+d(L_0/M_0,k).
+\end{align*}
+$L_0/K_0$ 可分（21.9.6.4），所以 $d(L_0/K_0,k)=0$，
+进而 $d(L_0/M_0,k)=0$（21.6.2及21.6.4）。因此
+\[
+ \delta=d(E/L_0,M/k_0)+d(L_0/M_0,N/k).
+\]
+对第一项连续应用两次（21.6.4.2），得
+\begin{align*}
+ d(E/L_0,M/k_0)
+ ={}&d(E/L_0,M/N)+d(E/L_0,N/k)\\
+ &+d(E/L_0,k/k_0).
+\end{align*}
+因 $M\subseteq N(L_0^p)$，有 $d(E/L_0,M/N)=0$（21.6.2）；
+再用（21.6.4.4）合并另外两项，得到
+\[
+ \delta=d(E/L_0,k/k_0)+d(E/M_0,N/k).
+\]
+$M_0$、$L_0$ 都在 $K_0$ 上可分（21.9.6.4），
+故 $d(L_0/K_0,k/k_0)=d(M_0/K_0,k/k_0)=0$（21.6.2）。
+再应用（21.6.4.4），
+\[
+ d(E/L_0,k/k_0)=d(E/K_0,k/k_0)=d(E/M_0,k/k_0).
+\]
+最后用（21.6.4.2），即得
+\[
+ \delta=d(E/M_0,N/k_0)\ge0.
+\]
+这证明（21.9.6.1）及（21.9.6.2）。
+若将 $k$ 换成子域 $k'$，则 $N$ 换成子域 $N''$，而
+$d(E/M_0,N''/k_0)\le d(E/M_0,N/k_0)$（21.6.4.2）。
+所以在秩差仍有定义的上述范围内，取等号的性质保留，证明了（i）的最后一项。
+
+（ii）仍可先把 $k_\alpha$ 换成 $k_\alpha(K_0^p)$，故假设 $K_0^p\subseteq k_\alpha$。
+置 $N_\alpha=k_\alpha((T_1^{p^2},\ldots,T_r^{p^2}))$。
+由（21.9.6.1）和（21.8.3），只须证明
+\[
+ \bigcap_\alpha N_\alpha=k_0(M_0^p),
+\]
+因为 $E/M_0$ 有限型，且每个 $N_\alpha$ 均包含 $M_0^p$。
+由（21.8.8.3）及假设 $\bigcap_\alpha k_\alpha=k_0(K_0^p)$，有
+\begin{equation}
+ \bigcap_\alpha N_\alpha
+ =N'=(k_0(K_0^p))((T_1^{p^2},\ldots,T_r^{p^2})).
+ \tag{21.9.6.6}
+\end{equation}
+又 $k_0(M_0^p)=k_0(K_0^p((T_1^{p^2},\ldots,T_r^{p^2})))$。
+所以要完成（ii）的证明，只须使用下一个引理。
+
+\egas{21.9.6.7}{引理}
+设 $k_0$ 为特征 $p>0$ 的域，且 $[k_0:k_0^p]<\infty$；$K_0/k_0$ 为域扩张。
+则
+\begin{equation}
+ (k_0(K_0^p))((T_1,\ldots,T_r))
+ =k_0(K_0^p((T_1,\ldots,T_r))).
+ \tag{21.9.6.8}
+\end{equation}
+
+\eproof
+由于 $k_0^p\subseteq K_0^p$，
+\[
+ k_0^p(K_0^p((T_1,\ldots,T_r)))=K_0^p((T_1,\ldots,T_r)).
+\]
+若 $c_1,\ldots,c_n$ 是 $k_0/k_0^p$ 的一组基，
+则它们同时生成（21.9.6.8）两端作为
+$K_0^p((T_1,\ldots,T_r))$-向量空间，故两端相等。
+\cmt{L12-N07}{这里用的是有限生成系，不要求 $(c_i)$ 在扩大系数域后仍线性无关。
+可先逐系数将左端的幂级数写成有限和 $\sum_i c_i f_i$，再取分式域。
+有限性 $[k_0:k_0^p]<\infty$ 使同一有限组 $(c_i)$ 对所有系数同时适用；
+下一条原著反例正说明不能直接删除这一假设。}
+\finishproof
+
+由此引理，（21.9.6.6）右端就是 $k_0(M_0^p)$，
+因而（21.8.3）保证某个 $N_\alpha$ 对 $E/M_0$ 为 $k_0$-可容许域，
+即相应的 $\delta=0$；命题（21.9.6）证毕。

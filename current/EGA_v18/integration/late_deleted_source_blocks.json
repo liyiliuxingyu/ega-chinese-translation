@@ -1,0 +1,126 @@
+{
+  "schema": "ega-v18-three-deleted-blocks/1",
+  "source_pdf": "archive_20261121/03_sources/EGA5_francais.pdf",
+  "source_pdf_sha256": "24cf8204184b58b18a46e5f63ecc36d6e791b3c8c96a09daac93de96ebd8e830",
+  "target": "continuations/v18_deleted_addenda.tex",
+  "target_sha256": "86e8bfd384111ffe7d018c2ab6ce27b089e31d49c3c8f8dbdfe6241b2b3739fb",
+  "scope": "V-D",
+  "reading_method": "实际查看全页及六张PDF局部放大图；未用OCR替代目视",
+  "peer_review": {
+    "reviewer": "parent /root",
+    "method": "父代理读完整TeX并逐块对照自己渲染的126/136/140源图；内部协作消息确认可辨主体、边界、缺损、末逗号及三项主要订正",
+    "limits": "仅此三块，不是全171页源稿完整性审计",
+    "layout_note": "父代理内容复核后，仅将V18-D136-01引标前移到同段公式引导句，脚注内容不变；随后实际编译并复看页面。"
+  },
+  "rows": [
+    {
+      "source_page": 126,
+      "handwritten_page": "133",
+      "image": "integration/late_source_views/fr_126.png",
+      "detail_images": [
+        "integration/late_source_views/fr_126_deleted.png",
+        "integration/late_source_views/fr_126_formula.png"
+      ],
+      "approx_normalized_bounds": [
+        0.06,
+        0.1,
+        0.96,
+        0.67
+      ],
+      "length": "约19行打字主体，夹有数处手写插入；逐行数含插行时会不同",
+      "start": "Soit X plat et loc de présentation finie sur S",
+      "end": "III, et au plus tard dans V.",
+      "old_notice_module": "continuations/v18_batch077.tex",
+      "old_notice_id": "L18-077-01",
+      "destination_section": "法文物理第126页：除子族的旧引入",
+      "unclear": [
+        "参数概形公式末端小笔迹是否对偶记号",
+        "次数n附近的短小手写补记",
+        "局部覆打的旧词"
+      ],
+      "corrections": [
+        "由S参数化改为由T参数化，并说明原误",
+        "明确参数模为(Sym^n E)^vee，不强认不清的小记号",
+        "全体有效除子函子的按次数不交和限定于E秩至少2，秩1重复为空除子的理由见脚注"
+      ],
+      "image_sha256": "d82ac8ec8bf9e42c415c0a000928efba4e754e58348803cba806f5267765e0c4",
+      "detail_image_sha256s": {
+        "integration/late_source_views/fr_126_deleted.png": "e55704181576e0f53b1243911b8f58960c04e126f7e83c2995eda301783e46a2",
+        "integration/late_source_views/fr_126_formula.png": "ff8e058797cc5547e59c442b6a58df36e54151bb2c3864ea270b923e4be4ea88"
+      },
+      "status": "可辨主体已补译，未辨部分明确标记；旧稿的划销身份保留"
+    },
+    {
+      "source_page": 136,
+      "handwritten_page": "143",
+      "image": "integration/late_source_views/fr_136.png",
+      "detail_images": [
+        "integration/late_source_views/fr_136_deleted.png",
+        "integration/late_source_views/fr_136_overstrike.png"
+      ],
+      "approx_normalized_bounds": [
+        0.08,
+        0.37,
+        0.97,
+        0.82
+      ],
+      "length": "下半页约15行打字主体，夹手改；上半另约3行密集覆打不能整句恢复",
+      "start": "La proposition 2 b) nous montre",
+      "end": "associé au système lin de diviseurs D.",
+      "old_notice_module": "continuations/v18_batch081.tex",
+      "old_notice_id": "L18-081-02",
+      "destination_section": "法文物理第136页：关联可逆模的旧论证",
+      "unclear": [
+        "两个关于D的附加条件；一个在右缘截断，一个记号不可靠",
+        "上半密集覆打的整句和余维式比较号"
+      ],
+      "corrections": [
+        "L=pr_{1*}(N)改为先张量参数侧O(-1)再推前",
+        "恢复式限定参数射影丛非空纤维",
+        "唯一同构连同给出的分解识别理解；稠密性单独不足以延拓任意可逆层的限定见脚注"
+      ],
+      "image_sha256": "f5956b65a75bd7ad7e8eaf2674875c63ca488f9b4380882f14cc4cadfba9a764",
+      "detail_image_sha256s": {
+        "integration/late_source_views/fr_136_deleted.png": "7c112d500578fad8dd0625e4a42915310c98f3f47690945d5ce60f4be14ec791",
+        "integration/late_source_views/fr_136_overstrike.png": "8832be18c5013bf21b0e777a674d9ed675c9952d733e05c055a59542f9ee6a29"
+      },
+      "status": "可辨主体已补译，未辨部分明确标记；旧稿的划销身份保留"
+    },
+    {
+      "source_page": 140,
+      "handwritten_page": "147",
+      "image": "integration/late_source_views/fr_140.png",
+      "detail_images": [
+        "integration/late_source_views/fr_140_deleted.png",
+        "integration/late_source_views/fr_140_marginal.png"
+      ],
+      "approx_normalized_bounds": [
+        0.1,
+        0.3,
+        0.97,
+        0.64
+      ],
+      "length": "约10行主体（含一行态射式）；左侧另有斜边注",
+      "start": "Le résultat suivant, de nature moins technique que 5.2.",
+      "end": "au cas de deux sections de P^vee sur S,",
+      "old_notice_module": "continuations/v18_batch082.tex",
+      "old_notice_id": "L18-082-07",
+      "destination_section": "法文物理第140页：旧推论5.3及未竟解释",
+      "unclear": [
+        "左边斜向手写的完整句法与插入位置"
+      ],
+      "corrections": [
+        "按忠实平坦局部有限表示的原弱假设，原单态射断言不能采用",
+        "原弱命题完整译于V18-D140-01脚注，并给4.3的P1删两点反例",
+        "可用加强条件明确来自4.3(a)，不归为此删稿本已有修订",
+        "末句原有逗号和未竟身份保留"
+      ],
+      "image_sha256": "e6e7a0b58cc39f7bba5b3d6f221de71c4c5bcb634be4d801dd9a75723ab361e6",
+      "detail_image_sha256s": {
+        "integration/late_source_views/fr_140_deleted.png": "09e97b0d5c1dfedd2bf10665f55ecb626ec9469df574c5fa8f21efc8fe761ec9",
+        "integration/late_source_views/fr_140_marginal.png": "8edc5ed4e0a117ec25d5f9c067fbe37a43c0abd76f7fd4f28602ba8236d16de4"
+      },
+      "status": "可辨主体已补译，未辨部分明确标记；旧稿的划销身份保留"
+    }
+  ]
+}

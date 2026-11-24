@@ -1,0 +1,2229 @@
+\renewcommand{\B}{\mathscr B}
+\setcounter{chapter}{2}
+\chapter{凝聚层的上同调研究}
+\src{81--82}
+\begin{center}\textbf{内容提要}\end{center}
+\begin{enumerate}[label=\S\,\arabic*.,leftmargin=2.8em]
+\item 仿射概形的上同调。
+\item 射影态射的上同调研究。
+\item 固有态射的有限性定理。
+\item 固有态射的基本定理及其应用。
+\item 凝聚代数层的一个存在定理。
+\item 局部与整体的 Tor 和 Ext 函子；Künneth 公式。
+\item 模的协变上同调函子中的基变换研究。
+\item 射影丛上的对偶定理。
+\item 相对上同调与局部上同调；局部对偶。
+\item 射影上同调与局部上同调的关系；沿除子的形式完备化技术。
+\item 整体与局部的 Picard 群。\origfootnote{第IV章不依赖于 §§8—11，而且很可能在这些节之前发表。}
+\end{enumerate}
+\transnote{这是原著对整个第III章所列的内容提要。本次上传的“第一部分”实际收入第III章 §§1—5；提要中 §§6—11 的标题不表示本册包含这些节的正文。}
+
+本章给出凝聚代数层上同调的基本定理，但不包括由留数理论推出的定理（即对偶定理）；后者将在以后的某章中研究。在前一类定理中，主要有六个基本定理，分别构成本章前六节的内容。以后这些结果将成为重要工具，即使所讨论的问题本身并非上同调性质的问题，也同样如此；读者从第4节起就能看到最初的例子。第7节给出一些更具技术性的结果，但在应用中经常需要使用。最后，§§8—11 将展开一些与凝聚层对偶有关、对应用特别重要而又能在一般留数理论之前叙述的结果。
+
+§§1—2 的内容归功于 J.-P. Serre；读者将会看到，我们只需沿用（FAC）的叙述。§§8—9 同样受到（FAC）的启发，不过，由于背景不同而必须作出的转化并不那么显然。最后，正如我们在导言中所说，第4节应看作以现代语言重新表述 Zariski 的“全纯函数理论”中的基本“不变性定理”。
+
+还应指出，3.4 小节的结果以及预备命题（0，13.4—13.7）不会用于第III章的后续部分，初读时可以略去。
+
+\section{仿射概形的上同调}
+\subsection{外代数复形的回顾}
+\src{82--85}
+\egapar{1.1.1}
+设 $A$ 为环，$\mathbf f=(f_i)_{1\leq i\leq r}$ 为 $A$ 的 $r$ 个元素组成的系统。与 $\mathbf f$ 对应的\textbf{外代数复形} $K_\bullet(\mathbf f)$ 是如下定义的链复形（G，I，2.2）：其分次 $A$-模为外代数 $\bigwedge(A^r)$，赋予通常的分次；边缘算子为内乘 $i_{\mathbf f}$，这里将 $\mathbf f$ 看成对偶模 $(A^r)^\vee$ 的元素。回顾，$i_{\mathbf f}$ 是 $\bigwedge(A^r)$ 上次数为 $-1$ 的反导子；若 $(e_i)_{1\leq i\leq r}$ 是 $A^r$ 的典范基，则 $i_{\mathbf f}(e_i)=f_i$。条件 $i_{\mathbf f}\circ i_{\mathbf f}=0$ 可立即验证。
+
+一个等价定义如下：对每个 $i$，令链复形 $K_\bullet(f_i)$ 满足 $K_0(f_i)=K_1(f_i)=A$，而 $n\ne0,1$ 时 $K_n(f_i)=0$；其边缘算子 $d_1:A\to A$ 是乘以 $f_i$。令
+\[
+K_\bullet(\mathbf f)=K_\bullet(f_1)\otimes_A\cdots\otimes_A K_\bullet(f_r)
+\]
+并赋予总次数（G，I，2.7）。此复形与前一定义的复形同构，验证是直接的。
+
+\egapar{1.1.2}
+对每个 $A$-模 $M$，定义链复形
+\begin{equation}\tag{1.1.2.1}
+K_\bullet(\mathbf f,M)=K_\bullet(\mathbf f)\otimes_AM
+\end{equation}
+及上链复形（G，I，2.2）
+\begin{equation}\tag{1.1.2.2}
+K^\bullet(\mathbf f,M)=\Hom_A(K_\bullet(\mathbf f),M).
+\end{equation}
+若 $g$ 是后一复形中的 $k$-上链，令
+\[
+g(i_1,\ldots,i_k)=g(e_{i_1}\wedge\cdots\wedge e_{i_k}),
+\]
+则 $g$ 可识别为从 $[1,r]^k$ 到 $M$ 的交错映射。由上述定义有
+\begin{equation}\tag{1.1.2.3}
+d^kg(i_1,\ldots,i_{k+1})=
+\sum_{h=1}^{k+1}(-1)^{h-1}f_{i_h}g(i_1,\ldots,\widehat{i_h},\ldots,i_{k+1}).
+\end{equation}
+
+\egapar{1.1.3}
+由这些复形，照例得到同调与上同调 $A$-模（G，I，2.2）
+\begin{equation}\tag{1.1.3.1}
+\mathrm H_\bullet(\mathbf f,M)=\mathrm H_\bullet(K_\bullet(\mathbf f,M)),
+\end{equation}
+\begin{equation}\tag{1.1.3.2}
+\mathrm H^\bullet(\mathbf f,M)=\mathrm H^\bullet(K^\bullet(\mathbf f,M)).
+\end{equation}
+还可定义 $A$-同构 $K_\bullet(\mathbf f,M)\simeq K^\bullet(\mathbf f,M)$：将链
+\[
+z=\sum(e_{i_1}\wedge\cdots\wedge e_{i_k})\otimes m_{i_1\cdots i_k}
+\]
+对应于上链 $g_z$，令 $g_z(j_1,\ldots,j_{r-k})=\varepsilon m_{i_1\cdots i_k}$；这里严格递增序列 $(j_h)$ 是严格递增序列 $(i_h)$ 在 $[1,r]$ 中的补序列，$\varepsilon=(-1)^\nu$，$\nu$ 是排列 $i_1,\ldots,i_k,j_1,\ldots,j_{r-k}$ 的逆序数。验证可得 $g_{dz}=d(g_z)$，从而有同构
+\begin{equation}\tag{1.1.3.3}
+\mathrm H^i(\mathbf f,M)\simeq\mathrm H_{r-i}(\mathbf f,M)\qquad(0\leq i\leq r).
+\end{equation}
+本章主要考察上同调模 $\mathrm H^\bullet(\mathbf f,M)$。
+
+固定 $\mathbf f$ 时，立即可见（G，I，2.1），$M\mapsto\mathrm H^\bullet(\mathbf f,M)$ 是从 $A$-模范畴到分次 $A$-模范畴的上同调函子（T，II，2.1），在次数小于 $0$ 或大于 $r$ 时为零。此外，若 $(\mathbf f)$ 表示 $f_1,\ldots,f_r$ 生成的理想，则
+\begin{equation}\tag{1.1.3.4}
+\mathrm H^0(\mathbf f,M)=\Hom_A(A/(\mathbf f),M).
+\end{equation}
+这直接来自（1.1.2.3），且 $\mathrm H^0(\mathbf f,M)$ 显然可识别为 $M$ 中被 $(\mathbf f)$ 零化的子模。同样，由（1.1.2.3）有
+\begin{equation}\tag{1.1.3.5}
+\mathrm H^r(\mathbf f,M)=M\Big/\sum_{i=1}^rf_iM=(A/(\mathbf f))\otimes_AM.
+\end{equation}
+以下将使用一个已知结果；为叙述完整，回顾其证明。
+
+\egastatement{1.1.4}{命题}
+设 $A$ 为环，$\mathbf f=(f_i)_{1\leq i\leq r}$ 是 $A$ 的有限元素族，$M$ 为 $A$-模。若对 $1\leq i\leq r$，在 $M_{i-1}=M/(f_1M+\cdots+f_{i-1}M)$ 上的数乘 $z\mapsto f_iz$ 是单射，则 $i\ne r$ 时 $\mathrm H^i(\mathbf f,M)=0$。
+\eproof 由（1.1.3.3），只需证明 $i>0$ 时 $\mathrm H_i(\mathbf f,M)=0$。对 $r$ 归纳，$r=0$ 显然。令 $\mathbf f'=(f_i)_{1\leq i\leq r-1}$；此族满足命题条件。令 $L_\bullet=K_\bullet(\mathbf f',M)$，则归纳假设给出 $i>0$ 时 $\mathrm H_i(L_\bullet)=0$，而（1.1.3.3）、（1.1.3.5）给出 $\mathrm H_0(L_\bullet)=M_{r-1}$。简记 $K_\bullet=K_\bullet(f_r)=K_0\oplus K_1$，其中 $K_0=K_1=A$，$d_1:K_1\to K_0$ 是乘以 $f_r$。按定义（1.1.1），$K_\bullet(\mathbf f,M)=K_\bullet\otimes_AL_\bullet$。使用以下引理。
+
+\egastatement{1.1.4.1}{引理}
+设 $K_\bullet$ 是由自由 $A$-模组成的链复形，除维数 $0,1$ 外各项均为零。对每个 $A$-模链复形 $L_\bullet$ 及每个指标 $p$，有正合列
+\[
+0\to\mathrm H_0(K_\bullet\otimes_A\mathrm H_p(L_\bullet))
+\to\mathrm H_p(K_\bullet\otimes_AL_\bullet)
+\to\mathrm H_1(K_\bullet\otimes_A\mathrm H_{p-1}(L_\bullet))\to0.
+\]
+\begin{proof}
+这是 Künneth 谱序列低次项正合列的一个特例（M，XV，5.2，a；G，I，5.5.2），也可直接证明。将 $K_0,K_1$ 看作分别只在维数 $0,1$ 非零的链复形，则有复形正合列
+\[
+0\to K_0\otimes_AL_\bullet\to K_\bullet\otimes_AL_\bullet\to K_1\otimes_AL_\bullet\to0.
+\]
+对它应用同调长正合列，得到
+\[
+\begin{aligned}
+\cdots&\to\mathrm H_{p+1}(K_1\otimes_AL_\bullet)\xrightarrow{\partial}\mathrm H_p(K_0\otimes_AL_\bullet)\\
+&\to\mathrm H_p(K_\bullet\otimes_AL_\bullet)\to\mathrm H_p(K_1\otimes_AL_\bullet)
+\xrightarrow{\partial}\mathrm H_{p-1}(K_0\otimes_AL_\bullet)\to\cdots.
+\end{aligned}
+\]
+显然 $\mathrm H_p(K_0\otimes_AL_\bullet)=K_0\otimes_A\mathrm H_p(L_\bullet)$，且
+$\mathrm H_p(K_1\otimes_AL_\bullet)=K_1\otimes_A\mathrm H_{p-1}(L_\bullet)$。又立即可验证，算子 $\partial:K_1\otimes_A\mathrm H_p(L_\bullet)\to K_0\otimes_A\mathrm H_p(L_\bullet)$ 就是 $d_1\otimes1$。引理由此正合列以及 $\mathrm H_0(K_\bullet\otimes_A\mathrm H_p(L_\bullet))$、$\mathrm H_1(K_\bullet\otimes_A\mathrm H_p(L_\bullet))$ 的定义得出。
+\end{proof}
+引理成立后，（1.1.4）的证明立即完成：归纳假设与引理给出 $p\geq2$ 时 $\mathrm H_p(K_\bullet\otimes_AL_\bullet)=0$。若再证明 $\mathrm H_1(K_\bullet\otimes_A\mathrm H_0(L_\bullet))=0$，引理就给出 $\mathrm H_1(K_\bullet\otimes_AL_\bullet)=0$；但按定义，前者正是 $M_{r-1}$ 上数乘 $z\mapsto f_rz$ 的核，而该核按假设为零。\finishproof
+
+\egapar{1.1.5}
+设 $\mathbf g=(g_i)_{1\leq i\leq r}$ 为 $A$ 的另一个 $r$ 元素序列，令 $\mathbf{fg}=(f_ig_i)_{1\leq i\leq r}$。可以定义典范复形同态
+\begin{equation}\tag{1.1.5.1}
+\varphi_{\mathbf g}:K_\bullet(\mathbf{fg})\to K_\bullet(\mathbf f),
+\end{equation}
+即将 $A$-线性映射 $(z_1,\ldots,z_r)\mapsto(g_1z_1,\ldots,g_rz_r)$ 典范地延拓到外代数 $\bigwedge(A^r)$。为说明它确为复形同态，只需注意更一般的事实：若 $u:E\to F$ 为 $A$-线性映射，$x\in F^\vee$，$y={}^tu(x)\in E^\vee$，则
+\begin{equation}\tag{1.1.5.2}
+(\bigwedge u)\circ i_y=i_x\circ(\bigwedge u).
+\end{equation}
+事实上，两边是 $\bigwedge F$ 的反导子，只需验证它们在 $F$ 上相等，这由定义直接得出。\transnote{原文此处写“两边是 $\bigwedge F$ 的反导子，在 $F$ 上验证”。按所列 $u:E\to F$，两边实际是从 $\bigwedge E$ 到 $\bigwedge F$ 的、相对于 $\bigwedge u$ 的反导子，应在 $E$ 上验证；上述公式本身保留。}
+若将 $K_\bullet(\mathbf f)$ 识别为各 $K_\bullet(f_i)$ 的张量积（1.1.1），则 $\varphi_{\mathbf g}$ 是各 $\varphi_{g_i}$ 的张量积；其中 $\varphi_{g_i}$ 在零次为恒等，在一次为乘以 $g_i$。
+
+\egapar{1.1.6}
+特别地，对 $0\leq n\leq m$，有复形同态
+\begin{equation}\tag{1.1.6.1}
+\varphi_{\mathbf f^{m-n}}:K_\bullet(\mathbf f^m)\to K_\bullet(\mathbf f^n),
+\end{equation}
+从而有同态
+\begin{equation}\tag{1.1.6.2}
+\varphi_{m-n}:K^\bullet(\mathbf f^n,M)\to K^\bullet(\mathbf f^m,M),
+\end{equation}
+\begin{equation}\tag{1.1.6.3}
+\varphi_{m-n}:\mathrm H^\bullet(\mathbf f^n,M)\to\mathrm H^\bullet(\mathbf f^m,M).
+\end{equation}
+对 $p\leq n\leq m$，后两者显然满足 $\varphi_{m-p}=\varphi_{m-n}\circ\varphi_{n-p}$，因而定义两个 $A$-模的归纳系统。令
+\begin{equation}\tag{1.1.6.4}
+C^\bullet((\mathbf f),M)=\ilim_nK^\bullet(\mathbf f^n,M),
+\end{equation}
+\begin{equation}\tag{1.1.6.5}
+\mathrm H^\bullet((\mathbf f),M)=\mathrm H^\bullet(C^\bullet((\mathbf f),M))
+=\ilim_n\mathrm H^\bullet(\mathbf f^n,M).
+\end{equation}
+末一等式来自归纳极限与 $\mathrm H^\bullet$ 可交换（G，I，2.1）。以后将看到（1.4.3），$\mathrm H^\bullet((\mathbf f),M)$ 实际只依赖于理想 $(\mathbf f)$，甚至只依赖于 $A$ 上的 $(\mathbf f)$-预进拓扑，因此上述记号是恰当的。显然 $M\mapsto C^\bullet((\mathbf f),M)$ 是 $A$-线性正合函子，而 $M\mapsto\mathrm H^\bullet((\mathbf f),M)$ 是上同调函子。
+
+\egapar{1.1.7}
+设 $\mathbf f,\mathbf g\in A^r$；以 $e_{\mathbf g}$ 表示外代数 $\bigwedge(A^r)$ 中以向量 $\mathbf g$ 左乘的算子。有\textbf{同伦公式}
+\begin{equation}\tag{1.1.7.1}
+i_{\mathbf f}e_{\mathbf g}+e_{\mathbf g}i_{\mathbf f}=(\mathbf g,\mathbf f)1
+\end{equation}
+在 $A$-模 $A^r$ 上成立（$1$ 表示 $A^r$ 的恒等自同构）；此关系也表示在复形 $K_\bullet(\mathbf f)$ 中有
+\begin{equation}\tag{1.1.7.2}
+de_{\mathbf g}+e_{\mathbf g}d=(\mathbf g,\mathbf f)1.
+\end{equation}
+若 $(\mathbf f)=A$，则存在 $\mathbf g\in A^r$ 使 $(\mathbf g,\mathbf f)=\sum_{i=1}^rg_if_i=1$。因此（G，I，2.4）：
+
+\egastatement{1.1.8}{命题}
+若 $f_i$ 生成的理想 $(\mathbf f)$ 等于 $A$，则复形 $K_\bullet(\mathbf f)$ 同伦平凡；因而对每个 $A$-模 $M$，$K_\bullet(\mathbf f,M)$、$K^\bullet(\mathbf f,M)$ 也都同伦平凡。
+
+\egastatement{1.1.9}{推论}
+若 $(\mathbf f)=A$，则对每个 $A$-模 $M$，有 $\mathrm H^\bullet(\mathbf f,M)=0$ 及 $\mathrm H^\bullet((\mathbf f),M)=0$。
+\begin{proof}此时对每个 $n$ 都有 $(\mathbf f^n)=A$。\end{proof}
+
+\egastatement{1.1.10}{注}
+采用上述记号，设 $X=\Spec A$，$Y$ 为理想 $(\mathbf f)$ 定义的闭子概形。将在第9节证明，$\mathrm H^\bullet((\mathbf f),M)$ 同构于相对于 $Y$ 的闭子集所成反滤子的上同调 $\mathrm H_Y^\bullet(X,\wt M)$（T，3.2）。还将证明，命题（1.2.3）用于 $X$ 和 $\F=\wt M$ 时，是上同调正合列
+\[
+\cdots\to\mathrm H_Y^p(X,\F)\to\mathrm H^p(X,\F)\to\mathrm H^p(X-Y,\F)
+\to\mathrm H_Y^{p+1}(X,\F)\to\cdots
+\]
+的一个特例。
+
+\subsection{开覆盖的 Čech 上同调}
+\src{85--88}
+\egapar{1.2.1}\textbf{记号。}
+本小节以 $X$ 表示预概形，$\F$ 表示拟凝聚 $\OO_X$-模，令 $A=\Gamma(X,\OO_X)$、$M=\Gamma(X,\F)$；以 $\mathbf f=(f_i)_{1\leq i\leq r}$ 表示 $A$ 中的有限元素系统，令 $U_i=X_{f_i}$ 为满足 $f_i(x)\ne0$ 的点组成的开集（$\OI$，5.5.2），$U=\bigcup_iU_i$，$\mathfrak U=(U_i)_{1\leq i\leq r}$ 为 $U$ 的覆盖。
+
+\egapar{1.2.2}
+假设 $X$ 的底空间诺特，或者 $X$ 是底空间拟紧的概形。于是已知（I，9.3.3），$\Gamma(U_i,\F)=M_{f_i}$。令
+\[
+U_{i_0\cdots i_p}=\bigcap_{k=0}^pU_{i_k}=X_{f_{i_0}\cdots f_{i_p}}
+\]
+（$\OI$，5.5.3），故也有
+\begin{equation}\tag{1.2.2.1}
+\Gamma(U_{i_0\cdots i_p},\F)=M_{f_{i_0}\cdots f_{i_p}}.
+\end{equation}
+根据（$\OI$，1.6.1），右边识别为系统 $M^{(n)}_{i_0\cdots i_p}=M$ 的归纳极限；对 $m\leq n$，过渡同态 $\varphi_{nm}$ 为乘以 $(f_{i_0}\cdots f_{i_p})^{n-m}$。对每个 $n$，以 $C_n^p(M)$ 表示从 $[1,r]^{p+1}$ 到 $M$ 的交错映射所成 $A$-模。这些模也相对于 $\varphi_{nm}$ 构成归纳系统。若 $C^p(\mathfrak U,\F)$ 是覆盖 $\mathfrak U$ 的、系数在 $\F$ 中的交错 Čech $p$-上链群（G，II，5.1），则
+\begin{equation}\tag{1.2.2.2}
+C^p(\mathfrak U,\F)=\ilim_n C_n^p(M).
+\end{equation}
+采用（1.1.2）的记号，$C_n^p(M)$ 识别为 $K^{p+1}(\mathbf f^n,M)$，$\varphi_{nm}$ 识别为（1.1.6）定义的 $\varphi_{n-m}$。故对每个 $p\geq0$ 有关于 $\F$ 的典范函子同构
+\begin{equation}\tag{1.2.2.3}
+C^p(\mathfrak U,\F)\simeq C^{p+1}((\mathbf f),M).
+\end{equation}
+公式（1.1.2.3）及覆盖上同调的定义（G，II，5.1）说明这些同构与上边缘算子相容。
+
+\egastatement{1.2.3}{命题}
+若 $X$ 是底空间诺特的预概形，或底空间拟紧的概形，则存在关于 $\F$ 的典范函子同构
+\begin{equation}\tag{1.2.3.1}
+\mathrm H^p(\mathfrak U,\F)\simeq\mathrm H^{p+1}((\mathbf f),M)\quad(p\geq1),
+\end{equation}
+以及关于 $\F$ 的函子正合列
+\begin{equation}\tag{1.2.3.2}
+0\to\mathrm H^0((\mathbf f),M)\to M\to\mathrm H^0(\mathfrak U,\F)
+\to\mathrm H^1((\mathbf f),M)\to0.
+\end{equation}
+\begin{proof}
+同构由（1.2.2）立即得出。又 $C^0(\mathfrak U,\F)=C^1((\mathbf f),M)$，故 $\mathrm H^0(\mathfrak U,\F)$ 识别为 $C^1((\mathbf f),M)$ 的1-上闭链子群；因 $M=C^0((\mathbf f),M)$，上述正合列就是 $\mathrm H^0((\mathbf f),M)$、$\mathrm H^1((\mathbf f),M)$ 的定义给出的正合列。
+\end{proof}
+
+\egastatement{1.2.4}{推论}
+假设各 $X_{f_i}$ 拟紧，且存在 $g_i\in\Gamma(U,\OO_X)$ 使 $\sum_ig_i(f_i|U)=1|U$。\transnote{底本将 $g_i$ 写在 $\Gamma(U,\F)$ 中；但随后的单位分解是在函数环中进行，这里将其记为 $\Gamma(U,\OO_X)$，以使数乘和 $1|U$ 的类型一致。}则对每个拟凝聚 $(\OO_X|U)$-模 $\F$，有 $p>0$ 时 $\mathrm H^p(\mathfrak U,\F)=0$；若再有 $U=X$，则（1.2.3.2）的典范同态 $M\to\mathrm H^0(\mathfrak U,\F)$ 为双射。
+\begin{proof}
+各 $U_i=X_{f_i}$ 拟紧，故 $U$ 也拟紧；因而只须考虑 $U=X$。假设于是给出各 $p\geq0$ 时 $\mathrm H^p((\mathbf f),M)=0$（1.1.9），结论由（1.2.3.1）、（1.2.3.2）立即得出。
+\end{proof}
+注意，由于 $\mathrm H^0(\mathfrak U,\F)=\mathrm H^0(U,\F)$（G，II，5.2.2），这也将（I，1.3.7）作为特例重新证明了。
+
+\egastatement{1.2.5}{注}
+假设 $X$ 为仿射概形；则 $U_i=X_{f_i}=D(f_i)$ 及各 $U_{i_0\cdots i_p}$ 都仿射，但 $U$ 未必仿射。此时 $\Gamma(X,\F)$ 和 $\Gamma(U_{i_0\cdots i_p},\F)$ 都是关于 $\F$ 的正合函子（I，1.3.11）。若 $0\to\F'\to\F\to\F''\to0$ 是拟凝聚 $\OO_X$-模正合列，则
+\[
+0\to C^\bullet(\mathfrak U,\F')\to C^\bullet(\mathfrak U,\F)\to C^\bullet(\mathfrak U,\F'')\to0
+\]
+是复形正合列，并给出上同调长正合列
+\[
+\cdots\to\mathrm H^p(\mathfrak U,\F')\to\mathrm H^p(\mathfrak U,\F)
+\to\mathrm H^p(\mathfrak U,\F'')\to\mathrm H^{p+1}(\mathfrak U,\F')\to\cdots.
+\]
+令 $M'=\Gamma(X,\F')$、$M''=\Gamma(X,\F'')$，则 $0\to M'\to M\to M''\to0$ 也正合。由于 $C^\bullet((\mathbf f),M)$ 关于 $M$ 正合，也有长正合列
+\[
+\cdots\to\mathrm H^p((\mathbf f),M')\to\mathrm H^p((\mathbf f),M)
+\to\mathrm H^p((\mathbf f),M'')\to\mathrm H^{p+1}((\mathbf f),M')\to\cdots.
+\]
+由于图
+\[
+\begin{tikzcd}[column sep=small]
+0\arrow[r]&C^\bullet(\mathfrak U,\F')\arrow[r]\arrow[d]&C^\bullet(\mathfrak U,\F)\arrow[r]\arrow[d]&C^\bullet(\mathfrak U,\F'')\arrow[r]\arrow[d]&0\\
+0\arrow[r]&C^\bullet((\mathbf f),M')\arrow[r]&C^\bullet((\mathbf f),M)\arrow[r]&C^\bullet((\mathbf f),M'')\arrow[r]&0
+\end{tikzcd}
+\]
+交换，故对每个 $p$，下图交换（G，I，2.1.1）：
+\begin{equation}\tag{1.2.5.1}
+\begin{tikzcd}
+\mathrm H^p(\mathfrak U,\F'')\arrow[r,"\delta_p"]\arrow[d]&\mathrm H^{p+1}(\mathfrak U,\F')\arrow[d]\\
+\mathrm H^{p+1}((\mathbf f),M'')\arrow[r]&\mathrm H^{p+2}((\mathbf f),M').
+\end{tikzcd}
+\end{equation}
+
+\subsection{仿射概形的上同调}
+\src{88--89}
+\egastatement{1.3.1}{定理}
+设 $X$ 是仿射概形。对每个拟凝聚 $\OO_X$-模 $\F$，以及每个 $p>0$，有 $\mathrm H^p(X,\F)=0$。
+\begin{proof}
+设 $\mathfrak U$ 为由仿射开集 $X_{f_i}=D(f_i)$（$1\leq i\leq r$）组成的有限覆盖；已知此时 $f_i$ 在 $A=\Gamma(X,\OO_X)$ 中生成单位理想。由（1.2.4），$p>0$ 时 $\mathrm H^p(\mathfrak U,\F)=0$。这样的仿射开集有限覆盖可以任意加细（I，1.1.10），故 Čech 上同调的定义（G，II，5.8）给出 $p>0$ 时 $\check{\mathrm H}^p(X,\F)=0$。这也适用于每个 $f\in A$ 所给出的预概形 $X_f$（I，1.3.6），所以 $p>0$ 时 $\check{\mathrm H}^p(X_f,\F)=0$。由于 $X_f\cap X_g=X_{fg}$，根据（G，II，5.9.2），可知对每个 $p>0$ 也有 $\mathrm H^p(X,\F)=0$。
+\end{proof}
+
+\egastatement{1.3.2}{推论}
+设 $Y$ 为预概形，$f:X\to Y$ 为仿射态射（II，1.6.1）。对每个拟凝聚 $\OO_X$-模 $\F$，有 $q>0$ 时 $\mathrm R^qf_*(\F)=0$。
+\begin{proof}
+按定义，$\mathrm R^qf_*(\F)$ 与预层 $U\mapsto\mathrm H^q(f^{-1}(U),\F)$ 相伴。仿射开集构成 $Y$ 的一组基；对这样的 $U$，$f^{-1}(U)$ 仿射（II，1.3.2），故由（1.3.1），$q>0$ 时相应上同调为零。
+\end{proof}
+
+\egastatement{1.3.3}{推论}
+设 $Y$ 为预概形，$f:X\to Y$ 为仿射态射。对每个拟凝聚 $\OO_X$-模 $\F$，典范同态 $\mathrm H^p(Y,f_*(\F))\to\mathrm H^p(X,\F)$（0，12.1.3.1）对每个 $p$ 都是双射。
+\begin{proof}
+由（0，12.1.7），只需证明复合函子 $\Gamma f_*$ 的第二谱序列的边缘同态 ${}''E_2^{p0}=\mathrm H^p(Y,f_*(\F))\to\mathrm H^p(X,\F)$ 是双射。此谱序列的 $E_2$ 项为 ${}''E_2^{pq}=\mathrm H^p(Y,\mathrm R^qf_*(\F))$（G，II，4.17.1）；由（1.3.2），$q>0$ 时该项为零，故谱序列退化，所求结论由（0，11.1.6）得出。
+\end{proof}
+
+\egastatement{1.3.4}{推论}
+设 $f:X\to Y$ 为仿射态射，$g:Y\to Z$ 为态射。对每个拟凝聚 $\OO_X$-模 $\F$，典范同态 $\mathrm R^pg_*(f_*(\F))\to\mathrm R^p(g\circ f)_*(\F)$（0，12.2.5.1）对每个 $p$ 都是双射。
+\begin{proof}
+由（1.3.3），对 $Z$ 的每个仿射开集 $W$，典范同态
+\[
+\mathrm H^p(g^{-1}(W),f_*(\F))\to\mathrm H^p(f^{-1}(g^{-1}(W)),\F)
+\]
+都是双射。这说明定义所求典范同态的预层同态为双射（0，12.2.5）。
+\end{proof}\par
+
+% ---- END c3_s01a.tex ----
+% ---- BEGIN c3_s01b.tex ----
+\subsection{应用于任意预概形的上同调}
+\src{89--95}
+\egastatement{1.4.1}{命题}
+设 $X$ 为概形，$\mathfrak U=(U_\alpha)$ 为 $X$ 的仿射开覆盖。对每个拟凝聚 $\OO_X$-模 $\F$，上同调 $\Gamma(X,\OO_X)$-模 $\mathrm H^\bullet(X,\F)$ 与 $\mathrm H^\bullet(\mathfrak U,\F)$ 典范同构。
+\begin{proof}
+由于 $X$ 为概形，覆盖中的任意有限交 $V$ 都仿射（I，5.5.6），所以 $q\geq1$ 时 $\mathrm H^q(V,\F)=0$（1.3.1）。命题由 Leray 定理（G，II，5.4.1）得出。
+\end{proof}
+
+\egastatement{1.4.2}{注}
+只要各 $U_\alpha$ 的有限交仿射，（1.4.1）的结论仍然成立，即使不假设 $X$ 为概形。
+
+\egastatement{1.4.3}{推论}
+设 $X$ 为底空间拟紧的概形，$A=\Gamma(X,\OO_X)$，$\mathbf f=(f_i)_{1\leq i\leq r}$ 为 $A$ 中的有限元素序列，使各 $X_{f_i}$ 仿射。采用（1.2.1）的记号，对每个拟凝聚 $\OO_X$-模 $\F$，有典范函子同构
+\begin{equation}\tag{1.4.3.1}
+\mathrm H^q(U,\F)\simeq\mathrm H^{q+1}((\mathbf f),M)\quad(q\geq1),
+\end{equation}
+及函子正合列
+\begin{equation}\tag{1.4.3.2}
+0\to\mathrm H^0((\mathbf f),M)\to M\to\mathrm H^0(U,\F)
+\to\mathrm H^1((\mathbf f),M)\to0.
+\end{equation}
+\begin{proof}由（1.4.1）和（1.2.3）立即得出。\end{proof}
+
+\egapar{1.4.4}
+若 $X$ 为仿射概形，则由（1.2.5）、（1.4.1），对每个 $q\geq0$，与拟凝聚 $\OO_X$-模正合列 $0\to\F'\to\F\to\F''\to0$ 对应的图
+\begin{equation}\tag{1.4.4.1}
+\begin{tikzcd}
+\mathrm H^q(U,\F'')\arrow[r,"\delta_q"]\arrow[d]&\mathrm H^{q+1}(U,\F')\arrow[d]\\
+\mathrm H^{q+1}((\mathbf f),M'')\arrow[r]&\mathrm H^{q+2}((\mathbf f),M')
+\end{tikzcd}
+\end{equation}
+交换，记号如（1.2.5）。
+
+\egastatement{1.4.5}{命题}
+设 $X$ 为拟紧概形，$\LL$ 为可逆 $\OO_X$-模，考虑分次环 $A_*=\Gamma_*(\LL)$（$\OI$，5.4.6）。则
+\[
+\mathrm H^\bullet(\F,\LL)=\bigoplus_n\mathrm H^\bullet(X,\F\otimes_{\OO_X}\LL^{\otimes n})
+\]
+是分次 $A_*$-模；对每个 $f\in A_d$，有 $(A_*)_{(f)}$-模典范同构
+\begin{equation}\tag{1.4.5.1}
+\mathrm H^\bullet(X_f,\F)\simeq(\mathrm H^\bullet(\F,\LL))_{(f)}.
+\end{equation}
+\begin{proof}
+由于 $X$ 是拟紧概形，可用同一个有限仿射开覆盖 $\mathfrak U=(U_i)$ 计算各 $\F\otimes\LL^{\otimes n}$ 的上同调，并使 $\LL|U_i\simeq\OO_X|U_i$（1.4.1）。各 $U_i\cap X_f$ 显然也是仿射开集（I，1.3.6），因此也可用 $\mathfrak U|X_f=(U_i\cap X_f)$ 计算 $X_f$ 上的这些上同调。对每个 $f\in A_d$，乘以 $f$ 给出复形同态
+\[
+C^\bullet(\mathfrak U,\F\otimes\LL^{\otimes n})\to
+C^\bullet(\mathfrak U,\F\otimes\LL^{\otimes(n+d)}),
+\]
+从而给出上同调同态，这证明第一断言。另一方面，对固定 $f\in A_d$，（I，9.3.2）及（I，1.3.9，ii）给出 $(A_*)_{(f)}$-模复形的同构
+\[
+C^\bullet(\mathfrak U|X_f,\F)
+\simeq\left(\bigoplus_nC^\bullet(\mathfrak U,\F\otimes\LL^{\otimes n})\right)_{(f)}.
+\]
+取两边的上同调，并利用分次 $A_*$-模范畴中 $M\mapsto M_{(f)}$ 的正合性，就得到（1.4.5.1）。
+\end{proof}
+
+\egastatement{1.4.6}{推论}
+在（1.4.5）的假设下，再设 $\LL=\OO_X$。令 $A=\Gamma(X,\OO_X)$，则对每个 $f\in A$，有 $A_f$-模典范同构 $\mathrm H^\bullet(X_f,\F)\simeq\mathrm H^\bullet(X,\F)_f$。
+
+\egastatement{1.4.7}{推论}
+设 $X$ 为拟紧概形，$f\in\Gamma(X,\OO_X)$。
+\begin{enumerate}[label=(\roman*)]
+\item 若 $X_f$ 仿射，则对每个拟凝聚 $\OO_X$-模 $\F$、每个 $i>0$ 及每个 $\xi\in\mathrm H^i(X,\F)$，存在整数 $n>0$ 使 $f^n\xi=0$。
+\item 反过来，假设 $X_f$ 拟紧，而且对 $\OO_X$ 的每个拟凝聚理想层 $\J$ 和每个 $\xi\in\mathrm H^1(X,\J)$，存在 $n>0$ 使 $f^n\xi=0$。则 $X_f$ 仿射。
+\end{enumerate}
+\begin{proof}
+（i）若 $X_f$ 仿射，则由（1.3.1），$i>0$ 时 $\mathrm H^i(X_f,\F)=0$；故断言直接来自（1.4.6）。
+
+（ii）由 Serre 判据（II，5.2.1），只需对 $\OO_X|X_f$ 的每个拟凝聚理想 $\K$ 证明 $\mathrm H^1(X_f,\K)=0$。由于 $X_f$ 是拟紧概形 $X$ 的拟紧开集，存在 $\OO_X$ 的拟凝聚理想 $\J$，使 $\K=\J|X_f$（I，9.4.2）。由（1.4.6），$\mathrm H^1(X_f,\K)=\mathrm H^1(X,\J)_f$；假设说明右边为零，结论得证。
+\end{proof}
+
+\egastatement{1.4.8}{注}
+（1.4.7，i）给出了关系（II，4.5.13.2）的一个更简单证明。
+
+\egastatement{1.4.9}{引理}
+设 $X$ 为拟紧概形，$\mathfrak U=(U_i)_{1\leq i\leq n}$ 为有限仿射开覆盖，$\F$ 为拟凝聚 $\OO_X$-模。由覆盖定义的层复形 $\C^\bullet(\mathfrak U,\F)$（G，II，5.2）逐项为拟凝聚 $\OO_X$-模。
+\begin{proof}
+按定义，$\C^p(\mathfrak U,\F)$ 是各 $\F|U_{i_0\cdots i_p}$ 经典范嵌入 $U_{i_0\cdots i_p}\to X$ 的直接像的直和。由于 $X$ 为概形，这些嵌入都是仿射态射（I，5.5.6），故各 $\C^p(\mathfrak U,\F)$ 拟凝聚（II，1.2.6）。
+\end{proof}
+
+\egastatement{1.4.10}{命题}
+设 $u:X\to Y$ 为分离拟紧态射。对每个拟凝聚 $\OO_X$-模 $\F$，各 $\mathrm R^qu_*(\F)$ 都是拟凝聚 $\OO_Y$-模。
+\begin{proof}
+问题在 $Y$ 上局部，可设 $Y$ 仿射。于是 $X$ 是有限个仿射开集 $U_i$ 的并；令 $\mathfrak U=(U_i)$。又因 $Y$ 为概形，对每个仿射开集 $V\subset Y$，典范嵌入 $u^{-1}(V)\to X$ 为仿射态射（I，5.5.10）。由（1.4.1）及（G，II，5.2），有典范同构
+\begin{equation}\tag{1.4.10.1}
+\mathrm H^\bullet(u^{-1}(V),\F)\simeq\mathrm H^\bullet(\Gamma(V,\K^\bullet)),
+\end{equation}
+其中 $\K^\bullet=u_*(\C^\bullet(\mathfrak U,\F))$。由（1.4.9）及（I，9.2.2），$\K^\bullet$ 逐项为拟凝聚 $\OO_Y$-模；它也是层复形。由上同调层的定义（G，II，4.1）及（I，4.1.1），$\HH^\bullet(\K^\bullet)$ 逐项拟凝聚。由于 $V$ 仿射时 $\Gamma(V,-)$ 在拟凝聚模范畴中正合，所以（G，II，4.1）
+\begin{equation}\tag{1.4.10.2}
+\mathrm H^\bullet(\Gamma(V,\K^\bullet))=\Gamma(V,\HH^\bullet(\K^\bullet)).
+\end{equation}
+最后，由（G，II，5.2）中典范同态 $\mathrm H^\bullet(\mathfrak U,\F)\to\mathrm H^\bullet(X,\F)$ 的定义，对另一仿射开集 $V'\subset V$，有交换图
+\[
+\begin{tikzcd}
+\mathrm H^\bullet(u^{-1}(V),\F)\arrow[r,"\sim"]\arrow[d]&\mathrm H^\bullet(\Gamma(V,\K^\bullet))\arrow[d]\\
+\mathrm H^\bullet(u^{-1}(V'),\F)\arrow[r,"\sim"]&\mathrm H^\bullet(\Gamma(V',\K^\bullet)).
+\end{tikzcd}
+\]
+因此（1.4.10.1）的同构定义 $\OO_Y$-模同构
+\begin{equation}\tag{1.4.10.3}
+\mathrm R^\bullet u_*(\F)\simeq\HH^\bullet(\K^\bullet),
+\end{equation}
+从而 $\mathrm R^\bullet u_*(\F)$ 拟凝聚。
+\end{proof}
+由（1.4.10.3）、（1.4.10.2）、（1.4.10.1），又得：
+
+\egastatement{1.4.11}{推论}
+在（1.4.10）的假设下，对 $Y$ 的每个仿射开集 $V$，典范同态
+\begin{equation}\tag{1.4.11.1}
+\mathrm H^q(u^{-1}(V),\F)\to\Gamma(V,\mathrm R^qu_*(\F))
+\end{equation}
+对每个 $q\geq0$ 都是同构。
+
+\egastatement{1.4.12}{推论}
+在（1.4.10）的假设下，再设 $Y$ 拟紧。则存在整数 $r>0$，使对每个拟凝聚 $\OO_X$-模 $\F$ 及每个 $q>r$，有 $\mathrm R^qu_*(\F)=0$。若 $Y$ 仿射，可取 $r$ 为某个仿射开覆盖 $X$ 所需的开集数。
+\begin{proof}
+可用有限个仿射开集覆盖 $Y$，故由（1.4.11），归结到第二断言。若 $\mathfrak U$ 是由 $r$ 个仿射开集组成的覆盖，则交错性给出 $q>r$ 时 $C^q(\mathfrak U,\F)=0$，从而 $\mathrm H^q(\mathfrak U,\F)=0$；再用（1.4.1）即可。
+\end{proof}
+
+\egastatement{1.4.13}{推论}
+在（1.4.10）的假设下，再设 $Y=\Spec A$ 仿射。则对每个拟凝聚 $\OO_X$-模 $\F$ 及每个 $f\in A$，有典范同构
+\[
+\Gamma(Y_f,\mathrm R^qu_*(\F))\simeq\Gamma(Y,\mathrm R^qu_*(\F))_f.
+\]
+\begin{proof}来自 $\mathrm R^qu_*(\F)$ 的拟凝聚性（I，1.3.7）。\end{proof}
+
+\egastatement{1.4.14}{命题}
+设 $f:X\to Y$ 为分离拟紧态射，$g:Y\to Z$ 为仿射态射。对每个拟凝聚 $\OO_X$-模 $\F$，典范同态 $\mathrm R^p(g\circ f)_*(\F)\to g_*(\mathrm R^pf_*(\F))$（0，12.2.5.2）对每个 $p$ 都是双射。
+\begin{proof}
+对 $Z$ 的仿射开集 $W$，$g^{-1}(W)$ 是 $Y$ 的仿射开集。由（1.4.11），定义所求典范同态的预层同态（0，12.2.5）为双射。
+\end{proof}
+
+\egastatement{1.4.15}{命题}
+设 $u:X\to Y$ 为分离有限型态射，$v:Y'\to Y$ 为平坦预概形态射（$\OI$，6.7.1）；令 $u'=u_{(Y')}$，使有交换图
+\begin{equation}\tag{1.4.15.1}
+\begin{tikzcd}
+X&X'=X_{(Y')}\arrow[l,"v'"']\arrow[d,"u'"]\\
+Y\arrow[u,leftarrow,"u"]&Y'\arrow[l,"v"]
+\end{tikzcd}
+\end{equation}
+则对每个拟凝聚 $\OO_X$-模 $\F$，令 $\F'=v'^*(\F)=\F\otimes_{\OO_Y}\OO_{Y'}$，有对各 $q\geq0$ 的典范同构
+\[
+\mathrm R^qu'_*(\F')\simeq\mathrm R^qu_*(\F)\otimes_{\OO_Y}\OO_{Y'}=v^*(\mathrm R^qu_*(\F)).
+\]
+\eproof 典范同态 $\rho:\F\to v'_*(v'^*\F)$（$\OI$，4.4.3.2）以函子方式给出同态
+\begin{equation}\tag{1.4.15.2}
+\mathrm R^qu_*(\F)\to\mathrm R^qu_*(v'_*(\F')).
+\end{equation}
+令 $w=u\circ v'=v\circ u'$。还有典范同态（0，12.2.5.1及12.2.5.2）
+\begin{equation}\tag{1.4.15.3}
+\mathrm R^qu_*(v'_*(\F'))\to\mathrm R^qw_*(\F')\to v_*(\mathrm R^qu'_*(\F')).
+\end{equation}
+复合得到 $\psi:\mathrm R^qu_*(\F)\to v_*(\mathrm R^qu'_*(\F'))$，从而得到典范同态
+\begin{equation}\tag{1.4.15.4}
+\psi^\flat:v^*(\mathrm R^qu_*(\F))\to\mathrm R^qu'_*(\F').
+\end{equation}
+其定义不要求 $v$ 满足任何附加假设；现在要证明 $v$ 平坦时它为同构。问题在 $Y,Y'$ 上局部，故可设 $Y=\Spec A$、$Y'=\Spec B$。将使用以下引理。
+
+\egastatement{1.4.15.5}{引理}
+设 $\varphi:A\to B$ 为环同态，$Y=\Spec A$、$X=\Spec B$，$f:X\to Y$ 为相应态射，$M$ 为 $B$-模。则 $\wt M$ 为 $f$-平坦层，当且仅当 $M$ 为平坦 $A$-模；特别地，$f$ 平坦，当且仅当 $B$ 为平坦 $A$-模。
+\begin{proof}由（$\OI$，6.7.1）的定义、（$\OI$，6.3.3），结合（I，1.3.4）得出。\end{proof}
+由（1.4.11.1）及（1.4.15.3）中同态的定义，$\psi$ 对应于复合
+\[
+\begin{aligned}
+\mathrm H^q(X,\F)&\xrightarrow{\rho_q}\mathrm H^q(X,v'_*(v'^*\F))\\
+&\xrightarrow{\theta_q}\mathrm H^q(X',v'^*v'_*(v'^*\F))
+\xrightarrow{\sigma_q}\mathrm H^q(X',v'^*\F),
+\end{aligned}
+\]
+其中 $\rho_q,\sigma_q$ 来自典范同态 $\rho$ 及 $\sigma:v'^*(v'_*(\F'))\to\F'$，$\theta_q$ 是（0，12.1.3.1）相对于 $v'_*(v'^*\F)$ 的 $\varphi$-态射。由 $\theta_q$ 的函子性，有交换图
+\[
+\begin{tikzcd}[column sep=small]
+\mathrm H^q(X,\F)\arrow[r,"\rho_q"]\arrow[d,"\theta_q"']&\mathrm H^q(X,v'_*(v'^*\F))\arrow[d,"\theta_q"]\\
+\mathrm H^q(X',v'^*\F)\arrow[r,"(v'^*\rho)_q"']&\mathrm H^q(X',v'^*v'_*(v'^*\F)).
+\end{tikzcd}
+\]
+按定义（$\OI$，4.4.3），$v'^*(\rho)$ 是 $\sigma$ 的逆，故上述复合最终就是 $\theta_q$；于是 $\psi^\flat$ 是与它相伴的 $B$-同态
+$\mathrm H^q(X,\F)\otimes_AB\to\mathrm H^q(X',\F')$。
+\transnote{原文将 $v'^*(\rho)$ 称为 $\sigma$ 的“逆”。伴随关系在这里直接给出的是 $\sigma\circ v'^*(\rho)=1$，这一个方向的恒等式已足以完成本段推导；这里标明原文表述的强弱差别。}
+
+由于 $u$ 为有限型，$X$ 可由有限个仿射开集 $U_i$ 覆盖；记覆盖为 $\mathfrak U$。$v$ 仿射，故 $v'$ 也仿射（II，1.6.2，iii），因而 $U'_i=v'^{-1}(U_i)$ 给出 $X'$ 的仿射开覆盖 $\mathfrak U'$。由（0，12.1.4.2），图
+\[
+\begin{tikzcd}
+\mathrm H^q(\mathfrak U,\F)\arrow[r,"\theta'_q"]\arrow[d]&\mathrm H^q(\mathfrak U',\F')\arrow[d]\\
+\mathrm H^q(X,\F)\arrow[r,"\theta_q"']&\mathrm H^q(X',\F')
+\end{tikzcd}
+\]
+交换；因 $X,X'$ 为概形，竖直箭头为同构（1.4.1）。故只需证明与上方 $\varphi$-态射相伴的 $B$-同态
+\[
+\mathrm H^q(\mathfrak U,\F)\otimes_AB\to\mathrm H^q(\mathfrak U',\F')
+\]
+是同构。对指标序列 $s=(i_k)_{0\leq k\leq p}$，令 $U_s=\bigcap_kU_{i_k}$、$U'_s=\bigcap_kU'_{i_k}=v'^{-1}(U_s)$，$M_s=\Gamma(U_s,\F)$、$M'_s=\Gamma(U'_s,\F')$。典范映射 $M_s\otimes_AB\to M'_s$ 为同构（I，1.6.5），故
+$C^\bullet(\mathfrak U,\F)\otimes_AB\to C^\bullet(\mathfrak U',\F')$ 为同构，并将 $d\otimes1$ 识别为后者的上边缘算子。因 $B$ 为平坦 $A$-模，取上同调就得到所求同构（$\OI$，6.1.1）。此结果以后将在第6节推广。\finishproof
+
+\egastatement{1.4.16}{推论}
+设 $A$ 为环，$X$ 为有限型 $A$-概形，$B$ 为忠实平坦的 $A$-代数。则 $X$ 仿射，当且仅当 $X\otimes_AB$ 仿射。
+\begin{proof}
+必要性显然（I，3.2.2）。为证充分性，由于 $X$ 在 $A$ 上分离，且 $\Spec B\to\Spec A$ 平坦，故对每个 $i\geq0$ 及拟凝聚 $\OO_X$-模 $\F$，有
+\begin{equation}\tag{1.4.16.1}
+\mathrm H^i(X\otimes_AB,\F\otimes_AB)=\mathrm H^i(X,\F)\otimes_AB.
+\end{equation}
+若 $X\otimes_AB$ 仿射，$i=1$ 时左边为零；忠实平坦性说明 $\mathrm H^1(X,\F)=0$。因 $X$ 为拟紧概形，应用 Serre 判据（II，5.2.1）即可。\transnote{原文在本证明中引为（1.4.1）；这里使用的基变换公式是前一命题（1.4.15）。}
+\end{proof}
+
+\egastatement{1.4.17}{命题}
+设 $X$ 为预概形，$0\to\F\xrightarrow{u}\G\xrightarrow{v}\K\to0$ 为 $\OO_X$-模正合列。若 $\F,\K$ 拟凝聚，则 $\G$ 也拟凝聚。
+\begin{proof}
+问题在 $X$ 上局部，可设 $X=\Spec A$；只需验证（I，1.4.1）的条件 d1）、d2），其中 $V=X$。先验证消失条件：若 $t\in\Gamma(X,\G)$ 在 $D(f)$ 上限制为零，则 $v(t)$ 亦如此；存在 $m>0$ 使 $f^mv(t)=v(f^mt)=0$。因 $\Gamma$ 左正合，$f^mt=u(s)$，其中 $s\in\Gamma(X,\F)$。$u$ 单射，所以 $s$ 在 $D(f)$ 上为零；再由（I，1.4.1），有 $n>0$ 使 $f^ns=0$，故 $f^{m+n}t=u(f^ns)=0$。
+
+再验证延拓条件。设 $t'\in\Gamma(D(f),\G)$。由 $\K$ 拟凝聚，存在 $m$ 使 $f^mv(t')=v(f^mt')$ 延拓为 $z\in\Gamma(X,\K)$。将（1.3.1），或（I，5.1.9.2），用于 $\F$，可知 $\Gamma(X,\G)\to\Gamma(X,\K)\to0$ 正合，因此 $z=v(t)$，其中 $t\in\Gamma(X,\G)$。若 $t''=t|D(f)$，则 $v(f^mt'-t'')=0$，故 $f^mt'-t''=u(s')$，$s'\in\Gamma(D(f),\F)$。由 $\F$ 拟凝聚，存在 $n>0$ 使 $f^ns'$ 延拓为 $s\in\Gamma(X,\F)$。于是 $f^{m+n}t'-f^nt''=u(f^ns')$，所以 $f^{m+n}t'$ 是全局截面 $f^nt+u(s)$ 在 $D(f)$ 上的限制，证明完成。\transnote{原文连续两次把待验证条件写作 d2），最后又将延拓截面写作 $f^nt+u(f^ns)$。此处分别按“消失”“延拓”说明，并在已定义 $s|D(f)=f^ns'$ 的记号下写作 $f^nt+u(s)$。}
+\end{proof}\par
+
+% ---- END c3_s01b.tex ----
+% ---- BEGIN c3_s02a.tex ----
+\section{射影态射的上同调研究}
+\subsection{某些上同调群的显式计算}
+\src{95--99}
+\egapar{2.1.1}
+设 $X$ 为预概形，$\LL$ 为可逆 $\OO_X$-模；考虑分次环（$\OI$，5.4.6）
+\begin{equation}\tag{2.1.1.1}
+S=\Gamma_*(X,\LL)=\bigoplus_{n\in\Z}\Gamma(X,\LL^{\otimes n}).
+\end{equation}
+设 $(f_i)_{1\leq i\leq r}$ 为 $S$ 中的有限齐次元素族，$f_i\in S_{d_i}$。令 $U_i=X_{f_i}$、$U=\bigcup_iU_i$，以 $\mathfrak U$ 表示覆盖 $(U_i)$。对每个拟凝聚 $\OO_X$-模 $\F$，令
+\begin{equation}\tag{2.1.1.2}
+\mathrm H^\bullet(\mathfrak U,\F(*))=\bigoplus_{n\in\Z}
+\mathrm H^\bullet(\mathfrak U,\F\otimes_{\OO_X}\LL^{\otimes n}),
+\end{equation}
+\begin{equation}\tag{2.1.1.3}
+\mathrm H^\bullet(U,\F(*))=\bigoplus_{n\in\Z}
+\mathrm H^\bullet(U,\F\otimes_{\OO_X}\LL^{\otimes n}).
+\end{equation}
+这些阿贝尔群是双分次的，令
+\[
+\mathrm H^\bullet(\mathfrak U,\F(*))^{mn}=
+\mathrm H^m(\mathfrak U,\F\otimes\LL^{\otimes n}),
+\]
+并对（2.1.1.3）作类似定义。就第二个次数而言，它们显然是分次 $S$-模；例如，这可由 $\F\mapsto\mathrm H^\bullet(\mathfrak U,\F)$、$\F\mapsto\mathrm H^\bullet(U,\F)$ 的函子性得出。
+
+\egapar{2.1.2}
+考虑分次 $S$-模（$\OI$，5.4.6）
+\begin{equation}\tag{2.1.2.1}
+M=\Gamma_*(\F)=\mathrm H^0(X,\F(*))=\bigoplus_{n\in\Z}\Gamma(X,\F\otimes\LL^{\otimes n}).
+\end{equation}
+若 $X$ 为底空间诺特的预概形，或拟紧概形，则由（I，9.3.1），通常记 $U_{i_0\cdots i_p}=\bigcap_{k=0}^pU_{i_k}$ 时，有典范同构
+\[
+\Gamma(U_{i_0\cdots i_p},\F(*))=\mathrm H^0(U_{i_0\cdots i_p},\F(*))
+\simeq M_{f_{i_0}\cdots f_{i_p}}.
+\]
+采用（1.2.2）的记号，右边还可识别为 $\ilim_nM^{(n)}_{i_0\cdots i_p}$。若 $\xi$ 是此极限中的齐次元素，由次数为 $m$ 的 $x\in M^{(n)}_{i_0\cdots i_p}=M$ 表示，就令其次数为
+$m-n(d_{i_0}+\cdots+d_{i_p})$。由过渡同态 $\varphi_{nm}$ 的定义，这不依赖于所选代表 $x$，并使上述识别成为分次 $S$-模同构。
+
+仍以 $C_n^p(M)$ 表示从 $[1,r]^{p+1}$ 到 $M$ 的交错映射所成模，用同样方法在 $\ilim_nC_n^p(M)$ 上定义分次 $S$-模结构。像（1.2.2）那样，有保持次数的同构
+\begin{equation}\tag{2.1.2.2}
+C^p(\mathfrak U,\F(*))=\ilim_nC_n^p(M),
+\end{equation}
+从而又有
+\begin{equation}\tag{2.1.2.3}
+C^p(\mathfrak U,\F(*))=C^{p+1}((\mathbf f),M)
+=\ilim_nK^{p+1}(\mathbf f^n,M).
+\end{equation}
+这里，若极限中的元素由上链 $z\in K^{p+1}(\mathbf f^n,M)$ 表示，其相应值 $z(i_0,\ldots,i_p)$ 在齐次分量 $M_m$ 中，则其次数为 $m-n(d_{i_0}+\cdots+d_{i_p})$；这与该元素的代表选择无关。上述同构与上边缘算子相容，故如（1.2.2）可得：
+
+\egastatement{2.1.3}{命题}
+设 $X$ 为底空间诺特的预概形，或拟紧概形。存在关于 $\F$ 的典范函子同构
+\begin{equation}\tag{2.1.3.1}
+\mathrm H^p(\mathfrak U,\F(*))\simeq\mathrm H^{p+1}((\mathbf f),M)\quad(p\geq1),
+\end{equation}
+及函子正合列
+\begin{equation}\tag{2.1.3.2}
+0\to\mathrm H^0((\mathbf f),M)\to M\to\mathrm H^0(\mathfrak U,\F(*))
+\to\mathrm H^1((\mathbf f),M)\to0.
+\end{equation}
+而且，关于（2.1.1.1）中环 $S$ 的分次模结构，以上全部同态的次数都为零。
+
+\egastatement{2.1.4}{推论}
+若 $X$ 是拟紧概形，且各 $U_i=X_{f_i}$ 仿射，则存在关于 $\F$ 的零次典范函子同构
+\begin{equation}\tag{2.1.4.1}
+\mathrm H^p(U,\F(*))\simeq\mathrm H^{p+1}((\mathbf f),M)\quad(p\geq1),
+\end{equation}
+及所有同态均为零次的函子正合列
+\begin{equation}\tag{2.1.4.2}
+0\to\mathrm H^0((\mathbf f),M)\to M\to\mathrm H^0(U,\F(*))
+\to\mathrm H^1((\mathbf f),M)\to0.
+\end{equation}
+\begin{proof}将（1.4.1）用于（2.1.3）即可。\end{proof}
+与（2.1.3）相应的“局部”命题如下。
+
+\egastatement{2.1.5}{命题}
+设 $S$ 为非负分次环，$f_i\in S_+$（$1\leq i\leq r$）为次数 $d_i$ 的齐次元素，$M$ 为分次 $S$-模。设 $X=\Proj S$，令 $U_i=D_+(f_i)$、$U=\bigcup_iU_i$，以及
+\[
+\mathrm H^\bullet(U,\wt M(*))=\bigoplus_{n\in\Z}\mathrm H^\bullet(U,\widetilde{M(n)}).
+\]
+则存在关于 $M$ 的、在分次 $S$-模结构下次数为零的典范函子同构
+\begin{equation}\tag{2.1.5.1}
+\mathrm H^p(U,\wt M(*))\simeq\mathrm H^{p+1}((\mathbf f),M)\quad(p\geq1),
+\end{equation}
+以及所有同态为零次的函子正合列
+\begin{equation}\tag{2.1.5.2}
+0\to\mathrm H^0((\mathbf f),M)\to M\to\mathrm H^0(U,\wt M(*))
+\to\mathrm H^1((\mathbf f),M)\to0.
+\end{equation}
+\begin{proof}
+\begin{sloppypar}
+按定义（II，2.5.2），$\Gamma(U_{i_0\cdots i_p},\widetilde{M(n)})=(M_{f_{i_0}\cdots f_{i_p}})_n$，故
+$\Gamma(U_{i_0\cdots i_p},\wt M(*))=M_{f_{i_0}\cdots f_{i_p}}$。其余论证与（2.1.4）的证明相同，并利用 $X$ 为概形。
+\end{sloppypar}
+\end{proof}
+
+\egastatement{2.1.6}{注}
+（i）在（2.1.5）的条件下，$\Gamma(U_{i_0\cdots i_p},\wt M)$ 关于 $M$ 正合（$\OI$，1.3.2）。用（1.2.5）的同一论证，若 $0\to M'\to M\to M''\to0$ 是同态次数为零的分次 $S$-模正合列，则对每个 $p\geq0$，有交换图
+\begin{equation}\tag{2.1.6.1}
+\begin{tikzcd}
+\mathrm H^p(U,\wt M''(*))\arrow[r]\arrow[d]&\mathrm H^{p+1}(U,\wt M'(*))\arrow[d]\\
+\mathrm H^{p+1}((\mathbf f),M'')\arrow[r]&\mathrm H^{p+2}((\mathbf f),M').
+\end{tikzcd}
+\end{equation}
+（ii）（2.1.5）主要用于 $S$ 是由有限多个一次元素生成的 $A$-代数、且 $A$ 诺特的情形。因为此时每个拟凝聚 $\OO_X$-模都具有 $\wt M$ 的形式（II，2.7.7）。
+
+\egapar{2.1.7}
+现在将（2.1.5）用于 $S=A[T_0,\ldots,T_r]$，其中 $A$ 为任意环，各 $T_i$ 为不定元，取 $M=S$ 及 $f_i=T_i$。于是主要归结为计算 $\mathrm H^\bullet((\mathbf T),S)$，其中 $\mathbf T=(T_i)_{0\leq i\leq r}$。
+
+\egastatement{2.1.8}{引理}
+若 $S=A[T_0,\ldots,T_r]$，则
+\begin{equation}\tag{2.1.8.1}
+\mathrm H^i(\mathbf T^n,S)=0\quad(i\ne r+1),
+\end{equation}
+\begin{equation}\tag{2.1.8.2}
+\mathrm H^{r+1}(\mathbf T^n,S)=S/(\mathbf T^n).
+\end{equation}
+因此，$A$-模 $\mathrm H^{r+1}(\mathbf T^n,S)$ 的一组基由单项式 $T^{\mathbf p}=T_0^{p_0}\cdots T_r^{p_r}$ 模 $(\mathbf T^n)$ 的类组成，其中每个 $i$ 都满足 $0\leq p_i<n$。
+\begin{proof}直接来自（1.1.3.5）及（1.1.4），其假设在此显然成立。\end{proof}
+
+\egapar{2.1.9}
+对 $n$ 取归纳极限，（2.1.8.1）给出 $i\ne r+1$ 时 $\mathrm H^i((\mathbf T),S)=0$。对 $i=r+1$，归纳系统为 $S/(\mathbf T^n)$；$0\leq n\leq m$ 时的同态 $\varphi_{nm}:S/(\mathbf T^n)\to S/(\mathbf T^m)$ 为乘以 $(T_0\cdots T_r)^{m-n}$。
+
+对 $n>\sup_i p_i$，以 $\xi_{\mathbf p,n}=\xi_{p_0,\ldots,p_r,n}$ 表示 $T_0^{n-p_0}\cdots T_r^{n-p_r}$ 模 $(\mathbf T^n)$ 的类。则 $\varphi_{nm}(\xi_{\mathbf p,n})=\xi_{\mathbf p,m}$，故它们在 $\mathrm H^{r+1}((\mathbf T),S)$ 中具有相同的典范像 $\xi_{\mathbf p}$。依（2.1.2）的次数定义，$\deg\xi_{\mathbf p}=-|\mathbf p|=-(p_0+\cdots+p_r)$。显然，各 $0<p_i\leq n$ 所对应的 $\xi_{\mathbf p,n}$ 构成 $S/(\mathbf T^n)$ 的一组基。由（2.1.8）立即得：
+
+\egastatement{2.1.10}{推论}
+采用（2.1.8）的记号，有
+\begin{equation}\tag{2.1.10.1}
+\mathrm H^i((\mathbf T),S)=0\quad(i\ne r+1),
+\end{equation}
+而 $\mathrm H^{r+1}((\mathbf T),S)$ 是自由 $A$-模，一组基由所有满足 $p_i>0$（$0\leq i\leq r$）的 $\xi_{p_0,\ldots,p_r}$ 组成。
+
+\egastatement{2.1.11}{注}
+设 $N$ 为任意 $A$-模，$M=S\otimes_AN$。（2.1.8）的论证更一般地给出
+\begin{equation}\tag{2.1.11.1}
+\mathrm H^i(\mathbf T^n,M)=0\quad(i\ne r+1),
+\end{equation}
+\begin{equation}\tag{2.1.11.2}
+\mathrm H^{r+1}(\mathbf T^n,M)=(S/(\mathbf T^n))\otimes_AN.
+\end{equation}
+末式直接来自（1.1.3.5）。另一方面，$M/(T_0^nM+\cdots+T_{i-1}^nM)$ 识别为
+$\bigl(S/(T_0^nS+\cdots+T_{i-1}^nS)\bigr)\otimes_AN$，因为该理想是 $A$-模 $S$ 的直和因子；这使（1.1.4）可用于 $M$，得到（2.1.11.1）。
+
+结合（2.1.10）与（2.1.5），得：
+\egastatement{2.1.12}{命题}
+设 $A$ 为环，$r>0$ 为整数，$X=\Pb_A^r$（II，4.1.1）。则：
+\begin{enumerate}[label=(\roman*)]
+\item $i\ne0,r$ 时，$\mathrm H^i(X,\OO_X(*))=0$。
+\item 典范同态 $\alpha:S\to\mathrm H^0(X,\OO_X(*))$（II，2.6.2）为双射。
+\item $\mathrm H^r(X,\OO_X(*))$ 是自由 $A$-模，其一组基由 $p_i>0$ 的 $\xi_{p_0,\ldots,p_r}$ 组成；该元素次数为 $-|\mathbf p|$，且 $T_i\xi_{p_0,\ldots,p_r}=\xi_{p_0,\ldots,p_i-1,\ldots,p_r}$。
+\end{enumerate}
+\begin{proof}
+将（2.1.5.2）用于 $M=S=A[T_0,\ldots,T_r]$；由（2.1.10.1），$\mathrm H^0((\mathbf T),S)=\mathrm H^1((\mathbf T),S)=0$。由于 $D_+(T_i)$ 覆盖 $X$（II，2.3.14），（2.1.5）可取 $U=X$。只需再将正合列中的映射 $S\to\mathrm H^0(X,\OO_X(*))$ 与 $\alpha$ 识别；这由 $\mathrm H^0(U,\OO_X(*))$ 与 $\mathrm H^0(\mathfrak U,\OO_X(*))$ 的典范识别得出。
+\end{proof}
+
+\egastatement{2.1.13}{推论}
+只有以下 $(i,n)$ 才可能使 $\mathrm H^i(X,\OO_X(n))\ne0$：$i=0,n\geq0$；或 $i=r,n\leq-(r+1)$。
+若 $A\ne0$，这些指标对的上同调确实非零；这由（2.1.12）及 $n\geq0$ 时 $S_n\ne0$ 得出。本章应用中主要使用较弱的结论：
+
+\egastatement{2.1.14}{推论}
+各 $A$-模 $\mathrm H^i(X,\OO_X(n))$ 都自由且有限型；若 $i>0$，则 $n\geq0$ 时为零。
+
+\egastatement{2.1.15}{命题}
+设 $Y$ 为预概形，$\E$ 为秩 $r+1$ 的局部自由 $\OO_Y$-模，$X=\Pb(\E)$ 为相应射影丛，$f:X\to Y$ 为结构态射。只有 $i=0,n\geq0$ 或 $i=r,n\leq-(r+1)$ 时，$\mathrm R^if_*(\OO_X(n))$ 才可能非零。此外，典范同态（II，3.3.2）
+\[
+\alpha:\Sym_{\OO_Y}(\E)\longrightarrow\Gamma_*(\OO_X)
+=\mathrm R^0f_*(\OO_X(*))=\bigoplus_{n\in\Z}f_*(\OO_X(n))
+\]
+为同构。
+\begin{proof}
+问题在 $Y$ 上局部，可设 $Y=\Spec A$，$\E=\wt E$，其中 $E=A^{r+1}$；结合（1.4.11），立即归结为（2.1.12）。
+\end{proof}
+
+\egastatement{2.1.16}{注}
+以后将用以下结果补充（2.1.15）。令 $\omega=f^*(\bigwedge^{r+1}\E)(-r-1)$，这是可逆 $\OO_X$-模。则：
+
+（i）有典范同构
+\begin{equation}\tag{2.1.16.1}
+\rho:\mathrm R^rf_*(\omega)\iso\OO_Y.
+\end{equation}
+（ii）杯积配对（0，12.2.2）
+\begin{equation}\tag{2.1.16.2}
+\mathrm R^rf_*(\OO_X(n))\times\mathrm R^0f_*(\omega(-n))\to\mathrm R^rf_*(\omega)
+\end{equation}
+与同构 $\rho^{-1}$ 复合，给出 $\mathrm R^rf_*(\OO_X(n))$ 到局部自由 $\OO_Y$-模
+\[
+\mathrm R^0f_*(\omega(-n))=\bigl(\bigwedge^{r+1}\E\bigr)\otimes_{\OO_Y}
+(\Sym_{\OO_Y}(\E))_{-n}
+\]
+的对偶的同构。\transnote{本段保留底本的两处记号：按（2.1.16.1）的方向，配对应与 $\rho$ 复合；按 $\omega=f^*(\bigwedge^{r+1}\E)(-r-1)$ 及（2.1.15），末式对称代数分量的下标应为 $-n-r-1$，而底本印作 $-n$。}\par
+
+% ---- END c3_s02a.tex ----
+% ---- BEGIN c3_s02b.tex ----
+\subsection{射影态射的基本定理}
+\src{100--102}
+\egastatement{2.2.1}{定理（Serre）}
+设 $Y$ 为诺特预概形，$f:X\to Y$ 为固有态射，$\LL$ 为相对于 $f$ 丰沛的可逆 $\OO_X$-模。对每个 $\OO_X$-模 $\F$ 及 $n\in\Z$，令 $\F(n)=\F\otimes_{\OO_X}\LL^{\otimes n}$。则对每个凝聚 $\OO_X$-模 $\F$：
+\begin{enumerate}[label=(\roman*)]
+\item 各 $\mathrm R^qf_*(\F)$ 是凝聚 $\OO_Y$-模。
+\item 存在整数 $N$，使 $n\geq N$ 时，对每个 $q>0$ 有 $\mathrm R^qf_*(\F(n))=0$。
+\item 存在整数 $N$，使 $n\geq N$ 时，典范同态 $f^*(f_*(\F(n)))\to\F(n)$ 满射。
+\end{enumerate}
+\eproof 首先，若将 $\LL$ 换为 $\LL^{\otimes d}$（$d>0$）后定理成立，则原定理也成立。因为可写
+$\F(n)=(\F\otimes\LL^{\otimes r})\otimes\LL^{\otimes hd}$，其中 $h\geq0$、$0\leq r<d$。对每个 $r$，假设给出整数 $N_r$，使 $h\geq N_r$ 时，对 $\F\otimes\LL^{\otimes r}$ 成立（ii）、（iii）；取 $N$ 为各 $dN_r$ 的最大值即可。故可设 $\LL$ 相对于 $f$ 很丰沛（II，4.6.11）。于是存在占优开 $Y$-浸入 $i:X\to P=\Proj\SSS$，其中 $\SSS$ 为非负分次拟凝聚 $\OO_Y$-代数，$\SSS_1$ 有限型并生成 $\SSS$，且 $\LL\simeq i^*\OO_P(1)$（II，4.4.7）。由于 $f$ 固有，$i$ 也固有（II，5.4.4），所以 $i$ 是同构 $X\simeq P$。因此只需考虑 $X=\Proj\SSS$、$\LL=\OO_X(1)$。此时定理由以下命题推出。
+
+\egastatement{2.2.2}{命题}
+设 $A$ 为诺特环，$S$ 为非负分次 $A$-代数，$S_1$ 作为 $A$-模具有 $r+1$ 个生成元，并生成代数 $S$。令 $X=\Proj S$。对每个凝聚 $\OO_X$-模 $\F$：
+\begin{enumerate}[label=(\roman*)]
+\item 各 $A$-模 $\mathrm H^q(X,\F)$ 有限型。
+\item $q>r$ 时，$\mathrm H^q(X,\F)=0$。
+\item 存在整数 $N$，使 $n\geq N$ 时，对每个 $q>0$ 有 $\mathrm H^q(X,\F(n))=0$。
+\item 存在整数 $N$，使 $n\geq N$ 时，$\F(n)$ 由其全局截面生成。
+\end{enumerate}
+先说明（2.2.2）如何推出（2.2.1）。在已经归结的 $X=\Proj\SSS$ 情形，$Y$ 拟紧，可用有限个仿射开集 $U_\alpha$ 覆盖，其环诺特，且 $\SSS|U_\alpha$ 由 $\SSS_1$ 在 $U_\alpha$ 上的有限多个截面生成。若（2.2.2）成立，只需在（2.2.1，ii）、（iii）中取各 $U_\alpha$ 对应整数的最大值，并使用（1.4.11）、（II，3.4.7）。
+
+为证（2.2.2），注意 $X$ 可识别为 $P=\Pb_A^r$ 的闭子概形（II，3.6.2）。若 $j:X\to P$ 为典范嵌入，则 $j_*(\F)$ 凝聚，且 $j_*(\F(n))=(j_*(\F))(n)$（II，3.4.5及3.5.2）。利用（G，II，定理4.9.1的推论），归结为 $X=\Pb_A^r$、$S=A[T_0,\ldots,T_r]$。$X$ 被 $r+1$ 个仿射开集 $D_+(T_i)$ 覆盖，故（ii）由（1.4.12）得出；（iv）已在（II，2.7.9）证明。
+
+现在同时证明（i）、（iii）。对于 $\F=\OO_X(m)$，它们成立（2.1.13），故对于有限个这种层的直和也成立。由（ii），$q>r$ 时两者平凡成立。对 $q$ 作下降归纳。已知 $\F$ 是有限个 $\OO_X(m_j)$ 的直和 $\E$ 的商（II，2.7.10），所以有正合列 $0\to\R\to\E\to\F\to0$，其中 $\R$ 凝聚（$\OI$，5.3.3），且 $\E$ 满足（i）、（iii）。由于扭转是正合函子，各 $n\in\Z$ 都给出
+\[
+0\to\R(n)\to\E(n)\to\F(n)\to0,
+\]
+从而有上同调正合列
+\[
+\mathrm H^{q-1}(X,\E(n))\to\mathrm H^{q-1}(X,\F(n))\to\mathrm H^q(X,\R(n)).
+\]
+$\E(n)$ 是各 $\OO_X(n+m_j)$ 的直和，故左项有限型；归纳假设说明右项也有限型。$A$ 诺特，故中项对每个 $n$ 有限型，特别适用于 $n=0$。另一方面，归纳假设给出 $N$，使 $n\geq N$ 时右项为零；在证明正次数的（iii）时，还可将 $N$ 取大，使左项为零，因为 $\E$ 满足（iii）。于是中项也为零，证明完成。\finishproof
+
+\egastatement{2.2.3}{推论}
+在（2.2.1）的假设下，设 $\F\to\G\to\HH$ 为凝聚 $\OO_X$-模正合列。则存在整数 $N$，使 $n\geq N$ 时
+\[
+f_*(\F(n))\to f_*(\G(n))\to f_*(\HH(n))
+\]
+正合。
+\begin{proof}
+设 $\F',\G',\G''$ 分别为 $\F\to\G$ 的核、像、余核；则 $\G'$ 也是 $\G\to\HH$ 的核，而 $\G''$ 是其像，再以 $\HH''$ 表示其余核。这些模都凝聚（$\OI$，5.3.4）。因扭转正合，只需对足够大的 $n$ 证明
+\[
+\begin{aligned}
+0&\to f_*(\F'(n))\to f_*(\F(n))\to f_*(\G'(n))\to0,\\
+0&\to f_*(\G'(n))\to f_*(\G(n))\to f_*(\G''(n))\to0,\\
+0&\to f_*(\G''(n))\to f_*(\HH(n))\to f_*(\HH''(n))\to0
+\end{aligned}
+\]
+各列正合。因此可直接假设 $0\to\F\to\G\to\HH\to0$ 正合。其上同调长正合列的开头为
+\[
+0\to f_*(\F(n))\to f_*(\G(n))\to f_*(\HH(n))\to\mathrm R^1f_*(\F(n))\to\cdots,
+\]
+结论由（2.2.1，ii）得出。
+\end{proof}
+
+\egastatement{2.2.4}{推论}
+设 $Y$ 为诺特预概形，$f:X\to Y$ 为有限型态射，$\LL$ 为相对于 $f$ 丰沛的可逆 $\OO_X$-模，仍令 $\F(n)=\F\otimes\LL^{\otimes n}$。设 $\F\to\G\to\HH$ 是凝聚 $\OO_X$-模正合列，且 $\F,\HH$ 的支撑在 $Y$ 上固有（II，5.4.10）。则存在 $N$，使 $n\geq N$ 时 $f_*(\F(n))\to f_*(\G(n))\to f_*(\HH(n))$ 正合。
+\begin{proof}
+（2.2.1）开头的同一论证说明，可将 $\LL$ 换为正张量幂，故可设其相对于 $f$ 很丰沛（II，4.6.11）。于是可将 $X$ 识别为 $Y$-概形 $Z=\Proj\SSS$ 的开集，其中 $\SSS$ 为非负分次拟凝聚代数，由有限型 $\SSS_1$ 生成，且 $\LL=i^*\OO_Z(1)$，$i:X\to Z$ 为典范嵌入（II，4.4.7）。由于 $\Supp\G$ 在 $X$ 中闭，且包含于 $\Supp\F\cap\Supp\HH$，它在 $Y$ 上固有；因此三个层的支撑都在 $Z$ 中闭（II，5.4.10）。\transnote{底本此处的交号 $\cap$ 应读作并号 $\cup$：由三项正合性得出的是 $\Supp\G\subset\Supp\F\cup\Supp\HH$。有限并仍足以支持本段的固有性论证。}
+于是 $\F'=i_*(\F)$、$\G'=i_*(\G)$、$\HH'=i_*(\HH)$ 是凝聚 $\OO_Z$-模，并构成正合列。若 $g:Z\to Y$ 是结构态射，则 $f=g\circ i$，且 $\F'(n)=i_*(\F(n))$，对另两个层同样成立。将（2.2.3）用于 $\F',\G',\HH'$ 即得结论。
+\end{proof}
+
+\egastatement{2.2.5}{注}
+（i）（2.2.1，i）在仅假设 $Y$ 局部诺特时仍成立，因为该性质在 $Y$ 上局部。又（2.2.1）的假设保证：对每个开集 $U\subset Y$，$f$ 在 $f^{-1}(U)$ 上的限制为射影态射，且 $\LL|f^{-1}(U)$ 相对于它丰沛（II，5.5.5，iii；4.6.4）。
+
+（ii）已经看到，当只假设 $X$ 为拟紧概形或底空间诺特的预概形、$f$ 拟紧时，（2.2.1，iii）仍成立（II，4.6.8）。但即使 $Y$ 是域 $K$ 的谱、$f$ 拟射影，（2.2.1，ii）也未必成立。例如，令 $X'=\Spec K[T_0,\ldots,T_r]$，$X=\bigcup_{i=0}^rD(T_i)$。开浸入 $X\to X'$ 拟紧，所以结构态射 $f:X\to Y$ 拟仿射（II，5.1.10），因而 $\OO_X$ 相对于 $f$ 很丰沛（II，5.1.6）。但 $\Gamma(X,\OO_X)$ 识别为各局部化环 $K[T_0,\ldots,T_r]_{T_i}$ 的交（I，8.2.1.1），也就是 $K[T_0,\ldots,T_r]$。由（1.4.3.1）及（1.1.3.5），对每个 $n$ 有
+\[
+\mathrm H^r(X,\OO_X^{\otimes n})=\mathrm H^r(X,\OO_X)=A\ne0.
+\]
+\transnote{此例应在 $r>0$ 下阅读。底本末式保留了没有在此例中解释的记号 $A$；非零性可由（2.1.10）与（1.4.3.1）核对，这里的最高次上同调不应直接识别为上述多项式函数环。}
+
+\subsection{应用于分次代数层和分次模层}
+\src{102--107}
+\egastatement{2.3.1}{定理}
+设 $Y$ 为诺特预概形，$\SSS$ 为非负分次、拟凝聚、有限型的 $\OO_Y$-代数，$X=\Proj\SSS$，$q:X\to Y$ 为结构态射，$\M$ 为满足（TF）的拟凝聚分次 $\SSS$-模。则存在整数 $N$，使 $n\geq N$ 时典范同态（II，8.14.5.1）
+\[
+\alpha_n:\M_n\to q_*\bigl(\sProj_0(\M(n))\bigr)
+=q_*\bigl((\sProj\M)_n\bigr)
+\]
+为双射。换言之，典范同态 $\alpha:\M\to\Gamma_*(\sProj\M)$ 是（TN）-同构。
+\begin{proof}
+可以只考虑 $\M$ 有限型的情形（II，3.4.2）。由于 $Y$ 拟紧，存在整数 $d>0$，使 $\SSS^{(d)}$ 由有限型拟凝聚 $\OO_Y$-模 $\SSS_d$ 生成（II，3.1.10）；$Y$ 诺特，故 $\SSS_d$ 凝聚。$\M$ 是各 $\M^{(d,k)}$（$0\leq k<d$）的直和，它们都是有限型拟凝聚分次 $\SSS^{(d)}$-模；这由（II，2.1.6，iii）局部得出。只需证明各同态
+\[
+\M^{(d,k)}\to\bigl(\Gamma_*(\sProj\M)\bigr)^{(d,k)}
+\]
+为（TN）-同构。结合（II，8.14.13），特别是其交换图（8.14.13.4），可归结到 $\SSS$ 由凝聚 $\SSS_1$ 生成的情形。像（2.2.2）开头那样，可再设 $Y=\Spec A$、$\SSS=\wt S$、$\M=\wt M$，其中 $A$ 诺特，$S_1$ 为有限型 $A$-模，$M$ 为有限型分次 $S$-模。
+
+说明只需证 $M=S$。一般情况下有正合列 $L'\to L\to M\to0$，其中 $L,L'$ 是形如 $S(m)$ 的分次模的有限直和。若结论对 $S$ 成立，也对 $S(m)$ 以及 $L,L'$ 成立。考虑交换图
+\[
+\begin{tikzcd}[column sep=small]
+L'_n\arrow[r]\arrow[d]&L_n\arrow[r]\arrow[d]&M_n\arrow[r]\arrow[d]&0\\
+q_*(\wt L'(n))\arrow[r]&q_*(\wt L(n))\arrow[r]&q_*(\wt M(n))\arrow[r]&0.
+\end{tikzcd}
+\]
+当 $n$ 足够大时，第二行由（2.2.3）正合；第一行亦正合，而左侧两竖箭头为同构，故第三个也为同构。
+
+为证 $M=S$ 时的结论，先设 $S=A[T_0,\ldots,T_r]$；此时即为（2.1.12，ii）。\transnote{底本此处引作（2.1.11，ii），但具有该“（ii）”结论的是（2.1.12）。}
+一般情况下，$S$ 是 $S'=A[T_0,\ldots,T_r]$ 模一个分次理想的商，故 $X$ 是 $X'=\Pb_A^r$ 的闭子概形（II，2.9.2）。若 $j:X\to X'$ 为典范嵌入，则 $j_*(\widetilde{S(n)})=(\sProj S)(n)$，右边把 $S$ 看作分次 $S'$-模（II，2.8.7）。由于该分次模满足（TF），由已证的多项式环情形，对足够大的 $n$，典范同态
+$S_n\to\Gamma(X',j_*(\widetilde{S(n)}))$ 为双射。再用
+$\Gamma(X',j_*(\widetilde{S(n)}))=\Gamma(X,\widetilde{S(n)})$，证明完成。
+\end{proof}
+
+\egastatement{2.3.2}{推论}
+在（2.3.1）的假设下，令 $\SSS_X=\bigoplus_{n\in\Z}\OO_X(n)$，设 $\F$ 为有限型拟凝聚分次 $\SSS_X$-模。则 $\Gamma_*(\F)$ 满足（TF）。
+\begin{proof}
+（2.3.1）的证明已经说明，$X\simeq\Proj\SSS^{(d)}$（II，3.1.8）在 $Y$ 上有限型（II，3.4.1）。由（II，8.14.9），$\F$ 同构于 $\sProj\M$，其中 $\M$ 是有限型拟凝聚分次 $\SSS$-模。由（2.3.1），$\Gamma_*(\F)$ 与 $\M$（TN）-同构，因此满足（TF）。
+\end{proof}
+
+\egastatement{2.3.3}{说明}
+设 $Y$ 诺特，$\SSS$ 满足（2.3.1）的条件，$X=\Proj\SSS$。设 $K_{\SSS}$ 为满足（TF）的拟凝聚分次 $\SSS$-模所成阿贝尔范畴，$K_{\SSS}^0$ 为其中满足（TN）的模构成的子范畴；又设 $K_X$ 为有限型拟凝聚分次 $\SSS_X$-模 $\E$ 的范畴。由于 $\SSS_X$ 周期性（II，8.14.4及8.14.12），后一条件也等价于各 $\E_n$ 为凝聚 $\OO_X$-模。由（II，8.14.8及8.14.10）和（2.3.2），函子 $\M\mapsto\sProj\M$ 与 $\E\mapsto\Gamma_*(\E)$ 给出商范畴 $K_{\SSS}/K_{\SSS}^0$（T，I，1.11）与 $K_X$ 的等价（T，I，1.2）。若 $\SSS$ 由 $\SSS_1$ 生成，可将 $K_X$ 换成凝聚 $\OO_X$-模范畴（II，8.14.12）。
+
+\egastatement{2.3.4}{命题}
+设 $Y$ 为诺特预概形。
+\begin{enumerate}[label=(\roman*)]
+\item 设 $\SSS$ 为非负分次、拟凝聚、有限型的 $\OO_Y$-代数，$X=\Proj\SSS$，$\SSS_X=\sProj\SSS=\bigoplus_{n\in\Z}\OO_X(n)$。则 $\SSS_X$ 为周期性分次 $\OO_X$-代数，其齐次分量为凝聚模；若 $d>0$ 是一个周期，则 $(\SSS_X)_d=\OO_X(d)$ 可逆且在 $Y$ 上丰沛。此外，典范同态 $\alpha:\SSS\to\Gamma_*(\SSS_X)$ 为（TN）-同构。
+\item 反过来，设 $q:X\to Y$ 为射影态射，$\SSS'$ 为分次 $\OO_X$-代数，各齐次分量 $\SSS'_n$ 都凝聚；并且存在周期 $d>0$，使 $\SSS'_d$ 为相对于 $q$ 丰沛的可逆模。则 $\SSS=\bigoplus_{n\geq0}q_*(\SSS'_n)$ 为非负分次、拟凝聚、有限型 $\OO_Y$-代数；存在 $Y$-同构 $r:X\iso\Proj\SSS$，使 $r^*(\sProj\SSS)$ 与 $\SSS'$ 作为分次 $\OO_X$-代数同构。
+\end{enumerate}
+\eproof（i）实质上各断言均已证明。最后一个为（2.3.2）的特例。周期性见（II，8.14.14）；某个周期 $d$ 对应的 $\OO_X(d)$ 可逆且 $Y$-丰沛，见（II，4.6.18）。又对 $0\leq k<d$，$(\SSS_X)^{(d,k)}$ 为有限型 $(\SSS_X)^{(d)}$-模（II，8.14.14），故每个 $(\SSS_X)_n$ 局部由（II，2.1.6，ii）为有限型拟凝聚模。由于 $\OO_X$ 凝聚，各分量凝聚。
+
+（ii）将周期 $d$ 换为其适当倍数，可设 $\LL=\SSS'_d$ 相对于 $q$ 很丰沛（II，4.6.11）。按假设，$\SSS'^{(d)}=\bigoplus_{n\in\Z}\LL^{\otimes n}$，故 $\SSS^{(d)}=\bigoplus_{n\geq0}q_*(\LL^{\otimes n})$。已知（II，3.1.8及3.2.9），存在 $Y$-同构
+$s:X'=\Proj\SSS\iso X''=\Proj\SSS^{(d)}$，且 $s^*\OO_{X''}(n)=\OO_{X'}(nd)$。以下命题将给出 $X\simeq X'$。
+
+\egastatement{2.3.4.1}{命题}
+设 $Y$ 为诺特预概形，$q:X\to Y$ 为射影态射，$\LL$ 为相对于 $q$ 很丰沛的可逆模。则 $\SSS=\bigoplus_{n\geq0}q_*(\LL^{\otimes n})$ 是有限型拟凝聚分次 $\OO_Y$-代数，且充分大的 $n$ 满足 $\SSS_n=\SSS_1^n$；存在 $Y$-同构 $r:X\iso P=\Proj\SSS$，使 $\LL=r^*\OO_P(1)$。
+\begin{proof}
+由射影性以及（II，5.4.4及4.4.7），存在 $Y$-同构 $r':X\iso P'=\Proj\TT$，其中 $\TT$ 由有限型 $\TT_1$ 生成，且 $\LL=r'^*\OO_{P'}(1)$。于是 $\SSS=\bigoplus_{n\geq0}q'_*(\OO_{P'}(n))$，$q':P'\to Y$ 为结构态射。由（2.3.1），充分大的 $n$ 使典范同态 $\alpha_n:\TT_n\to\SSS_n=q_*(\LL^{\otimes n})$ 双射。因 $\TT_n=\TT_1^n$，故此时也有 $\SSS_n=\SSS_1^n$。又 $\alpha:\TT\to\SSS$ 是（TN）-同构，故 $\Phi=\Proj\alpha:\Proj\SSS\to\Proj\TT$ 为同构（II，3.6.1），并有 $\Phi^*(\widetilde{\TT(n)})=\widetilde{\SSS(n)_{[\alpha]}}$（II，3.5.2）。因相应的分次模与 $\SSS(n)$（TN）-同构，（II，3.4.2）给出 $\Phi^*\OO_{P'}(n)=\OO_P(n)$。
+
+只需再证 $\SSS$ 有限型。各 $\SSS_n=q'_*(\OO_{P'}(n))$ 由（2.2.1）凝聚；而充分大的 $n$ 有 $\SSS_n=\SSS_1^n$，所以 $\SSS$ 由有限多个齐次分量的和生成，该和凝聚，因而代数有限型（I，9.6.2）。
+\end{proof}
+回到（2.3.4）。已得到 $Y$-同构 $r'':X\iso X''$，使 $r''_*(\LL^{\otimes n})=\OO_{X''}(n)$；以 $q''$ 表示 $X''\to Y$。$\SSS'$ 为各 $\SSS'^{(d,k)}$ 的直和；由周期性及各 $\SSS'_n$ 有限型，这些都是有限型拟凝聚分次 $\SSS'^{(d)}$-模（II，8.14.12）。令
+$\F^{(k)}=r''_*(\SSS'^{(d,k)})$，它们是有限型拟凝聚分次 $\SSS_{X''}$-模。由（II，8.14.8），典范同态
+$\beta:\sProj(\Gamma_*(\F^{(k)}))\to\F^{(k)}$ 为同构。
+
+又 $\Gamma_*(\F^{(k)})_n=q''_*(\F_n^{(k)})=q_*((\SSS'^{(d,k)})_n)$，$n\geq0$ 时按定义等于 $(\SSS^{(d,k)})_n$。因此典范嵌入 $\SSS^{(d,k)}\to\Gamma_*(\F^{(k)})$ 是（TN）-同构，故
+\[
+\sProj(\SSS^{(d,k)})=\sProj(\Gamma_*(\F^{(k)})),\qquad
+r''^*(\sProj(\SSS^{(d,k)}))=\SSS'^{(d,k)}.
+\]
+结合典范同构
+$\sProj(\SSS^{(d,k)})=s_*(\sProj\SSS)^{(d,k)}$（II，8.14.13.1），便得 $r^*(\sProj\SSS)\simeq\SSS'$。最后，由（2.3.2），各 $\Gamma_*(\F^{(k)})$ 满足（TF），所以各 $\SSS^{(d,k)}$ 也满足；又 $\SSS'_n$ 凝聚，故 $\SSS_n=q_*(\SSS'_n)$ 凝聚（2.2.1），从而各 $\SSS^{(d,k)}$ 都为有限型 $\SSS^{(d)}$-模。已经由（2.3.4.1）知道 $\SSS^{(d)}$ 为有限型 $\OO_Y$-代数，因此 $\SSS$ 也有限型。\finishproof
+
+\egastatement{2.3.5}{命题}
+设 $Y$ 为诺特整预概形，$X$ 为整预概形，$f:X\to Y$ 为射影双有理态射。则存在凝聚分式理想 $\J\subset\R(Y)$（II，8.1.2），使 $X$ 与沿 $\J$ 爆破得到的预概形 $Y$-同构（II，8.1.3）。并且存在 $Y$ 的开集 $U$，使 $f:f^{-1}(U)\to U$ 为同构，且 $\J|U$ 可逆。
+\begin{proof}
+存在相对于 $f$ 很丰沛的可逆模 $\LL$（II，4.4.2及5.3.2）。由（2.3.4.1），$X\simeq\Proj\SSS$，其中 $\SSS=\bigoplus_{n\geq0}f_*(\LL^{\otimes n})$。各直接像无挠（I，7.4.5），故 $\SSS$ 无挠，可典范地识别为 $\SSS\otimes_{\OO_Y}\R(Y)$ 的子模（I，7.4.1）。后者是常层（I，7.3.6），在任一非空开集上的限制就能确定它。取非空 $U'\subset U$ 使 $\LL|f^{-1}(U')\simeq\OO_X|f^{-1}(U')$；此时各 $f_*(\LL^{\otimes n})|U'\simeq\OO_Y|U'$，故 $\SSS\otimes\R(Y)\simeq\R(Y)[T]$。
+
+由（2.3.4.1），$\SSS$ 与其中由 $f_*(\LL)$ 的典范像生成的子代数（TN）-同构。在上述识别下，该像为 $\J T$，其中 $\J$ 是 $\R(Y)$ 的凝聚子 $\OO_Y$-模（2.2.1），其在 $U'$ 上限制同构于 $\OO_Y|U'$，所以 $\J|U'$ 可逆。于是 $\SSS$ 与 $\bigoplus_{n\geq0}\J^n$（TN）-同构，命题得证。
+\end{proof}
+
+\egastatement{2.3.6}{推论}
+在（2.3.5）的假设下，再设对每个非零凝聚子模 $\J\subset\R(Y)$，都存在可逆 $\OO_Y$-模 $\LL$，使
+$\Gamma(Y,\LL\otimes\shHom_{\OO_Y}(\J,\OO_Y))\ne0$。
+则在（2.3.5）中可取 $\J$ 为 $\OO_Y$ 的理想。只要存在丰沛 $\OO_Y$-模，这一附加条件就成立。
+\begin{proof}
+由（$\OI$，5.4.2），
+\[
+\begin{aligned}
+\LL\otimes\shHom(\J,\OO_Y)
+&=\shHom(\LL^{-1},\shHom(\J,\OO_Y))\\
+&=\shHom(\J\otimes\LL^{-1},\OO_Y).
+\end{aligned}
+\]
+所以假设意味着有非零同态 $u:\J\otimes\LL^{-1}\to\OO_Y$。对每个 $y\in Y$，$(\J\otimes\LL^{-1})_y$ 可识别为 $\OO_{Y,y}$ 的分式域中的子模（I，7.1.5）；故 $u_y$ 单射，$u$ 将它同构于 $\OO_Y$ 的理想 $\J'$。但 $\Proj(\bigoplus_n\J^n)$ 与 $\Proj(\bigoplus_n(\J\otimes\LL^{-1})^n)$ 为 $Y$-同构（II，3.1.8），第一断言得证。
+
+为证第二断言，$\F=\shHom_{\OO_Y}(\J,\OO_Y)$ 凝聚且非零，因为存在开集 $U$ 使 $\J|U$ 可逆。若 $\LL$ 丰沛，则某个 $n$ 使 $\F(n)=\F\otimes\LL^{\otimes n}$ 由全局截面生成（II，4.5.5），从而 $\Gamma(Y,\F(n))\ne0$。
+\end{proof}
+
+\egastatement{2.3.7}{推论}
+设 $X,Y$ 为域 $k$ 上的射影整概形，$f:X\to Y$ 为双有理 $k$-态射。则 $X$ 与沿 $Y$ 的某个闭子概形 $Y'$（不要求约化）爆破所得的 $k$-概形同构。
+\begin{proof}
+$f$ 射影（II，5.5.5，v），且 $Y$ 在 $k$ 上射影，故（2.3.6）的附加条件成立。取该推论中凝聚理想所定义的闭子概形即可。
+\end{proof}
+
+\egastatement{2.3.8}{注}
+第IV章研究除子时，将看到：若（2.3.5）中各局部环 $\OO_{Y,y}$ 为唯一分解整环，例如 $Y$ 非奇异，则 $X$ 可由沿 $Y$ 的某个闭子预概形 $Y'$ 爆破得到，且 $Y'$ 的底空间包含于 $Y-U$。\par
+
+% ---- END c3_s02b.tex ----
+% ---- BEGIN c3_s02c.tex ----
+\subsection{基本定理的一个推广}
+\src{107--109}
+\egastatement{2.4.1}{定理}
+设 $Y$ 为诺特预概形，$\SSS$ 为有限型拟凝聚 $\OO_Y$-代数。设 $f:X\to Y$ 为射影态射，$\SSS'=f^*(\SSS)$，$\M$ 为有限型拟凝聚 $\SSS'$-模。则：
+\begin{enumerate}[label=(\roman*)]
+\item 对每个 $p\in\Z$，$\mathrm R^pf_*(\M)$ 是有限型 $\SSS$-模。
+\item 若 $\LL$ 为相对于 $f$ 丰沛的可逆 $\OO_X$-模，并令 $\M(n)=\M\otimes\LL^{\otimes n}$，则存在整数 $N$，使 $n\geq N$ 时，对每个 $p>0$ 有
+\begin{equation}\tag{2.4.1.1}
+\mathrm R^pf_*(\M(n))=0,
+\end{equation}
+且典范同态 $f^*(f_*(\M(n)))\to\M(n)$（$\OI$，4.4.3）满射。
+\end{enumerate}
+\begin{proof}
+令 $Y'=\Spec\SSS$、$X'=\Spec\SSS'$，则 $X'=X\times_YY'$（II，1.5.5）。令 $g:Y'\to Y$、$g':X'\to X$ 为仿射结构态射，$f'=f_{(Y')}$；于是有交换图
+\[
+\begin{tikzcd}
+X\arrow[d,"f"']&X'\arrow[l,"g'"']\arrow[d,"f'"]\arrow[dl,"h",description]\\
+Y&Y'\arrow[l,"g"]
+\end{tikzcd}
+\]
+其中 $f'$ 射影（II，5.5.5，iii），$h=f\circ g'=g\circ f'$。
+
+（i）以 $\wt\M$ 表示把 $X'$ 看作 $X$ 上仿射概形时、与拟凝聚 $\SSS'$-模 $\M$ 相伴的 $\OO_{X'}$-模（II，1.4.3），故 $\M=g'_*(\wt\M)$。由（II，1.4.5），$\wt\M$ 有限型；$g,f'$ 均有限型，故 $h$ 有限型（II，1.3.7；I，6.3.4，ii），从而 $X'$ 诺特，$\wt\M$ 凝聚。因 $g'$ 仿射，典范同态
+$\mathrm R^pf_*(\M)\to\mathrm R^ph_*(\wt\M)$ 为双射（1.3.4）。它也是 $\SSS$-模同态：定义 $\M$ 的 $\SSS'$-模结构的同态为
+\begin{equation}\tag{2.4.1.2}
+g'_*(\OO_{X'})\otimes g'_*(\wt\M)\longrightarrow g'_*(\wt\M),
+\end{equation}
+这里 $\SSS'=g'_*(\OO_{X'})$。由它典范地得到（0，12.2.2）
+\[
+f_*(g'_*(\OO_{X'}))\otimes\mathrm R^pf_*(g'_*(\wt\M))\to
+\mathrm R^pf_*(g'_*(\wt\M)).
+\]
+而（2.4.1.2）本身由 $\OO_{X'}\otimes\wt\M\to\wt\M$ 经（$\OI$，4.2.2.1）得到，所以图
+\[
+\begin{tikzcd}[column sep=small]
+f_*g'_*(\OO_{X'})\otimes\mathrm R^pf_*(g'_*(\wt\M))\arrow[r]\arrow[d]&\mathrm R^pf_*(g'_*(\wt\M))\arrow[d]\\
+h_*(\OO_{X'})\otimes\mathrm R^ph_*(\wt\M)\arrow[r]&\mathrm R^ph_*(\wt\M)
+\end{tikzcd}
+\]
+交换（0，12.2.6）。再将水平箭头与来自典范同态
+$\SSS\to f_*(f^*\SSS)=f_*(\SSS')=f_*g'_*(\OO_{X'})=h_*(\OO_{X'})$
+的同态复合，就得上述断言。
+
+又因 $g$ 仿射、$f'$ 分离拟紧，典范同态
+$\mathrm R^ph_*(\wt\M)\to g_*(\mathrm R^pf'_*(\wt\M))$
+为双射（1.4.14）；同样用（0，12.2.6.2）的交换性可知它为 $\SSS$-模同构。$f'$ 射影且 $\wt\M$ 凝聚，故 $\mathrm R^pf'_*(\wt\M)$ 凝聚（2.2.1），于是其直接像为有限型 $\SSS$-模（II，1.4.5）。
+
+（ii）令 $\LL'=g'^*\LL$，这是可逆 $\OO_{X'}$-模。由（$\OI$，5.4.10），对每个 $n$ 有典范同构
+\[
+g'_*(\wt\M\otimes\LL'^{\otimes n})=g'_*(\wt\M)\otimes\LL^{\otimes n}=\M(n).
+\]
+将（i）的论证用于 $\wt\M\otimes\LL'^{\otimes n}$，得到
+$\mathrm R^pf_*(\M(n))\simeq g_*(\mathrm R^pf'_*(\wt\M\otimes\LL'^{\otimes n}))$。
+$\LL'$ 相对于 $f'$ 丰沛（II，4.6.13，iii），所以（2.2.1）给出 $N$，使 $p>0,n\geq N$ 时右边为零，证明（2.4.1.1）。又可将 $N$ 取大，使
+$f'^*(f'_*(\wt\M\otimes\LL'^{\otimes n}))\to\wt\M\otimes\LL'^{\otimes n}$
+满射。$g'_*$ 在相应拟凝聚模范畴中正合（II，1.4.4），故其直接像也满射到 $\M(n)$。而（II，1.5.2）给出
+\[
+\begin{aligned}
+g'_*(f'^*(f'_*(\wt\M\otimes\LL'^{\otimes n})))
+&=f^*(g_*(f'_*(\wt\M\otimes\LL'^{\otimes n})))\\
+&=f^*(f_*(g'_*(\wt\M\otimes\LL'^{\otimes n})))
+=f^*(f_*(\M(n))),
+\end{aligned}
+\]
+证明完成。
+\end{proof}
+
+\egapar{2.4.2}
+尤其将（2.4.1）用于 $\SSS$ 非负分次、$\M=\bigoplus_k\M_k$ 为分次 $\SSS'$-模的情形。在相同有限性假设下，对每个 $p$，$\bigoplus_k\mathrm R^pf_*(\M_k)$ 是有限型 $\SSS$-模；在（2.4.1，ii）的附加假设下，还存在 $N$，使 $n\geq N$ 时，对所有 $p>0,k\in\Z$，有 $\mathrm R^pf_*(\M_k(n))=0$，并且 $f^*(f_*(\M_k(n)))\to\M_k(n)$ 满射。
+
+\subsection{Euler--Poincaré 特征与 Hilbert 多项式}
+\src{109--111}
+\egapar{2.5.1}
+设 $A$ 为阿廷环，$X$ 为 $Y=\Spec A$ 上的射影概形。对每个凝聚 $\OO_X$-模 $\F$，各 $\mathrm H^i(X,\F)$ 为有限型 $A$-模（2.2.1），故因 $A$ 阿廷而具有有限长度。此外，只有有限多个上同调模非零；因此整数
+\begin{equation}\tag{2.5.1.1}
+\chi_A(\F)=\sum_{i\geq0}(-1)^i\len_A\mathrm H^i(X,\F)
+\end{equation}
+有定义。当 $A$ 是阿廷局部环时，称其为 $\F$（相对于 $A$）的\textbf{Euler--Poincaré 特征}。取 $\F=\OO_X$ 时，称 $\chi_A(\OO_X)$ 为 $X$（相对于 $A$）的\textbf{算术亏格}。
+
+\egastatement{2.5.2}{命题}
+若 $0\to\F'\to\F\to\F''\to0$ 是凝聚 $\OO_X$-模正合列，则
+\begin{equation}\tag{2.5.2.1}
+\chi_A(\F)=\chi_A(\F')+\chi_A(\F'').
+\end{equation}
+\begin{proof}
+三个层的上同调除有限多项外均为零，故某个 $r>0$ 使长正合列写成
+\[
+\begin{aligned}
+0&\to\mathrm H^0(X,\F')\to\mathrm H^0(X,\F)\to\mathrm H^0(X,\F'')\to\mathrm H^1(X,\F')\to\cdots\\
+&\to\mathrm H^r(X,\F')\to\mathrm H^r(X,\F)\to\mathrm H^r(X,\F'')\to0.
+\end{aligned}
+\]
+两端为零的有限长度模正合列中，长度的交错和为零（0，11.10.1）。应用此结果即得公式。
+\end{proof}
+只要已知 $X$ 是拟紧 $A$-概形，而且对每个凝聚模 $\F$，各 $A$-模 $\mathrm H^i(X,\F)$ 有限型，这一结果同样适用（1.4.12）。
+
+\egastatement{2.5.3}{定理}
+设 $A$ 为阿廷局部环，$X$ 为 $Y=\Spec A$ 上的射影概形，$\LL$ 为相对于 $Y$ 很丰沛的可逆 $\OO_X$-模，$\F$ 为凝聚模；令 $\F(n)=\F\otimes\LL^{\otimes n}$。则：
+\begin{enumerate}[label=(\roman*)]
+\item 存在唯一多项式 $P\in\mathbf Q[T]$，使每个 $n\in\Z$ 都满足 $\chi_A(\F(n))=P(n)$。称 $P$ 为 $\F$ 相对于 $A$ 的\textbf{Hilbert 多项式}。
+\item 充分大的 $n$ 满足 $\chi_A(\F(n))=\len_A\Gamma(X,\F(n))$。
+\item $\chi_A(\F(n))$ 的最高次项系数非负。
+\end{enumerate}
+还应补充，第IV章关于维数的部分将证明：该多项式的次数等于 $\F$ 支撑的维数。
+\eproof 由（2.2.1），充分大的 $n$ 使所有正次数上同调为零，所以 $\chi_A(\F(n))=\len_A\mathrm H^0(X,\F(n))=\len_A\Gamma(X,\F(n))$，这证明（ii）。于是充分大的 $n$ 使其非负，故（iii）由（i）得出；（i）的唯一性显然，只需证明存在性。
+
+先归结到 $\mm\F=0$，其中 $\mm$ 为 $A$ 的极大理想。某个 $s>0$ 满足 $\mm^s=0$，所以 $\F(n)$ 有有限滤过
+$\F(n)\supset\mm\F(n)\supset\cdots\supset\mm^{s-1}\F(n)\supset0$。
+由（2.5.2.1）归纳得
+\[
+\chi_A(\F(n))=\sum_{k=1}^s\chi_A(\mm^{k-1}\F(n)/\mm^k\F(n)).
+\]
+因商层等于 $\F_k(n)$，其中 $\F_k=\mm^{k-1}\F/\mm^k\F$，上述归结成立。
+
+设 $\mm\F=0$。令 $X'$ 为 $X\to\Spec A$ 下唯一闭点的闭子概形逆像，$j:X'\to X$ 为嵌入；则 $\F=j_*(\F')$，其中 $\F'$ 为凝聚 $\OO_{X'}$-模。$X'$ 在 $K=A/\mm$ 上射影，$\LL'=j^*\LL$ 很丰沛（II，4.4.10），且 $\F(n)=j_*(\F'(n))$，这里 $\F'(n)=\F'\otimes\LL'^{\otimes n}$（$\OI$，5.4.10）。因而 $\chi_A(\F(n))=\chi_K(\F'(n))$（G，II，4.9.1），归结为 $A$ 是域的情形。
+
+又可将 $X$ 看作某个 $P=\Pb_A^r$ 的闭子概形（II，5.5.4，ii）。若 $i:X\to P$ 为嵌入，则同样有 $\chi_A(\F(n))=\chi_A((i_*\F)(n))$，故可设 $X=\Pb_A^r=\Proj S$，$S=A[T_0,\ldots,T_r]$，$A$ 为域。此时 $\F=\wt M$，$M$ 为有限型分次 $S$-模（II，2.7.8）。由 Hilbert 协同关系定理（M，VIII，6.5），存在有限型分次自由模的有限解消
+\[
+0\to L_q\to L_{q-1}\to\cdots\to L_1\to M\to0.
+\]
+由于相伴层函子正合（II，2.5.4），以及扭转正合，对每个 $n$ 有
+\[
+0\to\wt L_q(n)\to\wt L_{q-1}(n)\to\cdots\to\wt L_1(n)\to\wt M(n)\to0.
+\]
+反复应用加性公式得
+\[
+\chi_A(\wt M(n))=\sum_{i=1}^q(-1)^{i+1}\chi_A(\wt L_i(n)).
+\]
+因此可设 $M$ 分次自由有限型，再归结为 $M=S(h)$。由（II，2.5.15），$\wt M(n)=\widetilde{S(n+h)}$，所以只需以下引理。
+
+\egastatement{2.5.3.1}{引理}
+设 $A$ 为域，$r>0$，$X=\Pb_A^r$。则对每个 $n\in\Z$，有
+\[
+\chi_A(\OO_X(n))=\binom{n+r}{r}.
+\]
+\begin{proof}
+当 $n\geq0$ 时，特征等于 $\mathrm H^0(X,\OO_X(n))$ 的维数，即总次数为 $n$ 的单项式数 $\binom{n+r}{r}$（2.1.12）。当 $n\leq-r-1$ 时，特征为 $(-1)^r\len_A\mathrm H^r(X,\OO_X(n))$。写 $n=-r-h$，则由（2.1.12），此维数是满足 $p_i>0$、$\sum_{i=0}^rp_i=r+h$ 的序列数，也就是满足 $q_i\geq0$、$\sum_iq_i=h-1$ 的序列数，等于 $\binom{h+r-1}{r}=(-1)^r\binom{n+r}{r}$。最后，$-r\leq n<0$ 时二项式为零，所有上同调也为零（2.1.12），引理得证。
+\end{proof}
+这完成（2.5.3）的证明。\finishproof
+
+\egastatement{2.5.4}{推论}
+设 $A$ 为阿廷局部环，$S$ 为由 $S_1$ 生成的有限型分次 $A$-代数，$M$ 为有限型分次 $S$-模，$X=\Proj S$。则充分大的 $n$ 满足 $\chi_A(\wt M(n))=\len_AM_n$。
+\begin{proof}
+由（2.3.1），充分大的 $n$ 使 $M_n\simeq\Gamma(X,\wt M(n))$。
+\end{proof}
+
+\subsection{应用：丰沛性判据}
+\src{111--115}
+\egastatement{2.6.1}{命题}
+设 $Y$ 为诺特预概形，$f:X\to Y$ 为固有态射，$\LL$ 为可逆 $\OO_X$-模。以下条件等价：
+\begin{enumerate}[label=\alph*)]
+\item $\LL$ 相对于 $f$ 丰沛。
+\item 对每个凝聚 $\OO_X$-模 $\F$，存在整数 $N$，使 $n\geq N$ 时，对每个 $q>0$ 有 $\mathrm R^qf_*(\F\otimes\LL^{\otimes n})=0$。
+\item 对每个凝聚理想 $\J\subset\OO_X$，存在 $N$，使 $n\geq N$ 时 $\mathrm R^1f_*(\J\otimes\LL^{\otimes n})=0$。
+\end{enumerate}
+\begin{proof}
+由（2.2.1，ii），a）推出 b）；b）推出 c）显然，只需证明 c）推出 a）。可设 $Y$ 仿射（II，4.6.4），并证明 $\LL$ 丰沛。由（II，4.5.2），只需证明：当 $h$ 遍历各 $\LL^{\otimes n}$（$n>0$）的全局截面时，其中仿射的 $X_h$ 覆盖 $X$。
+
+对每个闭点 $x\in X$ 及其仿射开邻域 $U$，证明存在 $n$ 和 $h\in\Gamma(X,\LL^{\otimes n})$，使 $x\in X_h\subset U$；此时 $X_h$ 仿射（I，1.3.6），这些开集的并包含所有闭点，因 $X$ 诺特便等于 $X$（I，6.3.7及$\OI$，2.1.3）。令 $\J,\J'$ 分别定义底空间为 $X-U$ 及 $(X-U)\cup\{x\}$ 的约化闭子预概形（I，5.2.1）。则它们凝聚，$\J'\subset\J$，而 $\J''=\J/\J'$ 凝聚、支撑为 $\{x\}$，且 $\J''_x=k(x)$。
+
+由于 $\LL$ 局部自由，各 $n$ 都给出正合列
+\[
+0\to\J'\otimes\LL^{\otimes n}\to\J\otimes\LL^{\otimes n}\to\J''\otimes\LL^{\otimes n}\to0.
+\]
+取足够大的 $n$，假设使 $\mathrm H^1(X,\J'\otimes\LL^{\otimes n})=0$。于是全局截面映射到 $\Gamma(X,\J''\otimes\LL^{\otimes n})$ 满射。取后者在 $x$ 处非零的截面 $g$，提升为 $h\in\Gamma(X,\J\otimes\LL^{\otimes n})\subset\Gamma(X,\LL^{\otimes n})$（$\OI$，5.4.1）。则 $h(x)\ne0$，而 $z\notin U$ 时 $h(z)=0$，所求结论成立。
+\end{proof}
+
+\egastatement{2.6.2}{命题}
+设 $Y$ 为诺特预概形，$f:X\to Y$ 为有限型态射，$g:X'\to X$ 为有限满射态射，$\LL$ 为可逆 $\OO_X$-模，$\LL'=g^*\LL$。假设存在 $X$ 的子集 $Z$ 在 $Y$ 上固有（II，5.4.10），使每个 $x\in X-Z$ 满足以下两条件之一：$X$ 在 $x$ 处正规；或 $(g_*\OO_{X'})_x$ 为自由 $\OO_{X,x}$-模。则 $\LL$ 相对于 $f$ 丰沛，当且仅当 $\LL'$ 相对于 $f\circ g$ 丰沛。
+
+\egapar{2.6.2.1}
+$g$ 仿射，故必要性由（II，5.1.12）成立。为证充分性，可设 $Y$ 仿射（II，4.6.4），且可归结到 $X$ 约化。事实上，令 $j:X_1=X_{\red}\to X$ 为嵌入，$X'_1=X'\times_XX_1$，得到交换图
+\begin{equation}\tag{2.6.2.2}
+\begin{tikzcd}
+X'\arrow[d,"g"']&X'_1\arrow[l,"j'"']\arrow[d,"g_1"]\\
+X&X_1\arrow[l,"j"]
+\end{tikzcd}
+\end{equation}
+$f\circ j$ 有限型，$g_1$ 有限。$j'$ 为闭浸入，所以 $\LL'$ 丰沛推出 $j'^*\LL'$ 丰沛（II，5.1.12及I，4.3.2）。令 $Z_1=j^{-1}(Z)$，仍在 $Y$ 上固有。$X$ 在 $x$ 处正规时，$X_{\red}$ 也如此；若 $(g_*\OO_{X'})_x$ 自由，则由（II，1.5.2），$((g_1)_*\OO_{X'_1})_x$ 也自由。又 $X$ 诺特（I，6.3.7），$j^*\LL$ 丰沛推出 $\LL$ 丰沛（II，4.5.14），而 $j'^*\LL'=g_1^*(j^*\LL)$，归结完成。以下设 $Y$ 仿射、$X$ 约化。
+
+此时（II，6.6.11）的假设成立，故存在约化 $Y$-预概形 $X_2$ 和有限双有理 $Y$-态射 $h:X_2\to X$，使 $h$ 在 $h^{-1}(X-Z)$ 上为到 $X-Z$ 的同构，且 $h^*\LL$ 丰沛。以 $X_2$ 代替 $X'$，只需再假设 $g$ 具有这些性质。仍以 $Z$ 表示底空间为该集合、并在 $Y$ 上固有的子预概形（II，5.4.10）。
+
+\egapar{2.6.2.3}
+设 $X_1$ 为 $X$ 的闭子预概形，$j:X_1\to X$ 为嵌入，$X'_1=g^{-1}(X_1)$，仍得到（2.6.2.2）。令 $\LL_1=j^*\LL$、$\LL'_1=j'^*\LL'=g_1^*\LL_1$，则 $\LL'_1$ 丰沛（II，5.1.12），$Z_1=j^{-1}(Z)$ 在 $Y$ 上固有。因此（2.6.2）的假设对 $X_1,\LL_1,g_1,Z_1$ 仍成立。
+
+这使我们可在 $g:g^{-1}(X-Z)\to X-Z$ 为同构的情形，用诺特归纳法（$\OI$，2.2.2）证明命题；由上一步，这已足够。只需证明：若对底空间不等于 $X$ 的每个闭子预概形 $X_1$，结论对 $\LL_1$ 成立，则对 $\LL$ 也成立。
+
+\egapar{2.6.2.4}
+令 $\A=\OO_X$、$\B=g_*\OO_{X'}$；则 $\B$ 是 $\R(X)$ 的子 $\A$-代数，也是凝聚 $\A$-模，并在 $X-Z$ 上等于 $\A$。令 $\K$ 为 $\B$ 对 $\A$ 的导子，即满足 $\B\K\subset\A$ 的最大的拟凝聚子 $\A$-模 $\K\subset\A$；也就是 $\B/\A$ 的零化子（$\OI$，5.3.7）。于是 $\B\K=\K$。
+
+在 $g$ 局部为同构的所有点，$\K_x=\A_x$；特别在 $X-Z$ 各点以及各不可约分支泛点的某个邻域如此。令 $Z_1=\Spec(\A/\K)$ 为 $\K$ 定义的闭子预概形，其底空间在 $Z$ 中闭，故仍在 $Y$ 上固有。又 $\B|X-Z_1=\A|X-Z_1$。因此可总是归结到 $Z=\Spec(\A/\K)$，而 $X-Z_1$ 非空，故可假设 $Z\ne X$。
+
+\egapar{2.6.2.5}
+把 $X'$ 识别为 $\Spec\B$，令 $\K'=\wt\K$ 为 $\OO_{X'}$ 的凝聚理想，使 $g_*\K'=\K$（II，1.4.1）。则 $Z'=g^{-1}(Z)$ 由 $\K'$ 定义，且等于 $\Spec(\B/\K)$（II，1.4.10）。由于 $h:Z'\to Z$ 有限，$Z'$ 也在 $Y$ 上固有（II，6.1.11及5.4.2，ii）。
+
+要证明，对每个 $x\in X$ 及其开邻域 $U$，存在某个 $\LL^{\otimes n}$（$n>0$）的全局截面 $s$ 使 $x\in X_s\subset U$（II，4.5.2）。分两种情形。
+
+\textbf{1° $x\in X-Z$。}可设 $U\subset X-Z$，所以 $g^{-1}(U)$ 不交 $Z'$。由 $\LL'$ 丰沛，存在 $n>0$ 和全局截面 $s'$，使 $x'=g^{-1}(x)\in X'_{s'}\subset g^{-1}(U)$。还可取 $n$ 使 $\K'\otimes\LL'^{\otimes n}$ 由全局截面生成（II，4.5.5）；因 $\K'_{x'}=\OO_{X',x'}$，存在这样的截面 $s''$ 在 $x'$ 处非零。将它乘以 $s'$，相当于将 $n$ 换为 $2n$，便可使 $x'\in X'_{s''}\subset g^{-1}(U)$。由（$\OI$，5.4.10），
+\[
+\Gamma(X,\K\otimes\LL^{\otimes n})\simeq\Gamma(X',\K'\otimes\LL'^{\otimes n}).
+\]
+与 $s''$ 对应的截面 $s$ 显然满足要求。
+
+\textbf{2° $x\in Z$。}令 $\J$ 为定义底空间 $X-U$ 的约化闭子预概形的凝聚理想；在 $\B$ 中考虑凝聚理想 $\J\B$ 与 $\J\K=\J(\B\K)=\K(\J\B)$，有嵌入图
+\begin{equation}\tag{2.6.2.6}
+\begin{tikzcd}[column sep=large]
+\J\B\arrow[r]&\B\\
+\J\arrow[u]\arrow[r]&\A\arrow[u]\\
+\J\K\B=\J\K\arrow[u]\arrow[r]&\K\arrow[u].
+\end{tikzcd}
+\end{equation}
+令 $\J'=(\J\B)^\sim$，则 $g_*\J'=\J\B$，$\J'\K'=(\J\K\B)^\sim$，故
+$\J'/\J'\K'=(\J\B/\J\K\B)^\sim$（II，1.4.4）。在不交 $Z$ 的开集 $V$ 上，$\J|V=\J\K|V$，所以此商层支撑包含于 $Z'$。$Z'$ 在 $Y$ 上固有，应用（2.2.4）可知，充分大的 $n$ 使典范映射
+\[
+\Gamma(X',\J'\otimes\LL'^{\otimes n})\to
+\Gamma(X',(\J'/\J'\K')\otimes\LL'^{\otimes n})
+\]
+满射。由（$\OI$，5.4.10），因此
+\[
+\Gamma(X,\J\B\otimes\LL^{\otimes n})\to
+\Gamma(X,(\J\B/\J\K\B)\otimes\LL^{\otimes n})
+\]
+也满射。
+
+令 $i:Z\to X$、$i':Z'\to X'$ 为嵌入，有交换图
+\[
+\begin{tikzcd}
+X'\arrow[d,"g"']&Z'\arrow[l,"i'"']\arrow[d,"h"]\\
+X&Z\arrow[l,"i"]
+\end{tikzcd}
+\]
+令 $\M=i^*\LL$、$\M'=i'^*\LL'$；$\M'$ 丰沛且等于 $h^*\M$，由 $Z\ne X$ 及归纳假设，$\M$ 丰沛。因此充分大的 $n$ 使 $i^*(\J/\J\K)\otimes\M^{\otimes n}$ 由 $Z$ 上的全局截面生成。因 $\J/\J\K=i_*i^*(\J/\J\K)$，再由（$\OI$，5.4.10），存在 $(\J/\J\K)\otimes\LL^{\otimes n}$ 的全局截面 $s$，使 $s(x)\ne0$；这里 $\J_x=\A_x$，而 $\K_x\ne\A_x$。
+
+图（2.6.2.6）说明，$s$ 也为 $(\J\B/\J\K\B)\otimes\LL^{\otimes n}$ 的全局截面，因此它是 $\J\B\otimes\LL^{\otimes n}$ 的某个全局截面 $t$ 的典范像。这个像属于 $(\J\otimes\LL^{\otimes n})/(\J\K\otimes\LL^{\otimes n})$，故由同一嵌入图，$t$ 实为 $\J\otimes\LL^{\otimes n}$ 的截面，因而也是 $\LL^{\otimes n}$ 的截面。已经知道 $t(x)\ne0$；又按 $\J$ 的定义，在 $X-U=\Supp(\OO_X/\J)$ 上 $t(y)=0$。于是 $x\in X_t\subset U$，证明完成。\finishproof
+
+\egastatement{2.6.3}{注}
+当 $X$ 在 $Y$ 上固有时，可借助（2.6.1）及引理（II，6.7.1.1），仿照 Chevalley 定理（II，6.7.1）的论证，以更简单的方法证明（2.6.2）。\par
+
+% ---- END c3_s02c.tex ----
+% ---- BEGIN c3_s03.tex ----
+\section{固有态射的有限性定理}
+\subsection{分解引理}
+\src{115--116}
+\egastatement{3.1.1}{定义}
+设 $\mathbf K$ 是阿贝尔范畴。若其对象集合的子集 $\mathbf K'$ 满足 $0\in\mathbf K'$，并且对于 $\mathbf K$ 中任意正合列 $0\to A'\to A\to A''\to0$，只要 $A,A',A''$ 中两个对象属于 $\mathbf K'$，第三个对象也属于 $\mathbf K'$，就称 $\mathbf K'$ 是\textbf{正合的}。
+\egastatement{3.1.2}{定理}
+设 $X$ 为诺特预概形，$\mathbf K$ 为凝聚 $\OO_X$-模构成的阿贝尔范畴。设 $\mathbf K'$ 是 $\mathbf K$ 的正合子集，$X'$ 是 $X$ 底空间的闭子集。假设对于 $X'$ 的每个不可约闭子集 $Y$，若 $y$ 为其泛点，则存在 $\OO_X$-模 $\G\in\mathbf K'$，使 $\G_y$ 是一维 $k(y)$-向量空间。那么，支集包含在 $X'$ 中的每个凝聚 $\OO_X$-模都属于 $\mathbf K'$；特别地，若 $X'=X$，则 $\mathbf K'=\mathbf K$。
+\eproof
+对 $X'$ 的闭子集 $Y$，考虑性质 $P(Y)$：支集包含在 $Y$ 中的每个凝聚 $\OO_X$-模都属于 $\mathbf K'$。由诺特归纳原理（$\OI$，2.2.2），只须证明：若 $Y$ 是 $X'$ 的闭子集，并且对 $Y$ 的每个真闭子集 $Y'$，$P(Y')$ 都成立，那么 $P(Y)$ 成立。
+
+取支集包含在 $Y$ 中的 $\F\in\mathbf K$，证明 $\F\in\mathbf K'$。仍以 $Y$ 表示以此集合为底空间的约化闭子预概形（I，5.2.1），设其定义凝聚理想为 $\J$。存在 $n>0$ 使 $\J^n\F=0$（I，9.3.4）。对 $1\le k\le n$，有凝聚 $\OO_X$-模的正合列
+\[
+0\to\J^{k-1}\F/\J^k\F\to\F/\J^k\F\to\F/\J^{k-1}\F\to0
+\]
+（$\OI$，5.3.6、5.3.3）。由于 $\mathbf K'$ 正合，对 $k$ 归纳，只须证明各个 $\F_k=\J^{k-1}\F/\J^k\F$ 属于 $\mathbf K'$。因此可增加假设 $\J\F=0$；等价地，$\F=j_*(j^*\F)$，其中 $j:Y\to X$ 为典范嵌入。分两种情形。
+
+\textit{a）$Y$ 可约。} 写成 $Y=Y'\cup Y''$，其中 $Y',Y''$ 均为 $Y$ 的真闭子集。仍用 $Y',Y''$ 表示相应约化闭子预概形，定义凝聚理想分别为 $\J',\J''$。令
+\[
+\F'=\F\otimes_{\OO_X}(\OO_X/\J'),\qquad
+\F''=\F\otimes_{\OO_X}(\OO_X/\J'').
+\]
+典范同态给出 $u:\F\to\F'\oplus\F''$。对 $z\notin Y'\cap Y''$，$u_z$ 为双射。事实上，$\J'\cap\J''=\J$；这是局部问题，由（I，5.2.1、1.1.5）得出。若 $z\notin Y''$，则 $\J'_z=\J_z$，所以 $\F'_z=\F_z$、$\F''_z=0$；若 $z\notin Y'$，论证相同。故 $u$ 的核与余核是支集包含在 $Y'\cap Y''$ 中的凝聚模（$\OI$，5.3.4），由归纳假设属于 $\mathbf K'$。同理，$\F',\F''\in\mathbf K'$，故 $\F'\oplus\F''\in\mathbf K'$。再考虑正合列
+\[
+0\to\Im u\to\F'\oplus\F''\to\Coker u\to0,
+\qquad 0\to\Ker u\to\F\to\Im u\to0,
+\]
+由正合性得到结论。
+
+\textit{b）$Y$ 不可约。} 此时子预概形 $Y$ 是整的。若 $y$ 是其泛点，则 $(\OO_Y)_y=k(y)$；因 $j^*\F$ 凝聚，$\F_y=(j^*\F)_y$ 是某个有限维数 $m$ 的 $k(y)$-向量空间。由假设，存在凝聚 $\OO_X$-模 $\G$（其支集必为 $Y$），使 $\G_y$ 是一维 $k(y)$-向量空间。\transnote{原文陈述只写了 $\G_y$ 的条件，证明此处却直接使用 $\Supp(\G)=Y$，后文（3.1.3）也使用同一支集条件。泛点茎的条件本身并不推出整个支集恰为 $Y$；这里保留原文陈述与证明的区别，使用此分解引理时须另核对所选 $\G$ 的支集。}
+于是有 $k(y)$-同构 $(\G_y)^m\simeq\F_y$，亦为 $\OO_{X,y}$-同构。由凝聚性，存在 $y$ 在 $X$ 中的开邻域 $W$ 和同构 $\G^m|W\simeq\F|W$（$\OI$，5.2.7）。其图像 $\HH$ 是 $(\G^m\oplus\F)|W$ 的凝聚子模，典范地同构于 $\G^m|W$ 及 $\F|W$。因 $\G^m,\F$ 的支集均为 $Y$，存在 $\G^m\oplus\F$ 的凝聚子模 $\HH_0$，在 $W$ 上诱导 $\HH$，在 $X-Y$ 上诱导零（I，9.4.7）。典范投影的限制
+\[
+v:\HH_0\to\G^m,\qquad w:\HH_0\to\F
+\]
+在 $W$ 及 $X-Y$ 上均为同构，故其核与余核的支集都包含在真闭子集 $Y-(Y\cap W)$ 中，因而属于 $\mathbf K'$。又因 $\G\in\mathbf K'$、$\mathbf K'$ 正合，有 $\G^m\in\mathbf K'$。由正合性依次得到 $\HH_0\in\mathbf K'$、$\F\in\mathbf K'$。\finishproof
+\egastatement{3.1.3}{推论}
+再假设 $\mathbf K'$ 具有下述性质：属于 $\mathbf K'$ 的凝聚 $\OO_X$-模的每个凝聚直和因子仍属于 $\mathbf K'$。那么，把（3.1.2）中的条件“$\G_y$ 是一维 $k(y)$-向量空间”换成“$\G_y\ne0$”（亦即 $\Supp(\G)=Y$），其结论仍成立。
+\eproof
+只需修改（3.1.2）的情形 b）。这时 $\G_y$ 是某个维数 $q>0$ 的 $k(y)$-向量空间，故 $(\G_y)^m\simeq(\F_y)^q$。同样的论证得到 $\F^q\in\mathbf K'$；由附加假设可知 $\F\in\mathbf K'$。\finishproof
+
+\subsection{有限性定理：通常概形的情形}
+\src{116--118}
+\egastatement{3.2.1}{定理}
+设 $Y$ 是局部诺特预概形，$f:X\to Y$ 是固有态射。对任意凝聚 $\OO_X$-模 $\F$ 和任意 $q\ge0$，$R^qf_*(\F)$ 都是凝聚 $\OO_Y$-模。
+\eproof
+问题在 $Y$ 上是局部的，故可设 $Y$ 诺特，于是 $X$ 亦诺特（I，6.3.7）。使定理结论成立的凝聚 $\OO_X$-模构成凝聚模范畴 $\mathbf K$ 的正合子集 $\mathbf K'$。事实上，若 $0\to\F'\to\F\to\F''\to0$ 正合，例如 $\F',\F''\in\mathbf K'$，则上同调正合列
+\[
+R^{q-1}f_*\F''\to R^qf_*\F'\to R^qf_*\F\to R^qf_*\F''\to R^{q+1}f_*\F'
+\]
+两端四项凝聚，故中项凝聚（$\OI$，5.3.4、5.3.3）。另外两种情形同理。若 $\F'$ 是 $\F\in\mathbf K'$ 的凝聚直和因子，则 $R^qf_*\F'$ 是 $R^qf_*\F$ 的直和因子（G，II，4.4.4），故有限型；又由（1.4.10）它拟凝聚，$Y$ 诺特，故它凝聚。
+
+由（3.1.3），只须在 $X$ 不可约、泛点为 $x$ 时，构造 $\F\in\mathbf K'$ 且 $\F_x\ne0$。确实，可把这一结果用于 $X$ 的任意不可约闭子预概形 $Z$：若 $j:Z\to X$ 为嵌入，则 $f\circ j$ 固有（II，5.4.2）；若 $\G$ 是支集为 $Z$ 的凝聚 $\OO_Z$-模，则 $j_*\G$ 凝聚，而且
+\[
+R^q(f\circ j)_*(\G)=R^qf_*(j_*\G)
+\]
+（G，II，4.9.1），因此满足（3.1.3）的应用条件。
+
+由 Chow 引理（II，5.6.2），存在不可约预概形 $X'$ 以及射影满态射 $g:X'\to X$，使 $f\circ g:X'\to Y$ 射影。取关于 $g$ 丰沛的可逆模 $\LL$（II，5.3.1）。由射影态射基本定理（2.2.1），可取 $n$，使
+\[
+\F=g_*(\OO_{X'}(n))
+\]
+凝聚，并使 $R^qg_*(\OO_{X'}(n))=0$ 对所有 $q>0$ 成立。又因充分大的 $n$ 使 $g^*g_*(\OO_{X'}(n))\to\OO_{X'}(n)$ 满射，可使 $\F_x\ne0$（II，3.4.7）。由于 $f\circ g$ 射影、$Y$ 诺特，$R^n(f\circ g)_*(\OO_{X'}(n))$ 凝聚（2.2.1）。Leray 谱序列
+\[
+E_2^{pq}=R^pf_*(R^qg_*(\OO_{X'}(n)))
+\]
+收敛到该复合态射的高阶直接像；由上述消失，它退化，故 $E_2^{p0}=R^pf_*\F$ 同构于 $R^p(f\circ g)_*(\OO_{X'}(n))$（0，11.1.6）。定理得证。\finishproof
+\egastatement{3.2.2}{推论}
+设 $Y$ 局部诺特。对任意固有态射 $f:X\to Y$，任意凝聚 $\OO_X$-模的直接像均为凝聚 $\OO_Y$-模。
+\egastatement{3.2.3}{推论}
+设 $A$ 为诺特环，$X$ 为 $A$ 上固有的概形。则每个凝聚 $\OO_X$-模 $\F$ 的 $H^p(X,\F)$ 都是有限型 $A$-模；而且存在 $r>0$，使对每个这样的 $\F$ 及每个 $p>r$ 都有 $H^p(X,\F)=0$。
+\eproof
+第二断言已由（1.4.12）证明；第一断言由有限性定理（3.2.1）及（1.4.11）得出。特别地，当 $X$ 是域 $k$ 上的固有代数概形时，这些上同调群都是有限维 $k$-向量空间。\finishproof
+\egastatement{3.2.4}{推论}
+设 $Y$ 局部诺特，$f:X\to Y$ 为有限型态射。若凝聚 $\OO_X$-模 $\F$ 的支集在 $Y$ 上固有（II，5.4.10），则 $R^qf_*\F$ 都凝聚。
+\eproof
+可设 $Y$ 诺特，因而 $X$ 诺特。以 $\Supp(\F)$ 为底空间的每个闭子预概形 $Z$ 都在 $Y$ 上固有。若 $j:Z\to X$ 为嵌入，可取 $Z$ 使 $\F=j_*\G$，其中 $\G=j^*\F$ 为凝聚 $\OO_Z$-模（I，9.3.5）。由（1.3.4），$R^qf_*\F=R^q(f\circ j)_*\G$，故应用（3.2.1）即可。\finishproof
+
+\subsection{有限性定理的推广（通常概形）}
+\src{118}
+\egastatement{3.3.1}{命题}
+设 $Y$ 为诺特预概形，$\SSS$ 为非负分次、拟凝聚、有限型的 $\OO_Y$-代数，$Y'=\Proj(\SSS)$，$g:Y'\to Y$ 为结构态射。设 $f:X\to Y$ 固有，$\SSS'=f^*\SSS$，$\M=\bigoplus_k\M_k$ 是拟凝聚有限型分次 $\SSS'$-模。那么对每个 $p$，
+\[
+R^pf_*\M=\bigoplus_kR^pf_*\M_k
+\]
+是有限型分次 $\SSS$-模。若 $\SSS$ 由 $\SSS_1$ 生成，则对每个 $p$ 存在 $k_p$，使 $k\ge k_p$、$r\ge0$ 时
+\begin{equation}\tag{3.3.1.1}
+R^pf_*(\M_{k+r})=\SSS_rR^pf_*(\M_k).
+\end{equation}
+\eproof
+第一断言是将（2.4.1，i）中的“射影”换成“固有”。该证明中只用射影性来保证 $R^pf'_*(\wt\M)$ 凝聚；现在 $f'$ 固有（II，5.4.2，iii），故由有限性定理（3.2.1），原证明仍全部适用。
+
+对于第二断言，在 $Y$ 的某个有限仿射开覆盖 $(U_\alpha)$ 上，两边的限制在 $k\ge k_{p,\alpha}$ 时相等（II，2.1.6，ii）。取这些 $k_{p,\alpha}$ 的最大值即可。\finishproof
+\egastatement{3.3.2}{推论}
+设 $A$ 为诺特环，$\mm$ 为其理想，$X$ 为固有 $A$-概形，$\F$ 为凝聚 $\OO_X$-模。对每个 $p\ge0$，$\bigoplus_{k\ge0}H^p(X,\mm^k\F)$ 是环 $S=\bigoplus_{k\ge0}\mm^k$ 上的有限型模。特别地，存在 $k_p\ge0$，使 $k\ge k_p$、$r\ge0$ 时
+\begin{equation}\tag{3.3.3.1}
+H^p(X,\mm^{k+r}\F)=\mm^rH^p(X,\mm^k\F).
+\end{equation}
+\eproof
+取 $Y=\Spec(A)$、$\SSS=\wt S$、$\M_k=\mm^k\F$，应用上述命题及（1.4.11）即可。\transnote{此式的原版编号为（3.3.3.1），本稿保留；原证明写“应用（3.3.2）”，所需命题实际上是（3.3.1）。}
+须记住，上述直和的 $S$-模结构由下列映射定义：对 $a\in\mm^r$，乘法 $\mm^k\F\to\mm^{k+r}\F$ 诱导上同调映射 $H^p(X,\mm^k\F)\to H^p(X,\mm^{k+r}\F)$（2.4.1）。\finishproof
+
+\subsection{有限性定理：形式概形的情形}
+\src{119--122}
+本小节的结果（定义（3.4.1）除外）不在本章后文使用。
+\egapar{3.4.1}
+设 $\mathfrak X,\mathfrak S$ 为局部诺特形式预概形（I，10.4.2），$f:\mathfrak X\to\mathfrak S$ 为形式预概形态射。若满足以下条件，就称 $f$ \textbf{固有}：一是 $f$ 有限型（I，10.13.3）；二是取 $\mathfrak S$ 的定义理想 $\K$，令
+\[
+\J=f^*(\K)\OO_{\mathfrak X},\qquad
+X_0=(\mathfrak X,\OO_{\mathfrak X}/\J),\qquad
+S_0=(\mathfrak S,\OO_{\mathfrak S}/\K),
+\]
+则由 $f$ 诱导的 $f_0:X_0\to S_0$ 固有。
+
+这一定义不依赖 $\K$ 的选择。事实上，若另一取法满足 $\K'\subset\K$，令 $\J'=f^*\K'\OO_{\mathfrak X}$，并令 $X_1,S_1$ 为相应商，则有交换图
+\[
+\begin{tikzcd}
+X_0\arrow[r,"f_0"]\arrow[d,"i"']&S_0\arrow[d,"j"]\\
+X_1\arrow[r,"f_1"]&S_1
+\end{tikzcd}
+\]
+其中 $i,j$ 为满浸入，故 $f_0$ 与 $f_1$ 同时固有（II，5.4.5）。此外，若令 $X_n=(\mathfrak X,\OO_{\mathfrak X}/\J^{n+1})$、$S_n=(\mathfrak S,\OO_{\mathfrak S}/\K^{n+1})$，则 $f_0$ 固有即推出每个 $f_n:X_n\to S_n$ 固有（II，5.4.6）。
+
+若 $g:Y\to Z$ 为局部诺特通常预概形的固有态射，$Z'\subset Z$、$Y'\subset Y$ 为闭子集且 $g(Y')\subset Z'$，则其到完备化的延拓 $\widehat g:Y_{/Y'}\to Z_{/Z'}$（I，10.9.1）是固有形式预概形态射；这是定义及（II，5.4.5）的结果。\transnote{原文这里仅写 $g(Y')\subset Z'$。是否得到（3.4.1）所要求的“有限型”形式态射，还须核对定义理想所给出的拓扑；此处未补造额外假设，应用时应与（I，10.13.3）对照。}
+
+若 $f:\mathfrak X\to\mathfrak S$ 有限型，称底空间的子集 $Z$ \textbf{在 $\mathfrak S$ 上固有}，或\textbf{关于 $f$ 固有}，是指把它看成 $X_0$ 的子集时，它在 $S_0$ 上固有（II，5.4.10）。由定义，（II，5.4.10）关于固有子集的全部性质仍适用于此。
+\egastatement{3.4.2}{定理}
+设 $\mathfrak X,\mathfrak Y$ 为局部诺特形式预概形，$f:\mathfrak X\to\mathfrak Y$ 固有。对每个凝聚 $\OO_{\mathfrak X}$-模 $\F$，$R^qf_*\F$ 对所有 $q\ge0$ 均为凝聚 $\OO_{\mathfrak Y}$-模。
+
+取 $\mathfrak Y$ 的定义理想 $\J$，令 $\K=f^*\J\OO_{\mathfrak X}$，并考虑
+\begin{equation}\tag{3.4.2.1}
+\F_k=\F\otimes_{\OO_{\mathfrak Y}}(\OO_{\mathfrak Y}/\J^{k+1})
+=\F/\K^{k+1}\F\qquad(k\ge0).
+\end{equation}
+它们构成拓扑模的射影系，且 $\F=\plim_k\F_k$（I，10.11.3）。定理还将表明各 $R^qf_*\F$ 凝聚，故自然带有拓扑模结构（I，10.11.6）；$R^qf_*\F_k$ 亦如此。典范商映射给出连续同态 $R^qf_*\F\to R^qf_*\F_k$，进而给出函子性的连续同态
+\begin{equation}\tag{3.4.2.2}
+R^qf_*\F\longrightarrow\plim_kR^qf_*\F_k.
+\end{equation}
+我们将同时证明下述推论。
+\egastatement{3.4.3}{推论}
+每个（3.4.2.2）都是拓扑同构。若 $\mathfrak Y$ 诺特，则射影系 $(R^qf_*(\F/\K^{k+1}\F))_k$ 满足（ML）条件（0，13.1.1）。
+
+先处理 $\mathfrak Y$ 为诺特仿射形式概形的情形。
+\egastatement{3.4.4}{推论}
+在（3.4.2）条件下，再设 $\mathfrak Y=\Spf(A)$，其中 $A$ 为诺特进制环。取定义理想 $\frj\subset A$，令 $\F_k=\F/\frj^{k+1}\F$。则 $H^n(\mathfrak X,\F)$ 是有限型 $A$-模，射影系 $(H^n(\mathfrak X,\F_k))_{k\ge0}$ 对每个 $n$ 满足（ML）。令
+\begin{equation}\tag{3.4.4.1}
+N_k^n=\Ker(H^n(\mathfrak X,\F)\to H^n(\mathfrak X,\F_k));
+\end{equation}
+由上同调正合列，它亦为 $H^n(\mathfrak X,\frj^{k+1}\F)\to H^n(\mathfrak X,\F)$ 的像。这些子模给出 $\frj$-良滤过（0，13.7.7）。最后，典范同态
+\begin{equation}\tag{3.4.4.2}
+H^n(\mathfrak X,\F)\longrightarrow\plim_kH^n(\mathfrak X,\F_k)
+\end{equation}
+是拓扑同构，左端取 $\frj$-进制拓扑，各 $H^n(\mathfrak X,\F_k)$ 取离散拓扑。
+\eproof
+令
+\begin{equation}\tag{3.4.4.3}
+S=\gr(A)=\bigoplus_{k\ge0}\frj^k/\frj^{k+1},\qquad
+\M=\gr(\F)=\bigoplus_{k\ge0}\frj^k\F/\frj^{k+1}\F.
+\end{equation}
+$\frj^\triangle$ 是 $\mathfrak Y$ 的定义理想（I，10.3.1）。令 $\K=f^*(\frj^\triangle)\OO_{\mathfrak X}$，$X_0=(\mathfrak X,\OO_{\mathfrak X}/\K)$，$Y_0=(\mathfrak Y,\OO_{\mathfrak Y}/\frj^\triangle)=\Spec(A_0)$，$A_0=A/\frj$。各 $\M_k=\frj^k\F/\frj^{k+1}\F$ 是凝聚 $\OO_{X_0}$-模（I，10.11.3）。再考虑非负分次拟凝聚代数
+\begin{equation}\tag{3.4.4.4}
+\SSS=\OO_{X_0}\otimes_{A_0}S
+=\gr(\OO_{\mathfrak X})=\bigoplus_{k\ge0}\K^k/\K^{k+1}.
+\end{equation}
+\transnote{本式原文写等号。一般由标量乘法首先得到的是从 $\OO_{X_0}\otimes_{A_0}\gr(A)$ 到 $\gr(\OO_{\mathfrak X})$ 的典范满同态，未经平坦性等附加条件不能直接视为同构。下文局部计算的 $M'=S'\otimes N_0$ 同样须注意：用于有限生成性的典范满同态已足够；本稿不把原文的等号静默换成同构定理。}
+$\F$ 有限型推出 $\M$ 是有限型分次 $\SSS$-模。此为局部问题，可设 $\mathfrak X=\Spf(B)$，$B$ 诺特进制，$\F=N^\triangle$，$N$ 为有限型 $B$-模（I，10.10.5）。令 $B_0=B/\frj B$、$N_0=N/\frj N$。原文将 $\SSS,\M$ 分别写成与
+\[
+S'=\bigoplus_k(\frj^k/\frj^{k+1})\otimes_{A_0}B_0,
+\qquad M'=\bigoplus_k(\frj^k/\frj^{k+1})\otimes_{A_0}N_0
+\]
+相伴的层。于是 $M'=S'\otimes_{B_0}N_0$；$N_0$ 有限型，故 $M'$ 在 $S'$ 上有限型，得到所需结论（I，1.3.13）。
+
+由于 $f_0:X_0\to Y_0$ 固有，由（3.3.1）及（1.4.11），每个 $\bigoplus_kH^n(X_0,\M_k)$ 都是有限型分次 $S$-模。故对于带自然滤过 $A$-模结构的严格射影系 $(\F/\frj^{k+1}\F)_{k\ge0}$，（0，13.7.7）的条件 $(F_n)$ 对所有 $n\ge0$ 成立。由该命题可得：（一）$(H^n(\mathfrak X,\F_k))_k$ 满足（ML）；（二）$H'^n=\plim_kH^n(\mathfrak X,\F_k)$ 为有限型 $A$-模；（三）由 $H'^n\to H^n(\mathfrak X,\F_k)$ 的核给出的滤过是 $\frj$-良的。
+
+令 $X_k=(\mathfrak X,\OO_{\mathfrak X}/\K^{k+1})$。$\F_k$ 为凝聚 $\OO_{X_k}$-模。$X_0$ 中任意仿射开集 $U$ 在每个 $X_k$ 中仍仿射（I，5.1.9），故 $H^n(U,\F_k)=0$ 对 $n>0$ 成立，而 $\Gamma(U,\F_h)\to\Gamma(U,\F_k)$ 在 $h\ge k$ 时满射（I，1.3.9）。于是满足（0，13.3.2）的条件；由（0，13.3.1），
+\[
+H'^n\simeq H^n(\mathfrak X,\plim_k\F_k)=H^n(\mathfrak X,\F).
+\]
+（3.4.4）得证。\finishproof
+\egapar{3.4.5}
+回到（3.4.2）、（3.4.3）的证明。先令 $\mathfrak Y=\Spf(A)$。对 $g\in A$，把（3.4.4）用于开形式概形 $\mathfrak Y_g=D(g)=\Spf(A_{\{g\}})$ 及其逆像。$\mathfrak Y_g$ 也是 $Y_k=(\mathfrak Y,\OO_{\mathfrak Y}/(\frj^\triangle)^{k+1})$ 中的仿射开集，故
+\[
+H^n(f^{-1}(\mathfrak Y_g),\F_k)=\Gamma(\mathfrak Y_g,R^nf_*\F_k)
+\]
+（1.4.11）。由（3.4.4），$H^n(f^{-1}(\mathfrak Y_g),\F)\to\plim_k\Gamma(\mathfrak Y_g,R^nf_*\F_k)$ 是同构。又截面与射影极限交换（$\OI$，3.2.6），而 $R^nf_*\F$ 与此上同调预层相伴，故（3.4.2.2）为双射。
+
+进一步证明
+\begin{equation}\tag{3.4.5.1}
+R^nf_*\F\simeq\bigl(H^n(\mathfrak X,\F)\bigr)^\triangle.
+\end{equation}
+由 $R^nf_*\F_k$ 在 $Y_k$ 上凝聚及（1.4.13），
+\[
+\Gamma(\mathfrak Y_g,R^nf_*\F_k)
+=\Gamma(\mathfrak Y,R^nf_*\F_k)_g
+=H^n(\mathfrak X,\F_k)_g.
+\]
+该上同调射影系满足（ML），极限 $H^n(\mathfrak X,\F)$ 有限型，故由（0，13.7.8）及（I，10.10.8），
+\[
+\plim_kH^n(\mathfrak X,\F_k)_g
+=H^n(\mathfrak X,\F)\otimes_AA_{\{g\}}
+=\Gamma\!\left(\mathfrak Y_g,(H^n(\mathfrak X,\F))^\triangle\right).
+\]
+这就证明了（3.4.5.1）及凝聚性。因此（3.4.2.2）是凝聚模的同构，必为拓扑同构（I，10.11.6）。由 $R^nf_*\F_k=(H^n(\mathfrak X,\F_k))^\triangle$ 还得到其射影系满足（ML）（I，10.10.2）。
+
+一般情形的（3.4.2）及（3.4.3）第一断言都是 $\mathfrak Y$ 上的局部问题，故立即得出。若 $\mathfrak Y$ 诺特，可取有限诺特仿射开覆盖；在每一片上射影系满足（ML），便得到全局的（ML）。同时已证明下述结果。
+\egastatement{3.4.6}{推论}
+在（3.4.4）的条件下，典范同态
+\begin{equation}\tag{3.4.6.1}
+H^n(\mathfrak X,\F)\longrightarrow\Gamma(\mathfrak Y,R^nf_*\F)
+\end{equation}
+为双射。\par
+
+% ---- END c3_s03.tex ----
+% ---- BEGIN c3_s04a.tex ----
+\section{固有态射的基本定理及其应用}
+\subsection{基本定理}
+\src{122--129}
+\egapar{4.1.1}
+设 $X,Y$ 为诺特通常预概形，$f:X\to Y$ 为固有态射，$Y'\subset Y$ 为闭子集，$X'=f^{-1}(Y')$。以 $\mathfrak X=X_{/X'}$、$\mathfrak Y=Y_{/Y'}$ 表示分别沿 $X',Y'$ 的形式完备化（I，10.8.5），以 $\widehat f:\mathfrak X\to\mathfrak Y$ 表示 $f$ 在这些完备化上的延拓（I，10.9.1）。对于凝聚 $\OO_X$-模 $\F$，以 $\widehat\F=\F_{/X'}$ 表示沿 $X'$ 的完备化（I，10.8.4）；它是凝聚 $\OO_{\mathfrak X}$-模（I，10.8.8）。
+\egapar{4.1.2}
+取凝聚理想 $\J\subset\OO_Y$，使 $\Supp(\OO_Y/\J)=Y'$（I，5.2.1）。则 $\K=f^*\J\OO_X$ 是凝聚理想，且 $\Supp(\OO_X/\K)=X'$（I，4.4.5）。对 $k\ge0$，考虑凝聚模
+\[
+\F_k=\F\otimes_{\OO_Y}(\OO_Y/\J^{k+1})=\F/\K^{k+1}\F.
+\]
+由（3.2.1），$R^nf_*\F$、$R^nf_*\F_k$ 凝聚。商同态通过函子性给出
+\begin{equation}\tag{4.1.2.1}R^nf_*\F\longrightarrow R^nf_*\F_k.\end{equation}
+因为 $\F_k$ 是 $\OO_Y/\J^{k+1}$-模，$R^nf_*\F_k$ 也是该商环层上的模（0，12.2.1），从而得到
+\begin{equation}\tag{4.1.2.2}
+R^nf_*\F\otimes_{\OO_Y}(\OO_Y/\J^{k+1})\longrightarrow R^nf_*\F_k.
+\end{equation}
+两端构成射影系，左端的射影极限是 $(R^nf_*\F)_{/Y'}$，记为 $(R^nf_*\F)^\wedge$。这些同态显然相容，取射影极限得到
+\begin{equation}\tag{4.1.2.3}
+\varphi_n:(R^nf_*\F)^\wedge\longrightarrow\plim_kR^nf_*\F_k.
+\end{equation}
+（4.1.2.2）作为 $\OO_Y/\J^{k+1}$-模同态，可视为伪离散拓扑 $\OO_{\mathfrak Y}$-模的连续同态（I，10.8.3；$\OI$，3.8.1）；故 $\varphi_n$ 也是拓扑 $\OO_{\mathfrak Y}$-模的连续同态。
+\egapar{4.1.3}
+设 $i:\mathfrak X\to X$ 为典范赋环空间态射（I，10.8.7），则有交换图
+\begin{equation}\tag{4.1.3.1}
+\begin{tikzcd}
+X_k\arrow[r,"h_k"]\arrow[dr,"i_k"']&\mathfrak X\arrow[d,"i"]\\
+&X
+\end{tikzcd}
+\end{equation}
+其中 $X_k$ 为理想 $\K^{k+1}$ 定义的闭子预概形，$i_k$ 为嵌入，$h_k$ 的底空间映射为恒等，环层同态为 $\OO_{\mathfrak X}\to\OO_X/\K^{k+1}$（I，10.5.2）。有典范同构 $\widehat\F=i^*\F$（I，10.8.8），并有
+\begin{equation}\tag{4.1.3.2}H^n(X_k,h_k^*\widehat\F)=H^n(X,\F_k),\end{equation}
+因为 $\F_k=(i_k)_*(h_k^*\widehat\F)$（G，II，4.9.1）。因此由（0，12.1.3.5）得到的典范同态也可写成
+\begin{equation}\tag{4.1.3.3}H^n(\mathfrak X,\widehat\F)\longrightarrow H^n(X,\F_k).\end{equation}
+这些同态组成射影系，从而给出
+\begin{equation}\tag{4.1.3.4}
+\psi_{n,X}:H^n(\mathfrak X,\widehat\F)\longrightarrow\plim_kH^n(X,\F_k).
+\end{equation}
+对 $Y$ 的仿射开集 $V$，将 $X$ 换成 $f^{-1}(V)$，并利用（1.4.11），得到
+\begin{equation}\tag{4.1.3.5}
+\psi_{n,V}:H^n(\mathfrak X\cap f^{-1}(V),\widehat\F)
+\longrightarrow\plim_k\Gamma(V,R^nf_*\F_k).
+\end{equation}
+它们与仿射开集间的限制相容，故定义典范层同态
+\begin{equation}\tag{4.1.3.6}
+\psi_n:R^n\widehat f_*(\widehat\F)\longrightarrow\plim_kR^nf_*\F_k.
+\end{equation}
+\egapar{4.1.4}
+再设 $j:\mathfrak Y\to Y$ 为典范赋环空间态射。$R^nf_*\F$ 凝聚，故 $j^*(R^nf_*\F)\simeq(R^nf_*\F)^\wedge$（I，10.8.8）。于是得到一般赋环空间情形中定义的同态（参看（1.4.15）的证明）
+\begin{equation}\tag{4.1.4.1}
+\rho_n:(R^nf_*\F)^\wedge=j^*(R^nf_*\F)
+\longrightarrow R^n\widehat f_*(i^*\F)=R^n\widehat f_*\widehat\F.
+\end{equation}
+以下图交换：
+\begin{equation}\tag{4.1.4.2}
+\begin{tikzcd}[column sep=large]
+(R^nf_*\F)^\wedge\arrow[r,"\rho_n"]\arrow[dr,"\varphi_n"']&R^n\widehat f_*\widehat\F\arrow[d,"\psi_n"]\\
+&\plim_kR^nf_*\F_k
+\end{tikzcd}
+\end{equation}
+只须验证相应预层图的交换性，故可设 $Y$ 仿射，并验证
+\begin{equation}\tag{4.1.4.3}
+\begin{tikzcd}[column sep=large]
+(H^n(X,\F))^\wedge\arrow[r,"\rho_n"]\arrow[dr,"\varphi_n"']&H^n(\mathfrak X,\widehat\F)\arrow[d,"\psi_{n,X}"]\\
+&\plim_kH^n(X,\F_k).
+\end{tikzcd}
+\end{equation}
+而（4.1.3.1）的交换性及（4.1.3）中的关系给出交换图
+\[
+\begin{tikzcd}[column sep=large]
+H^n(X,\F)\arrow[r]\arrow[dr]&H^n(\mathfrak X,\widehat\F)=H^n(\mathfrak X,i^*\F)\arrow[d]\\
+&H^n(X,\F_k)=H^n(X_k,i_k^*\F),
+\end{tikzcd}
+\]
+由此立即推出（4.1.4.3）。
+\egastatement{4.1.5}{定理}
+设 $f:X\to Y$ 为诺特预概形的固有态射，$Y'\subset Y$ 为闭子集，$X'=f^{-1}(Y')$。则对每个凝聚 $\OO_X$-模 $\F$，$R^n\widehat f_*\widehat\F$ 是凝聚 $\OO_{\mathfrak Y}$-模，而（4.1.4.2）中的 $\varphi_n,\psi_n,\rho_n$ 均为拓扑同构。\transnote{原文此处把直接像的模所在环层印为 $\OO_{\mathfrak X}$，应为目标上的 $\OO_{\mathfrak Y}$。}
+
+只须证明 $\varphi_n,\psi_n$ 为同构。由（3.2.1）、（I，10.8.8），$(R^nf_*\F)^\wedge$ 凝聚；上述各同态的双连续性随后由（I，10.11.6）自动得到。
+\egastatement{4.1.6}{注记}
+（i）令 $\widehat\F_k=\widehat\F/\widehat\K^{k+1}\widehat\F$。立即有 $\F_k=i_*\widehat\F_k$，且（4.1.3.6）正是已在（3.4.2.2）定义的同态
+\begin{equation}\tag{4.1.6.1}
+R^n\widehat f_*\widehat\F\longrightarrow\plim_kR^n\widehat f_*\widehat\F_k.
+\end{equation}
+因此 $\psi_n$ 为同构是（3.4.3）的特殊情形。不过，下面将给出直接证明，避免使用该一般结果所依赖的关于谱序列射影极限的细致讨论（0，13.7）。
+
+（ii）在 $\psi_n$ 为同构的条件下，$\varphi_n$ 为同构等价于 $\rho_n=\psi_n^{-1}\varphi_n$ 为同构。定理特别说明，形成 $R^nf$ 与完备化交换；可称它为“代数”理论与“形式”理论的\textbf{第一比较定理}。
+
+先证明其仿射形式。
+\egastatement{4.1.7}{推论}
+在（4.1.5）的条件下，再设 $Y=\Spec(A)$，$A$ 诺特，$\J=\wt\frj$，$\frj\subset A$ 为理想，故 $\F_k=\F/\frj^{k+1}\F$。则
+\begin{equation}\tag{4.1.7.1}
+\varphi_n:(H^n(X,\F))^\wedge\longrightarrow\plim_kH^n(X,\F_k)
+\end{equation}
+为同构，左端表示 $\frj$-预进制拓扑的分离完备化。射影系 $(H^n(X,\F_k))_{k\ge0}$ 对所有 $n$ 满足（ML），且
+\begin{equation}\tag{4.1.7.2}
+\psi_n:H^n(\mathfrak X,\widehat\F)\longrightarrow\plim_kH^n(X,\F_k)
+\end{equation}
+为同构。此外，由典范同态 $H^n(X,\F)\to H^n(X,\F_k)$ 的核定义的滤过是 $\frj$-良的（0，13.7.7），而 $\varphi_n$ 为拓扑同构。\origfootnote{以下较原先证明更简单的证明，以及关于 $H^n(X,\F)$ 的滤过的补充，是 J.-P. Serre 告知我们的。}
+\eproof
+在本证明中固定 $n\ge0$，简记
+\begin{equation}\tag{4.1.7.3}H=H^n(X,\F),\qquad H_k=H^n(X,\F_k),\end{equation}
+\begin{equation}\tag{4.1.7.4}R_k=\Ker(H\to H_k)\subset H.\end{equation}
+上同调正合列
+\[
+\begin{gathered}
+H^n(X,\frj^{k+1}\F)\to H^n(X,\F)\to H^n(X,\F_k)\\
+\to H^{n+1}(X,\frj^{k+1}\F)\to H^{n+1}(X,\F)
+\end{gathered}
+\]
+表明 $R_k$ 也是第一箭头的像。令
+\begin{equation}\tag{4.1.7.5}
+\begin{aligned}
+Q_k&=\Ker(H^{n+1}(X,\frj^{k+1}\F)\to H^{n+1}(X,\F))\\
+&=\Im(H^n(X,\F_k)\to H^{n+1}(X,\frj^{k+1}\F)).
+\end{aligned}
+\end{equation}
+于是有正合列
+\begin{equation}\tag{4.1.7.6}0\to R_k\to H\to H_k\to Q_k\to0.\end{equation}
+\egapar{4.1.7.7}
+对 $x\in\frj^m$，乘法 $\frj^k\F\to\frj^{k+m}\F$ 诱导
+\begin{equation}\tag{4.1.7.8}
+\mu_{x,k}:H^n(X,\frj^k\F)\longrightarrow H^n(X,\frj^{k+m}\F).
+\end{equation}
+令 $S=\bigoplus_{k\ge0}\frj^k$。由（3.3.2），这些乘法在 $E=\bigoplus_{k\ge0}H^n(X,\frj^k\F)$ 上定义有限型分次 $S$-模结构；$S$ 诺特（II，2.1.5）。
+\egastatement{4.1.7.9}{引理}
+子模 $R_k$ 在 $H$ 上定义 $\frj$-良滤过。
+\eproof
+先证明
+\begin{equation}\tag{4.1.7.10}\frj^mR_k\subset R_{k+m}.\end{equation}
+$H$ 中乘以 $x\in\frj^m$ 即为 $\mu_{x,0}$。下图中横箭头为乘以 $x$，竖箭头为典范嵌入：
+\[
+\begin{tikzcd}
+\frj^{k+1}\F\arrow[r,"x"]\arrow[d]&\frj^{k+m+1}\F\arrow[d]\\
+\F\arrow[r,"x"]&\F.
+\end{tikzcd}
+\]
+因此相应上同调图也交换：\transnote{原图（4.1.7.11）上方箭头的第二下标印作 $m$；依（4.1.7.8）的源、靶约定，此处写为 $k+1$。}
+\begin{equation}\tag{4.1.7.11}
+\begin{tikzcd}[column sep=large]
+H^n(X,\frj^{k+1}\F)\arrow[r,"\mu_{x,k+1}"]\arrow[d]&H^n(X,\frj^{k+m+1}\F)\arrow[d]\\
+H^n(X,\F)\arrow[r,"\mu_{x,0}"]&H^n(X,\F).
+\end{tikzcd}
+\end{equation}
+由 $R_k$ 的像的解释，得到（4.1.7.10）。它还说明分次 $S$-模 $R=\bigoplus_kR_k$ 是 $M=\bigoplus_kH^n(X,\frj^{k+1}\F)$ 的商，后者是 $E$ 的相应子模（按次数平移理解）。因此 $R$ 有限型，这等价于引理（Bourbaki，\textit{Alg. comm.}，III，§3，n°1，定理1）。\finishproof
+\egapar{4.1.7.12}
+同样定义 $N=\bigoplus_kH^{n+1}(X,\frj^{k+1}\F)$，由（3.3.2）它有限型。将（4.1.7.11）中的 $n$ 换成 $n+1$，并利用 $Q_k\subset N_k$，得到 $S_mQ_k=\frj^mQ_k\subset Q_{k+m}$。故 $Q=\bigoplus_kQ_k$ 是 $N$ 的分次子模，亦有限型。
+\egapar{4.1.7.13}
+记 $a_k:\frj^k\hookrightarrow A$ 为嵌入，也写成 $S_k\to S_0$。因为 $\frj^{k+1}\F_k=0$，$H_k$ 被 $\frj^{k+1}$ 零化；$Q_k$ 是 $H_k$ 的 $A$-线性像，故也被零化，即
+\begin{equation}\tag{4.1.7.14}a_{k+1}(S_{k+1})Q_k=0.\end{equation}
+$Q$ 有限型，故存在 $k_0$、$h>0$，使 $Q_{k+h}=S_hQ_k$ 对 $k\ge k_0$ 成立（II，2.1.6，ii）。结合（4.1.7.14），存在 $r>0$ 使
+\begin{equation}\tag{4.1.7.15}a_r(S_r)Q=0.\end{equation}
+\egapar{4.1.7.16}
+典范嵌入 $\frj^{k+m}\F\hookrightarrow\frj^k\F$ 诱导
+\begin{equation}\tag{4.1.7.17}
+v_m:H^{n+1}(X,\frj^{k+m}\F)\to H^{n+1}(X,\frj^k\F).
+\end{equation}
+对 $x\in\frj^m$，乘法有分解
+\begin{equation}\tag{4.1.7.18}
+H^{n+1}(X,\frj^k\F)\xrightarrow{\mu_{x,k}}
+H^{n+1}(X,\frj^{k+m}\F)\xrightarrow{v_m}
+H^{n+1}(X,\frj^k\F),
+\end{equation}
+其复合为 $A$-模中的乘以 $x$。故对 $H^{n+1}(X,\frj^k\F)$ 的每个 $A$-子模 $P$，在分次模 $N$ 中有
+\begin{equation}\tag{4.1.7.19}v_m(S_mP)=a_m(S_m)P.\end{equation}
+\egastatement{4.1.7.20}{引理}
+存在 $m>0$，使 $v_m(Q_{k+m})=0$ 对所有 $k\ge k_0$ 成立。
+\eproof
+取 $h$ 的倍数 $m\ge r$，则 $Q_{k+m}=S_mQ_k$；由（4.1.7.19）、（4.1.7.15），
+\[
+v_m(Q_{k+m})=a_m(S_m)Q_k\subset a_r(S_r)Q_k=0.
+\]
+\finishproof
+\egapar{4.1.7.21}
+典范映射给出交换图
+\[
+\begin{tikzcd}[column sep=small]
+0\arrow[r]&\frj^{k+1}\F\arrow[r]&\F\arrow[r]&\F_k\arrow[r]&0\\
+0\arrow[r]&\frj^{k+m+1}\F\arrow[r]\arrow[u]&\F\arrow[r]\arrow[u,equal]&\F_{k+m}\arrow[r]\arrow[u]&0.
+\end{tikzcd}
+\]
+其上同调图为
+\[
+\begin{tikzcd}[column sep=small]
+H^n(X,\F)\arrow[r]&H^n(X,\F_k)\arrow[r]&H^{n+1}(X,\frj^{k+1}\F)\arrow[r]&H^{n+1}(X,\F)\\
+H^n(X,\F)\arrow[r]\arrow[u,equal]&H^n(X,\F_{k+m})\arrow[r]\arrow[u]&H^{n+1}(X,\frj^{k+m+1}\F)\arrow[r]\arrow[u,"v_m"']&H^{n+1}(X,\F)\arrow[u,equal].
+\end{tikzcd}
+\]
+从而得到正合行的交换图
+\[
+\begin{tikzcd}[column sep=small]
+0\arrow[r]&R_k\arrow[r]&H\arrow[r]&H_k\arrow[r]&Q_k\arrow[r]&0\\
+0\arrow[r]&R_{k+m}\arrow[r]\arrow[u]&H\arrow[r]\arrow[u,equal]&H_{k+m}\arrow[r]\arrow[u]&Q_{k+m}\arrow[r]\arrow[u,"v_m"']&0.
+\end{tikzcd}
+\]
+当 $k\ge k_0$ 时，最右竖箭头为零，故 $H_{k+m}$ 在 $H_k$ 中的像包含于 $\Ker(H_k\to Q_k)=\Im(H\to H_k)$；交换性又给出反向包含，故二者相等。对 $k'\ge k+m$，$H_{k'}$ 在 $H_k$ 中的像也等于此像，证明了（ML）。
+
+此外，对于 $X$ 的任意仿射开集 $U$，$H^i(U,\F_k)=0$（$i>0$），且 $\Gamma(U,\F_{k+m})\to\Gamma(U,\F_k)$ 满射（I，1.3.9）。由（0，13.3.1），$H^n(\mathfrak X,\widehat\F)\to\plim_kH^n(X,\F_k)$ 是双射。
+
+射影系 $(H/R_k)_k$ 严格，故可在正合列
+\begin{equation}\tag{4.1.7.22}0\to H/R_k\to H_k\to Q_k\to0\end{equation}
+中取射影极限（0，13.2.2）。由 $v_m(Q_{k+m})=0$，有 $\plim_kQ_k=0$；故 $\plim_k(H/R_k)\simeq\plim_kH_k$ 为拓扑同构。由于 $(R_k)$ 是 $\frj$-良滤过，它给出 $\frj$-预进制拓扑，故左端就是 $H$ 的分离完备化。（4.1.7）全部得证。\finishproof
+\egapar{4.1.8}
+最后证明（4.1.5）。对 $Y$ 的每个仿射开集 $V$，若 $\J|V=\wt\frj$，则 $\Gamma(V,(R^nf_*\F)^\wedge)$ 是 $\Gamma(V,R^nf_*\F)$ 的 $\frj$-预进制分离完备化，因为该模层凝聚（I，10.8.4）。又
+\[
+\Gamma(V,\plim_kR^nf_*\F_k)=\plim_k\Gamma(V,R^nf_*\F_k)
+\]
+（$\OI$，3.2.6）。由（4.1.7）及（1.4.11），$\varphi_n$ 为拓扑同构。同样由这两个结果，$\psi_{n,V}$ 为同构；由高阶直接像的定义，$\psi_n$ 亦为同构。
+\egastatement{4.1.9}{推论}
+在（4.1.4）的条件下，对于 $Y$ 的每个仿射开集 $V$，典范同态
+\[
+H^n(\mathfrak X\cap f^{-1}(V),\widehat\F)
+\longrightarrow\Gamma(\mathfrak Y\cap V,R^n\widehat f_*\widehat\F)
+\]
+为双射。
+\egastatement{4.1.10}{注记}
+设 $f:X\to Y$ 为诺特通常预概形的有限型态射，$\F$ 凝聚且支集在 $Y$ 上固有。由（3.2.4），$R^nf_*\F$ 凝聚。可取以 $\Supp(\F)$ 为底空间的闭子预概形 $Z$，使 $\F=u_*\G$，其中 $u:Z\to X$ 为嵌入、$\G=u^*\F$ 凝聚（I，9.3.5）。令 $\G_k=\G\otimes(\OO_Y/\J^{k+1})$。则
+\[
+\F_k=u_*\G_k,\quad R^nf_*\F=R^n(f\circ u)_*\G,
+\quad R^nf_*\F_k=R^n(f\circ u)_*\G_k
+\]
+（1.3.4）。再利用（I，10.9.5），形式完备化后也有 $R^n\widehat f_*\widehat\F=R^n\widehat{(f\circ u)}_*\widehat\G$。因此把（4.1.5）用于 $\G$ 及固有态射 $f\circ u$，可知其全部结论仍适用于此处的 $f,\F$。\par
+
+% ---- END c3_s04a.tex ----
+% ---- BEGIN c3_s04b.tex ----
+\subsection{特殊情形与变式}
+\src{129--130}
+比较定理（4.1.5）最有用的形式如下。
+\egastatement{4.2.1}{命题}
+设 $Y$ 局部诺特，$f:X\to Y$ 固有，$\F$ 为凝聚 $\OO_X$-模。对每个 $y\in Y$ 及每个 $p$，$(R^pf_*\F)_y$ 是有限型 $\OO_{Y,y}$-模，因而在 $\mm_y$-预进制拓扑下分离；并有典范拓扑同构
+\begin{equation}\tag{4.2.1.1}
+\bigl((R^pf_*\F)_y\bigr)^\wedge
+\simeq\plim_kH^p\!\left(f^{-1}(y),\F\otimes_{\OO_Y}(\OO_{Y,y}/\mm_y^{k+1})\right).
+\end{equation}
+左端取 $\mm_y$-预进制完备化；右端的 $f^{-1}(y)$，对每个 $k\ge0$，视为预概形 $X\times_Y\Spec(\OO_{Y,y}/\mm_y^{k+1})$ 的底空间（I，3.6.1）。
+\eproof
+有限生成性来自（3.2.1），分离性来自（$\OI$，7.3.5）。当 $Y$ 诺特且 $y$ 闭时，换成 $y$ 的一个仿射开邻域并取 $Y'=\{y\}$，其余结论即由（4.1.7）和（G，II，4.9.1）得到。一般地，令
+\[
+Y_1=\Spec(\OO_{Y,y}),\quad X_1=X\times_YY_1,\quad
+\F_1=\F\otimes_{\OO_Y}\OO_{Y,y},\quad f_1=f\times1_{Y_1}.
+\]
+$Y_1$ 诺特，$f_1$ 固有，$\F_1$ 凝聚（II，5.4.2，iii；$\OI$，5.3.11）。设 $y_1$ 为 $Y_1$ 的唯一闭点，命题已适用于 $f_1,\F_1,y_1$。此时 $\OO_{Y_1,y_1}=\OO_{Y,y}$，$f_1^{-1}(y_1)=f^{-1}(y)$（I，3.6.5），相应的各无穷小增厚由纤维积结合律典范认同（I，3.3.9），其模也由（I，9.1.6）认同。最后，局部态射 $\Spec(\OO_{Y,y})\to Y$ 平坦（$\OI$，6.7.1；I，2.4.2），故（1.4.15）给出 $R^pf_{1*}\F_1\simeq R^pf_*\F\otimes_{\OO_Y}\OO_{Y,y}$。\finishproof
+
+以下推论使用第IV章的维数术语，在该章以前不会应用。
+\egastatement{4.2.2}{推论}
+设 $Y$ 局部诺特，$f:X\to Y$ 固有，$y\in Y$，$r=\dim f^{-1}(y)$。则对每个凝聚 $\OO_X$-模 $\F$ 和每个 $p>r$，$R^pf_*\F$ 在 $y$ 的邻域内为零。
+\eproof
+对每个 $k$，右端的上同调 $H^p(f^{-1}(y),\F\otimes(\OO_{Y,y}/\mm_y^{k+1}))=0$（G，II，4.15.2）。由（4.2.1），$(R^pf_*\F)_y$ 的分离完备化为零；因该拓扑分离，茎本身为零。由凝聚性，结论成立（$\OI$，5.2.2）。\finishproof
+\egapar{4.2.3}
+（4.2.1）主要在 $p=0$ 时使用，得到如下推论。
+\egastatement{4.2.4}{推论}
+在（4.2.1）的条件下，有典范拓扑同构
+\[
+\bigl((f_*\F)_y\bigr)^\wedge\simeq
+\plim_k\Gamma\!\left(f^{-1}(y),\F\otimes_{\OO_Y}(\OO_{Y,y}/\mm_y^{k+1})\right).
+\]
+
+\subsection{Zariski 连通性定理}
+\src{130--135}
+本小节及下一小节的结果推广 Zariski 的若干著名定理，它们都可从（4.2.4）推出；具体地说，都是下述定理的结果。
+\egastatement{4.3.1}{定理（连通性定理）}
+设 $Y$ 局部诺特，$f:X\to Y$ 固有。则 $\A(X)=f_*\OO_X$ 是凝聚 $\OO_Y$-代数。设 $Y'$ 为 $Y$ 上的有限概形，满足 $\A(Y')=\A(X)$，它在 $Y$-同构意义下确定（II，1.3.1、6.1.3）。由恒等同构 $e:\A(Y')\simeq\A(X)$ 得到 $Y$-态射 $f'=\rho(e):X\to Y'$（II，1.2.7）。那么 $f'$ 固有，$f'_*\OO_X\simeq\OO_{Y'}$，并且对所有 $y'\in Y'$，纤维 $f'^{-1}(y')$ 连通且非空。
+\eproof
+设 $g:Y'\to Y$ 为结构态射。由于 $g$ 仿射，要证明定义 $f'$ 的同态 $\theta:\OO_{Y'}\to f'_*\OO_X$ 为双射，只须证明 $g_*\theta:g_*\OO_{Y'}\to g_*f'_*\OO_X=f_*\OO_X$ 为恒等（II，1.4.2）；这正是构造的定义。$\A(X)$ 的凝聚性是有限性定理（3.2.1）的特例。$f$ 固有、$g$ 分离，故 $f'$ 固有（II，5.4.3，i）。余下只须证明以下推论。\finishproof
+\egastatement{4.3.2}{推论}
+在（4.3.1）的条件下，若 $f_*\OO_X$ 同构于 $\OO_Y$，则 $f$ 的每个纤维非空且连通。
+\eproof
+该假设先推出 $f$ 占优；因为 $f$ 闭，故 $f$ 满射。可如（4.2.1）归结到 $y$ 为闭点的情形。诺特空间 $f^{-1}(y)$ 有有限多个连通分支 $Z_1,\ldots,Z_n$；它也是沿此纤维的形式完备化 $\mathfrak X$ 的底空间。因此 $\Gamma(\mathfrak X,\OO_{\mathfrak X})$ 是环 $\Gamma(Z_i,\OO_{\mathfrak X})$ 的直积，每个因子非零，因为单位截面在每点都不同于零。把（4.1.5）用于 $\F=\OO_X$，可知该截面环同构于局部环 $\OO_{Y,y}$ 的 $\mm_y$-预进制分离完备化。它仍是局部环，不可能是多个非零环的直积，否则会有多个极大理想。因此 $n=1$。\finishproof
+\egastatement{4.3.3}{推论}
+在（4.3.1）的条件下，对每个 $y\in Y$，纤维 $f^{-1}(y)$ 的连通分支与有限纤维 $g^{-1}(y)$ 的点一一对应；亦即与环 $(f_*\OO_X)_y$ 的极大理想一一对应。
+\eproof
+$g$ 有限，故 $g^{-1}(y)$ 有限离散（II，6.1.7），而 $f^{-1}(y)=f'^{-1}(g^{-1}(y))$。应用（4.3.1）即可。\finishproof
+这给出了 $Y'$ 的一个重要解释。固有态射的分解 $f=g\circ f'$ 与 K. Stein 对解析空间的全纯映射所作分解相似，今后称为 $f$ 的\textbf{Stein 分解}。
+\egastatement{4.3.4}{注记}
+若 $k$ 是 $k(y)$ 的扩域，且 $f^{-1}(y)\otimes_{k(y)}k=X\times_Y\Spec(k)$ 连通，则作为其投影像的 $f^{-1}(y)$ 也连通（I，3.4.7）。对于任意预概形态射 $f:X\to Y$，若对 $k(y)$ 的每个扩域 $k$，此基变换后的纤维都连通，就称 $f^{-1}(y)$ \textbf{几何连通}。
+
+在（4.3.2）的假设下，纤维事实上几何连通。对任意 $k/k(y)$，由（0，10.3.1），存在诺特局部环 $A$ 及局部同态 $\OO_{Y,y}\to A$，使 $A$ 在 $\OO_{Y,y}$ 上平坦且剩余域与 $k$ 在 $k(y)$ 上同构。令 $Y_1=\Spec(A)$，$h:Y_1\to Y$ 为对应局部态射，$y_1$ 为其闭点，$X_1=X\times_YY_1$、$f_1=f\times1_{Y_1}$。则 $f_1$ 固有，$f_1^{-1}(y_1)\simeq X\times_Y\Spec(k)$。由（I，2.4.2）和（1.4.15.5），$h$ 平坦；由（1.4.15）在 $q=0$ 的情形，
+\[
+f_{1*}\OO_{X_1}=h^*(f_*\OO_X)=h^*\OO_Y=\OO_{Y_1}.
+\]
+故（4.3.2）适用。
+
+一般地，同样的论证表明基变换后 $f_1$ 的 Stein 分解的有限部分是 $Y'_1=Y'\times_YY_1$、$g_1=g\times1_{Y_1}$（II，1.5.2）。由纤维的传递性（I，3.6.4）和（4.3.3），$f_1^{-1}(y_1)$ 的连通分支数等于 $g^{-1}(y)\otimes_{k(y)}k$ 的点数。若 $k$ 为代数闭扩域，这个数不依赖其选择，等于 $g^{-1}(y)$ 的几何点数（I，6.4.7），亦即
+\[
+\sum_{y'_i\in g^{-1}(y)}[k(y'_i):k(y)]_s.
+\]
+称它为 $f^{-1}(y)$ 的\textbf{几何连通分支数}。各 $k(y'_i)$ 正是半局部环 $(f_*\OO_X)_y$ 的剩余域。
+\egastatement{4.3.5}{命题}
+设 $X,Y$ 为局部诺特整预概形，$f:X\to Y$ 为固有占优态射。对每个 $y\in Y$，$f^{-1}(y)$ 的连通分支数不超过 $\OO_{Y,y}$ 在有理函数域 $R(X)$ 中的整闭包 $\OO'_y$ 的极大理想数。
+\eproof
+对于 $Y$ 的开集 $U$，$\Gamma(U,f_*\OO_X)=\Gamma(f^{-1}(U),\OO_X)$ 是 $x\in f^{-1}(U)$ 的各局部环 $\OO_{X,x}$ 在 $R(X)$ 中的交（I，8.2.1.1）。因此 $(f_*\OO_X)_y$ 是 $R(X)$ 中包含 $\OO_{Y,y}$ 的子环。由凝聚性，它在 $\OO_{Y,y}$ 上有限，故包含在 $\OO'_y$ 中。这样的子环的每个极大理想，都是 $\OO'_y$ 的某个极大理想的交（[13]，I，257、259页）；结合（4.3.3）即得。\finishproof
+\egastatement{4.3.6}{定义}
+若整局部环的整闭包是局部环，就称它\textbf{单支}。若整预概形 $Y$ 在点 $y$ 的局部环 $\OO_{Y,y}$ 单支，就称 $y$ 为单支点；特别地，正规点是单支点。
+
+设整局部环 $A$ 的分式域为 $K$。$A$ 单支，当且仅当 $K$ 中每个包含 $A$ 且在 $A$ 上有限的子环 $A_\alpha$ 都是局部环。事实上，若 $A'$ 为 $A$ 的整闭包，则由 Cohen--Seidenberg 第一定理，$A_\alpha$ 的每个极大理想都是 $A'$ 中极大理想的交；故 $A'$ 局部推出 $A_\alpha$ 局部。反过来，$A'$ 是这些有限子代数的滤过递增并；各包含 $A_\alpha\subset A_\beta$ 是局部同态，故由（0，10.3.1.3）其极限 $A'$ 为局部环。
+
+若诺特局部环 $A$ 的完备化是整环（称 $A$ \textbf{解析整}），则 $A$ 单支。设 $\mm$ 为极大理想，$K$ 为分式域，$K'$ 为 $\widehat A$ 的分式域。原文写 $K'=K\otimes_A\widehat A$。\transnote{一般首先有典范嵌入 $K\otimes_A\widehat A\hookrightarrow\operatorname{Frac}(\widehat A)$；局部化未必已经是整个分式域。下面使用的是其整环性及有限子代数的完备化，不应把此等式无条件引用。}
+若 $A_\beta$ 是 $K$ 中有限 $A$-子代数，则 $K'$ 中由 $\widehat A$ 与 $A_\beta$ 生成的子环 $B_\beta\simeq A_\beta\otimes_A\widehat A$，是有限型 $\widehat A$-模，也是 $A_\beta$ 的 $\mm$-进制完备化（$\OI$，7.3.3、7.3.6）。$A_\beta$ 半局部，而其完备化是整环，故只能有一个极大理想，且该理想与 $A$ 的交为 $\mm$。结论随之成立。
+\egastatement{4.3.7}{推论}
+在（4.3.5）的条件下，设 $R(Y)$ 在 $R(X)$ 中的代数闭包具有可分次数 $n$，且 $y\in Y$ 为单支点。则 $f^{-1}(y)$ 至多有 $n$ 个连通分支。特别地，若上述扩张在 $R(Y)$ 上纯不可分，则该纤维连通。\transnote{最后一句底本印作“在 $R(X)$ 上纯不可分”；所指扩张的基域应是 $R(Y)$。}
+\eproof
+设 $\OO''_y$ 为 $\OO_{Y,y}$ 的整闭包，则 $\OO_{Y,y}$ 在 $R(X)$ 中的整闭包，也等于 $\OO''_y$ 在 $R(X)$ 中的整闭包。$\OO''_y$ 局部，故后者半局部，且极大理想数不超过 $n$（[13]，I，289页，定理22）。应用（4.3.5）即得。\finishproof
+这基本上就是 Zariski 对代数概形陈述其连通性定理的形式。
+\egastatement{4.3.8}{注记}
+若在（4.3.7）的假设上，再加上 $Y$ 在 $y$ 正规，则纤维 $f^{-1}(y)$ 几何连通，因为采用（4.3.4）的记号，$g^{-1}(y)$ 只有一个点 $y'$，且 $k(y')$ 在 $k(y)$ 上纯不可分。\transnote{此处的几何连通结论承接（4.3.7）最后一句的纯不可分情形，不能理解为对任意可分次数 $n$ 都成立。}
+\egastatement{4.3.9}{定义}
+给定局部诺特预概形 $Y$。若有限型态射 $f:X\to Y$ 满足：对于每个不可约局部诺特预概形 $Y'$ 及每个占优态射 $g:Y'\to Y$，$X'=X\times_YY'$ 的每个不可约分支都占优于 $Y'$，则称 $f$ \textbf{普遍开}。
+
+当 $Y$ 不可约时，设 $\eta,\eta'$ 分别为 $Y,Y'$ 的泛点，则 $g(\eta')=\eta$。若 $f'=f_{(Y')}$，上述条件等价于 $X'$ 的每个不可约分支都与 $f'^{-1}(\eta')$ 相交（$\OI$，2.1.8）。由此，对每个开集 $U\subset Y$，限制 $f^{-1}(U)\to U$ 仍普遍开。\transnote{本段保留原书在此处给出的定义；它与后文用任意基变换后的开映射所作表述的关系见（4.3.11，ii），不在译文中以现代定义替换。}
+\egastatement{4.3.10}{推论}
+设 $X,Y$ 为局部诺特整预概形，$f:X\to Y$ 为固有、占优、普遍开的态射。若 $R(Y)$ 在 $R(X)$ 中的代数闭包在 $R(Y)$ 上纯不可分，则每个纤维 $f^{-1}(y)$ 几何连通。
+\eproof
+可设 $Y=\Spec(B)$，$B$ 诺特整环。由（II，7.1.7），存在支配 $\OO_{Y,y}$、分式域为 $R(Y)$ 的诺特整闭局部环 $A$。令 $Y'=\Spec(A)$，由 $B\hookrightarrow A$ 得到 $h:Y'\to Y$；它双有理，因而占优。设 $y'$ 为 $Y'$ 的闭点，则 $h(y')=y$。令 $X'=X\times_YY'$、$f'=f\times1_{Y'}$。若 $\eta,\eta',\xi$ 分别为 $Y,Y',X$ 的泛点，则 $f(\xi)=\eta$、$h^{-1}(\eta)=\{\eta'\}$ 且 $k(\eta')=k(\eta)=R(Y)$。因此 $f'^{-1}(\eta')\simeq f^{-1}(\eta)$，只有一个泛点。由假设，$X'$ 的每个不可约分支的泛点都在该纤维中，故 $X'$ 不可约，其泛点 $\xi'$ 满足 $k(\xi')=k(\xi)$。
+
+令 $X''=X'_{\red}$、$f''=f'_{\red}$。则 $X''$ 整且诺特，$f''$ 固有（II，5.4.6），它与 $f'$ 在 $y'$ 上的纤维底空间相同；又 $R(X'')=R(X)$。因此可应用（4.3.8），得 $f''^{-1}(y')$ 几何连通。对任意 $k/k(y)$，可取一个共同扩域 $k_1$，包含 $k$ 及 $k(y')$ 作为 $k(y)$-子扩域。则
+\[
+f''^{-1}(y')\times_{y'}\Spec(k_1)
+\]
+连通；它与 $f'^{-1}(y')\times_{y'}\Spec(k_1)$ 的约化预概形相同（I，5.1.8），故后者连通。由纤维的传递性，它同构于 $f^{-1}(y)\times_y\Spec(k_1)$，再投影到 $f^{-1}(y)\times_y\Spec(k)$，由（4.3.4）知后者连通。\finishproof
+\egastatement{4.3.11}{注记}
+（i）上述论证实质上出自 Zariski [20]，但在经典代数几何的局部环情形中，他可取 $\OO_{Y,y}$ 的整闭包作为 $A$，因为该整闭包诺特。此外，Zariski 证明：若 $Y$ 是域 $k$ 上射影空间 $\Pb_k^r$ 的 Chow 簇，$X\subset\Pb_k^r\times_kY$ 是定义 Chow 对应的闭子集，则投影 $X\to Y$ 普遍开（该文82页的引理）。看来这是“Chow 坐标”在某些应用中唯一用到的形式性质。因此，在这种情形下，以“固有态射的纤维”（可再假设普遍开，或施加类似的局部正则性限制）取代“射影空间中圈的特殊化”的语言，是有益的。
+
+（ii）在第IV章将看到，普遍开态射也可由如下条件定义，这将说明其名称：对任意 $Z\to Y$，态射 $f_{(Z)}:X_{(Z)}\to Z$ 是开映射。还可证明，若 $f$ 满足（4.3.10）的假设，$y$ 是 $y'$ 的特殊化，则 $f^{-1}(y)$ 的几何连通分支数不超过 $f^{-1}(y')$ 的几何连通分支数。
+\egastatement{4.3.12}{推论}
+在（4.3.5）的假设上，再设 $R(Y)$ 在 $R(X)$ 中代数闭，$y$ 为 $Y$ 的正规点。则 $f^{-1}(y)$ 几何连通，且存在 $y$ 的开邻域 $U$，使 $f_*(\OO_X|f^{-1}(U))\simeq\OO_Y|U$。特别地，若 $Y$ 正规，且上述函数域条件成立，则 $f_*\OO_X\simeq\OO_Y$。
+\eproof
+几何连通性来自（4.3.8）。在 Stein 分解 $f=g\circ f'$ 中，$g^{-1}(y)$ 只有一个点 $y'$；并且
+\[
+\OO_{Y,y}\subset\OO_{Y',y'}=(f_*\OO_X)_y\subset R(X).
+\]
+中间环在 $\OO_{Y,y}$ 上有限，其元素因而代数于 $R(Y)$，由假设它包含在 $R(Y)$ 中；$y$ 正规，故 $\OO_{Y',y'}=\OO_{Y,y}$。由（I，6.5.4），$g$ 在 $y'$ 是局部同构，得到第一部分。若 $Y$ 处处正规，则 $g$ 双射且处处局部同构，故为同构，得到第二部分。\finishproof
+在概形框架中建立（4.3.7），还可作如下应用。
+\egastatement{4.3.13}{命题}
+设 $A$ 为诺特单支局部环，$\mathfrak a$ 为其定义理想，$A_0=A/\mathfrak a$，$S=\gr_{\mathfrak a}(A)$ 为相应关联分次环。$S$ 是由有限型 $A_0$-模 $S_1$ 生成的分次 $A_0$-代数；则 $\Proj(S)$ 是连通的 $A_0$-概形。
+\eproof
+设 $\mm$ 为极大理想，$Y=\Spec(A)$，$y$ 是唯一闭点。由假设，对某个 $p$ 有 $\mm^p\subset\mathfrak a\subset\mm$，故 $V(\mathfrak a)=\{\mm\}$。令 $S'=\bigoplus_k\mathfrak a^k$、$X=\Proj(S')$，即爆破 $\mathfrak a$ 所得的 $Y$-概形。它整，结构态射 $f:X\to Y$ 双有理（II，8.1.4），而且显然射影。由（4.3.7），$f^{-1}(y)$ 连通。该空间也是 $\Proj(S'\otimes_AA_0)$ 的底空间（I，3.6.1；II，2.8.10），而按定义 $S'\otimes_AA_0=S$，故命题成立。\finishproof\par
+
+% ---- END c3_s04b.tex ----
+% ---- BEGIN c3_s04c.tex ----
+\subsection{Zariski 的“主定理”}
+\src{135--138}
+\egastatement{4.4.1}{命题}
+设 $Y$ 局部诺特，$f:X\to Y$ 固有。令 $X'$ 为那些在各自纤维 $f^{-1}(f(x))$ 中孤立的点 $x\in X$ 所成集合。则 $X'$ 在 $X$ 中开；若 $f=g\circ f'$ 是 Stein 分解（4.3.3），则 $f'$ 在 $X'$ 上的限制把 $X'$ 同构到 $Y'$ 的某个开集 $U$ 上的诱导子预概形，并且 $X'=f'^{-1}(U)$。
+\eproof
+$g^{-1}(f(x))$ 有限离散（4.3.3；II，6.1.7），故 $x$ 在 $f^{-1}(f(x))$ 中孤立，当且仅当它在 $f'^{-1}(f'(x))$ 中孤立。因此可设 $f'=f$，即 $f_*\OO_X=\OO_Y$。对 $x\in X'$，连通纤维 $f^{-1}(f(x))$ 只能是单点 $\{x\}$（4.3.2）。$f$ 闭，故对 $x$ 的任意开邻域 $V$，$f(X-V)$ 是不含 $y=f(x)$ 的闭集。取其补集 $U$，有 $f^{-1}(U)\subset V$。所以 $y$ 的开邻域基的逆像构成 $x$ 的开邻域基。由直接像的定义及 $f_*\OO_X=\OO_Y$，若 $f=(\psi,\theta)$，则 $\theta_x^\sharp:\OO_{Y,y}\to\OO_{X,x}$ 是同构。由（I，6.5.4），存在开邻域 $V,U$，使 $f|V:V\to U$ 为同构；又可取 $f^{-1}(U)=V$。依定义 $V\subset X'$，结论随之成立。\finishproof
+以下命题在代数概形的情形下由 Chevalley 证明。
+\egastatement{4.4.2}{命题}
+设 $Y$ 局部诺特，$f:X\to Y$ 为态射。以下条件等价：a）$f$ 有限；b）$f$ 仿射且固有；c）$f$ 固有，且每个 $f^{-1}(y)$ 都是有限集。
+\eproof
+a）推出 b）已知（II，6.1.2、6.1.11）。若 $f$ 仿射固有，则 $f^{-1}(y)\to\Spec(k(y))$ 亦如此。把有限性定理（3.2.1）用于其结构层，可知该纤维是有限 $k(y)$-代数的谱，故点集有限，得到 b）$\Rightarrow$c）。若 c）成立，因纤维是 $k(y)$ 上的代数预概形，其有限底空间必离散（I，6.4.4）。所以在（4.4.1）的记号下，$X'=X$、$f':X\to Y'$ 为同构，而 $g$ 有限，故 $f$ 有限。\finishproof
+\egastatement{4.4.3}{定理（Zariski 主定理）}
+设 $Y$ 为诺特预概形，$f:X\to Y$ 拟射影。令 $X'$ 为在各自纤维中孤立的点的集合。则 $X'$ 在 $X$ 中开，而且其诱导子预概形同构于某个有限 $Y$-预概形 $Y'$ 的一个开子预概形。
+\eproof
+存在射影 $Y$-预概形 $Z$，使 $X$ 在 $Y$ 上同构于 $Z$ 的开子预概形（II，5.3.2、5.5.1）。因此只须对射影态射证明，而射影态射固有（II，5.5.3），可直接应用（4.4.1）。\finishproof
+\egastatement{4.4.4}{注记}
+若 $X$ 约化（分别地，$X$ 不可约且 $X'$ 非空），则在（4.4.3）中可取 $Y'$ 约化（分别地，不可约）。事实上，可将 $Y'$ 换成 $X'$ 在其中的概形论闭包（I，9.5.11；II，6.1.5，i、ii）。约化开子预概形的闭包仍约化（I，9.5.9，i）；非空不可约集的闭包仍不可约。
+\egastatement{4.4.5}{推论}
+设 $Y$ 为局部诺特概形，$f:X\to Y$ 有限型，$x$ 在其纤维中孤立。则 $x$ 有一个开邻域，在 $Y$ 上同构于某个有限 $Y$-预概形的开子预概形。
+\eproof
+取 $y=f(x)$ 的仿射开邻域 $U$，再取 $x$ 的仿射开邻域 $V\subset f^{-1}(U)$。$Y$ 分离，故 $U\to Y$ 仿射（II，1.6.3），而 $V\to U$ 仿射，所以 $V\to Y$ 仿射（II，1.6.2，ii）。它又有限型（I，6.3.5），故拟射影（II，5.3.4，i）；对其应用（4.4.3）即得。\finishproof
+用交换代数语言，这一推论写成如下形式。
+\egastatement{4.4.6}{推论}
+设 $A$ 为诺特环，$B$ 为有限型 $A$-代数，$\qq\subset B$ 为素理想，$\pp$ 为其在 $A$ 中的逆像。假设在所有逆像为 $\pp$ 的 $B$ 的素理想中，$\qq$ 同时为极大元和极小元。则存在 $g\in B-\qq$、有限 $A$-代数 $A'$ 和 $g'\in A'$，使 $B_g$ 与 $A'_{g'}$ 作为 $A$-代数同构。
+\eproof
+取 $Y=\Spec(A)$、$X=\Spec(B)$，应用（4.4.5）；关于 $\qq$ 的假设恰表示它在纤维中孤立（I，1.1.7）。\finishproof
+由此得到一个表面上较不一般的结果。
+\egastatement{4.4.7}{推论}
+设 $A$ 为诺特局部环，$B$ 为有限型 $A$-代数，$\nn\subset B$ 为素理想，其在 $A$ 中的逆像为极大理想 $\mm$。假设 $\nn$ 在 $B$ 中极大，并且在所有逆像为 $\mm$ 的素理想中极小（原文亦表述为 $B\mm$ 是 $\nn$-准素的）。则存在有限 $A$-代数 $A'$ 及其极大理想 $\mm'$，使 $\mm'$ 在 $A$ 中的逆像为 $\mm$，且 $B_{\nn}\simeq A'_{\mm'}$ 为 $A$-代数同构。\transnote{括号中的全局准素性比所列素理想条件更强；在 $B_{\nn}$ 中的相应理想则具有唯一素理想作为其根。这里保留原文括号的表述，不把它当作无需局部化的等价判据。}
+下面的特殊情形也有时称为“主定理”。
+\egastatement{4.4.8}{推论}
+在（4.4.7）的条件下，再设 $A,B$ 均为整环，具有同一分式域 $K$。若 $A$ 整闭，则 $B=A$。
+\eproof
+由（4.4.4），可在应用（4.4.7）时取 $A'$ 为分式域为 $K$ 的整环。$A$ 整闭而 $A'$ 在 $A$ 上有限，故 $A'=A$，于是 $B_{\nn}=A$。由 $A\subset B\subset B_{\nn}$，得到 $A=B$。\finishproof
+这就是 Zariski 对主定理的陈述形式，现已推广到任意诺特整局部环。
+
+以上是全局结果（4.4.3）的局部变式。另一个全局结果如下。
+\egastatement{4.4.9}{推论}
+设 $Y$ 为局部诺特整预概形，$f:X\to Y$ 分离、有限型且双有理。若 $Y$ 正规、所有纤维 $f^{-1}(y)$ 有限，则 $f$ 为开浸入；若 $f$ 还闭，特别是若 $f$ 固有，则 $f$ 为同构。
+\eproof
+令 $y=f(x)$。有限的代数纤维离散（I，6.4.4），而 $\OO_{Y,y}$ 整闭，$\OO_{X,x}$ 与 $\OO_{Y,y}$ 具有同一分式域（I，7.1.5）。由（4.4.8），相应茎同态为双射，故 $f$ 为局部同构（I，6.5.4）。$f$ 分离、$X$ 整，故 $f$ 为开浸入（I，8.2.8）。最后一断言由占优性得出。\finishproof
+\egastatement{4.4.10}{命题}
+设 $Y$ 局部诺特，$f:X\to Y$ 局部有限型。那些在其纤维中孤立的点组成 $X$ 的开子集。
+\eproof
+问题在 $X,Y$ 上局部，可设二者仿射诺特，$f$ 有限型。此时 $f$ 仿射有限型，故拟射影，应用（4.4.3）即可。\finishproof
+\egastatement{4.4.11}{推论}
+设 $Y$ 局部诺特，$f:X\to Y$ 固有。使 $f^{-1}(y)$ 离散的点 $y$ 所成集合 $U$ 在 $Y$ 中开，而且 $f^{-1}(U)\to U$ 有限。特别地，固有拟有限态射有限。
+\eproof
+$Y-U=f(X-X')$，其中 $X'$ 是（4.4.10）中的开集；$f$ 闭，故 $U$ 开。由（II，6.2.2），$U$ 上各纤维有限；限制态射固有，故由（4.4.2）它有限。\finishproof
+\egastatement{4.4.12}{注记}
+（i）如（II，6.2.7）所预告，第V章将证明：当 $Y$ 局部诺特时，每个拟有限分离态射 $X\to Y$ 都拟仿射，因而拟射影。于是主定理（4.4.3）的结论在只假设 $f$ 分离且有限型时仍成立：由（4.4.10），$X'$ 开；$X$ 局部诺特，故限制仍有限型（I，6.3.5），依定义拟有限，且分离，故可对限制应用（4.4.3）。
+
+（ii）第IV章将用维数理论给出（4.4.10）的较初等证明。
+
+\subsection{同态模的完备化}
+\src{138--139}
+\egastatement{4.5.1}{命题}
+设 $A$ 为诺特环，$\frj\subset A$ 为理想，$X$ 为有限型 $A$-预概形，$\F,\G$ 为凝聚 $\OO_X$-模，其支集的交在 $Y=\Spec(A)$ 上固有。则对每个 $n\ge0$，$\Ext^n_{\OO_X}(X;\F,\G)$ 是有限型 $A$-模，其 $\frj$-预进制分离完备化典范地同构于 $\Ext^n_{\OO_{\mathfrak X}}(\mathfrak X;\widehat\F,\widehat\G)$，其中完备化记号同（4.1.7）。
+\eproof
+有双正则谱序列 $E(\F,\G)$（T，4.2），终项为全局 $\Ext$，其第二页为
+\[
+E_2^{pq}=H^p(X,\shExt^q_{\OO_X}(\F,\G)).
+\]
+层 $\shExt^q_{\OO_X}(\F,\G)$ 凝聚（0，12.3.3），其支集包含在两支集的交中，故在 $Y$ 上固有。由（3.2.4），各 $E_2^{pq}$ 为有限型 $A$-模；由（0，11.1.8），后续各页及终项亦有限型。
+
+典范态射 $i:\mathfrak X\to X$ 平坦，而且 $\widehat\F=i^*\F$、$\widehat\G=i^*\G$（I，10.8.8、10.8.9）。由（0，12.3.4），有典范 $i$-态射
+\[
+u_q:\shExt^q_{\OO_X}(\F,\G)\to
+\shExt^q_{\OO_{\mathfrak X}}(\widehat\F,\widehat\G),
+\]
+其对应的 $\OO_{\mathfrak X}$-同态 $u_q^\sharp$ 为同构（0，12.3.5）。即右端典范地等于左端的完备化（I，10.8.8）。由比较定理（4.1.10），
+\[
+H^p(\mathfrak X,\shExt^q_{\OO_{\mathfrak X}}(\widehat\F,\widehat\G))
+\]
+是 $H^p(X,\shExt^q_{\OO_X}(\F,\G))$ 的 $\frj$-预进制分离完备化。因此若 $\widehat A$ 为 $A$ 的完备化，
+\[
+E_2^{pq}(\widehat\F,\widehat\G)
+\simeq E_2^{pq}(\F,\G)\otimes_A\widehat A.
+\]
+平坦态射 $i$ 给出谱序列的典范态射 $\varphi:E(\F,\G)\to E(\widehat\F,\widehat\G)$。在第二页及终项上，它分别是由 $u_q$ 及 $u_0$ 的函子性得到的映射
+\[
+\begin{aligned}
+\varphi_2^{pq}:&\ H^p(X,\shExt^q(\F,\G))\to
+H^p(\mathfrak X,\shExt^q(\widehat\F,\widehat\G)),\\
+\varphi^n:&\ \Ext^n_{\OO_X}(X;\F,\G)\to
+\Ext^n_{\OO_{\mathfrak X}}(\mathfrak X;\widehat\F,\widehat\G).
+\end{aligned}
+\]
+与 $\widehat A$ 张量后得到 $\widehat A$-线性映射 $\psi_r^{pq}$、$\psi^n$。$\widehat A$ 在 $A$ 上平坦（$\OI$，7.3.3），故 $E_r^{pq}(\F,\G)\otimes_A\widehat A$ 仍构成双正则谱序列，终项为 $\Ext^n_{\OO_X}(X;\F,\G)\otimes_A\widehat A$。这些映射构成谱序列态射，而 $\psi_2^{pq}$ 均为同构，故 $\psi^n$ 亦为同构（0，11.1.5）。\finishproof
+\egastatement{4.5.2}{推论}
+在（4.5.1）的条件下，若 $A$ 本身为诺特 $\frj$-进制环，则
+\[
+\Ext^n_{\OO_X}(X;\F,\G)\simeq
+\Ext^n_{\OO_{\mathfrak X}}(\mathfrak X;\widehat\F,\widehat\G)
+\]
+对所有 $n\ge0$ 典范成立。
+\eproof
+左端有限型，故已对 $\frj$-预进制拓扑分离完备（$\OI$，7.3.6）。\finishproof
+$n=0$ 的特殊情形写成如下形式。
+\egastatement{4.5.3}{推论}
+在（4.5.1）的条件下，以 $\widehat u:\widehat\F\to\widehat\G$ 表示同态 $u:\F\to\G$ 的完备化（I，10.8.4）。则
+\begin{equation}\tag{4.5.3.1}
+\bigl(\Hom_{\OO_X}(\F,\G)\bigr)^\wedge
+\simeq\Hom_{\OO_{\mathfrak X}}(\widehat\F,\widehat\G),
+\end{equation}
+其中左端为 $A$-同态模的 $\frj$-预进制分离完备化，此同构由 $u\mapsto\widehat u$ 经分离完备化得到。\par
+
+% ---- END c3_s04c.tex ----
+% ---- BEGIN c3_s04d.tex ----
+\subsection{形式态射与通常态射之间的关系}
+\src{139--144}
+\egastatement{4.6.1}{命题}
+设 $Y$ 局部诺特，$f:X\to Y$ 固有，$\F$ 为凝聚且 $f$-平坦的 $\OO_X$-模，$y\in Y$。若对某个整数 $n$ 有
+\[
+H^n(f^{-1}(y),\F\otimes_{\OO_Y}k(y))=0,
+\]
+则存在 $y$ 的开邻域 $U$，使 $R^nf_*\F|U=0$；并且对每个 $p\ge0$，典范同态
+\[
+(R^{n-1}f_*\F)_y\longrightarrow
+H^{n-1}\!\left(f^{-1}(y),\F\otimes_{\OO_Y}(\OO_{Y,y}/\mm_y^{p+1})\right)
+\]
+满射。
+\eproof
+由于 $R^nf_*\F$ 凝聚，第一断言只须证明其在 $y$ 的茎为零（$\OI$，5.2.2）。由（4.2.1），只须证明所有
+\[
+H^n(f^{-1}(y),\F\otimes(\OO_{Y,y}/\mm_y^{p+1}))
+\]
+为零。$p=0$ 即为假设，现对 $p$ 归纳。令 $X_p=X\times_Y\Spec(\OO_{Y,y}/\mm_y^{p+1})$；$X_{p-1}$ 是 $X_p$ 的闭子预概形，底空间相同（I，3.6.1）。由正合列
+\[
+0\to\mm_y^p\F/\mm_y^{p+1}\F\to\F/\mm_y^{p+1}\F\to\F/\mm_y^p\F\to0
+\]
+得到上同调正合列
+\[
+H^n(X_p,\mm_y^p\F/\mm_y^{p+1}\F)\to
+H^n(X_p,\F/\mm_y^{p+1}\F)\to H^n(X_p,\F/\mm_y^p\F).
+\]
+最后一项由归纳假设为零，所以只须证明
+\begin{equation}\tag{4.6.1.1}H^n(X_p,\mm_y^p\F/\mm_y^{p+1}\F)=0.\end{equation}
+令 $Z=f^{-1}(y)=X\times_Y\Spec(k(y))$；中间层被 $\mm_y$ 零化，可看作 $\OO_Z$-模，其在 $X_p$ 与 $Z$ 上的上同调相同。典范同态
+\begin{equation}\tag{4.6.1.2}
+(\F/\mm_y\F)\otimes_{k(y)}(\mm_y^p/\mm_y^{p+1})
+\longrightarrow\mm_y^p\F/\mm_y^{p+1}\F
+\end{equation}
+为双射：这是逐茎问题，$\F_x$ 在 $\OO_{Y,y}$ 上平坦，应用（0，10.2.1，c）即可。因 $\mm_y^p/\mm_y^{p+1}$ 是自由 $k(y)$-模，便有
+\[
+H^n(Z,\mm_y^p\F/\mm_y^{p+1}\F)
+=H^n(Z,\F/\mm_y\F)\otimes_{k(y)}(\mm_y^p/\mm_y^{p+1})=0
+\]
+（0，12.2.3），证明了（4.6.1.1）。
+
+为证明第二断言，可如（4.2.1）归结到 $Y$ 仿射、$y$ 闭。用相同论证，对 $k>0$ 有
+\begin{equation}\tag{4.6.1.3}
+H^n(X_{p+k-1},\mm_y^p\F/\mm_y^{p+k}\F)=0.
+\end{equation}
+由（4.2.1）得
+\begin{equation}\tag{4.6.1.4}(R^nf_*(\mm_y^p\F))_y=0.\end{equation}
+因此上同调正合列给出
+\[
+(R^{n-1}f_*\F)_y\to(R^{n-1}f_*(\F/\mm_y^p\F))_y
+\to(R^nf_*(\mm_y^p\F))_y=0.
+\]
+因 $Y$ 仿射且 $y$ 闭，（1.4.11）及（G，II，4.9.1）将第二项认同为
+\[
+H^{n-1}(f^{-1}(y),\F/\mm_y^p\F),
+\]
+因为它本来就是 $\OO_{Y,y}/\mm_y^p$-模。将 $p$ 换成 $p+1$，得到所需满射。\finishproof
+\egastatement{4.6.2}{推论}
+设 $Y$ 局部诺特，$f:X\to Y$ 固有平坦，$\F,\G$ 为局部自由 $\OO_X$-模，$y\in Y$。令 $X_y=X\otimes_Yk(y)$，$\F_y=\F\otimes_{\OO_Y}k(y)$、$\G_y=\G\otimes_{\OO_Y}k(y)$。若
+\begin{equation}\tag{4.6.2.1}H^1(X_y,\shHom_{\OO_{X_y}}(\F_y,\G_y))=0,\end{equation}
+则对任意同态 $u_0:\F_y\to\G_y$，存在 $y$ 的开邻域 $U$ 和同态 $u:\F|f^{-1}(U)\to\G|f^{-1}(U)$，使 $u_0=u\otimes1$。
+\eproof
+可将（4.6.1）在 $n=1,p=0$ 时用于 $\HH=\shHom_{\OO_X}(\F,\G)$。它凝聚且局部自由，因而 $f$-平坦，而 $\HH\otimes_{\OO_Y}k(y)$ 认同于纤维上的同态层。可设 $Y=\Spec(A)$，则
+\[
+R^0f_*\HH=(\Hom_{\OO_X}(\F,\G))^\sim,
+\quad(R^0f_*\HH)_y=\Hom_{\OO_X}(\F,\G)\otimes_A\OO_{Y,y}.
+\]
+（4.6.1）说明从此局部化到 $\Hom_{\OO_{X_y}}(\F_y,\G_y)$ 的典范同态满射。局部化中的元素可写为 $u'\otimes(1/s)$，$s\notin\mathfrak j_y$；在 $D(s)$ 上即可实现所需同态。\finishproof
+\egastatement{4.6.3}{推论}
+在（4.6.2）的条件下，若 $u_0$ 单射（分别地，满射、双射），则可取 $u$ 也具有同样性质。
+\eproof
+可先设 $U=Y$。只须证明对每个 $x\in f^{-1}(y)$，$\Ker u_x=0$（分别地，$\Coker u_x=0$）。核、余核凝聚，故在纤维的某个邻域上为零；$f$ 闭，故可把该邻域缩成 $f^{-1}(U')$。
+
+由假设，$u_x\otimes1:\F_x\otimes_{\OO_{Y,y}}k(y)\to\G_x\otimes_{\OO_{Y,y}}k(y)$ 单射（分别地，满射）。两茎为有限自由 $\OO_{X,x}$-模，而 $\OO_{X,x}$ 在 $\OO_{Y,y}$ 上平坦。单射情形由（0，10.2.4）得到 $u_x$ 单射。满射情形再对 $\OO_{X,x}$ 的极大理想取商，所得剩余向量空间同态满射；由 Nakayama 引理，$u_x$ 满射。\finishproof
+\egastatement{4.6.4}{推论}
+设 $Y$ 局部诺特，$f:X\to Y$ 固有平坦，$y\in Y$，$X_y=X\otimes_Yk(y)$。设 $\E_0$ 为局部自由 $\OO_{X_y}$-模，满足
+\begin{equation}\tag{4.6.4.1}H^1(X_y,\shHom_{\OO_{X_y}}(\E_0,\E_0))=0.\end{equation}
+若局部自由 $\OO_X$-模 $\F,\G$ 在 $X_y$ 上的限制都同构于 $\E_0$，则存在 $y$ 的开邻域 $U$，使 $\F|f^{-1}(U)\simeq\G|f^{-1}(U)$。
+\egastatement{4.6.5}{推论}
+在（4.6.4）关于 $f,X,Y$ 的条件下，若 $H^1(X_y,\OO_{X_y})=0$，且两可逆 $\OO_X$-模 $\F,\G$ 的纤维限制同构，则在 $y$ 的某个开邻域的逆像上，它们同构。
+\eproof
+将（4.6.4）用于 $\F^{-1}\otimes\G$ 与 $\OO_X$ 即可。\finishproof
+\egastatement{4.6.6}{注记}
+（i）第V章将用（4.6.5）建立在（II，4.2.7）中预告的射影丛上可逆层的分类。（ii）在§7中，（4.6.1）将作为更一般命题的结果出现。
+\egastatement{4.6.7}{命题}
+设 $Z$ 局部诺特，$X,Y$ 是 $Z$-预概形，其结构态射 $g:X\to Z$、$h:Y\to Z$ 固有。设 $f:X\to Y$ 为 $Z$-态射，$z\in Z$，$f_z=f\times_Z1:X\otimes_Zk(z)\to Y\otimes_Zk(z)$。
+
+（i）若 $f_z$ 有限（分别地，为闭浸入），则存在 $z$ 的开邻域 $U$，使限制 $g^{-1}(U)\to h^{-1}(U)$ 有限（分别地，为闭浸入）。
+
+（ii）若再假设 $g$ 平坦，而 $f_z$ 是同构，则存在这样的 $U$，使上述限制为同构。
+\eproof
+只须对每个 $y\in h^{-1}(z)$ 找到开邻域 $V_y$，使 $f^{-1}(V_y)\to V_y$ 具有对应性质；把这些邻域取并得到 $V$，再利用 $h$ 闭，取 $z$ 的开邻域 $U$ 使 $h^{-1}(U)\subset V$ 即可。
+
+（i）$f$ 固有（II，5.4.3）。若 $f_z$ 有限，则由（4.4.11）即可找到各 $V_y$。处理闭浸入情形时，已可假设 $f$ 有限，写成 $X=\Spec(\B)$，其中 $\B$ 为凝聚 $\OO_Y$-代数，$f$ 对应典范同态 $u:\OO_Y\to\B$。只须证明 $u_y$ 满射，因为 $\Coker u$ 凝聚。$f_z$ 对应 $u\otimes1$；其为闭浸入说明 $u_y\otimes1$ 在 $k(z)$ 上满射。由 $\B_y$ 有限型及 Nakayama 引理，$u_y$ 满射。
+
+（ii）同样，只须从 $u_y\otimes1$ 双射推出 $u_y$ 双射。所需单射性由下述引理得到。\finishproof
+\egastatement{4.6.7.1}{引理}
+设 $A,B$ 为诺特局部环，$\rho:A\to B$ 为局部同态，$u:N\to M$ 为 $B$-模同态。假设 $M$ 在 $A$ 上平坦，$N$ 为有限型 $B$-模，且 $u\otimes1:N\otimes_Ak\to M\otimes_Ak$ 单射，其中 $k$ 是 $A$ 的剩余域。则 $N$ 在 $A$ 上平坦，且 $u$ 单射。
+\eproof
+对于有限型 $A$-模的单同态 $v:P\to Q$，考虑交换图
+\[
+\begin{tikzcd}
+N\otimes_AP\arrow[r,"1_N\otimes v"]\arrow[d,"u\otimes1_P"']&N\otimes_AQ\arrow[d,"u\otimes1_Q"]\\
+M\otimes_AP\arrow[r,"1_M\otimes v"]&M\otimes_AQ.
+\end{tikzcd}
+\]
+下箭头单射，故若左箭头单射，上箭头即单射，进而证明 $N$ 平坦。令 $\mm$ 为 $A$ 的极大理想。$N\otimes_AP$ 作为 $B$-模有限型，其 $\mm$-进制滤过就是 $\mm B$-进制滤过；因为 $\mm B$ 包含在 $B$ 的根基中，该拓扑分离（$\OI$，7.3.5）。因此只须证明关联分次同态 $\gr(u\otimes1_P)$ 单射（Bourbaki，\textit{Alg. comm.}，III，§2，n°8，定理1推论1）。
+
+$M$ 平坦，故 $M\otimes_A\mm^nP\to\mm^n(M\otimes_AP)$ 双射；于是典范同态
+\[
+\varphi_M:\gr_0(M)\otimes_k\gr(P)\longrightarrow\gr(M\otimes_AP)
+\]
+双射。而下图交换：
+\[
+\begin{tikzcd}[column sep=large]
+\gr_0(N)\otimes_k\gr(P)\arrow[r,"\gr_0(u)\otimes1"]\arrow[d,"\varphi_N"']&\gr_0(M)\otimes_k\gr(P)\arrow[d,"\varphi_M"]\\
+\gr(N\otimes_AP)\arrow[r,"\gr(u\otimes1)"]&\gr(M\otimes_AP).
+\end{tikzcd}
+\]
+$\varphi_M$ 双射、$\varphi_N$ 满射；$\gr_0(u)$ 由假设单射，与 $k$-向量空间 $\gr(P)$ 张量仍单射。因此下箭头单射，证明第一断言。在上述论证中取 $P=A$，即得 $u$ 单射。\finishproof
+\egastatement{4.6.8}{命题}
+设 $Z$ 局部诺特，$X,Y$ 为结构态射 $g,h$ 固有的 $Z$-预概形。设 $Z'\subset Z$ 闭，$X'=g^{-1}(Z')$、$Y'=h^{-1}(Z')$，$\mathfrak X=X_{/X'}$、$\mathfrak Y=Y_{/Y'}$、$\mathfrak Z=Z_{/Z'}$。设 $f:X\to Y$ 为 $Z$-态射，$\widehat f:\mathfrak X\to\mathfrak Y$ 为其完备化。则 $\widehat f$ 为同构（分别地，为闭浸入），当且仅当存在 $Z'$ 的开邻域 $U\subset Z$，使 $f$ 的限制 $g^{-1}(U)\to h^{-1}(U)$ 为同构（分别地，为闭浸入）。
+\eproof
+充分性由（I，10.14.7）立即得到。必要性如（4.6.7），只须在 $Y'$ 中每点附近验证。因此可归结到 $Y=Z=\Spec(A)$ 仿射诺特。由假设，各 $y\in Y'$ 上的纤维至多为一点；\transnote{原文写作纤维“缩成一点”。在闭浸入的情形，纤维也可能为空；这里将这一措辞明确为“至多为一点”，所需的有限性不受影响。}$f$ 固有，由（4.4.11）可在 $Y'$ 的邻域上使 $f$ 有限，写成 $X=\Spec(B)$，其中 $B$ 为有限 $A$-代数。
+
+若 $Y'=V(\frj)$，则 $\mathfrak Y=\Spf(\widehat A)$、$\mathfrak X=\Spf(\widehat B)$，其中 $\widehat A$ 为 $\frj$-预进制分离完备化，$\widehat B$ 为 $\frj B$-预进制分离完备化，也就是把 $B$ 视为 $A$-模时的 $\frj$-预进制分离完备化。$\widehat f$ 对应于环同态 $\varphi:A\to B$ 的连续延拓 $\widehat\varphi:\widehat A\to\widehat B$；假设表示它双射（分别地，满射）。它也是 $A$-模同态 $\varphi$ 的完备化。由（I，10.8.14），存在 $Y'$ 的开邻域 $U$，使层同态 $\wt\varphi:\wt A\to\wt B$ 在 $U$ 上双射（分别地，满射），从而得到结论。\finishproof\par
+
+% ---- END c3_s04d.tex ----
+% ---- BEGIN c3_s04e.tex ----
+\subsection{一个丰沛性判据}
+\src{145--146}
+\egastatement{4.7.1}{定理}
+设 $Y$ 局部诺特，$f:X\to Y$ 固有，$\LL$ 为可逆 $\OO_X$-模，$y\in Y$，$X_y=X\otimes_Yk(y)$，$g:X_y\to X$ 为投影。若 $\LL_y=g^*\LL=\LL\otimes_{\OO_Y}k(y)$ 在 $X_y$ 上丰沛，则存在 $y$ 的开邻域 $U$，使 $\LL|f^{-1}(U)$ 对于限制态射 $f^{-1}(U)\to U$ 丰沛。
+\eproof
+\textit{I）} 先令 $Y'=\Spec(\OO_{Y,y})$、$X'=X\times_YY'$、$\LL'=\LL\otimes_{\OO_Y}\OO_{Y,y}$，证明 $\LL'$ 对 $f'=f_{(Y')}$ 丰沛。有交换图
+\[
+\begin{tikzcd}
+X\arrow[d,"f"']&X'\arrow[l]\arrow[d,"f'"]&X_y\arrow[l]\arrow[d]\\
+Y&Y'\arrow[l]&\Spec(k(y))\arrow[l].
+\end{tikzcd}
+\]
+$f'$ 固有、$\OO_{Y,y}$ 诺特，故只须在 $Y=\Spec(\OO_{Y,y})$ 时，由纤维上的丰沛性证明 $\LL$ 丰沛（II，4.6.6）。我们使用（2.6.1，b），实际证明对每个凝聚 $\OO_X$-模 $\F$，存在 $N$ 使 $H^1(X,\F(n))=0$ 对 $n\ge N$ 成立，其中 $\F(n)=\F\otimes\LL^{\otimes n}$。
+
+记 $\mm$ 为 $\OO_{Y,y}$ 的极大理想。$X_y$ 为凝聚理想 $\J=\mm\OO_X$ 定义的闭子预概形，$g$ 为其嵌入。令有限型分次 $k(y)$-代数 $S=\gr(\OO_{Y,y})=\bigoplus_{j\ge0}\mm^j/\mm^{j+1}$。其拉回 $\SSS=f^*S$ 是拟凝聚有限型 $\OO_X$-代数，并被 $\J$ 零化；故若 $\SSS_y=g^*\SSS$，则 $\SSS=g_*\SSS_y$。再令
+\[
+\M_j=\mm^j\F/\mm^{j+1}\F,\qquad \M=\bigoplus_{j\ge0}\M_j=\gr(\F).
+\]
+它是被 $\J$ 零化的拟凝聚有限型 $\SSS$-模（0，10.1.1）。令 $\M'=g^*\M=\bigoplus_j\M'_j$，则 $\M=g_*\M'$；若 $\M'(n)=\M'\otimes\LL_y^{\otimes n}$，有 $\M(n)=g_*\M'(n)$。
+
+$X_y$ 固有且 $\LL_y$ 丰沛，故 $f_y$ 射影（II，5.5.4、4.6.11）。把（2.4.1，ii）用于 $\Spec(k(y)),f_y,\SSS_y,\LL_y,\M'$，得到一个 $N$，使 $n\ge N$ 时，对所有 $q>0$ 和 $j$ 均有 $H^q(X_y,\M'_j(n))=0$。因此 $H^q(X,\M_j(n))=0$。令 $\F(n)_j=(\F/\mm^{j+1}\F)(n)$，则对 $j\ge1$，
+\[
+\Ker(\F(n)_j\to\F(n)_{j-1})=\M_j(n),\qquad \F(n)_0=\M_0(n).
+\]
+由上同调正合列和归纳，$H^1(X,\F(n)_j)=0$ 对所有 $j\ge0$ 成立；由（4.2.1），$H^1(X,\F(n))=0$，完成局部环情形。
+
+\textit{II）} 回到最初记号，可设 $Y=\Spec(A)$ 仿射。因为 $f'$ 有限型、$\LL'$ 丰沛，存在 $m>0$，使 $\LL'^{\otimes m}$ 很丰沛（II，4.6.11）。将 $\LL$ 换成 $\LL^{\otimes m}$，可假设 $\LL'$ 很丰沛，并证明 $\LL|f^{-1}(U)$ 很丰沛。$f'$ 固有，故对某个 $r$ 存在闭浸入 $j:X'\to P=\Pb^r_{Y'}$，使 $\LL'\simeq j^*\OO_P(1)$；它对应满同态 $u:\OO_{X'}^{r+1}\to\LL'$（II，4.2.3），亦即生成 $\LL'$ 的 $r+1$ 个全局截面 $s'_0,\ldots,s'_r$。
+
+这些也是 $f'_*\LL'$ 的全局截面，而 $f'_*\LL'=f_*\LL\otimes_{\OO_Y}\OO_{Y,y}$。各 $s'_i$ 可写成 $s''_i/t_i$，其中 $s''_i\in\Gamma(Y,f_*\LL)$、$t_i\notin\mathfrak j_y$。因此存在 $y$ 的仿射开邻域 $V$，以及 $f_*\LL|V$ 的截面 $s_i$，使其在 $Y'$ 上的限制为 $s'_i$。这些截面定义
+\[
+v:(\OO_X|f^{-1}(V))^{r+1}\longrightarrow\LL|f^{-1}(V),
+\]
+它在纤维 $f^{-1}(y)$ 上各点满射。余核凝聚，支集闭，故在纤维的某个开邻域 $W$ 上满射。$f$ 闭，可取 $W=f^{-1}(U)$，其中 $U$ 为 $y$ 的开邻域。原文于是由（II，4.2.3）得出结论。\transnote{满同态首先构造的是到射影空间的态射，尚须验证它在缩小后的邻域上为浸入。这里可用已证（4.6.7，i）的闭浸入情形：纤维上的态射来自 $j$ 的基变换，源与射影空间均在 $U$ 上固有。原文未写出这一步，本注仅标明所需补充。}\finishproof
+
+\subsection{形式预概形的有限态射}
+\src{146--149}
+\egastatement{4.8.1}{命题}
+设 $\mathfrak Y$ 为局部诺特形式预概形，$\K$ 为定义理想，$f:\mathfrak X\to\mathfrak Y$ 为形式预概形态射。以下条件等价：
+\begin{enumerate}[label=\alph*)]
+\item $\mathfrak X$ 局部诺特，$f$ 进制（I，10.12.1）；令 $\J=f^*\K\OO_{\mathfrak X}$，则 $f_0:(\mathfrak X,\OO_{\mathfrak X}/\J)\to(\mathfrak Y,\OO_{\mathfrak Y}/\K)$ 有限。
+\item $\mathfrak X$ 局部诺特，且为某个进制 $(Y_n)$-归纳系 $(X_n)$ 的归纳极限，其中 $X_0\to Y_0$ 有限。
+\item $\mathfrak Y$ 的每个点有诺特仿射形式开邻域 $V$，使 $f^{-1}(V)$ 仿射形式，且 $\Gamma(f^{-1}(V),\OO_{\mathfrak X})$ 是有限型 $\Gamma(V,\OO_{\mathfrak Y})$-模。
+\end{enumerate}
+\eproof
+a）$\Rightarrow$b）由（I，10.12.3）立即得出。证明 b）$\Rightarrow$c）时，可设 $\mathfrak Y=\Spf(B)$，$B$ 诺特进制，$\K=\frk^\triangle$。$X_0$ 仿射，其环 $A_0$ 在 $B/\frk$ 上有限。由（I，5.1.9），每个 $X_n$ 仿射，记其环为 $A_n$，则 $m\le n$ 时 $A_m\simeq A_n/\frk^{m+1}A_n$。于是 $\mathfrak X\simeq\Spf(A)$，$A=\plim_nA_n$，由（$\OI$，7.2.9）得 c）。最后，证明 c）$\Rightarrow$a）时，可设 $\mathfrak Y=\Spf(B)$、$\mathfrak X=\Spf(A)$，$A$ 为有限 $B$-代数。$A/\frk A$ 在 $B/\frk$ 上有限，由（I，10.10.9）得 a）。\finishproof
+\egastatement{4.8.2}{定义}
+满足（4.8.1）的等价条件时，称 $f$ 为\textbf{有限态射}，或称 $\mathfrak X$ 为\textbf{有限的 $\mathfrak Y$-形式预概形}。
+\egastatement{4.8.3}{命题}
+（i）局部诺特形式预概形的闭浸入有限。
+
+（ii）两个这样的有限态射的复合有限。
+
+（iii）设 $\mathfrak X,\mathfrak Y,\mathfrak S$ 局部诺特，$f:\mathfrak X\to\mathfrak S$ 有限，$g:\mathfrak Y\to\mathfrak S$ 为态射，则 $\mathfrak X\times_{\mathfrak S}\mathfrak Y\to\mathfrak Y$ 有限。
+
+（iv）设 $\mathfrak S,\mathfrak X',\mathfrak Y'$ 局部诺特，且 $\mathfrak X'\times_{\mathfrak S}\mathfrak Y'$ 局部诺特。若 $\mathfrak X,\mathfrak Y$ 是局部诺特的 $\mathfrak S$-形式预概形，$f:\mathfrak X\to\mathfrak X'$、$g:\mathfrak Y\to\mathfrak Y'$ 是有限 $\mathfrak S$-态射，则 $f\times_{\mathfrak S}g$ 有限。
+
+（v）设 $f:\mathfrak Z\to\mathfrak Y$、$g:\mathfrak Y\to\mathfrak X$ 为局部诺特形式预概形态射，$g$ 分离且有限型。若 $g\circ f$ 有限，则 $f$ 有限。
+\eproof
+（i）显然。其余由（4.8.1，a）归结到通常预概形的对应命题（II，6.1.5）；依照（I，10.13.5）的方式，细节留给读者。\finishproof
+\egastatement{4.8.4}{推论}
+在（I，10.9.9）的条件下，若 $f$ 有限，则其到完备化的延拓 $\widehat f$ 亦有限。
+\egastatement{4.8.5}{推论}
+若 $\mathfrak X$ 在 $\mathfrak Y$ 上有限，结构态射为 $f$，则对任意开集 $U\subset\mathfrak Y$，$f^{-1}(U)$ 在 $U$ 上有限。
+\egastatement{4.8.6}{命题}
+若 $f:\mathfrak X\to\mathfrak Y$ 为局部诺特形式预概形的有限态射，则 $f_*\OO_{\mathfrak X}$ 是凝聚 $\OO_{\mathfrak Y}$-代数。
+\eproof
+将 $f$ 写成 $f_n:X_n\to Y_n$ 的归纳极限。各 $f_n$ 有限，且 $f_*\OO_{\mathfrak X}$ 是 $(f_n)_*\OO_{X_n}$ 的射影极限，即可由（I，10.10.5）得到结论。这些事实均可在 $\mathfrak Y=\Spf(B)$、$\mathfrak X=\Spf(A)$ 时验证：若 $\frk$ 是 $B$ 的定义理想，$A$ 在 $B$ 上有限，则 $A/\frk^{n+1}A$ 在 $B/\frk^{n+1}$ 上有限，而且 $A=\plim_nA/\frk^{n+1}A$。\finishproof
+反过来，有如下结果。
+\egastatement{4.8.7}{命题}
+设 $\mathfrak Y$ 局部诺特，$\A$ 为凝聚 $\OO_{\mathfrak Y}$-代数。则存在在 $\mathfrak Y$ 上有限的形式预概形 $\mathfrak X$，在 $\mathfrak Y$-同构意义下唯一，使结构态射 $f:\mathfrak X\to\mathfrak Y$ 满足 $f_*\OO_{\mathfrak X}=\A$。
+\eproof
+取定义理想 $\K$，令 $Y_n=(\mathfrak Y,\OO_{\mathfrak Y}/\K^{n+1})$、$\A_n=\A/\K^{n+1}\A$。$\A_n$ 为有限 $\OO_{Y_n}$-代数，给出有限预概形 $X_n=\Spec(\A_n)$。对 $m\le n$，典范满同态 $h_{mn}:\A_n\to\A_m$ 给出交换图
+\[
+\begin{tikzcd}
+X_m\arrow[r,"u_{nm}"]\arrow[d,"f_m"']&X_n\arrow[d,"f_n"]\\
+Y_m\arrow[r]&Y_n,
+\end{tikzcd}
+\]
+它将 $X_m$ 认同于 $X_n\times_{Y_n}Y_m$（II，1.4.6）。归纳极限 $\mathfrak X$ 局部诺特，结构态射 $f$ 有限（4.8.1；I，10.12.3.1）\transnote{此处原著将后一个引文印为 II，10.12.3.1；关于进制归纳系的对应内容在第I章，故改记 I。}，且由（4.8.6）的证明，$f_*\OO_{\mathfrak X}=\plim_n\A_n=\A$（I，10.10.6）。唯一性来自下述更一般命题。\finishproof
+\egastatement{4.8.8}{命题}
+设 $\mathfrak Y$ 局部诺特，$\mathfrak X,\mathfrak X'$ 在 $\mathfrak Y$ 上有限，结构态射分别为 $f,f'$。则有典范双射
+\[
+\Hom_{\mathfrak Y}(\mathfrak X,\mathfrak X')\simeq
+\Hom_{\OO_{\mathfrak Y}}(f'_*\OO_{\mathfrak X'},f_*\OO_{\mathfrak X}).
+\]
+\origfootnote{后一式表示 $\OO_{\mathfrak Y}$-代数同态的集合。}
+\eproof
+映射 $h\mapsto\A(h)$ 与（II，1.1.2）定义相同。局部可设 $\mathfrak Y=\Spf(B)$，则 $\mathfrak X=\Spf(A)$、$\mathfrak X'=\Spf(A')$，其中 $A,A'$ 是有限 $B$-代数，直接像分别为 $A^\triangle,A'^\triangle$。$\mathfrak Y$-态射与必然连续的 $B$-代数同态 $A'\to A$ 一一对应（I，10.2.2）；另一方面，$B$-模同态与相伴凝聚模的同态一一对应（I，10.10.2.3）。兼顾乘法便得到结论。\finishproof
+\egastatement{4.8.9}{推论}
+在（4.8.8）的典范对应中，闭浸入 $\mathfrak X\to\mathfrak X'$ 对应于满的 $\OO_{\mathfrak Y}$-代数同态 $f'_*\OO_{\mathfrak X'}\to f_*\OO_{\mathfrak X}$。
+\eproof
+仍为局部问题，归结到形式预概形闭浸入的定义（I，10.14.2）。\finishproof
+\egastatement{4.8.10}{推论}
+在（4.8.1）的记号及假设下，进制态射 $f$ 为闭浸入，当且仅当 $f_0$ 为通常预概形的闭浸入。
+\eproof
+由（4.8.9）及凝聚模同态的满射判据（I，10.11.5）立即得出。\finishproof
+\egastatement{4.8.11}{命题}
+局部诺特形式预概形态射 $f:\mathfrak X\to\mathfrak Y$ 有限，当且仅当它固有，且所有底空间纤维 $f^{-1}(y)$ 有限。
+\eproof
+由定义（3.4.1、4.8.2），归结到 $f_0$ 的同一命题，即（4.4.2）。\finishproof\par
+
+% ---- END c3_s04e.tex ----
+% ---- BEGIN c3_s05a.tex ----
+\section{凝聚代数层的一个存在性定理}
+\subsection{定理的陈述}
+\src{149--151}
+\egapar{5.1.1}
+设 $A$ 为诺特进制环，$\frj$ 为其定义理想，故 $A$ 对 $\frj$-进制拓扑分离完备。若 $Y=\Spec(A)$，则 $\Spf(A)$ 认同于 $Y$ 沿 $Y'=V(\frj)$ 的完备化 $\mathfrak Y$（I，10.10.1）。设 $X$ 为有限型通常 $Y$-预概形，结构态射为 $f$。以 $\mathfrak X$ 表示沿 $X'=f^{-1}(Y')$ 的完备化，也就是 $\mathfrak Y$-形式预概形 $X\times_Y\mathfrak Y$；以 $\widehat f:\mathfrak X\to\mathfrak Y$ 表示 $f$ 的完备化。对于凝聚 $\OO_X$-模 $\F$，记其完备化为 $\widehat\F=\F_{/X'}$。
+\egastatement{5.1.2}{命题}
+在（5.1.1）的条件下，若凝聚 $\OO_X$-模 $\F$ 的支集在 $Y$ 上固有，则（4.1.4）的典范同态
+\[
+\rho_n:H^n(X,\F)\longrightarrow H^n(\mathfrak X,\widehat\F)
+\]
+都是同构。
+\eproof
+$H^n(X,\F)$ 为有限型 $A$-模（3.2.4），故已对 $\frj$-预进制拓扑分离完备（$\OI$，7.3.6）；于是应用（4.1.10）即可。\finishproof
+对于凝聚模的任意短正合列，这些典范同构与上同调连接同态交换（0，12.1.6；I，10.8.9）。
+\egastatement{5.1.3}{推论}
+设 $\F,\G$ 为凝聚 $\OO_X$-模，支集的交在 $Y$ 上固有。则典范同态
+\begin{equation}\tag{5.1.3.1}
+\Hom_{\OO_X}(\F,\G)\longrightarrow
+\Hom_{\OO_{\mathfrak X}}(\widehat\F,\widehat\G),\qquad u\longmapsto\widehat u
+\end{equation}
+为同构。若 $f$ 还闭，则 $u$ 单射（分别地，满射）当且仅当 $\widehat u$ 单射（分别地，满射）。
+\eproof
+第一断言由（4.5.3）及同态模已完备得到。由（I，10.8.14），$\widehat u$ 单射或满射，当且仅当 $u$ 在 $X'$ 的某个邻域中如此；于是第二断言来自以下引理。\finishproof
+\egastatement{5.1.3.1}{引理}
+在（5.1.1）的条件下，若 $f$ 闭，则 $X'$ 在 $X$ 中的每个邻域都等于 $X$。
+\eproof
+可先归结到 $f(X)=Y$。事实上，$f(X)=Z$ 闭；把 $f$ 换成 $f_{\red}$，可设 $X,Y$ 约化，再把 $Y$ 换成以 $Z$ 为底空间的约化闭子预概形（I，5.2.2）。因为 $A$ 中每个理想闭，其商仍为诺特进制环，这种替换不改变所需条件。此时 $f(X')=Y'$。若开邻域 $V$ 包含 $X'$，则闭集 $f(X-V)$ 与 $Y'$ 不交；由于 $\frj$ 包含在 $A$ 的根基中（I，1.1.15；$\OI$，7.1.10），除非 $X-V=\varnothing$，这是不可能的。\finishproof
+
+对于支集在 $Y$ 上固有的凝聚模，（5.1.3）表示完备化函子 $\F\mapsto\widehat\F$ 是到凝聚 $\OO_{\mathfrak X}$-模范畴的全忠实函子，因此把原范畴等价到后者的一个满子范畴（0，8.1.6）。存在性定理将说明，当 $X$ 在 $Y$ 上固有时，这个满子范畴就是全部凝聚模范畴。确切地说：
+\egastatement{5.1.4}{定理}
+设 $A$ 为诺特进制环，$Y=\Spec(A)$，$\frj$ 为定义理想，$Y'=V(\frj)$，$f:X\to Y$ 分离且有限型，$X'=f^{-1}(Y')$。令 $\mathfrak Y=\Spf(A)$、$\mathfrak X=X_{/X'}$，$\widehat f$ 为 $f$ 的完备化。则函子 $\F\mapsto\widehat\F$ 给出如下范畴等价：一边是支集在 $\Spec(A)$ 上固有的凝聚 $\OO_X$-模，另一边是支集在 $\Spf(A)$ 上固有的凝聚 $\OO_{\mathfrak X}$-模。
+
+结合（5.1.3），也就是：
+\egastatement{5.1.5}{推论}
+一个 $\OO_{\mathfrak X}$-模同构于某个支集在 $\Spec(A)$ 上固有的凝聚 $\OO_X$-模的完备化，当且仅当它凝聚且支集在 $\Spf(A)$ 上固有。
+最重要的特殊情形是：
+\egastatement{5.1.6}{推论}
+若 $X$ 在 $Y=\Spec(A)$ 上固有，则完备化函子给出凝聚 $\OO_X$-模与凝聚 $\OO_{\mathfrak X}$-模范畴的等价。
+\egastatement{5.1.7}{附释}
+由形式预概形上凝聚层的刻画（I，10.11.3），令 $Y_n=\Spec(A/\frj^{n+1})$、$X_n=X\times_YY_n$，则上述凝聚代数层的给定等价于一个凝聚 $\OO_{X_n}$-模的射影系 $(\F_n)$，使 $m\le n$ 时
+\[
+\F_m=\F_n\otimes_{\OO_{Y_n}}\OO_{Y_m}
+=\F_n/\frj^{m+1}\F_n,
+\]
+而 $\Supp(\F_0)$ 在 $Y_0$ 上固有。由（I，10.11.4），同态同样解释为这些射影系的同态。
+
+在当时已知的全部应用中，$A$ 实际上是诺特进制局部环，各 $Y_n$ 是阿廷局部环的谱。因此，本节及前几节的结果，在很大程度上把诺特进制局部环上的代数几何归结到阿廷局部环上的代数几何。\transnote{原文此句描述的是作者所考虑的应用。一般“局部进制环”并不单凭局部性保证每个 $A/\frj^{n+1}$ 阿廷；这里相应的应用取极大理想进制，或至少取极大理想准素的定义理想。}
+\egastatement{5.1.8}{推论}
+在（5.1.4）的条件下，$Z\mapsto\widehat Z=Z_{/(Z\cap X')}$ 给出以下集合之间的双射：$X$ 中在 $Y$ 上固有的闭子预概形，与 $\mathfrak X$ 中在 $\mathfrak Y$ 上固有的闭形式子预概形。
+\eproof
+闭形式子预概形写作 $(T,(\OO_{\mathfrak X}/\J)|T)$，其中 $\J$ 凝聚理想（I，10.14.2）。若 $T$ 固有，则由（5.1.4），$\OO_{\mathfrak X}/\J\simeq\widehat\F$，其中 $\F$ 为固有支集的凝聚模。由（5.1.3），典范商同态是某个满同态 $u:\OO_X\to\F$ 的完备化。故 $\F=\OO_X/\I$，$\I$ 为凝聚理想，而且 $\J=\widehat\I$（I，10.8.8）；由（I，10.14.7）得到结论。\finishproof
+
+\subsection{存在性定理的证明：射影与拟射影情形}
+\src{151--154}
+\egapar{5.2.1}
+在（5.1.4）的条件下，暂称凝聚 $\OO_{\mathfrak X}$-模\textbf{可代数化}，是指它同构于某个固有支集的凝聚 $\OO_X$-模的完备化。
+\egastatement{5.2.2}{引理}
+若 $\mathfrak F,\mathfrak F'$ 可代数化，则任意同态 $u:\mathfrak F\to\mathfrak F'$ 的核、像及余核均可代数化。
+\eproof
+写 $\mathfrak F=\widehat\F$、$\mathfrak F'=\widehat\G$。由（5.1.3），$u=\widehat v$，其中 $v:\F\to\G$。完备化函子正合，故 $\Ker u\simeq(\Ker v)^\wedge$。$\Ker v$ 的支集包含于 $\F$ 的支集，故固有，得到核的可代数化。像与余核同理。\finishproof
+\egastatement{5.2.3}{命题}
+设 $A$ 为诺特进制环，$\frj$ 为定义理想，$\mathfrak Y=\Spf(A)$，$f:\mathfrak X\to\mathfrak Y$ 为固有形式预概形态射。令 $Y_k=\Spec(A/\frj^{k+1})$、$X_k=\mathfrak X\times_{\mathfrak Y}Y_k$；对任意 $\OO_{\mathfrak X}$-模 $\F$，令 $\F_k=\F/\frj^{k+1}\F$。设 $\LL$ 可逆，且 $\LL_0=\LL/\frj\LL$ 在 $X_0$ 上丰沛，令 $\F(n)=\F\otimes\LL^{\otimes n}$。则对每个凝聚 $\F$，存在 $n_0$，使所有 $n\ge n_0$ 满足：
+
+（i）$H^0(\mathfrak X,\F(n))\to H^0(\mathfrak X,\F_k(n))$ 对所有 $k\ge0$ 满射；
+
+（ii）$H^q(\mathfrak X,\F(n))=0$ 对所有 $q>0$ 成立。
+\eproof
+$\mathfrak X$ 与 $X_0$ 底空间相同。$\M_k=\frj^k\F/\frj^{k+1}\F$ 被 $\frj$ 零化，可看作凝聚 $\OO_{X_0}$-模；令 $\M_k(n)=\M_k\otimes\LL_0^{\otimes n}$，则 $\M_k(n)=\frj^k\F(n)/\frj^{k+1}\F(n)$。因为 $f_0:X_0\to Y_0$ 固有、$\LL_0$ 丰沛，$f_0$ 射影（II，5.5.4）。令 $S=\gr_{\frj}(A)$；$A$ 诺特，故 $S$ 有限型。其拉回 $\SSS=f_0^*S$ 拟凝聚有限型，而 $\M=\bigoplus_k\M_k$ 是拟凝聚有限型分次 $\SSS$-模，因为 $\M_0$ 凝聚且生成 $\M$。由（2.4.1，ii），存在 $n_0$，使
+\begin{equation}\tag{5.2.3.1}
+H^q(X_0,\M_k(n))=0\qquad(q>0,\ n\ge n_0,\ k\ge0).
+\end{equation}
+把 $\M_k(n)$ 看作 $\mathfrak X$ 上的模，仍有同样消失。对
+\[
+0\to\frj^{k-1}\F(n)/\frj^k\F(n)\to
+\frj^h\F(n)/\frj^k\F(n)\to
+\frj^h\F(n)/\frj^{k-1}\F(n)\to0
+\]
+应用上同调正合列，并对 $k-h$ 归纳，得到
+\begin{equation}\tag{5.2.3.2}
+H^q(\mathfrak X,\frj^h\F(n)/\frj^k\F(n))=0
+\quad(0\le h<k,\ q>0,\ n\ge n_0).
+\end{equation}
+特别地，$h=0$ 给出
+\begin{equation}\tag{5.2.3.3}
+H^q(\mathfrak X,\F_k(n))=0\qquad(q>0,\ n\ge n_0,\ k\ge0).
+\end{equation}
+正合列的另一段为
+\begin{equation}\tag{5.2.3.4}
+H^0(\mathfrak X,\F_h(n))\to H^0(\mathfrak X,\F_k(n))
+\to H^1(\mathfrak X,\frj^{k+1}\F(n)/\frj^{h+1}\F(n))=0
+\end{equation}
+（$h\ge k$），故
+\begin{equation}\tag{5.2.3.5}
+H^0(\mathfrak X,\F_h(n))\longrightarrow H^0(\mathfrak X,\F_k(n))
+\end{equation}
+满射。因此对每个 $q$，$(H^q(\mathfrak X,\F_k(n)))_k$ 满足（ML）。又 $\mathfrak X$ 的仿射形式开集在各 $X_k$ 上仿射，其高阶上同调消失，而零阶截面间的商映射满射。由（0，13.3.1），
+\[
+H^q(\mathfrak X,\F(n))\simeq\plim_kH^q(\mathfrak X,\F_k(n)).
+\]
+$q>0$ 时右端为零，得到（ii）；$q=0$ 时，因过渡映射满射，极限到每一项亦满射，得到（i）。\finishproof
+\egastatement{5.2.4}{推论}
+在（5.2.3）的假设下，对于每个凝聚 $\OO_{\mathfrak X}$-模 $\F$，存在 $N$，使 $n\ge N$ 时 $\F(n)$ 由全局截面生成。换言之，$\F$ 同构于某个 $(\LL^{\otimes(-n)})^k$ 的商。
+\eproof
+$X_0$ 诺特、$\LL_0$ 丰沛，故充分大的 $n$ 使 $\F_0(n)$ 由全局截面生成（II，4.5.5）。再令 $n$ 充分大，使 $\Gamma(\mathfrak X,\F(n))\to\Gamma(\mathfrak X,\F_0(n))$ 满射（5.2.3）。可取有限个 $\F(n)$ 的截面，其像生成 $\F_0(n)$（$\OI$，5.2.3）。$\frj$ 在每个茎环中都包含于极大理想，故由 Nakayama 引理，这些截面生成 $\F(n)$。\finishproof
+\egapar{5.2.5}
+\textbf{存在性定理的证明：射影情形。}
+采用（5.1.4）的记号，设 $f$ 射影，取丰沛 $\OO_X$-模 $\LL$。各 $X_k=X\times_YY_k$ 也是 $\mathfrak X$ 的相应闭子预概形。若 $\LL'$ 为 $\LL$ 的完备化，则 $\LL'_0=\LL/\frj\LL$ 在 $X_0$ 上丰沛（II，4.6.13，i bis）。故可对任意凝聚 $\OO_{\mathfrak X}$-模 $\mathfrak F$ 应用（5.2.4），把它写成某个 $\mathfrak G=(\LL'^{\otimes(-n)})^k$ 的商。$\mathfrak G$ 是 $(\LL^{\otimes(-n)})^k$ 的完备化（I，10.8.10），故可代数化。取满射 $u:\mathfrak G\to\mathfrak F$，其核凝聚；再次应用同一结果，存在可代数化模 $\mathfrak H$ 及同态 $v:\mathfrak H\to\mathfrak G$，使 $\Im v=\Ker u$。于是 $\mathfrak F=\Coker v$，由（5.2.2）可代数化。
+\egapar{5.2.6}
+\textbf{存在性定理的证明：拟射影情形。}
+若 $f$ 拟射影，可把 $X$ 认同为某个射影 $Y$-预概形 $g:Z\to Y$ 的开子预概形。令 $Z'=g^{-1}(Y')$，则 $X'=X\cap Z'$，而 $\mathfrak X$ 是 $\mathfrak Z=Z_{/Z'}$ 在开集 $X\cap Z'$ 上的诱导形式预概形（I，10.8.5）。
+
+取固有支集 $T'$ 的凝聚 $\OO_{\mathfrak X}$-模 $\mathfrak F$。按定义，$T'$ 作为 $X'$ 的子集在 $Y'$ 上固有，因而在 $Y$ 上固有，故在 $Z'$ 中闭（II，5.4.10）。于是可将 $\mathfrak F$ 与 $\mathfrak Z-T'$ 上的零层粘合成凝聚 $\OO_{\mathfrak Z}$-模 $\mathfrak F'$；二者在交集 $\mathfrak X-T'$ 上相同。由射影情形，$\mathfrak F'=\widehat\G$，其中 $\G$ 为凝聚 $\OO_Z$-模。设 $T=\Supp(\G)$，则 $T'=T\cap Z'$（I，10.8.12）。把 $g$ 限制到以 $T$ 为底空间的约化闭子预概形，记为 $h$；则 $T'=h^{-1}(Y')$，而 $X\cap T$ 是 $T$ 中包含 $T'$ 的开集。$h$ 固有，故闭，由（5.1.3.1）知 $X\cap T=T$，亦即 $T\subset X$。$T$ 在 $Z$ 中闭，因此在 $Y$ 上固有。令 $\F=\G|X$，则其完备化是 $\widehat\G$ 在 $\mathfrak X$ 上的限制，即 $\mathfrak F$，从而完成证明。\par
+
+% ---- END c3_s05a.tex ----
+% ---- BEGIN c3_s05b.tex ----
+\subsection{存在性定理的证明：一般情形}
+\src{154--156}
+\egastatement{5.3.1}{引理}
+在（5.1.4）的条件下，若凝聚 $\OO_{\mathfrak X}$-模的正合列 $0\to\mathfrak H\to\mathfrak F\to\mathfrak G\to0$ 中，$\mathfrak H,\mathfrak G$ 可代数化，则 $\mathfrak F$ 可代数化。
+\eproof
+写 $\mathfrak G=\widehat\B$、$\mathfrak H=\widehat\C$，其中 $\B,\C$ 凝聚且支集在 $Y$ 上固有。此扩张定义 $\Ext^1_{\OO_{\mathfrak X}}(\mathfrak X;\mathfrak G,\mathfrak H)$ 中的元素（0，12.3.2），该模由（4.5.2）典范地同构于 $\Ext^1_{\OO_X}(X;\B,\C)$。故存在凝聚模正合列 $0\to\C\to\A\to\B\to0$，使其扩张类映到给定扩张类。依定义并利用（I，10.8.8，ii），这表示 $\mathfrak F\simeq\widehat\A$。又 $\Supp(\A)$ 包含在另外两个支集的并中，故固有，引理成立。\finishproof
+\egastatement{5.3.2}{推论}
+在（5.1.1）的条件下，设 $u:\mathfrak F\to\mathfrak G$ 为凝聚 $\OO_{\mathfrak X}$-模同态。若 $\mathfrak G,\Ker u,\Coker u$ 可代数化，则 $\mathfrak F$ 也可代数化。
+\eproof
+由（5.2.2）用于 $\mathfrak G\to\Coker u$，得 $\Im u$ 可代数化；再对 $0\to\Ker u\to\mathfrak F\to\Im u\to0$ 应用（5.3.1）。\finishproof
+\egastatement{5.3.3}{引理}
+在（5.1.1）的条件下，设 $h:Z\to Y$ 有限型，$\mathfrak Z$ 为沿 $h^{-1}(Y')$ 的完备化，$g:Z\to X$ 为固有 $Y$-态射，$\widehat g:\mathfrak Z\to\mathfrak X$ 为其完备化。则可代数化 $\OO_{\mathfrak Z}$-模 $\mathfrak F$ 的直接像 $\widehat g_*\mathfrak F$ 可代数化。
+\eproof
+若 $\mathfrak F=\widehat\F$，则第一比较定理（4.1.5）给出 $\widehat g_*\mathfrak F\simeq(g_*\F)^\wedge$，其支集仍固有。\finishproof
+\egastatement{5.3.4}{引理}
+设 $X$ 为诺特通常概形，$X'\subset X$ 为闭集，$f:Z\to X$ 固有，$Z'=f^{-1}(X')$，$\mathfrak X=X_{/X'}$、$\mathfrak Z=Z_{/Z'}$，$\widehat f$ 为完备化。设 $\M\subset\OO_X$ 为凝聚理想，令 $U=X-\Supp(\OO_X/\M)$，并假设 $f^{-1}(U)\to U$ 为同构。则对每个凝聚 $\OO_{\mathfrak X}$-模 $\mathfrak F$，存在 $n>0$，使典范同态
+\[
+\rho_{\mathfrak F}:\mathfrak F\longrightarrow
+\widehat f_*(\widehat f^{\,*}\mathfrak F)
+\]
+的核及余核都被 $\widehat\M^{\,n}$ 零化。
+\eproof
+可设 $X=\Spec(B)$，$B$ 诺特，$X'=V(\frk)$。先归结到 $B$ 为诺特进制环、$\frk$ 为定义理想。令 $B_1$ 为 $B$ 的 $\frk$-预进制分离完备化，$\frk_1=\frk B_1$，$X_1=\Spec(B_1)$，$h:X_1\to X$ 为典范态射，$X'_1=h^{-1}(X')=V(\frk_1)$。令 $Z_1=Z\times_XX_1$、$f_1=f_{(X_1)}$，它固有。把 $X_1,Z_1$ 分别沿 $X'_1$ 及其逆像完备化，得到 $\mathfrak X_1,\mathfrak Z_1$ 和 $\widehat f_1$。
+
+$h$ 的完备化 $\widehat h:\mathfrak X_1\to\mathfrak X$ 是由 $B_1$ 的恒等给出的同构；故相应 $\mathfrak Z_1\to\mathfrak Z$ 也为同构，且它们认同 $\widehat f_1,\widehat f$。令 $\M_1=h^*\M\OO_{X_1}$，则
+\[
+\Supp(\OO_{X_1}/\M_1)=h^{-1}(\Supp(\OO_X/\M))
+\]
+（I，9.1.13），故 $U_1=h^{-1}(U)$，而 $f_1^{-1}(U_1)\to U_1$ 为同构。两理想的完备化经 $\widehat h$ 认同（I，10.9.5）。因此全部假设在这一替换后保持，可以设 $B$ 已进制完备。
+
+这时 $\mathfrak X=\Spf(B)$，$\mathfrak F=N^\triangle$，其中 $N$ 为有限型 $B$-模。令 $\F=\wt N$，则 $\mathfrak F=\widehat\F$，且
+\[
+\widehat f^{\,*}\mathfrak F=(f^*\F)^\wedge,
+\qquad \widehat f_*((f^*\F)^\wedge)\simeq(f_*f^*\F)^\wedge
+\]
+（I，10.9.5；4.1.5）。由（5.1.3），$\rho_{\mathfrak F}$ 就是 $\rho_\F:\F\to f_*f^*\F$ 的完备化。其核 $\B$ 和余核 $\C$ 凝聚，并在 $U$ 上为零，故存在 $n>0$ 使 $\M^n\B=\M^n\C=0$（I，9.3.4）。完备化后得到 $\widehat\M^{\,n}\widehat\B=\widehat\M^{\,n}\widehat\C=0$（I，10.8.8、10.8.10），引理得证。\finishproof
+\egapar{5.3.5}
+\textbf{存在性定理证明的完成。}
+在（5.1.4）的条件下，使用诺特归纳原理，假设对于 $X$ 的每个底空间为真闭子集的闭子预概形 $T$，定理已成立；其完备化取沿 $T\cap X'$ 的完备化。可设 $X$ 非空。$f$ 分离且有限型，由 Chow 引理（II，5.6.1），存在 $Y$-概形 $Z$ 和 $Y$-态射 $g:Z\to X$，使结构态射 $h:Z\to Y$ 拟射影，$g$ 射影满射，而且存在非空开集 $U\subset X$，使 $g^{-1}(U)\to U$ 为同构。
+
+取定义底空间 $X-U$ 的凝聚理想 $\M$。设 $\mathfrak F$ 为凝聚 $\OO_{\mathfrak X}$-模，其支集 $E$ 在 $\mathfrak Y$ 上固有。令 $\mathfrak Z$ 为 $Z$ 沿 $h^{-1}(Y')$ 的完备化，$\widehat g$ 为完备化态射。$\widehat g^{\,*}\mathfrak F$ 凝聚，支集包含在 $\widehat g^{-1}(E)$ 中，因 $\widehat g$ 固有，故该支集在 $\mathfrak Y$ 上固有。$h$ 拟射影，由（5.2.6），$\widehat g^{\,*}\mathfrak F$ 可代数化；由（5.3.3），$\widehat g_*\widehat g^{\,*}\mathfrak F$ 亦可代数化。
+
+现在应用（5.3.4）：$\rho_{\mathfrak F}$ 的核 $\mathfrak B$ 和余核 $\mathfrak C$ 被 $\widehat\M^{\,n}$ 零化。\transnote{原文此处引用（5.2.4），但用于零化核与余核的是紧前的引理（5.3.4）。}
+令 $T$ 为 $\M^n$ 定义的闭子预概形，$j:T\to X$ 为嵌入，$\widehat j:\mathfrak T\to\mathfrak X$ 为其完备化。因此
+\[
+\mathfrak B=\widehat j_*\widehat j^{\,*}\mathfrak B,
+\qquad \mathfrak C=\widehat j_*\widehat j^{\,*}\mathfrak C.
+\]
+$U$ 非空，故 $T$ 的底空间为真闭子集，由归纳假设，$\widehat j^{\,*}\mathfrak B$、$\widehat j^{\,*}\mathfrak C$ 可代数化；再由（5.3.3），$\mathfrak B,\mathfrak C$ 可代数化。最后应用（5.3.2），得到 $\mathfrak F$ 可代数化。证毕。
+
+\subsection{应用：通常概形态射与形式概形态射的比较；可代数化形式概形}
+\src{156--159}
+\egastatement{5.4.1}{定理}
+设 $A$ 为诺特进制环，$\frj$ 为定义理想，$S=\Spec(A)$，$S'=V(\frj)$。设 $u:X\to S$ 固有，$v:Y\to S$ 分离且有限型，并令 $\mathfrak S,\mathfrak X,\mathfrak Y$ 分别为沿 $S',u^{-1}(S'),v^{-1}(S')$ 的完备化。对 $S$-态射 $f:X\to Y$，记完备化为 $\widehat f$。则 $f\mapsto\widehat f$ 是双射
+\[
+\Hom_S(X,Y)\simeq\Hom_{\mathfrak S}(\mathfrak X,\mathfrak Y).
+\]
+\eproof
+先证单射。若 $\widehat f=\widehat g$，则由（I，10.9.4），$f,g$ 在 $X'=u^{-1}(S')$ 的某个开邻域 $V$ 上相同。$u$ 闭，由（5.1.3.1）知 $V=X$，故 $f=g$。
+
+再证满射。取 $\mathfrak S$-态射 $h:\mathfrak X\to\mathfrak Y$。令 $Z=X\times_SY$，典范投影为 $p:Z\to X$、$q:Z\to Y$。它在 $S$ 上有限型，故诺特。其沿 $Z'=p^{-1}(u^{-1}(S'))$ 的完备化 $\mathfrak Z$ 典范地等于 $\mathfrak X\times_{\mathfrak S}\mathfrak Y$，投影对应 $\widehat p,\widehat q$（I，10.9.7）。$Y$ 在 $S$ 上分离，故 $\mathfrak Y$ 在 $\mathfrak S$ 上分离（I，10.15.7）；图态射 $\Gamma_h=(1_{\mathfrak X},h):\mathfrak X\to\mathfrak Z$ 为闭浸入（I，10.15.4）。设它的像为闭形式子预概形 $\mathfrak T$，嵌入为 $j$，写 $\Gamma_h=j\circ w$，其中 $w:\mathfrak X\to\mathfrak T$ 为同构，其逆为 $\widehat p\circ j$。
+
+$\mathfrak T$ 同构于 $\mathfrak X$，故在 $\mathfrak S$ 上固有。由（5.1.8），存在在 $S$ 上固有的闭子预概形 $T\subset Z$，使 $\mathfrak T=\widehat T$，且 $j=\widehat i$，其中 $i:T\to Z$ 为嵌入。$p\circ i:T\to X$ 的完备化为同构；由（4.6.8），并用 $S$ 是 $S'$ 的唯一邻域，可知 $p\circ i$ 本身为同构。设其逆为 $g:X\to T$，令 $f=q\circ i\circ g$。则 $\Gamma_f=i\circ g$，而
+\[
+\widehat{\Gamma_f}=\widehat i\circ\widehat g=j\circ w=\Gamma_h.
+\]
+又 $\widehat{\Gamma_f}=\Gamma_{\widehat f}$（I，10.9.8），故 $h=\widehat f$。\finishproof
+
+因此，对每个诺特进制环 $A$，完备化是从 $\Spec(A)$ 上固有概形范畴到 $\Spf(A)$ 上固有形式概形范畴的全忠实函子（0，8.1.6）。其像中对象称为\textbf{可代数化形式概形}。对于这样的 $\mathfrak X$，存在 $\Spec(A)$ 上固有的通常概形 $X$，其完备化同构于 $\mathfrak X$；连同这一认同，$X$ 在唯一同构意义下确定。
+\egastatement{5.4.2}{附释}
+令 $S_n=\Spec(A/\frj^{n+1})$、$X_n=X\times_SS_n$、$Y_n=Y\times_SS_n$。由（5.4.1）及（I，10.12.3），给定 $S$-态射 $f:X\to Y$，等价于给定 $S_n$-态射 $f_n:X_n\to Y_n$ 的一个进制 $(S_n)$-归纳系（I，10.12.2）。
+\egastatement{5.4.3}{注记}
+与存在性定理（5.1.6）可能给人的印象不同，存在 $\Spf(A)$ 上固有但不可代数化的形式概形，正如存在不来自复代数簇的紧解析空间一样。我们以后将在“模理论”中遇到这样的形式概形；在基域为 $\mathbf C$ 时，该理论恰研究完备代数簇的复结构的无穷小变化，而这种变化可以产生非代数的解析簇。
+\egastatement{5.4.4}{命题}
+设 $A$ 为诺特进制环，$\mathfrak S=\Spf(A)$，$g:\mathfrak X\to\mathfrak S$、$h:\mathfrak Y\to\mathfrak S$ 为固有形式概形态射，$f:\mathfrak X\to\mathfrak Y$ 为 $\mathfrak S$-态射。若 $f$ 有限且 $\mathfrak Y$ 可代数化，则 $\mathfrak X$ 可代数化。
+\eproof
+首先 $f$ 已固有；若其纤维有限，便足以保证有限性（4.8.11）。由（4.8.6），$\mathfrak B=f_*\OO_{\mathfrak X}$ 为凝聚 $\OO_{\mathfrak Y}$-代数。写 $\mathfrak Y=\widehat Y$，其中 $w:Y\to\Spec(A)$ 为固有通常概形，则存在凝聚 $\OO_Y$-代数 $\B$，使 $\mathfrak B=\widehat\B$。令 $X=\Spec(\B)$、$u:X\to Y$ 为结构态射。由（4.8.7）的构造，$\widehat X\simeq\mathfrak X$，且 $\widehat u$ 对应 $f$；只须在 $Y$ 仿射时核对即可。\finishproof
+（5.1.8）是本命题的特殊情形。
+\egastatement{5.4.5}{定理}
+设 $A$ 为诺特进制环，$\frj$ 为定义理想，$S=\Spec(A)$、$\mathfrak S=\Spf(A)$，$f:\mathfrak X\to\mathfrak S$ 为固有形式概形态射。令 $S_k=\Spec(A/\frj^{k+1})$、$X_k=\mathfrak X\times_{\mathfrak S}S_k$，并对模 $\F$ 写 $\F_k=\F/\frj^{k+1}\F$。若可逆 $\OO_{\mathfrak X}$-模 $\LL$ 的 $\LL_0$ 在 $X_0$ 上丰沛，则 $\mathfrak X$ 可代数化；若固有 $S$-概形 $X$ 的完备化同构于 $\mathfrak X$，则存在丰沛 $\OO_X$-模 $\M$，使 $\LL\simeq\widehat\M$，因此 $X$ 在 $S$ 上射影。
+\eproof
+对 $\F=\OO_{\mathfrak X}$ 应用（5.2.3），得到充分大的 $n$ 使 $\Gamma(\mathfrak X,\LL^{\otimes n})\to\Gamma(X_0,\LL_0^{\otimes n})$ 满射。再取 $n$ 使 $\LL_0^{\otimes n}$ 对 $S_0$ 很丰沛（II，4.5.10）。因 $f_0$ 固有，右端为有限型 $A$-模（3.2.1），故可取左端的有限型 $A$-子模 $E$，其像为整个右端。
+
+对 $k\ge0$，嵌入 $E\to\Gamma(\mathfrak X,\LL^{\otimes n})$ 给出
+\[
+u_k:E/\frj^{k+1}E\longrightarrow\Gamma(X_k,\LL_k^{\otimes n}).
+\]
+因为 $(f_k)_*\LL_k^{\otimes n}$ 拟凝聚，且其在 $S_k$ 上的截面等于上述截面，得到层同态 $\wt u_k$，进而得到
+\[
+\wt u_k^\sharp:f_k^*((E/\frj^{k+1}E)^\sim)\longrightarrow\LL_k^{\otimes n}.
+\]
+记左端为 $\G_k$，则 $\G_0=\G_k/\frj\G_k$，且 $\wt u_0^\sharp$ 是 $\wt u_k^\sharp$ 的模 $\frj$ 商。由 $E$ 的选取及很丰沛性，$\wt u_0^\sharp$ 是相应的满评价同态（II，4.4.3）。由 Nakayama 引理，各 $\wt u_k^\sharp$ 都满射，故各自定义 $S_k$-态射
+\[
+g_k:X_k\longrightarrow P_k=\Pb(E/\frj^{k+1}E)
+\]
+（II，4.2.2）。对 $h\le k$，$P_h=P_k\times_{S_k}S_h$；各同态间的相容关系使 $(g_k)$ 构成进制归纳系（II，4.2.10）。因此得到形式概形态射 $g:\mathfrak X\to\mathfrak P$，其中 $\mathfrak P=\widehat P$、$P=\Pb(E)$。
+
+因为 $\LL_0^{\otimes n}$ 很丰沛，$g_0$ 为闭浸入，故 $g$ 为闭浸入（4.8.10）；由（5.1.8），$\mathfrak X$ 可代数化。存在性定理（5.1.6）给出 $\LL\simeq\widehat\M$，其中 $\M$ 为可逆 $\OO_X$-模。于是 $\LL^{\otimes n}$ 是 $\M^{\otimes n}$ 的完备化，各 $\wt u_k^\sharp$ 定义唯一同态
+\[
+v:f_X^*\wt E\longrightarrow\M^{\otimes n}
+\]
+（5.1.7），其中 $f_X:X\to S$ 为结构态射。由（I，10.11.5），$\widehat v$ 满射；由（5.1.3），$v$ 满射。其定义的 $r:X\to P$ 的完备化是 $g$；$g$ 闭浸入，故由（5.1.8）、（5.4.1），$r$ 也闭浸入。因此 $\M^{\otimes n}$ 很丰沛（II，4.4.6），$\M$ 丰沛（II，4.5.10）。\finishproof
+\egastatement{5.4.6}{注记}
+设 $A$ 为诺特进制环，$\mathfrak S=\Spf(A)$，$f:\mathfrak X\to\mathfrak S$ 为固有形式概形态射。设 $\N\subset\OO_{\mathfrak X}$ 为凝聚理想，使每个仿射形式开集 $U$ 上，$\Gamma(U,\N)$ 为 $\Gamma(U,\OO_{\mathfrak X})$ 的幂零根。其存在性容易由（I，10.10.2）及环同态保持幂零元素得到。令 $\mathfrak X'$ 为 $\N$ 定义的闭形式子概形。若 $\mathfrak X'$ 可代数化，$\mathfrak X$ 是否也可代数化，是一个值得研究的问题。若能对结构层 $\OO_X$（通常预概形或形式预概形）被平方为零理想扩张的情形作分类，例如用上同调性质的不变量分类，或许就能解决此问题。换言之，原文在此考虑带平方为零理想 $\J$ 的代数层 $\A$，使 $\OO_X\simeq\A/\J$。\transnote{本注记中的研究问题及“以后”等措辞均保留1961年原著的时间语境，不表示对现今研究状况的判断。}
+
+\subsection{某些概形的一个分解}
+\src{159}
+\egastatement{5.5.1}{命题}
+设 $A$ 为诺特进制环，$\frj$ 为定义理想，$Y=\Spec(A)$，$f:X\to Y$ 分离且有限型。令 $Y_0=\Spec(A/\frj)$、$X_0=X\times_YY_0$。若 $Z_0$ 为 $X_0$ 中在 $Y_0$ 上固有的开子集，则存在 $X$ 的开闭子集 $Z$，使 $Z$ 在 $Y$ 上固有，且 $Z\cap X_0=Z_0$。
+\eproof
+取 $X$ 的开集 $T$，使 $T\cap X_0=Z_0$，以 $\mathfrak T$ 表示 $T$ 沿 $Z_0$ 的完备化。其结构层的支集为 $Z_0$，在 $Y_0$ 上固有，故 $\mathfrak T$ 在 $\mathfrak Y=\Spf(A)$ 上固有（3.4.1）。由（5.1.8），存在 $T$ 中在 $Y$ 上固有的闭子概形 $Z$，其嵌入 $i:Z\to T$ 的完备化是同构 $\widehat Z\to\mathfrak T$。由（4.6.8），存在 $Z_0$ 在 $T$ 中的开邻域 $V$，使 $i^{-1}(V)\to V$ 为同构。而 $i^{-1}(V)$ 是 $Z$ 中包含 $Z_0$ 的邻域，由（5.1.3.1）等于整个 $Z$。故 $Z$ 在 $T$ 中开，从而在 $X$ 中开，证明了结论。\transnote{这里的闭性还可由 $Z$ 在 $Y$ 上固有及 $X$ 在 $Y$ 上分离得出；此句为译者补充说明。}\finishproof
+\egastatement{5.5.2}{推论}
+若 $X_0$ 在 $Y_0$ 上固有，则 $X$ 为两个不交开集 $Z,Z'$ 的并，其中 $Z$ 在 $Y$ 上固有且包含 $X_0$；此外，$X$ 中每个在 $Y$ 上固有的闭子集 $P$ 都包含在 $Z$ 中。
+\eproof
+前一断言取 $Z_0=X_0$，应用（5.5.1）。对于后一断言，$P\cap Z'$ 在 $P$ 中闭，故在 $Y$ 上固有；若它非空，则 $f(P\cap Z')$ 是 $Y$ 中的非空闭集，必与 $Y_0$ 相交（5.1.3.1），这与 $Z'$ 的定义矛盾。\finishproof
+\begin{flushright}（待续。）\end{flushright}\par
+
+% ---- END c3_s05b.tex ----

@@ -1,0 +1,662 @@
+\head{第十八版回校整合：第一篇（8.1）至（8.13）}
+\source{Dot第100--108批；法文物理第30--46页与英编稿物理第21--32页的相应段落}
+以下保存各批完整的译校补证和反例，以及被替换的第十七版旧注。补证、具体例子与工作假设均属译校文字，不冒充作者原文。各批封面、批次范围和“下批从何处继续”等旧状态已从正文移出；实际源码及进度原件仍保存在归档目录。
+
+本轮实际读取九份主源码、进度文件及旧8.1--8.13段，重点对读了（8.5）、（8.6）、（8.8）、（8.13）和相关图式的法英页面图像。它是有限范围的对照与整合，未宣称独立复审全部证明或所有外部参考。下面保留的外部网址是各批已有的可追溯来源；未逐一重新访问验证的条目，不据此提升为本轮完成的文献核查。
+
+\subsec{D18-M：这次整合的订正与界限}
+\begin{enumerate}
+\item （8.5）的余深度集采用严格不等式 $\coprof>n$；（8.6）的坏截面深度为 $<k$。法文第35页可辨的符号与英编稿第24页的错误读法分开保留。
+\item 第104批交换图原先漏画了中列 $E_Z$ 向 $T_{P^\vee/S}\otimes\mathcal O_Z(0,-1)$ 的箭头。本版依法39、英27原图及对偶欧拉列补齐；不改变其源、靶或扭转。
+\item （8.7）(c)仍为残句。后文使用的对偶切空间事实另有完整的译校补证，但补证不等于恢复作者遗失的后半句。
+\item （8.8）明确补入几何整、局部闭浸入和正余维作为工作假设；现存法40--41的页缝没有给出它们的完整原句。仅保留无分歧会有二次平展覆盖反例，不能把这一补假设的版本说成原稿起首已完整复原。
+\item （8.12）补回第107批转述中省略的作者编排备忘、\emph{la taupe}、直线及包含关系残句，并保留英编稿第44--48注。未知手迹继续标缺，不补成分类结论。
+\item （8.13）按法46的 $R_k$、$k+1$ 和充分性修订层排正文。零维几何伴随点的排除是第108批新增假设，不能归给原作者。第108批把英31脚注48关联到8.13证明的说法已纠正：该脚注实际附在前一编排备忘。
+\item （8.13）(a)的 $n-1$ 条件按 $n\ge1$ 阅读；原页未写负下标约定。8.14自身及引用链没有在本段整合中重新审定。
+\end{enumerate}
+
+
+\subsec{D18-100：第100批译校补证（非原文）}
+
+\hypertarget{D18-100-notes}{}
+
+\begingroup
+\def\PP{\mathbb P}\def\OO{\mathcal O}\def\Ocal{\mathcal O}
+\def\F{\mathcal F}\def\G{\mathcal G}\def\N{\mathcal N}
+\def\PD{\check P}\def\Pdual{\check P}
+\def\Ys{Y^{\mathrm{sing}}}\def\Ysing{Y^{\mathrm{sing}}}
+\def\Ds{Y^{\mathrm{sup\,sing}}}\def\Ysup{Y^{\mathrm{sup\,sing}}}
+\def\cod{\operatorname{codim}}\def\Sing{\operatorname{Sing}}
+\def\depth{\operatorname{depth}}\def\coprof{\operatorname{coprof}}
+\def\Ass{\operatorname{Ass}}\def\Supp{\operatorname{Supp}}
+\def\Gr{\operatorname{Gr}}\def\Spec{\operatorname{Spec}}\def\Proj{\operatorname{Proj}}
+
+
+\subsection*{独立核算：为什么是至少二}
+\textbf{一、参数直线。}
+设 $r=\dim P^\vee\ge2$，令 $W=\overline{Z_{\mathcal P}}$，且 $\dim W\le r-2$。直线参数空间 $G=\Gr(2,r+1)$ 的维数为 $2r-2$。在关联族 $\{(w,D):w\in W,\ w\in D\}$ 中，给定 $w$ 的直线族为 $\mathbb P^{r-1}$，故关联族维数至多 $2r-3$。其在 $G$ 中的像是闭的（投影固有），且不是全体。补集是定义在 $k$ 上的非空开集，必和稠密的仿射大胞相交。无限域上的非空仿射开集有 $k$-有理点，故有一条定义在 $k$ 上的直线在几何点意义下也避开 $W$。若 $r=1$，余维条件迫使 $W$ 为空，唯一的直线是全空间；$r=0$ 不存在直线。
+
+\textbf{二、包含一个正维像的超平面。}
+过一个点只给出一道线性条件；包含一个张成 $s$ 维射影线性空间的像则给出 $s+1$ 道独立条件。因为这些超平面的线性式需在一个 $s+1$ 维向量子空间上全为零，其非零解的射影化是余维 $s+1$ 的线性子空间，或为空。正维像有 $s\ge1$。在代数闭包上，有限型概形的不可约分支有限；原分支换底后的几何分支均支配原分支，且其像维数仍为正（可先在像的泛点考察换底再用维数不变）。所以有限个这类例外参数子空间的并，余维仍至少为2。该并在一个有限域扩张上定义且作为几何集合对基域共轭稳定；取各参数子空间的有限映射闭像可得到同一例外闭集在 $k$ 上的描述。
+
+若截面不包含一个不可约分支，其交为空，或由非零局部方程截成余维1。于是 $\dim Y_\xi>\dim X-1$ 只会在有最大维分支被包含时发生；对各分支分别要求降维也同样有上面的余维下界。此论证不会把所有维数跳跃误判成恰余维2。
+
+
+\textbf{三、正则性与余深度。}
+局部乘法非单射当且仅当方程落入有限模的某个关联素理想。扩域后的关联点投影到原来的关联点；在其闭包上仍可用上一段的正维像判据。相关的换底性质可见
+\href{https://stacks.math.columbia.edu/tag/05EW}{Stacks Project，31.6}。
+将 $\mathcal F$ 从 $k$ 扩到 $k(\xi)$ 时，支集维数和深度的局部增加量相同：局部换底是平坦的，纤维是有限型剩余域的扩域，局部为 Cohen--Macaulay；其维数和深度相等。由平坦局部换底的维数与深度公式，余深度不增加，$(S_k)$ 也保持。参见
+\href{https://stacks.math.columbia.edu/tag/045O}{Stacks Project，33.13 的扩域论证}。
+在截面上取一点，将截前模记作 $M$，正则方程记作 $h$，截后模为 $M/hM$。支集局部维数和深度各减少 $1$，因此
+\[
+ \dim\Supp(M/hM)-\depth(M/hM)=\dim\Supp M-\depth M.
+\]
+这里使用有限模的正则元深度公式，参见
+\href{https://stacks.math.columbia.edu/tag/00LE}{Stacks Project，10.72}。
+因为 $(S_k)$ 的局部条件是 $\depth M\ge\min(k,\dim\Supp M)$，取商后得到 $\depth(M/hM)\ge\min(k-1,\dim\Supp(M/hM))$。这一计算并不证明 $(S_k)$ 原样保留；下一条8.3 正要考察其失败可否发生在余维1的参数上。
+
+\endgroup
+
+\subsec{D18-101：第101批译校补证（非原文）}
+
+\hypertarget{D18-101-notes}{}
+
+\begingroup
+\def\PP{\mathbb P}\def\OO{\mathcal O}\def\Ocal{\mathcal O}
+\def\F{\mathcal F}\def\G{\mathcal G}\def\N{\mathcal N}
+\def\PD{\check P}\def\Pdual{\check P}
+\def\Ys{Y^{\mathrm{sing}}}\def\Ysing{Y^{\mathrm{sing}}}
+\def\Ds{Y^{\mathrm{sup\,sing}}}\def\Ysup{Y^{\mathrm{sup\,sing}}}
+\def\cod{\operatorname{codim}}\def\Sing{\operatorname{Sing}}
+\def\depth{\operatorname{depth}}\def\coprof{\operatorname{coprof}}
+\def\Ass{\operatorname{Ass}}\def\Supp{\operatorname{Supp}}
+\def\Gr{\operatorname{Gr}}\def\Spec{\operatorname{Spec}}\def\Proj{\operatorname{Proj}}
+
+
+\subsection*{补证一：为什么坏点留在所有经过它的截面上}
+令 $A=\mathcal O_{X,x}$，$h$ 为超平面在该点的局部方程。因 $X$ 整且超平面不包含它，$h\in\mathfrak m_x$ 是非零因子。故
+\[
+ \dim A/(h)=\dim A-1,\qquad
+ \depth A/(h)=\depth A-1.
+\]
+深度等式参见\href{https://stacks.math.columbia.edu/tag/00LE}{Stacks Project，10.72.7}。整曲面在坏点处有 $\dim A=2$，整性给出 $\depth A\ge1$，非 Cohen--Macaulay 给出 $\depth A<2$。因此 $\depth A/(h)=0$ 且 $\dim A/(h)=1$；极大理想是关联素理想，但不是极小素理想，故 $x$ 是嵌入关联点，且 $(S_1)$ 失败。
+
+正规三维簇在坏点处有 $\dim A=3$；正规性给出 $(S_2)$，故 $\depth A=2$。于是 $\depth A/(h)=1<2=\dim A/(h)$，所以 $(S_2)$ 失败，但这个计算不推出 $(S_1)$ 失败。正规性与 Serre 条件的关系参见\href{https://stacks.math.columbia.edu/tag/033P}{Stacks Project，28.12.5}。
+
+\subsection*{补证二：一个只有一处坏点的整射影曲面}
+在代数闭域 $K$ 上，用以下三次单项式将 $\mathbb P^2$ 映入 $\mathbb P^7$，取约化像 $X$：
+\[
+ [x:y:z]\longmapsto
+ [z^3:zx^2:zxy:zy^2:x^3:x^2y:xy^2:y^3].
+\]
+这些单项式无共同零点，像为闭的、整的且非退化。在 $z^3\ne0$ 的仿射片上，以 $u=x/z,v=y/z$ 记，坐标环是
+\[
+ A_0=K[u^2,uv,v^2,u^3,u^2v,uv^2,v^3]
+       =K+(u,v)^2K[u,v].
+\]
+等号因为任意总次数至少2的单项式都能写成二次、三次单项式的乘积。$K[u,v]$ 是 $A_0$ 的有限整扩张（$u,v$ 均满足首一二次式），故该片维数为2。局部化在原点对应的极大理想 $\mathfrak n$ 后，$u^2$ 是非零因子。在商 $A_0/(u^2)$ 中，$u^3$ 的像不为零，却被 $\mathfrak n$ 杀掉：对 $a\in\mathfrak n$，$u^3a=u^2(ua)$ 且 $ua\in A_0$。该非零像局部化后仍不为零，因为它的湮灭理想就是 $\mathfrak n$。故原点局部环深度为1。
+
+在 $x^3\ne0$ 的片上，由坐标比 $x^2y/x^3$ 和 $zx^2/x^3$ 直接恢复 $y/x,z/x$；其他坐标比都是它们的多项式。相同论证适用于 $y^3\ne0$。这两个仿射片覆盖原点之外，且均光滑。于是不过坏点的超平面在光滑处以一个非零因子取商，截面为 Cohen--Macaulay。结合补证一，例外参数恰为过坏点的所有超平面。
+
+
+\subsection*{补证三：正规但非 Cohen--Macaulay 的射影三维例}
+现在在 $\mathbb C$ 上取平面光滑三次曲线 $E$，将 $E\times\mathbb P^1$ 由 Segre 映入 $\mathbb P^5$。取它的射影锥 $X\subset\mathbb P^6$，锥顶的仿射邻域是该 Segre 像的仿射锥。这个仿射例可参见
+\href{https://content.algebraicgeometry.nl/2016-2/2016-2-011.pdf}{Addington，2016，末节的反例}。
+这里补足与射影超平面论证相关的环与深度细节。
+
+记 $B=\mathbb C[x_0,x_1,x_2]/(f_3)$ 为平面三次曲线的齐次环。它是整超曲面环，满足 $(S_2)$；由于 $E$ 光滑，仿射锥除顶点外光滑，故满足 $(R_1)$，因而 $B$ 正规。Segre 像的齐次环是
+\[
+ R=\bigoplus_{n\ge0}B_n\otimes_{\mathbb C}\mathbb C[u,v]_n .
+\]
+在 $B[u,v]$ 中令 $B_1$ 权重为 $1$、$u,v$ 权重为 $-1$，则 $R$ 是权重零子环。若 $\operatorname{Frac}(R)$ 中某元素在 $R$ 上整，则在正规环 $B[u,v]$ 上也整，故落在 $B[u,v]$；它又被权重缩放作用固定，必落在 $R$。所以 $R$ 正规。$R$ 由其次数一部分生成，$\Proj R=E\times\mathbb P^1$，锥的维数为3。
+
+令 $\mathfrak m=R_+$。由标准分次截面环的局部上同调公式，
+\[
+ \bigl[H^2_{\mathfrak m}(R)\bigr]_0
+   \simeq H^1(E\times\mathbb P^1,\mathcal O)
+   \simeq H^1(E,\mathcal O_E)\ne0 .
+\]
+第一同构也可以用齐次生成元的 Čech 复形取次数零部分得到：对 $R$ 作支持于无关理想的增广复形，移去首项后就是 $\Proj R$ 上各标准仿射开的结构层复形。第二同构来自乘积的上同调公式；光滑平面三次的亏格为1。局部化到锥顶不杀掉该非零局部上同调，因为它的支撑在 $\{\mathfrak m\}$。因此锥顶深度至多2，而正规性给出至少2，故恰为2。
+
+离开锥顶，在一个基底齐次坐标非零的片上，锥局部就是底上该仿射片乘一条仿射直线（锥顶方向坐标除以该基底坐标）。所以射影锥在顶点外光滑，且它非退化。对偶空间中，恰为过锥顶的那一个参数超平面给出不满足 $(S_2)$ 的截面。这证明了例外余维1确实可能发生。
+
+\endgroup
+
+\subsec{D18-102：第102批译校补证（非原文）}
+
+\hypertarget{D18-102-notes}{}
+
+\begingroup
+\def\PP{\mathbb P}\def\OO{\mathcal O}\def\Ocal{\mathcal O}
+\def\F{\mathcal F}\def\G{\mathcal G}\def\N{\mathcal N}
+\def\PD{\check P}\def\Pdual{\check P}
+\def\Ys{Y^{\mathrm{sing}}}\def\Ysing{Y^{\mathrm{sing}}}
+\def\Ds{Y^{\mathrm{sup\,sing}}}\def\Ysup{Y^{\mathrm{sup\,sing}}}
+\def\cod{\operatorname{codim}}\def\Sing{\operatorname{Sing}}
+\def\depth{\operatorname{depth}}\def\coprof{\operatorname{coprof}}
+\def\Ass{\operatorname{Ass}}\def\Supp{\operatorname{Supp}}
+\def\Gr{\operatorname{Gr}}\def\Spec{\operatorname{Spec}}\def\Proj{\operatorname{Proj}}
+
+
+\subsection*{补证一：引理的局部维数论证}
+对任意 $t\in T\cap Y$，令 $A=\OO_{X,t}$，$h$ 为 $\varphi$ 的局部方程，$d=\dim A$。每个极小素理想 $\mathfrak p_j$ 代表过 $t$ 的不可约分支，记 $d_j=\dim A/\mathfrak p_j$。对 $A/\mathfrak p_j$ 而言，若 $h$ 的像为零，则商去 $h$ 后局部维数仍是 $d_j$；若像非零，则它是局部整环中的非零非单位，商去后局部维数是 $d_j-1$。后一事实由参数组给出下界，由在商环中的素理想链底端添上零素理想给出上界。参见 \href{https://stacks.math.columbia.edu/tag/00KW}{Stacks，10.60.13}。所有素理想都含某个极小素理想，故
+\[
+ \dim A/(h)=\max_j\dim A/(\mathfrak p_j,h),\qquad
+ d-1\le \dim A/(h)\le d.
+\]
+因此恰降一的条件是：对所有满足 $d_j=d$ 的分支，$h$ 都没有恒等于零。局部的这一条件等价于这些分支不包含在 $Y$ 中：在分支的泛点判断截面是否为零即可。
+
+闭集在 $X$ 中的余维是其上各 $t$ 的 $\dim\OO_{X,t}$ 的下确界，空集的余维取 $+\infty$。在单个 $T_i$ 的泛点，它是通过该泛点的 $X$ 各分支中局部维数的最大值，而不是最小值。因为 $d\ge k$，上面的局部不等式给出(a)。若截后有某点局部维数 $k-1$，原点处必有 $d=k$。这个点只能是 $T$ 某分支的泛点：若它是某泛点 $\eta_i$ 的严格特化，在 $X$ 的一张含该点的仿射开集中，把 $\eta_i$ 处一条长至少 $k$ 的素理想链往上添一环，就得到局部维数至少 $k+1$。反过来，在满足(b)的泛点处，所有达到 $k$ 的分支均被切掉一维，其他分支维数本已至多 $k-1$，遂得等号。$k=0$ 时等号不会发生；达到最大值零的局部分支不可能在该点被切而又仍含该点。
+
+
+\subsection*{补证二：几何参数、可构造性与闭包}
+有限型概形上，可在任意扩域后检验闭集余维。具体地，若 $\eta_i'$ 是换底后 $T_i$ 某几何分支的泛点，则它位于 $\eta_i$ 的上方，且该分支与 $T_i$ 同维；对每个包含 $T_i$ 的 $X_j$，都有换底后 $X_j$ 的分支通过 $\eta_i'$，维数仍是 $\dim X_j$。在各分支用有限型整概形的维数公式 $\codim(T_i,X_j)=\dim X_j-\dim T_i$，再取最大值，即得所需不变性。应用到参数剩余域的代数闭包，就涵盖了非闭参数，不要求 $K$ 本身代数闭。\transnote{这里的维数公式及几何等维性只用于命题的有限型底域环境；引理8.4.1不需要有限型底域条件。}
+
+在 $\overline K$ 上，对于上述每个 $R$，设 $L_R$ 是所有包含 $\overline{f(R)}$ 的超平面组成的线性闭集。若 $f(R)$ 的张成空间维数为 $s$，则这等价于对线性方程施加 $s+1$ 个独立齐次线性条件；若无这样的超平面，$L_R$ 为空。令 $Z_0$ 为像正维的 $R$ 所给 $L_R$ 的有限并，故 $\codim Z_0\ge2$。逐个应用引理(b)，直接得到精确表达式
+\[
+ Z_{\overline K}=
+ \bigcup_{\codim(T_i,X)=k}
+ \left(L_{T_i}\setminus
+ \bigcup_{\substack{X_j\supseteq T_i\\\codim(T_i,X_j)=k}} L_{X_j}\right),
+\]
+式中各分支及余维取在 $\overline K$ 上。这里 $Z_{\overline K}$ 表示换底后按同一判据得到的参数集。因各项是线性闭集之差，集合可构造。有限多个几何分支及线性条件可定义在一个有限扩域上；对应构造集沿有限投影取像得到原底域的 $Z$。在 $Z_0$ 外，只有正稿证明所辨认的完整对偶超平面的迹，每个迹稠密于其超平面；故闭包是这些完整超平面与 $\overline{Z\cap Z_0}$ 之并，这也给出所述余维判据。若 $f$ 拟有限，零维像的不可约 $T_i$ 本身只能是点；若其相关 $X_j$ 余维为 $k>0$，则 $\dim X_j=k$，像不可能为零维。这就得到孤立点的表述。
+
+\paragraph{为何不能删去“在 $Z_0$ 外”。}
+取 $X$ 为 $\PP^2$ 中的一条直线，$T=\{x\}\subset X$，$k=1$。过 $x$ 的任一不同于 $X$ 的直线截出点 $x$，余维从一降到零；参数若恰代表直线 $X$ 本身，则 $Y_\xi=X$，余维仍为一。故 $Z$ 是一条对偶直线去掉一点，不可能是完整超平面与余维至少二的集合之并。
+
+\endgroup
+
+\subsec{D18-103：第103批译校补证（非原文）}
+
+\hypertarget{D18-103-notes}{}
+
+\begingroup
+\def\PP{\mathbb P}\def\OO{\mathcal O}\def\Ocal{\mathcal O}
+\def\F{\mathcal F}\def\G{\mathcal G}\def\N{\mathcal N}
+\def\PD{\check P}\def\Pdual{\check P}
+\def\Ys{Y^{\mathrm{sing}}}\def\Ysing{Y^{\mathrm{sing}}}
+\def\Ds{Y^{\mathrm{sup\,sing}}}\def\Ysup{Y^{\mathrm{sup\,sing}}}
+\def\cod{\operatorname{codim}}\def\Sing{\operatorname{Sing}}
+\def\depth{\operatorname{depth}}\def\coprof{\operatorname{coprof}}
+\def\Ass{\operatorname{Ass}}\def\Supp{\operatorname{Supp}}
+\def\Gr{\operatorname{Gr}}\def\Spec{\operatorname{Spec}}\def\Proj{\operatorname{Proj}}
+
+
+\paragraph{（8.6）简短充分性原句的展开。}
+充分性可由一般判据的拟有限表述直接推出：若一个孤立点 $z\in Z_n$ 的局部维数等于 $n+k+1$，则它的深度至多为 $k$，故违反8.6。反过来，若某几何闭点 $x$ 违反8.6，取 $n=\dim\F_x-k-1$；由 $(S_k)$ 有 $\depth\F_x=k$，所以 $x\in Z_n$。它达到 $Z_n$ 的余维下界，不可能是 $Z_n$ 中另一点的严格特化，故是 $Z_n$ 的零维分支，也就是孤立点。\transnote{法35充分性原句匆促地写令 $z=x$；这里按集合与局部深度的双向对应补清。页尾关于一般判据的承接句有删改，不复原不可辨字样。}
+
+\subsection*{补证：用余深度把问题归约为8.4}
+取代数闭底域论证，再按几何分支解释换底。闭集 $T$ 上的局部维数等于模的支撑维数。令 $a=\dim\F_x$、$b=\depth\F_x$。则
+\[
+ \F\text{ 为 }(S_k)
+ \quad\Longleftrightarrow\quad
+ \forall n\ge0,\ \codim(Z_n,T)\ge n+k+1.
+\]
+证明：若 $x\in Z_n$，则 $a-b\ge n+1$，尤其 $a>b$。若满足 $(S_k)$，由 $b\ge\min(k,a)$ 得 $b\ge k$，从而 $a\ge n+k+1$。反之，若有点满足 $b<\min(k,a)$，取 $n=a-b-1\ge0$。此点在 $Z_n$ 中，但 $a<n+k+1$，矛盾。这里用到了整数门槛的严格性。
+
+\paragraph{闭性和换底。}
+在有限型仿射片上选取某个仿射空间 $\mathbb A^N$ 的闭浸入，视 $\F$ 为其上的有限模 $M$。对支撑中的点 $x$，记 $D(x)$ 为通过 $x$ 的支撑分支的最大维数。若 $x$ 的剩余域在底域上的超越次数为 $t$，则 $\dim M_x=D(x)-t$，仿射空间的局部环维数为 $N-t$。用 \href{https://stacks.math.columbia.edu/tag/00O7}{Auslander--Buchsbaum 公式}，余深度等于
+\[
+ D(x)-N+\operatorname{pd}_{\mathcal O_{\mathbb A^N,x}}M_x .
+\]
+$D(x)$ 的各上水平集是有限个闭分支的并；投射维数也是上半连续的：在有限自由解消中，相应合冲模在一点局部自由，就在该点某个邻域局部自由。故 $Z_n$ 都闭，且只有有限多个可能非空。对这里涉及的域扩张，换底的局部映射平坦，闭纤维为域张量所得的 Cohen--Macaulay 局部环；维数与深度加上同一纤维维数。因此余深度不变，$Z_n$ 按点集拉回。也可把扩张分成有限纯超越及代数两步，纤维分别正则及零维。几何术语与非闭参数的处理同8.4。
+
+
+\subsection*{补证续：应用到参数空间}
+记 $I$ 为不正则的参数集。8.2给出 $I$ 可构造且余维至少二，因为所有关联循环的像都为正维。对 $\xi\notin I$，正则商的深度与支撑局部维数都降一；维数下降可用 \href{https://stacks.math.columbia.edu/tag/0B52}{Stacks，10.63.10}，深度下降见 \href{https://stacks.math.columbia.edu/tag/00LE}{Stacks，10.72}。故余深度不变，$\G_\xi$ 的坏集是换底后的 $Z_n$ 截到 $T_\xi$。用上面的余维准则，原阶 $(S_k)$ 的失败当且仅当至少一个 $n$ 的对应余维小于 $n+k+1$。把这些降阶参数集记为 $B_n$，由8.4皆可构造；所求参数的补集是
+\[
+ I\ \cup\ \bigcup_{n\ge0} B_n.
+\]
+这是有限并。若某个 $B_n$ 有余维一，即使把原先不正则的参数也计入，合并后的坏集仍有余维一。于是要求每个 $B_n$ 均有余维至少二，恰给出8.5中的分支条件。
+
+\paragraph{等维化简。}
+在代数闭域上等维的 $T$ 的每个闭点都有局部维数 $d$；非空的 $Z_n$ 若有孤立点，它也是 $T$ 的闭点。故拟有限判据只可能在 $n=d-k-1$ 触发。该 $n$ 的 $Z_n$ 若非空，因余维至少 $d$，每个分支都为零维；于是无孤立点等价于集合为空。余深度是上半连续且 $T$ 为 Jacobson 拓扑，任何非空的坏闭集都含闭点，故可把全局余深度上界同闭点深度下界互译。
+
+\endgroup
+
+\subsec{D18-104：第104批译校补证（非原文）}
+
+\hypertarget{D18-104-notes}{}
+
+\begingroup
+\def\PP{\mathbb P}\def\OO{\mathcal O}\def\Ocal{\mathcal O}
+\def\F{\mathcal F}\def\G{\mathcal G}\def\N{\mathcal N}
+\def\PD{\check P}\def\Pdual{\check P}
+\def\Ys{Y^{\mathrm{sing}}}\def\Ysing{Y^{\mathrm{sing}}}
+\def\Ds{Y^{\mathrm{sup\,sing}}}\def\Ysup{Y^{\mathrm{sup\,sing}}}
+\def\cod{\operatorname{codim}}\def\Sing{\operatorname{Sing}}
+\def\depth{\operatorname{depth}}\def\coprof{\operatorname{coprof}}
+\def\Ass{\operatorname{Ass}}\def\Supp{\operatorname{Supp}}
+\def\Gr{\operatorname{Gr}}\def\Spec{\operatorname{Spec}}\def\Proj{\operatorname{Proj}}
+
+
+\paragraph{局部光滑性判据与线性空间对应的展开。}
+为说明判据，取过 $a$ 的射影仿射坐标片，记 $x$ 附近截面在一个局部标架中的函数为 $h$。在有理零点处，$h$ 的一次项正是 $\mathrm dh_x\in\Omega^1_{X/k}\otimes k(x)$；其为零等价于 $h\in\mathfrak m_x^2$。超平面局部方程的微分与 $df_x$ 合成正得到 $\mathrm dh_x$。若 $\mathrm dh_x\ne0$，光滑性雅可比判据给出光滑和相对维数 $d-1$；反之，若有该光滑性及维数，切空间维数为 $d-1$，是 $T_xX$ 中该单一方程的核，故微分非零。
+
+这里说的线性子空间可通过(b)说明。记普适商 $E_k\twoheadrightarrow\Ocal_P(1)|_a$ 的一维目标空间为 $L_a$，记 $K_a=\ker(E_k\to L_a)$，则 $T_aP=\operatorname{Hom}_k(K_a,L_a)$。包含 $a$ 的线性子空间对应 $E_k$ 的商 $E_k/U$，其中 $U\subset K_a$；其切空间恰是 $U$ 的零化空间 $\operatorname{Hom}_k(K_a/U,L_a)\subset T_aP$。取零化空间给出双射，逆映射就是取那个线性子空间在 $a$ 的切空间。作者建议将这类基本事项连同线性子空间和 Grassmann 概形的通则，放入一两个预备编号，并系统地在任意底上表述。
+
+\paragraph{译校补证：局部比对。}
+在 $E$ 取基 $e_0,\ldots,e_r$，在 $P$ 的第0坐标片令 $u_i=e_i/e_0$。对偶侧的普适直线局部由 $\sum_{i=0}^r a_i e_i$ 生成。截面 $\varphi$ 的函数式为 $a_0+\sum_{i=1}^r a_i f^*u_i$。在 $Y$ 上此和为零，所以该向量写成 $\sum_{i=1}^r a_i(e_i-u_i e_0)$；这里 $u_i$ 已拉回。欧拉核中 $e_i-u_i e_0$ 对应 $\mathrm du_i$ 与选定的 $\Ocal_P(1)$ 标架的张量。因而复合在该标架中为 $\sum_{i=1}^r a_i\,\mathrm d(f^*u_i)$，恰是沿 $\Pdual$ 取相对微分的结果：参数 $a_i$ 来自 $\Pdual$，不对它们求微分。
+
+\endgroup
+
+\subsec{D18-105：第105批译校补证（非原文）}
+
+\hypertarget{D18-105-notes}{}
+
+\begingroup
+\def\PP{\mathbb P}\def\OO{\mathcal O}\def\Ocal{\mathcal O}
+\def\F{\mathcal F}\def\G{\mathcal G}\def\N{\mathcal N}
+\def\PD{\check P}\def\Pdual{\check P}
+\def\Ys{Y^{\mathrm{sing}}}\def\Ysing{Y^{\mathrm{sing}}}
+\def\Ds{Y^{\mathrm{sup\,sing}}}\def\Ysup{Y^{\mathrm{sup\,sing}}}
+\def\cod{\operatorname{codim}}\def\Sing{\operatorname{Sing}}
+\def\depth{\operatorname{depth}}\def\coprof{\operatorname{coprof}}
+\def\Ass{\operatorname{Ass}}\def\Supp{\operatorname{Supp}}
+\def\Gr{\operatorname{Gr}}\def\Spec{\operatorname{Spec}}\def\Proj{\operatorname{Proj}}
+
+
+\paragraph{译校补证：像不必闭，余维估计仍成立。}
+设 $X$ 为有限型。由前述余法射影丛识别，$\Ysing=\PP_X(\mathcal N_{X/P})$。按 $X$ 的光滑维数分块，在正余法秩的每一块上，$\Ysing$ 的维数都为 $d+(r-d-1)=r-1$。一个不可约分支到其像闭包是支配的，从而诱导函数域嵌入；\href{https://stacks.math.columbia.edu/tag/0A21}{有限型整概形的维数等于函数域超越次数}，故像闭包维数不超过源分支维数。如果 $X/k$ 适当，则 $X\times_k\Pdual\to\Pdual$ 适当，$\Ysing$ 是源中的闭子概形，因而投影本身为适当态射，像确为闭集。这一步不要求 $f$ 是闭浸入。
+
+例如线性嵌入 $X=\PP^d\subsetneq \PP^r$ 且 $d\ge1$ 时，切超平面恰是包含整个 $X$ 的超平面，故参数像为 $\PP^{r-d-1}$，余维是 $d+1$，未必为一。另一方面，若像已经闭且有超曲面分支，则任一几何参数直线都与该分支相交。若闭坏集 $D$ 的余维至少二而 $r\ge2$，过 $D$ 中一点的直线族维数为 $r-1$；故相交直线族维数至多 $(r-2)+(r-1)=2r-3$，小于全直线族的 $2r-2$。可在非空开集中取避开 $D$ 的几何直线；无限底域上也可用 Grassmann 概形的仿射大胞腔取 $k$-直线。有限底域不在此推出一定存在 $k$-直线；$r=1$ 时余维至少二的闭坏集为空。
+
+\paragraph{译校补证：纤维的切空间。}
+将 $\xi$ 的纤维扩到几何点域 $K$，在 $X_K$ 的相应有理点 $x$ 附近取光滑坐标 $t_1,\ldots,t_d$ 及线丛标架，令 $u$ 是 $\varphi_\xi$ 的局部函数。奇异零纤维由 $u$ 和一阶相对偏导数 $\partial_i u$ 的零式定义。在奇异零点 $x$ 处，$u$ 的线性项为零，因此它不给该点的切空间增加约束。各 $\partial_i u$ 的一次项，正是 $u$ 的二次初始形式 $Q$ 的极化线性映射在各坐标上的分量。具体地，
+\[
+\begin{aligned}
+ B_Q(v,w)&=Q(v+w)-Q(v)-Q(w),\\
+ T_{y}(\pi^{-1}(\xi)_K)&=\{v:B_Q(v,w)=0\text{ 对所有 }w\}.
+\end{aligned}
+\]
+例如在特征二时，平方项的极化为零，交叉项仍计入，整个计算未除以2；单变量 $Q=t^2$ 的极化即为零。由 \href{https://stacks.math.columbia.edu/tag/0B2G}{几何纤维上的切空间判据}，$\pi$ 在该点无分歧恰好等价于这个切空间为零，亦即 $B_Q$ 非退化。无分歧可在几何换底后检测，这就给出了(b)中几何定义与态射判据的对应。
+
+\subsection*{对偶切空间：接续所需的独立补证}
+下述推导用于理解法42对8.7(c)的回指，不声称逐字恢复遗失处。令 $a=f(x)$，在 $P\times_k\Pdual$ 中以配对 $\langle a,\xi\rangle=0$ 表示关联条件；写在各自的局部仿射标架中。对来自 $\Ysing$ 的切向量 $(v,w)$ 微分这一关系：
+\[
+ \langle df_x(v),\xi\rangle+\langle a,w\rangle=0.
+\]
+第一项为零，因为 $\xi$ 的截面在 $x$ 处的一阶导数为零。因此 $\langle a,w\rangle=0$。也就是说，$\operatorname{im}(d\pi_y)$ 包含于对偶空间中超平面
+\[
+ a^\perp=\{\xi'\in\Pdual : a\in H_{\xi'}\}
+\]
+在 $\xi$ 处的切空间。此条件与局部标架的选择无关，因为附随改变的项均乘上在该点已为零的关联函数。
+
+由(b)，若 $y$ 为普通奇异零，则 $d\pi_y$ 为单射；它的像及 $T_\xi(a^\perp)$ 都有维数 $r-1$，故二者相等。切空间与过 $\xi$ 的射影线性子空间的典范对应于是给出 $H'=a^\perp$，进而由 $H'$ 恢复 $a$。反之，若 $H'=a^\perp$，切映射的秩为 $r-1$，从而为单射，回到普通奇异零的情形。这里只能凭此恢复 $a\in P$；若要由 $a$ 唯一恢复 $x\in X$，必须再用 $f$ 为浸入等保证点唯一的条件，不能只用无分歧。
+
+\endgroup
+
+\subsec{D18-106：第106批译校补证（非原文）}
+
+\hypertarget{D18-106-notes}{}
+
+\begingroup
+\def\PP{\mathbb P}\def\OO{\mathcal O}\def\Ocal{\mathcal O}
+\def\F{\mathcal F}\def\G{\mathcal G}\def\N{\mathcal N}
+\def\PD{\check P}\def\Pdual{\check P}
+\def\Ys{Y^{\mathrm{sing}}}\def\Ysing{Y^{\mathrm{sing}}}
+\def\Ds{Y^{\mathrm{sup\,sing}}}\def\Ysup{Y^{\mathrm{sup\,sing}}}
+\def\cod{\operatorname{codim}}\def\Sing{\operatorname{Sing}}
+\def\depth{\operatorname{depth}}\def\coprof{\operatorname{coprof}}
+\def\Ass{\operatorname{Ass}}\def\Supp{\operatorname{Supp}}
+\def\Gr{\operatorname{Gr}}\def\Spec{\operatorname{Spec}}\def\Proj{\operatorname{Proj}}
+
+
+\paragraph{译校补足：两个无分歧判据与底扩。}
+闭浸入 $T\hookrightarrow\PD$ 的相对微分为零，因此传递正合列给出
+$\Omega_{Z/\PD}\simeq\Omega_{Z/T}$。在泛点，后者是 $\Omega_{L/K}$。函数域扩张为有限型，故其微分为零当且仅当扩张有限可分。泛点的平坦性来自域，故此处无分歧等价于 étale。无分歧点构成开集；它非空就包含整源的泛点。因此8.7(b)的普通奇异点判据恰好给出 (ii)。在代数闭域上，非空有限型开集有有理闭点；在任意底域，可先将该非空开集底扩到 $\bar k$。这说明 (ii bis) 使用的是几何普通奇异点。
+
+这里 $Z$ 是几何整的射影丛。对 $T$ 的任一非空仿射开 $A$，取 $g^{-1}(A)$ 的非空仿射开 $B$，由支配性有 $\Gamma(A,\mathcal O_T)\hookrightarrow\Gamma(B,\mathcal O_Z)$。张量任意域扩张仍为单射，右侧是整环，所以左侧也是整环。$T$ 的这些开片底扩后仍在两两交集上相接，故 $T$ 几何整。各开片的单射也保留支配性和像闭包的识别。以下直接数有限 étale 几何纤维的度数，不把代数闭底域的陈述未经论证地搬回 $k$。
+
+\paragraph{译校补足：把点的描述落实为态射。}
+$U$ 是超曲面 $T$ 的光滑部，嵌入余法丛为秩一；局部方程在齐次坐标下的梯度给出切超平面的系数。梯度在光滑点不同时为零，换局部方程仅改变公因子，故系数给出同一 $\psi$。两个 $g^{-1}(U)\to P\times_k T$ 的态射在稠密开 $g^{-1}(V)$ 上相等；靶分离且源约化，等化闭子概形的理想在稠密开为零，因而处处为零。同理，$h$ 对 $\overline Z$ 的理想的拉回在 $V$ 为零，因 $U$ 约化且 $V$ 稠密而在 $U$ 为零。这个论证给出概形分解，而不仅是点集上的包含。
+
+\endgroup
+
+\subsec{D18-107：第107批译校补证（非原文）}
+
+\hypertarget{D18-107-notes}{}
+
+\begingroup
+\def\PP{\mathbb P}\def\OO{\mathcal O}\def\Ocal{\mathcal O}
+\def\F{\mathcal F}\def\G{\mathcal G}\def\N{\mathcal N}
+\def\PD{\check P}\def\Pdual{\check P}
+\def\Ys{Y^{\mathrm{sing}}}\def\Ysing{Y^{\mathrm{sing}}}
+\def\Ds{Y^{\mathrm{sup\,sing}}}\def\Ysup{Y^{\mathrm{sup\,sing}}}
+\def\cod{\operatorname{codim}}\def\Sing{\operatorname{Sing}}
+\def\depth{\operatorname{depth}}\def\coprof{\operatorname{coprof}}
+\def\Ass{\operatorname{Ass}}\def\Supp{\operatorname{Supp}}
+\def\Gr{\operatorname{Gr}}\def\Spec{\operatorname{Spec}}\def\Proj{\operatorname{Proj}}
+
+
+\paragraph{译校补足：两个点集与几何单支。}
+8.9给出 $g^{-1}(U)\subset\operatorname{Et}(g)$。反之，若 $g$ 在 $y$ 处 étale，则可在 $y$ 的一个开邻域上取其 étale 限制，像为包含 $g(y)$ 的开集；由此满射 étale 覆盖，源对 $k$ 的光滑下降到该像，故 $g(y)\in U$。又因 $T\hookrightarrow\PD$ 为闭浸入，$\Omega_{Z/T}\simeq\Omega_{Z/\PD}$，所以8.7(b)判出的正是 $g$ 的无分歧处。若 $T$ 在 $g(y)$ 几何单支，整源的泛点特化到 $y$ 且映到 $T$ 的泛点；由 \href{https://stacks.math.columbia.edu/tag/0GS8}{Stacks 0GS8}，此处无分歧会强制 étale，给出原断言。这里不需要假设 $g$ 在全部 $Z$ 上有限。
+
+
+\paragraph{译校例：特征零的严格包含。}
+在代数闭的特征零域上，取平面四次曲线
+\[
+ F=(x^2-z^2)^2+yz^3+y^4=0,
+ \qquad H:\ y=0.
+\]
+直线 $H$ 恰在 $[1:0:1]$、$[-1:0:1]$ 各有二重交；这两点 $F_y=1$，且切线方向的二次项非零，因而均非超奇异。曲线确实光滑：$z=0$ 时，$F_x=4x^3$、$F_y=4y^3$ 不会在射影点同时为零；$z=1$ 时 $F_x=4x(x^2-1)$，若三偏导都为零则 $x=0$ 或 $x=\pm1$。在 $x=0$ 时 $F_z=4+3y$ 强制 $y=-4/3$，于是 $F_y=1+4y^3\ne0$；在 $x=\pm1$ 时 $F_z=3y$ 强制 $y=0$，仍有 $F_y\ne0$。光滑平面曲线在代数闭域上整：否则其不同正次数分支依 Bézout 相交，交点不光滑。于是8.8的条件成立。$H$ 的纤维有两点；若 $H\in U$，由8.9的适当情形该纤维只有一点，矛盾。因此这两点都给出无分歧而不 étale 的实例。
+
+\paragraph{译校补足：对 (b) 推出 (a) 分情形。}
+若 (iii) 成立，则8.8已经证明 $D$ 的像闭包余维至少为二。若 (iii) 不成立，则 $\dim T<r-1$，而 $D$ 的像包含于 $T$，仍有余维至少二。这一步只用两种情形分别判断，不把“余维至少二”误读作“恰余维二”。维数判定来自
+\[
+ \operatorname{trdeg}_K L=\dim Z-\dim T=r-1-\dim T.
+\]
+函数域扩张为有限型，超越次数为零等价于有限扩张；在正特征下不能由有限性推出可分性。
+
+\paragraph{译校补足：为何同一截面至多一个普通奇异点。}
+若8.8的等价条件成立，另须使笔避开 $T\setminus U$，而不只是避开 $D$ 的像。因为 $U$ 是 $T$ 的稠密光滑开集，$T\setminus U$ 在 $\PD$ 中余维至少二；8.9在 $U$ 上给出开浸入，每个几何纤维至多一点，且该点对应普通奇异零。若8.8的条件不成立而 $k$ 特征零，则可直接避开整个 $T$。余维至少二的闭集可由一般的几何直线避开，见本报告“D18-105”的直线入射维数论证。不把一般几何线性笔的存在解释为有限底域上必有有理笔。“光滑或只有普通奇异点”按奇异零判据处理，不把恒等为零的截面误计成期望维数的光滑截面。
+
+\paragraph{译校例：正特征下的维数等式不推出泛 étale。}
+取代数闭的特征 $p>0$ 底域上的 Fermat 曲线 $x^{p+1}+y^{p+1}+z^{p+1}=0$。三偏导为 $x^p,y^p,z^p$，无共同射影零点，所以曲线光滑。余法秩为一，故 $Z\simeq X$；切线参数为 $[x^p:y^p:z^p]$。这个映射经过相对 Frobenius，且其像仍是一条曲线（本例方程系数在素域）。在完美底域的曲线函数域上，$[L:L^p]=p$，故它诱导纯不可分的次数 $p$ 扩张，切映射为零，故处处超奇异，而 $\dim T=1=r-1$。
+
+\endgroup
+
+\subsec{D18-108：第108批译校补证（非原文）}
+
+\hypertarget{D18-108-notes}{}
+
+\begingroup
+\def\PP{\mathbb P}\def\OO{\mathcal O}\def\Ocal{\mathcal O}
+\def\F{\mathcal F}\def\G{\mathcal G}\def\N{\mathcal N}
+\def\PD{\check P}\def\Pdual{\check P}
+\def\Ys{Y^{\mathrm{sing}}}\def\Ysing{Y^{\mathrm{sing}}}
+\def\Ds{Y^{\mathrm{sup\,sing}}}\def\Ysup{Y^{\mathrm{sup\,sing}}}
+\def\cod{\operatorname{codim}}\def\Sing{\operatorname{Sing}}
+\def\depth{\operatorname{depth}}\def\coprof{\operatorname{coprof}}
+\def\Ass{\operatorname{Ass}}\def\Supp{\operatorname{Supp}}
+\def\Gr{\operatorname{Gr}}\def\Spec{\operatorname{Spec}}\def\Proj{\operatorname{Proj}}
+
+
+\subsection*{证明补足：光滑开集上的奇异点}
+\paragraph{两个奇异集合的并。}
+在截面经过的点处，正则截面给出一个非零因子 $h\in\mathfrak m_A$。在代数闭扩域后，若 $A/(h)$ 正则，则 $A$ 正则（\href{https://stacks.math.columbia.edu/tag/00NU}{Stacks 00NU}）；也可由
+\[
+ \dim A/(h)=\dim A-1,\qquad
+ \operatorname{edim}A\le \operatorname{edim}(A/(h))+1
+\]
+看出。因此，几何不光滑的环境点一旦进入截面，不会成为截面的光滑点。另一方面，在 $X'$ 上只需直接检验 $Y'_\xi$。局部环在开子概形中不变，于是得到上面的余维公式，约定空集余维为 $+\infty$。
+
+\paragraph{为什么有限奇异集是可用的限制。}
+在一个 $d$ 维几何光滑分支上，切超平面由余法空间给出，每点的参数纤维为 $\mathbb P^{r-d-1}$（$d=r$ 时为空），故非空切关联的总维数是 $r-1$，其中 $r=\dim P$。对偶参数中几何纤维至少一维的集合因而维数不超过 $r-2$：在每个这样的不可约参数分层上，关联的逆像至少比参数多一维。取有限个分支的例外集之并，舍弃后各奇异集均为零维或空。若该分支是直纹型，还可以连它全部切参数一起舍弃，仍只舍弃余维至少二的闭集。
+
+因此在 (a) 中，剩下可能出现孤立奇异点的光滑分支维数 $d\ge n+1$；这类点在截面中的余维为 $d-1\ge n$。在 (b) 中，剩下的光滑分支维数 $d\ge n+2$；相应余维为 $d-1\ge n+1$。这解释了两个下标和维数界相差一的原因。
+
+
+\subsection*{证明补足：原概形的奇异闭集}
+由几何 $(R_n)$，$\cod(T,X)\ge n+1$。在 (a) 中，8.4的基本截面余维估计直接给出 $\cod(T_\xi,Y_\xi)\ge n$。在 (b) 中，同一估计只能给出 $\ge n$，还需排除等号发生在余维一的参数族上。8.4给出的唯一可能来源是：$T$ 的某个几何不可约分支在 $X$ 中余维恰为 $n+1$，且其 $f$-像零维。由于 $f$ 无分歧，因而局部拟有限，有限型情形下这样的分支只能是 $T$ 的一个孤立闭点 $t$，并有 $\dim\mathcal O_{X,t}=n+1$。但这样的 $t$ 至少位于一个维数至多 $n+1$ 的几何分支，而 (b) 要求该分支上的点均在 $X'$，矛盾。于是除去余维至少二的参数，$\cod(T_\xi,Y_\xi)\ge n+1$。与光滑开集上的估计合并，分别得到几何 $(R_{n-1})$ 和 $(R_n)$。
+
+\paragraph{补足8.2所用的正则截面前提。}
+在代数闭域上，非正则截面的局部方程落入某个伴随点对应的素理想，等价于超平面包含该伴随点闭包的像。若各伴随点的闭包维数均为正，局部拟有限性保证其像的闭包维数也为正。包含其中任一像的超平面须包含它的线性张成，因而在 $\PD$ 中至少给出两个独立线性约束。伴随点有限，故这些例外参数合起来仍为余维至少二。这是此处对8.2的应用；不能把“无孤立点”直接替换成“无零维伴随点”。同一论证可在几何基变换上检验，正则截面条件沿域的忠实平坦扩张下降。
+
+\subsection*{两个译校检验（非原文）}
+\paragraph{一、维数上界不能读作 $n-1$。}
+取特征零代数闭域上的光滑二次曲面
+\[
+ X=\{x_0x_3-x_1x_2=0\}\subset\mathbb P^3,\qquad n=1.
+\]
+把 $X$ 写成秩一的 $2\times2$ 矩阵的射影簇。梯度给出由可逆线性变换诱导的对偶点，故切平面参数的像是对偶空间中的二次曲面，余维为一。在点 $[1:0:0:0]$ 的切平面 $x_3=0$ 上，截面方程为 $x_1x_2=0$，两条不同直线相交。左右换基可把任意秩一矩阵送到该点，所以每个切平面截面都有此类交点，交点是曲线上的余维一点，其局部环不正则。这意味着 $Z_1$ 包含对偶二次曲面。若按英编稿读成“维数不超过 $n-1$”，本例中此假设为空，但结论不成立。法稿的 $n+1$ 则会检验这个二维分支，并排除此例。
+
+\paragraph{二、底空间无孤立点不排除零维伴随点。}
+取 $n\ge1$、$d\ge n+2$，在 $\mathbb P^{d+1}$ 中用齐次坐标 $[u:x_1:\cdots:x_d:z]$，令 $X$ 由理想
+\[
+ I=(zx_1,\ldots,zx_d,z^2)
+\]
+定义，并令 $f$ 为闭浸入。$X$ 的底空间是 $z=0$ 的 $\mathbb P^d$，没有孤立点。在 $p=[1:0:\cdots:0]$ 之外，某个 $x_i$ 可逆，从而 $z=0$，所以 $X$ 光滑。唯一例外点 $p$ 的余维为 $d>n$，因此 $X$ 几何满足 $(R_n)$；而 (a)、(b) 的低维分支假设都是空的。
+
+但在 $u=1$ 的坐标环中，$z$ 的类非零，且被 $x_1,\ldots,x_d,z$ 全部消去。它在 $p$ 的局部环中仍非零：其消去理想恰为极大理想，局部化所倒置的元素无一在此理想中。每个经过 $p$ 的超平面局部方程都在这个极大理想中，因而消去该非零类，绝非正则截面。经过 $p$ 的超平面在 $\PD$ 中组成一个完整的余维一超平面。于是两条余维至少二的结论都不能仅凭未补足的普通字面假设推出。
+
+\endgroup
+
+\subsec{D18-M-LEGACY：第十七版8.1--8.13旧注原文档案}
+以下逐项保留被替换段落中的全部脚注文字，包含当时的反例、译校解释、疑读与英编者注。这里的“未取得”“待核”“原稿条件下不成立”等表述属于第十七版的证据状态；不是第十八版当前进度，也不推翻现行正文已明示补假设的条件版本。具体替代关系以前面的 D18-M 记录为准。旧正文的原段也完整保存在工程的 \path{integration/middle_legacy_segment.tex}，可与原始 \path{v_dot_early.tex} 逐字比对。旧注按原行位置列出，既不删反例，也不将其改称新证明。
+
+
+\begingroup
+\def\PP{\mathbb P}\def\OO{\mathcal O}\def\Ocal{\mathcal O}
+\def\F{\mathcal F}\def\G{\mathcal G}\def\N{\mathcal N}
+\def\PD{\check P}\def\Pdual{\check P}
+\def\Ys{Y^{\mathrm{sing}}}\def\Ysing{Y^{\mathrm{sing}}}
+\def\Ds{Y^{\mathrm{sup\,sing}}}\def\Ysup{Y^{\mathrm{sup\,sing}}}
+\def\cod{\operatorname{codim}}\def\Sing{\operatorname{Sing}}
+\def\depth{\operatorname{depth}}\def\coprof{\operatorname{coprof}}
+\def\Ass{\operatorname{Ass}}\def\Supp{\operatorname{Supp}}
+\def\Gr{\operatorname{Gr}}\def\Spec{\operatorname{Spec}}\def\Proj{\operatorname{Proj}}
+
+
+\paragraph{旧注 M-001（原文件第57行；译注）。}
+底本首句重复了“使得……的 $\xi\in P^\vee$ 所成的集合”这段引导语。本译文只排一次，在此记录重复。
+
+\paragraph{旧注 M-002（原文件第58行；英编者注）。}
+节号遗漏，请询问 A.G.。〔底本脚注29。〕
+
+\paragraph{旧注 M-003（原文件第59行；译注）。}
+底本为 upper bound（上界），但本段要把“余维至少一”加强为“余维至少二”；正确的方向是改善下界，正文据此订正。
+
+\paragraph{旧注 M-004（原文件第60行；英编者注）。}
+由编辑决定。〔底本脚注30。〕
+
+\paragraph{旧注 M-005（原文件第76行；译注）。}
+底本把给定闭子集与参数例外集均记为 $Z$，中间又出现 $T_{k(\xi)}$；正文将后者明确为给定闭子集 $T$ 的基变换，并不改变所取例外集。余深度公式左端原作 $G_{k(\xi)}$，下一句又作 $T_\xi$；按 $G_\xi=F_{k(\xi)}/\phi_\xi F_{k(\xi)}$ 的正则商关系，分别订为 $F_{k(\xi)}$、$G_\xi$：正则元使局部维数与深度同时降一，故余深度不变。原文“余维为二”过强，例如 $X=P=\mathbf P^3$ 的恒等嵌入具有空异常集；正文仅写所需下界。开头那个难辨的维数阈值仍未补字。
+
+\paragraph{旧注 M-006（原文件第79行；英编者注）。}
+字迹不清，请询问 A.G.。〔底本脚注31。〕
+
+\paragraph{旧注 M-007（原文件第87行；译注）。}
+首句在底本中缺少完整谓语，仍按残句保留。其中 $f_{k(\xi)}$ 订为模 $F_{k(\xi)}$；后面的环境 $P^\vee$、点 $X\in X$ 分别订为 $P$、$x\in X$。“met $(S_2)$”不成英文，且这里正规三维局部环非 Cohen--Macaulay 时深度为2，正则超平面商的维数为2而深度为1，故应为“不满足 $(S_2)$”。这些可确定订正不恢复首句所缺的完整断言。
+
+\paragraph{旧注 M-008（原文件第101行；译校注；原标签D17-E02）。}
+底本把 $T_i$ 写成 $X$ 的分支，且写 $\dim f(X_j)-0$、$\dim_xX-k$；正文依同条的证明和随后的引理，分别订为 $T$ 的分支及两个等号。对 $k>0$，$X$ 的不可约分支本身在 $X$ 中余维为0，不可能符合原句要求；等号则是后文反复使用的条件。完整旧译及原疑字记录保存在报告。
+
+\paragraph{旧注 M-009（原文件第125行；译校注；原标签D17-E02续）。}
+底本假设印作 $\codim(Y,X)\geq k$，按字面不成立：令 $X=\mathbb A^1$、$Y=\{0\}$、$T=X$、$k=1$，则左侧等式成立，却不存在所要求的 $T_i\subset Y$。正文将该假设订为本命题所需的 $\codim(T,X)\geq k$；报告给出局部维数论证明，分别验证(a)与(b)，故此处不只是凭上下文猜换字母。原作者“验证直接”的详略保持，补证另行标明为译校所加。
+
+\paragraph{旧注 M-010（原文件第131行；译注）。}
+底本写 $\dim f(T)=0$、$f(T)\ \mathrm{CH}$，其中英译编者脚注32说“大概是 $H_\xi$”。按引理(b)正在考察的分支及其包含条件，正文明确写 $T_i$ 和 $f(T_i)\subset H_\xi$；不是从字形推断未辨的“CH”。$Z_0$ 的余维只需至少为二，不要求精确等于二。
+
+\paragraph{旧注 M-011（原文件第133行；译注）。}
+底本在第一处余维等式的右端为问号，并附“字迹不清，请询问Grothendieck”，又把两个包含关系写成“不包含”，把 $\dim f(X_j)>0$ 写成 $f(X_j)>0$，把参数开集写成 $P-Z_0$。正文按引理(b)明确所考察的是余维恰为 $k$ 的分支，并订正各关系。固定点不在 $H_\xi$ 中的参数构成开集；包含该点的超平面才组成对偶超平面，故末处必须是包含。
+
+\paragraph{旧注 M-012（原文件第134行；译校注；原标签D17-E02再续）。}
+底本把结论写成“例外集是一个余维至少为二的集合与若干超平面的并”。一般只能断言在 $P^\vee-Z_0$ 上的上述等式。例如令 $X$ 是 $\mathbf P^2$ 中的一条直线，$T=\{x\}$，$k=1$；异常参数是经过 $x$ 的所有直线中除去 $X$ 本身，因而为一条对偶直线删去一点，并不是若干整条超平面与低维集合的并。正文保留证明真正给出的开集上的等式。
+
+\paragraph{旧注 M-013（原文件第139行；英编者注）。}
+字迹不清，请询问 A.G.。〔底本脚注33。〕
+
+\paragraph{旧注 M-014（原文件第141行；英编者注）。}
+请询问 A.G.。〔底本脚注34。〕
+
+\paragraph{旧注 M-015（原文件第151行；译注）。}
+$Z_n$ 的定义和首项假设均有实质缺文，不可据此直接使用判据。底本“余深度 $>d-(k+1)$”后写成“真深度 $\geq k+1$”，方向相反；由余深度等于局部维数减深度，在维数 $d$ 处应为深度 $<k+1$，正文已订正。缺少的谓语和完整判据不据此猜补。
+
+\paragraph{旧注 M-016（原文件第162行；译注）。}
+底本首行作 $k_1$，但此段考察的正是维数至少 $k+1$ 而深度未达到 $k+1$ 的点；按随后维数降一、深度降一的论证订为 $k+1$。$X_{k(\xi)}$、$\prof F)_x$、$G_xix$ 分别订为 $F_{k(\xi)}$、$\prof F_x$、$G_{\xi,x}$。底本末段作 $\prof G_xix\geq k$；这与其声称不满足 $(S_k)$ 相反，且若 $F$ 满足 $(S_k)$、$\dim F_x\geq k+1$ 而此处深度条件失效，就有 $\prof F_x=k$，故 $\prof G_{\xi,x}=k-1<k$。以上为可确定的推演修正，不补全（8.5）已缺失的假设及 $Z_n$ 定义。
+
+\paragraph{旧注 M-017（原文件第174行；译注）。}
+底本(a)中间项印成 $f^*\Omega^1_{P/X}$；正文改为 $f^*\Omega^1_{P/S}$。已给定的是 $X\to P\to S$，且同段先前已写出这条相对微分满射。$X/S$ 光滑使右端局部自由，故该满射局部分裂，核局部自由。
+
+\paragraph{旧注 M-018（原文件第197行；译注）。}
+底本此处将这个子模写成 $\Omega_{X/P}(1)$；但 $f$ 非分歧时 $\Omega^1_{X/P}=0$，实际用于构造的子模是上文已嵌入 $E_X$ 的 $N^\vee(1)$。底本紧接着附有“最后两个符号难辨，请询问 A.G.”的说明。此处译校以两条正合列确定该包含关系。
+
+\paragraph{旧注 M-019（原文件第199行；英编者注）。}
+参见这些笔记的第二部分。〔底本脚注35。〕
+
+\paragraph{旧注 M-020（原文件第199行；译注）。}
+底本这里写 $r-1$，下一页相应的超平面截面条件却写 $d-1$；同一论证末尾明定 $r$ 为环境射影空间的相对维数。此处译校以 $d$ 表示 $X/S$ 的相对维数，截面预期维数应为 $d-1$。另用 $K$ 表示此处的取值域，以免与稍后 $S=\Spec(k)$ 混淆。要求的是“光滑且具有预期维数”，不能删去维数条件。
+
+\paragraph{旧注 M-021（原文件第200行；译注）。}
+底本在“刻画”附近留有一处“字迹不清，请询问 A.G.”标记。这里仅按前后两个完整句之间已经明确的数学关系衔接，不声称复原了难辨原字。这里的光滑是相对于 $S$，不是声称这个闭浸入是光滑态射。
+
+\paragraph{旧注 M-022（原文件第202行；译注）。}
+底本印作“经 $\phi$ 的像”。$\phi$ 是线丛截面，不能在此扮演 $X\to P$ 的角色；应由 $f$ 的切映射以及下一段的线性子空间对应来解释。
+
+\paragraph{旧注 M-023（原文件第204行；译注）。}
+底本写“factor subspaces”，在域上每个向量子空间都有补空间。本译文按其紧接的解释译为向量子空间，不改译为商空间。
+
+\paragraph{旧注 M-024（原文件第206行；译注）。}
+底本第26页此处排作 $\mathbf P(\nu_{X/P}^{\vee}$，还缺少右括号。应为 $\mathbf P(N(-1))\simeq\mathbf P(N)$：一维商的射影化由 $E_X^\vee\twoheadrightarrow N(-1)$ 给出，不能在此把法模改成余法模。
+
+\paragraph{旧注 M-025（原文件第206行；译注）。}
+当 $N$ 的秩为零时，其射影化为空；此处译校明确非空部分，以免把空概形错误地断言为实际维数等于 $r-1$。$N$ 的秩为 $r-d$，所以非空纤维为 $\mathbf P^{r-d-1}$。
+
+\paragraph{旧注 M-026（原文件第210行；英编者注）。}
+请询问 A.G. 这个引文的位置：应在这些笔记稍后的部分。〔底本脚注36。〕
+
+\paragraph{旧注 M-027（原文件第215行；英编者注）。}
+此处有难辨内容，请询问 A.G.。〔底本脚注37。〕
+
+\paragraph{旧注 M-028（原文件第215行；译注）。}
+右端的 $\Omega^1_{X/S}$ 均理解为拉回。截面取相对微分后限制在其零概形上，故更换线丛的局部平凡化不影响其定义；这说明上述 $d\phi$ 记号的确切含义。
+
+\paragraph{旧注 M-029（原文件第229行；译注）。}
+这是原图的校订重排，不是新增数学结论。原图左列顶端为 $\Omega^1_{X/Y}\otimes\mathcal O_Z(1,0)$，但由(a)拉回只能得到 $\Omega^1_{X/S}$。中列顶端原图记作难辨的 $G_{P^\vee/S}\otimes\mathcal O_Z(0,-1)$；由对偶Euler列确定为 $T_{P^\vee/S}\otimes\mathcal O_Z(0,-1)$，这里不声称读出了那个难辨字母。原图用类似比例号的符号表示复合，此处译校记为 $\alpha$。缩写不改变箭头的源与靶。
+
+\paragraph{旧注 M-030（原文件第239行；英编者注）。}
+请询问 A.G.。〔底本脚注38。〕
+
+\paragraph{旧注 M-031（原文件第241行；译注）。}
+底本将这些步骤略称“张量 $\mathcal O_Z$”，此处译校明示拉回。三条列均为局部分裂的局部自由模正合列，所以任意 $Z$ 上的拉回仍正合。由 $0\to\Omega^1_{P^\vee/S}(1)\to E^\vee_{P^\vee}\to\mathcal O_{P^\vee}(1)\to0$ 对偶，正得到 $0\to\mathcal O_{P^\vee}(-1)\to E_{P^\vee}\to T_{P^\vee/S}(-1)\to0$。
+
+\paragraph{旧注 M-032（原文件第242行；译注）。}
+底本此处源项印成 $\mathcal O_Z(0,01)$；由中间竖列及 $L\to B$ 的源确定，应为 $\mathcal O_Z(0,-1)$。
+
+\paragraph{旧注 M-033（原文件第252行；英编者注）。}
+Blass：请检查这里的字母是否正确。〔底本脚注39。〕
+
+\paragraph{旧注 M-034（原文件第252行；译注）。}
+底本写 $\Omega^1_{X/Y}\otimes\mathcal O_Z(1,1)$ 作为此同态的靶，混淆了同态与相应截面的扭转。正确同态为 $L\to D$；用 $\operatorname{Hom}(L,D)=\Gamma(Z,D\otimes L^{-1})$ 转成截面后才出现 $(1,1)$。$\psi$ 与 $\Psi$ 在此处译校统一作 $\Psi$。
+
+\paragraph{旧注 M-035（原文件第259行；译注）。}
+底本最后写作 $\mathbf P(\nu_{x/P}(1))$。由 $N^\vee(1)\subset E_X$ 对偶得到 $E_X^\vee\twoheadrightarrow N(-1)$，故相应闭浸入必须使用 $N(-1)$。作为抽象 $X$-概形，$\mathbf P(N(1))$ 和 $\mathbf P(N(-1))$ 都典范同构于 $\mathbf P(N)$；但用来定义本处闭浸入的商模及扭转必须写正确。
+
+\paragraph{旧注 M-036（原文件第261行；译注）。}
+底本说“像的余维至少一”，未明说闭包；这里按通常的像之维数解释写明闭包。空情形中结论自然成立，但不将空集维数写为 $r-1$。
+
+\paragraph{旧注 M-037（原文件第263行；译注）。}
+底本此处写“余维二”。这里按下文所使用的余维下界表述，不声称必然恰等于二；例如异常集可以为空。这仍是原稿对后文结果的预告，不是此处译校已经证明了所有情形下的超奇异点判据。超奇异点术语沿用原稿后文定义。
+
+\paragraph{旧注 M-038（原文件第276行；译注）。}
+原句用的是“geometrically an ordinary singular point”，即“几何普通奇异点”。底本第73--74页作者另行说明：此前把非退化二次奇异零点叫作“ordinary”与惯用术语冲突，应改称“singular non-supersingular zero”或“singular quadratic non-degenerate zero”。故此处译校采用“非超奇异零点”，限定为这里极化双线性型非退化的二次条件，不把它无条件等同于惯用的普通双点。特征二时奇数个变量的极化型总退化，而 $u^2+vw=0$ 的原点仍是惯用的普通二次奇异点；这一术语差异不能忽略。此处引用后文只为术语校勘，不计作已连续翻译后文。
+
+\paragraph{旧注 M-039（原文件第279行；英编者注）。}
+请询问 A.G.。〔底本脚注40。〕
+
+\paragraph{旧注 M-040（原文件第281行；译注）。}
+原文从“linear subvariety $H^1$ … image of the tangent map”直接连到“of the closure of its … image in $P^\vee$”，其语法、定义和论证均有断裂；并附法文“son image”（它的像）。这里的省略号明确表示底本连接残缺，不代表主动略去一个已读懂的证明。此处译校没有补造常见的对偶切空间定理。
+
+\paragraph{旧注 M-041（原文件第288行；译注）。}
+底本此处未完整引入 $T$，也未明确“其”指代的映射。依该句自身及后续记号，$T$ 是所讨论像闭包的名称；但此处译校不据此认定遗失假设已经恢复。前文 $X/S$ 光滑并不自动保证 $X$ 或 ${Y^{\mathrm{sing}}}$ 整，故必须把“整预概形”视为本段另行要求的条件。后文回指（8.8），本页却没有其标题，此处译校不擅自补号。
+
+\paragraph{旧注 M-042（原文件第290行；译注）。}
+函数域在整性及非空条件下有定义。底本仅说“the field extension $L/K$ defined by $g$”，此处译校显写其含义，不为其他缺失假设作补充。
+
+\paragraph{旧注 M-043（原文件第305行；译注）。}
+原句译为：“条件(i)与(ii)(bis)是等价的”，但随后实际列出五个条件，证明还要求证明(i)$\Rightarrow$(i ter)。后一蕴涵在仅有“$f$非分歧”时为假。取 $k=\mathbb C$、$X=\mathbb G_m$、$f(t)=[1:t^2:t^4]$。此映射是二次平展覆盖后接到圆锥曲线开子集的同构，再接该子集到 $\mathbf P^2$ 的浸入，故非分歧；${Y^{\mathrm{sing}}}\simeq X$，而 $g(t)=[t^4:-2t^2:1]$。其像闭包为光滑对偶圆锥曲线，$L/K=\mathbb C(t)/\mathbb C(t^2)$ 次数为二且可分，因此(i)成立而(i ter)不成立。必须补充能排除此类多重覆盖的适当假设；例如 $f$ 为浸入可排除此反例，但此处译校不恢复缺失的原假设。
+
+\paragraph{旧注 M-044（原文件第307行；译注）。}
+非空的几何开集未必有 $k$-有理点。例如取 $k=\mathbb R$，$X\subset\mathbf P^2$ 为光滑圆锥曲线 $x_0^2+x_1^2+x_2^2=0$。它没有实点，故(ii bis)失败；但在 $\mathbb C$ 上每条切线的接触均是非退化二重接触，故 ${Y^{\mathrm{sup\,sing}}}=\varnothing$ 而 ${Y^{\mathrm{sing}}}\ne\varnothing$，(ii)成立。可通过使用几何点或补入代数闭条件修正这一关系，但原稿缺文未能确定作者究竟采用哪种表述。
+
+\paragraph{旧注 M-045（原文件第313行；译注）。}
+底本此句印成：“这些条件蕴含 ${Y^{\mathrm{sup\,sing}}}\ne\varnothing$〔法文难辨，请询问 A.G.〕$\dim{Y^{\mathrm{sup\,sing}}}\leq r-2$，从而其像余维至少二。”非空性不能由前述条件推出；例如在代数闭特征零域上的光滑非退化圆锥曲线没有超奇异切截面。因此正文仅保留经维数论可核实的条件式：${Y^{\mathrm{sup\,sing}}}$ 为空，或其维数至多为 $r-2$。
+
+\paragraph{旧注 M-046（原文件第322行；译注）。}
+底本原句：“它与(ii)的等价是（8.7）b)的一个直接推论；最后(ii)与(ii bis)的等价，实际上就是 $H^{\mathrm{sup\,sing}}$ 的定义。”后一段中的 $H^{\mathrm{sup\,sing}}$ 疑为 $Y^{\mathrm{sup\,sing}}$，且其有理点断言需要上面说明的基域条件，故不将其作为无条件的正确证明保留在正文。对前一比较，$T\hookrightarrow P^\vee$ 为闭浸入；若 $g$ 泛平展则复合泛非分歧；反之复合泛非分歧蕴含 $g$ 泛非分歧，再由函数域有限可分性得到泛平展。
+
+\paragraph{旧注 M-047（原文件第323行；译注）。}
+以下完整保存原稿的后续证明文字，而不把它作为有效证明：“还须证明(i)$\Rightarrow$(i ter)。显然可以假设 $K$ 是代数闭的；考虑到假设(i)，归结为证明存在一个非空开集 $U$，使得对每个 $\xi\in U(K)$，在 $\xi$ 上方恰有一个 ${Y^{\mathrm{sing}}}(K)$ 的点。这将由（8.7）c)推出；后者更精确地蕴含下面的断言。”原文将先前函数域 $K=k(T)$ 与基域混用，不能把一个一般函数域无说明地“假设为代数闭”；即便将此理解为对基域作代数闭扩张，二次覆盖反例仍不消失。它所援引的(c)切空间结论在此底本中残缺。因此不能据这段话填补唯一性证明。底本末处(i er)显为(i ter)的排印错，本脚注按所列条件编号书写。
+
+\paragraph{旧注 M-048（原文件第330行；译注）。}
+原推论译文：“假设（8.8）的条件(i)成立，令 $U$ 为 $T$ 中相对于 $k$ 光滑的点所成的开集。则 $U\ne0$，${Y^{\mathrm{sing}}}/U\to U$ 为开浸入，因而 ${Y^{\mathrm{sing}}}/U$ 不含 ${Y^{\mathrm{sup\,sing}}}$ 的点。若 $X$ 在 $K$ 上固有，则 $g:{Y^{\mathrm{sing}}}\to T$ 满射，从而 ${Y^{\mathrm{sing}}}/U\to U$ 在 $K$ 上固有，所以 $g:{Y^{\mathrm{sing}}}\to T$ 满射，因此 ${Y^{\mathrm{sing}}}/U\to U$ 是同构，且 $U$ 是具有后一性质的最大开集。”这里两个 $K$ 与前文函数域记号冲突；若讨论 $X$ 的基域，应为 $k$。此外，$U$ 上的态射固有应指相对于 $U$，不能推出其源在 $k$ 上固有。更重要的是，取 $k=\mathbb C$、$X=\mathbb G_m$、$f(t)=[1:t^2:t^4]$，则 $f$ 非分歧，$Q\simeq X$，$g(t)=[t^4:-2t^2:1]$ 到光滑对偶圆锥曲线泛平展、次数二；此时 $U=T$，$Q_U\to U$ 不是开浸入。故此处译校不把这条主结论作为正确正文。反例只针对现存假设，不能否定未知完整假设下的原定理。
+
+\paragraph{旧注 M-049（原文件第332行；译注）。}
+固有的开浸入，其像同时开且闭；再加满射便是同构。此论证没有证明当前 $g$ 满足开浸入假设。若 $Q$ 在 $k$ 上固有而 $T$ 在 $k$ 上分离，则 $g$ 固有；其支配性与固有性使像为全 $T$。这是正确的固有性传递方向。
+
+\paragraph{旧注 M-050（原文件第335行；译注）。}
+原文把“泛平展”重复写了两次，并混用 $k$ 与 $K$；此处只去掉重复，统一基域为 $k$。这里的 $Q$ 在 $k$ 上光滑，光滑性沿平展满覆盖下降；泛平展且泛有限使适当缩小 $T$ 后可除去非平展部分的像，再利用平展像开性得到满射。
+
+\paragraph{旧注 M-051（原文件第337行；译注）。}
+原证明对应段落完整译为：“若 $\xi\in V(K)$，且 $y$ 是其上方 ${Y^{\mathrm{sing}}}(k)$ 的一点，则沿用（8.7）c)的记号，空间 $H^0$ 正是 $T$ 在 $\xi$ 处的切空间；如我们在那里所指出的，$y$ 投影到 $X(k)$ 的点 $x$ 由与 $H^0$ 正交的点确定，因而唯一确定；又因为 ${Y^{\mathrm{sing}}}\subset X\times P^\vee$，所以 $y$ 也唯一确定。这已证明 $g$ 是双有理的，因为它泛平展且泛根性。”但(c)在底本中残缺，$H^0$ 也未完整定义。即使切空间确定了环境射影空间中的 $f(x)$，一般非分歧态射仍可能在此点上方有多个 $x$；二次覆盖反例正是如此。故不能从这段推断双有理性。$K$ 的大小写和 $H^0/H^1$ 差异均是底本原状。
+
+\paragraph{旧注 M-052（原文件第339行；译注）。}
+原文续译：“另一方面，考虑态射 $\psi$（其定义形式显然）：它给每个 $\xi\in U(K)^0$ 对应 $P$ 中与 $U$ 在 $\xi$ 处切空间正交的唯一点 $x=\psi(\xi)$；在 $V$ 上，它与复合 $V\to{Y^{\mathrm{sing}}}|_V\to X$ 一致，第二个箭头为投影。因此，令 $h=(\psi,\mathrm{id}):U\to P\times T$〔字迹不清〕，$g_1=g|_{g^{-1}(U)}:g^{-1}(U)\to U$，则复合 $hg_1:g^{-1}(U)\to P\times T$ 恰为典范包含，因为在 $g^{-1}(V)\xrightarrow{\sim}V$ 上它是如此。于是 $h$ 经由 $P\times T$ 中 $Y^1$ 的概形论闭包 $Y^1$ 分解；所以 $Y^1$（它在上述闭包中开）在 $h$ 下的逆像是 $U$ 的开子集，记为 $U^1$。由于 $hg_1=\text{包含}$，立即可见 $g^1$ 诱导同构 $g^{-1}(u)\xrightarrow{\sim}W$ 是同构；由 $Y^1$ 光滑可知 $W$ 光滑，所以 $W\subset U$。这就证明了（8.9）。”底本在闭包与原子概形处均印作 $Y^1$，并有 $U^1,W,u,g^1$ 混用；这些对象尚不能唯一辨认，未据猜测修复。原脚注41为“请询问 A.G.”，已在此保留。即便处理记号混乱，此段仍需要前面未证明的唯一性与浸入类条件。
+
+\paragraph{旧注 M-053（原文件第342行；译注）。}
+原文：“（8.8）最后的断言 ${Y^{\mathrm{sup\,sing}}}=\varnothing$ 或 $\dim{Y^{\mathrm{sup\,sing}}}=r-2$，以及 $\dim T=r-1$，都是平凡的：第一个来自 ${Y^{\mathrm{sing}}}$ 不可约且维数为 $r$，以及 ${Y^{\mathrm{sing}}}$ 或 ${Y^{\mathrm{sup\,sing}}}$〔字迹不清〕是可逆模某截面 $D$ 的消失所定义的这一事实。”其中 $\dim{Y^{\mathrm{sing}}}=r$ 与前面射影法丛的计算及本句结尾均冲突，应为 $r-1$。底本原脚注42为“请询问 A.G.”。此处译校不将有待辨认的零点对象和截面认定为已经恢复。
+
+\paragraph{旧注 M-054（原文件第358行；译注）。}
+底本说“${Y^{\mathrm{sing}}}-{Y^{\mathrm{sup\,sing}}}$ 是 $g$ 非分歧但不平展的点集”，漏掉了集合差。按（8.7）(b)及 $T\hookrightarrow P^\vee$ 为闭浸入，$Q-R$ 是 $g$ 的非分歧点集，其中还包含平展点，必须去掉平展点集。原稿把 $g^{-1}(U)$ 认作平展域，仍依赖待核的（8.9）背景，此处译校不将两者直接等同。
+
+\paragraph{旧注 M-055（原文件第360行；译注）。}
+原文为“这还蕴含 $g(y)^0$ 是 $T$ 中一个不几何正规、甚至不几何单支的点”；上标 $0$ 含义不清，正文只写像点 $g(y)$。独立核验的理由是：非分歧态射在靶的平展局部可写成闭浸入到一个平展邻域；若靶在该点几何单支，则相应平展局部的约化结构只有一个局部分支。在这里靶整、局部平展代数约化，因而相应局部环整。缩小到该点的整平展邻域后，其维数与源均等于 $\dim T$；闭浸入的像因同维而占满这个整邻域，故其定义理想为零，故此局部闭浸入为同构，原态射在该点平展，矛盾。这个结论使用了本段的支配、同维条件，不能仅凭“非分歧但不平展”推出，也不证明（8.9）的开浸入断言。
+
+\paragraph{旧注 M-056（原文件第362行；译注）。}
+底本句末写“at $x$ [or $x^1$ illegible]”，译为“在 $x$ 处〔或者是 $x^1$，字迹不清〕”；由该句明确讨论另一接触点的语义，正文用 $x^1$。原脚注43为“字迹不清”，保留于此。不密切仍按前文解释为相应二次型非退化，而非随意替换为其他相切阶数定义。
+
+\paragraph{旧注 M-057（原文件第370行；译注）。}
+原文说“（8.8）的条件(iii)与其他条件等价”，继而说明其他条件的否定，即 ${Y^{\mathrm{sing}}}={Y^{\mathrm{sup\,sing}}}$，意味着 ${Y^{\mathrm{sing}}}$〔或 ${Y^{\mathrm{sup\,sing}}}$，字迹不清〕在 $P^\vee$ 中的像余维至少二。若“其他条件”包含(i ter)的双有理性，则这一说法即便在特征零也被二次平展覆盖反例否定；若包含(ii bis)的 $k$-有理点存在，还缺少代数闭等条件。此处译校只保留可由现存整性、维数、有限型和特征零条件证明的等价关系。最后的难辨对象在 $Q=R$ 时无底集差别，故正文写 $Q$，并在此留存原文两种读法。
+
+\paragraph{旧注 M-058（原文件第383行；译注）。}
+此处(a)、(b)指紧接前面的8.11。原文还声称：“事实上，立即可见，因而还可以把(a)说得稍精确些：至多有一个这样的几何奇点。”在目前缺失假设的底本中，不能直接采纳这一加强。前文译校所给 $k=\mathbb C$、$X=\mathbb G_m$、$f(t)=[1:t^2:t^4]$ 的非分歧二次覆盖，对 $a\ne0$，相切超平面 $a^2Z_0-2aZ_1+Z_2=0$ 的拉回为 $(t^2-a)^2$，在 $t=\pm\sqrt a$ 两点各产生一个二重零点，故不能仅从现存非分歧假设推出“至多一个”。这里保留作者原断言以供对照，但不声称已验证它。普通二重点与8.8所讨论非退化性的具体对应也需按完整假设核查。
+
+\paragraph{旧注 M-059（原文件第385行；译注）。}
+此句是对8.11(b)的解释，沿用该推论的特征零背景及相关前提，并非对任意特征的无条件断言。原文下一句“无论是否特征零”修饰的是对这种情形的“例外”评价，不应倒读为已证明任意特征的结论。
+
+\paragraph{旧注 M-060（原文件第386行；译注）。}
+底本这里同时使用 $Y^1$ 和 $Y'$，且未明确标出 $\omega_{X/k}$ 到相应空间的拉回。此公式按可辨印文保留，记号与定义域待核，不把它视为已恢复的精确线丛公式。
+
+\paragraph{旧注 M-061（原文件第392行；脚注）。}
+原脚注44：“字迹不清”。
+
+\paragraph{旧注 M-062（原文件第393行；译注）。}
+此为作者此处暂用的术语，不能直接等同于通常的直纹簇定义。底本后文8.17又明确表示这里的用法与传统用法不一致；此处译校不替作者作未经确认的重新定义。
+
+\paragraph{旧注 M-063（原文件第394行；译注）。}
+底本保留法文词组而未解释其指代；本译不猜作某个数学定理或术语。
+
+\paragraph{旧注 M-064（原文件第395行；脚注）。}
+原脚注45：“字迹不清”。
+
+\paragraph{旧注 M-065（原文件第395行；脚注）。}
+原脚注46：“字迹不清”。
+
+\paragraph{旧注 M-066（原文件第396行；译注）。}
+“直线”句及随后包含关系在底本中断裂，无法据此确定所需浸入、闭性或其他限制；此处只保存可辨残句，不能将其作为完整已证命题使用。
+
+\paragraph{旧注 M-067（原文件第398行；脚注）。}
+原脚注47：“把它做出来。——Blass”。
+
+\paragraph{旧注 M-068（原文件第398行；译注）。}
+原文此处确实写“8.6”，并重新出现“(b)”编号；两者均保留，引用关系待核。作者表达的是对例子存在的确信，不是已完成的构造或证明。
+
+\paragraph{旧注 M-069（原文件第401行；译注）。}
+这是作者对后文的编排指示，并非此处译校已经完成该修改或核验该证明的声明。
+
+\paragraph{旧注 M-070（原文件第403行；脚注）。}
+原脚注48：“请询问 A.G.”。
+
+\paragraph{旧注 M-071（原文件第410行；译注）。}
+底本此处确实印作 $E_k$，而前句为 $(R_k)$。没有可靠依据将二者擅自统一，故保留 $E_k$ 并标待核。这里下标 $k$ 与基域符号 $k$ 沿用底本；$k(\xi)$ 表示点 $\xi$ 的剩余域。
+
+\paragraph{旧注 M-072（原文件第412行；译注）。}
+底本分支记号印作小写 $x'_i$，此处不猜改为 $X'_i$。“直纹的”（ruled）沿用作者的临时用语；8.17明确提醒此用法与传统术语不一致，不能径按通常直纹簇定义理解。
+
+\paragraph{旧注 M-073（原文件第413行；译注）。}
+底本在“维数不超过 $k-1$”后插有“询问 A.G.；字迹不清”。该条件带有原稿疑问，尚未由原始手稿恢复或独立核实；本译保存可辨条件，不把它改写成已经审定的充分条件。
+
+\paragraph{旧注 M-074（原文件第418行；译注）。}
+底本首句的英语语序断裂：“for every $\xi$ geometrically singular the set of $Y_\xi$”；这里按随后的并集陈述整理语序，并不增加数学假设。$T$ 的指代必须沿本节上下文核定，不能误认成前面出现的任意同名集合。
+
+\paragraph{旧注 M-075（原文件第419行；译注）。}
+底本此处误排为 $\phi_{x}i$，按命题开头同一正则性条件订正为 $\phi_\xi$。
+
+\paragraph{旧注 M-076（原文件第421行；译注）。}
+底本第一个余维式印作 $\operatorname{codim}(\operatorname{sing}(Y'),Y'_\xi)$，遗漏前文及后文均有的纤维下标 $\xi$；正文按其所讨论的纤维奇点集补足。此为记号一致性的排印订正，不是对余维等式适用前提的新增证明。
+
+\paragraph{旧注 M-077（原文件第429行；译注）。}
+原文末句为“The conclusion follows easily from this and from 8.4.”。底本未展开由这些事实推出(a)、(b)的逐步推导，此处译校不补造它；特别是 $E_k$ 记号、(b)条件及“直纹”含义仍待核，故不能将本段标作完整独立审定的证明。
+
+\endgroup

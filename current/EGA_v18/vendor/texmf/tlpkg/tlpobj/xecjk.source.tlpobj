@@ -1,0 +1,8 @@
+name xecjk.source
+category Package
+revision 64059
+shortdesc source files of xecjk
+relocated 1
+srcfiles size=129
+ RELOC/source/xelatex/xecjk/xeCJK.dtx
+ RELOC/source/xelatex/xecjk/xeCJK.ins

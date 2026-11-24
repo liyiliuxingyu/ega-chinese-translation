@@ -1,0 +1,17 @@
+{
+  "date": "2026-11-25",
+  "reviewer": "parent",
+  "source": "archive_20261121/03_sources/EGA5_francais.pdf",
+  "physical_pages_actually_viewed": [
+    126,
+    136,
+    140
+  ],
+  "new_module": "continuations/v18_deleted_addenda.tex",
+  "scope": "Compared all three newly translated crossed-out blocks with page images; did not reconstruct overwritten/unreadable parts or infer why the author deleted them.",
+  "specific_checks": [
+    "126: parameter T versus mistyped S; local finite presentation inserts; dual position retained as a reasoned correction, not an invented reading of the tiny mark; rank>=2 limitation visible as translator addition.",
+    "136: missing conditions on D remain unreadable; statement about density not promoted to an unconditional extension theorem; pushforward formula requires O(-1) twist and nonempty parameter fibres.",
+    "140: weak old corollary separated from usable stronger 4.3(a); complete old assertion retained in footnote; explanation ends with the visible unfinished comma."
+  ]
+}

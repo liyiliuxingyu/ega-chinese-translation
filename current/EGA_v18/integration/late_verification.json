@@ -1,0 +1,100 @@
+{
+  "schema": "ega-v18-late-isolated-probe/1",
+  "status": "passed_limited_visual_review",
+  "probe_not_final_combined_book": true,
+  "probe_pdf": "integration/late_probe_build/late_probe.pdf",
+  "probe_pdf_sha256": "483f0149e11aa5925e8df21bf8b066fa0ad05b3c023296ff1926a833313e78c5",
+  "physical_pages": 65,
+  "preamble_sha256": "08c6332cf316afb3110b80a858cb0f4312b7250cbcaf9dbcd40ada89f01918f7",
+  "environment_script_sha256": "5789d403e386f4240d62cceb6ba7e52a9837916a5310486579abcfbf8e10e61c",
+  "final_command": "source scripts/tex_environment.sh\nxelatex -interaction=nonstopmode -halt-on-error -file-line-error -output-directory=integration/late_probe_build integration/late_probe.tex > integration/late_probe_build/pass6.stdout.txt 2>&1",
+  "exit_code": 0,
+  "log_path": "integration/late_probe_build/late_probe.log",
+  "log_sha256": "6d7380ddab9425cc66be6a9d795ba1924f76fece442ab14b0153d01d3360c49e",
+  "error_or_layout_flags": [],
+  "phases": "初始模块编译→修正报告一处长公式断行→加入三块删稿并重排目录/脚注→实际查看后修正一处孤立引标；每步由具体问题驱动。",
+  "viewed_pages": [
+    {
+      "physical_page": 4,
+      "printed_page_label": "2",
+      "image": "integration/late_probe_views/probe_004.png",
+      "image_sha256": "ec4e90672f1cbddff418d59e17d90b9590374687b43a9b899c2f72db6465767e",
+      "observation": "引理16.3的秩减二、标准奇偶二次型、三条长脚注均可读；无重叠或裁切。",
+      "final_verification": "先实际查看；最终渲染PNG逐字节相同，沿用既有视觉检查"
+    },
+    {
+      "physical_page": 6,
+      "printed_page_label": "4",
+      "image": "integration/late_probe_views/probe_006.png",
+      "image_sha256": "dbbb24d111d83e2dc717332aca6f1477a79ed9d362d79b01e5fe0c545e5e28cb",
+      "observation": "16.9四项条件及恒秩限定清楚，公式与脚注排列正常。",
+      "final_verification": "先实际查看；最终渲染PNG逐字节相同，沿用既有视觉检查"
+    },
+    {
+      "physical_page": 34,
+      "printed_page_label": "32",
+      "image": "integration/late_probe_views/probe_034.png",
+      "image_sha256": "0ed99eaa99d0665f92d2a5d72e0fcbd3df3d2de668b7acfc5c02f196158d7a9b",
+      "observation": "命题4.3总假设和(a)有限表示分层可读；页面下部的源注均在版心内。",
+      "final_verification": "先实际查看；最终渲染PNG逐字节相同，沿用既有视觉检查"
+    },
+    {
+      "physical_page": 46,
+      "printed_page_label": "44",
+      "image": "integration/late_probe_views/probe_046.png",
+      "image_sha256": "3380f05e51be4595b0ce9de61e862741e0677b0da23cdeb4513edc94fd6f80b2",
+      "observation": "删划附录中126参数模对偶、136未辨条件与分解式可读；将V18-D136-01引标前移后孤立上标已消失。",
+      "final_verification": "最终修订后重新实际查看"
+    },
+    {
+      "physical_page": 47,
+      "printed_page_label": "45",
+      "image": "integration/late_probe_views/probe_047.png",
+      "image_sha256": "1f3ce01b7ad2d65e5cc8e040127a7bc24768b2254bf4c0c2693252d5072cf9f6",
+      "observation": "136负扭转恢复式、140旧推论不可采用的状态、正确加强条件、原弱陈述脚注及未竟逗号均可读。",
+      "final_verification": "先实际查看；最终渲染PNG逐字节相同，沿用既有视觉检查"
+    },
+    {
+      "physical_page": 52,
+      "printed_page_label": "50",
+      "image": "integration/late_probe_views/probe_052.png",
+      "image_sha256": "89f659016ab030609fa959ee851f3b32d25bc6b40eb26040fe13048bdc9c3303",
+      "observation": "L18-070过长二次型/半判别式公式拆为两行后处于版心内，数学内容与原式一致。",
+      "final_verification": "先实际查看；最终渲染PNG逐字节相同，沿用既有视觉检查"
+    }
+  ],
+  "remaining_scope": "只检查上述代表页；父代理负责最终合订稿/报告和单文件的全局构建与视觉检查。没有宣称这65页全部逐页目视或全部数学独立审定。",
+  "source_preservation": {
+    "batch_modules": 19,
+    "report_sections_from_batches": 16,
+    "source_note_count": 146,
+    "display_blocks_and_diagrams": 95
+  },
+  "source_display_exact_raw_blocks": 94,
+  "source_display_layout_only_blocks": 1,
+  "existing_notes_retained": 146,
+  "new_deleted_draft_notes": 9,
+  "frozen_content_sha256s": {
+    "continuations/v18_batch069.tex": "24102f3cad310caf894e1afad62b1d48a67c0e4b722db20bebf7b833b66fccea",
+    "continuations/v18_batch070.tex": "b99730980b769b4db89314bcfa2f64ba69afae71ac16760a864c25b5ec2beb0d",
+    "continuations/v18_batch071.tex": "3e482c0169d3514bd3e8cc019f569377254427597dd1012ab92db490adb18a20",
+    "continuations/v18_batch072.tex": "bd487c7d440bd7a85d3d5920adcca9b54f2e76be8dca6c86ce0ca8e39d3c38d1",
+    "continuations/v18_batch073.tex": "95860506531712cc1141f4c89cb0e187cea3c066b74b1c0a96ab9ee019b8bd06",
+    "continuations/v18_batch074.tex": "1195957b1e9a7ecc40795714bbeb607ac0eb227d1f0539092543e7cf40ee7f01",
+    "continuations/v18_batch075.tex": "506f330afc82809c47fe7d9ef329fe5fb5f4e09a31744ee1544bca2e83f3db38",
+    "continuations/v18_batch076.tex": "7fcf5f8d77d63e2e23a90d1983b942f834e759926192271205a3da14b265155c",
+    "continuations/v18_batch077.tex": "be222bf6b1351f5768cc6f96cfe36df02d0954c832997f431840f51b67e41241",
+    "continuations/v18_batch078.tex": "e62a7a0c9e1974937ca745cf0cea7f304a30bc9538eec08ea768682bf9cbf33e",
+    "continuations/v18_batch079.tex": "5c35d8c0fdba477aaa2432569384d7ec6d99dc6d0ae7e3ebffae784d8665e576",
+    "continuations/v18_batch080.tex": "addbecf47db175eda72169ad4431935b33a5d1a75cc2961eb6bdcfdb2251b7c6",
+    "continuations/v18_batch081.tex": "22f8203527ca64667e4884b88e9621a13570bb7b25f5735933d2d42a21e8e7b6",
+    "continuations/v18_batch082.tex": "6db45fc6201623f4a24552270d341f481bc31886992f3e4f39f2eea5811ffcd8",
+    "continuations/v18_batch083.tex": "2eb2ee230860d06407bb8bfb84228a85f45ad72bdf1b31800c1fd1f86238a841",
+    "continuations/v18_batch084.tex": "e326d1304fba97d22c5f49b320bf96caac08ee51686f02611def4ae3de878bc5",
+    "continuations/v18_batch085.tex": "01530676eeb85a54c62fbf1b35cef7de0cde43ca683bca25e1001148ce9bf75a",
+    "continuations/v18_batch086.tex": "288acdea9c9f722c7b0cd6256d710a57f5d855e4dfd9376e090fb42c1f13ed2e",
+    "continuations/v18_batch087.tex": "786ccd65e21985b5b1e909fc7ecbbe167b9907f5795492ab37ece1218ced0781",
+    "continuations/v18_deleted_addenda.tex": "86e8bfd384111ffe7d018c2ab6ce27b089e31d49c3c8f8dbdfe6241b2b3739fb",
+    "reports/v18_late_notes.tex": "93d668970acdf52dd253076fe3b1328b3bdb1d3a7a6e465ec901aacff5eb9df7"
+  }
+}

@@ -1,0 +1,101 @@
+% 底本 EGAIV.1.pdf，上传PDF第120--122页，分册印刷第121--123页。
+\subsection{拓扑环上的连续导子}
+\source{第四卷第一部分，分册印刷第121--123页；上传PDF第120--122页}
+\egap{20.3.1}
+给定两个拓扑环 $A,B$，它们的拓扑如往常一样均为线性拓扑，记 $\HomCont(A,B)$ 为从 $A$ 到 $B$ 的连续环同态的集合。给定拓扑环 $A$，拓扑 $A$-环的范畴由 $A$-环的范畴（18.1.4）得到：把其中的“环”换为“拓扑环”，“同态”换为“连续同态”。若 $B,C$ 为两个拓扑 $A$-环，记 $\HomCont_A(B,C)$ 为连续 $A$-同态的集合。
+
+设 $A$ 为拓扑环，$B$ 为拓扑 $A$-环，$L$ 为拓扑 $B$-双模。记 $\DerCont_A(B,L)$ 为从 $B$ 到 $L$ 的连续 $A$-导子的集合。它是 $\Der_A(B,L)$ 的子群；若 $A,B$ 交换且 $L$ 为 $B$-模，则它也是一个子 $B$-模，因而也是子 $A$-模。
+
+\egap{20.3.2}
+在（20.1.1）中把“环”换为“拓扑环”、“同态”换为“连续同态”，并使核带子空间拓扑，命题仍成立。相应地，将 $\Der$ 换为 $\DerCont$，“双模”换为“拓扑双模”，也得到（20.1.3）的连续形式。
+
+对（20.1.4），若 $L$ 带 $E$ 诱导的子空间拓扑，且 $C$ 带满同态 $p:E\to C$ 的商拓扑，则同样有连续形式：将“$A$-等价”换为“连续 $A$-等价”，便得到 $\DerCont_A(C,L)$ 与连续自 $A$-等价群的同构。
+\cmt{I9-E03}{原文仅补充“$p$ 连续”，没有说明在由连续 $D':E\to L$ 下降为 $D:C\to L$ 时所需的商拓扑条件。单独的连续满同态不够。正文写入商拓扑假设；报告I9-E03给出非商拓扑时的反例：$C=k[x_1,x_2,\ldots]$ 用尾变量理想拓扑，$L=k$ 离散，$E=C\oplus L$ 离散，$D(x_i)=1$。相应 $E$ 的自等价连续，但 $D:C\to L$ 不连续。}
+
+对（20.1.5）、（20.1.6），取 $\mathrm D_C(L)$、$\mathrm D_B(L)$ 上的拓扑为 $C\times L$、$B\times L$ 的乘积拓扑，也得到相同的连续形式。
+
+\egas{20.3.3}{命题}
+设 $A$ 为拓扑环，$B$ 为拓扑 $A$-环，$L$ 为被 $B$ 的某个开双边理想从左右零化的离散拓扑 $B$-双模。若 $B$ 中每个开双边理想的平方仍为开理想，则
+\[
+ \DerCont_A(B,L)=\Der_A(B,L).
+\]
+事实上，取零化 $L$ 的开双边理想 $\mathfrak k$。对任意 $A$-导子 $D:B\to L$，由Leibniz公式得到
+\[
+ D(\mathfrak k^2)\subseteq\mathfrak k D(\mathfrak k)+D(\mathfrak k)\mathfrak k=0.
+\]
+因 $\mathfrak k^2$ 为开理想而 $L$ 离散，$D$ 连续。
+
+\egap{20.3.4}
+把（20.2.1）中的“环”、“双模”、“同态”依次换为“拓扑环”、“拓扑双模”、“连续同态”，并把 $\Der$ 换为 $\DerCont$，该条的全部结论仍成立。
+
+\egas{20.3.5}{命题}
+设 $A$ 为拓扑环，$B$ 为拓扑 $A$-环，$L$ 为被 $B$ 的某个开双边理想从左右零化的离散拓扑 $B$-双模。有典范同构
+\begin{equation}
+ \varinjlim_{(\mathfrak j,\mathfrak k)}
+ \Der_{A/\mathfrak j}(B/\mathfrak k,L)
+ \simeq\DerCont_A(B,L),
+ \tag{20.3.5.1}
+\end{equation}
+其中左边沿\emph{开双边理想}的偶 $(\mathfrak j,\mathfrak k)$ 取归纳极限；这些理想满足
+\[
+ \mathfrak kL=L\mathfrak k=0,\qquad
+ \mathfrak jB\subseteq\mathfrak k,\qquad B\mathfrak j\subseteq\mathfrak k,
+\]
+并按理想反向包含排序。
+\cmt{I9-T04}{原陈述的指标集合一句漏写“开”；随后的证明把 $A/\mathfrak j$、$B/\mathfrak k$ 当作离散商环，且（18.5.1）明确使用开理想。这里将其写明。证明中也明确把所选开理想缩小至零化 $L$ 的开理想之内，以使商双模结构有定义。}
+
+由于这两个商环离散，存在典范同态
+\[
+ w_{\mathfrak j,\mathfrak k}:\Der_{A/\mathfrak j}(B/\mathfrak k,L)
+ \longrightarrow\DerCont_A(B,L),
+\]
+由（20.3.4）它们组成归纳系，于是得到（20.3.5.1）。若 $\mathfrak k'\subseteq\mathfrak k$，商映射 $B/\mathfrak k'\to B/\mathfrak k$ 满射，故导子的预复合同态单射；若 $\mathfrak j'\subseteq\mathfrak j$，限制基环得到的导子群同态也单射（20.2.1）。因此（20.3.5.1）单射。
+
+反之，给定连续 $A$-导子 $D:B\to L$，其核包含一个开双边理想。将它与一个零化 $L$ 的开双边理想相交，得到 $\mathfrak k_0\subseteq\Ker D$ 且 $\mathfrak k_0L=L\mathfrak k_0=0$。由结构同态的连续性，可取 $A$ 的开双边理想 $\mathfrak j_0$，使 $\mathfrak j_0B,B\mathfrak j_0\subseteq\mathfrak k_0$。于是 $D$ 来自 $B/\mathfrak k_0$ 的一个 $A/\mathfrak j_0$-导子，（20.3.5.1）因而满射。
+
+\egas{20.3.6}{命题}
+设 $u:A\to B$、$v:B\to C$ 为连续环同态，$L$ 为被 $C$ 的某个开双边理想从左右零化的离散 $C$-双模。有典范正合列
+\begin{equation}
+\begin{aligned}
+ &0\longrightarrow\DerCont_B(C,L)\xrightarrow{u^0}\DerCont_A(C,L)\\
+ &\qquad\xrightarrow{v^0}\DerCont_A(B,L)\xrightarrow{\partial}\Exantop_B(C,L)\\
+ &\qquad\xrightarrow{u^1}\Exantop_A(C,L)\xrightarrow{v^1}\Exantop_A(B,L).
+\end{aligned}
+\tag{20.3.6.1}
+\end{equation}
+这里 $\partial$ 由（20.2.2.1）的连接同态通过归纳极限得到。此正合列在被开双边理想零化的离散 $C$-双模的范畴中关于 $L$ 具有函子性。
+
+这是对（20.2.2）应用滤过归纳极限函子的正合性得到的。
+
+\egas{20.3.7}{推论}
+设 $A,B,C$ 为交换拓扑环，$u:A\to B$、$v:B\to C$ 为连续同态，$L$ 为被 $C$ 的某个开理想零化的离散 $C$-模。有关于 $L$ 函子性的典范 $A$-模正合列
+\begin{equation}
+\begin{aligned}
+ &0\longrightarrow\DerCont_B(C,L)\xrightarrow{u^0}\DerCont_A(C,L)\\
+ &\qquad\xrightarrow{v^0}\DerCont_A(B,L)\xrightarrow{\partial}\Exalcotop_B(C,L)\\
+ &\qquad\xrightarrow{u^1}\Exalcotop_A(C,L)\xrightarrow{v^1}\Exalcotop_A(B,L).
+\end{aligned}
+\tag{20.3.7.1}
+\end{equation}
+
+\egas{20.3.8}{推论}
+在（20.3.6）（分别在（20.3.7））的假设下，有关于 $L$ 函子性的典范正合列
+\begin{equation}
+\begin{aligned}
+0\longrightarrow\DerCont_B(C,L)&\longrightarrow\DerCont_A(C,L)
+\longrightarrow\DerCont_A(B,L)\\
+&\longrightarrow\Exantop_{B/A}(C,L)\longrightarrow0,
+\end{aligned}
+\tag{20.3.8.1}
+\end{equation}
+分别为
+\begin{equation}
+\begin{aligned}
+0\longrightarrow\DerCont_B(C,L)&\longrightarrow\DerCont_A(C,L)
+\longrightarrow\DerCont_A(B,L)\\
+&\longrightarrow\Exalcotop_{B/A}(C,L)\longrightarrow0.
+\end{aligned}
+\tag{20.3.8.2}
+\end{equation}
+\cmt{I9-T05}{原文将假设误引为（20.3.5）（分别（20.3.6））；前者没有 $C$，后者也不是交换代数版本。按实际源靶改为（20.3.6）、（20.3.7）。}
+原著将与（20.2.5）类似的交换图留给读者书写。

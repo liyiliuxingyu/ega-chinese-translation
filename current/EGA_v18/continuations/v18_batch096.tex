@@ -1,0 +1,26 @@
+% V18 integration of Dot batch 096; immutable source SHA256 8af4f4fac86ea95e128c9560d9ae10736b2195607321122dde531b3eeda47787
+\begingroup
+% These definitions have only group-local scope; the shared preamble is untouched.
+\def\OO{\mathcal O}\def\FF{\mathcal F}\def\GG{\mathcal G}
+\def\PP{\mathbf P}\def\calP{\mathcal P}\def\dd{\delta}
+\def\Div{\operatorname{Div}}\def\depth{\operatorname{depth}}
+\def\pr{\operatorname{pr}}\def\coker{\operatorname{coker}}
+\egasection{§6\quad 任意超平面截面的连通性}
+这里将泛超平面截面的几何连通性判据（3.3）与 Zariski 连通性定理结合，得到任意超平面截面的连通性结论。
+
+\egas{6.1}{命题}
+设 $S=\Spec k$，$k$ 为代数闭域，$X$ 在 $k$ 上固有。\footnote{法24页右缘在域的假设之后手写补入 $X$ 的固有性；法25页证明又明确以 $X$ 在 $k$ 上固有为前提。英译在正文方括号保留这一条件，脚注称字迹不清。这里将它列入正文，不视为可选条件。}
+设对 $X$ 的每个不可约分支 $X_i$，均有 $\dim\overline{f(X_i)}\geq2$。再设不存在闭子集 $Z\subset X$，使得 $\dim\overline{f(Z)}\leq0$ 且 $X\setminus Z$ 不连通。在这些条件下，对每个 $\xi\in P^\vee$，纤维 $Y_\xi$ 都在 $k(\xi)$ 上几何连通。\footnote{法24末以 $f(X_i)$ 而非 $f(X)$ 为像；法25首行的排除对象是闭子集 $Z$，不是 $X$ 的连通分支。空集也纳入这里的删集条件。此处 $f(X_i)$ 以及 $f(Z)$ 在固有假设下都已闭，写闭包不改变条件。}
+
+\begin{proof}
+由于每个 $f(X_i)$ 都不是有限集，$Y$ 的每个不可约分支都占优于 $P^\vee$。另一方面，$Y\to P^\vee$ 是固有态射：$Y\to X$ 是固有的，$X$ 在 $k$ 上固有，而 $P^\vee$ 在 $k$ 上分离。按（3.3），$Y\to P^\vee$ 的泛纤维 $Y_\eta$ 几何连通。最后，$P^\vee$ 正则，因而几何单支。应用正式出版的 EGA~IV 第三分册命题（15.5.3），即 Zariski 连通性定理的一种推论，可知 $Y\to P^\vee$ 的所有纤维都几何连通。\footnote{法25及英18均引作（15.6.3）。正式 EGA~IV\textsubscript{3} 印刷页237的（15.6.3）讨论沿截面的纤维连通分支与普遍开性，并非这里所需断言；印刷页233的（15.5.3）恰给出本证明需要的下半连续性。本文按正式出版编号订正，不断定手稿错号产生的原因。}
+\end{proof}
+
+\paragraph{作者给编稿者的说明.}
+同类证明还可沿（4.4）的方向推广（6.1）；若不打算做这个练习，至少应作为备注提及。也要说明，（6.1）并不排除维数超过预期的超平面截面。从编排上看，把包括（3.3）和（4.4）在内的所有连通性问题集中到同一节，也许更清楚。\footnote{法25的前后两个命题号有手改；依本段位置和英译读为6.1。作者说“可以推广”并未给出精确命题与证明；此处不把它写成已建立的结果。参考本系列第93批对4.4适用范围的校记。}
+
+\par\noindent\textit{译校补证另见核查报告。}\cmt{D18-096-R}{从泛纤维推出全部纤维的补证及删去固有性的反例完整保存在本版核查报告“D18-096”条；其中译校补证为非原文。}
+\subsection*{法25页末的版面校记}
+页末下一节标题整行被划销，印号为旧号6；其上方可见手补“或多截面”。可辨题意为“应用于构造指定类型的超平面截面或多截面”。英18页底、英19页顶把它排为第7节，法26页后半也有相应的第7节标题。这里只登记页末标题，不将划销标题计作另一节；第7.1条接在下文。
+
+\endgroup
