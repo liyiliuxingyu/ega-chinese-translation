@@ -1,0 +1,159 @@
+name: Import EGA snapshot 2026-11-24
+
+on:
+  workflow_dispatch:
+
+permissions: {}
+
+concurrency:
+  group: ega-import-snapshot-20261124
+  cancel-in-progress: false
+
+jobs:
+  import-snapshot:
+    if: ${{ github.repository == 'liyiliuxingyu/ega-chinese-translation' }}
+    runs-on: ubuntu-24.04
+    timeout-minutes: 45
+    permissions:
+      contents: write
+    outputs:
+      commit_sha: ${{ steps.commit.outputs.commit_sha }}
+    env:
+      EXPECTED_REPOSITORY: liyiliuxingyu/ega-chinese-translation
+      SNAPSHOT_TAG: snapshot-20261124
+      SNAPSHOT_ASSET: EGA-projects-with-Dot-20261124.zip
+      SNAPSHOT_SHA256: 5b52a470d5247737d11cb6b5d6eb661a0dbe46abc9f76a3e55181ee1869d90d4
+    defaults:
+      run:
+        shell: bash
+
+    steps:
+      - name: Confirm repository identity
+        run: |
+          set -euo pipefail
+          test "$GITHUB_REPOSITORY" = "$EXPECTED_REPOSITORY"
+
+      - name: Check out main
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+        with:
+          ref: main
+          fetch-depth: 1
+          persist-credentials: true
+
+      - name: Download and reconstruct the exact 18 draft release parts
+        id: download
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          download_root="$(mktemp -d "$RUNNER_TEMP/ega-import-20261124.XXXXXX")"
+          export DOWNLOAD_ROOT="$download_root"
+          mkdir "$download_root/parts"
+          gh release download "$SNAPSHOT_TAG" \
+            --repo "$EXPECTED_REPOSITORY" \
+            --pattern "${SNAPSHOT_ASSET}.part*" \
+            --dir "$download_root/parts"
+          python3 - <<'PY'
+          import hashlib
+          import os
+          from pathlib import Path
+
+          root = Path(os.environ['DOWNLOAD_ROOT'])
+          asset = os.environ['SNAPSHOT_ASSET']
+          parts = root / 'parts'
+          expected = [f'{asset}.part{number:03d}' for number in range(1, 19)]
+          actual = {path.name for path in parts.iterdir()}
+          if actual != set(expected):
+              raise SystemExit(f'Expected exactly 18 named parts; missing={sorted(set(expected) - actual)}, extra={sorted(actual - set(expected))}')
+          expected_sizes = [33554432] * 17 + [6883320]
+          if sum(expected_sizes) != 577308664:
+              raise SystemExit('Internal ZIP size assertion failed')
+          for name, size in zip(expected, expected_sizes, strict=True):
+              path = parts / name
+              if path.is_symlink() or not path.is_file() or path.stat().st_size != size:
+                  raise SystemExit(f'Invalid part type or size: {name}; expected {size} bytes')
+          archive = root / asset
+          digest = hashlib.sha256()
+          with archive.open('xb') as output:
+              for name in expected:
+                  with (parts / name).open('rb') as source:
+                      for block in iter(lambda: source.read(1024 * 1024), b''):
+                          output.write(block)
+                          digest.update(block)
+          if archive.stat().st_size != 577308664 or digest.hexdigest() != os.environ['SNAPSHOT_SHA256']:
+              raise SystemExit('Reconstructed ZIP size or SHA-256 mismatch')
+          print(f'Reconstructed {archive.name}: {archive.stat().st_size} bytes, SHA-256 {digest.hexdigest()}')
+          PY
+          printf 'archive_path=%s\n' "$download_root/$SNAPSHOT_ASSET" >> "$GITHUB_OUTPUT"
+
+      - name: Import the pinned snapshot and verify every payload file
+        env:
+          SNAPSHOT_ARCHIVE_PATH: ${{ steps.download.outputs.archive_path }}
+        run: |
+          set -euo pipefail
+          python3 tools/import_release_snapshot.py "$SNAPSHOT_ARCHIVE_PATH" \
+            --sha256 "$SNAPSHOT_SHA256" \
+            --file-count 2347 \
+            --total-bytes 634920446
+          python3 tools/verify_repository.py --strict
+
+      - name: Commit verified files and push main
+        id: commit
+        run: |
+          set -euo pipefail
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add --force --all
+          if git diff --cached --quiet; then
+            printf '%s\n' 'No staged changes; keeping the existing commit.'
+          else
+            diff_status=$?
+            if [ "$diff_status" -ne 1 ]; then
+              exit "$diff_status"
+            fi
+            git commit -m 'Import EGA and Dot engineering snapshot 2026-11-24'
+          fi
+          git push origin HEAD:main
+          final_commit="$(git rev-parse --verify HEAD)"
+          printf 'commit_sha=%s\n' "$final_commit" >> "$GITHUB_OUTPUT"
+          printf 'Imported commit: %s\n' "$final_commit"
+          printf 'Verified snapshot commit: `%s`\n' "$final_commit" >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Upload the full ZIP and checksum without deleting recovery parts
+        env:
+          GH_TOKEN: ${{ github.token }}
+          SNAPSHOT_ARCHIVE_PATH: ${{ steps.download.outputs.archive_path }}
+        run: |
+          set -euo pipefail
+          archive_directory="$(dirname -- "$SNAPSHOT_ARCHIVE_PATH")"
+          (
+            cd "$archive_directory"
+            sha256sum -- "$SNAPSHOT_ASSET" > "$SNAPSHOT_ASSET.sha256"
+          )
+          for publish_path in "$SNAPSHOT_ARCHIVE_PATH" "$SNAPSHOT_ARCHIVE_PATH.sha256"; do
+            asset_name="$(basename -- "$publish_path")"
+            if gh release upload "$SNAPSHOT_TAG" "$publish_path" --repo "$EXPECTED_REPOSITORY"; then
+              printf 'Uploaded %s\n' "$asset_name"
+            else
+              printf 'Upload failed; checking whether the same asset already exists: %s\n' "$asset_name"
+              existing_directory="$(mktemp -d "$RUNNER_TEMP/ega-existing-asset.XXXXXX")"
+              gh release download "$SNAPSHOT_TAG" \
+                --repo "$EXPECTED_REPOSITORY" \
+                --pattern "$asset_name" \
+                --dir "$existing_directory"
+              cmp -- "$publish_path" "$existing_directory/$asset_name"
+              printf 'Existing asset is byte-identical: %s\n' "$asset_name"
+            fi
+          done
+
+      - name: Publish the draft release for the resulting commit
+        env:
+          GH_TOKEN: ${{ github.token }}
+          IMPORT_COMMIT_SHA: ${{ steps.commit.outputs.commit_sha }}
+        run: |
+          set -euo pipefail
+          test -n "$IMPORT_COMMIT_SHA"
+          gh release edit "$SNAPSHOT_TAG" \
+            --repo "$EXPECTED_REPOSITORY" \
+            --draft=false \
+            --target "$IMPORT_COMMIT_SHA"
