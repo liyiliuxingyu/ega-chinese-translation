@@ -1,0 +1,300 @@
+% Continuation from the uploaded EGAIV.1.pdf, PDF pp.21--27 (printed pp.22--28).
+\setcounter{section}{15}
+\section{诺特局部环中的维数与深度}
+\renewcommand{\newscope}{0-IV}
+\subsection{环的维数}
+\source{EGA IV 第一部分，第0章，印刷第22--25页；上传PDF第21--24页}
+
+\egap{16.1.1}
+环 $A$ 的\textbf{维数}（或\textbf{Krull维数}），记作 $\dim A$，是其谱 $\Spec(A)$ 的（组合）维数（14.2.1）。\cmt{D4-T01}{这里所引原号为（14.2.1），该处定义的是余维数；组合维数的定义在（14.1.2）。正文保留原引号。}
+由于 $\Spec(A)$ 的不可约闭集为 $V(\pp)$，其中 $\pp$ 为 $A$ 的素理想（Bourbaki，\textit{交换代数}，第二章，§4，第3目，命题14的推论1），也就是说，$\dim A$ 是 $A$ 的素理想链
+\[
+ \pp_0\subsetneq\pp_1\subsetneq\cdots\subsetneq\pp_m
+\]
+的长度（14.1.1）的上确界。若 $A\ne0$，则 $\dim A\geq0$。非零Artin环（特别地，域）的维数为零（Bourbaki，\textit{交换代数}，第四章，§2，第5目，命题7）；不是域的Dedekind环（特别地，$\mathbf Z$ 或域 $k$ 上的单变元多项式环 $k[T]$）的维数为1（同书，第七章，§2）。诺特环不一定具有有限维数[30]。
+若 $(\pp_\alpha)$ 为 $A$ 的极小素理想族，则由（14.1.2.1），
+\begin{equation}
+ \dim A=\sup_\alpha\dim(A/\pp_\alpha).
+ \tag{16.1.1.1}
+\end{equation}
+
+\egap{16.1.2}
+对于 $A$ 的任意理想 $\mathfrak a$，$A/\mathfrak a$ 的素理想与 $A$ 中包含 $\mathfrak a$ 的素理想一一对应，故
+\begin{equation}
+ \dim(A/\mathfrak a)\leq\dim A.
+ \tag{16.1.2.1}
+\end{equation}
+若进一步假定 $\mathfrak a$ 不包含于 $A$ 的任何极小素理想 $\pp_\alpha$，则任意一条由包含 $\mathfrak a$ 的素理想组成的链，都可添入某个 $\pp_\alpha$ 而加长，因而
+\begin{equation}
+ 1+\dim(A/\mathfrak a)\leq\dim A.
+ \tag{16.1.2.2}
+\end{equation}
+
+\egap{16.1.3}
+若 $S$ 是 $A$ 的乘法子集，$S^{-1}A$ 的素理想与 $A$ 中不交于 $S$ 的素理想一一对应，故
+\begin{equation}
+ \dim(S^{-1}A)\leq\dim A.
+ \tag{16.1.3.1}
+\end{equation}
+对 $A$ 的每个素理想 $\pp$，按定义（14.2.1），
+\begin{equation}
+ \dim A_{\pp}=\codim(V(\pp),\Spec A).
+ \tag{16.1.3.2}
+\end{equation}
+这个数也称为素理想 $\pp$ 的\textbf{高度}，记作 $\htp(\pp)$。更一般地，对于 $A$ 的理想 $\mathfrak a$，称
+\begin{equation}
+ \htp(\mathfrak a)=\codim(V(\mathfrak a),\Spec A)
+ \tag{16.1.3.3}
+\end{equation}
+为 $\mathfrak a$ 的高度。若 $(\pp_\lambda)$ 为包含 $\mathfrak a$ 的素理想中所有极小者组成的族，则由（14.2.1），
+\begin{equation}
+ \htp(\mathfrak a)=\inf_\lambda\htp(\pp_\lambda).
+ \tag{16.1.3.4}
+\end{equation}
+并且有
+\begin{equation}
+ \dim A=\sup_{\mm}\dim A_{\mm},
+ \tag{16.1.3.5}
+\end{equation}
+其中 $\mm$ 遍历 $A$ 的极大理想。
+
+\egap{16.1.4}
+对于 $A$ 的每个素理想 $\pp$，有（14.2.2.2）
+\begin{equation}
+ \dim A_{\pp}+\dim(A/\pp)\leq\dim A.
+ \tag{16.1.4.1}
+\end{equation}
+当 $\Spec A$ 是悬链的（分别地，等维的、等余维的、双等维的）时，称 $A$ 具有同一性质。当 $A$ 诺特且双等维时，对每个素理想，式（16.1.4.1）的两端相等（14.3.5）。\cmt{D4-H01}{本句中的“双等维”须结合前文（14.3.3）的译校注阅读；不能只采用该条中有问题的较弱条件b）来代替等长极大链条件。}
+
+对任意理想 $\mathfrak a$，$A/\mathfrak a$ 的素理想对应于 $A$ 中包含 $\mathfrak a$ 的素理想，因此若 $A$ 悬链，则 $A/\mathfrak a$ 也悬链。同样，对任意乘法子集 $S$，由素理想的对应关系可知，$A$ 悬链蕴含 $S^{-1}A$ 悬链。
+
+此外，$A$ 中包含于素理想 $\pp$ 的素理想，与 $A_{\pp}$ 的素理想一一对应。因此，$A$ 悬链的充要条件是每个 $A_{\pp}$ 都悬链。于是，说 $A$ 悬链，就是说（14.3.2）、（16.1.3.2）对于任意两个素理想 $\qq\subset\pp$，有
+\cmt{D4-A01}{作者正式勘误 \hyperlink{ErrIV:5}{Err$_{\mathrm{IV}}$，5}（EGA IV第四部分，印刷第347页）要求将本句的“说 $A$ 悬链”改为“说一个整环 $A$ 悬链”。没有整环条件，上述等价表述一般不成立。这里保留初版原句，同时明示作者修订；详见本版核查报告。}
+\begin{equation}
+ \dim A_{\qq}+\dim(A_{\pp}/\qq A_{\pp})=\dim A_{\pp}.
+ \tag{16.1.4.2}
+\end{equation}
+若 $A$ 双等维，则对每个素理想 $\pp$，$A_{\pp}$ 也双等维。
+
+\egas{16.1.5}{命题}
+设 $\rho:A\to B$ 为环同态，使 $B$ 成为整的 $A$-代数。则 $\dim B\leq\dim A$；若 $\rho$ 还是单射，则 $\dim B=\dim A$。
+\begin{proof}
+若 $\mathfrak n=\Ker\rho$，则 $\rho(A)\simeq A/\mathfrak n$，所以由（16.1.2.1），$\dim\rho(A)\leq\dim A$。由于 $B$ 整于 $\rho(A)$，只须在 $A\subset B$ 时证明第二断言。
+
+若 $\pp_0\subsetneq\cdots\subsetneq\pp_m$ 是 $B$ 的素理想链，则 $\pp_i\cap A$ 是 $A$ 中两两不同的素理想（Bourbaki，\textit{交换代数}，第五章，§2，第1目，命题1的推论1），因而构成素理想链。反过来，对 $A$ 的每条素理想链 $\pp_0\subsetneq\cdots\subsetneq\pp_m$，可对每个 $i$ 找到 $B$ 的素理想 $\pp'_i$，满足 $\pp'_i\cap A=\pp_i$，且 $\pp'_i\subset\pp'_{i+1}$（$0\leq i<m$）（同处，定理1的推论2）。由此得到结论。
+\end{proof}
+
+\egas{16.1.6}{命题}
+设 $B$ 是整环，$A$ 是 $B$ 的局部子环，$\mm$ 为 $A$ 的极大理想。假定 $A$ 整闭且 $B$ 整于 $A$。则对 $B$ 的每个极大理想 $\mathfrak n$，有 $\dim B_{\mathfrak n}=\dim A$。
+\begin{proof}
+（16.1.5）证明的第一部分表明 $\dim B_{\mathfrak n}\leq\dim A$。反过来，考虑 $A$ 的素理想链 $\pp_0\subsetneq\cdots\subsetneq\pp_m=\mm$。已知 $\mathfrak n\cap A=\mm$（Bourbaki，\textit{交换代数}，第五章，§2，第1目，命题1）；根据假设，可用第二个Cohen--Seidenberg定理（同书，第五章，§2，第4目，定理3），得到 $B$ 的素理想链
+$\pp'_0\subsetneq\cdots\subsetneq\pp'_m=\mathfrak n$，其中 $\pp'_i\cap A=\pp_i$。于是 $\dim B_{\mathfrak n}\geq\dim A$，命题得证。
+\end{proof}
+
+\egap{16.1.7}
+设 $M$ 为 $A$-模。称环 $A/\Ann M$ 的维数为 $M$ 的\textbf{维数}，记作 $\dim_A M$ 或 $\dim M$；这个环同构于 $M$ 的数乘同态环 $A_M$。因此，对 $k>0$，有 $\dim(M^k)=\dim M$。若 $M$ 有限型，则包含 $\Ann M$ 的素理想恰为 $\Supp M$ 的点（$0_{\mathrm I}$，1.7.4），且这个支集在 $\Spec A$ 中闭，因而
+\begin{equation}
+ \dim M=\dim(\Supp M)\leq\dim A.
+ \tag{16.1.7.1}
+\end{equation}
+若 $N\subset M$ 是两个 $A$-模，则
+\begin{equation}
+ \dim N\leq\dim M,\qquad \dim(M/N)\leq\dim M.
+ \tag{16.1.7.2}
+\end{equation}
+若 $S$ 为乘法子集且 $M$ 有限型，则
+\begin{equation}
+ \dim_{S^{-1}A}(S^{-1}M)\leq\dim_A M.
+ \tag{16.1.7.3}
+\end{equation}
+事实上，$\Ann(S^{-1}M)=S^{-1}(\Ann M)$（Bourbaki，\textit{交换代数}，第二章，§2，第4目），且
+$S^{-1}A/S^{-1}(\Ann M)=S^{-1}(A/\Ann M)$。
+
+另一方面，每条包含 $\Ann M$ 的素理想极大链都以某个极大理想 $\mm$ 结束；其长度等于相应的 $A_{\mm}$ 中素理想链的长度，而这些素理想包含
+$\Ann M_{\mm}=(\Ann M)_{\mm}$。由此及（16.1.7.3），得到
+\begin{equation}
+ \dim_A M=\sup_{\mm}\dim_{A_{\mm}}M_{\mm},
+ \tag{16.1.7.4}
+\end{equation}
+其中 $\mm$ 遍历 $A$ 的极大理想。当 $A/\Ann M$ 悬链（分别地，等维、等余维、双等维）时，称 $M$ 具有同一性质。
+
+\egas{16.1.8}{命题}
+设 $A$ 为环，$M$ 为有限型 $A$-模，$\pp$ 为 $A$ 的素理想。则
+\begin{equation}
+ \dim_{A_{\pp}}M_{\pp}+\dim_A(M/\pp M)\leq\dim_A M.
+ \tag{16.1.8.1}
+\end{equation}
+\begin{proof}
+有 $\Ann M_{\pp}=(\Ann M)_{\pp}$；所以 $A_{\pp}$ 中包含 $\Ann M_{\pp}$ 的素理想，与 $A$ 中包含 $\Ann M$ 而包含于 $\pp$ 的素理想一一对应。另一方面，若 $\mathfrak n=\Ann M$，则
+$V(\Ann(M/\pp M))=V(\pp+\mathfrak n)$（$0_{\mathrm I}$，1.7.5）；所以包含 $\Ann(M/\pp M)$ 的素理想包含 $\pp+\mathfrak n$。由此得到结论。最后这个观察还表明
+\begin{equation}
+ \dim_{A/\pp}(M/\pp M)=\dim_A(M/\pp M).
+ \tag{16.1.8.2}
+\end{equation}
+\end{proof}
+
+\egas{16.1.9}{命题}
+设 $A$ 为诺特环，$\rho:A\to B$ 为环同态，$M$ 为 $B$-模，且 $M_{[\rho]}$ 是有限型 $A$-模。则
+\begin{equation}
+ \dim_A M_{[\rho]}=\dim_B M.
+ \tag{16.1.9.1}
+\end{equation}
+\begin{proof}
+$B$-模 $M$ 的数乘同态环 $B_M$ 可等同于 $C=\End_A(M_{[\rho]})$ 的子环。$C$ 是有限型 $A$-模（Bourbaki，\textit{交换代数}，第三章，§3，第1目，引理2），故 $B_M$ 也是。又 $A$-模 $M_{[\rho]}$ 的数乘同态环 $A_M$ 是 $B_M$ 的子环，等于 $A$ 在 $C$ 中的典范像；所以 $B_M$ 有限于 $A_M$。结论由（16.1.5）得到。
+\cmt{D4-A02}{作者正式勘误 \hyperlink{ErrIV:6}{Err$_{\mathrm{IV}}$，6}删去 $A$ 诺特的假设。理由是对 $u\in B_M$，$A[u]$ 是 $C$ 的子 $A$-代数；其在有限型 $A$-模 $M_{[\rho]}$ 上的作用给出整性，从而 $u$ 整于 $A$，也整于 $A_M$，仍可用（16.1.5）。这是作者的推广，不是初版证明已在无诺特假设下成立。}
+\end{proof}
+
+\egap{16.1.10}
+设 $A$ 为诺特环。若 $M$ 是有限长度 $A$-模，则 $\Supp M$ 是有限离散空间（Bourbaki，\textit{交换代数}，第四章，§2，第5目，命题7及其推论1），所以当 $M\ne0$ 时 $\dim M=0$。反过来，若 $M$ 是满足 $\dim M=0$ 的有限型 $A$-模，则 $\Supp M$ 的每一点都是闭点，即 $A$ 的极大理想，因此 $M$ 有限长度（同处，命题7）。
+
+\subsection{诺特半局部环的维数}
+\source{EGA IV 第一部分，印刷第25--28页；上传PDF第24--27页\orig{本小节重述Serre于1958年在法兰西学院课程中所作的讲述。}}
+
+\egap{16.2.1}
+设 $A$ 为诺特半局部环，$\rr$ 为其根基。回忆 $A$ 的\textbf{定义理想} $\qq$ 是满足 $\qq\subset\rr$ 且包含 $\rr$ 的某个幂的理想；这等价于说，包含 $\qq$ 的素理想都是极大理想，或说 $A/\qq$ 为Artin环。\cmt{D4-H02}{在半局部情形，后两种说法还须保留前面的 $\qq\subset\rr$ 限制。仅 $A/\qq$ 为Artin环，并不能推出 $\qq$ 包含于每个极大理想。例子及（16.3.6）中相关表述的处理见核查报告。}
+设 $M$ 为有限型 $A$-模。对每个整数 $n>0$，$M/\qq^nM$ 的长度有限，等于
+\[
+ \sum_{i=0}^{n-1}\len(\gr_i M),
+\]
+其中 $\gr_\bullet M$ 是 $M$ 的 $\qq$-预进制滤过的相伴分次 $A/\qq$-模。已知有有理系数多项式 $Q_{\qq}(n)$，使得对充分大的 $n$，$\len(\gr_nM)=Q_{\qq}(n)$（III，2.5.4）。于是存在关于 $n$ 的有理系数多项式 $P_{\qq}(M,n)$，满足
+\[
+ \len(M/\qq^nM)=P_{\qq}(M,n)\qquad(n\text{ 充分大}).
+\]
+这个多项式唯一；当 $M\ne0$ 时，其首项系数为正。称它为 $M$ 关于 $\qq$-预进制滤过的\textbf{Hilbert--Samuel多项式}。
+
+\egas{16.2.2.1}{引理}
+设 $(M_n)$ 是 $M$ 的一个 $\qq$-良好滤过（Bourbaki，\textit{交换代数}，第三章，§3，第1目）。则当 $n$ 充分大时，$\len(M/M_n)$ 等于关于 $n$ 的一个多项式，其次数和首项系数都与 $P_{\qq}(M,n)$ 的相同。\cmt{D4-T02}{初版标题误排为（16.12.2.1）；本译稿按后续引用统一排为（16.2.2.1），在此记录该调整。}
+\begin{proof}
+存在 $n_0$，使 $n\geq n_0$ 时 $M_{n+1}=\qq M_n$。因此，对充分大的 $n$，有
+\[
+ \qq^{n+n_0}M\subset M_{n+n_0}=\qq^nM_{n_0}
+ \subset\qq^nM\subset M_n,
+\]
+从而
+\[
+ \begin{aligned}
+ P_{\qq}(M,n+n_0)&\geq\len(M/M_{n+n_0})\\
+ &\geq P_{\qq}(M,n)\geq\len(M/M_n),
+ \end{aligned}
+\]
+由此得到结论。
+\end{proof}
+若 $\qq'$ 是另一个定义理想，则对某个整数 $m$ 有 $\qq'\supset\qq^m$，因而
+$P_{\qq'}(M,n)\leq P_{\qq}(M,mn)$。所以 $P_{\qq}(M,n)$ 的次数与所选定义理想无关；记作 $d(M)$。
+
+\egas{16.2.2.2}{引理}
+设 $0\to M'\to M\to M''\to0$ 是有限型 $A$-模的正合列。则多项式
+\[
+ P_{\qq}(M,n)-P_{\qq}(M',n)-P_{\qq}(M'',n)
+\]
+的次数不超过 $d(M')-1\leq d(M)-1$。
+\begin{proof}
+滤过 $M'_n=M'\cap\qq^nM$ 是 $\qq$-良好的（Bourbaki，\textit{交换代数}，第三章，§3，第1目，命题1）。\cmt{D4-A03}{初版此处印为 $M'\cap\qq^nM'$；作者在勘误清单三A部明确改为 $M'\cap\qq^nM$。本处采用已发表的改正，并保留其来源。}
+又有
+\[
+ \len(M/\qq^nM)=\len(M''/\qq^nM'')+\len(M'/M'_n),
+\]
+所以把（16.2.2.1）用于 $M'$ 就得到本引理。
+\end{proof}
+
+\egas{16.2.3}{定理（Krull--Chevalley--Samuel）}
+设 $A$ 为诺特半局部环，$\rr$ 为其根基，$M\ne0$ 为有限型 $A$-模，$d(M)$ 为 $M$ 关于任意定义理想的Hilbert--Samuel多项式的次数。另令 $s(M)$ 为下述整数 $n$ 的下确界：存在 $\rr$ 中的元素 $x_1,\ldots,x_n$，使
+$M/(x_1M+\cdots+x_nM)$ 的长度有限。则
+\[
+ d(M)=s(M)=\dim M.
+\]
+
+\egas{16.2.3.1}{引理}
+对 $x\in\rr$，令 ${}_xM$ 为 $M$ 中被 $x$ 零化的元素组成的子模。则：
+\begin{enumerate}[label=(\roman*)]
+ \item $s(M)\leq s(M/xM)+1$。
+ \item 设 $\pp_i$（$1\leq i\leq m$）为 $\Supp M$ 中满足 $\dim(A/\pp_i)=\dim M$ 的素理想。若对每个 $i$ 都有 $x\notin\pp_i$，则
+ $\dim(M/xM)\leq\dim M-1$。
+ \item 若 $\qq$ 是 $A$ 的定义理想，则多项式
+ \[
+   P_{\qq}({}_xM,n)-P_{\qq}(M/xM,n)
+ \]
+ 的次数不超过 $d(M)-1$。
+\end{enumerate}
+\begin{proof}
+（i）中，若令 $N=M/xM$，且 $N/(x_1N+\cdots+x_mN)$ 长度有限，只须注意这个模同构于 $M/(xM+x_1M+\cdots+x_mM)$。
+
+为证明（ii），令 $\mathfrak a=\Ann M$。包含 $\Ann(M/xM)$ 的素理想，正是包含 $\mathfrak a+Ax$ 的素理想（$0_{\mathrm I}$，1.7.5）。因此没有一个 $\pp_i$ 包含 $\mathfrak a+Ax$。按 $\dim M$ 的定义（16.1.7），包含 $\mathfrak a+Ax$ 的素理想链长度至多为 $\dim M-1$。
+
+最后，为证明（iii），使用两个正合列
+\[
+ 0\longrightarrow{}_xM\longrightarrow M\xrightarrow{x}xM\longrightarrow0,
+ \qquad
+ 0\longrightarrow xM\longrightarrow M\longrightarrow M/xM\longrightarrow0.
+\]
+断言由（16.2.2.2）得到。\cmt{D4-H03}{左下标 $x$ 属于 ${}_xM=\Ker(x:M\to M)$，不能漏掉。若误读为 $P_{\qq}(M,n)-P_{\qq}(M/xM,n)$，即使 $A=k[[t]]$、$x=t$、$M=A$，所述次数界也不成立。}
+\end{proof}
+定理（16.2.3）的证明分三步进行。
+
+\egap{16.2.3.2}
+有 $\dim M\leq d(M)$。
+
+对 $d(M)$ 作归纳；$d(M)=0$ 的情形是直接的。设 $d(M)\geq1$，取 $\pp_0\in\Supp M$，使 $\dim(A/\pp_0)=\dim M$。则 $\pp_0$ 是 $\Supp M$ 的极小元，因而属于 $\Ass M$（Bourbaki，\textit{交换代数}，第四章，§1，第4目，定理2）；于是 $M$ 含有同构于 $A/\pp_0$ 的子模 $N$（同处，第1目）。由（16.2.2.2），有 $d(M)\geq d(N)$，故归结为证明 $\dim N\leq d(N)$。
+
+设 $\pp_0\subsetneq\pp_1\subsetneq\cdots\subsetneq\pp_n$ 为 $A$ 的一条素理想链，来证明 $n\leq d(N)$。$n=0$ 时无须证明。否则，存在
+$x\in\pp_1\cap\rr$ 且 $x\notin\pp_0$：若 $\pp_0\supset\pp_1\cap\rr$，由于 $\pp_0$ 不包含 $\pp_1$，便有 $\pp_0\supset\rr$，从而 $\pp_0$ 极大，矛盾。对于 $i\geq1$，有 $\pp_i\in\Supp(N/xN)$，故 $n-1\leq\dim(N/xN)$（16.1.7）。又由 $x$ 的选择，${}_xN=0$，所以（16.2.3.1（iii））给出 $d(N/xN)\leq d(N)-1$。原文接着由归纳假设写出
+\[
+ d(N/xN)=\dim(N/xN)\geq n-1,
+\]
+从而 $n-1\leq d(N)-1$。\cmt{D4-G01}{此步骤只在归纳证明 $\dim\leq d$；此时可直接得到的是 $\dim(N/xN)\leq d(N/xN)$，不必预先写等号。将这一等号替换为所需的不等式，即足以完成该步，不是否定定理。}
+
+\egap{16.2.3.3}
+有 $d(M)\leq s(M)$。
+
+设 $x_1,\ldots,x_n\in\rr$，且令 $\mathfrak a=\sum_i x_iA$ 后，$M/\mathfrak aM$ 有限长度。其伴随素理想于是都是极大理想（Bourbaki，\textit{交换代数}，第四章，§2，第5目，命题7）。由于包含
+$\qq=\mathfrak a+(\rr\cap\Ann M)$ 的素理想都极大，$A/\qq$ 为Artin环（同处，命题9），而 $\qq$ 是 $A$ 的定义理想。
+
+有 $\qq^mM/\qq^{m+1}M=\mathfrak a^mM/\mathfrak a^{m+1}M$。若 $M$ 由 $r$ 个元素 $\xi_j$ 生成，则这个 $A/\qq$-模由
+\[
+ x_1^{h_1}\cdots x_n^{h_n}\xi_j,
+ \qquad h_1+\cdots+h_n=m,
+\]
+的像生成，因此可由 $r\binom{m+n-1}{n-1}$ 个元素生成。它的长度至多为
+$a r\binom{m+n-1}{n-1}$，其中 $a$ 为常数。这就推出关于 $m$ 的多项式 $P_{\qq}(M,m)$ 的次数至多为参数个数 $n$；故 $d(M)\leq s(M)$。
+
+\egap{16.2.3.4}
+有 $s(M)\leq\dim M$。
+
+首先，（16.2.3.2）表明 $n=\dim M$ 有限。对 $n$ 作归纳。$n=0$ 时，$M$ 有限长度（16.1.10），结论成立。设 $n\geq1$，令 $\pp_i$（$1\leq i\leq m$）为 $\Supp M$ 中满足 $\dim(A/\pp_i)=n$ 的素理想。这些是 $\Supp M$ 的极小元，因此只有有限个（Bourbaki，\textit{交换代数}，第四章，§1，第4目，定理2）。由于 $n\geq1$，它们都不是极大理想，所以可取 $x\in\rr$，使 $x$ 不属于任何 $\pp_i$（同书，第二章，§1，第1目，命题2）。由（16.2.3.1），
+\[
+ s(M)\leq s(M/xM)+1,\qquad
+ \dim M\geq\dim(M/xM)+1.
+\]
+归纳假设给出 $s(M/xM)\leq\dim(M/xM)$，因而得到结论。
+
+\egas{16.2.4}{推论}
+在（16.2.3）的假设下，
+\begin{equation}
+ \dim_A M=\dim_{\widehat A}\widehat M.
+ \tag{16.2.4.1}
+\end{equation}
+事实上，$\widehat M/\widehat{\rr}^{\,n}\widehat M$ 与 $M/\rr^nM$ 同构，故 $d(\widehat M)=d(M)$。
+
+\egas{16.2.5}{推论}
+诺特半局部环 $A$ 的维数有限，且等于从 $A$ 的根基中取元素、生成一个定义理想所需的最少元素数。
+
+这就是 $M=A$ 时的等式 $s(M)=\dim M$。特别地：
+
+\egas{16.2.6}{推论}
+设 $A$ 为诺特局部环，$\mm$ 为其极大理想，$k=A/\mm$ 为其剩余域。则
+\begin{equation}
+ \dim A\leq\rk_k(\mm/\mm^2).
+ \tag{16.2.6.1}
+\end{equation}
+事实上，若 $x_1,\ldots,x_n\in\mm$ 的模 $\mm^2$ 类组成 $k$-向量空间 $\mm/\mm^2$ 的一组基，则 $x_i$ 生成 $\mm$（Bourbaki，\textit{交换代数}，第二章，§3，第2目，命题4的推论2）。
+
+\egas{16.2.7}{命题}
+设 $k$ 为域，$B$ 为非负分次有限型 $k$-代数，由一次齐次元生成且 $B_0=k$。设 $E$ 为有限型分次 $B$-模。对于充分大的 $n$，$\rk_kE_n=r(n)$ 可写成 $\Phi(n)-\Phi(n-1)$，其中 $\Phi$ 为次数 $d$ 的多项式（III，2.5.4）。则存在 $B$ 中 $d$ 个次数至少为1的齐次元 $t_1,\ldots,t_d$，使 $E/(\sum_i t_iE)$ 在 $k$ 上有限维。
+\begin{proof}
+令 $\qq=\bigoplus_{n\geq1}B_n$，这是 $B$ 的极大理想；对每个 $n$，令 $E'_n=\bigoplus_{h\geq n+1}E_h$。每个 $B-\qq$ 中的元素，在Artin $B$-模 $E/E'_n$ 上给出的数乘是单射，因而是双射（Bourbaki，\textit{代数}，第八章，§2，第2目，引理3）。所以 $(E/E'_n)_{\qq}$ 可等同于 $E/E'_n$。由于 $B_{\qq}$ 的剩余域是 $k$，由假设可知 $\len_{B_{\qq}}((E/E'_n)_{\qq})$ 是次数 $d$ 的关于 $n$ 的多项式。
+
+$E$ 有限型且 $B$ 由一次齐次元生成，故 $(E'_n)$ 是 $E$ 上的 $\qq$-良好滤过（Bourbaki，\textit{交换代数}，第三章，§1，第3目，引理1）；所以 $((E'_n)_{\qq})$ 是 $E_{\qq}$ 上的 $\qq B_{\qq}$-良好滤过。由（16.2.3）、（16.2.2.1）及 $B_{\qq}$ 诺特局部，得到 $\dim E_{\qq}=d$。
+
+对 $d$ 作归纳，$d=0$ 时结论直接成立。设 $d\geq1$。$\Ass E$ 的极小元 $\pp_i$（$1\leq i\leq r$）是分次理想（同书，第四章，§3，第1目，命题1），且 $\qq$ 不等于这些理想的并。因此存在齐次元 $t_1\in\qq$，不属于任何 $\pp_i$（同书，第三章，§1，第4目，命题8）。$(\pp_i)_{\qq}$ 是 $\Ass E_{\qq}$ 的极小元（同书，第四章，§1，第2目，命题5），所以
+$\dim(E_{\qq}/t_1E_{\qq})=d-1$（16.3.4）。将归纳假设用于分次模 $E/t_1E$，即得结论。
+\end{proof}

@@ -1,0 +1,13 @@
+{
+  "branch": "EGA V independent",
+  "completed": "p44 four paragraphs from I use [or profit from] this opportunity through X^(m) over Gr^m (before Proposition2.1)",
+  "next": "p44 The Proposition 2.1 [se transpose Fr] translates (?) without change",
+  "previous_project": "libfile_fde3_f-0cddf7a6afa081918bc232926a83ad62_49ac57203c0c81918f3630f0324dcb35",
+  "merged": false,
+  "source_sha256": "23a20ef32fd16a1bd623c0c08ac080d04fc94f248de12133b713a19d6b0330d9",
+  "unresolved": [
+    "8.8 and9.5 source gaps",
+    "remainder section12 not translated",
+    "iteration notation not an asserted canonical isomorphism"
+  ]
+}

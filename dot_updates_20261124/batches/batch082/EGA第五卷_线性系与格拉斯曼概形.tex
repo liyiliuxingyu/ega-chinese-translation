@@ -1,0 +1,91 @@
+\documentclass[openany,fontset=fandol]{ctexbook}
+\usepackage{amsmath,amssymb}
+\usepackage[unicode,hidelinks]{hyperref}
+\setlength{\emergencystretch}{2em}
+\interfootnotelinepenalty=10000
+\DeclareMathOperator{\Spec}{Spec}
+\DeclareMathOperator{\Hom}{Hom}
+\DeclareMathOperator{\Grass}{Grass}
+\DeclareMathOperator{\Div}{Div}
+\newcommand{\OO}{\mathcal O}
+\newcommand{\FF}{\mathcal F}
+\newcommand{\HH}{\mathcal{H}\!om}
+\newcommand{\PP}{\mathbf P}
+\raggedbottom
+\begin{document}
+\title{代数几何基础第五卷预备笔记\\除子线性系与格拉斯曼概形}
+\author{据法文扫描和英译编辑稿互校续译}
+\date{2026年11月22日}
+\maketitle
+
+\chapter*{范围与接续}
+第82批续译第三篇推论4.2的陈述、证明、格拉斯曼概形表出及其后的作者说明。
+法文物理138--140页（手写145--147），英译物理105--106页。
+下批由法文物理140页下部、英译物理106页的命题4.3起。
+正式出版的 EGA IV.1 是另一条续译线。本批尚未并入1158页合订本。
+
+\chapter*{第三篇（续）}
+\section*{4\quad 除子线性系与可逆模（续）}
+
+\noindent\textbf{推论4.2。}
+设 \(g:X\to S\) 是固有、平坦、有限表示的态射，且几何纤维整。
+设 \(L\) 是 \(X\) 上的可逆模，\(P=\PP_S(E)\) 是 \(S\) 上如命题4.1所述的射影丛。存在 \(S\) 上的有限表示模 \(Q\)，并且关于拟凝聚 \(\OO_S\)-模 \(\FF\) 有函子同构
+\[
+ \HH_{\OO_S}(Q,\FF)
+ \ \xrightarrow{\ \sim\ }\
+ g_*(L\otimes_{\OO_X}g^*\FF).
+\]
+\footnote{法138、英105开头写 \(f:X\to S\)，后面的函子却用 \(g_*\)，证明又出现 \(f(L)\)；依4.1统一写 \(g\)，将 \(f(L)\) 订为 \(g_*L\)。两本的“5.1”订为“4.1”。原文用 \(L\otimes_{\OO_S}\FF\) 略写右端；此处展开。 \(Q\) 是本推论中的模，与上批暂记为 \(Q\) 的参数丛不是同一对象。}
+有了这一点，\(X/S\) 上由 \(P^\vee\) 参数化、且在4.1的意义下与 \(L\) 相关联的除子线性系，与满射
+\[
+ Q\twoheadrightarrow E^\vee
+\]
+按乘以 \(\OO_S^\times\) 的整体截面取商以后所得的等价类，一一对应。\footnote{法139单位群上标已见于陈述，证明末尾有时略去；英105附有编辑订正。必须乘以可逆截面，而不是任意函数；例如零倍不保满射。固定参数丛时，并不额外按任意 \(E^\vee\) 的自同构取商。}
+
+\medskip
+\(Q\) 的存在性依照惯用的约化方法归结到 \(S\) 诺特的情形；在这一情形下，正是正式出版的 EGA III\,7.7.6。在构造 \(Q\) 时，关于 \(X\) 的几何纤维整的假设并不需要。\footnote{正式本见 \href{https://www.numdam.org/item/PMIHES_1963__17__5_0/}{EGA III 第二分册}。原稿仅提及约化，关于有限表示模型、相容构造与基变换，见下方译校补证。}
+因为 \(E\) 是有限型局部自由模，给出一个同态 \(E\to g_*L\)，等价于给出 \(L\otimes_{\OO_X}g^*E^\vee\) 的一个整体截面，因此等价于给出同态 \(Q\to E^\vee\)。
+
+还要把4.1的条件表达出来。由于对 \(X/S\) 的纤维作了上述假设，只须逐纤维检验相应的同态
+\[
+ E(s)\longrightarrow H^0(X_s,L_s)
+ \ \simeq\ \Hom_{k(s)}(Q(s),k(s))
+\]
+为单射，换言之，\(Q(s)\to E^\vee(s)\) 是满射。由 Nakayama 引理，这又等价于 \(Q\to E^\vee\) 为满射。\footnote{这里 \(Q(s)=Q\otimes k(s)\)。纤维同构取自表出函子的基变换，而不是先把 \(g_*L\) 与剩余域张量并断言它必是纤维全局截面。纤维映射是商映射的线性对偶。余核是有限型模，故可逐点用 Nakayama 引理检验。}
+所谓“按 \(\OO_S^\times\) 的截面取商”，来自4.1中的“只计到同构”。\footnote{对固定的 \(L\)，\(\operatorname{Aut}(L)=\Gamma(X,\OO_X^\times)\)。本推论的假设给出 \(\OO_S\simeq g_*\OO_X\)，且任意基变换后仍成立，见 \href{https://stacks.math.columbia.edu/tag/0E0L}{Stacks，0E0L}。因此自同构恰由底上的整体单位给出；若把 \(L\) 的一个具体识别也列作数据，就不再取此商。}
+
+也可以从另一条途径解释4.1。由第2小节，\(\PP_S(Q)\) 表出 \(\Div_{X/S}\) 中由 \(L\) 定义的子函子。因此，由 \(P^\vee\) 参数化、与 \(L\) 相关联的除子线性系，可解释为一个态射
+\[
+ P^\vee=\PP_S(E^\vee)\longrightarrow\PP_S(Q).
+\]
+此态射所给出除子族的线性，正表现为态射本身是“线性的”，即由满射 \(Q\twoheadrightarrow E^\vee\) 定义。\footnote{法139作 \(\PP(E^\vee)\)，英105末漏去对偶。另外英106稍后误写 \(\Div_{S/S}\)，法文两处清楚写的是 \(\Div_{X/S}\)。本文采用一维商的射影化约定；实际的模满射诱导射影化的闭浸入，并非所有射影丛态射都是闭浸入。}
+
+由此还可看出，在此情形下 \(P^\vee\to\Div_{X/S}\) 是单态射，因为复合
+\[
+ P^\vee\longrightarrow\PP_S(Q)\longrightarrow\Div_{X/S}
+\]
+是单态射。这也是下一条结果所述、更一般的事实。
+于是约定：对于由射影丛 \(P^\vee\)、\((P')^\vee\) 参数化的两个 \(X/S\) 上的线性除子族，如果它们通过一个 \(S\)-同构 \(P^\vee\xrightarrow{\sim}(P')^\vee\) 相互对应，就称两个族同构。由于它们到 \(\Div_{X/S}\) 的态射都是单态射，这样的参数丛同构若存在便唯一。
+
+于是，4.2还可以表述如下：在 \(X/S\) 上，与 \(L\) 相关联的除子线性系的同构类集合，与 \(\Grass(Q)(S)\) 典范地一一对应。该对应与任意基变换相容。所以，把一个 \(S\)-预概形 \(S'\) 送到 \(X_{S'}/S'\) 上与 \(L_{S'}\) 相关联的除子线性系的同构类集合的函子，由 \(S\)-预概形 \(\Grass(Q)\) 表出。\footnote{保持4.1的非空射影纤维约定，这里用有限局部自由且各点秩为正的商，对各固定正秩的格拉斯曼概形取不交并；不把秩零商加入正文的对象。法140随后大段划删、不收入正文；边栏有不易辨读的手写，暂不补造。}
+
+\medskip
+\noindent\textbf{作者说明。}
+4.1中还应明确指出：\(L|_{X-Z}\) 与 \(f^*\OO_P(1)\) 典范同构（用上一小节的记号）。
+所以，在3.3所考察的 \(\mathcal D\ne\varnothing\) 的情形，\(L|_{X-Z}\) 就是3.3 b)中的 \(L_{X-Z}\)，而 \(L\) 正是 \(f^*\OO_P(1)\) 到 \(X\) 上的典范且唯一的可逆层延拓。\footnote{英106在此处严重误读；据法140，使用上一小节的 \(f:X-Z\to P\)，并读作 \(\mathcal D\ne\varnothing\)。唯一性沿用3.3及3.4的深度和延拓条件，不能理解为任意射影态射的拉回线丛总能唯一延拓。}
+
+\section*{译校补证（非原文）}
+\paragraph{表出模与基变换。}
+在仿射基底上，记 \(S=\Spec A\)。在有限表示、固有、平坦的假设下，可把 \(g\) 和可逆层 \(L\) 下降到一个有限生成的 \(\mathbb Z\)-代数上的模型；取足够大的有限阶段，使模型仍固有、平坦且层仍可逆。可从 EGA III\,7.7.5--7.7.6 的有限复形构造作如下理解：对这个诺特模型，取有限投射模组成的非负复形 \(K^\bullet\)，使任意系数模 \(M\) 的零阶截面由 \(H^0(K^\bullet\otimes M)\) 给出。此处使用 \(L\) 对底平坦。这个复形拉回到 \(A\) 后有同样的描述；可以用有限仿射覆盖的平坦 \v{C}ech 复形理解任意换底及任意系数。在仿射基底上便可取
+\[
+ Q_A=\operatorname{coker}\bigl((K^1)^\vee\longrightarrow (K^0)^\vee\bigr).
+\]
+事实上，\(K^0,K^1\) 是有限投射模，故 \(\Hom_A(Q_A,M)\) 是
+\(\Hom_A((K^0)^\vee,M)\to\Hom_A((K^1)^\vee,M)\) 的核，亦即 \(H^0(K^\bullet\otimes_A M)\)。余核与拉回相容，此构造在任意换底后仍表出相应的系数函子。各仿射开上的表出模因泛性质而唯一同构，满足粘合条件。此处的基变换陈述针对 \(Q\) 和它表出的函子；它并不声称 \(\HH(Q,\OO_S)\) 的形成与任意基变换交换。
+
+\paragraph{从参数丛同构恢复商。}
+不同商 \(Q\twoheadrightarrow V\) 给出的射影参数丛图式如果在 \(\PP_S(Q)\) 上同构，从 \(\PP_S(Q)\) 拉回的 \(\OO(1)\) 也随之同构。将该线丛推前到 \(S\)，按射影丛公式恢复 \(V\)，同时将通用商恢复为原来的 \(Q\twoheadrightarrow V\)。这在秩一时同样成立。于是参数丛图式的同构类恰是商模在保持商映射的同构下的等价类，而不是仅按射影丛抽象同构的等价类。
+
+\paragraph{格拉斯曼概形的局部构造。}
+在任一仿射开上，取有限表示 \(\OO_S^m\to\OO_S^n\to Q\to0\)。标准秩 \(r>0\) 格拉斯曼概形的通用商，只有在 \(\OO_S^m\) 的像在该商中为零时才经 \(Q\) 分解。这个条件是在通用局部自由商中让有限多个截面同时为零，是闭条件。所得概形由其泛性质粘合，得到 \(\Grass_r(Q)\)。其中 \(r\) 可随底的连通部分局部常值，因而各秩取不交并。任意基变换保持这套陈述；参见 \href{https://stacks.math.columbia.edu/tag/089R}{Stacks，089R} 的标准格拉斯曼概形构造。
+\end{document}

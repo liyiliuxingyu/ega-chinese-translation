@@ -1,0 +1,9 @@
+{
+  "scope": "Proposed mapping resolution only; no final merged package created",
+  "physical_files": 1376,
+  "aliases": 511,
+  "logical_files": 1887,
+  "old_mapping_rows": 1827,
+  "all_old_mapping_rows_resolve_to_identical_payload": true,
+  "errors": []
+}

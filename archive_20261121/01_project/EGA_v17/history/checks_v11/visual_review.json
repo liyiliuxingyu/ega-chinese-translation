@@ -1,0 +1,40 @@
+{
+  "book_new_and_junction_pdf_pages": [
+    351,
+    352,
+    353,
+    354,
+    355,
+    356,
+    357,
+    358,
+    359,
+    360,
+    361,
+    362,
+    363,
+    364,
+    365,
+    366
+  ],
+  "report_new_pdf_pages": [
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20
+  ],
+  "book_zoom_pdf_pages": [
+    355,
+    362,
+    364
+  ],
+  "frontmatter_checked": [
+    3
+  ],
+  "process": "Rendered new/adjacent pages at 100 dpi, reviewed contact sheets, and inspected selected formula, diagram and footnote pages at 160 dpi. Enlarged the new diagram column separation on book PDF page 362 after inspecting the first render, then recompiled and reinspected.",
+  "scope": "Not a human page-by-page review of all inherited pages. Full-build pixel equality is recorded separately."
+}

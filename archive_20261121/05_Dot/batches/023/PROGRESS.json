@@ -1,0 +1,13 @@
+{
+  "completed": "底本第46页首五段：Proposition 6.1 至 the statements that we could perhaps give in this connection (a ce proper)",
+  "next": "第46页 Let us again assume that f: X → P is unramified",
+  "previous_project": "libfile_fde3_f-522b87973aa48191acaf7fdfd5941718_49ac57203c0c81918f3630f0324dcb35",
+  "source_sha256": "23a20ef32fd16a1bd623c0c08ac080d04fc94f248de12133b713a19d6b0330d9",
+  "merged_into_main": false,
+  "pdf_pages": 4,
+  "unresolved": [
+    "8.2维数条件之后底本标注难辨",
+    "此前8.8、9.5等缺文",
+    "此前4.2/4.3的m−1或m+1歧义"
+  ]
+}

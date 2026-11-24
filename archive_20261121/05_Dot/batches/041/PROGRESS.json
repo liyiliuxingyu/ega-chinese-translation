@@ -1,0 +1,14 @@
+{
+  "completed": "底本第56页命题14.1标题、前提及(a)(b)全部可辨陈述，保留问号和省略号",
+  "next": "第56页In the case a) we have already seen (I hope)，命题14.1证明段",
+  "previous_project": "libfile_fde3_f-da6bc257b0fc819194e00313a955b020_49ac57203c0c81918f3630f0324dcb35",
+  "source_sha256": "23a20ef32fd16a1bd623c0c08ac080d04fc94f248de12133b713a19d6b0330d9",
+  "merged_into_main": false,
+  "pdf_pages": 3,
+  "unresolved": [
+    "14.1(b)两组问号及省略号，有限与拟有限条件对应未恢复",
+    "b项dim x只整理为dim X，是否漏f仍待核",
+    "更一般前提是否充分及(a)纤维量词范围未独立验证",
+    "证明尚未译入；全部旧待核保持"
+  ]
+}

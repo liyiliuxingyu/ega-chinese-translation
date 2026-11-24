@@ -1,0 +1,58 @@
+[
+  {
+    "file": "continuations/iv0_20_12.tex",
+    "first": "20.1.1",
+    "last": "20.2.5",
+    "entry_count": 12,
+    "sha256": "d152d896e77d47c88810e5a39fdf8a6b9923ba4a378430df7974cb01ee2affed"
+  },
+  {
+    "file": "continuations/iv0_20_3.tex",
+    "first": "20.3.1",
+    "last": "20.3.8",
+    "entry_count": 8,
+    "sha256": "febb2109a419d6fac7bc39856935e1d791504510e235c835eacc7ea89674d061"
+  },
+  {
+    "file": "continuations/iv0_20_4.tex",
+    "first": "20.4.1",
+    "last": "20.4.14",
+    "entry_count": 14,
+    "sha256": "133c96507d422db0ea559375dd03364b7e73b00b53a39da6b7410cf8d20a1cd1"
+  },
+  {
+    "file": "continuations/iv0_20_5.tex",
+    "first": "20.5.1",
+    "last": "20.5.15",
+    "entry_count": 15,
+    "sha256": "731bef083b13316b0d8ab343411cd85110222e71bd86f3cca78519af0757a0ea"
+  },
+  {
+    "file": "continuations/iv0_20_6a.tex",
+    "first": "20.6.1",
+    "last": "20.6.13",
+    "entry_count": 13,
+    "sha256": "6a9935b0e49b4db5a6b35cde6027427c579e4eae7d80222b17da291d9afc3ed2"
+  },
+  {
+    "file": "continuations/iv0_20_6b.tex",
+    "first": "20.6.14",
+    "last": "20.6.26",
+    "entry_count": 13,
+    "sha256": "3b62abd8fc22a27083a59019a820ca7793fbedc07b61f35af38808a4629981b2"
+  },
+  {
+    "file": "continuations/iv0_20_7a.tex",
+    "first": "20.7.1",
+    "last": "20.7.10",
+    "entry_count": 10,
+    "sha256": "e857cc7abdacbb9596c8005cc785d6c2077c0e36c78270f21dc63ed232f00dac"
+  },
+  {
+    "file": "continuations/iv0_20_7b.tex",
+    "first": "20.7.11",
+    "last": "20.7.20",
+    "entry_count": 10,
+    "sha256": "4bb4a359eac986b32a1527afd1d91b4b02bbfbc01d2aad10f5c69da2cf59a250"
+  }
+]

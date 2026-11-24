@@ -1,0 +1,10 @@
+\input{/workspace/scratch/a886fd56dd2f/unpacked/v16/EGA_内容顺序合订第十六版/preamble.tex}
+\begin{document}
+\renewcommand{\newscope}{V-H}
+\input{body_late.tex}
+\clearpage
+\input{report_late.tex}
+\clearpage
+\renewcommand{\newscope}{V-H-II}
+\input{collation_16.tex}
+\end{document}

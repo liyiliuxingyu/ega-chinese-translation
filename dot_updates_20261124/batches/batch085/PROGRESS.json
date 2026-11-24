@@ -1,0 +1,14 @@
+{
+  "batch":85,
+  "work":"EGA第五卷预备笔记第三篇（续完）",
+  "fr_pages":[146,147],
+  "fr_manuscript_pages":[153,154],
+  "en_pages":[110,111],
+  "first":"法146中 Descendant à nouveau par terre；英110对应过渡句",
+  "last":"法147手写末句；英111第三篇末及编辑收尾位置",
+  "done":["命题4.4引言与a)","b) 与 c) 校订表述及手稿读法","作者段全译","a) 至 c) 补证"],
+  "next":"法148–149/英112 第四篇致迪厄多内的信（1965-09-29）；法149末段有整段划删，正文与删稿应分开；随后须核法150起目录及文献类别",
+  "merged_into_1158_page_baseline":false,
+  "formal_printed_EGA_IV_1":"不变：物理221–223单独维护",
+  "historical_source_policy":"没有把明显划去的早稿当正文；有独立反例时改正文并在脚注保留旧读法，补证不冒作作者原文"
+}

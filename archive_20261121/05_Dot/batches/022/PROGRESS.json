@@ -1,0 +1,13 @@
+{
+  "completed": "底本第45页末四段，自 [Le laius 5.1 Fr or Latin 67] goes as such 至 so does 5.7",
+  "next": "底本第46页 Proposition 6.1",
+  "previous_project": "libfile_fde3_f-17e1babbaf108191bbc0d0d7fc04f7b6_49ac57203c0c81918f3630f0324dcb35",
+  "source_sha256": "23a20ef32fd16a1bd623c0c08ac080d04fc94f248de12133b713a19d6b0330d9",
+  "merged_into_main": false,
+  "pdf_pages": 4,
+  "unresolved": [
+    "此前8.8、9.5等缺文",
+    "此前4.2/4.3的m−1或m+1歧义",
+    "本段一般正则序列基无关性的证明未展开"
+  ]
+}

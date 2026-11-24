@@ -1,0 +1,182 @@
+% 底本：EGAIV.1.pdf，PDF第163--165页，原分册印刷第164--166页。
+\subsection{应用：可分性判据}
+在本小节和随后两个小节中，不再假设所考虑的环具有特征 $p>0$。
+
+\egap{21.5.1}
+先指出，判据（21.2.7）可以用来证明关于可分扩张的Cohen定理（19.6.1）的一部分：
+若 $k$ 的特征为 $p>0$，且 $K/k$ 是可分扩张，则 $K$ 是形式光滑的 $k$-代数。
+事实上，$K$ 在 $k$ 上有一组 $p$-基（21.4.2）；另一方面，MacLane判据
+（Bourbaki，\textit{Alg.}，第V章，§8，第2节，命题3）表明，在 $K$ 的一个代数闭包内，
+$k^{1/p}$ 与 $K$ 在 $k$ 上线性无交。因此典范同态
+\[
+ k^{1/p}\otimes_k K\longrightarrow k^{1/p}(K)
+\]
+是双射。沿同构 $k^{1/p}\xrightarrow{\sim}k$ 搬运结构后，这恰好就是（21.2.7）的条件（i）。
+
+\egas{21.5.2}{命题（MacLane）}
+设 $A,B$ 是两个完备离散赋值环，极大理想分别为 $\mathfrak m,\mathfrak n$，
+剩余域分别为 $K=A/\mathfrak m$、$L=B/\mathfrak n$。
+设 $u:A\to B$ 为满足 $B u(\mathfrak m)=\mathfrak n$ 的同态，
+以 $u_0=u\otimes1:K\to L$ 表示所诱导的剩余域同态。考虑下列条件。
+\begin{enumerate}[label=\alph*),leftmargin=2.5em]
+\item $L$ 经由 $u_0$ 是 $K$ 的可分扩张。
+\item 对任一完备离散赋值环 $B'$，记其极大理想为 $\mathfrak n'$、剩余域为 $L'$；
+对任一满足 $B'u'(\mathfrak m)=\mathfrak n'$ 的同态 $u':A\to B'$，以及任一
+$K$-同构 $\sigma:L\to L'$（相对于 $u_0$ 和 $u'_0=u'\otimes1:K\to L'$），
+都存在同构 $w:B\to B'$，使 $u'=w\circ u$，且 $w_0=w\otimes1=\sigma$。
+\end{enumerate}
+\noindent b') 对任一满足 $Bu'(\mathfrak m)=\mathfrak n$ 且
+$u'_0=u'\otimes1=u_0$ 的同态 $u':A\to B$，都存在 $B$ 的自同构 $w$，
+使 $u'=w\circ u$，且 $w_0=w\otimes1:L\to L$ 是恒等映射。
+
+\noindent c) 以 $u_1:A/\mathfrak m^2\to B/\mathfrak n^2$ 表示 $u$ 诱导的商同态。
+对每个局部同态 $u'_1:A/\mathfrak m^2\to B/\mathfrak n^2$，若
+\[
+ \gr_0(u'_1)=\gr_0(u_1)=u_0,
+ \qquad \gr_1(u'_1)\ne0,
+\]
+则存在 $B/\mathfrak n^2$ 的自同构 $w_1$，使
+$\gr_0(w_1)=\id_L$ 且 $u'_1=w_1\circ u_1$。
+\cmt{L12-E01}{原文条件c)仅写“局部同态”及剩余域同态相等，漏掉了 $\gr_1(u'_1)\ne0$。
+取 $A=B=k[[t]]$、$u=\id$，并在 $k[t]/(t^2)$ 上令 $u'_1(t)=0$、$u'_1|_k=\id$。
+这是局部同态，且剩余域同态为恒等，但不是自同构，故不能等于 $w_1u_1$；此时a)成立而原c)失败。
+正文补入的一阶非零条件等价于 $u'_1(\mathfrak m/\mathfrak m^2)$ 生成 $\mathfrak n/\mathfrak n^2$。
+这也是所求自同构存在时必需的条件。下文补出它在证明中的作用；此项为译者校订，不冒称作者正式勘误。}
+
+\noindent c') 对每个局部同态 $u'_1:A/\mathfrak m^2\to B/\mathfrak n^2$，若
+\[
+ \gr_0(u'_1)=\gr_0(u_1),\qquad \gr_1(u'_1)=\gr_1(u_1)
+ \quad\text{（作为 $\mathfrak m/\mathfrak m^2\to\mathfrak n/\mathfrak n^2$ 的映射），}
+\]
+则存在 $B/\mathfrak n^2$ 的自同构 $w_1$，使 $\gr_0(w_1)=\id_L$ 且 $u'_1=w_1\circ u_1$。
+
+以上条件满足
+\[
+ \mathrm c)\ \Longleftrightarrow\ \mathrm c')\ \Longleftrightarrow\ \mathrm a)
+ \ \Longrightarrow\ \mathrm b)\ \Longrightarrow\ \mathrm b').
+\]
+若 $A$ 还是Cohen环，则上述五个条件等价。
+
+\eproof
+$\mathrm b)\Rightarrow\mathrm b')$ 与 $\mathrm c)\Rightarrow\mathrm c')$ 直接由条件本身得到。
+先证明 $\mathrm a)\Rightarrow\mathrm b)$。
+由于 $u$ 把 $A$ 的一个均匀化参数映成 $B$ 的均匀化参数，$B$ 作为 $A$-模无挠，
+因而是平坦的（$0_{\mathrm I}$，6.3.4）；结合a)，$B$ 是Cohen $A$-代数（19.8.1）。
+把（19.8.2，i）用于 $C=B'$、$\mathfrak J=\mathfrak n'$，并经由 $u'$ 将 $B'$ 看作 $A$-代数。
+同态
+\[
+ B\longrightarrow B/\mathfrak n\xrightarrow{\sigma}B'/\mathfrak n'
+\]
+由 $u'_0=\sigma\circ u_0$ 是 $A$-同态，因此它可提升为 $A$-同态 $w:B\to B'$。
+其剩余域映射为 $\sigma$，且 $w(u(\pi))=u'(\pi)$ 对 $A$ 的均匀化参数 $\pi$ 成立。
+两端都是相应的均匀化参数，故 $\gr(w)$ 是同构。
+两个环都分离且完备，遂由滤过同态判据得到 $w$ 为同构。
+\cmt{L12-G01}{原文在调用Cohen提升定理后直接声称得到同构；正文把最后的同构性核对写出。
+均匀化参数与剩余域同构共同给出每一级相伴分次的同构，再由完备性逐级提升。
+仅有一个剩余域同构，尚不足以推出原局部同态为同构。}
+
+同样证明a)推出校订后的c)：这次取 $C=B/\mathfrak n^2$、
+$\mathfrak J=\mathfrak n/\mathfrak n^2$，通过 $u'_1$ 赋予 $C$ 一个 $A$-代数结构。
+提升得到 $h:B\to B/\mathfrak n^2$。
+由于 $h$ 是局部同态，$h(\mathfrak n^2)=0$，故它诱导 $w_1:B/\mathfrak n^2\to B/\mathfrak n^2$。
+其零次分次映射为恒等；又因 $u'_1(\pi)$ 非零，其一次分次映射是非零的
+$L$-线性自映射，因而为同构。有限滤过判据表明 $w_1$ 是自同构，并满足 $u'_1=w_1u_1$。
+
+其次证明c')推出a)。$u_1,u'_1$ 在剩余域上相同，故
+$u'_1=u_1+D$，其中 $D$ 是从 $A/\mathfrak m^2$ 到 $\mathfrak n/\mathfrak n^2$ 的导子（20.1.1）。
+条件 $\gr_1(u'_1)=\gr_1(u_1)$ 表示 $D$ 在 $\mathfrak m/\mathfrak m^2$ 上为零，
+故可视为 $K\to\mathfrak n/\mathfrak n^2$ 的导子。
+选择 $B$ 的一个均匀化参数，可将 $\mathfrak n/\mathfrak n^2$ 与经由 $u_0$ 赋予结构的 $K$-模 $L$ 识别。
+另一方面，对 $w_1$ 的要求迫使 $\gr_1(w_1)$ 也是恒等映射，
+因为 $u_1(\mathfrak m/\mathfrak m^2)$ 生成 $\mathfrak n/\mathfrak n^2$。
+因此 $w_1$ 具有 $z\mapsto z+D'(z)$ 的形式，
+$D'$ 为 $B/\mathfrak n^2$ 到 $\mathfrak n/\mathfrak n^2$ 的导子；
+又因 $w_1$ 在 $\mathfrak n/\mathfrak n^2$ 上是恒等，$D'$ 在这里为零，
+从而可视为 $L\to L$ 的导子。
+关系 $u'_1=w_1u_1$ 恰好表示 $D'$ 延拓了 $D$。
+每个导子 $D:K\to L$ 都对应一个满足c')前提的 $u'_1$（20.1.1），
+所以c')表明每个这样的 $D$ 均可延拓为 $L$ 的导子。
+由（20.6.3），这意味着 $L/K$ 可分。
+\cmt{L12-T01}{原文此处引（20.6.5）；实际所用“导子延拓等价于可分性”的命题是（20.6.3）。正文按所用内容修正引文。}
+
+最后，设 $A$ 为Cohen环，证明b')推出c')。
+在c')的假设下，先将复合
+\[
+ v':A\longrightarrow A/\mathfrak m^2\xrightarrow{u'_1}B/\mathfrak n^2
+\]
+按（19.8.6，i）提升为 $u':A\to B$。
+由 $\gr_0(u'_1)=\gr_0(u_1)$ 和 $\gr_1(u'_1)=\gr_1(u_1)$，有
+$\gr_0(u')=u_0$，且 $u'$ 仍把均匀化参数映成均匀化参数；所以
+$Bu'(\mathfrak m)=\mathfrak n$。
+对 $u'$ 使用b')，得到自同构 $w:B\to B$。
+将其模去 $\mathfrak n^2$ 所得到的自同构 $w_1$ 即满足c')。
+\finishproof
+
+\egas{21.5.3}{注记}
+（i）域的微分性质可以解决完备诺特局部环 $C$ 中代表元域的唯一性问题（19.8.7，ii）。
+设 $\mathfrak J$ 是 $C$ 的极大理想，$K=C/\mathfrak J$ 为剩余域；
+只须考虑 $\mathfrak J\ne0$ 的情形。
+假设存在同态 $u:K\to C$，其与增广 $C\to K$ 的复合为恒等。
+则这个同态唯一，当且仅当 $\Omega^1_K=0$。
+
+事实上，$\Omega^1_K=0$ 意味着 $K$ 在其素域上形式非分歧（20.7.4）。
+若另有满足要求且不等于 $u$ 的同态 $v$，则存在最大的整数 $n$，
+使所有 $u(x)-v(x)$（$x\in K$）均属于 $\mathfrak J^n$。
+模去 $\mathfrak J^{n+1}$ 后得到两个不同的同态 $u',v':K\to C/\mathfrak J^{n+1}$，
+而它们再复合 $C/\mathfrak J^{n+1}\to C/\mathfrak J^n$ 却相同，
+这与形式非分歧的定义（19.10.2）矛盾。
+\cmt{L12-N01}{这里的 $n\ge1$；由于 $C$ 分离，非零差不能属于所有 $\mathfrak J^n$。
+此外 $\mathfrak J^n/\mathfrak J^{n+1}$ 平方为零，故确可使用平方零提升的唯一性。
+若 $\mathfrak J=0$，增广已是恒等，截面当然唯一，不能据此反推 $\Omega^1_K=0$；
+正文保留原文明确排除这一情形的限定。}
+
+反过来，设 $\Omega^1_K\ne0$。由（20.4.8），可选取非零导子
+$D:K\to\mathfrak J/\mathfrak J^2$。
+若 $u_1:K\to C/\mathfrak J^2$ 是 $u$ 诱导的同态，
+则 $v_1=u_1+D$ 也是同态（20.1.1）。
+设 $k$ 为 $K$ 的素域；$u$ 使 $C$ 成为 $k$-代数，且 $K/k$ 形式光滑（19.6.1）。
+$u_1,v_1$ 在 $k$ 上的限制相同，所以 $v_1$ 可以提升为
+$K\xrightarrow{v}C\to C/\mathfrak J^2$，且 $v\ne u$。
+\cmt{L12-G02}{$\mathfrak J/\mathfrak J^2\ne0$ 由 $\mathfrak J\ne0$、诺特性和Nakayama引理得到；
+非零向量空间 $\Omega^1_K$ 到这一非零向量空间有非零线性映射，故确能选取 $D\ne0$。
+这里的提升使用完备局部环及其极大理想幂的逐级平方零提升，不依赖已撤销的（19.3.12）。}
+回忆（20.6.20）和（21.4.4），$\Omega^1_K=0$ 在正特征时等价于 $K$ 完美，
+在特征零时等价于 $K/\mathbf Q$ 为代数扩张。
+
+（ii）类似地，设 $W$ 为Cohen环，$C$ 为完备诺特局部环，
+$\mathfrak J\ne0$ 是包含于 $C$ 的极大理想的一个理想。
+在（19.8.6，i）中，分解 $W\xrightarrow{v}C\to C/\mathfrak J$ 唯一，
+当且仅当 $W$ 的剩余域 $K$ 满足 $\Omega^1_K=0$。
+
+若 $\Omega^1_K\ne0$，以 $\mathfrak m$ 记 $W$ 的极大理想，并固定一个已有提升 $u:W\to C$。
+置
+\[
+ I=\mathfrak m\mathfrak J+\mathfrak J^2,
+ \qquad Q=\mathfrak J/I.
+\]
+则 $Q$ 是 $C/I$ 中的平方零理想，也是一个非零 $K$-向量空间。
+选取非零导子 $D:K\to Q$，并与 $W\to K$ 复合，得到非零导子 $D':W\to Q$。
+若 $u_1:W\to C/I$ 是 $u$ 诱导的同态，则 $v_1=u_1+D'$ 也是局部同态，
+不同于 $u_1$，但它们再复合 $C/I\to C/\mathfrak J$ 后相同。
+由（19.8.6，i），将 $v_1$ 提升到 $v:W\to C$；这给出不同于 $u$ 的第二个所求分解。
+\cmt{L12-E02}{原文使用 $\mathfrak J/\mathfrak m\mathfrak J$，在 $C/\mathfrak m\mathfrak J$ 中直接进行导子扰动。
+但一般没有 $\mathfrak J^2\subseteq\mathfrak m\mathfrak J$，故这个理想未必平方零，不能直接使用（20.1.1）。
+正文改用 $I=\mathfrak m\mathfrak J+\mathfrak J^2$，使 $Q^2=0$。
+因所给同态是局部的且 $\mathfrak J$ 包含于 $C$ 的极大理想 $\mathfrak r$，
+$I\subseteq\mathfrak r\mathfrak J$；诺特性、$\mathfrak J\ne0$ 与Nakayama引理保证 $Q\ne0$。
+因此仍能取非零导子并完成证明。详细检验及原扰动失败的例子见报告L12-E02；唯一性判据本身未被反例否定。}
+若 $\Omega^1_K=0$，当 $W=K$ 为特征零域时，唯一性已由（i）的逐级论证得到。
+在另一种情形，$\mathfrak m=pW$，其中 $p$ 是 $K$ 的特征（19.8.5）。
+典范同态
+\[
+ \mathfrak m/\mathfrak m^2\longrightarrow
+ \Omega^1_W/\mathfrak m\Omega^1_W
+\]
+（20.5.11.2）为零，因为 $d(p)=0$。
+将正合列（20.5.12.1）用于 $W$ 和 $K=W/\mathfrak m$，得
+$\Omega^1_W=\mathfrak m\Omega^1_W$，故其分离完备化 $\widehat\Omega^1_W$ 为零。
+于是 $W$ 对 $\mathbf Z$ 在其进制拓扑下形式非分歧（20.7.4），
+再如（i）逐级比较两个提升，即得唯一性。
+\cmt{L12-T02}{作者《勘误与增补（清单三）》A部将本段末尾法文形容词“ramifiée”改为“ramifié”。
+这是语法性勘误，中文“形式非分歧”不受影响。
+同时须区分 $\Omega^1_W=\mathfrak m\Omega^1_W$ 与 $\Omega^1_W=0$：正文只据此推出完备微分模为零，不对未必有限型的普通微分模误用Nakayama引理。}

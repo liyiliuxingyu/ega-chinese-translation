@@ -1,0 +1,341 @@
+"""Write current, evidence-linked continuation documentation after final checks."""
+from pathlib import Path
+import hashlib
+import json
+import shutil
+import fitz
+
+TASK = Path(__file__).resolve().parents[1]
+PROJECT = TASK / "work/EGA_v17"
+STAGE = TASK / "bundle/EGA_v17_handover"
+START = STAGE / "00_START_HERE"
+START.mkdir(parents=True, exist_ok=True)
+
+def write(path, text):
+    path.parent.mkdir(parents=True, exist_ok=True)
+    path.write_text(text.strip()+"\n", encoding="utf-8")
+
+def sha(path):
+    return hashlib.sha256(path.read_bytes()).hexdigest()
+
+book = fitz.open(PROJECT / "main.pdf")
+report = fitz.open(PROJECT / "report.pdf")
+bp, rp = len(book), len(report)
+toc = {t: p for level, t, p in book.get_toc()}
+section_pages = {str(n): next(p for level,t,p in book.get_toc()
+                    if t.startswith(f"§{n} ") and p > 940)
+                 for n in range(7,16)}
+short_page = toc["EGA V 短篇：函数的奇异零点与超奇异零点"]
+back_page = toc["各原分册的书末资料"]
+logs = json.loads((PROJECT / "checks/build_log_summary.json").read_text())
+parity = json.loads((PROJECT / "checks/output_verification.json").read_text())
+structure = json.loads((PROJECT / "checks/structure_verification.json").read_text())
+assert parity["outputs"]["book"]["pages"] == bp
+assert parity["outputs"]["report"]["pages"] == rp
+assert parity["outputs"]["book"]["modular_pdf_sha256"] == sha(PROJECT / "main.pdf")
+assert parity["outputs"]["report"]["modular_pdf_sha256"] == sha(PROJECT / "report.pdf")
+assert not any(parity["outputs"]["book"]["mismatches"].values())
+assert not any(parity["outputs"]["report"]["mismatches"].values())
+assert structure["pass"]
+
+progress = f"""
+# 第十七版实际进度
+
+记录日期：2026-11-20（Asia/Shanghai）。本文件为当前状态；history、Dot原批次及第十六版说明中的旧断点仅供追溯。
+
+## 当前可交付文件
+
+- main.pdf：{bp}页，统一内容顺序的中文工作合订本。
+- single.tex：可独立编译的完整单文件；模块入口main.tex。
+- report.pdf：{rp}页累计核查报告；单文件report_single.tex，模块入口report.tex。
+- 文档类：真实的ctexbook，使用默认字体、字号、版心和双面分页；保留原著编号及四位数目录页码预留。
+- 全部上传书籍仍未译完。页数包含卷首、目录和默认双面空白页。
+
+## 本版真正新增及纳入
+
+1. 恢复第十六版实际源码，先核定其第0章止于(23.2.10, ii)，V卷第一篇止于§6。
+2. 纳入Dot的56批实存EGA V源码：54批接入第一篇§§7—15；另2批第16节定义1至注4(c)与旧短篇同文，只作为校订纳入，不重复计数。
+3. 据EGAVaiello.pdf补译§11全文（第41—43页，含原脚注57—60）；补齐§14第54—55页相对锥投影与扩展锥投影之间的漏接（含原脚注67及图）。两处属于本版新译，不能记成Dot既有完成量。
+4. 旧PS短篇保留注4(d)及其后全部可读文字；将已核定的基底、Jacobian纤维秩、外幂、行列式与秩条件等订正写正文，原错与理由留脚注。
+5. 根据合并英文稿第73—74页的作者说明修正“普通奇异零点”旧称，第78页作二次型约定前向参照；这些后续页只作定点核查，没有计入连续译文。
+6. 正确内容在正文，原错误和依据在脚注。无法完整修复的(7.4)及14.4(a)空交断言明确“不按所印假设采用”，原文保存在报告/脚注，未假称作者正式撤销。
+
+## 当前累计范围
+
+| 材料 | 当前实存连续译文 |
+|---|---|
+| 第0章 | §§1—23；末为(23.2.10, ii)与原书“待续” |
+| 第I章 | §§1—10，至(10.15.7)，既有正文保留 |
+| 第II章 | §§1—8，至(8.14.14)，相关书末资料保留 |
+| 第III章 | 两个分册§§1—7，至(7.9.14)，既有书末资料保留 |
+| 第IV章主体 | 尚未连续译入；不能把第0章§§14—23误当成第IV章主体 |
+| 第V卷预备笔记 | 第一篇卷首、§§1—15现存文字；PS短篇全部六页可读文字，经同文校订；原载体缺文和待写提示保持 |
+
+第IV章其余分册和相应书末资料、第V卷后续仍未完成；原著缺文不凭常识补造。
+
+## 两个真实接续点
+
+### 最近整合分支：第V卷
+
+EGAVaiello.pdf物理第66页，“we have the commutativity of the diagram”之后的交换图起。
+当前text/v1_2.tex末尾是“在这些条件下，有下面这个图的交换性——”。
+EGAV1-2.ps恰在该句后终止，合并英文稿却继续给出图、符号说明与证明。
+不要退回Dot原分支的第62页注4(d)；那部分早已在旧合订短篇中。
+第一篇的拟定目录§16“转换为线性系的语言”与第62页Part II“§16 New EGA V”不是同一节，不得混编或补造前者。
+
+### 正式刊行主线：第IV章
+
+EGAIV.1.pdf物理第221页的第IV章内容提要开始（该标题页未明印分册页码）；章首说明在物理222—223页，§1与(1.1.1)在物理223页（印刷224页）。
+不要重译第0章§23。第IV章主体不能在进度中记为已完成。
+
+若新指令只说“继续”，可先接好最近处理的V卷第66页图式；若用户明确指定卷次，以该指令为准。两个分支均应保留，不互相覆盖。
+
+## 本版排版位置
+
+- 旧短篇同文校订起于本合订PDF第{short_page}页。
+- 新接合§7起于第{section_pages['7']}页；§11第{section_pages['11']}页；§12第{section_pages['12']}页；§14第{section_pages['14']}页；§15第{section_pages['15']}页。
+- 第V卷已译部分在书末资料分隔页（第{back_page}页）之前结束。
+- 所有这里的PDF页码均从封面起数；底本页码与译本页码不可混用。
+
+## 实际核验
+
+- 基线111份源码记录中109份字节不变；有意改变的是text/v1_2.tex与范围说明text/remaining.tex。另有卷首、标题与构建入口的版本性更新。
+- 按内容目录统计的105份旧TeX中，103份不变；75份旧数学正文中74份不变；18份旧报告全部保留。旧短篇原稿逐字存于history/v16_short_before_integration.tex。
+- 原条目宏2436个全部保留，当前{structure['counters']['entries']['current']}个；原公式标签1057个全部保留，当前{structure['counters']['tags']['current']}个。宏计数是结构检查，不是证明完成数。
+- 四个构建目标（主稿、报告、两份独立单文件）均实际通过XeLaTeX三遍编译。
+- 主稿{bp}页、报告{rp}页的每页文字、尺寸及同一渲染器72 dpi像素，在模块构建与单文件构建之间完全一致。
+- 最终日志无编译错误、缺字、未定义引用及Overfull。仍有Underfull（主稿50、报告43）、数学字号替代及历史报告14条书签字符串警告；保留完整日志，不谎称零警告。
+- 视觉检查只覆盖checks/VISUAL_REVIEW.md列明页面。它不等于全书数学独立重证，也没有声称逐页人工审完全部旧内容。
+- 原第十六版完整包每个普通文件均按映射保留；Dot总包与随后两包原件完整归档。底本12份齐备。
+
+## 状态文件与出处
+
+当前约束见AGENTS.md；未决问题见PENDING_ISSUES.md；来源及56批映射见SOURCE_MAP.md与checks/DOT_BATCHES.json。
+最终散列、CRC和恢复检查由交接包根目录MANIFEST.json、SHA256SUMS.txt及00_START_HERE中的说明提供。
+历史构建记录、旧审核自述及旧进度不会自动升级为本版完成证据。
+"""
+write(PROJECT / "PROGRESS.md", progress)
+
+readme = f"""
+# 代数几何基础中文译校合订本·第十七版
+
+当前成品为{bp}页合订PDF和{rp}页累计核查报告。Dot已恢复的56批EGA V译稿已经纳入：54批接合正文，2批同文校订。未完成的卷次仍明确标示。
+
+## 入口
+
+- main.tex → main.pdf；single.tex为同内容的独立单文件。
+- report.tex → report.pdf；report_single.tex为独立报告单文件。
+- PROGRESS.md是当前实际进度；SOURCE_MAP.md记来源；PENDING_ISSUES.md列待核问题；HANDOVER_STATE.json为结构化状态。
+- history是历史记录，不是当前进度；checks是本版可核验记录。
+
+## 编译
+
+使用XeLaTeX及标准TeX Live的CTeX、AMS、TikZ-cd、hyperref、bookmark、footmisc等依赖，Python 3.9或更新版本。
+
+    bash build.sh
+
+独立单文件及完整本版技术核验：
+
+    bash build.sh --verify-single
+    python3 checks/check_structure.py
+    python3 checks/check_build_logs.py
+    python3 checks/verify_pdf_parity.py
+
+PDF比对脚本需要PyMuPDF；结构检查只需Python标准库。single.tex及report_single.tex均无外部TeX或图片输入，可单独置于任意目录，用标准完备TeX环境各运行XeLaTeX三遍。
+
+本工程附vendor/texmf中的CTeX、相关中文支持和Fandol等开放字体及原许可证。scripts/tex_environment.sh仅在检测到所需CTeX或XeLaTeX格式缺失时启用本项目目录下的补充树，必要时在runtime中生成格式；不修改系统TeX设置。没有附完整TeX Live或XeLaTeX可执行引擎。跨操作系统的ctex默认字体选择可能不同，不承诺任意环境逐像素相同。
+
+发行工程不收录可重建的aux、xdv及二进制格式缓存；最终日志保存在checks/build_logs。首次恢复前可先在交接包根目录运行verify_package.py。修改或重新编译后PDF时间元数据等会变化，旧散列不再代表新版本，应在核验新版本后重新制表。
+
+## 排版与保留
+
+真实文档类为ctexbook；不另设字体、字号或版心。数学公式和交换图用TeX。为四位数页码保留目录宽度。无编号分隔页由类的part命令在secnumdepth=-2下生成并自行写目录，避免在跨页结束后手写目录导致页码偏移；随后恢复secnumdepth=2。
+
+本次整合的18处公式/列表后脚注引标调整了附着位置，注全文和顺序、显示公式全文和顺序经程序比对保持不变。旧正文除有据登记的PS短篇校订外保持原样，不因此声称旧内容全部重审。
+
+## 下一步
+
+V卷：EGAVaiello.pdf第66页PS截断句之后的交换图。
+IV章：EGAIV.1.pdf第221页章首提要；(1.1.1)在第223页。
+两处是底本的物理页。详细原句及约束见PROGRESS.md。
+"""
+write(PROJECT / "README.md", readme)
+write(PROJECT / "AGENTS.md", """
+# 工程续作约定
+
+先读PROGRESS.md、HANDOVER_STATE.json、SOURCE_MAP.md、PENDING_ISSUES.md，并检查实际输入源码末段。当前源码优先于聊天叙述、文件标题、旧进度和历史成功记录。
+
+依据用户原件逐段完整翻译；保留组织、原编号、陈述、证明详略、脚注、公式和图。维持预概形/概形、拟凝聚/凝聚、双同态、丰沛等已有术语。未见原文不凭数学常识补写。英译原件有缺文或待写提示时保留明确状态；不得把拟定目录当成实际写成的章节。
+
+有证据的正确表述写正文，原错误、原式与订正理由写译校脚注；较长反例和补证进入报告。不能完整修复的错误断言明确不可直接采用，并完整保留原文供对照；不要用猜测的附加条件冒充原定理。区分英译转录问题、原作者意见与译者新增内容。
+
+保留既有工作。旧短篇与另一载体同文只排一次。修改须登记；不在无关卷次中作未经请求的改写。不要重新翻译已完整存在的段落，不把来源文件齐备或编译成功当作数学审定。
+
+使用既有ctexbook默认排版和XeLaTeX工程。每次交付写入真实源码，展开独立TeX，编译、检查日志并渲染查看相关页面。更新实际进度、源码映射、核查范围和未决问题。只报告真正执行且有记录的校验。
+
+当前已获授权的是本工程的翻译、译校、整合与续作打包；不发送邮件，不创建重复自动任务。接续按PROGRESS中的真实断点进行，不要求用户反复发送“继续”。若文件或工具确实不能恢复，记录具体阻碍，不能虚报进展。
+""")
+write(PROJECT / "PENDING_ISSUES.md", """
+# 待核与未完成事项
+
+本表是接续导航，不替代核查报告中的原文、证明及限制。
+
+## 连续译文尚缺
+
+- 第IV章主体及相应尚未处理的书末资料。IV.1物理221页内容提要起，(1.1.1)物理223页。
+- V卷合并英文稿第66页交换图及后文；PS短篇的截断不能当作合并英文稿本身缺文。
+- V卷原拟定目录中的章节不等于现存手稿；第一篇拟定§16与第二篇“§16 New EGA V”不得混淆。
+
+## 当前不能当作已修复定理
+
+- V（7.4）：所印假设下有纯不可分扩域反例；现正文暂不采用，报告D17-E01保留完整原陈述、原证明和原脚注27。只把≤改为<并未获完整证明。
+- V 14.4(a)空交条款：当Y与T相交时有直接反例，见V-H-LATE-03。未证明补加Y∩T为空即可修复整条。
+- V（13.3）：经过指定点x∈L0的条件及从任意点到k有理点的归约仍需补齐；13.4(c)、(d)亦有相关问题。有限余域时的平展基变换与仅取Zariski邻域的区别未解决。
+- V §12后段：新范围条件使退化层维数计算有意义，但非光滑层的识别、过滤及超奇异结论依赖仍未全证；不能把本版Schubert计算当成后续全部结论的证明。
+- V旧短篇命题7：本轮已修正可确定的类型与Jacobian条件；作者后文对旧稿正确性的评价不是独立证明。第66页图式、符号与概形结构须继续逐段审查。
+
+## 原件缺文或待定
+
+- 8.8完整陈述/前提缺失，8.7(c)记号残缺，9.4只留待陈述提示，9.5有残句。
+- 7.1回指、4.2/4.3若干维数指标、14.1残缺条件、14节有关平坦性推广等保持现有待核标记。
+- 13.4(e)关于普遍覆盖同胚于Cn的强结论及其他未证推广没有因为译文收入而获证明。
+- 没有取得法文原手稿；当前校对依据为上传的英文编辑载体，不能把其转录问题直接归责原作者。
+
+## 特征2已核到出处，但后文未连续译入
+
+EGAVaiello第73—74页原作者明确修正“普通奇异零点”的旧称；第78页区分光滑二次型与双线性判别式非退化。定义1末尾已落实该术语订正（D17-S13）；不得再笼统记为“毫无出处未查”，也不得据此把全部后文算作已译或已审定。
+
+## 历史未决
+
+旧H8-P01涉及(19.7.1.5)原版较弱拓扑范围，仍待核。历史报告中的其他未决问题保持原状态。已有18份历史报告原文保留不代表本版逐条重新审定；新旧结论不同须以明确注号和版本记录解释。
+""")
+source_map = """
+# 第十七版来源与覆盖
+
+底本位于完整交接包的03_sources；12份实际文件的字节数、SHA-256和PDF物理页数见checks/source_corpus_manifest.json。三个PS载体亦保留；资料齐备不等于全部译完。
+
+## 当前增量
+
+| 当前输入文件 | 原件范围与来源 |
+|---|---|
+| continuations/v_dot_early.tex | EGAVaiello第18页末—43页；Dot18批覆盖§§7—10，本版新译§11 |
+| continuations/v_dot_middle.tex | 第43—53页，§§12—13.4(e)，Dot19批 |
+| continuations/v_dot_late.tex | 第53页标题及54—61页，§§14—15，Dot17批；54—55页漏接为本版新译 |
+| text/v1_2.tex | EGAV1-2.ps全部六页可读文字；与EGAVaiello62—66页前部重合；Dot最后两批作为定义1—注4(c)同文校订 |
+
+完整56批索引见checks/DOT_BATCHES.json，含原TeX散列、处理位置及历史进度；在完整包05_Dot/batches可直接读各批源码，原总包和随后两包在05_Dot/original_archives。
+8.14—8.15批中的前批8.13.tex是备份，不能重复算正文。Dot总ZIP内的其他研究项目仅原样归档，不入本书正文。
+
+## 真实接续定位
+
+- V：EGAVaiello第66页，原句“we have the commutativity of the diagram”之后的交换图。图后还有符号说明和证明；本版尚未连续译入。
+- IV：EGAIV.1物理221页内容提要（标题页未明印分册页码）；章首说明222—223页，(1.1.1)物理223页／印刷224页。
+- 第0章止于(23.2.10, ii)及原“待续”；不能误判为第IV章主体已完成。
+
+## 原件保留
+
+第十六版完整续作包480个ZIP条目经CRC检查，其中每个普通文件均逐字节保留到本包相应位置；checks/v16_complete_migration.json逐项记录旧路径→新路径及SHA。历史说明与工具另归档，当前状态只看本版PROGRESS。
+较早核心包与第十六版原工程中的132份可比现行文件相同，见checks/v16_core_match.json；独立保留核验见checks/preservation_check.json。重排目录和脚注引标另见checks/layout_repairs.json。
+
+## 原文核对边界
+
+以用户上传原件为底本；不以网站的摘要或其他现代教材代替翻译。外部Stacks标签01V4仅用于核对光滑定义中的局部有限表示；相关研究性推导明确标为译校核验。
+第73—74及78页用于定点核查特征2术语，没有计作连续译文。页图与文本抽取若不一致，以页图为准，并标注未辨认部分。
+"""
+write(PROJECT / "SOURCE_MAP.md", source_map)
+
+state = {
+    "edition": 17, "record_date": "2026-11-20", "time_zone": "Asia/Shanghai",
+    "all_books_finished": False,
+    "current_project": "01_project/EGA_v17",
+    "book": {"modular": "main.tex", "single": "single.tex", "pdf": "main.pdf",
+             "pages": bp, "pdf_sha256": sha(PROJECT/"main.pdf"),
+             "single_tex_sha256": sha(PROJECT/"single.tex")},
+    "report": {"modular": "report.tex", "single": "report_single.tex", "pdf": "report.pdf",
+               "pages": rp, "pdf_sha256": sha(PROJECT/"report.pdf"),
+               "single_tex_sha256": sha(PROJECT/"report_single.tex")},
+    "dot_batches": {"restored": 56, "new_body": 54, "same_text_collation": 2},
+    "new_translation_gaps_filled": ["V §11, pp.41–43", "V §14 bridge, pp.54–55"],
+    "next": [
+        {"branch": "V", "source": "03_sources/EGAVaiello.pdf", "physical_page": 66,
+         "starts_at": "commutative diagram after 'we have the commutativity of the diagram'",
+         "do_not_restart_at": "Dot-only former page62 Remark4(d)"},
+        {"branch": "IV", "source": "03_sources/EGAIV.1.pdf", "physical_page": 221,
+         "starts_at": "Chapter IV synopsis, then introduction; (1.1.1) on physical223"},
+    ],
+    "default_continuation_if_user_only_says_continue": "Finish the current V short-manuscript join at page66, unless user specifies another volume.",
+    "source_corpus_count": 12,
+    "checks": ["checks/structure_verification.json", "checks/build_log_summary.json",
+               "checks/output_verification.json", "checks/VISUAL_REVIEW.md",
+               "checks/layout_repairs.json", "checks/relocation_check.json"],
+    "pending": "PENDING_ISSUES.md",
+    "automation_created_or_modified": False,
+    "email_sent": False,
+}
+write(PROJECT / "HANDOVER_STATE.json", json.dumps(state, ensure_ascii=False, indent=2))
+
+prompt = """
+请先解压本完整续作包，读取00_START_HERE/START_HERE.md、01_project/EGA_v17/PROGRESS.md、HANDOVER_STATE.json、SOURCE_MAP.md和PENDING_ISSUES.md；先运行根目录verify_package.py并核对实际源码末段。
+在保留第十七版已译内容的基础上继续严谨译校，不凭旧聊天进度或文件标题推断完成度。Dot56批已纳入，其中54批为新接合正文、2批为同文校订；§11及§14的漏接已经补齐。第一篇§§1—15的现存文字已纳入，原稿缺文与待写标记仍保留；不要从§7或§11重来。
+最近V卷的真实接续点是03_sources/EGAVaiello.pdf第66页“we have the commutativity of the diagram”之后的交换图；PS短篇只是在那里截断。不要退回Dot独立批次的第62页注4(d)，也不要把第一篇拟定§16与第二篇§16混为一节。另一正式刊行主线从EGAIV.1.pdf物理221页章首提要继续，(1.1.1)在223页；第IV章主体尚未译入。
+如本次只说继续，先接好V卷第66页，遇明确新指定卷次则依新指令。保持预概形/概形、拟凝聚/凝聚、双同态、丰沛等既有术语；逐段完整保留原结构、证明、公式、脚注和图。确定错误写正确正文，原错误及理由置脚注，长反例和补证入报告；原缺文和未证推广不得补造。保留未决项及其准确状态。
+用真实ctexbook默认排版和XeLaTeX，更新实际源码与进度，编译并检查相关页面。交付统一PDF、独立单文件TeX、累计核查报告和含最新进度的工程包。自主推进，不要求我反复发送继续；不发送邮件、不创建重复自动任务；无法恢复原件或环境时如实说明具体阻碍，不虚报执行或完成。
+"""
+write(START / "NEW_CHAT_PROMPT.txt", prompt)
+write(START / "START_HERE.md", f"""
+# 从这里恢复第十七版
+
+本包提供可以接续的实际工程；不会自动替新对话加载旧聊天。开启新对话后上传完整ZIP，并粘贴同目录NEW_CHAT_PROMPT.txt即可说明任务。新对话首先读取文件和核验状态，再继续工作。
+
+## 三步恢复
+
+1. 完整解压，保留目录层次；运行根目录的python3 verify_package.py。MANIFEST.json与SHA256SUMS.txt是本次封包的逐文件依据。
+2. 读取01_project/EGA_v17中的PROGRESS.md、HANDOVER_STATE.json、SOURCE_MAP.md、PENDING_ISSUES.md。当前PDF为{bp}页，报告为{rp}页；当前单文件为single.tex和report_single.tex。
+3. 在工程目录运行bash build.sh --verify-single，随后按README运行结构、日志与PDF比对。需要XeLaTeX基础环境；已附CTeX/中文字体补充树和许可证，但不是一套完整的TeX Live操作系统环境。
+
+## 本版已做与未做
+
+Dot56批已合入：54批接第一篇§§7—15，2批校订与旧短篇重合的段落。缺少的§11及§14漏接已经按底本补译。原第十六版完整包的每个普通文件均映射保留，12份底本齐备，Dot原总包和最后两包原样保留。
+
+这是当前工作合订本；第IV章主体与V卷后续尚未完成。不要把书名、ZIP中的“完整”或旧档案的成功记录当成所有书已译完。
+
+## 下一步原文在哪里
+
+- 最近V分支：03_sources/EGAVaiello.pdf第66页交换图起，紧接PS截断句。第62页注4(d)已在当前书中。
+- 正式IV主线：03_sources/EGAIV.1.pdf第221页内容提要，随后章首说明；(1.1.1)在第223页。
+
+全文以文件内真实接续点为准，不依赖本对话的剩余额度。此包未建立新的自动任务，也不自动开启聊天；它保存的是后续模型需要的原件、源码、约束、进度及核查证据。
+
+## 目录
+
+| 目录 | 用途 |
+|---|---|
+| 00_START_HERE | 本说明、可粘贴提示词、当前状态摘要 |
+| 01_project/EGA_v17 | 当前可编辑/编译的模块工程、单文件、成品和核验记录 |
+| 02_deliverables | 直接阅读和单独使用的PDF/TeX |
+| 03_sources | 全部12份原著底本 |
+| 04_history | 第十六版完整包原文件的逐项保留与路径映射 |
+| 05_Dot | 56批原源码、历史进度、原ZIP与整合索引 |
+| 07_integration_records | 本次整合处理及分支审查记录；其中一次性脚本不是日常构建入口 |
+
+旧档案中的绝对临时路径是当时的记录，不要求新环境复现；当前build.sh、检查入口与本包根目录脚本均按自身位置定位。
+""")
+write(START / "HANDOFF_STATUS.md", f"""
+# 交接状态
+
+第十七版合订本{bp}页；累计报告{rp}页。当前源码和PDF的散列在HANDOVER_STATE.json及根清单。
+Dot56批实际纳入，54新接合+2同文校订；补齐两处漏接。
+未完：第IV章主体与后续材料、第V卷第66页图式起的后文。数学未决项见PENDING_ISSUES.md。
+当前交付任务为整合、核验、封包；没有创建或修改自动任务，没有发送邮件。
+原始资料、历史工程与来源索引已随完整包提供；读旧进度时应以本版当前状态校准。
+""")
+shutil.copy2(PROJECT / "HANDOVER_STATE.json", START / "HANDOVER_STATE.json")
+write(STAGE / "README.md", f"""
+# EGA中文译校·第十七版完整续作工程
+
+从00_START_HERE/START_HERE.md开始。当前合订本{bp}页、累计核查报告{rp}页。
+“完整续作工程”指本次核验后封包的工程与资料完整，不表示所有原著译完。
+收包先运行python3 verify_package.py；编译入口BUILD_ALL.sh；新对话提示在00_START_HERE/NEW_CHAT_PROMPT.txt。
+""")
+print(json.dumps({"book_pages": bp, "report_pages": rp, "section_pages": section_pages,
+                  "short_page": short_page, "backmatter_divider": back_page}, ensure_ascii=False))

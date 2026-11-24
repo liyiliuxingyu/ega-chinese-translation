@@ -1,0 +1,14 @@
+{
+  "completed": "底本58页We will avoid believing起至页末图式",
+  "next": "底本59页obtained (with the help) using the different C起，承接58页图式",
+  "previous_project": "libfile_fde3_f-dac820eea2488191b9b0ebe912e06c5d_49ac57203c0c81918f3630f0324dcb35",
+  "source_sha256": "23a20ef32fd16a1bd623c0c08ac080d04fc94f248de12133b713a19d6b0330d9",
+  "merged_into_main": false,
+  "pdf_pages": 4,
+  "unresolved": [
+    "两处不可辨提示照存",
+    "preceding counterexample中的维数m与上文m-1衔接待核",
+    "页末图式左下X疑为底空间误记，照存待核",
+    "未补造反例或第VIII章证明，14.4等历史缺文缺条件保持"
+  ]
+}

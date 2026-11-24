@@ -1,0 +1,162 @@
+from pathlib import Path
+import hashlib, json, re
+
+ROOT = Path('/workspace/scratch/a886fd56dd2f')
+OUT = ROOT / 'integration/late'
+BATCHES = [
+    '14锥投影构造', '14一般中心', '14正则截面与爆破',
+    '14.1命题陈述', '14.1证明残文', '14.2有限投影', '14.3平坦性',
+    '锥投影微分性质导言', '命题14.4', '命题14.5与推论14.6',
+    '锥投影性质辨析', '锥投影普遍图式', '第15节公理化导言',
+    '参数族与基变换', '平坦性假设与非空性公理', '泛截面光滑性条件',
+    '第15节推广计划结语',
+]
+LATEST = ['第16节奇异零点定义', '第16节几何奇异零点']
+
+def sha(path):
+    return hashlib.sha256(path.read_bytes()).hexdigest()
+
+def get_source(name, latest=False):
+    base = ROOT / ('unpacked/dot_latest' if latest else 'unpacked/dot_batches')
+    directory = base / f'EGA第五卷_{name}_续译工程'
+    matches = list(directory.glob('*.tex'))
+    assert len(matches) == 1, (directory, matches)
+    return matches[0]
+
+def body(path):
+    text = path.read_text()
+    start = text.find('\\chapter*{§')
+    if '\\chapter*{第二部分' in text:
+        start = text.index('\\chapter*{第二部分')
+    assert start >= 0, path
+    text = text[start:text.index('\\end{document}', start)]
+    text = re.sub(r'\\chapter\*\{[^\n]*\}\s*', '', text)
+    text = text.replace('\\newpage', '')
+    text = text.replace('\\enlargethispage{3\\baselineskip}', '')
+    text = text.replace('本批', '本段译校').replace('上一批', '前文').replace('前批', '前文')
+    return text.strip()
+
+fragments = {name: body(get_source(name)) for name in BATCHES}
+fragments.update({name: body(get_source(name, True)) for name in LATEST})
+
+# §14 returns to r = relative projective dimension, unlike §12's rank r.
+f = fragments['14锥投影构造']
+old = '这里$P(E)$采用局部自由秩一商模的约定；因此中心$P(E/G)$对应商模$E/G$。'
+new = '本节的$r$表示$P(E)$的相对维数，因$\\operatorname{rk}F=r-m$和$\\operatorname{rk}G=m+1$，此处$\\operatorname{rk}E=r+1$。第12节在第43页另以$r$表示$E$的秩，故本节记号已切换；不能把此处$r-m-1$静默改为$r-m-2$，也不能把整个$P(E)$的相对维数误读成$r-1$。这里$P(E)$采用局部自由秩一商模的约定；因此中心$P(E/G)$对应商模$E/G$。'
+assert old in f
+fragments['14锥投影构造'] = f.replace(old, new)
+
+# A duplicated heading in the short batch is structural metadata, not source prose.
+fragments['14.1命题陈述'] = fragments['14.1命题陈述'].replace('\\noindent\\textbf{命题14.1。}', '\\egas{14.1}{命题}')
+fragments['14.1证明残文'] = fragments['14.1证明残文'].replace('\\noindent\\textbf{命题14.1的证明（底本残文）。}', '\\eproof\\textbf{〔底本残文〕}')
+for n, name, kind in [('14.2','14.2有限投影','推论'), ('14.3','14.3平坦性','推论'), ('14.4','命题14.4','命题')]:
+    fragments[name] = fragments[name].replace(f'\\noindent\\textbf{{{kind}{n}。}}', f'\\egas{{{n}}}{{{kind}}}')
+for n, kind in [('14.5','命题'), ('14.6','推论')]:
+    fragments['命题14.5与推论14.6'] = fragments['命题14.5与推论14.6'].replace(f'\\noindent\\textbf{{{kind}{n}。}}', f'\\egas{{{n}}}{{{kind}}}')
+
+# Correct a demonstrably invalid clause without inventing a sufficient repair.
+f = fragments['命题14.4']
+begin = f.index('若再设$Y$')
+end = f.index('\\noindent(b)', begin)
+f = f[:begin] + r'''若再设$Y$为$X$的一个维数$\leq m-1$的闭子集，原稿在此所列的空交断言按所印假设不成立，译校暂不将这一条款作为可用结论。\note{底本在这里写“we have”，并断言
+\[
+p_{C_\eta}^{-1}\bigl(p_{C_\eta}(Y_{k(\eta)})\bigr)
+\cap T_{k(\eta)}=\varnothing.
+\]
+原式以“$\phi$ = empty set”表示空集。只要$Y\cap|T|\ne\varnothing$，基变换后的交点就属于所写交集，故所列前提不足。例如取$k$为域、$m=1$、$X=\mathbb A^1_k\hookrightarrow\mathbb P^2_k$为一条直线中的标准仿射开集，$T=Y=\{0\}$，则$f$为浸入、$\dim X\leq m$、$\dim Y\leq m-1$，但交集仍含$T_{k(\eta)}$。至少需要$Y\cap|T|=\varnothing$；这只是必要条件，不将它冒充原稿缺失假设的完整恢复。原条款保存在本注及核查报告中。}
+
+''' + f[end:]
+f = f.replace('下一行单列上述公式', '下一行单列下式')
+fragments['命题14.4'] = f
+
+# The next page identifies the base of the previous page's diagram as S.
+f = fragments['锥投影性质辨析']
+old = '底本页末左下角明确印为$X$，左上角也为$X$。其意图似为相对底空间上的图式，但单凭此页不能把左下角确定改成$S$或其他对象；故先照存，并留待下一页的基变换及普遍图式说明核对。箭头不额外标作恒等态射。'
+new = '底本第58页图式左下角印为$X$。第59页紧接着明确说明作基变换$T\\to S$，并在对应图式左下写$T$、左上写$X_T$；故此处基变换前的左下应为$S$，左竖箭头是$X$的结构态射。本次整合据该跨页证据订正，原印$X$保留在本注中。'
+assert old in f
+f = f.replace(old, new)
+f = f.replace('X&\\longleftarrow&Q(C)', 'S&\\longleftarrow&Q(C)')
+fragments['锥投影性质辨析'] = f
+f = fragments['锥投影普遍图式']
+f = f.replace('上一页左下角印为$X$；本页基变换图式左下为$T$且基变换为$T\\to S$，据此，上一页原始相对图式的左下应订为$S$，其左上仍为$X$，左竖箭头为结构态射。此前独立文件未在本段译校中覆盖改写。', '上一页原始相对图式的左下已据此订为$S$，其左上仍为$X$，左竖箭头是结构态射；原误印及订正依据见前一译校注。')
+assert '此前独立文件' not in f
+fragments['锥投影普遍图式'] = f
+
+# Keep the local original numbering in Part II; the hyperlink scope changes.
+f = fragments['第16节奇异零点定义']
+f = f.replace('\\section*{§16 新 EGA V}', '\\egasection{16. 新 EGA V}')
+f = f.replace('\\subsection*{新编号 \\#：函数的奇异与超奇异集合及微分判据}', '\\subsec{新编号 \\#：函数的奇异与超奇异集合及微分判据}')
+f = f.replace('标题说明。\\note{', '\\noindent\\textbf{第二部分〔Tr〕}\\note{')
+f = f.replace('\\paragraph{定义1.}', '\\egas{1}{定义}').replace('\\paragraph{注2.}', '\\egas{2}{注}')
+fragments['第16节奇异零点定义'] = f
+f = fragments['第16节几何奇异零点']
+f = f.replace('\\paragraph{定义3.}', '\\egas{3}{定义}').replace('\\paragraph{注4.}', '\\egas{4}{注}')
+fragments['第16节几何奇异零点'] = f
+
+missing = (OUT / 'restored_14_projection.tex').read_text().strip()
+pieces = ['% Integrated original source: EGAVaiello.pdf, pages 53--61.\n% Dot: 17 archived batches. Two subsequent section-16 batches are collated separately.\n\\egasection{14. 锥投影}']
+source_records = []
+for name in BATCHES + LATEST:
+    if name == '第15节公理化导言':
+        pieces.append('\\egasection{15. 前述若干结果的公理化}')
+    path = get_source(name, name in LATEST)
+    if name not in LATEST:
+        pieces.append('% SOURCE: ' + str(path.relative_to(ROOT)) + '\n' + fragments[name])
+    source_records.append({'batch':name, 'path':str(path.relative_to(ROOT)), 'sha256':sha(path), 'original_body_characters':len(body(path))})
+    if name == '14锥投影构造':
+        pieces.append('% RESTORED DIRECTLY FROM SOURCE, pages 54--55:\n' + missing)
+text = '\n\n'.join(pieces) + '\n'
+
+# TeX diagrams preserve all four objects and arrows while avoiding text arrows.
+pattern = re.compile(r'\\begin\{array\}\{ccc\}\s*([^&\n]+)&\\longleftarrow&([^\n]+)\\\\\s*\\big\\downarrow&&\\big\\downarrow\\\\\s*([^&\n]+)&\\longleftarrow&([^\n]+)\s*\\end\{array\}')
+def diagram(m):
+    a,b,c,d = [x.strip().removesuffix('.') for x in m.groups()]
+    return f'\\begin{{tikzcd}}\n{a} \\arrow[d] & {b} \\arrow[l] \\arrow[d] \\\\\n{c} & {d} \\arrow[l]\n\\end{{tikzcd}}'
+text, converted = pattern.subn(diagram, text)
+assert converted == 5, converted
+
+# Stable independent audit-note identifiers, without changing their text.
+note_counter = 0
+def note_id(m):
+    global note_counter
+    note_counter += 1
+    return '\\cmt{V-H-L%03d}{' % note_counter
+text = re.sub(r'\\note\{', note_id, text)
+assert '\\chapter*' not in text and '\\end{document}' not in text
+assert '\\note{' not in text and '\\newpage' not in text
+(OUT / 'body_late.tex').write_text(text)
+
+# §16 duplicates the existing EGAV1-2 short manuscript: provide a replacement
+# candidate for local Definitions/Remarks 1--4(c), never append it as new text.
+collation = fragments['第16节奇异零点定义']
+collation = collation[collation.index('\\egas{1}{定义}'):]
+collation += '\n\n' + fragments['第16节几何奇异零点'] + '\n'
+collation_counter = 0
+def collation_note_id(m):
+    global collation_counter
+    collation_counter += 1
+    return '\\cmt{V-H-C16-%02d}{' % collation_counter
+collation = re.sub(r'\\note\{', collation_note_id, collation)
+collation = '% COLLATION CANDIDATE ONLY; NOT ADDITIONAL CONTENT.\n% Replace the existing EGAV1-2 Definitions/Remarks 1--4(c), preserving Remark 4(d) onward.\n' + collation
+(OUT / 'collation_16.tex').write_text(collation)
+manifest = {
+    'scope':'New integrated body: EGA V §14 (p.53 heading and p.54–59), §15 (p.59–61). Separate duplicate-source collation: §16 through Remark 4(c) (p.62).',
+    'dot_batches':19,
+    'archived_batches':17,
+    'post_archive_batches':2,
+    'source_pdf_sha256':'23a20ef32fd16a1bd623c0c08ac080d04fc94f248de12133b713a19d6b0330d9',
+    'source_render_pages_inspected':[43,54,55,56,57,58,59,60,61,62],
+    'next':'Main project continuation must be determined after comparison with existing EGAV1-2.ps translation; page 62 Remark 4(d) is only the endpoint of the Dot batches and is NOT the whole-project missing-text endpoint.',
+    'local_part_II_numbering':'Definitions/Remarks 1–4 preserved in separate collation_16.tex; root integrates under existing short-manuscript scope, never appends duplicate §16.',
+    'restored_missing_range':'p.54 from If not, we have an f:X→P through p.55 it makes sense (cf. No.10 and No.12), including diagram and footnote 67',
+    'notes_count':note_counter,
+    'collation_notes_count':collation_counter,
+    'converted_existing_diagrams':converted,
+    'new_restored_diagrams':1,
+    'sources':source_records,
+    'body_sha256':sha(OUT / 'body_late.tex'),
+    'collation_sha256':sha(OUT / 'collation_16.tex'),
+    'restored_sha256':sha(OUT / 'restored_14_projection.tex'),
+}
+(OUT / 'integration_notes.json').write_text(json.dumps(manifest, ensure_ascii=False, indent=2)+'\n')
+print(json.dumps({k:manifest[k] for k in ['dot_batches','notes_count','converted_existing_diagrams','body_sha256']}, ensure_ascii=False, indent=2))

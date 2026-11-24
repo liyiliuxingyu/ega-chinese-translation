@@ -1,0 +1,111 @@
+\documentclass[openany,fontset=fandol]{ctexbook}
+\usepackage{amsmath,amssymb}
+\usepackage[unicode,hidelinks]{hyperref}
+\setlength{\emergencystretch}{2em}
+\interfootnotelinepenalty=10000
+\newcommand{\OO}{\mathcal O}
+\newcommand{\LL}{\mathcal L}
+\newcommand{\MM}{\mathcal M}
+\newcommand{\EE}{\mathcal E}
+\newcommand{\nn}{\boldsymbol n}
+\DeclareMathOperator{\Pic}{Pic}
+\DeclareMathOperator{\Sym}{Sym}
+\DeclareMathOperator{\Div}{Div}
+\begin{document}
+\title{代数几何基础第五卷预备笔记\\多重射影丛与多次数除子}
+\author{据法文扫描和英译编辑稿互校续译}
+\date{2026年11月21日}
+\maketitle
+\chapter*{范围与接续}
+第75批续接第三篇第2小节，从2.5多重射影丛的定义至推论2.10末。法扫描物理121--123页（手写128--130），英译编辑稿物理94--95页。法稿2.7的手写编号已经核对。命题2.6两种底本都漏写了从底拉回的因子；正文补正，保留原读法与验证说明。
+
+下一处是2.11一般情形的相对可表性，法物理123页下段及英物理95页。此独立步骤尚未并入1158页合订本。正式出版第四卷的译校断点不变。
+\chapter*{第三篇（续）}
+\section*{2　多重射影丛上的可逆层与相对除子}
+\noindent\textbf{2.5。}
+现在给定 \(S\) 上有限族局部自由模 \((\EE_i)_{i\in I}\)。令 \(P_i=\mathbf P(\EE_i)\)，令 \(P\) 为各 \(P_i\) 在 \(S\) 上的纤维积，又称由 \((\EE_i)\) 定义的 \(S\) 上的\emph{多重射影丛}。记 \(f:P\to S\) 为结构态射，\(q_i:P\to P_i\) 为投影。为简化记号，用 \(\OO_i(n)\) 表示 \(P_i\) 上可逆模 \(\OO_{P_i}(n)\) 到 \(P\) 的拉回。对每组整数 \(\nn=(n_i)_{i\in I}\in\mathbb Z^I\)，置
+\[
+ \OO_P(\nn)
+ =\bigotimes_{i\in I}\OO_i(n_i)
+ =\bigotimes_{i\in I}q_i^*\OO_{P_i}(n_i).
+\]
+于是定理1.1推广如下。\footnote{法稿仅标“2.5”，并非推论。原稿的最后一项把外部张量积简记为底上张量积；这里写明各因子先拉回到 \(P\)，再作张量积。}
+
+\medskip\noindent\textbf{命题2.6。}
+设各 \(\EE_i\) 处处秩至少为 \(2\)。对多重射影丛 \(P\) 上的任一可逆模 \(\LL\)，存在 \(S\) 的开分割
+\[
+ S=\coprod_{\nn\in\mathbb Z^I}S_{\nn}
+\]
+及 \(S\) 上的可逆模 \(\MM\)，使得在每个 \(P|_{S_{\nn}}:=P\times_S S_{\nn}\) 上，
+\[
+ \LL|_{P|_{S_{\nn}}}
+ \ \simeq\ 
+ \bigl(f^*\MM\otimes_{\OO_P}\OO_P(\nn)\bigr)|_{P|_{S_{\nn}}}.
+\]
+而且，各 \(S_{\nn}\) 唯一确定；附有所给分解时，\(\MM\) 在唯一相容同构的意义下确定。\footnote{法物理122页与英物理94页都先引入 \(\MM\)，但在同构右边只写 \(\OO_P(\nn)\) 的限制，漏掉 \(f^*\MM\)。2.8和2.9再度使用这个因子。译校附记给出反例和迭代证明。}
+
+\medskip\noindent\textbf{2.7。}
+证明直接归结为定理1.1。\footnote{按法物理122页左侧手写的“2.7”恢复编号。英稿未录该编号，但译出了这一段。}
+在2.6的条件下，可以为 \(P\) 上的每个可逆模 \(\LL\) 指派一个\emph{多次数}
+\(\nn=(n_i)_{i\in I}\in\mathbb Z(S)^I\)，其中 \(\mathbb Z(S)\) 是 \(S\) 上的局部常值整数函数群。若 \(\Pic(S)=0\)，这个多次数确定 \(\LL\) 的同构类。
+
+第 \(i\) 个分量 \(n_i\) 称为 \(\LL\) 相对于因子 \(P_i\) 的\emph{部分次数}，还可以这样理解：对每个 \(i\) 选定 \(P_i\) 在 \(S\) 上的一个截面 \(g_i\)（至少在 \(S\) 的局部总存在这样的截面），用 \(P_i\) 自身的坐标和其他因子的截面构成
+\(h_i:P_i\to P\)。
+这时
+\[
+ n_i=\deg h_i^*\LL.
+\]
+应注意，一般而言 \(n_i\) 不是一个整数，而是 \(S\) 到 \(\mathbb Z\) 的局部常值函数。\footnote{用局部截面时，此式在相应的底开集上读取，不要求全局有截面。手稿说 \(\Pic(S)=0\) 时“至同构”；这里明确为确定同构类，而不声称线丛的任意自同构都平凡。}
+
+仿照第1小节，由2.6可以确定一个多重射影丛到另一个多重射影丛的态射，特别是一个多重射影丛的自同构。考虑到第25节关于多项式形式的结式和判别式的讨论，对我们更有意义的，是确定多重射影丛上的有效相对除子。
+
+\medskip\noindent\textbf{2.8。}
+若 \(D\) 是 \(P\) 上的相对除子，就把 \(\OO_P(D)\) 的多次数定义为 \(D\) 的多次数。与上文一样，确定 \(\Div^+(P/S)\) 归结为确定给定多次数 \(\nn\in\mathbb N^I\) 的 \(\Div^{\nn}(P/S)\)。此时有同构
+\[
+ \LL=\OO_P(D)\simeq f^*\MM\otimes_{\OO_P}\OO_P(\nn).
+\]
+再由第二章第2节得到\footnote{法、英两稿在左端都印作 \(f_*(D)\)，但 \(D\) 是除子，右端按投影公式对应的是 \(f_*\OO_P(D)=f_*\LL\)。法稿给出 \(\nn\in\mathbb N^I\)；英稿在2.8误写为 \(n\in I\)。}
+\[
+ (**)\qquad
+ f_*\LL\simeq\MM\otimes_{\OO_S} f_*\OO_P(\nn)
+       \simeq\MM\otimes_{\OO_S}
+                \bigotimes_{i\in I}\Sym^{n_i}(\EE_i).
+\]
+仿照2.2便得到：
+
+\medskip\noindent\textbf{命题2.9。}
+沿用以上记号。\(P\) 上多次数为 \(\nn\) 的有效相对除子集合 \(\Div^{\nn}(P/S)\)，与
+\[
+ \left(\bigotimes_{i\in I}\Sym^{n_i}(\EE_i)\right)^\vee
+\]
+的可逆商模 \(\MM\) 的集合，有一个典范的一一对应。等价地，可取其对偶模中的可逆子模，要求它局部为直和因子。若 \(D\) 和 \(\MM\) 对应，则
+\(\OO_P(D)\simeq f^*\MM\otimes\OO_P(\nn)\)
+是典范的；其标准截面 \(s_D\) 由商映射的对偶经 \((**)\) 确定。\footnote{保留2.2的商映射相容同构约定。手稿将各对称幂的对偶置于张量积内部；各因子有限局部自由，故也可写为整个张量积的对偶。}
+
+\medskip\noindent\textbf{推论2.10。}
+\(\Div^+_{P/S}\) 中对应于多次数 \(\nn\) 的子函子 \(\Div^{\nn}_{P/S}\)，典范地由射影丛
+\[
+ \mathbf P\left(
+ \left(\bigotimes_{i\in I}\Sym^{n_i}(\EE_i)\right)^\vee
+ \right)
+\]
+表示。全体有效相对除子函子 \(\Div^+_{P/S}\) 则由这些射影丛在 \(S\) 上的不交和典范地表示，其中指标为 \(\nn\in\mathbb N^I\)。这里 \(\mathbb N\) 包括 \(0\)。
+
+\section*{译校附记（非手稿）}
+\paragraph{为什么不能丢掉基底因子。}
+取 \(S=\mathbf P_k^1\)，取两个秩二平凡因子，令 \(\LL=f^*\OO_S(1)\)。在每个纤维上，\(\LL\) 的多次数都是 \((0,0)\)。但 \(f\) 有截面，沿该截面拉回 \(\LL\) 得到非平凡的 \(\OO_S(1)\)，故 \(\LL\) 不可能等于 \(\OO_P(0,0)\) 的同构类。
+
+\paragraph{如何迭代定理1.1。}
+对最后一个因子，先把 \(P\) 看成其余因子乘积 \(B\) 上的射影丛。最后一个次数是 \(B\) 上的局部常值整数函数。由于 \(B\to S\) 开且满射，各纤维非空且连通，这个函数在同一纤维上取常值，并下降成 \(S\) 上的局部常值函数。对其余因子重复。在各纤维上按因子限制即可确定各部分次数，因此次数分割唯一。在每个次数层上消去扭转，再用 \(f_*\OO_P=\OO_S\)，可取
+\(\MM=f_*(\LL\otimes\OO_P(-\nn))\)（式中按该层限制 \(f\) 和 \(\LL\)）；伴随评价给出所需的相容同构。
+
+\paragraph{参数空间与非负次数。}
+在任一纤维上，若某分量 \(n_i<0\)，对若干因子逐层推前表明全局截面为零，不能定义有效相对除子。对所有 \(n_i\ge0\)，用射影丛的正次推前公式及投影公式逐因子计算，得 \((**)\)，并与基变换相容。各几何纤维都是整的；多齐次截面在每个纤维不恒为零，就在各纤维上正则。射影丛乘积的结构态射平坦、局部有限表示，因此可应用纤维判据。截面等价于从上述对称幂张量积的对偶到 \(\MM\) 的满射；于是得到商约定下的参数空间。零多次数对应空除子。
+
+\paragraph{引用。}
+法扫描摘页附在工程内。英译编辑稿见
+\href{https://webusers.imj-prg.fr/~leila.schneps/grothendieckcircle/EGA/EGA5trans.pdf#page=94}{物理94页起}。
+射影丛商约定和相对有效 Cartier 除子的纤维判据分别见
+\href{https://stacks.math.columbia.edu/tag/01OA}{Stacks Project，01OA}、
+\href{https://stacks.math.columbia.edu/tag/062Y}{Stacks Project，062Y}。
+\end{document}

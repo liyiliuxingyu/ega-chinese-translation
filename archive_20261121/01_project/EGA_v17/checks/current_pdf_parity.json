@@ -1,0 +1,60 @@
+{
+  "renderer": "PyMuPDF 1.26.6",
+  "dpi": 72,
+  "pairs": {
+    "book_modular_vs_single": {
+      "pass": true,
+      "left_pages": 1158,
+      "right_pages": 1158,
+      "left_sha256": "2fd1bc1cdcf67553a9612500f77611837758d0331cc44428e46d5721be8b68a4",
+      "right_sha256": "b20e4e8f2b918a611834f3bdb36b9dbc982900d6f8175d32dbb75cff5c73d906",
+      "left_raster_digest": "8d2266f0569055e3bf698346b7a9786dc865ee051d862d3d43a2c514b270423a",
+      "mismatches": {
+        "text": [],
+        "page_size": [],
+        "pixels": []
+      }
+    },
+    "report_modular_vs_single": {
+      "pass": true,
+      "left_pages": 287,
+      "right_pages": 287,
+      "left_sha256": "eb585dc300a7264bbeb260799f14e4d58c7361dad0dde0a68d3e67fc7354aa25",
+      "right_sha256": "86ad0085148a937a2a6bb09a6ebf7b787bf43199d4fb5cd33e846c1d183906ee",
+      "left_raster_digest": "88207db32110bb6dafc98fbc589d90446f6269c3a800493a21a8c2a334629704",
+      "mismatches": {
+        "text": [],
+        "page_size": [],
+        "pixels": []
+      }
+    },
+    "book_rebuild_vs_received": {
+      "pass": true,
+      "left_pages": 1158,
+      "right_pages": 1158,
+      "left_sha256": "2fd1bc1cdcf67553a9612500f77611837758d0331cc44428e46d5721be8b68a4",
+      "right_sha256": "df69850134279ecf6f23b6eb3963d85b374c7fa682d6a648fa8469df887e7f44",
+      "left_raster_digest": "8d2266f0569055e3bf698346b7a9786dc865ee051d862d3d43a2c514b270423a",
+      "mismatches": {
+        "text": [],
+        "page_size": [],
+        "pixels": []
+      }
+    },
+    "report_rebuild_vs_received": {
+      "pass": true,
+      "left_pages": 287,
+      "right_pages": 287,
+      "left_sha256": "eb585dc300a7264bbeb260799f14e4d58c7361dad0dde0a68d3e67fc7354aa25",
+      "right_sha256": "d5aa39fb5c5916de8f63516a33e82e1d78e3248ce3ea4bdcb7cb87d31621e0f4",
+      "left_raster_digest": "88207db32110bb6dafc98fbc589d90446f6269c3a800493a21a8c2a334629704",
+      "mismatches": {
+        "text": [],
+        "page_size": [],
+        "pixels": []
+      }
+    }
+  },
+  "pass": true,
+  "elapsed_seconds": 21.159
+}

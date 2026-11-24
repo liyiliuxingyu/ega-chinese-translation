@@ -1,0 +1,66 @@
+{
+  "pass": true,
+  "logs": {
+    "main.log": {
+      "Overfull": 0,
+      "Underfull": 51,
+      "Missing character": 0,
+      "Undefined control sequence": 0,
+      "LaTeX Error": 0,
+      "undefined references": 0,
+      "Font Warning": 4,
+      "Token not allowed": 0,
+      "output_record": [
+        "Output written on main.pdf (1158 pages)."
+      ],
+      "sha256": "041d7f83d7c7a90010191f37a3544db6c8e9b8676df39ebc1818eafada8363a9",
+      "final_log": "current_build_logs/main.log"
+    },
+    "report.log": {
+      "Overfull": 0,
+      "Underfull": 43,
+      "Missing character": 0,
+      "Undefined control sequence": 0,
+      "LaTeX Error": 0,
+      "undefined references": 0,
+      "Font Warning": 4,
+      "Token not allowed": 14,
+      "output_record": [
+        "Output written on report.pdf (287 pages)."
+      ],
+      "sha256": "d32cbc085256609cde3421fd2082a452ef587267088519b9a08a104bc8a4a8dd",
+      "final_log": "current_build_logs/report.log"
+    },
+    "single_build/book_single.log": {
+      "Overfull": 0,
+      "Underfull": 51,
+      "Missing character": 0,
+      "Undefined control sequence": 0,
+      "LaTeX Error": 0,
+      "undefined references": 0,
+      "Font Warning": 4,
+      "Token not allowed": 0,
+      "output_record": [
+        "Output written on book_single.pdf (1158 pages)."
+      ],
+      "sha256": "bf6e6f68fab425f14f480530784903e5472cc2b75d49a92e8127f884b2371e93",
+      "final_log": "current_build_logs/book_single.log"
+    },
+    "single_build/audit_single.log": {
+      "Overfull": 0,
+      "Underfull": 43,
+      "Missing character": 0,
+      "Undefined control sequence": 0,
+      "LaTeX Error": 0,
+      "undefined references": 0,
+      "Font Warning": 4,
+      "Token not allowed": 14,
+      "output_record": [
+        "Output written on audit_single.pdf (287 pages)."
+      ],
+      "sha256": "cb3b081bdf29d7fae191a08e8779df311bcb2e4e4d9c7c100719adfe3255b9a0",
+      "final_log": "current_build_logs/audit_single.log"
+    }
+  },
+  "errors": []
+}

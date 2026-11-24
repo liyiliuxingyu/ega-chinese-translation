@@ -1,0 +1,40 @@
+\documentclass[openany,fontset=fandol]{ctexbook}
+\usepackage{amsmath,amssymb}
+\usepackage[unicode,hidelinks]{hyperref}
+\newcommand{\note}[1]{\footnote{译注：#1}}
+\begin{document}
+\title{代数几何基础第五卷预备笔记\\第12节：退化层维数与超奇异点}
+\author{据用户上传英译编辑稿译出}
+\date{2026年11月16日}
+\maketitle
+\chapter*{范围与校订状态}
+本批连续译出底本第47页后四段，自“If we also define $V^{(k)}$”起，止于“I could give a more precise statement upon request”。下一接点是第48页“Once we grant this”。
+
+本批保留原稿计算的保留语气、难辨标记和未展开的补篇引用。维数公式的适用范围未由原稿完整说明，不把本段升级为无条件定理。此前缺文及待核事项继续保留。本稿为独立续译，未覆盖或合入主稿。
+\chapter*{§12 将上述结果推广到线性截面（续）}
+若还把$V^{(k)}$定义为$X^{(m)}$中对应于条件
+\[
+\dim(T_x\cap L)\geq n-m+k
+\]
+的子概形，那么直接计算就得到
+\[
+\dim\operatorname{Grass}^{m}(P)-\dim V^{(k)}
+=(k-1)(n-m)+k^2,
+\]
+至少在合理的限制$k\leq m$、$k\leq r-m$下如此，除非计算有误。（注意：更一般地，这可以由上述格拉斯曼簇过滤中出现的“胞腔”的维数计算推出。）\note{底本的两项限制与“up to an error of calculation”均照录。原稿没有在本段交代空退化层、不同相对维数分支或各参数范围的全部约定；因此这里不是对所有$k$均成立的无条件维数等式，也不据此认定所列限制已经充分。本批不补造缺少的范围定理。}
+
+对于$k=2$，我们得到的维数差至少为4，因此$V''$在$\operatorname{Grass}$中的像〔字迹不清，请询问A.G.〕的余维至少为4。于是，如果我们只关心去掉$\operatorname{Grass}$中余维至少为2的子集之后的情形，就可以不考虑$V''$。\note{代入上一式得到$n-m+4$；在上文$n\geq m$的假设下，这个数确实至少为4。这只是对原式的代入核对，不替代对其适用范围和像的维数的证明。底本在Grass后留下的难辨标记仍保留。}
+
+\newpage
+另一方面，在$\operatorname{Grass}^{m}$上的$X_{\operatorname{Grass}^{m}}\setminus V''$中，情形正是第16段补篇中预先考虑的良好情形。相对于基概形$S$，$V'\setminus V''$确实光滑（因为它在$X$上光滑），其相对维数比$\operatorname{Grass}^{m}$在$S$上的相对维数小一；这可由在上述公式中令$k=1$看出。因此，所引之处的结果适用。特别地，我们得到：$\phi^m$相对于$\operatorname{Grass}^{m}$的超奇异点集无非是
+\[
+V''\cup V^2,
+\]
+其中$V^2$是
+\[
+V'\setminus V''\longrightarrow\operatorname{Grass}^{m}
+\]
+的分歧子预概形。所以可以说，在$V''$以外，超奇异零点是至少两个普通奇异零点合并而产生的。（不过，我们不必这样说。）\note{这里按图像保留撇号$V'$、$V''$与上标$V^2$的差别。底本明确把$V^2$定义为分歧子预概形，不能仅凭字形把它认作首段的$V^{(2)}$。$X_{\operatorname{Grass}^{m}}$是底本此处的记号，不擅改成零点子概形$X^{(m)}$。关于光滑性及所引补篇的使用仍承接上一批未完成的验证；“零点合并”保留为作者的解释性说法，而不是另立一个精确定理。}
+
+这样，我们基本上得到了与8.7的a）、b）相当的结果。利用$\operatorname{Grass}^{m}$的切丛的显式描述（类似于$m=1$的情形），应当能够给出与8.7的c）相当的条件。它意味着〔字迹不清〕：对于$V'\setminus V''$中一个在$\operatorname{Grass}^{m}$上未分歧的几何点，只要知道它在$\operatorname{Grass}^{m}$中的像，就能知道它在$P$中的像，鉴于前一个像是$V'$在$\operatorname{Grass}^{m}$中的闭像的光滑点（这里假设$S$是一个域的谱）。如有需要，我可以给出更精确的陈述。\note{底本在“it implies”后直接标“illegible”，故推论关系可能有缺文；这里保留缺口及作者“可以给出更精确陈述”的原话，不把它补写成已证明的唯一性或恢复映射。末句是原作者的写作交流，不是译者作出的后续承诺。}
+\end{document}

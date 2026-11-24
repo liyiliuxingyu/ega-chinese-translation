@@ -1,0 +1,24 @@
+{
+  "source_pdf_sha256": "b61fe870fd83b90a505893ecfc8403fafb9037053bc452f0ae7b723e9e401949",
+  "pages": [
+    6,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    33,
+    34,
+    35,
+    36
+  ],
+  "method": "工具实际显示最终150dpi整页图片并检查；未以文本抽取代替",
+  "extra_detail": {
+    "physical_page": 35,
+    "dpi": 300,
+    "png": "/workspace/scratch/a886fd56dd2f/integration/report_visual/final/page_035_diagram_detail.png",
+    "observation": "四条箭头完整"
+  },
+  "verified_at_utc": "2026-11-19T17:10:17.138207+00:00"
+}

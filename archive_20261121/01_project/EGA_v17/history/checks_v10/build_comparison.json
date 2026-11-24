@@ -1,0 +1,18 @@
+{
+  "renderer": "PyMuPDF 1.26.7",
+  "raster_dpi": 72,
+  "book": {
+    "pages_project": 974,
+    "pages_single": 974,
+    "text_mismatches": [],
+    "pixel_mismatches": [],
+    "pixels_checked": 974
+  },
+  "audit": {
+    "pages_project": 181,
+    "pages_single": 181,
+    "text_mismatches": [],
+    "pixel_mismatches": [],
+    "pixels_checked": 181
+  }
+}

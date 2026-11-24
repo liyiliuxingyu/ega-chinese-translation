@@ -1,0 +1,34 @@
+{
+  "base_project": "第九版（952页合订本、167页报告）的实际工程",
+  "source": "EGAIV.1.pdf",
+  "source_file_id": "file_00000000d68881faa232fddc51f7888f",
+  "translated": {
+    "first": "0_IV 20.6.1",
+    "last": "0_IV 20.7.20",
+    "pdf_pages_1_indexed": [
+      135,
+      152
+    ],
+    "printed_fascicle_pages": [
+      136,
+      153
+    ]
+  },
+  "author_erratum": {
+    "source": "EGAIV.4.pdf",
+    "pdf_page": 344,
+    "printed_page": 345,
+    "entry": "0_IV 20.7.8",
+    "corrections": [
+      "18.4.3 -> 18.5.4",
+      "18.4.1 -> 18.5.1"
+    ]
+  },
+  "next": {
+    "heading": "§21 特征p的环中的微分",
+    "first_numbered_entry": "21.1.1",
+    "heading_pdf_page": 152,
+    "first_entry_pdf_page": 153
+  },
+  "reading_note": "正文范围均已对照页面图像；§21开头仅用于核定接续点，不计入译文。"
+}

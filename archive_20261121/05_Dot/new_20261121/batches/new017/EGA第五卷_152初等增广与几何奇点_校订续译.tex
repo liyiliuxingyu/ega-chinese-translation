@@ -1,0 +1,51 @@
+\documentclass[openany,fontset=fandol]{ctexbook}
+\usepackage{amsmath,amssymb}
+\usepackage[unicode,hidelinks]{hyperref}
+\setlength{\emergencystretch}{2em}
+\newcommand{\OO}{\mathcal O}
+\newcommand{\m}{\mathfrak m}
+\DeclareMathOperator{\Sym}{Sym}
+\DeclareMathOperator{\Spec}{Spec}
+\DeclareMathOperator{\gr}{gr}
+\begin{document}
+\title{代数几何基础第五卷预备笔记\\15.2　初等增广与几何初等奇点}
+\author{据英译编辑稿续译，参校法文扫描}
+\date{2026年11月21日}
+\maketitle
+\chapter*{范围与接续}
+本批独立译出英译第75--76页§15.2，参校法文扫描物理第115页与第160页（后者页脚编号116）。止于几何初等奇点的定义。下一起点为英译第76页、法文物理第160页§15.3：将 SUP 命题8“推广”到重数$n$的情形。本稿不覆盖合订稿。
+\chapter*{15.2　初等增广}
+设$X$为预概形，$J$为$X$上的拟凝聚理想。若“增广”同态$\OO_X\to\OO_X/J$满足下列条件，就称它为\emph{重数$n$的初等增广}。
+\begin{enumerate}
+\item[(a)] 余法模$N=N_{Y/X}=J/J^2$在$Y=V(J)$上为有限型局部自由模。\footnote{法文为$N_{Y/X}$，英译颠倒两下标。此处采用法文的余法模记号，直接以$J/J^2$定其含义。}
+\item[(b)] 典范同态
+\[
+\Psi:\Sym_{\OO_Y}(N)\longrightarrow\gr_J(\OO_X)
+\]
+的核由其$n$次分量$\Psi^n$的核$K$生成。$K$是$\Sym^n_{\OO_Y}(N)$中的可逆子模，局部为直和因子；也就是说，在$Y$上局部可由一个在任何点都不为零的截面$\varphi$生成。
+\item[(c)] 这个$\varphi$（局部只确定到乘以一个单位）是光滑型。
+\end{enumerate}
+（注意：本可在15.1中引入$\Sym^n(E)$的光滑可逆子模这一概念。严格说来，它在几何上比光滑截面的概念更重要，因为$V(\varphi)$实际上取决于这样的子模……。这样还可把（b）与（c）合成一个条件。）
+
+当$n=2$时，称为“初等二次型增广”。若环$A$带有增广$A\to A/J$，我们仍约定：如果对于……也是如此，就称此增广是重数$n$的初等增广。\footnote{法文与英译在此均留省略。自然的现代读法是把仿射增广解释为$\Spec(A)$上相应的层增广；这是译校说明，不补作作者原句。}若$A$是局部环，则略借术语，当增广$A\to A/\operatorname{rad}(A)$是重数$n$的初等增广时，就说$A$是“重数$n$的初等环”。注意，这蕴含$n\ge2$；而且若$A$是诺特环，它必不正则。设$X$为预概形，$n\ge2$为整数；当局部环$\OO_{X,x}$是重数$n$的初等环时，就称$x\in X$为\emph{重数$n$的初等奇点}。（可附带指出，这一术语与 Samuel 的一般重数概念相符。）当$n=2$时，特别称为\emph{初等二次奇点}（按经典术语即“普通二次奇点”）。
+
+按照通常用法，对于域$k$上局部有限型的$X$，还引入相应的“几何”概念：如果对于$k$的每个（或等价地，某一个）扩域$K$，以及$X_K$中位于$x$之上且在$K$上有理的每个（或某一个）点$z$，$z$都是重数$n$的初等奇点，就称$x\in X$为\emph{重数$n$的几何初等奇点}。
+\section*{译校说明（非原文）}
+\paragraph{可逆生成线、最小次数及重数。}
+若局部生成元换成$u\varphi$，其中$u$为单位，射影零概形不变。局部环的$\operatorname{rad}(A)$为其极大理想$\m$。由于$\Psi$在$0$、$1$次都是同构，非空局部点上的非零可逆生成线只能出现在$n\ge2$。设$A$还为诺特环，$F=A/\m$，嵌入维数$e=\dim_F(\m/\m^2)$。按（b）、（c），
+\[
+\gr_{\m}(A)\simeq F[T_1,\ldots,T_e]/(\varphi),
+\qquad \varphi\ne0,\quad \deg\varphi=n.
+\]
+在多项式环中乘$\varphi$为单射，所以该分次环的 Hilbert 级数为
+\[
+\frac{1-t^n}{(1-t)^e}
+=\frac{1+t+\cdots+t^{n-1}}{(1-t)^{e-1}}.
+\]
+累计长度$\ell(A/\m^{q+1})$的级数再乘$(1-t)^{-1}$，故其最终多项式次数为$d=e-1$、首项为$nq^d/d!$。由\href{https://stacks.math.columbia.edu/tag/00KQ}{Hilbert--Samuel 维数定理}，$\dim A=d$，重数为$n$，包含$d=0$时总长度为$n$的情形。其维数比嵌入维数小一，故不正则；亦可对照\href{https://stacks.math.columbia.edu/tag/00NO}{正则局部环的多项式分次环}。
+
+\paragraph{为何一个有理提升足够。}
+若$z\in X_K$是指定的$K$-有理提升，则对扩域$K\to L$，由它诱导的$L$-有理提升的局部环是平坦基变换后再局部化所得。因为原点有理，新的极大理想由旧极大理想延拓生成，剩余域为$L$。因而逐次商及整条分次同态都是原来的标量扩张。关系在$n$次组成一条线、且生成全核，可以用扩域的忠实平坦性逐次检验；该线的型是否光滑也可扩域检验。
+
+任一有理提升对应一个嵌入$\kappa(x)\hookrightarrow K$。给出两个这样的嵌入，取$K\otimes_{\kappa(x)}K'$的一个素商的分式域；两条嵌入在此共同域兼容，于是两个有理提升在共同域成为同一点。这证明只需检验一个已有的有理提升；至少可取$K=\kappa(x)$。“每个扩域”是对其中实际存在的有理提升说的，不意味着每个扩域都产生有理点。这个比较也不把原点的绝对性质与不完美底域上的几何性质无条件等同。
+\end{document}

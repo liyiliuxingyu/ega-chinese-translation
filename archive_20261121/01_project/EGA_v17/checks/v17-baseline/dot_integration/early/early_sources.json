@@ -1,0 +1,442 @@
+[
+  {
+    "order": 1,
+    "file": "/workspace/scratch/a886fd56dd2f/unpacked/dot_batches/EGA第五卷_第7节_独立续译工程/EGA第五卷_第7节_独立续译.tex",
+    "sha256": "7ecc1b94344f524354206092830aa7d1542aeed2bc403f2cf6057a298c29363a",
+    "progress": {
+      "project": "EGA 全部上传材料严谨翻译",
+      "batch": "第五卷预备笔记第一篇第7节独立增补",
+      "source": "EGAVaiello.pdf",
+      "source_sha256": "23a20ef32fd16a1bd623c0c08ac080d04fc94f248de12133b713a19d6b0330d9",
+      "source_pages": "标题18页末，正文19—21页",
+      "completed_entries": [
+        "7.1",
+        "7.2",
+        "7.3",
+        "7.4",
+        "7.5"
+      ],
+      "next_entry": "8.1",
+      "base": "第三版合订本，822页；本批不覆盖或合并",
+      "source_identity": "libfile_fde3_f-f8a977f6c54881919e11840e44759152_49ac57203c0c81918f3630f0324dcb35",
+      "limits": [
+        "未核对法文手稿",
+        "未重新审定全文前引定理",
+        "原稿7.4字面错误保留，并另列反例",
+        "其他卷未完成范围仍未完成"
+      ],
+      "pdf_status": "XeLaTeX两遍成功；9页，含默认双面空白页；全部页面渲染检查，正文5页逐页放大核看；无Overfull或缺字警告，仅一条Underfull vbox。",
+      "review": "逐段独立对照审校完成；两处英译编者身份标记已改正；数学反例独立核验。"
+    }
+  },
+  {
+    "order": 2,
+    "file": "/workspace/scratch/a886fd56dd2f/unpacked/dot_batches/EGA第五卷_8.1至8.6_独立续译工程/EGA第五卷_8.1至8.6_独立续译.tex",
+    "sha256": "2e445f596f61687678830809979c6e5d679dc0a7174a8ddb0093fb372a4f1ec7",
+    "progress": {
+      "date": "2026-11-14",
+      "branch": "第五卷独立续译，不覆盖原合订本",
+      "completed": "8.1至8.6（含8.4.1、证明、脚注29—34）",
+      "source_pdf_pages": [
+        21,
+        25
+      ],
+      "next": "第25页 We now study the points y of Y that are not smooth 开头未编号段落，不能跳到8.7",
+      "source_library_id": "libfile_fde3_f-f8a977f6c54881919e11840e44759152_49ac57203c0c81918f3630f0324dcb35",
+      "source_sha256": "23a20ef32fd16a1bd623c0c08ac080d04fc94f248de12133b713a19d6b0330d9",
+      "source_conversation": "https://chatgpt.com/c/6ac3aa3c-a6dc-83ee-97fb-e9f19cad1183",
+      "latest_original_result": "第五版880页，第0章至18.5.4，第五卷仍§1—6；交付前复查未见新结果",
+      "checks": [
+        "实际ctexbook默认排版",
+        "XeLaTeX双轮编译",
+        "无缺字、无Overfull、无未定义引用",
+        "全部页面缩览及正文逐页放大检查",
+        "独立审校逐段检查完整性、脚注及关键疑点"
+      ],
+      "limitations": [
+        "无原法文手稿校勘",
+        "8.5关键假设及Zn定义缺文保留",
+        "8.4.1和8.6原稿错误未静默修正",
+        "未合并旧版，未复核所有旧译",
+        "仅本段完成，非第8节全文或全项目完成"
+      ],
+      "pdf_pages": 11
+    }
+  },
+  {
+    "order": 3,
+    "file": "/workspace/scratch/a886fd56dd2f/unpacked/dot_batches/EGA第五卷_8.6后预备论证_校订续译工程/EGA第五卷_8.6后预备论证_校订续译.tex",
+    "sha256": "df1b4ba93846a592c302effcbabbadbb8cbf2a62eb277b9db2084b4dd2a8bdb8",
+    "progress": {
+      "date": "2026-11-14",
+      "completed": "8.6之后至8.7之前的未编号预备论证全部，含三条正合列、交换图、概形论证明、脚注35—39",
+      "next": "底本第28页Theorem 8.7.标题与(a)项",
+      "pdf_pages": 11,
+      "source_library_id": "libfile_fde3_f-f8a977f6c54881919e11840e44759152_49ac57203c0c81918f3630f0324dcb35",
+      "source_sha256": "23a20ef32fd16a1bd623c0c08ac080d04fc94f248de12133b713a19d6b0330d9",
+      "latest_base_library_id": "libfile_fde3_f-39cd6ba73e388191a18ace95696b8218_49ac57203c0c81918f3630f0324dcb35",
+      "latest_original": "第七版918页，第0章19.6.7；V仍§§1—6；上传前再次读取原对话无新交付",
+      "branch": "独立分支，不覆盖或自动合入旧合订本",
+      "editing_policy": "已核实正确公式入正文，原错误及修订依据入脚注；不猜补未知原字",
+      "checks": [
+        "独立译校逐段对照，未发现漏段或必须修改的数学错误",
+        "原PDF25—27页图像核对",
+        "按第1节商线丛射影化约定重算图式",
+        "双轮XeLaTeX编译",
+        "无缺字、未定义引用或Overfull溢出",
+        "全页缩览及正文、脚注、图式放大检查"
+      ],
+      "limits": [
+        "未对照法文手稿",
+        "8.7及以后未译",
+        "旧独立批次未整体回溯修改",
+        "非整部EGA完结本"
+      ]
+    }
+  },
+  {
+    "order": 4,
+    "file": "/workspace/scratch/a886fd56dd2f/unpacked/dot_batches/EGA第五卷_8.7及相邻残段_校订续译工程/EGA第五卷_8.7及相邻残段_校订续译.tex",
+    "sha256": "fc2d7fa40d01cfd639dee8d1b9e46d8b855acfcc9b22579c1dbf13faa2009526",
+    "progress": {
+      "date": "2026-11-14",
+      "completed": "原PDF第28页Theorem 8.7.标题至第29页Corollary 8.9.标题之前；含8.7ab、c残段、相邻条件列表、跨页证明前段",
+      "next": "第29页Corollary 8.9.标题",
+      "pdf_pages": 10,
+      "source_library_id": "libfile_fde3_f-f8a977f6c54881919e11840e44759152_49ac57203c0c81918f3630f0324dcb35",
+      "source_sha256": "23a20ef32fd16a1bd623c0c08ac080d04fc94f248de12133b713a19d6b0330d9",
+      "prior_batch_library_id": "libfile_fde3_f-d2399f0d76708191a1ae86d076b4abe8_49ac57203c0c81918f3630f0324dcb35",
+      "latest_original": "仍为第七版918页/19.6.7，交付前再次核查未变；V独立上一批至8.7前，未发现重复",
+      "editing_policy": "仅已证实正确关系入正文；错误等价/非空断言及原推演入脚注；残缺c和8.8标题/假设不猜补",
+      "checks": [
+        "独立全文对照底本28—29页",
+        "二次平展覆盖反例独立复算",
+        "实无点圆锥曲线反例独立核验",
+        "作者73—74页术语说明核对",
+        "XeLaTeX双轮编译成功，无缺字/未定义引用/Overfull",
+        "全部页面缩览、正文及脚注放大检查"
+      ],
+      "limits": [
+        "不是完整恢复并证明8.7—8.8",
+        "8.9未译",
+        "无原法文手稿校勘",
+        "旧独立批次未整体回溯修订",
+        "不覆盖不合并已有合订工程"
+      ]
+    }
+  },
+  {
+    "order": 5,
+    "file": "/workspace/scratch/a886fd56dd2f/unpacked/dot_batches/EGA第五卷_8.9至8.11_校订续译工程/EGA第五卷_8.9至8.11_校订续译.tex",
+    "sha256": "73ac6c0ada39af4afcb73c73e5767b92ed5d13b3a3e1a5e479cc349fe209b847",
+    "progress": {
+      "date": "2026-11-14",
+      "completed": "第29页Corollary 8.9至第30页8.11证明末，含8.9及全部证明残段、8.8维数收尾、8.10、8.11、脚注41—43",
+      "next": "第30页Remark 8.12标题及其跨至第31页的全文",
+      "source_library_id": "libfile_fde3_f-f8a977f6c54881919e11840e44759152_49ac57203c0c81918f3630f0324dcb35",
+      "source_sha256": "23a20ef32fd16a1bd623c0c08ac080d04fc94f248de12133b713a19d6b0330d9",
+      "previous_project_library_id": "libfile_fde3_f-ba94c987b298819199595e5ac60ac408_49ac57203c0c81918f3630f0324dcb35",
+      "latest_original": "交付前仍第七版918页/19.6.7，未见V本范围重叠",
+      "pdf_pages": 11,
+      "checks": [
+        "独立代理实际全文对照原文终审通过",
+        "8.11补证逐步独立核验",
+        "8.10额外整性、支配、同维条件及局部证明独立核验",
+        "ctexbook默认版式双轮XeLaTeX成功",
+        "无缺字、未定义引用、Overfull",
+        "全页缩览及正文脚注放大检查"
+      ],
+      "limits": [
+        "8.8完整假设与8.7c仍未恢复",
+        "不声称8.9开浸入结论已证明",
+        "8.9原错误与逆映射残段完整入脚注",
+        "8.11正文为显写条件下可核结论及标明补证",
+        "无原法文手稿校勘",
+        "未覆盖合并旧工程，未整体回溯旧批次"
+      ]
+    }
+  },
+  {
+    "order": 6,
+    "file": "/workspace/scratch/a886fd56dd2f/unpacked/dot_batches/EGA第五卷_8.12_校订续译工程/EGA第五卷_8.12_校订续译.tex",
+    "sha256": "23e47b11c2fa2d4b0a1ab221ecb2d6e8e6c4d72124989f86e965c51ac1dc1076",
+    "progress": {
+      "completed": "Remark 8.12 including editorial paragraphs and footnotes 44-48",
+      "next": "Printed page 31 Proposition 8.13 heading",
+      "source": "EGAVaiello.pdf",
+      "source_sha256": "23a20ef32fd16a1bd623c0c08ac080d04fc94f248de12133b713a19d6b0330d9",
+      "cautions": [
+        "8.8 assumptions not restored",
+        "8.9 open immersion not proved",
+        "independent supplement not merged"
+      ],
+      "review": "Independent paragraph/formula/footnote audit passed; all 4 PDF pages inspected"
+    }
+  },
+  {
+    "order": 7,
+    "file": "/workspace/scratch/a886fd56dd2f/unpacked/dot_batches/EGA第五卷_8.13_校订续译工程/EGA第五卷_8.13_校订续译.tex",
+    "sha256": "4c7f72e07f2701f123ea43af17675af301c8f291a195a2a4b503d9c46be14380",
+    "progress": {
+      "completed": "Proposition 8.13 all statement and proof paragraph",
+      "next": "Printed page 32 introductory sentence Combining 8.13, 8.5 and 8.6 before Corollary 8.14",
+      "source_sha256": "23a20ef32fd16a1bd623c0c08ac080d04fc94f248de12133b713a19d6b0330d9",
+      "cautions": [
+        "Ek notation unresolved",
+        "8.13(b) source illegible note retained",
+        "8.8 missing assumptions not restored",
+        "Not independently verified proof; not merged"
+      ],
+      "review": "Independent paragraph review passed; 4 pages rendered and visually checked; XeLaTeX twice; no missing glyph/overflow"
+    }
+  },
+  {
+    "order": 8,
+    "file": "/workspace/scratch/a886fd56dd2f/unpacked/dot_batches/EGA第五卷_8.14至8.15_校订续译工程/EGA第五卷_8.14至8.15_校订续译.tex",
+    "sha256": "801ea6d17f9d89cc133d7f7982bf6d729c69454cd12c923e2027a3a977af0bb0",
+    "progress": {
+      "completed": "Printed page32 introductory sentence, Corollary8.14, Remark8.15, Remorse, original footnote49",
+      "next": "Printed page33 Proposition8.16 heading",
+      "source_sha256": "23a20ef32fd16a1bd623c0c08ac080d04fc94f248de12133b713a19d6b0330d9",
+      "cautions": [
+        "8.8 assumptions missing",
+        "8.9 proof unresolved",
+        "separable and ruled original terminology retained",
+        "Not independently proved; not merged"
+      ],
+      "review": "Independent paragraph review passed; four PDF pages inspected; XeLaTeX twice; no overflow/missing glyph"
+    }
+  },
+  {
+    "order": 9,
+    "file": "/workspace/scratch/a886fd56dd2f/unpacked/dot_batches/EGA第五卷_8.16至8.17_校订续译工程/EGA第五卷_8.16至8.17_校订续译.tex",
+    "sha256": "950072c77726bfe4017b8166c3f025c6914db5c2df9e29cbecd0d3509d48bc71",
+    "progress": {
+      "completed": "Printed page33: Proposition8.16, Remarks8.17, unnumbered fragment and terminological note; footnote50",
+      "next": "Printed page34 Proposition8.18 heading",
+      "source_sha256": "23a20ef32fd16a1bd623c0c08ac080d04fc94f248de12133b713a19d6b0330d9",
+      "review": "Independent paragraph review passed; XeLaTeX twice; all 4 pages visually checked, no overflow or missing glyph",
+      "limitations": [
+        "8.8 assumptions unresolved",
+        "8.17 fragment retained without reconstruction",
+        "Not merged into original collection; no independent theorem certification"
+      ]
+    }
+  },
+  {
+    "order": 10,
+    "file": "/workspace/scratch/a886fd56dd2f/unpacked/dot_batches/EGA第五卷_8.18_校订续译工程/EGA第五卷_8.18_校订续译.tex",
+    "sha256": "2e26a0d1614b48c785c96d879d6fe461600d685cc8e25931930fe49e62126962",
+    "progress": {
+      "project": "EGA V independent supplement",
+      "date_utc": "2026-11-15",
+      "previous_engineering_library_id": "libfile_fde3_f-4c8153311a048191ae7cc5ebd1c1984e_49ac57203c0c81918f3630f0324dcb35",
+      "source": "底本.pdf",
+      "source_sha256": "23a20ef32fd16a1bd623c0c08ac080d04fc94f248de12133b713a19d6b0330d9",
+      "completed_this_batch": "p34 Proposition 8.18 statement, original proof, original footnote51, NB through final d>=2 ellipsis",
+      "next_source_page": 34,
+      "next_exact": "It remains to explain (make explicit) the conditions a) and b) of 1.18.",
+      "next_note": "Unnumbered paragraph continues on p35. Do not skip to 8.19. Source prints 1.18: check in context on next batch.",
+      "merge_status": "Independent supplement, not merged into original conversation compilation",
+      "unresolved": [
+        "8.8 missing hypotheses remain unrecovered",
+        "8.18 dimension1 versus d-1 and final NB dimension restriction",
+        "8.18(b) (non???) singular cannot be determined",
+        "Third g(overline Y sing) differs from previous two unbarred expressions; preserve uncertainty",
+        "Normalization proof omitted in source, not independently established"
+      ],
+      "checks": [
+        "Independent bilingual audit: no material omission in chosen range; corrected erroneous added closures in first two g(Y sing) expressions",
+        "Two successful XeLaTeX passes",
+        "Four-page rendered PDF visually checked; no missing glyph or overfull warnings"
+      ],
+      "original_conversation_check": "EGA latest visible ninth edition through20.5.15; no V8.18 overlap observed; math latest visible012/user continue. Not proof of current remote runtime."
+    }
+  },
+  {
+    "order": 11,
+    "file": "/workspace/scratch/a886fd56dd2f/unpacked/dot_batches/EGA第五卷_8.18后线性系讨论_第一批_工程/EGA第五卷_8.18后线性系讨论_第一批.tex",
+    "sha256": "c72d4728edc987cb39aa4e8eeca5eff951940107628e5b05f9383e496e68b36a",
+    "progress": {
+      "source_sha256": "23a20ef32fd16a1bd623c0c08ac080d04fc94f248de12133b713a19d6b0330d9",
+      "previous_project": "libfile_fde3_f-83284e24d97c819198d16632bcb141e5_49ac57203c0c81918f3630f0324dcb35",
+      "completed": "p34 It remains to explain through p35 xi generic in L before field-theoretic paragraph",
+      "next_source_page": 35,
+      "next_exact": "From the [(cunutesque?) Fr] point of view and in terms of field theory",
+      "status": "Independent increment, not merged into main compilation",
+      "unresolved": [
+        "Q/projective dual convention",
+        "missing xi subscripts in density sentence",
+        "dim f(X)=2 in proposed converse",
+        "8.8 missing hypotheses remain missing"
+      ],
+      "audit": "Independent bilingual check no material omission; generic point/fiber corrected to 泛点/泛纤维. Two-pass XeLaTeX, 4pp rendered checks passed.",
+      "concurrency_check": "Original EGA ninth edition20.5.15 then user continue08:55; latest math visible012 then continue. Library latest EGA branch8.18. No overlap observed, not a remote runtime guarantee."
+    }
+  },
+  {
+    "order": 12,
+    "file": "/workspace/scratch/a886fd56dd2f/unpacked/dot_batches/EGA第五卷_第8节末域论讨论_工程/EGA第五卷_第8节末域论讨论.tex",
+    "sha256": "34d60dc1c655448afa767c327ce00ee78771539780df22f9e7f4a3109a5ab4d9",
+    "progress": {
+      "source_sha256": "23a20ef32fd16a1bd623c0c08ac080d04fc94f248de12133b713a19d6b0330d9",
+      "previous_project": "libfile_fde3_f-8c29b6861428819193750a1afa7b85ee_49ac57203c0c81918f3630f0324dcb35",
+      "completed": "p35 From the [(cunutesque?) Fr] point of view and in terms of field theory through p36 before section 9 heading",
+      "next_source_page": 36,
+      "next_exact": "§9 Change of Projective Embedding; 9.1. For every integer n > 0",
+      "status": "Independent incremental translation; not merged into main compilation",
+      "unresolved": [
+        "8.8 missing hypotheses",
+        "dimension at most one in original field-theory criterion",
+        "conical at x relative to f undefined",
+        "previous batch Q dual convention and converse dim=2 remain unresolved"
+      ],
+      "verified_corrections": [
+        "K(a_i) to k(a_i), image function field justification",
+        "g to q for dimension variable",
+        "fiber argument applied to projection restricted to image, not arbitrary composite g"
+      ],
+      "audit": "Independent bilingual audit passed; reviewer caution about x/X adopted as unresolved. Two-pass XeLaTeX 4 pages; all 4 rendered pages inspected; no overfull/underfull, missing glyph, undefined reference or LaTeX error in final log. Fontconfig cache warnings during run did not prevent output.",
+      "concurrency_check": "Original EGA last assistant 2026-11-15 09:25 UTC tenth edition through 20.7.20, next 21; math last visible assistant 012 and continue. Library recent list confirms previous EGA V incremental artifact is newest at 09:06 UTC; no observed overlap, not a remote execution guarantee."
+    }
+  },
+  {
+    "order": 13,
+    "file": "/workspace/scratch/a886fd56dd2f/unpacked/dot_batches/EGA第五卷_9.1至9.2_校订续译_工程/EGA第五卷_9.1至9.2_校订续译.tex",
+    "sha256": "a25a7c0a369d1b722a24884b8e75d4772ec37abab201c8c4b602657a467eb2f3",
+    "progress": {
+      "source_sha256": "23a20ef32fd16a1bd623c0c08ac080d04fc94f248de12133b713a19d6b0330d9",
+      "previous_project": "libfile_fde3_f-c146e6a2dc8c81919d2be56d358ee0ad_49ac57203c0c81918f3630f0324dcb35",
+      "completed": "p36 section9 heading, 9.1, Proposition9.2, NB and original footnote52",
+      "next_source_page": 37,
+      "next_exact": "Proposition 9.3. Suppose that X is geometrically irreducible",
+      "status": "Independent incremental translation, not merged into main compilation",
+      "unresolved": [
+        "8.8 and (ii bis) hypotheses missing; 9.2 not independently established",
+        "Previous Q dual convention, dimension criterion and conical wording remain unresolved"
+      ],
+      "verified_corrections": [
+        "p_* O_P(n) isomorphic to Sym^n(E), based on section1 locally free E and quotient convention",
+        "hyperplane parameter xi lies in P(n)^vee not P(n)"
+      ],
+      "concurrency_check": "Original EGA 2026-11-15 12:32 UTC self-report edition11 through21.4.8,next21.5; math latest visible012 then continue. No observed overlap with V9.1–9.2; not a remote execution guarantee."
+    }
+  },
+  {
+    "order": 14,
+    "file": "/workspace/scratch/a886fd56dd2f/unpacked/dot_batches/EGA第五卷_9.3_校订续译_工程/EGA第五卷_9.3_校订续译.tex",
+    "sha256": "debd6212dce1b295319f4158585fe5205b2b6d5ccbd58a81ac62bcaa3df403ea",
+    "progress": {
+      "source_sha256": "23a20ef32fd16a1bd623c0c08ac080d04fc94f248de12133b713a19d6b0330d9",
+      "previous_project": "libfile_fde3_f-b42abadfd3b08191a4a353d3dee7c8e7_49ac57203c0c81918f3630f0324dcb35",
+      "completed": "Source pp37–38 Proposition9.3 statement(a,b,c), entire proof through final three squares, original footnote53",
+      "next_source_page": 38,
+      "next_exact": "Conjugating with 8.18 we find a Corollary 9.4. ([Tr] to be stated)",
+      "status": "Independent incremental translation, not merged; not independent theorem verification",
+      "unresolved": [
+        "8.8 missing hypotheses remain",
+        "9.3(c) where connective unclear, not replaced with or",
+        "Replacing X by L in final proof not independently justified; independence on L alone insufficient for image",
+        "Earlier unresolved dimension and conical wording unchanged"
+      ],
+      "checks": [
+        "Separate translation audit passed with one qualification adopted",
+        "XeLaTeX twice exit0; 5 pages; no overfull, missing-character or undefined warnings; all pages visually inspected"
+      ],
+      "concurrency_check": "Freshly read original EGA: edition11 through0.21.4.8,next21.5 at2026-11-15 12:32 UTC. Original math visible012 then user continue02:26. Latest independent EGA Library project9.1–9.2; no observed V9.3 overlap. Not remote execution guarantee."
+    }
+  },
+  {
+    "order": 15,
+    "file": "/workspace/scratch/a886fd56dd2f/unpacked/dot_batches/EGA第五卷_9.4至10.1_校订续译_工程/EGA第五卷_9.4至10.1_校订续译.tex",
+    "sha256": "e3592ca0b3e051b57481b2d1fb3103616306ba8de3bd28c90a5c40c7b4e80a0f",
+    "progress": {
+      "date": "2026-11-15",
+      "branch": "EGA V independent supplement",
+      "completed": "p38 Conjugating with 8.18 through p39 end of 10.1; 9.4 editorial prompt, 9.5 fragment, §10 title and 10.1; original footnotes54–55",
+      "next": "p39 10.2 By a polarity",
+      "source_sha256": "23a20ef32fd16a1bd623c0c08ac080d04fc94f248de12133b713a19d6b0330d9",
+      "not_merged": true,
+      "unresolved": [
+        "8.8 absent",
+        "9.3(c) and proof scope",
+        "9.4 absent statement",
+        "9.5 illegible incomplete",
+        "10.1 Z versus closure ambiguity"
+      ],
+      "proof_independently_verified": false,
+      "original_conversation_observed": "EGA latest visible 11th edition through21.4.8; math latest visible012 then continue; no observed V overlap",
+      "previous_project": "libfile_fde3_f-e63d28b94f1881918331e221a48975d6_49ac57203c0c81918f3630f0324dcb35"
+    }
+  },
+  {
+    "order": 16,
+    "file": "/workspace/scratch/a886fd56dd2f/unpacked/dot_batches/EGA第五卷_10.2_校订续译_工程/EGA第五卷_10.2_校订续译.tex",
+    "sha256": "306a200b352c163da234da79ad8b85311b9e4c57dea58f27ce8ba37eb0a19eec",
+    "progress": {
+      "date": "2026-11-15",
+      "branch": "EGA V independent supplement",
+      "completed": "printed p39 10.2 By a polarity through p40 editorial remark Proposition 10.3 is crossed out; original footnote56",
+      "next": "printed p40 Proposition 10.3. Let X be a prescheme",
+      "not_merged": true,
+      "proof_independently_verified": false,
+      "unresolved": [
+        "8.8 absent",
+        "9.4 unstated;9.5 fragment",
+        "10.1 closure ambiguity",
+        "10.2 regularity conventions and k-rational singularity application require verification"
+      ],
+      "previous_project": "libfile_fde3_f-65939061bde48191bc9daa92d6f7322a_49ac57203c0c81918f3630f0324dcb35",
+      "source_sha256": "23a20ef32fd16a1bd623c0c08ac080d04fc94f248de12133b713a19d6b0330d9",
+      "original_conversation_observed": "EGA last visible edition11 through21.4.8; math last visible02:26 continue; latest Library independent EGA9.4–10.1 and math4 lines109–180; no observed overlap"
+    }
+  },
+  {
+    "order": 17,
+    "file": "/workspace/scratch/a886fd56dd2f/unpacked/dot_batches/EGA第五卷_10.3_校订续译_工程/EGA第五卷_10.3_校订续译.tex",
+    "sha256": "1f75071362315418f5c6871b9e72068d0f61df92c781267cd9a845782dd807a0",
+    "progress": {
+      "date": "2026-11-15",
+      "branch": "EGA V independent supplement",
+      "completed": "printed p40 Proposition 10.3 and following proof-status paragraph ending just as well as I",
+      "next": "printed p40 unnumbered If in 10.2, S = Spec k and X is of dimension >=1, before Corollary 10.4",
+      "not_merged": true,
+      "proof_independently_verified": false,
+      "unresolved": [
+        "8.8 absent",
+        "9.4 unstated;9.5 fragment",
+        "10.1 closure ambiguity",
+        "10.2 regularity and k-rationality conventions",
+        "10.3 crossed-out status; parenthetical ??? unrecovered; generality of regularity claim not independently verified"
+      ],
+      "previous_project": "libfile_fde3_f-8b73b1dac29081918339c144a61a346f_49ac57203c0c81918f3630f0324dcb35",
+      "source_sha256": "23a20ef32fd16a1bd623c0c08ac080d04fc94f248de12133b713a19d6b0330d9",
+      "original_conversation_observed": "EGA latest visible edition11 through21.4.8, math latest visible02:26 user continue; Library latest EGA10.2 and math4 lines182-268; no observed overlap; actual original execution state unavailable"
+    }
+  },
+  {
+    "order": 18,
+    "file": "/workspace/scratch/a886fd56dd2f/unpacked/dot_batches/EGA第五卷_10.4_校订续译_工程/EGA第五卷_10.4_校订续译.tex",
+    "sha256": "1edb09b445ca9384329051b551a2e188464d6fd70f9eadfb43a3bb39a35fc476",
+    "progress": {
+      "date": "2026-11-15",
+      "branch": "EGA V independent supplement",
+      "completed": "printed p40 unnumbered If in 10.2 through complete Corollary 10.4 on p41, ending quadratic",
+      "next": "printed p41 section 11 Grassmanians heading and first paragraph",
+      "previous_project": "libfile_fde3_f-0898ad2df588819195e35dbf7bb10d8f_49ac57203c0c81918f3630f0324dcb35",
+      "not_merged": true,
+      "proof_independently_verified": false,
+      "source_sha256": "23a20ef32fd16a1bd623c0c08ac080d04fc94f248de12133b713a19d6b0330d9",
+      "unresolved": [
+        "8.8 missing",
+        "9.4 unstated and 9.5 fragment",
+        "10.1 closure ambiguity",
+        "10.2 regularity conventions",
+        "10.3 crossed-out status and ???",
+        "10.4 preceding dimension >=1 original intent unresolved; main text restricted to verified smooth curve case",
+        "Corollary10.4 existence and dependency9.2 not independently established"
+      ],
+      "original_conversation_observed": "Latest visible EGA edition11 through21.4.8; Library latest EGA independent10.3. No observed scope overlap. Actual original execution state unavailable."
+    }
+  }
+]

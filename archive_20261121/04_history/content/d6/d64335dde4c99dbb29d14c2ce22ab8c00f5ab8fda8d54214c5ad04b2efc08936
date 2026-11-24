@@ -1,0 +1,13 @@
+# 第十七版整合过程记录
+
+这里保存本次整合的来源索引、逐点核查、源码变更、选页图与处理脚本。
+当前权威源码在01_project/EGA_v17，当前技术核验汇总在该工程checks目录。
+
+integration下的一次性处理脚本保留了当时任务目录的定位约定；它们是过程档案，
+不能取代当前工程的build.sh与本包BUILD_ALL.sh。不要在新工程上盲目重放合并或订正脚本。
+视觉记录中的旧PDF散列、旧图与旧路径用于追溯；最终绑定见当前工程checks/VISUAL_REVIEW.md、
+checks/VISUAL_REVIEW.json及checks/final_visual_binding.json。主稿仅在最后一次来源页码精度修订中
+改变了前言物理第5页，已重新编译和检查；报告未随该文字修订变化。
+
+目录内integration/路径对应原记录中任务根目录的integration/；review/对应原任务review/。
+原绝对工作路径属于历史记录，不要求新环境复现。重建正文请使用当前工程入口。

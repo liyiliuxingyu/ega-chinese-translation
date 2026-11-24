@@ -1,0 +1,20 @@
+EGA V 法文核验现场（2026-11-19 23:00轮复用）
+完整法文：ega_p67_check/EGA5.pdf，171页，16097021 bytes。
+来源 https://webusers.imj-prg.fr/~leila.schneps/grothendieckcircle/EGA/EGA5.pdf
+SHA256 24cf8204184b58b18a46e5f63ecc36d6e791b3c8c96a09daac93de96ebd8e830
+物理页=手写页：101 对应英语66及67首段；102 对应英语67非超奇异点、两正合列、下一段及备注开头；103 续备注并有扭曲后的手写图。
+法文101 det Q 正指数；102 第二正合列目标原样 ΩX/Y + ΩY/S，存在秩疑点。共同线商解释见 ega52。
+英语两URL EGA5trans.pdf和EGAVaiello.pdf当前下载及用户底本三者同SHA256 23a20ef32fd16a1bd623c0c08ac080d04fc94f248de12133b713a19d6b0330d9。
+最新已译至英67第二正合列；下一 It is necessary to summarize the whole situation in a recapitulating proposition，法文102 Il faudrait résumer toute cette situation dans une proposition récapitulative。
+批次53已接续完成上述汇总/扭曲/单位变换段。最新续点改为英67 Remark. With the mentioned conditions about X,Y,S,φ；法102 Remarque. Sous les conditions envisagées。
+批次54最新接续由英68引图句，法103手写引图句起。
+批次55最新接续锚点英68 Upon arriving at this point；法104 Arrivé à ce point。全文扫描校验沿用上文；本包法文摘页增至104。
+批次56接续锚点英69/法105命题8。法104–107无损摘页随包。
+批次57续点英69/法105命题9；全段仍属删稿。
+批次58完成命题9，续英70/法106推论10，仍属删稿。
+批次59完成推论10和划去段结束标记；续英71 Let us note that the analogue… / 法107 Notes que l’analogue…（非划去）。
+批次60结束于法108末、英72开头截面的值模。下一英72 to characterize using differential method…／法109 Pour caractériser par voie différentielle…
+批次61到英72/法110推广命题6的一句，下一英 It is necessary to see how we can generalize the same Proposition 7 / 法 Il faut voir comment… prop. 7。
+批次62结束于英73 Section 17前／法111末；下一英73 IV.17.15 Smooth Forms…／法112 IV 17.15. Formes lisses…
+批次63译至法113 SUP术语修订末。下一英74 IV 23.9.2 is false as such…／法113 Par contre, IV 23.9.2. est faux tel quel…
+后续纸页映射：法115后接物理160、159、158，然后IV.17.16位于物理161–170；续作应按原段序辨认，不按扫描连续页码硬接。

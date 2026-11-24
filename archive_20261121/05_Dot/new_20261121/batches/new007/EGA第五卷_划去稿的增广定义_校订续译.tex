@@ -1,0 +1,54 @@
+\documentclass[openany,fontset=fandol]{ctexbook}
+\usepackage{amsmath,amssymb}
+\usepackage[unicode,hidelinks]{hyperref}
+\setlength{\emergencystretch}{2em}
+\begin{document}
+\title{代数几何基础第五卷预备笔记\\划去稿中的正规增广与普通二次型增广}
+\author{据英译编辑稿续译，参校法文扫描}
+\date{2026年11月20日}
+\maketitle
+\chapter*{范围与接续}
+本批从英译第68页“Upon arriving at this point”起，连贯译至第69页普通二次型增广定义末的纤维判别句，对读法文第104--105页。下一起点为英译第69页、法文第105页的命题8。本稿独立于已接至第68页编辑按语的第十七版第五卷增补，尚未合并。
+\chapter*{作者划去稿（续）}
+写到这个在一般性上堪称可观的地步，我却发现，前面这些展开仍过于特殊。与其考虑由$\mathcal O_X$的一个截面这一单个方程所定义的子预概形，不如考虑由$m$个截面所定义的子预概形。等价地，可以用一个同态
+\[
+E\longrightarrow\mathcal O_X
+\]
+定义它，其中$E$是秩为$m$的局部自由模。
+
+是否从一开始就处理一般情形，留由你来决定，所依循的是从一般走向特殊的原则。\footnote{英译以方括号补出受话人迪厄多内；法文扫描此处只写“你”。}
+
+先为带有增广$A\to A/I$的环$A$引入一套术语，以便也在层的情形中使用。若满足以下条件，就称此增广为\emph{正规的}（还是按照第19节采用的定义，称为拟正规的？）：
+\begin{enumerate}
+\item[(a)] $I/I^2$是有限型投射$A/I$-模；
+\item[(b)] 同态
+\[
+\theta:\operatorname{Sym}(I/I^2)\longrightarrow\operatorname{gr}_I(A)
+\]
+是同构。
+\end{enumerate}
+
+若上面的（a）及下述（b$'$）成立，就称这一增广为\emph{普通二次型}的：
+\begin{enumerate}
+\item[(b$'$)] 前述典范同态有一个核，由$\theta^2$生成；这个核$K$是$\operatorname{Sym}^2(I/I^2)$的一个“非退化”的可逆子模。\footnote{此处照录有疑义的构造措辞；后一命题明写$K=\ker\theta^2$，详见译校说明。}
+\end{enumerate}
+所谓“非退化”，是指相应的同态
+\[
+K\otimes (I/I^2)^\vee\longrightarrow I/I^2
+\]
+为双射。这个同态由典范同态
+\[
+\operatorname{Sym}^2(I/I^2)\longrightarrow
+\operatorname{Hom}((I/I^2)^\vee,I/I^2)
+\]
+导出。说它是双射，也等价于说它是满射，因为这里讨论的是$A/I$上在各点秩相同的投射模。换言之，局部取$K$的一个基，则$(I/I^2)^\vee$上相应的二次型非退化。其实，对$A/I$的各个素理想处的约化纤维检验后面这些条件就够了，乃至只在极大理想处检验也足够。
+\chapter*{译校说明（非原文）}
+\paragraph{（a）不等于（a）和（b）。}
+英译第69页的“the above”可能让人以为要求上一节的两个条件。法文第104页却明确写“a) ci-dessus”，另列手写编号（b$'$）；因此根据法文只纳入（a）。正规增广要求$\theta$是同构，普通二次型增广另要求二次关系，二者不是累加条件。英译把同态字形排作$O$，对应法文的$\theta$。
+
+\paragraph{核及生成所在的次数。}
+法文第104页“由$\theta^2$生成”的字面措辞与后半句的简写并不能直接作为类型正确的定义：$\theta^2$是映射，不是生成元；全次数的齐次理想也不是二次分量的可逆子模。法文第105页命题8第3项明确写$K=\ker\theta^2$。据此可推断意旨是二次分量$K=\ker(\theta^2:\operatorname{Sym}^2(I/I^2)\to\operatorname{gr}_I^2(A))$为可逆子模，并在整个对称代数中生成$\ker\theta$作为齐次理想。后者是据上下文提出的解释，不是说扫描清楚写出了这一完整现代定义。
+
+\paragraph{局部条件和划线。}
+上面的非退化按正文实际使用的同态判别；在特征$2$不能自行改成射影二次超曲面光滑。对等秩有限投射模，满射与同构的等价性可在各局部环上用行列式检验。英译者的删除段终止标记在英译第71页推论10（iii）之后。法文第104--107页可见粗划线；第107页的粗线穿过推论10（iii）并在下一段前结束，下一段另有边栏记号，不能与贯页划去线混同。本批未翻译命题8及其后的划去文字。
+\end{document}

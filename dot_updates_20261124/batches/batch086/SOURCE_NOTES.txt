@@ -1,0 +1,5 @@
+法文底本为用户的 EGA5.pdf（171页），SHA256 24cf8204184b58b18a46e5f63ecc36d6e791b3c8c96a09daac93de96ebd8e830，本批物理148–149页。
+对照 https://webusers.imj-prg.fr/~leila.schneps/grothendieckcircle/EGA/EGA5trans.pdf （112页），SHA256 23a20ef32fd16a1bd623c0c08ac080d04fc94f248de12133b713a19d6b0330d9，本批物理112页。
+法148手写日期29.9.1965；书信原始目录20、21均为“???”；保留27=3³。
+法149斜划从“Pour par.20”至“qui revient !”，另录译文。F_lambda 为原文的纤维限制对象，深度严格大于 n；划线并非第二条比较符号笔画。可构造与在附加假设下的开性须分开。晚于 lambda 的阶段不是“有限态射”的意思。
+卷末页序对照根据图像与第66–73批进度交叉核对，不是对尚未细校的物理150及153页的全文译稿。

@@ -1,0 +1,13 @@
+{
+  "batch": 97,
+  "this_french_pages": [26,27],
+  "this_english_pages": [18,19],
+  "this_from": "法26旧稿，接第7节标题",
+  "this_through": "法27有限域换底、例子过渡句和删稿残段",
+  "french_contiguous_through": "法27页末",
+  "next": "法28正稿对4.2、4.3的补记、7.2，续看7.3及边注；英19末和20",
+  "merge_into_1158_done": false,
+  "double_count_as_new_translation": false,
+  "formal_EGA_IV_1": "另线221提要 / 223定义1.1.1",
+  "unverified": "法27划销末句不完整；有限平坦多截面的迭代在7.1仅是计划，未声称通用；相对保持性仍须各自检验"
+}

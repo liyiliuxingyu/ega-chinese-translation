@@ -1,0 +1,90 @@
+[
+  {
+    "name": "main",
+    "directory": ".",
+    "passes": [
+      {
+        "pass": 1,
+        "returncode": 0,
+        "seconds": 45.41
+      },
+      {
+        "pass": 2,
+        "returncode": 0,
+        "seconds": 49.19
+      },
+      {
+        "pass": 3,
+        "returncode": 0,
+        "seconds": 42.57
+      }
+    ],
+    "passed": true
+  },
+  {
+    "name": "report",
+    "directory": ".",
+    "passes": [
+      {
+        "pass": 1,
+        "returncode": 0,
+        "seconds": 5.01
+      },
+      {
+        "pass": 2,
+        "returncode": 0,
+        "seconds": 4.42
+      },
+      {
+        "pass": 3,
+        "returncode": 0,
+        "seconds": 4.78
+      }
+    ],
+    "passed": true
+  },
+  {
+    "name": "book_single",
+    "directory": "single_build",
+    "passes": [
+      {
+        "pass": 1,
+        "returncode": 0,
+        "seconds": 47.75
+      },
+      {
+        "pass": 2,
+        "returncode": 0,
+        "seconds": 48.2
+      },
+      {
+        "pass": 3,
+        "returncode": 0,
+        "seconds": 32.18
+      }
+    ],
+    "passed": true
+  },
+  {
+    "name": "audit_single",
+    "directory": "single_build",
+    "passes": [
+      {
+        "pass": 1,
+        "returncode": 0,
+        "seconds": 4.94
+      },
+      {
+        "pass": 2,
+        "returncode": 0,
+        "seconds": 2.68
+      },
+      {
+        "pass": 3,
+        "returncode": 0,
+        "seconds": 4.64
+      }
+    ],
+    "passed": true
+  }
+]

@@ -1,0 +1,139 @@
+{
+  "reviewed_at_utc": "2026-11-19T16:51:14.422912+00:00",
+  "reviewer": "dot_evidence subagent",
+  "review_scope": "Current compiled main.pdf short manuscript only, all 7 pages, not the whole book.",
+  "pdf_path": "/workspace/scratch/a886fd56dd2f/work/EGA_v17/main.pdf",
+  "pdf_sha256": "055c22391daf67a0f9b2d7a1f942ed6a4822b85e8628d044d39b9a589649d721",
+  "pdf_pages": 1130,
+  "pdf_bytes": 5562136,
+  "required_marker_found": "D17-S13 on PDF page 948 / printed page 928",
+  "source_tex_sha256": "eb805f3acc63a5322bec84f7df57330da307039dafb2570fb8188011d4a94a6f",
+  "render_scale": 1.6,
+  "viewed_pages": [
+    {
+      "pdf_page_1based": 947,
+      "printed_page": "927",
+      "screenshot": "/workspace/scratch/a886fd56dd2f/integration/short_visual/main_pdf_947_print_927.png",
+      "screenshot_sha256": "0c2983b7d8f14d01627cb8fb2d817222cf91121954f2d841d62cb2472a2a7fda",
+      "viewed_with": "view_image",
+      "observations": [
+        "标题、载体范围和原编号标题完整。",
+        "定义1的极大理想平方及Sym²二次分次公式清晰，无缺字。",
+        "V-H-C16-01原字形说明位于正常脚注区。"
+      ]
+    },
+    {
+      "pdf_page_1based": 948,
+      "printed_page": "928",
+      "screenshot": "/workspace/scratch/a886fd56dd2f/integration/short_visual/main_pdf_948_print_928.png",
+      "screenshot_sha256": "d3385bb994271960cfef260e719bb0c3a9fb8617b28b13d5d4a12e5fe221f3fd",
+      "viewed_with": "view_image",
+      "observations": [
+        "实际出现D17-S13；正文使用“奇异而非超奇异的零点”。",
+        "D17-S13中X²+YZ及特征2术语说明完整可读。",
+        "注2正文已明确局部子概形不等；定义3的k′量词和注4(a)余域代数闭包横线可辨。",
+        "本页六条脚注均完整，无相互覆盖或溢出版心。"
+      ]
+    },
+    {
+      "pdf_page_1based": 949,
+      "printed_page": "929",
+      "screenshot": "/workspace/scratch/a886fd56dd2f/integration/short_visual/main_pdf_949_print_929.png",
+      "screenshot_sha256": "e8ca5f1c84a8cbda5468301134a82249502f20ae1ff9dfa9ebd328298667a7b1",
+      "viewed_with": "view_image",
+      "observations": [
+        "注4(c)、旧稿4(d)连续，后续主部层及命题5没有因同文替换而丢失。",
+        "主部层的上下标、m_x/m_x²与Ω的典范同构、gr²与Sym²均正常。",
+        "本页脚注与正文分隔清楚。"
+      ]
+    },
+    {
+      "pdf_page_1based": 950,
+      "printed_page": "930",
+      "screenshot": "/workspace/scratch/a886fd56dd2f/integration/short_visual/main_pdf_950_print_930.png",
+      "screenshot_sha256": "c5d74c85eb973c943fcd0abc4ede82baf82d0a6a2d4de2d77090c427d016dbdb",
+      "viewed_with": "view_image",
+      "observations": [
+        "M(φ)′的域/陪域及D(φ)所属行列式线丛均在版心内。",
+        "修正后的(m+d)−(d+1)=m−1公式可读。",
+        "六个图中缩写A、B、C、D、R、W的定义完整。",
+        "D17-S03引标独占公式之后的左侧一行，属于低优先排版问题。"
+      ]
+    },
+    {
+      "pdf_page_1based": 951,
+      "printed_page": "931",
+      "screenshot": "/workspace/scratch/a886fd56dd2f/integration/short_visual/main_pdf_951_print_931.png",
+      "screenshot_sha256": "b836cf8ee1bad75107cf0cc9a43f8ed35a95d6bc17926b487770a4b782b457bc",
+      "viewed_with": "view_image",
+      "observations": [
+        "主图所有节点、横竖箭头、µ与ν标注可辨，没有交叠或裁切。",
+        "F∨|W的微分列、余法列以及正文余域纤维单射条件可读。",
+        "主部层直和分解的X/Y下标正常。",
+        "D17-S05引标独占公式之后的左侧一行，属于低优先排版问题。"
+      ]
+    },
+    {
+      "pdf_page_1based": 952,
+      "printed_page": "932",
+      "screenshot": "/workspace/scratch/a886fd56dd2f/integration/short_visual/main_pdf_952_print_932.png",
+      "screenshot_sha256": "91d2177464ed7a7850eb8bbc29987b9b842f9c27329287a18bf77a13c2f8f9e6",
+      "viewed_with": "view_image",
+      "observations": [
+        "µ与ν的文字解释及命题7相对底Y的公式完整。",
+        "目标秩r的外幂、Hom识别和det M公式清晰。",
+        "旧破损式只在D17-S09脚注中供对照；脚注未溢出。"
+      ]
+    },
+    {
+      "pdf_page_1based": 953,
+      "printed_page": "933",
+      "screenshot": "/workspace/scratch/a886fd56dd2f/integration/short_visual/main_pdf_953_print_933.png",
+      "screenshot_sha256": "425c03549b8483d8740e96f38def2a6659541df1c2b1ff38209c7af2692759a2",
+      "viewed_with": "view_image",
+      "observations": [
+        "p+q=m+1、两个同态的截面模和L的det M逆因子均可辨。",
+        "S12局部直和因子条件及其脚注正常。",
+        "PS终点说明明确指向合并稿66页交换图，没有重复追加注4或提前计入后续译文。",
+        "D17-S10引标位于下一段“也可把……”开头，锚点可更清晰。"
+      ]
+    }
+  ],
+  "issues": [
+    {
+      "id": "VIS-S03",
+      "severity": "low",
+      "kind": "layout",
+      "pdf_page": 950,
+      "printed_page": "930",
+      "anchor": "D17-S03",
+      "observation": "公式后脚注引标单独位于下一行正文左侧。",
+      "recommendation": "将cmt移至公式前的引导句末，脚注内容不变。",
+      "status": "reported_to_root"
+    },
+    {
+      "id": "VIS-S05",
+      "severity": "low",
+      "kind": "layout",
+      "pdf_page": 951,
+      "printed_page": "931",
+      "anchor": "D17-S05",
+      "observation": "余法正合列后脚注引标单独位于下一行正文左侧。",
+      "recommendation": "将cmt移至公式前的引导句末，脚注内容不变。",
+      "status": "reported_to_root"
+    },
+    {
+      "id": "VIS-S10",
+      "severity": "low",
+      "kind": "layout",
+      "pdf_page": 953,
+      "printed_page": "933",
+      "anchor": "D17-S10",
+      "observation": "align环境后的脚注引标落到“也可把这两个截面……”段首。",
+      "recommendation": "将cmt移至引出两个截面公式的句末，脚注内容不变。",
+      "status": "reported_to_root"
+    }
+  ],
+  "outcome": "No clipped formulas, missing visible symbols, diagram collisions, or footnote overlaps observed. Three low-priority footnote-anchor placement issues reported.",
+  "limits": "Visual layout review; not independent verification of every mathematical argument. Page references apply only to the recorded PDF hash."
+}

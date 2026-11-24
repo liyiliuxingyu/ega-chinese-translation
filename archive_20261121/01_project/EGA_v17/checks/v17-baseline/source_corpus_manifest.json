@@ -1,0 +1,421 @@
+{
+  "manifest_version": 1,
+  "generated_at_utc": "2026-11-19T16:50:41.346892+00:00",
+  "purpose": "原始资料与指定历史工程归档物清单，供续作包核验和新对话恢复；不创建压缩包，不修改底本或正文。",
+  "workspace_root_at_inventory": "/workspace/scratch/a886fd56dd2f",
+  "scope_summary": {
+    "required_source_count": 12,
+    "found_source_count": 12,
+    "pdf_source_count": 9,
+    "postscript_source_count": 3,
+    "source_total_bytes": 214892721,
+    "specified_archive_count": 4,
+    "additional_provenance_container_count": 1,
+    "missing_sources": []
+  },
+  "method": {
+    "hash": "SHA-256 over exact current file bytes, streamed in 1 MiB chunks",
+    "PDF_page_count": "Actual PDFs opened with PyMuPDF; page count is physical, 1-based for cited locations",
+    "PS_page_count": "Not converted or counted in this inventory",
+    "renames_applied": false,
+    "original_files_modified": false,
+    "body_files_modified": false,
+    "downloads_performed": false,
+    "archives_created": false,
+    "archive_integrity_limit": "Central directories opened; no repeated CRC sweep in this inventory",
+    "coverage_limit": "源文件齐备不代表翻译全部完成；连续进度以实际源码及单独PROGRESS为准。各篇仍有原文缺文、待核数学问题和未译部分。"
+  },
+  "source_files": [
+    {
+      "id": "EGA-I",
+      "description": "EGA I",
+      "original_filename": "EGAI.pdf",
+      "actual_path": "/workspace/scratch/a886fd56dd2f/recovered/earlier_sources/EGAI.pdf",
+      "workspace_relative_path": "recovered/earlier_sources/EGAI.pdf",
+      "suggested_stable_filename": "EGAI.pdf",
+      "bytes": 28214474,
+      "sha256": "78d209f1d58e53f679944f336eaca5ac73f68bd811b1fbe6e655e1d4270bbb2d",
+      "format": "PDF",
+      "pdf_page_count": 227,
+      "page_count_method": "PyMuPDF opened actual PDF and read page count",
+      "encrypted": false,
+      "packaged_path": "03_sources/EGAI.pdf"
+    },
+    {
+      "id": "EGA-II",
+      "description": "EGA II",
+      "original_filename": "EGAII.pdf",
+      "actual_path": "/workspace/scratch/a886fd56dd2f/recovered/earlier_sources/EGAII.pdf",
+      "workspace_relative_path": "recovered/earlier_sources/EGAII.pdf",
+      "suggested_stable_filename": "EGAII.pdf",
+      "bytes": 24238251,
+      "sha256": "14e6ae796a454d5d3de2b7b8ff2b263496f5f3d90a50a0d0860348b12226180e",
+      "format": "PDF",
+      "pdf_page_count": 219,
+      "page_count_method": "PyMuPDF opened actual PDF and read page count",
+      "encrypted": false,
+      "packaged_path": "03_sources/EGAII.pdf"
+    },
+    {
+      "id": "EGA-III-1",
+      "description": "EGA III.1",
+      "original_filename": "EGAIII.1.pdf",
+      "actual_path": "/workspace/scratch/a886fd56dd2f/recovered/earlier_sources/EGAIII.1.pdf",
+      "workspace_relative_path": "recovered/earlier_sources/EGAIII.1.pdf",
+      "suggested_stable_filename": "EGAIII.1.pdf",
+      "bytes": 17646969,
+      "sha256": "50aa0f675c08217fe7c97b00f0610fea719acff4c828a25401e5c72d9ce793d4",
+      "format": "PDF",
+      "pdf_page_count": 164,
+      "page_count_method": "PyMuPDF opened actual PDF and read page count",
+      "encrypted": false,
+      "packaged_path": "03_sources/EGAIII.1.pdf"
+    },
+    {
+      "id": "EGA-III-2",
+      "description": "EGA III.2",
+      "original_filename": "EGAIII.2(1).pdf",
+      "actual_path": "/workspace/scratch/a886fd56dd2f/recovered/earlier_sources/EGAIII.2(1).pdf",
+      "workspace_relative_path": "recovered/earlier_sources/EGAIII.2(1).pdf",
+      "suggested_stable_filename": "EGAIII.2.pdf",
+      "bytes": 9584356,
+      "sha256": "46ebc187608dbf5579a527116ae258ff30e8c68b8de6eb63ec7ea9c158949a71",
+      "format": "PDF",
+      "pdf_page_count": 90,
+      "page_count_method": "PyMuPDF opened actual PDF and read page count",
+      "encrypted": false,
+      "name_note": "本地恢复名含下载去重后缀(1)；建议归档时采用无后缀稳定名EGAIII.2.pdf。本清单未执行重命名。",
+      "packaged_path": "03_sources/EGAIII.2.pdf"
+    },
+    {
+      "id": "EGA-IV-1",
+      "description": "EGA IV.1",
+      "original_filename": "EGAIV.1.pdf",
+      "actual_path": "/workspace/scratch/a886fd56dd2f/unpacked/core_utf8/EGA中文译校_第十六版_核心续作工程包/03_原著底本/EGAIV.1.pdf",
+      "workspace_relative_path": "unpacked/core_utf8/EGA中文译校_第十六版_核心续作工程包/03_原著底本/EGAIV.1.pdf",
+      "suggested_stable_filename": "EGAIV.1.pdf",
+      "bytes": 28307372,
+      "sha256": "03f02142aef3df09f13f416ac3f78bd898213df894ed3fd86b25f91697256bda",
+      "format": "PDF",
+      "pdf_page_count": 258,
+      "page_count_method": "PyMuPDF opened actual PDF and read page count",
+      "encrypted": false,
+      "packaged_path": "03_sources/EGAIV.1.pdf"
+    },
+    {
+      "id": "EGA-IV-2",
+      "description": "EGA IV.2",
+      "original_filename": "EGAIV.2.pdf",
+      "actual_path": "/workspace/scratch/a886fd56dd2f/unpacked/core_utf8/EGA中文译校_第十六版_核心续作工程包/03_原著底本/EGAIV.2.pdf",
+      "workspace_relative_path": "unpacked/core_utf8/EGA中文译校_第十六版_核心续作工程包/03_原著底本/EGAIV.2.pdf",
+      "suggested_stable_filename": "EGAIV.2.pdf",
+      "bytes": 28142841,
+      "sha256": "9588bedb000e9a9f24685c0bb146aa2384209b14b1928b984d81794499d1226b",
+      "format": "PDF",
+      "pdf_page_count": 228,
+      "page_count_method": "PyMuPDF opened actual PDF and read page count",
+      "encrypted": false,
+      "packaged_path": "03_sources/EGAIV.2.pdf"
+    },
+    {
+      "id": "EGA-IV-3",
+      "description": "EGA IV.3",
+      "original_filename": "EGAIV.3.pdf",
+      "actual_path": "/workspace/scratch/a886fd56dd2f/unpacked/core_utf8/EGA中文译校_第十六版_核心续作工程包/03_原著底本/EGAIV.3.pdf",
+      "workspace_relative_path": "unpacked/core_utf8/EGA中文译校_第十六版_核心续作工程包/03_原著底本/EGAIV.3.pdf",
+      "suggested_stable_filename": "EGAIV.3.pdf",
+      "bytes": 32702874,
+      "sha256": "509ff2bcbadd26fbc7566e6fcd79406eefbe5a8dfc8c984f4703c51f8d7e420f",
+      "format": "PDF",
+      "pdf_page_count": 254,
+      "page_count_method": "PyMuPDF opened actual PDF and read page count",
+      "encrypted": false,
+      "packaged_path": "03_sources/EGAIV.3.pdf"
+    },
+    {
+      "id": "EGA-IV-4",
+      "description": "EGA IV.4",
+      "original_filename": "EGAIV.4.pdf",
+      "actual_path": "/workspace/scratch/a886fd56dd2f/unpacked/core_utf8/EGA中文译校_第十六版_核心续作工程包/03_原著底本/EGAIV.4.pdf",
+      "workspace_relative_path": "unpacked/core_utf8/EGA中文译校_第十六版_核心续作工程包/03_原著底本/EGAIV.4.pdf",
+      "suggested_stable_filename": "EGAIV.4.pdf",
+      "bytes": 44148520,
+      "sha256": "f79e211fcf94d19e200e3dbc96faeeb5a423342137a9ad0bbe4626c555c3f84f",
+      "format": "PDF",
+      "pdf_page_count": 360,
+      "page_count_method": "PyMuPDF opened actual PDF and read page count",
+      "encrypted": false,
+      "packaged_path": "03_sources/EGAIV.4.pdf"
+    },
+    {
+      "id": "EGA-V-Vaiello",
+      "description": "EGA V 英文编辑文本（Vaiello）",
+      "original_filename": "EGAVaiello.pdf",
+      "actual_path": "/workspace/scratch/a886fd56dd2f/unpacked/core_utf8/EGA中文译校_第十六版_核心续作工程包/03_原著底本/EGAVaiello.pdf",
+      "workspace_relative_path": "unpacked/core_utf8/EGA中文译校_第十六版_核心续作工程包/03_原著底本/EGAVaiello.pdf",
+      "suggested_stable_filename": "EGAVaiello.pdf",
+      "bytes": 677332,
+      "sha256": "23a20ef32fd16a1bd623c0c08ac080d04fc94f248de12133b713a19d6b0330d9",
+      "format": "PDF",
+      "pdf_page_count": 112,
+      "page_count_method": "PyMuPDF opened actual PDF and read page count",
+      "encrypted": false,
+      "authority_note": "预备笔记/英文编辑载体；不得仅凭文件名或本清单称其为与EGA I–IV相同性质的已正式刊行第五卷。",
+      "packaged_path": "03_sources/EGAVaiello.pdf"
+    },
+    {
+      "id": "EGA-V-1-2-PS",
+      "description": "EGA V 预备笔记短篇 V1–2（PostScript）",
+      "original_filename": "EGAV1-2.ps",
+      "actual_path": "/workspace/scratch/a886fd56dd2f/unpacked/core_utf8/EGA中文译校_第十六版_核心续作工程包/03_原著底本/EGAV1-2.ps",
+      "workspace_relative_path": "unpacked/core_utf8/EGA中文译校_第十六版_核心续作工程包/03_原著底本/EGAV1-2.ps",
+      "suggested_stable_filename": "EGAV1-2.ps",
+      "bytes": 184244,
+      "sha256": "9cf40f1f074c0dd8322a904a0e1008bc6bc858675ae7e0056d637567006bf0ee",
+      "format": "PostScript",
+      "pdf_page_count": null,
+      "postscript_page_count": null,
+      "page_count_status": "本清单未转换或计算PS页数，不以旧稿中的转换记录代作本次实测",
+      "observed_first_line": "%!PS-Adobe-2.0",
+      "authority_note": "预备笔记/英文编辑载体；不得仅凭文件名或本清单称其为与EGA I–IV相同性质的已正式刊行第五卷。",
+      "packaged_path": "03_sources/EGAV1-2.ps"
+    },
+    {
+      "id": "EGA-V-5-PS",
+      "description": "EGA V 预备笔记短篇 V5（PostScript）",
+      "original_filename": "EGAV5.ps",
+      "actual_path": "/workspace/scratch/a886fd56dd2f/unpacked/core_utf8/EGA中文译校_第十六版_核心续作工程包/03_原著底本/EGAV5.ps",
+      "workspace_relative_path": "unpacked/core_utf8/EGA中文译校_第十六版_核心续作工程包/03_原著底本/EGAV5.ps",
+      "suggested_stable_filename": "EGAV5.ps",
+      "bytes": 656345,
+      "sha256": "e2578e9ef0d2a55541f2162d0e56f7ddf687d4002f4f166892128bb8dc20224c",
+      "format": "PostScript",
+      "pdf_page_count": null,
+      "postscript_page_count": null,
+      "page_count_status": "本清单未转换或计算PS页数，不以旧稿中的转换记录代作本次实测",
+      "observed_first_line": "%!PS-Adobe-2.0",
+      "authority_note": "预备笔记/英文编辑载体；不得仅凭文件名或本清单称其为与EGA I–IV相同性质的已正式刊行第五卷。",
+      "packaged_path": "03_sources/EGAV5.ps"
+    },
+    {
+      "id": "EGA-V-6-PS",
+      "description": "EGA V 预备笔记短篇 V6（PostScript）",
+      "original_filename": "EGAV6.ps",
+      "actual_path": "/workspace/scratch/a886fd56dd2f/unpacked/core_utf8/EGA中文译校_第十六版_核心续作工程包/03_原著底本/EGAV6.ps",
+      "workspace_relative_path": "unpacked/core_utf8/EGA中文译校_第十六版_核心续作工程包/03_原著底本/EGAV6.ps",
+      "suggested_stable_filename": "EGAV6.ps",
+      "bytes": 389143,
+      "sha256": "dea07d58c0298d33ed33adde9f75d359157d5567dc7b1563545d9eb412d008f1",
+      "format": "PostScript",
+      "pdf_page_count": null,
+      "postscript_page_count": null,
+      "page_count_status": "本清单未转换或计算PS页数，不以旧稿中的转换记录代作本次实测",
+      "observed_first_line": "%!PS-Adobe-2.0",
+      "authority_note": "预备笔记/英文编辑载体；不得仅凭文件名或本清单称其为与EGA I–IV相同性质的已正式刊行第五卷。",
+      "packaged_path": "03_sources/EGAV6.ps"
+    }
+  ],
+  "specified_archives": [
+    {
+      "id": "v16-project",
+      "description": "第十六版原始工程ZIP",
+      "original_filename": "代数几何基础_内容顺序合订第十六版_工程.zip",
+      "actual_path": "/workspace/scratch/a886fd56dd2f/recovered/代数几何基础_内容顺序合订第十六版_工程.zip",
+      "workspace_relative_path": "recovered/代数几何基础_内容顺序合订第十六版_工程.zip",
+      "suggested_stable_filename": "EGA_Chinese_v16_original_project.zip",
+      "bytes": 22384038,
+      "sha256": "1d8a3cc9b44d6025d87b1f5351e0a2de364f1220ce164bd381c38814708fa38d",
+      "zip_member_count": 393,
+      "zip_file_member_count": 393,
+      "zip_uncompressed_bytes": 32792448,
+      "zip_read_validation": "本清单读取了中央目录；没有在此重复解压、创建ZIP或执行逐成员CRC测试。",
+      "identical_copy_paths": [
+        "/workspace/scratch/a886fd56dd2f/unpacked/core_utf8/EGA中文译校_第十六版_核心续作工程包/02_当前成品/代数几何基础_内容顺序合订第十六版_工程.zip"
+      ],
+      "identical_copy_sha256": "1d8a3cc9b44d6025d87b1f5351e0a2de364f1220ce164bd381c38814708fa38d",
+      "deduplication_note": "两个物理位置的ZIP逐字节SHA-256一致，按同一归档物登记，不作为两个版本重复打包。"
+    },
+    {
+      "id": "dot-total",
+      "description": "Dot总续作ZIP",
+      "original_filename": "Dot对话_续作工程_20261119.zip",
+      "actual_path": "/workspace/scratch/a886fd56dd2f/recovered/dot/Dot对话_续作工程_20261119.zip",
+      "workspace_relative_path": "recovered/dot/Dot对话_续作工程_20261119.zip",
+      "suggested_stable_filename": "Dot_resume_20261119_original.zip",
+      "bytes": 41711082,
+      "sha256": "2169db9e55be324b8618f91b4f63361557e0baf7fbcb4a57343d9ba35a1e41a9",
+      "zip_member_count": 60,
+      "zip_file_member_count": 60,
+      "zip_uncompressed_bytes": 41717223,
+      "zip_read_validation": "本清单读取了中央目录；没有在此重复解压、创建ZIP或执行逐成员CRC测试。"
+    },
+    {
+      "id": "dot-latest-definition",
+      "description": "Dot后续：第16节奇异零点定义",
+      "original_filename": "EGA第五卷_第16节奇异零点定义_续译工程.zip",
+      "actual_path": "/workspace/scratch/a886fd56dd2f/recovered/dot_latest/EGA第五卷_第16节奇异零点定义_续译工程.zip",
+      "workspace_relative_path": "recovered/dot_latest/EGA第五卷_第16节奇异零点定义_续译工程.zip",
+      "suggested_stable_filename": "Dot_EGA_V_sec16_singular_zero_definition.zip",
+      "bytes": 762147,
+      "sha256": "6c650798bbc72ed772c559a7d8c32d5f1c84805d82c48c2c2d67c192398a4d21",
+      "zip_member_count": 11,
+      "zip_file_member_count": 11,
+      "zip_uncompressed_bytes": 865662,
+      "zip_read_validation": "本清单读取了中央目录；没有在此重复解压、创建ZIP或执行逐成员CRC测试。",
+      "embedded_progress_snapshots": [
+        {
+          "member": "PROGRESS.json",
+          "data": {
+            "date": "2026-11-19T13:00Z",
+            "scope": "底本62页Part II [Tr]、§16标题、引言、定义1、注2完整段落",
+            "next": "底本62页 Definition 3. Let X be a smooth prescheme over a field k",
+            "previous_zip": "libfile_fde3_f-4cf77f916a688191a524b9a96d85b2b3_49ac57203c0c81918f3630f0324dcb35",
+            "independent": true,
+            "merged_into_main": false,
+            "source_sha256": "23a20ef32fd16a1bd623c0c08ac080d04fc94f248de12133b713a19d6b0330d9",
+            "open_issues": [
+              "特征2二次型退化定义须核后文",
+              "底本Sym缺二次分次已标注校订",
+              "旧批次缺文与引文问题仍保留"
+            ]
+          }
+        }
+      ],
+      "progress_warning": "这些是独立批次的历史进度。其next字段不能直接作为合订主工程的下一未译点。"
+    },
+    {
+      "id": "dot-latest-geometric",
+      "description": "Dot后续：第16节几何奇异零点",
+      "original_filename": "EGA第五卷_第16节几何奇异零点_续译工程.zip",
+      "actual_path": "/workspace/scratch/a886fd56dd2f/recovered/dot_latest/EGA第五卷_第16节几何奇异零点_续译工程.zip",
+      "workspace_relative_path": "recovered/dot_latest/EGA第五卷_第16节几何奇异零点_续译工程.zip",
+      "suggested_stable_filename": "Dot_EGA_V_sec16_geometric_singular_zeros.zip",
+      "bytes": 752240,
+      "sha256": "4bb4e9880f5b37fb4ccbfa72c4f7595d30837d319199cfa1fcfce865097a0f15",
+      "zip_member_count": 12,
+      "zip_file_member_count": 12,
+      "zip_uncompressed_bytes": 858743,
+      "zip_read_validation": "本清单读取了中央目录；没有在此重复解压、创建ZIP或执行逐成员CRC测试。",
+      "embedded_progress_snapshots": [
+        {
+          "member": "PROGRESS.json",
+          "data": {
+            "date": "2026-11-19T15:00Z",
+            "scope": "底本62页定义3与注4(a)(b)(c)完整段落",
+            "next": "底本62页注4(d) Under the conditions of Definition 1",
+            "previous_zip": "libfile_fde3_f-c75a22d7a85c8191a4936792c1cd2632_49ac57203c0c81918f3630f0324dcb35",
+            "independent": true,
+            "merged_into_main": false,
+            "source_sha256": "23a20ef32fd16a1bd623c0c08ac080d04fc94f248de12133b713a19d6b0330d9",
+            "open_issues": [
+              "特征2二次型退化约定待后文",
+              "注4(a)引用尚待建立判据，未补造证明",
+              "注4(c)未重复geometrically，保留原措辞并解释域上定义语境",
+              "旧批次问题未解除"
+            ]
+          }
+        }
+      ],
+      "progress_warning": "这些是独立批次的历史进度。其next字段不能直接作为合订主工程的下一未译点。"
+    }
+  ],
+  "additional_provenance_containers": [
+    {
+      "id": "v16-core-resume-container",
+      "description": "已恢复的第十六版核心续作包，以上8份核心底本及v16工程的来源容器；不计入四个指定工程归档物",
+      "original_filename": "EGA中文译校_第十六版_核心续作工程包.zip",
+      "actual_path": "/workspace/scratch/a886fd56dd2f/recovered/EGA中文译校_第十六版_核心续作工程包.zip",
+      "workspace_relative_path": "recovered/EGA中文译校_第十六版_核心续作工程包.zip",
+      "suggested_stable_filename": "EGA_Chinese_v16_core_resume_original.zip",
+      "bytes": 185983916,
+      "sha256": "3a26b59ffa906a5315f7f75318b1571b6caf514410a18d6d733271782289e4cb",
+      "zip_member_count": 462,
+      "zip_file_member_count": 420
+    }
+  ],
+  "verified_continuation_boundaries": [
+    {
+      "id": "EGA-IV-1-next",
+      "source_id": "EGA-IV-1",
+      "source_sha256": "03f02142aef3df09f13f416ac3f78bd898213df894ed3fd86b25f91697256bda",
+      "current_tex_snapshot": {
+        "actual_path": "/workspace/scratch/a886fd56dd2f/work/EGA_v17/continuations/iv0_23_2.tex",
+        "sha256": "ad30b399d3c73aaa7816e19ce5a09fbe2d2e483aa784ae9b20237751ca4e96f3",
+        "last_entry": "0_IV (23.2.10), remarks (i) and (ii), ending with 待续"
+      },
+      "next_untranslated_material": {
+        "physical_pdf_page_1_based": 221,
+        "location": "第四章标题及Sommaire（内容提要）",
+        "source_text_anchors": [
+          "CHAPITRE IV",
+          "ÉTUDE LOCALE DES SCHÉMAS",
+          "Sommaire"
+        ]
+      },
+      "intervening_material": [
+        {
+          "physical_pdf_page_1_based": 222,
+          "location": "章首说明开始，a)、b)、c)及c1–c3",
+          "observed_upper_printed_page": 223
+        },
+        {
+          "physical_pdf_page_1_based": 223,
+          "location": "章首说明c3续文；之后才是§1标题与(1.1.1)",
+          "observed_upper_printed_page": 224
+        }
+      ],
+      "next_numbered_definition": {
+        "physical_pdf_page_1_based": 223,
+        "observed_upper_printed_page": 224,
+        "number": "1.1.1",
+        "heading": "1.1. Morphismes quasi-compacts",
+        "text_anchor": "Définition (i. i. i ). — On dit qu’un morphisme de préschémas ... quasi-compact",
+        "extracted_text_snippet": "Définition (i. i. i ). — On dit qu'un morphisme de préschémas f : X -^Y est quasi-compact\nsi l'application continue f de l'espace topologique X dans l'espace topologique Y est quasi-compacte\n(Oui, 9. i • i), autrement dit si l'image réciproque /\"^U) de tout ouvert quasi"
+      },
+      "evidence": "本清单直接读取PDF物理220–224页文字，并检查实际TeX最后条目。物理221页是提要，不能跳过它和章首说明径直把接续点写成1.1.1。物理221标题页的上方分册页码未明印，故不把推算页码当作观察值。",
+      "not_translation_completion_claim": true
+    },
+    {
+      "id": "EGA-V-section16-next",
+      "source_id": "EGA-V-Vaiello",
+      "source_sha256": "23a20ef32fd16a1bd623c0c08ac080d04fc94f248de12133b713a19d6b0330d9",
+      "current_tex_snapshot": {
+        "actual_path": "/workspace/scratch/a886fd56dd2f/work/EGA_v17/text/v1_2.tex",
+        "sha256": "0dfa9d3ecd0d3b0302189ef0dba5b97b1dc11422f9395af41618b6ba513a8b1f",
+        "last_translated_anchor": "在这些条件下，有下面这个图的交换性——",
+        "last_math_anchor": "det F = det F′ ⊗ det F″ for a short exact sequence"
+      },
+      "next_untranslated_material": {
+        "physical_pdf_page_1_based": 66,
+        "printed_page": 66,
+        "location": "上述引句之后的P、M、Q、L交换图，随后是可能相差符号的说明及V(a)=V(b)论证",
+        "source_text_before": "This being given [Fr], we have the commutativity of the diagram",
+        "source_text_after": "(possibly up to sign, this depends perhaps on the conventioins adopted to deﬁne some of\nthe canonical isomorphisms used, which govern the choice of the sign. . . )\nHence the ideals V (a) and V (b) are identical sinc",
+        "diagram_objects": [
+          "P",
+          "M",
+          "Q",
+          "L = det P ⊗ det Q ⊗ (det M)^{-1}"
+        ]
+      },
+      "evidence": "本清单直接读取Vaiello第65–67页文字，并核对text/v1_2.tex末段。第66页实际含交换图和后文；本次只登记其位置，没有把图或后文计作已经翻译。",
+      "old_batch_progress_warning": "Dot最新独立两包覆盖第62页，并分别以Definition3或注4(d)为next；它们与主工程既有PS短篇同文重合，不能使主工程退回第62页重译。PS页数在本清单未重新实测。",
+      "not_translation_completion_claim": true
+    }
+  ],
+  "packaging_cautions": [
+    "Use one stable source copy per source id; EGAIII.2(1).pdf is the restored filename, suggested stable name is EGAIII.2.pdf.",
+    "v16 recovered ZIP and ZIP inside the core resume package are byte-identical, not separate versions.",
+    "Use the two recovered/dot_latest ZIP originals or their distinct named extraction subdirectories; the flat unpacked/dot_latest directory contains earlier overwritten extraction remnants and is not a third source archive.",
+    "Archive historical PROGRESS fields are evidence of those independent batches only; they do not override later main TeX continuation."
+  ],
+  "complete_v16_archive": {
+    "input_archive": "EGA中文译校_第十六版_完整续作工程包.zip",
+    "input_archive_bytes": 325939860,
+    "input_archive_sha256": "8d055847ed34ddd1e0ea822e7e5b080ae9b598a3b5081246abcf9c93d14ae8d7",
+    "archive_crc_verified": true,
+    "all_original_regular_files_preserved": true,
+    "regular_file_count": 435,
+    "note": "Original package paths are mapped explicitly; historical manifests are preserved as records, not the current root manifest."
+  }
+}

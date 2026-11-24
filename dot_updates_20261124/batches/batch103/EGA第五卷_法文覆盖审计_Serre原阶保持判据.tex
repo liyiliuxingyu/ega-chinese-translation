@@ -1,0 +1,97 @@
+\documentclass[openany,fontset=fandol]{ctexbook}
+\usepackage{amsmath,amssymb}
+\usepackage[unicode,hidelinks]{hyperref}
+\setlength{\emergencystretch}{2em}
+\raggedbottom
+\DeclareMathOperator{\codim}{codim}
+\DeclareMathOperator{\depth}{depth}
+\DeclareMathOperator{\coprof}{coprof}
+\DeclareMathOperator{\Supp}{Supp}
+\newcommand{\PP}{\mathbb P}
+\newcommand{\F}{\mathcal F}
+\newcommand{\G}{\mathcal G}
+\begin{document}
+\title{代数几何基础第五卷预备笔记\\超平面截面保持 Serre 条件的判据}
+\author{第103批\quad 法、英、中文三方校订}
+\date{2026年11月24日}
+\maketitle
+
+\section*{范围和接续}
+本批校法稿物理34页下半、35页及法32页底短注；对读英编稿物理24页及25页首。法35页末最后一句的改写边字未定，不补作定论。下批从法36的无分歧情形及余法丛起，英25页紧随8.6的后段；法36段号有覆写，待与续页核号。1158页合订本未改，正式印本IV.1续点仍单列。
+
+\paragraph{先前删稿。}
+法32和法34前一个框划的推论都写的是降阶性质 $(S_{k-1})$：若 $\F$ 为 $(S_k)$，考虑同时满足 $\varphi_\xi$ 为 $\F_{K(\xi)}$-正则以及 $\G_\xi$ 为 $(S_{k-1})$ 的参数，原打字稿拟称其补集余维至少二。法34有在关联循环上限制像维数的手写增补，并把证明指向8.4、5.7.4和8.2末；整个旧陈述仍是删稿。法32页底另起短注则可辨为问保持原阶 $(S_k)$ 时何以使补集余维至少二，与下文新推论相合。\footnote{所见页边文字并非各字都清楚。新旧两处下标可由法34打字稿及法32页底分别核对；不把删稿与新稿合成一句。旧打字句若不限制正则性例外，结论不成立：取 $X=\mathbb A^1$，$f$ 常值，$\F=\mathcal O_X$，经过该像点的所有超平面都给出零截面，参数余维为一。}
+
+\section*{推论8.5\quad 保持原阶 $(S_k)$}
+沿用8.4的有限型底域记号，$k\ge1$，设 $\F$ 为满足 $(S_k)$ 的凝聚模。假定对 $\F$ 的每个几何关联循环 $R$，其像满足 $\dim f(R)>0$。\footnote{英24的前提留下未辨读注33；法34的补写可见“每个关联素循环”及像维数条件的开头，边缘有裁切。$>0$ 由 8.2 最终命题及法34边注所引的 8.2 末互证。几何一语沿用8.4证明末对底域的说明。}
+令 $T=\Supp\F$，对每个整数 $n\ge0$，置
+\[
+ Z_n=\{x\in T:\coprof(\F_x)>n\},\qquad
+ \coprof(\F_x)=\dim\F_x-\depth\F_x .
+\]
+使 $\varphi_\xi$ 为 $\F_{K(\xi)}$-正则且 $\G_\xi$ 为 $(S_k)$ 的参数构成可构造集。它的补集有余维至少二，当且仅当：
+\begin{quote}
+对每个 $Z_n$ 的几何不可约分支 $Z_{ni}$，若 $\codim(Z_{ni},T)=n+k+1$ 且 $\dim f(Z_{ni})=0$，则存在 $T$ 的一个含 $Z_{ni}$ 的几何不可约分支 $T_j$，使
+\[
+ \codim(Z_{ni},T_j)=n+k+1,\qquad \dim f(T_j)=0.
+\]
+\end{quote}
+这里按作者移写的承接语使用8.4、\href{https://webusers.imj-prg.fr/~leila.schneps/grothendieckcircle/EGA/EGAIV.2.pdf}{印本 EGA IV.2 (5.7.4)} 与8.2末。\footnote{英24注34和法34右缘都未给清楚的余深度末式；法35等维段仍保留严格的 $>$，印本 (5.7.4) 明确用 $\coprof>n$，并以 $\codim(Z_n,T)>n+k$ 为判准，即 $\ge n+k+1$。不能改作 $\coprof\ge n$。}
+
+\newpage
+\section*{拟有限情形与8.6}
+若 $f$ 拟有限，则对任何闭集 $R\subseteq T$，$\dim f(R)=\dim R$。于是判据变为：任何 $Z_n$ 都没有满足
+\[
+ \dim\mathcal O_{T,z}=\dim\F_z=n+k+1
+\]
+的几何孤立点 $z$。
+
+若 $\F$ 等维，支撑维数为 $d$，那么 $d\le k$ 时此条件为空条件；在这种情况下，$(S_k)$ 本来就是 Cohen--Macaulay 条件。若 $d\ge k+1$，则等价于 $Z_{d-(k+1)}$ 为空。按 $(S_k)$，这个集合若非空，其余维至少为 $d$，因此只含有限多个闭点。也就是说，要求
+\[
+ \coprof\F\le d-(k+1),\qquad
+ \text{亦即闭点上的最小深度至少为 } k+1.
+\]
+单从 $(S_k)$ 与 $k\le d$ 先验只得到闭点上的最小深度至少为 $k$。\footnote{法35写明该集合应为空，并写有整个 $\F$ 的余深度上界；英24在此省掉空集和该上界。“真实深度”在这个等维、有限型语境中是闭点上的最小深度；不可读成包含泛点在内的所有深度的下确界。}
+
+不再要求等维时，仍可把拟有限情形的条件写成：
+
+\paragraph{8.6.}
+对支撑 $T$ 的每个几何闭点 $x$，若 $\dim\F_x\ge k+1$，则 $\depth\F_x\ge k+1$。
+
+必要性如下。对任意过 $f(x)$ 的超平面，如果截面方程不正则，该参数本来就是例外；若正则，则在 $x$ 处有
+\[
+ \dim(\G_\xi)_x=\dim\F_x-1,\qquad
+ \depth(\G_\xi)_x=\depth\F_x-1 .
+\]
+若 $x$ 违反8.6，则在后一种情况下 $\depth(\G_\xi)_x<k$，而 $\dim(\G_\xi)_x\ge k$，所以截面不满足 $(S_k)$。过 $f(x)$ 的超平面给出余维一的参数集。这里是在代数闭域上取闭点。\footnote{英24在反证式把深度读成 $\ge k$，与应证的“不满足 $(S_k)$”相反；法35的关系是 $<k$，也由正则截面使深度减一得到。英稿的 $X_{K(\xi)}$-正则是省略或误写；本处需要的是 $\F_{K(\xi)}$-正则。}
+
+充分性可由一般判据的拟有限表述直接推出：若一个孤立点 $z\in Z_n$ 的局部维数等于 $n+k+1$，则它的深度至多为 $k$，故违反8.6。反过来，若某几何闭点 $x$ 违反8.6，取 $n=\dim\F_x-k-1$；由 $(S_k)$ 有 $\depth\F_x=k$，所以 $x\in Z_n$。它达到 $Z_n$ 的余维下界，不可能是 $Z_n$ 中另一点的严格特化，故是 $Z_n$ 的零维分支，也就是孤立点。\footnote{法35充分性原句匆促地写令 $z=x$；这里按集合与局部深度的双向对应补清。页尾关于一般判据的承接句有删改，不复原不可辨字样。}
+
+\newpage
+\section*{补证：用余深度把问题归约为8.4}
+取代数闭底域论证，再按几何分支解释换底。闭集 $T$ 上的局部维数等于模的支撑维数。令 $a=\dim\F_x$、$b=\depth\F_x$。则
+\[
+ \F\text{ 为 }(S_k)
+ \quad\Longleftrightarrow\quad
+ \forall n\ge0,\ \codim(Z_n,T)\ge n+k+1.
+\]
+证明：若 $x\in Z_n$，则 $a-b\ge n+1$，尤其 $a>b$。若满足 $(S_k)$，由 $b\ge\min(k,a)$ 得 $b\ge k$，从而 $a\ge n+k+1$。反之，若有点满足 $b<\min(k,a)$，取 $n=a-b-1\ge0$。此点在 $Z_n$ 中，但 $a<n+k+1$，矛盾。这里用到了整数门槛的严格性。
+
+\paragraph{闭性和换底。}
+在有限型仿射片上选取某个仿射空间 $\mathbb A^N$ 的闭浸入，视 $\F$ 为其上的有限模 $M$。对支撑中的点 $x$，记 $D(x)$ 为通过 $x$ 的支撑分支的最大维数。若 $x$ 的剩余域在底域上的超越次数为 $t$，则 $\dim M_x=D(x)-t$，仿射空间的局部环维数为 $N-t$。用 \href{https://stacks.math.columbia.edu/tag/00O7}{Auslander--Buchsbaum 公式}，余深度等于
+\[
+ D(x)-N+\operatorname{pd}_{\mathcal O_{\mathbb A^N,x}}M_x .
+\]
+$D(x)$ 的各上水平集是有限个闭分支的并；投射维数也是上半连续的：在有限自由解消中，相应合冲模在一点局部自由，就在该点某个邻域局部自由。故 $Z_n$ 都闭，且只有有限多个可能非空。对这里涉及的域扩张，换底的局部映射平坦，闭纤维为域张量所得的 Cohen--Macaulay 局部环；维数与深度加上同一纤维维数。因此余深度不变，$Z_n$ 按点集拉回。也可把扩张分成有限纯超越及代数两步，纤维分别正则及零维。几何术语与非闭参数的处理同8.4。
+
+\newpage
+\section*{补证续：应用到参数空间}
+记 $I$ 为不正则的参数集。8.2给出 $I$ 可构造且余维至少二，因为所有关联循环的像都为正维。对 $\xi\notin I$，正则商的深度与支撑局部维数都降一；维数下降可用 \href{https://stacks.math.columbia.edu/tag/0B52}{Stacks，10.63.10}，深度下降见 \href{https://stacks.math.columbia.edu/tag/00LE}{Stacks，10.72}。故余深度不变，$\G_\xi$ 的坏集是换底后的 $Z_n$ 截到 $T_\xi$。用上面的余维准则，原阶 $(S_k)$ 的失败当且仅当至少一个 $n$ 的对应余维小于 $n+k+1$。把这些降阶参数集记为 $B_n$，由8.4皆可构造；所求参数的补集是
+\[
+ I\ \cup\ \bigcup_{n\ge0} B_n.
+\]
+这是有限并。若某个 $B_n$ 有余维一，即使把原先不正则的参数也计入，合并后的坏集仍有余维一。于是要求每个 $B_n$ 均有余维至少二，恰给出8.5中的分支条件。
+
+\paragraph{等维化简。}
+在代数闭域上等维的 $T$ 的每个闭点都有局部维数 $d$；非空的 $Z_n$ 若有孤立点，它也是 $T$ 的闭点。故拟有限判据只可能在 $n=d-k-1$ 触发。该 $n$ 的 $Z_n$ 若非空，因余维至少 $d$，每个分支都为零维；于是无孤立点等价于集合为空。余深度是上半连续且 $T$ 为 Jacobson 拓扑，任何非空的坏闭集都含闭点，故可把全局余深度上界同闭点深度下界互译。
+\end{document}

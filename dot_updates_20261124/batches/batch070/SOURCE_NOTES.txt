@@ -1,0 +1,5 @@
+法文原件 EGA5.pdf（171 页），https://webusers.imj-prg.fr/~leila.schneps/grothendieckcircle/EGA/EGA5.pdf
+SHA256 24cf8204184b58b18a46e5f63ecc36d6e791b3c8c96a09daac93de96ebd8e830。
+英译为现行工程锁定稿，SHA256 23a20ef32fd16a1bd623c0c08ac080d04fc94f248de12133b713a19d6b0330d9；物理 79–80。
+法文摘页物理 162–164，扫描右边缺边；未把补字当作笔迹可见。摘页与全扫描渲染逐像素相等。
+现代术语及三元例对照 Dolgachev–Duncan, Algebra & Number Theory 12 (2018), 99–130，doi:10.2140/ant.2018.12.99，命题2.1–2.2、注2.3–2.4、例2.5；非原文的一部分。

@@ -1,0 +1,11 @@
+{
+  "batch": 107,
+  "date_utc": "2026-11-24",
+  "translated": "法43页8.10起至45页8.13标题之前，包括8.10、8.11、8.12和编辑提示",
+  "english_collation": [30, 31],
+  "next": {"french_physical": 45, "english_physical": 31, "anchor": "Proposition 8.13"},
+  "issues_open": ["8.13 大段删除与手写替代未核", "8.7(c)法40/41页缝仍缺", "法36覆写号待核", "法45圈划边注未完整辨识"],
+  "main_1158p_modified": false,
+  "printed_IV_1_modified": false,
+  "additional_proofs": ["双切四次曲线例", "正特征 Fermat 曲线例", "几何单支判据依据 Stacks 0GS8", "避开完整的 T 的非光滑处", "行列式的秩 d 扭转"]
+}

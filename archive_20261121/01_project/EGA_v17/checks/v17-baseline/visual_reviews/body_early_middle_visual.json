@@ -1,0 +1,629 @@
+{
+  "checked_at_utc": "2026-11-19T17:21:44+00:00",
+  "review_round": 2,
+  "scope": "same 19 physical pages; all re-rendered and pixel-compared; only 11 changed pages visually re-inspected; 8 identical pages carry forward prior actual visual evidence",
+  "pdf": "/workspace/scratch/a886fd56dd2f/work/EGA_v17/main.pdf",
+  "pdf_sha256_at_render": "df949bd9daa04547214b6e3c68e066812be0fb2918601c0d6403cccfce568046",
+  "pdf_sha256_after_review": "df949bd9daa04547214b6e3c68e066812be0fb2918601c0d6403cccfce568046",
+  "pdf_unchanged_during_review": true,
+  "pdf_page_count": 1130,
+  "render_tool": "Poppler pdftoppm",
+  "dpi": 180,
+  "comparison_method": "RGB arrays, exact per-channel equality for every pixel, same resolution and page geometry",
+  "rendered_and_pixel_compared_pages": 19,
+  "current_round_actually_viewed_pages": [
+    1001,
+    1006,
+    1015,
+    1016,
+    1019,
+    1020,
+    1021,
+    1022,
+    1023,
+    1024,
+    1025
+  ],
+  "current_round_actually_viewed_count": 11,
+  "pixel_identical_carryforward_pages": [
+    972,
+    974,
+    977,
+    978,
+    1000,
+    1004,
+    1005,
+    1007
+  ],
+  "pixel_identical_carryforward_count": 8,
+  "previous_pdf_sha256": "c4cc8b96308a0ff53d3a1d47bdf5207893df6e8a73282c7cbea1698e612fba3b",
+  "previous_record_archive": "/workspace/scratch/a886fd56dd2f/integration/body_early_middle_visual/review_round1",
+  "blocking_visual_defects": [],
+  "resolved_layout_observations": [
+    {
+      "physical_pages": [
+        1006
+      ],
+      "description": "原公式后独立的标号2已附到向量丛引导句；标号1亦附到正合列引导句。实际复看确认。"
+    },
+    {
+      "physical_pages": [
+        1019,
+        1020
+      ],
+      "description": "13.3条目重新分页，原1020页首孤立注标消失；相关注标附到陈述引导句及列表末项。实际复看确认。"
+    }
+  ],
+  "remaining_nonblocking_layout_observations": [
+    {
+      "physical_pages": [
+        972
+      ],
+      "description": "旧§6末尾脚注标号3仍单独成行；本页逐像素未变，按保存旧正文的要求未改，沿用上轮实际观察。"
+    },
+    {
+      "physical_pages": [
+        1004,
+        1005
+      ],
+      "description": "§11标题及来源在1004页，主体从1005页开始；两页逐像素未变，沿用上轮观察。"
+    }
+  ],
+  "coverage_limitations": [
+    "最终19页不是全部重新人工查看：本轮实际复看11页，另8页以严格逐像素相同沿用上轮证据。",
+    "仅抽查所列物理页，不能据此声称全书1130页均无细节问题。",
+    "8.4.1完整补证在独立报告；本次main范围只含修正版引理、纠错脚注及报告指引。",
+    "没有修改源码、编译或重新审定数学；源文件中脚注/公式是否全文保留的自动核验由根任务另记。"
+  ],
+  "pages": [
+    {
+      "physical_page": 972,
+      "printed_page_label": "952",
+      "path": "/workspace/scratch/a886fd56dd2f/integration/body_early_middle_visual/main_phys_0972.png",
+      "png_sha256": "d68af0c685fe4deb4dc53098faaa98cf3ae6d5d4d4b2ace40ec5461f3f6c8c29",
+      "old_path": "/workspace/scratch/a886fd56dd2f/integration/body_early_middle_visual/review_round1/main_phys_0972.png",
+      "old_png_sha256": "d68af0c685fe4deb4dc53098faaa98cf3ae6d5d4d4b2ace40ec5461f3f6c8c29",
+      "image_dimensions_px": [
+        1489,
+        2105
+      ],
+      "same_dimensions": true,
+      "pixel_identical": true,
+      "different_pixel_count": 0,
+      "difference_bbox_px": null,
+      "topic": "§7开端与既有§6结尾衔接",
+      "viewed_in_round1": true,
+      "current_round_actually_viewed": false,
+      "evidence_basis": "pixel_identical_to_round1_previously_viewed_page",
+      "visual_observation": "§7长标题、底本位置和7.1正文均在版心内；页脚四条注释完整。旧§6证明末尾脚注标号3单独占一行，但未与正文或证毕方框碰撞。",
+      "observation_source_round": 1,
+      "clipping_seen": false,
+      "text_footnote_collision_seen": false,
+      "formula_overflow_seen": false,
+      "text_outside_physical_page_count": 0
+    },
+    {
+      "physical_page": 974,
+      "printed_page_label": "954",
+      "path": "/workspace/scratch/a886fd56dd2f/integration/body_early_middle_visual/main_phys_0974.png",
+      "png_sha256": "6e25170055cad1351e27d3f0a31f0b191654493bd6d2e321253b6af4c169eaff",
+      "old_path": "/workspace/scratch/a886fd56dd2f/integration/body_early_middle_visual/review_round1/main_phys_0974.png",
+      "old_png_sha256": "6e25170055cad1351e27d3f0a31f0b191654493bd6d2e321253b6af4c169eaff",
+      "image_dimensions_px": [
+        1489,
+        2105
+      ],
+      "same_dimensions": true,
+      "pixel_identical": true,
+      "different_pixel_count": 0,
+      "difference_bbox_px": null,
+      "topic": "7.4不采用说明、纯不可分反例脚注和§8开端",
+      "viewed_in_round1": true,
+      "current_round_actually_viewed": false,
+      "evidence_basis": "pixel_identical_to_round1_previously_viewed_page",
+      "visual_observation": "长黑体状态标题正常排入同一段；脚注2中k=F_p(t)、L=k(t^{1/p})反例清晰，底部四条脚注未裁切。",
+      "observation_source_round": 1,
+      "clipping_seen": false,
+      "text_footnote_collision_seen": false,
+      "formula_overflow_seen": false,
+      "text_outside_physical_page_count": 0
+    },
+    {
+      "physical_page": 977,
+      "printed_page_label": "957",
+      "path": "/workspace/scratch/a886fd56dd2f/integration/body_early_middle_visual/main_phys_0977.png",
+      "png_sha256": "c1d05eee1a2542bf93ac7800833c46b41694ac5ba63e43e4442a5b8beb7d877a",
+      "old_path": "/workspace/scratch/a886fd56dd2f/integration/body_early_middle_visual/review_round1/main_phys_0977.png",
+      "old_png_sha256": "c1d05eee1a2542bf93ac7800833c46b41694ac5ba63e43e4442a5b8beb7d877a",
+      "image_dimensions_px": [
+        1489,
+        2105
+      ],
+      "same_dimensions": true,
+      "pixel_identical": true,
+      "different_pixel_count": 0,
+      "difference_bbox_px": null,
+      "topic": "8.4.1修正版引理及纠错脚注",
+      "viewed_in_round1": true,
+      "current_round_actually_viewed": false,
+      "evidence_basis": "pixel_identical_to_round1_previously_viewed_page",
+      "visual_observation": "codim(T,X)≥k、(a)/(b)条件和局部环维数公式均完整；D17-E02续脚注明确给出原错与补证指引。完整补证不在main该页，不能据此记录为已检查其报告版排版。",
+      "observation_source_round": 1,
+      "clipping_seen": false,
+      "text_footnote_collision_seen": false,
+      "formula_overflow_seen": false,
+      "text_outside_physical_page_count": 0
+    },
+    {
+      "physical_page": 978,
+      "printed_page_label": "958",
+      "path": "/workspace/scratch/a886fd56dd2f/integration/body_early_middle_visual/main_phys_0978.png",
+      "png_sha256": "1f2b4e82fcb8b4943ca72a387e8d8c05bfbf831581705c241838cf74ef89c8a0",
+      "old_path": "/workspace/scratch/a886fd56dd2f/integration/body_early_middle_visual/review_round1/main_phys_0978.png",
+      "old_png_sha256": "1f2b4e82fcb8b4943ca72a387e8d8c05bfbf831581705c241838cf74ef89c8a0",
+      "image_dimensions_px": [
+        1489,
+        2105
+      ],
+      "same_dimensions": true,
+      "pixel_identical": true,
+      "different_pixel_count": 0,
+      "difference_bbox_px": null,
+      "topic": "8.4修正结论及8.5残文接续",
+      "viewed_in_round1": true,
+      "current_round_actually_viewed": false,
+      "evidence_basis": "pixel_identical_to_round1_previously_viewed_page",
+      "visual_observation": "修正为开集上的超平面之迹；两行余维/维数公式和脚注反例均完整，没有正文与脚注横线重叠。",
+      "observation_source_round": 1,
+      "clipping_seen": false,
+      "text_footnote_collision_seen": false,
+      "formula_overflow_seen": false,
+      "text_outside_physical_page_count": 0
+    },
+    {
+      "physical_page": 1000,
+      "printed_page_label": "980",
+      "path": "/workspace/scratch/a886fd56dd2f/integration/body_early_middle_visual/main_phys_1000.png",
+      "png_sha256": "8cee179c254296e328a81a8b1a10edf7cdb0ae9b7f9e0247ad30c8986e028fca",
+      "old_path": "/workspace/scratch/a886fd56dd2f/integration/body_early_middle_visual/review_round1/main_phys_1000.png",
+      "old_png_sha256": "8cee179c254296e328a81a8b1a10edf7cdb0ae9b7f9e0247ad30c8986e028fca",
+      "image_dimensions_px": [
+        1489,
+        2105
+      ],
+      "same_dimensions": true,
+      "pixel_identical": true,
+      "different_pixel_count": 0,
+      "difference_bbox_px": null,
+      "topic": "§10标题与10.1闭包约定开端",
+      "viewed_in_round1": true,
+      "current_round_actually_viewed": false,
+      "evidence_basis": "pixel_identical_to_round1_previously_viewed_page",
+      "visual_observation": "§10标题和10.1起段清晰；维数至少1的前提及相应脚注完整。上部9.4/9.5残文标识保留，问号为原文缺文标记。",
+      "observation_source_round": 1,
+      "clipping_seen": false,
+      "text_footnote_collision_seen": false,
+      "formula_overflow_seen": false,
+      "text_outside_physical_page_count": 0
+    },
+    {
+      "physical_page": 1001,
+      "printed_page_label": "981",
+      "path": "/workspace/scratch/a886fd56dd2f/integration/body_early_middle_visual/main_phys_1001.png",
+      "png_sha256": "6f92694c17a5a296f4a50517277868be3c96cf8358c457b8de7f0ebe644dcf15",
+      "old_path": "/workspace/scratch/a886fd56dd2f/integration/body_early_middle_visual/review_round1/main_phys_1001.png",
+      "old_png_sha256": "d36f5c399618aae1fff2a8e25915e9fa6c1ffd91ddfabfd0ba42061dd5bef095",
+      "image_dimensions_px": [
+        1489,
+        2105
+      ],
+      "same_dimensions": true,
+      "pixel_identical": false,
+      "different_pixel_count": 206568,
+      "difference_bbox_px": [
+        249,
+        370,
+        1109,
+        1500
+      ],
+      "topic": "10.1闭包条件及10.2开端",
+      "viewed_in_round1": true,
+      "current_round_actually_viewed": true,
+      "evidence_basis": "actual_visual_reinspection_of_final_pdf",
+      "visual_observation": "闭包余维公式、几何/有理直线说明和四条脚注清晰；T=X×_P L⁰之前的引导字“置”现带脚注标号4，原公式后的孤立标号已消失。页末内容换行未压到脚注横线。",
+      "observation_source_round": 2,
+      "clipping_seen": false,
+      "text_footnote_collision_seen": false,
+      "formula_overflow_seen": false,
+      "text_outside_physical_page_count": 0
+    },
+    {
+      "physical_page": 1004,
+      "printed_page_label": "984",
+      "path": "/workspace/scratch/a886fd56dd2f/integration/body_early_middle_visual/main_phys_1004.png",
+      "png_sha256": "a39ec6b3dbc902a39cad3f09f6affff421f9b5f8cbb5679faf0132ef522d4510",
+      "old_path": "/workspace/scratch/a886fd56dd2f/integration/body_early_middle_visual/review_round1/main_phys_1004.png",
+      "old_png_sha256": "a39ec6b3dbc902a39cad3f09f6affff421f9b5f8cbb5679faf0132ef522d4510",
+      "image_dimensions_px": [
+        1489,
+        2105
+      ],
+      "same_dimensions": true,
+      "pixel_identical": true,
+      "different_pixel_count": 0,
+      "difference_bbox_px": null,
+      "topic": "§11标题、来源与10.4末尾",
+      "viewed_in_round1": true,
+      "current_round_actually_viewed": false,
+      "evidence_basis": "pixel_identical_to_round1_previously_viewed_page",
+      "visual_observation": "Grassmann节标题及来源位于本页，主体从下一页开始；上一节四条脚注完整，节标题未与脚注区碰撞。",
+      "observation_source_round": 1,
+      "clipping_seen": false,
+      "text_footnote_collision_seen": false,
+      "formula_overflow_seen": false,
+      "text_outside_physical_page_count": 0
+    },
+    {
+      "physical_page": 1005,
+      "printed_page_label": "985",
+      "path": "/workspace/scratch/a886fd56dd2f/integration/body_early_middle_visual/main_phys_1005.png",
+      "png_sha256": "23e7090b0e1f634d61169a77ddc5ff67e82393781b70b7ae182d1cb3e904bc5b",
+      "old_path": "/workspace/scratch/a886fd56dd2f/integration/body_early_middle_visual/review_round1/main_phys_1005.png",
+      "old_png_sha256": "23e7090b0e1f634d61169a77ddc5ff67e82393781b70b7ae182d1cb3e904bc5b",
+      "image_dimensions_px": [
+        1489,
+        2105
+      ],
+      "same_dimensions": true,
+      "pixel_identical": true,
+      "different_pixel_count": 0,
+      "difference_bbox_px": null,
+      "topic": "§11函子、Plücker态射、拟紧性和坐标图引入",
+      "viewed_in_round1": true,
+      "current_round_actually_viewed": false,
+      "evidence_basis": "pixel_identical_to_round1_previously_viewed_page",
+      "visual_observation": "外幂n、Grass_1、P的长公式可完整辨识；七条脚注含无限秩反例，均在页面内。",
+      "observation_source_round": 1,
+      "clipping_seen": false,
+      "text_footnote_collision_seen": false,
+      "formula_overflow_seen": false,
+      "text_outside_physical_page_count": 0
+    },
+    {
+      "physical_page": 1006,
+      "printed_page_label": "986",
+      "path": "/workspace/scratch/a886fd56dd2f/integration/body_early_middle_visual/main_phys_1006.png",
+      "png_sha256": "e8ce6cde03f32a68755fc5929c7a398070fb58d1a13aba215d9f45bcc9de8138",
+      "old_path": "/workspace/scratch/a886fd56dd2f/integration/body_early_middle_visual/review_round1/main_phys_1006.png",
+      "old_png_sha256": "4b535fe37aa4d4fc2efad49c4eeba1daab1f7fe94f8e719afddc5665528c5cc1",
+      "image_dimensions_px": [
+        1489,
+        2105
+      ],
+      "same_dimensions": true,
+      "pixel_identical": false,
+      "different_pixel_count": 217447,
+      "difference_bbox_px": [
+        376,
+        315,
+        1236,
+        1556
+      ],
+      "topic": "§11分裂正合列、开图、向量丛与对偶同构",
+      "viewed_in_round1": true,
+      "current_round_actually_viewed": true,
+      "evidence_basis": "actual_visual_reinspection_of_final_pdf",
+      "visual_observation": "标号1已附在“分裂正合列”引导句，标号2附在“向量丛”引导句；原公式后单独一行的标号2消失。正合列、Hom向量丛、底部对偶同构和三条脚注均完整。",
+      "observation_source_round": 2,
+      "clipping_seen": false,
+      "text_footnote_collision_seen": false,
+      "formula_overflow_seen": false,
+      "text_outside_physical_page_count": 0
+    },
+    {
+      "physical_page": 1007,
+      "printed_page_label": "987",
+      "path": "/workspace/scratch/a886fd56dd2f/integration/body_early_middle_visual/main_phys_1007.png",
+      "png_sha256": "d6ad86a6ef265a253cd3df21da2f643e36d73a2533b6407e18f24f4a2368e01c",
+      "old_path": "/workspace/scratch/a886fd56dd2f/integration/body_early_middle_visual/review_round1/main_phys_1007.png",
+      "old_png_sha256": "d6ad86a6ef265a253cd3df21da2f643e36d73a2533b6407e18f24f4a2368e01c",
+      "image_dimensions_px": [
+        1489,
+        2105
+      ],
+      "same_dimensions": true,
+      "pixel_identical": true,
+      "different_pixel_count": 0,
+      "difference_bbox_px": null,
+      "topic": "§11对偶维数、包含关系、变秩不交并与节末",
+      "viewed_in_round1": true,
+      "current_round_actually_viewed": false,
+      "evidence_basis": "pixel_identical_to_round1_previously_viewed_page",
+      "visual_observation": "r−m−2公式、P(G′)⊂P(G)和不交并的大算符清晰，五条注释完整；全节结尾可见。",
+      "observation_source_round": 1,
+      "clipping_seen": false,
+      "text_footnote_collision_seen": false,
+      "formula_overflow_seen": false,
+      "text_outside_physical_page_count": 0
+    },
+    {
+      "physical_page": 1015,
+      "printed_page_label": "995",
+      "path": "/workspace/scratch/a886fd56dd2f/integration/body_early_middle_visual/main_phys_1015.png",
+      "png_sha256": "d477f6989f327bf14c993ca480c0ad62277484309d44644fc66038b6a8e72994",
+      "old_path": "/workspace/scratch/a886fd56dd2f/integration/body_early_middle_visual/review_round1/main_phys_1015.png",
+      "old_png_sha256": "9169beb7179a11ac312184e8dcd46fa61b67f520602978d1d1b15dd9ce75375b",
+      "image_dimensions_px": [
+        1489,
+        2105
+      ],
+      "same_dimensions": true,
+      "pixel_identical": false,
+      "different_pixel_count": 329122,
+      "difference_bbox_px": [
+        249,
+        316,
+        1110,
+        1805
+      ],
+      "topic": "§12退化层条件及长维数公式",
+      "viewed_in_round1": true,
+      "current_round_actually_viewed": true,
+      "evidence_basis": "actual_visual_reinspection_of_final_pdf",
+      "visual_observation": "正文上移入V″的定义；dim Grass^m(P)−dim V^(k)=(k−1)(n−m)+k²及非空范围仍完整处于版心。五条脚注含长D17-M034可读；正文下接下一页，没有裁切。",
+      "observation_source_round": 2,
+      "clipping_seen": false,
+      "text_footnote_collision_seen": false,
+      "formula_overflow_seen": false,
+      "text_outside_physical_page_count": 0
+    },
+    {
+      "physical_page": 1016,
+      "printed_page_label": "996",
+      "path": "/workspace/scratch/a886fd56dd2f/integration/body_early_middle_visual/main_phys_1016.png",
+      "png_sha256": "93a666cb8581b21f58ba3c651fbed385939d11b1aa9ba5ddb93918a7c5219d0e",
+      "old_path": "/workspace/scratch/a886fd56dd2f/integration/body_early_middle_visual/review_round1/main_phys_1016.png",
+      "old_png_sha256": "bc0f911f2a58094e35e4840eca632e3ffcf13cf998b07b5c7ff1b22145294436",
+      "image_dimensions_px": [
+        1489,
+        2105
+      ],
+      "same_dimensions": true,
+      "pixel_identical": false,
+      "different_pixel_count": 298533,
+      "difference_bbox_px": [
+        376,
+        315,
+        1236,
+        1805
+      ],
+      "topic": "§12长公式后的退化层讨论接续",
+      "viewed_in_round1": true,
+      "current_round_actually_viewed": true,
+      "evidence_basis": "actual_visual_reinspection_of_final_pdf",
+      "visual_observation": "承接上页k=2讨论；V″∪V²、V′\\V″→Grass^m的撇号、指数与箭头清晰。四条脚注及正文均未越界；末段在下一页继续，本记录不把页尾换页当作缺文。",
+      "observation_source_round": 2,
+      "clipping_seen": false,
+      "text_footnote_collision_seen": false,
+      "formula_overflow_seen": false,
+      "text_outside_physical_page_count": 0
+    },
+    {
+      "physical_page": 1019,
+      "printed_page_label": "999",
+      "path": "/workspace/scratch/a886fd56dd2f/integration/body_early_middle_visual/main_phys_1019.png",
+      "png_sha256": "971158db34f668b622823a9c0654497706adacaa2aa99ea1710e110626c9d2df",
+      "old_path": "/workspace/scratch/a886fd56dd2f/integration/body_early_middle_visual/review_round1/main_phys_1019.png",
+      "old_png_sha256": "0924bb5be005bbb9a715f2d94de1345526b2831c74d689c9626cf1ccd9bf377a",
+      "image_dimensions_px": [
+        1489,
+        2105
+      ],
+      "same_dimensions": true,
+      "pixel_identical": false,
+      "different_pixel_count": 343420,
+      "difference_bbox_px": [
+        249,
+        315,
+        1109,
+        1805
+      ],
+      "topic": "13.3引理引入与陈述前部",
+      "viewed_in_round1": true,
+      "current_round_actually_viewed": true,
+      "evidence_basis": "actual_visual_reinspection_of_final_pdf",
+      "visual_observation": "13.3引理现从本页下部开始并续至1020页；标题与正文未碰撞，七条脚注完整，页底无孤立注标或被裁切文字。",
+      "observation_source_round": 2,
+      "clipping_seen": false,
+      "text_footnote_collision_seen": false,
+      "formula_overflow_seen": false,
+      "text_outside_physical_page_count": 0
+    },
+    {
+      "physical_page": 1020,
+      "printed_page_label": "1000",
+      "path": "/workspace/scratch/a886fd56dd2f/integration/body_early_middle_visual/main_phys_1020.png",
+      "png_sha256": "a428a0a578d741181fd88f838f7d414364fade1949bca88f4fea16d4cb6ce6a1",
+      "old_path": "/workspace/scratch/a886fd56dd2f/integration/body_early_middle_visual/review_round1/main_phys_1020.png",
+      "old_png_sha256": "ffa552fe061a8c27274af5358f60d3ae5c7a897eca32c7e45bc1b485e9ec9d8a",
+      "image_dimensions_px": [
+        1489,
+        2105
+      ],
+      "same_dimensions": true,
+      "pixel_identical": false,
+      "different_pixel_count": 300114,
+      "difference_bbox_px": [
+        376,
+        315,
+        1237,
+        1805
+      ],
+      "topic": "13.3陈述后部、(a)—(c)与构造",
+      "viewed_in_round1": true,
+      "current_round_actually_viewed": true,
+      "evidence_basis": "actual_visual_reinspection_of_final_pdf",
+      "visual_observation": "13.3(a)—(c)已排到本页，原页首单独的注标1不再存在。新标号1附陈述引导句末，标号2附(c)末；列表、X′显示公式及六条脚注均清晰，无正文/脚注碰撞。",
+      "observation_source_round": 2,
+      "clipping_seen": false,
+      "text_footnote_collision_seen": false,
+      "formula_overflow_seen": false,
+      "text_outside_physical_page_count": 0
+    },
+    {
+      "physical_page": 1021,
+      "printed_page_label": "1001",
+      "path": "/workspace/scratch/a886fd56dd2f/integration/body_early_middle_visual/main_phys_1021.png",
+      "png_sha256": "b207521383f9bec8a99ffc8a3a683e8e18aba3c66c30b63a3358a6f7a5990586",
+      "old_path": "/workspace/scratch/a886fd56dd2f/integration/body_early_middle_visual/review_round1/main_phys_1021.png",
+      "old_png_sha256": "72dcf8bfa801db897d270f62c2e31f8e342ab8cd4109a2882b225ea10f2524ec",
+      "image_dimensions_px": [
+        1489,
+        2105
+      ],
+      "same_dimensions": true,
+      "pixel_identical": false,
+      "different_pixel_count": 329244,
+      "difference_bbox_px": [
+        249,
+        316,
+        1109,
+        1805
+      ],
+      "topic": "13.3开邻域构造与证明开端",
+      "viewed_in_round1": true,
+      "current_round_actually_viewed": true,
+      "evidence_basis": "actual_visual_reinspection_of_final_pdf",
+      "visual_observation": "U=X′\\Z′、X′′的长公式及逆像同构完整；正文顺接1020页，五条脚注在下方清楚分隔，无越界。",
+      "observation_source_round": 2,
+      "clipping_seen": false,
+      "text_footnote_collision_seen": false,
+      "formula_overflow_seen": false,
+      "text_outside_physical_page_count": 0
+    },
+    {
+      "physical_page": 1022,
+      "printed_page_label": "1002",
+      "path": "/workspace/scratch/a886fd56dd2f/integration/body_early_middle_visual/main_phys_1022.png",
+      "png_sha256": "7f51a07d13ae8af3576b3d380af5a2ee4a9ed0394cf8044ef4118fc8d21e988b",
+      "old_path": "/workspace/scratch/a886fd56dd2f/integration/body_early_middle_visual/review_round1/main_phys_1022.png",
+      "old_png_sha256": "8e84213d8938964bc20d2cf9aea13a2cb0c6129dd68193fd5b29a68f3fa3c839",
+      "image_dimensions_px": [
+        1489,
+        2105
+      ],
+      "same_dimensions": true,
+      "pixel_identical": false,
+      "different_pixel_count": 382411,
+      "difference_bbox_px": [
+        376,
+        315,
+        1237,
+        1805
+      ],
+      "topic": "13.3一般线性截面的光滑性与归纳段",
+      "viewed_in_round1": true,
+      "current_round_actually_viewed": true,
+      "evidence_basis": "actual_visual_reinspection_of_final_pdf",
+      "visual_observation": "一般纤维下标、余维不等式和七条长脚注可读；D17-M065现在本页完整排出。页面上下均未见裁切，正文续到1023页。",
+      "observation_source_round": 2,
+      "clipping_seen": false,
+      "text_footnote_collision_seen": false,
+      "formula_overflow_seen": false,
+      "text_outside_physical_page_count": 0
+    },
+    {
+      "physical_page": 1023,
+      "printed_page_label": "1003",
+      "path": "/workspace/scratch/a886fd56dd2f/integration/body_early_middle_visual/main_phys_1023.png",
+      "png_sha256": "f04cb45ec3e84b906c630c04749e0f8ebf48b0bf2cc128971735f7808cfa87a2",
+      "old_path": "/workspace/scratch/a886fd56dd2f/integration/body_early_middle_visual/review_round1/main_phys_1023.png",
+      "old_png_sha256": "621f7b4194b2a3e3c835f7cadde0b8864758b715ece55691b767d968c3a5b29e",
+      "image_dimensions_px": [
+        1489,
+        2105
+      ],
+      "same_dimensions": true,
+      "pixel_identical": false,
+      "different_pixel_count": 385339,
+      "difference_bbox_px": [
+        249,
+        315,
+        1112,
+        1806
+      ],
+      "topic": "13.3证明末段与长脚注",
+      "viewed_in_round1": true,
+      "current_round_actually_viewed": true,
+      "evidence_basis": "actual_visual_reinspection_of_final_pdf",
+      "visual_observation": "承接上页一般点处的归纳段，再到codim T≥2及codim T=1两种情形；正文与密集脚注正常分隔。D17-M077脚注从本页末续到1024页，未见字符覆盖或底部裁切。",
+      "observation_source_round": 2,
+      "clipping_seen": false,
+      "text_footnote_collision_seen": false,
+      "formula_overflow_seen": false,
+      "text_outside_physical_page_count": 0
+    },
+    {
+      "physical_page": 1024,
+      "printed_page_label": "1004",
+      "path": "/workspace/scratch/a886fd56dd2f/integration/body_early_middle_visual/main_phys_1024.png",
+      "png_sha256": "6ea62b518c681f3afd639b492313179eac1a57146496d4c2b6024fb87d788748",
+      "old_path": "/workspace/scratch/a886fd56dd2f/integration/body_early_middle_visual/review_round1/main_phys_1024.png",
+      "old_png_sha256": "d29c539694d3bb18f481418944732bc8d968747e32a05587169e61cf347e3aff",
+      "image_dimensions_px": [
+        1489,
+        2105
+      ],
+      "same_dimensions": true,
+      "pixel_identical": false,
+      "different_pixel_count": 360912,
+      "difference_bbox_px": [
+        376,
+        316,
+        1239,
+        1805
+      ],
+      "topic": "13.3附记至13.4(a)—(c)开端",
+      "viewed_in_round1": true,
+      "current_round_actually_viewed": true,
+      "evidence_basis": "actual_visual_reinspection_of_final_pdf",
+      "visual_observation": "13.3附记、13.4标题及(a)—(c)开端清晰；页脚先接上页D17-M077的尾段，再列本页注释。英文长引文在版心内，无脚注与正文碰撞。",
+      "observation_source_round": 2,
+      "clipping_seen": false,
+      "text_footnote_collision_seen": false,
+      "formula_overflow_seen": false,
+      "text_outside_physical_page_count": 0
+    },
+    {
+      "physical_page": 1025,
+      "printed_page_label": "1005",
+      "path": "/workspace/scratch/a886fd56dd2f/integration/body_early_middle_visual/main_phys_1025.png",
+      "png_sha256": "afe647b345822437caebd3a77d4e627ff91cc5f2e4b3ecf1f077804975fd96c1",
+      "old_path": "/workspace/scratch/a886fd56dd2f/integration/body_early_middle_visual/review_round1/main_phys_1025.png",
+      "old_png_sha256": "90c6d05a7feb0cb99dcefe3b43c03828f721fc37d6b0f755bc1f92be9cd26043",
+      "image_dimensions_px": [
+        1489,
+        2105
+      ],
+      "same_dimensions": true,
+      "pixel_identical": false,
+      "different_pixel_count": 334456,
+      "difference_bbox_px": [
+        249,
+        315,
+        1109,
+        1805
+      ],
+      "topic": "13.4(c)续文及(d)开端",
+      "viewed_in_round1": true,
+      "current_round_actually_viewed": true,
+      "evidence_basis": "actual_visual_reinspection_of_final_pdf",
+      "visual_observation": "13.4(c)的线性子簇、(d)的V→U公式与七条脚注清晰；相邻脚注标号1、2可分辨。底部没有裁切，(d)续文及(e)已流到后页，不声称本页含13.4全部末段。",
+      "observation_source_round": 2,
+      "clipping_seen": false,
+      "text_footnote_collision_seen": false,
+      "formula_overflow_seen": false,
+      "text_outside_physical_page_count": 0
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+\documentclass[openany,fontset=fandol]{ctexbook}
+\usepackage{amsmath,amssymb}
+\usepackage[unicode,hidelinks]{hyperref}
+\setlength{\emergencystretch}{2em}
+\newcommand{\Oa}{\mathcal O}
+\begin{document}
+\title{代数几何基础第五卷预备笔记\\非超奇异点与两条正合列}
+\author{据英译编辑稿翻译，参校法文扫描}
+\date{2026年11月19日}
+\maketitle
+\chapter*{范围与接合状态}
+本批从英译底本第67页“The non-supersingular points are therefore exactly the ones”起，完整译出交模说明及随后的两条正合列；对应法文扫描第102页。本批止于第二条正合列，下一段为“It is necessary to summarize the whole situation in a recapitulating proposition”。
+
+这是接21:00批次的独立增补，尚未并入第十七版主稿。此前关于整体符号的未定约定继续保留。本批不把校勘推断替换进原文公式；原文与译注分列。
+\chapter*{非超奇异点（续）}
+因此，非超奇异点恰好是使
+\[
+W_{X/Y}^{-2}\otimes\Oa_{V'}\longrightarrow\Oa_{V'}
+\]
+成为同构的那些点。在这些点处，因子$\Oa_{V'}$便恰好可以与
+$\mathcal P^1_{X/Y}\otimes\Oa_{V'}$及
+$\Omega^1_{Y/S}\otimes\Oa_{V'}$在
+$\Omega^1_{X/S}\otimes\Oa_{V'}$中的交相认同。
+于是，在$V'$中由非超奇异点构成的开子集上，有正合列
+\[
+0\longrightarrow\Oa_{V'}\longrightarrow
+\Omega^1_{Y/S}\times\Oa_{V'}\longrightarrow
+\Omega^1_{V'/s}\longrightarrow0;
+\]
+因而还有正合列
+\[
+0\longrightarrow\Oa_{V'}\longrightarrow
+\Omega^1_{X/S}\otimes\Oa_{V'}\longrightarrow
+(\Omega^1_{X/Y}+\Omega^1_{Y/S})\otimes\Oa_{V'}
+\longrightarrow0.
+\]
+\chapter*{译校说明（非原文）}
+\paragraph{符号与法文核对。}
+上述显示式保留英译第67页的$W$、$\times$、小写$s$及加号；法文扫描第102页对应处分别可读为$\omega$、$\otimes$及大写$S$。结合上文，应理解为线丛$\omega_{X/Y}^{-2}|_{V'}$的同态及限制后的微分模。这里来自$Y$的模先拉回，再限制。
+
+交模句的$\mathcal P^1_{X/Y}$在英译与法文扫描该句中均未见对偶标记；但前文设定为$P=(\mathcal P^1_{X/Y})^\vee|_{V'}$，且法文第102页首承接句明确带对偶记号。交模分析应使用前文的$P$，不能不加说明地将无对偶的主部模视为环境模的子模。
+
+\paragraph{第二条正合列的秩问题。}
+法文扫描第102页第二条正合列的目标同样写作
+$(\Omega^1_{X/Y}+\Omega^1_{Y/S})\otimes\Oa_{V'}$，所以这里不是仅凭英译版式猜测的疑点。若把加号解释为未经商的两个微分模的外直和，设$X/Y$、$Y/S$的相对维数分别为$d,m$，则中项秩为$d+m$，左端核秩为$1$，目标却仍为$d+m$，不可能正合。
+
+\paragraph{按前图得到的条件性解释。}
+令$U$为非超奇异开集，取
+\[
+E=\Omega^1_{X/S}|_U,\quad
+P=(\mathcal P^1_{X/Y})^\vee|_U,\quad
+Q=\Omega^1_{Y/S}|_U.
+\]
+按照前图的嵌入与商映射，在$U$上共同线
+$K_0=P\cap Q\simeq\Oa_U$，且$P+Q=E$。因此自然映射
+\[
+(P/K_0)\oplus(Q/K_0)\longrightarrow E/K_0,
+\qquad(\bar p,\bar q)\longmapsto\overline{p+q}
+\]
+为同构：和条件给满射；若$p+q\in K_0$，则$p\in P\cap Q=K_0$，进而$q\in K_0$，故核为零。
+
+又由前图的商模辨认，
+\[
+P/K_0\simeq E/Q\simeq\Omega^1_{X/Y}|_U,
+\qquad
+Q/K_0\simeq E/P\simeq\Omega^1_{V'/S}|_U.
+\]
+所以在这些条件下，类型和秩一致的正合列为
+\[
+0\longrightarrow\Oa_U\longrightarrow E\longrightarrow
+\Omega^1_{X/Y}|_U\oplus\Omega^1_{V'/S}|_U\longrightarrow0.
+\]
+两个右侧因子的秩分别为$d$和$m-1$。必须先将$Q$商去共同线；不能直接把原有的$\Omega^1_{Y/S}$拿来相加。以上是基于前图和和、交条件的校勘推断，并非法文原文已经写出的订正式，故未用它替换译文。
+\end{document}

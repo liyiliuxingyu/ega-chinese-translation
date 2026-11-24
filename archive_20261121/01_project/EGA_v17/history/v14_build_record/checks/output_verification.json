@@ -1,0 +1,62 @@
+{
+  "renderer": "PyMuPDF 1.26.7",
+  "dpi": 72,
+  "pairs": {
+    "book": {
+      "pages_main": 1042,
+      "pages_single": 1042,
+      "text_mismatch_pages": [],
+      "pixel_mismatch_pages": [],
+      "page_size_mismatch_pages": [],
+      "all_text_equal": true,
+      "all_pixels_equal": true
+    },
+    "report": {
+      "pages_main": 231,
+      "pages_single": 231,
+      "text_mismatch_pages": [],
+      "pixel_mismatch_pages": [],
+      "page_size_mismatch_pages": [],
+      "all_text_equal": true,
+      "all_pixels_equal": true
+    }
+  },
+  "logs": {
+    "main.pdf": {
+      "latex_errors": 0,
+      "missing_chars": 0,
+      "undefined_references": 0,
+      "overfull_boxes": 0,
+      "underfull_boxes": 47,
+      "font_warnings": 4,
+      "hyperref_warnings": 0
+    },
+    "single_build/book_single.pdf": {
+      "latex_errors": 0,
+      "missing_chars": 0,
+      "undefined_references": 0,
+      "overfull_boxes": 0,
+      "underfull_boxes": 47,
+      "font_warnings": 4,
+      "hyperref_warnings": 0
+    },
+    "report.pdf": {
+      "latex_errors": 0,
+      "missing_chars": 0,
+      "undefined_references": 0,
+      "overfull_boxes": 0,
+      "underfull_boxes": 42,
+      "font_warnings": 4,
+      "hyperref_warnings": 14
+    },
+    "single_build/audit_single.pdf": {
+      "latex_errors": 0,
+      "missing_chars": 0,
+      "undefined_references": 0,
+      "overfull_boxes": 0,
+      "underfull_boxes": 42,
+      "font_warnings": 4,
+      "hyperref_warnings": 14
+    }
+  }
+}

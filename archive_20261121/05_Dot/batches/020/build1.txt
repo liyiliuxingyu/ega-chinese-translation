@@ -1,0 +1,102 @@
+This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2025/dev/Debian) (preloaded format=xelatex)
+ restricted \write18 enabled.
+entering extended mode
+(./EGA第五卷_12节纤维结构_校订续译.tex
+LaTeX2e <2026-11-01>
+L3 programming layer <2026-09-09>
+(/workspace/scratch/caf5cdb69fd8/ega09/texmf/tex/latex/ctex/ctexbook.cls
+(/workspace/scratch/caf5cdb69fd8/ega09/texmf/tex/latex/ctex/config/ctexbackend.
+cfg) (/workspace/scratch/caf5cdb69fd8/ega09/texmf/tex/latex/l3kernel/expl3.sty
+(/workspace/scratch/caf5cdb69fd8/ega09/texmf/tex/latex/l3kernel/l3backend-xetex
+.def))
+Document Class: ctexbook 2026/08/11 v2.6.5 Chinese adapter for class book (CTEX
+)
+(/workspace/scratch/caf5cdb69fd8/ega09/texmf/tex/latex/ctex/ctexhook.sty)
+(/workspace/scratch/caf5cdb69fd8/ega09/texmf/tex/latex/ctex/ctexpatch.sty)
+(/workspace/scratch/caf5cdb69fd8/ega09/texmf/tex/latex/base/fix-cm.sty
+(/workspace/scratch/caf5cdb69fd8/ega09/texmf/tex/latex/base/ts1enc.def))
+(/workspace/scratch/caf5cdb69fd8/ega09/texmf/tex/latex/ctex/config/ctexopts.cfg
+) (/workspace/scratch/caf5cdb69fd8/ega09/texmf/tex/latex/base/book.cls
+Document Class: book 2026-06-04 v1.4n Standard LaTeX document class
+(/workspace/scratch/caf5cdb69fd8/ega09/texmf/tex/latex/base/bk10.clo))
+(/workspace/scratch/caf5cdb69fd8/ega09/texmf/tex/latex/ctex/engine/ctex-engine-
+xetex.def
+(/workspace/scratch/caf5cdb69fd8/ega09/texmf/tex/xelatex/xecjk/xeCJK.sty
+(/workspace/scratch/caf5cdb69fd8/ega09/texmf/tex/latex/l3packages/xtemplate/xte
+mplate.sty)
+(/workspace/scratch/caf5cdb69fd8/ega09/texmf/tex/latex/fontspec/fontspec.sty
+(/workspace/scratch/caf5cdb69fd8/ega09/texmf/tex/latex/fontspec/fontspec-xetex.
+sty (/workspace/scratch/caf5cdb69fd8/ega09/texmf/tex/latex/base/fontenc.sty)
+(/workspace/scratch/caf5cdb69fd8/ega09/texmf/tex/latex/fontspec/fontspec.cfg)))
+(/workspace/scratch/caf5cdb69fd8/ega09/texmf/tex/xelatex/xecjk/xeCJK.cfg)))
+(/workspace/scratch/caf5cdb69fd8/ega09/texmf/tex/latex/zhnumber/zhnumber.sty
+(/workspace/scratch/caf5cdb69fd8/ega09/texmf/tex/latex/zhnumber/zhnumber-utf8.c
+fg))
+(/workspace/scratch/caf5cdb69fd8/ega09/texmf/tex/latex/ctex/scheme/ctex-scheme-
+chinese-book.def
+(/workspace/scratch/caf5cdb69fd8/ega09/texmf/tex/latex/ctex/config/ctex-name-ut
+f8.cfg))
+(/workspace/scratch/caf5cdb69fd8/ega09/texmf/tex/latex/ctex/ctex-c5size.clo)
+(/workspace/scratch/caf5cdb69fd8/ega09/texmf/tex/latex/ctex/fontset/ctex-fontse
+t-fandol.def))
+(/workspace/scratch/caf5cdb69fd8/ega09/texmf/tex/latex/ctex/config/ctex.cfg)
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
+For additional information on amsmath, use the `?' option.
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amstext.sty
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amssymb.sty
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amsfonts.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/hyperref.sty
+(/usr/share/texlive/texmf-dist/tex/generic/iftex/iftex.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/kvsetkeys/kvsetkeys.sty)
+(/usr/share/texlive/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty)
+(/usr/share/texlive/texmf-dist/tex/generic/pdfescape/pdfescape.sty
+(/usr/share/texlive/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty)
+(/usr/share/texlive/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty
+(/usr/share/texlive/texmf-dist/tex/generic/infwarerr/infwarerr.sty)))
+(/usr/share/texlive/texmf-dist/tex/latex/hycolor/hycolor.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
+(/usr/share/texlive/texmf-dist/tex/latex/refcount/refcount.sty)
+(/usr/share/texlive/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
+(/usr/share/texlive/texmf-dist/tex/latex/kvoptions/kvoptions.sty))
+
+Package nameref Warning: The definition of \label has changed! 
+(nameref)                Check your packages! 
+(nameref)                Replacing it with the kernel definition on input line 
+149.
+
+) (/usr/share/texlive/texmf-dist/tex/latex/etoolbox/etoolbox.sty)
+(/usr/share/texlive/texmf-dist/tex/generic/stringenc/stringenc.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/pd1enc.def)
+(/usr/share/texlive/texmf-dist/tex/generic/intcalc/intcalc.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/puenc.def)
+(/usr/share/texlive/texmf-dist/tex/latex/url/url.sty)
+(/usr/share/texlive/texmf-dist/tex/generic/bitset/bitset.sty
+(/usr/share/texlive/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty))
+(/workspace/scratch/caf5cdb69fd8/ega09/texmf/tex/latex/base/atbegshi-ltx.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/hxetex.def
+(/usr/share/texlive/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
+(/workspace/scratch/caf5cdb69fd8/ega09/texmf/tex/latex/base/atveryend-ltx.sty)
+(/usr/share/texlive/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty)))
+No file EGA第五卷_12节纤维结构_校订续译.aux.
+
+Package hyperref Warning: Rerun to get /PageLabels entry.
+
+
+[1] (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd)
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd)
+[2]
+[3]
+[4] (./EGA第五卷_12节纤维结构_校订续译.aux)
+
+Package rerunfilecheck Warning: File `EGA第五卷_12节纤维结构_校订续译.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+ )
+(see the transcript file for additional information)
+Output written on EGA第五卷_12节纤维结构_校订续译.pdf (4 pages).
+Transcript written on EGA第五卷_12节纤维结构_校订续译.log.

@@ -1,0 +1,20 @@
+{
+  "date": "2026-11-15",
+  "branch": "EGA V independent supplement",
+  "completed": "printed p40 unnumbered If in 10.2 through complete Corollary 10.4 on p41, ending quadratic",
+  "next": "printed p41 section 11 Grassmanians heading and first paragraph",
+  "previous_project": "libfile_fde3_f-0898ad2df588819195e35dbf7bb10d8f_49ac57203c0c81918f3630f0324dcb35",
+  "not_merged": true,
+  "proof_independently_verified": false,
+  "source_sha256": "23a20ef32fd16a1bd623c0c08ac080d04fc94f248de12133b713a19d6b0330d9",
+  "unresolved": [
+    "8.8 missing",
+    "9.4 unstated and 9.5 fragment",
+    "10.1 closure ambiguity",
+    "10.2 regularity conventions",
+    "10.3 crossed-out status and ???",
+    "10.4 preceding dimension >=1 original intent unresolved; main text restricted to verified smooth curve case",
+    "Corollary10.4 existence and dependency9.2 not independently established"
+  ],
+  "original_conversation_observed": "Latest visible EGA edition11 through21.4.8; Library latest EGA independent10.3. No observed scope overlap. Actual original execution state unavailable."
+}

@@ -1,0 +1,69 @@
+\subsection{整体超 Tor 的结合性谱序列}
+\source{\texttt{EGAIII.2.pdf}，PDF第31--32页；原书第32--33页}
+\egap{6.8.1}
+采用（6.7.11）的假设与记号，特别地，各 $\mathscr P^{(i)}_\bullet$ 下有界。设给定指标集 $I$ 的一个分割 $(I_j)_{j\in J}$。要在整体超 Tor
+\[
+ \lTor_*^S\bigl((f_i)_{i\in I};(\mathscr P^{(i)}_\bullet)_{i\in I}\bigr)
+\]
+与各“部分”超 Tor
+\[
+ \mathscr A^{(j)}_\bullet
+ =\lTor_*^S\bigl((f_i)_{i\in I_j};(\mathscr P^{(i)}_\bullet)_{i\in I_j}\bigr)
+\]
+之间给出一种“结合性”关系。为简化书写，只考虑 $I=\{1,\ldots,m\}$，且分割由两个区间 $\{1,\ldots,r\}$ 与 $\{r+1,\ldots,m\}$ 组成的情形。
+
+\egas{6.8.2}{命题}
+存在典范的双正则谱函子，称为“结合性谱函子”，记作
+\[
+ {}^{(r)}\spE(f_1,\ldots,f_m;
+                  \mathscr P^{(1)}_\bullet,\ldots,\mathscr P^{(m)}_\bullet)
+\]
+（也可在复形记号中略去下标点），其终值为
+\[\lTor_*^S(f_1,\ldots,f_m;\mathscr P^{(1)}_\bullet,\ldots,\mathscr P^{(m)}_\bullet),\]且 $E^2$ 项为
+\[
+\begin{aligned}
+ {}^{(r)}\spE^2_{pq}
+ =\bigoplus_{q_1+q_2=q}\lTor_p^S\bigl(&
+   \lTor_{q_1}^S(f_1,\ldots,f_r;
+                      \mathscr P^{(1)}_\bullet,\ldots,\mathscr P^{(r)}_\bullet),\\
+ &\lTor_{q_2}^S(f_{r+1},\ldots,f_m;
+                      \mathscr P^{(r+1)}_\bullet,\ldots,\mathscr P^{(m)}_\bullet)\bigr).
+\end{aligned}
+\]
+在此，已将 $Y$ 典范地等同于 $Z^{(1)}\times_SZ^{(2)}$，其中
+\[
+ Z^{(1)}=Y^{(1)}\times_S\cdots\times_SY^{(r)},\qquad
+ Z^{(2)}=Y^{(r+1)}\times_S\cdots\times_SY^{(m)}.
+\]
+我们只处理 $S$ 和各 $Y^{(i)}$ 仿射的情形；用（6.7.1）、（6.7.2）的方法从这一特例过渡到一般情形，没有困难，论证细节留给读者。因此证明下面的推论即可。
+
+\egas{6.8.3}{推论}
+设 $A$ 为环，$S=\Spec A$，$X^{(i)}$（$1\leq i\leq m$）为拟紧 $S$-概形；对每个 $i$，设 $\mathscr P^{(i)}_\bullet$ 为下有界拟凝聚 $\OO_{X^{(i)}}$-模复形。存在一个典范双正则谱函子，其终值为
+\[
+ \bTor_*^S(X^{(1)},\ldots,X^{(m)};
+                  \mathscr P^{(1)}_\bullet,\ldots,\mathscr P^{(m)}_\bullet),
+\]
+且 $E^2$ 项为
+\[
+\begin{aligned}
+ {}^{(r)}E^2_{pq}=\bigoplus_{q_1+q_2=q}\Tor_p^A\bigl(&
+   \bTor_{q_1}^S(X^{(1)},\ldots,X^{(r)};
+                    \mathscr P^{(1)}_\bullet,\ldots,\mathscr P^{(r)}_\bullet),\\
+ &\bTor_{q_2}^S(X^{(r+1)},\ldots,X^{(m)};
+                    \mathscr P^{(r+1)}_\bullet,\ldots,\mathscr P^{(m)}_\bullet)\bigr).
+\end{aligned}
+\]
+\begin{proof}
+按（6.6.2）的定义，计算所讨论的超 Tor 时，对每个 $i$ 取 $X^{(i)}$ 的有限仿射开覆盖 $\mathfrak U^{(i)}$，考虑双复形
+$L^{(i)}_{\bullet\bullet}=C^\bullet(\mathfrak U^{(i)},\mathscr P^{(i)}_\bullet)$，并取它的投射 Cartan--Eilenberg 解消 $M^{(i)}_{\bullet\bullet\bullet}$，这里解消按（0，11.7.1）理解。形成这些三重复形的张量积
+\[
+ M_{\bullet\bullet\bullet}=\bigotimes_{i=1}^mM^{(i)}_{\bullet\bullet\bullet},
+\]
+然后取其同调。把 $M$ 看作单复形 $N_\bullet$，它是下列两个单复形的张量积：
+\[
+ N'_\bullet=\bigotimes_{i=1}^rM^{(i)}_{\bullet\bullet\bullet},\qquad
+ N''_\bullet=\bigotimes_{i=r+1}^mM^{(i)}_{\bullet\bullet\bullet};
+\]
+其中各单复形按相应总次数之和分次。$N'_\bullet,N''_\bullet$ 中各 $A$-模均投射，故（6.5.9）给出
+$H_*(M)=\Tor_*^A(N'_\bullet,N''_\bullet)$。所求谱序列就是将（6.3.2.2）用于 $N'_\bullet,N''_\bullet$；上述构造用于两个部分乘积时，给出这两个复形的同调模的所需解释。最后，由于各 $\mathscr P^{(i)}_\bullet$ 下有界，各 $M^{(i)}$ 也下有界，因而 $N'_\bullet,N''_\bullet$ 下有界；所需的正则性由（6.3.2）得到。
+\end{proof}

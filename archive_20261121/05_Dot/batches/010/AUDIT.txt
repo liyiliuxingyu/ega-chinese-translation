@@ -1,0 +1,1 @@
+独立审校针对原稿第34页图像与译文。发现并已修正：定义Z和列举余维一分支两处g(Y sing)无闭包；第三处横线在Y sing内，记录为g(overline Y sing)，不移动至像外。独立审校其余未见实质漏译。维数1/d-1、non??? singular、末尾NB歧义均保留。审校不是对原命题的独立数学证明。最终PDF共4页，逐页图像复查，无裁切、缺字、重叠；编译日志无Overfull/Missing character/undefined告警。

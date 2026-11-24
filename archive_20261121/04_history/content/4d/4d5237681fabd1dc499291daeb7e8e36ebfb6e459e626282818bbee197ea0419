@@ -1,0 +1,316 @@
+#!/usr/bin/env python3
+"""Read-only source-preservation audit; writes only JSON/Markdown audit outputs.
+
+This is a structural and byte-preservation check, not a mathematical review.
+It never invokes TeX or modifies an input source file.
+"""
+from __future__ import annotations
+
+import argparse
+from collections import Counter
+from datetime import datetime, timezone
+import hashlib
+import json
+from pathlib import Path
+import re
+import zipfile
+
+
+HERE = Path(__file__).resolve().parent
+WORKSPACE = HERE.parent
+SOURCE_DIRS = ("text", "continuations", "backmatter", "reports")
+INTENTIONAL_CONTENT_CHANGES = {
+    "text/v1_2.tex": "PS短篇与Dot第16节两批的同文校订；旧源码另存原样历史副本。",
+    "text/remaining.tex": "更新待译范围及第V卷真正接续点；该文件是范围说明。",
+}
+DRIVERS = {
+    "main.tex": "仅新增early、middle、late三段Dot正文输入。",
+    "report.tex": "新版报告说明、标题和五个新报告输入；旧报告及次序保持。",
+    "frontmatter.tex": "更新版本、来源、实际范围、接续点和核查边界。",
+    "preamble.tex": "只将标题及PDF元数据中的第十六版改为第十七版。",
+}
+DOT_INPUTS = [
+    "continuations/v_dot_early.tex",
+    "continuations/v_dot_middle.tex",
+    "continuations/v_dot_late.tex",
+]
+NEW_REPORT_INPUTS = [
+    "reports/seventeenth_integration.tex",
+    "reports/dot_early_audit.tex",
+    "reports/dot_middle_audit.tex",
+    "reports/dot_late_audit.tex",
+    "reports/short_collation_audit.tex",
+]
+HISTORY_TEXT_EXTS = {".tex", ".md", ".json", ".py", ".txt", ".sh"}
+COMPILE_EXTS = {".aux", ".log", ".out", ".toc", ".lof", ".lot", ".fls", ".fdb_latexmk", ".xdv", ".synctex", ".pdf"}
+
+
+def digest(path: Path) -> str:
+    h = hashlib.sha256()
+    with path.open("rb") as f:
+        for block in iter(lambda: f.read(1024 * 1024), b""):
+            h.update(block)
+    return h.hexdigest()
+
+
+def descriptor(path: Path) -> dict:
+    return {"bytes": path.stat().st_size, "sha256": digest(path)}
+
+
+def source_text(path: Path) -> str:
+    return re.sub(r"(?<!\\)%[^\n]*", "", path.read_text(encoding="utf-8"))
+
+
+def input_graph(root: Path, driver: str) -> dict:
+    expanded = []
+    problems = []
+
+    def walk(rel: str, stack: tuple[str, ...]) -> None:
+        if rel in stack:
+            problems.append({"kind": "cycle", "path": rel, "stack": list(stack)})
+            return
+        p = root / rel
+        if not p.exists():
+            problems.append({"kind": "missing_input", "path": rel})
+            return
+        text = source_text(p)
+        for m in re.finditer(r"\\(?:input|include)\s*\{([^}]+)\}", text):
+            child = m.group(1)
+            if not Path(child).suffix:
+                child += ".tex"
+            expanded.append({"path": child, "from": rel, "line": text.count("\n", 0, m.start()) + 1})
+            walk(child, stack + (rel,))
+
+    walk(driver, ())
+    order = [x["path"] for x in expanded]
+    return {
+        "expanded_input_count": len(expanded),
+        "order": order,
+        "references": expanded,
+        "duplicates": [p for p, n in Counter(order).items() if n > 1],
+        "problems": problems,
+    }
+
+
+def compare_file(old: Path, new: Path, relative: str) -> dict:
+    entry = {"path": relative, "baseline": descriptor(old), "current": descriptor(new) if new.exists() else None}
+    entry["status"] = "missing" if entry["current"] is None else ("same" if entry["baseline"]["sha256"] == entry["current"]["sha256"] else "changed")
+    return entry
+
+
+def main() -> int:
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("--baseline", type=Path, default=WORKSPACE / "unpacked/v16/EGA_内容顺序合订第十六版")
+    parser.add_argument("--current", type=Path, default=WORKSPACE / "work/EGA_v17")
+    parser.add_argument("--archive", type=Path, default=WORKSPACE / "recovered/代数几何基础_内容顺序合订第十六版_工程.zip")
+    parser.add_argument("--output-dir", type=Path, default=HERE)
+    args = parser.parse_args()
+    b, n = args.baseline.resolve(), args.current.resolve()
+    exceptions = []
+    comparisons = []
+    groups = []
+    for directory in SOURCE_DIRS:
+        items = []
+        for p in sorted((b / directory).glob("*.tex")):
+            rel = p.relative_to(b).as_posix()
+            entry = compare_file(p, n / rel, rel)
+            if entry["status"] == "changed" and rel in INTENTIONAL_CONTENT_CHANGES:
+                entry["intentional_reason"] = INTENTIONAL_CONTENT_CHANGES[rel]
+            elif entry["status"] != "same":
+                exceptions.append({"kind": "unexpected_old_source_change", "path": rel, "status": entry["status"]})
+            comparisons.append(entry)
+            items.append(entry)
+        groups.append({"directory": directory, "baseline_count": len(items), "same": sum(x["status"] == "same" for x in items), "intentional_changed": sum("intentional_reason" in x for x in items), "missing": sum(x["status"] == "missing" for x in items)})
+
+    driver_checks = []
+    for rel, reason in DRIVERS.items():
+        entry = compare_file(b / rel, n / rel, rel)
+        entry["intentional_reason"] = reason
+        if entry["status"] == "missing":
+            exceptions.append({"kind": "missing_driver", "path": rel})
+        driver_checks.append(entry)
+    preamble_title_only = (b / "preamble.tex").read_bytes().replace("第十六版".encode(), "第十七版".encode()) == (n / "preamble.tex").read_bytes()
+    if not preamble_title_only:
+        exceptions.append({"kind": "preamble_non_title_change"})
+    main_without_additions = (n / "main.tex").read_bytes()
+    for rel in DOT_INPUTS:
+        main_without_additions = main_without_additions.replace(("\\input{" + rel + "}\n").encode(), b"")
+    main_driver_only_additions = main_without_additions == (b / "main.tex").read_bytes()
+    if not main_driver_only_additions:
+        exceptions.append({"kind": "main_driver_changes_beyond_expected_inputs"})
+
+    histories = []
+    historical_images = []
+    for p in sorted((b / "history").rglob("*")):
+        if not p.is_file() or p.suffix in COMPILE_EXTS:
+            continue
+        rel = p.relative_to(b).as_posix()
+        entry = compare_file(p, n / rel, rel)
+        (histories if p.suffix in HISTORY_TEXT_EXTS else historical_images).append(entry)
+        if entry["status"] != "same":
+            exceptions.append({"kind": "historical_record_change", "path": rel, "status": entry["status"]})
+
+    short_archive = n / "history/v16_short_before_integration.tex"
+    short_preserved = short_archive.exists() and digest(short_archive) == digest(b / "text/v1_2.tex")
+    if not short_preserved:
+        exceptions.append({"kind": "short_original_not_preserved"})
+
+    archive_check = {"path": str(args.archive.resolve()), **descriptor(args.archive)}
+    archive_mismatches = []
+    with zipfile.ZipFile(args.archive) as z:
+        archive_check["entry_count"] = len(z.infolist())
+        archive_check["file_count"] = sum(not i.is_dir() for i in z.infolist())
+        archive_check["crc_first_bad_member"] = z.testzip()
+        archive_check["baseline_files_checked"] = 0
+        for info in z.infolist():
+            if info.is_dir():
+                continue
+            parts = Path(info.filename).parts
+            if parts[0] != b.name:
+                archive_mismatches.append({"path": info.filename, "reason": "unexpected_archive_root"})
+                continue
+            q = b.joinpath(*parts[1:])
+            archive_check["baseline_files_checked"] += 1
+            if not q.exists() or hashlib.sha256(z.read(info.filename)).hexdigest() != digest(q):
+                archive_mismatches.append({"path": info.filename, "reason": "missing_or_different_extracted_baseline"})
+    archive_check["baseline_mismatches"] = archive_mismatches
+    if archive_mismatches or archive_check["crc_first_bad_member"]:
+        exceptions.append({"kind": "baseline_archive_problem"})
+
+    graphs = {}
+    for driver in ("main.tex", "report.tex"):
+        old, new = input_graph(b, driver), input_graph(n, driver)
+        retained_order = [p for p in new["order"] if p in set(old["order"])]
+        added = [p for p in new["order"] if p not in set(old["order"])]
+        graphs[driver] = {"baseline": old, "current": new, "old_inputs_retained_in_order": retained_order == old["order"], "added_inputs": added}
+        if retained_order != old["order"] or new["problems"] or new["duplicates"]:
+            exceptions.append({"kind": "input_graph_problem", "driver": driver})
+    if graphs["main.tex"]["added_inputs"] != DOT_INPUTS:
+        exceptions.append({"kind": "unexpected_main_inputs"})
+    if graphs["report.tex"]["added_inputs"] != NEW_REPORT_INPUTS:
+        exceptions.append({"kind": "unexpected_report_inputs"})
+
+    main_order = graphs["main.tex"]["current"]["order"]
+    expected_v_order = ["text/v1_2.tex", "text/v5_01_02.tex", "text/v5_03_06.tex"] + DOT_INPUTS
+    actual_v_order = [p for p in main_order if p in expected_v_order]
+    section_entries = []
+    for rel in expected_v_order[1:]:
+        for match in re.finditer(r"\\egasection\{§?\s*(\d+)(?=\\|\s|\.)", source_text(n / rel)):
+            section_entries.append({"number": int(match.group(1)), "file": rel})
+    section_numbers = [e["number"] for e in section_entries]
+    short_occurrences = main_order.count("text/v1_2.tex")
+    section16_heading_files = [p for p in expected_v_order[1:] if re.search(r"\\egasection\{§?\s*16(?=\\|\s|\.)", source_text(n / p))]
+    v_check = {
+        "expected_order": expected_v_order,
+        "actual_order": actual_v_order,
+        "first_paper_section_numbers": section_numbers,
+        "section_entries": section_entries,
+        "short_section16_input_occurrences": short_occurrences,
+        "duplicate_section16_heading_files": section16_heading_files,
+        "result": actual_v_order == expected_v_order and section_numbers == list(range(1, 16)) and short_occurrences == 1 and not section16_heading_files,
+        "interpretation": "既有PS短篇作为第二篇第16节的同文只输入一次；后接第一篇§1—15，三段Dot增量为§7—11、§12—13、§14—15。拟定目录中的16不当作实际新章节计数。",
+    }
+    if not v_check["result"]:
+        exceptions.append({"kind": "v_order_or_duplicate_section16_problem"})
+
+    documentation_snapshot = []
+    for rel in ("PROGRESS.md", "README.md", "SOURCE_MAP.md"):
+        entry = compare_file(b / rel, n / rel, rel)
+        documentation_snapshot.append(entry)
+    body_math_items = [x for x in comparisons if x["path"].startswith(("text/", "continuations/")) and x["path"] != "text/remaining.tex"]
+    result = {
+        "audit_time_utc": datetime.now(timezone.utc).isoformat(timespec="seconds"),
+        "audit_type": "read-only byte and input-structure preservation audit; no TeX compilation or mathematical revalidation",
+        "baseline_root": str(b),
+        "current_root": str(n),
+        "pass": not exceptions,
+        "summary": {
+            "old_content_tex": len(comparisons),
+            "byte_identical_old_content_tex": sum(x["status"] == "same" for x in comparisons),
+            "intentional_content_changes": [x["path"] for x in comparisons if "intentional_reason" in x],
+            "old_mathematical_body_tex": len(body_math_items),
+            "byte_identical_old_mathematical_body_tex": sum(x["status"] == "same" for x in body_math_items),
+            "old_reports_tex": len([x for x in comparisons if x["path"].startswith("reports/")]),
+            "historical_text_code_records": len(histories),
+            "historical_image_records": len(historical_images),
+            "unexpected_exception_count": len(exceptions),
+        },
+        "groups": groups,
+        "old_content_files": comparisons,
+        "intentional_driver_changes": driver_checks,
+        "preamble_only_version_title_replacement": preamble_title_only,
+        "main_driver_only_expected_input_additions": main_driver_only_additions,
+        "old_history_text_code": histories,
+        "old_history_images": historical_images,
+        "short_original_history_copy": {"path": str(short_archive), "same_as_v16": short_preserved, **(descriptor(short_archive) if short_archive.exists() else {})},
+        "full_original_archive": archive_check,
+        "input_graphs": graphs,
+        "v_integration_structure": v_check,
+        "documentation_snapshot": documentation_snapshot,
+        "exceptions": exceptions,
+        "scope_limits": [
+            "这里只核验旧源文件及输入次序的保存，不断言所有旧数学陈述或证明已再次审定。",
+            "v1_2.tex的有意校订不是逐字保留；原稿完整文本由独立历史副本和原v16工程ZIP保存。",
+            "标题、前言和范围说明是有意更新；原版本可从已核对的原工程ZIP恢复。",
+            "排除当前编译生成的PDF、aux、log、toc等及single.tex/report_single.tex等派生合并文件；原ZIP的CRC检查仍覆盖完整归档。",
+            "本结果是当前文件快照；后续源码改变后应重跑此脚本。最终交付包是否包含全部原档，须在封包时另验。",
+        ],
+    }
+    args.output_dir.mkdir(parents=True, exist_ok=True)
+    (args.output_dir / "preservation_check.json").write_text(json.dumps(result, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    row_text = "\n".join(f"| `{g['directory']}` | {g['baseline_count']} | {g['same']} | {g['intentional_changed']} | {g['missing']} |" for g in groups)
+    doc_states = "、".join(f"`{x['path']}`（{'仍与v16相同，交付前需确认已更新' if x['status']=='same' else '已变更；本核验不审定其进度文字'}）" for x in documentation_snapshot)
+    md = f"""# 第十七版独立保留性核验
+
+核验时间：{result['audit_time_utc']}。结果：**{'通过本次源文件保存与输入结构核验' if result['pass'] else '存在异常，见下文及JSON'}**。
+
+这是只读检查，没有修改正文、调用编译器或重新审定全部历史数学内容。
+
+## 既有正文及报告
+
+| 目录 | v16文件数 | 逐字节相同 | 有意变更 | 缺失 |
+|---|---:|---:|---:|---:|
+{row_text}
+
+合计{len(comparisons)}个既有内容TeX文件，其中{result['summary']['byte_identical_old_content_tex']}个逐字节相同；意外丢失或意外修改为{len(exceptions)}项。纯正文数学源码（`text`与`continuations`，排除范围页）共{len(body_math_items)}个，其中{result['summary']['byte_identical_old_mathematical_body_tex']}个逐字节相同。既有18个报告源码全部保存，包括由`seventh_audit.tex`递归输入的`withdrawn_19312_history.tex`。
+
+## 有意变化与历史恢复
+
+- `text/v1_2.tex`：旧PS短篇与Dot第16节两批作同文校订，正确正文和原错脚注的迁移不是逐字相同。旧源码已完整保存为`history/v16_short_before_integration.tex`，其SHA-256与v16原稿相同：`{digest(b / 'text/v1_2.tex')}`。
+- `text/remaining.tex`：范围说明更新第一篇§15末及第二篇第66页交换图接续点。
+- `frontmatter.tex`：新版来源、进度与核查边界说明重写；不把此类说明页当作数学正文缺失。
+- `main.tex`：只增入三个Dot正文输入；全部旧输入保持原次序。
+- `report.tex`：新版报告说明与五个新增报告输入；全部旧报告保持原次序。
+- `preamble.tex`：程序确认仅将两处标题/元数据的“第十六版”改为“第十七版”，其他字节不变。
+
+旧`history`下{len(histories)}个文本/代码记录及{len(historical_images)}个历史图像全部逐字节保存。完整v16原工程ZIP实存，共{archive_check['entry_count']}条目、{archive_check['file_count']}个文件，CRC校验通过；解压基线的{archive_check['baseline_files_checked']}个文件均与原包对应项一致。归档SHA-256为`{archive_check['sha256']}`。该原包还保存旧封面、前言、范围页和驱动文件。此项证明原归档可恢复，不代表最终交付ZIP已经接受封包核验。
+
+## Dot接续顺序与第16节
+
+正文输入顺序为既有短篇、既有第一篇§§1—6，然后`v_dot_early.tex`、`v_dot_middle.tex`、`v_dot_late.tex`。三个增量分别承载§§7—11、§§12—13、§§14—15；扫描实际节标题得到连续序列1—15，各一次。旧PS短篇只输入一次，新三段没有另开重复第16节。原拟定目录里的第16项不被当作实际重复正文。
+
+递归输入图：正文由{graphs['main.tex']['baseline']['expanded_input_count']}个输入变为{graphs['main.tex']['current']['expanded_input_count']}个；报告由{graphs['report.tex']['baseline']['expanded_input_count']}个变为{graphs['report.tex']['current']['expanded_input_count']}个。全部旧输入仍保持次序，无重复输入、失效输入或循环。
+
+## 快照与使用限制
+
+交接说明文件快照：{doc_states}。这些状态可能在根任务收尾时继续变动，不能据此提前断言交付包已经完成。
+
+本次不评价全部历史数学证明，不重复计算翻译完成量，也未编译。当前PDF、aux、log、toc、派生single.tex及report_single.tex不作为逐字保存检查对象。对数值、脚注和有意改写的数学正确性，应阅读各新增核查报告；本报告只说明源文件保留和排印输入关系。
+
+## 复跑命令
+
+```bash
+python3 integration/check_preservation.py --baseline unpacked/v16/EGA_内容顺序合订第十六版 --current work/EGA_v17 --archive recovered/代数几何基础_内容顺序合订第十六版_工程.zip --output-dir integration
+```
+
+脚本只读取三个输入位置，输出本JSON与Markdown；如移动工程，可用四个参数指定新路径。退出码0表示本次结构核验通过，1表示异常；完整逐文件SHA及异常清单见`preservation_check.json`。
+"""
+    if exceptions:
+        md += "\n## 异常\n\n```json\n" + json.dumps(exceptions, ensure_ascii=False, indent=2) + "\n```\n"
+    (args.output_dir / "preservation_check.md").write_text(md, encoding="utf-8")
+    print(json.dumps({"pass": result["pass"], **result["summary"], "input_counts": {driver: [graphs[driver]["baseline"]["expanded_input_count"], graphs[driver]["current"]["expanded_input_count"]] for driver in graphs}, "exceptions": exceptions}, ensure_ascii=False))
+    return 0 if result["pass"] else 1
+
+
+if __name__ == "__main__":
+    raise SystemExit(main())

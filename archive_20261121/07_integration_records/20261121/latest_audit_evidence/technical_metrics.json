@@ -1,0 +1,164 @@
+{
+  "root": "/workspace/scratch/a886fd56dd2f/restored_20261121/latest/EGA_v17_V_supplement_III",
+  "expansion": {
+    "main.tex": {
+      "target": "single.tex",
+      "exact_expansion": true,
+      "remaining_input_or_include": false,
+      "external_graphics_input": false,
+      "characters": 1965051,
+      "sha256": "010e78cbce81b9ac116aa17cee0e23941c0a2fabf0d2ed99b5549e1a5e1af1f7"
+    },
+    "report.tex": {
+      "target": "report_single.tex",
+      "exact_expansion": true,
+      "remaining_input_or_include": false,
+      "external_graphics_input": false,
+      "characters": 216014,
+      "sha256": "ac955f2e3f33ab3e0dea2bfb63d37ef468b3d348e6524b28236f157be4ea3721"
+    }
+  },
+  "checksums": {
+    "entries": 752,
+    "duplicate_paths": 0,
+    "missing": [],
+    "hash_mismatch": [],
+    "unlisted": [
+      "SHA256SUMS.txt"
+    ]
+  },
+  "supplement_batch_provenance": [
+    {
+      "batch": 56,
+      "zip": "EGA第五卷_划去稿的增广定义_续译工程.zip",
+      "sha256": "a2b960054e3d3a6e776095d84e0a1a12260d8d47d928fe20b1538ccbedeff869",
+      "declared_hash_match": true
+    },
+    {
+      "batch": 57,
+      "zip": "EGA第五卷_划去稿命题8及引理_续译工程.zip",
+      "sha256": "8ae071d764a395acaeda87b7d66f60bee8744d7bec250fbf8f112e4c5cab0d61",
+      "declared_hash_match": true
+    },
+    {
+      "batch": 58,
+      "zip": "EGA第五卷_划去稿命题9_续译工程.zip",
+      "sha256": "93c4a69f03f64a53ed5ff83cc16669d7151e1262a811459f8ab183e5ad5f737b",
+      "declared_hash_match": true
+    },
+    {
+      "batch": 59,
+      "zip": "EGA第五卷_划去稿推论10_续译工程.zip",
+      "sha256": "3098e49de8039f71eff16bb099105a5fcbe53d9a3fe4255b233010e813a867bc",
+      "declared_hash_match": true
+    },
+    {
+      "batch": 60,
+      "zip": "EGA第五卷_奇异零点与外幂判别_续译工程.zip",
+      "sha256": "e236dfca3fa42189733863bbb8c0816b2857b28581b6ce85fbf143a0172af1f9",
+      "declared_hash_match": true
+    },
+    {
+      "batch": 61,
+      "zip": "EGA第五卷_二阶判别与恒秩引理_续译工程.zip",
+      "sha256": "017d9e9f51e602989dbed5ca039876b57012f67ec62401ef1824dba1a4d62910",
+      "declared_hash_match": true
+    },
+    {
+      "batch": 62,
+      "zip": "EGA第五卷_光滑塔与分歧概形_续译工程.zip",
+      "sha256": "53732703f0099ad4ce473e642160867949bac63f49193aae4f2cc71485b655af",
+      "declared_hash_match": true
+    },
+    {
+      "batch": 63,
+      "zip": "EGA第五卷_特征二与奇异术语_续译工程.zip",
+      "sha256": "13119ed6f9506b65238e1e11a6a2c899ff1a7c33a8ec5d0a1ef98b6321dfdb25",
+      "declared_hash_match": true
+    },
+    {
+      "batch": 64,
+      "zip": "EGA第五卷_切超曲面与勘误_续译工程.zip",
+      "sha256": "9386a9ccf9f690c8c3cbd1272cf3c9f9c8ce99303111cb61e479555f2e1fd0f1",
+      "declared_hash_match": true
+    },
+    {
+      "batch": 65,
+      "zip": "EGA第五卷_151光滑型与雅可比判据_续译工程.zip",
+      "sha256": "505ccb964b7fa38b8bd2fb3a66c95daa022caa6c085cc0be582aef7721b09cb3",
+      "declared_hash_match": true
+    },
+    {
+      "batch": 66,
+      "zip": "EGA第五卷_152初等增广与几何奇点_续译工程.zip",
+      "sha256": "7a773e1f2593e0e073777323109bd3f14c8dbb6b2efc1a61d5edb095485a7922",
+      "declared_hash_match": true
+    },
+    {
+      "batch": 67,
+      "zip": "EGA第五卷_153至156_初等奇点局部刻画_续译工程.zip",
+      "sha256": "b1ca34519d60039d0dc1d34d504396e7ee63f76f3371c398bbc8ef880ef83769",
+      "declared_hash_match": true
+    },
+    {
+      "batch": 68,
+      "zip": "EGA第五卷_157_初等奇点几何变式_续译工程.zip",
+      "sha256": "56b2cd5c99bcba70138e6d54fb87a420c5f8328e391fe7e5dcc18ede03635ee4",
+      "declared_hash_match": true
+    }
+  ],
+  "recorded_build_logs": [
+    {
+      "path": "checks/supplement-III-main.log.txt",
+      "sha256": "ea25fea8c04a4ce65e142e2b2a747f99be56ab4a796ec1afca042d34449b1490",
+      "output": [
+        "Output written on build_III/main/main.pdf (1158 pages)."
+      ],
+      "overfull": 0,
+      "underfull": 51,
+      "missing_character": 0,
+      "undefined_control_sequence": 0,
+      "undefined_ref_summary": 0,
+      "latex_errors": 0
+    },
+    {
+      "path": "checks/supplement-III-report.log.txt",
+      "sha256": "abca55fcd1c8c545bfa194487de6f8d0f785b857e7044d9d2023be709045fbfe",
+      "output": [
+        "Output written on build_III/report/report.pdf (287 pages)."
+      ],
+      "overfull": 0,
+      "underfull": 43,
+      "missing_character": 0,
+      "undefined_control_sequence": 0,
+      "undefined_ref_summary": 0,
+      "latex_errors": 0
+    },
+    {
+      "path": "checks/supplement-III-report_single.log.txt",
+      "sha256": "8d714c6654455257d78367b6810ad3a005c4dee91a81ae83db160eb0e46060eb",
+      "output": [
+        "Output written on build_III/report_single/report_single.pdf (287 pages)."
+      ],
+      "overfull": 0,
+      "underfull": 43,
+      "missing_character": 0,
+      "undefined_control_sequence": 0,
+      "undefined_ref_summary": 0,
+      "latex_errors": 0
+    },
+    {
+      "path": "checks/supplement-III-single.log.txt",
+      "sha256": "28714261f07ef0b8385d14dd334abf6e7cd7ac7f57003fb5ca4628b9f563d899",
+      "output": [
+        "Output written on build_III/single/single.pdf (1158 pages)."
+      ],
+      "overfull": 0,
+      "underfull": 51,
+      "missing_character": 0,
+      "undefined_control_sequence": 0,
+      "undefined_ref_summary": 0,
+      "latex_errors": 0
+    }
+  ]
+}

@@ -1,0 +1,110 @@
+\documentclass[openany,fontset=fandol]{ctexbook}
+\usepackage{amsmath,amssymb,amsthm,enumitem}
+\usepackage[unicode,hidelinks]{hyperref}
+\setlength{\emergencystretch}{2em}
+\raggedbottom
+\DeclareMathOperator{\Spec}{Spec}
+\DeclareMathOperator{\coprof}{coprof}
+\newcommand{\FF}{\mathcal F}
+\newcommand{\GG}{\mathcal G}
+\newcommand{\calP}{\mathcal P}
+\newcommand{\tagitem}[2]{\par\medskip\noindent\textbf{#1\quad #2}\enspace}
+\begin{document}
+\title{代数几何基础第五卷预备笔记\\法文覆盖审计：从泛截面到充分一般截面}
+\author{第92批\quad 法、英、中文三方校订}
+\date{2026年11月23日}
+\maketitle
+
+\section*{范围与接续}
+逐段校订法文扫描物理17页第20.4节标题至19页命题4.3证明末，
+对读英编稿物理13页下部至15页推论4.4前。
+第三辑合订本 \texttt{v5\_03\_06.tex} 已有对应译文；本批是待替换的校订稿，
+未改动1158页合订本。底本的手改、误排和删文以脚注记录。证明补充另列。
+
+\section*{20.4\quad 变动超平面截面的研究：“充分一般”的截面}
+\tagitem{4.1}{}
+回到第1节的一般情形：$S$ 是任意预概形。另假设 $X$ 在 $S$ 上有限表示。\footnote{法稿第17页实列“4.1”；英编稿只列第4节标题。下文参照第1节，$P$ 为原射影丛，$P^\vee$ 为超平面参数丛，$\FF$ 为 $X$ 上的模，$\GG$ 为其沿 $Y\to X$ 的逆像。为避免与原射影丛的符号相混，下文以 $\calP$ 表示原稿记作 $P$ 的性质。}
+
+一般说来，若 $\calP(Z,k)$ 是域 $k$ 上代数预概形 $Z$ 的一种“可构造”性质，那么使
+$\calP(Y_\xi,k(\xi))$ 成立的 $\xi\in P^\vee$ 组成可构造集。
+只须注意，$Y_\xi$ 是有限表示态射 $Y\to P^\vee$ 在 $\xi$ 处的纤维，再应用第9段。\footnote{英编稿在此注明指 EGA IV。这里要求选定的性质已知有相应的纤维可构造性，不是说有限表示本身会使任意条件的成立集合都可构造。对任意底 $S$ 这至少应按 EGA 的局部意义理解；以下用到泛点与闭点时，底均为域。}
+对于可构造性质 $\calP(Z,M,k)$ 也有类似说明，其中 $Z,k$ 同上，$M$ 是 $Z$ 上的凝聚模。若 $\FF$ 在 $X$ 上有限表示，则使
+$\calP(Y_\xi,\GG_\xi,k(\xi))$ 成立的 $\xi\in P^\vee$ 也组成可构造集。\footnote{法稿此处把“凝聚”划掉，手改成“有限表示”；所涉字母印迹重叠，不能可靠地硬判为单个 $F$ 或 $G$，正文依第1节的底模和逆像模关系写 $\FF$。法稿纤维公式的下标一贯为 $\xi$；英编稿将这一公式三处下标均写成 $\eta$，还写“$G$ 在 $X$ 上”，会把随参数变化的性质误写成固定泛纤维条件。}
+
+另一方面，当 $S=\Spec k$（$k$ 为域）时，前两节已在若干情形给出判据，使上述集合 $E$ 包含 $P^\vee$ 的泛点。\footnote{法稿打字作“在后两节”，但述及已推导的判据；证明见前面的第2、3节。英编稿也改作“前两节”。}
+由可构造性，$E$ 便包含一个非空开集。这就是从泛超平面截面的结论过渡到“充分一般”超平面截面的相应结论。\footnote{法稿第17页随后有一句“本节还将利用第12段给出 $E$ 为开集的判据”，已被划销；不收入正文。包含非空开集并不等于 $E$ 本身为开。}
+
+还要指出，若 $S=\Spec k$，也有逆向表述：泛超平面截面具有性质 $\calP$，当且仅当泛点 $\eta$ 的某一邻域内所有 $Y_\xi$ 都有这一性质。只对该邻域内在 $P^\vee$ 中为闭点的 $\xi$ 提出要求，也已足够。若 $k$ 代数闭，这就归结为考察 $k$-有理点，即 $X$ 本身的超平面截面，无须先扩张底域。这来自 $E$ 的可构造性以及 $P^\vee$ 为 Jacobson 概形。
+
+下面举出若干可应用上述讨论的特殊情形。
+
+\tagitem{命题}{4.2}
+设 $\FF$ 是 $X$ 上有限表示的模。设 $\calP$ 为域 $K$ 上代数预概形 $Z$ 的模 $M$ 的以下性质之一：
+\begin{enumerate}[label=(\roman*),nosep]
+\item $\coprof(M)\leq n$；
+\item $M$ 满足 $(S_k)$；
+\item $M$ 是 Cohen--Macaulay 模；
+\item $M$ 没有嵌入的关联素循环；
+\item $M$ 在 $K$ 上可分。
+\end{enumerate}
+令 $E$ 为使 $\GG_\xi$ 满足 $\calP$ 的 $\xi\in P^\vee$ 所成的集合。\footnote{法、英稿在命题开头都印 $G$，(b)却写 $F$；正文依第1节统一为 $X$ 上的 $\FF$ 与 $Y$ 上的 $\GG$。法稿定义 $E$ 的参数处确实少了对偶标记（(a)有该标记）；正文补为 $P^\vee$。法稿还划去一个较早的(a)和第(vi)项“$M$ 在 $K$ 上几何整”；其后另一项重度划销，不可靠转写。}
+\begin{enumerate}[label=(\alph*),nosep]
+\item $E$ 是 $P^\vee$ 的可构造子集。
+\item 假设 $S=\Spec k$，$k$ 为域，且 $\FF$ 满足 $\calP$。在(v)的情形，再假设 $k$ 的特征为零，或 $f:X\to P$ 非分歧。于是 $E$ 包含 $P^\vee$ 的一个稠密开子集。\footnote{“在(v)的情形”是法稿插写；打字“浸入”划掉，手改为“非分歧”。这是只在(v)增加的条件。}
+\end{enumerate}
+\begin{proof}
+(a)来自 $\calP$ 是可构造性质这一事实，见第9段。至于(b)，它由前面各节的相应结果得到。\footnote{法稿在证明的“前面两节”处划掉“两”、改为“前面各节”。不是要求补入一项新证明。}
+\end{proof}
+\noindent\textbf{对(b)的补记。}
+更一般地，设 $Z$ 为 $X$ 上 $\FF$ 不满足 $\calP$ 的点集，只要求 $f(Z)$ 有限，即 $\dim\overline{f(Z)}\leq0$。\footnote{这里的“有限”按第2节的坏点像判据理解；维数上界包括空集。补记放宽的是“$\FF$ 处处满足 $\calP$”，并不删除(v)的特征／非分歧条件。}
+
+\tagitem{命题}{4.3}
+设 $\calP$ 为域 $K$ 上代数预概形 $Z$ 的以下性质之一：
+\begin{enumerate}[label=(\roman*),nosep]
+\item $Z$ 在 $K$ 上光滑；
+\item $Z$ 在 $K$ 上满足几何性质 $(R_k)$；
+\item $Z$ 在 $K$ 上可分；
+\item $Z$ 在 $K$ 上几何正规；
+\item $Z$ 在 $K$ 上几何整；
+\item $Z$ 在 $K$ 上几何不可约。
+\end{enumerate}
+令 $E$ 为使 $Y_\xi$ 满足 $\calP$ 的 $\xi\in P^\vee$ 所成的集合。
+\begin{enumerate}[label=(\alph*),nosep]
+\item $E$ 是 $P^\vee$ 的可构造子集。
+\item 假设 $S=\Spec k$，$k$ 为域。在(i)至(v)的情形，假设 $k$ 的特征为零\emph{或} $f:X\to P$ 非分歧；在(v)和(vi)的情形，另假设 $\dim\overline{f(X)}\geq2$。若 $X$ 满足 $\calP$，则 $E$ 包含 $P^\vee$ 的一个稠密开子集。\footnote{法稿先打出(v)几何不可约、(vi)几何整，后有调序记号；英编稿采用调序后的顺序。法稿连词明为“或”，并将“浸入”修订为“非分歧”。英编稿把“或”误排为“并且”；正文据法稿改正，与3.1、3.2的假设相配。维数条件不能用前面的析取来替代。}
+\end{enumerate}
+\begin{proof}
+同4.2。还可注意，在(i)至(iv)的情形，(b)中以 $f(Z)$ 有限代替 $X$ 处处满足 $\calP$ 即足够，其中 $Z$ 是 $X$ 上 $\calP$ 不成立的点集。\footnote{法稿这里的末项写为(iv)，英编稿作(v)。几何整包括全局不可约性，不能把它和前四项同列为逐点性质并套用这个坏点集合判据。}
+\end{proof}
+
+\section*{译校补证：充分一般的三个等价条件}
+设 $T=P^\vee$ 是域上的对偶射影空间，$\eta$ 是其泛点，$E\subseteq T$ 可构造。则
+\[
+\eta\in E
+\ \Longleftrightarrow\
+\text{$E$ 含有非空开集}
+\ \Longleftrightarrow\
+\text{某非空开集的所有闭点均在 $E$ 中}.
+\]
+证明：把 $E$ 写成有限个局部闭集的并。若其中一项含 $\eta$，该项的闭包就是 $T$，
+因而该项就是 $T$ 的非空开集。反之，$T$ 不可约，任何非空开集都含 $\eta$。
+最后，若非空开集 $U$ 的闭点都在 $E$ 中，而 $U\setminus E$ 非空，
+则后者作为可构造集含非空局部闭子集。由于 $T$ 是 Jacobson 概形，该局部闭子集
+含一个在 $T$ 中闭的点，且该点在 $U$ 中。这与假设矛盾，故 $U\subseteq E$。
+域代数闭时，有限型 $k$-概形的闭点的剩余域是 $k$，所以可用 $k$-有理点替换闭点。
+参看 \href{https://stacks.math.columbia.edu/tag/005K}{Stacks 005K}、
+\href{https://stacks.math.columbia.edu/tag/005X}{005X} 和
+\href{https://stacks.math.columbia.edu/tag/01T9}{01T9}。
+
+命题的逻辑是先利用泛截面定理得到 $\eta\in E$，再使用以上等价；并不是
+直接证明每一个超平面都能继承性质。特别地，4.3 的(v)对应3.2，
+(vi)对应3.1；只有(v)同时用到关于可分性的附加假设和像维数下界。
+
+\medskip
+\noindent\textbf{接续点。}
+法物理19页下部推论4.4起，对读英物理15页、法物理20页的作者更正。
+法稿预核已辨认原则上是“只有当 $f$ 拟有限时，原表述才适用”，
+不是英编稿所写的“若 $f$ 拟有限，原表述不适用”。
+此处只定续点与原字辨认，未完成4.4的校订或其证明。
+正式出版的 EGA IV.1 仍另由物理221页提要、223页定义（1.1.1）接续。
+\end{document}

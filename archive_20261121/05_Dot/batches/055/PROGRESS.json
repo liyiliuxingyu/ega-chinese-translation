@@ -1,0 +1,14 @@
+{
+  "date": "2026-11-19T13:00Z",
+  "scope": "底本62页Part II [Tr]、§16标题、引言、定义1、注2完整段落",
+  "next": "底本62页 Definition 3. Let X be a smooth prescheme over a field k",
+  "previous_zip": "libfile_fde3_f-4cf77f916a688191a524b9a96d85b2b3_49ac57203c0c81918f3630f0324dcb35",
+  "independent": true,
+  "merged_into_main": false,
+  "source_sha256": "23a20ef32fd16a1bd623c0c08ac080d04fc94f248de12133b713a19d6b0330d9",
+  "open_issues": [
+    "特征2二次型退化定义须核后文",
+    "底本Sym缺二次分次已标注校订",
+    "旧批次缺文与引文问题仍保留"
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "batch": 87,
+  "scope": "EGA V prenotes",
+  "completed_fr_physical": [150,153],
+  "fr_pages_meaning": "p. 150 translated to extent legible; p. 153 identified as a variant scan of p. 1 and collated with existing text",
+  "collation_fr_physical": [1,2],
+  "collation_en_physical": [2,3],
+  "remaining_uncertainties": ["p. 150 abbreviation cluster in §20", "p. 150 abbreviation between Diviseurs and Weil", "p. 150 reverse-oriented crossed text and identifiers", "p. 153 minor marginal traces"],
+  "full_french_page_content_audit_complete": false,
+  "all_EGA_volumes_complete": false,
+  "compiled_into_1158_page_baseline": false,
+  "next_EGA_V": "physical page-by-page inventory starting from IV.20 pp. 3–94, with overlap checks for existing bilingual sources and the IV.17.16 end pp. 170–171",
+  "formal_printed_EGA_IV_1": [221,223]
+}

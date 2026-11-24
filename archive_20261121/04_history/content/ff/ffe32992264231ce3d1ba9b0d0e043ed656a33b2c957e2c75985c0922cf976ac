@@ -1,0 +1,174 @@
+\subsection{\texorpdfstring{函子 $H_\bullet(P_\bullet\otimes_A M)$ 的正合性判据}{张量复形同调函子的正合性判据}}
+\source{第三卷第二部分，原印刷第53--57页}
+
+\egap{7.4.1}
+设 $A$ 为环（不必交换），$P_\bullet$ 为平坦右 $A$-模的复形。因每个函子 $M\mapsto P_k\otimes_A M$ 在 $\mathbf{Ab}_A$ 中正合，$\delta$-函子
+\begin{equation}
+ T_\bullet(M)=H_\bullet(P_\bullet\otimes_A M)\tag{7.4.1.1}
+\end{equation}
+为从 $\mathbf{Ab}_A$ 到 $\mathbf{Ab}$ 的同调函子；当 $A$ 交换时它显然 $A$-线性（7.1.2），且与归纳极限交换。
+
+当 $A$ 交换时，对任意 $A$-代数 $B$，同调函子 $T_\bullet^{(B)}$（7.3.8）由定义满足
+\begin{equation}
+ T_\bullet^{(B)}(N)=H_\bullet(P_\bullet\otimes_A N_{[\rho]}),
+ \tag{7.4.1.2}
+\end{equation}
+其中 $\rho:A\to B$ 给出 $B$ 的代数结构。又有
+\[
+ P_\bullet\otimes_A N_{[\rho]}
+ \simeq P_\bullet\otimes_A(B\otimes_B N)
+ \simeq(P_\bullet\otimes_A B)\otimes_B N,
+\]
+故对任意 $B$-模 $N$，
+\begin{equation}
+ T_\bullet^{(B)}(N)=H_\bullet(P'_\bullet\otimes_B N),
+ \qquad P'_\bullet=P_\bullet\otimes_A B,\tag{7.4.1.3}
+\end{equation}
+且 $P'_\bullet$ 由平坦 $B$-模组成（$0_{\mathrm I}$，6.2.1）。
+
+\egas{7.4.2}{命题}
+在（7.4.1）的一般条件下，给定整数 $p\in\mathbf Z$，下列性质等价：
+\begin{enumerate}[label=\alph*)]
+\item $T_p$ 左正合；等价地，$T_{p+1}$ 右正合。
+\item $Z'_p(P_\bullet)=\Coker(P_{p+1}\to P_p)$ 为平坦右 $A$-模。
+\item 存在平坦右 $A$-模复形 $P'_\bullet$，其微分 $d'_{p+1}:P'_{p+1}\to P'_p$ 为零，且同调函子 $H_\bullet(P_\bullet\otimes_A M)$ 与 $H_\bullet(P'_\bullet\otimes_A M)$ 同构。
+\end{enumerate}
+依定义，有关于 $M$ 函子性的正合列
+\[
+ 0\longrightarrow T_p(M)\longrightarrow Z'_p(P_\bullet\otimes M)
+ \longrightarrow P_{p-1}\otimes M.
+\]
+由张量积的右正合性，$Z'_p(P_\bullet\otimes M)=Z'_p(P_\bullet)\otimes M$。对任一同态 $f:M\to N$，得到两行正合的交换图
+\begin{equation}
+ \begin{tikzcd}[column sep=small]
+ 0\arrow[r]&T_p(M)\arrow[r]\arrow[d,"u"]&Z'_p(P_\bullet)\otimes M\arrow[r]\arrow[d,"v"]&P_{p-1}\otimes M\arrow[d,"w"]\\
+ 0\arrow[r]&T_p(N)\arrow[r]&Z'_p(P_\bullet)\otimes N\arrow[r]&P_{p-1}\otimes N.
+ \end{tikzcd}\tag{7.4.2.1}
+\end{equation}
+若 $f$ 单射，则 $w$ 单射，因为 $P_{p-1}$ 平坦；若 $T_p$ 左正合，则 $u$ 也单射，因而 $v$ 单射，说明 $Z'_p(P_\bullet)$ 平坦。反之，若该模平坦，则任一单射 $f$ 都给出单射 $v$，由图知 $u$ 单射；$T_p$ 已经半正合，所以左正合。a)、b) 因而等价。
+
+c) 蕴含 a)：当 $d'_{p+1}=0$ 时，对短正合列 $0\to M'\to M\to M''\to0$，由定义（M，IV，1），正合列
+\[
+ H_{p+1}(P'_\bullet\otimes M'')\xrightarrow{\delta}
+ H_p(P'_\bullet\otimes M')\longrightarrow H_p(P'_\bullet\otimes M)
+\]
+中的边缘同态 $\delta$ 为零，因此 $T_p$ 左正合。
+
+反过来证明 b) 蕴含 c)。记 $Z_{p+1}(P_\bullet)=\Ker(P_{p+1}\to P_p)$。原文在此写出正合列
+\[
+ 0\longrightarrow Z_{p+1}(P_\bullet)\longrightarrow P_{p+1}
+ \longrightarrow Z'_p(P_\bullet)\longrightarrow0,
+\]
+据 $P_{p+1},Z'_p(P_\bullet)$ 平坦推出 $Z_{p+1}(P_\bullet)$ 平坦（$0_{\mathrm I}$，6.1.2）。
+\cmt{C3-G04}{此列最右项应为 $B_p(P_\bullet)$，不是余核 $Z'_p(P_\bullet)$；$B_p$ 的平坦性须先由本证明末段的短正合列得出。下文关于任意次数循环和边界与张量积交换的说法也过强。报告给出同一简单复形的反例，并列明只在所需次数使用平坦性的修补。}
+取
+\[
+ P'_i=P_i\ (i\ne p,p+1),\qquad
+ P'_p=Z'_p(P_\bullet),\quad P'_{p+1}=Z_{p+1}(P_\bullet).
+\]
+微分 $d'_i$ 在 $i\ne p,p+1$ 时取 $P_\bullet$ 的微分（在相应子模或商模间理解）；在 $i=p+1$ 时取零；在 $i=p$ 时取由 $d_p$ 通过商诱导的 $Z'_p(P_\bullet)\to P_{p-1}$。原文接着由 $P_i$ 平坦写出
+\[
+ \begin{gathered}
+ Z'_i(P_\bullet\otimes M)=Z'_i(P_\bullet)\otimes M,\\
+ Z_i(P_\bullet\otimes M)=Z_i(P_\bullet)\otimes M,\qquad
+ B_i(P_\bullet\otimes M)=B_i(P_\bullet)\otimes M,
+ \end{gathered}
+\]
+其中 $B_i(P_\bullet)=\Im(P_{i+1}\to P_i)$；并由此对每个 $M$ 和每个 $i$ 得到函子性同构 $H_i(P_\bullet\otimes M)\simeq H_i(P'_\bullet\otimes M)$。它与 $\delta$ 相容这一点，可由 $\delta$ 的定义（M，IV，1）核验。
+
+注意，（7.4.2）的条件也蕴含 $B_p(P_\bullet)$ 平坦，因为有短正合列
+\[
+ 0\longrightarrow B_p(P_\bullet)\longrightarrow P_p
+ \longrightarrow Z'_p(P_\bullet)\longrightarrow0,
+\]
+且后两模平坦（$0_{\mathrm I}$，6.1.2）。
+
+\egas{7.4.3}{推论}
+设 $A$ 为维数1的正则诺特环（也就是说，为 Dedekind 环的乘积；$0_{\mathrm{IV}}$，17.1.3、17.3.7；例如主理想环）。则 $T_p$ 左正合当且仅当 $T_p(A)$ 为平坦 $A$-模；$T_p$ 正合当且仅当 $T_p(A)$ 与 $T_{p-1}(A)$ 都平坦。
+
+回顾：Dedekind 环上的模平坦当且仅当无挠（$0_{\mathrm I}$，6.3.3、6.3.4），故这里平坦模的任一子模也平坦。第二断言来自第一断言，因为 $T_p$ 正合等价于 $T_p,T_{p-1}$ 均左正合。为证明第一断言，考察短正合列
+\[
+ 0\longrightarrow H_p(P_\bullet)\longrightarrow Z'_p(P_\bullet)
+ \longrightarrow B_{p-1}(P_\bullet)\longrightarrow0.
+\]
+$B_{p-1}$ 为平坦模 $P_{p-1}$ 的子模，故平坦；因此 $H_p(P_\bullet)$ 平坦与 $Z'_p(P_\bullet)$ 平坦等价（$0_{\mathrm I}$，6.1.2）。
+
+（7.4.2）最重要的应用如下。
+
+\egas{7.4.4}{命题}
+设 $A$ 为诺特环，$P_\bullet$ 为平坦 $A$-模复形。假设各 $P_i$ 有限型；或者假设各 $H_i(P_\bullet)$ 有限型且存在 $i_0$ 使 $i<i_0$ 时 $H_i(P_\bullet)=0$。令 $T_\bullet$ 为（7.4.1.1）定义的同调函子。那么，使 $(T_p)_y$（7.1.4）右正合（分别左正合、正合）的点 $y\in\Spec A$ 所成集合 $U$ 是开集。
+
+在第二种假设下，可将 $P_\bullet$ 换成有限型自由 $A$-模复形 $P'_\bullet$，使 $H_\bullet(P'_\bullet\otimes_A M)$ 与 $T_\bullet(M)$ 作为 $\delta$-函子同构（0，11.9.3）。所以总可归结为第一种假设；此时各 $Z'_i(P_\bullet)$ 有限型。由（7.4.2，a），只须证明左正合的情形。若 $x\in U$，因局部化正合，有
+\[
+ (Z'_p(P_\bullet))_x=Z'_p((P_\bullet)_x).
+\]
+由（7.4.1.3）及（7.4.2，b），该模在 $A_x$ 上平坦，因有限型且 $A_x$ 局部诺特，故自由（Bourbaki，\textit{Alg. comm.}，第II章，§3，第2目，命题5推论2）。由同书第II章§5第1目命题2推论，存在 $f\in A$，$x\in D(f)$，使 $(Z'_p(P_\bullet))_f$ 在 $A_f$ 上自由；于是每个 $y\in D(f)$ 的局部化也自由，再用（7.4.2，b）即可。
+
+\egas{7.4.5}{推论}
+在（7.4.4）的假设下，再设 $A$ 为整环。则使 $(T_p)_x$ 正合的 $x\in\Spec A$ 所成集合 $U$ 为非空开集。
+
+只须说明泛点处正合。此时 $A_x$ 是域，域上任意加性函子都是正合函子，故得结论。
+
+\egas{7.4.6}{命题}
+在（7.4.4）的一般假设下，（7.4.2）的 a)、b)、c) 还等价于：
+
+\noindent d) 存在 $A$-模 $Q$ 及函子性同构
+\begin{equation}
+ T_p(M)\simeq\Hom_A(Q,M).\tag{7.4.6.1}
+\end{equation}
+此外，$Q$ 由该性质确定至唯一同构，并且有限型。
+
+$Q$ 的唯一性是表示函子的对象之唯一性的特殊情形（0，8.1.5）。右边显然左正合。反之，当 $T_p$ 左正合时，如（7.4.4）可先归结为各 $P_i$ 平坦且有限型；因 $A$ 诺特，它们是有限型投射模（Bourbaki，\textit{Alg. comm.}，第II章，§5，第2目，定理1推论）。记 $P_i^\vee$ 为其对偶，仍为有限型投射模；$P_i$ 典范同构于其双对偶，且
+\[
+ P_i\otimes_A M\longrightarrow\Hom_A(P_i^\vee,M)
+\]
+为典范同构（Bourbaki，\textit{Alg.}，第II章，第3版，§4，第2目，命题2）。由（7.4.2，c），可设 $d_{p+1}=0$，故有正合列
+\[
+ 0\longrightarrow T_p(M)\longrightarrow P_p\otimes M
+ \xrightarrow{d_p\otimes1}P_{p-1}\otimes M.
+\]
+置 $Q'=\Ker d_p$，有 $0\to Q'\to P_p\xrightarrow{d_p}P_{p-1}$ 正合。原文转置此列，写出
+\[
+ P_{p-1}^\vee\xrightarrow{{}^td_p}P_p^\vee
+ \longrightarrow (Q')^\vee\longrightarrow0,
+\]
+并令 $Q=(Q')^\vee=\Coker({}^td_p)$。
+\cmt{C3-G05}{转置一般不能得到这里所写的右正合列，$(\Ker d_p)^\vee$ 也不一定等于转置映射的余核。有效的定义是直接取 $Q=\Coker({}^td_p)$；随后的 Hom 正合列即可证明命题，不需要错误的对偶核等式。报告以 $d_p$ 为乘以 $t$ 给出反例。}
+要证明 $Q$ 满足要求，考察正合列
+\[
+ 0\longrightarrow\Hom_A(Q,M)\longrightarrow\Hom_A(P_p^\vee,M)
+ \xrightarrow{\Hom({}^td_p,1)}\Hom_A(P_{p-1}^\vee,M).
+\]
+在上述典范同构下，最右同态与 $d_p\otimes1$ 对应，因而得到（7.4.6.1）。又 $Q$ 是 $P_p^\vee$ 的商，故有限型。
+
+\egas{7.4.7}{命题}
+在（7.4.4）的一般假设下，对每个有限型 $A$-模 $M$：
+\begin{enumerate}[label=(\roman*)]
+\item 各 $T_p(M)$ 都是有限型 $A$-模；
+\item 对 $A$ 的每个理想 $\mathfrak m$，典范同态
+\begin{equation}
+ \widehat{T_p(M)}\longrightarrow
+ \varprojlim_n T_p\bigl(M\otimes_A(A/\mathfrak m^{n+1})\bigr)
+ \tag{7.4.7.1}
+\end{equation}
+为双射；左边为 $T_p(M)$ 关于 $\mathfrak m$-预进制拓扑的分离完备化。
+\end{enumerate}
+如（7.4.4），先归结为各 $P_i$ 有限型。因 $A$ 诺特，$P_i\otimes M$ 的子模有限型，（i）随即成立。（ii）来自更一般的下述引理。
+
+\egas{7.4.7.2}{引理}
+设 $A$ 为诺特环，$u:E\to F$ 为有限型 $A$-模同态。对每个有限型 $A$-模 $M$，置
+\[
+ K(M)=\Ker(u\otimes1_M),\qquad C(M)=\Coker(u\otimes1_M).
+\]
+则对 $A$ 的每个理想 $\mathfrak m$，典范同态
+\begin{equation}
+ \widehat{K(M)}\longrightarrow\varprojlim_nK(M_n),\qquad
+ \widehat{C(M)}\longrightarrow\varprojlim_nC(M_n)
+ \tag{7.4.7.3}
+\end{equation}
+为双射，其中 $M_n=M\otimes_A(A/\mathfrak m^{n+1})=M/\mathfrak m^{n+1}M$。
+
+$E\otimes M,F\otimes M$ 有限型，而完备化函子在有限型 $A$-模范畴中正合（$0_{\mathrm I}$，7.3.3），故 $\widehat{K(M)},\widehat{C(M)}$ 分别为 $\widehat{u\otimes1}:\widehat{E\otimes M}\to\widehat{F\otimes M}$ 的核与余核。射影极限函子的左正合性给出 $\widehat{K(M)}=\varprojlim K(M_n)$；张量积的右正合性则给出 $C(M_n)=C(M)\otimes_A(A/\mathfrak m^{n+1})$，从而依定义 $\widehat{C(M)}=\varprojlim C(M_n)$。
+
+\egas{7.4.8}{注记}
+结合（6.10.5）和（6.10.6），可见在附加平坦性假设下，（7.4.7）重新给出了（4.1.7.1）是同构这一事实，也就是固有态射“第一比较定理”的主要内容；而且不再只适用于一个凝聚模，还适用于这类模的复形。若能得到同时包括（7.4.7）与（4.1.7.1）的命题，将很有意义。注意，当各 $P_i$ 有限型时，（7.4.7）的证明并未用到它们平坦；应考察：若不再假设各 $P_i$ 平坦或有限型，而只假设各 $H_i(P_\bullet)$ 有限型且 $i<i_0$ 时为零，结论是否仍成立？这时能否用有限型 $A$-模复形 $P'_\bullet$ 代替 $P_\bullet$，使已不再是同调函子的 $H_\bullet(P_\bullet\otimes M)$ 与 $H_\bullet(P'_\bullet\otimes M)$ 仍同构？

@@ -1,0 +1,28 @@
+{
+  "status": "passed",
+  "pages": 1136,
+  "all_pages_text_and_dimensions_equal": true,
+  "supplement_pages_72dpi_pixel_equal": [
+    953,
+    954,
+    955,
+    956,
+    957,
+    958,
+    959
+  ],
+  "visual_review_pages": [
+    953,
+    954,
+    955,
+    956,
+    957,
+    958,
+    959
+  ],
+  "report_original_pages": 283,
+  "report_sha256": "b61fe870fd83b90a505893ecfc8403fafb9037053bc452f0ae7b723e9e401949",
+  "report_not_recompiled": true,
+  "tex_sha256": "1c25282c5c027fdacbb5d4f1d1c8902b8ddf6ff2f17adfb47cf279885611e9fa",
+  "pdf_sha256": "3d22bd91de60c56a29ce31930189c2ec08e8f5869861d85458cb3cf3d40fc849"
+}

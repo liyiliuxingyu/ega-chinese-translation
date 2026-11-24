@@ -1,0 +1,9 @@
+{
+  "block_matrix_cases_over_F7": 80,
+  "dual_number_lifting_obstruction": true,
+  "tensor_kernel_dimensions": {
+    "tensor_of_original_kernel_dimension": 1,
+    "kernel_after_tensor_dimension": 0
+  },
+  "scope": "Finite sanity checks only; general proofs are in the audit."
+}

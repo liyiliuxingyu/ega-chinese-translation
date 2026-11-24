@@ -1,0 +1,92 @@
+\documentclass[openany,fontset=fandol]{ctexbook}
+\usepackage{amsmath,amssymb}
+\usepackage[unicode,hidelinks]{hyperref}
+\setlength{\emergencystretch}{2em}
+\raggedbottom
+\DeclareMathOperator{\codim}{codim}
+\DeclareMathOperator{\Spec}{Spec}
+\newcommand{\PP}{\mathbb P}
+\newcommand{\OO}{\mathcal O}
+\begin{document}
+\title{代数几何基础第五卷预备笔记\\超平面截面：闭集余维下降的判据}
+\author{第102批\quad 法、英、中文三方校订}
+\date{2026年11月24日}
+\maketitle
+
+\section*{范围与读法}
+本批校法稿物理33页和34页上半，对照英稿物理22页末至24页首。法33页顶挪写的句尾接命题8.4的判据；法34页后半的删划及改写推论8.5不在本批内。以下先给校订译文，再给独立补证。
+
+\paragraph{接续。}
+从法34页下半的删划、改写推论8.5和法35续文开始；对照英24及后页，另核8.5的余深度不等号与8.6的局部深度条件。1158页合订本、正式印本IV.1的物理221与223续点均未变。对读底本：\href{https://webusers.imj-prg.fr/~leila.schneps/grothendieckcircle/EGA/EGA5trans.pdf}{EGA第五卷英编辑稿}。
+
+记 $K$ 为底域，$k\ge0$ 为整数门槛。沿用本章记号：$X$ 是 $K$ 上有限型概形，$f:X\to\PP^r_K$，$\check{\PP}^{\,r}$ 参数化超平面。对参数 $\xi$，$H_\xi$ 是 $K(\xi)$ 上的超平面，$Y_\xi$ 是其逆像，$T_\xi$ 是换底后的 $T$ 在 $Y_\xi$ 中截出的闭集。像的维数指其闭包的维数。
+
+\section*{命题8.4\quad 何时例外参数的余维至少为二}
+设 $T$ 为 $X$ 的闭子集，且 $\codim(T,X)\ge k$。则对每个 $\xi\in\check{\PP}^{\,r}$，均有
+\[
+ \codim(T_\xi,Y_\xi)\ge k-1.
+\]
+使 $\codim(T_\xi,Y_\xi)=k-1$（也即 $\codim(T_\xi,Y_\xi)<k$）的参数集合 $Z$ 可构造而且无处稠密，亦即 $\overline Z$ 的余维至少为一。
+
+$Z$ 的余维至少为二，当且仅当对每个满足 $\codim(T_i,X)=k$ 且 $\dim f(T_i)=0$ 的几何不可约分支 $T_i$，都有一个含 $T_i$ 的几何不可约分支 $X_j$，满足
+\[
+ \codim(T_i,X_j)=k,\qquad \dim f(X_j)=0.
+\]
+这里 $T_i$ 是 $T$ 的分支，$X_j$ 是 $X$ 的分支。\footnote{法33行间改为“等于 $k$”，但该行及英22误写把 $T_i$ 当作 $X$ 的分支；依8.4.1(b)和法34证文明定为 $T$ 的分支。法33页顶该句的补尾有涂写，英23在 $f(X_j)$ 后也不清；等于零的读法由法34的正反两种情形确认。几何分支的限定依作者法34末的说明。}
+
+特别地，若 $f$ 拟有限且 $k>0$，这个判据等价于：$T_{\overline K}$ 没有局部维数 $\dim\OO_{X_{\overline K},x}=k$ 的孤立点 $x$。第一项余维不等式直接来自以下引理(a)；作者说这是对第5节的一处补记。
+
+\newpage
+\section*{引理8.4.1\quad 单个方程所致的余维变化}
+设 $X$ 局部 Noether，$\mathcal L$ 为其上的可逆模，$\varphi$ 为 $\mathcal L$ 的截面，$Y=V(\varphi)$，$T$ 为 $X$ 的闭子集。假定 $\codim(T,X)\ge k$。\footnote{法33圈入的假设及英23写的是 $\codim(Y,X)\ge k$，不能推出(b)。例如 $X=\mathbb A^2$、$Y$ 为一直线、$T=X$、$k=1$，左端等于零，而 $T$ 无余维为一的分支。应如命题8.4及下证，以 $T$ 为该假设的对象。}
+\begin{enumerate}
+\renewcommand{\labelenumi}{\alph{enumi})}
+\item $\codim(T\cap Y,Y)\ge k-1$。
+\item 上式取等（也即余维 $<k$），当且仅当存在 $T$ 的一个不可约分支 $T_i\subseteq Y$，满足 $\codim(T_i,X)=k$，使得每个含 $T_i$ 且满足
+\[
+ \dim\OO_{X_j,\eta_i}=\dim\OO_{X,\eta_i}=k
+\]
+的 $X$ 的不可约分支 $X_j$ 都不包含在 $Y$ 中。此处 $\eta_i$ 是 $T_i$ 的泛点。
+\end{enumerate}
+原稿把引理的证明归于 EGA IV 的一般维数理论，详证见后。
+
+\section*{命题8.4的原稿证明（校订）}
+用引理(b)来辨认例外超平面。先排除集合 $Z_0$：若 $R$ 是 $T$ 或 $X$ 的不可约分支，且 $\dim f(R)>0$，而 $\xi$ 的截面含整个换底后的 $R$，则将 $\xi$ 放入 $Z_0$。按8.2，$Z_0$ 的余维至少为二。对 $\xi\notin Z_0$，成为例外，恰须有一个 $\codim(T_i,X)=k$ 的 $T_i$ 满足
+\[
+ \dim f(T_i)=0,\quad f(T_i)\subseteq H_\xi,\qquad
+ f(X_j)\not\subseteq H_\xi
+\]
+（最后一项对每个含 $T_i$ 且 $\codim(T_i,X_j)=k$ 的 $X_j$ 成立）。\footnote{法33末写“维数过大”，此处只需其含住整个正维像的情形，由8.2的线性包含条件可得。法34明确用 $f(T_i)\subseteq H_\xi$，与英23末两处误写的不包含符号相反；$X_j$ 的相关余维就是 $k$，不是英23留下的问号。}
+
+固定这样一个 $T_i$。若某个相关 $X_j$ 的像为零维，则 $f(X_j)=f(T_i)$，因而一旦 $H_\xi$ 包含 $f(T_i)$，也会包含 $f(X_j)$，所以不能由该 $T_i$ 造成例外。反之，若所有相关 $X_j$ 的像都是正维，则在 $Z_0$ 外，只要 $H_\xi$ 通过点 $f(T_i)$，这个 $T_i$ 就造成例外。于是，相应参数是一个对偶超平面在 $\check{\PP}^{\,r}\setminus Z_0$ 上的迹。这不只证明了8.4，也说明 $Z$ 在 $Z_0$ 外是有限个这样的迹之并。\footnote{法34收束一句（英24同）称 $Z$ 本身是若干完整超平面与一余维至少二的集合之并；前句已限定为在 $Z_0$ 外的迹。完整超平面可用于 $\overline Z$，不能一般用于 $Z$；后文给出反例。}
+
+作者补记：这里一直在代数闭域上的点上作几何推理，却未事先说明。8.4的条件是几何的，可以在代数闭域上取有理点来作上述论证。
+
+\newpage
+\section*{补证一：引理的局部维数论证}
+对任意 $t\in T\cap Y$，令 $A=\OO_{X,t}$，$h$ 为 $\varphi$ 的局部方程，$d=\dim A$。每个极小素理想 $\mathfrak p_j$ 代表过 $t$ 的不可约分支，记 $d_j=\dim A/\mathfrak p_j$。对 $A/\mathfrak p_j$ 而言，若 $h$ 的像为零，则商去 $h$ 后局部维数仍是 $d_j$；若像非零，则它是局部整环中的非零非单位，商去后局部维数是 $d_j-1$。后一事实由参数组给出下界，由在商环中的素理想链底端添上零素理想给出上界。参见 \href{https://stacks.math.columbia.edu/tag/00KW}{Stacks，10.60.13}。所有素理想都含某个极小素理想，故
+\[
+ \dim A/(h)=\max_j\dim A/(\mathfrak p_j,h),\qquad
+ d-1\le \dim A/(h)\le d.
+\]
+因此恰降一的条件是：对所有满足 $d_j=d$ 的分支，$h$ 都没有恒等于零。局部的这一条件等价于这些分支不包含在 $Y$ 中：在分支的泛点判断截面是否为零即可。
+
+闭集在 $X$ 中的余维是其上各 $t$ 的 $\dim\OO_{X,t}$ 的下确界，空集的余维取 $+\infty$。在单个 $T_i$ 的泛点，它是通过该泛点的 $X$ 各分支中局部维数的最大值，而不是最小值。因为 $d\ge k$，上面的局部不等式给出(a)。若截后有某点局部维数 $k-1$，原点处必有 $d=k$。这个点只能是 $T$ 某分支的泛点：若它是某泛点 $\eta_i$ 的严格特化，在 $X$ 的一张含该点的仿射开集中，把 $\eta_i$ 处一条长至少 $k$ 的素理想链往上添一环，就得到局部维数至少 $k+1$。反过来，在满足(b)的泛点处，所有达到 $k$ 的分支均被切掉一维，其他分支维数本已至多 $k-1$，遂得等号。$k=0$ 时等号不会发生；达到最大值零的局部分支不可能在该点被切而又仍含该点。
+
+\newpage
+\section*{补证二：几何参数、可构造性与闭包}
+有限型概形上，可在任意扩域后检验闭集余维。具体地，若 $\eta_i'$ 是换底后 $T_i$ 某几何分支的泛点，则它位于 $\eta_i$ 的上方，且该分支与 $T_i$ 同维；对每个包含 $T_i$ 的 $X_j$，都有换底后 $X_j$ 的分支通过 $\eta_i'$，维数仍是 $\dim X_j$。在各分支用有限型整概形的维数公式 $\codim(T_i,X_j)=\dim X_j-\dim T_i$，再取最大值，即得所需不变性。应用到参数剩余域的代数闭包，就涵盖了非闭参数，不要求 $K$ 本身代数闭。\footnote{这里的维数公式及几何等维性只用于命题的有限型底域环境；引理8.4.1不需要有限型底域条件。}
+
+在 $\overline K$ 上，对于上述每个 $R$，设 $L_R$ 是所有包含 $\overline{f(R)}$ 的超平面组成的线性闭集。若 $f(R)$ 的张成空间维数为 $s$，则这等价于对线性方程施加 $s+1$ 个独立齐次线性条件；若无这样的超平面，$L_R$ 为空。令 $Z_0$ 为像正维的 $R$ 所给 $L_R$ 的有限并，故 $\codim Z_0\ge2$。逐个应用引理(b)，直接得到精确表达式
+\[
+ Z_{\overline K}=
+ \bigcup_{\codim(T_i,X)=k}
+ \left(L_{T_i}\setminus
+ \bigcup_{\substack{X_j\supseteq T_i\\\codim(T_i,X_j)=k}} L_{X_j}\right),
+\]
+式中各分支及余维取在 $\overline K$ 上。这里 $Z_{\overline K}$ 表示换底后按同一判据得到的参数集。因各项是线性闭集之差，集合可构造。有限多个几何分支及线性条件可定义在一个有限扩域上；对应构造集沿有限投影取像得到原底域的 $Z$。在 $Z_0$ 外，只有正稿证明所辨认的完整对偶超平面的迹，每个迹稠密于其超平面；故闭包是这些完整超平面与 $\overline{Z\cap Z_0}$ 之并，这也给出所述余维判据。若 $f$ 拟有限，零维像的不可约 $T_i$ 本身只能是点；若其相关 $X_j$ 余维为 $k>0$，则 $\dim X_j=k$，像不可能为零维。这就得到孤立点的表述。
+
+\paragraph{为何不能删去“在 $Z_0$ 外”。}
+取 $X$ 为 $\PP^2$ 中的一条直线，$T=\{x\}\subset X$，$k=1$。过 $x$ 的任一不同于 $X$ 的直线截出点 $x$，余维从一降到零；参数若恰代表直线 $X$ 本身，则 $Y_\xi=X$，余维仍为一。故 $Z$ 是一条对偶直线去掉一点，不可能是完整超平面与余维至少二的集合之并。
+
+\end{document}

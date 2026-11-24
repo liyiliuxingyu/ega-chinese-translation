@@ -1,0 +1,14 @@
+{
+  "completed": "底本第52页 N.B. The reasoning does not go through 起附记及注13.4(a)，接续第53页13.4(b)全文",
+  "next": "第53页13.4(c): To be possibly included in the statement of 13.2",
+  "previous_project": "libfile_fde3_f-b0d3f92c61688191bfdd8535dcd397ff_49ac57203c0c81918f3630f0324dcb35",
+  "source_sha256": "23a20ef32fd16a1bd623c0c08ac080d04fc94f248de12133b713a19d6b0330d9",
+  "merged_into_main": false,
+  "pdf_pages": 4,
+  "unresolved": [
+    "附记否定和条件连接不明，原句及问号保留，未补造结论",
+    "C与C撇的确切关系未明",
+    "有限域推广未独立验证，保留推测语气",
+    "8.8缺文及8.7(c)残缺、全部旧待核保持"
+  ]
+}

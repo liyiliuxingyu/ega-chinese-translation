@@ -1,0 +1,112 @@
+{
+  "pass": true,
+  "scope": "File preservation, input structure and macro inventory only; not mathematical proof validation.",
+  "baseline_source_records": 111,
+  "unchanged_source_records": 109,
+  "allowed_changes": [
+    "text/remaining.tex",
+    "text/v1_2.tex"
+  ],
+  "missing": [],
+  "old_short_exact_backup": true,
+  "standalone_expansions_exact": true,
+  "external_tex_or_image_inputs": false,
+  "counters": {
+    "entries": {
+      "baseline": 2436,
+      "current": 2477,
+      "missing": {},
+      "added": {
+        "8.4.1": 1,
+        "7.1": 1,
+        "7.2": 1,
+        "7.3": 1,
+        "7.4": 1,
+        "7.5": 1,
+        "8.1": 1,
+        "8.2": 1,
+        "8.3": 1,
+        "8.4": 1,
+        "8.5": 1,
+        "8.6": 1,
+        "8.7": 1,
+        "8.9": 1,
+        "8.10": 1,
+        "8.11": 1,
+        "8.12": 1,
+        "8.13": 1,
+        "8.14": 1,
+        "8.15": 1,
+        "8.16": 1,
+        "8.17": 1,
+        "8.18": 1,
+        "9.1": 1,
+        "9.2": 1,
+        "9.3": 1,
+        "9.5": 1,
+        "10.1": 1,
+        "10.2": 1,
+        "10.3": 1,
+        "10.4": 1,
+        "13.1": 1,
+        "13.2": 1,
+        "13.3": 1,
+        "13.4": 1,
+        "14.1": 1,
+        "14.2": 1,
+        "14.3": 1,
+        "14.4": 1,
+        "14.5": 1,
+        "14.6": 1
+      }
+    },
+    "tags": {
+      "baseline": 1057,
+      "current": 1060,
+      "missing": {},
+      "added": {
+        "a": 1,
+        "b": 1,
+        "$b_1$": 1
+      }
+    }
+  },
+  "new_body_blocks": {
+    "continuations/v_dot_early.tex": {
+      "bytes": 116957,
+      "sha256": "74de97b880e50e2c1dadf3bb8f6f041be8c8b0ce47cb75396f2903e85111b0a3",
+      "entry_macros": 31,
+      "tag_macros": 3,
+      "translator_note_macros": 8,
+      "tikzcd_environments": 1
+    },
+    "continuations/v_dot_middle.tex": {
+      "bytes": 66532,
+      "sha256": "db4bb436a85fe1632ba25e518ae396bb261bc3aa06bf63e8208392d95083cc93",
+      "entry_macros": 4,
+      "tag_macros": 0,
+      "translator_note_macros": 93,
+      "tikzcd_environments": 0
+    },
+    "continuations/v_dot_late.tex": {
+      "bytes": 49224,
+      "sha256": "b07e3ebdfecbb1f1c832e5310c5e7d7f4dab51e89d5fc449f161f1a498cebb21",
+      "entry_macros": 6,
+      "tag_macros": 0,
+      "translator_note_macros": 69,
+      "tikzcd_environments": 6
+    }
+  },
+  "new_section_sequence": [
+    "7",
+    "8",
+    "9",
+    "10",
+    "11",
+    "12",
+    "13",
+    "14",
+    "15"
+  ],
+  "overlapping_short_input_count": 1
+}

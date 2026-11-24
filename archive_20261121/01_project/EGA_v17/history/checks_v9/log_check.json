@@ -1,0 +1,42 @@
+{
+  "main": {
+    "latex_errors": 0,
+    "undefined_controls": 0,
+    "missing_characters": 0,
+    "overfull_boxes": 0,
+    "undefined_references": 0,
+    "underfull_boxes": 45,
+    "font_warning_lines": 3,
+    "needs_rerun": false
+  },
+  "report": {
+    "latex_errors": 0,
+    "undefined_controls": 0,
+    "missing_characters": 0,
+    "overfull_boxes": 0,
+    "undefined_references": 0,
+    "underfull_boxes": 22,
+    "font_warning_lines": 3,
+    "needs_rerun": false
+  },
+  "single_build/book_single": {
+    "latex_errors": 0,
+    "undefined_controls": 0,
+    "missing_characters": 0,
+    "overfull_boxes": 0,
+    "undefined_references": 0,
+    "underfull_boxes": 45,
+    "font_warning_lines": 3,
+    "needs_rerun": false
+  },
+  "single_build/audit_single": {
+    "latex_errors": 0,
+    "undefined_controls": 0,
+    "missing_characters": 0,
+    "overfull_boxes": 0,
+    "undefined_references": 0,
+    "underfull_boxes": 22,
+    "font_warning_lines": 3,
+    "needs_rerun": false
+  }
+}

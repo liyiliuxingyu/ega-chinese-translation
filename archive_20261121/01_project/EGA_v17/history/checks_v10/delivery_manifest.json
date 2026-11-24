@@ -1,0 +1,29 @@
+{
+  "edition": 10,
+  "book": {
+    "file": "main.pdf",
+    "expected_pages": 974,
+    "single_source": "single.tex"
+  },
+  "audit": {
+    "file": "report.pdf",
+    "expected_pages": 181,
+    "single_source": "report_single.tex"
+  },
+  "new_content": {
+    "first": "0_IV 20.6.1",
+    "last": "0_IV 20.7.20",
+    "entries": 46,
+    "formula_tags": 50
+  },
+  "policy": "正文为已核实表述；原文错误/差异及依据写入脚注，长论证入核查报告。",
+  "next": "EGAIV.1.pdf第152页§21章首；第153页(21.1.1)",
+  "full_translation_completed": false,
+  "independent_mathematical_review_of_all_old_content": false,
+  "verified_pages": {
+    "book": 974,
+    "audit": 181
+  },
+  "comparison": "1155页逐页文本及72dpi像素一致",
+  "final_build_success": true
+}

@@ -1,0 +1,103 @@
+from pathlib import Path
+import re,json,hashlib
+
+ROOT=Path('/workspace/scratch/a886fd56dd2f')
+SOURCE=ROOT/'unpacked/dot_batches'
+OUT=ROOT/'integration/early'
+ORDER=['第7节_独立续译工程','8.1至8.6_独立续译工程','8.6后预备论证_校订续译工程','8.7及相邻残段_校订续译工程','8.9至8.11_校订续译工程','8.12_校订续译工程','8.13_校订续译工程','8.14至8.15_校订续译工程','8.16至8.17_校订续译工程','8.18_校订续译工程','8.18后线性系讨论_第一批_工程','第8节末域论讨论_工程','9.1至9.2_校订续译_工程','9.3_校订续译_工程','9.4至10.1_校订续译_工程','10.2_校订续译_工程','10.3_校订续译_工程','10.4_校订续译_工程']
+
+manifest=[];bodies=[];reports=[]
+for number,key in enumerate(ORDER,1):
+    folder=SOURCE/('EGA第五卷_'+key)
+    ps=list(folder.glob('EGA*.tex'));assert len(ps)==1,ps
+    p=ps[0];t=p.read_text();progress=json.loads((folder/'PROGRESS.json').read_text())
+    manifest.append(dict(order=number,file=str(p),sha256=hashlib.sha256(p.read_bytes()).hexdigest(),progress=progress))
+    if '\\mainmatter' in t:
+        body=t.split('\\mainmatter',1)[1]
+    else:
+        starts=list(re.finditer(r'\\chapter\*\{[^\n]*\}',t))
+        assert len(starts)>=2,p
+        body=t[starts[1].start():]
+    if '\\backmatter' in body:
+        body,rep=body.split('\\backmatter',1)
+        rep=rep.split('\\end{document}',1)[0]
+    else:rep=''
+    body=body.split('\\end{document}',1)[0]
+    if key.startswith('第7节'):
+        reports.append(rep.split('\\bigskip',1)[0])
+    elif key.startswith('8.6后'):
+        reports.append('\\subsection*{余法丛论证的补充核验}\n'+rep.split('对概形论证明的独立核查包括：',1)[1].split('\\textbf{限制：}',1)[0])
+        notation=t.split('\\textbf{统一记号（译校整理）：}',1)[1].split('\\mainmatter',1)[0]
+        pos=body.index('\n',body.index('\\chapter*'))
+        body=body[:pos+1]+'\\noindent\\textbf{译校记号约定。}'+notation+'\n'+body[pos+1:]
+    elif key.startswith('8.7'):
+        reports.append(rep.split('\\section*{可核实部分',1)[0])
+    elif key.startswith('8.9'):
+        notation=t.split('统一记号：',1)[1].split('\n\n查阅原对话',1)[0]
+        pos=body.index('\n',body.index('\\chapter*'))
+        body=body[:pos+1]+'\\noindent\\textbf{译校记号约定。}'+notation+'\n'+body[pos+1:]
+    if key.startswith('8.12'):
+        body=body.split('\\section*{接续位置}',1)[0]
+    body=re.sub(r'\\addcontentsline\{toc\}\{chapter\}\{[^\n]*\}\s*','',body)
+    body=body.replace('\\newpage','')
+    bodies.append(body)
+
+text='\n'.join(f'% DOT_IMPORT {i+1:02d} {ORDER[i]}\n'+s for i,s in enumerate(bodies))
+report='\n\n'.join(reports)
+
+HEADERS={
+'§7\\quad 构造指定类型的超平面截面与多截面的应用':r'\egasection{§7\quad 构造指定类型的超平面截面与多截面的应用}\source{\texttt{EGAVaiello.pdf} 第18页末至第21页；Dot第7节独立译稿并入}',
+'§8\\quad 例外超平面集合的维数':r'\egasection{§8\quad 例外超平面集合的维数}\source{\texttt{EGAVaiello.pdf} 第21--36页；Dot各批连续译稿并入}',
+'§8续\\quad 余法丛与奇异零点':r'\subsection*{余法丛与奇异零点}',
+'8.7\\quad 定理的可读部分':r'\egas{8.7}{定理的可读部分}',
+'紧随(c)的条件列表与论证残段':r'\subsection*{紧随（8.7）(c)的条件列表与论证残段}',
+'8.9\\quad 推论：现存条件下的可核部分':r'\egas{8.9}{推论：现存条件下的可核部分}',
+'8.10\\quad 备注与集合差的订正':r'\egas{8.10}{备注与集合差的订正}',
+'8.11\\quad 特征零的推论':r'\egas{8.11}{特征零的推论}',
+'8.12\\quad 备注':r'\egas{8.12}{备注}',
+'8.13\\quad 命题（原稿陈述及待核处）':r'\egas{8.13}{命题（原稿陈述及待核处）}',
+'8.14\\quad 推论（原稿陈述）':r'\egas{8.14}{推论（原稿陈述及待核处）}',
+'8.16\\quad 命题（原稿陈述）':r'\egas{8.16}{命题（原稿陈述）}',
+'8.18\\quad 命题（原稿陈述，含待核处）':r'\egas{8.18}{命题（原稿陈述，含待核处）}',
+'8.18后未编号讨论':r'\subsection*{（8.18）之后的线性系讨论}',
+'第8节末未编号讨论（续）':r'\subsection*{域论与维数的补充讨论}',
+'§9\\quad 更换射影嵌入':r'\egasection{§9\quad 更换射影嵌入}\source{\texttt{EGAVaiello.pdf} 第36--38页}',
+'命题9.3及原稿证明':'',
+'9.4编排提示与9.5残文':r'\subsection*{（9.4）的编排提示与（9.5）的残文}',
+'§10 超平面截面束与簇的爆破的纤维化':r'\egasection{§10\quad 超平面截面束与簇的爆破的纤维化}\source{\texttt{EGAVaiello.pdf} 第38--41页}',
+'10.2 线性束与爆破':r'\egap{10.2}',
+'命题10.3':r'\egas{10.3}{命题（底本标记已划去；以下保存其文字）}',
+'推论10.4之前的未编号段':r'\subsection*{（10.4）之前的说明}',
+'推论10.4（10.2的推论）':r'\egas{10.4}{推论（（10.2）的推论）}',
+}
+for old,new in HEADERS.items():
+    target='\\chapter*{'+old+'}';assert target in text,target;text=text.replace(target,new)
+text=text.replace(r'\section*{8.15\quad 备注}',r'\egas{8.15}{备注}')
+text=text.replace(r'\section*{8.17\quad 备注}',r'\egas{8.17}{备注}')
+text=re.sub(r'\\entry\{([^}]+)\}\{([^}]*)\}',lambda m: r'\egas{'+m[1]+'}{'+m[2]+'}' if m[2] else r'\egap{'+m[1]+'}',text)
+text=text.replace(r'\noindent\textbf{9.1.}',r'\egap{9.1}')
+text=text.replace(r'\noindent\textbf{命题9.2〔原稿陈述，所引条件待核〕.}',r'\egas{9.2}{命题（原稿陈述，所引条件待核）}')
+text=text.replace(r'\noindent\textbf{命题9.3〔原稿陈述；(c)项措辞待核〕.}',r'\egas{9.3}{命题（原稿陈述；(c)项措辞待核）}')
+text=text.replace(r'\noindent\textbf{定理9.5（第52页或第55页字迹不清）.}',r'\egas{9.5}{定理残文（第52页或第55页字迹不清）}')
+text=text.replace(r'\noindent\textbf{10.1.}',r'\egap{10.1}')
+text=text.replace(r'\noindent\textbf{定理10.2.}',r'\par\noindent\textbf{定理（10.2）。}')
+text=text.replace('线性铅笔','线性束').replace('铅笔','线性束').replace('一般是 étale 的','泛平展').replace('是 étale 的','平展')
+
+# Normalize note macros and small mathematical shorthands without loading another preamble.
+def normalize(s):
+    s=s.replace(r'\Yss',r'{Y^{\mathrm{sup\,sing}}}').replace(r'\Ys',r'{Y^{\mathrm{sing}}}')
+    s=s.replace(r'\cO',r'\mathcal O').replace(r'\supp',r'\operatorname{Supp}')
+    s=s.replace('本批译校注：','Dot译校注：').replace('本批','此处译校')
+    s=s.replace('上一批','前文译校').replace('下一批','后续译校')
+    s=re.sub(r'\\(?:note|corr|tnote)\{',r'\\transnote{',s)
+    return s
+text=normalize(text);report=normalize(report)
+text=text.replace(r'\section*{',r'\subsection*{')
+report=report.replace('\\chapter*{本批核查说明}',r'\subsection*{（7.4）的反例}')
+report=report.replace('\\chapter*{此处译校核查说明}',r'\subsection*{（7.4）的反例}')
+report=report.replace('\\chapter*{独立核查记录}',r'\subsection*{二次覆盖反例的独立核验}')
+report=report.replace('\\section*{次数二的反例逐步核验}',r'\subsubsection*{次数二的反例逐步核验}')
+(OUT/'body_early_base.tex').write_text(text)
+(OUT/'report_early_base.tex').write_text(report)
+(OUT/'early_sources.json').write_text(json.dumps(manifest,ensure_ascii=False,indent=2))
+print('batches',len(ORDER),'body_chars',len(text),'report_chars',len(report))

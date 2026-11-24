@@ -1,0 +1,26 @@
+{
+  "tests": [
+    {
+      "p": 2,
+      "truncated_modulus_degree": 4,
+      "all_lifts_of_t_checked": 4,
+      "every_lift_has_pth_power": "T^p, nonzero",
+      "balanced_identity_sample_count": 64
+    },
+    {
+      "p": 3,
+      "truncated_modulus_degree": 6,
+      "all_lifts_of_t_checked": 27,
+      "every_lift_has_pth_power": "T^p, nonzero",
+      "balanced_identity_sample_count": 64
+    },
+    {
+      "p": 5,
+      "truncated_modulus_degree": 10,
+      "all_lifts_of_t_checked": 3125,
+      "every_lift_has_pth_power": "T^p, nonzero",
+      "balanced_identity_sample_count": 64
+    }
+  ],
+  "limitation": "Finite checks confirm the stated polynomial examples only. Field p-bases, counterexamples over rational-function fields, and arbitrary-ring results are proved in the report, not certified by this script."
+}

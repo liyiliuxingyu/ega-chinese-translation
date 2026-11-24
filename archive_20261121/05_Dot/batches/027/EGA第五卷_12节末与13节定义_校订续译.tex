@@ -1,0 +1,26 @@
+\documentclass[openany,fontset=fandol]{ctexbook}
+\usepackage{amsmath,amssymb}
+\usepackage[unicode,hidelinks]{hyperref}
+\newcommand{\note}[1]{\footnote{译注：#1}}
+\begin{document}
+\title{代数几何基础第五卷预备笔记\\第12节末及第13节定义}
+\author{据用户上传英译编辑稿译出}
+\date{2026年11月17日}
+\maketitle
+\chapter*{范围与校订状态}
+本批从底本第48页末“It remains, therefore, to prove a lemma”续起，译出第12节最后一段及第49页第13节标题、定义13.1全文，含原脚注63。下一接点为第49页定理13.2（M. Artin）。本批不包含该定理及证明。
+
+第12节末引理仅为带缺文的待证提纲，不擅补成完整命题。第13节沿用底本的定义，不用其他版本的术语或假设替换。本稿独立保存，未覆盖主稿；此前待核事项继续保留。
+\chapter*{§12 将上述结果推广到线性截面（续）}
+因此，还须证明一个大致如下的引理：设$Z$是$\operatorname{Grass}^m$中余维为$q$的闭子集，并如上根据$C$定义$Q(C)$。那么，对每个“足够一般”的$C$，交集
+\[
+Q(C)\cap Z
+\]
+在$Q(C)$中的余维至少为$q$。此外，若$Z$几何不可约，〔字迹不清，请询问A.G.；“itou???”〕，则$Q(C)\cap Z$〔此处结论残缺〕，如果$Z$“足够一般”。\note{底本在第一处交集中印作$Q(Z)\cap Z$，但本句定义的是由$C$决定的$Q(C)$，且紧接着在$Q(C)$中计算余维、后文也写$Q(C)\cap Z$，故正文将第一处$Q(Z)$订为$Q(C)$，原写法及依据保留于此。末句则确实写“if $Z$ is sufficiently general”，不擅自改成$C$。}
+\note{原句后半部为“also if $Z$ is geometrically irreducible [illegible, ask AG] [itou???] $Q(C)\cap Z$ if $Z$ is sufficiently general”。底本没有给出可辨的完整谓语；不凭“itou”可能表示“同样”就补出几何不可约性的结论，更不补写证明。}
+
+\chapter*{§13 初等态射与M. Artin定理}
+\textbf{定义13.1。}预概形的态射$f\colon X\to Y$称为一个“初等态射”，如果$X$在$Y$上同构于形如$X'\setminus Z$的预概形，其中$X'\to Y$是光滑射影态射，具有几何连通的一维纤维，而$Z$是$X'$的闭子预概形，使得态射$Z\to Y$为满射、平展且次数恒定。
+
+一个态射称为多初等的，如果它是初等态射的复合。域$k$上的预概形$X$称为（在$k$上）多初等的，如果其结构态射$X\to\operatorname{Spec}(k)$是多初等的。\footnote{原脚注63：提醒Blass：询问Artin有关术语的问题。参见Milne第117页及SGA IV〔英译者注〕。}\note{底本使用“elementary”和“polyelementary”，这里分别译作“初等”和“多初等”。按第49页紧随其后的原作者说明，复合允许空族，这解释了恒等态射的情形；本批仍把该说明留作译注，没有冒充定义原段中已有的句子。脚注63未给出Milne书名或SGA IV的具体位置，故不补定引用。}
+\end{document}

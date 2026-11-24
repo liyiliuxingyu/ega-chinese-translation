@@ -1,0 +1,72 @@
+\documentclass[openany,fontset=fandol]{ctexbook}
+\usepackage{amsmath,amssymb}
+\usepackage[unicode,hidelinks]{hyperref}
+\setlength{\emergencystretch}{2em}
+\interfootnotelinepenalty=10000
+\newcommand{\OO}{\mathcal O}
+\newcommand{\Qsp}{\mathcal Q}
+\DeclareMathOperator{\Sym}{Sym}
+\DeclareMathOperator{\Isom}{Isom}
+\DeclareMathOperator{\Spec}{Spec}
+\begin{document}
+\title{代数几何基础第五卷预备笔记\\17.16　正交群挠子与局部等平凡性}
+\author{据法文扫描和英译编辑稿互校续译}
+\date{2026年11月21日}
+\maketitle
+\chapter*{范围与接续}
+接第71批定理16.9证明末。本批收入作者按语及16.12--16.14，至本附录末；法文扫描物理168--171页，英译物理83--85页。作者疑问在译文中保留；勘误入脚注，论证与现代参考另列。尚未并入合订本。
+下一处为第三篇开头（英译物理86页），另按篇章核对法文扫描页序，不从物理171页机械顺延。正式出版的第四卷译校另有接续点。
+
+\chapter*{17.16　光滑二次型（续完）}
+\noindent\textbf{作者按语。}\quad 本可一开始就把16.11.2作为16.2或16.3的推论给出（这两条原本应当互换次序）。这样，本节不依赖“校正判别式”的部分就能集中放在开头。
+
+另外，校正判别式的概念以及16.9在多大程度上已经为人所知，你应该比我清楚，好把功劳归给应当归功的人。也许已经有别的通用术语？我还想指出，真正配叫判别式的是\emph{校正}判别式，因为能推广为任意形式的判别式的是它（参见下一节）。至于二次型的“判别式”（采用这里的术语；如果我没弄错，这也是通用术语，不过手头没有布尔巴基的书可供核对），倒应称为二次型的\emph{行列式}，不应叫判别式。很想听听你对此的看法。如果你同意，我们就借这个机会纠正这点容易误导人的通用术语（直至前几天，我还在不知不觉中把判别式和行列式混在一起）。\footnote{这些是作者向收信人提出的术语与归功问题，不是已经查定的历史结论。法文是“通用／公认的术语”；英译写作“recent terminology”。一般齐次形式判别式的下节引用按手稿保留，不用现存附录没有该节而删除。}
+
+\medskip
+\noindent\textbf{评注16.12。}\quad 令绝对群概形 $\mathrm{GL}(n)=\mathrm{Aut}(\mathbb Z^n)$ 作用于 $\Qsp(\mathbb Z^n)$。标准二次型的稳定子记为 $\mathrm O(n)$，称为“绝对正交群”。更一般地，对任一二次型 $Q\in\Gamma(S,\Sym^2E)$，引入 $\mathrm{GL}(E)$ 中使 $Q$ 保持不变的闭子群预概形，记作 $\mathrm O(Q)$，称为相对于 $Q$ 的正交群概形。若 $Q$ 同构于 $n$ 变量标准型的基变换，则 $\mathrm O(Q)\simeq\mathrm O(n)_S$。\footnote{法文标题为 \emph{Remarques}，英译作 Lemma。法文明列闭子群，并以 $Q$ 为对应的二次型，英译此处有脱漏和 $Q/O$ 混写。}
+
+于是，对任一 $S$ 上的 $S'$，态射 $(**)$ 源中的两点 $u,u'$ 在靶上有相同像，当且仅当 $u'=uv$，其中 $v\in\mathrm O(n)(S')$。\footnote{法文在两点记号上方手写 $Q,Q'$，但这里两点在同构空间中，且随后使用 $u'=uv$，故正文统一为 $u,u'$。}
+结合16.11，并采用将来要在 EGA 第五或第六卷中更详细论述的术语（眼下可参见 SGAD 第四讲），\footnote{法文页边补有“ou en attendant SGAD IV”；英译在此处保留编辑者的待问标记。}源上的自然右 $\mathrm O(n)_S$ 作用连同投影 $(**)$，使 $\Isom(E_0,E)$ 成为 $\Qsp(E)^*$ 上结构群为 $\mathrm O(n)_{\Qsp(E)^*}$ 的主齐性纤维丛。
+
+特别地，$\mathrm{GL}(n)$ 是 $\Qsp(n)^*=\Qsp(\mathbb Z^n)^*$ 上结构群为 $\mathrm O(n)_{\Qsp(n)^*}$ 的主齐性纤维丛。于是（仍取16.9证明中的记号），$P$ 实际上是 $\mathrm O(n)_S$ 下的主齐性纤维丛，且典范地与 $Q$ 相联系：对二次型的同构具有函子性，并与基变换相容。再把纯形式论证与 EGA 的平坦下降理论相结合，就可证明函子 $(E,Q)\mapsto P$ 给出两纤维范畴之间的等价。一边是任意预概形 $S$ 上秩为 $n$ 的局部自由模上的光滑二次型，另一边是这些 $S$ 上结构群为 $\mathrm O(n)_S$ 的主齐性纤维丛。\footnote{原参考位置有手改；英译另记需向作者核对。正文保留“EGA 的平坦下降理论”，不替手稿补定卷次。}
+
+\medskip
+\noindent\textbf{16.13。}\quad 设 $Q$ 是有限正秩局部自由模 $E$ 上的光滑二次型。对 $s\in S$，除 $k(s)$ 的特征为 $2$ 且 $E$ 在 $s$ 处的秩为奇数这一情形外，$\mathrm O(Q)$ 在 $s$ 的某个开邻域上光滑；在该例外情形下则不光滑。若这一情形在 $S$ 的所有点都不发生，则（并且仅当如此）上文所考虑的 $P$ 在 $S$ 上光滑：它是 $\mathrm O(n)_S$ 下的主齐性纤维丛，故其光滑性等价于结构群的光滑性。\footnote{讨论 $P$ 和条件(iii)时仍用16.9的恒秩 $n$ 约定；秩不恒定时，在各秩层分别陈述。}
+利用“亨泽尔引理”，可在16.9的等价条件中加上：
+\begin{quote}
+\textup{(iii ter)} 同(iii)，但要求 $S'\to S$ 为满射且平展。
+\end{quote}
+
+保持此前的假设，还可得到更强的结论。由约化群概形及其主齐性纤维丛的一般理论（参见 SGAD 第二十四讲），若 $Q$ 光滑，则每个 $s$ 都有开邻域 $U$，以及有限、平展、满射的态射 $S'\to U$，使得 $Q_{S'}$ 与标准型同构。比如，若 $S$ 是局部概形，则在(iii ter)中可再要求 $S'\to S$ 有限。
+
+\medskip
+\newpage
+\noindent\textbf{16.14。}\quad 若去掉上述秩与特征的附加假设，16.13的结果便不再普遍成立，首先失效的就是光滑 $Q$ 满足(iii ter)。例如，设 $S=\Spec k$，$k$ 是特征 $2$ 的非完美域，$E$ 的秩为 $1$。取 $a\in k\setminus k^2$，二次型 $at^2$ 不可能在 $k$ 的可分扩张后化为标准型，因为 $k(\sqrt a)/k$ 不可分。\footnote{法文明确写 $at^2$，并在“域”上方手加“非完美”；英译在型的式子处讹作 $k^2$。}
+
+不过，一般情形仍可找到有限、局部自由、满射的态射 $S'\to S$，事实上可取 $P/\mathrm{SO}(n)_S$，它是 $\mathrm O(n)_S/\mathrm{SO}(n)_S$ 下的主齐性纤维丛。奇秩时，此商是 $S$ 上的单位平方根群概形 $\mu_{2,S}$；偶秩时，此商是常值群概形 $(\mathbb Z/2\mathbb Z)_S$。\footnote{法文手稿将 $\mu_{2,S}\simeq\mathrm O(n)_S/\mathrm{SO}(n)_S$ 补写在“一般情形”中，英译亦未区分奇偶。若按现代定义以 Dickson 不变量的核为偶秩的 $\mathrm{SO}$，必须区分奇偶；参见 Conrad，C.2.11--C.2.12。若本句只承接16.13未涵盖的奇秩情形，原式在该范围内成立。}
+基变换 $S'\to S$ 的作用是把结构群从 $\mathrm O(n)$ 降为光滑的 $\mathrm{SO}(n)$，于是前述局部等平凡结论对 $Q_{S'}$ 成立。特别地，若 $S$ 是局部概形，可在(iii bis)中额外要求平凡化标准型的态射有限。
+
+\section*{译校说明（不属原稿）}
+\noindent\textbf{一、术语与原文的开放问题。}
+作者希望用“判别式”指刻画光滑性的校正量，将极化双线性型的行列式另称“行列式”。现代术语并不完全统一：Dolgachev--Duncan 对奇维特征 $2$ 使用 \emph{half-discriminant}，并回顾相关术语和归功。此旁证不代替作者的历史提问，也不把不同归一化下的判别式直接视为同一个量。参见 \href{https://doi.org/10.2140/ant.2018.12.99}{Dolgachev--Duncan，命题2.1--2.2及评注2.3--2.4}。
+
+\medskip
+\noindent\textbf{二、16.12 的挠子判据。}
+令 $I=\Isom(E_0,E)$，$Y=\Qsp(E)^*$。右作用给出
+\[
+ I\times_S \mathrm O(n)_S\longrightarrow I\times_Y I,
+ \qquad (u,v)\longmapsto(u,uv).
+\]
+对任一测试概形，逆映射是 $(u,u')\mapsto(u,u^{-1}u')$：两者输运的标准型相同，恰意味着 $u^{-1}u'$ 保持标准型；等式不只在域值点成立。逆映射自然地与拉回相容，故给出预概形同构。再由16.11，$I\to Y$ 是 fppf。沿 $Q$ 的截面拉回即得 $P$。反过来，沿右挠子下降标准二次空间；用标准左表示形成伴随空间时，等价关系写作 $(pv,x)\sim(p,vx)$，因此等距同构挠子的评价映射 $[p,x]\mapsto p(x)$ 定义良好。fppf 下降给出互逆构造及其基变换相容性。
+
+\medskip
+\newpage
+\noindent\textbf{三、平展与有限平展不是同一个断言。}
+光滑满射可在平展局部取截面；有限平展平凡化另用 \href{https://grothendiecksga.com/read/sga3/fr/XXIV-4.html}{SGA 3，第二十四讲，4.2.2--4.2.4}。此处标准 $\mathrm{SO}(n)$ 在 $n\ge3$ 时为定型半单群，$n=2$ 时为分裂环面，$n=1$ 时平凡；后两种同样可用分裂约化群情形（4.2.3）。在16.13的假设下，商是有限平展群，先拉回商挠子，再应用该定理；局部化后所得有限平展覆盖仍半局部。对 Zariski 局部陈述，或按4.1.2等价判据，或利用有限表示将局部环上的数据扩到某个开邻域。第16.14项在奇秩特征 $2$ 时第一步并不平展；但有限局部自由覆盖后可再作有限平展平凡化，复合仍有限、忠实平坦且有限表示。
+
+\medskip
+\noindent\textbf{四、秩一反例与结构群之商。}
+秩一的射影空间是 $\mathbb P^0_k$，$at^2$ 的射影零概形为空，故该型按定义光滑；要化为 $t^2$，等价于让 $a$ 成为平方。扩张 $k(\sqrt a)/k$ 是二次纯不可分扩张。它提供 fppf 覆盖，却不能用可分扩张代替。
+\par
+奇秩时，行列式把正交群映到 $\mu_2$；标量矩阵 $\epsilon I$ 的行列式等于 $\epsilon^n=\epsilon$，故给出截面。局部取 $\det E$ 的平凡化后，若 $u$ 输运标准型为 $Q$，则 $(\det u)^2=\widetilde d(Q)/\widetilde d(Q_0)$。因此局部商挠子正是取该单位的平方根。偶秩时，商由 Dickson 不变量给出，并不在特征 $2$ 处退化为 $\mu_2$。例如二维双曲型 $xy$ 的变量交换在特征 $2$ 处行列式为 $1$，其 Dickson 不变量却非零。参见 \href{https://math.stanford.edu/~conrad/papers/luminysga3.pdf}{Conrad，附录 C.2.8、C.2.11--C.2.12}。这也解释16.13的例外为何恰为奇秩且剩余特征为 $2$。
+\end{document}

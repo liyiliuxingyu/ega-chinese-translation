@@ -1,0 +1,260 @@
+% 底本：EGAIV.1.pdf，PDF第195--200页，原分册印刷第196--201页。
+\egap{22.4.5}
+现在设 $A,B$ 为特征 $p>0$ 的环，两个同态
+\[
+ A\xrightarrow{i}B\xrightarrow{j}A
+\]
+满足（21.3.1）的条件。再设 $\mathfrak m$ 为 $A$ 中平方为零的理想，置
+\[
+ K=A/\mathfrak m,\qquad B_{(K)}=B\otimes_AK=B/Bi(\mathfrak m),
+\]
+并记典范同态为 $\varphi:A\to K$、$\psi:B\to B_{(K)}$。
+因为 $\varphi$ 满射，$\Omega^1_{B_{(K)}/A}$ 典范地识别于 $\Omega^1_{B_{(K)}/K}$（20.5.15）。
+对 $x\in\mathfrak m$，由 $p\ge2$ 有 $j(i(x))=x^p=0$，所以 $j(i(\mathfrak m))=0$。
+于是 $j$ 诱导同态 $j':B_{(K)}\to A$。若 $i'=\psi\circ i:A\to B_{(K)}$，则
+\[
+ j'(i'(x))=x^p,\qquad i'(j'(y))=y^p
+ \qquad(x\in A,\ y\in B_{(K)}).
+\]
+沿用（21.3.2）的记号，令
+\[
+ \Theta_{B_{(K)}/A}
+ =\Omega^1_{B_{(K)}/A}\otimes_{B_{(K)}}A_{[j']}
+ =\Omega^1_{B_{(K)}/K}\otimes_{B_{(K)}}A_{[j']},
+\]
+便得到典范同态
+\begin{equation}
+ \pi_{B_{(K)}/A}:\Theta_{B_{(K)}/A}\longrightarrow\Omega^1_A.
+ \tag{22.4.5.1}
+\end{equation}
+另一方面，将 $i,j$ 对相应理想取商，得到
+\[
+ K\xrightarrow{i_0}B_{(K)}\xrightarrow{j_0}K
+\]
+及交换图
+\[
+ \begin{tikzcd}[column sep=large,row sep=large]
+ A\arrow[r,"i"]\arrow[d,"\varphi"']&B\arrow[r,"j"]\arrow[d,"\psi"]&A\arrow[d,"\varphi"]\\
+ K\arrow[r,"i_0"']&B_{(K)}\arrow[r,"j_0"']\arrow[ur,"j'" description]&K.
+ \end{tikzcd}
+\]
+还满足 $j_0(i_0(s))=s^p$、$i_0(j_0(t))=t^p$，其中 $s\in K$、$t\in B_{(K)}$。
+同样定义
+\[
+ \Theta_{B_{(K)}/K}
+ =\Omega^1_{B_{(K)}/K}\otimes_{B_{(K)}}K_{[j_0]}
+ =\Theta_{B_{(K)}/A}\otimes_AK.
+\]
+将（22.4.5.1）张量 $K$，得到典范的 $K$-同态
+\begin{equation}
+ \pi'_{B_{(K)}/K}=\pi_{B_{(K)}/A}\otimes1_K:
+ \Theta_{B_{(K)}/K}\longrightarrow\Omega^1_A\otimes_AK.
+ \tag{22.4.5.2}
+\end{equation}
+由定义可知下图交换：
+\[
+ \begin{tikzcd}[column sep=large,row sep=large]
+ \Theta_{B_{(K)}/K}\arrow[r,"\pi'_{B_{(K)}/K}"]\arrow[dr,"\pi_{B_{(K)}/K}"']&
+ \Omega^1_A\otimes_AK\arrow[d,"i_{K/A}"]\\
+ &\Omega^1_K.
+ \end{tikzcd}
+\]
+其中 $\pi_{B_{(K)}/K}$ 为对应 $i_0,j_0$ 的典范同态（21.3.2.2）。将 $\pi'_{B_{(K)}/K}$ 限制到
+$\Xi_{B_{(K)}/K}=\Ker(\pi_{B_{(K)}/K})$，便得到
+\begin{equation}
+ \Xi_{B_{(K)}/K}\longrightarrow
+ \Ker(\Omega^1_A\otimes_AK\to\Omega^1_K)=\Upsilon_{K/A}.
+ \tag{22.4.5.3}
+\end{equation}
+
+\egap{22.4.6}
+在（22.4.5）的假设及记号下，进一步假设 $\mathfrak m$ 为平方为零的极大理想，故 $K$ 为域；记 $V=\mathfrak m$，视为 $K$-向量空间。
+$K$ 在其素域 $\mathbb F_p$ 上形式光滑（19.6.1），而 $A$ 为 $\mathbb F_p$-代数，所以 $\Omega^1_A=\Omega^1_{A/\mathbb F_p}$。
+由（20.5.14）得到
+\begin{equation}
+ 0\longrightarrow V\longrightarrow\Omega^1_A\otimes_AK
+ \longrightarrow\Omega^1_K\longrightarrow0.
+ \tag{22.4.6.1}
+\end{equation}
+\cmt{N14-T03}{原文在此引用（21.5.2），但该条是完备离散赋值环的MacLane判据；这里所需的是域在素域上的形式光滑性，故正文引用（19.6.1）。}
+因而（22.4.5.3）给出
+\begin{equation}
+ \chi_{B/A}:\Xi_{B_{(K)}/K}\longrightarrow V,
+ \tag{22.4.6.2}
+\end{equation}
+称为 $A$-代数 $B$ 的\emph{特征同态}（相对于 $i,j,\mathfrak m$）。
+由定义，$\chi_{B/A}$ 单射，当且仅当 $\pi'_{B_{(K)}/K}$ 单射，因为后者的核包含在 $\Xi_{B_{(K)}/K}$ 中。
+
+\egas{22.4.7}{命题}
+设 $A$ 为阿廷局部环，极大理想 $\mathfrak m$ 平方为零，剩余域为 $K$，并将 $V=\mathfrak m$ 视为 $K$-向量空间。假设 $A$ 的特征为 $p>0$。
+设
+\begin{equation}
+ F_i(T_i)=T_i^p-f_i,\qquad f_i\in A\quad(1\le i\le r),
+ \tag{22.4.7.1}
+\end{equation}
+且 $B=A[T_1,\ldots,T_r]/(F_1,\ldots,F_r)$。则：
+
+\noindent（i）$B$ 为局部环。
+
+\noindent（ii）令 $\mathfrak m'$ 为 $B$ 的极大理想，$K'=B/\mathfrak m'$，并将 $V'=\mathfrak m'/\mathfrak m'^2$ 视为 $K'$-向量空间。
+则 $\rk_KV=\rk_{K'}V'$ 当且仅当特征同态
+\begin{equation}
+ \chi_{B/A}:\Xi_{B_{(K)}/K}\longrightarrow V
+ \tag{22.4.7.2}
+\end{equation}
+单射。
+
+\eproof
+仍记 $a_i=f_i\bmod\mathfrak m$。这些元素未必在 $K^p$ 上 $p$-无关，但可重排，使
+$(a_i)_{s+1\le i\le r}$ 在 $K^p$ 上 $p$-无关，并构成 $K^p(a_1,\ldots,a_r)$ 在 $K^p$ 上的一组 $p$-基。因此
+\[
+ a_i\in K^p(a_{s+1},\ldots,a_r)\qquad(1\le i\le s).
+\]
+令 $A''$ 为 $A[T_{s+1},\ldots,T_r]$ 对由 $F_{s+1},\ldots,F_r$ 生成的理想的商。
+由（22.4.4），$A''$ 为局部环，其极大理想 $\mathfrak m''=\mathfrak mA''$ 平方为零，剩余域
+\[
+ K''=K(a_{s+1}^{1/p},\ldots,a_r^{1/p}).
+\]
+对 $1\le i\le s$，有 $a_i\in K''{}^p$，故在 $A''$ 中可写成
+\begin{equation}
+ f_i=g_i^p+h_i,\qquad g_i\in A'',\quad h_i\in\mathfrak m''.
+ \tag{22.4.7.3}
+\end{equation}
+$h_i$ 唯一：任意两个 $g_i$ 在剩余域中的像相同，因域的Frobenius单射；它们之差在 $\mathfrak m''$ 中，故其 $p$ 次幂之差为零。
+在各多项式中把 $T_i$ 换为 $T_i+g_i$，得到
+\[
+ G_i(T_i)=T_i^p-h_i\qquad(1\le i\le s).
+\]
+于是 $B=A''[T_1,\ldots,T_s]/(G_1,\ldots,G_s)$。各 $G_i$ 除首项外的系数均在 $\mathfrak m''$ 中，故（22.4.3）适用：$B$ 为局部环，其剩余域 $K'$ 同构于 $K''$。
+这证明（i）；也可直接注意到 $B^p\subseteq A$，所以在 $\mathfrak m$ 之上只有一个素理想。
+
+根据（22.4.6），（22.4.7.2）单射当且仅当
+\[
+ \pi'_{B_{(K)}/K}:\Omega^1_{B_{(K)}/K}\otimes_{B_{(K)}}K
+ \longrightarrow\Omega^1_A\otimes_AK
+\]
+单射。
+这里 $B_{(K)}=K[T_1,\ldots,T_r]/(T_i^p-a_i)_i$；因这些关系的相对微分为零，（20.5.13）说明
+$\Omega^1_{B_{(K)}/K}$ 是以 $d_{B_{(K)}/K}t_i$ 为基的自由 $B_{(K)}$-模。
+按（22.4.5），$j':B_{(K)}\to A$ 将 $x\bmod\mathfrak mB$ 映到 $x^p$；因此
+\[
+ \pi'_{B_{(K)}/K}(d_{B_{(K)}/K}t_i\otimes1)=d_Af_i\otimes1_K.
+\]
+所求条件等价于 $d_Af_i\otimes1_K$ 在 $K$ 上线性无关，也等价于它们扩张标量到 $K'$ 后线性无关。
+
+对 $A''/A$ 应用（22.4.4），典范同态
+\[
+ \Omega^1_A\otimes_AK'\longrightarrow\Omega^1_{A''}\otimes_{A''}K'
+\]
+的核以 $d_Af_i\otimes1_{K'}$（$s+1\le i\le r$）为基。
+故上述线性无关条件又等价于
+$d_{A''}f_i\otimes1_{K'}$（$1\le i\le s$）在目标空间中线性无关。
+由（22.4.7.3）及 $pA''=0$，有 $d_{A''}f_i=d_{A''}h_i$。
+
+置 $V''=\mathfrak m''$。由（22.4.1，ii），$\rk_{K'}V''=\rk_KV$，所以
+$\rk_{K'}V'=\rk_KV$ 等价于 $\rk_{K'}V'=\rk_{K'}V''$。
+根据（22.4.3），后者等价于各 $h_i$（$1\le i\le s$）在 $V''$ 中线性无关。
+再由（22.4.6.1），典范映射
+\[
+ V''\longrightarrow\Omega^1_{A''}\otimes_{A''}K'
+\]
+单射并将 $h_i$ 映到 $d_{A''}h_i\otimes1_{K'}$；故这正是前述条件。命题得证。
+\finishproof
+
+上述证明同时给出：
+\egas{22.4.7.4}{推论}
+$\rk_KV=\rk_{K'}V'$ 当且仅当
+\[
+ d_Af_i\otimes1_K\quad(1\le i\le r)
+\]
+在 $K$-向量空间 $\Omega^1_A\otimes_AK$ 中线性无关。
+
+\egas{22.4.8}{注}
+（22.4.5.2）和（22.4.6.2）也可在稍有不同的条件下定义。
+设 $A$ 为环，$\mathfrak m^2=0$，$K=A/\mathfrak m$；设 $p$ 为素数且 $p\cdot1\in\mathfrak m$。
+因此 $K$ 的特征为 $p$，但不要求 $A$ 本身的特征为 $p$。
+设 $B$ 为忠实平坦的 $A$-代数，因而可将 $A$ 识别为 $B$ 的子环，并假设
+\begin{equation}
+ y^p\in A+pB\subseteq A+\mathfrak mB\qquad(y\in B).
+ \tag{22.4.8.1}
+\end{equation}
+若 $y^p=x+pz$，其中 $x\in A,z\in B$，则 $x$ 模 $A\cap pB$ 的类由 $y$ 唯一确定。
+由忠实平坦性，$A\cap pB=pA$，所以这给出典范映射
+\[
+ j:B\longrightarrow A/pA,\qquad y\longmapsto x\bmod pA.
+\]
+若又有 $y'^p=x'+pz'$，则利用 $\binom pi$（$1\le i<p$）均为 $p$ 的倍数，得到
+\[
+ (y+y')^p-x-x'\in pB,\qquad(yy')^p-xx'\in pB.
+\]
+因而 $j$ 为环同态。复合得到
+\[
+ j':B\longrightarrow A/pA\longrightarrow K
+\]
+以及 $j'_0:B_{(K)}\to K$。典范同态 $i_0:K\to B_{(K)}$ 和 $j'_0$ 满足（21.3.1）的条件。
+
+要定义
+\[
+ \pi'_{B_{(K)}/K}:\Omega^1_{B_{(K)}/K}\otimes_{B_{(K)}}K_{[j'_0]}
+ \longrightarrow\Omega^1_A\otimes_AK,
+\]
+根据（20.4.8），只须定义一个 $K$-导子
+\begin{equation}
+ D_0:B_{(K)}\longrightarrow\Omega^1_A\otimes_AK,
+ \tag{22.4.8.2}
+\end{equation}
+其目标的 $B_{(K)}$-模结构由 $j'_0$ 给出。
+为此，只须定义在 $\mathfrak mB$ 上为零的 $A$-导子
+\begin{equation}
+ D:B\longrightarrow\Omega^1_A\otimes_AK,
+ \tag{22.4.8.3}
+\end{equation}
+目标的 $B$-模结构由 $j'$ 给出。
+当 $y^p=x+pz$ 时，$d_Ax\otimes1_K$ 只依赖 $x\bmod pA$，因为
+$d_A(pt)=p\,d_At$，而 $p\in\mathfrak m$。因此可取
+\[
+ D(y)=d_Ax\otimes1_K.
+\]
+$j$ 为环同态，所以 $D$ 为导子。
+对 $t\in A$，由
+\[
+ d_A(t^px)=t^p d_Ax+pt^{p-1}x\,d_At
+\]
+得到 $D(ty)=t^pD(y)=j'(t)D(y)$，且 $D(t)=0$；这正是所指定模结构下的 $A$-导子条件。
+若 $t\in\mathfrak m$，则 $t^p=0$，故 $D(ty)=0$。于是得到了所需同态。
+复合
+\[
+ \Theta_{B_{(K)}/K}\xrightarrow{\pi'_{B_{(K)}/K}}\Omega^1_A\otimes_AK
+ \longrightarrow\Omega^1_K
+\]
+仍为对应 $i_0,j'_0$ 的 $\pi_{B_{(K)}/K}$，故也有（22.4.5.3）的相应同态。
+
+若 $K$ 为域，则 $A/pA$ 为 $\mathbb F_p$-代数；（20.5.14）给出
+\[
+ 0\longrightarrow V/pA\longrightarrow
+ \Omega^1_{A/pA}\otimes_{A/pA}K\longrightarrow\Omega^1_K\longrightarrow0,
+\]
+其中 $V=\mathfrak m$。
+另一方面，（20.5.12.1）给出
+\[
+ pA\longrightarrow\Omega^1_A\otimes_A(A/pA)
+ \longrightarrow\Omega^1_{A/pA}\longrightarrow0.
+\]
+第一箭头在进一步张量 $K$ 后为零，故
+$\Omega^1_A\otimes_AK\simeq\Omega^1_{A/pA}\otimes_{A/pA}K$。
+因此（22.4.6.2）的对应形式为
+\begin{equation}
+ \Xi_{B_{(K)}/K}\longrightarrow
+ V/pA=\mathfrak m/(\mathfrak m^2+pA).
+ \tag{22.4.8.4}
+\end{equation}
+
+现在，若 $A$ 为阿廷局部环，而 $B$ 由（22.4.4.1）的多项式定义，则（22.4.7）的判据仍有如下形式：
+设 $\mathfrak m'$ 为 $B$ 的极大理想，$K'=B/\mathfrak m'$，则（22.4.8.4）单射当且仅当
+\[
+ \dim_K\frac{\mathfrak m}{\mathfrak m^2+pA}
+ =\dim_{K'}\frac{\mathfrak m'}{\mathfrak m'^2+pB}.
+\]
+这只要求 $K$ 的特征为 $p$，不要求 $A$ 的特征为 $p$。
+因为 $B$ 是自由 $A$-模，故忠实平坦；把 $A,B$ 同时模去 $p$，便得到（22.4.7）的情形，所得特征同态就是（22.4.8.4）。
+\cmt{N14-N02}{原文说将 $V,V'$ 分别替换为 $V/pA,V'/pB$ 后判据仍成立。这里 $pB$ 应理解为它在 $V'=\mathfrak m'/\mathfrak m'^2$ 中的像。正文明确写出两个商，避免把该结论误读成未模去 $p$ 的余切维数相等。尤其不能用它直接替代（22.5.1）的正则性判据；这一差别正是下文（22.5.4）需修订的原因。}

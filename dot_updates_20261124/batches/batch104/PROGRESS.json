@@ -1,0 +1,21 @@
+{
+  "batch": 104,
+  "this_french_pages": [
+    36,
+    37,
+    38,
+    39
+  ],
+  "this_english_pages": [
+    25,
+    26,
+    27
+  ],
+  "this_from": "法36无分歧段首（覆写号暂不定）",
+  "this_through": "法39奇异零概形的等同性证明结束",
+  "french_full_pages_through": 38,
+  "next": "法39页尾维数推论起笔接法40；英27后部接28",
+  "merge_into_1158_done": false,
+  "formal_EGA_IV_1": "另线221提要 / 223定义1.1.1",
+  "unverified": "覆写段号及法稿被裁字；参数像余维一未核，不能当作通用结论"
+}

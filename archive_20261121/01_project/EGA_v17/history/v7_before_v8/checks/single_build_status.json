@@ -1,0 +1,10 @@
+{
+  "book_single": {
+    "passes": 3,
+    "returncode": 0
+  },
+  "audit_single": {
+    "passes": 3,
+    "returncode": 0
+  }
+}

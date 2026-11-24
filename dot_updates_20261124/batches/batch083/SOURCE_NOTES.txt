@@ -1,0 +1,6 @@
+法文作者手稿：EGA5.pdf，物理171页，SHA256 24cf8204184b58b18a46e5f63ecc36d6e791b3c8c96a09daac93de96ebd8e830。
+法文参考：https://webusers.imj-prg.fr/~leila.schneps/grothendieckcircle/EGA/EGA5.pdf
+英译编辑底本：https://webusers.imj-prg.fr/~leila.schneps/grothendieckcircle/EGA/EGA5trans.pdf
+英译物理112页，SHA256 23a20ef32fd16a1bd623c0c08ac080d04fc94f248de12133b713a19d6b0330d9。
+法140下(147)、141(148)、142(149)、143上(150)；对应英106、107、108上。将法143和英108的一般底段落留至下次。未确认的边栏不作为正文。
+参考：Stacks 04L0 固有整概形的全局函数、0477 Jacobson、01OA 射影丛、062Y 相对 Cartier。

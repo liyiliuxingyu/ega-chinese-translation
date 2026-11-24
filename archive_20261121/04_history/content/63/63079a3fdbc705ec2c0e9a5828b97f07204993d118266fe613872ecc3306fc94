@@ -1,0 +1,90 @@
+from pathlib import Path
+import json,re
+OUT=Path('/workspace/scratch/a886fd56dd2f/integration/early')
+t=(OUT/'body_early_base.tex').read_text();r=(OUT/'report_early_base.tex').read_text();changes=[]
+def rep(a,b,reason):
+ global t
+ assert a in t,a[:120]
+ assert t.count(a)==1,(a[:80],t.count(a))
+ t=t.replace(a,b,1);changes.append(dict(original=a,revised=b,reason=reason))
+def note(fragment,new):
+ global t
+ k=t.index(fragment);a=t.rfind('\\transnote{',0,k);assert a>=0
+ start=a+len('\\transnote{');depth=1;i=start
+ while depth:
+  if t[i]=='{' and (i==0 or t[i-1]!='\\'):depth+=1
+  elif t[i]=='}' and (i==0 or t[i-1]!='\\'):depth-=1
+  i+=1
+ old=t[a:i];rep(old,'\\transnote{'+new+'}','更新随正文校正后的译注')
+
+rep('纤维 $P_s^\\vee$ 中每个在 $k(s)$ 上有理的点 $\\xi$','纤维 $P_s^\\vee$ 中每个在 $k(s)$ 上有理的点 $\\xi_0$','7.1将纤维点与截面区分')
+note('底本这一句先把纤维中的点',r'底本先将纤维中的点写为 $\xi$，末尾却写为 $\xi_0$，并且又以 $\xi$ 表示截面。正文将纤维点统一为 $\xi_0$，截面仍记为 $\xi$。这是同句源靶所确定的记号校正。')
+rep('则非空开集 $U$ 中未必存在 $k$-有理点，但 $U$ 中必定有闭点','则参数空间中的非空开子集未必存在 $k$-有理点，但其中必定有闭点','7.1避免参数开集与基底邻域都记U')
+rep(r'S_s^1\xrightarrow{\sim}\Spec(k\')',r'S\'_s\xrightarrow{\sim}\Spec(k\')','7.1纤维S撇下标校正') if False else None
+rep("S_s^1\\xrightarrow{\\sim}\\Spec(k'),","S'_s\\xrightarrow{\\sim}\\Spec(k'),",'7.1校正纤维记号')
+note('上式底本确实排作',r"上式底本印作 $S_s^1$，上下文中的有限平展扩张始终为 $S'$，且所述对象是其在 $s$ 上的纤维，故正文订为 $S'_s$。该段回指（6.1）开头，而那里假设 $k$ 代数闭，此处却讨论 $k$ 有限；回指不一致仍待核，不擅自更改引用编号。原文又把参数空间的开子集与基底邻域均记为 $U$，正文用文字区分。")
+rep('取 $S\\in S$，并假设','取 $s\\in S$，并假设','7.2点变量纠错')
+rep('则在 $E$ 中存在 $s$ 的一个邻域 $U$','则在 $S$ 中存在 $s$ 的一个邻域 $U$','7.2基底邻域位置纠错')
+rep('对每个 $x\\in U$，$Y_{\\xi,s}$ 中 $G_{\\xi(s)}$ 不满足 $P$ 的点的集合的维数 $\\leq m$，而且 $\\phi_{\\xi(s)}$ 是 $F_{\\xi,s}$-正则的。','对每个 $t\\in U$，$Y_{\\xi(t)}$ 中 $G_{\\xi(t)}$ 不满足 $P$ 的点的集合的维数 $\\leq m$，而且 $\\phi_{\\xi(t)}$ 是 $F_t$-正则的。','7.2统一随基底点变化的纤维指标')
+note('本段保留了底本的',r'底本先后印作 $S\in S$、“在 $E$ 中”、$x\in U$、$Y_{\xi,s}$、$G_{\xi(s)}$ 和 $F_{\xi,s}$，点变量和纤维指标不相容。正文按本段所述基底邻域及相应超平面截面，统一为 $s\in S$、$U\subset S$，并用 $t\in U$ 遍历纤维；正则性针对 $X_t$ 上的 $F_t$。这里只修复对象和指标，不将前文未核实的性质推广一并视作已经审定。')
+a=t.index(r'\egas{7.4}{命题}');b=t.index(r'\egas{7.5}{备注}',a)
+old=t[a:b]
+r+='\n\\subsection*{D17-E01：（7.4）原断言与证明的完整对照}\n\\noindent\\textbf{以下是底本按字面的旧译，不作为有效命题采用。}\n'+old.replace(r'\egas{7.4}{命题}',r'\noindent\textbf{原命题（7.4）。}')
+new=r'''\egas{7.4}{原断言按所印假设不成立；译校暂不采用}
+所印条件“不可分点集的维数 $\leq n=\dim X_s$”不足以保证所称有限平展多截面的存在。此处不以一个未经证明的替代假设恢复该命题；原陈述、原证明及原脚注27完整保存在核查报告 D17-E01。\cmt{D17-E01}{取 $k=\mathbf F_p(t)$，$L=k(t^{1/p})$，$X=\Spec L$、$S=\Spec k$。态射有限、平坦且固有，$n=0$，满足所印维数上界；但若在某非空有限平展 $S'$ 上有截面，则 $L$ 可嵌入一个有限可分 $k$-扩张，矛盾。这证明所印命题本身不成立。底本证明中“$n=0$ 时 $X$ 本身平展”的步骤也不成立，见报告中的双数例子。此项处理是译校决定，不表示作者正式撤销该条。}
+
+'''
+t=t[:a]+new+t[b:];changes.append(dict(item='7.4',reason='纯不可分域反例否定现存假设；完整旧译移报告，不冒称作者撤回'))
+
+rep('这个余维的一个更好的上界','这个余维的一个更好的下界','8.1余维界方向')
+note('“上界”按底本 upper bound',r'底本为 upper bound（上界），但本段要把“余维至少一”加强为“余维至少二”；正确的方向是改善下界，正文据此订正。')
+rep('那么 $Z$ 在 $P^\\vee$ 中的余维为二。','那么 $Z$ 在 $P^\\vee$ 中的余维至少为二。','8.2误把余维下界写精确值')
+rep('甚至可以取 $Z$ 为如下 $\\xi\\in P^\\vee$ 的集合：$T_{k(\\xi)}$ 存在一个不可约分支，其在 $Y_\\xi$ 上的迹具有最大的维数。','甚至可以考察如下 $\\xi\\in P^\\vee$ 的集合：给定闭子集 $T$ 的基变换 $T_{k(\\xi)}$ 存在一个不可约分支，其在 $Y_\\xi$ 上的迹具有最大的维数。','8.2区分参数集合与给定闭子集T')
+rep(r'\coprof_y G_{k(\xi)}=\coprof_y G_\xi',r'\coprof_y F_{k(\xi)}=\coprof_y G_\xi','8.2正则商前后的余深度')
+rep('$T_\\xi$ 的余深度 $\\leq n$','$G_\\xi$ 的余深度 $\\leq n$','8.2模的名称')
+note('本段保留 $T_{k(\\xi)}$',r'底本把给定闭子集与参数例外集均记为 $Z$，中间又出现 $T_{k(\xi)}$；正文将后者明确为给定闭子集 $T$ 的基变换，并不改变所取例外集。余深度公式左端原作 $G_{k(\xi)}$，下一句又作 $T_\xi$；按 $G_\xi=F_{k(\xi)}/\phi_\xi F_{k(\xi)}$ 的正则商关系，分别订为 $F_{k(\xi)}$、$G_\xi$：正则元使局部维数与深度同时降一，故余深度不变。原文“余维为二”过强，例如 $X=P=\mathbf P^3$ 的恒等嵌入具有空异常集；正文仅写所需下界。开头那个难辨的维数阈值仍未补字。')
+rep('$f_{k(\\xi)}$-正则的','$F_{k(\\xi)}$-正则的','8.3模正则性对象')
+rep('三维正规（因此满足 $(S_2)$）整簇 $X\\subset P^\\vee$ 出发，它有一点 $X\\in X$','三维正规（因此满足 $(S_2)$）整簇 $X\\subset P$ 出发，它有一点 $x\\in X$','8.3环境射影空间及点变量')
+rep('也就是说，它们在 $x$ 处“met $(S_2)$”〔底本作 they are met $(S_2)$，英文用语不明〕。','也就是说，它们在 $x$ 处不满足 $(S_2)$。','8.3非CM曲面处的S2方向')
+note('首句缺少可确立的完整断言',r'首句在底本中缺少完整谓语，仍按残句保留。其中 $f_{k(\xi)}$ 订为模 $F_{k(\xi)}$；后面的环境 $P^\vee$、点 $X\in X$ 分别订为 $P$、$x\in X$。“met $(S_2)$”不成英文，且这里正规三维局部环非 Cohen--Macaulay 时深度为2，正则超平面商的维数为2而深度为1，故应为“不满足 $(S_2)$”。这些可确定订正不恢复首句所缺的完整断言。')
+
+# The long 8.4 argument is edited in a separate reviewed text; the old version is retained verbatim for comparison.
+a=t.index(r'\egas{8.4}{命题}');b=t.index(r'\egas{8.5}{推论}',a)
+old=t[a:b]
+r+='\n\\subsection*{D17-E02：（8.4）及（8.4.1）旧稿对照}\n\\noindent\\textbf{以下保留旧译所见的错误符号与残句，仅供核对；现正文已订正确定的维数和包含关系。}\n'+old.replace(r'\egas{8.4}{命题}',r'\noindent\textbf{原命题（8.4）。}').replace(r'\egas{8.4.1}{引理}',r'\par\noindent\textbf{原引理（8.4.1）。}')
+t=t[:a]+(OUT/'corrected_84.tex').read_text()+t[b:]
+changes.append(dict(item='8.4/8.4.1',reason='修正T/X及Y/T、等号、包含方向、参数空间，完整旧稿存报告'))
+rep(r'\egas{8.5}{推论}',r'\egas{8.5}{推论残文（首项假设及 $Z_n$ 定义缺失）}','8.5缺文状态明示')
+rep('也就是说 $F$ 的真深度 $\\geq k+1$','也就是说这里对应的是 $F$ 的真深度 $<k+1$','8.5余深度与深度的相反方向')
+note('$Z_n$ 的定义和首项假设均有实质缺文',r'$Z_n$ 的定义和首项假设均有实质缺文，不可据此直接使用判据。底本“余深度 $>d-(k+1)$”后写成“真深度 $\geq k+1$”，方向相反；由余深度等于局部维数减深度，在维数 $d$ 处应为深度 $<k+1$，正文已订正。缺少的谓语和完整判据不据此猜补。')
+rep(r'\egap{8.6}',r'\egap{8.6}\textbf{〔承接前条的判据残文；下列明确错符已校正，完整前提仍待核。〕}','8.6限定未恢复完整判据')
+rep('$\\dim F_x\\geq k_1$','$\\dim F_x\\geq k+1$','8.6与深度阈值一致的维数条件')
+rep('$\\phi_\\xi$ 为 $X_{k(\\xi)}$-正则且 $x\\in Y_\\xi$','$\\phi_\\xi$ 为 $F_{k(\\xi)}$-正则且 $x\\in Y_\\xi$','8.6正则性作用对象')
+rep(r'\prof G_{\xi,x}=\prof F)_x-1',r'\prof G_{\xi,x}=\prof F_x-1','8.6深度式括号下标')
+rep(r'\prof G_xix\geq k',r'\prof G_{\xi,x}<k','8.6不满足Sk要求深度严格小于k')
+note('首行确印为 $k_1$',r'底本首行作 $k_1$，但此段考察的正是维数至少 $k+1$ 而深度未达到 $k+1$ 的点；按随后维数降一、深度降一的论证订为 $k+1$。$X_{k(\xi)}$、$\prof F)_x$、$G_xix$ 分别订为 $F_{k(\xi)}$、$\prof F_x$、$G_{\xi,x}$。底本末段作 $\prof G_xix\geq k$；这与其声称不满足 $(S_k)$ 相反，且若 $F$ 满足 $(S_k)$、$\dim F_x\geq k+1$ 而此处深度条件失效，就有 $\prof F_x=k$，故 $\prof G_{\xi,x}=k-1<k$。以上为可确定的推演修正，不补全（8.5）已缺失的假设及 $Z_n$ 定义。')
+
+# Remove an inaccurate historical note: the condition list survives even though 8.8's heading does not.
+rep('现有底本缺失8.8及其(ii bis)条件，故无法仅凭这句完成核验','现有底本缺失8.8的标题和完整假设，虽残存含(ii bis)的条件列表，仍无法仅凭这句完成核验','9.2准确区分缺失标题与现存条件列表')
+
+# Replace the known false constructive-set assertion with its closed-set form, retaining the old text in the report.
+a=t.index('设 $Z$ 是 $P^v$ 中相对于一个可构造性质');b=t.index('我们把 $L$-预概形',a)
+old=t[a:b]
+r+='\n\\subsection*{D17-E03：（10.1）例外集与闭包}\n\\noindent\\textbf{旧稿按底本保留的整段：}\n'+old
+new=r'''设 $Z$ 是 $P^\vee$ 中相对于一个可构造性质 $\mathcal P$ 的例外集，并假设 $Z$ 为可构造子集，$S=\Spec(k)$。例外集的余维按其闭包的余维理解。以下关于直线的判据以 $\dim P^\vee\geq1$ 为前提。\transnote{原稿直接讨论直线，未单列零维参数空间；零维射影空间不含直线，不能使用这里的直线存在性判据。}我们将看到（参见第12节，那里将补述一些无疑本应在前几节出现的内容），条件
+\[
+\codim(\overline Z,P^\vee)\geq2
+\]
+等价于：几何意义下充分一般的直线 $L$ 不与 $\overline Z$ 相交。对于闭集 $\overline Z$，只要存在一条与之不相交的几何直线便足够。\cmt{D17-E03}{底本在“$Z$”“或者甚至 $Z$”以及“应为 $Z$”处没有可辨的上划线，并称存在单条不交 $Z$ 的直线便足够；这对一般可构造集不成立。取射影平面中一条直线删去一点，经过所删点的另一条直线可避开该集合，而其闭包的余维仍为1。正文明确使用闭包；旧句及编辑批注完整保存于报告。底本脚注55为“请询问A.G.”。此订正不声称恢复了未见的法文手稿。}
+若 $k$ 无限，上述余维条件又等价于存在一条定义于 $k$、不与 $\overline Z$ 相交的直线 $L\subset P^\vee$。\transnote{底本此句印为小写 $\bar z$，正文按同一例外集写作 $\overline Z$。闭集余维至少2时，避开它的直线构成 Grassmann 簇的非空开集；其仿射坐标图在无限域上有稠密的 $k$-有理点。反之，任何余维1的射影闭子集都与每条几何直线相交。这里区分几何直线与定义于 $k$ 的直线。}
+'''
+t=t[:a]+new+t[b:];changes.append(dict(item='10.1',reason='可构造集单条避交直线判据为假；正文改为闭包并区分几何与k有理直线'))
+rep('而且这样的点在 $k$ 上有理','而且这样的点在相应参数点 $\\xi$ 的剩余域 $k(\\xi)$ 上有理','10.2区分纤维基域与全局基域')
+note('底本确实写“rational over $k$”',r'底本确实写“rational over $k$”。纤维在参数点 $\xi$ 的剩余域上定义，故相应唯一几何奇异点的有理性应表述为在 $k(\xi)$ 上有理，不能无条件说成在 $k$ 上有理；正文据此订正其基域。这整段仍是原稿拟议的应用，所引用的（9.5）在现有底本中残缺，译校不声称已补齐它或独立证明全部存在性。')
+
+r+='\n'+(OUT/'report_new_early.tex').read_text()
+t=t.replace('P^v','P^\\vee').replace('E^v','E^\\vee')
+(OUT/'body_early.tex').write_text(t+'\n'+(OUT/'section11.tex').read_text())
+(OUT/'report_early.tex').write_text(r)
+(OUT/'early_changes.json').write_text(json.dumps(changes,ensure_ascii=False,indent=2))
+print('changes',len(changes),'bodychars',len(t))

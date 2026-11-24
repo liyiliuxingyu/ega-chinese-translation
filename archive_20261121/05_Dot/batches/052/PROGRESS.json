@@ -1,0 +1,18 @@
+{
+  "completed": "底本60页We will assume起两个完整段落至页末泛截面非空性公理",
+  "next": "底本61页Let us again take a closed subset Z of X",
+  "previous_project": "libfile_fde3_f-8b74ec228a4c8191b87b15a466aab0d1_49ac57203c0c81918f3630f0324dcb35",
+  "source_sha256": "23a20ef32fd16a1bd623c0c08ac080d04fc94f248de12133b713a19d6b0330d9",
+  "merged_into_main": false,
+  "pdf_pages": 4,
+  "notation": "mathcal P、mathcal X、mathcal Z区别关联对象及逆像",
+  "corrections": [
+    "末句Z_eta=empty按前后文订为非空",
+    "dim f(X)<m依论证对象改为dim f(Z)<m，保留原较强充分条件于注"
+  ],
+  "unresolved": [
+    "原脚注70与不可辨长内容保持",
+    "逆像维数等式在允许空纤维情形的适用范围待核",
+    "基本公理与推广细节未独立补证，历史待核保持"
+  ]
+}

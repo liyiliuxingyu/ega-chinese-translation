@@ -1,0 +1,5 @@
+法稿 EGA5.pdf（171 页）SHA-256 24cf8204184b58b18a46e5f63ecc36d6e791b3c8c96a09daac93de96ebd8e830；物理 131–132，手写 138–139。
+英译编辑稿（112 页）SHA-256 23a20ef32fd16a1bd623c0c08ac080d04fc94f248de12133b713a19d6b0330d9；物理 99–100。
+https://webusers.imj-prg.fr/~leila.schneps/grothendieckcircle/EGA/EGA5trans.pdf
+开头法131“Supposons X→S plat loc de présentation finie”，终点法132“donc U=X-Z, cqfd.”。法131划去的旧引用及文字不混入正文；法132旁注20.11拟移动，无整段划删。
+现代补证资料：https://stacks.math.columbia.edu/tag/00R3 （10.128.3）；https://stacks.math.columbia.edu/tag/00ME （10.99.1）；https://stacks.math.columbia.edu/tag/0E9I （诺特情形的延拓判据）。

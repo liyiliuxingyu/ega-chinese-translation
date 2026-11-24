@@ -1,0 +1,34 @@
+\documentclass[openany,fontset=fandol]{ctexbook}
+\usepackage{amsmath,amssymb}
+\usepackage[unicode,hidelinks]{hyperref}
+\newcommand{\note}[1]{\footnote{译注：#1}}
+\begin{document}
+\title{代数几何基础第五卷预备笔记\\注13.4(d)：一般基底的变式}
+\author{据用户上传英译编辑稿译出}
+\date{2026年11月17日}
+\maketitle
+\chapter*{范围与校订状态}
+本批译出底本第53页注13.4(d)全部可辨文字和公式。下一处为同页13.4(e)：“One of the reasons why 13.2 is interesting”。未合入原合订本。
+
+底本在本项混用基底与闭子概形的记号，并在最后一句漏去连接语。正文按紧邻上下文统一基底为$S$、基底点为$s$、非光滑点集为$Z$，原写法及理由见脚注。维数不等式照存，残句仍标明待核，不把记号整理当作证明。
+
+本项明确是作者未给证明的说明。所引7.1指出有限剩余域情形可能需要平展基变换，而本项未列出相应限制；译文保留这一待核，不擅补假设或声称一般结论已经成立。前批8.8、8.7(c)的缺文及其他待核仍保持。
+\chapter*{§13 初等态射与M. Artin定理（续）}
+\noindent\textbf{注13.4（续）。}
+
+\noindent d) 按照7.1所说明的方法，当把基域$k$换成一般的基预概形$S$时，可以给出13.2的若干变式。我们指出下面一点（不作证明）：\note{底本开头写“a general base $Y$ prescheme”，随后写$f:X\to Y$，但紧接着所有基底条件均使用$S$，而末句又以$Y$表示$X$中的闭子概形。为区别这两个对象，正文统一将前两处作为基底的$Y$改为$S$，保留末句的闭子概形$Y$。这只是消除记号冲突，不是修改基底假设。}
+
+设$f:X\to S$是一个平坦射影态射，其纤维几何不可约且满足$(R_2)$；设$S'$是$X$的一个在$S$上有限的子概形，$s\in S$。假设对于每个位于$s$上方的$x\in S'$，纤维$X_s$在$x$处在$k(s)$上光滑。\note{底本写“$x\in S$”，但后文取$s$的邻域，并用$x$表示位于$s$上方的$S'$中的点，因此这里改为$s\in S$。纤维条件$(R_2)$照底本保留；原文没有在本项说明它是否意指几何意义下的条件，不能擅改为$(R_1)$或更强条件。}
+则存在$s$的一个开邻域$U$，以及$X|_U$中$S'|_U$的一个开邻域$V$，使得
+\[
+V\longrightarrow U
+\]
+是多重初等态射。\note{此为作者明说“without proof”的断言。所引7.1在有限剩余域的情形明确允许先作平展满射基变换；本项却只写原基底中的开邻域$U$，没有说明何时可以免去该基变换，也没有补列剩余域条件。本译文不以7.1的引用消除这一问题，亦未独立验证本项所述的一般性。}
+
+\newpage
+若$Y$是$X$的一个不与$S'$相交的闭子概形，而$Z$为$Y$在$S$上不光滑的点组成的集合，且［原句连接语残缺，待核］
+\[
+\dim Z_s\leq\dim X_s-2,
+\]
+则在上述结论中，还可以取$V\subset X-Y$。\note{底本末句可辨部分为“such that the set $X$ of points where $Y$ is not smooth over $S$ $\dim Z_s\leq\dim X_s-2$ then we may above tale V containe din $X-Y$”。这里点集先写$X$，不等式却用未另定义的$Z_s$；按该句的唯一非光滑点集及其纤维记号，正文将点集名订为$Z$，以免与全空间$X$混淆。“tale V containe din”按上下文读作“take $V$ contained in”。底本在“over $S$”之后确实缺少语法连接；正文保留残缺标记，不额外补出对所有基底点的量词、闭性假设或证明。}
+\end{document}

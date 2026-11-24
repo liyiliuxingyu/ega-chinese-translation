@@ -1,0 +1,63 @@
+{
+  "renderer": "PyMuPDF 1.26.7",
+  "book_contact_sheet_review": [
+    309,
+    310,
+    311,
+    312,
+    313,
+    314,
+    315,
+    316,
+    317,
+    318,
+    319,
+    320,
+    321,
+    322,
+    323,
+    324,
+    325,
+    326,
+    327,
+    328,
+    329,
+    330,
+    331,
+    937,
+    938
+  ],
+  "audit_contact_sheet_review": [
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23
+  ],
+  "book_enlarged_review": [
+    309,
+    322,
+    325
+  ],
+  "audit_enlarged_review": [
+    17
+  ],
+  "finding": "No visible cropping, overlapping text/diagrams, black blocks or missing glyphs in inspected new/transition pages.",
+  "scope": "Thumbnail review of the stated new pages and enlarged inspection of listed critical pages. Not a new visual or mathematical audit of every historical page.",
+  "secondary_renderer": "Poppler pdftoppm, 120 dpi",
+  "secondary_renderer_pages": {
+    "main.pdf": [
+      325
+    ],
+    "report.pdf": [
+      14
+    ]
+  },
+  "secondary_renderer_result": "Rendered and visually inspected; no warnings in pdftoppm stderr."
+}

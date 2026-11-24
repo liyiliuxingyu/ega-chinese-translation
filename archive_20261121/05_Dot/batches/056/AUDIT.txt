@@ -1,0 +1,1 @@
+实际检查：底本第62页渲染逐句核读；最终XeLaTeX双编译成功，3页；日志无Warning/Overfull/Underfull/Missing character；第1、2页与初编相同，第3页修复脚注溢到单独页后重新目检通过。ZIP CRC与全文件SHA256解压校验通过。无全书数学重证或旧问题清零声明。

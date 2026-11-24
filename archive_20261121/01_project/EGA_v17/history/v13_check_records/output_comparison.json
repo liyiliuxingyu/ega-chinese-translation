@@ -1,0 +1,36 @@
+[
+  {
+    "name": "book",
+    "files": [
+      "main.pdf",
+      "single_build/book_single.pdf"
+    ],
+    "page_counts": [
+      1028,
+      1028
+    ],
+    "dpi": 72,
+    "renderer": "PyMuPDF 1.26.7",
+    "text_mismatches": [],
+    "pixel_mismatches": [],
+    "passed": true,
+    "seconds": 17.705
+  },
+  {
+    "name": "report",
+    "files": [
+      "report.pdf",
+      "single_build/audit_single.pdf"
+    ],
+    "page_counts": [
+      219,
+      219
+    ],
+    "dpi": 72,
+    "renderer": "PyMuPDF 1.26.7",
+    "text_mismatches": [],
+    "pixel_mismatches": [],
+    "passed": true,
+    "seconds": 4.122
+  }
+]

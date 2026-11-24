@@ -1,0 +1,13 @@
+{
+  "branch": "EGA V independent",
+  "completed": "p43 section12 title and Complements to notations through p44 first paragraph ending or rather of P_Sprime (linear sections definition)",
+  "next": "p44 I use [or profit from] this opportunity for a notational self-criticism",
+  "previous_project": "libfile_fde3_f-774a712df5e48191b08dafd6a8659dc8_49ac57203c0c81918f3630f0324dcb35",
+  "merged": false,
+  "source_sha256": "23a20ef32fd16a1bd623c0c08ac080d04fc94f248de12133b713a19d6b0330d9",
+  "unresolved": [
+    "8.8 and9.5 source gaps",
+    "section12 remainder not translated",
+    "not a full independent mathematical audit"
+  ]
+}

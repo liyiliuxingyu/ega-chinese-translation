@@ -1,0 +1,141 @@
+\documentclass[openany,fontset=fandol]{ctexbook}
+\usepackage{amsmath,amssymb}
+\usepackage[unicode,hidelinks]{hyperref}
+\setlength{\emergencystretch}{2em}
+\interfootnotelinepenalty=10000
+\newcommand{\OO}{\mathcal O}
+\newcommand{\LL}{\mathcal L}
+\newcommand{\MM}{\mathcal M}
+\newcommand{\EE}{\mathcal E}
+\DeclareMathOperator{\Pic}{Pic}
+\DeclareMathOperator{\Sym}{Sym}
+\DeclareMathOperator{\Spec}{Spec}
+\DeclareMathOperator{\Aut}{Aut}
+\DeclareMathOperator{\End}{End}
+\DeclareMathOperator{\Div}{Div}
+\begin{document}
+\title{代数几何基础第五卷预备笔记\\射影丛同构与相对有效除子}
+\author{据法文扫描和英译编辑稿互校续译}
+\date{2026年11月21日}
+\maketitle
+\chapter*{范围与接续}
+第74批续接第73批，从第三篇第1小节“2）一次态射”起，经定理1.6、推论1.7--1.8、评注1.9，译至第2小节推论2.4末。法扫描物理118--121页（手写125--128），英译编辑稿物理90--94页。第2小节续从法物理121页下部的2.5、英物理94页关于多重射影丛的段落开始；英稿在此误标为第二个“Corollary 2.5”。
+
+本批是第五卷预备笔记的独立续译，未并入1158页合订本。正式出版第四卷的译校另有进度。正文对已核实的问题作更正，原读法在脚注注明，另外的证明说明列在附记。
+\chapter*{第三篇（续）}
+\section*{1　射影丛上的可逆层与同构（续）}
+仍采用第73批的商的约定，\(P=\mathbf P(\EE)\)、\(P'=\mathbf P(\EE')\)，\(f:P\to S\)、\(f':P'\to S\) 是结构态射。可逆模的扭转写作 \(\LL(n)=\LL\otimes\OO_P(n)\)。
+
+\noindent\textbf{特殊情形 2)：\(n=1\)。}
+此时所取的是满射
+\(\EE'\twoheadrightarrow\EE\otimes\MM\)。
+与它对应的 \(g:P\to P'\) 是下列复合：
+\[
+ \mathbf P(\EE)\xrightarrow{\sim}\mathbf P(\EE\otimes\MM)
+       \longrightarrow\mathbf P(\EE').
+\]
+第一个态射是第二章所说的典范同构，第二个是由该满射诱导的典范闭浸入。若把能写成这样一个复合的态射 \(P\to P'\) 称为\emph{线性的}，那么从 \(P\) 到 \(P'\) 的一次态射恰是线性态射。\footnote{英稿90页在 \(\EE\otimes\MM\) 后另有不合式的 “or \(L\otimes M\)”，法稿只有 \(\EE\otimes\MM\)。满射可在各剩余域上检验，这里和上一批的零次情形同样采用商约定。}
+
+最后，确定 \(P\) 到 \(P'\) 的同构。
+
+\medskip\noindent\textbf{定理1.6。}
+设 \(S\) 为预概形，\(P=\mathbf P(\EE)\) 与 \(P'=\mathbf P(\EE')\) 是由有限型局部自由模 \(\EE,\EE'\) 定义的两个 \(S\) 上射影丛。任何 \(S\)-同构 \(g:P\xrightarrow{\sim}P'\) 都可以写成
+\[
+ \mathbf P(\EE)\xrightarrow{\sim}\mathbf P(\EE\otimes\MM)
+      \xrightarrow{\sim}\mathbf P(\EE'),
+\]
+其中 \(\MM\) 是 \(S\) 上的可逆模。第一箭头是第二章的典范同构，第二箭头由同构
+\(u:\EE'\xrightarrow{\sim}\EE\otimes\MM\) 诱导。
+若 \(P\) 的纤维均非空，则 \(\MM\) 由 \(g\) 确定至同构；若纤维维数都至少为 \(1\)，则 \((\MM,u)\) 由 \(g\) 确定至唯一的相容同构。\footnote{手稿分别写“纤维非空”与“纤维维数至少为1”；原文给 \(\MM\) 的“唯一同构”须理解为固定与 \(g^*\OO_{P'}(1)\) 的相容识别，不是说任意可逆模没有自同构。下面不把两种条件合并。}
+
+由以上讨论，只需证明 \(g\) 是一次的。这里可以按纤维检验，因而归结到 \(S\) 是域的谱；并且只需考虑 \(\dim P\ge1\) 的情形。此时，\(\OO_P(1)\) 有一个内在的刻画，与如何将 \(P\) 实现成射影丛无关：在 \(\Pic(P)\) 的两个生成元 \([\OO_P(1)]\)、\([\OO_P(-1)]\) 中，它是丰沛的那个。于是同构 \(g:P\to P'\) 的拉回 \(g^*\OO_{P'}(1)\) 必同构于 \(\OO_P(1)\)，所需结论即得。
+
+也可用比较初等的局部形式陈述如下。
+
+\medskip\noindent\textbf{推论1.7。}
+在1.6的条件下，每个 \(S\)-同构 \(g:P\to P'\)，在每一点 \(s\in S\) 的某开邻域 \(U\) 上，都可用一个同构
+\(u:\EE'|_U\xrightarrow{\sim}\EE|_U\) 来描述。\(u\) 相差 \(\Gamma(U,\OO_U)^\times\) 中的标量倍数而唯一。\footnote{法稿的同构符号本身不加方向；这里取与1.6及商约定一致的方向，若写 \(\EE|_U\to\EE'|_U\) 则取逆。英稿“\(S\)-morphism \(g:P\to P\)”漏了同构限定与靶上的撇号。}
+
+特别有：
+
+\medskip\noindent\textbf{推论1.8。}
+设 \(S\) 为预概形，\(P=\mathbf P(\EE)\) 是由有限型局部自由模 \(\EE\) 定义的射影丛。\(P\) 的每个 \(S\)-自同构 \(g\)，在任一点 \(s\in S\) 的某邻域 \(U\) 上，由 \(\EE|_U\) 的一个自同构 \(u\) 给出；在固定 \(g\) 后，\(u\) 相差 \(\Gamma(U,\OO_U)^\times\) 中的标量倍数而唯一。
+
+\medskip\noindent\textbf{评注1.9。}
+由1.8很容易推出，\(S\) 上的群函子 \(\Aut_S(P)\) 可由一个在 \(S\) 上仿射且有限表示的预概形表示。在正秩部分，它也可以解释为线性群概形 \(\mathrm{GL}(\EE)\) 对其中心 \(\mathbb G_m\) 的商群概形。\footnote{秩零部分的射影丛为空，相应自同构群是平凡群；不能在那里把 \(\mathbb G_m\) 当成 \(\mathrm{GL}(0)\) 的中心子群。“商”指层商所表示的群概形，不意谓在每一个底上都能直接将全局矩阵群除以全局标量得到全部截面。}
+这一群预概形称为由 \(\EE\) 定义的\emph{射影群预概形}，简称射影群，记为 \(\mathrm{GP}(\EE)\)。若 \(\EE\) 是自由模，\(\EE\simeq\OO_S^{r+1}\)，则 \(\mathrm{GP}(\EE)\) 就是 \(\mathrm{GP}(r)_S\)；它是由 \(\Spec\mathbb Z\) 上同样定义的群概形 \(\mathrm{GP}(r)\) 沿 \(S\to\Spec\mathbb Z\) 基变换得到的。后者称为\emph{绝对射影群}。
+
+\emph{页边旁注（能辨部分）。}
+由“行列式”不消失所定义的开集，位于射影化的自同态空间中。\footnote{英稿92页把这一行作为1.9旁注另录，标有残损。这里保留可辨的行列式构造，不把残损文字当作已复原的原句。正秩层上用 \(\mathbf P((\End\EE)^\vee)\) 可避免不同射影化约定引起的歧义；迹配对可识别 \(\End\EE\) 与其对偶。}
+\emph{〔英译编辑稿在此标记第一部分结束。〕}
+
+\section*{2　射影丛及多重射影丛上的相对除子与可逆层}
+\noindent\textbf{2.1。}
+与第1小节一样，设 \(P=\mathbf P(\EE)\)，\(\EE\) 为 \(S\) 上处处秩至少为 \(2\) 的局部自由模。我们要确定 \(P\) 上相对于 \(S\) 的有效相对除子集合 \(\Div^+(P/S)\)。给出这样一个除子等价于给出 \(P\) 上的可逆模 \(\LL\) 以及它的一个横向正则截面 \(\phi\)。按1.1，暂不写出 \(S\) 不连通时可能需要的开分割，\(\LL\) 同构于 \(f^*\MM\otimes\OO_P(n)\)，其中 \(\MM\) 是 \(S\) 上的可逆模，由 \(\LL\) 连同分解确定至相容同构。
+
+若 \(n\ge0\)，有典范同构
+\[
+ (*)\qquad
+ f_*\LL \simeq \MM\otimes f_*\OO_P(n)
+             \simeq \MM\otimes\Sym^n(\EE).
+\]
+因而给出 \(\LL\) 的一个截面 \(\phi\)，等价于给出 \(\MM\otimes\Sym^n(\EE)\) 的一个截面 \(\psi\)。因为 \(P/S\) 的各纤维都是整概形，\(\phi\) 横向正则（即在每一纤维上正则）当且仅当对每个 \(s\in S\)，\(\psi(s)\ne0\)。这又等价于 \(\psi\) 所定义的同态
+\[
+ \psi:\MM^\vee\longrightarrow\Sym^n(\EE)
+\]
+是“普遍单射”，即局部同构到一个直和因子；等价地，其转置
+\[
+ \psi^\vee:\bigl(\Sym^n(\EE)\bigr)^\vee\longrightarrow\MM
+\]
+为满射。\footnote{法稿和后面的对偶式明确区分两箭头。英稿第一推前式有 \(n1\) 异文；这里把 \((*)\) 的范围明写为 \(n\ge0\)，负次数的排除见接下来的论证。}
+
+若 \(\OO_P(D)=\LL\) 按上一小节的意义为 \(n\) 次，就称相对除子 \(D\) 为 \(n\) 次。对有效除子，在每个非空次数层上必有 \(n\ge0\)：若 \(n<0\)，每个纤维上 \(\OO(n)\) 的截面都为零，不能给出横向正则的截面。由1.1，每个有效相对除子 \(D\) 都给出底 \(S\) 的唯一分割
+\[
+ S=\coprod_{n\in\mathbb N}S_n
+\]
+为两两不交的开子概形，使 \(\LL|_{P\times_S S_n}\) 在 \(S_n\) 上为 \(n\) 次。这就把决定所有有效相对除子的集合归结为决定给定次数 \(n\) 的有效相对除子。这里 \(\mathbb N\) 包括 \(0\)。
+\emph{作者按：}当然，这一段应代替前面的“暂不写出开分割”。\footnote{法、英稿均一度写成“分解 \(D\)”，但 \(S_n\) 是底的开集，且上一小节是底的次数分割，故改为分解 \(S\)。英稿另有 \(X\) 与 \(P\) 混用。负次的排除在纤维上已足够，包括非约化底的情况。}
+
+由以上考虑得到：
+
+\medskip\noindent\textbf{命题2.2。}
+在上述假设下，\(P\) 上 \(n\) 次有效相对除子的集合 \(\Div^n(P/S)\)，与 \(\bigl(\Sym^n(\EE)\bigr)^\vee\) 的可逆商模的集合之间，有一个一一对应。等价地，也可取 \(\Sym^n(\EE)\) 的可逆子模，要求它局部为直和因子。商模按与商映射相容的同构来计。
+
+若 \(D\) 与 \(\MM\) 相对应，则有典范同构
+\[
+ \OO_P(D)\simeq f^*\MM\otimes\OO_P(n).
+\]
+经此同构，除子的标准截面 \(s_D\) 对应于由该商映射（取对偶，再经 \((*)\)）确定的截面。\footnote{原稿在这一处只说由 \((*)\) 可知相应截面。这里把同态、对偶和截面的关系写明，不添加额外的选择。}
+
+注意这一描述与 \(S\) 的任意基变换相容。又因为 \(\bigl(\Sym^n(\EE)\bigr)^\vee\) 的可逆商模解释为射影丛 \(\mathbf P((\Sym^n(\EE))^\vee)\) 在 \(S\) 上的截面，得到：
+
+\medskip\noindent\textbf{推论2.3。}
+\(\Div^+_{P/S}\) 的子函子 \(\Div^n_{P/S}\) 可由
+\(\mathbf P\bigl((\Sym^n(\EE))^\vee\bigr)\) 典范地表示。\footnote{英稿在引出推论的文字中漏了对偶号，但推论正文有该号；法稿两处都有。这里沿用可逆\emph{商}的射影化约定。}
+
+结合2.1可进一步得到：
+
+\medskip\noindent\textbf{推论2.4。}
+\(\Div^+_{P/S}\) 可由以下 \(S\)-预概形的和典范地表示：
+\[
+ \coprod_{n\in\mathbb N}\mathbf P\bigl((\Sym^n(\EE))^\vee\bigr).
+\]
+\footnote{法稿物理121页清楚标为2.4；英稿94页误作2.5，接下来介绍多重射影丛的2.5也被误加 Corollary。法稿总和式中的 \(\Sym\) 下标有混入的 \(P/S\)，这里统一按2.2、2.3，即在 \(S\) 上取 \(\EE\) 的对称幂。}
+
+\section*{译校附记（非手稿）}
+\paragraph{一次与满射。}
+对剩余域 \(k\)，若 \(\EE'_k\to\EE_k\otimes\MM_k\) 不满，则其像是一个真线性子空间。有一条非零线性商将这个像杀掉，在该射影点处关联的线性式便不能生成扭转线丛的纤维，矛盾。反过来，满射与典范商的复合仍满；原同态的满射性由所有茎的剩余域和 Nakayama 引理检验。若 \(g\) 已是同构，纤维维数相等，故 \(\EE\) 与 \(\EE'\) 秩在相应层相等；该满射于是为同构。
+
+\paragraph{固定扭转及秩零。}
+在有非空纤维的各层可典范地取
+\(\MM=f_*(g^*\OO_{P'}(1)\otimes\OO_P(-1))\)。
+伴随评价给出所需识别，再推前由 \(g\) 拉回的典范商得到 \(u\)。在秩一层，所有整数都是纤维次数，所以这里必须固定扭转为一次；实际构造在秩一同样给相容的数据。秩零层上的两射影丛均为空，\(g\) 看不见 \(\MM\) 在该层的选择，可取 \(\OO_S\) 在该层的限制。局部平凡化 \(\MM\) 的不同选取只差标量。正秩层上，射影化的自同态空间中由行列式非零定义的标准开集相对仿射，局部就是通常的 \(\mathrm{PGL}\)；局部代表之间相差标量，故与1.8的群函子相合。
+
+\paragraph{纤维正则及参数空间。}
+纤维是整射影空间，非零全局截面在其每个仿射平凡化区内给出非零函数，因而不是零因子，并不要求它在纤维上处处不消失。要求的是每个 \(s\) 上的整个多项式 \(\psi(s)\) 不为零。射影丛在底上平坦且局部有限表示；因此，这个纤维条件等价于截面的零位定义一个相对有效 Cartier 除子（参见 \href{https://stacks.math.columbia.edu/tag/062Y}{Stacks Project，062Y}）。有限秩自由坐标中，\(\psi(s)\ne0\) 意味着至少一个系数在 \(s\) 的剩余域非零，因而该系数在邻域上可逆；由此得到局部直和因子和转置满射。次数为零时参数射影丛为 \(S\)，对应空的有效相对除子。对于任意 \(T\to S\)，次数是 \(T\) 上的局部常值函数；所以可表对象须取各次数射影丛的不交和，而不是固定一个全局次数。
+
+\paragraph{引用。}
+\href{https://webusers.imj-prg.fr/~leila.schneps/grothendieckcircle/EGA/EGA5trans.pdf#page=90}{英译编辑稿物理90页起}；法文摘页随工程附送。与今用术语、商约定及纤维条件对照，可见
+\href{https://stacks.math.columbia.edu/tag/01OA}{Stacks Project：射影丛（01OA）}及
+\href{https://stacks.math.columbia.edu/tag/056P}{Stacks Project：相对有效 Cartier 除子（056P）}。
+\end{document}

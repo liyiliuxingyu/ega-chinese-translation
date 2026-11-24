@@ -1,0 +1,3347 @@
+[
+  {
+    "order": 1,
+    "filename": "EGA第五卷_第66页行列式交换图_续译工程.zip",
+    "metadata": {
+      "name": "EGA第五卷_第66页行列式交换图_续译工程.zip",
+      "file_id": "file_000000009a5881f588234b27e3f70afc",
+      "library_file_id": "libfile_fde3_f-b23186ec58b48191b2c39c5d682b03cb_49ac57203c0c81918f3630f0324dcb35",
+      "version_id": "0",
+      "size_bytes": 741236,
+      "created_at": "2026-11-19T18:59:00.402256+00:00",
+      "modified_at": "2026-11-19T18:59:00.402256+00:00"
+    },
+    "sha256": "d57f89d3a047655c40576242d72f41cfc9d71bb743f9894b28f9bb0714a155f9",
+    "bytes": 741236,
+    "mirror_exists": true,
+    "mirror_sha256": "d57f89d3a047655c40576242d72f41cfc9d71bb743f9894b28f9bb0714a155f9",
+    "mirror_byte_identical": true,
+    "crc_bad_member": null,
+    "duplicate_exact_members": [],
+    "duplicate_normalized_members": [],
+    "unsafe_members": [],
+    "encrypted_members": [],
+    "uncompressed_bytes": 867465,
+    "member_count": 12,
+    "members": [
+      {
+        "path": "底本.pdf",
+        "bytes": 677332,
+        "crc32": "417febae",
+        "sha256": "23a20ef32fd16a1bd623c0c08ac080d04fc94f248de12133b713a19d6b0330d9"
+      },
+      {
+        "path": "README.txt",
+        "bytes": 592,
+        "crc32": "50502424",
+        "sha256": "1ec4736bc4f03705b9b0597b5ddf2df8952efe26418241bce6c0a3d3035eaac2"
+      },
+      {
+        "path": "build.sh",
+        "bytes": 167,
+        "crc32": "916f5fee",
+        "sha256": "2567fea2b9e1ae096246b55a5e806aa097d834dc8afea57b31323892f90870fb"
+      },
+      {
+        "path": "verify.py",
+        "bytes": 246,
+        "crc32": "2cecd109",
+        "sha256": "e08eda4cdc070be19431e5ccef292f57d31b4e36a2d1e35e4d3da2e080f5bd61"
+      },
+      {
+        "path": "EGA第五卷_第66页行列式交换图_校订续译.tex",
+        "bytes": 3067,
+        "crc32": "9153edf8",
+        "sha256": "d47b2d5f7d52ad18bc65cebfbf4c91a724893b964bb38642b5c66396ef5dd291"
+      },
+      {
+        "path": "EGA第五卷_第66页行列式交换图_校订续译.log",
+        "bytes": 37653,
+        "crc32": "f366ff8a",
+        "sha256": "6a50d24fb3fef1727a6eacbcf711ba3854f5af7fca75a31f627ec047555fcf1e"
+      },
+      {
+        "path": "EGA第五卷_第66页行列式交换图_校订续译.pdf",
+        "bytes": 119317,
+        "crc32": "cbc8443a",
+        "sha256": "e8c362e073b393e94f95ba63ef0983bb5e36f55a5815a52e24e745e5b15703d6"
+      },
+      {
+        "path": "PROGRESS.json",
+        "bytes": 673,
+        "crc32": "0002e5cf",
+        "sha256": "dc39d2838a94ea2bcf2a37bad28b2313ad7a5f65ac563d0d3827294f7ced2160"
+      },
+      {
+        "path": "build1.txt",
+        "bytes": 13620,
+        "crc32": "644a45e5",
+        "sha256": "3bdd0b27ca83a4390992ad1d4d378b224e4eb553005d74d3d6695da486b70a8a"
+      },
+      {
+        "path": "AUDIT.txt",
+        "bytes": 368,
+        "crc32": "038f2699",
+        "sha256": "ae1c8d928290a1847a2cc445f69ce12c1df54a187f876d0ffaa0dd5111cdb314"
+      },
+      {
+        "path": "build2.txt",
+        "bytes": 13446,
+        "crc32": "4f7b1a36",
+        "sha256": "755f204e4ba0ab2405d5fb6d5171bd079574a22e9f1557d2f96b058020eba70c"
+      },
+      {
+        "path": "SHA256SUMS.txt",
+        "bytes": 984,
+        "crc32": "3cf95252",
+        "sha256": "3a2866ebadf4561066d1fc3c3d927bef643325cbe41b0da60fe88d278b57bdc7"
+      }
+    ],
+    "extracted_directory": "integration_20261121/dot_audit_extract/n01",
+    "tex_files": [
+      {
+        "path": "EGA第五卷_第66页行列式交换图_校订续译.tex",
+        "bytes": 3067,
+        "crc32": "9153edf8",
+        "sha256": "d47b2d5f7d52ad18bc65cebfbf4c91a724893b964bb38642b5c66396ef5dd291"
+      }
+    ],
+    "progress_claim": {
+      "date": "2026-11-19T19:00Z",
+      "scope": "66页交换图与符号说明，及Hence the ideals段至intersection of P and Q in M",
+      "next": "66页 It remains only to completely clarify the particularly described situation with X/Y/S",
+      "baseline_v17": "libfile_fde3_f-f1b2141eb58c81919fef5fcc209852d1_49ac57203c0c81918f3630f0324dcb35",
+      "independent": true,
+      "merged_into_v17": false,
+      "source_sha256": "23a20ef32fd16a1bd623c0c08ac080d04fc94f248de12133b713a19d6b0330d9",
+      "open_issues": [
+        "整体符号依行列式同构约定，保留作者不确定语气",
+        "ideals V(a),V(b)原文类型混用已注释",
+        "v17旧待核保留，不以本批解除"
+      ]
+    },
+    "internal_checksums": [
+      {
+        "path": "AUDIT.txt",
+        "expected_sha256": "ae1c8d928290a1847a2cc445f69ce12c1df54a187f876d0ffaa0dd5111cdb314",
+        "actual_sha256": "ae1c8d928290a1847a2cc445f69ce12c1df54a187f876d0ffaa0dd5111cdb314",
+        "status": "ok"
+      },
+      {
+        "path": "EGA第五卷_第66页行列式交换图_校订续译.log",
+        "expected_sha256": "6a50d24fb3fef1727a6eacbcf711ba3854f5af7fca75a31f627ec047555fcf1e",
+        "actual_sha256": "6a50d24fb3fef1727a6eacbcf711ba3854f5af7fca75a31f627ec047555fcf1e",
+        "status": "ok"
+      },
+      {
+        "path": "EGA第五卷_第66页行列式交换图_校订续译.pdf",
+        "expected_sha256": "e8c362e073b393e94f95ba63ef0983bb5e36f55a5815a52e24e745e5b15703d6",
+        "actual_sha256": "e8c362e073b393e94f95ba63ef0983bb5e36f55a5815a52e24e745e5b15703d6",
+        "status": "ok"
+      },
+      {
+        "path": "EGA第五卷_第66页行列式交换图_校订续译.tex",
+        "expected_sha256": "d47b2d5f7d52ad18bc65cebfbf4c91a724893b964bb38642b5c66396ef5dd291",
+        "actual_sha256": "d47b2d5f7d52ad18bc65cebfbf4c91a724893b964bb38642b5c66396ef5dd291",
+        "status": "ok"
+      },
+      {
+        "path": "PROGRESS.json",
+        "expected_sha256": "dc39d2838a94ea2bcf2a37bad28b2313ad7a5f65ac563d0d3827294f7ced2160",
+        "actual_sha256": "dc39d2838a94ea2bcf2a37bad28b2313ad7a5f65ac563d0d3827294f7ced2160",
+        "status": "ok"
+      },
+      {
+        "path": "README.txt",
+        "expected_sha256": "1ec4736bc4f03705b9b0597b5ddf2df8952efe26418241bce6c0a3d3035eaac2",
+        "actual_sha256": "1ec4736bc4f03705b9b0597b5ddf2df8952efe26418241bce6c0a3d3035eaac2",
+        "status": "ok"
+      },
+      {
+        "path": "build.sh",
+        "expected_sha256": "2567fea2b9e1ae096246b55a5e806aa097d834dc8afea57b31323892f90870fb",
+        "actual_sha256": "2567fea2b9e1ae096246b55a5e806aa097d834dc8afea57b31323892f90870fb",
+        "status": "ok"
+      },
+      {
+        "path": "build1.txt",
+        "expected_sha256": "3bdd0b27ca83a4390992ad1d4d378b224e4eb553005d74d3d6695da486b70a8a",
+        "actual_sha256": "3bdd0b27ca83a4390992ad1d4d378b224e4eb553005d74d3d6695da486b70a8a",
+        "status": "ok"
+      },
+      {
+        "path": "build2.txt",
+        "expected_sha256": "755f204e4ba0ab2405d5fb6d5171bd079574a22e9f1557d2f96b058020eba70c",
+        "actual_sha256": "755f204e4ba0ab2405d5fb6d5171bd079574a22e9f1557d2f96b058020eba70c",
+        "status": "ok"
+      },
+      {
+        "path": "verify.py",
+        "expected_sha256": "e08eda4cdc070be19431e5ccef292f57d31b4e36a2d1e35e4d3da2e080f5bd61",
+        "actual_sha256": "e08eda4cdc070be19431e5ccef292f57d31b4e36a2d1e35e4d3da2e080f5bd61",
+        "status": "ok"
+      },
+      {
+        "path": "底本.pdf",
+        "expected_sha256": "23a20ef32fd16a1bd623c0c08ac080d04fc94f248de12133b713a19d6b0330d9",
+        "actual_sha256": "23a20ef32fd16a1bd623c0c08ac080d04fc94f248de12133b713a19d6b0330d9",
+        "status": "ok"
+      }
+    ]
+  },
+  {
+    "order": 2,
+    "filename": "EGA第五卷_行列式线丛与判别式_续译工程.zip",
+    "metadata": {
+      "name": "EGA第五卷_行列式线丛与判别式_续译工程.zip",
+      "file_id": "file_00000000bda481f5b816fb22e42e7e69",
+      "library_file_id": "libfile_fde3_f-14999fc2b7648191b32b904ef5d1defd_49ac57203c0c81918f3630f0324dcb35",
+      "version_id": "0",
+      "size_bytes": 734374,
+      "created_at": "2026-11-19T21:01:34.947118+00:00",
+      "modified_at": "2026-11-19T21:01:34.947118+00:00"
+    },
+    "sha256": "c525ff60d17d75bdf4cd2759f6bf50454d1b58449d8776be7683f2d4c9d13563",
+    "bytes": 734374,
+    "mirror_exists": true,
+    "mirror_sha256": "c525ff60d17d75bdf4cd2759f6bf50454d1b58449d8776be7683f2d4c9d13563",
+    "mirror_byte_identical": true,
+    "crc_bad_member": null,
+    "duplicate_exact_members": [],
+    "duplicate_normalized_members": [],
+    "unsafe_members": [],
+    "encrypted_members": [],
+    "uncompressed_bytes": 820267,
+    "member_count": 11,
+    "members": [
+      {
+        "path": "底本.pdf",
+        "bytes": 677332,
+        "crc32": "417febae",
+        "sha256": "23a20ef32fd16a1bd623c0c08ac080d04fc94f248de12133b713a19d6b0330d9"
+      },
+      {
+        "path": "EGA第五卷_行列式线丛与判别式_校订续译.tex",
+        "bytes": 3005,
+        "crc32": "55b1bb1b",
+        "sha256": "0280bf24a079fe91b07ee6ef05f044b729d46c20304d05c0b20c5720c4e55ddc"
+      },
+      {
+        "path": "README.txt",
+        "bytes": 470,
+        "crc32": "f67ca342",
+        "sha256": "8356a4dd2e51e0f11c8c27cc97af5ec839a1192bfbebcd10aae49594d1eb2e11"
+      },
+      {
+        "path": "build.sh",
+        "bytes": 168,
+        "crc32": "7eb86e0c",
+        "sha256": "27b21ddfc89485a0b6c17591f0dec6c40be41c67eaac36e638f770686be1526c"
+      },
+      {
+        "path": "verify.py",
+        "bytes": 246,
+        "crc32": "2cecd109",
+        "sha256": "e08eda4cdc070be19431e5ccef292f57d31b4e36a2d1e35e4d3da2e080f5bd61"
+      },
+      {
+        "path": "PROGRESS.json",
+        "bytes": 747,
+        "crc32": "bceddc0e",
+        "sha256": "d43bf43536cb9ff989ee717284ef23b14d1c7ce7cf70452264f8519396b130f0"
+      },
+      {
+        "path": "build1.txt",
+        "bytes": 7460,
+        "crc32": "96320871",
+        "sha256": "7262d1a8a8ff0575901099290c1b537fb816c5b84ffb2a4b8e3a9ddd59c523e7"
+      },
+      {
+        "path": "AUDIT.txt",
+        "bytes": 294,
+        "crc32": "59cbf8ce",
+        "sha256": "ef9d9c30b618ef17a519dbb45de0c79ed7392bc80767c424c18a7dd59eba1512"
+      },
+      {
+        "path": "EGA第五卷_行列式线丛与判别式_校订续译.pdf",
+        "bytes": 122395,
+        "crc32": "77dd2955",
+        "sha256": "cab8cc833f9b9dbf3024d05627eb4efbdbe0c773ad06c9e8117d5e4076ad496a"
+      },
+      {
+        "path": "build2.txt",
+        "bytes": 7287,
+        "crc32": "6ca920e7",
+        "sha256": "c3436d7ebb1556b40a94d0d9b9e8aea62e8bbe8e1e2c76562eeb1e66d4dce60d"
+      },
+      {
+        "path": "SHA256SUMS.txt",
+        "bytes": 863,
+        "crc32": "2a16b08d",
+        "sha256": "a705e141407fb4e1da7a225798cc332e489b2317d9d4be3803626edbfaf003c4"
+      }
+    ],
+    "extracted_directory": "integration_20261121/dot_audit_extract/n02",
+    "tex_files": [
+      {
+        "path": "EGA第五卷_行列式线丛与判别式_校订续译.tex",
+        "bytes": 3005,
+        "crc32": "55b1bb1b",
+        "sha256": "0280bf24a079fe91b07ee6ef05f044b729d46c20304d05c0b20c5720c4e55ddc"
+      }
+    ],
+    "progress_claim": {
+      "date": "2026-11-19T21:00Z",
+      "scope": "66页It remains only段起至67页第一段末the commutativity announced in the lemma",
+      "next": "67页 The non-supersingular points are therefore exactly the ones",
+      "previous_batch": "libfile_fde3_f-b23186ec58b48191b2c39c5d682b03cb_49ac57203c0c81918f3630f0324dcb35",
+      "baseline_v17": "libfile_fde3_f-f1b2141eb58c81919fef5fcc209852d1_49ac57203c0c81918f3630f0324dcb35",
+      "independent": true,
+      "merged_into_v17": false,
+      "source_sha256": "23a20ef32fd16a1bd623c0c08ac080d04fc94f248de12133b713a19d6b0330d9",
+      "open_issues": [
+        "a,b整体符号待约定，未擅定",
+        "Pv省略一阶标号已据上下文注释补正",
+        "旧待核保留，本批未译下一非超奇异点正合列"
+      ]
+    },
+    "internal_checksums": [
+      {
+        "path": "AUDIT.txt",
+        "expected_sha256": "ef9d9c30b618ef17a519dbb45de0c79ed7392bc80767c424c18a7dd59eba1512",
+        "actual_sha256": "ef9d9c30b618ef17a519dbb45de0c79ed7392bc80767c424c18a7dd59eba1512",
+        "status": "ok"
+      },
+      {
+        "path": "EGA第五卷_行列式线丛与判别式_校订续译.pdf",
+        "expected_sha256": "cab8cc833f9b9dbf3024d05627eb4efbdbe0c773ad06c9e8117d5e4076ad496a",
+        "actual_sha256": "cab8cc833f9b9dbf3024d05627eb4efbdbe0c773ad06c9e8117d5e4076ad496a",
+        "status": "ok"
+      },
+      {
+        "path": "EGA第五卷_行列式线丛与判别式_校订续译.tex",
+        "expected_sha256": "0280bf24a079fe91b07ee6ef05f044b729d46c20304d05c0b20c5720c4e55ddc",
+        "actual_sha256": "0280bf24a079fe91b07ee6ef05f044b729d46c20304d05c0b20c5720c4e55ddc",
+        "status": "ok"
+      },
+      {
+        "path": "PROGRESS.json",
+        "expected_sha256": "d43bf43536cb9ff989ee717284ef23b14d1c7ce7cf70452264f8519396b130f0",
+        "actual_sha256": "d43bf43536cb9ff989ee717284ef23b14d1c7ce7cf70452264f8519396b130f0",
+        "status": "ok"
+      },
+      {
+        "path": "README.txt",
+        "expected_sha256": "8356a4dd2e51e0f11c8c27cc97af5ec839a1192bfbebcd10aae49594d1eb2e11",
+        "actual_sha256": "8356a4dd2e51e0f11c8c27cc97af5ec839a1192bfbebcd10aae49594d1eb2e11",
+        "status": "ok"
+      },
+      {
+        "path": "build.sh",
+        "expected_sha256": "27b21ddfc89485a0b6c17591f0dec6c40be41c67eaac36e638f770686be1526c",
+        "actual_sha256": "27b21ddfc89485a0b6c17591f0dec6c40be41c67eaac36e638f770686be1526c",
+        "status": "ok"
+      },
+      {
+        "path": "build1.txt",
+        "expected_sha256": "7262d1a8a8ff0575901099290c1b537fb816c5b84ffb2a4b8e3a9ddd59c523e7",
+        "actual_sha256": "7262d1a8a8ff0575901099290c1b537fb816c5b84ffb2a4b8e3a9ddd59c523e7",
+        "status": "ok"
+      },
+      {
+        "path": "build2.txt",
+        "expected_sha256": "c3436d7ebb1556b40a94d0d9b9e8aea62e8bbe8e1e2c76562eeb1e66d4dce60d",
+        "actual_sha256": "c3436d7ebb1556b40a94d0d9b9e8aea62e8bbe8e1e2c76562eeb1e66d4dce60d",
+        "status": "ok"
+      },
+      {
+        "path": "verify.py",
+        "expected_sha256": "e08eda4cdc070be19431e5ccef292f57d31b4e36a2d1e35e4d3da2e080f5bd61",
+        "actual_sha256": "e08eda4cdc070be19431e5ccef292f57d31b4e36a2d1e35e4d3da2e080f5bd61",
+        "status": "ok"
+      },
+      {
+        "path": "底本.pdf",
+        "expected_sha256": "23a20ef32fd16a1bd623c0c08ac080d04fc94f248de12133b713a19d6b0330d9",
+        "actual_sha256": "23a20ef32fd16a1bd623c0c08ac080d04fc94f248de12133b713a19d6b0330d9",
+        "status": "ok"
+      }
+    ]
+  },
+  {
+    "order": 3,
+    "filename": "EGA第五卷_非超奇异点正合列_续译工程.zip",
+    "metadata": {
+      "name": "EGA第五卷_非超奇异点正合列_续译工程.zip",
+      "file_id": "file_0000000010e88212b66cdf47c6fe4e8b",
+      "library_file_id": "libfile_fde3_f-6903dbd963708191ac77ccbcf5a8dde4_49ac57203c0c81918f3630f0324dcb35",
+      "version_id": "0",
+      "size_bytes": 1009487,
+      "created_at": "2026-11-19T23:03:06.239626+00:00",
+      "modified_at": "2026-11-19T23:03:06.239626+00:00"
+    },
+    "sha256": "4ce4c4c1cf59df6c17068e7251bf9f333226c3b4fa1932eb297c1c23564e780e",
+    "bytes": 1009487,
+    "mirror_exists": true,
+    "mirror_sha256": "4ce4c4c1cf59df6c17068e7251bf9f333226c3b4fa1932eb297c1c23564e780e",
+    "mirror_byte_identical": true,
+    "crc_bad_member": null,
+    "duplicate_exact_members": [],
+    "duplicate_normalized_members": [],
+    "unsafe_members": [],
+    "encrypted_members": [],
+    "uncompressed_bytes": 1088773,
+    "member_count": 11,
+    "members": [
+      {
+        "path": "EGA第五卷_非超奇异点正合列_校订续译.tex",
+        "bytes": 3808,
+        "crc32": "2f97b42d",
+        "sha256": "60ffbd3539ac7b9d51f98684e60f8811ab7fab6d48f87e57f48762145f15f3fa"
+      },
+      {
+        "path": "README.txt",
+        "bytes": 1103,
+        "crc32": "abebd987",
+        "sha256": "877b4e748843fc578d10eb461cf239a8b234e9a39a727cbf5324e878cf00d6c8"
+      },
+      {
+        "path": "法文扫描_原101至103页.pdf",
+        "bytes": 277978,
+        "crc32": "aa41d5e5",
+        "sha256": "71ba582c981f55c303be9b6672f7495153296fce9d00f3d35f5c39c74f1ca506"
+      },
+      {
+        "path": "SHA256SUMS.txt",
+        "bytes": 891,
+        "crc32": "0d6d089b",
+        "sha256": "eb38762a79bd9575b2cf9489eea1727210b340471b19930a83b04a1792e4ecf6"
+      },
+      {
+        "path": "build.sh",
+        "bytes": 165,
+        "crc32": "9ab658f4",
+        "sha256": "8f39711366dfcb36d63148fce8f0b514e566f045b703c1cad2ce414a8f061059"
+      },
+      {
+        "path": "verify.py",
+        "bytes": 246,
+        "crc32": "2cecd109",
+        "sha256": "e08eda4cdc070be19431e5ccef292f57d31b4e36a2d1e35e4d3da2e080f5bd61"
+      },
+      {
+        "path": "PROGRESS.json",
+        "bytes": 198,
+        "crc32": "8237bf20",
+        "sha256": "d9f749e80db320d35eb445fc2b6b53ee3b3bd2c4d982b2c8763fda95f394fed7"
+      },
+      {
+        "path": "AUDIT.txt",
+        "bytes": 365,
+        "crc32": "78b1100d",
+        "sha256": "c6882321748b825407358aa9250611fcc3e9e392f0bfdca733a7d6e010705b43"
+      },
+      {
+        "path": "EGA第五卷_非超奇异点正合列_校订续译.pdf",
+        "bytes": 125734,
+        "crc32": "f43d677a",
+        "sha256": "f521c47c20e827d6304a41b473fb4687f1f4b8a66a5e8b734f0a77c864fd65e2"
+      },
+      {
+        "path": "SOURCE_NOTES.txt",
+        "bytes": 953,
+        "crc32": "41cb6b80",
+        "sha256": "14188f639ae3aa89398b118eff479dc2292590eb4b4a4215fc4d91ae2016bc4d"
+      },
+      {
+        "path": "英译底本.pdf",
+        "bytes": 677332,
+        "crc32": "417febae",
+        "sha256": "23a20ef32fd16a1bd623c0c08ac080d04fc94f248de12133b713a19d6b0330d9"
+      }
+    ],
+    "extracted_directory": "integration_20261121/dot_audit_extract/n03",
+    "tex_files": [
+      {
+        "path": "EGA第五卷_非超奇异点正合列_校订续译.tex",
+        "bytes": 3808,
+        "crc32": "2f97b42d",
+        "sha256": "60ffbd3539ac7b9d51f98684e60f8811ab7fab6d48f87e57f48762145f15f3fa"
+      }
+    ],
+    "progress_claim": {
+      "batch": 52,
+      "source_page": 67,
+      "next_anchor": "It is necessary to summarize the whole situation in a recapitulating proposition",
+      "french_page": 102,
+      "merged": false,
+      "pdf_pages": 5
+    },
+    "internal_checksums": [
+      {
+        "path": "AUDIT.txt",
+        "expected_sha256": "c6882321748b825407358aa9250611fcc3e9e392f0bfdca733a7d6e010705b43",
+        "actual_sha256": "c6882321748b825407358aa9250611fcc3e9e392f0bfdca733a7d6e010705b43",
+        "status": "ok"
+      },
+      {
+        "path": "EGA第五卷_非超奇异点正合列_校订续译.pdf",
+        "expected_sha256": "f521c47c20e827d6304a41b473fb4687f1f4b8a66a5e8b734f0a77c864fd65e2",
+        "actual_sha256": "f521c47c20e827d6304a41b473fb4687f1f4b8a66a5e8b734f0a77c864fd65e2",
+        "status": "ok"
+      },
+      {
+        "path": "EGA第五卷_非超奇异点正合列_校订续译.tex",
+        "expected_sha256": "60ffbd3539ac7b9d51f98684e60f8811ab7fab6d48f87e57f48762145f15f3fa",
+        "actual_sha256": "60ffbd3539ac7b9d51f98684e60f8811ab7fab6d48f87e57f48762145f15f3fa",
+        "status": "ok"
+      },
+      {
+        "path": "PROGRESS.json",
+        "expected_sha256": "d9f749e80db320d35eb445fc2b6b53ee3b3bd2c4d982b2c8763fda95f394fed7",
+        "actual_sha256": "d9f749e80db320d35eb445fc2b6b53ee3b3bd2c4d982b2c8763fda95f394fed7",
+        "status": "ok"
+      },
+      {
+        "path": "README.txt",
+        "expected_sha256": "877b4e748843fc578d10eb461cf239a8b234e9a39a727cbf5324e878cf00d6c8",
+        "actual_sha256": "877b4e748843fc578d10eb461cf239a8b234e9a39a727cbf5324e878cf00d6c8",
+        "status": "ok"
+      },
+      {
+        "path": "SOURCE_NOTES.txt",
+        "expected_sha256": "14188f639ae3aa89398b118eff479dc2292590eb4b4a4215fc4d91ae2016bc4d",
+        "actual_sha256": "14188f639ae3aa89398b118eff479dc2292590eb4b4a4215fc4d91ae2016bc4d",
+        "status": "ok"
+      },
+      {
+        "path": "build.sh",
+        "expected_sha256": "8f39711366dfcb36d63148fce8f0b514e566f045b703c1cad2ce414a8f061059",
+        "actual_sha256": "8f39711366dfcb36d63148fce8f0b514e566f045b703c1cad2ce414a8f061059",
+        "status": "ok"
+      },
+      {
+        "path": "verify.py",
+        "expected_sha256": "e08eda4cdc070be19431e5ccef292f57d31b4e36a2d1e35e4d3da2e080f5bd61",
+        "actual_sha256": "e08eda4cdc070be19431e5ccef292f57d31b4e36a2d1e35e4d3da2e080f5bd61",
+        "status": "ok"
+      },
+      {
+        "path": "法文扫描_原101至103页.pdf",
+        "expected_sha256": "71ba582c981f55c303be9b6672f7495153296fce9d00f3d35f5c39c74f1ca506",
+        "actual_sha256": "71ba582c981f55c303be9b6672f7495153296fce9d00f3d35f5c39c74f1ca506",
+        "status": "ok"
+      },
+      {
+        "path": "英译底本.pdf",
+        "expected_sha256": "23a20ef32fd16a1bd623c0c08ac080d04fc94f248de12133b713a19d6b0330d9",
+        "actual_sha256": "23a20ef32fd16a1bd623c0c08ac080d04fc94f248de12133b713a19d6b0330d9",
+        "status": "ok"
+      }
+    ]
+  },
+  {
+    "order": 4,
+    "filename": "EGA第五卷_可逆模扭曲与单位变换_续译工程.zip",
+    "metadata": {
+      "name": "EGA第五卷_可逆模扭曲与单位变换_续译工程.zip",
+      "file_id": "file_000000003a5082129561d418d56cbfec",
+      "library_file_id": "libfile_fde3_f-5440d4220dd08191a0710883c144b424_49ac57203c0c81918f3630f0324dcb35",
+      "version_id": "0",
+      "size_bytes": 1009338,
+      "created_at": "2026-11-20T01:05:46.766316+00:00",
+      "modified_at": "2026-11-20T01:05:46.766316+00:00"
+    },
+    "sha256": "893be941ab376eb5c46133d9fe603ad1da9cebb3bbeb5ffbcc6601b95cb280c0",
+    "bytes": 1009338,
+    "mirror_exists": true,
+    "mirror_sha256": "893be941ab376eb5c46133d9fe603ad1da9cebb3bbeb5ffbcc6601b95cb280c0",
+    "mirror_byte_identical": true,
+    "crc_bad_member": null,
+    "duplicate_exact_members": [],
+    "duplicate_normalized_members": [],
+    "unsafe_members": [],
+    "encrypted_members": [],
+    "uncompressed_bytes": 1087743,
+    "member_count": 11,
+    "members": [
+      {
+        "path": "README.txt",
+        "bytes": 931,
+        "crc32": "5149da3a",
+        "sha256": "bddfbac811a62ba4fa9f6fd8dec67f7c4020dd9ef6da5cf7438cf8aada89793f"
+      },
+      {
+        "path": "法文扫描_原101至103页.pdf",
+        "bytes": 277978,
+        "crc32": "aa41d5e5",
+        "sha256": "71ba582c981f55c303be9b6672f7495153296fce9d00f3d35f5c39c74f1ca506"
+      },
+      {
+        "path": "SHA256SUMS.txt",
+        "bytes": 903,
+        "crc32": "75bc5da1",
+        "sha256": "d8db1134a6222c1d1db555087e3bfe4cc141ab79cd06156495233a59bab91324"
+      },
+      {
+        "path": "build.sh",
+        "bytes": 171,
+        "crc32": "38b9e31b",
+        "sha256": "2478585855a3d704cd39b1a724a3999edce7371049d138fb56818e1730d6e0f0"
+      },
+      {
+        "path": "verify.py",
+        "bytes": 246,
+        "crc32": "2cecd109",
+        "sha256": "e08eda4cdc070be19431e5ccef292f57d31b4e36a2d1e35e4d3da2e080f5bd61"
+      },
+      {
+        "path": "EGA第五卷_可逆模扭曲与单位变换_校订续译.tex",
+        "bytes": 3194,
+        "crc32": "7153543e",
+        "sha256": "ca2c505dfd1f5e5e244d981b1ef0777952d8e34d4d1d7443044f5e7064502301"
+      },
+      {
+        "path": "PROGRESS.json",
+        "bytes": 173,
+        "crc32": "67094467",
+        "sha256": "81d1487f7e63278ebe1abf0b2470516e77ad6f9fd22f830effa988adad481df8"
+      },
+      {
+        "path": "EGA第五卷_可逆模扭曲与单位变换_校订续译.pdf",
+        "bytes": 125368,
+        "crc32": "65bd1ec0",
+        "sha256": "e1de8a3d8a90e51de234df53e897df8d62a07a8a44a5f11c6892409284611ee3"
+      },
+      {
+        "path": "AUDIT.txt",
+        "bytes": 302,
+        "crc32": "7ed66bac",
+        "sha256": "e3c74ecf9c8b446a2ba273985652f42ca4fb75b0987c504fc58b02aecaccf853"
+      },
+      {
+        "path": "SOURCE_NOTES.txt",
+        "bytes": 1145,
+        "crc32": "fb07ceb9",
+        "sha256": "ec476f564360b508f05a96a08f49a75cfd1ae17606bd02a1dbdd429afe1ea42b"
+      },
+      {
+        "path": "英译底本.pdf",
+        "bytes": 677332,
+        "crc32": "417febae",
+        "sha256": "23a20ef32fd16a1bd623c0c08ac080d04fc94f248de12133b713a19d6b0330d9"
+      }
+    ],
+    "extracted_directory": "integration_20261121/dot_audit_extract/n04",
+    "tex_files": [
+      {
+        "path": "EGA第五卷_可逆模扭曲与单位变换_校订续译.tex",
+        "bytes": 3194,
+        "crc32": "7153543e",
+        "sha256": "ca2c505dfd1f5e5e244d981b1ef0777952d8e34d4d1d7443044f5e7064502301"
+      }
+    ],
+    "progress_claim": {
+      "batch": 53,
+      "source_page": 67,
+      "next_anchor": "Remark. With the mentioned conditions about X, Y, S, φ",
+      "french_page": 102,
+      "merged": false,
+      "pdf_pages": 4
+    },
+    "internal_checksums": [
+      {
+        "path": "AUDIT.txt",
+        "expected_sha256": "e3c74ecf9c8b446a2ba273985652f42ca4fb75b0987c504fc58b02aecaccf853",
+        "actual_sha256": "e3c74ecf9c8b446a2ba273985652f42ca4fb75b0987c504fc58b02aecaccf853",
+        "status": "ok"
+      },
+      {
+        "path": "EGA第五卷_可逆模扭曲与单位变换_校订续译.pdf",
+        "expected_sha256": "e1de8a3d8a90e51de234df53e897df8d62a07a8a44a5f11c6892409284611ee3",
+        "actual_sha256": "e1de8a3d8a90e51de234df53e897df8d62a07a8a44a5f11c6892409284611ee3",
+        "status": "ok"
+      },
+      {
+        "path": "EGA第五卷_可逆模扭曲与单位变换_校订续译.tex",
+        "expected_sha256": "ca2c505dfd1f5e5e244d981b1ef0777952d8e34d4d1d7443044f5e7064502301",
+        "actual_sha256": "ca2c505dfd1f5e5e244d981b1ef0777952d8e34d4d1d7443044f5e7064502301",
+        "status": "ok"
+      },
+      {
+        "path": "PROGRESS.json",
+        "expected_sha256": "81d1487f7e63278ebe1abf0b2470516e77ad6f9fd22f830effa988adad481df8",
+        "actual_sha256": "81d1487f7e63278ebe1abf0b2470516e77ad6f9fd22f830effa988adad481df8",
+        "status": "ok"
+      },
+      {
+        "path": "README.txt",
+        "expected_sha256": "bddfbac811a62ba4fa9f6fd8dec67f7c4020dd9ef6da5cf7438cf8aada89793f",
+        "actual_sha256": "bddfbac811a62ba4fa9f6fd8dec67f7c4020dd9ef6da5cf7438cf8aada89793f",
+        "status": "ok"
+      },
+      {
+        "path": "SOURCE_NOTES.txt",
+        "expected_sha256": "ec476f564360b508f05a96a08f49a75cfd1ae17606bd02a1dbdd429afe1ea42b",
+        "actual_sha256": "ec476f564360b508f05a96a08f49a75cfd1ae17606bd02a1dbdd429afe1ea42b",
+        "status": "ok"
+      },
+      {
+        "path": "build.sh",
+        "expected_sha256": "2478585855a3d704cd39b1a724a3999edce7371049d138fb56818e1730d6e0f0",
+        "actual_sha256": "2478585855a3d704cd39b1a724a3999edce7371049d138fb56818e1730d6e0f0",
+        "status": "ok"
+      },
+      {
+        "path": "verify.py",
+        "expected_sha256": "e08eda4cdc070be19431e5ccef292f57d31b4e36a2d1e35e4d3da2e080f5bd61",
+        "actual_sha256": "e08eda4cdc070be19431e5ccef292f57d31b4e36a2d1e35e4d3da2e080f5bd61",
+        "status": "ok"
+      },
+      {
+        "path": "法文扫描_原101至103页.pdf",
+        "expected_sha256": "71ba582c981f55c303be9b6672f7495153296fce9d00f3d35f5c39c74f1ca506",
+        "actual_sha256": "71ba582c981f55c303be9b6672f7495153296fce9d00f3d35f5c39c74f1ca506",
+        "status": "ok"
+      },
+      {
+        "path": "英译底本.pdf",
+        "expected_sha256": "23a20ef32fd16a1bd623c0c08ac080d04fc94f248de12133b713a19d6b0330d9",
+        "actual_sha256": "23a20ef32fd16a1bd623c0c08ac080d04fc94f248de12133b713a19d6b0330d9",
+        "status": "ok"
+      }
+    ]
+  },
+  {
+    "order": 5,
+    "filename": "EGA第五卷_普通奇异零点备注_续译工程.zip",
+    "metadata": {
+      "name": "EGA第五卷_普通奇异零点备注_续译工程.zip",
+      "file_id": "file_00000000d79881f5b047af8dfd1ba4d8",
+      "library_file_id": "libfile_fde3_f-39693f38fca88191a921c45dd2691553_49ac57203c0c81918f3630f0324dcb35",
+      "version_id": "0",
+      "size_bytes": 1020804,
+      "created_at": "2026-11-20T03:03:50.234541+00:00",
+      "modified_at": "2026-11-20T03:03:50.234541+00:00"
+    },
+    "sha256": "eafdf41bd4ecaa8d803fd21e295cd2ce085585941c4af15dc62e50a6e5af2ccd",
+    "bytes": 1020804,
+    "mirror_exists": true,
+    "mirror_sha256": "eafdf41bd4ecaa8d803fd21e295cd2ce085585941c4af15dc62e50a6e5af2ccd",
+    "mirror_byte_identical": true,
+    "crc_bad_member": null,
+    "duplicate_exact_members": [],
+    "duplicate_normalized_members": [],
+    "unsafe_members": [],
+    "encrypted_members": [],
+    "uncompressed_bytes": 1100571,
+    "member_count": 11,
+    "members": [
+      {
+        "path": "README.txt",
+        "bytes": 668,
+        "crc32": "e571e86f",
+        "sha256": "f5d09b3cd22d97d366fe6f9b4cad732a25ee3bb2020033aab9accdc8ebaeb139"
+      },
+      {
+        "path": "法文扫描_原101至103页.pdf",
+        "bytes": 277978,
+        "crc32": "aa41d5e5",
+        "sha256": "71ba582c981f55c303be9b6672f7495153296fce9d00f3d35f5c39c74f1ca506"
+      },
+      {
+        "path": "EGA第五卷_普通奇异零点备注_校订续译.pdf",
+        "bytes": 137623,
+        "crc32": "0141a11b",
+        "sha256": "0bab8ba5766b5dc5afa96fce16911522908ab765f166e146c708378bd3c4a0a3"
+      },
+      {
+        "path": "SHA256SUMS.txt",
+        "bytes": 891,
+        "crc32": "aef881ee",
+        "sha256": "8c7441681fdc5fb564eb1abbb95f79744390ed31d6b039b8ecfda0065fa0a276"
+      },
+      {
+        "path": "build.sh",
+        "bytes": 165,
+        "crc32": "3b6b4d5a",
+        "sha256": "f5d8f08901de849bbab347282f04b954674e9535a795cd590195bc517499a0d6"
+      },
+      {
+        "path": "verify.py",
+        "bytes": 246,
+        "crc32": "2cecd109",
+        "sha256": "e08eda4cdc070be19431e5ccef292f57d31b4e36a2d1e35e4d3da2e080f5bd61"
+      },
+      {
+        "path": "EGA第五卷_普通奇异零点备注_校订续译.tex",
+        "bytes": 3939,
+        "crc32": "e3644bf5",
+        "sha256": "b8e1014f4bbaaeb016e240e27d6626617b65440d342c3959894044dbfbda49e7"
+      },
+      {
+        "path": "PROGRESS.json",
+        "bytes": 199,
+        "crc32": "e7bbf7f5",
+        "sha256": "153a5b4357a835e749a7f2eae599983995b594c5919dbad1d10a173fc5bd8e43"
+      },
+      {
+        "path": "AUDIT.txt",
+        "bytes": 317,
+        "crc32": "c4300cd3",
+        "sha256": "a637dd1f9516bab7bb10fa27c4f3ac87ea9caac8010ce6e28b2c769915252c4f"
+      },
+      {
+        "path": "SOURCE_NOTES.txt",
+        "bytes": 1213,
+        "crc32": "dc00e1ff",
+        "sha256": "e17d066284a54af81d8e6463eb1f3f0bae611abe00544c26560efb81d2f2bf9a"
+      },
+      {
+        "path": "英译底本.pdf",
+        "bytes": 677332,
+        "crc32": "417febae",
+        "sha256": "23a20ef32fd16a1bd623c0c08ac080d04fc94f248de12133b713a19d6b0330d9"
+      }
+    ],
+    "extracted_directory": "integration_20261121/dot_audit_extract/n05",
+    "tex_files": [
+      {
+        "path": "EGA第五卷_普通奇异零点备注_校订续译.tex",
+        "bytes": 3939,
+        "crc32": "e3644bf5",
+        "sha256": "b8e1014f4bbaaeb016e240e27d6626617b65440d342c3959894044dbfbda49e7"
+      }
+    ],
+    "progress_claim": {
+      "batch": 54,
+      "source_page": 68,
+      "next_anchor": "Here is a diagram analogous to (D) but for a section ε of an invertible module K",
+      "french_page": 103,
+      "merged": false,
+      "pdf_pages": 4
+    },
+    "internal_checksums": [
+      {
+        "path": "AUDIT.txt",
+        "expected_sha256": "a637dd1f9516bab7bb10fa27c4f3ac87ea9caac8010ce6e28b2c769915252c4f",
+        "actual_sha256": "a637dd1f9516bab7bb10fa27c4f3ac87ea9caac8010ce6e28b2c769915252c4f",
+        "status": "ok"
+      },
+      {
+        "path": "EGA第五卷_普通奇异零点备注_校订续译.pdf",
+        "expected_sha256": "0bab8ba5766b5dc5afa96fce16911522908ab765f166e146c708378bd3c4a0a3",
+        "actual_sha256": "0bab8ba5766b5dc5afa96fce16911522908ab765f166e146c708378bd3c4a0a3",
+        "status": "ok"
+      },
+      {
+        "path": "EGA第五卷_普通奇异零点备注_校订续译.tex",
+        "expected_sha256": "b8e1014f4bbaaeb016e240e27d6626617b65440d342c3959894044dbfbda49e7",
+        "actual_sha256": "b8e1014f4bbaaeb016e240e27d6626617b65440d342c3959894044dbfbda49e7",
+        "status": "ok"
+      },
+      {
+        "path": "PROGRESS.json",
+        "expected_sha256": "153a5b4357a835e749a7f2eae599983995b594c5919dbad1d10a173fc5bd8e43",
+        "actual_sha256": "153a5b4357a835e749a7f2eae599983995b594c5919dbad1d10a173fc5bd8e43",
+        "status": "ok"
+      },
+      {
+        "path": "README.txt",
+        "expected_sha256": "f5d09b3cd22d97d366fe6f9b4cad732a25ee3bb2020033aab9accdc8ebaeb139",
+        "actual_sha256": "f5d09b3cd22d97d366fe6f9b4cad732a25ee3bb2020033aab9accdc8ebaeb139",
+        "status": "ok"
+      },
+      {
+        "path": "SOURCE_NOTES.txt",
+        "expected_sha256": "e17d066284a54af81d8e6463eb1f3f0bae611abe00544c26560efb81d2f2bf9a",
+        "actual_sha256": "e17d066284a54af81d8e6463eb1f3f0bae611abe00544c26560efb81d2f2bf9a",
+        "status": "ok"
+      },
+      {
+        "path": "build.sh",
+        "expected_sha256": "f5d8f08901de849bbab347282f04b954674e9535a795cd590195bc517499a0d6",
+        "actual_sha256": "f5d8f08901de849bbab347282f04b954674e9535a795cd590195bc517499a0d6",
+        "status": "ok"
+      },
+      {
+        "path": "verify.py",
+        "expected_sha256": "e08eda4cdc070be19431e5ccef292f57d31b4e36a2d1e35e4d3da2e080f5bd61",
+        "actual_sha256": "e08eda4cdc070be19431e5ccef292f57d31b4e36a2d1e35e4d3da2e080f5bd61",
+        "status": "ok"
+      },
+      {
+        "path": "法文扫描_原101至103页.pdf",
+        "expected_sha256": "71ba582c981f55c303be9b6672f7495153296fce9d00f3d35f5c39c74f1ca506",
+        "actual_sha256": "71ba582c981f55c303be9b6672f7495153296fce9d00f3d35f5c39c74f1ca506",
+        "status": "ok"
+      },
+      {
+        "path": "英译底本.pdf",
+        "expected_sha256": "23a20ef32fd16a1bd623c0c08ac080d04fc94f248de12133b713a19d6b0330d9",
+        "actual_sha256": "23a20ef32fd16a1bd623c0c08ac080d04fc94f248de12133b713a19d6b0330d9",
+        "status": "ok"
+      }
+    ]
+  },
+  {
+    "order": 6,
+    "filename": "EGA第五卷_可逆模截面类比图_续译工程.zip",
+    "metadata": {
+      "name": "EGA第五卷_可逆模截面类比图_续译工程.zip",
+      "file_id": "file_0000000085d082128b5bf416c426de1c",
+      "library_file_id": "libfile_fde3_f-ba937f1c75f8819185633c6c8db9059e_49ac57203c0c81918f3630f0324dcb35",
+      "version_id": "0",
+      "size_bytes": 1107042,
+      "created_at": "2026-11-20T05:02:56.753157+00:00",
+      "modified_at": "2026-11-20T05:02:56.753157+00:00"
+    },
+    "sha256": "b2f39e3ed0d8df00074ec0580502bf4a9715dba4c63dacf1498062a88f5cae1b",
+    "bytes": 1107042,
+    "mirror_exists": true,
+    "mirror_sha256": "b2f39e3ed0d8df00074ec0580502bf4a9715dba4c63dacf1498062a88f5cae1b",
+    "mirror_byte_identical": true,
+    "crc_bad_member": null,
+    "duplicate_exact_members": [],
+    "duplicate_normalized_members": [],
+    "unsafe_members": [],
+    "encrypted_members": [],
+    "uncompressed_bytes": 1187933,
+    "member_count": 11,
+    "members": [
+      {
+        "path": "EGA第五卷_可逆模截面类比图_校订续译.tex",
+        "bytes": 3235,
+        "crc32": "d8f6ccca",
+        "sha256": "065fa251ce4fadafb896b4e0763d4ed3e7a5a8774dffb78501b04e426bc2a16d"
+      },
+      {
+        "path": "README.txt",
+        "bytes": 727,
+        "crc32": "d9c108ef",
+        "sha256": "14586b8e29f773c2ae3e11ee20d61964516c8df307eec5bfffbc47148b2d2325"
+      },
+      {
+        "path": "EGA第五卷_可逆模截面类比图_校订续译.pdf",
+        "bytes": 122736,
+        "crc32": "34cc92a2",
+        "sha256": "7131839810280eef427ab5dc61c07e81dbc41f9e4bf7440b1da4b65af9f2b762"
+      },
+      {
+        "path": "SHA256SUMS.txt",
+        "bytes": 891,
+        "crc32": "d67d6378",
+        "sha256": "857ac20a409ce95b70b657974300b6a3f260c5433cee0398173bc30c44585002"
+      },
+      {
+        "path": "build.sh",
+        "bytes": 165,
+        "crc32": "2a67c919",
+        "sha256": "c04125f30500ae0fb8fc2f044cd585341cddd8bd3d1d8015162ae58127e5a1c2"
+      },
+      {
+        "path": "verify.py",
+        "bytes": 246,
+        "crc32": "2cecd109",
+        "sha256": "e08eda4cdc070be19431e5ccef292f57d31b4e36a2d1e35e4d3da2e080f5bd61"
+      },
+      {
+        "path": "法文扫描_原101至104页.pdf",
+        "bytes": 380782,
+        "crc32": "ae261091",
+        "sha256": "b42018102cc80a64748a937e3a80127556555e6658569d618a04756fca3a8516"
+      },
+      {
+        "path": "PROGRESS.json",
+        "bytes": 175,
+        "crc32": "58d8db42",
+        "sha256": "ebd1533d368dc8379e376080034f484ea48fa9ca7a1b97593499429f8d9a57f3"
+      },
+      {
+        "path": "AUDIT.txt",
+        "bytes": 276,
+        "crc32": "b8d39130",
+        "sha256": "c3cbd5d59df260d3c07a13b616ec7f427c402f195b1368a0f3a5e7f1fa77b77e"
+      },
+      {
+        "path": "SOURCE_NOTES.txt",
+        "bytes": 1368,
+        "crc32": "89e66e68",
+        "sha256": "77bb29e634a099bdbadbe7c918d0afbc87ce1e9ab01f882c47c2809b96fe3358"
+      },
+      {
+        "path": "英译底本.pdf",
+        "bytes": 677332,
+        "crc32": "417febae",
+        "sha256": "23a20ef32fd16a1bd623c0c08ac080d04fc94f248de12133b713a19d6b0330d9"
+      }
+    ],
+    "extracted_directory": "integration_20261121/dot_audit_extract/n06",
+    "tex_files": [
+      {
+        "path": "EGA第五卷_可逆模截面类比图_校订续译.tex",
+        "bytes": 3235,
+        "crc32": "d8f6ccca",
+        "sha256": "065fa251ce4fadafb896b4e0763d4ed3e7a5a8774dffb78501b04e426bc2a16d"
+      }
+    ],
+    "progress_claim": {
+      "batch": 55,
+      "source_page": 68,
+      "next_anchor": "Upon arriving at this point, admirable for its generality",
+      "french_page": 104,
+      "merged": false,
+      "pdf_pages": 4
+    },
+    "internal_checksums": [
+      {
+        "path": "AUDIT.txt",
+        "expected_sha256": "c3cbd5d59df260d3c07a13b616ec7f427c402f195b1368a0f3a5e7f1fa77b77e",
+        "actual_sha256": "c3cbd5d59df260d3c07a13b616ec7f427c402f195b1368a0f3a5e7f1fa77b77e",
+        "status": "ok"
+      },
+      {
+        "path": "EGA第五卷_可逆模截面类比图_校订续译.pdf",
+        "expected_sha256": "7131839810280eef427ab5dc61c07e81dbc41f9e4bf7440b1da4b65af9f2b762",
+        "actual_sha256": "7131839810280eef427ab5dc61c07e81dbc41f9e4bf7440b1da4b65af9f2b762",
+        "status": "ok"
+      },
+      {
+        "path": "EGA第五卷_可逆模截面类比图_校订续译.tex",
+        "expected_sha256": "065fa251ce4fadafb896b4e0763d4ed3e7a5a8774dffb78501b04e426bc2a16d",
+        "actual_sha256": "065fa251ce4fadafb896b4e0763d4ed3e7a5a8774dffb78501b04e426bc2a16d",
+        "status": "ok"
+      },
+      {
+        "path": "PROGRESS.json",
+        "expected_sha256": "ebd1533d368dc8379e376080034f484ea48fa9ca7a1b97593499429f8d9a57f3",
+        "actual_sha256": "ebd1533d368dc8379e376080034f484ea48fa9ca7a1b97593499429f8d9a57f3",
+        "status": "ok"
+      },
+      {
+        "path": "README.txt",
+        "expected_sha256": "14586b8e29f773c2ae3e11ee20d61964516c8df307eec5bfffbc47148b2d2325",
+        "actual_sha256": "14586b8e29f773c2ae3e11ee20d61964516c8df307eec5bfffbc47148b2d2325",
+        "status": "ok"
+      },
+      {
+        "path": "SOURCE_NOTES.txt",
+        "expected_sha256": "77bb29e634a099bdbadbe7c918d0afbc87ce1e9ab01f882c47c2809b96fe3358",
+        "actual_sha256": "77bb29e634a099bdbadbe7c918d0afbc87ce1e9ab01f882c47c2809b96fe3358",
+        "status": "ok"
+      },
+      {
+        "path": "build.sh",
+        "expected_sha256": "c04125f30500ae0fb8fc2f044cd585341cddd8bd3d1d8015162ae58127e5a1c2",
+        "actual_sha256": "c04125f30500ae0fb8fc2f044cd585341cddd8bd3d1d8015162ae58127e5a1c2",
+        "status": "ok"
+      },
+      {
+        "path": "verify.py",
+        "expected_sha256": "e08eda4cdc070be19431e5ccef292f57d31b4e36a2d1e35e4d3da2e080f5bd61",
+        "actual_sha256": "e08eda4cdc070be19431e5ccef292f57d31b4e36a2d1e35e4d3da2e080f5bd61",
+        "status": "ok"
+      },
+      {
+        "path": "法文扫描_原101至104页.pdf",
+        "expected_sha256": "b42018102cc80a64748a937e3a80127556555e6658569d618a04756fca3a8516",
+        "actual_sha256": "b42018102cc80a64748a937e3a80127556555e6658569d618a04756fca3a8516",
+        "status": "ok"
+      },
+      {
+        "path": "英译底本.pdf",
+        "expected_sha256": "23a20ef32fd16a1bd623c0c08ac080d04fc94f248de12133b713a19d6b0330d9",
+        "actual_sha256": "23a20ef32fd16a1bd623c0c08ac080d04fc94f248de12133b713a19d6b0330d9",
+        "status": "ok"
+      }
+    ]
+  },
+  {
+    "order": 7,
+    "filename": "EGA第五卷_划去稿的增广定义_续译工程.zip",
+    "metadata": {
+      "name": "EGA第五卷_划去稿的增广定义_续译工程.zip",
+      "file_id": "file_00000000064481f5b3c5404faabd08ca",
+      "library_file_id": "libfile_fde3_f-f65ba80a5d1c8191ae25e78ba7c60aa9_49ac57203c0c81918f3630f0324dcb35",
+      "version_id": "0",
+      "size_bytes": 1173226,
+      "created_at": "2026-11-20T07:01:15.995677+00:00",
+      "modified_at": "2026-11-20T07:01:15.995677+00:00"
+    },
+    "sha256": "a2b960054e3d3a6e776095d84e0a1a12260d8d47d928fe20b1538ccbedeff869",
+    "bytes": 1173226,
+    "mirror_exists": true,
+    "mirror_sha256": "a2b960054e3d3a6e776095d84e0a1a12260d8d47d928fe20b1538ccbedeff869",
+    "mirror_byte_identical": true,
+    "crc_bad_member": null,
+    "duplicate_exact_members": [],
+    "duplicate_normalized_members": [],
+    "unsafe_members": [],
+    "encrypted_members": [],
+    "uncompressed_bytes": 1256128,
+    "member_count": 11,
+    "members": [
+      {
+        "path": "README.txt",
+        "bytes": 841,
+        "crc32": "bc07dfb7",
+        "sha256": "6b6df28d6468a061fe56ef2ded8d549eb9d5f9a305485f9e6684e1d6ff20b080"
+      },
+      {
+        "path": "法文扫描_原104至107页.pdf",
+        "bytes": 414945,
+        "crc32": "335f0d4c",
+        "sha256": "987343f95d9683298e194223ffe1866e717d624048f6a49700d86a8049564e52"
+      },
+      {
+        "path": "SHA256SUMS.txt",
+        "bytes": 891,
+        "crc32": "90852f6f",
+        "sha256": "29dc87a86d0b2c77f64d4de5e3a9ffde2a65d1bc88d5b5e66f647fc111de85a3"
+      },
+      {
+        "path": "build.sh",
+        "bytes": 165,
+        "crc32": "1a385360",
+        "sha256": "38f5ad8754f43ae7613ddaf0e9849a480d7f8f300debb3e02f8f01db89697da2"
+      },
+      {
+        "path": "verify.py",
+        "bytes": 246,
+        "crc32": "2cecd109",
+        "sha256": "e08eda4cdc070be19431e5ccef292f57d31b4e36a2d1e35e4d3da2e080f5bd61"
+      },
+      {
+        "path": "PROGRESS.json",
+        "bytes": 196,
+        "crc32": "a67f2c76",
+        "sha256": "ec31cdcd5bbba1e67c63833702cff45adaaaac45216fc147e61701975e28a983"
+      },
+      {
+        "path": "EGA第五卷_划去稿的增广定义_校订续译.tex",
+        "bytes": 4328,
+        "crc32": "8dfbdc0f",
+        "sha256": "738c4daafd158361337e7ed41d9e2d179dd3e1b86157f8d6aa7b2887cf3adcf4"
+      },
+      {
+        "path": "EGA第五卷_划去稿的增广定义_校订续译.pdf",
+        "bytes": 155414,
+        "crc32": "fc443515",
+        "sha256": "23bb7aa1c84e250250485698240e663d5c3e8a31069312e7ed9ae37dba9b53f4"
+      },
+      {
+        "path": "AUDIT.txt",
+        "bytes": 326,
+        "crc32": "b5fd733e",
+        "sha256": "55e17780d4d94f0569b31b213674da78a8d8551ef89c5ca986dd844bf16b2d33"
+      },
+      {
+        "path": "SOURCE_NOTES.txt",
+        "bytes": 1444,
+        "crc32": "aa2ae38d",
+        "sha256": "0302a45966edef70db53da6640e4c33b40482d879def359871944bdc236b361a"
+      },
+      {
+        "path": "英译底本.pdf",
+        "bytes": 677332,
+        "crc32": "417febae",
+        "sha256": "23a20ef32fd16a1bd623c0c08ac080d04fc94f248de12133b713a19d6b0330d9"
+      }
+    ],
+    "extracted_directory": "integration_20261121/dot_audit_extract/n07",
+    "tex_files": [
+      {
+        "path": "EGA第五卷_划去稿的增广定义_校订续译.tex",
+        "bytes": 4328,
+        "crc32": "8dfbdc0f",
+        "sha256": "738c4daafd158361337e7ed41d9e2d179dd3e1b86157f8d6aa7b2887cf3adcf4"
+      }
+    ],
+    "progress_claim": {
+      "batch": 56,
+      "source_page": 69,
+      "next_anchor": "Proposition 8. For the augmentation A → A/I to be of ordinary quadratic type",
+      "french_page": 105,
+      "merged": false,
+      "pdf_pages": 5
+    },
+    "internal_checksums": [
+      {
+        "path": "AUDIT.txt",
+        "expected_sha256": "55e17780d4d94f0569b31b213674da78a8d8551ef89c5ca986dd844bf16b2d33",
+        "actual_sha256": "55e17780d4d94f0569b31b213674da78a8d8551ef89c5ca986dd844bf16b2d33",
+        "status": "ok"
+      },
+      {
+        "path": "EGA第五卷_划去稿的增广定义_校订续译.pdf",
+        "expected_sha256": "23bb7aa1c84e250250485698240e663d5c3e8a31069312e7ed9ae37dba9b53f4",
+        "actual_sha256": "23bb7aa1c84e250250485698240e663d5c3e8a31069312e7ed9ae37dba9b53f4",
+        "status": "ok"
+      },
+      {
+        "path": "EGA第五卷_划去稿的增广定义_校订续译.tex",
+        "expected_sha256": "738c4daafd158361337e7ed41d9e2d179dd3e1b86157f8d6aa7b2887cf3adcf4",
+        "actual_sha256": "738c4daafd158361337e7ed41d9e2d179dd3e1b86157f8d6aa7b2887cf3adcf4",
+        "status": "ok"
+      },
+      {
+        "path": "PROGRESS.json",
+        "expected_sha256": "ec31cdcd5bbba1e67c63833702cff45adaaaac45216fc147e61701975e28a983",
+        "actual_sha256": "ec31cdcd5bbba1e67c63833702cff45adaaaac45216fc147e61701975e28a983",
+        "status": "ok"
+      },
+      {
+        "path": "README.txt",
+        "expected_sha256": "6b6df28d6468a061fe56ef2ded8d549eb9d5f9a305485f9e6684e1d6ff20b080",
+        "actual_sha256": "6b6df28d6468a061fe56ef2ded8d549eb9d5f9a305485f9e6684e1d6ff20b080",
+        "status": "ok"
+      },
+      {
+        "path": "SOURCE_NOTES.txt",
+        "expected_sha256": "0302a45966edef70db53da6640e4c33b40482d879def359871944bdc236b361a",
+        "actual_sha256": "0302a45966edef70db53da6640e4c33b40482d879def359871944bdc236b361a",
+        "status": "ok"
+      },
+      {
+        "path": "build.sh",
+        "expected_sha256": "38f5ad8754f43ae7613ddaf0e9849a480d7f8f300debb3e02f8f01db89697da2",
+        "actual_sha256": "38f5ad8754f43ae7613ddaf0e9849a480d7f8f300debb3e02f8f01db89697da2",
+        "status": "ok"
+      },
+      {
+        "path": "verify.py",
+        "expected_sha256": "e08eda4cdc070be19431e5ccef292f57d31b4e36a2d1e35e4d3da2e080f5bd61",
+        "actual_sha256": "e08eda4cdc070be19431e5ccef292f57d31b4e36a2d1e35e4d3da2e080f5bd61",
+        "status": "ok"
+      },
+      {
+        "path": "法文扫描_原104至107页.pdf",
+        "expected_sha256": "987343f95d9683298e194223ffe1866e717d624048f6a49700d86a8049564e52",
+        "actual_sha256": "987343f95d9683298e194223ffe1866e717d624048f6a49700d86a8049564e52",
+        "status": "ok"
+      },
+      {
+        "path": "英译底本.pdf",
+        "expected_sha256": "23a20ef32fd16a1bd623c0c08ac080d04fc94f248de12133b713a19d6b0330d9",
+        "actual_sha256": "23a20ef32fd16a1bd623c0c08ac080d04fc94f248de12133b713a19d6b0330d9",
+        "status": "ok"
+      }
+    ]
+  },
+  {
+    "order": 8,
+    "filename": "EGA第五卷_划去稿命题8及引理_续译工程.zip",
+    "metadata": {
+      "name": "EGA第五卷_划去稿命题8及引理_续译工程.zip",
+      "file_id": "file_0000000021cc81f5a0e01e3ec25bbdd3",
+      "library_file_id": "libfile_fde3_f-ac16ff1c64648191b5e9eb8a531691f8_49ac57203c0c81918f3630f0324dcb35",
+      "version_id": "0",
+      "size_bytes": 1164751,
+      "created_at": "2026-11-20T08:59:36.663141+00:00",
+      "modified_at": "2026-11-20T08:59:36.663141+00:00"
+    },
+    "sha256": "8ae071d764a395acaeda87b7d66f60bee8744d7bec250fbf8f112e4c5cab0d61",
+    "bytes": 1164751,
+    "mirror_exists": true,
+    "mirror_sha256": "8ae071d764a395acaeda87b7d66f60bee8744d7bec250fbf8f112e4c5cab0d61",
+    "mirror_byte_identical": true,
+    "crc_bad_member": null,
+    "duplicate_exact_members": [],
+    "duplicate_normalized_members": [],
+    "unsafe_members": [],
+    "encrypted_members": [],
+    "uncompressed_bytes": 1247604,
+    "member_count": 11,
+    "members": [
+      {
+        "path": "README.txt",
+        "bytes": 485,
+        "crc32": "8b9addc0",
+        "sha256": "1769bb38333af00d5ef3aa66e215d418598f429cb3539e60c3cbbece1f1d4eff"
+      },
+      {
+        "path": "EGA第五卷_划去稿命题8及引理_校订续译.pdf",
+        "bytes": 147038,
+        "crc32": "06ab5ee2",
+        "sha256": "b5c7373da480d3b871785786c72974e59f923daa81ca73d60244b880f3b100dc"
+      },
+      {
+        "path": "法文扫描_原104至107页.pdf",
+        "bytes": 414945,
+        "crc32": "335f0d4c",
+        "sha256": "987343f95d9683298e194223ffe1866e717d624048f6a49700d86a8049564e52"
+      },
+      {
+        "path": "SHA256SUMS.txt",
+        "bytes": 893,
+        "crc32": "af3649df",
+        "sha256": "823e6257caa8ca1a96a959bfca4fde93410315b3a53ca947045f875f29a7e11f"
+      },
+      {
+        "path": "build.sh",
+        "bytes": 166,
+        "crc32": "9827fd5e",
+        "sha256": "9f294b6e38d34c7e149760f04bec09fdf5a021f7d96da63ffd2c1707c08cdee7"
+      },
+      {
+        "path": "verify.py",
+        "bytes": 246,
+        "crc32": "2cecd109",
+        "sha256": "e08eda4cdc070be19431e5ccef292f57d31b4e36a2d1e35e4d3da2e080f5bd61"
+      },
+      {
+        "path": "EGA第五卷_划去稿命题8及引理_校订续译.tex",
+        "bytes": 4446,
+        "crc32": "c4172b78",
+        "sha256": "3695ee1e613ece7b836e77555783a0056e279414541e47626ee5a759bc8a5826"
+      },
+      {
+        "path": "PROGRESS.json",
+        "bytes": 195,
+        "crc32": "d645b2bf",
+        "sha256": "d00e084e1e1caffe0e42c8d012fdd3533294260cfc29201bcb3a16c4444d84fd"
+      },
+      {
+        "path": "AUDIT.txt",
+        "bytes": 356,
+        "crc32": "61d760f3",
+        "sha256": "7205a7589585305f3e5e1904944b35c491648afc45d2deb6eeb00f834408708f"
+      },
+      {
+        "path": "SOURCE_NOTES.txt",
+        "bytes": 1502,
+        "crc32": "5b896e63",
+        "sha256": "4aef9c805a130af3b7be2b29150ef975e8ab755e2ab12759475e7065bfcb28dd"
+      },
+      {
+        "path": "英译底本.pdf",
+        "bytes": 677332,
+        "crc32": "417febae",
+        "sha256": "23a20ef32fd16a1bd623c0c08ac080d04fc94f248de12133b713a19d6b0330d9"
+      }
+    ],
+    "extracted_directory": "integration_20261121/dot_audit_extract/n08",
+    "tex_files": [
+      {
+        "path": "EGA第五卷_划去稿命题8及引理_校订续译.tex",
+        "bytes": 4446,
+        "crc32": "c4172b78",
+        "sha256": "3695ee1e613ece7b836e77555783a0056e279414541e47626ee5a759bc8a5826"
+      }
+    ],
+    "progress_claim": {
+      "batch": 57,
+      "source_page": 69,
+      "next_anchor": "Proposition 9. Let A be a ring augmented into A/I with a regular augmentation",
+      "french_page": 105,
+      "merged": false,
+      "pdf_pages": 4
+    },
+    "internal_checksums": [
+      {
+        "path": "AUDIT.txt",
+        "expected_sha256": "7205a7589585305f3e5e1904944b35c491648afc45d2deb6eeb00f834408708f",
+        "actual_sha256": "7205a7589585305f3e5e1904944b35c491648afc45d2deb6eeb00f834408708f",
+        "status": "ok"
+      },
+      {
+        "path": "EGA第五卷_划去稿命题8及引理_校订续译.pdf",
+        "expected_sha256": "b5c7373da480d3b871785786c72974e59f923daa81ca73d60244b880f3b100dc",
+        "actual_sha256": "b5c7373da480d3b871785786c72974e59f923daa81ca73d60244b880f3b100dc",
+        "status": "ok"
+      },
+      {
+        "path": "EGA第五卷_划去稿命题8及引理_校订续译.tex",
+        "expected_sha256": "3695ee1e613ece7b836e77555783a0056e279414541e47626ee5a759bc8a5826",
+        "actual_sha256": "3695ee1e613ece7b836e77555783a0056e279414541e47626ee5a759bc8a5826",
+        "status": "ok"
+      },
+      {
+        "path": "PROGRESS.json",
+        "expected_sha256": "d00e084e1e1caffe0e42c8d012fdd3533294260cfc29201bcb3a16c4444d84fd",
+        "actual_sha256": "d00e084e1e1caffe0e42c8d012fdd3533294260cfc29201bcb3a16c4444d84fd",
+        "status": "ok"
+      },
+      {
+        "path": "README.txt",
+        "expected_sha256": "1769bb38333af00d5ef3aa66e215d418598f429cb3539e60c3cbbece1f1d4eff",
+        "actual_sha256": "1769bb38333af00d5ef3aa66e215d418598f429cb3539e60c3cbbece1f1d4eff",
+        "status": "ok"
+      },
+      {
+        "path": "SOURCE_NOTES.txt",
+        "expected_sha256": "4aef9c805a130af3b7be2b29150ef975e8ab755e2ab12759475e7065bfcb28dd",
+        "actual_sha256": "4aef9c805a130af3b7be2b29150ef975e8ab755e2ab12759475e7065bfcb28dd",
+        "status": "ok"
+      },
+      {
+        "path": "build.sh",
+        "expected_sha256": "9f294b6e38d34c7e149760f04bec09fdf5a021f7d96da63ffd2c1707c08cdee7",
+        "actual_sha256": "9f294b6e38d34c7e149760f04bec09fdf5a021f7d96da63ffd2c1707c08cdee7",
+        "status": "ok"
+      },
+      {
+        "path": "verify.py",
+        "expected_sha256": "e08eda4cdc070be19431e5ccef292f57d31b4e36a2d1e35e4d3da2e080f5bd61",
+        "actual_sha256": "e08eda4cdc070be19431e5ccef292f57d31b4e36a2d1e35e4d3da2e080f5bd61",
+        "status": "ok"
+      },
+      {
+        "path": "法文扫描_原104至107页.pdf",
+        "expected_sha256": "987343f95d9683298e194223ffe1866e717d624048f6a49700d86a8049564e52",
+        "actual_sha256": "987343f95d9683298e194223ffe1866e717d624048f6a49700d86a8049564e52",
+        "status": "ok"
+      },
+      {
+        "path": "英译底本.pdf",
+        "expected_sha256": "23a20ef32fd16a1bd623c0c08ac080d04fc94f248de12133b713a19d6b0330d9",
+        "actual_sha256": "23a20ef32fd16a1bd623c0c08ac080d04fc94f248de12133b713a19d6b0330d9",
+        "status": "ok"
+      }
+    ]
+  },
+  {
+    "order": 9,
+    "filename": "EGA第五卷_划去稿命题9_续译工程.zip",
+    "metadata": {
+      "name": "EGA第五卷_划去稿命题9_续译工程.zip",
+      "file_id": "file_0000000041008212b65c5a26a9f92312",
+      "library_file_id": "libfile_fde3_f-53ada51636f881919606564211748608_49ac57203c0c81918f3630f0324dcb35",
+      "version_id": "0",
+      "size_bytes": 1168590,
+      "created_at": "2026-11-20T11:01:19.168188+00:00",
+      "modified_at": "2026-11-20T11:01:19.168188+00:00"
+    },
+    "sha256": "93c4a69f03f64a53ed5ff83cc16669d7151e1262a811459f8ab183e5ad5f737b",
+    "bytes": 1168590,
+    "mirror_exists": true,
+    "mirror_sha256": "93c4a69f03f64a53ed5ff83cc16669d7151e1262a811459f8ab183e5ad5f737b",
+    "mirror_byte_identical": true,
+    "crc_bad_member": null,
+    "duplicate_exact_members": [],
+    "duplicate_normalized_members": [],
+    "unsafe_members": [],
+    "encrypted_members": [],
+    "uncompressed_bytes": 1251246,
+    "member_count": 11,
+    "members": [
+      {
+        "path": "README.txt",
+        "bytes": 584,
+        "crc32": "f5b3140d",
+        "sha256": "8a053949969f1316dde2d6debd96ef584393346281cbd8e7c428480e6c2abf15"
+      },
+      {
+        "path": "EGA第五卷_划去稿命题9_校订续译.pdf",
+        "bytes": 150109,
+        "crc32": "995f1d15",
+        "sha256": "4023bb111434319c4cd1e59de949e1a9e29f8bd80711401553e617c109e5b91f"
+      },
+      {
+        "path": "法文扫描_原104至107页.pdf",
+        "bytes": 414945,
+        "crc32": "335f0d4c",
+        "sha256": "987343f95d9683298e194223ffe1866e717d624048f6a49700d86a8049564e52"
+      },
+      {
+        "path": "SHA256SUMS.txt",
+        "bytes": 875,
+        "crc32": "12551957",
+        "sha256": "e0cf2e5264b438be74d0bae8f340f7dcda205c4f3366fb48f6f6b86d8a546f39"
+      },
+      {
+        "path": "EGA第五卷_划去稿命题9_校订续译.tex",
+        "bytes": 5013,
+        "crc32": "2222739e",
+        "sha256": "dab05b98d4ee1886c23b82026a2383c42939abf0fe89f6c63174d6b3b9cde37c"
+      },
+      {
+        "path": "build.sh",
+        "bytes": 157,
+        "crc32": "68c5a2aa",
+        "sha256": "57ffb5c04b9dd4c1cf0585209cc30e644293929695998a1a4d14396446e111fd"
+      },
+      {
+        "path": "verify.py",
+        "bytes": 246,
+        "crc32": "2cecd109",
+        "sha256": "e08eda4cdc070be19431e5ccef292f57d31b4e36a2d1e35e4d3da2e080f5bd61"
+      },
+      {
+        "path": "PROGRESS.json",
+        "bytes": 168,
+        "crc32": "0568b01d",
+        "sha256": "d4f6f79e8fa63f500173af993a5205c081fa15068dafff773f9bde28f30d1e8f"
+      },
+      {
+        "path": "AUDIT.txt",
+        "bytes": 249,
+        "crc32": "cd4fccf5",
+        "sha256": "4b57e0da3a101a4c6657ece54b5042b17805e822fa83a6af9eb90d6e1f83f9f5"
+      },
+      {
+        "path": "SOURCE_NOTES.txt",
+        "bytes": 1568,
+        "crc32": "b5f0195a",
+        "sha256": "a62681afa8969d1599286ef363a206af71f079f6bd729e79e51ff9134e755788"
+      },
+      {
+        "path": "英译底本.pdf",
+        "bytes": 677332,
+        "crc32": "417febae",
+        "sha256": "23a20ef32fd16a1bd623c0c08ac080d04fc94f248de12133b713a19d6b0330d9"
+      }
+    ],
+    "extracted_directory": "integration_20261121/dot_audit_extract/n09",
+    "tex_files": [
+      {
+        "path": "EGA第五卷_划去稿命题9_校订续译.tex",
+        "bytes": 5013,
+        "crc32": "2222739e",
+        "sha256": "dab05b98d4ee1886c23b82026a2383c42939abf0fe89f6c63174d6b3b9cde37c"
+      }
+    ],
+    "progress_claim": {
+      "batch": 58,
+      "source_page": 70,
+      "next_anchor": "Corollary 10. Let A be a local ring of dimension n",
+      "french_page": 106,
+      "merged": false,
+      "pdf_pages": 5
+    },
+    "internal_checksums": [
+      {
+        "path": "AUDIT.txt",
+        "expected_sha256": "4b57e0da3a101a4c6657ece54b5042b17805e822fa83a6af9eb90d6e1f83f9f5",
+        "actual_sha256": "4b57e0da3a101a4c6657ece54b5042b17805e822fa83a6af9eb90d6e1f83f9f5",
+        "status": "ok"
+      },
+      {
+        "path": "EGA第五卷_划去稿命题9_校订续译.pdf",
+        "expected_sha256": "4023bb111434319c4cd1e59de949e1a9e29f8bd80711401553e617c109e5b91f",
+        "actual_sha256": "4023bb111434319c4cd1e59de949e1a9e29f8bd80711401553e617c109e5b91f",
+        "status": "ok"
+      },
+      {
+        "path": "EGA第五卷_划去稿命题9_校订续译.tex",
+        "expected_sha256": "dab05b98d4ee1886c23b82026a2383c42939abf0fe89f6c63174d6b3b9cde37c",
+        "actual_sha256": "dab05b98d4ee1886c23b82026a2383c42939abf0fe89f6c63174d6b3b9cde37c",
+        "status": "ok"
+      },
+      {
+        "path": "PROGRESS.json",
+        "expected_sha256": "d4f6f79e8fa63f500173af993a5205c081fa15068dafff773f9bde28f30d1e8f",
+        "actual_sha256": "d4f6f79e8fa63f500173af993a5205c081fa15068dafff773f9bde28f30d1e8f",
+        "status": "ok"
+      },
+      {
+        "path": "README.txt",
+        "expected_sha256": "8a053949969f1316dde2d6debd96ef584393346281cbd8e7c428480e6c2abf15",
+        "actual_sha256": "8a053949969f1316dde2d6debd96ef584393346281cbd8e7c428480e6c2abf15",
+        "status": "ok"
+      },
+      {
+        "path": "SOURCE_NOTES.txt",
+        "expected_sha256": "a62681afa8969d1599286ef363a206af71f079f6bd729e79e51ff9134e755788",
+        "actual_sha256": "a62681afa8969d1599286ef363a206af71f079f6bd729e79e51ff9134e755788",
+        "status": "ok"
+      },
+      {
+        "path": "build.sh",
+        "expected_sha256": "57ffb5c04b9dd4c1cf0585209cc30e644293929695998a1a4d14396446e111fd",
+        "actual_sha256": "57ffb5c04b9dd4c1cf0585209cc30e644293929695998a1a4d14396446e111fd",
+        "status": "ok"
+      },
+      {
+        "path": "verify.py",
+        "expected_sha256": "e08eda4cdc070be19431e5ccef292f57d31b4e36a2d1e35e4d3da2e080f5bd61",
+        "actual_sha256": "e08eda4cdc070be19431e5ccef292f57d31b4e36a2d1e35e4d3da2e080f5bd61",
+        "status": "ok"
+      },
+      {
+        "path": "法文扫描_原104至107页.pdf",
+        "expected_sha256": "987343f95d9683298e194223ffe1866e717d624048f6a49700d86a8049564e52",
+        "actual_sha256": "987343f95d9683298e194223ffe1866e717d624048f6a49700d86a8049564e52",
+        "status": "ok"
+      },
+      {
+        "path": "英译底本.pdf",
+        "expected_sha256": "23a20ef32fd16a1bd623c0c08ac080d04fc94f248de12133b713a19d6b0330d9",
+        "actual_sha256": "23a20ef32fd16a1bd623c0c08ac080d04fc94f248de12133b713a19d6b0330d9",
+        "status": "ok"
+      }
+    ]
+  },
+  {
+    "order": 10,
+    "filename": "EGA第五卷_划去稿推论10_续译工程.zip",
+    "metadata": {
+      "name": "EGA第五卷_划去稿推论10_续译工程.zip",
+      "file_id": "file_0000000096608212b6f10b49e21bfd7c",
+      "library_file_id": "libfile_fde3_f-4a38d0b3abbc8191bc7f49a3fdb4634f_49ac57203c0c81918f3630f0324dcb35",
+      "version_id": "0",
+      "size_bytes": 1145952,
+      "created_at": "2026-11-20T13:00:11.018501+00:00",
+      "modified_at": "2026-11-20T13:00:11.018501+00:00"
+    },
+    "sha256": "3098e49de8039f71eff16bb099105a5fcbe53d9a3fe4255b233010e813a867bc",
+    "bytes": 1145952,
+    "mirror_exists": true,
+    "mirror_sha256": "3098e49de8039f71eff16bb099105a5fcbe53d9a3fe4255b233010e813a867bc",
+    "mirror_byte_identical": true,
+    "crc_bad_member": null,
+    "duplicate_exact_members": [],
+    "duplicate_normalized_members": [],
+    "unsafe_members": [],
+    "encrypted_members": [],
+    "uncompressed_bytes": 1228391,
+    "member_count": 11,
+    "members": [
+      {
+        "path": "README.txt",
+        "bytes": 682,
+        "crc32": "5d1b5319",
+        "sha256": "fc326bffc551096fcb46f3a47a73965e91483be42fd298f21161a9b05cce1092"
+      },
+      {
+        "path": "EGA第五卷_划去稿推论10_校订续译.pdf",
+        "bytes": 128020,
+        "crc32": "31cfc878",
+        "sha256": "bb4bf458a0bac737ff8057117fecf2eef0ac31295655f4ff387cd372a7a87b75"
+      },
+      {
+        "path": "法文扫描_原104至107页.pdf",
+        "bytes": 414945,
+        "crc32": "335f0d4c",
+        "sha256": "987343f95d9683298e194223ffe1866e717d624048f6a49700d86a8049564e52"
+      },
+      {
+        "path": "SHA256SUMS.txt",
+        "bytes": 877,
+        "crc32": "9e9469f7",
+        "sha256": "7a90b3e70ae1860551340a745b8f7118073087b8f2ef37534025d2cf61a7a8f8"
+      },
+      {
+        "path": "build.sh",
+        "bytes": 158,
+        "crc32": "61f5556d",
+        "sha256": "c0478c7197d83e8ac8500db44cbdac8514974ed4a58dbb55d418d21e8f2bad91"
+      },
+      {
+        "path": "verify.py",
+        "bytes": 246,
+        "crc32": "2cecd109",
+        "sha256": "e08eda4cdc070be19431e5ccef292f57d31b4e36a2d1e35e4d3da2e080f5bd61"
+      },
+      {
+        "path": "EGA第五卷_划去稿推论10_校订续译.tex",
+        "bytes": 3941,
+        "crc32": "7ee922bb",
+        "sha256": "fc5a7169350f7a17e4c77f909290039044120a5468cfada2edc5605310a5e826"
+      },
+      {
+        "path": "PROGRESS.json",
+        "bytes": 242,
+        "crc32": "0efa63b0",
+        "sha256": "60c92ddbaa2edb0ce8da4ff8cfc4d3ef0167fd93afc10b17ce0c961cc6199e9d"
+      },
+      {
+        "path": "AUDIT.txt",
+        "bytes": 236,
+        "crc32": "fd48d788",
+        "sha256": "bfb5cce20c1d61672ad9285110dd85158e7be093c9b445ced98bdddbf47953eb"
+      },
+      {
+        "path": "SOURCE_NOTES.txt",
+        "bytes": 1712,
+        "crc32": "433c3fd9",
+        "sha256": "acf0edcd2ee182add988de90240b372ad676777327362acaf3f542f19577d539"
+      },
+      {
+        "path": "英译底本.pdf",
+        "bytes": 677332,
+        "crc32": "417febae",
+        "sha256": "23a20ef32fd16a1bd623c0c08ac080d04fc94f248de12133b713a19d6b0330d9"
+      }
+    ],
+    "extracted_directory": "integration_20261121/dot_audit_extract/n10",
+    "tex_files": [
+      {
+        "path": "EGA第五卷_划去稿推论10_校订续译.tex",
+        "bytes": 3941,
+        "crc32": "7ee922bb",
+        "sha256": "fc5a7169350f7a17e4c77f909290039044120a5468cfada2edc5605310a5e826"
+      }
+    ],
+    "progress_claim": {
+      "batch": 59,
+      "source_page": 71,
+      "next_anchor": "Let us note that the analogue of conditions (ii) and (ii)bis could already have been included (remonter Fr) in Proposition 9",
+      "french_page": 107,
+      "merged": false,
+      "pdf_pages": 4
+    },
+    "internal_checksums": [
+      {
+        "path": "AUDIT.txt",
+        "expected_sha256": "bfb5cce20c1d61672ad9285110dd85158e7be093c9b445ced98bdddbf47953eb",
+        "actual_sha256": "bfb5cce20c1d61672ad9285110dd85158e7be093c9b445ced98bdddbf47953eb",
+        "status": "ok"
+      },
+      {
+        "path": "EGA第五卷_划去稿推论10_校订续译.pdf",
+        "expected_sha256": "bb4bf458a0bac737ff8057117fecf2eef0ac31295655f4ff387cd372a7a87b75",
+        "actual_sha256": "bb4bf458a0bac737ff8057117fecf2eef0ac31295655f4ff387cd372a7a87b75",
+        "status": "ok"
+      },
+      {
+        "path": "EGA第五卷_划去稿推论10_校订续译.tex",
+        "expected_sha256": "fc5a7169350f7a17e4c77f909290039044120a5468cfada2edc5605310a5e826",
+        "actual_sha256": "fc5a7169350f7a17e4c77f909290039044120a5468cfada2edc5605310a5e826",
+        "status": "ok"
+      },
+      {
+        "path": "PROGRESS.json",
+        "expected_sha256": "60c92ddbaa2edb0ce8da4ff8cfc4d3ef0167fd93afc10b17ce0c961cc6199e9d",
+        "actual_sha256": "60c92ddbaa2edb0ce8da4ff8cfc4d3ef0167fd93afc10b17ce0c961cc6199e9d",
+        "status": "ok"
+      },
+      {
+        "path": "README.txt",
+        "expected_sha256": "fc326bffc551096fcb46f3a47a73965e91483be42fd298f21161a9b05cce1092",
+        "actual_sha256": "fc326bffc551096fcb46f3a47a73965e91483be42fd298f21161a9b05cce1092",
+        "status": "ok"
+      },
+      {
+        "path": "SOURCE_NOTES.txt",
+        "expected_sha256": "acf0edcd2ee182add988de90240b372ad676777327362acaf3f542f19577d539",
+        "actual_sha256": "acf0edcd2ee182add988de90240b372ad676777327362acaf3f542f19577d539",
+        "status": "ok"
+      },
+      {
+        "path": "build.sh",
+        "expected_sha256": "c0478c7197d83e8ac8500db44cbdac8514974ed4a58dbb55d418d21e8f2bad91",
+        "actual_sha256": "c0478c7197d83e8ac8500db44cbdac8514974ed4a58dbb55d418d21e8f2bad91",
+        "status": "ok"
+      },
+      {
+        "path": "verify.py",
+        "expected_sha256": "e08eda4cdc070be19431e5ccef292f57d31b4e36a2d1e35e4d3da2e080f5bd61",
+        "actual_sha256": "e08eda4cdc070be19431e5ccef292f57d31b4e36a2d1e35e4d3da2e080f5bd61",
+        "status": "ok"
+      },
+      {
+        "path": "法文扫描_原104至107页.pdf",
+        "expected_sha256": "987343f95d9683298e194223ffe1866e717d624048f6a49700d86a8049564e52",
+        "actual_sha256": "987343f95d9683298e194223ffe1866e717d624048f6a49700d86a8049564e52",
+        "status": "ok"
+      },
+      {
+        "path": "英译底本.pdf",
+        "expected_sha256": "23a20ef32fd16a1bd623c0c08ac080d04fc94f248de12133b713a19d6b0330d9",
+        "actual_sha256": "23a20ef32fd16a1bd623c0c08ac080d04fc94f248de12133b713a19d6b0330d9",
+        "status": "ok"
+      }
+    ]
+  },
+  {
+    "order": 11,
+    "filename": "EGA第五卷_奇异零点与外幂判别_续译工程.zip",
+    "metadata": {
+      "name": "EGA第五卷_奇异零点与外幂判别_续译工程.zip",
+      "file_id": "file_00000000efa48212a755dbdb7c6518c2",
+      "library_file_id": "libfile_fde3_f-173a5040bba08191afd98136c1ffba31_49ac57203c0c81918f3630f0324dcb35",
+      "version_id": "0",
+      "size_bytes": 1086440,
+      "created_at": "2026-11-20T14:59:14.784193+00:00",
+      "modified_at": "2026-11-20T14:59:14.784193+00:00"
+    },
+    "sha256": "e236dfca3fa42189733863bbb8c0816b2857b28581b6ce85fbf143a0172af1f9",
+    "bytes": 1086440,
+    "mirror_exists": true,
+    "mirror_sha256": "e236dfca3fa42189733863bbb8c0816b2857b28581b6ce85fbf143a0172af1f9",
+    "mirror_byte_identical": true,
+    "crc_bad_member": null,
+    "duplicate_exact_members": [],
+    "duplicate_normalized_members": [],
+    "unsafe_members": [],
+    "encrypted_members": [],
+    "uncompressed_bytes": 1168250,
+    "member_count": 11,
+    "members": [
+      {
+        "path": "README.txt",
+        "bytes": 697,
+        "crc32": "9e4efd3d",
+        "sha256": "6e551f326be801e82db42639b62a9f73ea775d333561921d683bdaff29c524df"
+      },
+      {
+        "path": "EGA第五卷_奇异零点与外幂判别_校订续译.pdf",
+        "bytes": 160577,
+        "crc32": "d147b5ed",
+        "sha256": "d3c39dc81ac93dceeb9c69b03c8d866cfef8290c9eb9a83cb9add2d900316815"
+      },
+      {
+        "path": "SHA256SUMS.txt",
+        "bytes": 897,
+        "crc32": "bc6c370c",
+        "sha256": "4d886ef1c423d88c04060944b1755a9110352f4e49000b073bafff22a4ddf70d"
+      },
+      {
+        "path": "build.sh",
+        "bytes": 168,
+        "crc32": "34ea4138",
+        "sha256": "bdf86b725801d8eed9a34a33a867e1512d2b7c686e1b56dfded8207a215eac15"
+      },
+      {
+        "path": "verify.py",
+        "bytes": 246,
+        "crc32": "2cecd109",
+        "sha256": "e08eda4cdc070be19431e5ccef292f57d31b4e36a2d1e35e4d3da2e080f5bd61"
+      },
+      {
+        "path": "PROGRESS.json",
+        "bytes": 209,
+        "crc32": "69921a7e",
+        "sha256": "a0e3f87135a111cc145afd645534dd2540ff88a4590a6de77c8ae39613e83c11"
+      },
+      {
+        "path": "EGA第五卷_奇异零点与外幂判别_校订续译.tex",
+        "bytes": 5071,
+        "crc32": "730fa6b5",
+        "sha256": "9d18de33dfce1192eb5a6f13fa849e8807401c90ee5689f1ebd09a5e206e7521"
+      },
+      {
+        "path": "AUDIT.txt",
+        "bytes": 205,
+        "crc32": "a4fe9b39",
+        "sha256": "ae244b543195eb88c55d8ac62350cf70966ef1dccaa0729fa84a09eecb244039"
+      },
+      {
+        "path": "SOURCE_NOTES.txt",
+        "bytes": 1883,
+        "crc32": "69c514c7",
+        "sha256": "8fde85551c9daf83a2d869d21e37cbaf80742b762fbefb2ba72b9dd477d7092b"
+      },
+      {
+        "path": "法文扫描_原107至109页.pdf",
+        "bytes": 320965,
+        "crc32": "792ffe48",
+        "sha256": "1024b83cd3dc98dd9c77af9850367210c706c8c02bbf9451a452c042b4a84794"
+      },
+      {
+        "path": "英译底本.pdf",
+        "bytes": 677332,
+        "crc32": "417febae",
+        "sha256": "23a20ef32fd16a1bd623c0c08ac080d04fc94f248de12133b713a19d6b0330d9"
+      }
+    ],
+    "extracted_directory": "integration_20261121/dot_audit_extract/n11",
+    "tex_files": [
+      {
+        "path": "EGA第五卷_奇异零点与外幂判别_校订续译.tex",
+        "bytes": 5071,
+        "crc32": "730fa6b5",
+        "sha256": "9d18de33dfce1192eb5a6f13fa849e8807401c90ee5689f1ebd09a5e206e7521"
+      }
+    ],
+    "progress_claim": {
+      "batch": 60,
+      "source_page": 72,
+      "next_anchor": "to characterize using differential method the ordinary singular zeros relative to Y we note",
+      "french_page": 109,
+      "merged": false,
+      "pdf_pages": 5
+    },
+    "internal_checksums": [
+      {
+        "path": "AUDIT.txt",
+        "expected_sha256": "ae244b543195eb88c55d8ac62350cf70966ef1dccaa0729fa84a09eecb244039",
+        "actual_sha256": "ae244b543195eb88c55d8ac62350cf70966ef1dccaa0729fa84a09eecb244039",
+        "status": "ok"
+      },
+      {
+        "path": "EGA第五卷_奇异零点与外幂判别_校订续译.pdf",
+        "expected_sha256": "d3c39dc81ac93dceeb9c69b03c8d866cfef8290c9eb9a83cb9add2d900316815",
+        "actual_sha256": "d3c39dc81ac93dceeb9c69b03c8d866cfef8290c9eb9a83cb9add2d900316815",
+        "status": "ok"
+      },
+      {
+        "path": "EGA第五卷_奇异零点与外幂判别_校订续译.tex",
+        "expected_sha256": "9d18de33dfce1192eb5a6f13fa849e8807401c90ee5689f1ebd09a5e206e7521",
+        "actual_sha256": "9d18de33dfce1192eb5a6f13fa849e8807401c90ee5689f1ebd09a5e206e7521",
+        "status": "ok"
+      },
+      {
+        "path": "PROGRESS.json",
+        "expected_sha256": "a0e3f87135a111cc145afd645534dd2540ff88a4590a6de77c8ae39613e83c11",
+        "actual_sha256": "a0e3f87135a111cc145afd645534dd2540ff88a4590a6de77c8ae39613e83c11",
+        "status": "ok"
+      },
+      {
+        "path": "README.txt",
+        "expected_sha256": "6e551f326be801e82db42639b62a9f73ea775d333561921d683bdaff29c524df",
+        "actual_sha256": "6e551f326be801e82db42639b62a9f73ea775d333561921d683bdaff29c524df",
+        "status": "ok"
+      },
+      {
+        "path": "SOURCE_NOTES.txt",
+        "expected_sha256": "8fde85551c9daf83a2d869d21e37cbaf80742b762fbefb2ba72b9dd477d7092b",
+        "actual_sha256": "8fde85551c9daf83a2d869d21e37cbaf80742b762fbefb2ba72b9dd477d7092b",
+        "status": "ok"
+      },
+      {
+        "path": "build.sh",
+        "expected_sha256": "bdf86b725801d8eed9a34a33a867e1512d2b7c686e1b56dfded8207a215eac15",
+        "actual_sha256": "bdf86b725801d8eed9a34a33a867e1512d2b7c686e1b56dfded8207a215eac15",
+        "status": "ok"
+      },
+      {
+        "path": "verify.py",
+        "expected_sha256": "e08eda4cdc070be19431e5ccef292f57d31b4e36a2d1e35e4d3da2e080f5bd61",
+        "actual_sha256": "e08eda4cdc070be19431e5ccef292f57d31b4e36a2d1e35e4d3da2e080f5bd61",
+        "status": "ok"
+      },
+      {
+        "path": "法文扫描_原107至109页.pdf",
+        "expected_sha256": "1024b83cd3dc98dd9c77af9850367210c706c8c02bbf9451a452c042b4a84794",
+        "actual_sha256": "1024b83cd3dc98dd9c77af9850367210c706c8c02bbf9451a452c042b4a84794",
+        "status": "ok"
+      },
+      {
+        "path": "英译底本.pdf",
+        "expected_sha256": "23a20ef32fd16a1bd623c0c08ac080d04fc94f248de12133b713a19d6b0330d9",
+        "actual_sha256": "23a20ef32fd16a1bd623c0c08ac080d04fc94f248de12133b713a19d6b0330d9",
+        "status": "ok"
+      }
+    ]
+  },
+  {
+    "order": 12,
+    "filename": "EGA第五卷_二阶判别与恒秩引理_续译工程.zip",
+    "metadata": {
+      "name": "EGA第五卷_二阶判别与恒秩引理_续译工程.zip",
+      "file_id": "file_0000000078b081f59e5015bfe0479199",
+      "library_file_id": "libfile_fde3_f-4693bcc2a3048191b2677ac0fece6fc7_49ac57203c0c81918f3630f0324dcb35",
+      "version_id": "1",
+      "size_bytes": 972214,
+      "created_at": "2026-11-20T17:06:16.071588+00:00",
+      "modified_at": "2026-11-20T17:07:32.169289+00:00"
+    },
+    "sha256": "017d9e9f51e602989dbed5ca039876b57012f67ec62401ef1824dba1a4d62910",
+    "bytes": 972214,
+    "mirror_exists": true,
+    "mirror_sha256": "017d9e9f51e602989dbed5ca039876b57012f67ec62401ef1824dba1a4d62910",
+    "mirror_byte_identical": true,
+    "crc_bad_member": null,
+    "duplicate_exact_members": [],
+    "duplicate_normalized_members": [],
+    "unsafe_members": [],
+    "encrypted_members": [],
+    "uncompressed_bytes": 1052345,
+    "member_count": 11,
+    "members": [
+      {
+        "path": "EGA第五卷_二阶判别与恒秩引理_校订续译.pdf",
+        "bytes": 163693,
+        "crc32": "7a2da7c9",
+        "sha256": "0ba8fcf4bfcaa7cec5952e8726644887e42a353d80fe4ca43d396b277cdce1f6"
+      },
+      {
+        "path": "README.txt",
+        "bytes": 627,
+        "crc32": "e0c03f89",
+        "sha256": "1200e2b33cf4247c2798b9aed8d933c33d026d8af6f3f7df6fd038b73235b259"
+      },
+      {
+        "path": "EGA第五卷_二阶判别与恒秩引理_校订续译.tex",
+        "bytes": 5392,
+        "crc32": "cec9aae6",
+        "sha256": "46db6b36b931816d0b3a4443a4de259cb87b4f6880dede34b81a54f87dc032dd"
+      },
+      {
+        "path": "SHA256SUMS.txt",
+        "bytes": 897,
+        "crc32": "e6655ce3",
+        "sha256": "8774b9e259f04006174dee2dee9a7add9e4f5c15b88fe81147b7b0e9fae9e1d4"
+      },
+      {
+        "path": "build.sh",
+        "bytes": 168,
+        "crc32": "a33c5e85",
+        "sha256": "b0a40174a7a1049b97bde2a11da0deafc6a8aa48e084f5fb8ba4eca315da9052"
+      },
+      {
+        "path": "verify.py",
+        "bytes": 246,
+        "crc32": "2cecd109",
+        "sha256": "e08eda4cdc070be19431e5ccef292f57d31b4e36a2d1e35e4d3da2e080f5bd61"
+      },
+      {
+        "path": "法文扫描_原109至110页.pdf",
+        "bytes": 201271,
+        "crc32": "8d6cb822",
+        "sha256": "a887236f4e0dba16a50804b46351e53a2916c25625ab6f7d2bfc39a815ffefad"
+      },
+      {
+        "path": "PROGRESS.json",
+        "bytes": 269,
+        "crc32": "6c72c3d1",
+        "sha256": "bb727e30bd4b49c3696cd701613376e7e413b3e31d21c55092afdb0e32ce783e"
+      },
+      {
+        "path": "AUDIT.txt",
+        "bytes": 400,
+        "crc32": "463b4e01",
+        "sha256": "72dbebc22c6f0498d6b34e7fe07a723e732d5cc703bb4d9b2d6c7d4af09098bf"
+      },
+      {
+        "path": "SOURCE_NOTES.txt",
+        "bytes": 2050,
+        "crc32": "dfdf80f9",
+        "sha256": "2cabf1267d3271e904e80c76a287196b85ec5d08bda03d9a2a00c60aa9e22815"
+      },
+      {
+        "path": "英译底本.pdf",
+        "bytes": 677332,
+        "crc32": "417febae",
+        "sha256": "23a20ef32fd16a1bd623c0c08ac080d04fc94f248de12133b713a19d6b0330d9"
+      }
+    ],
+    "extracted_directory": "integration_20261121/dot_audit_extract/n12",
+    "tex_files": [
+      {
+        "path": "EGA第五卷_二阶判别与恒秩引理_校订续译.tex",
+        "bytes": 5392,
+        "crc32": "cec9aae6",
+        "sha256": "46db6b36b931816d0b3a4443a4de259cb87b4f6880dede34b81a54f87dc032dd"
+      }
+    ],
+    "progress_claim": {
+      "batch": 61,
+      "source_page": 72,
+      "next_anchor": "It is necessary to see how we can generalize the same Proposition 7.",
+      "french_page": 110,
+      "french_anchor": "Il faut voir comment on peut généraliser de même prop. 7.",
+      "merged": false,
+      "pdf_pages": 5
+    },
+    "internal_checksums": [
+      {
+        "path": "AUDIT.txt",
+        "expected_sha256": "72dbebc22c6f0498d6b34e7fe07a723e732d5cc703bb4d9b2d6c7d4af09098bf",
+        "actual_sha256": "72dbebc22c6f0498d6b34e7fe07a723e732d5cc703bb4d9b2d6c7d4af09098bf",
+        "status": "ok"
+      },
+      {
+        "path": "EGA第五卷_二阶判别与恒秩引理_校订续译.pdf",
+        "expected_sha256": "0ba8fcf4bfcaa7cec5952e8726644887e42a353d80fe4ca43d396b277cdce1f6",
+        "actual_sha256": "0ba8fcf4bfcaa7cec5952e8726644887e42a353d80fe4ca43d396b277cdce1f6",
+        "status": "ok"
+      },
+      {
+        "path": "EGA第五卷_二阶判别与恒秩引理_校订续译.tex",
+        "expected_sha256": "46db6b36b931816d0b3a4443a4de259cb87b4f6880dede34b81a54f87dc032dd",
+        "actual_sha256": "46db6b36b931816d0b3a4443a4de259cb87b4f6880dede34b81a54f87dc032dd",
+        "status": "ok"
+      },
+      {
+        "path": "PROGRESS.json",
+        "expected_sha256": "bb727e30bd4b49c3696cd701613376e7e413b3e31d21c55092afdb0e32ce783e",
+        "actual_sha256": "bb727e30bd4b49c3696cd701613376e7e413b3e31d21c55092afdb0e32ce783e",
+        "status": "ok"
+      },
+      {
+        "path": "README.txt",
+        "expected_sha256": "1200e2b33cf4247c2798b9aed8d933c33d026d8af6f3f7df6fd038b73235b259",
+        "actual_sha256": "1200e2b33cf4247c2798b9aed8d933c33d026d8af6f3f7df6fd038b73235b259",
+        "status": "ok"
+      },
+      {
+        "path": "SOURCE_NOTES.txt",
+        "expected_sha256": "2cabf1267d3271e904e80c76a287196b85ec5d08bda03d9a2a00c60aa9e22815",
+        "actual_sha256": "2cabf1267d3271e904e80c76a287196b85ec5d08bda03d9a2a00c60aa9e22815",
+        "status": "ok"
+      },
+      {
+        "path": "build.sh",
+        "expected_sha256": "b0a40174a7a1049b97bde2a11da0deafc6a8aa48e084f5fb8ba4eca315da9052",
+        "actual_sha256": "b0a40174a7a1049b97bde2a11da0deafc6a8aa48e084f5fb8ba4eca315da9052",
+        "status": "ok"
+      },
+      {
+        "path": "verify.py",
+        "expected_sha256": "e08eda4cdc070be19431e5ccef292f57d31b4e36a2d1e35e4d3da2e080f5bd61",
+        "actual_sha256": "e08eda4cdc070be19431e5ccef292f57d31b4e36a2d1e35e4d3da2e080f5bd61",
+        "status": "ok"
+      },
+      {
+        "path": "法文扫描_原109至110页.pdf",
+        "expected_sha256": "a887236f4e0dba16a50804b46351e53a2916c25625ab6f7d2bfc39a815ffefad",
+        "actual_sha256": "a887236f4e0dba16a50804b46351e53a2916c25625ab6f7d2bfc39a815ffefad",
+        "status": "ok"
+      },
+      {
+        "path": "英译底本.pdf",
+        "expected_sha256": "23a20ef32fd16a1bd623c0c08ac080d04fc94f248de12133b713a19d6b0330d9",
+        "actual_sha256": "23a20ef32fd16a1bd623c0c08ac080d04fc94f248de12133b713a19d6b0330d9",
+        "status": "ok"
+      }
+    ]
+  },
+  {
+    "order": 13,
+    "filename": "EGA第五卷_光滑塔与分歧概形_续译工程.zip",
+    "metadata": {
+      "name": "EGA第五卷_光滑塔与分歧概形_续译工程.zip",
+      "file_id": "file_000000003bc881f5b381d7b3691d7674",
+      "library_file_id": "libfile_fde3_f-f578e448ebbc81919f4cf7549a4f8e1e_49ac57203c0c81918f3630f0324dcb35",
+      "version_id": "0",
+      "size_bytes": 1053890,
+      "created_at": "2026-11-20T19:02:56.404652+00:00",
+      "modified_at": "2026-11-20T19:02:56.404652+00:00"
+    },
+    "sha256": "53732703f0099ad4ce473e642160867949bac63f49193aae4f2cc71485b655af",
+    "bytes": 1053890,
+    "mirror_exists": true,
+    "mirror_sha256": "53732703f0099ad4ce473e642160867949bac63f49193aae4f2cc71485b655af",
+    "mirror_byte_identical": true,
+    "crc_bad_member": null,
+    "duplicate_exact_members": [],
+    "duplicate_normalized_members": [],
+    "unsafe_members": [],
+    "encrypted_members": [],
+    "uncompressed_bytes": 1134946,
+    "member_count": 11,
+    "members": [
+      {
+        "path": "README.txt",
+        "bytes": 525,
+        "crc32": "f08d7dbf",
+        "sha256": "88f38307eb337fd451c4ca05e7aa0278fc66463107880e56560af8335575128f"
+      },
+      {
+        "path": "SHA256SUMS.txt",
+        "bytes": 891,
+        "crc32": "1c78c98a",
+        "sha256": "b9d7c04784db933fba5fc7a2d57ae1acdcd6c398d35218a0859b95771ab12d4a"
+      },
+      {
+        "path": "build.sh",
+        "bytes": 165,
+        "crc32": "25087e5f",
+        "sha256": "ab849f2258cc0a40c99472a207d64490e2c1b70388a90a6861c9ddd1a5ac0f44"
+      },
+      {
+        "path": "verify.py",
+        "bytes": 246,
+        "crc32": "2cecd109",
+        "sha256": "e08eda4cdc070be19431e5ccef292f57d31b4e36a2d1e35e4d3da2e080f5bd61"
+      },
+      {
+        "path": "EGA第五卷_光滑塔与分歧概形_校订续译.tex",
+        "bytes": 5024,
+        "crc32": "420f8d6d",
+        "sha256": "e42bbb7455e8a3eb9e5084b5d7e9ca0addd7e44ff2cf5705f40905c8eb153879"
+      },
+      {
+        "path": "PROGRESS.json",
+        "bytes": 208,
+        "crc32": "3f7162d2",
+        "sha256": "74df1afa3250f79a46ff2477548ff6e144899edd11dfea6d7611c178d3a9dfba"
+      },
+      {
+        "path": "法文扫描_原110至112页.pdf",
+        "bytes": 289741,
+        "crc32": "5e057140",
+        "sha256": "3e3166a5fe16d30961ec525ca6c21c900753b24c690e2bb27ab8afda71e22bb6"
+      },
+      {
+        "path": "AUDIT.txt",
+        "bytes": 336,
+        "crc32": "16ab52a0",
+        "sha256": "92239d37803eb5eb206cb146dbedee9e237afa37f43657fbd0bd5994d9ff26d0"
+      },
+      {
+        "path": "EGA第五卷_光滑塔与分歧概形_校订续译.pdf",
+        "bytes": 158304,
+        "crc32": "d04d4fa3",
+        "sha256": "8b5f49c99cc5af9047a41587fd1c918cdda3d8a3d5e35024c4912a43ec790e7e"
+      },
+      {
+        "path": "SOURCE_NOTES.txt",
+        "bytes": 2174,
+        "crc32": "c2240ee1",
+        "sha256": "2084d37435369f32ac06f745f708f209ee3f0c93f5a6df7bf5e7842bf7e368f5"
+      },
+      {
+        "path": "英译底本.pdf",
+        "bytes": 677332,
+        "crc32": "417febae",
+        "sha256": "23a20ef32fd16a1bd623c0c08ac080d04fc94f248de12133b713a19d6b0330d9"
+      }
+    ],
+    "extracted_directory": "integration_20261121/dot_audit_extract/n13",
+    "tex_files": [
+      {
+        "path": "EGA第五卷_光滑塔与分歧概形_校订续译.tex",
+        "bytes": 5024,
+        "crc32": "420f8d6d",
+        "sha256": "e42bbb7455e8a3eb9e5084b5d7e9ca0addd7e44ff2cf5705f40905c8eb153879"
+      }
+    ],
+    "progress_claim": {
+      "batch": 62,
+      "source_page": 73,
+      "next_anchor": "EGA V – Section 17 / IV.17.15 Smooth Forms",
+      "french_page": 112,
+      "french_anchor": "IV 17.15. Formes lisses",
+      "merged": false,
+      "pdf_pages": 4
+    },
+    "internal_checksums": [
+      {
+        "path": "AUDIT.txt",
+        "expected_sha256": "92239d37803eb5eb206cb146dbedee9e237afa37f43657fbd0bd5994d9ff26d0",
+        "actual_sha256": "92239d37803eb5eb206cb146dbedee9e237afa37f43657fbd0bd5994d9ff26d0",
+        "status": "ok"
+      },
+      {
+        "path": "EGA第五卷_光滑塔与分歧概形_校订续译.pdf",
+        "expected_sha256": "8b5f49c99cc5af9047a41587fd1c918cdda3d8a3d5e35024c4912a43ec790e7e",
+        "actual_sha256": "8b5f49c99cc5af9047a41587fd1c918cdda3d8a3d5e35024c4912a43ec790e7e",
+        "status": "ok"
+      },
+      {
+        "path": "EGA第五卷_光滑塔与分歧概形_校订续译.tex",
+        "expected_sha256": "e42bbb7455e8a3eb9e5084b5d7e9ca0addd7e44ff2cf5705f40905c8eb153879",
+        "actual_sha256": "e42bbb7455e8a3eb9e5084b5d7e9ca0addd7e44ff2cf5705f40905c8eb153879",
+        "status": "ok"
+      },
+      {
+        "path": "PROGRESS.json",
+        "expected_sha256": "74df1afa3250f79a46ff2477548ff6e144899edd11dfea6d7611c178d3a9dfba",
+        "actual_sha256": "74df1afa3250f79a46ff2477548ff6e144899edd11dfea6d7611c178d3a9dfba",
+        "status": "ok"
+      },
+      {
+        "path": "README.txt",
+        "expected_sha256": "88f38307eb337fd451c4ca05e7aa0278fc66463107880e56560af8335575128f",
+        "actual_sha256": "88f38307eb337fd451c4ca05e7aa0278fc66463107880e56560af8335575128f",
+        "status": "ok"
+      },
+      {
+        "path": "SOURCE_NOTES.txt",
+        "expected_sha256": "2084d37435369f32ac06f745f708f209ee3f0c93f5a6df7bf5e7842bf7e368f5",
+        "actual_sha256": "2084d37435369f32ac06f745f708f209ee3f0c93f5a6df7bf5e7842bf7e368f5",
+        "status": "ok"
+      },
+      {
+        "path": "build.sh",
+        "expected_sha256": "ab849f2258cc0a40c99472a207d64490e2c1b70388a90a6861c9ddd1a5ac0f44",
+        "actual_sha256": "ab849f2258cc0a40c99472a207d64490e2c1b70388a90a6861c9ddd1a5ac0f44",
+        "status": "ok"
+      },
+      {
+        "path": "verify.py",
+        "expected_sha256": "e08eda4cdc070be19431e5ccef292f57d31b4e36a2d1e35e4d3da2e080f5bd61",
+        "actual_sha256": "e08eda4cdc070be19431e5ccef292f57d31b4e36a2d1e35e4d3da2e080f5bd61",
+        "status": "ok"
+      },
+      {
+        "path": "法文扫描_原110至112页.pdf",
+        "expected_sha256": "3e3166a5fe16d30961ec525ca6c21c900753b24c690e2bb27ab8afda71e22bb6",
+        "actual_sha256": "3e3166a5fe16d30961ec525ca6c21c900753b24c690e2bb27ab8afda71e22bb6",
+        "status": "ok"
+      },
+      {
+        "path": "英译底本.pdf",
+        "expected_sha256": "23a20ef32fd16a1bd623c0c08ac080d04fc94f248de12133b713a19d6b0330d9",
+        "actual_sha256": "23a20ef32fd16a1bd623c0c08ac080d04fc94f248de12133b713a19d6b0330d9",
+        "status": "ok"
+      }
+    ]
+  },
+  {
+    "order": 14,
+    "filename": "EGA第五卷_特征二与奇异术语_续译工程.zip",
+    "metadata": {
+      "name": "EGA第五卷_特征二与奇异术语_续译工程.zip",
+      "file_id": "file_00000000481c81f99a19c3a749177a31",
+      "library_file_id": "libfile_fde3_f-85bd4055690081919e7818984536cf0f_49ac57203c0c81918f3630f0324dcb35",
+      "version_id": "0",
+      "size_bytes": 1003313,
+      "created_at": "2026-11-20T21:04:25.508528+00:00",
+      "modified_at": "2026-11-20T21:04:25.508528+00:00"
+    },
+    "sha256": "13119ed6f9506b65238e1e11a6a2c899ff1a7c33a8ec5d0a1ef98b6321dfdb25",
+    "bytes": 1003313,
+    "mirror_exists": true,
+    "mirror_sha256": "13119ed6f9506b65238e1e11a6a2c899ff1a7c33a8ec5d0a1ef98b6321dfdb25",
+    "mirror_byte_identical": true,
+    "crc_bad_member": null,
+    "duplicate_exact_members": [],
+    "duplicate_normalized_members": [],
+    "unsafe_members": [],
+    "encrypted_members": [],
+    "uncompressed_bytes": 1084284,
+    "member_count": 11,
+    "members": [
+      {
+        "path": "README.txt",
+        "bytes": 587,
+        "crc32": "c7dfe502",
+        "sha256": "6a4684a1ecb27103c86144f8816afb5e4f09f9d6345ea38eb53858df82d98fa1"
+      },
+      {
+        "path": "EGA第五卷_特征二与奇异术语_校订续译.pdf",
+        "bytes": 183995,
+        "crc32": "a56c44e9",
+        "sha256": "865d8a06c61070e7b2d605c51bb080b63a285ba7f8b6f6435b1ae5fafcbc1abb"
+      },
+      {
+        "path": "SHA256SUMS.txt",
+        "bytes": 891,
+        "crc32": "f41d2547",
+        "sha256": "2f8eddb915e602e251e7ac23594f2366c2d01c9ca4949ed3bae443f14e211a2c"
+      },
+      {
+        "path": "build.sh",
+        "bytes": 165,
+        "crc32": "3ea639fb",
+        "sha256": "462de0d420c678d2044b120647d847368709c69ea58e2bf6c49ea6c1976d06dd"
+      },
+      {
+        "path": "verify.py",
+        "bytes": 246,
+        "crc32": "2cecd109",
+        "sha256": "e08eda4cdc070be19431e5ccef292f57d31b4e36a2d1e35e4d3da2e080f5bd61"
+      },
+      {
+        "path": "法文扫描_原112至113页.pdf",
+        "bytes": 211098,
+        "crc32": "d50980cb",
+        "sha256": "4968a06af426ad22d966e35b54fbe94e1aeecaeb13435c44cac5cc4419460084"
+      },
+      {
+        "path": "EGA第五卷_特征二与奇异术语_校订续译.tex",
+        "bytes": 6762,
+        "crc32": "176c35db",
+        "sha256": "5d370dd42be383589d7dce656686be084a120de29f2817c83f8c01335719d321"
+      },
+      {
+        "path": "PROGRESS.json",
+        "bytes": 207,
+        "crc32": "31a8dc69",
+        "sha256": "c48b198c2fa43c71f3cf38af565df44bc4bf5a3d514c745d4c78e77e856c6d4c"
+      },
+      {
+        "path": "AUDIT.txt",
+        "bytes": 531,
+        "crc32": "c31e7fef",
+        "sha256": "34e22daa25c54590e00a488fafe861ddf33300fdd9afce4adeb12cf8accd1261"
+      },
+      {
+        "path": "SOURCE_NOTES.txt",
+        "bytes": 2470,
+        "crc32": "42713db6",
+        "sha256": "1642a82a153126066c2eeb5cad9f27f37531e0a45eee39118e9690d34ef6a027"
+      },
+      {
+        "path": "英译底本.pdf",
+        "bytes": 677332,
+        "crc32": "417febae",
+        "sha256": "23a20ef32fd16a1bd623c0c08ac080d04fc94f248de12133b713a19d6b0330d9"
+      }
+    ],
+    "extracted_directory": "integration_20261121/dot_audit_extract/n14",
+    "tex_files": [
+      {
+        "path": "EGA第五卷_特征二与奇异术语_校订续译.tex",
+        "bytes": 6762,
+        "crc32": "176c35db",
+        "sha256": "5d370dd42be383589d7dce656686be084a120de29f2817c83f8c01335719d321"
+      }
+    ],
+    "progress_claim": {
+      "batch": 63,
+      "source_page": 74,
+      "next_anchor": "IV 23.9.2 is false as such",
+      "french_page": 113,
+      "french_anchor": "Par contre, IV 23.9.2. est faux tel quel",
+      "merged": false,
+      "pdf_pages": 5
+    },
+    "internal_checksums": [
+      {
+        "path": "AUDIT.txt",
+        "expected_sha256": "34e22daa25c54590e00a488fafe861ddf33300fdd9afce4adeb12cf8accd1261",
+        "actual_sha256": "34e22daa25c54590e00a488fafe861ddf33300fdd9afce4adeb12cf8accd1261",
+        "status": "ok"
+      },
+      {
+        "path": "EGA第五卷_特征二与奇异术语_校订续译.pdf",
+        "expected_sha256": "865d8a06c61070e7b2d605c51bb080b63a285ba7f8b6f6435b1ae5fafcbc1abb",
+        "actual_sha256": "865d8a06c61070e7b2d605c51bb080b63a285ba7f8b6f6435b1ae5fafcbc1abb",
+        "status": "ok"
+      },
+      {
+        "path": "EGA第五卷_特征二与奇异术语_校订续译.tex",
+        "expected_sha256": "5d370dd42be383589d7dce656686be084a120de29f2817c83f8c01335719d321",
+        "actual_sha256": "5d370dd42be383589d7dce656686be084a120de29f2817c83f8c01335719d321",
+        "status": "ok"
+      },
+      {
+        "path": "PROGRESS.json",
+        "expected_sha256": "c48b198c2fa43c71f3cf38af565df44bc4bf5a3d514c745d4c78e77e856c6d4c",
+        "actual_sha256": "c48b198c2fa43c71f3cf38af565df44bc4bf5a3d514c745d4c78e77e856c6d4c",
+        "status": "ok"
+      },
+      {
+        "path": "README.txt",
+        "expected_sha256": "6a4684a1ecb27103c86144f8816afb5e4f09f9d6345ea38eb53858df82d98fa1",
+        "actual_sha256": "6a4684a1ecb27103c86144f8816afb5e4f09f9d6345ea38eb53858df82d98fa1",
+        "status": "ok"
+      },
+      {
+        "path": "SOURCE_NOTES.txt",
+        "expected_sha256": "1642a82a153126066c2eeb5cad9f27f37531e0a45eee39118e9690d34ef6a027",
+        "actual_sha256": "1642a82a153126066c2eeb5cad9f27f37531e0a45eee39118e9690d34ef6a027",
+        "status": "ok"
+      },
+      {
+        "path": "build.sh",
+        "expected_sha256": "462de0d420c678d2044b120647d847368709c69ea58e2bf6c49ea6c1976d06dd",
+        "actual_sha256": "462de0d420c678d2044b120647d847368709c69ea58e2bf6c49ea6c1976d06dd",
+        "status": "ok"
+      },
+      {
+        "path": "verify.py",
+        "expected_sha256": "e08eda4cdc070be19431e5ccef292f57d31b4e36a2d1e35e4d3da2e080f5bd61",
+        "actual_sha256": "e08eda4cdc070be19431e5ccef292f57d31b4e36a2d1e35e4d3da2e080f5bd61",
+        "status": "ok"
+      },
+      {
+        "path": "法文扫描_原112至113页.pdf",
+        "expected_sha256": "4968a06af426ad22d966e35b54fbe94e1aeecaeb13435c44cac5cc4419460084",
+        "actual_sha256": "4968a06af426ad22d966e35b54fbe94e1aeecaeb13435c44cac5cc4419460084",
+        "status": "ok"
+      },
+      {
+        "path": "英译底本.pdf",
+        "expected_sha256": "23a20ef32fd16a1bd623c0c08ac080d04fc94f248de12133b713a19d6b0330d9",
+        "actual_sha256": "23a20ef32fd16a1bd623c0c08ac080d04fc94f248de12133b713a19d6b0330d9",
+        "status": "ok"
+      }
+    ]
+  },
+  {
+    "order": 15,
+    "filename": "EGA第五卷_切超曲面与勘误_续译工程.zip",
+    "metadata": {
+      "name": "EGA第五卷_切超曲面与勘误_续译工程.zip",
+      "file_id": "file_00000000b80c81f68d6b72a25799dc2f",
+      "library_file_id": "libfile_fde3_f-8aa0ab59e5d4819185978138e0b7d0da_49ac57203c0c81918f3630f0324dcb35",
+      "version_id": "0",
+      "size_bytes": 980628,
+      "created_at": "2026-11-20T23:08:22.021681+00:00",
+      "modified_at": "2026-11-20T23:08:22.021681+00:00"
+    },
+    "sha256": "9386a9ccf9f690c8c3cbd1272cf3c9f9c8ce99303111cb61e479555f2e1fd0f1",
+    "bytes": 980628,
+    "mirror_exists": true,
+    "mirror_sha256": "9386a9ccf9f690c8c3cbd1272cf3c9f9c8ce99303111cb61e479555f2e1fd0f1",
+    "mirror_byte_identical": true,
+    "crc_bad_member": null,
+    "duplicate_exact_members": [],
+    "duplicate_normalized_members": [],
+    "unsafe_members": [],
+    "encrypted_members": [],
+    "uncompressed_bytes": 1060427,
+    "member_count": 11,
+    "members": [
+      {
+        "path": "README.txt",
+        "bytes": 582,
+        "crc32": "e0debb46",
+        "sha256": "78d3ea13beb3ed2907a8f0a0d63eb1a1d77c65cd135748b8228dcb89ead7025f"
+      },
+      {
+        "path": "EGA第五卷_切超曲面与勘误_校订续译.pdf",
+        "bytes": 162929,
+        "crc32": "acd295c5",
+        "sha256": "4835d96cdf6695fd26f20ddf115de7d1ffc5beb4e1bf6ad534cc4aa0b04d43f3"
+      },
+      {
+        "path": "SHA256SUMS.txt",
+        "bytes": 885,
+        "crc32": "8ecd8101",
+        "sha256": "a5d8c4a9b1766b9ef5304d2a4c778cd1774f1fed15d51b54d61ae50f1d0f462a"
+      },
+      {
+        "path": "build.sh",
+        "bytes": 162,
+        "crc32": "93016a28",
+        "sha256": "af5b73bc3a21a9dea3793ea3730c995377d3e2d8906e2ee8a9303756c036637a"
+      },
+      {
+        "path": "法文扫描_原113至114页.pdf",
+        "bytes": 210738,
+        "crc32": "5cea20fc",
+        "sha256": "7ababdc36e80305672dcea817150a6cf7afd12bf931477fe5c454a6d8018044f"
+      },
+      {
+        "path": "verify.py",
+        "bytes": 246,
+        "crc32": "2cecd109",
+        "sha256": "e08eda4cdc070be19431e5ccef292f57d31b4e36a2d1e35e4d3da2e080f5bd61"
+      },
+      {
+        "path": "EGA第五卷_切超曲面与勘误_校订续译.tex",
+        "bytes": 4469,
+        "crc32": "858c7d53",
+        "sha256": "862ae06823b3db607e3f8dad77bacc0f49022b44c3b25e98cc08c215f0d37d06"
+      },
+      {
+        "path": "PROGRESS.json",
+        "bytes": 214,
+        "crc32": "daee90e4",
+        "sha256": "d43e253fbbb6d7529e81675fd97217f6755cba2c2589d57064eb1c896ca77dab"
+      },
+      {
+        "path": "AUDIT.txt",
+        "bytes": 277,
+        "crc32": "3e72e07d",
+        "sha256": "7337cf4fcaeaea7f5a82bedde8b6d374d8be2344dd7f282f290d9de5a6f2de2b"
+      },
+      {
+        "path": "SOURCE_NOTES.txt",
+        "bytes": 2593,
+        "crc32": "ee09a194",
+        "sha256": "5aeff8eaa142bbec3ba49ffa04d21f95c0fcb657ed5a5dbf8177ac3be3cd2f65"
+      },
+      {
+        "path": "英译底本.pdf",
+        "bytes": 677332,
+        "crc32": "417febae",
+        "sha256": "23a20ef32fd16a1bd623c0c08ac080d04fc94f248de12133b713a19d6b0330d9"
+      }
+    ],
+    "extracted_directory": "integration_20261121/dot_audit_extract/n15",
+    "tex_files": [
+      {
+        "path": "EGA第五卷_切超曲面与勘误_校订续译.tex",
+        "bytes": 4469,
+        "crc32": "858c7d53",
+        "sha256": "862ae06823b3db607e3f8dad77bacc0f49022b44c3b25e98cc08c215f0d37d06"
+      }
+    ],
+    "progress_claim": {
+      "batch": 64,
+      "source_page": 74,
+      "next_anchor": "Let S be a prescheme, E a model locally free",
+      "french_page": 114,
+      "french_anchor": "15.1. Soient S un préschéma",
+      "merged": false,
+      "pdf_pages": 4
+    },
+    "internal_checksums": [
+      {
+        "path": "AUDIT.txt",
+        "expected_sha256": "7337cf4fcaeaea7f5a82bedde8b6d374d8be2344dd7f282f290d9de5a6f2de2b",
+        "actual_sha256": "7337cf4fcaeaea7f5a82bedde8b6d374d8be2344dd7f282f290d9de5a6f2de2b",
+        "status": "ok"
+      },
+      {
+        "path": "EGA第五卷_切超曲面与勘误_校订续译.pdf",
+        "expected_sha256": "4835d96cdf6695fd26f20ddf115de7d1ffc5beb4e1bf6ad534cc4aa0b04d43f3",
+        "actual_sha256": "4835d96cdf6695fd26f20ddf115de7d1ffc5beb4e1bf6ad534cc4aa0b04d43f3",
+        "status": "ok"
+      },
+      {
+        "path": "EGA第五卷_切超曲面与勘误_校订续译.tex",
+        "expected_sha256": "862ae06823b3db607e3f8dad77bacc0f49022b44c3b25e98cc08c215f0d37d06",
+        "actual_sha256": "862ae06823b3db607e3f8dad77bacc0f49022b44c3b25e98cc08c215f0d37d06",
+        "status": "ok"
+      },
+      {
+        "path": "PROGRESS.json",
+        "expected_sha256": "d43e253fbbb6d7529e81675fd97217f6755cba2c2589d57064eb1c896ca77dab",
+        "actual_sha256": "d43e253fbbb6d7529e81675fd97217f6755cba2c2589d57064eb1c896ca77dab",
+        "status": "ok"
+      },
+      {
+        "path": "README.txt",
+        "expected_sha256": "78d3ea13beb3ed2907a8f0a0d63eb1a1d77c65cd135748b8228dcb89ead7025f",
+        "actual_sha256": "78d3ea13beb3ed2907a8f0a0d63eb1a1d77c65cd135748b8228dcb89ead7025f",
+        "status": "ok"
+      },
+      {
+        "path": "SOURCE_NOTES.txt",
+        "expected_sha256": "5aeff8eaa142bbec3ba49ffa04d21f95c0fcb657ed5a5dbf8177ac3be3cd2f65",
+        "actual_sha256": "5aeff8eaa142bbec3ba49ffa04d21f95c0fcb657ed5a5dbf8177ac3be3cd2f65",
+        "status": "ok"
+      },
+      {
+        "path": "build.sh",
+        "expected_sha256": "af5b73bc3a21a9dea3793ea3730c995377d3e2d8906e2ee8a9303756c036637a",
+        "actual_sha256": "af5b73bc3a21a9dea3793ea3730c995377d3e2d8906e2ee8a9303756c036637a",
+        "status": "ok"
+      },
+      {
+        "path": "verify.py",
+        "expected_sha256": "e08eda4cdc070be19431e5ccef292f57d31b4e36a2d1e35e4d3da2e080f5bd61",
+        "actual_sha256": "e08eda4cdc070be19431e5ccef292f57d31b4e36a2d1e35e4d3da2e080f5bd61",
+        "status": "ok"
+      },
+      {
+        "path": "法文扫描_原113至114页.pdf",
+        "expected_sha256": "7ababdc36e80305672dcea817150a6cf7afd12bf931477fe5c454a6d8018044f",
+        "actual_sha256": "7ababdc36e80305672dcea817150a6cf7afd12bf931477fe5c454a6d8018044f",
+        "status": "ok"
+      },
+      {
+        "path": "英译底本.pdf",
+        "expected_sha256": "23a20ef32fd16a1bd623c0c08ac080d04fc94f248de12133b713a19d6b0330d9",
+        "actual_sha256": "23a20ef32fd16a1bd623c0c08ac080d04fc94f248de12133b713a19d6b0330d9",
+        "status": "ok"
+      }
+    ]
+  },
+  {
+    "order": 16,
+    "filename": "EGA第五卷_151光滑型与雅可比判据_续译工程.zip",
+    "metadata": {
+      "name": "EGA第五卷_151光滑型与雅可比判据_续译工程.zip",
+      "file_id": "file_00000000a3f081f69f3d1226757e54b8",
+      "library_file_id": "libfile_fde3_f-f998cf939ed48191a6fb01f433982474_49ac57203c0c81918f3630f0324dcb35",
+      "version_id": "0",
+      "size_bytes": 963175,
+      "created_at": "2026-11-21T01:15:43.632966+00:00",
+      "modified_at": "2026-11-21T01:15:43.632966+00:00"
+    },
+    "sha256": "505ccb964b7fa38b8bd2fb3a66c95daa022caa6c085cc0be582aef7721b09cb3",
+    "bytes": 963175,
+    "mirror_exists": true,
+    "mirror_sha256": "505ccb964b7fa38b8bd2fb3a66c95daa022caa6c085cc0be582aef7721b09cb3",
+    "mirror_byte_identical": true,
+    "crc_bad_member": null,
+    "duplicate_exact_members": [],
+    "duplicate_normalized_members": [],
+    "unsafe_members": [],
+    "encrypted_members": [],
+    "uncompressed_bytes": 1043493,
+    "member_count": 11,
+    "members": [
+      {
+        "path": "AUDIT.txt",
+        "bytes": 289,
+        "crc32": "b075bbc2",
+        "sha256": "8cf09d7e7231167c4bbe537ad23f47e73102377883021df2b7b1542fc7614c8d"
+      },
+      {
+        "path": "EGA第五卷_151光滑型与雅可比判据_校订续译.pdf",
+        "bytes": 155346,
+        "crc32": "a3e108d3",
+        "sha256": "cdd06cdfd4a6b9abdbc39bf39f815efc55fe58cdf40a8ba69534d9b9314e8085"
+      },
+      {
+        "path": "EGA第五卷_151光滑型与雅可比判据_校订续译.tex",
+        "bytes": 4943,
+        "crc32": "ff1c02e2",
+        "sha256": "b406e5ae7365b61e11a5ae99aec2552c144c1e82ddb9de71d6edb31a5bb76566"
+      },
+      {
+        "path": "PROGRESS.json",
+        "bytes": 244,
+        "crc32": "b94ffabc",
+        "sha256": "835b669e1a694fbcd0889364eeffccdeb322bd718fbcf490521866d7730f6786"
+      },
+      {
+        "path": "README.txt",
+        "bytes": 583,
+        "crc32": "c39244ae",
+        "sha256": "7f80ba2dcc51dba297e15e966dd366c7cbb14d0a8ba3c3bb3c46fc0c7268e7c7"
+      },
+      {
+        "path": "SHA256SUMS.txt",
+        "bytes": 903,
+        "crc32": "22b32e35",
+        "sha256": "9db022f6b19b9d97e1b6cab0e61e24c2c074f2fe90a4e95c52d82d4d7186b390"
+      },
+      {
+        "path": "SOURCE_NOTES.txt",
+        "bytes": 490,
+        "crc32": "c4d9b7ee",
+        "sha256": "7427826a9a1e489129fe0774bba454ba46b786d49c5c41d1f6331dcc629c158c"
+      },
+      {
+        "path": "build.sh",
+        "bytes": 191,
+        "crc32": "10bb405c",
+        "sha256": "64cdce35393bb35bf308b7e91f1f9d05bcad2d7c9884029ed22d00ebda16d8dc"
+      },
+      {
+        "path": "verify.py",
+        "bytes": 287,
+        "crc32": "a2e9d758",
+        "sha256": "721f985bb313fc171d627ffe82ffa617f42cca9e8494cb24a395f70864e1398a"
+      },
+      {
+        "path": "法文扫描_原114至115页.pdf",
+        "bytes": 202885,
+        "crc32": "902272ac",
+        "sha256": "6d09e0f52520cd530aa9fe479cc0a645d7b8f3f8102b1606fdbcf34963a77055"
+      },
+      {
+        "path": "英译底本.pdf",
+        "bytes": 677332,
+        "crc32": "417febae",
+        "sha256": "23a20ef32fd16a1bd623c0c08ac080d04fc94f248de12133b713a19d6b0330d9"
+      }
+    ],
+    "extracted_directory": "integration_20261121/dot_audit_extract/n16",
+    "tex_files": [
+      {
+        "path": "EGA第五卷_151光滑型与雅可比判据_校订续译.tex",
+        "bytes": 4943,
+        "crc32": "ff1c02e2",
+        "sha256": "b406e5ae7365b61e11a5ae99aec2552c144c1e82ddb9de71d6edb31a5bb76566"
+      }
+    ],
+    "progress_claim": {
+      "batch": 65,
+      "start_english_page": 74,
+      "end_english_page": 75,
+      "next_anchor": "15.2. Let X be a prescheme, J an ideal quasi-coherent over X",
+      "french_page": 115,
+      "french_anchor": "15.2. Soient X un préschéma, J un Idéal",
+      "pdf_pages": 4,
+      "merged": false
+    },
+    "internal_checksums": [
+      {
+        "path": "AUDIT.txt",
+        "expected_sha256": "8cf09d7e7231167c4bbe537ad23f47e73102377883021df2b7b1542fc7614c8d",
+        "actual_sha256": "8cf09d7e7231167c4bbe537ad23f47e73102377883021df2b7b1542fc7614c8d",
+        "status": "ok"
+      },
+      {
+        "path": "EGA第五卷_151光滑型与雅可比判据_校订续译.pdf",
+        "expected_sha256": "cdd06cdfd4a6b9abdbc39bf39f815efc55fe58cdf40a8ba69534d9b9314e8085",
+        "actual_sha256": "cdd06cdfd4a6b9abdbc39bf39f815efc55fe58cdf40a8ba69534d9b9314e8085",
+        "status": "ok"
+      },
+      {
+        "path": "EGA第五卷_151光滑型与雅可比判据_校订续译.tex",
+        "expected_sha256": "b406e5ae7365b61e11a5ae99aec2552c144c1e82ddb9de71d6edb31a5bb76566",
+        "actual_sha256": "b406e5ae7365b61e11a5ae99aec2552c144c1e82ddb9de71d6edb31a5bb76566",
+        "status": "ok"
+      },
+      {
+        "path": "PROGRESS.json",
+        "expected_sha256": "835b669e1a694fbcd0889364eeffccdeb322bd718fbcf490521866d7730f6786",
+        "actual_sha256": "835b669e1a694fbcd0889364eeffccdeb322bd718fbcf490521866d7730f6786",
+        "status": "ok"
+      },
+      {
+        "path": "README.txt",
+        "expected_sha256": "7f80ba2dcc51dba297e15e966dd366c7cbb14d0a8ba3c3bb3c46fc0c7268e7c7",
+        "actual_sha256": "7f80ba2dcc51dba297e15e966dd366c7cbb14d0a8ba3c3bb3c46fc0c7268e7c7",
+        "status": "ok"
+      },
+      {
+        "path": "SOURCE_NOTES.txt",
+        "expected_sha256": "7427826a9a1e489129fe0774bba454ba46b786d49c5c41d1f6331dcc629c158c",
+        "actual_sha256": "7427826a9a1e489129fe0774bba454ba46b786d49c5c41d1f6331dcc629c158c",
+        "status": "ok"
+      },
+      {
+        "path": "build.sh",
+        "expected_sha256": "64cdce35393bb35bf308b7e91f1f9d05bcad2d7c9884029ed22d00ebda16d8dc",
+        "actual_sha256": "64cdce35393bb35bf308b7e91f1f9d05bcad2d7c9884029ed22d00ebda16d8dc",
+        "status": "ok"
+      },
+      {
+        "path": "verify.py",
+        "expected_sha256": "721f985bb313fc171d627ffe82ffa617f42cca9e8494cb24a395f70864e1398a",
+        "actual_sha256": "721f985bb313fc171d627ffe82ffa617f42cca9e8494cb24a395f70864e1398a",
+        "status": "ok"
+      },
+      {
+        "path": "法文扫描_原114至115页.pdf",
+        "expected_sha256": "6d09e0f52520cd530aa9fe479cc0a645d7b8f3f8102b1606fdbcf34963a77055",
+        "actual_sha256": "6d09e0f52520cd530aa9fe479cc0a645d7b8f3f8102b1606fdbcf34963a77055",
+        "status": "ok"
+      },
+      {
+        "path": "英译底本.pdf",
+        "expected_sha256": "23a20ef32fd16a1bd623c0c08ac080d04fc94f248de12133b713a19d6b0330d9",
+        "actual_sha256": "23a20ef32fd16a1bd623c0c08ac080d04fc94f248de12133b713a19d6b0330d9",
+        "status": "ok"
+      }
+    ]
+  },
+  {
+    "order": 17,
+    "filename": "EGA第五卷_152初等增广与几何奇点_续译工程.zip",
+    "metadata": {
+      "name": "EGA第五卷_152初等增广与几何奇点_续译工程.zip",
+      "file_id": "file_000000008ca481f6808520deb5b26ca2",
+      "library_file_id": "libfile_fde3_f-fbda70a6eea88191bb198c88a4262b58_49ac57203c0c81918f3630f0324dcb35",
+      "version_id": "0",
+      "size_bytes": 973740,
+      "created_at": "2026-11-21T03:08:15.990095+00:00",
+      "modified_at": "2026-11-21T03:08:15.990095+00:00"
+    },
+    "sha256": "7a773e1f2593e0e073777323109bd3f14c8dbb6b2efc1a61d5edb095485a7922",
+    "bytes": 973740,
+    "mirror_exists": true,
+    "mirror_sha256": "7a773e1f2593e0e073777323109bd3f14c8dbb6b2efc1a61d5edb095485a7922",
+    "mirror_byte_identical": true,
+    "crc_bad_member": null,
+    "duplicate_exact_members": [],
+    "duplicate_normalized_members": [],
+    "unsafe_members": [],
+    "encrypted_members": [],
+    "uncompressed_bytes": 1055962,
+    "member_count": 11,
+    "members": [
+      {
+        "path": "AUDIT.txt",
+        "bytes": 577,
+        "crc32": "bb22b0fa",
+        "sha256": "09d8bede9a4a1dd51fbabd13be82262b3423ef9983c55aa87c5db8b34f2980c2"
+      },
+      {
+        "path": "EGA第五卷_152初等增广与几何奇点_校订续译.pdf",
+        "bytes": 170074,
+        "crc32": "97d4da9a",
+        "sha256": "f4312fb766dd5350cf1cd1c0cf476df6fef03047b15413b4536208e89b31e386"
+      },
+      {
+        "path": "EGA第五卷_152初等增广与几何奇点_校订续译.tex",
+        "bytes": 5304,
+        "crc32": "664c1962",
+        "sha256": "52b096cc2b56d6b2cb47db6d9c2fbf6a707d5a0e10646610a0d9b2df87a72998"
+      },
+      {
+        "path": "PROGRESS.json",
+        "bytes": 362,
+        "crc32": "555dc504",
+        "sha256": "9aa6def5cf75e939b2b70ed9ae3d62131db5e8b2ba689629b8ee5e7364db385d"
+      },
+      {
+        "path": "README.txt",
+        "bytes": 632,
+        "crc32": "da74d68d",
+        "sha256": "2ea630818ed2653c64078c3fa0dfed1f4809801c0938c9964bac92a70c409f93"
+      },
+      {
+        "path": "SHA256SUMS.txt",
+        "bytes": 906,
+        "crc32": "63c20df2",
+        "sha256": "e0a79f332424019d14169eb51a1b172adade8d65f7a5f9cf1b1dcd825d7c335f"
+      },
+      {
+        "path": "SOURCE_NOTES.txt",
+        "bytes": 628,
+        "crc32": "0323e8e3",
+        "sha256": "51661f6da8c40a6eaa156ae199e2daa91bce84bd29f6158eb566bfa4d5a0abb2"
+      },
+      {
+        "path": "build.sh",
+        "bytes": 191,
+        "crc32": "e6a28f31",
+        "sha256": "456160a41b56d61b6ec4cc6af334fc78ba2040c73482e059a601be3a9be86247"
+      },
+      {
+        "path": "verify.py",
+        "bytes": 287,
+        "crc32": "a2e9d758",
+        "sha256": "721f985bb313fc171d627ffe82ffa617f42cca9e8494cb24a395f70864e1398a"
+      },
+      {
+        "path": "法文扫描_物理115及160页.pdf",
+        "bytes": 199669,
+        "crc32": "83d49652",
+        "sha256": "1f9cfe41c5ea05f158d7e2e251b65c634c9b4401934af8ef354e621f2b6ca985"
+      },
+      {
+        "path": "英译底本.pdf",
+        "bytes": 677332,
+        "crc32": "417febae",
+        "sha256": "23a20ef32fd16a1bd623c0c08ac080d04fc94f248de12133b713a19d6b0330d9"
+      }
+    ],
+    "extracted_directory": "integration_20261121/dot_audit_extract/n17",
+    "tex_files": [
+      {
+        "path": "EGA第五卷_152初等增广与几何奇点_校订续译.tex",
+        "bytes": 5304,
+        "crc32": "664c1962",
+        "sha256": "52b096cc2b56d6b2cb47db6d9c2fbf6a707d5a0e10646610a0d9b2df87a72998"
+      }
+    ],
+    "progress_claim": {
+      "batch": 66,
+      "status": "translated_and_verified",
+      "section": "§15.2",
+      "english_physical_pages": [
+        75,
+        76
+      ],
+      "french_physical_pages": [
+        115,
+        160
+      ],
+      "french_second_page_visible_number": 116,
+      "next": {
+        "english_physical_page": 76,
+        "french_physical_page": 160,
+        "section": "§15.3",
+        "french_anchor": "« Généraliser » SUP prop.8 au cas de la multiplicité n."
+      },
+      "merged_into_master": false
+    },
+    "internal_checksums": [
+      {
+        "path": "AUDIT.txt",
+        "expected_sha256": "09d8bede9a4a1dd51fbabd13be82262b3423ef9983c55aa87c5db8b34f2980c2",
+        "actual_sha256": "09d8bede9a4a1dd51fbabd13be82262b3423ef9983c55aa87c5db8b34f2980c2",
+        "status": "ok"
+      },
+      {
+        "path": "EGA第五卷_152初等增广与几何奇点_校订续译.pdf",
+        "expected_sha256": "f4312fb766dd5350cf1cd1c0cf476df6fef03047b15413b4536208e89b31e386",
+        "actual_sha256": "f4312fb766dd5350cf1cd1c0cf476df6fef03047b15413b4536208e89b31e386",
+        "status": "ok"
+      },
+      {
+        "path": "EGA第五卷_152初等增广与几何奇点_校订续译.tex",
+        "expected_sha256": "52b096cc2b56d6b2cb47db6d9c2fbf6a707d5a0e10646610a0d9b2df87a72998",
+        "actual_sha256": "52b096cc2b56d6b2cb47db6d9c2fbf6a707d5a0e10646610a0d9b2df87a72998",
+        "status": "ok"
+      },
+      {
+        "path": "PROGRESS.json",
+        "expected_sha256": "9aa6def5cf75e939b2b70ed9ae3d62131db5e8b2ba689629b8ee5e7364db385d",
+        "actual_sha256": "9aa6def5cf75e939b2b70ed9ae3d62131db5e8b2ba689629b8ee5e7364db385d",
+        "status": "ok"
+      },
+      {
+        "path": "README.txt",
+        "expected_sha256": "2ea630818ed2653c64078c3fa0dfed1f4809801c0938c9964bac92a70c409f93",
+        "actual_sha256": "2ea630818ed2653c64078c3fa0dfed1f4809801c0938c9964bac92a70c409f93",
+        "status": "ok"
+      },
+      {
+        "path": "SOURCE_NOTES.txt",
+        "expected_sha256": "51661f6da8c40a6eaa156ae199e2daa91bce84bd29f6158eb566bfa4d5a0abb2",
+        "actual_sha256": "51661f6da8c40a6eaa156ae199e2daa91bce84bd29f6158eb566bfa4d5a0abb2",
+        "status": "ok"
+      },
+      {
+        "path": "build.sh",
+        "expected_sha256": "456160a41b56d61b6ec4cc6af334fc78ba2040c73482e059a601be3a9be86247",
+        "actual_sha256": "456160a41b56d61b6ec4cc6af334fc78ba2040c73482e059a601be3a9be86247",
+        "status": "ok"
+      },
+      {
+        "path": "verify.py",
+        "expected_sha256": "721f985bb313fc171d627ffe82ffa617f42cca9e8494cb24a395f70864e1398a",
+        "actual_sha256": "721f985bb313fc171d627ffe82ffa617f42cca9e8494cb24a395f70864e1398a",
+        "status": "ok"
+      },
+      {
+        "path": "法文扫描_物理115及160页.pdf",
+        "expected_sha256": "1f9cfe41c5ea05f158d7e2e251b65c634c9b4401934af8ef354e621f2b6ca985",
+        "actual_sha256": "1f9cfe41c5ea05f158d7e2e251b65c634c9b4401934af8ef354e621f2b6ca985",
+        "status": "ok"
+      },
+      {
+        "path": "英译底本.pdf",
+        "expected_sha256": "23a20ef32fd16a1bd623c0c08ac080d04fc94f248de12133b713a19d6b0330d9",
+        "actual_sha256": "23a20ef32fd16a1bd623c0c08ac080d04fc94f248de12133b713a19d6b0330d9",
+        "status": "ok"
+      }
+    ]
+  },
+  {
+    "order": 18,
+    "filename": "EGA第五卷_153至156_初等奇点局部刻画_续译工程.zip",
+    "metadata": {
+      "name": "EGA第五卷_153至156_初等奇点局部刻画_续译工程.zip",
+      "file_id": "file_00000000180881f5abd3f160517ea939",
+      "library_file_id": "libfile_fde3_f-b1cb4e77d83081919595f972e6202314_49ac57203c0c81918f3630f0324dcb35",
+      "version_id": "0",
+      "size_bytes": 1018574,
+      "created_at": "2026-11-21T05:12:16.356426+00:00",
+      "modified_at": "2026-11-21T05:12:16.356426+00:00"
+    },
+    "sha256": "b1ca34519d60039d0dc1d34d504396e7ee63f76f3371c398bbc8ef880ef83769",
+    "bytes": 1018574,
+    "mirror_exists": true,
+    "mirror_sha256": "b1ca34519d60039d0dc1d34d504396e7ee63f76f3371c398bbc8ef880ef83769",
+    "mirror_byte_identical": true,
+    "crc_bad_member": null,
+    "duplicate_exact_members": [],
+    "duplicate_normalized_members": [],
+    "unsafe_members": [],
+    "encrypted_members": [],
+    "uncompressed_bytes": 1102485,
+    "member_count": 11,
+    "members": [
+      {
+        "path": "AUDIT.txt",
+        "bytes": 507,
+        "crc32": "5298351e",
+        "sha256": "c243c064dd7a420aca64c8eed9d0fbb2a21c31610e37ad9b7e4cfebd351bde5e"
+      },
+      {
+        "path": "EGA第五卷_153至156_初等奇点局部刻画.pdf",
+        "bytes": 203353,
+        "crc32": "48ee0756",
+        "sha256": "7e6d01e2d6dba459c57a0d81e9e93544ff408a85938971b6c548a8e1b191f864"
+      },
+      {
+        "path": "EGA第五卷_153至156_初等奇点局部刻画.tex",
+        "bytes": 7844,
+        "crc32": "af81eaaf",
+        "sha256": "df516c6405e6365dc7569e3cfcbe046747a07e93d880d2cc90e79136b79c2dde"
+      },
+      {
+        "path": "PROGRESS.json",
+        "bytes": 415,
+        "crc32": "ff0cb352",
+        "sha256": "162cf97c40158176fb5d47817190dcadf0cbec247d7602f70ebfff263abc562d"
+      },
+      {
+        "path": "README.txt",
+        "bytes": 605,
+        "crc32": "98989ae1",
+        "sha256": "e9ec7ce70425a42b5b1b86f024f4a8f53ae2e991573b366895dd0becf7436840"
+      },
+      {
+        "path": "SHA256SUMS.txt",
+        "bytes": 888,
+        "crc32": "0662efec",
+        "sha256": "8e3db50c02a88232cef1f0cfa793a523ac0f31ab45e1950d98532e92500696bd"
+      },
+      {
+        "path": "SOURCE_NOTES.txt",
+        "bytes": 644,
+        "crc32": "6b00a267",
+        "sha256": "6bc639ef2f6e0808a218e10edb5bdb428159bd3c1c5ccbe53e6a790236e81a01"
+      },
+      {
+        "path": "build.sh",
+        "bytes": 182,
+        "crc32": "ae9452f5",
+        "sha256": "e4c543355bfc6e2c7add1fdf0cfe01e69ba671534bec5fdbd9f2e909c145759d"
+      },
+      {
+        "path": "verify.py",
+        "bytes": 287,
+        "crc32": "a2e9d758",
+        "sha256": "721f985bb313fc171d627ffe82ffa617f42cca9e8494cb24a395f70864e1398a"
+      },
+      {
+        "path": "法文扫描_物理160及159页.pdf",
+        "bytes": 210428,
+        "crc32": "3f760aad",
+        "sha256": "d36f6da6493b249551af36eb24b5d2da1723565a982d95faa791cde02abfceb0"
+      },
+      {
+        "path": "英译底本.pdf",
+        "bytes": 677332,
+        "crc32": "417febae",
+        "sha256": "23a20ef32fd16a1bd623c0c08ac080d04fc94f248de12133b713a19d6b0330d9"
+      }
+    ],
+    "extracted_directory": "integration_20261121/dot_audit_extract/n18",
+    "tex_files": [
+      {
+        "path": "EGA第五卷_153至156_初等奇点局部刻画.tex",
+        "bytes": 7844,
+        "crc32": "af81eaaf",
+        "sha256": "df516c6405e6365dc7569e3cfcbe046747a07e93d880d2cc90e79136b79c2dde"
+      }
+    ],
+    "progress_claim": {
+      "batch": 67,
+      "status": "translated_and_verified",
+      "section": "§§15.3–15.6",
+      "english_physical_pages": [
+        76,
+        77
+      ],
+      "last_english_page_scope": "first line only",
+      "french_physical_pages": [
+        160,
+        159
+      ],
+      "french_printed_pages": [
+        116,
+        117
+      ],
+      "next": {
+        "english_physical_page": 77,
+        "french_physical_page": 159,
+        "section": "§15.7",
+        "french_anchor": "Il y a lieu de dégager les variantes « géométriques » de 15.6."
+      },
+      "merged_into_master": false
+    },
+    "internal_checksums": [
+      {
+        "path": "AUDIT.txt",
+        "expected_sha256": "c243c064dd7a420aca64c8eed9d0fbb2a21c31610e37ad9b7e4cfebd351bde5e",
+        "actual_sha256": "c243c064dd7a420aca64c8eed9d0fbb2a21c31610e37ad9b7e4cfebd351bde5e",
+        "status": "ok"
+      },
+      {
+        "path": "EGA第五卷_153至156_初等奇点局部刻画.pdf",
+        "expected_sha256": "7e6d01e2d6dba459c57a0d81e9e93544ff408a85938971b6c548a8e1b191f864",
+        "actual_sha256": "7e6d01e2d6dba459c57a0d81e9e93544ff408a85938971b6c548a8e1b191f864",
+        "status": "ok"
+      },
+      {
+        "path": "EGA第五卷_153至156_初等奇点局部刻画.tex",
+        "expected_sha256": "df516c6405e6365dc7569e3cfcbe046747a07e93d880d2cc90e79136b79c2dde",
+        "actual_sha256": "df516c6405e6365dc7569e3cfcbe046747a07e93d880d2cc90e79136b79c2dde",
+        "status": "ok"
+      },
+      {
+        "path": "PROGRESS.json",
+        "expected_sha256": "162cf97c40158176fb5d47817190dcadf0cbec247d7602f70ebfff263abc562d",
+        "actual_sha256": "162cf97c40158176fb5d47817190dcadf0cbec247d7602f70ebfff263abc562d",
+        "status": "ok"
+      },
+      {
+        "path": "README.txt",
+        "expected_sha256": "e9ec7ce70425a42b5b1b86f024f4a8f53ae2e991573b366895dd0becf7436840",
+        "actual_sha256": "e9ec7ce70425a42b5b1b86f024f4a8f53ae2e991573b366895dd0becf7436840",
+        "status": "ok"
+      },
+      {
+        "path": "SOURCE_NOTES.txt",
+        "expected_sha256": "6bc639ef2f6e0808a218e10edb5bdb428159bd3c1c5ccbe53e6a790236e81a01",
+        "actual_sha256": "6bc639ef2f6e0808a218e10edb5bdb428159bd3c1c5ccbe53e6a790236e81a01",
+        "status": "ok"
+      },
+      {
+        "path": "build.sh",
+        "expected_sha256": "e4c543355bfc6e2c7add1fdf0cfe01e69ba671534bec5fdbd9f2e909c145759d",
+        "actual_sha256": "e4c543355bfc6e2c7add1fdf0cfe01e69ba671534bec5fdbd9f2e909c145759d",
+        "status": "ok"
+      },
+      {
+        "path": "verify.py",
+        "expected_sha256": "721f985bb313fc171d627ffe82ffa617f42cca9e8494cb24a395f70864e1398a",
+        "actual_sha256": "721f985bb313fc171d627ffe82ffa617f42cca9e8494cb24a395f70864e1398a",
+        "status": "ok"
+      },
+      {
+        "path": "法文扫描_物理160及159页.pdf",
+        "expected_sha256": "d36f6da6493b249551af36eb24b5d2da1723565a982d95faa791cde02abfceb0",
+        "actual_sha256": "d36f6da6493b249551af36eb24b5d2da1723565a982d95faa791cde02abfceb0",
+        "status": "ok"
+      },
+      {
+        "path": "英译底本.pdf",
+        "expected_sha256": "23a20ef32fd16a1bd623c0c08ac080d04fc94f248de12133b713a19d6b0330d9",
+        "actual_sha256": "23a20ef32fd16a1bd623c0c08ac080d04fc94f248de12133b713a19d6b0330d9",
+        "status": "ok"
+      }
+    ]
+  },
+  {
+    "order": 19,
+    "filename": "EGA第五卷_157_初等奇点几何变式_续译工程.zip",
+    "metadata": {
+      "name": "EGA第五卷_157_初等奇点几何变式_续译工程.zip",
+      "file_id": "file_000000002c9881f5904576bf48f70c00",
+      "library_file_id": "libfile_fde3_f-6eed07f7c2f481919384904710dfe5a9_49ac57203c0c81918f3630f0324dcb35",
+      "version_id": "0",
+      "size_bytes": 1030869,
+      "created_at": "2026-11-21T07:04:15.391430+00:00",
+      "modified_at": "2026-11-21T07:04:15.391430+00:00"
+    },
+    "sha256": "56b2cd5c99bcba70138e6d54fb87a420c5f8328e391fe7e5dcc18ede03635ee4",
+    "bytes": 1030869,
+    "mirror_exists": true,
+    "mirror_sha256": "56b2cd5c99bcba70138e6d54fb87a420c5f8328e391fe7e5dcc18ede03635ee4",
+    "mirror_byte_identical": true,
+    "crc_bad_member": null,
+    "duplicate_exact_members": [],
+    "duplicate_normalized_members": [],
+    "unsafe_members": [],
+    "encrypted_members": [],
+    "uncompressed_bytes": 1114712,
+    "member_count": 11,
+    "members": [
+      {
+        "path": "AUDIT.txt",
+        "bytes": 554,
+        "crc32": "c6817f89",
+        "sha256": "7f1ff5d7bef0620ebe345d13b64ceb26372f5cbf656980637da056da497dab44"
+      },
+      {
+        "path": "EGA第五卷_157_初等奇点几何变式.pdf",
+        "bytes": 214793,
+        "crc32": "a25b14b1",
+        "sha256": "7822bb092ce9d3c11dd291b65f059886a413d3223203393c9363c58a18ccc69a"
+      },
+      {
+        "path": "EGA第五卷_157_初等奇点几何变式.tex",
+        "bytes": 8761,
+        "crc32": "c201e9df",
+        "sha256": "611b371c0b7a5d1c6fc87f259c18b7706960ef2643916b0ed86328ca77d3209d"
+      },
+      {
+        "path": "PROGRESS.json",
+        "bytes": 413,
+        "crc32": "4d9b3629",
+        "sha256": "544359b4481132d391ce3c7e8c02a63effb911a5887d0dbaf4374fccf6113e4e"
+      },
+      {
+        "path": "README.txt",
+        "bytes": 507,
+        "crc32": "4a8efb8e",
+        "sha256": "a88aa30e914a2f775f273282141d5dbc4457681b2f714e9874ead6c9d17c1617"
+      },
+      {
+        "path": "SHA256SUMS.txt",
+        "bytes": 876,
+        "crc32": "321935a9",
+        "sha256": "336aa7fcd8adcc117300fbee9e2cbb90a871eb0ce5196c0f2261f75236a137c5"
+      },
+      {
+        "path": "SOURCE_NOTES.txt",
+        "bytes": 685,
+        "crc32": "70e908f6",
+        "sha256": "9ff60561bd4b66d37953d7223e15917cd8ecafe800d2b94eecead5d07fa1ad17"
+      },
+      {
+        "path": "build.sh",
+        "bytes": 176,
+        "crc32": "d6f49cea",
+        "sha256": "6d153576b6c19c021f546b1bec3559bf154ca7f37bfb5870e738e1ba49e408b7"
+      },
+      {
+        "path": "verify.py",
+        "bytes": 287,
+        "crc32": "a2e9d758",
+        "sha256": "721f985bb313fc171d627ffe82ffa617f42cca9e8494cb24a395f70864e1398a"
+      },
+      {
+        "path": "法文扫描_物理159及158页.pdf",
+        "bytes": 210328,
+        "crc32": "75aae14f",
+        "sha256": "8b9f1a4aacc85f9f58e724b71b451227a2c9dcdbfd15e1a4b35c4b079b66641f"
+      },
+      {
+        "path": "英译底本.pdf",
+        "bytes": 677332,
+        "crc32": "417febae",
+        "sha256": "23a20ef32fd16a1bd623c0c08ac080d04fc94f248de12133b713a19d6b0330d9"
+      }
+    ],
+    "extracted_directory": "integration_20261121/dot_audit_extract/n19",
+    "tex_files": [
+      {
+        "path": "EGA第五卷_157_初等奇点几何变式.tex",
+        "bytes": 8761,
+        "crc32": "c201e9df",
+        "sha256": "611b371c0b7a5d1c6fc87f259c18b7706960ef2643916b0ed86328ca77d3209d"
+      }
+    ],
+    "progress_claim": {
+      "batch": 68,
+      "status": "translated_and_verified",
+      "section": "§15.7",
+      "english_physical_pages": [
+        77
+      ],
+      "english_start": "15.7. This is the place to state the “geometric” variants of 15.6",
+      "french_physical_pages": [
+        159,
+        158
+      ],
+      "french_printed_pages": [
+        117,
+        118
+      ],
+      "next": {
+        "english_physical_page": 78,
+        "french_physical_page": 161,
+        "section": "17.16",
+        "french_anchor": "17.16. Formes quadratiques lisses."
+      },
+      "merged_into_master": false
+    },
+    "internal_checksums": [
+      {
+        "path": "AUDIT.txt",
+        "expected_sha256": "7f1ff5d7bef0620ebe345d13b64ceb26372f5cbf656980637da056da497dab44",
+        "actual_sha256": "7f1ff5d7bef0620ebe345d13b64ceb26372f5cbf656980637da056da497dab44",
+        "status": "ok"
+      },
+      {
+        "path": "EGA第五卷_157_初等奇点几何变式.pdf",
+        "expected_sha256": "7822bb092ce9d3c11dd291b65f059886a413d3223203393c9363c58a18ccc69a",
+        "actual_sha256": "7822bb092ce9d3c11dd291b65f059886a413d3223203393c9363c58a18ccc69a",
+        "status": "ok"
+      },
+      {
+        "path": "EGA第五卷_157_初等奇点几何变式.tex",
+        "expected_sha256": "611b371c0b7a5d1c6fc87f259c18b7706960ef2643916b0ed86328ca77d3209d",
+        "actual_sha256": "611b371c0b7a5d1c6fc87f259c18b7706960ef2643916b0ed86328ca77d3209d",
+        "status": "ok"
+      },
+      {
+        "path": "PROGRESS.json",
+        "expected_sha256": "544359b4481132d391ce3c7e8c02a63effb911a5887d0dbaf4374fccf6113e4e",
+        "actual_sha256": "544359b4481132d391ce3c7e8c02a63effb911a5887d0dbaf4374fccf6113e4e",
+        "status": "ok"
+      },
+      {
+        "path": "README.txt",
+        "expected_sha256": "a88aa30e914a2f775f273282141d5dbc4457681b2f714e9874ead6c9d17c1617",
+        "actual_sha256": "a88aa30e914a2f775f273282141d5dbc4457681b2f714e9874ead6c9d17c1617",
+        "status": "ok"
+      },
+      {
+        "path": "SOURCE_NOTES.txt",
+        "expected_sha256": "9ff60561bd4b66d37953d7223e15917cd8ecafe800d2b94eecead5d07fa1ad17",
+        "actual_sha256": "9ff60561bd4b66d37953d7223e15917cd8ecafe800d2b94eecead5d07fa1ad17",
+        "status": "ok"
+      },
+      {
+        "path": "build.sh",
+        "expected_sha256": "6d153576b6c19c021f546b1bec3559bf154ca7f37bfb5870e738e1ba49e408b7",
+        "actual_sha256": "6d153576b6c19c021f546b1bec3559bf154ca7f37bfb5870e738e1ba49e408b7",
+        "status": "ok"
+      },
+      {
+        "path": "verify.py",
+        "expected_sha256": "721f985bb313fc171d627ffe82ffa617f42cca9e8494cb24a395f70864e1398a",
+        "actual_sha256": "721f985bb313fc171d627ffe82ffa617f42cca9e8494cb24a395f70864e1398a",
+        "status": "ok"
+      },
+      {
+        "path": "法文扫描_物理159及158页.pdf",
+        "expected_sha256": "8b9f1a4aacc85f9f58e724b71b451227a2c9dcdbfd15e1a4b35c4b079b66641f",
+        "actual_sha256": "8b9f1a4aacc85f9f58e724b71b451227a2c9dcdbfd15e1a4b35c4b079b66641f",
+        "status": "ok"
+      },
+      {
+        "path": "英译底本.pdf",
+        "expected_sha256": "23a20ef32fd16a1bd623c0c08ac080d04fc94f248de12133b713a19d6b0330d9",
+        "actual_sha256": "23a20ef32fd16a1bd623c0c08ac080d04fc94f248de12133b713a19d6b0330d9",
+        "status": "ok"
+      }
+    ]
+  }
+]

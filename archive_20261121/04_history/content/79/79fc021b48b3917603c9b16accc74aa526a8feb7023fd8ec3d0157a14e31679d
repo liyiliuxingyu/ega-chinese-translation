@@ -1,0 +1,4975 @@
+% !TeX program = xelatex
+
+% BEGIN preamble.tex
+% !TeX program = xelatex
+\documentclass[UTF8,a4paper]{ctexbook}
+% The class determines paper geometry, type size, Chinese fonts, heading layout,
+% double-sided pagination and chapter opening. No geometry, fancyhdr or font override.
+\usepackage{amsmath,amssymb,amsthm,mathtools,mathrsfs}
+\usepackage{tikz-cd}
+\usepackage{enumitem,longtable,booktabs,array,needspace}
+\usepackage[perpage,bottom]{footmisc}
+\usepackage{graphicx,adjustbox}
+\usepackage[unicode,hidelinks,bookmarksnumbered,hypertexnames=false]{hyperref}
+\usepackage{bookmark}
+% Retain EGA's historical chapter and paragraph numbering.
+\ctexset{part={name={第,卷},number=\Roman{part}},chapter={number={\ifnum\value{chapter}=0 0\else\Roman{chapter}\fi}},section={name={\texorpdfstring{\S\,}{§},}}}
+\renewcommand{\thesection}{\arabic{section}}
+\renewcommand{\thesubsection}{\thesection.\arabic{subsection}}
+\setcounter{secnumdepth}{2}
+\setcounter{tocdepth}{2}
+% Four-digit TOC page numbers: extend only their reserved width.
+% Fonts, body geometry, heading styles and page numbering remain class defaults.
+\makeatletter
+\renewcommand{\@pnumwidth}{2.4em}
+\renewcommand{\@tocrmarg}{3.4em}
+\makeatother
+\setlength{\emergencystretch}{2em}
+\allowdisplaybreaks[2]
+\newcommand{\egapar}[1]{\par\addvspace{0.55\baselineskip}\Needspace{3\baselineskip}\noindent\hypertarget{para:\arabic{chapter}:#1}{}\hypertarget{entry:\arabic{chapter}:#1}{}\label{entry:\arabic{chapter}:#1}\textbf{（#1）}\quad\ignorespaces}
+\newcommand{\egastatement}[2]{\par\addvspace{0.55\baselineskip}\Needspace{3\baselineskip}\noindent\hypertarget{para:\arabic{chapter}:#1}{}\hypertarget{entry:\arabic{chapter}:#1}{}\label{entry:\arabic{chapter}:#1}\textbf{#2（#1）}\quad\ignorespaces}
+\newcommand{\eref}[1]{\hyperlink{entry:\arabic{chapter}:#1}{（#1）}}
+\newcommand{\erritem}[2]{\par\addvspace{0.6\baselineskip}\Needspace{3\baselineskip}\noindent\hypertarget{errata:I:#1}{}\textbf{#2（#1）}\quad\ignorespaces}
+\newcommand{\unnumberedchapter}[1]{\chapter*{#1}\addcontentsline{toc}{chapter}{#1}\markboth{#1}{#1}}
+\newcommand{\src}[1]{\par\nobreak\noindent{\small 原文印刷页码：#1。}\par\nobreak\vspace{0.25\baselineskip}}
+\newcommand{\origfootnote}[1]{\ifhmode\unskip\nobreak\fi\footnote{\textbf{原注：}#1}}
+\newcommand{\transnote}[1]{\ifhmode\unskip\nobreak\fi\footnote{\textbf{译注：}#1}}
+\newcommand{\separation}{\par\medskip\centerline{$*\qquad *\qquad *$}\medskip}
+\newcommand{\F}{\mathscr F}
+\newcommand{\G}{\mathscr G}
+\newcommand{\HH}{\mathscr H}
+\newcommand{\B}{\mathfrak B}
+\newcommand{\OO}{\mathscr O}
+\newcommand{\Kcat}{\boldsymbol K}
+\newcommand{\restrict}[2]{#1\vert_{#2}}
+\newcommand{\restmod}[2]{#1_{[#2]}}
+\DeclareMathOperator{\Hom}{Hom}
+\DeclareMathOperator{\Supp}{Supp}
+\DeclareMathOperator{\Ker}{Ker}
+\DeclareMathOperator{\Ann}{Ann}
+\DeclareMathOperator{\Spec}{Spec}
+\newcommand{\ilim}{\varinjlim}
+\newcommand{\plim}{\varprojlim}
+\newcommand{\A}{\mathscr A}
+\newcommand{\BB}{\mathscr B}
+\newcommand{\C}{\mathscr C}
+\newcommand{\E}{\mathscr E}
+\newcommand{\LL}{\mathscr L}
+\newcommand{\M}{\mathscr M}
+\newcommand{\N}{\mathscr N}
+\newcommand{\PP}{\mathscr P}
+\newcommand{\J}{\mathscr J}
+\newcommand{\shHom}{\mathscr{H}\!om}
+\newcommand{\dual}[1]{\check{#1}}
+\DeclareMathOperator{\Coker}{Coker}
+\let\Im\relax
+\DeclareMathOperator{\Im}{Im}
+\DeclareMathOperator{\Tor}{Tor}
+\newcommand{\frJ}{\mathfrak J}
+\newcommand{\frK}{\mathfrak K}
+\newcommand{\frQ}{\mathfrak Q}
+\newcommand{\frT}{\mathfrak T}
+\newcommand{\frR}{\mathfrak R}
+\newcommand{\frS}{\mathfrak S}
+\newcommand{\comp}[1]{\widehat{#1}}
+\newcommand{\ctensor}{\mathbin{\widehat{\otimes}}}
+\DeclareMathOperator{\grad}{grad}
+\newcommand{\wt}[1]{\widetilde{#1}}
+\newcommand{\jj}{\mathfrak j}
+\newcommand{\rr}{\mathfrak r}
+\newcommand{\mm}{\mathfrak m}
+\newcommand{\nrad}{\mathfrak N}
+\newcommand{\aphi}{{}^{a}\varphi}
+\DeclareMathOperator{\Spf}{Spf}
+\newcommand{\frX}{\mathfrak X}
+\newcommand{\frY}{\mathfrak Y}
+\newcommand{\frZ}{\mathfrak Z}
+\newcommand{\frU}{\mathfrak U}
+\newcommand{\frV}{\mathfrak V}
+\newcommand{\frW}{\mathfrak W}
+\newcommand{\frD}{\mathfrak D}
+\newcommand{\SSS}{\mathscr S}
+\newcommand{\nn}{\mathfrak n}
+\newcommand{\pp}{\mathfrak p}
+\newcommand{\qq}{\mathfrak q}
+\newcommand{\frj}{\mathfrak j}
+\newcommand{\frk}{\mathfrak k}
+\DeclareMathOperator{\Proj}{Proj}
+\DeclareMathOperator{\Tr}{Tr}
+\DeclareMathOperator{\Sym}{S}
+\DeclareMathOperator{\gr}{gr}
+\newcommand{\red}{\mathrm{red}}
+\newcommand{\Gstar}{\Gamma_*}
+\newcommand{\Tstar}{\Gamma_*}
+\newcommand{\R}{\mathscr R}
+\newcommand{\TT}{\mathscr T}
+\newcommand{\I}{\mathscr I}
+\newcommand{\K}{\mathscr K}
+\newcommand{\V}{\mathbf V}
+\newcommand{\Pb}{\mathbf P}
+\newcommand{\Z}{\mathbf Z}
+\newcommand{\Gr}{\operatorname{Gr}}
+\newcommand{\id}{\mathrm{id}}
+\DeclareMathOperator{\codim}{codim}
+\DeclareMathOperator{\rk}{rg}
+\DeclareMathOperator{\Pic}{Pic}
+\newcommand{\sProj}{\mathscr{P}\!roj}
+\newcommand{\catHom}{\mathscr{H}\!om}
+\newcommand{\Ens}{\mathbf{Ens}}
+\newcommand{\OI}{0_{\mathrm I}}
+\newcommand{\OIII}{0_{\mathrm{III}}}
+\newcommand{\Ext}{\operatorname{Ext}}
+\newcommand{\shExt}{\mathscr{E}\!xt}
+\newcommand{\shTor}{\mathscr{T}\!or}
+\newcommand{\Hh}{\mathbb H}
+\newcommand{\len}{\operatorname{long}}
+\newcommand{\cplx}[1]{#1^{\bullet}}
+\newcommand{\Cat}{\mathbf C}
+\newcommand{\ra}{\longrightarrow}
+\newcommand{\la}{\longleftarrow}
+\newcommand{\iso}{\xrightarrow{\sim}}
+\newcommand{\eproof}{\par\noindent\textbf{证明。}\ignorespaces}
+\newcommand{\finishproof}{\hfill$\square$\par}
+\newcommand{\srcpage}[1]{\par\noindent{\small\itshape〔底本第#1页〕}\par\nobreak}
+\newcommand{\cocomp}[1]{\complement #1}
+\DeclareMathOperator{\Aut}{Aut}
+\DeclareMathOperator{\GL}{GL}
+\DeclareMathOperator{\trdeg}{trdeg}
+
+% Macros for the reviewed continuation. Existing mathematical macros are unchanged.
+\newcommand{\kk}{\mathfrak k}
+\newcommand{\cH}{\mathscr H}
+\newcommand{\hTor}{\mathbb{T}\!or}
+\newcommand{\lTor}{\mathscr{T}\!or}
+\newcommand{\spE}{\mathscr E}
+\DeclareMathOperator{\coprof}{coprof}
+\newcommand{\source}[1]{\par\smallskip\noindent\textit{底本位置：#1。}\par\smallskip}
+\newcommand{\newscope}{new}
+\newcommand{\egap}[1]{\par\addvspace{.6\baselineskip}\Needspace{3\baselineskip}\noindent\hypertarget{new:\newscope:#1}{}\textbf{（#1）}\quad\ignorespaces}
+\newcommand{\egas}[2]{\par\addvspace{.6\baselineskip}\Needspace{3\baselineskip}\noindent\hypertarget{new:\newscope:#1}{}\textbf{#2（#1）}\quad\ignorespaces}
+\newcommand{\cmt}[2]{\footnote{\textbf{译校注〔#1〕：}#2}}
+\newcommand{\ednote}[1]{\footnote{\textbf{英译编者注：}#1}}
+\newcommand{\orig}[1]{\footnote{\textbf{原注：}#1}}
+\newcommand{\head}[1]{\chapter*{#1}\addcontentsline{toc}{chapter}{#1}\markboth{#1}{#1}}
+\newcommand{\egasection}[1]{\section*{#1}\addcontentsline{toc}{section}{#1}}
+\newcommand{\subsec}[1]{\subsection*{#1}\addcontentsline{toc}{subsection}{#1}}
+\newcommand{\audit}[3]{\Needspace{5\baselineskip}\hypertarget{audit:#1}{}\section*{#1\quad #2}\addcontentsline{toc}{section}{#1\quad #2}\noindent\textbf{判定：#3。}\par\smallskip}
+\pdfstringdefDisableCommands{\def\quad{ }\def\qquad{ }\def\S{§}}
+
+\newcommand{\bTor}{\operatorname{\mathbf{Tor}}}
+\newcommand{\termTor}{\mathop{\mathscr{T}\!or^{\mathrm{term}}}\nolimits}
+\newcommand{\NewNote}[1]{\par\smallskip\noindent\textbf{编排说明。}#1\par\smallskip}
+\hypersetup{pdftitle={代数几何基础：按内容顺序编排的中文译校合订本（第十六版）},pdfauthor={原著 A. Grothendieck；与 J. Dieudonné 合作；预备笔记英译编者见各篇},pdfsubject={第0章归并；正文连续；已译范围和未译范围分开列明}}
+\title{代数几何基础\\中文译校合订本\\[1em]\large 按内容顺序编排·第十六版}
+\author{A. Grothendieck\\与 J. Dieudonné 合作撰写\\[.6em]\normalsize 预备笔记英译及编辑：Piotr Blass、Joseph Blass}
+\date{}
+
+% Additions for the fourth continuation; no font or page-geometry overrides.
+\DeclareMathOperator{\Ass}{Ass}
+\DeclareMathOperator{\prof}{prof}
+\DeclareMathOperator{\htp}{ht}
+\newcommand{\pd}{\operatorname{dim.proj}}
+\newcommand{\injdim}{\operatorname{dim.inj}}
+\newcommand{\gldim}{\operatorname{dim.coh}}
+\newcommand{\Salg}{\mathrm S}
+
+\DeclareMathOperator{\End}{End}
+
+% Additions for chapter 0, section 18. Keep class defaults.
+\DeclareMathOperator{\Exan}{Exan}
+\DeclareMathOperator{\Exal}{Exal}
+\DeclareMathOperator{\Exalcom}{Exalcom}
+\DeclareMathOperator{\Exantop}{Exantop}
+\DeclareMathOperator{\Exaltop}{Exaltop}
+\DeclareMathOperator{\Exalcotop}{Exalcotop}
+\newcommand{\HomCont}{\operatorname{Hom.cont}}
+
+% Section 20 additions, no layout/font changes.
+\DeclareMathOperator{\Der}{\text{Dér}}
+\newcommand{\DerCont}{\operatorname{\text{Dér.cont}}}
+
+% END preamble.tex
+
+\newcommand{\RR}{\mathcal R}
+\newcommand{\FF}{\mathcal F}
+\newcommand{\GG}{\mathcal G}
+\newcommand{\MM}{\mathcal M}
+\newcommand{\JJ}{\mathcal J}
+\newcommand{\oldauditsrc}[1]{\par\noindent\textbf{原文位置：}#1。\par}
+\newcommand{\kind}[2]{\noindent\textbf{分类：#1。}\ #2\par}
+\newcommand{\lead}[1]{\par\noindent\textbf{#1}\quad}
+\newenvironment{analysisproof}{\par\noindent\textbf{该轮核查的反例或补证。}\ }{\par}
+
+\hypersetup{pdftitle={代数几何基础：第十六版译校核查报告},pdfsubject={第0章§23续译核查；日本环、整闭包与半局部性；历史核查档案}}
+\title{代数几何基础\\译校核查报告\\[1em]\large 第十六版新核查与历史记录}
+\author{原著对照、反例与补证}
+\date{}
+\begin{document}
+\frontmatter
+\maketitle
+\head{报告说明}
+本报告包含本轮第0章§23的新核查，以及此前各轮历史记录。
+本轮止于（23.2.10，ii）末尾，新标识为P16。
+正文采用校订后的陈述，原写法与依据放在脚注；详细反例和补证列在报告。
+重点是有限中间环的半局部性、整性越过幂零根的提升，以及应用中的完备性和局部化步骤。
+
+历史报告保留当时编号和措辞，不表示本轮重新审定其全部结论。旧版H8-P01等待核事项继续保留。
+作者正式勘误与译者校订分别标明。
+合订本仍是当前已译内容工作稿，不是全部材料的完结全译本；技术验证不等同于独立出版级数学审校。
+\tableofcontents
+\mainmatter
+
+% BEGIN reports/sixteenth_audit.tex
+\head{第十六版：第0章\S23译校核查}
+\source{用户上传的EGAIV.1.pdf，PDF第212--220页，原分册印刷第213--221页；作者清单三对照EGAIV.4.pdf的PDF第345页／印刷第346页}
+
+\section*{实际范围与结论性质}
+\addcontentsline{toc}{section}{实际范围与结论性质}
+本轮连续译入\S23“日本环”全文。23.1止于（23.1.7），23.2止于（23.2.10）。
+连同子编号引理（23.1.3.1）、（23.2.7.1），共19个原著编号条目。
+结尾保留原著“待续”。现有底本中第0章\S\S1--23的正文至此连续收入；
+这不表示第IV章主体已经翻译，也不表示原著所有证明均经独立审定。
+
+本轮确认（23.2.7）附带结论中的“局部环 $C$”应为“半局部环 $C$”，并给出具体反例。
+另补明忠实平坦情形的整性下降、Tate定理应用所需的完备性及高度1局部化的步骤。
+这与“定理结论被反驳”不同：本轮没有给出Tate定理、Nagata完备局部环定理或Mori的Krull性结论的反例。
+原文、作者正式勘误、译者校订与文本抽取失误分开处理。
+
+\begin{longtable}{@{}p{.18\linewidth}p{.20\linewidth}p{.52\linewidth}@{}}
+\toprule 标识&位置&判定与正文处理\\\midrule\endhead
+P16-E01&23.2.7&“局部”过强；改为“半局部”，有结点反例。\\
+P16-G01&23.1.5&展开极大理想完备到主理想完备的论证。\\
+P16-G02&23.2.7.1&补出模幂零根后首一方程的提升与整性下降。\\
+P16-G03&23.2.9&补出有限生成元清分母、素理想高度与取交。\\
+P16-T01&23.1.3&作者正式勘误两项：元素范围和幂所属的环。\\
+P16-T02&23.1.3&证明最后的 $A$ 改为所需的 $A'$。\\
+P16-T03&23.2.3&公式原误编号（23.1.3.1）改为（23.2.3.1）。\\
+P16-T04&23.2.8&不存在的引文（23.1.13）改为（23.2.7）。\\
+P16-N01--04&若干位置&零环边界、分式环记号、应用假设及扫描识读。\\
+\bottomrule
+\end{longtable}
+
+\audit{P16-E01}{有限中间环不一定局部}{附带断言的限定错误；半局部版本成立}
+\oldauditsrc{原分册第219页，（23.2.7）陈述末句}
+扫描页写的是“de l'anneau local C”，不是文本识读造成的差异。
+已给条件是 $A$ 局部、$C$ 有限于 $A$；这只保证 $C$ 半局部。
+后文证明选择的 $C$ 还须使 $\Spec A'\to\Spec C$ 为同胚，
+所以一旦 $A'$ 有两个极大理想，$C$ 不可能是局部环。
+下面同时说明，即使不预先要求这项同胚，原陈述所说的离散赋值环表示也不允许一般地取局部 $C$。
+
+\lead{一个完全显式的例子}
+取 $k=\mathbb Q$，在 $k[t]$ 中置
+\[
+ x=t^2-1,\qquad y=t(t^2-1),\qquad R=k[x,y],\qquad\mathfrak m=(x,y).
+\]
+$R$ 是整环，且 $R/\mathfrak m=k$。
+有
+\[
+ y^2=x^2(x+1),\qquad
+ R\simeq k[X,Y]/\bigl(Y^2-X^2(X+1)\bigr).
+\]
+后一个同构也可直接验证：$X+1$ 在 $k(X)$ 中不是平方，因它在 $X=-1$ 处的阶为1；
+故相应二次多项式不可约。
+令 $A=R_{\mathfrak m}$，这是一个一维诺特局部整环。
+由于 $t=y/x$，$A$ 的分式域为 $k(t)$。
+
+令 $S=R\setminus\mathfrak m$，并置 $B=S^{-1}k[t]$。
+$t$ 满足 $t^2-(x+1)=0$，而 $R[t]=k[t]$，所以 $B$ 是有限 $A$-代数。
+$B$ 是主理想整环的局部化，故整闭；又 $\operatorname{Frac}(B)=k(t)$。
+因此 $B$ 正是 $A$ 在分式域中的整闭包 $A'$。
+
+在 $k[t]$ 中有
+\[
+ (x,y)k[t]=(t^2-1),\qquad
+ k[t]/(t^2-1)\simeq k\times k.
+\]
+故 $B$ 有两个极大理想
+\[
+ \mathfrak n_+=(t-1)B,\qquad\mathfrak n_-=(t+1)B,
+\]
+两者均位于 $\mathfrak m$ 上方。由此 $A'=B$ 半局部但不局部。
+
+若存在原陈述所说的\emph{局部}有限中间环 $A\subset C\subset A'$，
+则 $C$ 也是一维局部整环，只有一个高度1素理想，即其极大理想 $\mathfrak n$。
+所以 $C_{\mathfrak n}=C$。
+$A'$ 同时是 $C$ 的整闭包：整性传递及 $A\subset C\subset A'$ 给出两向包含。
+于是 $C_{\mathfrak n}$ 的整闭包就是具有两个极大理想的 $A'$，不是离散赋值环。
+这与原陈述对 $V_\lambda$ 的要求矛盾。
+
+\lead{修订后为什么成立}
+由（23.2.5）选取有限 $A$-子代数 $C$，使 $\Spec A'\to\Spec C$ 根式，且整、满，因而为同胚。
+$C$ 半局部。该同胚保持素理想的包含和高度，
+所以 $A'$ 的高度1局部环正是各高度1的 $C_{\mathfrak p}$ 的整闭包。
+这些局部环为离散赋值环，给出原命题所需的Krull表示。
+正文只将“局部”校为“半局部”，没有削弱“$A'$ 为半局部Krull环”的主要结论。
+
+\audit{P16-G02}{模幂零根后的整性怎样返回原环}{原证明略写；补足后结论成立}
+\oldauditsrc{原分册第219页，引理（23.2.7.1）证明}
+原文将 $x\in K$ 对 $C=B_{\mathrm{red}}$ 整直接写成“a fortiori sur B”。
+$C$ 是商环，不能仅把它当成 $B$ 的子环而用传递性；应明确两个环境中的 $x$。
+设 $S=A\setminus\{0\}$、$\mathfrak N=\sqrt{0_B}$。
+由忠实平坦性，$A\hookrightarrow B$，$S$ 中每个元素在 $B$ 和 $C$ 上都是正则的。
+因此有相容嵌入 $K\hookrightarrow S^{-1}B$ 和 $K\hookrightarrow S^{-1}C\hookrightarrow R$。
+
+取首一多项式 $\overline P(T)\in C[T]$，使 $\overline P(x)=0$。
+逐个提升系数，得到首一的 $P(T)\in B[T]$。
+于是
+\[
+ P(x)\in\Ker(S^{-1}B\to S^{-1}C)=S^{-1}\mathfrak N.
+\]
+该理想的每个元素都幂零，所以存在依赖于 $P(x)$ 的整数 $N>0$，使 $P(x)^N=0$。
+首一多项式 $P(T)^N$ 便证明 $x$ 对 $B$ 整。
+这里不要求 $B$ 诺特，也不要求存在使 $\mathfrak N^N=0$ 的统一指数。
+
+由 $B$ 对 $A$ 平坦，$A[x]\subset K$ 张量后仍单射，故
+\[
+ B\otimes_A A[x]\simeq B[x]\subset S^{-1}B.
+\]
+右侧有限生成，如何推出左侧下降后的 $A[x]$ 有限生成也可写得很具体：
+取有限个 $B[x]$ 的 $B$-生成元，将各生成元写成有限个简单张量之和，
+收集其中出现的所有 $a_j\in A[x]$，令 $M=\sum_jAa_j$。
+则 $B\otimes_AM\to B\otimes_AA[x]$ 满射，因而
+$B\otimes_A(A[x]/M)=0$。由忠实平坦性，$A[x]/M=0$，即 $A[x]=M$ 有限生成。
+所以 $x$ 对 $A$ 整，得到 $C'\cap K=A'$。
+
+\audit{P16-G01}{Nagata定理中主理想进制完备性的核对}{应用条件补证}
+\oldauditsrc{原分册第216页，（23.1.5）证明末段}
+Tate定理（23.1.3）要求 $A$ 对 $(x)$-进制拓扑分离完备；
+Nagata定理起初给的是极大理想 $\mathfrak m$-进制完备性。
+在本处诺特局部环的假设下，这个转换成立，但不是“任何两种完备性都相同”。
+
+设 $x\in\mathfrak m$，取一个相容系 $(a_n+x^nA)_n\in\varprojlim A/x^nA$。
+选择代表元 $a_n$，满足 $a_{n+1}-a_n\in x^nA$。
+因 $x^nA\subseteq\mathfrak m^n$，$(a_n)$ 是 $\mathfrak m$-进制柯西列，故有极限 $a\in A$。
+固定 $r$，对所有 $n\ge r$ 有 $a_n-a_r\in x^rA$；
+诺特局部环的理想在 $\mathfrak m$-进制拓扑下闭，故 $a-a_r\in x^rA$。
+所以 $a$ 实现给定相容系，证明 $A\to\varprojlim A/x^nA$ 满射。
+又
+\[
+ \bigcap_{n\ge1}x^nA\subseteq\bigcap_{n\ge1}\mathfrak m^n=0,
+\]
+故该同态单射。
+这补足了原证明对Tate定理的应用，不改变归纳中的维数、正则性及日本环结论。
+
+\audit{P16-G03}{高度1局部化与有限中间环的下降}{清分母及包含关系补证}
+\oldauditsrc{原分册第220--221页，（23.2.9）}
+固定 $A$ 的极大理想 $\mathfrak m$。
+由（23.2.7）得到有限 $A_{\mathfrak m}$-子代数
+$B\subseteq A'_{\mathfrak m}$。取有限个代数生成元
+$b_i=a'_i/s_i$，其中 $a'_i\in A'$、$s_i\in A\setminus\mathfrak m$。
+令 $C=A[a'_1,\ldots,a'_r]$。因各 $a'_i$ 对 $A$ 整，$C$ 为有限 $A$-代数。
+在 $A_{\mathfrak m}$ 中 $s_i$ 都可逆，所以 $C_{\mathfrak m}=B$。
+
+设 $\mathfrak q\in\Spec B$ 高度1，$\widetilde{\mathfrak q}=\mathfrak q\cap C$。
+$\widetilde{\mathfrak q}$ 与 $A\setminus\mathfrak m$ 不交；
+任何包含于 $\widetilde{\mathfrak q}$ 的素理想也不与此乘法集相交。
+故局部化保留 $\widetilde{\mathfrak q}$ 下方的全部素理想链，
+$\htp\widetilde{\mathfrak q}=\htp\mathfrak q=1$。
+由命题假设，$\mathfrak p=\widetilde{\mathfrak q}\cap A$ 亦高度1，且 $\mathfrak p\subseteq\mathfrak m$。
+
+由 $A_{\mathfrak p}\subseteq B_{\mathfrak q}\subseteq K$，
+取在共同分式域中的整闭包得
+\[
+ A'_{\mathfrak m}\subseteq A'_{\mathfrak p}\subseteq\overline{B_{\mathfrak q}}.
+\]
+又 $A'_{\mathfrak m}=\bigcap_{\htp\mathfrak q=1}\overline{B_{\mathfrak q}}$。
+把所有 $\mathfrak p\subseteq\mathfrak m$、$\htp\mathfrak p=1$ 都放入左侧交集，得到两向包含，
+遂有 $A'_{\mathfrak m}=\bigcap_{\mathfrak p\subseteq\mathfrak m,\ \htp\mathfrak p=1}A'_{\mathfrak p}$。
+再对极大理想 $\mathfrak m$ 取交，正好得到原结论。
+
+\audit{P16-T01--04}{作者勘误与译者排印校订}{分别登记，不混称原定理错误}
+\lead{作者正式勘误P16-T01}
+《勘误与增补（清单三）》A部，第四卷第四部分印刷第346页，对（$0_{\mathrm{IV}}$，23.1.3）列明：
+第215页第4行将 $x'^q\in K'$ 改为 $x'\in K'$；
+第9行将 $x'^q\in A'$ 改为 $x'^q\in A$。
+这两项已落实在正文，并追加到书末相关勘误选译。
+
+\lead{译者校订P16-T02}
+Tate定理证明结束时“因此 $A$ 也有限型”应为“因此 $A'$ 也有限型”。
+原证明已经得到 $\widehat{A'}$ 是有限型 $A$-模，继而必须使用
+$A'\subseteq\widehat{A'}$ 和 $A$ 诺特，才能结束所需证明。
+
+\lead{译者校订P16-T03}
+（23.2.3）中的公式在扫描底本误编为（23.1.3.1）。正文按位置改为（23.2.3.1），
+旧号在脚注保留，避免与真实存在的引理（23.1.3.1）混淆。
+
+\lead{译者校订P16-T04}
+（23.2.8，ii）用“（23.1.13）”支持局部诺特整环整闭包的Krull性，
+但23.1止于（23.1.7）；实际依据是（23.2.7）。正文改引后者。
+
+\section*{识读、术语与范围核对}
+\addcontentsline{toc}{section}{识读、术语与范围核对}
+（23.2.9）的 $P$ 是 $A$ 的高度1素理想集合。
+抽取文本曾误给 $A'$，扫描页明确给出 $A$，因此没有把这项登记为作者错误。
+（23.1.7）中的 $\widehat A$、$A'_1$，以及（23.2.5）中两个 $C$ 上的完备化符号，都按扫描页恢复。
+（23.2.6）只给出半局部性与剩余域有限性，不能擅自加强成整闭包有限生成或诺特；
+原文（23.2.8，i）明确提醒存在非诺特整闭包。
+
+日本环定义中的“有限”指模有限；“普遍日本”不能简写成“整闭”。
+分式环仍须是整环，故（23.1.1）正文明确 $0\notin S$。
+源文引用Nagata的非诺特例子但未在本节给出构造，本译稿保留原引用，
+没有用新的例子替换原著尚未在这里展开的例子。
+
+\section*{外部交叉核对与本轮边界}
+\addcontentsline{toc}{section}{外部交叉核对与本轮边界}
+为检查主要结论的表述，另对照The Stacks Project的
+\href{https://stacks.math.columbia.edu/tag/0BI1}{Japanese rings（标签0BI1）}
+中日本环的定义、有限纯不可分扩张的检测和Tate引理，以及
+\href{https://stacks.math.columbia.edu/tag/0335}{Nagata环的例子（标签0335）}中的完备诺特局部环情形。
+外部材料仅作交叉核对；译文仍以用户上传的EGA原版为底本，未以现代证明替换未说明的原文内容。
+
+技术核验另见工程包的\texttt{checks/}；旧版待核事项保持原状态。
+
+% END reports/sixteenth_audit.tex
+
+\part*{历史核查记录：第十五版}
+\addcontentsline{toc}{part}{历史核查记录：第十五版}
+\NewNote{以下O15条目保留第十五版判断，不表示本轮重新审定其全部内容。}
+
+% BEGIN reports/fifteenth_audit.tex
+\head{第十五版：22.6—22.7译校核查}
+\source{用户上传第四卷第一部分，原分册第205--213页；作者清单三见第四卷第四部分第346页}
+
+\section*{范围与结论分层}
+\addcontentsline{toc}{section}{范围与结论分层}
+本轮从（22.6.1）连续译至（22.7.7，ii）末尾，共17个原著编号条目，其中包括引理（22.7.2.4）。
+这使第0章§22的正文连续译完；§23尚未译入。
+本报告记录四组需要实质处理的问题：张量目标错误、任意扩域导致的诺特性缺失、不可分底域下的Jacobian判据适用范围，以及原反例中的单位与不可约性问题。
+这四组问题不是四个核心Jacobian定理被推翻；分别有明确的校订、范围限制或反例修补。
+
+正文采用本轮核实的表述，原写法与修改依据置于脚注。原作者的正式勘误、底本识读、译者分析与外部交叉核对分开登记。
+本轮没有重新审定旧稿全部判断；特别是历史报告中原有的待核事项，不因合订而变为已解决。
+
+\begin{longtable}{@{}p{.18\linewidth}p{.20\linewidth}p{.52\linewidth}@{}}
+\toprule 标识&位置&处理性质\\\midrule\endhead
+O15-E01&22.6.2&典范映射的目标错误；改用商环 $C_\lambda$，给出修订判据。\\
+O15-E02&22.6.7，ii d&任意扩域后的环可以不诺特；改为有限扩域的等价判据。\\
+O15-E03&22.6.9，i&不能把前条（iii）的Jacobian条件原样推广到不可分系数域。\\
+O15-E04&22.7.7，ii&原幂级数是单位；移去常数项并重证素性、可分性及判据失败。\\
+O15-T01&22.7.3&作者已刊出的核记号和张量底环勘误；正文落实。\\
+O15-G01&22.7.2&展开导子连续性、配对矩阵及由稠密到相等的步骤。\\
+O15-N05/06&22.7.3--4&明确底域线性与预先指定的子域族；补出复合域族的交。\\
+\bottomrule
+\end{longtable}
+
+\audit{O15-E01}{余切映射的张量目标}{确证的公式错误及相应修订}
+\oldauditsrc{原分册第205--206页，（22.6.2）}
+前一定理给出的同态是
+\[
+ \delta:\mathfrak J/\mathfrak J^2\longrightarrow\Omega^1_{B/A}\otimes_BC,
+ \qquad C=B/\mathfrak J.
+\]
+原文令 $B_\lambda=B/\mathfrak b_\lambda$，却把与 $B_\lambda$ 张量后的目标写为
+$\Omega^1_{B/A}\otimes_BB_\lambda$。
+按照张量积的结合律，正确的目标是
+\[
+ (\Omega^1_{B/A}\otimes_BC)\otimes_BB_\lambda
+ \simeq\Omega^1_{B/A}\otimes_BB/(\mathfrak J+\mathfrak b_\lambda).
+\]
+只有在另有 $\mathfrak J\subseteq\mathfrak b_\lambda$ 时，才能把最后的商环换成 $B_\lambda$。
+原文并没有这一假设；特别是 $\mathfrak J$-预进制拓扑中的 $\mathfrak b_\lambda=\mathfrak J^n$ 一般也不满足它。
+
+\lead{检验例}
+取离散环 $A=\mathbb Q$、$B=\mathbb Q[x]$、$\mathfrak J=(x)$、$\mathfrak b_\lambda=0$。
+$B/A$ 与 $C=\mathbb Q$ 对 $A$ 都形式光滑；原文其他拓扑条件也都成立。
+原目标为 $B\,dx$，原源为 $\mathfrak J/\mathfrak J^2\simeq B/(x)$。
+若 $h:B/(x)\to B\,dx$ 是 $B$-线性映射，则
+\[
+ xh(\overline1)=h(x\overline1)=0.
+\]
+由于 $B\,dx$ 无 $x$-挠元，$h(\overline1)=0$，故每个这样的映射都为零，不可能左可逆。
+直接把 $\overline f$ 映到 $df$ 也不是良定义的：$x$ 与 $x+x^2$ 给出同一余类，微分却相差 $2x\,dx$。
+
+\lead{修订及证明}
+令 $C_\lambda=B/(\mathfrak J+\mathfrak b_\lambda)$。则
+\[
+ (\mathfrak J/\mathfrak J^2)\otimes_CC_\lambda
+ \longrightarrow\Omega^1_{B/A}\otimes_BC_\lambda
+\]
+才是张量所得的典范映射。商拓扑的开理想基本系为 $(\mathfrak b_\lambda C)$；
+原文关于诱导模拓扑的假设，使（19.1.7）适用于上述两个 $C$-模。
+所以“形式左可逆”恰等价于这些模每个基本开理想之后的映射左可逆，仍得到（22.6.2，i）的等价条件。
+对定义理想的判据（ii）由同样的投射商模性质及（19.1.9）给出。
+在检验例中，修订映射就是 $\mathbb Q\overline x\to\mathbb Q\,dx$，确为同构。
+
+\audit{O15-E02}{任意扩域不保证诺特性}{原量词过强；有限扩域版本成立}
+\oldauditsrc{原分册第207--208页，（22.6.7，ii d）；第50页，（17.3.6）}
+（17.3.6）明确把“正则环”定义在诺特环范围内。
+（22.6.7）只要求 $k/k_0$ 可分、$C$ 为有限型 $k$-代数，没有要求 $k/k_0$ 有限生成。
+因此“$C$ 有限型于 $k$”不能替代“$C$ 有限型于 $k_0$”。
+
+\lead{反例的构造}
+取 $k_0=\mathbb Q$，$k=\mathbb Q(t_1,t_2,\ldots)$，$C=k$。
+$C$ 是秩一的有限型 $k$-代数。它作为 $\mathbb Q$-代数形式光滑：
+多项式环 $\mathbb Q[t_1,t_2,\ldots]$ 的任意平方零提升问题可逐个选择变量的提升，
+而局部化所要取逆的元素在平方零商中为单位时，其任意提升仍为单位，故提升延拓到分式域。
+
+取原文允许的扩域 $k'=k$，置 $R=k\otimes_{\mathbb Q}k$，考虑乘法映射 $\mu:R\to k$，$I=\Ker\mu$。
+对角理想的标准描述（20.4.4--20.4.8）给出
+\[
+ I/I^2\simeq\Omega^1_{k/\mathbb Q}
+ =\bigoplus_{n\ge1}k\,dt_n.
+\]
+右端无限维。若 $R$ 诺特，$I$ 必为有限生成理想，$I/I^2$ 因而是有限型 $R/I=k$-模，矛盾。
+所以原 d）在一个满足 a）的例子上已经失败。
+
+\lead{为何有限扩域修订正确}
+若 $k'/k_0$ 有限，则 $C\otimes_{k_0}k'$ 是有限型 $C$-模，因而诺特。
+其每个局部环均由某个 $C_{\mathfrak p}\otimes_{k_0}k'$ 局部化得到。
+反过来，$C_{\mathfrak p}\otimes_{k_0}k'$ 是 $C\otimes_{k_0}k'$ 的局部化。
+因此对所有有限扩域检测正则性，与对全部 $C_{\mathfrak p}$ 检测（19.6.5）中的几何正则性等价。
+再用（22.5.8），正得到（22.6.7）其余各条件。
+这并不反驳有限型 $k_0$-代数在任意扩域后的通常几何正则性结论；该较强有限型假设在原条目中不存在。
+
+\audit{O15-E03}{不可分系数域下不能原样使用前条的Jacobian矩阵}{推广的适用范围错误}
+\oldauditsrc{原分册第208页，（22.6.9，i）}
+原文把“（22.6.7）的陈述”整体推广到有限纯不可分重数的扩张。
+性质的等价性与开性可通过文中给出的扩域和下降路线处理，但（iii）直接使用的环境
+$B=k[T_1,\ldots,T_r]$ 不再一定对 $k_0$ 形式光滑；矩阵判据原样推广会漏掉底域上的障碍。
+
+\lead{非空Jacobian矩阵的反例}
+固定素数 $p$，取
+\[
+ k_0=\mathbb F_p(s),\qquad k=\mathbb F_p(u),\qquad u^p=s,
+ \qquad B=k[T],\quad\mathfrak J=(T),\quad C=k.
+\]
+在 $\mathfrak q=(T)$ 处，$f_1=T$ 生成 $\mathfrak J_{\mathfrak q}$，
+$D_1=\partial/\partial T$ 是 $k_0$-导子，且 $D_1f_1=1\notin\mathfrak q$。
+这不是利用空行列式的边界例。
+然而 $k/k_0$ 是非平凡纯不可分扩张，不形式光滑。
+
+\lead{直接的平方零提升障碍}
+令 $h(V)=V^p-s$，$G=k_0[V]/(h(V)^2)$，$I=(h)/(h^2)$。
+则 $I^2=0$、$G/I\simeq k$，且 $h$ 在 $G$ 中非零。
+若恒等映射 $k\to G/I$ 可提升，则 $u$ 的像为 $V+ha$，其中 $a\in G$。
+但
+\[
+ (V+ha)^p-s=V^p-s+h^pa^p=h\ne0,
+\]
+因为 $p\ge2$、$h^2=0$。这与 $u^p=s$ 矛盾。
+此外，该扩张确有有限纯不可分重数：取 $k'_0=k$，
+$k\otimes_{k_0}k\simeq k[\epsilon]/(\epsilon^p)$，其剩余域就是 $k$，对 $k'_0$ 可分。
+
+\lead{正文的处理}
+保留原文通过 $k'_0$、其阿廷张量积的系数域 $k'$ 及（19.4.7）下降的论证路线，
+明确其支持（i）、（ii）的性质判据。
+对Jacobian矩阵必须先选用对所测试底域形式光滑的环境；不能在系数域不可分时仍把任意 $k$-多项式环当成这种环境。
+这一校订没有把原著留给读者的下降细节冒充为原文写出的证明。
+
+\audit{O15-E04}{无限p次数反例中的单位与不可约性}{原例按字面失效；给出完整修补}
+\oldauditsrc{原分册第213页，（22.7.7，ii）}
+原文取 $k=\mathbb F_p(X_n)_{n\ge0}$、$A=k[[T,U]]$，并写
+\[
+ f_{\rm old}=U^p-\sum_{n=0}^{\infty}X_nT^{np}.
+\]
+它的常数项是 $-X_0\ne0$，故在 $A$ 中可逆。因而 $(f_{\rm old})=A$，不能取作素理想。
+原文又说“在 $k((T))[U]$ 中不可约，所以在 $k((T))[[U]]$ 中不可约”。
+即使先修正求和起点，这一步仍不成立：$g\ne0$ 在域 $k((T))$ 中可逆，所以 $U^p-g$ 在以 $U$ 为变量的该形式幂级数环中是单位。
+
+\lead{第一步：修正构造并证明素性}
+保留 $k$ 和 $A$，改置
+\[
+ R=k[[T]],\quad F=k((T)),\quad
+ g=\sum_{n=1}^{\infty}X_nT^{np},\quad f=U^p-g.
+\]
+$g\in TR$，所以 $f$ 是 $R[[U]]$ 中的首一Weierstrass多项式。
+Weierstrass除法给出 $A/(f)\simeq R[U]/(f)$，后者由 $1,U,\ldots,U^{p-1}$ 自由生成。
+又 $F^p=k^p((T^p))$，而系数 $X_n\notin k^p$，故 $g\notin F^p$，$f$ 在 $F[U]$ 中不可约。
+$R[U]/(f)$ 是无挠 $R$-模，故嵌入 $F[U]/(f)$；后者为域，前者因此为整环。
+所以 $\mathfrak q=(f)$ 是 $A$ 的素理想。
+其分式域为 $E=F(u)$，$u^p=g$；取 $\mathfrak p=\mathfrak q$ 时，$B_{\mathfrak p}=E$。
+
+\lead{第二步：证明E对k可分，而不是仅仅对F可分}
+$E/F$ 明明是纯不可分扩张，不能由此断言 $E/k$ 不可分：这里 $F/k$ 不是代数扩张，底域改变十分关键。
+由（21.9.6.4），$F/k$ 可分，因此
+\[
+ \Omega^1_k\otimes_kE\longrightarrow\Omega^1_F\otimes_FE
+\]
+单射。所有绝对微分都相对于素域 $\mathbb F_p$。
+多项式商的微分表示给出
+\[
+ \Omega^1_E\simeq
+ \bigl((\Omega^1_F\otimes_FE)\oplus E\,du\bigr)/(E\,dg).
+\]
+这里 $d(u^p-g)=-dg$，没有 $du$ 项。
+故从 $\Omega^1_F\otimes_FE$ 到 $\Omega^1_E$ 的核是 $E\,dg$。
+
+任意 $\omega\in\Omega^1_k\otimes_kE$ 都可写成有限和 $\sum_{n\in S}a_n\,dX_n$。
+若其像等于 $\lambda dg$，取 $N\ge1$ 且 $N\notin S$。
+在 $k$ 上的导子 $\partial/\partial X_N$ 逐系数延拓为 $F$ 的导子，并满足
+\[
+ \frac{\partial g}{\partial X_N}=T^{Np},\qquad
+ \frac{\partial X_n}{\partial X_N}=0\quad(n\in S).
+\]
+将所对应的 $F$-线性微分泛映射与 $E$ 张量，得到一个 $E$-线性映射
+$\Omega^1_F\otimes_FE\to E$。
+应用它得到 $\lambda T^{Np}=0$，从而 $\lambda=0$、$\omega=0$。
+注意这里不需要把 $\partial/\partial X_N$ 延拓为 $E$ 的导子；使用的是张量后的线性映射。
+于是 $\Omega^1_k\otimes_kE\to\Omega^1_E$ 单射。由（20.6.3），$E/k$ 可分，因而 $E/k$ 形式光滑（19.6.1）。
+
+\lead{第三步：所有所需Jacobian矩阵仍退化}
+任意 $k$-导子 $D:A\to A$ 对极大理想 $\mathfrak m=(T,U)$ 都满足
+$D(\mathfrak m^{n+1})\subseteq\mathfrak m^n$，所以连续，并有
+\[
+ D=D(T)\frac{\partial}{\partial T}+D(U)\frac{\partial}{\partial U}.
+\]
+由于 $\partial f/\partial T=\partial f/\partial U=0$，有 $D(f)=0$。
+对任意 $h=af\in\mathfrak q$，
+\[
+ D(h)=D(a)f+aD(f)\in\mathfrak q.
+\]
+因此任意由 $\mathfrak q$ 中元素和这些导子组成的Jacobian矩阵，模 $\mathfrak q$ 后为零矩阵。
+它不可能满足（22.7.3，b）的非零行列式条件。
+本例 $[k:k^p]=\infty$，其余用于反例的条件成立；故修补后仍证明原著要说明的结论：有限 $p$-次数假设不能直接删除。
+
+\audit{O15-T01}{作者正式勘误的落实}{已有正式修订，不计为译者新发现}
+\oldauditsrc{第四卷第四部分原分册第346页，清单三A部}
+与（22.7.3）直接相关的两项为：第一部分第212页倒数第21行，$\Ker(i)$ 改为 $\Ker(i_0)$；
+倒数第12行，$(\mathfrak p/\mathfrak p^2)\otimes_LL$ 改为 $(\mathfrak p/\mathfrak p^2)\otimes_AL$。
+本版按扫描页核读，正文已落实，并以 $i_0$ 统一未完备微分映射的记号。
+最后证明使用的是
+\[
+ \Ker i_0\subseteq\Ker i',\qquad
+ \dim_L\Ker i_0=\dim_L\Upsilon_{L/k}=\dim_L\Ker i'.
+\]
+这些空间有限维，所以包含与同维合起来才能推出两个核相等；单独的“秩相等”没有消去包含条件。
+
+\audit{O15-G01}{导子、完备微分与Jacobian矩阵}{原结论保留，补明所用步骤}
+\oldauditsrc{原分册第209--212页，（22.7.2）与（22.7.3）}
+在 $A=k[[T_1,\ldots,T_r]]$ 中，$D(\mathfrak m^{n+1})\subseteq\mathfrak m^n$ 来自Leibniz公式：
+每个长度 $n+1$ 的生成元乘积求导后，每项仍含至少 $n$ 个极大理想因子。
+由线性与有限生成表达，此包含对整个理想成立。
+因此 $D$ 连续；截断幂级数收敛到原级数，便得到 $D=\sum D(T_i)\partial/\partial T_i$。
+这解释了为何可以使用 $\widehat\Omega^1_{A/k}$ 的对偶。
+
+设 $F_1,\ldots,F_m$ 为自由模 $P$ 与剩余域张量后的一组线性无关向量。
+在 $P$ 的基下，它们组成秩 $m$ 的矩阵，所以有一个 $m$ 阶子式非零；
+选取相应的对偶坐标函数即可获得所需的 $D_j$。
+这里不必把任意剩余域系数随意提升成 $A$ 中的元素；用坐标子式就足够。
+反方向，配对矩阵可逆直接迫使这些向量线性无关，再结合 $f_i$ 的生成性才得到整个余切映射单射。
+
+另外，（20.7.20）最初只给出像在核中稠密。
+本处 $A$ 完备诺特、相关微分模有限生成，子模在极大理想进制拓扑中闭，才得到真正的正合列。
+译文没有把一般的稠密像无条件升级为正合性。
+
+\audit{O15-N05}{底域线性不能隐去}{术语与作用域澄清}
+原文 b$'$）称 $k'$ 为 $K_0$ 的子扩张，证明又使用 b$'$）推出 b）。
+必须保留相对于 $k$ 的线性条件。
+例如 $k=\mathbb F_p(s)$、$A=k[[T,U]]$、$f=T^p-sU^p$、$\mathfrak q=(f)$，取 $\mathfrak p=\mathfrak q$。
+这个首一多项式在 $k((U))[T]$ 中不可约，故相应商域含有 $T/U$，其 $p$ 次幂为 $s$，不是 $k$ 的可分扩张。
+因此 a）失败。但 $\partial/\partial s$ 是 $k^p$-导子，并有
+\[
+ (\partial/\partial s)(f)=-U^p\notin\mathfrak q.
+\]
+所以若把 b$'$）改读为“任意子域 $k'$ 的导子”，且不要求仍为 $k$-导子，就会产生错误的判据。
+正文用联合线性表述，并解释它与取复合中间域的等价性。
+
+\audit{O15-N06}{预先指定子域族的正确用法}{保留原子域族，补出复合域论证}
+在特征 $p>0$ 下，置 $F=K_0^p$、$E=kF$。
+由 $[k:k^p]<\infty$，$E/F$ 是有限的指数一纯不可分扩张。
+设原文给定的向下滤过子域族满足 $F\subseteq k_\alpha$、$[K_0:k_\alpha]<\infty$、$\bigcap k_\alpha=F$。
+令 $h_\alpha=kk_\alpha$，则这些是真正含 $k$ 的中间域，且仍有 $[K_0:h_\alpha]<\infty$。
+需要核实的关键是
+\[
+ \bigcap_\alpha h_\alpha=E.
+\]
+取 $E/F$ 的一组有限 $p$-基 $a_1,\ldots,a_s$。
+若 $z\in K_0\setminus E$，则 $a_1,\ldots,a_s,z$ 在 $F$ 上 $p$-无关：
+前 $s$ 个元素的单项式给出 $E/F$ 的基，而 $z^p\in F$、$z\notin E$，所以 $[E(z):E]=p$。
+应用（21.8.2）于这一有限族与 $(k_\alpha)$，可取某个 $\alpha$，使它仍在 $k_\alpha$ 上 $p$-无关。
+因此 $z\notin k_\alpha(a_1,\ldots,a_s)=h_\alpha$，证明所需的交等式。
+
+现在可把（21.9.6，ii）及（22.7.3）的秩论证用于 $(h_\alpha)$，获得对某个 $h_\alpha$ 线性的导子。
+它们同时是 $k$-导子与原来的 $k_\alpha$-导子。
+这样既保留了原文任意给定子域族的范围，也没有把“不含 $k$ 的子域上的线性”误当作“$k$-线性”。
+特征零时 $F=K_0$，子域族只可能由 $K_0$ 组成，无须上述论证。
+
+\section*{底本识读与外部交叉核对}
+\addcontentsline{toc}{section}{底本识读与外部交叉核对}
+（22.6.4）中 a$'$）、d）的 $C_{\mathfrak p}$ 在扫描页可见；抽取文本漏下标不算原著错误。
+（22.7.7）的 $n=0$ 求和起点及非零常数项已经对照扫描原页，不是仅凭OCR推测。
+
+外部交叉核对只用于两条标准框架，没有替代法文底本：
+Stacks Project，Tag 00TH，命题10.138.8给出形式光滑代数的余切正合列分裂判据；
+Tag 045K，定义10.166.2与引理10.166.1将诺特代数的几何正则性写成有限纯不可分或有限生成扩域判据。
+可核对 \url{https://stacks.math.columbia.edu/tag/00TH} 与
+\url{https://stacks.math.columbia.edu/tag/045K}。
+本报告的四组具体反例、修订步骤和子域族证明是本轮分析，不冒称这些网页已经讨论过原书的这些错误。
+
+\section*{覆盖与检查边界}
+\addcontentsline{toc}{section}{覆盖与检查边界}
+17个原编号条目及相应陈述、证明、注全部连续收入；保留12个原编号公式／交换图标签。
+两幅交换图均用TikZ-cd重排。翻译终点为（22.7.7，ii）最后一段；§23标题以下未算作本轮译文。
+原文省略的推广细节仍说明省略，原著的历史性“尚不知道”没有被当作当前研究状态。
+
+实际编译、日志与渲染结果以工程包 \texttt{checks/} 中本轮生成的记录为准。
+源码能够编译、编号未丢失及两种构建输出一致，不构成全书全部证明的独立数学审定。
+
+% END reports/fifteenth_audit.tex
+
+\part*{历史核查记录：第十四版}
+\addcontentsline{toc}{part}{历史核查记录：第十四版}
+\NewNote{以下N14条目保留第十四版判断，不表示本轮已重新审定其全部内容。}
+
+% BEGIN reports/fourteenth_audit.tex
+\head{第十四版新核查：第0章22.4--22.5}
+\noindent\textbf{范围与结论。}
+本轮逐段对照用户上传的\texttt{EGAIV.1.pdf}第192--204页中属于22.4--22.5的内容，原分册印刷页码为193--205。
+连续译文从（22.4.1）开始，止于（22.5.10，ii）末尾；22.6及以后没有计为译完。
+本报告区分一组混合特征下的错误等价关系、一处证明中代表元素选择过宽，以及一个反例遗漏生成元的问题。
+另列引文、记号与一般性证明的补充。校订后的内容进入正文；原写法及理由位于相应脚注。
+本文所有独立反例与修补均为译者分析，不以“作者正式勘误”的名义列出。
+
+\section*{原文定位与正文处理表}
+\addcontentsline{toc}{section}{原文定位与正文处理表}
+\begin{longtable}{@{}p{.20\linewidth}p{.18\linewidth}p{.52\linewidth}@{}}
+\toprule 标识／条目&原书页／PDF页&处理及判定\\\midrule\endhead
+N14-E01／22.5.4&202／201&混合特征下原 a）与 b）不等价；补入 $p$ 的余切类条件并修正 c）的目标。\\
+N14-E02／22.5.6&203／202&证明应取结构同态给出的提升，不能取同一剩余类的任意提升；引理结论不变。\\
+N14-E03／22.5.10&204／203&原反例缺少生成元 $Z$；正文改为 $k(Z,X^{1/p}+ZY^{1/p})$，并核实不可分性和交域条件。\\
+N14-G01／22.5.2&202／201&有限维证明引用诺特结构定理；无限维范围另以有限滤过和基数估计补全。\\
+N14-T01--T04&195--203／194--202&中行来源、两处引文和商理想的平方记号校正。\\
+\bottomrule
+\end{longtable}
+
+\audit{N14-E01}{混合特征下必须保留素数的余切类}{原独立表述存在反例；正文给出修订后的等价关系}
+\oldauditsrc{第四卷第一部分，第0章（22.5.4），印刷第202页；扫描PDF第201页}
+原文假设 $A$ 为正则局部环，只规定剩余域特征为 $p>0$，允许 $A$ 为混合特征。
+对
+\[
+ B=A[T_1,\ldots,T_r]/(F_1,\ldots,F_r),\qquad
+ F_i=T_i^p+p\sum_{j=1}^{p-1}c_{ij}T_i^{p-j}-f_i,
+\]
+原文把“$B$ 正则”与“$d_Af_i\otimes1_K$ 线性无关”等同。
+其中 $\Omega^1_A$ 是绝对微分模，即 $\Omega^1_{A/\mathbb Z}$。
+
+\subsection*{1. 一个不能由记号解释消除的反例}
+任取素数 $p$，置
+\[
+ A=\mathbb Z_{(p)},\qquad\mathfrak m=pA,\qquad K=\mathbb F_p,
+ \qquad B=A[T]/(T^p-p).
+\]
+$A$ 是一维正则局部环。$T^p-p$ 首一，所以 $B$ 为秩 $p$ 的自由 $A$-模；结构同态 $A\to B$ 单射。
+$B$ 对 $A$ 有限，故其所有极大理想都收缩为 $pA$。而
+\[
+ B/pB\simeq\mathbb F_p[T]/(T^p)
+\]
+仅有一个极大理想，所以 $B$ 局部。
+以 $t$ 表示 $T$ 的类，则 $p=t^p$，故 $B$ 的极大理想为
+\[
+ \mathfrak n=(p,t)=(t).
+\]
+有限整扩张的维数相等给出 $\dim B=\dim A=1$。
+$\mathfrak n$ 由一个元素生成，其余切维数至多为1；一般的维数不等式又给出其至少为1。因此
+\[
+ \dim_{\mathbb F_p}\mathfrak n/\mathfrak n^2=1=\dim B,
+\]
+即 $B$ 为正则局部环。
+
+但 $A$ 是 $\mathbb Z$ 的局部化，$\Omega^1_{A/\mathbb Z}=0$。
+即使不使用这个较强事实，也有 $d_A(p)=0$，因为任何绝对导子都在整数上为零。
+因此原 b）中的单元素族为 $\{0\}$，不线性无关。原 a）成立而 b）不成立。
+
+\subsection*{2. 原证明丢失了什么}
+（22.4.8）实际比较的是
+\[
+ \dim_K\frac{\mathfrak m}{\mathfrak m^2+pA}
+ \quad\text{与}\quad
+ \dim_{K'}\frac{\mathfrak n}{\mathfrak n^2+pB},
+\]
+而（22.5.1）的正则性判据比较的是\emph{未模去 $p$}的余切维数。
+在上述反例中，
+\[
+ \begin{array}{c|cc}
+ &A&B\\\hline
+ \text{余切维数}&1&1\\
+ p\text{ 的余切类所张成的维数}&1&0\\
+ \text{模去 }p\text{ 后的余切维数}&0&1
+ \end{array}
+\]
+因为 $p\notin p^2A$，但 $p=t^p\in\mathfrak n^2$。所以不能把两个不同的维数判据直接替换。
+同时，在混合特征的一般情形，原 c）的典范特征同态自然取值于
+$\mathfrak m/(\mathfrak m^2+pA)$，不能在没有额外数据时改成值域 $\mathfrak m/\mathfrak m^2$。
+
+\subsection*{3. 本版正文采用的完整修订}
+保持原来关于 $A$、$F_i$、$B$ 的假设。置
+\[
+ \begin{aligned}
+ e_A&=\dim_K\mathfrak m/\mathfrak m^2,&
+ e_B&=\dim_{K'}\mathfrak n/\mathfrak n^2,\\
+ \epsilon_A&=\dim_K(pA+\mathfrak m^2)/\mathfrak m^2,&
+ \epsilon_B&=\dim_{K'}(pB+\mathfrak n^2)/\mathfrak n^2.
+ \end{aligned}
+\]
+两数 $\epsilon_A,\epsilon_B$ 属于 $\{0,1\}$。
+有限扩张及 $A$ 正则给出 $e_B\ge e_A$；$\mathfrak m^2B\subseteq\mathfrak n^2$ 给出 $\epsilon_B\le\epsilon_A$。
+模去 $\mathfrak m^2$ 和 $p$，得到
+\[
+ A_0=A/(\mathfrak m^2+pA),\qquad
+ B_0=B/(\mathfrak m^2B+pB).
+\]
+$A_0$ 是特征 $p$、极大理想平方为零的阿廷局部环，$B_0$ 的关系为 $T_i^p-\bar f_i$。
+（22.4.7）及（22.4.7.4）因此给出
+\[
+ \begin{gathered}
+ \{d_Af_i\otimes1_K\}_i\text{ 线性无关}\\
+ \Longleftrightarrow\quad\chi_{B_0/A_0}\text{ 单射}\\
+ \Longleftrightarrow\quad e_A-\epsilon_A=e_B-\epsilon_B.
+ \end{gathered}
+\]
+这里 $\Omega^1_A\otimes_AK\simeq\Omega^1_{A_0}\otimes_{A_0}K$，因为 $d(\mathfrak m^2)$ 张量 $K$ 后为零，$d(p)=0$。
+最后一个等式等价于
+\[
+ e_B-e_A=\epsilon_B-\epsilon_A.
+\]
+左端非负而右端非正，因此它当且仅当二者均为零。
+于是准确的结论是
+\[
+ \boxed{\text{b）}\ \Longleftrightarrow\ \text{c）}
+ \ \Longleftrightarrow\
+ [\,B\text{ 正则且 }\epsilon_A=\epsilon_B\,].}
+\]
+这就是正文的新 a）。当 $p\in\mathfrak m^2$，尤其 $pA=0$ 时，附加条件自动满足，恢复原来的等特征结论。
+此修订没有改动后续（22.5.7）和（22.5.8）的域上论证：它们的阿廷测试环本来就在特征 $p$ 中，并直接使用（22.4.7）。
+
+\audit{N14-E02}{微分依赖指定提升，不能只看剩余类}{证明步骤表述过宽；定理结论不变}
+\oldauditsrc{（22.5.6）的证明，印刷第203页；PDF第202页}
+原文以 $z\in A_1$ 的剩余类为 $x'^p\in k$，就把 $d_k(x'^p)$ 的典范像写成 $d_{A_1}z$。
+这个等式需要 $z$ 是\emph{结构同态给出的像}，而不是同一剩余类的任意代表。
+
+取
+\[
+ k=\mathbb F_p(s),\quad k'=k(s^{1/p}),\quad
+ A_1=k[\epsilon]/(\epsilon^2),\quad K=k.
+\]
+商的微分正合列给出
+\[
+ \Omega^1_{A_1}\otimes_{A_1}K
+ \simeq\Omega^1_k\oplus K\,d\epsilon
+ \simeq K\,ds\oplus K\,d\epsilon.
+\]
+即使 $p=2$，这个张量后的式子也成立：关系 $d(\epsilon^2)=2\epsilon d\epsilon$ 在张量 $K$ 后为零。
+因此 $s$ 与 $s+\epsilon$ 虽有相同剩余类，仍有
+\[
+ d(s+\epsilon)\otimes1=ds\otimes1+d\epsilon\otimes1\ne ds\otimes1.
+\]
+将正文中的 $z$ 固定为 $u_1(x'^p)$，其中 $u_1:k\to A_1$ 为结构同态，
+自然性立即给出
+\[
+ d_k(x'^p)\otimes1\longmapsto d_{A_1}(u_1(x'^p))\otimes1.
+\]
+由此得到的核交空间以及特征同态限制，与原引理所要求的对象一致；不需要改变引理陈述。
+
+\audit{N14-E03}{单生成扩域测试的反例漏掉一个生成元}{原例按字面不能成立；补入生成元并验证所需性质}
+\oldauditsrc{（22.5.10，i），印刷第204页；PDF第203页}
+原例取完美域 $k_0$、独立不定元 $X,Y,Z$，令 $k=k_0(X,Y)$，却将 $K$ 印作
+\[
+ K_{\text{原}}=k(X^{1/p}+ZY^{1/p}).
+\]
+令 $W=X^{1/p}+ZY^{1/p}$。
+$W$ 在 $k$ 上超越：否则它也在代数扩张 $k(X^{1/p},Y^{1/p})$ 上代数，
+而 $Z=(W-X^{1/p})/Y^{1/p}$ 将随之代数，矛盾。
+因此 $K_{\text{原}}=k(W)$ 是一元纯超越扩张，在 $k$ 上可分，不能满足原文要求的 $\Upsilon_{K/k}\ne0$。
+
+\subsection*{1. 修订的域与不可分性}
+取
+\[
+ K=k(Z,W),\qquad W^p=X+Z^pY.
+\]
+$X+Z^pY$ 在 $k(Z)$ 中不是 $p$ 次幂：对 $X$ 求导，其导数为1，而 $p$ 次幂的导数恒为零。
+所以 $K/k(Z)$ 的次数为 $p$，$\operatorname{trdeg}_kK=1$。
+在 $\Omega^1_K$ 中有
+\[
+ d_KX+Z^p d_KY=0.
+\]
+另一方面，$\Omega^1_k$ 以 $d_kX,d_kY$ 为基（$k_0$ 完美，所以其绝对微分模为零）。
+故
+\[
+ 0\ne d_kX\otimes1+Z^p d_kY\otimes1\in\Upsilon_{K/k},
+\]
+$K/k$ 不可分。
+此外，将 $K$ 写为 $k[Z,W]/(W^p-X-Z^pY)$ 的分式域，关系的相对 $k$-微分为零，
+所以 $\Omega^1_{K/k}$ 以 $dZ,dW$ 为 $K$-基。
+Cartier等式（21.7.1）遂给出 $\dim_K\Upsilon_{K/k}=2-1=1$。
+
+\subsection*{2. 证明交域条件}
+置 $U=Z^p$。由于 $k_0$ 完美，
+\[
+ K^p=k_0(X^p,Y^p,U,X+UY)\subset F=k_0(X,Y,U).
+\]
+定义 $F$ 上的 $k_0$-导子
+\[
+ D=\partial_Y-U\partial_X.
+\]
+它在 $X^p,Y^p,U,X+UY$ 上均为零，因而在整个 $K^p$ 上为零。
+若 $a\in k\cap K^p$，则 $\partial_Ya-U\partial_Xa=0$。
+$U$ 在 $k$ 上超越，而两个偏导数都属于 $k$，所以二者均为零。
+用 $k$ 在 $k^p=k_0(X^p,Y^p)$ 上的基
+\[
+ \{X^iY^j:0\le i,j<p\}
+\]
+展开 $a$；两个偏导数均为零迫使所有 $(i,j)\ne(0,0)$ 的系数为零。
+因此 $a\in k^p$，得到
+\[
+ \boxed{K^p\cap k=k^p.}
+\]
+
+\subsection*{3. 反例确实作用于定理的测试范围}
+当 $k'=k(x)\subset k^{1/p}$ 且 $x\notin k$，子空间
+$\Theta_{k'/k}\otimes_kK$ 为由 $d_k(x^p)\otimes1$ 张成的一条直线。
+因为 $x^p\notin k^p=K^p\cap k$，$d_K(x^p)\ne0$，所以这条直线与 $\Upsilon_{K/k}$ 的交为零。
+但 $\Upsilon_{K/k}$ 自身是一维且非零；它的生成元包含 $K$ 中的系数 $Z^p$，并不来自某个这样的单元素测试直线。
+
+按（22.2.5.2），取 $V=K$ 与零映射 $h:\Upsilon_{K/k}\to K$，得到完备离散赋值环 $A$，其剩余域为 $K$，且 $\chi_{A/k}=0$。
+由（22.2.2），$A$ 不形式光滑；而（22.5.7）保证每个上述单生成 $k'$ 都使 $A\otimes_kk'$ 正则。
+这完成原例所需的逻辑链。补入 $Z$ 是修订，不把这个公式冒称为原文原样。
+
+\audit{N14-G01}{无限维时不能直接调用诺特局部结构定理}{补全证明的一般性；不反驳不等式结论}
+\oldauditsrc{（22.5.2，iii），印刷第202页；PDF第201页}
+（22.4.1）允许 $V=\mathfrak m$ 为无限维 $K$-向量空间。此时 $A$ 并非诺特环，
+不能直接由（19.8.10）获得正则诺特局部环 $R$ 使 $A=R/\mathfrak n^2$。
+正文先在阿廷情形沿原证明处理，再对无限维情形补证。
+
+$A'$ 为有限自由 $A$-代数。$A'/\mathfrak mA'$ 为有限维局部 $K$-代数，
+故其极大理想幂零。选 $s$ 使 $\mathfrak m'^s\subseteq\mathfrak mA'$，则
+$\mathfrak m'^{2s}=0$。
+记 $W=\mathfrak m'/\mathfrak m'^2$，$\kappa=\dim_{K'}W$；$K'/K$ 有限。
+由乘法存在满射
+\[
+ \operatorname{Sym}_{K'}^iW\twoheadrightarrow\mathfrak m'^i/\mathfrak m'^{i+1}.
+\]
+又因 $A\hookrightarrow A'$，$V$ 有长度至多 $2s$ 的滤过
+\[
+ V\supseteq V\cap\mathfrak m'\supseteq V\cap\mathfrak m'^2\supseteq\cdots\supseteq0.
+\]
+每个商都以 $K$-线性方式嵌入相应的 $\mathfrak m'^i/\mathfrak m'^{i+1}$。
+若 $\kappa$ 有限，所有这些商均有限维，故 $V$ 有限维，回到已证情形。
+若 $\kappa$ 为无限基数，任意固定有限次对称幂的维数不超过 $\kappa$；
+有限扩域乘上有限度数、以及有限个滤过商求和，也都不增大这个上界。
+因此 $\dim_KV\le\kappa$，即（22.5.2.2）。
+
+\section*{引文、记号及独立交叉核对}
+\addcontentsline{toc}{section}{引文、记号及独立交叉核对}
+N14-T01将（22.4.4.6）中行来源改为环塔 $\mathbb Z\to A\to A'$，并明确左端为重新取核；
+不能因图中正合而宣称任意张量保持左正合。
+N14-T02、N14-T03分别将对应的基结论和域的形式光滑性引向实际支持它们的条目。
+N14-T04把 $A'_1=A'/\mathfrak m^2A'$ 的极大理想正确写为 $\mathfrak m'/\mathfrak m^2A'$。
+这些均已对照扫描页，不仅依据抽取文本。
+
+作为\emph{外部交叉核对}，Stacks Project的
+\href{https://stacks.math.columbia.edu/tag/07EL}{Tag 07EL（几何正则性与形式光滑性）}
+也给出了诺特局部域上代数的对应等价条件，包括对极大理想进制拓扑的形式光滑性、几何正则性，以及所有有限子扩张 $k'\subset k^{1/p}$ 上的正则性。
+本轮据此核对（22.5.8）的适用范围，但没有以现代证明替换法文原证明，也没有据此声称所有旧条目均已审定。
+
+\section*{本轮边界与检查说明}
+\addcontentsline{toc}{section}{本轮边界与检查说明}
+本轮只对22.4--22.5实施连续译校。22.6--22.7、§23、第IV章主体以及预备笔记余文仍未完成。
+历史报告原样保留，各旧待核事项不因本轮更新而自动转为已解决。
+正文条目和公式覆盖、独立单文件构建、渲染抽查的实际结果分别记录在工程包的
+\texttt{checks/CHECKS.md}与\texttt{PROGRESS.md}中；技术检查不等于独立出版级数学审校。
+
+% END reports/fourteenth_audit.tex
+
+\part*{历史核查记录：第十三版}
+\addcontentsline{toc}{part}{历史核查记录：第十三版}
+\NewNote{以下M13条目保留第十三版判断，不表示本轮已重新审定其全部内容。}
+
+% BEGIN reports/thirteenth_audit.tex
+\head{第十三版新核查：第0章22.1--22.3}
+\source{EGA IV第一部分，分册印刷第182--193页的相关部分／上传PDF第181--192页；作者正式勘误见第四卷第四部分原分册第345--348页的相关条目}
+本轮从用户已收到的第十二版工程接续。将该工程的各个输入文件展开后，所得源码与已交付第十二版单文件逐字相同；其真实接续点为§22章首及（22.1.1）。本轮连续译入22.1--22.3，止于（22.3.4）及证明。22.4开始的内容虽已用于辨认下一接续位置，但不计入本版译文。
+
+新增正文采取校订表述，原文差异、修改理由与出处放在脚注；本报告给出必要的反例、补证和适用范围核查。编号M13为本轮追踪编号。作者正式修订、译者对独立陈述的范围修正、上下文澄清及补充证明分别列出，不能按脚注数统计“错误定理”。历史报告保持原文，未因本轮合订而重新获得数学审定。
+
+\section*{核查索引}
+\addcontentsline{toc}{section}{核查索引}
+\begin{longtable}{@{}p{.17\linewidth}p{.19\linewidth}p{.55\linewidth}@{}}
+\toprule 标识&原条目&本轮处理\\ \midrule\endhead
+M13-E01&22.2.6&分类唯一性限于完备环。给出非完备情形的反例；保留原文前后语境的说明。\\
+M13-N03、N05&22.2.3、22.2.8&“替换条件（ii）”仍须保留（i）；给出脱离（i）时的检验例。这是作用域澄清。\\
+M13-G03&22.1.4&展开阿廷纤维积与平方零核的递归提升，不借用有问题的旧引理表述。\\
+M13-A01&22.1.1&依作者正式勘误改引20.6.10。\\
+M13-A02&22.2.7&依作者正式勘误补明预进制拓扑。\\
+M13-A03&22.3.3&依作者正式勘误将 $\widehat B_{\mathfrak p}$ 改为 $\widehat B_{\mathfrak q}$。\\
+M13-T01&22.2.10&明确“$k$-扩张、相对于 $k_0$ 平凡”与“$k_0$-扩张”的差别。\\
+其余M13-G、N项&相应脚注&展开线性对偶、标量结构、同构类唯一性、局部化幂次条件及非循环依赖；不当作反例数量。\\
+\bottomrule
+\end{longtable}
+
+\audit{M13-E01}{分类定理须限定为完备局部代数}{原独立陈述缺少完备性；前文语境已指明完备情形}
+\oldauditsrc{$0_{\mathrm{IV}}$（22.2.6），原分册第188页，并接第189页首句}
+原定理先要求 $A$ 为“局部诺特 $k$-代数”，没有在该句中写“完备”，随后断言它由维数决定，允许的同构须在剩余域上诱导恒等。但前文（22.2.4）开头明确讨论诺特完备局部代数，（22.2.5）也只分类这样的对象。因此不能把省去“完备”的单独陈述照字面推广到所有局部诺特环。
+
+\lead{反例。}
+取有限域 $k=\mathbf F_p$，令
+\[
+ A_1=k[t]_{(t)},\qquad A_2=k[[t]],\qquad K=k.
+\]
+二者都是一维正则诺特局部环，极大理想由 $t$ 生成，剩余域都是 $k$。而且
+\[
+ \Upsilon_{K/k}=0,
+\]
+所以原陈述的非完美性模有限性条件也成立。
+
+逐项核对其形式光滑性如下。对任意离散 $k$-代数 $R$、平方零理想 $I$ 和连续 $k$-同态 $A_i\to R/I$，$t$ 的像 $\bar b$ 为幂零元：连续性使某个 $(t)^N$ 落入核。任选提升 $b\in R$，则 $b^N\in I$，所以 $b^{2N}=0$。
+
+对于 $A_1$，以 $t\mapsto b$ 定义多项式环同态。凡分母 $g(t)$ 满足 $g(0)\ne0$，其值 $g(b)$ 为非零常数加幂零元，因而可逆，所以同态延拓到 $k[t]_{(t)}$。它在 $(t)^{2N}$ 上为零，故连续，并提升原同态。
+
+对于 $A_2$，用有限和
+\[
+ \sum_{r\ge0}a_rt^r\longmapsto\sum_{r=0}^{2N-1}a_rb^r
+\]
+定义所需同态；由于 $b^{2N}=0$，乘法相容且连续，模 $I$ 后为原映射。因此二者均对各自预进制拓扑形式光滑。
+
+然而 $A_1$ 可数：多项式集合可数，分式可由两个多项式编码。$A_2$ 不可数：二元序列 $(a_r)_{r\ge0}$ 通过 $\sum a_rt^r$ 单射到它，序列集合由Cantor对角论证不可数。故 $A_1$ 与 $A_2$ 甚至不可能存在集合双射，更不可能有环同构。
+
+\lead{校订后的范围。}
+本版将（22.2.6）写在\emph{诺特完备局部} $k$-代数类中，沿用其原证明。若仍允许非完备 $A$，存在性判据本身不变，但分类唯一性应针对 $\widehat A$：由形式光滑性与完备化的相容性，$\widehat A$ 落入（22.2.5）的范围，而不同的原局部环可以有同一完备化。
+
+本例不反驳（22.2.5），也不是声称原作者意图分类非完备环。它说明在供独立引用的正文命题中，必须把上下文的完备性限定写出。
+
+\audit{M13-N03}{替换条件时不能丢掉原定理的另一个条件}{作用域提醒；不把正确上下文误判为错误}
+\oldauditsrc{（22.2.3），第186页；（22.2.8），第189--190页}
+原定理（22.2.2）的形式是
+\[
+ A/k\text{形式光滑}
+ \quad\Longleftrightarrow\quad
+ \bigl[(\mathrm i)\ \text{相伴分次对称代数同构}\bigr]
+ \ \land\
+ \bigl[(\mathrm {ii})\ \chi_{A/k}\text{单射}\bigr].
+\]
+随后的“条件（ii）可以替换为……”是在保留（i）的前提下说的。原证明也写明a)与（i）的合取等价于d)与（i）的合取。它并未证明脱离（i）后a)、b)、c)、d)仍全部等价。
+
+\lead{一个能区分两种读法的实例。}
+令
+\[
+ k=\mathbf F_2(s),\qquad
+ A=k[x,y]/(x^2-sy^2,\ y^3),\qquad
+ \mathfrak m=(x,y).
+\]
+由于 $x^4=s^2y^4=0$ 且 $y^3=0$，$\mathfrak m$ 是唯一素理想，$A$ 为阿廷局部环，剩余域为 $k$。把它写成
+\[
+ A=\bigl(k[y]/(y^3)\bigr)[x]/(x^2-sy^2)
+\]
+可见 $A$ 在 $k[y]/(y^3)$ 上自由，基为 $1,x$，因此
+\[
+ 1,y,y^2,x,xy,xy^2
+\]
+为 $k$-基，特别是 $y^2\ne0$。又有 $\mathfrak m^4=0$。
+
+因为 $K=A/\mathfrak m=k$，$\Upsilon_{K/k}=0$，所以（22.2.2，ii）自动成立。条件a)也成立：增广 $A\to k$ 在模掉 $\mathfrak m$ 后给 $\Omega^1_k\to\Omega^1_A\otimes_A k$ 一个左逆。
+
+可是 $\Omega^1_k=k\,ds$，对关系 $x^2-sy^2=0$ 作绝对微分，在特征2中得到
+\[
+ y^2\,ds=0\quad\text{于 }\Omega^1_A.
+\]
+而 $y^2ds\ne0$ 于 $\Omega^1_k\otimes_k A=A\,ds$。故
+\[
+ \Omega^1_k\otimes_k A\longrightarrow\Omega^1_A
+\]
+不单射，尤其不可能有左逆。取 $n=3$ 时 $A/\mathfrak m^{n+1}=A$，所以（22.2.3，b）失败，c)也失败。
+
+这里（i）确实不成立：$\mathfrak m/\mathfrak m^2$ 为二维，而对称代数有任意高次非零部分，$\gr_{\mathfrak m}(A)$ 却在次数至少4时为零。由此可见，问题在于删掉（i）后的误读，而不是原定理结论错误。
+
+\lead{本版处理。}
+（22.2.3）和（22.2.8）都直接写明“在保留条件（i）时”。上述检验例仅收入报告；脚注告知它的作用，不用它推翻原文在正确作用域内的陈述。
+
+\audit{M13-G03}{阿廷测试环如何给出相容的逐级提升}{补足原证明的构造；结论不变}
+\oldauditsrc{（22.1.4），第185--186页}
+原证明已将问题化为：两个完备诺特局部 $A$-代数 $B,B'$，已给定闭纤维同构 $v_0:B/\mathfrak mB\to B'/\mathfrak mB'$；须构造同时与上一阶映射及该闭纤维同构相容的映射
+\[
+ v_j:B/\mathfrak n^{j+1}\longrightarrow B'/\mathfrak n'^{\,j+1}.
+\]
+若只分别选取各阶提升，不能保证相容，因而不能直接取逆极限。
+
+固定 $j\ge1$，令 $R_j=B'/\mathfrak n'^{\,j+1}$。原证明所需的两个商分别由 $B'$ 的理想
+\[
+ I_j=\mathfrak n'^{\,j},\qquad
+ J_j=\mathfrak n'^{\,j+1}+\mathfrak mB'
+\]
+给出。将上一阶数据和闭纤维数据合成同态到
+\[
+ Q_j=(B'/I_j)\mathop{\times}_{B'/(I_j+J_j)}(B'/J_j).
+\]
+环同态 $B'\to Q_j$ 满射：给定 $(a\bmod I_j,b\bmod J_j)$，有 $a-b=i+j'$，其中 $i\in I_j$、$j'\in J_j$；于是 $a-i=b+j'$ 同时给出两个分量。其核为 $I_j\cap J_j$。所以 $R_j\to Q_j$ 满射，核为
+\[
+ N_j=(I_j\cap J_j)/\mathfrak n'^{\,j+1}.
+\]
+因 $N_j\subseteq\mathfrak n'^{\,j}/\mathfrak n'^{\,j+1}$，且 $2j\ge j+1$，有 $N_j^2=0$。
+
+$Q_j$ 是阿廷局部环，剩余域仍为 $K$；假设中的提升性质因而适用于 $B\to Q_j$ 和 $R_j\to Q_j$。得到的局部同态 $B\to R_j$ 杀掉 $\mathfrak n^{j+1}$，故诱导 $v_j$，并同时满足两项要求。取逆极限得到 $v:B\to B'$。
+
+$B'$ 对 $A$ 平坦，$v$ 模去 $\mathfrak m$ 为同构。再核对（19.7.1.4）所需的分离完备性：$\mathfrak mB\subseteq\mathfrak n$，所以 $\mathfrak m$-进制柯西列也是 $\mathfrak n$-进制柯西列；$B$ 的 $\mathfrak n$-进制完备性给出极限，而每个 $\mathfrak m^rB$ 闭，保证该极限具有所需的 $\mathfrak m^r$ 同余。分离性由 $\bigcap_r\mathfrak n^r=0$ 给出。相同论证适用于 $B'$。因此可用该引理断定 $v$ 为同构。
+
+这个构造只使用本命题的阿廷提升假设与（19.3.10.2）的纤维积事实，没有调用（19.3.10.1）未经修订的过弱条件，也不需要处理旧报告H8-P01的更一般拓扑范围。
+
+\audit{M13-T01}{特征同态所对应的结构域}{用定义域消除证明末句的结构混淆}
+\oldauditsrc{（22.2.10），第190页末句}
+这里的对象具有两层结构：它是 $k$-扩张，但在忘掉部分结构后作为 $k_0$-扩张平凡。因此相对特征同态的定义域为 $\Upsilon_{K/k/k_0}$。它可能非零，并不等于以 $\Upsilon_{K/k_0}$ 为定义域的绝对特征同态；后者因 $k_0$-平凡而为零。
+
+例如取 $k_0=\mathbf F_p$、$k=\mathbf F_p(s)$、$K=\mathbf F_p(a)$，规定 $s=a^p$。在环 $E=K[\epsilon]/(\epsilon^2)$ 上赋予 $k$-代数结构
+\[
+ s\longmapsto a^p+\epsilon.
+\]
+这定义了域 $k$ 的同态，因为任何非零有理函数的分母模 $\epsilon$ 后都非零，因而在 $E$ 中可逆。该扩张在 $k_0$ 上由 $K\hookrightarrow E$ 分裂；但它的相对特征同态把 $ds\otimes1$ 映为 $\epsilon$，并不为零。正文末句改为“$k_0$-平凡 $k$-扩张的特征同态”，与该条陈述、定义域及自然性完全一致。
+
+\audit{M13-A01--A03}{本轮落实的作者正式勘误}{三项已有作者修订，不作为新发现}
+\oldauditsrc{第四卷第四部分，《勘误与增补（清单三）》A部第345--346页及B部第15项（第348页）}
+\begin{enumerate}[label=\arabic*.,leftmargin=2.5em]
+\item （22.1.1）第183页倒数第12行，将（20.6.20）改为（20.6.10）。这里讨论扩张的特征同态，不是域扩张微分模的消失。
+\item （22.2.7）第189页第5行，把“形式光滑”改为“对预进制拓扑形式光滑”。离散拓扑与预进制拓扑下的提升问题不能混用。
+\item （22.3.3）第192页倒数第13行，把误排的 $\widehat B_{\mathfrak p}$ 改为 $\widehat B_{\mathfrak q}$。这里改的是所论局部环的下标，原有基环 $B_{\mathfrak r}$ 不变。正确结构同态是
+\[
+ B_{\mathfrak r}\longrightarrow\widehat B_{\mathfrak q},
+ \qquad\mathfrak r=\mathfrak q\cap B.
+\]
+\end{enumerate}
+这些修改已经写入正文，原写法与勘误出处放入脚注，书末还补入相应的正式勘误译文。没有把只读取过的整份勘误清单算作全部译完。
+
+\audit{M13-G07--G08}{局部化、完备化与证明依赖}{核对附加条件和非循环证明顺序}
+\oldauditsrc{（22.3.1）--（22.3.4），第191--193页}
+（22.3.1）只给\emph{相对}形式光滑性；（22.3.2）用正则性及子域族条件将其提升为所需的形式光滑性。对于正特征的局部化，幂次条件
+\[
+ A^{p^{h(\alpha)}}\subseteq A_\alpha
+\]
+不可在叙述中遗漏。设 $\mathfrak s_\alpha=\mathfrak s\cap A_\alpha$，则对 $t\notin\mathfrak s$，令 $q=p^{h(\alpha)}$，有
+\[
+ t^q\in A_\alpha\setminus\mathfrak s_\alpha,
+ \qquad t^{-1}=\frac{t^{q-1}}{t^q}.
+\]
+因此 $A_{\mathfrak s}=(A_\alpha\setminus\mathfrak s_\alpha)^{-1}A$，有限性和幂次条件都可传递，分式域不变。这才完成原证明中的局部化归约。
+
+（22.3.3）把结论归结到闭纤维，再调用紧随其后的（22.3.4）。后一条并不反过来使用（22.3.3），而是利用Cohen结构定理把完备局部整环表示为正则幂级数子环的有限代数，然后直接应用（22.3.2）。因此证明依赖为
+\[
+ \text{Cohen结构及（21.8.8）}
+ \ \to\ (22.3.2)\ \to\ (22.3.4)\ \to\ (22.3.3),
+\]
+其中（22.3.2）还使用（22.3.1）及22.2判据。此处“推论”在编号上后置，不构成逻辑循环。
+
+\section*{核查边界与接续位置}
+\addcontentsline{toc}{section}{核查边界与接续位置}
+本轮连续完成§22章首及22.1--22.3，包含20个原著编号条目（含22.2.5.2）。下一条为22.4章首及（22.4.1），位于上传PDF第192页、原分册印刷第193页。第0章22.4--22.7、§23、第IV章主体及第V卷预备笔记余文均未计作完成。
+
+本报告没有宣称对已有全部译文重新逐句审定；H8-P01等历史待核事项继续保留。程序检验与版面检查只能确认其实际检查项目，不能替代独立数学审定。具体输出页数、编译与渲染结果以本次生成的\texttt{checks/CHECKS.md}为准。
+
+% END reports/thirteenth_audit.tex
+
+\part*{历史核查记录：第十二版}
+\addcontentsline{toc}{part}{历史核查记录：第十二版}
+\NewNote{以下L12条目保留第十二版核查意见，不表示本轮重新审定其全部内容。}
+
+% BEGIN reports/twelfth_audit.tex
+\head{第十二版新核查：第0章21.5--21.9}
+\source{EGA IV第一部分，分册印刷第164--182页的相关部分／上传PDF第163--181页；正式勘误见第四卷第四部分PDF第344页}
+本轮从可恢复的第十一版工程接续。展开该工程所得单文件源码与用户已收到的第十一版源码逐字一致，
+其连续终点为（21.4.8）。本轮新增21.5--21.9的全部正文，止于（21.9.8）及其证明；
+第0章§21至此连续译完。§22章首仅用于确认接续位置，未计入本轮译文。
+
+新增正文保留原著的组织、编号、证明路线与记号。在能够给出明确论证的地方，
+校正后的表述写入正文，原文差异放在带L12标识的脚注。
+原作者的正式勘误、译者发现的原断言反例、证明步骤补足及边界提醒分别列出。
+\textbf{下面各项性质不同，不能把脚注数或表格行数当作错误定理的数量。}
+
+\section*{范围与分类}
+\addcontentsline{toc}{section}{范围与分类}
+\begin{longtable}{@{}p{.17\linewidth}p{.20\linewidth}p{.54\linewidth}@{}}
+\toprule 标识&位置&性质及处理\\\midrule\endhead
+L12-E01&21.5.2，c)&原条件有反例；补入一次分次映射非零，给出完整修订论证。\\
+L12-E02&21.5.3，ii&原导子扰动未必乘法相容；改用平方零商。唯一性判据不变。\\
+L12-A01&21.7.1&落实作者的正式引文勘误。\\
+L12-T01--T08&相应脚注&分别核对内部引文、标量与基域记号、两处明确的符号误植，以及作者的语法性勘误。\\
+L12-G01--G14中的实际列项&相应脚注&展开原文使用的提升、滤过、有限性、自然性与反例计算；没有补造原著未写的章节。\\
+L12-N01--N08&相应脚注&区分边界条件、有限秩前提、完备与普通微分模、分式域与迭代Laurent域、系数域选择。\\
+\bottomrule
+\end{longtable}
+脚注标识为稳定的追踪标识，不要求每个字母序列连续。
+旧版H8-P01等问题没有因本轮译校而自动解决；全部历史报告原样保留并另标历史范围。
+
+\audit{L12-E01}{MacLane判据的条件c)缺少一次非退化性}{原文按字面假设不成立；补条件后原等价框架可保留}
+\oldauditsrc{$0_{\mathrm{IV}}$（21.5.2），印刷第164--166页，尤其第165页的条件c)}
+设 $A,B$ 为完备离散赋值环，极大理想为 $\mathfrak m,\mathfrak n$，
+$u:A\to B$ 满足 $Bu(\mathfrak m)=\mathfrak n$。
+记 $K=A/\mathfrak m$、$L=B/\mathfrak n$，以及
+$u_1:A/\mathfrak m^2\to B/\mathfrak n^2$。
+原条件c)只要求另一同态 $u'_1$ 为局部同态且
+$\gr_0(u'_1)=\gr_0(u_1)$，随后要求存在自同构 $w_1$，使
+$\gr_0(w_1)=\id_L$、$u'_1=w_1u_1$。
+
+\lead{反例。}
+取任意域 $k$，置
+\[
+ A=B=k[[t]],\qquad u=\id,
+ \qquad A/\mathfrak m^2=B/\mathfrak n^2=k[t]/(t^2).
+\]
+在该商环上定义
+\[
+ u'_1(a+bt)=a\qquad(a,b\in k).
+\]
+这确实是保单位的环同态；其逆像极大理想为 $(t)$，故是局部同态，
+在剩余域 $k$ 上是恒等映射。可是 $u'_1(t)=0$，所以不是单射，更不是自同构。
+若有 $u'_1=w_1u_1$，因 $u_1=\id$，就必须 $w_1=u'_1$，矛盾。
+与此同时，原条件a)“$L/K$可分”在这里显然成立，因为 $L=K=k$。
+因此原文的 $\mathrm a)\Rightarrow\mathrm c)$ 确实失效。
+
+\lead{校订后的条件。}
+在c)中补入
+\[
+ \gr_1(u'_1)\ne0.
+\]
+这是必要的：$u_1$ 把均匀化参数的类映成非零类，
+而自同构在 $\mathfrak n/\mathfrak n^2$ 上必须诱导同构。
+它也恰好补足原证明的需要。若 $L/K$ 可分，$B$ 是Cohen $A$-代数，
+Cohen提升给出 $h:B\to B/\mathfrak n^2$，使 $h\circ u=u'_1\circ q$，
+其中 $q:A\to A/\mathfrak m^2$ 为商映射，且 $h$ 在剩余域上为恒等。
+$h$ 是局部同态，故 $h(\mathfrak n^2)=0$，从而诱导 $w_1:B/\mathfrak n^2\to B/\mathfrak n^2$。
+
+因为 $\gr_0(w_1)=\id_L$，$\gr_1(w_1)$ 是一维 $L$-向量空间
+$\mathfrak n/\mathfrak n^2$ 的线性自映射。
+选择 $A$ 的均匀化参数 $\pi$，由 $u'_1(\bar\pi)\ne0$ 得
+$\gr_1(w_1)\ne0$，因此它是同构。
+$w_1$ 在有限滤过的零次与一次均为同构，于是自身为同构。
+这证明a)推出校订后的c)。
+
+原c')要求 $\gr_1(u'_1)=\gr_1(u_1)$，故自动满足新增的非零条件。
+原证明中c')推出a)的导子延拓论证不受影响：对任意导子 $D:K\to L$，
+将其看成 $A/\mathfrak m^2\to\mathfrak n/\mathfrak n^2$ 的导子，形成 $u'_1=u_1+D$。
+满足c')的自同构差 $w_1-\id$ 在 $\mathfrak n/\mathfrak n^2$ 上为零，
+因而下降为 $L\to L$ 的导子，且延拓 $D$。
+（20.6.3）遂给出 $L/K$ 可分。
+因此正文保留
+\[
+ \mathrm c)\Longleftrightarrow\mathrm c')\Longleftrightarrow\mathrm a)
+ \Longrightarrow\mathrm b)\Longrightarrow\mathrm b').
+\]
+若 $A$ 为Cohen环，b')推出c')仍由（19.8.6，i）提升给定 $u'_1$ 得到。
+在混合特征的非域Cohen环情形，均匀化参数可取整数 $p$；保单位同态必须保持 $p$，
+所以此时非零的一次映射往往已经由具体结构保证。
+但原命题先处理一般完备离散赋值环，不能因此省去一般条件c)的限定。
+
+\lead{本项的界限。}
+这不是对MacLane可分性理论的否定，也不是作者已发表勘误的转述。
+它是对这一印刷表述的具体反例和最小非退化条件修订。
+正文同时将证明中误引的（20.6.5）改为实际使用的（20.6.3），记为L12-T01。
+
+\audit{L12-E02}{Cohen提升唯一性证明中的平方零商}{原中间步骤缺少必要条件；正文用另一商补证，结论不变}
+\oldauditsrc{$0_{\mathrm{IV}}$（21.5.3，ii），印刷第166页}
+原文设 $W$ 为Cohen环，$C$ 为完备诺特局部环，$0\ne\mathfrak J$ 包含于 $C$ 的极大理想；
+在固定 $W\to C/\mathfrak J$ 的局部同态后讨论提升的唯一性。
+当 $\Omega^1_K\ne0$（$K=W/\mathfrak m$）时，原证明取
+$D:K\to\mathfrak J/\mathfrak m\mathfrak J$ 非零，
+并直接在 $C/\mathfrak m\mathfrak J$ 中用 $u_1+D'$ 扰动提升。
+
+对于环同态 $u$ 与导子 $D'$，乘法差为
+\[
+ (u(x)+D'(x))(u(y)+D'(y))-(u(xy)+D'(xy))=D'(x)D'(y).
+\]
+因此，导子加法自动给出环同态，需要导子的值域理想平方为零。
+原假设没有给出 $\mathfrak J^2\subseteq\mathfrak m\mathfrak J$。
+
+\lead{原步骤失败的具体例子。}
+取特征零的Cohen域 $W=\mathbf Q(t)$，$C=W[[x]]$，$\mathfrak J=(x)$，
+$u:W\hookrightarrow C$ 为常数嵌入。此时 $\mathfrak m=0$。
+导子 $D'(a)=x\,\partial a/\partial t$ 的值属于 $\mathfrak J$。
+令 $v_1=u+D'$，则
+\[
+ v_1(t^2)=t^2+2tx,
+ \qquad v_1(t)^2=(t+x)^2=t^2+2tx+x^2.
+\]
+因为 $x^2\ne0$，$v_1$ 不是环同态。
+这个例子针对原证明的扰动步骤，不反驳所要证明的唯一性判据。
+
+\lead{修补。}
+固定一个已有局部提升 $u:W\to C$，以 $\mathfrak r$ 记 $C$ 的极大理想。
+设
+\[
+ I=\mathfrak m\mathfrak J+\mathfrak J^2,
+ \qquad Q=\mathfrak J/I.
+\]
+这里 $\mathfrak m\mathfrak J$ 使用 $u$ 所定义的 $W$-作用。
+则 $Q$ 是 $C/I$ 中的平方零理想，且被 $\mathfrak m$ 零化，因而为 $K$-向量空间。
+$u$ 局部且 $\mathfrak J\subseteq\mathfrak r$，所以
+$I\subseteq\mathfrak r\mathfrak J$。
+由于 $C$ 诺特，$\mathfrak J$ 为有限型 $C$-模；若 $Q=0$，则
+$\mathfrak J=I\subseteq\mathfrak r\mathfrak J$，由Nakayama引理得 $\mathfrak J=0$，矛盾。
+故 $Q\ne0$。
+
+由 $\Omega^1_K\ne0$，存在非零 $K$-线性映射 $\Omega^1_K\to Q$，
+即非零导子 $D:K\to Q$。与 $W\to K$ 复合得到 $D':W\to Q$。
+在 $C/I$ 中令 $v_1=u_1+D'$。因为 $Q^2=0$，上述乘法差为零，
+所以 $v_1$ 确为环同态。它与 $u_1$ 在 $C/\mathfrak J$ 中相同、在剩余域上相同，
+故仍是局部同态；又 $D'\ne0$，所以 $v_1\ne u_1$。
+$C$ 为完备诺特局部环，$I$ 包含于其极大理想，故（19.8.6，i）将 $v_1$ 提升到 $v:W\to C$。
+$v$ 是原给定映射的另一提升，且 $v\ne u$。这完成了必要性方向的修补。
+
+反方向也须区分普通微分模与完备微分模。若 $\Omega^1_K=0$，在混合特征情形
+$\mathfrak m=pW$，关系 $d(p)=0$ 与微分正合列给出
+$\Omega^1_W=\mathfrak m\Omega^1_W$。
+由此得到的是所有 $\mathfrak m$-进制商均为零，故
+$\widehat\Omega^1_W=0$；不能对未证明有限型的 $\Omega^1_W$ 直接使用Nakayama引理。
+形式非分歧遂给出各级提升的唯一性，完备分离性给出 $C$ 中的唯一性。
+
+\audit{L12-G04}{“上同调相同”与“诱导同态为同构”}{补足原证明使用的自然性，不改变缺陷加法性}
+\oldauditsrc{（21.6.4），印刷第168--169页}
+对短正合复形 $0\to T_1\to T_2\to T_3\to0$，
+仅有 $H^i(T_1)\simeq H^i(T_2)$ 的抽象同构，并不能推出 $T_3$ 无上同调。
+所需条件是给定映射 $H^i(T_1)\to H^i(T_2)$ 本身为同构。
+一个简单的警告是对集中在零次的一维向量空间取零映射；两端对象相同，映射却不是同构。
+
+在原证明（i）中，两行复形的唯一可能非零上同调都通过（21.6.1.1）典范识别为
+\[
+ \Upsilon_{k''/k'/k}\otimes_{k''}L.
+\]
+由域嵌入和非完美性模的自然性，原图给出的上同调映射正是这一空间的恒等映射。
+故可用长正合列得第三行正合。
+在（ii）中，共同的上同调空间为 $\Upsilon_{M/L/K}$，诱导映射同样是恒等。
+正文把这两个必要核对写出，保留缺陷的两条加法公式。
+
+\audit{L12-G06}{Cartier等式中的有限性先于维数相减}{保留定理；补出有限生成归纳的逻辑次序}
+\oldauditsrc{（21.7.1）--（21.7.3），印刷第170--171页}
+Cartier等式为
+\[
+ \dim_L\Omega^1_{L/K}-\dim_L\Upsilon_{L/K}=\trdeg_K L
+\]
+其中 $L/K$ 为有限生成域扩张。
+原证明利用六项正合列以及单生成扩张归纳。
+必须同时知道参与相减的空间有限维，不能先写未定义的 $\infty-\infty$。
+
+对 $L=K(x)$，若 $x$ 超越，则可分性给出 $\Upsilon=0$，微分模秩为1；
+若有限可分，则两者均为零；若代数不可分，先经过最大可分中间域，
+再拆成有限个次数为 $p$ 的纯不可分扩张，在高度一情形由（21.4.8）得两空间同秩且有限。
+对有限多个生成元归纳时，六项正合列中其余空间已经有限维，
+从而同时推出新一步的有限维性与Euler特征等式。
+正文遵循这一顺序。作者已将此处引用（20.6.15.1）正式改为（20.6.17.1）；
+这项作者勘误标为L12-A01，不作为译者新发现。
+
+\audit{L12-N03}{逆极限与扩张标量的使用边界}{只证明所需单射性，不宣称任意交换逆极限和张量积}
+\oldauditsrc{（21.8.3）的 $\mathrm c)\Rightarrow\mathrm b)$，印刷第173页}
+设 $W\to\varprojlim W_\alpha$ 单射，所有空间均在域 $K$ 上。
+原证明需要，对任意 $K$-向量空间 $V$，映射
+\[
+ W\otimes_KV\longrightarrow\varprojlim(W_\alpha\otimes_KV)
+\]
+仍单射。这里并不需要或声称一般同构
+$(\varprojlim W_\alpha)\otimes_KV\simeq\varprojlim(W_\alpha\otimes_KV)$。
+
+若 $V$ 有限维，选取有限基，所需结论只是有限直和保持单射。
+对一般 $V$，任一张量只涉及有限多个 $V$ 的向量，故位于某个有限维子空间 $V_0$ 的张量积中。
+向量空间张量积是正合的，所以每个
+$W_\alpha\otimes V_0\to W_\alpha\otimes V$ 都单射；
+逆极限保左正合，故逆极限后的映射也单射。
+由此即可检测每个非零张量，不必假设任何无限交换律。
+
+\audit{L12-T06}{无限秩反例中的基域应为 $K^p$}{原文基域误植；原作者反例经核对后保留}
+\oldauditsrc{（21.8.7，ii），印刷第175页}
+原文说构造一列“$K$的有限扩张 $M_n$”，随后却定义
+$M_0=K^p$、$M_n=K^p(a_1x,\ldots,a_nx)\subseteq K$。
+两者不相容；正确的是 $K^p$ 在 $K$ 中的一列有限扩张。
+
+为核验原构造，取 $k_0=\mathbf F_p$、$[K:K^p]$ 可数无限，
+取 $K=K_0\supsetneq K_1\supsetneq\cdots$ 且 $\bigcap K_n=K^p$，
+并保证每个 $K_n/K^p$ 仍为无限次扩张。
+固定 $x\in K\setminus K^p$。归纳选
+\[
+ a_{n+1}\in K_{n+1}\setminus M_n(x),\qquad
+ M_{n+1}=M_n(a_{n+1}x).
+\]
+若 $F=M_n$，则 $x\notin F$、$a_{n+1}\notin F(x)$，且这两个元素的$p$次幂都属于 $K^p\subseteq F$。
+所以 $[F(x,a_{n+1}):F]=p^2$。
+但 $[F(a_{n+1}x):F]\le p$。
+若 $x\in F(a_{n+1}x)$，就也有 $a_{n+1}=(a_{n+1}x)/x\in F(a_{n+1}x)$，矛盾。
+于是始终 $x\notin M_n$。
+
+置 $M=\bigcup M_n$、$L=M^{1/p}$。因 $K^p\subseteq M$，$L$ 包含 $K$，且 $L^p=M$。
+对每个 $n\ge1$，$x=(a_nx)/a_n\in K_n(M)=K_n(L^p)$，
+但 $x\notin M=L^p$。因此
+\[
+ \bigcap_nK_n(L^p)\supsetneq k_0(L^p),
+ \qquad \bigcap_nK_n(K^p)=k_0(K^p).
+\]
+这验证了原作者要说明的“不能删去有限秩假设”。本版并不把该反例宣称为新发现。
+
+\audit{L12-N04}{多变量形式幂级数的分式域及分母统一}{记号和证明步骤澄清}
+\oldauditsrc{（21.8.8）及子引理（21.8.8.2）、（21.8.8.3），印刷第175--176页}
+本处 $k((T_1,\ldots,T_r))$ 表示
+$\operatorname{Frac}(k[[T_1,\ldots,T_r]])$，不是迭代Laurent级数域。
+两个域在多变量情形不可随意替换。
+
+子引理（21.8.8.3）的证明中，固定 $f$ 属于所有 $k_\alpha((T))$，
+先找 $g\in k_\gamma[[T]]\setminus\{0\}$，使 $gf\in k_\gamma[[T]]$。
+若 $k^q\subseteq k_0=\bigcap k_\alpha$，将 $g$ 换为 $g^q$ 后，
+分母属于 $k_0[[T]]$，同时 $g^qf=g^{q-1}(gf)$ 仍是 $k_\gamma$-系数的幂级数。
+对共尾的 $k_\alpha\subseteq k_\gamma$，应用前一子引理于 $g^qf$，
+得到它属于每个 $k_\alpha[[T]]$，因而属于 $k_0[[T]]$。
+所以 $f\in k_0((T))$。这一步针对乘过统一分母后的元素，而不是无条件断言 $f$ 本身是幂级数。
+
+\audit{L12-G11}{完备微分模中密度、连续性与有限性的区分}{补明适用条件，保留命题}
+\oldauditsrc{（21.9.2）、（21.9.4）、（21.9.5），印刷第176--178页}
+（21.9.4）使用“导子在稠密多项式子环上为零，故在形式幂级数环上为零”。
+连续映射在稠密子集上为零，要推出处处为零，目标应是分离的。
+正文限定在分离完备测试模中使用这一论证；这些测试模已经足以使用完备微分模的泛性质。
+此外，$A$ 在 $B_1=k[[T_1^p,\ldots,T_r^p]]$ 上有限型，故 $\Omega^1_{A/B_1}$ 是有限型 $A$-模；
+由于 $A$ 为完备诺特局部环，这个模分离完备，因而不用再取额外完备化。
+
+（21.9.5）中，延拓到有限可分分式域扩张的导子需要具有共同的有限型值域并连续。
+选取有限个 $A_0$-代数生成元 $a_j$，令
+\[
+ P=A+\sum_{i,j}A\,D_i(a_j)\subseteq E.
+\]
+Leibniz公式表明每个 $D_i(A)\subseteq P$；$P$ 为有限型 $A$-模，也为有限型 $A_0$-模。
+若 $\mathfrak m_0=(T_1,\ldots,T_r)$，则
+\[
+ D_i(\mathfrak m_0^nA)\subseteq\mathfrak m_0^{n-1}P\qquad(n\ge1),
+\]
+所以这些导子连续。其在参数上的值 $D_i(T_j)=\delta_{ij}$ 给出所需线性无关性。
+正文把原文这一有限值域和连续性的核对写出。
+
+还需注意，完备微分模的正合性并非来自“完备化总是正合”。
+在（21.9.2）中，连续左逆保证像为闭子空间，再结合原有的稠密性才得到像等于核；
+在（21.9.5）中，则使用诺特有限型模子模闭的性质。两条理由不能混为一般交换律。
+
+\audit{L12-T08}{原作者的无限 $p$-秩例子：原印误与文本识别错误分开}{校正 $p$-基符号；保留并补足原反例的验证}
+\oldauditsrc{（21.9.7），印刷第181页／PDF第180页}
+原页写 $k_0=\mathbf F_p(X_n)_{n\ge0}$，接着把其在 $\mathbf F_p$ 上的$p$-基写成
+$(X_n^p)$。这不成立：每个 $X_n^p$ 都在 $k_0^p$ 中，
+其微分为零，不能成为$p$-基。正确的是 $(X_n)$。
+本轮放大原页确认该$p$次幂确为原印刷符号，故正文校正并在脚注记录。
+
+\textbf{另一方面，原页在“否则”后正确印着 $y^p$，不是 $y$。}
+文本提取曾丢掉上标，不能把这种识别差异算作原作者错误。
+正文保留正确的 $y^p$，并另补证明其不属于相关复合域。
+
+具体设
+\[
+ K_0=k_0=\mathbf F_p(X_0,X_1,\ldots),\quad
+ L_0=k_0((T)),\quad M_0=k_0((T^p)),
+\]
+\[
+ f=\sum_{n\ge0}X_nT^{np},\qquad E=L_0(y),\quad y^p=f.
+\]
+任一 $k_0(L_0^p)$ 的元素只用到有限多个 $X_i$ 作为额外系数，
+故属于某个
+$k_0^p(X_i:i\in I)((T^p))$，其中 $I$ 有限。
+$f$ 的所有系数 $X_n$ 不可能同时属于这样一个有限生成的系数子域，
+由形式级数系数的唯一性，
+\[
+ f\notin k_0(L_0^p).
+\]
+因此 $d_{L_0/k_0}f\ne0$。
+
+由形式幂级数分式域的可分性，$L_0/k_0$ 可分。
+在绝对微分模的标准表示
+\[
+ \Omega^1_{E/\mathbf F_p}
+ \simeq
+ \left((\Omega^1_{L_0/\mathbf F_p}\otimes_{L_0}E)\oplus E\,dy\right)/(E\,df)
+\]
+中，$df$ 的相对 $k_0$ 微分非零，故直线 $E\,df$ 与
+$\Omega^1_{k_0/\mathbf F_p}\otimes_{k_0}E$ 的像交为零。
+后者在 $\Omega^1_{L_0/\mathbf F_p}\otimes E$ 中原本单射，
+于是其到 $\Omega^1_{E/\mathbf F_p}$ 的映射仍单射。
+由（20.6.3），$E/k_0$ 可分，所以 $d(E/K_0,k_0)=0$。
+
+又有 $E^p\subseteq M_0$、$[L_0:M_0]=p$、$[E:L_0]=p$，
+因此 $[E:M_0]=p^2$，$T,y$ 为 $E/M_0$ 的$p$-基，
+$\dim_E\Omega^1_{E/M_0}=2$。
+Cartier等式给出 $\dim_E\Upsilon_{E/M_0}=2$。
+由于基域参数取 $M_0$ 本身，$d(E/M_0,M_0)=2$。
+原式中的差于是为
+\[
+ \delta=d(E/M_0,M_0)-1=1\ne0.
+\]
+这核验了原作者反例所需结论：不能把（21.9.6，ii）推广到任意无限 $p$-秩的 $k_0$。
+
+\audit{L12-N06}{有限性前提和系数域选择}{明确继承条件，不扩大为未经证明的新定理}
+\oldauditsrc{（21.9.6）及（21.9.8），印刷第178--182页}
+（21.9.6）的维数差是在 $[K_0:k]<\infty$ 及相应微分空间有限秩的前提下写出的。
+把 $k$ 换为更小的 $k'$ 时，正文明确仍需满足所用表达式的有限性前提。
+这不是宣布原命题有新的反例，而是防止离开讨论范围后把无穷维的差当作整数。
+
+（21.9.8）先指定 $K_0$ 为 $A$ 的剩余域的子域，随后在证明中把 $K_0$ 提升到 $A$。
+为了让 $\Omega^1_{(A/\mathfrak p)/k}$ 的结构从一开始明确，正文先固定一个与剩余域嵌入相容的
+$k_0$-嵌入 $K_0\to A$。它由可分性、形式光滑性和 $A$ 的完备性存在。
+一般没有唯一性，故本版不把这个选择说成典范。
+原证明对任一这样的选择均适用，所得不等式及适当子域上取等号的结论保持不变。
+
+\section*{其余排印、引文与核查记录}
+\addcontentsline{toc}{section}{其余排印、引文与核查记录}
+\begin{longtable}{@{}p{.22\linewidth}p{.68\linewidth}@{}}
+\toprule 位置&处理\\\midrule\endhead
+21.5.3末句&作者将法文性数配合ramifiée改为ramifié；中文“形式非分歧”不受影响。\\
+21.6.3&原引20.6.17，ii无对应分项；改为20.6.21，ii中的自然性，并保持不同标量域间的双同态解释。\\
+21.7.5&同调识别指向20.6.5.2，两项复形指向20.6.5，末尾$F_\bullet(C/A)$指向20.6.26；不是重新定义这些复形。\\
+21.8.3&高度一扩张的非完美性模基对应21.4.8；非零微分的判据对应21.4.6。\\
+21.9.6证明&印刷第179页首个维数等式中的$\Omega^1_{M/M_0}$方向颠倒，改为$\Omega^1_{M_0/M}$。后一模的标量域为$M_0$，且正是21.7.3所给项。\\
+21.9.6.7&$k_0/k_0^p$的有限基扩到更大的系数域后只需生成，不声称仍线性无关。\\
+\bottomrule
+\end{longtable}
+
+\section*{来源、外部交叉检查与未决事项}
+\addcontentsline{toc}{section}{来源、外部交叉检查与未决事项}
+翻译底本是用户上传的1964年法文原版，不是从二手综述重构。
+本轮阅读了印刷第164--182页的连续内容，并对公式、图和小字号位置查看原页图像；
+作者正式勘误以1967年第四部分所载《清单三》原页为依据。
+
+可分域扩张与形式光滑性的背景对应关系，另参照Stacks Project的
+\texttt{Tag 031U}（\url{https://stacks.math.columbia.edu/tag/031U}，本轮核对日期：2026年11月16日）。
+这一交叉检查不是对上述具体原文错误的既有勘误归属证明；
+L12-E01、L12-E02等结论均以本报告给出的具体计算或修补为依据。
+
+本轮没有重新审定全部旧译文，没有把已知待核事项静默删除。
+H8-P01的原版较弱拓扑范围仍待核；第四卷主体及第五卷预备笔记余文仍未连续译入。
+本报告的历史部分保存旧判断，不表示本轮重做了全部反例与证明。
+实际构建、页数、逐页比较和视觉抽查结果记录在工程的\texttt{checks/}中，
+本报告不预先将技术检查写成已通过，也不把编译成功当作数学正确性的充分证明。
+
+% END reports/twelfth_audit.tex
+
+\part*{历史核查记录：第十一版}
+\addcontentsline{toc}{part}{历史核查记录：第十一版}
+\NewNote{以下K11条目保留第十一版的核查意见，不表示本轮重新审定其全部内容。}
+
+% BEGIN reports/eleventh_audit.tex
+\head{第十一版新核查：第0章21.1--21.4}
+\source{EGA IV第一部分，分册印刷第153--164页／上传PDF第152--163页；底本为用户上传的法文扫描本}
+本轮连续译入§21章首、（21.1.1）--（21.4.8），其中包括子编号引理（21.1.6.1）和（21.4.0），共34个原著编号条目。
+21.5开头仅用于确认下一接续点，没有计入完成范围。
+
+本轮从实际可读取的第十版工程接续，不以聊天中的完成声明代替源码。新增正文与源页逐段对照；
+在可核实处将正确表述写入正文，原文差异置于脚注。下面的“校订”包含不同性质的问题：
+原断言在字面假设下有反例、错误的中间等式、需展开的半线性记号、内部引用及定义约定。
+\textbf{不能把所有表中项目相加，作为发现了同样数量的错误定理。}
+
+\section*{处理清单与边界}
+\addcontentsline{toc}{section}{处理清单与边界}
+\begin{longtable}{@{}p{.17\linewidth}p{.17\linewidth}p{.57\linewidth}@{}}
+\toprule 标识 & 位置 & 处理\\
+\midrule\endhead
+K11-E01 & 21.1.10，ii & 字面表述存在两个独立问题：集合并会丢失重合索引；中间扩张的$p$-基系数环不能任意扩大。给出两例及修订证明。\\
+K11-T01 & 21.2.2 & 平凡扩张结论写为$A$-平凡，并指出原文末句的$B$-平凡记号问题。\\
+K11-T02 & 21.2.5 & 微分模不变性的内部引文由21.1.5，iii改为ii。\\
+K11-T03 & 21.3.6 & 将$j\otimes1$展开为真正相容的Frobenius扭曲公式；证明两个基变换同构保留。\\
+K11-T04 & 21.4.0 & 准确表述$K^p[k]$在$K^p$上整，避免把未必包含$K^p$的$k$当作其扩域。\\
+K11-T05 & 21.4.5 & 删除中间域的两个不同相对微分模之间的不当等式；给出反例并核验定理证明不受影响。\\
+K11-G01--G04 & 对应条目 & 展开Hom分裂、指定$p$-基像的提升、修订引理的后续应用及Zorn上界步骤。\\
+K11-N01--N06 & 对应条目 & 保留历史定义、Frobenius标量作用、幂零元理想与幂零理想、形式光滑性假设、正合列末端和可分性判据的区别。\\
+\bottomrule
+\end{longtable}
+这些项目是本次译者分析，并非一份新取得的作者勘误。核对第四卷第四部分的《勘误与增补（清单三）》时，
+须严格区分$0_{\mathrm{IV}}$的21节与第IV章的21节；后者有关除子的同号条目不是本轮微分代数条目的勘误。
+
+\audit{K11-E01}{两级$p$-基与集合并：两个条件都不能省略}{按原文的字面假设，等价关系不成立；正文已写入校订形式}
+\oldauditsrc{$0_{\mathrm{IV}}$（21.1.10），分册印刷第157页／上传PDF第156页}
+原文设$B^p\subseteq C\subseteq B$，$C$为$A$-子代数，$M\subseteq C$、$N\subseteq B$。
+其$(ii)$仅假设$M$为$C$在$A$上的$p$-基，便断言
+\[
+ N\text{在}C\text{上$p$-无关}
+ \quad\Longleftrightarrow\quad
+ M\cup N\text{在}A\text{上$p$-无关}.
+\]
+紧接着的证明写道可归结于$B^p\subseteq A\subseteq C\subseteq B$。
+但从单个扩张的定义出发替换基环时，不能同时不加说明地保留另一个扩张的$p$-基。
+此外，集合并会将$M\cap N$中的同一元素只计一次，与乘积基证明所使用的两个独立索引不符。
+
+\lead{反例一：只检验重合元素问题。}
+固定素数$p$和超越元$t$，令
+\[
+ A=\mathbf F_p(t^p),\qquad C=B=\mathbf F_p(t),\qquad M=N=\{t\}.
+\]
+此时$B^p=A$，故系数环问题已经不存在。
+令$s=t^p$，则$X^p-s$在$\mathbf F_p(s)[X]$中不可约：
+若$s$是该域中某个元素的$p$次幂，则它在$s=0$处的赋值应是$p$的倍数，但该赋值为$1$。
+因此$[B:A]=p$，$1,t,\ldots,t^{p-1}$为$A$-基，$M$为$C$在$A$上的$p$-基。
+
+集合并$M\cup N$仍为$\{t\}$，所以在$A$上$p$-无关。
+但是$N$不是在$C$上$p$-无关，因为其受限单项式族包含$1,t$，且有非平凡$C$-线性关系
+\[
+ (-t)\cdot1+1\cdot t=0.
+\]
+这直接反驳原文的反向蕴含。
+
+\lead{反例二：两集合不交，仍不能扩大中间系数环。}
+取
+\[
+ A=\mathbf F_p,\qquad C=\mathbf F_p(t^p),\qquad B=\mathbf F_p(t),
+ \qquad M=\{t^p\},\qquad N=\{t\}.
+\]
+有$B^p=C$，故满足原文$B^p\subseteq C$，且$M\cap N=\varnothing$。
+$M$是$C$在$A$上的$p$-基，因为该定义中的系数环是
+\[
+ A[C^p]=\mathbf F_p(t^{p^2}),
+\]
+而$1,t^p,\ldots,t^{(p-1)p}$是$C$在这一域上的基。
+同样，$N$是$B$在$C$上的$p$-基。
+
+但检验$M\cup N$在$A$上的$p$-无关性时，实际系数环是
+$A[B^p]=\mathbf F_p(t^p)$。其中已含元素$t^p$，于是
+\[
+ 1\cdot(t^p)+(-t^p)\cdot1=0
+\]
+是一条非平凡的系数关系。所以即使两集合不交，原文的正向蕴含仍然失败。
+
+\lead{正文采用的修订形式及证明。}
+令$R=A[B^p]\subseteq C$。将$(ii)$改为：
+若$M$为$C$在$R$上的$p$-基，且$M\cap N=\varnothing$，则原等价成立。
+因为$C^p\subseteq B^p\subseteq R$，$M$的受限单项式族$P$是$C$的$R$-基；
+因为$B^p\subseteq C$，$N$的受限单项式族$Q$在$C$上线性无关，恰好表达$N$的$p$-无关性。
+
+若$Q$在$C$上线性无关，对有限关系
+\[
+ \sum_{\lambda,\mu}a_{\lambda\mu}x_\lambda y_\mu=0,
+ \quad a_{\lambda\mu}\in R,\quad x_\lambda\in P,\quad y_\mu\in Q,
+\]
+先按$Q$收集系数，再按$P$展开，便得每个$a_{\lambda\mu}=0$。
+反之，将$Q$的任何有限$C$-线性关系的系数按$P$展开，乘积族的独立性又推出原系数全零。
+$M,N$不交保证乘积族与并集的受限单项式族按索引一一对应。
+
+也可以不要求集合不交，而改用保留两套索引的\emph{拼接族}；但这不是原文的去重集合并，
+因此正文选用直接明写条件的形式。
+如果把原文前一段的“可假设$B^p\subseteq A$”解释为已经对本条施加的约定，
+那么关于系数环的修订是在正文中明确该约定；仍不能据此消除反例一中的集合重合问题。
+
+\lead{后续应用没有被一并否定。}
+（21.3.5）用到的是塔$A^p\subseteq B^p\subseteq A$以及$B^p\subseteq A\subseteq B$。
+这两次应用中，最大环的$p$次幂已在最小环中；两级相对$p$-基也不交。
+（21.4.2）加入的元素则明确不属于先前生成的子域。因此这些后续应用均满足正文的修订条件。
+原文$(i)$关于生成系的结论不需要两集合不交，且仍成立：
+$C=A[C^p,M]=R[M]$、$B=C[N]=R[M,N]$。
+
+\audit{K11-T03}{半线性$j$的基变换不能写成普通$j\otimes1$}{展开并校正记号；原来的典范同构保留}
+\oldauditsrc{（21.3.6，ii），分册印刷第162页／上传PDF第161页}
+原文有
+\[
+ A\xrightarrow{i}B\xrightarrow{j}A,\qquad ji=F_A,\quad ij=F_B,
+\]
+然后对$f:A\to A'$、$B'=B\otimes_A A'$直接写$j'=j\otimes1:B'\to A'$。
+通常的张量记号要求相应的平衡关系相容；这里$j$相对于$A$是Frobenius半线性的，不能省去这一信息。
+
+\lead{普通张量解释为何不成立。}
+取$A=B=\mathbf F_p[t]$、$i=1$、$j=F_A$，并取$A'=A$、$f=1$。
+在$B\otimes_A A'$中，$t\otimes1=1\otimes t$。
+若按$b\otimes a'\mapsto j(b)a'$解释原式，两者分别映到$t^p$和$t$，并不相等。
+因此这不是一个良定义的映射。
+
+\lead{正确公式及全部相容性。}
+令
+\[
+ i'(a')=1\otimes a',\qquad
+ j'(b\otimes a')=f(j(b))(a')^p.
+\]
+先检验平衡关系。对$a\in A$，
+\begin{align*}
+ j'(i(a)b\otimes a')
+ &=f(j(i(a)b))(a')^p\\
+ &=f(a)^p f(j(b))(a')^p\\
+ &=j'(b\otimes f(a)a').
+\end{align*}
+加法性来自特征$p$下的Frobenius加法性；乘法和单位相容性由公式直接计算。
+故$j'$是环同态。又
+\[
+ j'i'(a')=(a')^p,
+\]
+以及
+\begin{align*}
+ i'j'(b\otimes a')
+ &=1\otimes f(j(b))(a')^p\\
+ &=i(j(b))\otimes(a')^p\\
+ &=b^p\otimes(a')^p=(b\otimes a')^p.
+\end{align*}
+所以$j'i'=F_{A'}$、$i'j'=F_{B'}$。
+若$g:B\to B'$是$b\mapsto b\otimes1$，还满足$j'g=fj$及$i'f=gi$，
+恰好形成原文$(i)$所需的交换图。
+
+\lead{为什么$\Theta$的基变换同构仍成立。}
+写出张量所用的结构同态，便有
+\begin{align*}
+ \Theta_{B'/A'}
+ &=\Omega^1_{B'/A'}\otimes_{B',j'}A'\\
+ &\simeq(\Omega^1_{B/A}\otimes_{B,g}B')\otimes_{B',j'}A'\\
+ &\simeq\Omega^1_{B/A}\otimes_{B,fj}A'\\
+ &\simeq(\Omega^1_{B/A}\otimes_{B,j}A)\otimes_{A,f}A'\\
+ &=\Theta_{B/A}\otimes_A A'.
+\end{align*}
+这正是（21.3.6.1），不需要平坦性假设。
+
+\lead{Frobenius扩张标量的第二个同构。}
+对任意$B$-模$M$，有
+\[
+ (M\otimes_{B,F_B}B)\otimes_B B'
+ \simeq(M\otimes_B B')\otimes_{B',F_{B'}}B'.
+\]
+可将映射写成
+\[
+ (m\otimes b)\otimes c'\longmapsto(m\otimes1)\otimes g(b)c'.
+\]
+反向映射为
+\[
+ (m\otimes b')\otimes c'\longmapsto(m\otimes1)\otimes(b')^p c'.
+\]
+两者的平衡性由$gF_B=F_{B'}g$得到；逐个张量因子复合即为恒等。
+取$M=\Omega^1_{B/A}$并结合微分模的基变换，即得（21.3.6.2）。
+本项并不声称原文这两个同构错误；问题在于$j'$的普通张量写法没有表示出必需的扭曲。
+
+\audit{K11-T05}{中间域上的两个相对微分模并不相同}{原证明中的等式不成立；定理结论不变}
+\oldauditsrc{（21.4.5）证明首段，分册印刷第163页／上传PDF第162页}
+原文令$K'=k(K^p,(x_\alpha))$，并在首段把
+\[
+ \Omega^1_{K'/k(K^p)}\quad\text{与}\quad\Omega^1_{K'/k}
+\]
+等同。对整个域$K$，$\Omega^1_{K/k}=\Omega^1_{K/k(K^p)}$确实成立，
+因为$K^p$的元素在$K$中是$p$次幂；但对中间域$K'$，同样的理由不能直接使用。
+$K^p$的元素未必是$K'$中元素的$p$次幂。
+
+\lead{一个直接反例。}
+取$k=\mathbf F_p$、$K=\mathbf F_p(t)$，取空元素族，则
+$K'=K^p=\mathbf F_p(s)$，其中$s=t^p$。
+于是
+\[
+ \Omega^1_{K'/k(K^p)}=\Omega^1_{K'/K'}=0,
+ \qquad \Omega^1_{K'/k}=K'\,ds\ne0.
+\]
+$ds\ne0$可直接用$k$-导子$\partial/\partial s$验证，因为它将$s$映到$1$。
+因此原等式不能保留在正文。
+
+\lead{修订后证明仍闭合。}
+实际只需知道$d_{K'/k(K^p)}(x_\alpha)$生成
+$\Omega^1_{K'/k(K^p)}$，这一点由$K'$的生成方式得到。
+若$d_{K/k}(x_\alpha)$生成$\Omega^1_{K/k}$，正合列
+\[
+ \Omega^1_{K'/k(K^p)}\otimes_{K'}K
+ \longrightarrow\Omega^1_{K/k(K^p)}
+ \longrightarrow\Omega^1_{K/K'}\longrightarrow0
+\]
+的左箭头满射，故$\Omega^1_{K/K'}=0$。
+由（21.4.4），$K=K'(K^p)=K'$，从而得到$p$-生成性质。
+独立性部分则按原证明利用$K_\alpha$及正合列，反证$d(x_\alpha)$不能落入其余微分生成的子空间。
+这些论证不需要上述错误等式。因此正文删去等同关系，写入真正需要的相对微分模。
+
+\audit{K11-N04}{有$p$-基不自动意味着形式光滑}{原定理条件提醒；不列为原文错误}
+\oldauditsrc{（21.2.6）--（21.2.7），分册印刷第159--160页／上传PDF第158--159页}
+令$A=\mathbf F_p$、$B=\mathbf F_p[t]/(t^p)$。
+每个$p$次幂都是常数，所以$B^p=\mathbf F_p$，且
+$1,t,\ldots,t^{p-1}$是$B$的$\mathbf F_p$-基。因此$\{t\}$确为$p$-基。
+但（21.2.6.2）就是Frobenius映射$B\to B$，它把非零的$t$映为零，故不单射。
+
+取
+\[
+ E=\mathbf F_p[T]/(T^{2p}),\qquad I=(T^p)\subset E,
+ \qquad E/I\simeq B.
+\]
+$I^2=0$。若恒等映射$B\to E/I$有$A$-代数提升，$t$必须映到某个
+$z=T+T^ph(T)$。特征$p$下
+\[
+ z^p=T^p+T^{p^2}h(T)^p=T^p\ne0\quad\text{于}E,
+\]
+因为$p^2\ge2p$；但$B$中$t^p=0$，矛盾。
+这证明$B/A$并非形式光滑，同时具体显示了原定理条件$(i)$的作用。
+正文没有删除该条件，也不把相对于$B^p$的形式光滑性与在$A$上的绝对提升条件混为一谈。
+
+\audit{K11-N06}{微分模为零与可分性是不同的判据}{原文使用边界；不是新反例推翻原定理}
+\oldauditsrc{（21.4.4），并对照已译（20.6.3）}
+令
+\[
+ k=\mathbf F_p(t),\qquad
+ K=\bigcup_{n\ge0}\mathbf F_p(t^{1/p^n}).
+\]
+对每个$K$中的元素，总能在后一级找到$p$次方根，因此$K^p=K$。
+（21.4.4）给出$\Omega^1_{K/k}=0$。
+然而$t^{1/p}\notin k$，其最小多项式是$X^p-t$，所以$K/k$是非平凡纯不可分代数扩张。
+
+非完美性模的判据没有失效：$K$是完美域，$\Omega^1_K=0$，故
+\[
+ \Upsilon_{K/k}
+ =\Ker(\Omega^1_k\otimes_k K\to\Omega^1_K)
+ =K\,dt\ne0.
+\]
+所以（20.6.3）准确检出不可分性。不能把（21.4.4）的微分消失判据，替换为任意域扩张的可分性判据。
+
+\audit{K11-T01/T02/T04}{三处局部表述和引文的校订}{没有合计为三个错误定理}
+\oldauditsrc{（21.2.2）、（21.2.5）、（21.4.0）}
+\lead{21.2.2的平凡扩张。}
+给定的是$B$的$A$-扩张$E$，并假设在$B^p$上平凡。
+（21.2.1）的结论是存在$A$-代数截面$B\to E$，所以所需结论是$A$-平凡。
+原文末句的“$B$-平凡”不应使读者误以为已另有给定的$B$-代数结构。
+
+\lead{21.2.5的内部引用。}
+原扫描页引用（21.1.5，iii），但以$A[B^p]$替换$A$而保持微分模的性质在$(ii)$；
+$(iii)$讨论的是乘法核的幂零元性质。正文采用$(ii)$。
+
+\lead{21.4.0的复合域。}
+$k[K^p]=k(K^p)$的结论正确，但原文理由“$k$在$K^p$上代数”应准确化。
+例如$k=\mathbf F_p(s)$、$K=\mathbf F_p(s,t)$，则$K^p=\mathbf F_p(s^p,t^p)$并不包含于$k$。
+实际有意义的是$K^p[k]$在$K^p$上整；每个非零$z\in K^p[k]$满足
+\[
+ z^{-1}=\frac{z^{p-1}}{z^p}\in K^p[k],
+\]
+所以该环为域。这保留原结论而避免不合法的域扩张记号。
+
+\audit{K11-G01/G02/G04}{补明三个证明步骤}{展开原有论证，不代写为原作者的新结论}
+\lead{Hom满射与分裂。}
+在（21.2.4）中，记$U=\Omega^1_{A/B^p}\otimes_A B$、$V=\Omega^1_{B/B^p}$，
+$\theta:U\to V$为自然映射。（21.2.3）说明对任意$B$-模$L$，
+$\Hom_B(V,L)\to\Hom_B(U,L)$满射。取$L=U$，则$1_U$延拓为$r:V\to U$，
+满足$r\theta=1_U$。这直接证明$\theta$单射且分裂。
+另由$\Der_A(B,L)\simeq L^I$，表示性给出
+$\Omega^1_{B/A}\simeq\bigoplus_I B$，其基是对应的$dx_\alpha$。
+
+\lead{指定$p$-基像的相容提升。}
+平方零情形中，任何$A$-代数截面$w$对$p$次幂的值都已确定，因而自动与正文构造的$A[B^p]$-结构相容。
+对幂零理想，逐次提升到$E/I^r$，每次指定$x_\alpha$的像为固定$z_\alpha$的像，
+便得到每一步唯一的提升。对一般可容许环，离散商上的同态因这种唯一性自动与过渡同态相容，
+从而可以取逆极限。这里没有从“各层存在提升”直接跳到“相容提升存在”。
+
+\lead{Zorn引理的上界。}
+对按包含排序的$p$-无关子集链，链的并仍$p$-无关：一个有限线性关系仅涉及有限多个元素，
+它们都包含在链的某一个成员中，于是关系只能平凡。这给出（21.4.2）所需的上界。
+
+\section*{定义约定及外部交叉核验}
+\addcontentsline{toc}{section}{定义约定及外部交叉核验}
+（21.1.1）--（21.1.2）在$p=0$时要求存在$\mathbf Q\to A$，比通常“$1_A$的加法阶无限”的条件强。
+正文明确这是本节约定；没有将历史定义误判为错误。
+（21.3.4）的序列右端没有$0$，因此不从“正合”臆造最右箭头的满射性。
+
+外部仅以The Stacks Project的\href{https://stacks.math.columbia.edu/tag/07P1}{Tag 07P1}
+和\href{https://stacks.math.columbia.edu/tag/07P2}{Tag 07P2}核对域扩张中$p$-基的定义、存在性及其与微分基的等价。
+这些标准结论与本轮21.4的主线一致；不将外部材料当作本轮具体错误修订的作者依据，也不替换法文底本。
+查询日期：2026年11月15日。
+
+\section*{本轮技术检查的含义}
+\addcontentsline{toc}{section}{本轮技术检查的含义}
+源条目、公式标签、实际构建页数和日志检查记录保存在工程的\texttt{checks}目录。
+编译成功只检验TeX和排版，不证明数学命题。
+有限特征下的计算脚本只核验指定例子的多项式恒等式，完整一般论证以本报告给出的证明为准。
+本轮没有重新逐句审校旧版全部正文和历史报告，也没有宣称全部上传材料已经译完。
+
+% END reports/eleventh_audit.tex
+
+\part*{历史核查记录：第十版}
+\addcontentsline{toc}{part}{历史核查记录：第十版}
+\NewNote{以下J10条目保留第十版的核查判断及范围说明，不表示本轮重新审定其全部内容。}
+
+% BEGIN reports/tenth_audit.tex
+
+\head{第十版新核查：第0章20.6--20.7}
+\source{EGA IV第一部分，分册印刷第136--153页／上传PDF第135--152页；作者勘误据IV第四部分，印刷第345页／上传PDF第344页}
+本轮从（20.6.1）连续译至（20.7.20），共46个原著编号条目，保留50个原编号公式或交换图标签。20.6“非完美性模与特征同态”和20.7“向拓扑环的推广”均已译入；原文随后进入§21。本轮的重点是核与张量的先后次序、复形同调的符号、连续导子的标量环，以及完备化后只能得到的稠密性。
+
+新增正文采用核实后的表述，原文差异在相应脚注注明。下面区分排印或引文修正、补明证明步骤，以及原文已经提出而译文必须保留的限制。\textbf{没有将这些事项计成同样数量的“错误定理”，也没有宣称已经独立证明本轮及历史稿件中的全部结论。}
+
+\section*{本轮处理清单}
+\addcontentsline{toc}{section}{本轮处理清单}
+\begin{longtable}{@{}p{.18\linewidth}p{.19\linewidth}p{.54\linewidth}@{}}
+\toprule 标识 & 原著位置 & 判定与处理\\\midrule\endhead
+J10-T01 & 20.6.16 & 次数零直和中的补模下标应为 $K_0$，不是 $K_1$。\\
+J10-G02 & 20.6.16--17 & 原映射公式与通常投影识别产生两个负号；补明符号调整，正合列结论不变。\\
+J10-T02 & 20.6.25 & 证明末尾的引文改为陈述已给出的18.3.6.4及18.3.6.2。\\
+J10-T03 & 20.7.2 & 张量--Hom对应右端的标量环应为 $B$，不是 $C$。\\
+J10-C01 & 20.7.8 & 依作者正式勘误，把两处18.4引文改成18.5的相应条目。\\
+J10-T04、T05 & 20.7.11、20.7.13 & 同态编号与所用正合列编号纠正；不改命题假设。\\
+J10-T06 & 20.7.16 & 无限超越次数及未完备微分模不有限生成的两项断言明写 $n\ge1$。\\
+J10-T07 & 20.7.18 & 提升产生的是 $A$-导子，原文误称 $B$-导子；用恒等同态核验。\\
+J10-G01、G03 & 20.6.11、20.7.17 & 展开分裂判据、可数逆系统的提升与稠密性论证；不当作对原定理的反例。\\
+J10-N01--N04 & 相应条目 & 保留非完美性模的适用边界、普通Hom复形、张量后取核及历史宣告的准确含义。\\
+\bottomrule
+\end{longtable}
+
+\audit{J10-T07}{提升中的导子到底相对于哪个基环？}{原证明的标量环误写；已改入正文}
+\oldauditsrc{（20.7.18），分册印刷第152--153页／上传PDF第151--152页}
+原证明令
+\[
+ L=\Omega^1_{B/A}\widehat\otimes_B C,\qquad E=D_C(L)=C\oplus L,
+\]
+并以连续 $A$-导子
+\[
+ D:B\longrightarrow L
+\]
+给 $E$ 赋予 $B$-代数结构
+\[
+ f:B\to E,\qquad b\mapsto(v(b),D(b)).
+\]
+提升给出截面 $g:C\to E$，满足 $gv=f$。原文随即称
+$g(c)=(c,D'(c))$ 中的 $D'$ 为“连续 $B$-导子”。这个称呼不能与一般情况下的 $D'v=D$ 并存。
+
+\lead{直接按环同态的定义计算。}
+平方零平凡扩张的乘法为
+\[
+ (c,\ell)(c',\ell')=(cc',c\ell'+c'\ell).
+\]
+因此 $g$ 的可加性及乘法相容性恰好给出
+\[
+ D'(c+c')=D'(c)+D'(c'),\qquad
+ D'(cc')=cD'(c')+c'D'(c).
+\]
+又因 $g$ 为 $A$-同态，$D'$ 在 $A$ 的像上为零，故 $D'$ 是 $A$-导子。
+条件 $gv=f$ 则给出
+\[
+ (v(b),D'(v(b)))=(v(b),D(b)),
+ \qquad D'v=D.
+\]
+若把 $D'$ 称为 $B$-导子，则依定义必须有 $D'v=0$，这会不当地强迫 $D=0$。
+
+\lead{具体核对。}
+取任意域 $k$，
+\[
+ A=k,\qquad B=C=k[t],\qquad v=1_{k[t]},
+\]
+全部赋离散拓扑。这些环可容许且可度量，$v$ 形式平展。此时
+\[
+ L=k[t]\,dt,\qquad D(t)=dt\ne0.
+\]
+条件 $D'v=D$ 要求 $D'=D$。而任何 $B$-导子 $C=B\to L$ 恒为零，故不可能是原文所称的 $B$-导子。
+
+正文改成“连续 $A$-导子”，保留 $D'v=D$。随后由完备微分模的表示性质，
+$D'=h\widehat d_{C/A}$；在稠密生成子集 $D(B)$ 上，
+\[
+ h\widehat v_{C/B/A}D=D,
+\]
+因而 $h\widehat v_{C/B/A}=1_L$，原命题的充分性证明得以继续。这里的修正不否定命题结论。
+
+\audit{J10-G02}{两项复形短正合列的符号核对}{补明识别中的负号；不是定理反例}
+\oldauditsrc{（20.6.16）--（20.6.17），分册印刷第142--143页／上传PDF第141--142页}
+为避免多重下标遮蔽符号，记
+\[
+ U=\Omega^1_{A/\Lambda}\otimes_A C,\quad
+ V=\Omega^1_{B/\Lambda}\otimes_B C,\quad W=\Omega^1_{C/\Lambda},
+ \qquad U\xrightarrow f V\xrightarrow g W.
+\]
+这里 $f,g$ 是原条目指定的自然映射，不假定 $gf=0$。
+三个两项复形分别为
+\[
+ K_L=(U\xrightarrow fV),\quad K=(U\xrightarrow{gf}W),\quad
+ K_R=(V\xrightarrow gW).
+\]
+给 $K$ 加上可缩复形 $(V\xrightarrow1V)$，得到
+\[
+ K'_1=U\oplus V,\qquad K'_0=W\oplus V,\qquad
+ d'(y,z)=(gf(y),z).
+\]
+原文所取映射为
+\[
+ \begin{array}{ll}
+ j_1(x)=(x,f(x)),&p_1(y,z)=z-f(y),\\
+ j_0(x)=(g(x),x),&p_0(y,z)=g(z)-y.
+ \end{array}
+\]
+先逐一核对：
+\[
+ d'j_1(x)=(gf(x),f(x))=j_0f(x),
+\]
+\[
+ p_0d'(y,z)=g(z)-gf(y)=gp_1(y,z).
+\]
+每个 $j_i$ 单射，每个 $p_i$ 满射，且
+$\Ker p_1=\operatorname{Graph}(f)$、
+$\Ker p_0=\operatorname{Graph}(g)$，所以确实得到逐次分裂的复形短正合列。
+
+\lead{负号从哪里产生。}
+用投影到 $K$ 的第一直和因子识别 $H_i(K')\simeq H_i(K)$。
+次数一的循环可写为 $(y,0)$，其中 $gf(y)=0$；于是
+\[
+ p_1(y,0)=-f(y).
+\]
+因此 $H_1(p)$ 是自然映射 $\Ker(gf)\to\Ker(g)$ 的相反数。
+次数零的同调类可用 $(w,0)$ 表示，且
+\[
+ p_0(w,0)=-w.
+\]
+因此 $H_0(p)$ 也是自然商映射 $\Coker(gf)\to\Coker(g)$ 的相反数。
+原证明省略了这两个符号。它们不破坏正合性，因为对模同态 $a$，
+\[
+ \Ker(-a)=\Ker a,\qquad\Im(-a)=\Im a.
+\]
+
+\lead{边界映射的正号。}
+取 $z\in\Ker g$。在 $p_1$ 下取提升 $(0,z)$，则
+\[
+ d'(0,z)=(0,z)=j_0(z).
+\]
+故连接同态为
+\[
+ \Ker g\longrightarrow\Coker f,\qquad z\longmapsto[z],
+\]
+正是正文（20.6.17.2）的自然映射。将上述两个由 $p$ 诱导的箭头改取相反数，就得到原定理使用的所有自然映射，正合列本身成立。
+
+\lead{伴随的次数下标修正（J10-T01）。}
+原文将 $\operatorname{Graph}(g)\subset W\oplus V$ 的补模写成
+$K_1(C/A/\Lambda)\oplus\{0\}$。该处在次数零，补模应为
+\[
+ K_0(C/A/\Lambda)\oplus\{0\}=W\oplus\{0\}.
+\]
+这是一处对象下标错误，与前面的负号问题分开处理。
+
+\audit{J10-N03}{“先取核再张量”与“先张量再取核”}{原文已有区别；译文不能将两者合并}
+\oldauditsrc{（20.6.14.5）、（20.6.21，i），分册印刷第141、144页／上传PDF第140、143页}
+原文上标 $C$ 的记号表示
+\[
+ \Upsilon^C_{B/A/\Lambda}
+ =\Ker\bigl(\Omega^1_{A/\Lambda}\otimes_A C
+       \to\Omega^1_{B/\Lambda}\otimes_B C\bigr).
+\]
+它与 $\Upsilon_{B/A/\Lambda}\otimes_B C$ 之间只有典范同态；一般不能直接识别。原文在（20.6.21）已经给出保证识别成立的平坦性条件，本报告不把此事当作原著错误。
+
+\lead{一个非平坦商的计算。}
+取特征不为2的域 $k$，
+\[
+ \Lambda=k,\qquad A=k[x],\qquad B=k[x]/(x^2),\qquad
+ C=B/(x)=k .
+\]
+有
+\[
+ \Omega^1_{A/k}\otimes_A B=B\,dx,\qquad
+ \Omega^1_{B/k}=B\,dx/(2x\,dx)=(B/(x))\,dx .
+\]
+因此
+\[
+ \Upsilon_{B/A/k}=(x)\,dx .
+\]
+由于 $x(x)=0$，该 $B$-模与 $k$ 同构，于是
+\[
+ \Upsilon_{B/A/k}\otimes_B C\simeq k.
+\]
+另一方面，张量以后，相关映射成为
+\[
+ k\,dx\xrightarrow{\ 1\ } k\,dx .
+\]
+它的核为零，即 $\Upsilon^C_{B/A/k}=0$。故典范映射在此例为
+$k\to0$，不是同构。
+
+\lead{原文的两个充分条件。}
+若 $C$ 对 $B$ 平坦，张量保持原正合列，结论成立。
+若 $\Omega^1_{B/\Lambda}$ 及 $\Omega^1_{B/A}$ 对 $B$ 平坦，
+令 $I=\Ker(\Omega^1_{B/\Lambda}\to\Omega^1_{B/A})$，则 $I$ 也平坦。
+把原正合列拆为
+\[
+0\to I\to\Omega^1_{B/\Lambda}\to\Omega^1_{B/A}\to0,
+\]
+\[
+0\to\Upsilon_{B/A/\Lambda}\to\Omega^1_{A/\Lambda}\otimes_A B\to I\to0,
+\]
+分别与 $C$ 张量；两列的右端平坦，故两次张量均保持左端单射。这才得到所需同构。
+
+\audit{J10-G01}{特征同态表示扩张类时的分裂条件}{补全原文的简略证明，并区分“一个L”与“所有L”}
+\oldauditsrc{（20.6.11），分册印刷第140页／上传PDF第139页}
+设
+\[
+\begin{gathered}
+ M=\Omega^1_{B/A}\otimes_B C,\qquad N=\Omega^1_{C/A},\qquad d:M\to N,\\
+ Y=\Ker d,\qquad I=\Im d,\qquad Q=\Coker d.
+\end{gathered}
+\]
+则原同态是限制映射诱导的
+\[
+ \alpha_L:\Coker\bigl(\Hom_C(N,L)\to\Hom_C(M,L)\bigr)
+ \longrightarrow\Hom_C(Y,L).
+\]
+
+若 $L$ 内射，任意 $Y\to L$ 可延拓到 $M$，故 $\alpha_L$ 满射。
+若 $a:M\to L$ 在 $Y$ 上为零，它先通过 $M/Y\simeq I$ 分解；
+再由内射性把 $I\to L$ 延拓到 $N$，故 $[a]=0$，$\alpha_L$ 单射。
+
+若 $Y$ 是 $M$ 的直和因子且 $N\to Q$ 分裂，则 $I$ 是 $N$ 的直和因子。
+同样两次延拓可由相应投影完成，不需要 $L$ 内射。
+
+反过来，假定 $\alpha_L$ 对\emph{每一个} $C$-模 $L$ 都双射。
+取 $L=Y$，满射性使 $1_Y$ 延拓为 $M\to Y$，故 $Y\subset M$ 分裂。
+再取 $L=I$，商映射 $M\to I$ 在 $Y$ 上为零，单射性给出
+$N\to I$，其在 $I$ 上的限制为恒等，故 $I\subset N$ 分裂，
+也即 $N\to Q$ 分裂。这给出原文所说的充要条件。
+
+若只对\emph{某一个} $L$ 有同构，不能作这个反推。例如 $L=0$ 时同构自动成立，
+并不包含任何分裂信息。正文保留原文“对所有 $L$”的限定。
+
+当 $N,Q$ 均投射时，$N\to Q$ 分裂，所以 $I$ 为投射模；
+$M\to I$ 也分裂，于是 $Y$ 为 $M$ 的直和因子。这说明原定理最后一句的条件为什么足够。
+
+\audit{J10-T03}{连续张量--Hom对应的标量环}{原式右端的C应为B}
+\oldauditsrc{（20.7.2）证明，分册印刷第148页／上传PDF第147页}
+该处使用的准确对应是
+\[
+ \HomCont_C(\Omega^1_{B/A}\otimes_B C,L)
+ \simeq \HomCont_B(\Omega^1_{B/A},L).
+\]
+从左到右限制为 $m\mapsto h(m\otimes1)$；
+从右到左把 $a:\Omega^1_{B/A}\to L$ 送到
+\[
+ m\otimes c\longmapsto c\,a(m).
+\]
+这两项操作互逆，连续性由张量积拓扑的泛性质给出。
+
+原文右端写成 $\HomCont_C(\Omega^1_{B/A},L)$。
+一般的 $\Omega^1_{B/A}$ 只有给定的 $B$-模结构，没有给定的 $C$-模结构，
+所以该式一般尚未定义。例如 $A=k,B=k[t],C=k[t,s]$ 时，环同态的方向
+$B\to C$ 不能给 $\Omega^1_{B/k}=k[t]\,dt$ 自动赋予 $C$-模结构。
+正文修正下标，而不是补造一个额外的标量作用。
+
+\audit{J10-C01}{作者对20.7.8的正式引文勘误}{依原作者勘误落实，不作为新发现}
+\oldauditsrc{勘误与增补清单三，A类，分册印刷第345页／上传PDF第344页}
+作者明确指定：
+\begin{quote}
+在（$0_{\mathrm{IV}}$，20.7.8）中，第149页倒数第9行，将（18.4.3）改为（18.5.4）；
+倒数第4行，将（18.4.1）改为（18.5.1）。
+\end{quote}
+这里讨论的是拓扑扩张类，因此应引用18.5的定义及结论。
+正文采用修正后的引文，脚注注明原写法；书末有关勘误的选译也收入这一项。
+这不表示清单三全文已经译入。
+
+\audit{J10-T02、J10-T04、J10-T05}{三处内部引文的核对}{对象与编号对照；不更改数学假设}
+（20.6.25）证明末尾用（18.3.4.2）指代 $u^1,v^1$，
+而命题陈述本身已分别给出（18.3.6.4）、（18.3.6.2）。
+正文采用这两个明确出处，并用（20.6.6.4）说明与复形构造相符。
+
+（20.7.11）证明所讨论的是
+\[
+ \Exalcotop_{B/A}(C,L)\to\HomCont_C(\Upsilon_{C/B/A},L),
+\]
+它是（20.7.10.1），不是原文所引的（20.7.8.1）。
+后者的两端都是扩张类模，与这里的目标不同。
+
+（20.7.13）将拓扑情形化为直极限的原依据应为（20.6.25）的导子及扩张类正合列，
+不是（20.6.23）的非完美性模正合列。正文作相应修正。
+三项均为核对实际源对象、目标对象和证明用途后完成的引用修正。
+
+\audit{J10-T06}{形式幂级数例子的零变量边界}{两项附带断言须排除n=0}
+\oldauditsrc{（20.7.16），分册印刷第152页／上传PDF第151页}
+原文考虑有限域扩张 $k'/k$ 和
+$B=k'[[T_1,\ldots,T_n]]$。其完备微分模有限生成的说明仍适用；
+但后面关于分式域具有无限超越次数、在特征零时未完备微分模不有限生成的断言，
+须把 $n\ge1$ 写明。
+
+当 $n=0$ 时，$B=k'$，其分式域仍为 $k'$，在 $k$ 上超越次数为零。
+若 $\operatorname{char}k=0$，有限扩张 $k'/k$ 可分。对任意 $a\in k'$，
+最小多项式 $f$ 满足
+\[
+ 0=d(f(a))=f'(a)\,da,\qquad f'(a)\ne0,
+\]
+从而 $da=0$，故 $\Omega^1_{k'/k}=0$，当然是有限型模。
+这仅否定把原文后两项断言延伸到零变量的读法，不否定 $n\ge1$ 的例子。
+
+正文在后两项断言前加入 $n\ge1$，脚注说明边界；
+并未把这个条件加到前面的（20.7.15）或其初始适用性上。
+本轮没有把“非零变量时分式域的无限超越次数”改写成一个新的独立证明。
+
+\audit{J10-G03}{完备化后的正合性不能被稠密性替换}{展开原文允许的结论，保留其限制}
+\oldauditsrc{（20.7.17）、（20.7.20），分册印刷第152--153页／上传PDF第151--152页}
+原文明确说完备化后的序列不必正合；可度量情形给出的结论是末箭头满射，
+以及前一箭头的像在中间核中\emph{稠密}。译文保持这一区别。
+
+取可数的相容开理想商，令
+\[
+ F_k=\Omega^1_{B_k/A}\otimes_{B_k}C_k,\quad
+ G_k=\Omega^1_{C_k/A},\quad H_k=\Omega^1_{C_k/B_k}.
+\]
+每一级有 $F_k\to G_k\to H_k\to0$；转移映射是满射。
+令 $I_k=\Im(F_k\to G_k)$，则 $I_{k+1}\to I_k$ 也满射：
+先在 $F_k$ 中表示一个像元素，再沿 $F_{k+1}\to F_k$ 提升即可。
+
+\lead{末箭头的满射性。}
+给定相容族 $(h_k)\in\varprojlim H_k$。
+先取 $g_0\in G_0$ 映到 $h_0$。
+若已选 $g_k$，任取 $h_{k+1}$ 的提升 $\widetilde g_{k+1}$；
+其在 $G_k$ 的像与 $g_k$ 之差属于 $I_k$。
+利用 $I_{k+1}\to I_k$ 满射，把这个差提升并从
+$\widetilde g_{k+1}$ 中减去，得到同时映到 $g_k$ 和 $h_{k+1}$ 的 $g_{k+1}$。
+归纳得到相容族，证明 $\varprojlim G_k\to\varprojlim H_k$ 满射。
+
+\lead{中间像的稠密性。}
+设 $g\in\Ker(\varprojlim G_k\to\varprojlim H_k)$，固定 $k$。
+则 $g_k\in I_k$，可取 $f_k\in F_k$ 映到它。
+利用满转移映射逐级提升并向低级投影，得到相容族 $f\in\varprojlim F_k$。
+$f$ 的像与 $g$ 在第 $k$ 个离散商中相同，故该像在中间核中稠密。
+
+这个论证并未使对每个 $k$ 选取的 $f$ 都成为同一个精确原像。
+一般还缺少控制 $\Ker(F_k\to I_k)$ 的条件，不能将上式直接加强为正合。
+“稠密不等于相等”甚至在最熟悉的拓扑群中也可见：
+整数在 $p$-进整数环中稠密，但二者不是同一个集合。
+这里只用此例说明逻辑区别，不把它冒充（20.7.17）的环同态反例。
+
+\audit{J10-N01、J10-N02、J10-N04}{本轮保留的三个适用边界}{解释性注释，不增加原文断言}
+\lead{非完美性模为零并不等价于一般环的形式光滑。}
+取 $A=B=k$、$C=k[\epsilon]/(\epsilon^2)$。
+因为 $\Omega^1_{B/A}=0$，所以 $\Upsilon_{C/B/A}=0$。
+然而令 $E=k[t]/(t^3)$、$J=(t^2)$，则 $J^2=0$；
+同态 $C\to E/J$，$\epsilon\mapsto\bar t$ 无法提升到 $E$：
+任何提升必须把 $\epsilon$ 送到 $t+a t^2$，其平方在 $E$ 中为非零的 $t^2$。
+故 $C/k$ 不形式光滑。原文（20.6.2）仅说形式光滑蕴涵非完美性模为零；
+（20.6.3）中域扩张的等价命题没有因此被否定。
+
+\lead{普通Hom复形不被静默替换为导出Hom。}
+（20.6.6）中的
+$H^i(K_\bullet,L)=H^i(\Hom_C(K_\bullet,L))$
+按原文定义是普通Hom复形的上同调。
+本轮没有把它写成任意情形的 $\operatorname{Ext}$ 群，
+也没有默认 $K_\bullet$ 的各项投射。
+
+\lead{历史宣告与已经给出的证明分开。}
+（20.6.26）宣布两项复形与余法丛及后续对偶性理论的关系，
+并在其所列假设下说明相应同调的识别。
+本轮保留其历史内容与证明详略，没有仅凭“同调相同”补称“一般同伦等价”，
+也没有用现代余切复形理论替代原文。
+（20.7.11）的一般拓扑论证仍沿原文的直极限方式叙述；
+本报告没有把有限离散层面的核对宣称为该条所有拓扑细节的独立审定。
+
+\section*{本轮范围与可追踪性}
+\addcontentsline{toc}{section}{本轮范围与可追踪性}
+本版新增的数学正文为20.6和20.7，共四份分文件源码。
+既有数学正文文件不因本轮而整体重写；上一版已标出的H8-P01等问题仍按原状态保留。
+本轮所作引文修正、下标修正及补证在正文脚注和本报告中对应列出。
+原著目录及已有索引中的页码仍指原出版物，不冒充新合订本页码。
+
+下一连续接续位置为§21“特征 $p$ 的环中的微分”的章首说明及（21.1.1）。
+本轮只为核定接续点而读取21.1的开头，没有将它计入已译正文。
+第0章§§21--23、第IV章主体及第V卷预备笔记余文尚未连续译完。
+
+技术编译、原条目和公式编号覆盖核对、渲染检查的实际结果保存在工程目录
+\texttt{checks/}；这些检查不代替全部证明的形式化验证或出版级逐句审校。
+
+% END reports/tenth_audit.tex
+
+\part*{历史核查记录：第九版}
+\addcontentsline{toc}{part}{历史核查记录：第九版}
+\NewNote{以下I9条目保留第九版的定点判断和范围说明，不表示本轮已重新审定全部历史核查。}
+
+% BEGIN reports/ninth_audit.tex
+\head{第九版新核查：第0章20.1--20.5}
+\source{EGA IV第一部分，分册印刷第116--136页，上传PDF第115--135页；止于20.5.15。作者勘误据IV第四部分，印刷第345、347--348页，上传PDF第344、346--347页}
+本轮从§20章首说明接续，完整译入20.1“导子与代数扩张”、20.2“导子的函子性质”、20.3“拓扑环上的连续导子”、20.4“主部与微分”和20.5“微分模的基本函子性质”。共49个原著编号条目，保留57个原编号公式或交换图标签。原文没有编号的中间式没有擅加原著编号；为适应默认版心，少数长交换图分作相接的两段。
+
+新增正文采用核实后的陈述和证明，原文错误及依据放在脚注。正式勘误、译者的数学修补、单纯记号或引用调整，分别记录。本轮没有重新逐句审定此前的全部译文与历史报告。下一接续点为20.6章首及（20.6.1）；已读取的20.6开头不计入已译正文。
+
+\section*{本轮结论概览}
+\addcontentsline{toc}{section}{本轮结论概览}
+\begin{longtable}{@{}p{.17\linewidth}p{.19\linewidth}p{.55\linewidth}@{}}
+\toprule 标识 & 原条目 & 判定与正文处理\\\midrule\endhead
+I9-E01 & 20.4.13(ii) & 原微分模同构按字面不成立。改为沿增广张量到基环后的同构；给出特征2反例与一般表示。\\
+I9-E02 & 20.5.4.2 & 一般交换方块中的导子图源对象错误。改用 $B\to B'$ 的自然性图，不改变微分模的典范映射。\\
+I9-E03 & 20.3.2 & 若只要求满同态连续，导子下降后未必连续。正文明确商拓扑充分条件，并给出缺此条件的检验例。\\
+I9-C01--C05 & 20.1.2；20.2.1；20.4.6--20.4.13 & 作者已有勘误：标量环、微分符号、相应证明等式、去掉整闭性。另收录20.5.4的上标修正。\\
+I9-T01--T08 & 各相应条目 & 加法性、开理想、复合次序、源靶及交叉引用的明确化或修正，不统称为八个错误定理。\\
+I9-N01--N05 & 各相应条目 & 双模作用、群结构、连接同态加法性、分裂张量证明及交叉幂等元的说明。属于补明步骤。\\
+\bottomrule
+\end{longtable}
+
+\audit{I9-E01}{平方零扩张的微分模：原同构缺少沿增广取商}{原断言不成立；有具体反例及修订后的完整证明}
+\oldauditsrc{（$0_{\mathrm{IV}}$，20.4.13，ii），分册印刷第127页／上传PDF第126页}
+原文设 $L$ 为 $A$-模，$B=\mathrm D_A(L)=A\oplus L$，声称典范映射 $L\to\Omega^1_{B/A}$，$x\mapsto dx$，是双射；随后又把所用导子称为“$B$-导子”。这里有两个不同问题。任何 $B$-导子 $B\to M$ 都为零；即使把它改为 $A$-导子，原来的微分模同构仍然不成立。
+
+\lead{一个二维计算足以反驳原式。}
+令 $k=\mathbb F_2$，$L=k\epsilon$，$B=k[\epsilon]/(\epsilon^2)$。由多项式代数的微分模与商代数关系，
+\[
+ \Omega^1_{B/k}
+ =B\,d\epsilon\big/\bigl(d(\epsilon^2)\bigr)
+ =B\,d\epsilon\big/(2\epsilon\,d\epsilon)
+ =B\,d\epsilon.
+\]
+因此 $\Omega^1_{B/k}$ 作为 $k$-向量空间有基 $d\epsilon,\epsilon d\epsilon$，维数为2；而 $L$ 的维数为1。映射 $a\epsilon\mapsto a\,d\epsilon$ 不满射。
+
+也可以不预先使用商代数微分公式。对任意 $m\in B$，令
+\[
+ D_m(a+b\epsilon)=b\,m\quad(a,b\in k).
+\]
+在特征2下，
+\[
+ (a+b\epsilon)D_m(c+d\epsilon)
+ +(c+d\epsilon)D_m(a+b\epsilon)=(ad+bc)m,
+\]
+恰等于 $D_m((a+b\epsilon)(c+d\epsilon))$。故每个 $m\in B$ 都能作为一个导子的 $D_m(\epsilon)$；这说明代表导子函子的微分模必须容纳自由的 $B$-生成元 $d\epsilon$。特别取 $m=1$，相应的 $B$-线性映射 $\Omega^1_{B/k}\to B$ 把 $\epsilon d\epsilon$ 映到 $\epsilon\ne0$，从而直接证明 $\epsilon d\epsilon\ne0$。
+
+\lead{正文采用的正确陈述。}
+设 $\varepsilon:B=A\oplus L\to A$ 为增广，则
+\[
+ L\xrightarrow{\sim}\Omega^1_{B/A}\otimes_{B,\varepsilon}A,
+ \qquad x\longmapsto dx\otimes1.
+\]
+这不是额外要求 $2$ 可逆，也不要求 $L$ 有限生成；它对任意交换环 $A$ 及任意 $A$-模 $L$ 成立。
+
+\begin{proof}
+对任意 $A$-模 $M$，通过增广把它视为 $B$-模。于是 $L$ 在 $M$ 上作用为零。每个 $A$-导子 $D:B\to M$ 在 $A$ 上为零，由其在 $L$ 上的限制 $h$ 唯一决定；$h$ 是 $A$-线性的。反之，任意 $h\in\Hom_A(L,M)$ 定义
+\[
+ D(a,x)=h(x).
+\]
+由于 $(a,x)(b,y)=(ab,ay+bx)$，有
+\[
+ D((a,x)(b,y))=a h(y)+b h(x)
+ =(a,x)D(b,y)+(b,y)D(a,x).
+\]
+所以这是导子，得到函子同构
+\[
+ \Hom_A(L,M)\simeq\Der_A(B,M)
+ \simeq\Hom_A(\Omega^1_{B/A}\otimes_B A,M).
+\]
+此同构由 $x\mapsto dx\otimes1$ 诱导，故该映射双射。
+\end{proof}
+
+\lead{完整微分模的表示。}
+更精确地，令
+\[
+ Q=(B\otimes_A L)/R,
+\]
+其中 $R$ 为由 $x\otimes y+y\otimes x$（$x,y\in L\subset B$）生成的 $B$-子模。则
+\[
+ \Omega^1_{B/A}\simeq Q.
+\]
+证明如下。给定 $B$-模 $M$，$A$-导子 $D:B\to M$ 相当于 $A$-线性映射 $h:L\to M$，另满足
+\[
+ xh(y)+yh(x)=0\quad(x,y\in L),
+\]
+因为 $xy=0$；这正是从 $B\otimes_A L$ 到 $M$ 的 $B$-线性映射零化 $R$ 的条件。因此 $Q$ 具有微分模的泛性质。再沿增广与 $A$ 张量，所有这些关系的系数 $x,y$ 均变成零，得到前述同构。这个表示同时解释了原文为何在一般 $B$-模目标上漏掉了条件。
+
+\lead{验证脚本的作用。}
+工程附带的有限域脚本枚举 $\mathbb F_2[\epsilon]/(\epsilon^2)$ 的4个元素，逐项核查每个 $D_m$ 的加法性、Leibniz公式及 $D_1(\epsilon)=1$。程序只是这个有限例子的可复算核对；任意 $A,L$ 的结论由上面的代数证明承担，不以有限枚举代替一般证明。
+
+\audit{I9-E02}{一般基环方块中的微分自然性图}{源对象与线性类别错误；典范微分模映射本身仍成立}
+\oldauditsrc{（20.5.4.2），分册印刷第130页／上传PDF第129页}
+给定交换环同态图
+\[
+\begin{tikzcd}
+ B\arrow[r,"v"]&B'\\
+ A\arrow[r,"u"']\arrow[u]&A'\arrow[u]
+\end{tikzcd}
+\]
+总有典范 $B'$-线性映射
+\[
+ \theta:\Omega^1_{B/A}\otimes_B B'\longrightarrow\Omega^1_{B'/A'}.
+\]
+原文的（20.5.4.2）下行却为 $B'\xrightarrow{1_{B'}}B'$，左竖箭头记作 $d_{B/A}\otimes1$，并称为 $A'$-同态图。在一般方块下，$d_{B/A}$ 的定义域是 $B$；不能不经构造就把它张量成一个定义在整个 $B'$ 上的导子。
+
+\lead{直接检验。}
+取 $A=B=A'=k$、$B'=k[t]$，$u=1_k$，其余为结构嵌入。此时
+\[
+ \Omega^1_{B/A}\otimes_B B'=0,
+ \qquad\Omega^1_{B'/A'}=k[t]\,dt.
+\]
+原图的左竖箭头只能为零；若右下角仍为 $B'$、下行仍为恒等，则交换性将给出 $d_{k[t]/k}=0$。但求导 $f(t)\mapsto f'(t)$ 是 $k$-导子，且将 $t$ 映为1，故 $dt\ne0$。这反驳原图，而不是反驳 $\theta$ 的存在性。
+
+\lead{正文的正确方块。}
+\[
+\begin{tikzcd}[column sep=huge]
+ \Omega^1_{B/A}\otimes_B B'\arrow[r,"\theta"]&\Omega^1_{B'/A'}\\
+ B\arrow[u,"{b\mapsto db\otimes1}"]\arrow[r,"v"']&B'\arrow[u,"d_{B'/A'}"'].
+\end{tikzcd}
+\]
+这是 $A$-线性映射的交换图，交换性逐元表达为
+\[
+ \theta(db\otimes1)=d_{B'/A'}(v(b)).
+\]
+它正是（20.5.2）、（20.5.3）构造的复合。除非另给出结构，不能把左下角 $B$ 称为 $A'$-模。
+
+若额外假设 $B'=B\otimes_A A'$，则确可定义
+\[
+ D'(b\otimes a')=db\otimes a',
+\]
+并核对它是 $A'$-导子。这个特殊情形是下一命题的场景，不能提前当成（20.5.4）的一般假设。作者正式勘误还补了同页目标微分模的上标 $1$；那项是排印修正，不包含本报告指出的源对象修正。
+
+\audit{I9-E03}{连续导子的下降需要拓扑条件}{原文只要求连续时不足；正文明确商拓扑充分版本}
+\oldauditsrc{（20.3.2）对（20.1.4）的连续推广，分册印刷第122页／上传PDF第121页}
+代数版本给出扩张 $0\to L\to E\xrightarrow p C\to0$ 的自等价与 $\Der_A(C,L)$ 的对应。连续版本中，从连续映射 $D':E\to L$、$D'|_L=0$ 推出下降后的 $D:C\to L$ 连续，必须核查 $C$ 的拓扑。原文在本处仅说明“当然要假设 $p$ 连续”。本轮对其按字面的范围作检验，不把未写出的商拓扑假设静默加入原陈述。
+
+\lead{反例的全部对象。}
+取域 $k$，令
+\[
+ C=k[x_1,x_2,\ldots],\qquad
+ I_n=(x_i\mid i\ge n).
+\]
+以 $(I_n)_{n\ge1}$ 为 $C$ 的零邻域基。这是分离的线性环拓扑：各 $I_n$ 是双边理想，且任意非零多项式只涉及有限多个变量，故不属于所有 $I_n$。
+
+令 $\varepsilon:C\to k$ 为把所有变量映到零的增广，并令 $L=k$ 为通过 $\varepsilon$ 定义的离散 $C$-双模。作用连续，因为 $I_1=\Ker\varepsilon$ 是开理想且零化 $L$。取平方零扩张
+\[
+ E=\mathrm D_C(L)=C\oplus k,
+ \quad(c,l)(c',l')=(cc',\varepsilon(c)l'+\varepsilon(c')l),
+\]
+但给 $E$ 赋予离散拓扑。$p:E\to C$ 是连续满同态，$L$ 的子空间拓扑也是离散的；然而 $C$ 的上述尾变量拓扑不是 $p$ 的商拓扑，后者应为离散拓扑。
+
+\lead{不连续导子对应连续自等价。}
+定义 $D:C\to k$ 为多项式所有一次项系数之和。由于每个多项式只有有限项，此定义有意义；$D(x_i)=1$，且
+\[
+ D(fg)=\varepsilon(f)D(g)+\varepsilon(g)D(f).
+\]
+这可由乘积的一次项逐项计算得到，故 $D$ 是 $k$-导子。但每个 $I_n$ 都含 $x_n$，且 $D(x_n)=1$，所以 $\Ker D$ 不包含任何 $I_n$；目标离散，因而 $D$ 不连续。
+
+另一方面，
+\[
+ F:E\longrightarrow E,\qquad F(c,l)=(c,l+D(c))
+\]
+是固定商 $C$ 和核 $L$ 的 $k$-扩张自等价，逆为 $(c,l)\mapsto(c,l-D(c))$。两个映射在离散空间 $E$ 上都连续。因此只假设 $p$ 连续时，连续自等价不一定来自连续导子。代数对应的唯一性还保证不存在另一个连续导子产生同一个 $F$。
+
+\lead{正文采用的充分条件与证明。}
+正文要求：$L$ 带 $E$ 的子空间拓扑，$C$ 带 $p$ 诱导的商拓扑。设 $F$ 为连续自等价，则 $D'=F-1_E$ 连续，值落在 $L$，故作为到子空间 $L$ 的映射仍连续。它在 $L$ 上为零，下降为唯一 $D:C\to L$。由商拓扑的定义，$D\circ p=D'$ 连续蕴涵 $D$ 连续。反之，连续导子 $D$ 给出连续 $F=1_E+D p$，其逆 $1_E-Dp$ 也连续。于是连续版本的群同构成立。
+
+本项只说明原文字面所列条件不足，以及上述明确版本充分；不宣称商拓扑对每个个别扩张都是必要条件。若采用的范畴从定义上只容许严格的拓扑扩张，则应把这一约定写明，反例即不在该较小范畴中。§18.5的 $\Exantop$ 则是离散商扩张群的归纳极限，原书还提醒它不直接等同于一个拓扑扩张集合；不能仅凭该记号替本处补上隐含拓扑约定。
+
+\audit{I9-C01--C05}{作者正式勘误的落实}{五项文字修订及一项排印修订；不是六个新错误定理}
+\oldauditsrc{勘误清单三Err$_{\mathrm{IV}}$10--14，分册第347--348页；A类20.5.4，第345页}
+\begin{enumerate}[label=\arabic*)]
+\item （20.1.2）末：将 $a\in A$、$aD$、“$A$-模”换为 $b\in B$、$bD$、“$B$-模”。这是自然标量结构的加强；原来限制标量到 $A$ 的说法本身不假。
+\item （20.2.1）：系数模同态诱导的导子映射为 $B$-线性；限制基环得到的映射也为 $B$-线性，而不是仅用关于基环的双同态来描述。
+\item （20.4.6.1）：外微分统一为 $d=p_2-p_1$；微分 $dx$ 为 $1\otimes x-x\otimes1$ 的类。
+\item （20.4.8）证明：与上一约定一致的关系为 $p_1=p_2-d$。不能只改定义，不改后续等式。
+\item （20.4.13，iv）：删除 $A$ 整闭的额外条件。若 $A\subseteq B$ 为整环，$B$ 整于 $A$，分式域扩张可分，则 $\Omega^1_{B/A}$ 仍是挠 $B$-模。用最小多项式乘上 $0\ne a\in A$ 清分母，得 $af'(x)dx=0$，且 $af'(x)\ne0$。
+\item （20.5.4）：目标微分模记号补上遗漏的上标 $1$。它与I9-E02中的一般自然性图问题分开记录。
+\end{enumerate}
+所有项目直接采用作者修订后的正文，脚注说明初版差异。书末增补这六条勘误的选译；并未声称勘误清单三其余部分已经全部译完。
+
+\audit{I9-T01--T08}{附加条件、复合次序和引文校订}{分别定位；不把所有修订计作命题错误}
+\lead{T01：加法性。}
+（20.1.1）末句的逆向表述，明确说“一个加法映射 $D$”。导子定义本来要求加法性；原证明中的 $D=v-v_0$ 已有此性质。正文的明确化防止把Leibniz等式单独当作导子定义。
+
+\lead{T02：扩张同态的引文号。}
+（20.2.2）实际使用的三种映射是改变系数模、拉回扩张和限制基环；其定义分别在18.3.6.1、18.3.6.2、18.3.6.4。原文指向18.3.1、18.3.3、18.3.4中的编号不能定位这些映射。正文按源靶改引，并没有更换函子本身。
+
+\lead{T03：结构同态少了复合。}
+在 $A\xrightarrow u B\xrightarrow v C$ 的情形中，$\mathrm D_C(L)$ 的 $A$-结构为
+\[
+ t\longmapsto(v(u(t)),0).
+\]
+原文第120页写成 $(u(t),0)$，第一分量还在 $B$ 中。正文补上 $v$；数学意义为恢复原结构同态。
+
+\lead{T04：离散商必须来自开理想。}
+（20.3.5）指标集合中的 $\mathfrak j\subset A$、$\mathfrak k\subset B$ 明确要求为开双边理想；这与原证明使用离散商环一致。对连续导子取核中的开理想后，还要与零化 $L$ 的开理想相交，才能把 $L$ 看成商环双模。此缩小不损失连续性，也不改极限范围。
+
+\lead{T05：20.3.8的假设定位。}
+其两条序列分别应在20.3.6和20.3.7的假设下讨论；原引20.3.5、20.3.6，前一个没有所需的环 $C$，后一个未采用交换代数限制。正文按实际序列修正。
+
+\lead{T06：形式平展推论中的箭头。}
+（20.5.8）的源为 $\Omega^1_{B/A}\otimes_B C$，故引用20.5.2.4；原引20.5.3.3的源为 $\Omega^1_{C/A}$，是另一条箭头。形式平展性使第一条箭头双射，结论不变。
+
+\lead{T07：$S^{-1}A$ 的定义域。}
+（20.5.9.1）允许任意乘法集 $S\subseteq B$，结论保持。后面的公式20.5.9.2还写 $S^{-1}A$，故正文明确这个附加公式中的 $S$ 取自 $A$，其在 $B$ 中的像继续记为 $S$。不能拿 $B$ 中任意元素直接作为 $A$ 的分母。
+
+\lead{T08：20.5.12.3后的复合。}
+原定义18.3.8.1给出
+\[
+ \eta:\Hom_C(\mathfrak k/\mathfrak k^2,L)
+ \xrightarrow{\sim}\Exalcom_B(C,L),
+\]
+而连接映射为 $\partial:\Der_A(B,L)\to\Exalcom_B(C,L)$。因此从导子到余法向模的 $\Hom$ 的映射应为
+\[
+ \varphi=\eta^{-1}\circ\partial,
+\]
+而不是原文的 $\partial\circ\eta^{-1}$。后一复合源靶不合。若将 $D$ 对应到 $\partial(D)$，按构造，$\eta^{-1}(\partial(D))$ 就是 $x\bmod\mathfrak k^2\mapsto D(x)$；这也逐元验证它是预复合 $\delta_{C/B/A}$ 的同态。另一映射 $\psi=v^1\circ\eta$ 保持原方向。
+
+\audit{I9-N01--N05}{证明步骤和结构数据的补明}{补证与澄清，不作为原断言反例}
+\lead{N01：20.1.1不假设 $p$ 满射。}
+该条只给出 $p:E\to C$ 的平方零核和一个提升 $v_0:B\to E$。所需的是核上的 $B$-双模结构：
+\[
+ b\cdot z=v_0(b)z,\qquad z\cdot b=zv_0(b).
+\]
+若换另一提升，其与 $v_0$ 之差属于核，乘以 $z$ 后为零。因此作用与提升无关。不必也不能在未假设 $p$ 满射时，将核当然地赋予整个 $C$ 的作用。正文与脚注明确这一点，避免校订者自己引入多余假设。
+
+\lead{N02：扩张自等价的群结构。}
+以 $F_D=1_E+D p$ 记相应自等价。因 $pD=0$，有
+\[
+ F_{D_1}F_{D_2}=1_E+(D_1+D_2)p,
+ \qquad F_D^{-1}=1_E-Dp.
+\]
+这核实20.1.4中的群同构，而非仅集合双射。
+
+\lead{N03：连接映射的加法性。}
+将 $D_1,D_2$ 对应的扩张先沿商 $C$ 取纤维积，核变为 $L\oplus L$，结构映射的核分量为 $(D_1,D_2)$。再沿加法 $L\oplus L\to L$ 推出，核分量变为 $D_1+D_2$。故 $\partial(D_1+D_2)=\partial(D_1)+\partial(D_2)$。这补明了原文五处正合性之外，连接映射确为群同态的步骤。
+
+\lead{N04：任意基变换下的核。}
+（20.5.5）的结论不需要 $A'$ 对 $A$ 平坦。关键不是 $p:B\otimes_A B\to B$ 满射，而是它有 $A$-线性截面 $j_1$。因此
+\[
+ 0\longrightarrow\mathfrak J_{B/A}\longrightarrow B\otimes_A B
+ \xrightarrow p B\longrightarrow0
+\]
+分裂，与任意 $A'$ 张量后仍正合。又因为张量积与商相容，且理想平方的像等于像理想的平方，得到主部代数的基变换同构。最后用 $P^1_{B/A}=B\oplus\Omega^1_{B/A}$ 的分裂，取出微分模部分。正文已将这一理由写明。
+
+\lead{N05：乘积代数的交叉分量。}
+若 $B=B_1\times B_2$，令 $e_1,e_2$ 为对应正交幂等元。$e_1\otimes e_2$、$e_2\otimes e_1$ 在乘法映射下为零，且本身幂等，故属于 $\mathfrak J^2$。整个交叉分量由它们支撑，因而在一阶主部中消失。其余两分量正好给出 $P^1_{B_1/A}$、$P^1_{B_2/A}$；这是20.4.13(iii)的补明步骤。
+
+\section*{底本、外部核验及检查范围}
+\addcontentsline{toc}{section}{底本、外部核验及检查范围}
+本轮翻译逐段依据上传法文原页；公式、上下标和交换图与页面图像对照，不把自动提取中丢失的上标当成作者错误。第二底本为IV第四部分的作者勘误。微分模与导子的泛性质另外参照Stacks Project的Tag 00RM、00RO作交叉核验；网页内容没有替代原文翻译，也没有被冒充作者勘误。
+
+工程保存新增条目与公式标签清单、旧文件保留校验、有限例子验证脚本以及实际编译和渲染检查结果。文件保留校验仅说明哪些既有内容没有变动，不证明这些内容已无逻辑问题。单文件与分文件构建一致性，仅说明交付两种源码产生同一版面，不是独立数学审稿。
+
+当前第0章已经连续处理至20.5.15；20.6--20.7、§§21--23、第IV章主体及第V卷预备笔记余文尚未译完。历史H8-P01等待核事项继续保留；本轮没有将这些问题宣布解决。
+
+% END reports/ninth_audit.tex
+
+\part*{历史核查记录：第八版}
+\addcontentsline{toc}{part}{历史核查记录：第八版}
+\NewNote{以下H8条目保留第八版原有判断和范围说明。本轮未重新审定全部旧稿；H8-P01的拓扑范围仍属待核事项。}
+
+% BEGIN reports/eighth_audit.tex
+\head{第八版新核查：第0章19.7--19.10}
+\source{EGA IV第一部分，原分册印刷第104--116页；上传PDF第103--115页。作者勘误据IV第四部分，印刷第345、347页；上传PDF第344、346页}
+本轮接续第七版的（19.6.7），连续处理19.7的章首至（19.10.4）末尾。第0章§19由此全部收入工作译稿。本轮新增32个原著编号条目、原编号公式（19.9.8.1）及两幅交换图。原文明确省略的证明仍标明省略，未以译者补写冒称原文。
+
+本版正文采用已经核实的修订陈述；原文错误及理由写入脚注，较长反例与补证保存在本报告。必须特别说明：（19.7.1.5）的较弱拓扑版本本轮\textbf{没有取得完整验证，也没有取得反例}。正文明确给出足以覆盖后文实际应用的完备局部充分版本，底本较弱版本的完整译文保存在下文H8-P01。该处理是范围限定，不是把一个尚未否定的原命题宣布错误。
+
+\section*{本轮结论概览}
+\addcontentsline{toc}{section}{本轮结论概览}
+\begin{longtable}{@{}p{.17\linewidth}p{.19\linewidth}p{.55\linewidth}@{}}
+\toprule 编号 & 原条目 & 判定与正文处理\\\midrule\endhead
+H8-E01 & 19.10.3(i) & 一般离散环范围内的原断言有反例；改为核理想 $I=I^2$ 的准确判据，并给双向证明。\\
+H8-C01--C03 & 19.8.3--19.8.8 & 作者已有正式勘误：局部同态、引文号、$B$-模。已写入正文。\\
+H8-W01 & 19.8.7(iii) & 删除对已撤销19.3.12的有效性依赖；仅保留19.3.10支持的范围。\\
+H8-T01--T03 & 19.7.1.6；19.8.8；19.10.3(iv) & 分别处理引用错号、非唯一提升误称唯一、零基环边界。\\
+H8-P01--P02 & 19.7.1.5；19.7.3(i) & 较弱拓扑版本待核；正文采用已证明的充分版本，原文完整存档。\\
+H8-N01--N04 & 各相关条目 & 参数记号、$W(k)$含义、历史问题状态及相对形式光滑的逻辑前提。不是四个错误定理。\\
+\bottomrule
+\end{longtable}
+
+\audit{H8-E01}{满同态形式光滑的准确判据}{原断言在其所列的一般范围内不成立；有反例及完整修订证明}
+\oldauditsrc{（$0_{\mathrm{IV}}$，19.10.3，i），原分册第116页／PDF第115页}
+原文在证明满同态 $\rho:A\to B$ 形式非分歧后，又说：“反之，$B$ 只有在 $\rho$ 为双射时才形式光滑。”该段仅假设环离散，没有局部性、诺特性或核有限生成的限制，因此不能把局部诺特环中可能成立的结论移用到这里。
+
+\lead{最小型反例。}
+取非零域 $k$，$A=k\times k$，$B=k$，并令 $\rho(a,b)=a$。核为 $I=0\times k$，满足
+\[
+ I\ne0,\qquad I^2=I.
+\]
+因此 $\rho$ 满而不单。令 $e=(0,1)$；它既属于 $I$ 又满足 $e^2=e$。给定离散 $A$-代数 $E$、幂零理想 $J\subset E$ 和 $A$-同态 $B\to E/J$，结构同态 $\alpha:A\to E$ 将 $e$ 映到 $J$。$\alpha(e)$ 一方面幂零，另一方面幂等，故为零：若 $J^N=0$，则 $\alpha(e)=\alpha(e)^N=0$。所以 $\alpha$ 通过第一投影唯一分解，给出 $B\to E$。这不仅是形式光滑，而且是形式平展的反例。
+
+\lead{准确版本。}
+对任意满环同态 $\rho:A\to B$，设 $I=\Ker\rho$。以下条件等价：
+\[
+\begin{aligned}
+ &B\text{ 是形式光滑 }A\text{-代数};\\
+ &I=I^2;\\
+ &B\text{ 是形式平展 }A\text{-代数}.
+\end{aligned}
+\]
+\begin{proof}
+满同态本来就形式非分歧，所以只须证明前两个条件等价。
+
+假设形式光滑。以 $A/I^2$ 为测试 $A$-代数，取平方零理想 $I/I^2$。$B=A/I$ 的恒等同态提升为 $A$-同态 $s:B\to A/I^2$。对每个 $a\in I$，因 $s$ 为 $A$-同态，其在 $A/I^2$ 中的类等于 $s(0)=0$，故 $a\in I^2$。于是 $I\subseteq I^2$；反向包含恒成立，故 $I=I^2$。
+
+反之，设 $I=I^2$。给定测试代数 $E$、幂零理想 $J$、商同态 $\pi:E\to E/J$ 及 $A$-同态 $f:B\to E/J$。令 $\alpha:A\to E$ 为结构同态。交换条件为 $\pi\alpha=f\rho$，所以 $\alpha(I)\subseteq J$。若 $J^N=0$，则由 $I=I^N$ 得 $\alpha(I)\subseteq J^N=0$。因此存在唯一环同态 $\widetilde f:A/I\to E$ 使 $\widetilde f\rho=\alpha$，并且 $\pi\widetilde f=f$。这正是所需唯一提升。
+\end{proof}
+
+\lead{与局部情形的界限。}
+若再假设 $A$ 为局部环，$I$ 为有限生成真理想，则 $I\subseteq\mathfrak m_A$，$I=I^2$ 及Nakayama引理给出 $I=0$。所以在此附加范围内，原句可以成立。特别地，这不反驳19.7讨论的诺特局部环形式光滑性判据。一般判据本身只涉及提升性质，不能不加条件地据此宣称有限表示或平坦性。
+
+\lead{外部交叉核验。}
+Stacks Project的形式光滑定义及提升到平方核商的判据，与上述证明一致（Tag 00TH）；形式平展的定义为唯一提升（Tag 00UP）。反例也可看成幂等元局部化：取 $s=(1,0)$，$A_s\simeq k$，而局部化形式平展（Tag 00UP，Lemma 10.150.5）。这些仅用于交叉核验；正文中的判据及证明由本次核查明确给出，不冒称底本或作者勘误已有此修订。
+
+\audit{H8-C01}{素局部环的唯一性必须连同局部同态理解}{作者正式勘误；不是本次新发现}
+\oldauditsrc{19.8.3，第110页；19.8.4，第111页；勘误清单三Err$_{\mathrm{IV}}$，9，第347页}
+正式勘误要求在19.8.3的两处及19.8.4的开头，将“同态”换为“局部同态”。对局部环 $(A,\mathfrak m)$，结构映射 $\mathbf Z\to A$ 的逆像 $p\mathbf Z$ 是素理想，唯一给出局部映射 $\mathbf Z_{p\mathbf Z}\to A$。若不要求局部性，例如 $A=\mathbf Q$，每个素数 $q$ 都给出保单位同态 $\mathbf Z_{q\mathbf Z}\to\mathbf Q$；不同素局部环不再被唯一选定。
+
+正文在相应位置直接使用“局部同态”，脚注说明作者修订，书末保留正式勘误译文。此处不把一般环同态混同于局部环同态。
+
+\audit{H8-C02}{非唯一性备注的引文号与平方零理想}{作者引文勘误；另排除识别误差}
+\oldauditsrc{19.8.7，第111页；勘误清单三A类，第345页}
+原文三次引用21.5.5，作者明确要求改为21.5.3。正文已作相应替换。原扫描页同时确认条件是 $\mathfrak j^2=0$；自动提取会漏掉上标 $2$，从而误成 $\mathfrak j=0$。后者当然不能作为提升不唯一的例子，因此本轮以页面图像为准，没有误报为作者逻辑错误。
+
+作为独立检验，取 $K=\mathbf Q(t)$、$C=K[\varepsilon]/(\varepsilon^2)$、$\mathfrak j=(\varepsilon)$，令 $u:K\to C/\mathfrak j=K$ 为恒等。对任一 $a\in K$，
+\[
+ v_a(f)=f+\varepsilon a\frac{df}{dt}\qquad(f\in K)
+\]
+为提升 $u$ 的环同态。Leibniz法则及 $\varepsilon^2=0$ 保证乘法性；它保单位，且 $v_a(t)=t+a\varepsilon$。当 $a\ne b$ 时，两提升不同。所有非零 $f\in K$ 的像在 $C$ 中都是单位，所以 $v_a$ 是局部同态。此例正说明“同构类唯一”不等于“给定剩余域同态的提升唯一”。
+
+\audit{H8-C03}{有限性证明中的基环}{作者正式排印勘误}
+\oldauditsrc{19.8.8，第112页倒数第2行；勘误清单三A类，第345页}
+原文在证明 $A$ 是 $B$ 的有限代数时，误写“所以 $A$ 是有限型 $A$-模”。正式勘误将其改为 $B$-模。正文采用正确表述。
+
+推理链为：$B$ 完备、$\mathfrak nA$ 为 $A$ 的定义理想、剩余扩张有限，故 $A$ 是拟有限 $B$-模；再用（$0_{\mathrm I}$，7.4.1）得到 $A$ 对 $B$ 有限。其后才可结合 $\dim A=\dim B$ 及整性证明 $B\to A$ 单射。若只说 $A$ 作为自身上的模有限生成，不能支持这一步。
+
+\audit{H8-W01}{不再用已撤销命题扩张Cohen提升范围}{失效引用的修订，不是否定Cohen定理}
+\oldauditsrc{19.8.7(iii)，第111页；Err$_{\mathrm{IV}}$，8，第347页}
+原文说，可借19.3.10和19.3.12减弱Cohen定理中对目标环 $C$ 的假设。然而19.3.12已由作者正式删除，理由是原证明使用的若干集合不是线性流形。第七版正文已经处理了该条自身的撤销状态；本轮进一步处理这里对它的依赖。
+
+现在正文只保留19.3.10实际支持的结论：对于相容的拓扑基环结构，$C$ 可度量、分离完备，$\mathfrak j$ 闭，且 $\mathfrak j^n\to0$ 时，连续同态可以提升。并未因撤销19.3.12而声称所有其他推广均不成立；也没有把19.8.6的完备诺特局部环版本撤销。原引用差异均在脚注H8-W01中明示。
+
+\audit{H8-T01}{商环完备性的引文}{引文定位修订}
+\oldauditsrc{19.7.1.6，第108页}
+原文用（$0_{\mathrm I}$，6.3.5）说明 $B/\mathfrak mB$ 完备。所需的是完备诺特局部环中理想闭、商环完备的性质，属于7.3的完备化讨论。正文改引7.3.5及商完备性质，并明确 $B$ 已在该步骤前被换成完备化。本项不改变定理的条件或结论。
+
+\audit{H8-T02}{提升的选择不应误称唯一}{措辞修订}
+\oldauditsrc{19.8.8证明，第112页}
+证明开头由Cohen提升定理选择了 $u:W\to A$。后文却称它为“唯一同态”，与19.8.7明确指出的非唯一性不符。正文改为“所选同态”。后面的构造只使用该映射确实存在、局部、诱导指定的剩余域同构，并将整数 $p$ 映到 $p\cdot1$，不使用唯一性，所以结论不受影响。
+
+\audit{H8-T03}{非空多项式代数的零基环边界}{边界条件补足}
+\oldauditsrc{19.10.3(iv)，第116页}
+若基环 $A=0$，则对任意变量集 $I$，$A[X_\alpha]_{\alpha\in I}=0$，结构同态为恒等，因而形式平展。故原文“$I\ne\varnothing$ 时不形式平展”须补 $A\ne0$。
+
+在 $A\ne0$、$I\ne\varnothing$ 时，选 $\alpha_0\in I$，取测试代数 $E=A[\varepsilon]/(\varepsilon^2)$、理想 $J=(\varepsilon)$。两个 $A$-同态将所有其他变量都映为零，而分别将 $X_{\alpha_0}$ 映为 $0$ 和 $\varepsilon$。它们模 $J$ 相同，但本身不同。因此形式非分歧失败。正文直接列出非零基环条件，脚注给出例外和检验。
+
+\audit{H8-P01}{同构提升引理的拓扑范围}{原较弱版本待核；给出足够用于后文的已验证版本}
+\oldauditsrc{19.7.1.5，第108页}
+\lead{底本原引理的完整译文。}
+设 $A$ 为诺特环，$\mathfrak j$ 为其理想，$B,B'$ 为诺特局部 $A$-代数，结构同态 $A\to B$、$A\to B'$ 对 $A$ 的 $\mathfrak j$-预进制拓扑连续。假设：$1^\circ$ $B,B'$ 对 $\mathfrak j$-预进制拓扑完备；$2^\circ$ $B$ 为形式光滑 $A$-代数；$3^\circ$ $B'$ 为平坦 $A$-模。置 $A_0=A/\mathfrak j$。若给定 $A_0$-同构 $u_0:B\otimes_AA_0\to B'\otimes_AA_0$，则存在 $A$-同构 $u:B\to B'$，满足 $u\otimes1=u_0$；因而 $B'$ 形式光滑且 $B$ 对 $A$ 平坦。
+
+\lead{底本原证明的完整译文。}
+置 $B_0=B\otimes_AA_0$、$B'_0=B'\otimes_AA_0$。若 $\mathfrak n,\mathfrak n'$ 为 $B,B'$ 的极大理想，则因 $\mathfrak jB\subseteq\mathfrak n$、$\mathfrak jB'\subseteq\mathfrak n'$，两环的 $\mathfrak j$-预进制拓扑分离。又因 $\mathfrak jB'$ 对 $\mathfrak j$-预进制拓扑闭，连续复合 $B\to B_0\xrightarrow{u_0}B'_0$ 根据（19.3.10）分解为 $B\xrightarrow{u}B'\to B'_0$，其中 $u$ 为连续 $A$-同态。显然 $u\otimes1=u_0$，由（19.7.1.4），$u$ 双射。
+
+\lead{本轮为何不将较弱版当作已经核定。}
+本小节章首约定：局部环默认取极大理想拓扑。原引理只明确 $\mathfrak j$-进制完备，却直接援引要求目标环在所用拓扑下完备的19.3.10。若将 $B'$ 改用 $\mathfrak jB'$-拓扑，还必须说明源 $B$ 的形式光滑性与连续性是相对于哪一种拓扑；不能把两种拓扑无条件互换。
+
+这不是一个只有名词上的区别。取 $R=\mathbf Q[x]_{(x)}$，$B=R[[t]]$，$J=(t)$。$B$ 为诺特局部环，极大理想为 $(x,t)$，并且按定义对 $J$-进制拓扑完备。但 $B$ 不对 $(x,t)$-进制拓扑完备：否则商环 $B/(t)=R$ 也应对 $(x)$-进制拓扑完备，而 $R$ 的完备化为 $\mathbf Q[[x]]$，严格大于 $R$。例如 $\sqrt{1+x}$ 的二项式部分和在 $(x)$-进制拓扑中是柯西列；它在 $R$ 中没有极限，因为若 $r(x)\in\mathbf Q(x)$ 满足 $r(x)^2=1+x$，则在不可约多项式 $1+x$ 处，左边的赋值为偶数，右边却为1。
+
+此例\textbf{仅说明两种完备性不同，不是原引理的反例}。原文可能隐含另一拓扑约定，或存在补充提升论证；本轮尚未核定。因此不将其列入已反驳断言，而将正文限制为可直接验证且足以支持后文的版本。
+
+\lead{已核实的充分版本及证明。}
+在原引理中加强为：$B,B'$ 均对各自极大理想拓扑完备，形式光滑性也按章首的局部环拓扑理解。结构同态的连续性仍要求 $\mathfrak jB\subseteq\mathfrak n$、$\mathfrak jB'\subseteq\mathfrak n'$。这样两环也 $\mathfrak j$-进制分离完备。证明如下：一个 $\mathfrak j$-进制柯西列自动是极大理想进制柯西列；其极限存在，而且对每个 $r$，理想 $\mathfrak j^rB$ 或 $\mathfrak j^rB'$ 都在极大理想拓扑中闭，故极限满足全部模 $\mathfrak j^r$ 条件。分离性则由 $\bigcap_r\mathfrak n^r=0$ 得到。
+
+局部环同构 $u_0$ 对极大理想拓扑连续；目标 $B'$ 对其极大理想拓扑完备，$\mathfrak jB'$ 闭且其幂趋于零。由19.3.10可提升得到 $u:B\to B'$。再以 $N=B$、$M=B'$ 应用19.7.1.4，利用 $B'$ 对 $A$ 平坦及模 $\mathfrak j$ 的同构性，得 $u$ 双射。
+
+\lead{依赖审计。}
+19.7.1.6先把 $A,B$ 换成各自的完备化，随后构造的 $B'$ 也是完备诺特局部环，因此实际应用落在上述充分版本内。19.7.2中 $B_0$、$B$、$B'$ 及它们的相关商同样是完备诺特局部环。因此本版并未借待核的较弱拓扑范围来完成这些主定理的证明。此点也与Stacks Project Tag 07NQ的诺特局部环形式光滑性与平坦性判据相符；该交叉核验不用于宣布较弱版本错误。
+
+\audit{H8-P02}{19.7.3的弱完备性备注与历史问题}{继承H8-P01的范围限定；不作现代研究状态断言}
+\oldauditsrc{19.7.3(i)，第109页}
+原文首句为：“应注意，在19.7.2中，只假设 $B,B'$ 对 $\mathfrak j$-预进制拓扑完备时，唯一性断言仍成立。”这依赖19.7.1.5的较弱版本，故在正文脚注中完整保留，但未作为已核定推广用于后续证明。
+
+后面的存在性问题和在特定情况下对模 $p^n$ 平坦提升的改写，均按原文译出。“我们不知道”改用明确历史指向的“原著接着说，尚不知道”，不冒充2026年的文献调查结论。本轮没有研究或解决该历史问题，也没有以其曾经未解决为理由停止当前翻译。
+
+\audit{H8-N04}{相对形式光滑的逻辑与记号}{防止翻译改变原概念，不是原命题错误}
+\oldauditsrc{19.9.1--19.9.8，第114--115页}
+原扫描中的 $\Lambda$ 与 $A$ 非常接近，文本提取多处将二者都识别成 $A$。本轮以原页逐项核对，保留三个层级
+\[
+ \Lambda\longrightarrow A\longrightarrow B.
+\]
+相对形式光滑要求的是：给定连续 $A$-同态 $B\to C/J$，\emph{若已有连续 $\Lambda$-同态提升到 $C$}，就存在连续 $A$-同态提升。不能删除斜体前提，否则会把“相对形式光滑”误译为通常形式光滑。
+
+特别地，19.9.2(i)确为“$A$ 是相对于 $\Lambda$ 形式光滑的 $\Lambda$-代数”，而非声称任意 $\Lambda$-代数通常形式光滑。19.9.3的结论也是 $B\otimes_\Lambda A'$ 作为\emph{$B$-代数}相对于 $\Lambda$ 形式光滑。19.9.4的四个版本分别改变 $B$、$A$、$\Lambda$ 的完备化，所有帽号均按图像核对。19.9.8的扩张群为
+\[
+ \Exalcotop_{A/\Lambda}(B,L)
+ =\Ker\bigl(\Exalcotop_A(B,L)\to\Exalcotop_\Lambda(B,L)\bigr),
+\]
+离散版本则为 $\Exalcom_{A/\Lambda}(B,L)$，不能把相对下标漏成 $A$。
+
+\section*{新增条目覆盖与未译范围}
+\addcontentsline{toc}{section}{新增条目覆盖与未译范围}
+19.7收录3个主要条目及19.7.1.1--19.7.1.6六个子编号，共9个；19.8收录19.8.1--19.8.11，共11个；19.9共8个；19.10共4个，合计32个。条目计数仅检查覆盖，不是正确性认证。
+
+当前第0章连续译至19.10.4，即§19末尾。下一接续为§20“导子与微分”的章首及20.1.1；本轮没有把已看到但未译入的§20章首计入完成范围。第0章§§20--23、第IV章主体及第V卷预备笔记余文仍未译完；全部旧译文也没有在本轮重新逐句校勘。
+
+\section*{外部交叉核验的来源界限}
+\addcontentsline{toc}{section}{外部交叉核验的来源界限}
+本轮翻译底本为用户上传的法文原版及原作者的勘误，不用网页提要替代原文。下列现代资料仅用于核查相应定义与已知主定理，未将其内容冒充原著：Stacks Project，Tag 00TH（形式光滑映射）；Tag 00UP（形式平展映射及局部化）；Tag 07EA（拓扑环的形式光滑性）；Tag 07NQ（诺特局部环的形式光滑性、平坦性与特殊纤维）。查询日期：2026年11月15日。标签是稳定检索标识，网页条目序号可能随更新变化。
+
+% END reports/eighth_audit.tex
+
+\part*{历史核查记录：第七版}
+\addcontentsline{toc}{part}{历史核查记录：第七版}
+\NewNote{以下G7条目为第七版历史记录。其内容保留，不表示本轮重新逐项审定；本版新的拓扑范围说明以H8-P01、H8-P02为准。}
+
+% BEGIN reports/seventh_audit.tex
+% 本轮核查：与译文并行保存，不将编译成功等同于数学审定。
+\head{第七版：19.5--19.6续译及校订正文}
+\section*{范围与采用的编辑方式}
+\addcontentsline{toc}{section}{范围与采用的编辑方式}
+本轮以第六版实际工程为起点，从第0章（19.5.1）连续译至（19.6.7）末尾。底本为上传的\texttt{EGAIV.1.pdf}，上传PDF第89--103页，分册印刷第90--104页。其中第99页跨19.5和19.6，第103页在（19.6.7）后进入19.7；后者没有算入已译范围。新增内容包括19.5的一般定理及其全部分段证明，以及19.6的Cohen定理、系数域、正则性与形式光滑性判据。
+
+本版执行“正文写校正后的内容，原文错误在脚注注明”。因此，正文中的必要条件、已核实的源靶及可靠补证直接修正；脚注说明原来的写法、为什么修改，以及属于作者勘误还是译校补证。已经撤销、而本轮没有取得可靠替代定理的条目，只保留编号与撤销状态。旧稿的回溯修改限于本轮直接复核的（19.3.5，v）、（19.3.10.1）、（19.3.12）及（19.4.1）；\textbf{不声称已把此前约九百页内全部历史校订意见逐项改写完成}。
+
+新增注号以G7开头。以下区分原命题的反例、证明步骤的反例、文字错误和使用范围提醒。同一条证明中的多个排印问题不计作多个错误定理；本次补证是译校分析，不冒称作者原证。
+
+\begin{longtable}{@{}p{.16\linewidth}p{.21\linewidth}p{.54\linewidth}@{}}
+\toprule 编号 & 分类 & 核查结论\\\midrule\endhead
+G7-E01 & 条件遗漏，有反例 & （19.6.2）须给定相容的 $k\subset A$，只给 $k\subset K$ 不够。\\
+G7-G01 & 证明步骤错误，可补 & （19.5.6.7）不能比较原同态核与相伴分次核；以有限滤过逐级消去补证。\\
+G7-G02 & 证明步骤错误，可补 & （19.6.6）扩域后的分量不必同构于原环；改用Galois作用的传递性与下降。\\
+G7-H01 & 拓扑条件需明示 & （19.5.1）的商模不在任意拓扑情形下自动离散；后文应用具备所需条件。\\
+G7-T01--T08 & 对象、次数、引文等 & 分次生成对象、指标、公式号、正次数上同调、零元、张量积对象、假设依赖。\\
+G7-H02--H05 & 使用范围与核对 & 完备化、增广商环、相容提升的理想像条件、Zariski环约定。\\
+\bottomrule
+\end{longtable}
+
+\audit{G7-E01}{（19.6.2）：剩余域中的子域不自动给出环中的子域}{原条件按字面不足，正文已补明嵌入}
+\oldauditsrc{EGA IV第一部分，印刷第101页，上传PDF第100页}
+原文设 $A$ 为分离完备局部环、$K$ 为其剩余域，只给出 $k\subset K$ 且 $K/k$ 可分，却断言存在包含 $k$ 的子域 $K'\subset A$，使剩余同态在 $K'$ 上同构到 $K$。原证明随即把 $A$ 当成 $k$-代数，并以 $k$-同态作提升；但所列假设没有提供这一结构。
+
+\lead{反例}
+固定素数 $p$，取
+\[
+ A=\mathbf Z_p=\varprojlim_n\mathbf Z/p^n\mathbf Z,
+ \qquad K=\mathbf F_p,\qquad k=\mathbf F_p.
+\]
+$A$ 对其极大理想 $(p)$ 的进制拓扑分离完备，剩余域为 $K$；恒等扩张 $K/k$ 可分。因此初版所有明确列出的条件均满足。
+若存在保单位的域嵌入 $i:\mathbf F_p\to\mathbf Z_p$，则
+\[
+ 0=i(p\cdot1_{\mathbf F_p})=p\cdot1_{\mathbf Z_p},
+\]
+但 $p\cdot1_{\mathbf Z_p}$ 的模 $p^2$ 分量为非零的 $p\bmod p^2$，矛盾。因此该环甚至不含同构于 $k$ 的子域，更不可能有原文所述的 $K'$。
+
+\lead{修订版本及证明}
+必须给定相容的保单位嵌入 $k\hookrightarrow A$，并用剩余映射把 $k$ 识别为 $K$ 的子域。由 $K/k$ 可分及（19.6.1），$K$ 为形式光滑的离散 $k$-代数。对 $A$ 及 $\mathfrak m$ 用（19.3.10），可把 $K\xrightarrow{\mathrm{id}}A/\mathfrak m$ 连续提升为 $k$-同态 $s:K\to A$。它因 $K$ 为域而单射，且 $\pi s=\mathrm{id}_K$。所以 $K'=s(K)$ 就是所求子域；$s$ 为 $k$-同态保证 $k\subset K'$。
+
+这项补充并不把混合特征环错误地变成等特征环，也没有断言系数域对所有完备局部环都存在。紧接的（19.6.3）使用的是已嵌入 $A$ 的素子域，故该处满足修订条件。
+
+\audit{G7-G01}{（19.5.6.7）：从相伴分次信息回到原核须逐级处理}{证明中的一般包含不成立；本版给出替代证明}
+\oldauditsrc{EGA IV第一部分，印刷第98页，上传PDF第97页}
+初版在证明后半部使用类似
+\[
+ \Ker h\subseteq\Ker(\gr h)
+\]
+的包含，将已分次的源识别为自身的相伴分次环。对于保持递降滤过的同态，这并不是一般性质：某个元素的最低齐次项可以映到更高滤过层，并与该元素的高次部分抵消。只能断言其\emph{首项}被相应的分次同态杀掉，不能断言整个元素被 $\gr h$ 杀掉。
+
+\lead{具体检验例}
+设 $k$ 为任意域，令
+\[
+ R=k[x,y]/(x,y)^3,\qquad S=k[t]/(t^3),
+\]
+分别取极大理想幂滤过。定义保滤过 $k$-代数同态
+\[
+ h:R\to S,\qquad h(x)=t,\quad h(y)=t^2.
+\]
+它良定义，因为任何总次数至少3的单项式均映到 $(t^3)=0$。源、目标本来就是分次环，所以可与其相伴分次环识别。取
+\[
+ z=y-x^2.
+\]
+则 $h(z)=t^2-t^2=0$，但 $\gr h$ 的一次分量把 $y$ 送到零、把 $x$ 送到 $t$，二次分量把 $x^2$ 送到 $t^2$，故
+\[
+ (\gr h)(z)=-t^2\ne0.
+\]
+因此所用包含按一般性质解释是错误的。本例\textbf{只反驳该证明步骤}，不是满足（19.5.6.7）全部特设条件而反驳其结论的例子。
+
+\lead{正确的有限滤过消核引理}
+固定截断次数 $n$。沿用正文的记号，令
+\[
+ E_{\alpha,n}=B/(\mathfrak b_\alpha+\mathfrak j^{n+1}),\qquad
+ F_{\alpha,n}=\Salg_{C_\alpha}
+ (\mathfrak j_\alpha/\mathfrak j_\alpha^2)/(F^+)^{n+1}.
+\]
+$F_{\alpha,n}$ 有次数 $0,\ldots,n$ 的分次，$F_{\alpha,n}^{\geq r}$ 是其增广理想的 $r$ 次幂。记 $E$ 系的过渡同态为 $p_{\alpha\beta}$，$F$ 系的为 $q_{\alpha\beta}$。给定正文中的满同态
+$v_0:F_{\beta_0,n}\twoheadrightarrow E_{\alpha_0,n}$，其中 $\alpha_0=\alpha$、$\beta_0=\beta$。
+
+由每个 $\varphi_r$ 为形式双态射和（19.1.3），对任意已选 $\beta_i$，可取一个共同的 $\alpha_{i+1}\geq\beta_i$，使对所有 $0\leq r\leq n$，过渡同态都有分解
+\[
+ q_{\beta_i\alpha_{i+1}}^{\,r}
+ =w_i^r\varphi_{\alpha_{i+1}\alpha_{i+1},r}.
+\]
+共同指标的存在只用到 $n+1$ 个次数的有限性。再由（19.5.6.3，ii）取
+$\beta_{i+1}\geq\alpha_{i+1}$ 和满同态
+$v_{i+1}:F_{\beta_{i+1},n}\to E_{\alpha_{i+1},n}$，使
+\[
+ p_{\alpha_i\alpha_{i+1}}v_{i+1}
+   =v_iq_{\beta_i\beta_{i+1}}.
+\]
+这些选取重复 $N=n+1$ 次即可，\emph{没有要求选择无限相容系统}。
+
+若 $x\in\Ker v_{i+1}\cap F_{\beta_{i+1},n}^{\geq r}$，记其次数 $r$ 的类为 $x_r$。由 $v_{i+1}(x)=0$ 可知
+\[
+ \varphi_{\alpha_{i+1}\alpha_{i+1},r}
+       q_{\alpha_{i+1}\beta_{i+1}}^{\,r}(x_r)=0.
+\]
+应用 $w_i^r$ 便得
+$q_{\beta_i\beta_{i+1}}^{\,r}(x_r)=0$，因而
+$q_{\beta_i\beta_{i+1}}(x)\in F_{\beta_i,n}^{\geq r+1}$。
+上述交换关系又给出
+$v_iq_{\beta_i\beta_{i+1}}(x)=0$。因此每退回一步指标，核中元素的滤过次数至少提高1。
+
+从 $\Ker v_N\subset F_{\beta_N,n}^{\geq0}$ 开始连续退回 $n+1$ 步，得到
+\[
+ q_{\beta_0\beta_N}(\Ker v_N)
+       \subset F_{\beta_0,n}^{\geq n+1}=0.
+\]
+故 $q_{\beta_0\beta_N}$ 通过满同态 $v_N$ 唯一分解为一个 $A$-代数同态
+$u:E_{\alpha_N,n}\to F_{\beta_0,n}$。交换关系及 $v_N$ 满射给出
+\[
+ v_0u=p_{\alpha_0\alpha_N}.
+\]
+取 $\gamma=\alpha_N$，对任意 $\mu\geq\gamma$ 使用 $u\circ p_{\gamma\mu}$，正好得到（19.5.6.7）的结论。
+
+\lead{对19.5总定理的作用}
+这一证明保留原命题的全部假设，未追加诺特性或完备性。它只替换原证明不成立的核比较步骤。因而后面的（19.5.6.8）仍可据此构造实际代数同态，再完成（19.5.3，iii）的证明。其正确性并非由小规模代数检验代替，而由上述任意 $n$ 的论证承担。
+
+\audit{G7-G02}{（19.6.6）：Galois扩域后的局部分量彼此同构，不必同构于原环}{结论可保留；正文以传递作用和下降修补}
+\oldauditsrc{EGA IV第一部分，印刷第104页，上传PDF第103页}
+原证明在 $k'/k'_0$ 为有限Galois扩张、$A'_0=\widehat A\otimes_k k'_0$ 为完备局部环的情形，把 $A'=A'_0\otimes_{k'_0}k'$ 写成若干“与 $A'_0$ 同构”的局部环的直积。这个说法一般不成立。取
+\[
+ A=k=k'_0=\mathbf R,\qquad k'=\mathbf C.
+\]
+则 $A'_0=\mathbf R$，$A'=\mathbf C$ 只有一个局部分量，但它不与 $\mathbf R$ 为 $\mathbf R$-代数同构：作为向量空间，二者维数分别为2和1。这个例子仍满足 $A$ 的正则性和形式光滑性，因此只是原证明中的辅助断言错误。
+
+\lead{应使用的分量传递性}
+设 $l\subset L$ 为有限Galois扩张，$B_0$ 为完备诺特局部 $l$-代数，令
+$D=B_0\otimes_l L$。它为有限 $B_0$-代数，因而完备半局部，并分解为有限个完备局部环的直积。令 $G=\operatorname{Gal}(L/l)$。$G$ 通过 $1\otimes\sigma$ 作用于 $D$，且
+\[
+ D^G=B_0.
+\]
+这一等式可直接用向量空间的正合性验证：$L^G$ 是映射
+$L\to\bigoplus_{\sigma\in G}L$，$a\mapsto(\sigma(a)-a)_\sigma$ 的核；在 $l$ 上张量 $B_0$ 保持这个核，且 $L^G=l$。
+
+$G$ 置换直因子的单位幂等元。若作用有两个以上轨道，取一个非空真轨道，其单位幂等元之和 $e$ 属于 $D^G=B_0$，且 $e\ne0,1$。但局部环无非平凡幂等元：$e(1-e)=0$，$e$ 与 $1-e$ 至少一个是单位，由此只能有 $e=0$ 或1。矛盾。因此作用在分量上是传递的。
+
+传递性给出分量之间的 $B_0$-代数同构；相对于 $L$，这些同构可能是 $\sigma$-半线性的。半线性同构依然保持环的正则性，而且保持剩余域在 $L$ 上的可分性，因为它只将基域嵌入与一个域自同构复合。
+
+\lead{从一个良好分量推出形式光滑性}
+沿用命题（19.6.6）的 $b')$。将给定 $k'$ 放入有限准Galois扩张 $L/k$，令 $l/k$ 为其中的有限纯不可分部分，使 $L/l$ 为有限Galois扩张。良好分量 $K'[[T_1,\ldots,T_n]]$ 经有限扩域到 $L$ 后变为
+\[
+ \bigl(K'\otimes_{k'}L\bigr)[[T_1,\ldots,T_n]],
+\]
+这一步用 $L/k'$ 有限维，保证与系数的任意乘积可交换。由 $K'/k'$ 可分，系数代数为有限个在 $L$ 上可分的域的直积。故 $D=\widehat A\otimes_kL$ 至少有一个正则、且剩余域在 $L$ 上可分的局部分量。
+
+$B_0=\widehat A\otimes_kl$ 为局部环，因为 $l/k$ 纯不可分。以上传递性使所有分量都有这些性质，故由（19.6.4）都在 $L$ 上形式光滑，其有限乘积 $D$ 也形式光滑（19.3.5，v）。
+
+最后，$\widehat A$ 作为拓扑 $k$-向量空间形式投射：对离散向量空间的连续映射通过开子空间商，而每个向量空间都是投射模；从该商取线性提升再复合，提升依然连续。由于 $L/k$ 有限自由且忠实平坦，\textbf{应使用（19.4.6）的条件 $2^\circ$}，将 $D$ 的形式光滑性下降至 $\widehat A$，再由（19.3.6）得到 $A$ 形式光滑。初版此处援引（19.4.7），该条是模去定义理想的判据，不是这里的有限忠实平坦扩域判据。
+
+以上补证没有援引尚在后文的（22.5.8），也没有通过循环使用（19.6.6）的待证结论来证明自身。
+
+\audit{G7-H01}{（19.5.1）：代数商同构与离散商拓扑必须区分}{一般拓扑下需限定；后文用途不受影响}
+\oldauditsrc{EGA IV第一部分，印刷第90页，上传PDF第89页}
+代数公式
+\[
+ \Salg_C^n(V)/(U\Salg_C^{n-1}(V))\simeq\Salg_C^n(V/U)
+ \qquad(n\geq1)
+\]
+始终成立。但按原文在对称代数上给出的拓扑，不能从 $U$ 在 $V$ 中开就自动断言左边离散。
+
+取 $C=\mathbf Z_p$，给
+\[
+ V=\bigoplus_{r\geq1}\mathbf Z_p/p^r\mathbf Z_p
+\]
+配备离散拓扑，令 $U=0$。这是拓扑 $C$-模：每个固定向量仅有有限个非零分量，因而被某个开理想 $p^N C$ 零化；利用 $V$ 离散，数乘在每个点连续。
+
+在对称代数定义的零点基本邻域中取 $U=0$，与一次部分 $V$ 相交得到 $p^N V$。对每个 $N$，$p^N V\ne0$，因为第 $N+1$ 个直和分量中的 $p^N$ 非零。因此诱导在 $\Salg_C^1(V)=V$ 上的拓扑不是离散拓扑，即使原给定的 $V$ 拓扑是离散的。
+
+若存在开理想 $\mathfrak a$ 满足 $\mathfrak a V\subset U$，则在每个正次数上
+$\mathfrak a\Salg_C^n(V)\subset U\Salg_C^{n-1}(V)$，该商就离散。原文前面讨论的“$V$ 的拓扑不比由 $C$ 诱导的模拓扑更细”保证这一点。正文把离散性明确限定到该情形；把括号“离散”读成一般断言时，上例说明其不成立。后文 $V=\mathfrak j/\mathfrak j^2$ 的应用正满足原文所说明的拓扑条件。
+
+\section*{记号、引文与假设依赖的逐项记录}
+\addcontentsline{toc}{section}{记号、引文与假设依赖的逐项记录}
+\audit{G7-T01}{（19.5.4.2）：检验复合同态须用源代数的生成性}{对象写法修正}
+复合从 $\gr^\bullet(F_n)$ 经 $\gr^\bullet(E_n)$ 返回 $\gr^\bullet(F_n)$，因而应根据\emph{源}由零次和一次部分生成，判定复合在每次为恒等。原文在此说 $\gr(E_n)$ 由一次部分生成，虽然该性质本身也对，却不是所写论证需要的对象。正文写明正确的源，并保留原差异于脚注。
+
+\audit{G7-T02}{（19.5.6.5）：目标增广理想和同态下标}{类型校正}
+$w'_\lambda$ 按定义取值于 $F_{\beta,n}$，所以其将 $\mathfrak j_\lambda$ 映入的是 $F_{\beta,n}^+$，不是原文该处所写的 $F_{\delta,n}^+$。末尾一次同态的下标相应统一为 $w_{\beta\lambda}$。这类下标修正不改变构造。
+
+\audit{G7-T03}{（19.5.6.6）：相同的分次生成对象问题}{类型校正}
+与G7-T01相同，待识别的复合以 $\gr^\bullet(F_{\lambda,n})$ 为源。正文利用它的零次和一次生成性，而不是把中间的 $\gr^\bullet(E_{\lambda,n})$ 误写为所需源。
+
+\audit{G7-T04}{（19.5.7，iii）：公式号误引}{已对照原页更正}
+原文将当前同态引作（19.5.4.1），应为（19.5.7.1）。同时，对照页面可确认该段印的是“投射 $C_\lambda$-模”；自动提取文本丢掉下标时，不应据此另报“原文把 $C_\lambda$ 写成 $C$”这一错误。
+
+\audit{G7-T05}{（19.6.1）：Hochschild上同调消失仅指正次数}{次数范围明示}
+当 $K/k$ 有限可分时，$K$ 是 $K\otimes_kK$ 的投射模，故 $\Ext^i(K,L)=0$ 对 $i>0$ 成立；$i=0$ 则是 $\Hom(K,L)$，一般不为零。最简例 $K=L=k$ 给出 $H_k^0(k,k)=k$。正文限定 $i>0$；扩张分类只需要 $i=2$。
+
+\audit{G7-T06}{（19.6.3）：可逆性须排除零元}{边界用语修正}
+原证明说 $A'$ 中每个元素可逆；实际应为每个非零元素。其原因是 $A'\cap\mathfrak m=0$，而不是两个含零子集的交为空。证明结构和结论均不变。
+
+\audit{G7-T07}{（19.6.5.1）：可分性要求张量积约化}{结论对象校正}
+从 $A\otimes_kk'$ 正则约化得到的是子环 $K\otimes_kk'$ 约化。原文末句简写成 $K$ 约化不足以证明可分性，因为任意域都约化，包括不可分扩张中的大域。正文保留完整对象。
+
+\audit{G7-T08}{（19.6.7，i）：有限根式重数假设的用途写反}{依证明实际依赖修正}
+原文说有限根式重数仅用于 $b')\Rightarrow a)$。修补后的该方向不需要它；反而 $c)\Rightarrow b)$ 明确使用假设所给的 $k_0$，以保证有限根式扩域后剩余域可分。正文据此改写备注，并保留下一条“以后证明 $a)$ 与 $c)$ 无需该假设”的历史说明。本轮未把尚未译入的（22.5.8）算作已证明或已翻译。
+
+\audit{G7-H02}{（19.5.4.4）和（19.6.4）：原环与完备化}{核对正确，不另判原版错误}
+（19.5.4.4）中由形式光滑性提升系数环，目标为 $\widehat B$；扫描原页确有帽号。类似地，（19.6.4）的形式幂级数结构说的是 $\widehat A$。本版保留帽号，不因提取文本丢失它而把原文判错。
+
+\audit{G7-H03}{（19.5.5）：增广商环隐含的理想包含}{约定展开}
+写 $E/\mathfrak b$ 为经常数项增广到 $C$ 的商代数，须有 $\mathfrak b\subset\mathfrak n$；再结合 $\mathfrak n^k\subset\mathfrak b$。正文把这一原有增广条件的含义明写出来，不增加无关的限制。
+
+\audit{G7-H04}{（19.5.6.3）仍可应用已修订（19.3.10.1）}{应用条件逐项复核}
+在此过渡同态 $E_{\gamma,n}\to E_{\alpha,n}$ 下，理想
+$\mathfrak j_\gamma/\mathfrak j_\gamma^{n+1}$ 的像恰为
+$\mathfrak j_\alpha/\mathfrak j_\alpha^{n+1}$，因为它们都由同一 $\mathfrak j\subset B$ 取像得到。两个理想幂零，故（19.3.10.1）所补入的理想像相等条件满足。这样才可确保提升同时保留指定的剩余同态；不能仅有普通的无约束提升。
+
+\audit{G7-H05}{（19.5.8）：Zariski环与前置拓扑假设}{使用范围提醒，不列为新反例}
+该注应连同（19.5.7）的假设及原著采用的Zariski环约定使用。有限表现性和完成函子的判据有其诺特背景，不能把“Zariski环”擅自换成任意线性拓扑环。正文未删除这些条件。
+
+\section*{回溯修改与保留的历史记录}
+\addcontentsline{toc}{section}{回溯修改与保留的历史记录}
+（19.3.5，v）现已采用正交幂等元提升证明；（19.3.10.1）在正文补入 $f(\mathfrak k)=\mathfrak k'$ 并明确同时提升两条映射；（19.4.1）在正文同时选取使 $\mathfrak j_\alpha C=0$ 的指标；（19.3.12）正文不再出现一整段被撤销的命题和错误证明，其原陈述在脚注注明，完整历史译文保存于下页附录。相应旧注F6编号仍保留，便于追踪。
+
+旧核查报告作为历史档案继续收入。对于本轮已修改的条目，旧报告中“正文仍保留原错误写法”的描述只代表第六版状态。新正文、G7分析及实际修改记录优先。工程中附\texttt{history/V7\_body\_corrections.diff}，可逐行比较这两份既有正文源文件。
+
+\section*{核查边界与技术验证的含义}
+\addcontentsline{toc}{section}{核查边界与技术验证的含义}
+本轮对新增范围进行了原页对照、公式与证明类型检查，并针对上述问题给出反例或补证；不是对全部历史译文的再次逐句审定，也不是机械形式化验证。新译文及校订仍属工作稿，尤其本轮补证属于可供独立复核的数学论证。
+
+编译、目录及交叉引用检查、实际页数、原条目保留检查和选定页面的渲染检查，均记录在工程的\texttt{checks/validation.json}及\texttt{checks/REVIEW.md}。这些检查回答文件是否可编译和版面是否可读，不代替数学正确性审定。报告不预先填写尚未实测的页数或比较结果。
+
+
+% BEGIN reports/withdrawn_19312_history.tex
+\section*{附录：已撤销（19.3.12）的历史译文}
+\addcontentsline{toc}{section}{附录：已撤销（19.3.12）的历史译文}
+以下仅保存第六版中的原文对照记录，全部陈述和推理都属于被撤销的条目，不是校订正文中的有效命题。本版正文只保留编号、撤销状态及脚注。
+\subsection*{历史条目（19.3.12）}
+\noindent\textbf{作者勘误提示。}作者在勘误清单三（Err$_{\mathrm{IV}}$，8）明确要求删除本条。以下保留初版陈述及证明的中文译文，仅供原文对照，不将其作为有效定理引用。\cmt{F6-A01}{正式勘误见EGA IV第四部分印刷第347页、上传PDF第346页：要求删除（$0_{\mathrm{IV}}$，19.3.12），理由是证明错误，$W_\lambda,U_\lambda,V_\lambda$ 不是线性流形。本书书末的相应作者勘误（见合订本书末）已选译。}
+
+设 $A$ 为拓扑环，$B$ 为形式光滑 $A$-代数，$C$ 为拓扑 $A$-代数，$\mathfrak j$ 为其理想，满足：
+
+$1^\circ$ $C$ 有开理想基本系 $(\mathfrak a_\lambda)$，使 $C_\lambda=C/\mathfrak a_\lambda$ 为Artin环，且典范同态 $C\to\varprojlim_\lambda C_\lambda$ 为拓扑环同构；
+
+$2^\circ$ $\mathfrak j$ 在 $C$ 中闭且拓扑幂零；
+
+$3^\circ$ $B$ 的每个开理想的平方仍开。
+
+则每个连续 $A$-同态 $u:B\to C/\mathfrak j$ 分解为 $B\xrightarrow{v}C\to C/\mathfrak j$，其中 $v$ 连续。
+
+令 $\mathfrak j_\lambda=(\mathfrak j+\mathfrak a_\lambda)/\mathfrak a_\lambda$，它是 $C_\lambda$ 的幂零理想；令 $u_\lambda$ 为 $B\xrightarrow{u}C/\mathfrak j\to C_\lambda/\mathfrak j_\lambda$ 的复合。先证明任意使 $u$ 分解为 $B\xrightarrow{w}C\to C/\mathfrak j$ 的 $A$-同态 $w$ 必连续。事实上，对每个 $\lambda$，存在 $B$ 的开理想 $\mathfrak k$，使 $u(\mathfrak k)\subset(\mathfrak j+\mathfrak a_\lambda)/\mathfrak j$。于是 $w(\mathfrak k)\subset\mathfrak j+\mathfrak a_\lambda$，故某个幂 $\mathfrak k^{2^m}$ 满足 $w(\mathfrak k^{2^m})\subset\mathfrak a_\lambda$。因 $\mathfrak k^{2^m}$ 开，连续性成立。因此只须寻找这样的 $A$-同态 $w$，不必再顾虑连续性。
+
+原证明继续说：全体 $A$-代数同态满足
+\[
+ \Hom(B,C)=\varprojlim_\lambda\Hom(B,C_\lambda),
+\]
+而所考虑的同态集合闭于配备乘积拓扑的 $C$-模 $C_\lambda^B$ 中；由于 $C_\lambda$ 为Artin环，该乘积线性紧。对每个 $\lambda$，令 $W_\lambda$ 为使 $u_\lambda$ 分解为 $B\xrightarrow{w_\lambda}C_\lambda\to C_\lambda/\mathfrak j_\lambda$ 的 $w_\lambda\in\Hom(B,C_\lambda)$ 的集合。原证明称 $W_\lambda$ 是 $C$-模 $\Hom(B,C_\lambda)$ 中的闭线性流形，并由 $B$ 形式光滑得其非空。在乘积
+\[
+ E_\lambda=\prod_{\mu\leq\lambda}\Hom(B,C_\mu)
+\]
+中，考虑满足 $w_\mu=\varphi_{\mu\lambda}\circ w_\lambda$（$\mu\leq\lambda$）且 $w_\lambda\in W_\lambda$ 的族构成的所谓闭线性子流形 $U_\lambda$；其中 $\varphi_{\mu\lambda}:C_\lambda\to C_\mu$ 为典范同态。最后，令 $V_\lambda$ 为全乘积 $\prod_\mu\Hom(B,C_\mu)$ 中，由 $U_\lambda$ 和所有 $\mu\nleq\lambda$ 对应因子的乘积形成的所谓闭线性流形。\cmt{F6-G03}{“模”“线性流形”等用语在此是被撤销原证明的论断，不是本译稿的认定。代数同态的乘法约束非线性；报告给出平方零以外的幂零增厚例子，直接说明固定剩余同态的提升集合也未必为仿射子空间。}
+原证明把问题归结为 $\bigcap_\lambda V_\lambda\ne\varnothing$，因为交中的元素按定义属于 $\varprojlim_\lambda\Hom(B,C_\lambda)$。此外，原证明使用 $\mathfrak j$ 闭以及 $C=\varprojlim C_\lambda$ 线性紧，来识别 $C/\mathfrak j\simeq\varprojlim C_\lambda/\mathfrak j_\lambda$，并把 $\varphi:C\to C/\mathfrak j$ 识别为 $\varprojlim\psi_\lambda$，其中 $\psi_\lambda:C_\lambda\to C_\lambda/\mathfrak j_\lambda$ 为典范映射，继而声称如（19.3.10）得到 $\varphi\circ w=u$。\par
+\noindent\textbf{〔撤销条目译文结束。〕}
+
+% END reports/withdrawn_19312_history.tex
+
+
+% END reports/seventh_audit.tex
+
+\part*{历史核查记录：第六版}
+\addcontentsline{toc}{part}{历史核查记录：第六版}
+\NewNote{以下F6条目为第六版历史记录。其中关于正文仍保留错误原证明的描述已被本版相应修订取代；本版并未重新审定其余所有历史判断。}
+
+% BEGIN reports/sixth_audit.tex
+% 本轮新核查：仅据所上传的EGA IV.1及IV.4原件。
+\head{第六版：第0章19.0--19.4译校与定点核查}
+\section*{范围、版本与判定原则}
+\addcontentsline{toc}{section}{范围、版本与判定原则}
+本轮从第五版实际源码的（18.5.4）之后接续，完整译入第0章19.0--19.4，即（19.0.1）至（19.4.7），并包括其中的四个子编号引理。底本为上传的\texttt{EGAIV.1.pdf}，上传PDF第68--88页，原分册印刷第69--89页；第85页跨越19.3与19.4，第88页以（19.4.7）的证明结束。19.5起的内容没有计入本轮完成范围。
+
+本轮共有46个新增原著编号条目，其中（19.3.12）是\textbf{原作者已正式要求删除的历史条目}。为保证对照译文完整，该条的原陈述和原证明仍译出，但前后均标为撤销状态；不能将其作为本版认可的有效命题引用。另新增原编号公式（19.4.4.1）。计数是结构覆盖记录，不是数学正确性的认证。
+
+核查直接比较原文陈述、证明、公式及页面图像，并对本轮相关的作者勘误作交叉核对。以下反例和补证均为译校分析，不冒充原著证明。F6-E01与F6-G02是\textbf{同一个引理的断言问题和证明问题}；F6-A01与F6-G03也指向\textbf{同一条被撤销的命题}。它们不得相加计算为四个不同的错误定理。
+
+\begin{longtable}{@{}p{.17\linewidth}p{.19\linewidth}p{.55\linewidth}@{}}
+\toprule 标识 & 类型 & 结论\\ \midrule\endhead
+F6-E01/G02 & 有反例的引理 & （19.3.10.1）只写理想像的包含不足；加强为相等可按原思路修补。\\
+F6-A01/G03 & 作者正式撤销 & （19.3.12）的原证明错误；本轮不声称已反驳其结论。\\
+F6-G01 & 证明步骤错误 & （19.3.5，v）的结论成立，但有限乘积同态的所写等价错误；补入幂等元提升。\\
+F6-G04 & 可补的选择步骤 & （19.4.1）须同时使基环理想零化测试代数；不需增加假设。\\
+F6-T01--T07 & 文字、类型或记号 & 秩的基域、商理想、自由模、局部化、撇号、复合方向和复合映射定义域。\\
+F6-H01--H03 & 使用范围提醒 & 仿射与局部提升；形式双态射；离散拓扑代数的连续结构同态。\\
+F6-V01 & 已核对、未判错 & （19.3.10.2）的纤维积公式及其引用替换。\\
+\bottomrule
+\end{longtable}
+
+\audit{F6-E01}{（19.3.10.1）：理想像仅有包含时，引理不成立}{在所列假设下有具体反例}
+\oldauditsrc{EGA IV第一部分，印刷第84页（上传PDF第83页），引理（19.3.10.1）}
+原引理假设 $B$ 为形式光滑的拓扑 $A$-代数，$E,E'$ 为离散拓扑 $A$-代数，$\mathfrak k\subset E$、$\mathfrak k'\subset E'$ 为幂零理想，$f:E\to E'$ 满射，且仅要求
+\[
+ f(\mathfrak k)\subseteq\mathfrak k'.
+\]
+给定相容的 $u:B\to E/\mathfrak k$ 与 $v':B\to E'$，原文声称存在 $v:B\to E$ 提升 $v'$。以下例子表明：甚至这一较弱的结论也不成立，更不用说同时要求 $v$ 提升 $u$。
+
+\lead{反例的全部数据}
+取任意域 $k$，全部环配备离散拓扑，并令
+\[
+\begin{gathered}
+ A=k,\qquad B=k[x,x^{-1}],\qquad E=k[t],\qquad E'=k[t]/(t^2),\\
+ f:E\twoheadrightarrow E',\qquad \mathfrak k=(0),\qquad
+ \mathfrak k'=(\bar t).
+\end{gathered}
+\]
+$\mathfrak k$、$\mathfrak k'$ 都幂零，$f$ 为满射，而
+$f(\mathfrak k)=0\subsetneq(\bar t)=\mathfrak k'$。
+定义
+\[
+ u:B\longrightarrow E=E/\mathfrak k,\qquad u(x)=1,
+\]
+并定义
+\[
+ v':B\longrightarrow E',\qquad
+ v'(x)=1+\bar t,\quad v'(x^{-1})=1-\bar t.
+\]
+由于 $(1+\bar t)(1-\bar t)=1$，$v'$ 确实是含幺 $k$-代数同态。$E'/\mathfrak k'=k$，两条到该商环的复合都把 $x$ 送到1，故所要求的相容性成立。全部同态连续。
+
+\lead{形式光滑性假设也满足}
+给定交换 $k$-代数 $D$、幂零理想 $I$ 及 $B\to D/I$，$x$ 的像是单位 $\bar a$。取 $a\in D$ 提升它，再取 $b$ 提升 $\bar a^{-1}$，则 $ab=1+j$，$j\in I$。若 $I^r=0$，则
+\[
+ (1+j)^{-1}=1-j+j^2-\cdots+(-j)^{r-1}.
+\]
+故 $a$ 为单位，令 $x\mapsto a$、$x^{-1}\mapsto a^{-1}$，即可提升该同态。这直接验证了 $B$ 的形式光滑性，不依赖有问题的引理。
+
+\lead{结论失败}
+若存在 $v:B\to E$ 使 $f\circ v=v'$，则 $v(x)$ 必为 $k[t]$ 的单位。但 $k[t]$ 的单位均为非零常数：两个非零多项式的乘积为1时，其次数之和为0。于是 $f(v(x))$ 必为常数，与 $v'(x)=1+\bar t$ 矛盾。
+
+\audit{F6-G02}{（19.3.10.1）的缺口、修补及对主命题的影响}{加强理想像条件后可补证}
+\oldauditsrc{同上，印刷第84--85页（上传PDF第83--84页）}
+令 $\mathfrak a=\Ker f$，则 $E'\simeq E/\mathfrak a$。原证明直接把 $\mathfrak k'$ 认作 $(\mathfrak k+\mathfrak a)/\mathfrak a$；实际上，已有条件只给出
+\[
+ (\mathfrak k+\mathfrak a)/\mathfrak a
+   =f(\mathfrak k)\subseteq\mathfrak k'.
+\]
+相等正是缺失的一步。
+
+\lead{一个充分的修订版本}
+将假设加强为 $f(\mathfrak k)=\mathfrak k'$，其他假设不变。则存在连续 $A$-同态 $v:B\to E$，同时满足
+\[
+ f\circ v=v',\qquad (E\to E/\mathfrak k)\circ v=u.
+\]
+这里不主张该加强条件在所有个别情形中都是必要的；它是使原来的纤维积论证成立的明确充分条件。
+
+\lead{完整补证}
+此时 $E'/\mathfrak k'\simeq E/(\mathfrak a+\mathfrak k)$，由（19.3.10.2）有
+\[
+ (E/\mathfrak k)\times_{E'/\mathfrak k'}E'
+ \simeq E/(\mathfrak k\cap\mathfrak a).
+\]
+相容对 $(u,v')$ 因而定义同态
+$w:B\to E/(\mathfrak k\cap\mathfrak a)$。因为目标为离散环，且
+\[
+ \Ker w=\Ker u\cap\Ker v',
+\]
+这是两个开理想的交，$w$ 连续。理想 $\mathfrak k\cap\mathfrak a$ 包含于幂零理想 $\mathfrak k$，因而幂零。形式光滑性给出连续提升 $v:B\to E$。再与纤维积的两条投影复合，便得上述两个等式。
+
+\lead{（19.3.10）不因此被反驳}
+主命题的应用取
+\[
+\begin{aligned}
+ E&=C/\mathfrak a_{n+1},&
+ E'&=C/\mathfrak a_n,\\
+ \mathfrak k&=(\mathfrak j+\mathfrak a_{n+1})/\mathfrak a_{n+1},&
+ \mathfrak k'&=(\mathfrak j+\mathfrak a_n)/\mathfrak a_n,
+\end{aligned}
+\]
+其中 $\mathfrak a_{n+1}\subseteq\mathfrak a_n$。这里确有 $f(\mathfrak k)=\mathfrak k'$。所以主命题可使用上面的修订引理，逐次选取相容提升，再取射影极限。\textbf{本轮反例针对原引理的一般表述，不针对（19.3.10）或（19.3.11）。}
+
+\audit{F6-A01}{（19.3.12）：原作者正式要求删除}{作者勘误，非本轮首次发现}
+\oldauditsrc{EGA IV第四部分，勘误清单三B部（Err\,$_{\mathrm{IV}}$，8），印刷第347页（上传PDF第346页）}
+该勘误要求：删去（$0_{\mathrm{IV}}$，19.3.12），因为其证明错误，集合 $W_\lambda,U_\lambda,V_\lambda$ 不是线性流形。该正式修订已经译入合订本书末，并在原条目旁添加跳转提示。
+
+本轮的处理是：完整保留原陈述和原证明的历史译文，同时在标题、正文前后和脚注中标注\textbf{作者已撤销}。这既避免省略底本，也避免读者把它当作经过修订的有效结果。删除一项有错证明的命题，不能仅凭删除动作推断其结论必然为假；本轮不作这种推断。
+
+\audit{F6-G03}{（19.3.12）：提升集合一般不是仿射线性子空间}{明确展示被撤销证明的线性化错误}
+\oldauditsrc{EGA IV第一部分，印刷第85--86页（上传PDF第84--85页）}
+原证明将代数同态集合放入逐点函数组成的模，继而把满足提升条件的集合当作闭线性流形，以调用线性紧性。代数同态不仅要满足加法与标量条件，还要满足乘法约束；后者是非线性的。
+
+取
+\[
+ k=\mathbb Q,\quad B=k[x],\quad
+ C=k[\varepsilon]/(\varepsilon^3),\quad J=(\varepsilon),
+\]
+并取剩余同态 $u:B\to C/J=k$，$u(x)=0$。令 $\phi_0,\phi_1:B\to C$ 分别由 $x\mapsto0$、$x\mapsto\varepsilon$ 给出。两者均为 $u$ 的提升。若提升集合为函数空间 $C^B$ 中的仿射线性子空间，则其算术中点
+\[
+ h=\tfrac12\phi_0+\tfrac12\phi_1
+\]
+也应在其中。但是
+\[
+ h(x)=\frac{\varepsilon}{2},\qquad
+ h(x^2)=\frac{\varepsilon^2}{2},\qquad
+ h(x)^2=\frac{\varepsilon^2}{4}.
+\]
+$\varepsilon^2\ne0$，所以 $h(x^2)\ne h(x)^2$。$h$ 不是代数同态。这一例子中 $B$ 是多项式代数，形式光滑性没有失败；失败的是\textbf{将提升集合当成线性对象}的步骤。
+
+本例本身存在提升，因此\textbf{不是（19.3.12）结论的反例}。它验证作者指出的证明障碍。工程中的有理数系数计算脚本只检查上述具体多项式等式，不代替一般定理的证明。
+
+\audit{F6-G01}{（19.3.5，v）：有限乘积的同态不能按原文方式拆开}{原证明步骤错误，结论可完整补证}
+\oldauditsrc{EGA IV第一部分，印刷第82页末至第83页首（上传PDF第81--82页）}
+原文把给出 $\prod_iB_i\to C$ 的含幺 $A$-代数同态，说成等价于给出各个 $B_i\to C$ 的含幺 $A$-代数同态。这不成立。取 $A=B_1=B_2=C=k$ 为域，则 $k\times k\to k$ 有两个 $k$-代数同态，即两个投影；而一对 $k\to k$ 的 $k$-代数同态只有一种选择。不能将投影的普遍性质与乘积作为同态源的性质混同。
+
+\lead{正确的分解数据}
+设 $B=\prod_{i=1}^nB_i$，$e_i$ 为它的标准正交幂等元。含幺同态 $u:B\to D$ 给出一组正交幂等元 $u(e_i)$，其和为1。故目标环同时分解为
+\[
+ D\simeq\prod_i u(e_i)D.
+\]
+各分量 $B_i\to u(e_i)D$ 才是相应的含幺同态；右端分量的单位是 $u(e_i)$，不是统一地以 $1_D$ 为单位。
+
+\lead{幂零理想模下幂等元的提升}
+设 $I$ 为交换环 $D$ 的幂零理想。首先当 $I^2=0$，若 $e\in D$ 提升一个幂等元 $\bar e\in D/I$，令 $d=e^2-e\in I$，并取
+\[
+ e'=e-(2e-1)d.
+\]
+因为 $d^2=0$ 且 $(2e-1)^2=1+4d$，直接展开得到
+\[
+ (e')^2-e'=d-(2e-1)^2d=0.
+\]
+对有限链 $D/I,D/I^2,\ldots,D/I^r=D$ 逐次应用平方零情形，得到一般的提升。
+若 $e,e'$ 为两个同剩余类的幂等元，则 $e(1-e')$、$e'(1-e)$ 是位于 $I$ 中的幂等元。幂零理想中的幂等元必为零：若 $z^2=z$ 且 $z^r=0$，则 $z=z^r=0$。所以 $e=ee'=e'$，证明唯一性。由此，有限族正交幂等元的提升仍正交，其和仍为1。
+
+\lead{充分性的补证}
+假定各 $B_i$ 都形式光滑。取离散拓扑 $A$-代数 $C$、幂零理想 $J$ 和连续同态
+$u:B\to C/J$。将 $u(e_i)$ 唯一提升为 $C$ 中的正交幂等元 $c_i$，令 $C_i=c_iC$、$J_i=c_iJ$。于是
+\[
+ C\simeq\prod_iC_i,\qquad C/J\simeq\prod_i(C_i/J_i).
+\]
+$u$ 分解为连续 $A$-同态 $u_i:B_i\to C_i/J_i$。由各 $B_i$ 的形式光滑性，有连续提升 $v_i:B_i\to C_i$。其有限乘积给出连续 $v:B\to C$，且模 $J$ 后为 $u$。
+
+\lead{必要性的补证}
+反之，设 $B$ 形式光滑，固定 $i$，给定连续 $u_i:B_i\to C/J$。与投影 $B\to B_i$ 复合，并由 $B$ 的形式光滑性提升到 $v:B\to C$。$v(e_i)$ 是1的幂等提升，$v(e_j)$（$j\ne i$）是0的幂等提升，故分别为1与0。于是 $v$ 通过 $B_i$ 分解，给出 $u_i$ 的连续提升。连续性可由各因子的连续坐标嵌入直接验证；此处的坐标嵌入作为加法映射使用，并不误称为含幺代数同态。命题结论因而成立。
+
+\audit{F6-G04}{（19.4.1）：选取指标时还须零化测试代数}{证明省略一步，可由原假设补足}
+\oldauditsrc{EGA IV第一部分，印刷第86页（上传PDF第85页）}
+为对 $B/\mathfrak k_\alpha$ 使用其作为 $(A/\mathfrak j_\alpha)$-代数的形式光滑性，测试对象 $C$ 必须本身是 $(A/\mathfrak j_\alpha)$-代数。仅知
+$\mathfrak j_\alpha B\subset\mathfrak k_\alpha\subset\mathfrak k$
+以及 $B/\mathfrak k\to C/\mathfrak a$，只能控制 $C/\mathfrak a$ 中的作用，不能保证 $\mathfrak j_\alpha C=0$。
+
+设 $\rho:A\to C$ 是连续结构同态。$C$ 离散，故 $H=\Ker\rho$ 是 $A$ 的开理想。因为 $\mathfrak j_\alpha\to0$、$\mathfrak k_\alpha\to0$，而指标族递降且滤过，可同时选择一个指标，使
+\[
+ \mathfrak j_\alpha\subset H,\qquad
+ \mathfrak k_\alpha\subset\mathfrak k.
+\]
+这时 $\mathfrak j_\alpha C=0$，$C$ 及 $C/\mathfrak a$ 都是所需基环上的代数；原来的提升论证随即成立。\textbf{无须新增假设，也没有得到命题反例。}
+
+\head{第六版：记号核对与条件提醒}
+\audit{F6-T01}{（19.0.2，II）：不完美模秩的基域}{由所指原文核正的下标}
+\oldauditsrc{EGA IV第一部分，印刷第70页（上传PDF第69页）；交叉核对印刷第188页（上传PDF第187页）的（22.2.6）}
+引言印作 $\dim(A)\ge\operatorname{rg}_k\Upsilon_{K/k}$，但其直接引用的（22.2.6）明确把 $\Upsilon_{K/k}$ 作为 $K$-向量空间，并以 $\operatorname{rg}_K$ 给出维数界。本版因此写作
+\[
+ \dim(A)\ge\operatorname{rg}_K\Upsilon_{K/k},
+\]
+并在脚注中保留原印下标及核对依据。核对这一个引文不等于§22已经翻译，也不借此认证该节所有结论。
+
+\audit{F6-T02}{（19.1.9）：基本系中的商理想须先有定义}{共尾收缩说明}
+\oldauditsrc{印刷第75页（上传PDF第74页）}
+原证明写 $\mathfrak a/\mathfrak j_\lambda$ 为 $A/\mathfrak j_\lambda$ 中的幂零理想，但原陈述未规定每个 $\mathfrak j_\lambda\subset\mathfrak a$。由于 $\mathfrak a$ 为开理想，可将基本系换成包含于 $\mathfrak a$ 的共尾基本系；也可直接使用像理想 $(\mathfrak a+\mathfrak j_\lambda)/\mathfrak j_\lambda$。定义理想的幂趋于零，保证这一像在各离散商中幂零。这是原假设许可的整理，不是新加有限性或完备性条件。
+
+\audit{F6-T03}{（19.1.10，ii）：选择辅助模时须说清自由性}{补出原证明随后使用的选择条件}
+\oldauditsrc{印刷第76页（上传PDF第75页）}
+原句只说取有限型模 $L$，随后以“这里 $L$ 自由”为据使用行列式。应先取剩余向量空间 $M/\mathfrak mM$ 的一组有限基，选其在 $M$ 中的提升，并令 $L=A^r$。这样得到 $L\to M$，模 $\mathfrak m$ 后为同构。Nakayama引理给出满射；原有分裂论证再给出单射。因此只需将选择写完整，无须改变结论。
+
+\audit{F6-T04}{（19.1.12）：局部同态与全局代表的等式}{明确分母与同态的类型}
+\oldauditsrc{印刷第77页（上传PDF第76页）}
+为避免同名 $w_{\mathfrak p}$ 的混淆，另记局部左逆为 $s$。从
+$(\Hom_A(N,M))_{\mathfrak p}\simeq\Hom_{A_{\mathfrak p}}(N_{\mathfrak p},M_{\mathfrak p})$
+得到 $s=w/f$，其中 $w:N\to M$ 为全局同态，$f\notin\mathfrak p$。于是
+\[
+ (w\circ u)_{\mathfrak p}=f\,1_{M_{\mathfrak p}}.
+\]
+利用 $M$ 有限型可选 $g\notin\mathfrak p$，使 $g(wu-f1_M)=0$。在 $A_{fg}$ 中除以 $f$，便得左逆。原印等式中全局与局部对象混写，本版用上述明确约定消除歧义，不改变证明。
+
+\audit{F6-T05}{（19.2.5，ii）：基环扩张后的撇号与理想像}{按源环、目标环恢复类型}
+\oldauditsrc{印刷第79页（上传PDF第78页）}
+应取 $A'$ 的开理想 $\mathfrak j'_\mu$，并写
+$\mathfrak j_\lambda A'\subset\mathfrak j'_\mu$，而不是不说明结构同态便比较不同环的理想。相应商为
+\[
+ \frac{M\otimes_AA'}{\Im(M\otimes_A\mathfrak j'_\mu)+\Im(V_\lambda\otimes_AA')}
+ \simeq (M/V_\lambda)\otimes_A(A'/\mathfrak j'_\mu).
+\]
+它是投射的 $(A'/\mathfrak j'_\mu)$-模。正文显式补齐初版遗漏的撇号，并标注处理依据。
+
+\audit{F6-T06}{（19.3.10）末尾：复合次序}{源靶决定的排印订正}
+\oldauditsrc{印刷第85页（上传PDF第84页）}
+$u:B\to C/\mathfrak j$、$v:B\to C$、$\varphi:C\to C/\mathfrak j$，所以所求关系是
+$u=\varphi\circ v$。原印作 $u=v\circ\varphi$，在这些源靶下甚至不能组成同态。本版更正方向，并保留说明。
+
+\audit{F6-T07}{（19.4.5，i）：拉回余循环的定义域}{商环应带撇号}
+\oldauditsrc{印刷第87页（上传PDF第86页）}
+若 $\varphi:B/\mathfrak k'\to B/\mathfrak k$，则
+\[
+ f\circ(\varphi\times\varphi):
+ (B/\mathfrak k')\times(B/\mathfrak k')\longrightarrow L.
+\]
+初版末处仍写未带撇号的乘积。本版明示订正；这不改变余边界条件的含义。
+
+\audit{F6-H01}{引言的几何提升描述}{须与仿射测试及局部条件一并阅读}
+\oldauditsrc{印刷第69页（上传PDF第68页）}
+引言先以“相差甚微”的预概形说明提升，再立刻限于仿射情形给出代数条件。这一启发性描述不应替代后文精确定义，更不能据此删去测试对象上的仿射或局部限定。本版保留原叙述，只作使用范围提醒，没有把说明文字改造成更强的全局定理。
+
+\audit{F6-H02}{形式双态射与实际双射}{完备化后的同构不等于原映射满射}
+\oldauditsrc{印刷第71页（上传PDF第70页），（19.1.1）--（19.1.2）}
+以 $A=k[t]$ 的 $(t)$-预进制拓扑为例，取拓扑 $A$-模 $M=A$、$N=k[[t]]$。包含同态 $u:M\to N$ 稠密，且从 $N$ 诱导的拓扑正是 $M$ 的原拓扑；两者分离完备化间的同态为恒等同构。所以 $u$ 是形式双态射。但幂级数 $\sum_{n\ge0}t^n$ 不属于 $k[t]$，故 $u$ 不满射。翻译中保留“形式”及完备化帽号具有数学意义。
+
+\audit{F6-H03}{（19.3.4.1）的离散拓扑代数约定}{不可遗失结构同态的连续性}
+\oldauditsrc{印刷第80--81页（上传PDF第79--80页）}
+这里的离散 $A$-代数仍是拓扑 $A$-代数，结构同态 $A\to E$ 连续。幂零元决定的多项式代数同态可连续延拓，是因为核含有合适的乘积拓扑零点邻域，且离散目标分离完备。仅规定变量的像、却任意采用不连续的基环作用，不是原引理的适用情形。此项是约定提醒，不列作原文错误。
+
+\audit{F6-V01}{（19.3.10.2）的纤维积公式}{核对成立，不作错误标记}
+\oldauditsrc{印刷第84页（上传PDF第83页）}
+对非必交换环 $F$ 的两个双边理想 $\mathfrak a,\mathfrak b$，典范同态
+\[
+ F\longrightarrow(F/\mathfrak a)\times_{F/(\mathfrak a+\mathfrak b)}(F/\mathfrak b)
+\]
+的核为 $\mathfrak a\cap\mathfrak b$。若 $(x+\mathfrak a,y+\mathfrak b)$ 属于该纤维积，则 $x-y=a+b$，其中 $a\in\mathfrak a$、$b\in\mathfrak b$。取 $z=x-a=y+b$，便得到该对的原像。因而
+\[
+ F/(\mathfrak a\cap\mathfrak b)\simeq
+ (F/\mathfrak a)\times_{F/(\mathfrak a+\mathfrak b)}(F/\mathfrak b).
+\]
+原证明引用（18.1.7）的替换表中，$\theta$ 使用的同构是
+$(\mathfrak a+\mathfrak b)/\mathfrak b\simeq\mathfrak a/(\mathfrak a\cap\mathfrak b)$；经重新检查页面，该替换与图相容。它不是F6-G02所指出的条件问题，二者不能混淆。
+
+\section*{本轮覆盖与尚未处理的部分}
+\addcontentsline{toc}{section}{本轮覆盖与尚未处理的部分}
+本轮的连续翻译止于（19.4.7）及其证明。19.5“形式光滑性与相伴分次环”、19.6--19.10，以及§§20--23均未连续译入。已定位但未译入的（19.8.7，iii）再次引用已撤销的（19.3.12），此处须在将来续译时联动标注；定位该引用不计作该段已经翻译。
+
+本轮未把编译成功当作逻辑正确，也未重复声称独立审定旧稿全部证明。技术检查的实际页数、日志结果、编号覆盖和渲染核对写入工程中的\texttt{checks/validation.json}及\texttt{PROGRESS.md}；本报告不预填尚未完成的检查结果。
+
+% END reports/sixth_audit.tex
+
+\part*{历史核查记录：第五版}
+\addcontentsline{toc}{part}{历史核查记录：第五版}
+\NewNote{以下E5条目为第五版原有记录，不表示本轮重新审定其全部结论。}
+
+% BEGIN reports/fifth_audit.tex
+\chapter*{第五版：第0章§18译校核查}
+\addcontentsline{toc}{chapter}{第五版：第0章§18译校核查}
+\markboth{第五版新增核查}{第0章§18}
+
+\section*{范围、底本及判断等级}
+\addcontentsline{toc}{section}{范围、底本及判断等级}
+本轮依据用户上传的\texttt{EGAIV.1.pdf}，连续翻译第0章§18“代数扩张的补充知识”的章首说明及（18.1.1）--（18.5.4），含子编号引理（18.5.3.1）。所对应的是分册印刷第51--68页、上传PDF第50--67页；下一接续点为印刷第69页的§19章首及（19.0.1）。各陈述、原有证明详略、公式和交换图均在译稿中逐项处理。原作者明说“留给读者”的内容没有擅自补写成原文。
+
+本轮核对了第四卷第四部分书末勘误清单三A部，发现与新增范围直接相关的（18.1.3）图标修订；已将其译入合订本书末。下面的A类是作者已有勘误，T类是源靶、对象、线性或编号的可确定订正，H类是条件或约定提醒，D类说明交换图重绘方式，V类是本次补充验证。\textbf{这些编号不等于错误定理的数量。}尤其是H02--H04依赖“双模”的具体约定，应按其适用范围理解，不应宣传为交换代数扩张理论中的反例。
+
+下文的详细论证都是译校分析，不属于Grothendieck与Dieudonné原著正文；本轮也没有对旧合订本的全部数学内容重新审定。
+
+\audit{E5-A01}{图（18.1.3.1）的投影标签}{作者正式勘误，已落实}
+\source{$0_{\mathrm{IV}}$，18.1.3，印刷第52页；勘误清单三A部，印刷第345页}
+作者明确要求：图中 $p_2$ 应标在 $G\to F$ 的箭头旁。由 $G=E\times_BF$ 的定义，$p_1(x,y)=x$、$p_2(x,y)=y$，因此 $p_2$ 的定义域是 $G$，不是仅为 $\mathfrak k$。在合订译图中按此移动标签。这是1967年已刊出的正式勘误，不是本次新发现。
+
+\audit{E5-D01}{（18.1.3.1）左上角的核图如何重绘}{明示重排；不将重排图冒称初版逐箭头复制}
+\source{EGA IV第一部分，印刷第52页；上传PDF第51页}
+初版图的左上角还放置了 $\mathfrak j'\oplus\mathfrak k'$、$\mathfrak k'$、$\mathfrak k$ 及若干未标名箭头。本译图采用同段文字给出的核计算，改画成以下自然正合列相互配合的图：
+\[
+ 0\longrightarrow\mathfrak j'
+ \longrightarrow\mathfrak j'\oplus\mathfrak k'
+ \xrightarrow{\,i_2\circ\operatorname{pr}_2\,}\mathfrak k
+ \longrightarrow0.
+\]
+将此列放在 $0\to\mathfrak j'\to G\xrightarrow{p_2}F$ 上方；中间竖箭头为核 $\Ker\varphi\hookrightarrow G$ 的包含，右侧竖箭头为 $\mathfrak k\hookrightarrow F$。于是每个小正方形确实交换。这保留了段落中 $i_1,i_2$ 的识别关系，但不是原图左上角的原样复制，已在译图旁说明。
+
+这里不能把 $f:E\to B$、$g:F\to B$ 默认当作满射，因为（18.1.2）没有这个假设。故译图没有擅自在 $E\to B$、$G\to F$ 后添加正合列终点 $\to0$。
+
+\audit{E5-T01}{（18.1.7）的泛性质箭头反向}{明确的构造方向订正；结论可直接验证}
+\source{印刷第54页；上传PDF第53页上半部}
+设 $h:G\twoheadrightarrow F$、$g:F\twoheadrightarrow B$，$\mathfrak j'=\Ker h$、$\mathfrak k=\Ker g$。给定 $G$-双模同态 $\theta:\mathfrak k\to G$，满足 $h\theta$ 为包含 $\mathfrak k\hookrightarrow F$。令
+\[
+ E=G/\theta(\mathfrak k),\quad q:G\twoheadrightarrow E,\quad
+ G'=E\times_BF.
+\]
+原文在使用纤维积泛性质时印作 $u:G'\to G$。然而已给出的同态是 $q:G\to E$、$h:G\to F$，所以泛性质直接产生的是
+\[
+ u:G\longrightarrow G',\qquad z\longmapsto(q(z),h(z)).
+\]
+这与译文的方向一致；原文的相伴分次映射也相应反向。下面给出完整验证，不把它混入原证明。
+
+\paragraph{良定义与环同态性质。}
+因为 $f\circ q=g\circ h$，$(q(z),h(z))$ 属于纤维积；两坐标均为环同态，故 $u$ 是 $A$-环同态。
+
+\paragraph{单射性。}
+若 $u(z)=0$，则 $q(z)=0$ 且 $h(z)=0$，所以 $z\in\theta(\mathfrak k)\cap\mathfrak j'$。若 $z=\theta(k)$，则 $0=h(z)=k$，从而 $z=0$。
+
+\paragraph{满射性。}
+任取 $(e,t)\in E\times_BF$。由 $q$ 满射，选 $z\in G$ 使 $q(z)=e$。纤维积条件给出
+\[
+ g(h(z)-t)=f(e)-g(t)=0,
+\]
+所以 $k=h(z)-t\in\mathfrak k$。置 $z'=z-\theta(k)$，则
+\[
+ q(z')=e,\qquad h(z')=h(z)-k=t.
+\]
+故 $u(z')=(e,t)$。因此 $u$ 双射。证明后当然可取其逆 $G'\to G$；问题在于不能在这一步以前，把逆方向说成由既有两映射直接产生的泛性质箭头。
+
+\audit{E5-T02}{（18.2.6）的商环和核的作用}{商环应为 $B'$；下降条件可由已有数据推出}
+\source{印刷第56--57页；上传PDF第55--56页}
+文中两个同态 $\theta_1,\theta_2$ 所产生的是 $B'=B/\mathfrak k$ 的扩张；原句写“$B$ 的扩张”与前一句及商构造不符，已改为 $B'$ 并作注。
+
+此外，$L$ 原来只是 $B$-双模。为什么在存在这样的 $\theta$ 时，可以把它看作 $B'$-双模？取 $k\in\mathfrak k$、$\ell\in L$，用 $j:L\hookrightarrow F$ 表示核的包含。$j(\ell)$ 作用于 $\mathfrak k$ 时，经 $F\to B$ 的像为零，因而
+\[
+ j(\ell)\theta(k)=\theta(j(\ell)\cdot k)=0,
+ \qquad
+ \theta(k)j(\ell)=\theta(k\cdot j(\ell))=0.
+\]
+按平方零扩张中 $B$ 的左右作用定义，这给出 $\ell k=k\ell=0$。所以 $\mathfrak k$ 从左右两侧零化 $L$，其双模结构才下降为 $B/\mathfrak k$ 的双模结构。这是对原文前提作用的说明，不是额外加强命题。
+
+\audit{E5-T03}{（18.2.7）并和泛性质中的字母}{源靶不合的排印错误}
+\source{印刷第57页；上传PDF第56页}
+已给定 $u:Y\to T$、$v:Z\to T$、$j_1:Y\to Y\oplus_XZ$、$j_2:Z\to Y\oplus_XZ$。原版第二个等式写为 $u=w\circ j_2$，但右端的定义域是 $Z$。应为
+\[
+ u=w\circ j_1,\qquad v=w\circ j_2.
+\]
+这是泛性质中的字母订正，不是并和构造的错误。
+
+\audit{E5-H01}{（18.2.8）改变商环时的相容双模结构}{引用构造时须明确的前提}
+\source{印刷第58页的前两个交换图；上传PDF第57页}
+若商环由 $B_1$ 变为 $B_2$，必须给 $L'$ 相容的 $B_2$-双模结构，并通过 $h:B_1\to B_2$ 得到 $B_1$-双模结构。这样 $w:L\to L'$ 才能同时用于两端的推前构造。仅有加法群或 $A$-双模同态，不能自动赋予推前对象所需的乘法。商环固定时，该相容性已包含在原文“$B$-双模同态”的假设里。
+
+\audit{E5-V01}{（18.2.8）推前扩张的直接验证}{补充论证；未发现这一构造的反例}
+取 $0\to L\xrightarrow{j}E\xrightarrow{f}B\to0$ 和 $B$-双模同态 $w:L\to L'$。在 $D_E(L')=E\oplus L'$ 上乘法为
+\[
+ (x,s)(y,t)=(xy,f(x)t+sf(y)).
+\]
+令 $N=\{(j(\ell),-w(\ell)):\ell\in L\}$。它是双边理想，因为
+\[
+\begin{aligned}
+ (x,s)(j(\ell),-w(\ell))
+  &=(j(f(x)\ell),-w(f(x)\ell)),\\
+ (j(\ell),-w(\ell))(x,s)
+  &=(j(\ell f(x)),-w(\ell f(x))).
+\end{aligned}
+\]
+这里分别用了 $f(j(\ell))=0$ 以及 $w$ 的左右 $B$-线性。令 $H=(E\oplus L')/N$。映射
+\[
+ L'\longrightarrow H,\ s\longmapsto[(0,s)],\qquad
+ H\longrightarrow B,\ [(x,s)]\longmapsto f(x)
+\]
+给出正合列：前一映射单射，因为 $(0,s)=(j(\ell),-w(\ell))$ 强迫 $\ell=0$、$s=0$；后一映射满射，因为 $f$ 满射。若 $f(x)=0$，写 $x=j(\ell)$，则
+\[
+ [(x,s)]=[(0,s+w(\ell))],
+\]
+故其核恰是 $L'$ 的像。最后，$[(0,s)][(0,t)]=0$，所以这是平方零扩张。该计算也解释了推前与普通张量积不能混为一谈。
+
+\audit{E5-T04}{（18.2.10）中的同态术语}{按原文括号中的精确说明解释}
+\source{印刷第59页；上传PDF第58页}
+原文写“从 $B$ 到 $E$ 的 $B$-环同态”，同时明确在括号内解释为增广 $f:E\to B$ 的 $A$-同态右逆。后者才是不依赖额外选择的准确条件：
+\[
+ g:B\to E\quad\text{为 $A$-环同态，且 }fg=1_B.
+\]
+选择 $g$ 之前没有在 $E$ 上固定一个 $B$-环结构。对于这样的 $g$，
+\[
+ (b,\ell)\longmapsto g(b)+j(\ell)
+\]
+是 $D_B(L)\to E$ 的扩张等价；其逆为
+\[
+ e\longmapsto\bigl(f(e),\ j^{-1}(e-g(f(e)))\bigr).
+\]
+乘法相容性由平方零条件和 $g$ 为环同态直接得到。故命题结论没有被反驳，只是术语必须依其括号定义读取。
+
+\audit{E5-T05}{（18.3.6）的函子式回指}{编号误植}
+\source{印刷第62页；上传PDF第61页}
+原文写（18.3.4.1），但这个编号没有出现；此处完成的正是（18.3.5.1）所定义的函子。正文只改该回指，不改原条目编号。
+
+\audit{E5-H02--H04}{中心作用与代数扩张所需的双模约定}{一般双模解释下有检验反例；对称约定下需明说}
+\source{（18.3.6）末段，印刷第62页；（18.4.1），印刷第64页}
+这里必须区分两个不同条件。$B$-双模要求左右作用相互交换，即 $(b\ell)c=b(\ell c)$；它不自动要求 $z\ell=\ell z$（$z\in Z(B)$）。而对 $A$-代数 $B$，若要一个核为 $L$ 的平方零扩张还是 $A$-代数，则至少需要
+\[
+ \rho(a)\ell=\ell\rho(a)\qquad(a\in A,\ell\in L).
+\]
+后一条件只涉及 $\rho(A)$，不等于对整个 $Z(B)$ 都对称。
+
+\paragraph{一个显式双模。}
+取 $B=\mathbb Q[t]$，令 $\sigma:B\to B$ 是自同构 $\sigma(p(t))=p(t+1)$。以 $B$ 的加法群为 $L$，定义
+\[
+ b\cdot\ell=b\ell,\qquad \ell\cdot b=\ell\,\sigma(b).
+\]
+两个作用均含幺；且
+\[
+ (b\cdot\ell)\cdot c=b\ell\sigma(c)
+ =b\cdot(\ell\cdot c),
+\]
+所以这是 $B$-双模。尽管 $t\in Z(B)$，却有
+\[
+ t\cdot1=t,\qquad1\cdot t=t+1.
+\]
+这直接说明（18.3.6）写出的 $yz=zy$ 不适用于所有通常意义下的双模。
+
+\paragraph{检验（18.4.1）。}
+再取 $A=B$，结构同态为恒等。在标准平凡扩张 $D_B(L)=B\oplus L$ 中，以 $a=(t,0)$、$e=(0,1)$ 计算，有
+\[
+ ae=(0,t),\qquad ea=(0,t+1).
+\]
+因此 $A$ 的结构像不在中心，$D_B(L)$ 不是这个结构下的 $A$-代数。
+
+事实上，在这个双模结构下根本不存在核为 $L$ 的 $A$-代数扩张。若有 $0\to L\xrightarrow{j}E\to B\to0$，且 $A\to E$ 的结构像在中心，设 $r:A\to E$ 为结构同态，则
+\[
+ j(t\cdot1)=r(t)j(1)=j(1)r(t)=j(1\cdot t).
+\]
+由 $j$ 单射便得到 $t=t+1$，矛盾。所以若完全不要求 $A$-对称性，原段所称“作为 $A$-代数的扩张类子群”甚至可能是空集。
+
+\paragraph{正确的适用界限。}
+将（18.4.1）的 $L$ 限定为对 $A$ 作用对称的 $B$-双模，并对推前对象 $L'$ 作同样要求，即可使标准平凡扩张的结构像中心化，纤维积与所用商构造也保持 $A$-代数性质。若作者的“双模”用语在本段已隐含“在 $A$ 上的双模”，那么这只是必须显式化的约定。\textbf{本报告不把缺乏明示约定等同于已反驳作者意图下的定理。}
+
+同样，上面对 $yz=zy$ 的检验并不证明 $\Exan_A(B,L)$ 不可能具有合适的中心作用。左右中心作用各自都可给出双模自同态；它们在扩张类群上的关系需要另外论证，不能单凭双模中这个不成立的逐元素等式得到。本轮只对原句采用了明确的适用范围提醒。
+
+\audit{E5-T06}{（18.4.3）Hochschild扩张的正合列}{前两个对象颠倒}
+\source{印刷第65页；上传PDF第64页}
+原版写 $0\to E\to L\to B\to0$，与此前的“以 $L$ 为核的 $B$ 的扩张”及随后 $E\simeq B\times L$ 不相容。应为 $0\to L\to E\to B\to0$。这是对象误置，不是需要修改Hochschild扩张的定义。
+
+\audit{E5-H05}{Hochschild余循环是否已归一化}{单位元和 $A$-模分裂的区别}
+设 $f$ 满足（18.4.3.1），令 $c=f(1,1)$。分别把 $(x,y,z)$ 取为 $(1,1,y)$ 和 $(x,1,1)$，得到
+\[
+ f(1,y)=cy,\qquad f(x,1)=xc.
+\]
+因此在乘法
+\[
+ (x,s)(y,t)=(xy,xt+sy+f(x,y))
+\]
+下，单位是 $(1,-c)$：两侧相乘分别给出
+\[
+ (1,-c)(y,t)=(y,t-cy+f(1,y))=(y,t),
+\]
+\[
+ (x,s)(1,-c)=(x,s-xc+f(x,1))=(x,s).
+\]
+若 $f$ 已归一化，即 $f(1,x)=f(x,1)=0$，单位才直接写为 $(1,0)$。若 $f=\delta g$，其中
+\[
+ (\delta g)(x,y)=xg(y)-g(xy)+g(x)y,
+\]
+则 $x\mapsto(x,-g(x))$ 为扩张的环截面，因为
+\[
+ (x,-g(x))(y,-g(y))=(xy,-g(xy)).
+\]
+又 $f(1,1)=g(1)$，故这个截面保持实际单位 $(1,-c)$。所以原段并未因没有写出归一化而被否定；真正应避免的是读者自行把所选 $A$-模分裂误当成保单位的环分裂。
+
+\audit{E5-T07}{（18.4.4）中线性所对应的基环}{已用反例检验的线性误植，不否定上同调公式}
+\source{印刷第66页；上传PDF第65页}
+$h':B\otimes_AB\to L$ 对第一个张量因子 $B$-线性，并不使 $g(y)=h'(1\otimes y)$ 对 $B$-线性。取
+\[
+ A=\mathbb Q,
+ \qquad B=L=\mathbb Q[t],
+ \qquad h'(x\otimes y)=x\frac{dy}{dt}.
+\]
+这个 $h'$ 对 $A$-张量积良定义且对 $B$ 线性；但 $g(1)=0$、$g(t)=1$。若 $g$ 为 $B$-线性，就应有 $g(t)=tg(1)=0$，矛盾。
+
+这不是无关紧要的措辞：若只允许 $B$-线性的 $g$，就会改变余边界的范围。以二阶导数 $g=d^2/dt^2$ 为例，它是 $A$-线性的，且
+\[
+ \delta g(x,y)=xg(y)-g(xy)+g(x)y=-2x'y'.
+\]
+这是一个实际的 $2$-余边界。若它由某个 $B$-线性映射 $\widetilde g$ 产生，那么 $\widetilde g(x)=x c$，故 $\delta\widetilde g(x,y)=xyc$。取 $x=y=1$ 得 $c=0$，再取 $x=y=t$ 得 $0=-2$，矛盾。所以应当使用 $A$-线性映射，正如原文上一段（18.4.3.2）已写明的那样。
+
+\audit{E5-T08--T09}{（18.5.1）、（18.5.4）的环归属与回指}{两处可确定的文字订正}
+（18.5.1）中 $\mathfrak k'$ 是 $B$ 的开理想，$\mathfrak j'$ 是 $A$ 的开理想；原版“分别属于 $A,B$”把顺序反写，已注明订正。
+
+（18.5.4）证明调用的是商环扩张分类（18.3.8），原版写（18.3.9），但18.3没有该条。合订译稿改为（18.3.8），保留注记，不重新编造一条18.3.9。
+
+\audit{E5-V02}{（18.5.4）取极限步骤的共尾性}{补充验证；不宣称原结论错误}
+令 $\pi:B\twoheadrightarrow C=B/\mathfrak j$。按（18.5.1），$\Exantop_B(C,L)$ 的指标是开理想偶对 $(I,K)$，其中 $I\subset B$、$K\subset C$，满足 $\pi(I)\subset K$，且 $K$ 从左右两侧零化 $L$。
+
+\paragraph{第一步：限制到单指标系。}
+商映射 $\pi$ 是开映射，所以 $\pi(I)=(I+\mathfrak j)/\mathfrak j$ 是 $C$ 的开理想。每个 $(I,K)$ 都被 $(I,\pi(I))$ 细化，后者仍零化 $L$。因此形如 $(I,\pi(I))$ 的指标构成共尾子系。这里不需要假设 $\mathfrak j$ 闭，也不需要假设 $B$ 分离。
+
+\paragraph{第二步：计算有限阶段的余法双模。}
+对满同态
+\[
+ B/I\longrightarrow B/(\mathfrak j+I),
+\]
+其核为 $(\mathfrak j+I)/I$，核的平方为 $(\mathfrak j^2+I)/I$。所以（18.3.8）给出
+\[
+ \Exan_{B/I}\bigl(B/(\mathfrak j+I),L\bigr)
+ \simeq
+ \Hom_{B/(\mathfrak j+I)}
+ \bigl((\mathfrak j+I)/(\mathfrak j^2+I),L\bigr).
+\]
+又有典范同构
+\[
+ (\mathfrak j+I)/(\mathfrak j^2+I)
+ \simeq \mathfrak j/(\mathfrak j^2+\mathfrak j\cap I).
+\]
+
+\paragraph{第三步：连续同态恰好从某一阶段下降。}
+设 $u:\mathfrak j/\mathfrak j^2\to L$ 连续。$L$ 离散，所以 $u$ 的核开；将它拉回到 $\mathfrak j$ 得到一个含 $\mathfrak j^2$ 的开子双模 $V$。因为 $\mathfrak j$ 取由 $B$ 诱导的拓扑，可选 $B$ 的开理想 $I$，使 $\mathfrak j\cap I\subset V$；再与一个在 $C$ 中零化 $L$ 的开理想的逆像相交，使 $\pi(I)$ 零化 $L$。于是 $u$ 从上一步的商双模下降。
+
+反之，从有限阶段商双模到离散 $L$ 的同态，拉回后其核含开子模 $\mathfrak j\cap I$，故连续。各过渡映射保持这一识别，两个表示在更细的共同阶段一致。因此取归纳极限得到（18.5.4.1）。这补足了原文最后一句所省略的指标与拓扑核对。
+
+\section*{本轮检查方法与限制}
+\addcontentsline{toc}{section}{本轮检查方法与限制}
+本轮逐条核对新增范围的原文页面；重点放大检查了纤维积重建、推前扩张、扩张类群、Hochschild复形及拓扑极限所涉及的符号和图。独立验证脚本检查了扭曲双模计算、二阶导数余边界、有限次数Hochschild边界的复合，以及模 $9$ 的环纤维积重建例。脚本成功只是这些有限计算的辅助证据，不代替上面的普遍证明。
+
+排版、条目、公式和编译检查的实际结果另见工程包的构建检查说明及JSON记录（位于\texttt{checks}目录）。本报告的历史部分仍保留其旧批次措辞；“历史报告已收录”不等于本轮再次认证全部旧判断。
+
+% END reports/fifth_audit.tex
+
+\part*{历史核查记录：第四版}
+\addcontentsline{toc}{part}{历史核查记录：第四版}
+\NewNote{以下D4条目为第四版原有记录，不表示本轮重新审定其全部结论。}
+
+% BEGIN reports/fourth_audit.tex
+\chapter{第四版：第0章§§16--17的译校与核查}
+\section{范围、证据与分类}
+本轮连续译文的底本为用户上传的 \texttt{EGAIV.1.pdf}，第0章§16“诺特局部环中的维数与深度”和§17“正则环”，从（16.1.1）至（17.3.9）及其后的两段文字。它们位于该文件第21--50页的相应部分，原分册印刷页码为22--51。还核对了 \texttt{EGAIV.4.pdf} 第344、346页的相关作者勘误（印刷第345、347页）。原扫描同时出现分册页码与期刊连续页码，本报告统一采用分册印刷页码，并辅以PDF页序。
+
+本轮编号分为：D4-A（作者正式勘误）、D4-E（有明确反例的原字面断言）、D4-G（可修补的证明步骤）、D4-P（仍需补足的证明事项）、D4-T（文字、对象或引文调整）、D4-H（假设、定义及阅读边界）。\textbf{编号总数不是错误定理的数量。}尤其是D4-E02只是零模边界，D4-A02是作者删去多余假设的推广，D4-H中多项只是防止误读。
+
+译文按初版组织与详略排列。显式采用作者改正之处有脚注；仍保留初版原句之处，也在紧邻脚注中说明修订。下面的反例与补证是译校者的分析，不伪装成原著证明；未逐行复核此前合订本全部内容，历史报告也未在本轮获得再次独立认证。
+
+\section{作者正式勘误：五项}
+\audit{D4-A01}{（16.1.4）的悬链性表述缺少整环限定}{作者已正式更正，不是本次首次发现}
+\source{IV第一部分印刷第23页；IV第四部分印刷第347页，Err$_{\mathrm{IV}}$，5}
+初版将悬链性与所有 $\qq\subset\pp$ 都满足
+\[
+ \dim A_{\qq}+\dim(A_{\pp}/\qq A_{\pp})=\dim A_{\pp}
+\]
+直接等同。作者要求把“说 $A$ 是悬链的”改为“说\textbf{一个整环} $A$ 是悬链的”。
+
+区别在于：悬链性比较\emph{同一对端点之间}的饱和链，不保证不同极小素理想到同一极大素理想的链等长。可以用
+\[
+ A=\bigl(k[x,y,z]/(xy,xz)\bigr)_{(x,y,z)}
+\]
+作具体检验。令 $\mathfrak p=(x)$、$\mathfrak q=(y,z)$、$\mathfrak m=(x,y,z)$ 表示商环中的理想。两个不可约分支分别为
+\[
+ A/\mathfrak p\simeq k[y,z]_{(y,z)},\qquad
+ A/\mathfrak q\simeq k[x]_{(x)},
+\]
+维数为2和1，且只在闭点相交。每个固定端点间的素理想区间位于相应分支；前一分支中极小到极大的饱和链长度为2，后一分支中为1，各自满足悬链性，故 $A$ 悬链。但
+\[
+ \dim A_{\mathfrak q}=0,\qquad
+ \dim(A_{\mathfrak m}/\mathfrak qA_{\mathfrak m})=1,
+ \qquad\dim A_{\mathfrak m}=2.
+\]
+所写等式变成 $0+1=2$。这与作者增加整环条件一致，不应继续引用未限定的初版句子。
+
+\audit{D4-A02}{（16.1.9）的诺特假设可以删去}{作者推广；初版较强假设下的结论不因此错误}
+\source{IV第一部分印刷第25页；IV第四部分印刷第347页，Err$_{\mathrm{IV}}$，6}
+初版用 $A$ 诺特保证 $\End_A(M)$ 及其子模 $B_M$ 有限型。作者指出可不用这一途径：任意 $u\in B_M$ 在有限型 $A$-模 $M$ 上作用，行列式技巧给出 $u$ 的整性。具体地，若 $m_1,\ldots,m_r$ 生成 $M$，写
+\[
+ um_i=\sum_j a_{ij}m_j.
+\]
+伴随矩阵恒等式表明，首一多项式 $\det(TI-(a_{ij}))$ 在 $T=u$ 处零化 $M$。由于 $B_M$ 就是 $B$ 在 $\End_A(M)$ 中的像，作用忠实，故该多项式在 $B_M$ 中确实为零。所以 $B_M$ 整于 $A_M$，再应用（16.1.5）。
+
+这不是声称任意环上有限型模的端同态环必有限型，也不是将初版“子模有限型”的论证原样移到非诺特情形。
+
+\audit{D4-A03}{（16.2.2.2）交滤过的母模误植}{作者已正式更正的公式错误}
+\source{IV第一部分印刷第26页；IV第四部分印刷第345页，勘误A部}
+初版印为 $M'_n=M'\cap\mathfrak q^nM'$；应为
+\[
+ \boxed{M'_n=M'\cap\mathfrak q^nM.}
+\]
+此时才有正合列
+\[
+ 0\longrightarrow M'/(M'\cap\mathfrak q^nM)
+ \longrightarrow M/\mathfrak q^nM
+ \longrightarrow M''/\mathfrak q^nM''\longrightarrow0,
+\]
+并能将长度等式与Artin--Rees良好滤过结合。取 $A=k[[t]]$、$M=A$、$M'=tA$、$\mathfrak q=(t)$，则 $M'\cap t^nM=t^nA$（$n\geq1$），而 $t^nM'=t^{n+1}A$，两者并不相同。正文采用作者修订，并注明初版原式。
+
+\audit{D4-A04}{（16.5.12）不能直接套用未限定的（16.1.4.2）}{作者已给出证明修补}
+\source{IV第一部分印刷第39页；IV第四部分印刷第347页，Err$_{\mathrm{IV}}$，7}
+作者指出，关系（16.5.11.1）等价于将 $A$ 换成各极小素理想商环 $A/\mathfrak r$ 后的相同关系。因此可先归约到整环，再使用更正后的（16.1.4.2）。译文保留初版证明，并以脚注指向该修补及书末选译。这里\textbf{没有否定Cohen--Macaulay局部环及有关商环的悬链性结论}。
+
+\audit{D4-A05}{（17.3.7）误引不存在的（17.1.10）}{作者已正式更正的引文}
+\source{IV第一部分印刷第50页；IV第四部分印刷第345页，勘误A部}
+多项式环正则性的证明应使用（17.3.3），不是初版印出的（17.1.10）。相应步骤是：$A_{\mathfrak p}\to B_{\mathfrak q}$ 为平坦局部同态，底环正则，闭纤维局部环正则，故总环正则。本版正文按作者勘误更换引文。
+
+\section{有明确反例的两项字面断言}
+\audit{D4-E01}{（16.4.2）对任意模的极大正则序列判据不成立}{缺少有限型或相应有限伴随素理想假设}
+\source{IV第一部分印刷第32--33页，上传PDF第31--32页}
+初版只假定 $A$ 为诺特局部环，$M$ 为任意 $A$-模，却声称：由极大理想中的元素组成的 $M$-正则序列 $(x_1,\ldots,x_n)$ 极大，当且仅当
+\[
+ \Hom_A\bigl(k,M/(x_1M+\cdots+x_nM)\bigr)\ne0.
+\]
+其证明用“极大理想包含于伴随素理想之并，故等于其中之一”。对无限族，不能这样使用有限素理想回避。
+
+\subsection*{一个完全明确的反例}
+取任意域 $k$，令
+\[
+ A=k[x,y]_{(x,y)},\qquad\mathfrak m=(x,y)A,
+ \qquad
+ M=\bigoplus_{\substack{\mathfrak p\in\Spec A\\\htp\mathfrak p=1}}A/\mathfrak p.
+\]
+这是诺特局部环上的一个无限直和模。下面分别核对两边。
+
+任取 $0\ne f\in\mathfrak m$。这个环是多项式唯一分解环的局部化；$f$ 有一个非单位不可约因子 $g$。令 $\mathfrak p=(g)$，它是高度1素理想，并且 $f\in\mathfrak p$。于是，在直和因子 $A/\mathfrak p$ 中，非零元 $1+\mathfrak p$ 被 $f$ 零化。$f=0$ 的情形更直接。因此，$\mathfrak m$ 中不存在任何 $M$-正则元素，空正则序列不能继续延长，因而极大。
+
+另一方面，每个 $A/\mathfrak p$ 都是一维局部整环。由于 $\mathfrak p\ne\mathfrak m$，可取 $u\in\mathfrak m-\mathfrak p$；其在 $A/\mathfrak p$ 中非零，数乘单射。所以
+\[
+ (0:_{A/\mathfrak p}\mathfrak m)=0.
+\]
+直和中的元素只有有限个非零分量；一个元素若被 $\mathfrak m$ 的全部元素零化，则其每个分量均被 $\mathfrak m$ 零化，因而全为零。故
+\[
+ \Hom_A(k,M)=(0:_M\mathfrak m)=0.
+\]
+这就得到“正则序列极大，但所写Hom为零”，直接否定任意模版本的必要性。
+
+\subsection*{有限型情形的修补与影响范围}
+若 $M$ 有限型，令 $N=M/(x_1M+\cdots+x_nM)$；则 $N$ 有限型，$\Ass N$ 有限。序列极大意味着 $\mathfrak m$ 的每个元素在 $N$ 上都是零因子，故
+\[
+ \mathfrak m\subset\bigcup_{\mathfrak p\in\Ass N}\mathfrak p.
+\]
+有限素理想回避给出 $\mathfrak m\subset\mathfrak p$ 对某个 $\mathfrak p\in\Ass N$ 成立。由于 $\mathfrak m$ 极大，$\mathfrak p=\mathfrak m$，所以 $\Hom_A(k,N)\ne0$。反方向对任意模都成立：若 $0\ne v\in N$ 被 $\mathfrak m$ 零化，则任何 $x\in\mathfrak m$ 都不能在 $N$ 上单射。
+
+因此，（16.4.4）等显式要求有限型的深度结论不被上述反例推翻。（16.4.3）的证明只使用“非极大序列的最后商模没有非零 $\mathfrak m$-零化元”这一正确方向，也不能据此宣布（16.4.3）错误。
+
+\audit{D4-E02}{（17.2.7）的射影维数递增式漏排零模}{边界条件遗漏；非零有限型模版本成立}
+\source{IV第一部分印刷第44页；射影维数约定见印刷第42页（17.2.2（i））}
+初版在（17.2.6）的假设下写
+\[
+ \pd_A(M/xM)=\pd_A M+1
+\]
+却没有注明 $M\ne0$。本书的约定使零模为射影模，故 $\pd_A0=0$；本书的正则元素定义只要求数乘单射，所以每个 $x$ 对零模都正则。取 $A=k[[t]]$、$x=t$、$M=0$，左端为0，右端为1。
+
+修补是加上 $M\ne0$。若 $M$ 非零有限型，Nakayama引理给出 $M/\mathfrak mM\ne0$。原文得到的正合列
+\[
+ 0\to\Tor_i^A(M,k)\to\Tor_i^A(M/xM,k)
+ \to\Tor_{i-1}^A(M,k)\to0
+\]
+此时能正确检测最高非零Tor。若 $\pd_A M=d<\infty$，则 $\Tor_d^A(M,k)\ne0$，从而商模的射影维数为 $d+1$。若 $\pd_A M=\infty$，对任意大的次数仍存在非零Tor，以上正合列使商模也有无限射影维数。故非零版本并未被反驳。
+
+\section{证明步骤与待补事项}
+\audit{D4-G01}{（16.2.3.2）归纳中多写了尚未得到的等号}{可用所需不等式完成原证明}
+\source{IV第一部分印刷第27页}
+这一阶段正在证明 $\dim M\leq d(M)$，尚未完成三者相等的定理。原文却以归纳假设写
+$d(N/xN)=\dim(N/xN)$。实际只需
+\[
+ n-1\leq\dim(N/xN)\leq d(N/xN)\leq d(N)-1.
+\]
+第二个不等式正是较小Hilbert--Samuel次数下的归纳假设，第三个来自 $x$ 在 $N$ 上正则及（16.2.3.1（iii））。所以 $n\leq d(N)$，不必预先使用完整等式。这是局部的证明表述问题，不是否定Krull--Chevalley--Samuel定理。
+
+\audit{D4-P01}{（16.3.8）半局部环中所选元素未保证在根基内}{证明的选取步骤需补；本轮未给出原命题反例}
+\source{IV第一部分印刷第31页}
+原命题要选出参数系的一部分，依（16.3.6）这些元素必须在Jacobson根基 $\mathfrak r$ 中。证明先选 $x\in\mathfrak a$ 避开所有极小素理想，却未保证 $x\in\mathfrak r$，随后使用含根基条件的（16.3.4）。
+
+这一限制不是自动满足的。令 $R=k[[t]]$、$S=k[[u,v]]$，取
+\[
+ A=R\times S,\quad\mathfrak a=(t)R\times S,\quad x=(t,1).
+\]
+$A$ 是诺特半局部环，$\mathfrak a\ne A$，且 $\operatorname{ht}\mathfrak a=1$。它的两个极小素理想是 $0\times S$ 与 $R\times0$；$x$ 避开两者，却不在
+$\mathfrak r=(t)R\times(u,v)S$ 中。并且
+\[
+ \dim A=2,\qquad A/xA\simeq k,\qquad\dim(A/xA)=0\ne\dim A-1.
+\]
+所以证明按字面允许的这种选择，既不能成为参数系的一部分，也不满足所用的降维等式。
+
+这\textbf{不反驳存在性命题}：在同一例子中改取 $(t,u)$ 即能满足所需性质。一般半局部情形还需同时控制各极大点下的选择与余维条件；本轮保留原命题，明确标记该步待补，未将一个仅在局部情形直接成立的证明冒充一般修补。
+
+\section{文字、对象与引文调整}
+\audit{D4-T01}{（16.1.1）维数定义的引用}{原号与定义位置不符}
+初版引用（14.2.1），该条定义余维；组合维数的定义是（14.1.2）。正文保留原引，脚注指出。位置：印刷第22页。
+
+\audit{D4-T02}{引理编号（16.12.2.1）}{初版标题误排，后文均按16.2.2.1引用}
+初版印刷第26页标题多出数字1。本译稿排作（16.2.2.1），记录原号，不补造一条所谓“16.12.2.1”。
+
+\audit{D4-T03}{（17.2.5）Ext局部化应解消第一变量}{证明中的模名错置}
+\source{IV第一部分印刷第43页}
+原文要证明
+\[
+ S^{-1}\Ext_A^i(N,M)\simeq
+ \Ext_{S^{-1}A}^i(S^{-1}N,S^{-1}M),
+\]
+其中 $A$ 诺特、$N$ 有限型，$M$ 可任意。这里应取 $N$ 的有限型自由左解消，而不是原文所说的 $M$ 的自由解消。若 $P_\bullet\to N$ 为这样的解消，则逐项有
+\[
+ S^{-1}\Hom_A(P_j,M)
+ \simeq\Hom_{S^{-1}A}(S^{-1}P_j,S^{-1}M).
+\]
+局部化正合，故与取同调交换，得到所需同构。初版的结论保留，译注指出对象错置。
+
+\audit{D4-T04}{（17.2.13）的自由解消方向}{Tor计算应为左解消}
+初版印刷第45页两次写“右解消”。用于计算 $\Tor_i^A(M,N)$ 的自由解消应为
+$\cdots\to L_1\to L_0\to M\to0$。正文明确采用左解消并说明原字样；这是方向文字错误，不是平坦基变换结论被推翻。
+
+\audit{D4-T05}{（17.3.4）深度降1公式的引用}{应引16.4.6（ii），不是（i）}
+初版印刷第49页在取 $M$-正则元素后写 $\prof(M/xM)=\prof M-1$，却引（16.4.6（i））。正确位置为（ii），原证明路线不受影响。
+
+\audit{D4-T06}{（17.3.9）被表示为商环的对象漏了局部化}{应为 $S^{-1}C$，不是 $C$}
+\source{IV第一部分印刷第51页}
+若 $C=B'/I$，$S'$ 是 $S$ 在 $B'$ 中的逆像，正确关系是
+\[
+ S^{-1}C\simeq S'^{-1}B'/S'^{-1}I.
+\]
+初版相应句子的主语写成 $C$。取 $B'=C=\mathbf Z$、$I=0$、$S=\mathbf Z-\{0\}$，$S'^{-1}B'=\mathbf Q$。不存在从 $\mathbf Q$ 到 $\mathbf Z$ 的保单位环同态，因为2的逆元将不得不映到 $\mathbf Z$ 中2的逆元。所以 $\mathbf Z$ 不是 $\mathbf Q$ 的商环；而 $S^{-1}C=\mathbf Q$ 正是所需商环。正文采用正确对象并保留原式说明。
+
+\section{假设、定义与阅读边界}
+\audit{D4-H01}{（16.1.4）的“双等维”}{继承早期译注，不把有问题的等价条件重新当作定义}
+应结合（14.3.3）的核查阅读，尤其不能把等维、等余维、悬链三个条件的合取，无条件等同于全部极大链等长。本轮没有重新验证历史报告的每个反例；相关提醒只防止把早期已标注的缺口带入新节。
+
+\audit{D4-H02}{（16.2.1）定义理想的半局部条件}{“商环Artin”等价说法须保留根基包含条件}
+原文先要求 $\mathfrak q\subset\mathfrak r$ 且包含 $\mathfrak r$ 的某个幂。若只保留“$A/\mathfrak q$ 是Artin环”，不够：取
+$A=k\times k$、$\mathfrak r=0$、$\mathfrak q=k\times0$，则商环是域，然而 $\mathfrak q\not\subset\mathfrak r$。因此此处应理解为在前述根基包含限制下的等价刻画。
+
+\audit{D4-H03}{（16.2.3.1（iii））左下标不能漏}{是 $\Ker x$ 的Hilbert--Samuel多项式，不是 $M$ 的}
+原式为
+\[
+ P_{\mathfrak q}({}_xM,n)-P_{\mathfrak q}(M/xM,n),
+ \qquad{}_xM=\Ker(x:M\to M).
+\]
+以 $A=k[[t]]$、$M=A$、$x=t$、$\mathfrak q=(t)$ 检验：$d(M)=1$，${}_xM=0$，正确差为 $-1$，次数0；若漏掉左下标，错误差变成 $n-1$，次数1，不满足至多 $d(M)-1$。本次按扫描页排出左下标，不把文本识别遗漏当成原著错误。
+
+\audit{D4-H04}{（16.3.6）参数系与定义理想的作用环}{应区分在 $A$ 中与在 $A/\Ann M$ 中}
+取 $R=k[[t]]$、$A=R\times k$、$M=R$（经第一投影作用），则
+\[
+ \mathfrak r=(t)R\times0,\quad
+ \Ann_A M=0\times k,\quad\dim M=1.
+\]
+元素 $x=(t,0)$ 构成 $M$ 的参数系，因为 $M/xM\simeq k$。但
+\[
+ Ax+\Ann M=(t)R\times k\not\subset\mathfrak r,
+\]
+不是原文先前定义的 $A$ 的定义理想。在 $A/\Ann M\simeq R$ 中，其像则是定义理想。也可像（16.2.3.3）那样改用
+$Ax+(\mathfrak r\cap\Ann M)$。这不否定“参数系可在零化子商环中理解”的结论，只须写清作用环。
+
+\audit{D4-H05}{（16.4.1）的零模边界}{涉及参数系长度时需非零模语境}
+原文随后明确以 $M\ne0$ 得到正则序列长度至多 $\dim M$；按本书 $\dim0=-\infty$ 而零模上所有数乘均单射，故前面的“参数系”说法不能机械套到零模。译文保留原范围，并将此列作边界提醒。
+
+\audit{D4-H06}{（16.4.3）不受D4-E01反例直接否定}{只用了前一引理的正确方向}
+若 $\Hom_A(k,N)\ne0$，则存在被 $\mathfrak m$ 零化的非零元，所以正则序列不能继续延长。取逆否命题，“仍能延长”推出 $\Hom_A(k,N)=0$。这个方向不要求有限型，足以支持原文该步归纳。不能因为引理某个方向失效就把所有引用它的后续命题都列为错误。
+
+\audit{D4-H07}{正则参数系与正则序列构成的参数系}{两者不应混译}
+在 $k[[t]]$ 中，$(t^2)$ 是参数系，也是正则序列，但不生成极大理想 $(t)$，所以不是（17.1.6）的正则参数系。这一区分在原文已经强调，不是本次发现的新错误。
+
+\audit{D4-H08}{（17.2.11）Tor判据的有限型环节}{先对有限型模应用17.2.6，再用17.2.8}
+由剩余域射影维数至多 $n$ 可知任意模 $M$ 的高次 $\Tor_i(M,k)$ 消失；但（17.2.6）反推射影维数时要求 $M$ 有限型。正确读法是先取有限型 $M$，推出它们的射影维数均至多 $n$，再由（17.2.8）的条件a'）推出所有模的全局维数界。结论无须修改。
+
+\audit{D4-H09}{（17.2.15）的平坦态射}{应用所引命题需要局部茎同态}
+（17.2.13）对平坦\emph{局部}环同态作出结论。因而（17.2.15）应在局部赋环空间及局部态射的约定下理解，不能将“茎环都是局部环”当成“茎同态为局部同态”。本轮未因作者省略重申约定而判定该命题错误。
+
+\audit{D4-H10}{（17.3.1）归纳量与全局维数重用字母}{显式更换记号，不改变原证明}
+原证明先以 $n=\rk_k(\mathfrak m/\mathfrak m^2)$ 归纳，随后第一种情形又写 $n=\gldim A$。本译稿将后者改记 $d$，并注明。它有限是因为 $\pd_A\mathfrak m<\infty$、$0\to\mathfrak m\to A\to k\to0$ 及（17.2.11），不是预先假定要证明的正则性。
+
+\audit{D4-H11}{§17末尾关于“重要的环”的叙述}{保留历史语境，不改写成无条件定理}
+原著最后一句关于代数几何应用中“一切重要的环”都是正则环商环，是叙述性概括；它没有给出“重要”的数学定义。本版保留原句，但不将其扩张成任意环的普遍结论。
+
+\section{外部交叉核验的限定}
+本轮译文以用户上传法文原著为底本。另查看Stacks Project的§10.72（标签00LE）、§10.68（标签0AUH）及§10.110（标签065U），仅用来对照有限型假设、零模约定和正则局部环的全局维数结论。其深度论的关键Ext刻画明确要求非零有限型模；其正则序列定义还要求最终商模非零，与本书初版约定不同。因此不能把现代定义静默替换进EGA译文，也不能用定义差异消除D4-E02在本书自身约定下的边界问题。上述网页不是这两节的翻译来源。
+
+\section{本轮审校结论与后续接续点}
+本轮已形成第0章§§16--17的连续译稿，保留初版各编号条目、证明、公式和原注，并补充相关作者勘误与译校注。编译、条目清点、单文件独立编译及页面检查的实际结果，以工程包 \texttt{checks/} 中本次记录为准；不以可编译性替代数学正确性审定。
+
+下一连续译文应从IV第一部分印刷第51页的§18章首及（18.1.1）开始。第0章§§18--23、第IV章主体，以及第五卷预备笔记余文尚未完成。本轮没有把这些材料的原文页、目录或提要计入已译正文。
+
+% END reports/fourth_audit.tex
+
+\part*{历史核查记录：第三版}
+\addcontentsline{toc}{part}{历史核查记录：第三版}
+\NewNote{下列C3条目属于第三版的定点核查，不是本轮重新发现或再次逐项独立审定的结果。}
+
+% BEGIN reports/third_order_audit.tex
+\head{第三版新核查：第三卷第二部分及作者勘误}
+\noindent\textbf{结论先行。}本轮不是对全部已译文字重新作一遍数学审定，而是在续译第三卷（6.7.1）--（7.9.14）及其书末勘误时作定点复核。可以确定：原（7.3.10）中不加分支限制的“在某个稠密开集上恒定”有反例；（6.7.10）、（7.4.2）、（7.4.6）的若干中间说法也不成立，但这不等于相应主结论全部错误。作者自己已经刊出的勘误另列，不当作本次原创发现。
+
+本章的反例、补证和处理建议均为译校分析。被翻译的原文仍保留其组织与证明详略，不能把本章补证归入原作者正文。以下“原页”指原分册印刷页码；上传PDF页码比正文原分册页码少1。末尾勘误另有连续总页码217--223，均在定位处写明。
+
+\section*{定位与状态表}
+\addcontentsline{toc}{section}{第三版新核查定位表}
+\begin{longtable}{@{}p{.17\linewidth}p{.24\linewidth}p{.51\linewidth}@{}}
+\toprule 标识 & 原条目／PDF页 & 本轮判定\\\midrule\endhead
+C3-E01 & III 7.3.10／51 & 全局“恒定”断言在所写假设下有反例；不否定局部恒定等较弱结论。\\
+C3-G01 & III 6.7.10／30 & “子双复形”的注入性无保证；典范同态可以有核。\\
+C3-G02、G03 & III 7.3.10／51 & 底环与商环的归约需区分；局部环等同错误。\\
+C3-G04 & III 7.4.2／54 & 一条短正合列的末项错置，并泛称循环与张量交换；主结论有修补证明。\\
+C3-G05 & III 7.4.6／55 & 核的对偶不一般等于转置的余核；表示函子结论有直接补证。\\
+C3-P01 & III 6.7.1--2／25 & 解消的投射性所属底环不明确；不能混用投射性。局部化有替代论证。\\
+C3-H01 & III 6.7.3／26 & 仿射计算式须继承先在共同底仿射开片计算的语境。\\
+C3-T01--T09 & 见相应脚注 & 覆盖对象、引文、次数与符号问题；不统一计作错误定理。\\
+C3-A01--A03 & 原作者勘误／86--88 & 正式修订与旧稿状态更新；另说明两处补证细节。\\
+\bottomrule
+\end{longtable}
+
+\audit{C3-E01}{稠密开集上的恒定不等于局部恒定}{原表述有明确反例}
+\source{EGAIII.2.pdf，第51页，原第52页，命题（7.3.10）}
+该条假设 $A$ 诺特，同调函子 $T_\bullet$ 与归纳极限交换，各 $T_i(A)$ 有限型，并在某个次数以下正合。它声称，对给定上界 $p$，存在稠密开集 $E\subset\Spec A$，使所有 $i\leq p$ 的函数 $x\mapsto\dim_{k(x)}T_i(k(x))$ 在 $E$ 上恒定。
+
+取任意域 $k$，令
+\[
+ A=k\times k,\qquad e=(1,0),\qquad
+ T_0(M)=eM,\qquad T_i(M)=0\ (i\ne0).
+\]
+$A$ 是诺特环；$eA$ 是 $A$ 的直和因子，故 $M\mapsto eM$ 正合并与归纳极限交换。将所有连接同态取为零，$T_\bullet$ 是同调函子：任意短正合列在第0项仍给出短正合列，其他次数均为零。$T_0(A)=eA$ 由 $e$ 生成，其他 $T_i(A)=0$，满足所要求的有限型条件。事实上，各 $T_i$ 在所有次数都正合，因而也满足“充分低次数正合”的假设。
+
+空间 $\Spec A$ 有两个开闭点。对应商映射 $A\to k$ 的第一坐标点记作 $x_1$，第二坐标点记作 $x_2$，则
+\[
+ T_0(k(x_1))=k,
+ \qquad T_0(k(x_2))=0.
+\]
+所以秩函数分别取1和0。有限离散空间的稠密开集只能是全空间，因此不存在使此函数恒定的稠密开集。
+
+\textbf{修订范围。}应当区分“每个不可约分支中的适当稠密开集上恒定”和“整个稠密开集上有同一个值”。原证明在各分支分别作选择，不能迫使不同分支上的常数相等。本例的秩函数在全空间已经局部恒定，却仍不恒定。若使用弱化为局部恒定的版本，还须补足下一条所述归约步骤，不能仅换一个词就视为原证明每一步均已正确。
+
+\audit{C3-G02--G03}{商环归约与局部环不能混同}{证明中的归约缺步及中间等式错误}
+\source{EGAIII.2.pdf，第51页，原第52页，（7.3.10）证明}
+原证明先取 $B=A/\mathfrak a$ 为不可约分支的坐标环，在 $\Spec B$ 的适当开集证明相应函子性质，再写出将 $A$ 局部环与 $B$ 局部环等同的步骤。对商映射 $A\to B$，点可以对应，剩余域也可以对应，但一般有
+\[
+ B_{\mathfrak p/\mathfrak a}
+ =A_{\mathfrak p}/\mathfrak a A_{\mathfrak p},
+\]
+而不是 $B_{\mathfrak p/\mathfrak a}=A_{\mathfrak p}$。
+
+例如 $A=k[\epsilon]/(\epsilon^2)$、$B=A/(\epsilon)=k$。两者的谱都只有一个点，且都是整个空间的稠密开集，但 $A$ 有非零幂零元而 $B$ 没有；取 $f=1$ 后，局部化也不能使它们成为同一个环。若原论证只想比较剩余域上的函数值，应明确只使用 $k(x)$ 的一致性，不可借此搬运整个局部环上的正合性。
+
+此外，在 $B$ 上得出一个次数的正合性，并不能未经说明便将 $A$ 上的“已知正合次数下界”提高到该次数。仍取 $A=k[\epsilon]/(\epsilon^2)$、$B=k$，并取同调函子 $T_i(M)=\Tor_i^A(k,M)$，负次数取零。它在负次数正合，与归纳极限交换，且 $T_0(A)=k$、$T_i(A)=0$（$i>0$）均有限型。在 $B$-模范畴，$T_0^{(B)}(M)=k\otimes_A M=M$ 正合；但在 $A$-模范畴，$T_0$ 不左正合：单射 $(\epsilon)\hookrightarrow A$ 在张量 $k$ 后成为 $k\to k$ 的零映射。这具体显示原文在归纳过程中提升正合范围的步骤不能仅凭商环上的结论完成。该部分须另作逐分支归纳论证；本轮不据此否定更弱的可构造性或局部恒定结论。
+
+\audit{C3-G01}{典范Čech映射不一定是子复形包含}{中间说法错误，主构造仍可用同态表述}
+\source{EGAIII.2.pdf，第30页，原第31页，（6.7.10）}
+原文在比较基变换的Čech双复形时使用“子双复形”一词。这要求逐项单射，而一般的拉回截面同态没有这一性质。
+
+令 $S=Y=Y'=\Spec k$，$X=\Spec k[t]$，$X'=\Spec k$，$u:X'\to X$ 由 $t\mapsto0$ 给出；取 $\F=\OO_X$，各空间都用单个仿射开集覆盖。于是涉及的第0项典范映射是
+\[
+ k[t]=\Gamma(X,\OO_X)
+ \longrightarrow\Gamma(X',u^*\OO_X)=k,
+ \qquad p(t)\longmapsto p(0).
+\]
+其核包含且等于非零理想 $(t)$。故一般只能说有典范双复形同态，不能称其为子双复形包含。随后若仅用该同态诱导超同调或谱序列映射，仍有可能完成构造；这个反例不否定映射的存在，也不否定在额外平坦条件下的同构断言。
+
+\audit{C3-G04}{（7.4.2）中短正合列及张量交换的修补}{证明步骤错误；给出不改变主结论的补证}
+\source{EGAIII.2.pdf，第54页，原第55页，（7.4.2）证明}
+记 $d_i:P_i\to P_{i-1}$，$Z_i=\Ker d_i$，$B_i=\Im d_{i+1}$，$Z'_i=P_i/B_i$。在需要构造替代平坦复形的步骤，原文使用
+\[
+ 0\to Z_{p+1}\to P_{p+1}\to Z'_p\to0.
+\]
+但 $P_{p+1}\xrightarrow{d_{p+1}}P_p$ 的像是 $B_p$，并非 $Z'_p$；从定义得到的是
+\[
+ 0\to Z_{p+1}\to P_{p+1}\to B_p\to0.
+\]
+
+\textbf{同时反驳原列及泛称张量交换。}取 $A=k[t]$，复形仅有 $P_1=A\xrightarrow{t}P_0=A$，并取 $p=1$。所有项平坦，且 $Z'_1=A$ 平坦，符合该步骤的假设。然而原列成为 $0\to0\to0\to A\to0$，不正合。又
+\[
+ Z_1(P_\bullet)=0,
+ \qquad Z_1(P_\bullet\otimes_A k)=k
+ \quad(k=A/(t)),
+\]
+所以即使各项平坦，循环模也不一般与任意张量交换。
+
+\textbf{所需的正确局部论证。}假设 $P_i$ 均平坦，且 $Z'_p$ 平坦。由
+\[
+ 0\to B_p\to P_p\to Z'_p\to0
+\]
+可知 $B_p$ 平坦：对任意 $A$-模 $N$，长Tor列中的 $\Tor_2(Z'_p,N)$ 与 $\Tor_1(P_p,N)$ 均为零，故 $\Tor_1(B_p,N)=0$。再由
+\[
+ 0\to Z_{p+1}\to P_{p+1}\to B_p\to0
+\]
+同理得到 $Z_{p+1}$ 平坦。两条列的余核都平坦，故它们在张量任意 $M$ 后仍正合。
+
+定义新复形 $P'_\bullet$：在次数 $p$ 取 $Z'_p$，次数 $p+1$ 取 $Z_{p+1}$，其余次数不变。$d'_{p+1}=0$；$d'_p:Z'_p\to P_{p-1}$ 是 $d_p$ 降到商模后的同态；$d'_{p+2}$ 是 $d_{p+2}$ 因其像落在 $Z_{p+1}$ 而得到的余限制。其余微分不变。刚证明的平坦性说明新复形各项仍平坦。
+
+对任意 $M$，在次数 $p$，商映射 $P_p\otimes M\to Z'_p\otimes M$ 给出
+\[
+ \frac{\Ker(d_p\otimes1)}{\Im(d_{p+1}\otimes1)}
+ \simeq\Ker(d'_p\otimes1).
+\]
+原因是商映射满射，其核恰为 $B_p\otimes M$，而 $P_{p+1}\otimes M\to B_p\otimes M$ 满射。在次数 $p+1$，两条张量后的正合列又给出
+\[
+ \Ker(d_{p+1}\otimes1)=Z_{p+1}\otimes M,
+\]
+故新旧同调都等于此模除以 $d_{p+2}\otimes1$ 的像。次数 $p-1$ 的边界像不变；次数 $p+2$ 的循环不变，因为 $Z_{p+1}\otimes M\to P_{p+1}\otimes M$ 仍单射。其余次数的复形项与微分均不变。因此所有同调模都有关于 $M$ 的自然同构。
+
+连接同态也相容：对 $0\to M'\to M\to M''\to0$，连接同态按“提升循环、施加微分、取回左端”定义；上述同构在次数 $p$ 由商映射给出，在次数 $p+1$ 由保留单射的包含给出，二者与微分交换，所以同一提升得到相同的左端同调类。两者之间的连接同态为零，亦与 $d'_{p+1}=0$ 一致。这个论证只在所需的两个次数使用张量正合性，没有声称所有 $Z_i,B_i$ 都与张量交换。
+
+\audit{C3-G05}{核的对偶与转置余核不同}{原证明的辨认错误；表示函子结论保留}
+\source{EGAIII.2.pdf，第55页，原第56页，（7.4.6）}
+对同态 $d:P\to R$，一般不能把 $(\Ker d)^\vee$ 认作 $\Coker(d^\vee)$。仍取 $A=k[t]$、$P=R=A$、$d$ 为乘 $t$。此时
+\[
+ (\Ker d)^\vee=0,
+ \qquad\Coker(d^\vee)=A/(t)\ne0.
+\]
+所以这两个模不同。
+
+\textbf{正确的表示模。}应用上一条对（7.4.2）的修补后，所需函子可写成 $M\mapsto\Ker(P\otimes_A M\to R\otimes_A M)$，其中 $P,R$ 为有限型投射模。直接定义
+\[
+ Q=\Coker(R^\vee\xrightarrow{d^\vee}P^\vee).
+\]
+对正合列 $R^\vee\to P^\vee\to Q\to0$ 应用左正合的反变函子 $\Hom_A(-,M)$，得到
+\[
+ 0\to\Hom_A(Q,M)\to\Hom_A(P^\vee,M)
+ \to\Hom_A(R^\vee,M).
+\]
+有限型投射模的典范同构 $\Hom_A(P^\vee,M)\simeq P\otimes_A M$ 及 $\Hom_A(R^\vee,M)\simeq R\otimes_A M$ 将最右同态识别为 $d\otimes1$；因此
+\[
+ \Hom_A(Q,M)\simeq\Ker(d\otimes1)
+\]
+且关于 $M$ 自然。$Q$ 有限呈示，诺特条件下当然有限型。例子中 $Q=A/(t)$，且 $\Hom_A(A/(t),M)=\{m\in M:tm=0\}$，正好是所需核函子。整个证明无需声称 $Q=(\Ker d)^\vee$。
+
+表示对象的唯一性应理解为连同指定的表示同构，唯一到与该同构相容的唯一同构；并不表示裸模没有非平凡自同构。
+
+\audit{C3-P01}{投射解消的底环与局部化}{原步骤须补明；局部化断言不因此被否定}
+\source{EGAIII.2.pdf，第25页，原第26页，（6.7.1）、（6.7.2）}
+原文先计算 $A$ 上的超Tor，继而选择“由 $B_i$-模组成的投射 Cartan--Eilenberg 解消”。若“投射”指 $A$-投射，一般不存在这种选择。例如 $A=\mathbf Z$、$B_i=\mathbf F_p$ 时，任何非零 $B_i$-模都被 $p$ 零化，不可能是 $\mathbf Z$-投射模；若改为 $B_i$-投射，则又不能直接用它计算 $A$-导出张量积。
+
+后一差别可以直接计算：$\mathbf F_p$ 在自身上自由，而
+\[
+ \Tor_1^{\mathbf Z}(\mathbf F_p,\mathbf F_p)=\mathbf F_p.
+\]
+取 $\mathbf F_p$ 在自身上的零长度解消，会把这个群错误地算成零。因此必须注明解消范畴和相对非零Tor，而不能只靠术语“投射”。
+
+\textbf{避开该选择的一条路径。}在（6.7.1）的仿射计算中，对双复形 $L^{(i)}$，局部化可写为
+\[
+ L^{(i)}_{g_i}=\varinjlim\bigl(L^{(i)}\xrightarrow{g_i}L^{(i)}
+ \xrightarrow{g_i}\cdots\bigr).
+\]
+双索引系统 $\mathbf N\times\mathbf N$ 的对角子系统共尾。应用（6.3.6）中超Tor与滤过归纳极限的交换性，得到
+\[
+ \operatorname{Tor}_n^A(L^{(1)}_{g_1},L^{(2)}_{g_2})
+ \simeq\varinjlim_m\operatorname{Tor}_n^A(L^{(1)},L^{(2)}),
+\]
+右侧过渡映射由两变量分别乘 $g_1,g_2$ 诱导，因双函子性正是乘 $g_1\otimes g_2$。所以右侧是原超Tor的 $(g_1\otimes g_2)$-局部化。
+
+这里的Čech方向只有有限多非零次数，另一方向有统一下界，故总复形与上式所需的有限次数操作相容。六个谱序列的 $E^2$ 表达式由同调、直和及Tor构成；滤过归纳极限正合，且这些操作依（6.3.6）相容，于是同样得到相应 $E^2$ 页的比较同构。共同终值的同构已如上得到；在原文的双正则条件下，可作相应谱函子的比较。该说明给出替代局部化论证的必要步骤，不把原文不明确的投射解消选择当作已经合法。
+
+（6.7.2）中从 $A$ 改为 $A_h$，应使用平坦局部化后的超Tor比较（6.3.13），而非声称每个 $A_h$-投射模都是 $A$-投射。原文已有的局部化引理提供比较依据。
+
+\audit{C3-H01}{一般底空间上的仿射图}{继承局部化语境，不作无条件计算}
+\source{EGAIII.2.pdf，第26页，原第27页，（6.7.3）}
+当 $S$ 任意时，不能仅凭 $V^{(1)},V^{(2)}$ 仿射，就无条件把 $V^{(1)}\times_SV^{(2)}$ 当作仿射概形，再对一个环模加波浪号。本条前文的构造先在 $S$ 上取共同仿射开集，再取两侧其上方的仿射开图，正是在这个语境下才能使用“模的相伴层”的写法。译文保留原式，脚注明确它应按前述局部计算与粘合解释。
+
+\section*{次数、符号及引文记录}
+\addcontentsline{toc}{section}{第三版次数、符号及引文记录}
+\begin{longtable}{@{}p{.17\linewidth}p{.24\linewidth}p{.51\linewidth}@{}}
+\toprule 标识 & 原位置 & 处理与理由\\\midrule\endhead
+C3-T01 & 6.7.4，PDF26 & 用有限仿射覆盖计算源空间上同调时，应覆盖 $X$；该句写为覆盖 $Y$。保留正文并注。\\
+C3-T02 & 6.9.5 & 准同构或同伦等价不变性的直接依据为（6.7.5）；原文引用（6.7.6），后者是平坦复形比较。\\
+C3-T03 & 6.10.5 & 选取有限自由项所用的是（6.10.3，iii）；比较同构部分才用（ii）。\\
+C3-T05 & 7.9.2，PDF75 & 证明中（7.9.1.2）应指紧邻的（7.9.2.1）。\\
+C3-T06 & 7.9.4，PDF75 & 按（7.7.1.1），同调指标 $p$ 对应超上同调指标 $-p$。译稿显式标明统一次数约定，不抹去原印刷差异。\\
+C3-T07 & 7.9.6，PDF76 & 图中复形箭头的方向与同调次数递减约定不一致；图依底本保留，截断证明按次数约定解释。\\
+C3-T08 & 7.9.7，PDF77 & 引用（6.10.4.2）未见对应编号；基变换的函数值相等由（7.7.2）与（7.6.7）得到。\\
+C3-T09 & 7.9.8，PDF77 & 陈述中的秩为 $(-1)^{i_0}\operatorname{EP}$ 正确；证明末行漏掉这个符号。\\
+\bottomrule
+\end{longtable}
+上述编号与译文脚注对应，编号并不保证连续，也不是错误定理的计数器。C3-N开头的脚注说明同调次数、左右模、半正合和逐项Tor等记号；C3-H02记录可通过放大界限吸收的端点差异；C3-H03将原著提出的问题保留为历史问题，不凭本轮翻译宣布其今天的研究状态。
+
+\textbf{C3-T09的直接检验。}若只在 $i_0$ 次同调非零，则定义给出
+\[
+ \operatorname{EP}=\sum_i(-1)^i\dim H_i=(-1)^{i_0}\dim H_{i_0},
+\]
+故 $\dim H_{i_0}=(-1)^{i_0}\operatorname{EP}$。例如仅在次数1有一个一维向量空间时，秩为1而Euler特征数为 $-1$；遗漏符号的等式就错误。原命题陈述已经含正确符号，不需推翻命题。
+
+\audit{C3-A01}{把正式勘误接回正文}{原作者修订，不是新发现}
+\source{EGAIII.2.pdf，第84--90页，《勘误与增补（清单二）》}
+本轮完整译入作者勘误的A、B两部分，B有30个编号条目。下面列的是与前次审阅紧密相关的几项，不是对这30条的摘要替代；全文已在合订本书末。
+
+\begin{longtable}{@{}p{.19\linewidth}p{.24\linewidth}p{.49\linewidth}@{}}
+\toprule 正式勘误 & 所修正位置 & 原作者所作处理\\\midrule\endhead
+ErrIII，3 & $0_{\mathrm I}$ 7.2.4--7.2.6 & 增加各理想幂为闭理想的假设；指出原证明不正确。\\
+ErrIII，10 & I 5.3.9 & 原证明不足，补充仿射局部的对角闭浸入论证。\\
+ErrIII，19 & II 5.2.2 & 局部性论证不充分，改用 $X$ 是概形或底空间局部诺特的假设。\\
+ErrIII，21 & II 6.4.3 & 否定“有限型子模元素必整”的推理，改用忠实有限模证明自同态整。\\
+ErrIII，24 & $0_{\mathrm{III}}$ 13.7.7 & 改正ML与有限性结论以及相关次数范围。\\
+\bottomrule
+\end{longtable}
+前几版某些译注只指出疑点或给出独立反例，未附这份正式勘误。本版在对应条目前添加跳转提示。旧审阅报告作为版本历史保留，但读者应以这里给出的作者勘误状态为准，不能将已有正式修订的问题继续宣传为“尚无人修正”或本次的新发现。
+
+\textbf{闭理想条件为何足够。}设 $A$ 对原拓扑分离完备，$J^n$ 趋于0且各 $J^n$ 在原拓扑闭。给定 $\varprojlim A/J^n$ 的元素，选相容类的代表 $a_n$，使 $a_m-a_n\in J^n$（$m\geq n$）。因 $J^n\to0$，序列 $(a_n)$ 对原拓扑是柯西列，故收敛到某个 $a\in A$。固定 $n$，尾项 $a_m-a_n$ 全在闭集 $J^n$，于是其极限 $a-a_n\in J^n$。所以 $a$ 表示全部给定相容类。分离性及 $J^n\to0$ 又给出 $\bigcap_nJ^n=0$，保证唯一性。故 $A\to\varprojlim A/J^n$ 双射，这证明了修订条件下的 $J$-进制分离完备性。闭性正用于从“尾项属于理想”推出“极限属于理想”。
+
+\audit{C3-A02}{对角态射补证中的共同仿射底}{补足原勘误的局部化说明}
+\source{EGAIII.2.pdf，第87页，ErrIII，10；EGA I（5.3.9）}
+对 $x\in X$，先取 $f(x)$ 在 $S$ 中的仿射开邻域 $V=\Spec B$，再取仿射开邻域 $x\in U=\Spec A\subset f^{-1}(V)$。此时
+\[
+ W_U=U\times_VU=U\times_SU
+\]
+是 $X\times_SX$ 的开子概形，而且仿射；$\Delta^{-1}(W_U)=U$。受限对角态射对应于乘法满同态
+\[
+ A\otimes_BA\longrightarrow A,
+ \qquad a\otimes a'\longmapsto aa'.
+\]
+它满射，因为 $a$ 是 $a\otimes1$ 的像。因此 $U\to W_U$ 是闭浸入。
+
+令 $W$ 为所有这些 $W_U$ 的并，则 $W$ 是包含整个对角像的开子概形。在每个 $W_U$ 上，$\Delta(X)\cap W_U=\Delta(U)$ 闭，故对角像在 $W$ 中闭；相应核理想在重叠处相容，因为都来自同一结构层同态。因此这些局部闭浸入粘合为 $X\to W$ 的闭浸入。再复合 $W\hookrightarrow X\times_SX$ 的开浸入，得到所需浸入。
+
+这说明原作者指出的缺步可以补足；也说明不能只写“取任意仿射 $U$，所以 $U\times_SU$ 仿射”而漏掉先选共同仿射底的步骤。
+
+\audit{C3-A03}{可逆层证明中的非零芽与非零值}{文字条件须加强，结论可补证}
+\source{EGAIII.2.pdf，第86页，ErrIII，2的续文}
+作者补证中写“可设 $s=s_1$ 且 $s_x\ne0$”，随后由 $\LL_x\simeq\OO_x$ 推出它生成该模。单凭非零芽不足：在 $A=k[t]_{(t)}$ 上，$t\ne0$，却不生成秩一自由模 $A$。
+
+这里已有有限生成元 $s_1,\ldots,s_n$。将它们映入一维剩余向量空间 $\LL_x/\mathfrak m_x\LL_x$，至少一个像非零，否则它们不能生成 $\LL_x$。重新编号，选这个元素为 $s_1$；其在局部自由秩一模中的系数是单位，故确实生成 $\LL_x$。于是后面的局部截面 $t_i$ 可按原证明构造。应写明“值 $s(x)\ne0$”或“$s_x$ 生成”，而不是把任意非零芽视为生成元。译文保留原词并作脚注，不静默替换。
+
+\section*{对本版译文的核对范围}
+\addcontentsline{toc}{section}{第三版核对范围与限制}
+本轮逐段续译第三卷第二部分剩余正文，并核对末页实际收录到（7.9.14）及其证明、索引、目录、勘误。新增数学反例只覆盖本章列出的断言，不能推及未检查的全部证明。原作省略的证明、历史问题以及英语预备笔记的未完成内容，仍明确标示。
+
+本次重排保留旧正文的条目与公式号，把第0章补篇归并、第三章上下部分连续排入，将书末资料移至正文之后。该结构操作与编译成功均不是数学正确性的证明。第四卷主体、第0章§§16--23和第V卷余稿尚未连续译入；其原文的存在、原目录的译名、文件转换成功，都不算翻译完成。
+
+本报告后半部保存先前核查文字作为历史档案。本章没有重新验证其中每一个反例，也没有重新核查其全部外部文献。遇到与本章新取得的原作者勘误状态不同的旧表述，应同时阅读本章更新说明。
+
+% END reports/third_order_audit.tex
+
+\part*{历史核查记录：前次续译批次}
+\addcontentsline{toc}{part}{历史核查记录：前次续译批次}
+\NewNote{以下为上一批报告的原有内容；其“本轮”指当时批次，不是本第十六版新核查。}
+
+% BEGIN reports/current_audit.tex
+\head{本轮核查：局部超 Tor、正则序列与超平面截面}
+\noindent\textbf{核查依据与界限。}本章直接对照上传的 \texttt{EGAIII.2.pdf}、\texttt{EGAIV.1.pdf}、\texttt{EGAVaiello.pdf} 的连续正文及页面图像。新续译的范围是 III（6.4.1）--（6.6.8）、$0_{\mathrm{IV}}$（15.1.5）--（15.2.5），以及 V 预备笔记第一篇§§3--6。下面的反例、补证和修订建议由本次译校撰写，不是原著正文。V 的核查只针对所上传的英文译编本，未见对应法文手写原稿，不能据此分配原作者、英译者和排版者的责任。
+
+本章有三项针对所写断言的明确反例（B2-E01--E03）；其中B2-E03取决于上传英文的字面读法，已说明可能缺少的等价连接词。另有两项证明步骤问题（B2-G01--G02），以及排印、定义约定与未完成稿件的注意事项。\textbf{这些编号不应相加称为发现了同样数量的错误定理。}原报告中的条目保留在后续两编，作为历史核查记录，并非本次重新逐一认证。
+
+\egasection{本轮定位表}
+\begin{longtable}{@{}p{.15\textwidth}p{.27\textwidth}p{.50\textwidth}@{}}
+\toprule 编号 & 底本条目／PDF页 & 被检查的具体问题\\\midrule\endhead
+B2-E01 & IV.1，15.1.15／16--17 & 任意基变换保持正则性的条件漏列最终商模平坦。\\
+B2-E02 & V，4.4／15 & 用闭集本身的维数，不能推出一般态射的泛截面连通性。\\
+B2-E03 & V，5.5／17 & 无嵌入相伴循环不使任意超平面自动成为非零因子。\\
+B2-G01 & IV.1，15.1.9／15 & 对非忠实张量函子作单射性消去；另给完整补证。\\
+B2-G02 & III.2，6.5.14(i)／19 & 假设没有保证底概形 $S$ 诺特；证明实际上不需要它。\\
+B2-T01--T05 & III.2、IV.1 & “双射／单射”、漏非单位、Čech指标基数、三个／四个及引文问题。\\
+B2-T06--T10 & V，§§3--5 & 参数空间、载体、局部平凡化对象及等号错置。\\
+B2-H01--H09 & 见正文脚注及本章 & 历史术语、定义与继承假设，不作为无条件反例。\\
+B2-P01--P04 & V，3.1、3.1.1、4.4、5.6 & 非约化情形、缺证明、可疑英译、未明确的引文。\\
+\bottomrule
+\end{longtable}
+
+\audit{B2-E01}{任意基变换不保持所有正则序列}{原假设不足；具体反例}
+\source{\texttt{EGAIV.1.pdf}，PDF第16页，原书第17页，（15.1.15）；证明续于下一页}
+\textbf{原文实际条件。}设 $A\to B$ 为交换代数，$M$ 为 $B$-模，$f_1,\ldots,f_n$ 为 $M$-正则序列。底本要求
+\[
+ M\Big/\Bigl(\sum_{j=1}^{i-1}f_jM\Bigr)
+ \quad(1\leq i\leq n)
+\]
+均为平坦 $A$-模，随后声称对任意 $A\to A'$，变换后的序列仍正则。注意求和上限确实是 $i-1$；原页图像已核对，不是从OCR下标猜出的结论。它只要求 $M_0,\ldots,M_{n-1}$ 平坦，没有要求 $M_n$ 平坦，其中
+\[
+ M_i=M/(f_1,\ldots,f_i)M,
+ \qquad M_0=M.
+\]
+
+\textbf{反例及逐项核验。}取任意域 $k$，令
+\[
+ A=B=k[t],\quad M=A,\quad n=1,\quad f_1=t,
+ \quad A'=A/(t)=k.
+\]
+$A\to B$ 为恒等同态，$M$ 是自由 $A$-模，因而满足原文唯一要求的平坦性；又因 $k[t]$ 为整环，乘以 $t$ 的映射 $M\to M$ 单射，所以 $(t)$ 为 $M$-正则序列。基变换后
+\[
+ B'=k,
+ \qquad M'=k\ne0,
+ \qquad f'_1=t\otimes1=0.
+\]
+乘以 $f'_1$ 是 $k\to k$ 的零映射，其核为整个 $k$，故不单射。全部所写假设成立，结论失败。
+
+\textbf{出错的精确步骤。}原证明一开始使用
+\[
+ 0\longrightarrow M\xrightarrow{f_1}M\longrightarrow M/f_1M\longrightarrow0
+\]
+在张量 $A'$ 后仍正合，其理由是 $M/f_1M$ 平坦。然而在 $n=1$ 的原条件中，这个商模并没有被要求平坦。上述例子张量后的左侧变成 $k\xrightarrow{0}k$，正好显出所缺的一项。
+
+\textbf{一个明确成立的修订版本。}保留正则序列假设，要求每个 $M_i$（$0\leq i\leq n$）都 $A$-平坦。则对任意 $A\to A'$，由 $\Tor_1^A(M_i,A')=0$，各列
+\[
+ 0\to M_{i-1}\otimes_AA'
+ \xrightarrow{f_i\otimes1}M_{i-1}\otimes_AA'
+ \to M_i\otimes_AA'\to0
+\]
+都正合。而
+\[
+ M_{i-1}\otimes_AA'
+ \simeq M'/(f'_1,\ldots,f'_{i-1})M',
+\]
+故变换后的序列正则。各 $M_i\otimes_AA'$ 又是平坦 $A'$-模，所以同样保留全部商模的平坦性。这个版本足以修补原论证；这里不宣称它是所有情形中最弱的假设。
+
+\textbf{不应误伤下一命题。}（15.1.16）的证明从最终商模平坦，利用局部平坦性准则逐步倒推所有 $M_i$ 平坦；因此它的实际应用满足上述修订条件。本反例不能单独用来否定（15.1.16）。现代的相对正则浸入理论同样明确保留被切出的子概形对底空间的平坦性；参见 Stacks Project，Tag 063P，Lemma 31.23.1及其后定义。这个外部对照不是反例的来源，反例本身完全由上面的计算验证。
+
+\audit{B2-G01}{不能从非忠实张量后的单射性消去张量}{证明步骤缺乏依据；给出不依赖该步骤的补证}
+\source{\texttt{EGAIV.1.pdf}，PDF第15页，原书第16页，（15.1.9）}
+\textbf{原文推理。}它将典范同态 $\varphi$ 分解后，得到某个 $\varphi'\otimes1$ 为同构，继而说 $\varphi'$ 必单射。这里的张量因子含 $A/(f_n)$，它一般不忠实；单靠“张量后单射”不能作这一推论。
+
+例如 $A=k[t]$，满同态 $q:A\to A/(t)$ 不单射，而
+\[
+ q\otimes_AA/(t):k\longrightarrow k
+\]
+是恒等同构。本例只反驳这一普遍的消去规则；它不是（15.1.9）整个命题的反例，因为后者另有分离性等假设，必须在证明中实际使用这些假设。
+
+\subsec{在原命题假设下的完整替代论证}
+设 $J=(f_1,\ldots,f_n)$，且
+\[
+ \varphi:(M/JM)[T_1,\ldots,T_n]\xrightarrow{\sim}\gr_J(M)
+\]
+是定义拟正则性的典范同构。假设 $M$ 及原命题列出的各前缀商模都对 $J$-预进制拓扑分离。证明 $(f_1,\ldots,f_n)$ 为 $M$-正则序列。
+
+\textbf{第一步：$f_1$ 对 $M$ 单射。}
+在 $\gr_J(M)$ 上，由乘以 $f_1$ 诱导的次数为1的映射，在 $\varphi$ 下就是多项式变量 $T_1$ 的乘法。无论系数模是否有挠，乘以多项式变量总是单射：它把每个单项式系数移到一个不同的单项式位置。
+
+若 $0\ne x\in M$，分离性 $\bigcap_rJ^rM=0$ 保证存在最大的非负整数 $r$，使 $x\in J^rM$；也就是
+$x\in J^rM\setminus J^{r+1}M$。其初始类 $\bar x\in\gr_J^r(M)$ 非零，故 $T_1\bar x\ne0$，即
+\[
+ f_1x\notin J^{r+2}M.
+\]
+特别地 $f_1x\ne0$，所以 $f_1$ 为 $M$-正则元素。
+
+\textbf{第二步：计算相交。}对每个 $r\geq1$，有
+\begin{equation}\label{eq:new-intersection}
+ f_1M\cap J^rM=f_1J^{r-1}M.
+\end{equation}
+从右到左的包含由 $f_1\in J$ 直接得到。反过来，若 $f_1y\in J^rM$ 而 $y\notin J^{r-1}M$，则 $y\ne0$，可取其有限 $J$-阶 $s\leq r-2$。第一步关于初始类的计算给出 $f_1y\notin J^{s+2}M$，却由 $r\geq s+2$ 得到 $f_1y\in J^rM\subseteq J^{s+2}M$，矛盾。因此 $y\in J^{r-1}M$，证明了\eqref{eq:new-intersection}。
+
+\textbf{第三步：模去第一项。}令 $N=M/f_1M$，给它取商 $J$-进制滤过。对 $r\geq1$，自然满同态
+$J^rM/J^{r+1}M\to J^rN/J^{r+1}N$ 的核为
+\[
+ \frac{J^{r+1}M+(J^rM\cap f_1M)}{J^{r+1}M}
+ =\frac{J^{r+1}M+f_1J^{r-1}M}{J^{r+1}M},
+\]
+即 $T_1\gr_J^{r-1}(M)$。第零次核为零，因为 $f_1M\subseteq JM$。因此
+\[
+ \gr_J(N)\simeq\gr_J(M)/T_1\gr_J(M)
+ \simeq(M/JM)[T_2,\ldots,T_n].
+\]
+同时 $N/JN\simeq M/JM$，所以右端正是剩余序列 $f_2,\ldots,f_n$ 对 $N$ 的拟正则性典范同构。
+
+\textbf{第四步：归纳。}原假设保证 $N$ 以及继续模去 $f_2,\ldots$ 后的前缀商模均分离。因此对 $N$ 重复前三步，得到 $f_2$ 在 $N$ 上单射，再得到 $f_3$ 在下一个商模上单射，依次进行到 $f_n$。这正是原文的 $M$-正则序列定义。$n=1$ 时第一步已经给出全部结论。逆向“正则推出拟正则”仍使用前面的（15.1.8），无需改动。
+
+\textbf{结论。}命题可以成立，但原印刷证明中“因此 $\varphi'$ 必单射”的句子不能仅靠非忠实的张量消去证明。上述补证显式使用分离性，避免了这个跳步；未要求 $M$ 本身完备，也未偷加诺特或有限生成条件。
+
+\audit{B2-G02}{局部超 Tor 的证明不需要底空间诺特}{原证明附带断言错误；核心结论可保留}
+\source{\texttt{EGAIII.2.pdf}，PDF第19页，原书第20页，（6.5.14）证明(i)}
+（6.5.13）的条件(i)只要求 $X$ 和 $Z=X\times_SY$ 局部诺特，且 $X\to S$ 平坦。缩到仿射情形后，底本说“$S,X,Z$ 都诺特”；其中关于 $S$ 的断言没有依据。
+
+取
+\[
+ A=k[x_1,x_2,x_3,\ldots],\quad K=\operatorname{Frac}(A),\quad
+ S=\Spec A,\quad X=Y=\Spec K.
+\]
+$A$ 不诺特，因为理想链 $(x_1)\subsetneq(x_1,x_2)\subsetneq\cdots$ 不稳定。$K$ 是 $A$ 的局部化，因此 $X\to S$ 平坦。又
+\[
+ K\otimes_AK\simeq K,
+\]
+故 $X$、$Z=\Spec K$ 都诺特。条件(i)成立，$S$ 却不诺特。
+
+\textbf{保留原结论的证明。}令仿射坐标环分别为 $A,B,C$，$D=B\otimes_AC$。$X$ 和 $Z$ 诺特表示 $B,D$ 诺特。有限 $B$-模 $F$ 有由有限自由 $B$-模组成的解消：先选有限生成元得到 $B^{r_0}\to F$，其核因 $B$ 诺特而有限，再重复这一过程。由于 $B$ 对 $A$ 平坦，这一解消的各项也对 $A$ 平坦。因此用它与有限 $C$-模 $G$ 作外张量即可计算 $\Tor^A_n(F,G)$。各项 $B^{r_i}\otimes_AG$ 为有限 $D$-模；因为 $D$ 诺特，其核、像和同调仍为有限 $D$-模。对应的层为凝聚层。这个论证没有使用 $A$ 诺特，正好说明多写的 $S$ 诺特可从证明中删去，不必加强原定理的假设。
+
+\audit{B2-E02}{一般态射下按原空间维数控制断开集不够}{连通性断言有明确反例}
+\source{\texttt{EGAVaiello.pdf}第15页，（4.4）；连同其后的原稿自我批评}
+先把明显的参数记号整理为：对每个分支 $X_i$ 有 $\dim\overline{f(X_i)}\geq2$，参数在 $P^\vee$ 中。即便如此，原文对一般态射的 $(C_{m+1})\Rightarrow$一般截面满足$(C_m)$ 仍不成立。
+
+\subsec{空间和态射}
+取代数闭域 $k$，并置
+\[
+ X=\Spec k[u,v,w,z]/(uv),\qquad
+ f:X\longrightarrow\mathbf P^2_k,
+ \quad f=[1:u+v:(u+v)w].
+\]
+第一齐次坐标恒为1，所以这个态射处处有定义。$X$ 有两个不可约分支
+\[
+ X_1=V(u)\simeq\mathbf A^3_k,
+ \qquad X_2=V(v)\simeq\mathbf A^3_k,
+\]
+交集 $D=V(u,v)\simeq\mathbf A^2_k$，由 $w,z$ 作坐标。在 $X_1$ 上，$f$ 的两个仿射坐标为 $(v,vw)$；对任意第一坐标非零的点 $(a,b)$，可取 $v=a,w=b/a$，故像稠密于 $\mathbf A^2$。在 $X_2$ 上同理。因此两个像闭包都为二维，满足原文各分支的像维数条件。
+
+\subsec{\texorpdfstring{$X$ 满足 $(C_1)$}{X 满足 (C1)}}
+设 $T\subset X$ 为维数至多1的闭集。因 $\dim X_i=3$，它不能包含任何一个 $X_i$，所以 $X_i\setminus T$ 为非空不可约开子集，因而连通。又因 $\dim D=2$，$T$ 不能包含 $D$，于是
+\[
+ (X_1\setminus T)\cap(X_2\setminus T)=D\setminus T\ne\varnothing.
+\]
+两个连通子空间有非空交，它们的并 $X\setminus T$ 连通。这验证了 $(C_1)$；因为 $k$ 已代数闭，无须另作代数闭包扩张。
+
+\subsec{泛超平面逆像却不连通}
+令 $K=k(a,b)$，以 $1+aT_1+bT_2=0$ 表示对偶射影平面一个标准开图上的泛超平面。其逆像的坐标环为
+\[
+ R=K[u,v,w,z]/\bigl(uv,\ 1+(u+v)(a+bw)\bigr).
+\]
+令 $s=u+v$、$c=a+bw$，则在 $R$ 中 $sc=-1$，故 $s,c$ 都可逆。由 $uv=0$ 可得
+\[
+ e_1=\frac{u}{s},\qquad e_2=\frac{v}{s},\qquad
+ e_1+e_2=1,
+ \quad e_1e_2=0,
+ \quad e_i^2=e_i.
+\]
+两个幂等元都非零，因为分别置 $v=0$ 或 $u=0$ 后得到的商环均为
+\[
+ K[w,z,1/(a+bw)]\ne0.
+\]
+故 $\Spec R$ 分解为两个非空不交开闭部分；事实上
+\[
+ R\simeq K[w,z,1/(a+bw)]\times K[w,z,1/(a+bw)].
+\]
+所以 $Y_\eta$ 已不连通，更不可能满足几何 $(C_0)$。这里的断开由删除空集即可看出；也可直接用这两个非空开闭部分表述，避免空集维数的约定差异。
+
+这还反驳了“好参数包含稠密开集”的表述：当超平面第一系数非零、第三系数非零时，同样的计算给出两个非空分支。这些参数形成一个稠密开集，因而不可能与另一个全部给出连通截面的稠密开集并存。
+
+\textbf{缺失的几何控制。}$D$ 本身二维，却被 $f$ 压到单个点 $[1:0:0]$。泛超平面避开这个点，便把原先用来连接两个分支的全部交集去掉。原文用闭集自身的维数控制断开行为，不能排除这种高维闭集被压缩的情况。原稿随后建议改用像的维数，正是针对这一机制；本报告只验证上述反例，不宣称已经替它证明所有拟议的推广。
+
+\textbf{英译问题的界限。}原稿后面英文写“not valid as such if $f$ is quasi-finite”，疑似缺少限制词；上面的 $f$ 并不拟有限，故不能用它判定拟有限版本真假，更不能静默将英文改成另一句话后说那就是原作者原话。
+
+\audit{B2-E03}{无嵌入相伴循环不使每个超平面自动正则}{上传英文的字面断言不成立；可能遗漏等价连接词}
+\source{\texttt{EGAVaiello.pdf}第17页，（5.5）}
+这里的 $V$ 已在（5.4）定义为使截面 $\phi_\xi$ 对 $F_{k(\xi)}$ 正则的参数集合。英文（5.5）先假设 $F_s$ 无嵌入相伴循环，随后说“we see immediately that $\xi\in V$”。如果把它读成无条件的推出，便错误。
+
+令 $S=\Spec k$，$X=P=\mathbf P^2_k$，$f=\id$，$L\subset P$ 为直线，$i:L\hookrightarrow P$ 为闭浸入，取 $F=i_*\OO_L$。该凝聚模的唯一相伴素循环是 $L$，没有嵌入分支。选取参数 $\xi$ 使 $H_\xi=L$。定义该超平面的截面在 $F$ 上作用为零，因此
+\[
+ F(-1)\xrightarrow{\phi_\xi}F
+\]
+为零映射，而 $F(-1)\ne0$；它不单射，所以 $\xi\notin V$。
+
+\textbf{应当保留的判据。}在所述无嵌入相伴循环的有限型情形，$\xi\in V$ 应等价于：$\Supp F_{k(\xi)}$ 的每个不可约分支均\emph{不包含于} $H_\xi$。它不是从“无嵌入循环”自动推出的结论，而是还须检查的相交条件。该判据来自非零因子避开全部相伴素理想的刻画。英文的“which means also”可能原本想表达这种等价关系；本报告只纠正所上传载体的字面读法，不判定法文手稿的原句。
+
+同段声称模去 $\phi$ 后 Cohen--Macaulay 性保留时，也必须先保证该截面正则。上述例子同时说明，不能把这一前提省略。
+
+\head{本轮排印核对、条件提醒与待核事项}
+\audit{B2-T01}{“双射”应为“单射”}{证明中的词语误植}
+\source{IV.1，PDF第14页，原书第15页，（15.1.8）证明末段}
+原文连续两次使用 bijective，认为末项 $f_n$ 的数乘在相关商分次模上双射；正则性只保证单射。取 $A=k[x,y]$、$M=A$、平凡滤过，$f_1=x,f_2=y$。在 $A/(x)=k[y]$ 上乘以 $y$ 单射但不满射，因为1不在像中。证明只需要单射，用自由模张量保持单射后应用（15.1.6）即可。这里不反驳命题结论。
+
+\audit{B2-T02}{再次漏列“非单位”}{重复的例子条件遗漏}
+\source{IV.1，PDF第16页，原书第17页，（15.1.12）（iii）}
+该例沿用 $K/A$，写每个非零 $f$ 均不对 $\gr(M)$ 正则。若 $f=1$，数乘恒等，显然正则；此时所比较的两个分次模都为零，也失去反例作用。要求 $f\ne0$ 且不是单位后，原构造才工作。这是上批E02在新段落中的重复表现，没有重新计成独立的主要定理错误。
+
+\audit{B2-T03}{Čech 上链的指标基数符号错了}{索引排印问题}
+\source{III.2，PDF第21--22页，原书第22--23页，（6.6.4）}
+对普通 Čech 上链 $C^r$，每个分量由 $r+1$ 个开集的交标记。原文使用同调方向的 $h\leq0$，相应上链为 $C^{-h}$，所以指标集应有 $1-h$ 个元素，而不是 $-(h+1)$ 个。仅代 $h=0$ 就能检查：$C^0$ 由单个开集上的截面组成，指标数是1；原公式给出$-1$，没有意义。
+
+第二个方向同理是 $1-k$。若 $h_1+h_2=h$，两边指标总数为
+\[
+ (1-h_1)+(1-h_2)=2-h,
+\]
+不是原文随后印的 $-h-2$。这里没有改变复形的微分符号；只是让指标基数与原文的 $C^{-h}$ 约定相符。
+
+\audit{B2-T04}{四个谱函子误写三个}{计数文字误植}
+\source{III.2，PDF第23页，原书第24页，（6.6.7）}
+同一句先列 $(a),(b),(a'),(b')$，随后写“这三个谱函子”。应为四个；原比较论证分别适用于所列四个，再用于 $(c),(d)$。不是谱序列收敛性的反例。
+
+\audit{B2-T05}{Bourbaki引文内部不一致}{待逐版核对的引文问题}
+\source{IV.1，PDF第13页，原书第14页，（15.1.6）}
+其中一次引用为第III章§3第8小节，附近相关引用为§2第8小节。记录这一内部不一致，不以之断言数学命题错误。本次没有取得所引Bourbaki具体版次进行逐页校勘，因此不声称该书所有版本的页码、节次都已确认。
+
+\audit{B2-T06}{不可约分支链的首项与并集记号}{V稿中的局部记号整理}
+\source{V，第13页，（3.3）证明}
+“$X_0$ and $X'$”应据链的两端读作 $X_0=X'$；后面混写的 $Y_\eta=X_\eta$，按同段定义应写 $Y_\eta=\bigcup_iX_{i\eta}$。译文将这两处按其同句定义明确排出，并逐处标注，未以这些明显的字母问题否定连通性证明。
+
+\audit{B2-T07}{变动参数与层的载体必须分开}{V稿§4的对象类型和下标问题}
+\source{V，第13--15页，§4开头及（4.2）--（4.4）}
+$F$ 在 $X$ 上，$G$ 在 $Y$ 上；变动纤维应写 $Y_\xi,G_\xi,k(\xi)$，不能在随 $\xi$ 变化的集合定义中一直写泛点 $\eta$。超平面的参数属于 $P^\vee$，不属于 $P$。在“对每个不可约分支”的条件中，像的维数应逐个对 $f(X_i)$ 检查。这些类型整理本身并不修复B2-E02的实质性反例。
+
+\audit{B2-T08}{平凡化的是可逆模而非任意模}{V稿§5的载体、基域与同态记号问题}
+\source{V，第16页，（5.2）}
+一般模 $F$ 不必局部同构于 $\OO_X$，例如秩2的自由模就不能；可以局部平凡化的是可逆模 $L$。截面 $\phi:\OO_X\to L$ 对偶地给出 $L^{-1}\to\OO_X$，然后张量 $F$ 得到 $F\otimes L^{-1}\to F$。因此底本缺失的另一张量因子是这个对偶同态，而不是预设一个全局处处存在的倒数函数。
+
+同页从 $k(s)$ 扩张到 $k(\xi)$ 后，载体应为 $X_{k(\xi)}$，并先把原层限制到 $X_s$。不能在等式右端仍写 $X_{k(s)}$ 而忽略该扩张。
+
+\audit{B2-T09}{纤维参数的基点写错}{V稿（5.3）的类型问题}
+\source{V，第16页，（5.3）}
+要取 $P^\vee\to S$ 在 $s$ 上的纤维，应有 $s\in S$，不是底本的 $s\in P^\vee$。所讨论的开集属于 $X_{P^\vee}$；$G$ 若仍作为 $Y$ 上的层，应限制到 $Y\cap U$，或者明确先作闭浸入直接像。它们不改变正则性与平坦性判据，但使用时必须说清对象。
+
+\audit{B2-T10}{“相等”与下一句结论相反}{V稿证明中的等号误植}
+\source{V，第17页，（5.3）（b）证明}
+原文写 $Z_{i,k(\eta)}\cap Y=Z_{i,k(\eta)}$，却据此说截面不在任何相伴循环上恒零。正确所需的是不等号：若整个循环包含在 $Y$ 中，截面反而在其上恒零。原稿所指的维数理由也只支持真交，而不支持整条循环被包含。译文保留原等号并作注，没有静默修改。
+
+\egasection{条件与定义：B2-H01--H09}
+\textbf{B2-H01。}（III，6.5.5）的“上同调维数”是各茎环作为环的全局同调维数上界，不是任意层在拓扑空间上的上同调消失阶。不能见到相同术语就混用两类维数。
+
+\textbf{B2-H02。}（III，6.5.8）中的仿射平坦性应经环同态 $A\to B$ 翻译：拟凝聚层 $\widetilde M$ 对 $S=\Spec A$ 平坦，当且仅当 $M$ 是平坦 $A$-模。底点局部化 $M\otimes_AA_s$ 与任取的上方点茎 $M_x$ 不是同一个记号。
+
+\textbf{B2-H03。}本书（15.1.7）不要求最终商模非零，所以（15.1.12）中 $(1,0)$ 可以正则，$(0,1)$ 却不正则。其他书可能另加最终商非零的条件，不能据其他定义把原文例子判错。Stacks Project，Tag0AUH，Definition10.68.1采用额外非零条件，并紧接着明确提示有的作者不采用它；本次只作定义差异对照。
+
+\textbf{B2-H04。}（15.1.17）使用Nakayama时，宜明确对有限 $B$-模 $R/\sum_if_iM$ 操作；剩余域张量条件使这个商模被 $\mm_AB$ 生成，而局部同态保证 $\mm_AB\subseteq\mm_B$，故商模为零。正则性则来自（15.1.16），不是单靠Nakayama推出。
+
+\textbf{B2-H05。}（15.1.20）的“suite de composition”在此上下文表示有限滤过，商项同构于指定的 $M/(f_1,\ldots,f_n)M$；它们不必是简单模。按现代某些书的“合成列”狭义定义理解会平添错误条件。
+
+\textbf{B2-H06。}（15.2.3）证明的是在 $V(J)$ 外拟正则性自动成立。不要据其“研究兴趣”的末句误读成有序正则性也自动成立；$(0,1)$ 就反驳后一个读法。
+
+\textbf{B2-H07。}V（3.1.1）脚注猜测“primary”可能是代数闭。实际上传的 EGA IV 第二部分（4.3.1），PDF第55页，定义为较大域中所含的最大\emph{可分代数}扩张等于底域。取特征 $p>0$ 下 $k=\mathbf F_p(t)$、$L=k(t^{1/p})$，便见准素不要求相对代数闭。这一定义核对已完成，但IV第二部分正文没有因此被计为已经连续翻译。
+
+\textbf{B2-H08。}V（4.3）印为“特征0并且非分歧”，前面（3.2）为“特征0或者非分歧”。两个充分条件同时加上会使假设更强，不单凭这种差别判定结论错误，也不静默改写连接词。
+
+\textbf{B2-H09。}V（6.1）括号中的 $X$ 对 $k$ 固有不能删除。取
+\[
+ X=\Spec\mathbf C[x,y,z]/(xy-1)\simeq\mathbf G_m\times\mathbf A^1
+ \hookrightarrow\mathbf A^3\hookrightarrow\mathbf P^3.
+\]
+它不可约二维，有限闭集不能将它断开；浸入的有限像闭集只能是有限点集，所以满足其余有关连通性和像维数的条件。然而超平面 $x+y=0$ 的截面由
+$x^2+1=0$ 给出，分解为 $x=\sqrt{-1}$ 与 $x=-\sqrt{-1}$ 两条不交仿射直线。它不连通。这里 $X$ 不固有，故这只说明条件不可丢，不是对保留括号假设的（6.1）的反例。
+
+\egasection{仍需保留的缺文与未核实事项：B2-P01--P04}
+\textbf{B2-P01。}V（3.1）只假设几何不可约，直接称 $X$ 有“函数域”时，需要先说明传到 $X_{\mathrm{red}}$，或用泛点剩余域。该修补适用于拓扑不可约性论证，不是增强为几何整。
+
+\textbf{B2-P02。}V（3.1.1）在本稿中没有证明；作者明确把选择证明出处的工作留给编稿者，英译者只列出几项参考。译文保留这一事实，没有把空缺改写成“证毕”。外部的Bertini--Zariski理论与本载体是否自足是两个问题。
+
+\textbf{B2-P03。}V（4.4）的英文自我批评中“if $f$ is quasi-finite”与上下文可疑，尚未核对法文手稿；AQT的含义及末尾拉丁语短句也不强行猜定。B2-E02只建立一个可直接验证的一般态射反例，不借此代替来源学考证。
+
+\textbf{B2-P04。}V（5.6）引用的12.1.1、12.1.4未在本节明确列出性质清单，英译编者自己说12.1.4核对不上。原证明还从涉及余核 $G$ 的结论转向 $F_{P^\vee}|_U$，须逐项核对所引命题。本次保留其开放问题状态，未凭通常的纤维性质开放性补写一个新的通用定理。
+
+\egasection{本轮结论与引用方式}
+三项明确反例中，B2-E01针对正则序列基变换命题的漏项，B2-E02针对一般态射的连通性断言，B2-E03针对英译稿中可疑连接词的字面读法。两项G类只否定所指证明步骤或附带断言，不能改说成定理反例。T类、H类、P类分别用于排印、条件和未完成事项；原稿的“参考待补”并不自动等于相应结论为假。
+
+\textbf{本轮外部核验来源。}直接底本为本章开头列出的三份上传PDF；准素扩张的定义另核对上传 \texttt{EGAIV.2.pdf}（4.3.1）。外部仅作限定交叉核验：Stacks Project，Tag0AUH（Regular sequences）和Tag063P（Relative regular immersions），访问于2026年11月14日。可按稳定Tag在该项目检索：
+\begin{center}
+\url{https://stacks.math.columbia.edu/tag/0AUH}\\
+\url{https://stacks.math.columbia.edu/tag/063P}
+\end{center}
+本章的具体反例和替代证明在上文完整写出，不以网页的权威性代替论证。
+\par
+
+% END reports/current_audit.tex
+
+\part*{历史核查记录：新增文稿第一批}
+\addcontentsline{toc}{part}{历史核查记录：新增文稿第一批}
+\NewNote{以下为新增文稿第一批报告，保留原标识及其适用范围。}
+
+% BEGIN reports/batch1_audit.tex
+\head{定点核查报告：反例、修订与保留事项}
+\noindent\textbf{阅读界限。}下列分析由本次译校另行撰写，不是原著的组成部分。所说“原文”均指本次实际查到的上传载体；对于EGA V，尚未核对法文手写原稿，故不能判定错误最早出在作者、英译者还是排版者。未列出的条目不等于已经审定无误。
+
+本报告以编号定位，区分六项有明确反例的断言或推理（E01--E06）、一个另列的证明步骤问题（G01）、成组的文字与符号问题（T01--T10），以及六项保留事项（P01--P06）。这些编号不能简单相加当作“发现了同样多个错误定理”；例如E04、E06批评的是辅助断言或证明判据，而非所服务的全部结论。
+
+\egasection{重点位置总表}
+\begin{longtable}{p{.10\textwidth}p{.28\textwidth}p{.48\textwidth}}
+\toprule 编号 & 底本位置 & 判定对象\\\midrule\endhead
+E01 & IV.1，$0$（14.3.3）；PDF第10页 & 四个条件并不全等价；条件(b)不足。\\
+E02 & IV.1，$0$（15.1.4）；PDF第12页 & $K/A$例子漏掉“$f$非单位”。\\
+E03 & V合并稿（2.4）；第7页 & 截面相等的判据只假设了一个集合不可约。\\
+E04 & V合并稿（2.12）证明；第10页 & “泛线性组合处处非零”的辅助引理错误。\\
+E05 & V合并稿（2.15）、（2.18）；第11--12页 & 特征0允许任意态射时，不能要求坏点集本身有限。\\
+E06 & V短篇；正文第3页／PDF第4页 & 层同态单射不能替代Jacobian的纤维满秩条件。\\
+G01 & V合并稿（2.12）证明；第10页 & 非分歧不等于Zariski局部浸入。\\
+T01 & V短篇末两页 & 外幂、秩、商模及行列式对偶出现错置。\\
+T02 & V射影丛笔记（1.1）；PS转换第3页，合并稿第87页 & 扭转 $(1)$ 应为 $(n)$，另有遗漏拉回记号。\\
+T03 & III.2（6.3.8）；PDF第11页 & 边界模的解消被误说成分量模的解消。\\
+T04--T07 & V合并稿§§1--2 & 拉回对象、空集边界、秩不等式、底域等问题。\\
+T08--T10 & V短篇定义及微分图 & 域值点、相对下标、维数算式、余法列末项等。\\
+\bottomrule
+\end{longtable}
+
+\audit{E01}{“等维、等余维且悬链”不充分}{已确认的命题错误；有独立反例及已有文献记录}
+\source{\texttt{EGAIV.1.pdf}第10页，原书正文页11，$0_{\mathrm{IV}}$（14.3.3）}
+原文把以下条件(b)与“所有极大不可约闭集链等长”(a)等同：$X$等维、等余维、悬链。这里的极大链是不能再向任一端或在中间插入元素的链；不能把“极大”误读成“长度最大的”。
+
+\subsec{一个六点反例}
+取集合 $X=\{a,b,c,d,u,v\}$，以如下覆盖关系定义偏序：
+\[
+ a<c<u,\qquad b<d<v,\qquad a<v,
+\]
+除传递性迫使的关系外没有其他严格比较关系。规定闭集为向下封闭的子集。下面的线段表示覆盖关系，向上表示偏序增大：
+\begin{center}
+\begin{tikzpicture}[x=1.7cm,y=1.0cm]
+\node (a) at (0,0) {$a$}; \node (b) at (2,0) {$b$};
+\node (c) at (0,1) {$c$}; \node (d) at (2,1) {$d$};
+\node (u) at (0,2) {$u$}; \node (v) at (2,2) {$v$};
+\draw (a)--(c)--(u); \draw (b)--(d)--(v); \draw (a)--(v);
+\end{tikzpicture}
+\end{center}
+这是有限 $T_0$ 空间，因而诺特。每个非空不可约闭集都是一个主向下集
+\[
+ \downarrow x=\{z:z\leq x\}.
+\]
+证明如下：每个非空闭集是其有限多个极大元的主向下集之并；若极大元不止一个，它可写成两个真闭子集之并，不可约性便不成立。反之，主向下集包含其唯一极大元，任何闭集分解都必须有一个分量包含该极大元，从而包含整个主向下集。
+
+故不可约闭集链与偏序中的点链一一对应。两个不可约分支是
+\[
+ C_u=\{a,c,u\},\qquad C_v=\{a,b,d,v\}.
+\]
+它们的维数均为2，所以 $X$ 等维。最小不可约闭集只有 $\{a\}$、$\{b\}$，且
+\[
+ \codim(\{a\},X)=2,\qquad \codim(\{b\},X)=2,
+\]
+前者由 $a<c<u$ 实现，后者由 $b<d<v$ 实现；所以 $X$ 等余维。最后，对每一对可比较端点，其间只有一条饱和链，因此悬链条件成立。
+
+但 $a<c<u$、$b<d<v$、$a<v$ 都是极大链，其长度分别为 $2,2,1$。所以(b)成立而(a)不成立。这个有限拓扑反例已足以反驳原文针对一般诺特 $T_0$ 空间的命题；无需先构造一个环。
+
+\subsec{错误步骤与正确关系}
+问题是把\emph{在整个 $X$ 中的余维数}同\emph{在每个不可约分支中的余维数}混为一谈。反例中
+\[
+ \codim(\{a\},X)=2,
+ \qquad \codim(\{a\},C_v)=1,
+ \qquad \dim C_v=2.
+\]
+原条件(b)未保证 $C_v$ 自身等余维。
+
+保留原来的诺特、$T_0$、有限维假设，正确关系是
+\[
+ (a)\Longleftrightarrow(c)\Longleftrightarrow(d)\Longrightarrow(b),
+\]
+而(b)的逆向一般为假。可把(b)加强为
+\[
+ \boxed{X\text{等维且悬链，并且每个不可约分支自身等余维。}}
+\]
+这一加强条件与(a)等价：在一个不可约分支内，任何极大链都从一个闭点到该分支；悬链性使其长度等于该闭点在该分支内的余维数，该分支的等余维性使这个数等于分支维数，再由全空间等维性得到统一长度。反过来，所有极大链等长显然迫使每个分支的这些链等长，并给出上述三条条件。
+
+原文在（14.3.3）之后用“四条件等价”定义“biéquidimensionnel”；为避免后续歧义，应以(a)的强性质为定义，另将(b)称为弱双等维性。后续（14.3.4）、（14.3.5）不能仅凭弱性质引用。
+
+\textbf{外部交叉核验。}Katharina Heinrich的研究\textit{Some remarks on biequidimensionality of topological spaces and Noetherian schemes}（arXiv:1403.5814，2014）明确指出上述EGA等价关系的问题，并给出包括诺特环谱在内的反例。这里的六点计算是本报告直接列出的验证，不依赖把那篇文章中的图或证明照搬进来。
+
+\audit{E02}{非零元素不一定是零因子}{已确认的遗漏条件}
+\source{\texttt{EGAIV.1.pdf}第12页，原书正文页13，（15.1.4）末尾}
+原文取不是域的主理想整环 $A$、分式域 $K$，以及 $M=K/A$；正确地指出每个 $f\ne0$ 都满足 $fM=M$，但随后说这些 $f$ 都是 $M$ 上的零因子。
+
+取 $A=\mathbf Z$、$K=\mathbf Q$、$f=1$，乘法映射就是 $M$ 的恒等映射，当然单射；所以该句按字面为假。正确条件为
+\[
+ 0\ne f\in A,\qquad f\notin A^\times.
+\]
+此时 $1/f\notin A$，所以 $1/f+A$ 是 $K/A$ 的非零元素，却被 $f$ 消去：
+\[
+ f(1/f+A)=1+A=0.
+\]
+同时 $fM=M$，因此关联分次模及 $(M/fM)[T]$ 都为零，典范同态为同构。这才给出“准正则不推出正则”的所需反例。无须否定此前（15.1.2）、（15.1.3）的结论。
+
+\audit{E03}{超平面逆像相等不能识别任意闭集}{已确认的遗漏条件}
+\source{\texttt{EGAVaiello.pdf}第7页，推论（2.4）的第二句}
+原文只假设 $Z$ 不可约，却声称
+\[
+ Z_\eta=Z'_\eta
+ \Longleftrightarrow
+ \bigl(f(Z),f(Z')\text{均有限}\bigr)\ \text{或}\ Z=Z'.
+\]
+取代数闭域 $k$，$X=P=\mathbf P^2_k$、$f=\id$。令 $Z=L$ 为一条直线，取 $p\in P\setminus L$ 为闭点，令 $Z'=L\cup\{p\}$。两个集合均闭，$Z$ 不可约，完全满足所写假设。
+
+泛超平面 $H_\eta$ 不经过固定闭点 $p$：在对偶射影平面中，“经过 $p$”是一个真闭超平面，不包含泛点。于是
+\[
+ Z'_\eta=(L\cup\{p\})_\eta=L_\eta=Z_\eta.
+\]
+但 $Z\ne Z'$，并且两个像都包含一条直线，均非有限。这就是反例。
+
+\textbf{可用修正。}若同时要求 $Z'$ 不可约，则可对原文第一句的包含判据应用两次；在非空逆像的情形，两个像都不有限，于是得到 $Z\subseteq Z'$ 和 $Z'\subseteq Z$。本反例只否定第二句的过强结论，不否定第一句。
+
+\audit{E04}{泛线性组合可以有零点}{已确认的辅助断言错误，不是Bertini定理反例}
+\source{\texttt{EGAVaiello.pdf}第10页，（2.12）证明末段}
+底本使用：非零局部自由模 $E$ 由 $a_1,\ldots,a_n$ 生成，则以代数独立系数形成的 $\sum_iS_i a_i$ 在扩域后处处不消失。
+
+取 $X=\mathbf A^1_k=\Spec k[t]$、$E=\OO_X$，取生成系 $a_1=1,a_2=t$。令 $K=k(S_1,S_2)$。在 $X_K$ 中，
+\[
+ s=S_1+S_2t
+\]
+在闭点 $t=-S_1/S_2$ 处消失，因为 $S_2$ 在域 $K$ 中可逆。这个点是扩域后新出现的点，坐标依赖参数。因此“对每一个固定的旧点，其一般线性组合不消失”不能推出“扩域后所有点处都不消失”。
+
+\textbf{修补方向。}不能只修补一个求和下标就保住该论证；应同时考虑截面方程和奇异性条件的关联空间。对光滑浸入 $X\hookrightarrow\mathbf P^n_k$ 的标准Bertini结论，可以用超平面在 $x$ 处的一阶射流条件估算坏超平面的维数，而不是宣称某个泛组合在整个扩域空间上无零点。Stacks Project，Tag 0FD4，Lemma 33.47.3给出了具有明确浸入假设的对应结果及证明。此处仅以它作结论与证明路线的交叉核对；不把其结论不加验证地推广到草稿的所有版本。
+
+\audit{E05}{任意态射下应控制坏点的像}{对特征0无浸入假设扩展的明确反例}
+\source{\texttt{EGAVaiello.pdf}第11--12页，（2.14）的旁注、（2.15）、（2.18）}
+这里必须区分两个版本。保留非分歧有限型假设时，态射拟有限，有限像与坏点集合有限之间有额外联系；本项不是对那个受限版本的反例。但若按（2.14）旁注及（2.18）的方向，在特征0允许 $f$ 为任意态射，则不能仍把条件写作“$Z$ 有限”。
+
+取 $k=\mathbf C$，
+\[
+ X=\Spec k[t,\epsilon]/(\epsilon^2),
+ \qquad f:X\longrightarrow\mathbf P^2_k
+\]
+为到固定闭点 $p$ 的常值态射。因为 $X$ 处处带有非零幂零元，它在任何点都不对 $k$ 光滑，所以不光滑点集 $Z$ 就是 $X$，不是有限集。另一方面，泛超平面不经过 $p$，因此
+\[
+ Y_\eta=f^{-1}(H_\eta)=\varnothing.
+\]
+空预概形对任何域光滑。故“$Y_\eta$ 光滑当且仅当 $Z$ 有限”在该扩展版本下为假，而“$f(Z)$ 有限”在这个例子中确实成立。
+
+这一例子揭示的是由像到原像时丢掉了拟有限性，绝不反驳（2.12）的点态等价：这里 $Y_\eta$ 没有点，该点态陈述没有产生矛盾。关于（2.17）的“模可分”版本，必须另外核对草稿所引用但未写出的定义，不把不同历史用法混同；但（2.18）只证明点态结果，显然没有说明为何能继续要求坏点集本身有限。
+
+\audit{E06}{余法映射单射不等于光滑}{已确认的证明判据错误}
+\source{\texttt{EGAV1-2.ps}正文第3页／转换PDF第4页}
+原稿称某个微分正合列的第一个映射单射，恰好等价于零点概形光滑且维数正确。即使把误写的相对底 $X$ 改成 $S$，只说\emph{层映射单射}也不够。
+
+取特征0的域 $k$，令
+\[
+ X=\Spec k[x,y],\qquad
+ W=V(y^2-x^3),\qquad B=k[x,y]/(y^2-x^3).
+\]
+因 $y^2-x^3$ 是非零因子，余法模 $J/J^2\simeq B$，余法映射为
+\[
+ B\longrightarrow B\,dx\oplus B\,dy,
+ \qquad h\longmapsto(-3x^2h,2yh).
+\]
+$B$ 是整环，且 $2y\ne0$，所以这个映射单射。但在原点 $\mm=(x,y)$ 的剩余域上，它变为零映射
+\[
+ k\longrightarrow k^2.
+\]
+$W$ 在原点的局部环维数为1，而 $\dim_k\mm/\mm^2=2$，不是正则局部环，因此不是光滑点。
+
+正确Jacobian条件应以\emph{纤维上的秩}表述：在光滑环境中，用 $r$ 个方程切出预期余维 $r$ 的光滑零点概形，需要这些方程的微分在该点的余切空间中线性无关。这里不独立断言草稿命题7的结论错误；所否定的是支持它的一句过强判据。
+
+\audit{G01}{非分歧态射不必Zariski局部是浸入}{原证明缺少合法的局部化步骤}
+\source{\texttt{EGAVaiello.pdf}第10页，（2.12）的逆向证明开头}
+令 $\operatorname{char}k\ne2$，取
+\[
+ f:\mathbf G_{m,k}\longrightarrow\mathbf G_{m,k},\qquad u=t^2.
+\]
+对应环扩张 $k[u,u^{-1}]\to k[t,t^{-1}]$ 有基 $1,t$，为秩2的有限自由扩张；多项式 $T^2-u$ 的导数 $2T$ 在这里可逆，所以态射 étale，特别非分歧。
+
+然而不能通过缩小源、靶的非空Zariski开集就把它变成浸入。这样的限制仍在函数域上给出次数2的扩张 $k(u)\subset k(t)$；若它是占优浸入，其像在不可约靶中稠密而局部闭，因而在某个开集上为同构，函数域次数必须为1，矛盾。
+
+因此，“$f$非分歧，于是把 $X$ 直接写成 $P$ 的某个Zariski开集内由方程切出的子概形”这一步不合法。可以考虑 étale 局部浸入或直接的切空间论证，但必须写出相应变换及性质的回降；本报告不把这一省略用“显然”填掉。
+
+\audit{T01}{短篇末尾的外幂与行列式类型不一致}{已定位的转录／排印问题}
+\source{\texttt{EGAV1-2.ps}转换PDF第5--6页，正文第4--5页}
+本项集中列出同一段计算的多处错置，不把每个错字算作一个错误定理。设 $Q\to R$ 为秩分别为 $q,r$ 的局部自由模同态。表示非满射点的标准截面属于
+\[
+ \mathscr Hom\left(\bigwedge^r Q,\bigwedge^r R\right),
+\]
+其零点由全部 $r$ 阶子式定义；不能把底本渲染中的 $\Lambda^1Q\to\Lambda\sqrt M$ 当作有意义的公式。
+
+在其后 $M$ 秩为 $m$、子模 $P,Q$ 秩分别为 $p,q$ 的段落中，余秩1情形所需的是
+\[
+ p+q=m+1,\qquad S=M/Q,\qquad R=M/P.
+\]
+底本却写 $p+1=m+1$ 与 $M/W$，其中 $W$ 是底空间。再令
+\[
+ D=\det M\otimes(\det P)^{-1}\otimes(\det Q)^{-1}.
+\]
+截面 $a\in\Gamma(P\otimes D)$ 对应的同态是 $D^{-1}\to P$，所以
+\[
+ L=D^{-1}=\det P\otimes\det Q\otimes(\det M)^{-1},
+\]
+而不是底本写的末因子 $\det M$。这只校正类型及对偶方向；原文件缺失的最后交换图仍不能由这些计算冒充恢复。
+
+\audit{T02}{射影丛可逆层定理的扭转下标}{已确认的公式误写}
+\source{\texttt{EGAV6.ps}转换PDF第3页；\texttt{EGAVaiello.pdf}第87页，（1.1）}
+\textbf{被检查段落的完整陈述摘译。}设 $S$ 为预概形，$E$ 为 $S$ 上有限秩局部自由模，且每点处秩至少为2，$P=\mathbf P(E)$ 为它定义的射影丛。对 $P$ 上每个可逆模 $L$，可以找到以 $\mathbf Z$ 为指标的一族两两不交、覆盖 $S$ 的开集 $(S_n)$，以及 $S$ 上的可逆模 $M$，使 $L$ 在 $f^{-1}(S_n)$ 上的限制同构于原稿写作 $M\otimes\OO_P(1)=f^*(M)(n)$ 的限制。族 $(S_n)$ 被唯一确定，而 $M$“在唯一同构意义下确定”。
+
+正确的扭转式应为
+\[
+ f^*M\otimes\OO_P(n)=f^*(M)(n).
+\]
+这里既要补出从 $S$ 到 $P$ 的拉回，也要把第一个 $(1)$ 改为 $(n)$。取 $S=\Spec k$、$P=\mathbf P^1_k$、$L=\OO_P(2)$，则 $M$ 拉回为平凡线丛，$\OO(2)$ 不同构于 $\OO(1)$；例如两者的全局截面维数分别为3与2。这是公式笔误，不是否定正确的Picard群分解。关于“唯一同构”的严格含义，见P06。
+
+\audit{T03}{边界模的解消与分量模的解消混写}{原文中可定位的对象误写}
+\source{\texttt{EGAIII.2.pdf}第11页，原书正文页12，（6.3.8）}
+底本先定义 $X^B_{i,\bullet}$ 是 $B_i(P_\bullet)$ 的投射解消，随后却说 $X^B_{i,\bullet}\otimes_AA'$ 一般不再是 $P_i\otimes_AA'$ 的解消。它在变基前就不是被指定为 $P_i$ 的解消。应核对为边界对象 $B_i(P_\bullet)\otimes_AA'$，并明确它到 $B_i(P_\bullet\otimes_AA')$ 的典范映射。非平坦变基不保证后两个边界对象相同。此项不据此否定最终构造的Tor变基同态。
+
+\audit{T04}{拉回层的承载空间与箭头靶错置}{对象类型错误}
+\source{\texttt{EGAVaiello.pdf}第6页及第9页}
+第1节把 $\G$ 写成 $X$ 上层 $\F$ 在 $H$ 上的拉回，但已定义的关联关系是 $Y=X\times_PH$，存在 $Y\to X$，并没有一般的典范 $H\to X$。应为拉回到 $Y$。（2.8）又写由 $Y_\eta\to Y$ 的正则性得 $\OO_{X,x}\to\OO_{Y_\eta,y}$ 正则；证明所需的态射是复合 $Y_\eta\to X$，须指出其性质，不能混同这两个箭头。
+
+\audit{T05}{“有限”与“维数等于0”遗漏空集}{边界约定未统一}
+\source{\texttt{EGAVaiello.pdf}第9页，（2.9）、（2.11）}
+坏点集可以为空。若按EGA的约定 $\dim\varnothing=-\infty$，则“$f(Z)$有限”不等价于“$\dim\overline{f(Z)}=0$”，因为 $Z=\varnothing$ 即反例。在相应可构造性条件下，应改为维数 $\leq0$，或明确分出空集。这是边界表述问题，不是一个非空奇异几何反例。
+
+\audit{T06}{方程个数与商模秩的下标}{公式及不等式误写}
+\source{\texttt{EGAVaiello.pdf}第10页，（2.12）证明}
+已列方程为 $f_1,\ldots,f_p$，故商模应除以 $\sum_{i=1}^{p}\OO_Udf_i$，不是求和到 $n$。在这些微分独立时，若 $\Omega^1_{U/k}$ 秩为 $n$，商的秩为 $n-p$，所以商非零要求 $p<n$，不是 $p\leq n$。修正这两点仍不能挽救E04的错误辅助引理。
+
+\audit{T07}{局部环的底域不是其剩余域}{代数结构未定义／底域误写}
+\source{\texttt{EGAVaiello.pdf}第11页，（2.14）}
+$Y_\eta$ 是 $k(\eta)$-预概形，因此 $\OO_{Y_\eta,y}$ 自然是 $k(\eta)$-代数。它有到 $k(y)$ 的商同态，但一般没有反向的典范 $k(y)\to\OO_{Y_\eta,y}$。故所写
+\[
+ P(\OO_{Y_\eta,y},k(y))
+\]
+没有给出所需的底域代数结构；相邻陈述及证明均指向 $k(\eta)$。改底域是必要的类型修订，不意味着该段所有其余推理都已证明。
+
+\audit{T08}{短篇中的测试域、次数与相对下标}{同一载体内的符号不一致}
+\source{\texttt{EGAV1-2.ps}转换PDF第2--5页}
+定义1的二次初始项应落在 $\Sym^2(\mm_x/\mm_x^2)$。定义3既量化扩域 $k'$，相应值点也应以 $k'$ 为值域，不能写 $k$。命题5的相对底先为 $Y$，后误写尚未引入的 $S$；分析 $\mu$ 时又把 $X/Y$ 换成 $X/S$。最后“$M$满射”“$V$满射”对应图中的 $\mu,\nu$。这些错置在译文均明示，不把数学对象悄悄换掉。
+
+\audit{T09}{相对维数算式错误}{可直接验算的排印错误}
+\source{\texttt{EGAV1-2.ps}转换PDF第4页}
+原式 $(m+1)-(d+1)=m-1$ 的左边等于 $m-d$。因 $X/Y$ 相对维数为 $d$、$Y/S$ 为 $m$，在 $X$ 内切出 $d+1$ 个独立条件所对应的计算应是 $(m+d)-(d+1)=m-1$。
+
+\audit{T10}{余法正合列的末项与解释层次}{类型错误；另有E06所述实质问题}
+\source{\texttt{EGAV1-2.ps}转换PDF第4页}
+若 $W\hookrightarrow X$ 的理想为 $J$，则相对于 $S$ 的余法列是
+\[
+ J/J^2\longrightarrow\Omega^1_{X/S}\otimes\OO_W
+      \longrightarrow\Omega^1_{W/S}\longrightarrow0.
+\]
+底本把末项误写为 $\Omega^1_{X/S}$。若 $W$ 由局部自由模 $F$ 的截面定义，且把整个列作为 $W$ 上的模列，则首项写为 $F^\vee|_W$。但若统一视作 $X$ 上的模层，首项 $F^\vee$ 也可先经限制映射再进入该列；\textbf{这时首项本身不另构成错误}。真正明确误写的是余法列末项。无论采用哪一种解释，仍必须区分层单射与纤维满秩，不能跳过E06。
+
+\audit{P01}{原稿本来没有写完的内容}{缺文，不补造}
+\source{V合并稿（2.10）、（2.16）；V短篇“命题6”及末尾}
+（2.10）只有一句拟写推论的提示，没有正式条件和证明；（2.16）的英译编者直接注明某句无法理解；短篇说应归纳成命题6，却未写出编号陈述；文件末尾则在承诺一个交换图后结束。这些是载体实际的内容边界。既不能说相应证明已译全，也不能因为原作者预期“应当容易”就补写为原文。
+
+\audit{P02}{只知上同调层凝聚，能否直接使用逐项拟凝聚的计算}{证明适用范围待补核；不判定命题为假}
+\source{\texttt{EGAIII.2.pdf}第7页，（6.2.5）；对照第6页（6.2.2）、（6.2.3）}
+（6.2.5）的陈述只假设 $\cH^i(\K^\bullet)$ 凝聚，没有明写每个 $\K^i$ 拟凝聚；证明却直接援引对逐项拟凝聚复形建立的仿射Čech计算，并使用该类上的截面函子正合性。仅从“上同调层凝聚”不能直接推得“复形每项拟凝聚”。
+
+这里需要另给合法替换或更一般的比较定理。作为\emph{另加条件后的论证}，若 $\K^\bullet$ 有下界，则可从第二超上同调谱序列
+\[
+ E_2^{p,q}=R^pf_*\cH^q(\K^\bullet)\Longrightarrow
+ \mathbb H^{p+q}(f,\K^\bullet)
+\]
+以及本征直像的凝聚性逐个总次数处理：$p\geq0$、$q$有统一下界，使固定总次数上只剩有限项。若逐项拟凝聚，则原稿的有限仿射覆盖路线也有明确适用条件。但这些补充不能冒充原文已经写出的普遍证明；一般无界情形及原著第0章的完整约定仍需进一步对照。
+
+\audit{P03}{一般底上相对除子函子的参数空间}{记号与约定待核}
+\source{\texttt{EGAVaiello.pdf}第5页}
+底本在一般预概形 $S$ 上写 $\mathbf P(\Sym_k^m(E^\vee))$，而 $k$ 并未作为一般底引入；还涉及射影化采用商线还是子线约定、相对维数0情形、空除子的次数0分支。不能仅凭熟悉的射影空间超曲面参数化就把这句话无条件认定为已经完全严谨。至少需要统一为相对于 $\OO_S$ 的构造并核对全部约定。
+
+\audit{P04}{“正规”与“几何正规”的不对称表述}{待核；不把文字猜测升格为原作者本意}
+\source{\texttt{EGAVaiello.pdf}第11页，（2.15）}
+坏点集的最后一项只写“非正规”，结论却写“几何正规”。若不限定完美底域，两者不能任意互换。上下文可能漏掉一个“几何”，也可能另有限制；没有核对手稿前，应保留原句并明确疑点。关于有限性假设的另一个问题，已经在E05给出反例，应与本项分开。
+
+\audit{P05}{特征2的二次型退化约定}{术语未明确，不能贸然认定数学命题错误}
+\source{\texttt{EGAV1-2.ps}定义1及Hessian行列式段}
+若二次型“非退化”被定义为极化双线性型非退化，那么后文的行列式判据与这个定义相容。但若想用“对应的射影二次超曲面光滑”作为非退化的含义，特征2时必须小心。例如取特征2的域，
+\[
+ q(x,y,z)=x^2+yz.
+\]
+其极化双线性型在三维空间上有非零根空间（$x$方向），故行列式为零；然而射影曲线 $q=0$ 光滑，因为偏导是 $(0,z,y)$，偏导全零只能有 $y=z=0$，而此时 $q=x^2=0$，没有射影点。因此仅写“退化”不足以决定想采用哪一类判据。本报告保留为约定待核，而不是宣布原稿在所有特征下的定义错误。
+
+\audit{P06}{可逆模“在唯一同构意义下确定”}{必须说明保留了哪些结构}
+\source{\texttt{EGAV6.ps}（1.1）、（1.3）；合并稿第87页}
+若只给可逆模的同构类，通常不能说两个实现之间只有一个同构：例如 $\Spec k$ 上一维向量空间 $M$ 的自同构群是 $k^\times$。若同时保留一个指定的同构 $f^*M(n)\simeq L$，并要求比较同构与它相容，则“唯一”可能有正确的范畴意义。应区别“$M$的同构类唯一”与“带指定比较同构的数据在唯一同构意义下唯一”。没有固定数据的裸说法不够严格；本项不反驳正确的Picard群分类。
+
+\egasection{不计入数学反例的边界与识读事项}
+EGA IV（14.3.4.1）的原扫描式是多个等号；文本抽取曾把第一个等号读成减号。本译稿按页面图像恢复等号，\textbf{不把识别错误记成原著错误}。同样，EGA V 的像闭包上的横线若在文本抽取中丢失，也要按页面恢复。
+
+（14.3.5.1）写“每个闭子集 $Y$”时，如果容许 $Y=\varnothing$，其左侧按原文约定会出现 $-\infty+(+\infty)$；宜明确限定非空 $Y$，或另说明空集的约定。这是边界记号提醒，未与E01的实质反例混算。
+
+\egasection{本次没有得出的结论}
+没有完成本次九文件的全译，没有逐行验证全部EGA III、IV证明，也没有证明所有未标注命题正确。没有以EGA V英译的乱码断定Grothendieck手稿必然有同样文字错误。没有因E04或G01而宣布Bertini定理错误。没有把PS格式转换、正文抽取或编译成功计为翻译完成。
+
+% END reports/batch1_audit.tex
+
+\part*{历史核查记录：第一、第二卷}
+\addcontentsline{toc}{part}{历史核查记录：第一、第二卷}
+\NewNote{以下为第一、第二卷早期重点审阅结果。关于进制完备性和对角态射等问题，须结合本版新取得的ErrIII清单；旧报告不代表问题尚未有正式勘误。}
+
+% BEGIN reports/legacy_I_II.tex
+\chapter{核查清单}
+\small
+\setlength{\tabcolsep}{2.4pt}
+\begin{longtable}{@{}p{.09\textwidth}p{.055\textwidth}p{.18\textwidth}p{.10\textwidth}p{.10\textwidth}p{.39\textwidth}@{}}
+\toprule
+编号 & 类别 & 原文条目 & 印刷页 & PDF 页 & 核心问题\\\midrule
+\endfirsthead
+\toprule 编号 & 类别 & 原文条目 & 印刷页 & PDF 页 & 核心问题\\\midrule\endhead
+I--01&A&0，4.1.5&38&37&外幂预层到相伴层不必单射\\
+I--02&H&0，6.7.8&60&59&局部环之间的同态未必是局部同态\\
+I--03&A&0，7.2.4&63&62&可容许拓扑完备不推出任意较细理想进制完备\\
+I--04&B&I，5.3.9&133&132&还须说明对角像在某开邻域中闭\\
+I--05&A&I，7.3.8&163&162&泛点处相等不推出有理函数层拉回相等；作者已改\\
+I--06&A&I，7.4.4&163&162&无挠本身不保证截面由泛点决定\\
+I--07&C&I，10.14.2&210&209&“凝聚模”应为“凝聚理想”；作者已改\\
+I--08&B&I，10.14.4&210&209&定义闭子概形的核理想应在像外取单位理想\\\midrule
+II--01&A&II，1.7.2&15&12&对称代数满射断言忽略零次部分\\
+II--02&A&II，2.7.3(ii)&39&36&缺少一次生成等条件；次数二的反例\\
+II--03&A&II，3.4.3(ii)&59&56&非拟紧底空间上缺少统一消失界\\
+II--04&B&II，5.6.1，A 步&106&103&换成约化分支会丢失开集上的幂零结构\\
+II--05&B&II，7.1.7&140&137&须先保证所选 $x_1$ 在辅助环中非单位\\
+II--06&H&II，7.3.9(i)&145&142&应保留前一定理的拟紧性假设\\
+II--07&A&II，8.1.4(i)&153--154&150--151&正次数部分全为零时 $\Proj$ 为空\\
+II--08&C&II，5.4.2(iv) 等&100、111、115&97、108、112&三个乘积态射的源靶排印错位\\
+\bottomrule
+\end{longtable}
+\normalsize
+
+I--05、I--07 的作者勘误位于第二卷印刷第 221--222 页（PDF 第 218--219 页）。标注版在这些勘误旁另加交叉提示，\textbf{不把更正文字本身算作第二卷的新错误}。I--02 所涉及的局部赋环空间态射约定，亦须与第二卷印刷第 218--219 页的增补合读。
+
+\chapter{第一卷：反例、缺步与勘误}
+\section{I--01：外幂预层的单射性断言不成立}
+\oldauditsrc{第 0 章（4.1.5），印刷第 38 页，PDF 第 37 页，末段}
+\kind{A}{反例即使在可逆层上也存在。}
+\lead{原文断言}对 $\OO_X$-模 $\FF$，预层
+\[
+ U\longmapsto\bigwedge_{\Gamma(U,\OO_X)}^p\Gamma(U,\FF)
+\]
+到其相伴层 $\bigwedge^p_{\OO_X}\FF$ 的典范映射为单射。
+\begin{analysisproof}
+取任意域 $k$，令 $X=\mathbf P^1_k$，$\FF=\OO_X(1)$，$p=2$。有
+\[
+\Gamma(X,\OO_X)=k,\qquad
+\Gamma(X,\OO_X(1))=kX_0\oplus kX_1.
+\]
+因此
+\[
+\bigwedge_k^2\Gamma(X,\OO_X(1))=k(X_0\wedge X_1)\ne0.
+\]
+但 $\OO_X(1)$ 局部自由且秩为 1，所以
+\[
+\bigwedge_{\OO_X}^2\OO_X(1)=0.
+\]
+在开集 $X$ 上，原文声称单射的映射恰为 $k\to0$，不可能单射。
+\end{analysisproof}
+\lead{失败原因}“全局截面对全局函数线性无关”不同于“在局部函数环上始终线性无关”。例如在 $X_0\ne0$ 的开集上，$X_1=(X_1/X_0)X_0$，故 $X_0\wedge X_1$ 的限制为零。
+\lead{修订建议}删除这里无条件的“单射”断言。外幂作为相伴层的定义，以及
+\[
+(\textstyle\bigwedge^p\FF)_x\simeq\bigwedge^p_{\OO_{X,x}}\FF_x
+\]
+的茎公式仍可保留。本反例不否定仿射预概形上拟凝聚层对应模的外幂计算。
+
+\section{I--02：忠实平坦性需要局部同态条件}
+\oldauditsrc{第 0 章（6.7.8），印刷第 60 页，PDF 第 59 页}
+\kind{H}{对一般赋环空间态射，原句条件不够；对局部赋环空间态射，应采用增补约定。}
+\lead{原文断言}当 $X,Y$ 的茎都是局部环时，态射忠实平坦等价于其底空间满射且平坦。此前（0，5.5.1）只定义了“茎为局部环”的对象，并未在该定义中规定所有茎同态都为局部同态。
+\begin{analysisproof}
+令 $Y$、$X$ 都是单点空间，结构环分别为
+\[
+A=\mathbf Z_{(p)},\qquad B=\mathbf Q,
+\]
+由包含 $A\hookrightarrow B$ 定义赋环空间态射 $f:X\to Y$。底空间映射满射，且 $B$ 是 $A$ 的局部化，故平坦。然而
+\[
+0\ne A/pA,\qquad (A/pA)\otimes_A B=B/pB=0.
+\]
+所以 $B$ 不是忠实平坦的 $A$-模。问题正是 $A\to B$ 不是局部同态：$pA$ 不映入 $B$ 的极大理想 $(0)$。
+\end{analysisproof}
+\lead{正确表述}若各茎同态
+\[
+\OO_{Y,f(x)}\longrightarrow\OO_{X,x}
+\]
+都是局部同态，则局部环的平坦局部同态是忠实平坦的；再结合底空间满射，得到所需结论。
+\lead{与作者增补的关系}第二卷书末增补（I，1.8.2），印刷第 218--219 页（PDF 第 215--216 页），明确规定以后“局部环赋环空间的态射”指茎同态为局部同态的态射。\textbf{按此约定合读，不能把上面的单点反例当作对修订后表述的反例。}本标注提醒独立阅读第一卷该句时不可漏掉这一条件；概形态射的通常结论不受影响。
+
+\section{I--03：可容许环未必对任意小理想进制完备}
+\oldauditsrc{第 0 章（7.2.4），印刷第 63 页，PDF 第 62 页}
+\kind{A}{原文所列的一般假设不足。下面给出一个满足原文定义的非诺特反例。}
+\lead{原文断言}若 $A$ 为可容许环，理想 $J$ 包含于 $A$ 的某个定义理想，则 $A$ 对 $J$-预进制拓扑分离且完备。
+\subsection*{反例的环与其原有拓扑}
+令
+\[
+B=k[x_1,x_2,x_3,\ldots]=\bigoplus_{d\ge0}B_d
+\]
+按总次数分次，其中每个 $B_d$ 的元素都是\textbf{只有有限多个单项式}的齐次多项式。定义
+\[
+A=\prod_{d\ge0}B_d,
+\qquad F^rA=\{(a_d):a_d=0\text{ 对一切 }d<r\}.
+\]
+乘法采用按次数的卷积：第 $d$ 次分量为 $\sum_{i+j=d}a_i b_j$。此和有限，所以定义良好。以 $F^rA$ 为零邻域基，则
+\[
+A\simeq\varprojlim_r B/(x_1,x_2,\ldots)^r
+\]
+是分离、完备、线性拓扑化的环。理想 $\mathfrak m=F^1A$ 是开理想，且
+\[
+\mathfrak m^r\subset F^rA.
+\]
+因此 $\mathfrak m$ 的幂趋于零，$\mathfrak m$ 是原文（7.1.2）意义的定义理想，$A$ 是\textbf{可容许环}。
+
+现在令
+\[
+J=(x_1,x_2,x_3,\ldots)A\subset\mathfrak m.
+\]
+这里 $J$ 是\textbf{代数意义的理想}：元素是有限和 $\sum_{j=1}^{r}x_{i_j}a_j$，没有取拓扑闭包。它不等于全部正次数级数构成的 $\mathfrak m$。
+\subsection*{一个没有进制极限的柯西列}
+设
+\[
+s_N=\sum_{i=1}^{N}x_i^{\,i}.
+\]
+当 $M>N$ 时，
+\[
+s_M-s_N=\sum_{i=N+1}^{M}x_i^{\,i}\in J^{N+1}.
+\]
+故 $(s_N)$ 是 $J$-进制柯西列。它在原有次数拓扑中收敛到
+\[
+s=\sum_{i\ge1}x_i^{\,i}\in A.
+\]
+但 $s\notin J$。否则有有限表达式
+\[
+s=\sum_{j=1}^{r}x_{i_j}a_j.
+\]
+将有限多个变量 $x_{i_1},\ldots,x_{i_r}$ 置零。这一运算按齐次分量定义，给出 $A$ 的环同态。右边变成零，左边仍保留所有未被删去的 $x_i^{\,i}$，非零，矛盾。
+
+若 $(s_N)$ 在 $J$-进制拓扑中有极限 $a\in A$，因为 $J^r\subset F^rA$，它也在原有次数拓扑中收敛到 $a$。由分离性 $a=s$。另一方面，模 $J$ 收敛要求 $a-s_N\in J$ 对充分大的 $N$ 成立，而 $s_N\in J$，遂有 $s=a\in J$，矛盾。因此 $A$ \textbf{不对 $J$-进制拓扑完备}。
+
+注意其分离性仍成立，因为 $\bigcap_rJ^r\subset\bigcap_rF^rA=0$；反例否定的是命题中的完备性部分。
+\subsection*{证明中断在何处，以及如何安全修补}
+原证明使用由原有完备性得到的 $v:\widehat A_J\to A$，然后把 $u_n\circ v:\widehat A_J\to A/J^n$ 直接认作到离散商的连续延拓。这一步未证明连续性；原拓扑下 $J^n$ 不一定闭或开，因而不能如此认定。
+
+一个充分的附加条件是：\textbf{每个 $J^r$ 对 $A$ 原有拓扑闭}。证明如下：任意 $J$-进制柯西列在原拓扑中柯西，因此有原拓扑极限 $a$；固定 $r$，其充分靠后的项都在某个陪集 $a_N+J^r$ 中，闭性推出 $a\in a_N+J^r$。对每个 $r$ 都如此，正是 $J$-进制收敛。此处给出的是可靠的充分条件，不声称它是最弱条件。
+
+\section{I--04：对角态射证明缺少局部闭性一步}
+\oldauditsrc{第 I 章（5.3.9），印刷第 133 页，PDF 第 132 页；所引（4.2.2）在 PDF 第 121 页}
+\kind{B}{结论正确；这里补足原证明未写出的条件。}
+\lead{原证明所做的事}由 $p_1\circ\Delta=\mathrm{id}_X$ 得到对角映射是到底空间像的同胚，并证明相应茎同态满射。随后援引（4.2.2）。但该判据还要求像\textbf{局部闭}，前述两个事实并没有单独给出这一点。
+\begin{analysisproof}
+在 $X$ 中取仿射开覆盖 $U_i=\Spec A_i$，并使每个 $U_i$ 映入 $S$ 的某个仿射开集 $V_i=\Spec R_i$。令
+\[
+W=\bigcup_i(U_i\times_{V_i}U_i)\subset X\times_S X.
+\]
+这是包含 $\Delta(X)$ 的开子预概形。在其中每个仿射开片上，对角态射来自满同态
+\[
+A_i\otimes_{R_i}A_i\longrightarrow A_i,
+\qquad a\otimes b\longmapsto ab.
+\]
+故 $\Delta:X\to W$ 是闭浸入，进而 $\Delta:X\to X\times_SX$ 为浸入。特别地，对角像在开邻域 $W$ 中闭，这补足了（4.2.2）的缺失前提。
+\end{analysisproof}
+上述补证也与 Stacks Project 的 Section 26.21，Lemmas 26.21.1--26.21.2（Tag 01KH）的证明一致。\textbf{本条绝不把“对角态射为浸入”标成错误命题。}
+
+\section{I--05：有理函数层的拉回等式错误，作者已更正}
+\oldauditsrc{第 I 章（7.3.8），印刷第 163 页，PDF 第 162 页}
+\kind{A}{第二卷《勘误与增补》明确要求替换此错误段落。}
+\lead{原文断言}在所列泛点映射条件下，$f^*\RR(Y)=\RR(X)$。
+\begin{analysisproof}
+令 $Y=\Spec k$，$X=\Spec k[t]$，$f$ 为结构态射。两者均整，均只有一个不可约分支，泛点映至泛点，完全满足原文的条件。但
+\[
+f^*\RR(Y)=f^*\widetilde{k}=\OO_X,
+\qquad \RR(X)=\widetilde{k(t)}.
+\]
+在闭点 $a=(t)$，两边的茎分别为
+\[
+k[t]_{(t)}\quad\text{与}\quad k(t),
+\]
+并不相等：$1/t$ 只属于后者。
+\end{analysisproof}
+\lead{失败原因}泛点处的茎同构，不能据此推出两个拟凝聚层整体同构。$\OO_X$ 就不是一个以 $k(t)$ 为值的常值层。
+\lead{作者正式更正}第二卷印刷第 221--222 页（PDF 第 218--219 页）明确说现有文字错误，改成：若 $X,Y$ 整且 $f$ 占优，则存在典范同态
+\[
+\tau:f^*\RR(Y)\longrightarrow\RR(X),
+\]
+并且 $\tau$ 在 $X$ 泛点处为同构。\textbf{不能把这个泛点处的同构再次扩张成全层同构。}
+
+\section{I--06：无挠层的非零截面张量积可以为零}
+\oldauditsrc{第 I 章（7.4.4），印刷第 163 页，PDF 第 162 页}
+\kind{A}{原文未假设拟凝聚；在其一般性下存在反例。}
+\lead{原文断言}若 $X$ 整，$\mathcal L,\mathcal L'$ 为两个无挠 $\OO_X$-模，$s,s'$ 为全局截面，则 $s\otimes s'=0$ 当且仅当一个截面为零。
+\begin{analysisproof}
+取 $X=\Spec k[t]$，两个不同闭点 $a=(t)$、$b=(t-1)$，以及分式域 $K=k(t)$。定义层
+\[
+\FF_a(U)=\begin{cases}K,&a\in U,\\0,&a\notin U,\end{cases}
+\qquad
+\FF_b(U)=\begin{cases}K,&b\in U,\\0,&b\notin U.\end{cases}
+\]
+限制映射在两边非零时是恒等，否则为零。对含 $a$ 的非空开集 $U$，通过 $\OO_X(U)\hookrightarrow K$ 定义 $\OO_X$ 的作用；$\FF_b$ 同理。这些是闭点处的摩天楼层，但纤维使用的是\textbf{分式域 $K$，不是剩余域 $k$}。
+
+$\FF_a$ 在 $a$ 的茎为 $K$，在其他点的茎为零。因此其典范同态
+\[
+\FF_a\longrightarrow\FF_a\otimes_{\OO_X}\RR(X)
+\]
+在所有茎上都是同构：在 $a$ 处是 $K\to K\otimes_{\OO_{X,a}}K$，其他点两边为零。故 $\FF_a$ 按原文（7.4.1）的定义无挠，$\FF_b$ 也无挠。
+
+然而两层支持不交，在任何点至少一个茎为零，因而
+\[
+\FF_a\otimes_{\OO_X}\FF_b=0.
+\]
+两个全局截面 $1\in\Gamma(X,\FF_a)=K$ 和 $1\in\Gamma(X,\FF_b)=K$ 都非零，其张量积却为零。
+\end{analysisproof}
+\lead{原证明的问题}它用“泛点处为零”推出“截面为零”。这需要截面嵌入泛点纤维的性质；无挠本身对任意模层不保证此性质。上面两层的泛点茎都为零，正好显示这一点。
+\lead{一种正确修订}加入\textbf{拟凝聚}假设。此时无挠层嵌入其泛点向量空间所给的层，非零全局截面在泛点仍非零；在域上两个非零向量的简单张量非零，故所需结论成立。一般秩的情形应说“泛点向量空间”，而不是把两者均当成该域自身的子模。本条不否定可逆层的相应性质。
+
+\section{I--07：定义闭形式子预概形必须用理想}
+\oldauditsrc{第 I 章（10.14.2），印刷第 210 页，PDF 第 209 页}
+\kind{C}{作者已有明确勘误的定义用词错误。}
+\lead{原文写法}以任意“凝聚 $\OO_{\mathfrak X}$-模”$\JJ$ 定义 $\OO_{\mathfrak X}/\JJ$，并宣称这种模与闭形式子预概形一一对应。
+\lead{为何不通}任意凝聚模不一定是 $\OO_{\mathfrak X}$ 的子模，更不一定是理想；例如 $\OO_{\mathfrak X}^{\oplus2}$。因此上述商甚至没有按该写法定义为商环层，不能用它定义闭子预概形。
+\lead{作者更正}第二卷印刷第 222 页（PDF 第 219 页）要求把两处“凝聚模”分别改为“$\OO_{\mathfrak X}$ 的凝聚理想”及“$\OO_{\mathfrak X}$ 的凝聚理想们”。本标注执行的是该现成勘误的提醒，不把它包装成新的深层数学反例。
+
+\section{I--08：核理想在像外不能延拓为零}
+\oldauditsrc{第 I 章（10.14.4）的证明，印刷第 210 页，PDF 第 209 页}
+\kind{B}{引理的局部判据成立，但所写的理想层拼接步骤错误。}
+\lead{原文的错误步骤}设 $U_\alpha$ 是目标中覆盖像的仿射开集，$\mathfrak a_\alpha$ 是截面同态之核。原文说把该理想层在 $\bigcup U_\alpha$ 外取零，并把核理想层的支持认作 $U_\alpha\cap f(\mathfrak Y)$。
+\begin{analysisproof}
+只须在普通仿射概形、亦即取离散拓扑的形式概形中测试。令
+\[
+\mathfrak X=\Spf(k\times k)=\Spf k\amalg\Spf k,
+\]
+$\mathfrak Y=\Spf k$ 为第一分支，$f$ 为其闭浸入，$U$ 取第一分支。$U$ 上截面同态是 $k\to k$ 的恒等，其核为零。若在第二分支也取零，所得全局理想为 $0$，商环仍是 $k\times k$；它定义的是全部 $\mathfrak X$，不是 $\mathfrak Y$。
+
+真正需要的核理想是 $0\times k\subset k\times k$。它在第一分支为零，在第二分支为单位理想；其商环才是 $k$。
+\end{analysisproof}
+\lead{修补}设 $Z=f(\mathfrak Y)$，在开集 $\mathfrak X\setminus Z$ 上令 $\JJ=\OO_{\mathfrak X}$。在其与 $U_\alpha$ 的交上，原像为空，相应核正是单位理想，因此能够与各 $\mathfrak a_\alpha$ 所给的理想层拼接。对应于 $Z$ 的是\textbf{商层 $\OO_{\mathfrak X}/\JJ$ 的支持}，不是核理想层自身的支持。这样局部闭浸入判据才得到正确的全局理想层。
+
+\chapter{第二卷：反例、缺步与文字错误}
+\section{II--01：对称代数的满射断言漏掉零次部分}
+\oldauditsrc{（1.7.2），印刷第 15 页，PDF 第 12 页}
+\kind{A}{作为整个含幺代数的满射，该断言不成立。}
+\lead{原文断言}对任意 $\varphi:A\to B$ 和 $B$-模 $F$，典范同态
+\[
+\operatorname{Sym}_A(F_{[\varphi]})\longrightarrow(\operatorname{Sym}_BF)_{[\varphi]}
+\]
+是满射。
+\begin{analysisproof}
+令 $A=k$，$B=k[u]$，$F=0$。上述同态就是
+\[
+\operatorname{Sym}_k(0)=k\longrightarrow\operatorname{Sym}_{k[u]}(0)=k[u],
+\]
+显然不是满射。即便 $F\ne0$，零次部分仍是 $A\to B$，不应无条件宣称其满射。
+\end{analysisproof}
+\lead{修订建议}保留典范同态的存在与函子性，删除整个代数无条件满射的说法。可靠的满射表述是
+\[
+B\otimes_A\operatorname{Sym}_A(F_{[\varphi]})\twoheadrightarrow\operatorname{Sym}_BF.
+\]
+也可在原句中补上 $A\to B$ 满射的假设。在正次数部分，系数 $b$ 可吸收到第一个 $F$ 因子，因而该处没有同样的零次障碍。
+\lead{不受影响的结论}本段随后对一个 $A$-模 $E$ 所写的
+\[
+\operatorname{Sym}_B(E\otimes_AB)\simeq\operatorname{Sym}_A(E)\otimes_AB
+\]
+是另一条正确的标量扩张公式，不应一起删除。
+
+\section{II--02：相伴层为零不必推出高次数全为零}
+\oldauditsrc{（2.7.3）（ii），印刷第 39 页，PDF 第 36 页}
+\kind{A}{一般分次下，零次局部化会漏掉整个非零次数同余类。}
+\lead{原文假设与结论}$S_+$ 是有限型理想，分次 $S$-模 $M$ 满足（TF），即某个高次截断是有限型模。原文断言 $\widetilde M=0$ 等价于（TN），即 $M_n=0$ 对所有充分大的 $n$ 成立。
+\begin{analysisproof}
+取
+\[
+S=k[T],\qquad\deg T=2,\qquad M=S(1),\quad M_n=S_{n+1}.
+\]
+$S_+=(T)$ 为有限型，$M$ 是移位的秩一自由分次模；其非负次数截断也由 $T$（视为 $M_1$ 的元素）生成，所以满足（TF）。
+
+$\Proj S=D_+(T)\simeq\Spec k$。在 $M[T^{-1}]$ 中，所有非零齐次分量的次数都是奇数，因此
+\[
+M_{(T)}=(M[T^{-1}])_0=0,
+\qquad\widetilde M=0.
+\]
+另一方面，对任意 $r\ge1$，
+\[
+M_{2r-1}=S_{2r}=kT^r\ne0,
+\]
+故（TN）不成立。
+\end{analysisproof}
+\lead{错误推理}原证明由 $M_{(f)}=0$ 推出有限个齐次生成元均被 $f$ 的某个幂消去。$M_{(f)}$ 只取局部化后的\textbf{零次部分}，并不是整个局部化 $M_f$；当 $\deg f>1$ 时，不能如此推断。
+\lead{修补}一种充分修订是补上 $S$ 由 $S_1$ 作为 $S_0$-代数生成的假设，同时保留相应有限性。此时在一次元素的局部化中可以将任意齐次元移到零次，以上障碍消失。也可改用对各移位相伴层的条件，但那是不同的陈述。
+
+\section{II--03：局部的消失界不自动成为全局消失界}
+\oldauditsrc{（3.4.2）的定义与（3.4.3）（ii），印刷第 59 页，PDF 第 56 页}
+\kind{A}{这里确实有一次生成假设；问题是底预概形未假设拟紧。}
+\lead{原文陈述}对任意 $Y$，$\SSS$ 由有限型 $\SSS_1$ 生成。若 $\MM$ 满足（TF），则其相伴层为零等价于（TN）。同页（3.4.2）把（TN）定义为存在\textbf{一个整数} $n_0$，使 $\MM_n=0$ 对所有 $n\ge n_0$ 成立。
+\begin{analysisproof}
+取
+\[
+Y=\coprod_{r\ge1}Y_r,\qquad Y_r=\Spec k,\qquad
+\SSS=\OO_Y[T],\quad\deg T=1.
+\]
+在第 $r$ 个开闭分支上定义
+\[
+\MM|_{Y_r}=k[T]/(T^r).
+\]
+由于分支不交，这些模拼成一个拟凝聚分次 $\SSS$-模。它由截面 $1$ 生成，即 $\SSS\twoheadrightarrow\MM$，所以满足（TF）。$\SSS_1$ 还是秩一自由 $\OO_Y$-模，满足原文的有限型条件。
+
+$\Proj_Y\SSS\simeq Y$。在每个分支上把 $T$ 变成单位以后，$k[T]/(T^r)$ 都变为零，所以 $\widetilde{\MM}=0$。但对每个 $n\ge0$，只要取 $r>n$，便有
+\[
+\MM_n|_{Y_r}=kT^n\ne0.
+\]
+所以不存在统一的 $n_0$，全局（TN）不成立。
+\end{analysisproof}
+\lead{失败原因}原证明说问题“在 $Y$ 上是局部的”。逐点／逐开集存在消失界确实是局部信息；\textbf{存在一个覆盖整个 $Y$ 的统一界并非局部性质}。
+\lead{修补}补上 $Y$ 拟紧，取有限仿射开覆盖并取各局部界的最大值；或者把结论改成“局部满足（TN）”。这里的反例与 II--02 不同：\textbf{本例已按次数 1 生成}，不能用同一个“次数 2”问题笼统解释两处。
+
+\section{II--04：Chow 引理的约化分支归约丢失结构}
+\oldauditsrc{（5.6.1）证明的 A 步，印刷第 106 页，PDF 第 103 页}
+\kind{B}{反例针对该归约步骤，不否定 Chow 引理本身。}
+\lead{原步骤}对不可约分支取“约化闭子预概形”，分别构造后再作不交并，并声称这样仍满足某个开集上与原 $X$ 同构的条件（ii）。
+\begin{analysisproof}
+令 $S=\Spec k$，
+\[
+X=\Spec\bigl(k[x,y,\epsilon]/(xy,\epsilon^2)\bigr).
+\]
+它是有限型仿射 $S$-概形，有两个不可约分支。记 $R=k[x,y]/(xy)$，则其环为
+\[
+R[\epsilon]/(\epsilon^2)=R\oplus\epsilon R.
+\]
+在每个点的局部环中，$\epsilon$ 都非零且平方为零。因此\textbf{每个非空开子预概形都不是约化的}。
+
+把两个分支改为约化结构后，以之为底构造的约化 $X_i'$ 的不交并仍约化。它到 $X$ 的态射因而经 $X_{\red}$ 分解，不可能在任何非空开集上与 $X$ 同构。原步骤不能据此得到（ii）。
+\end{analysisproof}
+\lead{为什么不是定理反例}上述 $X$ 本身仿射，取 $X'=X$、$f=\mathrm{id}_X$ 即满足所需性质。失败的是证明 A 步中“用约化分支替代仍保留开集结构”的说法。
+\lead{保留结构的修补办法}在诺特情形，令
+\[
+U_i=X\setminus\bigcup_{j\ne i}|X_j|.
+\]
+应取带有\textbf{原有结构}的 $U_i$ 在 $X$ 中的概形论闭包，而不是一律取约化分支。这些闭包的底空间为相应不可约分支，并在 $U_i$ 上仍与 $X$ 一致，故可据此进行保留幂零结构的归约。
+
+以上明确给出的是诺特情形的修补；原文另一组非诺特假设（b）下，仍须使用有相应存在性保障的保结构归约或另一个完整证明。本报告不把这句修补建议冒充两种情形全部细节的替代证明。
+
+\section{II--05：辅助环中的主理想不一定是真理想}
+\oldauditsrc{（7.1.7），印刷第 140 页，PDF 第 137 页}
+\kind{B}{生成元的选择需要增加一步。}
+\lead{原步骤}取局部环 $A$ 的极大理想的非零生成元 $x_1,\ldots,x_n$，令
+\[
+B=A[x_2/x_1,\ldots,x_n/x_1],
+\]
+然后选取包含 $x_1B$ 的极小素理想。但原文没有先保证 $x_1B\ne B$。
+\begin{analysisproof}
+取 $A=k[[t]]$，极大理想 $\mathfrak m=(t)$，以 $x_1=t^2$、$x_2=t$ 为一组非零生成元。原文没有要求该组生成元极小，此组合法。此时
+\[
+B=A[t/t^2]=A[1/t]=k((t)),
+\]
+所以 $x_1=t^2$ 在 $B$ 中为单位，$x_1B=B$，根本不存在所需的素理想。
+\end{analysisproof}
+\lead{补充选择}先用本节已有（7.1.2）取一个支配 $A$、分式域相同的赋值环 $V$。在有限多个生成元中，选择赋值\textbf{最小}的那个作 $x_1$。于是所有 $x_i/x_1\in V$，从而 $B\subset V$；同时 $x_1$ 属于 $V$ 的极大理想，不可能在 $B$ 中可逆。因此 $x_1B$ 为真理想，随后取极小素理想、应用主理想定理和 Krull--Akizuki 的步骤才有根据。
+
+此修补没有预先使用待证的\textbf{离散}赋值环存在性；先用的是（7.1.2）中一般赋值环的存在性。因此不存在循环论证。
+
+\section{II--06：赋值判据的备注必须继承拟紧性}
+\oldauditsrc{（7.3.9）（i），印刷第 145 页，PDF 第 142 页；对照（7.3.8）}
+\kind{H}{按前一定理的拟紧假设合读可成立；不能脱离该假设单独使用。}
+\lead{需要说明的条件}（7.3.8）对一般底预概形的版本明确要求态射拟紧且分离。紧接着（7.3.9）（i）只重新写出分离，并把测试环缩小到完备且剩余域代数闭的赋值环。独立引用此备注时仍必须保留拟紧性。
+\begin{analysisproof}
+取 $k=\mathbf Q$，
+\[
+f:X=\coprod_{n\ge1}\Spec k\longrightarrow\Spec k.
+\]
+该态射分离而不拟紧。对任意 $k$-赋值环 $V$ 及其分式域 $K$，一个 $k$-态射 $\Spec K\to X$ 选择某个分支，且唯一延拓为通过同一分支的 $\Spec V\to X$。确实，$\Spec V$ 连通，其像不可能同时落在两个不交开闭分支内。故连使用\textbf{所有}赋值环时，提升存在且唯一。
+
+但是对 $\mathbf A^1_k\to\Spec k$ 作基变换，得到
+\[
+\coprod_{n\ge1}\mathbf A^1_k\longrightarrow\mathbf A^1_k.
+\]
+在第 $n$ 个分支取闭点 $t=n$，所得并集在这个不交并中为闭集。其像为 $\{1,2,3,\ldots\}$，是仿射直线中无限而非全体的集合，不闭：非零一元多项式只能有有限多个根，而这集合又不含泛点。因此 $f$ 不是泛闭态射。
+\end{analysisproof}
+\lead{结论}不能由“分离＋赋值提升”脱离拟紧性推出泛闭。这个反例\textbf{不满足（7.3.8）的拟紧假设}，所以不能用来否定（7.3.8）。标注意在防止断章引用。
+
+\section{II--07：正次数部分为空会使齐次谱为空}
+\oldauditsrc{（8.1.4）（i），印刷第 153--154 页，PDF 第 150--151 页}
+\kind{A}{缺失非退化条件，属于边界情形的反例。}
+\lead{原文断言}对整预概形 $Y$ 上的一列拟凝聚分式理想 $\JJ_n$，若 $\JJ_0=\OO_Y$ 且满足乘法条件，则 $X=\Proj(\bigoplus_n\JJ_n)$ 为整预概形，且结构态射占优。此前（8.1.2）的定义只要求分式理想是有理函数层的有限型子模，没有排除零子模。
+\begin{analysisproof}
+令 $Y=\Spec k$，$\JJ_0=k$，且 $\JJ_n=0$ 对所有 $n>0$。所有乘法条件成立，各 $\JJ_n$ 都满足所列有限型条件。但
+\[
+\bigoplus_{n\ge0}\JJ_n=k
+\]
+集中在零次，正次数理想为零，故
+\[
+X=\Proj k=\varnothing.
+\]
+按第一卷中不可约必须非空的定义，空预概形不是整预概形；空态射也不占优到非空的 $Y$。
+\end{analysisproof}
+\lead{修补}增加至少存在一个 $n>0$ 使 $\JJ_n\ne0$ 的条件，排除上例。对该非零齐次元，其幂在整的有理函数环境中非零，才有非空的齐次谱及所需泛点。原命题（ii）已经明确写了待爆破的 $\JJ\ne0$；\textbf{不要将本条错误地延伸到（ii）的非零理想爆破结论。}
+
+\section{II--08：三处乘积态射的源靶印错}
+\oldauditsrc{（5.4.2）（iv）、（6.1.5）（iv）、（6.2.4）（iv），印刷第 100、111、115 页，PDF 第 97、108、112 页}
+\kind{C}{同型的源靶排印错误合为一组，三处分别标出。}
+三处都是先给出
+\[
+f:X\longrightarrow Y,\qquad g:X'\longrightarrow Y',
+\]
+随后却把 $f\times_Sg$ 的源靶写成 $X\times_SY\to X'\times_SY'$。第二处在公式中也使用相同的错位排列。
+
+按乘积态射定义，正确式应统一为
+\[
+\boxed{f\times_Sg:X\times_SX'\longrightarrow Y\times_SY'.}
+\]
+这是源靶类型错误；分别涉及固有态射、有限／整态射和拟有限态射的乘积稳定性。\textbf{修正源靶后，不能由此推出这些稳定性结论错误。}
+
+\chapter{避免误判，以及结论的适用范围}
+\section{已经排除的几类误判}
+\lead{Hom 与标量扩张}第一卷（0，1.5.5），印刷第 18 页，PDF 第 17 页的原页公式，张量积实际写在整个 $\Hom$ \textbf{之外}。它并不是声称任意非平坦基变换都与 $\Hom$ 交换。不能仅凭自动抽取后括号丢失的文字，把这条局部化公式列为漏洞。
+\lead{对角态射}I--04 补足局部闭性后命题成立；不是“对角态射不是浸入”的反例。
+\lead{分次模的两种问题}II--02 是高次生成的分次环导致零次局部化漏掉分量；II--03 则即使一次生成也会发生，是非拟紧底空间上缺少全局统一界。两者不能互相替代。
+\lead{赋值判据}II--06 的非拟紧例子仅说明备注的继承条件不可丢；没有否定明确写出拟紧性的（7.3.8）。
+\lead{历史术语}沿用底本的预概形／概形区别，而不是把 1960 年“概形”的分离性约定悄悄换成今天允许非分离的用法。正文中的不少旧称结论需在原约定下理解。
+
+\section{这些问题意味着什么，不意味着什么}
+存在明确反例意味着：\textbf{引用被标为 A 类的旧版条目时，必须核对修订假设或使用更正版本}。它不自动意味着依赖该条目的每一个后续结果都错。例如对可逆层使用非零截面张量积性质，不受 I--06 中非拟凝聚摩天楼层反例影响；一次生成且底空间拟紧时的消失结论，也不被 II--02、II--03 的反例否定。
+
+证明缺步的条目应补入缺失条件或论证。尤其不能把“已找到一个补证”说成“原文没有任何问题”，也不能把“原证明的一步不合法”说成“定理必然错误”。
+
+对于未标注的内容，本轮未提供完整正确性认证。引用涉及本报告未逐项复核的技术引理时，仍应对照其假设、原图及后续勘误。两份标注 PDF 与本报告共同构成\textbf{重点审阅结果}，不是对 EGA 全部数学内容的形式化证明证书。
+
+
+\chapter{底本与核验来源}
+\begin{enumerate}[label={[\arabic*]},leftmargin=3em]
+\item A. Grothendieck，与 J. Dieudonn\'e 合作撰写，\emph{Éléments de géométrie algébrique I: Le langage des schémas}，Publications mathématiques de l'IHÉS，4（1960）。本次使用用户上传的 \texttt{EGAI.pdf}，227 页。报告中的第一卷引文均指该上传版的印刷页／PDF 页。
+\item A. Grothendieck，与 J. Dieudonn\'e 合作撰写，\emph{Éléments de géométrie algébrique II: Étude globale élémentaire de quelques classes de morphismes}，Publications mathématiques de l'IHÉS，8（1961），5--222。本次使用用户上传的 \texttt{EGAII.pdf}，219 页。
+\item 上述第二卷书末 \emph{Errata et Addenda, Liste 1}，印刷第 217--222 页，PDF 第 214--219 页。I--05、I--07 的正式修订及 I--02 的后续态射约定均有此处原文支持。
+\item The Stacks Project，Section 26.21，Lemmas 26.21.1--26.21.2，Tag 01KH。仅用于对角态射补证的外部交叉核验；访问日期 2026 年 10 月 8 日。\url{https://stacks.math.columbia.edu/tag/01KH}
+\end{enumerate}
+\par\bigskip
+本报告给出的具体反例与反例核验是本次分析，不作为底本原文的引述。原文页内标注只定位问题；完整假设、计算、修补范围与限制，以本报告各条为准。
+
+% END reports/legacy_I_II.tex
+
+\end{document}

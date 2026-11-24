@@ -1,0 +1,16 @@
+{
+  "source_sha256": "23a20ef32fd16a1bd623c0c08ac080d04fc94f248de12133b713a19d6b0330d9",
+  "previous_project": "libfile_fde3_f-83284e24d97c819198d16632bcb141e5_49ac57203c0c81918f3630f0324dcb35",
+  "completed": "p34 It remains to explain through p35 xi generic in L before field-theoretic paragraph",
+  "next_source_page": 35,
+  "next_exact": "From the [(cunutesque?) Fr] point of view and in terms of field theory",
+  "status": "Independent increment, not merged into main compilation",
+  "unresolved": [
+    "Q/projective dual convention",
+    "missing xi subscripts in density sentence",
+    "dim f(X)=2 in proposed converse",
+    "8.8 missing hypotheses remain missing"
+  ],
+  "audit": "Independent bilingual check no material omission; generic point/fiber corrected to 泛点/泛纤维. Two-pass XeLaTeX, 4pp rendered checks passed.",
+  "concurrency_check": "Original EGA ninth edition20.5.15 then user continue08:55; latest math visible012 then continue. Library latest EGA branch8.18. No overlap observed, not a remote runtime guarantee."
+}

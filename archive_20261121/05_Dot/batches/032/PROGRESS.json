@@ -1,0 +1,16 @@
+{
+  "completed": "底本51页 This is a regret to No. 9 至52页 of a presentation (enforme)，两个原段",
+  "next": "第52页 It remains to prove the corollary announced of 8.8 in the case m = 1",
+  "previous_project": "libfile_fde3_f-b6dd0f6e738081919341366fd3053bb1_49ac57203c0c81918f3630f0324dcb35",
+  "source_sha256": "23a20ef32fd16a1bd623c0c08ac080d04fc94f248de12133b713a19d6b0330d9",
+  "merged_into_main": false,
+  "pdf_pages": 4,
+  "unresolved": [
+    "m=1推论证明未译",
+    "13.3与13.2证明未译完",
+    "8.8缺文未恢复",
+    "h sing/X sing记号不一致及p0疑字保留",
+    "归纳括注指代歧义",
+    "旧待核保持"
+  ]
+}

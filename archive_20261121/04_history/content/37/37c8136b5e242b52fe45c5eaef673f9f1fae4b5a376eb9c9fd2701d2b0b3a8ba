@@ -1,0 +1,10 @@
+# 第十七版·第五卷增补第三辑
+
+合订本 1158 页，译校核查报告 287 页；新正文与校注在合订 PDF 物理页 971–982。校验需 Python 3.11+。
+
+已连续合入批次 50–68，第三辑新收 63–68，至英译物理77页、法文物理159→158（印117→118）15.7末。下一英78、法物理161附录IV.17.16《光滑二次型》。正式第IV章未改，接续 EGAIV.1 物理221–223。
+
+- 成品：project/main.pdf、project/report.pdf。
+- 分章源码：project/main.tex、project/report.tex；独立入口：project/single.tex、project/report_single.tex。
+- 构建：bash project/build_supplement_III.sh（XeLaTeX 与补充 TeX 树，输出 project/build_III）。
+- 解压后运行 python verify_package.py，按 project/HANDOVER_STATE.json 接续。未译与文献限制见 project/PENDING_ISSUES.md。

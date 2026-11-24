@@ -1,0 +1,53 @@
+\documentclass[openany,fontset=fandol]{ctexbook}
+\usepackage{amsmath,amssymb}
+\usepackage[unicode,hidelinks]{hyperref}
+\setlength{\emergencystretch}{2em}
+\providecommand{\OO}{\mathcal O}
+\begin{document}
+\title{代数几何基础第五卷预备笔记\\光滑塔、预期余维与分歧概形}
+\author{据英译编辑稿续译，参校法文扫描}
+\date{2026年11月20日}
+\maketitle
+\chapter*{范围与接续}
+本批始于英72“It is necessary to see how we can generalize the same Proposition 7”，对读法110“Il faut voir comment…”；译至法111末的秩降余维附注及英73相应正文结束。下一起点为英73新标题“EGA V -- Section 17 / IV.17.15 Smooth Forms…”，对照法112“IV 17.15. Formes lisses…”。本稿独立，不改主稿。
+\chapter*{光滑塔中的分歧（续）}
+\enlargethispage{4\baselineskip}
+还须看一看怎样同样推广命题7。为此，假设$Y$本身在预概形$S$上光滑，相对维数为$N$。于是$X$在$S$上光滑，相对维数为$N+d$，其中$d$是$X$在$Y$上的相对维数。\footnote{英译把$d$说成$Y$的相对维数；法文跨行读作“其中$d$是〔$X$〕在$Y$上的相对维数”，对象在扫描右缘不清，但由$N$已为$Y/S$维数及前文$d=\operatorname{rank}\Omega^1_{X/Y}$可确定此订正。}
+沿用前面的记号，再假设$V''=\varnothing$，于是$W$是秩为$d-m+1$的局部自由模（当$m=1$时总是如此！）。
+
+最后，假设$X$的闭子预概形$V^0$和$V^1$都在$S$上光滑，并且在每一点都具有给定$d,N,m$时所设定的最小相对维数，也就是分别具有相对维数
+\[
+(N+d)-m,\qquad (N+d)-m-(d-m+1)=N-1.
+\]
+（从行文上说，最好直接给出这些数，或许改用逐纤维余维表述：$V^0$在$X$中的余维为$m$，$V^1$在$V^0$中的余维为$d-m+1$；再在备注中用“泛型”最小维数原则说明这样选取的理由。）\footnote{法110手写补明是$V^0$和$V^1$，英译重复印成$V^0$。光滑性及预期余维等式是独立假设，不由下文给出的行列式理想高度上界推出。}
+
+设定这些条件之后，应当验证：$u$相对于$Y$的超奇异点集$V^2$恰是$V^1\to Y$发生分歧的点集，并把这一点精确表述为$X$的闭子预概形的恒等式：
+\[
+V^2=\text{$V^1\to Y$的分歧子预概形}.
+\]
+我没有详细做过这个验证，但相信基本上可以沿用命题7之后的那种分解方法。
+
+\medskip
+\noindent\textbf{附注。}
+设$u:E\to F$是正则预概形$X$上局部自由模之间的同态，$E,F$的秩分别为$m,d$（$m\le d$）。若$Z$由$u$的秩至多为$m-1$的点组成，则$Z$的每个不可约分支在$X$中的余维至多为$d-m+1$。\footnote{法111和英73都写余维$\ge d-m+1$。该方向一般错误：在$X=\operatorname{Spec}k[t]$上取$\OO_X\to\OO_X^2$，$1\mapsto(t,0)$，则$Z=V(t)$的余维是$1$，而$d-m+1=2$。正文改为行列式理想高度定理给出的上界。参见 Eisenbud--Evans, \emph{A generalized principal ideal theorem}, Cor.~2.3（Eagon--Macaulay--Northcott），\href{https://doi.org/10.1017/S0027763000024740}{DOI 10.1017/S0027763000024740}；在每个分支的泛点局部化，取子式次数$m$。英译把这则附注提前，法111置于分歧段之后，本稿从法文次序。}
+
+\chapter*{译校说明（非原文）}
+\paragraph{分歧子概形的局部核对。}
+以下补证不是原稿的证明。取$V^1$上的一点。由于$V''=\varnothing$，在该点至少有一项$(m-1)$阶相对雅可比子式为单位。平凡化$E$并重排局部方程$u_1,\dots,u_m$后，可将$u_1,\dots,u_{m-1}$连同$r=d-m+1$个函数$t_1,\dots,t_r$取作$X/Y$的相对 étale 坐标：这些函数的相对微分在该点成基，对应到$\mathbb A^d_Y$的态射局部为 étale。令
+\[
+T=V(u_1,\dots,u_{m-1}),\qquad f=u_m|_T.
+\]
+则$T/Y$光滑，相对坐标为$t_i$，而$V^0=V(f)$是在$T$中所取的零概形。因前$m-1$行可化为单位块，顶次外幂的子式理想在$T$上恰给出余下相对偏导，故$V^1$在$T$内由理想
+\[
+(f,\partial_1 f,\dots,\partial_r f)
+\]
+定义。这是理想的等式，不仅是点集等式。
+
+对这个商取相对微分。$\mathrm df$在$V^1$上为零，剩余关系
+$\mathrm d(\partial_i f)=\sum_j(\partial_j\partial_i f)\,\mathrm dt_j$
+给出$\Omega^1_{V^1/Y}$的一个方阵表示，矩阵是 Hessian（是否取转置取决于矩阵约定）。因此，若用
+$\operatorname{Fitt}_0(\Omega^1_{V^1/Y})$
+定义源端分歧子概形，其局部理想是$\det(\partial_i\partial_j f)$生成的主理想。
+
+另一方面，二次初始项的极化在相同坐标中的矩阵也是该 Hessian：平方单项式$cT_i^2$在对角位置贡献$2c$，混合单项式$cT_iT_j$在对应两个非对角位置各贡献$c$。这里没有除以$2$，也没有把特征$2$的极化非退化改作二次零超曲面光滑。故该理想与$D$的零理想局部相同；Fitting 理想和线丛截面的零理想均可粘合，遂在这个明确的分歧结构下得到所拟的概形等式。
+\end{document}

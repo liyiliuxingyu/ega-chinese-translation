@@ -1,0 +1,12 @@
+{
+  "completed": "Proposition 8.13 all statement and proof paragraph",
+  "next": "Printed page 32 introductory sentence Combining 8.13, 8.5 and 8.6 before Corollary 8.14",
+  "source_sha256": "23a20ef32fd16a1bd623c0c08ac080d04fc94f248de12133b713a19d6b0330d9",
+  "cautions": [
+    "Ek notation unresolved",
+    "8.13(b) source illegible note retained",
+    "8.8 missing assumptions not restored",
+    "Not independently verified proof; not merged"
+  ],
+  "review": "Independent paragraph review passed; 4 pages rendered and visually checked; XeLaTeX twice; no missing glyph/overflow"
+}

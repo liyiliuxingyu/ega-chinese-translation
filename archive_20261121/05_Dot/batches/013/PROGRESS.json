@@ -1,0 +1,17 @@
+{
+  "source_sha256": "23a20ef32fd16a1bd623c0c08ac080d04fc94f248de12133b713a19d6b0330d9",
+  "previous_project": "libfile_fde3_f-c146e6a2dc8c81919d2be56d358ee0ad_49ac57203c0c81918f3630f0324dcb35",
+  "completed": "p36 section9 heading, 9.1, Proposition9.2, NB and original footnote52",
+  "next_source_page": 37,
+  "next_exact": "Proposition 9.3. Suppose that X is geometrically irreducible",
+  "status": "Independent incremental translation, not merged into main compilation",
+  "unresolved": [
+    "8.8 and (ii bis) hypotheses missing; 9.2 not independently established",
+    "Previous Q dual convention, dimension criterion and conical wording remain unresolved"
+  ],
+  "verified_corrections": [
+    "p_* O_P(n) isomorphic to Sym^n(E), based on section1 locally free E and quotient convention",
+    "hyperplane parameter xi lies in P(n)^vee not P(n)"
+  ],
+  "concurrency_check": "Original EGA 2026-11-15 12:32 UTC self-report edition11 through21.4.8,next21.5; math latest visible012 then continue. No observed overlap with V9.1–9.2; not a remote execution guarantee."
+}

@@ -1,0 +1,4 @@
+法文EGA5.pdf 171页 SHA256 24cf8204184b58b18a46e5f63ecc36d6e791b3c8c96a09daac93de96ebd8e830；英稿112页 SHA256 23a20ef32fd16a1bd623c0c08ac080d04fc94f248de12133b713a19d6b0330d9。英稿 https://webusers.imj-prg.fr/~leila.schneps/grothendieckcircle/EGA/EGA5trans.pdf
+正式IV.3 PDF SHA256 509ff2bcbadd26fbc7566e6fcd79406eefbe5a8dfc8c984f4703c51f8d7e420f。物理178/179合印179/180；(x)几何整纤维开、(xi)无嵌入关联素循环及总重数界，并非容许坏集版本。https://www.numdam.org/item/PMIHES_1966__28__5_0/
+坏集定义在局部性质下才以闭包维数解释。含泛点再用可构造性；泛截面维数至多降一（可能空），正则性另验。7.2 U在S，分初始s与变动t；闭坏集固有且纤维维数上半连续；相对参数平坦经换底。原7.2未重述4.2(v)的特征零或非分歧，纯p次幂覆盖反例取m=0即失败。7.3保留或、逐分支维数，几何整整体性另记；叠改与边缘不可读部分不猜。法28末至29开头整段划销，未并入7.3证明。
+XeLaTeX两遍，末日志无未定义引用、缺字与溢出；成品各页渲染目检；底本摘页100dpi像素同；ZIP CRC、独立实解SHA及包内外PDF/TeX同。

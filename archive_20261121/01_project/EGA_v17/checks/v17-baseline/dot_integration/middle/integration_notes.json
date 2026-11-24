@@ -1,0 +1,1015 @@
+{
+  "scope": "EGAVaiello.pdf pp43-53 §12 through §13.4(e), excluding §14 heading",
+  "batches": [
+    {
+      "order": 1,
+      "batch": "12节关联概形",
+      "source_tex": "/workspace/scratch/a886fd56dd2f/unpacked/dot_batches/EGA第五卷_12节关联概形_续译工程/EGA第五卷_12节关联概形_校订续译.tex",
+      "source_sha256": "4db1b0865036e71bc89fc83473ec7ca5f40c818026e783627660424e82b96e22",
+      "source_bytes": 5987,
+      "progress": {
+        "branch": "EGA V independent",
+        "completed": "p43 section12 title and Complements to notations through p44 first paragraph ending or rather of P_Sprime (linear sections definition)",
+        "next": "p44 I use [or profit from] this opportunity for a notational self-criticism",
+        "previous_project": "libfile_fde3_f-774a712df5e48191b08dafd6a8659dc8_49ac57203c0c81918f3630f0324dcb35",
+        "merged": false,
+        "source_sha256": "23a20ef32fd16a1bd623c0c08ac080d04fc94f248de12133b713a19d6b0330d9",
+        "unresolved": [
+          "8.8 and9.5 source gaps",
+          "section12 remainder not translated",
+          "not a full independent mathematical audit"
+        ]
+      },
+      "audit": "Source pp43-44 visually read. Quotient convention cross-checked with https://stacks.math.columbia.edu/tag/01OA. Dual-map target, universal quotient, codimension and base indices checked directly using finite locally free duality. Two XeLaTeX runs passed; no warnings/overfull/underfull/missing/undefined lines. All five pages rendered at1300px and visually inspected. Original conversation latest completion2026-11-16 05:14 UTC: version13,1028pages, through22.3.4,next22.4; no overlapping V section12 scope shown. Original live runtime not determined. Previous ZIP identity,size782102,CRC and source SHA matched.\n",
+      "body_chars": 2985
+    },
+    {
+      "order": 2,
+      "batch": "12节纤维结构",
+      "source_tex": "/workspace/scratch/a886fd56dd2f/unpacked/dot_batches/EGA第五卷_12节纤维结构_续译工程/EGA第五卷_12节纤维结构_校订续译.tex",
+      "source_sha256": "76e06e0fa9ff2353d5735a0521629e97b3a9c59069bb01e24020d044e7608e11",
+      "source_bytes": 5509,
+      "progress": {
+        "branch": "EGA V independent",
+        "completed": "p44 four paragraphs from I use [or profit from] this opportunity through X^(m) over Gr^m (before Proposition2.1)",
+        "next": "p44 The Proposition 2.1 [se transpose Fr] translates (?) without change",
+        "previous_project": "libfile_fde3_f-0cddf7a6afa081918bc232926a83ad62_49ac57203c0c81918f3630f0324dcb35",
+        "merged": false,
+        "source_sha256": "23a20ef32fd16a1bd623c0c08ac080d04fc94f248de12133b713a19d6b0330d9",
+        "unresolved": [
+          "8.8 and9.5 source gaps",
+          "remainder section12 not translated",
+          "iteration notation not an asserted canonical isomorphism"
+        ]
+      },
+      "audit": "Source p44 visually inspected. Four consecutive paragraphs translated. Rank calculation: rankE=r, rankF=r-1, fiber dimension=m(r-1-m); range0<=m<=r-1. Iteration equality treated as author notational proposal, not theorem. Prior project downloaded from Library, full ZIP CRC passed. Source SHA unchanged. Current original chat still version13 through22.3.4, independent scope no overlap shown; live runtime unknown. Workspace lost prior Chinese TeX support: official CTAN packages fetched into local ega09/texmf, no system settings changed. First compile rejected newer ctex/old expl3; local latex/l3 dependencies and format updated; final two compilations succeeded. Final nameref label-definition warning retained; no missing glyph, undefined reference, overfull or underfull diagnostics. All4pages rendered and visually inspected. Reference https://stacks.math.columbia.edu/tag/089R for quotient/chart convention; no global independent proof certification.\n",
+      "body_chars": 2172
+    },
+    {
+      "order": 3,
+      "batch": "12节一般截面推广",
+      "source_tex": "/workspace/scratch/a886fd56dd2f/unpacked/dot_batches/EGA第五卷_12节一般截面推广_续译工程/EGA第五卷_12节一般截面推广_校订续译.tex",
+      "source_sha256": "b083faab147c7cafa0c98b6dbb869e39c21bdd614c42cc2d0d02e912abc8b6fc",
+      "source_bytes": 5391,
+      "progress": {
+        "work": "EGA V 独立校订续译",
+        "source_sha256": "23a20ef32fd16a1bd623c0c08ac080d04fc94f248de12133b713a19d6b0330d9",
+        "completed": "底本第44页 The Proposition 2.1 起，至第45页 Analogous change in 4.4 b) 止，八段",
+        "next": "底本第45页 [Le laius 5.1 Fr or Latin 67] goes as such",
+        "previous_project": "libfile_fde3_f-669a2052e230819186aac174f9e19465_49ac57203c0c81918f3630f0324dcb35",
+        "merged_into_main": false,
+        "pdf_pages": 4,
+        "unresolved": [
+          "4.2/4.3 条件 m−1 或 m+1，底本自标字迹不清",
+          "8.8、9.5 等既有缺文未解决"
+        ],
+        "format": "ctexbook default Fandol"
+      },
+      "audit": "复核：原会话最新可见主稿为 2026-11-16 05:14:17 的第十三版；Library 最新独立前批为 10:37:05 的第12节纤维结构稿。本批顺接其接点，无区间重叠。\n对照底本44、45页图像逐段翻译，并检查第7至10页中2.2、2.6、2.7、2.12语境。\n正文将 dim x 明确为点的闭包维数，脚注保留原式和理由。保留推广指示、原省略号和不清楚的 m−1/m+1 条件，不补造定理或证明。\nXeLaTeX 双遍编译成功，无缺字、未定义、Overfull 或 Underfull 警告。逐页检查最终4页，修正原先末注孤悬第五页问题。\n",
+      "body_chars": 1975
+    },
+    {
+      "order": 4,
+      "batch": "12节正则截面",
+      "source_tex": "/workspace/scratch/a886fd56dd2f/unpacked/dot_batches/EGA第五卷_12节正则截面_续译工程/EGA第五卷_12节正则截面_校订续译.tex",
+      "source_sha256": "416f5d7cb0095455889accb5678c45916b38d8955f383f42ef996e48cd11c2c7",
+      "source_bytes": 3461,
+      "progress": {
+        "completed": "底本第45页末四段，自 [Le laius 5.1 Fr or Latin 67] goes as such 至 so does 5.7",
+        "next": "底本第46页 Proposition 6.1",
+        "previous_project": "libfile_fde3_f-17e1babbaf108191bbc0d0d7fc04f7b6_49ac57203c0c81918f3630f0324dcb35",
+        "source_sha256": "23a20ef32fd16a1bd623c0c08ac080d04fc94f248de12133b713a19d6b0330d9",
+        "merged_into_main": false,
+        "pdf_pages": 4,
+        "unresolved": [
+          "此前8.8、9.5等缺文",
+          "此前4.2/4.3的m−1或m+1歧义",
+          "本段一般正则序列基无关性的证明未展开"
+        ]
+      },
+      "audit": "核原会话与Library最新独立进度，没有重复推进。Library下载认证401后，采用主线程提供的旧工程中底本，677332字节；SHA256与前批一致。核对第45页图像，并读第5节原文以核纤维记号。秩n/m统一与Fs下标整理均保留原文和理由于脚注。未补造未给出的维数判据或证明。双遍XeLaTeX成功，无缺字、溢出、未定义警告；4页逐页检查，重新分页避免脚注断至末页。",
+      "body_chars": 1319
+    },
+    {
+      "order": 5,
+      "batch": "12节维数条件与推广计划",
+      "source_tex": "/workspace/scratch/a886fd56dd2f/unpacked/dot_batches/EGA第五卷_12节维数条件与推广计划_续译工程/EGA第五卷_12节维数条件与推广计划_校订续译.tex",
+      "source_sha256": "ae9474892ca1f54877ed21ccdd76d08877c9e180a7b7397d1dd5675aee7fcf1a",
+      "source_bytes": 4268,
+      "progress": {
+        "completed": "底本第46页首五段：Proposition 6.1 至 the statements that we could perhaps give in this connection (a ce proper)",
+        "next": "第46页 Let us again assume that f: X → P is unramified",
+        "previous_project": "libfile_fde3_f-522b87973aa48191acaf7fdfd5941718_49ac57203c0c81918f3630f0324dcb35",
+        "source_sha256": "23a20ef32fd16a1bd623c0c08ac080d04fc94f248de12133b713a19d6b0330d9",
+        "merged_into_main": false,
+        "pdf_pages": 4,
+        "unresolved": [
+          "8.2维数条件之后底本标注难辨",
+          "此前8.8、9.5等缺文",
+          "此前4.2/4.3的m−1或m+1歧义"
+        ]
+      },
+      "audit": "核原会话仍为第十三版主稿；Library最新独立稿为第12节正则截面，与本地前批进度一致。本批从下一段接续，无重叠。核底本46页图像，并核前文8.2中dim X−1写法。本段指示中dim X原写法留脚注，目标公式的难辨标记保留。8.6在相邻两段中的不同安排照原文译出，未擅自统一。双遍编译，无缺字、未定义与排版溢出警告；四页检查。所译为原作者推广计划，不是各命题完整陈述或证明。",
+      "body_chars": 1466
+    },
+    {
+      "order": 6,
+      "batch": "12节奇异关联簇",
+      "source_tex": "/workspace/scratch/a886fd56dd2f/unpacked/dot_batches/EGA第五卷_12节奇异关联簇_续译工程/EGA第五卷_12节奇异关联簇_校订续译.tex",
+      "source_sha256": "05b11edba58c1d40df1ebe7eb0e63de8682df3bd9f578605982fbb2e017f0d8f",
+      "source_bytes": 4207,
+      "progress": {
+        "completed": "底本46—47页一长段，自 Let us again assume that 至 a geometric paragraph devoted to grassmanians；含原脚注61、62",
+        "next": "第47页 If we also define V^(k)",
+        "previous_project": "libfile_fde3_f-fe523dba97dc819184fb25f5fdc2e942_49ac57203c0c81918f3630f0324dcb35",
+        "source_sha256": "23a20ef32fd16a1bd623c0c08ac080d04fc94f248de12133b713a19d6b0330d9",
+        "merged_into_main": false,
+        "pdf_pages": 4,
+        "unresolved": [
+          "loneve及其前后句意残缺",
+          "V^1与V撇的记号关系未明确重定义",
+          "过滤层的含义及补篇第16页引理引用未定位",
+          "此前缺文及歧义仍保留"
+        ]
+      },
+      "audit": "已核原会话和最新Library独立工程，与本地前批接点一致；无范围重叠。对照底本46、47页图像，完整译出跨页长段，分成四段便于阅读。纠正文本抽取对撇号的误识，保留原稿V^1/V撇切换、两处难辨标记、loneve残词、试探性判断和原脚注61/62。不补造闭包关系或光滑性证明。XeLaTeX双遍编译成功，4页版面检查，无缺字、未定义、溢出警告。",
+      "body_chars": 1566
+    },
+    {
+      "order": 7,
+      "batch": "12节退化层维数",
+      "source_tex": "/workspace/scratch/a886fd56dd2f/unpacked/dot_batches/EGA第五卷_12节退化层维数_续译工程/EGA第五卷_12节退化层维数_校订续译.tex",
+      "source_sha256": "2bdb76b3c9428ba1dd64d14a14b81889fb357d00d1661aa9be1759c34cf4b846",
+      "source_bytes": 4287,
+      "progress": {
+        "completed": "底本47页后四段，If we also define V^(k) 至 I could give a more precise statement upon request",
+        "next": "第48页 Once we grant this",
+        "previous_project": "libfile_fde3_f-d259a9a4a03c8191a18e1e6e67a96d8d_49ac57203c0c81918f3630f0324dcb35",
+        "source_sha256": "23a20ef32fd16a1bd623c0c08ac080d04fc94f248de12133b713a19d6b0330d9",
+        "merged_into_main": false,
+        "pdf_pages": 4,
+        "unresolved": [
+          "维数公式的完整适用范围未说明",
+          "Grass后及it implies后难辨标记",
+          "第16段补篇引用及前批过滤光滑性验证未完成",
+          "此前缺文及歧义继续保留"
+        ]
+      },
+      "audit": "核原EGA会话仍为第十三版，math会话最新完成017，未见与本段交叉改动。核Library最新EGA独立工程为奇异关联簇，接点与本地一致，无重叠。逐段对照底本47页图像。保留V撇、V双撇、V上标2与V括号2的区分；k=2代入得n−m+4，仅为算术核对，不声称完整证明。保留原稿难辨标记及试探语气，不补造适用范围或8.7c精确陈述。4页逐页检查，双遍编译无缺字、未定义或溢出警告。",
+      "body_chars": 2094
+    },
+    {
+      "order": 8,
+      "batch": "12节线性截面族",
+      "source_tex": "/workspace/scratch/a886fd56dd2f/unpacked/dot_batches/EGA第五卷_12节线性截面族_续译工程/EGA第五卷_12节线性截面族_校订续译.tex",
+      "source_sha256": "71aa279bd6b79795f8141eaf76cd262a58180bcedf5147d49d2b49b7f1ef0daa",
+      "source_bytes": 4897,
+      "progress": {
+        "completed": "底本48页前五段，Once we grant this 至 the subscheme Z^1 corresponding to X^(m) supersingular is nowhere dense",
+        "next": "第48页 It remains, therefore, to prove a lemma",
+        "previous_project": "libfile_fde3_f-13fee13fb64081918cdae495f00db6ff_49ac57203c0c81918f3630f0324dcb35",
+        "source_sha256": "23a20ef32fd16a1bd623c0c08ac080d04fc94f248de12133b713a19d6b0330d9",
+        "merged_into_main": false,
+        "pdf_pages": 4,
+        "unresolved": [
+          "S=Spec缺失所取谱对象",
+          "全局T几何不可约性后的K(ξ)基域表述待核",
+          "n同时为维数和Veronese指标，未补定其关系",
+          "此前缺文及补篇验证继续保留"
+        ]
+      },
+      "audit": "核EGA原会话仍第十三版、OpenAI math原会话仍017；Library最新独立工程为退化层维数，接点与本地一致，没有范围重叠。对照第48页图像逐段翻译前五段，末长段按论述层次分排。依据同段明确纤维记号补足下标；F/f及K/k整理均附原写法与理由。Spec对象缺失及全局T基域疑点不擅补。后补的未分歧和Veronese替换假设完整保留。双遍编译，4页逐页检查，无缺字、未定义及溢出警告。",
+      "body_chars": 1796
+    },
+    {
+      "order": 9,
+      "batch": "12节末与13节定义",
+      "source_tex": "/workspace/scratch/a886fd56dd2f/unpacked/dot_batches/EGA第五卷_12节末与13节定义_续译工程/EGA第五卷_12节末与13节定义_校订续译.tex",
+      "source_sha256": "c015be64ee4be922698065e7997e1b0c5ad5de9a492dd0978414a6b2e64055b5",
+      "source_bytes": 3015,
+      "progress": {
+        "completed": "底本48页末 It remains, therefore, to prove a lemma 起至49页定义13.1全文及原脚注63",
+        "next": "第49页 Theorem 13.2 (M. Artin)",
+        "previous_project": "libfile_fde3_f-d77ba3e54554819183f73a3022c6bc8a_49ac57203c0c81918f3630f0324dcb35",
+        "source_sha256": "23a20ef32fd16a1bd623c0c08ac080d04fc94f248de12133b713a19d6b0330d9",
+        "merged_into_main": false,
+        "pdf_pages": 4,
+        "unresolved": [
+          "12节末几何不可约性引理残句及itou标记",
+          "末句Z足够一般未擅改C",
+          "Milne与SGA IV具体引用未定位",
+          "此前缺文及待核保留"
+        ]
+      },
+      "audit": "核两原会话：EGA新增继续请求尚无可见答复，math已到018；已报主线程。最新独立Library仍为线性截面族，区间顺接。逐段核48页末、49页图像；Q(Z)依本句定义和前后写法改Q(C)，脚注存原式与理由。其余残句不补；定义13.1忠实保留平展、满射、恒定次数以及几何连通一维纤维。原脚注63完整译入，空复合仅在译注援引紧接原稿说明。4页逐页检查，双遍编译无缺字、未定义或溢出警告。",
+      "body_chars": 1149
+    },
+    {
+      "order": 10,
+      "batch": "13.2归约",
+      "source_tex": "/workspace/scratch/a886fd56dd2f/unpacked/dot_batches/EGA第五卷_13.2归约_续译工程/EGA第五卷_13.2归约_校订续译.tex",
+      "source_sha256": "de983faef363680872db2b888bd7a285f5eca26e001ceb1941cd487f5cd2ab05",
+      "source_bytes": 4170,
+      "progress": {
+        "completed": "底本49页定理13.2陈述及后三段证明，至 geometrically normal over k",
+        "next": "第50页 The benefit of this hypothesis",
+        "previous_project": "libfile_fde3_f-e3a187405f2c8191bb6049e56ca84c2a_49ac57203c0c81918f3630f0324dcb35",
+        "source_sha256": "23a20ef32fd16a1bd623c0c08ac080d04fc94f248de12133b713a19d6b0330d9",
+        "merged_into_main": false,
+        "pdf_pages": 4,
+        "unresolved": [
+          "13.2证明未译完",
+          "句末字母难辨标记",
+          "曲线与正规化归约的省略步骤及引用",
+          "此前待核保留"
+        ]
+      },
+      "audit": "核EGA原会话现第十四版至22.5.10，math为018；独立Library最新仍12节末与13节定义，范围无重叠。核49页图像，译13.2及证明初段，保留原脚注64/65。elementary据定理和归纳语境校为polyelementary，保留原写法与理由；其他略写作译注，不伪装原文补证。4页逐页检查，双遍编译无缺字、未定义或溢出警告。",
+      "body_chars": 1485
+    },
+    {
+      "order": 11,
+      "batch": "13.3陈述",
+      "source_tex": "/workspace/scratch/a886fd56dd2f/unpacked/dot_batches/EGA第五卷_13.3陈述_续译工程/EGA第五卷_13.3陈述_校订续译.tex",
+      "source_sha256": "3376b2a0316e6da711b3134bb5ae281a8822803baf7ecc00ab5fcb1c7b3d9feb",
+      "source_bytes": 3900,
+      "progress": {
+        "completed": "底本50页 The benefit of this hypothesis 起，三准备段、引理13.3及随后括注和归约说明，止 allowing an elementary morphism U→V；含脚注66",
+        "next": "第50页 There exists a linar subvariety C of L",
+        "previous_project": "libfile_fde3_f-801931b6bb08819198d45bc803ac2d81_49ac57203c0c81918f3630f0324dcb35",
+        "source_sha256": "23a20ef32fd16a1bd623c0c08ac080d04fc94f248de12133b713a19d6b0330d9",
+        "merged_into_main": false,
+        "pdf_pages": 4,
+        "unresolved": [
+          "any与some?量词疑点",
+          "定理13.2与引理13.3证明尚未译完",
+          "此前缺文继续保留"
+        ]
+      },
+      "audit": "核EGA原会话第十四版、math原会话018，独立Library最新13.2归约，与本地接点一致。对照50页图像逐段翻译；包含号依相邻段校正，次数改d避免与维数n混用；原写法与理由附脚注，any/some?不强行判定。核原脚注66。双遍编译与4页逐页检查，无缺字、未定义或溢出警告。",
+      "body_chars": 1502
+    },
+    {
+      "order": 12,
+      "batch": "13.2初等邻域构造",
+      "source_tex": "/workspace/scratch/a886fd56dd2f/unpacked/dot_batches/EGA第五卷_13.2初等邻域构造_续译工程/EGA第五卷_13.2初等邻域构造_校订续译.tex",
+      "source_sha256": "cc0b44c8f61c0862424ba98e015d963f3b38a679cd01b08c273608c32ad11307",
+      "source_bytes": 4974,
+      "progress": {
+        "completed": "底本50—51页跨页长段，There exists a linar subvariety C of L 至 This is the desired neighborhood of x contained in X−Y",
+        "next": "第51页 It remains only to prove Lemma 13.3",
+        "previous_project": "libfile_fde3_f-ee7fb87af2cc81918d617377ee9beab3_49ac57203c0c81918f3630f0324dcb35",
+        "source_sha256": "23a20ef32fd16a1bd623c0c08ac080d04fc94f248de12133b713a19d6b0330d9",
+        "merged_into_main": false,
+        "pdf_pages": 4,
+        "unresolved": [
+          "C横截选择步骤未展开",
+          "引理陈述遗漏x∈L0，后文证明使用该条件",
+          "Bertini连通性引用范围未展开",
+          "引理13.3证明未译",
+          "此前待核保留"
+        ]
+      },
+      "audit": "核原EGA已第十五版、math018；Library独立分支最新13.3陈述，接点一致。对照50、51页图像。L/L0、ξ/ξ0、第三个逆像漏字、邻域对象错置、ZQ/TQ及末句未删边界按同段语境整理，原文和理由全部列脚注。C的横截性、x∈L0依赖和连通性引用略写明确标示，未假称补证。4页逐页检查，双遍编译无缺字、未定义或溢出警告。",
+      "body_chars": 2100
+    },
+    {
+      "order": 13,
+      "batch": "13.3证明归约",
+      "source_tex": "/workspace/scratch/a886fd56dd2f/unpacked/dot_batches/EGA第五卷_13.3证明归约_续译工程/EGA第五卷_13.3证明归约_校订续译.tex",
+      "source_sha256": "a814d857f3fff278b30459906e4a8a0b54512dd92061ff100eabf9de1cb877d1",
+      "source_bytes": 3883,
+      "progress": {
+        "completed": "底本51页 It remains only to prove Lemma 13.3 起整段，至 an integer ≥ 2",
+        "next": "第51页 This is a regret to No. 9",
+        "previous_project": "libfile_fde3_f-6ea0ac6447ac8191af2a886003dd7c64_49ac57203c0c81918f3630f0324dcb35",
+        "source_sha256": "23a20ef32fd16a1bd623c0c08ac080d04fc94f248de12133b713a19d6b0330d9",
+        "merged_into_main": false,
+        "pdf_pages": 4,
+        "unresolved": [
+          "一般截面的基域措辞待核",
+          "Q_n与Phi_n符号不一致",
+          "维数和Veronese指标n重名",
+          "13.3与13.2证明尚未译完",
+          "旧缺文及待核事项保持"
+        ]
+      },
+      "audit": "核对原主会话最新第十五版接点为第0章§23，未见本批重叠。逐段对照底本51页文本和页面；没有独立证明数学结论。XeLaTeX最终双遍编译通过，4页逐页查看；无Overfull、Underfull、缺字或未定义引用。保留字体Script提示。初次系统格式缺失导致失败，改用既存本地TeX配置后编译成功。",
+      "body_chars": 1403
+    },
+    {
+      "order": 14,
+      "batch": "13.3一般截面归纳",
+      "source_tex": "/workspace/scratch/a886fd56dd2f/unpacked/dot_batches/EGA第五卷_13.3一般截面归纳_续译工程/EGA第五卷_13.3一般截面归纳_校订续译.tex",
+      "source_sha256": "2fc10527e50375e75d4688252e69da38e9391ccfb8b78fdb5c0658ff40f2bf79",
+      "source_bytes": 4688,
+      "progress": {
+        "completed": "底本51页 This is a regret to No. 9 至52页 of a presentation (enforme)，两个原段",
+        "next": "第52页 It remains to prove the corollary announced of 8.8 in the case m = 1",
+        "previous_project": "libfile_fde3_f-b6dd0f6e738081919341366fd3053bb1_49ac57203c0c81918f3630f0324dcb35",
+        "source_sha256": "23a20ef32fd16a1bd623c0c08ac080d04fc94f248de12133b713a19d6b0330d9",
+        "merged_into_main": false,
+        "pdf_pages": 4,
+        "unresolved": [
+          "m=1推论证明未译",
+          "13.3与13.2证明未译完",
+          "8.8缺文未恢复",
+          "h sing/X sing记号不一致及p0疑字保留",
+          "归纳括注指代歧义",
+          "旧待核保持"
+        ]
+      },
+      "audit": "原会话最新11:40 UTC自报第十六版1060页、第0章§23译完，下一IV章，未见本批V卷重叠。已恢复最新Library前批工程并核接续点。底本51—52页文本及页面对照，最终XeLaTeX双遍通过，4页逐页查看，无Overfull、Underfull、缺字、未定义引用。保留字体Script提示；本批未独立审定数学结论，不以8.8引用表示缺文已恢复。",
+      "body_chars": 1727
+    },
+    {
+      "order": 15,
+      "batch": "13.3超平面情形证明",
+      "source_tex": "/workspace/scratch/a886fd56dd2f/unpacked/dot_batches/EGA第五卷_13.3超平面情形证明_续译工程/EGA第五卷_13.3超平面情形证明_校订续译.tex",
+      "source_sha256": "7b2ee65dbd3a00d5e1c6fb527f410a63b2bb850f45f9305fc5b4a8ce3042fdd3",
+      "source_bytes": 4793,
+      "progress": {
+        "completed": "底本52页 It remains to prove the corollary announced of 8.8 in the case m = 1 至 this proves our regret, thus 13.2，原证明收尾整段",
+        "next": "第52页 N.B. The reasoning does not go through",
+        "previous_project": "libfile_fde3_f-f4f852e6eb4081918d4a59404cf2ab5a_49ac57203c0c81918f3630f0324dcb35",
+        "source_sha256": "23a20ef32fd16a1bd623c0c08ac080d04fc94f248de12133b713a19d6b0330d9",
+        "merged_into_main": false,
+        "pdf_pages": 4,
+        "unresolved": [
+          "8.8缺文与8.7(c)残缺未恢复",
+          "一般平展与对偶论证适用范围未独立验证",
+          "X sing/h sing记号不一致保留",
+          "后续NB尚未译",
+          "旧待核保持"
+        ]
+      },
+      "audit": "原会话最新仍自报第十六版1060页、下一第IV章，未见本批V卷重叠。实际恢复最新Library前批工程并读PROGRESS确认接点。底本52页文字和页面对照，段落完整。最终XeLaTeX双遍通过，4页逐页查看，无Overfull、Underfull、缺字、未定义引用，字体Script提示保留。原证明收尾已译，不代表证明依赖链已独立审定。连接词和f(X)校订有原文与依据；缺文不补造。",
+      "body_chars": 1758
+    },
+    {
+      "order": 16,
+      "batch": "13.4有限域与连通性",
+      "source_tex": "/workspace/scratch/a886fd56dd2f/unpacked/dot_batches/EGA第五卷_13.4有限域与连通性_续译工程/EGA第五卷_13.4有限域与连通性_校订续译.tex",
+      "source_sha256": "536434aad8cedf4a1974ca068579c7baebf5d073be4ae315c2d8f5d6c728e98c",
+      "source_bytes": 4359,
+      "progress": {
+        "completed": "底本第52页 N.B. The reasoning does not go through 起附记及注13.4(a)，接续第53页13.4(b)全文",
+        "next": "第53页13.4(c): To be possibly included in the statement of 13.2",
+        "previous_project": "libfile_fde3_f-b0d3f92c61688191bfdd8535dcd397ff_49ac57203c0c81918f3630f0324dcb35",
+        "source_sha256": "23a20ef32fd16a1bd623c0c08ac080d04fc94f248de12133b713a19d6b0330d9",
+        "merged_into_main": false,
+        "pdf_pages": 4,
+        "unresolved": [
+          "附记否定和条件连接不明，原句及问号保留，未补造结论",
+          "C与C撇的确切关系未明",
+          "有限域推广未独立验证，保留推测语气",
+          "8.8缺文及8.7(c)残缺、全部旧待核保持"
+        ]
+      },
+      "audit": "已核自动任务当前定义、原会话最新进展与上批工程PROGRESS，未发现第五卷本段重复。\n已逐项参照底本第52—53页。正文保存附记残句状态，脚注列原文和校订理由；未将作者推测提升为定理。\nXeLaTeX两次编译成功，4页；第二遍日志无Missing character、Overfull、Underfull、Warning。最终4页已逐页渲染目视检视，无裁切或遮挡。\n原会话最新合订本为第16版1060页的第零章至§23，非本第五卷工程。\n",
+      "body_chars": 1581
+    },
+    {
+      "order": 17,
+      "batch": "13.4有限点集邻域",
+      "source_tex": "/workspace/scratch/a886fd56dd2f/unpacked/dot_batches/EGA第五卷_13.4有限点集邻域_续译工程/EGA第五卷_13.4有限点集邻域_校订续译.tex",
+      "source_sha256": "2d2a1e910613c34df21af18c0b345bc7e6ed0173d6257ff761969eea62d2a183",
+      "source_bytes": 3433,
+      "progress": {
+        "completed": "底本第53页注13.4(c)全文，含编排建议、有限点集邻域断言及证明说明",
+        "next": "第53页13.4(d): By proceeding as explained in 7.1",
+        "previous_project": "libfile_fde3_f-7331e5dad08c81919eea1f8f76b80df6_49ac57203c0c81918f3630f0324dcb35",
+        "source_sha256": "23a20ef32fd16a1bd623c0c08ac080d04fc94f248de12133b713a19d6b0330d9",
+        "merged_into_main": false,
+        "pdf_pages": 3,
+        "unresolved": [
+          "原稿七问号缺词未恢复",
+          "闭点与k-有理点的过渡未展开，未补造下降证明",
+          "推广断言及定理13.2未独立验证",
+          "8.8缺文、8.7(c)残缺和全部旧待核保持"
+        ]
+      },
+      "audit": "已核自动任务当前定义、原会话最新进展与上批工程PROGRESS，未发现第五卷本段重复。原会话仍自报第16版1060页，第0章§23完成。\n已核底本第53页图像和文本，并对照第50—51页13.3上下文。正文两处余维数已按线性包关系校订，原文与理由在脚注；闭点与有理点过渡及缺词仍待核。\nXeLaTeX两次编译成功，3页；第二遍日志无Missing character、Overfull、Underfull、Warning。最终3页已逐页渲染目视检视，无裁切或遮挡。\n",
+      "body_chars": 1186
+    },
+    {
+      "order": 18,
+      "batch": "13.4一般基底",
+      "source_tex": "/workspace/scratch/a886fd56dd2f/unpacked/dot_batches/EGA第五卷_13.4一般基底_续译工程/EGA第五卷_13.4一般基底_校订续译.tex",
+      "source_sha256": "46c7f159b8987d395817e0b4b60947395d2c2ff3de9e880b8aed17a7026670eb",
+      "source_bytes": 3580,
+      "progress": {
+        "completed": "底本第53页注13.4(d)全部可辨文字和公式",
+        "next": "第53页13.4(e): One of the reasons why 13.2 is interesting",
+        "previous_project": "libfile_fde3_f-0d28d9c9ae508191bca20a484cdd8351_49ac57203c0c81918f3630f0324dcb35",
+        "source_sha256": "23a20ef32fd16a1bd623c0c08ac080d04fc94f248de12133b713a19d6b0330d9",
+        "merged_into_main": false,
+        "pdf_pages": 4,
+        "unresolved": [
+          "作者本项未给证明；7.1有限剩余域可能需平展基变换，本项只写开邻域，适用范围待核",
+          "末句连接语残缺，未增补量词或假设",
+          "R2是否几何意义下条件未明，照存",
+          "8.8缺文、8.7(c)残缺及所有旧待核保持"
+        ]
+      },
+      "audit": "已核原会话、自动任务定义和上批工程，未见本段重复。原会话仍自报第16版1060页，第0章§23完成。\n对照底本第53页13.4(d)及7.1；基底、基底点和非光滑点集记号按上下文校订，原写法及理由在脚注。R2条件、末句不等式照存，未补造证明或缺失假设。\n最终XeLaTeX两遍编译通过，4页；第二遍无缺字、警告或排版溢出。逐页渲染检视通过，调整分页使末句脚注不孤立跨页。\n",
+      "body_chars": 1183
+    },
+    {
+      "order": 19,
+      "batch": "13.4拓扑结构",
+      "source_tex": "/workspace/scratch/a886fd56dd2f/unpacked/dot_batches/EGA第五卷_13.4拓扑结构_续译工程/EGA第五卷_13.4拓扑结构_校订续译.tex",
+      "source_sha256": "919e37af0df931f0e0dda7651aa35a6ec66ac8412adde70c03201dfb96ae26c3",
+      "source_bytes": 2919,
+      "progress": {
+        "completed": "底本第53页注13.4(e)全文，至with group π1止；§13原文已接续至末尾",
+        "next": "第53页§14 Conic Projections标题，再接第54页N.B. We have already used Conic Projections",
+        "previous_project": "libfile_fde3_f-127c5c90979881919dfc9259e93a2ce7_49ac57203c0c81918f3630f0324dcb35",
+        "source_sha256": "23a20ef32fd16a1bd623c0c08ac080d04fc94f248de12133b713a19d6b0330d9",
+        "merged_into_main": false,
+        "pdf_pages": 3,
+        "unresolved": [
+          "本项未给拓扑证明，普遍覆盖同胚于C^n断言未独立验证，不加强为双全纯",
+          "第13节的旧待核未解决，不能称整节独立验证完成",
+          "8.8缺文、8.7(c)残缺及所有旧待核保持"
+        ]
+      },
+      "audit": "已核原会话和上批工程，未见本段重复。原会话仍自报第16版1060页，第0章§23完成。\n对照底本第53页13.4(e)及第49页13.1、13.2：多重初等、解析空间记号和同伦群正次数范围附校订说明。普遍覆盖同胚于C^n原断言保留，未独立证明。\n最终XeLaTeX两遍编译通过，3页；第二遍无缺字、警告或排版溢出。3页逐页渲染检视通过。\n",
+      "body_chars": 917
+    }
+  ],
+  "notes": [
+    {
+      "id": "D17-M001",
+      "batch": 1,
+      "source_tex": "EGA第五卷_12节关联概形_校订续译.tex"
+    },
+    {
+      "id": "D17-M002",
+      "batch": 1,
+      "source_tex": "EGA第五卷_12节关联概形_校订续译.tex"
+    },
+    {
+      "id": "D17-M003",
+      "batch": 1,
+      "source_tex": "EGA第五卷_12节关联概形_校订续译.tex"
+    },
+    {
+      "id": "D17-M004",
+      "batch": 1,
+      "source_tex": "EGA第五卷_12节关联概形_校订续译.tex"
+    },
+    {
+      "id": "D17-M005",
+      "batch": 1,
+      "source_tex": "EGA第五卷_12节关联概形_校订续译.tex"
+    },
+    {
+      "id": "D17-M006",
+      "batch": 1,
+      "source_tex": "EGA第五卷_12节关联概形_校订续译.tex"
+    },
+    {
+      "id": "D17-M007",
+      "batch": 1,
+      "source_tex": "EGA第五卷_12节关联概形_校订续译.tex"
+    },
+    {
+      "id": "D17-M008",
+      "batch": 2,
+      "source_tex": "EGA第五卷_12节纤维结构_校订续译.tex"
+    },
+    {
+      "id": "D17-M009",
+      "batch": 2,
+      "source_tex": "EGA第五卷_12节纤维结构_校订续译.tex"
+    },
+    {
+      "id": "D17-M010",
+      "batch": 2,
+      "source_tex": "EGA第五卷_12节纤维结构_校订续译.tex"
+    },
+    {
+      "id": "D17-M011",
+      "batch": 2,
+      "source_tex": "EGA第五卷_12节纤维结构_校订续译.tex"
+    },
+    {
+      "id": "D17-M012",
+      "batch": 2,
+      "source_tex": "EGA第五卷_12节纤维结构_校订续译.tex"
+    },
+    {
+      "id": "D17-M013",
+      "batch": 3,
+      "source_tex": "EGA第五卷_12节一般截面推广_校订续译.tex"
+    },
+    {
+      "id": "D17-M014",
+      "batch": 3,
+      "source_tex": "EGA第五卷_12节一般截面推广_校订续译.tex"
+    },
+    {
+      "id": "D17-M015",
+      "batch": 3,
+      "source_tex": "EGA第五卷_12节一般截面推广_校订续译.tex"
+    },
+    {
+      "id": "D17-M016",
+      "batch": 3,
+      "source_tex": "EGA第五卷_12节一般截面推广_校订续译.tex"
+    },
+    {
+      "id": "D17-M017",
+      "batch": 3,
+      "source_tex": "EGA第五卷_12节一般截面推广_校订续译.tex"
+    },
+    {
+      "id": "D17-M018",
+      "batch": 3,
+      "source_tex": "EGA第五卷_12节一般截面推广_校订续译.tex"
+    },
+    {
+      "id": "D17-M019",
+      "batch": 3,
+      "source_tex": "EGA第五卷_12节一般截面推广_校订续译.tex"
+    },
+    {
+      "id": "D17-M020",
+      "batch": 4,
+      "source_tex": "EGA第五卷_12节正则截面_校订续译.tex"
+    },
+    {
+      "id": "D17-M021",
+      "batch": 4,
+      "source_tex": "EGA第五卷_12节正则截面_校订续译.tex"
+    },
+    {
+      "id": "D17-M022",
+      "batch": 4,
+      "source_tex": "EGA第五卷_12节正则截面_校订续译.tex"
+    },
+    {
+      "id": "D17-M023",
+      "batch": 4,
+      "source_tex": "EGA第五卷_12节正则截面_校订续译.tex"
+    },
+    {
+      "id": "D17-M024",
+      "batch": 4,
+      "source_tex": "EGA第五卷_12节正则截面_校订续译.tex"
+    },
+    {
+      "id": "D17-M025",
+      "batch": 5,
+      "source_tex": "EGA第五卷_12节维数条件与推广计划_校订续译.tex"
+    },
+    {
+      "id": "D17-M026",
+      "batch": 5,
+      "source_tex": "EGA第五卷_12节维数条件与推广计划_校订续译.tex"
+    },
+    {
+      "id": "D17-M027",
+      "batch": 5,
+      "source_tex": "EGA第五卷_12节维数条件与推广计划_校订续译.tex"
+    },
+    {
+      "id": "D17-M028",
+      "batch": 5,
+      "source_tex": "EGA第五卷_12节维数条件与推广计划_校订续译.tex"
+    },
+    {
+      "id": "D17-M029",
+      "batch": 5,
+      "source_tex": "EGA第五卷_12节维数条件与推广计划_校订续译.tex"
+    },
+    {
+      "id": "D17-M030",
+      "batch": 6,
+      "source_tex": "EGA第五卷_12节奇异关联簇_校订续译.tex"
+    },
+    {
+      "id": "D17-M031",
+      "batch": 6,
+      "source_tex": "EGA第五卷_12节奇异关联簇_校订续译.tex"
+    },
+    {
+      "id": "D17-M032",
+      "batch": 6,
+      "source_tex": "EGA第五卷_12节奇异关联簇_校订续译.tex"
+    },
+    {
+      "id": "D17-M033",
+      "batch": 6,
+      "source_tex": "EGA第五卷_12节奇异关联簇_校订续译.tex"
+    },
+    {
+      "id": "D17-M034",
+      "batch": 7,
+      "source_tex": "EGA第五卷_12节退化层维数_校订续译.tex"
+    },
+    {
+      "id": "D17-M035",
+      "batch": 7,
+      "source_tex": "EGA第五卷_12节退化层维数_校订续译.tex"
+    },
+    {
+      "id": "D17-M036",
+      "batch": 7,
+      "source_tex": "EGA第五卷_12节退化层维数_校订续译.tex"
+    },
+    {
+      "id": "D17-M037",
+      "batch": 7,
+      "source_tex": "EGA第五卷_12节退化层维数_校订续译.tex"
+    },
+    {
+      "id": "D17-M038",
+      "batch": 8,
+      "source_tex": "EGA第五卷_12节线性截面族_校订续译.tex"
+    },
+    {
+      "id": "D17-M039",
+      "batch": 8,
+      "source_tex": "EGA第五卷_12节线性截面族_校订续译.tex"
+    },
+    {
+      "id": "D17-M040",
+      "batch": 8,
+      "source_tex": "EGA第五卷_12节线性截面族_校订续译.tex"
+    },
+    {
+      "id": "D17-M041",
+      "batch": 8,
+      "source_tex": "EGA第五卷_12节线性截面族_校订续译.tex"
+    },
+    {
+      "id": "D17-M042",
+      "batch": 8,
+      "source_tex": "EGA第五卷_12节线性截面族_校订续译.tex"
+    },
+    {
+      "id": "D17-M043",
+      "batch": 8,
+      "source_tex": "EGA第五卷_12节线性截面族_校订续译.tex"
+    },
+    {
+      "id": "D17-M044",
+      "batch": 9,
+      "source_tex": "EGA第五卷_12节末与13节定义_校订续译.tex"
+    },
+    {
+      "id": "D17-M045",
+      "batch": 9,
+      "source_tex": "EGA第五卷_12节末与13节定义_校订续译.tex"
+    },
+    {
+      "id": "D17-M046",
+      "batch": 9,
+      "source_tex": "EGA第五卷_12节末与13节定义_校订续译.tex"
+    },
+    {
+      "id": "D17-M047",
+      "batch": 10,
+      "source_tex": "EGA第五卷_13.2归约_校订续译.tex"
+    },
+    {
+      "id": "D17-M048",
+      "batch": 10,
+      "source_tex": "EGA第五卷_13.2归约_校订续译.tex"
+    },
+    {
+      "id": "D17-M049",
+      "batch": 10,
+      "source_tex": "EGA第五卷_13.2归约_校订续译.tex"
+    },
+    {
+      "id": "D17-M050",
+      "batch": 10,
+      "source_tex": "EGA第五卷_13.2归约_校订续译.tex"
+    },
+    {
+      "id": "D17-M051",
+      "batch": 10,
+      "source_tex": "EGA第五卷_13.2归约_校订续译.tex"
+    },
+    {
+      "id": "D17-M052",
+      "batch": 11,
+      "source_tex": "EGA第五卷_13.3陈述_校订续译.tex"
+    },
+    {
+      "id": "D17-M053",
+      "batch": 11,
+      "source_tex": "EGA第五卷_13.3陈述_校订续译.tex"
+    },
+    {
+      "id": "D17-M054",
+      "batch": 11,
+      "source_tex": "EGA第五卷_13.3陈述_校订续译.tex"
+    },
+    {
+      "id": "D17-M055",
+      "batch": 11,
+      "source_tex": "EGA第五卷_13.3陈述_校订续译.tex"
+    },
+    {
+      "id": "D17-M056",
+      "batch": 12,
+      "source_tex": "EGA第五卷_13.2初等邻域构造_校订续译.tex"
+    },
+    {
+      "id": "D17-M057",
+      "batch": 12,
+      "source_tex": "EGA第五卷_13.2初等邻域构造_校订续译.tex"
+    },
+    {
+      "id": "D17-M058",
+      "batch": 12,
+      "source_tex": "EGA第五卷_13.2初等邻域构造_校订续译.tex"
+    },
+    {
+      "id": "D17-M059",
+      "batch": 12,
+      "source_tex": "EGA第五卷_13.2初等邻域构造_校订续译.tex"
+    },
+    {
+      "id": "D17-M060",
+      "batch": 12,
+      "source_tex": "EGA第五卷_13.2初等邻域构造_校订续译.tex"
+    },
+    {
+      "id": "D17-M061",
+      "batch": 13,
+      "source_tex": "EGA第五卷_13.3证明归约_校订续译.tex"
+    },
+    {
+      "id": "D17-M062",
+      "batch": 13,
+      "source_tex": "EGA第五卷_13.3证明归约_校订续译.tex"
+    },
+    {
+      "id": "D17-M063",
+      "batch": 13,
+      "source_tex": "EGA第五卷_13.3证明归约_校订续译.tex"
+    },
+    {
+      "id": "D17-M064",
+      "batch": 13,
+      "source_tex": "EGA第五卷_13.3证明归约_校订续译.tex"
+    },
+    {
+      "id": "D17-M065",
+      "batch": 13,
+      "source_tex": "EGA第五卷_13.3证明归约_校订续译.tex"
+    },
+    {
+      "id": "D17-M066",
+      "batch": 14,
+      "source_tex": "EGA第五卷_13.3一般截面归纳_校订续译.tex"
+    },
+    {
+      "id": "D17-M067",
+      "batch": 14,
+      "source_tex": "EGA第五卷_13.3一般截面归纳_校订续译.tex"
+    },
+    {
+      "id": "D17-M068",
+      "batch": 14,
+      "source_tex": "EGA第五卷_13.3一般截面归纳_校订续译.tex"
+    },
+    {
+      "id": "D17-M069",
+      "batch": 14,
+      "source_tex": "EGA第五卷_13.3一般截面归纳_校订续译.tex"
+    },
+    {
+      "id": "D17-M070",
+      "batch": 14,
+      "source_tex": "EGA第五卷_13.3一般截面归纳_校订续译.tex"
+    },
+    {
+      "id": "D17-M071",
+      "batch": 14,
+      "source_tex": "EGA第五卷_13.3一般截面归纳_校订续译.tex"
+    },
+    {
+      "id": "D17-M072",
+      "batch": 14,
+      "source_tex": "EGA第五卷_13.3一般截面归纳_校订续译.tex"
+    },
+    {
+      "id": "D17-M073",
+      "batch": 15,
+      "source_tex": "EGA第五卷_13.3超平面情形证明_校订续译.tex"
+    },
+    {
+      "id": "D17-M074",
+      "batch": 15,
+      "source_tex": "EGA第五卷_13.3超平面情形证明_校订续译.tex"
+    },
+    {
+      "id": "D17-M075",
+      "batch": 15,
+      "source_tex": "EGA第五卷_13.3超平面情形证明_校订续译.tex"
+    },
+    {
+      "id": "D17-M076",
+      "batch": 15,
+      "source_tex": "EGA第五卷_13.3超平面情形证明_校订续译.tex"
+    },
+    {
+      "id": "D17-M077",
+      "batch": 15,
+      "source_tex": "EGA第五卷_13.3超平面情形证明_校订续译.tex"
+    },
+    {
+      "id": "D17-M078",
+      "batch": 16,
+      "source_tex": "EGA第五卷_13.4有限域与连通性_校订续译.tex"
+    },
+    {
+      "id": "D17-M079",
+      "batch": 16,
+      "source_tex": "EGA第五卷_13.4有限域与连通性_校订续译.tex"
+    },
+    {
+      "id": "D17-M080",
+      "batch": 16,
+      "source_tex": "EGA第五卷_13.4有限域与连通性_校订续译.tex"
+    },
+    {
+      "id": "D17-M081",
+      "batch": 16,
+      "source_tex": "EGA第五卷_13.4有限域与连通性_校订续译.tex"
+    },
+    {
+      "id": "D17-M082",
+      "batch": 16,
+      "source_tex": "EGA第五卷_13.4有限域与连通性_校订续译.tex"
+    },
+    {
+      "id": "D17-M083",
+      "batch": 17,
+      "source_tex": "EGA第五卷_13.4有限点集邻域_校订续译.tex"
+    },
+    {
+      "id": "D17-M084",
+      "batch": 17,
+      "source_tex": "EGA第五卷_13.4有限点集邻域_校订续译.tex"
+    },
+    {
+      "id": "D17-M085",
+      "batch": 17,
+      "source_tex": "EGA第五卷_13.4有限点集邻域_校订续译.tex"
+    },
+    {
+      "id": "D17-M086",
+      "batch": 17,
+      "source_tex": "EGA第五卷_13.4有限点集邻域_校订续译.tex"
+    },
+    {
+      "id": "D17-M087",
+      "batch": 18,
+      "source_tex": "EGA第五卷_13.4一般基底_校订续译.tex"
+    },
+    {
+      "id": "D17-M088",
+      "batch": 18,
+      "source_tex": "EGA第五卷_13.4一般基底_校订续译.tex"
+    },
+    {
+      "id": "D17-M089",
+      "batch": 18,
+      "source_tex": "EGA第五卷_13.4一般基底_校订续译.tex"
+    },
+    {
+      "id": "D17-M090",
+      "batch": 18,
+      "source_tex": "EGA第五卷_13.4一般基底_校订续译.tex"
+    },
+    {
+      "id": "D17-M091",
+      "batch": 19,
+      "source_tex": "EGA第五卷_13.4拓扑结构_校订续译.tex"
+    },
+    {
+      "id": "D17-M092",
+      "batch": 19,
+      "source_tex": "EGA第五卷_13.4拓扑结构_校订续译.tex"
+    },
+    {
+      "id": "D17-M093",
+      "batch": 19,
+      "source_tex": "EGA第五卷_13.4拓扑结构_校订续译.tex"
+    }
+  ],
+  "cmt_notes": 93,
+  "source_editor_notes": 6,
+  "new_corrections": [
+    {
+      "id": "D17-M-E01",
+      "source": "p51 generic linear section",
+      "change": "smooth over k -> smooth over kappa(eta); original in footnote",
+      "source_confirmation": "p51 page image read, p52 explicit X_eta^{(m)}",
+      "reference": "https://stacks.math.columbia.edu/tag/01V4"
+    },
+    {
+      "id": "D17-M-E02",
+      "source": "p47 degeneracy-dimension formula",
+      "change": "Specify nonempty pure n-dimensional geometric fiber; 0<=m<=n<=r-1, 0<=k<=min(m,r-1-n); original formula unchanged; original insufficient bounds in footnote",
+      "counterexample": "X=P=P^2_K, f=id, r=3, n=2, m=k=1: V^(1) empty although k<=m and k<=r-m",
+      "proof": "Schubert intersection strata: N=r-1,d=N-m,t=n-m+k; dimension=t(n-t)+(d-t)m=dm-k(n-m+k); higher t have lower dimension; add n and subtract ambient Grass dimension",
+      "limit": "Does not verify later scheme structure, singular-locus or supersingularity arguments; mixed-dimensional fibers require componentwise computation"
+    }
+  ],
+  "terminology_changes": {
+    "准凝聚": "拟凝聚",
+    "未分歧": "无分歧",
+    "多初等": "多重初等"
+  },
+  "format_changes": "remove 19 standalone covers, scope chapters and forced page breaks; remove editorial subsection headings except source notation heading; retain every mathematical body paragraph and all footnotes; harmonize theorem macros; obsolete batch status phrases removed/updated",
+  "source_document": {
+    "filename": "EGAVaiello.pdf",
+    "sha256": "23a20ef32fd16a1bd623c0c08ac080d04fc94f248de12133b713a19d6b0330d9",
+    "pdf_pages": 112,
+    "file_id_from_user_metadata": "file_000000005a3c820bb2959e2ab8f0430e",
+    "authority_limit": "English edited source supplied in prior conversation; French manuscript has not been independently checked"
+  },
+  "second_pass_verification": {
+    "text_pages_read": [
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49,
+      50,
+      51,
+      52,
+      53
+    ],
+    "page_images_viewed": [
+      43,
+      44,
+      47,
+      50,
+      51,
+      53
+    ],
+    "original_display_math_count": 43,
+    "integrated_display_math_count": 43,
+    "display_math_content_changed": [],
+    "original_translator_note_count": 93,
+    "integrated_translator_note_count": 93,
+    "note_text_changes_beyond_documented_normalization": [
+      "D17-M034",
+      "D17-M065"
+    ],
+    "original_source_editor_notes": 6,
+    "integrated_source_editor_notes": 6,
+    "source_editor_note_numbers": [
+      61,
+      62,
+      63,
+      64,
+      65,
+      66
+    ],
+    "entry_numbers": [
+      "13.1",
+      "13.2",
+      "13.3",
+      "13.4"
+    ],
+    "batch_overlap_or_gap_found": "none in supplied 19-batch mathematical body order matched to pp43-53",
+    "limits": "Reading text and sampled source images is not an independent verification of all proofs; final PDF compilation and rendering belong to root integration workflow"
+  },
+  "compile_status": "Local preliminary xelatex attempts failed before format recovery; no successful isolated compile claimed. Root will compile cumulative project with restored runtime.",
+  "prioritized_pending_review": [
+    {
+      "id": "D17-M-P01",
+      "item": "13.3 omits x in L0; proof replaces general x by k-rational point without supplied transition; 13.4(c) repeats closed vs rational point issue"
+    },
+    {
+      "id": "D17-M-E02",
+      "item": "Corrected pp47 dimension-range proof should be root-reviewed; corrected only on nonempty pure-dimensional geometric fibers; subsequent singular-locus claims remain outside this verification"
+    },
+    {
+      "id": "D17-M-P02",
+      "item": "13.4(d) general base statement supplied without proof and missing explanation of when etale base change in finite residue field may be omitted"
+    }
+  ],
+  "outputs": {
+    "body_middle.tex": {
+      "sha256": "030ca1c80d54d548118906faa652b1a5f85ae2ba6aeb1d202316cf5d080413a7",
+      "bytes": 66520
+    },
+    "report_middle.tex": {
+      "sha256": "1266fa413bfd6a502bd4d1929bfc5dc70b7909b804ce02b2d5f9142f472218b0",
+      "bytes": 10406
+    }
+  }
+}

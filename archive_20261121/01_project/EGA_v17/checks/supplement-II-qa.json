@@ -1,0 +1,16 @@
+{
+  "previous_page_count": 1136,
+  "page_count": 1146,
+  "new_body_and_notes": [
+    956,
+    969
+  ],
+  "all_pages_layout_text_equal": 1146,
+  "new_page_pixel_equality": [
+    956,
+    969
+  ],
+  "both_3_passes": true,
+  "no_undefined_refs_missing_glyphs_overfull": true,
+  "independent_prior_report_not_rebuilt": true
+}

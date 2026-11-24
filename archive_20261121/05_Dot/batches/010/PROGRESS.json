@@ -1,0 +1,25 @@
+{
+  "project": "EGA V independent supplement",
+  "date_utc": "2026-11-15",
+  "previous_engineering_library_id": "libfile_fde3_f-4c8153311a048191ae7cc5ebd1c1984e_49ac57203c0c81918f3630f0324dcb35",
+  "source": "底本.pdf",
+  "source_sha256": "23a20ef32fd16a1bd623c0c08ac080d04fc94f248de12133b713a19d6b0330d9",
+  "completed_this_batch": "p34 Proposition 8.18 statement, original proof, original footnote51, NB through final d>=2 ellipsis",
+  "next_source_page": 34,
+  "next_exact": "It remains to explain (make explicit) the conditions a) and b) of 1.18.",
+  "next_note": "Unnumbered paragraph continues on p35. Do not skip to 8.19. Source prints 1.18: check in context on next batch.",
+  "merge_status": "Independent supplement, not merged into original conversation compilation",
+  "unresolved": [
+    "8.8 missing hypotheses remain unrecovered",
+    "8.18 dimension1 versus d-1 and final NB dimension restriction",
+    "8.18(b) (non???) singular cannot be determined",
+    "Third g(overline Y sing) differs from previous two unbarred expressions; preserve uncertainty",
+    "Normalization proof omitted in source, not independently established"
+  ],
+  "checks": [
+    "Independent bilingual audit: no material omission in chosen range; corrected erroneous added closures in first two g(Y sing) expressions",
+    "Two successful XeLaTeX passes",
+    "Four-page rendered PDF visually checked; no missing glyph or overfull warnings"
+  ],
+  "original_conversation_check": "EGA latest visible ninth edition through20.5.15; no V8.18 overlap observed; math latest visible012/user continue. Not proof of current remote runtime."
+}

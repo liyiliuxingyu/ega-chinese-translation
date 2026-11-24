@@ -1,0 +1,58 @@
+lying over ξ0, and q is ´etale at the points lying over ξ0; this is also the case for r as we see
+that T n−1
+Q
+is nothing else but TxkQ (Q isomorhism). Finally the morphism p is proper,
+and taking into account that X is geometrically connected, the ﬁbers of p are geometrically
+connected (Bertini’s theorem). Consequently, there exists an open neighborhood U of Q in
+X such that Xn−1
+Q
+V = X′ is proper and smooth over V with geometrically connected
+ﬁbers, and since the ﬁber of Q is nothing else but X ∩L0, it is of dimension 1, we may
+suppose that the ﬁbers of X′ over V are all of dimension 1. Finally, taking V suﬃciently
+small, we may suppose that Y n−1
+Q
+V and T n−1
+Q
+V are ´etale over V so tht the sum
+prescheme of Z′ of the two (which is identiﬁed with a closed prescheme of X′) is ´etale
+over V . Consequently, putting U = X′ −Z′, the morphism U →V is an elementary
+morphism. But U is also an open subset of X′′ = Xn−1
+Q
+−Y n−1
+Q
+−Zn−1
+Q
+, the inverse image
+of X −Y −T in Xn−1
+Q
+; on the other hand, X′′ →X −Y −T is an isomorphism (since (car)
+Xn−1
+Q
+−T n−1
+Q
+→X −T is an isomorphism). Therefore U is identiﬁed to an open subset of
+X −Y −T, an open subset containing, furthermore, L0 ∩X and a fortiori x. This is the
+desired neighborhood of x contained in X −Y .
+It remains only to prove Lemma 13.3. As usual, it suﬃces to prove that the generic
+linear subvariety of codimension (n −1) passing through x called L has properties a), b),
+c). To prove a) as well as the dimensional content of b) and c), this follows immediately
+from 2.3 (reviewed and corrected in No. 12) applied (as in a reasoning already done in No.
+8) to projective space of straight lines passing through X and the image of Z [dans ledit] by
+a conic projection from x. [It might be useful in addition to make explicit certain results
+obtained by this method concerning the linear sections by linear subvarieties subject to
+the condition of passing through a ﬁxed linear subvariety. In the text or in a separate No.]
+For the smoothness in b) and c) we can because of a) replace X and Y respectively by
+X −Z and Y −Z which are smooth and we are reduced to proving this: Let f: X →P be
+an unramiﬁed morphism such that x does not belong to the image of any component of X
+of dimension < m (irreducible component?) with X smooth over k and let X ∈P(k) then
+if η is the generic point of the subgrassmanian of GrassmP formed from linear varieties L
+of codimension m passing through x, X(m) is smooth over k at least if k is of characteristic
+zero and the opposite case, on condition by replacing f by Qnf, n an integer ≥2.
+This is a regret to No. 9, which itself follows from the regrets following No. 8: With
+the notations of 8.8 (supposing that X is irreducible, which is legal for the p0-problem (?)
+that we are discussing) if we have codimT ≥2 or if hsing →T is generically ´etale (condition
+that is automatically satisﬁed if k is of characteristic zero or on condition of replacing f
+by Φnf with n ≥2, cf No. 9, then for the hyperplane Hη passing through a generic x X(1)
+η
+is smooth of dimension (n −1), except in the case where we have f(x) = {x} (thus n = 0).
+51

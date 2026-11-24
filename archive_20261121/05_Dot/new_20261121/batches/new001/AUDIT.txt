@@ -1,0 +1,1 @@
+实际检查：66页渲染逐句核读；图四角P M L Q，a向上、b向右，两包含箭头核对；负一次行列式、可能差符号与零点子概形解释核对。双遍XeLaTeX通过，3页全页目检，无Warning/Overfull/Underfull/Missing character。ZIP CRC及解压后全文件SHA256核验通过。未重建或改写v17，未声称全书数学已证。

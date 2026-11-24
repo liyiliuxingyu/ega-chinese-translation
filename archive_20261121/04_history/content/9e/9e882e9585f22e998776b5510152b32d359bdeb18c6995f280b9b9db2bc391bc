@@ -1,0 +1,41 @@
+This result allowed [admis Fr] which liquidates evidently the special case m = 1 of our
+regrets, we obtain immediately the case of a general m by induction on m by noticing that
+up to a change of basis X(m)
+η
+is obtained by taking an L′ of codimension (m −1) passing
+through x, L′ and H being generic independent for these properties (i.e. in orthodox terms
+we place ourselves at the generic point of the scheme of pairs (L′, H) and by taking the
+linear sections by H which is smooth by inductive assumption.) This type of reasoning
+already used to generalize 2.6, for example to linear sections of any codimension m deserves
+to be made explicit one good time in general so that we may refer to it without entering
+every time into the details, a bit heavy [Fr] [
+] of a presentation (enforme).
+It remains to prove the corollary announced of 8.8 in the case m = 1. If codim T ≥2,
+since on the other hand the hyperplane Q of pv of H such that x ∈Hξ is of codimension
+1, its generic point η cannot be an element of T and on gagne [Fr]. (we are done?) In
+the case codim T = 1, since T is irreducible we cannot have η ∈T under Q = T, i.e.
+in geometric terms (supposing k algebraically closed which is loegal for every z ∈X the
+tangent space to X at z (or also plutot [Fr] is image by f ′
+z goes through x. Let us prove
+that this cannot happen unless Xsing →T is generically ´etale, i.e. unless we are under
+the condition so f8.8, except in the case f(x) = {x} thus X of diemnsion zero. Indeed 8.7
+c) (which expresses essentially the symmetry in the relation between X and its “dual” T)
+implies therefore that for almost every point z ∈X(k) f(z) is orthogonal to the tangent
+space to T at a certain point this (since T = Q) orthogonal to Q, where f(z) = x hence
+f(x) = {x}. this proves our regret, thus 13.2.
+N.B. The reasoning does not go through if we replace x by a linear sub-variety X of
+dim > 0, and if we subject H to passing through C; indeed, there is no reason to suppose
+(taking for example dim (= r −2 the greatest possible for which H can still eﬀectively
+vary) without supposing (?) that T contains the straight linear C0 taking for example a
+non-singular quadric in p in any characteristic. But it is possible that such phenomena
+cannot happen anymore for φnf, n ≥2; we could pose the questions as a remark in No. 9.
+Remark 13.4.
+a) We have already observed that in the hypothesis that k should be perfect is essential
+for the validity of 13.2. On the contrary, it is plausible that the hypothesis k is inﬁnite
+is superﬂuous too strong. We shall not try an ad hoc reasoning for the case where
+k is ﬁnite and we only note that in this case the application of 13.2 to the algebraic
+closure of k and usual arguments show tht we may ﬁnd a ﬁnite extension k′ of k such
+that for the point of S′
+k over x there exist open polyelementary neighborhoods realtive
+to k′.
+52

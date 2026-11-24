@@ -1,0 +1,15 @@
+{
+  "date": "2026-11-19T21:00Z",
+  "scope": "66页It remains only段起至67页第一段末the commutativity announced in the lemma",
+  "next": "67页 The non-supersingular points are therefore exactly the ones",
+  "previous_batch": "libfile_fde3_f-b23186ec58b48191b2c39c5d682b03cb_49ac57203c0c81918f3630f0324dcb35",
+  "baseline_v17": "libfile_fde3_f-f1b2141eb58c81919fef5fcc209852d1_49ac57203c0c81918f3630f0324dcb35",
+  "independent": true,
+  "merged_into_v17": false,
+  "source_sha256": "23a20ef32fd16a1bd623c0c08ac080d04fc94f248de12133b713a19d6b0330d9",
+  "open_issues": [
+    "a,b整体符号待约定，未擅定",
+    "Pv省略一阶标号已据上下文注释补正",
+    "旧待核保留，本批未译下一非超奇异点正合列"
+  ]
+}

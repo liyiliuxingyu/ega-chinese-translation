@@ -1,0 +1,186 @@
+% 底本：EGAIV.1.pdf，PDF第166--168页，原分册印刷第167--169页。
+\subsection{扩张的可容许域}
+\egap{21.6.1}
+给定四个域 $k_0\subseteq k\subseteq K\subseteq L$，
+由（20.6.16）和（20.6.17）有正合列
+\begin{equation}
+ 0\longrightarrow\Upsilon_{K/k/k_0}\otimes_KL
+ \xrightarrow{v}\Upsilon_{L/k/k_0}
+ \xrightarrow{u}\Upsilon_{L/K/k_0}
+ \xrightarrow{s}\Upsilon_{L/K/k}\longrightarrow0.
+ \tag{21.6.1.1}
+\end{equation}
+固定 $k_0,K,L$，让中间域 $k$ 在 $k_0$ 和 $K$ 之间变化。
+当 $k=k_0$ 时，当然有 $\Upsilon_{L/K/k_0}=\Upsilon_{L/K/k}$。
+一般地，若（21.6.1.1）中的典范同态 $s$ 仍为双射，
+就称 $k$ 是扩张 $L/K$ 的一个\textbf{$k_0$-可容许域}。
+在一定条件下能找到这样的 $k$，而且它又“充分接近”$K$（例如 $[K:k]$ 有限），
+这一点很有用：在某些问题中，它使我们能够把可能“过大”的微分模
+$\Omega^1_{K/k_0}$ 和 $\Omega^1_{L/k_0}$（例如 $k_0$ 为素域时），
+换成较易处理的 $\Omega^1_{K/k}$ 和 $\Omega^1_{L/k}$。
+若 $k_0$ 为素域，简称“可容许域”。
+
+置
+\begin{equation}
+\begin{split}
+ \Delta(L/K,k/k_0)
+ & =\Coker\bigl(\Upsilon_{K/k/k_0}\otimes_KL
+                    \longrightarrow\Upsilon_{L/k/k_0}\bigr)\\
+ & \simeq\Ker\bigl(\Upsilon_{L/K/k_0}
+                    \longrightarrow\Upsilon_{L/K/k}\bigr).
+\end{split}
+\tag{21.6.1.2}
+\end{equation}
+这是一个 $L$-向量空间。它的维数记为 $d(L/K,k/k_0)$，
+称为 $k$ 对扩张 $L/K$ 的\textbf{$k_0$-可容许性缺陷}；
+它为零恰好意味着 $k$ 对这一扩张是 $k_0$-可容许的。
+若 $k_0$ 为素域，则省略它，写作 $\Delta(L/K,k)$ 和 $d(L/K,k)$。
+
+\egas{21.6.2}{命题}
+设 $k_0\subseteq k\subseteq K\subseteq L$ 为四个域。
+
+（i）下列条件等价：
+\begin{enumerate}[label=\alph*),leftmargin=2.5em]
+\item $k$ 对扩张 $L/K$ 是 $k_0$-可容许的，即
+$\Upsilon_{L/K/k_0}\to\Upsilon_{L/K/k}$ 单射，因而双射；
+\item 典范同态 $u:\Upsilon_{L/k/k_0}\to\Upsilon_{L/K/k_0}$ 为零；
+\item 典范同态 $v:\Upsilon_{K/k/k_0}\otimes_KL\to\Upsilon_{L/k/k_0}$ 满射，因而双射；
+\item $d(L/K,k/k_0)=0$，即 $\Delta(L/K,k/k_0)=0$。
+\end{enumerate}
+（ii）在下列任一情形中，（i）的等价条件成立：
+$\alpha$）$L/k$ 可分；$\beta$）$L/K$ 可分；
+$\gamma$）$k\subseteq k_0(K^p)$，其中 $p$ 表示 $k_0$ 的特征指数。
+
+\eproof
+（i）直接来自（21.6.1.1）的正合性。
+（ii）若 $L/k$ 可分，则 $\Upsilon_{L/k/k_0}=0$（20.6.19），故（i）b)成立。
+若 $L/K$ 可分，则 $\Upsilon_{L/K/k_0}=0$（20.6.19），故（i）a)成立。
+最后，若 $k\subseteq k_0(K^p)$，则由（21.1.5.1）
+$\Upsilon_{L/K/k}=\Upsilon_{L/K/k_0}$，故（i）a)成立。
+\cmt{L12-N02}{这里及下文“特征指数”在特征零时取 $p=1$，在正特征时取相应素数。
+因此特征零的 $\gamma$）自动满足；这与所有域扩张在特征零时均可分一致。
+不要把“指数 $p=1$”误写成“特征为1”。}
+\finishproof
+
+\egap{21.6.3}
+设有域单同态组成的交换图
+\[
+\begin{tikzcd}[column sep=large]
+ k'_0\arrow[r]&k'\arrow[r]&K'\arrow[r]&L'\\
+ k_0\arrow[u]\arrow[r]&k\arrow[u]\arrow[r]&K\arrow[u]\arrow[r]&L\arrow[u]
+\end{tikzcd}
+\]
+由（20.6.21，ii）的自然性，得到典范同态
+\begin{equation}
+ \Delta(L/K,k/k_0)\longrightarrow\Delta(L'/K',k'/k'_0).
+ \tag{21.6.3.1}
+\end{equation}
+\cmt{L12-T03}{原文引（20.6.17，ii），但该条没有（ii）这一分项。
+这里使用的是（20.6.21，ii）中正合列的自然性及（20.6.4）中的函子性。
+两边的标量域分别为 $L,L'$，该典范映射应按 $L\to L'$ 理解为双同态，不能无条件称为同一标量域上的线性映射。}
+这些同态具有复合相容性，故 $\Delta(L/K,k/k_0)$ 可看作四元组 $(k_0,k,K,L)$ 的函子。
+
+\egas{21.6.4}{命题}
+（i）设 $k\subseteq k'\subseteq k''\subseteq K\subseteq L$ 为五个域。
+则有由典范同态组成的正合列
+\begin{equation}
+\begin{split}
+ 0\longrightarrow\Delta(L/K,k'/k)
+ \longrightarrow\Delta(L/K,k''/k)\\
+ \longrightarrow\Delta(L/K,k''/k')\longrightarrow0,
+\end{split}\tag{21.6.4.1}
+\end{equation}
+因而
+\begin{equation}
+ d(L/K,k''/k)=d(L/K,k''/k')+d(L/K,k'/k).
+ \tag{21.6.4.2}
+\end{equation}
+（ii）设 $k_0\subseteq k\subseteq K\subseteq L\subseteq M$ 为五个域。
+则有由典范同态组成的正合列
+\begin{equation}
+\begin{split}
+ 0\longrightarrow\Delta(L/K,k/k_0)\otimes_LM
+ \longrightarrow\Delta(M/K,k/k_0)\\
+ \longrightarrow\Delta(M/L,k/k_0)\longrightarrow0,
+\end{split}\tag{21.6.4.3}
+\end{equation}
+因而
+\begin{equation}
+ d(M/K,k/k_0)=d(M/L,k/k_0)+d(L/K,k/k_0).
+ \tag{21.6.4.4}
+\end{equation}
+
+\eproof
+（i）考虑交换图
+\[
+\begin{tikzcd}[column sep=small,row sep=large,cramped]
+ 0\arrow[r]&\Upsilon_{K/k'/k}\otimes_KL\arrow[r]\arrow[d]
+ &\Upsilon_{K/k''/k}\otimes_KL\arrow[r]\arrow[d]
+ &\Upsilon_{K/k''/k'}\otimes_KL\arrow[r]\arrow[d]&0\\
+ 0\arrow[r]&\Upsilon_{L/k'/k}\arrow[r]\arrow[d]
+ &\Upsilon_{L/k''/k}\arrow[r]\arrow[d]
+ &\Upsilon_{L/k''/k'}\arrow[r]\arrow[d]&0\\
+ 0\arrow[r]&\Delta(L/K,k'/k)\arrow[r]
+ &\Delta(L/K,k''/k)\arrow[r]
+ &\Delta(L/K,k''/k')\arrow[r]&0.
+\end{tikzcd}
+\]
+将三行分别看作复形 $T_1^\bullet,T_2^\bullet,T_3^\bullet$。
+正合列（21.6.1.1）及定义（21.6.1.2）给出逐次数的正合列
+$0\to T_1^\bullet\to T_2^\bullet\to T_3^\bullet\to0$。
+由（21.6.1.1），$T_1^\bullet$ 与 $T_2^\bullet$ 的上同调除同一个次数外均为零，
+而在该次数两者都典范地识别为
+$\Upsilon_{k''/k'/k}\otimes_{k''}L$；
+且 $T_1^\bullet\to T_2^\bullet$ 在此识别下诱导恒等映射。
+上同调长正合列遂表明 $T_3^\bullet$ 的上同调全为零，得到（i）。
+\cmt{L12-G04}{原文以“两复形有相同上同调”直接推出第三个无上同调。
+所需的不只是两个上同调对象抽象同构，而是所给复形映射诱导的同态确为同构。
+这里两者的核都经（21.6.1.1）识别为 $\Upsilon_{k''/k'/k}\otimes_{k''}L$，
+自然性使诱导映射为恒等，正文补出这一点；命题结论不变。}
+
+（ii）同样考虑交换图
+\[
+\begin{tikzcd}[column sep=small,row sep=large,cramped]
+ 0\arrow[r]&\Delta(L/K,k/k_0)\otimes_LM\arrow[r]\arrow[d]
+ &\Delta(M/K,k/k_0)\arrow[r]\arrow[d]
+ &\Delta(M/L,k/k_0)\arrow[r]\arrow[d]&0\\
+ 0\arrow[r]&\Upsilon_{L/K/k_0}\otimes_LM\arrow[r]\arrow[d]
+ &\Upsilon_{M/K/k_0}\arrow[r]\arrow[d]
+ &\Upsilon_{M/L/k_0}\arrow[r]\arrow[d]&0\\
+ 0\arrow[r]&\Upsilon_{L/K/k}\otimes_LM\arrow[r]
+ &\Upsilon_{M/K/k}\arrow[r]
+ &\Upsilon_{M/L/k}\arrow[r]&0.
+\end{tikzcd}
+\]
+将三行看作 $T_1'^\bullet,T_2'^\bullet,T_3'^\bullet$，
+（21.6.1.1）和（21.6.1.2）给出正合列
+$0\to T_1'^\bullet\to T_2'^\bullet\to T_3'^\bullet\to0$。
+由（21.6.1.1），$T_2'^\bullet$、$T_3'^\bullet$ 只有同一个次数的上同调可能非零，
+两者都典范地识别为 $\Upsilon_{M/L/K}$，且诱导映射为恒等。
+因此上同调长正合列给出 $T_1'^\bullet$ 无上同调，证明（ii）。
+\finishproof
+
+\egas{21.6.5}{推论}
+（i）给定五个域 $k\subseteq k'\subseteq k''\subseteq K\subseteq L$，
+$k''$ 对扩张 $L/K$ 是 $k$-可容许的，当且仅当 $k'$ 对该扩张是 $k$-可容许的，
+且 $k''$ 对该扩张是 $k'$-可容许的。
+
+（ii）给定五个域 $k_0\subseteq k\subseteq K\subseteq L\subseteq M$，
+$k$ 对扩张 $M/K$ 是 $k_0$-可容许的，当且仅当它对扩张 $L/K$ 及 $M/L$
+都为 $k_0$-可容许的。
+
+这些断言由（21.6.4.2）和（21.6.4.4）立即得到，因为 $d$ 的值非负。
+
+\egas{21.6.6}{推论}
+设 $k_0\subseteq k\subseteq K\subseteq L$ 为四个域，
+且 $k$ 对扩张 $L/K$ 是 $k_0$-可容许的。
+若另有域 $k'_0,k',K',L'$，满足
+\[
+ k_0\subseteq k'_0\subseteq k'\subseteq k\subseteq K
+ \subseteq K'\subseteq L'\subseteq L,
+\]
+则 $k'$ 对扩张 $L'/K'$ 是 $k'_0$-可容许的。
+\cmt{L12-G05}{此处原文没有另列证明。
+可先用（21.6.4，ii）的缺陷加法性，将 $L/K$ 缩至 $L'/K'$，其非负缺陷仍为零；
+再用（21.6.4，i）沿 $k_0\subseteq k'_0\subseteq k'\subseteq k$ 分解基域缺陷，
+每项都非负，故 $d(L'/K',k'/k'_0)=0$。这里只补充该推论与前条之间的推理联系。}

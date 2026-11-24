@@ -1,0 +1,46 @@
+\documentclass[openany,fontset=fandol]{ctexbook}
+\usepackage{amsmath,amssymb}
+\usepackage[unicode,hidelinks]{hyperref}
+\setlength{\emergencystretch}{2em}
+\newcommand{\im}{\operatorname{im}}
+\newcommand{\Sym}{\operatorname{Sym}}
+\newcommand{\Spec}{\operatorname{Spec}}
+\newcommand{\m}{\mathfrak m}
+\newcommand{\n}{\mathfrak n}
+\begin{document}
+\title{代数几何基础第五卷预备笔记\\划去稿：推论10及结束标记}
+\author{据英译编辑稿续译，参校法文扫描}
+\date{2026年11月20日}
+\maketitle
+\chapter*{范围与接续}
+本批自英译第70页推论10起，连续译完第71页条件（iii）和随后的英译者结束标记；对读法文第106--107页。下一起点是同页“Let us note that the analogue of conditions (ii) and (ii)bis”，即法文第107页“Notes que l’analogue des conditions (ii) et (ii bis)”。本稿独立于第十七版增补，未并入主稿。
+\chapter*{作者划去稿（续至结束）}
+\noindent\textbf{推论10。}
+设$A$是维数为$n$的正则局部环，$\m$为其极大理想，$k=A/\m$。设$E$为秩$m$的自由$A$-模，$u:E\to\m$为一同态。令
+\[
+\begin{gathered}B=A/u(E)A,\qquad \n=\m/u(E)A,\\ V=\m/\m^2,
+\qquad W=\n/\n^2=V/\im\bar u,\end{gathered}
+\]
+其中$\n$是$B$的极大理想，$\bar u:E\otimes_A k\to V$由$u$诱导。下列条件等价：
+\begin{enumerate}
+\item[(i)] $B$的维数是$n-m$（也就是说，用$E$的一组基$(\phi_i)$来表述，这些$\phi_i$在$A$中的像组成一条$A$-正则序列），并且$\Spec(B)$的闭点是一个普通二次奇点。这里所谓普通二次奇点，是指增广$B\to B/\n$为普通二次型。
+\item[(ii)] 存在$E$的一组基$\phi_1,\ldots,\phi_m$，使得：
+\begin{enumerate}
+\item[(a)] $A_{m-1}=A/(\sum_{i=1}^{m-1}A\,u(\phi_i))$是维数为$n-(m-1)$的正则环；
+\item[(b)] $u(\phi_m)$在$A_{m-1}$中的像以$\Spec(A_{m-1})$的闭点为普通奇异零点（见定义1）。
+\end{enumerate}
+\item[(ii bis)] $\im\bar u$的秩为$m-1$；对$E$的任意一组基$(\phi_i)_{1\le i\le m}$，只要$\phi_i$（$1\le i\le m-1$）在$V$中的像线性无关，（ii）的（a）和（b）就成立。
+\item[(iii)] $\bar u:E\otimes_A k\to V$的核$K$是维数为一的向量空间；对任意$\phi\in K\setminus\{0\}$，由$\phi$所确定的$\Sym^2(W)$中的元素是一个非退化二次型。
+\end{enumerate}
+
+\noindent〔英译者按：划去的部分到此结束。以下不再是划去内容。〕
+\chapter*{译校说明（非原文）}
+\paragraph{可由法文确定的订正。}
+法文第106页明确写“anneau local régulier”，因此补回英译漏掉的“正则”。英译在同句也混淆了秩$m$、极大理想$\m,\n$、剩余域$k$和核$K$。译文按两页法文及前一命题的记号，将“像”统一作$\im\bar u$；（ii）（a）中商掉的是由相应元素生成的理想。法文第107页明确给出（ii bis）的像秩和（iii）的核维数。这里没有用主稿后来讨论的特征$2$术语替换历史原文。
+
+\paragraph{只对英译漏项的反例。}
+以$k=\mathbb Q$，取$A=k[[x,y]]/(x^3)$，$E=A$，$u(1)=x^2+y^2$。这是维数为$1$的非正则局部环：$y$给出一维余环方向，而$x,y$在$\m/\m^2$中独立，嵌入维数为$2$。由于关系$x^3$到三次才出现，$\Sym_k^2(V)\to\m^2/\m^3$在二次仍是同构，故二次类在此例可直接辨认。$\bar u=0$且$K=k$，非零元所给二次型均为$x^2+y^2$的非零倍数，在$\mathbb Q$上非退化，故（iii）成立。可是$m=1$时（ii）（a）的空组商环就是$A$，它不正则，故（ii）不成立。这只说明不能把英文漏掉“正则”的文字当作一般局部环的命题，不是法文命题的反例。
+
+\paragraph{划去范围。}
+法文第107页贯页粗线穿过（iii）并止于其末附近；下一段另有边栏记号。英译者的结束标记单列，不计入作者正文，也不表示该推论已收入后来定稿。
+\end{document}

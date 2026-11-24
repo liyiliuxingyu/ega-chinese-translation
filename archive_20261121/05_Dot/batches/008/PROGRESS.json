@@ -1,0 +1,12 @@
+{
+  "completed": "Printed page32 introductory sentence, Corollary8.14, Remark8.15, Remorse, original footnote49",
+  "next": "Printed page33 Proposition8.16 heading",
+  "source_sha256": "23a20ef32fd16a1bd623c0c08ac080d04fc94f248de12133b713a19d6b0330d9",
+  "cautions": [
+    "8.8 assumptions missing",
+    "8.9 proof unresolved",
+    "separable and ruled original terminology retained",
+    "Not independently proved; not merged"
+  ],
+  "review": "Independent paragraph review passed; four PDF pages inspected; XeLaTeX twice; no overflow/missing glyph"
+}

@@ -1,0 +1,11 @@
+{
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "pymupdf": "1.26.6",
+  "xelatex_version": [
+    "XeTeX 3.141592653-2.6-0.999996 (TeX Live 2025/dev/Debian)",
+    "kpathsea version 6.4.0/dev",
+    "Copyright 2024 SIL International, Jonathan Kew and Khaled Hosny."
+  ],
+  "platform": "linux",
+  "note": "Measured build environment; full TeX engine is a system dependency, not embedded in this package."
+}

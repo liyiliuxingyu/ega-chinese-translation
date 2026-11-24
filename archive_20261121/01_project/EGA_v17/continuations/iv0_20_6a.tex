@@ -1,0 +1,329 @@
+% 底本 EGAIV.1.pdf，上传PDF第135--139页，原分册印刷第136--140页。
+\subsection{非完美性模与特征同态}
+\source{第四卷第一部分，分册印刷第136--147页；上传PDF第135--146页，20.6全文}
+\egas{20.6.1}{定义}
+给定两个环同态 $u:A\to B$、$v:B\to C$，称 $C$-模
+\[
+ \Upsilon_{C/B/A}
+ =\Ker\bigl(v_{C/B/A}:\Omega^1_{B/A}\otimes_B C\longrightarrow\Omega^1_{C/A}\bigr)
+\]
+为\emph{$B$-代数 $C$ 相对于 $A$ 的非完美性模}。因而根据定义及（20.5.7），有正合列
+\begin{equation}
+\begin{aligned}
+0\longrightarrow\Upsilon_{C/B/A}
+ &\longrightarrow\Omega^1_{B/A}\otimes_B C
+ \xrightarrow{v_{C/B/A}}\Omega^1_{C/A}\\
+ &\xrightarrow{u_{C/B/A}}\Omega^1_{C/B}\longrightarrow0.
+\end{aligned}
+\tag{20.6.1.1}
+\end{equation}
+当 $A=\mathbf Z$ 时，$\Omega^1_{B/A}$、$\Omega^1_{C/A}$ 分别是绝对微分模
+$\Omega^1_B$、$\Omega^1_C$，此时将 $\Upsilon_{C/B/\mathbf Z}$ 简记为
+$\Upsilon_{C/B}$。若 $B,C$ 均为某个素域 $P$ 上的代数，则
+$\Upsilon_{C/B/P}=\Upsilon_{C/B}$。
+
+设 $R,S$ 分别为 $B,C$ 的乘法子集，且 $R$ 的像包含在 $S$ 中。由正合列
+（20.6.1.1）及（20.5.9）得到典范识别
+\begin{equation}
+ \Upsilon_{S^{-1}C/R^{-1}B/A}
+ \simeq S^{-1}\Upsilon_{C/B/A}.
+ \tag{20.6.1.2}
+\end{equation}
+
+\egas{20.6.2}{命题}
+若 $C$ 是相对于 $A$ 形式光滑的 $B$-代数，特别地，若 $C$ 是形式光滑的
+$B$-代数，则 $\Upsilon_{C/B/A}=0$。
+
+这由（20.5.7，ii）得到。
+\cmt{J10-N01}{这里只断言形式光滑性蕴涵非完美性模消失，未断言对一般环的逆命题。
+例如 $A=B=k$、$C=k[\epsilon]/(\epsilon^2)$ 时该非完美性模为零，
+但 $C$ 对 $k$ 并不形式光滑。域扩张的等价判据是下一条在特定条件下的结论。}
+
+\egas{20.6.3}{命题}
+设 $k$ 为域，$K$ 为 $k$ 的扩张。$K/k$ 可分，当且仅当 $\Upsilon_{K/k}=0$。
+换言之，当且仅当典范映射
+\[
+ \Omega^1_k\otimes_k K\longrightarrow\Omega^1_K
+\]
+单射；也等价于每个从 $k$ 到 $K$ 的导子都能延拓为 $K$ 到自身的导子
+（20.4.8）。
+
+由（19.6.1），$K/k$ 可分等价于 $K$ 是形式光滑的 $k$-代数。
+设 $P$ 为 $k$ 的素域。$K/P$ 可分，因此 $K$ 对 $P$ 形式光滑；
+于是 $K$ 对 $k$ 形式光滑，等价于 $K$ 对 $k$ 相对于 $P$ 形式光滑。
+最后，根据（20.5.7，ii），后一条件等价于
+\[
+ v_{K/k/P}:\Omega^1_{k/P}\otimes_k K\longrightarrow\Omega^1_{K/P}
+\]
+有左逆。由于 $K$ 是域，这又等价于其核 $\Upsilon_{K/k}$ 为零。
+导子形式的表述则来自（20.4.8）及向量空间中单射的分裂性。
+
+\egap{20.6.4}
+考虑交换的环同态图
+\begin{equation}
+\begin{tikzcd}
+ A'\arrow[r,"u'"]&B'\arrow[r,"v'"]&C'\\
+ A\arrow[u]\arrow[r,"u"']&B\arrow[u]\arrow[r,"v"']&C.\arrow[u]
+\end{tikzcd}
+\tag{20.6.4.1}
+\end{equation}
+相应图（20.5.7.3）的交换性给出一个唯一的 $C$-线性同态
+\begin{equation}
+ \Upsilon_{C/B/A}\longrightarrow\Upsilon_{C'/B'/A'},
+ \tag{20.6.4.2}
+\end{equation}
+其中右端经 $C\to C'$ 视为 $C$-模；该同态使下图交换且两行正合：
+\begin{equation}
+\begin{gathered}
+\begin{tikzcd}[column sep=small]
+0\arrow[r]&\Upsilon_{C/B/A}\arrow[r]\arrow[d]&
+ \Omega^1_{B/A}\otimes_B C\arrow[r,"v_{C/B/A}"]\arrow[d]&
+ \Omega^1_{C/A}\arrow[d]\\
+0\arrow[r]&\Upsilon_{C'/B'/A'}\arrow[r]&
+ \Omega^1_{B'/A'}\otimes_{B'} C'\arrow[r,"v'_{C'/B'/A'}"']&
+ \Omega^1_{C'/A'}
+\end{tikzcd}\\[-.2em]
+\begin{tikzcd}[column sep=large]
+\Omega^1_{C/A}\arrow[r,"u_{C/B/A}"]\arrow[d]&\Omega^1_{C/B}\arrow[r]\arrow[d]&0\\
+\Omega^1_{C'/A'}\arrow[r,"u'_{C'/B'/A'}"']&\Omega^1_{C'/B'}\arrow[r]&0 .
+\end{tikzcd}
+\end{gathered}
+\tag{20.6.4.3}
+\end{equation}
+这里为排版把同一长图分成两段，两段共有的 $\Omega^1_{C/A}$ 及其竖箭头相同。
+给出（20.6.4.2），也等价于给出一个 $C'$-线性同态
+\begin{equation}
+ \Upsilon_{C/B/A}\otimes_C C'\longrightarrow\Upsilon_{C'/B'/A'}.
+ \tag{20.6.4.4}
+\end{equation}
+它与典范映射 $\Upsilon_{C/B/A}\to\Upsilon_{C/B/A}\otimes_C C'$ 复合后，
+就是（20.6.4.2）。这些同态满足传递性，因而
+$\Upsilon_{C/B/A}$ 是关于三元组 $(A,B,C)$ 的函子。
+
+\egap{20.6.5}
+在（20.6.1）的条件下，为便于后文，引入 $C$-模的链复形 $K_\bullet(C/B/A)$。
+除次数 $0,1$ 外，其各项均为零，并令
+\begin{equation}
+ \begin{cases}
+ K_0(C/B/A)=\Omega^1_{C/A},\\
+ K_1(C/B/A)=\Omega^1_{B/A}\otimes_B C .
+ \end{cases}
+ \tag{20.6.5.1}
+\end{equation}
+微分 $K_1\to K_0$ 取为 $v_{C/B/A}$。于是有典范识别
+\begin{equation}
+ H_0(K_\bullet(C/B/A))=\Omega^1_{C/B},\qquad
+ H_1(K_\bullet(C/B/A))=\Upsilon_{C/B/A}.
+ \tag{20.6.5.2}
+\end{equation}
+
+\egas{20.6.6}{命题}
+在（20.6.1）的假设下，对每个 $C$-模 $L$ 有典范的 $C$-线性同构
+\begin{equation}
+ H^0(K_\bullet(C/B/A),L)\simeq\Der_B(C,L),
+ \tag{20.6.6.1}
+\end{equation}
+\begin{equation}
+ H^1(K_\bullet(C/B/A),L)\simeq\Exalcom_{B/A}(C,L).
+ \tag{20.6.6.2}
+\end{equation}
+事实上，由（20.4.8）及（20.5.6），上链复形
+$\Hom_C(K_\bullet(C/B/A),L)$ 就是
+\[
+ \cdots\longrightarrow0\longrightarrow\Der_A(C,L)
+ \xrightarrow{v^0}\Der_A(B,L)\longrightarrow0\longrightarrow\cdots,
+\]
+其中 $v^0$ 为（20.2.1）中的限制映射。命题因而来自正合列（20.2.4.2）
+以及上同调的定义
+\begin{equation}
+ H^i(K_\bullet,L)=H^i\bigl(\Hom_C(K_\bullet,L)\bigr).
+ \tag{20.6.6.3}
+\end{equation}
+\cmt{J10-N02}{这里的 $H^i(K_\bullet,L)$ 是所写两项 $\Hom$ 复形的普通上同调。
+正文不把它替换为导出函子 $\Ext$，也不假设 $K_0,K_1$ 已是投射模。}
+
+若有交换的环同态图
+\[
+\begin{tikzcd}
+ A'\arrow[r]&B'\arrow[r]&C'\\
+ A\arrow[u]\arrow[r]&B\arrow[u]\arrow[r]&C,\arrow[u]
+\end{tikzcd}
+\]
+则（20.5.4.3）的双同态定义复形的双同态
+\begin{equation}
+ K_\bullet(C/B/A)\longrightarrow K_\bullet(C'/B'/A').
+ \tag{20.6.6.4}
+\end{equation}
+由此在同调或上同调上诱导的双同态，经（20.6.5.2）、（20.6.6.1）、
+（20.6.6.2）的识别，分别就是此前在（20.5.4.3）、（20.6.4.2）、
+（20.2.1）和（18.3.7.2）中定义的同态。最后一项须同时使用正合列
+（20.2.4.2）中算子 $\partial$ 的定义。
+
+\egap{20.6.7}
+对一个 $C$-模复形 $K_\bullet$ 和一个 $C$-模 $L$，存在典范同态
+\[
+ \alpha_i:H^i(K_\bullet,L)\longrightarrow\Hom_C(H_i(K_\bullet),L)
+ \qquad\text{（M，第四章，§6）}.
+\]
+在这里，$\alpha_1$ 可直接由限制映射
+\[
+ \Hom_C(K_1(C/B/A),L)\longrightarrow
+ \Hom_C(H_1(K_\bullet(C/B/A)),L)
+\]
+对 $\Hom_C(K_0(C/B/A),L)$ 的像取商而得到；因为
+$H_1(K_\bullet(C/B/A))=\Ker(K_1\to K_0)$，该像的限制为零。
+结合（20.6.6.2）与（20.6.5.2），得到典范的 $C$-线性同态
+\begin{equation}
+ \Exalcom_{B/A}(C,L)\longrightarrow\Hom_C(\Upsilon_{C/B/A},L).
+ \tag{20.6.7.1}
+\end{equation}
+
+它可以具体描述如下。由（20.2.4.2），每个以 $L$ 为核且为 $A$-平凡的
+$C$ 的 $B$-扩张，均由某个 $A$-导子 $D:B\to L$ 给出。
+根据（20.4.8），它对应于一个 $C$-线性同态
+$f:\Omega^1_{B/A}\otimes_B C\to L$。将该扩张的类映到
+$f|_{\Upsilon_{C/B/A}}$；这个限制只依赖扩张类，不依赖于 $D$ 的选择。
+
+\egas{20.6.8}{定义}
+设 $u:A\to B$、$v:B\to C$ 为两个环同态。对于以 $C$-模 $L$ 为核、
+且为 $A$-平凡的 $C$ 的任一 $B$-扩张 $E$（18.3.7），称其类在
+（20.6.7.1）下的像为\emph{$E$ 的特征同态}，记作
+\[
+ \chi_E:\Upsilon_{C/B/A}\longrightarrow L .
+\]
+还可以用以下方式定义这个同态。
+
+\egas{20.6.9}{命题}
+设 $E$ 为以 $C$-模 $L$ 为核、且为 $A$-平凡的 $C$ 的一个 $B$-扩张。
+则下图交换且两行正合：
+\begin{equation}
+\begin{tikzcd}[column sep=small]
+0\arrow[r]&\Upsilon_{C/B/A}\arrow[r]\arrow[d,"\chi_E"']&
+ \Omega^1_{B/A}\otimes_B C\arrow[r,"v_{C/B/A}"]\arrow[d,"q_{E/B/A}\otimes1_C"']&
+ \Omega^1_{C/A}\arrow[d,"1"]&\\
+0\arrow[r]&L\arrow[r,"\delta_{C/E/A}"']&
+ \Omega^1_{E/A}\otimes_E C\arrow[r,"p_{C/E/A}"']&
+ \Omega^1_{C/A}\arrow[r]&0 .
+\end{tikzcd}
+\tag{20.6.9.1}
+\end{equation}
+这里 $q:B\to E$ 给出 $E$ 的 $B$-扩张结构，$p:E\to C$ 为增广同态。
+
+下行是与 $A\to E$、$p:E\to C=E/L$ 相应的（20.5.12.5）。
+由于 $p$ 满射且扩张为 $A$-平凡，由（20.5.12，iii），该行正合且分裂。
+右方方块的交换性来自 $v=pq$ 及（20.5.2.7）。因此
+$q_{E/B/A}\otimes1_C$ 将 $\Upsilon_{C/B/A}$ 映入
+$\Ker(p_{C/E/A})$，后者经 $\delta_{C/E/A}$ 识别为 $L$。
+
+为核对这个限制正是 $\chi_E$，取 $p$ 的一个 $A$-代数截面 $h:C\to E$，
+并记核的嵌入为 $j:L\to E$。于是
+\[
+ q(b)=h(v(b))+j(D(b))\qquad(b\in B),
+\]
+其中 $D:B\to L$ 为定义这个 $B$-扩张的 $A$-导子。
+写成 $D=f_0d_{B/A}$，其中 $f_0:\Omega^1_{B/A}\to L$ 为 $B$-线性同态。
+对
+\[
+ z=\sum_i d_{B/A}(b_i)\otimes c_i
+ \in\Omega^1_{B/A}\otimes_B C
+\]
+有
+\[
+\begin{aligned}
+(q_{E/B/A}\otimes1_C)(z)
+={}&\sum_i d_{E/A}(h(v(b_i)))\otimes c_i\\
+ &+\sum_i d_{E/A}(j(f_0(d_{B/A}(b_i))))\otimes c_i .
+\end{aligned}
+\]
+第一项为 $(h_{E/C/A}\otimes1_C)(v_{C/B/A}(z))$。
+当 $z\in\Upsilon_{C/B/A}$ 时它为零；第二项按定义为
+$\delta_{C/E/A}(f(z))$，其中 $f$ 是 $f_0$ 对应的 $C$-线性同态。
+而 $f(z)=\chi_E(z)$，这证明左方方块交换。
+
+若只假定 $\delta_{C/E/A}$ 单射，而不要求它有左逆，这个解释仍可用于定义
+$\chi_E$：先限制 $q_{E/B/A}\otimes1_C$ 到 $\Upsilon_{C/B/A}$，再由
+$\delta_{C/E/A}$ 将其像识别为 $L$。
+
+\egas{20.6.10}{推论}
+设 $\mathfrak k$ 为 $B$ 的理想，$C=B/\mathfrak k$、$E=B/\mathfrak k^2$。
+若 $E$ 是以 $\mathfrak k/\mathfrak k^2$ 为核的 $C$ 的一个 $A$-平凡的
+$B$-扩张，则特征同态
+\[
+ \chi_E:\Upsilon_{C/B/A}\longrightarrow\mathfrak k/\mathfrak k^2
+\]
+双射。
+
+事实上，在图（20.6.9.1）中，右边两个竖箭头均双射（20.5.12，ii），
+于是它们在核上诱导的同态也双射。
+
+\egas{20.6.11}{定理}
+设 $u:A\to B$、$v:B\to C$ 为两个环同态，$L$ 为 $C$-模。
+假定满足下列条件之一：
+\begin{enumerate}[label=(\roman*)]
+\item $L$ 为内射 $C$-模。
+\item $\Upsilon_{C/B/A}$ 是 $\Omega^1_{B/A}\otimes_B C$ 的直和因子，
+且 $u_{C/B/A}:\Omega^1_{C/A}\to\Omega^1_{C/B}$ 有右逆。
+\end{enumerate}
+则典范同态
+\[
+ \Exalcom_{B/A}(C,L)\longrightarrow\Hom_C(\Upsilon_{C/B/A},L)
+\]
+双射。特别地，若 $\Omega^1_{C/A}$、$\Omega^1_{C/B}$ 都是投射 $C$-模，
+则对每个 $L$，该同态双射。
+
+为把 $\alpha_1$ 的定义直接用于这两个情形，记
+\[
+\begin{gathered}
+ M=\Omega^1_{B/A}\otimes_B C,\qquad N=\Omega^1_{C/A},\\
+ Y=\Ker(M\to N),\qquad I=\Im(M\to N),\qquad Q=N/I .
+\end{gathered}
+\]
+于是
+\[
+ H^1(K_\bullet,L)
+ =\Hom_C(M,L)\big/\Im\bigl(\Hom_C(N,L)\bigr),
+\]
+而 $\alpha_1$ 由限制到 $Y$ 给出。若 $L$ 内射，每个 $Y\to L$ 都延拓到
+$M$，故 $\alpha_1$ 满射；一个 $M\to L$ 若在 $Y$ 上为零，便分解为
+$M\to I\to L$，且 $I\to L$ 可延拓到 $N$，故 $\alpha_1$ 也单射。
+若满足 $(ii)$，则 $Y\subseteq M$ 分裂且 $I\subseteq N$ 分裂，
+同样的两次延拓仍成立。
+
+还应指出，条件 $(ii)$ 恰好是对所有 $C$-模 $L$ 都使 $\alpha_1$ 双射的
+充要条件：取 $L=Y$，满射性给出 $M\to Y$ 对包含的左逆；再取 $L=I$，
+单射性使 $M\to I$ 延拓为 $N\to I$，后者是包含 $I\to N$ 的左逆。
+于是 $N\to Q$ 有右逆。\cmt{J10-G01}{原文将这部分归结为
+$\alpha_1$ 的定义及Bourbaki的分裂判据。正文展开了两次延拓的论证，
+但没有改变条件，也没有把“对给定 $L$ 双射”误写为足以推出两个分裂条件；
+必要性明确要求对所有 $L$ 双射。}
+
+若 $\Omega^1_{C/A}$ 与 $\Omega^1_{C/B}$ 都投射，则
+\[
+ 0\longrightarrow I\longrightarrow\Omega^1_{C/A}
+ \longrightarrow\Omega^1_{C/B}\longrightarrow0
+\]
+分裂，故 $I$ 是投射模；进而
+\[
+ 0\longrightarrow\Upsilon_{C/B/A}\longrightarrow
+ \Omega^1_{B/A}\otimes_B C\longrightarrow I\longrightarrow0
+\]
+也分裂，从而满足 $(ii)$。
+
+\egas{20.6.12}{推论}
+若 $C$ 是形式光滑的 $A$-代数，则有典范同态
+\begin{equation}
+ \Exalcom_B(C,L)\longrightarrow\Hom_C(\Upsilon_{C/B/A},L).
+ \tag{20.6.12.1}
+\end{equation}
+当（20.6.11）的 $(i)$ 或 $(ii)$ 成立时，它双射。
+
+由 $C$ 的假设，
+$\Exalcom_B(C,L)=\Exalcom_{B/A}(C,L)$；
+（20.6.12.1）就是（20.6.7.1）。
+
+\egas{20.6.13}{推论}
+若 $C$ 为形式光滑的 $A$-代数，且 $\Omega^1_{C/B}$ 是投射 $C$-模，
+则（20.6.12.1）双射。
+
+因为在离散拓扑下，$C$ 对 $A$ 形式光滑蕴涵 $\Omega^1_{C/A}$ 投射
+（20.4.9），故可应用（20.6.11）。

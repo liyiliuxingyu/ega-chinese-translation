@@ -1,0 +1,1536 @@
+{
+  "audit_time_utc": "2026-11-21T09:01:24.946971+00:00",
+  "audit_script": "/workspace/scratch/a886fd56dd2f/integration_20261121/run_baseline_audit.py",
+  "baseline_root": "/workspace/scratch/a886fd56dd2f/restored_20261121/baseline/EGA_v17_handover",
+  "latest_root": "/workspace/scratch/a886fd56dd2f/restored_20261121/latest/EGA_v17_V_supplement_III",
+  "baseline_zip": {
+    "path": "/workspace/scratch/a886fd56dd2f/recovered_20261121/baseline/EGA中文译校_第十七版_完整续作工程包.zip",
+    "bytes": 493141776,
+    "sha256": "f11fa64ad6c3632b09b7379abb99b01b9b72f84cbf65e730d1e74319585295e8",
+    "expected_sha256": "f11fa64ad6c3632b09b7379abb99b01b9b72f84cbf65e730d1e74319585295e8",
+    "extraction_record": "baseline_extraction.json"
+  },
+  "baseline_manifest": {
+    "pass": true,
+    "manifest_entries": 1825,
+    "all_regular_files": 1827,
+    "uncompressed_bytes": 547998859,
+    "manifest_sha256": "d90833a37153cd72e4f97f60f1e2567bdc6267811f9c8a66cc300d92af00d66f",
+    "problems": []
+  },
+  "latest_checksums": {
+    "pass": true,
+    "checksum_entries": 752,
+    "regular_files": 753,
+    "unlisted_files": [],
+    "problems": []
+  },
+  "historical_435": {
+    "mapping_entries": 435,
+    "unique_original_paths": 435,
+    "unique_packaged_paths": 435,
+    "verified_now": 435,
+    "problems": [],
+    "detail": "v16_435_mapping_reverified.json",
+    "scope": "Each mapped payload verified now against its recorded size and SHA; original v16 outer archive not downloaded or re-created by this audit."
+  },
+  "original_sources": [
+    {
+      "id": "EGA-I",
+      "path": "03_sources/EGAI.pdf",
+      "bytes": 28214474,
+      "sha256": "78d209f1d58e53f679944f336eaca5ac73f68bd811b1fbe6e655e1d4270bbb2d",
+      "matches_source_manifest": true,
+      "same_bytes_in_latest": true,
+      "format": "PDF",
+      "pdf_pages_measured": 227,
+      "pdf_page_count_matches": true
+    },
+    {
+      "id": "EGA-II",
+      "path": "03_sources/EGAII.pdf",
+      "bytes": 24238251,
+      "sha256": "14e6ae796a454d5d3de2b7b8ff2b263496f5f3d90a50a0d0860348b12226180e",
+      "matches_source_manifest": true,
+      "same_bytes_in_latest": true,
+      "format": "PDF",
+      "pdf_pages_measured": 219,
+      "pdf_page_count_matches": true
+    },
+    {
+      "id": "EGA-III-1",
+      "path": "03_sources/EGAIII.1.pdf",
+      "bytes": 17646969,
+      "sha256": "50aa0f675c08217fe7c97b00f0610fea719acff4c828a25401e5c72d9ce793d4",
+      "matches_source_manifest": true,
+      "same_bytes_in_latest": true,
+      "format": "PDF",
+      "pdf_pages_measured": 164,
+      "pdf_page_count_matches": true
+    },
+    {
+      "id": "EGA-III-2",
+      "path": "03_sources/EGAIII.2.pdf",
+      "bytes": 9584356,
+      "sha256": "46ebc187608dbf5579a527116ae258ff30e8c68b8de6eb63ec7ea9c158949a71",
+      "matches_source_manifest": true,
+      "same_bytes_in_latest": true,
+      "format": "PDF",
+      "pdf_pages_measured": 90,
+      "pdf_page_count_matches": true
+    },
+    {
+      "id": "EGA-IV-1",
+      "path": "03_sources/EGAIV.1.pdf",
+      "bytes": 28307372,
+      "sha256": "03f02142aef3df09f13f416ac3f78bd898213df894ed3fd86b25f91697256bda",
+      "matches_source_manifest": true,
+      "same_bytes_in_latest": true,
+      "format": "PDF",
+      "pdf_pages_measured": 258,
+      "pdf_page_count_matches": true
+    },
+    {
+      "id": "EGA-IV-2",
+      "path": "03_sources/EGAIV.2.pdf",
+      "bytes": 28142841,
+      "sha256": "9588bedb000e9a9f24685c0bb146aa2384209b14b1928b984d81794499d1226b",
+      "matches_source_manifest": true,
+      "same_bytes_in_latest": true,
+      "format": "PDF",
+      "pdf_pages_measured": 228,
+      "pdf_page_count_matches": true
+    },
+    {
+      "id": "EGA-IV-3",
+      "path": "03_sources/EGAIV.3.pdf",
+      "bytes": 32702874,
+      "sha256": "509ff2bcbadd26fbc7566e6fcd79406eefbe5a8dfc8c984f4703c51f8d7e420f",
+      "matches_source_manifest": true,
+      "same_bytes_in_latest": true,
+      "format": "PDF",
+      "pdf_pages_measured": 254,
+      "pdf_page_count_matches": true
+    },
+    {
+      "id": "EGA-IV-4",
+      "path": "03_sources/EGAIV.4.pdf",
+      "bytes": 44148520,
+      "sha256": "f79e211fcf94d19e200e3dbc96faeeb5a423342137a9ad0bbe4626c555c3f84f",
+      "matches_source_manifest": true,
+      "same_bytes_in_latest": true,
+      "format": "PDF",
+      "pdf_pages_measured": 360,
+      "pdf_page_count_matches": true
+    },
+    {
+      "id": "EGA-V-Vaiello",
+      "path": "03_sources/EGAVaiello.pdf",
+      "bytes": 677332,
+      "sha256": "23a20ef32fd16a1bd623c0c08ac080d04fc94f248de12133b713a19d6b0330d9",
+      "matches_source_manifest": true,
+      "same_bytes_in_latest": true,
+      "format": "PDF",
+      "pdf_pages_measured": 112,
+      "pdf_page_count_matches": true
+    },
+    {
+      "id": "EGA-V-1-2-PS",
+      "path": "03_sources/EGAV1-2.ps",
+      "bytes": 184244,
+      "sha256": "9cf40f1f074c0dd8322a904a0e1008bc6bc858675ae7e0056d637567006bf0ee",
+      "matches_source_manifest": true,
+      "same_bytes_in_latest": true,
+      "format": "PostScript"
+    },
+    {
+      "id": "EGA-V-5-PS",
+      "path": "03_sources/EGAV5.ps",
+      "bytes": 656345,
+      "sha256": "e2578e9ef0d2a55541f2162d0e56f7ddf687d4002f4f166892128bb8dc20224c",
+      "matches_source_manifest": true,
+      "same_bytes_in_latest": true,
+      "format": "PostScript"
+    },
+    {
+      "id": "EGA-V-6-PS",
+      "path": "03_sources/EGAV6.ps",
+      "bytes": 389143,
+      "sha256": "dea07d58c0298d33ed33adde9f75d359157d5567dc7b1563545d9eb412d008f1",
+      "matches_source_manifest": true,
+      "same_bytes_in_latest": true,
+      "format": "PostScript"
+    }
+  ],
+  "new_source": {
+    "path": "03_sources/EGA5_francais.pdf",
+    "bytes": 16097021,
+    "sha256": "24cf8204184b58b18a46e5f63ecc36d6e791b3c8c96a09daac93de96ebd8e830",
+    "pdf_pages_measured": 171
+  },
+  "dot_56": {
+    "expected": 56,
+    "actual": 56,
+    "tex_sha_pass": 56,
+    "treatment_counts": {
+      "new_body": 54,
+      "same_text_collation": 2
+    },
+    "listed_engineering_file_count": 360,
+    "actual_batch_file_count": 360,
+    "engineering_missing": [],
+    "archives": [
+      {
+        "path": "05_Dot/original_archives/Dot对话_续作工程_20261119.zip",
+        "bytes": 41711082,
+        "sha256": "2169db9e55be324b8618f91b4f63361557e0baf7fbcb4a57343d9ba35a1e41a9",
+        "expected_bytes_sha_match": true,
+        "zip_entries": 60,
+        "crc_pass": true,
+        "bad_crc_member": null
+      },
+      {
+        "path": "05_Dot/original_archives/EGA第五卷_第16节几何奇异零点_续译工程.zip",
+        "bytes": 752240,
+        "sha256": "4bb4e9880f5b37fb4ccbfa72c4f7595d30837d319199cfa1fcfce865097a0f15",
+        "expected_bytes_sha_match": true,
+        "zip_entries": 12,
+        "crc_pass": true,
+        "bad_crc_member": null
+      },
+      {
+        "path": "05_Dot/original_archives/EGA第五卷_第16节奇异零点定义_续译工程.zip",
+        "bytes": 762147,
+        "sha256": "6c650798bbc72ed772c559a7d8c32d5f1c84805d82c48c2c2d67c192398a4d21",
+        "expected_bytes_sha_match": true,
+        "zip_entries": 11,
+        "crc_pass": true,
+        "bad_crc_member": null
+      }
+    ],
+    "batches": [
+      {
+        "order": 1,
+        "path": "05_Dot/batches/001/EGA第五卷_第7节_独立续译.tex",
+        "sha256": "7ecc1b94344f524354206092830aa7d1542aeed2bc403f2cf6057a298c29363a",
+        "tex_sha_matches": true,
+        "integration_treatment": "new_body",
+        "current_project_input": "continuations/v_dot_early.tex",
+        "input_exists_in_latest": true,
+        "missing_engineering_files": []
+      },
+      {
+        "order": 2,
+        "path": "05_Dot/batches/002/EGA第五卷_8.1至8.6_独立续译.tex",
+        "sha256": "2e445f596f61687678830809979c6e5d679dc0a7174a8ddb0093fb372a4f1ec7",
+        "tex_sha_matches": true,
+        "integration_treatment": "new_body",
+        "current_project_input": "continuations/v_dot_early.tex",
+        "input_exists_in_latest": true,
+        "missing_engineering_files": []
+      },
+      {
+        "order": 3,
+        "path": "05_Dot/batches/003/EGA第五卷_8.6后预备论证_校订续译.tex",
+        "sha256": "df1b4ba93846a592c302effcbabbadbb8cbf2a62eb277b9db2084b4dd2a8bdb8",
+        "tex_sha_matches": true,
+        "integration_treatment": "new_body",
+        "current_project_input": "continuations/v_dot_early.tex",
+        "input_exists_in_latest": true,
+        "missing_engineering_files": []
+      },
+      {
+        "order": 4,
+        "path": "05_Dot/batches/004/EGA第五卷_8.7及相邻残段_校订续译.tex",
+        "sha256": "fc2d7fa40d01cfd639dee8d1b9e46d8b855acfcc9b22579c1dbf13faa2009526",
+        "tex_sha_matches": true,
+        "integration_treatment": "new_body",
+        "current_project_input": "continuations/v_dot_early.tex",
+        "input_exists_in_latest": true,
+        "missing_engineering_files": []
+      },
+      {
+        "order": 5,
+        "path": "05_Dot/batches/005/EGA第五卷_8.9至8.11_校订续译.tex",
+        "sha256": "73ac6c0ada39af4afcb73c73e5767b92ed5d13b3a3e1a5e479cc349fe209b847",
+        "tex_sha_matches": true,
+        "integration_treatment": "new_body",
+        "current_project_input": "continuations/v_dot_early.tex",
+        "input_exists_in_latest": true,
+        "missing_engineering_files": []
+      },
+      {
+        "order": 6,
+        "path": "05_Dot/batches/006/EGA第五卷_8.12_校订续译.tex",
+        "sha256": "23e47b11c2fa2d4b0a1ab221ecb2d6e8e6c4d72124989f86e965c51ac1dc1076",
+        "tex_sha_matches": true,
+        "integration_treatment": "new_body",
+        "current_project_input": "continuations/v_dot_early.tex",
+        "input_exists_in_latest": true,
+        "missing_engineering_files": []
+      },
+      {
+        "order": 7,
+        "path": "05_Dot/batches/007/EGA第五卷_8.13_校订续译.tex",
+        "sha256": "4c7f72e07f2701f123ea43af17675af301c8f291a195a2a4b503d9c46be14380",
+        "tex_sha_matches": true,
+        "integration_treatment": "new_body",
+        "current_project_input": "continuations/v_dot_early.tex",
+        "input_exists_in_latest": true,
+        "missing_engineering_files": []
+      },
+      {
+        "order": 8,
+        "path": "05_Dot/batches/008/EGA第五卷_8.14至8.15_校订续译.tex",
+        "sha256": "801ea6d17f9d89cc133d7f7982bf6d729c69454cd12c923e2027a3a977af0bb0",
+        "tex_sha_matches": true,
+        "integration_treatment": "new_body",
+        "current_project_input": "continuations/v_dot_early.tex",
+        "input_exists_in_latest": true,
+        "missing_engineering_files": []
+      },
+      {
+        "order": 9,
+        "path": "05_Dot/batches/009/EGA第五卷_8.16至8.17_校订续译.tex",
+        "sha256": "950072c77726bfe4017b8166c3f025c6914db5c2df9e29cbecd0d3509d48bc71",
+        "tex_sha_matches": true,
+        "integration_treatment": "new_body",
+        "current_project_input": "continuations/v_dot_early.tex",
+        "input_exists_in_latest": true,
+        "missing_engineering_files": []
+      },
+      {
+        "order": 10,
+        "path": "05_Dot/batches/010/EGA第五卷_8.18_校订续译.tex",
+        "sha256": "2e26a0d1614b48c785c96d879d6fe461600d685cc8e25931930fe49e62126962",
+        "tex_sha_matches": true,
+        "integration_treatment": "new_body",
+        "current_project_input": "continuations/v_dot_early.tex",
+        "input_exists_in_latest": true,
+        "missing_engineering_files": []
+      },
+      {
+        "order": 11,
+        "path": "05_Dot/batches/011/EGA第五卷_8.18后线性系讨论_第一批.tex",
+        "sha256": "c72d4728edc987cb39aa4e8eeca5eff951940107628e5b05f9383e496e68b36a",
+        "tex_sha_matches": true,
+        "integration_treatment": "new_body",
+        "current_project_input": "continuations/v_dot_early.tex",
+        "input_exists_in_latest": true,
+        "missing_engineering_files": []
+      },
+      {
+        "order": 12,
+        "path": "05_Dot/batches/012/EGA第五卷_第8节末域论讨论.tex",
+        "sha256": "34d60dc1c655448afa767c327ce00ee78771539780df22f9e7f4a3109a5ab4d9",
+        "tex_sha_matches": true,
+        "integration_treatment": "new_body",
+        "current_project_input": "continuations/v_dot_early.tex",
+        "input_exists_in_latest": true,
+        "missing_engineering_files": []
+      },
+      {
+        "order": 13,
+        "path": "05_Dot/batches/013/EGA第五卷_9.1至9.2_校订续译.tex",
+        "sha256": "a25a7c0a369d1b722a24884b8e75d4772ec37abab201c8c4b602657a467eb2f3",
+        "tex_sha_matches": true,
+        "integration_treatment": "new_body",
+        "current_project_input": "continuations/v_dot_early.tex",
+        "input_exists_in_latest": true,
+        "missing_engineering_files": []
+      },
+      {
+        "order": 14,
+        "path": "05_Dot/batches/014/EGA第五卷_9.3_校订续译.tex",
+        "sha256": "debd6212dce1b295319f4158585fe5205b2b6d5ccbd58a81ac62bcaa3df403ea",
+        "tex_sha_matches": true,
+        "integration_treatment": "new_body",
+        "current_project_input": "continuations/v_dot_early.tex",
+        "input_exists_in_latest": true,
+        "missing_engineering_files": []
+      },
+      {
+        "order": 15,
+        "path": "05_Dot/batches/015/EGA第五卷_9.4至10.1_校订续译.tex",
+        "sha256": "e3592ca0b3e051b57481b2d1fb3103616306ba8de3bd28c90a5c40c7b4e80a0f",
+        "tex_sha_matches": true,
+        "integration_treatment": "new_body",
+        "current_project_input": "continuations/v_dot_early.tex",
+        "input_exists_in_latest": true,
+        "missing_engineering_files": []
+      },
+      {
+        "order": 16,
+        "path": "05_Dot/batches/016/EGA第五卷_10.2_校订续译.tex",
+        "sha256": "306a200b352c163da234da79ad8b85311b9e4c57dea58f27ce8ba37eb0a19eec",
+        "tex_sha_matches": true,
+        "integration_treatment": "new_body",
+        "current_project_input": "continuations/v_dot_early.tex",
+        "input_exists_in_latest": true,
+        "missing_engineering_files": []
+      },
+      {
+        "order": 17,
+        "path": "05_Dot/batches/017/EGA第五卷_10.3_校订续译.tex",
+        "sha256": "1f75071362315418f5c6871b9e72068d0f61df92c781267cd9a845782dd807a0",
+        "tex_sha_matches": true,
+        "integration_treatment": "new_body",
+        "current_project_input": "continuations/v_dot_early.tex",
+        "input_exists_in_latest": true,
+        "missing_engineering_files": []
+      },
+      {
+        "order": 18,
+        "path": "05_Dot/batches/018/EGA第五卷_10.4_校订续译.tex",
+        "sha256": "1edb09b445ca9384329051b551a2e188464d6fd70f9eadfb43a3bb39a35fc476",
+        "tex_sha_matches": true,
+        "integration_treatment": "new_body",
+        "current_project_input": "continuations/v_dot_early.tex",
+        "input_exists_in_latest": true,
+        "missing_engineering_files": []
+      },
+      {
+        "order": 19,
+        "path": "05_Dot/batches/019/EGA第五卷_12节关联概形_校订续译.tex",
+        "sha256": "4db1b0865036e71bc89fc83473ec7ca5f40c818026e783627660424e82b96e22",
+        "tex_sha_matches": true,
+        "integration_treatment": "new_body",
+        "current_project_input": "continuations/v_dot_middle.tex",
+        "input_exists_in_latest": true,
+        "missing_engineering_files": []
+      },
+      {
+        "order": 20,
+        "path": "05_Dot/batches/020/EGA第五卷_12节纤维结构_校订续译.tex",
+        "sha256": "76e06e0fa9ff2353d5735a0521629e97b3a9c59069bb01e24020d044e7608e11",
+        "tex_sha_matches": true,
+        "integration_treatment": "new_body",
+        "current_project_input": "continuations/v_dot_middle.tex",
+        "input_exists_in_latest": true,
+        "missing_engineering_files": []
+      },
+      {
+        "order": 21,
+        "path": "05_Dot/batches/021/EGA第五卷_12节一般截面推广_校订续译.tex",
+        "sha256": "b083faab147c7cafa0c98b6dbb869e39c21bdd614c42cc2d0d02e912abc8b6fc",
+        "tex_sha_matches": true,
+        "integration_treatment": "new_body",
+        "current_project_input": "continuations/v_dot_middle.tex",
+        "input_exists_in_latest": true,
+        "missing_engineering_files": []
+      },
+      {
+        "order": 22,
+        "path": "05_Dot/batches/022/EGA第五卷_12节正则截面_校订续译.tex",
+        "sha256": "416f5d7cb0095455889accb5678c45916b38d8955f383f42ef996e48cd11c2c7",
+        "tex_sha_matches": true,
+        "integration_treatment": "new_body",
+        "current_project_input": "continuations/v_dot_middle.tex",
+        "input_exists_in_latest": true,
+        "missing_engineering_files": []
+      },
+      {
+        "order": 23,
+        "path": "05_Dot/batches/023/EGA第五卷_12节维数条件与推广计划_校订续译.tex",
+        "sha256": "ae9474892ca1f54877ed21ccdd76d08877c9e180a7b7397d1dd5675aee7fcf1a",
+        "tex_sha_matches": true,
+        "integration_treatment": "new_body",
+        "current_project_input": "continuations/v_dot_middle.tex",
+        "input_exists_in_latest": true,
+        "missing_engineering_files": []
+      },
+      {
+        "order": 24,
+        "path": "05_Dot/batches/024/EGA第五卷_12节奇异关联簇_校订续译.tex",
+        "sha256": "05b11edba58c1d40df1ebe7eb0e63de8682df3bd9f578605982fbb2e017f0d8f",
+        "tex_sha_matches": true,
+        "integration_treatment": "new_body",
+        "current_project_input": "continuations/v_dot_middle.tex",
+        "input_exists_in_latest": true,
+        "missing_engineering_files": []
+      },
+      {
+        "order": 25,
+        "path": "05_Dot/batches/025/EGA第五卷_12节退化层维数_校订续译.tex",
+        "sha256": "2bdb76b3c9428ba1dd64d14a14b81889fb357d00d1661aa9be1759c34cf4b846",
+        "tex_sha_matches": true,
+        "integration_treatment": "new_body",
+        "current_project_input": "continuations/v_dot_middle.tex",
+        "input_exists_in_latest": true,
+        "missing_engineering_files": []
+      },
+      {
+        "order": 26,
+        "path": "05_Dot/batches/026/EGA第五卷_12节线性截面族_校订续译.tex",
+        "sha256": "71aa279bd6b79795f8141eaf76cd262a58180bcedf5147d49d2b49b7f1ef0daa",
+        "tex_sha_matches": true,
+        "integration_treatment": "new_body",
+        "current_project_input": "continuations/v_dot_middle.tex",
+        "input_exists_in_latest": true,
+        "missing_engineering_files": []
+      },
+      {
+        "order": 27,
+        "path": "05_Dot/batches/027/EGA第五卷_12节末与13节定义_校订续译.tex",
+        "sha256": "c015be64ee4be922698065e7997e1b0c5ad5de9a492dd0978414a6b2e64055b5",
+        "tex_sha_matches": true,
+        "integration_treatment": "new_body",
+        "current_project_input": "continuations/v_dot_middle.tex",
+        "input_exists_in_latest": true,
+        "missing_engineering_files": []
+      },
+      {
+        "order": 28,
+        "path": "05_Dot/batches/028/EGA第五卷_13.2归约_校订续译.tex",
+        "sha256": "de983faef363680872db2b888bd7a285f5eca26e001ceb1941cd487f5cd2ab05",
+        "tex_sha_matches": true,
+        "integration_treatment": "new_body",
+        "current_project_input": "continuations/v_dot_middle.tex",
+        "input_exists_in_latest": true,
+        "missing_engineering_files": []
+      },
+      {
+        "order": 29,
+        "path": "05_Dot/batches/029/EGA第五卷_13.3陈述_校订续译.tex",
+        "sha256": "3376b2a0316e6da711b3134bb5ae281a8822803baf7ecc00ab5fcb1c7b3d9feb",
+        "tex_sha_matches": true,
+        "integration_treatment": "new_body",
+        "current_project_input": "continuations/v_dot_middle.tex",
+        "input_exists_in_latest": true,
+        "missing_engineering_files": []
+      },
+      {
+        "order": 30,
+        "path": "05_Dot/batches/030/EGA第五卷_13.2初等邻域构造_校订续译.tex",
+        "sha256": "cc0b44c8f61c0862424ba98e015d963f3b38a679cd01b08c273608c32ad11307",
+        "tex_sha_matches": true,
+        "integration_treatment": "new_body",
+        "current_project_input": "continuations/v_dot_middle.tex",
+        "input_exists_in_latest": true,
+        "missing_engineering_files": []
+      },
+      {
+        "order": 31,
+        "path": "05_Dot/batches/031/EGA第五卷_13.3证明归约_校订续译.tex",
+        "sha256": "a814d857f3fff278b30459906e4a8a0b54512dd92061ff100eabf9de1cb877d1",
+        "tex_sha_matches": true,
+        "integration_treatment": "new_body",
+        "current_project_input": "continuations/v_dot_middle.tex",
+        "input_exists_in_latest": true,
+        "missing_engineering_files": []
+      },
+      {
+        "order": 32,
+        "path": "05_Dot/batches/032/EGA第五卷_13.3一般截面归纳_校订续译.tex",
+        "sha256": "2fc10527e50375e75d4688252e69da38e9391ccfb8b78fdb5c0658ff40f2bf79",
+        "tex_sha_matches": true,
+        "integration_treatment": "new_body",
+        "current_project_input": "continuations/v_dot_middle.tex",
+        "input_exists_in_latest": true,
+        "missing_engineering_files": []
+      },
+      {
+        "order": 33,
+        "path": "05_Dot/batches/033/EGA第五卷_13.3超平面情形证明_校订续译.tex",
+        "sha256": "7b2ee65dbd3a00d5e1c6fb527f410a63b2bb850f45f9305fc5b4a8ce3042fdd3",
+        "tex_sha_matches": true,
+        "integration_treatment": "new_body",
+        "current_project_input": "continuations/v_dot_middle.tex",
+        "input_exists_in_latest": true,
+        "missing_engineering_files": []
+      },
+      {
+        "order": 34,
+        "path": "05_Dot/batches/034/EGA第五卷_13.4有限域与连通性_校订续译.tex",
+        "sha256": "536434aad8cedf4a1974ca068579c7baebf5d073be4ae315c2d8f5d6c728e98c",
+        "tex_sha_matches": true,
+        "integration_treatment": "new_body",
+        "current_project_input": "continuations/v_dot_middle.tex",
+        "input_exists_in_latest": true,
+        "missing_engineering_files": []
+      },
+      {
+        "order": 35,
+        "path": "05_Dot/batches/035/EGA第五卷_13.4有限点集邻域_校订续译.tex",
+        "sha256": "2d2a1e910613c34df21af18c0b345bc7e6ed0173d6257ff761969eea62d2a183",
+        "tex_sha_matches": true,
+        "integration_treatment": "new_body",
+        "current_project_input": "continuations/v_dot_middle.tex",
+        "input_exists_in_latest": true,
+        "missing_engineering_files": []
+      },
+      {
+        "order": 36,
+        "path": "05_Dot/batches/036/EGA第五卷_13.4一般基底_校订续译.tex",
+        "sha256": "46c7f159b8987d395817e0b4b60947395d2c2ff3de9e880b8aed17a7026670eb",
+        "tex_sha_matches": true,
+        "integration_treatment": "new_body",
+        "current_project_input": "continuations/v_dot_middle.tex",
+        "input_exists_in_latest": true,
+        "missing_engineering_files": []
+      },
+      {
+        "order": 37,
+        "path": "05_Dot/batches/037/EGA第五卷_13.4拓扑结构_校订续译.tex",
+        "sha256": "919e37af0df931f0e0dda7651aa35a6ec66ac8412adde70c03201dfb96ae26c3",
+        "tex_sha_matches": true,
+        "integration_treatment": "new_body",
+        "current_project_input": "continuations/v_dot_middle.tex",
+        "input_exists_in_latest": true,
+        "missing_engineering_files": []
+      },
+      {
+        "order": 38,
+        "path": "05_Dot/batches/038/EGA第五卷_14锥投影构造_校订续译.tex",
+        "sha256": "9c33dc5c2b130e6e7811d2e13dd27552dbfe7b5f96f81efa38deb60baf84feb0",
+        "tex_sha_matches": true,
+        "integration_treatment": "new_body",
+        "current_project_input": "continuations/v_dot_late.tex",
+        "input_exists_in_latest": true,
+        "missing_engineering_files": []
+      },
+      {
+        "order": 39,
+        "path": "05_Dot/batches/039/EGA第五卷_14一般中心_校订续译.tex",
+        "sha256": "528c086837501cb3c44f6ade1ea0238ce1c397e36ea167b3d11eaae5d1988895",
+        "tex_sha_matches": true,
+        "integration_treatment": "new_body",
+        "current_project_input": "continuations/v_dot_late.tex",
+        "input_exists_in_latest": true,
+        "missing_engineering_files": []
+      },
+      {
+        "order": 40,
+        "path": "05_Dot/batches/040/EGA第五卷_14正则截面与爆破_校订续译.tex",
+        "sha256": "2125248b6dccc418efb2adaa991e936741fa5fd12a293a9265e9b39d71f88173",
+        "tex_sha_matches": true,
+        "integration_treatment": "new_body",
+        "current_project_input": "continuations/v_dot_late.tex",
+        "input_exists_in_latest": true,
+        "missing_engineering_files": []
+      },
+      {
+        "order": 41,
+        "path": "05_Dot/batches/041/EGA第五卷_14.1命题陈述_校订续译.tex",
+        "sha256": "6b490867b908d4ce7e811f22e23c73b3b50f5ff9d562ab958696598429e05df9",
+        "tex_sha_matches": true,
+        "integration_treatment": "new_body",
+        "current_project_input": "continuations/v_dot_late.tex",
+        "input_exists_in_latest": true,
+        "missing_engineering_files": []
+      },
+      {
+        "order": 42,
+        "path": "05_Dot/batches/042/EGA第五卷_14.1证明残文_校订续译.tex",
+        "sha256": "ba0b36fd3d0a72d080218b9b31275eb560f40d7b573b7ba35d1f3a0cadf974a1",
+        "tex_sha_matches": true,
+        "integration_treatment": "new_body",
+        "current_project_input": "continuations/v_dot_late.tex",
+        "input_exists_in_latest": true,
+        "missing_engineering_files": []
+      },
+      {
+        "order": 43,
+        "path": "05_Dot/batches/043/EGA第五卷_14.2有限投影_校订续译.tex",
+        "sha256": "187c503878e1a5e52df36469c8e94035447f6ea348e518da915d80b21fb38f91",
+        "tex_sha_matches": true,
+        "integration_treatment": "new_body",
+        "current_project_input": "continuations/v_dot_late.tex",
+        "input_exists_in_latest": true,
+        "missing_engineering_files": []
+      },
+      {
+        "order": 44,
+        "path": "05_Dot/batches/044/EGA第五卷_14.3平坦性_校订续译.tex",
+        "sha256": "1654ddb2ac525ff5f71e84b3f23dd7221e8553bc1e0be9778d544ab953c1322e",
+        "tex_sha_matches": true,
+        "integration_treatment": "new_body",
+        "current_project_input": "continuations/v_dot_late.tex",
+        "input_exists_in_latest": true,
+        "missing_engineering_files": []
+      },
+      {
+        "order": 45,
+        "path": "05_Dot/batches/045/EGA第五卷_锥投影微分性质导言_校订续译.tex",
+        "sha256": "801e7d7102be174922ad04617bf594708570d42f6d8521e670bdcb0a0a0d3dd7",
+        "tex_sha_matches": true,
+        "integration_treatment": "new_body",
+        "current_project_input": "continuations/v_dot_late.tex",
+        "input_exists_in_latest": true,
+        "missing_engineering_files": []
+      },
+      {
+        "order": 46,
+        "path": "05_Dot/batches/046/EGA第五卷_命题14.4_校订续译.tex",
+        "sha256": "79857c686155f64b9e822a342f34a8325f0f8bcbe066bff8340535b7cd12594f",
+        "tex_sha_matches": true,
+        "integration_treatment": "new_body",
+        "current_project_input": "continuations/v_dot_late.tex",
+        "input_exists_in_latest": true,
+        "missing_engineering_files": []
+      },
+      {
+        "order": 47,
+        "path": "05_Dot/batches/047/EGA第五卷_命题14.5与推论14.6_校订续译.tex",
+        "sha256": "d0146ca2199e9860bf4b4d5590ce1e3bdf4f0e2fa552530bdbc210625c5ce7c6",
+        "tex_sha_matches": true,
+        "integration_treatment": "new_body",
+        "current_project_input": "continuations/v_dot_late.tex",
+        "input_exists_in_latest": true,
+        "missing_engineering_files": []
+      },
+      {
+        "order": 48,
+        "path": "05_Dot/batches/048/EGA第五卷_锥投影性质辨析_校订续译.tex",
+        "sha256": "597f7eb71d806b520de0938d9350ca216fe18587721824ddfc70004373157a73",
+        "tex_sha_matches": true,
+        "integration_treatment": "new_body",
+        "current_project_input": "continuations/v_dot_late.tex",
+        "input_exists_in_latest": true,
+        "missing_engineering_files": []
+      },
+      {
+        "order": 49,
+        "path": "05_Dot/batches/049/EGA第五卷_锥投影普遍图式_校订续译.tex",
+        "sha256": "8e97ae6de5c4393a338b65a8a6bef34aaa6ea460b523324c22ef262d793c7da4",
+        "tex_sha_matches": true,
+        "integration_treatment": "new_body",
+        "current_project_input": "continuations/v_dot_late.tex",
+        "input_exists_in_latest": true,
+        "missing_engineering_files": []
+      },
+      {
+        "order": 50,
+        "path": "05_Dot/batches/050/EGA第五卷_第15节公理化导言_校订续译.tex",
+        "sha256": "70800fe0770bbb4069e09c03e3718218b4ecfac773f766c8d82c2074af1a2829",
+        "tex_sha_matches": true,
+        "integration_treatment": "new_body",
+        "current_project_input": "continuations/v_dot_late.tex",
+        "input_exists_in_latest": true,
+        "missing_engineering_files": []
+      },
+      {
+        "order": 51,
+        "path": "05_Dot/batches/051/EGA第五卷_参数族与基变换_校订续译.tex",
+        "sha256": "46ec1b59637022d52c9ff76509112e4382d3f4f0491d48175a8b6b3dee4db239",
+        "tex_sha_matches": true,
+        "integration_treatment": "new_body",
+        "current_project_input": "continuations/v_dot_late.tex",
+        "input_exists_in_latest": true,
+        "missing_engineering_files": []
+      },
+      {
+        "order": 52,
+        "path": "05_Dot/batches/052/EGA第五卷_平坦性假设与非空性公理_校订续译.tex",
+        "sha256": "19d70c6dcb987f55b58bfa8cc1511a3c8773eeb6fcc4e49961688f55a1a8a2c5",
+        "tex_sha_matches": true,
+        "integration_treatment": "new_body",
+        "current_project_input": "continuations/v_dot_late.tex",
+        "input_exists_in_latest": true,
+        "missing_engineering_files": []
+      },
+      {
+        "order": 53,
+        "path": "05_Dot/batches/053/EGA第五卷_泛截面光滑性条件_校订续译.tex",
+        "sha256": "172f4da4df5d27a42b6d55d9578de87a431e17438c6c511bc63399a4070d625b",
+        "tex_sha_matches": true,
+        "integration_treatment": "new_body",
+        "current_project_input": "continuations/v_dot_late.tex",
+        "input_exists_in_latest": true,
+        "missing_engineering_files": []
+      },
+      {
+        "order": 54,
+        "path": "05_Dot/batches/054/EGA第五卷_第15节推广计划结语_校订续译.tex",
+        "sha256": "4714381ca38c99ddf8961f384c677fe3dae8d777c2db0834f26c747d18989b6c",
+        "tex_sha_matches": true,
+        "integration_treatment": "new_body",
+        "current_project_input": "continuations/v_dot_late.tex",
+        "input_exists_in_latest": true,
+        "missing_engineering_files": []
+      },
+      {
+        "order": 55,
+        "path": "05_Dot/batches/055/EGA第五卷_第16节奇异零点定义_校订续译.tex",
+        "sha256": "880fdb71fdab73b7f4fb7cb08395cfacf9a3b0ee2f722c748209f5e34e714ad4",
+        "tex_sha_matches": true,
+        "integration_treatment": "same_text_collation",
+        "current_project_input": "text/v1_2.tex",
+        "input_exists_in_latest": true,
+        "missing_engineering_files": []
+      },
+      {
+        "order": 56,
+        "path": "05_Dot/batches/056/EGA第五卷_第16节几何奇异零点_校订续译.tex",
+        "sha256": "cbeb9dcf18feeadba8681bf2b7013e6e0b9c544a528ea5e05afee2ec90152ec4",
+        "tex_sha_matches": true,
+        "integration_treatment": "same_text_collation",
+        "current_project_input": "text/v1_2.tex",
+        "input_exists_in_latest": true,
+        "missing_engineering_files": []
+      }
+    ]
+  },
+  "directory_sizes": {
+    "baseline": {
+      "00_START_HERE": {
+        "files": 4,
+        "bytes": 6767
+      },
+      "01_project": {
+        "files": 697,
+        "bytes": 93048009
+      },
+      "02_deliverables": {
+        "files": 4,
+        "bytes": 10355848
+      },
+      "03_sources": {
+        "files": 12,
+        "bytes": 214892721
+      },
+      "04_history": {
+        "files": 424,
+        "bytes": 128156157
+      },
+      "05_Dot": {
+        "files": 364,
+        "bytes": 44171396
+      },
+      "07_integration_records": {
+        "files": 316,
+        "bytes": 56760289
+      },
+      "[root]": {
+        "files": 6,
+        "bytes": 607672
+      }
+    },
+    "latest": {
+      "03_sources": {
+        "files": 13,
+        "bytes": 230989742
+      },
+      "05_Dot_new_batches": {
+        "files": 22,
+        "bytes": 19364768
+      },
+      "[root]": {
+        "files": 3,
+        "bytes": 90161
+      },
+      "project": {
+        "files": 715,
+        "bytes": 93723470
+      }
+    }
+  },
+  "project_comparison": {
+    "baseline_files": 697,
+    "latest_files": 715,
+    "unchanged_same_path": 613,
+    "changed_same_path": 15,
+    "moved_identical": 68,
+    "not_in_latest": 1,
+    "genuinely_new_paths": 19,
+    "changed_paths": [
+      "HANDOVER_STATE.json",
+      "PENDING_ISSUES.md",
+      "PROGRESS.md",
+      "README.md",
+      "SOURCE_MAP.md",
+      "frontmatter.tex",
+      "main.pdf",
+      "main.tex",
+      "preamble.tex",
+      "report.pdf",
+      "report.tex",
+      "report_single.tex",
+      "single.tex",
+      "text/remaining.tex",
+      "text/v1_2.tex"
+    ],
+    "relocated": [
+      {
+        "old": "checks/DOT_BATCHES.json",
+        "new": "checks/v17-baseline/DOT_BATCHES.json",
+        "bytes": 81001,
+        "sha256": "1a2c2eec1f312d3411a4ad9648e27b66cd55a26fffcf6e7b98de7430baf13bbc"
+      },
+      {
+        "old": "checks/HANDOVER_REVIEW.md",
+        "new": "checks/v17-baseline/HANDOVER_REVIEW.md",
+        "bytes": 1037,
+        "sha256": "ae203af44f39023eb2167d8094f878e3301f20ee2cf408bd589ef9ad98e01341"
+      },
+      {
+        "old": "checks/VISUAL_REVIEW.json",
+        "new": "checks/v17-baseline/VISUAL_REVIEW.json",
+        "bytes": 3566,
+        "sha256": "1892108b466e28b73230a8f4a7647f7ec07654b7da1d1357d65dfa56e6e63d7c"
+      },
+      {
+        "old": "checks/VISUAL_REVIEW.md",
+        "new": "checks/v17-baseline/VISUAL_REVIEW.md",
+        "bytes": 2661,
+        "sha256": "e82f3c88e2012177f751ceb15c14cbe6f84c734412fcb9d14b218d74a40bd5b0"
+      },
+      {
+        "old": "checks/baseline_v16_counters.json",
+        "new": "checks/v17-baseline/baseline_v16_counters.json",
+        "bytes": 49562,
+        "sha256": "01403b1cd323971c79eaddcd4000179ce70c074ebe5d4881bbae9a111601a324"
+      },
+      {
+        "old": "checks/baseline_v16_sources.json",
+        "new": "checks/v17-baseline/baseline_v16_sources.json",
+        "bytes": 16846,
+        "sha256": "56b1513a2392bb3a49202e903c5e8b099d08c3c4efc69fcf2e00af03a224b6bd"
+      },
+      {
+        "old": "checks/build_log_summary.json",
+        "new": "checks/v17-baseline/build_log_summary.json",
+        "bytes": 1639,
+        "sha256": "0c2bb9e9694082d1adde7953c251b2b01eb17f805e207e415f2b257190e164b2"
+      },
+      {
+        "old": "checks/build_logs/audit_single.log",
+        "new": "checks/v17-baseline/build_logs/audit_single.log",
+        "bytes": 53880,
+        "sha256": "cef6f0e2b540e3189180a0531b404ad8f2ff9af1726d1d190caf204ebf4323c9"
+      },
+      {
+        "old": "checks/build_logs/book_single.log",
+        "new": "checks/v17-baseline/build_logs/book_single.log",
+        "bytes": 68049,
+        "sha256": "8382a138a40e5ee6643bc58fa65271bf3ae1c5c442fbdcb24d8cd338f63d2818"
+      },
+      {
+        "old": "checks/build_logs/main.log",
+        "new": "checks/v17-baseline/build_logs/main.log",
+        "bytes": 70467,
+        "sha256": "7911cec29f4992b499839ace7909c88f9940b315b682c5c318e9eef3ab807f37"
+      },
+      {
+        "old": "checks/build_logs/report.log",
+        "new": "checks/v17-baseline/build_logs/report.log",
+        "bytes": 54341,
+        "sha256": "2215d833a836b0dae1524ed3aff544b82e6525d3da91ed88081bb2503412576f"
+      },
+      {
+        "old": "checks/check_build_logs.py",
+        "new": "checks/v17-baseline/check_build_logs.py",
+        "bytes": 1382,
+        "sha256": "ad7e33833444f49bc19e3cdc583a2afda41f99b47feb2162a2e5f8f1b57198e1"
+      },
+      {
+        "old": "checks/check_structure.py",
+        "new": "checks/v17-baseline/check_structure.py",
+        "bytes": 4250,
+        "sha256": "83cc154421d849c60b7fd062adf9996d908e78678c1cb93f156a9d8e9c05c337"
+      },
+      {
+        "old": "checks/current_sources_sha256.json",
+        "new": "checks/v17-baseline/current_sources_sha256.json",
+        "bytes": 19460,
+        "sha256": "2abb72d952ae030bc4f0129c99cb56e2985b11c275176c001bb4a0ac869ddabd"
+      },
+      {
+        "old": "checks/dot_integration/early/early_changes.json",
+        "new": "checks/v17-baseline/dot_integration/early/early_changes.json",
+        "bytes": 12371,
+        "sha256": "4b844f6e6c7dd43dc42038598a956f4440e25409366e48cbbcabc7baaa82baf1"
+      },
+      {
+        "old": "checks/dot_integration/early/early_sources.json",
+        "new": "checks/v17-baseline/dot_integration/early/early_sources.json",
+        "bytes": 25224,
+        "sha256": "f604caa363a8b9870f36f11d6dbaba7b692b326d5e4628b20c8e9c1d09e1ddbe"
+      },
+      {
+        "old": "checks/dot_integration/early/integration_notes.md",
+        "new": "checks/v17-baseline/dot_integration/early/integration_notes.md",
+        "bytes": 2865,
+        "sha256": "0efbf2ba4cb955668ca83a7c0dd0f7fd15bbeba92ba01ec20f4054be882501ef"
+      },
+      {
+        "old": "checks/dot_integration/late/integration_notes.json",
+        "new": "checks/v17-baseline/dot_integration/late/integration_notes.json",
+        "bytes": 7366,
+        "sha256": "22dacfc0918b50baa30afc625d365d73fc963ac1dbe76a882fe80d489b50909a"
+      },
+      {
+        "old": "checks/dot_integration/late/integration_notes.md",
+        "new": "checks/v17-baseline/dot_integration/late/integration_notes.md",
+        "bytes": 4602,
+        "sha256": "aebe3b5ca8f1293abf6b4307cf4f0f87de2c2f9f8692fb55618454071669d935"
+      },
+      {
+        "old": "checks/dot_integration/late/local_validation.json",
+        "new": "checks/v17-baseline/dot_integration/late/local_validation.json",
+        "bytes": 865,
+        "sha256": "8cb110a74fc268a316edf856c669a4a384d353dbc5812bb8a93815c77b6280e1"
+      },
+      {
+        "old": "checks/dot_integration/middle/integration_notes.json",
+        "new": "checks/v17-baseline/dot_integration/middle/integration_notes.json",
+        "bytes": 47359,
+        "sha256": "d9ce6e3cf0f0b0b860b54922d2ed1ba81d798af27e19a38a612b045085919489"
+      },
+      {
+        "old": "checks/dot_integration/middle/integration_notes.md",
+        "new": "checks/v17-baseline/dot_integration/middle/integration_notes.md",
+        "bytes": 7453,
+        "sha256": "341ee37d8a275938158c3bbf8a5b4ca2d83faabcb97273330696266d8f0824ab"
+      },
+      {
+        "old": "checks/dot_integration/short_changes.json",
+        "new": "checks/v17-baseline/dot_integration/short_changes.json",
+        "bytes": 21003,
+        "sha256": "a2b267f7224da0e76116ccd8f8b9e09d34f652c62f66b9c06a4b0d946d643793"
+      },
+      {
+        "old": "checks/dot_integration/short_collation.diff",
+        "new": "checks/v17-baseline/dot_integration/short_collation.diff",
+        "bytes": 24290,
+        "sha256": "1ba2d497b26d4bb88db2f5e5eece60b94a1da8fcde488e328cc12c13475a61cd"
+      },
+      {
+        "old": "checks/final_visual_binding.json",
+        "new": "checks/v17-baseline/final_visual_binding.json",
+        "bytes": 14782,
+        "sha256": "c1d53899fc66058dba45e37f53c83b7d4c477cb791119179788c3fc70498d71b"
+      },
+      {
+        "old": "checks/layout_repairs.json",
+        "new": "checks/v17-baseline/layout_repairs.json",
+        "bytes": 11119,
+        "sha256": "274cf6783cb4229e91eeaf50cbb204544a97daf7e99f792008646319740d2a9c"
+      },
+      {
+        "old": "checks/output_verification.json",
+        "new": "checks/v17-baseline/output_verification.json",
+        "bytes": 2138,
+        "sha256": "c7f517ab7f4795841bdf4355115dcacc6c0c042f31703815fca6ae9e490c26b9"
+      },
+      {
+        "old": "checks/parity_console.txt",
+        "new": "checks/v17-baseline/parity_console.txt",
+        "bytes": 2380,
+        "sha256": "f222633810674917ebb802e4a2cc5e2941336f5e997eb91d14760e434be4d473"
+      },
+      {
+        "old": "checks/preservation_check.json",
+        "new": "checks/v17-baseline/preservation_check.json",
+        "bytes": 161522,
+        "sha256": "07f99d7290643400e1a3f5c36bb88c23f09083a82188d3c13774b06bdb9bc1bc"
+      },
+      {
+        "old": "checks/preservation_check.md",
+        "new": "checks/v17-baseline/preservation_check.md",
+        "bytes": 3920,
+        "sha256": "0071ea10b7957a10c5daf6bbcf4939feb90f1a9aa99cc790d971e771af5fe996"
+      },
+      {
+        "old": "checks/relocation_check.json",
+        "new": "checks/v17-baseline/relocation_check.json",
+        "bytes": 27009,
+        "sha256": "6c04414364b4302788bfa527196364edcfaf8267f003cee8f58f87f31791a7bb"
+      },
+      {
+        "old": "checks/relocation_check.md",
+        "new": "checks/v17-baseline/relocation_check.md",
+        "bytes": 4884,
+        "sha256": "e9253fbb431ecce81b1967f415bbb1573a652d775cef99cd57a484e2a3fb9b47"
+      },
+      {
+        "old": "checks/relocation_logs/copied_files.json",
+        "new": "checks/v17-baseline/relocation_logs/copied_files.json",
+        "bytes": 110559,
+        "sha256": "c2f0baad13485901a635c6367d66a8d8839680b990d57873862eb4d6defe0796"
+      },
+      {
+        "old": "checks/relocation_logs/execution_final.json",
+        "new": "checks/v17-baseline/relocation_logs/execution_final.json",
+        "bytes": 1507,
+        "sha256": "170cfd2e47697ecfd83acce2c7b68e546f8032863ebf12806212286f1308fbb7"
+      },
+      {
+        "old": "checks/relocation_logs/execution_initial.json",
+        "new": "checks/v17-baseline/relocation_logs/execution_initial.json",
+        "bytes": 3536,
+        "sha256": "25af3057b6195b08b04419da6106a29a518d53f7b7e1af0eed6d9fa338c42587"
+      },
+      {
+        "old": "checks/relocation_logs/final_run.stderr.txt",
+        "new": "checks/v17-baseline/relocation_logs/final_run.stderr.txt",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "old": "checks/relocation_logs/final_run.stdout.txt",
+        "new": "checks/v17-baseline/relocation_logs/final_run.stdout.txt",
+        "bytes": 1064,
+        "sha256": "d7944e5766b7ad5e7d49f21385a09f18418305635713c7994bbd42142da3d652"
+      },
+      {
+        "old": "checks/relocation_logs/format_init.stdout.txt",
+        "new": "checks/v17-baseline/relocation_logs/format_init.stdout.txt",
+        "bytes": 5741,
+        "sha256": "c411c12f965f2edf647061b92176676acbf673a08c519e66971e7f5b9c285b6e"
+      },
+      {
+        "old": "checks/relocation_logs/format_init.xetex.log",
+        "new": "checks/v17-baseline/relocation_logs/format_init.xetex.log",
+        "bytes": 44906,
+        "sha256": "ca20ef3fecf667d5292c42200c8b7c30b9679b3ed76229cd9e88ef1cff039971"
+      },
+      {
+        "old": "checks/relocation_logs/initial_probe.xelatex.log",
+        "new": "checks/v17-baseline/relocation_logs/initial_probe.xelatex.log",
+        "bytes": 44392,
+        "sha256": "a53b46bf4eee0e2dc9f69f2c8d49732774b635cc138e936849c4fb37323bb19d"
+      },
+      {
+        "old": "checks/relocation_logs/initial_run.stderr.txt",
+        "new": "checks/v17-baseline/relocation_logs/initial_run.stderr.txt",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "old": "checks/relocation_logs/initial_run.stdout.txt",
+        "new": "checks/v17-baseline/relocation_logs/initial_run.stdout.txt",
+        "bytes": 1064,
+        "sha256": "d7944e5766b7ad5e7d49f21385a09f18418305635713c7994bbd42142da3d652"
+      },
+      {
+        "old": "checks/relocation_logs/probe.inputs.fls",
+        "new": "checks/v17-baseline/relocation_logs/probe.inputs.fls",
+        "bytes": 28376,
+        "sha256": "9345997077005d478a5266dae09b61341ec3df744604e1e84d9341faaead6151"
+      },
+      {
+        "old": "checks/relocation_logs/probe.pass1.stdout.txt",
+        "new": "checks/v17-baseline/relocation_logs/probe.pass1.stdout.txt",
+        "bytes": 14074,
+        "sha256": "db84aafdde74aa1ee0d02db48c67a332d9fa694edbd23b28789432c778cf2a87"
+      },
+      {
+        "old": "checks/relocation_logs/probe.pass2.stdout.txt",
+        "new": "checks/v17-baseline/relocation_logs/probe.pass2.stdout.txt",
+        "bytes": 14074,
+        "sha256": "db84aafdde74aa1ee0d02db48c67a332d9fa694edbd23b28789432c778cf2a87"
+      },
+      {
+        "old": "checks/relocation_logs/probe.tex",
+        "new": "checks/v17-baseline/relocation_logs/probe.tex",
+        "bytes": 1054,
+        "sha256": "999aa33ff9223f531961c05e5b9dced5b42d33551bcf530dd529111023317b11"
+      },
+      {
+        "old": "checks/relocation_logs/probe.xelatex.log",
+        "new": "checks/v17-baseline/relocation_logs/probe.xelatex.log",
+        "bytes": 44035,
+        "sha256": "77fcb2117589c5c1f88627dedbffe6733f11935d5e7c0269a60a5db223bdbd44"
+      },
+      {
+        "old": "checks/relocation_logs/probe_preview.png",
+        "new": "checks/v17-baseline/relocation_logs/probe_preview.png",
+        "bytes": 59303,
+        "sha256": "6a762d1618828d80b3c1b4376883ccb629207ba9b3adccda0a7c287746956bdd"
+      },
+      {
+        "old": "checks/relocation_logs/run_relocation_check.sh",
+        "new": "checks/v17-baseline/relocation_logs/run_relocation_check.sh",
+        "bytes": 740,
+        "sha256": "85005d7378f70a9091f3bcf3b0f6138ed7660494855d62fbaaea1f4b5130ec24"
+      },
+      {
+        "old": "checks/relocation_logs/setup.json",
+        "new": "checks/v17-baseline/relocation_logs/setup.json",
+        "bytes": 1013,
+        "sha256": "096c5b5285879d81dba05e9f8cb111f807ee2b072f7389c61aa13f80ae50b137"
+      },
+      {
+        "old": "checks/source_corpus_manifest.json",
+        "new": "checks/v17-baseline/source_corpus_manifest.json",
+        "bytes": 23038,
+        "sha256": "4bcfdf96fcd1e9c259e006a3cfc9632fa1348368d332f1941101e8013b272431"
+      },
+      {
+        "old": "checks/source_corpus_manifest.md",
+        "new": "checks/v17-baseline/source_corpus_manifest.md",
+        "bytes": 8986,
+        "sha256": "3cf73badd077b1f6649a90ec7ed3ec710d9cc1cde1aace3668e2348f122e2913"
+      },
+      {
+        "old": "checks/source_page_precision.json",
+        "new": "checks/v17-baseline/source_page_precision.json",
+        "bytes": 534,
+        "sha256": "d8975a89b0bcc809d2db64d5170d718e65dff2d471fce9c8000d5f95d1eadf7e"
+      },
+      {
+        "old": "checks/structure_console.txt",
+        "new": "checks/v17-baseline/structure_console.txt",
+        "bytes": 2453,
+        "sha256": "7491f8c8f822c9a63f6abfbf565336be116747b1a36cab87522ba0268c3e5dcc"
+      },
+      {
+        "old": "checks/structure_verification.json",
+        "new": "checks/v17-baseline/structure_verification.json",
+        "bytes": 2453,
+        "sha256": "7491f8c8f822c9a63f6abfbf565336be116747b1a36cab87522ba0268c3e5dcc"
+      },
+      {
+        "old": "checks/v16_complete_migration.json",
+        "new": "checks/v17-baseline/v16_complete_migration.json",
+        "bytes": 149693,
+        "sha256": "7ddb8948cfed4b71a5964a93f6461f08fdc8dd8553f2eee0b25c6d77f12dd99d"
+      },
+      {
+        "old": "checks/v16_core_match.json",
+        "new": "checks/v17-baseline/v16_core_match.json",
+        "bytes": 8759,
+        "sha256": "27546a794d4c020d704615f63882880042240ceda532731126d7765fcf0d3169"
+      },
+      {
+        "old": "checks/verify_pdf_parity.py",
+        "new": "checks/v17-baseline/verify_pdf_parity.py",
+        "bytes": 1429,
+        "sha256": "3037a0a56279ae4b7e0fec5e5ed17aa6d62acabc851ac436e9a56f711b0d2f29"
+      },
+      {
+        "old": "checks/visual_reviews/body_early_middle_visual.json",
+        "new": "checks/v17-baseline/visual_reviews/body_early_middle_visual.json",
+        "bytes": 27803,
+        "sha256": "94a7a61737c81e7f85a397df7bb4b2eec667c8e251468586b89dea9c95d180fb"
+      },
+      {
+        "old": "checks/visual_reviews/body_early_middle_visual.md",
+        "new": "checks/v17-baseline/visual_reviews/body_early_middle_visual.md",
+        "bytes": 7952,
+        "sha256": "3bfe38030a6e7889f78ea20dc2b66f38a62371e894c1ab2db1d951210b0093f7"
+      },
+      {
+        "old": "checks/visual_reviews/late_visual_review.json",
+        "new": "checks/v17-baseline/visual_reviews/late_visual_review.json",
+        "bytes": 2917,
+        "sha256": "c740a8e83fbcc9e1927927c839282fe294fbfe103ca471cd2c1318ef302c03d1"
+      },
+      {
+        "old": "checks/visual_reviews/late_visual_review.md",
+        "new": "checks/v17-baseline/visual_reviews/late_visual_review.md",
+        "bytes": 821,
+        "sha256": "7a6c6a6b1ac9222d6e730e293ded788319f5d3e5106194b1cadaad9c3079be13"
+      },
+      {
+        "old": "checks/visual_reviews/navigation_visual.json",
+        "new": "checks/v17-baseline/visual_reviews/navigation_visual.json",
+        "bytes": 11119,
+        "sha256": "da8cc19b3e0994def68edd31cf12bb5965445eedf9486410e56f410e91a5b2ed"
+      },
+      {
+        "old": "checks/visual_reviews/navigation_visual.md",
+        "new": "checks/v17-baseline/visual_reviews/navigation_visual.md",
+        "bytes": 4308,
+        "sha256": "0d2d4796b8bab1ff2bdc89fe1244d1a30dd02b67cfe5c60a5bea39eb2a26f7e8"
+      },
+      {
+        "old": "checks/visual_reviews/report_visual_review.json",
+        "new": "checks/v17-baseline/visual_reviews/report_visual_review.json",
+        "bytes": 25440,
+        "sha256": "4c0d54ae37bc82dc9669f87a587dd568cfc053c6be502ba3590cb94a475febfa"
+      },
+      {
+        "old": "checks/visual_reviews/report_visual_review.md",
+        "new": "checks/v17-baseline/visual_reviews/report_visual_review.md",
+        "bytes": 5710,
+        "sha256": "95f9816b4493369b0482787e0560353b8fefabf3eade0fa7208eb53a07bcdf55"
+      },
+      {
+        "old": "checks/visual_reviews/short_visual_review.json",
+        "new": "checks/v17-baseline/visual_reviews/short_visual_review.json",
+        "bytes": 10269,
+        "sha256": "824845c13667e034d5b7dffdaf696d1d87b928a7b9e5bc806ba6d7c3dd5db454"
+      },
+      {
+        "old": "checks/visual_reviews/short_visual_review.md",
+        "new": "checks/v17-baseline/visual_reviews/short_visual_review.md",
+        "bytes": 1789,
+        "sha256": "367661604cabb66241fc709c9a9f9989b580a8c37268f2d564b632f4ef78a4ab"
+      }
+    ],
+    "absent_paths": [
+      "__pycache__/flatten_sources.cpython-312.pyc"
+    ],
+    "new_paths": [
+      "build_book.sh",
+      "build_supplement_III.sh",
+      "checks/modular-final.log.txt",
+      "checks/single-final.log.txt",
+      "checks/supplement-II-qa.json",
+      "checks/supplement-III-main.log.txt",
+      "checks/supplement-III-qa.json",
+      "checks/supplement-III-report.log.txt",
+      "checks/supplement-III-report_single.log.txt",
+      "checks/supplement-III-single.log.txt",
+      "checks/supplement-qa.json",
+      "continuations/v_suppIII_63.tex",
+      "continuations/v_suppIII_64.tex",
+      "continuations/v_suppIII_65.tex",
+      "continuations/v_suppIII_66.tex",
+      "continuations/v_suppIII_67.tex",
+      "continuations/v_suppIII_68.tex",
+      "flatten_book.py",
+      "reports/supplement_III_audit.tex"
+    ],
+    "old_modified_or_absent_bytes": 10417570
+  },
+  "project_subtree_comparison": {
+    "text": {
+      "old_count": 15,
+      "identical_in_latest": 13,
+      "changed_or_missing": [
+        "text/remaining.tex",
+        "text/v1_2.tex"
+      ]
+    },
+    "continuations": {
+      "old_count": 64,
+      "identical_in_latest": 64,
+      "changed_or_missing": []
+    },
+    "backmatter": {
+      "old_count": 11,
+      "identical_in_latest": 11,
+      "changed_or_missing": []
+    },
+    "reports": {
+      "old_count": 23,
+      "identical_in_latest": 23,
+      "changed_or_missing": []
+    },
+    "vendor": {
+      "old_count": 211,
+      "identical_in_latest": 211,
+      "changed_or_missing": []
+    }
+  },
+  "build_dependencies": {
+    "old_vendor_files": 211,
+    "old_vendor_bytes": 49125296,
+    "all_old_vendor_files_same_in_latest": true,
+    "changed_or_missing_vendor": [],
+    "latest_build_files": {
+      "build.sh": true,
+      "build_supplement_III.sh": true,
+      "flatten_sources.py": true,
+      "scripts/tex_environment.sh": true,
+      "preamble.tex": true
+    },
+    "engine_bundled": false,
+    "build_not_run": true,
+    "note": "Sourceable TeX-tree setup and open font/package files are preserved. A compatible external XeLaTeX installation remains required; this audit does not revalidate compilation."
+  },
+  "documents_measured": [
+    {
+      "tree": "baseline",
+      "path": "01_project/EGA_v17/main.pdf",
+      "pages_measured": 1130,
+      "sha256": "df949bd9daa04547214b6e3c68e066812be0fb2918601c0d6403cccfce568046"
+    },
+    {
+      "tree": "baseline",
+      "path": "01_project/EGA_v17/report.pdf",
+      "pages_measured": 283,
+      "sha256": "b61fe870fd83b90a505893ecfc8403fafb9037053bc452f0ae7b723e9e401949"
+    },
+    {
+      "tree": "latest",
+      "path": "project/main.pdf",
+      "pages_measured": 1158,
+      "sha256": "df69850134279ecf6f23b6eb3963d85b374c7fa682d6a648fa8469df887e7f44"
+    },
+    {
+      "tree": "latest",
+      "path": "project/report.pdf",
+      "pages_measured": 287,
+      "sha256": "d5aa39fb5c5916de8f63516a33e82e1d78e3248ce3ea4bdcb7cb87d31621e0f4"
+    }
+  ],
+  "latest_handover_state": {
+    "edition": 17,
+    "record_date": "2026-11-21",
+    "time_zone": "Asia/Shanghai",
+    "all_books_finished": false,
+    "current_project": "project",
+    "book": {
+      "modular": "main.tex",
+      "single": "single.tex",
+      "pdf": "main.pdf",
+      "pages": 1158,
+      "pdf_sha256": "df69850134279ecf6f23b6eb3963d85b374c7fa682d6a648fa8469df887e7f44",
+      "single_tex_sha256": "010e78cbce81b9ac116aa17cee0e23941c0a2fabf0d2ed99b5549e1a5e1af1f7"
+    },
+    "report": {
+      "modular": "report.tex",
+      "single": "report_single.tex",
+      "pdf": "report.pdf",
+      "pages": 287,
+      "pdf_sha256": "d5aa39fb5c5916de8f63516a33e82e1d78e3248ce3ea4bdcb7cb87d31621e0f4",
+      "single_tex_sha256": "ac955f2e3f33ab3e0dea2bfb63d37ef468b3d348e6524b28236f157be4ea3721",
+      "status": "new supplement 50–68 compiled with preserved historical reports"
+    },
+    "dot_batches": {
+      "restored": 56,
+      "new_body": 54,
+      "same_text_collation": 2
+    },
+    "new_translation_gaps_filled": [
+      "V §11, pp.41–43",
+      "V §14 bridge, pp.54–55"
+    ],
+    "next": [
+      {
+        "branch": "V",
+        "source": "03_sources/EGAVaiello.pdf",
+        "physical_page": 78,
+        "starts_at": "Appendix IV.17.16 Smooth Quadratic Forms",
+        "french_source": "03_sources/EGA5_francais.pdf",
+        "french_physical_page": 161
+      },
+      {
+        "branch": "IV",
+        "source": "03_sources/EGAIV.1.pdf",
+        "physical_page": 221,
+        "starts_at": "Chapter IV synopsis, then introduction; (1.1.1) on physical223"
+      }
+    ],
+    "default_continuation_if_user_only_says_continue": "Volume V English physical page 78, appendix IV.17.16; French physical page 161. Formal Chapter IV remains a separate branch.",
+    "source_corpus_count": 13,
+    "checks": [
+      "checks/supplement-III-qa.json",
+      "checks/supplement-II-qa.json",
+      "checks/supplement-qa.json",
+      "checks/v17-baseline"
+    ],
+    "pending": "PENDING_ISSUES.md",
+    "automation_created_or_modified": false,
+    "email_sent": false,
+    "release": "v17-V-20261121-supplement-III",
+    "supplement": {
+      "body_batches": 19,
+      "batch_ids": [
+        50,
+        51,
+        52,
+        53,
+        54,
+        55,
+        56,
+        57,
+        58,
+        59,
+        60,
+        61,
+        62,
+        63,
+        64,
+        65,
+        66,
+        67,
+        68
+      ],
+      "base_archive_sha256": "a94b6f7476fb0846e84309d1cde0b1194ef2910ff281b20105b823cf0f71870d",
+      "report_unchanged": false,
+      "new_since_previous": [
+        63,
+        64,
+        65,
+        66,
+        67,
+        68
+      ]
+    }
+  },
+  "preservation_mapping": {
+    "old_file_count": 1827,
+    "verified_existing_byte_sources": 1827,
+    "all_old_payloads_have_proposed_destination": true,
+    "mapping": "baseline_all_1827_path_mapping.json",
+    "status": "Proposal only. No final merged directory or archive was written by this audit."
+  },
+  "size_estimates": {
+    "method": "DEFLATE level 9 applied to the actual bytes of each unique file; ZIP estimate adds 30-byte local and 46-byte central headers plus UTF-8 path names and 22-byte EOCD. New manifests, restoration map/scripts and separately copied current named deliverables are not included. Estimates are not a final archive size.",
+    "decimal_512MB": 512000000,
+    "binary_512MiB": 536870912,
+    "existing_baseline_zip_bytes": 493141776,
+    "baseline_recompressed_all_paths": {
+      "files_or_unique_blobs": 1827,
+      "uncompressed_bytes": 547998859,
+      "raw_deflate9_payload_bytes": 492615570,
+      "estimated_zip_headers_bytes": 370960,
+      "estimated_zip_bytes": 492986530
+    },
+    "baseline_unique_sha_only": {
+      "files_or_unique_blobs": 1304,
+      "uncompressed_bytes": 489319998,
+      "raw_deflate9_payload_bytes": 448746798,
+      "estimated_zip_headers_bytes": 242322,
+      "estimated_zip_bytes": 448989120
+    },
+    "baseline_same_sha_raw_saving": 58678861,
+    "baseline_same_sha_existing_zip_payload_saving": 43897259,
+    "proposed_merge_all_paths": {
+      "files_or_unique_blobs": 1887,
+      "uncompressed_bytes": 594643840,
+      "raw_deflate9_payload_bytes": 536097942,
+      "estimated_zip_headers_bytes": 384884,
+      "estimated_zip_bytes": 536482826
+    },
+    "proposed_merge_unique_sha_only": {
+      "files_or_unique_blobs": 1364,
+      "uncompressed_bytes": 535964979,
+      "raw_deflate9_payload_bytes": 492229170,
+      "estimated_zip_headers_bytes": 255806,
+      "estimated_zip_bytes": 492484976
+    },
+    "proposed_merge_keep_active_project_paths_and_deduplicate_extra_history": {
+      "files_or_unique_blobs": 1376,
+      "uncompressed_bytes": 537938442,
+      "raw_deflate9_payload_bytes": 494048528,
+      "estimated_zip_headers_bytes": 258424,
+      "estimated_zip_bytes": 494306952
+    },
+    "historical_dedup_requires": "Explicit byte-to-path restoration map and verified restoration script; ordinary ZIP packaging of hard links still stores repeated bytes. No file was deleted here.",
+    "duplicate_groups_detail": "byte_identical_duplicates.json",
+    "dedup_candidate_mapping": "dedup_candidates_preserve_active_project.json",
+    "do_not_drop": "Original ZIP archives have distinct archival bytes even where their members resemble expanded files. They remain in every estimate; no giant old full handover ZIP is nested inside the proposed new one."
+  },
+  "issues_and_limits": [
+    {
+      "severity": "integration_requirement",
+      "message": "The third-supplement package is not a substitute for the complete old archive: it omits old 04_history, 05_Dot and 07_integration_records trees. Preserve these from the verified baseline."
+    },
+    {
+      "severity": "provenance_requirement",
+      "message": "15 current-project files changed. Preserve their old byte versions before replacing the active project."
+    },
+    {
+      "severity": "historical_routing",
+      "message": "68 checks files moved byte-identically to checks/v17-baseline. Do not report these as lost and do not run old validators as if they target the new active project."
+    },
+    {
+      "severity": "noncritical_generated_cache",
+      "message": "Only __pycache__/flatten_sources.cpython-312.pyc from the old project has no identical third-supplement counterpart at the expected relocation. It remains intact in the recovered baseline and is mapped to historical preservation; it is not source or a build dependency."
+    },
+    {
+      "severity": "metadata_requirement",
+      "message": "Old entry points, MANIFEST and SHA256SUMS describe old releases. Archive them and generate one authoritative new entry/manifest after merging."
+    },
+    {
+      "severity": "scope_limit",
+      "message": "This audit checks content preservation, inventories, checksums and file structure; no mathematical proof was reassessed and no TeX compilation was run."
+    }
+  ]
+}

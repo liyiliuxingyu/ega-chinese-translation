@@ -1,0 +1,1147 @@
+
+===== PDF 18 =====
+(resp. Y ) satisﬁes the property P and that is FK(ξ) regular. Under these conditions VP is
+open (and it is also constructible in every case, i.e. without any assumption of ﬂatness or
+of properness).
+It seems to me that from the point of view of presentation we cannot leave 5.6 as is
+with a simple reference to conditions enumerated in another volume, but it requires an
+explicit list (i), (ii),. . . of properties which we have in view. Also remark (in 5.1 perhaps)
+that the case P = geometrically normal (with S = Spec(k) for sure)23 is due to Seidenberg.
+§6 Connectedness of an arbitrary hyperplane section
+We shall here combine the already known criterion of geometric connectedness of the
+generic hyperplane section (3.3) with the connectedness theorem of Zariski in order to
+obtain a connectedness result for an arbitrary hyperplane section:
+Proposition 6.1.
+We suppose S = Spec(k), k an algebraically closed ﬁeld [X proper over
+k suppose]24 that for every irreducible component Xi of X, f(Xi) should be of dimension
+≥2, ﬁnally that X cannot be disconnected by a closed subset Z of X such that dim f(Z) ≤
+0. Under such conditions for every ξ ∈P v, Yξ is geometrically connected.
+Proof. Since none of the f(Xi) is ﬁnite we see that every irreducible component Yi of Y
+dominates P v; on the other hand, Y →P v is proper (if Y is proper over k, being such over
+X which is proper over k). On the other hand, by (3.3), the generic ﬁber Yη of Y →P v
+is geometrically connected.
+Finally, P v is regular and `a fortiori geometrically unibranch. It now suﬃces to apply
+15.6.325 (which is variant of the Zariski connectedness theorem) to conclude that all the
+ﬁbers of Y →P v are geometrically connected.
+q.e.d.
+Indeed, it is not diﬃcult by a proof of analogous type to generalize 6.1 in the same
+sense as in 4.4. If you do not want to trouble yourself with this exercise, at least mention
+it as a remark. To say also that we do not discriminate in 6.1 with regard to hyperplane
+sections that have an excessive (extra) dimension. (From the planning point of view) it
+might be clearer to group together all athe connectedness questions (including 3.3 and 4.4)
+in the same No. (or section).
+§7 Application to the construction of hyperplane sections and multisections
+23or to be sure [Tr].
+24illegible.
+25EGA IV [Tr].
+18
+
+
+===== PDF 19 =====
+of
+speciﬁed type
+7.1. Let us notice that if S = Spec(k) where k is an inﬁnite ﬁeld then every non-empty
+open subset of P v contains a k-rational point; therefore in the notations of 4.1 if E (deﬁned
+in terms of a constructible property P) contains the generic point η, it contains a k-rational
+point and therefore there exists a hyperplane section of X (deﬁned over k) having the
+property P. On the other hand, S being again arbitrary, it is immediate that for every
+s ∈S and for every point ξ of the ﬁber P v
+s rational over k(s), there exists a section ξ of
+P v on an open neighborhood U of s which passes through ξ0. If now E is again deﬁned
+as in 4.1 in terms of a constructible propertyP and if we have (for example due to No. 5)
+the fct that E is open, then if ξ0 ∈E, then the section ξ is a section of E over U at least
+if we suﬃciently shrink or diminish U. Therefore we may construct a hyperplane section
+Yξ of X over an open neighborhood U of s such that for every t ∈U its ﬁber Yξ(t) at t
+satisﬁes the property P. If we do not have `a priori ξ0 but if k(s) is inﬁnite we may combine
+the two preceding remarks to obtain a hyperplane section over an open neighborhood of
+s having the preceding property. Finally, using No. 5, we have a criterion allowing us
+to assert that (X resp. F being assumed ﬂat over S which allows us to apply loc. cit.)
+Yξ resp.Gξ is also ﬂat over S. We may therefore, replacing X byYξ, iterate the previous
+construction which allows, for example under certain conditions, to construct closer and
+closer (by successive approximations ???)26
+a “multisection” of S′ of X over an open
+neighborhood U of the given point s, such that S′ →U should be ﬁnite, ﬂat and with
+ﬁbers satisfying the property P. If k(s) is ﬁnite we may be forced or constrained to do an
+´etale and surjective base change S′ →U (U an open neighborhood of s) before being able
+to apply the preceding constructions; indeed under the conditions from the start of 6.1, if
+k is ﬁnite there does not necessarily exist a rational point over k in the open non-empty
+set U, but there certainly exists a closed point of U, thus a point with values in a ﬁnite
+extension k′ (necessarily separable) of k; when k = k(s), therefore we may, after making a
+suitable ﬁnite ´etale extension S′ over a neighborhood U of s, corresponding to the residual
+extension k′, i.e. such that S1
+s
+∼
+−→Spec(k′), restrict ourselves to the favorable situation of
+the unique point s′ ∈S′ over s after a base change S′ →S. I must however, note or point
+out [un remords Fr] a regret to 4.2 and 4.3 which should have been announced in a slightly
+more general form [at least as a remark]:If we are given an integer m and if we denote by
+E the set of ξ ∈P v such tht Gξ, resp. Yξ satisﬁes P exceptovr a closed set of dimension
+≤m (i.e. athe set P-singular Z is of dimension ≤m). Then
+26Translator’s note: de proche en proche [Fr].
+19
+
+
+===== PDF 20 =====
+a) E is a constructible subset of P v and
+b) in the case S = Spec(k), if F, respectively X, satisﬁes P except over a set of dimension
+≤m + 1, then E contains a non-empty open set.
+Proposition 7.2.
+Let us assume that X is proper over S and that F is of ﬁnite presen-
+tation ﬁnite and ﬂat over S. Let P be one of the properties (i) to (v) of (4.2) and let m be
+an integer. Let S ∈S and let us suppose that the set Zs of points of Xs where Fs does not
+satisfy P is of dimension ≤m + 1. Then if also k(s) is inﬁnite there exists a neighborhood
+U of s in E and a section ξ of P v over Uh aving the following properties: For everyx ∈U
+the set of points of Yξ,s where Gξ(s) does not satisfy P is of dimension ≤m and φξ(s) is
+Fξ,s regular. Under such conditions the module Gξ over Yξ is ﬂat relative to U. Finally, if
+k(s) is not supposed inﬁnite, we can again make the previous construction afater an ´etale
+extension of the type anticipated in 7.1.
+Propostion 7.3.
+Essentially the same. There is no longer an F and assume that X is
+ﬂat relative to S we refer to properties (i) to (v) of 4.3 in place of those of 4.2 (“but being
+careful to make the reservation.”) k(s) of characteristic zero or f: X →P is an immersion
+and in the case (v) that for every s ∈S [illegible] irreducible component Z of Xs we have
+dim f(Z) ≥2. [Nota Bene: For (v) compare 12.2.1 (x) and (xi) (we can then [illegible]
+in the other case 4.3 or 12.2.1 (x)] (marginal remark largely illegible in preceding square
+brackets).
+(Text crossed out)
+Proposition 7.4.
+Let g: X →S be a ﬂat proper morphism, let s ∈S, let us put
+n = dim Xs and let us suppose that the dimension of the set of points of Xs where Xs
+is not separable over k(s) is ≤n. (for example Xs separable). Then there exists an open
+neighborhood U of s and an ´etale ﬁnite, surjective morphism S′- - - -≻U such that X xS S′
+admits a section over S′. If k(s) is inﬁnite we may take for S′ a closed subscheme of X U.27
+Let us assume to start with that k(s) is inﬁnite. We proceed by induction on n, the
+case n = 0 being trivial. Indeed in that case there exists an open neighborhood U of s
+such that X|U itself is ´etale, ﬁnite and surjective above U as we see by immediate cross
+references. If n > 0, we apply 7.3 for the “separable” property which allows us to replace
+X by a “hyperplane section” Y having the same properties up to this that n is replaced by
+n −1. If k(s) is not assumed inﬁnite we begin by making an ´etale base change, it works.
+(It goes thorugh)
+27Unclear, ask AG.
+20
+
+
+===== PDF 21 =====
+Remark 7.5.
+In particular if X is projective and separable over S it admits locally
+over S ´etale multisections. But we note that we can give examples with X proper and
+smooth (but non-projective) S, where the same conclusion fails. Of course, the projective
+assumption cannot be weakened in general to an assumption of quasi-projectiveness as we
+see, for example, by taking X ´etale non-ﬁnite over S . . . 28
+§8 Dimension of the set of exceptional hyperplanes
+8.1. In the previous sections and notably Sections 2 and 3, we have given statements
+asserting that the set of ξ ∈P v such that the set of ξ ∈P v such that Y has a certain
+property P is constructible and that it contains the generic point η or else that the set
+ZP of ξ ∈P v “exceptional for P” is constructible and is rare, i.e. that its closure is of
+codimension ≥1. (Nota Bene: we suppose that S = Spec(k)).
+In certain cases we can make this statement more precise by giving a better upper
+bound for this codimension, which is important for certain questions. For example, if we
+see that this codimension is greater than or equal to two it follows that a “suﬃciently
+general” straight line D of P v does not intersect ZP , whence the existence (if k is inﬁnite)
+of “linear pencils” of hyperplane sections Yξ (ξ a geometric point of D) all of which have
+the property P (see Section No.29 for examples).
+From the writing up point of view, since the results of the present No. make more
+precise some results of the previous sections, the question arises if it is necessary to do this
+catching up in a separate section (or number) or to give a more precise version gradually
+as we move along. Redactor decidetur (Latin).30
+8.2. Let Z be the set of ξ ∈P v such that dim Yξ > dim X −1 and let us suppose that for
+every irreducible component irr Xi of X we have dim f(Xi) >[illegible, is it two, ask A.G.]
+then Z is of codimension two in P v. This follows from 2.1 and 2.2 (which implies that
+every irreducible component of Y dominates P v) and from the dimension theory for the
+morphism Y →P v. Starting from this result we may give as a corollary the case where we
+start a closed subset Z of X and where we consider the dimension fo the inverse images
+Zξ in the Yξ (ξ ∈P v) and we may even take for Z the set of ξ ∈P v such that there exists
+an irreducible component of Tk(ξ) whose trace on Yξ has the greatest dimension (NB we
+always assume that for every irreducible Zi of Z we have dim f(Zi) > 0).
+28Illegible
+29Section number omitted, ask A.G.
+30Editor decide.
+21
+
+
+===== PDF 22 =====
+Finally the most precise statement in this direction and one that results easily from the
+ﬁrst announcement (for X irreducible) and from 2.7 is the following modiﬁed statement:
+F being coherent over X, suppose that for every associated prime cycle T for F we have
+dim f(T) > 0 then the set of ξ ∈P v such that φξ is not Fk(ξ)-regular is (constructible
+and) of codimension ≥2. (The notation for φξ is that from No. 5). We can give this
+as the principal assertion, and announce the previous assertions as corollaries, the proof
+being or proceeding via one of the corollaries.
+Please note that with the preceding notations if ξ ∈P v −Z, then for every y ∈Yξ we
+have coprofy Gk(ξ) = coprofy Gξ and consequently if coprof F ≤n then for ξ ∈P v −Z we
+have coproof of Tξ ≤n in particular if F is Cohen-Macauley then for ξ ∈P v −Z, Gξ is
+Cohen-Macauley. Finally if F is (Sk) we have that Gξ is (Sk−1) for ξ ∈P v −Z (reference
+OIV ).
+8.3. We notice that if F is (Sk) for one ξ ∈P v such that φξ is fk (ξ)-regular and Gξ has
+a component of codimension ≥231 even if F = OX, k = 1, X being geometrically integral
+of dimension two where (k = 2 X being geometrically integral and geometrically normal
+of dim 3). It is enough to start from a projective integral surface
+X ⊂P r
+over k algebraically closed having a point x whereX is not Cohen-Macauley, then for every
+hyperplane pressing through x the corresponding hyperplane section Yξ admits x as an
+associated embedded cycle (respectively, we start from a normal (thus S2) integral variety
+X ⊂P v of dimension three having a point X ∈X where X is not Cohen-Macauley, then
+the Y ’s passing through x are not CM, i.e. they are met (S2) at x.)
+In these examples the set of “exceptional” ξ for the property (Sk) contains the hyper-
+plane of P v deﬁned by x ∈P and it is of codimension one (and not of codimension ≥two)
+compare 8.5 below for a general precise result in this direction along these lines?
+Proposition 8.4.
+Let T be a closed subset of X and suppose that codim(T, X) ≥k.
+Then for every ξ ∈P v we have codim(Tξ, Yξ) ≥k −1. Let Z be the set of ξ ∈P v such
+that codim(Tξ, Yξ) = k −1 (i.e. codim(Tξ, Yξ) < k) then Z is a constructible, nowhere
+dense [rare Fr] subset of P v, i.e. ¯Z is of codimension ≥1 in P v.
+In order for it to be of codimension ≥2 it is necessary and suﬃcient that for every
+irreducible component Ti of X of codimension equal to k and such that dim f(Ti) = 0
+31Illegible, ask A.G.
+22
+
+
+===== PDF 23 =====
+there should exist one irreducible component Xj of X such that codim(Ti, Xj) = k and
+dim f(Xj) −0 (or closure crossed out?), i.e. if f is as quasiﬁnite and k > 0, que (it???) T
+does not have isolated points such that dimx X −k. The ﬁrst assertion follows immediately
+from the following lemma 8.4.1 (a) which is a remorseful afterthought to paragraph 5.
+Lemma 8.4.1. Let X be a locally noetherian prescheme, let L be an invertible module over
+X, φ a section of L, Y = V (φ), T a closed subset of X. Let us assume that codim(Y, X) ≥
+k.
+Then
+a) codim(T ∩Y, Y ) ≥k −1.
+b) In order to have
+codim(T ∩Y, Y ) = k −1
+i.e. codim(T ∩Y, Y ) < k
+it is necessary and suﬃcient that there should exist an irreducible component Ti of
+T contained in Y , and such that codim(Ti, X) = k and such that for every irreducible
+comnponent Xj of X containing Ti and such that
+dim OXj,Ti = dim OX,Ti
+(= k)
+we have
+Xj ̸⊂Y.
+The veriﬁcation of this lemma is immediate due to the general facts in OIV , Chapter
+IV about dimension. With the assumptions of 8.4, by 8.4.1 (b) we see which ones are
+the exceptional hyperplanes Hξ. If we exclude the set Z0 of ξ ∈P v such that there is
+an irreducible component R of T or of X such that dim f(R) > 0 and such that Rξ is
+of “dimension too large” (a set which is of codimension two and in what follows it does
+not count the exceptional Hξ are those for which there exsts a Ti with codim(Ti, X) = k
+and dim f(T) = 0, f(T) CH32 and such that for every irreducible component Xj ⊃Ti of
+X with codim(Ti, Xj) = k we have f(Xj) ̸⊂Hξ. For a given Ti with codim(Ti, X) = k
+if there exists an Xj with codim(Ti, Xj) =? [illegible, ask Grothendieck] and such that
+dim f(Xj) = 0 then we will have f(Xj) = f(Ti) ̸⊂Hξ and consequently ξ would not
+be exceptional relative to theTi.
+If, on the other hand, for every Xj ⊃Ti such that
+codim(Ti, Xj) = k, we have f(Xj) > 0 then for ξ ∈P v −Z0, ξ is exceptional relative to
+Ti if and only if f(Ti) ̸⊂Hξ; the set of such ξ is (the trace over of P −Z0 a hyperplane of
+32Probably Hξ [tr.]
+23
+
+
+===== PDF 24 =====
+P v. This proves 8.4, and also proves the more precise result that the exceptional set is the
+union of a set of codimension ≥2 and of a union of hyperplanes determined in an evident
+way by the above proof.
+(I am afraid that the writeup is quite ﬂoppy (or perhaps sloppy) [Tr] since I have
+reasoned geometrically all the time without saying so, by taking points over an algebraically
+closed ﬁeld. Of course, the condition announced in 8.4 is indeed geometric so that we may
+suppose k algebraically closed and argue for k-rational points.) Using 8.4; 5.7.4 and the
+end of 8.2, we obtain:
+Corollary 8.5.
+Suppose that for all associated prime cycles R we have at most simply
+[illegible]33 and suppose that F satisﬁes (Sk).
+In order that the (constructible) set of points of P v such that φξ is Fk(ξ) regular
+and Gξ is (Sk) should have a complement of codimension at least two it is necessary and
+suﬃcient to have the following: (⇔) for every integer n ≥0 we denote byZn the set
+of x ∈T = supp F such that the coprofx [illegible]34 we see that for every irreducible
+component Zni of Zn with codim(Zni, T) = n + k + 1 and dim f(Zni = 0, there exists an
+irreducible component Tj of T containing Zni such taht codim(Zni, Tj) = n + k + 1 and
+dim f(Tj) = 0.
+When f is quasiﬁnite then for every closed subset R of [illegible, ask A.G.] we have
+dim f(R) = dim R so that the criterion takes the following form: there does not exist an
+isolated point z in any one of the Zn such that dimz T(= dim Fz) is equal to n + k + 1.
+When F is equidimensional of dimension d this condition is vacuous if d ≤k (and indeed
+we knew it because in this case the [hypothesis] (Sk) on F is nothing else but the hypothesis
+Cohen-Macauley), and if d ≥k + 1 it means that the set Zd−(k+1) of points of T where
+the co-depth of F is > d −(k + 1), i.e. true depth ofF ≥k + 1 (even though, a priori, we
+only have true depth of F ≥k as a consequence of the property (Sk) and k ≤d). If we no
+longer assume that F is equidimensional there remains that we may express the desired
+condition in the following simple way:
+8.6. For every closed point x ∈supp F such that dim Fx ≥k1 we have prof Fx ≥k + 1.
+The suﬃciency is seen immediately by putting Z = x. The necessity is seen by noticing
+that for everyξ such that φξ is Xk(ξ)-regular andx ∈Yξ we have dim Gξx = dim Fx −1,
+prof Gξx = prof F)x−1 so that x put by default the above condition we have prof Gxix ≥k
+but dim Gξx ≥k which shows that Gξ does not satisfy condition (Sk) at x; but the set
+33Illegible, ask A.G.
+34Ask A.G.
+24
+
+
+===== PDF 25 =====
+of ξ such that x ∈Yξ is of codimension 1 (NB: I implicitly assumed that kis algebraically
+closed, the case to which we reduce immediately.) The preceding general criterion should
+be evident in the case 8.6.
+We now study the points y of Y that are not smooth for Yξ relative to k(ξ). We restrict
+ourselves to the case where f: X →P is unramiﬁed (practically, it will be an immersion)
+and where X →S is smooth. We do not necessarily assume that S is the spectrum of a
+ﬁeld. Since f is unramiﬁed the canonical homomorphism f ∗(Ω1
+P/S) →Ω1
+X/S is surjective
+and its kernel is a locally free module over X which we denote νv
+X′P ; when if f is an
+immersion this is nothing else but the conormal module J/J 2 deﬁned by the ideal J of X
+in P and we call it in every case the conormal module.
+(a)
+0 →νv
+X/P →f ∗(Ω1
+P/X) →Ω1
+X/S →0
+Let us observe that we have also over P an exact canonical sequence (which should appear
+as an example in paragraph 16 for example)
+(b)
+0 →Ω1
+P/S(1) →EP →OP (1) →0
+(i.e. Ω1
+P/S is canonically isomorphic to the kernel of the canonical homomorphism) EP (−1)
+→OP deduced from EP →OP (1), to it we apply f ∗:
+(b1)
+0 →f ∗(Ω1
+P/S(1) →EX →OX(1) →0
+which gives an explicit description of f ∗(Ω1
+P/S)(1) over X and allows therefore to identify
+νv
+X/P (1) with a submodule locally a direct factor of EX or again th dual νX/P (−1) is canon-
+ically isomorphic to a quotient module of EV
+X. Consequently P(νX/P (−1)) = P(νX/P ) can
+be canonically embedded into P(EV
+X) = XxSP v = XV
+P as a projective sub-ﬁbration over
+X therefore as a closed subscheme. The latter is necessarily contained in Y (from the fact
+that ΩX/P (1) is contained in the kernel of Ex →OX(1) [last two symbols illegible ask AG]
+The underlying set of this prescheme is nothing else but the set of points of Y = V (φ)
+which are singular zeros (par. 16)35 of the section φ of ϑXxv
+P (1, 1) relative to the base P v,
+i.e. its points with values in the ﬁeld k over P v are the points x of Yk ⊂Xk such tht φk
+vanishes to order at least two at x, i.e. such that Yk is not smooth of relative dimension
+r −1 over k at x. The announced characterization of singular zeros [illegible, ask AG] the
+elements of a smooth subscheme P(νX/P ) of Xv
+P gives immediately the following statement
+which deserves to appear as a preliminary proposition if S = Spec k and if H is a hyperplane
+35See part II of these notes [Tr]
+25
+
+
+===== PDF 26 =====
+of P then Y = XxPH is smooth over k of relative dimension (d−1) at the point x ∈Y (k)
+(i.e. x is a non-singular zero, i.e. geometrically non-singular of the section φ of OX(1)
+deﬁned by H) if and only if H does not contain the image by φ of the tangent space to X
+at x (relative to k) or as we say once more (if f: X →P is an immersion which allows us
+to identify X to a subscheme of P) if and only if H is not tangent to X at x. This follows
+trivially from the Jacobian criterion of smoothness or from the deﬁnition of a singular zero,
+once we make precise the sense of the statement, that is to say, that we make precise how
+a vector subspace of the tangent space to P at a point a(= f(x)) deﬁnes a linear subspace
+of P (in such a way that it makes sense to say that H does not contain the said vector
+subspace): of course this comes from the exact sequence (b) above which allows to deﬁne
+a one-to-one correspondence between the set of factor subspaces of the tangent space at a
+and the set of linear subspaces to P containing a. This correspondence anyway reduces to
+associating to a linear subvariety passing through a its tangent space at a considered as a
+subspace of the tangent space to P at a.
+Such “sorites” grouped together with various “sorites” about linear subvarieties and
+about grassmanians ought to be given in one or two preliminary numbers or paragraphs
+of course announcing them over any base.
+In fact we can do better knowing that the
+prescheme Y sing of singular zeros of φ relative to P v deﬁned in par. 16 is nothing else but
+P(νv
+X/P and (since the latter is smooth over S of relative dimension d + (r −d −1) = r −1
+(r being the relative dimension of P v over S) we are under th favorable conditions studied
+in No. 16 or paragraph 16.36 In order to verify them, let us notice that by deﬁnition
+Y sing is nothing else but the sub-prescheme of Y of zeros of the section Ψ = dφ/Y of
+ΩXP v/P v (1, 1) ⊗OY = Ω1
+X/S ⊗OY (1, 1) [illegible, ask AG]37
+We shall give another interpretation of this section from which the conclusion follows
+immediately. In order to do this let us consider the following diagram of exact sequences
+over XP v or more generally over any prescheme Z over XP v.
+Diagram:
+36Ask AG about this reference – just later part of these notes.
+37Ask A.G.
+26
+
+
+===== PDF 27 =====
+0
+0
+GP v/S ⊗OZ(0, −1)
+x
+Ω1
+X/Y ⊗OZ(1, 0)
+x
+x
+0 −−−−→
+Ω1
+P/S ⊗OZ(1, 0)
+−−−−→
+E ⊗OZ
+−−−−→OZ(1, 0) −−−−→0
+x
+B
+x
+∝
+νv
+X/P ⊗OZ(1, 0)
+OZ(0, −1)
+x
+x
+0
+0
+[Note to AG, the upper G is really an illegible letter
+P v/S what is this?]38 where
+the ﬁrst column is deduced from (a) by tensoring with OZ(1, 0) the row is deduced from (b)
+by tensoring with OZ and the column two is deduced from its transpose from the analogous
+sequence (bv) relative to P v (obtained by replacing E by Ev) and tensoring with OZ. Fromt
+the very deﬁnition of Y , Z is over Y if and only if the composed morphism ∝from the
+diagram is zero, i.e. if we can ﬁnd a factorization β: OZ(0, 01) →Ω1
+P/S ⊗OZ(1, 0). If this
+is the case we can consider its composition with Ω1
+P/S ⊗OZ(1, 0) →Ω1
+X/Y ⊗OZ(1, 1). I
+say that this is precisely the section ψ [Blass: check if this letter is OK]39 which we have
+introduced above (the veriﬁcation ought to be essentially mechanical). It is zero if and
+only if Z is above lies over V (ψ) (by the very deﬁnition of V (ψ)!) but this means also that
+β can be factored by νv
+x/P ⊗OZ(1, 0), i.e. that the submodule OZ(0, −1) of E ⊗OZ is
+contained in the sub-module νx/P ⊗OZ(1, 0) which evidently signiﬁes also that Z is over
+the sub-prescheme P(νx/P (1)) of P(Ev
+X), achieving the proof that we have announced.
+Just before this erudite exercise in syntax for which I have already had to sweat quite a
+bit we could remark that from every set theoretic point of view Y sing is of dimension r−1 if
+S = Spec k, whereas P v is of dimension r so that the image of Y sing in P vis of codimension
+≥1 which gives again 2.12 (it is well to note that the argument is not essentially distinct
+from the one used in 2.12). We note that most often this set is eﬀectively of codimension
+one (compare below).
+Consequently we cannot in general ﬁnd the “linear pencils” of hyperplane sections all
+of which are smooth. However we shall see that we can often manage to ﬁnd the pencils
+38Ask A.G.
+39Blass check this
+27
+
+
+===== PDF 28 =====
+formed by hyperplane sections not having any supersingular point due to the fact that in
+the most common cases the image of Y sup sing in P v is of codimension two.
+We shall ﬁrst of all recall the essential points diﬀerential in nature of the situation
+studied here:
+Theorem 8.7.
+(a) The sub-prescheme Y sing (deﬁned in No. or par. 16) in the present situation is nothing
+else but P(νx/P ) considered as a sub-scheme of Y as explained above.
+(b) The underlying set of the prescheme Y sup sing (cf No. or par. 16) is nothing else but
+the set of ramiﬁcation points of morphism of smooth preschemes over S of relative
+dimension r −1 and r (namely) Y sing = P(νx/P ) →P v, i.e. in order for the latter
+morphism to be unramiﬁed at the point y (ref to the deﬁnition) it is necessary and
+suﬃcient that y should be geometrically an ordinary singular point for φξ (ξ being
+the point of P v that is the image of y).
+(c) Let us assume S = Spec(k) and that y ∈Y sing = P(ν) is a k-rational point, let
+[illegible]40 and ξ be its projections in X(k) resp.
+P v(k) and let us consider the
+linear subvariety H1 of P v “image” of the tangent map of the closure of its [Fr.
+son image] image in P v, given the induced reduced structure and let us consider the
+induced morphism g: Y sing →T (a dominant morphism of integral preschemes). The
+conditions (i) and (ii) (bis) are equivalent:
+(i) The morphism g is generically ´etale (i.e. ´etale at least one point or what is the same
+is ´etae = unramiﬁed at the generic point of Y sing)
+(i bis) The ﬁeld extension L/K deﬁned by g is ﬁnite and separable.
+(i ter) The morphism g is birational, i.e. the extension L/K is the trivial extension.
+(ii) Y sing ̸= Y sup sing (set theoretically speaking let us say
+(ii bis) There exists an x ∈X(k) and a tangent hyperplane H to Xk at x which is not
+osculating at x by which we understand precisely that x is not supersingular for the
+section of OXk(1) tht deﬁnes H . . .).
+These conditions imply that Y sup sing ̸= φ [Fr. illegible, ask A.G.] dim Y sup sing ≤r−2
+so that the image of Y sup sing in P v has a codimension ≥2, and they imply also
+(iii) dim T = r −1, i.e. T is of codimension one in P v.
+Proof. The equivalence of (i) and (i bis) is trivial its equivalence with (ii) is a trivial
+consequence of 8.7 b), ﬁnally the equivalence of (ii) and of (ii bis) is practically the deﬁnition
+of H sup sing. Evidently (i ter) ⇒(i) it remains to prove that (i) →(i er). We may evidently
+40Ask A.G.
+28
+
+
+===== PDF 29 =====
+suppose that K is algebraically closed and we are reduced to prove (taking into account
+the hypothesis (i)) that there exists an open set U ̸= φ such that ξ ∈U(K) implies that
+there exists exactly one point of Y sing(K) over ξ. This will follow from 8.7 c) which implies
+more precisely.
+Corollary 8.9.
+Suppose that condition (i) of 8.8 is satisﬁed and let U be the open
+subset of T of the points where T is smooth over k. Then U ̸= 0, Y sing/U ⇒U is an open
+immersion a fortiori Y sing/U does not contain the points of Y sup sing. If X is proper over
+K, then g: Y sing →T is surjective thus Y sing/U ⇒U is proper over K so that g: Y sing →T
+is surjective therefore Y sing/U →U is an isomorphism and U is the biggest open set of T
+having the latter property.
+First of all since g is dominating and generically ´etale it is generically ´etale so we
+can ﬁnd at least one non-empty open subset V of T such that Y sing V ⇒V is ´etale
+and surjective which implies that V is smooth over K. If then ξ ∈V (K) and if yis a
+point of Y sing(k) over ξ then with the notations of 8.7 c) the space H′ is nothing else but
+the tangent space to T and ξ, and as we observed here this implies that the point x of
+X(k), the projection of y is determined as the orthogonal point to H′ thus it is uniquely
+determined thus since Y sing ⊂XxP v is uniquely determined.
+This proves already that g is birational (being generically ´etale and generically radical).
+On the other hand the morphism ψ (whose deﬁnition in its form is evident) which associates
+to every ξ ∈U(K)′ the unique point x = ψ(ξ) ∈P orthogonal to the tangent space to
+U at ξ, coinciding over V with the composition V →Y sing V →X, where the second
+arrow is the projection; therefore setting h = (ψ, id): U →PxT (illegible)41 g1 = g
+
+g−1(U): g−1(U) →U the composition hg1: g−1(U) →PxT is nothing else but the canonical
+inclusion, this being so for its restriction to g−1(V )
+∼
+→V . It follows that h factors thrugh
+the scheme theoretic closure Y 1 of Y 1 in PxT thus that the inverse image of Y 1 (which
+is open in the above closure) by h is an open subset of U, let us call it U 1. Because of
+hg1 = inclusion we see immediately that g1 induces an isomorphism g−1(u)
+∼
+→W is an
+isomorphism it follows that W is smooth since Y 1 is smooth, thus W ⊂U. This proves
+8.9
+The ﬁnal assertions of 8.8 Y sup sing = φ or dim Y sup sing = r −2 and dim T = r −1
+are trivial: the ﬁrst one follows the fact that Y sing is irreducible of dim r and from the
+fact that Y sing or Y sup sing [illegible]42 is deﬁned by the vanishing of a section Dof an
+invertible module; the second from the fact that L being ﬁnite over K we have deg tr L/k =
+41Ask A.G.
+42Ask A.G.
+29
+
+
+===== PDF 30 =====
+deg tr K/k, i.e. dim T = dim Y sing = r −1.
+Remark 8.10.
+As we remarked in 8.9 with the notations of the corollary we have g−1(U)
+⊂Y sing−Y sup sing but we notice that even if X is closed in P this inclusion is not necessarily
+an equality, in other words (noting that g−1(U) is nothing else but the set of points where
+g is ´etale, so that Y sing −Y sup singis the set of points where g is unramiﬁed but not ´etale
+(which implies in addition that g(y)′ is a point that is not geometrically normal and even
+not geometrically unibranch of T). In geometric terms this corresponds to the following
+phenomenon; we may have a tangent non-osculating hyperplane for X at a point x ∈X(k)
+such that there exists another point x1 ∈X(k) at which the same hyperplane is tangent
+at x [or x1 illegible].43 Indeed there are obvious examples with P of dim two,X a non-
+singular curve of degree ≥4, in any characteristic. [Note here: the “double tangents” of
+X correspond to the double points of the “dual curve.”]
+Corollary 8.11.
+Let us assume that k has characteristic zero. Then
+(a) The image of Y sup sing in P v is of codimension ≥2.
+(b) The condition (iii) of 8.8 is equivalent to other conditions, i.e. the negation of the
+other conditions, let us assume that Y sing = Y sup sing means also that the image of
+Y sing [or Y sup sing illegible] in P v is of codimension ≥2.
+Evidently, the assertion (b) implies (a) taking into account 8.8. But by dimension
+theory, (iii) means that L/K is a ﬁnite extension (we could put it in the form ((iii) bis) in
+8.8 and in characteristic zero L is always separable over K hence the condition (i bis) of
+8.8.
+Remark 8.12.
+Geometrically the assertion (a) means essentially that for a suﬃciently
+general linear pencil of hyperplane sections every member of the pencil is smooth or has for
+geometric points singular points ordinary double points (and in fact as one sees immediately
+it can be said in statement (a) consequently in a form a little more precise – we have
+at most one such singular geometic point). The assertion (b) means essentially that if
+Y sing = Y sup sing (which can be expressed analytically by the vanishing of a certain section
+D of an invertible module ω⊗2
+X/k ⊗OY ′ (1, 1) over Y 1), then for a suﬃciently general linear
+pencil of hyperplane sections all the members of the pencil are smooth.
+This second
+situation (whether or not we are in characteristic zero) should entirely be considered as
+exceptional. [The variety L in 1 . . .T = L illegible handwriting on topof the page]44 In
+the classical language it is expressed, if there is no error, by saying that X is ruled for the
+43illegile
+44illegible
+30
+
+
+===== PDF 31 =====
+projective immersion considered [and if we so please] we have here all that we need due to
+8.5 and its corollaries to make explicit and justify such a terminology in case if you feel
+inspired to make connection with [la taupe Fr]. For example if dim X = 1 this implies that
+X is a straight line [illegible]45 x ∈X(k) so T conains46. (b) If the characteristic is p > 0,
+we should normally give examples (with dim P = 2, X a non-singular algebraic curve)
+where the conditions of 8.6 are not satisﬁed, i.e. Y sing = Y sup sing and where nevertheless
+dim T = r −1, i.e. examples where L/K is a ﬁnite inseprable extension. I am too lazy to
+construct the examples but I do not doubt that such examples exist.47
+In (a) make a footnote to the following No. or paragraph where we prove that if the
+exceptional ‘ruled’ case arises then by a trivial modiﬁcation of the projective immersion
+we ﬁnd ourselves again in the “general” situation of 8.8.
+the part of the present section from 8.6 to here could without a doubt be made into
+a separate section of a diﬀerential character, whereas the beginning of our No. with the
+one that follows should be merged together into a No. about the dimension of exceptional
+[hyperplanes???]48 I only use the fact that Y sing has dimension (r −1).
+Proposition 8.13.
+We always assume that f: X →P is unramiﬁed and that X has no
+isolated points. We assume that X satisﬁes (Rk) geometrically.
+Let Zk be the part of P v complement of the set of ξ ∈P v such that φξ should be
+Xk(ξ)-regular and Yξ satisﬁes the geometric condition Ek then:
+a) In order for Zk−1 to be of codimension ≥2 in P v it suﬃces that every irreducible
+component x′
+i of X′ of dimension ≤k should be ruled for f.
+b) In order to have Zk of codimension ≥2 in P v it suﬃces that every irreducible com-
+ponent Xi of dimension ≤k −1 (Ask A.G. illegible) should be made up of smooth
+points of X and should be ruled.
+Indeed for every ξ geometrically singular the set of Yξ (NB: We restrict ourselves to ξ
+such that φxi is Xk(ξ) regular which is harmless because of 8.2) and is the union of sing(Y ′
+ξ)
+and of the inverse image Tξ of T in Yξ so thta the codimension of this singular set in Yξ is
+equal to the inﬁmum of the codim (sing(Y ′), Y ′
+ξ) and of the codim (Tξ, Yξ). Let us restict
+ourselves to ξ such that sing(Y ′
+ξ) is ﬁnite (which is harmless, this leads to place ourselves
+in the complement of a set of codimension ≥2). The singular geometic points of Y ′
+ξ are
+therefore isolated. The conclusion follows easily from this and from 8.4.
+45illegible
+46illegible
+47Do itBlass
+48Ask A.G.
+31
+
+
+===== PDF 32 =====
+Combining 8.13, 8.5 and 8.6, we ﬁnd in the usual manner
+Corollary 8.14.
+We suppose that f: X →P is unramiﬁed and that X has no isolated
+points [illegible] n.49
+a) Suppose X is separable over k. In order that the set of ξ ∈P v such that φxiis Xk(ξ)-
+regular and Yξ is separable, should have a complement of codimension at least two it
+is necessary and suﬃcient that every irreducible component Xi of dimension one of X
+should be formed from smooth points of X and should be ruled relative to f and it
+that for every closed point x of X such that dimx X ≥2 we have prof x X ≥2 profxX,
+(conditions that are automatically satisﬁed if X is geometrically normal and if all of
+its irreducible components are of dim ≥2).
+b) Let us assume that X is geometrically normal, in order that the set of ξ ∈P v such
+that φξ is Xk(ξ) regular and Yξ is geometrically normal should have a complement of
+codimension at least two it is necessary and suﬃcient that every irreducible component
+Xi of X of dimension ≤2 should be formed of smooth points of X and that it should
+be ruled relative to f and that in addition for every closed point x of X such that
+dimx X ≥3 we have profxX ≥3.
+Remark 8.15.
+In 8.6, 8.13, and 8.14 we make for X the hypothesis (Sk) (resp. (Rk)
+respectively: separable, respectively geometrically normal) that we wish to recover as a
+conclusion for the hyperplane sections except perhaps for ξ from an exceptional set of
+codimension at least two.
+This does not restrict the generality; to tell the truth, it would have been better to
+get rid of this preliminary hypothesis, since we see immediately with the help of results of
+par. 3.4 and 5.12 that if X does not satisfy the hypothesis in question, then (by par. 5)
+if there exists a closed point x where the hypothesis fails then for everyξ such that φξ is
+Xk(ξ) regular condition that only eliminate a set of codimension (illegible) and such that
+x ∈Yξ (condition that describes a set of exact codimension one), Yξ does not satisfy the
+said hypothesis at x, the exceptional set Z ⊂P v is of codimension one and not two. (I
+may have somewhat exaggerated the case Ek where we still need some condition, (S1) and
+perhaps of equidimensionality perhaps . . . )
+Remorse In 8.13 and 8.14 it suﬃces to suppose that f: X →P is unramiﬁed at the
+smooth points of X; for the suﬃciency part it suﬃces only that they should be unramiﬁed
+over an open subset X′ of X where complement has codimension ≥k + 1.
+49Ask A.G.
+32
+
+
+===== PDF 33 =====
+Proposition 8.16.
+Let us suppose f: X →P unramiﬁed on an open subset complemen-
+tary to a set of codimension at least two, X geometrically normal and of depth at least
+three at its closed points, ﬁnally X geometrically integral and proper over k. Then the
+set of ξ ∈P v such that Yξ is geometrically normal and geometrically integral of dimension
+equal to dim X −1 (is constructible and) has a complement of codimension at least two.
+Indeed by 8.14 b) such is the case for the property “Yξ is geometrically normal of
+dimension dim X −1” (the dimensional property expresses that φξ is Xk(ξ)-regular.)
+Therefore, by 6.1 all the Yξ are geometrically connected. Since Yξ is geometrically
+normal it is geometrically integral if and only if it is geometrically connected, which gives
+the proof.
+Remarks 8.17.
+a) The hypothesis of 8.16 implies that dim X ≥3. It is possible that [de’s que. Fr.] X is
+geometrically irreducible and that dim f(X) ≥3 (without the hypothesis of normality
+and of non-ramiﬁcation) the set of ξ such that Yξ is geometrically irreducible has a
+complenent of codimension at least two. We can prove in every case that it does not
+contain a hyperplane (see below).
+b) The conclusion of 8.16 is false if we leave out the assumption that profxX
+≥3 for x closed, for example it is false for a non-singular quadric X in P 3 [illeg-
+ible]50 the hyperplane sections are reducible (in fact formed by pairs of concurrent
+lines) and they form therefore a two dimensional family thus of codimension one in
+P (indeed the dual of the quadric is a quadric in the dual space relative to the dual
+form. . . )
+In the case of a non-singular surface in a projective space this situation however
+should be considered exceptional of the following section (or No.). Let us suppose [illegible]
+integral proper over k and f an immersion. Then it follows from 6.1 and 8.8 and 8.14 that
+if Y sing →P v is not generically ﬁnite and inseparable one of the (???) ξ ∈P v such that
+Yξ is separable over k(ξ) with at most two irreducible [illegible] a complement of codim at
+least two.
+We shall now examine more precisely the case of surfaces (the case of curves does not
+arise evidently, from the point of view of irreducibility of hyperplane sections).
+(NB: I noticed with fright that the quadric is not entitled to be called ruled in the sense
+that I have been using the word ruled. This is in disagreement with our fathers and it
+would be necessary to invent a more adequate word for the notion used here.)
+50Ask A.G.
+33
+
+
+===== PDF 34 =====
+Proposition 8.18.
+Let us suppose that k is algebraically closed, X is integral (respec-
+tively integral and normal) of dimension ≥2 and proper over k, let T be a closed ﬁnite
+subset of X such that X −T is smooth and let f/X −T be unramiﬁed. In order that the
+set of ξ ∈P v such that Yξ should be geometrically irreducible (respectively geometrically
+integral) of dimension 1 should have a complement of codimension ≥2 it is necessary and
+suﬃcient that the following conditions should be satisﬁed:
+a) For every x ∈T there exists a hyperplane section Yξ (ξ ∈P(k)) passing through x of
+dimension d −1 and which is irreducible,
+b) X′ = X −T is “ruled” (sic) for f or there exists a hyperplane section Y ′
+ξ (ξ ∈P v(k))
+of X′ which is of dimension d −1 (non???) singular and irreducible.51
+Let us ﬁrst assume that X is geometrically normal. We have already seen then by
+8.14 a) that we can ﬁnd a closed subset Z′ of P of codim ≥2 such that ξ ∈P −Z′
+implies that Yξ is separable over k(ξ) and of dimension d −1 for such a ξ, it amounts
+to the same that Yξ should be geometrically irreducible or geometrically integral, and
+the two problems [(resp´e et non resp´e) Fr. p. 50] (?) considered in 8.18 are therefore
+equivalent. On the other hand, by 5.6, the set U of ξ ∈P such that Yξ is geometrically
+integral of dim d −1 (the dimension hypothesis stating that φξ is Xk(ξ) regular) is open.
+We will exhibit a non-empty open evident subset P −Z contained in U and taking for Z
+the union of g(Y ′sing) and of the hyperplanes Hx of P v deﬁned by the f(x), X ∈T. For
+ξ ∈P v −Z, Yξ is smooth of dimension (d −1) and since it is geometrically connected
+by 6.1 it is geometrically integral. We have to, therefore, express (explain) (prove) that
+every irreducible component of codimension one of Z meets the open set U. But these
+irreducible components are the Hx [they are repeated possibly, but it is not essential] and
+also g(Y ′sing) when the latter are indeed of codimension one, i.e. X′ “not ruled” for f
+(Nota Bene: we use the irreducibility of Y ′sing. On the other hand, in order that this
+latter set should meet the open set U it is necessary and suﬃcient that g(Y ′sing) which
+contains an open and dense set) should meet U. This proves 8.18 in this case. If we do
+not suppose that X is normal, we apply the previous result to the normalization of X the
+reasoning is immediate and I do not give the details here. N.B. In the case [resp´e] 8.18 is
+contained in 8.16 more precisely except in the case d = 2. It is for the case [non-resp´e]
+that it may be better not to require d = 2 and not only d ≥2 . . . .
+It remains to explain (make explicit) the conditions a) and b) of 1.18. This leads us
+to examine in a general way the following situation. We suppose that X is geometrically
+irreducible over k and we (give ourselves) consider a linear subariety L of P (corresponding
+51illegible, ask A.G.
+34
+
+
+===== PDF 35 =====
+to the question of studying the hyperplane sections of X, passing through a given point x
+or tangent to X at a given smooth point), formed therefore by the hyperplane containing
+a linear subvariety L of P (resp. a point, or the image of a tangent space to X at a smooth
+point in the two cases considered) and we ask the question [de ravoi] if for the generic
+point of L (therefore for all the points of a non-empty open subset of L) Y is geometrically
+irreducible of dim = dim X −1. This is a variant of Bertini’s theorem, which [j(devrait
+ﬁgurer) 51] must appear in No. 3, and is treated by exactly the same method, [(ou, si
+on veut, s’y ram`ene) Fr 51]. The dimension question is simply stated for f(X) ̸∈L−0,
+i.e. if X′ = f −1(P −L0) is a dense open subset of X. Let Q be the projective space of
+hyperplanes passing through L0 (N.B. if L0 is deﬁned by a vector subspace F 0 of E we
+have Q = P(F 0) and we consider the canonical morphism (deduced from F −→E, cf.
+Chap II).
+u: P −L0 →Q
+and we consider
+g = uf ′: f −1(P −L) = X′ →Q
+so that L ≃
+V
+Q and the family of X′
+ξ (ξ ∈L) is nothing else than the family of hyperplane
+sections relative to the morphism g. On the other hand, we see immediately that for every
+ξ ∈L, “general” X′ is dense in X, so that X′ is geometrically irreducible if and only if X
+is such. This assumed, the theorem of Bertini-Zariski shows us that we have the wanted
+conclusion of irreducibility provided that dim g(X′) ≥2. (To tell the truth, one could give
+a converse to 3.1 as follows: If X is geometrically irreducible Y is geometrically irreducible
+if and only if either dim f(X) = 2 or dim f(X) = 1 and f(X) is contained in a straight
+line D deﬁned over k and the generic ﬁber of X →D is geometrically irreducible.) This
+also allows us in the present version with L to have a necessary and suﬃcient condition of
+geometric irreducibility of Yξ, ξ generic in L.
+From the [(cunutesque?) Fr] point of view and in terms of ﬁeld theory we can ex-
+press the condition in terms of transcendence degree in the following fashion. We choose
+a “hyperplane at inﬁnity” containing neither L0 nor X and we place ourselves in its com-
+plement, i.e. over a scheme of aﬃne type essentially. We choose a basis of the space of
+linear forms vanishing on L, let it be T1, . . . , Tp (p = codim(L0, P)) and we consider their
+inverse images t1, . . . , tp in the ﬁeld of fractions K of X (X assumed integral). At least
+one of the ti, let us say t1 is ̸= 0. Let us consider therefore a1 = t2/t1, . . . , ap−1 = tp/t1
+then dim g(X′) is nothing else but the transcendence degree of K(a1, . . . ap−1) ⊂K over
+k. Therefore if the transcendence degree if ≥2 we are o.k. If it is one then we must
+require that over k, f(X) is contained in a linear subvariety of P containing L0 and of
+35
+
+
+===== PDF 36 =====
+dimension at most one and that the generic ﬁber of g: X′ →g(X′) should be geometrically
+irreducible.
+Let us suppose that L0 is of dimenison g, so that the ﬁbers of u: P −L0 →Q are of
+dimension q + 1 so that those of g are dim ≤q + 1, and consequently we have dim g(X ′) ≥
+dim f(X) −(q + 1) so that the dimension condition for g(X′) is veriﬁed in view of the
+fact that dim f(X) ≥q + 3. If q = 0 we ﬁnd the fact indicated in 8.17 a). Returning to
+conditions of 8.18 we see that condition a) relative to an x ∈T is satisﬁed provided x is not
+“conical at x relative to f” in an obvious sense. Maybe it will be better to introduce these
+latest Bertinisque developments in the next section. . . change of projective immersion.
+§9 Change of Projective Embedding
+9.1. For every integer n > 0 let P(n) = P(Symn(e)), we have an evident immersion
+un: P →P(n), since O(n) is generated by its sections over every open aﬃne of S and
+that p∗(0p(n))Symn(E)52 where p: P →S is the projection. If f: X →P is an unramiﬁed
+morphism (resp. an immersion) it is the same with unf: X →P(n). There is sometimes an
+advantage in the study of X in replacing f by unf in order to avoid a very special behavior
+and sometimes embarrassing to f in certain respects. (An example of such peculiarity is
+the one indicated (sic) in 8.12 b), where Y sing →P v has an image of dimension r −1 but
+gives rise to an inseparable extension of ﬁelds. Another one is that given by the quadric
+surfaces in P 3 to know that all the singular hyperplane sections are geometrically reducible.
+(in spite of the fact that X is geometrically irreducible.))
+Proposition 9.2.
+We suppose S = Spec(k), X smooth over k, and f: X →P unramiﬁed.
+Let n ≥2 and let us consider fn = unf. Then fn: X →P(n) satisﬁes the equivalent
+conditions of 8.8, in particular for ξ ∈P(n) in the complement of a set of codimension
+≥2, the corresponding hyperplane section Yξ is smooth or (admits) only a ﬁnite number
+of non-smooth points which are geometrically ordinary singularities. If f is an immersion
+there is at most one such singular point and it is rational over k(ξ).
+N.B. One would have to announce 8.8 in a manner such as not to exclude the case
+where f is not an immersion. The veriﬁcatioin is essentially trivial under the condition (ii
+bis) of 8.8. Without a doubt we should make explicit in 9.1 that the hyperplane sections
+of X relative to fn are nothing else but the “sections” of X by hypersurfaces of degree n
+in place of hyperplanes.
+52Illegible
+36
+
+
+===== PDF 37 =====
+Proposition 9.3.
+Suppose that X is geometrically irreducible and that dim f(X) ≥2,
+let x ∈X(k) let n ≥2.
+a) Let us consider the linear family of hyperplane sections of X relative to fn = unf which
+pass through x, its generic element deﬁnes a Y (n)
+ξ
+which is geometrically irreducible.
+b) Let L be a linear subvariety of P passing through f(x) and not containing f(X). Let
+us consider the linear familyof hyperplane sections of X relative to fn deﬁned by the
+hyperplanes of P(n) “tangent to L at x” (i.e. deﬁned by the n-forms over P which
+over L are zero of order at least two at x), its generic member is a Y (n)
+ξ
+which is
+geometrically irreducible.
+c) Let us suppose that X is smooth at x and that n ≥3 where f(X) is not contained in
+a plane deﬁned over k. Let us consider the family of hyperplane sections Y (n)
+ξ
+of X
+relative to fn which are “tangent to X at x”. Then the generic member of the latter
+deﬁnes a Y (n)
+ξ
+that is geometrically irreducible.
+The proof is essentially trivial in terms of the criteria of the end of the previous
+section. Taking an aﬃne model of P containing f(X) we are reduced a) to ﬁnding three
+polynomials in the coordiantes T1, T2, . . . , Tr of degree ≤2, let them be P, Q, and R such
+that Q(t)/P(t) and R(t)/P(t) are algebraically independent over k in K (where K is the
+function ﬁeld of X and t = (t1, . . . , tr) is the system of elements of K deﬁned by the Ti); in
+b) we require also that P, Q, and R should vanish to order two at least on L which we can
+in addition suppose to be deﬁned by the equations T1, . . . , Ts = 0; ﬁnally, in c) it is the
+same but L is the image of the tangent space ot X at x and we allow possibly to take P,
+Q, and R of degree 3, i.e. a little more away. The hypothesis that dim f(X) ≥2 signiﬁes
+that the transcendence degree of K(t1, t2, . . . , tr) over k is ≥2, i.e. we can ﬁnd t1, t2 let
+us say algebraically independent. In a) we take therefore P = T1, Q = T 2
+1 , R = T1T2, in
+b) we (analogously) do the same noting that we may there choose t1 leading to T1 zero
+over L due to the fact that f(x) ̸⊂L∗(which implies that there exists an index i between
+one and s such that ts ̸= 0, so that ts is not a constant (since ts is zero at x) therefore ts is
+not algebraic over k53 (N.B. we may suppose k algebraically closed). The case c) follows
+from b) except in the case where f(X) is contained in the image, L, by f of the tangent
+space to X at x. [If dim X = 2 this case is eﬀectively exceptional (the trace of a quadric
+surface tangent to a plane on that plane is in general formed by two intersection lines
+and is therefore not irreducible)]. But to treat that case, in the forms P, Q, and R made
+explicit above we may replace evidently X by L itself, where the solution is trivial. (If
+53[Tr] added by translator
+37
+
+
+===== PDF 38 =====
+dim L = 2 take P = T 2
+r , Q = T 3
+r , R = T 2
+r Tr−1 and not that Q/P = Tr and R/P = Tr−1
+are linear forms independent over L, therefore algebraically independent. If dim L ≥3
+then Tr−2, Tr−1, Tr are linearly independent over L and we take
+P = T 2
+r , Q = T 2
+r−1, R = T 2
+r−2
+Conjugating with 8.18 we ﬁnd a Corollary 9.4. ([Tr] to be stated)
+Finally we must combine the latter with 9.2 in order to ﬁnd a recapitulating theorem
+in the “excellent case.”
+Theorem 9.5 (illegible page 52 or 55). 54
+(If X is smooth and proper and geometrically integral over k and f: X →P is unram-
+iﬁed X of dimension ≥2 (Ask Grothendieck) by considering the result ??? when x →p is
+an immersion (variety of singular points of Yξ.
+§10 Pencils of hyperplane sections and ﬁbrations of blown up varieties
+10.1. Let Z be the P-exceptional set in P v relative to a constructible property P such
+that Z is a constructible subset of P v. Let us suppose S = Spec(k). We will see (cf.
+No. 12 where we catch up with things which should have come in without a doubt in
+(previous Nos.) that in order to have codim(Z, P v) ≥2 it is necessary and suﬃcient that
+“every suﬃciently general line” L in P v should not meet Z or also again (or even) Z and
+it suﬃces that there should exist one (a single) L in P not meeting Z (should be Z; AG’s
+error P.B.).55 If k is inﬁnite it is necessary and suﬃcient that there should exist a single
+straight line L in P that does not meet ¯z. We call a linear pencil of hyperplane sections of
+‘X” deﬁned by the straight line L in P the L-prescheme YL (deﬁnition valid for any S).
+Then the previous reﬂections together with results of Nos. 8 and 9 give us criteria for the
+existence of such pencils having the ﬁbers Yξ (ξ ∈L) all satisfying the property P ﬁrst
+of all in the case where S is an inﬁnite base ﬁeld. Taking into account 8.2, if for every
+associated prime cycle on X we have dim f(T) > 0 then we can (by taking the property
+P ′ = P+ condition of regularity for φξ) require that the pencil YL should be ﬂat over
+L. In the case where S is arbitrary we can again, proceeding by the procedure of 7.1,
+construct such a pencil over an open neighborhood of a given point s of S in view of the
+fact that k(s) is inﬁnite and we should know that Z is closed (which is assured in diverse
+various misce laneour cases by the results of Par. 5 and the assumption that X →S
+is proper). To do it right it would be convenient after general explaination of this type
+54Ask A.G., I do not follow [Tr]
+55Ask A.G.
+38
+
+
+===== PDF 39 =====
+to give recapitulating statements where we eﬀectively apply the preceding results for a
+certain number of properties of this nature (and also comprising module properties). As a
+minimum in this sense we must give here the reformulation of 9.5 in terms of linear pencils
+– a fact constantly used in geometric applications.
+10.2. By a polarity, to a straight line L in P v there corresponds a linear subvariety L0
+of codim 2 in P (S arbitrary). Let us put T = xP L0. Another way to describe T is as
+follows; L is deﬁned by a locally free quotient of rank 2 of Ev or what is the same by a
+submodule, locally a direct factor F of E everywhere of rank two. Let us consider the
+composed homomorphism
+FX −→EX −→OX(1),
+then T is nothing else but the scheme of zeroes of this composed homomorphism or what is
+the same it is deﬁned by the ideal J, image of the corresponding homomorphism (obtained
+by twisting by OX(−1))
+: FX(−1) −→OX.
+Let us suppose that this homomorphism is regular which means that if we write
+down locally a totally ordered basis of FX(−1) then its image in OX forms an OX-regular
+sequence, a condition that does not depend on the basis chosen and that can be announced
+intrinsically also by saying that FX(−1) ⊗OX/J →J/J2 is an isomorphism and tht
+V (J) = T →X is a regular immersion [NB: we should somewhere reveal the general
+situation with a homomorphism G →OX, G locally free over the prescheme X, for example
+in the section about regular immersions] we have then
+Theorem 10.2.
+With the above hypothesis the linear pencil YL with the canonical
+projectionYL →X is X isomorphic in a unique fashion to the blow-up of the prescheme
+X with center T.
+To understand the meaning of this theorem it is convenient to notice at the beginning
+of the section orno that if S = Spec(k) then for a ‘suﬃciently general’ straight line L in P v
+the condition of regularity is veriﬁed (cf. catching up indicated in No. 12 namely for 5.3.)
+In what follows in the construction of “good” linear pencils indicated or anticipated at at
+the beginning of the present No., we could require that the described pencil should satisfy
+the said condition (which is a condition of the same type but diﬀerent from the one that
+consists in requiring that for every ξ ∈L, φξ should be Xk(ξ)-regular). We should include
+the condition in question in the proposed recapitulating statements.
+On the other hand, practically 10.2 is used only in the situation of 9.5, which makes it
+desirable not to announce the reformulation of 9.5 in terms of pencils, until after 10.2, in
+39
+
+
+===== PDF 40 =====
+order to be able to include in the statement in question also the isomorphism of the pencil
+with a blow up (i.e. to give a description of the situation permitting a suitable reference).
+We obtain thus a way for every projective smooth geometrically connected X of dim ≥2
+over an inﬁnite ﬁeld k, to ﬁnd a closed smooth subscheme non-empty of codimension two
+at every one of its points such that the blown up scheme admits a ﬁbration over P 1, with
+all the ﬁbers are geometrically integral and such that all the ﬁbers are smooth except at
+most a ﬁnite number, the latter having at most a geometrically singular point and such a
+point being rational over k and geometrically an ordinary singularity.
+This explains the importance of a deep study (just started at the present time) of
+such ﬁbrations with singular ﬁbers to reduce in a certain measure (to some extent the
+study of projective smooth varieties of dimension d to those of (families depending on one
+parameter) or projective varieties of dimension (d−1) that may have ordinary singularities.
+The statement 10.2 is a more or less immediate consequence of the following which is
+completely independent of the story of hyperplane sections and would be without a doubt
+better in its place in an extra paragraph “regular immersions.”56
+Proposition 10.3 is crossed out. Ask AG if that is his intention.
+Proposition 10.3.
+Let X be a prescheme, G a quasi-coherent module over X and
+u: G →O a homomorphism, J = u(G), T = V (J). Let X be deduced from X by blowing
+up T. Let us consider on the other hand p = p(G), the canonical homomorphism Gp →
+O(1) and its kernel H (such that we have the exact sequence 0 →H →Gp →O(1) →0)
+the homomorphism up: Gp →O and the quadi-coherent ideal K = up(H) →O. Then
+X is canonically isomorphic to a closed subscheme of V (K). If G is locally free and u is
+“regular” then the above isomorphism is an isomorphism of X with V (K) itself in this
+case H is locally free over p and H →ϑp 9whose prescheme of ??? is X) is also regular.
+The ﬁrst statement is almost trivial. The second one is an exercise which does not
+cause any diﬃculty (I have not done it in detail thinking that you can deduce it just as
+well as I).
+If in 10.2, S = Spec k and X is of dimension ≥1 then the assumption of regularity
+made is equivalent to T = φ so that YL →X is an isomorphism. We ﬁnd therefore by
+conjugating with 9.2:
+Corollary 10.4 (of 10.2).
+Let X be a smooth curve geometrically connected in a pro-
+jective space P over an inﬁnite ﬁeld k and let n ≥2. Then there exists a linear pencil of
+n-forms over P deﬁning a morphism X →P 1 having the following property: the morphism
+56Ask A.G.
+40
+
+
+===== PDF 41 =====
+is generically ´etale of degree d and for eery geometric point s of P 1, Xs is ´etale over the
+algebrically closed ﬁeld k′ = k(s) or it is k′ isomoprhic to the sum of d −2 schemes Spec k
+and the scheme I′
+k = Spec k′[t]/(t2). In the language of the forefathers: there is at most
+one point of ramiﬁcation and it is “quadratic.”
+§11 Grassmanians
+Since we will now use linear subvarieties of P not only of reltive dimension 0 andn−1
+it is clear that we shall need some notations about grassmanians and some [‘sorites’]57
+(facts) of the nature of ‘elementary geometry’ about the constructions concerning linear
+varieties which should all come at the beginning of the paragraph. In addition one takes
+in practice sometimes any linear sections and not only hyperplane sections and it is proper
+to review (revisit) in this enlarged spirit all the previous Nos. sections.
+Let E be a quasi-coherent module over the prescheme S, and let n be an integer
+> 0. Let us consider the functor (Sch)0/S →(Ens) deﬁned by Grassn(E) (S′) = quotient
+modules, locally free and of rank n of E′
+s.
+This functor is representable and the prescheme over S which represents it will also
+be denoted Grassn(E). To prove the representability consider the natural homomorphism
+of functors
+Grassn(E) −→Grass1(ΛnE) = P(ΛnE)
+deﬁned by associating with every locally free quotient of rank n, G of E′
+s the locally free
+module of rank one G considered as a quotient of E′
+s. We prove as in Seminaire Cartan58
+that this morphism if “representable by a closed immersion” (for closed immersions) such
+that Grassn(E) appears as a closed subscheme of P(ΛnE); in particular it is separated
+over S and quasi-compact over S and if E is of ﬁnite type it is projective over S. If E
+is of ﬁnite presentation then that is also the case for Grassn(E): indeed we may suppose
+that S is aﬃneS = Spec(A) so that E comes from a module of ﬁnite type over a subring
+of ﬁnite type of A – since the formation of Grassn(E) is evidently compatible with base
+change over S.
+Since E is locally free therefore Grassn(E) is smooth over S with geometrically con-
+nected ﬁbers. This comes from a more precise fact: If E is free of rank r then Grassn(E)?
+may be recovered from
+  r
+n
+
+open subsets each one of which is S isomorphic to aﬃne space
+of relative dimension n(r−n) over S. This decomposition corresponds to the choice, thanks
+to the base of E to
+  r
+n
+
+decompositions of E by exact sequences (s)0 →E →E →E′′ →0
+57What is best translation of this word?
+58Make reerence more precise (Tr)
+41
+
+
+===== PDF 42 =====
+with E′ locally free of rank n. Such an exact sequence allows us to deﬁne a sub-functor
+Grassn(s) of Grassn(E) by limiting ourselves to quotients G of E′
+s locally free of rank n,
+such that the composed homomorphism E′
+s′ →E′
+s →G should be surjective (therefore
+bijective). But the inclusion Grassn(S) →Grassn(E) is representable by open immersion
+and on the other hand Grassn(E) is representable by open immersion and on the other
+hand Grassn(S) is canonically isomoprhic to the ﬁber bundle V (Homϑs(E′, E′′)).
+As a result, for example, of this particular structure we may mention that if s ∈S,
+then (E being locally free of ﬁnite rank) every point of Grassn(E) with value sin k(s)
+lifts to a section over a neighborhood of s. On the other hand, if S = Spec(k), k an
+inﬁnite ﬁeld, then every open non-empty subset of Grassn(E) contains a k-rational point.
+A point of Grassn(E) with values in S, i.e. a locally free quotient module G of rank n of
+E canonically deﬁnes a subscheme of P(E), (i.e., to say) P(G). Such a subscheme (but
+without imposing or specifying (Tr) the rank of G) is called a linear subvariety of P(E)
+(relative to S if there is a possibility of confusion). It is therefore a projective ﬁbration of
+relative dimensioni (n −1) if n ≥1, (and empty is n = 0). We immediately verify that
+the section of Grassn(E), i.e. G is known if we know the linear subvariety corresponding
+to P(E). In this manner the grassmanian can be interpreted as representing the functor
+(“linear subvarieties of relative dimension n −1 of P ′
+s”) for S′ variable in n ≥1. It is
+furthermore possible to give an intrinsic characterization of the latter functor, i.e. of the
+notion of linear subvariety of relative dimension m and that are of “projective degree one”
+at every s ∈S; this characterization will be given in a later chapter and we shall not need
+it at all here.
+Let us again suppose that E is locally free of rank r, let Ev be its dual. Then by
+a polarity we ﬁnd a canonical isomorphism Grassn(E) ≃Grassr−n(Ev) that assigns to a
+quotient G of E the quotient Ev/Gv of Ev. From the point of view of linear varieties to a
+linear variety L of relative dimension m of P there corresponds the linear dual variety L0
+of relative dimension (r −1) + −1 −m of P v, i.e. of relative codimension (m + 1) in P v.
+(N.B. (r −1) is here the relative common dimension of P and P v over S), which we may
+visualize geometrically as follows. Let us ﬁrst of all take n = r−1, we ﬁnd an isomorphism
+P(Ev) ≃Grassr−1(E) that allows us to identify the points of P v with values in S (let us
+say) as linear subvarieties of codim 1 of P (called again hyperplanes of P).
+This says that L0 consists of hyperplanes which contain the linear subvariety L of P
+(by which of course we mean that the points of L with value sin S′ are the hyperplanes in
+P ′
+S that contain L′
+S). This follows from the fact (that should have occurred at the same
+time as the fact that a linear subvariety L of P determines a locally free quotient G or Q
+[illegible] of E don’t il provient that if G and g′ are two locally free quotients of E (not
+42
+
+
+===== PDF 43 =====
+necessarily of the same rank) then P(G′) ⊂P(G) (as the linear subvarieties of P(E)), if
+G′ is majorized by G (and the inclusion P(G′) →P(G) is nothing else but the deduced
+morphism from G →G′).
+Here is a minimum of the [sorites Fr]59 which we must have at our disposal. The
+complete list cannot in any case be ﬁxed (only when) until the sets of other Nos. of the
+present paragraph60 are written up.
+It seems to me convenient [commode Fr] to introduce also the functor Grass(E) (S′) =
+set of quotient modules locally free (of rank not speciﬁed) of E′
+S [illegible, ask AG] then
+Grass(E)? is representable by
+`
+n≥0Grassn(E). The linear subvarieties of P(E) are indeed
+deﬁned by sections of Grass(E) over S [NB: the rank, i.e. the relative dimension may vary
+if S is not connected. [slightly illegible conﬁrm with AG].
+§12 Generalization of the previous results to linear sections
+Complements to notations. If P = P(E), E any quasi-coherent module, we set also
+Grassn(P) = Grassn+1(E) so that Grassn(P) corresponds to linear subvarieties of dimen-
+sion n in P; this is valid for n ≥−1 if we agree that dim = −1 means empty. If E is
+locally free it would be advisable to introduce
+Grassn(P) = Grassn−1(P v) = Grassn(Ev)
+which corresponds to linear subvarieties of codimension n in P. If E is of rank r + 1
+[illegible, ask AG] P of relative dimension r we have a canonical isomoprhism Grassn(P) =
+Grassr−n(P). In what follows we suppose E ﬁxed locally free of rank r and we are interested
+in linear subvarieties of P of given dimension m, thus in Grm = Grm(P) = Grm(Ev).
+Over that prescheme we have therefore a canonical quotient G locally free of rank m of
+EGr, let us call it F. The natural incidence prescheme over PXXGrm, which represents the
+subfunctor of the product functor corresponds to the couples consisting of a section of PS
+and a linear subvariety of codimension m of P ′
+S containing the letter, it can be made explicit
+therefore in the following way: let T = PSXGrm (or if we prefer any prescheme relative or
+over this product), then over T we have ET the quotient OT (1) and the sub-module locally
+direct factor of Gv
+T . We consider the composition of the canonical homomorphisms Gv
+T →
+OT (1) which by transposition corresponds also to the compared analogous homomorphism
+of the sub-module OT (−1) of Ev
+T into the quotient Gv
+T : OT (−1) →GT and may also be
+59Ask A.G. or Deligne about the best word
+60What is A.G.’s meaning of paragraph?(Tr)
+43
+
+
+===== PDF 44 =====
+considered as deﬁned by a section of GT (1), φm ∈Γ(T, GT (1)). The incidence prescheme
+(resp. its inverse image in T) is nothing else but the prescheme of zeros of the one or the
+other homomorphism or of the section φm. We could denote the incidence prescheme by
+H(m) for m = 1; we recover the one from No. 1. If X is over P we may set Y (m) =
+XxP H(m) and deﬁne by this the notation Y m if ξ is a point of Grm with values in an S′.
+Therefore the Y m
+ξ
+are “linear sections” of X over P (or rather of X′
+S over P ′
+S by linear
+subvarieties of codimension m of P or rather of P ′
+S.)
+I use [or proﬁt from] this opportunity for a notational self-criticism which could come
+in No. 1. This point corresponds arbitrarily to indicate an object Y that corresponds to
+X the letter Y to X (so that if X becomes Z we no longer understand very well what to
+take.) This inconvenience has already led me into some incoherent notations.
+Perhaps (or maybe) in the more general context with an integer m as here suggests
+a reasonable solution: to write X(m) in place of Y (m), thus X(1) in place of Y in No.
+1. In such a way we might approximately have X(m)(m1) = Xm+m1. I am going to try
+such notation in what follows. Evidently even the exponent is open to criticism since it
+is current practice in algebraic geometry to denote by an exponent the dimension of the
+varieties which enter into play. But since we shall never make use of this type of convention,
+I think that we have a free hand as far as that matter is concerned.
+We see immediately that in the preceding construction of X(m) that we have a
+canonical isomorphism X(m) = Grassm(F v) where FX ∼= F ∗(Ω1
+P/S)(1) is the kernel of
+EX →OX(1), in particular X(m) is smooth over X with geometrically integral ﬁbers. (In
+fact, rational varieties of dimension (m(r −m)).) Of course, the veriﬁcation reduces to
+the case X = P and because of this it belongs just as the previous considerations to the
+generalities about grassmanians (which I am sure you are going to “magnify” in a separate
+paragraph).
+We now have a perfect analogy of the diagram from No. 1. Again a forgotten point:
+as a prescheme over Grm, H(m) is canonically isomorphic to P(EGr/Gv); it is therefore an
+excellent projective ﬁbration (but of course we may not conclude this in general for X (m)
+over Grm).
+The Proposition 2.1 [se transpose Fr] translates (?) without change. In 2.2 it should
+read: it is necessary and suﬃcient that for every x ∈Z we have dim x ≤m −1. For the
+proof we may, for example, restrict ourselves to 2.6 by considering a generic linear variety
+of codimension m as the intersection of m independent generic hyperplanes. Dieudonne
+demerdetur [Latin] – (or is it slightly oﬀcolor French [Tr])
+From the writing up point of view if (as seems preferable to me) we make from the start
+m general it seems preferable to prove 2.6 at the same time, where, of course, dim X −1
+44

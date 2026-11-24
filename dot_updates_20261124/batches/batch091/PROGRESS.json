@@ -1,0 +1,13 @@
+{
+  "batch": 91,
+  "this_french_pages": [14, 15, 16, 17],
+  "this_english_pages": [12, 13],
+  "this_from": "法14下 / 英12，第3节标题",
+  "this_through": "法17上端 / 英13，推论3.3证明与英编书目",
+  "french_contiguous_through": "物理17页上端，3.3 末",
+  "next": "物理法17的20.4 / 明载4.1，对读英13与14",
+  "merge_into_1158_done": false,
+  "double_count_as_new_translation": false,
+  "formal_EGA_IV_1": "另线221提要 / 223定义1.1.1",
+  "unverified": "3.1.1 法稿没有原证明；英编旧书页未逐一对印；法文全卷尚未校完"
+}

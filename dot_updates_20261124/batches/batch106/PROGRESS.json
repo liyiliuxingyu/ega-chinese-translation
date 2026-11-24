@@ -1,0 +1,12 @@
+{
+  "batch": 106,
+  "work": "EGA 第五卷预备笔记",
+  "date_utc": "2026-11-24",
+  "translated": "法文物理41页首至43页中段（8.8、8.9及8.8末尾维数论证），不含8.10",
+  "collated_english": [28, 29, 30],
+  "next": {"french_physical": 43, "english_physical": 30, "anchor": "Remarque/Remark 8.10"},
+  "issues_open": ["8.7(c)法40/41与英28的误接，缺段未复原", "法36覆写号未定", "8.10 非分歧但非étale及几何单支断言待核"],
+  "main_1158p_modified": false,
+  "printed_IV_1_modified": false,
+  "build": {"engine": "XeLaTeX", "passes": 2, "output_pages": 3, "visual_review_pages": [1, 2, 3]}
+}

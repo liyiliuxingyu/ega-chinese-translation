@@ -1,0 +1,76 @@
+from pathlib import Path
+import json,re,hashlib
+root=Path('/workspace/scratch/a886fd56dd2f')
+src=root/'unpacked/dot_batches'; out=root/'integration/middle'
+keys=['12节关联概形','12节纤维结构','12节一般截面推广','12节正则截面','12节维数条件与推广计划','12节奇异关联簇','12节退化层维数','12节线性截面族','12节末与13节定义','13.2归约','13.3陈述','13.2初等邻域构造','13.3证明归约','13.3一般截面归纳','13.3超平面情形证明','13.4有限域与连通性','13.4有限点集邻域','13.4一般基底','13.4拓扑结构']
+entries=[]; blocks=[]; notes=[]; count=0
+repls={
+ '本批仍把该说明留作译注':'这里仍把该说明留作译注',
+ '原稿对正规化有限性的引用尚待定位，原脚注65的疑问语气保留。本批只收入这些归约，不表示后续构造已经完成。':'原稿对正规化有限性的引用尚待定位，原脚注65的疑问语气保留。后续构造现已按底本接续收入，但这不等于该依赖链已经独立审定。',
+ '本句启动的是利用引理的构造；其具体步骤从下一段开始。本批止于这里，未把引理的假设使用或其证明标为完成。':'本句启动的是利用引理的构造，其具体步骤见下段；引理的证明也在后文接续收入，但原稿的依赖与略写仍须分别核查。',
+ '上一批中的':'前文中的',
+ '上一批指出的':'前文指出的',
+ '上一批引理字面':'前述引理字面',
+ '前一批原段':'紧前原段',
+ '前批仍待验证的':'前文仍待验证的',
+ '前批':'前文',
+ '上一批':'前文',
+ '本批':'本译稿',
+ '后续第52页':'底本后续第52页',
+ '多初等':'多重初等',
+ '准凝聚':'拟凝聚',
+ '未分歧':'无分歧',
+}
+for idx,k in enumerate(keys,1):
+ d=next(src.glob('*'+k+'*')); p=next(d.glob('*校订续译.tex')); text=p.read_text(); prog=json.loads((d/'PROGRESS.json').read_text())
+ start=text.index('\\chapter*{',text.index('\\chapter*{')+1)
+ body=text[start:text.rindex('\\end{document}')].strip()
+ # Strip the per-delivery chapter heading, keeping only original source headings.
+ body=re.sub(r'\\chapter\*\{(?:\\S|§)12[^\n]*\}\n','',body)
+ body=re.sub(r'\\chapter\*\{§13 初等态射与M\. Artin定理（续）\}\n','',body)
+ body=body.replace('\\chapter*{§13 初等态射与M. Artin定理}', '\\egasection{13. 初等态射与 M. Artin 定理}\n\\source{\\texttt{EGAVaiello.pdf}，PDF及印刷第49--53页}')
+ body=body.replace('\\chapter*{引理13.3}', '\\egas{13.3}{引理}')
+ body=body.replace('\\textbf{定义13.1。}', '\\egas{13.1}{定义}')
+ body=body.replace('\\textbf{定理13.2（M. Artin）。}', '\\egas{13.2}{定理（M. Artin）}')
+ body=body.replace('\\noindent\\textbf{注13.4（续）。}\n','')
+ body=body.replace('\\noindent\\textbf{注13.4。}', '\\egas{13.4}{注}')
+ body=body.replace('\\section*{记号补充}','\\subsec{记号补充}')
+ body=re.sub(r'\\section\*\{[^\n]*\}\n','',body)
+ body=re.sub(r'\\enlargethispage\{[^\n]*\}\n','',body)
+ body=body.replace('\\newpage\n','')
+ for a,b in repls.items():body=body.replace(a,b)
+ if idx==7:
+  old='若还把$V^{(k)}$定义为$X^{(m)}$中对应于条件'
+  new='以下维数等式按一个固定的非空、纯维$n$的几何纤维理解，设$0\\leq m\\leq n\\leq r-1$。若还把$V^{(k)}$定义为$X^{(m)}$中对应于条件'
+  assert old in body;body=body.replace(old,new)
+  old='的子概形，那么直接计算就得到'
+  new='的子概形，那么当整数$k$满足$0\\leq k\\leq\\min(m,r-1-n)$时，维数计算给出'
+  assert old in body;body=body.replace(old,new)
+  old='至少在合理的限制$k\\leq m$、$k\\leq r-m$下如此，除非计算有误。'
+  new='在这一范围内，所讨论的退化层非空。'
+  assert old in body;body=body.replace(old,new)
+  old='底本的两项限制与“up to an error of calculation”均照录。原稿没有在本段交代空退化层、不同相对维数分支或各参数范围的全部约定；因此这里不是对所有$k$均成立的无条件维数等式，也不据此认定所列限制已经充分。本译稿不补造缺少的范围定理。'
+  new='底本原文为“we find by an immediate calculation”，随后只给出$k\\leq m$、$k\\leq r-m$，并说“至少在这些合理的限制下如此，除非计算有误”。这两项限制不充分：取$S=\\Spec K$、$X=P=\\mathbf P^2_K$、$f=\\operatorname{id}$，则$r=3$、$n=2$、$m=k=1$均满足原界；但$T_x=P$，任何过$x$的直线$L$都满足$\\dim(T_x\\cap L)=1<2=n-m+k$，故$V^{(1)}=\\varnothing$，不能照用有限维数等式。本次正文明确几何纤维及纯维约定，并将非空范围订为$0\\leq k\\leq\\min(m,r-1-n)$；维数公式本身不变。核验方法是令$N=r-1$、$d=N-m$、$t=n-m+k$，先选$T_x$中$t$维交子空间，再选余空间中的$(d-t)$维像及图映射；所得层余维为$k(n-m+k)$。完整计算及更高交维层的比较见D17-M-E02。此项局部线性代数核验不等于已恢复原稿所引补篇或下文的超奇异点论证；若纤维分支维数不同，应分别计算。'
+  assert old in body;body=body.replace(old,new)
+ if idx==13:
+  body=body.replace('则相应的一般线性截面在$k$上光滑：', '则相应的一般线性截面$X^{(m)}_\\eta$在$\\kappa(\\eta)$上光滑：')
+  old='底域措辞仍照原文保留：一般纤维自然定义在$\\kappa(\\eta)$上，“在$k$上光滑”的字面表述与有限表示条件的关系需要核对，不能当作已核实的概形态射断言。'
+  new='底本原写“smooth over $k$”。这里的一般纤维定义在$\\kappa(\\eta)$上，正文据此订正光滑性的基域；不能把沿参数空间一般点的基变换偷换为对原域$k$的光滑态射。光滑态射要求局部有限表示，而例如$\\Spec k(t)\\to\\Spec k$并不满足这一要求。此项基域校正不补齐所引Bertini结论的全部假设或缺文，详见核查项D17-M-E01。'
+  assert old in body;body=body.replace(old,new)
+ for fn in range(61,67):
+  body=body.replace('\\footnote{原脚注'+str(fn)+'：','\\footnote{\\textbf{英译编者注〔底本脚注'+str(fn)+'〕：}')
+ def ren(m):
+  global count
+  count+=1
+  noteid=f'D17-M{count:03}'
+  notes.append({'id':noteid,'batch':idx,'source_tex':p.name})
+  return '\\cmt{'+noteid+'}{'
+ body=re.sub(r'\\note\{',ren,body)
+ if idx==1:
+  body='\\egasection{12. 将上述结果推广到线性截面}\n\\source{\\texttt{EGAVaiello.pdf}，PDF及印刷第43--48页}\n'+body
+ blocks.append('%% BEGIN DOT-MIDDLE BATCH %02d: %s\n%s\n%% END DOT-MIDDLE BATCH %02d\n'%(idx,p.name,body,idx))
+ entries.append({'order':idx,'batch':k,'source_tex':str(p),'source_sha256':hashlib.sha256(p.read_bytes()).hexdigest(),'source_bytes':p.stat().st_size,'progress':prog,'audit':(d/'AUDIT.txt').read_text() if (d/'AUDIT.txt').exists() else '', 'body_chars':len(body)})
+body='\n\n'.join(blocks)+'\n'
+(out/'body_middle.tex').write_text(body)
+(out/'integration_notes.json').write_text(json.dumps({'scope':'EGAVaiello.pdf pp43-53 §12 through §13.4(e), excluding §14 heading','batches':entries,'notes':notes,'cmt_notes':count,'source_editor_notes':6,'new_corrections':[{'id':'D17-M-E01','source':'p51 generic linear section','change':'smooth over k -> smooth over kappa(eta); original in footnote','source_confirmation':'p51 page image read, p52 explicit X_eta^{(m)}','reference':'https://stacks.math.columbia.edu/tag/01V4'},{'id':'D17-M-E02','source':'p47 degeneracy-dimension formula','change':'Specify nonempty pure n-dimensional geometric fiber; 0<=m<=n<=r-1, 0<=k<=min(m,r-1-n); original formula unchanged; original insufficient bounds in footnote','counterexample':'X=P=P^2_K, f=id, r=3, n=2, m=k=1: V^(1) empty although k<=m and k<=r-m','proof':'Schubert intersection strata: N=r-1,d=N-m,t=n-m+k; dimension=t(n-t)+(d-t)m=dm-k(n-m+k); higher t have lower dimension; add n and subtract ambient Grass dimension','limit':'Does not verify later scheme structure, singular-locus or supersingularity arguments; mixed-dimensional fibers require componentwise computation'}],'terminology_changes':{'准凝聚':'拟凝聚','未分歧':'无分歧','多初等':'多重初等'},'format_changes':'remove 19 standalone covers, scope chapters and forced page breaks; remove editorial subsection headings except source notation heading; retain every mathematical body paragraph and all footnotes; harmonize theorem macros; obsolete batch status phrases removed/updated'},ensure_ascii=False,indent=2)+'\n')
+print('body bytes',len(body.encode()),'cmt',count,'editor_notes',body.count('英译编者注〔底本脚注'),'egas',body.count('\\egas{'))

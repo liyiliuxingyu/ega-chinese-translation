@@ -1,0 +1,49 @@
+{
+  "engine": "XeLaTeX (root restored per-session tex_environment.sh)",
+  "passes": 2,
+  "exit_code": 0,
+  "pages": 21,
+  "body_pages": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15
+  ],
+  "report_pages": [
+    16,
+    17,
+    18,
+    19
+  ],
+  "collation_pages": [
+    20,
+    21
+  ],
+  "rendered_and_visually_inspected_pages": [
+    1,
+    2,
+    8,
+    10,
+    13,
+    17,
+    20,
+    21
+  ],
+  "overfull_boxes": 0,
+  "undefined_control_sequences": 0,
+  "missing_characters": 0,
+  "font_note": "LaTeX reports normal size substitution for rsfs at non-native sizes; no font family or ctexbook default changed.",
+  "pdf_sha256": "f4b29e2e28642a195a12f3e605ee5405e1bf17f39cb826d73f7b2401398faaad",
+  "limitation": "Local fragments only. Not a whole-book build, not independent proof verification."
+}

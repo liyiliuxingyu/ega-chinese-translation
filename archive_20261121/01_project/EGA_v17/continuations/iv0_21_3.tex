@@ -1,0 +1,169 @@
+% 底本：EGAIV.1.pdf，PDF第159--161页，分册印刷第160--162页。
+\subsection{\texorpdfstring{$p$-基与非完美性模}{p-基与非完美性模}}
+\egap{21.3.1}
+设 $A,B$ 为特征 $p$ 的环，$i:A\to B$、$j:B\to A$ 为满足
+\begin{equation}
+ j(i(a))=a^p\qquad(a\in A)
+ \tag{21.3.1.1}
+\end{equation}
+及
+\begin{equation}
+ i(j(b))=b^p\qquad(b\in B)
+ \tag{21.3.1.2}
+\end{equation}
+的环同态。多数应用中 $i$ 单射，于是通过 $i$ 将 $A$ 识别为 $B$ 的子环；
+作这一识别以后，$j$ 的存在意味着 $B^p\subseteq A$，且 $j$ 就是值域限制在 $A$ 中的 $F_B$。
+
+\egap{21.3.2}
+若 $h:A^p\hookrightarrow A$ 为典范包含，则由（21.3.1.1）有交换图
+\begin{equation}
+ \begin{tikzcd}[column sep=large,row sep=large]
+ B\arrow[r,"j"] & A\\
+ A\arrow[u,"i"]\arrow[r,"F_A"'] & A^p\arrow[u,"h"']
+ \end{tikzcd}
+ \tag{21.3.2.1}
+\end{equation}
+因此 $(j,F_A)$ 可视为从 $A$-代数 $B$（结构同态为 $i$）到 $A^p$-代数 $A$
+（结构同态为 $h$）的双同态。由此得到典范的 $A$-模同态
+\begin{equation}
+ \pi_{B/A}:\Omega^1_{B/A}\otimes_B A_{[j]}
+ \longrightarrow\Omega^1_{A/A^p}=\Omega^1_A.
+ \tag{21.3.2.2}
+\end{equation}
+这里用到（20.5.4），而相对微分模与绝对微分模的识别来自（21.1.5，ii）。令
+\begin{equation}
+ \Theta_{B/A}=\Omega^1_{B/A}\otimes_B A_{[j]},
+ \tag{21.3.2.3}
+\end{equation}
+\begin{equation}
+ \Xi_{B/A}=\Ker(\pi_{B/A}),
+ \tag{21.3.2.4}
+\end{equation}
+便有正合列
+\begin{equation}
+ 0\longrightarrow\Xi_{B/A}\longrightarrow\Theta_{B/A}
+ \xrightarrow{\pi_{B/A}}\Omega^1_A.
+ \tag{21.3.2.5}
+\end{equation}
+须注意，这些记号可能引起混淆：$\Theta_{B/A}$ 和 $\pi_{B/A}$ 不仅依赖 $A,B$，也依赖 $i,j$。
+
+\egap{21.3.3}
+由（21.3.1.2），$F_B=i\circ j$，所以对每个 $B$-模 $M$（参见21.1.4），有
+\begin{equation}
+ M^{(p)}=M\otimes_B B^{(p)}
+ =\bigl(M\otimes_B A_{[j]}\bigr)\otimes_A B_{[i]}.
+ \tag{21.3.3.1}
+\end{equation}
+特别地，
+\begin{equation}
+ (\Omega^1_{B/A})^{(p)}=\Theta_{B/A}\otimes_A B_{[i]}.
+ \tag{21.3.3.2}
+\end{equation}
+由（21.3.2.2）得到典范的 $B$-模同态
+\begin{equation}
+ \pi_{B/A}\otimes1_B:
+ (\Omega^1_{B/A})^{(p)}\longrightarrow\Omega^1_A\otimes_A B_{[i]}.
+ \tag{21.3.3.3}
+\end{equation}
+按（20.5.4.2），其像由 $d_A(j(b))\otimes1$（$b\in B$）生成。
+这些元素在由 $i$ 诱导的典范映射
+$i_{B/A}:\Omega^1_A\otimes_A B\to\Omega^1_B$ 下的像，
+由 $d_B(i(j(b)))$ 生成；依（21.3.1.2），它们都等于 $d_B(b^p)=0$。
+因此得到同态序列
+\begin{equation}
+ 0\longrightarrow\Xi_{B/A}\otimes_A B_{[i]}
+ \longrightarrow(\Omega^1_{B/A})^{(p)}
+ \longrightarrow\Upsilon_{B/A}.
+ \tag{21.3.3.4}
+\end{equation}
+这个序列未必正合，但任意相邻两箭头的复合为零。
+
+\egas{21.3.4}{命题}
+若 $B$ 通过 $i$ 成为平坦 $A$-模，则（21.3.3.4）正合。
+
+这由平坦性的定义得到。
+\cmt{K11-N05}{这里序列的最右端没有再接 $0$。结论保证左端单射和中间位置的像等于核，并不声称 $(\Omega^1_{B/A})^{(p)}\to\Upsilon_{B/A}$ 满射。下一命题另加假设才得到双射。}
+
+特别地，若 $B^p\subseteq A\subseteq B$，$i$ 为包含、$j=F_B$，且 $B$ 在 $A$ 上有 $p$-基，
+则 $B$ 为自由 $A$-模，所以（21.3.4）适用。但即使如此，核 $\Xi_{B/A}$ 仍未必为零。不过有：
+
+\egas{21.3.5}{命题}
+设 $B$ 为约化环，$B^p\subseteq A\subseteq B$。
+假设 $B$ 在 $A$ 上有 $p$-基 $(x_\lambda)_{\lambda\in L}$，
+$A$ 在 $B^p$ 上有 $p$-基 $(y_\mu)_{\mu\in M}$。
+则（21.3.3.4）中的典范同态
+\begin{equation}
+ (\Omega^1_{B/A})^{(p)}\longrightarrow\Upsilon_{B/A}
+ \tag{21.3.5.1}
+\end{equation}
+为双射，且所有 $d_A(x_\lambda^p)\otimes1$ 构成 $B$-模 $\Upsilon_{B/A}$ 的一组基。
+
+\eproof
+由于 $B$ 约化，$x\mapsto x^p$ 给出 $B\simeq B^p$。
+沿此同构搬移结构，$(x_\lambda^p)$ 为 $B^p$ 在 $A^p$ 上的 $p$-基。
+由（21.1.10），$(x_\lambda^p)$ 与 $(y_\mu)$ 的合并族构成 $A$ 在 $A^p$ 上的 $p$-基。
+因此，由（21.1.5，ii）和（21.2.5），
+\[
+ \bigl(d_A(x_\lambda^p)\bigr)_\lambda,\qquad
+ \bigl(d_A(y_\mu)\bigr)_\mu
+\]
+合在一起构成 $A$-模 $\Omega^1_A$ 的基；张量 $B$ 后，它们的像构成
+$\Omega^1_A\otimes_A B$ 的 $B$-基。
+\cmt{K11-G03}{此处可以使用修订后的（21.1.10），并不受原引理的两个反例影响。在塔 $A^p\subseteq B^p\subseteq A$ 中，最大环 $A$ 的$p$次幂已经包含在最小环 $A^p$ 中；同时 $y_\mu$ 为相对$p$-基元素，不能属于 $B^p$，而 $x_\lambda^p$ 属于 $B^p$，所以两族不交。对塔 $B^p\subseteq A\subseteq B$ 同理。零环情形所有微分模均为零，可直接处理。}
+
+在 $i_{B/A}$ 下，$d_A(x_\lambda^p)\otimes1$ 的像为 $d_B(x_\lambda^p)=0$，
+$d_A(y_\mu)\otimes1$ 的像为 $d_B(y_\mu)$。
+又由（21.1.10），$(y_\mu)$ 与 $(x_\lambda)$ 合在一起构成 $B$ 在 $B^p$ 上的 $p$-基，
+所以 $d_B(y_\mu)$ 在 $\Omega^1_B$ 中于 $B$ 上线性无关（21.2.5）。
+故 $i_{B/A}$ 的核 $\Upsilon_{B/A}$ 的基恰为 $d_A(x_\lambda^p)\otimes1$。
+
+这些基元素是（21.3.5.1）将
+$d_{B/A}(x_\lambda)\otimes1\in\Omega^1_{B/A}\otimes_B B^{(p)}$
+映过去所得的像；而后一族也为 $B$-基（21.2.5及扩张标量）。因此（21.3.5.1）为双射。
+\finishproof
+
+\egas{21.3.6}{注}
+$(i)$ 设 $A',B'$ 为特征 $p$ 的环，$i':A'\to B'$、$j':B'\to A'$
+满足（21.3.1.1）和（21.3.1.2），且环同态 $f:A\to A'$、$g:B\to B'$ 使下图交换：
+\[
+ \begin{tikzcd}[column sep=large,row sep=large]
+ A'\arrow[r,"i'"] & B'\arrow[r,"j'"] & A'\\
+ A\arrow[u,"f"]\arrow[r,"i"'] & B\arrow[u,"g"]\arrow[r,"j"'] & A\arrow[u,"f"']
+ \end{tikzcd}
+\]
+则典范双同态 $\Omega^1_{B/A}\to\Omega^1_{B'/A'}$（20.5.4.3）诱导典范双同态
+$\Theta_{B/A}\to\Theta_{B'/A'}$，使下图交换：
+\[
+ \begin{tikzcd}[column sep=large,row sep=large]
+ 0\arrow[r] & \Xi_{B/A}\arrow[r]\arrow[d] &
+ \Theta_{B/A}\arrow[r,"\pi_{B/A}"]\arrow[d] & \Omega^1_A\arrow[d]\\
+ 0\arrow[r] & \Xi_{B'/A'}\arrow[r] &
+ \Theta_{B'/A'}\arrow[r,"\pi_{B'/A'}"'] & \Omega^1_{A'}.
+ \end{tikzcd}
+\]
+
+$(ii)$ 设 $f:A\to A'$ 为任意 $A$-代数的结构同态，令 $B'=B\otimes_A A'$。
+定义
+\[
+ i':A'\to B',\quad a'\mapsto1\otimes a',
+ \qquad
+ j':B'\to A',\quad b\otimes a'\mapsto f(j(b))(a')^p.
+\]
+则 $i',j'$ 满足（21.3.1.1）和（21.3.1.2）。
+\cmt{K11-T03}{原文写 $j'=j\otimes1$，但 $j\circ i=F_A$，所以$j$一般不是通常的$A$-线性映射；若把原式按通常的张量解释，甚至不能良定义。正文写明所需的Frobenius扭曲公式。它在关系 $i(a)b\otimes a'=b\otimes f(a)a'$ 上相容，因为两边都映为 $f(a)^p f(j(b))(a')^p$。该修正保留原文下面两个典范同构，详证见报告K11-T03。}
+由（20.5.5），
+\[
+ \Omega^1_{B'/A'}\simeq\Omega^1_{B/A}\otimes_A A'
+ \simeq\Omega^1_{B/A}\otimes_B B'.
+\]
+于是得到典范的 $A'$-模同构
+\begin{equation}
+ \Theta_{B/A}\otimes_A A'\xrightarrow{\sim}\Theta_{B'/A'},
+ \tag{21.3.6.1}
+\end{equation}
+以及典范的 $B'$-模同构
+\begin{equation}
+ (\Omega^1_{B/A})^{(p)}\otimes_B B'
+ \xrightarrow{\sim}(\Omega^1_{B'/A'})^{(p)}.
+ \tag{21.3.6.2}
+\end{equation}

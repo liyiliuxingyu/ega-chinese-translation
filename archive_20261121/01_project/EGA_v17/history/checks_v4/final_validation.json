@@ -1,0 +1,66 @@
+{
+  "main": {
+    "pages": 860,
+    "final_log": "main.final.txt",
+    "single_log": "main_single.final.txt",
+    "issues": {
+      "! LaTeX Error": 0,
+      "! Undefined control sequence": 0,
+      "Missing character:": 0,
+      "Overfull \\hbox": 0,
+      "Overfull \\vbox": 0,
+      "There were undefined references": 0,
+      "multiply defined": 0
+    },
+    "single_issues": {
+      "! LaTeX Error": 0,
+      "! Undefined control sequence": 0,
+      "Missing character:": 0,
+      "Overfull \\hbox": 0,
+      "Overfull \\vbox": 0,
+      "There were undefined references": 0,
+      "multiply defined": 0
+    },
+    "underfull_hboxes": 40,
+    "underfull_vboxes": 5,
+    "font_warnings": 3,
+    "pdf_sha256": "ecae1af61b6305b936d2af64c50d341da7f455bd83a5a1d56557f207a87e8178"
+  },
+  "report": {
+    "pages": 95,
+    "final_log": "report.pass3.txt",
+    "single_log": "audit_single.pass3.txt",
+    "issues": {
+      "! LaTeX Error": 0,
+      "! Undefined control sequence": 0,
+      "Missing character:": 0,
+      "Overfull \\hbox": 0,
+      "Overfull \\vbox": 0,
+      "There were undefined references": 0,
+      "multiply defined": 0
+    },
+    "single_issues": {
+      "! LaTeX Error": 0,
+      "! Undefined control sequence": 0,
+      "Missing character:": 0,
+      "Overfull \\hbox": 0,
+      "Overfull \\vbox": 0,
+      "There were undefined references": 0,
+      "multiply defined": 0
+    },
+    "underfull_hboxes": 11,
+    "underfull_vboxes": 0,
+    "font_warnings": 2,
+    "pdf_sha256": "a70644b0fd21e9321e80fcae96ebb05fb011334ad2368f252c3bb8ad95f77c9c"
+  },
+  "comparison": {
+    "renderer": "PyMuPDF 1.26.7",
+    "resolution_dpi": 72,
+    "main_pages": 860,
+    "report_pages": 95,
+    "text_differences": 0,
+    "pixel_differences": 0
+  },
+  "engine": "XeTeX 3.141592653-2.6-0.999996 (TeX Live 2025/dev/Debian)",
+  "inspection_scope": "All new-body contact sheets and critical enlarged pages; selected frontmatter, source errata, bibliography, and chapter junction pages. Old mathematical content was not independently re-audited line by line."
+}

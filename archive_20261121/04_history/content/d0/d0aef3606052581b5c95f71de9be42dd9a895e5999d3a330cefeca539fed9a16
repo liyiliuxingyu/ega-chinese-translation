@@ -1,0 +1,7 @@
+\input{/workspace/scratch/a886fd56dd2f/unpacked/v16/EGA_内容顺序合订第十六版/preamble.tex}
+\begin{document}
+\renewcommand{\newscope}{V-H-early-report-preview}
+\mainmatter
+\head{EGA V：§§7--11 整合核查记录}
+\input{report_early.tex}
+\end{document}

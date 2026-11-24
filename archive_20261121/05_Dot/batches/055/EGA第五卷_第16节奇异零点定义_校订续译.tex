@@ -1,0 +1,37 @@
+\documentclass[openany,fontset=fandol]{ctexbook}
+\usepackage{amsmath,amssymb}
+\usepackage[unicode,hidelinks]{hyperref}
+\setlength{\emergencystretch}{2em}
+\newcommand{\note}[1]{\unskip\nobreak\footnote{译注：#1}}
+\begin{document}
+\title{代数几何基础第五卷预备笔记\\第16节：奇异零点的定义}
+\author{据用户上传英译编辑稿译出}
+\date{2026年11月19日}
+\maketitle
+\chapter*{范围与校订状态}
+本批译出底本第62页第二部分标题、第16节标题、引言、定义1及注2的完整段落。下一接续点为同页“Definition 3. Let X be a smooth prescheme over a field k”。本批未译入定义3及其后的注4。
+
+底本的局部极大理想记号统一明确为$\mathfrak m_x$；对称代数记号补出二次分次，并在脚注保留原式。二次型“退化”在特征2下的具体约定仍待后文核实。独立续译，未并入原会话主稿；旧批次的缺文、引文及适用条件待核项未因此解除。
+\chapter*{第二部分〔Tr〕}
+\section*{§16 新 EGA V}
+\subsection*{新编号 \#：函数的奇异与超奇异集合及微分判据}
+标题说明。\note{底本标题保留“Part II [Tr]”“New EGA V”及“New \#”。“Tr”标识和“\#”占位符照录，不擅自补定节号；“超奇异”在此译自 supersingular，含义由下述局部定义规定，不预先等同于其他领域中的同名概念。}
+本编号的内容将用于讨论超平面截面的第20节；不过，我〔Grothendieck〕认为，它的自然位置应当在第16节。\note{底本为“This No.”与“Par.”，此处保留其编排建议的语气。方括号中的姓名照底本保留，不将其解释为本译者署名。}
+
+\paragraph{定义1.}
+设$X$为正则预概形，$\varphi$为$\mathcal O_X$的一个截面。若点$x\in X$满足
+\[
+\varphi_x\in\mathfrak m_x^2,
+\]
+则称$x$为$\varphi$的一个\emph{奇异零点（或根）}。\note{底本写作$\mathfrak m_X$，但所讨论的是点$x$处的函数芽及余域$k(x)$；故明确记$\mathfrak m_x$为局部环$\mathcal O_{X,x}$的极大理想，$\varphi_x$为截面在该局部环中的芽。}
+若$x$是一个奇异零点（或根），并且$\varphi_x$所确定的元素
+\[
+[\varphi_x]\in\mathfrak m_x^2/\mathfrak m_x^3
+\simeq\operatorname{Sym}^2_{k(x)}(\mathfrak m_x/\mathfrak m_x^2)
+\]
+在被解释为$k(x)$上向量空间$\mathfrak m_x/\mathfrak m_x^2$的对偶空间$t_x$上的二次型时，是一个退化二次型，则称$x$为一个\emph{超奇异零点}。\note{底本右端实际印为$\operatorname{Sym}(\mathfrak m_X/\mathfrak m_X^2)$，未写二次分次。左端是极大理想滤过的二次分次，且下文明确解释为二次型，所以此处补为$\operatorname{Sym}^2$；所用同构是正则局部环的伴随分次代数同构的二次部分。底本此处未说明“degenerate form”在特征2下的约定，译文仅照译为“退化二次型”，不擅自用极化双线性型行列式为零替换该定义；具体约定留待后文核实。}
+（不是超奇异零点的奇异零点〔或根〕，有时称为\emph{普通奇异零点}。）
+
+\paragraph{注2.}
+若$x\in V(\varphi)$，则$x$是$\varphi$的一个非奇异零点，当且仅当$\varphi_x\ne0$且$x$是一个非奇异点，也就是说，$x$是$V(\varphi)$的一个正则点；换言之，当且仅当$x$是$V(\varphi)$的正则点，并且在$x$的某个邻域内$V(\varphi)\ne X$。\note{原句中“a non-singular point”由紧随的“i.e.”解释为$V(\varphi)$的正则点，而不是仅指$X$的正则点。此处仍在定义1的正则环境中；$V(\varphi)$按由$\varphi$定义的闭子概形理解。条件$\varphi_x\ne0$指局部环中的芽不为零，不是余域中的值不为零：既然$x\in V(\varphi)$，其余域值恰为零。末尾的邻域不等式按局部子概形意义理解为该芽不为零，不是只比较整个空间中两个底层点集。原文两个“i.e.”的解释链保留，不删去必要的非零条件。}
+\end{document}

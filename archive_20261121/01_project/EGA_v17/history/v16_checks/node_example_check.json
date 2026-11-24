@@ -1,0 +1,11 @@
+{
+  "coefficient_field": "Q",
+  "relation_y2_x2_xplus1": "0",
+  "gcd_x_y": "t**2 - 1",
+  "gcd_tminus1_tplus1": "1",
+  "residue_points": [
+    1,
+    -1
+  ],
+  "limitation": "Only polynomial identities were executed. Noetherianity, normalization and semilocality are proved in the written report, not certified by this script."
+}

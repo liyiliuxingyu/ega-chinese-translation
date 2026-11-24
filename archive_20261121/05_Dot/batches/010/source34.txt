@@ -1,0 +1,43 @@
+Proposition 8.18. Let us suppose that k is algebraically closed, X is integral (respec-
+tively integral and normal) of dimension ≥ 2 and proper over k, let T be a closed finite
+subset of X such that X − T is smooth and let f /X − T be unramified. In order that the
+set of ξ ∈ P v such that Yξ should be geometrically irreducible (respectively geometrically
+integral) of dimension 1 should have a complement of codimension ≥ 2 it is necessary and
+sufficient that the following conditions should be satisfied:
+ a) For every x ∈ T there exists a hyperplane section Yξ (ξ ∈ P (k)) passing through x of
+    dimension d − 1 and which is irreducible,
+ b) X 0 = X − T is “ruled” (sic) for f or there exists a hyperplane section Yξ0 (ξ ∈ P v (k))
+    of X 0 which is of dimension d − 1 (non???) singular and irreducible.51
+    Let us first assume that X is geometrically normal. We have already seen then by
+8.14 a) that we can find a closed subset Z 0 of P of codim ≥ 2 such that ξ ∈ P − Z 0
+implies that Yξ is separable over k(ξ) and of dimension d − 1 for such a ξ, it amounts
+to the same that Yξ should be geometrically irreducible or geometrically integral, and
+the two problems [(respé et non respé) Fr. p. 50] (?) considered in 8.18 are therefore
+equivalent. On the other hand, by 5.6, the set U of ξ ∈ P such that Yξ is geometrically
+integral of dim d − 1 (the dimension hypothesis stating that φξ is Xk(ξ) regular) is open.
+We will exhibit a non-empty open evident subset P − Z contained in U and taking for Z
+                     sing
+the union of g(Y 0 ) and of the hyperplanes Hx of P v defined by the f (x), X ∈ T . For
+ξ ∈ P v − Z, Yξ is smooth of dimension (d − 1) and since it is geometrically connected
+by 6.1 it is geometrically integral. We have to, therefore, express (explain) (prove) that
+every irreducible component of codimension one of Z meets the open set U . But these
+irreducible components are the Hx [they are repeated possibly, but it is not essential] and
+          sing
+also g(Y 0 ) when the latter are indeed of codimension one, i.e. X 0 “not ruled” for f
+                                            sing
+(Nota Bene: we use the irreducibility of Y 0 . On the other hand, in order that this
+latter set should meet the open set U it is necessary and sufficient that g(Y 0 sing ) which
+contains an open and dense set) should meet U . This proves 8.18 in this case. If we do
+not suppose that X is normal, we apply the previous result to the normalization of X the
+reasoning is immediate and I do not give the details here. N.B. In the case [respé] 8.18 is
+contained in 8.16 more precisely except in the case d = 2. It is for the case [non-respé]
+that it may be better not to require d = 2 and not only d ≥ 2 . . . .
+     It remains to explain (make explicit) the conditions a) and b) of 1.18. This leads us
+to examine in a general way the following situation. We suppose that X is geometrically
+irreducible over k and we (give ourselves) consider a linear subariety L of P (corresponding
+    51 illegible, ask A.G.
+
+
+
+                                             34
+

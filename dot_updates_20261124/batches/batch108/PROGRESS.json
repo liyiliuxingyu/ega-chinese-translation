@@ -1,0 +1,10 @@
+{
+ "batch": 108, "date_utc": "2026-11-24",
+ "completed": "法物理45页命题8.13标题至46页8.14引句前",
+ "english_pages": [31,32],
+ "next": {"french_physical":46,"english_physical":32,"anchor":"Combinant 8.13; Corollaire 8.14"},
+ "verified_french_corrections": ["R_n而非英E_n","(a)光滑开集分支维数不超过n","(b)分支维数不超过n+1而非英n-1","a、b的划掉必要性没有并入现文"],
+ "editorial_restoration": "8.2须无零维几何伴随点；不当作原稿文字。依据8.4分开控制几何奇异闭集。同给对偶二次曲面、嵌入点反例。",
+ "unresolved": ["法45–46边注若干不清","8.7(c)法40/41页缝","法36覆盖编号","8.14的严格条件及8.15自我保留未译"],
+ "main_1158p_modified":false,"printed_IV_1_modified":false
+}

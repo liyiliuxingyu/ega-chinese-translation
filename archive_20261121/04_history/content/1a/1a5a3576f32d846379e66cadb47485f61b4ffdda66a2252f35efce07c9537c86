@@ -1,0 +1,43 @@
+with E′ locally free of rank n. Such an exact sequence allows us to deﬁne a sub-functor
+Grassn(s) of Grassn(E) by limiting ourselves to quotients G of E′
+s locally free of rank n,
+such that the composed homomorphism E′
+s′ →E′
+s →G should be surjective (therefore
+bijective). But the inclusion Grassn(S) →Grassn(E) is representable by open immersion
+and on the other hand Grassn(E) is representable by open immersion and on the other
+hand Grassn(S) is canonically isomoprhic to the ﬁber bundle V (Homϑs(E′, E′′)).
+As a result, for example, of this particular structure we may mention that if s ∈S,
+then (E being locally free of ﬁnite rank) every point of Grassn(E) with value sin k(s)
+lifts to a section over a neighborhood of s. On the other hand, if S = Spec(k), k an
+inﬁnite ﬁeld, then every open non-empty subset of Grassn(E) contains a k-rational point.
+A point of Grassn(E) with values in S, i.e. a locally free quotient module G of rank n of
+E canonically deﬁnes a subscheme of P(E), (i.e., to say) P(G). Such a subscheme (but
+without imposing or specifying (Tr) the rank of G) is called a linear subvariety of P(E)
+(relative to S if there is a possibility of confusion). It is therefore a projective ﬁbration of
+relative dimensioni (n −1) if n ≥1, (and empty is n = 0). We immediately verify that
+the section of Grassn(E), i.e. G is known if we know the linear subvariety corresponding
+to P(E). In this manner the grassmanian can be interpreted as representing the functor
+(“linear subvarieties of relative dimension n −1 of P ′
+s”) for S′ variable in n ≥1. It is
+furthermore possible to give an intrinsic characterization of the latter functor, i.e. of the
+notion of linear subvariety of relative dimension m and that are of “projective degree one”
+at every s ∈S; this characterization will be given in a later chapter and we shall not need
+it at all here.
+Let us again suppose that E is locally free of rank r, let Ev be its dual. Then by
+a polarity we ﬁnd a canonical isomorphism Grassn(E) ≃Grassr−n(Ev) that assigns to a
+quotient G of E the quotient Ev/Gv of Ev. From the point of view of linear varieties to a
+linear variety L of relative dimension m of P there corresponds the linear dual variety L0
+of relative dimension (r −1) + −1 −m of P v, i.e. of relative codimension (m + 1) in P v.
+(N.B. (r −1) is here the relative common dimension of P and P v over S), which we may
+visualize geometrically as follows. Let us ﬁrst of all take n = r−1, we ﬁnd an isomorphism
+P(Ev) ≃Grassr−1(E) that allows us to identify the points of P v with values in S (let us
+say) as linear subvarieties of codim 1 of P (called again hyperplanes of P).
+This says that L0 consists of hyperplanes which contain the linear subvariety L of P
+(by which of course we mean that the points of L with value sin S′ are the hyperplanes in
+P ′
+S that contain L′
+S). This follows from the fact (that should have occurred at the same
+time as the fact that a linear subvariety L of P determines a locally free quotient G or Q
+[illegible] of E don’t il provient that if G and g′ are two locally free quotients of E (not
+42

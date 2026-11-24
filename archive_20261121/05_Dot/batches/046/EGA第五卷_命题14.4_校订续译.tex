@@ -1,0 +1,33 @@
+\documentclass[openany,fontset=fandol]{ctexbook}
+\usepackage{amsmath,amssymb}
+\usepackage[unicode,hidelinks]{hyperref}
+\newcommand{\note}[1]{\footnote{译注：#1}}
+\begin{document}
+\title{代数几何基础第五卷预备笔记\\命题14.4：有限子概形上的投影性质}
+\author{据用户上传英译编辑稿译出}
+\date{2026年11月18日}
+\maketitle
+\chapter*{范围与校订状态}
+本批译出底本第57页末至第58页上部命题14.4的标题、前提及(a)、(b)两项，包括(b)末尾的不可辨提示及孤立公式。下一接续位置为第58页命题14.5标题。
+
+(a)中的空交断言缺少必要条件，不能按底本现有假设作为正确命题照录；正文显式标为原稿拟断言，脚注给出缺陷及必要条件，但不擅称已经恢复原稿。(b)末尾有不可辨文字，公式与前句的衔接未能确定，保持缺文状态。本批未补造证明，未合并主稿，全部旧待核保持。
+\chapter*{§14 锥投影（续）}
+\noindent\textbf{命题14.4。}
+设$f:X\to P$非分歧，且$\dim X\leq m$。设$T$是$X$的一个有限子概形。则：
+
+\noindent(a) 若$f$是浸入，则$p_C$在$T_{k(\eta)}$上的限制是根态射，即“几何单射”。\note{底本用radical，并立即释为“geometrically injective”。这里指通常的radicial性质，即普遍单射，不是指根理想；“有限子概形”沿用底本finite subscheme的表述。}
+若再设$Y$为$X$的一个维数$\leq m-1$的闭子集，则原稿拟断言\note{原文在这里直接说“we have”，但其空交断言按现有前提并不成立：只要$Y\cap|T|\ne\varnothing$，基变换后交点就属于所写逆像与$T_{k(\eta)}$的交。因此至少必须要求$Y\cap|T|=\varnothing$。例如在$m\geq1$的情形，取$X=\mathbb A^1_k$浸入射影空间，$T=Y=\{0\}$，便满足所列维数条件而违背空交结论。本译文不把错误断言作为已成立的命题，也不把这一必要补充自动当作原稿全部缺失条件的确定恢复。}
+\[
+p_{C_\eta}^{-1}\bigl(p_{C_\eta}(Y_{k(\eta)})\bigr)
+\cap T_{k(\eta)}=\varnothing.
+\]
+\noindent\textit{[此空交断言的假设不完整，待核。]}\note{原式末尾写作“$\phi$ = empty set”；正文按其明确释义改为空集符号$\varnothing$。}
+
+\noindent(b) 若$X$在$T$的各点光滑，则$p_{C_\eta}$在$T_{k(\eta)}$的所有点非分歧。
+
+\noindent[字迹不清，询问A.G.]\note{底本此处原样标注“[illegible, ask A.G.]”，下一行单列上述公式。它可能涉及更大的非分歧点集，但缺失的连接语无法确定，故不擅补成“在整个逆像上非分歧”，也不删除这个公式。前一完整句和残缺部分分别保留。本命题在此没有给出证明。}
+\[
+p_{C_\eta}^{-1}p_{C_\eta}(T_{k(\eta)}).
+\]
+
+\end{document}

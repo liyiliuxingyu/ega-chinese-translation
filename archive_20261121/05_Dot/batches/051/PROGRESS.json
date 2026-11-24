@@ -1,0 +1,18 @@
+{
+  "completed": "底本60页开头括注、一般参数族说明、沿f的基变换图式及说明句，至the conclusions drawn in the above Nos.",
+  "next": "底本60页We will assume that P and G are flat over S",
+  "previous_project": "libfile_fde3_f-3986fbeaebfc8191b5531d272d9545da_49ac57203c0c81918f3630f0324dcb35",
+  "source_sha256": "23a20ef32fd16a1bd623c0c08ac080d04fc94f248de12133b713a19d6b0330d9",
+  "merged_into_main": false,
+  "pdf_pages": 4,
+  "notation": "关联预概形mathcal P；拉回mathcal X=X times_P mathcal P",
+  "corrections": [
+    "目标B_T订为P_T",
+    "s改为xi在S中的像",
+    "纤维积下标规范化"
+  ],
+  "unresolved": [
+    "原脚注68术语推测、69词义问号保持",
+    "后续公理尚未译入；所有历史缺文与待核保持"
+  ]
+}

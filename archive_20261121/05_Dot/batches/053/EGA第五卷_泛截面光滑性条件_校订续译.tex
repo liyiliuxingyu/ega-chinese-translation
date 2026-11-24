@@ -1,0 +1,41 @@
+\documentclass[openany,fontset=fandol]{ctexbook}
+\usepackage{amsmath,amssymb}
+\usepackage[unicode,hidelinks]{hyperref}
+\newcommand{\note}[1]{\unskip\nobreak\footnote{译注：#1}}
+\begin{document}
+\title{代数几何基础第五卷预备笔记\\泛截面的维数与光滑性条件}
+\author{据用户上传英译编辑稿译出}
+\date{2026年11月19日}
+\maketitle
+\chapter*{范围与校订状态}
+本批译出底本第61页首个完整长段，从“Let us again take a closed subset $Z$ of $X$”至“valid in this current context”。下一处为同页“The passage in No. 4 from a generic section to a general section”。
+
+沿用$\mathcal P,\mathcal X,\mathcal Z$区分关联对象。可确定的维数公式及切空间源按上下文订正，并记录原写法；不可辨文字、三问号及坏点集定义中态射所指的歧义均明确保留。本批是译校，不是完整的光滑性证明。旧待核保持，未并主稿。
+\chapter*{§15 前述若干结果的公理化（续）}
+再取$X$的闭子集$Z$，使得$\dim f(Z)\geq m$。我们看到$\mathcal Z\to G$占优，因而$\mathcal Z_\eta$的维数为\note{底本写“$Z_\eta\to G$ is dominant”，继而说“$Z$ is of dimension equal to $\dim Z-\dim G=\dim Z-m$”。按上页$\dim\mathcal Z=N+\dim Z-m$及$\dim G=N$，占优的应是总空间$\mathcal Z\to G$，维数等式左边应指泛纤维$\mathcal Z_\eta$。正文据此区别总空间、原闭集和泛纤维。闭集可能有多个分支，哪些分支占优以及上一批逆像维数等式的适用性仍须核对，不据此宣称任意闭集的全部分支均满足同一纯维数结论。}
+\[
+\dim\mathcal Z-\dim G=\dim Z-m.
+\]
+这些性质使我们能够在当前背景下展开与2.1和2.11相应的结果。还有一个关于〔字迹不清〕的条件（保证2.12成立，即假设$f:X\to P$非分歧时，若$X$光滑，则相应截面也光滑）。\note{底本括注写“if $X$ is smooth then $X$ is also such”，两个对象没有区别。结合本段最终结论$\mathcal X_\eta$光滑，这里译作“相应截面”；不把它解释成整个族$\mathcal X\to G$处处光滑，亦不补出不可辨处的条件。}
+
+现在假设$P$在$k$上光滑，$\mathcal P\to P\times_kG$拟有限，并满足以下条件（这里假设$k$代数闭）。对于每个$x\in P(k)$和切空间$T_x(P)$的每个维数$n\geq m$的向量子空间$V$，考虑由如下$\xi\in G(k)$组成的集合$E(x,V)$：$\mathcal P_\xi$中存在位于$x$之上的点$z$，它不满足以下整组条件：\note{底本先说“$P$ has a point over $x$”，下文才出现$z$和$P_\xi$；切空间源又印作$T_z(P)$。正文依所指定的纤维态射统一为$z\in\mathcal P_\xi$及$T_z(\mathcal P_\xi)$。“不满足以下整组条件”表示三项不全成立，不是要求三项全部失败。}
+\begin{itemize}
+\item $\mathcal P_\xi$在$z$处光滑；
+\item $\mathcal P_\xi\to P$在$z$处诱导的切映射
+\[
+T_z(\mathcal P_\xi)\longrightarrow T_x(P)
+\]
+是单射（即$\mathcal P_\xi\to P$在$z$处非分歧）；
+\item 该切映射的像与$V$“横截”，即二者之和为$T_x(P)$。
+\end{itemize}
+
+
+\newpage
+所要求的条件是：$E(x,V)$的维数$\leq N-n-1$（我们知道它是$G$中一个良定义的可构造集在$G(k)$上的迹，???）。\note{底本的三个问号原样保留。正文没有据此宣布可构造性或坏参数集的维数估计已经证明；该维数上界是本段要求加入的条件。}
+借助〔Moyennant〕这个条件，应用雅可比判据并作维数计算，可知由下列点构成的闭子集$E$的维数不超过
+\[
+n+(N-n-1)=N-1:
+\]
+这些点是$\mathcal X$中使$\mathcal X\to G$不光滑的点，或其在$\mathcal P$中的像使$\mathcal P\to G$不光滑的点，或其像使原文所写“$P\to P$”分歧的点（这里$X$处处光滑、维数为$n$）。\note{底本将$\mathcal X$与$X$以及$\mathcal P$与$P$均印作同一字母，并将诱导映射$\mathcal X\to\mathcal P$仍记作$f$，正文明确了像所在的空间。但最后“$P\to P$ is ramified”究竟指总空间态射还是各纤维态射不能直接确定：前面假设的是$\mathcal P\to P$光滑，而本段切映射条件涉及$\mathcal P_\xi\to P$非分歧。故此处保留原写法并标歧义，不将它默改为一个已验证的坏点集定义。该集合的闭性和维数估计尚待连同缺文核对。}
+因此$\dim E<N=\dim G$，从而$E_\eta=\varnothing$；特别地，$\mathcal X_\eta$在$k(\eta)$上光滑，第5节的论述在当前背景下也有效。\note{底本“$N=\dim$”缺少对象，按前文$\dim G=N$补为$N=\dim G$。这段是在所设条件下的原论证概要，未展开雅可比判据和维数计数；上述歧义不因翻译完成而消除。}
+\end{document}

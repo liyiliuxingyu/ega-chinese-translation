@@ -1,0 +1,14 @@
+{
+  "completed": "底本第57页推论14.3陈述及随后三个段落至unless X_k(η) is CM",
+  "next": "第57页More delicate are the differential properties of the conic projection",
+  "previous_project": "libfile_fde3_f-f4f3266214f481919fff4f2aeea17a1c_49ac57203c0c81918f3630f0324dcb35",
+  "source_sha256": "23a20ef32fd16a1bd623c0c08ac080d04fc94f248de12133b713a19d6b0330d9",
+  "merged_into_main": false,
+  "pdf_pages": 4,
+  "unresolved": [
+    "page21 before5交叉引用及译者订正提醒未解决",
+    "C_ξ^(m)正则性记号未定义，三问号照存",
+    "层推广仍为修改建议，未独立证明",
+    "14.1旧缺文及全部旧待核保持"
+  ]
+}

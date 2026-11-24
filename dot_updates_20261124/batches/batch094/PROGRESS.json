@@ -1,0 +1,19 @@
+{
+  "batch": 94,
+  "this_french_pages": [
+    21,
+    22
+  ],
+  "this_english_pages": [
+    16,
+    17
+  ],
+  "this_from": "法21项5.2起",
+  "this_through": "法22推论5.4末，英17备注5.5前",
+  "french_contiguous_through": "法22的5.4末",
+  "next": "法22下部备注5.5、法23首段、英17；再核5.6和5.7",
+  "merge_into_1158_done": false,
+  "double_count_as_new_translation": false,
+  "formal_EGA_IV_1": "另线221提要 / 223定义1.1.1",
+  "unverified": "0III笔记未填编号不强判；Mike归属未核；5.5及以后未校；全卷法文覆盖未闭合"
+}

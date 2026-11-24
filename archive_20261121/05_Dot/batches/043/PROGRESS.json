@@ -1,0 +1,13 @@
+{
+  "completed": "底本第56页推论14.2标题至第57页证明末since it is dominant，完整陈述与证明",
+  "next": "第57页Corollary 14.3标题",
+  "previous_project": "libfile_fde3_f-3425b260743c8191b5dfeaa1691f27d0_49ac57203c0c81918f3630f0324dcb35",
+  "source_sha256": "23a20ef32fd16a1bd623c0c08ac080d04fc94f248de12133b713a19d6b0330d9",
+  "merged_into_main": false,
+  "pdf_pages": 3,
+  "unresolved": [
+    "底本未展开拟有限性与有限性依据，未独立重证",
+    "14.1(b)陈述和证明缺文未恢复",
+    "所有旧待核保持"
+  ]
+}

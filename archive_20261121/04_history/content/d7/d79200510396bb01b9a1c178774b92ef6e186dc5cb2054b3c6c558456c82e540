@@ -1,0 +1,125 @@
+"""Stage verified v17 deliverables; preserve recovered archives separately."""
+from pathlib import Path
+import hashlib
+import json
+import shutil
+import subprocess
+
+TASK = Path(__file__).resolve().parents[1]
+PROJECT = TASK / "work/EGA_v17"
+STAGE = TASK / "bundle/EGA_v17_handover"
+OUTPUT = TASK / "deliverables"
+OUTPUT.mkdir(exist_ok=True)
+
+
+def sha(path):
+    return hashlib.sha256(path.read_bytes()).hexdigest()
+
+
+def copy(src, dst):
+    dst.parent.mkdir(parents=True, exist_ok=True)
+    shutil.copy2(src, dst)
+
+
+for required in ["PROGRESS.md", "README.md", "AGENTS.md", "PENDING_ISSUES.md",
+                 "SOURCE_MAP.md", "HANDOVER_STATE.json", "checks/VISUAL_REVIEW.md",
+                 "checks/relocation_check.json", "checks/output_verification.json"]:
+    assert (PROJECT / required).is_file(), required
+state = json.loads((PROJECT / "HANDOVER_STATE.json").read_text())
+assert state["book"]["pdf_sha256"] == sha(PROJECT / "main.pdf")
+assert state["report"]["pdf_sha256"] == sha(PROJECT / "report.pdf")
+assert state["book"]["single_tex_sha256"] == sha(PROJECT / "single.tex")
+assert state["report"]["single_tex_sha256"] == sha(PROJECT / "report_single.tex")
+
+# Archive the inherited v16 checksum list instead of advertising it as current.
+old_sum = PROJECT / "history/v16_release_metadata/SHA256SUMS.txt"
+if not old_sum.exists():
+    copy(PROJECT / "SHA256SUMS.txt", old_sum)
+
+clean = STAGE / "01_project/EGA_v17"
+assert not clean.exists(), "Use a new release directory or explicitly review an existing stage."
+copied = []
+for path in sorted(PROJECT.rglob("*")):
+    if not path.is_file():
+        continue
+    rel = path.relative_to(PROJECT)
+    if rel.parts[0] in {"__pycache__", "single_build", "runtime"}:
+        continue
+    if len(rel.parts) == 1 and (rel.name.startswith("layout_probe") or
+            rel.name == "SHA256SUMS.txt" or rel.suffix in {".aux", ".toc", ".out", ".log", ".xdv"}
+            or ".pass" in rel.name):
+        continue
+    if "__pycache__" in rel.parts or rel.suffix == ".pyc":
+        continue
+    copy(path, clean / rel)
+    copied.append(rel.as_posix())
+
+deliverables = {
+    "main.pdf": "代数几何基础_按内容顺序合订本_第十七版.pdf",
+    "single.tex": "代数几何基础_按内容顺序合订本_第十七版.tex",
+    "report.pdf": "代数几何基础_第十七版译校核查报告.pdf",
+    "report_single.tex": "代数几何基础_第十七版译校核查报告.tex",
+}
+for source, name in deliverables.items():
+    copy(PROJECT / source, STAGE / "02_deliverables" / name)
+    copy(PROJECT / source, OUTPUT / name)
+copy(STAGE / "00_START_HERE/NEW_CHAT_PROMPT.txt", OUTPUT / "新对话接续提示_第十七版.txt")
+
+# Keep process records but do not include transient test trees or transfer helpers.
+record_root = STAGE / "07_integration_records"
+integration = TASK / "integration"
+directories = {"early", "middle", "late", "navigation_visual", "short_visual",
+               "body_early_middle_visual", "report_visual", "package_tools", "final_visual_binding"}
+allowed_extensions = {".py", ".tex", ".md", ".json", ".txt", ".diff", ".png", ".sh", ".log", ".pdf"}
+for path in sorted(integration.rglob("*")):
+    if not path.is_file():
+        continue
+    rel = path.relative_to(integration)
+    if len(rel.parts) > 1 and rel.parts[0] not in directories:
+        continue
+    if path.suffix not in allowed_extensions or "__pycache__" in rel.parts:
+        continue
+    copy(path, record_root / "integration" / rel)
+for path in sorted((TASK / "review/final_late").rglob("*")):
+    if path.is_file():
+        copy(path, record_root / "review/final_late" / path.relative_to(TASK / "review/final_late"))
+(record_root / "README.md").write_text("""# 第十七版整合过程记录
+
+这里保存本次整合的来源索引、逐点核查、源码变更、选页图与处理脚本。
+当前权威源码在01_project/EGA_v17，当前技术核验汇总在该工程checks目录。
+
+integration下的一次性处理脚本保留了当时任务目录的定位约定；它们是过程档案，
+不能取代当前工程的build.sh与本包BUILD_ALL.sh。不要在新工程上盲目重放合并或订正脚本。
+视觉记录中的旧PDF散列、旧图与旧路径用于追溯；最终绑定见当前工程checks/VISUAL_REVIEW.md、
+checks/VISUAL_REVIEW.json及checks/final_visual_binding.json。主稿仅在最后一次来源页码精度修订中
+改变了前言物理第5页，已重新编译和检查；报告未随该文字修订变化。
+
+目录内integration/路径对应原记录中任务根目录的integration/；review/对应原任务review/。
+原绝对工作路径属于历史记录，不要求新环境复现。重建正文请使用当前工程入口。
+""", encoding="utf-8")
+
+for name in ["verify_package.py", "refresh_manifest.py", "BUILD_ALL.sh"]:
+    copy(integration / "package_tools" / name, STAGE / name)
+(STAGE / "BUILD_ALL.sh").chmod(0o755)
+
+# Bind the packaged source files to the published PDFs and complete source tree.
+source_rows = []
+for path in sorted(clean.rglob("*.tex")):
+    rel = path.relative_to(clean)
+    if rel.parts[0] in {"history", "vendor"}:
+        continue
+    source_rows.append({"path": rel.as_posix(), "bytes": path.stat().st_size, "sha256": sha(path)})
+(clean / "checks/current_sources_sha256.json").write_text(json.dumps({
+    "book_pdf_sha256": state["book"]["pdf_sha256"],
+    "report_pdf_sha256": state["report"]["pdf_sha256"],
+    "tex_files": source_rows,
+}, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+
+for tool in ["checks/check_structure.py"]:
+    result = subprocess.run(["python3", tool], cwd=clean, capture_output=True, text=True)
+    assert result.returncode == 0, result.stdout + result.stderr
+
+print(json.dumps({"current_project_files": len(copied), "current_tex_files": len(source_rows),
+                  "book_sha256": state["book"]["pdf_sha256"],
+                  "report_sha256": state["report"]["pdf_sha256"],
+                  "stage": str(STAGE), "deliverables": list(deliverables.values())}, ensure_ascii=False))

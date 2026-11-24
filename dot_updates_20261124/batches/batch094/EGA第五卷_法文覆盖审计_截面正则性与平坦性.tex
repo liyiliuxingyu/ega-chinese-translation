@@ -1,0 +1,129 @@
+\documentclass[openany,fontset=fandol]{ctexbook}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage[unicode,hidelinks]{hyperref}
+\setlength{\emergencystretch}{2em}
+\raggedbottom
+\DeclareMathOperator{\Spec}{Spec}
+\DeclareMathOperator{\coker}{coker}
+\newcommand{\OO}{\mathcal O}
+\newcommand{\FF}{\mathcal F}
+\newcommand{\GG}{\mathcal G}
+\newcommand{\id}{\mathrm{id}}
+\newcommand{\tagitem}[2]{\par\medskip\noindent\textbf{#1\quad #2}\enspace}
+\begin{document}
+\title{代数几何基础第五卷预备笔记\\法文覆盖审计：截面正则性与平坦性}
+\author{第94批\quad 法、英、中文三方校订}
+\date{2026年11月23日}
+\maketitle
+
+\section*{范围与接续}
+逐段对读法文物理21页5.2至22页推论5.4末，以及英编稿物理16--17页相应文字。
+这部分在第三辑已有旧译；本批为待替换的校订稿，未改1158页合订本。
+正文订正已核误字和公式；现代补证、原读法与未核出处分列。
+
+\section*{5（续）\quad Seidenberg 型定理}
+\tagitem{5.2}{}
+如第1节所见，在 $T=X\times_S P^\vee=X_{P^\vee}$ 中，
+$Y$ 由可逆模 $\OO_X(1)\boxtimes_S\OO_{P^\vee}(1)$ 上截面 $\phi$ 的“除子”定义。
+对每个 $\xi\in P^\vee$，记 $s$ 为其在 $S$ 中的像。
+$\phi$ 在 $X_{k(\xi)}$ 上诱导 $\phi_\xi$，它是下列可逆模的截面：
+\[
+ \OO_{X_s}(1)\otimes_{k(s)}\OO_{P^\vee}(1)(\xi).
+\]
+这里把这个张量积理解为 $X_{k(\xi)}$ 上的层。
+它与 $\OO_{X_s}(1)\otimes_{k(s)}k(\xi)=\OO_{X_{k(\xi)}}(1)$
+非典范同构。$Y_\xi$ 正是 $\phi_\xi$ 的“除子”。\footnote{法稿第21页等式末端为 $X_{k(\xi)}$，英编稿排成 $X_{k(s)}$；正文明确 $s$、$\xi$ 两次换底。这里 $\OO_{P^\vee}(1)(\xi)$ 是一维 $k(\xi)$-向量空间，选基才得到所说的非典范同构。$\boxtimes$ 表示先沿两个投影拉回，再作张量积。}
+
+附记：若 $L$ 是可逆模，$\phi$ 是其截面，则所谓“除子”是
+由对偶映射 $\phi^\vee:L^{-1}\to\OO$ 的像理想定义的闭子预概形。\footnote{法、英稿以 $\phi^{-1}$ 表示此映射；正文记作 $\phi^\vee$，它不是给 $\phi$ 求倒数。此处的“除子”只是零概形，除非乘法对结构层单射，否则不能称为有效 Cartier 除子。参见 \href{https://stacks.math.columbia.edu/tag/01WQ}{Stacks 第31.14节}。}
+若 $\FF$ 是 $X$ 上的模，那么它在 $Y$ 上的逆像，就是
+$\FF_{P^\vee}=\FF\otimes_{\OO_S}\OO_{P^\vee}$ 在闭子概形 $Y\subset T$ 上的逆像。
+沿闭浸入把它视为 $T$ 上的模时，它正是下列同态的余核：
+\[
+ \phi^\vee\otimes\id_{\FF_{P^\vee}}:
+ \FF_{P^\vee}(-1,-1)\longrightarrow\FF_{P^\vee}.
+\]
+正如 Mike 会说的，记号 $(-1,-1)$ 本身就说明了意思。\footnote{英编者 P.\,B. 猜测 Mike 指 Mike Artin；法稿只写名字，归属未核。这里的扭转是两因子反扭转的外张量积。}
+同理，$\GG_\xi$ 是相应同态
+$\FF_{k(\xi)}(-1,-1)\to\FF_{k(\xi)}$ 的余核，其中 $\xi$ 是 $P^\vee$ 的一个点。
+若 $\xi$ 改为 $P^\vee$ 在某个 $S$-概形 $S'$ 上的取值点，则有相应的解释。\footnote{法稿在两个相关参数处可见对偶标记，英编稿第一次漏标。任意 $S'$-值点的公式由拉回可逆模、截面和取余核给出，不需要平坦换底。}
+
+一般地，设 $L$ 为可逆模，$\phi$ 为定义 $V(\phi)$ 的截面。
+对任意模 $\FF$，其在 $V(\phi)$ 上的逆像可按通常的语言简化，
+等同为下列同态的余核：
+\[
+ \id_{\FF}\otimes\phi^\vee:\FF\otimes L^{-1}\longrightarrow\FF .
+\]
+若此同态单射，就称 $\phi$ 为 $\FF$-正则。
+局部选取 $L$ 与结构层的同构后，$\phi$ 变成一个局部函数，
+这个术语就和此前的用法相容。\footnote{法稿一般余核式的第二张量因子在页右裁切处，英稿留“??”；前面的同一映射及截面的像理想足以确定这里是 $\phi^\vee$。末句两稿均误把可平凡化的 $L$ 写为 $\FF$；任意模不一定局部自由，即使自由秩也未必为一。}
+
+\tagitem{命题}{5.3}
+仍用上述记号。令 $U\subset T$ 为如下点 $x$ 的集合：
+若 $x$ 在 $P^\vee$ 中的像是 $\xi$，则 $\phi_\xi$ 在 $x$ 处为 $\FF_{k(\xi)}$-正则。
+\begin{enumerate}
+\item[(a)] 若 $\FF$ 有限表示且相对 $S$ 平坦，则 $U$ 是开集，
+且 $\GG|_{Y\cap U}$ 相对 $P^\vee$ 平坦。
+\item[(b)] 对任意 $s\in S$，若 $\eta$ 为 $P^\vee_s$ 的泛点，则 $U$ 包含 $X_{k(\eta)}$。\footnote{法稿的圈线与插入位置把“有限表示且相对 $S$ 平坦”移到(a)开头；不得移作(b)的条件。两稿(b)里的 $s\in P^\vee$ 应为 $s\in S$。法稿点 $x$ 的总空间确为 $X_{P^\vee}$；正文以 $T$ 略记。原写 $\GG|_U$，即在 $Y\cap U$ 上限制，或将 $\GG$ 先沿闭浸入作直接像再限制。}
+\end{enumerate}
+\begin{proof}
+(a) 因为 $\FF_{P^\vee}$ 有限表示且相对 $P^\vee$ 平坦，
+结论来自11.3；如 $S$ 局部诺特，也可用第0章第三部分的一条结果。\footnote{法稿写作 $0_{\mathrm{III}}\ldots$，未给编号；英编者请查引文。已核正式出版 \href{https://webusers.imj-prg.fr/~leila.schneps/grothendieckcircle/EGA/EGAIV.3.pdf}{EGA IV 第三部分}，定理11.3.7（印刷页134--135）直接给所需的纤维单射、余核平坦和开性判据；这不等于认定笔记留空处的确切编号。}
+
+(b) 可归结到 $S=\Spec k$。由第3段，$\FF_{k(\eta)}$ 的关联循环是
+$\FF$ 的关联循环 $Z_i$ 的逆像。若 $f(Z_i)$ 有限，由2.3得
+$Z_{i,k(\eta)}\cap Y_\eta=\varnothing$。否则，由2.6（例如用维数），也有
+$Z_{i,k(\eta)}\cap Y_\eta\ne Z_{i,k(\eta)}$。
+2.6已经用过的2.3大概是更直接的理由。
+所以 $\phi_\eta$ 不在任何一个 $Z_{i,k(\eta)}$ 上恒为零，(b)得证。\footnote{法稿第22页的手写插入 $Z_i$ 可辨；此前有删文。第二处交集清楚是 $\ne$，英稿误为等号。交集在 $X_{k(\eta)}$ 中形成，故把原简写 $Y$ 记成 $Y_\eta$。这一原证明按可用关联循环的模来读；下文另给不需要有限性或诺特条件的局部代数证明。}
+\end{proof}
+
+\tagitem{推论}{5.4}
+令 $V$ 为使 $\phi_\xi$ 是 $\FF_{k(\xi)}$-正则的所有 $\xi\in P^\vee$ 的集合。
+若 $\FF$ 有限表示，则 $V$ 可构造，并含 $P^\vee$ 在 $S$ 上各纤维的泛点。
+若再有 $X$ 在 $S$ 上固有且 $\FF$ 在 $S$ 上平坦，则 $V$ 为开集。\footnote{法稿有限表示及平坦条件均有手写增补。推论之后的另一个手写补句被划掉，未作为定稿；页底另有删除的说明。任意底上的“可构造”按局部意义理解。}
+
+\section*{译校补证}
+\paragraph{零概形与余核。}
+在平凡化 $L$ 的仿射开集上，$\phi$ 对应 $a\in A$。
+闭子概形为 $\Spec(A/(a))$，$\FF$ 对应的模 $M$ 的拉回为
+$M\otimes_A A/(a)=M/aM$，即 $M\xrightarrow{a} M$ 的余核。
+这不要求 $a$ 在 $M$ 上为非零因子。例：$A=k[\epsilon]/(\epsilon^2)$、$a=\epsilon$，
+零概形存在，但 $\epsilon$ 零化非零元 $\epsilon$，所以不是有效 Cartier 除子。
+
+\paragraph{5.3(b)的局部代数证明。}
+在任意一个 $s$ 上换底到 $k=k(s)$，选定对偶射影空间的仿射图；
+泛超平面的局部方程为
+$a_0+a_1t_1+\dots+a_nt_n$，其中 $t_i$ 独立。
+在 $X_s$ 上，按 $P_s$ 的各个标准仿射图的逆像作覆盖，
+将 $f^*\OO_{P_s}(1)$ 平凡化，于每个仿射开集至少有一个系数 $a_j$ 是单位。
+设该开集上模为 $M$。若某个 $j>0$ 的 $a_j$ 是单位，
+按 $t_j$ 最高次数比较：乘积的最高系数是 $a_j$ 乘原最高系数，不能为零。
+若 $a_0$ 是单位，则用总次数最低的非零齐次部分：
+乘积在这个次数的部分正是 $a_0$ 乘该部分，也不为零。
+所以乘法在 $M[t_1,\ldots,t_n]$ 上单射。局部化到 $k(t_1,\ldots,t_n)$
+仍单射，恰是泛参数的纤维。这个证明也处理 $n=0$（方程为单位）。
+
+\paragraph{5.4的可构造性和开性。}
+记 $p:T\to P^\vee$ 为投影，则 $V=P^\vee\setminus p(T\setminus U)$。
+若 $\FF$ 相对 $S$ 平坦且有限表示，由5.3(a)知 $U$ 开；
+若 $X/S$ 固有，则 $p$ 闭，所以 $V$ 开。
+为了只凭有限表示推出局部可构造性，先局部考虑仿射源和仿射参数底。
+有限表示的环、两模和同态可由有限多系数写出，因此可下降到一个有限型
+$\mathbb Z$-代数上的模型。纤维上的局部单射性经剩余域扩张保持且可下降，
+这是因为纤维各点处的相应局部环映射忠实平坦。
+在诺特模型的底上作有限个局部闭分层，使目标模在每层平坦：
+在各不可约分支的稠密开上用泛平坦性，再对闭补集作诺特归纳。
+由11.3.7，$U$ 在各层的逆像中开，故在该仿射模型内可构造。
+拉回得 $U$ 局部可构造；$p$ 为有限表示，故由 Chevalley 定理
+$p(T\setminus U)$ 局部可构造。泛点落在 $V$ 中则直接由5.3(b)得到。
+参见 \href{https://stacks.math.columbia.edu/tag/0H3Y}{Stacks 的泛平坦分层}
+及 \href{https://stacks.math.columbia.edu/tag/054K}{Chevalley 定理}。
+
+\medskip
+\noindent\textbf{接续点。}
+下一处是法物理22页下部备注5.5，续法23页上端，英稿物理17页。
+法稿应按“$\xi\in V$ 的判据”读，而非假定无嵌入关联循环就保证任意 $\xi\in V$；
+仍需逐段核 $(S_1)$、换底及 Cohen--Macaulay 商。5.6的两项旧引用留下一批核。
+正式出版 EGA IV.1 仍另从物理221页提要及223页定义（1.1.1）接续。
+\end{document}

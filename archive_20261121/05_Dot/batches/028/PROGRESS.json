@@ -1,0 +1,14 @@
+{
+  "completed": "底本49页定理13.2陈述及后三段证明，至 geometrically normal over k",
+  "next": "第50页 The benefit of this hypothesis",
+  "previous_project": "libfile_fde3_f-e3a187405f2c8191bb6049e56ca84c2a_49ac57203c0c81918f3630f0324dcb35",
+  "source_sha256": "23a20ef32fd16a1bd623c0c08ac080d04fc94f248de12133b713a19d6b0330d9",
+  "merged_into_main": false,
+  "pdf_pages": 4,
+  "unresolved": [
+    "13.2证明未译完",
+    "句末字母难辨标记",
+    "曲线与正规化归约的省略步骤及引用",
+    "此前待核保留"
+  ]
+}

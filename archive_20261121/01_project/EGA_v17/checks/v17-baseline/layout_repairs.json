@@ -1,0 +1,183 @@
+{
+  "note_anchor_changes": [
+    {
+      "path": "continuations/v_dot_early.tex",
+      "moved": [
+        {
+          "macro": "transnote",
+          "note_prefix": "\\transnote{底本这里同时使用 $Y^1$ 和 $Y'$，且未明确标出 $\\omega_{X/k}$ 到相应空间的拉回。此公式按可辨印文保留，记号与定义",
+          "anchor_context": "言。原文下一句“无论是否特征零”修饰的是对这种情形的“例外”评价，不应倒读为已证明任意特征的结论。}\n上述等式可在解析意义下表述为：$Y^1$ 上某个可逆模的一个截面 $D$ 消失；底本将该可逆模印作",
+          "old_line": 390
+        },
+        {
+          "macro": "transnote",
+          "note_prefix": "\\transnote{底本第二条显示公式写 $f^{-1}(P-L)$，但前面的 $X'$ 与 $u$ 的定义域均为中心 $L^0$ 的补集；此处统一为 $L^",
+          "anchor_context": "解释地混同。$F^-$ 的上标也与前面的 $F^0$ 不同。此处译校保留这些写法并标待核，不据此猜补向量空间的商、对偶或映射。}\n\\[\nu:P-L^0\\longrightarrow Q.\n\\]\n再考虑",
+          "old_line": 528
+        },
+        {
+          "macro": "transnote",
+          "note_prefix": "\\transnote{底本写“so that those of $g$ are $\\dim\\le q+1$”。一般 $g=u\\circ f'$ 的纤维还包含 $",
+          "anchor_context": "$；此处将维数变量统一为 $q$，不与态射 $g$ 混同。这里采用前文由中心 $L^0$ 给出的线性投影。}\n将该投影限制到 $f(X)\\setminus L^0$，其纤维维数至多为 $q+1$，因而",
+          "old_line": 557
+        },
+        {
+          "macro": "transnote",
+          "note_prefix": "\\transnote{底本这里写“vanish to order two at least on $L$”。若解作 $P,Q,R\\in I_L^2$，便与下文 ",
+          "anchor_context": "在该点消失；这是下文所用的坐标约定。多项式 $P$ 与射影空间 $P$ 同名，沿用底本。}\n在(b)中，还要求 $P,Q,R$ 限制到 $L$ 后在 $x$ 处至少二阶消失；此外可设 $L$ 的方程为",
+          "old_line": 608
+        },
+        {
+          "macro": "transnote",
+          "note_prefix": "\\transnote{底本此处印作“$T=x_P L^0$”，与随后零点概形的描述相结合，可明确读为沿 $X\\to P$ 的逆像，即上述纤维积；这里补全纤维积符",
+          "anchor_context": "DOT_IMPORT 16 10.2_校订续译_工程\n\\egap{10.2}\n借助极性对应，$P^\\vee$ 中的一条直线 $L$ 对应于 $P$ 中余维为2的线性子簇 $L^0$（$S$ 任意）。置",
+          "old_line": 668
+        },
+        {
+          "macro": "transnote",
+          "note_prefix": "\\transnote{底本写作小写 $p=p(G)$，本译文将射影预概形的记号统一为 $P=\\mathbf P_X(G)$，并相应统一下标。$G_P$ 表示 $",
+          "anchor_context": "tarrow G_P\n\\longrightarrow\\mathcal O_P(1)\\longrightarrow0.\n\\]\n再考虑同态 $u_P:G_P\\to\\mathcal O_P$，以及拟凝聚理想",
+          "old_line": 721
+        },
+        {
+          "macro": "transnote",
+          "note_prefix": "\\transnote{底本在这条正合列首项把 $E'$ 印成 $E$，而次页明说 $E'$ 秩为 $n$；按坐标分解订正。}",
+          "anchor_context": "，代表概形为空。正文将非空的几何连通纤维断言限制在 $n\\leq r$，而空部分仍在 $S$ 上光滑。}\n这一覆盖来自于借助 $E$ 的一组基选取 $\\binom rn$ 个坐标直和分解，即分裂正合列",
+          "old_line": 778
+        },
+        {
+          "macro": "cmt",
+          "note_prefix": "\\cmt{D17-E06}{底本在此重复一段“可由开浸入表示；另一方面”，并把表示所选分解的 $s$ 多次写成 $S$。正文删去重复、统一记号。这个开图参数化从",
+          "anchor_context": "rightarrow\\operatorname{Grass}_n(E)\n\\]\n可由开浸入表示；另一方面，在上述选定的坐标分裂下，$\\operatorname{Grass}_n(s)$ 典范同构于向量丛",
+          "old_line": 791
+        }
+      ],
+      "note_contents_and_order_unchanged": true,
+      "display_formula_contents_and_order_unchanged": true,
+      "before_sha256": "66c60b50ba36bb25e67054e6c670bb425b8777241b2234ff97d619d0571d8879",
+      "after_sha256": "74de97b880e50e2c1dadf3bb8f6f041be8c8b0ce47cb75396f2903e85111b0a3"
+    },
+    {
+      "path": "continuations/v_dot_middle.tex",
+      "moved": [
+        {
+          "macro": "cmt",
+          "note_prefix": "\\cmt{D17-M002}{底本此句写“given dimension $m$”，但前后的上标约定、$\\operatorname{Grass}_m(E^\\ve",
+          "anchor_context": "}^{n}(P)\\simeq\\operatorname{Grass}_{r-n}(P).\n\\]\n以下固定 $E$ 为秩 $r$ 的局部自由模，研究 $P$ 中给定相对余维 $m$ 的线性子簇，因而考虑",
+          "old_line": 27
+        },
+        {
+          "macro": "cmt",
+          "note_prefix": "\\cmt{D17-M003}{底本写 $G$ 是 $E_{\\operatorname{Gr}}$ 的商，随即说“let us call it $F$”，以后却继",
+          "anchor_context": "ame{Gr}^{m}=\\operatorname{Gr}^{m}(P)\n=\\operatorname{Grass}_{m}(E^\\vee).\n\\]\n\n在这一预概形上，有典范的局部自由秩 $m$ 商模",
+          "old_line": 32
+        },
+        {
+          "macro": "cmt",
+          "note_prefix": "\\cmt{D17-M005}{底本文字把转置后的商写作 $G_T^\\vee$，但紧随其后的显示箭头为 $\\mathcal O_T(-1)\\to G_T$，且下一",
+          "anchor_context": "\\longrightarrow\\mathcal O_T(1).\n\\]\n经转置，它也对应于下面的复合同态：从 $E_T^\\vee$ 的子模 $\\mathcal O_T(-1)$ 映到商模 $G_T$，即",
+          "old_line": 46
+        },
+        {
+          "macro": "cmt",
+          "note_prefix": "\\cmt{D17-M009}{底本写作“$F_X\\simeq F^*(\\Omega^1_{P/S})(1)$”，把态射与核模的字母混用。这里明确以 $f$ 表示",
+          "anchor_context": " $X^{(m)}$ 的构造中，有典范同构\n\\[\nX^{(m)}\\simeq\\operatorname{Grass}_{m}(F_X^\\vee),\n\\]\n其中，若 $f:X\\to P$ 是给定态射，则",
+          "old_line": 81
+        },
+        {
+          "macro": "cmt",
+          "note_prefix": "\\cmt{D17-M013}{底本简写为“$\\dim x\\leq m-1$”。前文2.2讨论 $P$ 中子集在一般超平面中的逆像何时为空，其 $m=1$ 情形要",
+          "anchor_context": "订续译.tex\n命题2.1可以不作改动地移用到这里〔原文法语：se transpose；英译在“translates”后留有问号〕。在2.2中，应当这样表述：充要条件是，对每个 $x\\in Z$，都有",
+          "old_line": 103
+        },
+        {
+          "macro": "cmt",
+          "note_prefix": "\\cmt{D17-M021}{底本的$T$排作“$X_Sx\\mathrm{Gr}^m$”，此处展开为纤维积；截面所在模排作$\\mathcal O_{X_{k(\\",
+          "anchor_context": "1)$的一个截面$\\phi^{(m)}$，其中\n\\[\nT=X\\times_S\\operatorname{Gr}^{m}.\n\\]\n对于$\\xi\\in\\operatorname{Gr}^{m}$，它诱导出",
+          "old_line": 150
+        },
+        {
+          "macro": "cmt",
+          "note_prefix": "\\cmt{D17-M025}{本段只是原作者对6.1中两处条件的修改指示，不是命题6.1的完整陈述；其余假设并未在此取消。}",
+          "anchor_context": "BEGIN DOT-MIDDLE BATCH 05: EGA第五卷_12节维数条件与推广计划_校订续译.tex\n命题6.1中，应读作\n\\[\n\\dim f(X_i)\\geq m+1,\n\\]\n并在后文读作",
+          "old_line": 169
+        },
+        {
+          "macro": "cmt",
+          "note_prefix": "\\cmt{D17-M054}{a）底本写“$\\phi=\\varnothing$”，这里直接采用空集符号，避免与前段的映射$\\phi_d$混淆。}",
+          "anchor_context": "rate}\n\\item[a)] $L_0\\cap Z=\\varnothing$；\n\\item[b)] $L_0\\cap X$光滑，维数为1；\n\\item[c)] $L_0\\cap Y$光滑，维数为0。",
+          "old_line": 307
+        }
+      ],
+      "note_contents_and_order_unchanged": true,
+      "display_formula_contents_and_order_unchanged": true,
+      "before_sha256": "d6db3e667e4510690e19ee02a238eebf2932290e85fdd29e9c066907800e8041",
+      "after_sha256": "db4bb436a85fe1632ba25e518ae396bb261bc3aa06bf63e8208392d95083cc93"
+    },
+    {
+      "path": "continuations/v_dot_late.tex",
+      "moved": [
+        {
+          "macro": "cmt",
+          "note_prefix": "\\cmt{V-H-L021}{括号中的原排式为“$(X_P\\times L_\\xi\\times\\xi L(c_{\\eta k'}))$”，下标及符号关系不全，故",
+          "anchor_context": "bigl(X_P\\times L_\\xi\\times\\xi L(c_{\\eta k'})\\bigr)\n\\quad\\text{［底本排式残缺］}.\n\\]\n）另一方面，按第2节（在第10节中复查过），却有",
+          "old_line": 136
+        }
+      ],
+      "note_contents_and_order_unchanged": true,
+      "display_formula_contents_and_order_unchanged": true,
+      "before_sha256": "4c6ff54be25a487c94e36564f7207db8d1114ac02d588f803d920784bbf38f90",
+      "after_sha256": "b07e3ebdfecbb1f1c832e5310c5e7d7f4dab51e89d5fc449f161f1a498cebb21"
+    },
+    {
+      "path": "reports/dot_early_audit.tex",
+      "moved": [
+        {
+          "macro": "ednote",
+          "note_prefix": "\\ednote{大概是 $H_\\xi$。〔底本脚注32。〕}",
+          "anchor_context": "一个不可约分支 $R$，满足 $\\dim f(R)>0$，且 $R_\\xi$ 的“维数过大”。这是一个余维为二的集合，在以下论述中不予计入。例外的 $H_\\xi$ 是那些使得存在一个 $T_i$ 满足",
+          "old_line": 93
+        }
+      ],
+      "note_contents_and_order_unchanged": true,
+      "display_formula_contents_and_order_unchanged": true,
+      "before_sha256": "bfa1b3604fc31d02b045325b0fadb6a09a2fd7bbc20ca5c12573d73fed670f25",
+      "after_sha256": "71b73ca8d5eeafeb5a0518c33e999a090dc2d8bfa8ebdfb571965a69f31ce954"
+    }
+  ],
+  "part_toc_changes": [
+    {
+      "path": "main.tex",
+      "titles": [
+        "预备笔记：已译部分",
+        "各原分册的书末资料",
+        "译稿来源与版本记录"
+      ],
+      "reason": "Use the class's unnumbered part behavior with its own on-page TOC write; no manual delayed TOC page."
+    },
+    {
+      "path": "report.tex",
+      "titles": [
+        "历史核查记录：第十六版",
+        "历史核查记录：第十五版",
+        "历史核查记录：第十四版",
+        "历史核查记录：第十三版",
+        "历史核查记录：第十二版",
+        "历史核查记录：第十一版",
+        "历史核查记录：第十版",
+        "历史核查记录：第九版",
+        "历史核查记录：第八版",
+        "历史核查记录：第七版",
+        "历史核查记录：第六版",
+        "历史核查记录：第五版",
+        "历史核查记录：第四版",
+        "历史核查记录：第三版",
+        "历史核查记录：前次续译批次",
+        "历史核查记录：新增文稿第一批",
+        "历史核查记录：第一、第二卷"
+      ],
+      "reason": "Use the class's unnumbered part behavior with its own on-page TOC write; no manual delayed TOC page."
+    }
+  ],
+  "scope": "Layout only. No change to default fonts, page geometry, mathematical text or note wording."
+}

@@ -1,0 +1,40 @@
+\documentclass[openany,fontset=fandol]{ctexbook}
+\usepackage{amsmath,amssymb}
+\usepackage[unicode,hidelinks]{hyperref}
+\newcommand{\note}[1]{\unskip\nobreak\footnote{译注：#1}}
+\begin{document}
+\title{代数几何基础第五卷预备笔记\\参数族与基变换}
+\author{据用户上传英译编辑稿译出}
+\date{2026年11月19日}
+\maketitle
+\chapter*{范围与校订状态}
+本批译出底本第60页开头的主应用括注、一般参数族的说明、沿$f:X\to P$的基变换图式及其后说明句，止于“the conclusions drawn in the above Nos.”。下一接续位置为同页“We will assume that $P$ and $G$ are flat over $S$”。
+
+沿用上一批$\mathcal P$表示关联预概形的约定，并用$\mathcal X$表示其沿$X\to P$的基变换。明显误写的目标$B_T$、点$s$与$\xi$的方向及纤维积排印均在脚注注明。底本脚注68、69照译保留，未把疑问词义改成确定结论。未合并主稿，全部历史待核保持。
+\chapter*{§15 前述若干结果的公理化（续）}
+（在主要应用中，$P$是射影纤维空间，$G$是由它导出的Grassmann空间〔“grassmannienne”是形容词！〕\footnote{底本脚注68：可能是Grassmann纤维空间。[原英译者注]}，$\mathcal P$是关联预概形。在最重要的情形中，相应态射
+\[
+\mathcal P\longrightarrow P\times_S G
+\]
+应当是闭浸入；我们把$G$看作$P$在$S$上的各纤维中的一族闭子预概形的参数概形。更确切地说，若$\xi\in G$，则$\mathcal P_\xi$是$P_s\times_{k(s)}k(\xi)$的闭子预概形，其中$s$是$\xi$在$S$中的像。此外，对于这里的大多数陈述，我们无疑取$S=\operatorname{Spec}(k)$。）\note{底本写“$P\to P_S\times G$”，正文依上一页交换图式规范为$\mathcal P\to P\times_S G$。底本“$s$ is the point of $S$ over $\xi$”把方向倒置，按结构态射$G\to S$改为$s$是$\xi$的像。$P_s,k(\xi)$明确写为剩余域扩张后的纤维，不把$\mathcal P_\xi$直接当作$P_s$上的闭子概形。}
+在一般情形中，仍可把$G$看作$P$在$S$上的各纤维之上的一族预概形的参数概形，$\xi$对应于$P_s\times_{k(s)}k(\xi)$之上的$\mathcal P_\xi$。当然，不必把$\xi$取为$G$的一个（绝对）点，也可以取它为一个以$S$预概形$T$为值的点。于是得到
+\[
+\mathcal P_\xi\longrightarrow P_T
+\]
+这一$T$态射；在上述特殊情形中，它是闭浸入。\note{底本此处目标写作$B_T$，而本段及交换图式没有引入$B$。由$\xi:T\to G$拉回$\mathcal P\to P\times_S G$，其目标是$P_T$，故正文订正为$P_T$并保留原写法于此。这里$T$值点不要求$T$为一个域的谱。}
+
+\newpage
+若$f:X\to P$是态射，令
+\[
+\mathcal X=X\times_P\mathcal P,
+\]
+就得到与前面的方形同类型的图式：\note{底本写“we put $X=X_P\times P$”，图式上方两个对象也都印作$X$。依沿$f$作基变换的构造，正文用$\mathcal X$表示新的纤维积，并规范下标位置；原来的$X$保持不变。此处所画方形仅断言交换，不另加笛卡尔性。}
+\[
+\begin{array}{ccc}
+X&\longleftarrow&\mathcal X\\
+\big\downarrow&&\big\downarrow\\
+S&\longleftarrow&G.
+\end{array}
+\]
+因此，第2至第8节研究的所有问题，在我们刚刚陈述的一般背景下仍有意义；并且有充分理由去明确那些保证上述各节结论成立的公理化条件。\footnote{底本脚注69：“Fr dégager + unravel, make explicit ?? [Tr]”，即法语dégager，疏解、明确表述？？[原英译者注]。正文中的“明确”据此恢复底本“there is a good reason to”之后缺失的动词含义，保留词义选择的问号。}\note{原句有“It is therefore evident”这一概括用语；译文写“因此”承接前面的构造，不把该句当作全部推广结论的证明。作者在这里提出的是寻找充分公理条件的任务，条件本身尚待下文列出。}
+\end{document}

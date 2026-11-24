@@ -1,0 +1,22 @@
+\documentclass[openany,fontset=fandol]{ctexbook}
+\usepackage{amsmath,amssymb}
+\usepackage[unicode,hidelinks]{hyperref}
+\newcommand{\note}[1]{\footnote{译注：#1}}
+\begin{document}
+\title{代数几何基础第五卷预备笔记\\§14：一般中心与记号整理}
+\author{据用户上传英译编辑稿译出}
+\date{2026年11月18日}
+\maketitle
+\chapter*{范围与校订状态}
+本批连续译出底本第55页“The main question that arises is if $S=\operatorname{Spec}(k)$”起至“the $F$ is not the same as in the beginning of this No.”止，含一般中心、基域上的中心选择、层的逆像和简化记号建议。
+
+下一处为同页“Grosso modo (roughly speaking)”，该句跨至第56页，须连同后文接续，不跳至命题14.1。原文不可辨批注照存；中心所在空间及层的记号按上下文校订，“无穷多个中心”补明退化边界例外，依据见脚注。各具体性质从一般点推广到开集的条件尚未逐项核验；旧待核保持，未合并主稿。
+\chapter*{§14 锥投影（续）}
+主要的问题是：若$S=\operatorname{Spec}(k)$，并取$C$为$\operatorname{Grass}^{m+1}(P)$中的一般中心，\note{底本在这里附“[illegible, ask AG]”，译为：［不可辨，询问AG］。这条编者批注不提供可恢复的数学条件，不能据此猜补。原式的射影空间小写$p$统一为本节$P$。}那么$X$的锥投影具有什么性质？这要求作基变换$k\to k(\eta)$；也就是说，此时$C$确实是$P_{k(\eta)}$中的线性子簇。\note{底本先写$k\to K(\eta)$，随后使用$k(\eta)$，这里统一为一般点$\eta$的剩余域$k(\eta)$。底本本句写“a linear subvariety of $X_{k(\eta)}$”；但中心由$\operatorname{Grass}^{m+1}(P)$参数化，须位于$P$的基变换中，并不要求包含于$X$。第56页紧接着明确写$C_\eta\subset P_{k(\eta)}$，故正文据此改为$P_{k(\eta)}$。}
+
+由已经重复过多次的标准论证，可以对上述Grassmann概形中某个非空开集的点所对应的锥投影，推出类似的性质；最后，若$k$是无限域，就可推出存在一个在$k$上定义的$C$，而当$m<r$时事实上有无穷多个这样的$C$。它们是$P$本身中的线性子簇，不必改变基域，并给出具有所讨论性质的锥投影。\note{底本写“since $k$ is infinite (if)”以及“a (in fact of an infinity of) $C$”。前者按其括注译为“若$k$是无限域”。后者须排除本节允许的$m=r$边界：此时中心为唯一的空线性子空间，参数Grassmann概形仅为一点，不存在无穷多个不同中心。$0\le m<r$时，该Grassmann概形维数$(m+1)(r-m)>0$，其标准仿射胞腔与任一非空开集相交为非空开集，在无限域上有无穷多个有理点，故正文补明这一范围。这里保留作者对“所讨论性质”的概括，不宣称每种性质都自动满足从一般点推广到开集的条件。}
+
+宜将（或将来应将）这类一般性说明，同第4节和第7节中同类的说明汇集在一起；这些说明我们已经或多或少地隐含使用过，例如在第13节中。
+
+此外，在这一联系下，也宜考察$X$上的一个层$F$的相对性质，并取它在$X^{(m)}_{Q(C)}$上的逆像$F^{(m)}_{Q(C)}$。在这里所述的具体情形中，还需要简化记号。我建议使用$X(C)$和$F(C)$，或者在不会混淆时，简记为$\widetilde X$和$\widetilde F$（注意：这里的$F$与本节开头的$F$不同）。\note{底本建议“$X(C)$ and $F(S)$”，但本句的对象是固定中心$C$所给关联空间及其上的逆像层，紧前均以$Q(C)$作下标，$S$则是既定基底而非这里变化的中心。因此正文统一为$F(C)$；底本$F(S)$原写法保留于此。这里的层$F$不与第54页定义中心$C=P(F)$的局部自由商模混同，原作者的警告完整保留。}
+\end{document}

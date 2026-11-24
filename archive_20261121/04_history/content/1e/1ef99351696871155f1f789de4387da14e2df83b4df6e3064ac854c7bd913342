@@ -1,0 +1,47 @@
+The beneﬁt of this hypothesis is that the set Z of points of X where X is not smooth
+over k is of codim ≥2. Let us choose a projective immersion i: X →P r, as we obtain a
+fundamental system of neighborhoods of x in P r by taking the sections not vanishing at
+x of the various O(n)
+P , n > 0, and we conclude that every neighborhood of x contains a
+neighborhood of the form X −Y where Y is a closed subset of X containing Z,purely of
+dimension (n −1) and such tht x /∈Y .
+We give Y the reduced induced structure such that (k being perfect) the singular set
+of Y is of dimension ≤n −2. By enlarging the previous set Z we ﬁnd a closed subset
+Z ⊂Y of dimension ≤n −2 containing the geometrically singular set of X and of Y .
+The idea of the proof is to ﬁber X by its intersections with linear subvarieties L of P
+of codimension (n −1) containing a given linear subvariety C of codimension n. To this
+end we will need the following:
+Lemma 13.3.
+With the preceding notations for X, Y , Z, (X ⊃Y ⊂Z) closed sub-
+schemes of P r
+k of dimension n, n −1 and ≤n −2, X −Z, Y −Z smooth, Z of dimension
+≤n −2 et quitte (if needed)66 (if k is of characteristic p > 0 by replacing the projective
+immersion i: X →P r by any “multiple” φi
+n (n ≥2) [some?] as in No. 9, there exists a
+linear subvariety L0 of P r of codimension (n −1) and having the following virtues (good
+properties))
+a) L0 ∩Z = φ = ∅
+b) L0 ∩X is smooth of dimension 1
+c) L0 ∩Y is smooth of dimension 0.
+(N.B. k denotes an inﬁnite ﬁeld without the necessity of being perfect here.) Let us assume
+this lemma and let us show how we can deduce the existence of an open neighborhood U
+of x contained in X −Y and allowing an elementary morphism U →V .
+There exists a linar subvariety C of L of codimension n in P r, i.e. of codimension 1
+in L not meting the ﬁnite set {L0 ∩Y } ∪{x}. Let T = X ∩C so that T is a subscheme
+of X ´etale over k, non-empty and not contianing x and disjoint from Y . Let us consider
+on the other hand the subscheme Q of Grassn−1(p) corresponding to linear subvarieties of
+P r containing C such that Q is a projective space of dimension (n −1); in particular it is
+smooth over k and of dimension (n−1). Then L0 corresponds to a point ξ of Q(k). Let us
+consider, on the other hand, (with the general notations introduced elsewhere) the inverse
+image Xn−1
+Q
+of Xn−1 by the immersion Q →Grassn−1 and also the inverse images Y n−1
+Q
+and n−1
+Q
+which are also closed disjoint subschemes of Xn−1
+Q
+, let p, q, r be the structural
+projections of these schemes to Q. Then by assumption essentially p is smooth at the points
+66Fr
+50

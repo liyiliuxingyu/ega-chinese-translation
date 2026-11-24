@@ -1,0 +1,91 @@
+{
+  "recorded_at_utc": "2026-11-21T09:11:08.933822+00:00",
+  "python_executed": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "platform_tested": "Linux-6.18.57-x86_64-with-glibc2.41",
+  "synthetic_test_command": "python3 -B integration_20261121/package_tools/test_package_tools.py",
+  "actual_exit_code": 0,
+  "actual_tests_run": 25,
+  "actual_failures": 0,
+  "actual_errors": 0,
+  "actual_skipped": 0,
+  "test_names": [
+    "test_checksum_sets_must_match",
+    "test_cross_platform_path_aliases_are_rejected",
+    "test_duplicate_checksum_path",
+    "test_duplicate_json_key_is_rejected",
+    "test_duplicate_manifest_path",
+    "test_dynamic_delta_version_and_list_cli",
+    "test_extra_files_only_fail_strict",
+    "test_file_directory_collision_is_rejected",
+    "test_manifest_hash_is_checked",
+    "test_missing_payload",
+    "test_nonempty_destination_is_not_overwritten",
+    "test_original_path_traversal_fails_before_creating_destination",
+    "test_refresh_cli",
+    "test_restoration_inside_package_is_rejected",
+    "test_restore_index_mismatch_fails_before_creating_destination",
+    "test_restore_rehashes_exact_bytes",
+    "test_special_file_is_rejected_without_opening",
+    "test_stored_path_traversal_is_rejected",
+    "test_symlink_destination_is_rejected",
+    "test_symlink_directory_is_rejected",
+    "test_symlink_file_is_rejected_even_when_extra",
+    "test_tampered_payload",
+    "test_unsafe_manifest_path",
+    "test_unsafe_path_components",
+    "test_valid_strict_and_cli"
+  ],
+  "real_original_path_compatibility": [
+    {
+      "corpus": "v17_indexed_original_paths",
+      "ordinary_file_paths_checked": 1827,
+      "rejected": []
+    },
+    {
+      "corpus": "supplement_III",
+      "ordinary_file_paths_checked": 753,
+      "rejected": []
+    },
+    {
+      "corpus": "supplement_III_delta",
+      "ordinary_file_paths_checked": 40,
+      "rejected": []
+    }
+  ],
+  "tested_files": [
+    {
+      "path": "README_PACKAGE_TOOLS.md",
+      "bytes": 4935,
+      "sha256": "563be69b0827825e6fb9d81883df731ad546e6d848affd749c9a79e8aacfe0a7"
+    },
+    {
+      "path": "package_common.py",
+      "bytes": 12927,
+      "sha256": "60ad6782e6bc1ab4c20e9db91dc7944699c9fed923d89df66f85bafd0731a9c8"
+    },
+    {
+      "path": "refresh_manifest.py",
+      "bytes": 1253,
+      "sha256": "c6f11416c0d3d7fe26ed21391061d7c756104028913f0179d0611eae6c559a8b"
+    },
+    {
+      "path": "restore_versions.py",
+      "bytes": 8472,
+      "sha256": "8a083440b9d0f9a52ea2f1b7d9ec85061f8585908f67634173785e2e9fe0f260"
+    },
+    {
+      "path": "test_package_tools.py",
+      "bytes": 11970,
+      "sha256": "04e3e2034bce8c27e3434b478e32a34e93d92baf1890aa25d9c40b4547fdb0fd"
+    },
+    {
+      "path": "verify_package.py",
+      "bytes": 1566,
+      "sha256": "1a37981e2beeef3f508b105146f17e0db352a86184a1e08a71ecb927a4a25862"
+    }
+  ],
+  "limits": [
+    "Small synthetic package tests only; root must still verify and restore all actual indexed versions after final assembly.",
+    "This record does not certify mathematical content, source translation, ZIP-container reconstruction or other operating systems."
+  ]
+}

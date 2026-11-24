@@ -1,0 +1,82 @@
+{
+  "files": [
+    {
+      "path": "03_sources/EGA5_francais.pdf",
+      "bytes": 16097021,
+      "sha256": "24cf8204184b58b18a46e5f63ecc36d6e791b3c8c96a09daac93de96ebd8e830",
+      "physical_pages": 171
+    },
+    {
+      "path": "03_sources/EGAI.pdf",
+      "bytes": 28214474,
+      "sha256": "78d209f1d58e53f679944f336eaca5ac73f68bd811b1fbe6e655e1d4270bbb2d",
+      "physical_pages": 227
+    },
+    {
+      "path": "03_sources/EGAII.pdf",
+      "bytes": 24238251,
+      "sha256": "14e6ae796a454d5d3de2b7b8ff2b263496f5f3d90a50a0d0860348b12226180e",
+      "physical_pages": 219
+    },
+    {
+      "path": "03_sources/EGAIII.1.pdf",
+      "bytes": 17646969,
+      "sha256": "50aa0f675c08217fe7c97b00f0610fea719acff4c828a25401e5c72d9ce793d4",
+      "physical_pages": 164
+    },
+    {
+      "path": "03_sources/EGAIII.2.pdf",
+      "bytes": 9584356,
+      "sha256": "46ebc187608dbf5579a527116ae258ff30e8c68b8de6eb63ec7ea9c158949a71",
+      "physical_pages": 90
+    },
+    {
+      "path": "03_sources/EGAIV.1.pdf",
+      "bytes": 28307372,
+      "sha256": "03f02142aef3df09f13f416ac3f78bd898213df894ed3fd86b25f91697256bda",
+      "physical_pages": 258
+    },
+    {
+      "path": "03_sources/EGAIV.2.pdf",
+      "bytes": 28142841,
+      "sha256": "9588bedb000e9a9f24685c0bb146aa2384209b14b1928b984d81794499d1226b",
+      "physical_pages": 228
+    },
+    {
+      "path": "03_sources/EGAIV.3.pdf",
+      "bytes": 32702874,
+      "sha256": "509ff2bcbadd26fbc7566e6fcd79406eefbe5a8dfc8c984f4703c51f8d7e420f",
+      "physical_pages": 254
+    },
+    {
+      "path": "03_sources/EGAIV.4.pdf",
+      "bytes": 44148520,
+      "sha256": "f79e211fcf94d19e200e3dbc96faeeb5a423342137a9ad0bbe4626c555c3f84f",
+      "physical_pages": 360
+    },
+    {
+      "path": "03_sources/EGAV1-2.ps",
+      "bytes": 184244,
+      "sha256": "9cf40f1f074c0dd8322a904a0e1008bc6bc858675ae7e0056d637567006bf0ee",
+      "format": "PostScript; original bytes preserved"
+    },
+    {
+      "path": "03_sources/EGAV5.ps",
+      "bytes": 656345,
+      "sha256": "e2578e9ef0d2a55541f2162d0e56f7ddf687d4002f4f166892128bb8dc20224c",
+      "format": "PostScript; original bytes preserved"
+    },
+    {
+      "path": "03_sources/EGAV6.ps",
+      "bytes": 389143,
+      "sha256": "dea07d58c0298d33ed33adde9f75d359157d5567dc7b1563545d9eb412d008f1",
+      "format": "PostScript; original bytes preserved"
+    },
+    {
+      "path": "03_sources/EGAVaiello.pdf",
+      "bytes": 677332,
+      "sha256": "23a20ef32fd16a1bd623c0c08ac080d04fc94f248de12133b713a19d6b0330d9",
+      "physical_pages": 112
+    }
+  ]
+}

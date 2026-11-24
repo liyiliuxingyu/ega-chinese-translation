@@ -1,0 +1,54 @@
+{
+  "book_project": {
+    "latex_errors": 0,
+    "undefined_control_sequences": 0,
+    "undefined_references_or_citations": 0,
+    "missing_characters": 0,
+    "overfull_boxes": 0,
+    "underfull_boxes": 46,
+    "font_size_substitution_warning": true,
+    "rerun_warning": false,
+    "output": [
+      "Output written on main.pdf (974 pages)."
+    ]
+  },
+  "audit_project": {
+    "latex_errors": 0,
+    "undefined_control_sequences": 0,
+    "undefined_references_or_citations": 0,
+    "missing_characters": 0,
+    "overfull_boxes": 0,
+    "underfull_boxes": 26,
+    "font_size_substitution_warning": true,
+    "rerun_warning": false,
+    "output": [
+      "Output written on report.pdf (181 pages)."
+    ]
+  },
+  "book_single": {
+    "latex_errors": 0,
+    "undefined_control_sequences": 0,
+    "undefined_references_or_citations": 0,
+    "missing_characters": 0,
+    "overfull_boxes": 0,
+    "underfull_boxes": 46,
+    "font_size_substitution_warning": true,
+    "rerun_warning": false,
+    "output": [
+      "Output written on book_single.pdf (974 pages)."
+    ]
+  },
+  "audit_single": {
+    "latex_errors": 0,
+    "undefined_control_sequences": 0,
+    "undefined_references_or_citations": 0,
+    "missing_characters": 0,
+    "overfull_boxes": 0,
+    "underfull_boxes": 26,
+    "font_size_substitution_warning": true,
+    "rerun_warning": false,
+    "output": [
+      "Output written on audit_single.pdf (181 pages)."
+    ]
+  }
+}

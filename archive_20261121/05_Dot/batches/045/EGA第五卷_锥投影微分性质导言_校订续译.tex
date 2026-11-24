@@ -1,0 +1,23 @@
+\documentclass[openany,fontset=fandol]{ctexbook}
+\usepackage{amsmath,amssymb}
+\usepackage[unicode,hidelinks]{hyperref}
+\newcommand{\note}[1]{\footnote{译注：#1}}
+\begin{document}
+\title{代数几何基础第五卷预备笔记\\锥投影的微分性质：导言}
+\author{据用户上传英译编辑稿译出}
+\date{2026年11月18日}
+\maketitle
+\chapter*{范围与校订状态}
+本批逐段译出底本第57页从“More delicate are the differential properties of the conic projection”开始的两个段落，止于“Dieudonné (or Blass). [Tr]”。下一接续位置为同页命题14.4标题及陈述。本批不包含命题14.4。
+
+原文把若干断言保留为尚待完成的论证，译文照存这种状态；未补作普通奇点、唯一性或有理性的证明。原文对第9节和第12节的引用保持。本批为独立续译，未合并主稿，全部历史待核及缺文保持原状态。
+\chapter*{§14 锥投影（续）}
+锥投影的微分性质更为微妙，尤其是在$X$在$k$上光滑且$f:X\to P$非分歧的情形；第12节研究的正是这种情形。回顾一下：在$Q(C)$的某个余维为1的子集$Z$之外，定义在$\widetilde X(C_\eta)$上的态射$p_{C_\eta}$是光滑的。\note{底本此处两次写目标为$Q(C)$，同时把态射及源写为$p_{C_\eta}$、$\widetilde X(C_\eta)$。正文保留这一记号切换，不未经说明把一般中心与泛中心的对象全部等同；本段应结合前文关于泛中心的约定阅读。}
+而第12节所概述的更细致分析表明（若我们尚未作出这一分析，则将会表明）：如果$X$的各分支的维数均$\geq m$，那么在$Q(C)$的某个余维$\geq2$的子集$Z'\subset Z$之外，纤维
+\[
+p_C^{-1}(\xi)=X^{(m)}_\xi
+\]
+至多只能具有几何意义下的普通奇点；而且，若$f$是浸入且$X$几何不可约，则这样的点至多只有一个，并且该点必为$k(\xi)$上的有理点。这些断言至少在$k$的特征为0时成立；或者，如第9节那样，以$\varphi_n f$（$n\geq2$）代替$f$，在此条件下也成立。\note{“shows or will show if we do not do it”是底本自身的未完成语气，正文没有把它改写为已证明的结论。“普通奇点”对应ordinary singular points；本批不添加原文未给出的局部标准方程，也不把上述替换条件解释为无条件的任意特征定理。}
+
+也应当给出$\dim X\leq m$、从而$p_{C_\eta}$定义在$X_{k(\eta)}$上时，$p_{C_\eta}$的微分性质。我这里只指出下列性质。证明应该是容易的，留给Dieudonné（或Blass）。[Tr]\note{底本这一段将投影记作大写$P_{C_\eta}$；与相邻段落及下一命题表示同一态射的小写$p_{C_\eta}$统一。原文的“[Tr]”照存；其证明委托语属于底本内容，并非本译文声称已经完成证明。}
+\end{document}

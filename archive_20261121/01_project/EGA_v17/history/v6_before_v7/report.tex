@@ -1,0 +1,51 @@
+% !TeX program = xelatex
+\input{preamble.tex}
+\newcommand{\RR}{\mathcal R}
+\newcommand{\FF}{\mathcal F}
+\newcommand{\GG}{\mathcal G}
+\newcommand{\MM}{\mathcal M}
+\newcommand{\JJ}{\mathcal J}
+\newcommand{\oldauditsrc}[1]{\par\noindent\textbf{原文位置：}#1。\par}
+\newcommand{\kind}[2]{\noindent\textbf{分类：#1。}\ #2\par}
+\newcommand{\lead}[1]{\par\noindent\textbf{#1}\quad}
+\newenvironment{analysisproof}{\par\noindent\textbf{该轮核查的反例或补证。}\ }{\par}
+
+\hypersetup{pdftitle={代数几何基础：第六版译校核查报告},pdfsubject={第0章19.0--19.4续译定点核查；原作者勘误；历史核查档案}}
+\title{代数几何基础\\译校核查报告\\[1em]\large 第六版新核查与历史记录}
+\author{原著对照、反例与补证}
+\date{}
+\begin{document}
+\frontmatter
+\maketitle
+\head{报告说明}
+本报告分为本轮新核查与历史记录。本轮直接依据上传原文和页面图像；原作者已发表的勘误与本次独立分析分开标示。历史报告保留原编号和当时措辞，不代表本轮再次认证其中全部结论。本轮新增条目以F6开头，涉及第0章19.0--19.4；第五版E5、第四版D4、第三版C3及更早报告作为历史记录继续收入。
+
+所附中文合订本仍为已译内容的工作译稿，并非全部上传材料的完结全译。文稿编译、条目覆盖核对和页面检查，不代替出版级逐句审校或全部数学证明的独立验证。
+\tableofcontents
+\mainmatter
+\input{reports/sixth_audit.tex}
+\part*{历史核查记录：第五版}
+\addcontentsline{toc}{part}{历史核查记录：第五版}
+\NewNote{以下E5条目为第五版原有记录，不表示本轮重新审定其全部结论。}
+\input{reports/fifth_audit.tex}
+\part*{历史核查记录：第四版}
+\addcontentsline{toc}{part}{历史核查记录：第四版}
+\NewNote{以下D4条目为第四版原有记录，不表示本轮重新审定其全部结论。}
+\input{reports/fourth_audit.tex}
+\part*{历史核查记录：第三版}
+\addcontentsline{toc}{part}{历史核查记录：第三版}
+\NewNote{下列C3条目属于第三版的定点核查，不是本轮重新发现或再次逐项独立审定的结果。}
+\input{reports/third_order_audit.tex}
+\part*{历史核查记录：前次续译批次}
+\addcontentsline{toc}{part}{历史核查记录：前次续译批次}
+\NewNote{以下为上一批报告的原有内容；其“本轮”指当时批次，不是本第六版新核查。}
+\input{reports/current_audit.tex}
+\part*{历史核查记录：新增文稿第一批}
+\addcontentsline{toc}{part}{历史核查记录：新增文稿第一批}
+\NewNote{以下为新增文稿第一批报告，保留原标识及其适用范围。}
+\input{reports/batch1_audit.tex}
+\part*{历史核查记录：第一、第二卷}
+\addcontentsline{toc}{part}{历史核查记录：第一、第二卷}
+\NewNote{以下为第一、第二卷早期重点审阅结果。关于进制完备性和对角态射等问题，须结合本版新取得的ErrIII清单；旧报告不代表问题尚未有正式勘误。}
+\input{reports/legacy_I_II.tex}
+\end{document}

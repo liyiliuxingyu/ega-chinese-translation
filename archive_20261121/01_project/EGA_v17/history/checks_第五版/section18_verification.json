@@ -1,0 +1,33 @@
+{
+  "twisted_bimodule": {
+    "mixed_action_difference": 0,
+    "t_left_minus_t_right_on_1": -1
+  },
+  "hochschild_coboundary": {
+    "cocycle_identity_difference": 0,
+    "delta_g_1_1": 0,
+    "delta_g_t_t": -2
+  },
+  "hochschild_d_squared": {
+    "rings_tested": "Q[t], monomial tensors",
+    "n": [
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "cases": 3267,
+    "symmetric_extra_d3_cases": 64,
+    "all_passed": true
+  },
+  "finite_fibre_product": {
+    "G_size": 27,
+    "kernel_size": 3,
+    "quotient_size": 9,
+    "reconstructed_size": 27,
+    "ring_pair_tests": 729,
+    "all_passed": true
+  },
+  "limitation": "Finite/symbolic computations check displayed examples and formulas only; general arguments remain in the report."
+}

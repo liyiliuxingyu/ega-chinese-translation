@@ -1,0 +1,140 @@
+% 底本：EGAIV.1.pdf，PDF第185--188页，原分册印刷第186--189页。
+\subsection{域上形式光滑局部代数的微分刻画}
+\egap{22.2.1}
+设 $k$ 为域，$P$ 为它的素域，$A$ 为一个局部 $k$-代数，极大理想为 $\mathfrak m$，剩余域为 $K=A/\mathfrak m$。由于 $K/P$ 可分，$K$ 对离散拓扑是形式光滑的 $P$-代数（19.6.1）。因此，$A/\mathfrak m^2$ 作为 $K$ 以 $\mathfrak m/\mathfrak m^2$ 为核的 $P$-扩张是 $P$-平凡的，故可定义特征同态（20.6.23）
+\begin{equation}
+ \chi_{A/k}:\Upsilon_{K/k}\longrightarrow\mathfrak m/\mathfrak m^2.
+ \tag{22.2.1.1}
+\end{equation}
+
+\egas{22.2.2}{定理}
+在（22.2.1）的条件下，$A$ 对 $\mathfrak m$-预进制拓扑是形式光滑的 $k$-代数，当且仅当下列条件同时成立：
+
+\noindent（i）典范同态 $\mathrm S_K(\mathfrak m/\mathfrak m^2)\to\gr_{\mathfrak m}(A)$ 为双射；
+
+\noindent（ii）特征同态 $\chi_{A/k}:\Upsilon_{K/k}\to\mathfrak m/\mathfrak m^2$ 为单射。
+
+这是（22.1.2）的特例：依次以 $P,k,A$ 代替其中的 $\Lambda,A,B$。$K$ 和 $k$ 都在 $P$ 上可分，因而都是离散的形式光滑 $P$-代数（19.6.1）。
+
+\egas{22.2.3}{注记}
+在（22.2.2）中\emph{保留条件（i）}时，条件（ii）可由下列任一条件替代：\cmt{M13-N03}{原文说的是在上一定理内“替换条件（ii）”，而不是脱离条件（i）宣称以下所有条件各自等价。原证明也明确使用a)与（i）的合取。正文补明这一作用域；报告给出一个a)成立、b)却失败的阿廷局部环，说明为何不能删除该限定。这是防止误用的范围澄清，不将原文按上下文的正确读法判为错误。}
+
+\noindent a) 典范同态 $\Omega^1_k\otimes_k K\to\Omega^1_A\otimes_A K$ 单射。
+
+\noindent b) 对每个 $n\ge0$，典范同态
+\[
+ \Omega^1_k\otimes_k(A/\mathfrak m^{n+1})
+ \longrightarrow\Omega^1_A\otimes_A(A/\mathfrak m^{n+1})
+\]
+可左逆。
+
+\noindent c) 典范同态 $\Omega^1_k\ctensor_k A\to\widehat{\Omega}^1_A$ 可左逆。
+
+\noindent d) $A$ 对 $\mathfrak m$-预进制拓扑，相对于素域是形式光滑的 $k$-代数。
+
+事实上，已经在（22.1.1）中指出，$\chi_{A/k}$ 的单射性等价于a)，而a)与（22.2.2，i）的合取，等价于d)与（i）的合取。（22.1.1）中的论证还表明b)和d)等价；b)与c)的等价性则由（19.1.8）得到。
+
+\egap{22.2.4}
+（22.2.2）的主要应用是诺特完备局部 $k$-代数；在这种情形下，$\mathfrak m/\mathfrak m^2$ 是有限维 $K$-向量空间。更精确地，设 $k$ 为域，$K/k$ 为域扩张，$V$ 为有限维 $K$-向量空间。考虑三元组 $(A,\alpha,\beta)$，其中 $A$ 是诺特完备局部形式光滑 $k$-代数，极大理想为 $\mathfrak m$，$\alpha:A/\mathfrak m\xrightarrow{\sim}K$ 是 $k$-代数同构，$\beta:\mathfrak m/\mathfrak m^2\xrightarrow{\sim}V$ 是相对于 $\alpha$ 的向量空间双同构。
+
+两个这样的三元组 $(A,\alpha,\beta)$ 和 $(A',\alpha',\beta')$ 之间的一个等价，是使下列图交换的 $k$-同构 $u:A\xrightarrow{\sim}A'$，其中 $\mathfrak m'$ 为 $A'$ 的极大理想：
+\[
+\begin{tikzcd}[column sep=large,row sep=large]
+ A/\mathfrak m\arrow[r,"\gr^0(u)"]\arrow[d,"\alpha"']&
+ A'/\mathfrak m'\arrow[d,"\alpha'"]\\
+ K\arrow[r,"1_K"']&K
+\end{tikzcd}
+\qquad
+\begin{tikzcd}[column sep=large,row sep=large]
+ \mathfrak m/\mathfrak m^2\arrow[r,"\gr^1(u)"]\arrow[d,"\beta"']&
+ \mathfrak m'/\mathfrak m'^2\arrow[d,"\beta'"]\\
+ V\arrow[r,"1_V"']&V.
+\end{tikzcd}
+\]
+这些三元组的等价类构成一个集合，记为 $\mathrm{FL}(K/k,V)$。每个三元组给出复合 $K$-线性映射
+\[
+ \Upsilon_{K/k}\xrightarrow{\chi_{A/k}}
+ \mathfrak m/\mathfrak m^2\xrightarrow{\beta}V,
+\]
+这里第一箭头借 $\alpha^{-1}$ 搬运标量结构。由上述定义及（20.6.22.2），这个映射只依赖于三元组在 $\mathrm{FL}(K/k,V)$ 中的等价类。因此得到典范映射
+\begin{equation}
+ \mathrm{FL}(K/k,V)\longrightarrow\Hom_K(\Upsilon_{K/k},V).
+ \tag{22.2.4.1}
+\end{equation}
+
+\egas{22.2.5}{命题}
+设 $k$ 为域，$K/k$ 为域扩张，$V$ 为有限维 $K$-向量空间。典范映射（22.2.4.1）将 $\mathrm{FL}(K/k,V)$ 双射到所有单射 $K$-同态 $\Upsilon_{K/k}\to V$ 所成的集合。
+
+\eproof
+（i）为证明（22.2.4.1）单射，只须证明如下事实。设 $A,A'$ 为诺特完备局部形式光滑 $k$-代数，极大理想分别为 $\mathfrak m,\mathfrak m'$，并给定 $k$-同构 $\alpha:A/\mathfrak m\xrightarrow{\sim}K$、$\alpha':A'/\mathfrak m'\xrightarrow{\sim}K$。假设给定同构
+\[
+ v^0:A/\mathfrak m\xrightarrow{\sim}A'/\mathfrak m',\qquad
+ v^1:\mathfrak m/\mathfrak m^2\xrightarrow{\sim}\mathfrak m'/\mathfrak m'^2,
+\]
+第二个是相对于 $v^0$ 的双同构，并使下列图交换：
+\begin{equation}
+\begin{gathered}
+\begin{tikzcd}[column sep=large,row sep=large]
+ A/\mathfrak m\arrow[rr,"v^0"]\arrow[dr,"\alpha"']&&
+ A'/\mathfrak m'\arrow[dl,"\alpha'"]\\
+ &K&
+\end{tikzcd}
+\\[1ex]
+\begin{tikzcd}[column sep=large,row sep=large]
+ \mathfrak m/\mathfrak m^2\arrow[rr,"v^1"]&&\mathfrak m'/\mathfrak m'^2\\
+ &\Upsilon_{K/k}\arrow[ul,"\chi_A"]\arrow[ur,"\chi_{A'}"']&
+\end{tikzcd}
+\end{gathered}
+\tag{22.2.5.1}
+\end{equation}
+我们要构造 $k$-同构 $u:A\xrightarrow{\sim}A'$，使 $\gr^0(u)=v^0$、$\gr^1(u)=v^1$。
+
+由于 $K$ 是域，（20.6.7.1）中的典范映射为双射（20.6.11）。所以，两个一阶扩张的特征同态相容，便给出一个 $k$-同构
+\[
+ v:A/\mathfrak m^2\xrightarrow{\sim}A'/\mathfrak m'^2,
+ \qquad\gr^0(v)=v^0,\quad\gr^1(v)=v^1.
+\]
+$A'$ 可度量且完备，而 $A$ 对 $k$ 形式光滑，所以由（19.3.11），复合 $A\to A/\mathfrak m^2\xrightarrow{v}A'/\mathfrak m'^2$ 可提升为 $k$-同态 $u:A\to A'$。于是 $\gr^0(u)=v^0$、$\gr^1(u)=v^1$。再考虑交换图
+\[
+\begin{tikzcd}[column sep=large,row sep=large]
+ \mathrm S_{A/\mathfrak m}(\mathfrak m/\mathfrak m^2)
+ \arrow[r]\arrow[d,"w"']&\gr_{\mathfrak m}(A)\arrow[d,"\gr(u)"]\\
+ \mathrm S_{A'/\mathfrak m'}(\mathfrak m'/\mathfrak m'^2)
+ \arrow[r]&\gr_{\mathfrak m'}(A').
+\end{tikzcd}
+\]
+水平箭头为典范同态，$w$ 由 $v^0,v^1$ 诱导。因 $v^0,v^1$ 双射，$w$ 双射；又因 $A,A'$ 形式光滑，水平箭头由（22.2.2，i）双射，故 $\gr(u)$ 双射。$A,A'$ 均分离且完备，因此 $u$ 本身双射（Bourbaki，\textit{交换代数}，第三章，§2，第8目，定理1的推论3）。\cmt{M13-N04}{这里证明的是等价类的唯一性，不是实现等价的同构唯一。例如 $k[[t]]$ 的自同构 $t\mapsto t+t^2$ 在剩余域与 $\mathfrak m/\mathfrak m^2$ 上都诱导恒等，却不是恒等同构。}
+
+（ii）还须证明（22.2.4.1）的像恰为所有单射。由（22.2.2，ii）已知其像包含于单射集合；下列引理给出另一包含。
+
+\egas{22.2.5.2}{引理}
+对任意 $K$-同态 $h:\Upsilon_{K/k}\to V$，都存在一个 $k$-代数 $A$，其底层环为正则、诺特、完备局部环，极大理想为 $\mathfrak m$，剩余域为 $K$；并存在 $K$-同构 $\beta:\mathfrak m/\mathfrak m^2\xrightarrow{\sim}V$，使
+\[
+ h=\beta\circ\chi_{A/k}.
+\]
+
+这个引理成立后，由 $A$ 正则及（17.1.1），（22.2.2，i）成立。若 $h$ 还是单射，则（22.2.2）表明 $A$ 是形式光滑的 $k$-代数，其等价类映到 $h$。反之，若 $h$ 不单射，引理所构造的 $k$-代数就不形式光滑。
+
+\eproof
+取 $K$-代数 $B=\mathrm S_K(V)$，令 $\mathfrak n$ 为其增广理想，$A=\widehat B$ 为 $\mathfrak n$-预进制完备化。若 $n=\rk_KV$，则 $A$ 同构于 $K[[T_1,\ldots,T_n]]$；其极大理想为 $\mathfrak m=\mathfrak nA$。
+
+由（20.6.11），可在环 $A/\mathfrak m^2$ 上规定一个 $K$ 以 $V$ 为核的 $k$-扩张结构，使 $h$ 为其特征同态。这个结构一般\emph{不同于}由典范嵌入 $k\hookrightarrow K\hookrightarrow A$ 定义的 $k$-平凡结构。若 $f:k\to A/\mathfrak m^2$ 为该结构同态，由 $k$ 在其素域上可分及（19.6.1），可将它提升为
+\[
+ k\longrightarrow A\longrightarrow A/\mathfrak m^2.
+\]
+用这一提升赋予 $A$ 所需的 $k$-代数结构，由（20.6.22.2）即得结论。\cmt{M13-G04}{这里改变的是 $k\to A$ 的结构同态，而不是底层幂级数环。首先用扩张的特征同态分类，在同一个平方零底层环 $K\oplus V$ 上实现给定 $h$；再把 $k$ 的结构同态逐级提升。故引理允许 $h$ 非单射，不能因为底层环正则便断言新 $k$-代数形式光滑。}
+\finishproof
+
+\egas{22.2.6}{定理}
+设 $k$ 为域，$K/k$ 为域扩张。存在一个诺特\emph{完备}局部 $k$-代数 $A$，其极大理想为 $\mathfrak m$、剩余域为 $A/\mathfrak m=K$，且对 $\mathfrak m$-预进制拓扑形式光滑，当且仅当 $\Upsilon_{K/k}$ 是有限维 $K$-向量空间。在这一完备局部代数类中，$A$ 的同构类由其维数唯一决定；所允许的同构须在剩余域 $K$ 上诱导恒等，而维数只受下列限制：\cmt{M13-E01}{原定理陈述写“局部诺特 $k$-代数”而没有写“完备”，随后却声称由维数唯一决定。前文（22.2.4）和所引（22.2.5）明确处理完备环。正文把该范围写入定理：例如 $k=\mathbf F_p$ 时，$k[t]_{(t)}$ 与 $k[[t]]$ 同为一维、剩余域为 $k$、对其预进制拓扑形式光滑，却不同构（前者可数、后者不可数）。不要求完备时，存在性判据仍成立，但唯一决定的是完备化而非原环。本项是对独立陈述的范围修正；原作者在前文已说明其主要应用是完备情形。}
+\[
+ \dim A\ge\rk_K\Upsilon_{K/k}.
+\]
+
+\eproof
+$\mathfrak m/\mathfrak m^2$ 是有限维 $K$-向量空间，所以必要性由（22.2.2，ii）得到。反之，（22.2.5）给出充分性，并允许 $\mathfrak m/\mathfrak m^2$ 具有任意有限维数 $n\ge\rk_K\Upsilon_{K/k}$。所构造环正则，故其维数等于 $n$。
+
+若两个这样的完备环具有相同维数，其两个特征同态都是 $\Upsilon_{K/k}$ 到 $n$ 维向量空间的单射。先在各像之间按这些单射定义同构，再选择补空间并延拓，便得到与特征同态相容的向量空间同构；由（22.2.5）即得到在 $K$ 上诱导恒等的 $k$-代数同构。\cmt{M13-G05}{最后这一步线性代数在原文中包含于“由（22.2.5）”的简写内；正文补出。它不要求为补空间选取一个典范基，也不推出同构自身唯一。}
+
+特别地，$\Upsilon_{K/k}$ 的恒等映射给 $K$ 对应一个诺特完备局部形式光滑 $k$-代数的同构类，使 $\Upsilon_{K/k}\simeq\mathfrak m/\mathfrak m^2$。
+\finishproof

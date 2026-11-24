@@ -1,0 +1,53 @@
+\documentclass[openany,fontset=fandol]{ctexbook}
+\usepackage{amsmath,amssymb}
+\usepackage[unicode,hidelinks]{hyperref}
+\newcommand{\note}[1]{\unskip\nobreak\footnote{译注：#1}}
+\begin{document}
+\title{代数几何基础第五卷预备笔记\\锥投影的基变换与普遍图式}
+\author{据用户上传英译编辑稿译出}
+\date{2026年11月19日}
+\maketitle
+\chapter*{范围与校订状态}
+本批承接底本第58页末图式，译出第59页“obtained (with the help) using the different”起至§14末的全部文字及两个图式，止于“Subschemes of $\operatorname{Grass}^m(P)$”。下一接续位置为同页§15标题“Axiomatization of certain of the previous results”。
+
+为避免底本把任意基变换底空间和普遍参数空间都记作$T$造成混淆，正文将后者记为$G$，并逐项注出原写法。结合本页明确的基变换说明，对上一批图式左下角作底空间订正说明。本批未补证可构造性质的适用条件；全部其余历史待核保持，未合并主稿。
+\chapter*{§14 锥投影（续）}
+这些图式是利用各个$C\in\operatorname{Grass}^{m+1}(P)(S)$得到的；更一般地，还要考虑作基变换$T\to S$之后，由$\operatorname{Grass}^{m+1}(P)$的$T$值点$\xi$得到的图式：\note{底本首句写“$C\in\operatorname{Grass}^{m+1}(S)$”，随后说“for the points $\xi\in\operatorname{Grass}^{m+1}(P)$”。根据紧随的$\xi:T\to\operatorname{Grass}^{m+1}(P)$，正文明确写成相对Grassmann函子的$S$值点及$T$值点，避免把$T$值点误读成拓扑点。上一页左下角印为$X$；本页基变换图式左下为$T$且基变换为$T\to S$，据此，上一页原始相对图式的左下应订为$S$，其左上仍为$X$，左竖箭头为结构态射。此前独立文件未在本批中覆盖改写。}
+\[
+\begin{array}{ccc}
+X_T&\longleftarrow&\widetilde X(C_\xi)=X_T(C_\xi)\\
+\big\downarrow&&\big\downarrow\\
+T&\longleftarrow&Q(C_\xi).
+\end{array}
+\]
+它们由下面的普遍图式经基变换
+\[
+\xi:T\longrightarrow G,\qquad G=\operatorname{Grass}^{m+1}(P)
+\]
+导出。\note{右上角等式是底本原有的记号，第二项$X_T(C_\xi)$原文没有波浪号，正文照存；这里不另外定义一个不同的对象。}普遍图式对应于$\operatorname{Grass}^{m+1}(P)$的典范$G$值点：\note{底本写“$\xi:T\to\operatorname{Grass}^{m+1}J(P)=T$”，并说“the canonical point of $\operatorname{Grass}^{m+1}$ in $T$”。其中多出的$J$无说明，且$T$同时用于试验概形和普遍参数空间。正文删去无所指的$J$，将普遍参数空间改记$G$；以下相应将普遍图式的$X_T,P_T$和底空间$T$写成$X_G,P_G,G$。这只是消除记号冲突，不是给任意$T$强加等于Grassmann概形的条件。}
+\[
+\begin{array}{ccc}
+X_G&\longleftarrow&\widetilde X(C)\\
+\big\downarrow&&\big\downarrow\\
+G&\longleftarrow&Q(C).
+\end{array}
+\]
+
+\newpage
+这里$C$是$P_G$的典范线性子簇。于是，上述态射
+\[
+\widetilde X(C_\eta)\longrightarrow Q(C_\eta)
+\]
+正是后一图式中$G$态射
+\[
+\widetilde X(C)\longrightarrow Q(C)
+\]
+在泛纤维上诱导的态射；而泛纤维态射所具有的每一个可构造性质，都蕴含邻近纤维具有相同性质。\note{底本此处仍用$T$表示普遍底空间，正文按前述约定改为$G$。“constructible property”的断言照译；它必须在相应性质的成立点集可构造等适用前提下理解，不能读作任意性质都从泛纤维自动传到邻近纤维。本段没有给出这些前提的逐项证明，本批亦未补造。}
+从记号的角度看，应当把$Q$看作（甚至一开始就把它引入为）自然函子态射
+\[
+\operatorname{Grass}^{m+1}(P)
+\longrightarrow
+\text{$\operatorname{Grass}^{m}(P)$的子概形}
+\]
+的名称。\note{底本目标写作“Subschemes of $\operatorname{Grass}^{m}(P)$”。这里按其函子语言直译，不擅自改成某个固定Hilbert概形，也不添加底本未列的平坦性或Hilbert多项式条件。}
+\end{document}

@@ -1,0 +1,701 @@
+{
+  "full_french": {
+    "path": "restored_20261121/latest/EGA_v17_V_supplement_III/03_sources/EGA5_francais.pdf",
+    "pages": 171,
+    "sha256": "24cf8204184b58b18a46e5f63ecc36d6e791b3c8c96a09daac93de96ebd8e830"
+  },
+  "full_english": {
+    "path": "restored_20261121/latest/EGA_v17_V_supplement_III/03_sources/EGAVaiello.pdf",
+    "sha256": "23a20ef32fd16a1bd623c0c08ac080d04fc94f248de12133b713a19d6b0330d9"
+  },
+  "batches": [
+    {
+      "order": 1,
+      "english": [
+        {
+          "name": "底本.pdf",
+          "sha256": "23a20ef32fd16a1bd623c0c08ac080d04fc94f248de12133b713a19d6b0330d9",
+          "same_as_project_source": true
+        }
+      ],
+      "french_subsets": []
+    },
+    {
+      "order": 2,
+      "english": [
+        {
+          "name": "底本.pdf",
+          "sha256": "23a20ef32fd16a1bd623c0c08ac080d04fc94f248de12133b713a19d6b0330d9",
+          "same_as_project_source": true
+        }
+      ],
+      "french_subsets": []
+    },
+    {
+      "order": 3,
+      "english": [
+        {
+          "name": "英译底本.pdf",
+          "sha256": "23a20ef32fd16a1bd623c0c08ac080d04fc94f248de12133b713a19d6b0330d9",
+          "same_as_project_source": true
+        }
+      ],
+      "french_subsets": [
+        {
+          "name": "法文扫描_原101至103页.pdf",
+          "pages": 3,
+          "sha256": "71ba582c981f55c303be9b6672f7495153296fce9d00f3d35f5c39c74f1ca506",
+          "image_stream_matches": [
+            {
+              "subset_page": 1,
+              "full_physical_page_candidates": [
+                101
+              ],
+              "image_count": 1
+            },
+            {
+              "subset_page": 2,
+              "full_physical_page_candidates": [
+                102
+              ],
+              "image_count": 1
+            },
+            {
+              "subset_page": 3,
+              "full_physical_page_candidates": [
+                103
+              ],
+              "image_count": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "order": 4,
+      "english": [
+        {
+          "name": "英译底本.pdf",
+          "sha256": "23a20ef32fd16a1bd623c0c08ac080d04fc94f248de12133b713a19d6b0330d9",
+          "same_as_project_source": true
+        }
+      ],
+      "french_subsets": [
+        {
+          "name": "法文扫描_原101至103页.pdf",
+          "pages": 3,
+          "sha256": "71ba582c981f55c303be9b6672f7495153296fce9d00f3d35f5c39c74f1ca506",
+          "image_stream_matches": [
+            {
+              "subset_page": 1,
+              "full_physical_page_candidates": [
+                101
+              ],
+              "image_count": 1
+            },
+            {
+              "subset_page": 2,
+              "full_physical_page_candidates": [
+                102
+              ],
+              "image_count": 1
+            },
+            {
+              "subset_page": 3,
+              "full_physical_page_candidates": [
+                103
+              ],
+              "image_count": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "order": 5,
+      "english": [
+        {
+          "name": "英译底本.pdf",
+          "sha256": "23a20ef32fd16a1bd623c0c08ac080d04fc94f248de12133b713a19d6b0330d9",
+          "same_as_project_source": true
+        }
+      ],
+      "french_subsets": [
+        {
+          "name": "法文扫描_原101至103页.pdf",
+          "pages": 3,
+          "sha256": "71ba582c981f55c303be9b6672f7495153296fce9d00f3d35f5c39c74f1ca506",
+          "image_stream_matches": [
+            {
+              "subset_page": 1,
+              "full_physical_page_candidates": [
+                101
+              ],
+              "image_count": 1
+            },
+            {
+              "subset_page": 2,
+              "full_physical_page_candidates": [
+                102
+              ],
+              "image_count": 1
+            },
+            {
+              "subset_page": 3,
+              "full_physical_page_candidates": [
+                103
+              ],
+              "image_count": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "order": 6,
+      "english": [
+        {
+          "name": "英译底本.pdf",
+          "sha256": "23a20ef32fd16a1bd623c0c08ac080d04fc94f248de12133b713a19d6b0330d9",
+          "same_as_project_source": true
+        }
+      ],
+      "french_subsets": [
+        {
+          "name": "法文扫描_原101至104页.pdf",
+          "pages": 4,
+          "sha256": "b42018102cc80a64748a937e3a80127556555e6658569d618a04756fca3a8516",
+          "image_stream_matches": [
+            {
+              "subset_page": 1,
+              "full_physical_page_candidates": [
+                101
+              ],
+              "image_count": 1
+            },
+            {
+              "subset_page": 2,
+              "full_physical_page_candidates": [
+                102
+              ],
+              "image_count": 1
+            },
+            {
+              "subset_page": 3,
+              "full_physical_page_candidates": [
+                103
+              ],
+              "image_count": 1
+            },
+            {
+              "subset_page": 4,
+              "full_physical_page_candidates": [
+                104
+              ],
+              "image_count": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "order": 7,
+      "english": [
+        {
+          "name": "英译底本.pdf",
+          "sha256": "23a20ef32fd16a1bd623c0c08ac080d04fc94f248de12133b713a19d6b0330d9",
+          "same_as_project_source": true
+        }
+      ],
+      "french_subsets": [
+        {
+          "name": "法文扫描_原104至107页.pdf",
+          "pages": 4,
+          "sha256": "987343f95d9683298e194223ffe1866e717d624048f6a49700d86a8049564e52",
+          "image_stream_matches": [
+            {
+              "subset_page": 1,
+              "full_physical_page_candidates": [
+                104
+              ],
+              "image_count": 1
+            },
+            {
+              "subset_page": 2,
+              "full_physical_page_candidates": [
+                105
+              ],
+              "image_count": 1
+            },
+            {
+              "subset_page": 3,
+              "full_physical_page_candidates": [
+                106
+              ],
+              "image_count": 1
+            },
+            {
+              "subset_page": 4,
+              "full_physical_page_candidates": [
+                107
+              ],
+              "image_count": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "order": 8,
+      "english": [
+        {
+          "name": "英译底本.pdf",
+          "sha256": "23a20ef32fd16a1bd623c0c08ac080d04fc94f248de12133b713a19d6b0330d9",
+          "same_as_project_source": true
+        }
+      ],
+      "french_subsets": [
+        {
+          "name": "法文扫描_原104至107页.pdf",
+          "pages": 4,
+          "sha256": "987343f95d9683298e194223ffe1866e717d624048f6a49700d86a8049564e52",
+          "image_stream_matches": [
+            {
+              "subset_page": 1,
+              "full_physical_page_candidates": [
+                104
+              ],
+              "image_count": 1
+            },
+            {
+              "subset_page": 2,
+              "full_physical_page_candidates": [
+                105
+              ],
+              "image_count": 1
+            },
+            {
+              "subset_page": 3,
+              "full_physical_page_candidates": [
+                106
+              ],
+              "image_count": 1
+            },
+            {
+              "subset_page": 4,
+              "full_physical_page_candidates": [
+                107
+              ],
+              "image_count": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "order": 9,
+      "english": [
+        {
+          "name": "英译底本.pdf",
+          "sha256": "23a20ef32fd16a1bd623c0c08ac080d04fc94f248de12133b713a19d6b0330d9",
+          "same_as_project_source": true
+        }
+      ],
+      "french_subsets": [
+        {
+          "name": "法文扫描_原104至107页.pdf",
+          "pages": 4,
+          "sha256": "987343f95d9683298e194223ffe1866e717d624048f6a49700d86a8049564e52",
+          "image_stream_matches": [
+            {
+              "subset_page": 1,
+              "full_physical_page_candidates": [
+                104
+              ],
+              "image_count": 1
+            },
+            {
+              "subset_page": 2,
+              "full_physical_page_candidates": [
+                105
+              ],
+              "image_count": 1
+            },
+            {
+              "subset_page": 3,
+              "full_physical_page_candidates": [
+                106
+              ],
+              "image_count": 1
+            },
+            {
+              "subset_page": 4,
+              "full_physical_page_candidates": [
+                107
+              ],
+              "image_count": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "order": 10,
+      "english": [
+        {
+          "name": "英译底本.pdf",
+          "sha256": "23a20ef32fd16a1bd623c0c08ac080d04fc94f248de12133b713a19d6b0330d9",
+          "same_as_project_source": true
+        }
+      ],
+      "french_subsets": [
+        {
+          "name": "法文扫描_原104至107页.pdf",
+          "pages": 4,
+          "sha256": "987343f95d9683298e194223ffe1866e717d624048f6a49700d86a8049564e52",
+          "image_stream_matches": [
+            {
+              "subset_page": 1,
+              "full_physical_page_candidates": [
+                104
+              ],
+              "image_count": 1
+            },
+            {
+              "subset_page": 2,
+              "full_physical_page_candidates": [
+                105
+              ],
+              "image_count": 1
+            },
+            {
+              "subset_page": 3,
+              "full_physical_page_candidates": [
+                106
+              ],
+              "image_count": 1
+            },
+            {
+              "subset_page": 4,
+              "full_physical_page_candidates": [
+                107
+              ],
+              "image_count": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "order": 11,
+      "english": [
+        {
+          "name": "英译底本.pdf",
+          "sha256": "23a20ef32fd16a1bd623c0c08ac080d04fc94f248de12133b713a19d6b0330d9",
+          "same_as_project_source": true
+        }
+      ],
+      "french_subsets": [
+        {
+          "name": "法文扫描_原107至109页.pdf",
+          "pages": 3,
+          "sha256": "1024b83cd3dc98dd9c77af9850367210c706c8c02bbf9451a452c042b4a84794",
+          "image_stream_matches": [
+            {
+              "subset_page": 1,
+              "full_physical_page_candidates": [
+                107
+              ],
+              "image_count": 1
+            },
+            {
+              "subset_page": 2,
+              "full_physical_page_candidates": [
+                108
+              ],
+              "image_count": 1
+            },
+            {
+              "subset_page": 3,
+              "full_physical_page_candidates": [
+                109
+              ],
+              "image_count": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "order": 12,
+      "english": [
+        {
+          "name": "英译底本.pdf",
+          "sha256": "23a20ef32fd16a1bd623c0c08ac080d04fc94f248de12133b713a19d6b0330d9",
+          "same_as_project_source": true
+        }
+      ],
+      "french_subsets": [
+        {
+          "name": "法文扫描_原109至110页.pdf",
+          "pages": 2,
+          "sha256": "a887236f4e0dba16a50804b46351e53a2916c25625ab6f7d2bfc39a815ffefad",
+          "image_stream_matches": [
+            {
+              "subset_page": 1,
+              "full_physical_page_candidates": [
+                109
+              ],
+              "image_count": 1
+            },
+            {
+              "subset_page": 2,
+              "full_physical_page_candidates": [
+                110
+              ],
+              "image_count": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "order": 13,
+      "english": [
+        {
+          "name": "英译底本.pdf",
+          "sha256": "23a20ef32fd16a1bd623c0c08ac080d04fc94f248de12133b713a19d6b0330d9",
+          "same_as_project_source": true
+        }
+      ],
+      "french_subsets": [
+        {
+          "name": "法文扫描_原110至112页.pdf",
+          "pages": 3,
+          "sha256": "3e3166a5fe16d30961ec525ca6c21c900753b24c690e2bb27ab8afda71e22bb6",
+          "image_stream_matches": [
+            {
+              "subset_page": 1,
+              "full_physical_page_candidates": [
+                110
+              ],
+              "image_count": 1
+            },
+            {
+              "subset_page": 2,
+              "full_physical_page_candidates": [
+                111
+              ],
+              "image_count": 1
+            },
+            {
+              "subset_page": 3,
+              "full_physical_page_candidates": [
+                112
+              ],
+              "image_count": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "order": 14,
+      "english": [
+        {
+          "name": "英译底本.pdf",
+          "sha256": "23a20ef32fd16a1bd623c0c08ac080d04fc94f248de12133b713a19d6b0330d9",
+          "same_as_project_source": true
+        }
+      ],
+      "french_subsets": [
+        {
+          "name": "法文扫描_原112至113页.pdf",
+          "pages": 2,
+          "sha256": "4968a06af426ad22d966e35b54fbe94e1aeecaeb13435c44cac5cc4419460084",
+          "image_stream_matches": [
+            {
+              "subset_page": 1,
+              "full_physical_page_candidates": [
+                112
+              ],
+              "image_count": 1
+            },
+            {
+              "subset_page": 2,
+              "full_physical_page_candidates": [
+                113
+              ],
+              "image_count": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "order": 15,
+      "english": [
+        {
+          "name": "英译底本.pdf",
+          "sha256": "23a20ef32fd16a1bd623c0c08ac080d04fc94f248de12133b713a19d6b0330d9",
+          "same_as_project_source": true
+        }
+      ],
+      "french_subsets": [
+        {
+          "name": "法文扫描_原113至114页.pdf",
+          "pages": 2,
+          "sha256": "7ababdc36e80305672dcea817150a6cf7afd12bf931477fe5c454a6d8018044f",
+          "image_stream_matches": [
+            {
+              "subset_page": 1,
+              "full_physical_page_candidates": [
+                113
+              ],
+              "image_count": 1
+            },
+            {
+              "subset_page": 2,
+              "full_physical_page_candidates": [
+                114
+              ],
+              "image_count": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "order": 16,
+      "english": [
+        {
+          "name": "英译底本.pdf",
+          "sha256": "23a20ef32fd16a1bd623c0c08ac080d04fc94f248de12133b713a19d6b0330d9",
+          "same_as_project_source": true
+        }
+      ],
+      "french_subsets": [
+        {
+          "name": "法文扫描_原114至115页.pdf",
+          "pages": 2,
+          "sha256": "6d09e0f52520cd530aa9fe479cc0a645d7b8f3f8102b1606fdbcf34963a77055",
+          "image_stream_matches": [
+            {
+              "subset_page": 1,
+              "full_physical_page_candidates": [
+                114
+              ],
+              "image_count": 1
+            },
+            {
+              "subset_page": 2,
+              "full_physical_page_candidates": [
+                115
+              ],
+              "image_count": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "order": 17,
+      "english": [
+        {
+          "name": "英译底本.pdf",
+          "sha256": "23a20ef32fd16a1bd623c0c08ac080d04fc94f248de12133b713a19d6b0330d9",
+          "same_as_project_source": true
+        }
+      ],
+      "french_subsets": [
+        {
+          "name": "法文扫描_物理115及160页.pdf",
+          "pages": 2,
+          "sha256": "1f9cfe41c5ea05f158d7e2e251b65c634c9b4401934af8ef354e621f2b6ca985",
+          "image_stream_matches": [
+            {
+              "subset_page": 1,
+              "full_physical_page_candidates": [
+                115
+              ],
+              "image_count": 1
+            },
+            {
+              "subset_page": 2,
+              "full_physical_page_candidates": [
+                160
+              ],
+              "image_count": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "order": 18,
+      "english": [
+        {
+          "name": "英译底本.pdf",
+          "sha256": "23a20ef32fd16a1bd623c0c08ac080d04fc94f248de12133b713a19d6b0330d9",
+          "same_as_project_source": true
+        }
+      ],
+      "french_subsets": [
+        {
+          "name": "法文扫描_物理160及159页.pdf",
+          "pages": 2,
+          "sha256": "d36f6da6493b249551af36eb24b5d2da1723565a982d95faa791cde02abfceb0",
+          "image_stream_matches": [
+            {
+              "subset_page": 1,
+              "full_physical_page_candidates": [
+                160
+              ],
+              "image_count": 1
+            },
+            {
+              "subset_page": 2,
+              "full_physical_page_candidates": [
+                159
+              ],
+              "image_count": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "order": 19,
+      "english": [
+        {
+          "name": "英译底本.pdf",
+          "sha256": "23a20ef32fd16a1bd623c0c08ac080d04fc94f248de12133b713a19d6b0330d9",
+          "same_as_project_source": true
+        }
+      ],
+      "french_subsets": [
+        {
+          "name": "法文扫描_物理159及158页.pdf",
+          "pages": 2,
+          "sha256": "8b9f1a4aacc85f9f58e724b71b451227a2c9dcdbfd15e1a4b35c4b079b66641f",
+          "image_stream_matches": [
+            {
+              "subset_page": 1,
+              "full_physical_page_candidates": [
+                159
+              ],
+              "image_count": 1
+            },
+            {
+              "subset_page": 2,
+              "full_physical_page_candidates": [
+                158
+              ],
+              "image_count": 1
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

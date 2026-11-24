@@ -1,0 +1,54 @@
+{
+  "main.log": {
+    "Overfull": 0,
+    "Underfull": 47,
+    "Missing character": 0,
+    "Undefined control sequence": 0,
+    "LaTeX Error": 0,
+    "undefined references": 0,
+    "Font Warning": 4,
+    "Token not allowed": 0,
+    "output_record": [
+      "Output written on main.pdf (1060 pages)."
+    ]
+  },
+  "report.log": {
+    "Overfull": 0,
+    "Underfull": 42,
+    "Missing character": 0,
+    "Undefined control sequence": 0,
+    "LaTeX Error": 0,
+    "undefined references": 0,
+    "Font Warning": 4,
+    "Token not allowed": 14,
+    "output_record": [
+      "Output written on report.pdf (253 pages)."
+    ]
+  },
+  "single_build/book_single.log": {
+    "Overfull": 0,
+    "Underfull": 47,
+    "Missing character": 0,
+    "Undefined control sequence": 0,
+    "LaTeX Error": 0,
+    "undefined references": 0,
+    "Font Warning": 4,
+    "Token not allowed": 0,
+    "output_record": [
+      "Output written on book_single.pdf (1060 pages)."
+    ]
+  },
+  "single_build/audit_single.log": {
+    "Overfull": 0,
+    "Underfull": 42,
+    "Missing character": 0,
+    "Undefined control sequence": 0,
+    "LaTeX Error": 0,
+    "undefined references": 0,
+    "Font Warning": 4,
+    "Token not allowed": 14,
+    "output_record": [
+      "Output written on audit_single.pdf (253 pages)."
+    ]
+  }
+}

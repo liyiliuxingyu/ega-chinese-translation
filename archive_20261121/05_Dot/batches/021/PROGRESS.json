@@ -1,0 +1,14 @@
+{
+  "work": "EGA V 独立校订续译",
+  "source_sha256": "23a20ef32fd16a1bd623c0c08ac080d04fc94f248de12133b713a19d6b0330d9",
+  "completed": "底本第44页 The Proposition 2.1 起，至第45页 Analogous change in 4.4 b) 止，八段",
+  "next": "底本第45页 [Le laius 5.1 Fr or Latin 67] goes as such",
+  "previous_project": "libfile_fde3_f-669a2052e230819186aac174f9e19465_49ac57203c0c81918f3630f0324dcb35",
+  "merged_into_main": false,
+  "pdf_pages": 4,
+  "unresolved": [
+    "4.2/4.3 条件 m−1 或 m+1，底本自标字迹不清",
+    "8.8、9.5 等既有缺文未解决"
+  ],
+  "format": "ctexbook default Fandol"
+}

@@ -1,0 +1,35 @@
+{
+  "scope": "Only the finite quotient and its cotangent spaces; not a proof of regularity of a finite Artinian ring.",
+  "checks": [
+    {
+      "p": 2,
+      "ring": "(Z/4)[t]/(t^2-2)",
+      "ring_size": 16,
+      "maximal_ideal_size": 8,
+      "maximal_ideal_square_size": 4,
+      "p_ideal_size": 4,
+      "pB_subset_n_square": true,
+      "eA": 1,
+      "eB": 1,
+      "epsilon_A": 1,
+      "epsilon_B": 0,
+      "reduced_cotangent_dimension_A": 0,
+      "reduced_cotangent_dimension_B": 1
+    },
+    {
+      "p": 3,
+      "ring": "(Z/9)[t]/(t^3-3)",
+      "ring_size": 729,
+      "maximal_ideal_size": 243,
+      "maximal_ideal_square_size": 81,
+      "p_ideal_size": 27,
+      "pB_subset_n_square": true,
+      "eA": 1,
+      "eB": 1,
+      "epsilon_A": 1,
+      "epsilon_B": 0,
+      "reduced_cotangent_dimension_A": 0,
+      "reduced_cotangent_dimension_B": 1
+    }
+  ]
+}

@@ -1,0 +1,5 @@
+法文扫描物理123页下段、124–125（手写130–132）；英译编辑稿物理95页下段、96页。先按法稿核每段，英稿作旁证。
+法文底本 SHA256 24cf8204184b58b18a46e5f63ecc36d6e791b3c8c96a09daac93de96ebd8e830。
+英文底本 SHA256 23a20ef32fd16a1bd623c0c08ac080d04fc94f248de12133b713a19d6b0330d9。
+英译底本：https://webusers.imj-prg.fr/~leila.schneps/grothendieckcircle/EGA/EGA5trans.pdf
+现代参照：Stacks Project 36.32.5–6（https://stacks.math.columbia.edu/tag/0BDM）、31.19.9（https://stacks.math.columbia.edu/tag/062Y）。

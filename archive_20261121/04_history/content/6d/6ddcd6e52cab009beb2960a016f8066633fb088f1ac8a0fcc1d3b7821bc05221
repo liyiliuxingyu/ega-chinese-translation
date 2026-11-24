@@ -1,0 +1,342 @@
+% 直接依据用户上传 EGAIII.2.pdf 第24--31页；原书第25--32页。
+\subsection{拟凝聚模复形的整体超 Tor 函子与 Künneth 谱序列：一般情形}
+\source{\texttt{EGAIII.2.pdf}，PDF第24--31页；原书第25--32页}
+\egap{6.7.1}
+现在将（6.6.8）的定义推广到如下情形：$S$ 为任意预概形，$X^{(i)},Y^{(i)}$ 是 $S$-预概形，$f_i:X^{(i)}\to Y^{(i)}$ 为分离拟紧态射。对于每一对下有界的拟凝聚 $\OO_{X^{(i)}}$-模复形 $\mathscr P^{(i)}_\bullet$（$i=1,2$），要对每个 $n$ 定义拟凝聚 $\OO_Y$-模
+\[
+ \lTor_n^S(f_1,f_2;\mathscr P^{(1)}_\bullet,\mathscr P^{(2)}_\bullet),
+ \qquad Y=Y^{(1)}\times_SY^{(2)},
+\]
+以及六个谱函子；当 $S,Y^{(1)},Y^{(2)}$ 仿射时，它们应当还原为（6.6.8）的定义。
+
+先设 $S=\Spec A$ 仿射，而 $Y^{(1)},Y^{(2)}$ 任意。取 $Y^{(i)}$ 的仿射开集 $W^{(i)}$；$f_i^{-1}(W^{(i)})$ 是拟紧 $S$-概形，而 $W=W^{(1)}\times_SW^{(2)}$ 是 $Y$ 的仿射开集。以 $f'_i:f_i^{-1}(W^{(i)})\to W^{(i)}$ 表示 $f_i$ 的限制，以 $\mathscr P'^{(i)}_\bullet$ 表示 $\mathscr P^{(i)}_\bullet|f_i^{-1}(W^{(i)})$（$i=1,2$）。由（6.6.8），有拟凝聚 $(\OO_Y|W)$-模谱序列
+\[
+ {}^{(t)}\spE(f'_1,f'_2;\mathscr P'^{(1)}_\bullet,\mathscr P'^{(2)}_\bullet).
+\]
+须验证它们满足粘合条件（$0_{\mathrm I}$，3.3.1）。立即归结为 $Y^{(i)}=\Spec B_i$ 仿射、$W^{(i)}=D(g_i)$（$g_i\in B_i$）的情形；此时 $W=D(g_1\otimes g_2)\subset Y=\Spec(B_1\otimes_AB_2)$（II，4.3.2.1）。若 $X'^{(i)}=f_i^{-1}(W^{(i)})$，所求为谱函子的典范同构
+\begin{equation}\tag{6.7.1.1}
+\begin{aligned}
+ {}^{(t)}E(X'^{(1)},X'^{(2)};\mathscr P'^{(1)}_\bullet,\mathscr P'^{(2)}_\bullet)
+ \simeq{}^{(t)}E(X^{(1)},X^{(2)};\mathscr P^{(1)}_\bullet,\mathscr P^{(2)}_\bullet)\otimes_BB_g,
+\end{aligned}
+\end{equation}
+其中 $B=B_1\otimes_AB_2$，$g=g_1\otimes g_2$。
+
+为此，对 $X^{(i)}$ 取有限仿射开覆盖 $\mathfrak U^{(i)}$，并以 $\mathfrak U'^{(i)}$ 表示它在 $X'^{(i)}$ 上的迹；后者仍由仿射开集组成（I，5.5.10）。确切地说，
+\[
+ C^\bullet(\mathfrak U'^{(i)},\mathscr P'^{(i)}_\bullet)
+ =C^\bullet(\mathfrak U^{(i)},\mathscr P^{(i)}_\bullet)\otimes_{B_i}(B_i)_{g_i}.
+\]
+置 $L'^{(i)}_{\bullet\bullet}=C^\bullet(\mathfrak U'^{(i)},\mathscr P'^{(i)}_\bullet)$，则
+\[
+ L'^{(1)}_{\bullet\bullet}\otimes_AL'^{(2)}_{\bullet\bullet}
+ =\bigl(L^{(1)}_{\bullet\bullet}\otimes_{B_1}(B_1)_{g_1}\bigr)
+ \otimes_A\bigl(L^{(2)}_{\bullet\bullet}\otimes_{B_2}(B_2)_{g_2}\bigr).
+\]
+由于 $B_g\simeq(B_1)_{g_1}\otimes_A(B_2)_{g_2}$，有典范同构
+\[
+ L'^{(1)}_{\bullet\bullet}\otimes_AL'^{(2)}_{\bullet\bullet}
+ \simeq(L^{(1)}_{\bullet\bullet}\otimes_AL^{(2)}_{\bullet\bullet})\otimes_BB_g.
+\]
+若 $M^{(i)}_{\bullet\bullet\bullet}$ 为 $L^{(i)}_{\bullet\bullet}$ 的一个投射 Cartan--Eilenberg 解消，并可设其由 $B_i$-模组成，则由 $(B_i)_{g_i}$ 在 $B_i$ 上平坦，
+\[
+ M'^{(i)}_{\bullet\bullet\bullet}
+ =M^{(i)}_{\bullet\bullet\bullet}\otimes_{B_i}(B_i)_{g_i}
+\]
+是双复形 $L'^{(i)}_{\bullet\bullet}$ 的投射 Cartan--Eilenberg 解消；并有
+\[
+ M'^{(1)}_{\bullet\bullet\bullet}\otimes_AM'^{(2)}_{\bullet\bullet\bullet}
+ =(M^{(1)}_{\bullet\bullet\bullet}\otimes_AM^{(2)}_{\bullet\bullet\bullet})\otimes_BB_g.
+\]
+所求同构（6.7.1.1）遂由双复形超同调的定义，以及关于 $B$-模 $G$ 的函子 $G\otimes_BB_g$ 的正合性得到。
+\cmt{C3-P01}{原文此处没有明确“投射”相对于哪个环。一般不能把任意 $A$-投射解消自动赋予 $B_i$-模结构，也不能把 $B_i$-投射自动等同于 $A$-投射；这里保留原文步骤并标为需补明的解消选择问题，不据此判定局部化同构错误。与（6.4.5）中通过滤过归纳极限证明局部化相容的论证应加区分。}
+
+\egap{6.7.2}
+现设 $S$ 任意，$u_i:Y^{(i)}\to S$ 为结构态射（$i=1,2$）。取 $S$ 的仿射开覆盖 $(S_\alpha)$，置
+\[
+ Y^{(i)}_\alpha=u_i^{-1}(S_\alpha),\qquad
+ X^{(i)}_\alpha=f_i^{-1}(Y^{(i)}_\alpha),
+\]
+并以 $f_{i\alpha}:X^{(i)}_\alpha\to Y^{(i)}_\alpha$ 表示 $f_i$ 的限制；它分离且拟紧。各 $Y_\alpha=Y^{(1)}_\alpha\times_{S_\alpha}Y^{(2)}_\alpha$ 构成 $Y$ 的开覆盖，在每个 $Y_\alpha$ 上，由（6.7.1）已定义谱函子
+\[
+ {}^{(t)}\spE^{S_\alpha}\bigl(f_{1\alpha},f_{2\alpha};
+ \mathscr P^{(1)}_\bullet|X^{(1)}_\alpha,
+ \mathscr P^{(2)}_\bullet|X^{(2)}_\alpha\bigr).
+\]
+仍须证明这些函子满足粘合条件。立即归结为如下情形：$S=\Spec A$ 仿射，$S'=D(h)$，$h\in A$，且 $u_i(Y^{(i)})\subset S'$；还可假设 $Y^{(i)}=\Spec B_i$ 仿射。需定义典范同构
+\begin{equation}\tag{6.7.2.1}
+ {}^{(t)}E^S(X^{(1)},X^{(2)};\mathscr P^{(1)}_\bullet,\mathscr P^{(2)}_\bullet)
+ \simeq{}^{(t)}E^{S'}(X^{(1)},X^{(2)};\mathscr P^{(1)}_\bullet,\mathscr P^{(2)}_\bullet).
+\end{equation}
+采用（6.6.2）的记号，$L^{(i)}_{\bullet\bullet}$ 由 $A_h$-模组成，因此
+\[
+ L^{(1)}_{\bullet\bullet}\otimes_{A_h}L^{(2)}_{\bullet\bullet}
+ \simeq L^{(1)}_{\bullet\bullet}\otimes_AL^{(2)}_{\bullet\bullet}.
+\]
+由于可以取由 $A_h$-模组成的 $L^{(i)}_{\bullet\bullet}$ 的投射 Cartan--Eilenberg 解消 $M^{(i)}_{\bullet\bullet\bullet}$，立即给出所求的典范同构。
+\cmt{C3-P01}{这句话的环上投射性约定同样需要说明；$A_h$ 在 $A$ 上平坦，但一般不投射。保留原文，不把平坦与投射混为一谈。}
+综上，得到下述定理。
+
+\egas{6.7.3}{定理}
+设 $S$ 为预概形，$f_i:X^{(i)}\to Y^{(i)}$ 为 $S$-预概形间的分离拟紧 $S$-态射，$\mathscr P^{(i)}_\bullet$ 为下有界拟凝聚 $\OO_{X^{(i)}}$-模复形（$i=1,2$）。置 $Y=Y^{(1)}\times_SY^{(2)}$。存在取值于拟凝聚 $\OO_Y$-模范畴的双 $\delta$-函子
+$\lTor_*^S(f_1,f_2;\mathscr P^{(1)}_\bullet,\mathscr P^{(2)}_\bullet)$，使得：若 $V^{(i)}$ 是 $Y^{(i)}$ 的仿射开集，$V=V^{(1)}\times_SV^{(2)}$，则
+\[
+\begin{aligned}
+ &\lTor_*^S(f_1,f_2;\mathscr P^{(1)}_\bullet,\mathscr P^{(2)}_\bullet)|V\\
+ &\quad=\bigl(\bTor_*^S(f_1^{-1}(V^{(1)}),f_2^{-1}(V^{(2)});\\
+ &\hspace{4em}\mathscr P^{(1)}_\bullet|f_1^{-1}(V^{(1)}),
+ \mathscr P^{(2)}_\bullet|f_2^{-1}(V^{(2)}))\bigr)^\sim.
+\end{aligned}
+\]
+\cmt{C3-H01}{这一仿射计算式须在（6.7.1）--（6.7.2）的局部化语境中理解：先在 $S$ 上取共同的仿射开片，再取其上方的 $V^{(i)}$。对任意 $S$，两个仿射开片的纤维积未必仿射；不能脱离该约定，将右侧理解为任意非仿射 $V$ 上未经定义的“模的相伴层”。}
+此双函子是六个双正则谱函子
+\[
+ {}^{(t)}\spE(f_1,f_2;\mathscr P^{(1)}_\bullet,\mathscr P^{(2)}_\bullet),
+ \qquad t=a,b,a',b',c,d,
+\]
+的共同终值。其 $E^2$ 项如下：
+\begin{align*}
+ {}^{(a)}\spE^2_{pq}
+ &=\bigoplus_{q_1+q_2=q}\lTor_p^S
+ \bigl(\cH^{-q_1}(f_1,\mathscr P^{(1)}_\bullet),
+       \cH^{-q_2}(f_2,\mathscr P^{(2)}_\bullet)\bigr),\\
+ {}^{(b)}\spE^2_{pq}
+ &=\cH^{-p}\bigl(f_1\times_Sf_2,
+                  \lTor_q^S(\mathscr P^{(1)}_\bullet,\mathscr P^{(2)}_\bullet)\bigr),\\
+ {}^{(a')}\spE^2_{pq}
+ &=\bigoplus_{q_1+q_2=q}\lTor_p^S
+ \bigl(\cH^{-q_1}(f_1,\mathscr P^{(1)}),
+       \cH^{-q_2}(f_2,\mathscr P^{(2)})\bigr),\\
+ {}^{(b')}\spE^2_{pq}
+ &=\cH^{-p}\bigl(f_1\times_Sf_2,
+                  \termTor_q^S(\mathscr P^{(1)}_\bullet,\mathscr P^{(2)}_\bullet)\bigr),\\
+ {}^{(c)}\spE^2_{pq}
+ &=\bigoplus_{q_1+q_2=q}\lTor_p^S
+ \bigl(f_1,f_2;\HH_{q_1}(\mathscr P^{(1)}_\bullet),
+                 \HH_{q_2}(\mathscr P^{(2)}_\bullet)\bigr),\\
+ {}^{(d)}\spE^2_{pq}
+ &=\HH_p\bigl(\termTor_q^S(f_1,f_2;
+                   \mathscr P^{(1)}_\bullet,\mathscr P^{(2)}_\bullet)\bigr).
+\end{align*}
+\cmt{C3-N01}{为避免原书不同“Tor”字体在中文排版中混淆，本式额外用上标 $\mathrm{term}$ 标明逐项应用模的 Tor 后组成的双复形，不是两个复形的超 Tor 终值。$(a')$ 中不带下标点的 $\cH^{-q_i}(f_i,\mathscr P^{(i)})$ 也指逐项的高阶直接像复形；与 $(a)$ 中整个复形的超上同调须区别。此为记号说明，不是增添数学假设。}
+称 $(a)$ 与 $(b)$ 为 \textbf{Künneth 谱序列}。当 $\mathscr P^{(1)}_\bullet,\mathscr P^{(2)}_\bullet$ 都仅在次数0处非零时，$(a)$ 与 $(a')$ 相同，$(b)$ 与 $(b')$ 相同；这时 $(c),(d)$ 退化，因而不再提供信息。
+
+\egas{6.7.4}{注记}
+上述整体超 Tor 同时包括（6.2.1）的超上同调模以及（6.5.3）的局部超 Tor。对任意分离拟紧态射 $f:X\to Y$ 和下有界拟凝聚 $\OO_X$-模复形 $\PP_\bullet$，有关于 $\PP_\bullet$ 的 $\delta$-函子典范同构
+\begin{equation}\tag{6.7.4.1}
+ \lTor_n^Y(f,1_Y;\PP_\bullet,\OO_Y)
+ \simeq\cH^{-n}(f,\PP_\bullet)\qquad(n\in\mathbf Z).
+\end{equation}
+事实上，由（6.7.2）的粘合方法立即归结为 $Y$ 仿射。利用（6.2.2），可用同一个有限仿射开覆盖 $\mathfrak U$ 计算两边，并对第一边将 $Y$ 自身作为 $Y$ 的覆盖。
+\cmt{C3-T01}{原书第27页把 $\mathfrak U$ 写成“$Y$ 的”有限仿射覆盖；这里所需的是 $X$ 的有限仿射覆盖，否则不能计算 $\cH(f,\PP_\bullet)$。上文略去错置对象，正确对象在本注说明。}
+按（6.6.2）的记号，$L^{(2)}_{\bullet\bullet}$ 仅在双次数 $(0,0)$ 处非零，等于 $A$；由（0，11.7.5）即得结论。更一般的结果见（6.7.7）。但若把（6.7.4.1）左边的 $\OO_Y$ 换成任意拟凝聚 $\OO_Y$-模 $\F$，一般不再与 $\cH^{-n}(f,\PP_\bullet\otimes_{\OO_Y}\F)$ 同构，尽管上面计算中的 $L^{(1)}\otimes_AL^{(2)}$ 仍可等同于 $C^\bullet(\mathfrak U,\PP_\bullet\otimes_Y\F)$。
+
+另一方面，有双 $\delta$-函子的典范同构
+\begin{equation}\tag{6.7.4.2}
+ \lTor_*^S(1_{X^{(1)}},1_{X^{(2)}};
+          \mathscr P^{(1)}_\bullet,\mathscr P^{(2)}_\bullet)
+ \simeq\lTor_*^S(\mathscr P^{(1)}_\bullet,\mathscr P^{(2)}_\bullet).
+\end{equation}
+仍由（6.7.1）、（6.7.2）归结为 $S,X^{(1)},X^{(2)}$ 仿射。计算左边时，可取只含 $X^{(i)}$ 自身的覆盖 $\mathfrak U^{(i)}$；此时 $L^{(i)}$ 退化为 $\Gamma(X^{(i)},\mathscr P^{(i)}_\bullet)$，视为第一次数非零项皆为零的双复形。两边相等便由（6.4.1.1）及（6.3.1）得到。
+
+\egas{6.7.5}{命题}
+设 $u:\mathscr P^{(1)}_\bullet\to\mathscr Q^{(1)}_\bullet$ 是下有界拟凝聚 $\OO_{X^{(1)}}$-模复形的同态，且诱导同态
+$\HH_*(u):\HH_*(\mathscr P^{(1)}_\bullet)\to\HH_*(\mathscr Q^{(1)}_\bullet)$ 为同构。则由 $u$ 诱导的同态
+\[
+ {}^{(t)}\spE(f_1,f_2;\mathscr P^{(1)}_\bullet,\mathscr P^{(2)}_\bullet)
+ \longrightarrow{}^{(t)}\spE(f_1,f_2;\mathscr Q^{(1)}_\bullet,\mathscr P^{(2)}_\bullet)
+\]
+在 $t=a,b,c$ 时为同构。
+\begin{proof}
+关于 $(c)$ 的断言，由该谱序列双正则及假设保证 $E^2$ 项上的同态为同构得到（0，11.1.5）。这已说明共同终值之间的同态为同构。应用（6.7.4.1）和（6.7.4.2），先得到由 $u$ 诱导的同态
+\[
+\begin{gathered}
+ \cH^{-n}(f_1,\mathscr P^{(1)}_\bullet)\to
+ \cH^{-n}(f_1,\mathscr Q^{(1)}_\bullet),\\
+ \lTor_*^S(\mathscr P^{(1)}_\bullet,\mathscr P^{(2)}_\bullet)\to
+ \lTor_*^S(\mathscr Q^{(1)}_\bullet,\mathscr P^{(2)}_\bullet)
+\end{gathered}
+\]
+均为同构。再由 $(a),(b)$ 双正则（6.7.3），且相应同态在 $E^2$ 项上双射，得到这两个谱序列的断言（0，11.1.5）。
+\end{proof}
+此外，若 $u$ 是同伦等价，则六个谱序列全部得到典范同构。事实上，若 $S$ 和 $Y^{(i)}$ 仿射，$u$ 诱导双复形的同伦等价
+\[
+ C^\bullet(\mathfrak U^{(1)},\mathscr P^{(1)}_\bullet)
+ \longrightarrow C^\bullet(\mathfrak U^{(1)},\mathscr Q^{(1)}_\bullet),
+\]
+由一般超同调理论得到结论（0，11.3.2）。一般情形由粘合得到，并使用如下事实：复形的同伦等价诱导它们的投射 Cartan--Eilenberg 解消之间的同伦等价（M，XVII，1.2）。
+
+\egas{6.7.6}{命题}
+设 $\mathscr P^{(1)}_\bullet$ 或 $\mathscr P^{(2)}_\bullet$ 由 $S$-平坦模组成，且两个复形均下有界。则有双 $\delta$-函子的典范同构
+\begin{equation}\tag{6.7.6.1}
+ \lTor_n^S(f_1,f_2;\mathscr P^{(1)}_\bullet,\mathscr P^{(2)}_\bullet)
+ \simeq\cH^{-n}(f_1\times_Sf_2,
+                 \mathscr P^{(1)}_\bullet\otimes_S\mathscr P^{(2)}_\bullet).
+\end{equation}
+\begin{proof}
+先设 $S,Y^{(1)},Y^{(2)}$ 仿射，处于（6.6.2）的情形并沿用其记号。例如，设 $\mathscr P^{(1)}_\bullet$ 由 $S$-平坦模组成。按（6.6.6）计算超 Tor：它是 $L^{(1)}_{\bullet\bullet}\otimes_AM^{(2)}_{\bullet\bullet\bullet}$ 的同调，其中 $M^{(2)}$ 是（0，11.7.1）意义下 $L^{(2)}$ 的投射 Cartan--Eilenberg 解消。另一方面，由假设，各 $L^{(1)}_{pq}$ 在 $A$ 上平坦（1.4.15.1）；因此（0，11.7.5）给出典范同构
+\begin{equation}\tag{6.7.6.2}
+ \bTor_*^S(\mathfrak U^{(1)},\mathfrak U^{(2)};
+             \mathscr P^{(1)}_\bullet,\mathscr P^{(2)}_\bullet)
+ \simeq H_*(L^{(1)}_{\bullet\bullet}\otimes_AL^{(2)}_{\bullet\bullet}).
+\end{equation}
+又有从 $L^{(1)}\otimes_AL^{(2)}$ 到 $C^\bullet(\mathfrak U,\mathscr Q_\bullet)$ 的自然双复形同态，其中 $\mathfrak U$ 是 $Z=X^{(1)}\times_SX^{(2)}$ 由 $U^{(1)}_\alpha\times_SU^{(2)}_\beta$ 组成的覆盖，且 $\mathscr Q_\bullet=\mathscr P^{(1)}_\bullet\otimes_S\mathscr P^{(2)}_\bullet$ 按总次数视为单复形。此同态的定义，实际上已在（6.6.4）计算 $(b')$ 谱序列的 $q=0$ 情形时给出：沿用当时记号，先有从 $N^{\bullet\bullet}$ 到 $C^{\bullet\bullet}(\Phi^{(1)},\Phi^{(2)};\mathscr S^\bullet)$ 的自然同态（0，11.8.5），再有从后者到 $P^{\bullet\bullet}(\Phi^{(1)},\Phi^{(2)};\mathscr S^\bullet)$ 的自然同态（0，11.8.6），最后从后者的上链复形映入交错上链子复形（0，11.8.7）。如（6.6.4）所见，这个同态在同调上给出同构；与（6.7.6.2）复合，得到
+\begin{equation}\tag{6.7.6.3}
+ \bTor_n^S(\mathfrak U^{(1)},\mathfrak U^{(2)};
+             \mathscr P^{(1)}_\bullet,\mathscr P^{(2)}_\bullet)
+ \simeq\Hh^{-n}(\mathfrak U,
+             \mathscr P^{(1)}_\bullet\otimes_S\mathscr P^{(2)}_\bullet).
+\end{equation}
+随后须证明该同构与所选开覆盖无关；（6.7.6.3）右边由（6.2.2）典范同构于
+$\Hh^{-n}(X^{(1)}\times_SX^{(2)},\mathscr P^{(1)}_\bullet\otimes_S\mathscr P^{(2)}_\bullet)$。利用（6.6.7），注意有下图在同伦意义下交换：
+\[
+\begin{tikzcd}[column sep=small,row sep=large]
+ C^\bullet(\mathfrak U^{(1)},\mathscr P^{(1)}_\bullet)\otimes_A
+ C^\bullet(\mathfrak U^{(2)},\mathscr P^{(2)}_\bullet)
+ \arrow[r]\arrow[d]&C^\bullet(\mathfrak U,\mathscr Q_\bullet)\arrow[d]\\
+ C^\bullet(\mathfrak V^{(1)},\mathscr P^{(1)}_\bullet)\otimes_A
+ C^\bullet(\mathfrak V^{(2)},\mathscr P^{(2)}_\bullet)
+ \arrow[r]&C^\bullet(\mathfrak V,\mathscr Q_\bullet).
+\end{tikzcd}
+\]
+其中横箭头为刚才定义的同态。最后，如（6.7.1）、（6.7.2）一样，通过粘合过渡到一般情形，没有困难；细节留给读者。
+\end{proof}
+
+\egas{6.7.7}{命题}
+设两个复形下有界，并且所有 $\cH^{-n}(f_1,\mathscr P^{(1)}_\bullet)$，或所有 $\cH^{-n}(f_2,\mathscr P^{(2)}_\bullet)$，均在 $S$ 上平坦。则有双 $\delta$-函子的典范同构（$n\in\mathbf Z$）
+\begin{equation}\tag{6.7.7.1}
+\begin{aligned}
+ &\lTor_n^S(f_1,f_2;\mathscr P^{(1)}_\bullet,\mathscr P^{(2)}_\bullet)\\
+ &\qquad\simeq\bigoplus_{q_1+q_2=n}
+ \cH^{-q_1}(f_1,\mathscr P^{(1)}_\bullet)\otimes_S
+ \cH^{-q_2}(f_2,\mathscr P^{(2)}_\bullet).
+\end{aligned}
+\end{equation}
+由（6.5.8），（6.7.3）的谱序列 $(a)$ 退化；它双正则，所以（0，11.1.6）立即给出结论。
+
+\egas{6.7.8}{定理}
+假设：一、$\mathscr P^{(1)}_\bullet,\mathscr P^{(2)}_\bullet$ 下有界；二、其中一个复形由 $S$-平坦模组成；三、所有 $\cH^{-n}(f_1,\mathscr P^{(1)}_\bullet)$ 或所有 $\cH^{-n}(f_2,\mathscr P^{(2)}_\bullet)$ 在 $S$ 上平坦。则有典范的双 $\delta$-函子同构（$n\in\mathbf Z$）
+\begin{equation}\tag{6.7.8.1}
+\begin{aligned}
+ &\cH^n(f_1\times_Sf_2,
+               \mathscr P^{(1)}_\bullet\otimes_S\mathscr P^{(2)}_\bullet)\\
+ &\qquad\simeq\bigoplus_{n_1+n_2=n}
+     \cH^{n_1}(f_1,\mathscr P^{(1)}_\bullet)\otimes_S
+     \cH^{n_2}(f_2,\mathscr P^{(2)}_\bullet)
+\end{aligned}
+\end{equation}
+（“Künneth公式”）。
+
+这由（6.7.6）和（6.7.7）得到。当 $S,Y^{(1)},Y^{(2)}$ 仿射时，（6.7.8.1）的逆同构，按（6.7.6）的记号，由双复形同态
+\[
+ C^\bullet(\mathfrak U^{(1)},\mathscr P^{(1)}_\bullet)\otimes_A
+ C^\bullet(\mathfrak U^{(2)},\mathscr P^{(2)}_\bullet)
+ \longrightarrow C^\bullet(\mathfrak U,\mathscr Q_\bullet)
+\]
+经（G，I，2.7）的过程导出；这由（G，I，5.5）可见。
+
+\egas{6.7.9}{命题}
+假设以下三个条件成立：一、$S,Y^{(1)},Y^{(2)}$ 局部诺特，$f_1,f_2$ 固有，且 $Y^{(1)}$ 或 $Y^{(2)}$ 在 $S$ 上有限型；二、$\mathscr P^{(1)}_\bullet,\mathscr P^{(2)}_\bullet$ 下有界；三、每个 $n\in\mathbf Z$ 对应的 $\HH_n(\mathscr P^{(i)}_\bullet)$ 均凝聚（$i=1,2$）。则
+$\lTor_n^S(f_1,f_2;\mathscr P^{(1)}_\bullet,\mathscr P^{(2)}_\bullet)$ 是凝聚 $\OO_Y$-模，其中 $Y=Y^{(1)}\times_SY^{(2)}$。
+
+由（6.5.13），局部超 Tor 是凝聚 $\OO_X$-模，其中 $X=X^{(1)}\times_SX^{(2)}$ 局部诺特：因为某个 $X^{(i)}$ 由假设在 $S$ 上有限型（I，6.3.4、6.3.8）。$Y$ 局部诺特，$f_1\times_Sf_2$ 固有（II，5.4.2），故由（6.2.5），（6.7.3）的 ${}^{(b)}\spE^2_{pq}$ 为凝聚 $\OO_Y$-模。由条件二，各谱序列都双正则，于是应用（0，11.1.8）即可。
+
+\egap{6.7.10}
+现在取两个 $S$-预概形 $Y'^{(i)}$、$S$-态射 $v_i:Y'^{(i)}\to Y^{(i)}$（$i=1,2$），以及其乘积
+$v=v_1\times_Sv_2:Y'\to Y$，其中 $Y'=Y'^{(1)}\times_SY'^{(2)}$。对每个 $i$，另取 $S$-预概形 $X'^{(i)}$ 和两个 $S$-态射 $u_i:X'^{(i)}\to X^{(i)}$、$f'_i:X'^{(i)}\to Y'^{(i)}$，使下图交换：
+\begin{equation}\tag{6.7.10.1}
+\begin{tikzcd}[column sep=large,row sep=large]
+ X'^{(i)}\arrow[r,"u_i"]\arrow[d,"f'_i"']&X^{(i)}\arrow[d,"f_i"]\\
+ Y'^{(i)}\arrow[r,"v_i"']&Y^{(i)}.
+\end{tikzcd}
+\end{equation}
+设 $f'_i$ 分离且拟紧。于是有谱函子的典范 $\OO_{Y'}$-同态
+\begin{equation}\tag{6.7.10.2}
+\begin{aligned}
+ &v^*\bigl({}^{(t)}\spE(f_1,f_2;
+               \mathscr P^{(1)}_\bullet,\mathscr P^{(2)}_\bullet)\bigr)\\
+ &\qquad\longrightarrow{}^{(t)}\spE(f'_1,f'_2;
+               u_1^*\mathscr P^{(1)}_\bullet,u_2^*\mathscr P^{(2)}_\bullet),
+\end{aligned}
+\end{equation}
+其中 $t=a,a',b,b',c,d$。
+
+为定义它们，先设 $S=\Spec A$、$Y^{(i)}=\Spec B_i$、$Y'^{(i)}=\Spec B'_i$ 仿射；于是 $X^{(i)},X'^{(i)}$ 是拟紧概形。计算未加撇的谱序列时，像（6.6.1）一样取 $X^{(i)}$ 的有限仿射开覆盖 $\mathfrak U^{(i)}$；计算加撇的谱序列时，取 $X'^{(i)}$ 的有限仿射开覆盖 $\mathfrak U'^{(i)}$，分别细于 $u_i^{-1}(\mathfrak U^{(i)})$。原文说，双复形
+$L^{(i)}=C^\bullet(\mathfrak U^{(i)},\mathscr P^{(i)}_\bullet)$ 可典范地看作
+$C^\bullet(u_i^{-1}(\mathfrak U^{(i)}),u_i^*\mathscr P^{(i)}_\bullet)$ 的“子双复形”（$0_{\mathrm I}$，4.4.3.2）。
+\cmt{C3-G01}{“子双复形”一般不成立：取 $\Spec k\to\Spec k[t]$ 为 $t=0$ 的闭浸入，结构层在单开集覆盖上的映射是 $k[t]\to k$，不单射。这里确有典范同态；后续构造只需要同态，不需要单射。正文保留原文说法并在此指出错误，不否定后续函子性结论。}
+选取从 $\mathfrak U'^{(i)}$ 到 $u_i^{-1}(\mathfrak U^{(i)})$ 的单纯映射（G，II，5.7），便定义同态
+\[
+ C^\bullet(u_i^{-1}(\mathfrak U^{(i)}),u_i^*\mathscr P^{(i)}_\bullet)
+ \longrightarrow C^\bullet(\mathfrak U'^{(i)},u_i^*\mathscr P^{(i)}_\bullet),
+\]
+由复合得到 $L^{(i)}\to L'^{(i)}$。改变单纯映射，只将此同态替换为与其同伦的同态（G，II，5.7.1）；所以得到良好定义的谱函子同态
+\begin{equation}\tag{6.7.10.3}
+\begin{aligned}
+ &{}^{(t)}E(\mathfrak U^{(1)},\mathfrak U^{(2)};
+              \mathscr P^{(1)}_\bullet,\mathscr P^{(2)}_\bullet)\\
+ &\qquad\longrightarrow{}^{(t)}E(\mathfrak U'^{(1)},\mathfrak U'^{(2)};
+              u_1^*\mathscr P^{(1)}_\bullet,u_2^*\mathscr P^{(2)}_\bullet).
+\end{aligned}
+\end{equation}
+若 $\mathfrak V^{(i)}$ 是 $X^{(i)}$ 的有限仿射开覆盖，细于 $\mathfrak U^{(i)}$，而 $\mathfrak V'^{(i)}$ 是 $X'^{(i)}$ 的有限仿射开覆盖，同时细于 $u_i^{-1}(\mathfrak V^{(i)})$ 和 $\mathfrak U'^{(i)}$，则容易验证下图交换：
+\[
+\begin{tikzcd}[column sep=large,row sep=large]
+ C^\bullet(\mathfrak U^{(i)},\mathscr P^{(i)}_\bullet)\arrow[r]\arrow[d]&
+ C^\bullet(\mathfrak V^{(i)},\mathscr P^{(i)}_\bullet)\arrow[d]\\
+ C^\bullet(\mathfrak U'^{(i)},u_i^*\mathscr P^{(i)}_\bullet)\arrow[r]&
+ C^\bullet(\mathfrak V'^{(i)},u_i^*\mathscr P^{(i)}_\bullet).
+\end{tikzcd}
+\]
+所以（6.7.10.3）本质上不依赖这些覆盖。实际定义了 $A$-模同态
+\begin{equation}\tag{6.7.10.4}
+\begin{aligned}
+ &{}^{(t)}E(X^{(1)},X^{(2)};
+                  \mathscr P^{(1)}_\bullet,\mathscr P^{(2)}_\bullet)\\
+ &\qquad\longrightarrow{}^{(t)}E(X'^{(1)},X'^{(2)};
+                  u_1^*\mathscr P^{(1)}_\bullet,u_2^*\mathscr P^{(2)}_\bullet).
+\end{aligned}
+\end{equation}
+由拉回的定义和（6.7.10.1）的交换性，这同时是 $(B_1\otimes_AB_2)$-模同态。右边由 $(B'_1\otimes_AB'_2)$-模组成，故它典范地诱导
+\begin{equation}\tag{6.7.10.5}
+\begin{aligned}
+ &{}^{(t)}E(X^{(1)},X^{(2)};
+           \mathscr P^{(1)}_\bullet,\mathscr P^{(2)}_\bullet)
+           \otimes_{B_1\otimes_AB_2}(B'_1\otimes_AB'_2)\\
+ &\qquad\longrightarrow{}^{(t)}E(X'^{(1)},X'^{(2)};
+           u_1^*\mathscr P^{(1)}_\bullet,u_2^*\mathscr P^{(2)}_\bullet).
+\end{aligned}
+\end{equation}
+由（I，1.6.5），这正是当前特例中所求的（6.7.10.2）。
+
+最后，按（6.7.1）、（6.7.2）的粘合过渡到一般情形。第二次过渡是直接的；对于第一次，像（6.7.1）那样，取 $g_i\in B_i$、其像 $g'_i\in B'_i$，以及 $B=B_1\otimes_AB_2$ 中的 $g=g_1\otimes g_2$ 和它在 $B'=B'_1\otimes_AB'_2$ 中的像 $g'=g'_1\otimes g'_2$；一切归结为使用典范同构
+\[
+ (M\otimes_BB')_{g'}\simeq M_g\otimes_{B_g}B'_{g'}
+\]
+（$0_{\mathrm I}$，1.5.4）。细节留给读者。
+
+\egap{6.7.11}
+上述对两个 $S$-态射 $X^{(i)}\to Y^{(i)}$ 及两个下有界拟凝聚模复形所发展的整体超 Tor 理论，立即推广到以下一般情形：给定预概形 $S$，有限个 $S$-预概形 $Y^{(i)}$（$i\in I$），有限个分离拟紧 $S$-态射 $f_i:X^{(i)}\to Y^{(i)}$，以及每个 $X^{(i)}$ 上的下有界拟凝聚 $\OO_{X^{(i)}}$-模复形 $\mathscr P^{(i)}_\bullet$。若 $Y$ 是各 $Y^{(i)}$ 在 $S$ 上的乘积，则对每个 $n\in\mathbf Z$，可定义拟凝聚 $\OO_Y$-模
+\[
+ \lTor_n^S\bigl((f_i)_{i\in I};(\mathscr P^{(i)}_\bullet)_{i\in I}\bigr).
+\]
+这些模对每个复形变量都构成协变 $\delta$-函子，并是六个谱函子
+\[{}^{(t)}\spE((f_i)_{i\in I};(\mathscr P^{(i)}_\bullet)_{i\in I})\]的共同终值。将 $I=\{1,2\}$ 时的定义与论证重复到此一般情形，留给读者。只须注意，当 $I$ 只含一个元素时，便得到（6.2.7）的超上同调 $\cH^\bullet(f,\PP_\bullet)$，如（6.7.4）已观察到的。若 $I=\{1,\ldots,m\}$，记作
+\[
+ \lTor_n^S(f_1,\ldots,f_m;
+                 \mathscr P^{(1)}_\bullet,\ldots,\mathscr P^{(m)}_\bullet).
+\]
+
+\egas{6.7.12}{命题}
+采用（6.7.11）的记号。设 $J\subset I$，且对每个 $i\in I\setminus J$，有 $X^{(i)}=Y^{(i)}=S$、$f_i=1_S$，而 $\mathscr P^{(i)}_\bullet$ 仅在第零项等于 $\OO_S$。则有 $\delta$-函子的典范同构
+\begin{equation}\tag{6.7.12.1}
+ \lTor_n^S\bigl((f_i)_{i\in I};(\mathscr P^{(i)}_\bullet)_{i\in I}\bigr)
+ \simeq\lTor_n^S\bigl((f_i)_{i\in J};(\mathscr P^{(i)}_\bullet)_{i\in J}\bigr).
+\end{equation}
+只须在 $S$ 和各 $Y^{(i)}$ 仿射时定义同构，随后照常粘合。对 $i\in I\setminus J$，取仅含 $S$ 的覆盖 $\mathfrak U^{(i)}$；于是 $L^{(i)}=C^\bullet(\mathfrak U^{(i)},\mathscr P^{(i)}_\bullet)$ 仅在双次数 $(0,0)$ 处非零，等于 $\Gamma(S,\OO_S)=A(S)$。此时（6.7.12.1）显然成立。
+
+\egas{6.7.13}{注记}
+采用（6.7.3）的记号，考虑典范 $S$-同构
+$Y^{(1)}\times_SY^{(2)}\to Y^{(2)}\times_SY^{(1)}$（I，3.3.5）。它把
+$\lTor_*^S(f_1,f_2;\mathscr P^{(1)}_\bullet,\mathscr P^{(2)}_\bullet)$ 变为
+$\lTor_*^S(f_2,f_1;\mathscr P^{(2)}_\bullet,\mathscr P^{(1)}_\bullet)$。问题是局部的，故可归结为（6.6.2）的情形。若 $M^{(i)}$ 为 $L^{(i)}$ 的投射 Cartan--Eilenberg 解消，则该同构把 $M^{(1)}\otimes_AM^{(2)}$ 变为 $M^{(2)}\otimes_AM^{(1)}$；取这些三重复形所对应单复形的同调，即得断言。

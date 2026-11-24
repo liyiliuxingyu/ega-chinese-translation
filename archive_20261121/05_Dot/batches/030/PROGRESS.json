@@ -1,0 +1,15 @@
+{
+  "completed": "底本50—51页跨页长段，There exists a linar subvariety C of L 至 This is the desired neighborhood of x contained in X−Y",
+  "next": "第51页 It remains only to prove Lemma 13.3",
+  "previous_project": "libfile_fde3_f-ee7fb87af2cc81918d617377ee9beab3_49ac57203c0c81918f3630f0324dcb35",
+  "source_sha256": "23a20ef32fd16a1bd623c0c08ac080d04fc94f248de12133b713a19d6b0330d9",
+  "merged_into_main": false,
+  "pdf_pages": 4,
+  "unresolved": [
+    "C横截选择步骤未展开",
+    "引理陈述遗漏x∈L0，后文证明使用该条件",
+    "Bertini连通性引用范围未展开",
+    "引理13.3证明未译",
+    "此前待核保留"
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "completed": "底本第55页Grosso modo起跨第56页至命题14.1前We find止",
+  "next": "第56页Proposition 14.1标题及陈述",
+  "previous_project": "libfile_fde3_f-1845c0b305408191bfa486bbe2bdb7c1_49ac57203c0c81918f3630f0324dcb35",
+  "source_sha256": "23a20ef32fd16a1bd623c0c08ac080d04fc94f248de12133b713a19d6b0330d9",
+  "merged_into_main": false,
+  "pdf_pages": 4,
+  "unresolved": [
+    "维数比较句交叠条件及see连接不明，照存",
+    "任意拟凝聚层正则性及爆破识别引用未独立核验",
+    "平坦性原断言保留并标待核，不能当作已证定理",
+    "第13节及所有旧缺文待核保持"
+  ]
+}

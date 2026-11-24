@@ -1,0 +1,23 @@
+{
+  "renderer": "PyMuPDF 1.26.7",
+  "results": [
+    {
+      "split_pdf": "main.pdf",
+      "standalone_pdf": "single_build/book_single.pdf",
+      "pages": 952,
+      "dpi": 72,
+      "text_differences": [],
+      "pixel_differences": [],
+      "status": "passed"
+    },
+    {
+      "split_pdf": "report.pdf",
+      "standalone_pdf": "single_build/audit_single.pdf",
+      "pages": 167,
+      "dpi": 72,
+      "text_differences": [],
+      "pixel_differences": [],
+      "status": "passed"
+    }
+  ]
+}

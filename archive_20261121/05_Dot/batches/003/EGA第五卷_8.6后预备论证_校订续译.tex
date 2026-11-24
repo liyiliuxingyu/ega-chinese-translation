@@ -1,0 +1,130 @@
+\documentclass{ctexbook}
+\usepackage{amsmath,amssymb,amsthm,tikz-cd}
+\usepackage[hidelinks]{hyperref}
+\newcommand{\ednote}[1]{\footnote{英译编者注：#1}}
+\newcommand{\corr}[1]{\footnote{本批译校：#1}}
+\newcommand{\cO}{\mathcal O}
+\newcommand{\Spec}{\operatorname{Spec}}
+\title{代数几何基础第五卷预备笔记\\第8节：8.6后预备论证\\校订续译}
+\author{据用户上传英译编辑稿译出}
+\date{2026年11月14日}
+\begin{document}
+\maketitle
+\frontmatter
+\chapter*{范围与校订原则}
+本批接续（8.6），完整翻译其后的未编号预备论证，起于底本第25页“We now study the points”段，止于第28页定理（8.7）标题之前，包括三条正合列、交换图、奇异零点预概形的概形论刻画以及脚注35--39。尚未翻译（8.7），本批也不是第8节全文。
+
+底本为用户上传的 \texttt{EGAVaiello.pdf}，即 Piotr Blass 与 Joseph Blass 翻译编辑的 Grothendieck 第五卷预备笔记。未对照法文手稿。原稿的难辨字与记号错乱较多；按用户要求，\textbf{已核实的正确公式写入正文，原文错误及修订理由放入脚注}。无法确定的缺文不猜补。正文中的少量记号约定及局部化说明标明为译校整理，不能冒称原稿逐字内容。
+
+本批保持独立，不覆盖旧译。实际读取最新第七版工程的进度记录：其合订本918页，第0章至（19.6.7），第五卷仍仅本篇第1--6节。此前独立批次已续译第7节及（8.1）--（8.6），本批恰从其断点续接，不重复计入。
+
+\textbf{统一记号（译校整理）：}沿用第1节 $X/S$ 有限型的背景。令 $P=\mathbf P(E)$，$P^\vee=\mathbf P(E^\vee)$，采用一维商空间的射影化约定。令 $W=X\times_S P^\vee$。在相对维数恒定的开集上，记 $d=\dim(X/S)$、$r=\dim(P/S)=\dim(P^\vee/S)$；一般情形按这样的开集局部解释。记 $N^\vee$ 为余法模，$N=(N^\vee)^\vee$ 为法模。$\cO_W(a,b)$ 中两项分别来自 $\cO_X(1)=f^*\cO_P(1)$ 和 $\cO_{P^\vee}(1)$。同样的记号用于其在 $Y$ 或测试预概形 $Z$ 上的拉回。底本的 $\nu_{X/P}$ 对应这里的 $N$。
+
+\mainmatter
+\chapter*{§8续\quad 余法丛与奇异零点}
+我们现在研究 $Y$ 中那些点 $y$：在这些点处，相应的 $Y_\xi$ 相对于 $k(\xi)$ 不光滑。限于 $f:X\to P$ 非分歧（实际应用中它将是一个浸入）且 $X\to S$ 光滑的情形。不必假设 $S$ 是域的谱。由于 $f$ 非分歧，典范同态
+\[
+f^*\Omega^1_{P/S}\longrightarrow\Omega^1_{X/S}
+\]
+是满射，其核是 $X$ 上的局部自由模，记为 $N^\vee$。当 $f$ 是浸入时，在把 $X$ 视为某个开集中的闭子概形后，它就是由 $X$ 的理想 $J$ 定义的余法模 $J/J^2$；在一般情形也把它称为余法模。\corr{底本(a)中间项印成 $f^*\Omega^1_{P/X}$；正文改为 $f^*\Omega^1_{P/S}$。已给定的是 $X\to P\to S$，且同段先前已写出这条相对微分满射。$X/S$ 光滑使右端局部自由，故该满射局部分裂，核局部自由。}
+\begin{equation}
+0\longrightarrow N^\vee\longrightarrow f^*\Omega^1_{P/S}
+\longrightarrow\Omega^1_{X/S}\longrightarrow0.\tag{a}
+\end{equation}
+注意，在 $P$ 上还有一条典范正合列（例如应在第16节中作为例子列出）：
+\begin{equation}
+0\longrightarrow\Omega^1_{P/S}(1)\longrightarrow E_P
+\longrightarrow\cO_P(1)\longrightarrow0.\tag{b}
+\end{equation}
+也就是说，$\Omega^1_{P/S}$ 典范同构于由 $E_P\to\cO_P(1)$ 导出的典范同态 $E_P(-1)\to\cO_P$ 的核。对它施加 $f^*$，得到
+\begin{equation}
+0\longrightarrow f^*(\Omega^1_{P/S}(1))\longrightarrow E_X
+\longrightarrow\cO_X(1)\longrightarrow0.\tag{$b_1$}
+\end{equation}
+这在 $X$ 上给出了 $f^*\Omega^1_{P/S}\otimes\cO_X(1)$ 的明确描述，因此可将 $N^\vee(1)$ 视为 $E_X$ 的一个局部直因子子模；等价地，其对偶 $N(-1)$ 典范同构于 $E_X^\vee$ 的一个商模。因而
+\[
+\mathbf P(N(-1))\simeq\mathbf P(N)
+\]
+可以典范地嵌入
+\[
+\mathbf P(E_X^\vee)=X\times_S P^\vee=W,
+\]
+作为 $X$ 上的射影子丛，从而作为闭子概形。它必定包含于 $Y$，因为 $N^\vee(1)$ 包含在 $E_X\to\cO_X(1)$ 的核中。\corr{底本此处将这个子模写成 $\Omega_{X/P}(1)$；但 $f$ 非分歧时 $\Omega^1_{X/P}=0$，实际用于构造的子模是上文已嵌入 $E_X$ 的 $N^\vee(1)$。底本紧接着附有“最后两个符号难辨，请询问 A.G.”的说明。本批以两条正合列确定该包含关系。}
+
+这个预概形的底空间恰是 $Y=V(\phi)$ 中那些点所成的集合：它们是 $\cO_W(1,1)$ 的截面 $\phi$ 相对于基底 $P^\vee$ 的奇异零点（第16节）。\ednote{参见这些笔记的第二部分。〔底本脚注35。〕}也就是说，对一个在 $P^\vee$ 上取值的域 $K$，它的 $K$-值点就是 $Y_K\subset X_K$ 中使 $\phi_K$ 在该点至少二阶消失的点；等价地，$Y_K$ 在那里不是相对维数 $d-1$ 的光滑 $K$-预概形。\corr{底本这里写 $r-1$，下一页相应的超平面截面条件却写 $d-1$；同一论证末尾明定 $r$ 为环境射影空间的相对维数。本批以 $d$ 表示 $X/S$ 的相对维数，截面预期维数应为 $d-1$。另用 $K$ 表示此处的取值域，以免与稍后 $S=\Spec(k)$ 混淆。要求的是“光滑且具有预期维数”，不能删去维数条件。}
+上面所述对奇异零点的刻画，即把它们看作 $W$ 中光滑子概形 $\mathbf P(N)$ 的点，立即给出下述断言，值得作为预备命题列出。\corr{底本在“刻画”附近留有一处“字迹不清，请询问 A.G.”标记。这里仅按前后两个完整句之间已经明确的数学关系衔接，不声称复原了难辨原字。这里的光滑是相对于 $S$，不是声称这个闭浸入是光滑态射。}
+
+若 $S=\Spec(k)$，$H$ 为 $P$ 的超平面，则 $Y=X\times_P H$ 在点 $x\in Y(k)$ 处相对于 $k$ 光滑且相对维数为 $d-1$（即 $x$ 是 $H$ 所定义的 $\cO_X(1)$ 的截面 $\phi$ 的非奇异零点，亦即几何非奇异零点），当且仅当 $H$ 不包含 $X$ 在 $x$ 处相对于 $k$ 的切空间经 $f$ 诱导的像所对应的射影线性子空间。\corr{底本印作“经 $\phi$ 的像”。$\phi$ 是线丛截面，不能在此扮演 $X\to P$ 的角色；应由 $f$ 的切映射以及下一段的线性子空间对应来解释。}换句话说，当 $f:X\to P$ 是浸入，从而可将 $X$ 与 $P$ 的一个子概形相认时，条件就是：$H$ 在 $x$ 处不与 $X$ 相切。
+
+一旦把这一陈述的含义说清楚，即说明 $P$ 在点 $a=f(x)$ 处的切空间的一个向量子空间怎样确定 $P$ 的一个线性子空间，使得“$H$ 不包含该子空间”这句话有意义，该断言便直接由光滑性的 Jacobian 判据或奇异零点的定义得出。当然，这来自上面的正合列(b)：它给出 $a$ 处切空间的向量子空间与 $P$ 中包含 $a$ 的线性子空间之间的一一对应。\corr{底本写“factor subspaces”，在域上每个向量子空间都有补空间。本译文按其紧接的解释译为向量子空间，不改译为商空间。}无论如何，这个对应就是把经过 $a$ 的线性子簇对应到它在 $a$ 处的切空间，并将后者看作 $P$ 在 $a$ 处切空间的子空间。
+
+这些“连锁事实”，连同有关线性子簇及 Grassmann 簇的各种类似事实，应该集中在一两个预备编号或预备段落中，当然要对任意基底陈述。事实上，我们能做得更好：第16节定义的 $\phi$ 相对于 $P^\vee$ 的奇异零点预概形 $Y^{\mathrm{sing}}$，恰是 $\mathbf P(N)$。\corr{底本第26页此处排作 $\mathbf P(\nu_{X/P}^{\vee}$，还缺少右括号。应为 $\mathbf P(N(-1))\simeq\mathbf P(N)$：一维商的射影化由 $E_X^\vee\twoheadrightarrow N(-1)$ 给出，不能在此把法模改成余法模。}它相对于 $S$ 光滑；在非空的相关等维部分，其相对维数为\corr{当 $N$ 的秩为零时，其射影化为空；本批明确非空部分，以免把空概形错误地断言为实际维数等于 $r-1$。$N$ 的秩为 $r-d$，所以非空纤维为 $\mathbf P^{r-d-1}$。}
+\[
+d+(r-d-1)=r-1.
+\]
+因此我们处于第16号或第16节所研究的有利情形。\ednote{请询问 A.G. 这个引文的位置：应在这些笔记稍后的部分。〔底本脚注36。〕}为了验证上述断言，注意按定义，$Y^{\mathrm{sing}}$ 正是下述截面的零点在 $Y$ 中定义的子预概形：
+\[
+\Psi=(d_{W/P^\vee}\phi)|_Y
+\in\Gamma\bigl(Y,\Omega^1_{W/P^\vee}\otimes\cO_Y(1,1)\bigr),
+\]
+其中\ednote{此处有难辨内容，请询问 A.G.。〔底本脚注37。〕}\textsuperscript{,}\corr{右端的 $\Omega^1_{X/S}$ 均理解为拉回。截面取相对微分后限制在其零概形上，故更换线丛的局部平凡化不影响其定义；这说明上述 $d\phi$ 记号的确切含义。}
+\[
+\Omega^1_{W/P^\vee}\otimes\cO_Y(1,1)
+=\Omega^1_{X/S}\otimes\cO_Y(1,1).
+\]
+我们将给出这个截面的另一种解释，结论由此立即得出。为此，考虑 $W$ 上，或更一般地，任意 $W$-预概形 $Z$ 上的如下正合列图。为免图形过宽，图中使用缩写
+\[
+\begin{aligned}
+ A&=f^*\Omega^1_{P/S}\otimes\cO_Z(1,0),& C&=N^\vee\otimes\cO_Z(1,0),\\
+ D&=\Omega^1_{X/S}\otimes\cO_Z(1,0),& B&=E\otimes\cO_Z,\\
+ L&=\cO_Z(0,-1),& M&=\cO_Z(1,0),\\
+ Q&=T_{P^\vee/S}\otimes\cO_Z(0,-1).&&
+\end{aligned}
+\]
+所有模都已拉回到 $Z$；$T_{P^\vee/S}=(\Omega^1_{P^\vee/S})^\vee$。横列及两条竖列正合，箭头方向均如下：\corr{这是原图的校订重排，不是新增数学结论。原图左列顶端为 $\Omega^1_{X/Y}\otimes\cO_Z(1,0)$，但由(a)拉回只能得到 $\Omega^1_{X/S}$。中列顶端原图记作难辨的 $G_{P^\vee/S}\otimes\cO_Z(0,-1)$；由对偶Euler列确定为 $T_{P^\vee/S}\otimes\cO_Z(0,-1)$，这里不声称读出了那个难辨字母。原图用类似比例号的符号表示复合，本批记为 $\alpha$。缩写不改变箭头的源与靶。}
+\[
+\begin{tikzcd}[row sep=small,column sep=large]
+ &0&0&\\
+ &D\arrow[u]&Q\arrow[u]&\\
+ 0\arrow[r]&A\arrow[u]\arrow[r]&B\arrow[u]\arrow[r]&M\arrow[r]&0\\
+ &C\arrow[u]&L\arrow[u]\arrow[ur,bend right=15,"\alpha"']&\\
+ &0\arrow[u]&0\arrow[u]&
+\end{tikzcd}
+\]
+〔原编者向 A.G. 提问：上面的 $G$ 实际是一个难辨的字母，后接 $P^\vee/S$；这是什么？〕\ednote{请询问 A.G.。〔底本脚注38。〕}
+
+第一条竖列由(a)拉回并张量 $\cO_Z(1,0)$ 得出；横列由(b)拉回得出；第二条竖列由 $P^\vee$ 上类似的正合列 $(b^\vee)$ 的对偶列拉回得出，其中 $(b^\vee)$ 是把 $E$ 换成 $E^\vee$ 所得到的列。\corr{底本将这些步骤略称“张量 $\cO_Z$”，本批明示拉回。三条列均为局部分裂的局部自由模正合列，所以任意 $Z$ 上的拉回仍正合。由 $0\to\Omega^1_{P^\vee/S}(1)\to E^\vee_{P^\vee}\to\cO_{P^\vee}(1)\to0$ 对偶，正得到 $0\to\cO_{P^\vee}(-1)\to E_{P^\vee}\to T_{P^\vee/S}(-1)\to0$。}
+由 $Y$ 的定义，$Z\to W$ 经 $Y$ 分解，当且仅当图中的复合态射 $\alpha:L\to M$ 为零，即当且仅当可以找到分解\corr{底本此处源项印成 $\cO_Z(0,01)$；由中间竖列及 $L\to B$ 的源确定，应为 $\cO_Z(0,-1)$。}
+\[
+\beta:\cO_Z(0,-1)\longrightarrow
+f^*\Omega^1_{P/S}\otimes\cO_Z(1,0).
+\]
+在这种情形下，可将它与
+\[
+f^*\Omega^1_{P/S}\otimes\cO_Z(1,0)
+\longrightarrow\Omega^1_{X/S}\otimes\cO_Z(1,0)
+\]
+复合。把这一复合同态视作 $\Omega^1_{X/S}\otimes\cO_Z(1,1)$ 的截面，得到的正是刚才引入的 $\Psi$ 的拉回。\ednote{Blass：请检查这里的字母是否正确。〔底本脚注39。〕}\textsuperscript{,}\corr{底本写 $\Omega^1_{X/Y}\otimes\cO_Z(1,1)$ 作为此同态的靶，混淆了同态与相应截面的扭转。正确同态为 $L\to D$；用 $\operatorname{Hom}(L,D)=\Gamma(Z,D\otimes L^{-1})$ 转成截面后才出现 $(1,1)$。$\psi$ 与 $\Psi$ 在本批统一作 $\Psi$。}
+（验证应当基本上是机械性的。）
+
+它为零，当且仅当 $Z$ 位于 $V(\Psi)$ 之上，这正是 $V(\Psi)$ 的定义！另一方面，这也意味着 $\beta$ 经由 $N^\vee\otimes\cO_Z(1,0)$ 分解，即 $E\otimes\cO_Z$ 的子模 $\cO_Z(0,-1)$ 包含在子模 $N^\vee\otimes\cO_Z(1,0)$ 中；这显然也就意味着 $Z\to W$ 经由
+\[
+\mathbf P(N(-1))\ \subset\ \mathbf P(E_X^\vee)
+\]
+这个子预概形分解。由此完成了所宣布的证明。\corr{底本最后写作 $\mathbf P(\nu_{x/P}(1))$。由 $N^\vee(1)\subset E_X$ 对偶得到 $E_X^\vee\twoheadrightarrow N(-1)$，故相应闭浸入必须使用 $N(-1)$。作为抽象 $X$-概形，$\mathbf P(N(1))$ 和 $\mathbf P(N(-1))$ 都典范同构于 $\mathbf P(N)$；但用来定义本处闭浸入的商模及扭转必须写正确。}
+
+在这个已经使我费了不少力气的博学句法练习之前，其实可以先指出：若 $S=\Spec(k)$，从集合论的角度看，非空的 $Y^{\mathrm{sing}}$ 的维数为 $r-1$，而 $P^\vee$ 的维数为 $r$，所以 $Y^{\mathrm{sing}}$ 在 $P^\vee$ 中的像的闭包余维至少为一，从而再次得到（2.12）。\corr{底本说“像的余维至少一”，未明说闭包；这里按通常的像之维数解释写明闭包。空情形中结论自然成立，但不将空集维数写为 $r-1$。}值得注意的是，这个论证实质上并不不同于（2.12）中使用的论证。我们还注意到，这个集合的余维往往确实为一，参见下文。
+
+因此，一般不能找到每个成员都光滑的超平面截面“线性束”。不过，我们将看到，往往仍能找到由没有任何超奇异点的超平面截面组成的线性束，因为在最常见的情形中，$Y^{\mathrm{sup\,sing}}$ 在 $P^\vee$ 中的像具有余维至少二。\corr{底本此处写“余维二”。这里按下文所使用的余维下界表述，不声称必然恰等于二；例如异常集可以为空。这仍是原稿对后文结果的预告，不是本批已经证明了所有情形下的超奇异点判据。超奇异点术语沿用原稿后文定义。}
+首先回顾当前情形中那些本质上属于微分性质的要点：
+
+\backmatter
+\chapter*{核查记录与下一断点}
+本批已连续覆盖（8.6）之后、（8.7）之前的全部正文，没有跳过其中的图式或证明。原脚注35--39保留，公式(a)、(b)、$(b_1)$ 的字母编号保留。确定的修订分别写入正文并在脚注给出原写法和理由；尚未辨认的原字没有假装辨认完成。
+
+对概形论证明的独立核查包括：正合列的源靶、对偶Euler列、法模与余法模的区别、射影化约定、$(1,0)$ 与 $(1,1)$ 扭转的区别。为核实“机械性的验证”，可在局部平凡化下写 $\phi=\sum_i a_i u_i$。相对于 $P^\vee$ 作微分时，$a_i$ 为常量，所以 $d\phi=\sum_i a_i\,du_i$；在 $Y$ 上关系 $\sum_i a_i u_i=0$ 使 $L\to E_Z$ 经由Euler列的核分解，而复合到 $\Omega^1_{X/S}$ 正给出上式。这是译校补充验证，不冒称原稿展开了这一步。
+
+\textbf{限制：}未对照原法文手稿；没有在本批审定第16节的全部定义或定理（8.7）之后的结果。旧独立批次中的所有历史疑点并未自动回溯修订，亦未合并到第七版工程。
+
+\textbf{下一断点：}底本第28页的标题“Theorem 8.7.”及其(a)项。本批最后一句为“We shall first of all recall the essential points differential in nature of the situation studied here”。下次从定理标题开始，不再重复本批未编号预备论证。
+\end{document}

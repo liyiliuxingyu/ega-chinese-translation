@@ -1,0 +1,20 @@
+{
+  "batch": 93,
+  "this_french_pages": [
+    19,
+    20,
+    21
+  ],
+  "this_english_pages": [
+    15,
+    16
+  ],
+  "this_from": "法19下部推论4.4",
+  "this_through": "法21第5节5.1末；英16的5.2前",
+  "french_contiguous_through": "法21第5节5.1末",
+  "next": "法21／英16的5.2；预查F/O误认、零概形／Cartier及法22(5.3)平坦只在(a)",
+  "merge_into_1158_done": false,
+  "double_count_as_new_translation": false,
+  "formal_EGA_IV_1": "另线221提要 / 223定义1.1.1",
+  "unverified": "AQT未识别；未独立证明任意底上4.4(a)及像维数版本的可构造性；删段4.6未强行拼接；法全卷尚未校完"
+}

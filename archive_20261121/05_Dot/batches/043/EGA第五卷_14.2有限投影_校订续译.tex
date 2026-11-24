@@ -1,0 +1,27 @@
+\documentclass[openany,fontset=fandol]{ctexbook}
+\usepackage{amsmath,amssymb}
+\usepackage[unicode,hidelinks]{hyperref}
+\newcommand{\note}[1]{\footnote{译注：#1}}
+\begin{document}
+\title{代数几何基础第五卷预备笔记\\推论14.2：有限投影}
+\author{据用户上传英译编辑稿译出}
+\date{2026年11月18日}
+\maketitle
+\chapter*{范围与校订状态}
+本批从底本第56页推论14.2标题接续，完整译入跨第57页的陈述与证明，止于“since it is dominant”。下一处为第57页推论14.3标题。
+
+本批保留有限与拟有限两种情形的对应关系，补出底本漏写的态射字母$f$，统一投影记号。底本对有限性和优势性的简短论证照译，不将14.1的残缺证明宣称为已经修复，也不补造原稿未写出的证明步骤。全部旧待核保持，未合并主稿。
+\chapter*{§14 锥投影（续）}
+\noindent\textbf{推论14.2。}
+假设$X$的维数为$m$，且$f:X\to P$是有限的，分别地，是拟有限的。则态射
+\[
+p_{C_\eta}:X_{k(\eta)}\longrightarrow Q(C_\eta)
+\]
+是有限满射，分别地，是拟有限优势态射。\note{底本第56页写“and that $:X\to P$ is finite”，冒号前漏去态射名称；按本节固定态射补为$f$。跨页的“respectively quasi-finite”与结论“finite surjective (resp. quasi-finite dominant)”分别对应，不能把两种结论合并成拟有限时也满射。底本的$P_{C_\eta}$、$p_{C_\eta}$统一为小写$p_{C_\eta}$。“优势”表示像稠密，不等于满射。}
+
+事实上，这个态射是拟有限的；又因为
+\[
+\dim X_{k(\eta)}=\dim Q(C_\eta),
+\]
+所以它是优势态射。若$f$是有限的，则$p_{C_\eta}$也是有限的，因而固有；既然它是优势的，便是满射。\note{以上为底本完整的证明文字，其开头的拟有限性和“若$f$有限则$p_{C_\eta}$有限”均未在本段展开论证。目标$Q(C_\eta)$由第54页识别为$m$维射影空间；“固有且优势，故满射”使用固有态射像闭这一事实。这里并未重新审定前述拟有限性、有限性及等维推论所需的全部条件，尤其不据本推论的简短引用消除14.1(b)陈述和证明的缺文。}
+\end{document}

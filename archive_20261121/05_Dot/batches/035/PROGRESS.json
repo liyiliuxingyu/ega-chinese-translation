@@ -1,0 +1,14 @@
+{
+  "completed": "底本第53页注13.4(c)全文，含编排建议、有限点集邻域断言及证明说明",
+  "next": "第53页13.4(d): By proceeding as explained in 7.1",
+  "previous_project": "libfile_fde3_f-7331e5dad08c81919eea1f8f76b80df6_49ac57203c0c81918f3630f0324dcb35",
+  "source_sha256": "23a20ef32fd16a1bd623c0c08ac080d04fc94f248de12133b713a19d6b0330d9",
+  "merged_into_main": false,
+  "pdf_pages": 3,
+  "unresolved": [
+    "原稿七问号缺词未恢复",
+    "闭点与k-有理点的过渡未展开，未补造下降证明",
+    "推广断言及定理13.2未独立验证",
+    "8.8缺文、8.7(c)残缺和全部旧待核保持"
+  ]
+}

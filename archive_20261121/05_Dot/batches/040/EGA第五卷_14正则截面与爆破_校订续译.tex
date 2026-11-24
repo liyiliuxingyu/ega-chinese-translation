@@ -1,0 +1,42 @@
+\documentclass[openany,fontset=fandol]{ctexbook}
+\usepackage{amsmath,amssymb}
+\usepackage[unicode,hidelinks]{hyperref}
+\newcommand{\note}[1]{\footnote{译注：#1}}
+\begin{document}
+\title{代数几何基础第五卷预备笔记\\§14：正则截面与爆破}
+\author{据用户上传英译编辑稿译出}
+\date{2026年11月18日}
+\maketitle
+\chapter*{范围与校订状态}
+本批从底本第55页“Grosso modo (roughly speaking)”接续，跨第56页，译至命题14.1之前的“We find:”为止。下一处为第56页命题14.1标题与陈述。
+
+保留维数比较句中的交叠条件和不明措辞；中心在$X$上的逆像与基变换按类型校订并说明。原文对正则性、爆破和纤维性质的引用均译入，但本批不构成对其适用范围的独立验证，也不预先把尚未陈述的平坦性当作已证结论。全部旧待核保持；未合并主稿。
+\chapter*{§14 锥投影（续）}
+粗略地说，假设$f$是一个浸入，那么一般锥投影的性质，会因假设$\dim X\geq m$还是$\dim X\leq m$而大不相同，另见$\dim X<m$。\note{底本跨页原句为“according as to whether we assume $\dim X\geq m$ or $\dim X\leq m$ see $\dim<m$”。两个范围在等号处交叠，“see”的确切连接关系亦不明。正文保留这些比较式，不擅将其中一个不等号改成严格不等号，也不猜补等维情形的分类。末个维数补写对象$X$，依据是同一句前两项。}
+以下考虑与$\operatorname{Grass}^{m+1}(P)$的一般点$\eta$对应的$C_\eta\subset P_{k(\eta)}$，而不再把所得结果逐一解释成关于“几乎所有点……”的说法。
+
+首先，我们已在5.3中指出（第12节对一般情形作了补述），$C$与$X$正则相交。更确切、也更一般地，对于$X$上的每个拟凝聚层$F$，在$X_{k(\eta)}$上定义中心逆像的那个秩为$m+1$的局部自由模的截面$\varphi(m+1)$，是相对于$F_{k(\eta)}$正则的；其零点子概形为$f_{k(\eta)}^{-1}(C_\eta)$。\note{底本写“the section $\varphi(m+1)$ ... over $X_{k(\eta)}$ whose scheme of zeros $\eta$ is $C$, is $F$-regular”。但该截面位于$X_{k(\eta)}$上，而$C_\eta$是$P_{k(\eta)}$中的中心，所以其零点对象应为中心的逆像；紧后爆破中心也明确使用$f^{-1}(C_\eta)$。正文据此订正，并将$F$的基变换写明。原文游离的“$\eta$”不另解释成一个零点子概形。记号$\varphi(m+1)$照存，不擅改为幂。对于任意拟凝聚层的正则性断言及所引5.3、12节的条件，尚未在本批独立逐项验证。}
+
+由10.2，例如可知，态射
+\[
+\widetilde X(C_\eta)\longrightarrow X_{k(\eta)}
+\]
+将$\widetilde X(C_\eta)$等同于沿
+\[
+f_{k(\eta)}^{-1}(C_\eta)
+=X_{k(\eta)}\times_{P_{k(\eta)}}C_\eta
+\]
+爆破$X_{k(\eta)}$所得到的预概形。\note{底本这里混用$\widetilde X(C_\eta)$与$X(C_\eta)$，按前文简化记号的建议，两者均指关联空间，本批统一排作$\widetilde X(C_\eta)$。原式“$X_P\,x\,C_\eta$”按纤维积整理，并补齐基变换。正文保存“由10.2”的原引用，不将这次记号整理说成已经重新证明爆破识别。}
+
+\newpage
+在$\dim f(X)\leq m$的情形，还有$f_{k(\eta)}^{-1}(C_\eta)=\varnothing$，因而
+\[
+\widetilde X(C_\eta)\xrightarrow{\ \sim\ }X_{k(\eta)}
+\]
+是同构（事实上，此时受限锥投影本来就定义在整个$X_{k(\eta)}$上）。\note{底本此处简写$f^{-1}(C)=\phi$及“over all of $X$”。因中心在一般点的剩余域上，正文补写基变换并将空集记为$\varnothing$；不声称一般中心本身已在原基域$k$上定义。}
+于是出现了态射
+\[
+p_c:\widetilde X(C_\eta)\longrightarrow Q(C_\eta)
+\]
+的纤维维数问题，并得到这一态射的平坦性［此断言待核］。我们得到：\note{底本写“and we find the flatness of this morphism. We find:”。此句是后续命题的引导，尚未在这里给出平坦性的精确假设或结论。正文保留原作者“得到平坦性”的断言并显式标待核，不把它当作本批已经验证的无条件平坦性定理。}
+\end{document}

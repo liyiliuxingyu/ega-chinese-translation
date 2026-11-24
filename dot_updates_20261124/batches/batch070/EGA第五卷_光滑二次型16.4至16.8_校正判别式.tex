@@ -1,0 +1,82 @@
+\documentclass[openany,fontset=fandol]{ctexbook}
+\usepackage{amsmath,amssymb}
+\usepackage[unicode,hidelinks]{hyperref}
+\setlength{\emergencystretch}{2em}
+\newcommand{\OO}{\mathcal O}
+\DeclareMathOperator{\Sym}{Sym}
+\begin{document}
+\title{代数几何基础第五卷预备笔记\\17.16　光滑二次型：16.4--16.8}
+\author{据法文扫描和英译编辑稿互校续译}
+\date{2026年11月21日}
+\maketitle
+\chapter*{范围与接续}
+本批为§§16.4--16.8 全文，从标准二次型到校正判别式的直和公式。英译物理第79--80页，法文扫描物理第162--164页。正文使用经校核的式子，原稿异文和理由见脚注；另加的论证集中标为译校说明。下一处是定理16.9（英译物理第80页，法文扫描物理第164页）。本批尚未并入合订本。
+
+\chapter*{17.16　光滑二次型（续）}
+\noindent\textbf{16.4.}\quad 以下研究主要是为了给出16.2未覆盖情形中的二次型光滑性判据，也就是，在特征为$2$的域上考虑奇数维向量空间的情形。此时，$E^\vee$上的每个二次型$Q$都是退化的；但容易看出，它仍可能光滑，例如下文的标准型。
+
+对每个正整数$n$，在$\mathbb Z^n$上引入\emph{标准二次型}$Q_n$，它是关于$n$个变量$X_1,\ldots,X_n$的整系数二次型。分两种情形\footnote{英译末项写成一次项$X_{2m+1}$；法文扫描右缘截断，无法辨认该项是否保留平方。二次齐次性及16.5对最后一维极化块的计算均要求平方。奇数情形$m=0$时，前面的配对和为空和。}：
+\begin{align*}
+\text{(a)}\ n=2m:\quad
+Q_{2m}(X_1,\ldots,X_{2m})&=\sum_{i=1}^{m}X_{2i-1}X_{2i},\\
+\text{(b)}\ n=2m+1:\quad
+Q_{2m+1}(X_1,\ldots,X_{2m+1})&=Q_{2m}(X_1,\ldots,X_{2m})+X_{2m+1}^2 .
+\end{align*}
+
+
+\noindent\textbf{引理16.5.}\quad 设$n$为奇正整数。考虑$n$个变量的普遍二次型
+\[
+Q(X_1,\ldots,X_n)=\sum_i a_i X_i^2+\sum_{i<j}b_{ij}X_iX_j,
+\]
+其中系数$a_i,b_{ij}$为不定元，故其判别式$d(Q)$是关于这些不定元的整系数多项式。这个多项式的\emph{含量}等于$2$，也就是说，它的各个系数的最大公因数为$2$。
+
+先证明含量是$2$的倍数。这就是说，多项式的系数模$2$化简后所得的多项式恒为零。在特征$2$的域上，奇数维的二次型总是退化，因而判别式为零；将此应用于模$2$的普遍系数环的分式域，就得到所需的多项式恒等式\footnote{法文扫描仍排有否定词 \emph{pas}，但前文所要证明的恰是模$2$后恒为零，英译也是如此。两底本的“奇数次”在这里均指变量数为奇数；二次型并非奇次齐次式。仅在$\mathbb F_2$的有限个赋值上为零，并不足以推出多项式恒等为零。}。
+
+要证明含量恰为$2$，只需计算$n$变量标准型的判别式。一方面，这个值必为含量的倍数；另一方面，在本节的极化约定下，每个配对块的判别式为$-1$，最后一维平方块的判别式为$2$。因此偶数维标准型的判别式是$(-1)^m$，奇数维的则是$2(-1)^m$。\footnote{两底本在此忽略标准型行列式的符号，写成偶数维为$1$、奇数维为$2$。用16.1的极化行列式，配对块的矩阵为$\left(\begin{smallmatrix}0&1\\1&0\end{smallmatrix}\right)$，行列式为$-1$。符号不影响含量。} 因此可以引入
+\[
+\widetilde d(Q)=\tfrac12 d(Q)
+\]
+这个关于$Q$的系数的多项式，其系数仍为整数。于是把$a_i,b_{ij}$取为任意环$A$中的元素，亦即给定一个$A$上的$n$变量二次型时，$\widetilde d$便有确定的值。
+
+我们把$\widetilde d(Q)$称为“$n$变量普遍二次型$Q$的校正判别式多项式”；在任意环$A$上以二次型$q$的系数代入而得的值，称为“二次型$q$的校正判别式”。更一般地，从16.5直接得出下列命题。
+
+\noindent\textbf{命题16.6.}\quad 对于任一预概形$S$、其上有限秩局部自由模$E$以及二次型$Q\in\Gamma(S,\Sym^2 E)$，可以且只能以一种方式赋予$Q$一个$(\det E)^{\otimes2}$的截面$\widetilde d(Q)$，使之满足：
+\begin{enumerate}
+\renewcommand{\labelenumi}{(\alph{enumi})}
+\item 与基变换相容，并且关于$E$的同构具函子性；
+\item 若$E$处处为偶秩，则$\widetilde d(Q)=d(Q)$，其中$d(Q)$为$Q$的判别式；
+\item 若$E$处处为奇秩，则$2\widetilde d(Q)=d(Q)$。\footnote{法文扫描在$\widetilde d(Q)$之后有一个像上标$2$的记号；英译不含这个上标。两个截面同属$(\det E)^{\otimes2}$，真正平方将落在$(\det E)^{\otimes4}$；并且16.5已经给出普遍恒等式。故正文不取平方。}
+\end{enumerate}
+
+注意：如果不同时（甚至不先）陈述关于同构的函子性，就不宜陈述与基变换相容的性质，因为$E$上的基变换本身只确定到同构为止。若把情形限于$E=\OO_S^n$，情况便不同；但这样做并不便于引用。
+
+\noindent\textbf{定义16.7.}\quad $(\det E)^{\otimes2}$的截面$\widetilde d(Q)$称为二次型$Q$的\emph{校正判别式}。
+
+\noindent\textbf{推论16.8.}\quad 设$Q,Q'$分别是与$E,E'$对应的二次型，且$E$和$E'$各自的秩的奇偶性在$S$上恒定。在行列式线丛的自然识别下\footnote{法文写直和$\oplus$，英译误排为$\otimes$。在(b)中两底本均写系数$2$。两奇秩相加为偶秩，故左侧取普通行列式；右侧两奇秩块各有一个因子$2$，乘积是$4$。例如在$\mathbb Z$上取$Q=X^2$、$Q'=Y^2$，两块各自的校正判别式为1，而直和的判别式为4。}：
+\begin{align*}
+\text{(a) 若两者不都是奇秩，}\qquad
+\widetilde d(Q\oplus Q')&=\widetilde d(Q)\widetilde d(Q'),\\
+\text{(b) 若两者都是奇秩，}\qquad
+\widetilde d(Q\oplus Q')&=4\widetilde d(Q)\widetilde d(Q').
+\end{align*}
+
+核验可直接由分块行列式得到。现在可以陈述本节的主要结论。
+
+\section*{译校说明（非原文）}
+\begingroup\small
+\paragraph{整系数多项式与特征2。}
+令$R=\mathbb Z[a_i,b_{ij}]$。极化矩阵$B$的对角线为$2a_i$，对称的非对角元为$b_{ij}$。$R/2R$是整环；其分式域中的$B$是奇阶交替矩阵，秩为偶数，故$\det B=0$，再由单射回到$R/2R$。因此$\det B$的每个整数系数都可除以2。先在$R$中除系数，再代入目标环；这不是在特征2的环中对$d(q)$的值做除法。校正值在特征2仍可能非零。比如
+\[
+Q=aX^2+bY^2+cZ^2+dXY+eXZ+fYZ
+\quad\Longrightarrow\quad
+\widetilde d(Q)=4abc-af^2-be^2-cd^2+def .
+\]
+模2后，右侧为$Q(f,e,d)$。取$Q=X^2+YZ$，整系数普通、校正判别式分别为$-2,-1$，到特征2后分别为$0,1$。现代术语参见 \href{https://doi.org/10.2140/ant.2018.12.99}{Dolgachev--Duncan，命题2.1--2.2、注2.3--2.4及例2.5}；该文明确引用本附录，称特征2的奇秩不变量为\emph{半判别式}，并记录\emph{半行列式}这一名称。
+
+\paragraph{从普遍矩阵到线丛截面。}
+以$G$表示坐标变换，$B\mapsto G^{\mathsf T}BG$，故$d\mapsto(\det G)^2d$。奇秩时，在无整数挠的普遍换基环$R[G_{ij},(\det G)^{-1}]$中消去因子2，之后再特化，由此得到$\widetilde d$的同一换基律。因此局部计算确实粘合为$(\det E)^{\otimes2}$的截面。唯一性也先在无整数挠的普遍系数环中由$2\widetilde d=d$得到，再由基变换推广；在一个固定的含2挠环中，仅有该等式并不决定$\widetilde d$。
+
+\paragraph{直和与系数。}
+普通判别式在直和下相乘。偶与偶相加，两侧均为普通判别式的乘积；一奇一偶相加，在普遍系数环中从两侧消去一个2，再特化；奇与奇相加，左侧为普通判别式，因而两个因子2都保留。三种情况均适用于任意基底，不要求2可逆。
+\par\endgroup
+\end{document}

@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+set -euo pipefail
+ROOT="$(cd "$(dirname "$0")/.." && pwd)"
+python3 "$ROOT/06_工具与环境/verify_package.py" "$ROOT"
+python3 "$ROOT/01_当前工程/EGA_内容顺序合订第十六版/checks/check_structure.py"
+if command -v qpdf >/dev/null 2>&1; then
+  qpdf --check "$ROOT/02_当前成品/代数几何基础_按内容顺序合订本_第十六版.pdf"
+  qpdf --check "$ROOT/02_当前成品/代数几何基础_第十六版译校核查报告.pdf"
+fi

@@ -1,0 +1,14 @@
+{
+  "completed": "底本48页末 It remains, therefore, to prove a lemma 起至49页定义13.1全文及原脚注63",
+  "next": "第49页 Theorem 13.2 (M. Artin)",
+  "previous_project": "libfile_fde3_f-d77ba3e54554819183f73a3022c6bc8a_49ac57203c0c81918f3630f0324dcb35",
+  "source_sha256": "23a20ef32fd16a1bd623c0c08ac080d04fc94f248de12133b713a19d6b0330d9",
+  "merged_into_main": false,
+  "pdf_pages": 4,
+  "unresolved": [
+    "12节末几何不可约性引理残句及itou标记",
+    "末句Z足够一般未擅改C",
+    "Milne与SGA IV具体引用未定位",
+    "此前缺文及待核保留"
+  ]
+}

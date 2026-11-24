@@ -1,0 +1,37 @@
+§13 Elementary morphisms and the Theorem of M. Artin
+Deﬁnition 13.1.
+A morphism f: X →Y of prescheme is called an “elementary mor-
+phism” if X is Y -isomorphic to a prescheme of the form X′ −Z where X′ →Y is a smooth
+projective morphism with geometrically connected ﬁbers of dimension one and where Z
+is closed sub-prescheme of X′ such that the morphism Z →Y is ´etale surjective and of
+constant degree. A morphism is called polyelementary if it is a composition of elementary
+morphisms. A prescheme X over a ﬁeld k is called polyelementary (over k) if the structural
+morphism X →Spec(k) is poly-elementary.63
+Theorem 13.2 (M. Artin).
+Let X be a geometrically irreducible prescheme over a ﬁeld k, perfect and inﬁnite,
+x a smooth point of X then x admits a fundamental system of open polyelementary
+neighborhoods.
+Replacing X by a given neighborhood of x, it is enough to prove that there exists an
+open elementary neighborhood of x in X (??? Is that last letter correct?; illegible).
+Arguing by induction on the dimension n of X, we are reduced to proving that if n > 0
+then there exists an open neighborhood U of x and an elementary morphism f: U →V ,
+V being a smooth scheme over k (necessarily geometrically irreducible and of dimension
+n −1). (The case n = 0 is evidently trivial given that then X is isomorphic to Spec(k)
+which is polyelementary over Spec(k) taking into account the fact that in 13.1 we do not
+exclude the compsoition of the empty family of morphisms.) We should mention it in
+one way or another in 13.1. The necessity to assume that k is ﬁrst of all perfect appears
+already in the case n = 1 where we take for X′ the projective normal canonical model of
+the function ﬁeld K of X (cf. Chap II, Par. 7)64 the fact that k is perfect insures that X′
+is smooth over k (since X′ is in every case regular) and it also insures that Z = X′ −X
+with the induced reduced structure is ´etale over k. Let us now treat the general case so
+that it is permissible to assume n ≥2.
+We may obviously suppose that X is aﬃne, therefore quasi-projective. Further by
+replacing X by a projective closure we may assume that X is projective always under the
+reservation to prove that every neighborhood contains an open neighborhood U that allows
+an elementary morphism U →V . Also, replacing X by its normalization (ﬁnite over X,
+therefore projective, ref)65 which does not change the neighborhood of x, we may assume
+tht X is normal; therefore, k being perfect, geometrically normal over k.
+63Reminder to Blass: ask Artin about terminology. cf. p. 117 Milne and SGA IV [Tr]
+64EGA II, Yes 7.4 [Tr]
+65EGA II, I think [Tr]
+49

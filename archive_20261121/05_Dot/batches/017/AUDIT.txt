@@ -1,0 +1,6 @@
+2026-11-15 21:00 scheduled batch.
+Actual source PDF printed p40 visually checked; SHA256 matches prior project.
+Coverage: all decipherable Proposition10.3 plus following author proof-status paragraph, no omission within batch.
+Independent second reader found no substantive mistranslation or omission; notation disambiguation explicit; ??? not guessed.
+Two XeLaTeX runs success. Four pages rendered and visually inspected. No missing characters, undefined references, overfull boxes or warnings found. Sparse page4 follows ctexbook default pagination; legible and unclipped.
+This is translation QA, not an independent proof of Proposition10.3.

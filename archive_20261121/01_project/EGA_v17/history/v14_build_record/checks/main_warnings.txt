@@ -1,0 +1,305 @@
+LaTeX Font Warning: Font shape `U/rsfs/m/n' in size <10.53937> not available
+(Font)              size <10.95> substituted on input line 18.
+
+
+Underfull \hbox (badness 3965) in paragraph at lines 27--27
+
+Underfull \hbox (badness 3965) in paragraph at lines 27--27
+[]|\TU/FandolSong-Regular(0)/m/n/10.53937 第 三 卷 第 一 部 分
+ []
+
+
+
+Underfull \hbox (badness 3965) in paragraph at lines 28--28
+[]|\TU/FandolSong-Regular(0)/m/n/10.53937 第 三 卷 第 二 部 分
+ []
+
+
+
+Underfull \hbox (badness 3965) in paragraph at lines 29--29
+[]|\TU/FandolSong-Regular(0)/m/n/10.53937 第 四 卷 第 一 部 分
+ []
+
+
+
+LaTeX Font Warning: Font shape `U/rsfs/m/n' in size <7.52812> not available
+(Font)              size <8> substituted on input line 86.
+
+
+
+
+Underfull \vbox (badness 1132) has occurred while \output is active []
+
+
+
+[13]
+
+Underfull \hbox (badness 3514) in paragraph at lines 4446--4453
+\TU/FandolSong-Regular(0)/m/n/10.53937 等 同 于 $[][]\OT1/cmr/m/n/10.53937 (\OML/c
+mm/m/it/10.53937 L; N\OT1/cmr/m/n/10.53937 )$ \TU/FandolSong-Regular(0)/m/n/10.
+53937 的 子 模。|  在 这 个 等 同 下，| $[][]\OT1/cmr/m/n/10.53937 (\OML/cmm/m/it/10.53937
+ M; \U/euf/m/n/10.53937 J[]\OML/cmm/m/it/10.53937 N\OT1/cmr/m/n/10.53937 )$ \TU
+
+Underfull \hbox (badness 2698) in paragraph at lines 4460--4464
+[]\TU/FandolSong-Regular(0)/m/n/10.53937 为 证 明 第 二 个 断 言，|  注 意 当 $\OML/cmm/m/i
+t/10.53937 j \OMS/cmsy/m/n/10.53937 ^^T \OML/cmm/m/it/10.53937 i$ \TU/FandolSon
+g-Regular(0)/m/n/10.53937 时，| $[][]\OT1/cmr/m/n/10.53937 (\OML/cmm/m/it/10.5393
+7 M; \U/euf/m/n/10.53937 J[]\OML/cmm/m/it/10.53937 N\OT1/cmr/m/n/10.53937 )$ \T
+
+Underfull \hbox (badness 1286) in paragraph at lines 1891--1891
+[]\TU/FandolSong-Regular(0)/m/n/10.53937 等 于  |（\TU/lmr/m/n/10.53937 12.1.7.1\T
+U/FandolSong-Regular(0)/m/n/10.53937 ）|  与  |（\TU/lmr/m/n/10.53937 12.1.7.3\TU/
+FandolSong-Regular(0)/m/n/10.53937 ）|  之 复 合；|  而 后 者 即 $[][]\OT1/cmr/m/n/10.53
+937 (\OML/cmm/m/it/10.53937 X[]; \U/rsfs/m/n/10.95 F[]\OT1/cmr/m/n/10.53937 ) \
+
+Underfull \hbox (badness 1953) in paragraph at lines 1972--1973
+[]|\TU/FandolSong-Regular(0)/m/n/10.53937 （\TU/lmr/m/n/10.53937 12.2.5.2\TU/Fan
+dolSong-Regular(0)/m/n/10.53937 ）|  的 定 义 更 简 单。|  按 定 义，| $[][]\OML/cmm/m/it/1
+0.53937 h[]\U/rsfs/m/n/10.95 F$ \TU/FandolSong-Regular(0)/m/n/10.53937 对 应 于 预 
+层 $\OML/cmm/m/it/10.53937 W \OMS/cmsy/m/n/10.53937 7!
+
+Underfull \hbox (badness 1270) in paragraph at lines 2045--2046
+[]|\TU/FandolSong-Regular(0)/m/n/10.53937 （\TU/lmr/m/n/10.53937 i\TU/FandolSong
+-Regular(0)/m/n/10.53937 ）|  由 于 $\OML/cmm/m/it/10.53937 f[]$ \TU/FandolSong-Re
+gular(0)/m/n/10.53937 在 $\U/rsfs/m/n/10.95 O[]$\TU/lmr/m/n/10.53937 -\TU/Fandol
+Song-Regular(0)/m/n/10.53937 模 范 畴 中 正 合  |（$\OT1/cmr/m/n/10.53937 0[]$\TU/Fand
+
+Underfull \hbox (badness 2521) in paragraph at lines 2065--2066
+[]\TU/FandolSong-Regular(0)/m/n/10.53937 由 此 得 到 在 同 伦 意 义 下 确 定 的 模 双 复 形 双 同 
+态 $\OT1/cmr/m/n/10.53937 ^^@(\OML/cmm/m/it/10.53937 Y; \U/rsfs/m/n/10.95 M[]\OT
+1/cmr/m/n/10.53937 ) \OMS/cmsy/m/n/10.53937 !
+ []
+
+Underfull \hbox (badness 1184) in paragraph at lines 2065--2066
+\OT1/cmr/m/n/10.53937 ^^@(\OML/cmm/m/it/10.53937 X; \U/rsfs/m/n/10.95 M[]\OT1/c
+mr/m/n/10.53937 )$\TU/FandolSong-Regular(0)/m/n/10.53937 ，|  因 而 得 到 确 定 的 谱 序 
+列 态 射  |（\TU/lmr/m/n/10.53937 11.3.2\TU/FandolSong-Regular(0)/m/n/10.53937 ） ；|
+  它 就 是 所 需 的
+
+Underfull \hbox (badness 5607) in paragraph at lines 2142--2143
+[]\TU/FandolSong-Regular(0)/m/n/10.53937 取 $\U/rsfs/m/n/10.95 K[]$ \TU/FandolSo
+ng-Regular(0)/m/n/10.53937 的 内 射 \TU/lmr/m/n/10.53937 Cartan–Eilenberg \TU/Fand
+olSong-Regular(0)/m/n/10.53937 解 消 $\U/rsfs/m/n/10.95 L[]$\TU/FandolSong-Regula
+r(0)/m/n/10.53937 ，|  及 三 重 复 形
+
+Underfull \hbox (badness 2005) in paragraph at lines 2628--2629
+[]\TU/FandolSong-Regular(0)/m/n/10.53937 还 可 以 假 设 此 系 统 严 格。|  事 实 上，|  由 同 构 
+ |（\TU/lmr/m/n/10.53937 13.7.1.1\TU/FandolSong-Regular(0)/m/n/10.53937 ） ，| $\O
+ML/cmm/m/it/10.53937 A[] \OMS/cmsy/m/n/10.53937 '
+ []
+
+Underfull \hbox (badness 2359) in paragraph at lines 36--38
+[]\TU/FandolSong-Regular(0)/m/n/10.53937 沿 用  |（\TU/lmr/m/n/10.53937 17.2.1\TU/
+FandolSong-Regular(0)/m/n/10.53937 ）|  的 记 号，|  只 须 证 明 $\OML/cmm/m/it/10.53937
+ C$ \TU/FandolSong-Regular(0)/m/n/10.53937 内 射。|  对 任 意 $\OML/cmm/m/it/10.53937
+ A$\TU/lmr/m/n/10.53937 -\TU/FandolSong-Regular(0)/m/n/10.53937 模 $\OML/cmm/m/i
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+[221]
+
+Underfull \vbox (badness 6268) has occurred while \output is active []
+
+
+
+[322]
+
+LaTeX Font Warning: Font shape `U/rsfs/m/n' in size <15.05624> not available
+(Font)              size <14.4> substituted on input line 3.
+
+
+
+
+Underfull \hbox (badness 1014) in paragraph at lines 202--205
+[]|\TU/FandolSong-Regular(0)/m/n/10.53937 （\TU/lmr/m/n/10.53937 ii\TU/FandolSon
+g-Regular(0)/m/n/10.53937 ）|  仍 可 先 把 $\OML/cmm/m/it/10.53937 k[]$ \TU/FandolSo
+ng-Regular(0)/m/n/10.53937 换 成 $\OML/cmm/m/it/10.53937 k[]\OT1/cmr/m/n/10.53937
+ (\OML/cmm/m/it/10.53937 K[]\OT1/cmr/m/n/10.53937 )$\TU/FandolSong-Regular(0)/m
+
+Underfull \hbox (badness 2310) in paragraph at lines 507--516
+[]\TU/FandolSong-Regular(0)/m/n/10.53937 事 实 上，|  考 虑 典 范 同 态 $\OML/cmm/m/it/10
+.53937 v \OMS/cmsy/m/n/10.53937 7! \OT1/cmr/m/n/10.53937 ^^@(\OML/cmm/m/it/10.5
+3937 v\OT1/cmr/m/n/10.53937 )$\TU/FandolSong-Regular(0)/m/n/10.53937 ，|  它 将 $[
+][]\OT1/cmr/m/n/10.53937 ([]\OML/cmm/m/it/10.53937 ; []\OT1/cmr/m/n/10.53937 )$
+
+Underfull \hbox (badness 3780) in paragraph at lines 507--516
+[][]\OT1/cmr/m/n/10.53937 (^^@([])\OML/cmm/m/it/10.53937 ; \OT1/cmr/m/n/10.5393
+7 ^^@([]))$\TU/FandolSong-Regular(0)/m/n/10.53937 ；|  由 定 理  |（[]\TU/lmr/m/n/10
+.53937 1.3.7[]\TU/FandolSong-Regular(0)/m/n/10.53937 ） ，|  后 一 个 模 典 范 地 等 同 于
+ []
+
+Underfull \hbox (badness 1509) in paragraph at lines 1129--1130
+[]\TU/FandolSong-Regular(0)/m/n/10.53937 为 简 便 起 见，|  当 说 到 仿 射 概 形 $[]\OT1/cmr
+/m/n/10.53937 (\OML/cmm/m/it/10.53937 A\OT1/cmr/m/n/10.53937 )$ \TU/FandolSong-
+Regular(0)/m/n/10.53937 时，|  始 终 是 指 赋 环 空 间
+ []
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+[429]
+
+Underfull \hbox (badness 3965) in paragraph at lines 2001--2003
+[]\TU/FandolSong-Regular(0)/m/n/10.53937 在 不 致 混 淆 时，|  此 结 果 也 可 表 述 为 在 典 范 同
+ 构 意 义 下 的 等 式
+ []
+
+
+Underfull \hbox (badness 1924) in paragraph at lines 3348--3351
+[]\TU/FandolSong-Regular(0)/m/n/10.53937 根 据  |（[]\TU/lmr/m/n/10.53937 3.4.3[]\
+TU/FandolSong-Regular(0)/m/n/10.53937 ） ，|  取 任 意 $\OML/cmm/m/it/10.53937 T$\TU
+/lmr/m/n/10.53937 -\TU/FandolSong-Regular(0)/m/n/10.53937 预 概 形 $\OML/cmm/m/it/
+10.53937 Z$\TU/FandolSong-Regular(0)/m/n/10.53937 ，|  将 $\OML/cmm/m/it/10.53937
+
+Underfull \hbox (badness 1038) in paragraph at lines 3498--3502
+\TU/FandolSong-Regular(0)/m/n/10.53937 也 交 换。|  由 $\OML/cmm/m/it/10.53937 g[] \
+OT1/cmr/m/n/10.53937 = \OML/cmm/m/it/10.53937 g[]$\TU/FandolSong-Regular(0)/m/n
+/10.53937 ，| $[]\OT1/cmr/m/n/10.53937 (\OML/cmm/m/it/10.53937 k\OT1/cmr/m/n/10.
+53937 (\OML/cmm/m/it/10.53937 y\OT1/cmr/m/n/10.53937 ))$ \TU/FandolSong-Regular
+
+Underfull \hbox (badness 1231) in paragraph at lines 2846--2848
+[][][]\TU/FandolSong-Regular(0)/b/n/10.53937 推 论  |（\TU/lmr/bx/n/10.53937 4.2.6
+\TU/FandolSong-Regular(0)/b/n/10.53937 ）|  \TU/FandolSong-Regular(0)/m/n/10.539
+37 假 设 每 个 可 逆 $\U/rsfs/m/n/10.95 O[]$\TU/lmr/m/n/10.53937 -\TU/FandolSong-Regu
+lar(0)/m/n/10.53937 模 都 平 凡  |（\TU/lmr/m/n/10.53937 I\TU/FandolSong-Regular(0)/
+
+Underfull \vbox (badness 4168) has occurred while \output is active []
+
+
+
+[626]
+
+Underfull \hbox (badness 1845) in paragraph at lines 3292--3296
+\TU/FandolSong-Regular(0)/m/n/10.53937 事 实 上，| $\OML/cmm/m/it/10.53937 Z[]$ \TU
+/FandolSong-Regular(0)/m/n/10.53937 是 $\OML/cmm/m/it/10.53937 Z$ \TU/FandolSong
+-Regular(0)/m/n/10.53937 的 仿 射 开 集，|  因 而 把 $\U/rsfs/m/n/10.95 J\OT1/cmr/m/n/10
+.53937 (\OML/cmm/m/it/10.53937 n\OT1/cmr/m/n/10.53937 )$ \TU/FandolSong-Regular
+
+Underfull \hbox (badness 4024) in paragraph at lines 3384--3385
+[]\TU/FandolSong-Regular(0)/m/n/10.53937 对 最 后 两 项 断 言，|  使 用 这 里 $\OML/cmm/m/i
+t/10.53937 ^^[[]$ \TU/FandolSong-Regular(0)/m/n/10.53937 为 恒 等 同 态 这 一 事 实，|  以
+ 及
+ []
+
+Underfull \hbox (badness 1565) in paragraph at lines 5398--5400
+[][][]\TU/FandolSong-Regular(0)/b/n/10.53937 命 题  |（\TU/lmr/bx/n/10.53937 8.1.7
+\TU/FandolSong-Regular(0)/b/n/10.53937 ）|  \TU/FandolSong-Regular(0)/m/n/10.539
+37 设 $\OML/cmm/m/it/10.53937 Y$ \TU/FandolSong-Regular(0)/m/n/10.53937 为 预 概 形，
+| $\U/rsfs/m/n/10.95 J$ \TU/FandolSong-Regular(0)/m/n/10.53937 为 $\U/rsfs/m/n/1
+
+Underfull \hbox (badness 1365) in paragraph at lines 6368--6369
+[]\TU/FandolSong-Regular(0)/m/n/10.53937 证 明 \TU/lmr/m/n/10.53937 (ii) \TU/Fand
+olSong-Regular(0)/m/n/10.53937 时，|  可 归 结 于 $\OML/cmm/m/it/10.53937 Y$ \TU/Fand
+olSong-Regular(0)/m/n/10.53937 仿 射，|  因 而 $\U/rsfs/m/n/10.95 S \OT1/cmr/m/n/10.
+53937 = []$\TU/FandolSong-Regular(0)/m/n/10.53937 ，|  其 中 $\OML/cmm/m/it/10.539
+
+Underfull \hbox (badness 1275) in paragraph at lines 69--71
+\TU/FandolSong-Regular(0)/m/n/10.53937 对 应 于 上 链 $\OML/cmm/m/it/10.53937 g[]$\T
+U/FandolSong-Regular(0)/m/n/10.53937 ，|  令 $\OML/cmm/m/it/10.53937 g[]\OT1/cmr/
+m/n/10.53937 (\OML/cmm/m/it/10.53937 j[]; [] ; j[]\OT1/cmr/m/n/10.53937 ) = \OM
+L/cmm/m/it/10.53937 "m[]$\TU/FandolSong-Regular(0)/m/n/10.53937 ；|  这 里 严 格 递 增
+
+Underfull \hbox (badness 6592) in paragraph at lines 585--587
+[]\TU/FandolSong-Regular(0)/m/n/10.53937 按 定 义  |（\TU/lmr/m/n/10.53937 II\TU/Fa
+ndolSong-Regular(0)/m/n/10.53937 ，| \TU/lmr/m/n/10.53937 2.5.2\TU/FandolSong-Re
+gular(0)/m/n/10.53937 ） ，| $\OT1/cmr/m/n/10.53937 ^^@(\OML/cmm/m/it/10.53937 U[
+]; []\OT1/cmr/m/n/10.53937 ) = (\OML/cmm/m/it/10.53937 M[]\OT1/cmr/m/n/10.53937
+
+Underfull \vbox (badness 1194) has occurred while \output is active []
+
+
+
+[785]
+
+Underfull \hbox (badness 1521) in paragraph at lines 1276--1277
+\TU/FandolSong-Regular(0)/m/n/10.53937 都 是 有 限 型 分 次 $\OML/cmm/m/it/10.53937 S$
+\TU/lmr/m/n/10.53937 -\TU/FandolSong-Regular(0)/m/n/10.53937 模。|  故 对 于 带 自 然 滤
+ 过 $\OML/cmm/m/it/10.53937 A$\TU/lmr/m/n/10.53937 -\TU/FandolSong-Regular(0)/m/
+n/10.53937 模 结 构 的 严 格 射 影 系
+
+Underfull \hbox (badness 1178) in paragraph at lines 236--240
+\TU/FandolSong-Regular(0)/m/n/10.53937 表 示 这 一 谱 函 子 的 终 值，|  称 为 两 个 复 形 的 \TU
+/FandolSong-Regular(0)/b/n/10.53937 整 体 超 \TU/lmr/bx/n/10.53937 Tor\TU/FandolSo
+ng-Regular(0)/m/n/10.53937 。|  当 两 个 复 形
+ []
+
+Underfull \hbox (badness 2564) in paragraph at lines 236--240
+\TU/FandolSong-Regular(0)/m/n/10.53937 只 在 第 零 项 非 零 时，|  写 作 $[][]\OT1/cmr/m/n
+/10.53937 (\OML/cmm/m/it/10.53937 X[]; X[]\OT1/cmr/m/n/10.53937 ; \U/rsfs/m/n/1
+0.95 F[]\OML/cmm/m/it/10.53937 ; \U/rsfs/m/n/10.95 F[]\OT1/cmr/m/n/10.53937 )$\
+TU/FandolSong-Regular(0)/m/n/10.53937 。|  依 一 般 约 定，|
+
+Underfull \hbox (badness 2027) in paragraph at lines 241--242
+[]\TU/FandolSong-Regular(0)/m/n/10.53937 记 此 有 理 系 数 多 项 式 为 $[]\OT1/cmr/m/n/10
+.53937 (\OML/cmm/m/it/10.53937 f; \U/rsfs/m/n/10.95 P[]\OT1/cmr/m/n/10.53937 ; 
+\OML/cmm/m/it/10.53937 y\OT1/cmr/m/n/10.53937 )$ \TU/FandolSong-Regular(0)/m/n/
+10.53937 或 $[]\OT1/cmr/m/n/10.53937 (\U/rsfs/m/n/10.95 P[]\OT1/cmr/m/n/10.53937
+
+Underfull \hbox (badness 1430) in paragraph at lines 74--77
+[]\TU/lmr/m/n/9.03374 J.-P. Serre\TU/FandolSong-Regular(0)/m/n/9.03374 ：| \TU/l
+mr/m/n/9.03374 Sur la dimension homologique des anneaux et des modules
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 150--151
+[]|\TU/lmr/m/n/9.03374 0\TU/FandolSong-Regular(0)/m/n/9.03374 ，| \TU/lmr/m/n/9.
+03374 7.2.3 \TU/FandolSong-Regular(0)/m/n/9.03374 及
+ []
+
+
+Underfull \hbox (badness 1342) in paragraph at lines 699--704
+\TU/lmr/m/n/9.03374 avec les conditions générales d’utilisation ([]$[][][][] []
+ [] [] [][][] [] [][][][][][] [] [][][] [] [][][][][] [] [][][]$[]).
+ []
+
+
+Underfull \hbox (badness 1194) in paragraph at lines 49--50
+\TU/FandolSong-Regular(0)/b/n/10.53937 译 者 说 明。|  \TU/FandolSong-Regular(0)/m/n
+/10.53937 本 部 分 原 著 新 增 的 参 考 文 献 为 \TU/lmr/m/n/10.53937 [27] |\TU/FandolSong-R
+egular(0)/m/n/10.53937 —| \TU/lmr/m/n/10.53937 [29]\TU/FandolSong-Regular(0)/m/
+n/10.53937 ，|  编 号 承 接 此 前
+
+Underfull \hbox (badness 10000) in paragraph at lines 20--21
+[]|\TU/lmr/m/n/10.53937 6.6.8\TU/FandolSong-Regular(0)/m/n/10.53937 ；| \TU/lmr/
+m/n/10.53937 6.7.1\TU/FandolSong-Regular(0)/m/n/10.53937 ；|
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 48--49
+[]|\TU/lmr/m/n/10.53937 6.6.2\TU/FandolSong-Regular(0)/m/n/10.53937 ；| \TU/lmr/
+m/n/10.53937 6.6.8\TU/FandolSong-Regular(0)/m/n/10.53937 ；|
+ []
+
+
+Underfull \hbox (badness 1478) in paragraph at lines 18--19
+[][][][]$[]\TU/lmr/m/n/9.03374 ), implique l’accord avec les conditions général
+es d’utilisation
+ []
+
+
+Underfull \hbox (badness 1478) in paragraph at lines 30--34
+[][][][]$[]\TU/lmr/m/n/9.03374 ), implique l’accord avec les conditions général
+es d’utilisation
+ []
+
+
+Underfull \hbox (badness 2717) in paragraph at lines 9--10
+[]\TU/lmr/m/it/10.53937 Alexandre Grothendieck’s EGA V. Translation and Editing
+ of
+ []
+
+
+Underfull \hbox (badness 3417) in paragraph at lines 9--10
+\TU/lmr/m/it/10.53937 his ‘prenotes’\TU/FandolSong-Regular(0)/m/n/10.53937 ，|  
+英 译 及 编 辑 \TU/lmr/m/n/10.53937 Piotr Blass\TU/FandolSong-Regular(0)/m/n/10.5393
+7 、| \TU/lmr/m/n/10.53937 Joseph Blass\TU/FandolSong-Regular(0)/m/n/10.53937 。|
+  用 户 文 件：|
+
+LaTeX Font Warning: Size substitutions with differences
+(Font)              up to 0.65625pt have occurred.
+
+ ) 
+Here is how much of TeX's memory you used:

@@ -1,0 +1,295 @@
+\subsection{局部诺特环的情形}
+\source{第三卷第二部分，原印刷第58--60页}
+
+\egap{7.5.1}
+设 $A$ 是局部诺特环，$\mathfrak m$ 为其极大理想。对每个 $A$-模 $M$，以 $\widehat M$ 表示关于 $\mathfrak m$-预进制拓扑的分离完备化，即
+\[
+ \widehat M\simeq\varprojlim_n\bigl(M\otimes_A(A/\mathfrak m^{n+1})\bigr)
+ =\varprojlim_n M/\mathfrak m^{n+1}M.
+\]
+设 $T:\mathbf{Ab}_A\to\mathbf{Ab}$ 为协变加性函子。典范同态（7.2.3.1）
+\[
+ T(M)\otimes_A(A/\mathfrak m^{n+1})\longrightarrow
+ T\bigl(M\otimes_A(A/\mathfrak m^{n+1})\bigr)
+\]
+组成 $A$-线性同态的射影系，取极限便得到关于 $M$ 函子性的 $A$-线性同态
+\begin{equation}
+ \widehat{T(M)}\longrightarrow\varprojlim_n T(M_n),
+ \qquad M_n=M\otimes_A A_n,\quad A_n=A/\mathfrak m^{n+1}.
+ \tag{7.5.1.1}
+\end{equation}
+
+\egas{7.5.2}{命题}
+设 $A$ 为极大理想 $\mathfrak m$、剩余域 $k=A/\mathfrak m$ 的局部诺特环。设 $T:\mathbf{Ab}_A\to\mathbf{Ab}$ 为协变加性、半正合且与归纳极限交换的函子。假设对每个有限型 $A$-模 $M$，$T(M)$ 有限型且（7.5.1.1）为同构。那么下列性质等价：
+\begin{enumerate}[label=\alph*)]
+\item $T$ 右正合。
+\item 对每个 $n$，$N\mapsto T(N)$ 在有限型 $A_n$-模范畴中右正合；也就是说，$T$ 在有限长度 $A$-模范畴中右正合。
+\item 典范同态 $T(\varepsilon):T(A)\to T(k)$ 满射。
+\item 对一切充分大的 $n$，典范同态 $T(A_n)\to T(k)$ 满射。
+\end{enumerate}
+a) 蕴含 b)。证明 b) 蕴含 a)：若 $u:M\to N$ 为满射，须证 $T(u)$ 满射。因 $T$ 与归纳极限交换，且模的滤过归纳极限正合，可归结为 $M,N$ 有限型。此时 $T(M),T(N)$ 有限型，且 $A$ 局部诺特，故只须证明其完备化 $\widehat{T(u)}$ 满射（$0_{\mathrm I}$，7.3.5、6.4.1）。依假设，它是同态系 $T(u\otimes1_{A_n}):T(M_n)\to T(N_n)$ 的射影极限。由 b)，各同态满射；又 $T(M_n)$ 为阿廷环 $A_n$ 上的有限型模，所以极限同态满射（0，13.1.2、13.2.2）。
+
+a) 蕴含 c)；因 $T(\varepsilon)$ 分解为 $T(A)\to T(A_n)\to T(k)$，c) 蕴含 d)。最后，由（7.2.7）及 $T$ 的半正合性，b)、d) 等价。
+
+\egas{7.5.3}{推论}
+在（7.5.2）的一般假设下，若 $T(k)=0$，则对每个 $A$-模 $M$，$T(M)=0$。
+
+$k$ 是唯一的简单 $A$-模，由（7.3.5.4），每个有限长度模 $E$ 都满足 $T(E)=0$。当 $M$ 有限型时，$\widehat{T(M)}\simeq\varprojlim T(M_n)=0$；因 $T(M)$ 有限型，它同构于自身完备化的子模（$0_{\mathrm I}$，7.3.5），故为零。任意 $M$ 是其有限型子模 $N_\lambda$ 的滤过归纳极限，所以 $T(M)=\varinjlim T(N_\lambda)=0$。
+
+\egas{7.5.4}{命题}
+设 $A$ 为极大理想 $\mathfrak m$、剩余域 $k$ 的局部诺特环，$T_\bullet:\mathbf{Ab}_A\to\mathbf{Ab}$ 为与归纳极限交换的同调函子。假设对每个 $i$ 和每个有限型 $A$-模 $M$，$T_i(M)$ 有限型且典范同态 $\widehat{T_i(M)}\to\varprojlim T_i(M_n)$ 为双射。给定整数 $p$，下列条件等价：
+\begin{enumerate}[label=\alph*)]
+\item $T_p$ 正合。
+\item $T_p$ 右正合，且 $T_p(A)$ 自由。
+\item $T_{p+1}(A)\to T_{p+1}(k)$ 和 $T_p(A)\to T_p(k)$ 均满射。
+\item 对每个 $n$，$T_{p+1}(A_n)\to T_{p+1}(k)$ 和 $T_p(A_n)\to T_p(k)$ 均满射。
+\item 对每个 $n$，$N\mapsto T_p(N)$ 在有限型 $A_n$-模范畴中正合。
+\end{enumerate}
+由（7.3.3），a) 等价于 $T_{p+1},T_p$ 均右正合。限制到 $A_n$-模范畴后仍为同调函子，故如（7.3.1）的论证，e) 等价于这两个函子在有限型 $A_n$-模范畴中均右正合。由（7.5.2）得 a)、e) 等价，也得到 a)、c)、d) 等价。有限型平坦模在局部环上自由（Bourbaki，\textit{Alg. comm.}，第II章，§3，第2目，命题5推论2），因此 a)、b) 的等价性由（7.3.1）和（7.3.3）得到。
+
+\egas{7.5.5}{推论}
+在（7.5.4）的一般条件下：
+\begin{enumerate}[label=(\roman*)]
+\item 若 $T_p(k)=0$，则 $T_p=0$，$T_{p+1}$ 右正合，$T_{p-1}$ 左正合。
+\item 若 $T_{p-1}(k)=T_{p+1}(k)=0$，则 $T_p$ 正合，典范同态 $T_p(A)\otimes_A M\to T_p(M)$ 为双射，且 $T_p(A)$ 为自由 $A$-模。
+\end{enumerate}
+因 $T_p$ 半正合，（i）由（7.5.3）及同调函子定义得到。（ii）的前两断言来自（i）及（7.3.3）；自由性由（7.5.4）得到。
+
+\egas{7.5.6}{推论}
+在（7.5.4）的一般假设下，再设 $A$ 为离散赋值环。
+\begin{enumerate}[label=(\roman*)]
+\item $T_p$ 右正合当且仅当 $T_{p-1}(A)$ 自由。
+\item $T_p$ 正合当且仅当 $T_p(A),T_{p-1}(A)$ 均自由。
+\end{enumerate}
+由（7.3.3），（i）蕴含（ii）。为证（i），取极大理想的生成元 $f$，即一致化元。有限型 $A$-模 $M$ 自由（等价于平坦）当且仅当乘以 $f$ 的同态单射，因为这里也等价于 $M$ 无挠（$0_{\mathrm I}$，6.3.4）。短正合列 $0\to A\xrightarrow{f}A\to k\to0$ 给出
+\[
+ T_p(A)\longrightarrow T_p(k)\longrightarrow T_{p-1}(A)
+ \xrightarrow{f}T_{p-1}(A).
+\]
+所以 $T_{p-1}(A)$ 自由当且仅当 $T_p(A)\to T_p(k)$ 满射，再用（7.5.2）即可。
+
+\egas{7.5.7}{注记}
+由（7.4.7），（7.4.4）的一般假设使（7.4.1.1）定义的同调函子满足（7.5.4）的一般条件。在此情形，（7.5.6）已包含于（7.4.3）。
+
+\subsection{正合性的下降；半连续性定理与 Grauert 正合性判据}
+\source{第三卷第二部分，原印刷第60--65页}
+
+\egas{7.6.1}{命题}
+在（7.4.1）的条件下，设 $B$ 为交换 $A$-代数。若 $T_p$ 右正合（分别左正合、正合），则 $T_p^{(B)}$ 亦然；当 $B$ 在 $A$ 上忠实平坦时，逆命题成立。
+
+第一断言是（7.1.3）的特殊情形。反之，先假设 $B$ 平坦。对任一 $A$-模 $M$，有
+\[
+ H_\bullet(P_\bullet\otimes_A(M\otimes_A B))
+ \simeq H_\bullet(P_\bullet\otimes_A M)\otimes_A B,
+\]
+亦即典范同构
+\begin{equation}
+ T_p(M)\otimes_A B\simeq T_p^{(B)}(M_{(B)}).\tag{7.6.1.1}
+\end{equation}
+若 $T_p^{(B)}$ 具有所述正合性，因 $M\mapsto M_{(B)}$ 正合，左边关于 $M$ 也具有该正合性；若 $B$ 忠实平坦，即推出 $T_p$ 同样正合（$0_{\mathrm I}$，6.4.1）。
+
+\egas{7.6.2}{命题}
+在（7.4.1）的条件下，再设 $A$ 为约化诺特环，各 $P_i$ 有限型。则 $T_p$ 右正合（分别左正合、正合）当且仅当对每个为离散赋值环的 $A$-代数 $B$，$T_p^{(B)}$ 具有同一正合性。
+
+由（7.3.1）、（7.3.3），只须考虑右正合；且只须证明充分性（7.6.1）。由（7.4.2），只须说明 $Z'_{p-1}(P_\bullet)$ 平坦。它为有限型模，由（0，10.2.8）的判据，只须对每个离散赋值 $A$-代数 $B$，证明 $Z'_{p-1}(P_\bullet)\otimes_A B$ 平坦。又
+\[
+ Z'_{p-1}(P_\bullet)\otimes_A B=Z'_{p-1}(P_\bullet\otimes_A B),
+\]
+$P_\bullet\otimes_A B$ 由平坦 $B$-模组成（$0_{\mathrm I}$，6.2.1），且对 $B$-模 $N$ 有 $T_p^{(B)}(N)=H_p((P_\bullet\otimes_A B)\otimes_B N)$。再用（7.4.2），所需平坦性正是 $T_p^{(B)}$ 右正合。
+
+下面仔细考察离散赋值环的情形。
+
+\egas{7.6.3}{命题}
+在（7.4.1）的条件下，设 $A$ 为维数1的正则诺特环；也就是说，$A$ 诺特且每个局部环 $A_x$ 是域或离散赋值环。那么对任一整数 $p$ 和任一 $A$-模 $M$，有关于 $M$ 函子性的典范短正合列
+\begin{equation}
+ 0\longrightarrow T_p(A)\otimes_A M\xrightarrow{t_M}T_p(M)
+ \longrightarrow\Tor_1^A(T_{p-1}(A),M)\longrightarrow0.
+ \tag{7.6.3.1}
+\end{equation}
+以下省略 $H_p(P_\bullet),B_p(P_\bullet),Z_p(P_\bullet),Z'_p(P_\bullet)$ 中的 $P_\bullet$。有三条短正合列
+\[
+\begin{gathered}
+ 0\to H_p\to Z'_p\to B_{p-1}\to0,\\
+ 0\to B_{p-1}\to Z_{p-1}\to H_{p-1}\to0,\\
+ 0\to Z_{p-1}\to P_{p-1}\to B_{p-2}\to0.
+\end{gathered}
+\]
+因 $P_{p-1},P_{p-2}$ 平坦，它们的子模 $B_{p-1},Z_{p-1},B_{p-2}$ 也平坦：在每个 $A_x$ 上，平坦与无挠等价。张量 $M$ 后得到
+\begin{align}
+ 0=\Tor_1^A(B_{p-1},M)&\longrightarrow H_p\otimes M\longrightarrow Z'_p\otimes M
+ \xrightarrow{u}B_{p-1}\otimes M\longrightarrow0,\tag{7.6.3.2}\\
+ 0=\Tor_1^A(Z_{p-1},M)&\longrightarrow\Tor_1^A(H_{p-1},M)
+ \longrightarrow B_{p-1}\otimes M\xrightarrow{v}Z_{p-1}\otimes M,\tag{7.6.3.3}\\
+ 0=\Tor_1^A(B_{p-2},M)&\longrightarrow Z_{p-1}\otimes M
+ \xrightarrow{w}P_{p-1}\otimes M.\tag{7.6.3.4}
+\end{align}
+依定义，$T_p(M)=\Ker(d_p\otimes1)/\Im(d_{p+1}\otimes1)$，也就是诱导同态 $Z'_p\otimes M\to P_{p-1}\otimes M$ 的核。该同态分解为
+\[
+ Z'_p\otimes M\xrightarrow{u}B_{p-1}\otimes M
+ \xrightarrow{v}Z_{p-1}\otimes M\xrightarrow{w}P_{p-1}\otimes M.
+\]
+由（7.6.3.4），$w$ 单射，故有 $0\to\Ker u\to T_p(M)\to\Ker v\to0$。结合（7.6.3.2）、（7.6.3.3）以及 $H_p=T_p(A)$，正是（7.6.3.1）。
+
+\egas{7.6.4}{注记}
+（i）$H_\bullet(P_\bullet\otimes_A M)$ 是把 $M$ 置于次数0后得到的双复形的同调；因此由（6.3.6）、（6.3.2），它是初始项为
+\[
+ E^2_{pq}=\Tor_p^A(H_q(P_\bullet),M)=\Tor_p^A(T_q(A),M)
+\]
+的正则谱序列的终项。关于 $A$ 的假设使 $p\geq2$ 时任意模 $E,F$ 满足 $\Tor_p^A(E,F)=0$（$0_{\mathrm{IV}}$，17.2.2）；因此有短正合列（M，XV）
+\[
+ 0\longrightarrow E^2_{0p}\longrightarrow H_p(P_\bullet\otimes M)
+ \longrightarrow E^2_{1,p-1}\longrightarrow0,
+\]
+这就是（7.6.3.1）。
+
+（ii）结合（7.3.1），（7.6.3.1）以（7.4.3）为特殊情形。
+
+\egas{7.6.5}{推论}
+在（7.4.1）的条件下，设 $A$ 为离散赋值环，分式域为 $K$，剩余域为 $k$，各 $T_i(A)$ 有限型。那么
+\begin{equation}
+ \dim_kT_p(k)\geq\dim_k(T_p(A)\otimes_A k)
+ \geq\rk_A T_p(A)=\dim_KT_p(K).\tag{7.6.5.1}
+\end{equation}
+两个极端项相等，当且仅当 $T_p$ 正合；也等价于 $T_p(A),T_{p-1}(A)$ 均自由。
+
+在（7.6.3.1）中取 $M=k$，得到
+\[
+ \dim_kT_p(k)=\dim_k(T_p(A)\otimes_A k)
+ +\dim_k\Tor_1^A(T_{p-1}(A),k).
+\]
+又因 $T_p(A)$ 为局部整环上的有限型模，有（Bourbaki，\textit{Alg. comm.}，第II章，§3，第2目，命题4推论1）
+\begin{equation}
+ \dim_k(T_p(A)\otimes_A k)\geq\rk_A T_p(A)
+ =\dim_K(T_p(A)\otimes_A K),\tag{7.6.5.2}
+\end{equation}
+且等号成立当且仅当 $T_p(A)$ 自由（同处，命题7）。由于 $K$ 平坦，有 $T_p(A)\otimes_A K=H_p(P_\bullet)\otimes_A K=H_p(P_\bullet\otimes_A K)=T_p(K)$。因此得到（7.6.5.1）。极端相等还要求 $\Tor_1^A(T_{p-1}(A),k)=0$，这等价于 $T_{p-1}(A)$ 自由（0，10.1.3）。最后，有限型模的平坦与自由在这里等价，再用（7.4.3）即可。
+
+\egap{7.6.6}
+仍沿用（7.4.1）的假设；对每个 $x\in\Spec A$，置
+\begin{equation}
+ d_p(x)=d_p^T(x)=\dim_{k(x)}T_p(k(x)).\tag{7.6.6.1}
+\end{equation}
+
+\egas{7.6.7}{引理}
+设 $\varphi:A\to A'$ 为环同态，$f={}^a\varphi:\Spec A'\to\Spec A$ 为相应映射（I，1.2.1）。若 $T'_\bullet=T_\bullet^{(A')}$，则
+\begin{equation}
+ d_p^{T'}=d_p^T\circ f.\tag{7.6.7.1}
+\end{equation}
+事实上，取 $x'\in\Spec A'$，置 $x=f(x')$。由于 $k(x')$ 在 $k(x)$ 上平坦，
+\[
+ \begin{aligned}
+ H_\bullet(P_\bullet\otimes_A k(x'))
+ &=H_\bullet((P_\bullet\otimes_A k(x))\otimes_{k(x)}k(x'))\\
+ &=H_\bullet(P_\bullet\otimes_A k(x))\otimes_{k(x)}k(x'),
+ \end{aligned}
+\]
+故有（7.6.7.1）。
+
+\egas{7.6.8}{引理}
+若 $A$ 诺特且 $P_\bullet$ 各项有限型，则 $x\mapsto d_p(x)$ 是 $\Spec A$ 上的可构造函数。
+
+须证：对 $X=\Spec A$ 的每个不可约闭集 $Y$，存在 $Y$ 的非空开集 $U$，使 $d_p$ 在 $U$ 恒定（0，9.2.2）。写 $Y=\Spec(A/\mathfrak a)$，其中 $A/\mathfrak a$ 约化。由（7.6.7），可归结为 $Y=X$ 且 $A$ 诺特整；再用（7.4.5）。
+
+\egas{7.6.9}{定理}
+设 $A$ 为诺特环，$P_\bullet$ 为有限型平坦 $A$-模复形，$T_\bullet(M)=H_\bullet(P_\bullet\otimes_A M)$。置 $d_p(x)=\dim_{k(x)}T_p(k(x))$。则：
+\begin{enumerate}[label=(\roman*)]
+\item $d_p$ 在 $\Spec A$ 上可构造且上半连续。
+\item 若 $T_p$ 正合，则 $d_p$ 连续，因而局部恒定；当 $A$ 约化时，逆命题成立。
+\end{enumerate}
+（i）的可构造性已经由（7.6.8）证明。由（0，9.2.4），为证上半连续，只须对 $x$ 的一般化 $x'\ne x$ 证明 $d_p(x')\leq d_p(x)$。存在离散赋值环 $B$ 及态射 $f:\Spec B\to\Spec A$，将闭点 $a$ 送到 $x$，泛点 $b$ 送到 $x'$（II，7.1.9）。由（7.6.7.1），归结为 $d_p^{T^{(B)}}(a)\geq d_p^{T^{(B)}}(b)$，这正是（7.6.5.1）。
+\orig{将（i）的证明归结为离散赋值环情形这一思想，由 Hironaka 告知我们。}
+
+（ii）的第一断言已经在（7.3.4）证明。反之，使用赋值判据（7.6.2）和（7.6.7.1），可归结为 $A$ 是离散赋值环。此时 $\Spec A$ 只有两个点，$d_p$ 恒定便由（7.6.5）给出 $T_p$ 正合。
+
+\egas{7.6.10}{推论}
+设 $A$ 为诺特环，$\mathfrak p_i$（$1\leq i\leq r$）为其极小素理想，$k_i=k(\mathfrak p_i)$。
+\begin{enumerate}[label=(\roman*)]
+\item 对任意 $x\in\Spec A$，至少存在一个 $i$ 使
+\begin{equation}
+ d_p^T(x)\geq\dim_{k_i}T_p(k_i).\tag{7.6.10.1}
+\end{equation}
+特别地，若 $A$ 整、$K$ 为其分式域，则
+\begin{equation}
+ d_p^T(x)\geq\dim_KT_p(K)\qquad(x\in\Spec A).\tag{7.6.10.2}
+\end{equation}
+\item 再设 $A$ 局部且约化，$k$ 为其剩余域。则 $T_p$ 正合当且仅当
+\begin{equation}
+ \dim_kT_p(k)=\dim_{k_i}T_p(k_i)\qquad(1\leq i\leq r).
+ \tag{7.6.10.3}
+\end{equation}
+\end{enumerate}
+（i）由上半连续性及每个 $x$ 的邻域含有某个极小素点得到。另一方面，若 $A$ 局部，极大理想在 $\Spec A$ 中唯一的开邻域就是全空间，因此 $d_p(x)\leq\dim_kT_p(k)$。结合（i），（7.6.10.3）使 $d_p$ 恒定，于是（7.6.9，（ii））给出正合性；必要性同样由该定理得到。
+
+\egas{7.6.11}{注记}
+可以问，（7.6.9，（i））能否加强为对每个 $x$ 都有
+\begin{equation}
+ \dim_{k(x)}T_p(k(x))\geq
+ \dim_{k(x)}(T_p(A)\otimes_A k(x)).\tag{7.6.11.1}
+\end{equation}
+当 $A$ 为离散赋值环且 $x$ 是其极大理想时，这确由（7.6.5）成立。只考虑局部诺特环 $A$，极大理想为 $\mathfrak m$、剩余域为 $k$。以下条件等价：
+
+\noindent a) 对每个有限型平坦 $A$-模复形 $P_\bullet$ 及每个整数 $p$，有
+\begin{equation}
+ \dim_kT_p(k)\geq\dim_k(T_p(A)\otimes_A k).\tag{7.6.11.2}
+\end{equation}
+\noindent b) 对每个有限型 $A$-模 $M$，有
+\begin{equation}
+ \dim_k(M\otimes_A k)\geq\dim_k(M^\vee\otimes_A k).
+ \tag{7.6.11.3}
+\end{equation}
+\noindent c) 对每个有限型 $A$-模 $N$，有
+\begin{equation}
+ \dim_k\Tor_1^A(N,k)\geq\dim_k\Tor_2^A(N,k).
+ \tag{7.6.11.4}
+\end{equation}
+由维数移位（M，V，7.2），c) 也等价于对所有 $i\geq1$ 有
+\begin{equation}
+ \dim_k\Tor_i^A(N,k)\geq\dim_k\Tor_{i+1}^A(N,k).
+ \tag{7.6.11.5}
+\end{equation}
+
+简述证明。为证 a) 蕴含 b)，取正合列 $L_1\xrightarrow{d}L_0\to M\to0$，其中 $L_0,L_1$ 有限型自由；将 a) 用于双项复形 $P_1\xrightarrow{{}^td}P_0$，其中 $P_0=L_1^\vee$，$P_1=L_0^\vee$，其余项为零。此时 $T_1(A)=M^\vee$，且
+\[
+ T_1(k)=\Hom_A(M,k)=\Hom_k(M/\mathfrak mM,k),
+\]
+所以它与 $M\otimes_A k$ 有相同维数。为证 b) 蕴含 c)，先证明下述引理。
+
+\egas{7.6.11.6}{引理}
+给定平坦 $A$-模复形 $\cdots\to0\to P_1\xrightarrow{d}P_0\to0\to\cdots$，有正合列
+\begin{equation}
+ 0\to\Tor_2^A(Z'_0,k)\to T_1(A)\otimes_A k\to T_1(k)
+ \to\Tor_1^A(Z'_0,k)\to0.\tag{7.6.11.7}
+\end{equation}
+事实上，从 $0\to Z_1\to P_1\to B_0\to0$ 得到
+\[
+ 0\to\Tor_1^A(B_0,k)\to Z_1\otimes k\to P_1\otimes k
+ \to B_0\otimes k\to0.
+\]
+从 $0\to B_0\to Z_0\to Z'_0\to0$，因 $Z_0=P_0$ 平坦，得到 $\Tor_1^A(B_0,k)\simeq\Tor_2^A(Z'_0,k)$。又 $Z_1=T_1(A)$。同态 $d\otimes1$ 分解为
+\[
+ P_1\otimes k\xrightarrow{u}B_0\otimes k\xrightarrow{v}Z_0\otimes k=P_0\otimes k.
+\]
+若 $R=\Ker v$，则 $T_1(k)=u^{-1}(R)$，且由 $u$ 满射，$R=u(T_1(k))$；由 $v$ 的定义，$R=\Tor_1^A(Z'_0,k)$。这就得到（7.6.11.7）。
+
+现在由 b) 推出 c)。取有限型自由表示 $L_1\xrightarrow{d}L_0\to N\to0$，令 $T$ 对应于由 $L_1,L_0$ 构成的双项复形。因它们等于其双对偶，若 $M=\Coker({}^td)$，则 $T_1(A)=\Ker d=M^\vee$；而 $M\otimes_A k=\Coker({}^td\otimes1)$ 与 $\Ker(d\otimes1)=T_1(k)$ 有相同的 $k$-维数。b) 因而给出
+\[
+ \dim_k(T_1(A)\otimes_A k)\leq\dim_kT_1(k).
+\]
+此时 $Z'_0=N$，所以（7.6.11.7）给出（7.6.11.4）。
+
+最后，由 c) 推出 a)。将（7.6.11.6）用于双项 $P_p\to P_{p-1}$，对其余核应用 c)，得到 $\dim_kR\geq\dim_kS$，其中
+\[
+ R=\Ker(P_p\otimes k\to P_{p-1}\otimes k),\qquad S=Z_p\otimes k.
+\]
+将 $d_{p+1}$ 分解为 $P_{p+1}\xrightarrow{u}Z_p\xrightarrow{j}P_p$；则
+\[
+ \Im(d_{p+1}\otimes1)=(j\otimes1)(\Im(u\otimes1)),\qquad
+ T_p(A)\otimes k=(Z_p\otimes k)/\Im(u\otimes1),
+\]
+而 $T_p(k)=R/\Im(d_{p+1}\otimes1)$，故得到（7.6.11.2）。
+
+设局部环 $A$ 正则且维数为 $n$。已知 [17] 给出 $\Tor_i^A(k,k)\simeq\bigwedge^i(\mathfrak m/\mathfrak m^2)$；因此当 $n\geq4$ 时，取 $N=k$ 即不满足（7.6.11.4）。另一方面，若局部整环 $A$ 上每个有限型自反模都自由（二维正则局部环具有此性质），则（7.6.11.3）成立：原文使用有限型模的对偶 $M^\vee$ 自反这一事实，从而它自由，于是若 $K$ 为分式域，
+\[
+ \dim_k(M^\vee\otimes k)=\dim_K(M^\vee\otimes K)=\dim_K(M\otimes K).
+\]
+又 $M\otimes_A k$ 的每组 $k$-基都来自 $M$ 的一组生成元（Bourbaki，\textit{Alg. comm.}，第II章，§3，第2目，命题4推论2），所以 $\dim_K(M\otimes K)\leq\dim_k(M\otimes k)$，从而得出所述断言。

@@ -1,0 +1,1 @@
+独立续译，未合并主稿。底本58页推论14.6后整段至页末图式。进度见PROGRESS.json。安装含ctex和Fandol的TeX Live后执行build.sh。

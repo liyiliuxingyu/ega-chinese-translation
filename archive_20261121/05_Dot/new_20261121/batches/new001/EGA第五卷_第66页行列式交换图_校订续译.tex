@@ -1,0 +1,29 @@
+\documentclass[openany,fontset=fandol]{ctexbook}
+\usepackage{amsmath,amssymb,tikz-cd}
+\usepackage[unicode,hidelinks]{hyperref}
+\setlength{\emergencystretch}{2em}
+\newcommand{\note}[1]{\unskip\nobreak\footnote{译注：#1}}
+\begin{document}
+\title{代数几何基础第五卷预备笔记\\第66页：行列式交换图}
+\author{据用户上传英译编辑稿译出}
+\date{2026年11月19日}
+\maketitle
+\chapter*{范围与接合状态}
+本批从合并英文底本第66页“we have the commutativity of the diagram”之后的图开始，完整译出符号保留说明及随后零点子概形、交模的一段，止于“the intersection of $P$ and $Q$ in $M$”。下一起点仍在第66页：“It remains only to completely clarify the particularly described situation with $X/Y/S$”。
+
+本批接第十七版短篇末端，不重译其已经包含的第62页注4(d)、命题5等内容。第二篇的“§16”对应短篇V.1（原IV.16），不是第一篇拟定目录中的第16节。本批为独立增补文件，尚未合并第十七版正文或累计报告。
+
+为阅读图式，沿用前文：$P,Q$为$M$中的局部直和因子，秩分别为$p,q$，$M$的秩为$m$，且$p+q=m+1$；$L=\det P\otimes\det Q\otimes(\det M)^{-1}$。这一段仅为接合提示，不计为新译范围。
+\chapter*{行列式图式及其结论（续）}
+\[
+\begin{tikzcd}[row sep=large,column sep=large]
+P \arrow[r] & M \\
+\det P\otimes\det Q\otimes(\det M)^{-1}=L
+\arrow[u,"a"] \arrow[r,"b"] & Q \arrow[u]
+\end{tikzcd}
+\]
+（可能相差一个符号；这或许取决于定义所用某些典范同构时采用的约定，而这些约定决定符号的选取……。）\note{图中的两条未标号箭头为子模到$M$的包含，$a:L\to P$、$b:L\to Q$的方向与底本相同。原文明确保留“possibly”“perhaps”及省略号，因此此处不擅自固定正负号，也不声称在未指定行列式同构约定时两条复合严格相等。即使相差$-1$，以下零点理想结论不变。底本图内明确写$\det M^{-1}$，即$(\det M)^{-1}$；这也与第十七版前段所作类型订正一致。}
+
+因此，$V(a)$与$V(b)$是相同的零点子概形，因为$P$与$Q$在$M$中局部为直和因子。\note{底本原句为“the ideals $V(a)$ and $V(b)$ are identical”，混用了理想与零点对象的记号。这里将$V(a),V(b)$按上下文写为零点子概形；对应的零点理想相等，而不仅是底层点集相等。局部平凡化$L$后，包含$P\to M$有局部左逆，故一个$P$中向量在$P$内的坐标生成理想，与其在$M$中生成的坐标理想相同；$Q$同理。两条复合相差至多一个符号，遂给出相同理想。本说明是对原文理由的展开，并非另加新的全局符号约定。}
+注意，在不属于$V(a)=V(b)$的点处，$L$恰可认同于$P$与$Q$在$M$中的交。\note{这里通过图中到$M$的复合来认同$L$的像；相差符号不会改变这个像。此断言只在共同零点子概形的补集上使用，不声称$L$在整个底空间上都等于交模。}
+\end{document}

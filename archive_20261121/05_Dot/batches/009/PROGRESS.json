@@ -1,0 +1,11 @@
+{
+  "completed": "Printed page33: Proposition8.16, Remarks8.17, unnumbered fragment and terminological note; footnote50",
+  "next": "Printed page34 Proposition8.18 heading",
+  "source_sha256": "23a20ef32fd16a1bd623c0c08ac080d04fc94f248de12133b713a19d6b0330d9",
+  "review": "Independent paragraph review passed; XeLaTeX twice; all 4 pages visually checked, no overflow or missing glyph",
+  "limitations": [
+    "8.8 assumptions unresolved",
+    "8.17 fragment retained without reconstruction",
+    "Not merged into original collection; no independent theorem certification"
+  ]
+}

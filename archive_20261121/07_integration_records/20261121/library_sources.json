@@ -1,0 +1,239 @@
+{
+  "retrieved_at_utc": "2026-11-21T08:47:54Z",
+  "sources": [
+    {
+      "name": "EGA第五卷_157_初等奇点几何变式_续译工程.zip",
+      "file_id": "file_000000002c9881f5904576bf48f70c00",
+      "library_file_id": "libfile_fde3_f-6eed07f7c2f481919384904710dfe5a9_49ac57203c0c81918f3630f0324dcb35",
+      "version_id": "0",
+      "size_bytes": 1030869,
+      "created_at": "2026-11-21T07:04:15.391430+00:00",
+      "modified_at": "2026-11-21T07:04:15.391430+00:00"
+    },
+    {
+      "name": "EGA第五卷_153至156_初等奇点局部刻画_续译工程.zip",
+      "file_id": "file_00000000180881f5abd3f160517ea939",
+      "library_file_id": "libfile_fde3_f-b1cb4e77d83081919595f972e6202314_49ac57203c0c81918f3630f0324dcb35",
+      "version_id": "0",
+      "size_bytes": 1018574,
+      "created_at": "2026-11-21T05:12:16.356426+00:00",
+      "modified_at": "2026-11-21T05:12:16.356426+00:00"
+    },
+    {
+      "name": "EGA第五卷_152初等增广与几何奇点_续译工程.zip",
+      "file_id": "file_000000008ca481f6808520deb5b26ca2",
+      "library_file_id": "libfile_fde3_f-fbda70a6eea88191bb198c88a4262b58_49ac57203c0c81918f3630f0324dcb35",
+      "version_id": "0",
+      "size_bytes": 973740,
+      "created_at": "2026-11-21T03:08:15.990095+00:00",
+      "modified_at": "2026-11-21T03:08:15.990095+00:00"
+    },
+    {
+      "name": "EGA第五卷_151光滑型与雅可比判据_续译工程.zip",
+      "file_id": "file_00000000a3f081f69f3d1226757e54b8",
+      "library_file_id": "libfile_fde3_f-f998cf939ed48191a6fb01f433982474_49ac57203c0c81918f3630f0324dcb35",
+      "version_id": "0",
+      "size_bytes": 963175,
+      "created_at": "2026-11-21T01:15:43.632966+00:00",
+      "modified_at": "2026-11-21T01:15:43.632966+00:00"
+    },
+    {
+      "name": "EGA第五卷_切超曲面与勘误_续译工程.zip",
+      "file_id": "file_00000000b80c81f68d6b72a25799dc2f",
+      "library_file_id": "libfile_fde3_f-8aa0ab59e5d4819185978138e0b7d0da_49ac57203c0c81918f3630f0324dcb35",
+      "version_id": "0",
+      "size_bytes": 980628,
+      "created_at": "2026-11-20T23:08:22.021681+00:00",
+      "modified_at": "2026-11-20T23:08:22.021681+00:00"
+    },
+    {
+      "name": "EGA第五卷_特征二与奇异术语_续译工程.zip",
+      "file_id": "file_00000000481c81f99a19c3a749177a31",
+      "library_file_id": "libfile_fde3_f-85bd4055690081919e7818984536cf0f_49ac57203c0c81918f3630f0324dcb35",
+      "version_id": "0",
+      "size_bytes": 1003313,
+      "created_at": "2026-11-20T21:04:25.508528+00:00",
+      "modified_at": "2026-11-20T21:04:25.508528+00:00"
+    },
+    {
+      "name": "EGA第五卷_光滑塔与分歧概形_续译工程.zip",
+      "file_id": "file_000000003bc881f5b381d7b3691d7674",
+      "library_file_id": "libfile_fde3_f-f578e448ebbc81919f4cf7549a4f8e1e_49ac57203c0c81918f3630f0324dcb35",
+      "version_id": "0",
+      "size_bytes": 1053890,
+      "created_at": "2026-11-20T19:02:56.404652+00:00",
+      "modified_at": "2026-11-20T19:02:56.404652+00:00"
+    },
+    {
+      "name": "EGA第五卷_二阶判别与恒秩引理_续译工程.zip",
+      "file_id": "file_0000000078b081f59e5015bfe0479199",
+      "library_file_id": "libfile_fde3_f-4693bcc2a3048191b2677ac0fece6fc7_49ac57203c0c81918f3630f0324dcb35",
+      "version_id": "1",
+      "size_bytes": 972214,
+      "created_at": "2026-11-20T17:06:16.071588+00:00",
+      "modified_at": "2026-11-20T17:07:32.169289+00:00"
+    },
+    {
+      "name": "EGA第五卷_奇异零点与外幂判别_续译工程.zip",
+      "file_id": "file_00000000efa48212a755dbdb7c6518c2",
+      "library_file_id": "libfile_fde3_f-173a5040bba08191afd98136c1ffba31_49ac57203c0c81918f3630f0324dcb35",
+      "version_id": "0",
+      "size_bytes": 1086440,
+      "created_at": "2026-11-20T14:59:14.784193+00:00",
+      "modified_at": "2026-11-20T14:59:14.784193+00:00"
+    },
+    {
+      "name": "EGA第五卷_划去稿推论10_续译工程.zip",
+      "file_id": "file_0000000096608212b6f10b49e21bfd7c",
+      "library_file_id": "libfile_fde3_f-4a38d0b3abbc8191bc7f49a3fdb4634f_49ac57203c0c81918f3630f0324dcb35",
+      "version_id": "0",
+      "size_bytes": 1145952,
+      "created_at": "2026-11-20T13:00:11.018501+00:00",
+      "modified_at": "2026-11-20T13:00:11.018501+00:00"
+    },
+    {
+      "name": "EGA第五卷_划去稿命题9_续译工程.zip",
+      "file_id": "file_0000000041008212b65c5a26a9f92312",
+      "library_file_id": "libfile_fde3_f-53ada51636f881919606564211748608_49ac57203c0c81918f3630f0324dcb35",
+      "version_id": "0",
+      "size_bytes": 1168590,
+      "created_at": "2026-11-20T11:01:19.168188+00:00",
+      "modified_at": "2026-11-20T11:01:19.168188+00:00"
+    },
+    {
+      "name": "EGA第五卷_划去稿命题8及引理_续译工程.zip",
+      "file_id": "file_0000000021cc81f5a0e01e3ec25bbdd3",
+      "library_file_id": "libfile_fde3_f-ac16ff1c64648191b5e9eb8a531691f8_49ac57203c0c81918f3630f0324dcb35",
+      "version_id": "0",
+      "size_bytes": 1164751,
+      "created_at": "2026-11-20T08:59:36.663141+00:00",
+      "modified_at": "2026-11-20T08:59:36.663141+00:00"
+    },
+    {
+      "name": "EGA第五卷_划去稿的增广定义_续译工程.zip",
+      "file_id": "file_00000000064481f5b3c5404faabd08ca",
+      "library_file_id": "libfile_fde3_f-f65ba80a5d1c8191ae25e78ba7c60aa9_49ac57203c0c81918f3630f0324dcb35",
+      "version_id": "0",
+      "size_bytes": 1173226,
+      "created_at": "2026-11-20T07:01:15.995677+00:00",
+      "modified_at": "2026-11-20T07:01:15.995677+00:00"
+    },
+    {
+      "name": "EGA第五卷_可逆模截面类比图_续译工程.zip",
+      "file_id": "file_0000000085d082128b5bf416c426de1c",
+      "library_file_id": "libfile_fde3_f-ba937f1c75f8819185633c6c8db9059e_49ac57203c0c81918f3630f0324dcb35",
+      "version_id": "0",
+      "size_bytes": 1107042,
+      "created_at": "2026-11-20T05:02:56.753157+00:00",
+      "modified_at": "2026-11-20T05:02:56.753157+00:00"
+    },
+    {
+      "name": "EGA第五卷_普通奇异零点备注_续译工程.zip",
+      "file_id": "file_00000000d79881f5b047af8dfd1ba4d8",
+      "library_file_id": "libfile_fde3_f-39693f38fca88191a921c45dd2691553_49ac57203c0c81918f3630f0324dcb35",
+      "version_id": "0",
+      "size_bytes": 1020804,
+      "created_at": "2026-11-20T03:03:50.234541+00:00",
+      "modified_at": "2026-11-20T03:03:50.234541+00:00"
+    },
+    {
+      "name": "EGA第五卷_可逆模扭曲与单位变换_续译工程.zip",
+      "file_id": "file_000000003a5082129561d418d56cbfec",
+      "library_file_id": "libfile_fde3_f-5440d4220dd08191a0710883c144b424_49ac57203c0c81918f3630f0324dcb35",
+      "version_id": "0",
+      "size_bytes": 1009338,
+      "created_at": "2026-11-20T01:05:46.766316+00:00",
+      "modified_at": "2026-11-20T01:05:46.766316+00:00"
+    },
+    {
+      "name": "EGA第五卷_非超奇异点正合列_续译工程.zip",
+      "file_id": "file_0000000010e88212b66cdf47c6fe4e8b",
+      "library_file_id": "libfile_fde3_f-6903dbd963708191ac77ccbcf5a8dde4_49ac57203c0c81918f3630f0324dcb35",
+      "version_id": "0",
+      "size_bytes": 1009487,
+      "created_at": "2026-11-19T23:03:06.239626+00:00",
+      "modified_at": "2026-11-19T23:03:06.239626+00:00"
+    },
+    {
+      "name": "EGA第五卷_行列式线丛与判别式_续译工程.zip",
+      "file_id": "file_00000000bda481f5b816fb22e42e7e69",
+      "library_file_id": "libfile_fde3_f-14999fc2b7648191b32b904ef5d1defd_49ac57203c0c81918f3630f0324dcb35",
+      "version_id": "0",
+      "size_bytes": 734374,
+      "created_at": "2026-11-19T21:01:34.947118+00:00",
+      "modified_at": "2026-11-19T21:01:34.947118+00:00"
+    },
+    {
+      "name": "EGA第五卷_第66页行列式交换图_续译工程.zip",
+      "file_id": "file_000000009a5881f588234b27e3f70afc",
+      "library_file_id": "libfile_fde3_f-b23186ec58b48191b2c39c5d682b03cb_49ac57203c0c81918f3630f0324dcb35",
+      "version_id": "0",
+      "size_bytes": 741236,
+      "created_at": "2026-11-19T18:59:00.402256+00:00",
+      "modified_at": "2026-11-19T18:59:00.402256+00:00"
+    },
+    {
+      "name": "EGA中文译校_第十七版_第五卷增补第三辑_增量包.zip",
+      "file_id": "file_0000000084b081f5a9db34b3b1dfeba1",
+      "library_file_id": "libfile_fde3_f-993d8e9b1fc48191b17608082fc76f90_49ac57203c0c81918f3630f0324dcb35",
+      "version_id": "0",
+      "size_bytes": 30152476,
+      "created_at": "2026-11-21T07:15:16.804226Z",
+      "modified_at": "2026-11-21T07:15:16.804226Z"
+    },
+    {
+      "name": "EGA中文译校_第十七版_第五卷增补第三辑_译校核查报告.tex",
+      "file_id": "file_000000006e4c81f5a774274faf4dcff4",
+      "library_file_id": "libfile_fde3_f-2e571f3f50548191b71967b3f3d7947f_49ac57203c0c81918f3630f0324dcb35",
+      "version_id": "0",
+      "size_bytes": 388484,
+      "created_at": "2026-11-21T07:15:16.803492Z",
+      "modified_at": "2026-11-21T07:15:16.803492Z"
+    },
+    {
+      "name": "EGA中文译校_第十七版_第五卷增补第三辑_译校核查报告.pdf",
+      "file_id": "file_00000000284c81f593e20593de0fe88e",
+      "library_file_id": "libfile_fde3_f-19a6f19d0ee081919db72b7fdc2ec148_49ac57203c0c81918f3630f0324dcb35",
+      "version_id": "0",
+      "size_bytes": 1484015,
+      "created_at": "2026-11-21T07:15:16.775134Z",
+      "modified_at": "2026-11-21T07:15:16.775134Z"
+    },
+    {
+      "name": "EGA中文译校_第十七版_第五卷增补第三辑_完整续作工程.zip",
+      "file_id": "file_000000005f3881f58a07f221f69bf186",
+      "library_file_id": "libfile_fde3_f-d1eaf87260e8819181df9ac2b2628f70_49ac57203c0c81918f3630f0324dcb35",
+      "version_id": "0",
+      "size_bytes": 313603196,
+      "created_at": "2026-11-21T07:15:16.774475Z",
+      "modified_at": "2026-11-21T07:15:16.774475Z"
+    },
+    {
+      "name": "EGA中文译校_第十七版_第五卷增补第三辑_合订本.tex",
+      "file_id": "file_0000000033a481f5a6bf5ef7d5854bd0",
+      "library_file_id": "libfile_fde3_f-fa92fc9af6488191a6a63d884b9e01be_49ac57203c0c81918f3630f0324dcb35",
+      "version_id": "0",
+      "size_bytes": 3025047,
+      "created_at": "2026-11-21T07:15:16.768281Z",
+      "modified_at": "2026-11-21T07:15:16.768281Z"
+    },
+    {
+      "name": "EGA中文译校_第十七版_第五卷增补第三辑_合订本.pdf",
+      "file_id": "file_00000000023081f5b7a278ac862457c9",
+      "library_file_id": "libfile_fde3_f-3be331dfe3548191a92e0ecb0028e452_49ac57203c0c81918f3630f0324dcb35",
+      "version_id": "0",
+      "size_bytes": 5706061,
+      "created_at": "2026-11-21T07:15:16.766606Z",
+      "modified_at": "2026-11-21T07:15:16.766606Z"
+    },
+    {
+      "name": "EGA中文译校_第十七版_完整续作工程包.zip",
+      "file_id": "file_00000000927481f5a6d33c8b0143813e",
+      "library_file_id": "libfile_fde3_f-f1b2141eb58c81919fef5fcc209852d1_49ac57203c0c81918f3630f0324dcb35",
+      "version_id": "0",
+      "size_bytes": 493141776,
+      "created_at": "2026-11-19T17:28:45.377928+00:00",
+      "modified_at": "2026-11-19T17:28:45.377928+00:00"
+    }
+  ]
+}

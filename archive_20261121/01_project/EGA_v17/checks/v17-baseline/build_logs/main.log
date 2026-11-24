@@ -1,0 +1,3804 @@
+This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2025/dev/Debian) (preloaded format=xelatex 2026.11.20)  20 NOV 2026 01:16
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**main.tex
+(./main.tex
+LaTeX2e <2024-11-01> patch level 2
+L3 programming layer <2025-01-18>
+(./preamble.tex
+(/workspace/scratch/a886fd56dd2f/work/EGA_v17/vendor/texmf/tex/latex/ctex/ctexb
+ook.cls
+(/workspace/scratch/a886fd56dd2f/work/EGA_v17/vendor/texmf/tex/latex/ctex/confi
+g/ctexbackend.cfg
+File: ctexbackend.cfg 2022/07/14 v2.5.10 Backend configuration file (CTEX)
+) (/usr/share/texlive/texmf-dist/tex/latex/l3kernel/expl3.sty
+Package: expl3 2025-01-18 L3 programming layer (loader) 
+
+(/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-xetex.def
+File: l3backend-xetex.def 2024-05-08 L3 backend support: XeTeX
+\g__graphics_track_int=\count192
+\l__pdf_internal_box=\box52
+\g__pdf_backend_annotation_int=\count193
+\g__pdf_backend_link_int=\count194
+))
+Document Class: ctexbook 2022/07/14 v2.5.10 Chinese adapter for class book (CTE
+X)
+
+(/workspace/scratch/a886fd56dd2f/work/EGA_v17/vendor/texmf/tex/latex/ctex/ctexh
+ook.sty
+Package: ctexhook 2022/07/14 v2.5.10 Document and package hooks (CTEX)
+)
+(/workspace/scratch/a886fd56dd2f/work/EGA_v17/vendor/texmf/tex/latex/ctex/ctexp
+atch.sty
+Package: ctexpatch 2022/07/14 v2.5.10 Patching commands (CTEX)
+) (/usr/share/texlive/texmf-dist/tex/latex/base/fix-cm.sty
+Package: fix-cm 2020/11/24 v1.1t fixes to LaTeX
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/ts1enc.def
+File: ts1enc.def 2001/06/05 v3.0e (jk/car/fm) Standard LaTeX file
+LaTeX Font Info:    Redeclaring font encoding TS1 on input line 47.
+))
+\l__ctex_tmp_int=\count195
+\l__ctex_tmp_box=\box53
+\l__ctex_tmp_dim=\dimen141
+\g__ctex_section_depth_int=\count196
+\g__ctex_font_size_int=\count197
+
+(/workspace/scratch/a886fd56dd2f/work/EGA_v17/vendor/texmf/tex/latex/ctex/confi
+g/ctexopts.cfg
+File: ctexopts.cfg 2022/07/14 v2.5.10 Option configuration file (CTEX)
+) (/usr/share/texlive/texmf-dist/tex/latex/base/book.cls
+Document Class: book 2024/06/29 v1.4n Standard LaTeX document class
+(/usr/share/texlive/texmf-dist/tex/latex/base/bk10.clo
+File: bk10.clo 2024/06/29 v1.4n Standard LaTeX file (size option)
+)
+\c@part=\count198
+\c@chapter=\count199
+\c@section=\count266
+\c@subsection=\count267
+\c@subsubsection=\count268
+\c@paragraph=\count269
+\c@subparagraph=\count270
+\c@figure=\count271
+\c@table=\count272
+\abovecaptionskip=\skip49
+\belowcaptionskip=\skip50
+\bibindent=\dimen142
+)
+(/workspace/scratch/a886fd56dd2f/work/EGA_v17/vendor/texmf/tex/latex/ctex/engin
+e/ctex-engine-xetex.def
+File: ctex-engine-xetex.def 2022/07/14 v2.5.10 XeLaTeX adapter (CTEX)
+
+(/workspace/scratch/a886fd56dd2f/work/EGA_v17/vendor/texmf/tex/xelatex/xecjk/xe
+CJK.sty
+Package: xeCJK 2022/08/05 v3.9.1 Typesetting CJK scripts with XeLaTeX
+
+(/usr/share/texlive/texmf-dist/tex/latex/l3packages/xtemplate/xtemplate.sty
+Package: xtemplate 2024-08-16 L3 Experimental prototype document functions
+)
+\l__xeCJK_tmp_int=\count273
+\l__xeCJK_tmp_box=\box54
+\l__xeCJK_tmp_dim=\dimen143
+\l__xeCJK_tmp_skip=\skip51
+\g__xeCJK_space_factor_int=\count274
+\l__xeCJK_begin_int=\count275
+\l__xeCJK_end_int=\count276
+\c__xeCJK_CJK_class_int=\XeTeXcharclass1
+\c__xeCJK_FullLeft_class_int=\XeTeXcharclass2
+\c__xeCJK_FullRight_class_int=\XeTeXcharclass3
+\c__xeCJK_HalfLeft_class_int=\XeTeXcharclass4
+\c__xeCJK_HalfRight_class_int=\XeTeXcharclass5
+\c__xeCJK_NormalSpace_class_int=\XeTeXcharclass6
+\c__xeCJK_CM_class_int=\XeTeXcharclass7
+\c__xeCJK_HangulJamo_class_int=\XeTeXcharclass8
+\l__xeCJK_last_skip=\skip52
+\c__xeCJK_none_node=\count277
+\g__xeCJK_node_int=\count278
+\c__xeCJK_CJK_node_dim=\dimen144
+\c__xeCJK_CJK-space_node_dim=\dimen145
+\c__xeCJK_default_node_dim=\dimen146
+\c__xeCJK_CJK-widow_node_dim=\dimen147
+\c__xeCJK_normalspace_node_dim=\dimen148
+\c__xeCJK_default-space_node_skip=\skip53
+\l__xeCJK_ccglue_skip=\skip54
+\l__xeCJK_ecglue_skip=\skip55
+\l__xeCJK_punct_kern_skip=\skip56
+\l__xeCJK_indent_box=\box55
+\l__xeCJK_last_penalty_int=\count279
+\l__xeCJK_last_bound_dim=\dimen149
+\l__xeCJK_last_kern_dim=\dimen150
+\l__xeCJK_widow_penalty_int=\count280
+
+LaTeX template Info: Declaring template type 'xeCJK/punctuation' taking 0
+(template)           argument(s) on line 2396.
+
+\l__xeCJK_fixed_punct_width_dim=\dimen151
+\l__xeCJK_mixed_punct_width_dim=\dimen152
+\l__xeCJK_middle_punct_width_dim=\dimen153
+\l__xeCJK_fixed_margin_width_dim=\dimen154
+\l__xeCJK_mixed_margin_width_dim=\dimen155
+\l__xeCJK_middle_margin_width_dim=\dimen156
+\l__xeCJK_bound_punct_width_dim=\dimen157
+\l__xeCJK_bound_margin_width_dim=\dimen158
+\l__xeCJK_margin_minimum_dim=\dimen159
+\l__xeCJK_kerning_total_width_dim=\dimen160
+\l__xeCJK_same_align_margin_dim=\dimen161
+\l__xeCJK_different_align_margin_dim=\dimen162
+\l__xeCJK_kerning_margin_width_dim=\dimen163
+\l__xeCJK_kerning_margin_minimum_dim=\dimen164
+\l__xeCJK_bound_dim=\dimen165
+\l__xeCJK_reverse_bound_dim=\dimen166
+\l__xeCJK_margin_dim=\dimen167
+\l__xeCJK_minimum_bound_dim=\dimen168
+\l__xeCJK_kerning_margin_dim=\dimen169
+\g__xeCJK_family_int=\count281
+\l__xeCJK_fam_int=\count282
+\g__xeCJK_fam_allocation_int=\count283
+\l__xeCJK_verb_case_int=\count284
+\l__xeCJK_verb_exspace_skip=\skip57
+
+(/usr/share/texlive/texmf-dist/tex/latex/fontspec/fontspec.sty
+(/usr/share/texlive/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
+Package: xparse 2024-08-16 L3 Experimental document command parser
+)
+Package: fontspec 2024/05/11 v2.9e Font selection for XeLaTeX and LuaLaTeX
+
+(/usr/share/texlive/texmf-dist/tex/latex/fontspec/fontspec-xetex.sty
+Package: fontspec-xetex 2024/05/11 v2.9e Font selection for XeLaTeX and LuaLaTe
+X
+\l__fontspec_script_int=\count285
+\l__fontspec_language_int=\count286
+\l__fontspec_strnum_int=\count287
+\l__fontspec_tmp_int=\count288
+\l__fontspec_tmpa_int=\count289
+\l__fontspec_tmpb_int=\count290
+\l__fontspec_tmpc_int=\count291
+\l__fontspec_em_int=\count292
+\l__fontspec_emdef_int=\count293
+\l__fontspec_strong_int=\count294
+\l__fontspec_strongdef_int=\count295
+\l__fontspec_tmpa_dim=\dimen170
+\l__fontspec_tmpb_dim=\dimen171
+\l__fontspec_tmpc_dim=\dimen172
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/fontenc.sty
+Package: fontenc 2021/04/29 v2.0v Standard LaTeX package
+)
+(/usr/share/texlive/texmf-dist/tex/latex/fontspec/fontspec.cfg)))
+(/workspace/scratch/a886fd56dd2f/work/EGA_v17/vendor/texmf/tex/xelatex/xecjk/xe
+CJK.cfg
+File: xeCJK.cfg 2022/08/05 v3.9.1 Configuration file for xeCJK package
+))
+\ccwd=\dimen173
+\l__ctex_ccglue_skip=\skip58
+)
+\l__ctex_ziju_dim=\dimen174
+
+(/workspace/scratch/a886fd56dd2f/work/EGA_v17/vendor/texmf/tex/latex/zhnumber/z
+hnumber.sty
+Package: zhnumber 2022/07/14 v3.0 Typesetting numbers with Chinese glyphs
+\l__zhnum_scale_int=\count296
+\l__zhnum_tmp_int=\count297
+
+(/workspace/scratch/a886fd56dd2f/work/EGA_v17/vendor/texmf/tex/latex/zhnumber/z
+hnumber-utf8.cfg
+File: zhnumber-utf8.cfg 2022/07/14 v3.0 Chinese numerals with UTF8 encoding
+))
+\l__ctex_heading_skip=\skip59
+
+(/workspace/scratch/a886fd56dd2f/work/EGA_v17/vendor/texmf/tex/latex/ctex/schem
+e/ctex-scheme-chinese-book.def
+File: ctex-scheme-chinese-book.def 2022/07/14 v2.5.10 Chinese scheme for book (
+CTEX)
+
+(/workspace/scratch/a886fd56dd2f/work/EGA_v17/vendor/texmf/tex/latex/ctex/confi
+g/ctex-name-utf8.cfg
+File: ctex-name-utf8.cfg 2022/07/14 v2.5.10 Caption with encoding UTF-8 (CTEX)
+))
+(/workspace/scratch/a886fd56dd2f/work/EGA_v17/vendor/texmf/tex/latex/ctex/ctex-
+c5size.clo
+File: ctex-c5size.clo 2022/07/14 v2.5.10 c5size option (CTEX)
+)
+(/workspace/scratch/a886fd56dd2f/work/EGA_v17/vendor/texmf/tex/latex/ctex/fonts
+et/ctex-fontset-fandol.def
+File: ctex-fontset-fandol.def 2022/07/14 v2.5.10 Fandol fonts definition (CTEX)
+
+
+Package fontspec Info: 
+(fontspec)             Script 'CJK' not explicitly supported within font
+(fontspec)             'FandolSong-Regular'. Check the typeset output, and if
+(fontspec)             it is okay then ignore this warning. Otherwise a
+(fontspec)             different font should be chosen.
+
+
+Package fontspec Info: 
+(fontspec)             Font family 'FandolSong-Regular(0)' created for font
+(fontspec)             'FandolSong-Regular' with options
+(fontspec)             [Script={CJK},Extension={.otf},BoldFont={FandolSong-Bold
+},ItalicFont={FandolKai-Regular}].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.:
+(fontspec)             <->"[FandolSong-Regular.otf]/OT:script=hani;language=dfl
+t;"
+(fontspec)             - 'bold' (b/n) with NFSS spec.:
+(fontspec)             <->"[FandolSong-Bold.otf]/OT:script=hani;language=dflt;"
+
+(fontspec)             - 'italic' (m/it) with NFSS spec.:
+(fontspec)             <->"[FandolKai-Regular.otf]/OT:script=hani;language=dflt
+;"
+
+))
+(/workspace/scratch/a886fd56dd2f/work/EGA_v17/vendor/texmf/tex/latex/ctex/confi
+g/ctex.cfg
+File: ctex.cfg 2022/07/14 v2.5.10 Configuration file (CTEX)
+) (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2024/11/05 v2.17t AMS math features
+\@mathmargin=\skip60
+
+For additional information on amsmath, use the `?' option.
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amstext.sty
+Package: amstext 2021/08/26 v2.01 AMS text
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks17
+\ex@=\dimen175
+))
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen176
+)
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty
+Package: amsopn 2022/04/08 v2.04 operator names
+)
+\inf@bad=\count298
+LaTeX Info: Redefining \frac on input line 233.
+\uproot@=\count299
+\leftroot@=\count300
+LaTeX Info: Redefining \overline on input line 398.
+LaTeX Info: Redefining \colon on input line 409.
+\classnum@=\count301
+\DOTSCASE@=\count302
+LaTeX Info: Redefining \ldots on input line 495.
+LaTeX Info: Redefining \dots on input line 498.
+LaTeX Info: Redefining \cdots on input line 619.
+\Mathstrutbox@=\box56
+\strutbox@=\box57
+LaTeX Info: Redefining \big on input line 721.
+LaTeX Info: Redefining \Big on input line 722.
+LaTeX Info: Redefining \bigg on input line 723.
+LaTeX Info: Redefining \Bigg on input line 724.
+\big@size=\dimen177
+LaTeX Font Info:    Redeclaring font encoding OML on input line 742.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 743.
+\macc@depth=\count303
+LaTeX Info: Redefining \bmod on input line 904.
+LaTeX Info: Redefining \pmod on input line 909.
+LaTeX Info: Redefining \smash on input line 939.
+LaTeX Info: Redefining \relbar on input line 969.
+LaTeX Info: Redefining \Relbar on input line 970.
+\c@MaxMatrixCols=\count304
+\dotsspace@=\muskip17
+\c@parentequation=\count305
+\dspbrk@lvl=\count306
+\tag@help=\toks18
+\row@=\count307
+\column@=\count308
+\maxfields@=\count309
+\andhelp@=\toks19
+\eqnshift@=\dimen178
+\alignsep@=\dimen179
+\tagshift@=\dimen180
+\tagwidth@=\dimen181
+\totwidth@=\dimen182
+\lineht@=\dimen183
+\@envbody=\toks20
+\multlinegap=\skip61
+\multlinetaggap=\skip62
+\mathdisplay@stack=\toks21
+LaTeX Info: Redefining \[ on input line 2953.
+LaTeX Info: Redefining \] on input line 2954.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amssymb.sty
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+))
+(/usr/share/texlive/texmf-dist/tex/latex/amscls/amsthm.sty
+Package: amsthm 2020/05/29 v2.20.6
+\thm@style=\toks22
+\thm@bodyfont=\toks23
+\thm@headfont=\toks24
+\thm@notefont=\toks25
+\thm@headpunct=\toks26
+\thm@preskip=\skip63
+\thm@postskip=\skip64
+\thm@headsep=\skip65
+\dth@everypar=\toks27
+)
+(/usr/share/texlive/texmf-dist/tex/latex/mathtools/mathtools.sty
+Package: mathtools 2024/10/04 v1.31 mathematical typesetting tools
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
+\KV@toks@=\toks28
+)
+(/usr/share/texlive/texmf-dist/tex/latex/tools/calc.sty
+Package: calc 2023/07/08 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count310
+\calc@Bcount=\count311
+\calc@Adimen=\dimen184
+\calc@Bdimen=\dimen185
+\calc@Askip=\skip66
+\calc@Bskip=\skip67
+LaTeX Info: Redefining \setlength on input line 80.
+LaTeX Info: Redefining \addtolength on input line 81.
+\calc@Ccount=\count312
+\calc@Cskip=\skip68
+)
+(/usr/share/texlive/texmf-dist/tex/latex/mathtools/mhsetup.sty
+Package: mhsetup 2021/03/18 v1.4 programming setup (MH)
+)
+\g_MT_multlinerow_int=\count313
+\l_MT_multwidth_dim=\dimen186
+\origjot=\skip69
+\l_MT_shortvdotswithinadjustabove_dim=\dimen187
+\l_MT_shortvdotswithinadjustbelow_dim=\dimen188
+\l_MT_above_intertext_sep=\dimen189
+\l_MT_below_intertext_sep=\dimen190
+\l_MT_above_shortintertext_sep=\dimen191
+\l_MT_below_shortintertext_sep=\dimen192
+\xmathstrut@box=\box58
+\xmathstrut@dim=\dimen193
+)
+(/usr/share/texlive/texmf-dist/tex/latex/jknapltx/mathrsfs.sty
+Package: mathrsfs 1996/01/01 Math RSFS package v1.0 (jk)
+\symrsfs=\mathgroup6
+)
+(/usr/share/texlive/texmf-dist/tex/latex/tikz-cd/tikz-cd.sty
+Package: tikz-cd 2021/05/04 v1.0 Commutative diagrams with TikZ
+
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.tex
+\pgfutil@everybye=\toks29
+\pgfutil@tempdima=\dimen194
+\pgfutil@tempdimb=\dimen195
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfutil-latex.def
+\pgfutil@abb=\box59
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfrcs.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/pgf.revision.tex)
+Package: pgfrcs 2023-01-15 v3.1.10 (3.1.10)
+))
+Package: pgf 2023-01-15 v3.1.10 (3.1.10)
+
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/basiclayer/pgfcore.sty
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2024/08/06 v1.4g Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 2023/12/02 v1.11 sin cos tan (DPC)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: xetex.def on input line 106.
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-def/xetex.def
+File: xetex.def 2022/09/22 v5.0n Graphics/color driver for xetex
+))
+\Gin@req@height=\dimen196
+\Gin@req@width=\dimen197
+)
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/systemlayer/pgfsys.sty
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsys.code.tex
+Package: pgfsys 2023-01-15 v3.1.10 (3.1.10)
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex
+\pgfkeys@pathtoks=\toks30
+\pgfkeys@temptoks=\toks31
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfkeyslibraryfiltered
+.code.tex
+\pgfkeys@tmptoks=\toks32
+))
+\pgf@x=\dimen198
+\pgf@y=\dimen199
+\pgf@xa=\dimen256
+\pgf@ya=\dimen257
+\pgf@xb=\dimen258
+\pgf@yb=\dimen259
+\pgf@xc=\dimen260
+\pgf@yc=\dimen261
+\pgf@xd=\dimen262
+\pgf@yd=\dimen263
+\w@pgf@writea=\write3
+\r@pgf@reada=\read2
+\c@pgf@counta=\count314
+\c@pgf@countb=\count315
+\c@pgf@countc=\count316
+\c@pgf@countd=\count317
+\t@pgf@toka=\toks33
+\t@pgf@tokb=\toks34
+\t@pgf@tokc=\toks35
+\pgf@sys@id@count=\count318
+ (/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgf.cfg
+File: pgf.cfg 2023-01-15 v3.1.10 (3.1.10)
+)
+Driver file for pgf: pgfsys-xetex.def
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-xetex.def
+File: pgfsys-xetex.def 2023-01-15 v3.1.10 (3.1.10)
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-dvipdfmx.def
+File: pgfsys-dvipdfmx.def 2023-01-15 v3.1.10 (3.1.10)
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-common-pdf.de
+f
+File: pgfsys-common-pdf.def 2023-01-15 v3.1.10 (3.1.10)
+)
+\pgfsys@objnum=\count319
+)))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsyssoftpath.code.
+tex
+File: pgfsyssoftpath.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfsyssoftpath@smallbuffer@items=\count320
+\pgfsyssoftpath@bigbuffer@items=\count321
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsysprotocol.code.
+tex
+File: pgfsysprotocol.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)) (/usr/share/texlive/texmf-dist/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2024/09/29 v3.02 LaTeX color extensions (UK)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: xetex.def on input line 274.
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/mathcolor.ltx)
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1349.
+Package xcolor Info: Model `RGB' extended on input line 1365.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1367.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1368.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1369.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1370.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1371.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1372.
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcore.code.tex
+Package: pgfcore 2023-01-15 v3.1.10 (3.1.10)
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathutil.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathparser.code.tex
+\pgfmath@dimen=\dimen264
+\pgfmath@count=\count322
+\pgfmath@box=\box60
+\pgfmath@toks=\toks36
+\pgfmath@stack@operand=\toks37
+\pgfmath@stack@operation=\toks38
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.basic.code
+.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.trigonomet
+ric.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.random.cod
+e.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.comparison
+.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.base.code.
+tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.round.code
+.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.misc.code.
+tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.integerari
+thmetics.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathcalc.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfloat.code.tex
+\c@pgfmathroundto@lastzeros=\count323
+))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfint.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepoints.code.te
+x
+File: pgfcorepoints.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgf@picminx=\dimen265
+\pgf@picmaxx=\dimen266
+\pgf@picminy=\dimen267
+\pgf@picmaxy=\dimen268
+\pgf@pathminx=\dimen269
+\pgf@pathmaxx=\dimen270
+\pgf@pathminy=\dimen271
+\pgf@pathmaxy=\dimen272
+\pgf@xx=\dimen273
+\pgf@xy=\dimen274
+\pgf@yx=\dimen275
+\pgf@yy=\dimen276
+\pgf@zx=\dimen277
+\pgf@zy=\dimen278
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathconstruct.
+code.tex
+File: pgfcorepathconstruct.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgf@path@lastx=\dimen279
+\pgf@path@lasty=\dimen280
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathusage.code
+.tex
+File: pgfcorepathusage.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgf@shorten@end@additional=\dimen281
+\pgf@shorten@start@additional=\dimen282
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorescopes.code.te
+x
+File: pgfcorescopes.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfpic=\box61
+\pgf@hbox=\box62
+\pgf@layerbox@main=\box63
+\pgf@picture@serial@count=\count324
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoregraphicstate.c
+ode.tex
+File: pgfcoregraphicstate.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgflinewidth=\dimen283
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransformation
+s.code.tex
+File: pgfcoretransformations.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgf@pt@x=\dimen284
+\pgf@pt@y=\dimen285
+\pgf@pt@temp=\dimen286
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorequick.code.tex
+File: pgfcorequick.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreobjects.code.t
+ex
+File: pgfcoreobjects.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathprocessing
+.code.tex
+File: pgfcorepathprocessing.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorearrows.code.te
+x
+File: pgfcorearrows.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfarrowsep=\dimen287
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreshade.code.tex
+File: pgfcoreshade.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgf@max=\dimen288
+\pgf@sys@shading@range@num=\count325
+\pgf@shadingcount=\count326
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreimage.code.tex
+File: pgfcoreimage.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreexternal.code.
+tex
+File: pgfcoreexternal.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfexternal@startupbox=\box64
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorelayers.code.te
+x
+File: pgfcorelayers.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransparency.c
+ode.tex
+File: pgfcoretransparency.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepatterns.code.
+tex
+File: pgfcorepatterns.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorerdf.code.tex
+File: pgfcorerdf.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/modules/pgfmoduleshapes.code.tex
+File: pgfmoduleshapes.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfnodeparttextbox=\box65
+) (/usr/share/texlive/texmf-dist/tex/generic/pgf/modules/pgfmoduleplot.code.tex
+File: pgfmoduleplot.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-0-65
+.sty
+Package: pgfcomp-version-0-65 2023-01-15 v3.1.10 (3.1.10)
+\pgf@nodesepstart=\dimen289
+\pgf@nodesepend=\dimen290
+)
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-1-18
+.sty
+Package: pgfcomp-version-1-18 2023-01-15 v3.1.10 (3.1.10)
+)) (/usr/share/texlive/texmf-dist/tex/latex/pgf/utilities/pgffor.sty
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/utilities/pgfkeys.sty
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex))
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/math/pgfmath.sty
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgffor.code.tex
+Package: pgffor 2023-01-15 v3.1.10 (3.1.10)
+\pgffor@iter=\dimen291
+\pgffor@skip=\dimen292
+\pgffor@stack=\toks39
+\pgffor@toks=\toks40
+))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/tikz.code.tex
+Package: tikz 2023-01-15 v3.1.10 (3.1.10)
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/pgflibraryplothandlers
+.code.tex
+File: pgflibraryplothandlers.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgf@plot@mark@count=\count327
+\pgfplotmarksize=\dimen293
+)
+\tikz@lastx=\dimen294
+\tikz@lasty=\dimen295
+\tikz@lastxsaved=\dimen296
+\tikz@lastysaved=\dimen297
+\tikz@lastmovetox=\dimen298
+\tikz@lastmovetoy=\dimen299
+\tikzleveldistance=\dimen300
+\tikzsiblingdistance=\dimen301
+\tikz@figbox=\box66
+\tikz@figbox@bg=\box67
+\tikz@tempbox=\box68
+\tikz@tempbox@bg=\box69
+\tikztreelevel=\count328
+\tikznumberofchildren=\count329
+\tikznumberofcurrentchild=\count330
+\tikz@fig@count=\count331
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/modules/pgfmodulematrix.code.tex
+File: pgfmodulematrix.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfmatrixcurrentrow=\count332
+\pgfmatrixcurrentcolumn=\count333
+\pgf@matrix@numberofcolumns=\count334
+)
+\tikz@expandcount=\count335
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
+zlibrarytopaths.code.tex
+File: tikzlibrarytopaths.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)))
+(/usr/share/texlive/texmf-dist/tex/generic/tikz-cd/tikzlibrarycd.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
+zlibrarymatrix.code.tex
+File: tikzlibrarymatrix.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
+zlibraryquotes.code.tex
+File: tikzlibraryquotes.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/pgflibraryarrows.meta.
+code.tex
+File: pgflibraryarrows.meta.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfarrowinset=\dimen302
+\pgfarrowlength=\dimen303
+\pgfarrowwidth=\dimen304
+\pgfarrowlinewidth=\dimen305
+))) (/usr/share/texlive/texmf-dist/tex/latex/enumitem/enumitem.sty
+Package: enumitem 2025/02/06 v3.11 Customized lists
+\labelindent=\skip70
+\enit@outerparindent=\dimen306
+\enit@toks=\toks41
+\enit@inbox=\box70
+\enit@count@id=\count336
+\enitdp@description=\count337
+)
+(/usr/share/texlive/texmf-dist/tex/latex/tools/longtable.sty
+Package: longtable 2024-10-27 v4.22 Multi-page Table package (DPC)
+\LTleft=\skip71
+\LTright=\skip72
+\LTpre=\skip73
+\LTpost=\skip74
+\LTchunksize=\count338
+\LTcapwidth=\dimen307
+\LT@head=\box71
+\LT@firsthead=\box72
+\LT@foot=\box73
+\LT@lastfoot=\box74
+\LT@gbox=\box75
+\LT@cols=\count339
+\LT@rows=\count340
+\c@LT@tables=\count341
+\c@LT@chunks=\count342
+\LT@p@ftn=\toks42
+)
+(/usr/share/texlive/texmf-dist/tex/latex/booktabs/booktabs.sty
+Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
+\heavyrulewidth=\dimen308
+\lightrulewidth=\dimen309
+\cmidrulewidth=\dimen310
+\belowrulesep=\dimen311
+\belowbottomsep=\dimen312
+\aboverulesep=\dimen313
+\abovetopsep=\dimen314
+\cmidrulesep=\dimen315
+\cmidrulekern=\dimen316
+\defaultaddspace=\dimen317
+\@cmidla=\count343
+\@cmidlb=\count344
+\@aboverulesep=\dimen318
+\@belowrulesep=\dimen319
+\@thisruleclass=\count345
+\@lastruleclass=\count346
+\@thisrulewidth=\dimen320
+)
+(/usr/share/texlive/texmf-dist/tex/latex/tools/array.sty
+Package: array 2024/10/17 v2.6g Tabular extension package (FMi)
+\col@sep=\dimen321
+\ar@mcellbox=\box76
+\extrarowheight=\dimen322
+\NC@list=\toks43
+\extratabsurround=\skip75
+\backup@length=\skip76
+\ar@cellbox=\box77
+)
+(/usr/share/texlive/texmf-dist/tex/latex/needspace/needspace.sty
+Package: needspace 2010/09/12 v1.3d reserve vertical space
+)
+(/usr/share/texlive/texmf-dist/tex/latex/footmisc/footmisc.sty
+Package: footmisc 2024/12/24 v6.0g a miscellany of footnote facilities
+\FN@temptoken=\toks44
+\footnotemargin=\dimen323
+\@outputbox@depth=\dimen324
+
+(/usr/share/texlive/texmf-dist/tex/latex/bigfoot/perpage.sty
+Package: perpage 2014/10/25 2.0 Reset/sort counters per page
+\c@abspage=\count347
+)
+\c@pp@a@footnote=\count348
+Package footmisc Info: Declaring symbol style bringhurst on input line 699.
+Package footmisc Info: Declaring symbol style chicago on input line 707.
+Package footmisc Info: Declaring symbol style wiley on input line 716.
+Package footmisc Info: Declaring symbol style lamport-robust on input line 727.
+
+Package footmisc Info: Declaring symbol style lamport* on input line 747.
+Package footmisc Info: Declaring symbol style lamport*-robust on input line 768
+.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/adjustbox/adjustbox.sty
+Package: adjustbox 2025/02/26 v1.3c Adjusting TeX boxes (trim, clip, ...)
+
+(/usr/share/texlive/texmf-dist/tex/latex/xkeyval/xkeyval.sty
+Package: xkeyval 2022/06/16 v2.9 package option processing (HA)
+
+(/usr/share/texlive/texmf-dist/tex/generic/xkeyval/xkeyval.tex
+(/usr/share/texlive/texmf-dist/tex/generic/xkeyval/xkvutils.tex
+\XKV@toks=\toks45
+\XKV@tempa@toks=\toks46
+)
+\XKV@depth=\count349
+File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
+))
+(/usr/share/texlive/texmf-dist/tex/latex/adjustbox/adjcalc.sty
+Package: adjcalc 2012/05/16 v1.1 Provides advanced setlength with multiple back
+-ends (calc, etex, pgfmath)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/adjustbox/trimclip.sty
+Package: trimclip 2025/02/21 v1.2a Trim and clip general TeX material
+
+(/usr/share/texlive/texmf-dist/tex/latex/collectbox/collectbox.sty
+Package: collectbox 2022/10/17 v0.4c Collect macro arguments as boxes
+\collectedbox=\box78
+)
+\tc@llx=\dimen325
+\tc@lly=\dimen326
+\tc@urx=\dimen327
+\tc@ury=\dimen328
+Package trimclip Info: Using driver 'tc-xetex.def'.
+
+(/usr/share/texlive/texmf-dist/tex/latex/adjustbox/tc-xetex.def
+File: tc-xetex.def 2019/01/04 v2.2 Clipping driver for xetex
+))
+\adjbox@Width=\dimen329
+\adjbox@Height=\dimen330
+\adjbox@Depth=\dimen331
+\adjbox@Totalheight=\dimen332
+\adjbox@pwidth=\dimen333
+\adjbox@pheight=\dimen334
+\adjbox@pdepth=\dimen335
+\adjbox@ptotalheight=\dimen336
+
+(/usr/share/texlive/texmf-dist/tex/latex/ifoddpage/ifoddpage.sty
+Package: ifoddpage 2022/10/18 v1.2 Conditionals for odd/even page detection
+\c@checkoddpage=\count350
+)
+(/usr/share/texlive/texmf-dist/tex/latex/varwidth/varwidth.sty
+Package: varwidth 2009/03/30 ver 0.92;  Variable-width minipages
+\@vwid@box=\box79
+\sift@deathcycles=\count351
+\@vwid@loff=\dimen337
+\@vwid@roff=\dimen338
+))
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/hyperref.sty
+Package: hyperref 2024-11-05 v7.01l Hypertext links for LaTeX
+
+(/usr/share/texlive/texmf-dist/tex/generic/iftex/iftex.sty
+Package: iftex 2024/12/12 v1.0g TeX engine tests
+)
+(/usr/share/texlive/texmf-dist/tex/latex/kvsetkeys/kvsetkeys.sty
+Package: kvsetkeys 2022-10-05 v1.19 Key value parser (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty
+Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pdfescape/pdfescape.sty
+Package: pdfescape 2019/12/09 v1.15 Implements pdfTeX's escape features (HO)
+
+(/usr/share/texlive/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
+Package: ltxcmds 2023-12-04 v1.26 LaTeX kernel commands for general use (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty
+Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO
+)
+
+(/usr/share/texlive/texmf-dist/tex/generic/infwarerr/infwarerr.sty
+Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
+)
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode not found.
+))
+(/usr/share/texlive/texmf-dist/tex/latex/hycolor/hycolor.sty
+Package: hycolor 2020-01-27 v1.10 Color options for hyperref/bookmark (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
+Package: nameref 2023-11-26 v2.56 Cross-referencing by name of section
+
+(/usr/share/texlive/texmf-dist/tex/latex/refcount/refcount.sty
+Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
+Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
+
+(/usr/share/texlive/texmf-dist/tex/latex/kvoptions/kvoptions.sty
+Package: kvoptions 2022-06-15 v3.15 Key value format for package options (HO)
+))
+\c@section@level=\count352
+)
+(/usr/share/texlive/texmf-dist/tex/latex/etoolbox/etoolbox.sty
+Package: etoolbox 2025/02/11 v2.5l e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count353
+)
+(/usr/share/texlive/texmf-dist/tex/generic/stringenc/stringenc.sty
+Package: stringenc 2019/11/29 v1.12 Convert strings between diff. encodings (HO
+)
+)
+\@linkdim=\dimen339
+\Hy@linkcounter=\count354
+\Hy@pagecounter=\count355
+
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/pd1enc.def
+File: pd1enc.def 2024-11-05 v7.01l Hyperref: PDFDocEncoding definition (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/intcalc/intcalc.sty
+Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
+)
+\Hy@SavedSpaceFactor=\count356
+
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/puenc.def
+File: puenc.def 2024-11-05 v7.01l Hyperref: PDF Unicode definition (HO)
+)
+Package hyperref Info: Option `unicode' set `true' on input line 4040.
+Package hyperref Info: Option `unicode' set `true' on input line 4040.
+Package hyperref Info: Option `bookmarksnumbered' set `true' on input line 4040
+.
+Package hyperref Info: Option `hypertexnames' set `false' on input line 4040.
+Package hyperref Info: Hyper figures OFF on input line 4157.
+Package hyperref Info: Link nesting OFF on input line 4162.
+Package hyperref Info: Hyper index ON on input line 4165.
+Package hyperref Info: Plain pages OFF on input line 4172.
+Package hyperref Info: Backreferencing OFF on input line 4177.
+Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
+Package hyperref Info: Bookmarks ON on input line 4424.
+\c@Hy@tempcnt=\count357
+
+(/usr/share/texlive/texmf-dist/tex/latex/url/url.sty
+\Urlmuskip=\muskip18
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+LaTeX Info: Redefining \url on input line 4763.
+\XeTeXLinkMargin=\dimen340
+
+(/usr/share/texlive/texmf-dist/tex/generic/bitset/bitset.sty
+Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
+
+(/usr/share/texlive/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty
+Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO
+)
+))
+\Fld@menulength=\count358
+\Field@Width=\dimen341
+\Fld@charsize=\dimen342
+Package hyperref Info: Hyper figures OFF on input line 6042.
+Package hyperref Info: Link nesting OFF on input line 6047.
+Package hyperref Info: Hyper index ON on input line 6050.
+Package hyperref Info: backreferencing OFF on input line 6057.
+Package hyperref Info: Link coloring OFF on input line 6062.
+Package hyperref Info: Link coloring with OCG OFF on input line 6067.
+Package hyperref Info: PDF/A mode OFF on input line 6072.
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/atbegshi-ltx.sty
+Package: atbegshi-ltx 2021/01/10 v1.0c Emulation of the original atbegshi
+package with kernel methods
+)
+\Hy@abspage=\count359
+\c@Item=\count360
+\c@Hfootnote=\count361
+)
+Package hyperref Info: Driver (autodetected): hxetex.
+
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/hxetex.def
+File: hxetex.def 2024-11-05 v7.01l Hyperref driver for XeTeX
+\pdfm@box=\box80
+\c@Hy@AnnotLevel=\count362
+\HyField@AnnotCount=\count363
+\Fld@listcount=\count364
+\c@bookmark@seq@number=\count365
+
+(/usr/share/texlive/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
+Package: rerunfilecheck 2022-07-10 v1.10 Rerun checks for auxiliary files (HO)
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/atveryend-ltx.sty
+Package: atveryend-ltx 2020/08/19 v1.0a Emulation of the original atveryend pac
+kage
+with kernel methods
+)
+(/usr/share/texlive/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty
+Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
+)
+Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
+85.
+)
+\Hy@SectionHShift=\skip77
+)
+(/usr/share/texlive/texmf-dist/tex/latex/bookmark/bookmark.sty
+Package: bookmark 2023-12-10 v1.31 PDF bookmarks (HO)
+
+(/usr/share/texlive/texmf-dist/tex/latex/bookmark/bkm-dvipdfm.def
+File: bkm-dvipdfm.def 2023-12-10 v1.31 bookmark driver for dvipdfm (HO)
+\BKM@id=\count366
+)))
+(./main.aux)
+\openout1 = `main.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 3.
+LaTeX Font Info:    ... okay on input line 3.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 3.
+LaTeX Font Info:    ... okay on input line 3.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 3.
+LaTeX Font Info:    ... okay on input line 3.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 3.
+LaTeX Font Info:    ... okay on input line 3.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 3.
+LaTeX Font Info:    ... okay on input line 3.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 3.
+LaTeX Font Info:    ... okay on input line 3.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 3.
+LaTeX Font Info:    ... okay on input line 3.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 3.
+LaTeX Font Info:    ... okay on input line 3.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 3.
+LaTeX Font Info:    ... okay on input line 3.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 3.
+LaTeX Font Info:    ... okay on input line 3.
+
+Package fontspec Info: 
+(fontspec)             Adjusting the maths setup (use [no-math] to avoid
+(fontspec)             this).
+
+\symlegacymaths=\mathgroup7
+LaTeX Font Info:    Overwriting symbol font `legacymaths' in version `bold'
+(Font)                  OT1/cmr/m/n --> OT1/cmr/bx/n on input line 3.
+LaTeX Font Info:    Redeclaring math accent \acute on input line 3.
+LaTeX Font Info:    Redeclaring math accent \grave on input line 3.
+LaTeX Font Info:    Redeclaring math accent \ddot on input line 3.
+LaTeX Font Info:    Redeclaring math accent \tilde on input line 3.
+LaTeX Font Info:    Redeclaring math accent \bar on input line 3.
+LaTeX Font Info:    Redeclaring math accent \breve on input line 3.
+LaTeX Font Info:    Redeclaring math accent \check on input line 3.
+LaTeX Font Info:    Redeclaring math accent \hat on input line 3.
+LaTeX Font Info:    Redeclaring math accent \dot on input line 3.
+LaTeX Font Info:    Redeclaring math accent \mathring on input line 3.
+LaTeX Font Info:    Redeclaring math symbol \Gamma on input line 3.
+LaTeX Font Info:    Redeclaring math symbol \Delta on input line 3.
+LaTeX Font Info:    Redeclaring math symbol \Theta on input line 3.
+LaTeX Font Info:    Redeclaring math symbol \Lambda on input line 3.
+LaTeX Font Info:    Redeclaring math symbol \Xi on input line 3.
+LaTeX Font Info:    Redeclaring math symbol \Pi on input line 3.
+LaTeX Font Info:    Redeclaring math symbol \Sigma on input line 3.
+LaTeX Font Info:    Redeclaring math symbol \Upsilon on input line 3.
+LaTeX Font Info:    Redeclaring math symbol \Phi on input line 3.
+LaTeX Font Info:    Redeclaring math symbol \Psi on input line 3.
+LaTeX Font Info:    Redeclaring math symbol \Omega on input line 3.
+LaTeX Font Info:    Redeclaring math symbol \mathdollar on input line 3.
+LaTeX Font Info:    Redeclaring symbol font `operators' on input line 3.
+LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
+(Font)              `operators' in the math version `normal' on input line 3.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
+(Font)                  OT1/cmr/m/n --> TU/lmr/m/n on input line 3.
+LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
+(Font)              `operators' in the math version `bold' on input line 3.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
+(Font)                  OT1/cmr/bx/n --> TU/lmr/m/n on input line 3.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
+(Font)                  TU/lmr/m/n --> TU/lmr/m/n on input line 3.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
+(Font)                  OT1/cmr/m/it --> TU/lmr/m/it on input line 3.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
+(Font)                  OT1/cmr/bx/n --> TU/lmr/b/n on input line 3.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
+(Font)                  OT1/cmss/m/n --> TU/lmss/m/n on input line 3.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
+(Font)                  OT1/cmtt/m/n --> TU/lmtt/m/n on input line 3.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
+(Font)                  TU/lmr/m/n --> TU/lmr/b/n on input line 3.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
+(Font)                  OT1/cmr/bx/it --> TU/lmr/b/it on input line 3.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
+(Font)                  OT1/cmss/bx/n --> TU/lmss/b/n on input line 3.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
+(Font)                  OT1/cmtt/m/n --> TU/lmtt/b/n on input line 3.
+Package hyperref Info: Link coloring OFF on input line 3.
+ (./frontmatter.tex
+LaTeX Font Info:    Trying to load font information for U+msa on input line 2.
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 2.
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+LaTeX Font Info:    Trying to load font information for U+rsfs on input line 2.
+
+
+(/usr/share/texlive/texmf-dist/tex/latex/jknapltx/ursfs.fd
+File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
+)
+
+[1
+
+
+
+]
+
+[2
+
+]
+
+LaTeX Font Warning: Font shape `U/rsfs/m/n' in size <10.53937> not available
+(Font)              size <10.95> substituted on input line 8.
+
+
+Underfull \hbox (badness 3965) in paragraph at lines 17--17
+[]|\TU/FandolSong-Regular(0)/m/n/10.53937 第 三 卷 第 一 部 分
+ []
+
+
+Underfull \hbox (badness 3965) in paragraph at lines 18--18
+[]|\TU/FandolSong-Regular(0)/m/n/10.53937 第 三 卷 第 二 部 分
+ []
+
+
+Underfull \hbox (badness 3965) in paragraph at lines 19--19
+[]|\TU/FandolSong-Regular(0)/m/n/10.53937 第 四 卷 第 一 部 分
+ []
+
+
+Package fontspec Info: 
+(fontspec)             Script 'CJK' not explicitly supported within font
+(fontspec)             'FandolFang-Regular'. Check the typeset output, and if
+(fontspec)             it is okay then ignore this warning. Otherwise a
+(fontspec)             different font should be chosen.
+
+
+Package fontspec Info: 
+(fontspec)             Font family 'FandolFang-Regular(0)' created for font
+(fontspec)             'FandolFang-Regular' with options
+(fontspec)             [Script={CJK},Extension={.otf}].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.:
+(fontspec)             <->"[FandolFang-Regular.otf]/OT:script=hani;language=dfl
+t;"
+
+
+Underfull \hbox (badness 1521) in paragraph at lines 20--21
+[]|\TU/lmtt/m/n/10.53937 EGAV1-2.ps \TU/FandolSong-Regular(0)/m/n/10.53937 全 部 
+六 页 可 读 文 字，|  经 同 文 校 订；|
+ []
+
+[3]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+LaTeX Font Info:    Font shape `TU/FandolSong-Regular(0)/m/sl' in size <10.5393
+7> not available
+(Font)              Font shape `TU/FandolSong-Regular(0)/m/it' tried instead on
+ input line 36.
+[4]
+
+[5]
+
+[6
+
+] (./main.toc
+
+[7]
+
+[8]
+
+[9]
+
+[10]
+
+[11]
+
+[12]
+
+[13]
+
+[14]
+
+[15]
+
+[16]
+
+[17]
+
+[18])
+\tf@toc=\write4
+\openout4 = `main.toc'.
+
+)
+
+[19]
+
+[20
+
+] (./text/introduction.tex
+
+[1
+
+]
+
+[2]
+
+LaTeX Font Warning: Font shape `U/rsfs/m/n' in size <7.52812> not available
+(Font)              size <8> substituted on input line 86.
+
+
+
+[3]
+
+[4]) (./text/ch0_01_07.tex
+
+[5]
+
+[6
+
+]
+第0章
+LaTeX Font Info:    Trying to load font information for U+euf on input line 37.
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/ueuf.fd
+File: ueuf.fd 2013/01/14 v3.01 Euler Fraktur
+)
+
+[7]
+
+[8]
+
+[9]
+
+[10]
+
+[11]
+
+[12]
+Underfull \vbox (badness 1132) has occurred while \output is active []
+
+
+
+[13]
+
+[14]
+
+[15]
+
+[16]
+
+[17]
+
+[18]
+
+[19]
+
+[20]
+
+[21
+
+]
+
+[22]
+
+[23]
+
+[24]
+
+[25]
+
+[26]
+
+[27]
+
+[28]
+
+[29]
+
+[30]
+
+[31]
+
+[32]
+
+[33]
+
+[34]
+
+[35]
+
+[36]
+
+[37]
+
+[38]
+
+[39]
+
+[40]
+
+[41]
+
+[42]
+
+[43]
+
+[44]
+
+[45]
+
+[46]
+
+[47]
+
+[48]
+
+[49]
+
+[50]
+
+[51]
+
+[52]
+
+[53]
+
+[54]
+
+[55]
+
+[56]
+
+[57]
+
+[58]
+
+[59]
+
+[60]
+
+[61]
+
+[62]
+
+[63]
+
+[64]
+
+[65]
+
+[66]
+
+[67]
+
+[68]
+
+[69]
+
+[70]
+
+[71]
+
+[72]
+
+[73]
+
+[74]
+
+[75]
+
+[76]
+
+[77]
+
+[78]
+
+[79]
+
+[80]
+
+[81]
+
+[82]
+
+[83]
+
+[84]
+
+[85]
+Underfull \hbox (badness 3514) in paragraph at lines 4446--4453
+\TU/FandolSong-Regular(0)/m/n/10.53937 等 同 于 $[][]\OT1/cmr/m/n/10.53937 (\OML/c
+mm/m/it/10.53937 L; N\OT1/cmr/m/n/10.53937 )$ \TU/FandolSong-Regular(0)/m/n/10.
+53937 的 子 模。|  在 这 个 等 同 下，| $[][]\OT1/cmr/m/n/10.53937 (\OML/cmm/m/it/10.53937
+ M; \U/euf/m/n/10.53937 J[]\OML/cmm/m/it/10.53937 N\OT1/cmr/m/n/10.53937 )$ \TU
+/FandolSong-Regular(0)/m/n/10.53937 是
+ []
+
+
+Underfull \hbox (badness 2698) in paragraph at lines 4460--4464
+[]\TU/FandolSong-Regular(0)/m/n/10.53937 为 证 明 第 二 个 断 言，|  注 意 当 $\OML/cmm/m/i
+t/10.53937 j \OMS/cmsy/m/n/10.53937 ^^T \OML/cmm/m/it/10.53937 i$ \TU/FandolSon
+g-Regular(0)/m/n/10.53937 时，| $[][]\OT1/cmr/m/n/10.53937 (\OML/cmm/m/it/10.5393
+7 M; \U/euf/m/n/10.53937 J[]\OML/cmm/m/it/10.53937 N\OT1/cmr/m/n/10.53937 )$ \T
+U/FandolSong-Regular(0)/m/n/10.53937 在
+ []
+
+
+
+[86]) (./text/ch0_08_13.tex
+
+[87]
+
+[88]
+
+[89]
+
+[90]
+
+[91]
+
+[92]
+
+[93]
+
+[94]
+
+[95]
+
+[96]
+
+[97]
+
+[98]
+
+[99]
+
+[100]
+
+[101]
+
+[102]
+
+[103]
+
+[104]
+
+[105]
+
+[106]
+
+[107]
+
+[108]
+
+[109]
+
+[110]
+
+[111]
+
+[112]
+
+[113]
+
+[114]
+
+[115]
+
+[116]
+
+[117]
+
+[118]
+
+[119]
+
+[120]
+
+[121]
+
+[122]
+
+[123]
+
+[124]
+
+[125]
+
+[126]
+
+[127]
+
+[128]
+
+[129]
+
+[130]
+
+[131]
+
+[132]
+
+[133]
+
+[134]
+
+[135]
+
+[136]
+
+[137]
+
+[138]
+
+[139]
+
+[140]
+
+[141]
+
+[142]
+Underfull \hbox (badness 1286) in paragraph at lines 1891--1891
+[]\TU/FandolSong-Regular(0)/m/n/10.53937 等 于  |（\TU/lmr/m/n/10.53937 12.1.7.1\T
+U/FandolSong-Regular(0)/m/n/10.53937 ）|  与  |（\TU/lmr/m/n/10.53937 12.1.7.3\TU/
+FandolSong-Regular(0)/m/n/10.53937 ）|  之 复 合；|  而 后 者 即 $[][]\OT1/cmr/m/n/10.53
+937 (\OML/cmm/m/it/10.53937 X[]; \U/rsfs/m/n/10.95 F[]\OT1/cmr/m/n/10.53937 ) \
+OMS/cmsy/m/n/10.53937 !
+ []
+
+
+
+[143]
+
+[144]
+Underfull \hbox (badness 1953) in paragraph at lines 1972--1973
+[]|\TU/FandolSong-Regular(0)/m/n/10.53937 （\TU/lmr/m/n/10.53937 12.2.5.2\TU/Fan
+dolSong-Regular(0)/m/n/10.53937 ）|  的 定 义 更 简 单。|  按 定 义，| $[][]\OML/cmm/m/it/1
+0.53937 h[]\U/rsfs/m/n/10.95 F$ \TU/FandolSong-Regular(0)/m/n/10.53937 对 应 于 预 
+层 $\OML/cmm/m/it/10.53937 W \OMS/cmsy/m/n/10.53937 7!
+ []
+
+
+
+[145]
+
+[146]
+Underfull \hbox (badness 1270) in paragraph at lines 2045--2046
+[]|\TU/FandolSong-Regular(0)/m/n/10.53937 （\TU/lmr/m/n/10.53937 i\TU/FandolSong
+-Regular(0)/m/n/10.53937 ）|  由 于 $\OML/cmm/m/it/10.53937 f[]$ \TU/FandolSong-Re
+gular(0)/m/n/10.53937 在 $\U/rsfs/m/n/10.95 O[]$\TU/lmr/m/n/10.53937 -\TU/Fandol
+Song-Regular(0)/m/n/10.53937 模 范 畴 中 正 合  |（$\OT1/cmr/m/n/10.53937 0[]$\TU/Fand
+olSong-Regular(0)/m/n/10.53937 ，| \TU/lmr/m/n/10.53937 6.7.2\TU/FandolSong-Regu
+lar(0)/m/n/10.53937 ） ，|  函 子 $\U/rsfs/m/n/10.95 G \OMS/cmsy/m/n/10.53937 7!
+ []
+
+
+
+[147]
+Underfull \hbox (badness 2521) in paragraph at lines 2065--2066
+[]\TU/FandolSong-Regular(0)/m/n/10.53937 由 此 得 到 在 同 伦 意 义 下 确 定 的 模 双 复 形 双 同 
+态 $\OT1/cmr/m/n/10.53937 ^^@(\OML/cmm/m/it/10.53937 Y; \U/rsfs/m/n/10.95 M[]\OT
+1/cmr/m/n/10.53937 ) \OMS/cmsy/m/n/10.53937 !
+ []
+
+
+Underfull \hbox (badness 1184) in paragraph at lines 2065--2066
+\OT1/cmr/m/n/10.53937 ^^@(\OML/cmm/m/it/10.53937 X; \U/rsfs/m/n/10.95 M[]\OT1/c
+mr/m/n/10.53937 )$\TU/FandolSong-Regular(0)/m/n/10.53937 ，|  因 而 得 到 确 定 的 谱 序 
+列 态 射  |（\TU/lmr/m/n/10.53937 11.3.2\TU/FandolSong-Regular(0)/m/n/10.53937 ） ；|
+  它 就 是 所 需 的
+ []
+
+
+
+[148]
+
+[149]
+Underfull \hbox (badness 5607) in paragraph at lines 2142--2143
+[]\TU/FandolSong-Regular(0)/m/n/10.53937 取 $\U/rsfs/m/n/10.95 K[]$ \TU/FandolSo
+ng-Regular(0)/m/n/10.53937 的 内 射 \TU/lmr/m/n/10.53937 Cartan–Eilenberg \TU/Fand
+olSong-Regular(0)/m/n/10.53937 解 消 $\U/rsfs/m/n/10.95 L[]$\TU/FandolSong-Regula
+r(0)/m/n/10.53937 ，|  及 三 重 复 形
+ []
+
+
+
+[150]
+
+[151]
+
+[152]
+
+[153]
+
+[154]
+
+[155]
+
+[156]
+
+[157]
+
+[158]
+
+[159]
+
+[160]
+
+[161]
+
+[162]
+Underfull \hbox (badness 2005) in paragraph at lines 2628--2629
+[]\TU/FandolSong-Regular(0)/m/n/10.53937 还 可 以 假 设 此 系 统 严 格。|  事 实 上，|  由 同 构 
+ |（\TU/lmr/m/n/10.53937 13.7.1.1\TU/FandolSong-Regular(0)/m/n/10.53937 ） ，| $\O
+ML/cmm/m/it/10.53937 A[] \OMS/cmsy/m/n/10.53937 '
+ []
+
+
+
+[163]
+
+[164]
+
+[165]
+
+[166]) (./text/ch0_14_15a.tex
+
+[167]
+
+[168]
+
+[169]
+
+[170]
+
+[171]
+
+[172]
+
+[173]
+
+[174]
+
+[175]) (./text/ch0_15b.tex
+
+[176]
+
+[177]
+
+[178]
+
+[179]
+
+[180]
+
+[181]
+
+[182]
+
+[183]
+
+[184]
+
+[185]) (./continuations/iv0_16_12.tex
+
+[186]
+
+[187]
+
+[188]
+
+[189]
+
+[190]
+
+[191]
+
+[192]
+
+[193]) (./continuations/iv0_16_3.tex
+
+[194]
+
+[195]
+
+[196]
+
+[197]) (./continuations/iv0_16_45.tex
+
+[198]
+
+[199]
+
+[200]
+
+[201]
+
+[202]
+
+[203]
+
+[204]
+
+[205]) (./continuations/iv0_17_1.tex
+
+[206]
+
+[207]
+
+[208]
+
+[209]) (./continuations/iv0_17_2.tex
+
+[210]
+Underfull \hbox (badness 2359) in paragraph at lines 36--38
+[]\TU/FandolSong-Regular(0)/m/n/10.53937 沿 用  |（\TU/lmr/m/n/10.53937 17.2.1\TU/
+FandolSong-Regular(0)/m/n/10.53937 ）|  的 记 号，|  只 须 证 明 $\OML/cmm/m/it/10.53937
+ C$ \TU/FandolSong-Regular(0)/m/n/10.53937 内 射。|  对 任 意 $\OML/cmm/m/it/10.53937
+ A$\TU/lmr/m/n/10.53937 -\TU/FandolSong-Regular(0)/m/n/10.53937 模 $\OML/cmm/m/i
+t/10.53937 N$\TU/FandolSong-Regular(0)/m/n/10.53937 ，|
+ []
+
+
+
+[211]
+
+[212]
+
+[213]
+
+[214]) (./continuations/iv0_17_3.tex
+
+[215]
+
+[216]
+
+[217]
+
+[218]
+
+[219]) (./continuations/iv0_18_1.tex
+
+[220]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+[221]
+
+[222]) (./continuations/iv0_18_2.tex
+
+[223]
+
+[224]
+
+[225]
+
+[226]
+
+[227]
+
+[228]) (./continuations/iv0_18_3.tex
+
+[229]
+
+[230]
+
+[231]
+
+[232]
+
+[233]) (./continuations/iv0_18_4.tex
+
+[234]
+
+[235]
+
+[236]) (./continuations/iv0_18_5.tex
+
+[237]
+
+[238]) (./continuations/iv0_19_01.tex
+
+[239]
+
+[240]
+
+[241]
+
+[242]
+
+[243]
+
+[244]
+
+[245]
+
+[246]
+
+[247]) (./continuations/iv0_19_23.tex
+
+[248]
+
+[249]
+
+[250]
+
+[251]
+
+[252]
+
+[253]
+
+[254]
+
+[255]) (./continuations/iv0_19_4.tex
+
+[256]
+
+[257]
+
+[258]
+
+[259]) (./continuations/iv0_19_5a.tex
+
+[260]
+
+[261]
+
+[262]
+
+[263]
+
+[264]) (./continuations/iv0_19_5b.tex
+
+[265]
+
+[266]
+
+[267]
+
+[268]
+
+[269]
+
+[270]
+
+[271]) (./continuations/iv0_19_6.tex
+
+[272]
+
+[273]
+
+[274]
+
+[275]
+
+[276]) (./continuations/iv0_19_7.tex
+
+[277]
+
+[278]
+
+[279]
+
+[280]
+
+[281]
+
+[282]) (./continuations/iv0_19_8.tex
+
+[283]
+
+[284]
+
+[285]
+
+[286]
+
+[287]) (./continuations/iv0_19_9_10.tex
+
+[288]
+
+[289]
+
+[290]) (./continuations/iv0_20_12.tex
+
+[291]
+
+[292]
+
+[293]
+
+[294]
+
+[295]
+
+[296]) (./continuations/iv0_20_3.tex
+
+[297]
+
+[298]) (./continuations/iv0_20_4.tex
+
+[299]
+
+[300]
+
+[301]
+
+[302]
+
+[303]) (./continuations/iv0_20_5.tex
+
+[304]
+
+[305]
+
+[306]
+
+[307]
+
+[308]
+
+[309]
+
+[310]
+
+[311]) (./continuations/iv0_20_6a.tex
+
+[312]
+
+[313]
+
+[314]
+
+[315]
+
+[316]
+
+[317]) (./continuations/iv0_20_6b.tex
+
+[318]
+
+[319]
+
+[320]
+
+[321]
+Underfull \vbox (badness 6268) has occurred while \output is active []
+
+
+
+[322]
+
+[323]
+
+[324]) (./continuations/iv0_20_7a.tex
+
+[325]
+
+[326]
+
+[327]
+
+[328]) (./continuations/iv0_20_7b.tex
+
+[329]
+
+[330]
+
+[331]
+
+[332]) (./continuations/iv0_21_1.tex
+
+LaTeX Font Warning: Font shape `U/rsfs/m/n' in size <15.05624> not available
+(Font)              size <14.4> substituted on input line 3.
+
+
+
+[333]
+
+[334]
+
+[335]
+
+[336]
+
+[337]) (./continuations/iv0_21_2.tex
+
+[338]
+
+[339]
+
+[340]
+
+[341]) (./continuations/iv0_21_3.tex
+
+[342]
+
+[343]
+
+[344]) (./continuations/iv0_21_4.tex
+
+[345]
+
+[346]) (./continuations/iv0_21_5.tex
+
+[347]
+
+[348]
+
+[349]) (./continuations/iv0_21_6.tex
+
+[350]
+
+[351]
+
+[352]) (./continuations/iv0_21_7.tex
+
+[353]
+
+[354]) (./continuations/iv0_21_8.tex
+
+[355]
+
+[356]
+
+[357]
+
+[358]
+
+[359]) (./continuations/iv0_21_9a.tex
+
+[360]
+
+[361]
+
+[362]) (./continuations/iv0_21_9b.tex
+
+[363]
+
+[364]
+
+[365]
+Underfull \hbox (badness 1014) in paragraph at lines 202--205
+[]|\TU/FandolSong-Regular(0)/m/n/10.53937 （\TU/lmr/m/n/10.53937 ii\TU/FandolSon
+g-Regular(0)/m/n/10.53937 ）|  仍 可 先 把 $\OML/cmm/m/it/10.53937 k[]$ \TU/FandolSo
+ng-Regular(0)/m/n/10.53937 换 成 $\OML/cmm/m/it/10.53937 k[]\OT1/cmr/m/n/10.53937
+ (\OML/cmm/m/it/10.53937 K[]\OT1/cmr/m/n/10.53937 )$\TU/FandolSong-Regular(0)/m
+/n/10.53937 ，|  故 假 设 $\OML/cmm/m/it/10.53937 K[] \OMS/cmsy/m/n/10.53937 ^^R \O
+ML/cmm/m/it/10.53937 k[]$\TU/FandolSong-Regular(0)/m/n/10.53937 。|  置 $\OML/cmm
+/m/it/10.53937 N[] \OT1/cmr/m/n/10.53937 =
+ []
+
+
+
+[366]) (./continuations/iv0_21_9c.tex
+
+[367]) (./continuations/iv0_22_1.tex
+
+[368]
+
+[369]
+
+[370]
+
+[371]
+
+[372]) (./continuations/iv0_22_2a.tex
+
+[373]
+
+[374]
+
+[375]
+
+[376]) (./continuations/iv0_22_2b.tex
+
+[377]
+
+[378]) (./continuations/iv0_22_3.tex
+
+[379]
+
+[380]
+
+[381]) (./continuations/iv0_22_4a.tex
+
+[382]
+
+[383]
+
+[384]
+
+[385]
+
+[386]) (./continuations/iv0_22_4b.tex
+
+[387]
+
+[388]
+
+[389]
+
+[390]) (./continuations/iv0_22_5a.tex
+
+[391]
+
+[392
+
+]
+
+[393]) (./continuations/iv0_22_5b.tex
+
+[394]
+
+[395]
+
+[396]) (./continuations/iv0_22_6.tex
+
+[397]
+
+[398]
+
+[399]
+
+[400]
+
+[401]) (./continuations/iv0_22_7.tex
+
+[402]
+
+[403]
+
+[404]
+
+[405]
+
+[406]) (./continuations/iv0_23_1.tex
+
+[407]
+
+[408]
+
+[409]
+
+[410]) (./continuations/iv0_23_2.tex
+
+[411]
+
+[412]
+
+[413]
+
+[414]
+
+[415]) (./text/ch1.tex
+
+[416]
+第I章
+
+
+[417
+
+]
+
+[418]
+
+[419]
+
+[420]
+
+[421]
+
+[422]
+
+[423]
+
+[424]
+
+[425]
+Underfull \hbox (badness 2310) in paragraph at lines 507--516
+[]\TU/FandolSong-Regular(0)/m/n/10.53937 事 实 上，|  考 虑 典 范 同 态 $\OML/cmm/m/it/10
+.53937 v \OMS/cmsy/m/n/10.53937 7! \OT1/cmr/m/n/10.53937 ^^@(\OML/cmm/m/it/10.5
+3937 v\OT1/cmr/m/n/10.53937 )$\TU/FandolSong-Regular(0)/m/n/10.53937 ，|  它 将 $[
+][]\OT1/cmr/m/n/10.53937 ([]\OML/cmm/m/it/10.53937 ; []\OT1/cmr/m/n/10.53937 )$
+ \TU/FandolSong-Regular(0)/m/n/10.53937 映 到
+ []
+
+
+Underfull \hbox (badness 3780) in paragraph at lines 507--516
+[][]\OT1/cmr/m/n/10.53937 (^^@([])\OML/cmm/m/it/10.53937 ; \OT1/cmr/m/n/10.5393
+7 ^^@([]))$\TU/FandolSong-Regular(0)/m/n/10.53937 ；|  由 定 理  |（[]\TU/lmr/m/n/10
+.53937 1.3.7[]\TU/FandolSong-Regular(0)/m/n/10.53937 ） ，|  后 一 个 模 典 范 地 等 同 于
+ []
+
+
+
+[426]
+
+[427]
+
+[428]
+
+[429]
+
+[430]
+
+[431]
+
+[432]
+
+[433]
+
+[434]
+
+[435]
+Underfull \hbox (badness 1509) in paragraph at lines 1129--1130
+[]\TU/FandolSong-Regular(0)/m/n/10.53937 为 简 便 起 见，|  当 说 到 仿 射 概 形 $[]\OT1/cmr
+/m/n/10.53937 (\OML/cmm/m/it/10.53937 A\OT1/cmr/m/n/10.53937 )$ \TU/FandolSong-
+Regular(0)/m/n/10.53937 时，|  始 终 是 指 赋 环 空 间
+ []
+
+
+
+[436]
+
+[437]
+
+[438]
+
+[439]
+
+[440]
+
+[441]
+
+[442]
+
+[443]
+
+[444]
+
+[445]
+
+[446]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+[447]
+
+[448]
+
+[449]
+
+[450]
+Underfull \hbox (badness 3965) in paragraph at lines 2001--2003
+[]\TU/FandolSong-Regular(0)/m/n/10.53937 在 不 致 混 淆 时，|  此 结 果 也 可 表 述 为 在 典 范 同
+ 构 意 义 下 的 等 式
+ []
+
+
+
+[451]
+
+[452]
+
+[453]
+
+[454]
+
+[455]
+
+[456]
+
+[457]
+
+[458]
+
+[459]
+
+[460]
+
+[461]
+
+[462]
+
+[463]
+
+[464]
+
+[465]
+
+[466]
+
+[467]
+
+[468]
+
+[469]
+
+[470]
+
+[471]
+
+[472]
+
+[473]
+
+[474]
+
+[475]
+Underfull \hbox (badness 1924) in paragraph at lines 3348--3351
+[]\TU/FandolSong-Regular(0)/m/n/10.53937 根 据  |（[]\TU/lmr/m/n/10.53937 3.4.3[]\
+TU/FandolSong-Regular(0)/m/n/10.53937 ） ，|  取 任 意 $\OML/cmm/m/it/10.53937 T$\TU
+/lmr/m/n/10.53937 -\TU/FandolSong-Regular(0)/m/n/10.53937 预 概 形 $\OML/cmm/m/it/
+10.53937 Z$\TU/FandolSong-Regular(0)/m/n/10.53937 ，|  将 $\OML/cmm/m/it/10.53937
+ X; Y; S$ \TU/FandolSong-Regular(0)/m/n/10.53937 分 别 替 换 为
+ []
+
+
+
+[476]
+
+[477]
+Underfull \hbox (badness 1038) in paragraph at lines 3498--3502
+\TU/FandolSong-Regular(0)/m/n/10.53937 也 交 换。|  由 $\OML/cmm/m/it/10.53937 g[] \
+OT1/cmr/m/n/10.53937 = \OML/cmm/m/it/10.53937 g[]$\TU/FandolSong-Regular(0)/m/n
+/10.53937 ，| $[]\OT1/cmr/m/n/10.53937 (\OML/cmm/m/it/10.53937 k\OT1/cmr/m/n/10.
+53937 (\OML/cmm/m/it/10.53937 y\OT1/cmr/m/n/10.53937 ))$ \TU/FandolSong-Regular
+(0)/m/n/10.53937 的 唯 一 点 在 $\OT1/cmr/m/n/10.53937 (\OML/cmm/m/it/10.53937 g[]; 
+g[]\OT1/cmr/m/n/10.53937 )[]$ \TU/FandolSong-Regular(0)/m/n/10.53937 下 的 像 属 于
+ []
+
+
+
+[478]
+
+[479]
+
+[480]
+
+[481]
+
+[482]
+
+[483]
+
+[484]
+
+[485]
+
+[486]
+
+[487]
+
+[488]
+
+[489]
+
+[490]
+
+[491]
+
+[492]
+
+[493]
+
+[494]
+
+[495]
+
+[496]
+
+[497]
+
+[498]
+
+[499]
+
+[500]
+
+[501]
+
+[502]
+
+[503]
+
+[504]
+
+[505]
+
+[506]
+
+[507]
+
+[508]
+
+[509]
+
+[510]
+
+[511]
+
+[512]
+
+[513]
+
+[514]
+
+[515]
+
+[516]
+
+[517]
+
+[518]
+
+[519]
+
+[520]
+
+[521]
+
+[522]
+
+[523]
+
+[524]
+
+[525]
+
+[526]
+
+[527]
+
+[528]
+
+[529]
+
+[530]
+
+[531]
+
+[532]
+
+[533]
+
+[534]
+
+[535]
+
+[536]
+
+[537]
+
+[538]
+
+[539]
+
+[540]
+
+[541]
+
+[542]
+
+[543]
+
+[544]
+
+[545]
+
+[546]
+
+[547]
+
+[548]
+
+[549]
+
+[550]
+
+[551]
+
+[552]
+
+[553]
+
+[554]
+
+[555]
+
+[556]
+
+[557]
+
+[558]
+
+[559]
+
+[560]) (./text/ch2.tex
+
+[561]
+
+[562]
+第II章
+
+
+[563
+
+]
+
+[564]
+
+[565]
+
+[566]
+
+[567]
+
+[568]
+
+[569]
+
+[570]
+
+[571]
+
+[572]
+
+[573]
+
+[574]
+
+[575]
+
+[576]
+
+[577]
+
+[578]
+
+[579]
+
+[580]
+
+[581]
+
+[582]
+
+[583]
+
+[584]
+
+[585]
+
+[586]
+
+[587]
+
+[588]
+
+[589]
+
+[590]
+
+[591]
+
+[592]
+
+[593]
+
+[594]
+
+[595]
+
+[596]
+
+[597]
+
+[598]
+
+[599]
+
+[600]
+
+[601]
+
+[602]
+
+[603]
+
+[604]
+
+[605]
+
+[606]
+
+[607]
+
+[608]
+
+[609]
+
+[610]
+
+[611]
+
+[612]
+
+[613]
+
+[614]
+
+[615]
+
+[616]
+
+[617]
+
+[618]
+
+[619]
+
+[620]
+
+[621]
+
+[622]
+
+[623]
+
+[624]
+
+[625]
+
+[626]
+
+[627]
+
+[628]
+
+[629]
+
+[630]
+
+[631]
+
+[632]
+
+[633]
+
+[634]
+
+[635]
+
+[636]
+
+[637]
+
+[638]
+
+[639]
+Underfull \hbox (badness 1231) in paragraph at lines 2846--2848
+[][][]\TU/FandolSong-Regular(0)/b/n/10.53937 推 论  |（\TU/lmr/bx/n/10.53937 4.2.6
+\TU/FandolSong-Regular(0)/b/n/10.53937 ）|  \TU/FandolSong-Regular(0)/m/n/10.539
+37 假 设 每 个 可 逆 $\U/rsfs/m/n/10.95 O[]$\TU/lmr/m/n/10.53937 -\TU/FandolSong-Regu
+lar(0)/m/n/10.53937 模 都 平 凡  |（\TU/lmr/m/n/10.53937 I\TU/FandolSong-Regular(0)/
+m/n/10.53937 ，| \TU/lmr/m/n/10.53937 2.4.8\TU/FandolSong-Regular(0)/m/n/10.5393
+7 ） 。|  设 $\OML/cmm/m/it/10.53937 V \OT1/cmr/m/n/10.53937 =
+ []
+
+
+
+[640]
+
+[641]
+
+[642]
+
+[643]
+Underfull \vbox (badness 4168) has occurred while \output is active []
+
+
+
+[644]
+
+[645]
+
+[646]
+
+[647]
+
+[648]
+
+[649]
+
+[650]
+
+[651]
+
+[652]
+
+[653]
+Underfull \hbox (badness 1845) in paragraph at lines 3292--3296
+\TU/FandolSong-Regular(0)/m/n/10.53937 事 实 上，| $\OML/cmm/m/it/10.53937 Z[]$ \TU
+/FandolSong-Regular(0)/m/n/10.53937 是 $\OML/cmm/m/it/10.53937 Z$ \TU/FandolSong
+-Regular(0)/m/n/10.53937 的 仿 射 开 集，|  因 而 把 $\U/rsfs/m/n/10.95 J\OT1/cmr/m/n/10
+.53937 (\OML/cmm/m/it/10.53937 n\OT1/cmr/m/n/10.53937 )$ \TU/FandolSong-Regular
+(0)/m/n/10.53937 看 成 $\U/rsfs/m/n/10.95 O[]$\TU/lmr/m/n/10.53937 -\TU/FandolSon
+g-Regular(0)/m/n/10.53937 模 时，|  有
+ []
+
+
+
+[654]
+
+[655]
+Underfull \hbox (badness 4024) in paragraph at lines 3384--3385
+[]\TU/FandolSong-Regular(0)/m/n/10.53937 对 最 后 两 项 断 言，|  使 用 这 里 $\OML/cmm/m/i
+t/10.53937 ^^[[]$ \TU/FandolSong-Regular(0)/m/n/10.53937 为 恒 等 同 态 这 一 事 实，|  以
+ 及
+ []
+
+
+
+[656]
+
+[657]
+
+[658]
+
+[659]
+
+[660]
+
+[661]
+
+[662]
+
+[663]
+
+[664]
+
+[665]
+
+[666]
+
+[667]
+
+[668]
+
+[669]
+
+[670]
+
+[671]
+
+[672]
+
+[673]
+
+[674]
+
+[675]
+
+[676]
+
+[677]
+
+[678]
+
+[679]
+
+[680]
+
+[681]
+
+[682]
+
+[683]
+
+[684]
+
+[685]
+
+[686]
+
+[687]
+
+[688]
+
+[689]
+
+[690]
+
+[691]
+
+[692]
+
+[693]
+
+[694]
+
+[695]
+
+[696]
+
+[697]
+
+[698]
+
+[699]
+
+[700]
+
+[701]
+
+[702]
+
+[703]
+
+[704]
+
+[705]
+
+[706]
+
+[707]
+
+[708]
+
+[709]
+
+[710]
+
+[711]
+
+[712]
+
+[713]
+
+[714]
+
+[715]
+
+[716]
+
+[717]
+
+[718]
+
+[719]
+
+[720]
+
+[721]
+
+[722]
+
+[723]
+Underfull \hbox (badness 1565) in paragraph at lines 5398--5400
+[][][]\TU/FandolSong-Regular(0)/b/n/10.53937 命 题  |（\TU/lmr/bx/n/10.53937 8.1.7
+\TU/FandolSong-Regular(0)/b/n/10.53937 ）|  \TU/FandolSong-Regular(0)/m/n/10.539
+37 设 $\OML/cmm/m/it/10.53937 Y$ \TU/FandolSong-Regular(0)/m/n/10.53937 为 预 概 形，
+| $\U/rsfs/m/n/10.95 J$ \TU/FandolSong-Regular(0)/m/n/10.53937 为 $\U/rsfs/m/n/1
+0.95 O[]$ \TU/FandolSong-Regular(0)/m/n/10.53937 的 拟 凝 聚 理 想，| $\OML/cmm/m/it/1
+0.53937 X \OT1/cmr/m/n/10.53937 =
+ []
+
+
+
+[724]
+
+[725]
+
+[726]
+
+[727]
+
+[728]
+
+[729]
+
+[730]
+
+[731]
+
+[732]
+
+[733]
+
+[734]
+
+[735]
+
+[736]
+
+[737]
+
+[738]
+
+[739]
+
+[740]
+
+[741]
+
+[742]
+
+[743]
+
+[744]
+
+[745]
+
+[746]
+
+[747]
+
+[748]
+
+[749]
+
+[750]
+Underfull \hbox (badness 1365) in paragraph at lines 6368--6369
+[]\TU/FandolSong-Regular(0)/m/n/10.53937 证 明 \TU/lmr/m/n/10.53937 (ii) \TU/Fand
+olSong-Regular(0)/m/n/10.53937 时，|  可 归 结 于 $\OML/cmm/m/it/10.53937 Y$ \TU/Fand
+olSong-Regular(0)/m/n/10.53937 仿 射，|  因 而 $\U/rsfs/m/n/10.95 S \OT1/cmr/m/n/10.
+53937 = []$\TU/FandolSong-Regular(0)/m/n/10.53937 ，|  其 中 $\OML/cmm/m/it/10.539
+37 S \OT1/cmr/m/n/10.53937 =
+ []
+
+
+
+[751]
+
+[752]
+
+[753]
+
+[754]
+
+[755]
+
+[756]
+
+[757]
+
+[758]
+
+[759]
+
+[760]
+
+[761]
+
+[762]
+
+[763]
+
+[764]
+
+[765]
+
+[766]
+
+[767]
+
+[768]
+
+[769]
+
+[770]
+
+[771]) (./text/ch3_01_05.tex
+
+[772
+
+
+]
+第III章
+
+
+[773]
+
+[774]
+Underfull \hbox (badness 1275) in paragraph at lines 69--71
+\TU/FandolSong-Regular(0)/m/n/10.53937 对 应 于 上 链 $\OML/cmm/m/it/10.53937 g[]$\T
+U/FandolSong-Regular(0)/m/n/10.53937 ，|  令 $\OML/cmm/m/it/10.53937 g[]\OT1/cmr/
+m/n/10.53937 (\OML/cmm/m/it/10.53937 j[]; [] ; j[]\OT1/cmr/m/n/10.53937 ) = \OM
+L/cmm/m/it/10.53937 "m[]$\TU/FandolSong-Regular(0)/m/n/10.53937 ；|  这 里 严 格 递 增
+ 序 列
+ []
+
+
+
+[775]
+
+[776]
+
+[777]
+
+[778]
+
+[779]
+
+[780]
+
+[781]
+
+[782]
+
+[783]
+
+[784]
+
+[785]
+
+[786]
+
+[787]
+Underfull \hbox (badness 6592) in paragraph at lines 585--587
+[]\TU/FandolSong-Regular(0)/m/n/10.53937 按 定 义  |（\TU/lmr/m/n/10.53937 II\TU/Fa
+ndolSong-Regular(0)/m/n/10.53937 ，| \TU/lmr/m/n/10.53937 2.5.2\TU/FandolSong-Re
+gular(0)/m/n/10.53937 ） ，| $\OT1/cmr/m/n/10.53937 ^^@(\OML/cmm/m/it/10.53937 U[
+]; []\OT1/cmr/m/n/10.53937 ) = (\OML/cmm/m/it/10.53937 M[]\OT1/cmr/m/n/10.53937
+ )[]$\TU/FandolSong-Regular(0)/m/n/10.53937 ，|  故
+ []
+
+
+
+[788]
+
+[789]
+
+[790]
+
+[791]
+
+[792]
+
+[793]
+
+[794]
+
+[795]
+
+[796]
+
+[797]
+
+[798]
+
+[799]
+
+[800]
+
+[801]
+
+[802]
+Underfull \vbox (badness 1194) has occurred while \output is active []
+
+
+
+[803]
+
+[804]
+
+[805]
+
+[806]
+
+[807]
+
+[808]
+
+[809]
+Underfull \hbox (badness 1521) in paragraph at lines 1276--1277
+\TU/FandolSong-Regular(0)/m/n/10.53937 都 是 有 限 型 分 次 $\OML/cmm/m/it/10.53937 S$
+\TU/lmr/m/n/10.53937 -\TU/FandolSong-Regular(0)/m/n/10.53937 模。|  故 对 于 带 自 然 滤
+ 过 $\OML/cmm/m/it/10.53937 A$\TU/lmr/m/n/10.53937 -\TU/FandolSong-Regular(0)/m/
+n/10.53937 模 结 构 的 严 格 射 影 系
+ []
+
+
+
+[810]
+
+[811]
+
+[812]
+
+[813]
+
+[814]
+
+[815]
+
+[816]
+
+[817]
+
+[818]
+
+[819]
+
+[820]
+
+[821]
+
+[822]
+
+[823]
+
+[824]
+
+[825]
+
+[826]
+
+[827]
+
+[828]
+
+[829]
+
+[830]
+
+[831]
+
+[832]
+
+[833]
+
+[834]
+
+[835]
+
+[836]
+
+[837]
+
+[838]
+
+[839]
+
+[840]
+
+[841]
+
+[842]) (./text/ch3_06a.tex
+
+[843]
+
+[844]
+
+[845]
+
+[846]
+
+[847]
+
+[848]
+
+[849]
+
+[850]
+
+[851]
+
+[852]) (./text/ch3_06b.tex
+
+[853]
+
+[854]
+
+[855]
+
+[856]
+
+[857]
+
+[858]
+
+[859]
+
+[860]) (./text/ch3_06c.tex
+
+[861]
+
+[862]
+
+[863]
+
+[864]
+
+[865]
+Underfull \hbox (badness 1178) in paragraph at lines 236--240
+\TU/FandolSong-Regular(0)/m/n/10.53937 表 示 这 一 谱 函 子 的 终 值，|  称 为 两 个 复 形 的 \TU
+/FandolSong-Regular(0)/b/n/10.53937 整 体 超 \TU/lmr/bx/n/10.53937 Tor\TU/FandolSo
+ng-Regular(0)/m/n/10.53937 。|  当 两 个 复 形
+ []
+
+
+Underfull \hbox (badness 2564) in paragraph at lines 236--240
+\TU/FandolSong-Regular(0)/m/n/10.53937 只 在 第 零 项 非 零 时，|  写 作 $[][]\OT1/cmr/m/n
+/10.53937 (\OML/cmm/m/it/10.53937 X[]; X[]\OT1/cmr/m/n/10.53937 ; \U/rsfs/m/n/1
+0.95 F[]\OML/cmm/m/it/10.53937 ; \U/rsfs/m/n/10.95 F[]\OT1/cmr/m/n/10.53937 )$\
+TU/FandolSong-Regular(0)/m/n/10.53937 。|  依 一 般 约 定，|
+ []
+
+) (./continuations/iii2_67.tex
+
+[866]
+
+[867]
+
+[868]
+
+[869]
+
+[870]
+
+[871]
+
+[872]
+
+[873]) (./continuations/iii2_68.tex
+
+[874]) (./continuations/iii2_69.tex
+
+[875]
+
+[876]
+
+[877]
+
+[878]
+
+[879]
+
+[880]) (./continuations/iii2_610.tex
+
+[881]
+
+[882]
+
+[883]
+
+[884]) (./continuations/iii2_71_72.tex
+
+[885]
+
+[886]
+
+[887]
+
+[888]
+
+[889]) (./continuations/iii2_73.tex
+
+[890]
+
+[891]
+
+[892]
+
+[893]
+
+[894]
+
+[895]) (./continuations/iii2_74.tex
+
+[896]
+
+[897]
+
+[898]
+
+[899]) (./continuations/iii2_75_76.tex
+
+[900]
+
+[901]
+
+[902]
+
+[903]
+
+[904]
+
+[905]
+
+[906]) (./continuations/iii2_77.tex
+
+[907]
+
+[908]
+
+[909]
+
+[910]
+
+[911]
+
+[912]) (./continuations/iii2_78_79.tex
+
+[913]
+
+[914]
+
+[915]
+
+[916]
+
+[917]
+
+[918]
+
+[919]
+Underfull \hbox (badness 2027) in paragraph at lines 241--242
+[]\TU/FandolSong-Regular(0)/m/n/10.53937 记 此 有 理 系 数 多 项 式 为 $[]\OT1/cmr/m/n/10
+.53937 (\OML/cmm/m/it/10.53937 f; \U/rsfs/m/n/10.95 P[]\OT1/cmr/m/n/10.53937 ; 
+\OML/cmm/m/it/10.53937 y\OT1/cmr/m/n/10.53937 )$ \TU/FandolSong-Regular(0)/m/n/
+10.53937 或 $[]\OT1/cmr/m/n/10.53937 (\U/rsfs/m/n/10.95 P[]\OT1/cmr/m/n/10.53937
+ ; \OML/cmm/m/it/10.53937 y\OT1/cmr/m/n/10.53937 )$\TU/FandolSong-Regular(0)/m/
+n/10.53937 ，|  称 为 关 于
+ []
+
+
+
+[920]) (./text/remaining.tex
+
+[921]
+
+[922
+
+])
+
+[923]
+
+[924
+
+]
+
+[925]
+
+[926] (./text/v1_2.tex
+
+[927
+
+]
+
+[928]
+
+[929]
+
+[930]
+
+[931]
+
+[932]) (./text/v5_01_02.tex
+
+[933]
+
+[934
+
+]
+
+[935]
+
+[936]
+
+[937]
+
+[938]
+
+[939]
+
+[940]
+
+[941]
+
+[942]
+
+[943]) (./text/v5_03_06.tex
+
+[944]
+
+[945]
+
+[946]
+
+[947]
+
+[948]
+
+[949]
+
+[950]
+
+[951]) (./continuations/v_dot_early.tex
+
+[952]
+
+[953]
+
+[954]
+
+[955]
+
+[956]
+Underfull \hbox (badness 1668) in paragraph at lines 133--135
+[]\TU/FandolSong-Regular(0)/m/n/10.53937 给 定 满 足 $[]\OT1/cmr/m/n/10.53937 (\OML
+/cmm/m/it/10.53937 T[]; X\OT1/cmr/m/n/10.53937 ) = \OML/cmm/m/it/10.53937 k$ \T
+U/FandolSong-Regular(0)/m/n/10.53937 的 $\OML/cmm/m/it/10.53937 T[]$\TU/FandolSo
+ng-Regular(0)/m/n/10.53937 ，|  若 存 在 包 含 它 的 $\OML/cmm/m/it/10.53937 X[]$\TU/Fa
+ndolSong-Regular(0)/m/n/10.53937 ，|  使
+ []
+
+
+
+[957]
+
+[958]
+
+[959]
+
+[960]
+
+[961]
+
+[962]
+
+[963]
+
+[964]
+
+[965]
+
+[966]
+
+[967]
+
+[968]
+
+[969]
+
+[970]
+
+[971]
+
+[972]
+
+[973]
+
+[974]
+
+[975]
+
+[976]
+
+[977]
+
+[978]
+
+[979]
+
+[980]
+
+[981]
+
+[982]
+
+[983]
+
+[984]
+
+[985]
+
+[986]) (./continuations/v_dot_middle.tex
+
+[987]
+
+[988]
+
+[989]
+
+[990]
+
+[991]
+
+[992]
+
+[993]
+
+[994]
+
+[995]
+
+[996]
+
+[997]
+
+[998]
+
+[999]
+
+[1000]
+
+[1001]
+
+[1002]
+
+[1003]
+
+[1004]
+
+[1005]) (./continuations/v_dot_late.tex
+
+[1006]
+
+[1007]
+
+[1008]
+
+[1009]
+
+[1010]
+
+[1011]
+
+[1012]
+
+[1013]
+
+[1014]
+
+[1015]
+
+[1016]
+
+[1017]
+
+[1018]
+
+[1019])
+
+[1020]
+
+[1021
+
+
+]
+
+[1022] (./backmatter/volume_I.tex
+
+[1023
+
+
+]
+Underfull \hbox (badness 1430) in paragraph at lines 74--77
+[]\TU/lmr/m/n/9.03374 J.-P. Serre\TU/FandolSong-Regular(0)/m/n/9.03374 ：| \TU/l
+mr/m/n/9.03374 Sur la dimension homologique des anneaux et des modules
+ []
+
+
+
+[1024]
+Underfull \hbox (badness 10000) in paragraph at lines 150--151
+[]|\TU/lmr/m/n/9.03374 0\TU/FandolSong-Regular(0)/m/n/9.03374 ，| \TU/lmr/m/n/9.
+03374 7.2.3 \TU/FandolSong-Regular(0)/m/n/9.03374 及
+ []
+
+[1025
+
+] [1026] [1027]
+
+[1028] [1029
+
+] [1030] [1031] [1032] [1033] [1034] [1035]
+
+[1036] [1037
+
+] [1038] [1039]
+
+[1040]
+
+[1041
+
+]
+
+[1042
+
+]
+Underfull \hbox (badness 1342) in paragraph at lines 699--704
+\TU/lmr/m/n/9.03374 avec les conditions générales d’utilisation ([]$[][][][] []
+ [] [] [][][] [] [][][][][][] [] [][][] [] [][][][][] [] [][][]$[]).
+ []
+
+) (./backmatter/volume_II.tex
+
+[1043]
+
+[1044
+
+]
+
+[1045]
+
+[1046
+
+] [1047] [1048]
+
+[1049]
+
+[1050
+
+] [1051] [1052]
+
+[1053]
+
+[1054
+
+] [1055] [1056]
+
+[1057]
+
+[1058
+
+]
+
+[1059]
+
+[1060]
+
+[1061]
+
+[1062]
+
+[1063]
+
+[1064]) (./backmatter/volume_III_1.tex
+
+[1065]
+
+[1066
+
+
+]
+
+[1067]
+
+[1068]
+Underfull \hbox (badness 1194) in paragraph at lines 49--50
+\TU/FandolSong-Regular(0)/b/n/10.53937 译 者 说 明。|  \TU/FandolSong-Regular(0)/m/n
+/10.53937 本 部 分 原 著 新 增 的 参 考 文 献 为 \TU/lmr/m/n/10.53937 [27] |\TU/FandolSong-R
+egular(0)/m/n/10.53937 —| \TU/lmr/m/n/10.53937 [29]\TU/FandolSong-Regular(0)/m/
+n/10.53937 ，|  编 号 承 接 此 前
+ []
+
+
+
+[1069
+
+]
+
+[1070
+
+]
+
+[1071]
+
+[1072]
+
+[1073]
+
+[1074] [1075
+
+] [1076]) (./backmatter/volume_III_2.tex
+
+[1077]
+
+[1078
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 20--21
+[]|\TU/lmr/m/n/10.53937 6.6.8\TU/FandolSong-Regular(0)/m/n/10.53937 ；| \TU/lmr/
+m/n/10.53937 6.7.1\TU/FandolSong-Regular(0)/m/n/10.53937 ；|
+ []
+
+[1079]
+Underfull \hbox (badness 10000) in paragraph at lines 48--49
+[]|\TU/lmr/m/n/10.53937 6.6.2\TU/FandolSong-Regular(0)/m/n/10.53937 ；| \TU/lmr/
+m/n/10.53937 6.6.8\TU/FandolSong-Regular(0)/m/n/10.53937 ；|
+ []
+
+[1080] [1081]) (./backmatter/errata_III_2.tex
+
+[1082]
+
+[1083
+
+]
+
+[1084]
+
+[1085]
+
+[1086]
+
+[1087]
+
+[1088]) (./backmatter/bibliography_IV_1.tex
+
+[1089]
+
+[1090]) (./backmatter/errata_IV_selected.tex
+
+[1091
+
+]
+
+[1092
+
+]
+
+[1093]
+
+[1094])
+
+[1095]
+
+[1096
+
+]
+
+[1097]
+
+[1098] (./backmatter/old_note_I.tex
+
+[1099]
+
+[1100
+
+]
+
+[1101]) (./backmatter/old_note_II.tex
+
+[1102]
+Underfull \hbox (badness 1478) in paragraph at lines 18--19
+[][][][]$[]\TU/lmr/m/n/9.03374 ), implique l’accord avec les conditions général
+es d’utilisation
+ []
+
+
+
+[1103
+
+]) (./backmatter/old_note_III_1.tex
+
+[1104]
+
+[1105
+
+]
+
+[1106
+
+]
+Underfull \hbox (badness 1478) in paragraph at lines 30--34
+[][][][]$[]\TU/lmr/m/n/9.03374 ), implique l’accord avec les conditions général
+es d’utilisation
+ []
+
+) (./backmatter/additional_sources.tex
+
+[1107]
+
+[1108
+
+]
+Underfull \hbox (badness 2717) in paragraph at lines 9--10
+[]\TU/lmr/m/it/10.53937 Alexandre Grothendieck’s EGA V. Translation and Editing
+ of
+ []
+
+
+Underfull \hbox (badness 3417) in paragraph at lines 9--10
+\TU/lmr/m/it/10.53937 his ‘prenotes’\TU/FandolSong-Regular(0)/m/n/10.53937 ，|  
+英 译 及 编 辑 \TU/lmr/m/n/10.53937 Piotr Blass\TU/FandolSong-Regular(0)/m/n/10.5393
+7 、| \TU/lmr/m/n/10.53937 Joseph Blass\TU/FandolSong-Regular(0)/m/n/10.53937 。|
+  用 户 文 件：|
+ []
+
+
+
+[1109])
+
+[1110] (./main.aux)
+ ***********
+LaTeX2e <2024-11-01> patch level 2
+L3 programming layer <2022/07/14>
+ ***********
+
+
+LaTeX Font Warning: Size substitutions with differences
+(Font)              up to 0.65625pt have occurred.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 55102 strings out of 475867
+ 1433514 string characters out of 5775831
+ 1572545 words of memory out of 5000000
+ 77154 multiletter control sequences out of 15000+600000
+ 582406 words of font info for 181 fonts, out of 8000000 for 9000
+ 14 hyphenation exceptions out of 8191
+ 121i,27n,124p,952b,1114s stack positions out of 10000i,1000n,20000p,200000b,200000s
+
+Output written on main.pdf (1130 pages).

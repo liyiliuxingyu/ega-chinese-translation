@@ -1,0 +1,37 @@
+Proposition 6.1.
+Read dim f(Xi) ≥m + 1 and later dim f(Z) ≤m −1.
+The laius (speech) [Fr or Latin] (speech) [. 69] general of 7.1 are valid as such in the
+case of any m. 7.2, 7.3 mutatis mutandis [Latin] (pay attention in 7.2 to the notation m,
+confusing there), on the other hand in the proof of 7.4 we no longer need to proceed closer
+and closer but we may take straightaway a linear section of codimension m = n.
+In 8.2 replace condition dim Yξ > dim X by dim Yξ > dim X −m [illegible, ask AG]
+and the hypothesis dim f(Xi) > 0 by dim f(Xi) ≥m. The analogous modiﬁcation is in
+the sequel to 8.2. Since 8.3 gives an example there is no point in changing it so we keep
+m = 1.
+I leave it as an exercise to you [Dieudonn´e or Blass] [Tr] to ﬁnd good statements for
+any m corresponding to 8.4, 8.5, and 8.6 (pages 30, 31, 32). It is not necessary to do this
+exercise unless you feel like doing it.
+I think that essentially all the developments of No. 8 except 8.6 can be adapted to
+the case of linear sections with any m. To do it enforme [Fr] would be without a doubt
+quite a long and fastidious exercise. I have to admit that i do not know any applications
+depending in an essential manner on the analysis of this more general situation so we are
+not really obligated to include these developments in these Elements. On the other hand,
+experience proves that the fact of writing up in this more general context obligates often
+to better ‘devisser’ (unscrew) et fait mieux comprehendre le fourbis (the whole caboose)
+and often sans beaucoup plus de mal, in addition a certain number of syntax exercises in a
+property geometric context like here will do no harm and of course it is not at all excluded
+that we will one day use it or need it and we will be happy to ﬁnd it. Still I leave up to you
+the whole decision about this subject and I restrict myself simply to summarize simply the
+statements that we could perhaps give in this connection (a ce proper).
+Let us again assume that f: X →P is unramiﬁed and that X is smooth over S
+with components of dimension ≥m. Then X(m) = V 0 we distinguish therefore the sub-
+prescheme X(m)sing = V 1 of the singular zeros of φm relative to Grassm, which is also
+formed geometrically from pairs (x, ξ) such that the linear variety Lξ cuts excessively the
+tangent space to X at x (considered as linear subvarieties of P), i.e. such that the two
+spaces do not generate all of P. Contrary to what happens for m = 1, if m is arbitrary
+the morphism X(m)sing →X is not in general smooth since the variety of L which pass
+through x [illegible, ask AG] and cut excessively a given linear subvariety T ∋x is not in
+general smooth over k: this variety [illegible, ask AG] only the loneve of the subvariety
+smooth formed by ξ such that the dimension of T ∩Lξ is just one more than the “normal”
+dimensioin (n −m) (n = dim T, m = codim L). V [page 71 Fr]. Barring an error, the set
+46

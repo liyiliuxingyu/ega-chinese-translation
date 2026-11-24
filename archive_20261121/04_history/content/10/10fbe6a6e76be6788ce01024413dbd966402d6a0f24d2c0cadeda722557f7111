@@ -1,0 +1,133 @@
+"""Prepare original materials for the v17 handover, with byte-level mapping."""
+from pathlib import Path
+import hashlib
+import json
+import shutil
+import zipfile
+
+TASK = Path(__file__).resolve().parents[1]
+STAGE = TASK / "bundle/EGA_v17_handover"
+OLD = next((TASK / "unpacked/v16_complete").iterdir())
+STAGE.mkdir(parents=True, exist_ok=True)
+MAP = {
+    "00_从这里开始": "04_history/v16_handover",
+    "01_当前工程": "04_history/v16_project",
+    "02_当前成品": "04_history/v16_outputs",
+    "03_原著底本": "03_sources",
+    "04_专项核查": "04_history/special_audits",
+    "05_历史独立工程": "04_history/standalone_projects",
+    "06_工具与环境": "04_history/v16_tools",
+}
+
+def sha(p):
+    h = hashlib.sha256()
+    with p.open("rb") as f:
+        for block in iter(lambda: f.read(1024*1024), b""):
+            h.update(block)
+    return h.hexdigest()
+
+def copy(src, dst):
+    dst.parent.mkdir(parents=True, exist_ok=True)
+    shutil.copy2(src, dst)
+    assert src.stat().st_size == dst.stat().st_size and sha(src) == sha(dst)
+
+mapping = []
+for src in sorted(OLD.rglob("*")):
+    if not src.is_file():
+        continue
+    rel = src.relative_to(OLD)
+    if len(rel.parts) == 1:
+        dstrel = Path("04_history/v16_handover") / ("package_" + rel.name)
+    else:
+        dstrel = Path(MAP[rel.parts[0]]) / Path(*rel.parts[1:])
+    copy(src, STAGE / dstrel)
+    mapping.append({"original_path": rel.as_posix(), "packaged_path": dstrel.as_posix(),
+                    "bytes": src.stat().st_size, "sha256": sha(src)})
+
+history_record = {
+    "input_archive": "EGA中文译校_第十六版_完整续作工程包.zip",
+    "input_archive_bytes": 325939860,
+    "input_archive_sha256": "8d055847ed34ddd1e0ea822e7e5b080ae9b598a3b5081246abcf9c93d14ae8d7",
+    "archive_crc_verified": True,
+    "all_original_regular_files_preserved": True,
+    "regular_file_count": len(mapping),
+    "mapping": mapping,
+    "note": "Original package paths are mapped explicitly; historical manifests are preserved as records, not the current root manifest.",
+}
+(STAGE / "04_history/V16_MIGRATION.json").write_text(
+    json.dumps(history_record, ensure_ascii=False, indent=2)+"\n")
+
+archive_dir = STAGE / "05_Dot/original_archives"
+archives = [TASK / "recovered/dot/Dot对话_续作工程_20261119.zip"]
+archives += sorted((TASK / "recovered/dot_latest").rglob("*.zip"))
+assert len(archives) == 3, archives
+archive_records = []
+for src in archives:
+    with zipfile.ZipFile(src) as z:
+        assert z.testzip() is None, src
+        entries = len(z.infolist())
+    dst = archive_dir / src.name
+    copy(src, dst)
+    archive_records.append({"name": src.name, "packaged_path": dst.relative_to(STAGE).as_posix(),
+                            "sha256": sha(src), "bytes": src.stat().st_size,
+                            "zip_entries": entries, "crc_pass": True})
+
+early = json.loads((TASK / "integration/early/early_sources.json").read_text())
+middle = json.loads((TASK / "integration/middle/integration_notes.json").read_text())["batches"]
+late = json.loads((TASK / "integration/late/integration_notes.json").read_text())["sources"]
+items = []
+for entry in early:
+    items.append((Path(entry["file"]), entry["sha256"], "new_body",
+                  "continuations/v_dot_early.tex", entry.get("progress")))
+for entry in middle:
+    items.append((Path(entry["source_tex"]), entry["source_sha256"], "new_body",
+                  "continuations/v_dot_middle.tex", entry.get("progress")))
+for i, entry in enumerate(late):
+    src = TASK / entry["path"]
+    items.append((src, entry["sha256"],
+                  "same_text_collation" if i >= 17 else "new_body",
+                  "text/v1_2.tex" if i >= 17 else "continuations/v_dot_late.tex", None))
+assert len(items) == 56 and len({str(x[0]) for x in items}) == 56
+records = []
+allowed = {".tex", ".sty", ".cls", ".md", ".txt", ".json", ".py", ".sh", ".yaml", ".yml"}
+excluded_dirs = {"texmf", "vendor", "build", "__pycache__", ".git"}
+for index, (src, expected, treatment, integrated, progress) in enumerate(items, 1):
+    assert src.is_file() and sha(src) == expected, src
+    folder = STAGE / "05_Dot/batches" / f"{index:03d}"
+    copied = []
+    for p in sorted(src.parent.rglob("*")):
+        if not p.is_file() or p.suffix.lower() not in allowed:
+            continue
+        rel = p.relative_to(src.parent)
+        if any(part in excluded_dirs for part in rel.parts):
+            continue
+        copy(p, folder / rel)
+        copied.append((folder / rel).relative_to(STAGE).as_posix())
+    assert (folder / src.name).is_file()
+    records.append({
+        "order": index, "original_tex_name": src.name, "source_tex_sha256": expected,
+        "packaged_tex_path": (folder / src.name).relative_to(STAGE).as_posix(),
+        "integration_treatment": treatment, "current_project_input": integrated,
+        "original_progress_historical_only": progress, "extracted_engineering_files": copied,
+    })
+
+dot = {"actual_source_batches": 56, "new_body_batches": 54, "same_text_collation_batches": 2,
+       "excluded_duplicate": "8.14–8.15 batch backup 前批8.13.tex; preserved in original archive.",
+       "new_translation_not_from_Dot": ["§11, original pp.41–43", "§14 projection bridge, original pp.54–55"],
+       "original_archives": archive_records, "batches": records,
+       "archive_scope_note": "The total Dot ZIP also contains unrelated projects. They are archived intact but are not inserted into the EGA book or counted as EGA translation."}
+(STAGE / "05_Dot/DOT_BATCHES.json").write_text(json.dumps(dot, ensure_ascii=False, indent=2)+"\n")
+project_checks = TASK / "work/EGA_v17/checks"
+shutil.copy2(STAGE / "05_Dot/DOT_BATCHES.json", project_checks / "DOT_BATCHES.json")
+shutil.copy2(STAGE / "04_history/V16_MIGRATION.json", project_checks / "v16_complete_migration.json")
+corpus = json.loads((TASK / "integration/source_corpus_manifest.json").read_text())
+for rec in corpus["source_files"]:
+    rel = Path("03_sources") / rec["suggested_stable_filename"]
+    assert sha(STAGE / rel) == rec["sha256"], rel
+    rec["packaged_path"] = rel.as_posix()
+corpus["complete_v16_archive"] = {k:v for k,v in history_record.items() if k != "mapping"}
+(project_checks / "source_corpus_manifest.json").write_text(json.dumps(corpus, ensure_ascii=False, indent=2)+"\n")
+print(json.dumps({"old_regular_files_preserved": len(mapping),
+                  "source_files": len(corpus["source_files"]),
+                  "dot_batches": len(records), "dot_archives": len(archives),
+                  "stage": str(STAGE)}, ensure_ascii=False, indent=2))

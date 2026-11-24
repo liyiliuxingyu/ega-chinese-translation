@@ -1,0 +1,16 @@
+{
+ "batch":84,
+ "volume":"第五卷预备笔记",
+ "part":"第三篇",
+ "section":"命题4.3：任意底证明及其后作者说明",
+ "fr_physical":[143,144,145,146],
+ "fr_printed_handwritten":[150,151,152,153],
+ "en_physical":[108,109,110],
+ "first":"Esquissons maintenant le cas général",
+ "last":"扭曲射影丛的说明止；不含引入4.4的下一段",
+ "next":{"fr":146,"en":110,"anchor":"Descendant à nouveau par terre；继而命题4.4"},
+ "not_merged_with_1158_page_baselines":true,
+ "printed_volume_IV_1_unchanged":true,
+ "page_count":7,
+ "readme_distinguishes_source_from_modern_notes":true
+}

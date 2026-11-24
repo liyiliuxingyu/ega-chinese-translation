@@ -1,0 +1,425 @@
+PAGE 53
+b) If in 13.2 we abandon the hypothesis that X is geometrically irreducible the conclusion
+obviously does not remain the same (since an algebraic poly-elementary scheme is
+geometrically irreducible). It holds, however, in a weaker form which is obtained by
+omitting in deﬁnition 13.1 the word “connected” this is shown by the proof that we
+have given.
+c) (To be possibly included in the statement of 13.2) Let with the notations of 13.2 Φ be a
+ﬁnite subset of X formed by smooth points of X and let us suppose that Φ is contained
+in an open aﬃne of X. Then Φ allows a fundamental system of open polyelementary
+neighborhoods. Evidently we may suppose that Φ consists of closed points. The proof
+is essentially the same except that in formula 13.3 in slightly diﬀerent form we have:
+there exists a linear subvariety C of P r of codimension not meeting Φ ∪Y and such
+that for every xi ∈Φ(k), the linear subvariety of Li of codimension (n −1) generated
+by C at xi has the properties a), b), c) of 13.3. To verify this point we note that it
+suﬃces to verify that the generic C has the above-mentioned properties since for such
+a ??????? each Li is generic among the L of codimension n passing through xi so
+that we can apply 13.3 in the initial form (or at least in the form that we have proven
+which was [Fr]: every L0 suﬃciently general passing through x has properties a), b),
+c).
+d) By proceeding as explained in 7.1, we may give variants of 13.2 in the case where we
+replace the base ﬁeld k by a general base Y prescheme. Let us remark the following
+(without proof): Let f: X →Y be a ﬂat projective morphism with geometrically
+irreducible and (R2) ﬁbers, S′ a subscheme of X ﬁnite over S, x ∈S, suppose that
+for every x ∈S′ over s, Xs is smooth over k(s) at x. Then there exists an open
+neighborhood U of s and an open neighborhood V of S′ U in X
+U such that
+V →U is poly-elementary. If Y is a closed subscheme of X not meeting S′ and such
+that the set X of points where Y is not smooth over S dim Zs ≤dim Xs −2 then we
+may above tale V containe din X −Y .
+e) One of the reasons why 13.2 is interesting is the topological structure particularly
+simple of the elementary algebraic schemes U. For example if the base ﬁeld is the
+ﬁeld of complex numbers and if Y en denotes the analytic space associated to U then
+the homotopy groups πi(U en) are zero for i ̸= 1 and π1 is a successive extension of free
+groups. Thus U en is a “space K(π1, 1)” classifying for π1, more precisely its universal
+covering space is homeomorphic to Cn and a fortiori is contractible and this covering
+is a “universal principal ﬁbration” with group π1.
+§14 Conic Projections
+53
+
+PAGE 54
+N.B. We have already used Conic Projections in diﬀerent contexts, notably at the
+end of No. 8, formulation of 10.4 and others and the “sorite” that follows should without
+a doubt come sooner in the beginning of the paragraph and eventually in the auxillary
+paragraph “grassmanian”. Let C = P(F) be a linear subvariety of P(E) = P of relative
+dimension r −m −1 over S, i.e. of codimension (m + 1) in P so that F is a quotient of
+E locally free of rank r −m, F = E/G where G is locally free of rank m + 1. We have
+deﬁned in the algebraic way of Chapter II a morphism
+pc: P −C = P(E) −P(E/G) →P(G)
+which we will interpret geometrically and which will be called (because of the description
+that follows) the conic projection with center C. (N.B. We assume r −m −1 is contained
+between −1 and r −1, i.e. m is between 0 and r, nothing more. For this let us begin
+by interpreting P(G) as a closed subscheme of Grassm(P) = Grassr−m+1(P) due to the
+obvious homomorphism of functors P(G) →Grassr−m+1(E) obtained by considering for
+every invertible quotient G/G′ of G the locally free module of rank (r −m) + 1 E/G′
+of E and the same after every base change). The above homomorphism of functors is a
+homomorphism and since the ﬁrst one is proper over S the second one separated it is a
+closed immersion. More generally we may need to make explicit the closed immersion of
+grassmanians of G, i.e. of P(G) (in the sense of functors) into those of E, i.e. of P(E). The
+image (in the sense of functors) of the obtained morphism is formed from linar subvarieties
+L of the desired dimension of P that contain C. Let us denote by Q(C) this image in the
+case that we are studying (i.e. for the dimensions speciﬁed above) and identifying P(G)
+with Q(C) the morphism of conic projection
+pc: P −C →Q(C) ⊂Grassm(P)
+is nothing else but the one that associated with every sectin of P −C the unique linar
+subvariety L of P of codimension m containing at the same time C and the given section
+(note, obviously that by containing a section we mean that the section factors by L). If
+not, we have an f: X →P it makes sense to consider the composition
+X −f −1(C) →P −C →Q(C)
+which we may call conic projection of X relative to f and with center C denoted pX
+c or
+simply pc. We point out that it is not in general deﬁned over all of X, precisely it is such
+if and only if f −1(C) = φ, i.e. f(x) does not meet the center of the projection C. We shall
+54
+
+PAGE 55
+give another interpretation of this morphism in terms of construction used in previous Nos.
+For this with the notations introduced elsewhere let us consider
+X
+q
+←−−−−X(m)
+Q(C)=X(m)
+X
+Grassm Q(C)
+yp
+Q(C)
+Let us note on the other hand that q induces an isomorphism
+q′: q−1(X −f −1(C))
+∼
+−→X −f −1(C)
+and it is immediate that pc is nothing else but p′q′−1 where p′ is the restriction of p to
+q−1(X −f −1(C)). We may therefore say using q′ to identify purely and simply that pc
+is the restriction of the morhism p to X −f −1(C) ⊂X(M)pc
+Q(C). For that reason it is
+convenient to denote again by pX
+c or pc and to call the above morphism [(Mettons)] the
+extended conic projection of X relative to f: X →P with center C.
+In this way the
+properties of the restricted conic projection are reduced to those of the extended conic
+projection which has been systematically studied elsewhere or is supposed to have been
+studied67 and it makes sense (cf. No. 10 and No. 12). The main question that arises
+is if S = Spec(k) what are the properites of the conic projection of X if we take C to
+be generic in Grassm+1(p) [illegible, ask AG] which requires that we make a base change
+k →K(η), i.e. C is then indeed a linear subvariety of Xk(η) from standard arguments that
+have already been repeated several times allow us to conclude the analogous properties for
+the conic projections corresponding to the points of Grassm+1(P) belonging to an open
+non-empty set of the said grassmanian and ﬁnally since k is inﬁnite (if) we conclude the
+existence of a (in fact of an inﬁnity of) C deﬁned over k, i.e. a linear subvariety of P iself
+(without changing the base ﬁeld) giving rise to a conic projection having the properties in
+question. It is (will be) proper to group this type of general explainations with those of
+the same type given in No. 4, 7 and which we have already used more or less implicitly,
+for example in No. 13. It is also proper by the way in this connection to examine the
+relative properties of a sheaf F over X and taking its inverse image F (m)
+Q(C) over X(m)
+Q(C). It
+is necessary in addition in the precise situation described here to simplify the notation I
+propose X(C) and F(S) or simply e
+X and eF if there is no possibility of confusion (attention:
+the F is not the same as in the beginning of this No.). Grosso modo (roughly speaking)
+and if we, say, assume that f is an immersion the properties of the generic conic projection
+67Ask A.G.
+55
+
+PAGE 56
+are very diﬀerent according as to whether we assume dim X ≥m or dim X ≤m see
+dim < m. In what follows we consider the Cη ⊂Pk(η) corresponding to the generic point
+η of Grassm+1 and we dispense with making the interpretation of the obtained results in
+terms of “almost all the points . . . ”
+To start with, we already have noticed in 5.3 (a ‘catching up’ due to the general case
+in No. 12) that C cuts X regularly, more precisely and more generally for every quasi-
+coherent F over X the section φ(m + 1) of the locally free module of rank m + 1 over
+Xk(η) whose scheme of zeros η is C, is F-regular. By 10.2 this implies for example that
+the morphism e
+X(Cη) →Xk(η) identiﬁes X(Cη) with the prescheme deduced from Xk(η)
+by blowing up the f −1(Cη) = XpxCη in the case where dim f(X) ≤m we will also
+have f −1(C) = φ and consequently X(Cη)
+∼
+−→Xk(η) is an isomorphism (and indeed the
+restricted conic projection is therefore deﬁned over all of X a priori). The question arises
+consequently of the dimension of the ﬁbers of pc: e
+X(Cη) →Q(Cη), and we ﬁnd the ﬂatness
+of this morphism. We ﬁnd:
+Proposition 14.l.
+Let us suppose that X is irreducible, more generally that for every
+irreducible component Xi of X the ﬁber of Xi at the point f(xi) (xi = generic point of Xi)
+has a dimension (independent of i), which is for example the case with d = 0 if f: X →P
+is quasi-ﬁnite. Then
+a) If dim f(X) > m then the dimension of the ﬁbers of pc: X(Cη) →Q(Cη) are all equal
+to dim X −m.
+b) If dim x ≤m and if the non-empty ﬁbers of Xi over P are ??? of dim d then the
+ﬁbers of pc are all of dimension d ??? so pc is ﬁnite resp. quasi-ﬁnite. . . f: X →P is
+ﬁnite.
+In the case a) we have already seen (I hope) that for every point ξ of Grassm(P) the
+dimension of X(m)
+ξ
+is at least equal to dim X −m it is such in particular if ξ gives a point
+of Q(Cη). For the opposite direction inequality note that (we place ourselves over the ﬁeld
+k′ = k(ξ)) since Cηk′ Lξ is a hyperplane of L if the dimension of X(m) = XpxCη will be
+(is) ≥dim X −m (since the base change k(η) →k′ transforms the latter prescheme into
+(Xp × Lξ × ξL(cηk′)) or since we have in the contrary case dim X(m+1) = dim X −m −1
+by No. 2 (reviewed in No. 10). The case b) is treated in an analogous fashion if we have
+dim Xp × L ≥d + 1, or what is the same f ′
+k(Xk′) →L of dim ≥1 then we would have by
+the same argument as above that X(m+1) ̸= φ contrary to what we have remarked before
+14.1.
+Corollary 14.2.
+Let us assume that X has dimension m and that : X →P is ﬁnite
+56
+
+PAGE 57
+respectively quasi-ﬁnite, then the morphism PCη: Xk(η) →Q(Cη) is ﬁnite surjective (resp.
+quasi-ﬁnite dominant).
+Indeed, this morphism is quasi-ﬁnite and since dim Xk(η) = dim Q(Cη) it is dominant
+if f is ﬁnite pCη is also ﬁnite, therefore proper, therefore surjective, since it is dominant.
+Corollary 14.3.
+With the conditions of 14.1 a) if X is Cohen-Macauley the morphism
+pC: X(Cη) →Q(Cη) is a Cohen-Macauley morphism and is a fortiori ﬂat.
+For the proof compare the remark above on page 21 before 5. (Tr - correct this)
+which gives a result which is stronger (including 14.3 ???) taking into account that C(m)
+ξ
+for ξ ∈ϕ(η) are Fk(η) regular.
+This corollary must be modiﬁed but for simplicity we may assume that f is quasi-
+ﬁnite if F is a Cohen-Macauley module over X and if for every irreducible component Z
+of Supp F we have dim Z ≥m then eF(Cη) is Cohen-Macauley and ´a fortiori ﬂat relative
+to ϕ(Cη).
+We note that we cannot replace, to obtain the same conclusion pC ﬂat, the CM
+hypothesis on X by a simple dimension hypothesis. Let us for example assume that f is
+an immersion and that f is irreducible of dimension m, so that pC is quasi-ﬁnite and since
+Xk(η) and ϕ(Cη) are irreducible of the same dimension and the second one is regular, pC
+cannot be ﬂat unless Xk(η) is CM.
+More delicate are the diﬀerential properties of the conic projection, notably for X
+smooth over k and f: X →P unramiﬁed studied in No. 12. Let us recall that outside
+of a subset Z of codim 1 of Q(C) the morphism pCη over e
+X(Cη) is smooth. And a more
+detailed analysis summarized in No. 12 shows or will show if we do not do it that if the
+dimensions of the components of X are ≥m then outside of a subset Z′ ⊂Z of Q(C) of
+codimension ≥2, th ﬁbers p−1
+C (ξ) = X(m)
+ξ
+can only have at worst ordinary singular points
+in the geometric sense and indeed (if f is an immersion and X is geometrically irreducible)
+at most one such point, the latter being necessarily rational over k(ξ) – these assertions
+being all valid at least if k is of characteristic 0 or with the condition of replacing f byφnf
+(n ≥2) as in No. 9.
+It is also appropriate to give the diﬀerential properties of PCη in the case where
+dim X ≤m and consequently PCη is deﬁned over Xk(η). I restrict myself to indicating the
+following properties. The proof should be easy and is left to Dieudonn´e (or Blass). [Tr]
+Proposition 14.4.
+Let us suppose that f: X →P is unramiﬁed and that dim X ≤m.
+Let T be a ﬁnite subscheme of X. Then
+a) If f is an immersion, the restriction of pC to Tk(η) is radical, i.e.
+“geometrically
+57
+
+PAGE 58
+injective”. If in addition Y a closed subset of X of dimension ≤(m −1) we have
+p−1
+Cη(pCη(Yk(η))) ∩Tk(η) = φ = empty set
+b) If X is smooth at the points of T then pCη is unramiﬁed at all the points of Tk(η)
+[illegible, ask A.G.]
+p−1
+CηpCη(Tk(η))
+Proposition 14.5.
+Let us suppose that dim X ≤m−1, f: X →P an immersion, ﬁnally
+X separable over k. Let Yη be the scheme theoretic image of Xk(η) in Q(Cη). Then the
+induced morphism pCη: Xk(η) →Yη is birational and for every point x of Xk(η) over a
+closed point of X, pcη is ´etale at x and in at the points of p−1
+CηpCη(x).
+Let us note the following consequence:
+Corollary 14.6.
+Let X be an algebraic projective scheme irreducible and separable of
+dimension n over an inﬁnite ﬁeld k. Then there exists a birational morphism of X onto a
+hypersurface in P n+1.
+We will avoid believing, even if X is a closed smooth geometrically irreducible subset
+of p of dimension m −1 = n, that the conic projection (Pc) (? Illegible) is necessarily an
+immersion. Indeed if k is inﬁnite this implies that there exists a C rational over k having
+the same property, this that X is isomorphic to a non-singular hypersurface in P n+1. But
+even or already for n = 1 (thus X an algebraic projective curve smooth and connected over
+an algebraically closed ﬁeld) it is easy to construct examples when X cannot be embedded
+(ne peat s’immerge) in a p2. Also in 14.4 we will avoid confusing the given statement with
+the assertion (in general false) that pc is itself a monomorphism (preceding counterexample
+if X is smooth if dimension m), or that pc should be unramiﬁed. For the later point we
+will take to convince ourselves X a closed smooth subscheme irreducible and of dimension
+m (over k algebraically closed ?illegible? such that we have an X →Q ∼= pm unramiﬁed,
+it will be ´etale for reasons of dimension, but we can prove (see Ch. VIII) that this implies
+that X
+∼
+−→pm (pm being simply connected). The intuitive geometric meaning of 14.4 is
+that the ramiﬁcation set of pCη is “variable” over k more precisely the ramiﬁcation set of
+pcξ for a variable ξ in an open set of Grassm+1(¯k) varies in X(¯k) and does not admit any
+“ﬁxed point”. . . Of course, that to justify in the present No. the passage from η generic
+to neighboring points of Grassm+1(P) and also in case of need, to be able to reaccept
+responsibility for the general considerations of 7.1, we have to consider the diagram:
+X ←−−−−e
+X(C)
+y
+y
+X ←−−−−Q(C)
+58
+
+PAGE 59
+obtained (with the help) using the diﬀerent C ∈Grassm+1(S) and more generally the ones
+obtained after a base change T →S for the points ξ ∈Grassm+1(P)
+XT ←−−−−e
+X(Cξ) = XT (Cξ)
+y
+y
+T
+←−−−−
+Q(Cξ)
+as deduced by base change ξ: T →Grassm+1J(P) = T, of the universal diagram (relative
+to the canonical point of Grassm+1 in T):
+XT ←−−−−e
+X(C)
+y
+y
+T
+←−−−−Q(C)
+where C is the canonical linear subvariety of PT . Then the above e
+X(Cη) →Q(Cη) is
+nothing else but the morhism of the generic ﬁbers for the T morphism e
+X(C) →Q(C)
+of the latter diagram and every constructible property for the morhism of generic ﬁbers
+implies the same property for neighboring ﬁbers.
+From the notational point of view,
+Q should be considered (and even introduced) as the name of the natural morphism of
+functors Grassm+1(P) →Subschemes of Grassm(P).
+§15 Axiomatization of certain of the previous results
+I think overall, tht results of No. 2 to 8 which are all mostly true under more general
+conditions than for the family of hyperplanes (or for hypersurfaces of given degree) in
+projective space.
+It seems to me proper to adopt an axiomatic point of view.
+I am
+not quite sure right now if we can make a generalization in this sense of Bertini-Zariski
+(therefore of the result sof No. 4 and 6) and I have written to the (competent people
+Tr) authorities on this subject (Serre-Zariski) to ask them if they had a knowledge of
+such an extension. I have anyway the impression in eﬀect that the hypotheses of simple
+diﬀerential nature of the type of those given above should suﬃce to imply Bertini-Zariski.
+If the (experts) competent people cannot inform us in a satisfactory manner, we should
+try to clear the matter up by our own means. We start from a commutative diagram of
+morphisms of ﬁnite presentation
+P ←−−−−P
+y
+y
+S ←−−−−G
+59
+
+PAGE 60
+(in the case of the principal application P is a projective ﬁbration, G a deduced grassmanian
+(grasmanienne-adjective!)68 P the incidence prescheme. In the most important cases the
+corresponding morphism P →PS × G should be a closed immersion and we consider G as
+a parameter scheme of a family of closed ﬁber subpreschemes of P over S, more precisely if
+ξ ∈G then Pξ is a closed subprescheme of Ps, k(ξ) where s is the point of S over ξ besides
+for most statements in this context we have no doubt S = Spec(k).) In the general case
+we may again consider G as a parameter scheme of a family of preschemes over the ﬁbers
+of P over S with ξ corresponding to Pξ over Ps, k(ξ). Of course, in place of taking for ξ
+a point (absolute) of G we may also take a point with values in an S-prescheme T, and
+we obtain then Pξ →BT (T morphism which si a closed immersion in the case presented
+above).
+If f: X →P is a morphism we put X = XP × P and we obtain a diagram of the same
+type as the preceding square.
+X ←−−−−X
+y
+y
+S ←−−−−G
+It is therefore evident that all the questions studied in No. 2 to 8 preserve a meaning in
+the general context that we just enunciated and there is a good reason to69 the axiomatic
+conditions that insure the conclusions drawn in the above Nos.
+We will assume that P and G are ﬂat over S, G being with geometrically irreducible
+ﬁbers (to be able to consider the generic points!) of dimension N, the morphism P →P is
+assumed to be smooth with geometrically irreducible ﬁbers of dimension N −m. Therefore
+the morphism X →X has the same properties. All the properties mentioned [(illegible
+and long)]70 are stable under base change (preserved by) over S and can in particular be
+applied to the ﬁbers.
+Let us assume initially S = Spec(k). Let Z be a closed subset of X of dim d so that
+its inverse image Z in X is a closed subset of dimension d + (N −m) = N + d −m. If
+d < m then Z is of dimension < N so that Z →G cannot be dominant therefore if η is
+a generic point of G we have Zη = φ; indeed this reasoning shows even (by replacing Z
+by f(Z)) tht if dim f(X) < m then Zη = φ. We want a condition on (D) insuring that if
+dim f(Z) ≥m then Zη ̸= φ. It seems that when it must form a primitive axiom in this
+situation (in the setting of No. 2.2 it would result from a global argument rather (quite)
+special) for every closed irreducible subset Z of P of dimension m, Zη = φ.
+68possibly grassmanian ﬁbration [Tr].
+69Fr degager + unravel, make explicit ?? [Tr]
+70illegible later
+60
+
+PAGE 61
+Let us again take a closed subset Z of X such that dim f(Z) ≥m we see that Zη →G
+is dominant and consequently Z is of dimension equal to dim Z −dim G = dim Z −m.
+These properties allow us to develop in the present context the resdults corresponding to
+2.1 and 2.11. There is a condition over [illegible] (insuring the validity of 2.12, i.e. that if
+X is smooth then X is also such if we assume f: X →P unramiﬁed). We assume now that
+P is smooth over k, P →Pk × G quasi-ﬁnite, and that the following condition is satisﬁed
+(where we assume k algebraically closed) for every x ∈P(k) and for every vector subspace
+V of dimension n ≥m of the tangent space Tx(P) to P at x, we consider the set E(x, V ) of
+ξ ∈G(k) such that P has a point over x not satisfying the following set of conditions: Pξ
+is smooth at z, the tangent morphism of Pξ →P at z mapping Tz(P) →Tx(P) is injective
+(i.e. Pξ →P unramiﬁed at z) and its image is “transversal” to V , i.e. its sum with V is
+Tx(P). Then E(x, V ) (which weknow to be the trace of a constructible well deﬁned set
+of G in G(k) ???) is of dimension ≤N −n −1. using [(Moyennant)] this condition, an
+application of the Jacobian criterion and a dimension count shows that the closed subset
+E of points x of X such tht X →G should be non-smooth at x or P →Gis not smooth
+at f(x) or P →P is ramiﬁed at f(x) is of dimension ≤n + (N −n −1) = N −1 (X being
+smooth everywhere of dimension n). Therefore dim E < N = dim so that Eη = φ and a
+fortiori Xη is smooth over k(η) and the developments of No. 5 are evidently valid in this
+current context.
+The passage in No. 4 from a generic section to a general section and the developments
+of No. 5 are evidently valid in the present context (but are at this point tautologies or a
+reformulation of paraagraphs 8, 9, 12 which we hesitate to announce in their form). Also
+the development sof 7.1 valid in every case if k is algebraically closed (and even if k is
+simply inﬁnite if we assume G rational over k) and the special cases 7.2, 7.3’ quant (???)
+the result 7.4 is evidently an application of special nature for the situation of hyperplane
+sections. As I have said, the numbers 3 and 6 are (suspended pending) to the extension of
+the theorem of Zariski.
+It remains to extend also the results of No. 8 (reconsidered in No. 12) which take on
+such a more pleasant allure. I advise you to begin formulating these results in this context
+in rying to go as far as possible in this way. I have the impression that we have to be able
+to recover at least that is not a direct consequence of 8.7 c) (even we could attempt to
+abstract the axiomatic conditions that allow you to go through a variant of 8.7. I limit
+myself to these recommendations but I am ready to go back to these with more details if
+you have special diﬃculties.
+61
+
+PAGE 62
+Part II [Tr]
+§16 New EGA V
+New # Singular and supersingular set of a function and diﬀerential criteria
+This No. will be used in Par. 20 of hyperplane sections but its natural place is I think
+[Grothendieck] in Par. 16.
+Deﬁnition 1. Let X be a regular prescheme φ a section of OX. A point x ∈X is called
+a singular zero (or root) of φ if we have φx ∈m2
+X, it is called a supersingular zero if it
+is a singular zero (or root) and if in addition the element of m2
+X/m3
+X ∼= Sym(mX/m2
+X)
+which it deﬁnes interpreted as a quadratic form on the dual tx of mX/m2
+X over k(x) is a
+degenerate form. (A singular zero (or root) which is not supersingular is sometimes called
+an ordinary singular zero.)
+Remarks 2. If x ∈V (φ) then x is a non-singular zero of φ if and only if φx ̸= 0 and x
+is a non-singular point, i.e. x is a regular point of V (φ), i.e. if and only if x is a regular
+point of V (φ) and V (φ) ̸= X in a neighborhood of x.
+Deﬁnition 3. Let X be a smooth prescheme over a ﬁeld k, φ a section of OX, x ∈V (φ).
+We say that x is a geometrically singular (resp. geometrically supersingular) zero of φ
+relative to k if for every extension k′ of k and every point ξ of X with values in k, localized
+at x, the corresponding point x′ of X′
+k is a singular zero (resp. supersingular) of φ′
+k.
+Remark 4.
+a) From the criterion that will be developed later it follows that in Deﬁnition 3 it suﬃces
+to test with a single point with values in a k′ we can for example take k′ = k(x) or
+k(x) and the canonical point with values in such k′.
+b) It follows from Remark 2 that x is geometrically non-singular for φ if and onlyif φx ̸= 0
+and V (φ) is smooth at x.
+c) Let us suppose that we have a prescheme X smooth over another one Y a section φ of
+OX and an x ∈V (φ) then we say that x is a singular zero (or supersingular) relative
+to Y if it is such relative to k(s) over the ﬁber Xs (s being the image of x in Y ).
+d) Under the conditions of Deﬁnition 1, we see at once that the singularity resp. super-
+singularity of an x ∈V (φ) for φ is not modiﬁed if we replace φ by φ′ = uφ where u is
+a unit at x. It follows, furthermore, that Deﬁnition 1 and consequently also Deﬁnition
+3 can be extended in an evident way to the case where φ is a section of an invertible
+module L (in a way so that to reproduce the initial deﬁnition for L = OX). Let X be
+a prescheme smooth over another one Y and let φ be a section of OX whence a section
+62

@@ -1,0 +1,7 @@
+法文 EGA5.pdf 共171物理页，整卷 SHA256 24cf8204184b58b18a46e5f63ecc36d6e791b3c8c96a09daac93de96ebd8e830。
+法文物理118至121（手写125至128），首行后半“2) n=1”起，至推论2.4结束；页边残字只译能辨与编辑稿可支持部分。
+英译编辑稿共112物理页，整卷 SHA256 23a20ef32fd16a1bd623c0c08ac080d04fc94f248de12133b713a19d6b0330d9。
+英稿物理90--94：90末一次态射，91至1.9，92页边记，93--94至总可表性。公开来源：https://webusers.imj-prg.fr/~leila.schneps/grothendieckcircle/EGA/EGA5trans.pdf#page=90
+法稿1.7为S-同构，英稿“morphism”并丢靶撇号。原1.6区分非空与维数至少1；法、英稿底分割误写D，法稿2.4和后续2.5的性质据原编号。
+2.2/2.3与前置文字含对偶，法稿核实；2.4的各参数空间是底上对称幂之对偶的射影化。原文的“预概形”用语保留。
+现代术语旁证：https://stacks.math.columbia.edu/tag/01OA 及 https://stacks.math.columbia.edu/tag/062Y 。不替换原文引号内术语，也不补造作者的模糊边批。

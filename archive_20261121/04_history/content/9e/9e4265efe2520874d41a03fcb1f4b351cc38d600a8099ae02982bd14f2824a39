@@ -1,0 +1,83 @@
+{
+  "source_sha256": "c9b38acc870544da74d98d764b40305e9244bb4d82bc7565d0803c596ea07dda",
+  "renderer": "/opt/codex/runtimes/codex-primary-runtime/dependencies/bin/override/pdftoppm",
+  "dpi": 150,
+  "pages": [
+    {
+      "page": 1,
+      "png": "/workspace/scratch/a886fd56dd2f/integration/report_visual/page_001.png"
+    },
+    {
+      "page": 3,
+      "png": "/workspace/scratch/a886fd56dd2f/integration/report_visual/page_003.png"
+    },
+    {
+      "page": 5,
+      "png": "/workspace/scratch/a886fd56dd2f/integration/report_visual/page_005.png"
+    },
+    {
+      "page": 6,
+      "png": "/workspace/scratch/a886fd56dd2f/integration/report_visual/page_006.png"
+    },
+    {
+      "page": 17,
+      "png": "/workspace/scratch/a886fd56dd2f/integration/report_visual/page_017.png"
+    },
+    {
+      "page": 19,
+      "png": "/workspace/scratch/a886fd56dd2f/integration/report_visual/page_019.png"
+    },
+    {
+      "page": 21,
+      "png": "/workspace/scratch/a886fd56dd2f/integration/report_visual/page_021.png"
+    },
+    {
+      "page": 22,
+      "png": "/workspace/scratch/a886fd56dd2f/integration/report_visual/page_022.png"
+    },
+    {
+      "page": 24,
+      "png": "/workspace/scratch/a886fd56dd2f/integration/report_visual/page_024.png"
+    },
+    {
+      "page": 25,
+      "png": "/workspace/scratch/a886fd56dd2f/integration/report_visual/page_025.png"
+    },
+    {
+      "page": 27,
+      "png": "/workspace/scratch/a886fd56dd2f/integration/report_visual/page_027.png"
+    },
+    {
+      "page": 28,
+      "png": "/workspace/scratch/a886fd56dd2f/integration/report_visual/page_028.png"
+    },
+    {
+      "page": 29,
+      "png": "/workspace/scratch/a886fd56dd2f/integration/report_visual/page_029.png"
+    },
+    {
+      "page": 30,
+      "png": "/workspace/scratch/a886fd56dd2f/integration/report_visual/page_030.png"
+    },
+    {
+      "page": 33,
+      "png": "/workspace/scratch/a886fd56dd2f/integration/report_visual/page_033.png"
+    },
+    {
+      "page": 34,
+      "png": "/workspace/scratch/a886fd56dd2f/integration/report_visual/page_034.png"
+    },
+    {
+      "page": 37,
+      "png": "/workspace/scratch/a886fd56dd2f/integration/report_visual/page_037.png"
+    },
+    {
+      "page": 38,
+      "png": "/workspace/scratch/a886fd56dd2f/integration/report_visual/page_038.png"
+    },
+    {
+      "page": 41,
+      "png": "/workspace/scratch/a886fd56dd2f/integration/report_visual/page_041.png"
+    }
+  ]
+}

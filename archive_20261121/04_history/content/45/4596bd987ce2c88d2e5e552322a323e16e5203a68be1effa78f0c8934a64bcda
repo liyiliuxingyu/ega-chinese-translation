@@ -1,0 +1,218 @@
+\clearpage\makeatletter\@mainmatterfalse\makeatother
+% ---- BEGIN backmatter.tex ----
+\chapter{第三卷第一部分记号索引}
+\noindent\textbf{译者说明。} 本索引依底本次序收录；记号中的点号统一排作 $\bullet$，层仍用花体字母。条目后所列为原著章、节、条号，而不是本译稿页码。底本 PDF 第158页是记号索引，第159页是参考文献；其页脚总页码分别为506、505，原著目录所列本卷页码分别为162、161。本译稿保留上传文件的排列次序及原目录的页码。索引中的引文按原著保留，未将疑似错引静默改成别的条号。
+\par\medskip
+\begingroup
+\small
+\newcommand{\notationitem}[2]{\par\addvspace{0.45\baselineskip}\noindent #1\quad：#2。\par}
+\notationitem{$\Ens$}{0，8.1.1}
+\notationitem{$h_X(Y),\ h_X(u)$（$X,Y$ 为范畴 $C$ 的对象，$u$ 为 $C$ 的态射）}{0，8.1.1}
+\notationitem{$h_w(u)$（$u,w$ 为 $C$ 的态射）}{0，8.1.2}
+\notationitem{$Z_k(E_r^{pq}),\ B_k(E_r^{pq})$（$k\geq r$）}{0，11.1.1}
+\notationitem{$Z_\infty(E_2^{pq}),\ B_\infty(E_2^{pq})$}{0，11.1.1}
+\notationitem{$K^\bullet,\ K_\bullet$（复形）}{0，11.2.1}
+\notationitem{$K^{\bullet\bullet},\ K_{\bullet\bullet}$（双复形）}{0，11.2.1}
+\notationitem{$B^i(K^\bullet),\ Z^i(K^\bullet),\ H^i(K^\bullet),\ H^\bullet(K^\bullet)$}{0，11.2.1}
+\notationitem{$B_i(K_\bullet),\ Z_i(K_\bullet),\ H_i(K_\bullet),\ H_\bullet(K_\bullet)$}{0，11.2.1}
+\notationitem{$T(K^\bullet),\ T(K_\bullet)$（$T$ 为函子）}{0，11.2.1}
+\notationitem{$E(K^\bullet)$（$K^\bullet$ 为滤过复形）}{0，11.2.2}
+\notationitem{$K^{i,\bullet},\ K^{\bullet,j},\ Z_{\mathrm{II}}^p(K^{i,\bullet}),\ B_{\mathrm{II}}^p(K^{i,\bullet}),\ H_{\mathrm{II}}^p(K^{i,\bullet}),\ Z_{\mathrm I}^p(K^{\bullet,j}),\ B_{\mathrm I}^p(K^{\bullet,j}),\ H_{\mathrm I}^p(K^{\bullet,j})$}{0，11.3.1}
+\notationitem{$H_{\mathrm{II}}^p(K^{\bullet\bullet}),\ Z_{\mathrm I}^q(H_{\mathrm{II}}^p(K^{\bullet\bullet})),\ B_{\mathrm I}^q(H_{\mathrm{II}}^p(K^{\bullet\bullet})),\ H_{\mathrm I}^q(H_{\mathrm{II}}^p(K^{\bullet\bullet})),\ H^n(K^{\bullet\bullet})$}{0，11.3.1}
+\notationitem{$F_{\mathrm I}^p(K^{\bullet\bullet}),\ F_{\mathrm{II}}^p(K^{\bullet\bullet}),\ {}'E(K^{\bullet\bullet}),\ {}''E(K^{\bullet\bullet})$}{0，11.3.2}
+\notationitem{$K_{i,\bullet},\allowbreak\ K_{\bullet,j},\allowbreak\ H_p^{\mathrm{II}}(K_{i,\bullet}),\allowbreak\ H_p^{\mathrm I}(K_{\bullet,j}),\allowbreak\ H_p^{\mathrm{II}}(K_{\bullet\bullet}),\allowbreak\ H_p^{\mathrm I}(K_{\bullet\bullet}),\allowbreak\ H_q^{\mathrm I}(H_p^{\mathrm{II}}(K_{\bullet\bullet})),\allowbreak\ H_q^{\mathrm{II}}(H_p^{\mathrm I}(K_{\bullet\bullet})),\allowbreak\ H_n(K_{\bullet\bullet})$}{0，11.3.5}
+\notationitem{$\mathrm R^\bullet T(K^\bullet)$（$T$ 为协变加性函子）}{0，11.4.3}
+\notationitem{$\mathrm R^\bullet T(K^\bullet,K'^{\bullet})$（$T$ 为协变加性双函子）}{0，11.4.6}
+\notationitem{$\mathrm L_\bullet T(K_\bullet)$（$T$ 为协变加性函子）}{0，11.6.2}
+\notationitem{$\mathrm L_\bullet T(K_\bullet,K'_{\bullet})$（$T$ 为协变加性双函子）}{0，11.6.6}
+\notationitem{$\mathrm L_\bullet T(K_{\bullet\bullet})$（$T$ 为协变加性函子）}{0，11.7.2}
+\notationitem{$|\sigma|,\ \Sigma(A),\ C_\bullet(A),\ L_\bullet(A)$（$A$ 为有限集，$\sigma$ 为 $A$ 的单形）}{0，11.8.1}
+\notationitem{$C^\bullet(A,B;\F),\ L^\bullet(A,B;\F)$（$A,B$ 为有限集，$\F$ 为系数系）}{0，11.8.4}
+\notationitem{$P^\bullet(A,B;\F)$（$A,B$ 为有限集，$\F$ 为系数系）}{0，11.8.6}
+\notationitem{$C^\bullet(A,B;\F^\bullet),\ L^\bullet(A,B;\F^\bullet)$（$A,B$ 为有限集，$\F^\bullet$ 为系数系的复形）}{0，11.8.8}
+\notationitem{$P^\bullet(A,B;\F^\bullet)$（$A,B$ 为有限集，$\F^\bullet$ 为系数系的复形）}{0，11.8.10}
+\notationitem{$\chi(M^\bullet)$（$M^\bullet$ 为有限长度模的有限复形）}{0，11.10.1}
+\notationitem{$C^\bullet(\mathfrak U,\F)$（$\F$ 为 $X$ 上的阿贝尔群层，$\mathfrak U$ 为 $X$ 的开覆盖）}{0，12.1.2}
+\notationitem{$\mathrm R^pf_*(\F)$（$f:X\to Y$ 为赋环空间态射，$\F$ 为 $\OO_X$-模层）}{0，12.2.1}
+\notationitem{$\mathscr H^p(f,\K^\bullet),\ \mathscr H_f^p(\K^\bullet),\ {}'\mathscr E(f,\K^\bullet),\ {}''\mathscr E(f,\K^\bullet)$（$f:X\to Y$ 为赋环空间态射，$\K^\bullet$ 为 $\OO_X$-模的复形）}{0，12.4.1}
+\notationitem{$H^\bullet(X,\K^\bullet),\ H^\bullet(V,\K^\bullet)$（$X$ 为赋环空间，$\K^\bullet$ 为 $\OO_X$-模的复形，$V$ 为 $X$ 的开集）}{0，12.4.2}
+\notationitem{$\gr^\bullet(\mathbf A)$（$\mathbf A$ 为满足（ML）的射影系统）}{0，13.4.2}
+\notationitem{$E(A)$（$A$ 为滤过对象）}{0，13.6.4}
+\notationitem{$K_\bullet(\mathbf f),\ i_{\mathbf f}$（$\mathbf f$ 为一个环的元素组成的有限族）}{III，1.1.1}
+\notationitem{$K^\bullet(\mathbf f,M),\ K_\bullet(\mathbf f,M)$（$\mathbf f$ 为环 $A$ 的元素组成的有限族，$M$ 为 $A$-模）}{III，1.1.2}
+\notationitem{$H^\bullet(\mathbf f,M),\ H_\bullet(\mathbf f,M)$（$\mathbf f$ 为环 $A$ 的元素组成的有限族，$M$ 为 $A$-模）}{III，1.1.3}
+\notationitem{$C^\bullet((\mathbf f),M),\ H^\bullet((\mathbf f),M)$（$\mathbf f$ 为环 $A$ 的元素组成的有限族，$M$ 为 $A$-模）}{III，1.1.6}
+\notationitem{$H^\bullet(U,\F(*)),\ H^\bullet(\mathfrak U,\F(*))$（$\F$ 为拟凝聚 $\OO_X$-模，$U$ 为 $X$ 的开集，$\mathfrak U$ 为 $X$ 的开覆盖）}{III，2.1.1}
+\endgroup
+
+\chapter{第三卷第一部分参考文献（续）}
+\noindent\textbf{译者说明。} 本部分原著新增的参考文献为 [27]—[29]，编号承接此前各卷；以下保留原题名与出版资料，并附中文题名以便阅读。正文的（M）、（G）、（T）、（FAC）等缩写沿用原著，不能理解成本册另有同名章节。
+\begin{enumerate}[label={[\arabic*]},start=27,leftmargin=3em,itemsep=1.2em]
+\item P. Gabriel，\textit{Des catégories abéliennes}（《阿贝尔范畴》），博士论文，巴黎，1961年。
+\item J. E. Roos，\textit{Sur les foncteurs dérivés de $\plim$. Applications}（《关于射影极限的导出函子及其应用》），\textit{C. R. Acad. Sci. Paris}，第252卷，1961年，第3702—3704页。
+\item H. Cartan，\textit{Séminaire de l'École Normale Supérieure}（巴黎高等师范学校讨论班），第13学年（1960—1961），第11讲。
+\end{enumerate}
+
+\chapter{第三卷第一部分术语索引}
+\noindent\textbf{译者说明。} 按原著法文词目次序排列，附法文词目用于对照；条号仍为原著条号。部分词目在原著中合并列出，本译稿亦保持合并。
+\par\medskip
+\begingroup\small
+\newcommand{\termitem}[3]{\par\addvspace{0.5\baselineskip}\noindent\textbf{#1}（#2）\quad：#3。\par}
+\termitem{谱序列的终项}{Aboutissement d'une suite spectrale}{0，11.1.1}
+\termitem{可代数化的模层}{Algébrisable, $\OO_{\mathfrak X}$-Module}{III，5.2.1}
+\termitem{可代数化的形式概形}{Algébrisable, schéma formel}{III，5.4.2}
+\termitem{解析整环}{Analytiquement intègre, anneau}{III，4.3.6}
+\termitem{拟紧映射}{Application quasi-compacte}{0，9.1.1}
+\termitem{解消的增广}{Augmentation d'une résolution}{0，11.4.1}
+\termitem{复形的 Euler--Poincaré 示性数}{Caractéristique d'Euler--Poincaré d'un complexe}{0，11.10.1}
+\termitem{凝聚模层的 Euler--Poincaré 示性数；$X$ 在 $\Spec(A)$ 上射影、$A$ 为阿廷环}{Caractéristique d'Euler--Poincaré d'un $\OO_X$-Module cohérent}{III，2.5.1}
+\termitem{双交错上链}{Cochaîne bi-alternée}{0，11.8.4}
+\termitem{由双复形定义的复形}{Complexe défini par un bicomplexe}{0，11.3.1}
+\termitem{外代数复形}{Complexe de l'algèbre extérieure}{III，1.1.1}
+\termitem{（ML）条件}{Condition (ML)}{0，13.1.2}
+\termitem{可构造子集、可构造集}{Constructible, partie ou ensemble}{0，9.1.2}
+\termitem{可构造函数}{Constructible, fonction}{0，9.3.1}
+\termitem{杯积}{Cup-produit}{0，12.1.2}
+\termitem{范畴中代数结构的双同态}{Dihomomorphisme pour les structures algébriques sur les catégories}{0，8.2.1}
+\termitem{阿贝尔范畴中的正合子集}{Exact, sous-ensemble dans une catégorie abélienne}{III，3.1.1}
+\termitem{最终常值的射影系统}{Essentiellement constant, système projectif}{0，13.4.2}
+\termitem{Stein 分解}{Factorisation de Stein}{III，4.3.3}
+\termitem{余离散、余分离、离散、穷尽、有限、分离滤过}{Filtration co-discrète, co-séparée, discrète, exhaustive, finie, séparée}{0，11.1.3}
+\termitem{范畴的终对象}{Final, objet d'une catégorie}{0，8.1.10}
+\termitem{形式预概形的有限态射}{Fini, morphisme de préschémas formels}{III，4.8.2}
+\termitem{在 $\mathfrak Y$ 上有限的形式预概形；$\mathfrak Y$-有限形式预概形}{Fini, préschéma formel au-dessus de $\mathfrak Y$}{III，4.8.2}
+\termitem{典范协变函子 $C\to\catHom(C^\circ,\Ens)$}{Foncteur covariant canonique}{0，8.1.2}
+\termitem{算术亏格}{Genre arithmétique}{III，2.5.1}
+\termitem{几何连通的纤维}{Géométriquement connexe, fibre}{III，4.3.4}
+\termitem{范畴中代数结构的同态}{Homomorphisme de structures algébriques sur les catégories}{0，8.2.1}
+\termitem{函子关于复形 $K^\bullet$ 的超上同调}{Hypercohomologie d'un foncteur par rapport à un complexe}{0，11.4.3}
+\termitem{双函子关于两个复形 $K^\bullet,K'^{\bullet}$ 的超上同调}{Hypercohomologie d'un bifoncteur par rapport à deux complexes}{0，11.4.6}
+\termitem{函子关于复形 $K_\bullet$ 的超同调}{Hyperhomologie d'un foncteur par rapport à un complexe}{0，11.6.2}
+\termitem{双函子关于两个复形 $K_\bullet,K'_{\bullet}$ 的超同调}{Hyperhomologie d'un bifoncteur par rapport à deux complexes}{0，11.6.6}
+\termitem{函子关于双复形的超同调}{Hyperhomologie d'un foncteur par rapport à un bicomplexe}{0，11.7.2}
+\termitem{局部可构造集}{Localement constructible, ensemble}{0，9.1.11}
+\termitem{范畴对象上的外合成律、内合成律}{Loi de composition externe ou interne sur les objets d'une catégorie}{0，8.2.1}
+\termitem{滤过 $S$-$C$-模；分次、双分次 $\gr^\bullet(S)$-$C$-模}{Module filtré; module gradué, bigradué}{0，13.6.6}
+\termitem{谱序列态射}{Morphisme de suites spectrales}{0，11.1.2}
+\termitem{纤维的连通分支的几何个数}{Nombre géométrique de composantes connexes d'une fibre}{III，4.3.4}
+\termitem{$C$-群对象、$C$-群、$C$-环、$C$-模}{Objet en groupes, groupe, anneau, module dans $C$}{0，8.2.3}
+\termitem{边界、上边界、上闭链、闭链对象}{Objet des bords, des cobords, des cocycles, des cycles}{0，11.2.1}
+\termitem{普遍像对象}{Objet des images universelles}{0，13.1.1}
+\termitem{满足（ML）的射影系统的相伴分次对象}{Objet gradué associé à un système projectif satisfaisant à (ML)}{0，13.4.2}
+\termitem{有下界、有上界的分次对象}{Objet gradué limité inférieurement ou supérieurement}{0，11.2.1}
+\termitem{形式预概形中在 $\mathfrak Y$ 上固有的子集}{Partie propre d'un préschéma formel}{III，3.4.1}
+\termitem{满子范畴}{Pleine, sous-catégorie}{0，8.1.5}
+\termitem{全忠实函子}{Pleinement fidèle, foncteur}{0，8.1.5}
+\termitem{Hilbert 多项式}{Polynôme de Hilbert}{III，2.5.3}
+\termitem{形式预概形的固有态射}{Propre, morphisme de préschémas formels}{III，3.4.1}
+\termitem{可表函子}{Représentable, foncteur}{0，8.1.8}
+\termitem{上同调、右、左、同调、内射、自由、平坦、投射解消}{Résolution cohomologique, droite, gauche, homologique, injective, libre, plate, projective}{0，11.4}
+\termitem{右、内射 Cartan--Eilenberg 解消}{Résolution de Cartan--Eilenberg droite, injective}{0，11.4.2}
+\termitem{左、投射 Cartan--Eilenberg 解消}{Résolution de Cartan--Eilenberg gauche, projective}{0，11.6.1}
+\termitem{逆紧子集}{Rétrocompact, ensemble}{0，9.1.1}
+\termitem{严格射影系统}{Strict, système projectif}{0，13.4.2}
+\termitem{阿贝尔范畴中的谱序列}{Suite spectrale dans une catégorie abélienne}{0，11.1.1}
+\termitem{弱收敛、正则、余正则、双正则谱序列}{Suite spectrale faiblement convergente, régulière, corégulière, birégulière}{0，11.1.3}
+\termitem{退化谱序列}{Suite spectrale dégénérée}{0，11.1.6}
+\termitem{函子相对于滤过对象的谱序列}{Suite spectrale d'un foncteur relativement à un objet filtré}{0，13.6.4}
+\termitem{双复形的谱序列}{Suites spectrales d'un bicomplexe}{0，11.3.2及11.3.5}
+\termitem{函子关于复形的超上同调谱序列}{Suites spectrales d'hypercohomologie d'un foncteur par rapport à un complexe}{0，11.4.3}
+\termitem{函子关于复形的超同调谱序列}{Suites spectrales d'hyperhomologie d'un foncteur par rapport à un complexe}{0，11.6.2}
+\termitem{函子关于双复形的超同调谱序列}{Suites spectrales d'hyperhomologie d'un foncteur par rapport à un bicomplexe}{0，11.7.2}
+\termitem{系数系}{Système de coefficients}{0，11.8.4}
+\termitem{单分支环、单分支点}{Unibranche, anneau ou point}{III，4.3.6}
+\termitem{普遍开态射}{Universellement ouvert, morphisme}{III，4.3.9}
+\endgroup\par
+
+% ---- END backmatter.tex ----
+% ---- BEGIN original_toc.tex ----
+
+\chapter{第三卷第一部分原著目录}
+\noindent 以下为原著书末目录的中文译文。右栏保留原著所印本卷页码，不是本译稿页码；本译稿页码见卷首的统一目录。原书目录中参考文献与记号索引的先后，与上传 PDF 的实际物理页序不同，详见本译稿“记号索引”前的说明。
+\par\medskip
+\begingroup\small
+\setlength{\LTpre}{0pt}\setlength{\LTpost}{0pt}
+\begin{longtable}{@{}p{0.86\textwidth}>{\raggedleft\arraybackslash}p{0.09\textwidth}@{}}
+\toprule
+内容 & 原书页码\\\midrule
+\endfirsthead
+\toprule 内容 & 原书页码\\\midrule
+\endhead
+\bottomrule\endfoot
+\textbf{第0章　预备知识（续）} & 5\\
+\textbf{\S\,8　可表函子} & 5\\
+\hspace*{1em}8.1　可表函子 & 5\\
+\hspace*{1em}8.2　范畴中的代数结构 & 9\\
+\textbf{\S\,9　可构造集} & 12\\
+\hspace*{1em}9.1　可构造集 & 12\\
+\hspace*{1em}9.2　诺特空间中的可构造集 & 14\\
+\hspace*{1em}9.3　可构造函数 & 16\\
+\textbf{\S\,10　平坦模的补充知识} & 17\\
+\hspace*{1em}10.1　平坦模与自由模之间的关系 & 17\\
+\hspace*{1em}10.2　平坦性的局部判别准则 & 18\\
+\hspace*{1em}10.3　局部环的平坦扩张的存在性 & 20\\
+\textbf{\S\,11　同调代数的补充知识} & 23\\
+\hspace*{1em}11.1　谱序列回顾 & 23\\
+\hspace*{1em}11.2　滤过复形的谱序列 & 27\\
+\hspace*{1em}11.3　双复形的谱序列 & 29\\
+\hspace*{1em}11.4　函子相对于复形的超上同调 & 32\\
+\hspace*{1em}11.5　超上同调中的归纳极限 & 35\\
+\hspace*{1em}11.6　函子相对于复形的超同调 & 39\\
+\hspace*{1em}11.7　函子相对于双复形的超同调 & 41\\
+\hspace*{1em}11.8　单纯复形上同调的补充知识 & 43\\
+\hspace*{1em}11.9　关于有限型复形的一个引理 & 46\\
+\hspace*{1em}11.10　有限长度模复形的 Euler--Poincaré 示性数 & 48\\
+\textbf{\S\,12　层上同调的补充知识} & 49\\
+\hspace*{1em}12.1　赋环空间上模层的上同调 & 49\\
+\hspace*{1em}12.2　高阶直像 & 57\\
+\hspace*{1em}12.3　层的 \texorpdfstring{$\Ext$}{Ext} 函子的补充知识 & 60\\
+\hspace*{1em}12.4　直像函子的超上同调 & 62\\
+\textbf{\S\,13　同调代数中的射影极限} & 64\\
+\hspace*{1em}13.1　Mittag--Leffler 条件 & 64\\
+\hspace*{1em}13.2　阿贝尔群的 Mittag--Leffler 条件 & 65\\
+\hspace*{1em}13.3　应用：层的射影极限的上同调 & 68\\
+\hspace*{1em}13.4　Mittag--Leffler 条件与射影系统的相伴分次对象 & 69\\
+\hspace*{1em}13.5　滤过复形谱序列的射影极限 & 71\\
+\hspace*{1em}13.6　函子相对于有限滤过对象的谱序列 & 73\\
+\hspace*{1em}13.7　变元的射影极限与导出函子 & 75\\
+\textbf{第III章　凝聚层的上同调研究} & 81\\
+\textbf{\S\,1　仿射概形的上同调} & 82\\
+\hspace*{1em}1.1　外代数复形的回顾 & 82\\
+\hspace*{1em}1.2　开覆盖的 Čech 上同调 & 85\\
+\hspace*{1em}1.3　仿射概形的上同调 & 88\\
+\hspace*{1em}1.4　应用于任意预概形的上同调 & 89\\
+\textbf{\S\,2　射影态射的上同调研究} & 95\\
+\hspace*{1em}2.1　某些上同调群的显式计算 & 95\\
+\hspace*{1em}2.2　射影态射的基本定理 & 100\\
+\hspace*{1em}2.3　应用于分次代数层和分次模层 & 102\\
+\hspace*{1em}2.4　基本定理的一个推广 & 107\\
+\hspace*{1em}2.5　Euler--Poincaré 特征与 Hilbert 多项式 & 109\\
+\hspace*{1em}2.6　应用：丰沛性判据 & 111\\
+\textbf{\S\,3　固有态射的有限性定理} & 115\\
+\hspace*{1em}3.1　分解引理 & 115\\
+\hspace*{1em}3.2　有限性定理：通常概形的情形 & 116\\
+\hspace*{1em}3.3　有限性定理的推广（通常概形） & 118\\
+\hspace*{1em}3.4　有限性定理：形式概形的情形 & 119\\
+\textbf{\S\,4　固有态射的基本定理及其应用} & 122\\
+\hspace*{1em}4.1　基本定理 & 122\\
+\hspace*{1em}4.2　特殊情形与变式 & 129\\
+\hspace*{1em}4.3　Zariski 连通性定理 & 130\\
+\hspace*{1em}4.4　Zariski 的“主定理” & 135\\
+\hspace*{1em}4.5　同态模的完备化 & 138\\
+\hspace*{1em}4.6　形式态射与通常态射之间的关系 & 139\\
+\hspace*{1em}4.7　一个丰沛性判据 & 145\\
+\hspace*{1em}4.8　形式预概形的有限态射 & 146\\
+\textbf{\S\,5　凝聚代数层的一个存在性定理} & 149\\
+\hspace*{1em}5.1　定理的陈述 & 149\\
+\hspace*{1em}5.2　存在性定理的证明：射影与拟射影情形 & 151\\
+\hspace*{1em}5.3　存在性定理的证明：一般情形 & 154\\
+\hspace*{1em}5.4　应用：通常概形态射与形式概形态射的比较；可代数化形式概形 & 156\\
+\hspace*{1em}5.5　某些概形的一个分解 & 159\\
+参考文献（续） & 161\\
+记号索引 & 162\\
+术语索引 & 163\\
+\end{longtable}
+\endgroup
+\begin{flushright}1961年6月28日收到。\end{flushright}\par
+
+% ---- END original_toc.tex ----

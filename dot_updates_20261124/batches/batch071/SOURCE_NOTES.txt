@@ -1,0 +1,5 @@
+法文原件 EGA5.pdf（171页）https://webusers.imj-prg.fr/~leila.schneps/grothendieckcircle/EGA/EGA5.pdf
+SHA256 24cf8204184b58b18a46e5f63ecc36d6e791b3c8c96a09daac93de96ebd8e830；本批物理164–168。
+英译底本 SHA256 23a20ef32fd16a1bd623c0c08ac080d04fc94f248de12133b713a19d6b0330d9；本批物理80–83。
+法文摘页保留扫描图像，100dpi渲染与全扫描中五页逐像素一致。
+平坦性参照 https://stacks.math.columbia.edu/tag/039C ；术语和归功问题随证明后原文按语在下一批处理。

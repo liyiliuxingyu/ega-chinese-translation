@@ -1,0 +1,176 @@
+% !TeX program = xelatex
+\documentclass[UTF8,a4paper]{ctexbook}
+% The class determines paper geometry, type size, Chinese fonts, heading layout,
+% double-sided pagination and chapter opening. No geometry, fancyhdr or font override.
+\usepackage{amsmath,amssymb,amsthm,mathtools,mathrsfs}
+\usepackage{tikz-cd}
+\usepackage{enumitem,longtable,booktabs,array,needspace}
+\usepackage[perpage,bottom]{footmisc}
+\usepackage{graphicx,adjustbox}
+\usepackage[unicode,hidelinks,bookmarksnumbered,hypertexnames=false]{hyperref}
+\usepackage{bookmark}
+% Retain EGA's historical chapter and paragraph numbering.
+\ctexset{part={name={第,卷},number=\Roman{part}},chapter={number={\ifnum\value{chapter}=0 0\else\Roman{chapter}\fi}},section={name={\texorpdfstring{\S\,}{§},}}}
+\renewcommand{\thesection}{\arabic{section}}
+\renewcommand{\thesubsection}{\thesection.\arabic{subsection}}
+\setcounter{secnumdepth}{2}
+\setcounter{tocdepth}{2}
+\setlength{\emergencystretch}{2em}
+\allowdisplaybreaks[2]
+\newcommand{\egapar}[1]{\par\addvspace{0.55\baselineskip}\Needspace{3\baselineskip}\noindent\hypertarget{para:\arabic{chapter}:#1}{}\hypertarget{entry:\arabic{chapter}:#1}{}\label{entry:\arabic{chapter}:#1}\textbf{（#1）}\quad\ignorespaces}
+\newcommand{\egastatement}[2]{\par\addvspace{0.55\baselineskip}\Needspace{3\baselineskip}\noindent\hypertarget{para:\arabic{chapter}:#1}{}\hypertarget{entry:\arabic{chapter}:#1}{}\label{entry:\arabic{chapter}:#1}\textbf{#2（#1）}\quad\ignorespaces}
+\newcommand{\eref}[1]{\hyperlink{entry:\arabic{chapter}:#1}{（#1）}}
+\newcommand{\erritem}[2]{\par\addvspace{0.6\baselineskip}\Needspace{3\baselineskip}\noindent\hypertarget{errata:I:#1}{}\textbf{#2（#1）}\quad\ignorespaces}
+\newcommand{\unnumberedchapter}[1]{\chapter*{#1}\addcontentsline{toc}{chapter}{#1}\markboth{#1}{#1}}
+\newcommand{\src}[1]{\par\nobreak\noindent{\small 原文印刷页码：#1。}\par\nobreak\vspace{0.25\baselineskip}}
+\newcommand{\origfootnote}[1]{\ifhmode\unskip\nobreak\fi\footnote{\textbf{原注：}#1}}
+\newcommand{\transnote}[1]{\ifhmode\unskip\nobreak\fi\footnote{\textbf{译注：}#1}}
+\newcommand{\separation}{\par\medskip\centerline{$*\qquad *\qquad *$}\medskip}
+\newcommand{\F}{\mathscr F}
+\newcommand{\G}{\mathscr G}
+\newcommand{\HH}{\mathscr H}
+\newcommand{\B}{\mathfrak B}
+\newcommand{\OO}{\mathscr O}
+\newcommand{\Kcat}{\boldsymbol K}
+\newcommand{\restrict}[2]{#1\vert_{#2}}
+\newcommand{\restmod}[2]{#1_{[#2]}}
+\DeclareMathOperator{\Hom}{Hom}
+\DeclareMathOperator{\Supp}{Supp}
+\DeclareMathOperator{\Ker}{Ker}
+\DeclareMathOperator{\Ann}{Ann}
+\DeclareMathOperator{\Spec}{Spec}
+\newcommand{\ilim}{\varinjlim}
+\newcommand{\plim}{\varprojlim}
+\newcommand{\A}{\mathscr A}
+\newcommand{\BB}{\mathscr B}
+\newcommand{\C}{\mathscr C}
+\newcommand{\E}{\mathscr E}
+\newcommand{\LL}{\mathscr L}
+\newcommand{\M}{\mathscr M}
+\newcommand{\N}{\mathscr N}
+\newcommand{\PP}{\mathscr P}
+\newcommand{\J}{\mathscr J}
+\newcommand{\shHom}{\mathscr{H}\!om}
+\newcommand{\dual}[1]{\check{#1}}
+\DeclareMathOperator{\Coker}{Coker}
+\let\Im\relax
+\DeclareMathOperator{\Im}{Im}
+\DeclareMathOperator{\Tor}{Tor}
+\newcommand{\frJ}{\mathfrak J}
+\newcommand{\frK}{\mathfrak K}
+\newcommand{\frQ}{\mathfrak Q}
+\newcommand{\frT}{\mathfrak T}
+\newcommand{\frR}{\mathfrak R}
+\newcommand{\frS}{\mathfrak S}
+\newcommand{\comp}[1]{\widehat{#1}}
+\newcommand{\ctensor}{\mathbin{\widehat{\otimes}}}
+\DeclareMathOperator{\grad}{grad}
+\newcommand{\wt}[1]{\widetilde{#1}}
+\newcommand{\jj}{\mathfrak j}
+\newcommand{\rr}{\mathfrak r}
+\newcommand{\mm}{\mathfrak m}
+\newcommand{\nrad}{\mathfrak N}
+\newcommand{\aphi}{{}^{a}\varphi}
+\DeclareMathOperator{\Spf}{Spf}
+\newcommand{\frX}{\mathfrak X}
+\newcommand{\frY}{\mathfrak Y}
+\newcommand{\frZ}{\mathfrak Z}
+\newcommand{\frU}{\mathfrak U}
+\newcommand{\frV}{\mathfrak V}
+\newcommand{\frW}{\mathfrak W}
+\newcommand{\frD}{\mathfrak D}
+\newcommand{\SSS}{\mathscr S}
+\newcommand{\nn}{\mathfrak n}
+\newcommand{\pp}{\mathfrak p}
+\newcommand{\qq}{\mathfrak q}
+\newcommand{\frj}{\mathfrak j}
+\newcommand{\frk}{\mathfrak k}
+\DeclareMathOperator{\Proj}{Proj}
+\DeclareMathOperator{\Tr}{Tr}
+\DeclareMathOperator{\Sym}{S}
+\DeclareMathOperator{\gr}{gr}
+\newcommand{\red}{\mathrm{red}}
+\newcommand{\Gstar}{\Gamma_*}
+\newcommand{\Tstar}{\Gamma_*}
+\newcommand{\R}{\mathscr R}
+\newcommand{\TT}{\mathscr T}
+\newcommand{\I}{\mathscr I}
+\newcommand{\K}{\mathscr K}
+\newcommand{\V}{\mathbf V}
+\newcommand{\Pb}{\mathbf P}
+\newcommand{\Z}{\mathbf Z}
+\newcommand{\Gr}{\operatorname{Gr}}
+\newcommand{\id}{\mathrm{id}}
+\DeclareMathOperator{\codim}{codim}
+\DeclareMathOperator{\rk}{rg}
+\DeclareMathOperator{\Pic}{Pic}
+\newcommand{\sProj}{\mathscr{P}\!roj}
+\newcommand{\catHom}{\mathscr{H}\!om}
+\newcommand{\Ens}{\mathbf{Ens}}
+\newcommand{\OI}{0_{\mathrm I}}
+\newcommand{\OIII}{0_{\mathrm{III}}}
+\newcommand{\Ext}{\operatorname{Ext}}
+\newcommand{\shExt}{\mathscr{E}\!xt}
+\newcommand{\shTor}{\mathscr{T}\!or}
+\newcommand{\Hh}{\mathbb H}
+\newcommand{\len}{\operatorname{long}}
+\newcommand{\cplx}[1]{#1^{\bullet}}
+\newcommand{\Cat}{\mathbf C}
+\newcommand{\ra}{\longrightarrow}
+\newcommand{\la}{\longleftarrow}
+\newcommand{\iso}{\xrightarrow{\sim}}
+\newcommand{\eproof}{\par\noindent\textbf{证明。}\ignorespaces}
+\newcommand{\finishproof}{\hfill$\square$\par}
+\newcommand{\srcpage}[1]{\par\noindent{\small\itshape〔底本第#1页〕}\par\nobreak}
+\newcommand{\cocomp}[1]{\complement #1}
+\DeclareMathOperator{\Aut}{Aut}
+\DeclareMathOperator{\GL}{GL}
+\DeclareMathOperator{\trdeg}{trdeg}
+
+% Macros for the reviewed continuation. Existing mathematical macros are unchanged.
+\newcommand{\kk}{\mathfrak k}
+\newcommand{\cH}{\mathscr H}
+\newcommand{\hTor}{\mathbb{T}\!or}
+\newcommand{\lTor}{\mathscr{T}\!or}
+\newcommand{\spE}{\mathscr E}
+\DeclareMathOperator{\coprof}{coprof}
+\newcommand{\source}[1]{\par\smallskip\noindent\textit{底本位置：#1。}\par\smallskip}
+\newcommand{\newscope}{new}
+\newcommand{\egap}[1]{\par\addvspace{.6\baselineskip}\Needspace{3\baselineskip}\noindent\hypertarget{new:\newscope:#1}{}\textbf{（#1）}\quad\ignorespaces}
+\newcommand{\egas}[2]{\par\addvspace{.6\baselineskip}\Needspace{3\baselineskip}\noindent\hypertarget{new:\newscope:#1}{}\textbf{#2（#1）}\quad\ignorespaces}
+\newcommand{\cmt}[2]{\footnote{\textbf{译校注〔#1〕：}#2}}
+\newcommand{\ednote}[1]{\footnote{\textbf{英译编者注：}#1}}
+\newcommand{\orig}[1]{\footnote{\textbf{原注：}#1}}
+\newcommand{\head}[1]{\chapter*{#1}\addcontentsline{toc}{chapter}{#1}\markboth{#1}{#1}}
+\newcommand{\egasection}[1]{\section*{#1}\addcontentsline{toc}{section}{#1}}
+\newcommand{\subsec}[1]{\subsection*{#1}\addcontentsline{toc}{subsection}{#1}}
+\newcommand{\audit}[3]{\Needspace{5\baselineskip}\hypertarget{audit:#1}{}\section*{#1\quad #2}\addcontentsline{toc}{section}{#1\quad #2}\noindent\textbf{判定：#3。}\par\smallskip}
+\pdfstringdefDisableCommands{\def\quad{ }\def\qquad{ }\def\S{§}}
+
+\newcommand{\bTor}{\operatorname{\mathbf{Tor}}}
+\newcommand{\termTor}{\mathop{\mathscr{T}\!or^{\mathrm{term}}}\nolimits}
+\newcommand{\NewNote}[1]{\par\smallskip\noindent\textbf{编排说明。}#1\par\smallskip}
+\hypersetup{pdftitle={代数几何基础：按内容顺序编排的中文译校合订本（第七版）},pdfauthor={原著 A. Grothendieck；与 J. Dieudonné 合作；预备笔记英译编者见各篇},pdfsubject={第0章归并；正文连续；已译范围和未译范围分开列明}}
+\title{代数几何基础\\中文译校合订本\\[1em]\large 按内容顺序编排·第七版}
+\author{A. Grothendieck\\与 J. Dieudonné 合作撰写\\[.6em]\normalsize 预备笔记英译及编辑：Piotr Blass、Joseph Blass}
+\date{}
+
+% Additions for the fourth continuation; no font or page-geometry overrides.
+\DeclareMathOperator{\Ass}{Ass}
+\DeclareMathOperator{\prof}{prof}
+\DeclareMathOperator{\htp}{ht}
+\newcommand{\pd}{\operatorname{dim.proj}}
+\newcommand{\injdim}{\operatorname{dim.inj}}
+\newcommand{\gldim}{\operatorname{dim.coh}}
+\newcommand{\Salg}{\mathrm S}
+
+\DeclareMathOperator{\End}{End}
+
+% Additions for chapter 0, section 18. Keep class defaults.
+\DeclareMathOperator{\Exan}{Exan}
+\DeclareMathOperator{\Exal}{Exal}
+\DeclareMathOperator{\Exalcom}{Exalcom}
+\DeclareMathOperator{\Exantop}{Exantop}
+\DeclareMathOperator{\Exaltop}{Exaltop}
+\DeclareMathOperator{\Exalcotop}{Exalcotop}
+\newcommand{\HomCont}{\operatorname{Hom.cont}}

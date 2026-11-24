@@ -1,0 +1,104 @@
+"""One-time v17 layout repair; not the build entry point."""
+from pathlib import Path
+import hashlib
+import json
+import re
+
+ROOT = Path(__file__).resolve().parents[1] / "work/EGA_v17"
+FILES = [
+    "continuations/v_dot_early.tex", "continuations/v_dot_middle.tex",
+    "continuations/v_dot_late.tex", "reports/dot_early_audit.tex",
+]
+PAT = re.compile(r"\\(cmt|transnote|ednote|orig|footnote)\{")
+
+def arg_end(text, start):
+    assert text[start] == "{"
+    depth = 0
+    for j in range(start, len(text)):
+        escapes = 0
+        i = j - 1
+        while i >= 0 and text[i] == "\\":
+            escapes += 1
+            i -= 1
+        if escapes % 2:
+            continue
+        if text[j] == "{":
+            depth += 1
+        elif text[j] == "}":
+            depth -= 1
+            if depth == 0:
+                return j + 1
+    raise ValueError("Unclosed argument")
+
+def notes(text):
+    result = []
+    for m in PAT.finditer(text):
+        j = arg_end(text, m.end()-1)
+        if m.group(1) == "cmt":
+            j = arg_end(text, j)
+        result.append((m.start(), j, text[m.start():j], m.group(1)))
+    return result
+
+records = []
+for name in FILES:
+    path = ROOT / name
+    old = text = path.read_text()
+    moved = []
+    while True:
+        changed = False
+        for start, end, note, macro in notes(text):
+            before = text[:start].rstrip()
+            if before.endswith(r"\]"):
+                insert = before.rfind(r"\[")
+                assert insert >= 0
+                lead = text[:insert].rstrip()
+                assert lead and not lead.endswith(r"\]")
+                # Bind the marker to the sentence introducing this display.
+                moved.append({"macro": macro, "note_prefix": note[:80],
+                              "anchor_context": lead[-100:],
+                              "old_line": text.count("\n", 0, start)+1})
+                text = lead + note + "\n" + text[insert:start] + text[end:]
+                changed = True
+                break
+            if before.endswith(r"\end{enumerate}"):
+                insert = before.rfind(r"\end{enumerate}")
+                lead = text[:insert].rstrip()
+                moved.append({"macro": macro, "note_prefix": note[:80],
+                              "anchor_context": lead[-100:],
+                              "old_line": text.count("\n", 0, start)+1})
+                text = lead + note + "\n" + text[insert:start] + text[end:]
+                changed = True
+                break
+        if not changed:
+            break
+    assert [n[2] for n in notes(old)] == [n[2] for n in notes(text)]
+    assert re.findall(r"\\\[(.*?)\\\]", old, re.S) == re.findall(r"\\\[(.*?)\\\]", text, re.S)
+    path.write_text(text)
+    records.append({"path": name, "moved": moved,
+                    "note_contents_and_order_unchanged": True,
+                    "display_formula_contents_and_order_unchanged": True,
+                    "before_sha256": hashlib.sha256(old.encode()).hexdigest(),
+                    "after_sha256": hashlib.sha256(text.encode()).hexdigest()})
+
+part_pattern = re.compile(
+    r"\\part\*\{([^{}]+)\}\s*\\addcontentsline\{toc\}\{part\}\{\1\}"
+)
+parts = []
+for name in ["main.tex", "report.tex"]:
+    path = ROOT / name
+    text = path.read_text()
+    titles = part_pattern.findall(text)
+    def replace(m):
+        return (r"\setcounter{secnumdepth}{-2}" + "\n" +
+                r"\part{" + m.group(1) + "}\n" +
+                r"\setcounter{secnumdepth}{2}")
+    new = part_pattern.sub(replace, text)
+    path.write_text(new)
+    parts.append({"path": name, "titles": titles,
+                  "reason": "Use the class's unnumbered part behavior with its own on-page TOC write; no manual delayed TOC page."})
+
+out = {"note_anchor_changes": records, "part_toc_changes": parts,
+       "scope": "Layout only. No change to default fonts, page geometry, mathematical text or note wording."}
+(ROOT / "checks/layout_repairs.json").write_text(json.dumps(out, ensure_ascii=False, indent=2)+"\n")
+print(json.dumps({"moved_notes": sum(len(x["moved"]) for x in records),
+                  "part_titles": sum(len(x["titles"]) for x in parts)}, ensure_ascii=False))

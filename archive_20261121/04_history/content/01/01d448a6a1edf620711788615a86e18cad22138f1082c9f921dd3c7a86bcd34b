@@ -1,0 +1,37 @@
+b) If in 13.2 we abandon the hypothesis that X is geometrically irreducible the conclusion
+obviously does not remain the same (since an algebraic poly-elementary scheme is
+geometrically irreducible). It holds, however, in a weaker form which is obtained by
+omitting in deﬁnition 13.1 the word “connected” this is shown by the proof that we
+have given.
+c) (To be possibly included in the statement of 13.2) Let with the notations of 13.2 Φ be a
+ﬁnite subset of X formed by smooth points of X and let us suppose that Φ is contained
+in an open aﬃne of X. Then Φ allows a fundamental system of open polyelementary
+neighborhoods. Evidently we may suppose that Φ consists of closed points. The proof
+is essentially the same except that in formula 13.3 in slightly diﬀerent form we have:
+there exists a linear subvariety C of P r of codimension not meeting Φ ∪Y and such
+that for every xi ∈Φ(k), the linear subvariety of Li of codimension (n −1) generated
+by C at xi has the properties a), b), c) of 13.3. To verify this point we note that it
+suﬃces to verify that the generic C has the above-mentioned properties since for such
+a ??????? each Li is generic among the L of codimension n passing through xi so
+that we can apply 13.3 in the initial form (or at least in the form that we have proven
+which was [Fr]: every L0 suﬃciently general passing through x has properties a), b),
+c).
+d) By proceeding as explained in 7.1, we may give variants of 13.2 in the case where we
+replace the base ﬁeld k by a general base Y prescheme. Let us remark the following
+(without proof): Let f: X →Y be a ﬂat projective morphism with geometrically
+irreducible and (R2) ﬁbers, S′ a subscheme of X ﬁnite over S, x ∈S, suppose that
+for every x ∈S′ over s, Xs is smooth over k(s) at x. Then there exists an open
+neighborhood U of s and an open neighborhood V of S′ U in X
+U such that
+V →U is poly-elementary. If Y is a closed subscheme of X not meeting S′ and such
+that the set X of points where Y is not smooth over S dim Zs ≤dim Xs −2 then we
+may above tale V containe din X −Y .
+e) One of the reasons why 13.2 is interesting is the topological structure particularly
+simple of the elementary algebraic schemes U. For example if the base ﬁeld is the
+ﬁeld of complex numbers and if Y en denotes the analytic space associated to U then
+the homotopy groups πi(U en) are zero for i ̸= 1 and π1 is a successive extension of free
+groups. Thus U en is a “space K(π1, 1)” classifying for π1, more precisely its universal
+covering space is homeomorphic to Cn and a fortiori is contractible and this covering
+is a “universal principal ﬁbration” with group π1.
+§14 Conic Projections
+53

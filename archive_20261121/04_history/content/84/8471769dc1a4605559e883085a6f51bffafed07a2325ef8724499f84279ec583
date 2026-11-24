@@ -1,0 +1,60 @@
+{
+  "edition": 17,
+  "record_date": "2026-11-20",
+  "time_zone": "Asia/Shanghai",
+  "all_books_finished": false,
+  "current_project": "01_project/EGA_v17",
+  "book": {
+    "modular": "main.tex",
+    "single": "single.tex",
+    "pdf": "main.pdf",
+    "pages": 1130,
+    "pdf_sha256": "df949bd9daa04547214b6e3c68e066812be0fb2918601c0d6403cccfce568046",
+    "single_tex_sha256": "b884a743888eb9ace945d53cf51d1d79ba6bb4eeb17df408c38a79ecba2d957b"
+  },
+  "report": {
+    "modular": "report.tex",
+    "single": "report_single.tex",
+    "pdf": "report.pdf",
+    "pages": 283,
+    "pdf_sha256": "b61fe870fd83b90a505893ecfc8403fafb9037053bc452f0ae7b723e9e401949",
+    "single_tex_sha256": "54d446dd9213eef28d54881769b9d7c2db49e65e9793b35dfbd154b9d7dac712"
+  },
+  "dot_batches": {
+    "restored": 56,
+    "new_body": 54,
+    "same_text_collation": 2
+  },
+  "new_translation_gaps_filled": [
+    "V §11, pp.41–43",
+    "V §14 bridge, pp.54–55"
+  ],
+  "next": [
+    {
+      "branch": "V",
+      "source": "03_sources/EGAVaiello.pdf",
+      "physical_page": 66,
+      "starts_at": "commutative diagram after 'we have the commutativity of the diagram'",
+      "do_not_restart_at": "Dot-only former page62 Remark4(d)"
+    },
+    {
+      "branch": "IV",
+      "source": "03_sources/EGAIV.1.pdf",
+      "physical_page": 221,
+      "starts_at": "Chapter IV synopsis, then introduction; (1.1.1) on physical223"
+    }
+  ],
+  "default_continuation_if_user_only_says_continue": "Finish the current V short-manuscript join at page66, unless user specifies another volume.",
+  "source_corpus_count": 12,
+  "checks": [
+    "checks/structure_verification.json",
+    "checks/build_log_summary.json",
+    "checks/output_verification.json",
+    "checks/VISUAL_REVIEW.md",
+    "checks/layout_repairs.json",
+    "checks/relocation_check.json"
+  ],
+  "pending": "PENDING_ISSUES.md",
+  "automation_created_or_modified": false,
+  "email_sent": false
+}

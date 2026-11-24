@@ -1,0 +1,3 @@
+法文 EGA5.pdf 171页 SHA256 24cf8204184b58b18a46e5f63ecc36d6e791b3c8c96a09daac93de96ebd8e830；英稿112页 SHA256 23a20ef32fd16a1bd623c0c08ac080d04fc94f248de12133b713a19d6b0330d9，https://webusers.imj-prg.fr/~leila.schneps/grothendieckcircle/EGA/EGA5trans.pdf。
+法22 5.5读等价，法23 doit être、ξ纤维及余核、法5.6实际S与从中间底得相对P∨；5.7法写Yξ/φξ。正式EGA IV.3 印174的12.1.1八项，177的12.1.4无四项，178的12.1.6为适用四项。证明对象由F环境模改为G截面余核，划销旧文另列，5.7坏集投影以支撑固有。法24删段只译可读，首残句不补。
+核验：XeLaTeX两遍，终日志查缺字、未定义、Overfull；全部页目检；摘页100dpi与底本像素同，ZIP CRC、新目录SHA与存库前包内外PDF/TeX同。

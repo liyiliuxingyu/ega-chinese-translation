@@ -1,0 +1,27 @@
+\documentclass[openany,fontset=fandol]{ctexbook}
+\usepackage{amsmath,amssymb}
+\usepackage[unicode,hidelinks]{hyperref}
+\newcommand{\note}[1]{\footnote{译注：#1}}
+\begin{document}
+\title{代数几何基础第五卷预备笔记\\证明后附记与注13.4(a)、(b)}
+\author{据用户上传英译编辑稿译出}
+\date{2026年11月17日}
+\maketitle
+\chapter*{范围与校订状态}
+本批连续译出底本第52页“N.B. The reasoning does not go through”起的附记、注13.4标题及(a)，并接续第53页(b)全文。下一处为第53页13.4(c)：“To be possibly included in the statement of 13.2”。
+
+附记中一处原句的否定与条件连接不清，译文保留残句状态和全部可辨信息，脚注存原句，不补造逻辑结论。有限域推广保留作者的推测语气，基变换对象字母据定理13.2校订。前批所引8.8、8.7(c)的缺文和全部待核仍保留；本批不等于对定理13.2的独立验证，亦未并入原合订本。
+\chapter*{§13 初等态射与M. Artin定理（续）}
+\noindent\textbf{附记。}
+如果把$x$换成一个维数大于0的线性子簇$C$，并要求$H$经过$C$，上述论证就不能照样进行。\note{底本第一句写“a linear sub-variety $X$”，但同句后半和随后讨论固定线性子簇均用$C$，这里据上下文统一为$C$；不改变原先源概形$X$的含义。}
+
+事实上，没有理由认为［本句连接关系待核］（例如，取$\dim C=r-2$，这是$H$仍能实际变化时所允许的最大维数），“不作假设（？）”，$T$包含直线$C'$；例如，在任意特征下取$P$中的一个非奇异二次超曲面。\note{底本可辨原句为“indeed, there is no reason to suppose (taking for example dim (= r − 2 the greatest possible for which H can still effectively vary) without supposing (?) that T contains the straight linear $C'$ taking for example a non-singular quadric in p in any characteristic.” 原有“dim (”处按同段对象整理为$\dim C$；但“no reason to suppose”与“without supposing (?)”之间关系不明，不能据此确定所否定的包含关系。正文逐项保留全部可辨内容与原问号，不把该残句改写为已经证明的反例。$C'$应如何精确定义，底本本段也没有明确写出；不擅自增补其定义或具体二次超曲面。}
+
+不过，对于$\varphi_n f$，其中$n\geq2$，这样的现象或许不再发生；我们可以把这个问题作为第9节的一条注提出。\note{底本本处使用小写$\varphi_n$，此前用$\Phi_n$或$Q_n$，记号差异保留待核。“或许”与“可以提出问题”均为原作者的未定语气，不译成肯定定理。}
+\newpage
+\noindent\textbf{注13.4。}
+
+\noindent a) 我们已经指出，对于13.2的成立，$k$是完美域这一假设是必要的。相反，$k$无限这一假设很可能是多余的、过强的。我们不打算针对$k$有限的情形给出专门的论证，只指出，在这种情形下，将13.2应用于$k$的代数闭包，再用通常的论证，可以找到$k$的一个有限扩张$k'$，使得$X_{k'}$中位于$x$上方的点具有相对于$k'$的多重初等开邻域。\note{底本印“the point of $S_{k'}$ over $x$”，而13.2的概形为$X$，本条没有定义$S$，故正文订为$X_{k'}$。基变换后$x$上方不一定只有一个点，中文不额外引入唯一性断言；该句的逐点范围及有限扩张选择的下降细节，原稿没有展开。本条只是作者关于有限域情形的讨论，不以其推测断言有限域上的原结论已经成立。}
+
+\noindent b) 如果在13.2中舍弃$X$几何不可约这一假设，则结论不能保持原样，因为一个多重初等代数概形是几何不可约的。不过，结论仍以一种较弱的形式成立：在定义13.1中删去“连通”一词便得到这种形式；我们所给的证明表明了这一点。\note{定义13.1原文要求紧化族具有“几何连通的一维纤维”。本条“删去连通”沿用作者字面指示，是对初等态射定义的修改，不能仍称作完全相同的原定义。正文保留原作者对证明的判断；本批没有逐项重新验证去掉几何不可约后所有构造和边界条件。零维情形、空复合及非空条件须连同13.1、13.2前文理解，不外推为任意概形的断言。}
+\end{document}

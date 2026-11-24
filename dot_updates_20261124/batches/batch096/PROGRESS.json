@@ -1,0 +1,19 @@
+{
+  "batch": 96,
+  "this_french_pages": [
+    24,
+    25
+  ],
+  "this_english_pages": [
+    18
+  ],
+  "this_from": "法24下部第6节标题",
+  "this_through": "法25页末划销的下一节标题校记；英18第6节末",
+  "french_contiguous_through": "法25页末",
+  "next": "法26上部划销旧稿（与第4节有关）；后半第7节标题与7.1，续法27、英19",
+  "merge_into_1158_done": false,
+  "double_count_as_new_translation": false,
+  "formal_EGA_IV_1": "另线221提要 / 223定义1.1.1",
+  "unverified": "15.6.3 的手稿编号沿革；4.4方向的推广只保留为作者建议；全卷未复核闭合"
+}
+

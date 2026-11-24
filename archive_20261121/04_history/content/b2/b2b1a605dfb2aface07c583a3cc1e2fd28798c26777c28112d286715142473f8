@@ -1,0 +1,57 @@
+"""Verify all released ZIP members, their CRCs, and the internal SHA manifest."""
+from pathlib import Path, PurePosixPath
+import argparse
+import hashlib
+import json
+import zipfile
+
+
+parser = argparse.ArgumentParser(description=__doc__)
+parser.add_argument("archive")
+parser.add_argument("--output")
+args = parser.parse_args()
+path = Path(args.archive)
+prefix = "EGA_v17_handover/"
+with zipfile.ZipFile(path) as archive:
+    infos = archive.infolist()
+    names = [i.filename for i in infos]
+    assert len(names) == len(set(names)), "Duplicate ZIP member"
+    assert all(n.startswith(prefix) for n in names), "Unexpected top-level directory"
+    assert all(not PurePosixPath(n).is_absolute() and ".." not in PurePosixPath(n).parts
+               and "\\" not in n for n in names), "Unsafe ZIP path"
+    digests = {}
+    sizes = {}
+    for item in infos:
+        assert not item.is_dir(), "This release contains regular files only"
+        digest = hashlib.sha256()
+        size = 0
+        # Reading every member to EOF validates its ZIP CRC as well.
+        with archive.open(item) as stream:
+            for chunk in iter(lambda: stream.read(1024 * 1024), b""):
+                digest.update(chunk)
+                size += len(chunk)
+        assert size == item.file_size
+        name = item.filename[len(prefix):]
+        digests[name] = digest.hexdigest()
+        sizes[name] = size
+    manifest = json.loads(archive.read(prefix + "MANIFEST.json"))
+    expected = {row["path"]: row for row in manifest["files"]}
+    assert set(digests) == set(expected) | {"MANIFEST.json", "SHA256SUMS.txt"}
+    for name, row in expected.items():
+        assert digests[name] == row["sha256"] and sizes[name] == row["bytes"], name
+    sums = dict((line.split("  ", 1)[1], line.split("  ", 1)[0])
+                for line in archive.read(prefix + "SHA256SUMS.txt").decode("utf-8").splitlines())
+    assert sums == {name: digest for name, digest in digests.items() if name != "SHA256SUMS.txt"}
+
+digest = hashlib.sha256()
+with path.open("rb") as stream:
+    for chunk in iter(lambda: stream.read(1024 * 1024), b""):
+        digest.update(chunk)
+result = {"pass": True, "archive": path.name, "archive_bytes": path.stat().st_size,
+          "archive_sha256": digest.hexdigest(), "regular_members": len(names),
+          "uncompressed_bytes": sum(sizes.values()), "crc_all_members_checked": True,
+          "manifest_hashes_and_sizes_all_match": True,
+          "scope": "ZIP contents and file bytes, not a mathematical correctness certificate."}
+if args.output:
+    Path(args.output).write_text(json.dumps(result, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+print(json.dumps(result, ensure_ascii=False, indent=2))

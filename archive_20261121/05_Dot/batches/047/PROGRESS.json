@@ -1,0 +1,13 @@
+{
+  "completed": "底本58页命题14.5、连接句及推论14.6，至a hypersurface in P^{n+1}",
+  "next": "底本58页We will avoid believing, even if X is a closed smooth geometrically irreducible subset",
+  "previous_project": "libfile_fde3_f-d234ed3b64ec81919c3b926c15f21bab_49ac57203c0c81918f3630f0324dcb35",
+  "source_sha256": "23a20ef32fd16a1bd623c0c08ac080d04fc94f248de12133b713a19d6b0330d9",
+  "merged_into_main": false,
+  "pdf_pages": 3,
+  "unresolved": [
+    "14.5和14.6原处无证明，未独立补证",
+    "separable按原术语译可分，未加强为光滑",
+    "14.4缺条件、缺文等全部历史待核保持"
+  ]
+}

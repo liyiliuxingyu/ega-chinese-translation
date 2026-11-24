@@ -1,0 +1,14 @@
+# 依赖
+
+## 必需
+- XeLaTeX
+- CTeX / `ctexbook`
+- TeX Live 常用宏包：amsmath、amssymb、mathtools、tikz、tikz-cd、hyperref、longtable、booktabs、enumitem 等
+- Python 3（结构与哈希校验）
+
+## 可选
+- PyMuPDF：逐页PDF文字、尺寸和像素比对
+- SymPy：工程中列明的多项式恒等式辅助检查
+- qpdf 或 `pdfinfo`：PDF结构与页数检查
+
+工程不依赖外部图片，也不附带或要求项目自带字体文件；中文字体由本机 CTeX 默认配置选择。

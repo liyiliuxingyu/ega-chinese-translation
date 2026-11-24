@@ -1,0 +1,30 @@
+from pathlib import Path
+import hashlib, json, subprocess
+import fitz
+from PIL import Image
+root=Path('/workspace/scratch/a886fd56dd2f/integration/report_visual')
+source=Path('/workspace/scratch/a886fd56dd2f/work/EGA_v17/report.pdf')
+renderer='/opt/codex/runtimes/codex-primary-runtime/dependencies/bin/override/pdftoppm'
+data=source.read_bytes()
+snapshot=root/'report_snapshot_final.pdf'
+snapshot.write_bytes(data)
+sha=lambda b:hashlib.sha256(b).hexdigest()
+source_sha=sha(data)
+doc=fitz.open(snapshot)
+observations=json.loads((root/'observations_draft.json').read_text())
+pages=sorted(map(int,observations))
+out=root/'final'
+out.mkdir(exist_ok=True)
+results=[]
+for p in pages:
+ old=root/f'page_{p:03}.png'
+ new=out/f'page_{p:03}.png'
+ subprocess.run([renderer,'-f',str(p),'-l',str(p),'-singlefile','-r','150','-png',str(snapshot),str(new.with_suffix(''))],check=True)
+ old_im=Image.open(old).convert('RGB'); new_im=Image.open(new).convert('RGB')
+ old_hash=sha(old_im.tobytes()); new_hash=sha(new_im.tobytes())
+ results.append({'physical_page':p,'png':str(new),'sha256':sha(new.read_bytes()),'pixel_sha256':new_hash,'pixel_width':new_im.width,'pixel_height':new_im.height,'baseline_pixel_sha256':old_hash,'pixel_identical_to_pre_final':old_hash==new_hash,'dpi':150})
+text_pages=[{'physical_page':p+1,'chars':len(doc[p].get_text()),'text':doc[p].get_text()} for p in range(min(40,len(doc)))]
+(root/'new_report_text_pages_001_040_final.txt').write_text('\n\n'.join(f'===== Physical page {p["physical_page"]} =====\n{p["text"]}' for p in text_pages))
+result={'source_path':str(source),'snapshot_path':str(snapshot),'sha256':source_sha,'bytes':len(data),'pdf_pages':len(doc),'source_unchanged_during_render':sha(source.read_bytes())==source_sha,'renderer':renderer,'dpi':150,'pages':results,'changed_page_numbers':[p['physical_page'] for p in results if not p['pixel_identical_to_pre_final']],'text_extraction':text_pages,'pdf_outline':doc.get_toc()}
+(root/'final_render_comparison.json').write_text(json.dumps(result,ensure_ascii=False,indent=2)+'\n')
+print(json.dumps({k:result[k] for k in ['sha256','bytes','pdf_pages','source_unchanged_during_render','changed_page_numbers']},ensure_ascii=False))

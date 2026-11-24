@@ -1,0 +1,31 @@
+\documentclass[openany,fontset=fandol]{ctexbook}
+\usepackage{amsmath,amssymb}
+\usepackage[unicode,hidelinks]{hyperref}
+\newcommand{\note}[1]{\unskip\nobreak\footnote{译注：#1}}
+\begin{document}
+\title{代数几何基础第五卷预备笔记\\命题14.5与推论14.6：双有理投影}
+\author{据用户上传英译编辑稿译出}
+\date{2026年11月18日}
+\maketitle
+\chapter*{范围与校订状态}
+本批译出底本第58页命题14.5、连接句及推论14.6，止于“a hypersurface in $P^{n+1}$”。下一接续位置为同页“We will avoid believing, even if $X$ is a closed smooth geometrically irreducible subset”。
+
+本批两项均为底本中的陈述，原处未列证明；译文不补造证明，也不把上一命题的缺文当作已恢复。仅规范明显的字母大小写和语病，原写法及处理依据列于脚注。全部历史待核保持，未合并主稿。
+\chapter*{§14 锥投影（续）}
+\noindent\textbf{命题14.5。}
+设$\dim X\leq m-1$，$f:X\to P$为浸入，并且$X$在$k$上可分。\note{底本为“$X$ separable over $k$”。正文保留“可分”这一原有术语，不把它擅改为“光滑”或“几何不可约”，也不额外添加这些更强的假设。}
+设$Y_\eta$为$X_{k(\eta)}$在$Q(C_\eta)$中的概形论像。则诱导态射
+\[
+p_{C_\eta}:X_{k(\eta)}\longrightarrow Y_\eta
+\]
+是双有理的；而且，对$X_{k(\eta)}$中位于$X$的某个闭点之上的每一点$x$，$p_{C_\eta}$在$x$处，以及在
+\[
+p_{C_\eta}^{-1}\bigl(p_{C_\eta}(x)\bigr)
+\]
+的各点处，都是平展的。\note{底本最后一句写“$p_{c_\eta}$ is étale at $x$ and in at the points of $p_{C_\eta}^{-1}p_{C_\eta}(x)$”。正文统一中心字母为$C$，并将“and in at”这一重复介词译为“以及在……处”。这里平展的是目标为概形论像$Y_\eta$的诱导态射，不能误读成向整个$Q(C_\eta)$的态射平展。“位于闭点之上”也不改成“$X_{k(\eta)}$的任意闭点”。}
+
+注意以下推论：
+
+\noindent\textbf{推论14.6。}
+设$X$为无限域$k$上的一个不可约且可分的$n$维射影代数概形。则存在一个从$X$到$\mathbb P^{n+1}_k$中某个超曲面的满射双有理态射。\note{底本原文为“a birational morphism of $X$ onto a hypersurface in $P^{n+1}$”。“onto”译作满射；$\mathbb P^{n+1}_k$将底域明确写出，没有把双有理态射加强成同构或闭浸入。原文在此仅给出推论陈述，未展开从泛中心到$k$上中心的专门化论证，本批不声称已经补全。}
+\end{document}

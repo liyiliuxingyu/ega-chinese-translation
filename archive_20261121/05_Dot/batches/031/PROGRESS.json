@@ -1,0 +1,15 @@
+{
+  "completed": "底本51页 It remains only to prove Lemma 13.3 起整段，至 an integer ≥ 2",
+  "next": "第51页 This is a regret to No. 9",
+  "previous_project": "libfile_fde3_f-6ea0ac6447ac8191af2a886003dd7c64_49ac57203c0c81918f3630f0324dcb35",
+  "source_sha256": "23a20ef32fd16a1bd623c0c08ac080d04fc94f248de12133b713a19d6b0330d9",
+  "merged_into_main": false,
+  "pdf_pages": 4,
+  "unresolved": [
+    "一般截面的基域措辞待核",
+    "Q_n与Phi_n符号不一致",
+    "维数和Veronese指标n重名",
+    "13.3与13.2证明尚未译完",
+    "旧缺文及待核事项保持"
+  ]
+}

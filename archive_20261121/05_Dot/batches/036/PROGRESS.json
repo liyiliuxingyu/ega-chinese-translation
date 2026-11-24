@@ -1,0 +1,14 @@
+{
+  "completed": "底本第53页注13.4(d)全部可辨文字和公式",
+  "next": "第53页13.4(e): One of the reasons why 13.2 is interesting",
+  "previous_project": "libfile_fde3_f-0d28d9c9ae508191bca20a484cdd8351_49ac57203c0c81918f3630f0324dcb35",
+  "source_sha256": "23a20ef32fd16a1bd623c0c08ac080d04fc94f248de12133b713a19d6b0330d9",
+  "merged_into_main": false,
+  "pdf_pages": 4,
+  "unresolved": [
+    "作者本项未给证明；7.1有限剩余域可能需平展基变换，本项只写开邻域，适用范围待核",
+    "末句连接语残缺，未增补量词或假设",
+    "R2是否几何意义下条件未明，照存",
+    "8.8缺文、8.7(c)残缺及所有旧待核保持"
+  ]
+}

@@ -1,0 +1,4 @@
+法文作者手稿：EGA5.pdf，物理171页，SHA256 24cf8204184b58b18a46e5f63ecc36d6e791b3c8c96a09daac93de96ebd8e830。
+英译编辑底本：https://webusers.imj-prg.fr/~leila.schneps/grothendieckcircle/EGA/EGA5trans.pdf
+英译物理112页，SHA256 23a20ef32fd16a1bd623c0c08ac080d04fc94f248de12133b713a19d6b0330d9。
+法135下部始于“Corollaire 3.5”；法136上部次序承接，横划/大叉后的长段不在正文；法137转入4；法138续到推论4.2的标题前。英102下部、103、104、105上部并行核对。摘页保留全页，因此含相邻两批章节的少量全文之外文字。

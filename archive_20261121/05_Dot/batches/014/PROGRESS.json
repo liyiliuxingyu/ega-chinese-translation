@@ -1,0 +1,19 @@
+{
+  "source_sha256": "23a20ef32fd16a1bd623c0c08ac080d04fc94f248de12133b713a19d6b0330d9",
+  "previous_project": "libfile_fde3_f-b42abadfd3b08191a4a353d3dee7c8e7_49ac57203c0c81918f3630f0324dcb35",
+  "completed": "Source pp37–38 Proposition9.3 statement(a,b,c), entire proof through final three squares, original footnote53",
+  "next_source_page": 38,
+  "next_exact": "Conjugating with 8.18 we find a Corollary 9.4. ([Tr] to be stated)",
+  "status": "Independent incremental translation, not merged; not independent theorem verification",
+  "unresolved": [
+    "8.8 missing hypotheses remain",
+    "9.3(c) where connective unclear, not replaced with or",
+    "Replacing X by L in final proof not independently justified; independence on L alone insufficient for image",
+    "Earlier unresolved dimension and conical wording unchanged"
+  ],
+  "checks": [
+    "Separate translation audit passed with one qualification adopted",
+    "XeLaTeX twice exit0; 5 pages; no overfull, missing-character or undefined warnings; all pages visually inspected"
+  ],
+  "concurrency_check": "Freshly read original EGA: edition11 through0.21.4.8,next21.5 at2026-11-15 12:32 UTC. Original math visible012 then user continue02:26. Latest independent EGA Library project9.1–9.2; no observed V9.3 overlap. Not remote execution guarantee."
+}

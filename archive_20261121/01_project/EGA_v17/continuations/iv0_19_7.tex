@@ -1,0 +1,223 @@
+% 底本 EGAIV.1.pdf，上传PDF第103--108页，原分册印刷第104--109页。
+\subsection{局部同态的情形；存在性与唯一性定理}
+\source{第四卷第一部分，印刷第104--109页；上传PDF第103--108页}
+本小节中，把半局部环看作拓扑环时，除明确另作说明外，总指其 $\mathfrak r$-预进制拓扑，其中 $\mathfrak r$ 为该环的根。因此，局部环之间的每个局部同态都自动连续。
+
+\egas{19.7.1}{定理}
+设 $A,B$ 为诺特局部环，$\mathfrak m,\mathfrak n$ 分别为其极大理想，$k=A/\mathfrak m$。分别给 $A,B$ 配备 $\mathfrak m$-预进制和 $\mathfrak n$-预进制拓扑。设 $\varphi:A\to B$ 为局部同态，置 $B_0=B\otimes_Ak$。以下性质等价：
+
+$a)$ $B$ 为形式光滑 $A$-代数；
+
+$b)$ $B$ 为平坦 $A$-模，且 $B_0=B/\mathfrak mB$ 配备商拓扑后，为形式光滑 $k$-代数。
+
+证明分几个步骤进行。
+
+\egap{19.7.1.1}
+先证 $b)\Rightarrow a)$。对 $\mathfrak j=\mathfrak m$ 应用（19.4.7）。由 $b)$ 的第二个假设，只须证明 $B$ 为形式投射 $A$-模。对每个 $h>0$，$B/\mathfrak m^hB$ 为平坦 $(A/\mathfrak m^h)$-模（$0_{\mathrm{III}}$，10.2.1）。由于各 $\mathfrak m^h$ 构成 $A$ 的零邻域基本系，且
+\[
+ (B/\mathfrak m^hB)\otimes_{A/\mathfrak m^h}k=B_0,
+\]
+可分别以 $A/\mathfrak m^h$、$B/\mathfrak m^hB$ 代替 $A,B$，从而假设 $A$ 为阿廷环，取离散拓扑。
+
+$B_0$ 为形式光滑 $k$-代数，故为正则环（19.6.5）。取 $B_0$ 的正则参数系 $x_1^0,\ldots,x_d^0$（17.1.6），并取 $x_i\in B$ 提升 $x_i^0$。这些 $x_i^0$ 生成 $B_0$ 的极大理想 $\mathfrak n_0=\mathfrak n/\mathfrak mB$。对每个整数 $r>0$，令
+\[
+ \mathfrak q_r=\sum_{i=1}^{d}(x_i^0)^rB_0,
+ \qquad \mathfrak j_r=\sum_{i=1}^{d}x_i^rB.
+\]
+有 $\mathfrak n_0^{dr}\subseteq\mathfrak q_r\subseteq\mathfrak n_0^r$，所以各 $\mathfrak q_r$ 构成 $B_0$ 的零邻域基本系。又有 $\mathfrak n=\mathfrak j_1+\mathfrak mB$。取 $h>0$ 使 $\mathfrak m^h=0$，则在 $r>h$ 时
+\[
+ \mathfrak n^r\subseteq\mathfrak j_1^{\,r-h}\subseteq\mathfrak n^{\,r-h}.
+\]
+再用 $\mathfrak j_1^{dr}\subseteq\mathfrak j_r\subseteq\mathfrak j_1^r$，可知各 $\mathfrak j_r$ 构成 $B$ 的零邻域基本系。
+\cmt{H8-N01}{为避免原文同时用 $n$ 表示参数个数、用 $m$ 表示正整数并与理想 $\mathfrak m,\mathfrak n$ 混淆，本段仅把参数个数改记为 $d$、正整数改记为 $r$，数学内容不变。若 $d=0$，则 $\mathfrak n=\mathfrak mB$ 幂零，$B$ 离散且已是平坦阿廷基环上的自由模，直接得到所需结论。}
+因此，只须证明各 $B/\mathfrak j_r$ 为自由 $A$-模；对阿廷局部环而言，这等价于平坦（$0_{\mathrm{III}}$，10.1.3）。由于 $(x_i^0)$ 为 $B_0$-正则序列，$( (x_i^0)^r )_{1\le i\le d}$ 对每个 $r>0$ 仍为 $B_0$-正则序列（15.1.20）。于是由（15.1.16，b、c）得到结论。
+
+\egas{19.7.1.2}{引理}
+设 $A$ 为拓扑环，$B,C$ 为拓扑 $A$-代数，且为诺特局部环。设 $\mathfrak m$ 和 $\mathfrak n$ 分别为 $B$ 和 $C$ 的极大理想。另假设 $C$ 完备，并且 $B/\mathfrak m$ 为有限型 $A$-模。令
+\[
+ E=B\ctensor_A C
+\]
+为完备张量积。则：
+
+$(i)$ $E$ 为完备诺特半局部环；
+
+$(ii)$ $\mathfrak mE$ 包含于 $E$ 的根，而且对每个 $h>0$，
+\[
+ E/\mathfrak m^hE\simeq(B/\mathfrak m^h)\otimes_A C;
+\]
+
+$(iii)$ 若 $C$ 为平坦 $A$-模，则 $E$ 为平坦 $B$-模。
+
+\begin{proof}
+按定义（$0_{\mathrm I}$，7.7.5），$E$ 是 $B\otimes_A C$ 对以下理想所定义拓扑的分离完备化：
+\[
+ \Im(\mathfrak m^i\otimes_A C)+\Im(B\otimes_A\mathfrak n^j).
+\]
+置 $\mathfrak r=\Im(\mathfrak m\otimes_A C)+\Im(B\otimes_A\mathfrak n)$。由
+\[
+ \mathfrak r^{2i}\subseteq
+ \Im(\mathfrak m^i\otimes_A C)+\Im(B\otimes_A\mathfrak n^i)
+ \subseteq\mathfrak r^i,
+\]
+$E$ 也就是 $B\otimes_A C$ 的 $\mathfrak r$-预进制分离完备化。由假设，
+\[
+ (B\otimes_A C)/\mathfrak r
+ \simeq (B/\mathfrak m)\otimes_A(C/\mathfrak n)
+\]
+为有限维 $(C/\mathfrak n)$-代数，故为阿廷环。又 $\mathfrak r/\mathfrak r^2$ 为
+\[
+ ((\mathfrak m/\mathfrak m^2)\otimes_A C)
+ \oplus(B\otimes_A(\mathfrak n/\mathfrak n^2))
+\]
+的商，因而为有限型 $(B\otimes_A C)$-模。由（$0_{\mathrm I}$，7.2.11），$E$ 为诺特环；而 $E/\mathfrak rE$ 为阿廷环，所以 $E$ 半局部。
+
+双重射影极限定理给出
+\[
+ E\simeq\varprojlim_{i,j}(B/\mathfrak m^i)\otimes_A(C/\mathfrak n^j)
+ \simeq\varprojlim_i\left(\varprojlim_j
+ (B/\mathfrak m^i)\otimes_A(C/\mathfrak n^j)\right).
+\]
+对固定 $i$，$B/\mathfrak m^i$ 为有限型 $A$-模：其有限过滤的各商均为有限型 $(B/\mathfrak m)$-模，而 $B/\mathfrak m$ 为有限型 $A$-模。故内层极限是有限型 $C$-模 $(B/\mathfrak m^i)\otimes_A C$ 的分离完备化；由于 $C$ 完备，它等于该模本身（$0_{\mathrm I}$，7.3.6）。于是
+\[
+ E\simeq\varprojlim_i (B/\mathfrak m^i)\otimes_A C.
+\]
+每个 $\mathfrak m^hE$ 都是诺特完备环 $E$ 的闭理想（$0_{\mathrm I}$，7.3.5），故完备；它在
+\[
+ \varprojlim_{i\ge h}\Im\bigl((\mathfrak m^h/\mathfrak m^i)\otimes_A C
+          \longrightarrow(B/\mathfrak m^i)\otimes_A C\bigr)
+\]
+中稠密，因而等于此极限。所涉及射影系的过渡同态皆满，由（$0_{\mathrm{III}}$，13.2.2）得到
+\[
+ E/\mathfrak m^hE\simeq(B/\mathfrak m^h)\otimes_A C.
+\]
+又 $\Im(\mathfrak m\otimes_A C)\subseteq\mathfrak r$，所以 $\mathfrak mE\subseteq\mathfrak rE$，后者包含于 $E$ 的根。
+
+最后，若 $C$ 对 $A$ 平坦，则 $(B/\mathfrak m^h)\otimes_A C$ 对 $B/\mathfrak m^h$ 平坦。因 $B,E$ 诺特且 $\mathfrak mE$ 包含于 $E$ 的根，再由（$0_{\mathrm{III}}$，10.2.2），$E$ 为平坦 $B$-模。
+\end{proof}
+
+\egas{19.7.1.3}{引理}
+设 $A$ 为诺特局部环，$\mathfrak m$ 为其极大理想，$k=A/\mathfrak m$。设 $B_0$ 为 $k$-代数，且为完备正则诺特局部环。则存在拓扑 $A$-代数 $B$，使 $B$ 为完备诺特局部环、为平坦 $A$-模，并使 $B/\mathfrak mB=B\otimes_Ak$ 与 $B_0$ 为 $k$-同构。
+
+\begin{proof}
+由于 $\widehat A$ 对 $A$ 平坦且剩余域相同，可假设 $A$ 完备。设 $K$ 为 $B_0$ 的剩余域，分两种情形。
+
+\noindent\textbf{I．$K/k$ 可分。}
+由（19.6.4），$B_0$ 与 $K[[T_1,\ldots,T_d]]$ 为 $k$-同构。若 $B_0=K$，结论已由（$0_{\mathrm{III}}$，10.3.1）证明。取完备诺特局部环 $C$，使 $C$ 对 $A$ 平坦且 $C\otimes_Ak\simeq K$。当 $d\ge1$ 时，只须取
+\[
+ B=C[[T_1,\ldots,T_d]].
+\]
+此环对 $C$ 平坦，因而对 $A$ 平坦（Bourbaki，\textit{交换代数}，第三章，§3，第4目，定理1的推论3）；并且
+\[
+ C[[T_1,\ldots,T_d]]\otimes_Ak
+ \simeq(C/\mathfrak mC)[[T_1,\ldots,T_d]]\simeq B_0.
+\]
+
+\noindent\textbf{II．$K$ 的特征为 $p>0$。}
+此时 $k$ 也具有特征 $p$。令 $P=\mathbf F_p$，并令 $W(P)=\mathbf Z_p$ 为 $p$-进整数环。它是以 $P$ 为剩余域的完备离散赋值环，故为正则环。首先存在连续同态 $W(P)\to A$：事实上，典范同态 $j:\mathbf Z\to A$ 满足 $j^{-1}(\mathfrak m)=p\mathbf Z$，故分解为
+\[
+ \mathbf Z\longrightarrow\mathbf Z_{p\mathbf Z}\longrightarrow A,
+\]
+其中第二个同态局部，因而连续；$A$ 完备，所以它延拓到 $W(P)\to A$。
+
+$k/P$ 可分，故由情形I，存在局部同态 $W(P)\to W(k)$，使 $W(k)$ 为完备诺特局部环，对 $W(P)$ 平坦，并且
+\[
+ W(k)\otimes_{W(P)}P\simeq k.
+\]
+平坦性说明 $p$ 为 $W(k)$-正则元，而 $W(k)/pW(k)=k$，所以 $pW(k)$ 为其极大理想。故 $W(k)$ 为完备离散赋值环（Bourbaki，\textit{交换代数}，第六章，§3，第5目，命题9）。由（19.7.1.1），$W(k)$ 为形式光滑 $W(P)$-代数。于是连续 $W(P)$-同态 $W(k)\to k$ 可提升到
+\[
+ W(k)\longrightarrow A\longrightarrow k
+\]
+（19.3.11），从而 $A$ 成为拓扑 $W(k)$-代数。
+\cmt{H8-N02}{这里 $W(k)$ 是本证明选择的一种完备离散赋值提升，尚未给出典范的函子性。不能在任意不完美域 $k$ 的情形，将此记号不加说明地等同于通常的Witt向量环；原文在（19.8.7）仅对完美剩余域说明相应识别。}
+
+将 $B_0$ 看作 $P$-代数，并对 $W(P)$ 使用情形I，可得拓扑 $W(P)$-代数 $B_P$，它是完备诺特局部环、平坦 $W(P)$-模，而且 $B_P\otimes_{W(P)}P$ 与 $B_0$ 为 $P$-同构。再次由 $W(k)$ 对 $W(P)$ 的形式光滑性及（19.3.11），复合 $W(k)\to k\to B_0$ 提升为 $W(k)\to B_P\to B_0$。又有
+\[
+ B_P\otimes_{W(k)}k=B_P/pB_P=B_P\otimes_{W(P)}P=B_0.
+\]
+由于 $W(k)$ 为以 $p$ 为一致化元的离散赋值环，$B_P$ 对 $W(k)$ 平坦，当且仅当它无挠；这又由 $p$ 为 $B_P$-正则元得到，而后者来自 $B_P$ 对 $W(P)$ 的平坦性（$0_{\mathrm I}$，6.3.4）。
+
+置 $B=B_P\ctensor_{W(k)}A$。$A$ 的剩余域与 $W(k)$ 相同，故为有限型 $W(k)$-模。由（19.7.1.2），$B$ 为完备诺特半局部环，$\mathfrak mB$ 包含于其根，且
+\[
+ B/\mathfrak mB\simeq B_P\otimes_{W(k)}k\simeq B_0.
+\]
+由于 $B_0$ 局部，$B$ 实际上局部。最后，$B_P$ 对 $W(k)$ 平坦，再用（19.7.1.2），可知 $B$ 对 $A$ 平坦。
+\end{proof}
+
+\egas{19.7.1.4}{引理}
+设 $A$ 为环，$\mathfrak j$ 为其理想，$M,N$ 为对 $\mathfrak j$-预进制拓扑分离的 $A$-模。另假设 $N$ 对此拓扑完备，$M$ 为平坦 $A$-模。若 $A$-同态 $u:N\to M$ 满足
+\[
+ u\otimes1:N\otimes_A(A/\mathfrak j)\longrightarrow M\otimes_A(A/\mathfrak j)
+\]
+为双射，则 $u$ 为双射。
+
+\begin{proof}
+各相伴分次模均相对于 $\mathfrak j$-预进制过滤。由分离性和 $N$ 的完备性，只须证明 $\gr(u):\gr_\bullet(N)\to\gr_\bullet(M)$ 双射（Bourbaki，\textit{交换代数}，第三章，§2，第8目，定理1的推论3）。置 $A_0=A/\mathfrak j=\gr_0(A)$，有交换图
+\[
+\begin{tikzcd}[column sep=large,row sep=large]
+\gr_0(N)\otimes_{A_0}\gr_\bullet(A)
+ \arrow[r,"\gr_0(u)\otimes1"]\arrow[d,"\varphi_N"'] &
+\gr_0(M)\otimes_{A_0}\gr_\bullet(A)\arrow[d,"\varphi_M"]\\
+\gr_\bullet(N)\arrow[r,"\gr(u)"']&\gr_\bullet(M).
+\end{tikzcd}
+\]
+其中 $\varphi_N,\varphi_M$ 为典范同态（$0_{\mathrm{III}}$，10.1.1.2）。由假设，$\gr_0(u)$ 双射；由 $M$ 平坦，$\varphi_M$ 双射（$0_{\mathrm{III}}$，10.2.1）。另一方面 $\varphi_N$ 满射。于是上边双射，图的交换性使 $\varphi_N$ 也单射，故为双射；继而 $\gr(u)$ 双射。
+\end{proof}
+
+\egas{19.7.1.5}{引理〔本版核定的完备局部形式〕}
+设 $A$ 为诺特环，$\mathfrak j$ 为其理想，$B,B'$ 为诺特局部 $A$-代数，其结构同态对于 $A$ 的 $\mathfrak j$-预进制拓扑及各自的极大理想拓扑连续。\emph{假设 $B,B'$ 均对各自的极大理想拓扑完备}，$B$ 为形式光滑 $A$-代数，$B'$ 为平坦 $A$-模。置 $A_0=A/\mathfrak j$。若给定 $A_0$-同构
+\[
+ u_0:B\otimes_AA_0\xrightarrow{\sim}B'\otimes_AA_0,
+\]
+则存在 $A$-同构 $u:B\xrightarrow{\sim}B'$，使 $u\otimes1=u_0$。因此 $B'$ 形式光滑，而 $B$ 对 $A$ 平坦。
+\cmt{H8-P01}{初版较弱地只假设 $B,B'$ 对 $\mathfrak j$-预进制拓扑完备；其余假设与结论同上，证明直接把（19.3.10）用于 $B\to B'/\mathfrak jB'$。但本小节开头默认局部环取极大理想拓扑，两种完备性并不等价；对该较弱版本，所引提升命题的拓扑适用范围本轮尚未核定，亦未构造否定原结论的反例。正文明确采用足以覆盖（19.7.1.6）、（19.7.2）全部实际应用的完备局部版本，而非将未核实推广冒充已证定理。原假设、原证明及差别完整收入核查报告H8-P01。这一范围限定不是作者勘误。}
+
+\begin{proof}
+设 $\mathfrak n,\mathfrak n'$ 为 $B,B'$ 的极大理想。连续性给出 $\mathfrak jB\subseteq\mathfrak n$、$\mathfrak jB'\subseteq\mathfrak n'$。由诺特性及极大理想拓扑的完备性，$B,B'$ 也对 $\mathfrak j$-预进制拓扑分离完备：一个 $\mathfrak j$-进制柯西列是极大理想进制柯西列，其极限仍与原列模每个闭理想 $\mathfrak j^rB$（或 $\mathfrak j^rB'$）相同。
+
+置 $B_0=B/\mathfrak jB$、$B'_0=B'/\mathfrak jB'$。$u_0$ 是局部环同构，故复合 $B\to B_0\xrightarrow{u_0}B'_0$ 对极大理想拓扑连续。$B'$ 完备，$\mathfrak jB'$ 闭且其幂趋于零，故由（19.3.10）得到连续 $A$-同态 $u:B\to B'$，且 $u\otimes1=u_0$。对 $N=B$、$M=B'$ 应用（19.7.1.4），可知 $u$ 双射。
+\end{proof}
+
+\egap{19.7.1.6}
+\textbf{证明的结束。}还须证 $a)\Rightarrow b)$。由（19.3.5，iii），$a)$ 已蕴含 $B_0$ 为形式光滑 $k$-代数，故只须证明 $B$ 对 $A$ 平坦。这等价于 $\widehat B$ 对 $\widehat A$ 平坦（Bourbaki，\textit{交换代数}，第三章，§5，第4目，命题4）；而（19.3.6）给出 $\widehat B$ 对 $\widehat A$ 形式光滑。因此可假设 $A,B$ 完备。
+
+$B_0$ 形式光滑，故正则（19.6.5），且为完备局部环（$0_{\mathrm I}$，7.3.5）。\cmt{H8-T01}{初版在此引用（$0_{\mathrm I}$，6.3.5）；所需事实是完备诺特局部环的理想闭、商环完备，正文改引7.3.5及相应完备化性质。该处不是由平坦性的6.3.5直接推出。}
+由（19.7.1.3），存在完备诺特局部 $A$-代数 $B'$，使 $A\to B'$ 局部、$B'$ 对 $A$ 平坦，且有 $k$-同构 $B_0\simeq B'\otimes_Ak$。对 $\mathfrak j=\mathfrak m$ 应用（19.7.1.5）的完备局部形式，得到 $B\simeq B'$，故 $B$ 对 $A$ 平坦。定理得证。\finishproof
+
+\egas{19.7.2}{定理}
+设 $A$ 为诺特局部环，$\mathfrak j$ 为包含于其极大理想的理想，$A_0=A/\mathfrak j$。设 $B_0$ 为完备诺特局部环，局部同态 $A_0\to B_0$ 使其为形式光滑 $A_0$-代数。则存在完备诺特局部环 $B$、使 $B$ 对 $A$ 平坦的局部同态 $A\to B$，以及 $A_0$-同构
+\[
+ u:B\otimes_AA_0\xrightarrow{\sim}B_0.
+\]
+若 $(B',u')$ 也满足相同条件，则存在 $A$-同构 $v:B\xrightarrow{\sim}B'$，使图
+\[
+\begin{tikzcd}[column sep=large]
+ B\otimes_AA_0\arrow[rr,"v\otimes1"]\arrow[dr,"u"']&&
+ B'\otimes_AA_0\arrow[dl,"u'"]\\
+ &B_0&
+\end{tikzcd}
+\]
+交换。
+
+\begin{proof}
+设 $\mathfrak m$ 为 $A$ 的极大理想，则 $\mathfrak m_0=\mathfrak m/\mathfrak j$ 为 $A_0$ 的极大理想，二者的剩余域同为 $k$。置 $B_{00}=B_0\otimes_{A_0}k$。由（19.3.5，iii），$B_{00}$ 为形式光滑 $k$-代数，故为正则局部环（19.6.5）；它也是完备环。由（19.7.1.3），存在完备诺特局部 $A$-代数 $B$，它对 $A$ 平坦，且存在 $k$-同构 $u_{00}:B\otimes_Ak\xrightarrow{\sim}B_{00}$。
+
+由（19.7.1），$B$ 对 $A$ 形式光滑，所以 $B\otimes_AA_0=B/\mathfrak jB$ 为形式光滑 $A_0$-代数（19.3.5，iii），亦为完备诺特局部环。又由假设和（19.7.1），$B_0$ 为平坦 $A_0$-模。将（19.7.1.5）用于基环 $A_0$、理想 $\mathfrak m_0$ 以及
+\[
+ (B\otimes_AA_0)\otimes_{A_0}k
+ \simeq B\otimes_Ak\xrightarrow{u_{00}}B_0\otimes_{A_0}k,
+\]
+便得到 $A_0$-同构 $u:B\otimes_AA_0\xrightarrow{\sim}B_0$，使 $u\otimes1=u_{00}$。
+
+关于唯一性，由闭理想性质，$B,B'$ 对 $\mathfrak j$-预进制拓扑也分离完备（Bourbaki，\textit{一般拓扑}，第三章，第3版，§3，第5目，命题9的推论2）。给定
+\[
+ v_0=(u')^{-1}u:B\otimes_AA_0\xrightarrow{\sim}B'\otimes_AA_0.
+\]
+$B$ 形式光滑，$B'$ 平坦，且两环均对极大理想拓扑完备；再次由（19.7.1.5）得到所需 $v$。
+\end{proof}
+
+\egas{19.7.3}{注}
+$(i)$ 上一定理的同构唯一性部分，在本版正文中按已证明的完备局部范围使用。
+\cmt{H8-P02}{原文首句还声称：只要求 $B,B'$ 对 $\mathfrak j$-预进制拓扑完备，唯一性断言仍成立。此推广依赖（19.7.1.5）的较弱原版，故与H8-P01一起保留待核，未被本版宣布错误，也未作为已证推广用于后文。这里的“唯一性”始终仅指同构类唯一，绝不指同构唯一。}
+原著接着说，尚不知道存在性断言能否作同样改进：能否不要求局部环 $B_0$ 对其极大理想 $\mathfrak n_0$ 的预进制拓扑完备，而只要求所求 $B$ 对 $\mathfrak j$-预进制拓扑完备。当 $A_0$ 对其极大理想拓扑完备时，原著将这一问题化为：若 $B_0$ 是包含素域 $\mathbf F_p=\mathbf Z/p\mathbf Z$ 的正则诺特局部环，未必完备，是否对每个 $n>1$ 都存在平坦 $(\mathbf Z/p^n\mathbf Z)$-代数 $B$，使 $B/pB\simeq B_0$？\cmt{H8-N03}{“尚不知道”是1964年原文的历史陈述，本译文不据此判断这一问题的现今研究状态。}
+
+$(ii)$ 一般而言，（19.7.2）中存在的同构 $v$ 并不唯一，参见（19.8.7）。

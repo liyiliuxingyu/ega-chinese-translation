@@ -1,0 +1,8 @@
+法稿：EGA5.pdf，171 页，SHA-256 24cf8204184b58b18a46e5f63ecc36d6e791b3c8c96a09daac93de96ebd8e830；取物理 129–131。
+英稿：Blass 与 Blass 翻译编辑的 EGA V 预备笔记，112 页，SHA-256 23a20ef32fd16a1bd623c0c08ac080d04fc94f248de12133b713a19d6b0330d9；取物理 98–99。
+https://webusers.imj-prg.fr/~leila.schneps/grothendieckcircle/EGA/EGA5trans.pdf
+始点：法129中段“Dans le cas où T est un fibré projectif”。终点：法131页首“stable par changement de base”；其后的新命题本批未纳。
+原文关联素循环、伪态射、固定分支按法稿语境译；新增推导另标“译校补证”。
+参考：
+https://stacks.math.columbia.edu/tag/01OA
+https://stacks.math.columbia.edu/tag/056P

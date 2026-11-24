@@ -1,0 +1,45 @@
+\documentclass[openany,fontset=fandol]{ctexbook}
+\usepackage{amsmath,amssymb}
+\usepackage[unicode,hidelinks]{hyperref}
+\newcommand{\note}[1]{\footnote{译注：#1}}
+\begin{document}
+\title{代数几何基础第五卷预备笔记\\命题14.1：证明残文}
+\author{据用户上传英译编辑稿译出}
+\date{2026年11月18日}
+\maketitle
+\chapter*{范围与校订状态}
+本批译出底本第56页“In the case a) we have already seen (I hope)”起的整个证明段，至“before 14.1”止。下一处为第56页推论14.2标题及跨第57页的正文。
+
+证明中反向不等式的条件句及括号内纤维积排式残缺，正文保留缺口并逐项译出可辨部分；不擅补反证假设或断言命题已证。为避免把余维$m$截面与中心截面混同，中心逆像直接写成纤维积，并在脚注保存原记号。14.1(b)陈述的缺文和全部旧待核仍保留。未合并主稿。
+\chapter*{§14 锥投影（续）}
+\noindent\textbf{命题14.1的证明（底本残文）。}
+在(a)的情形，我们已经看到（我希望如此），对于$\operatorname{Grass}^{m}(P)$的每个点$\xi$，$X^{(m)}_\xi$的维数至少为$\dim X-m$；特别地，当$\xi$给出$Q(C_\eta)$的一个点时，也是如此。\note{底本保留“I hope”，正文不删除这一编写核对语气。“每个点”的范围照译；此处并未重新核实原引用对空截面、非固有情形或一般可约情形的适用性，不能据本段认为这些问题已经解决。}
+
+对于反向的不等式，注意（我们置身于域$k'=k(\xi)$之上）：$C_{\eta,k'}$是$L_\xi$中的一个超平面；若［底本条件句残缺］，则中心逆像
+\[
+X_{k(\eta)}\times_{P_{k(\eta)}}C_\eta
+\]
+的维数将会（是）至少为$\dim X-m$。\note{底本可辨原句为“since $C_{\eta k'}L_\xi$ is a hyperplane of $L$ if the dimension of $X^{(m)}=X_P\,x\,C_\eta$ will be (is) $\geq\dim X-m$”。其中$C_{\eta,k'}\subset L_\xi$由$\xi\in Q(C_\eta)$和第54页的定义确定，故正文明确写出包含关系；但“if the dimension of”后的条件或连接已经残缺，不能擅补为某个严格不等式。原文把中心截面标为$X^{(m)}$，与中心余维$m+1$及本段后式不相容，正文直接写出它明确给出的中心逆像纤维积，而不把它误作$X^{(m)}_\xi$。}
+
+（因为基变换$k(\eta)\to k'$把后一个预概形变为
+\[
+\bigl(X_P\times L_\xi\times\xi L(c_{\eta k'})\bigr)
+\quad\text{［底本排式残缺］}.
+\]
+）另一方面，按第2节（在第10节中复查过），却有
+\[
+\dim X^{(m+1)}=\dim X-m-1.
+\]
+\note{括号中的原排式为“$(X_P\times L_\xi\times\xi L(c_{\eta k'}))$”，下标及符号关系不全，故正文按可辨符号保留，不擅恢复成一个声称来自底本的完整纤维积公式。其后连接语为“or since we have in the contrary case”，译作“另一方面……却有”，保留它与前一维数估计相对照的结构，但不宣称残缺的反证链已补全。末式$X^{(m+1)}$在这里指一般中心所给截面，原文的简写照存；其维数等式所需条件亦仍待核。}
+
+\newpage
+(b)的情形用类似的方法处理：若
+\[
+\dim(X\times_P L)\geq d+1,
+\]
+或者等价地，$f_{k'}(X_{k'})\to L$的维数至少为$1$，那么由与上述相同的论证，将有
+\[
+X^{(m+1)}\ne\varnothing,
+\]
+这与我们在14.1之前指出的事实矛盾。\note{底本写“$\dim X_P\times L\geq d+1$, or what is the same $f_{k'}(X_{k'})\to L$ of dim $\geq1$”。正文只将第一式排成纤维积，第二个带箭头的维数措辞照存；它究竟指像维数还是另一个相对维数，原句不完整，不擅将$f_{k'}(X_{k'})$换成某个未写出的截面像。其“等价”依赖于前提中纤维维数条件，而14.1(b)本身有缺文；由正维像推出与超平面相交还涉及相应的几何条件。本批不据此宣布(b)的有限性或拟有限性结论已经证明。空集符号由原$\phi$统一为$\varnothing$。}
+\end{document}

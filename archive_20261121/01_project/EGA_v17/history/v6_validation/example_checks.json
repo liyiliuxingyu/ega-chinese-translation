@@ -1,0 +1,24 @@
+{
+  "F6-E01": {
+    "(1+t)(1-t) modulo t^2": [
+      "1",
+      "0"
+    ],
+    "unit_relation_passed": true,
+    "non_liftability": "Proved in the report by the classification of units of k[t], not by enumeration."
+  },
+  "F6-G03": {
+    "h(x^2)": [
+      "0",
+      "0",
+      "1/2"
+    ],
+    "h(x)^2": [
+      "0",
+      "0",
+      "1/4"
+    ],
+    "multiplicativity_fails": true
+  },
+  "limitation": "These exact computations check only the displayed identities; the report supplies the mathematical arguments."
+}

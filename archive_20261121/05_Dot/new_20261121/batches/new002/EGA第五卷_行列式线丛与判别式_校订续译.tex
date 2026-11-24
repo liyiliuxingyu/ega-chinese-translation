@@ -1,0 +1,30 @@
+\documentclass[openany,fontset=fandol]{ctexbook}
+\usepackage{amsmath,amssymb}
+\usepackage[unicode,hidelinks]{hyperref}
+\setlength{\emergencystretch}{2em}
+\newcommand{\note}[1]{\unskip\nobreak\footnote{译注：#1}}
+\begin{document}
+\title{代数几何基础第五卷预备笔记\\行列式线丛与判别式}
+\author{据用户上传英译编辑稿译出}
+\date{2026年11月19日}
+\maketitle
+\chapter*{范围与接合状态}
+本批从底本第66页“It remains only to completely clarify the particularly described situation with $X/Y/S$”起，连贯译至第67页第一段末“the commutativity announced in the lemma”。下一起点为同页“The non-supersingular points are therefore exactly the ones”。
+
+本批接第十七版之后的19:00独立增补，不重复第62--66页已收入主稿的短篇。此稿尚未合并主稿；原有待核项继续保留。底本关于整体正负号的未定语气不改作确定结论。下面各模均按前文限制到$V'=V(\varphi)_{\mathrm{sing}}$；来自$Y$的模先拉回到$X$再限制。
+\chapter*{相对情形中的行列式计算（续）}
+剩下的只是把上述图D所描述的、涉及$X/Y/S$和$\varphi$的特殊情形完全澄清，以便明确写出$a$和$b$。首先得到
+\begin{align*}
+\det P&=\omega_{X/Y}^{-1}\otimes\mathcal O_{V'},\\
+\det Q&=\omega_{Y/S}\otimes\mathcal O_{V'},\\
+\det M&=\omega_{X/S}\otimes\mathcal O_{V'}
+       =\omega_{X/Y}\otimes\omega_{Y/S}\otimes\mathcal O_{V'}.
+\end{align*}
+（最后一个同构来自光滑态射$X\to Y$与$Y\to S$的$\Omega^1$传递性正合列。）
+因此，\note{沿用前文$L=\det P\otimes\det Q\otimes(\det M)^{-1}$；代入以上三式，$\omega_{Y/S}$因子抵消，余下$\omega_{X/Y}^{-2}$。式中的等号按原文表示典范同构，而不是集合层面的相等。}
+\[
+L=\omega_{X/Y}^{-2}\otimes\mathcal O_{V'}.
+\]
+（注意：$\omega_{X/Y}$表示$\det\Omega^1_{X/Y}$。）这说明，同态$a$经过$(\mathcal P^1_{X/Y})^\vee\otimes\mathcal O_{V'}$的因子$\mathcal O_{V'}$分解；作为到这个因子的同态，它恰由前面已经提到的截面$D=\det M(\varphi)$确定（仍然相差一个有待确定的符号）。\note{底本此处印作$P^v_{X/Y}\otimes\mathcal O_{V'}$，省略了一阶上标，$v$表示对偶。根据前文$P=(\mathcal P^1_{X/Y})^\vee|_{V'}$及其直和因子，此处明确补出$1$并用$\vee$表示对偶；没有把它误作射影丛。底本的法语残片“en tant [Fr]”译为“作为”，不影响同态方向：这里是从$L$到该$\mathcal O_{V'}$因子。由于$L^{-1}=\omega_{X/Y}^{2}|_{V'}$，$D$的类型与这个同态相符。$M(\varphi)$是前文二次初始项的记号，不是本段环境模$M$本身。}
+当然，利用引理中所宣布的交换性，就能得到同态$b$。\note{原文为“the commutativity announced in the lemma”，仍指上一批译出的图及其可能相差符号的约定；这里没有额外固定$a,b$各自的符号，也不自行补写下一段的正合列。}
+\end{document}

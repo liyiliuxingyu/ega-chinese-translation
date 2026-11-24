@@ -1,0 +1,18 @@
+{
+  "date": "2026-11-15",
+  "branch": "EGA V independent supplement",
+  "completed": "printed p40 Proposition 10.3 and following proof-status paragraph ending just as well as I",
+  "next": "printed p40 unnumbered If in 10.2, S = Spec k and X is of dimension >=1, before Corollary 10.4",
+  "not_merged": true,
+  "proof_independently_verified": false,
+  "unresolved": [
+    "8.8 absent",
+    "9.4 unstated;9.5 fragment",
+    "10.1 closure ambiguity",
+    "10.2 regularity and k-rationality conventions",
+    "10.3 crossed-out status; parenthetical ??? unrecovered; generality of regularity claim not independently verified"
+  ],
+  "previous_project": "libfile_fde3_f-8b73b1dac29081918339c144a61a346f_49ac57203c0c81918f3630f0324dcb35",
+  "source_sha256": "23a20ef32fd16a1bd623c0c08ac080d04fc94f248de12133b713a19d6b0330d9",
+  "original_conversation_observed": "EGA latest visible edition11 through21.4.8, math latest visible02:26 user continue; Library latest EGA10.2 and math4 lines182-268; no observed overlap; actual original execution state unavailable"
+}

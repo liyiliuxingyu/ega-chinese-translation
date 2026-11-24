@@ -1,0 +1,14 @@
+{
+  "batch": 90,
+  "work": "EGA 第五卷预备笔记 §20",
+  "this_french_pages": [12, 13, 14],
+  "this_english_pages": [10, 11, 12],
+  "this_from": "法12下半 / 英10末，定理2.14",
+  "this_through": "法14上半 / 英12上端，备注2.18（含其后划销过渡句校记）",
+  "french_contiguous_through": "物理14页上半，2.18",
+  "next": "法14下半 / 英12中段，第3节标题与定理3.1；法15有跨页划销及正式函数域证明",
+  "merge_into_1158_done": false,
+  "double_count_as_new_translation": false,
+  "formal_EGA_IV_1": "另线：物理221提要，223定义（1.1.1）",
+  "pending": "2.14边批主语和全范围；2.16–2.17模层根重数原始定义引用与扩域归约；法尾页尚须实际覆盖审计"
+}

@@ -1,0 +1,69 @@
+#!/usr/bin/env python3
+"""Verify the released handover tree using only Python's standard library."""
+from pathlib import Path, PurePosixPath
+import argparse
+import hashlib
+import json
+import sys
+
+
+def sha256(path):
+    digest = hashlib.sha256()
+    with path.open("rb") as stream:
+        for chunk in iter(lambda: stream.read(1024 * 1024), b""):
+            digest.update(chunk)
+    return digest.hexdigest()
+
+
+def verify(root):
+    manifest_path = root / "MANIFEST.json"
+    manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
+    expected = {}
+    problems = []
+    for item in manifest["files"]:
+        name = item["path"]
+        posix = PurePosixPath(name)
+        if posix.is_absolute() or ".." in posix.parts or "\\" in name:
+            problems.append({"path": name, "error": "unsafe manifest path"})
+            continue
+        if name in expected:
+            problems.append({"path": name, "error": "duplicate manifest entry"})
+            continue
+        expected[name] = item
+        path = root / name
+        if not path.is_file() or path.is_symlink():
+            problems.append({"path": name, "error": "missing or non-regular file"})
+        elif path.stat().st_size != item["bytes"] or sha256(path) != item["sha256"]:
+            problems.append({"path": name, "error": "size or SHA-256 mismatch"})
+    listed = {}
+    for line in (root / "SHA256SUMS.txt").read_text(encoding="utf-8").splitlines():
+        digest, name = line.split("  ", 1)
+        listed[name] = digest
+    expected_sums = {name: item["sha256"] for name, item in expected.items()}
+    expected_sums["MANIFEST.json"] = sha256(manifest_path)
+    if listed != expected_sums:
+        problems.append({"error": "SHA256SUMS.txt does not match manifest and manifest hash"})
+    actual = {p.relative_to(root).as_posix() for p in root.rglob("*") if p.is_file()}
+    extras = sorted(actual - set(expected) - {"MANIFEST.json", "SHA256SUMS.txt"})
+    if extras:
+        problems.append({"error": "files added after release", "paths": extras})
+    return {
+        "pass": not problems,
+        "manifest_file_count": len(expected),
+        "total_manifest_bytes": sum(item["bytes"] for item in expected.values()),
+        "manifest_sha256": sha256(manifest_path),
+        "problems": problems,
+        "scope": "Released file bytes and inventory only; not mathematical validity or future build compatibility.",
+    }
+
+
+if __name__ == "__main__":
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("directory", nargs="?", default=str(Path(__file__).resolve().parent))
+    args = parser.parse_args()
+    try:
+        result = verify(Path(args.directory).resolve())
+    except (OSError, ValueError, KeyError) as exc:
+        result = {"pass": False, "error": str(exc)}
+    print(json.dumps(result, ensure_ascii=False, indent=2))
+    sys.exit(0 if result["pass"] else 1)

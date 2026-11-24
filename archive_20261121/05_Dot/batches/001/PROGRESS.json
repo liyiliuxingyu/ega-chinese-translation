@@ -1,0 +1,25 @@
+{
+  "project": "EGA 全部上传材料严谨翻译",
+  "batch": "第五卷预备笔记第一篇第7节独立增补",
+  "source": "EGAVaiello.pdf",
+  "source_sha256": "23a20ef32fd16a1bd623c0c08ac080d04fc94f248de12133b713a19d6b0330d9",
+  "source_pages": "标题18页末，正文19—21页",
+  "completed_entries": [
+    "7.1",
+    "7.2",
+    "7.3",
+    "7.4",
+    "7.5"
+  ],
+  "next_entry": "8.1",
+  "base": "第三版合订本，822页；本批不覆盖或合并",
+  "source_identity": "libfile_fde3_f-f8a977f6c54881919e11840e44759152_49ac57203c0c81918f3630f0324dcb35",
+  "limits": [
+    "未核对法文手稿",
+    "未重新审定全文前引定理",
+    "原稿7.4字面错误保留，并另列反例",
+    "其他卷未完成范围仍未完成"
+  ],
+  "pdf_status": "XeLaTeX两遍成功；9页，含默认双面空白页；全部页面渲染检查，正文5页逐页放大核看；无Overfull或缺字警告，仅一条Underfull vbox。",
+  "review": "逐段独立对照审校完成；两处英译编者身份标记已改正；数学反例独立核验。"
+}

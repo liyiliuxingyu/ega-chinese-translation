@@ -1,0 +1,42 @@
+Proposition 8.16. Let us suppose f : X → P unramified on an open subset complemen-
+tary to a set of codimension at least two, X geometrically normal and of depth at least
+three at its closed points, finally X geometrically integral and proper over k. Then the
+set of ξ ∈ P v such that Yξ is geometrically normal and geometrically integral of dimension
+equal to dim X − 1 (is constructible and) has a complement of codimension at least two.
+
+    Indeed by 8.14 b) such is the case for the property “Yξ is geometrically normal of
+dimension dim X − 1” (the dimensional property expresses that φξ is Xk(ξ) -regular.)
+    Therefore, by 6.1 all the Yξ are geometrically connected. Since Yξ is geometrically
+normal it is geometrically integral if and only if it is geometrically connected, which gives
+the proof.
+
+Remarks 8.17.
+ a) The hypothesis of 8.16 implies that dim X ≥ 3. It is possible that [de’s que. Fr.] X is
+    geometrically irreducible and that dim f (X) ≥ 3 (without the hypothesis of normality
+    and of non-ramification) the set of ξ such that Yξ is geometrically irreducible has a
+    complenent of codimension at least two. We can prove in every case that it does not
+    contain a hyperplane (see below).
+ b) The conclusion of 8.16 is false if we leave out the assumption that profx X
+    ≥ 3 for x closed, for example it is false for a non-singular quadric X in P 3 [illeg-
+    ible]50 the hyperplane sections are reducible (in fact formed by pairs of concurrent
+    lines) and they form therefore a two dimensional family thus of codimension one in
+    P (indeed the dual of the quadric is a quadric in the dual space relative to the dual
+    form. . . )
+
+    In the case of a non-singular surface in a projective space this situation however
+should be considered exceptional of the following section (or No.). Let us suppose [illegible]
+integral proper over k and f an immersion. Then it follows from 6.1 and 8.8 and 8.14 that
+if Y sing → P v is not generically finite and inseparable one of the (???) ξ ∈ P v such that
+Yξ is separable over k(ξ) with at most two irreducible [illegible] a complement of codim at
+least two.
+     We shall now examine more precisely the case of surfaces (the case of curves does not
+arise evidently, from the point of view of irreducibility of hyperplane sections).
+(NB: I noticed with fright that the quadric is not entitled to be called ruled in the sense
+that I have been using the word ruled. This is in disagreement with our fathers and it
+would be necessary to invent a more adequate word for the notion used here.)
+    50 Ask A.G.
+
+
+
+                                             33
+

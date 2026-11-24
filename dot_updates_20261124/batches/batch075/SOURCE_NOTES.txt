@@ -1,0 +1,6 @@
+法文 EGA5.pdf，171物理页，SHA256 24cf8204184b58b18a46e5f63ecc36d6e791b3c8c96a09daac93de96ebd8e830。
+法物理121下部2.5、122命题2.6及手写2.7、123上至2.10末；手写页码128–130。
+英译编辑稿112物理页，SHA256 23a20ef32fd16a1bd623c0c08ac080d04fc94f248de12133b713a19d6b0330d9。
+英94第二个Corollary 2.5起，至英95推论2.10止。来源 https://webusers.imj-prg.fr/~leila.schneps/grothendieckcircle/EGA/EGA5trans.pdf#page=94
+法英的2.6都遗漏基底因子 f^*M；法明确手写2.7；2.8的f_*(D)按推前可逆模纠正，2.9/2.10保留对偶。
+下一处法123下部2.11；法物理124也确见sous-groupe，不能认作仅英译错误。该字样属于下一批。

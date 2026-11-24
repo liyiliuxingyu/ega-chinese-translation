@@ -1,0 +1,44 @@
+\documentclass[openany]{ctexbook}
+\usepackage{amsmath,amssymb}
+\usepackage[hidelinks]{hyperref}
+\newcommand{\note}[1]{\footnote{译注：#1}}
+\title{代数几何基础第五卷预备笔记\\命题10.3及其后说明}
+\author{据用户上传英译编辑稿译出}
+\date{2026年11月15日}
+\begin{document}
+\maketitle
+\chapter*{范围与校订状态}
+本批连续译出底本第40页命题10.3及紧随其后的论证说明，止于“I have not done it in detail thinking that you can deduce it just as well as I”。下一接续处是同页“If in 10.2”起的未编号段落，不能跳过该段直接接推论10.4。
+
+上一批已译底本关于“命题10.3被划去，请询问A.G.是否有意如此”的编排批注。本批保留这一草稿状态，不把命题改称正式定稿；原文没有展开详细证明，本批也不代写证明冒充原文。末句不可辨的部分原样标记，未予补造。此前8.8及9.5的缺文等待核事项均未解决。本批为独立增补，未合入原合订本。
+\chapter*{命题10.3}
+设 $X$ 为预概形，$G$ 为 $X$ 上的拟凝聚模，
+\[
+u:G\longrightarrow\mathcal O_X
+\]
+为一个同态，并置 $J=u(G)$、$T=V(J)$。设 $\widetilde X$ 是由 $X$ 沿 $T$ 爆破而得的预概形。\note{底本把爆破前后的预概形均排作 $X$。为避免把后面的闭浸入误读为原预概形 $X$ 的闭浸入，本译文统一以 $\widetilde X$ 表示该爆破；这仅是区分记号，不改变所指定的对象。}
+另一方面，考虑 $P=\mathbf P_X(G)$、典范同态
+\[
+G_P\longrightarrow\mathcal O_P(1)
+\]
+及其核 $H$，于是有正合列
+\[
+0\longrightarrow H\longrightarrow G_P
+\longrightarrow\mathcal O_P(1)\longrightarrow0.
+\]
+再考虑同态 $u_P:G_P\to\mathcal O_P$，以及拟凝聚理想
+\[
+K=u_P(H)\subseteq\mathcal O_P.
+\]
+\note{底本写作小写 $p=p(G)$，本译文将射影预概形的记号统一为 $P=\mathbf P_X(G)$，并相应统一下标。$G_P$ 表示 $G$ 在 $P$ 上的拉回；$u_P$ 为相应拉回同态。底本的“quadi-coherent”按“quasi-coherent”译出。}
+则 $\widetilde X$ 典范地同构于 $V(K)$ 的一个闭子概形。
+
+若 $G$ 局部自由，且 $u$ 是“正则的”，则上述同构就是 $\widetilde X$ 与 $V(K)$ 本身的同构。在这种情形下，$H$ 是 $P$ 上的局部自由模，而同态
+\[
+H\longrightarrow\mathcal O_P
+\]
+（其〔底本此处缺文：预概形之“???”〕是 $\widetilde X$）也是正则的。\note{底本末句实际排作“$H\to\vartheta_p$ 9whose prescheme of ??? is $X$) is also regular”。由前文 $u_P$ 的限制可识别这里的同态 $H\to\mathcal O_P$；但括号内“???”缺失的具体词语未恢复，因此没有将猜测的“零点概形”补作原文。本条“局部自由”及“正则”的秩与局部约定仍需与10.2及作者有关正则浸入的论述核对，本批未独立验证命题的全部一般性。}
+
+\section*{原稿紧随其后的论证说明}
+第一个断言几乎是平凡的。第二个断言是一个不会造成困难的练习（我没有详细做过，心想你和我一样能够把它推导出来）。\note{“几乎是平凡的”及括号内的第一人称均为原稿文字，并非本译者对证明充分性的判断。现有底本此处没有详细证明，不能将这一说明当作已完成的独立审证。}
+\end{document}

@@ -1,0 +1,70 @@
+book 1 / 1130
+book 101 / 1130
+book 201 / 1130
+book 301 / 1130
+book 401 / 1130
+book 501 / 1130
+book 601 / 1130
+book 701 / 1130
+book 801 / 1130
+book 901 / 1130
+book 1001 / 1130
+book 1101 / 1130
+report 1 / 283
+report 101 / 283
+report 201 / 283
+{
+  "renderer": "PyMuPDF 1.26.6",
+  "dpi": 72,
+  "outputs": {
+    "book": {
+      "pages": 1130,
+      "mismatches": {
+        "text": [],
+        "size": [],
+        "pixels": []
+      },
+      "page_raster_digest": "fcf652eb29564253b436234a4c0572139929a99a00c8f43bf6246d435180a66f",
+      "metadata": {
+        "format": "PDF 1.5",
+        "title": "代数几何基础：按内容顺序编排的中文译校合订本（第十七版）",
+        "author": "原著 A. Grothendieck；与 J. Dieudonné 合作；预备笔记英译编者见各篇",
+        "subject": "第0章归并；正文连续；已译范围和未译范围分开列明",
+        "keywords": "",
+        "creator": "LaTeX with hyperref",
+        "producer": "xdvipdfmx (20240305)",
+        "creationDate": "D:20261120011722+08'00'",
+        "modDate": "",
+        "trapped": "",
+        "encryption": null
+      },
+      "modular_pdf_sha256": "df949bd9daa04547214b6e3c68e066812be0fb2918601c0d6403cccfce568046",
+      "standalone_pdf_sha256": "90262c0788ded3e9c0983f3abca7d2b0d6af435e7e0222363ccbef575054c626"
+    },
+    "report": {
+      "pages": 283,
+      "mismatches": {
+        "text": [],
+        "size": [],
+        "pixels": []
+      },
+      "page_raster_digest": "63de4d6c0389a393dc4c9725483fc0ea2af5d2fbfe96dc6a56ff09d57837a249",
+      "metadata": {
+        "format": "PDF 1.5",
+        "title": "代数几何基础：第十七版译校核查报告",
+        "author": "原著 A. Grothendieck；与 J. Dieudonné 合作；预备笔记英译编者见各篇",
+        "subject": "Dot五十六批来源核对；预备笔记整合、漏译恢复、同文校订及历史核查档案",
+        "keywords": "",
+        "creator": "LaTeX with hyperref",
+        "producer": "xdvipdfmx (20240305)",
+        "creationDate": "D:20261120010313+08'00'",
+        "modDate": "",
+        "trapped": "",
+        "encryption": null
+      },
+      "modular_pdf_sha256": "b61fe870fd83b90a505893ecfc8403fafb9037053bc452f0ae7b723e9e401949",
+      "standalone_pdf_sha256": "38dc8ea29fc0c11716b73c57f930f35e1e1459fd8fafc082462a946b2ca6203c"
+    }
+  },
+  "seconds": 16.523494005203247
+}

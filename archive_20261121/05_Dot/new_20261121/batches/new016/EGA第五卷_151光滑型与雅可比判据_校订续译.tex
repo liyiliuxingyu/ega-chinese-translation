@@ -1,0 +1,41 @@
+\documentclass[openany,fontset=fandol]{ctexbook}
+\usepackage{amsmath,amssymb}
+\usepackage[unicode,hidelinks]{hyperref}
+\setlength{\emergencystretch}{2em}
+\newcommand{\OO}{\mathcal O}
+\DeclareMathOperator{\Sym}{Sym}
+\DeclareMathOperator{\Spec}{Spec}
+\DeclareMathOperator{\Proj}{Proj}
+\begin{document}
+\title{代数几何基础第五卷预备笔记\\15.1　光滑型与雅可比判据}
+\author{据英译编辑稿续译，参校法文扫描}
+\date{2026年11月21日}
+\maketitle
+\chapter*{范围与接续}
+本批始于英译第74页末、法文扫描第114页的15.1，译至英译第75页、法文扫描第115页该条最后一句。下一起点为同页15.2“Let $X$ be a prescheme, $J$ an ideal quasi-coherent over $X$”，对应法文“Soient $X$ un préschéma, $J$ un Idéal…”。此件独立，不覆盖合订稿。
+\chapter*{15.1　光滑型}
+设$S$为预概形，$E$为$S$上的有限型局部自由模，$\varphi$为$\Sym^n(E)$的一个截面，也就是$E^\vee$上的一个“$n$次型”，其中$n\ge0$。在$E$处处正秩时，给出$\varphi$等价于给出$P=\mathbb P(E)$上的$\OO_P(n)$的一个截面（参见第三章；秩零且$n=0$时，对称零次幂仍为$\OO_S$，但$P$为空），因而定义$P$的一个子预概形$V(\varphi)$。
+
+若$V(\varphi)$在$S$上光滑，且对每个$s\in S$都有$V(\varphi)_s\ne P_s$（在$E_s$正秩时，等价于$\varphi(s)\in\Sym_{k(s)}^n(E\otimes k(s))$不为零），就称$\varphi$为\emph{光滑型}。\footnote{原文未在括注中明列正秩条件。秩零时$P_s$为空，故两纤维相等；特别当$n=0$时，不能以标量非零替代纤维不等。}立刻可见：$\varphi$光滑当且仅当每个$s\in S$处的$\varphi(s)$都光滑（这归结到基底为一个域的谱的情形）；而光滑型的概念在变更基域时不变（所以特别可以归结到代数闭的基域）。这两项可合述如下：若$S'\to S$为满射态射，则$\varphi$光滑当且仅当它在$S'$上的拉回$\varphi'$光滑。
+
+当然，若$E$为环$A$上的有限型投射模，且$\varphi\in\Sym_A^n(E)$，则称$\varphi$光滑，若……。\footnote{法文第114页与英译第75页均有省略号，照原文保留。}当$E=A^{r+1}$时，给出$\varphi$等价于给出变量$X_0,\ldots,X_r$中的一个$n$次齐次多项式。由雅可比判据立得：$\varphi$光滑，当且仅当$\varphi$与各$\partial\varphi/\partial X_i$生成的理想含有增广理想$(X_0,\ldots,X_r)$的某个幂，亦即含有每个变量$X_i$的某个幂。
+
+更确切地说，由$\varphi$和各$\partial\varphi/\partial X_i$生成的齐次理想所定义的$\mathbb P_A^r$的子预概形，其底层点集恰由$V(\varphi)$中不满足“在该点相对$\Spec(A)$光滑且相对维数为$r-1$”的点组成。\footnote{法文第115页明确写$r-1$。原句辨认其点集，未另给所谓非光滑子概形的概形结构。}
+\chapter*{译校说明（非原文）}
+\enlargethispage{3\baselineskip}
+\paragraph{手写边注。}
+法文第114页在光滑多项式判据所在行上方有手插字样，页底另有手写边注；后者似有“notion intrinsèque”字样，但整句及行上插字未能可靠辨完，不据猜读改正文。
+
+\paragraph{逐纤维检验。}
+正秩时$P_s$为域上的射影空间，非零的纤维型定义有效 Cartier 除子（允许空除子）。因$P\to S$平坦且局部有限表示，$V(\varphi)$又局部由一条方程切出，\href{https://stacks.math.columbia.edu/tag/062Y}{Stacks 项目引理31.19.9(3)}给出相对有效 Cartier 除子，故$V(\varphi)\to S$平坦；它也局部有限表示，因而可逐几何纤维检验光滑。满射基变换命中每个纤维，扩域可检验纤维型非零与几何光滑；这不是一般地用任意满射态射下降光滑性。正秩且$n=0$时，$\varphi$是标量，光滑当且仅当它为单位，此时零概形为空。
+
+\paragraph{Euler 恒等式不需要除法。}
+在$X_i\ne0$的仿射图上，令$x_j=X_j/X_i$（$j\ne i$），令$f$为$\varphi$的去齐次化。对$j\ne i$，齐次偏导去齐次后为$\partial_j f$；第$i$项由 Euler 恒等式变成
+\[
+n f-\sum_{j\ne i}x_j\,\partial_j f.
+\]
+故把原方程也计入时，齐次雅可比理想限制成$(f,\partial_j f\ (j\ne i))$，无需除以$n$。$n$为单位时，Euler 恒等式允许略去$\varphi$；$n$非单位时一般不能略去。例如特征$2$下$X_0^2+X_1X_2$定义光滑二次曲线，但偏导全在$[1:0:0]$消失，而该点不在曲线上。
+
+\paragraph{空射影谱与无关理想。}
+对所给齐次理想$I$，商环的标准射影图为空，当且仅当相应$X_i$在商环中幂零。若各$X_i^{a_i}\in I$，那么次数至少$1+\sum_i(a_i-1)$的每个单项式都含某个$X_i^{a_i}$，故$I$包含无关理想的这一幂；反向由逐个取纯幂即得。这样也排除正秩的零纤维型：该情形下雅可比理想在该纤维为零，标准射影图并未全部消失。
+\end{document}

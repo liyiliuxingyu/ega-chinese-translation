@@ -1,0 +1,1 @@
+独立续译，未并主稿，旧工程未修改。使用ctex/Fandol和XeLaTeX双遍运行build.sh。原文及进度见底本.pdf和PROGRESS.json。

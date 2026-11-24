@@ -1,0 +1,38 @@
+\documentclass[openany,fontset=fandol]{ctexbook}
+\usepackage{amsmath,amssymb}
+\usepackage[unicode,hidelinks]{hyperref}
+\setlength{\emergencystretch}{2em}
+\begin{document}
+\title{代数几何基础第五卷预备笔记\\可逆模扭曲与单位变换}
+\author{据英译编辑稿翻译，参校法文扫描}
+\date{2026年11月20日}
+\maketitle
+\chapter*{范围与接续}
+本批完整翻译英译第67页“It is necessary to summarize the whole situation”起的一个段落，至“$M$ = relative dimension of $X$ over $Y$”止，对读法文扫描第102页。下一起点是同页“Remark. With the mentioned conditions about $X,Y,S,\varphi$”。
+
+这是接上一批两条正合列的独立续稿，未并入第十七版。原文中尚待汇总、推广的口吻予以保留；没有把作者计划写出的命题或后续扭曲交换图当作本段已完成的证明。上一批关于正合列秩和主部模对偶符号的待核说明仍有效。
+\chapter*{向可逆模截面的推广（续）}
+应当用一个总结性的命题来概括整个情形，并以稍为一般的形式来表述，即取$X$上一个可逆模$K$的截面$\varphi$；这就要求把前面讨论中引入的若干模用$K$作扭曲。这确实就是超平面截面那一节所遇到的情形。
+
+还要指出，若把$\varphi$换成$u\varphi$，其中$u$是一个单位，则
+\[
+V(\varphi)_{\mathrm{sing}}
+\quad\text{和}\quad
+V(\varphi)_{\mathrm{sup\,sing}}
+\]
+都不改变。事实上，$\mathrm d\varphi/V(\varphi)$及$M(\varphi)$都乘以$u$，而$D(\varphi)$乘以$u^M$，其中$M$是$X$相对于$Y$的维数。
+\chapter*{译校说明（非原文）}
+\paragraph{原文对读与记号。}
+法文扫描第102页的“Il faudrait résumer”是尚待总结的语气，不是已给出某个编号命题。该段关于单位变换的后半句是手写补入，英译已将其收入正文。法文“tordre par $K$”对应“用$K$作扭曲”；本段并未逐一列出应当张量的幂次，不能据此把后面的图擅自补齐。
+
+英译的$\mathrm d\varphi/V(\varphi)$表示将微分限制到零概形，并非将微分除以一个概形。$M(\varphi)$沿用前文二次初始项的矩阵记号，而同句单独出现的大写$M$表示相对维数；两者不能混同。
+\paragraph{单位变换的适用位置。}
+下面只是说明原句的类型与限制条件，不替代原文。
+局部把截面写成函数，并在相同局部标架下比较。由乘积法则
+\[
+\mathrm d(u\varphi)=u\,\mathrm d\varphi+\varphi\,\mathrm du,
+\]
+限制到$V(\varphi)=V(u\varphi)$后，第二项消失，故限制后的微分确实乘以$u$。在临界零概形上再令$\varphi$及其相对一阶微分为零，二次初始项中含这些因子的交叉项也消失，因而其矩阵乘以$u$，行列式乘以$u^M$。
+
+这不是说在整个$X$上未经限制的二阶导数矩阵恒满足同一缩放等式。上述单位因子不改变相应的零理想，说明本段所说的奇异及超奇异零概形不变。这里仍沿用底本的定义和术语；特征$2$下二次型光滑性与双线性判别式的区别，须保留主稿既有校勘，不能以本段的单位不变性消除该区别。
+\end{document}

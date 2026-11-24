@@ -1,0 +1,72 @@
+{
+  "main": {
+    "pages": 1158,
+    "all_page_text_and_geometry_parity": true,
+    "render_parity_dpi": 90,
+    "render_pages": [
+      1,
+      971,
+      972,
+      973,
+      974,
+      975,
+      976,
+      977,
+      978,
+      979,
+      980,
+      981,
+      982,
+      983
+    ],
+    "new_text_page_range": [
+      971,
+      982
+    ],
+    "evidence": {
+      "题名说明。": [
+        971
+      ],
+      "15.7初等奇点的几何变式": [
+        980
+      ],
+      "纯不可分时": [
+        982
+      ]
+    }
+  },
+  "report": {
+    "pages": 287,
+    "all_page_text_and_geometry_parity": true,
+    "render_parity_dpi": 90,
+    "render_pages": [
+      1,
+      17,
+      18,
+      19,
+      20
+    ],
+    "new_text_page_range": [
+      17,
+      19
+    ],
+    "evidence": {
+      "第68批": [
+        19
+      ],
+      "仍需继续的核查": [
+        19
+      ],
+      "本章接续原第十七版报告": [
+        17
+      ]
+    }
+  },
+  "previous_pdf_pages": 1146,
+  "unchanged_historical_report_tex_count": 23,
+  "unchanged_prior_tex_count": 168,
+  "unchanged_base_source_files": 12,
+  "unchanged_inherited_batch_zips": 13,
+  "all_current_footnotes_and_display_equations_preserved": true,
+  "logs_no_undefined_reference_missing_character_overfull": true
+}

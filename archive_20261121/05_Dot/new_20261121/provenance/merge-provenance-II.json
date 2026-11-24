@@ -1,0 +1,44 @@
+[
+  {
+    "batch": 56,
+    "zip": "EGA第五卷_划去稿的增广定义_续译工程.zip",
+    "digest": "a2b960054e3d3a6e776095d84e0a1a12260d8d47d928fe20b1538ccbedeff869",
+    "tex": "EGA第五卷_划去稿的增广定义_校订续译.tex"
+  },
+  {
+    "batch": 57,
+    "zip": "EGA第五卷_划去稿命题8及引理_续译工程.zip",
+    "digest": "8ae071d764a395acaeda87b7d66f60bee8744d7bec250fbf8f112e4c5cab0d61",
+    "tex": "EGA第五卷_划去稿命题8及引理_校订续译.tex"
+  },
+  {
+    "batch": 58,
+    "zip": "EGA第五卷_划去稿命题9_续译工程.zip",
+    "digest": "93c4a69f03f64a53ed5ff83cc16669d7151e1262a811459f8ab183e5ad5f737b",
+    "tex": "EGA第五卷_划去稿命题9_校订续译.tex"
+  },
+  {
+    "batch": 59,
+    "zip": "EGA第五卷_划去稿推论10_续译工程.zip",
+    "digest": "3098e49de8039f71eff16bb099105a5fcbe53d9a3fe4255b233010e813a867bc",
+    "tex": "EGA第五卷_划去稿推论10_校订续译.tex"
+  },
+  {
+    "batch": 60,
+    "zip": "EGA第五卷_奇异零点与外幂判别_续译工程.zip",
+    "digest": "e236dfca3fa42189733863bbb8c0816b2857b28581b6ce85fbf143a0172af1f9",
+    "tex": "EGA第五卷_奇异零点与外幂判别_校订续译.tex"
+  },
+  {
+    "batch": 61,
+    "zip": "EGA第五卷_二阶判别与恒秩引理_续译工程.zip",
+    "digest": "017d9e9f51e602989dbed5ca039876b57012f67ec62401ef1824dba1a4d62910",
+    "tex": "EGA第五卷_二阶判别与恒秩引理_校订续译.tex"
+  },
+  {
+    "batch": 62,
+    "zip": "EGA第五卷_光滑塔与分歧概形_续译工程.zip",
+    "digest": "53732703f0099ad4ce473e642160867949bac63f49193aae4f2cc71485b655af",
+    "tex": "EGA第五卷_光滑塔与分歧概形_校订续译.tex"
+  }
+]

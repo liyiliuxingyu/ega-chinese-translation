@@ -1,0 +1,38 @@
+\documentclass[openany,fontset=fandol]{ctexbook}
+\usepackage{amsmath,amssymb}
+\usepackage[unicode,hidelinks]{hyperref}
+\newcommand{\note}[1]{\unskip\nobreak\footnote{译注：#1}}
+\begin{document}
+\title{代数几何基础第五卷预备笔记\\锥投影的浸入性与分歧集辨析}
+\author{据用户上传英译编辑稿译出}
+\date{2026年11月18日}
+\maketitle
+\chapter*{范围与校订状态}
+本批译出底本第58页“We will avoid believing”起的整个段落及页末图式，止于第58页末。第59页承接图式的“obtained (with the help) using the different”尚未译入，为下一接续位置。
+
+原文两处不可辨提示、维数疑点及页末图式的底空间疑点均保留或注明。为便于阅读，对原有长段适当分段，未省略其内容。正文按底本叙述转述论证，不声称补全全部证明；未合并主稿，全部历史待核保持。
+\chapter*{§14 锥投影（续）}
+即使$X$是$P$中一个光滑、几何不可约、维数为$m-1=n$的闭子概形，也不要认为锥投影$(p_C)$（？字迹不清）必定是浸入。事实上，若$k$无限，这就意味着存在一个在$k$上有理的中心$C$，具有同样的性质；从而$X$同构于$\mathbb P^{n+1}$中的一个非奇异超曲面。但即使在$n=1$时（即$X$为代数闭域上的光滑连通射影代数曲线），也容易构造不能嵌入$\mathbb P^2$的$X$的例子。\note{底本把射影空间分别写作$p$、$p^2$，正文统一为$P$及$\mathbb P^2$；把$(P_c)$统一为$(p_C)$，但其后“(? Illegible)”照译保留。括注“ne peat s’immerge”随英语“cannot be embedded”译出，不将原文未给出的具体曲线例子另行插入。}
+
+同样，对于14.4，不要把其中的陈述与下列一般不成立的断言混为一谈：$p_C$本身是单态射（前面的反例，若$X$光滑且维数为$m$），或者$p_C$应当非分歧。\note{括号内底本写“preceding counterexample if $X$ is smooth if dimension $m$”。前面曲线及超曲面讨论使用的是$m-1=n$；这里的$m$与其衔接有疑点。正文保留原维数，不擅改为$m-1$，也不据此宣称已有一个完全写明的反例。}
+关于后一项，为使自己确信这一点，取$X$为一个光滑、不可约、维数为$m$的闭子概形（在代数闭域$k$上，？字迹不清）。若有一个非分歧态射
+\[
+X\longrightarrow Q\simeq\mathbb P^m,
+\]
+则由维数的理由，它将是平展的；但可以证明（见第VIII章），这意味着
+\[
+X\xrightarrow{\sim}\mathbb P^m
+\]
+（因为$\mathbb P^m$是单连通的）。\note{原文“over $k$ algebraically closed ?illegible?”的缺文提示照存。本段的$X$承接为射影空间的闭子概形；若脱离这一真性背景，仅凭“平展”和“单连通”不能直接得出同构。正文转述原论证，没有把它推广到任意平展态射；第VIII章的引用亦按原文保留，未补造该章证明。}
+
+\newpage
+14.4的直观几何意义是：$p_{C_\eta}$的分歧集在$k$上是“可变的”；更确切地说，当$\xi$在$\operatorname{Grass}^{m+1}(\bar k)$的一个开集中变化时，$p_{C_\xi}$的分歧集在$X(\bar k)$中变化，并且没有任何“固定点”……\note{底本记号为“$p_{c\xi}$”及“$\operatorname{Grass}^{m+1}(\bar k)$”。前者按本节中心$C_\xi$的记法规范为$p_{C_\xi}$；后者照存，不擅补一个未明写的环境空间。这是原文的直观解释，不把它读作完整的分歧集构造或新的严格等价命题。}
+当然，为了在本节中说明从泛点$\eta$到$\operatorname{Grass}^{m+1}(P)$的邻近点的过渡是成立的，并且在需要时重新采用7.1的一般考虑，我们必须考察下列图式：\note{底本页末左下角明确印为$X$，左上角也为$X$。其意图似为相对底空间上的图式，但单凭此页不能把左下角确定改成$S$或其他对象；故先照存，并留待下一页的基变换及普遍图式说明核对。箭头不额外标作恒等态射。}
+\[
+\begin{array}{ccc}
+X&\longleftarrow&\widetilde X(C)\\
+\big\downarrow&&\big\downarrow\\
+X&\longleftarrow&Q(C)
+\end{array}
+\]
+\end{document}

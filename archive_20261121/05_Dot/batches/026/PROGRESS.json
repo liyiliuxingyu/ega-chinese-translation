@@ -1,0 +1,14 @@
+{
+  "completed": "底本48页前五段，Once we grant this 至 the subscheme Z^1 corresponding to X^(m) supersingular is nowhere dense",
+  "next": "第48页 It remains, therefore, to prove a lemma",
+  "previous_project": "libfile_fde3_f-13fee13fb64081918cdae495f00db6ff_49ac57203c0c81918f3630f0324dcb35",
+  "source_sha256": "23a20ef32fd16a1bd623c0c08ac080d04fc94f248de12133b713a19d6b0330d9",
+  "merged_into_main": false,
+  "pdf_pages": 4,
+  "unresolved": [
+    "S=Spec缺失所取谱对象",
+    "全局T几何不可约性后的K(ξ)基域表述待核",
+    "n同时为维数和Veronese指标，未补定其关系",
+    "此前缺文及补篇验证继续保留"
+  ]
+}

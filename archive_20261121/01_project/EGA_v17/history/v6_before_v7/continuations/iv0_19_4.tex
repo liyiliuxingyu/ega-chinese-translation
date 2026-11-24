@@ -1,0 +1,120 @@
+% Source: EGAIV.1.pdf, PDF pp.85--88; printed pp.86--89.
+\subsection{形式光滑性的初步判据}
+\source{印刷第86--89页；上传PDF第85--88页}
+\egas{19.4.1}{命题}
+设 $A$ 为拓扑环，$B$ 为拓扑 $A$-代数。假定分别有 $A,B$ 中的两个递降滤过族 $(\mathfrak j_\alpha)_{\alpha\in I}$、$(\mathfrak k_\alpha)_{\alpha\in I}$，满足：
+
+$1^\circ$ $(\mathfrak j_\alpha)$ 在 $A$ 中趋于零，$(\mathfrak k_\alpha)$ 在 $B$ 中趋于零；
+
+$2^\circ$ 对每个 $\alpha$，$\mathfrak j_\alpha B\subset\mathfrak k_\alpha$，因而 $B/\mathfrak k_\alpha$ 为拓扑 $(A/\mathfrak j_\alpha)$-代数；
+
+$3^\circ$ 每个 $B/\mathfrak k_\alpha$ 均为形式光滑的 $(A/\mathfrak j_\alpha)$-代数。
+
+则 $B$ 为形式光滑的 $A$-代数。
+
+事实上，设 $C$ 为离散 $A$-代数，$\mathfrak a$ 为其幂零理想，$\mathfrak k$ 为 $B$ 的开理想。由假设，可取 $\alpha$ 使 $\mathfrak k_\alpha\subset\mathfrak k$，故 $B/\mathfrak k$ 是 $B/\mathfrak k_\alpha$ 对一个开理想的商。每个 $A$-同态 $u':B/\mathfrak k\to C/\mathfrak a$ 也是 $(A/\mathfrak j_\alpha)$-同态。\cmt{F6-G04}{为应用 $B/\mathfrak k_\alpha$ 的形式光滑性，还须让 $C$ 本身成为 $A/\mathfrak j_\alpha$-代数；这并非仅由 $\mathfrak k_\alpha\subset\mathfrak k$ 得到。因 $C$ 是离散拓扑 $A$-代数，结构同态的核在 $A$ 中开；又因 $\mathfrak j_\alpha\to0$，可同时取足够后的 $\alpha$ 使 $\mathfrak j_\alpha C=0$。这是可补的选择步骤，命题结论不受影响。}因此存在 $B$ 的开理想 $\mathfrak k'$，满足 $\mathfrak k_\alpha\subset\mathfrak k'\subset\mathfrak k$，并使
+\[
+ B/\mathfrak k_\alpha\to B/\mathfrak k\xrightarrow{u'}C/\mathfrak a
+\]
+分解为 $B/\mathfrak k_\alpha\to B/\mathfrak k'\xrightarrow{v'}C\to C/\mathfrak a$，其中 $v'$ 为 $(A/\mathfrak j_\alpha)$-同态。由（19.3.1）后的说明即得结论。
+
+\egas{19.4.2}{推论}
+设 $A$ 为拓扑环，$B$ 为拓扑 $A$-代数，$(\mathfrak j_\alpha)$ 为 $A$ 中趋于零的递降滤过理想族。令 $A_\alpha=A/\mathfrak j_\alpha$、$B_\alpha=B/\mathfrak j_\alpha B$。则 $B$ 是形式光滑 $A$-代数，当且仅当每个 $B_\alpha$ 是形式光滑 $A_\alpha$-代数。
+
+充分性来自（19.4.1），必要性来自（19.3.5，iii）。
+
+\egas{19.4.3}{命题}
+设 $A$ 为拓扑环，$B$ 为拓扑 $A$-代数。假定对每个离散 $A$-代数 $C$ 及满足 $\mathfrak j^2=0$ 的理想 $\mathfrak j$，每个连续 $A$-同态 $u:B\to C/\mathfrak j$ 都分解为 $B\xrightarrow{v}C\to C/\mathfrak j$，其中 $v$ 连续。则 $B$ 为形式光滑 $A$-代数。
+
+事实上，设 $\mathfrak k$ 为 $C$ 的任意幂零理想，$u':B\to C/\mathfrak k$ 为连续 $A$-同态。若 $\mathfrak k^m=0$，令 $C_i=C/\mathfrak k^i$（$1\leq i\leq m$）。则 $C_m=C$；对 $2\leq i\leq m$，$\mathfrak k^{i-1}/\mathfrak k^i$ 为 $C_i$ 的平方零理想 $\mathfrak j_i$，且 $C_i=C_{i+1}/\mathfrak j_{i+1}$。由假设对 $i$ 递归，得到连续 $u_i:B\to C_i$，使 $u_1=u'$，且 $u_i$ 分解为 $B\xrightarrow{u_{i+1}}C_{i+1}\to C_i$。从而得出结论。
+
+\egas{19.4.4}{命题}
+设 $A$ 为拓扑环，$B$ 为交换拓扑 $A$-代数。$B$ 形式光滑，当且仅当对每个被 $B$ 的某个开理想零化的离散拓扑 $B$-模 $L$，均有（参见18.5.1）
+\[
+ \Exalcotop_A(B,L)=0.
+\]
+
+设 $(\mathfrak k_\lambda)$ 为 $B$ 的递降开理想基本系，令 $B_\lambda=B/\mathfrak k_\lambda$。取离散拓扑 $A$-代数 $C$ 和平方零理想 $\mathfrak j$，于是 $C$ 是 $C/\mathfrak j$ 以 $\mathfrak j$ 为核的 $A$-扩张。给定 $u:B_\lambda\to C/\mathfrak j$，沿 $u$ 拉回该扩张，得到 $B_\lambda$ 以 $\mathfrak j$ 为核的 $A$-扩张 $E_\lambda$（18.2.5），并给它配备离散拓扑。若所述扩张类群为零，则按定义（18.5.1）存在 $\mu$，使 $\mathfrak k_\mu\subset\mathfrak k_\lambda$ 且拉回扩张 $E_\mu$ 为 $A$-平凡扩张。这意味着（18.1.6）有连续 $A$-同态 $v:B_\mu\to E_\lambda$，使典范 $B_\mu\to B_\lambda$ 分解为 $B_\mu\xrightarrow{v}E_\lambda\to B_\lambda$。于是 $B_\mu\to B_\lambda\to C/\mathfrak j$ 分解为 $B_\mu\to E_\lambda\to C\to C/\mathfrak j$；由（19.3.1）及（19.4.3），$B$ 形式光滑。
+反向结论是直接的：将（19.3.1）用于以 $L$ 为核的 $B_\lambda$ 的拓扑 $A$-扩张 $C$，以及恒等同态 $B_\lambda\to B_\lambda=C/L$ 即可。
+
+若 $A,B$ 均离散，判据化为
+\begin{equation}
+ \Exalcom_A(B,L)=0\qquad\text{对每个 $B$-模 $L$}
+ \tag{19.4.4.1}
+\end{equation}
+亦即，$B$ 以一个 $B$-模为核的每个交换 $A$-扩张都须为 $A$-平凡扩张。
+
+\egas{19.4.5}{推论}
+设 $A$ 为拓扑环，$B$ 为交换拓扑 $A$-代数。
+
+（i）若 $B$ 形式光滑，则对 $B$ 的每个开理想 $\mathfrak k$、每个 $(B/\mathfrak k)$-模 $L$，以及每个从 $(B/\mathfrak k)\times(B/\mathfrak k)$ 到 $L$ 的 $A$-双线性对称Hochschild二余循环 $f$（18.4.3），存在开理想 $\mathfrak k'\subset\mathfrak k$，使对于典范 $\varphi:B/\mathfrak k'\to B/\mathfrak k$，$f\circ(\varphi\times\varphi)$ 是从 $(B/\mathfrak k')\times(B/\mathfrak k')$ 到 $L$ 的 $A$-双线性Hochschild二余边界。\cmt{F6-T07}{初版最后一处定义域仍印为 $(B/\mathfrak k)\times(B/\mathfrak k)$。复合 $f\circ(\varphi\times\varphi)$ 的定义域应为带撇号的商环乘积，此处按映射类型明示更正。}
+
+（ii）若 $B$ 作为 $A$-模形式投射（19.2.1），且（i）的条件满足，则 $B$ 为形式光滑 $A$-代数。
+
+（i）二余循环 $f$ 定义一个 $B/\mathfrak k$ 以 $L$ 为核的Hochschild $A$-扩张 $C$（18.4.3）。把（19.3.1）用于 $C$、其平方零理想 $L$ 及恒等同态 $B/\mathfrak k\to B/\mathfrak k=C/L$，再用（18.4.3），即得（i）。
+
+（ii）应用（19.4.3）：考虑 $B$ 的开理想 $\mathfrak k$、$A$ 的开理想 $\mathfrak j$ 满足 $\mathfrak jB\subset\mathfrak k$，以及 $B/\mathfrak k$ 以 $L$ 为核的一个 $(A/\mathfrak j)$-扩张 $E$。因 $B$ 作为 $A$-模形式投射，连续 $A$-线性典范映射 $p:B\to B/\mathfrak k$ 分解为 $B\xrightarrow{w}E\to B/\mathfrak k$，其中 $w$ 连续且 $A$-线性（19.2.1）。故 $w$ 又分解为 $B\to B/\mathfrak k'\xrightarrow{w'}E$，其中 $\mathfrak k'\subset\mathfrak k$ 为开理想。必要时缩小 $\mathfrak j$，可假定 $\mathfrak jB\subset\mathfrak k'$。将 $E$ 沿 $B/\mathfrak k'\to B/\mathfrak k$ 拉回，所得 $E'$ 是 $B/\mathfrak k'$ 以 $L$ 为核的Hochschild $(A/\mathfrak j)$-扩张。对定义它的余循环应用（i）（18.4.3），得到开理想 $\mathfrak k''\subset\mathfrak k'$，使 $E$ 沿 $B/\mathfrak k''\to B/\mathfrak k$ 的拉回 $E''$ 为 $A$-平凡扩张，证毕。
+
+\egas{19.4.6}{推论}
+设 $A$ 为拓扑环，$B$ 为作为 $A$-模形式投射的拓扑 $A$-代数。设 $A'$ 为配备由 $A$ 诱导拓扑的 $A$-代数，且 $A'$ 作为 $A$-模忠实平坦。再假定满足以下条件之一：
+
+$1^\circ$ $A$ 有开理想基本系 $(\mathfrak j_\lambda)$，$B$ 有同指标集的开理想基本系 $(\mathfrak m_\lambda)$，使 $\mathfrak j_\lambda B\subset\mathfrak m_\lambda$，且每个 $B/\mathfrak m_\lambda$ 为有限型投射 $(A/\mathfrak j_\lambda)$-模；
+
+$2^\circ$ $A'$ 为有限型投射 $A$-模。
+
+那么，配备张量积拓扑的 $B'=B\otimes_AA'$ 是形式光滑的 $A'$-代数，当且仅当 $B$ 是形式光滑的 $A$-代数。
+
+由（19.3.5，iii），充分性不需关于 $B,A'$ 的任何额外假设。为证必要性，应用（19.4.5）。在假设 $2^\circ$ 下，仍以 $(\mathfrak m_\lambda)$ 表示 $B$ 的开理想基本系，并对每个 $\lambda$ 取 $A$ 的开理想 $\mathfrak j_\lambda$ 使 $\mathfrak j_\lambda B\subset\mathfrak m_\lambda$。两种情形都令
+\[
+ A_\lambda=A/\mathfrak j_\lambda,\quad
+ B_\lambda=B/\mathfrak m_\lambda,\quad
+ A'_\lambda=A_\lambda\otimes_AA',\quad
+ B'_\lambda=B_\lambda\otimes_AA'.
+\]
+设 $f$ 为从 $B_\lambda\times B_\lambda$ 到某个 $B_\lambda$-模 $L$ 的 $A_\lambda$-双线性对称Hochschild二余循环。标量扩张给出 $A'_\lambda$-双线性对称二余循环 $f'=f\otimes1:B'_\lambda\times B'_\lambda\to L'=L\otimes_AA'$。由 $B'$ 形式光滑及（19.4.5，i），存在 $\mu$ 使 $\mathfrak m_\mu\subset\mathfrak m_\lambda$，并使对于典范 $\varphi':B'_\mu\to B'_\lambda$，$f'\circ(\varphi'\times\varphi')$ 为二余边界。亦即，其在Hochschild群 $H^2_{A'_\mu}(B'_\mu,L')^s$ 中的类 $c'$ 为零。
+
+设 $\varphi:B_\mu\to B_\lambda$ 为典范同态，$c$ 为 $f\circ(\varphi\times\varphi)$ 在 $H^2_{A_\mu}(B_\mu,L)^s$ 中的类，则 $c'$ 为 $c$ 的典范像。令 $P'_\bullet$ 为（18.4.5）中用于计算该对称Hochschild群的、对应 $A_\mu,B_\mu$ 的复形；对应 $A'_\mu,B'_\mu$ 的复形为 $P'_\bullet\otimes_AA'$。在假设 $1^\circ$ 下，由构造，其各项为有限型投射 $A_\mu$-模。由Bourbaki，\textit{代数}，第二章，第3版，§5，第3目，命题7，在两种假设下都有典范同构
+\[
+ \Hom_{A'_\mu}(P'_\bullet\otimes_AA',L\otimes_AA')
+ \simeq\Hom_{A_\mu}(P'_\bullet,L)\otimes_AA'.
+\]
+又因 $A'$ 平坦，由（18.4.5）得到
+\[
+ H^2_{A'_\mu}(B'_\mu,L')^s
+ \simeq H^2_{A_\mu}(B_\mu,L)^s\otimes_AA'.
+\]
+故可写 $c'=c\otimes1$；由 $A'$ 忠实平坦，$c'=0$ 蕴含 $c=0$，证明完成。
+
+\egas{19.4.7}{命题}
+设 $A$ 为预可容许拓扑环，$\mathfrak j$ 为其定义理想（$0_{\mathrm I}$，7.1.2），$B$ 为作为 $A$-模形式投射的拓扑 $A$-代数。给商环 $A_0=A/\mathfrak j$、$B_0=B/\mathfrak jB$ 配备商拓扑。则 $B$ 为形式光滑 $A$-代数，当且仅当 $B_0$ 为形式光滑 $A_0$-代数。
+
+必要性由（19.4.2）给出。为证充分性，先取包含于 $\mathfrak j$ 的开理想构成 $A$ 的零点基本邻域系 $(\mathfrak j_\alpha)$。由（19.4.2）及 $B/\mathfrak j_\alpha B$ 作为 $(A/\mathfrak j_\alpha)$-模形式投射（19.2.5），可归结为 $A$ 离散；由预可容许性，$\mathfrak j$ 此时幂零。只须再证 $\mathfrak j^2=0$ 的情形：若 $\mathfrak j^m=0$，则可对 $k=2,3,\ldots,m$，依次将该结果应用于
+$A_k=A/\mathfrak j^k$、$B_k=B/\mathfrak j^kB$ 和 $A_k$ 的平方零理想 $\mathfrak j^{k-1}/\mathfrak j^k$；注意 $B_k=B\otimes_AA_k$ 为形式投射的 $A_k$-模（19.2.5）。
+
+现在应用（19.4.5，ii）。设 $\mathfrak k$ 为 $B$ 的开理想，$f:(B/\mathfrak k)\times(B/\mathfrak k)\to L$ 为取值于 $(B/\mathfrak k)$-模 $L$ 的 $A$-双线性对称Hochschild二余循环。先考虑 $\mathfrak jL=0$ 的特殊情形。此时 $L$ 也是 $(B_0/\mathfrak kB_0)$-模，而且 $f$ 分解为
+\[
+ (B/\mathfrak k)\times(B/\mathfrak k)
+ \longrightarrow(B_0/\mathfrak kB_0)\times(B_0/\mathfrak kB_0)
+ \xrightarrow{f_0}L,
+\]
+其中 $f_0$ 为双线性对称二余循环。由假设，有开理想 $\mathfrak k'\subset\mathfrak k$ 和 $A_0$-线性映射 $g_0:B_0/\mathfrak k'B_0\to L$，使
+\[
+ f_0(\varphi_0(x),\varphi_0(y))=xg_0(y)-g_0(xy)+g_0(x)y
+\]
+对 $x,y\in B_0/\mathfrak k'B_0$ 成立，其中 $\varphi_0:B_0/\mathfrak k'B_0\to B_0/\mathfrak kB_0$ 为典范同态。于是复合 $A$-线性映射 $g:B/\mathfrak k'\to B_0/\mathfrak k'B_0\xrightarrow{g_0}L$ 满足 $dg=f\circ(\varphi\times\varphi)$，$\varphi:B/\mathfrak k'\to B/\mathfrak k$ 为典范同态。
+
+再考虑一般情形。先取 $L'=L/\mathfrak jL$，则 $\mathfrak jL'=0$。将 $f$ 与 $L\to L'$ 复合，得对称二余循环 $f'$。由前一情形，存在开理想 $\mathfrak k'\subset\mathfrak k$ 和 $A$-线性 $g':B/\mathfrak k'\to L'$，满足 $dg'=f'\circ(\varphi'\times\varphi')$，其中 $\varphi':B/\mathfrak k'\to B/\mathfrak k$ 为典范同态。因 $B$ 是形式投射 $A$-模，存在开理想 $\mathfrak k_1\subset\mathfrak k'$ 和 $A$-线性 $g_1:B/\mathfrak k_1\to L$，使 $B/\mathfrak k_1\to B/\mathfrak k'\xrightarrow{g'}L'$ 分解为 $B/\mathfrak k_1\xrightarrow{g_1}L\to L'$。
+
+若 $\varphi_1:B/\mathfrak k_1\to B/\mathfrak k$ 为典范同态，考虑
+\[
+ f_1(x,y)=f(\varphi_1(x),\varphi_1(y))-xg_1(y)+g_1(xy)-g_1(x)y.
+\]
+它是 $(B/\mathfrak k_1)\times(B/\mathfrak k_1)\to L$ 的 $A$-双线性对称二余循环。由 $g_1$ 的选择，$f_1$ 取值于 $\mathfrak jL$。因 $\mathfrak j(\mathfrak jL)=0$，再用第一种情形，得到开理想 $\mathfrak k''\subset\mathfrak k_1$ 和 $A$-线性 $g_2:B/\mathfrak k''\to\mathfrak jL$，满足
+\[
+ f_1(\varphi_2(x),\varphi_2(y))=xg_2(y)-g_2(xy)+g_2(x)y,
+\]
+其中 $\varphi_2:B/\mathfrak k''\to B/\mathfrak k_1$ 为典范同态。因此 $A$-线性映射
+\[
+ g=g_2+g_1\circ\varphi_2:B/\mathfrak k''\longrightarrow L
+\]
+满足 $dg=f\circ(\varphi\times\varphi)$，$\varphi:B/\mathfrak k''\to B/\mathfrak k$ 为典范同态。证毕。

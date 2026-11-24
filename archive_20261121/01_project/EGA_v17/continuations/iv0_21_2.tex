@@ -1,0 +1,219 @@
+% 底本：EGAIV.1.pdf，PDF第156--159页，分册印刷第157--160页。
+\subsection{\texorpdfstring{$p$-基与形式光滑性}{p-基与形式光滑性}}
+\egas{21.2.1}{定理}
+设 $B$ 为环，$A\subseteq B$ 为满足 $B^p\subseteq A$ 的子环，
+$(x_\alpha)_{\alpha\in I}$ 为 $B$ 在 $A$ 上的一组 $p$-基。
+设 $E$ 为 $A$-代数，$u:A\to E$ 为结构同态，$q:E\to B$ 为满的 $A$-同态，
+其核 $\mathfrak k$ 满足 $\mathfrak k^p=0$。则：
+
+$(i)$ 存在 $q$ 的右逆 $A$-同态 $v:B\to E$，当且仅当
+\[
+ u\bigl(q(z)^p\bigr)=z^p\qquad(z\in E).
+\]
+
+$(ii)$ 若 $(i)$ 的条件成立，则对任意满足 $q(z_\alpha)=x_\alpha$ 的元素族
+$(z_\alpha)_{\alpha\in I}$，存在唯一的 $A$-同态 $v:B\to E$ 使
+$v(x_\alpha)=z_\alpha$；而且 $v$ 是 $q$ 的右逆。
+
+\eproof
+若存在这样的 $v$，则对 $a\in A\subseteq B$，$v(a)=u(a)$。
+因 $B^p\subseteq A$，对每个 $z\in E$ 有
+\[
+ v\bigl(q(z)^p\bigr)=u\bigl(q(z)^p\bigr)=\bigl(v(q(z))\bigr)^p.
+\]
+又 $qv=1_B$ 给出 $v(q(z))-z\in\mathfrak k$。因 $\mathfrak k^p=0$，
+$\bigl(v(q(z))\bigr)^p=z^p$，得到必要性。充分性将由 $(ii)$ 得到。
+
+在 $(ii)$ 的假设下，受限单项式 $\prod_\alpha x_\alpha^{n(\alpha)}$
+生成 $A$-模 $B$，所以 $v$ 若存在便唯一。
+由于这些单项式还是 $A$-模 $B$ 的基，存在唯一的 $A$-线性映射 $v:B\to E$，使
+\[
+ v\left(\prod_\alpha x_\alpha^{n(\alpha)}\right)
+   =\prod_\alpha z_\alpha^{n(\alpha)}
+ \quad\bigl(0\le n(\alpha)<p\bigr).
+\]
+只须验证其保乘法。对两族受限指数 $(m(\alpha)),(n(\alpha))$，写成
+\[
+ \left(\prod_\alpha x_\alpha^{m(\alpha)}\right)
+ \left(\prod_\alpha x_\alpha^{n(\alpha)}\right)
+ =a\prod_\alpha x_\alpha^{r(\alpha)},
+\]
+其中当 $m(\alpha)+n(\alpha)<p$ 时，$r(\alpha)=m(\alpha)+n(\alpha)$；
+否则 $r(\alpha)=m(\alpha)+n(\alpha)-p$。
+元素 $a\in A$ 是所有满足 $m(\alpha)+n(\alpha)\ge p$ 的 $x_\alpha^p$ 的乘积。
+由 $q(z_\alpha)=x_\alpha$ 及假设，$u(x_\alpha^p)=z_\alpha^p$；因而
+\[
+ u(a)=\prod_{m(\alpha)+n(\alpha)\ge p}z_\alpha^p.
+\]
+这就验证了乘法相容性。空单项式给出 $v(1)=1$，且在所有基单项式上 $qv=1_B$，故证明完毕。
+\finishproof
+
+\egas{21.2.2}{推论}
+设 $B$ 为环，$B^p\subseteq A\subseteq B$。若 $B$ 在 $A$ 上有一组 $p$-基，
+则 $B$ 是相对于 $B^p$ 形式光滑的 $A$-代数；各环赋离散拓扑。
+
+\eproof
+设 $E$ 为以 $B$-模 $L$ 为核的 $B$ 的一个 $A$-扩张，
+$q:E\to B$ 为增广，$u:A\to E$ 为结构同态。
+$E$ 为 $B^p$-平凡扩张，意味着存在环同态 $v:B\to E$，使
+\[
+ q(v(b))=b,\qquad v(b^p)=u(b^p)\quad(b\in B).
+\]
+因此，对 $z\in E$，
+\[
+ u\bigl(q(z)^p\bigr)=v\bigl(q(z)^p\bigr)=\bigl(v(q(z))\bigr)^p.
+\]
+而 $L^2=0$ 蕴含 $L^p=0$，且 $v(q(z))-z\in L$，所以右端为 $z^p$。
+（21.2.1，i）的条件成立，因而 $E$ 有 $A$-代数截面，即为 $A$-平凡扩张。
+\cmt{K11-T01}{原文证明末句写作“$E$ 为 $B$-平凡”，但本处给定的是 $B$ 的一个 $A$-扩张，尚未给定 $B\to E$ 作为结构同态。所证明和所需的结论均是存在与 $A$-结构相容的截面，故正文明确为“$A$-平凡”。不改变相对形式光滑性的结论。}
+\finishproof
+
+\egas{21.2.3}{推论}
+设 $B^p\subseteq A\subseteq B$，$(x_\alpha)_{\alpha\in I}$ 为 $B$ 在 $A$ 上的 $p$-基，$L$ 为 $B$-模。则：
+
+$(i)$ 导子 $D:A\to L$ 能延拓为 $B\to L$ 的导子，当且仅当 $D$ 在 $B^p$ 上为零。
+
+$(ii)$ 若 $D$ 在 $B^p$ 上为零，则对任意元素族 $(y_\alpha)_{\alpha\in I}$（$y_\alpha\in L$），
+存在唯一的导子 $D':B\to L$，延拓 $D$ 并满足 $D'(x_\alpha)=y_\alpha$。
+
+\eproof
+给定 $D$，考虑环 $E=D_B(L)=B\oplus L$ 以及同态
+$u:A\to E$，$a\mapsto(a,D(a))$。
+增广 $q:E\to B$ 的右逆 $A$-同态 $v:B\to E$ 恰好具有形式
+$x\mapsto(x,D'(x))$，其中 $D'$ 延拓 $D$（20.1.5）。
+对 $z\in E$，
+\[
+ u\bigl(q(z)^p\bigr)=\bigl(q(z)^p,D(q(z)^p)\bigr),
+ \qquad z^p=\bigl(q(z)^p,0\bigr).
+\]
+对 $E$ 应用（21.2.1）即得两个断言，其中给定提升取
+$z_\alpha=(x_\alpha,y_\alpha)$。
+\finishproof
+
+由此，序列
+\begin{equation}
+ 0\longrightarrow\Der_A(B,L)\longrightarrow\Der_{B^p}(B,L)
+ \longrightarrow\Der_{B^p}(A,L)\longrightarrow0
+ \tag{21.2.3.1}
+\end{equation}
+正合（参见20.2.2.1）。此外，令 $D=0$，映射
+\begin{equation}
+ D'\longmapsto\bigl(D'(x_\alpha)\bigr)_{\alpha\in I}
+ \tag{21.2.3.2}
+\end{equation}
+给出 $B$-模 $\Der_A(B,L)$ 到乘积模 $L^I$ 的同构。
+
+\egas{21.2.4}{推论}
+在（21.2.3）的假设下，序列
+\begin{equation}
+ 0\longrightarrow\Omega^1_{A/B^p}\otimes_A B
+ \longrightarrow\Omega^1_{B/B^p}
+ \longrightarrow\Omega^1_{B/A}\longrightarrow0
+ \tag{21.2.4.1}
+\end{equation}
+正合且分裂，而且 $(d_{B/A}(x_\alpha))_{\alpha\in I}$ 是 $B$-模
+$\Omega^1_{B/A}$ 的一组基。
+
+这由（21.2.3）及
+$\Der_A(B,L)=\Hom_B(\Omega^1_{B/A},L)$（20.4.8）得到。
+\cmt{K11-G01}{这里不仅得到右正合。对所有 $L$ 的限制映射满射，说明左端映射有左逆；而（21.2.3.2）及表示性质给出 $\Omega^1_{B/A}\simeq\bigoplus_{\alpha\in I}B\,d x_\alpha$。因此右端模自由，短正合列分裂。报告列出相应Hom论证；该补充不是对原结论的否定。}
+
+\egas{21.2.5}{推论}
+设 $A$ 为环，$B$ 为 $A$-代数，$(x_\alpha)_{\alpha\in I}$ 为 $B$ 在 $A$ 上的 $p$-基。
+则 $(d_{B/A}(x_\alpha))_{\alpha\in I}$ 是 $B$-模 $\Omega^1_{B/A}$ 的一组基。
+
+利用（21.1.5，ii），可把 $A$ 换成 $A[B^p]$，再应用（21.2.4）。
+\cmt{K11-T02}{原扫描页此处引用（21.1.5，iii）；但$(iii)$说的是对角理想的幂零元性质，所需的微分模不变性在$(ii)$，正文据实际用途改为$(ii)$。}
+
+\egap{21.2.6}
+设 $A,B$ 为两个环，$u:A\to B$ 为环同态。用（21.1.4）的记号，有交换图
+\begin{equation}
+ \begin{tikzcd}[column sep=large,row sep=large]
+ A^{(p)}\arrow[r,"u"] & B^{(p)}\\
+ A\arrow[u,"F_A"]\arrow[r,"u"'] & B\arrow[u,"F_B"']
+ \end{tikzcd}
+ \tag{21.2.6.1}
+\end{equation}
+由此得到典范的 $B$-代数同态
+\begin{equation}
+ u\otimes1:A^{(p)}\otimes_A B\longrightarrow B^{(p)},
+ \qquad a\otimes b\longmapsto u(a)b^p.
+ \tag{21.2.6.2}
+\end{equation}
+其像为子环 $A[B^p]$；该子环通过 $F_B:B\to A[B^p]$ 成为 $B$-代数。
+
+\egas{21.2.7}{定理}
+设 $A$ 为环，$B$ 为 $A$-代数，$u:A\to B$ 为结构同态。假设：
+
+$(i)$ 由 $u$ 诱导的同态（21.2.6.2）单射；
+
+$(ii)$ $B$ 在 $A$ 上具有 $p$-基 $(x_\alpha)_{\alpha\in I}$。
+
+则 $B$ 为形式光滑的 $A$-代数（各环赋离散拓扑）。更精确地，仍给 $A,B$ 赋离散拓扑；
+设 $E$ 为可容许的拓扑 $A$-代数（$0_{\mathrm I}$，7.1.2），$\mathfrak k$ 为其定义理想，
+$C=E/\mathfrak k$，$v:B\to C$ 为 $A$-同态，$q:E\to C$ 为增广。
+那么对任意满足 $q(z_\alpha)=v(x_\alpha)$ 的元素族 $(z_\alpha)$，
+存在唯一的 $A$-同态 $w:B\to E$，使
+\[
+ v=q\circ w,\qquad w(x_\alpha)=z_\alpha\quad(\alpha\in I).
+\]
+\cmt{K11-N04}{单有$p$-基，并不保证在原基环上形式光滑；条件$(i)$不可省略。例如 $B=\mathbf F_p[t]/(t^p)$ 在 $A=\mathbf F_p$ 上有$p$-基 $\{t\}$，但（21.2.6.2）杀死非零的 $t$，并且存在不能提升的平方零扩张。报告K11-N04给出完整计算。本条一般拓扑情形依靠指定各$x_\alpha$像后的唯一性来构造相容提升，不使用作者已撤销的（19.3.12）。}
+
+\eproof
+先设 $E$ 离散，此时 $\mathfrak k$ 幂零。可以先取 $v(B)$ 的逆像，从而归结于 $v$ 满射；
+再按（19.4.3）的逐次提升论证归结于 $\mathfrak k^2=0$，于是 $\mathfrak k^p=0$。
+最后沿 $v$ 拉回扩张，即可归结于 $C=B$、$v=1_B$ 的情形（19.4.4）。
+
+Frobenius同态 $F_E$ 在 $\mathfrak k$ 上为零，故分解为
+\[
+ E\xrightarrow q B\xrightarrow{F'}E.
+\]
+视目标为 $E^{(p)}$ 时，$F'$ 是 $A$-同态；这里 $E^{(p)}$ 的 $A$-结构由
+$A\xrightarrow r E\xrightarrow{F_E}E^{(p)}$ 给出，$r$ 为 $E$ 的结构同态。
+同样，$r:A^{(p)}\to E^{(p)}$ 为 $A$-同态。
+因此存在唯一的 $A$-同态
+\[
+ f:A^{(p)}\otimes_A B\longrightarrow E^{(p)},
+\]
+使其与两个典范映射复合后分别为 $r$ 和 $F'$。
+
+由假设$(i)$，可将 $A^{(p)}\otimes_A B$ 识别为 $A[B^p]$；两个典范映射分别对应 $u$ 与 $F_B$。
+于是借助 $f$，可以将底层环 $E$ 看作 $A[B^p]$-代数。
+按构造，对 $z\in E$ 有
+\[
+ f\bigl(q(z)^p\bigr)=z^p.
+\]
+现已满足（21.2.1）的条件；对基环 $A[B^p]$ 应用该定理，便得到存在性及指定各基元素像后的唯一性。
+\cmt{K11-G02}{平方零情形中的“唯一”必须同时核对$A[B^p]$-结构。任何$A$-代数截面$w$都满足$w(b^p)=w(b)^p=F'(b)$，所以它在$A[B^p]$上的限制被强制等于$f$。对一般幂零核，逐次处理$E/\mathfrak k^{r+1}\to E/\mathfrak k^r$，每一步仍指定$x_\alpha$的像为$z_\alpha$的相应剩余类。这样才同时保留存在性与唯一性。}
+
+再设 $E$ 为一般的可容许环。取由开理想组成的零邻域基 $(\mathfrak j_\lambda)$，令
+\[
+ E_\lambda=E/\mathfrak j_\lambda,\quad
+ \mathfrak k_\lambda=(\mathfrak k+\mathfrak j_\lambda)/\mathfrak j_\lambda,
+ \quad C_\lambda=E/(\mathfrak k+\mathfrak j_\lambda).
+\]
+由可容许性，$E=\varprojlim E_\lambda$（$0_{\mathrm I}$，7.2.2），且
+$\mathfrak k_\lambda$ 在离散环 $E_\lambda$ 中幂零。
+以 $z_{\alpha\lambda}$ 记 $z_\alpha$ 在 $E_\lambda$ 中的像，
+$p_\lambda:C\to C_\lambda$、$q_\lambda:E_\lambda\to C_\lambda$ 为典范同态。
+已证离散情形给出唯一的 $A$-同态 $w_\lambda:B\to E_\lambda$，满足
+\[
+ p_\lambda v=q_\lambda w_\lambda,
+ \qquad w_\lambda(x_\alpha)=z_{\alpha\lambda}.
+\]
+唯一性保证 $(w_\lambda)$ 与过渡同态相容，因而
+$w=\varprojlim w_\lambda:B\to E$ 即为所求。
+\finishproof
+
+\egas{21.2.8}{注}
+若已知 $B$ 是形式光滑的 $A$-代数，且 $d_{B/A}(x_\alpha)$ 构成
+$\Omega^1_{B/A}$ 的基，则指定 $w(x_\alpha)=z_\alpha$ 后提升 $w:B\to E$ 的存在性与唯一性，
+也可直接验证，不必再使用它们是 $p$-基这一事实。因此，这一结果还适用于不预设特征 $p$ 的环。
+
+事实上，可归结于 $\mathfrak k^2=0$。由
+\[
+ \Der_A(B,\mathfrak k)=\Hom_B(\Omega^1_{B/A},\mathfrak k)
+\]
+（20.4.8），对任意 $(t_\alpha)\in\mathfrak k^I$，存在唯一的 $A$-导子 $D:B\to\mathfrak k$，
+满足 $D(x_\alpha)=t_\alpha$。从形式光滑性给出的任一提升出发，应用（20.1.1），
+即可用唯一这样的导子把各 $x_\alpha$ 的像调整到指定的 $z_\alpha$，从而得到结论。

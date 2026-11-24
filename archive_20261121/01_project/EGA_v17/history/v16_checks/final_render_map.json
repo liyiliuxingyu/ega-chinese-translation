@@ -1,0 +1,34 @@
+{
+  "book_new": [
+    "checks/renders_final/book_new_0428.png",
+    "checks/renders_final/book_new_0429.png",
+    "checks/renders_final/book_new_0430.png",
+    "checks/renders_final/book_new_0431.png",
+    "checks/renders_final/book_new_0432.png",
+    "checks/renders_final/book_new_0433.png",
+    "checks/renders_final/book_new_0434.png",
+    "checks/renders_final/book_new_0435.png",
+    "checks/renders_final/book_new_0436.png"
+  ],
+  "report_new": [
+    "checks/renders_final/report_new_0015.png",
+    "checks/renders_final/report_new_0016.png",
+    "checks/renders_final/report_new_0017.png",
+    "checks/renders_final/report_new_0018.png",
+    "checks/renders_final/report_new_0019.png",
+    "checks/renders_final/report_new_0020.png"
+  ],
+  "navigation": [
+    "checks/renders_final/navigation_0001.png",
+    "checks/renders_final/navigation_0003.png",
+    "checks/renders_final/navigation_0004.png",
+    "checks/renders_final/navigation_0005.png",
+    "checks/renders_final/navigation_0006.png",
+    "checks/renders_final/navigation_0007.png",
+    "checks/renders_final/navigation_0016.png",
+    "checks/renders_final/navigation_0017.png",
+    "checks/renders_final/navigation_0427.png",
+    "checks/renders_final/navigation_0437.png",
+    "checks/renders_final/navigation_1045.png"
+  ]
+}

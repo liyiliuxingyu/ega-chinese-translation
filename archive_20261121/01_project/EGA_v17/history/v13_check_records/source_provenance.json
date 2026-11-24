@@ -1,0 +1,37 @@
+{
+  "baseline_zip": "代数几何基础_内容顺序合订第十二版_工程.zip",
+  "baseline_zip_sha256": "7f56eaabcf8439c94d84a19cb90bbda7e32e74cddc513b5e0c33206b05ab9802",
+  "baseline_single": "代数几何基础_按内容顺序合订本_第十二版.tex",
+  "baseline_single_sha256": "c358a79ef70b84b819dae37978ac7e83de4567e7750a36534915cc054f06cf0f",
+  "flattened_baseline_sha256": "c358a79ef70b84b819dae37978ac7e83de4567e7750a36534915cc054f06cf0f",
+  "flattened_equals_delivered_single": true,
+  "source_pdf_files": [
+    {
+      "filename": "EGAIV.1.pdf",
+      "sha256": "03f02142aef3df09f13f416ac3f78bd898213df894ed3fd86b25f91697256bda"
+    },
+    {
+      "filename": "EGAIV.4.pdf",
+      "sha256": "f79e211fcf94d19e200e3dbc96faeeb5a423342137a9ad0bbe4626c555c3f84f"
+    }
+  ],
+  "source_translated_pdf_pages": [
+    181,
+    192
+  ],
+  "source_translated_printed_pages": [
+    182,
+    193
+  ],
+  "source_read_pdf_pages": [
+    181,
+    197
+  ],
+  "author_errata_pages_visually_checked": [
+    344,
+    345,
+    347
+  ],
+  "next_entry": "0_IV.22.4.1",
+  "last_translated_entry": "0_IV.22.3.4"
+}

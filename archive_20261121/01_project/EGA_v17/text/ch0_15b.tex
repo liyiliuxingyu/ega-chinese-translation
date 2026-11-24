@@ -1,0 +1,370 @@
+% 本次续译：0_IV 15.1.5--15.2.5。原文错误保留并以译校注说明。
+\source{\texttt{EGAIV.1.pdf}，PDF第13--21页，原书第14--22页的相应部分}
+\egap{15.1.5}
+现在设 $M$ 带有滤过 $(M_k)$，且 $M_0=M$，并以
+\[
+ \gr_\bullet(M)=\bigoplus_{k\geq0}M_k/M_{k+1}
+\]
+表示相伴分次 $A$-模。沿用（15.1.1）的记号，对每个 $k\geq0$，置
+\begin{equation}
+ M'_k=M_k+\jj M_{k-1}+\cdots+\jj^{k-1}M_1+\jj^kM_0.
+ \tag{15.1.5.1}
+\end{equation}
+显然 $(M'_k)$ 是 $M$ 的一个滤过。若 $M_k=\mathfrak q^kM$，其中 $\mathfrak q$ 为 $A$ 的理想，则 $(M'_k)$ 正是 $(\jj+\mathfrak q)$-预进制滤过。以 $\gr'_\bullet(M)$ 表示它的相伴分次模。仍用
+$(\gr_\bullet(M)\otimes_A(A/\jj))[T_1,\ldots,T_n]$ 表示分次模的张量积
+\[
+ (\gr_\bullet(M)\otimes_A(A/\jj))\otimes_A A[T_1,\ldots,T_n]
+\]
+（II，2.1.2）。如下定义一个次数为0的分次满同态：
+\begin{equation}
+ \psi:(\gr_\bullet(M)\otimes_A(A/\jj))[T_1,\ldots,T_n]
+ \longrightarrow\gr'_\bullet(M).
+ \tag{15.1.5.2}
+\end{equation}
+若 $\alpha\in A/\jj$ 是 $a\in A$ 的类，$\xi\in M_k/M_{k+1}$ 是 $x\in M_k$ 的类，$P[T_1,\ldots,T_n]$ 为 $h$ 次齐次多项式，则令三元组 $(\alpha,\xi,P)$ 对应于 $P(f_1,\ldots,f_n)ax$ 模 $M'_{h+k+1}$ 的类。仍可立即验证，此元素只依赖于 $\xi,\alpha,P$，从而定义出（15.1.5.2）；由（15.1.5.1），它满射。取满足 $M_1=0$ 的滤过，就回到（15.1.1.1）的同态。
+
+\egas{15.1.6}{引理}
+沿用（15.1.5）的记号，设 $n=1$，记 $f=f_1$。若 $f$ 是 $\gr_\bullet(M)$-正则的，则（15.1.5.2）双射。
+\begin{proof}
+以 $Q_k,Q'_k$ 分别表示（15.1.5.2）两端的 $k$ 次部分。在 $Q_k$ 上取滤过
+\begin{equation}
+ (Q_k)_i=\sum_{j\leq k-i}
+ \bigl(\gr_{k-j}(M)\otimes_A(A/fA)\bigr)T^j.
+ \tag{15.1.6.1}
+\end{equation}
+于是 $(Q_k)_0=Q_k$、$(Q_k)_{k+1}=0$，且
+\[
+ \gr_i(Q_k)=\bigl(\gr_i(M)\otimes_A(A/fA)\bigr)T^{k-i}.
+\]
+给 $Q'_k$ 取滤过 $(Q'_k)_i=\psi((Q_k)_i)$。这些滤过有限，故只须证明由 $\psi_k$ 诱导的
+$\psi_{ki}:\gr_i(Q_k)\to\gr_i(Q'_k)$ 单射（Bourbaki，\textit{交换代数}，第III章，§3，第8小节，定理1的推论1）。\cmt{B2-T05}{本页此处印为§3；本页末及其他相关引用指向第III章§2第8小节。这里只记录内部引文不一致，不以此判定数学结论错误。}
+现在
+\[
+ \gr_i(Q_k)
+ =\bigl((M_i/M_{i+1})\otimes_A(A/fA)\bigr)T^{k-i}
+ =\bigl(M_i/(fM_i+M_{i+1})\bigr)T^{k-i},
+\]
+而 $(Q'_k)_{i+1}$ 是
+$M_k+fM_{k-1}+\cdots+f^{k-i-1}M_{i+1}$ 在 $M'_k/M'_{k+1}$ 中的像。因此归结为证明：对 $x\in M_i$，关系
+\begin{equation}
+ f^{k-i}x\in M_k+fM_{k-1}+\cdots+f^{k-i-1}M_{i+1}+M'_{k+1}
+ \tag{15.1.6.2}
+\end{equation}
+推出 $x\in fM_i+M_{i+1}$。
+
+（15.1.6.2）的右端包含于 $M_{i+1}+M'_{k+1}$；由（15.1.5.1），又有
+$M'_{k+1}\subset M_{i+1}+f^{k+1-i}M$。关于 $f$ 的假设说明，它对每个 $M/M_h$ 都是非零因子（Bourbaki，同处）。由
+$f^{k-i}x\in f^{k+1-i}M+M_{i+1}$，在 $M/M_{i+1}$ 中考虑，可得某个 $y\in M$ 使
+$x-fy\in M_{i+1}$。由于 $x\in M_i$，有 $fy\in M_i$；再在 $M/M_i$ 中考虑，得到 $y\in M_i$。所以 $x\in fM_i+M_{i+1}$，证毕。
+\end{proof}
+
+\egas{15.1.7}{定义}
+设 $(f_i)_{1\leq i\leq n}$ 是 $A$ 中的一个序列。若对每个 $1\leq i\leq n$，$f_i$ 都是
+\[
+ M\Big/\Bigl(\sum_{j=1}^{i-1}f_jM\Bigr)
+\]
+的正则元素，则称此序列\textbf{$M$-正则}。若（15.1.1.1）的典范同态 $\varphi$ 双射，则称它\textbf{$M$-拟正则}。当 $M=A$ 时，简称“正则序列”和“拟正则序列”。\cmt{B2-H03}{原文的定义没有要求最终商模非零；因此后面（15.1.12）说 $(1,0)$ 正则，并非错误。不能静默加入其他文献中常见的非零商条件。}
+
+\egas{15.1.8}{命题}
+采用（15.1.5）的记号。若 $(f_i)_{1\leq i\leq n}$ 是 $\gr_\bullet(M)$-正则序列，则（15.1.5.2）的典范同态双射。
+\begin{proof}
+当 $n=1$ 时，这就是（15.1.6）。对 $n$ 归纳。置 $\mathfrak k=\sum_{i=1}^{n-1}f_iA$，故 $\jj=\mathfrak k+f_nA$，并令
+\[
+ M''_k=M_k+\mathfrak kM_{k-1}+\cdots+\mathfrak k^{k-1}M_1+\mathfrak k^kM_0.
+\]
+于是
+\[
+ M'_k=M''_k+f_nM''_{k-1}+\cdots+f_n^{k-1}M''_1+f_n^kM''_0.
+\]
+以 $\gr''_\bullet(M)$ 表示 $(M''_k)$ 的相伴分次模。在典范同构意义下，可以写
+\[
+\begin{split}
+ &(\gr_\bullet(M)\otimes_A(A/\jj))[T_1,\ldots,T_n]\\
+ &\quad\simeq
+ (\gr_\bullet(M)\otimes_A(A/\mathfrak k))[T_1,\ldots,T_{n-1}]
+ \otimes_A(A/f_nA)\otimes_A A[T_n].
+\end{split}
+\]
+故（15.1.5.2）分解为
+\begin{equation}
+ (\gr''_\bullet(M)\otimes_A(A/f_nA))[T_n]
+ \longrightarrow\gr'_\bullet(M)
+ \tag{15.1.8.1}
+\end{equation}
+与下列同态的复合：
+\[
+\begin{split}
+ &(\gr_\bullet(M)\otimes_A(A/\mathfrak k))[T_1,\ldots,T_{n-1}]
+       \otimes_A(A/f_nA)\otimes_A A[T_n]\\
+ &\xrightarrow{\ \psi'\otimes1\ }
+ \gr''_\bullet(M)\otimes_A(A/f_nA)\otimes_A A[T_n].
+\end{split}
+\]
+这里 $\psi'$ 是把（15.1.5.2）中的 $n,\jj,\gr'_\bullet(M)$ 分别换为 $n-1,\mathfrak k,\gr''_\bullet(M)$ 所得的映射。由归纳假设，$\psi'$ 双射，所以只须证明（15.1.8.1）双射。由（15.1.6），只需证明 $f_n$ 是 $\gr''_\bullet(M)$-正则的。
+
+但 $\gr''_\bullet(M)$ 与 $(\gr_\bullet(M)\otimes_A(A/\mathfrak k))[T_1,\ldots,T_{n-1}]$ 等同。原文写道：由假设，乘以 $f_n$ 在 $\gr_\bullet(M)\otimes_A(A/\mathfrak k)$ 上“双射”；由于 $A[T_1,\ldots,T_{n-1}]$ 是自由 $A$-模，乘以 $f_n$ 在 $\gr''_\bullet(M)$ 上也“双射”。\cmt{B2-T01}{这两处“双射”均应为“单射”。正则性只给单射，而单射已足以应用（15.1.6）。例如 $A=k[x,y]$，序列 $(x,y)$，则乘 $y$ 在 $A/(x)=k[y]$ 上单射而不满射。}
+\end{proof}
+
+\egas{15.1.9}{命题}
+设 $M$ 为 $A$-模，$(f_i)_{1\leq i\leq n}$ 为 $A$ 中的序列。若它 $M$-正则，则它 $M$-拟正则。若还假设
+\[
+ M,\quad M/f_1M,\quad\ldots,\quad
+ M\Big/\Bigl(\sum_{j=1}^{n-1}f_jM\Bigr)
+\]
+对于 $\jj$-预进制拓扑都分离，其中 $\jj=\sum_{i=1}^n f_iA$，则逆命题也成立。
+\begin{proof}[原文证明]
+在（15.1.8）中取 $M_1=0$，则（15.1.5.2）回到（15.1.1.1），从而得到第一断言。反过来，假定 $\varphi$ 双射。置 $\mathfrak k=\sum_{i=1}^{n-1}f_iA$，以 $\gr'_\bullet(M)$ 表示 $\mathfrak k$-预进制滤过的相伴分次模。$\varphi$ 分解为
+\begin{equation}
+ (\gr'_\bullet(M)\otimes_A(A/f_nA))[T_n]
+ \longrightarrow\gr_\bullet(M)
+ \tag{15.1.9.1}
+\end{equation}
+以及 $\varphi'\otimes1$ 的复合，其中
+\[
+ \varphi':(\gr'_0(M))[T_1,\ldots,T_{n-1}]
+       \longrightarrow\gr'_\bullet(M)
+\]
+是典范同态。原文接着说：由于这两个同态满射，若 $\varphi$ 双射，它们就都双射；“所以 $\varphi'$ 必然单射，从而双射，因为它满射”。\cmt{B2-G01}{从 $\varphi'\otimes1$ 单射到 $\varphi'$ 单射，不能只靠非忠实的张量化消去。报告保留这一证明缺步，并另给利用分离滤过和首项的完整补证；不据此否定命题本身。}
+
+于是可对 $n$ 归纳，$n=1$ 的情形由（15.1.2）得到。在各模
+\[
+ M,\quad M/f_1M,\quad\ldots,\quad M/\Bigl(\sum_{i=1}^{n-2}f_iM\Bigr)
+\]
+上，$\mathfrak k$-预进制拓扑比 $\jj$-预进制拓扑更细，所以也分离。故 $(f_i)_{1\leq i\leq n-1}$ 是 $M$-正则序列。
+
+另一方面，证明假设推出：若 $y\in M/\mathfrak kM$ 满足
+$f_n^k y\in f_n^{k+1}(M/\mathfrak kM)$，则 $y\in f_n(M/\mathfrak kM)$。取 $y$ 的代表元 $x$，先证明 $f_n^k x\in\jj^{k+1}M$，再由（15.1.9.1）的单射性得到所需结论。事实上，假设给出
+\[
+ f_n^k x\in f_n^{k+1}M+\mathfrak kM\subset\jj M;
+\]
+由于 $\varphi$ 单射，得到 $f_n^{k-1}x\in\jj M$。如此递推，得到 $x\in\jj M$，最终得到 $f_n^kx\in\jj^{k+1}M$。
+
+像（15.1.2）一样结束论证：在 $M/\mathfrak kM$ 上，$\jj$-预进制滤过与 $(f_nA)$-预进制滤过相同，所以按假设分离；因此乘以 $f_n$ 的同态单射。这就表明整个序列 $(f_i)_{1\leq i\leq n}$ 是 $M$-正则的。
+\end{proof}
+
+\egas{15.1.10}{推论}
+采用（15.1.9）的记号。假设对每个有限型 $A$-模 $N$，$M\otimes_A N$ 对于 $\jj$-预进制拓扑都分离，则 $(f_i)$ 是 $M$-正则序列，当且仅当它是 $M$-拟正则序列。
+
+注意，这个假设还推出：若 $(f_i)_{1\leq i\leq n}$ 是 $M$-正则序列，则对区间 $[1,n]$ 的任意排列 $\sigma$，$(f_{\sigma(i)})$ 也 $M$-正则。
+
+\egas{15.1.11}{推论}
+设 $A$ 是诺特环，$M$ 是有限型 $A$-模，$(f_i)_{1\leq i\leq n}$ 是由 $A$ 的根基中的元素组成的有限序列。则它 $M$-正则，当且仅当它 $M$-拟正则。
+\begin{proof}
+这是（15.1.10）的特例，因为此时每个有限型 $A$-模对于 $\jj$-预进制拓扑都分离（$0_{\mathrm I}$，7.3.5）。
+\end{proof}
+
+\egas{15.1.12}{备注}
+（i）当 $A$ 是诺特局部环、$M$ 为有限型 $A$-模且所有 $f_i$ 属于 $A$ 的极大理想时，J.-P. Serre 曾以“$M$-序列”之名引入 $M$-正则序列的概念［17］。
+
+（ii）即使 $A$ 诺特且 $M=A$，两个元素组成的拟正则序列 $(f,g)$ 也未必正则。例如，$(0,1)$ 是拟正则的，因为 $\jj=0A+1A=A$，故 $\gr_\bullet(A)=0$；若 $A\ne0$，它不正则。不过 $(1,0)$ 正则，因为 $1$ 在 $A$ 中不是零因子，而 $A/A=0$，故 $0$ 在这个零模中不是零因子（参见15.1.1）。
+
+（iii）在（15.1.6）中，一般不能把“$f$ 是 $\gr_\bullet(M)$-正则的”换成“$f$ 是 $\gr_\bullet(M)$-拟正则的”。为此，回到（15.1.4）的例子：$A$ 为主理想整环，其分式域为 $K\ne A$。取 $M=K$，并令滤过为
+\[
+ M_0=M=K,\qquad M_1=A,\qquad M_k=0\quad(k\geq2).
+\]
+于是 $\gr_0(M)=K/A$、$\gr_1(M)=A$、$\gr_k(M)=0$（$k\geq2$）。原文取 $0\ne f\in A$，说已知 $f$ 并非 $\gr_\bullet(M)$-正则；\cmt{B2-T02}{与前批E02相同，这里须取非零非单位 $f$。若 $f$ 为单位，它对任何模都正则，而且后文（15.1.5.2）的源也为零，不能构成所说反例。这是同一遗漏的再次出现。}
+但因为
+\[
+ f^k\gr_\bullet(M)/f^{k+1}\gr_\bullet(M)=f^kA/f^{k+1}A,
+\]
+立即可见（15.1.2.1）（将其中的 $M$ 换为 $\gr_\bullet(M)$）单射，所以 $f$ 是拟正则的。另一方面，采用（15.1.6）的记号，有 $M'_k=K$（$k\geq0$），故 $\gr'_\bullet(M)=0$，而（15.1.5.2）左端不为零。
+
+\egas{15.1.13}{命题}
+设 $A$ 为环，$M,N$ 为两个 $A$-模，$(f_i)_{1\leq i\leq n}$ 为 $A$ 中的序列。若 $(f_i)$ 是 $M$-正则序列且 $N$ 平坦，则它是 $M\otimes_A N$-正则序列。如果 $N$ 忠实平坦，则逆命题也成立。
+\begin{proof}
+无需对 $N$ 作假设，就有
+\[
+ (M\otimes_A N)\Big/\sum_{j=1}^{i-1}f_j(M\otimes_A N)
+ \simeq\Bigl(M/\sum_{j=1}^{i-1}f_jM\Bigr)\otimes_A N.
+\]
+对 $M/(\sum_{j=1}^{i-1}f_jM)$ 上乘以 $f_i$ 的同态应用（$0_{\mathrm I}$，6.1.1、6.4.1），即得结论。
+\end{proof}
+
+\egas{15.1.14}{推论}
+设 $A$ 为环，$M$ 为 $A$-模，$(f_i)$ 为 $A$ 中的有限序列，$\rho:A\to B$ 为环同态。置
+$M'=M\otimes_A B$、$f'_i=\rho(f_i)$。若 $B$ 是平坦 $A$-模且 $(f_i)$ 是 $M$-正则序列，则 $(f'_i)$ 是 $M'$-正则序列；若 $B$ 忠实平坦，逆命题也成立。
+\begin{proof}
+$M'/(\sum_{j=1}^{i-1}f'_jM')$ 与 $(M/(\sum_{j=1}^{i-1}f_jM))\otimes_A B$ 等同，前一 $B$-模上乘以 $f'_i$ 的同态与后一 $A$-模上乘以 $f_i$ 的同态等同。所以结论由（15.1.13）得出。
+\end{proof}
+
+\egas{15.1.15}{命题〔按底本保留〕}
+设 $A$ 为环，$B$ 为交换 $A$-代数，$(f_i)_{1\leq i\leq n}$ 为 $B$ 中的有限序列，$M$ 为 $B$-模。假设序列 $M$-正则，且各 $A$-模
+\[
+ M\Big/\Bigl(\sum_{j=1}^{i-1}f_jM\Bigr)\qquad(1\leq i\leq n)
+\]
+平坦。那么对任意环同态 $\rho:A\to A'$，置
+\[
+ B'=B\otimes_A A',\quad M'=M\otimes_A A',\quad
+ f'_i=f_i\otimes1\quad(1\leq i\leq n),
+\]
+序列 $(f'_i)$ 是 $M'$-正则的，且各 $A'$-模
+$M'/(\sum_{j=1}^{i-1}f'_jM')$（$1\leq i\leq n$）平坦。\cmt{B2-E01}{底本两处求和上限确为 $i-1$，范围确为 $1\leq i\leq n$，遗漏了最终商的平坦性。取 $A=B=M=k[t]$、$n=1$、$f_1=t$、$A'=k$，满足所列假设，但 $f'_1=0$ 不是 $M'=k$ 的正则元素。报告给出保留全部前缀商（包括最终商）平坦的修订版本及证明。}
+\begin{proof}[原文证明]
+考虑按假设正合的列
+\[
+ 0\longrightarrow M\xrightarrow{f_1}M\longrightarrow M/f_1M\longrightarrow0,
+\]
+其中中间箭头是乘以 $f_1$ 的同态。原文使用“$M/f_1M$ 是平坦 $A$-模”的假设，推出
+\[
+ 0\longrightarrow M\otimes_A A'\xrightarrow{f_1\otimes1}
+ M\otimes_A A'\longrightarrow(M/f_1M)\otimes_A A'\longrightarrow0
+\]
+正合（$0_{\mathrm I}$，6.1.2），从而乘以 $f'_1$ 在 $M'$ 上单射。
+
+再令 $M_i=M/(\sum_{j=1}^i f_jM)$、$M'_i=M'/(\sum_{j=1}^i f'_jM')$（$1\leq i\leq n-1$）。有
+\[
+ M'_i=M_i\otimes_A A',\qquad
+ M_i/f_{i+1}M_i=M_{i+1},\qquad
+ M'_i/f'_{i+1}M'_i=M'_{i+1}.
+\]
+把以上论证中的 $M,f_1$ 换为 $M_i,f_{i+1}$，由 $M_i/f_{i+1}M_i$ 的平坦性，得到乘以 $f'_{i+1}$ 在 $M'_i$ 上单射。最后关于平坦性的断言由（$0_{\mathrm I}$，6.2.1）得出。
+\end{proof}
+
+\egas{15.1.16}{命题}
+设 $A,B$ 是诺特局部环，$k$ 为 $A$ 的剩余域，$\varphi:A\to B$ 为局部同态，$M$ 为有限型 $B$-模。设 $(f_i)_{1\leq i\leq n}$ 是 $B$ 的极大理想中的元素序列，$g_i$ 为 $f_i$ 在 $B\otimes_A k$ 中的像。以下条件等价：
+\begin{enumerate}[label=\alph*)]
+\item $(f_i)$ 是 $M$-正则序列，且 $M_i=M/(\sum_{j=1}^i f_jM)$ 对 $1\leq i\leq n$ 均为平坦 $A$-模；
+\item $(f_i)$ 是 $M$-正则序列，且 $M_n$ 是平坦 $A$-模；
+\item $M$ 是平坦 $A$-模，且 $(g_i)$ 是 $M\otimes_A k$-正则序列；
+\item $M$ 是平坦 $A$-模，且对任意环同态 $\rho:A\to A'$，若置 $B'=B\otimes_A A'$、$M'=M\otimes_A A'$、$f'_i=f_i\otimes1$，则 $(f'_i)$ 是 $M'$-正则序列。
+\end{enumerate}
+\begin{proof}
+显然a）推出b）。为证明b）推出d），由（15.1.15），只须证明 $M_i$ 对 $0\leq i\leq n-1$ 也平坦，其中 $M_0=M$。\cmt{B2-E01}{这里按报告给出的（15.1.15）修订版使用：以下递降论证连同b）确实给出所有 $M_0,\ldots,M_n$ 的平坦性。因此前一条的印误不构成本命题的反例。}
+由 $M_{i+1}=M_i/f_{i+1}M_i$，作递降归纳，归结为：若 $h$ 属于 $B$ 的极大理想，乘以 $h$ 在 $M$ 上单射，且 $M/hM$ 对 $A$ 平坦，则 $M$ 对 $A$ 平坦。这正是（$0_{\mathrm{III}}$，10.2.7）。
+
+c）是d）取 $A'=k$ 的特例。最后证明c）推出a）。$M$ 是平坦 $A$-模及有限型 $B$-模，由c）及（$0_{\mathrm{III}}$，10.2.4），乘以 $f_1$ 的同态单射，且余核 $M_1=M/f_1M$ 对 $A$ 平坦。对 $i$ 归纳，假定 $M_i$ 对 $A$ 平坦；按假设，乘以 $g_{i+1}$ 在 $M_i\otimes_A k$ 上单射，再用同一结果，乘以 $f_{i+1}$ 在 $M_i$ 上单射，且余核 $M_{i+1}$ 对 $A$ 平坦，证明完成。注意c）推出a）的证明并未使用 $f_i$ 属于 $B$ 的极大理想这一条件。
+\end{proof}
+
+\egas{15.1.17}{推论}
+$A,B$ 满足（15.1.16）的假设。设 $M$ 是对 $A$ 平坦的有限型 $B$-模，$R\subset M$ 为 $B$-子模，且 $N=M/R$ 对 $A$ 平坦。设 $(f_i)_{1\leq i\leq n}$ 是 $B$ 的极大理想中的元素，满足：
+\begin{enumerate}[label=(\roman*)]
+\item $f_iM\subset R$；
+\item 若 $g_i$ 为 $f_i$ 在 $B\otimes_A k$ 中的像，则 $(g_i)$ 是 $M\otimes_A k$-正则序列；
+\item 子模 $g_i(M\otimes_A k)$ 的和，等于 $R\otimes_A k$ 在 $M\otimes_A k$ 中的典范像，即典范同态 $M\otimes_A k\to N\otimes_A k$ 的核。
+\end{enumerate}
+那么 $(f_i)$ 是 $M$-正则序列，且 $R=\sum_{i=1}^n f_iM$。
+\begin{proof}
+由于 $N$ 对 $A$ 平坦，由 $0\to R\to M\to N\to0$ 得到正合列
+\[
+ 0\longrightarrow R\otimes_A k\longrightarrow M\otimes_A k
+ \longrightarrow N\otimes_A k\longrightarrow0
+\]
+（$0_{\mathrm I}$，6.1.2），故 $R\otimes_A k=\sum_i g_i(M\otimes_A k)$。$M$ 有限型且 $B$ 诺特，所以 $R$ 也是有限型 $B$-模。原文由 Nakayama 引理以及 $f_i$ 属于 $B$ 的极大理想，推出 $R=\sum_i f_iM$。\cmt{B2-H04}{更精确地，对有限型 $B$-模 $R/(\sum_i f_iM)$ 应用Nakayama，所用理想为 $\mm_A B\subset\mm_B$，包含关系来自局部同态。正则性则由（15.1.16）的c）推出a）。这补明所用对象，不是否定推论。}
+\end{proof}
+
+\egas{15.1.18}{引理}
+设 $M$ 为 $A$-模，带有分离且穷尽的滤过 $(M_k)_{k\geq0}$；设 $f\in A$ 是 $\gr_\bullet(M)$-正则元素。则：
+\begin{enumerate}[label=(\roman*)]
+\item $f$ 是 $M$-正则的；
+\item 对每个 $k$，有 $M_k\cap fM=fM_k$。因此 $M_k$ 在 $M'=M/fM$ 中的典范像 $M'_k$ 典范同构于 $M_k/fM_k$；
+\item 列
+\[
+ 0\longrightarrow M_{k+1}/fM_{k+1}\longrightarrow M_k/fM_k
+ \longrightarrow\gr_k(M)/f\gr_k(M)\longrightarrow0
+\]
+正合。给 $M'$ 取商滤过 $(M'_k)$ 后，$\gr_\bullet(M')$ 典范同构于 $\gr_\bullet(M)/f\gr_\bullet(M)$。
+\end{enumerate}
+\begin{proof}
+（i）由假设及Bourbaki，\textit{交换代数}第III章§2第8小节定理1的推论1得出。由于 $\gr_\bullet(M/M_k)$ 是 $\gr_\bullet(M)$ 的直和因子，$f$ 对每个 $\gr_\bullet(M/M_k)$ 都正则，由（i），它对 $M/M_k$ 正则，故得到（ii）。为证（iii），只须验证 $M_{k+1}/fM_{k+1}\to M_k/fM_k$ 单射：若 $x\in M_{k+1}$ 且 $x\in fM_k$，由（ii）有 $x\in fM_{k+1}$，引理得证。
+\end{proof}
+
+\egas{15.1.19}{命题}
+设 $M$ 为 $A$-模，带有满足 $M_0=M$ 的滤过 $(M_k)_{k\geq0}$，并设 $(f_i)_{1\leq i\leq n}$ 为 $\gr_\bullet(M)$-正则序列。另假设对 $0\leq i\leq n-1$，$(M_k)$ 在
+$M/(\sum_{j\leq i}f_jM)$ 上诱导的商滤过分离。那么 $(f_i)$ 是 $M$-正则序列；若置 $M'=M/(\sum_{i\leq n}f_iM)$ 并赋予商滤过，则
+\[
+ \gr_\bullet(M')\simeq
+ \gr_\bullet(M)\Big/\Bigl(\sum_{i\leq n}f_i\gr_\bullet(M)\Bigr)
+\]
+典范同构。
+\begin{proof}
+$n=1$ 时由（15.1.18）得到。对 $n$ 归纳，令
+$N=M/(\sum_{i\leq n-1}f_iM)$，$(N_k)$ 为商滤过；它按假设分离，且
+\[
+ \gr_\bullet(N)\simeq
+ \gr_\bullet(M)\Big/\Bigl(\sum_{i\leq n-1}f_i\gr_\bullet(M)\Bigr).
+\]
+按假设，$f_n$ 对 $\gr_\bullet(N)$ 正则。将（15.1.18）用于 $N$，得到 $f_n$ 对 $N$ 正则，且 $\gr_\bullet(M')\simeq\gr_\bullet(N)/f_n\gr_\bullet(N)$，从而证明命题。
+\end{proof}
+特别地，以下任一条件下可应用（15.1.19）：一、滤过 $(M_k)$ 有限且分离，因为这时 $k$ 足够大就有 $M_k=0$；二、$A$ 诺特，$\jj$ 是包含于 $A$ 根基的理想，$M$ 有限型，而 $(M_k)$ 是 $\jj$-预进制滤过（$0_{\mathrm I}$，7.3.5）。
+
+\egas{15.1.20}{推论}
+设 $A$ 为环，$M$ 为 $A$-模，$(f_i)_{1\leq i\leq n}$ 为 $M$-正则序列。则对任意整数 $\nu_i\geq1$，$(f_i^{\nu_i})$ 也是 $M$-正则序列，且
+$M/(\sum_{i\leq n}f_i^{\nu_i}M)$ 有一个子模列，其逐次商都同构于 $M/(\sum_{i\leq n}f_iM)$。\cmt{B2-H05}{法文此处为 \textit{suite de composition}，在本句中是有限子模滤过，不要求逐次商为单模；不可按“单模商组成的合成列”的狭义定义误读。}
+\begin{proof}
+对 $n$ 归纳。$n=1$ 时，由乘以 $f_1$ 单射，有 $f_1^kM/f_1^{k+1}M\simeq M/f_1M$，断言立即成立。令
+\[
+ N=M\Big/\Bigl(\sum_{i\leq n-1}f_i^{\nu_i}M\Bigr).
+\]
+由归纳假设，$N$ 有一个有限滤过 $(N_k)$，各非零逐次商 $\gr_k(N)$ 同构于 $M/(\sum_{i\leq n-1}f_iM)$。按假设 $f_n$ 对 $\gr_\bullet(N)$ 正则，故由（15.1.19）它对 $N$ 正则。再用已证的单元素情形，$f_n^{\nu_n}$ 对 $N$ 正则，且 $N/f_n^{\nu_n}N$ 有逐次商同构于 $N/f_nN$ 的子模列。对于由 $(N_k)$ 诱导的 $N/f_nN$ 的滤过，由（15.1.19），各分次项为
+\[
+ \gr_k(N/f_nN)\simeq\gr_k(N)/f_n\gr_k(N)
+ \simeq M\Big/\Bigl(\sum_{i\leq n}f_iM\Bigr),
+\]
+推论得证。
+\end{proof}
+
+\egas{15.1.21}{命题}
+设 $A,B$ 为诺特局部环，$\varphi:A\to B$ 为局部同态，$M$ 为有限型 $B$-模，$(f_i)_{1\leq i\leq n}$ 为 $A$ 的极大理想中的一个 $A$-正则序列。以下条件等价：
+\begin{enumerate}[label=\alph*)]
+\item $M$ 是平坦 $A$-模；
+\item 若 $\jj=\sum_{i\leq n}f_iA$，则 $M/\jj M$ 是平坦 $A/\jj$-模，且 $(f_i)$ 为 $M$-正则序列。
+\end{enumerate}
+\begin{proof}
+a）推出b），由（15.1.13）及（$0_{\mathrm{III}}$，10.2.2）得到。反过来，$M$-正则性推出 $M$-拟正则性（15.1.9），所以（15.1.1.1）双射。序列还假定为 $A$-正则，因此它也 $A$-拟正则，且相应典范同态
+$(A/\jj)[T_1,\ldots,T_n]\to\gr_\bullet(A)$ 双射。这表明典范同态（$0_{\mathrm{III}}$，10.1.1.2）
+\[
+ \gr_0(M)\otimes_A\gr_\bullet(A)\longrightarrow\gr_\bullet(M)
+\]
+双射。因 $f_i$ 属于 $A$ 的极大理想且 $\varphi$ 局部，由（$0_{\mathrm{III}}$，10.2.2）得到结论。
+\end{proof}
+
+\subsection{\texorpdfstring{$\F$}{F}-正则序列}
+\egap{15.2.1}
+设 $X$ 为赋环空间，$\F$ 为 $\OO_X$-模，$f_i$（$1\leq i\leq n$）为 $\OO_X$ 在 $X$ 上的截面，$\J$ 为它们生成的理想层，即它们所典范定义的同态 $\OO_X^n\to\OO_X$ 的像（$0_{\mathrm I}$，5.1.1）。子模 $\J^k\F$ 给出滤过，仍令
+$\gr_k(\F)=\J^k\F/\J^{k+1}\F$。设 $S_k$ 为 $\mathbf Z[T_1,\ldots,T_n]$ 中的 $k$ 次齐次多项式群，把它看作 $X$ 上的常层。如（15.1.1）一样，定义典范同态
+\begin{equation}
+ \varphi_k:\gr_0(\F)\otimes_{\mathbf Z}S_k\longrightarrow\gr_k(\F).
+ \tag{15.2.1.1}
+\end{equation}
+具体地，对每个开集 $U$（或拓扑的一组基中的开集），考虑由截面 $f_i|_U$ 定义的（15.1.1.1）同态
+\[
+ \varphi_{k,U}:\gr_0(\Gamma(U,\F))\otimes_{\mathbf Z}S_k
+       \longrightarrow\gr_k(\Gamma(U,\F)),
+\]
+其中 $\Gamma(U,\F)$ 按子模 $(\Gamma(U,\J))^k\Gamma(U,\F)$ 滤过。
+每个 $\gr_k(\F)$ 是预层 $U\mapsto\gr_k(\Gamma(U,\F))$ 的相伴层，因而各 $\varphi_{k,U}$ 给出（15.2.1.1）。由模的滤过归纳极限的正合性及其与张量积的交换性，对每个 $x\in X$，该同态在 $x$ 处的茎同态与由 $((f_i)_x)_{1\leq i\leq n}$ 定义的同态
+\begin{equation}
+ \gr_0(\F_x)\otimes_{\mathbf Z}S_k\longrightarrow\gr_k(\F_x)
+ \tag{15.2.1.2}
+\end{equation}
+等同。
+
+\egap{15.2.2}
+采用（15.2.1）的记号，以 $f_i\F$ 表示由 $f_i$ 定义的 $\F$ 的自同态的像。若由 $f_i$ 定义的
+$\F/(\sum_{j=1}^{i-1}f_j\F)$ 的自同态对所有 $1\leq i\leq n$ 都单射，则称 $(f_i)$ 为\textbf{$\F$-正则序列}。若（15.2.1.1）的各同态单射，则称它为\textbf{$\F$-拟正则序列}。
+
+由定义及（15.2.1），序列 $\F$-正则（分别地，$\F$-拟正则），当且仅当对每个 $x\in X$，其茎序列 $((f_i)_x)$ 是 $\F_x$-正则（分别地，$\F_x$-拟正则）的。于是每个正则序列均拟正则（15.1.9）；若 $\F$ 有限型、每个 $\OO_{X,x}$ 都诺特，且所有 $(f_i)_x$ 都属于 $\OO_{X,x}$ 的根基，则逆命题也成立（15.1.11）。
+
+若 $X=\Spec(A)$ 仿射且 $\F=\widetilde M$，则由（I，1.3），$(f_i)$ 为 $\F$-正则（分别地，$\F$-拟正则）序列，等价于它为 $M$-正则（分别地，$M$-拟正则）序列。当 $\F=\OO_X$ 时，省略定义中的 $\F$。
+
+\egas{15.2.3}{备注}
+当 $X=\Spec(A)$、$\jj=\sum_{i=1}^n f_iA$ 时，在不与 $V(\jj)$ 相交的每个开集 $U$ 上，对于任意 $A$-模 $M$，该序列都拟正则。因为对每个 $x\in U$，有 $\J_x=\OO_{X,x}$，所以（15.2.1.2）两端都为零。因此，原文说，模层的正则序列概念只在 $V(\jj)$ 的点的邻域中才有意义。\cmt{B2-H06}{前一句直接证明的是“拟正则”在此开集上自动成立。若把末句读成“正则性在该开集上也自动成立”，则不对：原文（15.1.12）的 $(0,1)$ 已是反例。末句应按研究兴趣的说明阅读。}
+
+\egas{15.2.4}{命题}
+设 $X$ 为赋环空间，$\F$ 为凝聚 $\OO_X$-模，$x\in X$，$f_i\in\Gamma(X,\OO_X)$（$1\leq i\leq n$）。若 $((f_i)_x)$ 为 $\F_x$-正则序列，则存在 $x$ 的开邻域 $U$，使 $(f_i|_U)$ 为 $(\F|_U)$-正则序列。
+\begin{proof}
+对每个 $i$，$\F/(\sum_{j=1}^{i-1}f_j\F)$ 凝聚（$0_{\mathrm I}$，5.3.4），故由 $f_i$ 定义的自同态的核也凝聚。该核在 $x$ 处的茎为零，因而在 $x$ 的某个邻域上的限制为零（$0_{\mathrm I}$，5.2.2），结论得证。
+\end{proof}
+
+\egas{15.2.5}{命题}
+设 $u=(\psi,\theta):X\to Y$ 为赋环空间的平坦态射（$0_{\mathrm I}$，6.7.1），$\F$ 为 $\OO_Y$-模，$\G=u^*\F$；设 $f_i\in\Gamma(Y,\OO_Y)$、$g_i=\theta(f_i)\in\Gamma(Y,\psi_*\OO_X)=\Gamma(X,\OO_X)$。如果 $(f_i)$ 是 $\F$-正则序列，则 $(g_i)$ 是 $\G$-正则序列；若 $u$ 忠实平坦，则逆命题也成立（$0_{\mathrm I}$，6.7.8）。
+\begin{proof}
+令 $x\in X$、$y=u(x)=\psi(x)$，则
+\[
+ \G_x=\F_{u(x)}\otimes_{\OO_{Y,u(x)}}\OO_{X,x},\qquad
+ (g_i)_x=\theta_x^\sharp((f_i)_{u(x)}).
+\]
+按假设，$\theta_x^\sharp$ 使 $\OO_{X,x}$ 成为平坦 $\OO_{Y,u(x)}$-模，且取茎函子正合；第一断言由（15.1.14）的相应结论得出。第二断言同理，因为 $u$ 忠实平坦表示 $\psi$ 满射，且各 $\theta_x^\sharp$ 使 $\OO_{X,x}$ 成为忠实平坦的 $\OO_{Y,u(x)}$-模。
+\end{proof}
+
+

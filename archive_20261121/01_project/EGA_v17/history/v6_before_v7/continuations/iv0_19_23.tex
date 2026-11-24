@@ -1,0 +1,243 @@
+% Source: EGAIV.1.pdf, PDF pp.77--85; printed pp.78--86.
+\Needspace{7\baselineskip}
+\subsection{形式投射模}
+\source{印刷第78--79页；上传PDF第77--78页}
+\egas{19.2.1}{定义}
+设 $A$ 为拓扑环。称拓扑 $A$-模 $M$ 为\emph{形式投射模}，若它满足下列条件：对 $A$ 的每个开理想 $\mathfrak j$、每对离散 $(A/\mathfrak j)$-模 $P,Q$、每个满 $A$-同态 $u:P\to Q$ 及每个连续 $A$-同态 $v:M\to Q$，存在连续 $A$-同态 $w:M\to P$，使 $v=u\circ w$。
+
+\egap{19.2.2}
+在验证（19.2.1）时，将 $Q$ 换成 $v(M)$、将 $P$ 换成 $u^{-1}(v(M))$，即可限于 $v$ 本身满射的情形。于是 $Q\simeq M/V$，其中 $V$ 为满足 $\mathfrak jM\subset V$ 的开子模。条件因而等价于：对每个离散 $(A/\mathfrak j)$-模 $P$ 及每个满 $A$-同态 $u:P\to M/V$，存在 $M$ 的开子模 $V'\subset V$ 及 $w:M/V'\to P$，使典范同态分解为
+\[
+ M/V'\xrightarrow{w}P\xrightarrow{u}M/V.
+\]
+注意，只须让 $\mathfrak j$ 遍历 $A$ 的一个由理想组成的零点基本邻域系来验证此条件。
+
+\egap{19.2.3}
+假设 $A$ 有开理想基本系 $(\mathfrak j_\lambda)$，$M$ 有同指标集的开子模基本系 $(V_\lambda)$，并且每个 $M/V_\lambda$ 为投射 $(A/\mathfrak j_\lambda)$-模。那么 $M$ 形式投射。事实上，沿用（19.2.2）的记号，取 $\lambda$ 使 $\mathfrak j_\lambda\subset\mathfrak j$ 且 $V_\lambda\subset V$。$P$ 也是 $(A/\mathfrak j_\lambda)$-模，故典范 $(A/\mathfrak j_\lambda)$-同态 $M/V_\lambda\to M/V$ 因 $M/V_\lambda$ 投射而分解为 $M/V_\lambda\to P\to M/V$。
+当本段的这一更强条件满足时，称 $M$ \emph{严格形式投射}。
+
+\egas{19.2.4}{命题}
+设 $A$ 为拓扑环，拓扑 $A$-模 $M$ 的拓扑由 $A$ 诱导。那么 $M$ 形式投射，当且仅当它严格形式投射。
+
+充分性已证。反之，设 $M$ 形式投射，$(\mathfrak j_\lambda)$ 为开理想基本系。对每个 $\lambda$，取自由 $(A/\mathfrak j_\lambda)$-模 $P$ 及满同态 $u:P\to M/\mathfrak j_\lambda M$。存在 $\mathfrak j_\mu\subset\mathfrak j_\lambda$ 使典范同态分解为
+\[
+ M/\mathfrak j_\mu M\xrightarrow{w}P\xrightarrow{u}M/\mathfrak j_\lambda M.
+\]
+因 $w(\mathfrak j_\lambda(M/\mathfrak j_\mu M))\subset\mathfrak j_\lambda P=0$，$w$ 分解为
+$M/\mathfrak j_\mu M\to M/\mathfrak j_\lambda M\xrightarrow{v}P$。
+于是 $u\circ v$ 为恒等映射，证明了 $M/\mathfrak j_\lambda M$ 为投射 $(A/\mathfrak j_\lambda)$-模。
+
+\egas{19.2.5}{命题}
+设 $A$ 为拓扑环，$M$ 为拓扑 $A$-模。
+
+（i）$M$ 形式投射（或严格形式投射），当且仅当拓扑 $\widehat A$-模 $\widehat M$ 具有同一性质。
+
+（ii）设 $A'$ 为拓扑 $A$-代数。若 $M$ 形式投射（或严格形式投射），则配备张量积拓扑的 $M\otimes_AA'$ 是形式投射（或严格形式投射）的拓扑 $A'$-模。
+
+（i）只须注意：当 $\mathfrak j$（或 $V$）遍历 $A$ 的开理想（或 $M$ 的开子模）时，它的分离完备化 $\widehat{\mathfrak j}$（或 $\widehat V$）遍历 $\widehat A$ 的开理想（或 $\widehat M$ 的开子模），且有典范同构
+\[
+ \widehat A/\widehat{\mathfrak j}\simeq A/\mathfrak j,
+ \qquad \widehat M/\widehat V\simeq M/V.
+\]
+形式投射性和严格形式投射性只涉及这些商，因此得到（i）。
+
+（ii）先设 $M$ 形式投射，令 $M'=M\otimes_AA'$。设 $\mathfrak j'$ 为 $A'$ 的开理想，$P',Q'$ 为离散 $(A'/\mathfrak j')$-模，$u':P'\to Q'$ 为满 $A'$-同态，$v':M'\to Q'$ 为连续 $A'$-同态。存在 $A$ 的开理想 $\mathfrak j$ 使 $\mathfrak jA'\subset\mathfrak j'$，因此 $P',Q'$ 也是离散 $(A/\mathfrak j)$-模。考虑连续复合同态 $v:M\xrightarrow{j}M'\xrightarrow{v'}Q'$；由假设，有连续 $A$-同态 $w:M\to P'$ 使 $v=u'\circ w$。因 $P'$ 是拓扑 $A'$-模，$w$ 分解为 $M\xrightarrow{j}M'\xrightarrow{w'}P'$，其中 $w'$ 为连续 $A'$-同态。由 $v'\circ j=(u'\circ w')\circ j$ 得 $v'=u'\circ w'$。
+
+再设 $M$ 严格形式投射，取 $A$ 的开理想基本系 $(\mathfrak j_\lambda)$ 和 $M$ 的开子模基本系 $(V_\lambda)$，使 $M/V_\lambda$ 为投射 $(A/\mathfrak j_\lambda)$-模；取 $A'$ 的开理想基本系 $(\mathfrak j'_{\mu})$。$M'$ 的零点基本邻域可取为
+\[
+ W_{\lambda\mu}=
+ \Im(M\otimes_A\mathfrak j'_\mu)+\Im(V_\lambda\otimes_AA'),
+\]
+其中 $\lambda,\mu$ 满足 $\mathfrak j_\lambda A'\subset\mathfrak j'_\mu$。\cmt{F6-T05}{初版此段的 $A'$、$\mathfrak j'_\mu$ 漏印了若干撇号，并直接写了不同环中理想的包含。本处明确写出 $\mathfrak j_\lambda A'\subset\mathfrak j'_\mu$，使标量扩张与商模的基环一致。}由于
+\[
+ M'/W_{\lambda\mu}\simeq(M/V_\lambda)\otimes_A(A'/\mathfrak j'_\mu),
+\]
+且 $M/V_\lambda$ 为投射 $(A/\mathfrak j_\lambda)$-模，$M'/W_{\lambda\mu}$ 为投射 $(A'/\mathfrak j'_\mu)$-模。
+
+\subsection{形式光滑代数}
+\source{印刷第79--86页；上传PDF第78--85页}
+\egas{19.3.1}{定义}
+设 $A$ 为拓扑环，$B$ 为拓扑 $A$-代数。称 $B$ 为\emph{形式光滑的 $A$-代数}，若对每个离散拓扑 $A$-代数 $C$ 及 $C$ 的每个幂零理想 $\mathfrak j$，每个连续 $A$-同态 $u:B\to C/\mathfrak j$ 都分解为
+\[
+ B\xrightarrow{v}C\xrightarrow{\varphi}C/\mathfrak j,
+\]
+其中 $v$ 连续，$\varphi$ 为典范同态。
+
+这一定义等价于下列性质：
+
+\noindent（P）对 $B$ 的每个开理想 $\mathfrak k$ 和每个 $A$-同态 $u':B/\mathfrak k\to C/\mathfrak j$，存在开理想 $\mathfrak k'\subset\mathfrak k$，使复合同态 $B\to B/\mathfrak k\xrightarrow{u'}C/\mathfrak j$ 分解为
+\[
+ B\to B/\mathfrak k'\xrightarrow{v'}C\xrightarrow{\varphi}C/\mathfrak j,
+\]
+其中 $v'$ 为 $A$-同态。
+
+事实上，若 $u:B\to C/\mathfrak j$ 连续，其核 $\mathfrak k$ 为开理想，故 $u$ 分解为 $B\to B/\mathfrak k\xrightarrow{u'}C/\mathfrak j$。若（P）满足，对 $u'$ 应用它，取 $v$ 为复合 $B\to B/\mathfrak k'\xrightarrow{v'}C$ 即满足定义。反之，设 $B$ 形式光滑。给定开理想 $\mathfrak k$ 和 $u':B/\mathfrak k\to C/\mathfrak j$，对 $u:B\to B/\mathfrak k\xrightarrow{u'}C/\mathfrak j$ 应用定义。若 $u=\varphi\circ v$ 且 $v$ 连续，则 $\mathfrak k'=\Ker v\cap\mathfrak k$ 为包含于 $\mathfrak k$ 的开理想；$v$ 分解为 $B\to B/\mathfrak k'\xrightarrow{v'}C$，从而得到（P）。
+
+\egas{19.3.2}{命题}
+设 $A$ 为离散环，$V$ 为投射 $A$-模。配备离散拓扑的对称代数 $B=\mathrm S_A(V)$ 是形式光滑的 $A$-代数。
+
+令 $C,\mathfrak j$ 如（19.3.1）。将 $A$-代数同态 $u:B\to C/\mathfrak j$ 限制到 $V=\mathrm S_A^1(V)$，得 $A$-模同态 $u_1:V\to C/\mathfrak j$。因 $V$ 投射，$u_1$ 分解为 $V\xrightarrow{v_1}C\to C/\mathfrak j$。$v_1$ 延拓成 $A$-代数同态 $v:\mathrm S_A(V)\to C$，其与 $\varphi$ 的复合在 $V$ 上等于 $u$，故 $\varphi\circ v=u$。
+
+\egas{19.3.3}{推论}
+若 $A$ 为离散环，则任意多项式代数 $B=A[T_\alpha]_{\alpha\in I}$ 配备离散拓扑后，都是形式光滑的 $A$-代数。
+
+\egas{19.3.4}{命题}
+设 $A$ 为拓扑环，$B=A[[T_\alpha]]_{\alpha\in I}$ 为形式幂级数环，元素写作 $\sum_{\lambda\in\mathbf N^{(I)}}c_\lambda T^\lambda$（即幺半群 $\mathbf N^{(I)}$ 在 $A$ 上的大代数，作为 $A$-模与乘积 $A^{\mathbf N^{(I)}}$ 识别）。给 $B$ 配备乘积拓扑，则它是形式光滑的 $A$-代数。
+
+设 $(\mathfrak a_\mu)_{\mu\in L}$ 为 $A$ 的开理想基本系。对每个有限子集 $H\subset I$、$\mu\in L$ 和整数 $n$，令 $\mathfrak k_{H,\mu,n}$ 为下述零点邻域：它由满足如下条件的 $(c_\lambda)$ 构成——若 $\lambda=(\lambda_\alpha)$ 满足 $\lambda_\alpha=0$（$\alpha\notin H$）且 $\sum_{\alpha\in H}\lambda_\alpha\leq n$，则 $c_\lambda\in\mathfrak a_\mu$。直接验证可知，这些 $\mathfrak k_{H,\mu,n}$ 是 $B$ 的理想，且构成零点基本邻域系；因此乘积拓扑与 $A$-代数结构相容。
+先记录以下引理。
+
+\egas{19.3.4.1}{引理}
+设 $E$ 为离散拓扑 $A$-代数。
+
+（i）若 $f:B\to E$ 为连续 $A$-同态，则存在有限子集 $H\subset I$，使 $f(T_\alpha)=0$（$\alpha\notin H$），且对每个 $\alpha\in H$，$f(T_\alpha)$ 在 $E$ 中幂零。
+
+（ii）反之，给定有限子集 $H\subset I$ 和 $E$ 中一族幂零元 $(\xi_\alpha)_{\alpha\in H}$，存在唯一连续 $A$-同态 $g:B\to E$，使 $g(T_\alpha)=\xi_\alpha$（$\alpha\in H$）、$g(T_\alpha)=0$（$\alpha\notin H$）。
+
+（i）直接来自 $f^{-1}(0)$ 是乘积 $A$-模 $A^{\mathbf N^{(I)}}$ 的零点邻域，因此除有限多个 $\lambda$ 外均有 $f(T^\lambda)=0$。
+为证（ii），注意多项式环 $B'=A[T_\alpha]_{\alpha\in I}$ 在 $B$ 中稠密。$g|_{B'}$ 的存在唯一性是直接的；其连续性由 $g(T_\alpha)$（$\alpha\in H$）幂零得到：若 $(g(T_\alpha))^n=0$，则 $g(T^\lambda)$ 只可能在满足 $\lambda_\alpha=0$（$\alpha\notin H$）且 $\lambda_\alpha\leq n$（$\alpha\in H$）的有限多个 $\lambda$ 处非零。\cmt{F6-H03}{本引理中的“离散 $A$-代数”仍须有连续结构同态 $A\to E$。延拓还使用离散 $E$ 分离完备；不能把任意不连续的基环作用代入。}
+
+引理既证，仍令 $C,\mathfrak j$ 如（19.3.1）。存在有限集 $H$，使 $u(T_\alpha)=0$（$\alpha\notin H$），且 $\eta_\alpha=u(T_\alpha)$（$\alpha\in H$）在 $C/\mathfrak j$ 中幂零。由于 $\mathfrak j$ 幂零，可取幂零元 $\xi_\alpha\in C$ 映到 $\eta_\alpha$。令连续 $A$-同态 $v:B\to C$ 满足 $v(T_\alpha)=0$（$\alpha\notin H$）、$v(T_\alpha)=\xi_\alpha$（$\alpha\in H$），则 $u$ 分解为 $B\xrightarrow{v}C\to C/\mathfrak j$。
+
+\egas{19.3.5}{命题}
+设 $A$ 为拓扑环。
+
+（i）$A$ 是形式光滑的 $A$-代数。
+
+（ii）若 $B$ 是形式光滑的 $A$-代数，$C$ 是形式光滑的 $B$-代数，则 $C$ 是形式光滑的 $A$-代数。
+
+（iii）若 $B$ 是形式光滑的 $A$-代数，$A'$ 是拓扑 $A$-代数，则拓扑 $A'$-代数 $B\otimes_AA'$（$0_{\mathrm I}$，7.7.5、7.7.6）形式光滑。
+
+（iv）设 $B$ 为拓扑 $A$-代数，$S\subset A$、$T\subset B$ 为乘性子集，$S$ 在 $B$ 中的典范像包含于 $T$。若 $B$ 是形式光滑的 $A$-代数，则 $T^{-1}B$ 是形式光滑的 $S^{-1}A$-代数。
+
+（v）设 $B_i$（$1\leq i\leq n$）为拓扑 $A$-代数。$\prod_{i=1}^nB_i$ 形式光滑，当且仅当每个 $B_i$ 形式光滑。
+
+（i）设 $C$ 为离散 $A$-代数，$\varphi:C\to C/\mathfrak j$ 为任意商代数的典范映射。从 $A$ 到 $C/\mathfrak j$ 的唯一 $A$-同态是 $A\xrightarrow{\psi}C\xrightarrow{\varphi}C/\mathfrak j$，其中 $\psi$ 定义 $C$ 的 $A$-代数结构；$\psi$ 连续，故满足定义。
+
+（ii）设 $\alpha:A\to B$、$\beta:B\to C$ 为连续结构同态。取离散 $A$-代数 $E$、其幂零理想 $\mathfrak a$ 和连续 $A$-同态 $u:C\to E/\mathfrak a$。于是 $u\circ\beta\circ\alpha$ 定义了 $E/\mathfrak a$ 的 $A$-代数结构。由 $B$ 的形式光滑性，$u\circ\beta:B\to E/\mathfrak a$ 分解为 $B\xrightarrow{v}E\to E/\mathfrak a$，其中 $v$ 连续。$v$、$u\circ\beta$ 分别给 $E,E/\mathfrak a$ 定义拓扑 $B$-代数结构，后者仍为前者的离散商代数。而 $u$ 是连续 $B$-同态，故分解为 $C\xrightarrow{w}E\to E/\mathfrak a$，其中 $w$ 是连续 $B$-同态。因 $v\circ\alpha$ 正是 $E$ 的 $A$-结构同态，$w$ 也是连续 $A$-同态。
+
+（iii）设 $C$ 为离散拓扑 $A'$-代数，$\mathfrak j$ 为其幂零理想，$u:B\otimes_AA'\to C/\mathfrak j$ 为连续 $A'$-同态。把 $u$ 与典范 $\rho:B\to B\otimes_AA'$ 复合，得连续 $A$-同态，因为 $A\to B\xrightarrow{\rho}B\otimes_AA'$ 等于 $A\to A'\xrightarrow{\sigma}B\otimes_AA'$。由假设，$u\circ\rho$ 分解为 $B\xrightarrow{v}C\to C/\mathfrak j$，其中 $v$ 连续；这里 $C$ 的 $A$-结构由 $A\to A'\to C$ 给定。由 $A\to B\xrightarrow{v}C$ 与 $A\to A'\xrightarrow{w}C$ 相等，存在连续环同态 $f:B\otimes_AA'\to C$，满足 $v=f\circ\rho$、$w=f\circ\sigma$（$0_{\mathrm I}$，7.7.6）。两个经由 $B$ 的复合及两个经由 $A'$ 的复合分别相等，故 $u$ 确实分解为 $B\otimes_AA'\xrightarrow{f}C\to C/\mathfrak j$。
+
+（iv）$S^{-1}A$、$T^{-1}B$ 上的拓扑取为以 $S^{-1}\mathfrak j$、$T^{-1}\mathfrak k$ 为零点基本邻域的拓扑，其中 $\mathfrak j,\mathfrak k$ 分别遍历 $A,B$ 的开理想基本系（$0_{\mathrm I}$，7.6.1）。若 $\alpha:A\to B$ 为结构同态，则由 $\alpha(S)\subset T$ 所得的典范 $\alpha':S^{-1}A\to T^{-1}B$ 连续（$0_{\mathrm I}$，7.6.6）。设 $C$ 为离散拓扑 $S^{-1}A$-代数，$\mathfrak j$ 为其幂零理想，$u:T^{-1}B\to C/\mathfrak j$ 为连续 $S^{-1}A$-同态。复合 $B\to T^{-1}B\xrightarrow{u}C/\mathfrak j$ 由假设分解为 $B\xrightarrow{v}C\to C/\mathfrak j$，$v$ 为连续 $A$-同态。对 $t\in T$，$u(t/1)$ 可逆；因为 $\mathfrak j$ 幂零，该剩余类的每个提升，特别是 $v(t)$，均在 $C$ 中可逆（$0_{\mathrm I}$，7.1.12）。于是 $v$ 分解为 $B\to T^{-1}B\xrightarrow{w}C$。由 $v$ 连续，$w$ 连续（$0_{\mathrm I}$，7.6.6）；而且复合 $A\to B\to T^{-1}B\xrightarrow{w}C$ 等于 $A\to S^{-1}A\to T^{-1}B\xrightarrow{w}C$，所以 $w$ 是 $S^{-1}A$-同态。最后，由经由 $B$ 的两个复合相同，同样的论证给出 $u$ 等于 $T^{-1}B\xrightarrow{w}C\to C/\mathfrak j$。
+
+最后，（v）是直接的，因为给出一个从 $B=\prod B_i$ 到 $C$（或 $C/\mathfrak j$）的连续 $A$-同态，等价于给出 $n$ 个连续 $A$-同态 $B_i\to C$（或 $B_i\to C/\mathfrak j$）；而每个 $B_i\to C$（或 $B_i\to C/\mathfrak j$）经投影复合都给出 $B\to B_i\to C$（或 $B\to B_i\to C/\mathfrak j$）。\cmt{F6-G01}{本段是原证明的译文，但所述“等价”不成立：含幺环同态从有限乘积出发，须同时记录目标环中相应的正交幂等元分解。命题（v）仍成立；报告给出反驳这一证明步骤的例子，并以幂零理想模下幂等元的提升补足证明。}
+
+\egas{19.3.6}{命题}
+设 $A$ 为拓扑环，$B$ 为拓扑 $A$-代数，$\widehat A,\widehat B$ 为各自的分离完备化，故 $\widehat B$ 为拓扑 $\widehat A$-代数。以下条件等价：
+
+$a)$ $B$ 是形式光滑的 $A$-代数；
+
+$b)$ $\widehat B$ 是形式光滑的 $A$-代数；
+
+$c)$ $\widehat B$ 是形式光滑的 $\widehat A$-代数。
+
+当然，若 $\varphi:A\to B$ 定义原结构，则 $\widehat\varphi$ 定义 $\widehat B$ 的 $\widehat A$-代数结构。每个离散 $A$-代数 $C$ 分离完备，因而结构同态可典范延拓，使其成为 $\widehat A$-代数；从 $B$ 到 $C$ 的连续 $A$-同态也典范延拓为从 $\widehat B$ 到 $C$ 的 $\widehat A$-同态，当然也是 $A$-同态。换言之，每个这样的同态唯一分解为 $B\to\widehat B\to C$。由此及（19.3.1）立即得到命题。
+
+\egas{19.3.7}{推论}
+在（19.3.5，iv）的假设下，拓扑 $A\{S^{-1}\}$-代数 $B\{T^{-1}\}$ 形式光滑。
+这由定义（$0_{\mathrm I}$，7.6.1、7.6.7）、（19.3.5，iv）及（19.3.6）得出。
+
+\egas{19.3.8}{命题}
+设 $A$ 为拓扑环，$B$ 为拓扑 $A$-代数，并假定 $B$ 的每个开理想 $\mathfrak k$ 的平方 $\mathfrak k^2$ 也开。给 $A,B$ 配备比原拓扑更细的拓扑，得到拓扑环 $A',B'$，且假定原典范同态 $\varphi:A\to B$ 仍是从 $A'$ 到 $B'$ 的连续同态。若 $B'$ 为形式光滑的 $A'$-代数，则 $B$ 为形式光滑的 $A$-代数。
+只须应用下列引理。
+
+\egas{19.3.8.1}{引理}
+设 $C$ 为离散 $A$-代数，$\mathfrak j$ 为其幂零理想。假定 $B$ 的每个开理想的平方仍开。如果复合同态 $v:B\xrightarrow{u}C\to C/\mathfrak j$ 连续，则 $u$ 连续。
+
+事实上，$\mathfrak k=u^{-1}(\mathfrak j)$ 为 $v$ 的核，按假设开。若 $\mathfrak j^n=0$，则 $\mathfrak k^n\subset\Ker u$。由假设对 $h$ 递推，$\mathfrak k^{2^h}$ 开，因而每个 $\mathfrak k^n$ 都开。所以 $\Ker u$ 开，即 $u$ 连续。
+
+注意，对 $B$ 的假设等价于它的拓扑为各个 $\mathfrak k$-预进制拓扑的上确界，其中 $\mathfrak k$ 遍历所有开理想。若 $B$ 是预进制环（$0_{\mathrm I}$，7.1.9），这一条件总满足。
+
+\egap{19.3.9}
+现在证明，形式光滑性还蕴含比（19.3.1）的定义更一般的同态“提升”性质。
+
+\egas{19.3.10}{命题}
+设 $A$ 为拓扑环，$B$ 为形式光滑 $A$-代数，$C$ 为拓扑 $A$-代数，$\mathfrak j$ 为其理想，满足：
+
+$1^\circ$ $C$ 可度量且完备；
+
+$2^\circ$ $\mathfrak j$ 闭，且序列 $(\mathfrak j^n)$ 趋于零。
+
+则每个连续 $A$-同态 $u:B\to C/\mathfrak j$ 都分解为 $B\xrightarrow{v}C\to C/\mathfrak j$，其中 $v$ 为连续 $A$-同态。
+
+设 $(\mathfrak a_n)$ 为 $C$ 的递降开理想基本系。对每个 $n$，考虑离散代数 $C/\mathfrak a_n$ 及其理想 $(\mathfrak j+\mathfrak a_n)/\mathfrak a_n$；存在 $k$ 使 $\mathfrak j^k\subset\mathfrak a_n$，故该理想幂零。复合
+\[
+ u_n:B\xrightarrow{u}C/\mathfrak j\longrightarrow
+ C/(\mathfrak j+\mathfrak a_n)
+ =(C/\mathfrak a_n)/((\mathfrak j+\mathfrak a_n)/\mathfrak a_n)
+\]
+由假设分解为 $B\xrightarrow{v_n}C/\mathfrak a_n\xrightarrow{\varphi_n}C/(\mathfrak j+\mathfrak a_n)$，其中 $v_n$ 连续。我们将逐次选择 $v_n$，使 $v_n$ 对每个 $n$ 均分解为 $B\xrightarrow{v_{n+1}}C/\mathfrak a_{n+1}\to C/\mathfrak a_n$；亦即 $(v_n)$ 为射影系。这由下列引理得到。
+
+\egas{19.3.10.1}{引理}
+设 $B$ 为形式光滑 $A$-代数，$E,E'$ 为离散拓扑 $A$-代数，$\mathfrak k,\mathfrak k'$ 分别为它们的幂零理想；设 $f:E\to E'$ 为满足 $f(\mathfrak k)\subset\mathfrak k'$ 的满 $A$-同态，$f':E/\mathfrak k\to E'/\mathfrak k'$ 为商同态。设 $u:B\to E/\mathfrak k$ 连续，$u'=f'\circ u$；若连续 $A$-同态 $v':B\to E'$ 满足 $u'$ 分解为 $B\xrightarrow{v'}E'\to E'/\mathfrak k'$，则存在连续 $A$-同态 $v:B\to E$，使 $v'$ 分解为 $B\xrightarrow{v}E\xrightarrow{f}E'$。\cmt{F6-E01}{原引理按所写的包含条件一般不成立。取 $A=k$、$B=k[x,x^{-1}]$、$E=k[t]$、$E'=k[t]/(t^2)$、$\mathfrak k=0$、$\mathfrak k'=(\bar t)$，令 $u(x)=1$、$v'(x)=1+\bar t$ 即为反例。原证明实际使用 $f(\mathfrak k)=\mathfrak k'$；在此更强条件下结论可修补，并能同时使 $v$ 提升 $u$。（19.3.10）的应用满足该相等条件，故此问题不否定其结论。详细验证见报告。}
+
+在交换图
+\[
+\begin{tikzcd}
+ E\arrow[r,"f"]\arrow[d]&E'\arrow[d]\\
+ E/\mathfrak k\arrow[r,"f'"]&E'/\mathfrak k'
+\end{tikzcd}
+\]
+中，各同态均满。若 $\mathfrak a=\Ker f$，则 $E'\simeq E/\mathfrak a$，而 $\mathfrak k'$ 与 $(\mathfrak k+\mathfrak a)/\mathfrak a$ 识别。\cmt{F6-G02}{这一识别正是前注指出的缺口：仅从 $f(\mathfrak k)\subset\mathfrak k'$ 不能推出。以下纤维积证明按作者原文翻译，应在 $f(\mathfrak k)=\mathfrak k'$ 下使用。}现在使用以下初等引理。
+
+\egas{19.3.10.2}{引理}
+设 $F$ 为环（不必交换），$\mathfrak a,\mathfrak b$ 为双边理想。则纤维积
+\[
+ (F/\mathfrak a)\times_{F/(\mathfrak a+\mathfrak b)}(F/\mathfrak b)
+\]
+与 $F/(\mathfrak a\cap\mathfrak b)$ 典范识别。
+
+这是（18.1.7）的特殊应用：在其图（18.1.7.1）中，将 $G$ 换成 $F/(\mathfrak a\cap\mathfrak b)$，$\mathfrak j'$ 换成 $\mathfrak b/(\mathfrak a\cap\mathfrak b)$，$F$ 换成 $F/\mathfrak b$，$\mathfrak k$ 换成 $(\mathfrak a+\mathfrak b)/\mathfrak b$，$B$ 换成 $F/(\mathfrak a+\mathfrak b)$，$\theta$ 换成典范双射 $F$-同态 $(\mathfrak a+\mathfrak b)/\mathfrak b\simeq\mathfrak a/(\mathfrak a\cap\mathfrak b)$。
+
+将该引理应用于（19.3.10.1），图
+\[
+\begin{tikzcd}
+ B\arrow[r,"v'"]\arrow[d,"u"']&E'=E/\mathfrak a\arrow[d]\\
+ E/\mathfrak k\arrow[r,"f'"]&E'/\mathfrak k'
+\end{tikzcd}
+\]
+交换，故存在 $w:B\to E/(\mathfrak k\cap\mathfrak a)$，使 $v'$ 和 $u$ 分别分解为经此商环再到 $E/\mathfrak a$ 和 $E/\mathfrak k$ 的复合。$\Ker w$ 包含 $\Ker v'\cap\Ker u$，故为开理想，$w$ 连续。$\mathfrak k\cap\mathfrak a$ 幂零，故 $w$ 分解为 $B\xrightarrow{v}E\to E/(\mathfrak k\cap\mathfrak a)$，其中 $v$ 为满足要求的连续 $A$-同态。
+
+回到（19.3.10）的证明：在（19.3.10.1）中依次以
+\[
+ C/\mathfrak a_{n+1},\quad C/\mathfrak a_n,\quad
+ (\mathfrak j+\mathfrak a_{n+1})/\mathfrak a_{n+1},\quad
+ (\mathfrak j+\mathfrak a_n)/\mathfrak a_n
+\]
+替换 $E,E',\mathfrak k,\mathfrak k'$，并以 $u_{n+1},u_n,v_n$ 替换 $u,u',v'$，便得 $v_{n+1}$。由于 $C$ 分离完备，$C=\varprojlim_n C/\mathfrak a_n$，且 $v=\varprojlim_n v_n$ 为连续 $A$-同态。$\mathfrak j$ 闭，所以 $\mathfrak j=\bigcap_n(\mathfrak j+\mathfrak a_n)$；$C/\mathfrak j$ 可度量且完备，而 $(\mathfrak j+\mathfrak a_n)/\mathfrak j$ 构成其零点基本邻域系，因此
+\[
+ C/\mathfrak j=\varprojlim_n C/(\mathfrak j+\mathfrak a_n),
+ \qquad \varprojlim_n\varphi_n=\varphi:C\to C/\mathfrak j.
+\]
+由 $\varprojlim_nu_n=u$，得 $u=\varphi\circ v$，证毕。\cmt{F6-T06}{初版末行印为 $u=v\circ\varphi$，与定义域、陪域不合；此处明确更正为 $u=\varphi\circ v$。}
+
+\egas{19.3.11}{推论}
+设 $A$ 为拓扑环，$B$ 为形式光滑 $A$-代数，$C$ 为完备诺特局部环，$\mathfrak j\ne C$ 为其理想；设连续 $\varphi:A\to C$ 使 $C$ 成为拓扑 $A$-代数。则每个连续 $u_0:B\to C/\mathfrak j$ 均分解为 $B\xrightarrow{u}C\to C/\mathfrak j$，其中 $u$ 为连续 $A$-同态。
+因为（19.3.10）的所有条件均满足（$0_{\mathrm I}$，7.3.5）。
+
+\egas{19.3.12}{原命题〔作者已撤销〕}
+\noindent\textbf{作者勘误提示。}作者在勘误清单三（Err$_{\mathrm{IV}}$，8）明确要求删除本条。以下保留初版陈述及证明的中文译文，仅供原文对照，不将其作为有效定理引用。\cmt{F6-A01}{正式勘误见EGA IV第四部分印刷第347页、上传PDF第346页：要求删除（$0_{\mathrm{IV}}$，19.3.12），理由是证明错误，$W_\lambda,U_\lambda,V_\lambda$ 不是线性流形。本书书末的\hyperlink{ErrIV:8}{相应作者勘误}已选译。}
+
+设 $A$ 为拓扑环，$B$ 为形式光滑 $A$-代数，$C$ 为拓扑 $A$-代数，$\mathfrak j$ 为其理想，满足：
+
+$1^\circ$ $C$ 有开理想基本系 $(\mathfrak a_\lambda)$，使 $C_\lambda=C/\mathfrak a_\lambda$ 为Artin环，且典范同态 $C\to\varprojlim_\lambda C_\lambda$ 为拓扑环同构；
+
+$2^\circ$ $\mathfrak j$ 在 $C$ 中闭且拓扑幂零；
+
+$3^\circ$ $B$ 的每个开理想的平方仍开。
+
+则每个连续 $A$-同态 $u:B\to C/\mathfrak j$ 分解为 $B\xrightarrow{v}C\to C/\mathfrak j$，其中 $v$ 连续。
+
+令 $\mathfrak j_\lambda=(\mathfrak j+\mathfrak a_\lambda)/\mathfrak a_\lambda$，它是 $C_\lambda$ 的幂零理想；令 $u_\lambda$ 为 $B\xrightarrow{u}C/\mathfrak j\to C_\lambda/\mathfrak j_\lambda$ 的复合。先证明任意使 $u$ 分解为 $B\xrightarrow{w}C\to C/\mathfrak j$ 的 $A$-同态 $w$ 必连续。事实上，对每个 $\lambda$，存在 $B$ 的开理想 $\mathfrak k$，使 $u(\mathfrak k)\subset(\mathfrak j+\mathfrak a_\lambda)/\mathfrak j$。于是 $w(\mathfrak k)\subset\mathfrak j+\mathfrak a_\lambda$，故某个幂 $\mathfrak k^{2^m}$ 满足 $w(\mathfrak k^{2^m})\subset\mathfrak a_\lambda$。因 $\mathfrak k^{2^m}$ 开，连续性成立。因此只须寻找这样的 $A$-同态 $w$，不必再顾虑连续性。
+
+原证明继续说：全体 $A$-代数同态满足
+\[
+ \Hom(B,C)=\varprojlim_\lambda\Hom(B,C_\lambda),
+\]
+而所考虑的同态集合闭于配备乘积拓扑的 $C$-模 $C_\lambda^B$ 中；由于 $C_\lambda$ 为Artin环，该乘积线性紧。对每个 $\lambda$，令 $W_\lambda$ 为使 $u_\lambda$ 分解为 $B\xrightarrow{w_\lambda}C_\lambda\to C_\lambda/\mathfrak j_\lambda$ 的 $w_\lambda\in\Hom(B,C_\lambda)$ 的集合。原证明称 $W_\lambda$ 是 $C$-模 $\Hom(B,C_\lambda)$ 中的闭线性流形，并由 $B$ 形式光滑得其非空。在乘积
+\[
+ E_\lambda=\prod_{\mu\leq\lambda}\Hom(B,C_\mu)
+\]
+中，考虑满足 $w_\mu=\varphi_{\mu\lambda}\circ w_\lambda$（$\mu\leq\lambda$）且 $w_\lambda\in W_\lambda$ 的族构成的所谓闭线性子流形 $U_\lambda$；其中 $\varphi_{\mu\lambda}:C_\lambda\to C_\mu$ 为典范同态。最后，令 $V_\lambda$ 为全乘积 $\prod_\mu\Hom(B,C_\mu)$ 中，由 $U_\lambda$ 和所有 $\mu\nleq\lambda$ 对应因子的乘积形成的所谓闭线性流形。\cmt{F6-G03}{“模”“线性流形”等用语在此是被撤销原证明的论断，不是本译稿的认定。代数同态的乘法约束非线性；报告给出平方零以外的幂零增厚例子，直接说明固定剩余同态的提升集合也未必为仿射子空间。}
+原证明把问题归结为 $\bigcap_\lambda V_\lambda\ne\varnothing$，因为交中的元素按定义属于 $\varprojlim_\lambda\Hom(B,C_\lambda)$。此外，原证明使用 $\mathfrak j$ 闭以及 $C=\varprojlim C_\lambda$ 线性紧，来识别 $C/\mathfrak j\simeq\varprojlim C_\lambda/\mathfrak j_\lambda$，并把 $\varphi:C\to C/\mathfrak j$ 识别为 $\varprojlim\psi_\lambda$，其中 $\psi_\lambda:C_\lambda\to C_\lambda/\mathfrak j_\lambda$ 为典范映射，继而声称如（19.3.10）得到 $\varphi\circ w=u$。\par
+\noindent\textbf{〔撤销条目译文结束。〕}

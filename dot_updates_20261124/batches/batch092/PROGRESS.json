@@ -1,0 +1,21 @@
+{
+  "batch": 92,
+  "this_french_pages": [
+    17,
+    18,
+    19
+  ],
+  "this_english_pages": [
+    13,
+    14,
+    15
+  ],
+  "this_from": "法17后段20.4标题及4.1",
+  "this_through": "法19命题4.3证明末；英15推论4.4前",
+  "french_contiguous_through": "法19命题4.3证明末",
+  "next": "法19下部推论4.4，续法20上段，英15；法20原文是 que si，不是英稿 if",
+  "merge_into_1158_done": false,
+  "double_count_as_new_translation": false,
+  "formal_EGA_IV_1": "另线221提要 / 223定义1.1.1",
+  "unverified": "法17底模单个字形不可确判；法18重度划去之项不转写；4.4证明未复核；法文全卷尚未校完"
+}

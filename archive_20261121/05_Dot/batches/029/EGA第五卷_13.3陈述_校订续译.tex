@@ -1,0 +1,31 @@
+\documentclass[openany,fontset=fandol]{ctexbook}
+\usepackage{amsmath,amssymb}
+\usepackage[unicode,hidelinks]{hyperref}
+\newcommand{\note}[1]{\footnote{译注：#1}}
+\begin{document}
+\title{代数几何基础第五卷预备笔记\\闭边界的选择与引理13.3}
+\author{据用户上传英译编辑稿译出}
+\date{2026年11月17日}
+\maketitle
+\chapter*{范围与校订状态}
+本批连续译出底本第50页自“The benefit of this hypothesis”起的三个准备段落、引理13.3陈述及其后括注和归约说明，止于“allowing an elementary morphism $U\to V$”。含原脚注66。下一接点是同页“There exists a linar subvariety $C$ of $L$”。本批不含引理的证明，定理13.2的证明也未结束。
+
+正文校正可由相邻语境核实的包含号和记号重用，脚注保留原写法及理由；底本“any / some?”的不确定性保留，未擅定量词。未并入主稿，旧有待核事项仍在。
+\chapter*{§13 初等态射与M. Artin定理（续）}
+这一假设的好处是：$X$中在$k$上不光滑的点所成的集合$Z$，余维至少为2。选择一个射影浸入$i\colon X\to\mathbf P^r$。由于取各个$\mathcal O_{\mathbf P^r}(d)$（$d>0$）中在$x$处不消失的截面，其非零点开集构成$x$在$\mathbf P^r$中的一个基本邻域系，我们得到：$x$的每个邻域都包含一个形如$X\setminus Y$的邻域，其中$Y$是$X$中包含$Z$的闭子集，纯维数为$n-1$，且$x\notin Y$。\note{底本把扭曲次数也写为$n>0$，与一直表示$\dim X$的$n$重名；这里改用$d$表示次数，未改变任何数值条件。“取截面”展开为取其非零点开集，以明确基本邻域系的对象。选择包含$Z$的边界是原稿在本段给出的结论，本批不添加一个新的选取证明。}
+
+赋予$Y$诱导约化结构；由于$k$完美，$Y$的奇异点集的维数至多为$n-2$。扩大前面的集合$Z$，便得到一个维数至多为$n-2$的闭子集$Z\subset Y$，它包含$X$和$Y$的几何奇异点集。
+
+证明的想法是：固定一个余维为$n$的线性子簇$C$，用$X$与$P$中包含$C$的余维$n-1$线性子簇$L$的交，来把$X$纤维化。为此，需要如下引理。
+
+\chapter*{引理13.3}
+沿用前述记号，设$X\supset Y\supset Z$是$\mathbf P^r_k$的闭子概形，维数分别为$n$、$n-1$及至多$n-2$，且$X\setminus Z$、$Y\setminus Z$光滑。$Z$的维数至多为$n-2$；必要时，\footnote{原脚注66：法文。}若$k$的特征为$p>0$，按第9节的办法把射影浸入$i\colon X\to\mathbf P^r$换成一个“倍数”$\phi_d\circ i$（$d\geq2$；底本在“任意”后又注“某个？”），则存在$\mathbf P^r$中一个余维为$n-1$的线性子簇$L_0$，具有以下良好性质：\note{底本的包含关系印为$X\supset Y\subset Z$，与紧前一段$Z\subset Y$及维数限制不符，故订为$X\supset Y\supset Z$。底本重复的$Z$维数限制仍保留。复合符号在底本写作“$\phi_n^{i}$”，并以$n\geq2$为指标；依“替换射影浸入”及第9节的引用，正文明确记为$\phi_d\circ i$，以$d$区别于维数$n$。“any”与“[some?]”相冲突，正文保留不确定性，不断言任意次数均可。}
+\begin{enumerate}
+\item[a)] $L_0\cap Z=\varnothing$；
+\item[b)] $L_0\cap X$光滑，维数为1；
+\item[c)] $L_0\cap Y$光滑，维数为0。
+\end{enumerate}
+\note{a）底本写“$\phi=\varnothing$”，这里直接采用空集符号，避免与前段的映射$\phi_d$混淆。}
+
+（注意：这里$k$是无限域，并不要求它完美。）现在假设这一引理成立，说明如何由此推出：存在$x$的一个开邻域$U$，包含在$X\setminus Y$中，并允许一个初等态射$U\to V$。\note{本句启动的是利用引理的构造；其具体步骤从下一段开始。本批止于这里，未把引理的假设使用或其证明标为完成。}
+\end{document}

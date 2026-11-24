@@ -1,0 +1,6 @@
+原件：EGA5.pdf（物理171页）；SHA256 24cf8204184b58b18a46e5f63ecc36d6e791b3c8c96a09daac93de96ebd8e830。
+https://webusers.imj-prg.fr/~leila.schneps/grothendieckcircle/EGA/EGA5.pdf
+英译编辑稿 EGA5trans.pdf（物理112页）；SHA256 23a20ef32fd16a1bd623c0c08ac080d04fc94f248de12133b713a19d6b0330d9。
+https://webusers.imj-prg.fr/~leila.schneps/grothendieckcircle/EGA/EGA5trans.pdf
+作者按语属原稿，关于归功及术语的问题不代作者答定；印刷注与手写补改均分开说明。
+局部等平凡性参见SGA 3 Exposé XXIV 4.1.2及4.2.2–4.2.4。正交群连续性、商及Dickson不变量见Conrad《Reductive Group Schemes》C.2.8、C.2.11–C.2.12。

@@ -1,0 +1,21 @@
+{
+  "source_sha256": "23a20ef32fd16a1bd623c0c08ac080d04fc94f248de12133b713a19d6b0330d9",
+  "previous_project": "libfile_fde3_f-8c29b6861428819193750a1afa7b85ee_49ac57203c0c81918f3630f0324dcb35",
+  "completed": "p35 From the [(cunutesque?) Fr] point of view and in terms of field theory through p36 before section 9 heading",
+  "next_source_page": 36,
+  "next_exact": "§9 Change of Projective Embedding; 9.1. For every integer n > 0",
+  "status": "Independent incremental translation; not merged into main compilation",
+  "unresolved": [
+    "8.8 missing hypotheses",
+    "dimension at most one in original field-theory criterion",
+    "conical at x relative to f undefined",
+    "previous batch Q dual convention and converse dim=2 remain unresolved"
+  ],
+  "verified_corrections": [
+    "K(a_i) to k(a_i), image function field justification",
+    "g to q for dimension variable",
+    "fiber argument applied to projection restricted to image, not arbitrary composite g"
+  ],
+  "audit": "Independent bilingual audit passed; reviewer caution about x/X adopted as unresolved. Two-pass XeLaTeX 4 pages; all 4 rendered pages inspected; no overfull/underfull, missing glyph, undefined reference or LaTeX error in final log. Fontconfig cache warnings during run did not prevent output.",
+  "concurrency_check": "Original EGA last assistant 2026-11-15 09:25 UTC tenth edition through 20.7.20, next 21; math last visible assistant 012 and continue. Library recent list confirms previous EGA V incremental artifact is newest at 09:06 UTC; no observed overlap, not a remote execution guarantee."
+}

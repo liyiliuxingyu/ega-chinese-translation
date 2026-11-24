@@ -1,0 +1,72 @@
+\documentclass[openany,fontset=fandol]{ctexbook}
+\usepackage{amsmath,amssymb}
+\usepackage[unicode,hidelinks]{hyperref}
+\setlength{\emergencystretch}{2em}
+\newcommand{\Pp}{\mathcal P}
+\newcommand{\Sym}{\operatorname{Sym}}
+\begin{document}
+\title{代数几何基础第五卷预备笔记\\二阶判别与恒秩引理}
+\author{据英译编辑稿续译，参校法文扫描}
+\date{2026年11月20日}
+\maketitle
+\chapter*{范围与接续}
+本批始于英译第72页“to characterize using differential method”及法文第109页对应句，译至英译第72页、法文第110页恒秩引理之后关于推广命题6的一句。下一句是关于推广命题7的段落起点。本稿独立，不改已合并主稿。
+\chapter*{普通奇异零点的微分刻画（续）}
+要用微分方法刻画相对于$Y$的普通奇异零点，只需对从$u$导出的同态
+\[
+\Pp^\infty_{X/Y}(E)|_{V^1}\longrightarrow
+\Pp^\infty_{X/Y}|_{V^1}
+\]
+表达命题9的条件。实际上，这又化为一个“二阶”条件，只涉及相应的同态
+\[
+\Pp^2_{X/Y}(E)|_{V^1}\longrightarrow
+\Pp^2_{X/Y}|_{V^1}.
+\]
+
+首先应表达同态
+\[
+(*)\qquad E|_{V^1}\longrightarrow\Omega^1_{X/Y}|_{V^1}
+\]
+的核$K$在$x$处可逆且为直和因子。换言之，该同态在$x$处的秩（因$x\in V^1$而至多为$m-1$）恰好为$m-1$。\footnote{“至多”是由上一批顶次外幂的零概形定义补明的语义；英、法在括号内都直接写$m-1$。}（注意：局部自由模间同态在一点的秩，按定义就是它在$k(x)$上的相应向量空间同态的秩。）为表达这一点，取同态
+\[
+(\bigwedge^{m-1}E)|_{V^1}\longrightarrow
+\Omega^{m-1}_{X/Y}|_{V^1}
+\]
+的零概形$V''\subset V^1$，并只须写$x\notin V''$。\footnote{法文第109页明确为$x\notin V''$；英译排成$x\in V''$。以下用法文可确定的$V^1$，不将英译中的撇号读成另一层概形。}
+
+$V''$的定义确保$K|_{V^1\setminus V''}$是可逆模，且$(*)$的余核$W$在$V^1\setminus V''$上局部自由，秩为$d-(m-1)$（其中$d$是$X$在$Y$上的相对维数，等于$\Omega^1_{X/Y}$的秩）。\footnote{此处法文维数叙述有印字$S$，相邻相对微分的底符有手改。英译者也指出这里的$S$应为$Y$。本段指同一相对构造。}应用命题9中说明的构造，得到同态
+\[
+M:K\longrightarrow\Sym^2(W).
+\]
+只剩下表达它在$x$处是“非退化”的。为此，引入判别式
+\[
+D\in\Gamma\bigl(V^1\setminus V'',\,
+ K^{-d+m-1}\otimes(\det W)^2\bigr)
+\]
+（指数表示可逆模的张量幂）。\footnote{法文及英译原式均为$K^{-n+m-1}$。因$W$的秩为$d-m+1$，取极化映射的行列式得正文的幂次；不据此推断作者原来如何区分$n$与$d$。}令$V^2=V(D)$。它是$V^1\setminus V''$的闭子预概形。于是相对于$Y$的普通奇异零点集就是
+\[
+V^1\setminus(V''\cup V^2),
+\]
+也就是说，相对超奇异零点的集合为$V''\cup V^2$。\footnote{末句源文的两个记号之间未清楚印出并号。此处用前一句的补集关系确定并集；英译者另有括号疑问。这里仅陈述底层点集。}
+
+引入$V''$时，我在断言$W$与$K$在$V^1\setminus V''$上局部自由时用了一个一般事实；现在将它单列为引理（其中$V^1\setminus V''$变成$X$）。
+
+\noindent\textbf{引理。}
+设$u:E\to F$是预概形$X$上局部自由模之间的一个同态，$m>0$为整数，并假设$\bigwedge^m u=0$。那么以下条件等价：$\bigwedge^{m-1}u$在任一点都不消失（当然按各点的约化纤维理解）；$u(E)$是$F$的一个局部直和因子，并局部自由且秩为$m-1$；$u$在$X$的每一点秩都为$m-1$。
+
+宜把这些构造概括为一个推广命题6的命题。
+\chapter*{译校说明（非原文）}
+\paragraph{概形层面恒秩。}
+在$V^1$上，$m$阶子式全部在结构层中为零，而不只是在每个剩余域中为零。在$V^1\setminus V''$上，局部某个$(m-1)$阶子式是单位。用它作主块，初等可逆行列变换将矩阵化为$\operatorname{diag}(I_{m-1},C)$的块形；$C$的每个条目都是变换后一个$m$阶子式，故$C=0$。因此即便基底非约化，核、像、余核仍局部自由；源模的秩为$m$时，核秩为一。引理的两种纤维秩表述直接等价；相应的局部直和形式由这一步给出，反向由局部直和形式在纤维上取秩得到。仅有逐点秩而无$\bigwedge^m u$作为层同态为零，不能这样消去幂零项。
+
+\paragraph{判别式的类型。}
+令$r=\operatorname{rk}W=d-m+1$。由$M$的极化得到$K\otimes W^\vee\to W$。取行列式，其值线丛是
+\[
+\operatorname{Hom}(\det(K\otimes W^\vee),\det W)
+ \simeq K^{-r}\otimes(\det W)^2.
+\]
+因此按本段的$d$记号，指数应核算为$-d+m-1$；法文与英译可读的$-n+m-1$保留在脚注。这个行列式检测极化映射是否退化；在特征$2$下，不能未经另证将它等同于二次型的射影零超曲面是否光滑，这与主稿已有校勘一致。法文第112页（英译第73页）后记专门回到此问题，举$x^2+yz$为例并提出术语调整；本批未译该后记。
+
+\paragraph{分层区别。}
+$V^2$在开层$V^1\setminus V''$中闭，不必单独在$V^1$中闭；$V''\cup V^2$则是普通层在$V^1$内的补集。它不包括$V^0\setminus V^1$的非奇异零点。原文只在此辨认集合，没有指定合并后的闭子概形结构。
+\end{document}

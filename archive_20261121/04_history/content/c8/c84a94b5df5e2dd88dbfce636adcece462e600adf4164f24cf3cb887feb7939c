@@ -1,0 +1,81 @@
+% NEW_TRANSLATION_D17: EGAVaiello.pdf, PDF/printed pp.41--43, section 11 in full.
+\egasection{§11\quad Grassmann 概形}
+\source{\texttt{EGAVaiello.pdf} 第41--43页；第十七版补译}
+
+现在我们要使用 $P$ 中的线性子簇，其相对维数不再限于0和 $n-1$，因此显然需要引入关于 Grassmann 概形的一些记号，以及关于线性子簇构造的若干属于“初等几何”的连锁事实〔原词：\textit{sorites}〕\ednote{这个词最好怎样翻译？〔底本脚注57。〕}；它们全都应当放在本段开头。此外，实际中有时也要取任意线性截面，而不只取超平面截面，所以宜以这种较广的观点重新审视前面所有编号小节。
+
+设 $E$ 是预概形 $S$ 上的拟凝聚模，$n>0$ 为整数。考虑函子
+\[
+(\mathbf{Sch}/S)^{\mathrm{op}}\longrightarrow\mathbf{Ens},
+\]
+其在 $S'$ 上的值 $\operatorname{Grass}_n(E)(S')$，为 $E_{S'}$ 的局部自由、秩为 $n$ 的商模所成的集合。\transnote{这里的商模按相容的商映射同构类计；下标 $S'$ 表示沿 $S'\to S$ 的拉回。底本写 $(\mathrm{Sch})^0/S$ 及 $E'_s$，正文将反变范畴和拉回记号写清。}
+
+这个函子可表；代表它的 $S$-预概形也记作 $\operatorname{Grass}_n(E)$。为证明可表性，考虑函子间的自然态射
+\[
+\operatorname{Grass}_n(E)\longrightarrow
+\operatorname{Grass}_1(\textstyle\bigwedge^nE)
+=\mathbf P(\textstyle\bigwedge^nE),
+\]
+它把 $E_{S'}$ 的每个局部自由、秩为 $n$ 的商模 $G$，对应到局部自由、秩为一的模 $\bigwedge^nG$，将后者看作 $(\bigwedge^nE)_{S'}$ 的商模。\cmt{D17-E04}{底本在说明这条自然态射时，把秩一的模和它的源都仍写为 $G$、$E_{S'}$，遗漏了外幂。秩为 $n$ 的 $G$ 一般不是秩一模；正文补全明确给出此映射的 $\bigwedge^nE_{S'}\twoheadrightarrow\bigwedge^nG$。}
+与 Cartan 讨论班\ednote{请把参考文献写得更精确。〔底本脚注58。〕}中的证明一样，可以证明这个态射“可由闭浸入表示”；于是 $\operatorname{Grass}_n(E)$ 是 $\mathbf P(\bigwedge^nE)$ 的闭子概形。特别地，它在 $S$ 上分离；当 $E$ 为有限型时，它在 $S$ 上拟紧并且射影。\cmt{D17-E05}{底本把“在 $S$ 上拟紧”无条件置于“若 $E$ 为有限型则射影”之前。一般拟凝聚 $E$ 不保证拟紧性：取 $S=\Spec k$、$E=\bigoplus_{i\geq0}ke_i$、$n=1$，则 $\mathbf P(E)=\operatorname{Proj}k[T_0,T_1,\ldots]$ 的标准开覆盖 $D_+(T_i)$ 没有有限子覆盖。正文将拟紧性限制在此处足够的有限型情形，详细反例见核查报告。}
+若 $E$ 为有限表示，则 $\operatorname{Grass}_n(E)$ 在 $S$ 上也为有限表示。事实上，可以假设 $S$ 仿射，写作 $S=\Spec A$；于是 $E$ 可以由 $A$ 的某个有限型子环上的有限表示模通过扩标量得到，而 $\operatorname{Grass}_n(E)$ 的构造显然与 $S$ 上的基变换相容。\transnote{底本这里只说“来自 $A$ 的某个有限型子环上的有限型模”。为使所述归约真正保持有限表示，取定义 $E$ 的有限表示矩阵的有限个系数所生成的子环，并在该子环上使用同一有限矩阵即可；正文将这项必要信息写明。这里不是断言任意有限型模都能如此下降其全部关系。}
+
+若 $E$ 局部自由且秩有限，则 $\operatorname{Grass}_n(E)$ 在 $S$ 上光滑；在秩至少为 $n$ 的部分，其纤维几何连通。这来自一个更精确的事实：若 $E$ 自由且秩为 $r\geq n$，则 $\operatorname{Grass}_n(E)$ 可以由 $\binom rn$ 个开子集覆盖，每个开子集都在 $S$ 上同构于相对维数为 $n(r-n)$ 的仿射空间。\transnote{底本未说明 $n>r$ 时的边界；此时没有秩为 $n$ 的商，代表概形为空。正文将非空的几何连通纤维断言限制在 $n\leq r$，而空部分仍在 $S$ 上光滑。}
+这一覆盖来自于借助 $E$ 的一组基选取 $\binom rn$ 个坐标直和分解，即分裂正合列
+\[
+(s)\qquad0\longrightarrow E'\longrightarrow E
+\longrightarrow E''\longrightarrow0,
+\qquad\operatorname{rank}E'=n.
+\]
+\transnote{底本在这条正合列首项把 $E'$ 印成 $E$，而次页明说 $E'$ 秩为 $n$；按坐标分解订正。}
+这样的正合列确定 $\operatorname{Grass}_n(E)$ 的一个子函子 $\operatorname{Grass}_n(s)$：只取那些使复合同态
+\[
+E'_{S'}\longrightarrow E_{S'}\longrightarrow G
+\]
+为满射、从而为同构的局部自由秩 $n$ 商 $G$。包含态射
+\[
+\operatorname{Grass}_n(s)\longrightarrow\operatorname{Grass}_n(E)
+\]
+可由开浸入表示；另一方面，在上述选定的坐标分裂下，$\operatorname{Grass}_n(s)$ 典范同构于向量丛
+\[
+\mathbf V\bigl(\mathscr{H}\!om_{\mathcal O_S}(E',E'')\bigr).
+\]
+\cmt{D17-E06}{底本在此重复一段“可由开浸入表示；另一方面”，并把表示所选分解的 $s$ 多次写成 $S$。正文删去重复、统一记号。这个开图参数化从 $E$ 到 $E'$ 的、在 $E'$ 上为恒等的同态；在选定分裂后，它由 $E''\to E'$ 给出。在本书 $\mathbf V(M)=\operatorname{Spec}\operatorname{Sym}M$ 的约定下，上式正好代表这种同态。若仅给任意未选分裂的短正合列，则该开图是相应向量丛的挠子，并无无条件的典范零截面；正文保留了坐标分解所给的分裂前提。}
+
+这种特殊结构的一个推论是：若 $s\in S$，则在 $E$ 局部自由、秩有限的条件下，$\operatorname{Grass}_n(E)$ 的每个 $k(s)$-值点都可提升为 $s$ 的某个邻域上的截面。另一方面，若 $S=\Spec k$，$k$ 是无限域，则 $\operatorname{Grass}_n(E)$ 的每个非空开子集都包含一个 $k$-有理点。
+
+$\operatorname{Grass}_n(E)$ 的一个 $S$-值点，即 $E$ 的一个局部自由秩 $n$ 商模 $G$，典范地确定 $\mathbf P(E)$ 的一个子概形 $\mathbf P(G)$。这样的子概形称为 $\mathbf P(E)$ 的\emph{线性子簇}（可能混淆时，说相对于 $S$ 的线性子簇）；这里在定义名称时不限定或指定 $G$ 的秩〔英译者说明〕。若 $n\geq1$，它是相对维数 $n-1$ 的射影纤维丛；若 $n=0$，它为空。立即可以验证，若知道对应的线性子簇，就知道 $\operatorname{Grass}_n(E)$ 的截面，也就是商 $G$。这样，对于 $n\geq1$，Grassmann 概形可解释为函子“$\mathbf P(E)_{S'}$ 的相对维数 $n-1$ 的线性子簇”的代表，其中 $S'$ 变动。
+
+此外，还能给出后一函子、也就是相对维数 $m$ 的线性子簇概念的内在刻画：它们在每个 $s\in S$ 处“射影次数为一”。这一刻画将在后面的章节中给出，我们这里完全用不到它。\transnote{底本这句语法有缺口，只写出相对维数与逐纤维“射影次数一”，没有完整列明平坦性、有限表示等可能需要的条件。这里保留作者的预告，不将该残句单独表述为一个已经完备的充要判据。}
+
+再假设 $E$ 局部自由、秩为 $r$，并以 $E^\vee$ 表示其对偶。由极性对应，得到典范同构
+\[
+\operatorname{Grass}_n(E)\simeq
+\operatorname{Grass}_{r-n}(E^\vee),
+\]
+它把 $E$ 的商 $G$ 对应到 $E^\vee$ 的商 $E^\vee/G^\vee$。从线性子簇的观点看，$P$ 中相对维数为 $m$ 的线性子簇 $L$，对应到 $P^\vee$ 中相对维数为
+\[
+r-m-2=(r-1)-1-m
+\]
+的对偶线性子簇 $L^0$，也就是说，其在 $P^\vee$ 中的相对余维为 $m+1$。〔附记：这里 $r-1$ 是 $P$ 和 $P^\vee$ 在 $S$ 上的共同相对维数。〕\transnote{底本将维数印作 $(r-1)+-1-m$，正文只整理这两个相邻运算符。$m=r-1$ 时对偶线性子簇为空，依本段的约定赋予维数 $-1$。}
+几何上可以如下理解这个对应。先取 $n=r-1$，便得到同构
+\[
+\mathbf P(E^\vee)\simeq\operatorname{Grass}_{r-1}(E),
+\]
+从而可将 $P^\vee$ 的 $S$-值点（例如取 $S$-值点）认同为 $P$ 中余维为一的线性子簇，仍称为 $P$ 的\emph{超平面}。
+
+这说明 $L^0$ 由包含 $P$ 中线性子簇 $L$ 的超平面组成；精确地说，$L^0$ 的 $S'$-值点就是 $P_{S'}$ 中包含 $L_{S'}$ 的超平面。\transnote{底本在括号中写成“$L$ 的 $S'$-值点”，但所描述的是对偶参数空间 $L^0$ 的点；正文补上上标。}
+这来自下面的事实；它本应与“$P$ 的线性子簇 $L$ 确定其所来自的局部自由商 $G$（或 $Q$，字迹不清）”这一事实同时出现：若 $G$ 与 $G'$ 是 $E$ 的两个局部自由商（不一定同秩），则
+\[
+\mathbf P(G')\subset\mathbf P(G)
+\]
+作为 $\mathbf P(E)$ 的线性子簇之间的包含，等价于 $G'$ 是 $G$ 的商；这个包含正是由 $G\twoheadrightarrow G'$ 诱导的态射。
+
+以上是我们至少应当掌握的连锁事实〔法文：\textit{sorites}〕\ednote{请询问 A.G. 或 Deligne，最好用哪个词。〔底本脚注59。〕}。在本段\ednote{A.G. 所说的 paragraph 是什么意思？〔底本脚注60。〕}所有其他编号小节写出之前，无论如何还不能确定完整的清单。
+
+我觉得也宜引入函子 $\operatorname{Grass}(E)$，其在 $S'$ 上的值为 $E_{S'}$ 的局部自由、有限秩但不预先指定秩的商模所成的集合〔字迹不清，请询问 A.G.〕。于是它由
+\[
+\coprod_{n\geq0}\operatorname{Grass}_n(E)
+\]
+代表。$\mathbf P(E)$ 的线性子簇确实由 $\operatorname{Grass}(E)$ 在 $S$ 上的截面确定。〔附记：若 $S$ 不连通，秩、也就是相对维数，可以变化。此处字迹略有不清，请与 A.G. 核实。〕\transnote{这里“秩不预先指定”指局部有限秩，秩函数可在不同开闭部分取不同的非负整数；不是允许无限秩商。否则上面的有限整数指标不交并不能代表那个更大的函子。}
+

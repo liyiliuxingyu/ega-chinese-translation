@@ -1,0 +1,88 @@
+{
+  "baseline_sha256": "8891c366aeaff4975b980f2b834617d5ba8b29379a03638e1d3527b44f2d1e27",
+  "new_sha256": "eb805f3acc63a5322bec84f7df57330da307039dafb2570fb8188011d4a94a6f",
+  "changes": [
+    {
+      "reason": "纳入Dot两批同文校订；保留旧注4(d)",
+      "before": "\\egas{1}{定义}\n设 $X$ 为正则预概形，$\\varphi$ 为 $\\OO_X$ 的截面。若 $\\varphi_x\\in\\mm_x^2$，则称 $x\\in X$ 为 $\\varphi$ 的\\textbf{奇异零点（或根）}。若它是奇异零点，并且由它定义的元素\n\\[\n \\varphi_x\\bmod\\mm_x^3\\in\\mm_x^2/\\mm_x^3\\simeq\\Sym(\\mm_x/\\mm_x^2),\n\\]\n在解释为 $\\mm_x/\\mm_x^2$ 的对偶 $t_x$ 上、取值于 $k(x)$ 的二次型时为退化二次型，则称它为\\textbf{超奇异零点}。\n\\cmt{T08}{这里的 $\\Sym$ 应取二次部分 $\\Sym^2$，不是整个对称代数。底本还把点的最大理想记作 $\\mm_X$，本译文用 $\\mm_x$ 明确其属于点 $x$ 的局部环。}\n（不是超奇异零点的奇异零点，有时称为\\textbf{普通奇异零点}。）\\cmt{P05}{“退化二次型”的约定在特征2时必须明确；后文用极化双线性映射的行列式判断，需要另核其与本定义是否完全一致。这里不擅自加入特征不等于2的假设。}\n\n\\egas{2}{备注}\n若 $x\\in V(\\varphi)$，则 $x$ 是 $\\varphi$ 的非奇异零点，当且仅当 $\\varphi_x\\ne0$，且 $x$ 是 $V(\\varphi)$ 的非奇异点，即正则点；也就是说，当且仅当 $x$ 是 $V(\\varphi)$ 的正则点，且在 $x$ 的某个邻域中 $V(\\varphi)\\ne X$。\n\n\\egas{3}{定义}\n设 $X$ 是域 $k$ 上的光滑预概形，$\\varphi$ 为 $\\OO_X$ 的截面，$x\\in V(\\varphi)$。若对 $k$ 的每个扩域 $k'$，以及 $X$ 的每个以 $k$ 为值域、定位于 $x$ 的点 $\\xi$，其在 $X_{k'}$ 中的对应点 $x'$ 都是 $\\varphi_{k'}$ 的奇异零点（分别地，超奇异零点），则称 $x$ 为 $\\varphi$ 相对于 $k$ 的\\textbf{几何奇异零点}（分别地，\\textbf{几何超奇异零点}）。\n\\cmt{T08}{底本此处明确印作“values in $k$”，但随后的 $X_{k'}$ 点和备注4(a)均要求“以 $k'$ 为值域”。本段保留该误写以便对照；按定义使用时应改为 $k'$，否则非 $k$-有理点可能根本没有这种测试点，造成空泛量化。}\n\n\\egas{4}{备注}\n\\begin{enumerate}[label=\\alph*)]\n\\item 由下文将建立的判据可知，在定义3中，只须用某个 $k'$ 上的一个值点进行检验；例如可取 $k'=k(x)$ 或其代数闭包 $\\overline{k(x)}$，以及相应的典范值点。\n\\item 由备注2可知，$x$ 对 $\\varphi$ 几何非奇异，当且仅当 $\\varphi_x\\ne0$，并且 $V(\\varphi)$ 在 $x$ 处对 $k$ 光滑。\n\\item 设预概形 $X$ 对另一预概形 $Y$ 光滑，$\\varphi$ 为 $\\OO_X$ 的截面，$x\\in V(\\varphi)$。若 $x$ 在纤维 $X_s$ 上是相对于 $k(s)$ 的奇异零点（分别地，超奇异零点），则称它为\\textbf{相对于 $Y$ 的奇异零点}（分别地，超奇异零点）；这里 $s$ 是 $x$ 在 $Y$ 中的像。\n\\item 在定义1的条件下，若将 $\\varphi$ 换成 $\\varphi'=u\\varphi$，其中 $u$ 在 $x$ 处可逆，则 $x\\in V(\\varphi)$ 的奇异性或超奇异性不变。因而定义1以及定义3都可以自然地推广到 $\\varphi$ 为某个可逆模 $L$ 的截面的情形，并在 $L=\\OO_X$ 时恢复原定义。\n\\end{enumerate}",
+      "after": "\\egas{1}{定义}\n设$X$为正则预概形，$\\varphi$为$\\mathcal O_X$的一个截面。若点$x\\in X$满足\n\\[\n\\varphi_x\\in\\mathfrak m_x^2,\n\\]\n则称$x$为$\\varphi$的一个\\emph{奇异零点（或根）}。\\cmt{V-H-C16-01}{底本写作$\\mathfrak m_X$，但所讨论的是点$x$处的函数芽及余域$k(x)$；故明确记$\\mathfrak m_x$为局部环$\\mathcal O_{X,x}$的极大理想，$\\varphi_x$为截面在该局部环中的芽。}\n若$x$是一个奇异零点（或根），并且$\\varphi_x$所确定的元素\n\\[\n[\\varphi_x]\\in\\mathfrak m_x^2/\\mathfrak m_x^3\n\\simeq\\operatorname{Sym}^2_{k(x)}(\\mathfrak m_x/\\mathfrak m_x^2)\n\\]\n在被解释为$k(x)$上向量空间$\\mathfrak m_x/\\mathfrak m_x^2$的对偶空间$t_x$上的二次型时，是一个退化二次型，则称$x$为一个\\emph{超奇异零点}。\\cmt{V-H-C16-02}{底本右端实际印为$\\operatorname{Sym}(\\mathfrak m_X/\\mathfrak m_X^2)$，未写二次分次。左端是极大理想滤过的二次分次，且下文明确解释为二次型，所以此处补为$\\operatorname{Sym}^2$；所用同构是正则局部环的伴随分次代数同构的二次部分。底本此处未说明“degenerate form”在特征2下的约定，译文仅照译为“退化二次型”，不擅自用极化双线性型行列式为零替换该定义；具体约定留待后文核实。}\n（不是超奇异零点的奇异零点〔或根〕，有时称为\\emph{普通奇异零点}。）\n\n\\egas{2}{注}\n若$x\\in V(\\varphi)$，则$x$是$\\varphi$的一个非奇异零点，当且仅当$\\varphi_x\\ne0$且$x$是一个非奇异点，也就是说，$x$是$V(\\varphi)$的一个正则点；换言之，当且仅当$x$是$V(\\varphi)$的正则点，并且在$x$的某个邻域内$V(\\varphi)\\ne X$。\\cmt{V-H-C16-03}{原句中“a non-singular point”由紧随的“i.e.”解释为$V(\\varphi)$的正则点，而不是仅指$X$的正则点。此处仍在定义1的正则环境中；$V(\\varphi)$按由$\\varphi$定义的闭子概形理解。条件$\\varphi_x\\ne0$指局部环中的芽不为零，不是余域中的值不为零：既然$x\\in V(\\varphi)$，其余域值恰为零。末尾的邻域不等式按局部子概形意义理解为该芽不为零，不是只比较整个空间中两个底层点集。原文两个“i.e.”的解释链保留，不删去必要的非零条件。}\n\n\\egas{3}{定义}\n设$X$为域$k$上的光滑预概形，$\\varphi$为$\\mathcal O_X$的一个截面，且$x\\in V(\\varphi)$。如果对于$k$的每一个扩域$k'$，以及$X$的每一个以$k'$为值域、位于$x$的点$\\xi$，在$X_{k'}$中对应的点$x'$都是$\\varphi_{k'}$的奇异零点（分别为超奇异零点），则称$x$为$\\varphi$相对于$k$的一个\\emph{几何奇异零点}（分别为\\emph{几何超奇异零点}）。\\cmt{V-H-C16-04}{底本在“for every extension $k'$ of $k$”之后印作“with values in $k$”，与所述基变换及注4(a)不合；此处校为“以$k'$为值域”。其含义是一个$k$态射$\\xi:\\operatorname{Spec}k'\\to X$，像为$x$；它诱导$X_{k'}=X\\times_k\\operatorname{Spec}k'$中的点$x'$。并非任意扩域都存在这样的$\\xi$；量词只要求检验实际存在的点。底本写$X'_k$和$\\varphi'_k$，这里统一以$X_{k'}$、$\\varphi_{k'}$表示基变换及拉回截面，避免撇号位置混淆。}\n\n\\egas{4}{注}\n\\begin{enumerate}\n\\item[(a)] 由后面将建立的判据可知，在定义3中，只须用一个以某个$k'$为值域的点作检验即可。例如，可以取$k'=k(x)$或$\\overline{k(x)}$，并取以这样的$k'$为值域的典范点。\\cmt{V-H-C16-05}{底本第二个$k(x)$上有横线，此处明确为余域的代数闭包$\\overline{k(x)}$。典范点来自$\\operatorname{Spec}k(x)\\to X$，或其沿$k(x)\\hookrightarrow\\overline{k(x)}$的复合。作者以尚待展开的判据为依据；本段译校未补造该判据及其证明。}\n\\item[(b)] 由注2可知，$x$是$\\varphi$的几何非奇异零点，当且仅当$\\varphi_x\\ne0$，且$V(\\varphi)$在$x$处光滑。\\cmt{V-H-C16-06}{这里仍在定义3的域$k$上讨论，因此“光滑”指在$k$上光滑。$\\varphi_x\\ne0$是局部环中的芽非零，并不表示在余域中的函数值非零。$x\\in V(\\varphi)$时后者为零；该非零条件不能省略，否则零截面也会被误判为非奇异。}\n\\item[(c)] 假设预概形$X$在另一个预概形$Y$上光滑，$\\varphi$为$\\mathcal O_X$的一个截面，且$x\\in V(\\varphi)$。若$x$在纤维$X_s$上是相对于$k(s)$的奇异零点（或超奇异零点），就称$x$为相对于$Y$的奇异零点（或超奇异零点）；这里$s$是$x$在$Y$中的像。\\cmt{V-H-C16-07}{纤维上所用函数是$\\varphi$的限制。底本此项写“singular zero (or supersingular) relative to $Y$”和“such relative to $k(s)$”，没有在这两处重复“geometrically”；正文保留这一措辞。在紧接定义3的语境中，“相对于$k(s)$”承接域上几何版本的定义，不应悄然改成仅检验纤维局部环的未作扩域的版本。术语是否在后文统一，仍须继续对照。}\n\\item[(d)] 在定义1的条件下，若将 $\\varphi$ 换成 $\\varphi'=u\\varphi$，其中 $u$ 在 $x$ 处可逆，则 $x\\in V(\\varphi)$ 的奇异性或超奇异性不变。因而定义1以及定义3都可以自然地推广到 $\\varphi$ 为某个可逆模 $L$ 的截面的情形，并在 $L=\\OO_X$ 时恢复原定义。\n\\end{enumerate}"
+    },
+    {
+      "reason": "标明两底本重合，不重复计入已译量",
+      "before": "\\source{\\texttt{EGAV1-2.ps}，转换后共6页：标题页及正文印刷第1--5页}",
+      "after": "\\label{ega:V-short}\n\\source{\\texttt{EGAV1-2.ps}，转换后共6页：标题页及正文印刷第1--5页；与\\texttt{EGAVaiello.pdf}第62--66页前部同文}\n\\noindent\\textbf{本版同文校订。}定义1至注4(c)合入Dot随后两批的校订；重合段落只排印一次，原有注4(d)及后文完整保留。两载体的接合位置与仍待核的数学问题见本版核查报告。"
+    },
+    {
+      "reason": "命题5的相对底S改Y",
+      "before": "相对于 $S$ 的奇异零点集 $V(\\varphi)_{\\mathrm{sing}}$。\n\\cmt{T08}{此前的相对底为 $Y$；本句的 $S$ 尚未引入，故此处应为 $Y$。}",
+      "after": "相对于 $Y$ 的奇异零点集 $V(\\varphi)_{\\mathrm{sing}}$。\n\\cmt{D17-S01}{底本此句写相对于$S$，但前提中的相对底为$Y$，且$S$尚未引入；本版据前提订正。原历史注号为T08。}"
+    },
+    {
+      "reason": "二次初始项基变换下标统一",
+      "before": "（当 $X_k$ 由 $X/S$ 经 $\\Spec k\\to S$ 得到时）。\\cmt{T08}{这句又改用了 $S$，而本段相对底仍记为 $Y$。它涉及同一类未统一的相对下标，不另计为一个定理反例。}",
+      "after": "（当 $X_k$ 由 $X/Y$ 经 $\\Spec k\\to Y$ 得到时）。\\cmt{D17-S02}{底本此处两次使用$S$，本段仍以$Y$为相对底，故统一为$Y$；历史注号T08已经指出这一问题。}"
+    },
+    {
+      "reason": "相对维数等式移入正确正文",
+      "before": "再假设 $V'$ 对 $S$ 光滑，相对维数为原稿所写的\\cmt{T09}{该等式左边实际为 $m-d$。由 $X/Y$ 相对维数 $d$、$Y/S$ 相对维数 $m$，预期的计算应为 $(m+d)-(d+1)=m-1$。}\n\\[\n (m+1)-(d+1)=m-1.\n\\]",
+      "after": "再假设 $V'$ 对 $S$ 光滑，相对维数为\n\\[\n (m+d)-(d+1)=m-1.\n\\]\n\\cmt{D17-S03}{底本写$(m+1)-(d+1)=m-1$，左边实际为$m-d$。由$X/Y$相对维数$d$及$Y/S$相对维数$m$，环境$X/S$的相对维数为$m+d$；原历史注T09已给出这一订正，本版将它移入正文。}"
+    },
+    {
+      "reason": "零点概形微分列首项限制到W",
+      "before": " F^\\vee\\otimes\\OO_X\\longrightarrow\n \\Omega^1_{X/S}\\otimes\\OO_W\\longrightarrow\\Omega^1_{W/S}\\longrightarrow0.",
+      "after": " F^\\vee\\otimes_{\\OO_X}\\OO_W\\longrightarrow\n \\Omega^1_{X/S}\\otimes_{\\OO_X}\\OO_W\\longrightarrow\\Omega^1_{W/S}\\longrightarrow0."
+    },
+    {
+      "reason": "Jacobian判据层单射改纤维单射",
+      "before": "原稿接着说：若 $X/S$ 光滑，则第一个同态恰在 $W$ 对 $X$ 光滑且具有“正确”相对维数的点处单射（也就是说，在当前情形下处处单射）。\\cmt{E06、T10}{若把它理解为 $W$ 上的模列，首项应限制到 $W$；作为 $X$ 上的模列则可经限制映射解释。相对光滑的底应核为 $S$，而层单射不足以推出光滑，须检验纤维满秩。尖点例子见E06。}",
+      "after": "若$X/S$光滑，则第一个同态在点$w\\in W$的余域纤维上单射，当且仅当$W/S$在$w$处光滑，且相对维数为$X/S$的相对维数减去$F$的秩（这在当前所加的光滑性及维数假设下处处成立）。\\cmt{D17-S04}{原文写的是模层同态“单射”，并把光滑的相对底印成$X$。模层单射本身不是Jacobian判据；正确条件为余域纤维满秩，相对底为$S$。首项也应限制到$W$。旧报告E06的尖点反例仍保留；本版将已有核查意见落实为正文的纤维秩判据。这里使用$F$的分量给出的局部方程，不能丢弃所列正确余维条件。}"
+    },
+    {
+      "reason": "余法正合列末项纠正",
+      "before": "这个正合列直接由第16段中的下列正合列得到（可以把上述版本列为推论）：\\cmt{T10}{末项在底本中重复写作 $\\Omega^1_{X/S}$；余法正合列的末项应为 $\\Omega^1_{W/S}$。这里保留错误式，而非无说明地改写。}\n\\[\n J/J^2\\longrightarrow\\Omega^1_{X/S}\\otimes\\OO_W\n      \\longrightarrow\\Omega^1_{X/S}\\longrightarrow0.\n\\]",
+      "after": "这个正合列直接由第16段中的下列正合列得到（可以把上述版本列为推论）：\n\\[\n J/J^2\\longrightarrow\\Omega^1_{X/S}\\otimes\\OO_W\n      \\longrightarrow\\Omega^1_{W/S}\\longrightarrow0.\n\\]\n\\cmt{D17-S05}{底本末项重复印为$\\Omega^1_{X/S}$；余法正合列的末项应为$\\Omega^1_{W/S}$，本版落实旧注T10所列订正。}"
+    },
+    {
+      "reason": "紧邻Jacobian判据措辞同步限定",
+      "before": "能够在最左边添上一个零的点集的刻画，包含在 Jacobian 判据中。\\cmt{E06}{这一句也必须结合纤维满秩与适当余维假设理解，不能把抽象单射与光滑判据等同。}",
+      "after": "上述余域纤维上的单射条件，以及它所保证的列左端正合性，由Jacobian判据刻画。\\cmt{D17-S06}{底本仅说“能够在最左边添上一个零”；本版承接前述纠正，将其限定为Jacobian判据的纤维秩条件，不再把抽象层单射等同于光滑性。}"
+    },
+    {
+      "reason": "图式下标及μ、ν字母错置迁入正文",
+      "before": "注意，有典范同构\n\\[\n \\PP^1_{X/S}=\\Omega^1_{X/S}+\\OO_X,\n \\qquad (\\PP^1_{X/S})^\\vee=G_{X/S}+\\OO_X\n\\]\n（原稿中的 $G$ 是拉长的字形）。\\ednote{拉长的 $G$ 是否就是切层？}\n\\cmt{T08}{这里以及紧接的 $\\Omega^1_{X/S}$、$G_{X/S}$ 与前面 Hessian 构造的 $X/Y$ 下标不一致。若解释图中的 $\\mu$，应使用相对于 $Y$ 的主部与微分。}\n另一方面，可验证图中复合同态 $\\mu$ 在因子 $\\OO_{V'}$ 上为零，在因子 $G_{X/S}\\otimes\\OO_{V'}$ 上化为从上述 $\\Sym^2(\\Omega^1_{X/S})\\otimes\\OO_{V'}$ 的截面 $M(\\varphi)$ 得到的同态 $M(\\varphi)$〔此处字迹不清〕。因此，在 $X$ 的点 $x$ 处，$M(\\varphi)$ 非退化，即 $M(\\varphi)'$ 满射，当且仅当原稿所写的 $M$ 在 $x$ 处满射；图中这也等价于原稿所写的 $V$ 在 $x$ 处满射，因为两者都表示：所提到的 $\\Omega^1_{X/S}|_{V'}$ 的两个子模之和到该模的典范同态在 $x$ 处满射。\\cmt{T08}{本句的 $M,V$ 依图应读为 $\\mu,\\nu$；这是印在英译载体中的字母错置。}\n",
+      "after": "注意，有典范同构\n\\[\n \\PP^1_{X/Y}=\\Omega^1_{X/Y}+\\OO_X,\n \\qquad (\\PP^1_{X/Y})^\\vee=G_{X/Y}+\\OO_X\n\\]\n（原稿中的$G$是拉长的字形）。\\ednote{拉长的$G$是否就是切层？}\n\\cmt{D17-S07}{底本这里把三处相对下标写为$X/S$，但图中同态$\\mu$的定义域为$(\\PP^1_{X/Y})^\\vee|_{V'}$，二次初始项来自$X/Y$；本版统一这些项为$X/Y$。$+$沿用原稿的直和记号，$G$沿用其切层记号，编者疑问照存。}\n另一方面，可验证图中复合同态$\\mu$在因子$\\OO_{V'}$上为零，在因子$G_{X/Y}\\otimes_{\\OO_X}\\OO_{V'}$上化为由$\\Sym^2(\\Omega^1_{X/Y})\\otimes\\OO_{V'}$的截面$M(\\varphi)$得到的同态$M(\\varphi)'$〔此处字迹不清〕。因此，在点$x\\in V'$处，$M(\\varphi)'$满射，当且仅当$\\mu$在$x$处满射；由图中两条正合列，这又等价于$\\nu$在$x$处满射，因为两者均表示$\\Omega^1_{X/S}|_{V'}$的上述两个子模之和到该模的典范同态在$x$处满射。\\cmt{D17-S08}{底本先把同态$\\mu$印为$M$，再把$\\nu$印为$V$；本版据原图订正（旧注T08）。这个满射性的线性代数等价不解决特征2下“退化二次型”的约定问题；不能由此声称本稿所有特征下的超奇异判据已独立验证。}\n"
+    },
+    {
+      "reason": "破损外幂公式改成有效类型并原式留脚注",
+      "before": "若两者的秩分别为 $q,r$，原英译在此写成\n\\[\n \\Lambda^1Q\\longrightarrow\\Lambda\\sqrt M\n\\]\n不满射的点集，并将截面所属的 Hom 表达式写成\\cmt{T01}{这里的根号式字形在 PS 渲染页面上确实可见，并非本次文本抽取造成。它不能构成有效的外幂公式。可有数学意义的表达应为 $\\bigwedge^rQ\\to\\bigwedge^rM$，视为 $\\mathscr Hom(\\bigwedge^rQ,\\det M)$ 的截面。本译文不把破损式冒充可读的完整公式。}\n\\[\n\\begin{split}\n \\Hom(\\Lambda^1Q,\\Lambda\\sqrt M)\n &\\simeq(\\approx)(\\Lambda\\sqrt Q)\\\\\n &\\qquad\\otimes(\\Lambda^rR)\\otimes(\\Lambda^1Q)^\\vee.\n\\end{split}\n\\]\n\n",
+      "after": "若两者的秩分别为$q,r$，这也是最高目标外幂同态\n\\[\n \\bigwedge^r Q\\longrightarrow\\bigwedge^r M\n\\]\n不满射的点集，亦即相应的典范截面\n\\[\n \\mathscr{H}\\!om(\\bigwedge^r Q,\\bigwedge^r M)\n \\simeq(\\bigwedge^r Q)^\\vee\\otimes\\det M\n\\]\n的零点集。\\cmt{D17-S09}{底本破损式写为$\\Lambda^1Q\\to\\Lambda\\sqrt M$，并写$\\Hom(\\Lambda^1Q,\\Lambda\\sqrt M)\\simeq(\\approx)(\\Lambda\\sqrt Q)\\otimes(\\Lambda^rR)\\otimes(\\Lambda^1Q)^\\vee$。这些字形在原PS渲染中确实存在，并非本次抽取造成。正确外幂为目标秩$r$的外幂，相应Hom模如正文；旧注T01已作此类型核对，本版将可确定的公式移入正文。}\n\n"
+    },
+    {
+      "reason": "局部自由模秩条件及商模纠正",
+      "before": "使原稿所写的\n\\[\n p+1=m+1\n\\]\n成立；对态射 $P\\to M/W=S$ 和 $Q\\to M/P=R$ 使用上述构造，",
+      "after": "使\n\\[\n p+q=m+1\n\\]\n成立；对态射 $P\\to M/Q=S$ 和 $Q\\to M/P=R$ 使用上述构造，"
+    },
+    {
+      "reason": "保留秩与商模原错记录",
+      "before": "\\cmt{T01}{按上一句的余秩关系，这里应为 $p+q=m+1$；$M/W$ 则应为 $M/Q$，因为 $W$ 是赋环空间而非 $M$ 的子模。这些修正均需明示。}",
+      "after": "\\cmt{D17-S10}{底本把秩条件写为$p+1=m+1$，商模写为$M/W$。按余秩关系应为$p+q=m+1$，且$W$是赋环空间而非$M$的子模，故商模应为$M/Q$。本版落实旧注T01所列订正。}"
+    },
+    {
+      "reason": "行列式线丛末因子取逆",
+      "before": "也可把这两个截面视为从原稿所写的\n\\[\n L=\\det P\\otimes\\det Q\\otimes\\det M\n\\]\n分别到 $P,Q$ 的同态。\\cmt{T01}{由上面两个截面所属的模计算，$L$ 的末因子应为 $(\\det M)^{-1}$。详见核查报告中的类型核对。}",
+      "after": "也可把这两个截面视为从\n\\[\n L=\\det P\\otimes\\det Q\\otimes(\\det M)^{-1}\n\\]\n分别到 $P,Q$ 的同态。\\cmt{D17-S11}{底本最后一个因子写作$\\det M$。由上面两个截面所属的模计算，应为$(\\det M)^{-1}$；合并英文稿第66页紧接的图也明写此逆因子。本版据类型核对及该图落实旧注T01的订正。}"
+    },
+    {
+      "reason": "标明真实非重复接续点为PDF66交换图",
+      "before": "\\par\\bigskip\\noindent\\textbf{原文件在此结束。}标题提及的其他小节不能仅凭文件名认定已收录；所上传的六页文件没有在最后一句之后提供交换图或证明结尾。本译稿已翻译其全部可读正文，但没有补造所缺内容。",
+      "after": "\\par\\bigskip\\noindent\\textbf{PS底本在此结束。}所上传的六页\\texttt{EGAV1-2.ps}未在最后一句后提供交换图或证明结尾。合并英文稿\\texttt{EGAVaiello.pdf}第66页在这一句后实际给出交换图并继续论证；该图起是本项目下一处尚未译入的内容。本版已核对两个载体的这个接合点，不把PS中的截断误称为合并英文稿的缺文，也不把Dot第62页的分批断点误当作全工程接续点。"
+    }
+  ],
+  "later_revision_notes": [
+    "S12：局部直和因子条件据第66页前列。",
+    "S13：据第73–74页作者修订校正普通奇异零点旧称；第78页二次型约定前向引用。",
+    "注2正文明确局部子概形不等，排除存在邻域的错误量词读法。",
+    "S03/S05/S10引标移至相应公式引导句；内容未变。"
+  ],
+  "complete_current_diff": "short_collation.diff"
+}

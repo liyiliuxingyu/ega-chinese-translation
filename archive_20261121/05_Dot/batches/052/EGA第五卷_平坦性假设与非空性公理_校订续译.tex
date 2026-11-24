@@ -1,0 +1,31 @@
+\documentclass[openany,fontset=fandol]{ctexbook}
+\usepackage{amsmath,amssymb}
+\usepackage[unicode,hidelinks]{hyperref}
+\newcommand{\note}[1]{\unskip\nobreak\footnote{译注：#1}}
+\begin{document}
+\title{代数几何基础第五卷预备笔记\\平坦性假设与泛截面非空性公理}
+\author{据用户上传英译编辑稿译出}
+\date{2026年11月19日}
+\maketitle
+\chapter*{范围与校订状态}
+本批译出底本第60页“We will assume that $P$ and $G$ are flat over $S$”起的两个完整段落，至页末提出维数为$m$的闭不可约子集的泛截面非空性公理。下一接续位置为第61页“Let us again take a closed subset $Z$ of $X$”。
+
+保留不可辨文字提示及底本脚注70。原稿把多个不同对象印成相同字母，继续用$\mathcal P,\mathcal X,\mathcal Z$区别关联对象；空集符号规范为$\varnothing$。末句与上下文直接冲突的空性符号订为非空并列明原写法。其他适用条件与历史待核未视作已解决；未合并主稿。
+\chapter*{§15 前述若干结果的公理化（续）}
+我们将假设$P$和$G$在$S$上平坦，且$G$的纤维几何不可约、维数为$N$（以便能够考虑泛点！）；假设态射$\mathcal P\to P$光滑，其纤维几何不可约、维数为$N-m$。于是态射$\mathcal X\to X$也具有同样的性质。\note{沿用$\mathcal X=X\times_P\mathcal P$的记号；底本将这两个态射分别印作$P\to P$和$X\to X$。正文按其基变换关系区别源与目标，不改动光滑性、几何不可约性及维数假设。}
+所有提到的性质〔字迹不清，且内容较长〕\footnote{底本脚注70：后面的字迹不清。}在$S$上的基变换下都是稳定的（保持不变），特别可以应用于纤维。\note{底本括注为“[(illegible and long)]”。缺失部分不补写；原文对基变换稳定性的概括照译，不把未能辨出的内容视作已经逐项核验。}
+
+首先设$S=\operatorname{Spec}(k)$。令$Z$为$X$的一个$d$维闭子集；于是它在$\mathcal X$中的逆像$\mathcal Z$是一个维数为
+\[
+d+(N-m)=N+d-m
+\]
+的闭子集。\note{底本把闭子集及其逆像都印为$Z$，正文以$\mathcal Z$区别逆像。原文直接使用这一维数等式；若允许$\mathcal P\to P$有空纤维，还须注意逆像非空及所涉及分支是否遇到其像，不能仅凭“光滑”无条件宣称任意闭集的逆像具有该维数。这里保留原论证并标明适用性待核。}
+若$d<m$，则$\mathcal Z$的维数小于$N$，所以$\mathcal Z\to G$不可能占优。因此，若$\eta$是$G$的泛点，就有$\mathcal Z_\eta=\varnothing$。
+
+\newpage
+事实上，这个推理还表明（将$Z$换成$\overline{f(Z)}$）：若$\dim f(Z)<m$，则$\mathcal Z_\eta=\varnothing$。\note{底本括号内印有$f(Z)$的上划线，正文保留闭包。紧接的条件原为“$\dim f(X)<m$”；这本身是更强的充分条件，但与“将$Z$换成$\overline{f(Z)}$”及下句所讨论的$\dim f(Z)$不对应，故按本段论证对象改为$\dim f(Z)<m$，并在此保留原写法。仍沿用底本对像维数的记法，不引入新的证明。}
+我们希望对图式$(D)$提出一个条件，以保证当$\dim f(Z)\geq m$时，$\mathcal Z_\eta\ne\varnothing$。看来，在这里应当把下述要求作为一条基本公理（在2.2的情形中，它会由一个相当特殊的整体论证得出）：对$P$的每个维数为$m$的闭不可约子集$Z$，都有\note{底本末句实际印作“$Z_\eta=\phi$”。但紧邻前句明确要求$\dim f(Z)\geq m$时的非空性，而第61页又据此讨论占优性；故此处等号为与段意相反的误写，正文订为$\ne\varnothing$。本句$Z$改取为$P$中的闭集，$\mathcal Z$相应指其在$\mathcal P$中的逆像。这里是作者建议加入的公理，不是已由前述光滑、平坦假设推出的定理；从维数恰为$m$的闭集推广到其他情形的细节尚未在本批补证。}
+\[
+\mathcal Z_\eta\ne\varnothing.
+\]
+\end{document}

@@ -1,0 +1,14 @@
+{
+  "command": [
+    "bash",
+    "--noprofile",
+    "--norc",
+    "/workspace/scratch/a886fd56dd2f/integration/EGA 迁移验证 zorgz4gr/run_relocation_check.sh",
+    "/workspace/scratch/a886fd56dd2f/integration/EGA 迁移验证 zorgz4gr/第十七版 续作工程"
+  ],
+  "cwd": "/workspace/scratch/a886fd56dd2f/integration/EGA 迁移验证 zorgz4gr",
+  "returncode": 0,
+  "duration_seconds": 10.367,
+  "stdout": "initial_working_directory=/workspace/scratch/a886fd56dd2f/integration/EGA 迁移验证 zorgz4gr\nproject=/workspace/scratch/a886fd56dd2f/integration/EGA 迁移验证 zorgz4gr/第十七版 续作工程\nresolved_project_root=/workspace/scratch/a886fd56dd2f/integration/EGA 迁移验证 zorgz4gr/第十七版 续作工程\nTEXMFVAR=/workspace/scratch/a886fd56dd2f/integration/EGA 迁移验证 zorgz4gr/第十七版 续作工程/runtime/texmf-var\nTEXMFCONFIG=/workspace/scratch/a886fd56dd2f/integration/EGA 迁移验证 zorgz4gr/第十七版 续作工程/runtime/texmf-config\nctexbook=/workspace/scratch/a886fd56dd2f/integration/EGA 迁移验证 zorgz4gr/第十七版 续作工程/vendor/texmf/tex/latex/ctex/ctexbook.cls\nxelatex_format=/workspace/scratch/a886fd56dd2f/integration/EGA 迁移验证 zorgz4gr/第十七版 续作工程/runtime/texmf-var/web2c/xetex/xelatex.fmt\nfandol_song=/workspace/scratch/a886fd56dd2f/integration/EGA 迁移验证 zorgz4gr/第十七版 续作工程/vendor/texmf/fonts/opentype/public/fandol/FandolSong-Regular.otf\nprobe_compile=success\n",
+  "stderr": ""
+}

@@ -1,0 +1,1 @@
+本工程为独立续译，不含前批全文，也未并入主稿。底本、进度与校核记录同包。安装含ctex和Fandol的TeX Live后运行bash build.sh。

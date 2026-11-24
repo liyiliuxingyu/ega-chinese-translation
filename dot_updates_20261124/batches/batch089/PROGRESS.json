@@ -1,0 +1,13 @@
+{
+ "batch": 89,
+ "fr_physical": [10,11,12],
+ "en_physical": [9,10],
+ "source_extent": "Proposition 2.8 through Corollary 2.13 inclusive; p.12 partial",
+ "replacement_for_baseline_passages": true,
+ "integrated_into_1158_page_baseline": false,
+ "next_fr_physical": 12,
+ "next_en_physical": 10,
+ "next_anchor": "Theorem 2.14 (after Corollary 2.13); French handwritten equivalence follows list",
+ "formal_EGA_IV_1_separate": [221,223],
+ "full_french_page_content_audit_complete": false
+}

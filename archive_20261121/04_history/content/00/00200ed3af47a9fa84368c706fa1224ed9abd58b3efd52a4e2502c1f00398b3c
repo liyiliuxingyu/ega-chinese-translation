@@ -1,0 +1,122 @@
+{
+  "pdf": "/workspace/scratch/a886fd56dd2f/work/EGA_v17/main.pdf",
+  "pdf_sha256": "c4cc8b96308a0ff53d3a1d47bdf5207893df6e8a73282c7cbea1698e612fba3b",
+  "pdf_pages": 1130,
+  "dpi": 180,
+  "pages": [
+    {
+      "physical_page": 972,
+      "path": "/workspace/scratch/a886fd56dd2f/integration/body_early_middle_visual/main_phys_0972.png",
+      "png_bytes": 495344,
+      "printed_page_label": "952"
+    },
+    {
+      "physical_page": 974,
+      "path": "/workspace/scratch/a886fd56dd2f/integration/body_early_middle_visual/main_phys_0974.png",
+      "png_bytes": 532823,
+      "printed_page_label": "954"
+    },
+    {
+      "physical_page": 977,
+      "path": "/workspace/scratch/a886fd56dd2f/integration/body_early_middle_visual/main_phys_0977.png",
+      "png_bytes": 409335,
+      "printed_page_label": "957"
+    },
+    {
+      "physical_page": 978,
+      "path": "/workspace/scratch/a886fd56dd2f/integration/body_early_middle_visual/main_phys_0978.png",
+      "png_bytes": 566929,
+      "printed_page_label": "958"
+    },
+    {
+      "physical_page": 1000,
+      "path": "/workspace/scratch/a886fd56dd2f/integration/body_early_middle_visual/main_phys_1000.png",
+      "png_bytes": 415504,
+      "printed_page_label": "980"
+    },
+    {
+      "physical_page": 1001,
+      "path": "/workspace/scratch/a886fd56dd2f/integration/body_early_middle_visual/main_phys_1001.png",
+      "png_bytes": 522585,
+      "printed_page_label": "981"
+    },
+    {
+      "physical_page": 1004,
+      "path": "/workspace/scratch/a886fd56dd2f/integration/body_early_middle_visual/main_phys_1004.png",
+      "png_bytes": 443679,
+      "printed_page_label": "984"
+    },
+    {
+      "physical_page": 1005,
+      "path": "/workspace/scratch/a886fd56dd2f/integration/body_early_middle_visual/main_phys_1005.png",
+      "png_bytes": 592596,
+      "printed_page_label": "985"
+    },
+    {
+      "physical_page": 1006,
+      "path": "/workspace/scratch/a886fd56dd2f/integration/body_early_middle_visual/main_phys_1006.png",
+      "png_bytes": 494527,
+      "printed_page_label": "986"
+    },
+    {
+      "physical_page": 1007,
+      "path": "/workspace/scratch/a886fd56dd2f/integration/body_early_middle_visual/main_phys_1007.png",
+      "png_bytes": 445689,
+      "printed_page_label": "987"
+    },
+    {
+      "physical_page": 1015,
+      "path": "/workspace/scratch/a886fd56dd2f/integration/body_early_middle_visual/main_phys_1015.png",
+      "png_bytes": 603358,
+      "printed_page_label": "995"
+    },
+    {
+      "physical_page": 1016,
+      "path": "/workspace/scratch/a886fd56dd2f/integration/body_early_middle_visual/main_phys_1016.png",
+      "png_bytes": 517094,
+      "printed_page_label": "996"
+    },
+    {
+      "physical_page": 1019,
+      "path": "/workspace/scratch/a886fd56dd2f/integration/body_early_middle_visual/main_phys_1019.png",
+      "png_bytes": 601083,
+      "printed_page_label": "999"
+    },
+    {
+      "physical_page": 1020,
+      "path": "/workspace/scratch/a886fd56dd2f/integration/body_early_middle_visual/main_phys_1020.png",
+      "png_bytes": 528518,
+      "printed_page_label": "1000"
+    },
+    {
+      "physical_page": 1021,
+      "path": "/workspace/scratch/a886fd56dd2f/integration/body_early_middle_visual/main_phys_1021.png",
+      "png_bytes": 604201,
+      "printed_page_label": "1001"
+    },
+    {
+      "physical_page": 1022,
+      "path": "/workspace/scratch/a886fd56dd2f/integration/body_early_middle_visual/main_phys_1022.png",
+      "png_bytes": 710821,
+      "printed_page_label": "1002"
+    },
+    {
+      "physical_page": 1023,
+      "path": "/workspace/scratch/a886fd56dd2f/integration/body_early_middle_visual/main_phys_1023.png",
+      "png_bytes": 689138,
+      "printed_page_label": "1003"
+    },
+    {
+      "physical_page": 1024,
+      "path": "/workspace/scratch/a886fd56dd2f/integration/body_early_middle_visual/main_phys_1024.png",
+      "png_bytes": 641380,
+      "printed_page_label": "1004"
+    },
+    {
+      "physical_page": 1025,
+      "path": "/workspace/scratch/a886fd56dd2f/integration/body_early_middle_visual/main_phys_1025.png",
+      "png_bytes": 618612,
+      "printed_page_label": "1005"
+    }
+  ]
+}

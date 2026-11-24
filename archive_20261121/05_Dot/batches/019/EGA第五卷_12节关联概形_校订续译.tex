@@ -1,0 +1,75 @@
+\documentclass[openany,fontset=fandol]{ctexbook}
+\usepackage{amsmath,amssymb}
+\usepackage[hidelinks]{hyperref}
+\newcommand{\note}[1]{\footnote{译注：#1}}
+\title{代数几何基础第五卷预备笔记\\第12节开篇：线性截面与关联预概形}
+\author{据用户上传英译编辑稿译出}
+\date{2026年11月16日}
+\begin{document}
+\maketitle
+\chapter*{范围与校订状态}
+本批自底本第43页第12节标题及“Complements to notations”开始，连续译至第44页首段“or rather of $P_{S'}$”末，即线性截面的定义。下一处为第44页“I use [or profit from] this opportunity for a notational self-criticism”。
+
+底本本段混用了维数与余维、模与对偶模、乘积底标以及商模名称。正文按既定商函子约定作可核实的局部校订，脚注保留原写法及理由；不将校订称为作者勘误。此前8.8、9.5等缺文未恢复。本批未合入原合订本，不代表第12节全文完成。
+\chapter*{\S12 将上述结果推广到线性截面}
+\section*{记号补充}
+若 $P=\mathbf P(E)$，其中 $E$ 是任意准凝聚模，则另记
+\[
+\operatorname{Grass}_n(P)=\operatorname{Grass}_{n+1}(E).
+\]
+这样，$\operatorname{Grass}_n(P)$ 对应于 $P$ 中相对维数为 $n$ 的线性子簇。只要约定维数 $-1$ 表示空子簇，这一记法对 $n\geq-1$ 都适用。
+
+若 $E$ 为有限秩局部自由模，则宜引入
+\[
+\operatorname{Grass}^{n}(P)
+=\operatorname{Grass}_{n-1}(P^\vee)
+=\operatorname{Grass}_{n}(E^\vee),
+\]
+它对应于 $P$ 中相对余维为 $n$ 的线性子簇。\note{这里沿用第11节的 $P^\vee=\mathbf P(E^\vee)$ 及有限秩对偶约定；上标表示余维，下标表示相对维数或商模的秩，须依参数是 $P$ 还是 $E$ 区分。对秩为 $r$ 的 $E$，$0\leq n\leq r-1$ 对应非空线性子簇；$n=r$ 可按上述空子簇约定扩充。}
+若 $E$ 的秩为 $r+1$〔底本此处字迹不清，请询问A.G.〕，则 $P$ 的相对维数为 $r$，并有典范同构
+\[
+\operatorname{Grass}^{n}(P)\simeq\operatorname{Grass}_{r-n}(P).
+\]
+以下固定 $E$ 为秩 $r$ 的局部自由模，研究 $P$ 中给定相对余维 $m$ 的线性子簇，因而考虑
+\[
+\operatorname{Gr}^{m}=\operatorname{Gr}^{m}(P)
+=\operatorname{Grass}_{m}(E^\vee).
+\]
+\note{底本此句写“given dimension $m$”，但前后的上标约定、$\operatorname{Grass}_m(E^\vee)$ 及下一段均使用余维 $m$；故正文更正为“相对余维”。底本也在此从前句秩 $r+1$ 改取秩 $r$，本译文保留这一重新约定，不把两处 $r$ 混为同一秩。}
+\section*{关联预概形的构造}
+在这一预概形上，有典范的局部自由秩 $m$ 商模
+\[
+E^\vee_{\operatorname{Gr}^{m}}\twoheadrightarrow G.
+\]
+\note{底本写 $G$ 是 $E_{\operatorname{Gr}}$ 的商，随即说“let us call it $F$”，以后却继续写 $G$。由 $\operatorname{Gr}^m=\operatorname{Grass}_m(E^\vee)$，泛商必来自 $E^\vee$ 而非 $E$；其对偶才给出 $G^\vee\hookrightarrow E$。故补正对偶符号，并将本段泛商统一记为 $G$。底本的临时命名 $F$ 保留在此注，不让它与下一批用于核模的 $F$ 相混。}
+乘积 $P\times_S\operatorname{Gr}^{m}$ 上的自然关联预概形，表示乘积函子的下述子函子：其对象是一对数据，由一个 $P$ 的取值于 $S'$ 的点，以及 $P_{S'}$ 中一个包含该点的余维 $m$ 线性子簇组成。\note{底本乘积写成“$P_X\,X\operatorname{Gr}^m$”，且在这一函子说明中混用 $S$ 与 $S'$。这里尚未引入 $X$，二因子均在 $S$ 上，故统一为 $P\times_S\operatorname{Gr}^m$；取值点等价于 $P_{S'}\to S'$ 的截面。}
+这一关联预概形可如下显式描述。取
+\[
+T=P\times_S\operatorname{Gr}^{m},
+\]
+或更一般地，取该乘积上的任意预概形 $T$。在 $T$ 上有 $E_T$ 的商 $\mathcal O_T(1)$，以及它的局部直和因子子模 $G_T^\vee$。考虑典范同态的复合
+\[
+G_T^\vee\longrightarrow E_T\longrightarrow\mathcal O_T(1).
+\]
+经转置，它也对应于下面的复合同态：从 $E_T^\vee$ 的子模 $\mathcal O_T(-1)$ 映到商模 $G_T$，即
+\[
+\mathcal O_T(-1)\longrightarrow E_T^\vee\longrightarrow G_T.
+\]
+\note{底本文字把转置后的商写作 $G_T^\vee$，但紧随其后的显示箭头为 $\mathcal O_T(-1)\to G_T$，且下一页截面属于 $G_T(1)$。由有限局部自由模的对偶关系可直接核实正确目标是 $G_T$，正文据此更正。$\mathcal O_T(1)$ 指沿 $T\to P$ 拉回的可逆模；“局部直和因子”来自泛商列的局部分裂。}
+也可以将它看成由 $G_T(1)$ 的一个截面所定义：
+\[
+\varphi^m\in\Gamma\bigl(T,G_T(1)\bigr).
+\]
+关联预概形（相应地，它在 $T$ 中的逆像）正是上述任一个同态的零点预概形，亦即截面 $\varphi^m$ 的零点预概形。\note{这里是概形意义的零点，而不只是点集。局部平凡化 $G_T$ 与 $\mathcal O_T(1)$ 后，三个描述均由同一组 $m$ 个系数生成的理想定义，故具有相同的概形结构。这一说明没有额外断言该组系数在任意基变换后仍构成正则列。}
+可以用 $H^{(m)}$ 表示这一关联预概形；当 $m=1$ 时，就得到第1节中的那个关联预概形。
+
+若 $X$ 是 $P$ 上的预概形，可令
+\[
+Y^{(m)}=X\times_P H^{(m)}.
+\]
+由此，当 $\xi$ 是 $\operatorname{Gr}^{m}$ 的取值于某个 $S'$ 的点时，便定义了记号
+\[
+Y^m_\xi=Y^{(m)}\times_{\operatorname{Gr}^{m},\,\xi}S'.
+\]
+因此，$Y^m_\xi$ 是 $P$ 上的 $X$ 的“线性截面”；更准确地说，它是 $P_{S'}$ 上的 $X_{S'}$ 被 $P_{S'}$ 中余维 $m$ 的线性子簇所截得的预概形。\note{底本首次引入此记号时漏写下标 $\xi$，后一句明确使用 $Y^m_\xi$，故予统一。显示的纤维积公式只是将该记号的定义展开：若相应线性子簇为 $L_\xi\subseteq P_{S'}$，则 $Y^m_\xi=X_{S'}\times_{P_{S'}}L_\xi$。当 $X\to P$ 不是浸入时，不把它误称为 $P$ 内两个子概形的字面交集。}
+\end{document}

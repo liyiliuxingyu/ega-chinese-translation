@@ -1,0 +1,255 @@
+\head{第十四版新核查：第0章22.4--22.5}
+\noindent\textbf{范围与结论。}
+本轮逐段对照用户上传的\texttt{EGAIV.1.pdf}第192--204页中属于22.4--22.5的内容，原分册印刷页码为193--205。
+连续译文从（22.4.1）开始，止于（22.5.10，ii）末尾；22.6及以后没有计为译完。
+本报告区分一组混合特征下的错误等价关系、一处证明中代表元素选择过宽，以及一个反例遗漏生成元的问题。
+另列引文、记号与一般性证明的补充。校订后的内容进入正文；原写法及理由位于相应脚注。
+本文所有独立反例与修补均为译者分析，不以“作者正式勘误”的名义列出。
+
+\section*{原文定位与正文处理表}
+\addcontentsline{toc}{section}{原文定位与正文处理表}
+\begin{longtable}{@{}p{.20\linewidth}p{.18\linewidth}p{.52\linewidth}@{}}
+\toprule 标识／条目&原书页／PDF页&处理及判定\\\midrule\endhead
+N14-E01／22.5.4&202／201&混合特征下原 a）与 b）不等价；补入 $p$ 的余切类条件并修正 c）的目标。\\
+N14-E02／22.5.6&203／202&证明应取结构同态给出的提升，不能取同一剩余类的任意提升；引理结论不变。\\
+N14-E03／22.5.10&204／203&原反例缺少生成元 $Z$；正文改为 $k(Z,X^{1/p}+ZY^{1/p})$，并核实不可分性和交域条件。\\
+N14-G01／22.5.2&202／201&有限维证明引用诺特结构定理；无限维范围另以有限滤过和基数估计补全。\\
+N14-T01--T04&195--203／194--202&中行来源、两处引文和商理想的平方记号校正。\\
+\bottomrule
+\end{longtable}
+
+\audit{N14-E01}{混合特征下必须保留素数的余切类}{原独立表述存在反例；正文给出修订后的等价关系}
+\oldauditsrc{第四卷第一部分，第0章（22.5.4），印刷第202页；扫描PDF第201页}
+原文假设 $A$ 为正则局部环，只规定剩余域特征为 $p>0$，允许 $A$ 为混合特征。
+对
+\[
+ B=A[T_1,\ldots,T_r]/(F_1,\ldots,F_r),\qquad
+ F_i=T_i^p+p\sum_{j=1}^{p-1}c_{ij}T_i^{p-j}-f_i,
+\]
+原文把“$B$ 正则”与“$d_Af_i\otimes1_K$ 线性无关”等同。
+其中 $\Omega^1_A$ 是绝对微分模，即 $\Omega^1_{A/\mathbb Z}$。
+
+\subsection*{1. 一个不能由记号解释消除的反例}
+任取素数 $p$，置
+\[
+ A=\mathbb Z_{(p)},\qquad\mathfrak m=pA,\qquad K=\mathbb F_p,
+ \qquad B=A[T]/(T^p-p).
+\]
+$A$ 是一维正则局部环。$T^p-p$ 首一，所以 $B$ 为秩 $p$ 的自由 $A$-模；结构同态 $A\to B$ 单射。
+$B$ 对 $A$ 有限，故其所有极大理想都收缩为 $pA$。而
+\[
+ B/pB\simeq\mathbb F_p[T]/(T^p)
+\]
+仅有一个极大理想，所以 $B$ 局部。
+以 $t$ 表示 $T$ 的类，则 $p=t^p$，故 $B$ 的极大理想为
+\[
+ \mathfrak n=(p,t)=(t).
+\]
+有限整扩张的维数相等给出 $\dim B=\dim A=1$。
+$\mathfrak n$ 由一个元素生成，其余切维数至多为1；一般的维数不等式又给出其至少为1。因此
+\[
+ \dim_{\mathbb F_p}\mathfrak n/\mathfrak n^2=1=\dim B,
+\]
+即 $B$ 为正则局部环。
+
+但 $A$ 是 $\mathbb Z$ 的局部化，$\Omega^1_{A/\mathbb Z}=0$。
+即使不使用这个较强事实，也有 $d_A(p)=0$，因为任何绝对导子都在整数上为零。
+因此原 b）中的单元素族为 $\{0\}$，不线性无关。原 a）成立而 b）不成立。
+
+\subsection*{2. 原证明丢失了什么}
+（22.4.8）实际比较的是
+\[
+ \dim_K\frac{\mathfrak m}{\mathfrak m^2+pA}
+ \quad\text{与}\quad
+ \dim_{K'}\frac{\mathfrak n}{\mathfrak n^2+pB},
+\]
+而（22.5.1）的正则性判据比较的是\emph{未模去 $p$}的余切维数。
+在上述反例中，
+\[
+ \begin{array}{c|cc}
+ &A&B\\\hline
+ \text{余切维数}&1&1\\
+ p\text{ 的余切类所张成的维数}&1&0\\
+ \text{模去 }p\text{ 后的余切维数}&0&1
+ \end{array}
+\]
+因为 $p\notin p^2A$，但 $p=t^p\in\mathfrak n^2$。所以不能把两个不同的维数判据直接替换。
+同时，在混合特征的一般情形，原 c）的典范特征同态自然取值于
+$\mathfrak m/(\mathfrak m^2+pA)$，不能在没有额外数据时改成值域 $\mathfrak m/\mathfrak m^2$。
+
+\subsection*{3. 本版正文采用的完整修订}
+保持原来关于 $A$、$F_i$、$B$ 的假设。置
+\[
+ \begin{aligned}
+ e_A&=\dim_K\mathfrak m/\mathfrak m^2,&
+ e_B&=\dim_{K'}\mathfrak n/\mathfrak n^2,\\
+ \epsilon_A&=\dim_K(pA+\mathfrak m^2)/\mathfrak m^2,&
+ \epsilon_B&=\dim_{K'}(pB+\mathfrak n^2)/\mathfrak n^2.
+ \end{aligned}
+\]
+两数 $\epsilon_A,\epsilon_B$ 属于 $\{0,1\}$。
+有限扩张及 $A$ 正则给出 $e_B\ge e_A$；$\mathfrak m^2B\subseteq\mathfrak n^2$ 给出 $\epsilon_B\le\epsilon_A$。
+模去 $\mathfrak m^2$ 和 $p$，得到
+\[
+ A_0=A/(\mathfrak m^2+pA),\qquad
+ B_0=B/(\mathfrak m^2B+pB).
+\]
+$A_0$ 是特征 $p$、极大理想平方为零的阿廷局部环，$B_0$ 的关系为 $T_i^p-\bar f_i$。
+（22.4.7）及（22.4.7.4）因此给出
+\[
+ \begin{gathered}
+ \{d_Af_i\otimes1_K\}_i\text{ 线性无关}\\
+ \Longleftrightarrow\quad\chi_{B_0/A_0}\text{ 单射}\\
+ \Longleftrightarrow\quad e_A-\epsilon_A=e_B-\epsilon_B.
+ \end{gathered}
+\]
+这里 $\Omega^1_A\otimes_AK\simeq\Omega^1_{A_0}\otimes_{A_0}K$，因为 $d(\mathfrak m^2)$ 张量 $K$ 后为零，$d(p)=0$。
+最后一个等式等价于
+\[
+ e_B-e_A=\epsilon_B-\epsilon_A.
+\]
+左端非负而右端非正，因此它当且仅当二者均为零。
+于是准确的结论是
+\[
+ \boxed{\text{b）}\ \Longleftrightarrow\ \text{c）}
+ \ \Longleftrightarrow\
+ [\,B\text{ 正则且 }\epsilon_A=\epsilon_B\,].}
+\]
+这就是正文的新 a）。当 $p\in\mathfrak m^2$，尤其 $pA=0$ 时，附加条件自动满足，恢复原来的等特征结论。
+此修订没有改动后续（22.5.7）和（22.5.8）的域上论证：它们的阿廷测试环本来就在特征 $p$ 中，并直接使用（22.4.7）。
+
+\audit{N14-E02}{微分依赖指定提升，不能只看剩余类}{证明步骤表述过宽；定理结论不变}
+\oldauditsrc{（22.5.6）的证明，印刷第203页；PDF第202页}
+原文以 $z\in A_1$ 的剩余类为 $x'^p\in k$，就把 $d_k(x'^p)$ 的典范像写成 $d_{A_1}z$。
+这个等式需要 $z$ 是\emph{结构同态给出的像}，而不是同一剩余类的任意代表。
+
+取
+\[
+ k=\mathbb F_p(s),\quad k'=k(s^{1/p}),\quad
+ A_1=k[\epsilon]/(\epsilon^2),\quad K=k.
+\]
+商的微分正合列给出
+\[
+ \Omega^1_{A_1}\otimes_{A_1}K
+ \simeq\Omega^1_k\oplus K\,d\epsilon
+ \simeq K\,ds\oplus K\,d\epsilon.
+\]
+即使 $p=2$，这个张量后的式子也成立：关系 $d(\epsilon^2)=2\epsilon d\epsilon$ 在张量 $K$ 后为零。
+因此 $s$ 与 $s+\epsilon$ 虽有相同剩余类，仍有
+\[
+ d(s+\epsilon)\otimes1=ds\otimes1+d\epsilon\otimes1\ne ds\otimes1.
+\]
+将正文中的 $z$ 固定为 $u_1(x'^p)$，其中 $u_1:k\to A_1$ 为结构同态，
+自然性立即给出
+\[
+ d_k(x'^p)\otimes1\longmapsto d_{A_1}(u_1(x'^p))\otimes1.
+\]
+由此得到的核交空间以及特征同态限制，与原引理所要求的对象一致；不需要改变引理陈述。
+
+\audit{N14-E03}{单生成扩域测试的反例漏掉一个生成元}{原例按字面不能成立；补入生成元并验证所需性质}
+\oldauditsrc{（22.5.10，i），印刷第204页；PDF第203页}
+原例取完美域 $k_0$、独立不定元 $X,Y,Z$，令 $k=k_0(X,Y)$，却将 $K$ 印作
+\[
+ K_{\text{原}}=k(X^{1/p}+ZY^{1/p}).
+\]
+令 $W=X^{1/p}+ZY^{1/p}$。
+$W$ 在 $k$ 上超越：否则它也在代数扩张 $k(X^{1/p},Y^{1/p})$ 上代数，
+而 $Z=(W-X^{1/p})/Y^{1/p}$ 将随之代数，矛盾。
+因此 $K_{\text{原}}=k(W)$ 是一元纯超越扩张，在 $k$ 上可分，不能满足原文要求的 $\Upsilon_{K/k}\ne0$。
+
+\subsection*{1. 修订的域与不可分性}
+取
+\[
+ K=k(Z,W),\qquad W^p=X+Z^pY.
+\]
+$X+Z^pY$ 在 $k(Z)$ 中不是 $p$ 次幂：对 $X$ 求导，其导数为1，而 $p$ 次幂的导数恒为零。
+所以 $K/k(Z)$ 的次数为 $p$，$\operatorname{trdeg}_kK=1$。
+在 $\Omega^1_K$ 中有
+\[
+ d_KX+Z^p d_KY=0.
+\]
+另一方面，$\Omega^1_k$ 以 $d_kX,d_kY$ 为基（$k_0$ 完美，所以其绝对微分模为零）。
+故
+\[
+ 0\ne d_kX\otimes1+Z^p d_kY\otimes1\in\Upsilon_{K/k},
+\]
+$K/k$ 不可分。
+此外，将 $K$ 写为 $k[Z,W]/(W^p-X-Z^pY)$ 的分式域，关系的相对 $k$-微分为零，
+所以 $\Omega^1_{K/k}$ 以 $dZ,dW$ 为 $K$-基。
+Cartier等式（21.7.1）遂给出 $\dim_K\Upsilon_{K/k}=2-1=1$。
+
+\subsection*{2. 证明交域条件}
+置 $U=Z^p$。由于 $k_0$ 完美，
+\[
+ K^p=k_0(X^p,Y^p,U,X+UY)\subset F=k_0(X,Y,U).
+\]
+定义 $F$ 上的 $k_0$-导子
+\[
+ D=\partial_Y-U\partial_X.
+\]
+它在 $X^p,Y^p,U,X+UY$ 上均为零，因而在整个 $K^p$ 上为零。
+若 $a\in k\cap K^p$，则 $\partial_Ya-U\partial_Xa=0$。
+$U$ 在 $k$ 上超越，而两个偏导数都属于 $k$，所以二者均为零。
+用 $k$ 在 $k^p=k_0(X^p,Y^p)$ 上的基
+\[
+ \{X^iY^j:0\le i,j<p\}
+\]
+展开 $a$；两个偏导数均为零迫使所有 $(i,j)\ne(0,0)$ 的系数为零。
+因此 $a\in k^p$，得到
+\[
+ \boxed{K^p\cap k=k^p.}
+\]
+
+\subsection*{3. 反例确实作用于定理的测试范围}
+当 $k'=k(x)\subset k^{1/p}$ 且 $x\notin k$，子空间
+$\Theta_{k'/k}\otimes_kK$ 为由 $d_k(x^p)\otimes1$ 张成的一条直线。
+因为 $x^p\notin k^p=K^p\cap k$，$d_K(x^p)\ne0$，所以这条直线与 $\Upsilon_{K/k}$ 的交为零。
+但 $\Upsilon_{K/k}$ 自身是一维且非零；它的生成元包含 $K$ 中的系数 $Z^p$，并不来自某个这样的单元素测试直线。
+
+按（22.2.5.2），取 $V=K$ 与零映射 $h:\Upsilon_{K/k}\to K$，得到完备离散赋值环 $A$，其剩余域为 $K$，且 $\chi_{A/k}=0$。
+由（22.2.2），$A$ 不形式光滑；而（22.5.7）保证每个上述单生成 $k'$ 都使 $A\otimes_kk'$ 正则。
+这完成原例所需的逻辑链。补入 $Z$ 是修订，不把这个公式冒称为原文原样。
+
+\audit{N14-G01}{无限维时不能直接调用诺特局部结构定理}{补全证明的一般性；不反驳不等式结论}
+\oldauditsrc{（22.5.2，iii），印刷第202页；PDF第201页}
+（22.4.1）允许 $V=\mathfrak m$ 为无限维 $K$-向量空间。此时 $A$ 并非诺特环，
+不能直接由（19.8.10）获得正则诺特局部环 $R$ 使 $A=R/\mathfrak n^2$。
+正文先在阿廷情形沿原证明处理，再对无限维情形补证。
+
+$A'$ 为有限自由 $A$-代数。$A'/\mathfrak mA'$ 为有限维局部 $K$-代数，
+故其极大理想幂零。选 $s$ 使 $\mathfrak m'^s\subseteq\mathfrak mA'$，则
+$\mathfrak m'^{2s}=0$。
+记 $W=\mathfrak m'/\mathfrak m'^2$，$\kappa=\dim_{K'}W$；$K'/K$ 有限。
+由乘法存在满射
+\[
+ \operatorname{Sym}_{K'}^iW\twoheadrightarrow\mathfrak m'^i/\mathfrak m'^{i+1}.
+\]
+又因 $A\hookrightarrow A'$，$V$ 有长度至多 $2s$ 的滤过
+\[
+ V\supseteq V\cap\mathfrak m'\supseteq V\cap\mathfrak m'^2\supseteq\cdots\supseteq0.
+\]
+每个商都以 $K$-线性方式嵌入相应的 $\mathfrak m'^i/\mathfrak m'^{i+1}$。
+若 $\kappa$ 有限，所有这些商均有限维，故 $V$ 有限维，回到已证情形。
+若 $\kappa$ 为无限基数，任意固定有限次对称幂的维数不超过 $\kappa$；
+有限扩域乘上有限度数、以及有限个滤过商求和，也都不增大这个上界。
+因此 $\dim_KV\le\kappa$，即（22.5.2.2）。
+
+\section*{引文、记号及独立交叉核对}
+\addcontentsline{toc}{section}{引文、记号及独立交叉核对}
+N14-T01将（22.4.4.6）中行来源改为环塔 $\mathbb Z\to A\to A'$，并明确左端为重新取核；
+不能因图中正合而宣称任意张量保持左正合。
+N14-T02、N14-T03分别将对应的基结论和域的形式光滑性引向实际支持它们的条目。
+N14-T04把 $A'_1=A'/\mathfrak m^2A'$ 的极大理想正确写为 $\mathfrak m'/\mathfrak m^2A'$。
+这些均已对照扫描页，不仅依据抽取文本。
+
+作为\emph{外部交叉核对}，Stacks Project的
+\href{https://stacks.math.columbia.edu/tag/07EL}{Tag 07EL（几何正则性与形式光滑性）}
+也给出了诺特局部域上代数的对应等价条件，包括对极大理想进制拓扑的形式光滑性、几何正则性，以及所有有限子扩张 $k'\subset k^{1/p}$ 上的正则性。
+本轮据此核对（22.5.8）的适用范围，但没有以现代证明替换法文原证明，也没有据此声称所有旧条目均已审定。
+
+\section*{本轮边界与检查说明}
+\addcontentsline{toc}{section}{本轮边界与检查说明}
+本轮只对22.4--22.5实施连续译校。22.6--22.7、§23、第IV章主体以及预备笔记余文仍未完成。
+历史报告原样保留，各旧待核事项不因本轮更新而自动转为已解决。
+正文条目和公式覆盖、独立单文件构建、渲染抽查的实际结果分别记录在工程包的
+\texttt{checks/CHECKS.md}与\texttt{PROGRESS.md}中；技术检查不等于独立出版级数学审校。

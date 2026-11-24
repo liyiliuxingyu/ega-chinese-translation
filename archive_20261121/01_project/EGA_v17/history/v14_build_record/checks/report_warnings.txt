@@ -1,0 +1,359 @@
+LaTeX Font Warning: Font shape `U/rsfs/m/n' in size <10.53937> not available
+(Font)              size <10.95> substituted on input line 23.
+
+
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 12--12
+[]|\TU/FandolSong-Regular(0)/m/n/10.53937 原 书 页 ／
+ []
+
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 13--13
+[]|\TU/lmr/m/n/10.53937 N14-E01 \TU/FandolSong-Regular(0)/m/n/10.53937 ／
+ []
+
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 14--14
+[]|\TU/lmr/m/n/10.53937 N14-E02 \TU/FandolSong-Regular(0)/m/n/10.53937 ／
+ []
+
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 15--15
+[]|\TU/lmr/m/n/10.53937 N14-E03 \TU/FandolSong-Regular(0)/m/n/10.53937 ／
+ []
+
+
+
+Underfull \hbox (badness 4886) in paragraph at lines 15--16
+[]|\TU/FandolSong-Regular(0)/m/n/10.53937 原 反 例 缺 少 生 成 元 $\OML/cmm/m/it/10.539
+37 Z$\TU/FandolSong-Regular(0)/m/n/10.53937 ；|  正 文 改 为
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 16--16
+[]|\TU/lmr/m/n/10.53937 N14-G01 \TU/FandolSong-Regular(0)/m/n/10.53937 ／
+ []
+
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 17--17
+[]|\TU/lmr/m/n/10.53937 195–203 \TU/FandolSong-Regular(0)/m/n/10.53937 ／
+ []
+
+
+
+Underfull \vbox (badness 1024) has occurred while \output is active []
+
+
+
+[6]
+
+Underfull \hbox (badness 10000) in paragraph at lines 12--12
+[]|\TU/lmr/m/n/10.53937 M13-N03\TU/FandolSong-Regular(0)/m/n/10.53937 、|
+ []
+
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 18--18
+[]|\TU/FandolSong-Regular(0)/m/n/10.53937 其 余 \TU/lmr/m/n/10.53937 M13-
+ []
+
+[13]
+
+Underfull \hbox (badness 10000) in paragraph at lines 19--19
+[]|\TU/lmr/m/n/10.53937 L12-T01–
+ []
+
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 20--20
+[]|\TU/lmr/m/n/10.53937 L12-G01–
+ []
+
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 21--21
+[]|\TU/lmr/m/n/10.53937 L12-N01–
+ []
+
+[23]
+
+LaTeX Font Warning: Font shape `U/rsfs/m/n' in size <15.05624> not available
+(Font)              size <14.4> substituted on input line 201.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 201.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `superscript' on input line 201.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 201.
+
+
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 269.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 269.
+
+
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 22--22
+[]|\TU/lmr/m/n/10.53937 K11-G01–
+ []
+
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 23--23
+[]|\TU/lmr/m/n/10.53937 K11-N01–
+ []
+
+[37]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 29.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 29.
+
+
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 107.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 107.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 107.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\otimes' on input line 107.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 107.
+
+
+Underfull \vbox (badness 1082) has occurred while \output is active []
+
+Underfull \vbox (badness 1082) has occurred while \output is active []
+
+
+
+[40]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 216.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 216.
+
+
+
+
+Underfull \hbox (badness 3612) in paragraph at lines 14--15
+[]|\TU/FandolSong-Regular(0)/m/n/10.53937 证 明 末 尾 的 引 文 改 为 陈 述 已 给 出 的
+ []
+
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 17--17
+[]|\TU/lmr/m/n/10.53937 20.7.11\TU/FandolSong-Regular(0)/m/n/10.53937 、|
+ []
+
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 20--20
+[]|\TU/lmr/m/n/10.53937 J10-G01\TU/FandolSong-Regular(0)/m/n/10.53937 、|
+ []
+
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 20--20
+[]|\TU/lmr/m/n/10.53937 20.6.11\TU/FandolSong-Regular(0)/m/n/10.53937 、|
+ []
+
+[49]
+
+Underfull \hbox (badness 10000) in paragraph at lines 14--14
+[]|\TU/lmr/m/n/10.53937 19.7.1.6\TU/FandolSong-Regular(0)/m/n/10.53937 ；|
+ []
+
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 14--14
+\TU/lmr/m/n/10.53937 19.8.8\TU/FandolSong-Regular(0)/m/n/10.53937 ；|
+ []
+
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 15--15
+[]|\TU/lmr/m/n/10.53937 19.7.1.5\TU/FandolSong-Regular(0)/m/n/10.53937 ；|
+ []
+
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 16--16
+[]|\TU/lmr/m/n/10.53937 H8-N01–
+ []
+
+[77]
+
+Underfull \hbox (badness 2762) in paragraph at lines 16--16
+[]|\TU/FandolSong-Regular(0)/m/n/10.53937 拓 扑 条 件 需 明
+ []
+
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 17--17
+[]|\TU/lmr/m/n/10.53937 G7-T01–
+ []
+
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 18--18
+[]|\TU/lmr/m/n/10.53937 G7-H02–
+ []
+
+
+
+Underfull \hbox (badness 2762) in paragraph at lines 18--18
+[]|\TU/FandolSong-Regular(0)/m/n/10.53937 使 用 范 围 与 核
+ []
+
+[89]
+
+Underfull \hbox (badness 2213) in paragraph at lines 225--226
+[]\TU/FandolSong-Regular(0)/m/n/10.53937 编 译、|  目 录 及 交 叉 引 用 检 查、|  实 际 页 数、| 
+ 原 条 目 保 留 检 查 和 选
+ []
+
+
+Underfull \hbox (badness 3954) in paragraph at lines 225--226
+\TU/FandolSong-Regular(0)/m/n/10.53937 定 页 面 的 渲 染 检 查，|  均 记 录 在 工 程 的 \TU/lmt
+t/m/n/10.53937 checks/validation.json \TU/FandolSong-Regular(0)/m/n/10.53937 及
+ []
+
+
+Underfull \hbox (badness 1789) in paragraph at lines 225--226
+\TU/lmtt/m/n/10.53937 checks/REVIEW.md\TU/FandolSong-Regular(0)/m/n/10.53937 。|
+  这 些 检 查 回 答 文 件 是 否 可 编 译 和 版 面 是 否 可 读，|
+ []
+
+
+LaTeX Font Warning: Font shape `U/rsfs/m/n' in size <7.52812> not available
+(Font)              size <8> substituted on input line 5.
+
+
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 12--12
+[]|\TU/lmr/m/n/10.53937 C3-G02\TU/FandolSong-Regular(0)/m/n/10.53937 、|
+ []
+
+[149]
+
+Underfull \hbox (badness 1360) in paragraph at lines 227--228
+[]\TU/FandolSong-Regular(0)/m/n/10.53937 这 里 已 有 有 限 生 成 元 $\OML/cmm/m/it/10.53
+937 s[]; [] ; s[]$\TU/FandolSong-Regular(0)/m/n/10.53937 。|  将 它 们 映 入 一 维 剩 余 
+向 量 空 间
+ []
+
+Underfull \hbox (badness 10000) in paragraph at lines 14--14
+[]|\TU/lmr/m/n/10.53937 B2-T01–
+ []
+
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 15--15
+[]|\TU/lmr/m/n/10.53937 B2-T06–
+ []
+
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 16--16
+[]|\TU/lmr/m/n/10.53937 B2-H01–
+ []
+
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 17--17
+[]|\TU/lmr/m/n/10.53937 B2-P01–
+ []
+
+[163]
+
+Underfull \hbox (badness 10000) in paragraph at lines 13--13
+[]|\TU/lmr/m/n/10.53937 V \TU/FandolSong-Regular(0)/m/n/10.53937 合 并 稿
+ []
+
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 19--19
+[]|\TU/lmr/m/n/10.53937 T04–
+ []
+
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 20--20
+[]|\TU/lmr/m/n/10.53937 T08–
+ []
+
+[181]
+
+Underfull \hbox (badness 10000) in paragraph at lines 24--24
+[]|\TU/lmr/m/n/9.03374 100\TU/FandolSong-Regular(0)/m/n/9.03374 、|
+ []
+
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 24--24
+\TU/lmr/m/n/9.03374 111\TU/FandolSong-Regular(0)/m/n/9.03374 、|
+ []
+
+
+
+LaTeX Font Warning: Size substitutions with differences
+(Font)              up to 0.65625pt have occurred.
+
+ ) 
+Here is how much of TeX's memory you used:

@@ -1,0 +1,10 @@
+{
+  "batch":75,
+  "completed":"第五卷预备笔记第三篇第2小节2.5、多重射影丛的Picard分解2.6、法稿2.7、2.8、命题2.9、推论2.10。",
+  "french_physical_pages":[121,122,123],
+  "french_handwritten_numbers":[128,129,130],
+  "english_physical_pages":[94,95],
+  "next":"法物理123页下段2.11起、英物理95页2.11（英误标Corollary）；后续一般相对可表性、2.12–2.13。法124实际也印sous-groupe，核对2.11不是子群。",
+  "formal_EGA_IV_1_next":"物理221提要、223公式(1.1.1)，另线。",
+  "merged_into_1158_page_edition":false
+}

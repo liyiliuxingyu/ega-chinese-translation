@@ -1,0 +1,14 @@
+{
+  "started": "2026-11-15T01:18:49",
+  "jobs": {
+    "book_single": {
+      "state": "done",
+      "pass": 3
+    },
+    "audit_single": {
+      "state": "done",
+      "pass": 3
+    }
+  },
+  "finished": "2026-11-15T01:20:20"
+}

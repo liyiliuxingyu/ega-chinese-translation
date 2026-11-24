@@ -1,0 +1,144 @@
+\subsection{某些上同调函子的局部结构}
+\source{\texttt{EGAIII.2.pdf}，PDF第38--42页；原书第39--43页}
+\egas{6.10.1}{命题}
+设 $S=\Spec A$ 为仿射概形，$Y^{(i)}$（$1\leq i\leq n$）为有限个在 $S$ 上平坦的仿射 $S$-概形。对每个 $i$，取分离拟紧 $S$-态射 $f_i:X^{(i)}\to Y^{(i)}$ 及下有界拟凝聚 $\OO_{X^{(i)}}$-模复形 $\mathscr P^{(i)}_\bullet$。以 $Y$ 表示各 $Y^{(i)}$ 在 $S$ 上的乘积。存在由拟凝聚且 $S$-平坦的 $\OO_Y$-模组成的复形 $\mathscr R_\bullet$，具有如下性质：对每个仿射 $S$-概形 $S'$ 和每个下有界拟凝聚 $\OO_{S'}$-模复形 $\mathscr Q'_\bullet$，有同构
+\begin{equation}\tag{6.10.1.1}
+\begin{aligned}
+ &\lTor_*^S(f_1,\ldots,f_n,1_{S'};
+        \mathscr P^{(1)}_\bullet,\ldots,\mathscr P^{(n)}_\bullet,\mathscr Q'_\bullet)\\
+ &\qquad\simeq\HH_*(\mathscr R_\bullet\otimes_S\mathscr Q'_\bullet),
+\end{aligned}
+\end{equation}
+且这是关于 $\mathscr Q'_\bullet$ 的 $\delta$-函子同构。又对任意仿射 $S$-概形间的 $S$-态射 $u:S''\to S'$，以下图交换：
+\begin{equation}\tag{6.10.1.2}
+\begin{tikzcd}[column sep=small,row sep=large]
+ \lTor_*^S(f_1,\ldots,f_n,1_{S'};\mathscr P^{(1)}_\bullet,\ldots,\mathscr P^{(n)}_\bullet,\mathscr Q'_\bullet)
+ \arrow[r,"\sim"]\arrow[d]&
+ \HH_*(\mathscr R_\bullet\otimes_S\mathscr Q'_\bullet)\arrow[d]\\
+ \lTor_*^S(f_1,\ldots,f_n,1_{S''};\mathscr P^{(1)}_\bullet,\ldots,\mathscr P^{(n)}_\bullet,u^*\mathscr Q'_\bullet)
+ \arrow[r,"\sim"]&
+ \HH_*(\mathscr R_\bullet\otimes_Su^*\mathscr Q'_\bullet).
+\end{tikzcd}
+\end{equation}
+其中竖箭头为（6.7.10）定义的典范 $(1_Y\times_Su)$-态射。
+\begin{proof}
+按照（6.6.2）的方法并结合（6.6.6）来计算超 Tor。以 $A_i$ 表示 $Y^{(i)}$ 的环，则每个 $L^{(i)}$ 是 $A_i$-模双复形，故有一个按（0，11.7.1）意义、由投射 $A_i$-模组成的 Cartan--Eilenberg 解消 $M^{(i)}$。由（6.6.6），（6.10.1.1）左边典范同构于 $H_*(M\otimes_AQ'_\bullet)$，其中
+\[
+ M=M^{(1)}\otimes_A\cdots\otimes_AM^{(n)},\qquad
+ \mathscr Q'_\bullet=\widetilde{Q'_\bullet}.
+\]
+由于各 $A_i$ 在 $A$ 上平坦，$M^{(i)}$ 都是平坦 $A$-模三重复形（$0_{\mathrm I}$，6.2.1），$M$ 也如此。又若 $B$ 为 $Y$ 的环，即各 $A_i$ 的张量积，则 $M$ 是 $B$-模三重复形。将 $M$ 按总次数视为单复形后，$\mathscr R_\bullet=\widetilde M$ 即满足要求；它与（6.7.10）的相容性也容易看出。
+\end{proof}
+
+\egas{6.10.2}{推论}
+在（6.10.1）中，可令 $\mathscr R_\bullet$ 下有界。若各 $\mathscr P^{(i)}_\bullet$ 上有界，且各 $Y^{(i)}$ 的上同调维数有限，还可令 $\mathscr R_\bullet$ 上有界。
+
+第一断言由各 $M^{(i)}$ 的三个次数均下有界得到。若各环 $A_i$ 的上同调维数有限，则每个 $M^{(i)}$ 的第三次数只取有限多个值；按构造，它的第一次数也只取有限多个值（6.6.2）。若 $\mathscr P^{(i)}_\bullet$ 的次数上有界，则第二次数也上有界（6.6.2），第二断言由此得到。
+
+\egas{6.10.3}{注记}
+（i）采用（6.10.1）的记号，因 $\mathscr R_\bullet$ 由 $S$-平坦 $\OO_Y$-模组成，
+$\HH_*(\mathscr R_\bullet\otimes_S\mathscr Q'_\bullet)$ 与
+$\lTor_*(\mathscr R_\bullet,\mathscr Q'_\bullet)$ 同构（6.5.9）。因此它是一个正则谱序列的终值（6.5.4），其 $E^2$ 项为
+\begin{equation}\tag{6.10.3.1}
+ E^2_{pq}=\bigoplus_{q'+q''=q}\lTor_p^S
+       (\HH_{q'}(\mathscr R_\bullet),\HH_{q''}(\mathscr Q'_\bullet)).
+\end{equation}
+这正是基变换谱序列 $(e)$（6.9.3）。
+
+（ii）设 $\mathscr R'_\bullet$ 是另一拟凝聚且 $S$-平坦的 $\OO_Y$-模复形，$g:\mathscr R'_\bullet\to\mathscr R_\bullet$ 是复形同态，且
+$\HH_*(g):\HH_*(\mathscr R'_\bullet)\to\HH_*(\mathscr R_\bullet)$ 为同构。由（6.3.3）、（6.5.9），$g$ 诱导关于 $\mathscr Q'_\bullet$ 的 $\delta$-函子同构
+\[
+ \HH_*(\mathscr R'_\bullet\otimes_S\mathscr Q'_\bullet)
+ \simeq\HH_*(\mathscr R_\bullet\otimes_S\mathscr Q'_\bullet),
+\]
+并使下图交换：
+\[
+\begin{tikzcd}[column sep=large,row sep=large]
+ \HH_*(\mathscr R'_\bullet\otimes_S\mathscr Q'_\bullet)
+ \arrow[r,"\sim"]\arrow[d]&
+ \HH_*(\mathscr R_\bullet\otimes_S\mathscr Q'_\bullet)\arrow[d]\\
+ \HH_*(\mathscr R'_\bullet\otimes_Su^*\mathscr Q'_\bullet)
+ \arrow[r,"\sim"]&
+ \HH_*(\mathscr R_\bullet\otimes_Su^*\mathscr Q'_\bullet).
+\end{tikzcd}
+\]
+这说明，（6.10.1）的性质并不完全决定复形 $\mathscr R_\bullet$。
+
+（iii）在（6.10.1）的证明中，可令各 $M^{(i)}$ 由自由 $A_i$-模组成；这由将（0，11.5.2.1）的证明对偶化容易得到。于是 $M^{(i)}\otimes_{A_i}B$ 由自由 $B$-模组成，而 $M$ 是这些复形在 $B$ 上的张量积，所以还可令 $\mathscr R_\bullet$ 与一个自由 $B$-模复形相伴。又由（M，XVII，1.2），三重复形 $M$ 函子性地依赖于各 $L^{(i)}$，故在固定每个 $X^{(i)}$ 的有限覆盖时，也函子性地依赖于各 $\mathscr P^{(i)}_\bullet$；这里三重复形的“态射”理解为同态按同伦关系所得的等价类。把 $X^{(i)}$ 的覆盖换成更细的覆盖，恰好在各 $L^{(i)}$ 间产生只确定到同伦的同态（6.6.8）。采用上述态射约定，最终可见 $M$ 是关于每个 $\mathscr P^{(i)}_\bullet$ 的函子。在（6.1.3）所提到的、专论上同调函子一般代数的章中，将进一步说明这种函子性，特别是 $\mathscr R_\bullet$ 对复形短正合列
+\[
+ 0\longrightarrow\mathscr P'^{(i)}_\bullet
+ \longrightarrow\mathscr P^{(i)}_\bullet
+ \longrightarrow\mathscr P''^{(i)}_\bullet\longrightarrow0
+\]
+的行为。
+
+\egas{6.10.4}{说明}
+$\mathscr R_\bullet$ 由 $S$-平坦 $\OO_Y$-模组成，容易推出
+$\HH_*(\mathscr R_\bullet\otimes_S\mathscr Q'_\bullet)$ 是关于 $\mathscr Q'_\bullet$ 的同调函子，参见（7.7.1）的论证。正如（6.1.1）所说，这一性质正是引入超 Tor 的动机。置
+\[
+\begin{gathered}
+ X=X^{(1)}\times_S\cdots\times_SX^{(n)},\quad
+ f=f_1\times_S\cdots\times_Sf_n,\\
+ \PP_\bullet=\mathscr P^{(1)}_\bullet\otimes_S\cdots\otimes_S\mathscr P^{(n)}_\bullet,\\
+ X'=X\times_SS',\qquad Y'=Y\times_SS',\qquad f'=f\times_S1_{S'}.
+\end{gathered}
+\]
+基变换问题引导我们研究 $\cH^\bullet(f',\PP_\bullet\otimes_S\N')$ 关于拟凝聚 $\OO_{S'}$-模 $\N'$ 的函子性，或研究
+$\cH^\bullet(f,\PP_\bullet\otimes_S\N)$ 关于拟凝聚 $\OO_S$-模 $\N$ 的函子性。若各 $\mathscr P^{(i)}_\bullet$，因而 $\PP_\bullet$，在 $S$ 上平坦，则由上述结果及（6.7.6），它确为关于 $\N$ 的上同调函子。但若不再假设各 $\mathscr P^{(i)}_\bullet$ 平坦，则不再如此，因而无法用通常的同调代数方法研究这个函子。
+
+我们尤其要用 $n=1$、$Y=S$，且 $\PP_\bullet$ 由 $Y$-平坦 $\OO_X$-模组成的情形。此时有：
+
+\egas{6.10.5}{定理}
+设 $Y=\Spec A$ 是诺特仿射概形，$f:X\to Y$ 为固有态射，$\PP_\bullet$ 是由凝聚且 $Y$-平坦 $\OO_X$-模组成的下有界复形。存在下有界 $\OO_Y$-模复形 $\LL_\bullet$，其各项 $\LL_j$ 具有 $\OO_Y^{r_j}$ 的形式，以及同构
+\begin{equation}\tag{6.10.5.1}
+ \cH^\bullet(f,\PP_\bullet\otimes_Y\mathscr Q_\bullet)
+ \simeq\HH_*(\LL_\bullet\otimes_Y\mathscr Q_\bullet),
+\end{equation}
+且这是关于下有界拟凝聚 $\OO_Y$-模复形 $\mathscr Q_\bullet$ 的 $\delta$-函子同构。又对于任意态射 $u:Y'\to Y$，置
+\[
+ X'=X_{(Y')},\qquad f'=f_{(Y')},\qquad
+ \PP'_\bullet=\PP_\bullet\otimes_Y\OO_{Y'},\qquad
+ \LL'_\bullet=u^*(\LL_\bullet),
+\]
+其中 $\LL'_\bullet$ 是有限型局部自由 $\OO_{Y'}$-模复形；则有同构
+\begin{equation}\tag{6.10.5.2}
+ \cH^\bullet(f',\PP'_\bullet\otimes_{Y'}\mathscr Q'_\bullet)
+ \simeq\HH_*(\LL'_\bullet\otimes_{Y'}\mathscr Q'_\bullet),
+\end{equation}
+为关于下有界拟凝聚 $\OO_{Y'}$-模复形 $\mathscr Q'_\bullet$ 的 $\delta$-函子同构，并使图
+\begin{equation}\tag{6.10.5.3}
+\begin{tikzcd}[column sep=large,row sep=large]
+ \cH^\bullet(f,\PP_\bullet\otimes_Y\mathscr Q_\bullet)
+ \arrow[r,"\sim"]\arrow[d]&
+ \HH_*(\LL_\bullet\otimes_Y\mathscr Q_\bullet)\arrow[d]\\
+ \cH^\bullet(f',\PP'_\bullet\otimes_{Y'}u^*\mathscr Q_\bullet)
+ \arrow[r,"\sim"]&
+ \HH_*(\LL'_\bullet\otimes_{Y'}u^*\mathscr Q_\bullet)
+\end{tikzcd}
+\end{equation}
+交换。
+\cmt{C3-N02}{本节沿用原著将次数为 $-1$ 的复形转成上同调次数的约定；上述带点的同构在具体次数上是 $\cH^{-j}\simeq\HH_j$，不是 $\cH^j\simeq\HH_j$。}
+\begin{proof}
+应用（6.10.1），先得到由拟凝聚且 $Y$-自由 $\OO_Y$-模组成的下有界复形 $\mathscr R_\bullet$（6.10.2、6.10.3，（ii）），以及关于 $\mathscr Q_\bullet$ 的 $\delta$-函子同构
+\begin{equation}\tag{6.10.5.4}
+ \cH^\bullet(f,\PP_\bullet\otimes_Y\mathscr Q_\bullet)
+ \simeq\HH_*(\mathscr R_\bullet\otimes_Y\mathscr Q_\bullet).
+\end{equation}
+\cmt{C3-T03}{此处原文引（6.10.3，（ii））说明可取自由项；直接给出这一点的是同条的（iii）。后文用（ii）比较同调同构则有其实际作用，不能将全部（ii）机械改为（iii）。}
+但先验地，$\mathscr R_\bullet$ 的各项不一定有限型。将（6.10.5.4）用于仅第零项为 $\OO_Y$ 的复形，可见 $\HH_*(\mathscr R_\bullet)$ 同构于 $\cH^\bullet(f,\PP_\bullet)$，因而由凝聚 $\OO_Y$-模组成（6.2.5）。于是（0，11.9.2）保证存在下有界复形 $\LL_\bullet$，各项与有限型自由 $A$-模相伴，以及同态 $\LL_\bullet\to\mathscr R_\bullet$，使同调上的相应同态双射。由（6.10.3，（ii）），得到（6.10.5.1）。当 $Y'$ 仿射时，其余断言由（6.10.1）及（6.10.3，（ii））得到。一般情形，只须取 $Y'$ 的仿射开覆盖 $(V_\alpha)$，并验证：在任意仿射开集 $W\subset V_\alpha\cap V_\beta$ 上，对应 $V_\alpha,V_\beta$ 的同构（6.10.5.2）的限制，都等于对应 $W$ 的同构。这由把（6.10.1.2）应用于典范嵌入 $W\to V_\alpha$、$W\to V_\beta$ 的交换性得到。
+\end{proof}
+
+\egas{6.10.6}{注记}
+后续各章主要将（6.10.5）用于 $\PP_\bullet$ 只含一个凝聚且 $Y$-平坦的 $\OO_X$-模 $\F$ 的情形。这时
+\[
+ \HH_n(\LL_\bullet)\simeq\cH^{-n}(f,\F)=R^{-n}f_*(\F)
+\]
+（6.2.1），所以 $\HH_n(\LL_\bullet)=0$（$n>0$）。后面（7.7.12，（i））将说明：若把各 $\LL_n$ 与有限型自由 $A$-模相伴的要求，改为有限型局部自由，则还可令 $\LL_\bullet$ 只含次数不大于0的项，因而只含有限项。
+
+与这样的 $\F$ 对应的复形 $\LL_\bullet$，除上述次数限制外，似乎没有特别性质。因此反过来可以问：给定由与有限型投射 $A$-模相伴的 $\OO_Y$-模组成、下有界且次数大于0的项全为零的复形 $\LL_\bullet$，是否存在一个在 $Y$ 上射影且平坦的 $Y$-概形 $X$ 和一个局部自由 $\OO_X$-模 $\F$，使得有关于 $\mathscr Q_\bullet$ 函子性的同构
+\[
+ \cH^\bullet(f,\F\otimes_Y\mathscr Q_\bullet)
+ \simeq\HH_*(\LL_\bullet\otimes_Y\mathscr Q_\bullet)?
+\]
+这样的结果之所以有意义，是因为它将把固有 $Y$-概形上凝聚且 $Y$-平坦模的上同调理论，完全归结为诺特环 $A$ 上有限型投射模复形的“同伦意义下”的理论。
+\cmt{C3-H03}{这里是1963年原著提出的问题，译文保留其历史语境；不据此陈述该问题今天是否已有答案。}

@@ -1,0 +1,13 @@
+{
+  "completed": "底本59页§15标题、首段全文及页末图式",
+  "next": "底本60页(in the case of the principal application P is a projective fibration起的括注",
+  "previous_project": "libfile_fde3_f-d40d64caa6888191a623c8b5fdd2d8d7_49ac57203c0c81918f3630f0324dcb35",
+  "source_sha256": "23a20ef32fd16a1bd623c0c08ac080d04fc94f248de12133b713a19d6b0330d9",
+  "merged_into_main": false,
+  "pdf_pages": 3,
+  "notation": "右上关联预概形以mathcal P区别左上P，后续应沿用",
+  "unresolved": [
+    "Bertini-Zariski推广保留作者未确定状态",
+    "历史缺文及待核保持，未补造证明"
+  ]
+}

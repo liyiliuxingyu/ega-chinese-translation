@@ -1,0 +1,5 @@
+法文扫描 EGA5.pdf：171物理页，SHA256 24cf8204184b58b18a46e5f63ecc36d6e791b3c8c96a09daac93de96ebd8e830
+英译编辑稿 EGA5trans.pdf：112物理页，SHA256 23a20ef32fd16a1bd623c0c08ac080d04fc94f248de12133b713a19d6b0330d9
+英稿来源 https://webusers.imj-prg.fr/~leila.schneps/grothendieckcircle/EGA/EGA5trans.pdf
+法143从一般情形起，法144为阿廷归纳和除子的切空间，法145续态射切空间和作者编排说明，法146译至扭曲丛说明。英108–110对应。剩余域纤维、h_0^*、Hom靶及Div下标均按正文脚注说明。无穷小扩张内部节号涂改、作者编排问题保留不确定。
+参考：Stacks 00IP（克鲁尔交）、056P（相对有效Cartier除子）、01ZL与081C（模型和有限表示平坦性）。正文法英互校；现代补证和链接编在独立小节。

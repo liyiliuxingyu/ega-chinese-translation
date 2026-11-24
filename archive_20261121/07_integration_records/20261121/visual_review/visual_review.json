@@ -1,0 +1,189 @@
+{
+  "review_date_utc": "2026-11-21",
+  "reviewer": "/root/dot_middle",
+  "target_status": "restored third-supplement published PDFs, before root rebuild; any later PDF needs hash/pixel linkage or fresh review",
+  "main_pdf": {
+    "sha256": "df69850134279ecf6f23b6eb3963d85b374c7fa682d6a648fa8469df887e7f44",
+    "pages": 1158
+  },
+  "report_pdf": {
+    "sha256": "d5aa39fb5c5916de8f63516a33e82e1d78e3248ce3ea4bdcb7cb87d31621e0f4",
+    "pages": 287
+  },
+  "renderer": "Poppler pdftoppm",
+  "dpi": 144,
+  "visually_opened_page_count": 11,
+  "selection": {
+    "third_supplement_main_pages": [
+      971,
+      973,
+      975,
+      976,
+      978,
+      980,
+      981,
+      982
+    ],
+    "earlier_supplement_diagram_sample": [
+      954
+    ],
+    "new_report_pages": [
+      17,
+      19
+    ]
+  },
+  "result": "实际打开11张整页渲染图，未发现需阻止交付的文字/公式/脚注遮挡、页面裁切或版心溢出。仅为所列页面抽样，非全书视觉复审或数学证明核验。",
+  "observations": [
+    {
+      "pdf": "/workspace/scratch/a886fd56dd2f/restored_20261121/latest/EGA_v17_V_supplement_III/project/main.pdf",
+      "pdf_sha256": "df69850134279ecf6f23b6eb3963d85b374c7fa682d6a648fa8469df887e7f44",
+      "physical_page": 954,
+      "png": "/workspace/scratch/a886fd56dd2f/integration_20261121/visual_review/main_0954.png",
+      "png_sha256": "a6b56ec24fa12f9bd573e1c67b6e5453ec5b3f166acc1bb7a547751e9aae5feb",
+      "dpi": 144,
+      "printed_page": "934",
+      "scope": "第一辑既有图与密集脚注补充样本",
+      "method": "144 dpi Poppler page PNG opened individually with view_image and visually inspected",
+      "observed": "行列式线丛方形图的四顶点、箭头及a/b标记清楚；下方三条行列式等式和L公式在版心内。五条译注与正文分隔清楚，未见注行相撞或出页。此页属于第一辑，不能计为第三辑新增。",
+      "material_layout_defect_found": false
+    },
+    {
+      "pdf": "/workspace/scratch/a886fd56dd2f/restored_20261121/latest/EGA_v17_V_supplement_III/project/main.pdf",
+      "pdf_sha256": "df69850134279ecf6f23b6eb3963d85b374c7fa682d6a648fa8469df887e7f44",
+      "physical_page": 971,
+      "png": "/workspace/scratch/a886fd56dd2f/integration_20261121/visual_review/main_0971.png",
+      "png_sha256": "8560584c2ca105a7a1ddfea4f1fdb71f8a9d6bfc37908273b195f7b71242d291",
+      "dpi": 144,
+      "printed_page": "951",
+      "scope": "第三辑章首、题名说明与术语脚注",
+      "method": "144 dpi Poppler page PNG opened individually with view_image and visually inspected",
+      "observed": "IV.17.15标题分为两行，题名说明及正文层级清楚；非退化蕴含光滑的显示式居中。三条脚注标号和注文字可读，未见脚注与正文重叠、缺字方框或左右截断。",
+      "material_layout_defect_found": false
+    },
+    {
+      "pdf": "/workspace/scratch/a886fd56dd2f/restored_20261121/latest/EGA_v17_V_supplement_III/project/main.pdf",
+      "pdf_sha256": "df69850134279ecf6f23b6eb3963d85b374c7fa682d6a648fa8469df887e7f44",
+      "physical_page": 973,
+      "png": "/workspace/scratch/a886fd56dd2f/integration_20261121/visual_review/main_0973.png",
+      "png_sha256": "47c402756fd5316873badc0006878bea000e060d9a9562ddc3caa38d00139373",
+      "dpi": 144,
+      "printed_page": "953",
+      "scope": "第64批勘误段与译校层次",
+      "method": "144 dpi Poppler page PNG opened individually with view_image and visually inspected",
+      "observed": "勘误段标题、数学引用及两条原文异文脚注清楚；非原文译校说明另起标题，未混成作者正文。脚注1、2与相应句相连，没有孤立在独立行的标号。",
+      "material_layout_defect_found": false
+    },
+    {
+      "pdf": "/workspace/scratch/a886fd56dd2f/restored_20261121/latest/EGA_v17_V_supplement_III/project/main.pdf",
+      "pdf_sha256": "df69850134279ecf6f23b6eb3963d85b374c7fa682d6a648fa8469df887e7f44",
+      "physical_page": 975,
+      "png": "/workspace/scratch/a886fd56dd2f/integration_20261121/visual_review/main_0975.png",
+      "png_sha256": "5a70b1485f86c726bdb27412e0b4ed82c8afc3279f77151298e4b2a169e090d9",
+      "dpi": 144,
+      "printed_page": "955",
+      "scope": "15.1雅可比判据与Euler显示公式",
+      "method": "144 dpi Poppler page PNG opened individually with view_image and visually inspected",
+      "observed": "正文、手写边注说明及Euler公式排在版心内，公式上下标和求和限可辨；页底两条脚注完整。英文Cartier在行末按普通断词处理，未见字符丢失。",
+      "material_layout_defect_found": false
+    },
+    {
+      "pdf": "/workspace/scratch/a886fd56dd2f/restored_20261121/latest/EGA_v17_V_supplement_III/project/main.pdf",
+      "pdf_sha256": "df69850134279ecf6f23b6eb3963d85b374c7fa682d6a648fa8469df887e7f44",
+      "physical_page": 976,
+      "png": "/workspace/scratch/a886fd56dd2f/integration_20261121/visual_review/main_0976.png",
+      "png_sha256": "d5dc5457c4ca3905299a1c51330c1dbbbff79c0118f181d07a1b18b53525a64b",
+      "dpi": 144,
+      "printed_page": "956",
+      "scope": "15.2初等增广定义与分项",
+      "method": "144 dpi Poppler page PNG opened individually with view_image and visually inspected",
+      "observed": "(a)(b)(c)三项层次清楚，分次同态和上下标可读；长段落较密但仍在版心内。两条脚注完整，未见公式与脚注横线相撞。",
+      "material_layout_defect_found": false
+    },
+    {
+      "pdf": "/workspace/scratch/a886fd56dd2f/restored_20261121/latest/EGA_v17_V_supplement_III/project/main.pdf",
+      "pdf_sha256": "df69850134279ecf6f23b6eb3963d85b374c7fa682d6a648fa8469df887e7f44",
+      "physical_page": 978,
+      "png": "/workspace/scratch/a886fd56dd2f/integration_20261121/visual_review/main_0978.png",
+      "png_sha256": "9935c46c0a05ba73a58cb531a574c818d0eaff1642f933d184a0e4ff2742aa7c",
+      "dpi": 144,
+      "printed_page": "958",
+      "scope": "15.5–15.6与长维数公式",
+      "method": "144 dpi Poppler page PNG opened individually with view_image and visually inspected",
+      "observed": "原稿拟写段与非原文补证由标题分开。维数差公式、初始理想叙述及页底切余空间同态可读，没有伸出右边界；页底脚注有独立间距。",
+      "material_layout_defect_found": false
+    },
+    {
+      "pdf": "/workspace/scratch/a886fd56dd2f/restored_20261121/latest/EGA_v17_V_supplement_III/project/main.pdf",
+      "pdf_sha256": "df69850134279ecf6f23b6eb3963d85b374c7fa682d6a648fa8469df887e7f44",
+      "physical_page": 980,
+      "png": "/workspace/scratch/a886fd56dd2f/integration_20261121/visual_review/main_0980.png",
+      "png_sha256": "a0109790e81649da16d4305e9ab29db3d15b094eb0a79bf386c5ed176978523a",
+      "dpi": 144,
+      "printed_page": "960",
+      "scope": "15.7首段、主部公式与脚注",
+      "method": "144 dpi Poppler page PNG opened individually with view_image and visually inspected",
+      "observed": "15.7标题、主部对称幂公式和两个维数条件排印清楚；两条脚注内容完整。本页正文与脚注之间留有较大空白，与源文件随后显式newpage相应，不是文字遮挡或缺页。",
+      "material_layout_defect_found": false
+    },
+    {
+      "pdf": "/workspace/scratch/a886fd56dd2f/restored_20261121/latest/EGA_v17_V_supplement_III/project/main.pdf",
+      "pdf_sha256": "df69850134279ecf6f23b6eb3963d85b374c7fa682d6a648fa8469df887e7f44",
+      "physical_page": 981,
+      "png": "/workspace/scratch/a886fd56dd2f/integration_20261121/visual_review/main_0981.png",
+      "png_sha256": "31f692d1e99957c7ecf8daf382f392bc6ed79641b46146ac08e7fb69c0e3f9b2",
+      "dpi": 144,
+      "printed_page": "961",
+      "scope": "15.7最后作者段及译校说明起点",
+      "method": "144 dpi Poppler page PNG opened individually with view_image and visually inspected",
+      "observed": "作者编排附记最后一段完整可读，随后明确出现译校说明（非原文）。主部与几何孤立性的长行内公式正常换行；有限猜测脚注可读，未见与页底相撞。",
+      "material_layout_defect_found": false
+    },
+    {
+      "pdf": "/workspace/scratch/a886fd56dd2f/restored_20261121/latest/EGA_v17_V_supplement_III/project/main.pdf",
+      "pdf_sha256": "df69850134279ecf6f23b6eb3963d85b374c7fa682d6a648fa8469df887e7f44",
+      "physical_page": 982,
+      "png": "/workspace/scratch/a886fd56dd2f/integration_20261121/visual_review/main_0982.png",
+      "png_sha256": "f85525cbac7b54ed99690f7f7807d707cae84a7834fb3d34f142c25463e477fd",
+      "dpi": 144,
+      "printed_page": "962",
+      "scope": "新增译校末段与两个反例",
+      "method": "144 dpi Poppler page PNG opened individually with view_image and visually inspected",
+      "observed": "有限可分、不能删有限、纯不可分三个段题与相应公式完整；最后“几何”二字排至独立短行仍为同段正常结尾。没有右侧溢出或末句被裁切。",
+      "material_layout_defect_found": false
+    },
+    {
+      "pdf": "/workspace/scratch/a886fd56dd2f/restored_20261121/latest/EGA_v17_V_supplement_III/project/report.pdf",
+      "pdf_sha256": "d5aa39fb5c5916de8f63516a33e82e1d78e3248ce3ea4bdcb7cb87d31621e0f4",
+      "physical_page": 17,
+      "png": "/workspace/scratch/a886fd56dd2f/integration_20261121/visual_review/report_0017.png",
+      "png_sha256": "1de0ddad5ceaa536bf496534e011723722bd0ada91f3d3a8a62886e8bf53e65f",
+      "dpi": 144,
+      "printed_page": "1",
+      "scope": "新增累计核查章节首页",
+      "method": "144 dpi Poppler page PNG opened individually with view_image and visually inspected",
+      "observed": "章节标题、第一辑分节标题和各批段题层级清楚；来源范围、底本文件名与行内交/并理想公式在版心内，未见长等宽路径溢出。",
+      "material_layout_defect_found": false
+    },
+    {
+      "pdf": "/workspace/scratch/a886fd56dd2f/restored_20261121/latest/EGA_v17_V_supplement_III/project/report.pdf",
+      "pdf_sha256": "d5aa39fb5c5916de8f63516a33e82e1d78e3248ce3ea4bdcb7cb87d31621e0f4",
+      "physical_page": 19,
+      "png": "/workspace/scratch/a886fd56dd2f/integration_20261121/visual_review/report_0019.png",
+      "png_sha256": "796226a7eaec325ed6d4272aa6342c860481ab221af70f27888b72bf9e4da551",
+      "dpi": 144,
+      "printed_page": "3",
+      "scope": "第三辑核查结尾及仍待核查",
+      "method": "144 dpi Poppler page PNG opened individually with view_image and visually inspected",
+      "observed": "第64–68批段题、较长数学行内式及下一断点说明均可读；“仍需继续的核查”标题与最后状态说明留在同页，未见标题孤立或正文裁切。",
+      "material_layout_defect_found": false
+    }
+  ],
+  "not_checked": [
+    "第三辑主稿物理972、974、977、979未在本次逐页看图。",
+    "新增报告物理18页未在本次逐页看图。",
+    "其余主稿与报告旧页、本轮重编后的成品不在本记录的直接看图范围。",
+    "没有核验所有超链接目标、打印设备差异或全部数学证明。"
+  ],
+  "diagram_note": "第三辑63–68六模块本身无tikzcd图；按要求补抽第一辑主稿物理954页交换图，明确未将它记为第三辑新增。",
+  "source_changes": "none; no source editing or compilation by this reviewer"
+}

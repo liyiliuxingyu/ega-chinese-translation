@@ -1,0 +1,18 @@
+{
+  "main": {
+    "page_count": 900,
+    "text_mismatches": [],
+    "pixel_mismatches_72dpi": [],
+    "renderer": "MuPDF 1.26.7",
+    "size_bytes": 4423412,
+    "sha256": "a89b592728f4d40a76fef8fd3a169a76061e341e0115fe429b78977530c24bb7"
+  },
+  "report": {
+    "page_count": 123,
+    "text_mismatches": [],
+    "pixel_mismatches_72dpi": [],
+    "renderer": "MuPDF 1.26.7",
+    "size_bytes": 974710,
+    "sha256": "36cd4981efe2e13d30725f30d0a64ca7d49c3e75e0531b0f3e9a66c8260c30d3"
+  }
+}

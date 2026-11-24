@@ -1,0 +1,14 @@
+{
+ "batch": 88,
+ "task": "EGA V French-source coverage audit",
+ "fr_physical_audited_this_run": [3,4,5,6,7,8,9],
+ "en_physical_collated_this_run": [4,5,6,7,8],
+ "source_extent": "IV.20.1 through proposition 2.7 and its proof, inclusive",
+ "already_translated_in_baseline": true,
+ "corrected_draft_integrated_into_baseline": false,
+ "next_fr_physical": 10,
+ "next_en_physical": 9,
+ "next_anchor": "Proposition 2.8; verify which morphism is regular",
+ "formal_EGA_IV_1_separate": [221,223],
+ "full_french_page_content_audit_complete": false
+}

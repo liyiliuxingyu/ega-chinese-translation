@@ -1,0 +1,88 @@
+{
+  "previous_pdf_sha256": "055c22391daf67a0f9b2d7a1f942ed6a4822b85e8628d044d39b9a589649d721",
+  "pdf_sha256": "c4cc8b96308a0ff53d3a1d47bdf5207893df6e8a73282c7cbea1698e612fba3b",
+  "pdf_pages": 1130,
+  "pdf_bytes": 5562155,
+  "source_tex_sha256": "eb805f3acc63a5322bec84f7df57330da307039dafb2570fb8188011d4a94a6f",
+  "short_range_pdf": [
+    947,
+    953
+  ],
+  "short_range_printed": [
+    "927",
+    "933"
+  ],
+  "markers": {
+    "V-H-C16-01": [
+      {
+        "pdf_page": 947,
+        "printed_page": "927"
+      }
+    ],
+    "D17-S13": [
+      {
+        "pdf_page": 948,
+        "printed_page": "928"
+      }
+    ],
+    "D17-S03": [
+      {
+        "pdf_page": 950,
+        "printed_page": "930"
+      }
+    ],
+    "D17-S05": [
+      {
+        "pdf_page": 951,
+        "printed_page": "931"
+      }
+    ],
+    "D17-S10": [
+      {
+        "pdf_page": 953,
+        "printed_page": "933"
+      }
+    ],
+    "PS 底本在此结束": [
+      {
+        "pdf_page": 953,
+        "printed_page": "933"
+      }
+    ]
+  },
+  "text_changed_pages": [
+    950,
+    951,
+    953
+  ],
+  "unchanged_page_comparisons": [
+    {
+      "pdf_page": 947,
+      "printed_page": "927",
+      "pixel_identical_to_previously_viewed": true,
+      "new_screenshot": "/workspace/scratch/a886fd56dd2f/integration/short_visual/final/main_pdf_947_print_927.png",
+      "new_screenshot_sha256": "0c2983b7d8f14d01627cb8fb2d817222cf91121954f2d841d62cb2472a2a7fda"
+    },
+    {
+      "pdf_page": 948,
+      "printed_page": "928",
+      "pixel_identical_to_previously_viewed": true,
+      "new_screenshot": "/workspace/scratch/a886fd56dd2f/integration/short_visual/final/main_pdf_948_print_928.png",
+      "new_screenshot_sha256": "d3385bb994271960cfef260e719bb0c3a9fb8617b28b13d5d4a12e5fe221f3fd"
+    },
+    {
+      "pdf_page": 949,
+      "printed_page": "929",
+      "pixel_identical_to_previously_viewed": true,
+      "new_screenshot": "/workspace/scratch/a886fd56dd2f/integration/short_visual/final/main_pdf_949_print_929.png",
+      "new_screenshot_sha256": "e8ca5f1c84a8cbda5468301134a82249502f20ae1ff9dfa9ebd328298667a7b1"
+    },
+    {
+      "pdf_page": 952,
+      "printed_page": "932",
+      "pixel_identical_to_previously_viewed": true,
+      "new_screenshot": "/workspace/scratch/a886fd56dd2f/integration/short_visual/final/main_pdf_952_print_932.png",
+      "new_screenshot_sha256": "91d2177464ed7a7850eb8bbc29987b9b842f9c27329287a18bf77a13c2f8f9e6"
+    }
+  ]
+}

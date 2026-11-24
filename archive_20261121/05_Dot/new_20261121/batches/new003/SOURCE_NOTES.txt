@@ -1,0 +1,8 @@
+EGA V 法文核验现场（2026-11-19 23:00轮复用）
+完整法文：ega_p67_check/EGA5.pdf，171页，16097021 bytes。
+来源 https://webusers.imj-prg.fr/~leila.schneps/grothendieckcircle/EGA/EGA5.pdf
+SHA256 24cf8204184b58b18a46e5f63ecc36d6e791b3c8c96a09daac93de96ebd8e830
+物理页=手写页：101 对应英语66及67首段；102 对应英语67非超奇异点、两正合列、下一段及备注开头；103 续备注并有扭曲后的手写图。
+法文101 det Q 正指数；102 第二正合列目标原样 ΩX/Y + ΩY/S，存在秩疑点。共同线商解释见 ega52。
+英语两URL EGA5trans.pdf和EGAVaiello.pdf当前下载及用户底本三者同SHA256 23a20ef32fd16a1bd623c0c08ac080d04fc94f248de12133b713a19d6b0330d9。
+最新已译至英67第二正合列；下一 It is necessary to summarize the whole situation in a recapitulating proposition，法文102 Il faudrait résumer toute cette situation dans une proposition récapitulative。

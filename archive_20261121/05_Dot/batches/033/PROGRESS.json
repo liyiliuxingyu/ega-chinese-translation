@@ -1,0 +1,15 @@
+{
+  "completed": "底本52页 It remains to prove the corollary announced of 8.8 in the case m = 1 至 this proves our regret, thus 13.2，原证明收尾整段",
+  "next": "第52页 N.B. The reasoning does not go through",
+  "previous_project": "libfile_fde3_f-f4f852e6eb4081918d4a59404cf2ab5a_49ac57203c0c81918f3630f0324dcb35",
+  "source_sha256": "23a20ef32fd16a1bd623c0c08ac080d04fc94f248de12133b713a19d6b0330d9",
+  "merged_into_main": false,
+  "pdf_pages": 4,
+  "unresolved": [
+    "8.8缺文与8.7(c)残缺未恢复",
+    "一般平展与对偶论证适用范围未独立验证",
+    "X sing/h sing记号不一致保留",
+    "后续NB尚未译",
+    "旧待核保持"
+  ]
+}

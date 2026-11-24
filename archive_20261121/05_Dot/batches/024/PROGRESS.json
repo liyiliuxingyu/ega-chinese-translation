@@ -1,0 +1,14 @@
+{
+  "completed": "底本46—47页一长段，自 Let us again assume that 至 a geometric paragraph devoted to grassmanians；含原脚注61、62",
+  "next": "第47页 If we also define V^(k)",
+  "previous_project": "libfile_fde3_f-fe523dba97dc819184fb25f5fdc2e942_49ac57203c0c81918f3630f0324dcb35",
+  "source_sha256": "23a20ef32fd16a1bd623c0c08ac080d04fc94f248de12133b713a19d6b0330d9",
+  "merged_into_main": false,
+  "pdf_pages": 4,
+  "unresolved": [
+    "loneve及其前后句意残缺",
+    "V^1与V撇的记号关系未明确重定义",
+    "过滤层的含义及补篇第16页引理引用未定位",
+    "此前缺文及歧义仍保留"
+  ]
+}

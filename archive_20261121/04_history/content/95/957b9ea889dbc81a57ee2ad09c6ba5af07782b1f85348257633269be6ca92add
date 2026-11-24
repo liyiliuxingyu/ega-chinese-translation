@@ -1,0 +1,3 @@
+# 首轮视觉证据归档
+
+此目录保存主稿SHA `c4cc8b96308a0ff53d3a1d47bdf5207893df6e8a73282c7cbea1698e612fba3b`的原始JSON、Markdown、渲染清单和19张实际查看过的PNG，未改写原记录。原记录中的绝对路径是首轮当时的位置；归档后的旧图在本目录，父目录同名PNG为最终主稿。最终主稿散列及复看/像素未变的分组见父目录外的`body_early_middle_visual.json`与`.md`。

@@ -1,0 +1,375 @@
+% 一般拓扑情形的完整证明。原证明的核比较缺步在19.5.6.7明示修补。
+\egap{19.5.6}
+\textbf{定理（19.5.3）的证明。}
+设 $(\mathfrak b_\alpha)$ 是 $B$ 的一个递降开理想基本系，令
+\[
+ B_\alpha=B/\mathfrak b_\alpha,\qquad
+ C_\alpha=B/(\mathfrak b_\alpha+\mathfrak j),\qquad
+ \mathfrak j_\alpha=(\mathfrak b_\alpha+\mathfrak j)/\mathfrak b_\alpha.
+\]
+于是
+\[
+ C_\alpha=B_\alpha/\mathfrak j_\alpha,\qquad
+ \mathfrak j_\alpha^n/\mathfrak j_\alpha^{n+1}
+  =(\mathfrak b_\alpha+\mathfrak j^n)/(\mathfrak b_\alpha+\mathfrak j^{n+1}).
+\]
+$C$-模 $\mathfrak j^n/\mathfrak j^{n+1}$ 的开子模
+\[
+ \bigl((\mathfrak b_\alpha\cap\mathfrak j^n)+\mathfrak j^{n+1}\bigr)
+         /\mathfrak j^{n+1}
+\]
+构成其零点基本邻域系。由于
+\[
+ (\mathfrak b_\alpha\cap\mathfrak j^n)+\mathfrak j^{n+1}
+   =\mathfrak j^n\cap(\mathfrak b_\alpha+\mathfrak j^{n+1}),
+\]
+有典范识别
+\[
+ \frac{\mathfrak j^n}{(\mathfrak b_\alpha\cap\mathfrak j^n)+\mathfrak j^{n+1}}
+ \simeq\frac{\mathfrak b_\alpha+\mathfrak j^n}
+                  {\mathfrak b_\alpha+\mathfrak j^{n+1}}
+ \simeq\frac{\mathfrak j_\alpha^n}{\mathfrak j_\alpha^{n+1}}.
+\]
+
+\egap{19.5.6.1}
+\textbf{（19.5.3，i）的证明。}
+设 $P,Q$ 为离散 $C_\alpha$-模，$u:P\to Q$ 为满 $C_\alpha$-同态。离散环 $B/(\mathfrak b_\alpha+\mathfrak j^2)$ 是 $C_\alpha$ 以平方零理想 $\mathfrak j_\alpha/\mathfrak j_\alpha^2$ 为核的 $B$-扩张。
+给定连续 $C$-同态 $v:\mathfrak j/\mathfrak j^2\to Q$。必要时将 $\mathfrak b_\alpha$ 换成更小的开理想，可假设
+\[
+ \bigl((\mathfrak b_\alpha\cap\mathfrak j)+\mathfrak j^2\bigr)/\mathfrak j^2
+       \subseteq\Ker v.
+\]
+因此 $v$ 诱导离散模同态 $v':\mathfrak j_\alpha/\mathfrak j_\alpha^2\to Q$。
+沿 $v'$ 变换上述扩张的核，得到 $C_\alpha$ 以 $Q$ 为核的 $B_\alpha$-扩张 $E_\alpha$；令
+\[
+ \psi:B/(\mathfrak b_\alpha+\mathfrak j^2)\longrightarrow E_\alpha
+\]
+为对应同态（18.2.8）。$E_\alpha$ 是离散拓扑 $A$-代数，而典范 $C_\alpha\simeq E_\alpha/Q$ 与 $C\to C_\alpha$ 复合，给出连续 $A$-同态 $f:C\to E_\alpha/Q$。
+
+由 $C$ 形式光滑及 $Q^2=0$，存在连续 $A$-同态 $g:C\to E_\alpha$ 提升 $f$。因 $E_\alpha$ 离散，有 $\beta\geq\alpha$ 使 $g$ 分解为
+\[
+ C\longrightarrow C_\beta\xrightarrow{g'}E_\alpha.
+\]
+沿 $C_\beta\to C_\alpha$ 拉回 $E_\alpha$，得到 $C_\beta$ 以 $Q$ 为核的 $A$-扩张 $E_\beta$。$g'$ 的存在表明此扩张 $A$-平凡，因此可识别为 $D_{C_\beta}(Q)$。满射 $u:P\to Q$ 给出
+\[
+ E'_\beta=D_{C_\beta}(P)\longrightarrow D_{C_\beta}(Q)=E_\beta,
+\]
+其核 $\mathfrak a\subset P$ 平方为零。由拉回构造有连续 $A$-同态 $f':B\to E_\beta$；由 $B$ 形式光滑，它提升为连续 $h':B\to E'_\beta$。
+
+令 $\theta:E'_\beta\to E_\beta\to E_\alpha$ 为复合。图
+\[
+\begin{tikzcd}
+ E'_\beta\arrow[r,"\theta"]&E_\alpha\\
+ B\arrow[u,"h'"]\arrow[r]&B/(\mathfrak b_\alpha+\mathfrak j^2)\arrow[u,"\psi"']
+\end{tikzcd}
+\]
+交换。$h'(\mathfrak j)\subset P$，故 $h'(\mathfrak j^2)=0$。限制到 $\mathfrak j$，得到
+\[
+\begin{tikzcd}
+ P\arrow[r,"u"]&Q\\
+ &\mathfrak j/\mathfrak j^2\arrow[ul,"w"]\arrow[u,"v"']
+\end{tikzcd}
+\]
+其中 $w$ 连续。于是 $\mathfrak j/\mathfrak j^2$ 是形式投射 $C$-模。
+
+\egap{19.5.6.2}
+对每个 $n\geq0$，令 $E_n=B/\mathfrak j^{n+1}$，特别 $E_0=C$。其开理想基本系为
+$(\mathfrak b_\alpha+\mathfrak j^{n+1})/\mathfrak j^{n+1}$，相应离散商记为
+\[
+ E_{\alpha,n}=B/(\mathfrak b_\alpha+\mathfrak j^{n+1})
+           =B_\alpha/\mathfrak j_\alpha^{n+1}.
+\]
+如上所见，$\gr_{\mathfrak j}^n(B)$ 的相应离散商为
+$\mathfrak j_\alpha^n/\mathfrak j_\alpha^{n+1}$。再令
+\[
+ F_{\alpha,n}=
+ \frac{\Salg_{C_\alpha}(\mathfrak j_\alpha/\mathfrak j_\alpha^2)}
+ {\bigl(\Salg_{C_\alpha}^+(\mathfrak j_\alpha/\mathfrak j_\alpha^2)\bigr)^{n+1}}.
+\]
+对固定的 $n\geq1$，由（19.5.1.1），各
+$\Salg_{C_\alpha}^n(\mathfrak j_\alpha/\mathfrak j_\alpha^2)$
+是拓扑 $C$-模 $\Salg_C^n(\mathfrak j/\mathfrak j^2)$ 对一个开子模基本系的商。
+当 $\alpha\leq\beta$ 时，$B_\beta\to B_\alpha$、$C_\beta\to C_\alpha$、
+$\mathfrak j_\beta/\mathfrak j_\beta^2\to\mathfrak j_\alpha/\mathfrak j_\alpha^2$、
+$E_{\beta,n}\to E_{\alpha,n}$、$F_{\beta,n}\to F_{\alpha,n}$ 等典范同态，统称为\emph{过渡同态}。
+
+\egas{19.5.6.3}{引理}
+假设 $C$ 为形式光滑 $A$-代数，$B$ 预可容许，且 $\mathfrak j/\mathfrak j^2$ 为形式投射 $C$-模。则：
+
+（i）对每个 $\alpha$，存在 $\beta\geq\alpha$ 和满 $A$-代数同态
+\[
+ v_{\alpha\beta}:F_{\beta,n}\longrightarrow E_{\alpha,n},
+\]
+使 $\gr^0(v_{\alpha\beta}):C_\beta\to C_\alpha$ 及
+$\gr^1(v_{\alpha\beta}):\mathfrak j_\beta/\mathfrak j_\beta^2\to
+\mathfrak j_\alpha/\mathfrak j_\alpha^2$ 均为过渡同态。
+
+（ii）若 $\beta,v_{\alpha\beta}$ 满足（i），则对每个 $\gamma\geq\beta$，存在 $\delta\geq\gamma$ 和满足（i）的满 $A$-代数同态
+$v_{\gamma\delta}:F_{\delta,n}\to E_{\gamma,n}$，使下图交换：
+\begin{equation}
+\begin{tikzcd}
+ F_{\beta,n}\arrow[r,"v_{\alpha\beta}"]&E_{\alpha,n}\\
+ F_{\delta,n}\arrow[r,"v_{\gamma\delta}"]\arrow[u]&E_{\gamma,n}\arrow[u]
+\end{tikzcd}
+\tag{19.5.6.4}
+\end{equation}
+其中竖直箭头为过渡同态。
+
+\eproof
+（i）在离散拓扑 $A$-代数 $E_{\alpha,n}$ 中，理想 $\mathfrak j_\alpha/\mathfrak j_\alpha^{n+1}$ 幂零，且其商为 $C_\alpha$。由 $C$ 形式光滑，典范同态 $C\to C_\alpha$ 提升为连续 $A$-同态
+$f_\alpha:C\to E_{\alpha,n}$。
+以 $f_\alpha$ 定义 $C$ 的作用，则 $\mathfrak j_\alpha/\mathfrak j_\alpha^{n+1}$ 是被 $C$ 的某个开理想零化的离散拓扑 $C$-模。形式投射性给出连续 $C$-线性映射
+\[
+ g_\alpha:\mathfrak j/\mathfrak j^2\longrightarrow
+                   \mathfrak j_\alpha/\mathfrak j_\alpha^{n+1}
+\]
+使
+\[
+\begin{tikzcd}
+ \mathfrak j_\alpha/\mathfrak j_\alpha^{n+1}\arrow[r]&\mathfrak j_\alpha/\mathfrak j_\alpha^2\\
+ &\mathfrak j/\mathfrak j^2\arrow[ul,"g_\alpha"]\arrow[u]
+\end{tikzcd}
+\]
+交换。由连续性，可以取 $\beta\geq\alpha$，使 $f_\alpha,g_\alpha$ 分别通过 $C_\beta$ 和 $\mathfrak j_\beta/\mathfrak j_\beta^2$ 分解。它们给出
+\[
+ \Salg_{C_\beta}(\mathfrak j_\beta/\mathfrak j_\beta^2)\longrightarrow E_{\alpha,n},
+\]
+并将增广理想的 $(n+1)$ 次幂送到零，因而诱导所求 $v_{\alpha\beta}$。其零次和一次相伴分次同态均满；由于目标相伴分次代数由零次和一次部分生成，$\gr(v_{\alpha\beta})$ 满射。两个滤过均有限，故 $v_{\alpha\beta}$ 满射（Bourbaki，\textit{交换代数}，第三章，§2，第8目，定理1的推论3）。
+
+（ii）由预可容许性，可以将基本系限制在同一个定义理想 $\mathfrak b_{\alpha_0}$ 内，其幂趋于零。因此，对 $\gamma\geq\alpha$，过渡同态 $E_{\gamma,n}\to E_{\alpha,n}$ 的核
+\[
+ (\mathfrak b_\alpha+\mathfrak j^{n+1})/
+       (\mathfrak b_\gamma+\mathfrak j^{n+1})
+\]
+幂零。应用已校订的引理（19.3.10.1），可取连续 $f_\gamma:C\to E_{\gamma,n}$，使它提升 $C\to C_\gamma$ 并满足
+\[
+\begin{tikzcd}
+ C\arrow[r,"f_\gamma"]\arrow[dr,"f_\alpha"']&E_{\gamma,n}\arrow[d]\\
+ &E_{\alpha,n}.
+\end{tikzcd}
+\]
+\cmt{G7-H04}{这里确实满足校订引理要求的“理想像相等”：过渡同态将 $\mathfrak j_\gamma/\mathfrak j_\gamma^{n+1}$ 满射到 $\mathfrak j_\alpha/\mathfrak j_\alpha^{n+1}$。因此补入该条件不破坏本处应用。旧引理按包含条件书写的问题已在第六版报告F6-E01/G02论证，本版正文已经修正。}
+
+再由 $\mathfrak j/\mathfrak j^2$ 形式投射，可选择连续 $C$-同态
+$g_\gamma:\mathfrak j/\mathfrak j^2\to\mathfrak j_\gamma/\mathfrak j_\gamma^{n+1}$，同时满足其到 $\mathfrak j_\gamma/\mathfrak j_\gamma^2$ 的复合为典范映射 $\rho_\gamma$，而到 $\mathfrak j_\alpha/\mathfrak j_\alpha^{n+1}$ 的复合为 $g_\alpha$。亦即，下图交换：
+\[
+\begin{tikzcd}[column sep=small]
+ &\mathfrak j_\gamma/\mathfrak j_\gamma^{n+1}
+       \arrow[dl]\arrow[dr] &\\
+ \mathfrak j_\alpha/\mathfrak j_\alpha^{n+1}\arrow[dr]
+ & &\mathfrak j_\gamma/\mathfrak j_\gamma^2\arrow[dl]\\
+ &\mathfrak j_\alpha/\mathfrak j_\alpha^2&
+\end{tikzcd}
+\qquad
+\begin{gathered}
+ \mathfrak j/\mathfrak j^2\xrightarrow{g_\gamma}
+              \mathfrak j_\gamma/\mathfrak j_\gamma^{n+1},\\
+ g_\alpha=\operatorname{pr}_1 g_\gamma,\quad
+ \rho_\gamma=\operatorname{pr}_2 g_\gamma.
+\end{gathered}
+\]
+具体说，$(g_\alpha,\rho_\gamma)$ 的像包含于上述两个目标之积中，由
+$P=\mathfrak j_\gamma/\mathfrak j_\gamma^{n+1}$ 的典范映射所得的像 $Q$。这是因为二者在 $\mathfrak j_\alpha/\mathfrak j_\alpha^2$ 中相容，而
+$\mathfrak j_\gamma^2\to\mathfrak j_\alpha^2$ 满射。对 $P\twoheadrightarrow Q$ 应用形式投射性的定义，就得到 $g_\gamma$。再如（i）使 $f_\gamma,g_\gamma$ 通过足够后面的同一个指标 $\delta$ 分解，所构造的 $v_{\gamma\delta}$ 就满足（19.5.6.4）。
+\finishproof
+
+\egas{19.5.6.5}{引理}
+假设 $B,C$ 都是形式光滑 $A$-代数，且 $B$ 预可容许。由（19.5.6.1），（19.5.6.3）的条件满足。对每个满足该引理（i）的 $\alpha\leq\beta$ 和 $v_{\alpha\beta}$，存在 $\lambda\geq\beta$ 及 $A$-代数同态
+\[
+ w_{\beta\lambda}:E_{\lambda,n}\longrightarrow F_{\beta,n},
+\]
+使：$1^\circ$ $\gr^0(w_{\beta\lambda})$ 和 $\gr^1(w_{\beta\lambda})$ 是对应的过渡同态；$2^\circ$ 复合
+\[
+ E_{\lambda,n}\xrightarrow{w_{\beta\lambda}}F_{\beta,n}
+             \xrightarrow{v_{\alpha\beta}}E_{\alpha,n}
+\]
+是过渡同态。
+
+\eproof
+将（19.5.6.3，ii）用于 $\gamma=\beta$，得到 $\delta\geq\beta$ 及满同态
+$v_{\beta\delta}:F_{\delta,n}\to E_{\beta,n}$，并使其与 $v_{\alpha\beta}$ 相容。
+其核 $\mathfrak N$ 幂零：$F_{\delta,n}$ 的增广理想本来幂零，而零次同态 $C_\delta\to C_\beta$ 的核因 $B$ 预可容许也幂零。因此 $E_{\beta,n}=F_{\delta,n}/\mathfrak N$。
+由 $B$ 形式光滑，典范连续同态 $B\to E_{\beta,n}$ 提升为连续同态 $w:B\to F_{\delta,n}$。因目标离散，可取 $\lambda\geq\delta$ 使 $w(\mathfrak b_\lambda)=0$，得到
+$w_\lambda:B/\mathfrak b_\lambda\to F_{\delta,n}$。
+
+令 $q_{\beta\delta}:F_{\delta,n}\to F_{\beta,n}$ 为过渡同态，并令
+$w'_\lambda=q_{\beta\delta}w_\lambda$。由于 $\gr^0(q_{\beta\delta})$ 与 $\gr^0(v_{\beta\delta})$ 都是 $C_\delta\to C_\beta$，而 $v_{\beta\delta}w_\lambda$ 是典范同态，$w'_\lambda$ 将 $\mathfrak j_\lambda$ 送入 $F_{\beta,n}$ 的增广理想，故将 $\mathfrak j_\lambda^{n+1}$ 送到零。于是
+\[
+ B/\mathfrak b_\lambda\longrightarrow E_{\lambda,n}
+        \xrightarrow{w_{\beta\lambda}}F_{\beta,n}
+\]
+给出 $w'_\lambda$ 的分解。\cmt{G7-T02}{原证明在此将 $w'_\lambda$ 的目标增广理想写成 $F_{\delta,n}^{+}$，而按定义它的目标是 $F_{\beta,n}$。下文最后一处 $w$ 的下标也应与 $\beta\lambda$ 一致；正文按实际源靶统一。}
+由（19.5.6.4）的交换性，$v_{\alpha\beta}w_{\beta\lambda}$ 是过渡同态。
+上述零次同态的比较证明 $\gr^0(w_{\beta\lambda})$ 为过渡同态；又因
+$\gr^1(q_{\beta\delta})=\gr^1(v_{\beta\delta})$，同样的比较证明一次同态也为过渡同态。
+\finishproof
+
+\egap{19.5.6.6}
+\textbf{（19.5.3，ii）的证明。}
+我们使用（19.1.3，iii）的判据。对每个 $\alpha$，按（19.5.6.5）选取 $v_{\alpha\beta}$ 和 $w_{\beta\lambda}$。同态
+\[
+ \gr^n(v_{\alpha\beta}):\gr^n(F_{\beta,n})\to\gr^n(E_{\alpha,n})
+\]
+就是由（19.5.2.1）的 $\varphi_n$ 取商得到的
+\[
+ \varphi_{\alpha\beta,n}:
+ \Salg_{C_\beta}^n(\mathfrak j_\beta/\mathfrak j_\beta^2)
+       \to\mathfrak j_\alpha^n/\mathfrak j_\alpha^{n+1}.
+\]
+事实上，这在零次和一次由构造成立，而相伴分次同态与乘法相容，所以对 $j\leq n$ 均有
+$\gr^j(v_{\alpha\beta})=\varphi_{\alpha\beta,j}$。
+
+$\varphi_n$ 满射，故为形式满态射。对 $j\leq n$，复合
+\[
+ \gr^j(F_{\lambda,n})\xrightarrow{\varphi_{\lambda\lambda,j}}
+ \gr^j(E_{\lambda,n})\xrightarrow{\gr^j(w_{\beta\lambda})}
+ \gr^j(F_{\beta,n})
+\]
+为过渡同态：它在零次和一次成立，而源分次代数 $\gr^\bullet(F_{\lambda,n})$ 由一次部分在零次环上生成。再与 $F_{\beta,n}\to F_{\alpha,n}$ 的相伴分次同态复合，并取 $j=n$，便把过渡同态
+$\gr^n(F_{\lambda,n})\to\gr^n(F_{\alpha,n})$ 分解为
+\[
+ \gr^n(F_{\lambda,n})\xrightarrow{\varphi_{\lambda\lambda,n}}
+ \gr^n(E_{\lambda,n})\longrightarrow\gr^n(F_{\alpha,n}).
+\]
+这正是（19.1.3）的形式单态射判据；所以 $\varphi_n$ 为形式双态射。\cmt{G7-T03}{原文再次以 $\gr^\bullet(E_{\lambda,n})$ 的生成性来判断源为 $\gr^\bullet(F_{\lambda,n})$ 的复合。正文明确使用源的生成性，与（19.5.4.2）的处理一致。}
+
+\egas{19.5.6.7}{引理}
+假设 $B$ 预可容许，$\mathfrak j/\mathfrak j^2$ 为形式投射 $C$-模，$C$ 为形式光滑 $A$-代数，且各 $\varphi_j$ 为形式双态射。对满足（19.5.6.3，i）的 $\alpha\leq\beta$ 和 $v_{\alpha\beta}$，存在 $\gamma\geq\beta$，使对每个 $\mu\geq\gamma$ 均有交换图
+\[
+\begin{tikzcd}
+ F_{\beta,n}\arrow[r,"v_{\alpha\beta}"]&E_{\alpha,n}\\
+ &E_{\mu,n}\arrow[ul,"u_{\beta\mu}"]\arrow[u,"p_{\alpha\mu}"']
+\end{tikzcd}
+\]
+其中 $p_{\alpha\mu}$ 为过渡同态。
+
+\eproof
+对 $0\leq j\leq n$，由（19.1.3）及 $\varphi_j$ 为形式双态射，可以将指标取得足够后，使相应过渡同态通过
+$\varphi_{\gamma\gamma,j}:\gr^j(F_{\gamma,n})\to\gr^j(E_{\gamma,n})$ 分解。次数只有有限个，故可对所有次数选同一个指标。由该满同态的满射性，所得分解唯一；其各次分量与乘法相容，因此组成满的分次代数同态
+\[
+ w_{\beta\gamma}:\gr^\bullet(E_{\gamma,n})
+           \longrightarrow\gr^\bullet(F_{\beta,n})=F_{\beta,n},
+ \qquad
+ w_{\beta\gamma}\varphi_{\gamma\gamma}=q_{\beta\gamma}.
+\]
+其中 $q_{\beta\gamma}$ 为 $F$ 系的过渡同态。
+
+以下用有限滤过逐次消去核，补足从相伴分次信息返回原环同态的步骤。\cmt{G7-G01}{原证明在印刷第98页直接使用 $\Ker h\subseteq\Ker(\gr h)$，把滤过源识别为其分次直和。对一般保持滤过的同态，此包含并不成立：只能得到最低非零齐次项落在相应分次核中。本版用下述有限次逐级消去替换原证明的这一步；反例、原论证的定位及补证细节见核查报告G7-G01。这是证明修补，不是对引理结论的反例。}
+令 $\alpha_0=\alpha$、$\beta_0=\beta$、$v_0=v_{\alpha\beta}$。递归进行 $N=n+1$ 次以下选取。
+已有 $\alpha_i,\beta_i,v_i:F_{\beta_i,n}\to E_{\alpha_i,n}$ 时，先选
+$\alpha_{i+1}\geq\beta_i$，使对每个 $0\leq r\leq n$ 都有分解
+\[
+ q_{\beta_i\alpha_{i+1}}^{\,r}
+   =w_i^r\,\varphi_{\alpha_{i+1}\alpha_{i+1},r}.
+\]
+再由（19.5.6.3，ii）选 $\beta_{i+1}\geq\alpha_{i+1}$ 和满同态
+$v_{i+1}:F_{\beta_{i+1},n}\to E_{\alpha_{i+1},n}$，使
+\[
+ p_{\alpha_i\alpha_{i+1}}v_{i+1}
+     =v_iq_{\beta_i\beta_{i+1}}.
+\]
+
+以 $F_{\beta_i,n}^{\geq r}$ 表示增广理想的 $r$ 次幂。若
+$x\in\Ker(v_{i+1})\cap F_{\beta_{i+1},n}^{\geq r}$，则其 $r$ 次分量 $x_r$ 满足
+\[
+ \varphi_{\alpha_{i+1}\alpha_{i+1},r}
+       q_{\alpha_{i+1}\beta_{i+1}}^{\,r}(x_r)=0,
+\]
+因为 $v_{i+1}(x)=0$。应用 $w_i^r$，得
+$q_{\beta_i\beta_{i+1}}^{\,r}(x_r)=0$；故
+\[
+ q_{\beta_i\beta_{i+1}}(x)
+   \in \Ker(v_i)\cap F_{\beta_i,n}^{\geq r+1}.
+\]
+这里属于 $\Ker(v_i)$ 使用上面的交换关系。连续应用 $N=n+1$ 次后，因
+$F_{\beta_0,n}^{\geq n+1}=0$，得到
+\[
+ q_{\beta_0\beta_N}(\Ker v_N)=0.
+\]
+由于 $v_N$ 满射，存在唯一 $A$-代数同态
+\[
+ u:E_{\alpha_N,n}\longrightarrow F_{\beta_0,n},
+ \qquad uv_N=q_{\beta_0\beta_N}.
+\]
+又有
+$v_0uv_N=v_0q_{\beta_0\beta_N}=p_{\alpha_0\alpha_N}v_N$，由满射性可消去 $v_N$，从而
+$v_0u=p_{\alpha_0\alpha_N}$。令 $\gamma=\alpha_N$，对任意 $\mu\geq\gamma$，取
+$u_{\beta\mu}=u\,p_{\gamma\mu}$，即得所求交换图。
+\finishproof
+
+\egap{19.5.6.8}
+\textbf{（19.5.3，iii）的证明。}
+设 $G$ 为离散拓扑 $A$-代数，$\mathfrak N^2=0$，$f:B\to G/\mathfrak N$ 为连续 $A$-同态。存在 $\alpha$ 使 $f(\mathfrak b_\alpha)=0$；由假设 $\mathfrak j^m\to0$，又有 $m\geq1$ 使 $\mathfrak j^m\subset\mathfrak b_\alpha$。取 $n=2m$，则
+\[
+ f:B\xrightarrow{p_\alpha}E_{\alpha,n}
+                    \xrightarrow{f_{\alpha,n}}G/\mathfrak N.
+\]
+由（19.5.6.3），先取 $\beta\geq\alpha$ 及复合同态
+\begin{equation}
+ f_{\alpha,n}v_{\alpha\beta}:
+ F_{\beta,n}\xrightarrow{v_{\alpha\beta}}E_{\alpha,n}
+                  \xrightarrow{f_{\alpha,n}}G/\mathfrak N.
+ \tag{19.5.6.9}
+\end{equation}
+$F_{\beta,n}$ 为 $C_\beta$-代数，因而是离散拓扑 $C$-代数；限制（19.5.6.9）到系数，得到连续 $A$-同态 $r:C\to G/\mathfrak N$。由 $C$ 形式光滑，取连续提升 $r':C\to G$，使 $G$ 成为离散拓扑 $C$-代数。
+
+将（19.5.6.9）与
+$\mathfrak j/\mathfrak j^2\to\mathfrak j_\beta/\mathfrak j_\beta^2\to F_{\beta,n}$
+复合，得到连续 $C$-同态 $g:\mathfrak j/\mathfrak j^2\to G/\mathfrak N$。由形式投射性，取连续提升 $h:\mathfrak j/\mathfrak j^2\to G$。可取 $\gamma\geq\beta$，使 $h$ 在
+$((\mathfrak b_\gamma\cap\mathfrak j)+\mathfrak j^2)/\mathfrak j^2$ 上为零，同时 $r'$ 在
+$(\mathfrak b_\gamma+\mathfrak j)/\mathfrak j$ 上为零。于是 $h$ 通过 $C_\gamma$-线性映射
+$h':\mathfrak j_\gamma/\mathfrak j_\gamma^2\to G$ 分解，并延拓为
+\[
+ w:\Salg_{C_\gamma}(\mathfrak j_\gamma/\mathfrak j_\gamma^2)\to G.
+\]
+由构造，$m$ 次齐次元素的像属于 $\mathfrak N$，$n=2m$ 次齐次元素的像因此为零。所以 $w$ 诱导 $w'_\gamma:F_{\gamma,n}\to G$。
+
+对 $v_{\alpha\gamma}=v_{\alpha\beta}q_{\beta\gamma}$ 应用（19.5.6.7），取得 $\delta\geq\gamma$ 及
+$u_{\gamma\delta}:E_{\delta,n}\to F_{\gamma,n}$，满足
+$v_{\alpha\gamma}u_{\gamma\delta}=p_{\alpha\delta}$。于是有交换图
+\[
+\begin{tikzcd}[column sep=large,row sep=large]
+ &E_{\alpha,n}\arrow[r,"f_{\alpha,n}"]&G/\mathfrak N\\
+ &F_{\beta,n}\arrow[u,"v_{\alpha\beta}"]&\\
+ B\arrow[r,"p_\delta"]&E_{\delta,n}\arrow[uu,"p_{\alpha\delta}",bend left=40]
+   \arrow[r,"u_{\gamma\delta}"']&F_{\gamma,n}\arrow[ul,"q_{\beta\gamma}"']
+   \arrow[r,"w'_\gamma"']&G\arrow[uul,bend right=35]
+\end{tikzcd}
+\]
+下方的复合 $f':B\to G$ 连续，且 $G\to G/\mathfrak N$ 与它复合为 $f$。因此 $B$ 形式光滑；定理（19.5.3）的证明完成。
+
+\egas{19.5.7}{推论}
+设 $A$ 为拓扑环，$B$ 为拓扑 $A$-代数，$(\mathfrak b_\lambda)$ 为其开理想基本系，$\mathfrak j$ 为 $B$ 的理想，$C=B/\mathfrak j$ 取商拓扑，并令 $C_\lambda=B/(\mathfrak b_\lambda+\mathfrak j)$。假设：
+
+$1^\circ$ 对每个 $n$，$B$ 在 $\mathfrak j^n$ 上诱导的子空间拓扑，也等于由 $B$ 的拓扑给出的 $B$-模拓扑（19.0.2）。特别地，当 $B$ 诺特且拓扑为预进制拓扑时，此条件满足（$0_{\mathrm I}$，7.3.2）。
+
+$2^\circ$ $C$ 为形式光滑 $A$-代数。
+
+则：
+
+（i）若 $B$ 形式光滑，则对每个 $\lambda$，$(\mathfrak j/\mathfrak j^2)\otimes_CC_\lambda$ 为投射 $C_\lambda$-模。
+
+（ii）若 $B$ 形式光滑且预可容许，则对每个 $\lambda$，典范同态
+\begin{equation}
+ \varphi_\lambda=\varphi\otimes1_{C_\lambda}:
+ \Salg_{C_\lambda}\bigl((\mathfrak j/\mathfrak j^2)\otimes_CC_\lambda\bigr)
+      \longrightarrow\gr_{\mathfrak j}^{\bullet}(B)\otimes_CC_\lambda
+ \tag{19.5.7.1}
+\end{equation}
+双射。
+
+（iii）反之，若 $B$ 预可容许，$\mathfrak j^n\to0$，并且对每个 $\lambda$ 上述模为投射 $C_\lambda$-模、（19.5.7.1）双射，则 $B$ 为形式光滑 $A$-代数。\cmt{G7-T04}{初版（iii）将公式引作（19.5.4.1），应为本推论的（19.5.7.1）。正文修正该引文；原页中模的基环确为 $C_\lambda$，不得把提取文本遗漏下标误判为原版错误。}
+
+事实上，在此条件下 $\mathfrak j/\mathfrak j^2$、各 $\Salg_C^n(\mathfrak j/\mathfrak j^2)$ 以及各相伴分次部分的拓扑都由 $B$ 诱导（19.5.1）；结论因此由（19.5.3）及适用于此类拓扑的（19.1.4）、（19.2.4）直接得到。
+
+\egas{19.5.8}{注}
+在（19.5.7）的假设下，进一步假设 $\mathfrak j/\mathfrak j^2$ 为有限型 $C$-模，而 $C$ 配备商拓扑后是Zariski环。取 $C$ 的定义理想 $\mathfrak r$，其幂构成零点基本邻域系。则（19.5.7）中的（i）、（ii）可分别替换为：
+
+（i$'$）$\mathfrak j/\mathfrak j^2$ 是投射 $C$-模；
+
+（ii$'$）$\varphi:\Salg_C(\mathfrak j/\mathfrak j^2)\to\gr_{\mathfrak j}^{\bullet}(B)$ 双射。
+
+（i$'$）显然蕴含原（i）。反之，若各 $(\mathfrak j/\mathfrak j^2)\otimes_CC_\lambda$ 投射，则对每个 $n$，
+$(\mathfrak j/\mathfrak j^2)\otimes_C(C/\mathfrak r^n)$
+为投射、从而平坦的 $(C/\mathfrak r^n)$-模。由（$0_{\mathrm{III}}$，10.2.2），$\mathfrak j/\mathfrak j^2$ 平坦；它又是有限表现模，故投射（Bourbaki，\textit{交换代数}，第二章，§5，第2目，定理1的推论2）。
+另一方面，$\Salg_C^n(\mathfrak j/\mathfrak j^2)$ 与 $\gr_{\mathfrak j}^n(B)$ 都是有限型 $C$-模。对Zariski环上的有限型模，同态双射等价于其完备化双射（同书第三章，§3，第5目，命题9）。故（ii）与（ii$'$）等价。\cmt{G7-H05}{这里沿用原著所引用的Zariski环约定及（19.5.7）的拓扑相容假设；不能仅保留“某个线性拓扑环”和“有限型模”便推出有限表现性或上述完备化判据。}

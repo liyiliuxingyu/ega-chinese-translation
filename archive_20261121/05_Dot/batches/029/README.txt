@@ -1,0 +1,1 @@
+独立续译，未覆盖主稿。含本批PDF/TeX、完整底本、进度与前批ID、校核记录。需TeX Live含ctex/Fandol及amsmath、amssymb、hyperref；运行bash build.sh。

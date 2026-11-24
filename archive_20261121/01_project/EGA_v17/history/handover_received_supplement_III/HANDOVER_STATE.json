@@ -1,0 +1,95 @@
+{
+  "edition": 17,
+  "record_date": "2026-11-21",
+  "time_zone": "Asia/Shanghai",
+  "all_books_finished": false,
+  "current_project": "project",
+  "book": {
+    "modular": "main.tex",
+    "single": "single.tex",
+    "pdf": "main.pdf",
+    "pages": 1158,
+    "pdf_sha256": "df69850134279ecf6f23b6eb3963d85b374c7fa682d6a648fa8469df887e7f44",
+    "single_tex_sha256": "010e78cbce81b9ac116aa17cee0e23941c0a2fabf0d2ed99b5549e1a5e1af1f7"
+  },
+  "report": {
+    "modular": "report.tex",
+    "single": "report_single.tex",
+    "pdf": "report.pdf",
+    "pages": 287,
+    "pdf_sha256": "d5aa39fb5c5916de8f63516a33e82e1d78e3248ce3ea4bdcb7cb87d31621e0f4",
+    "single_tex_sha256": "ac955f2e3f33ab3e0dea2bfb63d37ef468b3d348e6524b28236f157be4ea3721",
+    "status": "new supplement 50–68 compiled with preserved historical reports"
+  },
+  "dot_batches": {
+    "restored": 56,
+    "new_body": 54,
+    "same_text_collation": 2
+  },
+  "new_translation_gaps_filled": [
+    "V §11, pp.41–43",
+    "V §14 bridge, pp.54–55"
+  ],
+  "next": [
+    {
+      "branch": "V",
+      "source": "03_sources/EGAVaiello.pdf",
+      "physical_page": 78,
+      "starts_at": "Appendix IV.17.16 Smooth Quadratic Forms",
+      "french_source": "03_sources/EGA5_francais.pdf",
+      "french_physical_page": 161
+    },
+    {
+      "branch": "IV",
+      "source": "03_sources/EGAIV.1.pdf",
+      "physical_page": 221,
+      "starts_at": "Chapter IV synopsis, then introduction; (1.1.1) on physical223"
+    }
+  ],
+  "default_continuation_if_user_only_says_continue": "Volume V English physical page 78, appendix IV.17.16; French physical page 161. Formal Chapter IV remains a separate branch.",
+  "source_corpus_count": 13,
+  "checks": [
+    "checks/supplement-III-qa.json",
+    "checks/supplement-II-qa.json",
+    "checks/supplement-qa.json",
+    "checks/v17-baseline"
+  ],
+  "pending": "PENDING_ISSUES.md",
+  "automation_created_or_modified": false,
+  "email_sent": false,
+  "release": "v17-V-20261121-supplement-III",
+  "supplement": {
+    "body_batches": 19,
+    "batch_ids": [
+      50,
+      51,
+      52,
+      53,
+      54,
+      55,
+      56,
+      57,
+      58,
+      59,
+      60,
+      61,
+      62,
+      63,
+      64,
+      65,
+      66,
+      67,
+      68
+    ],
+    "base_archive_sha256": "a94b6f7476fb0846e84309d1cde0b1194ef2910ff281b20105b823cf0f71870d",
+    "report_unchanged": false,
+    "new_since_previous": [
+      63,
+      64,
+      65,
+      66,
+      67,
+      68
+    ]
+  }
+}

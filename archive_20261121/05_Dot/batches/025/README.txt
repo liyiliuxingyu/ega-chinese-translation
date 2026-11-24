@@ -1,0 +1,1 @@
+本批为独立续译，未覆盖主稿。底本、准确接点、前批工程ID、校核记录和编译脚本同包；不包含全部既有分批译文。编译需TeX Live含ctex、Fandol、amsmath、amssymb、hyperref，运行bash build.sh。

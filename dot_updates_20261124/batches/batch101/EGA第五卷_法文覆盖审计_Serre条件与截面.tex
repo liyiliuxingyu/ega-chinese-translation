@@ -1,0 +1,81 @@
+\documentclass[openany,fontset=fandol]{ctexbook}
+\usepackage{amsmath,amssymb}
+\usepackage[unicode,hidelinks]{hyperref}
+\setlength{\emergencystretch}{2em}
+\raggedbottom
+\DeclareMathOperator{\depth}{depth}
+\DeclareMathOperator{\Spec}{Spec}
+\DeclareMathOperator{\Proj}{Proj}
+\begin{document}
+\title{代数几何基础第五卷预备笔记\\超平面截面与 Serre 条件的下降}
+\author{第101批\quad 法、英、中文三方校订}
+\date{2026年11月24日}
+\maketitle
+
+\section*{范围与接续}
+本批校法稿物理32页的8.3，对照英稿物理22页。法32页首的8.2附记已在第100批校毕；法33页的8.4及其跨页证明留下一批。1158页合订本未改。
+
+\section*{8.3\quad 原有的 $(S_k)$ 不一定保留}
+不能指望把保持同一条件 $(S_k)$ 的结论也加强为例外集余维至少2。即使 $\mathcal F=\mathcal O_X$，$k=1$ 且 $X$ 是几何整曲面，或者 $k=2$ 且 $X$ 是几何整、几何正规的三维簇，也有反例。\footnote{法32起笔关于“没有类似结果”的文字被划，后面的两个反例仍可读。英22起笔则是残缺句，甚至带有英编者的未辨读注31。译文不复原划销句的逐字写法，而按未划例证明示反驳的是“原阶保持的例外余维至少2”，不是否定8.2的降阶结论。}
+
+先取代数闭域上的整射影曲面 $X\subset\mathbb P^r$，并取一个 $X$ 在那里不是 Cohen--Macaulay 的闭点 $x$。每个通过 $x$ 而不包含整个 $X$ 的超平面所截得的 $Y_\xi$，都有 $x$ 作为嵌入关联点。\footnote{手稿说每个经过 $x$ 的超平面，此处明确加入不包含 $X$；若用非退化嵌入，该限定自动满足。手稿的“嵌入关联循环”在这里对应支撑于 $x$ 的嵌入关联点。}
+
+相应地，取一个三维整正规簇 $X\subset\mathbb P^r$，它满足 $(S_2)$，但在某个闭点 $x$ 处不是 Cohen--Macaulay。通过 $x$ 而不包含 $X$ 的超平面截面，在 $x$ 处不是 Cohen--Macaulay，因而不满足 $(S_2)$。\footnote{法稿明确是否定 $(S_2)$；英22此处的“met”与上文及局部深度不合。这个推论使用的是截面在 $x$ 的局部维数为2，并不是把非 Cohen--Macaulay 与非 $(S_2)$ 在一切维数里等同。}
+
+在这些例子中，对 $(S_k)$ 而言的例外参数集包含由 $x\in\mathbb P^r$ 决定的对偶超平面（若嵌入退化，至少包含它在正则截面参数范围内的稠密开部分）。故其闭包的余维不能达到2；在下述两个具体例子中，例外集恰为这个对偶超平面。作者并提示参看后面的8.5。
+
+\paragraph{删稿与边注。}
+页下框划的旧段提出的是较弱的目标：若 $\mathcal F$ 满足 $(S_k)$，则同时满足 $\varphi_\xi$ 为 $\mathcal F_{k(\xi)}$-正则、$\mathcal G_\xi$ 为 $(S_{k-1})$ 的好参数，其补集应有余维至少2。旧段拟借5.7.4和余深度集 $Z_n$ 的闭性来论证：$Z_n$ 由 $\mathcal F$ 的余深度大于 $n$ 的点组成，取截面时其余维即使向下跳也至多跳一。以上单列为删稿，不作为正稿新证明。页底另有手写条件和余维符号，涉及正则性及 Serre 条件；其中下标和连接语的读法未定，留待与8.5合核，不补写为已经证明的结论。
+
+\newpage
+\section*{补证一：为什么坏点留在所有经过它的截面上}
+令 $A=\mathcal O_{X,x}$，$h$ 为超平面在该点的局部方程。因 $X$ 整且超平面不包含它，$h\in\mathfrak m_x$ 是非零因子。故
+\[
+ \dim A/(h)=\dim A-1,\qquad
+ \depth A/(h)=\depth A-1.
+\]
+深度等式参见\href{https://stacks.math.columbia.edu/tag/00LE}{Stacks Project，10.72.7}。整曲面在坏点处有 $\dim A=2$，整性给出 $\depth A\ge1$，非 Cohen--Macaulay 给出 $\depth A<2$。因此 $\depth A/(h)=0$ 且 $\dim A/(h)=1$；极大理想是关联素理想，但不是极小素理想，故 $x$ 是嵌入关联点，且 $(S_1)$ 失败。
+
+正规三维簇在坏点处有 $\dim A=3$；正规性给出 $(S_2)$，故 $\depth A=2$。于是 $\depth A/(h)=1<2=\dim A/(h)$，所以 $(S_2)$ 失败，但这个计算不推出 $(S_1)$ 失败。正规性与 Serre 条件的关系参见\href{https://stacks.math.columbia.edu/tag/033P}{Stacks Project，28.12.5}。
+
+\section*{补证二：一个只有一处坏点的整射影曲面}
+在代数闭域 $K$ 上，用以下三次单项式将 $\mathbb P^2$ 映入 $\mathbb P^7$，取约化像 $X$：
+\[
+ [x:y:z]\longmapsto
+ [z^3:zx^2:zxy:zy^2:x^3:x^2y:xy^2:y^3].
+\]
+这些单项式无共同零点，像为闭的、整的且非退化。在 $z^3\ne0$ 的仿射片上，以 $u=x/z,v=y/z$ 记，坐标环是
+\[
+ A_0=K[u^2,uv,v^2,u^3,u^2v,uv^2,v^3]
+       =K+(u,v)^2K[u,v].
+\]
+等号因为任意总次数至少2的单项式都能写成二次、三次单项式的乘积。$K[u,v]$ 是 $A_0$ 的有限整扩张（$u,v$ 均满足首一二次式），故该片维数为2。局部化在原点对应的极大理想 $\mathfrak n$ 后，$u^2$ 是非零因子。在商 $A_0/(u^2)$ 中，$u^3$ 的像不为零，却被 $\mathfrak n$ 杀掉：对 $a\in\mathfrak n$，$u^3a=u^2(ua)$ 且 $ua\in A_0$。该非零像局部化后仍不为零，因为它的湮灭理想就是 $\mathfrak n$。故原点局部环深度为1。
+
+在 $x^3\ne0$ 的片上，由坐标比 $x^2y/x^3$ 和 $zx^2/x^3$ 直接恢复 $y/x,z/x$；其他坐标比都是它们的多项式。相同论证适用于 $y^3\ne0$。这两个仿射片覆盖原点之外，且均光滑。于是不过坏点的超平面在光滑处以一个非零因子取商，截面为 Cohen--Macaulay。结合补证一，例外参数恰为过坏点的所有超平面。
+
+\newpage
+\section*{补证三：正规但非 Cohen--Macaulay 的射影三维例}
+现在在 $\mathbb C$ 上取平面光滑三次曲线 $E$，将 $E\times\mathbb P^1$ 由 Segre 映入 $\mathbb P^5$。取它的射影锥 $X\subset\mathbb P^6$，锥顶的仿射邻域是该 Segre 像的仿射锥。这个仿射例可参见
+\href{https://content.algebraicgeometry.nl/2016-2/2016-2-011.pdf}{Addington，2016，末节的反例}。
+这里补足与射影超平面论证相关的环与深度细节。
+
+记 $B=\mathbb C[x_0,x_1,x_2]/(f_3)$ 为平面三次曲线的齐次环。它是整超曲面环，满足 $(S_2)$；由于 $E$ 光滑，仿射锥除顶点外光滑，故满足 $(R_1)$，因而 $B$ 正规。Segre 像的齐次环是
+\[
+ R=\bigoplus_{n\ge0}B_n\otimes_{\mathbb C}\mathbb C[u,v]_n .
+\]
+在 $B[u,v]$ 中令 $B_1$ 权重为 $1$、$u,v$ 权重为 $-1$，则 $R$ 是权重零子环。若 $\operatorname{Frac}(R)$ 中某元素在 $R$ 上整，则在正规环 $B[u,v]$ 上也整，故落在 $B[u,v]$；它又被权重缩放作用固定，必落在 $R$。所以 $R$ 正规。$R$ 由其次数一部分生成，$\Proj R=E\times\mathbb P^1$，锥的维数为3。
+
+令 $\mathfrak m=R_+$。由标准分次截面环的局部上同调公式，
+\[
+ \bigl[H^2_{\mathfrak m}(R)\bigr]_0
+   \simeq H^1(E\times\mathbb P^1,\mathcal O)
+   \simeq H^1(E,\mathcal O_E)\ne0 .
+\]
+第一同构也可以用齐次生成元的 Čech 复形取次数零部分得到：对 $R$ 作支持于无关理想的增广复形，移去首项后就是 $\Proj R$ 上各标准仿射开的结构层复形。第二同构来自乘积的上同调公式；光滑平面三次的亏格为1。局部化到锥顶不杀掉该非零局部上同调，因为它的支撑在 $\{\mathfrak m\}$。因此锥顶深度至多2，而正规性给出至少2，故恰为2。
+
+离开锥顶，在一个基底齐次坐标非零的片上，锥局部就是底上该仿射片乘一条仿射直线（锥顶方向坐标除以该基底坐标）。所以射影锥在顶点外光滑，且它非退化。对偶空间中，恰为过锥顶的那一个参数超平面给出不满足 $(S_2)$ 的截面。这证明了例外余维1确实可能发生。
+
+\section*{下一步}
+从法物理33页的命题8.4起，连同页首续句与法34页上半证明合读。已看到三个待校点：$T_i$ 的所属集合、引理8.4.1中对哪个集合施加余维假设，以及包含符号。下一批逐一论证，不在本批提前定稿。正式印刷本第四章第一分册物理221/223仍是另一进度线。
+\end{document}
+

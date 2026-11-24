@@ -1,0 +1,21 @@
+{
+  "field": "F_2(s)",
+  "relations": [
+    "x^2-s*y^2",
+    "y^3"
+  ],
+  "groebner_basis": [
+    "Poly(x**2 + s*y**2, x, y, domain='GF(2)(s)')",
+    "Poly(y**3, x, y, domain='GF(2)(s)')"
+  ],
+  "normal_form_y_squared": "y**2",
+  "normal_form_x_y_squared": "x*y**2",
+  "degree_four_normal_forms": {
+    "x^0 y^4": "0",
+    "x^1 y^3": "0",
+    "x^2 y^2": "0",
+    "x^3 y^1": "0",
+    "x^4 y^0": "0"
+  },
+  "interpretation": "Independent algebraic sanity check, not a substitute for the written proof."
+}

@@ -1,0 +1,51 @@
+{
+  "renderer": "PyMuPDF 1.26.7",
+  "dpi": 72,
+  "outputs": {
+    "book": {
+      "pages": 1060,
+      "mismatches": {
+        "text": [],
+        "size": [],
+        "pixels": []
+      },
+      "page_raster_digest": "a51a320f181a1eed4656640f84bbe9026b10297e867c3e1afba40cee6b926c85",
+      "metadata": {
+        "format": "PDF 1.5",
+        "title": "代数几何基础：按内容顺序编排的中文译校合订本（第十六版）",
+        "author": "原著 A. Grothendieck；与 J. Dieudonné 合作；预备笔记英译编者见各篇",
+        "subject": "第0章归并；正文连续；已译范围和未译范围分开列明",
+        "keywords": "",
+        "creator": "LaTeX with hyperref",
+        "producer": "xdvipdfmx (20240305)",
+        "creationDate": "D:20261117113200Z",
+        "modDate": "",
+        "trapped": "",
+        "encryption": null
+      }
+    },
+    "report": {
+      "pages": 253,
+      "mismatches": {
+        "text": [],
+        "size": [],
+        "pixels": []
+      },
+      "page_raster_digest": "0760cc9c01c5aeb9a268783e411a13b35c6fd65d17c8764a86b710c82879b097",
+      "metadata": {
+        "format": "PDF 1.5",
+        "title": "代数几何基础：第十六版译校核查报告",
+        "author": "原著 A. Grothendieck；与 J. Dieudonné 合作；预备笔记英译编者见各篇",
+        "subject": "第0章§23续译核查；日本环、整闭包与半局部性；历史核查档案",
+        "keywords": "",
+        "creator": "LaTeX with hyperref",
+        "producer": "xdvipdfmx (20240305)",
+        "creationDate": "D:20261117111837Z",
+        "modDate": "",
+        "trapped": "",
+        "encryption": null
+      }
+    }
+  },
+  "seconds": 12.671341896057129
+}

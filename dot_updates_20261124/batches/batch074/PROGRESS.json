@@ -1,0 +1,10 @@
+{
+  "batch": 74,
+  "completed": "第五卷第三篇第1小节2)一次态射、1.6–1.9及旁注，随后第2小节2.1至2.4；止各次数参数射影丛的不交和。",
+  "english_physical_pages": [90,91,92,93,94],
+  "french_physical_pages": [118,119,120,121],
+  "french_handwritten_numbers": [125,126,127,128],
+  "next": "法物理121页下部原2.5、英物理94页第二个 Corollary 2.5（误标），从多重射影丛有限乘积定义开始。依实际页序继续2.6及后续各条。",
+  "formal_EGA_IV_1_next": "物理221提要、223公式(1.1.1)，另线。",
+  "merged_into_1158_page_edition": false
+}

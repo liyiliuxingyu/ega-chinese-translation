@@ -1,0 +1,40 @@
+from pathlib import Path
+import json, hashlib, datetime
+root=Path('/workspace/scratch/a886fd56dd2f/integration')
+visual=root/'report_visual'
+d=json.loads((visual/'final_render_comparison.json').read_text())
+assert d['source_unchanged_during_render']
+assert hashlib.sha256(Path(d['source_path']).read_bytes()).hexdigest()==d['sha256']
+obs=json.loads((visual/'observations_draft.json').read_text())
+# Run this script only after actually inspecting every changed PNG.
+reviewed_changes=json.loads((visual/'final_changed_pages_viewed.json').read_text())
+assert set(d['changed_page_numbers']).issubset(set(reviewed_changes['pages']))
+updates={20:'二次覆盖反例、原(7.4)命题与证明、脚注均可读。最终修复的译注标记在证明末句旁；未再出现下一页顶部的独立标记。',21:'原(8.4)/(8.4.1)对照及脚注完整可读；最终版顶部孤立标记已消失；来自上一页的长脚注正常续入本页脚注区。',22:'原(8.4)/(10.1)对照内容、长公式与密集脚注可读；编者注标已归到显示公式前的引导句。',24:'Grassmann补证中的Plücker表达式、有限支集、仿射图公式及有限表现下降的矩阵论证均可读。',25:'第11节补证的边界说明末段可读；本章结束后余白为分页结果。',33:'第14–15节标题、来源和漏段恢复说明清楚；来源行重复句号已去除。',34:'投影的长公式、14.4(a)反例均可读；来源行重复句号已去除。',35:'相对交换图及第14节符号切换说明可读；来源行重复句号已去除，四条箭头完整。',36:'第16节同文校订说明、代码式原件名和长公式正常；来源行重复句号已去除。',6:'新增目录末项及历史目录开端清楚；历史第十六版目录页码为25，与物理41页分隔页的印刷页25一致。'}
+obs.update({str(k):v for k,v in updates.items()})
+substantive=list(range(17,26))+list(range(27,32))+list(range(33,40))
+entries=[]
+for p in d['pages']:
+ pp=p['physical_page']
+ entries.append({**p,'printed_page':str(pp-16) if pp>=17 else {1:None,3:'iii',5:'v',6:'vi'}.get(pp),'observation':obs[str(pp)],'review_method':'已查看旧快照150dpi整页；与最终版渲染像素逐字节相同，沿用该视觉观察' if p['pixel_identical_to_pre_final'] else '最终版150dpi整页已重新实际查看'})
+record={
+ 'review_type':'新增核查报告的视觉排版检查；不是数学证明全文独立复审',
+ 'completed_at_utc':datetime.datetime.now(datetime.timezone.utc).isoformat(),
+ 'source_pdf':{k:d[k] for k in ['source_path','snapshot_path','sha256','bytes','pdf_pages']},
+ 'baseline_pdf':{'sha256':'c9b38acc870544da74d98d764b40305e9244bb4d82bc7565d0803c596ea07dda','snapshot_path':str(visual/'report_snapshot_for_review.pdf')},
+ 'boundaries':{'new_report_physical_pages':[17,39],'new_report_printed_pages':[1,23],'substantive_new_report_pages':substantive,'chapter_break_pages':[26,32,40],'historical_divider_physical_page':41,'historical_divider_printed_page':25,'historical_divider_title':'历史核查记录：第十六版'},
+ 'text_extraction':{'physical_pages':[1,40],'file':str(visual/'new_report_text_pages_001_040_final.txt'),'method':'PyMuPDF逐页文本抽取；用于定位和辅助核对，不作为视觉审看或证明核验的替代'},
+ 'visual_method':{'renderer':d['renderer'],'dpi':150,'full_page_pngs':True,'actually_viewed_physical_pages':sorted(map(int,obs)),'substantive_new_report_page_count':len(substantive),'final_changed_pages_re_viewed':reviewed_changes['pages'],'unchanged_pages_checked_by_pixel_identity':[p['physical_page'] for p in entries if p['pixel_identical_to_pre_final']],'extra_detail':{'physical_page':35,'dpi':300,'scope':'相对交换图四条箭头','final_png':str(visual/'final/page_035_diagram_detail.png'),'final_png_sha256':hashlib.sha256((visual/'final/page_035_diagram_detail.png').read_bytes()).hexdigest()}},
+ 'findings':[{'id':'RV01','issue':'长等宽历史源码路径曾造成Overfull','physical_page':39,'status':'最终已修','evidence':'路径改为可断行排式，在版心内换行；正文未遮挡或裁切。'},{'id':'RV02','issue':'来源行末重复中文句号共6处','physical_pages':[33,34,35,36],'status':'最终已修','evidence':'最终受影响页逐张复看，来源行句号不再重复。'},{'id':'RV03','issue':'(7.4)证明后译注标记独立悬置在下一页顶部','baseline_physical_page':21,'final_rechecked_pages':[20,21],'status':'最终已修','evidence':'译注标记附回证明末句，下一页顶部不再有独立标记；脚注文字保留。'},{'id':'RV04','issue':'显示公式后的编者注标独立成段','reported_by':'主代理','final_rechecked_pages':[21,22],'status':'最终已修','evidence':'编者注标附回引导句，脚注仍可读。'},{'id':'RV05','issue':'历史part目录页码有+2偏移','reported_by':'主代理','final_rechecked_pages':[6,41],'status':'最终已修（已抽核第一历史分隔）','evidence':'第十六版历史分隔目录页码25与实际印刷25相符；未逐个审看其余历史分隔。'}],
+ 'pages':entries,
+ 'conclusion':'在已检的新增实质正文21页及指定前置页、分隔页中，修复后未观察到内容裁切、文字重叠、表格断行丢失或公式越出版心。',
+ 'limitations':['本次检查针对排版，不代表证明、反例、外部引文及译文已逐条独立数学复审。','仅检查第十七版新增实质报告与所列前置/边界页；历史正文物理42–283页未作本次视觉复审。','物理2、4、7–16、26、32、40页未逐张视觉检查；页1–40文本抽取不能替代此检查。','本次未核对法文手稿、底本所有页或历史版本全部脚注。','页面像素比较用于确认此前实际观察的画面未变，不宣称对相同页重复人工审读。'],
+ 'supporting_files':[str(visual/'final_render_comparison.json'),str(visual/'final_changed_pages_viewed.json')]
+}
+(root/'report_visual_review.json').write_text(json.dumps(record,ensure_ascii=False,indent=2)+'\n')
+lines=['# 第十七版新增核查报告排版复核','','## 核验对象与边界','',f"- 文件：`{d['source_path']}`",f"- SHA-256：`{d['sha256']}`",f"- 实际页数：{d['pdf_pages']}；字节数：{d['bytes']}。",'- 新增报告实质正文：物理17–25、27–31、33–39页，共21页，对应印刷1–23页中的正文页。','- 物理26、32、40页为章间分页；历史记录分隔从物理41页（印刷25）开始，标题为“历史核查记录：第十六版”。','','## 实际执行方法','', '已抽取最终PDF物理1–40页的全部文字用于定位；另以Poppler按150 dpi生成完整单页PNG，并实际查看新增实质正文全部21页，以及物理1、3、5、6、41页。相对交换图在初次及最终版中额外以300 dpi局部放大确认四条箭头。', '',f"最终重新查看的变化页为：{', '.join(map(str,reviewed_changes['pages']))}。此前已实际查看而最终渲染像素完全一致的页沿用原视觉观察，逐页结果和图片校验值见JSON。文本抽取、像素比较均未被写作数学证明独立复审。",'', '## 发现与最终处理','', '| 事项 | 位置 | 最终观察 |','|---|---|---|','| 历史源码长路径 | 物理39页 | 路径已在版心内换行，无溢出。 |','| 来源行重复句号 | 物理33–36页，共6处 | 已去除，受影响页已重新查看。 |','| 证明后孤立译注标记 | 原物理21页顶部 | 标记已附回证明末句，脚注保留；已查看物理20–21页。 |','| 显示公式后的编者注标 | 第7–11节核查 | 主代理调整后复看，标记附于引导句，脚注可读。 |','| 历史分隔页目录偏移 | 物理6、41页 | 抽核第十六版目录页25与分隔页印刷25一致。其他历史分隔未逐个复看。 |','','## 逐页观察','', '| 物理页 | 内容与观察 |','|---|---|']
+for e in entries: lines.append(f"| {e['physical_page']} | {e['observation']} |")
+lines+=['','## 结论和未检查范围','',record['conclusion'],'']
+lines += ['- '+x for x in record['limitations']]
+lines += ['','## 证据文件','', '- 最终整页截图：`report_visual/final/page_NNN.png`。','- 最终文本抽取：`report_visual/new_report_text_pages_001_040_final.txt`。','- 最终渲染及前后像素比对：`report_visual/final_render_comparison.json`。','- 详细逐页观察、截图哈希及范围：`report_visual_review.json`。','- 原检查快照和修改前截图保留在`report_visual/`，用于追溯已修事项。','']
+(root/'report_visual_review.md').write_text('\n'.join(lines))
+print('Wrote final report_visual_review.json and .md for',d['sha256'])

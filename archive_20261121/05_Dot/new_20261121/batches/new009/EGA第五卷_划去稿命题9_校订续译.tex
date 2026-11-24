@@ -1,0 +1,67 @@
+\documentclass[openany,fontset=fandol]{ctexbook}
+\usepackage{amsmath,amssymb}
+\usepackage[unicode,hidelinks]{hyperref}
+\setlength{\emergencystretch}{2em}
+\newcommand{\Sym}{\operatorname{Sym}}
+\newcommand{\gr}{\operatorname{gr}}
+\newcommand{\im}{\operatorname{im}}
+\begin{document}
+\title{代数几何基础第五卷预备笔记\\划去稿：命题9及自然二次类}
+\author{据英译编辑稿续译，参校法文扫描}
+\date{2026年11月20日}
+\maketitle
+\chapter*{范围与接续}
+本批从英译第69页页末命题9开始，续至第70页该命题最后一句，对读法文扫描第105--106页。下一起点为英译第70页、法文第106页的推论10。全段仍属作者划去稿，本稿未并入第十七版第五卷增补。
+\chapter*{作者划去稿（续）}
+\noindent\textbf{命题9。}
+设环$A$带有正规增广$A\to A/I$，并且$I/I^2$是秩为$n$的投射$A/I$-模。设$E$是秩为$m$的投射$A$-模，$u:E\to I$是一个同态，因此有同态
+\[
+\bar u=u\otimes\operatorname{id}_{A/I}:
+E\otimes_A A/I\longrightarrow I/I^2.
+\]
+令$B=A/u(E)A$，赋以增广$B\to B/J=A/I$，其中$J=I/u(E)A$。下列条件等价：
+\begin{enumerate}
+\item[(i)] 环$B$的增广$B\to B/J$为普通二次型，且秩为$n-(m-1)=n-m+1$。（增广的秩，按定义是投射模$J/J^2$的秩。）
+\item[(ii)] $K=\ker\bar u$是可逆模，并且自然同态
+\[
+K\longrightarrow\Sym^2(J/J^2)
+        =\Sym^2((I/I^2)/\im\bar u)
+\]
+是“非退化”的。
+\end{enumerate}
+
+如果记$V=I/I^2$、$W=J/J^2=V/\im\bar u$，也许更清楚。为得到（ii）中称为自然的那个同态，只须注意$K$无论如何都映入
+\begin{align*}
+I^2/(I^3+u(IE))
+ &= (I^2/I^3)/\im(IE)\\
+ &\simeq\Sym^2(I/I^2)/
+       \im\bigl((I/I^2)\otimes_{A/I}(E\otimes_A A/I)\bigr),
+\end{align*}
+其中同态
+\[
+(I/I^2)\otimes_{A/I}(E\otimes_A A/I)
+        \longrightarrow\Sym^2(I/I^2)
+\]
+是借助典范乘法同态
+\[
+(I/I^2)\otimes_{A/I}(I/I^2)\longrightarrow\Sym^2(I/I^2)
+\]
+定义的。作出这些说明之后，命题9的证明几乎是平凡的。
+\chapter*{译校说明（非原文）}
+\paragraph{英译的段次与商式。}
+英译第70页把自然同态解释的一部分插在（i）与（ii）之间，把二次商式的最后一段割裂，并在等号后漏排商号。法文第106页先完整列（i）、（ii），后给连续商式；译文按这个可见顺序还原。法文第一商的$u(IE)$清楚，末项靠右纸缘不全。整理后的末项商掉的是所显示乘法映射的像；这是由紧随原文的映射及对称代数的商性质确认的，不是按缺字猜补。$\im(IE)$是$u(IE)$在$I^2/I^3$中的像，不是$IE$本身。
+
+\paragraph{自然二次类与提升的选择。}
+令$C=A/I$，$H=\im\bar u$，$W=V/H$。取$k\in K\subset E/IE$，选取其提升$e\in E$。因$\bar u(k)=0$，有$u(e)\in I^2$。若换另一提升，则差属于$IE$，使$u(e)$的变化落入$u(IE)$；故$k\mapsto[u(e)]$在$I^2/(I^3+u(IE))$中定义良好，且是$C$-线性的。由正规增广的二次识别$I^2/I^3\simeq\Sym_C^2(V)$，$u(IE)$的像恰为$V\cdot H$，即由$v\,\bar u(\bar e)$生成的子模。于是该目标是
+\[
+\Sym_C^2(V)/(V\cdot H)\simeq\Sym_C^2(W).
+\]
+这一步不先要求$W$投射；它使用的是正规增广条件以及对称代数对商模的函子性质。
+
+\paragraph{对等价性的有限重建。}
+原文只说证明几乎平凡。在$W$是秩$n-m+1$的有限投射$C$-模、且（ii）的自然二次类在每个纤维非零的条件下，可给出如下局部论证。此时$H$在$V$中局部为直和因子，秩$m-1$；满射$E\otimes_A C\twoheadrightarrow H$亦局部裂开。沿$\operatorname{Spec}C$局部化并在$A$中提升相应基，$m-1$个$u$的初始项是$V$的独立线性变量，余下的生成元$f$在消去这些方程后属于平方滤层，二次初始项为上述自然二次类的局部生成元。
+
+逐次消去每个一次变量时，以及最后消去$f$时，使用同一事实：设$g\in I^r$且其$r$次初始项为非零因子。若$ag\in I^N$、$N\ge r$，逐次察看$a$在次数$0,1,\dots,N-r-1$的初始类，得$a\in I^{N-r}$。因此商环的分次环就是原分次环除以该初始项。一次变量是非零因子；最后二次式由上一批引理的逐纤维非零论证，在各次乘法都是单射。所得分次环为$\Sym_C(W)$除以该二次关系。逆向若假设（i），$W$已有限投射且秩指定，故上述局部消去一次变量可做；剩下单个$f$属于平方滤层，二次核由它在平方滤层中的类生成。这个核按（i）是可逆的；自然映射由可逆模$K$满射到它，因而为同构。
+
+这里不把“$K$本身可逆”自动当成$\bar u$在每个剩余域均秩$m-1$的证明。例如$k[t]^2\to k[t]^2$、$(a,b)\mapsto(ta,0)$的核自由秩一，但在$t=0$处纤维映射为零，余核有挠。此例只反驳该中间推理，不声称满足完整（ii）。以上重建将投射及纤维条件显式列出，不把独立假设冒充原稿已有的证明。
+\end{document}

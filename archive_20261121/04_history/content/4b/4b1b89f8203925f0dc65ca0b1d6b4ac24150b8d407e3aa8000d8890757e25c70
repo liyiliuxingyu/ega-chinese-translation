@@ -1,0 +1,288 @@
+% 底本：EGAIV.1.pdf，PDF第208--212页（原分册印刷第209--213页）。
+\subsec{22.7. Nagata的Jacobian判据}
+\source{第四卷第一部分，原分册第209--213页中属于22.7的部分}
+
+\egap{22.7.1}
+Nagata的Jacobian判据与Zariski的判据类似，但适用于域上形式幂级数环的商环。
+仿照Nagata［31］，这里给出两个版本，均表述为形式光滑性的判据。
+
+\egas{22.7.2}{命题}
+设 $k$ 为域，$A=k[[T_1,\ldots,T_r]]$，赋予通常的 $k$-代数结构。
+设 $\mathfrak q$ 为 $A$ 的理想，$B=A/\mathfrak q$；设 $\mathfrak p$ 为包含 $\mathfrak q$ 的素理想。
+假设 $C=A/\mathfrak p$ 含有一个 $k$-子代数 $C'$，它同构于 $k[[X_1,\ldots,X_s]]$，
+使 $C$ 有限于 $C'$，且 $C$ 的分式域 $L$ 是 $L'=\operatorname{Frac}(C')$ 的可分扩张。
+当 $k$ 的特征为零时，这一假设总能满足。
+则下列条件等价：
+
+\noindent a）$B_{\mathfrak p}=A_{\mathfrak p}/\mathfrak qA_{\mathfrak p}$ 对 $k$ 在 $\mathfrak p$-预进制拓扑下形式光滑；
+
+\noindent b）存在 $A$ 到自身的 $k$-导子 $D_1,\ldots,D_m$，以及 $f_1,\ldots,f_m\in\mathfrak q$，
+其像生成 $\mathfrak qA_{\mathfrak p}$，并且 $\det(D_if_j)\notin\mathfrak p$；
+
+\noindent c）$B_{\mathfrak p}$ 为正则环。
+\cmt{O15-N04}{沿用原文的简记 $B_{\mathfrak p}$，实际是 $B$ 在素理想 $\mathfrak p/\mathfrak q$ 处的局部化。
+原文把多元幂级数环的分式域记为 $k((X_1,\ldots,X_s))$；它不是默认为逐次Laurent级数域。}
+
+\eproof
+$B_{\mathfrak p}$ 的剩余域为 $L=k(\mathfrak p)$。
+$k((X_1,\ldots,X_s))$ 对 $k$ 可分（21.9.6.4），所以由假设 $L/k$ 可分，
+于是 a）与 c）等价（19.6.4）。
+此外，$A_{\mathfrak p}$ 正则（17.1.4、17.3.2），其剩余域对 $k$ 可分，
+故 $A_{\mathfrak p}$ 对 $k$ 在 $\mathfrak p$-预进制拓扑下形式光滑。
+由（22.6.2，ii），a）等价于下列 $L$-线性同态单射：
+\begin{equation}
+ j_0:(\mathfrak q/\mathfrak q^2)\otimes_AL
+ \longrightarrow\Omega^1_{A_{\mathfrak p}/k}\otimes_{A_{\mathfrak p}}L
+ =\Omega^1_{A/k}\otimes_AL.
+ \tag{22.7.2.1}
+\end{equation}
+另一方面，考虑复合同态
+\begin{equation}
+ \begin{aligned}
+ j:(\mathfrak q/\mathfrak q^2)\otimes_AL
+ &\xrightarrow{j_0}\Omega^1_{A/k}\otimes_AL\\[-2pt]
+ &\longrightarrow\widehat\Omega^1_{A/k}\otimes_AL.
+ \end{aligned}
+ \tag{22.7.2.2}
+\end{equation}
+我们先证明 b）等价于 $j$ 单射。
+有
+\[
+ (\mathfrak q/\mathfrak q^2)\otimes_AL
+ \simeq(\mathfrak qA_{\mathfrak p}/\mathfrak q^2A_{\mathfrak p})\otimes_{A_{\mathfrak p}}L.
+\]
+令 $f'_i$ 为 $f_i$ 在 $\mathfrak qA_{\mathfrak p}/\mathfrak q^2A_{\mathfrak p}$ 中的像，$F_i=j(f'_i\otimes1)$。
+条件 b）说配对矩阵 $(\langle F_i,D_j\otimes1\rangle)$ 可逆，故 $F_i$ 线性无关，
+从而 $f'_i\otimes1$ 线性无关；它们又生成源空间，所以 $j$ 单射。
+反过来，若 $j$ 单射，取 $f_i$ 使 $f'_i\otimes1$ 构成源空间的一组基，则 $F_i$ 构成 $\Im j$ 的一组基。
+由（21.9.3），$\widehat\Omega^1_{A/k}$ 是秩 $r$ 的自由 $A$-模，其对偶由 $A$ 到自身的 $k$-导子生成。
+所以可选 $D_j$，使该配对矩阵可逆，得到 b）。
+\cmt{O15-G01}{上述配对使用完备微分模。对 $A=k[[T_1,\ldots,T_r]]$，任意 $k$-导子 $D:A\to A$ 都满足 $D(\mathfrak m^{n+1})\subseteq\mathfrak m^n$，故连续；于是 $D=\sum_iD(T_i)\partial/\partial T_i$。不能未经说明就把一般环的所有导子与某个完备模的对偶等同。报告展开了这里的连续性及有限矩阵选择。}
+
+这已证明 b）推出 a）。要证明 a）推出 $j$ 单射，考虑交换图
+\begin{equation}
+\begin{tikzcd}[column sep=large,row sep=large]
+ (\mathfrak q/\mathfrak q^2)\otimes_AL \arrow[r,"j"] \arrow[d,"\alpha"'] &
+ \widehat\Omega^1_{A/k}\otimes_AL \arrow[d,equal]\\
+ (\mathfrak p/\mathfrak p^2)\otimes_AL \arrow[r,"i"'] &
+ \widehat\Omega^1_{A/k}\otimes_AL
+\end{tikzcd}
+\tag{22.7.2.3}
+\end{equation}
+并使用下面的引理。
+
+\egas{22.7.2.4}{引理}
+设 $R$ 为正则局部环，$\mathfrak m$ 为其极大理想，$K=R/\mathfrak m$。
+若理想 $\mathfrak n\subset R$ 使 $R/\mathfrak n$ 正则，则典范同态
+\begin{equation}
+ \alpha:(\mathfrak n/\mathfrak n^2)\otimes_RK
+ \longrightarrow(\mathfrak m/\mathfrak m^2)\otimes_RK
+ \tag{22.7.2.5}
+\end{equation}
+单射。
+
+\eproof
+由（17.1.6），$\mathfrak n$ 可由某个正则参数系 $x_1,\ldots,x_n$ 的一部分 $x_1,\ldots,x_t$ 生成。
+这些元素在左端的像构成一组基，其经 $\alpha$ 的像是右端基 $\overline x_1,\ldots,\overline x_n$ 的一部分，所以 $\alpha$ 单射。
+\finishproof
+
+继续证明（22.7.2）。在 a）的假设下，$B_{\mathfrak p}$ 正则，故引理说明图中的 $\alpha$ 单射；只须证明 $i$ 单射。
+在序列
+\begin{equation}
+ \mathfrak p/\mathfrak p^2\xrightarrow{h}
+ \widehat\Omega^1_{A/k}\widehat\otimes_A(A/\mathfrak p)
+ \xrightarrow{g}\widehat\Omega^1_{(A/\mathfrak p)/k}\longrightarrow0
+ \tag{22.7.2.6}
+\end{equation}
+中，$g$ 满射，$\Im h$ 在 $\Ker g$ 中稠密（20.7.20）。
+由于 $\widehat\Omega^1_{A/k}$ 有限生成，中间项等于通常的张量积；这个有限型 $A/\mathfrak p$-模的每个子模在极大理想进制拓扑下均闭（$0_{\mathrm I}$，7.3.5）。
+所以该序列确实正合。与 $L$ 张量后得到
+\[
+ (\mathfrak p/\mathfrak p^2)\otimes_AL\xrightarrow{i}
+ \widehat\Omega^1_{A/k}\otimes_AL\longrightarrow
+ \widehat\Omega^1_{(A/\mathfrak p)/k}\otimes_{A/\mathfrak p}L\longrightarrow0.
+\]
+由关于 $L/L'$ 的可分性假设及（21.9.5），右侧非零项的秩为 $s$，中间项的秩为 $r$（21.9.3），故 $\rk_L(\Im i)=r-s$。
+又 $A/\mathfrak p$ 有限于 $k[[X_1,\ldots,X_s]]$，所以 $\dim(A/\mathfrak p)=s$（17.1.4、16.1.5），于是
+\[
+ r-s=\dim A-\dim(A/\mathfrak p)=\dim A_{\mathfrak p}
+\]
+（16.5.11）。$A_{\mathfrak p}$ 正则，故最后一项等于 $(\mathfrak p/\mathfrak p^2)\otimes_AL$ 的维数。
+因此 $i$ 的像与源空间同维，$i$ 单射。命题得证。
+\finishproof
+
+\egas{22.7.3}{定理}
+设 $k$ 为域，$A$ 为完备诺特局部环，剩余域为 $K$。假设：
+
+\noindent 1$^\circ$ $[k:k^p]<\infty$，其中 $p$ 为 $k$ 的特征指数；
+
+\noindent 2$^\circ$ $K$ 是 $k$ 的某个可分扩域 $K_0$ 的有限扩张；
+
+\noindent 3$^\circ$ $A$ 赋有与这些结构相容的 $K_0$-代数结构，并对预进制拓扑形式光滑。
+
+设 $\mathfrak q\subseteq\mathfrak p$ 是 $A$ 的两个理想，其中 $\mathfrak p$ 为素理想，$B=A/\mathfrak q$。
+下列条件等价：
+
+\noindent a）$B_{\mathfrak p}$ 对 $k$ 在 $\mathfrak p$-预进制拓扑下形式光滑；
+
+\noindent b）存在 $A$ 到自身的 $k$-导子 $D_1,\ldots,D_m$ 及 $f_1,\ldots,f_m\in\mathfrak q$，
+其像生成 $\mathfrak qA_{\mathfrak p}$，并且 $\det(D_if_j)\notin\mathfrak p$；
+
+\noindent b$'$）存在子域 $k'\subseteq K_0$，满足 $K_0^p\subseteq k'$、$[K_0:k']<\infty$，
+以及 $A$ 到自身的、同时为 $k$-导子与 $k'$-导子的 $D_i$ 和 $f_i\in\mathfrak q$，使 $f_i$ 的像生成 $\mathfrak qA_{\mathfrak p}$，且 $\det(D_if_j)\notin\mathfrak p$。
+\cmt{O15-N05}{原文称 $k'$ 为 $K_0$ 的“子扩张”（sous-extension），并使用 b$'$）推出 b）。若按中间域 $k\subseteq k'\subseteq K_0$ 理解，这个推论成立；若允许不含 $k$ 的任意子域，则必须另保留 $k$-线性。正文使用等价的联合线性表述：同时为 $k$-导子与 $k'$-导子，等价于为复合域 $kk'$-导子。把 $k'$ 换成 $kk'$ 后仍满足有限指数和包含 $K_0^p$ 的条件。这样也使下一条预先指定子域族的表述没有歧义。特征零时 $p=1$，只能取 $k'=K_0$。}
+
+\eproof
+分 $p=1$ 与 $p>1$ 两种情形。
+
+\noindent A）$k$ 的特征为零。此时 $K/K_0$ 可分，由（19.6.4），$A$ 作为 $K_0$-代数同构于
+$K[[T_1,\ldots,T_r]]$，后者取通常的结构。
+对 $A/\mathfrak p$ 应用（19.8.8，ii），即可在（22.7.2）中把 $k$ 换成 $K$。
+又由（19.6.4），$B_{\mathfrak p}$ 对 $k$ 形式光滑与对 $K$ 形式光滑都等价于它正则。
+因此（22.7.2）给出 a）与 b$'$）的等价性；其中 $k'=K_0$，可用的 $K$-导子当然也是 $K_0$-导子。
+b$'$）推出 b）；b）通过（22.6.2，ii）的余切单射判据推出 a）。
+
+\noindent B）$k$ 的特征为 $p>0$。$A$ 对 $K_0$ 形式光滑，而 $K_0/k$ 可分，
+故 $A$ 对 $k$ 形式光滑（19.3.5，ii；19.6.1）。由（22.5.9），$A_{\mathfrak p}$ 对 $k$ 在 $\mathfrak p$-预进制拓扑下形式光滑。
+因此 a）仍等价于（22.7.2.1）中的 $j_0$ 单射，这里 $L=k(\mathfrak p)$。
+由（19.1.12，c），b）推出 a）；而 b$'$）推出 b）。只须从 $j_0$ 单射推出 b$'$）。
+
+先取任意满足 $[K_0:k']<\infty$ 的中间域 $k'$。
+由（21.9.2），$\widehat\Omega^1_{A/k'}$ 是有限秩自由 $A$-模。
+沿用（22.7.2）的论证，只须对某个合适的 $k'$，证明复合同态
+\begin{equation}
+ \begin{aligned}
+ j':(\mathfrak q/\mathfrak q^2)\otimes_AL
+ &\xrightarrow{j_0}\Omega^1_{A/k}\otimes_AL\\[-2pt]
+ &\longrightarrow\widehat\Omega^1_{A/k'}\otimes_AL
+ \end{aligned}
+ \tag{22.7.3.1}
+\end{equation}
+单射。考虑交换图
+\begin{equation}
+\begin{tikzcd}[column sep=small,row sep=large]
+ (\mathfrak q/\mathfrak q^2)\otimes_AL \arrow[r,"j_0"] \arrow[d,"\alpha"'] &
+ \Omega^1_{A/k}\otimes_AL \arrow[r] \arrow[d,equal] &
+ \widehat\Omega^1_{A/k'}\otimes_AL \arrow[d,equal]\\
+ (\mathfrak p/\mathfrak p^2)\otimes_AL \arrow[r,"i_0"'] &
+ \Omega^1_{A/k}\otimes_AL \arrow[r] &
+ \widehat\Omega^1_{A/k'}\otimes_AL
+\end{tikzcd}
+\tag{22.7.3.2}
+\end{equation}
+由 $j_0=i_0\alpha$ 单射，$\Ker(i_0\alpha)=0$。
+此外，$A_{\mathfrak p}$ 正则，而 a）蕴含 $B_{\mathfrak p}$ 正则（19.6.5），
+故（22.7.2.4）也表明 $\alpha$ 单射。因此 $\alpha^{-1}(\Ker i_0)=0$。
+令 $i'$ 为图的下行复合，则 $\Ker j'=\alpha^{-1}(\Ker i')$。
+只须对某个合适的 $k'$ 证明
+\cmt{O15-T01}{作者《勘误与增补（清单三）》A部、第四卷第四部分印刷第346页，要求把原证明第212页倒数第21行的 $\Ker(i)$ 改为 $\Ker(i_0)$，并把倒数第12行的 $(\mathfrak p/\mathfrak p^2)\otimes_LL$ 改为 $\otimes_AL$。正文落实这两项正式勘误，并统一把未完备微分映射的核写为 $\Ker i_0$；下文经局部化识别的同一映射也使用 $i_0$。这不是新的反例。}
+\begin{equation}
+ \Ker i'=\Ker i_0.
+ \tag{22.7.3.3}
+\end{equation}
+
+
+与（22.7.2）中相同的论证给出正合列
+\[
+ (\mathfrak p/\mathfrak p^2)\otimes_AL\xrightarrow{i'}
+ \widehat\Omega^1_{A/k'}\otimes_AL\longrightarrow
+ \widehat\Omega^1_{(A/\mathfrak p)/k'}\otimes_{A/\mathfrak p}L\longrightarrow0.
+\]
+由假设可应用（21.9.8）；因此可选中间域 $k'$，使 $K_0^p\subseteq k'$、$[K_0:k']<\infty$，且
+\[
+ \rk_L\bigl(\widehat\Omega^1_{(A/\mathfrak p)/k'}\otimes_{A/\mathfrak p}L\bigr)
+ =\dim(A/\mathfrak p)+\rk_L\Upsilon_{L/k}
+   +\rk_{K_0}\Omega^1_{K_0/k'}.
+\]
+又由（16.5.11）及 $A_{\mathfrak p}$ 的正则性，分别有
+\[
+ \dim(A/\mathfrak p)=\dim A-\dim A_{\mathfrak p},\qquad
+ \dim A_{\mathfrak p}=\rk_L\bigl((\mathfrak p/\mathfrak p^2)\otimes_AL\bigr).
+\]
+而（21.9.2）给出
+\[
+ \dim A+\rk_{K_0}\Omega^1_{K_0/k'}
+ =\rk_L\bigl(\widehat\Omega^1_{A/k'}\otimes_AL\bigr).
+\]
+对正合列计算维数，得到
+\begin{equation}
+ \rk_L(\Ker i')=\rk_L\Upsilon_{L/k}.
+ \tag{22.7.3.4}
+\end{equation}
+另一方面，$A_{\mathfrak p}$ 的剩余域对 $k$ 的素域形式光滑，故（20.6.22.1）给出正合列的相应部分
+\[
+ \Upsilon_{L/k}\xrightarrow{\chi_{A_{\mathfrak p}/k}}
+ (\mathfrak pA_{\mathfrak p})/(\mathfrak pA_{\mathfrak p})^2
+ \xrightarrow{i_0}\Omega^1_{A_{\mathfrak p}/k}\otimes_{A_{\mathfrak p}}L.
+\]
+$A_{\mathfrak p}$ 对 $k$ 预进制形式光滑，所以 $\chi_{A_{\mathfrak p}/k}$ 单射（22.2.2）。
+于是 $\Ker i_0\simeq\Upsilon_{L/k}$。
+结合（22.7.3.4）与 $\Ker i_0\subseteq\Ker i'$，得到（22.7.3.3），从而完成证明。
+\finishproof
+
+\egas{22.7.4}{注}
+上述论证结合（21.9.6）还表明：（22.7.3）的 b$'$）中，可以预先给定一族向下滤过的 $K_0$ 的子域 $(k_\alpha)$，满足
+\[
+ K_0^p\subseteq k_\alpha,\qquad [K_0:k_\alpha]<\infty,
+ \qquad\bigcap_\alpha k_\alpha=K_0^p,
+\]
+并要求 $k'$ 为其中某个 $k_\alpha$；所选导子仍须同时为 $k$-导子。
+\cmt{O15-N06}{为保留原文给定子域族的范围，而又不丢失底域 $k$ 的线性，应用前条证明时先使用复合域族 $h_\alpha=kk_\alpha$。
+由 $[k:k^p]<\infty$ 及（21.8.2），有 $\bigcap h_\alpha=k(K_0^p)$；对这一族应用（21.9.6，ii），得到的 $h_\alpha$-导子同时是 $k$-导子和 $k_\alpha$-导子。
+交等式的完整证明见报告O15-N06；这一步是对原文略写论证的补充，不是作者正式勘误。}
+
+\egas{22.7.5}{推论}
+在（22.7.3）的一般假设下，使 $B_{\mathfrak n}$ 对 $k$ 在 $\mathfrak n$-预进制拓扑下形式光滑的
+$\mathfrak n\in\Spec B$ 所组成的集合，在 $\Spec B$ 中为开集。
+
+\eproof
+沿用（22.7.3）的记号，只须证明：若 $B_{\mathfrak p}$ 形式光滑，则对 $V(\mathfrak q)$ 中充分接近 $\mathfrak p$ 的 $\mathfrak p'$，$B_{\mathfrak p'}$ 也形式光滑。
+设 $D_i,f_j$ 满足判据 b），置 $f=\det(D_if_j)$。对 $\mathfrak p'\in D(f)$，仍有 $f\notin\mathfrak p'$。
+另一方面，存在 $g\notin\mathfrak p$，使对 $\mathfrak p'\in D(g)$，$f_j$ 的像生成 $\mathfrak qA_{\mathfrak p'}$
+（Bourbaki，\textit{交换代数}，第二章，§5，第1目，命题2）。
+于是 $V(\mathfrak q)\cap D(fg)$ 给出所需邻域。
+\finishproof
+
+\egas{22.7.6}{推论（Nagata）}
+设 $B$ 为含域的完备诺特局部环。则使 $B_{\mathfrak n}$ 正则的 $\mathfrak n\in\Spec B$ 所组成的集合，在 $\Spec B$ 中为开集。
+
+\eproof
+$B$ 是某个素域 $k$ 上的代数，因此可写成 $A/\mathfrak q$，其中
+$A=K_0[[T_1,\ldots,T_r]]$，$K_0/k$ 为域扩张（19.8.8，i）。
+又 $B_{\mathfrak n}$ 正则，等价于它对 $k$ 预进制形式光滑（19.6.4）。
+（22.7.5）的全部假设于是满足，结论随之得到。
+\finishproof
+
+\egas{22.7.7}{注}
+（i）以后将随Nagata利用（22.7.6），把其结论推广到任意完备诺特局部环（IV，6.12.7）。
+
+（ii）若不再假设 $[k:k^p]$ 有限，（22.7.3）的结论未必成立。
+取\cmt{O15-E04}{原文求和从 $n=0$ 开始，故原 $f$ 的常数项为 $-X_0\ne0$，它在 $k[[T,U]]$ 中是单位，不能生成所需的素理想。正文将求和起点改为1，保留同一基本构造；原文又由在 $k((T))[U]$ 中不可约推到在 $k((T))[[U]]$ 中不可约，这一步也不成立，因为非零常数项在后一个环中可逆。正文改在 $k[[T]][[U]]$ 中使用Weierstrass除法，并补证商域可分。详细修补见报告O15-E04；以下不是原文已经写出的完整论证。}
+\[
+ k=\mathbb F_p(X_n)_{n\ge0},\qquad A=k[[T,U]],\qquad
+ f=U^p-\sum_{n=1}^{\infty}X_nT^{np},\qquad\mathfrak q=(f).
+\]
+
+令 $R=k[[T]]$、$F=k((T))$、$g=\sum_{n\ge1}X_nT^{np}$。
+$g\notin F^p$，因为 $F^p=k^p((T^p))$，而 $g$ 的系数 $X_n$ 不在 $k^p$ 中。
+故 $U^p-g$ 在 $F[U]$ 中不可约。
+它又是 $R[[U]]$ 中的首一Weierstrass多项式，所以
+\[
+ A/(f)\simeq R[U]/(U^p-g)
+\]
+是秩 $p$ 的自由 $R$-模，并嵌入域 $E=F(u)$，$u^p=g$；特别地 $\mathfrak q$ 是素理想。
+
+取 $\mathfrak p=\mathfrak q$，则 $B_{\mathfrak p}=E$。
+这个域对 $k$ 可分，可用（21.9.7）的同一机制核对如下。
+对每个 $N\ge1$，系数导子 $\partial/\partial X_N$ 逐项延拓到 $F$，把 $g$ 映到 $T^{Np}$。
+$\Omega^1_k\otimes_kE$ 中每个元素只涉及有限多个 $dX_n$，
+所以它在 $\Omega^1_F\otimes_FE$ 中的像与直线 $E\,dg$ 的交为零：
+在一个等式 $\lambda dg=\sum_{n\in S}a_n\,dX_n$ 中，取 $N\notin S$，应用上述导子即得 $\lambda T^{Np}=0$，故 $\lambda=0$。
+而从 $F$ 添入 $u$、关系 $u^p=g$，恰使 $\Omega^1_F\otimes_FE\to\Omega^1_E$ 的核为 $E\,dg$。
+由于 $F/k$ 可分（21.9.6.4），遂得 $\Omega^1_k\otimes_kE\to\Omega^1_E$ 单射；由（20.6.3），$E/k$ 可分。
+因此 $B_{\mathfrak p}$ 对 $k$ 形式光滑。
+
+另一方面，每个 $k$-导子 $A\to A$ 都连续，因而是 $\partial/\partial T$ 与 $\partial/\partial U$ 的 $A$-线性组合。
+但 $\partial f/\partial T=\partial f/\partial U=0$，故对 $\mathfrak q$ 中的每个元素 $h$ 及每个这样的导子 $D$，都有 $D(h)\in\mathfrak q$。
+所以判据 b）不能成立；本例中 $k=K_0=K$，中间域版本的 b$'$）也不能成立。
+这给出了有限 $p$-次数假设不能省去的反例。

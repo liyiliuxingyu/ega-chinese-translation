@@ -1,0 +1,8 @@
+{
+  "G7-G01": {
+    "h(y-x^2)": "0",
+    "gr_h(y-x^2)": "-t**2",
+    "nonzero_mod_t3": true
+  },
+  "scope": "Symbolic check of a proof-step counterexample only; not formal verification of the EGA lemma or the whole translation."
+}

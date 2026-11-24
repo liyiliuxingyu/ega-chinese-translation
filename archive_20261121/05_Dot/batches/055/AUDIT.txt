@@ -1,0 +1,1 @@
+原第62页已渲染核读；本批定义1、注2逐句对照。XeLaTeX双编译通过，最终日志无Warning/Overfull/Underfull/Missing character。成品4页全页渲染目检通过，数学式、脚注完整。没有重新证明全书，没有解决旧批次待核。ZIP CRC及解压后SHA256核验通过（生成后实测）。

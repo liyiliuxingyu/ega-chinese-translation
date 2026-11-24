@@ -1,0 +1,29 @@
+{
+  "date": "2026-11-14",
+  "branch": "第五卷独立续译，不覆盖原合订本",
+  "completed": "8.1至8.6（含8.4.1、证明、脚注29—34）",
+  "source_pdf_pages": [
+    21,
+    25
+  ],
+  "next": "第25页 We now study the points y of Y that are not smooth 开头未编号段落，不能跳到8.7",
+  "source_library_id": "libfile_fde3_f-f8a977f6c54881919e11840e44759152_49ac57203c0c81918f3630f0324dcb35",
+  "source_sha256": "23a20ef32fd16a1bd623c0c08ac080d04fc94f248de12133b713a19d6b0330d9",
+  "source_conversation": "https://chatgpt.com/c/6ac3aa3c-a6dc-83ee-97fb-e9f19cad1183",
+  "latest_original_result": "第五版880页，第0章至18.5.4，第五卷仍§1—6；交付前复查未见新结果",
+  "checks": [
+    "实际ctexbook默认排版",
+    "XeLaTeX双轮编译",
+    "无缺字、无Overfull、无未定义引用",
+    "全部页面缩览及正文逐页放大检查",
+    "独立审校逐段检查完整性、脚注及关键疑点"
+  ],
+  "limitations": [
+    "无原法文手稿校勘",
+    "8.5关键假设及Zn定义缺文保留",
+    "8.4.1和8.6原稿错误未静默修正",
+    "未合并旧版，未复核所有旧译",
+    "仅本段完成，非第8节全文或全项目完成"
+  ],
+  "pdf_pages": 11
+}

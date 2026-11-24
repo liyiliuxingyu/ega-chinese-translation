@@ -1,0 +1,23 @@
+[
+  {
+    "name": "EGAIV.1.pdf",
+    "file_id": "file_00000000d68881faa232fddc51f7888f",
+    "scope": "PDF103-115; printed104-116",
+    "sha256": "03f02142aef3df09f13f416ac3f78bd898213df894ed3fd86b25f91697256bda",
+    "bytes": 28307372
+  },
+  {
+    "name": "EGAIV.4.pdf",
+    "file_id": "file_00000000c96c81faae92fd088bcad3ae",
+    "scope": "PDF344,346; printed345,347",
+    "sha256": "f79e211fcf94d19e200e3dbc96faeeb5a423342137a9ad0bbe4626c555c3f84f",
+    "bytes": 44148520
+  },
+  {
+    "name": "代数几何基础_按内容顺序合订本_第七版.tex",
+    "file_id": "file_000000008900820bb1222d41026425d7",
+    "scope": "baseline complete TeX",
+    "sha256": "6c4d449eee5ddacb7adb94a0b8c070f22669ab540f23eb16d66e4a63fc590a50",
+    "bytes": 2323186
+  }
+]

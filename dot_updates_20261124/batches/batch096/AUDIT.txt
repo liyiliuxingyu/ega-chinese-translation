@@ -1,0 +1,6 @@
+法文 EGA5.pdf 171页 SHA256 24cf8204184b58b18a46e5f63ecc36d6e791b3c8c96a09daac93de96ebd8e830；英译112页 SHA256 23a20ef32fd16a1bd623c0c08ac080d04fc94f248de12133b713a19d6b0330d9。
+英稿：https://webusers.imj-prg.fr/~leila.schneps/grothendieckcircle/EGA/EGA5trans.pdf
+正式分册：https://www.numdam.org/item/PMIHES_1966__28__5_0/；本地整本SHA 509ff2bcbadd26fbc7566e6fcd79406eefbe5a8dfc8c984f4703c51f8d7e420f。该PDF物理232/236等于印233/237；原15.6.3非所需，15.5.3为精确命题对应，未推断手稿编号沿革。
+6.1 恢复固有假设（法24手写、法25证明再证），区分各Xi及删集Z的像维数。正式15.5.3应用：局部诺特不可约基底、所有分支占优、固有性，n(ξ)≤n(η)，再以满射性得n(ξ)≥1；无须假定泛纤维H^0等于底域。已复核旧B2-H09反例G_m×A^1。作者的4.4方向建议未当成已证推广，超预期维数截面不被排除。法25末旧6标题划掉并加多截面，英18/19排为7；法26上部废稿下批。
+XeLaTeX两遍，终日志检查缺字、未定义和溢出，成品全页渲染目检。三种摘页100dpi像素一致。ZIP CRC、全文件SHA和独立PDF/TeX包内外一致核验。
+

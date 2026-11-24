@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+set -euo pipefail
+package_root="$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")" && pwd)"
+project_root="$package_root/01_project/EGA_v17"
+cd "$project_root"
+bash build.sh --verify-single
+python3 checks/check_structure.py
+python3 checks/check_build_logs.py
+python3 checks/verify_pdf_parity.py
+printf '%s\n' '构建和技术比对完成。数学待核事项仍以 PENDING_ISSUES.md 为准。'

@@ -1,0 +1,158 @@
+% EGAIV.1.pdf, PDF pp.27--31, printed pp.28--32.
+\subsection{诺特局部环中的参数系}
+\source{EGA IV 第一部分，印刷第28--32页；上传PDF第27--31页}
+
+\egas{16.3.1}{命题}
+设 $A$ 为诺特环，$\pp$ 为 $A$ 的素理想，$n$ 为整数。以下条件等价：
+\begin{enumerate}[label=\alph*)]
+ \item $\htp(\pp)=\dim A_{\pp}\leq n$；
+ \item 存在 $A$ 中 $n$ 个元素 $x_i$（$1\leq i\leq n$），使 $\pp$ 在包含它们所生成的理想 $\mathfrak a$ 的素理想集合中极小（也就是说，$V(\pp)$ 是 $V(\mathfrak a)$ 的一个不可约分支）。
+\end{enumerate}
+\begin{proof}
+条件b）表明 $\mathfrak a A_{\pp}$ 为 $A_{\pp}$ 的定义理想，故由（16.2.5）得到a）。反过来，若a）成立，则 $A_{\pp}$ 有一个由 $n$ 个元素 $x_i/s$（$s\in A-\pp$）生成的定义理想 $\mathfrak b$。由 $A_{\pp}$ 的素理想与 $A$ 中包含于 $\pp$ 的素理想之间的一一对应，$A$ 中由 $x_i$ 生成的理想 $\mathfrak a$ 满足b）。
+\end{proof}
+取 $n=1$，得到特别情形：
+
+\egas{16.3.2}{推论（主理想定理，Hauptidealsatz）}
+诺特环中的一个素理想高度至多为1，当且仅当它在包含某个适当主理想的素理想集合中极小。
+
+\egas{16.3.3}{推论（Artin--Tate）}
+设 $A$ 为诺特整环。以下条件等价：
+\begin{enumerate}[label=\alph*)]
+ \item $A$ 为维数至多为1的半局部环；
+ \item 存在 $A$ 中的非零元素 $f$，使 $A_f$ 为域。
+\end{enumerate}
+\begin{proof}
+条件a）等价于说，$A$ 只有有限个非零素理想 $\mm_i$，且它们都是极大理想，因为 $(0)$ 是素理想。由于 $A$ 为整环，$\mm_i$ 的乘积非零；取这个乘积中的非零元素 $f$，则 $f$ 属于每个 $\mm_i$，所以 $(0)$ 是整环 $A_f$ 的唯一素理想，即 $A_f$ 是域。（这一部分证明没有用到 $A$ 诺特。）
+
+现在证明b）推出a）。条件b）表示 $A$ 的每个非零素理想都包含 $f$。令 $\pp_i$（$1\leq i\leq n$）为包含 $f$ 的素理想中的极小者；由于 $A/fA$ 诺特，这些理想只有有限个。只须证明所有 $\pp_i$ 都极大：这样每个非零素理想必包含某个 $\pp_i$，因而等于它。
+
+假设存在极大理想 $\mm$，包含某个 $\pp_i$ 而与所有 $\pp_i$ 不同。则 $\mm$ 不包含于这些 $\pp_i$ 的并（Bourbaki，\textit{交换代数}，第二章，§1，第1目，命题2），故可取 $g\in\mm$，使 $g$ 不属于任何 $\pp_i$。令 $\qq$ 为包含 $g$ 的素理想中的一个极小者。主理想定理（16.3.2）表明 $\qq$ 高度为1，因而非零；所以它包含 $f$，也包含某个 $\pp_i$。但是 $g\in\qq$ 而 $g\notin\pp_i$，故 $\qq\ne\pp_i$，这使 $\qq$ 的高度至少为2，矛盾。
+\end{proof}
+
+\egas{16.3.4}{命题}
+设 $A$ 为诺特半局部环，$\rr$ 为其根基，$M$ 为有限型 $A$-模，$\pp_i$ 为 $\Supp M$ 中满足 $\dim(A/\pp_i)=\dim M$ 的素理想。则 $\pp_i$ 是 $\Ass M$ 的极小元，且
+$\dim(M/\pp_iM)=\dim M$。对于每个 $x\in\rr$，有
+\begin{equation}
+ \dim(M/xM)\geq\dim M-1.
+ \tag{16.3.4.1}
+\end{equation}
+此外，两端相等的充要条件是 $x$ 不属于任何 $\pp_i$。
+\begin{proof}
+第一断言来自 $\pp_i$ 是 $\Supp M$ 的极小元（原文引（16.1.6）），而这些极小元也正是 $\Ass M$ 的极小元（Bourbaki，\textit{交换代数}，第四章，§1，第4目，定理2）。又 $\Supp(M/\pp_iM)$ 等于包含 $\pp_i$ 的素理想集合（$0_{\mathrm I}$，1.7.5），故
+$\dim(M/\pp_iM)=\dim(A/\pp_i)=\dim M$。
+
+令 $N=M/xM$。若 $x_1,\ldots,x_n\in\rr$，且 $N/(x_1N+\cdots+x_nN)$ 长度有限，则这表示 $M/(xM+x_1M+\cdots+x_nM)$ 长度有限；由（16.2.3）得到（16.3.4.1）。
+
+当 $x$ 不属于任何 $\pp_i$ 时，由（16.3.4.1）和（16.2.3.1）得到等号。反过来，若 $\dim(M/xM)=\dim M-1$，则任何 $\pp_i$ 都不能属于 $\Supp(M/xM)$。后一个支集由包含 $\Ann M+Ax$ 的素理想组成；由于 $\pp_i$ 都包含 $\Ann M$，它们不能包含 $x$。
+\end{proof}
+
+\egas{16.3.5}{推论}
+采用（16.3.4）的记号。对每个包含于某个 $\pp_i$ 的理想 $\mathfrak a$，有 $\dim(M/\mathfrak aM)=\dim M$；若令 $N=M/\mathfrak aM$，则
+$\dim(M/xM)=\dim M-1$ 蕴含 $\dim(N/xN)=\dim N-1$。
+\begin{proof}
+$\Supp N$ 等于包含 $\mathfrak a+\Ann M$ 的素理想集合，故 $\pp_i\in\Supp N$。由
+$\dim N\leq\dim M=\dim(A/\pp_i)$，得到 $\dim(A/\pp_i)=\dim N$。此外，$\Supp N$ 中满足 $\dim(A/\qq)=\dim N$ 的素理想 $\qq$，都是某些 $\pp_j$。若 $x$ 不属于任何 $\pp_j$，由（16.3.4）即得 $\dim(N/xN)=\dim N-1$。
+\end{proof}
+
+\egas{16.3.6}{定义}
+设 $A$ 为诺特半局部环，$\rr$ 为其根基，$M$ 为有限型 $A$-模，令 $n=\dim M$。称 $\rr$ 中由 $n$ 个元素组成的一个族 $(x_i)_{1\leq i\leq n}$ 为 $M$ 的\textbf{参数系}，若 $M/(x_1M+\cdots+x_nM)$ 的长度有限。
+
+由（16.2.3）可知，总存在这样的参数系。已在（16.2.3.3）的证明中看到，若
+$\jj=\sum_{i=1}^n x_iA$ 且 $M/\jj M$ 长度有限，则 $\qq=\jj+\Ann M$ 为 $A$ 的定义理想；反过来，若如此，$M/\jj M$ 是Artin环 $A/\qq$ 上的有限型模，因此长度有限。\cmt{D4-H04}{本句在半局部情形的“$A$ 的定义理想”说法过强：$\Ann M$ 可能不包含于 $\rr$。（16.2.3.3）实际取的是 $\jj+(\rr\cap\Ann M)$。准确的商环说法是 $\jj$ 在 $A/\Ann M$ 中的像为定义理想；报告给出半局部反例。另，参数个数 $n$ 的定义及随后参数系论证按非零有限型模理解；零模在本书约定下维数为 $-\infty$，不能将其直接当作参数个数。}
+所以，说 $(x_i)$ 是 $M$ 的参数系，等价于说它是 $A/\Ann M$ 的参数系，也就是其在 $A/\Ann M$ 中的像组成该环的参数系。
+
+若 $(x_i)_{1\leq i\leq n}$ 是 $M$ 的参数系，则对任意整数 $k\geq1$，$(x_i^k)$ 也如此。根据前述说明，可归结到 $M=A$；若 $\jj$ 为 $A$ 的定义理想，则 $\sum_{i=1}^n x_i^kA$ 包含 $\jj^{nk}$，因而仍为定义理想。
+
+\egas{16.3.7}{命题}
+设 $A$ 为诺特半局部环，$\rr$ 为其根基，$x_1,\ldots,x_k\in\rr$，$M$ 为有限型 $A$-模。则
+\begin{equation}
+ \dim\bigl(M/(x_1M+\cdots+x_kM)\bigr)\geq\dim M-k.
+ \tag{16.3.7.1}
+\end{equation}
+此外，两端相等，当且仅当能在 $\rr$ 中选取 $x_i$（$k+1\leq i\leq n=\dim M$），使 $(x_i)_{1\leq i\leq n}$ 为 $M$ 的参数系。
+\begin{proof}
+对 $k$ 归纳，应用（16.3.4.1），即得不等式。若两端相等，取
+$M/(x_1M+\cdots+x_kM)$ 的参数系 $x_{k+1},\ldots,x_n$。则
+$M/(x_1M+\cdots+x_kM+x_{k+1}M+\cdots+x_nM)$ 长度有限，故 $(x_i)_{1\leq i\leq n}$ 为 $M$ 的参数系。
+
+反过来，若存在这样的 $x_i$，令 $N=M/(x_1M+\cdots+x_kM)$，则 $N/(x_{k+1}N+\cdots+x_nN)$ 长度有限，所以 $\dim N\leq n-k$。结合（16.3.7.1），得到等号。
+\end{proof}
+
+\egas{16.3.8}{命题}
+设 $A$ 为诺特半局部环，$X=\Spec A$，$\mathfrak a\ne A$ 为理想，且
+$\codim(V(\mathfrak a),X)=r>0$。则存在 $\mathfrak a$ 中的 $r$ 个元素 $x_1,\ldots,x_r$，为 $A$ 的一个参数系的一部分，并满足
+\[
+ \codim\bigl(V(\mathfrak a),V(Ax_1+\cdots+Ax_r)\bigr)=0.
+\]
+\begin{proof}
+令 $\pp_i$（$1\leq i\leq m$）为 $A$ 的极小素理想，$\qq_j$（$1\leq j\leq n$）为包含 $\mathfrak a$ 的素理想中的极小者。由（14.2.1）、（16.1.3.2），
+\[
+ \codim(V(\mathfrak a),X)
+ =\inf_j\codim(V(\qq_j),X)=\inf_j\dim A_{\qq_j}.
+\]
+假设 $r>0$ 表明 $\mathfrak a$ 不包含于任何 $\pp_i$，所以存在 $x\in\mathfrak a$，不属于任何 $\pp_i$（Bourbaki，\textit{交换代数}，第二章，§1，第1目，命题2）。同样有
+\[
+ \begin{aligned}
+ \codim(V(\mathfrak a),V(Ax))
+ &=\inf_j\dim(A/Ax)_{\qq_j}\\
+ &=\inf_j\dim(A_{\qq_j}/A_{\qq_j}x).
+ \end{aligned}
+\]
+因为 $x/1$ 不属于 $A_{\qq_j}$ 的任何极小素理想，由（16.3.4），
+$\dim(A_{\qq_j}/A_{\qq_j}x)=\dim A_{\qq_j}-1$。故
+$\codim(V(\mathfrak a),V(Ax))=r-1$。原文接着说，同理 $\dim(A/Ax)=\dim A-1$。\cmt{D4-P01}{本段仅写 $x\in\mathfrak a$、避开极小素理想，尚未保证 $x\in\rr$，而（16.3.4）及参数系定义要求这一点。这里记录为半局部情形的证明适用条件缺口；未据此宣布命题结论错误。报告给出能使这一具体取元步骤失效的例子，并区分局部环情形。}
+
+现在对 $r$ 归纳。若 $r>1$，在 $A'=A/Ax$ 中存在 $r-1$ 个元素 $x'_i$（$2\leq i\leq r$），属于 $\mathfrak a/Ax$，为 $A'$ 的参数系的一部分，并满足
+\[
+ \codim\bigl(V(\mathfrak a/Ax),V(A'x'_2+\cdots+A'x'_r)\bigr)=0.
+\]
+取元素 $x'_i$（$r+1\leq i\leq s$），使 $(x'_i)_{2\leq i\leq s}$ 成为 $A'$ 的一个参数系。对 $2\leq i\leq s$，在类 $x'_i$ 中选取 $A$ 的元素 $x_i$，并在 $2\leq i\leq r$ 时令 $x_i\in\mathfrak a$。于是 $A/(Ax+Ax_2+\cdots+Ax_s)$ 长度有限；又 $\dim A=s$，故 $x_1=x$ 及其余 $x_i$ 满足命题要求。
+\end{proof}
+
+\egas{16.3.9}{命题}
+设 $A,B$ 为诺特局部环，$\mm$ 为 $A$ 的极大理想，$k$ 为其剩余域，$\varphi:A\to B$ 为局部同态。
+\begin{enumerate}[label=(\roman*)]
+ \item 有
+ \begin{equation}
+  \dim B\leq\dim A+\dim(B\otimes_A k).
+  \tag{16.3.9.1}
+ \end{equation}
+ \item 若 $M\ne0$ 为有限型 $A$-模，$N\ne0$ 为有限型 $B$-模，则
+ \begin{equation}
+  \dim_B(M\otimes_A N)\leq\dim_A M+
+  \dim_{B\otimes_A k}(N\otimes_A k).
+  \tag{16.3.9.2}
+ \end{equation}
+\end{enumerate}
+\begin{proof}
+令 $m=\dim A$，取 $A$ 的参数系 $(s_i)_{1\leq i\leq m}$（16.3.6），并置 $\mathfrak a=\sum_i s_iA$。则 $A/\mathfrak a$ 长度有限，因而是Artin环；它的极大理想 $\mm/\mathfrak a$ 幂零。因此 $B/\mathfrak a B$ 的理想 $\mm B/\mathfrak a B$ 也幂零，因为它是 $(\mm/\mathfrak a)\otimes_A B$ 的像。于是
+$\dim(B/\mathfrak a B)=\dim(B/\mm B)$，这两个环的谱具有相同的底空间。
+
+又 $B/\mathfrak a B=B/(s_1B+\cdots+s_mB)$，且 $s_i$ 在 $B$ 中的像属于其极大理想。由（16.3.7），得到
+$\dim B\leq m+\dim(B\otimes_A k)$，即（16.3.9.1）。
+
+为证明（16.3.9.2），令 $\mathfrak r=\Ann_A M$、$\mathfrak s=\Ann_B N$。按定义（16.1.7），有
+$\dim_A M=\dim(A/\mathfrak r)$、$\dim_B N=\dim(B/\mathfrak s)$。另一方面，$\Supp(M\otimes_A N)$ 是 $\Spec B$ 的闭子集，可等同于（I，9.1.13）
+\[
+ \begin{aligned}
+ \Supp M\times_{\Spec A}\Supp N
+ &=\Spec\bigl((B/\mathfrak s)\otimes_A(A/\mathfrak r)\bigr)\\
+ &=\Spec\bigl(B/(\mathfrak s+\mathfrak rB)\bigr).
+ \end{aligned}
+\]
+由于 $N\otimes_A k$ 是有限型 $B$-模，有
+$\dim_{B\otimes_Ak}(N\otimes_Ak)=\dim_B(N\otimes_Ak)$（16.1.9）；同样的论证表明，它的支集为 $\Spec(B/(\mathfrak s+\mm B))$。将（16.3.9.1）用于 $A/\mathfrak r$ 与 $B/(\mathfrak s+\mathfrak rB)$，得到
+\[
+ \dim B/(\mathfrak s+\mathfrak rB)
+ \leq\dim(A/\mathfrak r)+\dim B/(\mathfrak s+\mm B),
+\]
+这就是（16.3.9.2）。
+\end{proof}
+
+\egas{16.3.10}{推论}
+在（16.3.9）的假设下，若 $\mm B$ 是 $B$ 的定义理想，则 $\dim B\leq\dim A$。若进一步 $A$ 为整环且 $\dim A=\dim B$，则 $\varphi$ 单射。
+\begin{proof}
+此时 $\dim(B/\mm B)=0$，故第一断言由（16.3.9）得到。还可将 $A$ 替换为 $\varphi(A)$，于是 $\dim B\leq\dim\varphi(A)$。若 $\mathfrak a=\Ker\varphi\ne0$，且 $A$ 为整环，则由（16.1.2.2），
+$\dim\varphi(A)=\dim(A/\mathfrak a)<\dim A$；因此 $\dim A=\dim B$ 只能在 $\mathfrak a=0$ 时发生。
+\end{proof}

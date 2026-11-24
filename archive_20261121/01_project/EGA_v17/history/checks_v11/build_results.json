@@ -1,0 +1,74 @@
+[
+  {
+    "name": "main",
+    "seconds": 62.9,
+    "passes": [
+      {
+        "pass": 1,
+        "returncode": 0
+      },
+      {
+        "pass": 2,
+        "returncode": 0
+      },
+      {
+        "pass": 3,
+        "returncode": 0
+      }
+    ]
+  },
+  {
+    "name": "report",
+    "seconds": 6.4,
+    "passes": [
+      {
+        "pass": 1,
+        "returncode": 0
+      },
+      {
+        "pass": 2,
+        "returncode": 0
+      },
+      {
+        "pass": 3,
+        "returncode": 0
+      }
+    ]
+  },
+  {
+    "name": "book_single",
+    "seconds": 62.8,
+    "passes": [
+      {
+        "pass": 1,
+        "returncode": 0
+      },
+      {
+        "pass": 2,
+        "returncode": 0
+      },
+      {
+        "pass": 3,
+        "returncode": 0
+      }
+    ]
+  },
+  {
+    "name": "audit_single",
+    "seconds": 6.3,
+    "passes": [
+      {
+        "pass": 1,
+        "returncode": 0
+      },
+      {
+        "pass": 2,
+        "returncode": 0
+      },
+      {
+        "pass": 3,
+        "returncode": 0
+      }
+    ]
+  }
+]

@@ -1,0 +1,487 @@
+% 底本 EGAIV.1.pdf，上传PDF第139--146页。
+\egap{20.6.14}
+沿用前述记号，再假定 $A,B,C$ 均为 $\Lambda$-代数，且 $u,v$ 均为
+$\Lambda$-同态。这相当于给出三个环同态
+\[
+ \Lambda\xrightarrow{s}A\xrightarrow{u}B\xrightarrow{v}C .
+\]
+除 $\Upsilon_{C/B/A}$ 外，还有非完美性模
+$\Upsilon_{B/A/\Lambda}$、$\Upsilon_{C/A/\Lambda}$、
+$\Upsilon_{C/B/\Lambda}$。根据（20.6.4.2），已有典范的 $C$-线性同态
+\begin{equation}
+ u':\Upsilon_{C/A/\Lambda}\longrightarrow\Upsilon_{C/B/\Lambda},
+ \tag{20.6.14.1}
+\end{equation}
+\begin{equation}
+ s':\Upsilon_{C/B/\Lambda}\longrightarrow\Upsilon_{C/B/A}.
+ \tag{20.6.14.2}
+\end{equation}
+在交换图（20.5.7.3）的这个特例中，
+\begin{equation}
+\begin{tikzcd}[column sep=small]
+\Omega^1_{A/\Lambda}\otimes_A B\arrow[r]\arrow[d]&
+ \Omega^1_{B/\Lambda}\arrow[r]\arrow[d]&\Omega^1_{B/A}\arrow[r]\arrow[d]&0\\
+\Omega^1_{A/\Lambda}\otimes_A C\arrow[r]&
+ \Omega^1_{C/\Lambda}\arrow[r]&\Omega^1_{C/A}\arrow[r]&0,
+\end{tikzcd}
+\tag{20.6.14.3}
+\end{equation}
+下行由 $C$-模组成。上行与 $C$ 在 $B$ 上张量，得到交换图
+\begin{equation}
+\begin{tikzcd}[column sep=small]
+\Omega^1_{A/\Lambda}\otimes_A C\arrow[r]\arrow[d,"1"']&
+ \Omega^1_{B/\Lambda}\otimes_B C\arrow[r]\arrow[d]&
+ \Omega^1_{B/A}\otimes_B C\arrow[r]\arrow[d]&0\\
+\Omega^1_{A/\Lambda}\otimes_A C\arrow[r]&
+ \Omega^1_{C/\Lambda}\arrow[r]&\Omega^1_{C/A}\arrow[r]&0 .
+\end{tikzcd}
+\tag{20.6.14.4}
+\end{equation}
+这里上行仍正合，左竖箭头为恒等。令
+\begin{equation}
+\begin{aligned}
+ \Upsilon^C_{B/A/\Lambda}
+ &=\Ker(u_{B/A/\Lambda}\otimes_B1_C)\\
+ &=\Ker\bigl(\Omega^1_{A/\Lambda}\otimes_A C
+       \longrightarrow\Omega^1_{B/\Lambda}\otimes_B C\bigr).
+\end{aligned}
+\tag{20.6.14.5}
+\end{equation}
+结合 $\Upsilon_{C/A/\Lambda}$ 的定义，存在唯一的 $C$-线性同态
+\begin{equation}
+ v':\Upsilon^C_{B/A/\Lambda}\longrightarrow\Upsilon_{C/A/\Lambda}
+ \tag{20.6.14.6}
+\end{equation}
+使下列正合列之间的图交换：
+\begin{equation}
+\begin{gathered}
+\begin{tikzcd}[column sep=small]
+0\arrow[r]&\Upsilon^C_{B/A/\Lambda}\arrow[r]\arrow[d,"v'"']&
+ \Omega^1_{A/\Lambda}\otimes_A C\arrow[r]\arrow[d,"1"]&
+ \Omega^1_{B/\Lambda}\otimes_B C\arrow[d]\\
+0\arrow[r]&\Upsilon_{C/A/\Lambda}\arrow[r]&
+ \Omega^1_{A/\Lambda}\otimes_A C\arrow[r]&\Omega^1_{C/\Lambda}
+\end{tikzcd}\\[-.2em]
+\begin{tikzcd}[column sep=large]
+\Omega^1_{B/\Lambda}\otimes_B C\arrow[r]\arrow[d]&
+ \Omega^1_{B/A}\otimes_B C\arrow[r]\arrow[d]&0\\
+\Omega^1_{C/\Lambda}\arrow[r]&\Omega^1_{C/A}\arrow[r]&0 .
+\end{tikzcd}
+\end{gathered}
+\tag{20.6.14.7}
+\end{equation}
+同样，这只是将原长图分为两段显示。当 $\Lambda=\mathbf Z$ 时，
+将 $\Upsilon^C_{B/A/\mathbf Z}$ 简记为 $\Upsilon^C_{B/A}$；
+若 $\Lambda$ 为素域，也有 $\Upsilon^C_{B/A/\Lambda}=\Upsilon^C_{B/A}$。
+\cmt{J10-N03}{上标 $C$ 的记号专指“张量以后再取核”。
+一般不能将它直接换成 $\Upsilon_{B/A/\Lambda}\otimes_B C$；
+两者之间的典范映射及使它成为同构的条件在（20.6.21，i）给出。}
+
+\egap{20.6.15}
+为研究这些模之间的关系，一方面考虑 $B$-模复形 $K_\bullet(B/A/\Lambda)$，
+另一方面考虑 $C$-模复形 $K_\bullet(C/A/\Lambda)$、
+$K_\bullet(C/B/\Lambda)$（20.6.5），并引入下列 $C$-模复形。首先令
+\begin{equation}
+ K_\bullet^C(B/A/\Lambda)=K_\bullet(B/A/\Lambda)\otimes_B C .
+ \tag{20.6.15.1}
+\end{equation}
+再以 $T_\bullet(C/B/\Lambda)$ 表示仅在次数 $0,1$ 非零的复形，其中
+\begin{equation}
+ T_0(C/B/\Lambda)=T_1(C/B/\Lambda)=\Omega^1_{B/\Lambda}\otimes_B C,
+ \tag{20.6.15.2}
+\end{equation}
+微分为恒等。因此这个复形与零同伦。最后令
+\begin{equation}
+ K'_\bullet(C/A/\Lambda)
+ =K_\bullet(C/A/\Lambda)\oplus T_\bullet(C/B/\Lambda).
+ \tag{20.6.15.3}
+\end{equation}
+由于 $T_\bullet$ 可缩，对每个 $C$-模 $L$ 和每个 $i$ 有典范同构
+\begin{equation}
+ \begin{gathered}
+ H^i(K'_\bullet,L)\simeq H^i(K_\bullet,L),\\
+ H_i(K'_\bullet\otimes_C L)\simeq H_i(K_\bullet\otimes_C L).
+ \end{gathered}
+ \tag{20.6.15.4}
+\end{equation}
+第二行将原文 $H_i(K_\bullet,L)$ 的带系数同调记号显式写为张量复形的同调。
+
+\egap{20.6.16}
+下面定义一个在每个次数均分裂的复形短正合列
+\begin{equation}
+ 0\longrightarrow K_\bullet^C(B/A/\Lambda)
+ \xrightarrow{j}K'_\bullet(C/A/\Lambda)
+ \xrightarrow{p}K_\bullet(C/B/\Lambda)\longrightarrow0 .
+ \tag{20.6.16.1}
+\end{equation}
+暂记
+\[
+ \begin{gathered}
+ U=\Omega^1_{A/\Lambda}\otimes_A C,\quad
+ V=\Omega^1_{B/\Lambda}\otimes_B C,\quad W=\Omega^1_{C/\Lambda},\\
+ f=u_{B/A/\Lambda}\otimes_B1_C:U\to V,\qquad
+ g=v_{C/B/\Lambda}:V\to W .
+ \end{gathered}
+\]
+二者的复合为 $gf=(vu)_{C/A/\Lambda}$，见（20.6.14.4）。
+取
+\[
+ \begin{array}{ll}
+ j_1(x)=(x,f(x)),&p_1(y,z)=z-f(y),\\
+ j_0(x)=(g(x),x),&p_0(y,z)=g(z)-y .
+ \end{array}
+\]
+则 $\Im(j_1)=\Ker(p_1)$ 是 $f$ 的图像，在 $U\oplus V$ 中以
+$\{0\}\oplus V$ 为补模；$\Im(j_0)=\Ker(p_0)$ 是 $g$ 的图像，在
+$W\oplus V$ 中以 $W\oplus\{0\}$ 为补模。
+\cmt{J10-T01}{原文把最后这个补模写成
+$K_1(C/A/\Lambda)\oplus\{0\}$；这里讨论的是次数零，正确对象是
+$K_0(C/A/\Lambda)\oplus\{0\}=W\oplus\{0\}$。
+正文修正次数下标；映射 $j,p$ 的原公式保留。}
+相应交换图为
+\[
+\begin{tikzcd}[column sep=large]
+0\arrow[r]&U\arrow[r,"j_1"]\arrow[d,"f"']&
+ U\oplus V\arrow[r,"p_1"]\arrow[d,"{(y,z)\mapsto(gf(y),z)}"]&
+ V\arrow[r]\arrow[d,"g"]&0\\
+0\arrow[r]&V\arrow[r,"j_0"']&
+ W\oplus V\arrow[r,"p_0"']&W\arrow[r]&0 .
+\end{tikzcd}
+\]
+两个方块分别由
+$(gf(x),f(x))=j_0(f(x))$ 及 $g(z)-gf(y)=g(z-f(y))$ 验证。
+
+\egas{20.6.17}{定理}
+有 $C$-模正合列
+\begin{equation}
+\begin{aligned}
+0\longrightarrow\Upsilon^C_{B/A/\Lambda}
+ &\xrightarrow{v'}\Upsilon_{C/A/\Lambda}
+ \xrightarrow{u'}\Upsilon_{C/B/\Lambda}
+ \xrightarrow{\partial}\Omega^1_{B/A}\otimes_B C\\
+ &\xrightarrow{v_{C/B/A}}\Omega^1_{C/A}
+ \xrightarrow{u_{C/B/A}}\Omega^1_{C/B}\longrightarrow0 .
+\end{aligned}
+\tag{20.6.17.1}
+\end{equation}
+其中边界映射取为复合
+\begin{equation}
+ \Upsilon_{C/B/\Lambda}\xrightarrow{s'}\Upsilon_{C/B/A}
+ \lhook\joinrel\longrightarrow\Omega^1_{B/A}\otimes_B C .
+ \tag{20.6.17.2}
+\end{equation}
+
+对（20.6.16.1）写出同调长正合列，且利用各复形只在次数 $0,1$ 有
+非零同调，就得到上述六项正合关系。这里需要明确同调识别中的符号：
+采用（20.6.15.3）的投影到第一直和因子的典范识别，$H_1(p)$ 是
+$-u'$，$H_0(p)$ 是 $-u_{C/B/A}$；把这两个箭头同时改取相反数，不改变
+任何核、像或正合性，即得到（20.6.17.1）所用的自然映射。
+
+具体而言，对 $z\in\Upsilon_{C/B/\Lambda}=\Ker(g)$，
+其在 $p_1$ 下的一个提升为 $(0,z)$；该元素的微分为
+$(0,z)=j_0(z)$，故边界是 $z$ 在 $\Coker(f)=\Omega^1_{B/A}\otimes_B C$
+中的像。再由交换图
+\begin{equation}
+\begin{tikzcd}[column sep=large]
+\Upsilon_{C/B/\Lambda}\arrow[r,"s'"]\arrow[d,hook]&
+ \Upsilon_{C/B/A}\arrow[d,hook]\\
+\Omega^1_{B/\Lambda}\otimes_B C\arrow[r]&
+ \Omega^1_{B/A}\otimes_B C
+\end{tikzcd}
+\tag{20.6.17.3}
+\end{equation}
+可知这正是（20.6.17.2）。
+\cmt{J10-G02}{原证明说由 $j,p$ 诱导的映射立即就是定理中的映射；
+若使用通常的投影识别，$p_1,p_0$ 实际各产生一个负号。
+正文补明这两个负号及其消除方式。正合列和边界的陈述保持不变；
+这属于符号核对，不是对定理的反例。}
+
+\egas{20.6.18}{推论}
+$(i)$ 以下 $C$-模序列正合：
+\begin{equation}
+0\longrightarrow\Upsilon^C_{B/A/\Lambda}
+ \longrightarrow\Upsilon_{C/A/\Lambda}
+ \longrightarrow\Upsilon_{C/B/\Lambda}
+ \longrightarrow\Upsilon_{C/B/A}\longrightarrow0 .
+\tag{20.6.18.1}
+\end{equation}
+$(ii)$ 若 $B$ 是相对于 $\Lambda$ 形式光滑的 $A$-代数，则
+$\Upsilon^C_{B/A/\Lambda}=0$。
+
+$(i)$ 在（20.6.17.1）中，$\partial$ 的像为
+$\Ker(v_{C/B/A})=\Upsilon_{C/B/A}$，故得结论。
+$(ii)$ 由假设和（20.5.7），
+\[
+ 0\longrightarrow\Omega^1_{A/\Lambda}\otimes_A B
+ \longrightarrow\Omega^1_{B/\Lambda}
+ \longrightarrow\Omega^1_{B/A}\longrightarrow0
+\]
+正合且分裂。与 $C$ 张量后仍正合，故首箭头的核为零。
+
+\egas{20.6.19}{推论}
+设 $K$ 为域，$K\subseteq E\subseteq F$ 为域扩张。
+$(i)$ 若 $F/E$ 可分，则 $\Upsilon_{F/E/K}=0$，即
+$\Omega^1_{E/K}\otimes_E F\to\Omega^1_{F/K}$ 单射。
+$(ii)$ 反之，若 $F/K$ 可分且 $\Upsilon_{F/E/K}=0$，则 $F/E$ 可分。
+
+设 $P$ 为 $K$ 的素域，由（20.6.18）有正合列
+\[
+ \Upsilon_{F/K/P}\longrightarrow\Upsilon_{F/E/P}
+ \longrightarrow\Upsilon_{F/E/K}\longrightarrow0 .
+\]
+若 $\Upsilon_{F/E/P}=\Upsilon_{F/E}=0$，则 $\Upsilon_{F/E/K}=0$，
+再应用（20.6.3）即得 $(i)$。若
+$\Upsilon_{F/E/K}=0$ 且 $\Upsilon_{F/K/P}=\Upsilon_{F/K}=0$，
+则 $\Upsilon_{F/E/P}=0$，由（20.6.3）得到 $(ii)$。
+
+\egas{20.6.20}{推论}
+$(i)$ 若 $K/k$ 是代数可分扩张，则 $\Omega^1_{K/k}=0$。
+
+$(ii)$ 设 $k$ 为特征零的域，$K/k$ 为扩张。$\Omega^1_{K/k}=0$，
+当且仅当 $K/k$ 代数。特别地，特征零的域 $K$ 满足 $\Omega^1_K=0$，
+当且仅当 $K$ 是 $\mathbf Q$ 的代数扩张（另见21.4.4及21.7.5）。
+
+$(i)$ 对每个 $x\in K$，设 $f$ 为其在 $k$ 上的最小多项式。
+由可分性 $f'(x)\ne0$，而
+\[
+ 0=d_{K/k}(f(x))=f'(x)d_{K/k}(x),
+\]
+故 $d_{K/k}(x)=0$，由（20.4.7）得结论。
+
+$(ii)$ 取一个纯超越扩张 $k\subseteq L\subseteq K$，
+使 $K/L$ 代数。特征为零，故 $K/L$ 可分；（20.6.19，i）给出正合列
+\[
+0\longrightarrow\Omega^1_{L/k}\otimes_L K
+ \longrightarrow\Omega^1_{K/k}\longrightarrow\Omega^1_{K/L}\longrightarrow0 .
+\]
+由 $(i)$ 最后一项为零。因此 $\Omega^1_{K/k}=0$ 等价于
+$\Omega^1_{L/k}=0$；由于 $L/k$ 纯超越，由（20.5.10），后者等价于 $L=k$。
+
+\egas{20.6.21}{备注}
+$(i)$ 由于 $\Upsilon_{B/A/\Lambda}$ 为 $u_{B/A/\Lambda}$ 的核，而
+$\Upsilon^C_{B/A/\Lambda}$ 为 $u_{B/A/\Lambda}\otimes_B1_C$ 的核，
+存在典范同态
+\begin{equation}
+ \Upsilon_{B/A/\Lambda}\otimes_B C\longrightarrow
+ \Upsilon^C_{B/A/\Lambda}.
+ \tag{20.6.21.1}
+\end{equation}
+若下面序列正合，则这个同态双射：
+\begin{equation}
+\begin{aligned}
+0\longrightarrow\Upsilon_{B/A/\Lambda}\otimes_B C
+ &\longrightarrow\Omega^1_{A/\Lambda}\otimes_A C
+ \longrightarrow\Omega^1_{B/\Lambda}\otimes_B C\\
+ &\longrightarrow\Omega^1_{B/A}\otimes_B C\longrightarrow0 .
+\end{aligned}
+\tag{20.6.21.2}
+\end{equation}
+这在以下两种情形成立：
+
+$1^\circ$ $C$ 为平坦 $B$-模。
+
+$2^\circ$ $\Omega^1_{B/\Lambda}$ 与 $\Omega^1_{B/A}$ 均为平坦 $B$-模。
+此时
+$\Ker(\Omega^1_{B/\Lambda}\to\Omega^1_{B/A})$ 也平坦（$0_{\mathrm I}$，6.1.2），
+将原正合列分解为两条短正合列后，再应用同一条目即可证明
+（20.6.21.2）的正合性。
+
+$(ii)$ 考虑交换的环同态图
+\[
+\begin{tikzcd}
+ \Lambda'\arrow[r]&A'\arrow[r]&B'\arrow[r]&C'\\
+ \Lambda\arrow[u]\arrow[r]&A\arrow[u]\arrow[r]&B\arrow[u]\arrow[r]&C.\arrow[u]
+\end{tikzcd}
+\]
+由（20.6.16）的定义，有交换的复形图
+\[
+\begin{tikzcd}[column sep=small]
+0\arrow[r]&K_\bullet^C(B/A/\Lambda)\arrow[r]\arrow[d]&
+ K'_\bullet(C/A/\Lambda)\arrow[r]\arrow[d]&
+ K_\bullet(C/B/\Lambda)\arrow[r]\arrow[d]&0\\
+0\arrow[r]&K_\bullet^{C'}(B'/A'/\Lambda')\arrow[r]&
+ K'_\bullet(C'/A'/\Lambda')\arrow[r]&
+ K_\bullet(C'/B'/\Lambda')\arrow[r]&0 ,
+\end{tikzcd}
+\]
+竖箭头来自（20.6.6.4）。在同调上得到如下交换图：
+\begin{equation}
+\begin{gathered}
+\begin{tikzcd}[column sep=small]
+0\arrow[r]&\Upsilon^C_{B/A/\Lambda}\arrow[r]\arrow[d]&
+ \Upsilon_{C/A/\Lambda}\arrow[r]\arrow[d]&
+ \Upsilon_{C/B/\Lambda}\arrow[r]\arrow[d]&
+ \Omega^1_{B/A}\otimes_B C\arrow[d]\\
+0\arrow[r]&\Upsilon^{C'}_{B'/A'/\Lambda'}\arrow[r]&
+ \Upsilon_{C'/A'/\Lambda'}\arrow[r]&
+ \Upsilon_{C'/B'/\Lambda'}\arrow[r]&
+ \Omega^1_{B'/A'}\otimes_{B'} C'
+\end{tikzcd}\\[-.2em]
+\begin{tikzcd}[column sep=small]
+\Omega^1_{B/A}\otimes_B C\arrow[r]\arrow[d]&
+ \Omega^1_{C/A}\arrow[r]\arrow[d]&\Omega^1_{C/B}\arrow[r]\arrow[d]&0\\
+\Omega^1_{B'/A'}\otimes_{B'} C'\arrow[r]&
+ \Omega^1_{C'/A'}\arrow[r]&\Omega^1_{C'/B'}\arrow[r]&0 .
+\end{tikzcd}
+\end{gathered}
+\tag{20.6.21.3}
+\end{equation}
+两段共有的张量项及其竖箭头相同。正合列（20.6.18.1）也有相应的交换图。
+
+\egas{20.6.22}{命题}
+设 $s:\Lambda\to A$、$u:A\to B$ 为环同态，$\mathfrak k$ 为 $B$ 的理想，
+$C=B/\mathfrak k$。假定 $E=B/\mathfrak k^2$ 是以
+$\mathfrak k/\mathfrak k^2$ 为核的 $C$ 的一个 $\Lambda$-平凡的 $B$-扩张。
+则有正合列
+\begin{equation}
+\begin{aligned}
+0\longrightarrow\Upsilon^C_{B/A/\Lambda}
+ &\xrightarrow{v'}\Upsilon_{C/A/\Lambda}
+ \xrightarrow{\chi_E}\mathfrak k/\mathfrak k^2
+ \xrightarrow{\delta_{C/B/A}}\Omega^1_{B/A}\otimes_B C\\
+ &\xrightarrow{v_{C/B/A}}\Omega^1_{C/A}\longrightarrow0 .
+\end{aligned}
+\tag{20.6.22.1}
+\end{equation}
+
+由于 $v:B\to C$ 满射，$\Omega^1_{C/B}=0$（20.4.12）。
+由（20.6.10），$\Upsilon_{C/B/\Lambda}$ 通过 $E$ 的特征同态典范地识别为
+$\mathfrak k/\mathfrak k^2$。这里在（20.6.22.1）中用 $\chi_E$ 表示
+将 $E$ 视为 $C$ 的 $A$-扩张时的特征同态；它就是
+\[
+ \Upsilon_{C/A/\Lambda}\xrightarrow{u'}\Upsilon_{C/B/\Lambda}
+ \xrightarrow{\sim}\mathfrak k/\mathfrak k^2 .
+\]
+因此可应用（20.6.17.1）和（20.6.18.1）。
+更具体地，有交换图
+\[
+\begin{tikzcd}[column sep=large,row sep=large]
+\Upsilon_{C/A/\Lambda}\arrow[r,hook]\arrow[d,"\chi_E"']&
+ \Omega^1_{A/\Lambda}\otimes_A C\arrow[d]\\
+\mathfrak k/\mathfrak k^2\arrow[r,"\delta_{C/B/\Lambda}"]
+ \arrow[d,"1"']&
+ \Omega^1_{B/\Lambda}\otimes_B C\arrow[d]\\
+\mathfrak k/\mathfrak k^2\arrow[r,"\delta_{C/B/A}"']&
+ \Omega^1_{B/A}\otimes_B C .
+\end{tikzcd}
+\]
+中间一行还可按（20.5.12，ii）写成
+$\Upsilon_{C/E/\Lambda}\to\Omega^1_{E/\Lambda}\otimes_E C$；
+其左端经（20.6.10）与 $\mathfrak k/\mathfrak k^2$ 识别。
+再用（20.6.17.3）的交换性，就得到所需结论。
+
+这样，当存在一个环 $\Lambda$ 使 $A$ 成为 $\Lambda$-代数且
+$B/\mathfrak k^2$ 为 $\Lambda$-平凡时，便更精确地描述了
+$\delta_{C/B/A}$ 的核。特别地，当 $C$ 对 $\Lambda$ 在离散拓扑下形式光滑时，
+这一条件成立。
+
+进一步，设有交换的环同态图
+\[
+\begin{tikzcd}
+ \Lambda'\arrow[r]&A'\arrow[r]&B'\\
+ \Lambda\arrow[u]\arrow[r]&A\arrow[u]\arrow[r]&B\arrow[u,"f"'] ,
+\end{tikzcd}
+\]
+$\mathfrak k'\subseteq B'$ 满足 $f(\mathfrak k)\subseteq\mathfrak k'$，
+且 $E'=B'/\mathfrak k'^2$ 为 $C'=B'/\mathfrak k'$ 的
+$\Lambda'$-平凡的 $B'$-扩张，核为 $\mathfrak k'/\mathfrak k'^2$。
+则有交换图（为便排版，仍分为两段）：
+\begin{equation}
+\begin{gathered}
+\begin{tikzcd}[column sep=small]
+0\arrow[r]&\Upsilon^{C'}_{B'/A'/\Lambda'}\arrow[r]&
+ \Upsilon_{C'/A'/\Lambda'}\arrow[r]&\mathfrak k'/\mathfrak k'^2\\
+0\arrow[r]&\Upsilon^C_{B/A/\Lambda}\arrow[r]\arrow[u]&
+ \Upsilon_{C/A/\Lambda}\arrow[r]\arrow[u]&\mathfrak k/\mathfrak k^2\arrow[u]
+\end{tikzcd}\\[-.2em]
+\begin{tikzcd}[column sep=small]
+\mathfrak k'/\mathfrak k'^2\arrow[r]&
+ \Omega^1_{B'/A'}\otimes_{B'} C'\arrow[r]&\Omega^1_{C'/A'}\arrow[r]&0\\
+\mathfrak k/\mathfrak k^2\arrow[r]\arrow[u]&
+ \Omega^1_{B/A}\otimes_B C\arrow[r]\arrow[u]&\Omega^1_{C/A}\arrow[r]\arrow[u]&0 .
+\end{tikzcd}
+\end{gathered}
+\tag{20.6.22.2}
+\end{equation}
+这由（20.6.21.3）及（20.5.11.3）得到。
+
+\egas{20.6.23}{推论}
+在（20.6.22）的假设下，若再假定 $B$ 是形式光滑的 $A$-代数，则有正合列
+\begin{equation}
+\begin{aligned}
+0\longrightarrow\Upsilon_{C/A/\Lambda}
+ &\xrightarrow{\chi_E}\mathfrak k/\mathfrak k^2
+ \xrightarrow{\delta_{C/B/A}}\Omega^1_{B/A}\otimes_B C\\
+ &\longrightarrow\Omega^1_{C/A}\longrightarrow0 .
+\end{aligned}
+\tag{20.6.23.1}
+\end{equation}
+这由（20.6.18，ii）得到。
+
+\egap{20.6.24}
+当（20.6.22）的假设成立时，也称其中的 $\chi_E$ 为
+\emph{$A$-代数 $B$ 相对于 $\Lambda$ 及理想 $\mathfrak k$ 的特征同态}；
+不致混淆时略去后两项说明，并有时将它记作 $\chi_B$ 或 $\chi_{B/A}$。
+
+\egas{20.6.25}{命题}
+设 $s:\Lambda\to A$、$u:A\to B$、$v:B\to C$ 为三个环同态，
+$L$ 为 $C$-模。则有正合列
+\begin{equation}
+\begin{aligned}
+&0\longrightarrow\Der_B(C,L)\xrightarrow{u^0}\Der_A(C,L)
+ \xrightarrow{v^0}\Der_A(B,L)\\
+&\xrightarrow{\partial}\Exalcom_{B/\Lambda}(C,L)\xrightarrow{u^1}
+ \Exalcom_{A/\Lambda}(C,L)\\
+&\xrightarrow{v^1}\Exalcom_{A/\Lambda}(B,L)\longrightarrow0 .
+\end{aligned}
+\tag{20.6.25.1}
+\end{equation}
+其中 $u^1,v^1$ 分别由（18.3.6.4）、（18.3.6.2）给出，
+$\partial$ 按（20.2.2）定义。
+
+因为（20.6.16.1）逐次分裂，应用 $\Hom_C(-,L)$ 后得到短正合的上链复形列
+\[
+\begin{aligned}
+0\longrightarrow\Hom_C(K_\bullet(C/B/\Lambda),L)
+ &\longrightarrow\Hom_C(K'_\bullet(C/A/\Lambda),L)\\
+ &\longrightarrow\Hom_C(K_\bullet^C(B/A/\Lambda),L)
+ \longrightarrow0 .
+\end{aligned}
+\]
+取上同调长正合列，并使用（20.6.15.4）、（20.6.6）及典范同构
+\[
+ \Hom_C(K_\bullet^C(B/A/\Lambda),L)
+ \simeq\Hom_B(K_\bullet(B/A/\Lambda),L),
+\]
+便得到（20.6.25.1）。映射的符号按（20.6.17）中已说明的识别调整；
+$u^1,v^1$ 与扩张类的换底及逆像同态相符，由（20.6.6.4）及
+$\partial$ 的定义核对。
+\cmt{J10-T02}{原证明末尾将 $u^1,v^1$ 共同引到（18.3.4.2），
+而本命题陈述已正确给出（18.3.6.4）与（18.3.6.2）。
+正文沿用陈述中的两个出处，并明示（20.6.16）所带的符号约定。}
+
+\egas{20.6.26}{备注}
+在本小节中，复形 $K_\bullet(C/B/A)$ 起初作为一种简化函子性质叙述的
+技术手段出现。实际上，把这些复形视为“模去同伦”的 $C$-模复形范畴
+中的对象，即以同伦的链映射类为态射，它们是比
+$(\Omega^1_{C/B},\Upsilon_{C/B/A})$ 这一对模更精细的不变量。
+
+当 $k$ 为素域且 $C$ 是形式光滑的 $k$-代数时，例如 $C$ 为 $k$ 的某个
+扩张上的有限型正则环（见IV，6.8.6），可以证明
+$K_\bullet(C/A/k)$ 能够只通过 $C,A$ 而不涉及 $k$ 来描述：
+将 $C$ 表成 $A$ 上某个多项式代数 $B$ 对理想 $\mathfrak a$ 的商，
+并考虑只有两项非零的复形
+\[
+ F_\bullet(C/A):
+ \quad\cdots\longrightarrow0\longrightarrow\mathfrak a/\mathfrak a^2
+ \longrightarrow\Omega^1_{B/A}\otimes_B C
+ \longrightarrow0\longrightarrow\cdots .
+\]
+由（20.6.23.1），它的同调确实与 $K_\bullet(C/A/k)$ 的同调相符。
+从同调代数的观点看，这类 $F_\bullet(C/A)$ 复形起着
+$\Spec(C)$ 在 $\Spec(A)$ 上的余法丛的作用；
+它们将在本书有关凝聚层对偶性和Riemann--Roch定理的章节中占据重要位置。
+\cmt{J10-N04}{这里保留原著的历史表述及其证明详略。
+“同调相同”与“同伦等价”不是一般情况下可互相替代的断言；
+原文在本条没有给出完整的同伦不变性证明，正文不将这项宣告补写成
+已经在这里证明的现代余切复形理论。}

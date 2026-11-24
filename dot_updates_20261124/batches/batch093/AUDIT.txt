@@ -1,0 +1,3 @@
+法文 EGA5.pdf 171页 SHA256 24cf8204184b58b18a46e5f63ecc36d6e791b3c8c96a09daac93de96ebd8e830；英稿112页 SHA256 23a20ef32fd16a1bd623c0c08ac080d04fc94f248de12133b713a19d6b0330d9，https://webusers.imj-prg.fr/~leila.schneps/grothendieckcircle/EGA/EGA5trans.pdf。
+法19 f(X_i)；法20 que si 是仅当，不是英稿反义 if；维数手写补，AQT与拉丁原样保留。法21的误删回指对应20旧4.5，不召回4.6。独立数学补证分图判据、像泛截降维、拟有限维数等同、非拟有限反例；一般可构造性不声称已证。
+核验：XeLaTeX 两遍，5页全部目检，终日志无缺字、未定义或Overfull；摘页逐页100dpi像素同、ZIP CRC、新目录解压 SHA 与存库前PDF／TeX字节同。

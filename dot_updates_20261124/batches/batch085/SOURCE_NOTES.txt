@@ -1,0 +1,9 @@
+主底本：用户提供的 EGA5.pdf，171页，物理146–147（页脚手写153–154）。
+SHA256 24cf8204184b58b18a46e5f63ecc36d6e791b3c8c96a09daac93de96ebd8e830
+对照：https://webusers.imj-prg.fr/~leila.schneps/grothendieckcircle/EGA/EGA5trans.pdf，112页，物理110–111。
+SHA256 23a20ef32fd16a1bd623c0c08ac080d04fc94f248de12133b713a19d6b0330d9
+法146开头是第84批的末段，随摘页保留但不算本批重译；范围由“Descendant à nouveau par terre”起。
+法146边上“Supp. k alg. clos, ou X géom. intègre”；b) 早先“soit vide”及有限函数列遭划改，依跨页最后稿。
+法147有编辑和校改痕迹；b) 的亚纯函数“正则”表示全分式层可逆，c) 不能只保留空间乘法。
+作者最后手写一句用线性系指相应的除子集合；英稿的编辑收尾不误归为作者。
+现代补证参引 https://stacks.math.columbia.edu/tag/0C4S 。4.1 对应第81批的可逆层与有限维参数空间描述。

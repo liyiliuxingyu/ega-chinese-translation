@@ -1,0 +1,148 @@
+[
+  {
+    "batch": 63,
+    "zip": "EGA第五卷_特征二与奇异术语_续译工程.zip",
+    "sha256": "13119ed6f9506b65238e1e11a6a2c899ff1a7c33a8ec5d0a1ef98b6321dfdb25",
+    "tex_original": "EGA第五卷_特征二与奇异术语_校订续译.tex",
+    "tex_merged": "continuations/v_suppIII_63.tex",
+    "internal_hashes": 10,
+    "original_handover": {
+      "batch": 63,
+      "source_page": 74,
+      "next_anchor": "IV 23.9.2 is false as such",
+      "french_page": 113,
+      "french_anchor": "Par contre, IV 23.9.2. est faux tel quel",
+      "merged": false,
+      "pdf_pages": 5
+    }
+  },
+  {
+    "batch": 64,
+    "zip": "EGA第五卷_切超曲面与勘误_续译工程.zip",
+    "sha256": "9386a9ccf9f690c8c3cbd1272cf3c9f9c8ce99303111cb61e479555f2e1fd0f1",
+    "tex_original": "EGA第五卷_切超曲面与勘误_校订续译.tex",
+    "tex_merged": "continuations/v_suppIII_64.tex",
+    "internal_hashes": 10,
+    "original_handover": {
+      "batch": 64,
+      "source_page": 74,
+      "next_anchor": "Let S be a prescheme, E a model locally free",
+      "french_page": 114,
+      "french_anchor": "15.1. Soient S un préschéma",
+      "merged": false,
+      "pdf_pages": 4
+    }
+  },
+  {
+    "batch": 65,
+    "zip": "EGA第五卷_151光滑型与雅可比判据_续译工程.zip",
+    "sha256": "505ccb964b7fa38b8bd2fb3a66c95daa022caa6c085cc0be582aef7721b09cb3",
+    "tex_original": "EGA第五卷_151光滑型与雅可比判据_校订续译.tex",
+    "tex_merged": "continuations/v_suppIII_65.tex",
+    "internal_hashes": 10,
+    "original_handover": {
+      "batch": 65,
+      "start_english_page": 74,
+      "end_english_page": 75,
+      "next_anchor": "15.2. Let X be a prescheme, J an ideal quasi-coherent over X",
+      "french_page": 115,
+      "french_anchor": "15.2. Soient X un préschéma, J un Idéal",
+      "pdf_pages": 4,
+      "merged": false
+    }
+  },
+  {
+    "batch": 66,
+    "zip": "EGA第五卷_152初等增广与几何奇点_续译工程.zip",
+    "sha256": "7a773e1f2593e0e073777323109bd3f14c8dbb6b2efc1a61d5edb095485a7922",
+    "tex_original": "EGA第五卷_152初等增广与几何奇点_校订续译.tex",
+    "tex_merged": "continuations/v_suppIII_66.tex",
+    "internal_hashes": 10,
+    "original_handover": {
+      "batch": 66,
+      "status": "translated_and_verified",
+      "section": "§15.2",
+      "english_physical_pages": [
+        75,
+        76
+      ],
+      "french_physical_pages": [
+        115,
+        160
+      ],
+      "french_second_page_visible_number": 116,
+      "next": {
+        "english_physical_page": 76,
+        "french_physical_page": 160,
+        "section": "§15.3",
+        "french_anchor": "« Généraliser » SUP prop.8 au cas de la multiplicité n."
+      },
+      "merged_into_master": false
+    }
+  },
+  {
+    "batch": 67,
+    "zip": "EGA第五卷_153至156_初等奇点局部刻画_续译工程.zip",
+    "sha256": "b1ca34519d60039d0dc1d34d504396e7ee63f76f3371c398bbc8ef880ef83769",
+    "tex_original": "EGA第五卷_153至156_初等奇点局部刻画.tex",
+    "tex_merged": "continuations/v_suppIII_67.tex",
+    "internal_hashes": 10,
+    "original_handover": {
+      "batch": 67,
+      "status": "translated_and_verified",
+      "section": "§§15.3–15.6",
+      "english_physical_pages": [
+        76,
+        77
+      ],
+      "last_english_page_scope": "first line only",
+      "french_physical_pages": [
+        160,
+        159
+      ],
+      "french_printed_pages": [
+        116,
+        117
+      ],
+      "next": {
+        "english_physical_page": 77,
+        "french_physical_page": 159,
+        "section": "§15.7",
+        "french_anchor": "Il y a lieu de dégager les variantes « géométriques » de 15.6."
+      },
+      "merged_into_master": false
+    }
+  },
+  {
+    "batch": 68,
+    "zip": "EGA第五卷_157_初等奇点几何变式_续译工程.zip",
+    "sha256": "56b2cd5c99bcba70138e6d54fb87a420c5f8328e391fe7e5dcc18ede03635ee4",
+    "tex_original": "EGA第五卷_157_初等奇点几何变式.tex",
+    "tex_merged": "continuations/v_suppIII_68.tex",
+    "internal_hashes": 10,
+    "original_handover": {
+      "batch": 68,
+      "status": "translated_and_verified",
+      "section": "§15.7",
+      "english_physical_pages": [
+        77
+      ],
+      "english_start": "15.7. This is the place to state the “geometric” variants of 15.6",
+      "french_physical_pages": [
+        159,
+        158
+      ],
+      "french_printed_pages": [
+        117,
+        118
+      ],
+      "next": {
+        "english_physical_page": 78,
+        "french_physical_page": 161,
+        "section": "17.16",
+        "french_anchor": "17.16. Formes quadratiques lisses."
+      },
+      "merged_into_master": false
+    }
+  }
+]

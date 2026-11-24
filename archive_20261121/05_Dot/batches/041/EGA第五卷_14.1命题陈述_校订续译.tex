@@ -1,0 +1,25 @@
+\documentclass[openany,fontset=fandol]{ctexbook}
+\usepackage{amsmath,amssymb}
+\usepackage[unicode,hidelinks]{hyperref}
+\newcommand{\note}[1]{\footnote{译注：#1}}
+\begin{document}
+\title{代数几何基础第五卷预备笔记\\命题14.1：陈述与残缺条款}
+\author{据用户上传英译编辑稿译出}
+\date{2026年11月18日}
+\maketitle
+\chapter*{范围与校订状态}
+本批译出底本第56页命题14.1标题、前提及(a)、(b)两项的全部可辨文字。下一处为同页“In the case a) we have already seen (I hope)”，即原稿的证明段落。
+
+本命题(b)有两组问号和省略号，条件与结论不能完整确定。正文逐项保留可辨片段和缺文位置，不补造有限性或拟有限性的判准。维数记号只作有明确上下文支持的整理；一般化前提的充分性与(a)的适用范围仍待核。本批不是一个已经补全或独立验证的命题版本。全部旧待核保持，未合并主稿。
+\chapter*{§14 锥投影（续）}
+\noindent\textbf{命题14.1。}
+假设$X$不可约；更一般地，假设对于$X$的每个不可约分支$X_i$，$X_i$在点$f(x_i)$处的纤维具有一个与$i$无关的维数$d$，其中$x_i$是$X_i$的一般点。例如，当$f:X\to P$拟有限时，这一条件成立，且$d=0$。则：\note{底本前提只写“has a dimension (independent of $i$)”，没有写出该维数的字母，而同句例子和(b)项均使用$d$；正文将这个共同维数明确记为$d$。这里是态射$X_i\to P$在其像的一般点$f(x_i)$处的纤维维数，不是自动假定所有点上纤维维数都相同。原文声称的“更一般地”是否足以推出下述全部结论，尚未独立验证；不能擅加等维、固有或其他假设使其成为另一个命题。}
+
+\noindent a) 若$\dim f(X)>m$，则
+\[
+p_c:X(C_\eta)\longrightarrow Q(C_\eta)
+\]
+的纤维维数都等于$\dim X-m$。\note{本项照译“the dimension of the fibers ... are all equal”。底本在本项没有额外写“非空纤维”，也未说明对可约且分支维数不同的情形如何应用共同的一般纤维维数条件。这些适用范围不能仅凭此陈述判定为已核实。本批保留$X(C_\eta)$的原记号，它与前批的$\widetilde X(C_\eta)$同指扩展锥投影的关联空间，不是原来的$X$。}
+
+\noindent b) 若$\dim X\leq m$，并且$X_i$在$P$上的非空纤维［原文缺词：???］维数为$d$，则$p_c$的纤维全都具有维数$d$［原文：???］，于是$p_c$是有限的，分别地，是拟有限的……$f:X\to P$是有限的。\note{底本完整可辨条款为：“If $\dim x\leq m$ and if the non-empty fibers of $X^i$ over $P$ are ??? of dim $d$ then the fibers of $p_c$ are all of dimension $d$ ??? so $p_c$ is finite resp. quasi-finite\ldots\ $f:X\to P$ is finite.” 正文仅将未定义的小写$x$整理为$X$、分支上标$X^i$整理为前提所用的$X_i$，保留两组问号及省略号。上文引导段使用的是$\dim f(X)\leq m$，故这里的$\dim x$也可能涉及漏去$f(\ )$，但本条证据不足，不据猜测改写为像维数。末尾有限性与拟有限性之间的条件对应已经残缺，不能把它读成在任意$d$下单由“纤维维数为$d$”就推出有限或拟有限，也不能恢复一个原文未明确给出的“当且仅当”。}
+\end{document}

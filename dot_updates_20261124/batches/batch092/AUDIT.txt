@@ -1,0 +1,4 @@
+底本：法文 EGA5.pdf 171物理页，SHA256 24cf8204184b58b18a46e5f63ecc36d6e791b3c8c96a09daac93de96ebd8e830；英稿112物理页 SHA256 23a20ef32fd16a1bd623c0c08ac080d04fc94f248de12133b713a19d6b0330d9。英稿 https://webusers.imj-prg.fr/~leila.schneps/grothendieckcircle/EGA/EGA5trans.pdf
+对读：17实有4.1；变指标是ξ，手改有限表示；原称后两节与既证来源冲突。18保留五项，统一F/G，参数P对偶；(v)手改非分歧，只放宽好点范围。19两几何性质调序、法稿ou、局部范围(i)至(iv)。现代Jacobson补证独立。
+下一处19下至20：法稿确有 qui n’est valable tel quel que si f est quasi-fini，与英稿方向相反，仍待核一般版本及AQT、已删4.5–4.6。
+核验：两遍 XeLaTeX，最终日志未见 overfull、缺字或未处理警告；4页逐一目检。构建包时核底本SHA，摘页100dpi像素与底本相同，ZIP CRC和新目录解压SHA，PDF与TeX同源。无数学Lean核验，不作全文已完成声明。

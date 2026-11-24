@@ -1,0 +1,429 @@
+\chapter{核查清单}
+\small
+\setlength{\tabcolsep}{2.4pt}
+\begin{longtable}{@{}p{.09\textwidth}p{.055\textwidth}p{.18\textwidth}p{.10\textwidth}p{.10\textwidth}p{.39\textwidth}@{}}
+\toprule
+编号 & 类别 & 原文条目 & 印刷页 & PDF 页 & 核心问题\\\midrule
+\endfirsthead
+\toprule 编号 & 类别 & 原文条目 & 印刷页 & PDF 页 & 核心问题\\\midrule\endhead
+I--01&A&0，4.1.5&38&37&外幂预层到相伴层不必单射\\
+I--02&H&0，6.7.8&60&59&局部环之间的同态未必是局部同态\\
+I--03&A&0，7.2.4&63&62&可容许拓扑完备不推出任意较细理想进制完备\\
+I--04&B&I，5.3.9&133&132&还须说明对角像在某开邻域中闭\\
+I--05&A&I，7.3.8&163&162&泛点处相等不推出有理函数层拉回相等；作者已改\\
+I--06&A&I，7.4.4&163&162&无挠本身不保证截面由泛点决定\\
+I--07&C&I，10.14.2&210&209&“凝聚模”应为“凝聚理想”；作者已改\\
+I--08&B&I，10.14.4&210&209&定义闭子概形的核理想应在像外取单位理想\\\midrule
+II--01&A&II，1.7.2&15&12&对称代数满射断言忽略零次部分\\
+II--02&A&II，2.7.3(ii)&39&36&缺少一次生成等条件；次数二的反例\\
+II--03&A&II，3.4.3(ii)&59&56&非拟紧底空间上缺少统一消失界\\
+II--04&B&II，5.6.1，A 步&106&103&换成约化分支会丢失开集上的幂零结构\\
+II--05&B&II，7.1.7&140&137&须先保证所选 $x_1$ 在辅助环中非单位\\
+II--06&H&II，7.3.9(i)&145&142&应保留前一定理的拟紧性假设\\
+II--07&A&II，8.1.4(i)&153--154&150--151&正次数部分全为零时 $\Proj$ 为空\\
+II--08&C&II，5.4.2(iv) 等&100、111、115&97、108、112&三个乘积态射的源靶排印错位\\
+\bottomrule
+\end{longtable}
+\normalsize
+
+I--05、I--07 的作者勘误位于第二卷印刷第 221--222 页（PDF 第 218--219 页）。标注版在这些勘误旁另加交叉提示，\textbf{不把更正文字本身算作第二卷的新错误}。I--02 所涉及的局部赋环空间态射约定，亦须与第二卷印刷第 218--219 页的增补合读。
+
+\chapter{第一卷：反例、缺步与勘误}
+\section{I--01：外幂预层的单射性断言不成立}
+\oldauditsrc{第 0 章（4.1.5），印刷第 38 页，PDF 第 37 页，末段}
+\kind{A}{反例即使在可逆层上也存在。}
+\lead{原文断言}对 $\OO_X$-模 $\FF$，预层
+\[
+ U\longmapsto\bigwedge_{\Gamma(U,\OO_X)}^p\Gamma(U,\FF)
+\]
+到其相伴层 $\bigwedge^p_{\OO_X}\FF$ 的典范映射为单射。
+\begin{analysisproof}
+取任意域 $k$，令 $X=\mathbf P^1_k$，$\FF=\OO_X(1)$，$p=2$。有
+\[
+\Gamma(X,\OO_X)=k,\qquad
+\Gamma(X,\OO_X(1))=kX_0\oplus kX_1.
+\]
+因此
+\[
+\bigwedge_k^2\Gamma(X,\OO_X(1))=k(X_0\wedge X_1)\ne0.
+\]
+但 $\OO_X(1)$ 局部自由且秩为 1，所以
+\[
+\bigwedge_{\OO_X}^2\OO_X(1)=0.
+\]
+在开集 $X$ 上，原文声称单射的映射恰为 $k\to0$，不可能单射。
+\end{analysisproof}
+\lead{失败原因}“全局截面对全局函数线性无关”不同于“在局部函数环上始终线性无关”。例如在 $X_0\ne0$ 的开集上，$X_1=(X_1/X_0)X_0$，故 $X_0\wedge X_1$ 的限制为零。
+\lead{修订建议}删除这里无条件的“单射”断言。外幂作为相伴层的定义，以及
+\[
+(\textstyle\bigwedge^p\FF)_x\simeq\bigwedge^p_{\OO_{X,x}}\FF_x
+\]
+的茎公式仍可保留。本反例不否定仿射预概形上拟凝聚层对应模的外幂计算。
+
+\section{I--02：忠实平坦性需要局部同态条件}
+\oldauditsrc{第 0 章（6.7.8），印刷第 60 页，PDF 第 59 页}
+\kind{H}{对一般赋环空间态射，原句条件不够；对局部赋环空间态射，应采用增补约定。}
+\lead{原文断言}当 $X,Y$ 的茎都是局部环时，态射忠实平坦等价于其底空间满射且平坦。此前（0，5.5.1）只定义了“茎为局部环”的对象，并未在该定义中规定所有茎同态都为局部同态。
+\begin{analysisproof}
+令 $Y$、$X$ 都是单点空间，结构环分别为
+\[
+A=\mathbf Z_{(p)},\qquad B=\mathbf Q,
+\]
+由包含 $A\hookrightarrow B$ 定义赋环空间态射 $f:X\to Y$。底空间映射满射，且 $B$ 是 $A$ 的局部化，故平坦。然而
+\[
+0\ne A/pA,\qquad (A/pA)\otimes_A B=B/pB=0.
+\]
+所以 $B$ 不是忠实平坦的 $A$-模。问题正是 $A\to B$ 不是局部同态：$pA$ 不映入 $B$ 的极大理想 $(0)$。
+\end{analysisproof}
+\lead{正确表述}若各茎同态
+\[
+\OO_{Y,f(x)}\longrightarrow\OO_{X,x}
+\]
+都是局部同态，则局部环的平坦局部同态是忠实平坦的；再结合底空间满射，得到所需结论。
+\lead{与作者增补的关系}第二卷书末增补（I，1.8.2），印刷第 218--219 页（PDF 第 215--216 页），明确规定以后“局部环赋环空间的态射”指茎同态为局部同态的态射。\textbf{按此约定合读，不能把上面的单点反例当作对修订后表述的反例。}本标注提醒独立阅读第一卷该句时不可漏掉这一条件；概形态射的通常结论不受影响。
+
+\section{I--03：可容许环未必对任意小理想进制完备}
+\oldauditsrc{第 0 章（7.2.4），印刷第 63 页，PDF 第 62 页}
+\kind{A}{原文所列的一般假设不足。下面给出一个满足原文定义的非诺特反例。}
+\lead{原文断言}若 $A$ 为可容许环，理想 $J$ 包含于 $A$ 的某个定义理想，则 $A$ 对 $J$-预进制拓扑分离且完备。
+\subsection*{反例的环与其原有拓扑}
+令
+\[
+B=k[x_1,x_2,x_3,\ldots]=\bigoplus_{d\ge0}B_d
+\]
+按总次数分次，其中每个 $B_d$ 的元素都是\textbf{只有有限多个单项式}的齐次多项式。定义
+\[
+A=\prod_{d\ge0}B_d,
+\qquad F^rA=\{(a_d):a_d=0\text{ 对一切 }d<r\}.
+\]
+乘法采用按次数的卷积：第 $d$ 次分量为 $\sum_{i+j=d}a_i b_j$。此和有限，所以定义良好。以 $F^rA$ 为零邻域基，则
+\[
+A\simeq\varprojlim_r B/(x_1,x_2,\ldots)^r
+\]
+是分离、完备、线性拓扑化的环。理想 $\mathfrak m=F^1A$ 是开理想，且
+\[
+\mathfrak m^r\subset F^rA.
+\]
+因此 $\mathfrak m$ 的幂趋于零，$\mathfrak m$ 是原文（7.1.2）意义的定义理想，$A$ 是\textbf{可容许环}。
+
+现在令
+\[
+J=(x_1,x_2,x_3,\ldots)A\subset\mathfrak m.
+\]
+这里 $J$ 是\textbf{代数意义的理想}：元素是有限和 $\sum_{j=1}^{r}x_{i_j}a_j$，没有取拓扑闭包。它不等于全部正次数级数构成的 $\mathfrak m$。
+\subsection*{一个没有进制极限的柯西列}
+设
+\[
+s_N=\sum_{i=1}^{N}x_i^{\,i}.
+\]
+当 $M>N$ 时，
+\[
+s_M-s_N=\sum_{i=N+1}^{M}x_i^{\,i}\in J^{N+1}.
+\]
+故 $(s_N)$ 是 $J$-进制柯西列。它在原有次数拓扑中收敛到
+\[
+s=\sum_{i\ge1}x_i^{\,i}\in A.
+\]
+但 $s\notin J$。否则有有限表达式
+\[
+s=\sum_{j=1}^{r}x_{i_j}a_j.
+\]
+将有限多个变量 $x_{i_1},\ldots,x_{i_r}$ 置零。这一运算按齐次分量定义，给出 $A$ 的环同态。右边变成零，左边仍保留所有未被删去的 $x_i^{\,i}$，非零，矛盾。
+
+若 $(s_N)$ 在 $J$-进制拓扑中有极限 $a\in A$，因为 $J^r\subset F^rA$，它也在原有次数拓扑中收敛到 $a$。由分离性 $a=s$。另一方面，模 $J$ 收敛要求 $a-s_N\in J$ 对充分大的 $N$ 成立，而 $s_N\in J$，遂有 $s=a\in J$，矛盾。因此 $A$ \textbf{不对 $J$-进制拓扑完备}。
+
+注意其分离性仍成立，因为 $\bigcap_rJ^r\subset\bigcap_rF^rA=0$；反例否定的是命题中的完备性部分。
+\subsection*{证明中断在何处，以及如何安全修补}
+原证明使用由原有完备性得到的 $v:\widehat A_J\to A$，然后把 $u_n\circ v:\widehat A_J\to A/J^n$ 直接认作到离散商的连续延拓。这一步未证明连续性；原拓扑下 $J^n$ 不一定闭或开，因而不能如此认定。
+
+一个充分的附加条件是：\textbf{每个 $J^r$ 对 $A$ 原有拓扑闭}。证明如下：任意 $J$-进制柯西列在原拓扑中柯西，因此有原拓扑极限 $a$；固定 $r$，其充分靠后的项都在某个陪集 $a_N+J^r$ 中，闭性推出 $a\in a_N+J^r$。对每个 $r$ 都如此，正是 $J$-进制收敛。此处给出的是可靠的充分条件，不声称它是最弱条件。
+
+\section{I--04：对角态射证明缺少局部闭性一步}
+\oldauditsrc{第 I 章（5.3.9），印刷第 133 页，PDF 第 132 页；所引（4.2.2）在 PDF 第 121 页}
+\kind{B}{结论正确；这里补足原证明未写出的条件。}
+\lead{原证明所做的事}由 $p_1\circ\Delta=\mathrm{id}_X$ 得到对角映射是到底空间像的同胚，并证明相应茎同态满射。随后援引（4.2.2）。但该判据还要求像\textbf{局部闭}，前述两个事实并没有单独给出这一点。
+\begin{analysisproof}
+在 $X$ 中取仿射开覆盖 $U_i=\Spec A_i$，并使每个 $U_i$ 映入 $S$ 的某个仿射开集 $V_i=\Spec R_i$。令
+\[
+W=\bigcup_i(U_i\times_{V_i}U_i)\subset X\times_S X.
+\]
+这是包含 $\Delta(X)$ 的开子预概形。在其中每个仿射开片上，对角态射来自满同态
+\[
+A_i\otimes_{R_i}A_i\longrightarrow A_i,
+\qquad a\otimes b\longmapsto ab.
+\]
+故 $\Delta:X\to W$ 是闭浸入，进而 $\Delta:X\to X\times_SX$ 为浸入。特别地，对角像在开邻域 $W$ 中闭，这补足了（4.2.2）的缺失前提。
+\end{analysisproof}
+上述补证也与 Stacks Project 的 Section 26.21，Lemmas 26.21.1--26.21.2（Tag 01KH）的证明一致。\textbf{本条绝不把“对角态射为浸入”标成错误命题。}
+
+\section{I--05：有理函数层的拉回等式错误，作者已更正}
+\oldauditsrc{第 I 章（7.3.8），印刷第 163 页，PDF 第 162 页}
+\kind{A}{第二卷《勘误与增补》明确要求替换此错误段落。}
+\lead{原文断言}在所列泛点映射条件下，$f^*\RR(Y)=\RR(X)$。
+\begin{analysisproof}
+令 $Y=\Spec k$，$X=\Spec k[t]$，$f$ 为结构态射。两者均整，均只有一个不可约分支，泛点映至泛点，完全满足原文的条件。但
+\[
+f^*\RR(Y)=f^*\widetilde{k}=\OO_X,
+\qquad \RR(X)=\widetilde{k(t)}.
+\]
+在闭点 $a=(t)$，两边的茎分别为
+\[
+k[t]_{(t)}\quad\text{与}\quad k(t),
+\]
+并不相等：$1/t$ 只属于后者。
+\end{analysisproof}
+\lead{失败原因}泛点处的茎同构，不能据此推出两个拟凝聚层整体同构。$\OO_X$ 就不是一个以 $k(t)$ 为值的常值层。
+\lead{作者正式更正}第二卷印刷第 221--222 页（PDF 第 218--219 页）明确说现有文字错误，改成：若 $X,Y$ 整且 $f$ 占优，则存在典范同态
+\[
+\tau:f^*\RR(Y)\longrightarrow\RR(X),
+\]
+并且 $\tau$ 在 $X$ 泛点处为同构。\textbf{不能把这个泛点处的同构再次扩张成全层同构。}
+
+\section{I--06：无挠层的非零截面张量积可以为零}
+\oldauditsrc{第 I 章（7.4.4），印刷第 163 页，PDF 第 162 页}
+\kind{A}{原文未假设拟凝聚；在其一般性下存在反例。}
+\lead{原文断言}若 $X$ 整，$\mathcal L,\mathcal L'$ 为两个无挠 $\OO_X$-模，$s,s'$ 为全局截面，则 $s\otimes s'=0$ 当且仅当一个截面为零。
+\begin{analysisproof}
+取 $X=\Spec k[t]$，两个不同闭点 $a=(t)$、$b=(t-1)$，以及分式域 $K=k(t)$。定义层
+\[
+\FF_a(U)=\begin{cases}K,&a\in U,\\0,&a\notin U,\end{cases}
+\qquad
+\FF_b(U)=\begin{cases}K,&b\in U,\\0,&b\notin U.\end{cases}
+\]
+限制映射在两边非零时是恒等，否则为零。对含 $a$ 的非空开集 $U$，通过 $\OO_X(U)\hookrightarrow K$ 定义 $\OO_X$ 的作用；$\FF_b$ 同理。这些是闭点处的摩天楼层，但纤维使用的是\textbf{分式域 $K$，不是剩余域 $k$}。
+
+$\FF_a$ 在 $a$ 的茎为 $K$，在其他点的茎为零。因此其典范同态
+\[
+\FF_a\longrightarrow\FF_a\otimes_{\OO_X}\RR(X)
+\]
+在所有茎上都是同构：在 $a$ 处是 $K\to K\otimes_{\OO_{X,a}}K$，其他点两边为零。故 $\FF_a$ 按原文（7.4.1）的定义无挠，$\FF_b$ 也无挠。
+
+然而两层支持不交，在任何点至少一个茎为零，因而
+\[
+\FF_a\otimes_{\OO_X}\FF_b=0.
+\]
+两个全局截面 $1\in\Gamma(X,\FF_a)=K$ 和 $1\in\Gamma(X,\FF_b)=K$ 都非零，其张量积却为零。
+\end{analysisproof}
+\lead{原证明的问题}它用“泛点处为零”推出“截面为零”。这需要截面嵌入泛点纤维的性质；无挠本身对任意模层不保证此性质。上面两层的泛点茎都为零，正好显示这一点。
+\lead{一种正确修订}加入\textbf{拟凝聚}假设。此时无挠层嵌入其泛点向量空间所给的层，非零全局截面在泛点仍非零；在域上两个非零向量的简单张量非零，故所需结论成立。一般秩的情形应说“泛点向量空间”，而不是把两者均当成该域自身的子模。本条不否定可逆层的相应性质。
+
+\section{I--07：定义闭形式子预概形必须用理想}
+\oldauditsrc{第 I 章（10.14.2），印刷第 210 页，PDF 第 209 页}
+\kind{C}{作者已有明确勘误的定义用词错误。}
+\lead{原文写法}以任意“凝聚 $\OO_{\mathfrak X}$-模”$\JJ$ 定义 $\OO_{\mathfrak X}/\JJ$，并宣称这种模与闭形式子预概形一一对应。
+\lead{为何不通}任意凝聚模不一定是 $\OO_{\mathfrak X}$ 的子模，更不一定是理想；例如 $\OO_{\mathfrak X}^{\oplus2}$。因此上述商甚至没有按该写法定义为商环层，不能用它定义闭子预概形。
+\lead{作者更正}第二卷印刷第 222 页（PDF 第 219 页）要求把两处“凝聚模”分别改为“$\OO_{\mathfrak X}$ 的凝聚理想”及“$\OO_{\mathfrak X}$ 的凝聚理想们”。本标注执行的是该现成勘误的提醒，不把它包装成新的深层数学反例。
+
+\section{I--08：核理想在像外不能延拓为零}
+\oldauditsrc{第 I 章（10.14.4）的证明，印刷第 210 页，PDF 第 209 页}
+\kind{B}{引理的局部判据成立，但所写的理想层拼接步骤错误。}
+\lead{原文的错误步骤}设 $U_\alpha$ 是目标中覆盖像的仿射开集，$\mathfrak a_\alpha$ 是截面同态之核。原文说把该理想层在 $\bigcup U_\alpha$ 外取零，并把核理想层的支持认作 $U_\alpha\cap f(\mathfrak Y)$。
+\begin{analysisproof}
+只须在普通仿射概形、亦即取离散拓扑的形式概形中测试。令
+\[
+\mathfrak X=\Spf(k\times k)=\Spf k\amalg\Spf k,
+\]
+$\mathfrak Y=\Spf k$ 为第一分支，$f$ 为其闭浸入，$U$ 取第一分支。$U$ 上截面同态是 $k\to k$ 的恒等，其核为零。若在第二分支也取零，所得全局理想为 $0$，商环仍是 $k\times k$；它定义的是全部 $\mathfrak X$，不是 $\mathfrak Y$。
+
+真正需要的核理想是 $0\times k\subset k\times k$。它在第一分支为零，在第二分支为单位理想；其商环才是 $k$。
+\end{analysisproof}
+\lead{修补}设 $Z=f(\mathfrak Y)$，在开集 $\mathfrak X\setminus Z$ 上令 $\JJ=\OO_{\mathfrak X}$。在其与 $U_\alpha$ 的交上，原像为空，相应核正是单位理想，因此能够与各 $\mathfrak a_\alpha$ 所给的理想层拼接。对应于 $Z$ 的是\textbf{商层 $\OO_{\mathfrak X}/\JJ$ 的支持}，不是核理想层自身的支持。这样局部闭浸入判据才得到正确的全局理想层。
+
+\chapter{第二卷：反例、缺步与文字错误}
+\section{II--01：对称代数的满射断言漏掉零次部分}
+\oldauditsrc{（1.7.2），印刷第 15 页，PDF 第 12 页}
+\kind{A}{作为整个含幺代数的满射，该断言不成立。}
+\lead{原文断言}对任意 $\varphi:A\to B$ 和 $B$-模 $F$，典范同态
+\[
+\operatorname{Sym}_A(F_{[\varphi]})\longrightarrow(\operatorname{Sym}_BF)_{[\varphi]}
+\]
+是满射。
+\begin{analysisproof}
+令 $A=k$，$B=k[u]$，$F=0$。上述同态就是
+\[
+\operatorname{Sym}_k(0)=k\longrightarrow\operatorname{Sym}_{k[u]}(0)=k[u],
+\]
+显然不是满射。即便 $F\ne0$，零次部分仍是 $A\to B$，不应无条件宣称其满射。
+\end{analysisproof}
+\lead{修订建议}保留典范同态的存在与函子性，删除整个代数无条件满射的说法。可靠的满射表述是
+\[
+B\otimes_A\operatorname{Sym}_A(F_{[\varphi]})\twoheadrightarrow\operatorname{Sym}_BF.
+\]
+也可在原句中补上 $A\to B$ 满射的假设。在正次数部分，系数 $b$ 可吸收到第一个 $F$ 因子，因而该处没有同样的零次障碍。
+\lead{不受影响的结论}本段随后对一个 $A$-模 $E$ 所写的
+\[
+\operatorname{Sym}_B(E\otimes_AB)\simeq\operatorname{Sym}_A(E)\otimes_AB
+\]
+是另一条正确的标量扩张公式，不应一起删除。
+
+\section{II--02：相伴层为零不必推出高次数全为零}
+\oldauditsrc{（2.7.3）（ii），印刷第 39 页，PDF 第 36 页}
+\kind{A}{一般分次下，零次局部化会漏掉整个非零次数同余类。}
+\lead{原文假设与结论}$S_+$ 是有限型理想，分次 $S$-模 $M$ 满足（TF），即某个高次截断是有限型模。原文断言 $\widetilde M=0$ 等价于（TN），即 $M_n=0$ 对所有充分大的 $n$ 成立。
+\begin{analysisproof}
+取
+\[
+S=k[T],\qquad\deg T=2,\qquad M=S(1),\quad M_n=S_{n+1}.
+\]
+$S_+=(T)$ 为有限型，$M$ 是移位的秩一自由分次模；其非负次数截断也由 $T$（视为 $M_1$ 的元素）生成，所以满足（TF）。
+
+$\Proj S=D_+(T)\simeq\Spec k$。在 $M[T^{-1}]$ 中，所有非零齐次分量的次数都是奇数，因此
+\[
+M_{(T)}=(M[T^{-1}])_0=0,
+\qquad\widetilde M=0.
+\]
+另一方面，对任意 $r\ge1$，
+\[
+M_{2r-1}=S_{2r}=kT^r\ne0,
+\]
+故（TN）不成立。
+\end{analysisproof}
+\lead{错误推理}原证明由 $M_{(f)}=0$ 推出有限个齐次生成元均被 $f$ 的某个幂消去。$M_{(f)}$ 只取局部化后的\textbf{零次部分}，并不是整个局部化 $M_f$；当 $\deg f>1$ 时，不能如此推断。
+\lead{修补}一种充分修订是补上 $S$ 由 $S_1$ 作为 $S_0$-代数生成的假设，同时保留相应有限性。此时在一次元素的局部化中可以将任意齐次元移到零次，以上障碍消失。也可改用对各移位相伴层的条件，但那是不同的陈述。
+
+\section{II--03：局部的消失界不自动成为全局消失界}
+\oldauditsrc{（3.4.2）的定义与（3.4.3）（ii），印刷第 59 页，PDF 第 56 页}
+\kind{A}{这里确实有一次生成假设；问题是底预概形未假设拟紧。}
+\lead{原文陈述}对任意 $Y$，$\SSS$ 由有限型 $\SSS_1$ 生成。若 $\MM$ 满足（TF），则其相伴层为零等价于（TN）。同页（3.4.2）把（TN）定义为存在\textbf{一个整数} $n_0$，使 $\MM_n=0$ 对所有 $n\ge n_0$ 成立。
+\begin{analysisproof}
+取
+\[
+Y=\coprod_{r\ge1}Y_r,\qquad Y_r=\Spec k,\qquad
+\SSS=\OO_Y[T],\quad\deg T=1.
+\]
+在第 $r$ 个开闭分支上定义
+\[
+\MM|_{Y_r}=k[T]/(T^r).
+\]
+由于分支不交，这些模拼成一个拟凝聚分次 $\SSS$-模。它由截面 $1$ 生成，即 $\SSS\twoheadrightarrow\MM$，所以满足（TF）。$\SSS_1$ 还是秩一自由 $\OO_Y$-模，满足原文的有限型条件。
+
+$\Proj_Y\SSS\simeq Y$。在每个分支上把 $T$ 变成单位以后，$k[T]/(T^r)$ 都变为零，所以 $\widetilde{\MM}=0$。但对每个 $n\ge0$，只要取 $r>n$，便有
+\[
+\MM_n|_{Y_r}=kT^n\ne0.
+\]
+所以不存在统一的 $n_0$，全局（TN）不成立。
+\end{analysisproof}
+\lead{失败原因}原证明说问题“在 $Y$ 上是局部的”。逐点／逐开集存在消失界确实是局部信息；\textbf{存在一个覆盖整个 $Y$ 的统一界并非局部性质}。
+\lead{修补}补上 $Y$ 拟紧，取有限仿射开覆盖并取各局部界的最大值；或者把结论改成“局部满足（TN）”。这里的反例与 II--02 不同：\textbf{本例已按次数 1 生成}，不能用同一个“次数 2”问题笼统解释两处。
+
+\section{II--04：Chow 引理的约化分支归约丢失结构}
+\oldauditsrc{（5.6.1）证明的 A 步，印刷第 106 页，PDF 第 103 页}
+\kind{B}{反例针对该归约步骤，不否定 Chow 引理本身。}
+\lead{原步骤}对不可约分支取“约化闭子预概形”，分别构造后再作不交并，并声称这样仍满足某个开集上与原 $X$ 同构的条件（ii）。
+\begin{analysisproof}
+令 $S=\Spec k$，
+\[
+X=\Spec\bigl(k[x,y,\epsilon]/(xy,\epsilon^2)\bigr).
+\]
+它是有限型仿射 $S$-概形，有两个不可约分支。记 $R=k[x,y]/(xy)$，则其环为
+\[
+R[\epsilon]/(\epsilon^2)=R\oplus\epsilon R.
+\]
+在每个点的局部环中，$\epsilon$ 都非零且平方为零。因此\textbf{每个非空开子预概形都不是约化的}。
+
+把两个分支改为约化结构后，以之为底构造的约化 $X_i'$ 的不交并仍约化。它到 $X$ 的态射因而经 $X_{\red}$ 分解，不可能在任何非空开集上与 $X$ 同构。原步骤不能据此得到（ii）。
+\end{analysisproof}
+\lead{为什么不是定理反例}上述 $X$ 本身仿射，取 $X'=X$、$f=\mathrm{id}_X$ 即满足所需性质。失败的是证明 A 步中“用约化分支替代仍保留开集结构”的说法。
+\lead{保留结构的修补办法}在诺特情形，令
+\[
+U_i=X\setminus\bigcup_{j\ne i}|X_j|.
+\]
+应取带有\textbf{原有结构}的 $U_i$ 在 $X$ 中的概形论闭包，而不是一律取约化分支。这些闭包的底空间为相应不可约分支，并在 $U_i$ 上仍与 $X$ 一致，故可据此进行保留幂零结构的归约。
+
+以上明确给出的是诺特情形的修补；原文另一组非诺特假设（b）下，仍须使用有相应存在性保障的保结构归约或另一个完整证明。本报告不把这句修补建议冒充两种情形全部细节的替代证明。
+
+\section{II--05：辅助环中的主理想不一定是真理想}
+\oldauditsrc{（7.1.7），印刷第 140 页，PDF 第 137 页}
+\kind{B}{生成元的选择需要增加一步。}
+\lead{原步骤}取局部环 $A$ 的极大理想的非零生成元 $x_1,\ldots,x_n$，令
+\[
+B=A[x_2/x_1,\ldots,x_n/x_1],
+\]
+然后选取包含 $x_1B$ 的极小素理想。但原文没有先保证 $x_1B\ne B$。
+\begin{analysisproof}
+取 $A=k[[t]]$，极大理想 $\mathfrak m=(t)$，以 $x_1=t^2$、$x_2=t$ 为一组非零生成元。原文没有要求该组生成元极小，此组合法。此时
+\[
+B=A[t/t^2]=A[1/t]=k((t)),
+\]
+所以 $x_1=t^2$ 在 $B$ 中为单位，$x_1B=B$，根本不存在所需的素理想。
+\end{analysisproof}
+\lead{补充选择}先用本节已有（7.1.2）取一个支配 $A$、分式域相同的赋值环 $V$。在有限多个生成元中，选择赋值\textbf{最小}的那个作 $x_1$。于是所有 $x_i/x_1\in V$，从而 $B\subset V$；同时 $x_1$ 属于 $V$ 的极大理想，不可能在 $B$ 中可逆。因此 $x_1B$ 为真理想，随后取极小素理想、应用主理想定理和 Krull--Akizuki 的步骤才有根据。
+
+此修补没有预先使用待证的\textbf{离散}赋值环存在性；先用的是（7.1.2）中一般赋值环的存在性。因此不存在循环论证。
+
+\section{II--06：赋值判据的备注必须继承拟紧性}
+\oldauditsrc{（7.3.9）（i），印刷第 145 页，PDF 第 142 页；对照（7.3.8）}
+\kind{H}{按前一定理的拟紧假设合读可成立；不能脱离该假设单独使用。}
+\lead{需要说明的条件}（7.3.8）对一般底预概形的版本明确要求态射拟紧且分离。紧接着（7.3.9）（i）只重新写出分离，并把测试环缩小到完备且剩余域代数闭的赋值环。独立引用此备注时仍必须保留拟紧性。
+\begin{analysisproof}
+取 $k=\mathbf Q$，
+\[
+f:X=\coprod_{n\ge1}\Spec k\longrightarrow\Spec k.
+\]
+该态射分离而不拟紧。对任意 $k$-赋值环 $V$ 及其分式域 $K$，一个 $k$-态射 $\Spec K\to X$ 选择某个分支，且唯一延拓为通过同一分支的 $\Spec V\to X$。确实，$\Spec V$ 连通，其像不可能同时落在两个不交开闭分支内。故连使用\textbf{所有}赋值环时，提升存在且唯一。
+
+但是对 $\mathbf A^1_k\to\Spec k$ 作基变换，得到
+\[
+\coprod_{n\ge1}\mathbf A^1_k\longrightarrow\mathbf A^1_k.
+\]
+在第 $n$ 个分支取闭点 $t=n$，所得并集在这个不交并中为闭集。其像为 $\{1,2,3,\ldots\}$，是仿射直线中无限而非全体的集合，不闭：非零一元多项式只能有有限多个根，而这集合又不含泛点。因此 $f$ 不是泛闭态射。
+\end{analysisproof}
+\lead{结论}不能由“分离＋赋值提升”脱离拟紧性推出泛闭。这个反例\textbf{不满足（7.3.8）的拟紧假设}，所以不能用来否定（7.3.8）。标注意在防止断章引用。
+
+\section{II--07：正次数部分为空会使齐次谱为空}
+\oldauditsrc{（8.1.4）（i），印刷第 153--154 页，PDF 第 150--151 页}
+\kind{A}{缺失非退化条件，属于边界情形的反例。}
+\lead{原文断言}对整预概形 $Y$ 上的一列拟凝聚分式理想 $\JJ_n$，若 $\JJ_0=\OO_Y$ 且满足乘法条件，则 $X=\Proj(\bigoplus_n\JJ_n)$ 为整预概形，且结构态射占优。此前（8.1.2）的定义只要求分式理想是有理函数层的有限型子模，没有排除零子模。
+\begin{analysisproof}
+令 $Y=\Spec k$，$\JJ_0=k$，且 $\JJ_n=0$ 对所有 $n>0$。所有乘法条件成立，各 $\JJ_n$ 都满足所列有限型条件。但
+\[
+\bigoplus_{n\ge0}\JJ_n=k
+\]
+集中在零次，正次数理想为零，故
+\[
+X=\Proj k=\varnothing.
+\]
+按第一卷中不可约必须非空的定义，空预概形不是整预概形；空态射也不占优到非空的 $Y$。
+\end{analysisproof}
+\lead{修补}增加至少存在一个 $n>0$ 使 $\JJ_n\ne0$ 的条件，排除上例。对该非零齐次元，其幂在整的有理函数环境中非零，才有非空的齐次谱及所需泛点。原命题（ii）已经明确写了待爆破的 $\JJ\ne0$；\textbf{不要将本条错误地延伸到（ii）的非零理想爆破结论。}
+
+\section{II--08：三处乘积态射的源靶印错}
+\oldauditsrc{（5.4.2）（iv）、（6.1.5）（iv）、（6.2.4）（iv），印刷第 100、111、115 页，PDF 第 97、108、112 页}
+\kind{C}{同型的源靶排印错误合为一组，三处分别标出。}
+三处都是先给出
+\[
+f:X\longrightarrow Y,\qquad g:X'\longrightarrow Y',
+\]
+随后却把 $f\times_Sg$ 的源靶写成 $X\times_SY\to X'\times_SY'$。第二处在公式中也使用相同的错位排列。
+
+按乘积态射定义，正确式应统一为
+\[
+\boxed{f\times_Sg:X\times_SX'\longrightarrow Y\times_SY'.}
+\]
+这是源靶类型错误；分别涉及固有态射、有限／整态射和拟有限态射的乘积稳定性。\textbf{修正源靶后，不能由此推出这些稳定性结论错误。}
+
+\chapter{避免误判，以及结论的适用范围}
+\section{已经排除的几类误判}
+\lead{Hom 与标量扩张}第一卷（0，1.5.5），印刷第 18 页，PDF 第 17 页的原页公式，张量积实际写在整个 $\Hom$ \textbf{之外}。它并不是声称任意非平坦基变换都与 $\Hom$ 交换。不能仅凭自动抽取后括号丢失的文字，把这条局部化公式列为漏洞。
+\lead{对角态射}I--04 补足局部闭性后命题成立；不是“对角态射不是浸入”的反例。
+\lead{分次模的两种问题}II--02 是高次生成的分次环导致零次局部化漏掉分量；II--03 则即使一次生成也会发生，是非拟紧底空间上缺少全局统一界。两者不能互相替代。
+\lead{赋值判据}II--06 的非拟紧例子仅说明备注的继承条件不可丢；没有否定明确写出拟紧性的（7.3.8）。
+\lead{历史术语}沿用底本的预概形／概形区别，而不是把 1960 年“概形”的分离性约定悄悄换成今天允许非分离的用法。正文中的不少旧称结论需在原约定下理解。
+
+\section{这些问题意味着什么，不意味着什么}
+存在明确反例意味着：\textbf{引用被标为 A 类的旧版条目时，必须核对修订假设或使用更正版本}。它不自动意味着依赖该条目的每一个后续结果都错。例如对可逆层使用非零截面张量积性质，不受 I--06 中非拟凝聚摩天楼层反例影响；一次生成且底空间拟紧时的消失结论，也不被 II--02、II--03 的反例否定。
+
+证明缺步的条目应补入缺失条件或论证。尤其不能把“已找到一个补证”说成“原文没有任何问题”，也不能把“原证明的一步不合法”说成“定理必然错误”。
+
+对于未标注的内容，本轮未提供完整正确性认证。引用涉及本报告未逐项复核的技术引理时，仍应对照其假设、原图及后续勘误。两份标注 PDF 与本报告共同构成\textbf{重点审阅结果}，不是对 EGA 全部数学内容的形式化证明证书。
+
+
+\chapter{底本与核验来源}
+\begin{enumerate}[label={[\arabic*]},leftmargin=3em]
+\item A. Grothendieck，与 J. Dieudonn\'e 合作撰写，\emph{Éléments de géométrie algébrique I: Le langage des schémas}，Publications mathématiques de l'IHÉS，4（1960）。本次使用用户上传的 \texttt{EGAI.pdf}，227 页。报告中的第一卷引文均指该上传版的印刷页／PDF 页。
+\item A. Grothendieck，与 J. Dieudonn\'e 合作撰写，\emph{Éléments de géométrie algébrique II: Étude globale élémentaire de quelques classes de morphismes}，Publications mathématiques de l'IHÉS，8（1961），5--222。本次使用用户上传的 \texttt{EGAII.pdf}，219 页。
+\item 上述第二卷书末 \emph{Errata et Addenda, Liste 1}，印刷第 217--222 页，PDF 第 214--219 页。I--05、I--07 的正式修订及 I--02 的后续态射约定均有此处原文支持。
+\item The Stacks Project，Section 26.21，Lemmas 26.21.1--26.21.2，Tag 01KH。仅用于对角态射补证的外部交叉核验；访问日期 2026 年 10 月 8 日。\url{https://stacks.math.columbia.edu/tag/01KH}
+\end{enumerate}
+\par\bigskip
+本报告给出的具体反例与反例核验是本次分析，不作为底本原文的引述。原文页内标注只定位问题；完整假设、计算、修补范围与限制，以本报告各条为准。

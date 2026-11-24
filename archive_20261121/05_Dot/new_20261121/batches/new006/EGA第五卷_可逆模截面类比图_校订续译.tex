@@ -1,0 +1,57 @@
+\documentclass[openany,fontset=fandol]{ctexbook}
+\usepackage{amsmath,amssymb,tikz-cd}
+\usepackage[unicode,hidelinks]{hyperref}
+\setlength{\emergencystretch}{2em}
+\newcommand{\Oa}{\mathcal O}
+\begin{document}
+\title{代数几何基础第五卷预备笔记\\可逆模截面的类比图}
+\author{据英译编辑稿翻译，参校法文扫描}
+\date{2026年11月20日}
+\maketitle
+\chapter*{范围与接续}
+本批接英译第68页引图句，完整译出式（D）的类比图及随后的英译者方括号说明。对读法文物理第103--104页。下一起点是英语同页“Upon arriving at this point”及法文第104页“Arrivé à ce point”。本稿独立增补，未并入第十七版。
+\chapter*{可逆模截面的类比图（续）}
+下面给出一个与（D）类似的图，不过这里取可逆模$K$的一个截面$\varepsilon$。
+\[
+\begin{tikzcd}[column sep=0.8em,row sep=1.8em]
+ & & 0 & & \\
+ & & \Omega^1_{X/Y}\otimes\Oa_{V'} \arrow[u] & & \\
+0 \arrow[r] &
+ (\mathcal P^1_{X/Y}(K))^\vee\otimes\Oa_{V'}
+ \arrow[r] \arrow[ur,"\mu"] &
+ \Omega^1_{X/S}\otimes\Oa_{V'} \arrow[u] \arrow[r] &
+ \Omega^1_{V'/S} \arrow[r] & 0 \\
+ & K^{-1}\otimes\Oa_{V'} \arrow[u] \arrow[r] &
+ \Omega^1_{Y/S}\otimes\Oa_{V'} \arrow[u] \arrow[ur,"\nu"'] & & \\
+ & \omega_{X/Y}^{-2}\otimes K^{-1}\otimes\Oa_{V'} \arrow[u] &
+ 0 \arrow[u] & &
+\end{tikzcd}
+\]
+
+\noindent [以下部分被格罗滕迪克划去，英译者不确定原因。为求完整，仍将其转载；到划去部分结束之处，将标明“不再是划去内容”。]
+\chapter*{译校说明（非原文）}
+\paragraph{图的对读。}
+法文第103页引图的手写截面符号看起来作$\varphi$；本批重绘沿用英译的$\varepsilon$，不因此另设两个截面。图中$v$为对偶符号，重绘用$\vee$。$\mu$是先由左中项入环境微分模、再映至相对微分模的复合；$\nu$由下中项经环境微分模映至右端。图中的顶端和底端零对象属于环境模的竖直正合列，并非另为斜箭头断言单射或满射。
+
+\paragraph{左下角的指数。}
+重绘照英译保留$K^{-1}$；法文第103页对应手写指数有涂抹，不能据此确认完整字样。下面只作类型核对。若仍沿用前文
+$L=\det P\otimes\det Q\otimes(\det E)^{-1}$，且$P$为秩$d+1$的相对一阶主部模$\mathcal P^1_{X/Y}(K)$之对偶，那么在主部模正合列
+\[
+0\to\Omega^1_{X/Y}\otimes K
+\to\mathcal P^1_{X/Y}(K)\to K\to0
+\]
+的约定下，
+$\det P\simeq \omega_{X/Y}^{-1}\otimes K^{-(d+1)}$。
+取$Q=\Omega^1_{Y/S}|_{V'}$和$E=\Omega^1_{X/S}|_{V'}$，将这些线丛拉回并限制至$V'$，传递性行列式关系遂给出
+\[
+L\simeq
+(\omega_{X/Y}^{-2}\otimes K^{-(d+1)})|_{V'}.
+\]
+因此，若左下角意在表示这条$L$，则指向$K^{-1}|_{V'}$的箭头相应属于
+$\operatorname{Hom}(L,K^{-1}|_{V'})
+\simeq(\omega_{X/Y}^{2}\otimes K^{d})|_{V'}$，
+其$K$幂次与上一批单位变换的$u^d$相容。这不是对模糊手写指数的辨读，也不是在译文中静默更换英译图的标签。
+
+\paragraph{划去标记。}
+方括号是英译者说明，不是作者正文。法文第104页从下一段已可见贯页划线；本批只到说明为止，未查定整段划去稿的最终边界。
+\end{document}

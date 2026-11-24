@@ -1,0 +1,21 @@
+# 交付前独立核验记录
+
+核验日期：2026-11-19。
+
+## 已实际执行
+- 对最终 ZIP 执行 `unzip -t`，压缩数据无错误。
+- 从 ZIP 独立解压到新目录，并按 `MANIFEST.json` 逐文件核对大小和 SHA-256。
+- 当前成品与分文件工程内对应文件逐一哈希一致：
+  - 合订 PDF = `main.pdf`
+  - 合订单文件 TeX = `single.tex`
+  - 核查报告 PDF = `report.pdf`
+  - 报告单文件 TeX = `report_single.tex`
+- `pdfinfo` 核对：合订本 1060 页、A4；核查报告 253 页、A4。
+- 执行工程的结构检查：旧条目、旧公式标签、73份既有数学正文和17份历史报告正文均无丢失或意外改动。
+- 在独立解压目录运行 XeLaTeX `-no-pdf` 源码解析：`main.tex` 已完成两遍，第二遍生成 1060 页 XDV；`report.tex` 完成一遍，无致命编译错误。
+- 检查包内不存在 `.ttf`、`.otf`、`.ttc`、`.woff` 或 `.woff2` 字体文件。
+
+## 完整构建证据
+工程内 `checks/build_logs/`、`checks/output_verification.json`、`checks/parity_console.txt` 和 `checks/VISUAL_REVIEW.md` 保存第十六版原交付时的三遍 XeLaTeX 构建、分文件/单文件逐页比对和视觉检查结果；这些文件已纳入本次逐文件 SHA-256 校验。
+
+本次独立核验没有重新声称对全书数学内容作出版级审定；它验证的是文件完整性、接续信息、结构保持与构建可恢复性。

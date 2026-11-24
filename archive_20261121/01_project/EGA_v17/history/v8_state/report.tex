@@ -1,0 +1,59 @@
+% !TeX program = xelatex
+\input{preamble.tex}
+\newcommand{\RR}{\mathcal R}
+\newcommand{\FF}{\mathcal F}
+\newcommand{\GG}{\mathcal G}
+\newcommand{\MM}{\mathcal M}
+\newcommand{\JJ}{\mathcal J}
+\newcommand{\oldauditsrc}[1]{\par\noindent\textbf{原文位置：}#1。\par}
+\newcommand{\kind}[2]{\noindent\textbf{分类：#1。}\ #2\par}
+\newcommand{\lead}[1]{\par\noindent\textbf{#1}\quad}
+\newenvironment{analysisproof}{\par\noindent\textbf{该轮核查的反例或补证。}\ }{\par}
+
+\hypersetup{pdftitle={代数几何基础：第八版译校核查报告},pdfsubject={第0章19.7--19.10续译定点核查；原作者勘误；历史核查档案}}
+\title{代数几何基础\\译校核查报告\\[1em]\large 第八版新核查与历史记录}
+\author{原著对照、反例与补证}
+\date{}
+\begin{document}
+\frontmatter
+\maketitle
+\head{报告说明}
+本报告分为本轮新核查与历史记录。本轮直接依据上传法文原页及作者勘误，连续处理第0章19.7--19.10，新增核查标识以H8开头。正文中的确定错误按已验证内容修正，原文差异和修订依据放在脚注；对（19.7.1.5）的拓扑适用范围，只核定较强的完备局部形式，不把尚未解决的疑点宣称为反例。历史报告保留原编号和当时措辞，不代表本轮重新审定其中全部结论。第七版G7及更早各批次继续作为历史记录收录。
+
+所附中文合订本仍为已译内容的工作译稿，并非全部上传材料的完结全译。文稿编译、条目覆盖核对和页面检查，不代替出版级逐句审校或全部数学证明的独立验证。
+\tableofcontents
+\mainmatter
+\input{reports/eighth_audit.tex}
+\part*{历史核查记录：第七版}
+\addcontentsline{toc}{part}{历史核查记录：第七版}
+\NewNote{以下G7条目为第七版历史记录。其内容保留，不表示本轮重新逐项审定；本版新的拓扑范围说明以H8-P01、H8-P02为准。}
+\input{reports/seventh_audit.tex}
+\part*{历史核查记录：第六版}
+\addcontentsline{toc}{part}{历史核查记录：第六版}
+\NewNote{以下F6条目为第六版历史记录。其中关于正文仍保留错误原证明的描述已被本版相应修订取代；本版并未重新审定其余所有历史判断。}
+\input{reports/sixth_audit.tex}
+\part*{历史核查记录：第五版}
+\addcontentsline{toc}{part}{历史核查记录：第五版}
+\NewNote{以下E5条目为第五版原有记录，不表示本轮重新审定其全部结论。}
+\input{reports/fifth_audit.tex}
+\part*{历史核查记录：第四版}
+\addcontentsline{toc}{part}{历史核查记录：第四版}
+\NewNote{以下D4条目为第四版原有记录，不表示本轮重新审定其全部结论。}
+\input{reports/fourth_audit.tex}
+\part*{历史核查记录：第三版}
+\addcontentsline{toc}{part}{历史核查记录：第三版}
+\NewNote{下列C3条目属于第三版的定点核查，不是本轮重新发现或再次逐项独立审定的结果。}
+\input{reports/third_order_audit.tex}
+\part*{历史核查记录：前次续译批次}
+\addcontentsline{toc}{part}{历史核查记录：前次续译批次}
+\NewNote{以下为上一批报告的原有内容；其“本轮”指当时批次，不是本第八版新核查。}
+\input{reports/current_audit.tex}
+\part*{历史核查记录：新增文稿第一批}
+\addcontentsline{toc}{part}{历史核查记录：新增文稿第一批}
+\NewNote{以下为新增文稿第一批报告，保留原标识及其适用范围。}
+\input{reports/batch1_audit.tex}
+\part*{历史核查记录：第一、第二卷}
+\addcontentsline{toc}{part}{历史核查记录：第一、第二卷}
+\NewNote{以下为第一、第二卷早期重点审阅结果。关于进制完备性和对角态射等问题，须结合本版新取得的ErrIII清单；旧报告不代表问题尚未有正式勘误。}
+\input{reports/legacy_I_II.tex}
+\end{document}

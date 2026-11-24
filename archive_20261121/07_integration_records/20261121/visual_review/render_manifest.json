@@ -1,0 +1,93 @@
+{
+  "renderer": "Poppler pdftoppm",
+  "pages": [
+    {
+      "pdf": "/workspace/scratch/a886fd56dd2f/restored_20261121/latest/EGA_v17_V_supplement_III/project/main.pdf",
+      "pdf_sha256": "df69850134279ecf6f23b6eb3963d85b374c7fa682d6a648fa8469df887e7f44",
+      "physical_page": 954,
+      "png": "/workspace/scratch/a886fd56dd2f/integration_20261121/visual_review/main_0954.png",
+      "png_sha256": "a6b56ec24fa12f9bd573e1c67b6e5453ec5b3f166acc1bb7a547751e9aae5feb",
+      "dpi": 144
+    },
+    {
+      "pdf": "/workspace/scratch/a886fd56dd2f/restored_20261121/latest/EGA_v17_V_supplement_III/project/main.pdf",
+      "pdf_sha256": "df69850134279ecf6f23b6eb3963d85b374c7fa682d6a648fa8469df887e7f44",
+      "physical_page": 971,
+      "png": "/workspace/scratch/a886fd56dd2f/integration_20261121/visual_review/main_0971.png",
+      "png_sha256": "8560584c2ca105a7a1ddfea4f1fdb71f8a9d6bfc37908273b195f7b71242d291",
+      "dpi": 144
+    },
+    {
+      "pdf": "/workspace/scratch/a886fd56dd2f/restored_20261121/latest/EGA_v17_V_supplement_III/project/main.pdf",
+      "pdf_sha256": "df69850134279ecf6f23b6eb3963d85b374c7fa682d6a648fa8469df887e7f44",
+      "physical_page": 973,
+      "png": "/workspace/scratch/a886fd56dd2f/integration_20261121/visual_review/main_0973.png",
+      "png_sha256": "47c402756fd5316873badc0006878bea000e060d9a9562ddc3caa38d00139373",
+      "dpi": 144
+    },
+    {
+      "pdf": "/workspace/scratch/a886fd56dd2f/restored_20261121/latest/EGA_v17_V_supplement_III/project/main.pdf",
+      "pdf_sha256": "df69850134279ecf6f23b6eb3963d85b374c7fa682d6a648fa8469df887e7f44",
+      "physical_page": 975,
+      "png": "/workspace/scratch/a886fd56dd2f/integration_20261121/visual_review/main_0975.png",
+      "png_sha256": "5a70b1485f86c726bdb27412e0b4ed82c8afc3279f77151298e4b2a169e090d9",
+      "dpi": 144
+    },
+    {
+      "pdf": "/workspace/scratch/a886fd56dd2f/restored_20261121/latest/EGA_v17_V_supplement_III/project/main.pdf",
+      "pdf_sha256": "df69850134279ecf6f23b6eb3963d85b374c7fa682d6a648fa8469df887e7f44",
+      "physical_page": 976,
+      "png": "/workspace/scratch/a886fd56dd2f/integration_20261121/visual_review/main_0976.png",
+      "png_sha256": "d5dc5457c4ca3905299a1c51330c1dbbbff79c0118f181d07a1b18b53525a64b",
+      "dpi": 144
+    },
+    {
+      "pdf": "/workspace/scratch/a886fd56dd2f/restored_20261121/latest/EGA_v17_V_supplement_III/project/main.pdf",
+      "pdf_sha256": "df69850134279ecf6f23b6eb3963d85b374c7fa682d6a648fa8469df887e7f44",
+      "physical_page": 978,
+      "png": "/workspace/scratch/a886fd56dd2f/integration_20261121/visual_review/main_0978.png",
+      "png_sha256": "9935c46c0a05ba73a58cb531a574c818d0eaff1642f933d184a0e4ff2742aa7c",
+      "dpi": 144
+    },
+    {
+      "pdf": "/workspace/scratch/a886fd56dd2f/restored_20261121/latest/EGA_v17_V_supplement_III/project/main.pdf",
+      "pdf_sha256": "df69850134279ecf6f23b6eb3963d85b374c7fa682d6a648fa8469df887e7f44",
+      "physical_page": 980,
+      "png": "/workspace/scratch/a886fd56dd2f/integration_20261121/visual_review/main_0980.png",
+      "png_sha256": "a0109790e81649da16d4305e9ab29db3d15b094eb0a79bf386c5ed176978523a",
+      "dpi": 144
+    },
+    {
+      "pdf": "/workspace/scratch/a886fd56dd2f/restored_20261121/latest/EGA_v17_V_supplement_III/project/main.pdf",
+      "pdf_sha256": "df69850134279ecf6f23b6eb3963d85b374c7fa682d6a648fa8469df887e7f44",
+      "physical_page": 981,
+      "png": "/workspace/scratch/a886fd56dd2f/integration_20261121/visual_review/main_0981.png",
+      "png_sha256": "31f692d1e99957c7ecf8daf382f392bc6ed79641b46146ac08e7fb69c0e3f9b2",
+      "dpi": 144
+    },
+    {
+      "pdf": "/workspace/scratch/a886fd56dd2f/restored_20261121/latest/EGA_v17_V_supplement_III/project/main.pdf",
+      "pdf_sha256": "df69850134279ecf6f23b6eb3963d85b374c7fa682d6a648fa8469df887e7f44",
+      "physical_page": 982,
+      "png": "/workspace/scratch/a886fd56dd2f/integration_20261121/visual_review/main_0982.png",
+      "png_sha256": "f85525cbac7b54ed99690f7f7807d707cae84a7834fb3d34f142c25463e477fd",
+      "dpi": 144
+    },
+    {
+      "pdf": "/workspace/scratch/a886fd56dd2f/restored_20261121/latest/EGA_v17_V_supplement_III/project/report.pdf",
+      "pdf_sha256": "d5aa39fb5c5916de8f63516a33e82e1d78e3248ce3ea4bdcb7cb87d31621e0f4",
+      "physical_page": 17,
+      "png": "/workspace/scratch/a886fd56dd2f/integration_20261121/visual_review/report_0017.png",
+      "png_sha256": "1de0ddad5ceaa536bf496534e011723722bd0ada91f3d3a8a62886e8bf53e65f",
+      "dpi": 144
+    },
+    {
+      "pdf": "/workspace/scratch/a886fd56dd2f/restored_20261121/latest/EGA_v17_V_supplement_III/project/report.pdf",
+      "pdf_sha256": "d5aa39fb5c5916de8f63516a33e82e1d78e3248ce3ea4bdcb7cb87d31621e0f4",
+      "physical_page": 19,
+      "png": "/workspace/scratch/a886fd56dd2f/integration_20261121/visual_review/report_0019.png",
+      "png_sha256": "796226a7eaec325ed6d4272aa6342c860481ab221af70f27888b72bf9e4da551",
+      "dpi": 144
+    }
+  ]
+}

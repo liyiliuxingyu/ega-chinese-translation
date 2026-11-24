@@ -1,0 +1,138 @@
+% 底本：EGAIV.1.pdf，PDF第168--170页，原分册印刷第169--171页。
+\subsection{Cartier等式}
+下面的结果把MacLane关于导子的一个定理用微分表述出来。
+
+\egas{21.7.1}{定理（Cartier）}
+设 $K$ 为域，$L/K$ 为有限型扩张。
+则 $\Omega^1_{L/K}$ 与 $\Upsilon_{L/K}$ 都是有限维 $L$-向量空间，并且
+\begin{equation}
+ \rk_L\Omega^1_{L/K}-\rk_L\Upsilon_{L/K}=\trdeg_KL.
+ \tag{21.7.1.1}
+\end{equation}
+
+\eproof
+若 $K\subseteq L'\subseteq L$，则由（20.6.17.1）
+（取 $\Lambda=P$ 为 $K$ 的素域、$A=K$、$B=L'$、$C=L$），有正合列
+\begin{equation*}
+\begin{gathered}
+ 0\longrightarrow\Upsilon_{L'/K}\otimes_{L'}L
+ \longrightarrow\Upsilon_{L/K}\longrightarrow\Upsilon_{L/L'}\\
+ \longrightarrow\Omega^1_{L'/K}\otimes_{L'}L
+ \longrightarrow\Omega^1_{L/K}\longrightarrow\Omega^1_{L/L'}
+ \longrightarrow0.
+\end{gathered}
+\end{equation*}
+\cmt{L12-A01}{原文引（20.6.15.1）。作者在《勘误与增补（清单三）》A部正式改为（20.6.17.1）；正文从其修订。
+这里的六项正合列，而不是单纯的复形定义，是证明所需要的依据。}
+当其中各项有限维时，由（$0_{\mathrm{III}}$，11.10.2）得到
+\begin{align*}
+ \rk_L\Omega^1_{L/K}-\rk_L\Upsilon_{L/K}
+ &=\bigl(\rk_L\Omega^1_{L/L'}-\rk_L\Upsilon_{L/L'}\bigr)\\
+ &\quad+\bigl(\rk_{L'}\Omega^1_{L'/K}-\rk_{L'}\Upsilon_{L'/K}\bigr).
+\end{align*}
+又有 $\trdeg_KL=\trdeg_KL'+\trdeg_{L'}L$。
+所以沿有限个生成元递推，只须处理 $L=K(x)$ 的情形。
+各项的有限维性也可由同一正合列同时递推得到：若左右两段扩张的两个模有限维，
+则中间扩张的两个模均由有限维空间的子商和扩张构成，因而有限维。
+\cmt{L12-G06}{原文将有限维性隐含在“对生成元数递推”的论证中。
+正文明确把它与等式一同递推，随后才使用有限正合列的Euler特征；
+这避免在尚未确定有限维时书写可能无意义的“无穷减无穷”。}
+区分三种情形。
+
+\noindent a) $x$ 在 $K$ 上超越。
+$L/K$ 可分，故 $\Upsilon_{L/K}=0$（20.6.3）；
+由（20.5.9）和（20.4.13），$\Omega^1_{L/K}$ 的维数为1，故等式成立。
+
+\noindent b) $L/K$ 是有限可分代数扩张。
+此时仍有 $\Upsilon_{L/K}=0$（20.6.3），且 $\Omega^1_{L/K}=0$（20.6.20），
+所以等式仍成立。
+
+\noindent c) $L/K$ 是不可分代数扩张。
+利用开头的递推，可以归结为 $L^p\subseteq K$ 的情形。
+由（21.4.8），有
+$\rk_L\Omega^1_{L/K}=\rk_L\Upsilon_{L/K}$，故仍得（21.7.1.1）。
+\cmt{L12-G07}{对简单不可分扩张，可先令 $x^{p^e}$ 在 $K$ 上可分，
+再把 $K(x)/K(x^{p^e})$ 分成若干指数一的纯不可分扩张；各级均由一个元素生成。
+指数一简单扩张的 $p$-基至多含一个元素，因此（21.4.5）、（21.4.8）同时给出所需有限维性。
+这里补出原文“可归结为”的具体过程，不增加定理的适用假设。}
+\finishproof
+
+\egas{21.7.2}{推论}
+设 $K$ 为域，$L/K$ 为有限型扩张，$k$ 为 $K$ 的子域。
+则 $\Omega^1_{L/K}$、$\Upsilon_{L/K/k}$ 均为有限维 $L$-向量空间，并且
+\begin{equation}
+ \rk_L\Omega^1_{L/K}-\rk_L\Upsilon_{L/K/k}
+ =\trdeg_KL+d(L/K,k).
+ \tag{21.7.2.1}
+\end{equation}
+因此
+\begin{equation}
+ \rk_L\Omega^1_{L/K}-\rk_L\Upsilon_{L/K/k}\ge\trdeg_KL.
+ \tag{21.7.2.2}
+\end{equation}
+等号成立当且仅当 $k$ 是扩张 $L/K$ 的可容许域。
+
+事实上，$\Upsilon_{L/K}\to\Upsilon_{L/K/k}$ 满射；按（21.6.1.2），
+\[
+ \rk_L\Upsilon_{L/K}-\rk_L\Upsilon_{L/K/k}=d(L/K,k).
+\]
+于是结论来自（21.7.1）和（21.6.2）。
+
+\egas{21.7.3}{推论}
+设 $k\subseteq K\subseteq L$ 为三个域，且 $L/k$ 为有限型扩张。
+则
+\begin{equation}
+ \rk_L\Omega^1_{L/k}-\rk_K\Omega^1_{K/k}
+ =\trdeg_KL+d(L/K,k).
+ \tag{21.7.3.1}
+\end{equation}
+从而
+\begin{equation}
+ \rk_L\Omega^1_{L/k}-\rk_K\Omega^1_{K/k}\ge\trdeg_KL,
+ \tag{21.7.3.2}
+\end{equation}
+等号成立当且仅当 $k$ 是 $L/K$ 的可容许域。
+
+由正合列（20.6.1.1）
+\[
+ 0\longrightarrow\Upsilon_{L/K/k}
+ \longrightarrow\Omega^1_{K/k}\otimes_KL
+ \longrightarrow\Omega^1_{L/k}\longrightarrow\Omega^1_{L/K}
+ \longrightarrow0,
+\]
+（21.7.3.1）左端等于
+$\rk_L\Omega^1_{L/K}-\rk_L\Upsilon_{L/K/k}$，再应用（21.7.2）即可。
+
+这个推论的好处是只涉及微分模，而不再显式涉及非完美性模。
+下文（21.8.6）还将证明：对任意有限型扩张 $L/K$，
+都存在 $K$ 的子域 $k$，使 $[K:k]$ 有限，且 $k$ 是 $L/K$ 的可容许域；
+此时（21.7.3.2）两端相等。
+
+\egas{21.7.4}{推论}
+设 $K$ 为域 $k$ 的有限型扩张。下列条件等价：
+\begin{enumerate}[label=\alph*),leftmargin=2.5em]
+\item $K/k$ 为有限可分扩张；
+\item $K$ 是形式非分歧的 $k$-代数（19.10.2）；
+\item $K$ 是形式平展的 $k$-代数（19.10.2）；
+\item $\Omega^1_{K/k}=0$。
+\end{enumerate}
+
+\eproof
+所有拓扑均取离散拓扑。b)与d)由（20.7.4）等价；
+a)蕴涵形式光滑性（19.6.1），结合形式非分歧性即得到c)。
+另一方面c)蕴涵b)。所以只须证明d)推出a)。
+由（21.7.1.1），$\Omega^1_{K/k}=0$ 迫使 $\trdeg_kK=0$ 且 $\Upsilon_{K/k}=0$。
+前者与有限型假设一起表明扩张有限，后者由（20.6.3）表明它可分。
+\finishproof
+
+\egas{21.7.5}{注记}
+由（20.6.5.2）和（$0_{\mathrm{III}}$，11.10.2），
+（21.7.1.1）的左端就是复形 $K_\bullet(C/B/A)$ 的Euler--Poincaré特征，
+其中 $C=L$、$B=K$、$A=P$ 为 $K$ 的素域；该复形定义于（20.6.5）。
+在本专著关于相交理论与Riemann--Roch定理的章节中，
+推广（20.6.26）所讨论的复形 $F_\bullet(C/A)$ 后得到的复形，
+其取值于模的类群的广义Euler--Poincaré特征也将发挥重要作用。
+\cmt{L12-T04}{原文依次引（20.6.3.2）、（20.6.3）和（20.6.22）；
+对应的同调公式、二项复形定义以及 $F_\bullet(C/A)$ 的讨论实际在
+（20.6.5.2）、（20.6.5）和（20.6.26）。正文按内容定位更正。
+这里的Euler特征是有限维同调的交错和；不要求构成复形的两个项本身有限维。}

@@ -1,0 +1,6 @@
+法文全稿 https://webusers.imj-prg.fr/~leila.schneps/grothendieckcircle/EGA/EGA5.pdf
+171页；锁定SHA256 24cf8204184b58b18a46e5f63ecc36d6e791b3c8c96a09daac93de96ebd8e830。
+英译 EGAVaiello https://webusers.imj-prg.fr/~leila.schneps/grothendieckcircle/EGA/EGAVaiello.pdf
+SHA256 23a20ef32fd16a1bd623c0c08ac080d04fc94f248de12133b713a19d6b0330d9。
+法物理115之后依原文再接物理160、159、158（印刷编号116–118），不是物理116；IV.17.16对应法物理161–170。
+本批校勘英译物理76至77首行，法文物理160、159（按原稿116、117顺序）。法文 PDF 按该顺序精确摘页，不经栅格转换。

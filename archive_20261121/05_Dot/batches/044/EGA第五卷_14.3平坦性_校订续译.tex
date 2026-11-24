@@ -1,0 +1,28 @@
+\documentclass[openany,fontset=fandol]{ctexbook}
+\usepackage{amsmath,amssymb}
+\usepackage[unicode,hidelinks]{hyperref}
+\newcommand{\note}[1]{\footnote{译注：#1}}
+\begin{document}
+\title{代数几何基础第五卷预备笔记\\推论14.3：Cohen--Macaulay性与平坦性}
+\author{据用户上传英译编辑稿译出}
+\date{2026年11月18日}
+\maketitle
+\chapter*{范围与校订状态}
+本批译出底本第57页推论14.3陈述及紧随的三个段落，包括证明引用、层的推广建议和不能只用维数条件代替CM条件的说明，止于“unless $X_{k(\eta)}$ is CM”。下一处为同页“More delicate are the differential properties of the conic projection”。
+
+原证明引用的页码订正提醒、三问号、未定义的截面记号及修订建议均保留。正文仅统一可确定的目标空间和明显误用的对象字母；没有据残缺前文宣布推论或层版本已独立验证。全部旧待核保持，未合并主稿。
+\chapter*{§14 锥投影（续）}
+\noindent\textbf{推论14.3。}
+在14.1(a)的条件下，若$X$是Cohen--Macaulay的，则态射
+\[
+p_C:X(C_\eta)\longrightarrow Q(C_\eta)
+\]
+是Cohen--Macaulay态射，因而特别是平坦的。\note{底本拼作“Cohen-Macauley”，正文统一为通常的“Cohen--Macaulay”，下文缩写CM保持。原文在此依赖14.1(a)的条件，译文不额外添加或删去前提，也不认为14.1尚待核的适用范围已因此解决。}
+
+关于证明，参看上文第21页第5项之前的注（译者：订正此处）；考虑到对于$\xi\in Q(C_\eta)$，$C^{(m)}_\xi$是$F_{k(\eta)}$-正则的，这条注给出了一个更强的结果（包含14.3在内，???）。\note{底本引用原文为“on page 21 before 5. (Tr - correct this)”，其编号或页码尚不能由该句唯一确定，故正文保留订正提醒，不虚构一个确定的交叉引用。底本写“$C^{(m)}_\xi$ for $\xi\in\varphi(\eta)$ are $F_{k(\eta)}$ regular”。这里$\xi$为锥投影目标中的点，按本节定义将目标写作$Q(C_\eta)$；但$C^{(m)}_\xi$究竟表示哪一截面或正则序列，本段未清楚定义，故照存，不擅改成$X^{(m)}_\xi$或某个新构造。前面的三问号也属原文，未消除。}
+
+这个推论必须修改。不过，为简单起见，可以假设$f$拟有限：若$F$是$X$上的一个Cohen--Macaulay模，并且对于$\operatorname{Supp}F$的每个不可约分支$Z$都有$\dim Z\geq m$，那么$\widetilde F(C_\eta)$相对于$Q(C_\eta)$是Cohen--Macaulay的，因而特别是平坦的。\note{底本说“This corollary must be modified”，正文保留其修订状态，不把随后层版本标作已经完成的正式修订。原目标写$\varphi(C_\eta)$，据前面投影的目标统一为$Q(C_\eta)$；$\widetilde F(C_\eta)$是前述关联空间上的逆像层，不是直接位于$X$上的新层。其相对CM性及平坦性的证明在此未展开，本批未独立验证。}
+
+\newpage
+注意，要得到同样的结论，即$p_C$平坦，不能把$X$上的CM假设仅仅换成一个维数假设。例如，假设$f$是浸入，且$X$不可约、维数为$m$。于是$p_C$拟有限；又因为$X_{k(\eta)}$和$Q(C_\eta)$不可约且维数相同，而后者正则，所以只有当$X_{k(\eta)}$为CM时，$p_C$才可能平坦。\note{底本写“$f$ is irreducible of dimension $m$”，但不可约性和这里的维数是源概形的性质，下一句也明确使用$X_{k(\eta)}$不可约，故正文改为$X$。原目标仍写$\varphi(C_\eta)$，统一为$Q(C_\eta)$。本段是原文对CM假设必要性的解释，不是一个已具体给出的非CM反例；正文不另添反例，也不将必要条件误说成无条件充分性。}
+\end{document}

@@ -1,0 +1,9 @@
+initial_working_directory=/workspace/scratch/a886fd56dd2f/integration/EGA 迁移验证 zorgz4gr
+project=/workspace/scratch/a886fd56dd2f/integration/EGA 迁移验证 zorgz4gr/第十七版 续作工程
+resolved_project_root=/workspace/scratch/a886fd56dd2f/integration/EGA 迁移验证 zorgz4gr/第十七版 续作工程
+TEXMFVAR=/workspace/scratch/a886fd56dd2f/integration/EGA 迁移验证 zorgz4gr/第十七版 续作工程/runtime/texmf-var
+TEXMFCONFIG=/workspace/scratch/a886fd56dd2f/integration/EGA 迁移验证 zorgz4gr/第十七版 续作工程/runtime/texmf-config
+ctexbook=/workspace/scratch/a886fd56dd2f/integration/EGA 迁移验证 zorgz4gr/第十七版 续作工程/vendor/texmf/tex/latex/ctex/ctexbook.cls
+xelatex_format=/workspace/scratch/a886fd56dd2f/integration/EGA 迁移验证 zorgz4gr/第十七版 续作工程/runtime/texmf-var/web2c/xetex/xelatex.fmt
+fandol_song=/workspace/scratch/a886fd56dd2f/integration/EGA 迁移验证 zorgz4gr/第十七版 续作工程/vendor/texmf/fonts/opentype/public/fandol/FandolSong-Regular.otf
+probe_compile=success

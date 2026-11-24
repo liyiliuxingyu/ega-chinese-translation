@@ -1,0 +1,103 @@
+{
+  "review_date": "2026-11-20",
+  "reviewer": "root",
+  "pdf_sha256": "5ac63b3c218d030742d332b4136e91661dbb132081607db1807a84dda31e07ee",
+  "page_count": 1130,
+  "dpi": 108,
+  "actual_viewed_pages": [
+    1026,
+    1027,
+    1028,
+    1029,
+    1030,
+    1031,
+    1032,
+    1033,
+    1034,
+    1035,
+    1036,
+    1037,
+    1038,
+    1039,
+    1040
+  ],
+  "scope": "Final rendered pages 1026–1040 only; tail of §13 and the complete new §14–15 block. Layout review, not independent reproof of every mathematical claim.",
+  "result": "No clipping, overlap, missing arrows, or detached new footnote markers observed. Original manuscript gaps and question marks remain explicitly marked.",
+  "pages": [
+    {
+      "page": 1026,
+      "file": "book_1026.png",
+      "sha256": "26cf5354ff72bab71c447c4fb311bdee5ea0461836d80f81c59eadc068b2fe1a"
+    },
+    {
+      "page": 1027,
+      "file": "book_1027.png",
+      "sha256": "edb7955d3b62cbbb9de4835d53170da53c7e9f7d3483cdaac3caf9d9b6911402"
+    },
+    {
+      "page": 1028,
+      "file": "book_1028.png",
+      "sha256": "0c73e84d8d05659cad222e52c4f0f2a6582d519c0733713ae21985679dc7209b"
+    },
+    {
+      "page": 1029,
+      "file": "book_1029.png",
+      "sha256": "7b79026196bbdebfa6248ba9541e91efe17a5f78f4ae3ed95fa3ea25babd6acd"
+    },
+    {
+      "page": 1030,
+      "file": "book_1030.png",
+      "sha256": "e3a567168f7267c5b7be5feb9c56a382c83aa91bd456bd0d61de5c83c7012ebd"
+    },
+    {
+      "page": 1031,
+      "file": "book_1031.png",
+      "sha256": "c353b04fc87d717a69429e883467015eafaf12aa6fe944e7ae0d8af68cb67936"
+    },
+    {
+      "page": 1032,
+      "file": "book_1032.png",
+      "sha256": "0e73ad4a73c075b909806e77d7530160eb9c8900a783d533b43e387910dc6801"
+    },
+    {
+      "page": 1033,
+      "file": "book_1033.png",
+      "sha256": "09fc59558f5f5b6c136b2911b3b9ef6525d7b5bbb125c6a2b3161c7c7d73814f"
+    },
+    {
+      "page": 1034,
+      "file": "book_1034.png",
+      "sha256": "8ee817c00e0d5e901c42e80397c5dfe6f4970b88ad09d9659c8f63cd459a681e"
+    },
+    {
+      "page": 1035,
+      "file": "book_1035.png",
+      "sha256": "ad60dc1d324caa523e0fc080949e562ebae7f4f3278efcce1487b9dde8df9fed"
+    },
+    {
+      "page": 1036,
+      "file": "book_1036.png",
+      "sha256": "e3901a96e95ffa09c779805372acd35465434a7fec8df587a4651a2d3916351c"
+    },
+    {
+      "page": 1037,
+      "file": "book_1037.png",
+      "sha256": "1ddc490c21edbfec6d533b179adebce6206529725eb5adfa402620f7ee85ada2"
+    },
+    {
+      "page": 1038,
+      "file": "book_1038.png",
+      "sha256": "834388b316b56aadaec58788853411d93a2e587b8a3088c6009432078b575bb7"
+    },
+    {
+      "page": 1039,
+      "file": "book_1039.png",
+      "sha256": "32ea50d0f1626ac8011e42675f7c2cce96b66cc951d9b20b5cb80917141f10c0"
+    },
+    {
+      "page": 1040,
+      "file": "book_1040.png",
+      "sha256": "034c7dc5d9dca745873144c21d2c66b8d644d3bda4f2923af010d12660735c05"
+    }
+  ]
+}

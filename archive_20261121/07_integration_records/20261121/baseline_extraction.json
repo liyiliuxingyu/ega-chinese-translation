@@ -1,0 +1,14 @@
+{
+  "source": "/workspace/scratch/a886fd56dd2f/recovered_20261121/baseline/EGA中文译校_第十七版_完整续作工程包.zip",
+  "destination": "/workspace/scratch/a886fd56dd2f/restored_20261121/baseline",
+  "entries": 1827,
+  "files": 1827,
+  "uncompressed_bytes": 547998859,
+  "crc_first_bad_member": null,
+  "safe_path_checks": true,
+  "no_symbolic_links": true,
+  "no_encrypted_members": true,
+  "no_duplicate_names": true,
+  "extracted_new_files": 1827,
+  "preexisting_identical_files": 0
+}

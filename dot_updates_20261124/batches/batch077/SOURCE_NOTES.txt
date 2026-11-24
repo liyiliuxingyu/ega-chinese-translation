@@ -1,0 +1,6 @@
+法扫描物理126–129（手写133–136），英编辑稿物理97–98（后一页仅固定点补记为本批范围）。法扫描物理126开头划销段、127中后部划销段、128末补记之前划销段不入正文。
+法文底本 SHA256 24cf8204184b58b18a46e5f63ecc36d6e791b3c8c96a09daac93de96ebd8e830。
+英译底本 SHA256 23a20ef32fd16a1bd623c0c08ac080d04fc94f248de12133b713a19d6b0330d9。
+英底本：https://webusers.imj-prg.fr/~leila.schneps/grothendieckcircle/EGA/EGA5trans.pdf
+核对参照：EGA IV第三分册第11节 https://numdam.org/item/PMIHES_1966__28__5_0/
+Stacks：平坦上升 https://stacks.math.columbia.edu/tag/0336 ；相对有效 Cartier 除子 https://stacks.math.columbia.edu/tag/056P 。

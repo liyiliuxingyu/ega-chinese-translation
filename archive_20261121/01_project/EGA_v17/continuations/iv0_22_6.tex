@@ -1,0 +1,239 @@
+% 底本：EGAIV.1.pdf，PDF第204--208页（原分册印刷第205--209页）。
+\subsec{22.6. Zariski的Jacobian判据}
+\source{第四卷第一部分，原分册第205--209页中属于22.6的部分}
+
+\egas{22.6.1}{定理（形式光滑性的Jacobian判据）}
+设 $A,B$ 为拓扑环，$u:A\to B$ 为连续同态，并使 $B$ 成为形式光滑的 $A$-代数。
+设 $\mathfrak J$ 为 $B$ 的一个理想，不要求它闭；记 $C=B/\mathfrak J$，赋予商拓扑及相应的 $A$-代数结构。
+则 $C$ 对 $A$ 形式光滑，当且仅当典范同态（20.5.11.2）
+\begin{equation}
+ \delta_{C/B/A}:\mathfrak J/\mathfrak J^2\longrightarrow\Omega^1_{B/A}\otimes_BC
+ \tag{22.6.1.1}
+\end{equation}
+形式左可逆（19.1.5）。
+
+\eproof
+$B$（分别为 $C$）对 $A$ 形式光滑，等价于：对于每个被 $B$（分别为 $C$）的某个开理想消去的离散模 $L$，均有
+$\Exalcotop_A(B,L)=0$（分别为 $\Exalcotop_A(C,L)=0$），见（19.4.4）。
+每个被 $C$ 的某个开理想消去的离散 $C$-模，作为 $B$-模也有这一性质。
+因此在本定理的假设下，$C$ 对 $A$ 形式光滑，等价于对所有这样的 $L$，典范同态
+\[
+ \Exalcotop_A(C,L)\longrightarrow\Exalcotop_A(B,L)
+\]
+单射。由（20.7.8）即得结论。
+\finishproof
+
+回顾（19.5.3）：当 $B,C$ 均为形式光滑的 $A$-代数时，拓扑 $C$-模 $\mathfrak J/\mathfrak J^2$ 形式投射；
+若再假设 $B$ 预可容许，则典范同态
+\[
+ \varphi_n:\mathrm S_C^n(\mathfrak J/\mathfrak J^2)\longrightarrow
+ \mathfrak J^n/\mathfrak J^{n+1}
+\]
+都是形式双态射。
+
+\egas{22.6.2}{推论}
+在（22.6.1）的假设及记号下，再假设 $B$ 的每个开理想的平方仍为开理想，且 $\mathfrak J$ 上由 $B$ 诱导的子空间拓扑等于由 $B$ 的拓扑导出的模拓扑（19.0）。
+当 $B$ 诺特且其拓扑为预进制拓扑时（$0_{\mathrm I}$，7.3.2），这两项条件成立；当 $B$ 的拓扑为 $\mathfrak J$-预进制拓扑时，它们也成立。
+设 $(\mathfrak b_\lambda)$ 为 $B$ 的一个开理想基本系，置
+\[
+ C_\lambda=C/\mathfrak b_\lambda C=B/(\mathfrak J+\mathfrak b_\lambda).
+\]
+则有以下结论。
+
+\noindent（i）下列条件等价：
+
+\noindent a）$C$ 为形式光滑的 $A$-代数；
+
+\noindent b）对每个 $\lambda$，由 $\delta_{C/B/A}$ 张量得到的 $C_\lambda$-模同态
+\begin{equation}
+ (\mathfrak J/\mathfrak J^2)\otimes_CC_\lambda
+ \longrightarrow\Omega^1_{B/A}\otimes_BC_\lambda
+ \tag{22.6.2.1}
+\end{equation}
+左可逆；也就是说，它是到右端模的某个直和因子的同构。
+\cmt{O15-E01}{原文置 $B_\lambda=B/\mathfrak b_\lambda$，把目标写成 $\Omega^1_{B/A}\otimes_BB_\lambda$。然而将（22.6.1.1）与 $B_\lambda$ 在 $B$ 上张量，目标实际是 $\Omega^1_{B/A}\otimes_B(C\otimes_BB_\lambda)$，而 $C\otimes_BB_\lambda=B/(\mathfrak J+\mathfrak b_\lambda)$。正文据此改用 $C_\lambda$。例如离散 $B=\mathbb Q[x]$、$\mathfrak J=(x)$、$\mathfrak b_\lambda=0$ 时，原写法甚至不给出所说的 $B$-线性典范映射。完整核对见报告O15-E01；不是把底本的符号改动隐去。}
+
+\noindent（ii）若拓扑环 $C$ 还预可容许，且 $\mathfrak l$ 为其一个定义理想，则（i）的 a）、b）还等价于：
+
+\noindent c）下列 $C/\mathfrak l$-模同态左可逆：
+\[
+ (\mathfrak J/\mathfrak J^2)\otimes_C(C/\mathfrak l)
+ \longrightarrow\Omega^1_{B/A}\otimes_B(C/\mathfrak l).
+\]
+
+\eproof
+这些假设保证 $\Omega^1_{B/A}$ 的拓扑由 $B$ 的拓扑导出（20.4.5）。
+相应地，$\mathfrak J/\mathfrak J^2$ 与 $\Omega^1_{B/A}\otimes_BC$ 的拓扑由 $C$ 导出，
+而 $(\mathfrak b_\lambda C)$ 是 $C$ 的开理想基本系。因此（i）由（22.6.1）及（19.1.7）得到。
+另一方面，由 $B$ 对 $A$ 形式光滑，$\Omega^1_{B/A}$ 形式投射（20.4.9）；对每个 $\lambda$，
+$\Omega^1_{B/A}\otimes_B(B/\mathfrak b_\lambda)$ 为投射的 $B/\mathfrak b_\lambda$-模（19.2.4），
+再与 $C_\lambda$ 张量，仍为投射模。于是 $\Omega^1_{B/A}\otimes_BC$ 是满足（19.1.9）所需条件的形式投射拓扑 $C$-模。
+应用该判据，即得 $C$ 预可容许时 c）与 a）、b）的等价性。
+\finishproof
+
+特别地：
+\egas{22.6.3}{推论}
+设 $A$ 为环，$B$ 为 $A$-代数，$\mathfrak J$ 为 $B$ 的理想，$C=B/\mathfrak J$。
+给 $A,B,C$ 赋予离散拓扑，并假设 $B$ 对 $A$ 形式光滑。
+则 $C$ 对 $A$ 形式光滑，当且仅当（22.6.1.1）左可逆。
+
+注意每个 $A$-代数 $C$ 都是某个多项式代数 $A[T_\alpha]_{\alpha\in I}$ 的商，
+而该多项式代数形式光滑（19.3.3）；所以（22.6.3）原则上给出了判别 $C$ 是否对 $A$ 形式光滑的方法。
+
+\egas{22.6.4}{命题}
+设 $A$ 为环，$B$ 为对 $A$ 形式光滑的代数，拓扑均取离散拓扑。
+设 $\mathfrak J$ 为 $B$ 的理想，$C=B/\mathfrak J$，且 $\mathfrak J/\mathfrak J^2$ 为有限型 $C$-模。
+设 $\mathfrak p\in\Spec C$，$k(\mathfrak p)$ 为 $C_{\mathfrak p}$ 的剩余域；
+$\mathfrak p'$ 为 $\mathfrak p$ 在 $B$ 中的逆像，$\mathfrak q$ 为 $\mathfrak p'$ 在 $A$ 中的逆像。
+则下列条件等价：
+
+\noindent a）$C_{\mathfrak p}$ 对 $A_{\mathfrak q}$ 形式光滑，拓扑均离散；
+
+\noindent a$'$）$C_{\mathfrak p}$ 对 $A$ 形式光滑，拓扑均离散；
+
+\noindent b）典范同态
+\begin{equation}
+ (\mathfrak J/\mathfrak J^2)\otimes_Ck(\mathfrak p)
+ \longrightarrow\Omega^1_{B/A}\otimes_Bk(\mathfrak p)
+ \tag{22.6.4.1}
+\end{equation}
+单射；
+
+\noindent c）存在 $f\in C\setminus\mathfrak p$，使 $C_f$ 对 $A$ 形式光滑，拓扑均离散。
+
+若 $B$ 还诺特，则上述条件又等价于：
+
+\noindent d）给 $C_{\mathfrak p}$ 赋予 $\mathfrak pC_{\mathfrak p}$-预进制拓扑，给 $A_{\mathfrak q}$ 赋予离散拓扑
+（或 $\mathfrak qA_{\mathfrak q}$-预进制拓扑），则 $C_{\mathfrak p}$ 对 $A_{\mathfrak q}$ 形式光滑。
+\cmt{O15-N01}{扫描原页的 a$'$）、d）均有局部化下标 $\mathfrak p$；自动抽取文字有时漏掉这个下标。此处按图像译出 $C_{\mathfrak p}$，不是把原文的全局命题擅改为局部命题。文中“$\mathfrak p$-预进制”是局部环上由扩张理想 $\mathfrak pC_{\mathfrak p}$ 定义的拓扑。}
+
+\eproof
+局部化 $A\to A_{\mathfrak q}$ 形式平展，因而形式光滑（19.3.5，iv、ii）。
+结合局部化的提升唯一性，a）与 a$'$）等价。
+又 $C_{\mathfrak p}=B_{\mathfrak p'}/\mathfrak JB_{\mathfrak p'}$，且 $B_{\mathfrak p'}$ 对 $A$ 离散形式光滑，
+并有 $\Omega^1_{B_{\mathfrak p'}/A}=(\Omega^1_{B/A})_{\mathfrak p'}$（20.5.9）。
+将（22.6.3）用于 $B_{\mathfrak p'}\to C_{\mathfrak p}$，再利用 $\Omega^1_{B/A}$ 的投射性（20.4.9、19.2.1）、
+$\mathfrak J/\mathfrak J^2$ 的有限生成性及（19.1.12），得到 a$'$）与 b）等价。
+同一条（19.1.12）也给出 b）与 c）的等价性。
+
+最后，$B_{\mathfrak p'}$ 对 $A_{\mathfrak q}$ 在离散拓扑下形式光滑；
+改给 $B_{\mathfrak p'}$ 赋予 $\mathfrak p'B_{\mathfrak p'}$-预进制拓扑，
+而 $A_{\mathfrak q}$ 取离散或 $\mathfrak q$-预进制拓扑，这一性质仍成立（19.3.8）。
+当 $B$ 诺特时，可对这些拓扑应用（22.6.2）。
+由于 $C_{\mathfrak p}$ 预可容许，且 $\mathfrak pC_{\mathfrak p}$ 是定义理想，
+（22.6.2，ii）中 a）与 c）的等价性正给出 b）与 d）的等价性。
+\finishproof
+
+\egas{22.6.5}{推论}
+在（22.6.4）的一般假设下，使 $C_{\mathfrak p}$ 对 $A$（或对 $A_{\mathfrak q}$，其中 $\mathfrak q$ 为 $\mathfrak p$ 在 $A$ 中的逆像）
+离散形式光滑的素理想 $\mathfrak p$ 所组成的集合，在 $\Spec C$ 中为开集。
+
+这由（22.6.4）的条件 c）得到。当 $B$ 诺特时，还可把所说的离散拓扑换成相应的预进制拓扑。
+
+\egas{22.6.6}{推论}
+在（22.6.4）的一般假设下，下列条件等价：
+
+\noindent a）$C$ 对 $A$ 离散形式光滑；
+
+\noindent b）对每个 $\mathfrak p\in\Spec C$，甚至只须对每个极大理想 $\mathfrak p$，
+$C_{\mathfrak p}$ 对 $A$（或对 $A_{\mathfrak q}$，$\mathfrak q$ 为逆像）离散形式光滑。
+
+此外，当 $B$ 诺特时，b）中的 $A_{\mathfrak q}$ 与 $C_{\mathfrak p}$ 可以各取其预进制拓扑。
+
+\eproof
+最后一项断言来自（22.6.4）。由（22.6.3），a）等价于（22.6.1.1）左可逆。
+由于 $\Omega^1_{B/A}$ 是投射 $B$-模，而 $\mathfrak J/\mathfrak J^2$ 是有限型 $C$-模，
+（19.1.14）即给出 a）与 b）的等价性。
+\finishproof
+
+\egas{22.6.7}{命题}
+设 $k_0$ 为域，$k/k_0$ 为可分扩张，$C$ 为有限型 $k$-代数。
+
+\noindent（i）对 $C$ 的素理想 $\mathfrak p$，下列条件等价：
+
+\noindent a）$C_{\mathfrak p}$ 对 $k_0$ 离散形式光滑；
+
+\noindent b）$C_{\mathfrak p}$ 对 $k_0$ 在 $\mathfrak p$-预进制拓扑下形式光滑；
+
+\noindent c）存在 $f\in C\setminus\mathfrak p$，使 $C_f$ 对 $k_0$ 离散形式光滑；
+
+\noindent d）$C_{\mathfrak p}$ 对 $k_0$ 几何正则（19.6.5）。
+
+满足这些条件的点组成 $\Spec C$ 的开子集。
+
+\noindent（ii）下列条件等价：
+
+\noindent a）$C$ 对 $k_0$ 离散形式光滑；
+
+\noindent b）$\Spec C$ 的每个素理想都满足（i）的等价条件；
+
+\noindent c）$C$ 的每个极大理想都满足（i）的等价条件；
+
+\noindent d）对 $k_0$ 的每个有限扩域 $k'$，环 $C\otimes_{k_0}k'$ 正则（17.3.6）。
+此时仍称 $C$ 对 $k_0$ 几何正则。
+\cmt{O15-E02}{原文 d）写“对 $k_0$ 的任意扩域”。在本命题未要求 $k/k_0$ 有限型的情况下，任意扩域后的张量积可以不是诺特环，因而不满足原著（17.3.6）的正则环定义。例：$C=k=\mathbb Q(t_1,t_2,\ldots)$、$k_0=\mathbb Q$、$k'=k$；乘法映射的核 $I$ 满足 $I/I^2\simeq\Omega^1_{k/\mathbb Q}$，后者无限维，所以 $k\otimes_{\mathbb Q}k$ 不诺特。正文采用与（19.6.5）及（22.5.8）一致的有限扩域判据；亦可等价使用所有有限生成扩域。报告O15-E02给出细节。}
+
+\noindent（iii）设 $B=k[T_1,\ldots,T_r]$，$\mathfrak J\subset B$，并有 $C\simeq B/\mathfrak J$。
+设 $\mathfrak q\supseteq\mathfrak J$ 为 $B$ 的素理想，$\mathfrak p=\mathfrak q/\mathfrak J$。
+则（i）的各项还等价于以下条件，即“Zariski的Jacobian判据”：
+
+\noindent e）存在 $f_1,\ldots,f_m\in\mathfrak J$，其像生成 $B_{\mathfrak q}$ 中的理想 $\mathfrak J_{\mathfrak q}$，
+以及 $B$ 到自身的 $k_0$-导子 $D_1,\ldots,D_m$，使\cmt{O15-N02}{这里是 $k_0$-导子，而非必须为 $k$-导子。若 $\mathfrak J_{\mathfrak q}=0$，允许空生成系，空行列式按惯例为1。将 $k_0$ 换成较大的域会限制可用导子，不能静默替换。}
+\[
+ \det\bigl(D_j(f_i)\bigr)\notin\mathfrak q.
+\]
+
+
+\eproof
+$C$ 总可以写为上述 $B/\mathfrak J$。多项式代数 $B$ 对 $k$ 形式光滑（19.3.3），
+$k$ 对 $k_0$ 形式光滑则由可分性及（19.6.1）给出，故 $B$ 对 $k_0$ 形式光滑（19.3.5，ii）。
+（i）中 a）、b）、c）的等价性来自（22.6.4），（ii）中 a）、b）、c）的等价性来自（22.6.6）。
+（i）中 b）与 d）的等价性来自（22.5.8）。
+
+对每个有限扩域 $k'/k_0$，$C\otimes_{k_0}k'$ 诺特。
+其任意素理想 $\mathfrak r$ 处的局部环，都可由 $C_{\mathfrak p}\otimes_{k_0}k'$ 再局部化得到，其中 $\mathfrak p=\mathfrak r\cap C$；
+而 $C_{\mathfrak p}\otimes_{k_0}k'$ 本身是 $C\otimes_{k_0}k'$ 对 $C\setminus\mathfrak p$ 的局部化。
+因此（ii）中 d）与 b）的等价性由（i）的几何正则性条件得到。
+
+最后，$\Omega^1_{B/k_0}$ 是投射 $B$-模。（19.1.12）、（22.6.3）与导子的泛性质（20.4.8）
+把所需的纤维单射转化为一个可逆的有限配对矩阵，正是 e）。这证明（iii）。
+\qed\par
+
+Zariski实际关心的是局部环 $C_{\mathfrak p}$ 的微分正则性判据。
+含域的诺特局部环正则，等价于它对其素域在预进制拓扑下形式光滑（19.6.4）。
+因此只须在（22.6.7）中把 $k_0$ 换成 $k$ 的素域，就得到这样的判据。
+特别地，得到下面的结果；以后还将在（IV，6.12.5）把它作为Nagata较一般结果的特例重新得到。
+
+\egas{22.6.8}{推论（Zariski）}
+设 $C$ 为某个域上的有限型代数。则使 $C_{\mathfrak p}$ 为正则局部环的素理想 $\mathfrak p$ 所组成的集合，在 $\Spec C$ 中为开集。
+
+\egas{22.6.9}{注}
+（i）在（22.6.7）中，（i）、（ii）的性质判据与开性结论仍可推广到只假设 $k/k_0$ 具有有限纯不可分重数的情形。
+换言之（19.6.6），存在有限纯不可分扩域 $k'_0/k_0$，使阿廷局部环 $k\otimes_{k_0}k'_0$ 的剩余域 $k'$ 对 $k'_0$ 可分。
+但（iii）所给的、直接使用 $B=k[T_1,\ldots,T_r]$ 的Jacobian条件，不包含在这一原样推广中；
+应在适当扩域后选用形式光滑的多项式环境来应用它。
+\cmt{O15-E03}{原文笼统说“（22.6.7）的陈述仍然成立”，若包括（iii）的原样公式则不正确。
+取 $k_0=\mathbb F_p(s)$、$k=\mathbb F_p(u)$、$u^p=s$，以及 $B=k[T]$、$\mathfrak J=(T)$、$C=k$。
+用 $D=\partial/\partial T$ 与 $f=T$，Jacobian值为1；但 $k/k_0$ 不可分，故 $C$ 不对 $k_0$ 形式光滑。
+该扩张具有有限纯不可分重数。正文区分可以下降的性质判据与不能原样保留的环境判据；反例及平方零提升障碍见报告O15-E03。}
+
+由于 $k'$ 对 $k'_0$ 形式光滑（19.6.1），存在一个 $k'_0$-单同态
+\[
+ k'\longrightarrow k\otimes_{k_0}k'_0,
+\]
+其与到剩余域 $k'$ 的典范映射复合为恒等映射。
+因此 $C\otimes_{k_0}k'_0$ 可看作有限型 $k'$-代数；$k'/k'_0$ 可分，故可对它应用（22.6.7），
+再用（19.4.7）下降回原底域。由于后面不使用这一推广，原著将细节留给读者。
+原著接着指出：当对 $k/k_0$ 不作任何假设时，尚不知道（22.6.7）中这些结果是否仍成立。
+\cmt{O15-N03}{最后一句保留原书写作时的认识状态，不把它改写为截至本译稿日期的研究现状。上段的扩域下降路线来自原文；对（iii）适用范围的限定是本轮明示校订。}
+
+（ii）在（22.6.7）的一般假设下，设 $(k_\alpha)$ 为含 $k_0$ 的 $k$ 的一族向下滤过子域，且
+\[
+ \bigcap_\alpha k_\alpha(k^p)=k_0(k^p),
+\]
+其中 $p$ 是 $k_0$ 的特征指数。
+利用Nagata的维数计算方法，可以证明：在（22.6.7，iii）的Jacobian判据中，
+可以只取那些对某个合适的 $\alpha$ 而言是 $k_\alpha$-导子的 $D_j$。
+这一结果的意义在于，总可以找到这样的子域族，使每个 $[k:k_\alpha]$ 有限（21.8.6）。
+原著不证明这个不再使用的Zariski判据的加强形式。
+下一小节将对完备局部环给出一个同样归于Nagata的变形，其证明本质上使用相同方法，但技术困难略多。

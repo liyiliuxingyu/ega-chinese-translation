@@ -1,0 +1,716 @@
+{
+  "pdf_sha256": "5ac63b3c218d030742d332b4136e91661dbb132081607db1807a84dda31e07ee",
+  "pdf_pages": 1130,
+  "navigation": [
+    {
+      "pdf_page": 1,
+      "page_label": "i",
+      "screenshot": "integration/navigation_visual/final/pdf_1_print_i.png",
+      "screenshot_sha256": "e4b1c5441ca89df291eaa51b483d4290d1d5de5a8d0a05f8ea7524fab0ba92a1",
+      "compared_to": "integration/navigation_visual/pdf_1_print_i.png",
+      "pixels_equal": true
+    },
+    {
+      "pdf_page": 3,
+      "page_label": "iii",
+      "screenshot": "integration/navigation_visual/final/pdf_3_print_iii.png",
+      "screenshot_sha256": "7df57bd9747392ffd8d5d0f5fa050679788baf5b4a7da582ce238640764a2dfc",
+      "compared_to": "integration/navigation_visual/pdf_3_print_iii.png",
+      "pixels_equal": true
+    },
+    {
+      "pdf_page": 4,
+      "page_label": "iv",
+      "screenshot": "integration/navigation_visual/final/pdf_4_print_iv.png",
+      "screenshot_sha256": "55d23dfa1085b853eb7c6600eaafb784a0319874ec1fe430b6bf2fb39f32f4d2",
+      "compared_to": "integration/navigation_visual/pdf_4_print_iv.png",
+      "pixels_equal": true
+    },
+    {
+      "pdf_page": 5,
+      "page_label": "v",
+      "screenshot": "integration/navigation_visual/final/pdf_5_print_v.png",
+      "screenshot_sha256": "cbe6d4644132714b525bbcfcd4a842a2a232c63d907f5ec18619a1dec0a41973",
+      "compared_to": "integration/navigation_visual/pdf_5_print_v.png",
+      "pixels_equal": true
+    },
+    {
+      "pdf_page": 17,
+      "page_label": "xvii",
+      "screenshot": "integration/navigation_visual/final/pdf_17_print_xvii.png",
+      "screenshot_sha256": "67104dcbf5b06b280c1c6f5abd9631cc89e2e1c485ebe27d6db6e38b006cc9dc",
+      "compared_to": "integration/navigation_visual/pdf_17_print_xvii.png",
+      "pixels_equal": false
+    },
+    {
+      "pdf_page": 18,
+      "page_label": "xviii",
+      "screenshot": "integration/navigation_visual/final/pdf_18_print_xviii.png",
+      "screenshot_sha256": "32a89cc5fde898f53d2293bc092e86f66c55ee981b41acc8f6ed3455643bd9e3",
+      "compared_to": "integration/navigation_visual/pdf_18_print_xviii.png",
+      "pixels_equal": true
+    },
+    {
+      "pdf_page": 19,
+      "page_label": "xix",
+      "screenshot": "integration/navigation_visual/final/pdf_19_print_xix.png",
+      "screenshot_sha256": "2c052458ab39379fdabcd458fc07131f78cc574bd42216630504ceece6f7fbc7",
+      "compared_to": "integration/navigation_visual/pdf_19_print_xix.png",
+      "pixels_equal": false
+    },
+    {
+      "pdf_page": 943,
+      "page_label": "923",
+      "screenshot": "integration/navigation_visual/final/pdf_943_print_923.png",
+      "screenshot_sha256": "fda9cb3c722991fd948aedb583bc494c65c4a89def1ea2ea7a8372fe4ab58516",
+      "compared_to": "integration/navigation_visual/pdf_943_print_923.png",
+      "pixels_equal": true
+    },
+    {
+      "pdf_page": 945,
+      "page_label": "925",
+      "screenshot": "integration/navigation_visual/final/pdf_945_print_925.png",
+      "screenshot_sha256": "5aa13e680aff3d5af2befb62e821b4b4ebd743f237c2a624cd607676a2d25d82",
+      "compared_to": "integration/navigation_visual/pdf_945_print_925.png",
+      "pixels_equal": true
+    },
+    {
+      "pdf_page": 1040,
+      "page_label": "1020",
+      "screenshot": "integration/navigation_visual/final/pdf_1040_print_1020.png",
+      "screenshot_sha256": "034c7dc5d9dca745873144c21d2c66b8d644d3bda4f2923af010d12660735c05",
+      "compared_to": "integration/navigation_visual/pdf_1040_print_1020.png",
+      "pixels_equal": true
+    },
+    {
+      "pdf_page": 1041,
+      "page_label": "1021",
+      "screenshot": "integration/navigation_visual/final/pdf_1041_print_1021.png",
+      "screenshot_sha256": "668e8527ae9599b540aa411ec9133b9fbcc3dbd94ba39f486a3d5398f57aa776",
+      "compared_to": "integration/navigation_visual/pdf_1041_print_1021.png",
+      "pixels_equal": true
+    }
+  ],
+  "short": [
+    {
+      "pdf_page": 947,
+      "page_label": "927",
+      "screenshot": "integration/short_visual/final_5ac/pdf_947_print_927.png",
+      "screenshot_sha256": "0c2983b7d8f14d01627cb8fb2d817222cf91121954f2d841d62cb2472a2a7fda",
+      "compared_to": "integration/short_visual/final/main_pdf_947_print_927.png",
+      "pixels_equal": true
+    },
+    {
+      "pdf_page": 948,
+      "page_label": "928",
+      "screenshot": "integration/short_visual/final_5ac/pdf_948_print_928.png",
+      "screenshot_sha256": "d3385bb994271960cfef260e719bb0c3a9fb8617b28b13d5d4a12e5fe221f3fd",
+      "compared_to": "integration/short_visual/final/main_pdf_948_print_928.png",
+      "pixels_equal": true
+    },
+    {
+      "pdf_page": 949,
+      "page_label": "929",
+      "screenshot": "integration/short_visual/final_5ac/pdf_949_print_929.png",
+      "screenshot_sha256": "e8ca5f1c84a8cbda5468301134a82249502f20ae1ff9dfa9ebd328298667a7b1",
+      "compared_to": "integration/short_visual/final/main_pdf_949_print_929.png",
+      "pixels_equal": true
+    },
+    {
+      "pdf_page": 950,
+      "page_label": "930",
+      "screenshot": "integration/short_visual/final_5ac/pdf_950_print_930.png",
+      "screenshot_sha256": "441b492d51c861e5c788d97c953135df91beb2728d2d25ecb043d99649dbcb69",
+      "compared_to": "integration/short_visual/final/main_pdf_950_print_930.png",
+      "pixels_equal": true
+    },
+    {
+      "pdf_page": 951,
+      "page_label": "931",
+      "screenshot": "integration/short_visual/final_5ac/pdf_951_print_931.png",
+      "screenshot_sha256": "3c642cf605a8d7da60fc78449b0e1fd8a129591a4159b1d9a182ec6de0d503a6",
+      "compared_to": "integration/short_visual/final/main_pdf_951_print_931.png",
+      "pixels_equal": true
+    },
+    {
+      "pdf_page": 952,
+      "page_label": "932",
+      "screenshot": "integration/short_visual/final_5ac/pdf_952_print_932.png",
+      "screenshot_sha256": "91d2177464ed7a7850eb8bbc29987b9b842f9c27329287a18bf77a13c2f8f9e6",
+      "compared_to": "integration/short_visual/final/main_pdf_952_print_932.png",
+      "pixels_equal": true
+    },
+    {
+      "pdf_page": 953,
+      "page_label": "933",
+      "screenshot": "integration/short_visual/final_5ac/pdf_953_print_933.png",
+      "screenshot_sha256": "8c96a72f08ce3722404b365b1101103b9237a091f6cca89e6578043aaebb667a",
+      "compared_to": "integration/short_visual/final/main_pdf_953_print_933.png",
+      "pixels_equal": true
+    }
+  ],
+  "additional_part": {
+    "pdf_page": 1117,
+    "page_label": "1097",
+    "screenshot": "integration/navigation_visual/final/pdf_1117_print_1097.png",
+    "screenshot_sha256": "77873950710396a9f76b4650713ea97de6a4020b6d183c5b6089884c977c9cfa"
+  },
+  "toc_parts": [
+    {
+      "level": 1,
+      "title": "预备笔记：已译部分",
+      "pdf_page": 945,
+      "page_label": "925"
+    },
+    {
+      "level": 1,
+      "title": "各原分册的书末资料",
+      "pdf_page": 1041,
+      "page_label": "1021"
+    },
+    {
+      "level": 1,
+      "title": "译稿来源与版本记录",
+      "pdf_page": 1117,
+      "page_label": "1097"
+    }
+  ],
+  "toc_sections": [
+    {
+      "level": 3,
+      "title": "§7 构造指定类型的超平面截面与多截面的应用",
+      "pdf_page": 972,
+      "page_label": "952"
+    },
+    {
+      "level": 3,
+      "title": "§8 例外超平面集合的维数",
+      "pdf_page": 974,
+      "page_label": "954"
+    },
+    {
+      "level": 3,
+      "title": "§9 更换射影嵌入",
+      "pdf_page": 997,
+      "page_label": "977"
+    },
+    {
+      "level": 3,
+      "title": "§10 超平面截面束与簇的爆破的纤维化",
+      "pdf_page": 1000,
+      "page_label": "980"
+    },
+    {
+      "level": 3,
+      "title": "§11 Grassmann 概形",
+      "pdf_page": 1004,
+      "page_label": "984"
+    },
+    {
+      "level": 3,
+      "title": "§12 将上述结果推广到线性截面",
+      "pdf_page": 1008,
+      "page_label": "988"
+    },
+    {
+      "level": 3,
+      "title": "§13 初等态射与 M. Artin 定理",
+      "pdf_page": 1018,
+      "page_label": "998"
+    },
+    {
+      "level": 3,
+      "title": "§14 锥投影",
+      "pdf_page": 1026,
+      "page_label": "1006"
+    },
+    {
+      "level": 3,
+      "title": "§15 前述若干结果的公理化",
+      "pdf_page": 1036,
+      "page_label": "1016"
+    }
+  ],
+  "toc_count": 416,
+  "short_marker_pages": [
+    948
+  ],
+  "source_tex_sha256": "eb805f3acc63a5322bec84f7df57330da307039dafb2570fb8188011d4a94a6f",
+  "toc17_text": "目录\nxvii\n7.8\n对固有态射的应用：II．上同调平坦性判据\n. . . .\n914\n7.9\n对固有态射的应用：III．Euler–Poincaré 特征数与\nHilbert 多项式的不变性. . . . . . . . . . . . . . .\n917\n第IV 章及后续材料的待译范围\n923\n预备笔记：已译部分\n925\nEGA V 短篇：函数的奇异零点与超奇异零点\n927\nV.1（原IV.16）：函数的奇异集、超奇异集与微分判据. . . . .\n927\nEGA V 预备笔记：超平面截面与锥投影\n935\n编写摘要\n. . . . . . . . . . . . . . . . . . . . . . . . . . . . . .\n935\n拟定目录\n. . . . . . . . . . . . . . . . . . . . . . . . . . . . . .\n935\n§1\n预备知识与记号. . . . . . . . . . . . . . . . . . . . . . . .\n936\n§2\n泛超平面截面的研究：局部性质. . . . . . . . . . . . . . .\n939\n几何性质〔英译编者所加标题〕. . . . . . . . . . . . . . .\n942\n§3\n泛超平面截面：几何不可约性与连通性. . . . . . . . . . .\n945\n§4\n变动超平面截面的研究：“充分一般”的截面. . . . . . . .\n946\n§5\nSeidenberg 类型定理\n. . . . . . . . . . . . . . . . . . . . .\n949\n§6\n任意超平面截面的连通性. . . . . . . . . . . . . . . . . . .\n951\n§7\n构造指定类型的超平面截面与多截面的应用. . . . . . . . .\n952\n§8\n例外超平面集合的维数. . . . . . . . . . . . . . . . . . . .\n954\n§9\n更换射影嵌入\n. . . . . . . . . . . . . . . . . . . . . . . . .\n977\n§10\n超平面截面束与簇的爆破的纤维化. . . . . . . . . . . . .\n980\n§11\nGrassmann 概形. . . . . . . . . . . . . . . . . . . . . . .\n984\n§12\n将上述结果推广到线性截面. . . . . . . . . . . . . . . . .\n988\n记号补充\n. . . . . . . . . . . . . . . . . . . . . . . . . . .\n988\n§13\n初等态射与M. Artin 定理. . . . . . . . . . . . . . . . . .\n998\n§14\n锥投影. . . . . . . . . . . . . . . . . . . . . . . . . . . . .\n1006\n§15\n前述若干结果的公理化. . . . . . . . . . . . . . . . . . . .\n1016\n各原分册的书末资料\n1021\n第一卷原著参考文献\n1023\n第一卷原著记号索引\n1025\n",
+  "toc19_text": "目录\nxix\n第四卷勘误清单三：与第0 章§§16–23 已译部分有关的选译\n1093\nA）排印错误：七项选译. . . . . . . . . . . . . . . . . . . . . .\n1093\nB）正文修订：十项选译. . . . . . . . . . . . . . . . . . . . . .\n1093\n本版补入的§21 相关排印勘误. . . . . . . . . . . . . . . .\n1094\n本版补入的22.1–22.3 相关正式勘误\n. . . . . . . . . . . .\n1095\n第十五版补入的22.7 相关正式勘误. . . . . . . . . . . . .\n1095\n第十六版补入的§23 相关正式勘误. . . . . . . . . . . . .\n1095\n译稿来源与版本记录\n1097\n第一卷既有译稿说明\n1101\n第二卷既有译稿说明\n1103\n第三卷第一部分既有译稿说明\n1105\n底本出版与版权说明\n1107\n来源、署名与版权说明\n1109\n已译部分使用的底本. . . . . . . . . . . . . . . . . . . . . . . .\n1109\n外部核查资料. . . . . . . . . . . . . . . . . . . . . . . . . . . .\n1110\n保留的版权信息. . . . . . . . . . . . . . . . . . . . . . . . . . .\n1110\n",
+  "link_targets": [
+    {
+      "toc_pdf_page": 17,
+      "rect": [
+        99.8949966430664,
+        183.47601318359375,
+        247.64100646972656,
+        198.47003173828125
+      ],
+      "destination_pdf_page": 943,
+      "destination_page_label": "923"
+    },
+    {
+      "toc_pdf_page": 17,
+      "rect": [
+        99.8949966430664,
+        225.38104248046875,
+        207.89500427246094,
+        237.38104248046875
+      ],
+      "destination_pdf_page": 945,
+      "destination_page_label": "925"
+    },
+    {
+      "toc_pdf_page": 17,
+      "rect": [
+        99.8949966430664,
+        251.48699951171875,
+        311.61700439453125,
+        266.48101806640625
+      ],
+      "destination_pdf_page": 947,
+      "destination_page_label": "927"
+    },
+    {
+      "toc_pdf_page": 17,
+      "rect": [
+        115.6449966430664,
+        268.26800537109375,
+        365.0199890136719,
+        283.14599609375
+      ],
+      "destination_pdf_page": 947,
+      "destination_page_label": "927"
+    },
+    {
+      "toc_pdf_page": 17,
+      "rect": [
+        99.8949966430664,
+        295.64801025390625,
+        290.61700439453125,
+        310.64202880859375
+      ],
+      "destination_pdf_page": 955,
+      "destination_page_label": "935"
+    },
+    {
+      "toc_pdf_page": 17,
+      "rect": [
+        115.6449966430664,
+        315.86199951171875,
+        157.64500427246094,
+        322.1619873046875
+      ],
+      "destination_pdf_page": 955,
+      "destination_page_label": "935"
+    },
+    {
+      "toc_pdf_page": 17,
+      "rect": [
+        115.6449966430664,
+        332.58001708984375,
+        157.64500427246094,
+        338.8800048828125
+      ],
+      "destination_pdf_page": 955,
+      "destination_page_label": "935"
+    },
+    {
+      "toc_pdf_page": 17,
+      "rect": [
+        115.6449966430664,
+        345.864013671875,
+        209.9770050048828,
+        360.7430114746094
+      ],
+      "destination_pdf_page": 956,
+      "destination_page_label": "936"
+    },
+    {
+      "toc_pdf_page": 17,
+      "rect": [
+        115.6449966430664,
+        362.5820007324219,
+        283.47698974609375,
+        377.46002197265625
+      ],
+      "destination_pdf_page": 959,
+      "destination_page_label": "939"
+    },
+    {
+      "toc_pdf_page": 17,
+      "rect": [
+        139.7949981689453,
+        382.7330017089844,
+        286.7950134277344,
+        389.03302001953125
+      ],
+      "destination_pdf_page": 962,
+      "destination_page_label": "942"
+    },
+    {
+      "toc_pdf_page": 17,
+      "rect": [
+        115.6449966430664,
+        396.01702880859375,
+        314.97698974609375,
+        410.8960266113281
+      ],
+      "destination_pdf_page": 965,
+      "destination_page_label": "945"
+    },
+    {
+      "toc_pdf_page": 17,
+      "rect": [
+        115.6449966430664,
+        412.7350158691406,
+        341.22698974609375,
+        427.614013671875
+      ],
+      "destination_pdf_page": 966,
+      "destination_page_label": "946"
+    },
+    {
+      "toc_pdf_page": 17,
+      "rect": [
+        115.6449966430664,
+        429.4530029296875,
+        231.5970001220703,
+        444.3310241699219
+      ],
+      "destination_pdf_page": 969,
+      "destination_page_label": "949"
+    },
+    {
+      "toc_pdf_page": 17,
+      "rect": [
+        115.6449966430664,
+        446.1710205078125,
+        251.9770050048828,
+        461.04901123046875
+      ],
+      "destination_pdf_page": 971,
+      "destination_page_label": "951"
+    },
+    {
+      "toc_pdf_page": 17,
+      "rect": [
+        115.6449966430664,
+        462.88800048828125,
+        335.97698974609375,
+        477.76702880859375
+      ],
+      "destination_pdf_page": 972,
+      "destination_page_label": "952"
+    },
+    {
+      "toc_pdf_page": 17,
+      "rect": [
+        115.6449966430664,
+        479.60601806640625,
+        241.4770050048828,
+        494.4850158691406
+      ],
+      "destination_pdf_page": 974,
+      "destination_page_label": "954"
+    },
+    {
+      "toc_pdf_page": 17,
+      "rect": [
+        115.6449966430664,
+        496.3240051269531,
+        199.4770050048828,
+        511.2020263671875
+      ],
+      "destination_pdf_page": 997,
+      "destination_page_label": "977"
+    },
+    {
+      "toc_pdf_page": 17,
+      "rect": [
+        115.6449966430664,
+        513.0419921875,
+        299.22698974609375,
+        527.9200439453125
+      ],
+      "destination_pdf_page": 1000,
+      "destination_page_label": "980"
+    },
+    {
+      "toc_pdf_page": 17,
+      "rect": [
+        115.6449966430664,
+        529.759033203125,
+        217.7790069580078,
+        544.6380004882812
+      ],
+      "destination_pdf_page": 1004,
+      "destination_page_label": "984"
+    },
+    {
+      "toc_pdf_page": 17,
+      "rect": [
+        115.6449966430664,
+        546.47705078125,
+        267.72698974609375,
+        561.3560180664062
+      ],
+      "destination_pdf_page": 1008,
+      "destination_page_label": "988"
+    },
+    {
+      "toc_pdf_page": 17,
+      "rect": [
+        139.7949981689453,
+        566.6280517578125,
+        181.7949981689453,
+        572.927978515625
+      ],
+      "destination_pdf_page": 1008,
+      "destination_page_label": "988"
+    },
+    {
+      "toc_pdf_page": 17,
+      "rect": [
+        115.6449966430664,
+        579.9130249023438,
+        263.09698486328125,
+        594.791015625
+      ],
+      "destination_pdf_page": 1018,
+      "destination_page_label": "998"
+    },
+    {
+      "toc_pdf_page": 17,
+      "rect": [
+        115.6449966430664,
+        596.6300048828125,
+        173.2270050048828,
+        611.509033203125
+      ],
+      "destination_pdf_page": 1026,
+      "destination_page_label": "1006"
+    },
+    {
+      "toc_pdf_page": 17,
+      "rect": [
+        115.6449966430664,
+        613.3480224609375,
+        246.7270050048828,
+        628.22705078125
+      ],
+      "destination_pdf_page": 1036,
+      "destination_page_label": "1016"
+    },
+    {
+      "toc_pdf_page": 17,
+      "rect": [
+        99.8949966430664,
+        655.1900024414062,
+        207.89500427246094,
+        667.1900024414062
+      ],
+      "destination_pdf_page": 1041,
+      "destination_page_label": "1021"
+    },
+    {
+      "toc_pdf_page": 17,
+      "rect": [
+        99.8949966430664,
+        683.9520263671875,
+        194.39500427246094,
+        694.4520263671875
+      ],
+      "destination_pdf_page": 1043,
+      "destination_page_label": "1023"
+    },
+    {
+      "toc_pdf_page": 17,
+      "rect": [
+        99.8949966430664,
+        711.39501953125,
+        194.39500427246094,
+        721.89501953125
+      ],
+      "destination_pdf_page": 1045,
+      "destination_page_label": "1025"
+    },
+    {
+      "toc_pdf_page": 19,
+      "rect": [
+        99.8949966430664,
+        122.93603515625,
+        387.3009948730469,
+        137.92999267578125
+      ],
+      "destination_pdf_page": 1113,
+      "destination_page_label": "1093"
+    },
+    {
+      "toc_pdf_page": 19,
+      "rect": [
+        115.6449966430664,
+        139.3790283203125,
+        228.52000427246094,
+        154.25701904296875
+      ],
+      "destination_pdf_page": 1113,
+      "destination_page_label": "1093"
+    },
+    {
+      "toc_pdf_page": 19,
+      "rect": [
+        115.6449966430664,
+        155.759033203125,
+        228.07899475097656,
+        170.63702392578125
+      ],
+      "destination_pdf_page": 1113,
+      "destination_page_label": "1093"
+    },
+    {
+      "toc_pdf_page": 19,
+      "rect": [
+        139.7949981689453,
+        172.1390380859375,
+        277.8699951171875,
+        187.01702880859375
+      ],
+      "destination_pdf_page": 1114,
+      "destination_page_label": "1094"
+    },
+    {
+      "toc_pdf_page": 19,
+      "rect": [
+        139.7949981689453,
+        188.51904296875,
+        304.8760070800781,
+        203.39703369140625
+      ],
+      "destination_pdf_page": 1115,
+      "destination_page_label": "1095"
+    },
+    {
+      "toc_pdf_page": 19,
+      "rect": [
+        139.7949981689453,
+        204.89898681640625,
+        301.9570007324219,
+        219.77703857421875
+      ],
+      "destination_pdf_page": 1115,
+      "destination_page_label": "1095"
+    },
+    {
+      "toc_pdf_page": 19,
+      "rect": [
+        139.7949981689453,
+        221.27899169921875,
+        298.8699951171875,
+        236.15704345703125
+      ],
+      "destination_pdf_page": 1115,
+      "destination_page_label": "1095"
+    },
+    {
+      "toc_pdf_page": 19,
+      "rect": [
+        99.8949966430664,
+        262.5570068359375,
+        207.89500427246094,
+        274.5570068359375
+      ],
+      "destination_pdf_page": 1117,
+      "destination_page_label": "1097"
+    },
+    {
+      "toc_pdf_page": 19,
+      "rect": [
+        99.8949966430664,
+        290.75701904296875,
+        194.39500427246094,
+        301.25701904296875
+      ],
+      "destination_pdf_page": 1121,
+      "destination_page_label": "1101"
+    },
+    {
+      "toc_pdf_page": 19,
+      "rect": [
+        99.8949966430664,
+        317.63702392578125,
+        194.39500427246094,
+        328.13702392578125
+      ],
+      "destination_pdf_page": 1123,
+      "destination_page_label": "1103"
+    },
+    {
+      "toc_pdf_page": 19,
+      "rect": [
+        99.8949966430664,
+        344.51702880859375,
+        236.39500427246094,
+        355.01702880859375
+      ],
+      "destination_pdf_page": 1125,
+      "destination_page_label": "1105"
+    },
+    {
+      "toc_pdf_page": 19,
+      "rect": [
+        99.8949966430664,
+        371.3970031738281,
+        194.39500427246094,
+        381.8970031738281
+      ],
+      "destination_pdf_page": 1127,
+      "destination_page_label": "1107"
+    },
+    {
+      "toc_pdf_page": 19,
+      "rect": [
+        99.8949966430664,
+        398.2770080566406,
+        204.89500427246094,
+        408.7770080566406
+      ],
+      "destination_pdf_page": 1129,
+      "destination_page_label": "1109"
+    },
+    {
+      "toc_pdf_page": 19,
+      "rect": [
+        115.6449966430664,
+        415.49700927734375,
+        210.14500427246094,
+        421.7970275878906
+      ],
+      "destination_pdf_page": 1129,
+      "destination_page_label": "1109"
+    },
+    {
+      "toc_pdf_page": 19,
+      "rect": [
+        115.6449966430664,
+        431.87701416015625,
+        178.64500427246094,
+        438.177001953125
+      ],
+      "destination_pdf_page": 1130,
+      "destination_page_label": "1110"
+    },
+    {
+      "toc_pdf_page": 19,
+      "rect": [
+        115.6449966430664,
+        448.25701904296875,
+        189.14500427246094,
+        454.5570068359375
+      ],
+      "destination_pdf_page": 1130,
+      "destination_page_label": "1110"
+    }
+  ]
+}

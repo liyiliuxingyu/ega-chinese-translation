@@ -1,0 +1,13 @@
+{
+  "completed": "底本第53页§14标题及第54页开头NB至the section factors by L括注末尾",
+  "next": "第54页 If not, we have an f:X→P，定义相对于一般态射的锥投影",
+  "previous_project": "libfile_fde3_f-edd49e7af7b481918d2524d1d8227717_49ac57203c0c81918f3630f0324dcb35",
+  "source_sha256": "23a20ef32fd16a1bd623c0c08ac080d04fc94f248de12133b713a19d6b0330d9",
+  "merged_into_main": false,
+  "pdf_pages": 4,
+  "unresolved": [
+    "Grassmann概形指标约定需与全稿合并时统筹",
+    "后续锥投影性质尚未译出或独立验证",
+    "第13节待核及8.8缺文、8.7(c)残缺全部保持"
+  ]
+}

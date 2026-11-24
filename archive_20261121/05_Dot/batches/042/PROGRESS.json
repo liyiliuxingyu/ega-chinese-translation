@@ -1,0 +1,14 @@
+{
+  "completed": "底本第56页In the case a) we have already seen (I hope)起整个证明段至before 14.1止",
+  "next": "第56页Corollary 14.2标题及跨第57页正文",
+  "previous_project": "libfile_fde3_f-4475035ab7208191ace3395ae0c126e1_49ac57203c0c81918f3630f0324dcb35",
+  "source_sha256": "23a20ef32fd16a1bd623c0c08ac080d04fc94f248de12133b713a19d6b0330d9",
+  "merged_into_main": false,
+  "pdf_pages": 4,
+  "unresolved": [
+    "反向不等式条件句残缺，未补造反证假设",
+    "括号内纤维积排式残缺，原符号照存",
+    "b项等价与相交论证条件待核，陈述缺文未恢复",
+    "证明原文已译但未独立验证或修复；所有旧待核保持"
+  ]
+}

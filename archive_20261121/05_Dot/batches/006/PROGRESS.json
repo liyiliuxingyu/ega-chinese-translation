@@ -1,0 +1,12 @@
+{
+  "completed": "Remark 8.12 including editorial paragraphs and footnotes 44-48",
+  "next": "Printed page 31 Proposition 8.13 heading",
+  "source": "EGAVaiello.pdf",
+  "source_sha256": "23a20ef32fd16a1bd623c0c08ac080d04fc94f248de12133b713a19d6b0330d9",
+  "cautions": [
+    "8.8 assumptions not restored",
+    "8.9 open immersion not proved",
+    "independent supplement not merged"
+  ],
+  "review": "Independent paragraph/formula/footnote audit passed; all 4 PDF pages inspected"
+}

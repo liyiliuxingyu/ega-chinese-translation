@@ -1,0 +1,700 @@
+{
+  "schema": "dot_new_index/1",
+  "records": [
+    {
+      "id": "new001",
+      "source_label": 50,
+      "source_label_provenance": "第三辑 aggregate labels 50–68 与连续次序；这两批原 PROGRESS.json 未给数字 batch",
+      "archive_name": "EGA第五卷_第66页行列式交换图_续译工程.zip",
+      "zip_sha256": "d57f89d3a047655c40576242d72f41cfc9d71bb743f9894b28f9bb0714a155f9",
+      "main_tex_entry": "EGA第五卷_第66页行列式交换图_校订续译.tex",
+      "source_tex_sha256": "d47b2d5f7d52ad18bc65cebfbf4c91a724893b964bb38642b5c66396ef5dd291",
+      "local_archive_path": "recovered_20261121/dot_new/EGA第五卷_第66页行列式交换图_续译工程.zip",
+      "source_tex_path": "integration_20261121/dot_audit_extract/n01/EGA第五卷_第66页行列式交换图_校订续译.tex",
+      "scope": "66页行列式交换图、符号说明、零点子概形与交模",
+      "english_physical_pages": [
+        66
+      ],
+      "french_body_physical_pages": null,
+      "last_item": "交模段末：L 是 P 与 Q 在 M 中的交",
+      "next_anchor_historical": "66页 It remains only to completely clarify the particularly described situation with X/Y/S",
+      "merged_target_file": "text/v1_2.tex",
+      "merged_body_lines": [
+        181,
+        191
+      ],
+      "merged_translator_notes_lines": null,
+      "nonduplicate_criterion": "Distinct ZIP and TeX SHA/name against all 19 and old 56; complete normalized author body and notes occur once in one active main input. Standalone raw archives and single-file build are alternate representations, not additional body insertions.",
+      "series": "new_20261121",
+      "integration_treatment": "new_body_continuation",
+      "suggested_archive_relative_path": "05_Dot/new_20261121/new001/EGA第五卷_第66页行列式交换图_续译工程.zip",
+      "suggested_source_relative_path": "05_Dot/new_20261121/new001/EGA第五卷_第66页行列式交换图_校订续译.tex",
+      "suggested_paths_status": "Proposal for final package; not created by this audit"
+    },
+    {
+      "id": "new002",
+      "source_label": 51,
+      "source_label_provenance": "第三辑 aggregate labels 50–68 与连续次序；这两批原 PROGRESS.json 未给数字 batch",
+      "archive_name": "EGA第五卷_行列式线丛与判别式_续译工程.zip",
+      "zip_sha256": "c525ff60d17d75bdf4cd2759f6bf50454d1b58449d8776be7683f2d4c9d13563",
+      "main_tex_entry": "EGA第五卷_行列式线丛与判别式_校订续译.tex",
+      "source_tex_sha256": "0280bf24a079fe91b07ee6ef05f044b729d46c20304d05c0b20c5720c4e55ddc",
+      "local_archive_path": "recovered_20261121/dot_new/EGA第五卷_行列式线丛与判别式_续译工程.zip",
+      "source_tex_path": "integration_20261121/dot_audit_extract/n02/EGA第五卷_行列式线丛与判别式_校订续译.tex",
+      "scope": "相对情形的行列式线丛及判别式",
+      "english_physical_pages": [
+        66,
+        67
+      ],
+      "french_body_physical_pages": null,
+      "last_item": "以引理所称交换性得到同态 b",
+      "next_anchor_historical": "67页 The non-supersingular points are therefore exactly the ones",
+      "merged_target_file": "text/v1_2.tex",
+      "merged_body_lines": [
+        193,
+        206
+      ],
+      "merged_translator_notes_lines": null,
+      "nonduplicate_criterion": "Distinct ZIP and TeX SHA/name against all 19 and old 56; complete normalized author body and notes occur once in one active main input. Standalone raw archives and single-file build are alternate representations, not additional body insertions.",
+      "series": "new_20261121",
+      "integration_treatment": "new_body_continuation",
+      "suggested_archive_relative_path": "05_Dot/new_20261121/new002/EGA第五卷_行列式线丛与判别式_续译工程.zip",
+      "suggested_source_relative_path": "05_Dot/new_20261121/new002/EGA第五卷_行列式线丛与判别式_校订续译.tex",
+      "suggested_paths_status": "Proposal for final package; not created by this audit"
+    },
+    {
+      "id": "new003",
+      "source_label": 52,
+      "source_label_provenance": "原批 PROGRESS.json 的 batch 字段",
+      "archive_name": "EGA第五卷_非超奇异点正合列_续译工程.zip",
+      "zip_sha256": "4ce4c4c1cf59df6c17068e7251bf9f333226c3b4fa1932eb297c1c23564e780e",
+      "main_tex_entry": "EGA第五卷_非超奇异点正合列_校订续译.tex",
+      "source_tex_sha256": "60ffbd3539ac7b9d51f98684e60f8811ab7fab6d48f87e57f48762145f15f3fa",
+      "local_archive_path": "recovered_20261121/dot_new/EGA第五卷_非超奇异点正合列_续译工程.zip",
+      "source_tex_path": "integration_20261121/dot_audit_extract/n03/EGA第五卷_非超奇异点正合列_校订续译.tex",
+      "scope": "非超奇异点的交模说明及两条正合列",
+      "english_physical_pages": [
+        67
+      ],
+      "french_body_physical_pages": [
+        102
+      ],
+      "last_item": "第二条正合列末",
+      "next_anchor_historical": "It is necessary to summarize the whole situation in a recapitulating proposition",
+      "merged_target_file": "text/v1_2.tex",
+      "merged_body_lines": [
+        208,
+        228
+      ],
+      "merged_translator_notes_lines": [
+        493,
+        528
+      ],
+      "nonduplicate_criterion": "Distinct ZIP and TeX SHA/name against all 19 and old 56; complete normalized author body and notes occur once in one active main input. Standalone raw archives and single-file build are alternate representations, not additional body insertions.",
+      "series": "new_20261121",
+      "integration_treatment": "new_body_continuation",
+      "suggested_archive_relative_path": "05_Dot/new_20261121/new003/EGA第五卷_非超奇异点正合列_续译工程.zip",
+      "suggested_source_relative_path": "05_Dot/new_20261121/new003/EGA第五卷_非超奇异点正合列_校订续译.tex",
+      "suggested_paths_status": "Proposal for final package; not created by this audit"
+    },
+    {
+      "id": "new004",
+      "source_label": 53,
+      "source_label_provenance": "原批 PROGRESS.json 的 batch 字段",
+      "archive_name": "EGA第五卷_可逆模扭曲与单位变换_续译工程.zip",
+      "zip_sha256": "893be941ab376eb5c46133d9fe603ad1da9cebb3bbeb5ffbcc6601b95cb280c0",
+      "main_tex_entry": "EGA第五卷_可逆模扭曲与单位变换_校订续译.tex",
+      "source_tex_sha256": "ca2c505dfd1f5e5e244d981b1ef0777952d8e34d4d1d7443044f5e7064502301",
+      "local_archive_path": "recovered_20261121/dot_new/EGA第五卷_可逆模扭曲与单位变换_续译工程.zip",
+      "source_tex_path": "integration_20261121/dot_audit_extract/n04/EGA第五卷_可逆模扭曲与单位变换_校订续译.tex",
+      "scope": "可逆模扭曲及乘单位变换",
+      "english_physical_pages": [
+        67
+      ],
+      "french_body_physical_pages": [
+        102
+      ],
+      "last_item": "D(φ) 乘以 u^M，M 为 X/Y 相对维数",
+      "next_anchor_historical": "Remark. With the mentioned conditions about X, Y, S, φ",
+      "merged_target_file": "text/v1_2.tex",
+      "merged_body_lines": [
+        230,
+        238
+      ],
+      "merged_translator_notes_lines": [
+        530,
+        542
+      ],
+      "nonduplicate_criterion": "Distinct ZIP and TeX SHA/name against all 19 and old 56; complete normalized author body and notes occur once in one active main input. Standalone raw archives and single-file build are alternate representations, not additional body insertions.",
+      "series": "new_20261121",
+      "integration_treatment": "new_body_continuation",
+      "suggested_archive_relative_path": "05_Dot/new_20261121/new004/EGA第五卷_可逆模扭曲与单位变换_续译工程.zip",
+      "suggested_source_relative_path": "05_Dot/new_20261121/new004/EGA第五卷_可逆模扭曲与单位变换_校订续译.tex",
+      "suggested_paths_status": "Proposal for final package; not created by this audit"
+    },
+    {
+      "id": "new005",
+      "source_label": 54,
+      "source_label_provenance": "原批 PROGRESS.json 的 batch 字段",
+      "archive_name": "EGA第五卷_普通奇异零点备注_续译工程.zip",
+      "zip_sha256": "eafdf41bd4ecaa8d803fd21e295cd2ce085585941c4af15dc62e50a6e5af2ccd",
+      "main_tex_entry": "EGA第五卷_普通奇异零点备注_校订续译.tex",
+      "source_tex_sha256": "b8e1014f4bbaaeb016e240e27d6626617b65440d342c3959894044dbfbda49e7",
+      "local_archive_path": "recovered_20261121/dot_new/EGA第五卷_普通奇异零点备注_续译工程.zip",
+      "source_tex_path": "integration_20261121/dot_audit_extract/n05/EGA第五卷_普通奇异零点备注_校订续译.tex",
+      "scope": "普通奇异零点备注",
+      "english_physical_pages": [
+        67,
+        68
+      ],
+      "french_body_physical_pages": [
+        102,
+        103
+      ],
+      "last_item": "仿射平面 φ=xy 的例子",
+      "next_anchor_historical": "Here is a diagram analogous to (D) but for a section ε of an invertible module K",
+      "merged_target_file": "text/v1_2.tex",
+      "merged_body_lines": [
+        240,
+        251
+      ],
+      "merged_translator_notes_lines": [
+        544,
+        550
+      ],
+      "nonduplicate_criterion": "Distinct ZIP and TeX SHA/name against all 19 and old 56; complete normalized author body and notes occur once in one active main input. Standalone raw archives and single-file build are alternate representations, not additional body insertions.",
+      "series": "new_20261121",
+      "integration_treatment": "new_body_continuation",
+      "suggested_archive_relative_path": "05_Dot/new_20261121/new005/EGA第五卷_普通奇异零点备注_续译工程.zip",
+      "suggested_source_relative_path": "05_Dot/new_20261121/new005/EGA第五卷_普通奇异零点备注_校订续译.tex",
+      "suggested_paths_status": "Proposal for final package; not created by this audit"
+    },
+    {
+      "id": "new006",
+      "source_label": 55,
+      "source_label_provenance": "原批 PROGRESS.json 的 batch 字段",
+      "archive_name": "EGA第五卷_可逆模截面类比图_续译工程.zip",
+      "zip_sha256": "b2f39e3ed0d8df00074ec0580502bf4a9715dba4c63dacf1498062a88f5cae1b",
+      "main_tex_entry": "EGA第五卷_可逆模截面类比图_校订续译.tex",
+      "source_tex_sha256": "065fa251ce4fadafb896b4e0763d4ed3e7a5a8774dffb78501b04e426bc2a16d",
+      "local_archive_path": "recovered_20261121/dot_new/EGA第五卷_可逆模截面类比图_续译工程.zip",
+      "source_tex_path": "integration_20261121/dot_audit_extract/n06/EGA第五卷_可逆模截面类比图_校订续译.tex",
+      "scope": "可逆模截面类比图与划去段起始标记",
+      "english_physical_pages": [
+        68
+      ],
+      "french_body_physical_pages": [
+        103,
+        104
+      ],
+      "last_item": "英译者方括号：以下为作者划去稿",
+      "next_anchor_historical": "Upon arriving at this point, admirable for its generality",
+      "merged_target_file": "text/v1_2.tex",
+      "merged_body_lines": [
+        253,
+        270
+      ],
+      "merged_translator_notes_lines": [
+        552,
+        575
+      ],
+      "nonduplicate_criterion": "Distinct ZIP and TeX SHA/name against all 19 and old 56; complete normalized author body and notes occur once in one active main input. Standalone raw archives and single-file build are alternate representations, not additional body insertions.",
+      "series": "new_20261121",
+      "integration_treatment": "new_body_continuation",
+      "suggested_archive_relative_path": "05_Dot/new_20261121/new006/EGA第五卷_可逆模截面类比图_续译工程.zip",
+      "suggested_source_relative_path": "05_Dot/new_20261121/new006/EGA第五卷_可逆模截面类比图_校订续译.tex",
+      "suggested_paths_status": "Proposal for final package; not created by this audit"
+    },
+    {
+      "id": "new007",
+      "source_label": 56,
+      "source_label_provenance": "原批 PROGRESS.json 的 batch 字段",
+      "archive_name": "EGA第五卷_划去稿的增广定义_续译工程.zip",
+      "zip_sha256": "a2b960054e3d3a6e776095d84e0a1a12260d8d47d928fe20b1538ccbedeff869",
+      "main_tex_entry": "EGA第五卷_划去稿的增广定义_校订续译.tex",
+      "source_tex_sha256": "738c4daafd158361337e7ed41d9e2d179dd3e1b86157f8d6aa7b2887cf3adcf4",
+      "local_archive_path": "recovered_20261121/dot_new/EGA第五卷_划去稿的增广定义_续译工程.zip",
+      "source_tex_path": "integration_20261121/dot_audit_extract/n07/EGA第五卷_划去稿的增广定义_校订续译.tex",
+      "scope": "作者划去稿：一般增广与普通二次型增广定义",
+      "english_physical_pages": [
+        68,
+        69
+      ],
+      "french_body_physical_pages": [
+        104,
+        105
+      ],
+      "last_item": "素理想纤维乃至极大理想纤维判别句",
+      "next_anchor_historical": "Proposition 8. For the augmentation A → A/I to be of ordinary quadratic type",
+      "merged_target_file": "text/v1_2.tex",
+      "merged_body_lines": [
+        282,
+        313
+      ],
+      "merged_translator_notes_lines": [
+        589,
+        596
+      ],
+      "nonduplicate_criterion": "Distinct ZIP and TeX SHA/name against all 19 and old 56; complete normalized author body and notes occur once in one active main input. Standalone raw archives and single-file build are alternate representations, not additional body insertions.",
+      "series": "new_20261121",
+      "integration_treatment": "new_body_continuation",
+      "suggested_archive_relative_path": "05_Dot/new_20261121/new007/EGA第五卷_划去稿的增广定义_续译工程.zip",
+      "suggested_source_relative_path": "05_Dot/new_20261121/new007/EGA第五卷_划去稿的增广定义_校订续译.tex",
+      "suggested_paths_status": "Proposal for final package; not created by this audit"
+    },
+    {
+      "id": "new008",
+      "source_label": 57,
+      "source_label_provenance": "原批 PROGRESS.json 的 batch 字段",
+      "archive_name": "EGA第五卷_划去稿命题8及引理_续译工程.zip",
+      "zip_sha256": "8ae071d764a395acaeda87b7d66f60bee8744d7bec250fbf8f112e4c5cab0d61",
+      "main_tex_entry": "EGA第五卷_划去稿命题8及引理_校订续译.tex",
+      "source_tex_sha256": "3695ee1e613ece7b836e77555783a0056e279414541e47626ee5a759bc8a5826",
+      "local_archive_path": "recovered_20261121/dot_new/EGA第五卷_划去稿命题8及引理_续译工程.zip",
+      "source_tex_path": "integration_20261121/dot_audit_extract/n08/EGA第五卷_划去稿命题8及引理_校订续译.tex",
+      "scope": "作者划去稿：命题8、引理8.1与证明后的评论",
+      "english_physical_pages": [
+        69
+      ],
+      "french_body_physical_pages": [
+        105
+      ],
+      "last_item": "任意 k≥1 代替2且不提非退化的评论",
+      "next_anchor_historical": "Proposition 9. Let A be a ring augmented into A/I with a regular augmentation",
+      "merged_target_file": "text/v1_2.tex",
+      "merged_body_lines": [
+        315,
+        340
+      ],
+      "merged_translator_notes_lines": [
+        599,
+        611
+      ],
+      "nonduplicate_criterion": "Distinct ZIP and TeX SHA/name against all 19 and old 56; complete normalized author body and notes occur once in one active main input. Standalone raw archives and single-file build are alternate representations, not additional body insertions.",
+      "series": "new_20261121",
+      "integration_treatment": "new_body_continuation",
+      "suggested_archive_relative_path": "05_Dot/new_20261121/new008/EGA第五卷_划去稿命题8及引理_续译工程.zip",
+      "suggested_source_relative_path": "05_Dot/new_20261121/new008/EGA第五卷_划去稿命题8及引理_校订续译.tex",
+      "suggested_paths_status": "Proposal for final package; not created by this audit"
+    },
+    {
+      "id": "new009",
+      "source_label": 58,
+      "source_label_provenance": "原批 PROGRESS.json 的 batch 字段",
+      "archive_name": "EGA第五卷_划去稿命题9_续译工程.zip",
+      "zip_sha256": "93c4a69f03f64a53ed5ff83cc16669d7151e1262a811459f8ab183e5ad5f737b",
+      "main_tex_entry": "EGA第五卷_划去稿命题9_校订续译.tex",
+      "source_tex_sha256": "dab05b98d4ee1886c23b82026a2383c42939abf0fe89f6c63174d6b3b9cde37c",
+      "local_archive_path": "recovered_20261121/dot_new/EGA第五卷_划去稿命题9_续译工程.zip",
+      "source_tex_path": "integration_20261121/dot_audit_extract/n09/EGA第五卷_划去稿命题9_校订续译.tex",
+      "scope": "作者划去稿：命题9与自然同态说明",
+      "english_physical_pages": [
+        69,
+        70
+      ],
+      "french_body_physical_pages": [
+        105,
+        106
+      ],
+      "last_item": "命题9的证明几乎是平凡的",
+      "next_anchor_historical": "Corollary 10. Let A be a local ring of dimension n",
+      "merged_target_file": "text/v1_2.tex",
+      "merged_body_lines": [
+        342,
+        375
+      ],
+      "merged_translator_notes_lines": [
+        614,
+        629
+      ],
+      "nonduplicate_criterion": "Distinct ZIP and TeX SHA/name against all 19 and old 56; complete normalized author body and notes occur once in one active main input. Standalone raw archives and single-file build are alternate representations, not additional body insertions.",
+      "series": "new_20261121",
+      "integration_treatment": "new_body_continuation",
+      "suggested_archive_relative_path": "05_Dot/new_20261121/new009/EGA第五卷_划去稿命题9_续译工程.zip",
+      "suggested_source_relative_path": "05_Dot/new_20261121/new009/EGA第五卷_划去稿命题9_校订续译.tex",
+      "suggested_paths_status": "Proposal for final package; not created by this audit"
+    },
+    {
+      "id": "new010",
+      "source_label": 59,
+      "source_label_provenance": "原批 PROGRESS.json 的 batch 字段",
+      "archive_name": "EGA第五卷_划去稿推论10_续译工程.zip",
+      "zip_sha256": "3098e49de8039f71eff16bb099105a5fcbe53d9a3fe4255b233010e813a867bc",
+      "main_tex_entry": "EGA第五卷_划去稿推论10_校订续译.tex",
+      "source_tex_sha256": "fc5a7169350f7a17e4c77f909290039044120a5468cfada2edc5605310a5e826",
+      "local_archive_path": "recovered_20261121/dot_new/EGA第五卷_划去稿推论10_续译工程.zip",
+      "source_tex_path": "integration_20261121/dot_audit_extract/n10/EGA第五卷_划去稿推论10_校订续译.tex",
+      "scope": "作者划去稿：推论10与划去段结束标记",
+      "english_physical_pages": [
+        70,
+        71
+      ],
+      "french_body_physical_pages": [
+        106,
+        107
+      ],
+      "last_item": "推论10(iii)之后英译者结束标记",
+      "next_anchor_historical": "Let us note that the analogue of conditions (ii) and (ii)bis could already have been included (remonter Fr) in Proposition 9",
+      "merged_target_file": "text/v1_2.tex",
+      "merged_body_lines": [
+        377,
+        395
+      ],
+      "merged_translator_notes_lines": [
+        632,
+        639
+      ],
+      "nonduplicate_criterion": "Distinct ZIP and TeX SHA/name against all 19 and old 56; complete normalized author body and notes occur once in one active main input. Standalone raw archives and single-file build are alternate representations, not additional body insertions.",
+      "series": "new_20261121",
+      "integration_treatment": "new_body_continuation",
+      "suggested_archive_relative_path": "05_Dot/new_20261121/new010/EGA第五卷_划去稿推论10_续译工程.zip",
+      "suggested_source_relative_path": "05_Dot/new_20261121/new010/EGA第五卷_划去稿推论10_校订续译.tex",
+      "suggested_paths_status": "Proposal for final package; not created by this audit"
+    },
+    {
+      "id": "new011",
+      "source_label": 60,
+      "source_label_provenance": "原批 PROGRESS.json 的 batch 字段",
+      "archive_name": "EGA第五卷_奇异零点与外幂判别_续译工程.zip",
+      "zip_sha256": "e236dfca3fa42189733863bbb8c0816b2857b28581b6ce85fbf143a0172af1f9",
+      "main_tex_entry": "EGA第五卷_奇异零点与外幂判别_校订续译.tex",
+      "source_tex_sha256": "9d18de33dfce1192eb5a6f13fa849e8807401c90ee5689f1ebd09a5e206e7521",
+      "local_archive_path": "recovered_20261121/dot_new/EGA第五卷_奇异零点与外幂判别_续译工程.zip",
+      "source_tex_path": "integration_20261121/dot_audit_extract/n11/EGA第五卷_奇异零点与外幂判别_校订续译.tex",
+      "scope": "恢复正文：奇异零点术语及顶次外幂判别",
+      "english_physical_pages": [
+        71,
+        72
+      ],
+      "french_body_physical_pages": [
+        107,
+        108
+      ],
+      "last_item": "Ω^m_X/Y ⊗ (det E)^−1 ⊗ O_V0 的截面",
+      "next_anchor_historical": "to characterize using differential method the ordinary singular zeros relative to Y we note",
+      "merged_target_file": "text/v1_2.tex",
+      "merged_body_lines": [
+        398,
+        424
+      ],
+      "merged_translator_notes_lines": [
+        642,
+        649
+      ],
+      "nonduplicate_criterion": "Distinct ZIP and TeX SHA/name against all 19 and old 56; complete normalized author body and notes occur once in one active main input. Standalone raw archives and single-file build are alternate representations, not additional body insertions.",
+      "series": "new_20261121",
+      "integration_treatment": "new_body_continuation",
+      "suggested_archive_relative_path": "05_Dot/new_20261121/new011/EGA第五卷_奇异零点与外幂判别_续译工程.zip",
+      "suggested_source_relative_path": "05_Dot/new_20261121/new011/EGA第五卷_奇异零点与外幂判别_校订续译.tex",
+      "suggested_paths_status": "Proposal for final package; not created by this audit"
+    },
+    {
+      "id": "new012",
+      "source_label": 61,
+      "source_label_provenance": "原批 PROGRESS.json 的 batch 字段",
+      "archive_name": "EGA第五卷_二阶判别与恒秩引理_续译工程.zip",
+      "zip_sha256": "017d9e9f51e602989dbed5ca039876b57012f67ec62401ef1824dba1a4d62910",
+      "main_tex_entry": "EGA第五卷_二阶判别与恒秩引理_校订续译.tex",
+      "source_tex_sha256": "46db6b36b931816d0b3a4443a4de259cb87b4f6880dede34b81a54f87dc032dd",
+      "local_archive_path": "recovered_20261121/dot_new/EGA第五卷_二阶判别与恒秩引理_续译工程.zip",
+      "source_tex_path": "integration_20261121/dot_audit_extract/n12/EGA第五卷_二阶判别与恒秩引理_校订续译.tex",
+      "scope": "二阶微分刻画、判别式及恒秩引理",
+      "english_physical_pages": [
+        72
+      ],
+      "french_body_physical_pages": [
+        109,
+        110
+      ],
+      "last_item": "应概括为一个推广命题6的命题",
+      "next_anchor_historical": "It is necessary to see how we can generalize the same Proposition 7.",
+      "merged_target_file": "text/v1_2.tex",
+      "merged_body_lines": [
+        426,
+        468
+      ],
+      "merged_translator_notes_lines": [
+        652,
+        664
+      ],
+      "nonduplicate_criterion": "Distinct ZIP and TeX SHA/name against all 19 and old 56; complete normalized author body and notes occur once in one active main input. Standalone raw archives and single-file build are alternate representations, not additional body insertions.",
+      "series": "new_20261121",
+      "integration_treatment": "new_body_continuation",
+      "suggested_archive_relative_path": "05_Dot/new_20261121/new012/EGA第五卷_二阶判别与恒秩引理_续译工程.zip",
+      "suggested_source_relative_path": "05_Dot/new_20261121/new012/EGA第五卷_二阶判别与恒秩引理_校订续译.tex",
+      "suggested_paths_status": "Proposal for final package; not created by this audit"
+    },
+    {
+      "id": "new013",
+      "source_label": 62,
+      "source_label_provenance": "原批 PROGRESS.json 的 batch 字段",
+      "archive_name": "EGA第五卷_光滑塔与分歧概形_续译工程.zip",
+      "zip_sha256": "53732703f0099ad4ce473e642160867949bac63f49193aae4f2cc71485b655af",
+      "main_tex_entry": "EGA第五卷_光滑塔与分歧概形_校订续译.tex",
+      "source_tex_sha256": "e42bbb7455e8a3eb9e5084b5d7e9ca0addd7e44ff2cf5705f40905c8eb153879",
+      "local_archive_path": "recovered_20261121/dot_new/EGA第五卷_光滑塔与分歧概形_续译工程.zip",
+      "source_tex_path": "integration_20261121/dot_audit_extract/n13/EGA第五卷_光滑塔与分歧概形_校订续译.tex",
+      "scope": "推广命题7的光滑塔与分歧、降秩余维附注",
+      "english_physical_pages": [
+        72,
+        73
+      ],
+      "french_body_physical_pages": [
+        110,
+        111
+      ],
+      "last_item": "降秩闭集每个不可约分支的余维附注",
+      "next_anchor_historical": "EGA V – Section 17 / IV.17.15 Smooth Forms",
+      "merged_target_file": "text/v1_2.tex",
+      "merged_body_lines": [
+        471,
+        488
+      ],
+      "merged_translator_notes_lines": [
+        667,
+        684
+      ],
+      "nonduplicate_criterion": "Distinct ZIP and TeX SHA/name against all 19 and old 56; complete normalized author body and notes occur once in one active main input. Standalone raw archives and single-file build are alternate representations, not additional body insertions.",
+      "series": "new_20261121",
+      "integration_treatment": "new_body_continuation",
+      "suggested_archive_relative_path": "05_Dot/new_20261121/new013/EGA第五卷_光滑塔与分歧概形_续译工程.zip",
+      "suggested_source_relative_path": "05_Dot/new_20261121/new013/EGA第五卷_光滑塔与分歧概形_校订续译.tex",
+      "suggested_paths_status": "Proposal for final package; not created by this audit"
+    },
+    {
+      "id": "new014",
+      "source_label": 63,
+      "source_label_provenance": "原批 PROGRESS.json 的 batch 字段",
+      "archive_name": "EGA第五卷_特征二与奇异术语_续译工程.zip",
+      "zip_sha256": "13119ed6f9506b65238e1e11a6a2c899ff1a7c33a8ec5d0a1ef98b6321dfdb25",
+      "main_tex_entry": "EGA第五卷_特征二与奇异术语_校订续译.tex",
+      "source_tex_sha256": "5d370dd42be383589d7dce656686be084a120de29f2817c83f8c01335719d321",
+      "local_archive_path": "recovered_20261121/dot_new/EGA第五卷_特征二与奇异术语_续译工程.zip",
+      "source_tex_path": "integration_20261121/dot_audit_extract/n14/EGA第五卷_特征二与奇异术语_校订续译.tex",
+      "scope": "IV.17.15章首：特征2、光滑型及奇异性术语",
+      "english_physical_pages": [
+        73,
+        74
+      ],
+      "french_body_physical_pages": [
+        112,
+        113
+      ],
+      "last_item": "SUP 及其第10页相关术语应作修订",
+      "next_anchor_historical": "IV 23.9.2 is false as such",
+      "merged_target_file": "continuations/v_suppIII_63.tex",
+      "merged_body_lines": [
+        6,
+        34
+      ],
+      "merged_translator_notes_lines": [
+        36,
+        49
+      ],
+      "nonduplicate_criterion": "Distinct ZIP and TeX SHA/name against all 19 and old 56; complete normalized author body and notes occur once in one active main input. Standalone raw archives and single-file build are alternate representations, not additional body insertions.",
+      "series": "new_20261121",
+      "integration_treatment": "new_body_continuation",
+      "suggested_archive_relative_path": "05_Dot/new_20261121/new014/EGA第五卷_特征二与奇异术语_续译工程.zip",
+      "suggested_source_relative_path": "05_Dot/new_20261121/new014/EGA第五卷_特征二与奇异术语_校订续译.tex",
+      "suggested_paths_status": "Proposal for final package; not created by this audit"
+    },
+    {
+      "id": "new015",
+      "source_label": 64,
+      "source_label_provenance": "原批 PROGRESS.json 的 batch 字段",
+      "archive_name": "EGA第五卷_切超曲面与勘误_续译工程.zip",
+      "zip_sha256": "9386a9ccf9f690c8c3cbd1272cf3c9f9c8ce99303111cb61e479555f2e1fd0f1",
+      "main_tex_entry": "EGA第五卷_切超曲面与勘误_校订续译.tex",
+      "source_tex_sha256": "862ae06823b3db607e3f8dad77bacc0f49022b44c3b25e98cc08c215f0d37d06",
+      "local_archive_path": "recovered_20261121/dot_new/EGA第五卷_切超曲面与勘误_续译工程.zip",
+      "source_tex_path": "integration_20261121/dot_audit_extract/n15/EGA第五卷_切超曲面与勘误_校订续译.tex",
+      "scope": "IV.23.9.2勘误与切超曲面",
+      "english_physical_pages": [
+        74
+      ],
+      "french_body_physical_pages": [
+        113,
+        114
+      ],
+      "last_item": "关于不可分次数恰为2的保留意见",
+      "next_anchor_historical": "Let S be a prescheme, E a model locally free",
+      "merged_target_file": "continuations/v_suppIII_64.tex",
+      "merged_body_lines": [
+        4,
+        7
+      ],
+      "merged_translator_notes_lines": [
+        9,
+        19
+      ],
+      "nonduplicate_criterion": "Distinct ZIP and TeX SHA/name against all 19 and old 56; complete normalized author body and notes occur once in one active main input. Standalone raw archives and single-file build are alternate representations, not additional body insertions.",
+      "series": "new_20261121",
+      "integration_treatment": "new_body_continuation",
+      "suggested_archive_relative_path": "05_Dot/new_20261121/new015/EGA第五卷_切超曲面与勘误_续译工程.zip",
+      "suggested_source_relative_path": "05_Dot/new_20261121/new015/EGA第五卷_切超曲面与勘误_校订续译.tex",
+      "suggested_paths_status": "Proposal for final package; not created by this audit"
+    },
+    {
+      "id": "new016",
+      "source_label": 65,
+      "source_label_provenance": "原批 PROGRESS.json 的 batch 字段",
+      "archive_name": "EGA第五卷_151光滑型与雅可比判据_续译工程.zip",
+      "zip_sha256": "505ccb964b7fa38b8bd2fb3a66c95daa022caa6c085cc0be582aef7721b09cb3",
+      "main_tex_entry": "EGA第五卷_151光滑型与雅可比判据_校订续译.tex",
+      "source_tex_sha256": "b406e5ae7365b61e11a5ae99aec2552c144c1e82ddb9de71d6edb31a5bb76566",
+      "local_archive_path": "recovered_20261121/dot_new/EGA第五卷_151光滑型与雅可比判据_续译工程.zip",
+      "source_tex_path": "integration_20261121/dot_audit_extract/n16/EGA第五卷_151光滑型与雅可比判据_校订续译.tex",
+      "scope": "15.1 光滑型与相对雅可比判据",
+      "english_physical_pages": [
+        74,
+        75
+      ],
+      "french_body_physical_pages": [
+        114,
+        115
+      ],
+      "last_item": "不满足相对光滑且相对维数 r−1 的点集",
+      "next_anchor_historical": "15.2. Let X be a prescheme, J an ideal quasi-coherent over X",
+      "merged_target_file": "continuations/v_suppIII_65.tex",
+      "merged_body_lines": [
+        4,
+        10
+      ],
+      "merged_translator_notes_lines": [
+        12,
+        26
+      ],
+      "nonduplicate_criterion": "Distinct ZIP and TeX SHA/name against all 19 and old 56; complete normalized author body and notes occur once in one active main input. Standalone raw archives and single-file build are alternate representations, not additional body insertions.",
+      "series": "new_20261121",
+      "integration_treatment": "new_body_continuation",
+      "suggested_archive_relative_path": "05_Dot/new_20261121/new016/EGA第五卷_151光滑型与雅可比判据_续译工程.zip",
+      "suggested_source_relative_path": "05_Dot/new_20261121/new016/EGA第五卷_151光滑型与雅可比判据_校订续译.tex",
+      "suggested_paths_status": "Proposal for final package; not created by this audit"
+    },
+    {
+      "id": "new017",
+      "source_label": 66,
+      "source_label_provenance": "原批 PROGRESS.json 的 batch 字段",
+      "archive_name": "EGA第五卷_152初等增广与几何奇点_续译工程.zip",
+      "zip_sha256": "7a773e1f2593e0e073777323109bd3f14c8dbb6b2efc1a61d5edb095485a7922",
+      "main_tex_entry": "EGA第五卷_152初等增广与几何奇点_校订续译.tex",
+      "source_tex_sha256": "52b096cc2b56d6b2cb47db6d9c2fbf6a707d5a0e10646610a0d9b2df87a72998",
+      "local_archive_path": "recovered_20261121/dot_new/EGA第五卷_152初等增广与几何奇点_续译工程.zip",
+      "source_tex_path": "integration_20261121/dot_audit_extract/n17/EGA第五卷_152初等增广与几何奇点_校订续译.tex",
+      "scope": "15.2 初等增广、初等奇点与几何初等奇点",
+      "english_physical_pages": [
+        75,
+        76
+      ],
+      "french_body_physical_pages": [
+        115,
+        160
+      ],
+      "last_item": "通过扩域后的有理提升定义几何初等奇点",
+      "next_anchor_historical": {
+        "english_physical_page": 76,
+        "french_physical_page": 160,
+        "section": "§15.3",
+        "french_anchor": "« Généraliser » SUP prop.8 au cas de la multiplicité n."
+      },
+      "merged_target_file": "continuations/v_suppIII_66.tex",
+      "merged_body_lines": [
+        4,
+        18
+      ],
+      "merged_translator_notes_lines": [
+        20,
+        36
+      ],
+      "nonduplicate_criterion": "Distinct ZIP and TeX SHA/name against all 19 and old 56; complete normalized author body and notes occur once in one active main input. Standalone raw archives and single-file build are alternate representations, not additional body insertions.",
+      "series": "new_20261121",
+      "integration_treatment": "new_body_continuation",
+      "suggested_archive_relative_path": "05_Dot/new_20261121/new017/EGA第五卷_152初等增广与几何奇点_续译工程.zip",
+      "suggested_source_relative_path": "05_Dot/new_20261121/new017/EGA第五卷_152初等增广与几何奇点_校订续译.tex",
+      "suggested_paths_status": "Proposal for final package; not created by this audit"
+    },
+    {
+      "id": "new018",
+      "source_label": 67,
+      "source_label_provenance": "原批 PROGRESS.json 的 batch 字段",
+      "archive_name": "EGA第五卷_153至156_初等奇点局部刻画_续译工程.zip",
+      "zip_sha256": "b1ca34519d60039d0dc1d34d504396e7ee63f76f3371c398bbc8ef880ef83769",
+      "main_tex_entry": "EGA第五卷_153至156_初等奇点局部刻画.tex",
+      "source_tex_sha256": "df516c6405e6365dc7569e3cfcbe046747a07e93d880d2cc90e79136b79c2dde",
+      "local_archive_path": "recovered_20261121/dot_new/EGA第五卷_153至156_初等奇点局部刻画_续译工程.zip",
+      "source_tex_path": "integration_20261121/dot_audit_extract/n18/EGA第五卷_153至156_初等奇点局部刻画.tex",
+      "scope": "15.3—15.6 初等奇点的局部刻画",
+      "english_physical_pages": [
+        76,
+        77
+      ],
+      "french_body_physical_pages": [
+        160,
+        159
+      ],
+      "last_item": "零维局部环是离散赋值环模极大理想 n 次幂之商",
+      "next_anchor_historical": {
+        "english_physical_page": 77,
+        "french_physical_page": 159,
+        "section": "§15.7",
+        "french_anchor": "Il y a lieu de dégager les variantes « géométriques » de 15.6."
+      },
+      "merged_target_file": "continuations/v_suppIII_67.tex",
+      "merged_body_lines": [
+        4,
+        17
+      ],
+      "merged_translator_notes_lines": [
+        19,
+        41
+      ],
+      "nonduplicate_criterion": "Distinct ZIP and TeX SHA/name against all 19 and old 56; complete normalized author body and notes occur once in one active main input. Standalone raw archives and single-file build are alternate representations, not additional body insertions.",
+      "series": "new_20261121",
+      "integration_treatment": "new_body_continuation",
+      "suggested_archive_relative_path": "05_Dot/new_20261121/new018/EGA第五卷_153至156_初等奇点局部刻画_续译工程.zip",
+      "suggested_source_relative_path": "05_Dot/new_20261121/new018/EGA第五卷_153至156_初等奇点局部刻画.tex",
+      "suggested_paths_status": "Proposal for final package; not created by this audit"
+    },
+    {
+      "id": "new019",
+      "source_label": 68,
+      "source_label_provenance": "原批 PROGRESS.json 的 batch 字段",
+      "archive_name": "EGA第五卷_157_初等奇点几何变式_续译工程.zip",
+      "zip_sha256": "56b2cd5c99bcba70138e6d54fb87a420c5f8328e391fe7e5dcc18ede03635ee4",
+      "main_tex_entry": "EGA第五卷_157_初等奇点几何变式.tex",
+      "source_tex_sha256": "611b371c0b7a5d1c6fc87f259c18b7706960ef2643916b0ed86328ca77d3209d",
+      "local_archive_path": "recovered_20261121/dot_new/EGA第五卷_157_初等奇点几何变式_续译工程.zip",
+      "source_tex_path": "integration_20261121/dot_audit_extract/n19/EGA第五卷_157_初等奇点几何变式.tex",
+      "scope": "15.7 几何变式及作者编排附记",
+      "english_physical_pages": [
+        77
+      ],
+      "french_body_physical_pages": [
+        159,
+        158
+      ],
+      "last_item": "实际上只取用型之光滑性的定义",
+      "next_anchor_historical": {
+        "english_physical_page": 78,
+        "french_physical_page": 161,
+        "section": "17.16",
+        "french_anchor": "17.16. Formes quadratiques lisses."
+      },
+      "merged_target_file": "continuations/v_suppIII_68.tex",
+      "merged_body_lines": [
+        4,
+        22
+      ],
+      "merged_translator_notes_lines": [
+        25,
+        40
+      ],
+      "nonduplicate_criterion": "Distinct ZIP and TeX SHA/name against all 19 and old 56; complete normalized author body and notes occur once in one active main input. Standalone raw archives and single-file build are alternate representations, not additional body insertions.",
+      "series": "new_20261121",
+      "integration_treatment": "new_body_continuation",
+      "suggested_archive_relative_path": "05_Dot/new_20261121/new019/EGA第五卷_157_初等奇点几何变式_续译工程.zip",
+      "suggested_source_relative_path": "05_Dot/new_20261121/new019/EGA第五卷_157_初等奇点几何变式.tex",
+      "suggested_paths_status": "Proposal for final package; not created by this audit"
+    }
+  ]
+}

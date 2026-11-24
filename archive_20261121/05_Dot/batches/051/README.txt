@@ -1,0 +1,1 @@
+独立续译，未合并主稿。进度、符号、限制见PROGRESS.json。安装含ctex及Fandol的TeX Live后执行build.sh。

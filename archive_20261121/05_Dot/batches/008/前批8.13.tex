@@ -1,0 +1,37 @@
+\documentclass[openany]{ctexbook}
+\usepackage{amsmath,amssymb}
+\usepackage[hidelinks]{hyperref}
+\newcommand{\note}[1]{\footnote{本批译注：#1}}
+\title{代数几何基础第五卷预备笔记\\8.13：校订续译}
+\author{据用户上传英译编辑稿译出}
+\date{2026年11月15日}
+\begin{document}
+\maketitle
+\chapter*{范围及校订状态}
+本批连续翻译底本第31页命题8.13的全部陈述和证明段落。下一处是第32页“结合8.13、8.5和8.6”引导句，不能跳过该句直接开始8.14。此为独立增补，未并入原对话合订本。
+
+底本有记号混乱及字迹不清处，本批只作可确定的排印订正；未能核实的条件保留待核。8.8缺失条件及8.9证明缺口尚未恢复，以下是原作者命题及论证的译文，不构成对其正确性的独立证明。
+\chapter*{8.13\quad 命题（原稿陈述及待核处）}
+仍假设 $f\colon X\to P$ 非分歧，且 $X$ 没有孤立点。假设 $X$ 在几何意义下满足 $(R_k)$。
+
+令 $Z_k$ 为如下点集在 $P^\vee$ 中的补集：这些点 $\xi\in P^\vee$ 满足 $\phi_\xi$ 是 $X_{k(\xi)}$-正则的，且 $Y_\xi$ 满足几何条件 $E_k$。\note{底本此处确实印作 $E_k$，而前句为 $(R_k)$。没有可靠依据将二者擅自统一，故保留 $E_k$ 并标待核。这里下标 $k$ 与基域符号 $k$ 沿用底本；$k(\xi)$ 表示点 $\xi$ 的剩余域。}则：
+\begin{enumerate}
+\item[(a)] 为使 $Z_{k-1}$ 在 $P^\vee$ 中的余维至少为 $2$，只须 $X'$ 的每个维数不超过 $k$ 的不可约分支 $x'_i$，相对于 $f$ 都是“直纹的”。\note{底本分支记号印作小写 $x'_i$，此处不猜改为 $X'_i$。“直纹的”（ruled）沿用作者的临时用语；8.17明确提醒此用法与传统术语不一致，不能径按通常直纹簇定义理解。}
+\item[(b)] 为使 $Z_k$ 在 $P^\vee$ 中的余维至少为 $2$，只须每个维数不超过 $k-1$ 的不可约分支 $X_i$，都由 $X$ 的光滑点组成，并且是“直纹的”。\note{底本在“维数不超过 $k-1$”后插有“询问 A.G.；字迹不清”。该条件带有原稿疑问，尚未由原始手稿恢复或独立核实；本译保存可辨条件，不把它改写成已经审定的充分条件。}
+\end{enumerate}
+
+\newpage
+\section*{原稿证明段落}
+事实上，只考虑使 $\phi_\xi$ 为 $X_{k(\xi)}$-正则的 $\xi$。对这样的每个 $\xi$，$Y_\xi$ 的几何奇点集是 $\operatorname{sing}(Y'_\xi)$ 与 $T$ 在 $Y_\xi$ 中的逆像 $T_\xi$ 的并。\note{底本首句的英语语序断裂：“for every $\xi$ geometrically singular the set of $Y_\xi$”；这里按随后的并集陈述整理语序，并不增加数学假设。$T$ 的指代必须沿本节上下文核定，不能误认成前面出现的任意同名集合。}
+（注意：我们只考虑使 $\phi_\xi$ 为 $X_{k(\xi)}$-正则的 $\xi$；由8.2，这一限制无妨。）\note{底本此处误排为 $\phi_{x}i$，按命题开头同一正则性条件订正为 $\phi_\xi$。}
+因此，这一奇点集在 $Y_\xi$ 中的余维等于下述两个余维的下确界：
+\note{底本第一个余维式印作 $\operatorname{codim}(\operatorname{sing}(Y'),Y'_\xi)$，遗漏前文及后文均有的纤维下标 $\xi$；正文按其所讨论的纤维奇点集补足。此为记号一致性的排印订正，不是对余维等式适用前提的新增证明。}
+\[
+\operatorname{codim}\bigl(\operatorname{sing}(Y'_\xi),Y'_\xi\bigr),
+\qquad
+\operatorname{codim}(T_\xi,Y_\xi).
+\]
+
+
+现在只考虑使 $\operatorname{sing}(Y'_\xi)$ 有限的 $\xi$。（这一限制无妨；这使我们处于一个余维至少为 $2$ 的集合的补集中。）于是，$Y'_\xi$ 的几何奇点都是孤立的。原稿据此及8.4断言，结论容易得到。\note{原文末句为“The conclusion follows easily from this and from 8.4.”。底本未展开由这些事实推出(a)、(b)的逐步推导，本批不补造它；特别是 $E_k$ 记号、(b)条件及“直纹”含义仍待核，故不能将本段标作完整独立审定的证明。}
+\end{document}

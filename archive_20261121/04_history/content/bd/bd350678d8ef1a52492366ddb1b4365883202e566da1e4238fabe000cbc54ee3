@@ -1,0 +1,391 @@
+{
+  "pdf": "/workspace/scratch/a886fd56dd2f/work/EGA_v17/main.pdf",
+  "pdf_sha256": "df949bd9daa04547214b6e3c68e066812be0fb2918601c0d6403cccfce568046",
+  "pdf_pages": 1130,
+  "dpi": 180,
+  "previous_pdf_sha256": "c4cc8b96308a0ff53d3a1d47bdf5207893df6e8a73282c7cbea1698e612fba3b",
+  "pages": [
+    {
+      "physical_page": 972,
+      "printed_page_label": "952",
+      "path": "/workspace/scratch/a886fd56dd2f/integration/body_early_middle_visual/main_phys_0972.png",
+      "png_sha256": "d68af0c685fe4deb4dc53098faaa98cf3ae6d5d4d4b2ace40ec5461f3f6c8c29",
+      "old_path": "/workspace/scratch/a886fd56dd2f/integration/body_early_middle_visual/review_round1/main_phys_0972.png",
+      "old_png_sha256": "d68af0c685fe4deb4dc53098faaa98cf3ae6d5d4d4b2ace40ec5461f3f6c8c29",
+      "image_dimensions_px": [
+        1489,
+        2105
+      ],
+      "same_dimensions": true,
+      "pixel_identical": true,
+      "different_pixel_count": 0,
+      "difference_bbox_px": null
+    },
+    {
+      "physical_page": 974,
+      "printed_page_label": "954",
+      "path": "/workspace/scratch/a886fd56dd2f/integration/body_early_middle_visual/main_phys_0974.png",
+      "png_sha256": "6e25170055cad1351e27d3f0a31f0b191654493bd6d2e321253b6af4c169eaff",
+      "old_path": "/workspace/scratch/a886fd56dd2f/integration/body_early_middle_visual/review_round1/main_phys_0974.png",
+      "old_png_sha256": "6e25170055cad1351e27d3f0a31f0b191654493bd6d2e321253b6af4c169eaff",
+      "image_dimensions_px": [
+        1489,
+        2105
+      ],
+      "same_dimensions": true,
+      "pixel_identical": true,
+      "different_pixel_count": 0,
+      "difference_bbox_px": null
+    },
+    {
+      "physical_page": 977,
+      "printed_page_label": "957",
+      "path": "/workspace/scratch/a886fd56dd2f/integration/body_early_middle_visual/main_phys_0977.png",
+      "png_sha256": "c1d05eee1a2542bf93ac7800833c46b41694ac5ba63e43e4442a5b8beb7d877a",
+      "old_path": "/workspace/scratch/a886fd56dd2f/integration/body_early_middle_visual/review_round1/main_phys_0977.png",
+      "old_png_sha256": "c1d05eee1a2542bf93ac7800833c46b41694ac5ba63e43e4442a5b8beb7d877a",
+      "image_dimensions_px": [
+        1489,
+        2105
+      ],
+      "same_dimensions": true,
+      "pixel_identical": true,
+      "different_pixel_count": 0,
+      "difference_bbox_px": null
+    },
+    {
+      "physical_page": 978,
+      "printed_page_label": "958",
+      "path": "/workspace/scratch/a886fd56dd2f/integration/body_early_middle_visual/main_phys_0978.png",
+      "png_sha256": "1f2b4e82fcb8b4943ca72a387e8d8c05bfbf831581705c241838cf74ef89c8a0",
+      "old_path": "/workspace/scratch/a886fd56dd2f/integration/body_early_middle_visual/review_round1/main_phys_0978.png",
+      "old_png_sha256": "1f2b4e82fcb8b4943ca72a387e8d8c05bfbf831581705c241838cf74ef89c8a0",
+      "image_dimensions_px": [
+        1489,
+        2105
+      ],
+      "same_dimensions": true,
+      "pixel_identical": true,
+      "different_pixel_count": 0,
+      "difference_bbox_px": null
+    },
+    {
+      "physical_page": 1000,
+      "printed_page_label": "980",
+      "path": "/workspace/scratch/a886fd56dd2f/integration/body_early_middle_visual/main_phys_1000.png",
+      "png_sha256": "8cee179c254296e328a81a8b1a10edf7cdb0ae9b7f9e0247ad30c8986e028fca",
+      "old_path": "/workspace/scratch/a886fd56dd2f/integration/body_early_middle_visual/review_round1/main_phys_1000.png",
+      "old_png_sha256": "8cee179c254296e328a81a8b1a10edf7cdb0ae9b7f9e0247ad30c8986e028fca",
+      "image_dimensions_px": [
+        1489,
+        2105
+      ],
+      "same_dimensions": true,
+      "pixel_identical": true,
+      "different_pixel_count": 0,
+      "difference_bbox_px": null
+    },
+    {
+      "physical_page": 1001,
+      "printed_page_label": "981",
+      "path": "/workspace/scratch/a886fd56dd2f/integration/body_early_middle_visual/main_phys_1001.png",
+      "png_sha256": "6f92694c17a5a296f4a50517277868be3c96cf8358c457b8de7f0ebe644dcf15",
+      "old_path": "/workspace/scratch/a886fd56dd2f/integration/body_early_middle_visual/review_round1/main_phys_1001.png",
+      "old_png_sha256": "d36f5c399618aae1fff2a8e25915e9fa6c1ffd91ddfabfd0ba42061dd5bef095",
+      "image_dimensions_px": [
+        1489,
+        2105
+      ],
+      "same_dimensions": true,
+      "pixel_identical": false,
+      "different_pixel_count": 206568,
+      "difference_bbox_px": [
+        249,
+        370,
+        1109,
+        1500
+      ]
+    },
+    {
+      "physical_page": 1004,
+      "printed_page_label": "984",
+      "path": "/workspace/scratch/a886fd56dd2f/integration/body_early_middle_visual/main_phys_1004.png",
+      "png_sha256": "a39ec6b3dbc902a39cad3f09f6affff421f9b5f8cbb5679faf0132ef522d4510",
+      "old_path": "/workspace/scratch/a886fd56dd2f/integration/body_early_middle_visual/review_round1/main_phys_1004.png",
+      "old_png_sha256": "a39ec6b3dbc902a39cad3f09f6affff421f9b5f8cbb5679faf0132ef522d4510",
+      "image_dimensions_px": [
+        1489,
+        2105
+      ],
+      "same_dimensions": true,
+      "pixel_identical": true,
+      "different_pixel_count": 0,
+      "difference_bbox_px": null
+    },
+    {
+      "physical_page": 1005,
+      "printed_page_label": "985",
+      "path": "/workspace/scratch/a886fd56dd2f/integration/body_early_middle_visual/main_phys_1005.png",
+      "png_sha256": "23e7090b0e1f634d61169a77ddc5ff67e82393781b70b7ae182d1cb3e904bc5b",
+      "old_path": "/workspace/scratch/a886fd56dd2f/integration/body_early_middle_visual/review_round1/main_phys_1005.png",
+      "old_png_sha256": "23e7090b0e1f634d61169a77ddc5ff67e82393781b70b7ae182d1cb3e904bc5b",
+      "image_dimensions_px": [
+        1489,
+        2105
+      ],
+      "same_dimensions": true,
+      "pixel_identical": true,
+      "different_pixel_count": 0,
+      "difference_bbox_px": null
+    },
+    {
+      "physical_page": 1006,
+      "printed_page_label": "986",
+      "path": "/workspace/scratch/a886fd56dd2f/integration/body_early_middle_visual/main_phys_1006.png",
+      "png_sha256": "e8ce6cde03f32a68755fc5929c7a398070fb58d1a13aba215d9f45bcc9de8138",
+      "old_path": "/workspace/scratch/a886fd56dd2f/integration/body_early_middle_visual/review_round1/main_phys_1006.png",
+      "old_png_sha256": "4b535fe37aa4d4fc2efad49c4eeba1daab1f7fe94f8e719afddc5665528c5cc1",
+      "image_dimensions_px": [
+        1489,
+        2105
+      ],
+      "same_dimensions": true,
+      "pixel_identical": false,
+      "different_pixel_count": 217447,
+      "difference_bbox_px": [
+        376,
+        315,
+        1236,
+        1556
+      ]
+    },
+    {
+      "physical_page": 1007,
+      "printed_page_label": "987",
+      "path": "/workspace/scratch/a886fd56dd2f/integration/body_early_middle_visual/main_phys_1007.png",
+      "png_sha256": "d6ad86a6ef265a253cd3df21da2f643e36d73a2533b6407e18f24f4a2368e01c",
+      "old_path": "/workspace/scratch/a886fd56dd2f/integration/body_early_middle_visual/review_round1/main_phys_1007.png",
+      "old_png_sha256": "d6ad86a6ef265a253cd3df21da2f643e36d73a2533b6407e18f24f4a2368e01c",
+      "image_dimensions_px": [
+        1489,
+        2105
+      ],
+      "same_dimensions": true,
+      "pixel_identical": true,
+      "different_pixel_count": 0,
+      "difference_bbox_px": null
+    },
+    {
+      "physical_page": 1015,
+      "printed_page_label": "995",
+      "path": "/workspace/scratch/a886fd56dd2f/integration/body_early_middle_visual/main_phys_1015.png",
+      "png_sha256": "d477f6989f327bf14c993ca480c0ad62277484309d44644fc66038b6a8e72994",
+      "old_path": "/workspace/scratch/a886fd56dd2f/integration/body_early_middle_visual/review_round1/main_phys_1015.png",
+      "old_png_sha256": "9169beb7179a11ac312184e8dcd46fa61b67f520602978d1d1b15dd9ce75375b",
+      "image_dimensions_px": [
+        1489,
+        2105
+      ],
+      "same_dimensions": true,
+      "pixel_identical": false,
+      "different_pixel_count": 329122,
+      "difference_bbox_px": [
+        249,
+        316,
+        1110,
+        1805
+      ]
+    },
+    {
+      "physical_page": 1016,
+      "printed_page_label": "996",
+      "path": "/workspace/scratch/a886fd56dd2f/integration/body_early_middle_visual/main_phys_1016.png",
+      "png_sha256": "93a666cb8581b21f58ba3c651fbed385939d11b1aa9ba5ddb93918a7c5219d0e",
+      "old_path": "/workspace/scratch/a886fd56dd2f/integration/body_early_middle_visual/review_round1/main_phys_1016.png",
+      "old_png_sha256": "bc0f911f2a58094e35e4840eca632e3ffcf13cf998b07b5c7ff1b22145294436",
+      "image_dimensions_px": [
+        1489,
+        2105
+      ],
+      "same_dimensions": true,
+      "pixel_identical": false,
+      "different_pixel_count": 298533,
+      "difference_bbox_px": [
+        376,
+        315,
+        1236,
+        1805
+      ]
+    },
+    {
+      "physical_page": 1019,
+      "printed_page_label": "999",
+      "path": "/workspace/scratch/a886fd56dd2f/integration/body_early_middle_visual/main_phys_1019.png",
+      "png_sha256": "971158db34f668b622823a9c0654497706adacaa2aa99ea1710e110626c9d2df",
+      "old_path": "/workspace/scratch/a886fd56dd2f/integration/body_early_middle_visual/review_round1/main_phys_1019.png",
+      "old_png_sha256": "0924bb5be005bbb9a715f2d94de1345526b2831c74d689c9626cf1ccd9bf377a",
+      "image_dimensions_px": [
+        1489,
+        2105
+      ],
+      "same_dimensions": true,
+      "pixel_identical": false,
+      "different_pixel_count": 343420,
+      "difference_bbox_px": [
+        249,
+        315,
+        1109,
+        1805
+      ]
+    },
+    {
+      "physical_page": 1020,
+      "printed_page_label": "1000",
+      "path": "/workspace/scratch/a886fd56dd2f/integration/body_early_middle_visual/main_phys_1020.png",
+      "png_sha256": "a428a0a578d741181fd88f838f7d414364fade1949bca88f4fea16d4cb6ce6a1",
+      "old_path": "/workspace/scratch/a886fd56dd2f/integration/body_early_middle_visual/review_round1/main_phys_1020.png",
+      "old_png_sha256": "ffa552fe061a8c27274af5358f60d3ae5c7a897eca32c7e45bc1b485e9ec9d8a",
+      "image_dimensions_px": [
+        1489,
+        2105
+      ],
+      "same_dimensions": true,
+      "pixel_identical": false,
+      "different_pixel_count": 300114,
+      "difference_bbox_px": [
+        376,
+        315,
+        1237,
+        1805
+      ]
+    },
+    {
+      "physical_page": 1021,
+      "printed_page_label": "1001",
+      "path": "/workspace/scratch/a886fd56dd2f/integration/body_early_middle_visual/main_phys_1021.png",
+      "png_sha256": "b207521383f9bec8a99ffc8a3a683e8e18aba3c66c30b63a3358a6f7a5990586",
+      "old_path": "/workspace/scratch/a886fd56dd2f/integration/body_early_middle_visual/review_round1/main_phys_1021.png",
+      "old_png_sha256": "72dcf8bfa801db897d270f62c2e31f8e342ab8cd4109a2882b225ea10f2524ec",
+      "image_dimensions_px": [
+        1489,
+        2105
+      ],
+      "same_dimensions": true,
+      "pixel_identical": false,
+      "different_pixel_count": 329244,
+      "difference_bbox_px": [
+        249,
+        316,
+        1109,
+        1805
+      ]
+    },
+    {
+      "physical_page": 1022,
+      "printed_page_label": "1002",
+      "path": "/workspace/scratch/a886fd56dd2f/integration/body_early_middle_visual/main_phys_1022.png",
+      "png_sha256": "7f51a07d13ae8af3576b3d380af5a2ee4a9ed0394cf8044ef4118fc8d21e988b",
+      "old_path": "/workspace/scratch/a886fd56dd2f/integration/body_early_middle_visual/review_round1/main_phys_1022.png",
+      "old_png_sha256": "8e84213d8938964bc20d2cf9aea13a2cb0c6129dd68193fd5b29a68f3fa3c839",
+      "image_dimensions_px": [
+        1489,
+        2105
+      ],
+      "same_dimensions": true,
+      "pixel_identical": false,
+      "different_pixel_count": 382411,
+      "difference_bbox_px": [
+        376,
+        315,
+        1237,
+        1805
+      ]
+    },
+    {
+      "physical_page": 1023,
+      "printed_page_label": "1003",
+      "path": "/workspace/scratch/a886fd56dd2f/integration/body_early_middle_visual/main_phys_1023.png",
+      "png_sha256": "f04cb45ec3e84b906c630c04749e0f8ebf48b0bf2cc128971735f7808cfa87a2",
+      "old_path": "/workspace/scratch/a886fd56dd2f/integration/body_early_middle_visual/review_round1/main_phys_1023.png",
+      "old_png_sha256": "621f7b4194b2a3e3c835f7cadde0b8864758b715ece55691b767d968c3a5b29e",
+      "image_dimensions_px": [
+        1489,
+        2105
+      ],
+      "same_dimensions": true,
+      "pixel_identical": false,
+      "different_pixel_count": 385339,
+      "difference_bbox_px": [
+        249,
+        315,
+        1112,
+        1806
+      ]
+    },
+    {
+      "physical_page": 1024,
+      "printed_page_label": "1004",
+      "path": "/workspace/scratch/a886fd56dd2f/integration/body_early_middle_visual/main_phys_1024.png",
+      "png_sha256": "6ea62b518c681f3afd639b492313179eac1a57146496d4c2b6024fb87d788748",
+      "old_path": "/workspace/scratch/a886fd56dd2f/integration/body_early_middle_visual/review_round1/main_phys_1024.png",
+      "old_png_sha256": "d29c539694d3bb18f481418944732bc8d968747e32a05587169e61cf347e3aff",
+      "image_dimensions_px": [
+        1489,
+        2105
+      ],
+      "same_dimensions": true,
+      "pixel_identical": false,
+      "different_pixel_count": 360912,
+      "difference_bbox_px": [
+        376,
+        316,
+        1239,
+        1805
+      ]
+    },
+    {
+      "physical_page": 1025,
+      "printed_page_label": "1005",
+      "path": "/workspace/scratch/a886fd56dd2f/integration/body_early_middle_visual/main_phys_1025.png",
+      "png_sha256": "afe647b345822437caebd3a77d4e627ff91cc5f2e4b3ecf1f077804975fd96c1",
+      "old_path": "/workspace/scratch/a886fd56dd2f/integration/body_early_middle_visual/review_round1/main_phys_1025.png",
+      "old_png_sha256": "90c6d05a7feb0cb99dcefe3b43c03828f721fc37d6b0f755bc1f92be9cd26043",
+      "image_dimensions_px": [
+        1489,
+        2105
+      ],
+      "same_dimensions": true,
+      "pixel_identical": false,
+      "different_pixel_count": 334456,
+      "difference_bbox_px": [
+        249,
+        315,
+        1109,
+        1805
+      ]
+    }
+  ],
+  "changed_pages": [
+    1001,
+    1006,
+    1015,
+    1016,
+    1019,
+    1020,
+    1021,
+    1022,
+    1023,
+    1024,
+    1025
+  ],
+  "pixel_identical_pages": [
+    972,
+    974,
+    977,
+    978,
+    1000,
+    1004,
+    1005,
+    1007
+  ]
+}

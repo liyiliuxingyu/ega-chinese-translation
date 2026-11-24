@@ -1,0 +1,14 @@
+{
+  "date": "2026-11-19T19:00Z",
+  "scope": "66页交换图与符号说明，及Hence the ideals段至intersection of P and Q in M",
+  "next": "66页 It remains only to completely clarify the particularly described situation with X/Y/S",
+  "baseline_v17": "libfile_fde3_f-f1b2141eb58c81919fef5fcc209852d1_49ac57203c0c81918f3630f0324dcb35",
+  "independent": true,
+  "merged_into_v17": false,
+  "source_sha256": "23a20ef32fd16a1bd623c0c08ac080d04fc94f248de12133b713a19d6b0330d9",
+  "open_issues": [
+    "整体符号依行列式同构约定，保留作者不确定语气",
+    "ideals V(a),V(b)原文类型混用已注释",
+    "v17旧待核保留，不以本批解除"
+  ]
+}

@@ -1,0 +1,38 @@
+(contained in the relative supersingular set) V ′′ introduced in par. 16 (complements) is
+nothing else but the set formed by the couples (x, Lξ) such that the dimension of Tx ∩Lξ
+is ≥n−m+2 so that V ′ −V ′′ is smooth over S and barring an error it is exactly the same
+as the set of smooth points of V ′ over X. (The veriﬁcation of this point requires a study of
+the ﬁltration of the Grassman scheme according to the dimensions of intersection with L
+variable and T ﬁxed, barring an error we ﬁnd that the following notch of [71] the ﬁltration
+is formed exactly of the non-smooth points of the previous notch (*) [Fr] (stratum???)61,
+when we deﬁne the ﬁltration not just set theoretically but also scheme-theoretically using
+the lemma from page 16 of the complements to par. 16.62 This study would form therefore
+one of the No. of a “geometric” paragraph devoted to grassmanians.)
+If we also deﬁne V (k) as the sub-scheme of X(m) corresponding to dim Tx∩L ≥n−m+
+k we ﬁnd by an immediate calculation that dim Grassm(P)−dim V (k) = (k−1)(n−m)+k2
+at least for the reasonable restrictions k ≤m, k ≤r −m, up to an error of calculation.
+(NB this follows more generally from a calculation of the dimensions of the “cells” which
+intervene in the ﬁltration of the grassmanian which was alluded to above).
+For k = 2, we ﬁnd a diﬀerence of dimension ≥4, so that the image of V ′′ in Grass
+(illegible ask AG) is of codimension ≥4 so that if we are interested in what happens
+outside of subsets of the Grass of codimension ≥2 we may forget V ′′.
+On the other hand, inXGrassm −V ′′ over Grassm the situation is the one of the good
+case anticipated in the complements to par. 16. Relative to the base scheme S: V ′ −V ′′
+is indeed smooth over S (being such over X) of relative dimension equal to one less than
+that of Grassm over S (as we see by putting k = 1 in the above formula). Thus the results
+of the loc cit [Latin] apply, in particular we ﬁnd the fact that the set of supersingular
+points of φm relative to Grassm is nothing else but V ′′ ∪V 2 where V 2 is the sub-prescheme
+of ramiﬁcation of V ′ −V ′′ →Grassm.
+We may therefore say that outside of V ′′ the
+supersingular zeros result from collapsing (collapsing together) of at least two ordinary
+singular zeros. (but we do not have to say this).
+In such a way we have essentially the equivalent of 8.7 a) and b). It should be possible
+to give an equivalent condition for 8.7 c) by using the explicit description of the tangent
+bundle to Grassm (analogous to the caee m = 1) it implies [illegible] that for a geometric
+point of V ′ −V ′′ unramiﬁed over Grassm to know its image in Grassm implies knowing its
+image in P in view of the fact that the ﬁrst image is a smooth point of the closed image
+of V ′ in Grassm (we assume S is the spectrum of a ﬁeld). I could give a more precise
+statement upon request.
+61Ask A.G.
+62A.G.please help locate that reference
+47

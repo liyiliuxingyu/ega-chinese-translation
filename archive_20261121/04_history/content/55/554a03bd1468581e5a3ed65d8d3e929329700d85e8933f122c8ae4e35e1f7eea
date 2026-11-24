@@ -1,0 +1,31 @@
+# 第十七版来源与覆盖
+
+底本位于完整交接包的03_sources；12份实际文件的字节数、SHA-256和PDF物理页数见checks/source_corpus_manifest.json。三个PS载体亦保留；资料齐备不等于全部译完。
+
+## 当前增量
+
+| 当前输入文件 | 原件范围与来源 |
+|---|---|
+| continuations/v_dot_early.tex | EGAVaiello第18页末—43页；Dot18批覆盖§§7—10，本版新译§11 |
+| continuations/v_dot_middle.tex | 第43—53页，§§12—13.4(e)，Dot19批 |
+| continuations/v_dot_late.tex | 第53页标题及54—61页，§§14—15，Dot17批；54—55页漏接为本版新译 |
+| text/v1_2.tex | EGAV1-2.ps全部六页可读文字；与EGAVaiello62—66页前部重合；Dot最后两批作为定义1—注4(c)同文校订 |
+
+完整56批索引见checks/DOT_BATCHES.json，含原TeX散列、处理位置及历史进度；在完整包05_Dot/batches可直接读各批源码，原总包和随后两包在05_Dot/original_archives。
+8.14—8.15批中的前批8.13.tex是备份，不能重复算正文。Dot总ZIP内的其他研究项目仅原样归档，不入本书正文。
+
+## 真实接续定位
+
+- V：EGAVaiello第66页，原句“we have the commutativity of the diagram”之后的交换图。图后还有符号说明和证明；本版尚未连续译入。
+- IV：EGAIV.1物理221页内容提要（标题页未明印分册页码）；章首说明222—223页，(1.1.1)物理223页／印刷224页。
+- 第0章止于(23.2.10, ii)及原“待续”；不能误判为第IV章主体已完成。
+
+## 原件保留
+
+第十六版完整续作包480个ZIP条目经CRC检查，其中每个普通文件均逐字节保留到本包相应位置；checks/v16_complete_migration.json逐项记录旧路径→新路径及SHA。历史说明与工具另归档，当前状态只看本版PROGRESS。
+较早核心包与第十六版原工程中的132份可比现行文件相同，见checks/v16_core_match.json；独立保留核验见checks/preservation_check.json。重排目录和脚注引标另见checks/layout_repairs.json。
+
+## 原文核对边界
+
+以用户上传原件为底本；不以网站的摘要或其他现代教材代替翻译。外部Stacks标签01V4仅用于核对光滑定义中的局部有限表示；相关研究性推导明确标为译校核验。
+第73—74及78页用于定点核查特征2术语，没有计作连续译文。页图与文本抽取若不一致，以页图为准，并标注未辨认部分。

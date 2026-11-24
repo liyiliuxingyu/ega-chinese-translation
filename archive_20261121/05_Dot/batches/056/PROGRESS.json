@@ -1,0 +1,15 @@
+{
+  "date": "2026-11-19T15:00Z",
+  "scope": "底本62页定义3与注4(a)(b)(c)完整段落",
+  "next": "底本62页注4(d) Under the conditions of Definition 1",
+  "previous_zip": "libfile_fde3_f-c75a22d7a85c8191a4936792c1cd2632_49ac57203c0c81918f3630f0324dcb35",
+  "independent": true,
+  "merged_into_main": false,
+  "source_sha256": "23a20ef32fd16a1bd623c0c08ac080d04fc94f248de12133b713a19d6b0330d9",
+  "open_issues": [
+    "特征2二次型退化约定待后文",
+    "注4(a)引用尚待建立判据，未补造证明",
+    "注4(c)未重复geometrically，保留原措辞并解释域上定义语境",
+    "旧批次问题未解除"
+  ]
+}

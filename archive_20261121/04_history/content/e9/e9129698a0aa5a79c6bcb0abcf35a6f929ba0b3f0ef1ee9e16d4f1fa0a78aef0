@@ -1,0 +1,101 @@
+from pathlib import Path
+import hashlib, json
+
+root = Path('/workspace/scratch/a886fd56dd2f')
+baseline = root / 'unpacked/v16/EGA_内容顺序合订第十六版/text/v1_2.tex'
+target = root / 'work/EGA_v17/text/v1_2.tex'
+text = baseline.read_text()
+old = text
+changes = []
+
+def replace(before, after, reason):
+    global text
+    assert text.count(before) == 1, (reason, text.count(before))
+    text = text.replace(before, after)
+    changes.append({'reason': reason, 'before': before, 'after': after})
+
+begin = text.index('\\egas{1}{定义}')
+end = text.index('\\end{enumerate}', begin) + len('\\end{enumerate}')
+old_block = text[begin:end]
+old_d = old_block[old_block.index('\\item 在定义1的条件下'):old_block.index('\\end{enumerate}')]
+collation = (root / 'integration/late/collation_16.tex').read_text()
+collation = collation[collation.index('\\egas{1}{定义}'):]
+collation = collation.replace('\\end{enumerate}', old_d.replace('\\item ', '\\item[(d)] ', 1) + '\\end{enumerate}')
+replace(old_block, collation.strip(), '纳入Dot两批同文校订；保留旧注4(d)')
+
+replace('\\source{\\texttt{EGAV1-2.ps}，转换后共6页：标题页及正文印刷第1--5页}',
+        '\\label{ega:V-short}\n\\source{\\texttt{EGAV1-2.ps}，转换后共6页：标题页及正文印刷第1--5页；与\\texttt{EGAVaiello.pdf}第62--66页前部同文}\n\\noindent\\textbf{本版同文校订。}定义1至注4(c)合入Dot随后两批的校订；重合段落只排印一次，原有注4(d)及后文完整保留。两载体的接合位置与仍待核的数学问题见本版核查报告。',
+        '标明两底本重合，不重复计入已译量')
+
+replace('相对于 $S$ 的奇异零点集 $V(\\varphi)_{\\mathrm{sing}}$。\n\\cmt{T08}{此前的相对底为 $Y$；本句的 $S$ 尚未引入，故此处应为 $Y$。}',
+        '相对于 $Y$ 的奇异零点集 $V(\\varphi)_{\\mathrm{sing}}$。\n\\cmt{D17-S01}{底本此句写相对于$S$，但前提中的相对底为$Y$，且$S$尚未引入；本版据前提订正。原历史注号为T08。}',
+        '命题5的相对底S改Y')
+replace('（当 $X_k$ 由 $X/S$ 经 $\\Spec k\\to S$ 得到时）。\\cmt{T08}{这句又改用了 $S$，而本段相对底仍记为 $Y$。它涉及同一类未统一的相对下标，不另计为一个定理反例。}',
+        '（当 $X_k$ 由 $X/Y$ 经 $\\Spec k\\to Y$ 得到时）。\\cmt{D17-S02}{底本此处两次使用$S$，本段仍以$Y$为相对底，故统一为$Y$；历史注号T08已经指出这一问题。}',
+        '二次初始项基变换下标统一')
+replace('再假设 $V\' $', '再假设 $V\' $', 'unused') if False else None
+replace('再假设 $V\'$ 对 $S$ 光滑，相对维数为原稿所写的\\cmt{T09}{该等式左边实际为 $m-d$。由 $X/Y$ 相对维数 $d$、$Y/S$ 相对维数 $m$，预期的计算应为 $(m+d)-(d+1)=m-1$。}\n\\[\n (m+1)-(d+1)=m-1.\n\\]',
+        '再假设 $V\'$ 对 $S$ 光滑，相对维数为\n\\[\n (m+d)-(d+1)=m-1.\n\\]\n\\cmt{D17-S03}{底本写$(m+1)-(d+1)=m-1$，左边实际为$m-d$。由$X/Y$相对维数$d$及$Y/S$相对维数$m$，环境$X/S$的相对维数为$m+d$；原历史注T09已给出这一订正，本版将它移入正文。}',
+        '相对维数等式移入正确正文')
+replace(' F^\\vee\\otimes\\OO_X\\longrightarrow\n \\Omega^1_{X/S}\\otimes\\OO_W\\longrightarrow\\Omega^1_{W/S}\\longrightarrow0.',
+        ' F^\\vee\\otimes_{\\OO_X}\\OO_W\\longrightarrow\n \\Omega^1_{X/S}\\otimes_{\\OO_X}\\OO_W\\longrightarrow\\Omega^1_{W/S}\\longrightarrow0.',
+        '零点概形微分列首项限制到W')
+replace('原稿接着说：若 $X/S$ 光滑，则第一个同态恰在 $W$ 对 $X$ 光滑且具有“正确”相对维数的点处单射（也就是说，在当前情形下处处单射）。\\cmt{E06、T10}{若把它理解为 $W$ 上的模列，首项应限制到 $W$；作为 $X$ 上的模列则可经限制映射解释。相对光滑的底应核为 $S$，而层单射不足以推出光滑，须检验纤维满秩。尖点例子见E06。}',
+        '若$X/S$光滑，则第一个同态在点$w\\in W$的余域纤维上单射，当且仅当$W/S$在$w$处光滑，且相对维数为$X/S$的相对维数减去$F$的秩（这在当前所加的光滑性及维数假设下处处成立）。\\cmt{D17-S04}{原文写的是模层同态“单射”，并把光滑的相对底印成$X$。模层单射本身不是Jacobian判据；正确条件为余域纤维满秩，相对底为$S$。首项也应限制到$W$。旧报告E06的尖点反例仍保留；本版将已有核查意见落实为正文的纤维秩判据。这里使用$F$的分量给出的局部方程，不能丢弃所列正确余维条件。}',
+        'Jacobian判据层单射改纤维单射')
+replace('这个正合列直接由第16段中的下列正合列得到（可以把上述版本列为推论）：\\cmt{T10}{末项在底本中重复写作 $\\Omega^1_{X/S}$；余法正合列的末项应为 $\\Omega^1_{W/S}$。这里保留错误式，而非无说明地改写。}\n\\[\n J/J^2\\longrightarrow\\Omega^1_{X/S}\\otimes\\OO_W\n      \\longrightarrow\\Omega^1_{X/S}\\longrightarrow0.\n\\]',
+        '这个正合列直接由第16段中的下列正合列得到（可以把上述版本列为推论）：\n\\[\n J/J^2\\longrightarrow\\Omega^1_{X/S}\\otimes\\OO_W\n      \\longrightarrow\\Omega^1_{W/S}\\longrightarrow0.\n\\]\n\\cmt{D17-S05}{底本末项重复印为$\\Omega^1_{X/S}$；余法正合列的末项应为$\\Omega^1_{W/S}$，本版落实旧注T10所列订正。}',
+        '余法正合列末项纠正')
+replace('能夠在最左边', '能夠在最左边', 'unused') if False else None
+replace('能够在最左边添上一个零的点集的刻画，包含在 Jacobian 判据中。\\cmt{E06}{这一句也必须结合纤维满秩与适当余维假设理解，不能把抽象单射与光滑判据等同。}',
+        '上述余域纤维上的单射条件，以及它所保证的列左端正合性，由Jacobian判据刻画。\\cmt{D17-S06}{底本仅说“能够在最左边添上一个零”；本版承接前述纠正，将其限定为Jacobian判据的纤维秩条件，不再把抽象层单射等同于光滑性。}',
+        '紧邻Jacobian判据措辞同步限定')
+
+start=text.index('注意，有典范同构')
+end=text.index('由此得到：', start)
+old_para=text[start:end]
+new_para=r'''注意，有典范同构
+\[
+ \PP^1_{X/Y}=\Omega^1_{X/Y}+\OO_X,
+ \qquad (\PP^1_{X/Y})^\vee=G_{X/Y}+\OO_X
+\]
+（原稿中的$G$是拉长的字形）。\ednote{拉长的$G$是否就是切层？}
+\cmt{D17-S07}{底本这里把三处相对下标写为$X/S$，但图中同态$\mu$的定义域为$(\PP^1_{X/Y})^\vee|_{V'}$，二次初始项来自$X/Y$；本版统一这些项为$X/Y$。$+$沿用原稿的直和记号，$G$沿用其切层记号，编者疑问照存。}
+另一方面，可验证图中复合同态$\mu$在因子$\OO_{V'}$上为零，在因子$G_{X/Y}\otimes_{\OO_X}\OO_{V'}$上化为由$\Sym^2(\Omega^1_{X/Y})\otimes\OO_{V'}$的截面$M(\varphi)$得到的同态$M(\varphi)'$〔此处字迹不清〕。因此，在点$x\in V'$处，$M(\varphi)'$满射，当且仅当$\mu$在$x$处满射；由图中两条正合列，这又等价于$\nu$在$x$处满射，因为两者均表示$\Omega^1_{X/S}|_{V'}$的上述两个子模之和到该模的典范同态在$x$处满射。\cmt{D17-S08}{底本先把同态$\mu$印为$M$，再把$\nu$印为$V$；本版据原图订正（旧注T08）。这个满射性的线性代数等价不解决特征2下“退化二次型”的约定问题；不能由此声称本稿所有特征下的超奇异判据已独立验证。}
+'''
+replace(old_para,new_para,'图式下标及μ、ν字母错置迁入正文')
+
+start=text.index('若两者的秩分别为 $q,r$')
+end=text.index('原稿随即把它描述为',start)
+old_para=text[start:end]
+new_para=r'''若两者的秩分别为$q,r$，这也是最高目标外幂同态
+\[
+ \bigwedge^r Q\longrightarrow\bigwedge^r M
+\]
+不满射的点集，亦即相应的典范截面
+\[
+ \mathscr{H}\!om(\bigwedge^r Q,\bigwedge^r M)
+ \simeq(\bigwedge^r Q)^\vee\otimes\det M
+\]
+的零点集。\cmt{D17-S09}{底本破损式写为$\Lambda^1Q\to\Lambda\sqrt M$，并写$\Hom(\Lambda^1Q,\Lambda\sqrt M)\simeq(\approx)(\Lambda\sqrt Q)\otimes(\Lambda^rR)\otimes(\Lambda^1Q)^\vee$。这些字形在原PS渲染中确实存在，并非本次抽取造成。正确外幂为目标秩$r$的外幂，相应Hom模如正文；旧注T01已作此类型核对，本版将可确定的公式移入正文。}
+
+'''
+replace(old_para,new_para,'破损外幂公式改成有效类型并原式留脚注')
+replace('使原稿所写的\n\\[\n p+1=m+1\n\\]\n成立；对态射 $P\\to M/W=S$ 和 $Q\\to M/P=R$ 使用上述构造，',
+        '使\n\\[\n p+q=m+1\n\\]\n成立；对态射 $P\\to M/Q=S$ 和 $Q\\to M/P=R$ 使用上述构造，',
+        '局部自由模秩条件及商模纠正')
+replace('\\cmt{T01}{按上一句的余秩关系，这里应为 $p+q=m+1$；$M/W$ 则应为 $M/Q$，因为 $W$ 是赋环空间而非 $M$ 的子模。这些修正均需明示。}',
+        '\\cmt{D17-S10}{底本把秩条件写为$p+1=m+1$，商模写为$M/W$。按余秩关系应为$p+q=m+1$，且$W$是赋环空间而非$M$的子模，故商模应为$M/Q$。本版落实旧注T01所列订正。}',
+        '保留秩与商模原错记录')
+replace('也可把这两个截面视为从原稿所写的\n\\[\n L=\\det P\\otimes\\det Q\\otimes\\det M\n\\]\n分别到 $P,Q$ 的同态。\\cmt{T01}{由上面两个截面所属的模计算，$L$ 的末因子应为 $(\\det M)^{-1}$。详见核查报告中的类型核对。}',
+        '也可把这两个截面视为从\n\\[\n L=\\det P\\otimes\\det Q\\otimes(\\det M)^{-1}\n\\]\n分别到 $P,Q$ 的同态。\\cmt{D17-S11}{底本最后一个因子写作$\\det M$。由上面两个截面所属的模计算，应为$(\\det M)^{-1}$；合并英文稿第66页紧接的图也明写此逆因子。本版据类型核对及该图落实旧注T01的订正。}',
+        '行列式线丛末因子取逆')
+replace('\\par\\bigskip\\noindent\\textbf{原文件在此结束。}标题提及的其他小节不能仅凭文件名认定已收录；所上传的六页文件没有在最后一句之后提供交换图或证明结尾。本译稿已翻译其全部可读正文，但没有补造所缺内容。',
+        '\\par\\bigskip\\noindent\\textbf{PS底本在此结束。}所上传的六页\\texttt{EGAV1-2.ps}未在最后一句后提供交换图或证明结尾。合并英文稿\\texttt{EGAVaiello.pdf}第66页在这一句后实际给出交换图并继续论证；该图起是本项目下一处尚未译入的内容。本版已核对两个载体的这个接合点，不把PS中的截断误称为合并英文稿的缺文，也不把Dot第62页的分批断点误当作全工程接续点。',
+        '标明真实非重复接续点为PDF66交换图')
+
+target.write_text(text)
+archive=target.parent.parent/'history/v16_short_before_integration.tex'
+archive.parent.mkdir(exist_ok=True);archive.write_bytes(baseline.read_bytes())
+(root/'integration/short_changes.json').write_text(json.dumps({'baseline_sha256':hashlib.sha256(old.encode()).hexdigest(),'new_sha256':hashlib.sha256(text.encode()).hexdigest(),'changes':changes},ensure_ascii=False,indent=2))
+print('updated',target,'bytes',len(text.encode()),'changes',len(changes))

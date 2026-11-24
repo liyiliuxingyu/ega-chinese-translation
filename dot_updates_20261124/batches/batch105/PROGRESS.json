@@ -1,0 +1,28 @@
+{
+  "batch": 105,
+  "this_french_pages": [
+    39,
+    40
+  ],
+  "boundary_review_only_french_pages": [
+    41,
+    42
+  ],
+  "this_english_pages": [
+    27,
+    28,
+    29
+  ],
+  "crosscheck_english_pages": [
+    62,
+    63,
+    64,
+    65
+  ],
+  "this_from": "法39页尾承接句",
+  "this_through": "法40页末定理8.7(c)可辨起笔",
+  "next": "法41给像闭包赋约化结构起，续法42、43，英28末、29及30首；分别处理8.8和8.9",
+  "merge_into_1158_done": false,
+  "formal_EGA_IV_1": "另线221提要 / 223定义1.1.1",
+  "unverified": "当前法40至41及英28的8.7(c)原句后半缺续，未证为整页缺失；法36段号仍不定，8.8标题和前提需继续核对"
+}

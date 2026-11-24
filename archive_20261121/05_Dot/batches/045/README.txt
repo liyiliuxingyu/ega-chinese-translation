@@ -1,0 +1,1 @@
+独立续译，未合并主稿。范围及下一断点见PROGRESS.json。通常安装含ctex和Fandol的TeX Live后执行build.sh，连续两次XeLaTeX构建。底本.pdf是原始英译编辑稿；本批仅译其57页命题14.4之前的两个段落。

@@ -1,0 +1,148 @@
+% 底本 EGAIV.1.pdf，上传PDF第108--113页，原分册印刷第109--114页。
+\subsection{Cohen代数与Cohen的\texorpdfstring{$p$}{p}-环；完备局部环结构的应用}
+\source{第四卷第一部分，印刷第109--114页；上传PDF第108--113页}
+本小节的结果是19.7各定理的直接应用，但因其实际重要性，值得明确写出。
+
+\egas{19.8.1}{定义}
+设 $A,B$ 为诺特局部环，$\mathfrak m$ 为 $A$ 的极大理想，$k=A/\mathfrak m$，局部同态 $\varphi:A\to B$ 使 $B$ 成为 $A$-代数。若满足以下条件，称 $B$ 为\emph{Cohen $A$-代数}：
+
+$(i)$ $B$ 完备；
+
+$(ii)$ $B$ 为平坦 $A$-模；
+
+$(iii)$ $B\otimes_Ak$ 是域，亦即 $\mathfrak mB$ 为 $B$ 的极大理想，而且此域为 $k$ 的可分扩域。
+
+\egas{19.8.2}{定理}
+设 $A$ 为诺特局部环，$k$ 为其剩余域。
+
+$(i)$ 若 $B$ 为Cohen $A$-代数，则 $B$ 为形式光滑 $A$-代数。因此，对每个完备诺特局部环 $C$、局部同态 $A\to C$ 和真理想 $\mathfrak j\subsetneq C$，每个 $A$-同态 $B\to C/\mathfrak j$ 都可分解为
+\[
+ B\xrightarrow{v}C\longrightarrow C/\mathfrak j,
+\]
+其中 $v$ 为 $A$-同态，且必为局部同态。
+
+$(ii)$ 对 $k$ 的每个可分扩域 $K$，存在Cohen $A$-代数 $B$，使 $B\otimes_Ak$ 与 $K$ 为 $k$-同构；此 $A$-代数在同构意义下唯一。
+
+\begin{proof}
+$K$ 为形式光滑 $k$-代数（19.6.1），所以 $(i)$ 的形式光滑性由（19.7.1）得到，提升由（19.3.10）得到。其局部性来自 $B$ 的极大理想为 $\mathfrak mB$，而 $A\to C$ 局部。
+
+对 $(ii)$，可先以 $\widehat A$ 代替 $A$：$B$ 对 $A$ 平坦等价于其对 $\widehat A$ 平坦（$0_{\mathrm{III}}$，10.2.3），且 $\mathfrak mB=\mathfrak m\widehat A B$，剩余域仍为 $k$。取 $\mathfrak j=\mathfrak m$、$B_0=K$，应用（19.7.2）及（19.6.1）即得结论。
+\end{proof}
+
+\egas{19.8.3}{定义}
+称形如 $\mathbf Z_{p\mathbf Z}$ 的局部环为\emph{素局部环}，其中 $p\mathbf Z$ 为 $\mathbf Z$ 的素理想。素局部环的完备化称为\emph{素完备局部环}。
+
+素局部环有以下两类：
+
+$1^\circ$ 当 $p>0$ 为素数时，$\mathbf Z_{p\mathbf Z}$ 是离散赋值环，其完备化为通常记作 $\mathbf Z_p$ 的 $p$-进整数环。\orig{此处已通用的 $\mathbf Z_p$ 记号与（$0_{\mathrm I}$，1.2.3）所用的 $A_f$ 记号有冲突：若 $A=\mathbf Z$、$f=p$，$A_f$ 表示形如 $a/p^n$ 的有理数组成的环，其中 $a\in\mathbf Z$、$n\ge0$。本书始终避免用 $\mathbf Z_p$ 表示后一个环。}
+
+$2^\circ$ 对素理想 $(0)$，$\mathbf Z_{(0)}=\mathbf Q$，其局部环拓扑为离散拓扑，因而等于自身的完备化。
+
+上述术语与“素域”的术语相类似，其理由也相同。对任一局部环 $A$，考虑典范同态 $\varphi:\mathbf Z\to A$，令 $p\mathbf Z$ 为其极大理想 $\mathfrak m$ 的逆像。它是 $\mathbf Z$ 的素理想，故 $\varphi$ 唯一分解为
+\[
+ \mathbf Z\longrightarrow\mathbf Z_{p\mathbf Z}\xrightarrow{\psi}A.
+\]
+由于 $\varphi$ 唯一，$p$ 与局部同态 $\psi$ 也唯一。换言之，存在唯一的素局部环 $P$ 及\emph{局部同态} $\psi:P\to A$。若 $A$ 分离且完备，$\psi$ 唯一延拓为\emph{局部同态} $\widehat\psi:\widehat P\to A$，其中 $\widehat P$ 为相应素完备局部环。
+\cmt{H8-C01}{依作者正式勘误Err$_{\mathrm{IV}}$，9，在本段两处及（19.8.4）的开头将“同态”改为“局部同态”。不加局部性，素局部环 $P$ 也未必由 $A$ 唯一确定，例如对不同素数 $q$ 都存在保单位同态 $\mathbf Z_{q\mathbf Z}\to\mathbf Q$。作者原勘误选译见书末。}
+通过剩余映射，$\psi$ 在 $p>0$ 时诱导 $\mathbf F_p\to k$，在 $p=0$ 时诱导 $\mathbf Q\to k$，其中 $k=A/\mathfrak m$。故 $p$ 正是 $k$ 的特征。
+
+特别地，若 $A$ 本身为素局部环或素完备局部环，则其唯一的环自同态为恒等同态。
+
+\egas{19.8.4}{定义}
+设 $A$ 为局部环，$P\to A$ 为从素局部环出发的唯一局部同态，$p$ 为 $P$ 和 $A$ 的剩余域的特征。若 $A$ 为Cohen $P$-代数，称其为\emph{Cohen环}。按（19.8.1），这意味着：
+
+$1^\circ$ $A$ 诺特且完备；
+
+$2^\circ$ $A$ 为平坦 $P$-模；这也等价于 $A$ 为平坦 $\widehat P$-模（Bourbaki，\textit{交换代数}，第三章，§5，第4目，命题4）；
+
+$3^\circ$ $A/pA$ 为域。该域自动在 $P$ 的剩余域上可分，因为后者为素域。
+
+若 $p=0$，这些条件等价于 $A$ 是特征零的域。若 $p>0$，由平坦性，$p$ 为 $A$-正则元（$0_{\mathrm I}$，6.3.4），且 $pA$ 为 $A$ 的极大理想。因此 $A$ 是一维正则局部环（17.1.1，d），从而为离散赋值环；由 $1^\circ$，它完备。综上：
+
+\egas{19.8.5}{命题}
+Cohen环恰为特征零的域，以及满足以下条件的完备离散赋值环：其剩余域具有正特征 $p$，且极大理想由 $p\cdot1$ 生成，其中 $1$ 为环的单位元。
+
+在后一情形，$p\cdot1\ne0$，因为 $p$ 为正则元。于是典范同态 $\mathbf Z\to A$ 单射，可把 $p\cdot1$ 与整数 $p$ 识别，亦可与 $\mathbf Z_p$ 中的 $p$ 识别。这时称 $A$ 为\emph{Cohen的 $p$-环}。
+
+\egas{19.8.6}{定理（Cohen）}
+$(i)$ 设 $W$ 为Cohen环，$C$ 为完备诺特局部环，$\mathfrak j\subsetneq C$ 为理想。每个局部同态 $u:W\to C/\mathfrak j$ 都可分解为 $W\xrightarrow{v}C\to C/\mathfrak j$，其中 $v$ 局部。
+
+$(ii)$ 对每个域 $K$，存在以 $K$ 为剩余域的Cohen环 $W$。若 $W'$ 是另一Cohen环，$K'$ 为其剩余域，则每个同构 $u:K\xrightarrow{\sim}K'$ 都由一个同构 $v:W\xrightarrow{\sim}W'$ 在剩余域上诱导。
+
+这就是将（19.8.2）用于素局部基环的结果。
+
+\egas{19.8.7}{注}
+$(i)$ 当 $K$ 的特征为零时，（19.8.6，ii）是直接的。
+
+$(ii)$ （19.8.6，i）中的同态 $v$ 不一定由 $u$ 唯一决定；即便 $W$ 是特征零的域、$\mathfrak j^2=0$ 且 $u$ 是同构，也可能如此，参见（21.5.3）。同样，（19.8.6，ii）的同构 $v$ 一般也不由 $u$ 唯一决定，仍见（21.5.3）。然而，当 $K$ 为正特征 $p$ 的完美域时，（21.5.3）将表明（19.8.6，ii）的 $v$ 唯一。后面还将证明，此时 $W$ 与 $K$ 上无限长Witt向量环 $W_\infty(K)$ 识别。
+\cmt{H8-C02}{本段三处原引文均为（21.5.5），依作者勘误改为（21.5.3）。另须注意原页确为 $\mathfrak j^2=0$，不是 $\mathfrak j=0$；若核为零，给定 $u$ 的提升当然唯一。}
+
+$(iii)$ 对（19.8.6，i）的提升结论，可在（19.3.10）的全部假设下弱化目标环 $C$ 的条件：把 $C$ 看作与基环结构相容的拓扑代数，要求其可度量、分离完备，$\mathfrak j$ 为闭理想且 $\mathfrak j^n\to0$，即可应用该命题。
+\cmt{H8-W01}{原文称可用（19.3.10）和（19.3.12）弱化 $C$ 的假设；但后者已被作者正式勘误Err$_{\mathrm{IV}}$，8撤销。本版只保留由未撤销的（19.3.10）实际支持的拓扑提升范围，不再借（19.3.12）宣称更广结论。这是对失效引文的处理，并非否定（19.8.6）。}
+
+\egas{19.8.8}{定理（Cohen）}
+设 $A$ 为完备诺特局部环，$k$ 为其剩余域。
+
+$(i)$ 存在Cohen环 $W$，使 $A$ 同构于形式幂级数环 $W[[T_1,\ldots,T_n]]$ 的商环。特别地，$A$ 同构于一个完备正则局部环的商（17.3.8）。若 $A$ 包含一个域，则 $A$ 同构于 $k[[T_1,\ldots,T_n]]$ 的商环。
+
+$(ii)$ 若另假设 $A$ 为整环，则存在子环 $B\subset A$，满足：$1^\circ$ $B$ 同构于某个域或Cohen环 $C$ 上的有限变量形式幂级数环，因而 $B$ 为完备正则局部环（17.3.8）；$2^\circ$ $B$ 与 $A$ 有相同的剩余域，且包含同态 $B\hookrightarrow A$ 局部；$3^\circ$ $A$ 为有限 $B$-代数。
+
+\begin{proof}
+令 $\mathfrak m$ 为 $A$ 的极大理想。由（19.8.6，ii），存在剩余域与 $k$ 同构的Cohen环 $W$。对应的局部同态 $W\to A/\mathfrak m$ 提升为局部同态 $u:W\to A$（19.8.6，i）。对 $\mathfrak m$ 中每个有限族 $x_1,\ldots,x_n$，都有延拓 $u$ 的局部同态
+\[
+ v:W[[T_1,\ldots,T_n]]\longrightarrow A,
+ \qquad v(T_i)=x_i
+\]
+（Bourbaki，\textit{交换代数}，第三章，§4，第5目，命题6）。若 $A$ 包含一个域，则其素子域 $P$ 的剩余扩张 $k/P$ 可分。由（19.6.2），$A$ 含有与 $k$ 同构的系数域；定义 $v$ 时可用此域代替 $W$。
+
+$(i)$ 取 $x_1,\ldots,x_n$ 生成 $\mathfrak m$。因 $W$ 与 $A$ 的剩余域相同，且各 $x_i$ 的初始形式生成 $\gr_\bullet(A)$，相伴分次同态 $\gr(v)$ 满射。由完备性，$v$ 满射（Bourbaki，\textit{交换代数}，第三章，§2，第8目，定理1的推论2）。$A$ 含域的情形在（19.6.3）已证明，此处仅重述。
+
+$(ii)$ 若 $A$ 含域，则取系数域 $k'\subset A$，选择参数系 $y_1,\ldots,y_d$（16.3.6），并定义
+\[
+ w:B=k[[T_1,\ldots,T_d]]\longrightarrow A,
+ \qquad w|_k:k\xrightarrow{\sim}k',\quad w(T_j)=y_j.
+\]
+若 $A$ 不含域，则（19.8.3）的局部同态 $\mathbf Z_{p\mathbf Z}\to A$ 必单射：否则因 $A$ 为整环，其核必为极大理想，像便是一个域。又 $p>0$，因为 $p=0$ 时 $\mathbf Z_{(0)}=\mathbf Q$ 已为域。于是 $p\cdot1$ 为 $A$ 中属于 $\mathfrak m$ 的非零因子。由（16.3.4）、（16.3.7），可取 $y_1,\ldots,y_{d-1}$，使它们与 $p$ 组成 $A$ 的参数系。
+
+证明开头选择的 $W$ 此时为以 $p$ 生成极大理想、剩余域为 $k$ 的完备离散赋值环。所选同态 $u:W\to A$ 将 $p$ 映为 $p$。
+\cmt{H8-T02}{初版此处称“开头定义的唯一同态 $u$”；但开头只是选择了一个提升，而（19.8.7，ii）已经明确说明提升一般不唯一。正文改为“所选同态”，不改变证明。}
+令
+\[
+ B=W[[T_1,\ldots,T_{d-1}]],
+\]
+并取延拓 $u$、满足 $w(T_j)=y_j$ 的局部同态 $w:B\to A$。
+
+以上两种情形中，若 $\mathfrak n$ 为 $B$ 的极大理想，则 $\mathfrak nA$ 为 $A$ 的定义理想，且 $B/\mathfrak n\simeq A/\mathfrak m$。故 $A$ 为拟有限 $B$-模（$0_{\mathrm I}$，7.4.4）；因 $B$ 完备而 $A$ 对 $\mathfrak n$-预进制拓扑分离，$A$ 为有限型 $B$-模（$0_{\mathrm I}$，7.4.1）。
+\cmt{H8-C03}{初版误写为“有限型 $A$-模”，依作者勘误改为“有限型 $B$-模”；这里必须得到的是 $w:B\to A$ 有限，而不是 $A$ 作为自身上的模有限生成这一恒真事实。}
+另一方面，两种情形都有 $\dim B=\dim A=d$。含域时由（17.1.4，iii）得到；另一情形中，$p,T_1,\ldots,T_{d-1}$ 是生成 $\mathfrak n$ 的 $B$-正则序列，亦可用这些生成元及（16.3.10）的维数不等式得到同一结论。最后，$A,B$ 都是整环，故由（16.3.10），$w$ 单射。把 $B$ 与其像识别，即得所述子环。
+\end{proof}
+
+\egas{19.8.9}{推论}
+设 $A$ 为包含子域 $k_0$ 的完备诺特局部整环，$k$ 为其剩余域，并假设 $[k:k_0]<\infty$。则在（19.8.8，ii）的结论中，可以把 $1^\circ$ 和 $2^\circ$ 换为：$B$ 具有形式 $k_0[[T_1,\ldots,T_n]]$，且包含同态 $B\hookrightarrow A$ 为局部 $k_0$-同态，其中 $B$ 取通常的 $k_0$-代数结构。
+
+事实上，沿用（19.8.8，ii）的证明，这次定义 $w:k_0[[T_1,\ldots,T_n]]\to A$，令其在 $k_0$ 上为恒等，在各 $T_j$ 上取参数 $y_j$。$k/k_0$ 有限仍保证 $A$ 为拟有限 $B$-模，继而由（$0_{\mathrm I}$，7.4.1）为有限型 $B$-模；之后同（19.8.8）。
+
+\egas{19.8.10}{推论}
+设 $A$ 为阿廷局部环，其极大理想 $\mathfrak m$ 满足 $\mathfrak m^2=0$。则存在正则诺特局部环 $B$，设其极大理想为 $\mathfrak n$，使
+\[
+ A\simeq B/\mathfrak n^2.
+\]
+
+\begin{proof}
+令 $K=A/\mathfrak m$，$n=\dim_K(\mathfrak m/\mathfrak m^2)=\dim_K\mathfrak m$。若 $A$ 含域，由（19.6.3），$A\simeq B/\mathfrak b$，其中 $B=K[[T_1,\ldots,T_n]]$，且 $\mathfrak b\subseteq\mathfrak n^2$。又 $\mathfrak m^2=0$ 给出 $\mathfrak n^2\subseteq\mathfrak b$，所以 $\mathfrak b=\mathfrak n^2$；也可比较长度 $\len(B/\mathfrak n^2)=n+1=\len(A)$ 得到同一结论。
+
+若 $A$ 不含域，则 $\operatorname{char}K=p>0$ 且 $p\cdot1\ne0$（19.6.3）。因此可以在 $\mathfrak m$ 中取 $x_2,\ldots,x_n$，使 $p\cdot1,x_2,\ldots,x_n$ 为其 $K$-基。取剩余域为 $K$ 的Cohen环 $W$；它为以 $p$ 生成极大理想的离散赋值环。由（19.8.8）的证明，可取 $u:W\to A$，使其剩余同态为 $K$ 的恒等，且将 $p$ 映为 $p$。令
+\[
+ B=W[[T_2,\ldots,T_n]],
+\]
+并定义局部同态 $w:B\to A$，延拓 $u$ 且满足 $w(T_i)=x_i$。由极大理想生成元的选取及完备性，$w$ 满射。又它在剩余域及余切空间上诱导同构，所以其核 $\mathfrak b$ 包含于
+\[
+ \mathfrak n^2,\qquad \mathfrak n=pB+BT_2+\cdots+BT_n.
+\]
+同样，由 $\mathfrak m^2=0$ 得 $\mathfrak n^2\subseteq\mathfrak b$，从而 $\mathfrak b=\mathfrak n^2$；亦可使用上述长度比较。
+\end{proof}
+
+\egas{19.8.11}{命题}
+设 $A$ 为阿廷局部环，$\mathfrak m$ 为其极大理想，$k$ 为其剩余域，$p=\operatorname{char}k$。则 $A$ 同构于某个Cohen环的商环，当且仅当 $\mathfrak m$ 由 $p\cdot1$ 生成。
+
+必要性由（19.8.5）得到。反之，如（19.8.8）证明开头，取剩余域为 $k$ 的Cohen环 $W$ 及诱导剩余域同构的局部同态 $u:W\to A$。当 $p>0$ 时，$W$ 中的 $p\cdot1$ 生成其极大理想，且由 $u$ 映为 $A$ 中的 $p\cdot1$。故 $\gr(u)$ 满射，由完备性，$u$ 满射（Bourbaki，\textit{交换代数}，第三章，§2，第8目，定理1的推论2）。当 $p=0$ 时，假设给出 $\mathfrak m=0$，所以 $A$ 本身为特征零的域，已是Cohen环。

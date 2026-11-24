@@ -1,0 +1,4 @@
+EGA5.pdf 171页 SHA256 24cf8204184b58b18a46e5f63ecc36d6e791b3c8c96a09daac93de96ebd8e830；英稿112页 SHA256 23a20ef32fd16a1bd623c0c08ac080d04fc94f248de12133b713a19d6b0330d9。https://webusers.imj-prg.fr/~leila.schneps/grothendieckcircle/EGA/EGA5trans.pdf
+正式 EGA IV.3 整本 SHA256 509ff2bcbadd26fbc7566e6fcd79406eefbe5a8dfc8c984f4703c51f8d7e420f，物理225对应印刷226的15.2.2开头。法26旧稿只用来记录编辑意图，不借此证明开性和平坦性，未对应第12段的最终编号。
+正文订正6.1为7.1并脚注原号，区分两种U、两处S'和参数截面ξ/超平面截面Yξ/纤维Yξ(t)。无限域仅在有非空好参数开集时有用；ξ₀局部提升后凭E开缩邻域；平坦性还需第5节判据。法27手加“例如在一定条件下”、有限étale；不把逐步裁切当极限逼近，不把扩张有限域认作无限域；用首一提升及判别式证明有限étale满射的唯一纤维点。法27废稿残句不补。
+XeLaTeX两遍，终日志查缺字、未定义和溢出，成品全页渲染目检，三种底本摘页100dpi像素一致，ZIP CRC、实解SHA、包内外PDF/TeX同。

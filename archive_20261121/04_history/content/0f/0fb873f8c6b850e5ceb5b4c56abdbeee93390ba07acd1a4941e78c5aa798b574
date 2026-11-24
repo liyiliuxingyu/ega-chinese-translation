@@ -1,0 +1,28 @@
+% COLLATION CANDIDATE ONLY; NOT ADDITIONAL CONTENT.
+% Replace the existing EGAV1-2 Definitions/Remarks 1--4(c), preserving Remark 4(d) onward.
+\egas{1}{定义}
+设$X$为正则预概形，$\varphi$为$\mathcal O_X$的一个截面。若点$x\in X$满足
+\[
+\varphi_x\in\mathfrak m_x^2,
+\]
+则称$x$为$\varphi$的一个\emph{奇异零点（或根）}。\cmt{V-H-C16-01}{底本写作$\mathfrak m_X$，但所讨论的是点$x$处的函数芽及余域$k(x)$；故明确记$\mathfrak m_x$为局部环$\mathcal O_{X,x}$的极大理想，$\varphi_x$为截面在该局部环中的芽。}
+若$x$是一个奇异零点（或根），并且$\varphi_x$所确定的元素
+\[
+[\varphi_x]\in\mathfrak m_x^2/\mathfrak m_x^3
+\simeq\operatorname{Sym}^2_{k(x)}(\mathfrak m_x/\mathfrak m_x^2)
+\]
+在被解释为$k(x)$上向量空间$\mathfrak m_x/\mathfrak m_x^2$的对偶空间$t_x$上的二次型时，是一个退化二次型，则称$x$为一个\emph{超奇异零点}。\cmt{V-H-C16-02}{底本右端实际印为$\operatorname{Sym}(\mathfrak m_X/\mathfrak m_X^2)$，未写二次分次。左端是极大理想滤过的二次分次，且下文明确解释为二次型，所以此处补为$\operatorname{Sym}^2$；所用同构是正则局部环的伴随分次代数同构的二次部分。底本此处未说明“degenerate form”在特征2下的约定，译文仅照译为“退化二次型”，不擅自用极化双线性型行列式为零替换该定义；具体约定留待后文核实。}
+（不是超奇异零点的奇异零点〔或根〕，有时称为\emph{普通奇异零点}。）
+
+\egas{2}{注}
+若$x\in V(\varphi)$，则$x$是$\varphi$的一个非奇异零点，当且仅当$\varphi_x\ne0$且$x$是一个非奇异点，也就是说，$x$是$V(\varphi)$的一个正则点；换言之，当且仅当$x$是$V(\varphi)$的正则点，并且在$x$的某个邻域内$V(\varphi)\ne X$。\cmt{V-H-C16-03}{原句中“a non-singular point”由紧随的“i.e.”解释为$V(\varphi)$的正则点，而不是仅指$X$的正则点。此处仍在定义1的正则环境中；$V(\varphi)$按由$\varphi$定义的闭子概形理解。条件$\varphi_x\ne0$指局部环中的芽不为零，不是余域中的值不为零：既然$x\in V(\varphi)$，其余域值恰为零。末尾的邻域不等式按局部子概形意义理解为该芽不为零，不是只比较整个空间中两个底层点集。原文两个“i.e.”的解释链保留，不删去必要的非零条件。}
+
+\egas{3}{定义}
+设$X$为域$k$上的光滑预概形，$\varphi$为$\mathcal O_X$的一个截面，且$x\in V(\varphi)$。如果对于$k$的每一个扩域$k'$，以及$X$的每一个以$k'$为值域、位于$x$的点$\xi$，在$X_{k'}$中对应的点$x'$都是$\varphi_{k'}$的奇异零点（分别为超奇异零点），则称$x$为$\varphi$相对于$k$的一个\emph{几何奇异零点}（分别为\emph{几何超奇异零点}）。\cmt{V-H-C16-04}{底本在“for every extension $k'$ of $k$”之后印作“with values in $k$”，与所述基变换及注4(a)不合；此处校为“以$k'$为值域”。其含义是一个$k$态射$\xi:\operatorname{Spec}k'\to X$，像为$x$；它诱导$X_{k'}=X\times_k\operatorname{Spec}k'$中的点$x'$。并非任意扩域都存在这样的$\xi$；量词只要求检验实际存在的点。底本写$X'_k$和$\varphi'_k$，这里统一以$X_{k'}$、$\varphi_{k'}$表示基变换及拉回截面，避免撇号位置混淆。}
+
+\egas{4}{注}
+\begin{enumerate}
+\item[(a)] 由后面将建立的判据可知，在定义3中，只须用一个以某个$k'$为值域的点作检验即可。例如，可以取$k'=k(x)$或$\overline{k(x)}$，并取以这样的$k'$为值域的典范点。\cmt{V-H-C16-05}{底本第二个$k(x)$上有横线，此处明确为余域的代数闭包$\overline{k(x)}$。典范点来自$\operatorname{Spec}k(x)\to X$，或其沿$k(x)\hookrightarrow\overline{k(x)}$的复合。作者以尚待展开的判据为依据；本段译校未补造该判据及其证明。}
+\item[(b)] 由注2可知，$x$是$\varphi$的几何非奇异零点，当且仅当$\varphi_x\ne0$，且$V(\varphi)$在$x$处光滑。\cmt{V-H-C16-06}{这里仍在定义3的域$k$上讨论，因此“光滑”指在$k$上光滑。$\varphi_x\ne0$是局部环中的芽非零，并不表示在余域中的函数值非零。$x\in V(\varphi)$时后者为零；该非零条件不能省略，否则零截面也会被误判为非奇异。}
+\item[(c)] 假设预概形$X$在另一个预概形$Y$上光滑，$\varphi$为$\mathcal O_X$的一个截面，且$x\in V(\varphi)$。若$x$在纤维$X_s$上是相对于$k(s)$的奇异零点（或超奇异零点），就称$x$为相对于$Y$的奇异零点（或超奇异零点）；这里$s$是$x$在$Y$中的像。\cmt{V-H-C16-07}{纤维上所用函数是$\varphi$的限制。底本此项写“singular zero (or supersingular) relative to $Y$”和“such relative to $k(s)$”，没有在这两处重复“geometrically”；正文保留这一措辞。在紧接定义3的语境中，“相对于$k(s)$”承接域上几何版本的定义，不应悄然改成仅检验纤维局部环的未作扩域的版本。术语是否在后文统一，仍须继续对照。}
+\end{enumerate}

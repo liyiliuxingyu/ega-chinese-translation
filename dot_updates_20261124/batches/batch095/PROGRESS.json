@@ -1,0 +1,20 @@
+{
+  "batch": 95,
+  "this_french_pages": [
+    22,
+    23,
+    24
+  ],
+  "this_english_pages": [
+    17,
+    18
+  ],
+  "this_from": "法22下部备注5.5",
+  "this_through": "法24上部被划销旧稿末，第6节标题前；英18第6节前",
+  "french_contiguous_through": "法24第6节标题以前",
+  "next": "法24下部第6节标题，法25续、英18。核6.1手写固有和15.6.3来源",
+  "merge_into_1158_done": false,
+  "double_count_as_new_translation": false,
+  "formal_EGA_IV_1": "另线221提要 / 223定义1.1.1",
+  "unverified": "12.1.4与12.1.6为正式版本数学对应，未查手稿编号历史；法24废稿开头残尾及叠写编号不复原；Seidenberg论文适用范围未逐页核；全卷覆盖未闭合"
+}

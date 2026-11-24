@@ -1,0 +1,14 @@
+{
+  "completed": "底本61页首个完整长段Let us again take起至valid in this current context",
+  "next": "底本61页The passage in No. 4 from a generic section to a general section",
+  "previous_project": "libfile_fde3_f-05fd9140853881919a6f05f24c49fbcb_49ac57203c0c81918f3630f0324dcb35",
+  "source_sha256": "23a20ef32fd16a1bd623c0c08ac080d04fc94f248de12133b713a19d6b0330d9",
+  "merged_into_main": false,
+  "pdf_pages": 4,
+  "unresolved": [
+    "维数公式涉及多分支及占优分支，适用性待核",
+    "不可辨条件及三问号保持",
+    "坏点集最后P→P分歧究竟指总空间还是纤维态射不明，未默改",
+    "闭性、维数估计及历史待核未独立补证"
+  ]
+}

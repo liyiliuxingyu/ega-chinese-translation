@@ -1,0 +1,6 @@
+法文作者手稿：EGA5.pdf，物理171页，SHA256 24cf8204184b58b18a46e5f63ecc36d6e791b3c8c96a09daac93de96ebd8e830。
+法文参考：https://webusers.imj-prg.fr/~leila.schneps/grothendieckcircle/EGA/EGA5.pdf
+英译编辑底本：https://webusers.imj-prg.fr/~leila.schneps/grothendieckcircle/EGA/EGA5trans.pdf
+英译物理112页，SHA256 23a20ef32fd16a1bd623c0c08ac080d04fc94f248de12133b713a19d6b0330d9。
+原典补查：EGA III 第二分册 7.7.5–7.7.6 https://www.numdam.org/item/PMIHES_1963__17__5_0/
+基础校验：Stacks 07VJ（有限复形）、0E0L（结构束推前）、089R（标准 Grass）。没有把现代补证写成作者原话。

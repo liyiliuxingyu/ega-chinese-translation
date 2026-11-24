@@ -1,0 +1,44 @@
+\documentclass[openany,fontset=fandol]{ctexbook}
+\usepackage{amsmath,amssymb}
+\usepackage[unicode,hidelinks]{hyperref}
+\newcommand{\note}[1]{\footnote{译注：#1}}
+\begin{document}
+\title{代数几何基础第五卷预备笔记\\§14：锥投影的构造}
+\author{据用户上传英译编辑稿译出}
+\date{2026年11月18日}
+\maketitle
+\chapter*{范围与校订状态}
+本批译出底本第53页§14标题和第54页开头附记，至锥投影对截面的几何解释及括注“the section factors by $L$”止。下一处为第54页“If not, we have an $f:X\to P$”，开始定义相对于一般态射$f$的锥投影。
+
+保留编排备忘及退化边界$m=0,r$。Grassmann概形的两种指标约定以余维与商模秩区分；原文一处对象字母及重复的“同态”按构造校订，依据见脚注。不据此宣称后续锥投影性质或旧章节已经独立验证，全部旧待核保持；未合并主稿。
+\chapter*{§14 锥投影}
+\noindent\textbf{附记。}
+我们已经在不同情境中使用过锥投影，尤其是在第8节末尾、10.4的表述以及其他地方。下面这组汇集的命题（“sorite”）无疑应提前放在本段的开头，也可能放在关于“Grassmann概形”的辅助段落中。
+
+设$C=P(F)$是$P(E)=P$的一个线性子簇，它在$S$上的相对维数为$r-m-1$，即在$P$中的余维为$m+1$。于是$F$是$E$的一个秩为$r-m$的局部自由商模，$F=E/G$，其中$G$局部自由且秩为$m+1$。我们已用第二章的代数方法定义了态射
+\[
+p_c:P-C=P(E)-P(E/G)\longrightarrow P(G).
+\]
+我们将对它作几何解释，并依据下面的描述，将其称为以$C$为中心的\textbf{锥投影}。（附记：只假设$r-m-1$介于$-1$与$r-1$之间，即$m$介于$0$与$r$之间，并无其他限制。\note{这里$P(E)$采用局部自由秩一商模的约定；因此中心$P(E/G)$对应商模$E/G$。当$m=r$时，该商模为零，中心为空，射影维数$-1$是空射影空间的约定。保留原文的整个指标范围，不额外要求中心非空。}
+
+为此，先将$P(G)$解释为
+\[
+\operatorname{Grass}^{m}(P)=\operatorname{Grass}_{r-m+1}(E)
+\]
+的一个闭子概形。\note{底本等式右端印为$\operatorname{Grass}_{r-m+1}(P)$，但随后的函子态射右端明确写$\operatorname{Grass}_{r-m+1}(E)$，并使用$E$的秩为$r-m+1$的商模。因此正文改为$E$；上标$m$表示射影线性子空间的余维，下标$r-m+1$表示局部自由商模的秩，不混用二者。}
+这是由显然的函子同态
+\[
+P(G)\longrightarrow\operatorname{Grass}_{r-m+1}(E)
+\]
+得到的：对于$G$的每个可逆商模$G/G'$，取$E$的局部自由商模$E/G'$，其秩为$(r-m)+1$；在任意基变换之后也作同样的构造。）
+
+上述函子同态是单态；又因源在$S$上固有、靶在$S$上分离，所以它是闭浸入。\note{底本重复写“The above homomorphism of functors is a homomorphism”，但仅说是同态不足以作出闭浸入结论。由商$E\twoheadrightarrow E/G'$的核可恢复$G'\subset G$及商$G/G'$；任意基变换后仍如此，故此函子态射是单态。源固有、靶分离使该态射固有，固有单态为闭浸入。这是本处将第二个“homomorphism”订为“单态”的理由，并不增补后续定理。}
+
+更一般地，我们可能需要明确说明，如何将$G$的Grassmann概形，也就是$P(G)$的Grassmann概形（在函子的意义下），闭浸入到$E$的Grassmann概形，也就是$P(E)$的Grassmann概形中。所得态射的像（在函子的意义下）由$P$中具有所需维数、且包含$C$的线性子簇$L$组成。
+
+在我们所考察的情形，即维数如上指定的情形，将这个像记为$Q(C)$。把$P(G)$与$Q(C)$等同后，锥投影态射
+\[
+p_c:P-C\longrightarrow Q(C)\subset\operatorname{Grass}^{m}(P)
+\]
+无非是把$P-C$的每个截面对应到$P$中唯一一个同时包含$C$和该截面、且余维为$m$的线性子簇$L$。（当然，所谓包含一个截面，是指该截面通过$L$分解。）
+\end{document}

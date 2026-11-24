@@ -1,0 +1,13 @@
+{
+  "completed": "底本57—58页命题14.4标题、前提、a和b全部可读陈述，含b末尾缺文提示与孤立公式",
+  "next": "底本58页命题14.5标题",
+  "previous_project": "libfile_fde3_f-2f8cbb5ff75c81919477979cf9b5fd91_49ac57203c0c81918f3630f0324dcb35",
+  "source_sha256": "23a20ef32fd16a1bd623c0c08ac080d04fc94f248de12133b713a19d6b0330d9",
+  "merged_into_main": false,
+  "pdf_pages": 3,
+  "unresolved": [
+    "14.4a空交结论至少缺少Y与T支集不交条件，正文标为缺条件拟断言，未宣称恢复完整定理",
+    "14.4b不可辨文字与末尾逆像公式衔接未确定",
+    "未独立证明14.4，旧待核全部保持"
+  ]
+}

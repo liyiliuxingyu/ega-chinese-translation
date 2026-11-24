@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+set -euo pipefail
+ROOT="$(cd "$(dirname "$0")/.." && pwd)"
+PROJ="$ROOT/01_当前工程/EGA_内容顺序合订第十六版"
+cd "$PROJ"
+bash build.sh --verify-single
+python3 checks/check_structure.py
+python3 checks/verify_pdf_parity.py
+python3 checks/check_node_example.py

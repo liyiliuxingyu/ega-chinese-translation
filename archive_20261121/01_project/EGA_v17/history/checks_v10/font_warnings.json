@@ -1,0 +1,15 @@
+{
+  "main": [
+    "LaTeX Font Warning: Font shape `U/rsfs/m/n' in size <10.53937> not available",
+    "LaTeX Font Info:    Font shape `TU/FandolSong-Regular(0)/m/sl' in size <10.5393",
+    "(Font)              Font shape `TU/FandolSong-Regular(0)/m/it' tried instead on",
+    "LaTeX Font Warning: Font shape `U/rsfs/m/n' in size <7.52812> not available"
+  ],
+  "report": [
+    "LaTeX Font Info:    Font shape `TU/FandolSong-Regular(0)/m/sl' in size <10.5393",
+    "(Font)              Font shape `TU/FandolSong-Regular(0)/m/it' tried instead on",
+    "LaTeX Font Warning: Font shape `U/rsfs/m/n' in size <10.53937> not available",
+    "LaTeX Font Warning: Font shape `U/rsfs/m/n' in size <7.52812> not available",
+    "LaTeX Font Warning: Size substitutions with differences"
+  ]
+}

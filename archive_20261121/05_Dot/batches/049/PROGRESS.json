@@ -1,0 +1,17 @@
+{
+  "completed": "底本59页obtained起至§14末Subschemes of Grass^m(P)，含两个图式",
+  "next": "底本59页§15标题Axiomatization of certain of the previous results",
+  "previous_project": "libfile_fde3_f-fbaab286aa488191ab66d71b35094e59_49ac57203c0c81918f3630f0324dcb35",
+  "source_sha256": "23a20ef32fd16a1bd623c0c08ac080d04fc94f248de12133b713a19d6b0330d9",
+  "merged_into_main": false,
+  "pdf_pages": 4,
+  "corrections": [
+    "根据59页基变换图式说明58页左下X应为S，旧文件未覆盖",
+    "普遍参数空间改记G以区分试验概形T，脚注列原写法及多余J"
+  ],
+  "unresolved": [
+    "构造性质适用前提未逐项验证",
+    "源图式右上等式第二项无波浪号照存",
+    "14.4缺文缺条件及其他历史待核保持"
+  ]
+}

@@ -1,0 +1,148 @@
+{
+  "check_time_utc": "2026-11-21T09:19:28.261493+00:00",
+  "pass": true,
+  "scope": "New actual empty-directory restore of all three versions, compared byte-for-byte with the prior restored files already verified against original ZIP members. Original ZIP CRC streams were not re-read in this round. No package files edited and no TeX compilation.",
+  "package_root": "/workspace/scratch/a886fd56dd2f/release_20261121/EGA_20261121_Dot_handover",
+  "candidate_manifest_sha256": "f82d0f046d9c6681bc2f102c03969fd3234b98446ed1084c7567e60c9f6d95e7",
+  "initial_strict_verify": {
+    "pass": true,
+    "root": "/workspace/scratch/a886fd56dd2f/release_20261121/EGA_20261121_Dot_handover",
+    "strict": true,
+    "payload_files": 1792,
+    "payload_bytes": 572104812,
+    "manifest_sha256": "f82d0f046d9c6681bc2f102c03969fd3234b98446ed1084c7567e60c9f6d95e7",
+    "extra_files": [],
+    "scope": "file paths, sizes and SHA-256 only; not mathematical validation"
+  },
+  "final_strict_verify": {
+    "pass": true,
+    "root": "/workspace/scratch/a886fd56dd2f/release_20261121/EGA_20261121_Dot_handover",
+    "strict": true,
+    "payload_files": 1792,
+    "payload_bytes": 572104812,
+    "manifest_sha256": "f82d0f046d9c6681bc2f102c03969fd3234b98446ed1084c7567e60c9f6d95e7",
+    "extra_files": [],
+    "scope": "file paths, sizes and SHA-256 only; not mathematical validation"
+  },
+  "old_index_reconstruction": {
+    "sha256": "0ba618f7d9b590fd93ac9b9a54e0f2158eeeee61a272301d5b837b2aaf4c5ab4",
+    "matches_prior_recorded_sha256": true,
+    "method": "Reverse the recorded stored_path changes and remove the two newly added policy metadata fields; the serialized result hashes exactly to the independently recorded prior RESTORE_INDEX SHA."
+  },
+  "new_restore_index_sha256": "a8391e069aa02a2c60bb8453ab256d22c7a1f4a7397e72d953ef32491b581aa0",
+  "new_index_matches_package_snapshot": true,
+  "original_payload_records": {
+    "count": 2620,
+    "old_and_new_original_path_bytes_sha_unchanged": true,
+    "problems": []
+  },
+  "immutable_changes": {
+    "history_references_moved": 365,
+    "unique_objects": 130,
+    "unique_object_bytes": 6818839,
+    "change_log_matches_observed_index_delta": true,
+    "all_new_objects_verified": true,
+    "remaining_active_project_references_outside_vendor_history_checks": [],
+    "shared_immutable_project_reference_counts": {
+      "checks": 175,
+      "history": 872,
+      "vendor": 422
+    },
+    "object_detail": "immutable_object_checks.json"
+  },
+  "restored_versions": {
+    "v17": {
+      "pass": true,
+      "files": 1827,
+      "byte_equal_files": 1827,
+      "sha_equal_files": 1827,
+      "matching_original_zip_reference": 1827,
+      "path_sets_equal": true,
+      "bytes": 547998859,
+      "problems": [],
+      "member_detail": "immutable_restored_members_v17.json",
+      "restore_cli": {
+        "pass": true,
+        "version": "v17",
+        "restored_root": "/workspace/scratch/a886fd56dd2f/integration_20261121/restore_tests_immutable/v17/EGA_v17_handover",
+        "files": 1827,
+        "bytes": 547998859,
+        "all_restored_files_rehashed": true,
+        "original_archive_metadata": {
+          "file_name": "EGA中文译校_第十七版_完整续作工程包.zip",
+          "bytes": 493141776,
+          "sha256": "f11fa64ad6c3632b09b7379abb99b01b9b72f84cbf65e730d1e74319585295e8"
+        },
+        "archive_container_recreated": false,
+        "scope": "ordinary file paths and bytes only; no ZIP reconstruction or math validation"
+      },
+      "comparison_reference": "/workspace/scratch/a886fd56dd2f/integration_20261121/restore_tests/v17/EGA_v17_handover"
+    },
+    "supplement_III": {
+      "pass": true,
+      "files": 753,
+      "byte_equal_files": 753,
+      "sha_equal_files": 753,
+      "matching_original_zip_reference": 753,
+      "path_sets_equal": true,
+      "bytes": 344168141,
+      "problems": [],
+      "member_detail": "immutable_restored_members_supplement_III.json",
+      "restore_cli": {
+        "pass": true,
+        "version": "supplement_III",
+        "restored_root": "/workspace/scratch/a886fd56dd2f/integration_20261121/restore_tests_immutable/supplement_III/EGA_v17_V_supplement_III",
+        "files": 753,
+        "bytes": 344168141,
+        "all_restored_files_rehashed": true,
+        "original_archive_metadata": {
+          "file_name": "EGA中文译校_第十七版_第五卷增补第三辑_完整续作工程.zip",
+          "bytes": 313603196,
+          "sha256": "050be3e6625f0749205531c085aa8cc757432bc5a46bdcd003430c0e4a7b3b8d"
+        },
+        "archive_container_recreated": false,
+        "scope": "ordinary file paths and bytes only; no ZIP reconstruction or math validation"
+      },
+      "comparison_reference": "/workspace/scratch/a886fd56dd2f/integration_20261121/restore_tests/supplement_III/EGA_v17_V_supplement_III"
+    },
+    "supplement_III_delta": {
+      "pass": true,
+      "files": 40,
+      "byte_equal_files": 40,
+      "sha_equal_files": 40,
+      "matching_original_zip_reference": 40,
+      "path_sets_equal": true,
+      "bytes": 33175272,
+      "problems": [],
+      "member_detail": "immutable_restored_members_supplement_III_delta.json",
+      "restore_cli": {
+        "pass": true,
+        "version": "supplement_III_delta",
+        "restored_root": "/workspace/scratch/a886fd56dd2f/integration_20261121/restore_tests_immutable/supplement_III_delta/EGA_v17_V_supplement_III_delta",
+        "files": 40,
+        "bytes": 33175272,
+        "all_restored_files_rehashed": true,
+        "original_archive_metadata": {
+          "file_name": "EGA中文译校_第十七版_第五卷增补第三辑_增量包.zip",
+          "bytes": 30152476,
+          "sha256": "28de61871669e470d0d3d4e78269ee3742852418cfc563261486ee14b8979cae"
+        },
+        "archive_container_recreated": false,
+        "scope": "ordinary file paths and bytes only; no ZIP reconstruction or math validation"
+      },
+      "comparison_reference": "/workspace/scratch/a886fd56dd2f/integration_20261121/restore_tests/supplement_III_delta/EGA_v17_V_supplement_III_delta"
+    }
+  },
+  "reported_transient_workspace_change": {
+    "reported_by_parent": true,
+    "description": "Parent reported briefly adding then removing assemble_release.py, freeze_mutable_history.py and README.md under 07_integration_records/20261121 during the test interval. No audited strict invocation failed; final strict check confirms no extra files remain.",
+    "observed_strict_failures": 0,
+    "retries_required": 0,
+    "interval_total_immutability_claimed": false
+  },
+  "limits": [
+    "This check does not establish mathematical correctness or translation completeness.",
+    "Original source PDFs, raw Dot archives, vendor, history and checks remain shared immutable assets. Make a copy before editing those materials.",
+    "Further report additions require a refreshed final manifest; the SHA here identifies the tested candidate only."
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "ring": "F_2[epsilon]/(epsilon^2)",
+  "elements": 4,
+  "derivations_checked": 4,
+  "additivity_leibniz_unit_assertions": 132,
+  "epsilon_times_D1_epsilon": "epsilon != 0",
+  "status": "passed",
+  "limitation": "Finite example only; not a computer proof of the general statements."
+}

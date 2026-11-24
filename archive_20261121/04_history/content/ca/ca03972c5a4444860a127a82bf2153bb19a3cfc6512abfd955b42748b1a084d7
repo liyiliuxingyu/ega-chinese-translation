@@ -1,0 +1,45 @@
+Once we grant this we have the evident corollaries generalizing 8.8, 8.9, 8.11. It is
+without a doubt also possible to announce in the case of m arbitrary the other propositions
+of paragraph 8.
+If this demands additional eﬀort of writing up we could give up this generalization,
+even if we include the previous diﬀerential developments.
+The same is true about the results of No. 9.
+As for No. 10, the situation studied there generalizes to the case of any m in the
+following manner. We ﬁx a linar subvariety C of P of codimension (m+1) and we consider
+the projective space Q of linear subvarieties LofP of codimension m passing through C.
+Q is a close subscheme of Grassm, in particular we could construct X(m)
+Q
+which we propose
+to study.
+A ﬁrst point, which has to be in any case to ﬁgure in the text is that X(m)
+Q
+→X
+is again birational at least if C cuts “regularly” X and precisely X (m)
+Q
+is in this case
+canonically isomoprhic to the prescheme deduced from X by blowing up XxPC: the proof
+of this fact is nothing else but 10.2, via 10.3. A second point which is of some interest
+but which we do not absolutely have to include consists in saying that if we choose C
+“suﬃciently general”, then X(m)
+Q
+→Q has certain pleasant properties, the most classical
+one being this: X being assumed smooth over S = Spec and of dim n ≥m and proper and
+geometrically irreducible. Then, for ‘suﬃciently general’ C the set T of ξ ∈Q for which
+X(m) is not smooth of dimension (n −m) over K(ξ) is geometrically irreducible over K(ξ)
+and of codimensioin one in Q and the set T ′ of ξ ∈T for which X(m) is “supersingular”
+at least one point is rare (nowhere dense) in T; ﬁnally, if F: X →P is an immersion, then
+after extending T ′ a little, for every ξ ∈T −T ′ there is exactly one non-smooth point
+in X(m)
+ξ
+and the latter is rational over k(ξ). I forgot to specify in the statement that we
+assume X →P unramiﬁed and that we have to initially replace f by φnf, n ≥2 (where
+φn is deﬁned in 9.1). The most natural way of proving this statement seems to be to use
+the subscheme Z (denoted T in 8.8) of Grassm such that Xm is “singular”: we see that,
+under the given conditions, it is geometrically irreducible of codimension one and that the
+subscheme Z1 corresponding to X(m) supersingular is nowhere dense.
+It remains, therefore, to prove a lemma of the following nature: let Z be a closed
+subset of Grassm of codimension q then deﬁning Q(C) in terms of C as above for every
+C “suﬃciently general” the intersection Q(Z) ∩Z is of codimension ≥q in Q(C) also if
+Z is geometrically irreducible [illegible, ask AG] [itou???] Q(C) ∩Z if Z is “suﬃciently
+general.”
+48

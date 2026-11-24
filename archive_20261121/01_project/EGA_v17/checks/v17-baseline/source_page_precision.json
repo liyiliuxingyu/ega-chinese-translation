@@ -1,0 +1,17 @@
+{
+  "reason": "Remove an unprinted IV.1 title-page number from frontmatter; use the observed physical PDF page locator.",
+  "prior_pdf_sha256": "5ac63b3c218d030742d332b4136e91661dbb132081607db1807a84dda31e07ee",
+  "final_pdf_sha256": "df949bd9daa04547214b6e3c68e066812be0fb2918601c0d6403cccfce568046",
+  "pages_compared": 1130,
+  "dpi": 72,
+  "changes": {
+    "text": [
+      5
+    ],
+    "size": [],
+    "pixels": [
+      5
+    ]
+  },
+  "report_unchanged_sha256": "b61fe870fd83b90a505893ecfc8403fafb9037053bc452f0ae7b723e9e401949"
+}

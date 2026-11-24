@@ -1,0 +1,1593 @@
+{
+  "actual_source_batches": 56,
+  "new_body_batches": 54,
+  "same_text_collation_batches": 2,
+  "excluded_duplicate": "8.14–8.15 batch backup 前批8.13.tex; preserved in original archive.",
+  "new_translation_not_from_Dot": [
+    "§11, original pp.41–43",
+    "§14 projection bridge, original pp.54–55"
+  ],
+  "original_archives": [
+    {
+      "name": "Dot对话_续作工程_20261119.zip",
+      "packaged_path": "05_Dot/original_archives/Dot对话_续作工程_20261119.zip",
+      "sha256": "2169db9e55be324b8618f91b4f63361557e0baf7fbcb4a57343d9ba35a1e41a9",
+      "bytes": 41711082,
+      "zip_entries": 60,
+      "crc_pass": true
+    },
+    {
+      "name": "EGA第五卷_第16节几何奇异零点_续译工程.zip",
+      "packaged_path": "05_Dot/original_archives/EGA第五卷_第16节几何奇异零点_续译工程.zip",
+      "sha256": "4bb4e9880f5b37fb4ccbfa72c4f7595d30837d319199cfa1fcfce865097a0f15",
+      "bytes": 752240,
+      "zip_entries": 12,
+      "crc_pass": true
+    },
+    {
+      "name": "EGA第五卷_第16节奇异零点定义_续译工程.zip",
+      "packaged_path": "05_Dot/original_archives/EGA第五卷_第16节奇异零点定义_续译工程.zip",
+      "sha256": "6c650798bbc72ed772c559a7d8c32d5f1c84805d82c48c2c2d67c192398a4d21",
+      "bytes": 762147,
+      "zip_entries": 11,
+      "crc_pass": true
+    }
+  ],
+  "batches": [
+    {
+      "order": 1,
+      "original_tex_name": "EGA第五卷_第7节_独立续译.tex",
+      "source_tex_sha256": "7ecc1b94344f524354206092830aa7d1542aeed2bc403f2cf6057a298c29363a",
+      "packaged_tex_path": "05_Dot/batches/001/EGA第五卷_第7节_独立续译.tex",
+      "integration_treatment": "new_body",
+      "current_project_input": "continuations/v_dot_early.tex",
+      "original_progress_historical_only": {
+        "project": "EGA 全部上传材料严谨翻译",
+        "batch": "第五卷预备笔记第一篇第7节独立增补",
+        "source": "EGAVaiello.pdf",
+        "source_sha256": "23a20ef32fd16a1bd623c0c08ac080d04fc94f248de12133b713a19d6b0330d9",
+        "source_pages": "标题18页末，正文19—21页",
+        "completed_entries": [
+          "7.1",
+          "7.2",
+          "7.3",
+          "7.4",
+          "7.5"
+        ],
+        "next_entry": "8.1",
+        "base": "第三版合订本，822页；本批不覆盖或合并",
+        "source_identity": "libfile_fde3_f-f8a977f6c54881919e11840e44759152_49ac57203c0c81918f3630f0324dcb35",
+        "limits": [
+          "未核对法文手稿",
+          "未重新审定全文前引定理",
+          "原稿7.4字面错误保留，并另列反例",
+          "其他卷未完成范围仍未完成"
+        ],
+        "pdf_status": "XeLaTeX两遍成功；9页，含默认双面空白页；全部页面渲染检查，正文5页逐页放大核看；无Overfull或缺字警告，仅一条Underfull vbox。",
+        "review": "逐段独立对照审校完成；两处英译编者身份标记已改正；数学反例独立核验。"
+      },
+      "extracted_engineering_files": [
+        "05_Dot/batches/001/EGA第五卷_第7节_独立续译.tex",
+        "05_Dot/batches/001/PROGRESS.json",
+        "05_Dot/batches/001/README.md",
+        "05_Dot/batches/001/SHA256.json",
+        "05_Dot/batches/001/build.sh",
+        "05_Dot/batches/001/译校记录.md"
+      ]
+    },
+    {
+      "order": 2,
+      "original_tex_name": "EGA第五卷_8.1至8.6_独立续译.tex",
+      "source_tex_sha256": "2e445f596f61687678830809979c6e5d679dc0a7174a8ddb0093fb372a4f1ec7",
+      "packaged_tex_path": "05_Dot/batches/002/EGA第五卷_8.1至8.6_独立续译.tex",
+      "integration_treatment": "new_body",
+      "current_project_input": "continuations/v_dot_early.tex",
+      "original_progress_historical_only": {
+        "date": "2026-11-14",
+        "branch": "第五卷独立续译，不覆盖原合订本",
+        "completed": "8.1至8.6（含8.4.1、证明、脚注29—34）",
+        "source_pdf_pages": [
+          21,
+          25
+        ],
+        "next": "第25页 We now study the points y of Y that are not smooth 开头未编号段落，不能跳到8.7",
+        "source_library_id": "libfile_fde3_f-f8a977f6c54881919e11840e44759152_49ac57203c0c81918f3630f0324dcb35",
+        "source_sha256": "23a20ef32fd16a1bd623c0c08ac080d04fc94f248de12133b713a19d6b0330d9",
+        "source_conversation": "https://chatgpt.com/c/6ac3aa3c-a6dc-83ee-97fb-e9f19cad1183",
+        "latest_original_result": "第五版880页，第0章至18.5.4，第五卷仍§1—6；交付前复查未见新结果",
+        "checks": [
+          "实际ctexbook默认排版",
+          "XeLaTeX双轮编译",
+          "无缺字、无Overfull、无未定义引用",
+          "全部页面缩览及正文逐页放大检查",
+          "独立审校逐段检查完整性、脚注及关键疑点"
+        ],
+        "limitations": [
+          "无原法文手稿校勘",
+          "8.5关键假设及Zn定义缺文保留",
+          "8.4.1和8.6原稿错误未静默修正",
+          "未合并旧版，未复核所有旧译",
+          "仅本段完成，非第8节全文或全项目完成"
+        ],
+        "pdf_pages": 11
+      },
+      "extracted_engineering_files": [
+        "05_Dot/batches/002/EGA第五卷_8.1至8.6_独立续译.tex",
+        "05_Dot/batches/002/PROGRESS.json",
+        "05_Dot/batches/002/README.txt",
+        "05_Dot/batches/002/SHA256SUMS.txt",
+        "05_Dot/batches/002/build.sh"
+      ]
+    },
+    {
+      "order": 3,
+      "original_tex_name": "EGA第五卷_8.6后预备论证_校订续译.tex",
+      "source_tex_sha256": "df1b4ba93846a592c302effcbabbadbb8cbf2a62eb277b9db2084b4dd2a8bdb8",
+      "packaged_tex_path": "05_Dot/batches/003/EGA第五卷_8.6后预备论证_校订续译.tex",
+      "integration_treatment": "new_body",
+      "current_project_input": "continuations/v_dot_early.tex",
+      "original_progress_historical_only": {
+        "date": "2026-11-14",
+        "completed": "8.6之后至8.7之前的未编号预备论证全部，含三条正合列、交换图、概形论证明、脚注35—39",
+        "next": "底本第28页Theorem 8.7.标题与(a)项",
+        "pdf_pages": 11,
+        "source_library_id": "libfile_fde3_f-f8a977f6c54881919e11840e44759152_49ac57203c0c81918f3630f0324dcb35",
+        "source_sha256": "23a20ef32fd16a1bd623c0c08ac080d04fc94f248de12133b713a19d6b0330d9",
+        "latest_base_library_id": "libfile_fde3_f-39cd6ba73e388191a18ace95696b8218_49ac57203c0c81918f3630f0324dcb35",
+        "latest_original": "第七版918页，第0章19.6.7；V仍§§1—6；上传前再次读取原对话无新交付",
+        "branch": "独立分支，不覆盖或自动合入旧合订本",
+        "editing_policy": "已核实正确公式入正文，原错误及修订依据入脚注；不猜补未知原字",
+        "checks": [
+          "独立译校逐段对照，未发现漏段或必须修改的数学错误",
+          "原PDF25—27页图像核对",
+          "按第1节商线丛射影化约定重算图式",
+          "双轮XeLaTeX编译",
+          "无缺字、未定义引用或Overfull溢出",
+          "全页缩览及正文、脚注、图式放大检查"
+        ],
+        "limits": [
+          "未对照法文手稿",
+          "8.7及以后未译",
+          "旧独立批次未整体回溯修改",
+          "非整部EGA完结本"
+        ]
+      },
+      "extracted_engineering_files": [
+        "05_Dot/batches/003/EGA第五卷_8.6后预备论证_校订续译.tex",
+        "05_Dot/batches/003/PROGRESS.json",
+        "05_Dot/batches/003/README.txt",
+        "05_Dot/batches/003/SHA256SUMS.txt",
+        "05_Dot/batches/003/build.sh"
+      ]
+    },
+    {
+      "order": 4,
+      "original_tex_name": "EGA第五卷_8.7及相邻残段_校订续译.tex",
+      "source_tex_sha256": "fc2d7fa40d01cfd639dee8d1b9e46d8b855acfcc9b22579c1dbf13faa2009526",
+      "packaged_tex_path": "05_Dot/batches/004/EGA第五卷_8.7及相邻残段_校订续译.tex",
+      "integration_treatment": "new_body",
+      "current_project_input": "continuations/v_dot_early.tex",
+      "original_progress_historical_only": {
+        "date": "2026-11-14",
+        "completed": "原PDF第28页Theorem 8.7.标题至第29页Corollary 8.9.标题之前；含8.7ab、c残段、相邻条件列表、跨页证明前段",
+        "next": "第29页Corollary 8.9.标题",
+        "pdf_pages": 10,
+        "source_library_id": "libfile_fde3_f-f8a977f6c54881919e11840e44759152_49ac57203c0c81918f3630f0324dcb35",
+        "source_sha256": "23a20ef32fd16a1bd623c0c08ac080d04fc94f248de12133b713a19d6b0330d9",
+        "prior_batch_library_id": "libfile_fde3_f-d2399f0d76708191a1ae86d076b4abe8_49ac57203c0c81918f3630f0324dcb35",
+        "latest_original": "仍为第七版918页/19.6.7，交付前再次核查未变；V独立上一批至8.7前，未发现重复",
+        "editing_policy": "仅已证实正确关系入正文；错误等价/非空断言及原推演入脚注；残缺c和8.8标题/假设不猜补",
+        "checks": [
+          "独立全文对照底本28—29页",
+          "二次平展覆盖反例独立复算",
+          "实无点圆锥曲线反例独立核验",
+          "作者73—74页术语说明核对",
+          "XeLaTeX双轮编译成功，无缺字/未定义引用/Overfull",
+          "全部页面缩览、正文及脚注放大检查"
+        ],
+        "limits": [
+          "不是完整恢复并证明8.7—8.8",
+          "8.9未译",
+          "无原法文手稿校勘",
+          "旧独立批次未整体回溯修订",
+          "不覆盖不合并已有合订工程"
+        ]
+      },
+      "extracted_engineering_files": [
+        "05_Dot/batches/004/EGA第五卷_8.7及相邻残段_校订续译.tex",
+        "05_Dot/batches/004/PROGRESS.json",
+        "05_Dot/batches/004/README.txt",
+        "05_Dot/batches/004/SHA256SUMS.txt",
+        "05_Dot/batches/004/build.sh"
+      ]
+    },
+    {
+      "order": 5,
+      "original_tex_name": "EGA第五卷_8.9至8.11_校订续译.tex",
+      "source_tex_sha256": "73ac6c0ada39af4afcb73c73e5767b92ed5d13b3a3e1a5e479cc349fe209b847",
+      "packaged_tex_path": "05_Dot/batches/005/EGA第五卷_8.9至8.11_校订续译.tex",
+      "integration_treatment": "new_body",
+      "current_project_input": "continuations/v_dot_early.tex",
+      "original_progress_historical_only": {
+        "date": "2026-11-14",
+        "completed": "第29页Corollary 8.9至第30页8.11证明末，含8.9及全部证明残段、8.8维数收尾、8.10、8.11、脚注41—43",
+        "next": "第30页Remark 8.12标题及其跨至第31页的全文",
+        "source_library_id": "libfile_fde3_f-f8a977f6c54881919e11840e44759152_49ac57203c0c81918f3630f0324dcb35",
+        "source_sha256": "23a20ef32fd16a1bd623c0c08ac080d04fc94f248de12133b713a19d6b0330d9",
+        "previous_project_library_id": "libfile_fde3_f-ba94c987b298819199595e5ac60ac408_49ac57203c0c81918f3630f0324dcb35",
+        "latest_original": "交付前仍第七版918页/19.6.7，未见V本范围重叠",
+        "pdf_pages": 11,
+        "checks": [
+          "独立代理实际全文对照原文终审通过",
+          "8.11补证逐步独立核验",
+          "8.10额外整性、支配、同维条件及局部证明独立核验",
+          "ctexbook默认版式双轮XeLaTeX成功",
+          "无缺字、未定义引用、Overfull",
+          "全页缩览及正文脚注放大检查"
+        ],
+        "limits": [
+          "8.8完整假设与8.7c仍未恢复",
+          "不声称8.9开浸入结论已证明",
+          "8.9原错误与逆映射残段完整入脚注",
+          "8.11正文为显写条件下可核结论及标明补证",
+          "无原法文手稿校勘",
+          "未覆盖合并旧工程，未整体回溯旧批次"
+        ]
+      },
+      "extracted_engineering_files": [
+        "05_Dot/batches/005/EGA第五卷_8.9至8.11_校订续译.tex",
+        "05_Dot/batches/005/PROGRESS.json",
+        "05_Dot/batches/005/README.txt",
+        "05_Dot/batches/005/SHA256SUMS.txt",
+        "05_Dot/batches/005/build.sh"
+      ]
+    },
+    {
+      "order": 6,
+      "original_tex_name": "EGA第五卷_8.12_校订续译.tex",
+      "source_tex_sha256": "23e47b11c2fa2d4b0a1ab221ecb2d6e8e6c4d72124989f86e965c51ac1dc1076",
+      "packaged_tex_path": "05_Dot/batches/006/EGA第五卷_8.12_校订续译.tex",
+      "integration_treatment": "new_body",
+      "current_project_input": "continuations/v_dot_early.tex",
+      "original_progress_historical_only": {
+        "completed": "Remark 8.12 including editorial paragraphs and footnotes 44-48",
+        "next": "Printed page 31 Proposition 8.13 heading",
+        "source": "EGAVaiello.pdf",
+        "source_sha256": "23a20ef32fd16a1bd623c0c08ac080d04fc94f248de12133b713a19d6b0330d9",
+        "cautions": [
+          "8.8 assumptions not restored",
+          "8.9 open immersion not proved",
+          "independent supplement not merged"
+        ],
+        "review": "Independent paragraph/formula/footnote audit passed; all 4 PDF pages inspected"
+      },
+      "extracted_engineering_files": [
+        "05_Dot/batches/006/EGA第五卷_8.12_校订续译.tex",
+        "05_Dot/batches/006/PROGRESS.json",
+        "05_Dot/batches/006/README.txt",
+        "05_Dot/batches/006/SHA256SUMS.txt",
+        "05_Dot/batches/006/build.sh"
+      ]
+    },
+    {
+      "order": 7,
+      "original_tex_name": "EGA第五卷_8.13_校订续译.tex",
+      "source_tex_sha256": "4c7f72e07f2701f123ea43af17675af301c8f291a195a2a4b503d9c46be14380",
+      "packaged_tex_path": "05_Dot/batches/007/EGA第五卷_8.13_校订续译.tex",
+      "integration_treatment": "new_body",
+      "current_project_input": "continuations/v_dot_early.tex",
+      "original_progress_historical_only": {
+        "completed": "Proposition 8.13 all statement and proof paragraph",
+        "next": "Printed page 32 introductory sentence Combining 8.13, 8.5 and 8.6 before Corollary 8.14",
+        "source_sha256": "23a20ef32fd16a1bd623c0c08ac080d04fc94f248de12133b713a19d6b0330d9",
+        "cautions": [
+          "Ek notation unresolved",
+          "8.13(b) source illegible note retained",
+          "8.8 missing assumptions not restored",
+          "Not independently verified proof; not merged"
+        ],
+        "review": "Independent paragraph review passed; 4 pages rendered and visually checked; XeLaTeX twice; no missing glyph/overflow"
+      },
+      "extracted_engineering_files": [
+        "05_Dot/batches/007/EGA第五卷_8.13_校订续译.tex",
+        "05_Dot/batches/007/PROGRESS.json",
+        "05_Dot/batches/007/README.txt",
+        "05_Dot/batches/007/build.sh"
+      ]
+    },
+    {
+      "order": 8,
+      "original_tex_name": "EGA第五卷_8.14至8.15_校订续译.tex",
+      "source_tex_sha256": "801ea6d17f9d89cc133d7f7982bf6d729c69454cd12c923e2027a3a977af0bb0",
+      "packaged_tex_path": "05_Dot/batches/008/EGA第五卷_8.14至8.15_校订续译.tex",
+      "integration_treatment": "new_body",
+      "current_project_input": "continuations/v_dot_early.tex",
+      "original_progress_historical_only": {
+        "completed": "Printed page32 introductory sentence, Corollary8.14, Remark8.15, Remorse, original footnote49",
+        "next": "Printed page33 Proposition8.16 heading",
+        "source_sha256": "23a20ef32fd16a1bd623c0c08ac080d04fc94f248de12133b713a19d6b0330d9",
+        "cautions": [
+          "8.8 assumptions missing",
+          "8.9 proof unresolved",
+          "separable and ruled original terminology retained",
+          "Not independently proved; not merged"
+        ],
+        "review": "Independent paragraph review passed; four PDF pages inspected; XeLaTeX twice; no overflow/missing glyph"
+      },
+      "extracted_engineering_files": [
+        "05_Dot/batches/008/EGA第五卷_8.14至8.15_校订续译.tex",
+        "05_Dot/batches/008/PROGRESS.json",
+        "05_Dot/batches/008/README.txt",
+        "05_Dot/batches/008/build.sh",
+        "05_Dot/batches/008/前批8.13.tex"
+      ]
+    },
+    {
+      "order": 9,
+      "original_tex_name": "EGA第五卷_8.16至8.17_校订续译.tex",
+      "source_tex_sha256": "950072c77726bfe4017b8166c3f025c6914db5c2df9e29cbecd0d3509d48bc71",
+      "packaged_tex_path": "05_Dot/batches/009/EGA第五卷_8.16至8.17_校订续译.tex",
+      "integration_treatment": "new_body",
+      "current_project_input": "continuations/v_dot_early.tex",
+      "original_progress_historical_only": {
+        "completed": "Printed page33: Proposition8.16, Remarks8.17, unnumbered fragment and terminological note; footnote50",
+        "next": "Printed page34 Proposition8.18 heading",
+        "source_sha256": "23a20ef32fd16a1bd623c0c08ac080d04fc94f248de12133b713a19d6b0330d9",
+        "review": "Independent paragraph review passed; XeLaTeX twice; all 4 pages visually checked, no overflow or missing glyph",
+        "limitations": [
+          "8.8 assumptions unresolved",
+          "8.17 fragment retained without reconstruction",
+          "Not merged into original collection; no independent theorem certification"
+        ]
+      },
+      "extracted_engineering_files": [
+        "05_Dot/batches/009/EGA第五卷_8.16至8.17_校订续译.tex",
+        "05_Dot/batches/009/PROGRESS.json",
+        "05_Dot/batches/009/README.txt",
+        "05_Dot/batches/009/build.sh",
+        "05_Dot/batches/009/source33.txt"
+      ]
+    },
+    {
+      "order": 10,
+      "original_tex_name": "EGA第五卷_8.18_校订续译.tex",
+      "source_tex_sha256": "2e26a0d1614b48c785c96d879d6fe461600d685cc8e25931930fe49e62126962",
+      "packaged_tex_path": "05_Dot/batches/010/EGA第五卷_8.18_校订续译.tex",
+      "integration_treatment": "new_body",
+      "current_project_input": "continuations/v_dot_early.tex",
+      "original_progress_historical_only": {
+        "project": "EGA V independent supplement",
+        "date_utc": "2026-11-15",
+        "previous_engineering_library_id": "libfile_fde3_f-4c8153311a048191ae7cc5ebd1c1984e_49ac57203c0c81918f3630f0324dcb35",
+        "source": "底本.pdf",
+        "source_sha256": "23a20ef32fd16a1bd623c0c08ac080d04fc94f248de12133b713a19d6b0330d9",
+        "completed_this_batch": "p34 Proposition 8.18 statement, original proof, original footnote51, NB through final d>=2 ellipsis",
+        "next_source_page": 34,
+        "next_exact": "It remains to explain (make explicit) the conditions a) and b) of 1.18.",
+        "next_note": "Unnumbered paragraph continues on p35. Do not skip to 8.19. Source prints 1.18: check in context on next batch.",
+        "merge_status": "Independent supplement, not merged into original conversation compilation",
+        "unresolved": [
+          "8.8 missing hypotheses remain unrecovered",
+          "8.18 dimension1 versus d-1 and final NB dimension restriction",
+          "8.18(b) (non???) singular cannot be determined",
+          "Third g(overline Y sing) differs from previous two unbarred expressions; preserve uncertainty",
+          "Normalization proof omitted in source, not independently established"
+        ],
+        "checks": [
+          "Independent bilingual audit: no material omission in chosen range; corrected erroneous added closures in first two g(Y sing) expressions",
+          "Two successful XeLaTeX passes",
+          "Four-page rendered PDF visually checked; no missing glyph or overfull warnings"
+        ],
+        "original_conversation_check": "EGA latest visible ninth edition through20.5.15; no V8.18 overlap observed; math latest visible012/user continue. Not proof of current remote runtime."
+      },
+      "extracted_engineering_files": [
+        "05_Dot/batches/010/AUDIT.txt",
+        "05_Dot/batches/010/EGA第五卷_8.18_校订续译.tex",
+        "05_Dot/batches/010/PROGRESS.json",
+        "05_Dot/batches/010/README.txt",
+        "05_Dot/batches/010/build.sh",
+        "05_Dot/batches/010/source34.txt"
+      ]
+    },
+    {
+      "order": 11,
+      "original_tex_name": "EGA第五卷_8.18后线性系讨论_第一批.tex",
+      "source_tex_sha256": "c72d4728edc987cb39aa4e8eeca5eff951940107628e5b05f9383e496e68b36a",
+      "packaged_tex_path": "05_Dot/batches/011/EGA第五卷_8.18后线性系讨论_第一批.tex",
+      "integration_treatment": "new_body",
+      "current_project_input": "continuations/v_dot_early.tex",
+      "original_progress_historical_only": {
+        "source_sha256": "23a20ef32fd16a1bd623c0c08ac080d04fc94f248de12133b713a19d6b0330d9",
+        "previous_project": "libfile_fde3_f-83284e24d97c819198d16632bcb141e5_49ac57203c0c81918f3630f0324dcb35",
+        "completed": "p34 It remains to explain through p35 xi generic in L before field-theoretic paragraph",
+        "next_source_page": 35,
+        "next_exact": "From the [(cunutesque?) Fr] point of view and in terms of field theory",
+        "status": "Independent increment, not merged into main compilation",
+        "unresolved": [
+          "Q/projective dual convention",
+          "missing xi subscripts in density sentence",
+          "dim f(X)=2 in proposed converse",
+          "8.8 missing hypotheses remain missing"
+        ],
+        "audit": "Independent bilingual check no material omission; generic point/fiber corrected to 泛点/泛纤维. Two-pass XeLaTeX, 4pp rendered checks passed.",
+        "concurrency_check": "Original EGA ninth edition20.5.15 then user continue08:55; latest math visible012 then continue. Library latest EGA branch8.18. No overlap observed, not a remote runtime guarantee."
+      },
+      "extracted_engineering_files": [
+        "05_Dot/batches/011/EGA第五卷_8.18后线性系讨论_第一批.tex",
+        "05_Dot/batches/011/PROGRESS.json",
+        "05_Dot/batches/011/README.txt",
+        "05_Dot/batches/011/build.sh"
+      ]
+    },
+    {
+      "order": 12,
+      "original_tex_name": "EGA第五卷_第8节末域论讨论.tex",
+      "source_tex_sha256": "34d60dc1c655448afa767c327ce00ee78771539780df22f9e7f4a3109a5ab4d9",
+      "packaged_tex_path": "05_Dot/batches/012/EGA第五卷_第8节末域论讨论.tex",
+      "integration_treatment": "new_body",
+      "current_project_input": "continuations/v_dot_early.tex",
+      "original_progress_historical_only": {
+        "source_sha256": "23a20ef32fd16a1bd623c0c08ac080d04fc94f248de12133b713a19d6b0330d9",
+        "previous_project": "libfile_fde3_f-8c29b6861428819193750a1afa7b85ee_49ac57203c0c81918f3630f0324dcb35",
+        "completed": "p35 From the [(cunutesque?) Fr] point of view and in terms of field theory through p36 before section 9 heading",
+        "next_source_page": 36,
+        "next_exact": "§9 Change of Projective Embedding; 9.1. For every integer n > 0",
+        "status": "Independent incremental translation; not merged into main compilation",
+        "unresolved": [
+          "8.8 missing hypotheses",
+          "dimension at most one in original field-theory criterion",
+          "conical at x relative to f undefined",
+          "previous batch Q dual convention and converse dim=2 remain unresolved"
+        ],
+        "verified_corrections": [
+          "K(a_i) to k(a_i), image function field justification",
+          "g to q for dimension variable",
+          "fiber argument applied to projection restricted to image, not arbitrary composite g"
+        ],
+        "audit": "Independent bilingual audit passed; reviewer caution about x/X adopted as unresolved. Two-pass XeLaTeX 4 pages; all 4 rendered pages inspected; no overfull/underfull, missing glyph, undefined reference or LaTeX error in final log. Fontconfig cache warnings during run did not prevent output.",
+        "concurrency_check": "Original EGA last assistant 2026-11-15 09:25 UTC tenth edition through 20.7.20, next 21; math last visible assistant 012 and continue. Library recent list confirms previous EGA V incremental artifact is newest at 09:06 UTC; no observed overlap, not a remote execution guarantee."
+      },
+      "extracted_engineering_files": [
+        "05_Dot/batches/012/EGA第五卷_第8节末域论讨论.tex",
+        "05_Dot/batches/012/PROGRESS.json",
+        "05_Dot/batches/012/README.txt",
+        "05_Dot/batches/012/build.sh"
+      ]
+    },
+    {
+      "order": 13,
+      "original_tex_name": "EGA第五卷_9.1至9.2_校订续译.tex",
+      "source_tex_sha256": "a25a7c0a369d1b722a24884b8e75d4772ec37abab201c8c4b602657a467eb2f3",
+      "packaged_tex_path": "05_Dot/batches/013/EGA第五卷_9.1至9.2_校订续译.tex",
+      "integration_treatment": "new_body",
+      "current_project_input": "continuations/v_dot_early.tex",
+      "original_progress_historical_only": {
+        "source_sha256": "23a20ef32fd16a1bd623c0c08ac080d04fc94f248de12133b713a19d6b0330d9",
+        "previous_project": "libfile_fde3_f-c146e6a2dc8c81919d2be56d358ee0ad_49ac57203c0c81918f3630f0324dcb35",
+        "completed": "p36 section9 heading, 9.1, Proposition9.2, NB and original footnote52",
+        "next_source_page": 37,
+        "next_exact": "Proposition 9.3. Suppose that X is geometrically irreducible",
+        "status": "Independent incremental translation, not merged into main compilation",
+        "unresolved": [
+          "8.8 and (ii bis) hypotheses missing; 9.2 not independently established",
+          "Previous Q dual convention, dimension criterion and conical wording remain unresolved"
+        ],
+        "verified_corrections": [
+          "p_* O_P(n) isomorphic to Sym^n(E), based on section1 locally free E and quotient convention",
+          "hyperplane parameter xi lies in P(n)^vee not P(n)"
+        ],
+        "concurrency_check": "Original EGA 2026-11-15 12:32 UTC self-report edition11 through21.4.8,next21.5; math latest visible012 then continue. No observed overlap with V9.1–9.2; not a remote execution guarantee."
+      },
+      "extracted_engineering_files": [
+        "05_Dot/batches/013/AUDIT.txt",
+        "05_Dot/batches/013/EGA第五卷_9.1至9.2_校订续译.tex",
+        "05_Dot/batches/013/PROGRESS.json",
+        "05_Dot/batches/013/README.txt",
+        "05_Dot/batches/013/build.sh"
+      ]
+    },
+    {
+      "order": 14,
+      "original_tex_name": "EGA第五卷_9.3_校订续译.tex",
+      "source_tex_sha256": "debd6212dce1b295319f4158585fe5205b2b6d5ccbd58a81ac62bcaa3df403ea",
+      "packaged_tex_path": "05_Dot/batches/014/EGA第五卷_9.3_校订续译.tex",
+      "integration_treatment": "new_body",
+      "current_project_input": "continuations/v_dot_early.tex",
+      "original_progress_historical_only": {
+        "source_sha256": "23a20ef32fd16a1bd623c0c08ac080d04fc94f248de12133b713a19d6b0330d9",
+        "previous_project": "libfile_fde3_f-b42abadfd3b08191a4a353d3dee7c8e7_49ac57203c0c81918f3630f0324dcb35",
+        "completed": "Source pp37–38 Proposition9.3 statement(a,b,c), entire proof through final three squares, original footnote53",
+        "next_source_page": 38,
+        "next_exact": "Conjugating with 8.18 we find a Corollary 9.4. ([Tr] to be stated)",
+        "status": "Independent incremental translation, not merged; not independent theorem verification",
+        "unresolved": [
+          "8.8 missing hypotheses remain",
+          "9.3(c) where connective unclear, not replaced with or",
+          "Replacing X by L in final proof not independently justified; independence on L alone insufficient for image",
+          "Earlier unresolved dimension and conical wording unchanged"
+        ],
+        "checks": [
+          "Separate translation audit passed with one qualification adopted",
+          "XeLaTeX twice exit0; 5 pages; no overfull, missing-character or undefined warnings; all pages visually inspected"
+        ],
+        "concurrency_check": "Freshly read original EGA: edition11 through0.21.4.8,next21.5 at2026-11-15 12:32 UTC. Original math visible012 then user continue02:26. Latest independent EGA Library project9.1–9.2; no observed V9.3 overlap. Not remote execution guarantee."
+      },
+      "extracted_engineering_files": [
+        "05_Dot/batches/014/AUDIT.txt",
+        "05_Dot/batches/014/EGA第五卷_9.3_校订续译.tex",
+        "05_Dot/batches/014/PROGRESS.json",
+        "05_Dot/batches/014/README.txt",
+        "05_Dot/batches/014/build.sh"
+      ]
+    },
+    {
+      "order": 15,
+      "original_tex_name": "EGA第五卷_9.4至10.1_校订续译.tex",
+      "source_tex_sha256": "e3592ca0b3e051b57481b2d1fb3103616306ba8de3bd28c90a5c40c7b4e80a0f",
+      "packaged_tex_path": "05_Dot/batches/015/EGA第五卷_9.4至10.1_校订续译.tex",
+      "integration_treatment": "new_body",
+      "current_project_input": "continuations/v_dot_early.tex",
+      "original_progress_historical_only": {
+        "date": "2026-11-15",
+        "branch": "EGA V independent supplement",
+        "completed": "p38 Conjugating with 8.18 through p39 end of 10.1; 9.4 editorial prompt, 9.5 fragment, §10 title and 10.1; original footnotes54–55",
+        "next": "p39 10.2 By a polarity",
+        "source_sha256": "23a20ef32fd16a1bd623c0c08ac080d04fc94f248de12133b713a19d6b0330d9",
+        "not_merged": true,
+        "unresolved": [
+          "8.8 absent",
+          "9.3(c) and proof scope",
+          "9.4 absent statement",
+          "9.5 illegible incomplete",
+          "10.1 Z versus closure ambiguity"
+        ],
+        "proof_independently_verified": false,
+        "original_conversation_observed": "EGA latest visible 11th edition through21.4.8; math latest visible012 then continue; no observed V overlap",
+        "previous_project": "libfile_fde3_f-e63d28b94f1881918331e221a48975d6_49ac57203c0c81918f3630f0324dcb35"
+      },
+      "extracted_engineering_files": [
+        "05_Dot/batches/015/AUDIT.txt",
+        "05_Dot/batches/015/EGA第五卷_9.4至10.1_校订续译.tex",
+        "05_Dot/batches/015/PROGRESS.json",
+        "05_Dot/batches/015/README.txt",
+        "05_Dot/batches/015/build.sh"
+      ]
+    },
+    {
+      "order": 16,
+      "original_tex_name": "EGA第五卷_10.2_校订续译.tex",
+      "source_tex_sha256": "306a200b352c163da234da79ad8b85311b9e4c57dea58f27ce8ba37eb0a19eec",
+      "packaged_tex_path": "05_Dot/batches/016/EGA第五卷_10.2_校订续译.tex",
+      "integration_treatment": "new_body",
+      "current_project_input": "continuations/v_dot_early.tex",
+      "original_progress_historical_only": {
+        "date": "2026-11-15",
+        "branch": "EGA V independent supplement",
+        "completed": "printed p39 10.2 By a polarity through p40 editorial remark Proposition 10.3 is crossed out; original footnote56",
+        "next": "printed p40 Proposition 10.3. Let X be a prescheme",
+        "not_merged": true,
+        "proof_independently_verified": false,
+        "unresolved": [
+          "8.8 absent",
+          "9.4 unstated;9.5 fragment",
+          "10.1 closure ambiguity",
+          "10.2 regularity conventions and k-rational singularity application require verification"
+        ],
+        "previous_project": "libfile_fde3_f-65939061bde48191bc9daa92d6f7322a_49ac57203c0c81918f3630f0324dcb35",
+        "source_sha256": "23a20ef32fd16a1bd623c0c08ac080d04fc94f248de12133b713a19d6b0330d9",
+        "original_conversation_observed": "EGA last visible edition11 through21.4.8; math last visible02:26 continue; latest Library independent EGA9.4–10.1 and math4 lines109–180; no observed overlap"
+      },
+      "extracted_engineering_files": [
+        "05_Dot/batches/016/AUDIT.txt",
+        "05_Dot/batches/016/EGA第五卷_10.2_校订续译.tex",
+        "05_Dot/batches/016/PROGRESS.json",
+        "05_Dot/batches/016/README.txt",
+        "05_Dot/batches/016/build.sh"
+      ]
+    },
+    {
+      "order": 17,
+      "original_tex_name": "EGA第五卷_10.3_校订续译.tex",
+      "source_tex_sha256": "1f75071362315418f5c6871b9e72068d0f61df92c781267cd9a845782dd807a0",
+      "packaged_tex_path": "05_Dot/batches/017/EGA第五卷_10.3_校订续译.tex",
+      "integration_treatment": "new_body",
+      "current_project_input": "continuations/v_dot_early.tex",
+      "original_progress_historical_only": {
+        "date": "2026-11-15",
+        "branch": "EGA V independent supplement",
+        "completed": "printed p40 Proposition 10.3 and following proof-status paragraph ending just as well as I",
+        "next": "printed p40 unnumbered If in 10.2, S = Spec k and X is of dimension >=1, before Corollary 10.4",
+        "not_merged": true,
+        "proof_independently_verified": false,
+        "unresolved": [
+          "8.8 absent",
+          "9.4 unstated;9.5 fragment",
+          "10.1 closure ambiguity",
+          "10.2 regularity and k-rationality conventions",
+          "10.3 crossed-out status; parenthetical ??? unrecovered; generality of regularity claim not independently verified"
+        ],
+        "previous_project": "libfile_fde3_f-8b73b1dac29081918339c144a61a346f_49ac57203c0c81918f3630f0324dcb35",
+        "source_sha256": "23a20ef32fd16a1bd623c0c08ac080d04fc94f248de12133b713a19d6b0330d9",
+        "original_conversation_observed": "EGA latest visible edition11 through21.4.8, math latest visible02:26 user continue; Library latest EGA10.2 and math4 lines182-268; no observed overlap; actual original execution state unavailable"
+      },
+      "extracted_engineering_files": [
+        "05_Dot/batches/017/AUDIT.txt",
+        "05_Dot/batches/017/EGA第五卷_10.3_校订续译.tex",
+        "05_Dot/batches/017/PROGRESS.json",
+        "05_Dot/batches/017/README.txt",
+        "05_Dot/batches/017/build.sh"
+      ]
+    },
+    {
+      "order": 18,
+      "original_tex_name": "EGA第五卷_10.4_校订续译.tex",
+      "source_tex_sha256": "1edb09b445ca9384329051b551a2e188464d6fd70f9eadfb43a3bb39a35fc476",
+      "packaged_tex_path": "05_Dot/batches/018/EGA第五卷_10.4_校订续译.tex",
+      "integration_treatment": "new_body",
+      "current_project_input": "continuations/v_dot_early.tex",
+      "original_progress_historical_only": {
+        "date": "2026-11-15",
+        "branch": "EGA V independent supplement",
+        "completed": "printed p40 unnumbered If in 10.2 through complete Corollary 10.4 on p41, ending quadratic",
+        "next": "printed p41 section 11 Grassmanians heading and first paragraph",
+        "previous_project": "libfile_fde3_f-0898ad2df588819195e35dbf7bb10d8f_49ac57203c0c81918f3630f0324dcb35",
+        "not_merged": true,
+        "proof_independently_verified": false,
+        "source_sha256": "23a20ef32fd16a1bd623c0c08ac080d04fc94f248de12133b713a19d6b0330d9",
+        "unresolved": [
+          "8.8 missing",
+          "9.4 unstated and 9.5 fragment",
+          "10.1 closure ambiguity",
+          "10.2 regularity conventions",
+          "10.3 crossed-out status and ???",
+          "10.4 preceding dimension >=1 original intent unresolved; main text restricted to verified smooth curve case",
+          "Corollary10.4 existence and dependency9.2 not independently established"
+        ],
+        "original_conversation_observed": "Latest visible EGA edition11 through21.4.8; Library latest EGA independent10.3. No observed scope overlap. Actual original execution state unavailable."
+      },
+      "extracted_engineering_files": [
+        "05_Dot/batches/018/AUDIT.txt",
+        "05_Dot/batches/018/EGA第五卷_10.4_校订续译.tex",
+        "05_Dot/batches/018/PROGRESS.json",
+        "05_Dot/batches/018/README.txt",
+        "05_Dot/batches/018/build.sh",
+        "05_Dot/batches/018/build1.txt",
+        "05_Dot/batches/018/build2.txt"
+      ]
+    },
+    {
+      "order": 19,
+      "original_tex_name": "EGA第五卷_12节关联概形_校订续译.tex",
+      "source_tex_sha256": "4db1b0865036e71bc89fc83473ec7ca5f40c818026e783627660424e82b96e22",
+      "packaged_tex_path": "05_Dot/batches/019/EGA第五卷_12节关联概形_校订续译.tex",
+      "integration_treatment": "new_body",
+      "current_project_input": "continuations/v_dot_middle.tex",
+      "original_progress_historical_only": {
+        "branch": "EGA V independent",
+        "completed": "p43 section12 title and Complements to notations through p44 first paragraph ending or rather of P_Sprime (linear sections definition)",
+        "next": "p44 I use [or profit from] this opportunity for a notational self-criticism",
+        "previous_project": "libfile_fde3_f-774a712df5e48191b08dafd6a8659dc8_49ac57203c0c81918f3630f0324dcb35",
+        "merged": false,
+        "source_sha256": "23a20ef32fd16a1bd623c0c08ac080d04fc94f248de12133b713a19d6b0330d9",
+        "unresolved": [
+          "8.8 and9.5 source gaps",
+          "section12 remainder not translated",
+          "not a full independent mathematical audit"
+        ]
+      },
+      "extracted_engineering_files": [
+        "05_Dot/batches/019/AUDIT.txt",
+        "05_Dot/batches/019/EGA第五卷_12节关联概形_校订续译.tex",
+        "05_Dot/batches/019/PROGRESS.json",
+        "05_Dot/batches/019/README.txt",
+        "05_Dot/batches/019/build.sh",
+        "05_Dot/batches/019/build1.txt",
+        "05_Dot/batches/019/build2.txt"
+      ]
+    },
+    {
+      "order": 20,
+      "original_tex_name": "EGA第五卷_12节纤维结构_校订续译.tex",
+      "source_tex_sha256": "76e06e0fa9ff2353d5735a0521629e97b3a9c59069bb01e24020d044e7608e11",
+      "packaged_tex_path": "05_Dot/batches/020/EGA第五卷_12节纤维结构_校订续译.tex",
+      "integration_treatment": "new_body",
+      "current_project_input": "continuations/v_dot_middle.tex",
+      "original_progress_historical_only": {
+        "branch": "EGA V independent",
+        "completed": "p44 four paragraphs from I use [or profit from] this opportunity through X^(m) over Gr^m (before Proposition2.1)",
+        "next": "p44 The Proposition 2.1 [se transpose Fr] translates (?) without change",
+        "previous_project": "libfile_fde3_f-0cddf7a6afa081918bc232926a83ad62_49ac57203c0c81918f3630f0324dcb35",
+        "merged": false,
+        "source_sha256": "23a20ef32fd16a1bd623c0c08ac080d04fc94f248de12133b713a19d6b0330d9",
+        "unresolved": [
+          "8.8 and9.5 source gaps",
+          "remainder section12 not translated",
+          "iteration notation not an asserted canonical isomorphism"
+        ]
+      },
+      "extracted_engineering_files": [
+        "05_Dot/batches/020/AUDIT.txt",
+        "05_Dot/batches/020/EGA第五卷_12节纤维结构_校订续译.tex",
+        "05_Dot/batches/020/PROGRESS.json",
+        "05_Dot/batches/020/README.txt",
+        "05_Dot/batches/020/build.sh",
+        "05_Dot/batches/020/build1.txt",
+        "05_Dot/batches/020/build2.txt"
+      ]
+    },
+    {
+      "order": 21,
+      "original_tex_name": "EGA第五卷_12节一般截面推广_校订续译.tex",
+      "source_tex_sha256": "b083faab147c7cafa0c98b6dbb869e39c21bdd614c42cc2d0d02e912abc8b6fc",
+      "packaged_tex_path": "05_Dot/batches/021/EGA第五卷_12节一般截面推广_校订续译.tex",
+      "integration_treatment": "new_body",
+      "current_project_input": "continuations/v_dot_middle.tex",
+      "original_progress_historical_only": {
+        "work": "EGA V 独立校订续译",
+        "source_sha256": "23a20ef32fd16a1bd623c0c08ac080d04fc94f248de12133b713a19d6b0330d9",
+        "completed": "底本第44页 The Proposition 2.1 起，至第45页 Analogous change in 4.4 b) 止，八段",
+        "next": "底本第45页 [Le laius 5.1 Fr or Latin 67] goes as such",
+        "previous_project": "libfile_fde3_f-669a2052e230819186aac174f9e19465_49ac57203c0c81918f3630f0324dcb35",
+        "merged_into_main": false,
+        "pdf_pages": 4,
+        "unresolved": [
+          "4.2/4.3 条件 m−1 或 m+1，底本自标字迹不清",
+          "8.8、9.5 等既有缺文未解决"
+        ],
+        "format": "ctexbook default Fandol"
+      },
+      "extracted_engineering_files": [
+        "05_Dot/batches/021/AUDIT.txt",
+        "05_Dot/batches/021/EGA第五卷_12节一般截面推广_校订续译.tex",
+        "05_Dot/batches/021/PROGRESS.json",
+        "05_Dot/batches/021/README.txt",
+        "05_Dot/batches/021/build.sh",
+        "05_Dot/batches/021/newbuild1.txt",
+        "05_Dot/batches/021/newbuild2.txt"
+      ]
+    },
+    {
+      "order": 22,
+      "original_tex_name": "EGA第五卷_12节正则截面_校订续译.tex",
+      "source_tex_sha256": "416f5d7cb0095455889accb5678c45916b38d8955f383f42ef996e48cd11c2c7",
+      "packaged_tex_path": "05_Dot/batches/022/EGA第五卷_12节正则截面_校订续译.tex",
+      "integration_treatment": "new_body",
+      "current_project_input": "continuations/v_dot_middle.tex",
+      "original_progress_historical_only": {
+        "completed": "底本第45页末四段，自 [Le laius 5.1 Fr or Latin 67] goes as such 至 so does 5.7",
+        "next": "底本第46页 Proposition 6.1",
+        "previous_project": "libfile_fde3_f-17e1babbaf108191bbc0d0d7fc04f7b6_49ac57203c0c81918f3630f0324dcb35",
+        "source_sha256": "23a20ef32fd16a1bd623c0c08ac080d04fc94f248de12133b713a19d6b0330d9",
+        "merged_into_main": false,
+        "pdf_pages": 4,
+        "unresolved": [
+          "此前8.8、9.5等缺文",
+          "此前4.2/4.3的m−1或m+1歧义",
+          "本段一般正则序列基无关性的证明未展开"
+        ]
+      },
+      "extracted_engineering_files": [
+        "05_Dot/batches/022/AUDIT.txt",
+        "05_Dot/batches/022/EGA第五卷_12节正则截面_校订续译.tex",
+        "05_Dot/batches/022/PROGRESS.json",
+        "05_Dot/batches/022/README.txt",
+        "05_Dot/batches/022/build.sh",
+        "05_Dot/batches/022/newbuild1.txt",
+        "05_Dot/batches/022/newbuild2.txt"
+      ]
+    },
+    {
+      "order": 23,
+      "original_tex_name": "EGA第五卷_12节维数条件与推广计划_校订续译.tex",
+      "source_tex_sha256": "ae9474892ca1f54877ed21ccdd76d08877c9e180a7b7397d1dd5675aee7fcf1a",
+      "packaged_tex_path": "05_Dot/batches/023/EGA第五卷_12节维数条件与推广计划_校订续译.tex",
+      "integration_treatment": "new_body",
+      "current_project_input": "continuations/v_dot_middle.tex",
+      "original_progress_historical_only": {
+        "completed": "底本第46页首五段：Proposition 6.1 至 the statements that we could perhaps give in this connection (a ce proper)",
+        "next": "第46页 Let us again assume that f: X → P is unramified",
+        "previous_project": "libfile_fde3_f-522b87973aa48191acaf7fdfd5941718_49ac57203c0c81918f3630f0324dcb35",
+        "source_sha256": "23a20ef32fd16a1bd623c0c08ac080d04fc94f248de12133b713a19d6b0330d9",
+        "merged_into_main": false,
+        "pdf_pages": 4,
+        "unresolved": [
+          "8.2维数条件之后底本标注难辨",
+          "此前8.8、9.5等缺文",
+          "此前4.2/4.3的m−1或m+1歧义"
+        ]
+      },
+      "extracted_engineering_files": [
+        "05_Dot/batches/023/AUDIT.txt",
+        "05_Dot/batches/023/EGA第五卷_12节维数条件与推广计划_校订续译.tex",
+        "05_Dot/batches/023/PROGRESS.json",
+        "05_Dot/batches/023/README.txt",
+        "05_Dot/batches/023/build.sh",
+        "05_Dot/batches/023/newbuild1.txt",
+        "05_Dot/batches/023/newbuild2.txt"
+      ]
+    },
+    {
+      "order": 24,
+      "original_tex_name": "EGA第五卷_12节奇异关联簇_校订续译.tex",
+      "source_tex_sha256": "05b11edba58c1d40df1ebe7eb0e63de8682df3bd9f578605982fbb2e017f0d8f",
+      "packaged_tex_path": "05_Dot/batches/024/EGA第五卷_12节奇异关联簇_校订续译.tex",
+      "integration_treatment": "new_body",
+      "current_project_input": "continuations/v_dot_middle.tex",
+      "original_progress_historical_only": {
+        "completed": "底本46—47页一长段，自 Let us again assume that 至 a geometric paragraph devoted to grassmanians；含原脚注61、62",
+        "next": "第47页 If we also define V^(k)",
+        "previous_project": "libfile_fde3_f-fe523dba97dc819184fb25f5fdc2e942_49ac57203c0c81918f3630f0324dcb35",
+        "source_sha256": "23a20ef32fd16a1bd623c0c08ac080d04fc94f248de12133b713a19d6b0330d9",
+        "merged_into_main": false,
+        "pdf_pages": 4,
+        "unresolved": [
+          "loneve及其前后句意残缺",
+          "V^1与V撇的记号关系未明确重定义",
+          "过滤层的含义及补篇第16页引理引用未定位",
+          "此前缺文及歧义仍保留"
+        ]
+      },
+      "extracted_engineering_files": [
+        "05_Dot/batches/024/AUDIT.txt",
+        "05_Dot/batches/024/EGA第五卷_12节奇异关联簇_校订续译.tex",
+        "05_Dot/batches/024/PROGRESS.json",
+        "05_Dot/batches/024/README.txt",
+        "05_Dot/batches/024/build.sh",
+        "05_Dot/batches/024/newbuild1.txt",
+        "05_Dot/batches/024/newbuild2.txt"
+      ]
+    },
+    {
+      "order": 25,
+      "original_tex_name": "EGA第五卷_12节退化层维数_校订续译.tex",
+      "source_tex_sha256": "2bdb76b3c9428ba1dd64d14a14b81889fb357d00d1661aa9be1759c34cf4b846",
+      "packaged_tex_path": "05_Dot/batches/025/EGA第五卷_12节退化层维数_校订续译.tex",
+      "integration_treatment": "new_body",
+      "current_project_input": "continuations/v_dot_middle.tex",
+      "original_progress_historical_only": {
+        "completed": "底本47页后四段，If we also define V^(k) 至 I could give a more precise statement upon request",
+        "next": "第48页 Once we grant this",
+        "previous_project": "libfile_fde3_f-d259a9a4a03c8191a18e1e6e67a96d8d_49ac57203c0c81918f3630f0324dcb35",
+        "source_sha256": "23a20ef32fd16a1bd623c0c08ac080d04fc94f248de12133b713a19d6b0330d9",
+        "merged_into_main": false,
+        "pdf_pages": 4,
+        "unresolved": [
+          "维数公式的完整适用范围未说明",
+          "Grass后及it implies后难辨标记",
+          "第16段补篇引用及前批过滤光滑性验证未完成",
+          "此前缺文及歧义继续保留"
+        ]
+      },
+      "extracted_engineering_files": [
+        "05_Dot/batches/025/AUDIT.txt",
+        "05_Dot/batches/025/EGA第五卷_12节退化层维数_校订续译.tex",
+        "05_Dot/batches/025/PROGRESS.json",
+        "05_Dot/batches/025/README.txt",
+        "05_Dot/batches/025/build.sh",
+        "05_Dot/batches/025/newbuild1.txt",
+        "05_Dot/batches/025/newbuild2.txt"
+      ]
+    },
+    {
+      "order": 26,
+      "original_tex_name": "EGA第五卷_12节线性截面族_校订续译.tex",
+      "source_tex_sha256": "71aa279bd6b79795f8141eaf76cd262a58180bcedf5147d49d2b49b7f1ef0daa",
+      "packaged_tex_path": "05_Dot/batches/026/EGA第五卷_12节线性截面族_校订续译.tex",
+      "integration_treatment": "new_body",
+      "current_project_input": "continuations/v_dot_middle.tex",
+      "original_progress_historical_only": {
+        "completed": "底本48页前五段，Once we grant this 至 the subscheme Z^1 corresponding to X^(m) supersingular is nowhere dense",
+        "next": "第48页 It remains, therefore, to prove a lemma",
+        "previous_project": "libfile_fde3_f-13fee13fb64081918cdae495f00db6ff_49ac57203c0c81918f3630f0324dcb35",
+        "source_sha256": "23a20ef32fd16a1bd623c0c08ac080d04fc94f248de12133b713a19d6b0330d9",
+        "merged_into_main": false,
+        "pdf_pages": 4,
+        "unresolved": [
+          "S=Spec缺失所取谱对象",
+          "全局T几何不可约性后的K(ξ)基域表述待核",
+          "n同时为维数和Veronese指标，未补定其关系",
+          "此前缺文及补篇验证继续保留"
+        ]
+      },
+      "extracted_engineering_files": [
+        "05_Dot/batches/026/AUDIT.txt",
+        "05_Dot/batches/026/EGA第五卷_12节线性截面族_校订续译.tex",
+        "05_Dot/batches/026/PROGRESS.json",
+        "05_Dot/batches/026/README.txt",
+        "05_Dot/batches/026/build.sh",
+        "05_Dot/batches/026/newbuild1.txt",
+        "05_Dot/batches/026/newbuild2.txt"
+      ]
+    },
+    {
+      "order": 27,
+      "original_tex_name": "EGA第五卷_12节末与13节定义_校订续译.tex",
+      "source_tex_sha256": "c015be64ee4be922698065e7997e1b0c5ad5de9a492dd0978414a6b2e64055b5",
+      "packaged_tex_path": "05_Dot/batches/027/EGA第五卷_12节末与13节定义_校订续译.tex",
+      "integration_treatment": "new_body",
+      "current_project_input": "continuations/v_dot_middle.tex",
+      "original_progress_historical_only": {
+        "completed": "底本48页末 It remains, therefore, to prove a lemma 起至49页定义13.1全文及原脚注63",
+        "next": "第49页 Theorem 13.2 (M. Artin)",
+        "previous_project": "libfile_fde3_f-d77ba3e54554819183f73a3022c6bc8a_49ac57203c0c81918f3630f0324dcb35",
+        "source_sha256": "23a20ef32fd16a1bd623c0c08ac080d04fc94f248de12133b713a19d6b0330d9",
+        "merged_into_main": false,
+        "pdf_pages": 4,
+        "unresolved": [
+          "12节末几何不可约性引理残句及itou标记",
+          "末句Z足够一般未擅改C",
+          "Milne与SGA IV具体引用未定位",
+          "此前缺文及待核保留"
+        ]
+      },
+      "extracted_engineering_files": [
+        "05_Dot/batches/027/AUDIT.txt",
+        "05_Dot/batches/027/EGA第五卷_12节末与13节定义_校订续译.tex",
+        "05_Dot/batches/027/PROGRESS.json",
+        "05_Dot/batches/027/README.txt",
+        "05_Dot/batches/027/build.sh",
+        "05_Dot/batches/027/newbuild1.txt",
+        "05_Dot/batches/027/newbuild2.txt"
+      ]
+    },
+    {
+      "order": 28,
+      "original_tex_name": "EGA第五卷_13.2归约_校订续译.tex",
+      "source_tex_sha256": "de983faef363680872db2b888bd7a285f5eca26e001ceb1941cd487f5cd2ab05",
+      "packaged_tex_path": "05_Dot/batches/028/EGA第五卷_13.2归约_校订续译.tex",
+      "integration_treatment": "new_body",
+      "current_project_input": "continuations/v_dot_middle.tex",
+      "original_progress_historical_only": {
+        "completed": "底本49页定理13.2陈述及后三段证明，至 geometrically normal over k",
+        "next": "第50页 The benefit of this hypothesis",
+        "previous_project": "libfile_fde3_f-e3a187405f2c8191bb6049e56ca84c2a_49ac57203c0c81918f3630f0324dcb35",
+        "source_sha256": "23a20ef32fd16a1bd623c0c08ac080d04fc94f248de12133b713a19d6b0330d9",
+        "merged_into_main": false,
+        "pdf_pages": 4,
+        "unresolved": [
+          "13.2证明未译完",
+          "句末字母难辨标记",
+          "曲线与正规化归约的省略步骤及引用",
+          "此前待核保留"
+        ]
+      },
+      "extracted_engineering_files": [
+        "05_Dot/batches/028/AUDIT.txt",
+        "05_Dot/batches/028/EGA第五卷_13.2归约_校订续译.tex",
+        "05_Dot/batches/028/PROGRESS.json",
+        "05_Dot/batches/028/README.txt",
+        "05_Dot/batches/028/build.sh",
+        "05_Dot/batches/028/newbuild1.txt",
+        "05_Dot/batches/028/newbuild2.txt"
+      ]
+    },
+    {
+      "order": 29,
+      "original_tex_name": "EGA第五卷_13.3陈述_校订续译.tex",
+      "source_tex_sha256": "3376b2a0316e6da711b3134bb5ae281a8822803baf7ecc00ab5fcb1c7b3d9feb",
+      "packaged_tex_path": "05_Dot/batches/029/EGA第五卷_13.3陈述_校订续译.tex",
+      "integration_treatment": "new_body",
+      "current_project_input": "continuations/v_dot_middle.tex",
+      "original_progress_historical_only": {
+        "completed": "底本50页 The benefit of this hypothesis 起，三准备段、引理13.3及随后括注和归约说明，止 allowing an elementary morphism U→V；含脚注66",
+        "next": "第50页 There exists a linar subvariety C of L",
+        "previous_project": "libfile_fde3_f-801931b6bb08819198d45bc803ac2d81_49ac57203c0c81918f3630f0324dcb35",
+        "source_sha256": "23a20ef32fd16a1bd623c0c08ac080d04fc94f248de12133b713a19d6b0330d9",
+        "merged_into_main": false,
+        "pdf_pages": 4,
+        "unresolved": [
+          "any与some?量词疑点",
+          "定理13.2与引理13.3证明尚未译完",
+          "此前缺文继续保留"
+        ]
+      },
+      "extracted_engineering_files": [
+        "05_Dot/batches/029/AUDIT.txt",
+        "05_Dot/batches/029/EGA第五卷_13.3陈述_校订续译.tex",
+        "05_Dot/batches/029/PROGRESS.json",
+        "05_Dot/batches/029/README.txt",
+        "05_Dot/batches/029/build.sh",
+        "05_Dot/batches/029/newbuild1.txt",
+        "05_Dot/batches/029/newbuild2.txt"
+      ]
+    },
+    {
+      "order": 30,
+      "original_tex_name": "EGA第五卷_13.2初等邻域构造_校订续译.tex",
+      "source_tex_sha256": "cc0b44c8f61c0862424ba98e015d963f3b38a679cd01b08c273608c32ad11307",
+      "packaged_tex_path": "05_Dot/batches/030/EGA第五卷_13.2初等邻域构造_校订续译.tex",
+      "integration_treatment": "new_body",
+      "current_project_input": "continuations/v_dot_middle.tex",
+      "original_progress_historical_only": {
+        "completed": "底本50—51页跨页长段，There exists a linar subvariety C of L 至 This is the desired neighborhood of x contained in X−Y",
+        "next": "第51页 It remains only to prove Lemma 13.3",
+        "previous_project": "libfile_fde3_f-ee7fb87af2cc81918d617377ee9beab3_49ac57203c0c81918f3630f0324dcb35",
+        "source_sha256": "23a20ef32fd16a1bd623c0c08ac080d04fc94f248de12133b713a19d6b0330d9",
+        "merged_into_main": false,
+        "pdf_pages": 4,
+        "unresolved": [
+          "C横截选择步骤未展开",
+          "引理陈述遗漏x∈L0，后文证明使用该条件",
+          "Bertini连通性引用范围未展开",
+          "引理13.3证明未译",
+          "此前待核保留"
+        ]
+      },
+      "extracted_engineering_files": [
+        "05_Dot/batches/030/AUDIT.txt",
+        "05_Dot/batches/030/EGA第五卷_13.2初等邻域构造_校订续译.tex",
+        "05_Dot/batches/030/PROGRESS.json",
+        "05_Dot/batches/030/README.txt",
+        "05_Dot/batches/030/build.sh",
+        "05_Dot/batches/030/newbuild1.txt",
+        "05_Dot/batches/030/newbuild2.txt"
+      ]
+    },
+    {
+      "order": 31,
+      "original_tex_name": "EGA第五卷_13.3证明归约_校订续译.tex",
+      "source_tex_sha256": "a814d857f3fff278b30459906e4a8a0b54512dd92061ff100eabf9de1cb877d1",
+      "packaged_tex_path": "05_Dot/batches/031/EGA第五卷_13.3证明归约_校订续译.tex",
+      "integration_treatment": "new_body",
+      "current_project_input": "continuations/v_dot_middle.tex",
+      "original_progress_historical_only": {
+        "completed": "底本51页 It remains only to prove Lemma 13.3 起整段，至 an integer ≥ 2",
+        "next": "第51页 This is a regret to No. 9",
+        "previous_project": "libfile_fde3_f-6ea0ac6447ac8191af2a886003dd7c64_49ac57203c0c81918f3630f0324dcb35",
+        "source_sha256": "23a20ef32fd16a1bd623c0c08ac080d04fc94f248de12133b713a19d6b0330d9",
+        "merged_into_main": false,
+        "pdf_pages": 4,
+        "unresolved": [
+          "一般截面的基域措辞待核",
+          "Q_n与Phi_n符号不一致",
+          "维数和Veronese指标n重名",
+          "13.3与13.2证明尚未译完",
+          "旧缺文及待核事项保持"
+        ]
+      },
+      "extracted_engineering_files": [
+        "05_Dot/batches/031/AUDIT.txt",
+        "05_Dot/batches/031/EGA第五卷_13.3证明归约_校订续译.tex",
+        "05_Dot/batches/031/PROGRESS.json",
+        "05_Dot/batches/031/README.txt",
+        "05_Dot/batches/031/build.sh",
+        "05_Dot/batches/031/build1.txt",
+        "05_Dot/batches/031/build2.txt"
+      ]
+    },
+    {
+      "order": 32,
+      "original_tex_name": "EGA第五卷_13.3一般截面归纳_校订续译.tex",
+      "source_tex_sha256": "2fc10527e50375e75d4688252e69da38e9391ccfb8b78fdb5c0658ff40f2bf79",
+      "packaged_tex_path": "05_Dot/batches/032/EGA第五卷_13.3一般截面归纳_校订续译.tex",
+      "integration_treatment": "new_body",
+      "current_project_input": "continuations/v_dot_middle.tex",
+      "original_progress_historical_only": {
+        "completed": "底本51页 This is a regret to No. 9 至52页 of a presentation (enforme)，两个原段",
+        "next": "第52页 It remains to prove the corollary announced of 8.8 in the case m = 1",
+        "previous_project": "libfile_fde3_f-b6dd0f6e738081919341366fd3053bb1_49ac57203c0c81918f3630f0324dcb35",
+        "source_sha256": "23a20ef32fd16a1bd623c0c08ac080d04fc94f248de12133b713a19d6b0330d9",
+        "merged_into_main": false,
+        "pdf_pages": 4,
+        "unresolved": [
+          "m=1推论证明未译",
+          "13.3与13.2证明未译完",
+          "8.8缺文未恢复",
+          "h sing/X sing记号不一致及p0疑字保留",
+          "归纳括注指代歧义",
+          "旧待核保持"
+        ]
+      },
+      "extracted_engineering_files": [
+        "05_Dot/batches/032/AUDIT.txt",
+        "05_Dot/batches/032/EGA第五卷_13.3一般截面归纳_校订续译.tex",
+        "05_Dot/batches/032/PROGRESS.json",
+        "05_Dot/batches/032/README.txt",
+        "05_Dot/batches/032/build.sh",
+        "05_Dot/batches/032/build1.txt",
+        "05_Dot/batches/032/build2.txt"
+      ]
+    },
+    {
+      "order": 33,
+      "original_tex_name": "EGA第五卷_13.3超平面情形证明_校订续译.tex",
+      "source_tex_sha256": "7b2ee65dbd3a00d5e1c6fb527f410a63b2bb850f45f9305fc5b4a8ce3042fdd3",
+      "packaged_tex_path": "05_Dot/batches/033/EGA第五卷_13.3超平面情形证明_校订续译.tex",
+      "integration_treatment": "new_body",
+      "current_project_input": "continuations/v_dot_middle.tex",
+      "original_progress_historical_only": {
+        "completed": "底本52页 It remains to prove the corollary announced of 8.8 in the case m = 1 至 this proves our regret, thus 13.2，原证明收尾整段",
+        "next": "第52页 N.B. The reasoning does not go through",
+        "previous_project": "libfile_fde3_f-f4f852e6eb4081918d4a59404cf2ab5a_49ac57203c0c81918f3630f0324dcb35",
+        "source_sha256": "23a20ef32fd16a1bd623c0c08ac080d04fc94f248de12133b713a19d6b0330d9",
+        "merged_into_main": false,
+        "pdf_pages": 4,
+        "unresolved": [
+          "8.8缺文与8.7(c)残缺未恢复",
+          "一般平展与对偶论证适用范围未独立验证",
+          "X sing/h sing记号不一致保留",
+          "后续NB尚未译",
+          "旧待核保持"
+        ]
+      },
+      "extracted_engineering_files": [
+        "05_Dot/batches/033/AUDIT.txt",
+        "05_Dot/batches/033/EGA第五卷_13.3超平面情形证明_校订续译.tex",
+        "05_Dot/batches/033/PROGRESS.json",
+        "05_Dot/batches/033/README.txt",
+        "05_Dot/batches/033/build.sh",
+        "05_Dot/batches/033/build1.txt",
+        "05_Dot/batches/033/build2.txt"
+      ]
+    },
+    {
+      "order": 34,
+      "original_tex_name": "EGA第五卷_13.4有限域与连通性_校订续译.tex",
+      "source_tex_sha256": "536434aad8cedf4a1974ca068579c7baebf5d073be4ae315c2d8f5d6c728e98c",
+      "packaged_tex_path": "05_Dot/batches/034/EGA第五卷_13.4有限域与连通性_校订续译.tex",
+      "integration_treatment": "new_body",
+      "current_project_input": "continuations/v_dot_middle.tex",
+      "original_progress_historical_only": {
+        "completed": "底本第52页 N.B. The reasoning does not go through 起附记及注13.4(a)，接续第53页13.4(b)全文",
+        "next": "第53页13.4(c): To be possibly included in the statement of 13.2",
+        "previous_project": "libfile_fde3_f-b0d3f92c61688191bfdd8535dcd397ff_49ac57203c0c81918f3630f0324dcb35",
+        "source_sha256": "23a20ef32fd16a1bd623c0c08ac080d04fc94f248de12133b713a19d6b0330d9",
+        "merged_into_main": false,
+        "pdf_pages": 4,
+        "unresolved": [
+          "附记否定和条件连接不明，原句及问号保留，未补造结论",
+          "C与C撇的确切关系未明",
+          "有限域推广未独立验证，保留推测语气",
+          "8.8缺文及8.7(c)残缺、全部旧待核保持"
+        ]
+      },
+      "extracted_engineering_files": [
+        "05_Dot/batches/034/AUDIT.txt",
+        "05_Dot/batches/034/EGA第五卷_13.4有限域与连通性_校订续译.tex",
+        "05_Dot/batches/034/PROGRESS.json",
+        "05_Dot/batches/034/README.txt",
+        "05_Dot/batches/034/build.sh",
+        "05_Dot/batches/034/build1.txt",
+        "05_Dot/batches/034/build2.txt"
+      ]
+    },
+    {
+      "order": 35,
+      "original_tex_name": "EGA第五卷_13.4有限点集邻域_校订续译.tex",
+      "source_tex_sha256": "2d2a1e910613c34df21af18c0b345bc7e6ed0173d6257ff761969eea62d2a183",
+      "packaged_tex_path": "05_Dot/batches/035/EGA第五卷_13.4有限点集邻域_校订续译.tex",
+      "integration_treatment": "new_body",
+      "current_project_input": "continuations/v_dot_middle.tex",
+      "original_progress_historical_only": {
+        "completed": "底本第53页注13.4(c)全文，含编排建议、有限点集邻域断言及证明说明",
+        "next": "第53页13.4(d): By proceeding as explained in 7.1",
+        "previous_project": "libfile_fde3_f-7331e5dad08c81919eea1f8f76b80df6_49ac57203c0c81918f3630f0324dcb35",
+        "source_sha256": "23a20ef32fd16a1bd623c0c08ac080d04fc94f248de12133b713a19d6b0330d9",
+        "merged_into_main": false,
+        "pdf_pages": 3,
+        "unresolved": [
+          "原稿七问号缺词未恢复",
+          "闭点与k-有理点的过渡未展开，未补造下降证明",
+          "推广断言及定理13.2未独立验证",
+          "8.8缺文、8.7(c)残缺和全部旧待核保持"
+        ]
+      },
+      "extracted_engineering_files": [
+        "05_Dot/batches/035/AUDIT.txt",
+        "05_Dot/batches/035/EGA第五卷_13.4有限点集邻域_校订续译.tex",
+        "05_Dot/batches/035/PROGRESS.json",
+        "05_Dot/batches/035/README.txt",
+        "05_Dot/batches/035/build.sh",
+        "05_Dot/batches/035/build1.txt",
+        "05_Dot/batches/035/build2.txt"
+      ]
+    },
+    {
+      "order": 36,
+      "original_tex_name": "EGA第五卷_13.4一般基底_校订续译.tex",
+      "source_tex_sha256": "46c7f159b8987d395817e0b4b60947395d2c2ff3de9e880b8aed17a7026670eb",
+      "packaged_tex_path": "05_Dot/batches/036/EGA第五卷_13.4一般基底_校订续译.tex",
+      "integration_treatment": "new_body",
+      "current_project_input": "continuations/v_dot_middle.tex",
+      "original_progress_historical_only": {
+        "completed": "底本第53页注13.4(d)全部可辨文字和公式",
+        "next": "第53页13.4(e): One of the reasons why 13.2 is interesting",
+        "previous_project": "libfile_fde3_f-0d28d9c9ae508191bca20a484cdd8351_49ac57203c0c81918f3630f0324dcb35",
+        "source_sha256": "23a20ef32fd16a1bd623c0c08ac080d04fc94f248de12133b713a19d6b0330d9",
+        "merged_into_main": false,
+        "pdf_pages": 4,
+        "unresolved": [
+          "作者本项未给证明；7.1有限剩余域可能需平展基变换，本项只写开邻域，适用范围待核",
+          "末句连接语残缺，未增补量词或假设",
+          "R2是否几何意义下条件未明，照存",
+          "8.8缺文、8.7(c)残缺及所有旧待核保持"
+        ]
+      },
+      "extracted_engineering_files": [
+        "05_Dot/batches/036/AUDIT.txt",
+        "05_Dot/batches/036/EGA第五卷_13.4一般基底_校订续译.tex",
+        "05_Dot/batches/036/PROGRESS.json",
+        "05_Dot/batches/036/README.txt",
+        "05_Dot/batches/036/build.sh",
+        "05_Dot/batches/036/build1.txt",
+        "05_Dot/batches/036/build2.txt"
+      ]
+    },
+    {
+      "order": 37,
+      "original_tex_name": "EGA第五卷_13.4拓扑结构_校订续译.tex",
+      "source_tex_sha256": "919e37af0df931f0e0dda7651aa35a6ec66ac8412adde70c03201dfb96ae26c3",
+      "packaged_tex_path": "05_Dot/batches/037/EGA第五卷_13.4拓扑结构_校订续译.tex",
+      "integration_treatment": "new_body",
+      "current_project_input": "continuations/v_dot_middle.tex",
+      "original_progress_historical_only": {
+        "completed": "底本第53页注13.4(e)全文，至with group π1止；§13原文已接续至末尾",
+        "next": "第53页§14 Conic Projections标题，再接第54页N.B. We have already used Conic Projections",
+        "previous_project": "libfile_fde3_f-127c5c90979881919dfc9259e93a2ce7_49ac57203c0c81918f3630f0324dcb35",
+        "source_sha256": "23a20ef32fd16a1bd623c0c08ac080d04fc94f248de12133b713a19d6b0330d9",
+        "merged_into_main": false,
+        "pdf_pages": 3,
+        "unresolved": [
+          "本项未给拓扑证明，普遍覆盖同胚于C^n断言未独立验证，不加强为双全纯",
+          "第13节的旧待核未解决，不能称整节独立验证完成",
+          "8.8缺文、8.7(c)残缺及所有旧待核保持"
+        ]
+      },
+      "extracted_engineering_files": [
+        "05_Dot/batches/037/AUDIT.txt",
+        "05_Dot/batches/037/EGA第五卷_13.4拓扑结构_校订续译.tex",
+        "05_Dot/batches/037/PROGRESS.json",
+        "05_Dot/batches/037/README.txt",
+        "05_Dot/batches/037/build.sh",
+        "05_Dot/batches/037/build1.txt",
+        "05_Dot/batches/037/build2.txt"
+      ]
+    },
+    {
+      "order": 38,
+      "original_tex_name": "EGA第五卷_14锥投影构造_校订续译.tex",
+      "source_tex_sha256": "9c33dc5c2b130e6e7811d2e13dd27552dbfe7b5f96f81efa38deb60baf84feb0",
+      "packaged_tex_path": "05_Dot/batches/038/EGA第五卷_14锥投影构造_校订续译.tex",
+      "integration_treatment": "new_body",
+      "current_project_input": "continuations/v_dot_late.tex",
+      "original_progress_historical_only": null,
+      "extracted_engineering_files": [
+        "05_Dot/batches/038/AUDIT.txt",
+        "05_Dot/batches/038/EGA第五卷_14锥投影构造_校订续译.tex",
+        "05_Dot/batches/038/PROGRESS.json",
+        "05_Dot/batches/038/README.txt",
+        "05_Dot/batches/038/build.sh",
+        "05_Dot/batches/038/build1.txt",
+        "05_Dot/batches/038/build2.txt"
+      ]
+    },
+    {
+      "order": 39,
+      "original_tex_name": "EGA第五卷_14一般中心_校订续译.tex",
+      "source_tex_sha256": "528c086837501cb3c44f6ade1ea0238ce1c397e36ea167b3d11eaae5d1988895",
+      "packaged_tex_path": "05_Dot/batches/039/EGA第五卷_14一般中心_校订续译.tex",
+      "integration_treatment": "new_body",
+      "current_project_input": "continuations/v_dot_late.tex",
+      "original_progress_historical_only": null,
+      "extracted_engineering_files": [
+        "05_Dot/batches/039/AUDIT.txt",
+        "05_Dot/batches/039/EGA第五卷_14一般中心_校订续译.tex",
+        "05_Dot/batches/039/PROGRESS.json",
+        "05_Dot/batches/039/README.txt",
+        "05_Dot/batches/039/build.sh",
+        "05_Dot/batches/039/build1.txt",
+        "05_Dot/batches/039/build2.txt"
+      ]
+    },
+    {
+      "order": 40,
+      "original_tex_name": "EGA第五卷_14正则截面与爆破_校订续译.tex",
+      "source_tex_sha256": "2125248b6dccc418efb2adaa991e936741fa5fd12a293a9265e9b39d71f88173",
+      "packaged_tex_path": "05_Dot/batches/040/EGA第五卷_14正则截面与爆破_校订续译.tex",
+      "integration_treatment": "new_body",
+      "current_project_input": "continuations/v_dot_late.tex",
+      "original_progress_historical_only": null,
+      "extracted_engineering_files": [
+        "05_Dot/batches/040/AUDIT.txt",
+        "05_Dot/batches/040/EGA第五卷_14正则截面与爆破_校订续译.tex",
+        "05_Dot/batches/040/PROGRESS.json",
+        "05_Dot/batches/040/README.txt",
+        "05_Dot/batches/040/build.sh",
+        "05_Dot/batches/040/build1.txt",
+        "05_Dot/batches/040/build2.txt"
+      ]
+    },
+    {
+      "order": 41,
+      "original_tex_name": "EGA第五卷_14.1命题陈述_校订续译.tex",
+      "source_tex_sha256": "6b490867b908d4ce7e811f22e23c73b3b50f5ff9d562ab958696598429e05df9",
+      "packaged_tex_path": "05_Dot/batches/041/EGA第五卷_14.1命题陈述_校订续译.tex",
+      "integration_treatment": "new_body",
+      "current_project_input": "continuations/v_dot_late.tex",
+      "original_progress_historical_only": null,
+      "extracted_engineering_files": [
+        "05_Dot/batches/041/AUDIT.txt",
+        "05_Dot/batches/041/EGA第五卷_14.1命题陈述_校订续译.tex",
+        "05_Dot/batches/041/PROGRESS.json",
+        "05_Dot/batches/041/README.txt",
+        "05_Dot/batches/041/build.sh",
+        "05_Dot/batches/041/build1.txt",
+        "05_Dot/batches/041/build2.txt"
+      ]
+    },
+    {
+      "order": 42,
+      "original_tex_name": "EGA第五卷_14.1证明残文_校订续译.tex",
+      "source_tex_sha256": "ba0b36fd3d0a72d080218b9b31275eb560f40d7b573b7ba35d1f3a0cadf974a1",
+      "packaged_tex_path": "05_Dot/batches/042/EGA第五卷_14.1证明残文_校订续译.tex",
+      "integration_treatment": "new_body",
+      "current_project_input": "continuations/v_dot_late.tex",
+      "original_progress_historical_only": null,
+      "extracted_engineering_files": [
+        "05_Dot/batches/042/AUDIT.txt",
+        "05_Dot/batches/042/EGA第五卷_14.1证明残文_校订续译.tex",
+        "05_Dot/batches/042/PROGRESS.json",
+        "05_Dot/batches/042/README.txt",
+        "05_Dot/batches/042/build.sh",
+        "05_Dot/batches/042/build1.txt",
+        "05_Dot/batches/042/build2.txt"
+      ]
+    },
+    {
+      "order": 43,
+      "original_tex_name": "EGA第五卷_14.2有限投影_校订续译.tex",
+      "source_tex_sha256": "187c503878e1a5e52df36469c8e94035447f6ea348e518da915d80b21fb38f91",
+      "packaged_tex_path": "05_Dot/batches/043/EGA第五卷_14.2有限投影_校订续译.tex",
+      "integration_treatment": "new_body",
+      "current_project_input": "continuations/v_dot_late.tex",
+      "original_progress_historical_only": null,
+      "extracted_engineering_files": [
+        "05_Dot/batches/043/AUDIT.txt",
+        "05_Dot/batches/043/EGA第五卷_14.2有限投影_校订续译.tex",
+        "05_Dot/batches/043/PROGRESS.json",
+        "05_Dot/batches/043/README.txt",
+        "05_Dot/batches/043/build.sh",
+        "05_Dot/batches/043/build1.txt",
+        "05_Dot/batches/043/build2.txt"
+      ]
+    },
+    {
+      "order": 44,
+      "original_tex_name": "EGA第五卷_14.3平坦性_校订续译.tex",
+      "source_tex_sha256": "1654ddb2ac525ff5f71e84b3f23dd7221e8553bc1e0be9778d544ab953c1322e",
+      "packaged_tex_path": "05_Dot/batches/044/EGA第五卷_14.3平坦性_校订续译.tex",
+      "integration_treatment": "new_body",
+      "current_project_input": "continuations/v_dot_late.tex",
+      "original_progress_historical_only": null,
+      "extracted_engineering_files": [
+        "05_Dot/batches/044/AUDIT.txt",
+        "05_Dot/batches/044/EGA第五卷_14.3平坦性_校订续译.tex",
+        "05_Dot/batches/044/PROGRESS.json",
+        "05_Dot/batches/044/README.txt",
+        "05_Dot/batches/044/build.sh",
+        "05_Dot/batches/044/build1.txt",
+        "05_Dot/batches/044/build2.txt"
+      ]
+    },
+    {
+      "order": 45,
+      "original_tex_name": "EGA第五卷_锥投影微分性质导言_校订续译.tex",
+      "source_tex_sha256": "801e7d7102be174922ad04617bf594708570d42f6d8521e670bdcb0a0a0d3dd7",
+      "packaged_tex_path": "05_Dot/batches/045/EGA第五卷_锥投影微分性质导言_校订续译.tex",
+      "integration_treatment": "new_body",
+      "current_project_input": "continuations/v_dot_late.tex",
+      "original_progress_historical_only": null,
+      "extracted_engineering_files": [
+        "05_Dot/batches/045/AUDIT.txt",
+        "05_Dot/batches/045/EGA第五卷_锥投影微分性质导言_校订续译.tex",
+        "05_Dot/batches/045/PROGRESS.json",
+        "05_Dot/batches/045/README.txt",
+        "05_Dot/batches/045/build.sh",
+        "05_Dot/batches/045/build1.txt",
+        "05_Dot/batches/045/build2.txt"
+      ]
+    },
+    {
+      "order": 46,
+      "original_tex_name": "EGA第五卷_命题14.4_校订续译.tex",
+      "source_tex_sha256": "79857c686155f64b9e822a342f34a8325f0f8bcbe066bff8340535b7cd12594f",
+      "packaged_tex_path": "05_Dot/batches/046/EGA第五卷_命题14.4_校订续译.tex",
+      "integration_treatment": "new_body",
+      "current_project_input": "continuations/v_dot_late.tex",
+      "original_progress_historical_only": null,
+      "extracted_engineering_files": [
+        "05_Dot/batches/046/AUDIT.txt",
+        "05_Dot/batches/046/EGA第五卷_命题14.4_校订续译.tex",
+        "05_Dot/batches/046/PROGRESS.json",
+        "05_Dot/batches/046/README.txt",
+        "05_Dot/batches/046/build.sh",
+        "05_Dot/batches/046/build1.txt",
+        "05_Dot/batches/046/build2.txt"
+      ]
+    },
+    {
+      "order": 47,
+      "original_tex_name": "EGA第五卷_命题14.5与推论14.6_校订续译.tex",
+      "source_tex_sha256": "d0146ca2199e9860bf4b4d5590ce1e3bdf4f0e2fa552530bdbc210625c5ce7c6",
+      "packaged_tex_path": "05_Dot/batches/047/EGA第五卷_命题14.5与推论14.6_校订续译.tex",
+      "integration_treatment": "new_body",
+      "current_project_input": "continuations/v_dot_late.tex",
+      "original_progress_historical_only": null,
+      "extracted_engineering_files": [
+        "05_Dot/batches/047/AUDIT.txt",
+        "05_Dot/batches/047/EGA第五卷_命题14.5与推论14.6_校订续译.tex",
+        "05_Dot/batches/047/PROGRESS.json",
+        "05_Dot/batches/047/README.txt",
+        "05_Dot/batches/047/build.sh",
+        "05_Dot/batches/047/build1.txt",
+        "05_Dot/batches/047/build2.txt"
+      ]
+    },
+    {
+      "order": 48,
+      "original_tex_name": "EGA第五卷_锥投影性质辨析_校订续译.tex",
+      "source_tex_sha256": "597f7eb71d806b520de0938d9350ca216fe18587721824ddfc70004373157a73",
+      "packaged_tex_path": "05_Dot/batches/048/EGA第五卷_锥投影性质辨析_校订续译.tex",
+      "integration_treatment": "new_body",
+      "current_project_input": "continuations/v_dot_late.tex",
+      "original_progress_historical_only": null,
+      "extracted_engineering_files": [
+        "05_Dot/batches/048/AUDIT.txt",
+        "05_Dot/batches/048/EGA第五卷_锥投影性质辨析_校订续译.tex",
+        "05_Dot/batches/048/PROGRESS.json",
+        "05_Dot/batches/048/README.txt",
+        "05_Dot/batches/048/build.sh",
+        "05_Dot/batches/048/build1.txt",
+        "05_Dot/batches/048/build2.txt"
+      ]
+    },
+    {
+      "order": 49,
+      "original_tex_name": "EGA第五卷_锥投影普遍图式_校订续译.tex",
+      "source_tex_sha256": "8e97ae6de5c4393a338b65a8a6bef34aaa6ea460b523324c22ef262d793c7da4",
+      "packaged_tex_path": "05_Dot/batches/049/EGA第五卷_锥投影普遍图式_校订续译.tex",
+      "integration_treatment": "new_body",
+      "current_project_input": "continuations/v_dot_late.tex",
+      "original_progress_historical_only": null,
+      "extracted_engineering_files": [
+        "05_Dot/batches/049/AUDIT.txt",
+        "05_Dot/batches/049/EGA第五卷_锥投影普遍图式_校订续译.tex",
+        "05_Dot/batches/049/PROGRESS.json",
+        "05_Dot/batches/049/README.txt",
+        "05_Dot/batches/049/build.sh",
+        "05_Dot/batches/049/build1.txt",
+        "05_Dot/batches/049/build2.txt"
+      ]
+    },
+    {
+      "order": 50,
+      "original_tex_name": "EGA第五卷_第15节公理化导言_校订续译.tex",
+      "source_tex_sha256": "70800fe0770bbb4069e09c03e3718218b4ecfac773f766c8d82c2074af1a2829",
+      "packaged_tex_path": "05_Dot/batches/050/EGA第五卷_第15节公理化导言_校订续译.tex",
+      "integration_treatment": "new_body",
+      "current_project_input": "continuations/v_dot_late.tex",
+      "original_progress_historical_only": null,
+      "extracted_engineering_files": [
+        "05_Dot/batches/050/AUDIT.txt",
+        "05_Dot/batches/050/EGA第五卷_第15节公理化导言_校订续译.tex",
+        "05_Dot/batches/050/PROGRESS.json",
+        "05_Dot/batches/050/README.txt",
+        "05_Dot/batches/050/build.sh",
+        "05_Dot/batches/050/build1.txt",
+        "05_Dot/batches/050/build2.txt"
+      ]
+    },
+    {
+      "order": 51,
+      "original_tex_name": "EGA第五卷_参数族与基变换_校订续译.tex",
+      "source_tex_sha256": "46ec1b59637022d52c9ff76509112e4382d3f4f0491d48175a8b6b3dee4db239",
+      "packaged_tex_path": "05_Dot/batches/051/EGA第五卷_参数族与基变换_校订续译.tex",
+      "integration_treatment": "new_body",
+      "current_project_input": "continuations/v_dot_late.tex",
+      "original_progress_historical_only": null,
+      "extracted_engineering_files": [
+        "05_Dot/batches/051/AUDIT.txt",
+        "05_Dot/batches/051/EGA第五卷_参数族与基变换_校订续译.tex",
+        "05_Dot/batches/051/PROGRESS.json",
+        "05_Dot/batches/051/README.txt",
+        "05_Dot/batches/051/build.sh",
+        "05_Dot/batches/051/build1.txt",
+        "05_Dot/batches/051/build2.txt"
+      ]
+    },
+    {
+      "order": 52,
+      "original_tex_name": "EGA第五卷_平坦性假设与非空性公理_校订续译.tex",
+      "source_tex_sha256": "19d70c6dcb987f55b58bfa8cc1511a3c8773eeb6fcc4e49961688f55a1a8a2c5",
+      "packaged_tex_path": "05_Dot/batches/052/EGA第五卷_平坦性假设与非空性公理_校订续译.tex",
+      "integration_treatment": "new_body",
+      "current_project_input": "continuations/v_dot_late.tex",
+      "original_progress_historical_only": null,
+      "extracted_engineering_files": [
+        "05_Dot/batches/052/AUDIT.txt",
+        "05_Dot/batches/052/EGA第五卷_平坦性假设与非空性公理_校订续译.tex",
+        "05_Dot/batches/052/PROGRESS.json",
+        "05_Dot/batches/052/README.txt",
+        "05_Dot/batches/052/build.sh",
+        "05_Dot/batches/052/build1.txt",
+        "05_Dot/batches/052/build2.txt"
+      ]
+    },
+    {
+      "order": 53,
+      "original_tex_name": "EGA第五卷_泛截面光滑性条件_校订续译.tex",
+      "source_tex_sha256": "172f4da4df5d27a42b6d55d9578de87a431e17438c6c511bc63399a4070d625b",
+      "packaged_tex_path": "05_Dot/batches/053/EGA第五卷_泛截面光滑性条件_校订续译.tex",
+      "integration_treatment": "new_body",
+      "current_project_input": "continuations/v_dot_late.tex",
+      "original_progress_historical_only": null,
+      "extracted_engineering_files": [
+        "05_Dot/batches/053/AUDIT.txt",
+        "05_Dot/batches/053/EGA第五卷_泛截面光滑性条件_校订续译.tex",
+        "05_Dot/batches/053/PROGRESS.json",
+        "05_Dot/batches/053/README.txt",
+        "05_Dot/batches/053/build.sh",
+        "05_Dot/batches/053/build1.txt",
+        "05_Dot/batches/053/build2.txt"
+      ]
+    },
+    {
+      "order": 54,
+      "original_tex_name": "EGA第五卷_第15节推广计划结语_校订续译.tex",
+      "source_tex_sha256": "4714381ca38c99ddf8961f384c677fe3dae8d777c2db0834f26c747d18989b6c",
+      "packaged_tex_path": "05_Dot/batches/054/EGA第五卷_第15节推广计划结语_校订续译.tex",
+      "integration_treatment": "new_body",
+      "current_project_input": "continuations/v_dot_late.tex",
+      "original_progress_historical_only": null,
+      "extracted_engineering_files": [
+        "05_Dot/batches/054/AUDIT.txt",
+        "05_Dot/batches/054/EGA第五卷_第15节推广计划结语_校订续译.tex",
+        "05_Dot/batches/054/PROGRESS.json",
+        "05_Dot/batches/054/README.txt",
+        "05_Dot/batches/054/build.sh",
+        "05_Dot/batches/054/build1.txt",
+        "05_Dot/batches/054/build2.txt"
+      ]
+    },
+    {
+      "order": 55,
+      "original_tex_name": "EGA第五卷_第16节奇异零点定义_校订续译.tex",
+      "source_tex_sha256": "880fdb71fdab73b7f4fb7cb08395cfacf9a3b0ee2f722c748209f5e34e714ad4",
+      "packaged_tex_path": "05_Dot/batches/055/EGA第五卷_第16节奇异零点定义_校订续译.tex",
+      "integration_treatment": "same_text_collation",
+      "current_project_input": "text/v1_2.tex",
+      "original_progress_historical_only": null,
+      "extracted_engineering_files": [
+        "05_Dot/batches/055/AUDIT.txt",
+        "05_Dot/batches/055/EGA第五卷_第16节奇异零点定义_校订续译.tex",
+        "05_Dot/batches/055/PROGRESS.json",
+        "05_Dot/batches/055/README.txt",
+        "05_Dot/batches/055/SHA256SUMS.txt",
+        "05_Dot/batches/055/build.sh",
+        "05_Dot/batches/055/build1.txt",
+        "05_Dot/batches/055/build2.txt"
+      ]
+    },
+    {
+      "order": 56,
+      "original_tex_name": "EGA第五卷_第16节几何奇异零点_校订续译.tex",
+      "source_tex_sha256": "cbeb9dcf18feeadba8681bf2b7013e6e0b9c544a528ea5e05afee2ec90152ec4",
+      "packaged_tex_path": "05_Dot/batches/056/EGA第五卷_第16节几何奇异零点_校订续译.tex",
+      "integration_treatment": "same_text_collation",
+      "current_project_input": "text/v1_2.tex",
+      "original_progress_historical_only": null,
+      "extracted_engineering_files": [
+        "05_Dot/batches/056/AUDIT.txt",
+        "05_Dot/batches/056/EGA第五卷_第16节几何奇异零点_校订续译.tex",
+        "05_Dot/batches/056/PROGRESS.json",
+        "05_Dot/batches/056/README.txt",
+        "05_Dot/batches/056/SHA256SUMS.txt",
+        "05_Dot/batches/056/build.sh",
+        "05_Dot/batches/056/build1.txt",
+        "05_Dot/batches/056/build2.txt",
+        "05_Dot/batches/056/verify.py"
+      ]
+    }
+  ],
+  "archive_scope_note": "The total Dot ZIP also contains unrelated projects. They are archived intact but are not inserted into the EGA book or counted as EGA translation."
+}

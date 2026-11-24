@@ -1,0 +1,155 @@
+{
+  "check_time_utc": "2026-11-21T09:15:30.713590+00:00",
+  "package_root": "/workspace/scratch/a886fd56dd2f/release_20261121/EGA_20261121_Dot_handover",
+  "pass": true,
+  "scope": "Actual empty-directory restoration and independent comparison with each original ZIP member; file paths/bytes/SHA and Dot source preservation only. No source editing, TeX build, or mathematical proof review.",
+  "candidate_manifest_sha256": "613a21d35cc9b178e226f36c8f218399e0363a66d8dacd0212b88adead4269ee",
+  "restore_index_sha256": "0ba618f7d9b590fd93ac9b9a54e0f2158eeeee61a272301d5b837b2aaf4c5ab4",
+  "package_unchanged_during_check": true,
+  "initial_strict_verify": {
+    "pass": true,
+    "root": "/workspace/scratch/a886fd56dd2f/release_20261121/EGA_20261121_Dot_handover",
+    "strict": true,
+    "payload_files": 1661,
+    "payload_bytes": 565115004,
+    "manifest_sha256": "613a21d35cc9b178e226f36c8f218399e0363a66d8dacd0212b88adead4269ee",
+    "extra_files": [],
+    "scope": "file paths, sizes and SHA-256 only; not mathematical validation"
+  },
+  "final_strict_verify": {
+    "pass": true,
+    "root": "/workspace/scratch/a886fd56dd2f/release_20261121/EGA_20261121_Dot_handover",
+    "strict": true,
+    "payload_files": 1661,
+    "payload_bytes": 565115004,
+    "manifest_sha256": "613a21d35cc9b178e226f36c8f218399e0363a66d8dacd0212b88adead4269ee",
+    "extra_files": [],
+    "scope": "file paths, sizes and SHA-256 only; not mathematical validation"
+  },
+  "restored_versions": {
+    "v17": {
+      "pass": true,
+      "source_archive": "/workspace/scratch/a886fd56dd2f/recovered_20261121/baseline/EGA中文译校_第十七版_完整续作工程包.zip",
+      "archive_bytes": 493141776,
+      "archive_sha256": "f11fa64ad6c3632b09b7379abb99b01b9b72f84cbf65e730d1e74319585295e8",
+      "archive_matches_restore_index_metadata": true,
+      "source_zip_regular_members": 1827,
+      "restored_regular_files": 1827,
+      "byte_equal_members": 1827,
+      "sha_equal_members": 1827,
+      "restored_bytes": 547998859,
+      "path_sets_equal": true,
+      "missing": [],
+      "extra": [],
+      "problems": [],
+      "cli_result": {
+        "pass": true,
+        "version": "v17",
+        "restored_root": "/workspace/scratch/a886fd56dd2f/integration_20261121/restore_tests/v17/EGA_v17_handover",
+        "files": 1827,
+        "bytes": 547998859,
+        "all_restored_files_rehashed": true,
+        "original_archive_metadata": {
+          "file_name": "EGA中文译校_第十七版_完整续作工程包.zip",
+          "bytes": 493141776,
+          "sha256": "f11fa64ad6c3632b09b7379abb99b01b9b72f84cbf65e730d1e74319585295e8"
+        },
+        "archive_container_recreated": false,
+        "scope": "ordinary file paths and bytes only; no ZIP reconstruction or math validation"
+      },
+      "member_detail_file": "final_restore_members_v17.json"
+    },
+    "supplement_III": {
+      "pass": true,
+      "source_archive": "/workspace/scratch/a886fd56dd2f/recovered_20261121/latest/EGA中文译校_第十七版_第五卷增补第三辑_完整续作工程.zip",
+      "archive_bytes": 313603196,
+      "archive_sha256": "050be3e6625f0749205531c085aa8cc757432bc5a46bdcd003430c0e4a7b3b8d",
+      "archive_matches_restore_index_metadata": true,
+      "source_zip_regular_members": 753,
+      "restored_regular_files": 753,
+      "byte_equal_members": 753,
+      "sha_equal_members": 753,
+      "restored_bytes": 344168141,
+      "path_sets_equal": true,
+      "missing": [],
+      "extra": [],
+      "problems": [],
+      "cli_result": {
+        "pass": true,
+        "version": "supplement_III",
+        "restored_root": "/workspace/scratch/a886fd56dd2f/integration_20261121/restore_tests/supplement_III/EGA_v17_V_supplement_III",
+        "files": 753,
+        "bytes": 344168141,
+        "all_restored_files_rehashed": true,
+        "original_archive_metadata": {
+          "file_name": "EGA中文译校_第十七版_第五卷增补第三辑_完整续作工程.zip",
+          "bytes": 313603196,
+          "sha256": "050be3e6625f0749205531c085aa8cc757432bc5a46bdcd003430c0e4a7b3b8d"
+        },
+        "archive_container_recreated": false,
+        "scope": "ordinary file paths and bytes only; no ZIP reconstruction or math validation"
+      },
+      "member_detail_file": "final_restore_members_supplement_III.json"
+    },
+    "supplement_III_delta": {
+      "pass": true,
+      "source_archive": "/workspace/scratch/a886fd56dd2f/recovered_20261121/latest/EGA中文译校_第十七版_第五卷增补第三辑_增量包.zip",
+      "archive_bytes": 30152476,
+      "archive_sha256": "28de61871669e470d0d3d4e78269ee3742852418cfc563261486ee14b8979cae",
+      "archive_matches_restore_index_metadata": true,
+      "source_zip_regular_members": 40,
+      "restored_regular_files": 40,
+      "byte_equal_members": 40,
+      "sha_equal_members": 40,
+      "restored_bytes": 33175272,
+      "path_sets_equal": true,
+      "missing": [],
+      "extra": [],
+      "problems": [],
+      "cli_result": {
+        "pass": true,
+        "version": "supplement_III_delta",
+        "restored_root": "/workspace/scratch/a886fd56dd2f/integration_20261121/restore_tests/supplement_III_delta/EGA_v17_V_supplement_III_delta",
+        "files": 40,
+        "bytes": 33175272,
+        "all_restored_files_rehashed": true,
+        "original_archive_metadata": {
+          "file_name": "EGA中文译校_第十七版_第五卷增补第三辑_增量包.zip",
+          "bytes": 30152476,
+          "sha256": "28de61871669e470d0d3d4e78269ee3742852418cfc563261486ee14b8979cae"
+        },
+        "archive_container_recreated": false,
+        "scope": "ordinary file paths and bytes only; no ZIP reconstruction or math validation"
+      },
+      "member_detail_file": "final_restore_members_supplement_III_delta.json"
+    }
+  },
+  "combined_dot_index": {
+    "records": 75,
+    "unique_ids": 75,
+    "counts_by_series": {
+      "baseline56": 56,
+      "new_20261121": 19
+    },
+    "source_hash_pass": 75,
+    "source_equals_original_reference": 75,
+    "current_input_exists": 75,
+    "problems": [],
+    "detail": "final_dot_75_source_checks.json"
+  },
+  "old_dot_tree": {
+    "files": 364,
+    "byte_equal_files": 364,
+    "problems": [],
+    "detail": "final_old_Dot_364_checks.json"
+  },
+  "new_dot_archives": {
+    "files": 19,
+    "byte_equal_files": 19
+  },
+  "limitations": [
+    "The restore programs reproduce ordinary member paths and bytes, not original ZIP container bytes or filesystem timestamps/permissions.",
+    "The manifest hash identifies this tested candidate. If final packaging adds reports or changes the restore index, refresh and verify the final manifest; do not claim this old manifest hash is the new one.",
+    "A future-proof history map should not depend on mutable active TeX sources; root plans an immutable-content adjustment after this candidate check."
+  ]
+}

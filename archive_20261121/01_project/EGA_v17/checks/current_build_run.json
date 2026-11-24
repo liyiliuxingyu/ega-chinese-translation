@@ -1,0 +1,90 @@
+{
+  "executed": "bash build.sh --verify-single",
+  "working_directory_at_execution": "/workspace/scratch/a886fd56dd2f/work_20261121/project",
+  "exit_code": 0,
+  "targets": [
+    "main",
+    "report",
+    "book_single",
+    "audit_single"
+  ],
+  "xelatex_passes_per_target": 3,
+  "first_two_passes": "-no-pdf",
+  "all_pass_outputs_saved": [
+    {
+      "source": "main.pass1.log.txt",
+      "saved": "checks/current_build_passes/main.pass1.log.txt",
+      "bytes": 50802,
+      "sha256": "a353e189b284b4598ae77c03be666110afd40a46089046b70482dab25fbb00d9"
+    },
+    {
+      "source": "main.pass2.log.txt",
+      "saved": "checks/current_build_passes/main.pass2.log.txt",
+      "bytes": 40097,
+      "sha256": "c5f24546a5a00ca0e1cfce2062c301b5f8ce61b1b42c450fc97421ad31ae0447"
+    },
+    {
+      "source": "main.pass3.log.txt",
+      "saved": "checks/current_build_passes/main.pass3.log.txt",
+      "bytes": 40000,
+      "sha256": "f45ca7ce5ec040fbb20f2ad0d6120113b8b64fea8278f6fd5941e5811b0ffa40"
+    },
+    {
+      "source": "report.pass1.log.txt",
+      "saved": "checks/current_build_passes/report.pass1.log.txt",
+      "bytes": 23890,
+      "sha256": "00c797516c84b0819ba63dc6c3d45d8fa693119ea4aca9161af099c3817fc9ba"
+    },
+    {
+      "source": "report.pass2.log.txt",
+      "saved": "checks/current_build_passes/report.pass2.log.txt",
+      "bytes": 23726,
+      "sha256": "5868485fed529bc9c35fc018e884893f59652ad604359b227b45404e6a68e66e"
+    },
+    {
+      "source": "report.pass3.log.txt",
+      "saved": "checks/current_build_passes/report.pass3.log.txt",
+      "bytes": 23630,
+      "sha256": "39760f2fc9d538e296f6150bd0ba660ca1694191810b228e82adec04d025a759"
+    },
+    {
+      "source": "single_build/book_single.pass1.log.txt",
+      "saved": "checks/current_build_passes/book_single.pass1.log.txt",
+      "bytes": 48149,
+      "sha256": "0588358637b1328c9b0f805caa46ffb81c48e79466459dd20ed7d34d19afc4c6"
+    },
+    {
+      "source": "single_build/book_single.pass2.log.txt",
+      "saved": "checks/current_build_passes/book_single.pass2.log.txt",
+      "bytes": 37337,
+      "sha256": "d9bd56ba2b0feecffc707381dd32956353d7606686ba173c91f9e0081ae5302a"
+    },
+    {
+      "source": "single_build/book_single.pass3.log.txt",
+      "saved": "checks/current_build_passes/book_single.pass3.log.txt",
+      "bytes": 37240,
+      "sha256": "5696923e94377d687ffb05a4f37b65217f8d5f3fd6278a39c1b24225208bf57d"
+    },
+    {
+      "source": "single_build/audit_single.pass1.log.txt",
+      "saved": "checks/current_build_passes/audit_single.pass1.log.txt",
+      "bytes": 23322,
+      "sha256": "4b5cc7c4cae8a32181a4e2d8f0124f308da416571465d980cbea8d1bd06aee3c"
+    },
+    {
+      "source": "single_build/audit_single.pass2.log.txt",
+      "saved": "checks/current_build_passes/audit_single.pass2.log.txt",
+      "bytes": 23154,
+      "sha256": "9660c94304cbef78a6a48af5babfacd4c6a435d124b0854dc414c5720e362ff5"
+    },
+    {
+      "source": "single_build/audit_single.pass3.log.txt",
+      "saved": "checks/current_build_passes/audit_single.pass3.log.txt",
+      "bytes": 23058,
+      "sha256": "f0d130b2c4dcbd76afd2e9fb8a2f91a298c4afabfc79e7b0ab04177aac9fb314"
+    }
+  ],
+  "final_log_checks": "checks/current_build_log_summary.json",
+  "pdf_comparison": "checks/current_pdf_parity.json",
+  "note": "Actual execution this round; no mathematical text changed."
+}

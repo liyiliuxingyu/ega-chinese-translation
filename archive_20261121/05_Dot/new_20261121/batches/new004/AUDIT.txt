@@ -1,0 +1,3 @@
+实际核验：英译67与法文102扫描逐段对读；完整选段无省略，含手写单位变换补句内容。
+XeLaTeX双编译通过，4页。无error、overfull、missing character、undefined日志。4页渲染目检通过。
+未推进到随后Remark，未把数学释义冒充法文原句。

@@ -1,0 +1,1 @@
+独立续译，未合并主稿。范围为命题14.5和推论14.6，无原文证明。进度见PROGRESS.json。安装含ctex和Fandol的TeX Live后执行build.sh。

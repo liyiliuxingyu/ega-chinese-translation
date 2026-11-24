@@ -1,0 +1,137 @@
+\documentclass[openany,fontset=fandol]{ctexbook}
+\usepackage{amsmath,amssymb,amsthm,enumitem}
+\usepackage[unicode,hidelinks]{hyperref}
+\setlength{\emergencystretch}{2em}
+\raggedbottom
+\DeclareMathOperator{\Spec}{Spec}
+\DeclareMathOperator{\Supp}{Supp}
+\DeclareMathOperator{\Ass}{Ass}
+\DeclareMathOperator{\coprof}{coprof}
+\DeclareMathOperator{\depth}{depth}
+\newcommand{\OO}{\mathcal O}
+\newcommand{\FF}{\mathcal F}
+\newcommand{\GG}{\mathcal G}
+\newcommand{\calP}{\mathcal P}
+\newcommand{\tagitem}[2]{\par\medskip\noindent\textbf{#1\quad #2}\enspace}
+\begin{document}
+\title{代数几何基础第五卷预备笔记\\法文覆盖审计：关联点与纤维性质的开性}
+\author{第95批\quad 法、英、中文三方校订}
+\date{2026年11月23日}
+\maketitle
+
+\section*{范围与接续}
+逐段对读法文物理22页下部的备注5.5、23页和24页上部被划销的旧稿，
+以及英编稿物理17--18页的相应段。5.5--5.7及节末编写说明校毕，
+法24的第6节标题起待续。第三辑已有相应旧译；本批为待替换稿，未改动1158页合订本。
+出版对应、旧稿与数学补证另列。
+
+\section*{5（续）\quad Seidenberg 型定理}
+\tagitem{备注}{5.5}
+设 $\xi\in P^\vee$ 位于 $s\in S$ 上方，并假设 $\FF_s$ 没有嵌入的关联素循环。
+则 $\xi\in V$（记号见5.4），等价于 $\Supp\FF_{k(\xi)}$ 的任何不可约分支都不映入
+$H_\xi$。在这个判据中，可以把 $k(\xi)$ 换成它的任意扩域。\footnote{法稿将标题改成“备注”；其句法是“$\xi\in V$ 也意味着……”，说的是判据。英编稿的断句容易误读成仅由无嵌入循环便推出任意 $\xi\in V$。这里的超平面、支撑和截面必须一起换底。}
+
+刚才对 $\FF_s$ 所作的 $(S_1)$ 假设，例如在 $\FF_s$ 是 Cohen--Macaulay 模时就成立，
+若 $\FF$ 相对 $S$ 是 Cohen--Macaulay 模，当然也成立。若 $\FF_s$ 是
+Cohen--Macaulay 模，且 $\phi_\xi$ 为 $\FF_{k(\xi)}$-正则，
+则 $\GG_\xi$ 也是 Cohen--Macaulay 模。Cohen--Macaulay 性经域扩张保持；在局部，$\GG_\xi$ 是同为 Cohen--Macaulay 的
+$\FF_{k(\xi)}$ 模去 $\phi_\xi\FF_{k(\xi)}$ 所得。
+同样的说明也可以（而且应当）在前文作局部表述，以刻画 $U$ 中的点，而非 $V$ 中的点。\footnote{法第23页原写 $G_s,F_{k(s)}$，并在“$\phi$ 正则”处手改为“必须为正则”。当所说截面由 $\xi$ 给定时，其模的底域是 $k(\xi)$，正文统一作 $\GG_\xi,\FF_{k(\xi)}$。仅有 $(S_1)$ 或仅有 Cohen--Macaulay 性均不能省掉截面正则判据。}
+
+现在用正式 EGA IV 的12.1.1和12.1.6得到以下结论。\footnote{法稿第二项原编号为12.1.4。英编者注明可能指 EGA IV，并指出12.1.4核对不上。正式 EGA IV 第三部分的12.1.4确实没有四项；正式对应关系见下文。}
+
+\tagitem{定理}{5.6}
+假设 $\FF$ 有限表示且相对 $S$ 平坦。
+取 $\calP$ 为12.1.1中(i)--(viii)的性质之一，或在 $\FF=\OO_X$ 的情形，
+取为正式印本12.1.6中(i)--(iv)之一。
+设 $T=X_{P^\vee}$，令 $U_{\calP}$ 为 $T$ 中满足下列条件的点 $x$ 的集合：
+记 $\xi$ 为 $x$ 在 $P^\vee$ 中的像，
+要求 $\phi_\xi$ 在 $x$ 处为 $\FF_{k(\xi)}$-正则，且在截面上要求
+$\GG_\xi$（分别为 $Y_\xi$）在 $x$ 处满足 $\calP$。
+在截面外，后一条件没有要检验的点。
+则 $U_{\calP}$ 为开集，且 $\GG$ 在 $Y\cap U_{\calP}$ 上相对 $P^\vee$ 平坦，从而相对 $S$ 平坦。\footnote{法、英编稿正文均写“相对 $S$”。这里明确更强的相对 $P^\vee$ 平坦性来自5.3(a)，再由射影丛平坦和复合得原断言。若只在 $Y$ 上定义良点，则得到 $Y$ 中的开集；若要求 $T$ 中的开集，须在截面外不附加纤维性质限制。}
+
+\begin{proof}
+按定义 $U_{\calP}\subseteq U$，其中 $U$ 为5.3(a)的纤维正则开集。
+在 $Y\cap U\to P^\vee$ 上，对截面余核 $\GG|_{Y\cap U}$ 应用第12段的纤维开性定理；
+在概形版本中用 $\GG=\OO_Y$，同理。截面外为自动满足的部分，故得所断言的开性。
+平坦性由5.3(a)限制得到。\footnote{法稿明写对 $U\to P^\vee$ 和 $\FF_{P^\vee}|_U$ 应用第12段，但要判定的是截面纤维而非环境纤维，须以 $Y\cap U$ 及其上的余核为作用对象。}
+\end{proof}
+
+\tagitem{推论}{5.7}
+设 $\FF$ 有限表示、相对 $S$ 平坦，且 $\Supp\FF$ 在 $S$ 上固有
+（例如 $X$ 在 $S$ 上固有）。令 $V_{\calP}$ 为这样一些 $\xi\in P^\vee$ 的集合：
+$\GG_\xi$（分别为 $Y_\xi$）满足 $\calP$，且 $\phi_\xi$ 为 $\FF_{k(\xi)}$-正则。
+于是 $V_{\calP}$ 为开集；此外，即使不假定平坦或固有，仍有可构造性。\footnote{法第23页明确写 $Y_\xi$ 和 $\phi_\xi$；英编稿跨页漏下标、漏主语。有限表示的假设仍保留；“可构造”在任意底下按局部意义理解。并非断言任意未列出的性质都可构造。}
+
+\noindent\textbf{作者的编写说明。}
+就表述而言，似乎不能只让5.6指向另一个分册中列举的条件，而应明确列出
+所考虑的各项性质(i)、(ii)、……。
+另外还应提到（也许放在5.1中）：几何正规的情形（当然指 $S=\Spec k$）
+出自 Seidenberg。\footnote{法稿手写的“也许”直接修饰放到5.1的建议；不能因此扩大或缩小归属。可核 Seidenberg 的1950年论文
+\href{https://doi.org/10.1090/S0002-9947-1950-0037548-0}{The Hyperplane Sections of Normal Varieties}；
+下述划销旧文另外保留作者自己未核定其适用范围的说明。}
+
+\section*{正式出版对应与译校补证}
+\paragraph{5.6的引用。}
+\href{https://www.numdam.org/item/PMIHES_1966__28__5_0/}{正式 EGA IV 第三部分}
+印刷页174的12.1.1确有八项，依次是：过该点的关联素循环的维数属于指定有限集、
+这些维数全为指定值、没有过该点的嵌入关联素循环、等维且满足 $(S_k)$、
+$\coprof$ 不超过指定值、Cohen--Macaulay、几何约化、几何逐点整。
+最后一项是纤维的局部性质，不是整条纤维几何不可约。
+印刷页177的12.1.4只是关于纤维维数上半连续的备注。
+印刷页178的12.1.6才有与本处结构吻合的四项：
+$(S_k)$；几何 $(R_k)$ 且等维且无过该点的嵌入关联素循环；
+几何正则（即光滑）；几何正规。
+它们适用于平坦且局部有限表示的概形态射。
+这是正式版本中的数学对应，不宣称已查明手稿当时的编号沿革。
+
+\paragraph{5.5的等价和 Cohen--Macaulay 商。}
+在诺特纤维上，乘法不单射当且仅当方程落入某个关联素理想。
+由域扩张下的关联点公式，扩域后的关联点是原关联点的原像闭包的泛点：
+底变换的相应纤维是域张量积的局部化，Cohen--Macaulay，故无嵌入关联点。
+所以无嵌入时只需查看支撑各不可约分支的泛点。乘法单射本身也可由扩域的
+忠实平坦性保持和反映。比如 $\FF=i_*\OO_D$，
+其中 $D$ 为 $\mathbf P^2$ 中的一条直线，选 $H_\xi=D$ 时截面乘法为零，
+虽然 $\FF$ 没有嵌入关联点。若 $M$ 是非零 Cohen--Macaulay 局部模、$a$ 是
+极大理想中的 $M$-正则元，则 $\depth(M/aM)=\depth M-1$ 且
+$\dim(M/aM)=\dim M-1$，所以商仍 Cohen--Macaulay；截面外的商为零。
+参见 \href{https://stacks.math.columbia.edu/tag/0346}{Stacks 0346}、
+\href{https://stacks.math.columbia.edu/tag/05DC}{05DC} 及
+\href{https://stacks.math.columbia.edu/tag/00N2}{00N2}。
+
+\paragraph{5.7中为何只需支撑固有。}
+记 $p:T\to P^\vee$ 为投影，$Z=(\Supp\FF)\times_S P^\vee$。
+有限型模的支撑随换底拉回。截面正则性的坏点只出现在 $Z$ 内；
+截面上的模性质也只需看其支撑，在概形版本 $\FF=\OO_X$ 时则 $Z=T$。
+因此 $V_{\calP}=P^\vee\setminus p(B)$，其中 $B$ 是 $Z$ 内不满足正则性
+或不满足相应截面性质的点集。
+在平坦假设下，5.3(a)使正则处开；在该开集与 $Y$ 的交内，
+上述12.1.1或12.1.6给出性质开性，故 $B$ 在 $Z$ 中闭。
+由于 $Z\to P^\vee$ 固有，$p(B)$ 闭。
+不假定平坦时，用5.4补证中正则处的局部可构造性，以及正式 EGA IV 第9段中
+这些纤维性质的局部可构造性，再沿有限表示的 $p$ 用 Chevalley 定理即可。
+这里对坏集使用 $T$ 的投影；单用 $h:Y\to P^\vee$ 会漏写正则条件的检验范围。
+
+\clearpage
+\section*{法第24页上部：划销的旧稿}
+以下独立存为校记，不混入第5节正稿。开头是前句的残尾：对
+$Y\to P^\vee$ 应用15.2.2，便“近乎直接”得到某结论，所指的完整旧句未复原。
+接下来作者问：在一个陈述里混合可对模表述与不可对模表述的性质，
+是否使陈述实际上难以读懂？还说旧稿的两条结论与第2、3、4节
+其他推导完全独立；应另立一节，只问 $E$ 是否开，不谈泛超平面截面的性质。
+建议题为“变动超平面截面的 Seidenberg 型定理”。
+
+又写道：几何正规情形（当然是在域上）出自 Seidenberg。
+作者说自己尚未读他的论文，不知道他是从正规还是从光滑的簇 $X$ 开始；
+光滑的情形在技术上容易得多，只用旧4.6而不依赖较难的15.2.2。
+若 Seidenberg 并未局限于光滑情形，作者还想知道他怎样处理。
+若将本节分作两部分，第一部分可题为
+“变动超平面截面的研究：充分一般的超平面截面”。\footnote{法稿该整块画大叉删去，英编稿未编入。上文按可读内容译出，旧编号、首行残尾和手写重叠不强行归入新编号，不把作者的历史疑问当作论文结论。法22也有两处划销旁记，不作正稿。}
+
+\medskip
+\noindent\textbf{接续点。}
+法物理24页下部“第6节：任意超平面截面的连通性”，对读英物理18页、法25后续。
+法24命题6.1起笔处有手写 $X$ 固有，下一批须与法25的续句、原15.6.3共同核对；
+还要区分泛截面和全部截面所需条件。正式出版 EGA IV.1 仍从物理221页提要与223页定义（1.1.1）另线接续。
+\end{document}

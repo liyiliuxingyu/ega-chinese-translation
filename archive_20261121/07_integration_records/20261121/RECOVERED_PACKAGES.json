@@ -1,0 +1,25 @@
+{
+  "archives": [
+    {
+      "version": "v17",
+      "file_name": "EGA中文译校_第十七版_完整续作工程包.zip",
+      "bytes": 493141776,
+      "sha256": "f11fa64ad6c3632b09b7379abb99b01b9b72f84cbf65e730d1e74319585295e8",
+      "ordinary_files_preserved": 1827
+    },
+    {
+      "version": "supplement_III",
+      "file_name": "EGA中文译校_第十七版_第五卷增补第三辑_完整续作工程.zip",
+      "bytes": 313603196,
+      "sha256": "050be3e6625f0749205531c085aa8cc757432bc5a46bdcd003430c0e4a7b3b8d",
+      "ordinary_files_preserved": 753
+    },
+    {
+      "version": "supplement_III_delta",
+      "file_name": "EGA中文译校_第十七版_第五卷增补第三辑_增量包.zip",
+      "bytes": 30152476,
+      "sha256": "28de61871669e470d0d3d4e78269ee3742852418cfc563261486ee14b8979cae",
+      "ordinary_files_preserved": 40
+    }
+  ]
+}

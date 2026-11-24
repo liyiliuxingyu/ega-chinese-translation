@@ -1,0 +1,128 @@
+This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2025/dev/Debian) (preloaded format=xelatex)
+ restricted \write18 enabled.
+entering extended mode
+(./EGA第五卷_行列式线丛与判别式_校订续译.tex
+LaTeX2e <2024-11-01> patch level 2
+L3 programming layer <2025-01-18>
+
+(/workspace/scratch/caf5cdb69fd8/schoolexam_rUszjZ/ex/A3_math_exam/vendor/texmf
+/tex/latex/ctex/ctexbook.cls
+(/workspace/scratch/caf5cdb69fd8/schoolexam_rUszjZ/ex/A3_math_exam/vendor/texmf
+/tex/latex/ctex/config/ctexbackend.cfg)
+(/usr/share/texlive/texmf-dist/tex/latex/l3kernel/expl3.sty
+(/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-xetex.def))
+Document Class: ctexbook 2022/07/14 v2.5.10 Chinese adapter for class book (CTE
+X)
+
+(/workspace/scratch/caf5cdb69fd8/schoolexam_rUszjZ/ex/A3_math_exam/vendor/texmf
+/tex/latex/ctex/ctexhook.sty)
+(/workspace/scratch/caf5cdb69fd8/schoolexam_rUszjZ/ex/A3_math_exam/vendor/texmf
+/tex/latex/ctex/ctexpatch.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/base/fix-cm.sty
+(/usr/share/texlive/texmf-dist/tex/latex/base/ts1enc.def))
+(/workspace/scratch/caf5cdb69fd8/schoolexam_rUszjZ/ex/A3_math_exam/vendor/texmf
+/tex/latex/ctex/config/ctexopts.cfg)
+(/usr/share/texlive/texmf-dist/tex/latex/base/book.cls
+Document Class: book 2024/06/29 v1.4n Standard LaTeX document class
+(/usr/share/texlive/texmf-dist/tex/latex/base/bk10.cloFontconfig error: No writable cache directories
+Fontconfig error: No writable cache directories
+Fontconfig error: No writable cache directories
+Fontconfig error: No writable cache directories
+Fontconfig error: No writable cache directories
+Fontconfig error: No writable cache directories
+Fontconfig error: No writable cache directories
+Fontconfig error: No writable cache directories
+Fontconfig error: No writable cache directories
+Fontconfig error: No writable cache directories
+Fontconfig error: No writable cache directories
+Fontconfig error: No writable cache directories
+Fontconfig error: No writable cache directories
+Fontconfig error: No writable cache directories
+Fontconfig error: No writable cache directories
+Fontconfig error: No writable cache directories
+Fontconfig error: No writable cache directories
+Fontconfig error: No writable cache directories
+Fontconfig error: No writable cache directories
+Fontconfig error: No writable cache directories
+Fontconfig error: No writable cache directories
+Fontconfig error: No writable cache directories
+Fontconfig error: No writable cache directories
+Fontconfig error: No writable cache directories
+Fontconfig error: No writable cache directories
+Fontconfig error: No writable cache directories
+Fontconfig error: No writable cache directories
+Fontconfig error: No writable cache directories
+Fontconfig error: No writable cache directories
+Fontconfig error: No writable cache directories
+))
+(/workspace/scratch/caf5cdb69fd8/schoolexam_rUszjZ/ex/A3_math_exam/vendor/texmf
+/tex/latex/ctex/engine/ctex-engine-xetex.def
+(/workspace/scratch/caf5cdb69fd8/schoolexam_rUszjZ/ex/A3_math_exam/vendor/texmf
+/tex/xelatex/xecjk/xeCJK.sty
+(/usr/share/texlive/texmf-dist/tex/latex/l3packages/xtemplate/xtemplate.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/fontspec/fontspec.sty
+(/usr/share/texlive/texmf-dist/tex/latex/l3packages/xparse/xparse.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/fontspec/fontspec-xetex.sty
+(/usr/share/texlive/texmf-dist/tex/latex/base/fontenc.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/fontspec/fontspec.cfg)))
+(/workspace/scratch/caf5cdb69fd8/schoolexam_rUszjZ/ex/A3_math_exam/vendor/texmf
+/tex/xelatex/xecjk/config/xeCJK.cfg)))
+(/workspace/scratch/caf5cdb69fd8/schoolexam_rUszjZ/ex/A3_math_exam/vendor/texmf
+/tex/latex/zhnumber/zhnumber.sty
+(/workspace/scratch/caf5cdb69fd8/schoolexam_rUszjZ/ex/A3_math_exam/vendor/texmf
+/tex/latex/zhnumber/config/zhnumber-utf8.cfg))
+(/workspace/scratch/caf5cdb69fd8/schoolexam_rUszjZ/ex/A3_math_exam/vendor/texmf
+/tex/latex/ctex/scheme/ctex-scheme-chinese-book.def
+(/workspace/scratch/caf5cdb69fd8/schoolexam_rUszjZ/ex/A3_math_exam/vendor/texmf
+/tex/latex/ctex/config/ctex-name-utf8.cfg))
+(/workspace/scratch/caf5cdb69fd8/schoolexam_rUszjZ/ex/A3_math_exam/vendor/texmf
+/tex/latex/ctex/ctex-c5size.clo)
+(/workspace/scratch/caf5cdb69fd8/schoolexam_rUszjZ/ex/A3_math_exam/vendor/texmf
+/tex/latex/ctex/fontset/ctex-fontset-fandol.def))
+(/workspace/scratch/caf5cdb69fd8/schoolexam_rUszjZ/ex/A3_math_exam/vendor/texmf
+/tex/latex/ctex/config/ctex.cfg)
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
+For additional information on amsmath, use the `?' option.
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amstext.sty
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amssymb.sty
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amsfonts.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/hyperref.sty
+(/usr/share/texlive/texmf-dist/tex/generic/iftex/iftex.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/kvsetkeys/kvsetkeys.sty)
+(/usr/share/texlive/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty)
+(/usr/share/texlive/texmf-dist/tex/generic/pdfescape/pdfescape.sty
+(/usr/share/texlive/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty)
+(/usr/share/texlive/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty
+(/usr/share/texlive/texmf-dist/tex/generic/infwarerr/infwarerr.sty)))
+(/usr/share/texlive/texmf-dist/tex/latex/hycolor/hycolor.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
+(/usr/share/texlive/texmf-dist/tex/latex/refcount/refcount.sty)
+(/usr/share/texlive/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
+(/usr/share/texlive/texmf-dist/tex/latex/kvoptions/kvoptions.sty)))
+(/usr/share/texlive/texmf-dist/tex/latex/etoolbox/etoolbox.sty)
+(/usr/share/texlive/texmf-dist/tex/generic/stringenc/stringenc.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/pd1enc.def)
+(/usr/share/texlive/texmf-dist/tex/generic/intcalc/intcalc.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/puenc.def)
+(/usr/share/texlive/texmf-dist/tex/latex/url/url.sty)
+(/usr/share/texlive/texmf-dist/tex/generic/bitset/bitset.sty
+(/usr/share/texlive/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/base/atbegshi-ltx.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/hxetex.def
+(/usr/share/texlive/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
+(/usr/share/texlive/texmf-dist/tex/latex/base/atveryend-ltx.sty)
+(/usr/share/texlive/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty)))
+(./EGA第五卷_行列式线丛与判别式_校订续译.aux) (./EGA第五卷_行列式线丛与判别式_校订续译.out)
+(./EGA第五卷_行列式线丛与判别式_校订续译.out)
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd)
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd)
+[1]
+[2]
+[3] (./EGA第五卷_行列式线丛与判别式_校订续译.aux) )
+(see the transcript file for additional information)
+Output written on EGA第五卷_行列式线丛与判别式_校订续译.pdf (3 pages).
+Transcript written on EGA第五卷_行列式线丛与判别式_校订续译.log.

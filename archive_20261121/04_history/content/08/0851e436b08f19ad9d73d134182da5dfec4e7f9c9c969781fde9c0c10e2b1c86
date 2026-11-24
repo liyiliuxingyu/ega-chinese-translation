@@ -1,0 +1,6 @@
+\input{/workspace/scratch/a886fd56dd2f/unpacked/v16/EGA_内容顺序合订第十六版/preamble.tex}
+\begin{document}
+\mainmatter
+\renewcommand{\newscope}{V-H}
+\input{/workspace/scratch/a886fd56dd2f/integration/middle/report_middle.tex}
+\end{document}

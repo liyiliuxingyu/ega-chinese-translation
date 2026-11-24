@@ -1,0 +1,5 @@
+# EGA中文译校·第十七版完整续作工程
+
+从00_START_HERE/START_HERE.md开始。当前合订本1130页、累计核查报告283页。
+“完整续作工程”指本次核验后封包的工程与资料完整，不表示所有原著译完。
+收包先运行python3 verify_package.py；编译入口BUILD_ALL.sh；新对话提示在00_START_HERE/NEW_CHAT_PROMPT.txt。

@@ -1,0 +1,3545 @@
+{
+  "method": "逐页按顺序的嵌入图像SHA256与标准化抽取文本匹配；不比较页面位置、裁剪框或所有绘图指令，不构成本轮目视版面复核。",
+  "full_sources": {
+    "french": {
+      "path_from_old_package": "03_sources/EGA5_francais.pdf",
+      "sha256": "24cf8204184b58b18a46e5f63ecc36d6e791b3c8c96a09daac93de96ebd8e830",
+      "pages": 171
+    },
+    "english": {
+      "path_from_old_package": "03_sources/EGAVaiello.pdf",
+      "sha256": "23a20ef32fd16a1bd623c0c08ac080d04fc94f248de12133b713a19d6b0330d9",
+      "pages": 112
+    },
+    "published_iv3": {
+      "path_from_old_package": "03_sources/EGAIV.3.pdf",
+      "sha256": "509ff2bcbadd26fbc7566e6fcd79406eefbe5a8dfc8c984f4703c51f8d7e420f",
+      "pages": 254
+    }
+  },
+  "records": [
+    {
+      "id": "batch069",
+      "pdfs": [
+        {
+          "path": "EGA第五卷_161至163_光滑二次型.pdf",
+          "pages": 4,
+          "sha256": "4a1d3b89759f10e30fb77575fc825dd73d9e1b38e269eac7655a400a9767700a",
+          "role": "main_translation",
+          "encrypted": false,
+          "extractable_text_characters": 2179,
+          "has_extractable_chinese": true
+        },
+        {
+          "path": "法文扫描_物理161及162页.pdf",
+          "pages": 2,
+          "sha256": "d3849fe30b14a95c457ee5d16513bf96fbe605890cd157bbc36cc7dbe8810540",
+          "role": "source_extract",
+          "encrypted": false,
+          "source": "french",
+          "matched_physical_pages": [
+            [
+              161
+            ],
+            [
+              162
+            ]
+          ],
+          "all_pages_unique_match": true
+        },
+        {
+          "path": "英译底本.pdf",
+          "pages": 112,
+          "sha256": "23a20ef32fd16a1bd623c0c08ac080d04fc94f248de12133b713a19d6b0330d9",
+          "role": "full_source_copy",
+          "encrypted": false,
+          "source": "english",
+          "matched_physical_pages": [
+            [
+              1
+            ],
+            [
+              2
+            ],
+            [
+              3
+            ],
+            [
+              4
+            ],
+            [
+              5
+            ],
+            [
+              6
+            ],
+            [
+              7
+            ],
+            [
+              8
+            ],
+            [
+              9
+            ],
+            [
+              10
+            ],
+            [
+              11
+            ],
+            [
+              12
+            ],
+            [
+              13
+            ],
+            [
+              14
+            ],
+            [
+              15
+            ],
+            [
+              16
+            ],
+            [
+              17
+            ],
+            [
+              18
+            ],
+            [
+              19
+            ],
+            [
+              20
+            ],
+            [
+              21
+            ],
+            [
+              22
+            ],
+            [
+              23
+            ],
+            [
+              24
+            ],
+            [
+              25
+            ],
+            [
+              26
+            ],
+            [
+              27
+            ],
+            [
+              28
+            ],
+            [
+              29
+            ],
+            [
+              30
+            ],
+            [
+              31
+            ],
+            [
+              32
+            ],
+            [
+              33
+            ],
+            [
+              34
+            ],
+            [
+              35
+            ],
+            [
+              36
+            ],
+            [
+              37
+            ],
+            [
+              38
+            ],
+            [
+              39
+            ],
+            [
+              40
+            ],
+            [
+              41
+            ],
+            [
+              42
+            ],
+            [
+              43
+            ],
+            [
+              44
+            ],
+            [
+              45
+            ],
+            [
+              46
+            ],
+            [
+              47
+            ],
+            [
+              48
+            ],
+            [
+              49
+            ],
+            [
+              50
+            ],
+            [
+              51
+            ],
+            [
+              52
+            ],
+            [
+              53
+            ],
+            [
+              54
+            ],
+            [
+              55
+            ],
+            [
+              56
+            ],
+            [
+              57
+            ],
+            [
+              58
+            ],
+            [
+              59
+            ],
+            [
+              60
+            ],
+            [
+              61
+            ],
+            [
+              62
+            ],
+            [
+              63
+            ],
+            [
+              64
+            ],
+            [
+              65
+            ],
+            [
+              66
+            ],
+            [
+              67
+            ],
+            [
+              68
+            ],
+            [
+              69
+            ],
+            [
+              70
+            ],
+            [
+              71
+            ],
+            [
+              72
+            ],
+            [
+              73
+            ],
+            [
+              74
+            ],
+            [
+              75
+            ],
+            [
+              76
+            ],
+            [
+              77
+            ],
+            [
+              78
+            ],
+            [
+              79
+            ],
+            [
+              80
+            ],
+            [
+              81
+            ],
+            [
+              82
+            ],
+            [
+              83
+            ],
+            [
+              84
+            ],
+            [
+              85
+            ],
+            [
+              86
+            ],
+            [
+              87
+            ],
+            [
+              88
+            ],
+            [
+              89
+            ],
+            [
+              90
+            ],
+            [
+              91
+            ],
+            [
+              92
+            ],
+            [
+              93
+            ],
+            [
+              94
+            ],
+            [
+              95
+            ],
+            [
+              96
+            ],
+            [
+              97
+            ],
+            [
+              98
+            ],
+            [
+              99
+            ],
+            [
+              100
+            ],
+            [
+              101
+            ],
+            [
+              102
+            ],
+            [
+              103
+            ],
+            [
+              104
+            ],
+            [
+              105
+            ],
+            [
+              106
+            ],
+            [
+              107
+            ],
+            [
+              108
+            ],
+            [
+              109
+            ],
+            [
+              110
+            ],
+            [
+              111
+            ],
+            [
+              112
+            ]
+          ],
+          "all_pages_unique_match": true
+        }
+      ]
+    },
+    {
+      "id": "batch070",
+      "pdfs": [
+        {
+          "path": "EGA第五卷_光滑二次型16.4至16.8_校正判别式.pdf",
+          "pages": 5,
+          "sha256": "a5724dde631f435b32ad808e2606d28c49d227c669e48d7b84f1e73393cb3e99",
+          "role": "main_translation",
+          "encrypted": false,
+          "extractable_text_characters": 2866,
+          "has_extractable_chinese": true
+        },
+        {
+          "path": "法文扫描_物理162至164页.pdf",
+          "pages": 3,
+          "sha256": "cd27ddd5af4b1a78f9ac5417b07302bbb7842ce21bd142b7de515384823e8ded",
+          "role": "source_extract",
+          "encrypted": false,
+          "source": "french",
+          "matched_physical_pages": [
+            [
+              162
+            ],
+            [
+              163
+            ],
+            [
+              164
+            ]
+          ],
+          "all_pages_unique_match": true
+        },
+        {
+          "path": "英译底本.pdf",
+          "pages": 112,
+          "sha256": "23a20ef32fd16a1bd623c0c08ac080d04fc94f248de12133b713a19d6b0330d9",
+          "role": "full_source_copy",
+          "encrypted": false,
+          "source": "english",
+          "matched_physical_pages": [
+            [
+              1
+            ],
+            [
+              2
+            ],
+            [
+              3
+            ],
+            [
+              4
+            ],
+            [
+              5
+            ],
+            [
+              6
+            ],
+            [
+              7
+            ],
+            [
+              8
+            ],
+            [
+              9
+            ],
+            [
+              10
+            ],
+            [
+              11
+            ],
+            [
+              12
+            ],
+            [
+              13
+            ],
+            [
+              14
+            ],
+            [
+              15
+            ],
+            [
+              16
+            ],
+            [
+              17
+            ],
+            [
+              18
+            ],
+            [
+              19
+            ],
+            [
+              20
+            ],
+            [
+              21
+            ],
+            [
+              22
+            ],
+            [
+              23
+            ],
+            [
+              24
+            ],
+            [
+              25
+            ],
+            [
+              26
+            ],
+            [
+              27
+            ],
+            [
+              28
+            ],
+            [
+              29
+            ],
+            [
+              30
+            ],
+            [
+              31
+            ],
+            [
+              32
+            ],
+            [
+              33
+            ],
+            [
+              34
+            ],
+            [
+              35
+            ],
+            [
+              36
+            ],
+            [
+              37
+            ],
+            [
+              38
+            ],
+            [
+              39
+            ],
+            [
+              40
+            ],
+            [
+              41
+            ],
+            [
+              42
+            ],
+            [
+              43
+            ],
+            [
+              44
+            ],
+            [
+              45
+            ],
+            [
+              46
+            ],
+            [
+              47
+            ],
+            [
+              48
+            ],
+            [
+              49
+            ],
+            [
+              50
+            ],
+            [
+              51
+            ],
+            [
+              52
+            ],
+            [
+              53
+            ],
+            [
+              54
+            ],
+            [
+              55
+            ],
+            [
+              56
+            ],
+            [
+              57
+            ],
+            [
+              58
+            ],
+            [
+              59
+            ],
+            [
+              60
+            ],
+            [
+              61
+            ],
+            [
+              62
+            ],
+            [
+              63
+            ],
+            [
+              64
+            ],
+            [
+              65
+            ],
+            [
+              66
+            ],
+            [
+              67
+            ],
+            [
+              68
+            ],
+            [
+              69
+            ],
+            [
+              70
+            ],
+            [
+              71
+            ],
+            [
+              72
+            ],
+            [
+              73
+            ],
+            [
+              74
+            ],
+            [
+              75
+            ],
+            [
+              76
+            ],
+            [
+              77
+            ],
+            [
+              78
+            ],
+            [
+              79
+            ],
+            [
+              80
+            ],
+            [
+              81
+            ],
+            [
+              82
+            ],
+            [
+              83
+            ],
+            [
+              84
+            ],
+            [
+              85
+            ],
+            [
+              86
+            ],
+            [
+              87
+            ],
+            [
+              88
+            ],
+            [
+              89
+            ],
+            [
+              90
+            ],
+            [
+              91
+            ],
+            [
+              92
+            ],
+            [
+              93
+            ],
+            [
+              94
+            ],
+            [
+              95
+            ],
+            [
+              96
+            ],
+            [
+              97
+            ],
+            [
+              98
+            ],
+            [
+              99
+            ],
+            [
+              100
+            ],
+            [
+              101
+            ],
+            [
+              102
+            ],
+            [
+              103
+            ],
+            [
+              104
+            ],
+            [
+              105
+            ],
+            [
+              106
+            ],
+            [
+              107
+            ],
+            [
+              108
+            ],
+            [
+              109
+            ],
+            [
+              110
+            ],
+            [
+              111
+            ],
+            [
+              112
+            ]
+          ],
+          "all_pages_unique_match": true
+        }
+      ]
+    },
+    {
+      "id": "batch071",
+      "pdfs": [
+        {
+          "path": "EGA第五卷_定理16.9_光滑二次型的判据.pdf",
+          "pages": 6,
+          "sha256": "6a9eb0ba960d7b14d630665909e0521a922d6d10050923e3e358d682c4f4a2e0",
+          "role": "main_translation",
+          "encrypted": false,
+          "extractable_text_characters": 3879,
+          "has_extractable_chinese": true
+        },
+        {
+          "path": "法文扫描_物理164至168页.pdf",
+          "pages": 5,
+          "sha256": "17157316a94d9efc43c2cc5af3e80cfd3c023785ec6b71dd8e7fbb7f58571b9d",
+          "role": "source_extract",
+          "encrypted": false,
+          "source": "french",
+          "matched_physical_pages": [
+            [
+              164
+            ],
+            [
+              165
+            ],
+            [
+              166
+            ],
+            [
+              167
+            ],
+            [
+              168
+            ]
+          ],
+          "all_pages_unique_match": true
+        },
+        {
+          "path": "英译底本.pdf",
+          "pages": 112,
+          "sha256": "23a20ef32fd16a1bd623c0c08ac080d04fc94f248de12133b713a19d6b0330d9",
+          "role": "full_source_copy",
+          "encrypted": false,
+          "source": "english",
+          "matched_physical_pages": [
+            [
+              1
+            ],
+            [
+              2
+            ],
+            [
+              3
+            ],
+            [
+              4
+            ],
+            [
+              5
+            ],
+            [
+              6
+            ],
+            [
+              7
+            ],
+            [
+              8
+            ],
+            [
+              9
+            ],
+            [
+              10
+            ],
+            [
+              11
+            ],
+            [
+              12
+            ],
+            [
+              13
+            ],
+            [
+              14
+            ],
+            [
+              15
+            ],
+            [
+              16
+            ],
+            [
+              17
+            ],
+            [
+              18
+            ],
+            [
+              19
+            ],
+            [
+              20
+            ],
+            [
+              21
+            ],
+            [
+              22
+            ],
+            [
+              23
+            ],
+            [
+              24
+            ],
+            [
+              25
+            ],
+            [
+              26
+            ],
+            [
+              27
+            ],
+            [
+              28
+            ],
+            [
+              29
+            ],
+            [
+              30
+            ],
+            [
+              31
+            ],
+            [
+              32
+            ],
+            [
+              33
+            ],
+            [
+              34
+            ],
+            [
+              35
+            ],
+            [
+              36
+            ],
+            [
+              37
+            ],
+            [
+              38
+            ],
+            [
+              39
+            ],
+            [
+              40
+            ],
+            [
+              41
+            ],
+            [
+              42
+            ],
+            [
+              43
+            ],
+            [
+              44
+            ],
+            [
+              45
+            ],
+            [
+              46
+            ],
+            [
+              47
+            ],
+            [
+              48
+            ],
+            [
+              49
+            ],
+            [
+              50
+            ],
+            [
+              51
+            ],
+            [
+              52
+            ],
+            [
+              53
+            ],
+            [
+              54
+            ],
+            [
+              55
+            ],
+            [
+              56
+            ],
+            [
+              57
+            ],
+            [
+              58
+            ],
+            [
+              59
+            ],
+            [
+              60
+            ],
+            [
+              61
+            ],
+            [
+              62
+            ],
+            [
+              63
+            ],
+            [
+              64
+            ],
+            [
+              65
+            ],
+            [
+              66
+            ],
+            [
+              67
+            ],
+            [
+              68
+            ],
+            [
+              69
+            ],
+            [
+              70
+            ],
+            [
+              71
+            ],
+            [
+              72
+            ],
+            [
+              73
+            ],
+            [
+              74
+            ],
+            [
+              75
+            ],
+            [
+              76
+            ],
+            [
+              77
+            ],
+            [
+              78
+            ],
+            [
+              79
+            ],
+            [
+              80
+            ],
+            [
+              81
+            ],
+            [
+              82
+            ],
+            [
+              83
+            ],
+            [
+              84
+            ],
+            [
+              85
+            ],
+            [
+              86
+            ],
+            [
+              87
+            ],
+            [
+              88
+            ],
+            [
+              89
+            ],
+            [
+              90
+            ],
+            [
+              91
+            ],
+            [
+              92
+            ],
+            [
+              93
+            ],
+            [
+              94
+            ],
+            [
+              95
+            ],
+            [
+              96
+            ],
+            [
+              97
+            ],
+            [
+              98
+            ],
+            [
+              99
+            ],
+            [
+              100
+            ],
+            [
+              101
+            ],
+            [
+              102
+            ],
+            [
+              103
+            ],
+            [
+              104
+            ],
+            [
+              105
+            ],
+            [
+              106
+            ],
+            [
+              107
+            ],
+            [
+              108
+            ],
+            [
+              109
+            ],
+            [
+              110
+            ],
+            [
+              111
+            ],
+            [
+              112
+            ]
+          ],
+          "all_pages_unique_match": true
+        }
+      ]
+    },
+    {
+      "id": "batch072",
+      "pdfs": [
+        {
+          "path": "EGA第五卷_正交群挠子与局部等平凡性.pdf",
+          "pages": 6,
+          "sha256": "ed4cf51d8341d494646a0d259ee676aa389bee525e8f3f8696fc5a66cd817ae9",
+          "role": "main_translation",
+          "encrypted": false,
+          "extractable_text_characters": 3713,
+          "has_extractable_chinese": true
+        },
+        {
+          "path": "法文扫描_物理168至171页.pdf",
+          "pages": 4,
+          "sha256": "2eecca32e93b4ab17a8f5ccc341f02bbcf4570002af4ff08ba1f5d50abf059fa",
+          "role": "source_extract",
+          "encrypted": false,
+          "source": "french",
+          "matched_physical_pages": [
+            [
+              168
+            ],
+            [
+              169
+            ],
+            [
+              170
+            ],
+            [
+              171
+            ]
+          ],
+          "all_pages_unique_match": true
+        },
+        {
+          "path": "英译底本.pdf",
+          "pages": 112,
+          "sha256": "23a20ef32fd16a1bd623c0c08ac080d04fc94f248de12133b713a19d6b0330d9",
+          "role": "full_source_copy",
+          "encrypted": false,
+          "source": "english",
+          "matched_physical_pages": [
+            [
+              1
+            ],
+            [
+              2
+            ],
+            [
+              3
+            ],
+            [
+              4
+            ],
+            [
+              5
+            ],
+            [
+              6
+            ],
+            [
+              7
+            ],
+            [
+              8
+            ],
+            [
+              9
+            ],
+            [
+              10
+            ],
+            [
+              11
+            ],
+            [
+              12
+            ],
+            [
+              13
+            ],
+            [
+              14
+            ],
+            [
+              15
+            ],
+            [
+              16
+            ],
+            [
+              17
+            ],
+            [
+              18
+            ],
+            [
+              19
+            ],
+            [
+              20
+            ],
+            [
+              21
+            ],
+            [
+              22
+            ],
+            [
+              23
+            ],
+            [
+              24
+            ],
+            [
+              25
+            ],
+            [
+              26
+            ],
+            [
+              27
+            ],
+            [
+              28
+            ],
+            [
+              29
+            ],
+            [
+              30
+            ],
+            [
+              31
+            ],
+            [
+              32
+            ],
+            [
+              33
+            ],
+            [
+              34
+            ],
+            [
+              35
+            ],
+            [
+              36
+            ],
+            [
+              37
+            ],
+            [
+              38
+            ],
+            [
+              39
+            ],
+            [
+              40
+            ],
+            [
+              41
+            ],
+            [
+              42
+            ],
+            [
+              43
+            ],
+            [
+              44
+            ],
+            [
+              45
+            ],
+            [
+              46
+            ],
+            [
+              47
+            ],
+            [
+              48
+            ],
+            [
+              49
+            ],
+            [
+              50
+            ],
+            [
+              51
+            ],
+            [
+              52
+            ],
+            [
+              53
+            ],
+            [
+              54
+            ],
+            [
+              55
+            ],
+            [
+              56
+            ],
+            [
+              57
+            ],
+            [
+              58
+            ],
+            [
+              59
+            ],
+            [
+              60
+            ],
+            [
+              61
+            ],
+            [
+              62
+            ],
+            [
+              63
+            ],
+            [
+              64
+            ],
+            [
+              65
+            ],
+            [
+              66
+            ],
+            [
+              67
+            ],
+            [
+              68
+            ],
+            [
+              69
+            ],
+            [
+              70
+            ],
+            [
+              71
+            ],
+            [
+              72
+            ],
+            [
+              73
+            ],
+            [
+              74
+            ],
+            [
+              75
+            ],
+            [
+              76
+            ],
+            [
+              77
+            ],
+            [
+              78
+            ],
+            [
+              79
+            ],
+            [
+              80
+            ],
+            [
+              81
+            ],
+            [
+              82
+            ],
+            [
+              83
+            ],
+            [
+              84
+            ],
+            [
+              85
+            ],
+            [
+              86
+            ],
+            [
+              87
+            ],
+            [
+              88
+            ],
+            [
+              89
+            ],
+            [
+              90
+            ],
+            [
+              91
+            ],
+            [
+              92
+            ],
+            [
+              93
+            ],
+            [
+              94
+            ],
+            [
+              95
+            ],
+            [
+              96
+            ],
+            [
+              97
+            ],
+            [
+              98
+            ],
+            [
+              99
+            ],
+            [
+              100
+            ],
+            [
+              101
+            ],
+            [
+              102
+            ],
+            [
+              103
+            ],
+            [
+              104
+            ],
+            [
+              105
+            ],
+            [
+              106
+            ],
+            [
+              107
+            ],
+            [
+              108
+            ],
+            [
+              109
+            ],
+            [
+              110
+            ],
+            [
+              111
+            ],
+            [
+              112
+            ]
+          ],
+          "all_pages_unique_match": true
+        }
+      ]
+    },
+    {
+      "id": "batch073",
+      "pdfs": [
+        {
+          "path": "EGA第五卷_射影丛的Picard群与零次态射.pdf",
+          "pages": 9,
+          "sha256": "17604331cd29acc214a93c91325da87b7d8aad3ed8566ed295ccab9ac973e1be",
+          "role": "main_translation",
+          "encrypted": false,
+          "extractable_text_characters": 6459,
+          "has_extractable_chinese": true
+        },
+        {
+          "path": "法文扫描_第三篇按原文顺序.pdf",
+          "pages": 9,
+          "sha256": "716dce88031d791dbcf76498df637e0c0610dc8a5b8f20cfe826ee430e9109b8",
+          "role": "source_extract",
+          "encrypted": false,
+          "source": "french",
+          "matched_physical_pages": [
+            [
+              151
+            ],
+            [
+              152
+            ],
+            [
+              157
+            ],
+            [
+              154
+            ],
+            [
+              155
+            ],
+            [
+              156
+            ],
+            [
+              116
+            ],
+            [
+              117
+            ],
+            [
+              118
+            ]
+          ],
+          "all_pages_unique_match": true
+        },
+        {
+          "path": "英译底本_物理86至90页.pdf",
+          "pages": 5,
+          "sha256": "70c67dd5f01e9ff667412c84b53c711a4c0f083d5983edb92fbea537f2a5ae08",
+          "role": "source_extract",
+          "encrypted": false,
+          "source": "english",
+          "matched_physical_pages": [
+            [
+              86
+            ],
+            [
+              87
+            ],
+            [
+              88
+            ],
+            [
+              89
+            ],
+            [
+              90
+            ]
+          ],
+          "all_pages_unique_match": true
+        }
+      ]
+    },
+    {
+      "id": "batch074",
+      "pdfs": [
+        {
+          "path": "EGA第五卷_射影丛同构与相对除子.pdf",
+          "pages": 7,
+          "sha256": "936742f10baa2d8ad4a3a3e92600ac75905540d0cb16ef76c4396015b1e31d57",
+          "role": "main_translation",
+          "encrypted": false,
+          "extractable_text_characters": 4342,
+          "has_extractable_chinese": true
+        },
+        {
+          "path": "法文扫描_物理118至121页.pdf",
+          "pages": 4,
+          "sha256": "2827c6f2f1a3371bc59ddffcb4c0fa2065d765e20af29d6c47b827abe6ddf94d",
+          "role": "source_extract",
+          "encrypted": false,
+          "source": "french",
+          "matched_physical_pages": [
+            [
+              118
+            ],
+            [
+              119
+            ],
+            [
+              120
+            ],
+            [
+              121
+            ]
+          ],
+          "all_pages_unique_match": true
+        },
+        {
+          "path": "英译底本_物理90至94页.pdf",
+          "pages": 5,
+          "sha256": "ff654312793028555c12f9bd3b5f2732ca5664a8ac8abf5a410b9e5b9abc075f",
+          "role": "source_extract",
+          "encrypted": false,
+          "source": "english",
+          "matched_physical_pages": [
+            [
+              90
+            ],
+            [
+              91
+            ],
+            [
+              92
+            ],
+            [
+              93
+            ],
+            [
+              94
+            ]
+          ],
+          "all_pages_unique_match": true
+        }
+      ]
+    },
+    {
+      "id": "batch075",
+      "pdfs": [
+        {
+          "path": "EGA第五卷_多重射影丛与多次数除子.pdf",
+          "pages": 5,
+          "sha256": "7891fe26d322db594c693bdc7edd4b197f2c02a72833eab761d6f9323b33703c",
+          "role": "main_translation",
+          "encrypted": false,
+          "extractable_text_characters": 2683,
+          "has_extractable_chinese": true
+        },
+        {
+          "path": "法文扫描_物理121至123页.pdf",
+          "pages": 3,
+          "sha256": "41b690c6c9959889485db79734bf106ebae51b9f5accd745e8b56f43cb9d39d5",
+          "role": "source_extract",
+          "encrypted": false,
+          "source": "french",
+          "matched_physical_pages": [
+            [
+              121
+            ],
+            [
+              122
+            ],
+            [
+              123
+            ]
+          ],
+          "all_pages_unique_match": true
+        },
+        {
+          "path": "英译底本_物理94至95页.pdf",
+          "pages": 2,
+          "sha256": "9d8354269f23ec52806522b0f618bb8daa6196c167d54223e72a53b3a218b3ae",
+          "role": "source_extract",
+          "encrypted": false,
+          "source": "english",
+          "matched_physical_pages": [
+            [
+              94
+            ],
+            [
+              95
+            ]
+          ],
+          "all_pages_unique_match": true
+        }
+      ]
+    },
+    {
+      "id": "batch076",
+      "pdfs": [
+        {
+          "path": "EGA第五卷_固定可逆模的相对除子.pdf",
+          "pages": 5,
+          "sha256": "69d4255c3be7cc2d2707fdb360cd920bc70cb4fffda7123933efab39a765f1c3",
+          "role": "main_translation",
+          "encrypted": false,
+          "extractable_text_characters": 2476,
+          "has_extractable_chinese": true
+        },
+        {
+          "path": "法文扫描_物理123至125页.pdf",
+          "pages": 3,
+          "sha256": "f5d1a9f05c30274d360049a8a202a37281d7dceb5414e46e6f3d80ff82581bba",
+          "role": "source_extract",
+          "encrypted": false,
+          "source": "french",
+          "matched_physical_pages": [
+            [
+              123
+            ],
+            [
+              124
+            ],
+            [
+              125
+            ]
+          ],
+          "all_pages_unique_match": true
+        },
+        {
+          "path": "英译底本_物理95至96页.pdf",
+          "pages": 2,
+          "sha256": "3f7260ffa7bc719a95341dcbaeb0375864150fdfad19a194b8c253f6d1e97d3b",
+          "role": "source_extract",
+          "encrypted": false,
+          "source": "english",
+          "matched_physical_pages": [
+            [
+              95
+            ],
+            [
+              96
+            ]
+          ],
+          "all_pages_unique_match": true
+        }
+      ]
+    },
+    {
+      "id": "batch077",
+      "pdfs": [
+        {
+          "path": "EGA第五卷_除子族的固定点与转置.pdf",
+          "pages": 5,
+          "sha256": "47821c6a3b919960250b49a88ca841f47cc33f8616f10cbd06e02c41adbba726",
+          "role": "main_translation",
+          "encrypted": false,
+          "extractable_text_characters": 2826,
+          "has_extractable_chinese": true
+        },
+        {
+          "path": "法文扫描_物理126至129页.pdf",
+          "pages": 4,
+          "sha256": "f8a6ddff5d6b53dac15273ebc953f54df2a175b62df36361f0108eac8039f200",
+          "role": "source_extract",
+          "encrypted": false,
+          "source": "french",
+          "matched_physical_pages": [
+            [
+              126
+            ],
+            [
+              127
+            ],
+            [
+              128
+            ],
+            [
+              129
+            ]
+          ],
+          "all_pages_unique_match": true
+        },
+        {
+          "path": "英译底本_物理97至98页.pdf",
+          "pages": 2,
+          "sha256": "0d06a6e14568e3167a8c486a4e22b454494a7031409af149b9cd2239f70a1ca8",
+          "role": "source_extract",
+          "encrypted": false,
+          "source": "english",
+          "matched_physical_pages": [
+            [
+              97
+            ],
+            [
+              98
+            ]
+          ],
+          "all_pages_unique_match": true
+        }
+      ]
+    },
+    {
+      "id": "batch078",
+      "pdfs": [
+        {
+          "path": "EGA第五卷_线性系与关联除子.pdf",
+          "pages": 5,
+          "sha256": "f03bd8125ccf13bbb65c163bf1fe90b3dbb71383e4f959b5c5cd77a54cfa9c5a",
+          "role": "main_translation",
+          "encrypted": false,
+          "extractable_text_characters": 3078,
+          "has_extractable_chinese": true
+        },
+        {
+          "path": "法文扫描_物理129至131页.pdf",
+          "pages": 3,
+          "sha256": "e482353e60ae6e4378d2a158d35e6851d039137e7d10f7a91b9e575408f3f443",
+          "role": "source_extract",
+          "encrypted": false,
+          "source": "french",
+          "matched_physical_pages": [
+            [
+              129
+            ],
+            [
+              130
+            ],
+            [
+              131
+            ]
+          ],
+          "all_pages_unique_match": true
+        },
+        {
+          "path": "英译底本_物理98至99页.pdf",
+          "pages": 2,
+          "sha256": "935a6bce844d29b8125c1b7447a9361ade100354e4e8c634ddd8a903260e440e",
+          "role": "source_extract",
+          "encrypted": false,
+          "source": "english",
+          "matched_physical_pages": [
+            [
+              98
+            ],
+            [
+              99
+            ]
+          ],
+          "all_pages_unique_match": true
+        }
+      ]
+    },
+    {
+      "id": "batch079",
+      "pdfs": [
+        {
+          "path": "EGA第五卷_线性系唯一性与深度.pdf",
+          "pages": 6,
+          "sha256": "866e293cfbcbcf33228db261a5e8662ad5e50488d23b616a1ddcfa956e524d5a",
+          "role": "main_translation",
+          "encrypted": false,
+          "extractable_text_characters": 3302,
+          "has_extractable_chinese": true
+        },
+        {
+          "path": "法文扫描_物理131至132页.pdf",
+          "pages": 2,
+          "sha256": "a5437c60bd6f9fe66f6b57817ed7e22cd195d3bd480da2ce9934450528e46387",
+          "role": "source_extract",
+          "encrypted": false,
+          "source": "french",
+          "matched_physical_pages": [
+            [
+              131
+            ],
+            [
+              132
+            ]
+          ],
+          "all_pages_unique_match": true
+        },
+        {
+          "path": "英译底本_物理99至100页.pdf",
+          "pages": 2,
+          "sha256": "d59da3c797fc075bb783450e41205a1d6316e9f7d8d9a5fb2e0921167cc5a23f",
+          "role": "source_extract",
+          "encrypted": false,
+          "source": "english",
+          "matched_physical_pages": [
+            [
+              99
+            ],
+            [
+              100
+            ]
+          ],
+          "all_pages_unique_match": true
+        }
+      ]
+    },
+    {
+      "id": "batch080",
+      "pdfs": [
+        {
+          "path": "EGA第五卷_伪态射与可逆层延拓.pdf",
+          "pages": 6,
+          "sha256": "30a8464fe91c9ba2b699574106a1a4ca9612eccbdd907601fbe07f72edc5862f",
+          "role": "main_translation",
+          "encrypted": false,
+          "extractable_text_characters": 3855,
+          "has_extractable_chinese": true
+        },
+        {
+          "path": "法文扫描_物理133至135页.pdf",
+          "pages": 3,
+          "sha256": "07af7b19e3be3db83d44e452eee12fc00ac8e1e424196439e7c4636971e320f8",
+          "role": "source_extract",
+          "encrypted": false,
+          "source": "french",
+          "matched_physical_pages": [
+            [
+              133
+            ],
+            [
+              134
+            ],
+            [
+              135
+            ]
+          ],
+          "all_pages_unique_match": true
+        },
+        {
+          "path": "英译底本_物理100至102页.pdf",
+          "pages": 3,
+          "sha256": "14a15708f8995a94c939b20231022ebfd5ea5210f55ccde0639a913ba28a370a",
+          "role": "source_extract",
+          "encrypted": false,
+          "source": "english",
+          "matched_physical_pages": [
+            [
+              100
+            ],
+            [
+              101
+            ],
+            [
+              102
+            ]
+          ],
+          "all_pages_unique_match": true
+        }
+      ]
+    },
+    {
+      "id": "batch081",
+      "pdfs": [
+        {
+          "path": "EGA第五卷_局部阶乘与线性系分类.pdf",
+          "pages": 6,
+          "sha256": "9077bfb29a7731a49eb4aa7292905c874bcd90d9719948086e2f32cefd03afcf",
+          "role": "main_translation",
+          "encrypted": false,
+          "extractable_text_characters": 3524,
+          "has_extractable_chinese": true
+        },
+        {
+          "path": "法文扫描_物理135至138页.pdf",
+          "pages": 4,
+          "sha256": "2ddafe977d70504f1a0466c1c894aa068d93cef97cd06337266a4018cd56f82a",
+          "role": "source_extract",
+          "encrypted": false,
+          "source": "french",
+          "matched_physical_pages": [
+            [
+              135
+            ],
+            [
+              136
+            ],
+            [
+              137
+            ],
+            [
+              138
+            ]
+          ],
+          "all_pages_unique_match": true
+        },
+        {
+          "path": "英译底本_物理102至105页.pdf",
+          "pages": 4,
+          "sha256": "a6a9c35fd122481ec2e321ad3aa0b2f1139993d7698224e8f93c716f5b9582cc",
+          "role": "source_extract",
+          "encrypted": false,
+          "source": "english",
+          "matched_physical_pages": [
+            [
+              102
+            ],
+            [
+              103
+            ],
+            [
+              104
+            ],
+            [
+              105
+            ]
+          ],
+          "all_pages_unique_match": true
+        }
+      ]
+    },
+    {
+      "id": "batch082",
+      "pdfs": [
+        {
+          "path": "EGA第五卷_线性系与格拉斯曼概形.pdf",
+          "pages": 5,
+          "sha256": "56705dbf1bf5e39f9b27c0c0175279622df8c5cedcea85c6a9655badd15d5020",
+          "role": "main_translation",
+          "encrypted": false,
+          "extractable_text_characters": 3073,
+          "has_extractable_chinese": true
+        },
+        {
+          "path": "法文扫描_物理138至140页.pdf",
+          "pages": 3,
+          "sha256": "478dea5eb0d750cd890fae5c9c6ff53abb1c0d1c00a271759e1386280b565ff7",
+          "role": "source_extract",
+          "encrypted": false,
+          "source": "french",
+          "matched_physical_pages": [
+            [
+              138
+            ],
+            [
+              139
+            ],
+            [
+              140
+            ]
+          ],
+          "all_pages_unique_match": true
+        },
+        {
+          "path": "英译底本_物理105至106页.pdf",
+          "pages": 2,
+          "sha256": "dd9e7f73a768050501e2be256c4f5f0982da55640a3d4977d965bca9766ddb1f",
+          "role": "source_extract",
+          "encrypted": false,
+          "source": "english",
+          "matched_physical_pages": [
+            [
+              105
+            ],
+            [
+              106
+            ]
+          ],
+          "all_pages_unique_match": true
+        }
+      ]
+    },
+    {
+      "id": "batch083",
+      "pdfs": [
+        {
+          "path": "EGA第五卷_参数丛单态性与射影标架.pdf",
+          "pages": 6,
+          "sha256": "3505a4ae7d1da0f4ef79e6045764ba75cd1267acffa028e77dc5b1ea7462fc98",
+          "role": "main_translation",
+          "encrypted": false,
+          "extractable_text_characters": 3510,
+          "has_extractable_chinese": true
+        },
+        {
+          "path": "法文扫描_物理140至143页.pdf",
+          "pages": 4,
+          "sha256": "ba3b99ec355ac2f36033975f53d29cc8a1c27a02bc471ffa0da871e4677f40fa",
+          "role": "source_extract",
+          "encrypted": false,
+          "source": "french",
+          "matched_physical_pages": [
+            [
+              140
+            ],
+            [
+              141
+            ],
+            [
+              142
+            ],
+            [
+              143
+            ]
+          ],
+          "all_pages_unique_match": true
+        },
+        {
+          "path": "英译底本_物理106至108页.pdf",
+          "pages": 3,
+          "sha256": "64084d863c93a998c11316f1ad78bbd38fdf0f0735cec831456d9f32b09e9f89",
+          "role": "source_extract",
+          "encrypted": false,
+          "source": "english",
+          "matched_physical_pages": [
+            [
+              106
+            ],
+            [
+              107
+            ],
+            [
+              108
+            ]
+          ],
+          "all_pages_unique_match": true
+        }
+      ]
+    },
+    {
+      "id": "batch084",
+      "pdfs": [
+        {
+          "path": "EGA第五卷_任意底上的单态性与无穷小差.pdf",
+          "pages": 7,
+          "sha256": "89f5eca62069b59b688fdfb17a42bea618ee3d6e1fa9fbab8098a402bb802471",
+          "role": "main_translation",
+          "encrypted": false,
+          "extractable_text_characters": 4817,
+          "has_extractable_chinese": true
+        },
+        {
+          "path": "法文扫描_物理143至146页.pdf",
+          "pages": 4,
+          "sha256": "3f053e09126c3e5adae5896f1501f7f251189979d2b2365493ce79f5015efe79",
+          "role": "source_extract",
+          "encrypted": false,
+          "source": "french",
+          "matched_physical_pages": [
+            [
+              143
+            ],
+            [
+              144
+            ],
+            [
+              145
+            ],
+            [
+              146
+            ]
+          ],
+          "all_pages_unique_match": true
+        },
+        {
+          "path": "英译底本_物理108至110页.pdf",
+          "pages": 3,
+          "sha256": "9cf842dd557afe1b2cea531a902a71f1d85869d4537f08d5735656fb49f6d1ae",
+          "role": "source_extract",
+          "encrypted": false,
+          "source": "english",
+          "matched_physical_pages": [
+            [
+              108
+            ],
+            [
+              109
+            ],
+            [
+              110
+            ]
+          ],
+          "all_pages_unique_match": true
+        }
+      ]
+    },
+    {
+      "id": "batch085",
+      "pdfs": [
+        {
+          "path": "EGA第五卷_线性系的除子集合与底除子.pdf",
+          "pages": 6,
+          "sha256": "0d4aee34720d9b7431bb80be765ca7820ab3be3e0473a955770123494bbafa1f",
+          "role": "main_translation",
+          "encrypted": false,
+          "extractable_text_characters": 3577,
+          "has_extractable_chinese": true
+        },
+        {
+          "path": "法文扫描_物理146至147页.pdf",
+          "pages": 2,
+          "sha256": "afdb45c84267fa499f8a66c7bc2b94a266352d733dc65d238d13c67b9c60453c",
+          "role": "source_extract",
+          "encrypted": false,
+          "source": "french",
+          "matched_physical_pages": [
+            [
+              146
+            ],
+            [
+              147
+            ]
+          ],
+          "all_pages_unique_match": true
+        },
+        {
+          "path": "英译底本_物理110至111页.pdf",
+          "pages": 2,
+          "sha256": "a30c0d2396051f74c2a44cac923d43c9ea6522521480844f3ab455ab0adf25d1",
+          "role": "source_extract",
+          "encrypted": false,
+          "source": "english",
+          "matched_physical_pages": [
+            [
+              110
+            ],
+            [
+              111
+            ]
+          ],
+          "all_pages_unique_match": true
+        }
+      ]
+    },
+    {
+      "id": "batch086",
+      "pdfs": [
+        {
+          "path": "EGA第五卷_格罗滕迪克致迪厄多内书信.pdf",
+          "pages": 4,
+          "sha256": "21d46fa64355919a0ee90530eedba09bde080427f4d1f7003b78581c48cbe35f",
+          "role": "main_translation",
+          "encrypted": false,
+          "extractable_text_characters": 1593,
+          "has_extractable_chinese": true
+        },
+        {
+          "path": "法文扫描_物理148至149页.pdf",
+          "pages": 2,
+          "sha256": "644be1e83facdcd520365b3eba3d7b2adae1f98b50aa4bb192466f54ac8adf08",
+          "role": "source_extract",
+          "encrypted": false,
+          "source": "french",
+          "matched_physical_pages": [
+            [
+              148
+            ],
+            [
+              149
+            ]
+          ],
+          "all_pages_unique_match": true
+        },
+        {
+          "path": "英译底本_物理112页.pdf",
+          "pages": 1,
+          "sha256": "640e7c3b8ea255fe23b15a404f44ebf0c66f23c43ac9a8ed4acde38afb522f4d",
+          "role": "source_extract",
+          "encrypted": false,
+          "source": "english",
+          "matched_physical_pages": [
+            [
+              112
+            ]
+          ],
+          "all_pages_unique_match": true
+        }
+      ]
+    },
+    {
+      "id": "batch087",
+      "pdfs": [
+        {
+          "path": "EGA第五卷_手写提纲与异扫同文.pdf",
+          "pages": 4,
+          "sha256": "6ad8029ac08c4fd7a0bebdce09abd58405d08ff61aae3d158c6403a86307ce97",
+          "role": "main_translation",
+          "encrypted": false,
+          "extractable_text_characters": 1970,
+          "has_extractable_chinese": true
+        },
+        {
+          "path": "法文扫描_物理150及153页.pdf",
+          "pages": 2,
+          "sha256": "7cade9853d6fcdfaea5aef4d97097a5cc88ac3fa55be05c97eaa72a820a29d9a",
+          "role": "source_extract",
+          "encrypted": false,
+          "source": "french",
+          "matched_physical_pages": [
+            [
+              150
+            ],
+            [
+              153
+            ]
+          ],
+          "all_pages_unique_match": true
+        },
+        {
+          "path": "法文校对_物理1至2页.pdf",
+          "pages": 2,
+          "sha256": "182e964a2de9d6e445684aa86e928c0a8050f4abcdffe64cc4fbe3c2df22cdab",
+          "role": "source_extract",
+          "encrypted": false,
+          "source": "french",
+          "matched_physical_pages": [
+            [
+              1
+            ],
+            [
+              2
+            ]
+          ],
+          "all_pages_unique_match": true
+        },
+        {
+          "path": "英译校对_物理2至3页.pdf",
+          "pages": 2,
+          "sha256": "0b8dd998e1adc4e281d0d4590d9fc47bf8358f4a968a69f4eb9a9b8cf4721333",
+          "role": "source_extract",
+          "encrypted": false,
+          "source": "english",
+          "matched_physical_pages": [
+            [
+              2
+            ],
+            [
+              3
+            ]
+          ],
+          "all_pages_unique_match": true
+        }
+      ]
+    },
+    {
+      "id": "batch088",
+      "pdfs": [
+        {
+          "path": "EGA第五卷_法文覆盖审计_超平面截面开端.pdf",
+          "pages": 7,
+          "sha256": "c042489ecfd739ab04d7ae44eb1dacdcdb6befc7af0f5af5c40a8ce5ac2213af",
+          "role": "main_translation",
+          "encrypted": false,
+          "extractable_text_characters": 5456,
+          "has_extractable_chinese": true
+        },
+        {
+          "path": "法文扫描_物理3至9页.pdf",
+          "pages": 7,
+          "sha256": "21d2ba054225234d56dfaeeb37f61717c483e23ee4749ed9cea06abda9e64da1",
+          "role": "source_extract",
+          "encrypted": false,
+          "source": "french",
+          "matched_physical_pages": [
+            [
+              3
+            ],
+            [
+              4
+            ],
+            [
+              5
+            ],
+            [
+              6
+            ],
+            [
+              7
+            ],
+            [
+              8
+            ],
+            [
+              9
+            ]
+          ],
+          "all_pages_unique_match": true
+        },
+        {
+          "path": "英译校对_物理4至8页.pdf",
+          "pages": 5,
+          "sha256": "683ad97bbc9f834665919dc6340064586ba5e81799b8130b21ddba8e3d54e072",
+          "role": "source_extract",
+          "encrypted": false,
+          "source": "english",
+          "matched_physical_pages": [
+            [
+              4
+            ],
+            [
+              5
+            ],
+            [
+              6
+            ],
+            [
+              7
+            ],
+            [
+              8
+            ]
+          ],
+          "all_pages_unique_match": true
+        }
+      ]
+    },
+    {
+      "id": "batch089",
+      "pdfs": [
+        {
+          "path": "EGA第五卷_法文覆盖审计_泛截面光滑性.pdf",
+          "pages": 5,
+          "sha256": "ead0c52c9caad5b27ec9ce0b826897ec6f9e9bff3871a3e34e60a4b5a7fe84da",
+          "role": "main_translation",
+          "encrypted": false,
+          "extractable_text_characters": 3337,
+          "has_extractable_chinese": true
+        },
+        {
+          "path": "法文扫描_物理10至12页.pdf",
+          "pages": 3,
+          "sha256": "75eae1dfaa5e5e3877d228f9b3462661de1153493f635422ac46cd4794157123",
+          "role": "source_extract",
+          "encrypted": false,
+          "source": "french",
+          "matched_physical_pages": [
+            [
+              10
+            ],
+            [
+              11
+            ],
+            [
+              12
+            ]
+          ],
+          "all_pages_unique_match": true
+        },
+        {
+          "path": "英译校对_物理9至10页.pdf",
+          "pages": 2,
+          "sha256": "6b1de0df0b668e19c9fd5ed459850da9dca89824edfd9e1de8d2f2409a696355",
+          "role": "source_extract",
+          "encrypted": false,
+          "source": "english",
+          "matched_physical_pages": [
+            [
+              9
+            ],
+            [
+              10
+            ]
+          ],
+          "all_pages_unique_match": true
+        }
+      ]
+    },
+    {
+      "id": "batch090",
+      "pdfs": [
+        {
+          "path": "EGA第五卷_法文覆盖审计_泛截面几何性质.pdf",
+          "pages": 4,
+          "sha256": "3208297be0fcf473ed67a92c3a20ef752fd44a0d7b29c47eef4750f280ac6b1b",
+          "role": "main_translation",
+          "encrypted": false,
+          "extractable_text_characters": 3265,
+          "has_extractable_chinese": true
+        },
+        {
+          "path": "法文扫描_物理12至14页.pdf",
+          "pages": 3,
+          "sha256": "79f6524559afea4e611bfd06f5ee814a8d964ba3e37d0f23775064da7fc9cc54",
+          "role": "source_extract",
+          "encrypted": false,
+          "source": "french",
+          "matched_physical_pages": [
+            [
+              12
+            ],
+            [
+              13
+            ],
+            [
+              14
+            ]
+          ],
+          "all_pages_unique_match": true
+        },
+        {
+          "path": "英译校对_物理10至12页.pdf",
+          "pages": 3,
+          "sha256": "ae9593906eed59dd2d1a5dbab485da66e5180858774a1509efdc43501269f758",
+          "role": "source_extract",
+          "encrypted": false,
+          "source": "english",
+          "matched_physical_pages": [
+            [
+              10
+            ],
+            [
+              11
+            ],
+            [
+              12
+            ]
+          ],
+          "all_pages_unique_match": true
+        }
+      ]
+    },
+    {
+      "id": "batch091",
+      "pdfs": [
+        {
+          "path": "EGA第五卷_法文覆盖审计_泛截面不可约与连通.pdf",
+          "pages": 4,
+          "sha256": "0d407a8502547d13374b74a578cca1b740deb8176966547716c0e40c92d3dddf",
+          "role": "main_translation",
+          "encrypted": false,
+          "extractable_text_characters": 3211,
+          "has_extractable_chinese": true
+        },
+        {
+          "path": "法文扫描_物理14至17页.pdf",
+          "pages": 4,
+          "sha256": "f043a0a169f19f64d9b9e54bde6c95bc9725fa2a47b3363bbeacb8acdb2b4d46",
+          "role": "source_extract",
+          "encrypted": false,
+          "source": "french",
+          "matched_physical_pages": [
+            [
+              14
+            ],
+            [
+              15
+            ],
+            [
+              16
+            ],
+            [
+              17
+            ]
+          ],
+          "all_pages_unique_match": true
+        },
+        {
+          "path": "英译校对_物理12至13页.pdf",
+          "pages": 2,
+          "sha256": "fab96351939ce1057a741cb887f243e7a997e5610b69762c11487973c8ab0643",
+          "role": "source_extract",
+          "encrypted": false,
+          "source": "english",
+          "matched_physical_pages": [
+            [
+              12
+            ],
+            [
+              13
+            ]
+          ],
+          "all_pages_unique_match": true
+        }
+      ]
+    },
+    {
+      "id": "batch092",
+      "pdfs": [
+        {
+          "path": "EGA第五卷_法文覆盖审计_充分一般超平面截面.pdf",
+          "pages": 4,
+          "sha256": "fd940a89d1535514f9dd061af9beb515e6fe02b9cf82b4adfbd1fa4bad5fb507",
+          "role": "main_translation",
+          "encrypted": false,
+          "extractable_text_characters": 3100,
+          "has_extractable_chinese": true
+        },
+        {
+          "path": "法文扫描_物理17至19页.pdf",
+          "pages": 3,
+          "sha256": "235f91f7bf589ac204d49280d1e6a33bc5e3e464e02b6877fcd4dc630b8c399e",
+          "role": "source_extract",
+          "encrypted": false,
+          "source": "french",
+          "matched_physical_pages": [
+            [
+              17
+            ],
+            [
+              18
+            ],
+            [
+              19
+            ]
+          ],
+          "all_pages_unique_match": true
+        },
+        {
+          "path": "英译校对_物理13至15页.pdf",
+          "pages": 3,
+          "sha256": "b291723efe814c8d257c6e45d62532d8fab6cafd6a23fe59b773a614cc5c5de3",
+          "role": "source_extract",
+          "encrypted": false,
+          "source": "english",
+          "matched_physical_pages": [
+            [
+              13
+            ],
+            [
+              14
+            ],
+            [
+              15
+            ]
+          ],
+          "all_pages_unique_match": true
+        }
+      ]
+    },
+    {
+      "id": "batch093",
+      "pdfs": [
+        {
+          "path": "EGA第五卷_法文覆盖审计_截面连通性与开性.pdf",
+          "pages": 5,
+          "sha256": "cf35fe15a0fd7fffcd2e0ae1d8edc526ba0a42ffa403500f3e4b871774881380",
+          "role": "main_translation",
+          "encrypted": false,
+          "extractable_text_characters": 3101,
+          "has_extractable_chinese": true
+        },
+        {
+          "path": "法文扫描_物理19至21页.pdf",
+          "pages": 3,
+          "sha256": "7885c45a308ec83998d5cb1e24679cf0608d82d73c41076a061d87aea9290bcb",
+          "role": "source_extract",
+          "encrypted": false,
+          "source": "french",
+          "matched_physical_pages": [
+            [
+              19
+            ],
+            [
+              20
+            ],
+            [
+              21
+            ]
+          ],
+          "all_pages_unique_match": true
+        },
+        {
+          "path": "英译校对_物理15至16页.pdf",
+          "pages": 2,
+          "sha256": "d2d80613bddcb6e7b246cf9ff91a1039e9620e7185e101a02e84d8b3ffd33069",
+          "role": "source_extract",
+          "encrypted": false,
+          "source": "english",
+          "matched_physical_pages": [
+            [
+              15
+            ],
+            [
+              16
+            ]
+          ],
+          "all_pages_unique_match": true
+        }
+      ]
+    },
+    {
+      "id": "batch094",
+      "pdfs": [
+        {
+          "path": "EGA第五卷_法文覆盖审计_截面正则性与平坦性.pdf",
+          "pages": 4,
+          "sha256": "50d99b19a8065b2cae1515e7bb0efb4ba51aafcc73b0c1298fe19a875fd36a33",
+          "role": "main_translation",
+          "encrypted": false,
+          "extractable_text_characters": 3292,
+          "has_extractable_chinese": true
+        },
+        {
+          "path": "法文扫描_物理21至22页.pdf",
+          "pages": 2,
+          "sha256": "222806e7a4970d0414b2c4a4387cca4398090e54d73c61f9dc8bed23eebbd3e9",
+          "role": "source_extract",
+          "encrypted": false,
+          "source": "french",
+          "matched_physical_pages": [
+            [
+              21
+            ],
+            [
+              22
+            ]
+          ],
+          "all_pages_unique_match": true
+        },
+        {
+          "path": "英译校对_物理16至17页.pdf",
+          "pages": 2,
+          "sha256": "468c9828205d34f7af0c3eca26061d73558c4b2adfab8beab57140266bddc224",
+          "role": "source_extract",
+          "encrypted": false,
+          "source": "english",
+          "matched_physical_pages": [
+            [
+              16
+            ],
+            [
+              17
+            ]
+          ],
+          "all_pages_unique_match": true
+        }
+      ]
+    },
+    {
+      "id": "batch095",
+      "pdfs": [
+        {
+          "path": "EGA第五卷_法文覆盖审计_关联点与纤维开性.pdf",
+          "pages": 5,
+          "sha256": "ad4cc3474393b14d40ddef80ae960da7f133f77b5362963381a40e9f96514139",
+          "role": "main_translation",
+          "encrypted": false,
+          "extractable_text_characters": 3649,
+          "has_extractable_chinese": true
+        },
+        {
+          "path": "法文扫描_物理22至24页.pdf",
+          "pages": 3,
+          "sha256": "62589da02d41ac98586a519eb8bc4810dc32e633f3a0024def6cb914a566b512",
+          "role": "source_extract",
+          "encrypted": false,
+          "source": "french",
+          "matched_physical_pages": [
+            [
+              22
+            ],
+            [
+              23
+            ],
+            [
+              24
+            ]
+          ],
+          "all_pages_unique_match": true
+        },
+        {
+          "path": "英译校对_物理17至18页.pdf",
+          "pages": 2,
+          "sha256": "c15cb5767e6989819748ff66634c01bd73db91a9a4c49c0de5fff1e8e0a75ed5",
+          "role": "source_extract",
+          "encrypted": false,
+          "source": "english",
+          "matched_physical_pages": [
+            [
+              17
+            ],
+            [
+              18
+            ]
+          ],
+          "all_pages_unique_match": true
+        }
+      ]
+    },
+    {
+      "id": "batch096",
+      "pdfs": [
+        {
+          "path": "EGA_IV第三分册_印刷233与237页.pdf",
+          "pages": 2,
+          "sha256": "9135aee5733f097b2bda82cbd7eb761eb3cd49bf7103190b66d7381f4d1fa7f9",
+          "role": "source_extract",
+          "encrypted": false,
+          "source": "published_iv3",
+          "matched_physical_pages": [
+            [
+              232
+            ],
+            [
+              236
+            ]
+          ],
+          "all_pages_unique_match": true
+        },
+        {
+          "path": "EGA第五卷_法文覆盖审计_任意超平面截面连通性.pdf",
+          "pages": 4,
+          "sha256": "201b4536649951e7cbebc176d842094b6a6f62456ab8c8a821bc773707eb2421",
+          "role": "main_translation",
+          "encrypted": false,
+          "extractable_text_characters": 2171,
+          "has_extractable_chinese": true
+        },
+        {
+          "path": "法文扫描_物理24至25页.pdf",
+          "pages": 2,
+          "sha256": "9dbd475a0cee433d821b8fbee86899958588e9c172544ccea1f0a3361cb4c9d9",
+          "role": "source_extract",
+          "encrypted": false,
+          "source": "french",
+          "matched_physical_pages": [
+            [
+              24
+            ],
+            [
+              25
+            ]
+          ],
+          "all_pages_unique_match": true
+        },
+        {
+          "path": "英译校对_物理18页.pdf",
+          "pages": 1,
+          "sha256": "68fe55ab7154c5e26c732d9b8920fcd6dc3aa1ad328e89cf2e9f9764a4cab454",
+          "role": "source_extract",
+          "encrypted": false,
+          "source": "english",
+          "matched_physical_pages": [
+            [
+              18
+            ]
+          ],
+          "all_pages_unique_match": true
+        }
+      ]
+    },
+    {
+      "id": "batch097",
+      "pdfs": [
+        {
+          "path": "EGA_IV第三分册_印刷226页.pdf",
+          "pages": 1,
+          "sha256": "72404e52699768b00a53872dee4b653a84e8d6a666024c41f3a063d2c02c20e9",
+          "role": "source_extract",
+          "encrypted": false,
+          "source": "published_iv3",
+          "matched_physical_pages": [
+            [
+              225
+            ]
+          ],
+          "all_pages_unique_match": true
+        },
+        {
+          "path": "EGA第五卷_法文覆盖审计_超平面截面与多截面构造.pdf",
+          "pages": 4,
+          "sha256": "c4d6e529521a26f9d6495091eeaa9d448a1e0914897bb7f15341c45db40bf9e6",
+          "role": "main_translation",
+          "encrypted": false,
+          "extractable_text_characters": 2578,
+          "has_extractable_chinese": true
+        },
+        {
+          "path": "法文扫描_物理26至27页.pdf",
+          "pages": 2,
+          "sha256": "cdfd743f07b06a356474ad617745906507f11ceb6f3c9c33afec41003cf0a02b",
+          "role": "source_extract",
+          "encrypted": false,
+          "source": "french",
+          "matched_physical_pages": [
+            [
+              26
+            ],
+            [
+              27
+            ]
+          ],
+          "all_pages_unique_match": true
+        },
+        {
+          "path": "英译校对_物理18至19页.pdf",
+          "pages": 2,
+          "sha256": "4fbd600791dede1ffecde17de3bbe3deaf37764aca11642359c352a215485cc3",
+          "role": "source_extract",
+          "encrypted": false,
+          "source": "english",
+          "matched_physical_pages": [
+            [
+              18
+            ],
+            [
+              19
+            ]
+          ],
+          "all_pages_unique_match": true
+        }
+      ]
+    },
+    {
+      "id": "batch098",
+      "pdfs": [
+        {
+          "path": "EGA_IV第三分册_印刷179至180页.pdf",
+          "pages": 2,
+          "sha256": "83029819ee7bb20337ef9361e31639a5acaa38bbfb3b8bec3eb740d7b7f6dda7",
+          "role": "source_extract",
+          "encrypted": false,
+          "source": "published_iv3",
+          "matched_physical_pages": [
+            [
+              178
+            ],
+            [
+              179
+            ]
+          ],
+          "all_pages_unique_match": true
+        },
+        {
+          "path": "EGA第五卷_法文覆盖审计_坏集维数与截面平坦性.pdf",
+          "pages": 4,
+          "sha256": "7f9c87cc8550c3174ced90b563a0329b2e3d37e52b37a7ba87d9c863621b5a51",
+          "role": "main_translation",
+          "encrypted": false,
+          "extractable_text_characters": 2738,
+          "has_extractable_chinese": true
+        },
+        {
+          "path": "法文扫描_物理28至29页.pdf",
+          "pages": 2,
+          "sha256": "21902fc429bbf41d65db3ae4e1d18d89e32d954b300e3906a8eee9202476effe",
+          "role": "source_extract",
+          "encrypted": false,
+          "source": "french",
+          "matched_physical_pages": [
+            [
+              28
+            ],
+            [
+              29
+            ]
+          ],
+          "all_pages_unique_match": true
+        },
+        {
+          "path": "英译校对_物理19至20页.pdf",
+          "pages": 2,
+          "sha256": "aa9b97def63b348398ccc1d6ce7a2b306e6c4264079b7a974e942d34d2fce324",
+          "role": "source_extract",
+          "encrypted": false,
+          "source": "english",
+          "matched_physical_pages": [
+            [
+              19
+            ],
+            [
+              20
+            ]
+          ],
+          "all_pages_unique_match": true
+        }
+      ]
+    },
+    {
+      "id": "batch099",
+      "pdfs": [
+        {
+          "path": "EGA第五卷_法文覆盖审计_有限etale多截面.pdf",
+          "pages": 4,
+          "sha256": "f8d4a714d0420a212c1fa4beb2bb62b641b5111382182c30da141330e21a6e5e",
+          "role": "main_translation",
+          "encrypted": false,
+          "extractable_text_characters": 2385,
+          "has_extractable_chinese": true
+        },
+        {
+          "path": "法文扫描_物理29页.pdf",
+          "pages": 1,
+          "sha256": "d747d089c44bce70240bcaac9ed7e8105f833a4cce11c56b53708d100c3670f2",
+          "role": "source_extract",
+          "encrypted": false,
+          "source": "french",
+          "matched_physical_pages": [
+            [
+              29
+            ]
+          ],
+          "all_pages_unique_match": true
+        },
+        {
+          "path": "英译校对_物理20_21_46页.pdf",
+          "pages": 3,
+          "sha256": "c1f5de97050353b300e17fbbb61b933125856fc22cdd0c7607ef23c8ae9eda18",
+          "role": "source_extract",
+          "encrypted": false,
+          "source": "english",
+          "matched_physical_pages": [
+            [
+              20
+            ],
+            [
+              21
+            ],
+            [
+              46
+            ]
+          ],
+          "all_pages_unique_match": true
+        }
+      ]
+    },
+    {
+      "id": "batch100",
+      "pdfs": [
+        {
+          "path": "EGA第五卷_法文覆盖审计_例外超平面余维.pdf",
+          "pages": 5,
+          "sha256": "b6ac63c64e4e70b82d5bde380df7f4ce6993453308e21a136f22cabb1ad63a5c",
+          "role": "main_translation",
+          "encrypted": false,
+          "extractable_text_characters": 3311,
+          "has_extractable_chinese": true
+        },
+        {
+          "path": "法文扫描_物理30_31_32页.pdf",
+          "pages": 3,
+          "sha256": "f8e83649d86b9d5f6904f5e8a3a6c31546fb17a41f40410f8cbf344ec9abbe21",
+          "role": "source_extract",
+          "encrypted": false,
+          "source": "french",
+          "matched_physical_pages": [
+            [
+              30
+            ],
+            [
+              31
+            ],
+            [
+              32
+            ]
+          ],
+          "all_pages_unique_match": true
+        },
+        {
+          "path": "英译校对_物理21_22页.pdf",
+          "pages": 2,
+          "sha256": "3c49779f3ad4746e57b739d6b80832eca0a3026558a8addff62efbb540d39c67",
+          "role": "source_extract",
+          "encrypted": false,
+          "source": "english",
+          "matched_physical_pages": [
+            [
+              21
+            ],
+            [
+              22
+            ]
+          ],
+          "all_pages_unique_match": true
+        }
+      ]
+    },
+    {
+      "id": "batch101",
+      "pdfs": [
+        {
+          "path": "EGA第五卷_法文覆盖审计_Serre条件与截面.pdf",
+          "pages": 4,
+          "sha256": "5091f456cf94ed99b304d2be120129c710e50911191e7e7b401190fca6fe91fb",
+          "role": "main_translation",
+          "encrypted": false,
+          "extractable_text_characters": 3059,
+          "has_extractable_chinese": true
+        },
+        {
+          "path": "法文扫描_物理32页.pdf",
+          "pages": 1,
+          "sha256": "04c4a56a652cf3682f3fe3059397883dc088a207eb9126561ede03a482254cdd",
+          "role": "source_extract",
+          "encrypted": false,
+          "source": "french",
+          "matched_physical_pages": [
+            [
+              32
+            ]
+          ],
+          "all_pages_unique_match": true
+        },
+        {
+          "path": "英译校对_物理22页.pdf",
+          "pages": 1,
+          "sha256": "7029556a34ea89be74f8096efce26d2cce2b43a9522aded2ae82470501aa0fa1",
+          "role": "source_extract",
+          "encrypted": false,
+          "source": "english",
+          "matched_physical_pages": [
+            [
+              22
+            ]
+          ],
+          "all_pages_unique_match": true
+        }
+      ]
+    },
+    {
+      "id": "batch102",
+      "pdfs": [
+        {
+          "path": "EGA第五卷_法文覆盖审计_截面余维下降.pdf",
+          "pages": 5,
+          "sha256": "50ec9661def790d60e4a14a882f7fb23c7a4ea333104afef7fbf40524eef8714",
+          "role": "main_translation",
+          "encrypted": false,
+          "extractable_text_characters": 3604,
+          "has_extractable_chinese": true
+        },
+        {
+          "path": "法文扫描_物理33至34页.pdf",
+          "pages": 2,
+          "sha256": "f87942f412b1a601ed5e0b1434af0b5d7fdaaa298a1a87fb5c69fc2d20d4ade0",
+          "role": "source_extract",
+          "encrypted": false,
+          "source": "french",
+          "matched_physical_pages": [
+            [
+              33
+            ],
+            [
+              34
+            ]
+          ],
+          "all_pages_unique_match": true
+        },
+        {
+          "path": "英译校对_物理22至24页.pdf",
+          "pages": 3,
+          "sha256": "9ddd0e58d3e1d72f8add68020a47aa6ae358754214224e20d213e37676515096",
+          "role": "source_extract",
+          "encrypted": false,
+          "source": "english",
+          "matched_physical_pages": [
+            [
+              22
+            ],
+            [
+              23
+            ],
+            [
+              24
+            ]
+          ],
+          "all_pages_unique_match": true
+        }
+      ]
+    },
+    {
+      "id": "batch103",
+      "pdfs": [
+        {
+          "path": "EGA第五卷_法文覆盖审计_Serre原阶保持判据.pdf",
+          "pages": 5,
+          "sha256": "67dda1c01c2eba9618d73beda3351e980bc1ad4b18e04b15da9d72721fab153f",
+          "role": "main_translation",
+          "encrypted": false,
+          "extractable_text_characters": 3374,
+          "has_extractable_chinese": true
+        },
+        {
+          "path": "法文扫描_物理32及34至35页.pdf",
+          "pages": 3,
+          "sha256": "750158343257fe60e0ca8203c0c5684b4192db9c6feb842d9e9b17298f5d68a4",
+          "role": "source_extract",
+          "encrypted": false,
+          "source": "french",
+          "matched_physical_pages": [
+            [
+              32
+            ],
+            [
+              34
+            ],
+            [
+              35
+            ]
+          ],
+          "all_pages_unique_match": true
+        },
+        {
+          "path": "英译校对_物理24至25页.pdf",
+          "pages": 2,
+          "sha256": "24c05547d1768d94704704abccaa5dec720b84691e3e7cde408c8dd2492f3904",
+          "role": "source_extract",
+          "encrypted": false,
+          "source": "english",
+          "matched_physical_pages": [
+            [
+              24
+            ],
+            [
+              25
+            ]
+          ],
+          "all_pages_unique_match": true
+        }
+      ]
+    },
+    {
+      "id": "batch104",
+      "pdfs": [
+        {
+          "path": "EGA第五卷_余法射影丛与奇异零概形.pdf",
+          "pages": 5,
+          "sha256": "33766f922e9c772d4d770d01cc494d7730241582ca753af01a30f50fa363653d",
+          "role": "main_translation",
+          "encrypted": false,
+          "extractable_text_characters": 3846,
+          "has_extractable_chinese": true
+        },
+        {
+          "path": "法文扫描_物理36至39页.pdf",
+          "pages": 4,
+          "sha256": "38b468099eb7579fd21549eebe1c99bc4ecf4397ad0483cb16050cfe0f8a1fb2",
+          "role": "source_extract",
+          "encrypted": false,
+          "source": "french",
+          "matched_physical_pages": [
+            [
+              36
+            ],
+            [
+              37
+            ],
+            [
+              38
+            ],
+            [
+              39
+            ]
+          ],
+          "all_pages_unique_match": true
+        },
+        {
+          "path": "英译校对_物理25至27页.pdf",
+          "pages": 3,
+          "sha256": "7c595a79c31c62e09b421058b27641cdfc2db151b4b258ad9e020ce4f8634e61",
+          "role": "source_extract",
+          "encrypted": false,
+          "source": "english",
+          "matched_physical_pages": [
+            [
+              25
+            ],
+            [
+              26
+            ],
+            [
+              27
+            ]
+          ],
+          "all_pages_unique_match": true
+        }
+      ]
+    },
+    {
+      "id": "batch105",
+      "pdfs": [
+        {
+          "path": "EGA第五卷_奇异参数维数与超奇异判据.pdf",
+          "pages": 4,
+          "sha256": "b7f0f2cf2a768e40bf393b012700dcc54e4a841aced1d037aedaf407122c38b5",
+          "role": "main_translation",
+          "encrypted": false,
+          "extractable_text_characters": 2909,
+          "has_extractable_chinese": true
+        },
+        {
+          "path": "法文扫描_物理39至42页.pdf",
+          "pages": 4,
+          "sha256": "5aec1f4958f2bd83d782c2cc4fe35f0d7c40cb112b1e9900d631f269492b3392",
+          "role": "source_extract",
+          "encrypted": false,
+          "source": "french",
+          "matched_physical_pages": [
+            [
+              39
+            ],
+            [
+              40
+            ],
+            [
+              41
+            ],
+            [
+              42
+            ]
+          ],
+          "all_pages_unique_match": true
+        },
+        {
+          "path": "英译校对_物理27至29及62至65页.pdf",
+          "pages": 7,
+          "sha256": "c489091fe84b4ec0e028bb84a32651c8d759a3ced06e0fdfe9f055550e102e46",
+          "role": "source_extract",
+          "encrypted": false,
+          "source": "english",
+          "matched_physical_pages": [
+            [
+              27
+            ],
+            [
+              28
+            ],
+            [
+              29
+            ],
+            [
+              62
+            ],
+            [
+              63
+            ],
+            [
+              64
+            ],
+            [
+              65
+            ]
+          ],
+          "all_pages_unique_match": true
+        }
+      ]
+    },
+    {
+      "id": "batch106",
+      "pdfs": [
+        {
+          "path": "EGA第五卷_对偶超曲面的泛双有理性.pdf",
+          "pages": 3,
+          "sha256": "512b8fc081b9fcb1a5fb280ef6ace26b9aebde71cd9c5dde4bc28b8848379ca9",
+          "role": "main_translation",
+          "encrypted": false,
+          "extractable_text_characters": 3282,
+          "has_extractable_chinese": true
+        },
+        {
+          "path": "法文扫描_物理40至44页.pdf",
+          "pages": 5,
+          "sha256": "0823e321ddd7badf7e2cbb2a2887fdf3e95f88838a08436ed4444c848b576472",
+          "role": "source_extract",
+          "encrypted": false,
+          "source": "french",
+          "matched_physical_pages": [
+            [
+              40
+            ],
+            [
+              41
+            ],
+            [
+              42
+            ],
+            [
+              43
+            ],
+            [
+              44
+            ]
+          ],
+          "all_pages_unique_match": true
+        },
+        {
+          "path": "英译校对_物理28至30页.pdf",
+          "pages": 3,
+          "sha256": "1162dcd6452a9f3d29e83fe4ea73d8a7649571791944602d7f9b99db0ad8ebc1",
+          "role": "source_extract",
+          "encrypted": false,
+          "source": "english",
+          "matched_physical_pages": [
+            [
+              28
+            ],
+            [
+              29
+            ],
+            [
+              30
+            ]
+          ],
+          "all_pages_unique_match": true
+        }
+      ]
+    },
+    {
+      "id": "batch107",
+      "pdfs": [
+        {
+          "path": "EGA第五卷_双切超平面与特征零判据.pdf",
+          "pages": 3,
+          "sha256": "498c759fab7c1dc500ec0f568813fa4459d7df4f50dc6e817233c9dd2d0a2cf6",
+          "role": "main_translation",
+          "encrypted": false,
+          "extractable_text_characters": 3447,
+          "has_extractable_chinese": true
+        },
+        {
+          "path": "法文扫描_物理43至45页.pdf",
+          "pages": 3,
+          "sha256": "0dfd23c16893b28330d000ca1f2043402500d7c0865246b74b54ffb846278175",
+          "role": "source_extract",
+          "encrypted": false,
+          "source": "french",
+          "matched_physical_pages": [
+            [
+              43
+            ],
+            [
+              44
+            ],
+            [
+              45
+            ]
+          ],
+          "all_pages_unique_match": true
+        },
+        {
+          "path": "英译校对_物理30至31页.pdf",
+          "pages": 2,
+          "sha256": "b2af6a95b974965df375a5a36f5df7d85e7b1c230aae304339969f66e6ba0055",
+          "role": "source_extract",
+          "encrypted": false,
+          "source": "english",
+          "matched_physical_pages": [
+            [
+              30
+            ],
+            [
+              31
+            ]
+          ],
+          "all_pages_unique_match": true
+        }
+      ]
+    },
+    {
+      "id": "batch108",
+      "pdfs": [
+        {
+          "path": "EGA第五卷_几何正则性的例外超平面.pdf",
+          "pages": 4,
+          "sha256": "27e2ca795654df8afeba0d6738808f291e1caffac095c658cf41d48569fc0116",
+          "role": "main_translation",
+          "encrypted": false,
+          "extractable_text_characters": 3480,
+          "has_extractable_chinese": true
+        },
+        {
+          "path": "法文扫描_物理45至46页.pdf",
+          "pages": 2,
+          "sha256": "88aa587115e2390d25d03eab55a34ba121602afc81de28fc9addc212664e6be9",
+          "role": "source_extract",
+          "encrypted": false,
+          "source": "french",
+          "matched_physical_pages": [
+            [
+              45
+            ],
+            [
+              46
+            ]
+          ],
+          "all_pages_unique_match": true
+        },
+        {
+          "path": "英译校对_物理31至32页.pdf",
+          "pages": 2,
+          "sha256": "daf046c40676b792c54446c80f171a39d4209c74b8f23830a5631260f94fe085",
+          "role": "source_extract",
+          "encrypted": false,
+          "source": "english",
+          "matched_physical_pages": [
+            [
+              31
+            ],
+            [
+              32
+            ]
+          ],
+          "all_pages_unique_match": true
+        }
+      ]
+    }
+  ],
+  "paths_relative_to": "Each pdf path is relative to batches/<record id>/; full-source paths are relative to archive_20261121/.",
+  "summary": {
+    "pdf_files": 124,
+    "main_translation_pdf_files": 40,
+    "main_translation_pdf_pages": 199,
+    "source_or_excerpt_pdf_files": 84,
+    "all_source_pages_have_unique_component_match": true
+  }
+}

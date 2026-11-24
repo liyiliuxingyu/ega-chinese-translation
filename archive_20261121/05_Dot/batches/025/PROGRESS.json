@@ -1,0 +1,14 @@
+{
+  "completed": "底本47页后四段，If we also define V^(k) 至 I could give a more precise statement upon request",
+  "next": "第48页 Once we grant this",
+  "previous_project": "libfile_fde3_f-d259a9a4a03c8191a18e1e6e67a96d8d_49ac57203c0c81918f3630f0324dcb35",
+  "source_sha256": "23a20ef32fd16a1bd623c0c08ac080d04fc94f248de12133b713a19d6b0330d9",
+  "merged_into_main": false,
+  "pdf_pages": 4,
+  "unresolved": [
+    "维数公式的完整适用范围未说明",
+    "Grass后及it implies后难辨标记",
+    "第16段补篇引用及前批过滤光滑性验证未完成",
+    "此前缺文及歧义继续保留"
+  ]
+}

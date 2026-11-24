@@ -1,0 +1,145 @@
+{
+  "scope": "New integrated body: EGA V §14 (p.53 heading and p.54–59), §15 (p.59–61). Separate duplicate-source collation: §16 through Remark 4(c) (p.62).",
+  "dot_batches": 19,
+  "archived_batches": 17,
+  "post_archive_batches": 2,
+  "source_pdf_sha256": "23a20ef32fd16a1bd623c0c08ac080d04fc94f248de12133b713a19d6b0330d9",
+  "source_render_pages_inspected": [
+    43,
+    54,
+    55,
+    56,
+    57,
+    58,
+    59,
+    60,
+    61,
+    62
+  ],
+  "next": "Main project continuation must be determined after comparison with existing EGAV1-2.ps translation; page 62 Remark 4(d) is only the endpoint of the Dot batches and is NOT the whole-project missing-text endpoint.",
+  "local_part_II_numbering": "Definitions/Remarks 1–4 preserved in separate collation_16.tex; root integrates under existing short-manuscript scope, never appends duplicate §16.",
+  "restored_missing_range": "p.54 from If not, we have an f:X→P through p.55 it makes sense (cf. No.10 and No.12), including diagram and footnote 67",
+  "notes_count": 69,
+  "collation_notes_count": 7,
+  "converted_existing_diagrams": 5,
+  "new_restored_diagrams": 1,
+  "sources": [
+    {
+      "batch": "14锥投影构造",
+      "path": "unpacked/dot_batches/EGA第五卷_14锥投影构造_续译工程/EGA第五卷_14锥投影构造_校订续译.tex",
+      "sha256": "9c33dc5c2b130e6e7811d2e13dd27552dbfe7b5f96f81efa38deb60baf84feb0",
+      "original_body_characters": 1538
+    },
+    {
+      "batch": "14一般中心",
+      "path": "unpacked/dot_batches/EGA第五卷_14一般中心_续译工程/EGA第五卷_14一般中心_校订续译.tex",
+      "sha256": "528c086837501cb3c44f6ade1ea0238ce1c397e36ea167b3d11eaae5d1988895",
+      "original_body_characters": 1327
+    },
+    {
+      "batch": "14正则截面与爆破",
+      "path": "unpacked/dot_batches/EGA第五卷_14正则截面与爆破_续译工程/EGA第五卷_14正则截面与爆破_校订续译.tex",
+      "sha256": "2125248b6dccc418efb2adaa991e936741fa5fd12a293a9265e9b39d71f88173",
+      "original_body_characters": 1745
+    },
+    {
+      "batch": "14.1命题陈述",
+      "path": "unpacked/dot_batches/EGA第五卷_14.1命题陈述_续译工程/EGA第五卷_14.1命题陈述_校订续译.tex",
+      "sha256": "6b490867b908d4ce7e811f22e23c73b3b50f5ff9d562ab958696598429e05df9",
+      "original_body_characters": 1212
+    },
+    {
+      "batch": "14.1证明残文",
+      "path": "unpacked/dot_batches/EGA第五卷_14.1证明残文_续译工程/EGA第五卷_14.1证明残文_校订续译.tex",
+      "sha256": "ba0b36fd3d0a72d080218b9b31275eb560f40d7b573b7ba35d1f3a0cadf974a1",
+      "original_body_characters": 1593
+    },
+    {
+      "batch": "14.2有限投影",
+      "path": "unpacked/dot_batches/EGA第五卷_14.2有限投影_续译工程/EGA第五卷_14.2有限投影_校订续译.tex",
+      "sha256": "187c503878e1a5e52df36469c8e94035447f6ea348e518da915d80b21fb38f91",
+      "original_body_characters": 668
+    },
+    {
+      "batch": "14.3平坦性",
+      "path": "unpacked/dot_batches/EGA第五卷_14.3平坦性_续译工程/EGA第五卷_14.3平坦性_校订续译.tex",
+      "sha256": "1654ddb2ac525ff5f71e84b3f23dd7221e8553bc1e0be9778d544ab953c1322e",
+      "original_body_characters": 1389
+    },
+    {
+      "batch": "锥投影微分性质导言",
+      "path": "unpacked/dot_batches/EGA第五卷_锥投影微分性质导言_续译工程/EGA第五卷_锥投影微分性质导言_校订续译.tex",
+      "sha256": "801e7d7102be174922ad04617bf594708570d42f6d8521e670bdcb0a0a0d3dd7",
+      "original_body_characters": 896
+    },
+    {
+      "batch": "命题14.4",
+      "path": "unpacked/dot_batches/EGA第五卷_命题14.4_续译工程/EGA第五卷_命题14.4_校订续译.tex",
+      "sha256": "79857c686155f64b9e822a342f34a8325f0f8bcbe066bff8340535b7cd12594f",
+      "original_body_characters": 973
+    },
+    {
+      "batch": "命题14.5与推论14.6",
+      "path": "unpacked/dot_batches/EGA第五卷_命题14.5与推论14.6_续译工程/EGA第五卷_命题14.5与推论14.6_校订续译.tex",
+      "sha256": "d0146ca2199e9860bf4b4d5590ce1e3bdf4f0e2fa552530bdbc210625c5ce7c6",
+      "original_body_characters": 897
+    },
+    {
+      "batch": "锥投影性质辨析",
+      "path": "unpacked/dot_batches/EGA第五卷_锥投影性质辨析_续译工程/EGA第五卷_锥投影性质辨析_校订续译.tex",
+      "sha256": "597f7eb71d806b520de0938d9350ca216fe18587721824ddfc70004373157a73",
+      "original_body_characters": 1582
+    },
+    {
+      "batch": "锥投影普遍图式",
+      "path": "unpacked/dot_batches/EGA第五卷_锥投影普遍图式_续译工程/EGA第五卷_锥投影普遍图式_校订续译.tex",
+      "sha256": "8e97ae6de5c4393a338b65a8a6bef34aaa6ea460b523324c22ef262d793c7da4",
+      "original_body_characters": 1720
+    },
+    {
+      "batch": "第15节公理化导言",
+      "path": "unpacked/dot_batches/EGA第五卷_第15节公理化导言_续译工程/EGA第五卷_第15节公理化导言_校订续译.tex",
+      "sha256": "70800fe0770bbb4069e09c03e3718218b4ecfac773f766c8d82c2074af1a2829",
+      "original_body_characters": 799
+    },
+    {
+      "batch": "参数族与基变换",
+      "path": "unpacked/dot_batches/EGA第五卷_参数族与基变换_续译工程/EGA第五卷_参数族与基变换_校订续译.tex",
+      "sha256": "46ec1b59637022d52c9ff76509112e4382d3f4f0491d48175a8b6b3dee4db239",
+      "original_body_characters": 1543
+    },
+    {
+      "batch": "平坦性假设与非空性公理",
+      "path": "unpacked/dot_batches/EGA第五卷_平坦性假设与非空性公理_续译工程/EGA第五卷_平坦性假设与非空性公理_校订续译.tex",
+      "sha256": "19d70c6dcb987f55b58bfa8cc1511a3c8773eeb6fcc4e49961688f55a1a8a2c5",
+      "original_body_characters": 1423
+    },
+    {
+      "batch": "泛截面光滑性条件",
+      "path": "unpacked/dot_batches/EGA第五卷_泛截面光滑性条件_续译工程/EGA第五卷_泛截面光滑性条件_校订续译.tex",
+      "sha256": "172f4da4df5d27a42b6d55d9578de87a431e17438c6c511bc63399a4070d625b",
+      "original_body_characters": 1985
+    },
+    {
+      "batch": "第15节推广计划结语",
+      "path": "unpacked/dot_batches/EGA第五卷_第15节推广计划结语_续译工程/EGA第五卷_第15节推广计划结语_校订续译.tex",
+      "sha256": "4714381ca38c99ddf8961f384c677fe3dae8d777c2db0834f26c747d18989b6c",
+      "original_body_characters": 1005
+    },
+    {
+      "batch": "第16节奇异零点定义",
+      "path": "unpacked/dot_latest/EGA第五卷_第16节奇异零点定义_续译工程/EGA第五卷_第16节奇异零点定义_校订续译.tex",
+      "sha256": "880fdb71fdab73b7f4fb7cb08395cfacf9a3b0ee2f722c748209f5e34e714ad4",
+      "original_body_characters": 1537
+    },
+    {
+      "batch": "第16节几何奇异零点",
+      "path": "unpacked/dot_latest/EGA第五卷_第16节几何奇异零点_续译工程/EGA第五卷_第16节几何奇异零点_校订续译.tex",
+      "sha256": "cbeb9dcf18feeadba8681bf2b7013e6e0b9c544a528ea5e05afee2ec90152ec4",
+      "original_body_characters": 1444
+    }
+  ],
+  "body_sha256": "2947365ecc2b63df80aa6d2d4b1cd80974941ea732002345d5543d1e90116521",
+  "collation_sha256": "0fb873f8c6b850e5ceb5b4c56abdbeee93390ba07acd1a4941e78c5aa798b574",
+  "restored_sha256": "fff28f165bf48c7955d6a9baad815913a73cf397854263726580ad5302ea906d"
+}

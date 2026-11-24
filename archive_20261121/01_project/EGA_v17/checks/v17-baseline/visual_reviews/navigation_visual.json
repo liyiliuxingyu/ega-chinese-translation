@@ -1,0 +1,265 @@
+{
+  "review": "第十七版卷首、导航及新增正文/书末接合视觉核查",
+  "round": "final_after_root_toc_fix",
+  "status": "complete_with_scoped_visual_evidence",
+  "pdf": "work/EGA_v17/main.pdf",
+  "pdf_sha256": "5ac63b3c218d030742d332b4136e91661dbb132081607db1807a84dda31e07ee",
+  "pdf_pages": 1130,
+  "pdf_bytes": 5561903,
+  "render_scale": 1.5,
+  "reviewed_at_utc": "2026-11-19T17:10:23.829645+00:00",
+  "scope": "12 页导航证据：第一轮实际查看 11 页，最终轮复看 2 个变化目录页、首次查看第三分隔页，其余 9 页逐像素确认与已看图完全相同；不是全书逐页检查。",
+  "toc_bookmark_count": 416,
+  "pages_reviewed": [
+    {
+      "pdf_page": 1,
+      "page_label": "i",
+      "screenshot": "integration/navigation_visual/final/pdf_1_print_i.png",
+      "screenshot_sha256": "e4b1c5441ca89df291eaa51b483d4290d1d5de5a8d0a05f8ea7524fab0ba92a1",
+      "compared_to": "integration/navigation_visual/pdf_1_print_i.png",
+      "pixels_equal": true,
+      "observation": "封面：第十七版；标题、作者、编辑署名清楚，未出现全译完成称谓。",
+      "verification": "prior_visual_inspection_and_final_pixel_identity"
+    },
+    {
+      "pdf_page": 3,
+      "page_label": "iii",
+      "screenshot": "integration/navigation_visual/final/pdf_3_print_iii.png",
+      "screenshot_sha256": "7df57bd9747392ffd8d5d0f5fa050679788baf5b4a7da582ce238640764a2dfc",
+      "compared_to": "integration/navigation_visual/pdf_3_print_iii.png",
+      "pixels_equal": true,
+      "observation": "工作合订稿及尚非全部材料完结全译本的说明醒目；Dot 56 批来源和收录表起始排版正常。",
+      "verification": "prior_visual_inspection_and_final_pixel_identity"
+    },
+    {
+      "pdf_page": 4,
+      "page_label": "iv",
+      "screenshot": "integration/navigation_visual/final/pdf_4_print_iv.png",
+      "screenshot_sha256": "55d23dfa1085b853eb7c6600eaafb784a0319874ec1fe430b6bf2fb39f32f4d2",
+      "compared_to": "integration/navigation_visual/pdf_4_print_iv.png",
+      "pixels_equal": true,
+      "observation": "收录表续页正常；明确第四卷正文未译、第 V 卷同文两批去重、原稿缺文及未有有效修订的错误。",
+      "verification": "prior_visual_inspection_and_final_pixel_identity"
+    },
+    {
+      "pdf_page": 5,
+      "page_label": "v",
+      "screenshot": "integration/navigation_visual/final/pdf_5_print_v.png",
+      "screenshot_sha256": "cbe6d4644132714b525bbcfcd4a842a2a232c63d907f5ec18619a1dec0a41973",
+      "compared_to": "integration/navigation_visual/pdf_5_print_v.png",
+      "pixels_equal": true,
+      "observation": "真实接续点明确为 EGAVaiello 第 66 页 PS 截断后交换图；说明历史第 62 页注 4(d) 不能作为全工程缺译点。版式、编译/核查边界说明完整且不溢出。",
+      "verification": "prior_visual_inspection_and_final_pixel_identity"
+    },
+    {
+      "pdf_page": 17,
+      "page_label": "xvii",
+      "screenshot": "integration/navigation_visual/final/pdf_17_print_xvii.png",
+      "screenshot_sha256": "67104dcbf5b06b280c1c6f5abd9631cc89e2e1c485ebe27d6db6e38b006cc9dc",
+      "compared_to": "integration/navigation_visual/pdf_17_print_xvii.png",
+      "pixels_equal": false,
+      "observation": "实际复看：两处分隔页打印页码已为 925、1021，与链接及实际目标一致；第 V 卷 §7–15 层级/缩进和页码仍清楚，无四位数碰撞。",
+      "verification": "final_image_viewed"
+    },
+    {
+      "pdf_page": 18,
+      "page_label": "xviii",
+      "screenshot": "integration/navigation_visual/final/pdf_18_print_xviii.png",
+      "screenshot_sha256": "32a89cc5fde898f53d2293bc092e86f66c55ee981b41acc8f6ed3455643bd9e3",
+      "compared_to": "integration/navigation_visual/pdf_18_print_xviii.png",
+      "pixels_equal": true,
+      "observation": "书末资料的四位数页码与长标题无碰撞，缩进层级正常。",
+      "verification": "prior_visual_inspection_and_final_pixel_identity"
+    },
+    {
+      "pdf_page": 19,
+      "page_label": "xix",
+      "screenshot": "integration/navigation_visual/final/pdf_19_print_xix.png",
+      "screenshot_sha256": "2c052458ab39379fdabcd458fc07131f78cc574bd42216630504ceece6f7fbc7",
+      "compared_to": "integration/navigation_visual/pdf_19_print_xix.png",
+      "pixels_equal": false,
+      "observation": "实际复看：译稿来源与版本记录现列 1097，与分隔页一致；四位数数字列齐，长标题未碰撞。",
+      "verification": "final_image_viewed"
+    },
+    {
+      "pdf_page": 943,
+      "page_label": "923",
+      "screenshot": "integration/navigation_visual/final/pdf_943_print_923.png",
+      "screenshot_sha256": "fda9cb3c722991fd948aedb583bc494c65c4a89def1ea2ea7a8372fe4ab58516",
+      "compared_to": "integration/navigation_visual/pdf_943_print_923.png",
+      "pixels_equal": true,
+      "observation": "待译范围说明明确第 IV 章正文未译及第 V 卷真正接续位置；标题、行文和页码正常。",
+      "verification": "prior_visual_inspection_and_final_pixel_identity"
+    },
+    {
+      "pdf_page": 945,
+      "page_label": "925",
+      "screenshot": "integration/navigation_visual/final/pdf_945_print_925.png",
+      "screenshot_sha256": "5aa13e680aff3d5af2befb62e821b4b4ebd743f237c2a624cd607676a2d25d82",
+      "compared_to": "integration/navigation_visual/pdf_945_print_925.png",
+      "pixels_equal": true,
+      "observation": "预备笔记分隔页无编号标题居中，实际页码 925。",
+      "verification": "prior_visual_inspection_and_final_pixel_identity"
+    },
+    {
+      "pdf_page": 1040,
+      "page_label": "1020",
+      "screenshot": "integration/navigation_visual/final/pdf_1040_print_1020.png",
+      "screenshot_sha256": "034c7dc5d9dca745873144c21d2c66b8d644d3bda4f2923af010d12660735c05",
+      "compared_to": "integration/navigation_visual/pdf_1040_print_1020.png",
+      "pixels_equal": true,
+      "observation": "§15 末页正文、显示公式、六则 V-H-L064–L069 注及最终句均完整可见，无重叠或裁切。",
+      "verification": "prior_visual_inspection_and_final_pixel_identity"
+    },
+    {
+      "pdf_page": 1041,
+      "page_label": "1021",
+      "screenshot": "integration/navigation_visual/final/pdf_1041_print_1021.png",
+      "screenshot_sha256": "668e8527ae9599b540aa411ec9133b9fbcc3dbd94ba39f486a3d5398f57aa776",
+      "compared_to": "integration/navigation_visual/pdf_1041_print_1021.png",
+      "pixels_equal": true,
+      "observation": "书末资料分隔页标题完整，实际页码 1021；与前一页 §15 结束清楚分开。",
+      "verification": "prior_visual_inspection_and_final_pixel_identity"
+    },
+    {
+      "pdf_page": 1117,
+      "page_label": "1097",
+      "screenshot": "integration/navigation_visual/final/pdf_1117_print_1097.png",
+      "screenshot_sha256": "77873950710396a9f76b4650713ea97de6a4020b6d183c5b6089884c977c9cfa",
+      "verification": "final_image_viewed",
+      "observation": "实际查看新增核对：译稿来源与版本记录无编号分隔页，实际页码 1097，标题及页码完整。"
+    }
+  ],
+  "final_round_actually_viewed_pages": [
+    17,
+    19,
+    1117
+  ],
+  "previously_viewed_pixel_identical_pages": [
+    1,
+    3,
+    4,
+    5,
+    18,
+    943,
+    945,
+    1040,
+    1041
+  ],
+  "part_destinations_verified": [
+    {
+      "level": 1,
+      "title": "预备笔记：已译部分",
+      "pdf_page": 945,
+      "page_label": "925"
+    },
+    {
+      "level": 1,
+      "title": "各原分册的书末资料",
+      "pdf_page": 1041,
+      "page_label": "1021"
+    },
+    {
+      "level": 1,
+      "title": "译稿来源与版本记录",
+      "pdf_page": 1117,
+      "page_label": "1097"
+    }
+  ],
+  "section_destinations_verified": [
+    {
+      "level": 3,
+      "title": "§7 构造指定类型的超平面截面与多截面的应用",
+      "pdf_page": 972,
+      "page_label": "952"
+    },
+    {
+      "level": 3,
+      "title": "§8 例外超平面集合的维数",
+      "pdf_page": 974,
+      "page_label": "954"
+    },
+    {
+      "level": 3,
+      "title": "§9 更换射影嵌入",
+      "pdf_page": 997,
+      "page_label": "977"
+    },
+    {
+      "level": 3,
+      "title": "§10 超平面截面束与簇的爆破的纤维化",
+      "pdf_page": 1000,
+      "page_label": "980"
+    },
+    {
+      "level": 3,
+      "title": "§11 Grassmann 概形",
+      "pdf_page": 1004,
+      "page_label": "984"
+    },
+    {
+      "level": 3,
+      "title": "§12 将上述结果推广到线性截面",
+      "pdf_page": 1008,
+      "page_label": "988"
+    },
+    {
+      "level": 3,
+      "title": "§13 初等态射与 M. Artin 定理",
+      "pdf_page": 1018,
+      "page_label": "998"
+    },
+    {
+      "level": 3,
+      "title": "§14 锥投影",
+      "pdf_page": 1026,
+      "page_label": "1006"
+    },
+    {
+      "level": 3,
+      "title": "§15 前述若干结果的公理化",
+      "pdf_page": 1036,
+      "page_label": "1016"
+    }
+  ],
+  "issues": [
+    {
+      "id": "NAV-01",
+      "status": "resolved_and_final_visually_verified",
+      "severity": "printed_toc_page_mismatch",
+      "toc_pdf_page": 17,
+      "toc_page_label": "xvii",
+      "title": "预备笔记：已译部分",
+      "actual_destination_pdf_page": 945,
+      "actual_destination_page_label": "925",
+      "bookmark_and_hyperlink_target_correct": true,
+      "observation": "总目录打印页码晚两页；书签及目录标题链接指向实际分隔页 925。",
+      "original_printed_toc_page": "927",
+      "final_printed_toc_page": "925",
+      "resolution": "根代理修正分隔页写入目录的位置；最终渲染总目录页经实际查看，打印数字、链接及目标页码一致。"
+    },
+    {
+      "id": "NAV-02",
+      "status": "resolved_and_final_visually_verified",
+      "severity": "printed_toc_page_mismatch",
+      "toc_pdf_page": 17,
+      "toc_page_label": "xvii",
+      "title": "各原分册的书末资料",
+      "actual_destination_pdf_page": 1041,
+      "actual_destination_page_label": "1021",
+      "bookmark_and_hyperlink_target_correct": true,
+      "observation": "总目录打印页码晚两页；书签及目录标题链接指向实际分隔页 1021。",
+      "original_printed_toc_page": "1023",
+      "final_printed_toc_page": "1021",
+      "resolution": "根代理修正分隔页写入目录的位置；最终渲染总目录页经实际查看，打印数字、链接及目标页码一致。"
+    }
+  ],
+  "unresolved_visual_issues": [],
+  "outcome": "本轮范围内未见未解决的目录页码不一致、文字/页码碰撞、截断或页脚重叠。封面版本、收录范围与真实接续点说明均保留且清楚。",
+  "boundary_page_convention": "1040–1041 指 PDF 阅读器页；对应正文印刷页 1020–1021。",
+  "previous_round": {
+    "pdf_sha256": "c4cc8b96308a0ff53d3a1d47bdf5207893df6e8a73282c7cbea1698e612fba3b",
+    "report": "integration/navigation_visual/review_round1.json"
+  },
+  "comparison_evidence": "integration/navigation_visual/final_comparison.json"
+}

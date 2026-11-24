@@ -1,0 +1,172 @@
+\head{EGA V 短篇：函数的奇异零点与超奇异零点}
+\source{\texttt{EGAV1-2.ps}，转换后共6页：标题页及正文印刷第1--5页}
+\noindent\textbf{载体标题。} EGA V：§1及§§2.15、2.16（原编号为EGA IV：§16及§§17.15、17.16）。Grothendieck 的 EGA V“预备笔记”的编辑英译，由 Piotr Blass 与 Joseph Blass 完成。
+
+\egasection{V.1（原IV.16）：函数的奇异集、超奇异集与微分判据}
+这一节将在关于超平面截面的V.5（原IV.20）中使用，不过在我看来，它自然的位置是在这里。
+
+\egas{1}{定义}
+设 $X$ 为正则预概形，$\varphi$ 为 $\OO_X$ 的截面。若 $\varphi_x\in\mm_x^2$，则称 $x\in X$ 为 $\varphi$ 的\textbf{奇异零点（或根）}。若它是奇异零点，并且由它定义的元素
+\[
+ \varphi_x\bmod\mm_x^3\in\mm_x^2/\mm_x^3\simeq\Sym(\mm_x/\mm_x^2),
+\]
+在解释为 $\mm_x/\mm_x^2$ 的对偶 $t_x$ 上、取值于 $k(x)$ 的二次型时为退化二次型，则称它为\textbf{超奇异零点}。
+\cmt{T08}{这里的 $\Sym$ 应取二次部分 $\Sym^2$，不是整个对称代数。底本还把点的最大理想记作 $\mm_X$，本译文用 $\mm_x$ 明确其属于点 $x$ 的局部环。}
+（不是超奇异零点的奇异零点，有时称为\textbf{普通奇异零点}。）\cmt{P05}{“退化二次型”的约定在特征2时必须明确；后文用极化双线性映射的行列式判断，需要另核其与本定义是否完全一致。这里不擅自加入特征不等于2的假设。}
+
+\egas{2}{备注}
+若 $x\in V(\varphi)$，则 $x$ 是 $\varphi$ 的非奇异零点，当且仅当 $\varphi_x\ne0$，且 $x$ 是 $V(\varphi)$ 的非奇异点，即正则点；也就是说，当且仅当 $x$ 是 $V(\varphi)$ 的正则点，且在 $x$ 的某个邻域中 $V(\varphi)\ne X$。
+
+\egas{3}{定义}
+设 $X$ 是域 $k$ 上的光滑预概形，$\varphi$ 为 $\OO_X$ 的截面，$x\in V(\varphi)$。若对 $k$ 的每个扩域 $k'$，以及 $X$ 的每个以 $k$ 为值域、定位于 $x$ 的点 $\xi$，其在 $X_{k'}$ 中的对应点 $x'$ 都是 $\varphi_{k'}$ 的奇异零点（分别地，超奇异零点），则称 $x$ 为 $\varphi$ 相对于 $k$ 的\textbf{几何奇异零点}（分别地，\textbf{几何超奇异零点}）。
+\cmt{T08}{底本此处明确印作“values in $k$”，但随后的 $X_{k'}$ 点和备注4(a)均要求“以 $k'$ 为值域”。本段保留该误写以便对照；按定义使用时应改为 $k'$，否则非 $k$-有理点可能根本没有这种测试点，造成空泛量化。}
+
+\egas{4}{备注}
+\begin{enumerate}[label=\alph*)]
+\item 由下文将建立的判据可知，在定义3中，只须用某个 $k'$ 上的一个值点进行检验；例如可取 $k'=k(x)$ 或其代数闭包 $\overline{k(x)}$，以及相应的典范值点。
+\item 由备注2可知，$x$ 对 $\varphi$ 几何非奇异，当且仅当 $\varphi_x\ne0$，并且 $V(\varphi)$ 在 $x$ 处对 $k$ 光滑。
+\item 设预概形 $X$ 对另一预概形 $Y$ 光滑，$\varphi$ 为 $\OO_X$ 的截面，$x\in V(\varphi)$。若 $x$ 在纤维 $X_s$ 上是相对于 $k(s)$ 的奇异零点（分别地，超奇异零点），则称它为\textbf{相对于 $Y$ 的奇异零点}（分别地，超奇异零点）；这里 $s$ 是 $x$ 在 $Y$ 中的像。
+\item 在定义1的条件下，若将 $\varphi$ 换成 $\varphi'=u\varphi$，其中 $u$ 在 $x$ 处可逆，则 $x\in V(\varphi)$ 的奇异性或超奇异性不变。因而定义1以及定义3都可以自然地推广到 $\varphi$ 为某个可逆模 $L$ 的截面的情形，并在 $L=\OO_X$ 时恢复原定义。
+\end{enumerate}
+
+设预概形 $X$ 对预概形 $Y$ 光滑，$\varphi$ 为 $\OO_X$ 的截面。它给出 $\PP^2_{X/Y}$ 的截面 $d^2_{X/Y}\varphi$，后者约化为 $\PP^1_{X/Y}$ 的截面 $d^1_{X/Y}\varphi$，再约化为 $\PP^0_{X/Y}=\OO_X$ 的截面 $d^0\varphi=\varphi$。
+
+\egas{5}{命题}
+$d^0\varphi$ 的零点集是 $\varphi$ 的零点集 $V(\varphi)$；$d^1\varphi$ 的零点集是 $\varphi$ 相对于 $S$ 的奇异零点集 $V(\varphi)_{\mathrm{sing}}$。
+\cmt{T08}{此前的相对底为 $Y$；本句的 $S$ 尚未引入，故此处应为 $Y$。}
+\begin{proof}[原文证明]
+第一断言是平凡的。第二断言就是 Jacobian 判据；也可由如下典范同构得出：若 $x$ 是 $k$-预概形 $X$ 的一个 $k$-有理点，则
+\[
+ \mm_x/\mm_x^2\simeq\Omega^1_{X/k}(x).
+\]
+\end{proof}
+注意 $\operatorname{gr}^1(\PP^1_{X/Y})\simeq\Omega^1_{X/Y}$，所以限制 $d^1\varphi|V(\varphi)$ 可看成 $\Omega^1_{X/Y}\otimes\OO_{V(\varphi)}$ 的截面，它就是 $d_{X/Y}\varphi$ 在 $V(\varphi)$ 上的限制。因而可以考虑该截面的零点预概形，记为 $V(\varphi)_{\mathrm{sing}}$；由命题5，其底集正是 $\varphi$ 相对于 $Y$ 的奇异零点集。
+
+（注意：若 $\psi$ 是预概形 $X$ 上有限型局部自由模 $E$ 的截面，则可以自然地定义 $\psi$ 的零点子预概形，例如由转置映射 $E^\vee\to\OO_X$ 的像理想定义。若 $E=\OO_X^n$、$\psi=(\psi_1,\ldots,\psi_n)$，则该理想为 $\sum_i\psi_i\OO_X$，定义的子预概形为 $V(\psi_1,\ldots,\psi_n)$。）
+
+现在限制 $d^2\varphi$ 到 $V(\varphi)_{\mathrm{sing}}$，并注意
+\[
+ \operatorname{gr}^2(\PP^2_{X/Y})\simeq\Sym^2(\Omega^1_{X/Y}),
+\]
+便得到 $\Sym^2(\Omega^1_{X/Y})\otimes\OO_{V_{\mathrm{sing}}}$ 的典范截面 $M(\varphi)$。用域值点考察可知，这个截面正是定义1中决定二次型的截面（当 $X_k$ 由 $X/S$ 经 $\Spec k\to S$ 得到时）。\cmt{T08}{这句又改用了 $S$，而本段相对底仍记为 $Y$。它涉及同一类未统一的相对下标，不另计为一个定理反例。}
+由此可用该截面描述 $V(\varphi)_{\mathrm{sup\,sing}}$：将 $M(\varphi)$ 解释为同态
+\[
+ M(\varphi)':G_{X/Y}\otimes_{\OO_X}\OO_{V_{\mathrm{sing}}}
+ \longrightarrow\Omega^1_{X/Y}\otimes_{\OO_X}\OO_{V_{\mathrm{sing}}},
+\]
+取这个同态不是同构的点集。特别地，这说明 $V(\varphi)_{\mathrm{sup\,sing}}$ 为闭集。假定 $X$ 在 $Y$ 上的相对维数恒为 $d$，可以引入
+\[
+ D(\varphi)=\det M(\varphi)
+ \in\Gamma\left(V_{\mathrm{sing}},
+       (\Omega^d_{X/Y})^{\otimes2}\otimes\OO_{V_{\mathrm{sing}}}\right)
+\]
+使描述更精确。于是也可用 $V(\varphi)_{\mathrm{sup\,sing}}$ 表示 $V(\varphi)_{\mathrm{sing}}$（从而也为 $X$）的闭子概形，由这个可逆模截面的消失定义；它有正确的底集。
+
+\noindent\textbf{原稿编写提示：}最好把上述构造归纳为一个“命题6”。\cmt{P01}{所上传文件没有接着给出一个正式编号为6的命题陈述；本译文不补造。}
+
+一般情形下，不能对 $V(\varphi)_{\mathrm{sing}}$ 与 $V(\varphi)_{\mathrm{sup\,sing}}$ 说得更精确。下面考察一个在某些应用中有意义的特殊情形。设 $Y$ 也对预概形 $S$ 光滑，为明确起见，设其相对维数恒为 $m$。为简便起见，将 $V(\varphi)_{\mathrm{sing}}$ 记为 $V'$；它由秩为 $d+1$ 的局部自由模 $\PP^1_{X/Y}$ 的截面 $d^1\varphi$ 的消失定义。再假设 $V'$ 对 $S$ 光滑，相对维数为原稿所写的\cmt{T09}{该等式左边实际为 $m-d$。由 $X/Y$ 相对维数 $d$、$Y/S$ 相对维数 $m$，预期的计算应为 $(m+d)-(d+1)=m-1$。}
+\[
+ (m+1)-(d+1)=m-1.
+\]
+
+（注意，$V(\varphi)_{\mathrm{sing}}$ 与 $V(\varphi)_{\mathrm{sup\,sing}}$ 的记号有歧义，因为没有显示相对的预概形；此处约定相对底为 $Y$。还应注意，由假设可知，$\varphi$ 的每个相对于 $Y$ 的奇异零点，相对于 $S$ 都非奇异。）
+
+在此情形下，可以写出下面的局部自由模层图。为使列图在默认版心内可读，设\cmt{图中文字}{以上 $A,B,C,D,R,W$ 只是本译稿为重排所加的缩写；原稿在图内展开写出各模。本图把原稿的 $V^1$ 统一显示为前文已定义的 $V'$，没有增加任何交换关系。$G$ 的含义沿用英译稿后面的编者疑问。}
+\[
+ A=(\PP^1_{X/Y})^\vee|_{V'},\quad
+ B=\Omega^1_{X/S}|_{V'},\quad C=\Omega^1_{X/Y}|_{V'},
+\]
+\[
+ D=\Omega^1_{Y/S}|_{V'},\quad R=\Omega^1_{V'/S},\quad
+ W=\omega_{X/Y}^{-2}|_{V'}.
+\]
+
+\[
+\begin{tikzcd}[row sep=large,column sep=large]
+ &&0\\
+ &&C\arrow[u]\\
+ 0\arrow[r]&A\arrow[r]\arrow[ur,"\mu"]&B\arrow[u]\arrow[r]&R\arrow[r]&0\\
+ &\OO_{V'}\arrow[u]\arrow[r]&D\arrow[u]\arrow[ur,"\nu"']\\
+ W\arrow[ur]&&0\arrow[u]
+\end{tikzcd}
+\]
+竖直列来自光滑态射 $X\to Y$ 和 $Y\to S$ 的传递性正合列，再与 $\OO_{V'}$ 张量；由于列中各模均局部自由，张量后仍正合。横行是以下正合列的特例：在 $X/S$ 上给定局部自由模 $F$ 的截面 $\psi$，令 $W$ 为其零点概形，则有
+\[
+ F^\vee\otimes\OO_X\longrightarrow
+ \Omega^1_{X/S}\otimes\OO_W\longrightarrow\Omega^1_{W/S}\longrightarrow0.
+\]
+原稿接着说：若 $X/S$ 光滑，则第一个同态恰在 $W$ 对 $X$ 光滑且具有“正确”相对维数的点处单射（也就是说，在当前情形下处处单射）。\cmt{E06、T10}{若把它理解为 $W$ 上的模列，首项应限制到 $W$；作为 $X$ 上的模列则可经限制映射解释。相对光滑的底应核为 $S$，而层单射不足以推出光滑，须检验纤维满秩。尖点例子见E06。}
+这个正合列直接由第16段中的下列正合列得到（可以把上述版本列为推论）：\cmt{T10}{末项在底本中重复写作 $\Omega^1_{X/S}$；余法正合列的末项应为 $\Omega^1_{W/S}$。这里保留错误式，而非无说明地改写。}
+\[
+ J/J^2\longrightarrow\Omega^1_{X/S}\otimes\OO_W
+      \longrightarrow\Omega^1_{X/S}\longrightarrow0.
+\]
+
+能够在最左边添上一个零的点集的刻画，包含在 Jacobian 判据中。\cmt{E06}{这一句也必须结合纤维满秩与适当余维假设理解，不能把抽象单射与光滑判据等同。}
+
+注意，有典范同构
+\[
+ \PP^1_{X/S}=\Omega^1_{X/S}+\OO_X,
+ \qquad (\PP^1_{X/S})^\vee=G_{X/S}+\OO_X
+\]
+（原稿中的 $G$ 是拉长的字形）。\ednote{拉长的 $G$ 是否就是切层？}
+\cmt{T08}{这里以及紧接的 $\Omega^1_{X/S}$、$G_{X/S}$ 与前面 Hessian 构造的 $X/Y$ 下标不一致。若解释图中的 $\mu$，应使用相对于 $Y$ 的主部与微分。}
+另一方面，可验证图中复合同态 $\mu$ 在因子 $\OO_{V'}$ 上为零，在因子 $G_{X/S}\otimes\OO_{V'}$ 上化为从上述 $\Sym^2(\Omega^1_{X/S})\otimes\OO_{V'}$ 的截面 $M(\varphi)$ 得到的同态 $M(\varphi)$〔此处字迹不清〕。因此，在 $X$ 的点 $x$ 处，$M(\varphi)$ 非退化，即 $M(\varphi)'$ 满射，当且仅当原稿所写的 $M$ 在 $x$ 处满射；图中这也等价于原稿所写的 $V$ 在 $x$ 处满射，因为两者都表示：所提到的 $\Omega^1_{X/S}|_{V'}$ 的两个子模之和到该模的典范同态在 $x$ 处满射。\cmt{T08}{本句的 $M,V$ 依图应读为 $\mu,\nu$；这是印在英译载体中的字母错置。}
+由此得到：
+
+\egas{7}{命题}
+在以上条件下（需重新列出），$V(\varphi)_{\mathrm{sup\,sing}}$ 的底集恰为 $V(\varphi)_{\mathrm{sing}}$ 中使态射
+\[
+ V(\varphi)_{\mathrm{sing}}\longrightarrow Y
+\]
+分歧的点集；这里源与靶都是 $S$ 上光滑的预概形，相对维数分别为 $m-1$ 与 $m$。
+
+用前辈的说法（可把这一点写成备注），点 $x\in V(\varphi)$ 相对于 $Y$ 超奇异，当且仅当“它由至少两个重合的、无穷邻近的奇异点组成……”
+
+可以而且必须把命题7精确化为子预概形之间的相等，而不仅是子集之间的相等。事实上，$V(\varphi)_{\mathrm{sup\,sing}}$ 已定义为 $X$ 的一个闭子预概形；同样也可自然地定义 $V'$ 的一个闭子概形，其底集为相对于 $Y$ 的分歧点集。只须表示局部自由模同态
+\[
+ Q=\Omega^1_{Y/S}|_{V'}\longrightarrow M=\Omega^1_{V'/S}
+\]
+不满射的点集。若两者的秩分别为 $q,r$，原英译在此写成
+\[
+ \Lambda^1Q\longrightarrow\Lambda\sqrt M
+\]
+不满射的点集，并将截面所属的 Hom 表达式写成\cmt{T01}{这里的根号式字形在 PS 渲染页面上确实可见，并非本次文本抽取造成。它不能构成有效的外幂公式。可有数学意义的表达应为 $\bigwedge^rQ\to\bigwedge^rM$，视为 $\mathscr Hom(\bigwedge^rQ,\det M)$ 的截面。本译文不把破损式冒充可读的完整公式。}
+\[
+\begin{split}
+ \Hom(\Lambda^1Q,\Lambda\sqrt M)
+ &\simeq(\approx)(\Lambda\sqrt Q)\\
+ &\qquad\otimes(\Lambda^rR)\otimes(\Lambda^1Q)^\vee.
+\end{split}
+\]
+
+原稿随即把它描述为这个显然截面的零点集，即一个闭零点子预概形的底集，并把它记为 $\operatorname{Ram}(V'/Y)$。我断言，这个子概形等于 $V(\varphi)_{\mathrm{sup\,sing}}$。这是关于上述图的一个简单练习：由 $\mu$ 的描述可知，$V(\varphi)_{\mathrm{sup\,sing}}$ 是对同态
+\[
+ P=(\PP^1_{X/Y})^\vee|_{V'}\longrightarrow
+ S=\Omega^1_{X/Y}|_{V'}
+\]
+使用与刚才对 $Q\to R$ 所作相同的构造而定义的。
+
+因此归结为以下一般情形。在赋环空间 $W$ 上给定秩 $m$ 的局部自由模 $M$，以及秩分别为 $p,q$ 的两个局部自由子模 $P,Q$，使原稿所写的
+\[
+ p+1=m+1
+\]
+成立；对态射 $P\to M/W=S$ 和 $Q\to M/P=R$ 使用上述构造，得到以下两个模的截面：
+\begin{align*}
+ &P\otimes\det S\otimes(\det P)^{-1}\\
+ &\hspace{1em}=P\otimes\det M\otimes(\det P)^{-1}\otimes(\det Q)^{-1},\\
+ &Q\otimes\det M\otimes(\det P)^{-1}\otimes(\det Q)^{-1}.
+\end{align*}
+\cmt{T01}{按上一句的余秩关系，这里应为 $p+q=m+1$；$M/W$ 则应为 $M/Q$，因为 $W$ 是赋环空间而非 $M$ 的子模。这些修正均需明示。}
+也可把这两个截面视为从原稿所写的
+\[
+ L=\det P\otimes\det Q\otimes\det M
+\]
+分别到 $P,Q$ 的同态。\cmt{T01}{由上面两个截面所属的模计算，$L$ 的末因子应为 $(\det M)^{-1}$。详见核查报告中的类型核对。}
+（注意：对局部自由模 $F$，用 $\det F$ 表示它的最高外幂，并使用如下事实：若
+\[
+ 0\longrightarrow F'\longrightarrow F\longrightarrow F''\longrightarrow0
+\]
+是这种模的短正合列，则有典范同构 $\det F=\det F'\otimes\det F''$。）在这些条件下，有下面这个图的交换性——
+
+\par\bigskip\noindent\textbf{原文件在此结束。}标题提及的其他小节不能仅凭文件名认定已收录；所上传的六页文件没有在最后一句之后提供交换图或证明结尾。本译稿已翻译其全部可读正文，但没有补造所缺内容。

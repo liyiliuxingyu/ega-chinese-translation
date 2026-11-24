@@ -1,0 +1,112 @@
+\documentclass[openany,fontset=fandol]{ctexbook}
+\usepackage{amsmath,amssymb}
+\usepackage[unicode,hidelinks]{hyperref}
+\setlength{\emergencystretch}{2em}
+\newcommand{\OO}{\mathcal O}
+\newcommand{\Qsp}{\mathcal Q}
+\DeclareMathOperator{\Sym}{Sym}
+\DeclareMathOperator{\Isom}{Isom}
+\DeclareMathOperator{\Hom}{Hom}
+\begin{document}
+\title{代数几何基础第五卷预备笔记\\17.16　光滑二次型：16.9--16.11.2}
+\author{据法文扫描和英译编辑稿互校续译}
+\date{2026年11月21日}
+\maketitle
+\chapter*{范围与接续}
+本批从定理16.9译至引理16.11.2及定理证明结束，含推论16.10和命题16.11。英译物理80--83页，法文扫描物理164--168页。下一处为证明后的作者按语“N.B. On aurait pu donner 16.11.2 dès le début”（英83、法168），不能跳到16.12。与原文不同之处见脚注，新增论证单列。尚未并入合订本。
+
+\chapter*{17.16　光滑二次型（续）}
+\noindent\textbf{定理16.9.}\quad 设$S$为预概形，$E$为$S$上有限正秩的局部自由模，$Q\in\Gamma(S,\Sym^2 E)$。以下两条等价；若$E$的秩恒为$n$，它们还与(iii)、(iii bis)等价。\footnote{原文未显式排除零秩。按15.1的光滑型定义和16.4的$n>0$标准型约定，补写正秩；参见上一批命题16.2的脚注。原文把恒秩限定放在(iii)之内。}
+\begin{enumerate}
+\renewcommand{\labelenumi}{(\roman{enumi})}
+\item $Q$光滑。
+\item 校正判别式$\widetilde d(Q)\in\Gamma(S,(\det E)^{\otimes2})$可逆。
+\item 存在满射$S'\to S$，使得$Q$经基变换得到的$Q_{S'}$与$n$变量的标准二次型同构。
+\item[(iii bis)] 同(iii)，但要求$S'\to S$忠实平坦且为有限表示（fppf）。
+\end{enumerate}
+
+\noindent\textbf{推论16.10.}\quad 设$k$为域，$E$为$k$上正维有限维向量空间，$Q\in\Sym^2 E$。以下条件等价：
+\begin{enumerate}
+\renewcommand{\labelenumi}{(\roman{enumi})}
+\item $Q$光滑；
+\item $\widetilde d(Q)\ne0$；
+\item 存在$k$的一个扩域$k'$，使得$Q\otimes_k k'$与标准型同构；
+\item[(iii bis)] 同(iii)，且$k'/k$有限。
+\end{enumerate}
+这直接由16.9推出。注意，当$k$为代数闭域时，(iii)与(iii bis)可换成更醒目的条件：$Q$已经与标准型同构。
+
+\noindent\textbf{定理16.9的证明。}\quad 可以设$E$的秩恒为$n$。由于标准型的校正判别式是单位，\footnote{两底本写等于$1$。按16.1和16.5的极化行列式约定，实际为$(-1)^{\lfloor n/2\rfloor}$，仍为单位。}立刻有
+\[
+  \text{(iii bis)}\Longrightarrow\text{(iii)}\Longrightarrow\text{(ii)} .
+\]
+现在证明$\text{(ii)}\Rightarrow\text{(iii bis)}$，然后证明$\text{(i)}\Leftrightarrow\text{(ii)}$。
+
+设$E_0=\OO_S^n$，$Q_0$为$E_0$上的标准型。考虑函子
+\[
+ \Isom((E_0,Q_0),(E,Q)):(\mathrm{Sch}/S)^{\mathrm{op}}\longrightarrow\mathrm{Sets}.
+\]
+它在每个$S$上的$S'$所取的值，是与$Q_{0,S'}$和$Q_{S'}$相容的同构$(E_0)_{S'}\to E_{S'}$的集合。不必对$E$或$Q$另加条件，这一函子由一个在$S$上仿射且有限表示的预概形$P$表出。它是
+\[
+ W=\mathbf W\bigl(\Hom_{\OO_S}(E_0,E)\bigr)
+\]
+的子预概形，也是$W$的开子概形$\Isom(E_0,E)$中的闭子预概形。\footnote{两底本在此处把同构空间的第二个模写作$E_1$，据上下文改作$E$。} 要证明$\text{(ii)}\Rightarrow\text{(iii bis)}$，只需证明$\widetilde d(Q)$可逆时$P$在$S$上忠实平坦；事实上可取$S'=P$。
+
+简记$\Qsp(E)=\mathbf W(\Sym^2 E)$，同样定义$\Qsp(E_0)$。通过结构输运，得到
+\[
+ u\longmapsto\Qsp(u):
+ \Isom(E_0,E)\longrightarrow\Isom(\Qsp(E_0),\Qsp(E)).
+\]
+用$Q_0$对应的截面$q_0$，得到态射
+\[
+ (*)\qquad \Isom(E_0,E)\longrightarrow\Qsp(E),\qquad
+ u\longmapsto\Qsp(u)(q_0).
+\]
+另一方面，$Q$对应于$\Qsp(E)$在$S$上的截面$q$；按定义，$P$正是$q(S)$在$(*)$下的逆像。这也随即证明前述可表性：$P$在$S$上仿射且有限表示。
+
+在$\Qsp(E)$中引入开子概形$\Qsp(E)^*=\Qsp(E)_{\widetilde d}$，对应于校正判别式可逆的二次型。它表出将$S'$映至$\Sym^2 E_{S'}$中校正判别式可逆的截面集合的函子。结构输运给出
+\[
+ \Isom(E_0,E)\longrightarrow\Isom(\Qsp(E_0)^*,\Qsp(E)^*).
+\]
+由于标准型$Q_0$的校正判别式是单位，$q_0$是$\Qsp(E_0)^*$的截面。\footnote{法文确为$q_0$、$\Qsp(E_0)^*$；英译混作$q$与$\Qsp(E)^*$，后面又把$\Qsp(E)^*$误排为$O(E)^*$。原稿数值$1$改作单位，理由同上。} 因而$(*)$通过下列态射分解：
+\[
+ (**)\qquad \Isom(E_0,E)\longrightarrow\Qsp(E)^* .
+\]
+两端都在$S$上有限表示，所以此态射也有限表示。现在只需证明下述命题。
+
+\noindent\textbf{命题16.11.}\quad 沿用以上记号，态射$(**)$忠实平坦。
+
+因此，若$Q$满足(ii)，即$q$实际上是$\Qsp(E)^*$的截面，则沿$q$对$(**)$作基变换所得的$P$仍在$S$上忠实平坦。这就证明了16.9的$\text{(ii)}\Rightarrow\text{(iii bis)}$。
+
+\noindent\textbf{命题16.11的证明。}\quad 两端都在$S$上光滑，所以只需逐纤维证明平坦性，这把问题归结到$S$是代数闭域$k$的谱的情形。这时可以设$E_0=E$，于是$(**)$成为
+\[
+ (***)\qquad \mathrm{GL}(E)\longrightarrow\Qsp(E)^*,\qquad u\longmapsto u(q_0).
+\]
+此态射来自群概形$\mathrm{GL}(E)$在$\Qsp(E)^*$上的自然作用，其中$q_0$对应于标准型$Q_0$。由泛平坦性定理，$\Qsp(E)^*$在$k$上光滑，因而约化；存在稠密开集$U\subseteq\Qsp(E)^*$，其上$(***)$平坦。对于任意$u\in\mathrm{GL}(E)(k)$，即$E$的任一自同构，$u(U)$也满足同一平坦性条件。要证明$(***)$平坦，只需证明所有$u(U)$覆盖$\Qsp(E)^*$。为此，只要证明$\mathrm{GL}(E)(k)=\operatorname{Aut}(E)$在$\Qsp(E)^*(k)$上作用传递，即一切校正判别式非零的二次型都在标准型的轨道上。这也给出$(***)$的满射性，故归结为下列引理。\footnote{这段末尾原稿只称“判别式”；由$\Qsp(E)^*$的定义，此处应为校正判别式，尤其是在特征2的奇秩情形。}
+
+\noindent\textbf{引理16.11.1.}\quad 设$Q$是代数闭域上的$n$变量二次型，且$\widetilde d(Q)\ne0$，则$Q$与标准型同构，亦即适当选取基就能写成标准型。
+
+若$E$为偶秩或$k$的特征不为$2$，假设意味着$Q$非退化；结论可见于 Bourbaki。反之，若$k$的特征为$2$且$E$为奇秩，则$Q$退化。取关联双线性型的核中的一条直线$E_1\subseteq E^\vee$及其补空间$E_2$。于是$Q$写成秩一型$Q_1$与偶秩型$Q_2$的直和$Q_1\oplus Q_2$。\footnote{法文及英译在选直线处写在$E$中；按16.1，$B$定义在$E^\vee$上，核与补空间均应取在$E^\vee$中。} 由16.8，$Q_1$、$Q_2$的校正判别式都非零。由前一情形，$Q_2$与标准型同构；又$Q_1$非零，故与一变量标准型同构。于是$Q$与标准型同构，引理得证。
+
+还需证明16.9中(i)与(ii)等价。可以设$S$为代数闭域的谱，从而归结到：
+ 
+\noindent\textbf{引理16.11.2.}\quad $Q$光滑，当且仅当$Q$与标准型同构。\footnote{法文手写题句是双向箭头；英译题句只印正向，随后的证明实含两个方向。原稿后述极化箭头有颠倒之处，按16.1统一作$E^\vee\to E$。}
+
+由16.2，可以设$k$的特征为$2$且$E$为奇秩。若$Q$与标准型同构，由16.3可立即验证其光滑：$E^\vee\to E$的核为一维，$Q$在核上不恒为零，因此在核中只有平凡零点。
+
+反过来，仍由16.3，若$Q$光滑，那么$Q$限制到极化根基$N$后仅有平凡零点。因此$N$为一维，且$Q|_N\ne0$。取$N$的一个补空间，便得到$Q$与标准型同构。这证明了16.11.2，完成16.9的证明。
+
+\section*{译校说明（非原文）}
+\begingroup\small
+\paragraph{同构空间及相对基底。}
+局部平凡化后，在矩阵坐标环中使行列式可逆（可添变量$t$并加$t\det(u)=1$），再施加两型相容的有限个系数方程，得到仿射有限表示的$P$。秩不恒定时，(i)及(ii)按各开闭秩层分别检查。正秩时，二次型的光滑条件可在几何纤维上检验（参看第69批的相对 Cartier 平坦性说明）；线丛截面可逆也等价于在每个几何纤维上非零。对(iii)所用的满射不必平坦：在每点取一上方点，截面若原来在纤维上为零，随剩余域扩张仍为零。推论16.10的有限扩域可由非空有限型同构预概形的一个闭点取得；不声称扩域可分。
+
+\paragraph{轨道映射的平坦和满射。}
+两端均为向量丛的开子概形，在$S$上光滑。按\href{https://stacks.math.columbia.edu/tag/039C}{有限表示的逐纤维平坦性判据}，只需在几何纤维证明平坦。在代数闭域上，目标是整的仿射空间的非空开子概形，故可用泛平坦性取$U$。等变性使所有$u(U)$之上平坦。$U$含$k$点，传递性使这些开集的并包含所有闭点；非空闭补集必有闭点，故确实覆盖。满射性可在任一点的代数闭剩余域上用16.11.1，获得其上方的一点。
+
+\paragraph{奇秩根基。}
+在特征2的代数闭域上，$Q|_N$是一个线性型的平方；若$\dim N\ge2$，必有非零零点。奇秩交替型的根基非零，所以光滑时恰为一维。取补空间后得到非退化的偶秩极化型，与根基正交。秩一部分重缩放即可化成$X^2$；补空间为零时没有配对项。通常的非退化型分类也可直接得到：维数至少为二时，在二平面上限制齐次二次式，可找非零零向量$x$。选$y$使$B(x,y)=1$，再把$y$换成$y-Q(y)x$，两向量即为一个双曲对。取正交补重复此过程；若最终余一维，非零平方系数可开平方而归一。
+
+\paragraph{fppf 不等于光滑。}
+特征2、奇秩时，取标准型的非零极化根基向量$z$。在单位元以双数写$g=1+\varepsilon A$、$\varepsilon^2=0$，轨道映射的一阶变化（按预合成约定）为$v\mapsto B_0(v,Av)$，在$z$恒为零。目标是二次型空间的开集；取$\ell(z)=1$，则切方向$\ell^2$不在像中。因此此态射虽忠实平坦，却不一定光滑；秩一情形就是$\mathbb G_m$上的平方映射。这不妨碍$Q_0$作为二次型光滑。
+\par\endgroup
+\end{document}

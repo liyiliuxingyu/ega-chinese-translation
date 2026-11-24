@@ -1,0 +1,131 @@
+{
+  "schema_version": 2,
+  "edition": 17,
+  "text_release": "v17-V-20261121-supplement-III",
+  "package_revision": "20261121-dot-consolidation",
+  "record_date": "2026-11-21",
+  "time_zone": "Asia/Shanghai",
+  "all_books_finished": false,
+  "current_project": "01_project/EGA_v17",
+  "path_convention": "current_project and source/archive paths are relative to package root; book/report artifact paths are relative to current_project",
+  "this_round": {
+    "kind": "project recovery, consolidation, independent build and handover verification",
+    "new_translation_added": false,
+    "mathematical_tex_sources_changed": false,
+    "source_tex_records_unchanged": 126,
+    "full_mathematical_reaudit": false
+  },
+  "book": {
+    "modular": "main.tex",
+    "single": {
+      "path": "single.tex",
+      "bytes": 3025047,
+      "sha256": "010e78cbce81b9ac116aa17cee0e23941c0a2fabf0d2ed99b5549e1a5e1af1f7"
+    },
+    "pdf": {
+      "path": "main.pdf",
+      "bytes": 5706065,
+      "sha256": "2fd1bc1cdcf67553a9612500f77611837758d0331cc44428e46d5721be8b68a4",
+      "pages": 1158
+    }
+  },
+  "report": {
+    "modular": "report.tex",
+    "single": {
+      "path": "report_single.tex",
+      "bytes": 388484,
+      "sha256": "ac955f2e3f33ab3e0dea2bfb63d37ef468b3d348e6524b28236f157be4ea3721"
+    },
+    "pdf": {
+      "path": "report.pdf",
+      "bytes": 1484011,
+      "sha256": "eb585dc300a7264bbeb260799f14e4d58c7361dad0dde0a68d3e67fc7354aa25",
+      "pages": 287
+    }
+  },
+  "dot_batches": {
+    "total_source_batches": 75,
+    "old": {
+      "count": 56,
+      "body_continuation": 54,
+      "same_text_collation": 2,
+      "stable_ids": "old001-old056"
+    },
+    "added_since_v17_full": {
+      "count": 19,
+      "source_labels": [
+        50,
+        51,
+        52,
+        53,
+        54,
+        55,
+        56,
+        57,
+        58,
+        59,
+        60,
+        61,
+        62,
+        63,
+        64,
+        65,
+        66,
+        67,
+        68
+      ],
+      "stable_ids": "new001-new019"
+    },
+    "combined_index": "05_Dot/DOT_BATCHES_COMBINED.json",
+    "note": "Original labels 50-68 and old order are different sequences; they are not summed as numeric ranges."
+  },
+  "source_corpus": {
+    "count": 13,
+    "directory": "03_sources",
+    "manifest": "07_integration_records/20261121/source_corpus_manifest.json",
+    "french_scan_pages": 171
+  },
+  "current_continuous_end": {
+    "branch": "V recent short manuscript and supplements",
+    "english_source": "03_sources/EGAVaiello.pdf",
+    "physical_page": 77,
+    "last_original_item": "15.7 final author editorial note",
+    "french_source": "03_sources/EGA5_francais.pdf",
+    "french_physical_pages_in_reading_order": [
+      159,
+      158
+    ],
+    "book_last_author_page": 981,
+    "book_final_editorial_note_page": 982
+  },
+  "next": [
+    {
+      "branch": "V",
+      "source": "03_sources/EGAVaiello.pdf",
+      "physical_page": 78,
+      "starts_at": "Appendix 17.16 Smooth Quadratic Forms, 16.1",
+      "french_source": "03_sources/EGA5_francais.pdf",
+      "french_physical_page": 161
+    },
+    {
+      "branch": "IV",
+      "source": "03_sources/EGAIV.1.pdf",
+      "physical_page": 221,
+      "starts_at": "Chapter IV synopsis; introduction on physical 222-223; (1.1.1) on physical 223"
+    }
+  ],
+  "default_continuation_if_no_volume_specified": "Check pending source additions and the actual end of the current inputs first, then continue the recent V branch at English physical page 78 / French physical page 161. Follow any new explicit user instruction.",
+  "pending_source_additions": [],
+  "pending": "PENDING_ISSUES.md",
+  "canonical_build": "build.sh --verify-single",
+  "verification": {
+    "source_structure": "checks/current_structure_verification.json",
+    "actual_build_logs": "checks/current_build_log_summary.json",
+    "all_page_pdf_parity": "checks/current_pdf_parity.json",
+    "visual_samples": "checks/VISUAL_REVIEW_20261121.md",
+    "scope": "Technical integrity and explicitly sampled layout; not independent proof verification of the entire corpus."
+  },
+  "historical_restore_index": "04_history/RESTORE_INDEX.json",
+  "automation_created_or_modified": false,
+  "email_sent": false
+}

@@ -1,0 +1,58 @@
+{
+  "main.log": {
+    "Overfull": 0,
+    "Underfull": 50,
+    "Missing character": 0,
+    "Undefined control sequence": 0,
+    "LaTeX Error": 0,
+    "undefined references": 0,
+    "Font Warning": 4,
+    "Token not allowed": 0,
+    "output_record": [
+      "Output written on main.pdf (1130 pages)."
+    ],
+    "log_sha256": "7911cec29f4992b499839ace7909c88f9940b315b682c5c318e9eef3ab807f37"
+  },
+  "report.log": {
+    "Overfull": 0,
+    "Underfull": 43,
+    "Missing character": 0,
+    "Undefined control sequence": 0,
+    "LaTeX Error": 0,
+    "undefined references": 0,
+    "Font Warning": 4,
+    "Token not allowed": 14,
+    "output_record": [
+      "Output written on report.pdf (283 pages)."
+    ],
+    "log_sha256": "2215d833a836b0dae1524ed3aff544b82e6525d3da91ed88081bb2503412576f"
+  },
+  "single_build/book_single.log": {
+    "Overfull": 0,
+    "Underfull": 50,
+    "Missing character": 0,
+    "Undefined control sequence": 0,
+    "LaTeX Error": 0,
+    "undefined references": 0,
+    "Font Warning": 4,
+    "Token not allowed": 0,
+    "output_record": [
+      "Output written on book_single.pdf (1130 pages)."
+    ],
+    "log_sha256": "8382a138a40e5ee6643bc58fa65271bf3ae1c5c442fbdcb24d8cd338f63d2818"
+  },
+  "single_build/audit_single.log": {
+    "Overfull": 0,
+    "Underfull": 43,
+    "Missing character": 0,
+    "Undefined control sequence": 0,
+    "LaTeX Error": 0,
+    "undefined references": 0,
+    "Font Warning": 4,
+    "Token not allowed": 14,
+    "output_record": [
+      "Output written on audit_single.pdf (283 pages)."
+    ],
+    "log_sha256": "cef6f0e2b540e3189180a0531b404ad8f2ff9af1726d1d190caf204ebf4323c9"
+  }
+}
