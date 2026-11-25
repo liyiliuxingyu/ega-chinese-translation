@@ -1,0 +1,10 @@
+{
+  "base_commit": "f1ade3db412d2167779d4b8f9fa2ed04a4daf0c3",
+  "time_utc": "2026-11-25T06:46:48.057601+00:00",
+  "sparse_checkout": true,
+  "materialized_checked": 777,
+  "unmaterialized_records": 2322,
+  "errors": [],
+  "pass": true,
+  "scope": "All materialized manifest files; remaining payload preserved in origin Git tree and not re-read locally at this stage."
+}

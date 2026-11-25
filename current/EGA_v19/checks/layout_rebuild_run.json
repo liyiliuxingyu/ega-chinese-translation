@@ -1,0 +1,12 @@
+{
+  "command": [
+    "bash",
+    "-c",
+    "source scripts/tex_environment.sh\npython3 flatten_sources.py\nfor pass in 1 2 3; do flags=(); if [[ \"$pass\" -lt 3 ]]; then flags=(-no-pdf); fi; xelatex -interaction=nonstopmode -halt-on-error \"${flags[@]}\" main.tex > main.pass$pass.log.txt 2>&1 || exit $?; done\ncp single.tex single_build/book_single.tex\ncd single_build\nfor pass in 1 2 3; do flags=(); if [[ \"$pass\" -lt 3 ]]; then flags=(-no-pdf); fi; xelatex -interaction=nonstopmode -halt-on-error \"${flags[@]}\" book_single.tex > book_single.pass$pass.log.txt 2>&1 || exit $?; done"
+  ],
+  "started_at_utc": "2026-11-24T17:17:18.867186+00:00",
+  "finished_at_utc": "2026-11-24T17:21:27.704661+00:00",
+  "elapsed_seconds": 248.838,
+  "exit_code": 0,
+  "scope": "Book modular and standalone rebuild after two documented layout-only fixes. Report modular and standalone builds remain initial_four_build_run.json."
+}

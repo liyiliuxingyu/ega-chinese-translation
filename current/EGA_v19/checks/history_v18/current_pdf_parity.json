@@ -1,0 +1,34 @@
+{
+  "renderer": "PyMuPDF 1.26.6",
+  "dpi": 72,
+  "pairs": {
+    "book_modular_vs_single": {
+      "pass": true,
+      "left_pages": 1210,
+      "right_pages": 1210,
+      "left_sha256": "af6569828e4bb62c8f133ca46618609c8f26767267d606cf7f3635ee70cd613e",
+      "right_sha256": "df6ebf933291d2dae4ed430ae71baea232925aa3cc48c890e065c6c41aa576ae",
+      "left_raster_digest": "674e4d627c02e9e6d89b840fdbd886d64e3b554e38cf3ffd0632347aee43f2b0",
+      "mismatches": {
+        "text": [],
+        "page_size": [],
+        "pixels": []
+      }
+    },
+    "report_modular_vs_single": {
+      "pass": true,
+      "left_pages": 357,
+      "right_pages": 357,
+      "left_sha256": "ff2122b0a7c7306c79b7c15f6b09e7013eb33eab222c346795ae4c7be4051fb0",
+      "right_sha256": "860e2c52b83099a47a024b85587c8563ee96b63fdc721a4c9036fb26dba5c8e4",
+      "left_raster_digest": "2c0e856cf2762cbff41bb37dfb192cea28a2399eaebde6c18110c51dbd8eb8cf",
+      "mismatches": {
+        "text": [],
+        "page_size": [],
+        "pixels": []
+      }
+    }
+  },
+  "pass": true,
+  "elapsed_seconds": 21.089
+}

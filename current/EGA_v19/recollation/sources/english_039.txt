@@ -1,0 +1,36 @@
+to give recapitulating statements where we eﬀectively apply the preceding results for a
+certain number of properties of this nature (and also comprising module properties). As a
+minimum in this sense we must give here the reformulation of 9.5 in terms of linear pencils
+– a fact constantly used in geometric applications.
+10.2. By a polarity, to a straight line L in P v there corresponds a linear subvariety L0
+of codim 2 in P (S arbitrary). Let us put T = xP L0. Another way to describe T is as
+follows; L is deﬁned by a locally free quotient of rank 2 of Ev or what is the same by a
+submodule, locally a direct factor F of E everywhere of rank two. Let us consider the
+composed homomorphism
+FX −→EX −→OX(1),
+then T is nothing else but the scheme of zeroes of this composed homomorphism or what is
+the same it is deﬁned by the ideal J, image of the corresponding homomorphism (obtained
+by twisting by OX(−1))
+: FX(−1) −→OX.
+Let us suppose that this homomorphism is regular which means that if we write
+down locally a totally ordered basis of FX(−1) then its image in OX forms an OX-regular
+sequence, a condition that does not depend on the basis chosen and that can be announced
+intrinsically also by saying that FX(−1) ⊗OX/J →J/J2 is an isomorphism and tht
+V (J) = T →X is a regular immersion [NB: we should somewhere reveal the general
+situation with a homomorphism G →OX, G locally free over the prescheme X, for example
+in the section about regular immersions] we have then
+Theorem 10.2.
+With the above hypothesis the linear pencil YL with the canonical
+projectionYL →X is X isomorphic in a unique fashion to the blow-up of the prescheme
+X with center T.
+To understand the meaning of this theorem it is convenient to notice at the beginning
+of the section orno that if S = Spec(k) then for a ‘suﬃciently general’ straight line L in P v
+the condition of regularity is veriﬁed (cf. catching up indicated in No. 12 namely for 5.3.)
+In what follows in the construction of “good” linear pencils indicated or anticipated at at
+the beginning of the present No., we could require that the described pencil should satisfy
+the said condition (which is a condition of the same type but diﬀerent from the one that
+consists in requiring that for every ξ ∈L, φξ should be Xk(ξ)-regular). We should include
+the condition in question in the proposed recapitulating statements.
+On the other hand, practically 10.2 is used only in the situation of 9.5, which makes it
+desirable not to announce the reformulation of 9.5 in terms of pencils, until after 10.2, in
+39

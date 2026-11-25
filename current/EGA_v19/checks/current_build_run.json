@@ -1,0 +1,52 @@
+{
+  "edition": 19,
+  "pass": true,
+  "actual_commands": [
+    {
+      "command": "bash build.sh --verify-single",
+      "exec_session": 7516,
+      "exit_code": 0,
+      "scope": "main, report, book_single, audit_single:3 XeLaTeX passes each"
+    },
+    {
+      "command": "Final isolated-footnote adjustment: flatten_sources.py, main3 passes, copy single.tex, book_single3 passes",
+      "exec_session": 10694,
+      "exit_code": 0,
+      "scope": "Final book source and both book PDFs; report unchanged from preceding successful build"
+    }
+  ],
+  "later_changes_to_typeset_sources": false,
+  "checks_completed": [
+    "checks/check_current_project.py --record-sources",
+    "checks/check_current_project.py",
+    "checks/check_current_build_logs.py",
+    "checks/compare_current_pdfs.py"
+  ],
+  "files": [
+    {
+      "path": "main.pdf",
+      "bytes": 5999907,
+      "sha256": "aa13738ff3c4ef9f9c0906f2597c1c30c77de32bd6a65eaf27da12073b5f8f63",
+      "physical_pages": 1214
+    },
+    {
+      "path": "report.pdf",
+      "bytes": 1871915,
+      "sha256": "21bb0187a85ab01aaee6bc01b0d0c0d10d346471b81538c9dab219a5441a08a1",
+      "physical_pages": 389
+    },
+    {
+      "path": "single_build/book_single.pdf",
+      "bytes": 5999887,
+      "sha256": "4b72d044fca4c67b7671499bee8d5e47142e5d3dd668aa20d89794d56638fc05",
+      "physical_pages": 1214
+    },
+    {
+      "path": "single_build/audit_single.pdf",
+      "bytes": 1871901,
+      "sha256": "e74a2f2da2846ffb0223ad519753368542d880b9e36e7f1e2148b6a293960f9e",
+      "physical_pages": 389
+    }
+  ],
+  "note": "Only the specified62 sample pages were viewed; all1603 pages were compared automatically between modular and standalone builds."
+}

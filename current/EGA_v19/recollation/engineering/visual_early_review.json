@@ -1,0 +1,279 @@
+{
+  "scope": "Six specified main-PDF pages and ten specified report-PDF pages; all individually displayed and actually examined. Visual/layout review only; no expanded mathematical certification.",
+  "review_completed_utc": "2026-11-25T07:21:02.331302+00:00",
+  "pdf_directory": "/workspace/scratch/a886fd56dd2f/ega-recovery/current/EGA_v19",
+  "pdf_observed_at_review_start": {
+    "main.pdf": {
+      "sha256": "e58f934310fb94747e3c46349ca7a5524ffe97dbea2554c267782d5af3bdd912",
+      "bytes": 5999845
+    },
+    "report.pdf": {
+      "sha256": "967410f2f830875aced1b84ff8359093c93e9e0fdd6977f7521bfcb2177a4816",
+      "bytes": 1872173
+    }
+  },
+  "pdf_observed_after_images": {
+    "main.pdf": {
+      "sha256": "e58f934310fb94747e3c46349ca7a5524ffe97dbea2554c267782d5af3bdd912",
+      "bytes": 5999845,
+      "same_as_at_review_start": true
+    },
+    "report.pdf": {
+      "sha256": "e7026ad8182501b639d8043aead57839bf5d453415d3ab10d50bf166f100dc70",
+      "bytes": 1871932,
+      "same_as_at_review_start": false
+    }
+  },
+  "image_source": "Existing parent-rendered PNGs at edition19_work/rendered/final; this subtask did not rerender or compile. PNG-to-PDF pixel rebinding after any parent rebuild remains a separate check.",
+  "images": [
+    {
+      "image_path": "edition19_work/rendered/final/main_1031.png",
+      "image_sha256": "1ad8fd81e0db81246ce51406e3f5dc08cc010ab8910d3a7789eb67bfc340fd2e",
+      "pixel_dimensions": [
+        953,
+        1348
+      ],
+      "physical_pdf_page": 1031,
+      "printed_page": 1011,
+      "pdf_name": "main.pdf",
+      "actually_viewed": true,
+      "method": "Displayed the complete supplied PNG individually through view_image, with explicit image output; no montage or text-only substitution",
+      "observations": "页眉和正文版心正常。原8.13陈述、参数式及(a)(b)的余维不等式可见，页脚1—6注分隔清楚，未见引标碰撞。此页为接续点以前的8.13，不算新增8.14正文。",
+      "blocking_visual_issue_found": false
+    },
+    {
+      "image_path": "edition19_work/rendered/final/main_1032.png",
+      "image_sha256": "c32848c80a29463f3a51a5e191659550f5266f2db09ab453245349dda296fded",
+      "pixel_dimensions": [
+        953,
+        1348
+      ],
+      "physical_pdf_page": 1032,
+      "printed_page": 1012,
+      "pdf_name": "main.pdf",
+      "actually_viewed": true,
+      "method": "Displayed the complete supplied PNG individually through view_image, with explicit image output; no montage or text-only substitution",
+      "observations": "原8.13证明及划改列表接入本版来源说明和8.14引导句；公式、列表和三条脚注均在版心内。引导句留在本页，8.14标题起于下一页；未见孤立标题或脚注号。",
+      "blocking_visual_issue_found": false
+    },
+    {
+      "image_path": "edition19_work/rendered/final/main_1033.png",
+      "image_sha256": "61885d70e36d5e36cfa5d9f79426bec4311ce7a5ca46c112b5fe6d0579e10131",
+      "pixel_dimensions": [
+        953,
+        1348
+      ],
+      "physical_pdf_page": 1033,
+      "printed_page": 1013,
+      "pdf_name": "main.pdf",
+      "actually_viewed": true,
+      "method": "Displayed the complete supplied PNG individually through view_image, with explicit image output; no montage or text-only substitution",
+      "observations": "8.14(a)(b)两条深度显示式完整；(b)脚注4已附在公式引导句。开头1,2并列注标可区分。8.15的两项枚举与页脚1—5注分开，无碰撞；枚举后的论断接下一页。",
+      "blocking_visual_issue_found": false
+    },
+    {
+      "image_path": "edition19_work/rendered/final/main_1034.png",
+      "image_sha256": "db89df1b709aac1385bb2935c2c2078c20f686f92138ba66160e06addff18662",
+      "pixel_dimensions": [
+        953,
+        1348
+      ],
+      "physical_pdf_page": 1034,
+      "printed_page": 1014,
+      "pdf_name": "main.pdf",
+      "actually_viewed": true,
+      "method": "Displayed the complete supplied PNG individually through view_image, with explicit image output; no montage or text-only substitution",
+      "observations": "承接8.15论断和作者Remords，8.16加强版本及完整补证落在同页。新增平坦扩域深度说明可见，证明结束方块位置正常，四条脚注没有越界。",
+      "blocking_visual_issue_found": false
+    },
+    {
+      "image_path": "edition19_work/rendered/final/main_1035.png",
+      "image_sha256": "2dd7070cd08f4e6150a5993a0547030d3ad7e80d64f47ec4e61dd8c6786680ec",
+      "pixel_dimensions": [
+        953,
+        1348
+      ],
+      "physical_pdf_page": 1035,
+      "printed_page": 1015,
+      "pdf_name": "main.pdf",
+      "actually_viewed": true,
+      "method": "Displayed the complete supplied PNG individually through view_image, with explicit image output; no montage or text-only substitution",
+      "observations": "8.17(a)(b)、作者手写(c)及术语附记层次清楚。2,3并列注标可区分，页脚1—5注含法语条件与反例公式，未见裁切或重叠。",
+      "blocking_visual_issue_found": false
+    },
+    {
+      "image_path": "edition19_work/rendered/final/main_1036.png",
+      "image_sha256": "7643fa42a190999d6587744ebce1c6119e7fccea3b4e435c9ad49b1cf1d0da2c",
+      "pixel_dimensions": [
+        953,
+        1348
+      ],
+      "physical_pdf_page": 1036,
+      "printed_page": 1016,
+      "pdf_name": "main.pdf",
+      "actually_viewed": true,
+      "method": "Displayed the complete supplied PNG individually through view_image, with explicit image output; no montage or text-only substitution",
+      "observations": "8.18充分版本的D闭包显示式、(a)(b)及Z的并式完整，(b)的2,3注标清楚。补证在页底“蕴涵”后续页；本页三条脚注完整。下一物理1037页未在本轮查看，故不认证证明末段分页。",
+      "blocking_visual_issue_found": false
+    },
+    {
+      "image_path": "edition19_work/rendered/final/report_0019.png",
+      "image_sha256": "1d355ff47de76fc8579df0912b171deac2a705e913fb6a06a26197b6e609662b",
+      "pixel_dimensions": [
+        953,
+        1348
+      ],
+      "physical_pdf_page": 19,
+      "printed_page": 1,
+      "pdf_name": "report.pdf",
+      "actually_viewed": true,
+      "method": "Displayed the complete supplied PNG individually through view_image, with explicit image output; no montage or text-only substitution",
+      "observations": "本版续校报告标题、接合范围、主要发现列表1—3清楚。长旧模块文件名在版心内；未见裁切。",
+      "blocking_visual_issue_found": false
+    },
+    {
+      "image_path": "edition19_work/rendered/final/report_0020.png",
+      "image_sha256": "27b19ee32bca15f4de30f3cef78e1555b012ec90e2dde99850183f93aeaa6b27",
+      "pixel_dimensions": [
+        953,
+        1348
+      ],
+      "physical_pdf_page": 20,
+      "printed_page": 2,
+      "pdf_name": "report.pdf",
+      "actually_viewed": true,
+      "method": "Displayed the complete supplied PNG individually through view_image, with explicit image output; no montage or text-only substitution",
+      "observations": "承接主要发现4—6，证据边界与技术验证说明层次清楚。页眉为本版续校报告标题。长路径在本张图中断行显示；未见可见字符裁切。本页随后可能有父任务的独立路径排版修复，不将本张自动视为后续版证据。",
+      "blocking_visual_issue_found": false
+    },
+    {
+      "image_path": "edition19_work/rendered/final/report_0021.png",
+      "image_sha256": "22b423e200facbc2e91eeb9e1fed31a3b3a1ea465c43ec874e6368ec7f9d23d0",
+      "pixel_dimensions": [
+        953,
+        1348
+      ],
+      "physical_pdf_page": 21,
+      "printed_page": 3,
+      "pdf_name": "report.pdf",
+      "actually_viewed": true,
+      "method": "Displayed the complete supplied PNG individually through view_image, with explicit image output; no montage or text-only substitution",
+      "observations": "早段报告章标题、底本位置及边界说明完整，8.14/8.15读法列表起排正常。没有标题单独落页底。",
+      "blocking_visual_issue_found": false
+    },
+    {
+      "image_path": "edition19_work/rendered/final/report_0022.png",
+      "image_sha256": "5889412f44b3b9a24694c75c0689f0082a20eab85db721a6940a7944393c562c",
+      "pixel_dimensions": [
+        953,
+        1348
+      ],
+      "physical_pdf_page": 22,
+      "printed_page": 4,
+      "pdf_name": "report.pdf",
+      "actually_viewed": true,
+      "method": "Displayed the complete supplied PNG individually through view_image, with explicit image output; no montage or text-only substitution",
+      "observations": "读法列表续排、作者Remords完整内容、8.16原陈述和原证明身份明确；正文未碰页眉或边缘。",
+      "blocking_visual_issue_found": false
+    },
+    {
+      "image_path": "edition19_work/rendered/final/report_0023.png",
+      "image_sha256": "71ea00952d468e93494921ea08623e66decb246f25a0b187176bf6ab52f5ba0a",
+      "pixel_dimensions": [
+        953,
+        1348
+      ],
+      "physical_pdf_page": 23,
+      "printed_page": 5,
+      "pdf_name": "report.pdf",
+      "actually_viewed": true,
+      "method": "Displayed the complete supplied PNG individually through view_image, with explicit image output; no montage or text-only substitution",
+      "observations": "小分解方程、仿射图、锥关系、31式枚举、数量1+10+20=31和坐标恢复分式完整。底部f=h∘π显示式在版心内，句子接下一页。",
+      "blocking_visual_issue_found": false
+    },
+    {
+      "image_path": "edition19_work/rendered/final/report_0024.png",
+      "image_sha256": "9538bbca197f7323df72c58286c3444d3d3667315d75542ca146411d00351738",
+      "pixel_dimensions": [
+        953,
+        1348
+      ],
+      "physical_pdf_page": 24,
+      "printed_page": 6,
+      "pdf_name": "report.pdf",
+      "actually_viewed": true,
+      "method": "Displayed the complete supplied PNG individually through view_image, with explicit image output; no montage or text-only substitution",
+      "observations": "承接f在X\\C上非分歧；I_C、m_A²、dim与嵌入维数公式可见。加强版本范围、8.17(a)吹起反例与f*H公式均无重叠，反例末段续下一页。",
+      "blocking_visual_issue_found": false
+    },
+    {
+      "image_path": "edition19_work/rendered/final/report_0025.png",
+      "image_sha256": "9ee6869d9536e7891dbd997c6debc9e5f2e6f2016234b004a6ddd5577c5ed385",
+      "pixel_dimensions": [
+        953,
+        1348
+      ],
+      "physical_pdf_page": 25,
+      "printed_page": 7,
+      "pdf_name": "report.pdf",
+      "actually_viewed": true,
+      "method": "Displayed the complete supplied PNG individually through view_image, with explicit image output; no montage or text-only substitution",
+      "observations": "吹起反例续文、二次曲面计算、法49(c)语法歧义及8.18原陈述清楚。原(a)(b)的不可约条件与订正说明可区分；末句续页无裁切。",
+      "blocking_visual_issue_found": false
+    },
+    {
+      "image_path": "edition19_work/rendered/final/report_0026.png",
+      "image_sha256": "457657b8492c13616d007068a4756314f02f757096c70ba4b91ac0324801140f",
+      "pixel_dimensions": [
+        953,
+        1348
+      ],
+      "physical_pdf_page": 26,
+      "printed_page": 8,
+      "pdf_name": "report.pdf",
+      "actually_viewed": true,
+      "method": "Displayed the complete supplied PNG individually through view_image, with explicit image output; no montage or text-only substitution",
+      "observations": "8.18原作者证明、两个像闭包与最后不带横线的像显示清楚，附记及原证明缺口说明连续。未见上横线与相邻行相撞。",
+      "blocking_visual_issue_found": false
+    },
+    {
+      "image_path": "edition19_work/rendered/final/report_0027.png",
+      "image_sha256": "29a75c1656d67d5c639d92ad966ac1e408c92da922ca4cfbd621edfdc16acfc8",
+      "pixel_dimensions": [
+        953,
+        1348
+      ],
+      "physical_pdf_page": 27,
+      "printed_page": 9,
+      "pdf_name": "report.pdf",
+      "actually_viewed": true,
+      "method": "Displayed the complete supplied PNG individually through view_image, with explicit image output; no montage or text-only substitution",
+      "observations": "被划去证明层与当前补证分开。Veronese二次式、3×3判别式矩阵及展开式全部落在版心内；锥面反例和切平面参数显示式可见。",
+      "blocking_visual_issue_found": false
+    },
+    {
+      "image_path": "edition19_work/rendered/final/report_0028.png",
+      "image_sha256": "83d188f8d98de129e755e60dbc6abfcd9da1e323f1cd827166da3d115977a15e",
+      "pixel_dimensions": [
+        953,
+        1348
+      ],
+      "physical_pdf_page": 28,
+      "printed_page": 10,
+      "pdf_name": "report.pdf",
+      "actually_viewed": true,
+      "method": "Displayed the complete supplied PNG individually through view_image, with explicit image output; no montage or text-only substitution",
+      "observations": "锥面反例续文、充分版本边界、实际检查与未决事项列表完整；显示/行内数学和项目符号无碰撞。未见单独残留引标。",
+      "blocking_visual_issue_found": false
+    }
+  ],
+  "total_images_actually_viewed": 16,
+  "blocking_visual_issues": [],
+  "scope_limitations": [
+    "Physicalmain1037 and later not viewed; 8.18 proof continuation beyond1036 not covered.",
+    "Only report physical19–28 covered; later historical-note pages and other running headers not covered.",
+    "The current PDF hashes are observed file hashes, not a claim that a later rebuilt file is the same. Reuse after rebuild requires unchanged-page pixel evidence or a fresh view.",
+    "No TeX modified; no compilation performed by this subtask."
+  ],
+  "parent_notification": "Root notified after main1031–1036 and report19–27 that no blocking item was found; finalreport28 also showed no blocking issue."
+}

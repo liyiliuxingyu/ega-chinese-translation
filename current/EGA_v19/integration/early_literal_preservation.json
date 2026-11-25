@@ -1,0 +1,144 @@
+{
+  "scope": "Literal mathematical fragments and old annotation text retention only; not mathematical verification or full source-page collation.",
+  "batches": [
+    {
+      "batch": 88,
+      "output_bytes": 15878,
+      "anchors": [
+        "2.1",
+        "2.2",
+        "2.3",
+        "2.4",
+        "2.5",
+        "2.6",
+        "2.7"
+      ],
+      "math_fragments_in_migrated_ranges": 279,
+      "math_fragments_not_verbatim_found": []
+    },
+    {
+      "batch": 89,
+      "output_bytes": 7562,
+      "anchors": [
+        "2.8",
+        "2.9",
+        "2.10",
+        "2.11",
+        "2.12",
+        "2.13"
+      ],
+      "math_fragments_in_migrated_ranges": 165,
+      "math_fragments_not_verbatim_found": []
+    },
+    {
+      "batch": 90,
+      "output_bytes": 8238,
+      "anchors": [
+        "2.14",
+        "2.15",
+        "2.16",
+        "2.17",
+        "2.18"
+      ],
+      "math_fragments_in_migrated_ranges": 132,
+      "math_fragments_not_verbatim_found": []
+    },
+    {
+      "batch": 91,
+      "output_bytes": 8278,
+      "anchors": [
+        "3.1",
+        "3.1.1",
+        "3.2",
+        "3.3"
+      ],
+      "math_fragments_in_migrated_ranges": 99,
+      "math_fragments_not_verbatim_found": []
+    },
+    {
+      "batch": 92,
+      "output_bytes": 6968,
+      "anchors": [
+        "4.1",
+        "4.2",
+        "4.3"
+      ],
+      "math_fragments_in_migrated_ranges": 157,
+      "math_fragments_not_verbatim_found": []
+    },
+    {
+      "batch": 93,
+      "output_bytes": 3992,
+      "anchors": [
+        "4.4",
+        "5.1"
+      ],
+      "math_fragments_in_migrated_ranges": 115,
+      "math_fragments_not_verbatim_found": []
+    },
+    {
+      "batch": 94,
+      "output_bytes": 6298,
+      "anchors": [
+        "5.2",
+        "5.3",
+        "5.4"
+      ],
+      "math_fragments_in_migrated_ranges": 162,
+      "math_fragments_not_verbatim_found": []
+    },
+    {
+      "batch": 95,
+      "output_bytes": 6400,
+      "anchors": [
+        "5.5",
+        "5.6",
+        "5.7"
+      ],
+      "math_fragments_in_migrated_ranges": 115,
+      "math_fragments_not_verbatim_found": []
+    },
+    {
+      "batch": 96,
+      "output_bytes": 3637,
+      "anchors": [
+        "6.1"
+      ],
+      "math_fragments_in_migrated_ranges": 62,
+      "math_fragments_not_verbatim_found": []
+    },
+    {
+      "batch": 97,
+      "output_bytes": 5464,
+      "anchors": [
+        "7.1"
+      ],
+      "math_fragments_in_migrated_ranges": 111,
+      "math_fragments_not_verbatim_found": []
+    },
+    {
+      "batch": 98,
+      "output_bytes": 5169,
+      "anchors": [
+        "7.2",
+        "7.3"
+      ],
+      "math_fragments_in_migrated_ranges": 83,
+      "math_fragments_not_verbatim_found": []
+    },
+    {
+      "batch": 99,
+      "output_bytes": 3811,
+      "anchors": [
+        "7.4",
+        "7.5"
+      ],
+      "math_fragments_in_migrated_ranges": 88,
+      "math_fragments_not_verbatim_found": []
+    }
+  ],
+  "all_old_notes_exact_retained": true,
+  "old_note_count": 69,
+  "status": "historical intermediate check; superseded",
+  "superseded_by": "integration/early_verification.json"
+}

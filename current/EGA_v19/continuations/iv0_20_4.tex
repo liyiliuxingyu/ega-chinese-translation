@@ -1,0 +1,215 @@
+% 底本 EGAIV.1.pdf，上传PDF第122--126页，分册印刷第123--127页。
+\subsection{主部与微分}
+\source{第四卷第一部分，分册印刷第123--127页；上传PDF第122--126页}
+\emph{本节余下部分及其后三节中的环，均假设为交换环。}
+
+\egap{20.4.1}
+设 $A$ 为拓扑环，$B$ 为拓扑 $A$-代数。给 $B\otimes_A B$ 赋予张量积拓扑，使其成为拓扑 $A$-代数。记
+\begin{equation}
+ p=p_{B/A}:B\otimes_A B\longrightarrow B,
+ \qquad p(b\otimes b')=bb'
+ \tag{20.4.1.1}
+\end{equation}
+为典范满 $A$-同态；它是连续的。其核记为 $\mathfrak J_{B/A}$，不致混淆时也写作 $\mathfrak J$。记两个连续的典范 $A$-同态为
+\[
+ j_1:B\longrightarrow B\otimes_A B,\quad j_1(b)=b\otimes1,
+ \qquad
+ j_2:B\longrightarrow B\otimes_A B,\quad j_2(b)=1\otimes b.
+\]
+
+\egas{20.4.2}{定义}
+$B$ 对 $A$ 的\emph{一阶主部增广 $B$-代数}记为 $P^1_{B/A}$，是商拓扑 $A$-代数
+\begin{equation}
+ P^1_{B/A}=(B\otimes_A B)/\mathfrak J_{B/A}^{\,2},
+ \tag{20.4.2.1}
+\end{equation}
+其拓扑 $B$-代数结构由 $j_1$ 与商映射的复合给出，增广
+$\varepsilon=\varepsilon_{B/A}:P^1_{B/A}\to B$ 则由 $p$ 通过商得到。因为 $p(b\otimes1)=b$，$\varepsilon$ 确为 $B$-代数增广。
+
+\egas{20.4.3}{定义}
+增广 $\varepsilon:P^1_{B/A}\to B$ 的核
+\begin{equation}
+ \Omega^1_{B/A}=\mathfrak J_{B/A}/\mathfrak J_{B/A}^{\,2},
+ \tag{20.4.3.1}
+\end{equation}
+赋予 $P^1_{B/A}$ 所诱导的拓扑，便成为拓扑 $B$-模，称为 $B$ 对 $A$ 的\emph{一次微分模}，或简称\emph{微分模}。
+
+其拓扑也是先在 $\mathfrak J_{B/A}$ 上取 $B\otimes_A B$ 的子空间拓扑，再除以 $\mathfrak J_{B/A}^2$ 得到的商拓扑（Bourbaki，\textit{一般拓扑}，第三章，第3版，§2，第7目，命题20）。若 $B$ 离散，则 $\Omega^1_{B/A}$ 也离散。其分离完备化记为 $\widehat\Omega^1_{B/A}$。
+
+任意拓扑环 $B$ 都可看作离散环 $\mathbb Z$ 上的拓扑代数，故可定义 $\Omega^1_{B/\mathbb Z}$，也称 $B$ 的\emph{绝对微分模}，并记作 $\Omega^1_B$。若 $B$ 为离散素域 $P$ 上的拓扑代数，则 $B\otimes_P B=B\otimes_{\mathbb Z}B$，因此 $\Omega^1_{B/P}=\Omega^1_B$。
+
+\egas{20.4.4}{引理}
+设 $A$ 为环，$B$ 为 $A$-代数。理想 $\mathfrak J_{B/A}\subseteq B\otimes_A B$ 由元素 $1\otimes s-s\otimes1$ 生成，其中 $s$ 遍历 $B$ 作为 $A$-代数的一个生成集。
+
+每个 $x\in B$ 都满足 $x\otimes1-1\otimes x\in\mathfrak J$。另一方面，对任意 $x,y\in B$，
+\[
+ x\otimes y=xy\otimes1+(x\otimes1)(1\otimes y-y\otimes1).
+\]
+若 $\sum_i x_i\otimes y_i\in\mathfrak J$，则 $\sum_i x_iy_i=0$，从而
+\begin{equation}
+ \sum_i x_i\otimes y_i
+ =\sum_i(x_i\otimes1)(1\otimes y_i-y_i\otimes1).
+ \tag{20.4.4.1}
+\end{equation}
+因此所有 $1\otimes x-x\otimes1$ 生成 $\mathfrak J$。若 $x=st$，还有
+\begin{equation}
+ x\otimes1-1\otimes x
+ =(s\otimes1)(t\otimes1-1\otimes t)
+ +(s\otimes1-1\otimes s)(1\otimes t).
+ \tag{20.4.4.2}
+\end{equation}
+结合加法与 $A$-标量关系，对生成元的多项式表达作归纳，即得引理。
+
+\egas{20.4.5}{命题}
+设 $A$ 为拓扑环，$B$ 为拓扑 $A$-代数。$\Omega^1_{B/A}$ 的拓扑不比由 $B$ 的拓扑导出的模拓扑（19.0.2）更细。若 $B$ 中每个开理想的平方仍为开理想，则这两个拓扑相同。
+
+第一点由张量积拓扑的定义得到：$B\otimes_A B$ 的张量积拓扑不比其由 $B$ 导出的模拓扑更细，相应地，$\mathfrak J$ 的子空间拓扑也不比由 $B$ 导出的拓扑更细。为证第二点，对 $B$ 的两个子 $A$-模 $M,N$，暂用 $M\otimes N$ 表示 $\Im(M\otimes_A N\to B\otimes_A B)$。利用
+\[
+\begin{aligned}
+ (xy)\otimes z-x\otimes(yz)
+ &=(x\otimes1)(1\otimes z)(y\otimes1-1\otimes y)\\
+ &=xz\cdot(y\otimes1-1\otimes y)\\
+ &\quad-x\cdot(z\otimes1-1\otimes z)(y\otimes1-1\otimes y),
+\end{aligned}
+\]
+其中 $B$ 的作用由 $j_1$ 给出，结合（20.4.4），对 $B$ 的任意理想 $\mathfrak k$ 得
+\[
+ ((\mathfrak k^2\otimes B)+(B\otimes\mathfrak k^2))\cap\mathfrak J
+ \subseteq(\mathfrak k\otimes\mathfrak k)\cap\mathfrak J
+       +\mathfrak k\mathfrak J+\mathfrak J^2.
+\]
+若 $x_i,y_i\in\mathfrak k$ 且 $\sum_i x_i\otimes y_i\in\mathfrak J$，则由（20.4.4.1）知该和属于 $\mathfrak k\mathfrak J$。因此
+\begin{equation}
+ (\mathfrak k^2\otimes B+B\otimes\mathfrak k^2)\cap\mathfrak J
+ \subseteq\mathfrak k\mathfrak J+\mathfrak J^2.
+ \tag{20.4.5.1}
+\end{equation}
+让 $\mathfrak k$ 遍历开理想，$(\mathfrak k\otimes B+B\otimes\mathfrak k)\cap\mathfrak J$ 构成 $\mathfrak J$ 的子空间拓扑的零邻域基。$\Omega^1_{B/A}$ 上由 $B$ 导出的模拓扑也是 $\mathfrak J$ 上相应拓扑模去 $\mathfrak J^2$ 的商拓扑。由开理想平方仍开的假设及（20.4.5.1），得到所需的反向比较，故两个拓扑相同。
+
+\egas{20.4.6}{定义}
+记 $p_1,p_2:B\to P^1_{B/A}$ 为 $j_1,j_2$ 与商映射的复合。它们是连续 $A$-同态，并满足 $\varepsilon p_1=\varepsilon p_2=1_B$。连续的 $A$-模同态
+\begin{equation}
+ d_{B/A}=p_2-p_1:B\longrightarrow\Omega^1_{B/A}
+ \tag{20.4.6.1}
+\end{equation}
+称为 $B$ 对 $A$ 的\emph{外微分}。对 $x\in B$，$d_{B/A}(x)$ 也记为 $d(x)$ 或 $dx$，称为 $x$ 对 $A$ 的微分。
+\cmt{I9-C03}{依作者正式勘误Err$_{\mathrm{IV}}$12，初版的 $p_1-p_2$ 改为 $p_2-p_1$，并把（20.4.7）证明中的 $x\otimes1-1\otimes x$ 改为 $1\otimes x-x\otimes1$。这个符号约定与下文的泛性质及两个结构映射一并统一，不是只改一行公式。}
+当 $A=\mathbb Z$ 时记为 $d_B$；若 $B$ 为素域 $P$ 上的代数，则 $d_B=d_{B/P}$。
+
+\egas{20.4.7}{命题}
+$B$-模 $\Omega^1_{B/A}$ 由 $d_{B/A}(x)$ 生成，其中 $x$ 遍历 $B$ 作为 $A$-代数的一个生成集。
+
+因为 $d_{B/A}(x)$ 是 $1\otimes x-x\otimes1$ 在 $\mathfrak J/\mathfrak J^2$ 中的类，此结论来自（20.4.4）。
+
+\egas{20.4.8}{定理}
+设 $A$ 为拓扑环，$B$ 为拓扑 $A$-代数。
+
+$(i)$ 存在唯一的拓扑增广 $B$-代数同构
+\begin{equation}
+ \varphi:P^1_{B/A}\xrightarrow{\sim}\mathrm D_B(\Omega^1_{B/A})
+ \tag{20.4.8.1}
+\end{equation}
+在 $\Omega^1_{B/A}$ 上限制为恒等。
+
+$(ii)$ $d_{B/A}$ 是 $B$ 到 $\Omega^1_{B/A}$ 的 $A$-导子，并具有如下泛性质：对每个拓扑 $B$-模 $L$，$h\mapsto h\circ d_{B/A}$ 是典范 $A$-模同构
+\begin{equation}
+ \HomCont_B(\Omega^1_{B/A},L)
+ \xrightarrow{\sim}\DerCont_A(B,L).
+ \tag{20.4.8.2}
+\end{equation}
+
+$(i)$ 所要求的同构只能是
+\[
+ z\longmapsto(\varepsilon(z),z-p_1(\varepsilon(z))),
+\]
+其逆是 $(b,x)\mapsto p_1(b)+x$。这两个映射均连续，证明了第一点。这也说明，$B$ 的拓扑就是 $B\otimes_A B$ 模去 $\mathfrak J_{B/A}$ 后的商拓扑。
+
+$(ii)$ $d_{B/A}$ 为导子，是（20.4.6）及（20.1.1）的结果。为证泛性质，先由（20.1.6）、（20.3.2）将 $\DerCont_A(B,L)$ 识别为连续 $A$-代数同态 $u:B\to\mathrm D_B(L)$ 的集合 $G$，其中 $q\circ u=1_B$，$q(b,x)=b$。
+
+另一方面，由同构 $\varphi$，$\HomCont_B(\Omega^1_{B/A},L)$ 识别为满足 $q\circ v=\varepsilon$ 的连续 $B$-代数同态 $v:P^1_{B/A}\to\mathrm D_B(L)$ 的集合。由
+\[
+ p_1=p_2-d_{B/A},
+\]
+只须证明每个 $u\in G$ 唯一分解为如下交换图：
+\[
+\begin{tikzcd}[column sep=large]
+ B\arrow[r,"u"]\arrow[d,"p_2"']&\mathrm D_B(L)\\
+ P^1_{B/A}\arrow[ur,"v"']&
+\end{tikzcd}
+\]
+\cmt{I9-C04}{依Err$_{\mathrm{IV}}$13，原证明的 $p_2=p_1-d_{B/A}$ 改为 $p_1=p_2-d_{B/A}$。两式不是在固定 $d$ 下可以任意互换的记法。}
+
+已有连续 $A$-代数同态 $j:B\to\mathrm D_B(L)$，$j(b)=(b,0)$。张量积拓扑代数的泛性质（$0_{\mathrm I}$，7.7.6）给出唯一连续 $A$-代数同态 $w:B\otimes_A B\to\mathrm D_B(L)$，使
+\[
+\begin{tikzcd}[column sep=large]
+ B\otimes_A B &B\arrow[l,"j_2"']\arrow[d,"u"]\\
+ B\arrow[u,"j_1"]\arrow[r,"j"']&\mathrm D_B(L)
+ \arrow[from=1-1,to=2-2,"w" description]
+\end{tikzcd}
+\]
+交换。因此
+\[
+ w(1\otimes b-b\otimes1)=u(b)-j(b)\in L.
+\]
+由（20.4.4），$w(\mathfrak J)\subseteq L$，故 $w(\mathfrak J^2)=0$。它于是分解为 $B\otimes_A B\to P^1_{B/A}\xrightarrow{v}\mathrm D_B(L)$。由于 $vp_1=j$，$v$ 是 $B$-代数同态；又 $vp_2=u$，遂得存在性。$P^1_{B/A}$ 由两结构映射的像生成，故这些条件也给出唯一性。
+
+\egas{20.4.9}{定理}
+若 $B$ 为形式光滑的拓扑 $A$-代数，则拓扑 $B$-模 $\Omega^1_{B/A}$ 形式投射。
+
+事实上，由（19.3.5，iii），$B\otimes_A B$ 通过 $j_1$ 成为形式光滑的拓扑 $B$-代数；再由（19.3.5，ii），它也是形式光滑的拓扑 $A$-代数。$B$ 与商拓扑 $A$-代数 $(B\otimes_A B)/\mathfrak J$ 同构，且 $B$ 形式光滑，故由（19.5.3）得到结论。
+
+\egas{20.4.10}{推论}
+在（20.4.9）的假设之外，再假设 $B$ 中每个开理想的平方仍为开理想。则对每个开理想 $\mathfrak k\subseteq B$，
+\[
+ \Omega^1_{B/A}\otimes_B(B/\mathfrak k)
+ =\Omega^1_{B/A}/\mathfrak k\Omega^1_{B/A}
+\]
+为投射 $B/\mathfrak k$-模。
+
+由（20.4.5），$\Omega^1_{B/A}$ 的拓扑由 $B$ 的拓扑导出，故可应用（19.2.4）。
+
+\egas{20.4.11}{推论}
+设 $A,B$ 为诺特局部环，$\rho:A\to B$ 为局部同态，并使 $B$ 在预进制拓扑下成为形式光滑的拓扑 $A$-代数。则对 $B$ 的每个定义理想 $\mathfrak b$，$\Omega^1_{B/A}\otimes_B(B/\mathfrak b)$ 为自由 $B/\mathfrak b$-模。
+
+由（20.4.10）此模投射。环 $B/\mathfrak b$ 是阿廷局部环，故其投射模均为自由模（$0_{\mathrm{III}}$，10.1.3）。
+
+\egas{20.4.12}{命题}
+设 $A$ 为拓扑环，$B$ 为拓扑 $A$-代数。若结构同态 $A\to B$ 满射，则 $\Omega^1_{B/A}=0$。
+
+由（20.1.1），对任意 $B$-模 $L$ 有 $\Der_A(B,L)=0$；因此结论由（20.4.8）得到。
+
+\egas{20.4.13}{例}
+$(i)$ 设 $B=A[X_\alpha]_{\alpha\in I}$。则 $\Omega^1_{B/A}$ 为以 $(dX_\alpha)_{\alpha\in I}$ 为基的自由 $B$-模。这些元素生成该模（20.4.7）。另取以 $(z_\alpha)_{\alpha\in I}$ 为基的自由 $B$-模 $L$。有 $A$-同态 $B\to\mathrm D_B(L)$ 将 $X_\alpha$ 映到 $(X_\alpha,z_\alpha)$，故由（20.1.5）有导子 $D$ 满足 $D(X_\alpha)=z_\alpha$。应用（20.4.8，ii）的泛性质，便知各 $dX_\alpha$ 线性无关。
+
+$(ii)$ 设 $A$ 为环，$L$ 为 $A$-模，$B=\mathrm D_A(L)=A\oplus L$ 为平方零平凡扩张，$\varepsilon:B\to A$ 为增广。正确的典范同构为
+\[
+ L\xrightarrow{\sim}\Omega^1_{B/A}\otimes_{B,\varepsilon}A,
+ \qquad x\longmapsto d_{B/A}x\otimes1.
+\]
+\cmt{I9-E01}{原文声称 $L\to\Omega^1_{B/A}$ 本身双射，并把所用导子写为“$B$-导子”。两处均不能照用。取 $A=k$ 为特征2的域、$L=k\epsilon$、$B=k[\epsilon]/(\epsilon^2)$，则 $\Omega^1_{B/k}=B\,d\epsilon$ 为二维 $k$-空间，而 $L$ 一维；$\epsilon d\epsilon\ne0$。正文改为沿增广张量到 $A$ 后的同构，这是译者校订，未列作作者正式勘误。完整计算及任意 $L$ 的微分模表示见报告I9-E01。}
+对任意 $A$-模 $M$，经 $\varepsilon$ 视为 $B$-模后，$A$-导子 $B\to M$ 恰为 $(a,x)\mapsto h(x)$，其中 $h\in\Hom_A(L,M)$：由于 $L$ 在 $M$ 上作用为零，Leibniz条件自动满足。因此，$L$ 和 $\Omega^1_{B/A}\otimes_B A$ 表示相同的函子，所得同构就是上述映射。
+
+$(iii)$ 若 $B=B_1\times B_2$ 为两个拓扑 $A$-代数的乘积，将 $B_1,B_2$ 视为 $B$ 的理想，则 $B_1\otimes_A B_2$、$B_2\otimes_A B_1$ 在乘法映射 $p$ 下的像为零。这些交叉分量由属于 $\mathfrak J$ 的幂等元支撑，因而已包含在 $\mathfrak J^2$ 中。于是
+\[
+ P^1_{B/A}\simeq P^1_{B_1/A}\times P^1_{B_2/A},\qquad
+ \Omega^1_{B/A}\simeq\Omega^1_{B_1/A}\oplus\Omega^1_{B_2/A},
+\]
+后一个为拓扑 $B$-模直和，两项分别被 $B_2,B_1$ 零化。
+\cmt{I9-N05}{补明交叉分量消失的理由：若 $e_1,e_2$ 为两个正交幂等元，则 $e_1\otimes e_2$、$e_2\otimes e_1$ 属于 $\mathfrak J$ 且幂等，故属于 $\mathfrak J^2$；各交叉分量均由相应幂等元支撑。原文未展开这一句，结论保持原样。}
+
+$(iv)$ 设 $A\subseteq B$ 为整环，$B$ 整于 $A$，且 $B$ 的分式域是 $A$ 的分式域的可分扩张。则 $\Omega^1_{B/A}$ 为挠 $B$-模。
+\cmt{I9-C05}{正文依作者正式勘误Err$_{\mathrm{IV}}$14替换。初版额外假设 $A$ 整闭并利用最小多项式属于 $A[T]$；作者修订去掉整闭性，以清分母的论证代替。原较强假设下的结论并不错误，此项属于作者的假设放宽与补证。}
+令 $K=\operatorname{Frac}(A)$。对 $x\in B$，设 $f\in K[T]$ 为其最小多项式。存在 $0\ne a\in A$ 使 $af\in A[T]$。由可分性，$f'(x)\ne0$；对 $af(x)=0$ 微分，得到
+\[
+ af'(x)d_{B/A}x=0.
+\]
+这里 $af'(x)\in B\setminus\{0\}$。故每个 $d_{B/A}x$ 都是挠元，再由（20.4.7）得结论。
+
+\egas{20.4.14}{备注}
+$(i)$ 忘掉拓扑后，$B$-模 $\Omega^1_{B/A}$ 与 $A,B$ 的拓扑无关。
+
+$(ii)$ 后面将引入 $B$ 对 $A$ 的\emph{$n$ 阶主部代数}
+\[
+ P^n_{B/A}=(B\otimes_A B)/\mathfrak J_{B/A}^{\,n+1},
+\]
+这是“$n$ 阶微分运算”的基础。

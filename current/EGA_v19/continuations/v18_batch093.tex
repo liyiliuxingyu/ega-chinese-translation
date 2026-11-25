@@ -1,0 +1,50 @@
+% V18 integration of Dot batch 093; immutable source SHA256 e02ad8dbe02d7b044f42b29f10b07a0c1631dacafa8d3d533e31793e6626d474
+\begingroup
+% These definitions have only group-local scope; the shared preamble is untouched.
+\def\OO{\mathcal O}\def\FF{\mathcal F}\def\GG{\mathcal G}
+\def\PP{\mathbf P}\def\calP{\mathcal P}\def\dd{\delta}
+\def\Div{\operatorname{Div}}\def\depth{\operatorname{depth}}
+\def\pr{\operatorname{pr}}\def\coker{\operatorname{coker}}
+\egas{4.4}{推论}
+考虑如下性质 $(C_m)$：$\overline Z$ 去掉任意维数不超过 $m$ 的闭子集后仍连通，
+其中 $\overline Z=Z\times_K\overline K$，$\overline K$ 为 $K$ 的一个代数闭包。
+令 $E$ 为使 $Y_\xi$ 在 $k(\xi)$ 上满足 $(C_m)$ 的 $\xi\in P^\vee$ 所组成的集合。
+\begin{enumerate}
+\item[(a)] $E$ 可构造。
+\item[(b)] 设 $S=\Spec k$，$k$ 为域，并设 $f:X\to P$ 拟有限。
+  若 $X$ 的每个不可约分支 $X_i$ 都满足 $\dim\overline{f(X_i)}\geq2$，
+  且 $X$ 在 $k$ 上满足 $(C_{m+1})$，则 $E$ 包含 $P^\vee$ 的稠密开集 $U$。\footnote{“$f$ 拟有限”在本页陈述中未列，正文按下一页作者的更正加入。法第19页明确写 $f(X_i)$，英稿误为 $f(X)$；法稿末行以 $P$ 指参数空间，未辨得对偶标记，英稿同处亦作 $P$。由 $E$ 的定义及4.1，正文为 $P^\vee$。英稿末行的 $E_\xi$ 这里也还原成 $E$。}
+\end{enumerate}
+
+\noindent\textbf{作者补记。}
+可构造性由 AQT 得到（第9段其实漏了这个事实，也许还来得及补上）。
+(b)原则上来自3.3，不过3.3的表述过于特殊，须相应推广；所给证明基本不变。
+另外，4.4 的表述有一处笔误：\emph{只有当 $f$ 拟有限时，原表述才适用}。
+在一般情形，不应考察 $X$、$Y_\xi$ 中闭子集本身的维数，
+而应考察它们在 $P$、$H_\xi$ 中的像的维数。%
+\footnote{法第20页是限制式 \emph{ne\ldots que si}，即“仅当……”。英稿把它翻成了“若 $f$ 拟有限，则原式不适用”，方向相反。原稿未展开 AQT，英编者脚注也询问其含义；此处保留不确定性。}
+\textit{Redactor demerdetur.}\footnote{保留原文末尾的戏拟拉丁语。英编稿同样留待翻译，本批不作确译。}
+
+\egasection{§5\quad Seidenberg 型定理}
+\egap{5.1}
+在本节中，我们给出保证4.1所定义的 $E$ 为开集的条件。\footnote{法第21页在“给出条件”后写省略号，注明“见前页误划掉的文字”。故以下据第20页相应段复原，并与英编稿5.1互核。旧号4.5的这段虽被划销，却由5.1明确召回；不能将同页的旧命题4.6也按此处理。}
+这里研究局部性质 $\mathcal P$，以便定义 $Y$ 中的子集 $U$：
+若 $y\in Y$ 在 $P^\vee$ 中的像为 $\xi$，则 $y\in U$ 当且仅当
+$Y_\xi$ 在 $y$ 处满足 $\mathcal P$，或在模的版本中 $\GG_\xi$ 在 $y$ 处满足 $\mathcal P$。
+先用第12段给出 $U$ 为开的判据。\footnote{英编稿确认指 EGA IV，并补明 $E$ 的参数丛为 $P^\vee$。原文在这里只说明后面的论证路线，不是在任意情况下已经证明 $U$ 为开。}
+由
+\[
+ E=P^\vee\setminus h(Y\setminus U),\qquad h:Y\longrightarrow P^\vee,
+\]
+可见，若 $U$ 是开集且 $X$ 在 $S$ 上固有，则 $E$ 也是开集：
+因为 $Y$ 是 $X\times_S P^\vee$ 中的闭子概形，故 $h$ 固有，因而是闭映射。
+
+\subsection*{废稿层}
+法第20页下半另有被交叉划销的旧命题4.6，尚可辨认“有限表示”、
+“相对于 $S$ Cohen--Macaulay”、“$d-1$”及“在 $P^\vee$ 上平坦”等片段。
+原句有多重覆盖和截断，法第21页重起第5节，没有像5.1那样召回旧4.6。
+不把它拼接成定稿或证明；原扫描仍附在工程中。
+
+\par\noindent\textit{译校补证另见核查报告。}\cmt{D18-093-R}{像维数版本的图判据、泛截面补证与一般态射反例完整保存在本版核查报告“D18-093”条；其中译校补证为非原文。}
+
+\endgroup

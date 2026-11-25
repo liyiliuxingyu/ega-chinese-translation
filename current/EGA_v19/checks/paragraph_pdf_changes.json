@@ -1,0 +1,27 @@
+{
+  "scope": "Actual every-page before/after comparison after explicit paragraph ends in modules105 and106. The raw extraction change on1029 consists of whitespace and line wrapping; character content is unchanged.",
+  "before_sha256": "2eccd0401f188108655f6d1b21950b9193c7a2d70f326a554218c4f41eb286d4",
+  "after_sha256": "af6569828e4bb62c8f133ca46618609c8f26767267d606cf7f3635ee70cd613e",
+  "before_pages": 1210,
+  "after_pages": 1210,
+  "equal_count": true,
+  "changed_pages": {
+    "text": [
+      1029
+    ],
+    "page_size": [],
+    "pixels": [
+      1026,
+      1029
+    ]
+  },
+  "renderer": "PyMuPDF 1.26.6",
+  "dpi": 72,
+  "elapsed_seconds": 14.932,
+  "text_difference_detail": {
+    "physical_page": 1029,
+    "unified_diff": "--- \n+++ \n@@ -6,8 +6,8 @@\n 8.8 末尾维数结论的证明\n Z 整且维数r −1；D 是刻画二次型退化的行列式截面的零概形。若(ii)\n 成立，行列式不是零截面；它或者处处可逆，或者给出有效Cartier 除子，其\n-每个不可约分支的余维为一，因此非空时dim D = r−2。其像闭包维数不会\n-增加。1又因L/K 有限，trdegk L = trdegk K，故dim T = dim Z = r−1。\n+每个不可约分支的余维为一，因此非空时dim D = r −2。其像闭包维数不\n+会增加。1又因L/K 有限，trdegk L = trdegk K，故dim T = dim Z = r −1。\n 底本位置：Dot 第107 批；法文底本物理第43–45 页，英编稿物理第30–31\n 页。\n 记号。承接8.8、8.9 所明示的工作假设：X/k 光滑、几何整且在P = Pr\n",
+    "equal_after_removing_whitespace": true,
+    "scope": "PDF text extraction inserts a space differently after horizontal glue changes; TeX mathematical and Chinese words were unchanged by the explicit paragraph terminators."
+  }
+}

@@ -1,0 +1,203 @@
+{
+  "scope": "Read-only audit of the root entry points and current v19 status/module inputs; no full repository or mathematics audit.",
+  "root_entrypoints_current": true,
+  "root_entrypoint_findings": {
+    "README.md": "Correctly says edition19, recollated8.14–section11, retains later text, nextFrench64/English43 section12 and formalIV separate. Current products/release wording should be synchronized with final successful delivery.",
+    "AGENTS.md": "Correct current path and source boundaries; no stale8.14 next-step instruction.",
+    "CONTINUE_HERE.md": "Correct v19 path, section12 next and formalIV branch; no duplicate40-batch import instruction."
+  },
+  "read_files": [
+    {
+      "path": "README.md",
+      "bytes": 6257,
+      "sha256": "2cc2be8a0c6250c6fc920cdf2d317bf9fa2ffd2b21b374224db34f931b12ba2f"
+    },
+    {
+      "path": "AGENTS.md",
+      "bytes": 2610,
+      "sha256": "eb11c34543f9d86ad91d2a01ad26aa1f16a34a3f81d9e430205ecb12a3aa6700"
+    },
+    {
+      "path": "CONTINUE_HERE.md",
+      "bytes": 2818,
+      "sha256": "43de1db9c87f81a1d70de4773284bb7be4be21c26cddf8345bf659970b4aa7f2"
+    },
+    {
+      "path": "current/EGA_v19/README.md",
+      "bytes": 4221,
+      "sha256": "3c76d1929e5ba785d17f751dfabc5710daf8461e4c77bca32ed9368f3e6e8ee0"
+    },
+    {
+      "path": "current/EGA_v19/PROGRESS.md",
+      "bytes": 4597,
+      "sha256": "ca6ddafbf30af996c10019e5ff77ba4cf461226face8a97bf93b9fa78b699f04"
+    },
+    {
+      "path": "current/EGA_v19/AGENTS.md",
+      "bytes": 1715,
+      "sha256": "23fcc79ae8ec9ccffd30af1d36b7e50af695aa48fe35e3fe5038dbc3a969465f"
+    },
+    {
+      "path": "current/EGA_v19/SOURCE_MAP.md",
+      "bytes": 7894,
+      "sha256": "fef95df0e1e82b120dc40255ad6f2e5e6b646e8528b02a31972d2fb8762a7a2f"
+    },
+    {
+      "path": "current/EGA_v19/PENDING_ISSUES.md",
+      "bytes": 7692,
+      "sha256": "3bf6adac65fd3e05ffeae5774ca4e4d88fbf1433c6b496ceb3242347ad28199c"
+    },
+    {
+      "path": "current/EGA_v19/HANDOVER_STATE.json",
+      "bytes": 1285,
+      "sha256": "27d04c83ab9d49bc0a3cf37758e73b7aeb8f972a63caed45e005d7b39e82df7f"
+    },
+    {
+      "path": "current/EGA_v19/main.tex",
+      "bytes": 6096,
+      "sha256": "570ef39e5d28287be2750979867d3b8cab3a3ad3be5f8ef5523232b79737df64"
+    }
+  ],
+  "dot_batch_occurrences": {
+    "69": 1,
+    "70": 1,
+    "71": 1,
+    "72": 1,
+    "73": 1,
+    "74": 1,
+    "75": 1,
+    "76": 1,
+    "77": 1,
+    "78": 1,
+    "79": 1,
+    "80": 1,
+    "81": 1,
+    "82": 1,
+    "83": 1,
+    "84": 1,
+    "85": 1,
+    "86": 1,
+    "87": 1,
+    "88": 1,
+    "89": 1,
+    "90": 1,
+    "91": 1,
+    "92": 1,
+    "93": 1,
+    "94": 1,
+    "95": 1,
+    "96": 1,
+    "97": 1,
+    "98": 1,
+    "99": 1,
+    "100": 1,
+    "101": 1,
+    "102": 1,
+    "103": 1,
+    "104": 1,
+    "105": 1,
+    "106": 1,
+    "107": 1,
+    "108": 1
+  },
+  "all_40_batches_input_exactly_once": true,
+  "v19_module_order": [
+    "continuations/v19_8_14_18.tex",
+    "continuations/v19_8_end.tex",
+    "continuations/v19_section9.tex",
+    "continuations/v19_section10.tex",
+    "continuations/v19_section11.tex"
+  ],
+  "old_replaced_module_is_input": false,
+  "retained_comparisons": [
+    {
+      "path": "continuations/v_dot_middle.tex",
+      "identical_to_v18": true,
+      "bytes": 66532,
+      "sha256": "db4bb436a85fe1632ba25e518ae396bb261bc3aa06bf63e8208392d95083cc93"
+    },
+    {
+      "path": "continuations/v_dot_late.tex",
+      "identical_to_v18": true,
+      "bytes": 49224,
+      "sha256": "b07e3ebdfecbb1f1c832e5310c5e7d7f4dab51e89d5fc449f161f1a498cebb21"
+    },
+    {
+      "path": "continuations/v18_first_8_14_onward.tex",
+      "identical_to_v18": true,
+      "bytes": 54527,
+      "sha256": "8d1391ef8ef3ac8787111f16d40e3d284d27103bc475abb68ceed335507a715a"
+    }
+  ],
+  "issues": [
+    {
+      "path": "current/EGA_v19/AGENTS.md",
+      "lines": [
+        1,
+        3,
+        5,
+        7
+      ],
+      "priority": "update_before_handover",
+      "finding": "Still identifies edition18, baseline17 and integration_in_progress; describes retention of 8.14 onward without v19 replacement boundary.",
+      "suggestion": "Identify edition19 based on18, current recollation/build status, five replacement modules through section11, next section12 and unchanged later modules."
+    },
+    {
+      "path": "current/EGA_v19/PENDING_ISSUES.md",
+      "lines": [
+        79
+      ],
+      "priority": "correct_temporal_attribution",
+      "finding": "P-V-THIRD-DELETED says the126/136/140 deleted blocks were translated this round, but these are edition18 work retained now.",
+      "suggestion": "Say edition18 already translated those blocks; keep exact unresolved readings."
+    },
+    {
+      "path": "current/EGA_v19/PENDING_ISSUES.md",
+      "lines": [
+        93
+      ],
+      "priority": "correct_evidence_pointer",
+      "finding": "Current-round source/migration evidence is directed only to integration/, which mainly preserves18th-edition work.",
+      "suggestion": "Direct this edition to recollation/, with integration/ explicitly labelled as edition18 history."
+    },
+    {
+      "path": "current/EGA_v19/SOURCE_MAP.md",
+      "lines": [
+        19,
+        89
+      ],
+      "priority": "optional_clarity",
+      "finding": "Historical block explicitly labelled edition18 nevertheless contains the old next8.14 line. Not a false current claim because of its history header, but isolated text search could mislead.",
+      "suggestion": "Do not rewrite historical words; add a brief current-vs-historical boundary reminder outside that block if desired."
+    },
+    {
+      "path": "current/EGA_v19/PROGRESS.md",
+      "lines": [
+        1,
+        7
+      ],
+      "priority": "known_replacement_pending",
+      "finding": "Still edition18 with its old build figures and next8.14; user-facing current status must use new draft once actual final values are filled.",
+      "suggestion": "Replace using PROGRESS_v19.final-draft.md after actual v19 build/check results are available."
+    }
+  ],
+  "draft_path": "edition19_work/engineering/PROGRESS_v19.final-draft.md",
+  "remaining_placeholders": [
+    "V19_MAIN_PDF_PHYSICAL_PAGES",
+    "V19_MAIN_SINGLE_BUILD_RESULT_AND_PAGES",
+    "V19_REPORT_PDF_PHYSICAL_PAGES",
+    "V19_REPORT_SINGLE_BUILD_RESULT_AND_PAGES",
+    "V19_FINAL_LOG_RESULTS_AND_NONFATAL_DIAGNOSTICS",
+    "V19_PDF_TEXT_SIZE_PIXEL_COMPARISON_RESULT",
+    "V19_FINAL_VISUAL_PAGES_HASHES_AND_RESULTS",
+    "V19_CURRENT_SOURCE_AND_PRESERVATION_CHECK_RESULT",
+    "V19_FULL_REPOSITORY_VERIFICATION_RESULT",
+    "V19_RELEASE_COMMIT_TAG_ASSETS_AND_CHECK_RESULT"
+  ],
+  "exclusions": [
+    "Did not compile",
+    "Did not certify final main.pdf or report.pdf",
+    "Did not verify all remote or locally unmaterialized archive payloads",
+    "Did not alter repository files"
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "command": [
+    "bash",
+    "-c",
+    "set -euo pipefail\nsource scripts/tex_environment.sh\npython3 flatten_sources.py\nfor pass in 1 2 3; do flags=(); if [[ \"$pass\" -lt 3 ]]; then flags=(-no-pdf); fi; xelatex -interaction=nonstopmode -halt-on-error \"${flags[@]}\" main.tex > main.pass$pass.log.txt 2>&1 || exit $?; done\ncp single.tex single_build/book_single.tex\ncd single_build\nfor pass in 1 2 3; do flags=(); if [[ \"$pass\" -lt 3 ]]; then flags=(-no-pdf); fi; xelatex -interaction=nonstopmode -halt-on-error \"${flags[@]}\" book_single.tex > book_single.pass$pass.log.txt 2>&1 || exit $?; done"
+  ],
+  "started_at_utc": "2026-11-24T17:29:37.571928+00:00",
+  "finished_at_utc": "2026-11-24T17:33:43.149959+00:00",
+  "elapsed_seconds": 245.578,
+  "exit_code": 0,
+  "scope": "Book modular and independent single rebuilt after two explicit paragraph terminators; report modular and standalone unchanged from successful prior builds."
+}

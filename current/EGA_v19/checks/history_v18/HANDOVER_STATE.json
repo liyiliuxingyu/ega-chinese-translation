@@ -1,0 +1,118 @@
+{
+  "edition": 18,
+  "date": "2026-11-25",
+  "time_zone": "Asia/Shanghai",
+  "verified_at_utc": "2026-11-24T17:39:56.110655+00:00",
+  "status": "integrated_compiled_verified",
+  "all_books_finished": false,
+  "current_project": "current/EGA_v18",
+  "base_commit": "28f090c03092bfa38c23eeb6bfeffb0471e123a5",
+  "base_project": "archive_20261121/01_project/EGA_v17",
+  "immutable_dot_source": "dot_updates_20261124",
+  "integrated_existing_dot_batches": [
+    69,
+    70,
+    71,
+    72,
+    73,
+    74,
+    75,
+    76,
+    77,
+    78,
+    79,
+    80,
+    81,
+    82,
+    83,
+    84,
+    85,
+    86,
+    87,
+    88,
+    89,
+    90,
+    91,
+    92,
+    93,
+    94,
+    95,
+    96,
+    97,
+    98,
+    99,
+    100,
+    101,
+    102,
+    103,
+    104,
+    105,
+    106,
+    107,
+    108
+  ],
+  "integration_scope": {
+    "69-72": "Appendix 17.16, sections 16.1-16.14 and author notes",
+    "73-85": "Third part: projective bundles, relative divisors and linear systems, through 4.4 and closing note",
+    "86-87": "1965-09-29 letter including deleted block; French physical 150 outline and 153 alternate scan",
+    "88-108": "Recollated replacements for first essay sections 1-7 and 8.1-8.13; existing 8.14 onward retained"
+  },
+  "new_translation_this_round": {
+    "source": "archive_20261121/03_sources/EGA5_francais.pdf",
+    "physical_pages": [
+      126,
+      136,
+      140
+    ],
+    "scope": "Readable bodies of three deleted manuscript blocks; unresolved words and deleted status explicitly retained",
+    "module": "continuations/v18_deleted_addenda.tex"
+  },
+  "final_book_pages": 1210,
+  "final_report_pages": 357,
+  "new_build_executed": true,
+  "document_class": "ctexbook",
+  "class_defaults": "Default fonts, type size and body geometry retained; TOC width accommodates four-digit page references.",
+  "validation": {
+    "actual_source_records": 168,
+    "unchanged_inherited_tex_files": 120,
+    "unchanged_previous_repository_records": 2343,
+    "all_page_comparison": "checks/current_pdf_parity.json",
+    "visual_review": "checks/visual_verification_summary.json",
+    "final_logs": "checks/current_build_log_summary.json",
+    "nonfatal_warnings_retained": true,
+    "failed_intermediate_comparisons_retained": [
+      "checks/parity_first_failure.json",
+      "checks/parity_after_line_fix.json"
+    ],
+    "mathematical_scope": "Limited source-page and calculation checks, not a complete re-audit of all inherited or integrated proofs"
+  },
+  "next_collation": {
+    "work": "EGA V first essay",
+    "item": "8.14",
+    "french_pdf_physical_pages": "46 lower part starting Combinant 8.13, then 47",
+    "english_pdf_physical_page": 32,
+    "existing_text": "continuations/v18_first_8_14_onward.tex",
+    "meaning": "Recollation of existing translation, not a missing continuation"
+  },
+  "formal_chapter_IV": {
+    "status": "body_not_continuously_translated",
+    "source": "EGAIV.1.pdf",
+    "next_physical_pages": "221 contents, 222-223 opening, 223 (1.1.1)"
+  },
+  "source_pdf_ends_checked": {
+    "EGAVaiello.pdf": {
+      "pages": 112,
+      "last_page": "letter and editor notes 82-84"
+    },
+    "EGA5_francais.pdf": {
+      "pages": 171,
+      "last_page": "smooth quadratic form appendix; not a full 171-page coverage audit"
+    }
+  },
+  "pending_issues": "PENDING_ISSUES.md",
+  "publication_target": {
+    "repository": "https://github.com/liyiliuxingyu/ega-chinese-translation",
+    "release_tag": "v18-20261125",
+    "note": "Actual publication receipt and Git commit are external to this self-contained build status."
+  }
+}

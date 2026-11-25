@@ -1,0 +1,107 @@
+{
+  "scope": "Actual final-pass stdout of four builds; warnings kept, not claimed absent.",
+  "pass": true,
+  "outputs": [
+    {
+      "file": "main.pass3.log.txt",
+      "sha256": "e0d7534a3e310496e67281bd196105901488d2bce125b8b9719edc416da36604",
+      "counts": {
+        "xdvipdfmx:warning": 0,
+        "destination with the same identifier": 0,
+        "duplicate destination": 0,
+        "Undefined control sequence": 0,
+        "Missing character": 0,
+        "LaTeX Error": 0
+      },
+      "nonfatal_warning_lines": [
+        "LaTeX Font Warning: Font shape `U/rsfs/m/n' in size <10.53937> not available",
+        "LaTeX Font Warning: Font shape `U/rsfs/m/n' in size <7.52812> not available",
+        "LaTeX Font Warning: Font shape `U/rsfs/m/n' in size <15.05624> not available",
+        "LaTeX Font Warning: Size substitutions with differences"
+      ]
+    },
+    {
+      "file": "report.pass3.log.txt",
+      "sha256": "e3abfe9effdd29974028b1122ca69bf2caf55c179353ec619030ad6654cf8de1",
+      "counts": {
+        "xdvipdfmx:warning": 0,
+        "destination with the same identifier": 0,
+        "duplicate destination": 0,
+        "Undefined control sequence": 0,
+        "Missing character": 0,
+        "LaTeX Error": 0
+      },
+      "nonfatal_warning_lines": [
+        "LaTeX Font Warning: Font shape `U/rsfs/m/n' in size <10.53937> not available",
+        "LaTeX Font Warning: Font shape `U/rsfs/m/n' in size <7.52812> not available",
+        "LaTeX Font Warning: Font shape `U/rsfs/m/n' in size <15.05624> not available",
+        "Package hyperref Warning: Token not allowed in a PDF string (Unicode):",
+        "Package hyperref Warning: Token not allowed in a PDF string (Unicode):",
+        "Package hyperref Warning: Token not allowed in a PDF string (Unicode):",
+        "Package hyperref Warning: Token not allowed in a PDF string (Unicode):",
+        "Package hyperref Warning: Token not allowed in a PDF string (Unicode):",
+        "Package hyperref Warning: Token not allowed in a PDF string (Unicode):",
+        "Package hyperref Warning: Token not allowed in a PDF string (Unicode):",
+        "Package hyperref Warning: Token not allowed in a PDF string (Unicode):",
+        "Package hyperref Warning: Token not allowed in a PDF string (Unicode):",
+        "Package hyperref Warning: Token not allowed in a PDF string (Unicode):",
+        "Package hyperref Warning: Token not allowed in a PDF string (Unicode):",
+        "Package hyperref Warning: Token not allowed in a PDF string (Unicode):",
+        "Package hyperref Warning: Token not allowed in a PDF string (Unicode):",
+        "Package hyperref Warning: Token not allowed in a PDF string (Unicode):",
+        "LaTeX Font Warning: Size substitutions with differences"
+      ]
+    },
+    {
+      "file": "single_build/book_single.pass3.log.txt",
+      "sha256": "455d629d5b2cfc7cb9573617668c170fb81a8b70ddfd77e7fb4536f0d3968151",
+      "counts": {
+        "xdvipdfmx:warning": 0,
+        "destination with the same identifier": 0,
+        "duplicate destination": 0,
+        "Undefined control sequence": 0,
+        "Missing character": 0,
+        "LaTeX Error": 0
+      },
+      "nonfatal_warning_lines": [
+        "LaTeX Font Warning: Font shape `U/rsfs/m/n' in size <10.53937> not available",
+        "LaTeX Font Warning: Font shape `U/rsfs/m/n' in size <7.52812> not available",
+        "LaTeX Font Warning: Font shape `U/rsfs/m/n' in size <15.05624> not available",
+        "LaTeX Font Warning: Size substitutions with differences"
+      ]
+    },
+    {
+      "file": "single_build/audit_single.pass3.log.txt",
+      "sha256": "67378cf235f9fa4600a5b3794e16d52a7e6d533d166831021e6722abc6fb9eea",
+      "counts": {
+        "xdvipdfmx:warning": 0,
+        "destination with the same identifier": 0,
+        "duplicate destination": 0,
+        "Undefined control sequence": 0,
+        "Missing character": 0,
+        "LaTeX Error": 0
+      },
+      "nonfatal_warning_lines": [
+        "LaTeX Font Warning: Font shape `U/rsfs/m/n' in size <10.53937> not available",
+        "LaTeX Font Warning: Font shape `U/rsfs/m/n' in size <7.52812> not available",
+        "LaTeX Font Warning: Font shape `U/rsfs/m/n' in size <15.05624> not available",
+        "Package hyperref Warning: Token not allowed in a PDF string (Unicode):",
+        "Package hyperref Warning: Token not allowed in a PDF string (Unicode):",
+        "Package hyperref Warning: Token not allowed in a PDF string (Unicode):",
+        "Package hyperref Warning: Token not allowed in a PDF string (Unicode):",
+        "Package hyperref Warning: Token not allowed in a PDF string (Unicode):",
+        "Package hyperref Warning: Token not allowed in a PDF string (Unicode):",
+        "Package hyperref Warning: Token not allowed in a PDF string (Unicode):",
+        "Package hyperref Warning: Token not allowed in a PDF string (Unicode):",
+        "Package hyperref Warning: Token not allowed in a PDF string (Unicode):",
+        "Package hyperref Warning: Token not allowed in a PDF string (Unicode):",
+        "Package hyperref Warning: Token not allowed in a PDF string (Unicode):",
+        "Package hyperref Warning: Token not allowed in a PDF string (Unicode):",
+        "Package hyperref Warning: Token not allowed in a PDF string (Unicode):",
+        "Package hyperref Warning: Token not allowed in a PDF string (Unicode):",
+        "LaTeX Font Warning: Size substitutions with differences"
+      ]
+    }
+  ],
+  "checked_at_utc": "2026-11-24T17:39:24.188218+00:00"
+}

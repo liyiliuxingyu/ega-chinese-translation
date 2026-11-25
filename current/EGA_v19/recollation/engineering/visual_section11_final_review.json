@@ -1,0 +1,327 @@
+{
+  "status": "requested_pages_after_fixes_visually_passed; report hash confirmed; later main hash rebinding pending independent page comparison",
+  "source_render_manifest": "edition19_work/rendered/final_after_fixes/manifest.json",
+  "source_render_manifest_sha256": "8d980dc155e50242763526b5270861542d6c12d7e50b112b6918e7b14c118325",
+  "render_dpi": 115.2,
+  "reviewed_pdf_hashes": {
+    "main.pdf": "a837e71e9373b8b44aa3e00ebe7c5f64e5c41e03769645b668149dde202df14e",
+    "report.pdf": "21bb0187a85ab01aaee6bc01b0d0c0d10d346471b81538c9dab219a5441a08a1"
+  },
+  "report_actual_file_sha256_confirmed": "21bb0187a85ab01aaee6bc01b0d0c0d10d346471b81538c9dab219a5441a08a1",
+  "personally_reopened_pages": {
+    "main": [
+      1049,
+      1050,
+      1051,
+      1052,
+      1053,
+      1054
+    ],
+    "report": [
+      42,
+      43,
+      44,
+      45,
+      46
+    ]
+  },
+  "inherited_only_pages": {
+    "report": [
+      47,
+      48,
+      49
+    ]
+  },
+  "page_reviews": [
+    {
+      "image": "edition19_work/engineering/visual_section11_render/after_fixes/main_1049.png",
+      "image_sha256": "f6b020185963fc0026343e9937e1224a937f6fefa268eb615dc7f1d2f2f6d43b",
+      "pixel_sha256_rgb_with_dimensions": "7658cf26b80c7cb179ee0b4c863c7f7413bc01c1788a6b137551a46662af4f98",
+      "pixel_dimensions": [
+        953,
+        1348
+      ],
+      "kind": "main",
+      "physical_page": 1049,
+      "printed_page": 1029,
+      "pdf_sha256": "a837e71e9373b8b44aa3e00ebe7c5f64e5c41e03769645b668149dde202df14e",
+      "review_method": "actual_reopened_image",
+      "changed_pixel_bounds_vs_first_review": [
+        159,
+        199,
+        712,
+        1156
+      ],
+      "body_below_pixel_y200_unchanged": false,
+      "observation": "Actually reopened: section11 title, source statement and complete first paragraph now share the page. Orphan-heading finding resolved. Opening formulas and notes fit."
+    },
+    {
+      "image": "edition19_work/engineering/visual_section11_render/after_fixes/main_1050.png",
+      "image_sha256": "43e92143d8900b851372bd1dceef590782c3b82acac36b2a8df02c5f5fe1e376",
+      "pixel_sha256_rgb_with_dimensions": "98ad7e39d3acad0aaec39db241a2fa063cff7b92d68d6dd2f2816d169762603a",
+      "pixel_dimensions": [
+        953,
+        1348
+      ],
+      "kind": "main",
+      "physical_page": 1050,
+      "printed_page": 1030,
+      "pdf_sha256": "a837e71e9373b8b44aa3e00ebe7c5f64e5c41e03769645b668149dde202df14e",
+      "review_method": "actual_reopened_image",
+      "changed_pixel_bounds_vs_first_review": [
+        241,
+        202,
+        792,
+        1156
+      ],
+      "body_below_pixel_y200_unchanged": false,
+      "observation": "Actually reopened: finite-presentation continuation, affine charts, split sequence, subfunctor and vector-bundle formula legible; four long notes fit."
+    },
+    {
+      "image": "edition19_work/engineering/visual_section11_render/after_fixes/main_1051.png",
+      "image_sha256": "ecb9e09f4ec35ee6881767f9d50f2141557896045704f98f6c0d3a67c5911c99",
+      "pixel_sha256_rgb_with_dimensions": "e29aa500ebc043691f1d3a9ffff8a8779d86632eaef724599609c5eece179d01",
+      "pixel_dimensions": [
+        953,
+        1348
+      ],
+      "kind": "main",
+      "physical_page": 1051,
+      "printed_page": 1031,
+      "pdf_sha256": "a837e71e9373b8b44aa3e00ebe7c5f64e5c41e03769645b668149dde202df14e",
+      "review_method": "actual_reopened_image",
+      "changed_pixel_bounds_vs_first_review": [
+        159,
+        202,
+        710,
+        1158
+      ],
+      "body_below_pixel_y200_unchanged": false,
+      "observation": "Actually reopened: restored intrinsic conditions and duality/dimension formulas fit; five notes readable. Sentence continues naturally to next page."
+    },
+    {
+      "image": "edition19_work/engineering/visual_section11_render/after_fixes/main_1052.png",
+      "image_sha256": "a46f3720c37ad79c5da5b98135ed3e592a28331c4da6f526741d1b12aa6f67bd",
+      "pixel_sha256_rgb_with_dimensions": "4592ca32633d00bf1fb7508c8e3b98a40cff6b34bbc5445fef539cd7492b1d25",
+      "pixel_dimensions": [
+        953,
+        1348
+      ],
+      "kind": "main",
+      "physical_page": 1052,
+      "printed_page": 1032,
+      "pdf_sha256": "a837e71e9373b8b44aa3e00ebe7c5f64e5c41e03769645b668149dde202df14e",
+      "review_method": "actual_reopened_image",
+      "changed_pixel_bounds_vs_first_review": [
+        241,
+        202,
+        791,
+        1156
+      ],
+      "body_below_pixel_y200_unchanged": false,
+      "observation": "Actually reopened: linear inclusion, closing handwritten Grass(E) material and disjoint union precede section12 heading and notation. Heading has accompanying body; no marker collision or footnote overflow."
+    },
+    {
+      "image": "edition19_work/engineering/visual_section11_render/after_fixes/main_1053.png",
+      "image_sha256": "f890595ea7e368b895b89c4759368de077403df88e69223958087ff45b5e9323",
+      "pixel_sha256_rgb_with_dimensions": "58d972462944faaa0fa277d6a51519c33832c9983cf8803546bdc6c1798962ac",
+      "pixel_dimensions": [
+        953,
+        1348
+      ],
+      "kind": "main",
+      "physical_page": 1053,
+      "printed_page": 1033,
+      "pdf_sha256": "a837e71e9373b8b44aa3e00ebe7c5f64e5c41e03769645b668149dde202df14e",
+      "review_method": "actual_reopened_image",
+      "changed_pixel_bounds_vs_first_review": [
+        159,
+        202,
+        710,
+        1156
+      ],
+      "body_below_pixel_y200_unchanged": false,
+      "observation": "Actually reopened: section12 dual notation and incidence morphism formulas fit; long footnotes stay within margins."
+    },
+    {
+      "image": "edition19_work/engineering/visual_section11_render/after_fixes/main_1054.png",
+      "image_sha256": "d1f23aa28aabb215fd50e7c9c3e8d32aff935a7efe2881e961624b7ff1f9fa5b",
+      "pixel_sha256_rgb_with_dimensions": "97663600840c475505e3bb14dfa1c1000e8699598d141c666d918ea6c4b5ed32",
+      "pixel_dimensions": [
+        953,
+        1348
+      ],
+      "kind": "main",
+      "physical_page": 1054,
+      "printed_page": 1034,
+      "pdf_sha256": "a837e71e9373b8b44aa3e00ebe7c5f64e5c41e03769645b668149dde202df14e",
+      "review_method": "actual_reopened_image",
+      "changed_pixel_bounds_vs_first_review": [
+        241,
+        202,
+        791,
+        1156
+      ],
+      "body_below_pixel_y200_unchanged": false,
+      "observation": "Actually reopened: section12 zero-scheme description, fibers and Grassmann identity fit. No new isolated footnote or overlap."
+    },
+    {
+      "image": "edition19_work/engineering/visual_section11_render/after_fixes/report_0042.png",
+      "image_sha256": "8f33d912329ef55cf41667dbb7dda64889ad1163ae568a2d602662f85c772937",
+      "pixel_sha256_rgb_with_dimensions": "d339c959c9a014595d64b368491f1db9f8dc74cea1631bf01d9119212d1fff6d",
+      "pixel_dimensions": [
+        953,
+        1348
+      ],
+      "kind": "report",
+      "physical_page": 42,
+      "printed_page": 24,
+      "pdf_sha256": "21bb0187a85ab01aaee6bc01b0d0c0d10d346471b81538c9dab219a5441a08a1",
+      "review_method": "actual_reopened_image",
+      "changed_pixel_bounds_vs_first_review": [
+        436,
+        157,
+        791,
+        175
+      ],
+      "body_below_pixel_y200_unchanged": true,
+      "observation": "Actually reopened: running header now reads edition19 section11 collation; restored-conditions text and table opening fit."
+    },
+    {
+      "image": "edition19_work/engineering/visual_section11_render/after_fixes/report_0043.png",
+      "image_sha256": "191a5794bbdf8578a8560a66e13df6e8382efe9e223f02b7b86e51226ab114a3",
+      "pixel_sha256_rgb_with_dimensions": "f3fde347e869c08d59e06bdab54a54419248eade5aa9dc7e36fed2b89f52e5b8",
+      "pixel_dimensions": [
+        953,
+        1348
+      ],
+      "kind": "report",
+      "physical_page": 43,
+      "printed_page": 25,
+      "pdf_sha256": "21bb0187a85ab01aaee6bc01b0d0c0d10d346471b81538c9dab219a5441a08a1",
+      "review_method": "actual_reopened_image",
+      "changed_pixel_bounds_vs_first_review": [
+        160,
+        157,
+        515,
+        175
+      ],
+      "body_below_pixel_y200_unchanged": true,
+      "observation": "Actually reopened: corrected header, repeated longtable columns, finite-presentation discussion and subsection4 opening fit."
+    },
+    {
+      "image": "edition19_work/engineering/visual_section11_render/after_fixes/report_0044.png",
+      "image_sha256": "87559de3a2937026c33d9214d4848b120a24e2b94db69892c3aa06fd2fbc262e",
+      "pixel_sha256_rgb_with_dimensions": "f2c71fda227ced845a9502e94710fc975a0e06df3ba5dbe5ad2da58f6e413740",
+      "pixel_dimensions": [
+        953,
+        1348
+      ],
+      "kind": "report",
+      "physical_page": 44,
+      "printed_page": 26,
+      "pdf_sha256": "21bb0187a85ab01aaee6bc01b0d0c0d10d346471b81538c9dab219a5441a08a1",
+      "review_method": "actual_reopened_image",
+      "changed_pixel_bounds_vs_first_review": [
+        436,
+        157,
+        791,
+        175
+      ],
+      "body_below_pixel_y200_unchanged": true,
+      "observation": "Actually reopened: corrected header; coordinate/Hom formulas and finite-rank/polarity discussion fit."
+    },
+    {
+      "image": "edition19_work/engineering/visual_section11_render/after_fixes/report_0045.png",
+      "image_sha256": "369c68a420e503601405f7cbdf5171d932e04565622714c877f279cfbc16e5d3",
+      "pixel_sha256_rgb_with_dimensions": "58a09d9f00143204b9e8208f0463ee4e288da1fc9a4206b9e515be0fd71b7dcc",
+      "pixel_dimensions": [
+        953,
+        1348
+      ],
+      "kind": "report",
+      "physical_page": 45,
+      "printed_page": 27,
+      "pdf_sha256": "21bb0187a85ab01aaee6bc01b0d0c0d10d346471b81538c9dab219a5441a08a1",
+      "review_method": "actual_reopened_image",
+      "changed_pixel_bounds_vs_first_review": [
+        160,
+        157,
+        515,
+        175
+      ],
+      "body_below_pixel_y200_unchanged": true,
+      "observation": "Actually reopened: corrected header and complete limitations subsection; no clipping."
+    },
+    {
+      "image": "edition19_work/engineering/visual_section11_render/after_fixes/report_0046.png",
+      "image_sha256": "44be1ff3e20e32fe22fc58e2a01ff5b1c6de195ed169185974be28e6f208e0d9",
+      "pixel_sha256_rgb_with_dimensions": "a6dfa2c303b1ed2763713aff8b1460238f48cc9c56c15317935a2b176e0a8b4b",
+      "pixel_dimensions": [
+        953,
+        1348
+      ],
+      "kind": "report",
+      "physical_page": 46,
+      "printed_page": 28,
+      "pdf_sha256": "21bb0187a85ab01aaee6bc01b0d0c0d10d346471b81538c9dab219a5441a08a1",
+      "review_method": "actual_reopened_image",
+      "changed_pixel_bounds_vs_first_review": [
+        436,
+        157,
+        791,
+        175
+      ],
+      "body_below_pixel_y200_unchanged": true,
+      "observation": "Actually reopened: intentional blank verso carries corrected section11 running header and page28; no body text."
+    }
+  ],
+  "inherited_reviews": [
+    {
+      "image": "edition19_work/rendered/final_after_fixes/report_0047.png",
+      "physical_page": 47,
+      "printed_page": 29,
+      "image_sha256": "b963a29305f00f85e68f9257de2ffb622a399d9df241a88c6489366659ced395",
+      "pixel_sha256_rgb_with_dimensions": "64d05a8ed340e919cce9e16501fa32c3f332ecdf035d174cb412f567a368c6f7",
+      "pdf_sha256": "21bb0187a85ab01aaee6bc01b0d0c0d10d346471b81538c9dab219a5441a08a1",
+      "review_method": "prior_actual_review_inherited_by_exact_png_byte_and_pixel_equality",
+      "actually_reopened_this_round": false,
+      "prior_record": "edition19_work/engineering/visual_section11_review.json"
+    },
+    {
+      "image": "edition19_work/rendered/final_after_fixes/report_0048.png",
+      "physical_page": 48,
+      "printed_page": 30,
+      "image_sha256": "dfb81a6f3b80a7f523fa2d137827e30f6a7f6e3c15219589faa046cc4bccc04d",
+      "pixel_sha256_rgb_with_dimensions": "ae0e304c38aae0a26253390400929b31f48588f849e6a3f6b0192c38b6456701",
+      "pdf_sha256": "21bb0187a85ab01aaee6bc01b0d0c0d10d346471b81538c9dab219a5441a08a1",
+      "review_method": "prior_actual_review_inherited_by_exact_png_byte_and_pixel_equality",
+      "actually_reopened_this_round": false,
+      "prior_record": "edition19_work/engineering/visual_section11_review.json"
+    },
+    {
+      "image": "edition19_work/rendered/final_after_fixes/report_0049.png",
+      "physical_page": 49,
+      "printed_page": 31,
+      "image_sha256": "ddb4ca5bf6571603f7facade782603281f79373fba207c76dd5b4a1b05a64de9",
+      "pixel_sha256_rgb_with_dimensions": "bba468eab5f58a2dc52cf092105d1d55b263cf24d0bda1ccf32b95e1fc61b047",
+      "pdf_sha256": "21bb0187a85ab01aaee6bc01b0d0c0d10d346471b81538c9dab219a5441a08a1",
+      "review_method": "prior_actual_review_inherited_by_exact_png_byte_and_pixel_equality",
+      "actually_reopened_this_round": false,
+      "prior_record": "edition19_work/engineering/visual_section11_review.json"
+    }
+  ],
+  "resolved_findings": [
+    {
+      "id": "VIS11-01",
+      "resolved_by_observation": "main physical1049 shows section11 title/source/first paragraph together"
+    },
+    {
+      "id": "VIS11-02",
+      "resolved_by_observation": "report42-46 visibly shows correct edition19 section11 running header; changed pixels independently confined above y200"
+    }
+  ],
+  "new_layout_problems_found": [],
+  "pending_global_main_binding": "Parent is still correcting a separate orphan-footnote layout near main1038. If whole-file hash changes, bind this review to the final PDF only after identical page pixel hashes are observed, or reopen changed pages. No future final-main success is presumed.",
+  "limits": "Only the listed pages were reviewed. Report47-49 were not reopened this round and are explicitly inherited by exact equality. No frozen TeX modified by reviewer."
+}

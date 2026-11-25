@@ -1,0 +1,37 @@
+order to be able to include in the statement in question also the isomorphism of the pencil
+with a blow up (i.e. to give a description of the situation permitting a suitable reference).
+We obtain thus a way for every projective smooth geometrically connected X of dim ≥2
+over an inﬁnite ﬁeld k, to ﬁnd a closed smooth subscheme non-empty of codimension two
+at every one of its points such that the blown up scheme admits a ﬁbration over P 1, with
+all the ﬁbers are geometrically integral and such that all the ﬁbers are smooth except at
+most a ﬁnite number, the latter having at most a geometrically singular point and such a
+point being rational over k and geometrically an ordinary singularity.
+This explains the importance of a deep study (just started at the present time) of
+such ﬁbrations with singular ﬁbers to reduce in a certain measure (to some extent the
+study of projective smooth varieties of dimension d to those of (families depending on one
+parameter) or projective varieties of dimension (d−1) that may have ordinary singularities.
+The statement 10.2 is a more or less immediate consequence of the following which is
+completely independent of the story of hyperplane sections and would be without a doubt
+better in its place in an extra paragraph “regular immersions.”56
+Proposition 10.3 is crossed out. Ask AG if that is his intention.
+Proposition 10.3.
+Let X be a prescheme, G a quasi-coherent module over X and
+u: G →O a homomorphism, J = u(G), T = V (J). Let X be deduced from X by blowing
+up T. Let us consider on the other hand p = p(G), the canonical homomorphism Gp →
+O(1) and its kernel H (such that we have the exact sequence 0 →H →Gp →O(1) →0)
+the homomorphism up: Gp →O and the quadi-coherent ideal K = up(H) →O. Then
+X is canonically isomorphic to a closed subscheme of V (K). If G is locally free and u is
+“regular” then the above isomorphism is an isomorphism of X with V (K) itself in this
+case H is locally free over p and H →ϑp 9whose prescheme of ??? is X) is also regular.
+The ﬁrst statement is almost trivial. The second one is an exercise which does not
+cause any diﬃculty (I have not done it in detail thinking that you can deduce it just as
+well as I).
+If in 10.2, S = Spec k and X is of dimension ≥1 then the assumption of regularity
+made is equivalent to T = φ so that YL →X is an isomorphism. We ﬁnd therefore by
+conjugating with 9.2:
+Corollary 10.4 (of 10.2).
+Let X be a smooth curve geometrically connected in a pro-
+jective space P over an inﬁnite ﬁeld k and let n ≥2. Then there exists a linear pencil of
+n-forms over P deﬁning a morphism X →P 1 having the following property: the morphism
+56Ask A.G.
+40

@@ -1,0 +1,30 @@
+{
+  "performed_utc": "2026-11-25T07:00:09.965860+00:00",
+  "scope": "polynomial identities only; not proof of Bertini claims",
+  "checks": [
+    {
+      "id": "9.3a",
+      "substitution": "a=u,b=u*v",
+      "input": "a**2 + a + b**2",
+      "output": "u*(u*v**2 + u + 1)",
+      "expected": "u*(u*v**2 + u + 1)",
+      "pass": true
+    },
+    {
+      "id": "9.3b",
+      "substitution": "a=u,b=u*v",
+      "input": "a**2 + b",
+      "output": "u*(u + v)",
+      "expected": "u*(u + v)",
+      "pass": true
+    },
+    {
+      "id": "9.3c",
+      "substitution": "a=u,b=u*v",
+      "input": "a**3 + a**2 + b",
+      "output": "u*(u**2 + u + v)",
+      "expected": "u*(u**2 + u + v)",
+      "pass": true
+    }
+  ]
+}

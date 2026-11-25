@@ -1,0 +1,60 @@
+{
+  "edition": 19,
+  "scope": "Final copied sources; preceding review records retain their original point-in-time hashes.",
+  "files": [
+    {
+      "path": "continuations/v19_8_14_18.tex",
+      "bytes": 15430,
+      "sha256": "5c2609be0e01abfe7b409b902f1e16026ecc22ab22c2978ecb590edd98035614"
+    },
+    {
+      "path": "continuations/v19_8_end.tex",
+      "bytes": 10957,
+      "sha256": "3cf8a0d671d390bb9234304f129b81c957996e74179b96cd655cac633a7dd682"
+    },
+    {
+      "path": "continuations/v19_section10.tex",
+      "bytes": 13751,
+      "sha256": "992806dbaae2f846eb3125f50bf2067a6204ef25bd70219dd7aa98436e18f978"
+    },
+    {
+      "path": "continuations/v19_section11.tex",
+      "bytes": 12878,
+      "sha256": "abbb38bb18a7ebb435a63002dae6070f41df4084184d5e54c6c89211da71dede"
+    },
+    {
+      "path": "continuations/v19_section9.tex",
+      "bytes": 12870,
+      "sha256": "8ae1daa49b02dbd5f15f31bc82397258cbc713b40de113cd9ec41712eb7eb781"
+    },
+    {
+      "path": "reports/v19_8_14_18_audit.tex",
+      "bytes": 26468,
+      "sha256": "70d3c26c20684e65cb8ac234b6f3f8eb37362abdd3276197ea4fd2085dcb6217"
+    },
+    {
+      "path": "reports/v19_8_end_audit.tex",
+      "bytes": 15496,
+      "sha256": "117e983abff77e55a28e8698396232ef8fef6060ec512ea3d436e33575fb9de3"
+    },
+    {
+      "path": "reports/v19_sections9_10_audit.tex",
+      "bytes": 10864,
+      "sha256": "19eb14527fd128e1e89c5a498f47d64bf81d8df779b211ea0daff973c5f84688"
+    },
+    {
+      "path": "reports/audit_section11.tex",
+      "bytes": 9567,
+      "sha256": "0716c36010512e47c0f36d81514c6a47a04fa6002c9b5efffd548654a893cd79"
+    },
+    {
+      "path": "reports/v19_integration_audit.tex",
+      "bytes": 3584,
+      "sha256": "4308986ad28f2de981d980ec28906046d9a89a2f0003f5dd8abc94c60fb005d8"
+    }
+  ],
+  "layout_changes_after_agent_freeze": [
+    "engineering/final_running_header_patch.json",
+    "engineering/final_isolated_footnote_patch.json"
+  ]
+}

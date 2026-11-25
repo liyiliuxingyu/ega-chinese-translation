@@ -1,0 +1,60 @@
+{
+  "schema_version": 1,
+  "stage": "diagnosis_before_parent_explicit_paragraph_fix",
+  "main_sha256": "2eccd0401f188108655f6d1b21950b9193c7a2d70f326a554218c4f41eb286d4",
+  "single_sha256": "4ff7eca8ed9099e45046ae98bf5a20218a1bb3e3add55df9d1822ed8b5cead51",
+  "page_count": 1210,
+  "pages": [
+    {
+      "physical_page": 1026,
+      "text_exactly_equal": true,
+      "difference_bbox_pixels_160dpi": [
+        635,
+        990,
+        1033,
+        1016
+      ],
+      "glyphs_with_origin_delta_over_0_01pt": 23,
+      "affected_line_y_points": [
+        450.599,
+        454.409
+      ],
+      "max_abs_dx_points": 1.2960205078125,
+      "max_abs_dy_points": 0.0,
+      "font_and_size_unchanged": true,
+      "first_context": "属态射的引出语；(c)的后半原句在",
+      "last_context": "找到。］3,4,5底本位置：Dot"
+    },
+    {
+      "physical_page": 1029,
+      "text_exactly_equal": true,
+      "difference_bbox_pixels_160dpi": [
+        282,
+        588,
+        938,
+        614
+      ],
+      "glyphs_with_origin_delta_over_0_01pt": 40,
+      "affected_line_y_points": [
+        269.518,
+        273.328,
+        275.989
+      ],
+      "max_abs_dx_points": 1.48895263671875,
+      "max_abs_dy_points": 0.0,
+      "font_and_size_unchanged": true,
+      "first_context": "包维数不会增加。1又因L/K有限，",
+      "last_context": "dimZ=r−1。底本位置：Dot"
+    }
+  ],
+  "finding": "After the blank-line flattener correction, only the final lines of batch105 and batch106 still differ. Extracted text, glyph sequences, fonts, sizes and baseline y positions are equal; only horizontal origin/glue allocation changes.",
+  "mechanism_assessment": "Consistent with remaining end-of-input/parent-line space handling while a paragraph stays open across endgroup and the next module input. This is a narrowed diagnosis, not a claim of a TeX token trace proving the exact residual space node.",
+  "recommended_minimal_fix": "End the paragraph explicitly before closing the local group: add one par immediately before the final endgroup in batch105 and batch106. This removes reliance on input EOF/flattened comments to finish a paragraph.",
+  "parent_action_reported": "Parent has applied that exact two-line layout-only change and recorded integration/paragraph_boundary_fix.json; rebuild and final comparison were started. No success is presumed in this diagnostic.",
+  "evidence": "checks/middle_single_diagnosis_round2/glyph_differences.json and the generated160dpi images/text. Current round images were rendered for coordinate diagnosis; no new visual page inspection is claimed here.",
+  "limits": [
+    "Only pages1026 and1029 were measured.",
+    "Full final main/single and report comparisons remain parent work.",
+    "This reviewer did not modify source, flattener, or build outputs and stopped further experiments after parent began the exact fix."
+  ]
+}

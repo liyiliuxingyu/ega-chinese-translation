@@ -1,0 +1,12 @@
+{
+  "command": [
+    "bash",
+    "-c",
+    "set -euo pipefail\nsource scripts/tex_environment.sh\npython3 flatten_sources.py\ncp single.tex single_build/book_single.tex\ncp report_single.tex single_build/audit_single.tex\ncd single_build\nfor f in book_single audit_single; do\n for pass in 1 2 3; do flags=(); if [[ \"$pass\" -lt 3 ]]; then flags=(-no-pdf); fi; xelatex -interaction=nonstopmode -halt-on-error \"${flags[@]}\" \"$f.tex\" > \"$f.pass$pass.log.txt\" 2>&1 || exit $?; done\ndone"
+  ],
+  "started_at_utc": "2026-11-24T17:25:09.786987+00:00",
+  "finished_at_utc": "2026-11-24T17:27:40.332145+00:00",
+  "elapsed_seconds": 150.546,
+  "exit_code": 0,
+  "scope": "Both independent standalone variants rebuilt after verified line-based input flattening fix. Modular book and report sources and PDFs unchanged."
+}

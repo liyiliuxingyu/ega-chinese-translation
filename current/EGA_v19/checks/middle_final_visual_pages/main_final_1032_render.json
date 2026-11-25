@@ -1,0 +1,12 @@
+{
+  "pdf": "main.pdf",
+  "pdf_sha256": "2eccd0401f188108655f6d1b21950b9193c7a2d70f326a554218c4f41eb286d4",
+  "pdf_page_count": 1210,
+  "physical_page": 1032,
+  "printed_page": 1012,
+  "dpi": 140,
+  "image": "checks/middle_final_visual_pages/main_final_1032.png",
+  "image_sha256": "93edcad4afff0fb0a0616a26dce92bf1af7d671728670d44d6f38ee64fc8f013",
+  "visually_reviewed": true,
+  "review_method": "full-page PNG opened with image viewer after final module build"
+}

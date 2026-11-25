@@ -1,0 +1,16 @@
+{
+  "pass": true,
+  "checked_at_utc": "2026-11-24T17:30:05.315801+00:00",
+  "baseline_manifest": "snapshots/20261124/REPOSITORY_MANIFEST.json",
+  "baseline_manifest_sha256": "1f6582fc88e022b93b9a635a9d0f871552605fa15f4606e4711adb6167cd183c",
+  "baseline_records": 2346,
+  "preserved_records_checked": 2343,
+  "preserved_bytes_checked": 634405587,
+  "permitted_root_document_updates": [
+    "AGENTS.md",
+    "CONTINUE_HERE.md",
+    "README.md"
+  ],
+  "problems": [],
+  "scope": "All former ordinary payload files except explicitly updated root instructions remain byte-identical; includes immutable archive and Dot originals. No mathematical validation."
+}

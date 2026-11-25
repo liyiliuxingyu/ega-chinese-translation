@@ -1,0 +1,390 @@
+{
+  "task": "Edition19 first essay 8.14--8.18 French/English recollation",
+  "source_files": [
+    {
+      "path": "ega-recovery/archive_20261121/03_sources/EGA5_francais.pdf",
+      "bytes": 16097021,
+      "sha256": "24cf8204184b58b18a46e5f63ecc36d6e791b3c8c96a09daac93de96ebd8e830"
+    },
+    {
+      "path": "ega-recovery/archive_20261121/03_sources/EGAVaiello.pdf",
+      "bytes": 677332,
+      "sha256": "23a20ef32fd16a1bd623c0c08ac080d04fc94f248de12133b713a19d6b0330d9"
+    },
+    {
+      "path": "ega-recovery/current/EGA_v18/continuations/v18_first_8_14_onward.tex",
+      "bytes": 54527,
+      "sha256": "8d1391ef8ef3ac8787111f16d40e3d284d27103bc475abb68ceed335507a715a"
+    },
+    {
+      "path": "ega-recovery/current/EGA_v18/continuations/v18_batch108.tex",
+      "bytes": 4906,
+      "sha256": "1bb924ec62be92e11bc1b67f4bf748135060ee4b72d3eb82479c20303aaabd4a"
+    }
+  ],
+  "replacement_boundary": {
+    "old_relative_path": "current/EGA_v18/continuations/v18_first_8_14_onward.tex",
+    "start": "Beginning of file: DOT_IMPORT 08",
+    "end_exclusive": "First % DOT_IMPORT 11 line",
+    "old_span_utf8_bytes": 13485,
+    "old_span_lines": 77,
+    "old_span_sha256": "6a798b9c59e3a59b57b4b9875691432c61a20e28f38e808056f2c17acbef4080",
+    "old_imports_replaced": [
+      8,
+      9,
+      10
+    ],
+    "source_french_physical_pages": [
+      46,
+      47,
+      48,
+      49,
+      50
+    ],
+    "source_english_physical_pages": [
+      32,
+      33,
+      34
+    ],
+    "first_source_text": "Combinant 8.13, 8.5 et 8.6",
+    "last_source_text": "N.B. ending with ne pas exiger d=2, mais seulement d>=2",
+    "excluded_next_source_text": "Il reste a expliciter les conditions a) et b) de 8.18"
+  },
+  "old_notes": [
+    {
+      "number": 1,
+      "macro": "transnote",
+      "source_start_character_zero_based": 86,
+      "source_end_character_exclusive": 137,
+      "source_start_line_one_based": 3,
+      "content_sha256": "a1f6c56d0924a22a1f4096fc9180c053b6fcfe8ba1d119580653b8bd374b010b",
+      "content": "此为原作者的引导句；底本未另列完整推导，本译不把它当作已经进行独立验证的声明。"
+    },
+    {
+      "number": 2,
+      "macro": "footnote",
+      "source_start_character_zero_based": 185,
+      "source_end_character_exclusive": 212,
+      "source_start_line_one_based": 5,
+      "content_sha256": "7837bae1eccad1a762a7642c0933037d5a1376faf205218c3373cdf286c3b2e9",
+      "content": "原脚注49：“询问 A.G.”。"
+    },
+    {
+      "number": 3,
+      "macro": "transnote",
+      "source_start_character_zero_based": 231,
+      "source_end_character_exclusive": 281,
+      "source_start_line_one_based": 5,
+      "content_sha256": "007e1cf1df7732f8400921d4f48f3180f63cf9ad323a4f3c6811bf865a9a6b81",
+      "content": "假设末尾的残字 $n$ 及缺文照录，无法确定其数学含义，不据此补造附加假设。"
+    },
+    {
+      "number": 4,
+      "macro": "transnote",
+      "source_start_character_zero_based": 300,
+      "source_end_character_exclusive": 454,
+      "source_start_line_one_based": 5,
+      "content_sha256": "19d8b25e7f292014c5cb886e8c3c858669a378736183c55957169f2e69abc040",
+      "content": "“直纹的”是原稿的暂用术语，不能径同于通常直纹簇概念；底本8.17专门指出二者不一致。本条沿用第十七版译稿，完整保存原陈述的充要方向。第十八版已用第108批回校稿替换8.13，并明示回校采用的新增假设；这项替换不等于本条8.14及其依赖关系已经重新审定，故这里仍不提供未经核实的补证。"
+    },
+    {
+      "number": 5,
+      "macro": "transnote",
+      "source_start_character_zero_based": 501,
+      "source_end_character_exclusive": 588,
+      "source_start_line_one_based": 7,
+      "content_sha256": "8a3d4d26d1506bafcb18005eed07dfb6c9313aaded152bce44f8a27da0613ac7",
+      "content": "底本用词为 \\emph{separable}。此处按原用语译为“可分”，不擅自改成“光滑”或“几何正规”；该旧用语在全书中的精确定义仍须结合前文核定。"
+    },
+    {
+      "number": 6,
+      "macro": "transnote",
+      "source_start_character_zero_based": 775,
+      "source_end_character_exclusive": 1042,
+      "source_start_line_one_based": 9,
+      "content_sha256": "d385b61b3a15233e03e954e6dd893c286dcb47ccef2190a2b54908b14c6f6a59",
+      "content": "底本将 $\\phi_\\xi$ 误排成 $\\phi_x i$，按本节一贯记号订正。深度条件印作 $\\operatorname{prof}_x X\\ge2\\operatorname{prof}_x X$，重复了式末的 $\\operatorname{prof}_x X$；正文删除该重复。依据是本句随后关于几何正规概形的说明，以及(b)的平行深度条件。按字面把它解释成乘积会使正深度点不满足条件，与原文紧随的说明不相容。此为排印校订，不是宣称已验证整个充要条件。$\\operatorname{prof}$ 表示深度。"
+    },
+    {
+      "number": 7,
+      "macro": "transnote",
+      "source_start_character_zero_based": 1909,
+      "source_end_character_exclusive": 2001,
+      "source_start_line_one_based": 31,
+      "content_sha256": "d348eb7026930d2413832a5c0b72826ba598cbfe46c167e9b0b55a0bd297dea3",
+      "content": "这一保留意见为原文的一部分，必须与前面“不限制一般性”的断言一并阅读。底本的 $E_k$ 记号及缺失的余维数字均未恢复；不能把本段改写成无条件成立的去假设定理。"
+    },
+    {
+      "number": 8,
+      "macro": "transnote",
+      "source_start_character_zero_based": 2135,
+      "source_end_character_exclusive": 2245,
+      "source_start_line_one_based": 34,
+      "content_sha256": "e2da1a951bbeeaa0c84a2b89245004d9a616ac34bbf4cf9b8971c2e6d8d4150a",
+      "content": "底本将这段另题为“Remorse”，这里译作作者重新考虑前述假设的补记。它没有展开验证，且 $k$ 在8.14不同性质中的取值未在此重述；本译保留原范围和充分性限定，不据此全面替换前面条目的假设。"
+    },
+    {
+      "number": 9,
+      "macro": "transnote",
+      "source_start_character_zero_based": 2604,
+      "source_end_character_exclusive": 2686,
+      "source_start_line_one_based": 41,
+      "content_sha256": "0662e84ac0b8d476542a76d63aa86f3a39e85e01f6d2576a2ce88012bd05c18b",
+      "content": "8.14前后的假设调整见8.15后的作者补记；其原文缺失和依赖问题仍未全部恢复。此处保留作者引用，不把引用本身作为此处译校已独立验证的证据。"
+    },
+    {
+      "number": 10,
+      "macro": "transnote",
+      "source_start_character_zero_based": 2911,
+      "source_end_character_exclusive": 2991,
+      "source_start_line_one_based": 46,
+      "content_sha256": "aea4d02eef6dde057be3369f3ce74e34a3ead845bbe7b6101e4fefd8863287ba",
+      "content": "底本在此夹有法文“dès que”的转写痕迹。正文译为“只要”，并保留作者“It is possible”的推测语气，不将其升级为定理。"
+    },
+    {
+      "number": 11,
+      "macro": "transnote",
+      "source_start_character_zero_based": 3020,
+      "source_end_character_exclusive": 3066,
+      "source_start_line_one_based": 46,
+      "content_sha256": "bd2ccfc33990b267073ad9439b782fe9c5bc7a8148df8c0440fa7010020bc541",
+      "content": "原句代词“it”依上下文指例外补集；此处明确所指，不改变其断言范围。"
+    },
+    {
+      "number": 12,
+      "macro": "footnote",
+      "source_start_character_zero_based": 3176,
+      "source_end_character_exclusive": 3203,
+      "source_start_line_one_based": 47,
+      "content_sha256": "5f259d16b682aa906b5631aa92cade576ffc0aa089debc298fd91a6b49ff6fe6",
+      "content": "原脚注50：“询问 A.G.”。"
+    },
+    {
+      "number": 13,
+      "macro": "transnote",
+      "source_start_character_zero_based": 3296,
+      "source_end_character_exclusive": 3423,
+      "source_start_line_one_based": 47,
+      "content_sha256": "a207e324467bf52eeb6e925049954fb83c6c95b64f2f01bc80e65e6cf36b9d24",
+      "content": "底本此处印作“在 $P$ 中”，但所计数的是超平面的参数族，且紧随文字明确提到对偶空间，故订为 $P^\\vee$。缺文处未补入“相切”等字样；这里的“这些超平面截面”只承接原稿所讨论的可约截面，不是说该曲面的所有超平面截面都可约。"
+    },
+    {
+      "number": 14,
+      "macro": "transnote",
+      "source_start_character_zero_based": 3688,
+      "source_end_character_exclusive": 3859,
+      "source_start_line_one_based": 50,
+      "content_sha256": "ea2c7ec796a18c8da5e8f55c0ef1acbee45a297f075335f378af26d9cddd6b1c",
+      "content": "本段从假设到结论均有缺字和断句。“not generically finite and inseparable”的否定范围亦不明确；正文保留其不确定性，不自行判定应否定合取，或仅否定“泛有限”。不能由这些残句恢复一个确定的充分条件或结论。8.8亦尚缺完整假设，故不补造推论。“separable”沿用前批译为“可分”。"
+    },
+    {
+      "number": 15,
+      "macro": "transnote",
+      "source_start_character_zero_based": 3909,
+      "source_end_character_exclusive": 3957,
+      "source_start_line_one_based": 52,
+      "content_sha256": "b2e94d71df1a1924f7a12570311b31345fb71a52ed2f4cf8648ee50e37437064",
+      "content": "“显然”是原作者的表述，底本此处未给证明；此处译校不另加未经核对的论证。"
+    },
+    {
+      "number": 16,
+      "macro": "transnote",
+      "source_start_character_zero_based": 4038,
+      "source_end_character_exclusive": 4086,
+      "source_start_line_one_based": 54,
+      "content_sha256": "57916736174422d6078b99d67c905e546400461e1781bd2f2fad30e77ffb03ac",
+      "content": "这是作者对暂用术语的自我修正，不是关于通常意义下二次曲面是否直纹的否定。"
+    },
+    {
+      "number": 17,
+      "macro": "transnote",
+      "source_start_character_zero_based": 4336,
+      "source_end_character_exclusive": 4495,
+      "source_start_line_one_based": 58,
+      "content_sha256": "b2dec7964b3fabf82716a28bc625af582e28fbd144161ff5844d1d556fd9a1c0",
+      "content": "底本此处确实写“dimension 1”，而(a)、(b)和随后的证明均用 $d-1$。末尾附记又讨论是否应限于 $d=2$，故不能仅凭上下文断定是漏写 $d-$ 还是原拟限定曲面。正文明确引述这一未决读法，不把它作为已校定的普遍定理。这里设 $d=\\dim X$，只是明示原稿随后使用的记号。"
+    },
+    {
+      "number": 18,
+      "macro": "transnote",
+      "source_start_character_zero_based": 4600,
+      "source_end_character_exclusive": 4707,
+      "source_start_line_one_based": 60,
+      "content_sha256": "96872586151a2a31c279d2008cf172d843caf3b0406ff908c0eeb504086849ec",
+      "content": "底本(a)印作 $P(k)$，但 $\\xi$ 参数化超平面，命题首句及(b)均使用对偶空间；这里统一为 $P^\\vee(k)$。下文作为参数空间出现的 $P$ 同样统一为 $P^\\vee$。"
+    },
+    {
+      "number": 19,
+      "macro": "footnote",
+      "source_start_character_zero_based": 4834,
+      "source_end_character_exclusive": 4866,
+      "source_start_line_one_based": 61,
+      "content_sha256": "d434c4044f37f14447b9754ea99f224d713b275cd6723ec856eb681620dbcf20",
+      "content": "原脚注51：“字迹不清，询问 A.G.”。"
+    },
+    {
+      "number": 20,
+      "macro": "transnote",
+      "source_start_character_zero_based": 4866,
+      "source_end_character_exclusive": 4965,
+      "source_start_line_one_based": 61,
+      "content_sha256": "be93d554bf38e02f1a1ac6b28595620da7ef2c9aa341b74d35aa560e6d34ad7e",
+      "content": "底本写“(non???) singular”。究竟要求奇异还是非奇异，现有文本不能确定；这里不择其一。“直纹的”是作者暂用术语，应连同8.17后关于该术语的自我修正一起理解。"
+    },
+    {
+      "number": 21,
+      "macro": "transnote",
+      "source_start_character_zero_based": 5449,
+      "source_end_character_exclusive": 5536,
+      "source_start_line_one_based": 68,
+      "content_sha256": "1e5d3ec0eaea24484e88cbc7781f71ec5eb3ccc8ac08ed067e06c9cb9e33ddb0",
+      "content": "底本此处像集未标闭包；正文不增添横线。$X\\in T$ 的大写 $X$ 订为点变量 $x\\in T$，与同句 $f(x)$、$H_x$ 及(a)一致。"
+    },
+    {
+      "number": 22,
+      "macro": "transnote",
+      "source_start_character_zero_based": 5893,
+      "source_end_character_exclusive": 6096,
+      "source_start_line_one_based": 72,
+      "content_sha256": "3b3495dc7c9f8be04c803a2c7a2369abdc168580ead266860c7583d4a13c767a",
+      "content": "底本这第三处横线位于 $Y'^{\\mathrm{sing}}$ 上方，与前两处记号不同；不能未经原稿核对将其改为像的闭包。底本这句括号没有正常闭合，“which contains an open and dense set”的指代不够清楚。正文保留其内容而不擅自补入一个新的拓扑断言。按通常可构造像的论证，可以考虑像在其闭包中包含开稠密子集，但这里不把这种解释认定为手稿缺文的恢复。"
+    },
+    {
+      "number": 23,
+      "macro": "transnote",
+      "source_start_character_zero_based": 6162,
+      "source_end_character_exclusive": 6223,
+      "source_start_line_one_based": 74,
+      "content_sha256": "3374c9bd941d2216f2e94ed35ca6c27634c45887317745c105a15d86e61b712d",
+      "content": "这是作者的省略声明，不是此处译校完成了正规化步骤的全部假设核验；尤其原稿(b)的奇异性条件仍待核。"
+    },
+    {
+      "number": 24,
+      "macro": "transnote",
+      "source_start_character_zero_based": 6337,
+      "source_end_character_exclusive": 6462,
+      "source_start_line_one_based": 76,
+      "content_sha256": "9b9fbc8a6ae59bd7b489ef8bfdf853ef50e3be5da01bb0884e265d8ed25e5da7",
+      "content": "最后这句话按底本“not to require $d=2$ and not only $d\\ge2$”保留，其否定与比较关系在当前转写中不清楚。不能据此确定应增加还是删除曲面限制，亦不能据此前文维数 $1$ 的歧义宣称已修复。"
+    }
+  ],
+  "old_note_count": 24,
+  "old_notes_preserved_verbatim_in_audit": true,
+  "new_files": [
+    {
+      "path": "edition19_work/sections/v19_8_14_18.tex",
+      "bytes": 15430,
+      "sha256": "5c2609be0e01abfe7b409b902f1e16026ecc22ab22c2978ecb590edd98035614"
+    },
+    {
+      "path": "edition19_work/reports/v19_8_14_18_audit.tex",
+      "bytes": 26468,
+      "sha256": "70d3c26c20684e65cb8ac234b6f3f8eb37362abdd3276197ea4fd2085dcb6217"
+    },
+    {
+      "path": "edition19_work/reports/v19_early_old_segment.tex.txt",
+      "bytes": 13485,
+      "sha256": "6a798b9c59e3a59b57b4b9875691432c61a20e28f38e808056f2c17acbef4080"
+    },
+    {
+      "path": "edition19_work/reports/v19_early_symbolic_checks.json",
+      "bytes": 2612,
+      "sha256": "8dc6069f028a6fa8fb959779c00f1f94bc4ac4cd5d3a90b064dd58861f9070d9"
+    }
+  ],
+  "actually_viewed_source_images": [
+    {
+      "path": "edition19_work/reports/early_source_pages/en-032.png",
+      "bytes": 349123,
+      "sha256": "71979571537fda04be4b6db0cdfeb8172d52b2cc9f6f17487831d500228ceeee"
+    },
+    {
+      "path": "edition19_work/reports/early_source_pages/en-033.png",
+      "bytes": 336961,
+      "sha256": "bf26d35e2bf5e00c532c16b181aa0ef1ced5237ec102b78b7918f4327a0ddb66"
+    },
+    {
+      "path": "edition19_work/reports/early_source_pages/en-034.png",
+      "bytes": 395316,
+      "sha256": "63270ba4a5dbb59ac00aee7bde4aedefe720d83f04680175f88dfddf3aed69e0"
+    },
+    {
+      "path": "edition19_work/reports/early_source_pages/fr-046.png",
+      "bytes": 344240,
+      "sha256": "bf17c264ac47ecd9b3935be61fc78bd57340424fab8f5e824014a70170e979bc"
+    },
+    {
+      "path": "edition19_work/reports/early_source_pages/fr-047.png",
+      "bytes": 297153,
+      "sha256": "76998e33db3efffeac066318f297c75c9d16d55308b6235176a9462ad775e23b"
+    },
+    {
+      "path": "edition19_work/reports/early_source_pages/fr-048.png",
+      "bytes": 292115,
+      "sha256": "35ce6d3304eb9204152541311760670e1e61b3dcdc6a5629e9c5185b7d50e404"
+    },
+    {
+      "path": "edition19_work/reports/early_source_pages/fr-049.png",
+      "bytes": 304835,
+      "sha256": "f978f7eeae90f6de75d9c690a877e8a4dab2af6ddfd45fc9c1e3d97d0e0d35b4"
+    },
+    {
+      "path": "edition19_work/reports/early_source_pages/fr-050.png",
+      "bytes": 297222,
+      "sha256": "fb0463c4c59b99242a1d58778dffbe9823b252ddd8a93397abc87ad6fdd2dfb6"
+    },
+    {
+      "path": "edition19_work/reports/early_source_pages/fr_46_8_14_300.png",
+      "bytes": 165617,
+      "sha256": "4aefb5bf92c07570eba20ecbf12f1dd8dcb9321ae4ccc70171719084ef40a977"
+    },
+    {
+      "path": "edition19_work/reports/early_source_pages/fr_47_end_300.png",
+      "bytes": 191790,
+      "sha256": "8410e99e7df6b9dd5d940f505b881f6b4d09630a7a0f5e8edd8a070ba963311b"
+    },
+    {
+      "path": "edition19_work/reports/early_source_pages/fr_49_8_18_b_300.png",
+      "bytes": 118352,
+      "sha256": "7f6f266d27bde4247f7e77e6c472c42db1e047dabedb82ac4b62b69e4d182cb1"
+    },
+    {
+      "path": "edition19_work/reports/early_source_pages/fr_49_top_300.png",
+      "bytes": 109097,
+      "sha256": "db179a5ac0120d12464548a76e6e967bdafa167eae720ee44875469d5f94c0ca"
+    },
+    {
+      "path": "edition19_work/reports/early_source_pages/fr_50_closure_300.png",
+      "bytes": 257732,
+      "sha256": "9335b60f97bb79cdb6c5260b6d4d3ffa25b595e5fb2a71d9efc68f13a9abe116"
+    },
+    {
+      "path": "edition19_work/reports/early_source_pages/fr_50_last_note_300.png",
+      "bytes": 100235,
+      "sha256": "9a9f0ce89b3d2dc65bbdd3e2a9583b3a1de6235983c8a1a94b576f571e68227e"
+    }
+  ],
+  "image_method": "Full pages rendered with pdftoppm at150dpi; named crops with PyMuPDF at300dpi. All listed images actually viewed; no final-book layout claim.",
+  "input_order": [
+    "Existing v18_batch108.tex (8.13)",
+    "sections/v19_8_14_18.tex (8.14--8.18)",
+    "Sibling v19_8_end.tex (post8.18 linear systems; outside this subtask)"
+  ],
+  "macro_requirements": "Existing egas, source, transnote, ednote, proof; PD/depth/codim confined to begingroup. Audit uses existing head/subsec/source.",
+  "mathematical_scope": [
+    "Explicit 8.16 counterexample to codimension-two exceptional non-unramified locus",
+    "8.16 sufficient version with global unramifiedness retaining geometric normality, depth>=3 at closed points, geometric integrality, and properness",
+    "8.17(a) blow-up counterexample; does not satisfy 8.18 finite exceptional set",
+    "8.18 Veronese and normal cone counterexamples to irreducibility-only existence conditions",
+    "8.18 sufficient version only: normal X and geometrically integral witnessing sections; no claim of equivalence to original general theorem"
+  ],
+  "unresolved": [
+    "All necessity directions of 8.14 in arbitrary non-equidimensional settings were not re-proved",
+    "8.15 missing number beyond right scan edge",
+    "Dense overtyping/deleted French layers not fully recoverable",
+    "8.17(c) scope of negation in n'est pas gen. fini et inseparable; dependence on incomplete 8.8",
+    "8.18 original nonnormal generalization and original final claimed inclusion relation not established"
+  ],
+  "build_status": "No compilation by this subtask. Parent builds final project and single-file editions.",
+  "independent_review": "dot_middle read the actual body/audit and independently checked small-resolution/cubic counterexample and both 8.18 examples; two clarifications requested by root have been incorporated."
+}

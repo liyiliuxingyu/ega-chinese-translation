@@ -1,0 +1,9 @@
+{
+  "reason": "Actual 1210-page modular/single comparison differed at pages 1025,1026,1029 because the old expander inserted empty lines and hence paragraph tokens at input boundaries.",
+  "input_layout_precondition": "checks/flatten_input_line_audit.json",
+  "original_sha256": "40d8afa1c8756983a051175962ee78a26bb31bc2ebcafe466171610c78646302",
+  "updated_sha256": "819edbe0b69b0c282fb19e8f82c1090372bb619bc3f15f13338a4af757c3912f",
+  "change": "Match entire standalone input line including its newline; delimit with comment lines only; preserve source blank lines; reject inline inputs.",
+  "mathematical_content_changed": false,
+  "validation": "Passed actual rebuild and every-page modular/single text, size and 72-dpi pixel comparison; see checks/current_pdf_parity.json."
+}

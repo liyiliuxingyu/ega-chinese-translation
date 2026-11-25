@@ -1,0 +1,233 @@
+{
+  "created_utc": "2026-11-24T17:06:43.968650+00:00",
+  "scope": "Selective visual inspection of the 12-module plus report probe, not the final combined main.pdf or all 43 probe pages.",
+  "probe": {
+    "path": "integration/early_probe.pdf",
+    "pages": 43,
+    "sha256": "6977914d4c73ae847d4e4553dfbfa769ebf0c6129d36a65356f2ac996132197b",
+    "latest_build_stdout": "integration/early_probe_build7.stdout"
+  },
+  "actual_build_passes": 7,
+  "compile_command": "source scripts/tex_environment.sh\nxelatex -interaction=nonstopmode -halt-on-error -output-directory=integration integration/early_probe.tex",
+  "render_method": "PyMuPDF Page.get_pixmap(dpi=180), saved as PNG; viewed via view_image.",
+  "selected_pages": [
+    {
+      "physical_page": 2,
+      "image": "integration/early_probe_renders/early_probe_p002.png",
+      "image_sha256": "6c7827f37a9ebae670f63cdb08db60efe67f8f7ee65cbb3e5236733dbe0ee5c7",
+      "render_dpi": 180,
+      "actually_viewed": true,
+      "manual_view_build": 4,
+      "final_build_manual_review": false,
+      "same_image_as_previously_viewed": true,
+      "observation": "§1对称幂对偶订正、关联层公式及三条长脚注均在页框内；无重叠。"
+    },
+    {
+      "physical_page": 3,
+      "image": "integration/early_probe_renders/early_probe_p003.png",
+      "image_sha256": "56db967eb1d6216008e99d90cd844f5836fa4148af39d6fa7204ca8df93c91d5",
+      "render_dpi": 180,
+      "actually_viewed": true,
+      "manual_view_build": 4,
+      "final_build_manual_review": false,
+      "same_image_as_previously_viewed": true,
+      "observation": "关联概形交换图各箭头、对象、斜向映射清晰，§2标题及脚注不碰撞。"
+    },
+    {
+      "physical_page": 4,
+      "image": "integration/early_probe_renders/early_probe_p004.png",
+      "image_sha256": "a984142c6701b1d5580bd7e667d3e62d4aea530d3d912a435455d4341a90d252",
+      "render_dpi": 180,
+      "actually_viewed": true,
+      "manual_view_build": 4,
+      "final_build_manual_review": false,
+      "same_image_as_previously_viewed": true,
+      "observation": "2.4包含及对称差等号判据、证明与反例脚注分离，公式未越界。"
+    },
+    {
+      "physical_page": 7,
+      "image": "integration/early_probe_renders/early_probe_p007.png",
+      "image_sha256": "05403c2d2c014dc9c0c478f463468ef81f9f6877b165cbce7a6d3cb3b7a5ec9b",
+      "render_dpi": 180,
+      "actually_viewed": true,
+      "manual_view_build": 4,
+      "final_build_manual_review": false,
+      "same_image_as_previously_viewed": true,
+      "observation": "2.12陈述和非原文证明标识清晰，长脚注完整延展。"
+    },
+    {
+      "physical_page": 8,
+      "image": "integration/early_probe_renders/early_probe_p008.png",
+      "image_sha256": "d7ea67087e99d869e4450043b0a6b9d4b363eeab7bfa1d3f841102bbe32c3117",
+      "render_dpi": 180,
+      "actually_viewed": true,
+      "manual_view_build": 4,
+      "final_build_manual_review": false,
+      "same_image_as_previously_viewed": true,
+      "observation": "2.12维数公式、2.13及2.14列表无裁切。"
+    },
+    {
+      "physical_page": 9,
+      "image": "integration/early_probe_renders/early_probe_p009.png",
+      "image_sha256": "39fc8ebdfc9fdea4b6da16408266fa1412a9da6d3822c1678190aa00c408f44c",
+      "render_dpi": 180,
+      "actually_viewed": true,
+      "manual_view_build": 4,
+      "final_build_manual_review": false,
+      "same_image_as_previously_viewed": true,
+      "observation": "2.14等价式、补证与长脚注无碰撞。"
+    },
+    {
+      "physical_page": 17,
+      "image": "integration/early_probe_renders/early_probe_p017.png",
+      "image_sha256": "b9388ded2d6e1016e109dc283e940aa48648ccb38e92c7cd26c4d99907d4093a",
+      "render_dpi": 180,
+      "actually_viewed": true,
+      "manual_view_build": 4,
+      "final_build_manual_review": false,
+      "same_image_as_previously_viewed": true,
+      "observation": "5.2余核/对偶公式、5.3列表和七条脚注清楚。"
+    },
+    {
+      "physical_page": 18,
+      "image": "integration/early_probe_renders/early_probe_p018.png",
+      "image_sha256": "b6c5b4c750687d665f05ae5ee62208997b8a8ba8959720d10fe94f575cdb0933",
+      "render_dpi": 180,
+      "actually_viewed": true,
+      "manual_view_build": 4,
+      "final_build_manual_review": false,
+      "same_image_as_previously_viewed": true,
+      "observation": "5.4—5.6长段与报告索引脚注分离，没有单独漂浮的引标。"
+    },
+    {
+      "physical_page": 20,
+      "image": "integration/early_probe_renders/early_probe_p020.png",
+      "image_sha256": "30ee9e3fc985e11357500d884a3421030706d7cd7404f69ad0b23353a7dce738",
+      "render_dpi": 180,
+      "actually_viewed": true,
+      "manual_view_build": 4,
+      "final_build_manual_review": false,
+      "same_image_as_previously_viewed": true,
+      "observation": "§6标题、6.1陈述/证明、作者说明和删稿校记层次清楚，六条脚注无重叠。"
+    },
+    {
+      "physical_page": 24,
+      "image": "integration/early_probe_renders/early_probe_p024.png",
+      "image_sha256": "29eda07c99e923d40f03b54f87d36d3bcfe68702510a6714d0a479dfb1135fa6",
+      "render_dpi": 180,
+      "actually_viewed": true,
+      "manual_view_build": 4,
+      "final_build_manual_review": false,
+      "same_image_as_previously_viewed": true,
+      "observation": "7.4明确标附加条件版本，证明和7.5、原稿限制脚注清楚；7.5长注正常续到25页。"
+    },
+    {
+      "physical_page": 25,
+      "image": "integration/early_probe_renders/early_probe_p025.png",
+      "image_sha256": "75019fa1f46a95ff0ea43766cd191a6eda2be231d7c4e37889cb5b51820dee7c",
+      "render_dpi": 180,
+      "actually_viewed": true,
+      "manual_view_build": 4,
+      "final_build_manual_review": false,
+      "same_image_as_previously_viewed": true,
+      "observation": "探针正文止于§7，随后报告另起章，故本页大部分留白；只余报告指引句和上一页续注，无裁切。此为探针边界，不据此修改合订版。"
+    },
+    {
+      "physical_page": 27,
+      "image": "integration/early_probe_renders/early_probe_p027.png",
+      "image_sha256": "9276273bd71752972045f8d817044174afbd61cc036facbe13e1590f69d35128",
+      "render_dpi": 180,
+      "actually_viewed": true,
+      "manual_view_build": 6,
+      "final_build_manual_review": false,
+      "same_image_as_previously_viewed": true,
+      "observation": "缩短报告大标题后不再把数字7孤立换行；来源、范围声明及D18-089公式/脚注清楚。"
+    },
+    {
+      "physical_page": 28,
+      "image": "integration/early_probe_renders/early_probe_p028.png",
+      "image_sha256": "abd56b237db503a873fe6216f168a1ea228028d0d4f06a753a4750802be06bc5",
+      "render_dpi": 180,
+      "actually_viewed": true,
+      "manual_view_build": 6,
+      "final_build_manual_review": false,
+      "same_image_as_previously_viewed": true,
+      "observation": "2.12完整旧证明明确标仅供对照；显示公式及错误说明脚注清楚。"
+    },
+    {
+      "physical_page": 35,
+      "image": "integration/early_probe_renders/early_probe_p035.png",
+      "image_sha256": "6fb9f1d217cda37568c99d9e8ccce1d1f75fd5b59d9cacd2e8ab56356f1c35ac",
+      "render_dpi": 180,
+      "actually_viewed": true,
+      "manual_view_build": 7,
+      "final_build_manual_review": true,
+      "same_image_as_previously_viewed": false,
+      "observation": "一般7.4原陈述、严格不等号、归纳路线和英稿反例清楚；迁移后指向现正文的方向文字已改正且未重排其余内容。"
+    },
+    {
+      "physical_page": 36,
+      "image": "integration/early_probe_renders/early_probe_p036.png",
+      "image_sha256": "655aeb11f635a643236f0e69edec4cb733c0d2d612a8627da8cf42b09e53b6a5",
+      "render_dpi": 180,
+      "actually_viewed": true,
+      "manual_view_build": 6,
+      "final_build_manual_review": false,
+      "same_image_as_previously_viewed": true,
+      "observation": "零维基例、较弱局部结论、拟射影反例与D18-OLD开头完整，公式无越界。"
+    },
+    {
+      "physical_page": 43,
+      "image": "integration/early_probe_renders/early_probe_p043.png",
+      "image_sha256": "e3308b1a87e78b7d8f42bdb761f25456db8d7b24a8510aad82b4ff38e71b2739",
+      "render_dpi": 180,
+      "actually_viewed": true,
+      "manual_view_build": 6,
+      "final_build_manual_review": false,
+      "same_image_as_previously_viewed": true,
+      "observation": "旧注69最后一条完整显示；章末自然留白，无文本裁切。"
+    }
+  ],
+  "final_build_newly_reviewed_pages": [
+    35
+  ],
+  "final_build_pixel_identical_to_prior_manually_viewed_pages": [
+    2,
+    3,
+    4,
+    7,
+    8,
+    9,
+    17,
+    18,
+    20,
+    24,
+    25,
+    27,
+    28,
+    36,
+    43
+  ],
+  "resolved_layout_issue": {
+    "page": 27,
+    "issue": "Original long report heading isolated its final digit 7 on a second line.",
+    "change": "Only report heading shortened to 第一篇 §§1—7 回校整合; shared ctexbook layout unchanged.",
+    "before_image": "integration/early_probe_renders/title_before_fix/early_probe_p027.png"
+  },
+  "final_log_findings": {
+    "fatal_errors": 0,
+    "undefined_control_sequences": 0,
+    "missing_characters": 0,
+    "overfull_boxes": 0,
+    "underfull_boxes": 0,
+    "unresolved_reference_or_rerun_warning": false,
+    "warnings": [
+      "mathrsfs U/rsfs/m/n font size substitution at 10.53937 and 7.52812 pt; maximum difference 0.47188pt."
+    ]
+  },
+  "limitations": [
+    "No claim that the whole book has been visually reviewed or all mathematical proofs validated.",
+    "Final main/report and single-file output must be checked by the parent build.",
+    "Page25 blank area is specific to this probe ending the body before the report chapter."
+  ]
+}

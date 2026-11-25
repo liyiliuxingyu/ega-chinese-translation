@@ -1,0 +1,24 @@
+{
+  "reviewer": "root",
+  "actually_viewed": true,
+  "pdf_sha256": "af6569828e4bb62c8f133ca46618609c8f26767267d606cf7f3635ee70cd613e",
+  "physical_pages": [
+    1026,
+    1029
+  ],
+  "images": [
+    {
+      "path": "checks/parent_paragraph_fix_pages/main_1026.png",
+      "sha256": "be53e090eaad641dc9bc87efc0d6562dcb73d622fa1b76d7609ae51107ca416f"
+    },
+    {
+      "path": "checks/parent_paragraph_fix_pages/main_1029.png",
+      "sha256": "55d71d4e35712b234bfc7cc12b000fe4cd86b1c8162a752e9557f393a1a4bd69"
+    }
+  ],
+  "observations": {
+    "1026": "8.7(c)缺文说明、分隔脚注号3,4,5及8.8工作假设标题完整可读；没有段落末行异常空白、正文/脚注重叠或截断。长脚注6在页底续往此前已查看且将比较不变的1027页。",
+    "1029": "8.8末尾维数论证最后一行、8.10与8.11及脚注均清晰，未见过大间距、重叠或裁切。"
+  },
+  "scope": "Only these two images actually viewed in the final paragraph-boundary rebuild; other selected pages require unchanged-page binding."
+}

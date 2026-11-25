@@ -1,0 +1,6 @@
+{
+  "input_calls": 167,
+  "standalone_line_only": true,
+  "unsupported_lines": [],
+  "scope": "Actual 168-source input graph; necessary precondition for line-based flattening."
+}

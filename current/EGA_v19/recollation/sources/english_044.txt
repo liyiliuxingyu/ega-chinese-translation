@@ -1,0 +1,43 @@
+considered as deﬁned by a section of GT (1), φm ∈Γ(T, GT (1)). The incidence prescheme
+(resp. its inverse image in T) is nothing else but the prescheme of zeros of the one or the
+other homomorphism or of the section φm. We could denote the incidence prescheme by
+H(m) for m = 1; we recover the one from No. 1. If X is over P we may set Y (m) =
+XxP H(m) and deﬁne by this the notation Y m if ξ is a point of Grm with values in an S′.
+Therefore the Y m
+ξ
+are “linear sections” of X over P (or rather of X′
+S over P ′
+S by linear
+subvarieties of codimension m of P or rather of P ′
+S.)
+I use [or proﬁt from] this opportunity for a notational self-criticism which could come
+in No. 1. This point corresponds arbitrarily to indicate an object Y that corresponds to
+X the letter Y to X (so that if X becomes Z we no longer understand very well what to
+take.) This inconvenience has already led me into some incoherent notations.
+Perhaps (or maybe) in the more general context with an integer m as here suggests
+a reasonable solution: to write X(m) in place of Y (m), thus X(1) in place of Y in No.
+1. In such a way we might approximately have X(m)(m1) = Xm+m1. I am going to try
+such notation in what follows. Evidently even the exponent is open to criticism since it
+is current practice in algebraic geometry to denote by an exponent the dimension of the
+varieties which enter into play. But since we shall never make use of this type of convention,
+I think that we have a free hand as far as that matter is concerned.
+We see immediately that in the preceding construction of X(m) that we have a
+canonical isomorphism X(m) = Grassm(F v) where FX ∼= F ∗(Ω1
+P/S)(1) is the kernel of
+EX →OX(1), in particular X(m) is smooth over X with geometrically integral ﬁbers. (In
+fact, rational varieties of dimension (m(r −m)).) Of course, the veriﬁcation reduces to
+the case X = P and because of this it belongs just as the previous considerations to the
+generalities about grassmanians (which I am sure you are going to “magnify” in a separate
+paragraph).
+We now have a perfect analogy of the diagram from No. 1. Again a forgotten point:
+as a prescheme over Grm, H(m) is canonically isomorphic to P(EGr/Gv); it is therefore an
+excellent projective ﬁbration (but of course we may not conclude this in general for X (m)
+over Grm).
+The Proposition 2.1 [se transpose Fr] translates (?) without change. In 2.2 it should
+read: it is necessary and suﬃcient that for every x ∈Z we have dim x ≤m −1. For the
+proof we may, for example, restrict ourselves to 2.6 by considering a generic linear variety
+of codimension m as the intersection of m independent generic hyperplanes. Dieudonne
+demerdetur [Latin] – (or is it slightly oﬀcolor French [Tr])
+From the writing up point of view if (as seems preferable to me) we make from the start
+m general it seems preferable to prove 2.6 at the same time, where, of course, dim X −1
+44

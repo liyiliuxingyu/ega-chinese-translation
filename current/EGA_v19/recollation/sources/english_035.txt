@@ -1,0 +1,39 @@
+to the question of studying the hyperplane sections of X, passing through a given point x
+or tangent to X at a given smooth point), formed therefore by the hyperplane containing
+a linear subvariety L of P (resp. a point, or the image of a tangent space to X at a smooth
+point in the two cases considered) and we ask the question [de ravoi] if for the generic
+point of L (therefore for all the points of a non-empty open subset of L) Y is geometrically
+irreducible of dim = dim X −1. This is a variant of Bertini’s theorem, which [j(devrait
+ﬁgurer) 51] must appear in No. 3, and is treated by exactly the same method, [(ou, si
+on veut, s’y ram`ene) Fr 51]. The dimension question is simply stated for f(X) ̸∈L−0,
+i.e. if X′ = f −1(P −L0) is a dense open subset of X. Let Q be the projective space of
+hyperplanes passing through L0 (N.B. if L0 is deﬁned by a vector subspace F 0 of E we
+have Q = P(F 0) and we consider the canonical morphism (deduced from F −→E, cf.
+Chap II).
+u: P −L0 →Q
+and we consider
+g = uf ′: f −1(P −L) = X′ →Q
+so that L ≃
+V
+Q and the family of X′
+ξ (ξ ∈L) is nothing else than the family of hyperplane
+sections relative to the morphism g. On the other hand, we see immediately that for every
+ξ ∈L, “general” X′ is dense in X, so that X′ is geometrically irreducible if and only if X
+is such. This assumed, the theorem of Bertini-Zariski shows us that we have the wanted
+conclusion of irreducibility provided that dim g(X′) ≥2. (To tell the truth, one could give
+a converse to 3.1 as follows: If X is geometrically irreducible Y is geometrically irreducible
+if and only if either dim f(X) = 2 or dim f(X) = 1 and f(X) is contained in a straight
+line D deﬁned over k and the generic ﬁber of X →D is geometrically irreducible.) This
+also allows us in the present version with L to have a necessary and suﬃcient condition of
+geometric irreducibility of Yξ, ξ generic in L.
+From the [(cunutesque?) Fr] point of view and in terms of ﬁeld theory we can ex-
+press the condition in terms of transcendence degree in the following fashion. We choose
+a “hyperplane at inﬁnity” containing neither L0 nor X and we place ourselves in its com-
+plement, i.e. over a scheme of aﬃne type essentially. We choose a basis of the space of
+linear forms vanishing on L, let it be T1, . . . , Tp (p = codim(L0, P)) and we consider their
+inverse images t1, . . . , tp in the ﬁeld of fractions K of X (X assumed integral). At least
+one of the ti, let us say t1 is ̸= 0. Let us consider therefore a1 = t2/t1, . . . , ap−1 = tp/t1
+then dim g(X′) is nothing else but the transcendence degree of K(a1, . . . ap−1) ⊂K over
+k. Therefore if the transcendence degree if ≥2 we are o.k. If it is one then we must
+require that over k, f(X) is contained in a linear subvariety of P containing L0 and of
+35

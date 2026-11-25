@@ -1,0 +1,40 @@
+dim L = 2 take P = T 2
+r , Q = T 3
+r , R = T 2
+r Tr−1 and not that Q/P = Tr and R/P = Tr−1
+are linear forms independent over L, therefore algebraically independent. If dim L ≥3
+then Tr−2, Tr−1, Tr are linearly independent over L and we take
+P = T 2
+r , Q = T 2
+r−1, R = T 2
+r−2
+Conjugating with 8.18 we ﬁnd a Corollary 9.4. ([Tr] to be stated)
+Finally we must combine the latter with 9.2 in order to ﬁnd a recapitulating theorem
+in the “excellent case.”
+Theorem 9.5 (illegible page 52 or 55). 54
+(If X is smooth and proper and geometrically integral over k and f: X →P is unram-
+iﬁed X of dimension ≥2 (Ask Grothendieck) by considering the result ??? when x →p is
+an immersion (variety of singular points of Yξ.
+§10 Pencils of hyperplane sections and ﬁbrations of blown up varieties
+10.1. Let Z be the P-exceptional set in P v relative to a constructible property P such
+that Z is a constructible subset of P v. Let us suppose S = Spec(k). We will see (cf.
+No. 12 where we catch up with things which should have come in without a doubt in
+(previous Nos.) that in order to have codim(Z, P v) ≥2 it is necessary and suﬃcient that
+“every suﬃciently general line” L in P v should not meet Z or also again (or even) Z and
+it suﬃces that there should exist one (a single) L in P not meeting Z (should be Z; AG’s
+error P.B.).55 If k is inﬁnite it is necessary and suﬃcient that there should exist a single
+straight line L in P that does not meet ¯z. We call a linear pencil of hyperplane sections of
+‘X” deﬁned by the straight line L in P the L-prescheme YL (deﬁnition valid for any S).
+Then the previous reﬂections together with results of Nos. 8 and 9 give us criteria for the
+existence of such pencils having the ﬁbers Yξ (ξ ∈L) all satisfying the property P ﬁrst
+of all in the case where S is an inﬁnite base ﬁeld. Taking into account 8.2, if for every
+associated prime cycle on X we have dim f(T) > 0 then we can (by taking the property
+P ′ = P+ condition of regularity for φξ) require that the pencil YL should be ﬂat over
+L. In the case where S is arbitrary we can again, proceeding by the procedure of 7.1,
+construct such a pencil over an open neighborhood of a given point s of S in view of the
+fact that k(s) is inﬁnite and we should know that Z is closed (which is assured in diverse
+various misce laneour cases by the results of Par. 5 and the assumption that X →S
+is proper). To do it right it would be convenient after general explaination of this type
+54Ask A.G., I do not follow [Tr]
+55Ask A.G.
+38

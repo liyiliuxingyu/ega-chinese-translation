@@ -1,0 +1,202 @@
+{
+  "schema_version": 1,
+  "status": "final_corrected_page_visually_verified_prior_sample_preserved",
+  "scope": "Final assembled module PDFs, only selected batches100--108 pages and report counterparts; not all 1210/357 pages or all mathematical arguments.",
+  "documents_reviewed": [
+    {
+      "path": "main.pdf",
+      "sha256": "c524e85b036fad4427f5798e52b317b356c51b10ea535a058ad04daccb0a9074",
+      "page_count": 1210,
+      "physical_pages_actually_viewed": [
+        1021,
+        1024,
+        1025,
+        1026,
+        1027,
+        1031,
+        1032,
+        1033
+      ],
+      "review_phase": "before_layout_only_rebuild"
+    },
+    {
+      "path": "report.pdf",
+      "sha256": "ff2122b0a7c7306c79b7c15f6b09e7013eb33eab222c346795ae4c7be4051fb0",
+      "page_count": 357,
+      "physical_pages_actually_viewed": [
+        59,
+        66,
+        67,
+        70,
+        71,
+        77
+      ],
+      "review_phase": "final_unchanged_report"
+    }
+  ],
+  "render_index": "checks/middle_final_visual_pages/render_index.json",
+  "render_dpi": 140,
+  "observations": [
+    {
+      "pdf": "main.pdf",
+      "physical_pages": [
+        1021
+      ],
+      "printed_pages": [
+        1001
+      ],
+      "observation": "8.5严格余深度不等式coprof>n、完整维数条件及拟有限情况均可读，脚注1/2与3/4以逗号分隔；未见溢出。",
+      "review_phase": "before_layout_only_rebuild"
+    },
+    {
+      "pdf": "main.pdf",
+      "physical_pages": [
+        1024,
+        1025
+      ],
+      "printed_pages": [
+        1004,
+        1005
+      ],
+      "observation": "104批交换图全部对象、横列两端0、E到相对切丛的箭头、alpha/beta斜箭头与下页解释完整可见；图式未遮挡正文或脚注。",
+      "review_phase": "before_layout_only_rebuild"
+    },
+    {
+      "pdf": "main.pdf",
+      "physical_pages": [
+        1026,
+        1027
+      ],
+      "printed_pages": [
+        1006,
+        1007
+      ],
+      "observation": "8.7(c)缺失原句的标记与8.8明示工作假设标题完整。假设脚注6正常跨页到1027页脚注区，补假设与未恢复法文原句的界限可读。",
+      "review_phase": "before_layout_only_rebuild"
+    },
+    {
+      "pdf": "main.pdf",
+      "physical_pages": [
+        1031,
+        1032,
+        1033
+      ],
+      "printed_pages": [
+        1011,
+        1012,
+        1013
+      ],
+      "observation": "8.13的无零维几何伴随点新增假设、R_n、n+1及划改记录均可见；8.14与8.15仍在其后，未截掉。8.14保留旧陈述且脚注明示本轮未重审。1032页旧8.14相邻脚注4/5/6无分隔，视觉上合成456，已报告父代理作纯排版修复。",
+      "review_phase": "before_layout_only_rebuild"
+    },
+    {
+      "pdf": "report.pdf",
+      "physical_pages": [
+        59
+      ],
+      "printed_pages": [
+        41
+      ],
+      "observation": "新增报告章标题与有限核查范围说明可读；缺文与独立补证的身份边界清楚。",
+      "review_phase": "final_unchanged_report"
+    },
+    {
+      "pdf": "report.pdf",
+      "physical_pages": [
+        66,
+        67
+      ],
+      "printed_pages": [
+        48,
+        49
+      ],
+      "observation": "104/105报告中的局部坐标公式、拆成两行的极化型公式及对偶切空间补证完整、无越出版心；明确不宣称恢复8.7(c)失句。",
+      "review_phase": "final_unchanged_report"
+    },
+    {
+      "pdf": "report.pdf",
+      "physical_pages": [
+        70,
+        71
+      ],
+      "printed_pages": [
+        52,
+        53
+      ],
+      "observation": "8.13两类奇异集合估计、伴随点前提、二次曲面与嵌入点反例可读；进入旧注档案的边界可见。",
+      "review_phase": "final_unchanged_report"
+    },
+    {
+      "pdf": "report.pdf",
+      "physical_pages": [
+        77
+      ],
+      "printed_pages": [
+        59
+      ],
+      "observation": "旧注M043的二次覆盖反例完整可见，作为第十七版历史核查文字保存，没有删掉或写成新证明。",
+      "review_phase": "final_unchanged_report"
+    }
+  ],
+  "issues": [
+    {
+      "id": "M-FV-01",
+      "severity": "minor_readability",
+      "pdf": "main.pdf",
+      "sha256": "c524e85b036fad4427f5798e52b317b356c51b10ea535a058ad04daccb0a9074",
+      "physical_page": 1032,
+      "printed_page": 1012,
+      "finding": "8.14 introductory adjacent footnote numbers 4,5,6 have no separators and read visually as 456.",
+      "status": "resolved_and_visually_verified_in_final_main",
+      "math_content_change": false,
+      "resolved_in_sha256": "2eccd0401f188108655f6d1b21950b9193c7a2d70f326a554218c4f41eb286d4",
+      "verified_physical_page": 1032,
+      "resolution": "Two superscript commas inserted between the three adjacent footnote numbers; footnote contents unchanged."
+    }
+  ],
+  "pending_followup": null,
+  "limitations": [
+    "Page text was extracted only to locate material; only the listed PNGs were opened and count as visual inspection.",
+    "The finite sample does not certify every printed page or every mathematical proof.",
+    "Single-file build comparison is handled by parent and is not claimed here.",
+    "No source TeX or PDFs were changed by this reviewer."
+  ],
+  "initial_review_status": "Parent also adds a frontmatter heading page break; after rebuild identify actual affected pages, verify unchanged selected pages by pixel comparison, and open the changed 8.14 page image. Report PDF is unchanged.",
+  "final_documents": [
+    {
+      "path": "main.pdf",
+      "sha256": "2eccd0401f188108655f6d1b21950b9193c7a2d70f326a554218c4f41eb286d4",
+      "page_count": 1210,
+      "final_followup_physical_pages_actually_viewed": [
+        1032
+      ],
+      "earlier_sample_basis": "Earlier pages remain recorded against c524e85b...; parent independently compares all 1210 before/after pages."
+    },
+    {
+      "path": "report.pdf",
+      "sha256": "ff2122b0a7c7306c79b7c15f6b09e7013eb33eab222c346795ae4c7be4051fb0",
+      "page_count": 357,
+      "physical_pages_actually_viewed": [
+        59,
+        66,
+        67,
+        70,
+        71,
+        77
+      ],
+      "same_sha256_as_initial_review": true
+    }
+  ],
+  "final_followup": {
+    "pdf": "main.pdf",
+    "sha256": "2eccd0401f188108655f6d1b21950b9193c7a2d70f326a554218c4f41eb286d4",
+    "physical_page": 1032,
+    "printed_page": 1012,
+    "image": "checks/middle_final_visual_pages/main_final_1032.png",
+    "image_sha256": "93edcad4afff0fb0a0616a26dce92bf1af7d671728670d44d6f38ee64fc8f013",
+    "actually_viewed": true,
+    "observation": "8.14开头的脚注标号现在清晰显示为4,5,6，两枚上标逗号均可辨。该行仍在原行位置，脚注1—6正文、8.13的证明/划改与8.14接续均完整；未见新溢出、遮挡或截断。",
+    "scope": "Only the corrected page was reopened in the final main PDF; parent handles whole-document before/after pixel comparison. No TeX or PDF modification by reviewer."
+  },
+  "remaining_external_validation": "The parent independently checks the complete before/after page comparison and module/single-file equivalence; this record does not claim those executions."
+}

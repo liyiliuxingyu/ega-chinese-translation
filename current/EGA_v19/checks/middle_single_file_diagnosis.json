@@ -1,0 +1,136 @@
+{
+  "schema_version": 1,
+  "status": "diagnosed_recommended_flatten_fix_not_applied_by_reviewer",
+  "main_pdf": {
+    "path": "main.pdf",
+    "sha256": "2eccd0401f188108655f6d1b21950b9193c7a2d70f326a554218c4f41eb286d4",
+    "pages": 1210
+  },
+  "single_pdf": {
+    "path": "single_build/book_single.pdf",
+    "sha256": "dafb8b32a45c8f031f17283bf831e4ae7b5967f42b5b451b0b215320b8a47dde",
+    "pages": 1210
+  },
+  "pages": [
+    {
+      "physical_page": 1025,
+      "printed_page": 1005,
+      "extracted_text_exactly_equal": true,
+      "text_equal_after_removing_whitespace": true,
+      "pixel_equal": false,
+      "difference_bbox_pixels_140dpi": [
+        193,
+        340,
+        863,
+        1097
+      ],
+      "module_boundary": "batch104 -> batch105",
+      "images": [
+        {
+          "path": "checks/middle_single_diagnosis/main_1025.png",
+          "sha256": "1c5c36bcb5ac9548e95e603cf1de1b82f05116e0d0b71adf2e01f0c424b1bedd"
+        },
+        {
+          "path": "checks/middle_single_diagnosis/single_1025.png",
+          "sha256": "4b742fbe78ee3515891a72152e4fd1350d937431ce94635ae102769ee569da1b"
+        }
+      ]
+    },
+    {
+      "physical_page": 1026,
+      "printed_page": 1006,
+      "extracted_text_exactly_equal": true,
+      "text_equal_after_removing_whitespace": true,
+      "pixel_equal": false,
+      "difference_bbox_pixels_140dpi": [
+        556,
+        866,
+        908,
+        890
+      ],
+      "module_boundary": "batch105 -> batch106",
+      "images": [
+        {
+          "path": "checks/middle_single_diagnosis/main_1026.png",
+          "sha256": "85728b8e2634f1218e524eb0a9eb8ffe544deda4f447840d0ba32a4081e9589c"
+        },
+        {
+          "path": "checks/middle_single_diagnosis/single_1026.png",
+          "sha256": "8196137966055655d9c542f2ad4f49950fd98bee50233894b23c77f53af06fcb"
+        }
+      ]
+    },
+    {
+      "physical_page": 1029,
+      "printed_page": 1009,
+      "extracted_text_exactly_equal": false,
+      "text_equal_after_removing_whitespace": true,
+      "pixel_equal": false,
+      "difference_bbox_pixels_140dpi": [
+        194,
+        484,
+        863,
+        538
+      ],
+      "module_boundary": "batch106 -> batch107",
+      "images": [
+        {
+          "path": "checks/middle_single_diagnosis/main_1029.png",
+          "sha256": "a94c277c5f25c95223f2e6b6579794b74c425e212467fe95d662c168bec8c379"
+        },
+        {
+          "path": "checks/middle_single_diagnosis/single_1029.png",
+          "sha256": "6585ec3d1ae914a27c02b3a52625cf81ea52128664f03ae4998b23d66cbf4a99"
+        }
+      ]
+    }
+  ],
+  "source_files": [
+    {
+      "path": "continuations/v18_batch104.tex",
+      "sha256": "ed3156e67771f6ce72b487a2f58aee1cf931d99cc57595af2ce8bde67325dbef"
+    },
+    {
+      "path": "continuations/v18_batch105.tex",
+      "sha256": "e6e2e35372f0fea1901b6a29167685cd866197faed65716635fde49690d71b5f"
+    },
+    {
+      "path": "continuations/v18_batch106.tex",
+      "sha256": "e2b3aa80ce37895df6425ebd3b673bf18dcee7dea784b68504f24e78b153e8eb"
+    },
+    {
+      "path": "continuations/v18_batch107.tex",
+      "sha256": "cbff8c38b38f159aeba2152e324ad5d94fd373f03e0e3b2d6d231bc84bca5462"
+    }
+  ],
+  "actual_image_review": [
+    "single_1025.png",
+    "single_1026.png",
+    "main_1029.png",
+    "single_1029.png"
+  ],
+  "earlier_image_review": "main1025/1026 were previously inspected in final visual review; corresponding final-PDF screenshots were regenerated for this diagnosis.",
+  "input_scan": {
+    "files_in_closure": 168,
+    "input_directives": 167,
+    "non_standalone_inputs": [],
+    "details": "checks/middle_single_diagnosis/input_layout.json"
+  },
+  "cause": {
+    "observed_flattener_behavior": "Each \\input{...} token was replaced by '\\n% BEGIN...\\n' + child text + '\\n% END...\\n' while the original parent line ending remained. That inserts new blank lines/paragraph tokens not present in the module input stream.",
+    "boundary_evidence": "104 ends after a display and endgroup; 105 ends its (c) paragraph and endgroup; 106 ends the dimension paragraph and endgroup. In module mode the next source macro supplies the paragraph end; the flattened stream has inserted blank lines before the next group. These are exactly the three differing physical pages.",
+    "content_evidence": "On1025/1026 extracted text is exactly equal. On1029 only interword math spacing and the line split at 不会增加 differ; whitespace-normalized text is identical. No changed mathematical token was found in these page texts.",
+    "confidence": "High, based on exact source-boundary and page-difference correspondence; conclusive verification is the regenerated single PDF comparison after the fix."
+  },
+  "recommended_fix": [
+    "Only support a standalone complete input line, consuming that parent line ending in replacement.",
+    "Insert BEGIN/END as comment-only lines with no additional empty lines. Preserve all blank lines already present in child text.",
+    "Add one final newline only when child output has none; do not rstrip existing trailing blank lines.",
+    "Reject any unsupported non-standalone input instead of guessing. Existing closure contains no such input.",
+    "Regenerate and rebuild the single files, then compare all main/report pages. No need to edit the mathematical modules or main PDF for this cause."
+  ],
+  "limitations": [
+    "Reviewer did not edit TeX, flatten_sources.py, or build outputs.",
+    "No claim that the recommended fix has already passed end-to-end comparison; parent performs it."
+  ]
+}

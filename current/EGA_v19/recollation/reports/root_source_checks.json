@@ -1,0 +1,43 @@
+{
+  "scope": "§§9–10",
+  "french_pdf_physical_pages": "53–60 upper, before §11",
+  "english_pdf_physical_pages": "36–41 before §11",
+  "files": [
+    {
+      "path": "/workspace/scratch/a886fd56dd2f/edition19_work/sections/v19_section9.tex",
+      "size": 12852,
+      "sha256": "085890c69707eace349329b753d37412f82ba33bebb496f99c4bcf952400c73b"
+    },
+    {
+      "path": "/workspace/scratch/a886fd56dd2f/edition19_work/sections/v19_section10.tex",
+      "size": 13751,
+      "sha256": "992806dbaae2f846eb3125f50bf2067a6204ef25bd70219dd7aa98436e18f978"
+    },
+    {
+      "path": "/workspace/scratch/a886fd56dd2f/edition19_work/reports/v19_sections9_10_audit.tex",
+      "size": 10695,
+      "sha256": "287bf64fb8456ba84d9db3c2216216e35f9c8a73f2f6e7071116560e409baff3"
+    },
+    {
+      "path": "/workspace/scratch/a886fd56dd2f/ega-recovery/archive_20261121/03_sources/EGA5_francais.pdf",
+      "size": 16097021,
+      "sha256": "24cf8204184b58b18a46e5f63ecc36d6e791b3c8c96a09daac93de96ebd8e830"
+    },
+    {
+      "path": "/workspace/scratch/a886fd56dd2f/ega-recovery/archive_20261121/03_sources/EGAVaiello.pdf",
+      "size": 677332,
+      "sha256": "23a20ef32fd16a1bd623c0c08ac080d04fc94f248de12133b713a19d6b0330d9"
+    }
+  ],
+  "remaining": [
+    "9.5 incomplete statement and one unread word",
+    "8.8 dependency of 9.2/10.4",
+    "non-Noetherian regularity outside the checked scope"
+  ],
+  "external_primary_references": [
+    "https://stacks.math.columbia.edu/tag/0G4C",
+    "https://stacks.math.columbia.edu/tag/062D",
+    "https://stacks.math.columbia.edu/tag/0638",
+    "https://stacks.math.columbia.edu/tag/052P"
+  ]
+}

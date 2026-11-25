@@ -1,0 +1,19 @@
+{
+  "reason": "After eliminating artificial blank lines in flattening, two pages still differed by last-line horizontal spacing. Make complete module-ending paragraphs explicit within their local scopes.",
+  "previous_comparison": "checks/parity_after_line_fix.json",
+  "changes": [
+    {
+      "path": "continuations/v18_batch105.tex",
+      "before_sha256": "e6e2e35372f0fea1901b6a29167685cd866197faed65716635fde49690d71b5f",
+      "after_sha256": "6a1732207f6227e203fa24e385675d1e91fde974daebeea16238a2fa75dd7b83",
+      "change": "Explicitly end the complete final paragraph before closing local macro group. No wording, formula, note or diagram changed."
+    },
+    {
+      "path": "continuations/v18_batch106.tex",
+      "before_sha256": "e2b3aa80ce37895df6425ebd3b673bf18dcee7dea784b68504f24e78b153e8eb",
+      "after_sha256": "77fbe1e85f77f59d7866276cc58827328378d93d31d54cd64ca419d7e0e396a3",
+      "change": "Explicitly end the complete final paragraph before closing local macro group. No wording, formula, note or diagram changed."
+    }
+  ],
+  "validation": "Passed actual rebuild and every-page modular/single text, size and 72-dpi pixel comparison; see checks/current_pdf_parity.json."
+}

@@ -1,0 +1,2208 @@
+{
+  "schema": 1,
+  "scope": "EGA V first manuscript, sections 1--7; Dot labels 88--99",
+  "full_mathematical_reaudit": false,
+  "batches": [
+    {
+      "batch": 88,
+      "source": "dot_updates_20261124/batches/batch088/EGA第五卷_法文覆盖审计_超平面截面开端.tex",
+      "source_sha256": "02f14bc6905edd6df5b519ec0a61968ce9079b424b003c5ffac78dd853d96a08",
+      "source_bytes": 16211,
+      "progress": {
+        "batch": 88,
+        "task": "EGA V French-source coverage audit",
+        "fr_physical_audited_this_run": [
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "en_physical_collated_this_run": [
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "source_extent": "IV.20.1 through proposition 2.7 and its proof, inclusive",
+        "already_translated_in_baseline": true,
+        "corrected_draft_integrated_into_baseline": false,
+        "next_fr_physical": 10,
+        "next_en_physical": 9,
+        "next_anchor": "Proposition 2.8; verify which morphism is regular",
+        "formal_EGA_IV_1_separate": [
+          221,
+          223
+        ],
+        "full_french_page_content_audit_complete": false
+      },
+      "ranges": [
+        {
+          "label": "IV.20.1 through 2.7 inclusive",
+          "destination": "body",
+          "start_offset": 828,
+          "end_offset": 9214,
+          "start_line": 28,
+          "end_line": 246,
+          "bytes": 14932,
+          "sha256": "bd5094e65bc935bc727f84ad634b3e14434f4a5c907e1502577d52f309e0e34a"
+        }
+      ],
+      "output": {
+        "path": "continuations/v18_batch088.tex",
+        "sha256": "20b6e07e5fefa13b4d0dff399d6ea5b2cce9116df1e5ada367a93cd35cbfc68a",
+        "bytes": 16505
+      },
+      "excluded_from_running_text": [
+        {
+          "start_offset": 0,
+          "end_offset": 828,
+          "start_line": 1,
+          "end_line": 27,
+          "sha256": "04ad3244a8b0c150d31403e6c527e4496ae28939245be67b11515dfb5eda0d4f",
+          "text": "\\documentclass[openany,fontset=fandol]{ctexbook}\n\\usepackage{amsmath,amssymb,amsthm,tikz-cd}\n\\usepackage[unicode,hidelinks]{hyperref}\n\\raggedbottom\n\\setlength{\\emergencystretch}{2em}\n\\newcommand{\\PP}{\\mathbf P}\n\\newcommand{\\OO}{\\mathcal O}\n\\newcommand{\\FF}{\\mathcal F}\n\\newcommand{\\GG}{\\mathcal G}\n\\newcommand{\\Spec}{\\operatorname{Spec}}\n\\newcommand{\\Div}{\\operatorname{Div}}\n\\newcommand{\\tagitem}[2]{\\par\\medskip\\noindent\\textbf{#1\\quad #2}\\enspace}\n\\begin{document}\n\\title{代数几何基础第五卷预备笔记\\\\法文覆盖审计：超平面截面开端}\n\\author{第88批\\quad 法、英、中文三方校订}\n\\date{2026年11月23日}\n\\maketitle\n\n\\section*{范围与接续}\n本批逐页对照法文物理第3--9页、英译编辑稿物理第4--8页和第三辑合订本的\n\\texttt{v5\\_01\\_02.tex}，从 IV.20.1 首行至命题2.7证明末。\n第87批已处理卷首提要与异扫。本批不是把既有段落重复计入进度，\n而是提供可用于替换旧译的校订稿。法文中原有的标题改写、记号及编号差异，\n在能够确认时列入脚注；译校所补证明不冒充作者原句。\n原1158页合订本不变。下次对照法文物理第10页、英译物理第9页命题2.8。\n正式出版 EGA IV.1 仍在另一条接续线。\n\n",
+          "reason": "Standalone preamble/cover, repeated heading, historical batch scope or continuation instructions; source remains immutable."
+        },
+        {
+          "start_offset": 9214,
+          "end_offset": 9229,
+          "start_line": 247,
+          "end_line": 247,
+          "sha256": "7c0796754f02f5feb9aadd6a37d7145d65bd53ddb0779dba48832b3bbb06fcb2",
+          "text": "\\end{document}\n",
+          "reason": "Standalone preamble/cover, repeated heading, historical batch scope or continuation instructions; source remains immutable."
+        }
+      ]
+    },
+    {
+      "batch": 89,
+      "source": "dot_updates_20261124/batches/batch089/EGA第五卷_法文覆盖审计_泛截面光滑性.tex",
+      "source_sha256": "55fd88165d609280ad3783e2265c43dc97759d14350172411c1d934b7a1316b2",
+      "source_bytes": 9590,
+      "progress": {
+        "batch": 89,
+        "fr_physical": [
+          10,
+          11,
+          12
+        ],
+        "en_physical": [
+          9,
+          10
+        ],
+        "source_extent": "Proposition 2.8 through Corollary 2.13 inclusive; p.12 partial",
+        "replacement_for_baseline_passages": true,
+        "integrated_into_1158_page_baseline": false,
+        "next_fr_physical": 12,
+        "next_en_physical": 10,
+        "next_anchor": "Theorem 2.14 (after Corollary 2.13); French handwritten equivalence follows list",
+        "formal_EGA_IV_1_separate": [
+          221,
+          223
+        ],
+        "full_french_page_content_audit_complete": false
+      },
+      "ranges": [
+        {
+          "label": "2.8--2.13",
+          "destination": "body",
+          "start_offset": 813,
+          "end_offset": 5099,
+          "start_line": 27,
+          "end_line": 155,
+          "bytes": 8184,
+          "sha256": "ec0b2460de358518916946488a81bbc6a66caaff577998818b7edc3660667640"
+        },
+        {
+          "label": "Mathematical notation previously inside the batch-scope paragraph",
+          "destination": "body",
+          "start_offset": 688,
+          "end_offset": 791,
+          "start_line": 23,
+          "end_line": 24,
+          "bytes": 183,
+          "sha256": "4a72272b7b05b548b7e511d9860b6861831791169f4490682a4c15b40cad4b46"
+        },
+        {
+          "label": "Original proof variant and correction analysis for 2.12",
+          "destination": "report",
+          "start_offset": 4111,
+          "end_offset": 4855,
+          "sha256": "b530d0d74d5e852f5b776e4ce433c09431fec02d65ade48d5e4c22a1631bf8fc",
+          "start_line": 127,
+          "end_line": 147,
+          "bytes": 1322
+        }
+      ],
+      "output": {
+        "path": "continuations/v18_batch089.tex",
+        "sha256": "5d3b59983484349eb94f2d8b171f8773fca499cd070113f491c4e4c691a21636",
+        "bytes": 7562
+      },
+      "excluded_from_running_text": [
+        {
+          "start_offset": 0,
+          "end_offset": 688,
+          "start_line": 1,
+          "end_line": 22,
+          "sha256": "253a0854c6fc22f5cf8a5c2f90548be1485f27656fd072c686af1217e8703aa4",
+          "text": "\\documentclass[openany,fontset=fandol]{ctexbook}\n\\usepackage{amsmath,amssymb,amsthm}\n\\usepackage[unicode,hidelinks]{hyperref}\n\\setlength{\\emergencystretch}{2em}\n\\raggedbottom\n\\newcommand{\\OO}{\\mathcal O}\n\\newcommand{\\FF}{\\mathcal F}\n\\newcommand{\\GG}{\\mathcal G}\n\\newcommand{\\PP}{\\mathbf P}\n\\DeclareMathOperator{\\Spec}{Spec}\n\\DeclareMathOperator{\\coprof}{coprof}\n\\newcommand{\\tagitem}[2]{\\par\\medskip\\noindent\\textbf{#1\\quad #2}\\enspace}\n\\begin{document}\n\\title{代数几何基础第五卷预备笔记\\\\法文覆盖审计：泛截面的局部性质与光滑性}\n\\author{第89批\\quad 法、英、中文三方校订}\n\\date{2026年11月23日}\n\\maketitle\n\n\\section*{范围与接续}\n本批逐页对照法文物理10--12页及英编稿物理9--10页，从命题2.8到推论2.13；\n第12页后半的定理2.14起留待下一批。既有合订稿已有对应译文，本批提供校订文本，\n不把这几页重复计成新译页，也不修改1158页基线。\n",
+          "reason": "Standalone preamble/cover, repeated heading, historical batch scope or continuation instructions; source remains immutable."
+        },
+        {
+          "start_offset": 791,
+          "end_offset": 813,
+          "start_line": 25,
+          "end_line": 26,
+          "sha256": "39953078c19f8b56373aebb7b645381acfee88c6b164581c8c0aef32c3862a8b",
+          "text": "正式出版 EGA IV.1 仍另行接续。\n\n",
+          "reason": "Standalone preamble/cover, repeated heading, historical batch scope or continuation instructions; source remains immutable."
+        },
+        {
+          "start_offset": 5099,
+          "end_offset": 5198,
+          "start_line": 156,
+          "end_line": 159,
+          "sha256": "9c49eab3ab0fcaa7f30f5e06858c87cd3e24ef1cb7fda5565a3be021e2e0d6ad",
+          "text": "\\noindent 下一处为同一页后半定理2.14（法物理12，英物理10）。\n法文在该定理列表后手写补了局部环性质的双向关系，不能仅据两种底本的换页位置断成两条。\n\n\\end{document}\n",
+          "reason": "Standalone preamble/cover, repeated heading, historical batch scope or continuation instructions; source remains immutable."
+        }
+      ]
+    },
+    {
+      "batch": 90,
+      "source": "dot_updates_20261124/batches/batch090/EGA第五卷_法文覆盖审计_泛截面几何性质.tex",
+      "source_sha256": "e80656b5f3b296d20bf542ed36b5e58f6cd149b998dc84e1a8dc17517777fcbf",
+      "source_bytes": 9565,
+      "progress": {
+        "batch": 90,
+        "work": "EGA 第五卷预备笔记 §20",
+        "this_french_pages": [
+          12,
+          13,
+          14
+        ],
+        "this_english_pages": [
+          10,
+          11,
+          12
+        ],
+        "this_from": "法12下半 / 英10末，定理2.14",
+        "this_through": "法14上半 / 英12上端，备注2.18（含其后划销过渡句校记）",
+        "french_contiguous_through": "物理14页上半，2.18",
+        "next": "法14下半 / 英12中段，第3节标题与定理3.1；法15有跨页划销及正式函数域证明",
+        "merge_into_1158_done": false,
+        "double_count_as_new_translation": false,
+        "formal_EGA_IV_1": "另线：物理221提要，223定义（1.1.1）",
+        "pending": "2.14边批主语和全范围；2.16–2.17模层根重数原始定义引用与扩域归约；法尾页尚须实际覆盖审计"
+      },
+      "ranges": [
+        {
+          "label": "2.14--2.18",
+          "destination": "body",
+          "start_offset": 797,
+          "end_offset": 4467,
+          "start_line": 27,
+          "end_line": 125,
+          "bytes": 7300,
+          "sha256": "e1c6058352be3e66342a85f67cd16354fa0f10918771c9a8d406882b946e1eb5"
+        },
+        {
+          "label": "K_eta and other mathematical notation from the scope paragraph",
+          "destination": "body",
+          "start_offset": 677,
+          "end_offset": 767,
+          "start_line": 23,
+          "end_line": 24,
+          "bytes": 146,
+          "sha256": "6c62ea70240db77438d8a20d219bd0145351b9e79639582f95a15b774523ad8b"
+        },
+        {
+          "label": "Two explicit counterexamples",
+          "destination": "report",
+          "start_offset": 4467,
+          "end_offset": 4986,
+          "start_line": 126,
+          "end_line": 138,
+          "bytes": 883,
+          "sha256": "d39361e465d5387dbf7e25dbf8455b266586363b6f4d5fd7b30deec2526cd5d0"
+        },
+        {
+          "label": "Deleted transition record",
+          "destination": "body",
+          "start_offset": 4986,
+          "end_offset": 5072,
+          "start_line": 139,
+          "end_line": 140,
+          "bytes": 220,
+          "sha256": "a40378b3bc8c607f29db1ee571e96a057860036843e63fb964503d02e71bbd30"
+        }
+      ],
+      "output": {
+        "path": "continuations/v18_batch090.tex",
+        "sha256": "b7c9bc6cba6fcb750a7af5838651b052c9ef49c8565c7fc1c8fc247553f0d90c",
+        "bytes": 8238
+      },
+      "excluded_from_running_text": [
+        {
+          "start_offset": 0,
+          "end_offset": 677,
+          "start_line": 1,
+          "end_line": 22,
+          "sha256": "a7667b994ed36fd99276ea31307623e8db18dc8fbb2de65857020f53b0b9ddad",
+          "text": "\\documentclass[openany,fontset=fandol]{ctexbook}\n\\usepackage{amsmath,amssymb,amsthm}\n\\usepackage[unicode,hidelinks]{hyperref}\n\\setlength{\\emergencystretch}{2em}\n\\raggedbottom\n\\newcommand{\\OO}{\\mathcal O}\n\\newcommand{\\FF}{\\mathcal F}\n\\newcommand{\\GG}{\\mathcal G}\n\\newcommand{\\PP}{\\mathbf P}\n\\DeclareMathOperator{\\Spec}{Spec}\n\\DeclareMathOperator{\\coprof}{coprof}\n\\newcommand{\\tagitem}[2]{\\par\\medskip\\noindent\\textbf{#1\\quad #2}\\enspace}\n\\begin{document}\n\\title{代数几何基础第五卷预备笔记\\\\法文覆盖审计：泛截面的几何性质}\n\\author{第90批\\quad 法、英、中文三方校订}\n\\date{2026年11月23日}\n\\maketitle\n\n\\section*{范围与接续}\n本批校订定理2.14至备注2.18（法文物理12页下半、13页全页及14页上半；\n英编稿物理10页末、11页全页及12页上端）。第三辑合订稿已有对应译文，\n本批为替换稿，未修改1158页基线，不重复计为新译页。\n",
+          "reason": "Standalone preamble/cover, repeated heading, historical batch scope or continuation instructions; source remains immutable."
+        },
+        {
+          "start_offset": 767,
+          "end_offset": 797,
+          "start_line": 25,
+          "end_line": 26,
+          "sha256": "db17bb3a8af3642572d3db6ca875b1461fdf18329f28e513fc0dbf018e928d36",
+          "text": "下一处为法14页下半、英12页的第3节标题与定理3.1。\n\n",
+          "reason": "Standalone preamble/cover, repeated heading, historical batch scope or continuation instructions; source remains immutable."
+        },
+        {
+          "start_offset": 5072,
+          "end_offset": 5087,
+          "start_line": 141,
+          "end_line": 141,
+          "sha256": "7c0796754f02f5feb9aadd6a37d7145d65bd53ddb0779dba48832b3bbb06fcb2",
+          "text": "\\end{document}\n",
+          "reason": "Standalone preamble/cover, repeated heading, historical batch scope or continuation instructions; source remains immutable."
+        }
+      ]
+    },
+    {
+      "batch": 91,
+      "source": "dot_updates_20261124/batches/batch091/EGA第五卷_法文覆盖审计_泛截面不可约与连通.tex",
+      "source_sha256": "90749fb21eaae0c31fc37b71dd6d2d1622e7e29e6096b7e34253fcdec23aa339",
+      "source_bytes": 8809,
+      "progress": {
+        "batch": 91,
+        "this_french_pages": [
+          14,
+          15,
+          16,
+          17
+        ],
+        "this_english_pages": [
+          12,
+          13
+        ],
+        "this_from": "法14下 / 英12，第3节标题",
+        "this_through": "法17上端 / 英13，推论3.3证明与英编书目",
+        "french_contiguous_through": "物理17页上端，3.3 末",
+        "next": "物理法17的20.4 / 明载4.1，对读英13与14",
+        "merge_into_1158_done": false,
+        "double_count_as_new_translation": false,
+        "formal_EGA_IV_1": "另线221提要 / 223定义1.1.1",
+        "unverified": "3.1.1 法稿没有原证明；英编旧书页未逐一对印；法文全卷尚未校完"
+      },
+      "ranges": [
+        {
+          "label": "3.1--3.3 and deleted manuscript layers",
+          "destination": "body",
+          "start_offset": 774,
+          "end_offset": 4652,
+          "start_line": 25,
+          "end_line": 131,
+          "bytes": 7684,
+          "sha256": "646f3ef326a7e51b3fadefe0dfcef16cc27917251b5e069da7d2398faa1be6b0"
+        }
+      ],
+      "output": {
+        "path": "continuations/v18_batch091.tex",
+        "sha256": "7a3ca4f09aee8ef40a6b5b74aa78813d6bcbf5c368fec62d4d8967e46b7f1371",
+        "bytes": 8278
+      },
+      "excluded_from_running_text": [
+        {
+          "start_offset": 0,
+          "end_offset": 774,
+          "start_line": 1,
+          "end_line": 24,
+          "sha256": "cf5222c60b933650e51e33603afda5430551b48fc1076708974e1e29a00b0fc2",
+          "text": "\\documentclass[openany,fontset=fandol]{ctexbook}\n\\usepackage{amsmath,amssymb,amsthm}\n\\usepackage[unicode,hidelinks]{hyperref}\n\\setlength{\\emergencystretch}{2em}\n\\raggedbottom\n\\newcommand{\\OO}{\\mathcal O}\n\\newcommand{\\FF}{\\mathcal F}\n\\newcommand{\\GG}{\\mathcal G}\n\\newcommand{\\PP}{\\mathbf P}\n\\DeclareMathOperator{\\Spec}{Spec}\n\\DeclareMathOperator{\\coprof}{coprof}\n\\newcommand{\\tagitem}[2]{\\par\\medskip\\noindent\\textbf{#1\\quad #2}\\enspace}\n\\begin{document}\n\\title{代数几何基础第五卷预备笔记\\\\法文覆盖审计：泛截面的不可约性与连通性}\n\\author{第91批\\quad 法、英、中文三方校订}\n\\date{2026年11月23日}\n\\maketitle\n\n\\section*{范围与接续}\n逐页对读法文物理14页下半、15--16页、17页上端，以及英编稿物理12--13页中第3节，\n覆盖定理3.1、引理3.1.1、推论3.2和3.3。法14--15的划销文字另记，不混入定稿。\n第三辑合订本在 \\texttt{v5\\_03\\_06.tex} 已有对应译文；本批为待合订替换稿，\n不重复计新译页、不改1158页基线。下次从法文物理17页的20.4、4.1及英文物理13页第4节接续。\n\n",
+          "reason": "Standalone preamble/cover, repeated heading, historical batch scope or continuation instructions; source remains immutable."
+        },
+        {
+          "start_offset": 4652,
+          "end_offset": 4667,
+          "start_line": 132,
+          "end_line": 132,
+          "sha256": "7c0796754f02f5feb9aadd6a37d7145d65bd53ddb0779dba48832b3bbb06fcb2",
+          "text": "\\end{document}\n",
+          "reason": "Standalone preamble/cover, repeated heading, historical batch scope or continuation instructions; source remains immutable."
+        }
+      ]
+    },
+    {
+      "batch": 92,
+      "source": "dot_updates_20261124/batches/batch092/EGA第五卷_法文覆盖审计_充分一般超平面截面.tex",
+      "source_sha256": "c1c14d7812a0f67eb681773eec9cff6a52b97213f3e265fcf1995edcee0531dd",
+      "source_bytes": 9112,
+      "progress": {
+        "batch": 92,
+        "this_french_pages": [
+          17,
+          18,
+          19
+        ],
+        "this_english_pages": [
+          13,
+          14,
+          15
+        ],
+        "this_from": "法17后段20.4标题及4.1",
+        "this_through": "法19命题4.3证明末；英15推论4.4前",
+        "french_contiguous_through": "法19命题4.3证明末",
+        "next": "法19下部推论4.4，续法20上段，英15；法20原文是 que si，不是英稿 if",
+        "merge_into_1158_done": false,
+        "double_count_as_new_translation": false,
+        "formal_EGA_IV_1": "另线221提要 / 223定义1.1.1",
+        "unverified": "法17底模单个字形不可确判；法18重度划去之项不转写；4.4证明未复核；法文全卷尚未校完"
+      },
+      "ranges": [
+        {
+          "label": "4.1--4.3",
+          "destination": "body",
+          "start_offset": 704,
+          "end_offset": 3986,
+          "start_line": 24,
+          "end_line": 79,
+          "bytes": 6268,
+          "sha256": "c932715f89b8caf3edd64c4c2530bf3bc8112bbe0c974f95852bc97dfd9e186f"
+        },
+        {
+          "label": "Constructibility equivalences proof",
+          "destination": "report",
+          "start_offset": 3986,
+          "end_offset": 4755,
+          "start_line": 80,
+          "end_line": 102,
+          "bytes": 1379,
+          "sha256": "da000fccc5d863a1c27283ba201db5eaa1dc8bf2883e53d100ac820376d50733"
+        }
+      ],
+      "output": {
+        "path": "continuations/v18_batch092.tex",
+        "sha256": "3f16bda1e1d050be7cf316fc08ab1874c8f941369f77e34e62c38278df41050d",
+        "bytes": 6968
+      },
+      "excluded_from_running_text": [
+        {
+          "start_offset": 0,
+          "end_offset": 704,
+          "start_line": 1,
+          "end_line": 23,
+          "sha256": "3668ae42af98e491406d48fbe670419c6493a4b053580a06fdcf332bb5af8159",
+          "text": "\\documentclass[openany,fontset=fandol]{ctexbook}\n\\usepackage{amsmath,amssymb,amsthm,enumitem}\n\\usepackage[unicode,hidelinks]{hyperref}\n\\setlength{\\emergencystretch}{2em}\n\\raggedbottom\n\\DeclareMathOperator{\\Spec}{Spec}\n\\DeclareMathOperator{\\coprof}{coprof}\n\\newcommand{\\FF}{\\mathcal F}\n\\newcommand{\\GG}{\\mathcal G}\n\\newcommand{\\calP}{\\mathcal P}\n\\newcommand{\\tagitem}[2]{\\par\\medskip\\noindent\\textbf{#1\\quad #2}\\enspace}\n\\begin{document}\n\\title{代数几何基础第五卷预备笔记\\\\法文覆盖审计：从泛截面到充分一般截面}\n\\author{第92批\\quad 法、英、中文三方校订}\n\\date{2026年11月23日}\n\\maketitle\n\n\\section*{范围与接续}\n逐段校订法文扫描物理17页第20.4节标题至19页命题4.3证明末，\n对读英编稿物理13页下部至15页推论4.4前。\n第三辑合订本 \\texttt{v5\\_03\\_06.tex} 已有对应译文；本批是待替换的校订稿，\n未改动1158页合订本。底本的手改、误排和删文以脚注记录。证明补充另列。\n\n",
+          "reason": "Standalone preamble/cover, repeated heading, historical batch scope or continuation instructions; source remains immutable."
+        },
+        {
+          "start_offset": 4755,
+          "end_offset": 4972,
+          "start_line": 103,
+          "end_line": 110,
+          "sha256": "fabd7e680037087d82a0957502f0f2a2fec0c88665251d936c5240c9a7562d31",
+          "text": "\\medskip\n\\noindent\\textbf{接续点。}\n法物理19页下部推论4.4起，对读英物理15页、法物理20页的作者更正。\n法稿预核已辨认原则上是“只有当 $f$ 拟有限时，原表述才适用”，\n不是英编稿所写的“若 $f$ 拟有限，原表述不适用”。\n此处只定续点与原字辨认，未完成4.4的校订或其证明。\n正式出版的 EGA IV.1 仍另由物理221页提要、223页定义（1.1.1）接续。\n\\end{document}\n",
+          "reason": "Standalone preamble/cover, repeated heading, historical batch scope or continuation instructions; source remains immutable."
+        }
+      ]
+    },
+    {
+      "batch": 93,
+      "source": "dot_updates_20261124/batches/batch093/EGA第五卷_法文覆盖审计_截面连通性与开性.tex",
+      "source_sha256": "e02ad8dbe02d7b044f42b29f10b07a0c1631dacafa8d3d533e31793e6626d474",
+      "source_bytes": 8836,
+      "progress": {
+        "batch": 93,
+        "this_french_pages": [
+          19,
+          20,
+          21
+        ],
+        "this_english_pages": [
+          15,
+          16
+        ],
+        "this_from": "法19下部推论4.4",
+        "this_through": "法21第5节5.1末；英16的5.2前",
+        "french_contiguous_through": "法21第5节5.1末",
+        "next": "法21／英16的5.2；预查F/O误认、零概形／Cartier及法22(5.3)平坦只在(a)",
+        "merge_into_1158_done": false,
+        "double_count_as_new_translation": false,
+        "formal_EGA_IV_1": "另线221提要 / 223定义1.1.1",
+        "unverified": "AQT未识别；未独立证明任意底上4.4(a)及像维数版本的可构造性；删段4.6未强行拼接；法全卷尚未校完"
+      },
+      "ranges": [
+        {
+          "label": "4.4, author note, 5.1 and discarded 4.6 layer",
+          "destination": "body",
+          "start_offset": 621,
+          "end_offset": 2428,
+          "start_line": 22,
+          "end_line": 62,
+          "bytes": 3363,
+          "sha256": "2d21f9d2347d1a92bc2f72b8487bbe2c5e77971b38376ded5525006998d87ea4"
+        },
+        {
+          "label": "Image dimension supplement and counterexample",
+          "destination": "report",
+          "start_offset": 2428,
+          "end_offset": 4365,
+          "start_line": 63,
+          "end_line": 125,
+          "bytes": 4129,
+          "sha256": "4fea1c449651a66705151260b841336239f527d9a4e923d79d1c25b6cb47a665"
+        }
+      ],
+      "output": {
+        "path": "continuations/v18_batch093.tex",
+        "sha256": "5da69ac485d113e25293db4ba12d7b16056360676ee016e7c0f546cebfd6eb47",
+        "bytes": 3992
+      },
+      "excluded_from_running_text": [
+        {
+          "start_offset": 0,
+          "end_offset": 621,
+          "start_line": 1,
+          "end_line": 21,
+          "sha256": "e80a7fb9dc1dc4ad59adf7b623f2541a92df8b465ac8a1dc5c4feb1d07799401",
+          "text": "\\documentclass[openany,fontset=fandol]{ctexbook}\n\\usepackage{amsmath,amssymb,amsthm}\n\\usepackage[unicode,hidelinks]{hyperref}\n\\setlength{\\emergencystretch}{2em}\n\\raggedbottom\n\\DeclareMathOperator{\\Spec}{Spec}\n\\newcommand{\\PP}{\\mathbf P}\n\\newcommand{\\GG}{\\mathcal G}\n\\newcommand{\\dd}{\\delta}\n\\newcommand{\\tagitem}[2]{\\par\\medskip\\noindent\\textbf{#1\\quad #2}\\enspace}\n\\begin{document}\n\\title{代数几何基础第五卷预备笔记\\\\法文覆盖审计：截面的连通性与开性}\n\\author{第93批\\quad 法、英、中文三方校订}\n\\date{2026年11月23日}\n\\maketitle\n\n\\section*{范围与接续}\n逐段对读法文扫描物理19页下部至21页5.2前，英编稿物理15页的4.4至16页的5.1。\n本批含推论4.4、作者补记及5.1，另记录法20页的废稿层。第三辑已有旧译，\n本批是待替换校订稿，未改动1158页合订本。数学补证与原译文分开。\n\n",
+          "reason": "Standalone preamble/cover, repeated heading, historical batch scope or continuation instructions; source remains immutable."
+        },
+        {
+          "start_offset": 4365,
+          "end_offset": 4620,
+          "start_line": 126,
+          "end_line": 132,
+          "sha256": "45cfa86d8a04505d9bf1f0bf6ffc3c8b91b86ef350735ea84729a5b903ee6d84",
+          "text": "\\medskip\n\\noindent\\textbf{接续点。}\n法物理21页5.2、英物理16页5.2，先核可逆模的局部平凡化（不是任意 $\\mathcal F$ 与 $\\mathcal O_X$ 局部同构）\n及“除子”与有效 Cartier 除子的区分。法22的5.3手改将有限表示及 $S$-平坦放在(a)，\n(b)的 $s\\in P^\\vee$ 疑应为 $s\\in S$。这些还未校入正文。\n正式 EGA IV.1 仍另从物理221页提要及223页定义（1.1.1）接续。\n\\end{document}\n",
+          "reason": "Standalone preamble/cover, repeated heading, historical batch scope or continuation instructions; source remains immutable."
+        }
+      ]
+    },
+    {
+      "batch": 94,
+      "source": "dot_updates_20261124/batches/batch094/EGA第五卷_法文覆盖审计_截面正则性与平坦性.tex",
+      "source_sha256": "c6eea358e14b0ba708c8ba6b4c2bcf82ea87daf33cf1deea3d62f59117538441",
+      "source_bytes": 9514,
+      "progress": {
+        "batch": 94,
+        "this_french_pages": [
+          21,
+          22
+        ],
+        "this_english_pages": [
+          16,
+          17
+        ],
+        "this_from": "法21项5.2起",
+        "this_through": "法22推论5.4末，英17备注5.5前",
+        "french_contiguous_through": "法22的5.4末",
+        "next": "法22下部备注5.5、法23首段、英17；再核5.6和5.7",
+        "merge_into_1158_done": false,
+        "double_count_as_new_translation": false,
+        "formal_EGA_IV_1": "另线221提要 / 223定义1.1.1",
+        "unverified": "0III笔记未填编号不强判；Mike归属未核；5.5及以后未校；全卷法文覆盖未闭合"
+      },
+      "ranges": [
+        {
+          "label": "5.2--5.4",
+          "destination": "body",
+          "start_offset": 682,
+          "end_offset": 3929,
+          "start_line": 24,
+          "end_line": 85,
+          "bytes": 5645,
+          "sha256": "4a106763cc97248520a9cda1942073afe37c8386bbf3139cfd7cd64e7b4d00fa"
+        },
+        {
+          "label": "Zero scheme, regularity, constructibility supplements",
+          "destination": "report",
+          "start_offset": 3929,
+          "end_offset": 5244,
+          "start_line": 86,
+          "end_line": 122,
+          "bytes": 2487,
+          "sha256": "92782d60214deebd422a5cc1c2e103f544f0d1a1cc4b3647ac3c033559c0f8c0"
+        }
+      ],
+      "output": {
+        "path": "continuations/v18_batch094.tex",
+        "sha256": "738dd82e8eb783e96fc774484b492056e8978a6e50014f50521df2ae293799ab",
+        "bytes": 6298
+      },
+      "excluded_from_running_text": [
+        {
+          "start_offset": 0,
+          "end_offset": 682,
+          "start_line": 1,
+          "end_line": 23,
+          "sha256": "971813449dfddc3fa28e158a8c19db61ef01df15eab8679438c6ada7b333313e",
+          "text": "\\documentclass[openany,fontset=fandol]{ctexbook}\n\\usepackage{amsmath,amssymb,amsthm}\n\\usepackage[unicode,hidelinks]{hyperref}\n\\setlength{\\emergencystretch}{2em}\n\\raggedbottom\n\\DeclareMathOperator{\\Spec}{Spec}\n\\DeclareMathOperator{\\coker}{coker}\n\\newcommand{\\OO}{\\mathcal O}\n\\newcommand{\\FF}{\\mathcal F}\n\\newcommand{\\GG}{\\mathcal G}\n\\newcommand{\\id}{\\mathrm{id}}\n\\newcommand{\\tagitem}[2]{\\par\\medskip\\noindent\\textbf{#1\\quad #2}\\enspace}\n\\begin{document}\n\\title{代数几何基础第五卷预备笔记\\\\法文覆盖审计：截面正则性与平坦性}\n\\author{第94批\\quad 法、英、中文三方校订}\n\\date{2026年11月23日}\n\\maketitle\n\n\\section*{范围与接续}\n逐段对读法文物理21页5.2至22页推论5.4末，以及英编稿物理16--17页相应文字。\n这部分在第三辑已有旧译；本批为待替换的校订稿，未改1158页合订本。\n正文订正已核误字和公式；现代补证、原读法与未核出处分列。\n\n",
+          "reason": "Standalone preamble/cover, repeated heading, historical batch scope or continuation instructions; source remains immutable."
+        },
+        {
+          "start_offset": 5244,
+          "end_offset": 5472,
+          "start_line": 123,
+          "end_line": 129,
+          "sha256": "505e65d5725ebc5cfb97349a0e6a1e943854f983f0645be5b5f66f03045a7261",
+          "text": "\\medskip\n\\noindent\\textbf{接续点。}\n下一处是法物理22页下部备注5.5，续法23页上端，英稿物理17页。\n法稿应按“$\\xi\\in V$ 的判据”读，而非假定无嵌入关联循环就保证任意 $\\xi\\in V$；\n仍需逐段核 $(S_1)$、换底及 Cohen--Macaulay 商。5.6的两项旧引用留下一批核。\n正式出版 EGA IV.1 仍另从物理221页提要及223页定义（1.1.1）接续。\n\\end{document}\n",
+          "reason": "Standalone preamble/cover, repeated heading, historical batch scope or continuation instructions; source remains immutable."
+        }
+      ]
+    },
+    {
+      "batch": 95,
+      "source": "dot_updates_20261124/batches/batch095/EGA第五卷_法文覆盖审计_关联点与纤维开性.tex",
+      "source_sha256": "7f861400b646bc8e996f73f0e3059c882d1c383a79628699cea9e21751b14ff7",
+      "source_bytes": 10146,
+      "progress": {
+        "batch": 95,
+        "this_french_pages": [
+          22,
+          23,
+          24
+        ],
+        "this_english_pages": [
+          17,
+          18
+        ],
+        "this_from": "法22下部备注5.5",
+        "this_through": "法24上部被划销旧稿末，第6节标题前；英18第6节前",
+        "french_contiguous_through": "法24第6节标题以前",
+        "next": "法24下部第6节标题，法25续、英18。核6.1手写固有和15.6.3来源",
+        "merge_into_1158_done": false,
+        "double_count_as_new_translation": false,
+        "formal_EGA_IV_1": "另线221提要 / 223定义1.1.1",
+        "unverified": "12.1.4与12.1.6为正式版本数学对应，未查手稿编号历史；法24废稿开头残尾及叠写编号不复原；Seidenberg论文适用范围未逐页核；全卷覆盖未闭合"
+      },
+      "ranges": [
+        {
+          "label": "5.5--5.7 and author editorial instructions",
+          "destination": "body",
+          "start_offset": 824,
+          "end_offset": 3286,
+          "start_line": 28,
+          "end_line": 74,
+          "bytes": 4448,
+          "sha256": "7d2e763ca4367983c66349bc549606fa30e17ba25c85eb6115fcde0df7db6407"
+        },
+        {
+          "label": "Published reference correspondence and supplementary proofs",
+          "destination": "report",
+          "start_offset": 3286,
+          "end_offset": 4773,
+          "start_line": 75,
+          "end_line": 115,
+          "bytes": 2845,
+          "sha256": "5e7fb038002a610f8c39b8bb5d3fc163271a03142ab0f977426b8b9b84447a4d"
+        },
+        {
+          "label": "French p24 deleted author comments",
+          "destination": "body",
+          "start_offset": 4784,
+          "end_offset": 5299,
+          "start_line": 117,
+          "end_line": 131,
+          "bytes": 1307,
+          "sha256": "ee279d4378a2f766f4dd42ffc3e6ce222db0fb448c86d76fe593afe1672df9df"
+        }
+      ],
+      "output": {
+        "path": "continuations/v18_batch095.tex",
+        "sha256": "11d3ee6ec3c3422a40bb18247410b5315edb71ac6e341ee650a068abf8ac3faa",
+        "bytes": 6420
+      },
+      "excluded_from_running_text": [
+        {
+          "start_offset": 0,
+          "end_offset": 824,
+          "start_line": 1,
+          "end_line": 27,
+          "sha256": "d7a794595c282ea52a7fee55539f92345be523398f03f4581022917a4a10710f",
+          "text": "\\documentclass[openany,fontset=fandol]{ctexbook}\n\\usepackage{amsmath,amssymb,amsthm,enumitem}\n\\usepackage[unicode,hidelinks]{hyperref}\n\\setlength{\\emergencystretch}{2em}\n\\raggedbottom\n\\DeclareMathOperator{\\Spec}{Spec}\n\\DeclareMathOperator{\\Supp}{Supp}\n\\DeclareMathOperator{\\Ass}{Ass}\n\\DeclareMathOperator{\\coprof}{coprof}\n\\DeclareMathOperator{\\depth}{depth}\n\\newcommand{\\OO}{\\mathcal O}\n\\newcommand{\\FF}{\\mathcal F}\n\\newcommand{\\GG}{\\mathcal G}\n\\newcommand{\\calP}{\\mathcal P}\n\\newcommand{\\tagitem}[2]{\\par\\medskip\\noindent\\textbf{#1\\quad #2}\\enspace}\n\\begin{document}\n\\title{代数几何基础第五卷预备笔记\\\\法文覆盖审计：关联点与纤维性质的开性}\n\\author{第95批\\quad 法、英、中文三方校订}\n\\date{2026年11月23日}\n\\maketitle\n\n\\section*{范围与接续}\n逐段对读法文物理22页下部的备注5.5、23页和24页上部被划销的旧稿，\n以及英编稿物理17--18页的相应段。5.5--5.7及节末编写说明校毕，\n法24的第6节标题起待续。第三辑已有相应旧译；本批为待替换稿，未改动1158页合订本。\n出版对应、旧稿与数学补证另列。\n\n",
+          "reason": "Standalone preamble/cover, repeated heading, historical batch scope or continuation instructions; source remains immutable."
+        },
+        {
+          "start_offset": 4773,
+          "end_offset": 4784,
+          "start_line": 116,
+          "end_line": 116,
+          "sha256": "0e5b2b26b992528642b65e78242311428bc8f0e70b1385dd8d7c83b12fd83613",
+          "text": "\\clearpage\n",
+          "reason": "Standalone preamble/cover, repeated heading, historical batch scope or continuation instructions; source remains immutable."
+        },
+        {
+          "start_offset": 5299,
+          "end_offset": 5496,
+          "start_line": 132,
+          "end_line": 137,
+          "sha256": "cb3d8512425d5d72904b757edd2704f93838f73c17579bc6bc3d11321c4e78f2",
+          "text": "\\medskip\n\\noindent\\textbf{接续点。}\n法物理24页下部“第6节：任意超平面截面的连通性”，对读英物理18页、法25后续。\n法24命题6.1起笔处有手写 $X$ 固有，下一批须与法25的续句、原15.6.3共同核对；\n还要区分泛截面和全部截面所需条件。正式出版 EGA IV.1 仍从物理221页提要与223页定义（1.1.1）另线接续。\n\\end{document}\n",
+          "reason": "Standalone preamble/cover, repeated heading, historical batch scope or continuation instructions; source remains immutable."
+        }
+      ]
+    },
+    {
+      "batch": 96,
+      "source": "dot_updates_20261124/batches/batch096/EGA第五卷_法文覆盖审计_任意超平面截面连通性.tex",
+      "source_sha256": "8af4f4fac86ea95e128c9560d9ae10736b2195607321122dde531b3eeda47787",
+      "source_bytes": 6086,
+      "progress": {
+        "batch": 96,
+        "this_french_pages": [
+          24,
+          25
+        ],
+        "this_english_pages": [
+          18
+        ],
+        "this_from": "法24下部第6节标题",
+        "this_through": "法25页末划销的下一节标题校记；英18第6节末",
+        "french_contiguous_through": "法25页末",
+        "next": "法26上部划销旧稿（与第4节有关）；后半第7节标题与7.1，续法27、英19",
+        "merge_into_1158_done": false,
+        "double_count_as_new_translation": false,
+        "formal_EGA_IV_1": "另线221提要 / 223定义1.1.1",
+        "unverified": "15.6.3 的手稿编号沿革；4.4方向的推广只保留为作者建议；全卷未复核闭合"
+      },
+      "ranges": [
+        {
+          "label": "6.1 and author instructions",
+          "destination": "body",
+          "start_offset": 502,
+          "end_offset": 1743,
+          "start_line": 17,
+          "end_line": 30,
+          "bytes": 2545,
+          "sha256": "dc80c8014301bdb82cc0f9ced25211b54f374dcff515373b58c98849d011200b"
+        },
+        {
+          "label": "Connectedness proof and properness counterexample",
+          "destination": "report",
+          "start_offset": 1743,
+          "end_offset": 2958,
+          "start_line": 31,
+          "end_line": 51,
+          "bytes": 2304,
+          "sha256": "6c84c04b291ee7c8e9c19d46f2cf52207287e654c339e6a7ae51cbb58a4840d5"
+        },
+        {
+          "label": "Deleted title evidence",
+          "destination": "body",
+          "start_offset": 2958,
+          "end_offset": 3113,
+          "start_line": 52,
+          "end_line": 53,
+          "bytes": 411,
+          "sha256": "690c28a4700a1cb97c3e08e7244f170681720b5cf829696fc3c21f4707b505d6"
+        }
+      ],
+      "output": {
+        "path": "continuations/v18_batch096.tex",
+        "sha256": "c976c9b42b08c4a92312b76cc5712135f0748702d0f1d618e120bff99271d784",
+        "bytes": 3637
+      },
+      "excluded_from_running_text": [
+        {
+          "start_offset": 0,
+          "end_offset": 502,
+          "start_line": 1,
+          "end_line": 16,
+          "sha256": "ae3dc6acb98c6221810d09b3249ac00da0d267325f7432a6d0c9425c19f0a34a",
+          "text": "\\documentclass[openany,fontset=fandol]{ctexbook}\n\\usepackage{amsmath,amssymb,amsthm}\n\\usepackage[unicode,hidelinks]{hyperref}\n\\setlength{\\emergencystretch}{2em}\n\\raggedbottom\n\\DeclareMathOperator{\\Spec}{Spec}\n\\DeclareMathOperator{\\pr}{pr}\n\\begin{document}\n\\title{代数几何基础第五卷预备笔记\\\\法文覆盖审计：任意超平面截面的连通性}\n\\author{第96批\\quad 法、英、中文三方校订}\n\\date{2026年11月23日}\n\\maketitle\n\n\\section*{范围与接续}\n本批对读法文物理24页下部、25页及英译物理18页：第6节引言、命题6.1、证明和作者的编写建议。法25页页末划销的下一节标题另作校记。连续法校至物理25页末。法26页上部另有一段划销旧稿，其后接第7节；两者下一批核。第三辑1158页合订本未改动。\n\n",
+          "reason": "Standalone preamble/cover, repeated heading, historical batch scope or continuation instructions; source remains immutable."
+        },
+        {
+          "start_offset": 3113,
+          "end_offset": 3129,
+          "start_line": 54,
+          "end_line": 55,
+          "sha256": "d23c000d5cb7805066714ca6db35a997f641e5209a2f60b139d1b48a482eba44",
+          "text": "\\end{document}\n\n",
+          "reason": "Standalone preamble/cover, repeated heading, historical batch scope or continuation instructions; source remains immutable."
+        }
+      ]
+    },
+    {
+      "batch": 97,
+      "source": "dot_updates_20261124/batches/batch097/EGA第五卷_法文覆盖审计_超平面截面与多截面构造.tex",
+      "source_sha256": "93a90e26edcb51ba4626bd690439f687907dcd74e932da78000a7eae3745a938",
+      "source_bytes": 7439,
+      "progress": {
+        "batch": 97,
+        "this_french_pages": [
+          26,
+          27
+        ],
+        "this_english_pages": [
+          18,
+          19
+        ],
+        "this_from": "法26旧稿，接第7节标题",
+        "this_through": "法27有限域换底、例子过渡句和删稿残段",
+        "french_contiguous_through": "法27页末",
+        "next": "法28正稿对4.2、4.3的补记、7.2，续看7.3及边注；英19末和20",
+        "merge_into_1158_done": false,
+        "double_count_as_new_translation": false,
+        "formal_EGA_IV_1": "另线221提要 / 223定义1.1.1",
+        "unverified": "法27划销末句不完整；有限平坦多截面的迭代在7.1仅是计划，未声称通用；相对保持性仍须各自检验"
+      },
+      "ranges": [
+        {
+          "label": "7.1",
+          "destination": "body",
+          "start_offset": 598,
+          "end_offset": 2156,
+          "start_line": 20,
+          "end_line": 36,
+          "bytes": 3174,
+          "sha256": "eb49dc9e7c09674c4a881b8cecec7b756c173e4612521adc03c3ac9ab17ea9bc"
+        },
+        {
+          "label": "Infinite-field selection and finite etale neighbourhood proof",
+          "destination": "report",
+          "start_offset": 2156,
+          "end_offset": 3035,
+          "start_line": 37,
+          "end_line": 45,
+          "bytes": 1759,
+          "sha256": "312973823281bb4244f9463185006a8afece67c9c1acfc72441d3bfa88adf43b"
+        },
+        {
+          "label": "French pp26--27 discarded drafts",
+          "destination": "body",
+          "start_offset": 3046,
+          "end_offset": 3759,
+          "start_line": 47,
+          "end_line": 52,
+          "bytes": 1595,
+          "sha256": "fb1de63e9d8152b715d4ca77f98763e6433f29223efbca28712f457af077c932"
+        }
+      ],
+      "output": {
+        "path": "continuations/v18_batch097.tex",
+        "sha256": "0eca77cda6ef97321000cb2ea0a53e7bd732b866f8ff9ce798abd7139677ef30",
+        "bytes": 5464
+      },
+      "excluded_from_running_text": [
+        {
+          "start_offset": 0,
+          "end_offset": 598,
+          "start_line": 1,
+          "end_line": 19,
+          "sha256": "4fda8796090b0607fbf3a8f0dd05d250238983b6418cd42f45ed310a056bb5f2",
+          "text": "\\documentclass[openany,fontset=fandol]{ctexbook}\n\\usepackage{amsmath,amssymb,amsthm,enumitem}\n\\usepackage[unicode,hidelinks]{hyperref}\n\\setlength{\\emergencystretch}{2em}\n\\raggedbottom\n\\DeclareMathOperator{\\Spec}{Spec}\n\\DeclareMathOperator{\\Supp}{Supp}\n\\newcommand{\\FF}{\\mathcal F}\n\\newcommand{\\GG}{\\mathcal G}\n\\newcommand{\\calP}{\\mathcal P}\n\\begin{document}\n\\title{代数几何基础第五卷预备笔记\\\\法文覆盖审计：超平面截面与多截面构造}\n\\author{第97批\\quad 法、英、中文三方校订}\n\\date{2026年11月24日}\n\\maketitle\n\n\\section*{范围与接续}\n本批核对法文物理26、27页，及英编稿物理18页底至19页的相应段。正文译校覆盖7.1从节首至有限域换底及引出例子的过渡句。两处划销旧稿另列；物理28页起关于4.2、4.3的现行补记和命题7.2留待下一批。第三辑1158页合订本未改动。\n\n",
+          "reason": "Standalone preamble/cover, repeated heading, historical batch scope or continuation instructions; source remains immutable."
+        },
+        {
+          "start_offset": 3035,
+          "end_offset": 3046,
+          "start_line": 46,
+          "end_line": 46,
+          "sha256": "0e5b2b26b992528642b65e78242311428bc8f0e70b1385dd8d7c83b12fd83613",
+          "text": "\\clearpage\n",
+          "reason": "Standalone preamble/cover, repeated heading, historical batch scope or continuation instructions; source remains immutable."
+        },
+        {
+          "start_offset": 3759,
+          "end_offset": 3775,
+          "start_line": 53,
+          "end_line": 54,
+          "sha256": "d23c000d5cb7805066714ca6db35a997f641e5209a2f60b139d1b48a482eba44",
+          "text": "\\end{document}\n\n",
+          "reason": "Standalone preamble/cover, repeated heading, historical batch scope or continuation instructions; source remains immutable."
+        }
+      ]
+    },
+    {
+      "batch": 98,
+      "source": "dot_updates_20261124/batches/batch098/EGA第五卷_法文覆盖审计_坏集维数与截面平坦性.tex",
+      "source_sha256": "715e3b6a29a9022f8a3e06b19c0bd25f017b27ece6a3b8d7a73e8959b55eed1f",
+      "source_bytes": 7741,
+      "progress": {
+        "batch": 98,
+        "this_french_pages": [
+          28,
+          29
+        ],
+        "this_english_pages": [
+          19,
+          20
+        ],
+        "this_from": "法28开头4.2/4.3补记",
+        "this_through": "法29顶部Stein划销段结束，7.4前",
+        "french_contiguous_through": "法29命题7.4前",
+        "next": "法29的7.4–7.5；英20末、21首；再看法30的§8",
+        "merge_into_1158_done": false,
+        "double_count_as_new_translation": false,
+        "formal_EGA_IV_1": "另线221提要 / 223定义1.1.1",
+        "unverified": "7.3性质号码末项叠改、左缘残字；几何整的维数容错版本未由12.2.1(x)(xi)证明"
+      },
+      "ranges": [
+        {
+          "label": "7.1 addendum, 7.2--7.3",
+          "destination": "body",
+          "start_offset": 599,
+          "end_offset": 2547,
+          "start_line": 21,
+          "end_line": 49,
+          "bytes": 3813,
+          "sha256": "6214b4282bee3241286ab585d54eb8c87d9da58e7bf4e3f941ea3e77ba509140"
+        },
+        {
+          "label": "Bad-set dimension and flatness supplements/counterexample",
+          "destination": "report",
+          "start_offset": 2547,
+          "end_offset": 3666,
+          "start_line": 50,
+          "end_line": 69,
+          "bytes": 2498,
+          "sha256": "f579a697caca0a3bafa6ffdded3cfb0dc13b9669e275103ad1f674897d7dbc48"
+        },
+        {
+          "label": "Discarded Stein argument",
+          "destination": "body",
+          "start_offset": 3666,
+          "end_offset": 3892,
+          "start_line": 70,
+          "end_line": 71,
+          "bytes": 591,
+          "sha256": "591f8a32a551585f4e97fd683bcf6a1e3516b514c52835724d0bbeaf9cc68322"
+        }
+      ],
+      "output": {
+        "path": "continuations/v18_batch098.tex",
+        "sha256": "107ca50f49effde2cdbbc6f3c80276c19ffebf04159e3cd5ba9570c50eb0c942",
+        "bytes": 5227
+      },
+      "excluded_from_running_text": [
+        {
+          "start_offset": 0,
+          "end_offset": 599,
+          "start_line": 1,
+          "end_line": 20,
+          "sha256": "d0e3b7f646602ae7985d25b05a9f55c87ea09e61ed348c26546735c5b7273dae",
+          "text": "\\documentclass[openany,fontset=fandol]{ctexbook}\n\\usepackage{amsmath,amssymb,amsthm,enumitem}\n\\usepackage[unicode,hidelinks]{hyperref}\n\\setlength{\\emergencystretch}{2em}\n\\raggedbottom\n\\DeclareMathOperator{\\Spec}{Spec}\n\\DeclareMathOperator{\\Supp}{Supp}\n\\newcommand{\\FF}{\\mathcal F}\n\\newcommand{\\GG}{\\mathcal G}\n\\newcommand{\\OO}{\\mathcal O}\n\\newcommand{\\calP}{\\mathcal P}\n\\begin{document}\n\\title{代数几何基础第五卷预备笔记\\\\法文覆盖审计：坏集维数与截面平坦性}\n\\author{第98批\\quad 法、英、中文三方校订}\n\\date{2026年11月24日}\n\\maketitle\n\n\\section*{范围与接续}\n本批核对法文物理28页及29页开头划销段的续尾；英编稿对应物理19页末、20页上部。校订4.2、4.3的补记、命题7.2和7.3。法29从命题7.4起待续。本批未改1158页合订本。\n\n",
+          "reason": "Standalone preamble/cover, repeated heading, historical batch scope or continuation instructions; source remains immutable."
+        },
+        {
+          "start_offset": 3892,
+          "end_offset": 3908,
+          "start_line": 72,
+          "end_line": 73,
+          "sha256": "d23c000d5cb7805066714ca6db35a997f641e5209a2f60b139d1b48a482eba44",
+          "text": "\\end{document}\n\n",
+          "reason": "Standalone preamble/cover, repeated heading, historical batch scope or continuation instructions; source remains immutable."
+        }
+      ]
+    },
+    {
+      "batch": 99,
+      "source": "dot_updates_20261124/batches/batch099/EGA第五卷_法文覆盖审计_有限etale多截面.tex",
+      "source_sha256": "85f98276379eff53d810905d660c7797ab074ad35c8064a8fa64c28c8a805536",
+      "source_bytes": 6565,
+      "progress": {
+        "batch": 99,
+        "this_french_pages": [
+          29
+        ],
+        "this_english_pages": [
+          20,
+          21,
+          46
+        ],
+        "this_from": "法29命题7.4",
+        "this_through": "法29备注7.5页末",
+        "french_contiguous_through": "法29页末，第7节终",
+        "next": "法30第8节及8.1，英21；法30下部划销8.2与续页待比对",
+        "merge_into_1158_done": false,
+        "double_count_as_new_translation": false,
+        "formal_EGA_IV_1": "另线221提要 / 223定义1.1.1",
+        "unverified": "手稿一般固有版7.4不由该归纳证明；7.5固有光滑非射影反例未给全；法29末边注尾读法未定"
+      },
+      "ranges": [
+        {
+          "label": "7.4 general manuscript claim and induction route",
+          "destination": "report",
+          "start_offset": 446,
+          "end_offset": 1063,
+          "start_line": 16,
+          "end_line": 24,
+          "bytes": 1258,
+          "sha256": "be144d8e0bf329d11e12d1e3d95428112f18d4c0bd871b576abb4985b4ae734a"
+        },
+        {
+          "label": "7.5",
+          "destination": "body",
+          "start_offset": 1063,
+          "end_offset": 1309,
+          "start_line": 25,
+          "end_line": 27,
+          "bytes": 614,
+          "sha256": "10e65b640e5c7cb49e67c03ebb6870a21e0f34de40f0c27806042cdfc0755724"
+        },
+        {
+          "label": "Non-strict inequality counterexample and zero-dimensional/local conclusions",
+          "destination": "report",
+          "start_offset": 1309,
+          "end_offset": 1977,
+          "start_line": 28,
+          "end_line": 35,
+          "bytes": 1313,
+          "sha256": "9e53febe2a3ce1aa0c6d956bd501f03eaefe7deaf6010a9565cd5bc25c5c0166"
+        },
+        {
+          "label": "Projective version; moved from translator supplement to explicitly identified adopted body",
+          "destination": "body",
+          "start_offset": 1977,
+          "end_offset": 2646,
+          "start_line": 36,
+          "end_line": 40,
+          "bytes": 1653,
+          "sha256": "dcff915d1055af2b08247bce9148528eb84172b451c74208aa9c5c4c4e8f7653"
+        },
+        {
+          "label": "Quasiprojective etale counterexample",
+          "destination": "report",
+          "start_offset": 2646,
+          "end_offset": 3214,
+          "start_line": 41,
+          "end_line": 49,
+          "bytes": 1034,
+          "sha256": "3ed16cdc05b4e0cb8e603f58cf62c9480068aed9895aa1a446597943fe2975eb"
+        }
+      ],
+      "output": {
+        "path": "continuations/v18_batch099.tex",
+        "sha256": "ae6dadf9779ed35611faa86c019960c9b692f310a7f10b35a32c610bf7e41eab",
+        "bytes": 3859
+      },
+      "excluded_from_running_text": [
+        {
+          "start_offset": 0,
+          "end_offset": 446,
+          "start_line": 1,
+          "end_line": 15,
+          "sha256": "b0a7d1f2b986baf23bbbeb1cd862912af156be74615e2b865763da989ee1d586",
+          "text": "\\documentclass[openany,fontset=fandol]{ctexbook}\n\\usepackage{amsmath,amssymb,amsthm}\n\\usepackage[unicode,hidelinks]{hyperref}\n\\setlength{\\emergencystretch}{2em}\n\\raggedbottom\n\\DeclareMathOperator{\\Spec}{Spec}\n\\begin{document}\n\\title{代数几何基础第五卷预备笔记\\\\法文覆盖审计：有限 étale 多截面}\n\\author{第99批\\quad 法、英、中文三方校订}\n\\date{2026年11月24日}\n\\maketitle\n\n\\section*{范围与接续}\n连续法校至物理29页末，第7节结束。对应英物理20页命题7.4、21页开头备注7.5；另核英46页关于余维 $n$ 线性截面的作者补记。本批未改1158页合订本；下一批从法物理30页第8节开始。\n\n",
+          "reason": "Standalone preamble/cover, repeated heading, historical batch scope or continuation instructions; source remains immutable."
+        },
+        {
+          "start_offset": 3214,
+          "end_offset": 3230,
+          "start_line": 50,
+          "end_line": 51,
+          "sha256": "d23c000d5cb7805066714ca6db35a997f641e5209a2f60b139d1b48a482eba44",
+          "text": "\\end{document}\n\n",
+          "reason": "Standalone preamble/cover, repeated heading, historical batch scope or continuation instructions; source remains immutable."
+        }
+      ]
+    }
+  ],
+  "edits": [
+    {
+      "batch": 88,
+      "old": "作者预告：在通常的非退化射影丛情形，相对除子函子由各次数对应的射影丛\n\\(\\PP(\\operatorname{Sym}^k(E^\\vee))\\) 的不交并表示，",
+      "new": "作者在此预告相对除子函子的表示。按商线约定订正其参数模后，在 $E$ 的秩处处至少为二的情形，\n相应的各次数参数丛应写为 $\\PP((\\operatorname{Sym}^k E)^\\vee)$；作者预告它们的不交并表示该函子，",
+      "reason": "French physical p4 visibly prints P(Sym^k(E dual)); in arbitrary characteristic the degree-k coefficient module is Sym^k E and its line parameters use the dual of that module. Preserve representation as an unproved forecast and explicitly exclude rank-one degeneration."
+    },
+    {
+      "batch": 88,
+      "old": "公式采用商线约定；秩一的射影丛不能把多个同样的空除子按各个 \\(k\\) 重复表示。这里按作者所写保留为后文预告，不把它当成本段已证的表征定理。",
+      "new": "法稿原式为 \\(\\PP(\\operatorname{Sym}^k(E^\\vee))\\)，对偶放在 $E$ 上。按 $p_*\\OO_P(k)=\\operatorname{Sym}^k E$ 的商线约定，次数 $k$ 的方程给出 $\\operatorname{Sym}^k E$ 中的一条局部直和因子线，故其参数模是 $(\\operatorname{Sym}^k E)^\\vee$。任意底上不能无条件把对偶与对称幂交换；$k!$ 可逆时的对称化识别不能直接用于任意特征。正文只订正这一预告的参数模，$k=1$ 的超平面构造不受影响。秩一的射影丛不能把多个同样的空除子按各个 \\(k\\) 重复表示。这里未证明一般相对除子函子的表示性，旧注 P03 的历史记录仍保留在核查报告中。",
+      "reason": "Explain the dual-position correction and retain the original formula and the explicit limit of this source audit; do not silently mark old P03 resolved in its entirety."
+    },
+    {
+      "batch": 88,
+      "old": "\\begin{proof}\n先取 \\(Z=\\{z\\}\\)",
+      "new": "\\begin{proof}[原稿论证与译校展开]\n先取 \\(Z=\\{z\\}\\)",
+      "reason": "Label the expanded proof of 2.2; the source draft states the affine/projective step briefly."
+    },
+    {
+      "batch": 88,
+      "old": "\\begin{proof}\n对每个有非空截面的分支",
+      "new": "\\begin{proof}[原稿论证与译校展开]\n对每个有非空截面的分支",
+      "reason": "Label the expanded reduced/component proof of 2.6."
+    },
+    {
+      "batch": 88,
+      "old": "\\begin{proof}\n逆像与集合差及对称差相容",
+      "new": "\\begin{proof}[原包含判据的证明及译校补证]\n逆像与集合差及对称差相容",
+      "reason": "Distinguish the corrected equality criterion proof from the original proof."
+    },
+    {
+      "batch": 88,
+      "old": "原等号句却没有同步修改。",
+      "new": "原等号句却没有同步修改：它仍称 $Z_\\eta=Z'_\\eta$ 当且仅当 $Z=Z'$ 或 $f(Z),f(Z')$ 都有限。",
+      "reason": "State the rejected original equality claim explicitly in the correction footnote."
+    },
+    {
+      "batch": 88,
+      "old": "\\tagitem{命题}{2.6}",
+      "new": "注意，若 $\\dim X_i=d_i$，则对上述非空分支有 $\\dim Y_{i\\eta}=d_i-1$。更一般地：\\cmt{D18-088-P25}{这是法文物理第8页（2.5）证明之后的过渡句；原稿写 $Y_i$，依泛截面语境补明下标 $\\eta$。第88批将其解释并入（2.6）脚注，本次恢复其独立位置。}\n\n\\tagitem{命题}{2.6}",
+      "reason": "Restore the separate original 2.5-to-2.6 transition, confirmed on French p8 and retained in the old translation."
+    },
+    {
+      "batch": 88,
+      "old": "\\section*{IV.20\\quad 超平面截面与锥形投影}",
+      "new": "\\par\\medskip\\noindent\\textbf{原手稿 IV.20：超平面截面与锥形投影。}",
+      "reason": "Heading/statement adaptation; retains original item numbers and V-H anchors; continuation headings are not new sections."
+    },
+    {
+      "batch": 88,
+      "old": "\\section*{20.1\\quad 预备知识与记号}",
+      "new": "\\egasection{§1\\quad 预备知识与记号（法文原号20.1）}",
+      "reason": "Heading/statement adaptation; retains original item numbers and V-H anchors; continuation headings are not new sections."
+    },
+    {
+      "batch": 88,
+      "old": "\\section*{20.2\\quad 泛超平面截面：局部性质}",
+      "new": "\\egasection{§2\\quad 泛超平面截面：局部性质（法文原号20.2）}",
+      "reason": "Heading/statement adaptation; retains original item numbers and V-H anchors; continuation headings are not new sections."
+    },
+    {
+      "batch": 89,
+      "old": "沿用第88批记号：",
+      "new": "沿用前述记号：",
+      "reason": "Preserve mathematical setup while removing the batch-specific reference."
+    },
+    {
+      "batch": 89,
+      "old": "\\begin{proof}[订正后的证明]",
+      "new": "\\begin{proof}[译校订正证明，非原文]",
+      "reason": "Make authorship of the replacement proof explicit."
+    },
+    {
+      "batch": 89,
+      "old": "如非平凡有限可分域扩张的谱到点。",
+      "new": "如非平凡有限可分域扩张的谱到点。原证明的完整旧译及其错误步骤说明见核查报告“D18-089：（2.12）的原证明异文及订正依据”。",
+      "reason": "Direct the reader to the fully retained original proof."
+    },
+    {
+      "batch": 89,
+      "old": "\\section*{20.2\\quad 泛超平面截面：局部性质（续）}",
+      "new": "",
+      "reason": "Heading/statement adaptation; retains original item numbers and V-H anchors; continuation headings are not new sections."
+    },
+    {
+      "batch": 89,
+      "old": "\\section*{几何性质（英编稿标题）}",
+      "new": "\\subsec{几何性质（英编稿标题）}",
+      "reason": "Heading/statement adaptation; retains original item numbers and V-H anchors; continuation headings are not new sections."
+    },
+    {
+      "batch": 90,
+      "old": "第3节起及其页下方划销草稿留待下一批，不能因英编稿换页而跳过。",
+      "new": "第3节及其页下方划销草稿的校记接在下文。",
+      "reason": "Replace obsolete batch continuation with current reading relation."
+    },
+    {
+      "batch": 90,
+      "old": "\\section*{20.2\\quad 泛超平面截面：局部性质（续）}",
+      "new": "",
+      "reason": "Heading/statement adaptation; retains original item numbers and V-H anchors; continuation headings are not new sections."
+    },
+    {
+      "batch": 91,
+      "old": "下一批以法文页为准保留编号。",
+      "new": "下文以法文页为准保留编号。",
+      "reason": "Remove obsolete batch scheduling."
+    },
+    {
+      "batch": 91,
+      "old": "原稿说，这一引理或近似版本在文献中颇常见，把证明出处留给收信人选择，自己不另找一份证明。",
+      "new": "这一引理，或者同它如同兄弟般相似的引理，在文献中几乎随处可见。因此，我把选取一份证明出处的工作留给你；也就是说，我没有兴致凭自己的办法再找一个证明。",
+      "reason": "Restore the complete author editorial remark from the retained old translation; no additional proof is invented."
+    },
+    {
+      "batch": 91,
+      "old": "\\begin{proof}\n原稿援引拟与 Hartshorne 定理同列于第6段的分支链引理。",
+      "new": "\\begin{proof}[原稿论证与译校展开]\n原稿援引拟与 Hartshorne 定理同列于第6段的分支链引理。",
+      "reason": "Identify the expanded component-graph proof as translator elaboration."
+    },
+    {
+      "batch": 91,
+      "old": "\\section*{20.3\\quad 泛超平面截面：几何不可约性与连通性}",
+      "new": "\\egasection{§3\\quad 泛超平面截面：几何不可约性与连通性（法文原号20.3）}",
+      "reason": "Heading/statement adaptation; retains original item numbers and V-H anchors; continuation headings are not new sections."
+    },
+    {
+      "batch": 92,
+      "old": "\\section*{20.4\\quad 变动超平面截面的研究：“充分一般”的截面}",
+      "new": "\\egasection{§4\\quad 变动超平面截面的研究：“充分一般”的截面（法文原号20.4）}",
+      "reason": "Heading/statement adaptation; retains original item numbers and V-H anchors; continuation headings are not new sections."
+    },
+    {
+      "batch": 93,
+      "old": "\\section*{20.4（续）\\quad “充分一般”的截面}",
+      "new": "",
+      "reason": "Heading/statement adaptation; retains original item numbers and V-H anchors; continuation headings are not new sections."
+    },
+    {
+      "batch": 93,
+      "old": "\\section*{5\\quad Seidenberg 型定理}",
+      "new": "\\egasection{§5\\quad Seidenberg 型定理}",
+      "reason": "Heading/statement adaptation; retains original item numbers and V-H anchors; continuation headings are not new sections."
+    },
+    {
+      "batch": 94,
+      "old": "\\section*{5（续）\\quad Seidenberg 型定理}",
+      "new": "",
+      "reason": "Heading/statement adaptation; retains original item numbers and V-H anchors; continuation headings are not new sections."
+    },
+    {
+      "batch": 95,
+      "old": "\\begin{proof}\n按定义 $U_{\\calP}\\subseteq U$",
+      "new": "\\begin{proof}[译校订正证明]\n按定义 $U_{\\calP}\\subseteq U$",
+      "reason": "The quotient on Y, rather than the ambient module in the original proof, is the object used by the corrected argument; original wording remains in the attached note."
+    },
+    {
+      "batch": 95,
+      "old": "\\section*{5（续）\\quad Seidenberg 型定理}",
+      "new": "",
+      "reason": "Heading/statement adaptation; retains original item numbers and V-H anchors; continuation headings are not new sections."
+    },
+    {
+      "batch": 96,
+      "old": "本批只登记页末标题，不将划销标题计作另一节，不声称已经译校第7.1条。",
+      "new": "这里只登记页末标题，不将划销标题计作另一节；第7.1条接在下文。",
+      "reason": "Remove obsolete partial progress claim while preserving the deleted title."
+    },
+    {
+      "batch": 96,
+      "old": "\\section*{6\\quad 任意超平面截面的连通性}",
+      "new": "\\egasection{§6\\quad 任意超平面截面的连通性}",
+      "reason": "Heading/statement adaptation; retains original item numbers and V-H anchors; continuation headings are not new sections."
+    },
+    {
+      "batch": 96,
+      "old": "\\paragraph{命题 6.1.}",
+      "new": "\\egas{6.1}{命题}",
+      "reason": "Heading/statement adaptation; retains original item numbers and V-H anchors; continuation headings are not new sections."
+    },
+    {
+      "batch": 97,
+      "old": "\\section*{法文划销旧稿：不并入正文}",
+      "new": "\\section*{法文划销旧稿的校记（非定稿）}",
+      "reason": "Keep deleted draft evidence in reading order with an explicit non-final status."
+    },
+    {
+      "batch": 97,
+      "old": "法28起笔是另一个未删的关于4.2与4.3的补记，留待下批。",
+      "new": "法28起笔是另一个未删的关于4.2与4.3的补记，接在下文。",
+      "reason": "Replace obsolete next-batch instruction."
+    },
+    {
+      "batch": 97,
+      "old": "\\section*{7\\quad 应用于构造指定类型的超平面截面或多截面}",
+      "new": "\\egasection{§7\\quad 应用于构造指定类型的超平面截面或多截面}",
+      "reason": "Heading/statement adaptation; retains original item numbers and V-H anchors; continuation headings are not new sections."
+    },
+    {
+      "batch": 97,
+      "old": "\\paragraph{7.1.}",
+      "new": "\\egap{7.1}",
+      "reason": "Heading/statement adaptation; retains original item numbers and V-H anchors; continuation headings are not new sections."
+    },
+    {
+      "batch": 98,
+      "old": "对4.3中逐点定义且能应用第5节开性判据的(i)至(iv)",
+      "new": "\\par\\noindent\\textit{译校范围说明（非原文）。}对4.3中逐点定义且能应用第5节开性判据的(i)至(iv)",
+      "reason": "Distinguish the translator scope analysis from the manuscript statement of 7.3."
+    },
+    {
+      "batch": 98,
+      "old": "下一条命题7.4不属于本批。",
+      "new": "下接（7.4）的译校采用版本与原稿范围说明。",
+      "reason": "Remove obsolete batch boundary instruction."
+    },
+    {
+      "batch": 98,
+      "old": "\\section*{7.1 末尾的补记：允许一部分坏点}",
+      "new": "\\par\\medskip\\noindent\\textbf{（7.1）末尾的作者补记：允许一部分坏点。}",
+      "reason": "Heading/statement adaptation; retains original item numbers and V-H anchors; continuation headings are not new sections."
+    },
+    {
+      "batch": 98,
+      "old": "\\section*{命题7.2：模层版本}",
+      "new": "\\egas{7.2}{命题（模层版本）}",
+      "reason": "Heading/statement adaptation; retains original item numbers and V-H anchors; continuation headings are not new sections."
+    },
+    {
+      "batch": 98,
+      "old": "\\section*{命题7.3：概形版本及其范围}",
+      "new": "\\egas{7.3}{命题（概形版本及其范围）}",
+      "reason": "Heading/statement adaptation; retains original item numbers and V-H anchors; continuation headings are not new sections."
+    },
+    {
+      "batch": 99,
+      "old": "下文另给出有明确附加假设的版本。",
+      "new": "正文（7.4）采用另有明确附加假设的译校版本。",
+      "reason": "Update the direction of the reference after moving the adopted projective version into the main body."
+    },
+    {
+      "batch": 99,
+      "old": "假定 $g$ 射影、平坦、有限表示，$X_s$ 非空且纯维 $n$，并假定 $X_s$ 的非光滑轨迹维数小于 $n$。",
+      "new": "假定 $g:X\\to S$ 射影、平坦、有限表示，取 $s\\in S$，并令 $n=\\dim X_s$。再假定 $X_s$ 非空且纯维 $n$，且 $X_s$ 的非光滑轨迹维数小于 $n$。",
+      "reason": "Restore g, s, and n definitions after moving the general manuscript statement to the report; no change to the adopted hypotheses."
+    },
+    {
+      "batch": 99,
+      "old": "作者接着提到，若只固有、光滑而不射影，同样结论可能失败；并提出可从非有限的 étale 态射寻找拟射影情形下的反例。",
+      "new": "作者接着声称，可以给出固有、光滑但非射影而使同样结论失败的例子；他还说，一般不能把射影假设减弱为拟射影假设，并提出取非有限的 étale 态射作为反例的方向。",
+      "reason": "French p29 and English p21 both assert examples can be given; preserve the author claim without asserting an actual construction was supplied."
+    },
+    {
+      "batch": 99,
+      "old": "\\section*{7.5\\quad 关于射影性的备注}",
+      "new": "\\egas{7.5}{备注（关于射影性）}",
+      "reason": "Heading/statement adaptation; retains original item numbers and V-H anchors; continuation headings are not new sections."
+    }
+  ],
+  "old_annotations": [
+    {
+      "ordinal": 1,
+      "source": "text/v5_01_02.tex",
+      "source_sha256": "04ce46d251c3ad6ea58b1aedce0c14e0fea3c077f4e3b059f21ec5b34f48b2a6",
+      "line": 57,
+      "item": "§1／节首",
+      "macro": "ednote",
+      "old_id": "",
+      "text_sha256": "9e145160b12d3d9e6502c488d102c7c2011b20b806292db2d1bf9b9d64a2f485",
+      "text": "这里使用 EGA I 新版的记号；第19段指 EGA IV。",
+      "destination": "reports/v18_early_notes.tex / D18-OLD",
+      "treatment": "Verbatim historical note, not asserted as current status."
+    },
+    {
+      "ordinal": 2,
+      "source": "text/v5_01_02.tex",
+      "source_sha256": "04ce46d251c3ad6ea58b1aedce0c14e0fea3c077f4e3b059f21ec5b34f48b2a6",
+      "line": 58,
+      "item": "§1／节首",
+      "macro": "ednote",
+      "old_id": "",
+      "text_sha256": "41b474d26a4a005d346b5bd3814a953a29d0b069832019c031eae430a4e92736",
+      "text": "比较 Mumford 的 \\textit{Lectures on Curves on an Algebraic Surface}。",
+      "destination": "reports/v18_early_notes.tex / D18-OLD",
+      "treatment": "Verbatim historical note, not asserted as current status."
+    },
+    {
+      "ordinal": 3,
+      "source": "text/v5_01_02.tex",
+      "source_sha256": "04ce46d251c3ad6ea58b1aedce0c14e0fea3c077f4e3b059f21ec5b34f48b2a6",
+      "line": 58,
+      "item": "§1／节首",
+      "macro": "cmt",
+      "old_id": "P03",
+      "text_sha256": "dd9bd80d215cad682f2ebd2ad6111a4fd4ca04c03072e2419cecec470e774241",
+      "text": "底本此处在一般底预概形 $S$ 上使用了未定义的下标 $k$，对称幂的对偶位置和秩的退化情形也需核对。这段是后文拟证明的宣告，不能仅据此视为已完成证明。本文按所上传英文稿保留表达。",
+      "destination": "reports/v18_early_notes.tex / D18-OLD",
+      "treatment": "Verbatim historical note, not asserted as current status."
+    },
+    {
+      "ordinal": 4,
+      "source": "text/v5_01_02.tex",
+      "source_sha256": "04ce46d251c3ad6ea58b1aedce0c14e0fea3c077f4e3b059f21ec5b34f48b2a6",
+      "line": 70,
+      "item": "§1／节首",
+      "macro": "ednote",
+      "old_id": "",
+      "text_sha256": "f3ba20003fc0be8d369386e83482529a2ea2ba4fa536d38e2dc65ea40ff5e8f5",
+      "text": "或者应当是“在 $S$ 上有限型”，我不能确定。",
+      "destination": "reports/v18_early_notes.tex / D18-OLD",
+      "treatment": "Verbatim historical note, not asserted as current status."
+    },
+    {
+      "ordinal": 5,
+      "source": "text/v5_01_02.tex",
+      "source_sha256": "04ce46d251c3ad6ea58b1aedce0c14e0fea3c077f4e3b059f21ec5b34f48b2a6",
+      "line": 82,
+      "item": "§1／节首",
+      "macro": "ednote",
+      "old_id": "",
+      "text_sha256": "a535fea84b29e89c35ca6115c4412e7807c9a963609ad8cd883949d9c3e7cc96",
+      "text": "询问 A. G.：这里的模是否始终指凝聚或拟凝聚模层。",
+      "destination": "reports/v18_early_notes.tex / D18-OLD",
+      "treatment": "Verbatim historical note, not asserted as current status."
+    },
+    {
+      "ordinal": 6,
+      "source": "text/v5_01_02.tex",
+      "source_sha256": "04ce46d251c3ad6ea58b1aedce0c14e0fea3c077f4e3b059f21ec5b34f48b2a6",
+      "line": 83,
+      "item": "§1／节首",
+      "macro": "cmt",
+      "old_id": "T04",
+      "text_sha256": "76ff079ae1aab4cd45e49c231cc8326f0f579470b401b6af5253f08bf5495e39",
+      "text": "这里 $\\G$ 应当定义在 $Y=X\\times_PH$ 上，而非一般没有典范态射到 $X$ 的 $H$ 上。下面的图也把 $\\G$ 标在 $Y$ 上，提供了同一底本内部的更正依据。",
+      "destination": "reports/v18_early_notes.tex / D18-OLD",
+      "treatment": "Verbatim historical note, not asserted as current status."
+    },
+    {
+      "ordinal": 7,
+      "source": "text/v5_01_02.tex",
+      "source_sha256": "04ce46d251c3ad6ea58b1aedce0c14e0fea3c077f4e3b059f21ec5b34f48b2a6",
+      "line": 103,
+      "item": "2.1",
+      "macro": "ednote",
+      "old_id": "",
+      "text_sha256": "d3e5e5ba236f546ce3f41893aa8bdd850e7233fa4a309fe30f13115210d560b7",
+      "text": "向 Grothendieck 询问：例如第一节中带下划线的大写字母的含义和作用是什么？",
+      "destination": "reports/v18_early_notes.tex / D18-OLD",
+      "treatment": "Verbatim historical note, not asserted as current status."
+    },
+    {
+      "ordinal": 8,
+      "source": "text/v5_01_02.tex",
+      "source_sha256": "04ce46d251c3ad6ea58b1aedce0c14e0fea3c077f4e3b059f21ec5b34f48b2a6",
+      "line": 124,
+      "item": "2.4",
+      "macro": "cmt",
+      "old_id": "E03",
+      "text_sha256": "192ce9bbe3b6895c9acbb767a8575c3cd1033ee31352bb28fd5a1aba65df6162",
+      "text": "后一断言按现有假设不成立。可以给 $Z$ 添加一个与它不相交的闭点而不改变泛截面。详见E03；若再假设 $Z'$ 也不可约，才能用前一断言的对称应用得到所写等号判据。",
+      "destination": "reports/v18_early_notes.tex / D18-OLD",
+      "treatment": "Verbatim historical note, not asserted as current status."
+    },
+    {
+      "ordinal": 9,
+      "source": "text/v5_01_02.tex",
+      "source_sha256": "04ce46d251c3ad6ea58b1aedce0c14e0fea3c077f4e3b059f21ec5b34f48b2a6",
+      "line": 134,
+      "item": "2.5",
+      "macro": "cmt",
+      "old_id": "记号",
+      "text_sha256": "dc6326dca1ec9fb09fe113c22fd65cb02949847bc2d24de4db785606640bd120",
+      "text": "此句底本省略了 $\\eta$。依上下文应指 $Y_{i\\eta}$，不能误读为普遍关联空间中位于 $X_i$ 上的整族。",
+      "destination": "reports/v18_early_notes.tex / D18-OLD",
+      "treatment": "Verbatim historical note, not asserted as current status."
+    },
+    {
+      "ordinal": 10,
+      "source": "text/v5_01_02.tex",
+      "source_sha256": "04ce46d251c3ad6ea58b1aedce0c14e0fea3c077f4e3b059f21ec5b34f48b2a6",
+      "line": 142,
+      "item": "2.6",
+      "macro": "ednote",
+      "old_id": "",
+      "text_sha256": "98baf086a36a7ce5cd622d84bb6b2a39a443c3edde65390cac804babf61ad475",
+      "text": "法文为“ou que”；我认为应当译为“where”。",
+      "destination": "reports/v18_early_notes.tex / D18-OLD",
+      "treatment": "Verbatim historical note, not asserted as current status."
+    },
+    {
+      "ordinal": 11,
+      "source": "text/v5_01_02.tex",
+      "source_sha256": "04ce46d251c3ad6ea58b1aedce0c14e0fea3c077f4e3b059f21ec5b34f48b2a6",
+      "line": 170,
+      "item": "2.8",
+      "macro": "ednote",
+      "old_id": "",
+      "text_sha256": "52ff30404f09b07209a53e7f52ba0da0c6c2714208167900313870b07f14e7ec",
+      "text": "澄清这一参考：是 EGA IV 吗？",
+      "destination": "reports/v18_early_notes.tex / D18-OLD",
+      "treatment": "Verbatim historical note, not asserted as current status."
+    },
+    {
+      "ordinal": 12,
+      "source": "text/v5_01_02.tex",
+      "source_sha256": "04ce46d251c3ad6ea58b1aedce0c14e0fea3c077f4e3b059f21ec5b34f48b2a6",
+      "line": 171,
+      "item": "2.8",
+      "macro": "cmt",
+      "old_id": "T04",
+      "text_sha256": "7f74ebd7b5f6a41eabf9dd6f07ae0d38e44d2f6983a54fb3bf9a51ce6c0b7ca2",
+      "text": "要推出所写局部环同态正则，此处应援引刚在（2.7）讨论的 $Y_\\eta\\to X$；底本把靶写为 $Y$，需核对并区分两条态射。",
+      "destination": "reports/v18_early_notes.tex / D18-OLD",
+      "treatment": "Verbatim historical note, not asserted as current status."
+    },
+    {
+      "ordinal": 13,
+      "source": "text/v5_01_02.tex",
+      "source_sha256": "04ce46d251c3ad6ea58b1aedce0c14e0fea3c077f4e3b059f21ec5b34f48b2a6",
+      "line": 176,
+      "item": "2.9",
+      "macro": "cmt",
+      "old_id": "T05",
+      "text_sha256": "066d071a626ba0e58895c2066e89b7865bff2e47de7990f5974e932193117b39",
+      "text": "“有限”包括空集，而按第0章约定 $\\dim\\varnothing=-\\infty$；若要包含无坏点的情形，应写维数 $\\leq0$，或单独说明 $Z$ 为空的情况。",
+      "destination": "reports/v18_early_notes.tex / D18-OLD",
+      "treatment": "Verbatim historical note, not asserted as current status."
+    },
+    {
+      "ordinal": 14,
+      "source": "text/v5_01_02.tex",
+      "source_sha256": "04ce46d251c3ad6ea58b1aedce0c14e0fea3c077f4e3b059f21ec5b34f48b2a6",
+      "line": 182,
+      "item": "2.10",
+      "macro": "cmt",
+      "old_id": "P01",
+      "text_sha256": "23602837bf0bd95936af2969c1adfc37bb9f2b678c1a47bfb2df2b3233f38b19",
+      "text": "英文底本在此只有这一句，没有完整陈述或证明。本译稿不补造原文。",
+      "destination": "reports/v18_early_notes.tex / D18-OLD",
+      "treatment": "Verbatim historical note, not asserted as current status."
+    },
+    {
+      "ordinal": 15,
+      "source": "text/v5_01_02.tex",
+      "source_sha256": "04ce46d251c3ad6ea58b1aedce0c14e0fea3c077f4e3b059f21ec5b34f48b2a6",
+      "line": 185,
+      "item": "2.11",
+      "macro": "cmt",
+      "old_id": "T05",
+      "text_sha256": "d1d7de7fdf309c7e649ee3ee419a31474ff3430add796a2a54f9ee341c88029a",
+      "text": "最后的等号仍需像（2.9）一样处理空集。底本中还将一次 $R_k$ 排成了 $E_k$。",
+      "destination": "reports/v18_early_notes.tex / D18-OLD",
+      "treatment": "Verbatim historical note, not asserted as current status."
+    },
+    {
+      "ordinal": 16,
+      "source": "text/v5_01_02.tex",
+      "source_sha256": "04ce46d251c3ad6ea58b1aedce0c14e0fea3c077f4e3b059f21ec5b34f48b2a6",
+      "line": 201,
+      "item": "2.12",
+      "macro": "cmt",
+      "old_id": "G01",
+      "text_sha256": "76d52635251d4e5f4f86075a172edbc110ede7482093c1422526e865079daa6a",
+      "text": "非分歧态射不自动在 Zariski 局部成为浸入；此处还需适当的 étale 局部化或另作论证。详见G01。",
+      "destination": "reports/v18_early_notes.tex / D18-OLD",
+      "treatment": "Verbatim historical note, not asserted as current status."
+    },
+    {
+      "ordinal": 17,
+      "source": "text/v5_01_02.tex",
+      "source_sha256": "04ce46d251c3ad6ea58b1aedce0c14e0fea3c077f4e3b059f21ec5b34f48b2a6",
+      "line": 214,
+      "item": "2.12",
+      "macro": "cmt",
+      "old_id": "T06",
+      "text_sha256": "580213c4556bd2fe3ac2c7e814854961988e9f2809746516a06efe51f0ce0d05",
+      "text": "底本在商的求和范围写到 $n$，而已列出的方程只有 $f_1,\\ldots,f_p$；此外，商的秩为 $n-p$，非零对应 $p<n$，不是 $p\\leq n$。",
+      "destination": "reports/v18_early_notes.tex / D18-OLD",
+      "treatment": "Verbatim historical note, not asserted as current status."
+    },
+    {
+      "ordinal": 18,
+      "source": "text/v5_01_02.tex",
+      "source_sha256": "04ce46d251c3ad6ea58b1aedce0c14e0fea3c077f4e3b059f21ec5b34f48b2a6",
+      "line": 215,
+      "item": "2.12",
+      "macro": "cmt",
+      "old_id": "E04",
+      "text_sha256": "063c359ae81f3d604243eb7e3e1488f3a4f6674da7f55936e2a5301ee02738f4",
+      "text": "这条辅助断言为假：在 $\\mathbf A^1_k$ 的平凡线丛上取生成元 $1,t$，$S_1+S_2t$ 在 $t=-S_1/S_2$ 处为零。此反例否定这一步，不否定定理本身。详见E04及G01。",
+      "destination": "reports/v18_early_notes.tex / D18-OLD",
+      "treatment": "Verbatim historical note, not asserted as current status."
+    },
+    {
+      "ordinal": 19,
+      "source": "text/v5_01_02.tex",
+      "source_sha256": "04ce46d251c3ad6ea58b1aedce0c14e0fea3c077f4e3b059f21ec5b34f48b2a6",
+      "line": 222,
+      "item": "2.13",
+      "macro": "cmt",
+      "old_id": "假设继承",
+      "text_sha256": "b03ba1926ebecc282e9e0a6f7fea0ab4dd1895bf921c43f77803283e064790c7",
+      "text": "这里继承（2.12）的非分歧假设；非分歧有限型态射拟有限，因此有限的 $f(Z)$ 与有限的 $Z$ 在此可联系起来。不能把这一推论脱离其前提独立引用。",
+      "destination": "reports/v18_early_notes.tex / D18-OLD",
+      "treatment": "Verbatim historical note, not asserted as current status."
+    },
+    {
+      "ordinal": 20,
+      "source": "text/v5_01_02.tex",
+      "source_sha256": "04ce46d251c3ad6ea58b1aedce0c14e0fea3c077f4e3b059f21ec5b34f48b2a6",
+      "line": 233,
+      "item": "2.14",
+      "macro": "cmt",
+      "old_id": "T07",
+      "text_sha256": "4bec0d3a60a61c4d021497a74f92ce54e631b9511fcc2c7aa289f7a657d9e7fb",
+      "text": "右端底域应核为 $k(\\eta)$，不是 $k(y)$。局部环有到剩余域 $k(y)$ 的商映射，却一般没有相反方向的典范系数域嵌入；因而底本右端甚至没有给出所需的代数结构。",
+      "destination": "reports/v18_early_notes.tex / D18-OLD",
+      "treatment": "Verbatim historical note, not asserted as current status."
+    },
+    {
+      "ordinal": 21,
+      "source": "text/v5_01_02.tex",
+      "source_sha256": "04ce46d251c3ad6ea58b1aedce0c14e0fea3c077f4e3b059f21ec5b34f48b2a6",
+      "line": 238,
+      "item": "2.14",
+      "macro": "ednote",
+      "old_id": "",
+      "text_sha256": "b59c1dde7c54c43caa7bb64d0fd5419309fe7aa429091bd884ed54afdde078d9",
+      "text": "旁注：“$X$ 非分歧，或 $k$ 的特征为0。”〔这里按与上下文相符的意义，应理解为态射 $f$ 非分歧。〕",
+      "destination": "reports/v18_early_notes.tex / D18-OLD",
+      "treatment": "Verbatim historical note, not asserted as current status."
+    },
+    {
+      "ordinal": 22,
+      "source": "text/v5_01_02.tex",
+      "source_sha256": "04ce46d251c3ad6ea58b1aedce0c14e0fea3c077f4e3b059f21ec5b34f48b2a6",
+      "line": 244,
+      "item": "2.15",
+      "macro": "cmt",
+      "old_id": "P04",
+      "text_sha256": "10a5f9cc620998fcab36e8fc010bc9b0192d8eb0dad3332493b0e2d352f947d3",
+      "text": "本句的最后一项左侧只写“非正规”，右侧却写“几何正规”，应核对是否漏掉“几何”；又若采用脚注允许的“特征0而 $f$ 任意”的版本，不能把“$f(Z)$ 有限”不加条件地换成“$Z$ 有限”。详见E05及P04。",
+      "destination": "reports/v18_early_notes.tex / D18-OLD",
+      "treatment": "Verbatim historical note, not asserted as current status."
+    },
+    {
+      "ordinal": 23,
+      "source": "text/v5_01_02.tex",
+      "source_sha256": "04ce46d251c3ad6ea58b1aedce0c14e0fea3c077f4e3b059f21ec5b34f48b2a6",
+      "line": 249,
+      "item": "2.16",
+      "macro": "cmt",
+      "old_id": "用语",
+      "text_sha256": "a05fa4a9e5e92dc16a8dbcd42c8318e019117b8b020a1b46d3e29b7f8316a8fb",
+      "text": "底本写“should not be immersed”；在关联素循环语境中，这里应理解为“不是嵌入分支”，不是态射的浸入性质。由于未核对法文手稿，此处明确标示这一译校理解。",
+      "destination": "reports/v18_early_notes.tex / D18-OLD",
+      "treatment": "Verbatim historical note, not asserted as current status."
+    },
+    {
+      "ordinal": 24,
+      "source": "text/v5_01_02.tex",
+      "source_sha256": "04ce46d251c3ad6ea58b1aedce0c14e0fea3c077f4e3b059f21ec5b34f48b2a6",
+      "line": 252,
+      "item": "2.16",
+      "macro": "ednote",
+      "old_id": "",
+      "text_sha256": "c577c622eef08b90d06adc6cd6723c2111fb67ee2c5805abce8fe3a197219895",
+      "text": "无法理解。",
+      "destination": "reports/v18_early_notes.tex / D18-OLD",
+      "treatment": "Verbatim historical note, not asserted as current status."
+    },
+    {
+      "ordinal": 25,
+      "source": "text/v5_01_02.tex",
+      "source_sha256": "04ce46d251c3ad6ea58b1aedce0c14e0fea3c077f4e3b059f21ec5b34f48b2a6",
+      "line": 252,
+      "item": "2.16",
+      "macro": "cmt",
+      "old_id": "P01",
+      "text_sha256": "0ff5189d2bee776e390c68a47e246d24392d628d666bf8395d57d60cbaad861c",
+      "text": "此句在所上传英译中语法和数学衔接均未完整；这里不擅自补成一个有效的下降论证。",
+      "destination": "reports/v18_early_notes.tex / D18-OLD",
+      "treatment": "Verbatim historical note, not asserted as current status."
+    },
+    {
+      "ordinal": 26,
+      "source": "text/v5_03_06.tex",
+      "source_sha256": "3f5cb516a86e30e15567b903a664cc9e5c5245d72d39c132b467e2aef752f040",
+      "line": 15,
+      "item": "3.1",
+      "macro": "cmt",
+      "old_id": "B2-P01",
+      "text_sha256": "6d0d6e54f6d05af0d77552fed4766d43306663694f74eb8bbe31a27c6329863e",
+      "text": "定理只假设几何不可约，没有假设约化。这里的“函数域”应先在约化不可约预概形 $X_{\\mathrm{red}}$ 上解释，或使用泛点的剩余域。这样补足不改变所研究的几何不可约性；不是把原假设偷偷加强为几何整。",
+      "destination": "reports/v18_early_notes.tex / D18-OLD",
+      "treatment": "Verbatim historical note, not asserted as current status."
+    },
+    {
+      "ordinal": 27,
+      "source": "text/v5_03_06.tex",
+      "source_sha256": "3f5cb516a86e30e15567b903a664cc9e5c5245d72d39c132b467e2aef752f040",
+      "line": 17,
+      "item": "3.1",
+      "macro": "ednote",
+      "old_id": "",
+      "text_sha256": "1fc3e0253a82879556e6ad75a4a50fc663bfbf77242dc9067b03715c80ebe1ad",
+      "text": "大概应是把 $S_i$ 映到它在 $L$ 中的等价类 $[S_i]$。",
+      "destination": "reports/v18_early_notes.tex / D18-OLD",
+      "treatment": "Verbatim historical note, not asserted as current status."
+    },
+    {
+      "ordinal": 28,
+      "source": "text/v5_03_06.tex",
+      "source_sha256": "3f5cb516a86e30e15567b903a664cc9e5c5245d72d39c132b467e2aef752f040",
+      "line": 33,
+      "item": "3.1.1",
+      "macro": "ednote",
+      "old_id": "",
+      "text_sha256": "73b055e7a1f6f7e7dcc4f53d2cc79b12427bcb3885ee524a62930af18d1f45be",
+      "text": "primary extension 大概表示较小的域在较大的域中代数闭，或者准代数闭。参见 Jouanolou，定理3.6。",
+      "destination": "reports/v18_early_notes.tex / D18-OLD",
+      "treatment": "Verbatim historical note, not asserted as current status."
+    },
+    {
+      "ordinal": 29,
+      "source": "text/v5_03_06.tex",
+      "source_sha256": "3f5cb516a86e30e15567b903a664cc9e5c5245d72d39c132b467e2aef752f040",
+      "line": 34,
+      "item": "3.1.1",
+      "macro": "cmt",
+      "old_id": "B2-H07",
+      "text_sha256": "aaacf6799ad521aec080e86b3e650db7f008fa8ee98899f4e6ab99dfb3ca87ad",
+      "text": "这里保留英译编者的猜测，但它不能替代定义。所上传 EGA IV 第二部分（4.3.1），PDF第55页，明确说：$L/k$ 为准素扩张，当且仅当 $L$ 内包含的 $k$ 的最大可分代数扩张就是 $k$ 本身。它不要求一切代数元素都已在 $k$ 中；非平凡纯不可分扩张就说明二者不同。",
+      "destination": "reports/v18_early_notes.tex / D18-OLD",
+      "treatment": "Verbatim historical note, not asserted as current status."
+    },
+    {
+      "ordinal": 30,
+      "source": "text/v5_03_06.tex",
+      "source_sha256": "3f5cb516a86e30e15567b903a664cc9e5c5245d72d39c132b467e2aef752f040",
+      "line": 37,
+      "item": "3.1.1",
+      "macro": "cmt",
+      "old_id": "B2-P02",
+      "text_sha256": "baffd267bc4cd8ac1ba387b45f32910c1ae26956426decc68cbe455498a7e625",
+      "text": "这句话正是上传笔记的内容；此处没有引理的证明。故（3.1）在本载体内只是归结到一个外部引理，不能宣称本节已经给出了自足的完整证明。这里不补造原文未写的证明。",
+      "destination": "reports/v18_early_notes.tex / D18-OLD",
+      "treatment": "Verbatim historical note, not asserted as current status."
+    },
+    {
+      "ordinal": 31,
+      "source": "text/v5_03_06.tex",
+      "source_sha256": "3f5cb516a86e30e15567b903a664cc9e5c5245d72d39c132b467e2aef752f040",
+      "line": 48,
+      "item": "3.3",
+      "macro": "ednote",
+      "old_id": "",
+      "text_sha256": "1e1600d75323c7c2a17921b3cec55ff213c477cb312aeb5b1378fef12883555d",
+      "text": "询问 A. G.。",
+      "destination": "reports/v18_early_notes.tex / D18-OLD",
+      "treatment": "Verbatim historical note, not asserted as current status."
+    },
+    {
+      "ordinal": 32,
+      "source": "text/v5_03_06.tex",
+      "source_sha256": "3f5cb516a86e30e15567b903a664cc9e5c5245d72d39c132b467e2aef752f040",
+      "line": 51,
+      "item": "3.3",
+      "macro": "cmt",
+      "old_id": "B2-T06",
+      "text_sha256": "7d9411e2679a809de6e534afe53445edea22b24302f58853f0a34bcc26c8e0f0",
+      "text": "本段英译稿把链的首项写成“$X_0$ and $X'$”，又在末句写 $Y_\\eta=X_\\eta$。这里分别按同句定义明确排为 $X_0=X'$ 和 $Y_\\eta=\\bigcup_iX_{i\\eta}$，记录这一记号整理，不将其另算为定理反例。",
+      "destination": "reports/v18_early_notes.tex / D18-OLD",
+      "treatment": "Verbatim historical note, not asserted as current status."
+    },
+    {
+      "ordinal": 33,
+      "source": "text/v5_03_06.tex",
+      "source_sha256": "3f5cb516a86e30e15567b903a664cc9e5c5245d72d39c132b467e2aef752f040",
+      "line": 60,
+      "item": "3.3",
+      "macro": "ednote",
+      "old_id": "",
+      "text_sha256": "e91774ca1cca41cf40981c511588b933523b62e1203c909cc14976d23701fe9a",
+      "text": "指 EGA IV。",
+      "destination": "reports/v18_early_notes.tex / D18-OLD",
+      "treatment": "Verbatim historical note, not asserted as current status."
+    },
+    {
+      "ordinal": 34,
+      "source": "text/v5_03_06.tex",
+      "source_sha256": "3f5cb516a86e30e15567b903a664cc9e5c5245d72d39c132b467e2aef752f040",
+      "line": 62,
+      "item": "3.3",
+      "macro": "cmt",
+      "old_id": "B2-T07",
+      "text_sha256": "20291b2cd1ed5831eafdc6439fce79254ef880f46a3427abe0d057a7ee2d582b",
+      "text": "此处前后使用的载体、变动指标不一致。按§1，$F$ 在 $X$ 上，$G$ 在 $Y$ 上；而讨论随 $\\xi$ 变化的纤维时，应写 $P(Y_\\xi,G_\\xi,k(\\xi))$。保持底本措辞可看清这一问题，不能据此把一个固定泛纤维性质直接当成各纤维性质。",
+      "destination": "reports/v18_early_notes.tex / D18-OLD",
+      "treatment": "Verbatim historical note, not asserted as current status."
+    },
+    {
+      "ordinal": 35,
+      "source": "text/v5_03_06.tex",
+      "source_sha256": "3f5cb516a86e30e15567b903a664cc9e5c5245d72d39c132b467e2aef752f040",
+      "line": 69,
+      "item": "4.2",
+      "macro": "cmt",
+      "old_id": "B2-T07续",
+      "text_sha256": "120eb7d3e22cbd313ae638d87a5e415ee9ba7c9daa393534887a2480b4137ff5",
+      "text": "底本此处确实写 $G$，随后的(b)又写 $F$；这里仍标明此处原字母，后文按各自原文保留。原稿没有单独印出“4.1”条目标记，虽然以后用4.1指本节开头的讨论，译文不补造一个新的原编号。",
+      "destination": "reports/v18_early_notes.tex / D18-OLD",
+      "treatment": "Verbatim historical note, not asserted as current status."
+    },
+    {
+      "ordinal": 36,
+      "source": "text/v5_03_06.tex",
+      "source_sha256": "3f5cb516a86e30e15567b903a664cc9e5c5245d72d39c132b467e2aef752f040",
+      "line": 79,
+      "item": "4.2",
+      "macro": "cmt",
+      "old_id": "B2-T07续",
+      "text_sha256": "152403c1e2dee6558d714a481d6ac2542745a8fe7b399ea4142e767bd0cc26d9",
+      "text": "这里的参数应在 $P^\\vee$ 而不是 $P$ 中；(a)以及§1的参数空间定义已给出内部依据。",
+      "destination": "reports/v18_early_notes.tex / D18-OLD",
+      "treatment": "Verbatim historical note, not asserted as current status."
+    },
+    {
+      "ordinal": 37,
+      "source": "text/v5_03_06.tex",
+      "source_sha256": "3f5cb516a86e30e15567b903a664cc9e5c5245d72d39c132b467e2aef752f040",
+      "line": 96,
+      "item": "4.3",
+      "macro": "cmt",
+      "old_id": "B2-H08",
+      "text_sha256": "c5e8684bd3c961f5d4e1ecd8561781b1d6b00ca6986a43f66fc45a3b41c212c1",
+      "text": "本段英文使用 and，译文保留“并且”。前面（3.2）使用 or；把两个充分条件同时要求只是更强的假设，不能仅因其较强就断言这里的定理为假，也不应静默把 and 改成 or。",
+      "destination": "reports/v18_early_notes.tex / D18-OLD",
+      "treatment": "Verbatim historical note, not asserted as current status."
+    },
+    {
+      "ordinal": 38,
+      "source": "text/v5_03_06.tex",
+      "source_sha256": "3f5cb516a86e30e15567b903a664cc9e5c5245d72d39c132b467e2aef752f040",
+      "line": 104,
+      "item": "4.4",
+      "macro": "cmt",
+      "old_id": "B2-E02",
+      "text_sha256": "b91a9dbe63292770fb5e6503f485f58d85509a8aa99b4439d026b967893cdaa6",
+      "text": "底本此处还有 $f(X)$ 与 $f(X_i)$、$P$ 与 $P^\\vee$ 的记号错置；但即便把这两个记号整理成预期形式，一般态射下的连通性断言仍不成立。报告给出 $X=V(uv)\\subset\\mathbf A^4$、$f=[1:u+v:(u+v)w]$ 的具体反例：$X$ 满足 $(C_1)$，而泛截面不满足 $(C_0)$。",
+      "destination": "reports/v18_early_notes.tex / D18-OLD",
+      "treatment": "Verbatim historical note, not asserted as current status."
+    },
+    {
+      "ordinal": 39,
+      "source": "text/v5_03_06.tex",
+      "source_sha256": "3f5cb516a86e30e15567b903a664cc9e5c5245d72d39c132b467e2aef752f040",
+      "line": 106,
+      "item": "4.4",
+      "macro": "ednote",
+      "old_id": "",
+      "text_sha256": "a3eb3af655da7b4eda80c22cd7a67f0e9f2ece1ba0deeeee845431694c34174b",
+      "text": "AQT 是什么？询问 AG。",
+      "destination": "reports/v18_early_notes.tex / D18-OLD",
+      "treatment": "Verbatim historical note, not asserted as current status."
+    },
+    {
+      "ordinal": 40,
+      "source": "text/v5_03_06.tex",
+      "source_sha256": "3f5cb516a86e30e15567b903a664cc9e5c5245d72d39c132b467e2aef752f040",
+      "line": 108,
+      "item": "4.4",
+      "macro": "ednote",
+      "old_id": "",
+      "text_sha256": "c574e8eecf67fe4d9b24fd1225d3c9d6d8e18ba73665cbd7fe66065ebbc77803",
+      "text": "拉丁文；待翻译。",
+      "destination": "reports/v18_early_notes.tex / D18-OLD",
+      "treatment": "Verbatim historical note, not asserted as current status."
+    },
+    {
+      "ordinal": 41,
+      "source": "text/v5_03_06.tex",
+      "source_sha256": "3f5cb516a86e30e15567b903a664cc9e5c5245d72d39c132b467e2aef752f040",
+      "line": 109,
+      "item": "4.4",
+      "macro": "cmt",
+      "old_id": "B2-P03",
+      "text_sha256": "08845f3af33a8f540fbc9d470ed287d3fa0a6b5161a7bb651b8a34864ee52520",
+      "text": "所上传英文确实写“not valid as such if $f$ is quasi-finite”，这一句与随后“在一般情形应看像维数”的说明关系可疑，可能缺少否定或限制词；未见法文手稿，不能替作者裁定。拉丁语短句也保留原字，暂不强作可靠译释。明确反例针对一般非拟有限态射，不宣称它同时推翻拟有限版本。",
+      "destination": "reports/v18_early_notes.tex / D18-OLD",
+      "treatment": "Verbatim historical note, not asserted as current status."
+    },
+    {
+      "ordinal": 42,
+      "source": "text/v5_03_06.tex",
+      "source_sha256": "3f5cb516a86e30e15567b903a664cc9e5c5245d72d39c132b467e2aef752f040",
+      "line": 114,
+      "item": "5.1",
+      "macro": "ednote",
+      "old_id": "",
+      "text_sha256": "6ced7e261477118c23acdbebdd0b5f07d265404dd2a3ef2e07836e77896a9cdb",
+      "text": "须查明引用；很可能是 EGA IV。是的。",
+      "destination": "reports/v18_early_notes.tex / D18-OLD",
+      "treatment": "Verbatim historical note, not asserted as current status."
+    },
+    {
+      "ordinal": 43,
+      "source": "text/v5_03_06.tex",
+      "source_sha256": "3f5cb516a86e30e15567b903a664cc9e5c5245d72d39c132b467e2aef752f040",
+      "line": 116,
+      "item": "5.1",
+      "macro": "ednote",
+      "old_id": "",
+      "text_sha256": "dec466343de633a72a6a4ab462a258af800bd13a64d86432edefe1088cfff1bc",
+      "text": "旁注：因为 $Y$ 在 $X$ 上固有，而 $P^\\vee$ 在 $S$ 上分离。",
+      "destination": "reports/v18_early_notes.tex / D18-OLD",
+      "treatment": "Verbatim historical note, not asserted as current status."
+    },
+    {
+      "ordinal": 44,
+      "source": "text/v5_03_06.tex",
+      "source_sha256": "3f5cb516a86e30e15567b903a664cc9e5c5245d72d39c132b467e2aef752f040",
+      "line": 126,
+      "item": "5.2",
+      "macro": "cmt",
+      "old_id": "B2-T08",
+      "text_sha256": "b9164bb510ef0e7e672b2092598cb244ab4464c6dbea6111c049139960cdccb1",
+      "text": "这里应把 $\\OO_X(1)$ 先限制到 $X_s$，而扩张到的纤维是 $X_{k(\\xi)}$，不是右端所印的 $X_{k(s)}$。这是载体及底域的记号问题。",
+      "destination": "reports/v18_early_notes.tex / D18-OLD",
+      "treatment": "Verbatim historical note, not asserted as current status."
+    },
+    {
+      "ordinal": 45,
+      "source": "text/v5_03_06.tex",
+      "source_sha256": "3f5cb516a86e30e15567b903a664cc9e5c5245d72d39c132b467e2aef752f040",
+      "line": 134,
+      "item": "5.2",
+      "macro": "ednote",
+      "old_id": "",
+      "text_sha256": "e3f34224c2d6c7f6511fd69e267ca76b3c7407b46f3892d217bc8ee2b6685031",
+      "text": "我猜这里指 Mike Artin。——P. B.",
+      "destination": "reports/v18_early_notes.tex / D18-OLD",
+      "treatment": "Verbatim historical note, not asserted as current status."
+    },
+    {
+      "ordinal": 46,
+      "source": "text/v5_03_06.tex",
+      "source_sha256": "3f5cb516a86e30e15567b903a664cc9e5c5245d72d39c132b467e2aef752f040",
+      "line": 135,
+      "item": "5.2",
+      "macro": "cmt",
+      "old_id": "B2-T08续",
+      "text_sha256": "9487bf7bb203472d6c086b86acf9b88042d0d17e1bbcf41311a30f758fb4712b",
+      "text": "参数点所在的 $P$ 应为 $P^\\vee$，同段下一句已经再次使用后者。",
+      "destination": "reports/v18_early_notes.tex / D18-OLD",
+      "treatment": "Verbatim historical note, not asserted as current status."
+    },
+    {
+      "ordinal": 47,
+      "source": "text/v5_03_06.tex",
+      "source_sha256": "3f5cb516a86e30e15567b903a664cc9e5c5245d72d39c132b467e2aef752f040",
+      "line": 138,
+      "item": "5.2",
+      "macro": "ednote",
+      "old_id": "",
+      "text_sha256": "0912aef081e3c2109768a1cb16062a861f85b54433fc613d0587fd4d1edc6bc9",
+      "text": "底本此处有“??”，同态的另一张量因子缺失。",
+      "destination": "reports/v18_early_notes.tex / D18-OLD",
+      "treatment": "Verbatim historical note, not asserted as current status."
+    },
+    {
+      "ordinal": 48,
+      "source": "text/v5_03_06.tex",
+      "source_sha256": "3f5cb516a86e30e15567b903a664cc9e5c5245d72d39c132b467e2aef752f040",
+      "line": 140,
+      "item": "5.2",
+      "macro": "cmt",
+      "old_id": "B2-T08续",
+      "text_sha256": "dd3c2b7db1dc3b7e3f0c86fab09311e12096e8b68ac8b49866792d456310e270",
+      "text": "可在局部平凡化的是可逆模 $L$，不是任意的 $F$。例如 $F=\\OO_X^{\\oplus2}$ 一般不可能同构于 $\\OO_X$。将 $L$ 平凡化后，$\\phi$ 给出函数，以此函数在 $F$ 上的乘法是否单射来定义 $F$-正则。$\\phi^{-1}$ 在这里是诱导的对偶同态记号，并不表示一个处处存在的倒数函数。",
+      "destination": "reports/v18_early_notes.tex / D18-OLD",
+      "treatment": "Verbatim historical note, not asserted as current status."
+    },
+    {
+      "ordinal": 49,
+      "source": "text/v5_03_06.tex",
+      "source_sha256": "3f5cb516a86e30e15567b903a664cc9e5c5245d72d39c132b467e2aef752f040",
+      "line": 148,
+      "item": "5.3",
+      "macro": "cmt",
+      "old_id": "B2-T09",
+      "text_sha256": "67d6fbf262a3b201e9bb0127fd7c1a048c1f4905a9d1322ed36fd75f9f4cdc06",
+      "text": "底本在此写 $X_P$，但参数化的空间为 $X_{P^\\vee}$；(b)中要谈 $P^\\vee$ 在 $s$ 上的纤维，应有 $s\\in S$。此外 $G$ 原定义在 $Y$ 上，写 $G|_U$ 时应理解为限制到 $Y\\cap U$，或先沿闭浸入直接像延拓到 $X_{P^\\vee}$。",
+      "destination": "reports/v18_early_notes.tex / D18-OLD",
+      "treatment": "Verbatim historical note, not asserted as current status."
+    },
+    {
+      "ordinal": 50,
+      "source": "text/v5_03_06.tex",
+      "source_sha256": "3f5cb516a86e30e15567b903a664cc9e5c5245d72d39c132b467e2aef752f040",
+      "line": 150,
+      "item": "5.3",
+      "macro": "ednote",
+      "old_id": "",
+      "text_sha256": "eaf84caa5ce28c746f9cda84223d2c30b27a3bc7bcba7a380a5e1d0e8301fde2",
+      "text": "查明这一引文。指 EGA IV。",
+      "destination": "reports/v18_early_notes.tex / D18-OLD",
+      "treatment": "Verbatim historical note, not asserted as current status."
+    },
+    {
+      "ordinal": 51,
+      "source": "text/v5_03_06.tex",
+      "source_sha256": "3f5cb516a86e30e15567b903a664cc9e5c5245d72d39c132b467e2aef752f040",
+      "line": 152,
+      "item": "5.3",
+      "macro": "ednote",
+      "old_id": "",
+      "text_sha256": "f20ba496064fdf937e787029eaa0dacba9787da8e89afb8a901572cd49e978aa",
+      "text": "字迹不清；询问 AG 或自行辨认——大概是 $\\phi^{-1}$。",
+      "destination": "reports/v18_early_notes.tex / D18-OLD",
+      "treatment": "Verbatim historical note, not asserted as current status."
+    },
+    {
+      "ordinal": 52,
+      "source": "text/v5_03_06.tex",
+      "source_sha256": "3f5cb516a86e30e15567b903a664cc9e5c5245d72d39c132b467e2aef752f040",
+      "line": 155,
+      "item": "5.3",
+      "macro": "cmt",
+      "old_id": "B2-T10",
+      "text_sha256": "c53d22e1e82d97bcb8723ee1fabdda84efe787fe9d07c288bbf82229f3664d56",
+      "text": "上一句等号与下一句结论相反；这里应是 $Z_{i,k(\\eta)}\\cap Y\\ne Z_{i,k(\\eta)}$。等号意味着整个相伴循环被包含在零点集内，恰不能证明非零因子性。译文保留所上传英文的等号，并在此明示问题。",
+      "destination": "reports/v18_early_notes.tex / D18-OLD",
+      "treatment": "Verbatim historical note, not asserted as current status."
+    },
+    {
+      "ordinal": 53,
+      "source": "text/v5_03_06.tex",
+      "source_sha256": "3f5cb516a86e30e15567b903a664cc9e5c5245d72d39c132b467e2aef752f040",
+      "line": 163,
+      "item": "5.5",
+      "macro": "cmt",
+      "old_id": "B2-E03",
+      "text_sha256": "e82baf1efeacf39f7396bebdcaf56d19dbcf6ad3a9e2aeb780e9cfaf1a312e07",
+      "text": "按字面，“没有嵌入相伴循环”不推出任意 $\\xi\\in V$。取 $F=i_*\\OO_L$ 为 $\\mathbf P^2$ 中直线 $L$ 的结构层，选 $H_\\xi=L$，截面在 $F$ 上的乘法为零，因而不正则。合理的读法是把后半句作为 $\\xi\\in V$ 的充要条件，而不是从无嵌入循环自动推出它；详见报告。",
+      "destination": "reports/v18_early_notes.tex / D18-OLD",
+      "treatment": "Verbatim historical note, not asserted as current status."
+    },
+    {
+      "ordinal": 54,
+      "source": "text/v5_03_06.tex",
+      "source_sha256": "3f5cb516a86e30e15567b903a664cc9e5c5245d72d39c132b467e2aef752f040",
+      "line": 165,
+      "item": "5.5",
+      "macro": "cmt",
+      "old_id": "B2-E03续",
+      "text_sha256": "27903e22b925f62a161b7866c597c492187b4db601673228ec02c8c8546bd456",
+      "text": "这里使用模去正则元素的结论，仍须保留“截面正则”这一条件；不能只靠 Cohen--Macaulay 性就略去它。纤维下标 $s$ 与 $\\xi$ 也应按具体基变换区分。",
+      "destination": "reports/v18_early_notes.tex / D18-OLD",
+      "treatment": "Verbatim historical note, not asserted as current status."
+    },
+    {
+      "ordinal": 55,
+      "source": "text/v5_03_06.tex",
+      "source_sha256": "3f5cb516a86e30e15567b903a664cc9e5c5245d72d39c132b467e2aef752f040",
+      "line": 167,
+      "item": "5.5",
+      "macro": "ednote",
+      "old_id": "",
+      "text_sha256": "1886e3baafce7b1fac099984e7300a9eb76669eccd5785ea551bdf934b7dc999",
+      "text": "询问 AG 这些引文——大概是 EGA IV。12.1.4核对不上。",
+      "destination": "reports/v18_early_notes.tex / D18-OLD",
+      "treatment": "Verbatim historical note, not asserted as current status."
+    },
+    {
+      "ordinal": 56,
+      "source": "text/v5_03_06.tex",
+      "source_sha256": "3f5cb516a86e30e15567b903a664cc9e5c5245d72d39c132b467e2aef752f040",
+      "line": 173,
+      "item": "5.6",
+      "macro": "cmt",
+      "old_id": "B2-P04",
+      "text_sha256": "bfa4b76509c1bfbbd5d90e82410a1ab08962b0fff53f57bd8bfcb4a7e6a79e92",
+      "text": "英译编者已经明确说引文核对不上，所列性质未在这里实际展开；证明最后写 $F_{P^\\vee}|_U$，而结论涉及除子上的余核 $G$，也需与引用的原命题逐项对应。本次不把未确定的八项、四项性质凭常识补进正文。",
+      "destination": "reports/v18_early_notes.tex / D18-OLD",
+      "treatment": "Verbatim historical note, not asserted as current status."
+    },
+    {
+      "ordinal": 57,
+      "source": "text/v5_03_06.tex",
+      "source_sha256": "3f5cb516a86e30e15567b903a664cc9e5c5245d72d39c132b467e2aef752f040",
+      "line": 178,
+      "item": "5.7",
+      "macro": "cmt",
+      "old_id": "B2-P04续",
+      "text_sha256": "4106ba6d76bff83c603a71aacd9ee159d85e3d2a095657e8fd90bf9394540cfb",
+      "text": "“正则”的主语应为截面 $\\phi_\\xi$；谈该参数对应的纤维时应为 $Y_\\xi$。此处仍受（5.6）未明确列出性质清单的限制，未据这一句话作超出来源的普遍推广。",
+      "destination": "reports/v18_early_notes.tex / D18-OLD",
+      "treatment": "Verbatim historical note, not asserted as current status."
+    },
+    {
+      "ordinal": 58,
+      "source": "text/v5_03_06.tex",
+      "source_sha256": "3f5cb516a86e30e15567b903a664cc9e5c5245d72d39c132b467e2aef752f040",
+      "line": 180,
+      "item": "5.7",
+      "macro": "ednote",
+      "old_id": "",
+      "text_sha256": "655459d29ad89b2ab481638227473613e922881275ea2bc117d1c378b73f12c7",
+      "text": "或者意为“为稳妥起见”。",
+      "destination": "reports/v18_early_notes.tex / D18-OLD",
+      "treatment": "Verbatim historical note, not asserted as current status."
+    },
+    {
+      "ordinal": 59,
+      "source": "text/v5_03_06.tex",
+      "source_sha256": "3f5cb516a86e30e15567b903a664cc9e5c5245d72d39c132b467e2aef752f040",
+      "line": 187,
+      "item": "6.1",
+      "macro": "ednote",
+      "old_id": "",
+      "text_sha256": "159cd46d57b81cb5c9eebd721c01a44ac65d334761bc37b89c1b8cd98275a459",
+      "text": "这一处字迹不清。",
+      "destination": "reports/v18_early_notes.tex / D18-OLD",
+      "treatment": "Verbatim historical note, not asserted as current status."
+    },
+    {
+      "ordinal": 60,
+      "source": "text/v5_03_06.tex",
+      "source_sha256": "3f5cb516a86e30e15567b903a664cc9e5c5245d72d39c132b467e2aef752f040",
+      "line": 189,
+      "item": "6.1",
+      "macro": "cmt",
+      "old_id": "B2-H09",
+      "text_sha256": "9a09351f8be962fdae28a8195e65a20deda979ef616848f9fcad8920d3f86e63",
+      "text": "方括号中的固有性出自上传英译稿的补读，不能省去。报告给出删去它后特殊超平面截面不连通的例子；该例不是对保留固有性版本的反例。",
+      "destination": "reports/v18_early_notes.tex / D18-OLD",
+      "treatment": "Verbatim historical note, not asserted as current status."
+    },
+    {
+      "ordinal": 61,
+      "source": "text/v5_03_06.tex",
+      "source_sha256": "3f5cb516a86e30e15567b903a664cc9e5c5245d72d39c132b467e2aef752f040",
+      "line": 191,
+      "item": "6.1",
+      "macro": "ednote",
+      "old_id": "",
+      "text_sha256": "e91774ca1cca41cf40981c511588b933523b62e1203c909cc14976d23701fe9a",
+      "text": "指 EGA IV。",
+      "destination": "reports/v18_early_notes.tex / D18-OLD",
+      "treatment": "Verbatim historical note, not asserted as current status."
+    },
+    {
+      "ordinal": 62,
+      "source": "continuations/v_dot_early.tex",
+      "source_sha256": "74de97b880e50e2c1dadf3bb8f6f041be8c8b0ce47cb75396f2903e85111b0a3",
+      "line": 8,
+      "item": "7.1",
+      "macro": "transnote",
+      "old_id": "",
+      "text_sha256": "0c57985d86120e1ba998e98ff7e3a3dbebc612113824c40f616e6c58af61a4bc",
+      "text": "底本先将纤维中的点写为 $\\xi$，末尾却写为 $\\xi_0$，并且又以 $\\xi$ 表示截面。正文将纤维点统一为 $\\xi_0$，截面仍记为 $\\xi$。这是同句源靶所确定的记号校正。",
+      "destination": "reports/v18_early_notes.tex / D18-OLD",
+      "treatment": "Verbatim historical note, not asserted as current status."
+    },
+    {
+      "ordinal": 63,
+      "source": "continuations/v_dot_early.tex",
+      "source_sha256": "74de97b880e50e2c1dadf3bb8f6f041be8c8b0ce47cb75396f2903e85111b0a3",
+      "line": 11,
+      "item": "7.1",
+      "macro": "ednote",
+      "old_id": "",
+      "text_sha256": "cccb0ace95632ccf85aedf80bdcc6019f6ee7677c9c71226bf19908e892c4dbb",
+      "text": "法文为 \\textit{de proche en proche}。〔底本脚注26。〕",
+      "destination": "reports/v18_early_notes.tex / D18-OLD",
+      "treatment": "Verbatim historical note, not asserted as current status."
+    },
+    {
+      "ordinal": 64,
+      "source": "continuations/v_dot_early.tex",
+      "source_sha256": "74de97b880e50e2c1dadf3bb8f6f041be8c8b0ce47cb75396f2903e85111b0a3",
+      "line": 22,
+      "item": "7.1",
+      "macro": "transnote",
+      "old_id": "",
+      "text_sha256": "9673a608fd20c3e5a0360e195ab91fff03244b1bac116635262f3e26a362772a",
+      "text": "上式底本印作 $S_s^1$，上下文中的有限平展扩张始终为 $S'$，且所述对象是其在 $s$ 上的纤维，故正文订为 $S'_s$。该段回指（6.1）开头，而那里假设 $k$ 代数闭，此处却讨论 $k$ 有限；回指不一致仍待核，不擅自更改引用编号。原文又把参数空间的开子集与基底邻域均记为 $U$，正文用文字区分。",
+      "destination": "reports/v18_early_notes.tex / D18-OLD",
+      "treatment": "Verbatim historical note, not asserted as current status."
+    },
+    {
+      "ordinal": 65,
+      "source": "continuations/v_dot_early.tex",
+      "source_sha256": "74de97b880e50e2c1dadf3bb8f6f041be8c8b0ce47cb75396f2903e85111b0a3",
+      "line": 31,
+      "item": "7.2",
+      "macro": "footnote",
+      "old_id": "",
+      "text_sha256": "82effc4d81fcd8fec2fefe6f5b3d647d39347b999caac091f3067a830cf178ad",
+      "text": "Dot译校注：英文正文为 ``of finite presentation finite and flat over $S$''，其中第二个 ``finite'' 的语法关系不明。未据这个重复的词添加独立有限性假设。",
+      "destination": "reports/v18_early_notes.tex / D18-OLD",
+      "treatment": "Verbatim historical note, not asserted as current status."
+    },
+    {
+      "ordinal": 66,
+      "source": "continuations/v_dot_early.tex",
+      "source_sha256": "74de97b880e50e2c1dadf3bb8f6f041be8c8b0ce47cb75396f2903e85111b0a3",
+      "line": 33,
+      "item": "7.2",
+      "macro": "transnote",
+      "old_id": "",
+      "text_sha256": "a8044741d524a6e636917070611c35efd24e5a0b0992d38204b94ee6df191b56",
+      "text": "底本先后印作 $S\\in S$、“在 $E$ 中”、$x\\in U$、$Y_{\\xi,s}$、$G_{\\xi(s)}$ 和 $F_{\\xi,s}$，点变量和纤维指标不相容。正文按本段所述基底邻域及相应超平面截面，统一为 $s\\in S$、$U\\subset S$，并用 $t\\in U$ 遍历纤维；正则性针对 $X_t$ 上的 $F_t$。这里只修复对象和指标，不将前文未核实的性质推广一并视作已经审定。",
+      "destination": "reports/v18_early_notes.tex / D18-OLD",
+      "treatment": "Verbatim historical note, not asserted as current status."
+    },
+    {
+      "ordinal": 67,
+      "source": "continuations/v_dot_early.tex",
+      "source_sha256": "74de97b880e50e2c1dadf3bb8f6f041be8c8b0ce47cb75396f2903e85111b0a3",
+      "line": 45,
+      "item": "7.4",
+      "macro": "cmt",
+      "old_id": "D17-E01",
+      "text_sha256": "2e72c8b5d09346da692a096bee7d9cebdfc31c851fe58b915d0243273045d9ce",
+      "text": "取 $k=\\mathbf F_p(t)$，$L=k(t^{1/p})$，$X=\\Spec L$、$S=\\Spec k$。态射有限、平坦且固有，$n=0$，满足所印维数上界；但若在某非空有限平展 $S'$ 上有截面，则 $L$ 可嵌入一个有限可分 $k$-扩张，矛盾。这证明所印命题本身不成立。底本证明中“$n=0$ 时 $X$ 本身平展”的步骤也不成立，见报告中的双数例子。此项处理是译校决定，不表示作者正式撤销该条。",
+      "destination": "reports/v18_early_notes.tex / D18-OLD",
+      "treatment": "Verbatim historical note, not asserted as current status."
+    },
+    {
+      "ordinal": 68,
+      "source": "continuations/v_dot_early.tex",
+      "source_sha256": "74de97b880e50e2c1dadf3bb8f6f041be8c8b0ce47cb75396f2903e85111b0a3",
+      "line": 48,
+      "item": "7.5",
+      "macro": "ednote",
+      "old_id": "",
+      "text_sha256": "01f2132acd48e41aaf1fdd647df204e05be1ca6f5038a7995241c20d69619440",
+      "text": "字迹不清。〔底本脚注28。〕",
+      "destination": "reports/v18_early_notes.tex / D18-OLD",
+      "treatment": "Verbatim historical note, not asserted as current status."
+    },
+    {
+      "ordinal": 69,
+      "source": "continuations/v_dot_early.tex",
+      "source_sha256": "74de97b880e50e2c1dadf3bb8f6f041be8c8b0ce47cb75396f2903e85111b0a3",
+      "line": 49,
+      "item": "7.5",
+      "macro": "transnote",
+      "old_id": "",
+      "text_sha256": "3178e91fd0288ab263aebcf9950fb078d265aa2b2b2052f98771d75ae62f3965",
+      "text": "（7.4）只明写固有性，而（7.5）又强调非射影情形可以失败；这反映出草稿上下文或假设尚未定型。必须在确定“局部”“多截面”的精确意义及前文嵌入条件后才能整理成定理，不能把这些句子当作已完成的统一证明。",
+      "destination": "reports/v18_early_notes.tex / D18-OLD",
+      "treatment": "Verbatim historical note, not asserted as current status."
+    }
+  ],
+  "report": {
+    "path": "reports/v18_early_notes.tex",
+    "sha256": "bb75e9980a13d8ca4a5fc0af85aa0e0109369b32dc94fbe399cc223fda034e96",
+    "bytes": 45639
+  },
+  "old_annotation_count": 69,
+  "input_order": [
+    "continuations/v18_batch088.tex",
+    "continuations/v18_batch089.tex",
+    "continuations/v18_batch090.tex",
+    "continuations/v18_batch091.tex",
+    "continuations/v18_batch092.tex",
+    "continuations/v18_batch093.tex",
+    "continuations/v18_batch094.tex",
+    "continuations/v18_batch095.tex",
+    "continuations/v18_batch096.tex",
+    "continuations/v18_batch097.tex",
+    "continuations/v18_batch098.tex",
+    "continuations/v18_batch099.tex"
+  ],
+  "macro_scope": "Every body module and migrated batch report block is grouped. OO/FF/GG/PP/calP/dd/Div/depth/pr/coker are local definitions only.",
+  "untouched_old_sources": {
+    "text/v5_01_02.tex": "04ce46d251c3ad6ea58b1aedce0c14e0fea3c077f4e3b059f21ec5b34f48b2a6",
+    "text/v5_03_06.tex": "3f5cb516a86e30e15567b903a664cc9e5c5245d72d39c132b467e2aef752f040",
+    "continuations/v_dot_early.tex": "74de97b880e50e2c1dadf3bb8f6f041be8c8b0ce47cb75396f2903e85111b0a3"
+  },
+  "source_pdfs": {
+    "EGA5_francais.pdf": {
+      "path": "archive_20261121/03_sources/EGA5_francais.pdf",
+      "sha256": "24cf8204184b58b18a46e5f63ecc36d6e791b3c8c96a09daac93de96ebd8e830",
+      "bytes": 16097021
+    },
+    "EGAVaiello.pdf": {
+      "path": "archive_20261121/03_sources/EGAVaiello.pdf",
+      "sha256": "23a20ef32fd16a1bd623c0c08ac080d04fc94f248de12133b713a19d6b0330d9",
+      "bytes": 677332
+    }
+  }
+}

@@ -1,0 +1,328 @@
+{
+  "status": "section_body_and_audit_frozen_after_local_probe",
+  "scope": "Section 11 only; no all-volume audit claim",
+  "baseline_commit": "f1ade3db412d2167779d4b8f9fa2ed04a4daf0c3",
+  "artifacts": {
+    "edition19_work/sections/v19_section11.tex": {
+      "bytes": 12850,
+      "sha256": "e7b14f34ab81c14660cdc45a37a078cd13d5823cd096a53ecf53baea2e9a5755"
+    },
+    "edition19_work/reports/audit_section11.tex": {
+      "bytes": 9495,
+      "sha256": "27563fa2338c16a28f9b4d434299513bcc4ebdf474642ae9e063bb6f20efd407"
+    },
+    "ega-recovery/current/EGA_v18/continuations/v18_first_8_14_onward.tex": {
+      "bytes": 54527,
+      "sha256": "8d1391ef8ef3ac8787111f16d40e3d284d27103bc475abb68ceed335507a715a"
+    }
+  },
+  "sources": [
+    {
+      "path": "archive_20261121/03_sources/EGA5_francais.pdf",
+      "sha256": "24cf8204184b58b18a46e5f63ecc36d6e791b3c8c96a09daac93de96ebd8e830",
+      "total_pages": 171,
+      "reviewed_section_physical_pages": [
+        60,
+        61,
+        62,
+        63
+      ],
+      "boundary_only_pages": [
+        59,
+        64
+      ]
+    },
+    {
+      "path": "archive_20261121/03_sources/EGAVaiello.pdf",
+      "sha256": "23a20ef32fd16a1bd623c0c08ac080d04fc94f248de12133b713a19d6b0330d9",
+      "total_pages": 112,
+      "reviewed_section_physical_pages": [
+        41,
+        42,
+        43
+      ],
+      "boundary_only_pages": []
+    }
+  ],
+  "next_section_boundary": {
+    "french_physical_page": 64,
+    "english_physical_page": 43,
+    "english_position": "middle of page, section 12 heading",
+    "meaning": "boundary of this collation; section12 onward already exists in translation"
+  },
+  "paragraph_map": [
+    {
+      "unit": "01",
+      "french": "fr60",
+      "english": "en41",
+      "content": "Introductory sorites and prospective reworking of sections"
+    },
+    {
+      "unit": "02",
+      "french": "fr60",
+      "english": "en41",
+      "content": "Quotient functor and representability via Pluecker morphism"
+    },
+    {
+      "unit": "03",
+      "french": "fr61",
+      "english": "en41",
+      "content": "Separated/projective/quasi-compact claims and finite-presentation descent"
+    },
+    {
+      "unit": "04",
+      "french": "fr61",
+      "english": "en41",
+      "content": "Finite-rank smoothness and binomial affine coordinate cover"
+    },
+    {
+      "unit": "05",
+      "french": "fr61",
+      "english": "en41-42",
+      "content": "Coordinate split exact sequence and rank n prime term"
+    },
+    {
+      "unit": "06",
+      "french": "fr61",
+      "english": "en42",
+      "content": "Open subfunctor and vector-bundle identification"
+    },
+    {
+      "unit": "07",
+      "french": "fr62",
+      "english": "en42",
+      "content": "Lifting residue-field points and infinite-field rational points"
+    },
+    {
+      "unit": "08",
+      "french": "fr62",
+      "english": "en42",
+      "content": "Linear subvarieties, rank-zero case and recovery of quotient"
+    },
+    {
+      "unit": "09",
+      "french": "fr62",
+      "english": "en42",
+      "content": "Complete intrinsic characterization conditions omitted by English"
+    },
+    {
+      "unit": "10",
+      "french": "fr62",
+      "english": "en42",
+      "content": "Polarity isomorphism, dimension/codimension and hyperplanes"
+    },
+    {
+      "unit": "11",
+      "french": "fr63",
+      "english": "en42-43",
+      "content": "L-zero points and quotient-induced inclusion"
+    },
+    {
+      "unit": "12",
+      "french": "fr63",
+      "english": "en43",
+      "content": "Closing sorites and numbering remarks with editor footnotes"
+    },
+    {
+      "unit": "13",
+      "french": "fr63",
+      "english": "en43",
+      "content": "Handwritten variable-rank Grass(E) and disjoint union"
+    }
+  ],
+  "display_formula_preservation": {
+    "old_count": 11,
+    "new_count": 11,
+    "raw_contents_identical": true,
+    "method": "ordered TeX display-math contents between backslash-bracket pairs"
+  },
+  "new_correction_ids": [
+    "D19-11-01",
+    "D19-11-02",
+    "D19-11-03",
+    "D19-11-04",
+    "D19-11-05",
+    "D19-11-06",
+    "D19-11-07",
+    "D19-11-08",
+    "D19-11-09",
+    "D19-11-10",
+    "D19-11-11",
+    "D19-11-12"
+  ],
+  "inherited_english_footnotes_57_60_retained": true,
+  "findings": [
+    {
+      "id": "D19-11-01",
+      "source": "fr60 / en41",
+      "class": "uncertain_scan_and_notation",
+      "result": "Preserve geometric meaning and explicitly record uncertain dimension-letter/crossed subtitle; no guessed reconstruction."
+    },
+    {
+      "id": "D19-11-02",
+      "source": "fr60 / en41",
+      "class": "english_error",
+      "result": "Exterior powers present in French; inherited corrected formula retained and error attributed only to English."
+    },
+    {
+      "id": "D19-11-03",
+      "source": "fr61 / en41",
+      "class": "genuine_original_error",
+      "result": "Unconditional quasi-compactness fails for infinite free E; finite-type restriction and coordinate-point counterexample retained."
+    },
+    {
+      "id": "D19-11-04",
+      "source": "fr61 / en41",
+      "class": "old_chinese_overcorrection",
+      "result": "Finite-type subring is Noetherian; restore finite-type module wording while preserving finite-matrix descent explanation in report."
+    },
+    {
+      "id": "D19-11-05",
+      "source": "fr61 / en41",
+      "class": "bounded_statement_and_empty_case",
+      "result": "Keep proven finite-rank context; note crossed finite-type words and n>r empty Grassmannian."
+    },
+    {
+      "id": "D19-11-06",
+      "source": "fr61 / en41",
+      "class": "english_error",
+      "result": "French exact sequence starts with E prime; English starts E in error; inherited correction retained."
+    },
+    {
+      "id": "D19-11-07",
+      "source": "fr61 / en42",
+      "class": "english_duplicate_and_chosen_splitting",
+      "result": "Remove English duplicate only; preserve coordinate-split qualification and correct Hom direction under V convention."
+    },
+    {
+      "id": "D19-11-08",
+      "source": "fr62 / en42",
+      "class": "source_identity",
+      "result": "No prescribed rank parenthetical is French author handwriting, not solely translator addition."
+    },
+    {
+      "id": "D19-11-09",
+      "source": "fr62 / en42",
+      "class": "english_omission",
+      "result": "Restore closed subscheme / smooth over S / everywhere relative dimension m intrinsic-characterization conditions; author proof remains deferred."
+    },
+    {
+      "id": "D19-11-10",
+      "source": "fr62 / en42",
+      "class": "english_formula_error",
+      "result": "French dimension r-m-2 and codimension m+1 correct; preserve formula and empty dual convention."
+    },
+    {
+      "id": "D19-11-11",
+      "source": "fr63 / en42",
+      "class": "english_error",
+      "result": "French L superscript zero is clear; retain correct superscript and attribute omission to English."
+    },
+    {
+      "id": "D19-11-12",
+      "source": "fr63 / en43",
+      "class": "uncertain_connector_and_editorial_strengthening",
+      "result": "Body states source-supported if; converse proof preserved as translator analysis in report."
+    }
+  ],
+  "unresolved": [
+    "French60 crossed subtitle and dimension-letter uncertain",
+    "French63 overwritten crossed old section12 title words uncertain",
+    "French63 right-edge connector not securely read; English if retained",
+    "Cartan seminar reference not identified",
+    "Arbitrary quasi-coherent Pluecker closed immersion and full intrinsic criterion not independently reproved"
+  ],
+  "probe": {
+    "command": "bash /workspace/scratch/a886fd56dd2f/edition19_work/engineering/build_section11_probe.sh",
+    "latex_runs": 2,
+    "engine": "XeLaTeX",
+    "preamble": "ega-recovery/current/EGA_v19/preamble.tex",
+    "preamble_sha256": "3f9b1cb45b887b4ce7436523162405af2781f6896a3e442204bb6a6ce54582e3",
+    "pdf": "edition19_work/engineering/section11_probe_build/section11_probe.pdf",
+    "pdf_sha256": "9839eabb515fedd246b1ef568ab5e16c10d34c8cbf77fb6b9e69ad1af0356417",
+    "pdf_pages": 8,
+    "log_path": "edition19_work/engineering/section11_probe_build/section11_probe.log",
+    "log_sha256": "5106accb87ab058aa9084d4c09bdc06606b85e535708137c40b4a94deb6335c2",
+    "overfull_count": 0,
+    "underfull_count": 0,
+    "undefined_control_sequence_count": 0,
+    "missing_character_count": 0,
+    "latex_error_count": 0,
+    "known_font_warning": "Default font size/shape substitutions observed; no missing-character warning",
+    "actual_visual_review": {
+      "initial_render_pages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "final_render_pages": [
+        5,
+        6,
+        7,
+        8
+      ],
+      "initial_body_pages_1_4_pixel_identical_to_final": true,
+      "observations": [
+        "Four body pages legible, formulas and notes within margins",
+        "Long D19-11-07 note continues across pages2-3 without clipping",
+        "Report heading previously orphaned at page5 bottom moved with table to page6 by Needspace",
+        "Final report pages5-8 inspected; table and all displayed formulas fit",
+        "No full-book visual conclusion inferred from local probe"
+      ]
+    },
+    "render_manifest": "edition19_work/engineering/section11_probe_final_pages/manifest.json",
+    "page_renders": [
+      {
+        "physical_page": 1,
+        "path": "/workspace/scratch/a886fd56dd2f/edition19_work/engineering/section11_probe_final_pages/page_01.png",
+        "sha256": "4c1a2e7aca6496ae5f3db58f949bc01e455799d8bbc4ee213c5bed4ea29c2672",
+        "identical_to_initial_render": true
+      },
+      {
+        "physical_page": 2,
+        "path": "/workspace/scratch/a886fd56dd2f/edition19_work/engineering/section11_probe_final_pages/page_02.png",
+        "sha256": "0ceccc976afb754104215fefe5866306a69c279b2adc5301ab43b1afe2655498",
+        "identical_to_initial_render": true
+      },
+      {
+        "physical_page": 3,
+        "path": "/workspace/scratch/a886fd56dd2f/edition19_work/engineering/section11_probe_final_pages/page_03.png",
+        "sha256": "1ab80d15a67e47e4a5241595dcf65c6bcff045a317d7c183aea75e5392e731e1",
+        "identical_to_initial_render": true
+      },
+      {
+        "physical_page": 4,
+        "path": "/workspace/scratch/a886fd56dd2f/edition19_work/engineering/section11_probe_final_pages/page_04.png",
+        "sha256": "de2dcf7360d7696ae4f05e02eb3ee5fcafa589f329f3ab0118ced824b7676b9b",
+        "identical_to_initial_render": true
+      },
+      {
+        "physical_page": 5,
+        "path": "/workspace/scratch/a886fd56dd2f/edition19_work/engineering/section11_probe_final_pages/page_05.png",
+        "sha256": "f18b3a484289bd737341ec5471177ad61ba95e1643dfc6ce4e056eb7fd58967c",
+        "identical_to_initial_render": false
+      },
+      {
+        "physical_page": 6,
+        "path": "/workspace/scratch/a886fd56dd2f/edition19_work/engineering/section11_probe_final_pages/page_06.png",
+        "sha256": "4c694ee63fb43883327f7ef682da65cdbb15f91bfc9b6d09c0f7f92c9863f684",
+        "identical_to_initial_render": false
+      },
+      {
+        "physical_page": 7,
+        "path": "/workspace/scratch/a886fd56dd2f/edition19_work/engineering/section11_probe_final_pages/page_07.png",
+        "sha256": "fc71986cc20dc695196a1dbd0635305945356fb7510b05c4d8abb5bd42fafb13",
+        "identical_to_initial_render": false
+      },
+      {
+        "physical_page": 8,
+        "path": "/workspace/scratch/a886fd56dd2f/edition19_work/engineering/section11_probe_final_pages/page_08.png",
+        "sha256": "bfe8ab747548f3c7890ab871e769faf3755d4d6cb3261293deb43b60a36ea2ea",
+        "identical_to_initial_render": false
+      }
+    ]
+  }
+}

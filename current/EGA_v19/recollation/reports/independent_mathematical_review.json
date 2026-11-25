@@ -1,0 +1,140 @@
+{
+  "schema_version": 1,
+  "reviewer": "dot_middle (independent of source-module authors)",
+  "review_time_utc": "2026-11-25T07:07:14.982206+00:00",
+  "review_type": "Read-only mathematical review of the specifically requested new counterexamples and local proofs",
+  "overall_result": "No blocking mathematical defect found in the reviewed constructions or strengthened statements",
+  "files": [
+    {
+      "path": "sections/v19_8_14_18.tex",
+      "bytes": 15430,
+      "sha256": "5c2609be0e01abfe7b409b902f1e16026ecc22ab22c2978ecb590edd98035614",
+      "review_scope": "8.16 strengthened statement/proof; 8.18 sufficient version and proof; not a new review of every statement in 8.14-8.15",
+      "identity_status": "Observed current file hash; final edition binding still required if any later edits occur"
+    },
+    {
+      "path": "reports/v19_8_14_18_audit.tex",
+      "bytes": 20051,
+      "sha256": "1f7442e102461ef2a86169735852627db3bde853ba3771d4779d9a504704b439",
+      "review_scope": "8.16 small-resolution/cubic-system counterexample; both 8.18 counterexamples; relevant strengthened-version discussion",
+      "identity_status": "Observed current file hash; final edition binding still required if any later edits occur"
+    },
+    {
+      "path": "sections/v19_section10.tex",
+      "bytes": 13751,
+      "sha256": "992806dbaae2f846eb3125f50bf2067a6204ef25bd70219dd7aa98436e18f978",
+      "review_scope": "10.2-10.3 hypotheses and statements, especially locally Noetherian limitation and regular section convention",
+      "identity_status": "Observed current file hash; final edition binding still required if any later edits occur"
+    },
+    {
+      "path": "reports/v19_sections9_10_audit.tex",
+      "bytes": 10784,
+      "sha256": "411094b31c636b0f098a35feb086e78996b94ba64cff5434937246207ebb6258",
+      "review_scope": "Section five, 10.2-10.3 local proof, with statements checked against current section10",
+      "identity_status": "Observed current file hash; final edition binding still required if any later edits occur"
+    }
+  ],
+  "verified_reasoning": [
+    {
+      "id": "IR19-816-01",
+      "claim": "Small resolution X is smooth, integral, projective and of dimension three",
+      "reason": "The charts s != 0 and t != 0 in X={at=bs,ct=ds} are A1 times P2. Their intersection is nonempty; X is closed in P1 times P4. Closed points therefore have depth three over C."
+    },
+    {
+      "id": "IR19-816-02",
+      "claim": "Exceptional locus C has codimension two and pi is an isomorphism outside C",
+      "reason": "C=P1 times vertex. At any nonvertex rank-one matrix (a,b;c,d), a nonzero row determines [s:t] regularly on the corresponding coordinate chart."
+    },
+    {
+      "id": "IR19-816-03",
+      "claim": "The 31 cubics have no common zero and induce an immersion away from the vertex",
+      "reason": "Count is 1+10+20. At vertex z^3 is nonzero; elsewhere some x_i^3 is nonzero. On that chart, x_i^2*x_j/x_i^3 and z*x_i^2/x_i^3 recover all original affine coordinates; the coordinate-ring map is surjective."
+    },
+    {
+      "id": "IR19-816-04",
+      "claim": "Every nonzero pulled-back hyperplane through f(C) is nonnormal along generic C",
+      "reason": "In the two-dimensional regular local ring at generic C its equation is in m^2 and nonzero. The quotient has dimension one and embedding dimension two, hence is not regular and cannot be a Noetherian normal local ring. A zero equation instead gives the wrong section dimension."
+    },
+    {
+      "id": "IR19-816-05",
+      "claim": "Counterexample meets all original stated 8.16 hypotheses and has a codimension-one bad parameter subset",
+      "reason": "X is smooth geometrically integral and proper with closed-point depth three; f is unramified off codimension-two C. Hyperplanes through f(C) form a dual hyperplane and all fail the demanded conclusion."
+    },
+    {
+      "id": "IR19-818-01",
+      "claim": "Veronese double-line counterexample satisfies old (b) but contradicts the conclusion",
+      "reason": "The double line is singular, one-dimensional and topologically irreducible. The discriminant hypersurface is irreducible of dimension four; its general section is a union of distinct lines, while double lines form a smaller two-dimensional subset."
+    },
+    {
+      "id": "IR19-818-02",
+      "claim": "Normal quadric-cone counterexample satisfies old (a) and the dual-defective branch of (b)",
+      "reason": "The cone xz-y^2=0 over C is normal, with only a codimension-two singular vertex. The section x=0 is a double ruling line. The Gauss image is a conic in dual P3, while general hyperplanes through the vertex cut two distinct ruling lines."
+    },
+    {
+      "id": "IR19-STR-01",
+      "claim": "Strengthened 8.16 retains depth and the necessary geometric properties",
+      "reason": "Only f is strengthened to globally unramified. Depth >=3, geometric normality, geometric integrality and properness remain explicit. S2 of the section is not inferred from normality alone."
+    },
+    {
+      "id": "IR19-STR-02",
+      "claim": "Strengthened 8.18 is a sufficient condition, not a claimed equivalence",
+      "reason": "The statement explicitly restricts to normal X and requires geometrically integral sections in (a)/(b). The proof uses open geometrically integral-fibre locus U and excludes every codimension-one component of the closed bad locus."
+    },
+    {
+      "id": "IR19-STR-03",
+      "claim": "Passing from the open integral section to the full section in 8.18 is valid",
+      "reason": "The full nonzero section is an effective Cartier divisor on normal X, hence S1; all components have dimension d-1 >=1 and cannot lie in finite T. The integral open section gives one generic component and generic reducedness; S1 rules out embedded associated points and nilpotents."
+    },
+    {
+      "id": "IR19-103-01",
+      "claim": "Arbitrary quasi-coherent G gives the first canonical closed immersion",
+      "reason": "Sym G surjects onto the Rees algebra, and the tautological kernel H maps to zero under u after pullback to the blowup."
+    },
+    {
+      "id": "IR19-103-02",
+      "claim": "Locally Noetherian regular-sequence calculation identifies V(K) with the blowup",
+      "reason": "At points above T, (a1,a2-a1*t2,...) is regular; local Noetherian permutability makes a1 a nonzerodivisor on C. Off T, invertibility of an a_i forces a1 invertible on the relevant zero-locus chart. The kernel of C -> A[J/a1] is a1-power torsion and therefore vanishes."
+    },
+    {
+      "id": "IR19-102-01",
+      "claim": "The rank-two coordinate identification and uniqueness argument are valid",
+      "reason": "[T1:T2]=[-mu:lambda] gives the incidence equation up to sign. The complement of the centre is schematically dense in the blowup, and the target is separated over X, so two X-isomorphisms agreeing there agree everywhere."
+    }
+  ],
+  "recommendations": [
+    {
+      "id": "IR19-C01",
+      "severity": "clarification, not blocking",
+      "suggestion": "Explain preservation of the depth-three condition at geometric closed points under algebraic base extension",
+      "current_observation": "The current 8.16 proof now contains this flat-local-extension explanation",
+      "observed_in_current_source": true
+    },
+    {
+      "id": "IR19-C02",
+      "severity": "clarification, not blocking",
+      "suggestion": "Call Y_xi the full section before proving it is the closure of the open section",
+      "current_observation": "The current 8.18 proof now says 原完整截面 and derives the closure statement afterward",
+      "observed_in_current_source": true
+    },
+    {
+      "id": "IR19-C03",
+      "severity": "optional edge-case clarification, not blocking",
+      "suggestion": "Mention that rank zero in 10.3 gives empty projective bundle and empty blowup; rank one is already treated",
+      "current_observation": "The rank-zero sentence was added during record preparation and subsequently read: G=0, J=0, relative Proj and P(0) are empty.",
+      "observed_in_current_source": true
+    }
+  ],
+  "limits": [
+    "This review covers the requested new mathematical constructions, strengthened versions and local proof; it does not independently reprove every earlier 8.14 necessity direction or all inherited lemmas.",
+    "The underlying French/English collation by the source authors is not wholly repeated in this review; this is a mathematical review of their actual written constructions.",
+    "Characteristic-specific counterexamples are over C as stated; no unsupported all-characteristic extension is claimed.",
+    "The 10.2-10.3 second assertion is reviewed within the explicitly locally Noetherian, finite locally free rank and regular-section scope; no arbitrary non-Noetherian generality is certified.",
+    "This agent did not rerun the other authors symbolic scripts; the checks recorded here are independent algebraic reasoning, not claims of executed computer algebra.",
+    "No compilation, all-page PDF parity check or final visual review is claimed in this mathematical record.",
+    "Only the two new review record files are written; no reviewed source file is modified."
+  ],
+  "final_binding": {
+    "status": "pending final source freeze",
+    "rule": "Compare the final edition files with the listed SHA256 values. Any changed file requires a revision-specific check and a new binding record; do not silently replace the reviewed hashes."
+  }
+}

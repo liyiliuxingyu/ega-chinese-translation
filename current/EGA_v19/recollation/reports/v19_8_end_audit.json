@@ -1,0 +1,317 @@
+{
+  "schema_version": 1,
+  "created_utc": "2026-11-25T06:58:57.523853+00:00",
+  "task": "V19 first essay: unnumbered discussion after 8.18 through actual end of section 8",
+  "scope": {
+    "french_physical_pages": [
+      50,
+      51,
+      52
+    ],
+    "french_start": "50, last paragraph: Il reste à expliciter les conditions a) et b) de 8.18",
+    "french_end": "52, final author planning sentence before section 9",
+    "english_physical_pages": [
+      34,
+      35,
+      36
+    ],
+    "english_start": "34, last paragraph",
+    "english_end": "36, before section 9",
+    "boundary_only_french_pages": [
+      53,
+      54
+    ],
+    "excluded": "8.18 proposition, proof and N.B.; section 9 and later"
+  },
+  "original_sources": [
+    {
+      "path": "archive_20261121/03_sources/EGA5_francais.pdf",
+      "bytes": 16097021,
+      "sha256": "24cf8204184b58b18a46e5f63ecc36d6e791b3c8c96a09daac93de96ebd8e830",
+      "physical_pages": 171
+    },
+    {
+      "path": "archive_20261121/03_sources/EGAVaiello.pdf",
+      "bytes": 677332,
+      "sha256": "23a20ef32fd16a1bd623c0c08ac080d04fc94f248de12133b713a19d6b0330d9",
+      "physical_pages": 112
+    },
+    {
+      "path": "current/EGA_v18/continuations/v18_first_8_14_onward.tex",
+      "bytes": 54527,
+      "sha256": "8d1391ef8ef3ac8787111f16d40e3d284d27103bc475abb68ceed335507a715a"
+    }
+  ],
+  "replacement": {
+    "old_file": "current/EGA_v18/continuations/v18_first_8_14_onward.tex",
+    "from_line": 78,
+    "through_line": 131,
+    "markers": [
+      "DOT_IMPORT 11",
+      "DOT_IMPORT 12"
+    ],
+    "old_notes_preserved": 15,
+    "old_segment_copy": "reports/v19_8_end_old_segment.tex.txt"
+  },
+  "new_files": [
+    {
+      "path": "sections/v19_8_end.tex",
+      "bytes": 10881,
+      "sha256": "6a3c6bd93f241db9fa75f79effd8a2d128696fdf6d28c1d2cd94201bd76d7db0"
+    },
+    {
+      "path": "reports/v19_8_end_audit.tex",
+      "bytes": 15420,
+      "sha256": "6c407db24eaa75761a262b1fd0fe015186c1ecb896fe4649f5e42e4056d97dd5"
+    },
+    {
+      "path": "reports/v19_8_end_old_segment.tex.txt",
+      "bytes": 8366,
+      "sha256": "2cd507eb1c30902e40eab35d08170c22c19b3623c288bf2633ca586c89d52e0f"
+    }
+  ],
+  "readings_recovered": [
+    {
+      "id": "M19-8E01",
+      "items": [
+        "8.18 not 1.18",
+        "L subset P dual, centre L^0",
+        "de savoir",
+        "author changes integral over algebraically closed field to geometrically irreducible over k",
+        "simple changed to lisse; geometric integrality of section changed to geometric irreducibility"
+      ]
+    },
+    {
+      "id": "M19-8E03",
+      "items": [
+        "F^0 to E",
+        "f^{-1}(P minus L^0)",
+        "section subscripts",
+        "P(E/F^0), P(F^0), L=Q dual convention explained as editorial clarification"
+      ]
+    },
+    {
+      "id": "M19-8E05",
+      "items": [
+        "bar k in line definition",
+        "handwritten generic fibre requirement"
+      ]
+    },
+    {
+      "id": "M19-8E08",
+      "items": [
+        "forms vanish on L^0",
+        "lowercase k(a_1,...,a_{p-1})"
+      ]
+    },
+    {
+      "id": "M19-8E09",
+      "items": [
+        "French says one dimension more, English at most one; both mathematically corrected to two dimensions more",
+        "bar k and handwritten generic fibre condition"
+      ]
+    },
+    {
+      "id": "M19-8E10",
+      "items": [
+        "q rather than English g"
+      ]
+    },
+    {
+      "id": "M19-8E12",
+      "items": [
+        "capital X conical at x"
+      ]
+    }
+  ],
+  "mathematical_corrections": [
+    {
+      "id": "M19-8E02",
+      "finding": "Noncontainment of f(X) in L^0 alone does not imply a nonempty generic section",
+      "resolution": "Body separates nonzero equation, nonempty section and dimension; positive-dimensional projection image supplies nonemptiness"
+    },
+    {
+      "id": "M19-8E04",
+      "finding": "Density of X prime in X does not imply density of restricted generic section in full section",
+      "counterexample": "Quadratic Veronese P2 into P5, centre V(z0,z1,z2), section u(au+bv+cw), projection image dimension 2",
+      "resolution": "Explicit added sufficient hypothesis dim f^{-1}(L^0) <= dim X - 2; original unqualified assertion retained in footnote and historical notes; full proof in report"
+    },
+    {
+      "id": "M19-8E05",
+      "finding": "English =2 excludes identity P3; final French altered symbol not confidently decoded",
+      "resolution": "Corrected >=2 with explicit mathematical basis; geometric base change version of proposed converse proved separately, no claim of recovered missing author proof"
+    },
+    {
+      "id": "M19-8E09",
+      "finding": "French one dimension more is one dimension too small; English at most one additionally changes meaning",
+      "resolution": "q+2, from inverse image of a line in Q; original French phrase retained; P2 projected from a point gives direct counterexample"
+    },
+    {
+      "id": "M19-8E10",
+      "finding": "Composite g can have fibres larger than q+1",
+      "resolution": "Dimension estimate applied to W minus centre, W=closure f(X); product P^N times P^m counterexample retained"
+    },
+    {
+      "id": "M19-8E11",
+      "finding": "Wide reading of 8.17(a) fails for blowup of P3 at a point",
+      "resolution": "q=0 implication explicitly limited by base-locus hypothesis, distinct from 8.18 conditions"
+    }
+  ],
+  "pending": [
+    {
+      "id": "M19-P01",
+      "kind": "unresolved word",
+      "detail": "cunutesque in French52: spelling readable approximately but meaning not resolved; retained with explicit status"
+    },
+    {
+      "id": "M19-P02",
+      "kind": "overtyping",
+      "detail": "First Q glyph and final sign in proposed converse on French51 not confidently reconstructed; consistent convention and corrected inequality are editorial mathematical resolutions, not claimed visual recoveries"
+    },
+    {
+      "id": "M19-P03",
+      "kind": "deleted fragments",
+      "detail": "Short heavily overstruck words/half-lines remain unread; source image evidence retained, not reconstructed from later prose"
+    },
+    {
+      "id": "M19-P04",
+      "kind": "author informal term",
+      "detail": "Relative conical-at-x notion not defined in this paragraph; end sentence remains an author suggestion, not an independently proved criterion or proof of strengthened 8.18"
+    }
+  ],
+  "external_primary_reference": {
+    "url": "https://stacks.math.columbia.edu/tag/0G4C",
+    "title": "The Stacks Project, 37.32 Bertini theorems",
+    "used_for": "Independent comparison of base-locus codimension condition, Lemma 37.32.3(4)",
+    "access_date_utc": "2026-11-25",
+    "not_used_to": "Reconstruct any missing French words or claim full proof re-audit"
+  },
+  "visual_source_review": {
+    "performed": true,
+    "full_pages_viewed": {
+      "french": [
+        50,
+        51,
+        52,
+        53,
+        54
+      ],
+      "english": [
+        34,
+        35,
+        36
+      ]
+    },
+    "method": "PyMuPDF rendering, images opened with view_image; enlarged clips for difficult readings",
+    "images": [
+      {
+        "path": "reports/middle_source_pages/en-034.png",
+        "bytes": 260989,
+        "sha256": "89d23cff82ee639dc4d8dac11bad03d98fafed5993a72cee23807645c67ece5c"
+      },
+      {
+        "path": "reports/middle_source_pages/en-035.png",
+        "bytes": 238441,
+        "sha256": "c881cf405c7bb843002f443266027b7dcdd2b4497cafdd17573be9e3b55a41f8"
+      },
+      {
+        "path": "reports/middle_source_pages/en-036.png",
+        "bytes": 226580,
+        "sha256": "69ada073d2db3bb4ffbee83e10b0d3e58772bf0eb1430cb6606e38ff3e5838a2"
+      },
+      {
+        "path": "reports/middle_source_pages/fr-050-bottom.png",
+        "bytes": 169847,
+        "sha256": "4a51ffa7697fd1519ba3eb340c1886d42beaeb8e8aa3167189d3ca22749e6164"
+      },
+      {
+        "path": "reports/middle_source_pages/fr-050.png",
+        "bytes": 483330,
+        "sha256": "21976cfdd7412aa80a3799b2dcc150195bc83f5da1b29db53dd8f5330cd9ae04"
+      },
+      {
+        "path": "reports/middle_source_pages/fr-051-end.png",
+        "bytes": 249825,
+        "sha256": "3463ced14bf44aafd05deec7ff6de3e6160b92de649c6e9bde9137e969a0b364"
+      },
+      {
+        "path": "reports/middle_source_pages/fr-051-first-branch.png",
+        "bytes": 27868,
+        "sha256": "986822a15eb3aa9af27a60af3ab4dd1fa26ad0b6688ededa28c61dffda7cfa05"
+      },
+      {
+        "path": "reports/middle_source_pages/fr-051-inequality.png",
+        "bytes": 51252,
+        "sha256": "a9ab3c7aecc104ddb571ae9f14ffe3e19c065a3f30c063557afdd3c59c1faa49"
+      },
+      {
+        "path": "reports/middle_source_pages/fr-051-projection.png",
+        "bytes": 127119,
+        "sha256": "1bfd5ec1c3165f643e1a6ed077bbfdb7c8b6a2f1df8b9d69539c06690fc2014c"
+      },
+      {
+        "path": "reports/middle_source_pages/fr-051-top.png",
+        "bytes": 395997,
+        "sha256": "ebacd66bf2633193409058c92facaf5cac2d757abd1008e19f55d70970cbf49d"
+      },
+      {
+        "path": "reports/middle_source_pages/fr-051.png",
+        "bytes": 466781,
+        "sha256": "41aa8920c9c01a082f83212cffcef8f40604317b6f39fbeb85473e397f321db5"
+      },
+      {
+        "path": "reports/middle_source_pages/fr-052-end.png",
+        "bytes": 305949,
+        "sha256": "6f1299068b41e1f25c7e835b30e43e20723253fac52cfcbb8a6e40b23c5da693"
+      },
+      {
+        "path": "reports/middle_source_pages/fr-052-field.png",
+        "bytes": 363099,
+        "sha256": "f3a23f0b36e96035fe6e960fd749b294c89f15c9722463c594e4da811fdda4b9"
+      },
+      {
+        "path": "reports/middle_source_pages/fr-052-word.png",
+        "bytes": 76251,
+        "sha256": "84b33194c072349454b60919da194fd8e84a98317917152f151f0357afeafc26"
+      },
+      {
+        "path": "reports/middle_source_pages/fr-052.png",
+        "bytes": 432024,
+        "sha256": "bac3b21d35dc2d716c1c97e28197ef7f51a66c053a493e9b3ff67f630a713246"
+      },
+      {
+        "path": "reports/middle_source_pages/fr-053.png",
+        "bytes": 493405,
+        "sha256": "7fff3f00c2bb0980c084ea7e5ad82c99df17976253a59dfc251b0f3947446944"
+      },
+      {
+        "path": "reports/middle_source_pages/fr-054.png",
+        "bytes": 488335,
+        "sha256": "8939a2d0515b12ee203140f236a3e923d2b38faa79a4923824ae36a556d5c644"
+      }
+    ],
+    "limitation": "Only pages 50 last paragraph through 52 are translated here; 53-54 inspected for boundary/hypotheses only, not complete review"
+  },
+  "compilation": {
+    "performed_by_this_agent": false,
+    "reason": "Root requested unified compilation instead of duplicate local probe",
+    "status": "pending root build; no PDF success claimed in this record"
+  },
+  "cross_review_section9": {
+    "performed": true,
+    "file": "sections/v19_section9.tex",
+    "findings": [
+      "9.3* sufficient to exclude fixed divisors in each of the three systems",
+      "Tangent-rank <= image dimension proof valid after algebraic closure on a smooth integral neighbourhood",
+      "9.1 deleted-draft note should distinguish 2n-dimensional quadric from degree-2n hypersurface",
+      "Clarify that each family contains all degree-n forms vanishing at f(x) to order at least 2"
+    ],
+    "source_changed_by_this_agent": false
+  },
+  "integrity_limits": [
+    "No v18 or archive source modified",
+    "New body preserves full readable author discussion; modifications and added assumptions marked",
+    "Old 15 notes fully retained as historical notes in report",
+    "No full-volume translation or mathematical audit claimed"
+  ]
+}

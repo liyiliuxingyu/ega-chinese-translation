@@ -1,0 +1,8 @@
+name ctex.doc
+category Package
+revision 66115
+shortdesc doc files of ctex
+relocated 1
+docfiles size=291
+ RELOC/doc/latex/ctex/README.md
+ RELOC/doc/latex/ctex/ctex.pdf

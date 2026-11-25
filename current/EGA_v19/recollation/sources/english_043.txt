@@ -1,0 +1,41 @@
+necessarily of the same rank) then P(G′) ⊂P(G) (as the linear subvarieties of P(E)), if
+G′ is majorized by G (and the inclusion P(G′) →P(G) is nothing else but the deduced
+morphism from G →G′).
+Here is a minimum of the [sorites Fr]59 which we must have at our disposal. The
+complete list cannot in any case be ﬁxed (only when) until the sets of other Nos. of the
+present paragraph60 are written up.
+It seems to me convenient [commode Fr] to introduce also the functor Grass(E) (S′) =
+set of quotient modules locally free (of rank not speciﬁed) of E′
+S [illegible, ask AG] then
+Grass(E)? is representable by
+`
+n≥0Grassn(E). The linear subvarieties of P(E) are indeed
+deﬁned by sections of Grass(E) over S [NB: the rank, i.e. the relative dimension may vary
+if S is not connected. [slightly illegible conﬁrm with AG].
+§12 Generalization of the previous results to linear sections
+Complements to notations. If P = P(E), E any quasi-coherent module, we set also
+Grassn(P) = Grassn+1(E) so that Grassn(P) corresponds to linear subvarieties of dimen-
+sion n in P; this is valid for n ≥−1 if we agree that dim = −1 means empty. If E is
+locally free it would be advisable to introduce
+Grassn(P) = Grassn−1(P v) = Grassn(Ev)
+which corresponds to linear subvarieties of codimension n in P. If E is of rank r + 1
+[illegible, ask AG] P of relative dimension r we have a canonical isomoprhism Grassn(P) =
+Grassr−n(P). In what follows we suppose E ﬁxed locally free of rank r and we are interested
+in linear subvarieties of P of given dimension m, thus in Grm = Grm(P) = Grm(Ev).
+Over that prescheme we have therefore a canonical quotient G locally free of rank m of
+EGr, let us call it F. The natural incidence prescheme over PXXGrm, which represents the
+subfunctor of the product functor corresponds to the couples consisting of a section of PS
+and a linear subvariety of codimension m of P ′
+S containing the letter, it can be made explicit
+therefore in the following way: let T = PSXGrm (or if we prefer any prescheme relative or
+over this product), then over T we have ET the quotient OT (1) and the sub-module locally
+direct factor of Gv
+T . We consider the composition of the canonical homomorphisms Gv
+T →
+OT (1) which by transposition corresponds also to the compared analogous homomorphism
+of the sub-module OT (−1) of Ev
+T into the quotient Gv
+T : OT (−1) →GT and may also be
+59Ask A.G. or Deligne about the best word
+60What is A.G.’s meaning of paragraph?(Tr)
+43

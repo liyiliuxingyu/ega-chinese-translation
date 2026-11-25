@@ -1,0 +1,196 @@
+{
+  "images": [
+    {
+      "source": "EGA5_francais.pdf",
+      "physical_page": 32,
+      "dpi": 145,
+      "image": "integration/middle_source_pages/fr_032.png",
+      "visually_reviewed": false,
+      "image_sha256": "e30d4653112a331bb4318a94088ef0b4cb026abcc345495b5bb9386266b32de7"
+    },
+    {
+      "source": "EGA5_francais.pdf",
+      "physical_page": 34,
+      "dpi": 145,
+      "image": "integration/middle_source_pages/fr_034.png",
+      "visually_reviewed": true,
+      "image_sha256": "e6eb9d5ad1cb83a122f8b91a8bf4e9c22074b0ff4da3248aefffdbc55fe6f085"
+    },
+    {
+      "source": "EGA5_francais.pdf",
+      "physical_page": 35,
+      "dpi": 145,
+      "image": "integration/middle_source_pages/fr_035.png",
+      "visually_reviewed": true,
+      "image_sha256": "4b16c3c9e99d013808e00c0f78c62bf0efcb9e677be17c489a40fad4183b725f"
+    },
+    {
+      "source": "EGA5_francais.pdf",
+      "physical_page": 36,
+      "dpi": 145,
+      "image": "integration/middle_source_pages/fr_036.png",
+      "visually_reviewed": false,
+      "image_sha256": "d83e20503b7108d01065a7a302e48fed54580f3688f804ddb79314ec8212113a"
+    },
+    {
+      "source": "EGA5_francais.pdf",
+      "physical_page": 37,
+      "dpi": 145,
+      "image": "integration/middle_source_pages/fr_037.png",
+      "visually_reviewed": false,
+      "image_sha256": "5e8f4eefd936b5ad12c01c1af80b06b9ce665fb0ef8280c1a0c40797c523c891"
+    },
+    {
+      "source": "EGA5_francais.pdf",
+      "physical_page": 38,
+      "dpi": 145,
+      "image": "integration/middle_source_pages/fr_038.png",
+      "visually_reviewed": false,
+      "image_sha256": "cf022c7ccdb9999f8fd2f5307d32ec96f424b9000bb24e4acb30ce013928ae16"
+    },
+    {
+      "source": "EGA5_francais.pdf",
+      "physical_page": 39,
+      "dpi": 145,
+      "image": "integration/middle_source_pages/fr_039.png",
+      "visually_reviewed": true,
+      "image_sha256": "ca7d8a4385810ef4420d0ab34787d219550d548eaeca0886f41e985966dc0f2a"
+    },
+    {
+      "source": "EGA5_francais.pdf",
+      "physical_page": 40,
+      "dpi": 145,
+      "image": "integration/middle_source_pages/fr_040.png",
+      "visually_reviewed": true,
+      "image_sha256": "a0ee9160165da81d243041e789f7d1042b989ef131839804970fe1109e5486f7"
+    },
+    {
+      "source": "EGA5_francais.pdf",
+      "physical_page": 41,
+      "dpi": 145,
+      "image": "integration/middle_source_pages/fr_041.png",
+      "visually_reviewed": true,
+      "image_sha256": "a23b3580adc39004175ba9793987bb57f57117be166056edbfd7d2e1350ef94c"
+    },
+    {
+      "source": "EGA5_francais.pdf",
+      "physical_page": 42,
+      "dpi": 145,
+      "image": "integration/middle_source_pages/fr_042.png",
+      "visually_reviewed": true,
+      "image_sha256": "3d3c5a38193d3ddb28d590ff9be25b56d7ec3b020123c4ff54134c3291473102"
+    },
+    {
+      "source": "EGA5_francais.pdf",
+      "physical_page": 43,
+      "dpi": 145,
+      "image": "integration/middle_source_pages/fr_043.png",
+      "visually_reviewed": true,
+      "image_sha256": "629a94ffb4025c9722914e04fc5cdb873530d013dc52022c72773196731e9457"
+    },
+    {
+      "source": "EGA5_francais.pdf",
+      "physical_page": 44,
+      "dpi": 145,
+      "image": "integration/middle_source_pages/fr_044.png",
+      "visually_reviewed": true,
+      "image_sha256": "7ce76372f1396c70435b01613130a4e0948feb07ff456f50fd51ce41db24222e"
+    },
+    {
+      "source": "EGA5_francais.pdf",
+      "physical_page": 45,
+      "dpi": 145,
+      "image": "integration/middle_source_pages/fr_045.png",
+      "visually_reviewed": true,
+      "image_sha256": "86929b6414337aa32a19d862e80caecc50d9fb62295e06c607e0a2fd9b8289c6"
+    },
+    {
+      "source": "EGA5_francais.pdf",
+      "physical_page": 46,
+      "dpi": 145,
+      "image": "integration/middle_source_pages/fr_046.png",
+      "visually_reviewed": true,
+      "image_sha256": "e2230777c8a273a2c44dbae264fcf04ed04113422f92b4dcd2deebb9e7375dbe"
+    },
+    {
+      "source": "EGAVaiello.pdf",
+      "physical_page": 22,
+      "dpi": 145,
+      "image": "integration/middle_source_pages/en_022.png",
+      "visually_reviewed": false,
+      "image_sha256": "6b9347ec9a80150bec7b7ad23baff099650c919ea3472118b1e7fa02c8aa9e9b"
+    },
+    {
+      "source": "EGAVaiello.pdf",
+      "physical_page": 24,
+      "dpi": 145,
+      "image": "integration/middle_source_pages/en_024.png",
+      "visually_reviewed": true,
+      "image_sha256": "485c7e5f6b96cc6cdf1b78e201a9d25983a42c59a52c2d424085fca4094d06d4"
+    },
+    {
+      "source": "EGAVaiello.pdf",
+      "physical_page": 25,
+      "dpi": 145,
+      "image": "integration/middle_source_pages/en_025.png",
+      "visually_reviewed": false,
+      "image_sha256": "87fdd25e87eb82aa41799505b9e9128dc6b29f08959f3d43cb1ea81194cc6d16"
+    },
+    {
+      "source": "EGAVaiello.pdf",
+      "physical_page": 26,
+      "dpi": 145,
+      "image": "integration/middle_source_pages/en_026.png",
+      "visually_reviewed": false,
+      "image_sha256": "52a4fdf7bd4e098dd3efcf3090282be921ba818ffab02506018165ff7dcfb642"
+    },
+    {
+      "source": "EGAVaiello.pdf",
+      "physical_page": 27,
+      "dpi": 145,
+      "image": "integration/middle_source_pages/en_027.png",
+      "visually_reviewed": true,
+      "image_sha256": "3dc7a59028c0c0a80c169c0bd7dc155ab66537f4ef98ddfd1dbd779513cd478c"
+    },
+    {
+      "source": "EGAVaiello.pdf",
+      "physical_page": 28,
+      "dpi": 145,
+      "image": "integration/middle_source_pages/en_028.png",
+      "visually_reviewed": true,
+      "image_sha256": "547bc1fcbf46023d53c02cb80e19ee4b393193bcc6ace84cb6a206a20a772d58"
+    },
+    {
+      "source": "EGAVaiello.pdf",
+      "physical_page": 29,
+      "dpi": 145,
+      "image": "integration/middle_source_pages/en_029.png",
+      "visually_reviewed": true,
+      "image_sha256": "7876d2faf9d285b730580bb597658fee22669837ffdf4bf3e838435b45dc63d2"
+    },
+    {
+      "source": "EGAVaiello.pdf",
+      "physical_page": 30,
+      "dpi": 145,
+      "image": "integration/middle_source_pages/en_030.png",
+      "visually_reviewed": true,
+      "image_sha256": "fa523ebafdae4adbb008e91ff323529221bbba915e8a33ae7aa20f755c631976"
+    },
+    {
+      "source": "EGAVaiello.pdf",
+      "physical_page": 31,
+      "dpi": 145,
+      "image": "integration/middle_source_pages/en_031.png",
+      "visually_reviewed": true,
+      "image_sha256": "348f419a44444f7f3919f00c8a5a2269273ded4c32a387718cd26aa36c37df52"
+    },
+    {
+      "source": "EGAVaiello.pdf",
+      "physical_page": 32,
+      "dpi": 145,
+      "image": "integration/middle_source_pages/en_032.png",
+      "visually_reviewed": true,
+      "image_sha256": "37787fa0c049ec3ae5f0d9ac52de9c9bb7f8aec09fedeaeac2442f3b39974241"
+    }
+  ]
+}

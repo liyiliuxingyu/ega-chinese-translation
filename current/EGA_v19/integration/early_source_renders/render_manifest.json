@@ -1,0 +1,65 @@
+[
+  {
+    "source": "archive_20261121/03_sources/EGA5_francais.pdf",
+    "source_sha256": "24cf8204184b58b18a46e5f63ecc36d6e791b3c8c96a09daac93de96ebd8e830",
+    "physical_page": 8,
+    "png": "integration/early_source_renders/EGA5_francais_physical_008.png",
+    "dpi": 180
+  },
+  {
+    "source": "archive_20261121/03_sources/EGA5_francais.pdf",
+    "source_sha256": "24cf8204184b58b18a46e5f63ecc36d6e791b3c8c96a09daac93de96ebd8e830",
+    "physical_page": 11,
+    "png": "integration/early_source_renders/EGA5_francais_physical_011.png",
+    "dpi": 180
+  },
+  {
+    "source": "archive_20261121/03_sources/EGA5_francais.pdf",
+    "source_sha256": "24cf8204184b58b18a46e5f63ecc36d6e791b3c8c96a09daac93de96ebd8e830",
+    "physical_page": 12,
+    "png": "integration/early_source_renders/EGA5_francais_physical_012.png",
+    "dpi": 180
+  },
+  {
+    "source": "archive_20261121/03_sources/EGA5_francais.pdf",
+    "source_sha256": "24cf8204184b58b18a46e5f63ecc36d6e791b3c8c96a09daac93de96ebd8e830",
+    "physical_page": 29,
+    "png": "integration/early_source_renders/EGA5_francais_physical_029.png",
+    "dpi": 180
+  },
+  {
+    "source": "archive_20261121/03_sources/EGAVaiello.pdf",
+    "source_sha256": "23a20ef32fd16a1bd623c0c08ac080d04fc94f248de12133b713a19d6b0330d9",
+    "physical_page": 8,
+    "png": "integration/early_source_renders/EGAVaiello_physical_008.png",
+    "dpi": 180
+  },
+  {
+    "source": "archive_20261121/03_sources/EGAVaiello.pdf",
+    "source_sha256": "23a20ef32fd16a1bd623c0c08ac080d04fc94f248de12133b713a19d6b0330d9",
+    "physical_page": 10,
+    "png": "integration/early_source_renders/EGAVaiello_physical_010.png",
+    "dpi": 180
+  },
+  {
+    "source": "archive_20261121/03_sources/EGAVaiello.pdf",
+    "source_sha256": "23a20ef32fd16a1bd623c0c08ac080d04fc94f248de12133b713a19d6b0330d9",
+    "physical_page": 20,
+    "png": "integration/early_source_renders/EGAVaiello_physical_020.png",
+    "dpi": 180
+  },
+  {
+    "source": "archive_20261121/03_sources/EGAVaiello.pdf",
+    "source_sha256": "23a20ef32fd16a1bd623c0c08ac080d04fc94f248de12133b713a19d6b0330d9",
+    "physical_page": 21,
+    "png": "integration/early_source_renders/EGAVaiello_physical_021.png",
+    "dpi": 180
+  },
+  {
+    "source": "archive_20261121/03_sources/EGAVaiello.pdf",
+    "source_sha256": "23a20ef32fd16a1bd623c0c08ac080d04fc94f248de12133b713a19d6b0330d9",
+    "physical_page": 46,
+    "png": "integration/early_source_renders/EGAVaiello_physical_046.png",
+    "dpi": 180
+  }
+]

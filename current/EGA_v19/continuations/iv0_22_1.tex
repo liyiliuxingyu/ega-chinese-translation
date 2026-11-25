@@ -1,0 +1,177 @@
+% 底本：EGAIV.1.pdf，PDF第181--185页，原分册印刷第182--186页。
+\setcounter{section}{21}
+\section{形式光滑性与正则性的微分判据}
+\source{第四卷第一部分；本轮连续译入章首说明及22.1--22.3，分册印刷第182--193页的相关部分／上传PDF第181--192页}
+本节的主要结果如下。
+
+\noindent a) 判据（22.2.2）和（22.5.8）给出必要且充分的条件，用以判定含有域 $k$ 的完备诺特局部环 $A$ 是否在 $k$ 上形式光滑。判据（22.5.8）的表述不涉及微分概念，并补充了（19.6.6）。表述（22.2.2）稍具技术性，但由它可对固定 $k$ 时所考虑的局部环 $A$ 作出分类（22.2.5）：其同构类由维数 $n$ 和剩余域 $K$ 决定，所受的唯一限制是 $n\ge\rk_K\Upsilon_{K/k}$。
+
+\noindent b) 定理（22.3.3），以及Nagata雅可比判据（22.7.3）的推论（22.7.6），给出若干条件，保证含有域 $k$ 的完备诺特局部环 $A$ 的某个局部化在 $k$ 上几何正则。它们将在第IV章§7关于局部环的精细性质的研究中发挥重要作用。目前还没有不依赖Nagata雅可比判据的（22.7.6）的证明。\cmt{M13-N01}{“目前”指1964年原著写作时的状态。本句作为历史原文翻译，不是对现今文献状况的判断。此处先介绍后续结果，不表示22.4以后的正文已译入本版。}
+
+\noindent c) Zariski雅可比判据（22.6.7）及其变式，它们可由（20.7.8）直接导出。
+
+\subsection{形式光滑性的提升}
+\egas{22.1.1}{定理}
+设 $s:\Lambda\to A$、$u:A\to B$ 是两个环同态，$\mathfrak J$ 为 $B$ 的理想，$C=B/\mathfrak J$。假设 $C$ 作为离散的 $\Lambda$-代数形式光滑。
+
+（i）假设下列条件成立：
+\begin{enumerate}[leftmargin=2.5em]
+\item[$\alpha)$] $\mathfrak J/\mathfrak J^2$ 是投射 $C$-模；
+\item[$\beta)$] 典范同态 $\mathrm S_C(\mathfrak J/\mathfrak J^2)\to\gr_{\mathfrak J}(B)$（19.5.2）为双射；
+\item[$\gamma)$] 特征同态
+\[
+ \chi:\Upsilon_{C/A/\Lambda}\longrightarrow\mathfrak J/\mathfrak J^2
+\]
+为单射；\cmt{M13-A01}{原文在此引用（20.6.20）。作者在《勘误与增补（清单三）》A部，原分册第345页，明确将其改为（20.6.10）。这里以 $B/\mathfrak J^2$ 的特征同态和（20.6.22）的自然性定义所需的 $\chi$；正确引文已据正式勘误采用。}
+\item[$\delta)$] $C$-模 $\Omega^1_{B/A}\otimes_B C$ 是投射模。
+\end{enumerate}
+则赋予 $\mathfrak J$-预进制拓扑的 $B$ 是形式光滑的 $A$-代数。
+
+（ii）反之，若 $B$ 对 $\mathfrak J$-预进制拓扑是形式光滑的 $A$-代数，并且 $A$ 作为离散的 $\Lambda$-代数形式光滑，则（i）的四个条件均成立。
+
+\eproof
+由于 $C$ 是形式光滑的 $\Lambda$-代数，$B/\mathfrak J^2$ 是 $C$ 以 $\mathfrak J/\mathfrak J^2$ 为核的 $\Lambda$-平凡扩张（19.4.4），故可应用（20.6.22.1）。由该正合列，条件 $\gamma)$ 等价于 $\Upsilon^C_{B/A/\Lambda}=0$，也等价于
+\[
+ \gamma')\qquad
+ u_{B/A/\Lambda}\otimes1_C:
+ \Omega^1_{A/\Lambda}\otimes_A C
+ \longrightarrow\Omega^1_{B/\Lambda}\otimes_B C
+ \quad\text{为单射。}
+\]
+
+（i）由 $\alpha)$、$\beta)$ 以及（19.5.4），$B$ 对 $\mathfrak J$-预进制拓扑是形式光滑的 $\Lambda$-代数。因此，$B$ 是形式光滑的 $A$-代数，等价于它相对于 $\Lambda$ 是形式光滑的 $A$-代数。根据（20.7.2），只须证明连续 $B$-模同态
+\[
+ u_{B/A/\Lambda}:\Omega^1_{A/\Lambda}\otimes_A B
+ \longrightarrow\Omega^1_{B/\Lambda}
+\]
+在形式意义下可左逆。因为 $B$ 对 $\Lambda$ 形式光滑，拓扑 $B$-模 $\Omega^1_{B/\Lambda}$ 形式投射（20.4.9），其拓扑由 $B$ 的拓扑诱导（20.4.5）。由（19.1.9），只须 $u_{B/A/\Lambda}\otimes1_C$ 可左逆。条件 $\gamma')$ 给出正合列
+\[
+ 0\longrightarrow\Omega^1_{A/\Lambda}\otimes_A C
+ \longrightarrow\Omega^1_{B/\Lambda}\otimes_B C
+ \longrightarrow\Omega^1_{B/A}\otimes_B C\longrightarrow0.
+\]
+末项由 $\delta)$ 为投射模，所以这条正合列分裂，所需左逆存在。
+
+（ii）若 $B$ 对 $A$ 形式光滑，而 $A$ 对 $\Lambda$ 形式光滑，则 $B$ 对 $\Lambda$ 形式光滑（19.3.5，ii）。条件 $\alpha)$、$\beta)$ 因而由（19.5.6）得到。此外，（20.7.2）表明 $u_{B/A/\Lambda}$ 在形式意义下可左逆；故 $u_{B/A/\Lambda}\otimes1_C$ 可左逆（19.1.7），特别是单射。最后，$\Omega^1_{B/A}$ 是形式投射 $B$-模（20.4.9），所以 $\Omega^1_{B/A}\otimes_B C$ 是投射 $C$-模（19.2.4）。
+\finishproof
+
+\egas{22.1.2}{推论}
+设 $s:\Lambda\to A$、$u:A\to B$ 是环同态，$\mathfrak m$ 为 $B$ 的极大理想，$K=B/\mathfrak m$ 为剩余域。假设 $\Lambda$-代数 $A$ 和 $K$ 对离散拓扑都形式光滑。则下列条件等价：
+
+\noindent a) $B$ 对 $\mathfrak m$-预进制拓扑是形式光滑的 $A$-代数。
+
+\noindent b) 典范同态
+\begin{equation}
+ \mathrm S_K(\mathfrak m/\mathfrak m^2)
+ \longrightarrow\gr_{\mathfrak m}(B)
+ \tag{22.1.2.1}
+\end{equation}
+为双射，而且特征同态
+\begin{equation}
+ \chi:\Upsilon_{K/A/\Lambda}\longrightarrow\mathfrak m/\mathfrak m^2
+ \tag{22.1.2.2}
+\end{equation}
+为单射。
+
+这直接由（22.1.1）得到：因为 $K$ 是域，所有 $K$-向量空间均为投射模，所以该定理的条件 $\alpha)$、$\delta)$ 自动成立。
+
+\egas{22.1.3}{注记}
+在（22.1.2）的假设下，再假设 $\mathfrak m/\mathfrak m^2$ 是有限维 $K$-向量空间。则要使 $B$ 对 $\mathfrak m$-预进制拓扑成为形式光滑的 $A$-代数，下列两个条件足够：
+
+\noindent\textbf{（22.1.3.1）}\quad
+给定多项式代数 $E=K[T_1,\ldots,T_n]$、由各 $T_i$ 生成的极大理想 $\mathfrak n$，以及满足 $\mathfrak b\supseteq\mathfrak n^k$ 的理想 $\mathfrak b$；每个在剩余域上诱导恒等 $K\to K$ 的 $\Lambda$-同态 $v:B\to E/\mathfrak b$，都可分解为
+\[
+ B\xrightarrow{w}E/\mathfrak n^k\longrightarrow E/\mathfrak b,
+\]
+其中 $w$ 为 $\Lambda$-同态。\cmt{M13-N02}{这里的剩余域及增广要求包含 $\mathfrak b\subseteq\mathfrak n$，$k$ 为正整数；这是“在剩余域上诱导恒等”的内容，并非允许任意单位理想。印刷原文使用同一符号 $n$ 表示变量个数，本译文保留该记法，不把它与幂指数 $k$ 混同。}
+
+\noindent\textbf{（22.1.3.2）}\quad
+令 $F=D_K(K)$ 为平凡扩张，即 $K$ 上的双数代数。若环同态 $\rho:A\to F$ 与增广 $F\to K$ 的复合为给定的典范同态 $A\to K$，则每个在剩余域上诱导恒等 $K\to K$ 的 $A$-同态 $v:B\to K$，都可分解为
+\[
+ B\xrightarrow{w}F\longrightarrow K,
+\]
+其中 $w$ 对由 $\rho$ 规定的 $A$-代数结构是 $A$-同态。
+
+事实上，由（19.5.5），条件（22.1.3.1）保证（22.1.2.1）为双射。由（22.1.2），余下只须证明
+\[
+ u_{B/A/\Lambda}\otimes1_K:
+ \Omega^1_{A/\Lambda}\otimes_A K
+ \longrightarrow\Omega^1_{B/\Lambda}\otimes_B K
+\]
+单射。由于这是 $K$-向量空间之间的映射，结合（20.4.8），这等价于：对每个 $K$-向量空间 $L$，限制映射
+\[
+ \Der_\Lambda(B,L)\longrightarrow\Der_\Lambda(A,L)
+\]
+均为满射。只检验 $L=K$ 已经足够：一个向量空间映射若不单射，可在其非零核向量上取一个非零线性泛函，该泛函就不可能来自目标空间；反之，单射向量空间映射可分裂，故所有这样的限制映射满射。条件（22.1.3.2）与（20.1.5）给出这个满射性。\cmt{M13-G01}{此处所用导子必须在 $\Lambda$ 上为零。给定 $D:A\to K$ 时，取 $\rho(a)=(\bar a,D(a))$；其提升 $w$ 的第二分量便是所需延拓。原文略写的线性对偶检验在正文展开；没有假设相关向量空间有限维。}
+
+注意，下列一个条件同时蕴含（22.1.3.1）、（22.1.3.2）：
+
+\noindent\textbf{（22.1.3.3）}\quad
+对每个剩余域等于 $K$ 的阿廷局部 $A$-代数 $E$、每个幂零理想 $\mathfrak r$，以及每个在剩余域上诱导恒等 $K\to K$ 的 $A$-同态 $B\to E/\mathfrak r$，都存在分解
+\[
+ B\xrightarrow{w}E\longrightarrow E/\mathfrak r,
+\]
+其中 $w$ 为 $A$-同态。\cmt{M13-G02}{原文未展开（22.1.3.3）如何推出（22.1.3.1）。对于其 $\Lambda$-同态 $v$，先用离散 $\Lambda$-代数 $A$ 的形式光滑性，把 $A\to B\to E/\mathfrak b$ 提升到 $E/\mathfrak n^k$，由此赋予目标所需的 $A$-代数结构，再应用（22.1.3.3）。不能把原来只给出的 $\Lambda$-同态直接称作 $A$-同态。}
+
+\egas{22.1.4}{命题}
+设 $\varphi:A\to B$ 为诺特局部环之间的局部同态，剩余域分别为 $k$ 和 $K$。要使 $B$ 对预进制拓扑成为形式光滑的 $A$-代数，必要且充分的条件是：对每个剩余域等于 $K$ 的阿廷局部环 $C$、每个局部同态 $A\to C$（由此使 $C$ 成为拓扑 $A$-代数）、每个幂零理想 $\mathfrak J\subset C$，以及每个在剩余域上诱导恒等 $K\to K$ 的局部 $A$-同态 $B\to C/\mathfrak J$，都存在分解
+\[
+ B\xrightarrow{f}C\longrightarrow C/\mathfrak J,
+\]
+其中 $f$ 为局部 $A$-同态。
+
+\eproof
+必要性由定义（19.3.1）得到。下面证明充分性。到离散阿廷局部代数的局部同态连续，故可唯一延拓到相应的完备化；结合（19.3.6），可限于 $A,B$ 都完备的情形。若 $A=k$ 是域，取 $\Lambda$ 为 $k$ 的素域，由（19.6.1）和（22.1.3.3）即可得到结论。
+
+一般地，令 $\mathfrak m$ 为 $A$ 的极大理想，置 $B_0=B\otimes_A k=B/\mathfrak mB$；这是完备局部环。设 $C_0$ 为剩余域等于 $K$ 的阿廷局部 $k$-代数，$\mathfrak J_0$ 为幂零理想。每个在剩余域上诱导恒等的局部 $k$-同态 $g_0:B_0\to C_0/\mathfrak J_0$，给出局部 $A$-同态
+\[
+ g:B\longrightarrow B_0\xrightarrow{g_0}C_0/\mathfrak J_0.
+\]
+由假设，$g$ 可提升为局部 $A$-同态 $f:B\to C_0$。因为 $C_0$ 是 $k$-代数，$f(\mathfrak mB)=0$，所以 $f$ 分解为局部 $k$-同态 $f_0:B_0\to C_0$。这说明命题的提升条件也适用于 $k\to B_0$。由已经证明的域情形，$B_0$ 在 $k$ 上形式光滑。
+
+应用（19.7.2）和（19.7.1），可得完备诺特局部环 $B'$、使 $B'$ 对 $A$ 平坦且形式光滑的局部同态 $A\to B'$，以及 $k$-同构
+\[
+ u_0:B'_0=B'\otimes_A k\xrightarrow{\sim}B_0.
+\]
+令 $v_0=u_0^{-1}$。我们要把它提升为局部 $A$-同态 $v:B\to B'$。记 $B,B'$ 的极大理想为 $\mathfrak n,\mathfrak n'$。对每个 $j\ge0$，令
+\[
+ w_j:B/(\mathfrak n^{j+1}+\mathfrak mB)
+ \longrightarrow B'/(\mathfrak n'^{\,j+1}+\mathfrak mB')
+\]
+为 $v_0$ 诱导的同构。只须逐级构造局部 $A$-同态
+\[
+ v_j:B/\mathfrak n^{j+1}\longrightarrow B'/\mathfrak n'^{\,j+1}
+\]
+使下列两个图交换（左图取 $j\ge1$）：
+\[
+\begin{tikzcd}[column sep=large,row sep=large]
+ B/\mathfrak n^{j+1}\arrow[r,"v_j"]\arrow[d]&
+ B'/\mathfrak n'^{\,j+1}\arrow[d]\\
+ B/\mathfrak n^j\arrow[r,"v_{j-1}"']&B'/\mathfrak n'^{\,j}
+\end{tikzcd}
+\]
+\[
+\begin{tikzcd}[column sep=large,row sep=large]
+ B/\mathfrak n^{j+1}\arrow[r,"v_j"]\arrow[d]&
+ B'/\mathfrak n'^{\,j+1}\arrow[d]\\
+ B/(\mathfrak n^{j+1}+\mathfrak mB)\arrow[r,"w_j"']&
+ B'/(\mathfrak n'^{\,j+1}+\mathfrak mB').
+\end{tikzcd}
+\]
+因 $B,B'$ 完备，$v=\varprojlim_jv_j$ 就是所求同态。
+
+为说明归纳构造，设 $j\ge1$ 且 $v_{j-1}$ 已构造。两项既定数据给出同态 $B\to Q_j$，其中
+\[
+ Q_j=(B'/\mathfrak n'^{\,j})
+ \mathop{\times}_{B'/(\mathfrak n'^{\,j}+\mathfrak mB')}
+ B'/(\mathfrak n'^{\,j+1}+\mathfrak mB').
+\]
+根据（19.3.10.2）及
+\[
+ \mathfrak n'^{\,j}+(\mathfrak n'^{\,j+1}+\mathfrak mB')
+ =\mathfrak n'^{\,j}+\mathfrak mB',
+\]
+典范映射 $B'/\mathfrak n'^{\,j+1}\to Q_j$ 满射，其核是平方零理想。目标是剩余域为 $K$ 的阿廷局部环；应用假设得到 $B\to B'/\mathfrak n'^{\,j+1}$ 的局部提升，它因局部性而在 $\mathfrak n^{j+1}$ 上为零，遂给出 $v_j$。\cmt{M13-G03}{原文援引（19.3.10.1）并略去这一纤维积。这里将两项相容要求合成一个阿廷提升问题，直接使用本命题的假设；没有援用（19.3.10.1）原先不足的核条件。平方零核包含于 $\mathfrak n'^{\,j}/\mathfrak n'^{\,j+1}$，其平方为零，因为 $2j\ge j+1$。}
+
+最后，（19.7.1.4）表明 $v$ 是 $A$-同构：$B'$ 对 $A$ 平坦，而 $B$ 对 $\mathfrak m$-预进制拓扑分离且完备。后一事实由其 $\mathfrak n$-进制完备性以及每个 $\mathfrak m^rB$ 对 $\mathfrak n$-进制拓扑闭得到（$0_{\mathrm I}$，7.3.5）。因此 $B\simeq B'$ 在 $A$ 上形式光滑。
+\finishproof

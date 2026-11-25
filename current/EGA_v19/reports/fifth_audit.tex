@@ -1,0 +1,255 @@
+\chapter*{第五版：第0章§18译校核查}
+\addcontentsline{toc}{chapter}{第五版：第0章§18译校核查}
+\markboth{第五版新增核查}{第0章§18}
+
+\section*{范围、底本及判断等级}
+\addcontentsline{toc}{section}{范围、底本及判断等级}
+本轮依据用户上传的\texttt{EGAIV.1.pdf}，连续翻译第0章§18“代数扩张的补充知识”的章首说明及（18.1.1）--（18.5.4），含子编号引理（18.5.3.1）。所对应的是分册印刷第51--68页、上传PDF第50--67页；下一接续点为印刷第69页的§19章首及（19.0.1）。各陈述、原有证明详略、公式和交换图均在译稿中逐项处理。原作者明说“留给读者”的内容没有擅自补写成原文。
+
+本轮核对了第四卷第四部分书末勘误清单三A部，发现与新增范围直接相关的（18.1.3）图标修订；已将其译入合订本书末。下面的A类是作者已有勘误，T类是源靶、对象、线性或编号的可确定订正，H类是条件或约定提醒，D类说明交换图重绘方式，V类是本次补充验证。\textbf{这些编号不等于错误定理的数量。}尤其是H02--H04依赖“双模”的具体约定，应按其适用范围理解，不应宣传为交换代数扩张理论中的反例。
+
+下文的详细论证都是译校分析，不属于Grothendieck与Dieudonné原著正文；本轮也没有对旧合订本的全部数学内容重新审定。
+
+\audit{E5-A01}{图（18.1.3.1）的投影标签}{作者正式勘误，已落实}
+\source{$0_{\mathrm{IV}}$，18.1.3，印刷第52页；勘误清单三A部，印刷第345页}
+作者明确要求：图中 $p_2$ 应标在 $G\to F$ 的箭头旁。由 $G=E\times_BF$ 的定义，$p_1(x,y)=x$、$p_2(x,y)=y$，因此 $p_2$ 的定义域是 $G$，不是仅为 $\mathfrak k$。在合订译图中按此移动标签。这是1967年已刊出的正式勘误，不是本次新发现。
+
+\audit{E5-D01}{（18.1.3.1）左上角的核图如何重绘}{明示重排；不将重排图冒称初版逐箭头复制}
+\source{EGA IV第一部分，印刷第52页；上传PDF第51页}
+初版图的左上角还放置了 $\mathfrak j'\oplus\mathfrak k'$、$\mathfrak k'$、$\mathfrak k$ 及若干未标名箭头。本译图采用同段文字给出的核计算，改画成以下自然正合列相互配合的图：
+\[
+ 0\longrightarrow\mathfrak j'
+ \longrightarrow\mathfrak j'\oplus\mathfrak k'
+ \xrightarrow{\,i_2\circ\operatorname{pr}_2\,}\mathfrak k
+ \longrightarrow0.
+\]
+将此列放在 $0\to\mathfrak j'\to G\xrightarrow{p_2}F$ 上方；中间竖箭头为核 $\Ker\varphi\hookrightarrow G$ 的包含，右侧竖箭头为 $\mathfrak k\hookrightarrow F$。于是每个小正方形确实交换。这保留了段落中 $i_1,i_2$ 的识别关系，但不是原图左上角的原样复制，已在译图旁说明。
+
+这里不能把 $f:E\to B$、$g:F\to B$ 默认当作满射，因为（18.1.2）没有这个假设。故译图没有擅自在 $E\to B$、$G\to F$ 后添加正合列终点 $\to0$。
+
+\audit{E5-T01}{（18.1.7）的泛性质箭头反向}{明确的构造方向订正；结论可直接验证}
+\source{印刷第54页；上传PDF第53页上半部}
+设 $h:G\twoheadrightarrow F$、$g:F\twoheadrightarrow B$，$\mathfrak j'=\Ker h$、$\mathfrak k=\Ker g$。给定 $G$-双模同态 $\theta:\mathfrak k\to G$，满足 $h\theta$ 为包含 $\mathfrak k\hookrightarrow F$。令
+\[
+ E=G/\theta(\mathfrak k),\quad q:G\twoheadrightarrow E,\quad
+ G'=E\times_BF.
+\]
+原文在使用纤维积泛性质时印作 $u:G'\to G$。然而已给出的同态是 $q:G\to E$、$h:G\to F$，所以泛性质直接产生的是
+\[
+ u:G\longrightarrow G',\qquad z\longmapsto(q(z),h(z)).
+\]
+这与译文的方向一致；原文的相伴分次映射也相应反向。下面给出完整验证，不把它混入原证明。
+
+\paragraph{良定义与环同态性质。}
+因为 $f\circ q=g\circ h$，$(q(z),h(z))$ 属于纤维积；两坐标均为环同态，故 $u$ 是 $A$-环同态。
+
+\paragraph{单射性。}
+若 $u(z)=0$，则 $q(z)=0$ 且 $h(z)=0$，所以 $z\in\theta(\mathfrak k)\cap\mathfrak j'$。若 $z=\theta(k)$，则 $0=h(z)=k$，从而 $z=0$。
+
+\paragraph{满射性。}
+任取 $(e,t)\in E\times_BF$。由 $q$ 满射，选 $z\in G$ 使 $q(z)=e$。纤维积条件给出
+\[
+ g(h(z)-t)=f(e)-g(t)=0,
+\]
+所以 $k=h(z)-t\in\mathfrak k$。置 $z'=z-\theta(k)$，则
+\[
+ q(z')=e,\qquad h(z')=h(z)-k=t.
+\]
+故 $u(z')=(e,t)$。因此 $u$ 双射。证明后当然可取其逆 $G'\to G$；问题在于不能在这一步以前，把逆方向说成由既有两映射直接产生的泛性质箭头。
+
+\audit{E5-T02}{（18.2.6）的商环和核的作用}{商环应为 $B'$；下降条件可由已有数据推出}
+\source{印刷第56--57页；上传PDF第55--56页}
+文中两个同态 $\theta_1,\theta_2$ 所产生的是 $B'=B/\mathfrak k$ 的扩张；原句写“$B$ 的扩张”与前一句及商构造不符，已改为 $B'$ 并作注。
+
+此外，$L$ 原来只是 $B$-双模。为什么在存在这样的 $\theta$ 时，可以把它看作 $B'$-双模？取 $k\in\mathfrak k$、$\ell\in L$，用 $j:L\hookrightarrow F$ 表示核的包含。$j(\ell)$ 作用于 $\mathfrak k$ 时，经 $F\to B$ 的像为零，因而
+\[
+ j(\ell)\theta(k)=\theta(j(\ell)\cdot k)=0,
+ \qquad
+ \theta(k)j(\ell)=\theta(k\cdot j(\ell))=0.
+\]
+按平方零扩张中 $B$ 的左右作用定义，这给出 $\ell k=k\ell=0$。所以 $\mathfrak k$ 从左右两侧零化 $L$，其双模结构才下降为 $B/\mathfrak k$ 的双模结构。这是对原文前提作用的说明，不是额外加强命题。
+
+\audit{E5-T03}{（18.2.7）并和泛性质中的字母}{源靶不合的排印错误}
+\source{印刷第57页；上传PDF第56页}
+已给定 $u:Y\to T$、$v:Z\to T$、$j_1:Y\to Y\oplus_XZ$、$j_2:Z\to Y\oplus_XZ$。原版第二个等式写为 $u=w\circ j_2$，但右端的定义域是 $Z$。应为
+\[
+ u=w\circ j_1,\qquad v=w\circ j_2.
+\]
+这是泛性质中的字母订正，不是并和构造的错误。
+
+\audit{E5-H01}{（18.2.8）改变商环时的相容双模结构}{引用构造时须明确的前提}
+\source{印刷第58页的前两个交换图；上传PDF第57页}
+若商环由 $B_1$ 变为 $B_2$，必须给 $L'$ 相容的 $B_2$-双模结构，并通过 $h:B_1\to B_2$ 得到 $B_1$-双模结构。这样 $w:L\to L'$ 才能同时用于两端的推前构造。仅有加法群或 $A$-双模同态，不能自动赋予推前对象所需的乘法。商环固定时，该相容性已包含在原文“$B$-双模同态”的假设里。
+
+\audit{E5-V01}{（18.2.8）推前扩张的直接验证}{补充论证；未发现这一构造的反例}
+取 $0\to L\xrightarrow{j}E\xrightarrow{f}B\to0$ 和 $B$-双模同态 $w:L\to L'$。在 $D_E(L')=E\oplus L'$ 上乘法为
+\[
+ (x,s)(y,t)=(xy,f(x)t+sf(y)).
+\]
+令 $N=\{(j(\ell),-w(\ell)):\ell\in L\}$。它是双边理想，因为
+\[
+\begin{aligned}
+ (x,s)(j(\ell),-w(\ell))
+  &=(j(f(x)\ell),-w(f(x)\ell)),\\
+ (j(\ell),-w(\ell))(x,s)
+  &=(j(\ell f(x)),-w(\ell f(x))).
+\end{aligned}
+\]
+这里分别用了 $f(j(\ell))=0$ 以及 $w$ 的左右 $B$-线性。令 $H=(E\oplus L')/N$。映射
+\[
+ L'\longrightarrow H,\ s\longmapsto[(0,s)],\qquad
+ H\longrightarrow B,\ [(x,s)]\longmapsto f(x)
+\]
+给出正合列：前一映射单射，因为 $(0,s)=(j(\ell),-w(\ell))$ 强迫 $\ell=0$、$s=0$；后一映射满射，因为 $f$ 满射。若 $f(x)=0$，写 $x=j(\ell)$，则
+\[
+ [(x,s)]=[(0,s+w(\ell))],
+\]
+故其核恰是 $L'$ 的像。最后，$[(0,s)][(0,t)]=0$，所以这是平方零扩张。该计算也解释了推前与普通张量积不能混为一谈。
+
+\audit{E5-T04}{（18.2.10）中的同态术语}{按原文括号中的精确说明解释}
+\source{印刷第59页；上传PDF第58页}
+原文写“从 $B$ 到 $E$ 的 $B$-环同态”，同时明确在括号内解释为增广 $f:E\to B$ 的 $A$-同态右逆。后者才是不依赖额外选择的准确条件：
+\[
+ g:B\to E\quad\text{为 $A$-环同态，且 }fg=1_B.
+\]
+选择 $g$ 之前没有在 $E$ 上固定一个 $B$-环结构。对于这样的 $g$，
+\[
+ (b,\ell)\longmapsto g(b)+j(\ell)
+\]
+是 $D_B(L)\to E$ 的扩张等价；其逆为
+\[
+ e\longmapsto\bigl(f(e),\ j^{-1}(e-g(f(e)))\bigr).
+\]
+乘法相容性由平方零条件和 $g$ 为环同态直接得到。故命题结论没有被反驳，只是术语必须依其括号定义读取。
+
+\audit{E5-T05}{（18.3.6）的函子式回指}{编号误植}
+\source{印刷第62页；上传PDF第61页}
+原文写（18.3.4.1），但这个编号没有出现；此处完成的正是（18.3.5.1）所定义的函子。正文只改该回指，不改原条目编号。
+
+\audit{E5-H02--H04}{中心作用与代数扩张所需的双模约定}{一般双模解释下有检验反例；对称约定下需明说}
+\source{（18.3.6）末段，印刷第62页；（18.4.1），印刷第64页}
+这里必须区分两个不同条件。$B$-双模要求左右作用相互交换，即 $(b\ell)c=b(\ell c)$；它不自动要求 $z\ell=\ell z$（$z\in Z(B)$）。而对 $A$-代数 $B$，若要一个核为 $L$ 的平方零扩张还是 $A$-代数，则至少需要
+\[
+ \rho(a)\ell=\ell\rho(a)\qquad(a\in A,\ell\in L).
+\]
+后一条件只涉及 $\rho(A)$，不等于对整个 $Z(B)$ 都对称。
+
+\paragraph{一个显式双模。}
+取 $B=\mathbb Q[t]$，令 $\sigma:B\to B$ 是自同构 $\sigma(p(t))=p(t+1)$。以 $B$ 的加法群为 $L$，定义
+\[
+ b\cdot\ell=b\ell,\qquad \ell\cdot b=\ell\,\sigma(b).
+\]
+两个作用均含幺；且
+\[
+ (b\cdot\ell)\cdot c=b\ell\sigma(c)
+ =b\cdot(\ell\cdot c),
+\]
+所以这是 $B$-双模。尽管 $t\in Z(B)$，却有
+\[
+ t\cdot1=t,\qquad1\cdot t=t+1.
+\]
+这直接说明（18.3.6）写出的 $yz=zy$ 不适用于所有通常意义下的双模。
+
+\paragraph{检验（18.4.1）。}
+再取 $A=B$，结构同态为恒等。在标准平凡扩张 $D_B(L)=B\oplus L$ 中，以 $a=(t,0)$、$e=(0,1)$ 计算，有
+\[
+ ae=(0,t),\qquad ea=(0,t+1).
+\]
+因此 $A$ 的结构像不在中心，$D_B(L)$ 不是这个结构下的 $A$-代数。
+
+事实上，在这个双模结构下根本不存在核为 $L$ 的 $A$-代数扩张。若有 $0\to L\xrightarrow{j}E\to B\to0$，且 $A\to E$ 的结构像在中心，设 $r:A\to E$ 为结构同态，则
+\[
+ j(t\cdot1)=r(t)j(1)=j(1)r(t)=j(1\cdot t).
+\]
+由 $j$ 单射便得到 $t=t+1$，矛盾。所以若完全不要求 $A$-对称性，原段所称“作为 $A$-代数的扩张类子群”甚至可能是空集。
+
+\paragraph{正确的适用界限。}
+将（18.4.1）的 $L$ 限定为对 $A$ 作用对称的 $B$-双模，并对推前对象 $L'$ 作同样要求，即可使标准平凡扩张的结构像中心化，纤维积与所用商构造也保持 $A$-代数性质。若作者的“双模”用语在本段已隐含“在 $A$ 上的双模”，那么这只是必须显式化的约定。\textbf{本报告不把缺乏明示约定等同于已反驳作者意图下的定理。}
+
+同样，上面对 $yz=zy$ 的检验并不证明 $\Exan_A(B,L)$ 不可能具有合适的中心作用。左右中心作用各自都可给出双模自同态；它们在扩张类群上的关系需要另外论证，不能单凭双模中这个不成立的逐元素等式得到。本轮只对原句采用了明确的适用范围提醒。
+
+\audit{E5-T06}{（18.4.3）Hochschild扩张的正合列}{前两个对象颠倒}
+\source{印刷第65页；上传PDF第64页}
+原版写 $0\to E\to L\to B\to0$，与此前的“以 $L$ 为核的 $B$ 的扩张”及随后 $E\simeq B\times L$ 不相容。应为 $0\to L\to E\to B\to0$。这是对象误置，不是需要修改Hochschild扩张的定义。
+
+\audit{E5-H05}{Hochschild余循环是否已归一化}{单位元和 $A$-模分裂的区别}
+设 $f$ 满足（18.4.3.1），令 $c=f(1,1)$。分别把 $(x,y,z)$ 取为 $(1,1,y)$ 和 $(x,1,1)$，得到
+\[
+ f(1,y)=cy,\qquad f(x,1)=xc.
+\]
+因此在乘法
+\[
+ (x,s)(y,t)=(xy,xt+sy+f(x,y))
+\]
+下，单位是 $(1,-c)$：两侧相乘分别给出
+\[
+ (1,-c)(y,t)=(y,t-cy+f(1,y))=(y,t),
+\]
+\[
+ (x,s)(1,-c)=(x,s-xc+f(x,1))=(x,s).
+\]
+若 $f$ 已归一化，即 $f(1,x)=f(x,1)=0$，单位才直接写为 $(1,0)$。若 $f=\delta g$，其中
+\[
+ (\delta g)(x,y)=xg(y)-g(xy)+g(x)y,
+\]
+则 $x\mapsto(x,-g(x))$ 为扩张的环截面，因为
+\[
+ (x,-g(x))(y,-g(y))=(xy,-g(xy)).
+\]
+又 $f(1,1)=g(1)$，故这个截面保持实际单位 $(1,-c)$。所以原段并未因没有写出归一化而被否定；真正应避免的是读者自行把所选 $A$-模分裂误当成保单位的环分裂。
+
+\audit{E5-T07}{（18.4.4）中线性所对应的基环}{已用反例检验的线性误植，不否定上同调公式}
+\source{印刷第66页；上传PDF第65页}
+$h':B\otimes_AB\to L$ 对第一个张量因子 $B$-线性，并不使 $g(y)=h'(1\otimes y)$ 对 $B$-线性。取
+\[
+ A=\mathbb Q,
+ \qquad B=L=\mathbb Q[t],
+ \qquad h'(x\otimes y)=x\frac{dy}{dt}.
+\]
+这个 $h'$ 对 $A$-张量积良定义且对 $B$ 线性；但 $g(1)=0$、$g(t)=1$。若 $g$ 为 $B$-线性，就应有 $g(t)=tg(1)=0$，矛盾。
+
+这不是无关紧要的措辞：若只允许 $B$-线性的 $g$，就会改变余边界的范围。以二阶导数 $g=d^2/dt^2$ 为例，它是 $A$-线性的，且
+\[
+ \delta g(x,y)=xg(y)-g(xy)+g(x)y=-2x'y'.
+\]
+这是一个实际的 $2$-余边界。若它由某个 $B$-线性映射 $\widetilde g$ 产生，那么 $\widetilde g(x)=x c$，故 $\delta\widetilde g(x,y)=xyc$。取 $x=y=1$ 得 $c=0$，再取 $x=y=t$ 得 $0=-2$，矛盾。所以应当使用 $A$-线性映射，正如原文上一段（18.4.3.2）已写明的那样。
+
+\audit{E5-T08--T09}{（18.5.1）、（18.5.4）的环归属与回指}{两处可确定的文字订正}
+（18.5.1）中 $\mathfrak k'$ 是 $B$ 的开理想，$\mathfrak j'$ 是 $A$ 的开理想；原版“分别属于 $A,B$”把顺序反写，已注明订正。
+
+（18.5.4）证明调用的是商环扩张分类（18.3.8），原版写（18.3.9），但18.3没有该条。合订译稿改为（18.3.8），保留注记，不重新编造一条18.3.9。
+
+\audit{E5-V02}{（18.5.4）取极限步骤的共尾性}{补充验证；不宣称原结论错误}
+令 $\pi:B\twoheadrightarrow C=B/\mathfrak j$。按（18.5.1），$\Exantop_B(C,L)$ 的指标是开理想偶对 $(I,K)$，其中 $I\subset B$、$K\subset C$，满足 $\pi(I)\subset K$，且 $K$ 从左右两侧零化 $L$。
+
+\paragraph{第一步：限制到单指标系。}
+商映射 $\pi$ 是开映射，所以 $\pi(I)=(I+\mathfrak j)/\mathfrak j$ 是 $C$ 的开理想。每个 $(I,K)$ 都被 $(I,\pi(I))$ 细化，后者仍零化 $L$。因此形如 $(I,\pi(I))$ 的指标构成共尾子系。这里不需要假设 $\mathfrak j$ 闭，也不需要假设 $B$ 分离。
+
+\paragraph{第二步：计算有限阶段的余法双模。}
+对满同态
+\[
+ B/I\longrightarrow B/(\mathfrak j+I),
+\]
+其核为 $(\mathfrak j+I)/I$，核的平方为 $(\mathfrak j^2+I)/I$。所以（18.3.8）给出
+\[
+ \Exan_{B/I}\bigl(B/(\mathfrak j+I),L\bigr)
+ \simeq
+ \Hom_{B/(\mathfrak j+I)}
+ \bigl((\mathfrak j+I)/(\mathfrak j^2+I),L\bigr).
+\]
+又有典范同构
+\[
+ (\mathfrak j+I)/(\mathfrak j^2+I)
+ \simeq \mathfrak j/(\mathfrak j^2+\mathfrak j\cap I).
+\]
+
+\paragraph{第三步：连续同态恰好从某一阶段下降。}
+设 $u:\mathfrak j/\mathfrak j^2\to L$ 连续。$L$ 离散，所以 $u$ 的核开；将它拉回到 $\mathfrak j$ 得到一个含 $\mathfrak j^2$ 的开子双模 $V$。因为 $\mathfrak j$ 取由 $B$ 诱导的拓扑，可选 $B$ 的开理想 $I$，使 $\mathfrak j\cap I\subset V$；再与一个在 $C$ 中零化 $L$ 的开理想的逆像相交，使 $\pi(I)$ 零化 $L$。于是 $u$ 从上一步的商双模下降。
+
+反之，从有限阶段商双模到离散 $L$ 的同态，拉回后其核含开子模 $\mathfrak j\cap I$，故连续。各过渡映射保持这一识别，两个表示在更细的共同阶段一致。因此取归纳极限得到（18.5.4.1）。这补足了原文最后一句所省略的指标与拓扑核对。
+
+\section*{本轮检查方法与限制}
+\addcontentsline{toc}{section}{本轮检查方法与限制}
+本轮逐条核对新增范围的原文页面；重点放大检查了纤维积重建、推前扩张、扩张类群、Hochschild复形及拓扑极限所涉及的符号和图。独立验证脚本检查了扭曲双模计算、二阶导数余边界、有限次数Hochschild边界的复合，以及模 $9$ 的环纤维积重建例。脚本成功只是这些有限计算的辅助证据，不代替上面的普遍证明。
+
+排版、条目、公式和编译检查的实际结果另见工程包的构建检查说明及JSON记录（位于\texttt{checks}目录）。本报告的历史部分仍保留其旧批次措辞；“历史报告已收录”不等于本轮再次认证全部旧判断。

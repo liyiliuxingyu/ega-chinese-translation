@@ -1,0 +1,268 @@
+\subsection{整体超 Tor 中的基变换谱序列}
+\source{\texttt{EGAIII.2.pdf}，PDF第33--38页；原书第34--39页}
+\egap{6.9.1}
+仍采用（6.7.11）的假设和记号，特别地，各 $\mathscr P^{(i)}_\bullet$ 下有界。考虑预概形态射 $g:S'\to S$，并置
+\[
+ Y'^{(i)}=Y^{(i)}_{(S')},\quad X'^{(i)}=X^{(i)}_{(S')},\quad
+ \mathscr P'^{(i)}_\bullet=\mathscr P^{(i)}_\bullet\otimes_{\OO_S}\OO_{S'}.
+\]
+于是 $\mathscr P'^{(i)}_\bullet$ 是拟凝聚 $\OO_{X'^{(i)}}$-模复形。令 $f'_i=(f_i)_{(S')}:X'^{(i)}\to Y'^{(i)}$；它分离且拟紧（I，5.5.1、6.6.4）。要研究拟凝聚 $\OO_{Y'}$-模
+\[
+ \lTor_n^{S'}\bigl((f'_i)_{i\in I};(\mathscr P'^{(i)}_\bullet)_{i\in I}\bigr)
+ \quad\hbox{与}\quad
+ \lTor_n^S\bigl((f_i)_{i\in I};(\mathscr P^{(i)}_\bullet)_{i\in I}\bigr)
+                 \otimes_{\OO_S}\OO_{S'}
+\]
+之间的关系；这里 $Y'=Y\times_SS'=Y_{(S')}$。下面是特别简单的一种情形；当 $I$ 只有一个元素且复形只含一个模时，它还原为（1.4.15）。
+
+\egas{6.9.2}{命题}
+若 $g:S'\to S$ 平坦，则有关于各 $\mathscr P^{(i)}_\bullet$ 的 $\delta$-函子的典范同构
+\begin{equation}\tag{6.9.2.1}
+\begin{aligned}
+ &\lTor_*^S\bigl((f_i)_{i\in I};(\mathscr P^{(i)}_\bullet)_{i\in I}\bigr)
+           \otimes_{\OO_S}\OO_{S'}\\
+ &\qquad\simeq\lTor_*^{S'}\bigl((f'_i)_{i\in I};(\mathscr P'^{(i)}_\bullet)_{i\in I}\bigr).
+\end{aligned}
+\end{equation}
+\begin{proof}
+仍可只考虑 $S,S'$ 和各 $Y^{(i)}$ 仿射的情形，随后按（6.7.1）、（6.7.2）的方法粘合。设 $S=\Spec A$、$S'=\Spec A'$，并对每个 $i$ 取 $X^{(i)}$ 的仿射开覆盖 $\mathfrak U^{(i)}$。若 $u_i:X'^{(i)}\to X^{(i)}$ 是典范投影，则 $u_i^{-1}(\mathfrak U^{(i)})$ 是 $X'^{(i)}$ 的仿射开覆盖（II，1.5.5），记为 $\mathfrak U'^{(i)}$。显然，
+\[
+ C^\bullet(\mathfrak U'^{(i)},\mathscr P'^{(i)}_\bullet)
+ =C^\bullet(\mathfrak U^{(i)},\mathscr P^{(i)}_\bullet)\otimes_AA'.
+\]
+若 $M^{(i)}$ 是 $L^{(i)}=C^\bullet(\mathfrak U^{(i)},\mathscr P^{(i)}_\bullet)$ 按（0，11.7.1）取得的、由 $A$-模组成的投射 Cartan--Eilenberg 解消，则由 $A'$ 在 $A$ 上平坦，$M^{(i)}\otimes_AA'$ 是 $L^{(i)}\otimes_AA'$ 的同类投射解消，且
+\[
+ H_*\left(\bigotimes_{i=1}^m(M^{(i)}\otimes_AA')\right)
+ =H_*\left(\bigotimes_{i=1}^mM^{(i)}\right)\otimes_AA'.
+\]
+这立即给出（6.9.2.1）。
+\end{proof}
+当 $I=\{1\}$ 时，（6.9.2.1）也可直接从（6.7.7）得到：取 $Y_2=X_2=S'$、$f_2=1_{S'}$，并将 $\mathscr P^{(2)}_\bullet$ 取为仅第零项等于 $\OO_{S'}$ 的复形；此时 $\cH^n(1_{S'},\OO_{S'})$ 在 $n\ne0$ 时为零，在 $n=0$ 时等于 $\OO_{S'}$（6.2.1）。
+
+在一般情形中，以一个下有界拟凝聚 $\OO_{S'}$-模复形 $\mathscr Q'_\bullet$ 代替 $\OO_{S'}$。为简化书写，取 $I=\{1,\ldots,m\}$；于是可以考虑 $\delta$-函子
+\[
+ \lTor_*^S(f_1,\ldots,f_m,1_{S'};
+         \mathscr P^{(1)}_\bullet,\ldots,\mathscr P^{(m)}_\bullet,\mathscr Q'_\bullet).
+\]
+
+\egas{6.9.3}{命题}
+存在三个典范双正则谱函子，记为
+\[
+ {}^{(t)}\spE(f_1,\ldots,f_m;
+       \mathscr P^{(1)}_\bullet,\ldots,\mathscr P^{(m)}_\bullet,\mathscr Q'_\bullet),
+ \qquad t=e,f,f',
+\]
+其共同终值为上述 $\lTor_*^S$，且 $E^2$ 项分别为
+\begin{align*}
+ {}^{(e)}\spE^2_{pq}
+ &=\bigoplus_{q'+q''=q}\lTor_p^S\bigl(
+   \lTor_{q'}^S(f_1,\ldots,f_m;
+       \mathscr P^{(1)}_\bullet,\ldots,\mathscr P^{(m)}_\bullet),
+       \HH_{q''}(\mathscr Q'_\bullet)\bigr),\\
+ {}^{(f)}\spE^2_{pq}
+ &=\bigoplus_{q_1+\cdots+q_{m+1}=q}\lTor_p^{S'}\bigl(
+   \lTor_{q_1}^S(f_1,1_{S'};\mathscr P^{(1)}_\bullet,\OO_{S'}),\ldots,\\[-.6em]
+ &\hspace{7em}\lTor_{q_m}^S(f_m,1_{S'};\mathscr P^{(m)}_\bullet,\OO_{S'}),
+      \HH_{q_{m+1}}(\mathscr Q'_\bullet)\bigr),\\
+ {}^{(f')}\spE^2_{pq}
+ &=\bigoplus_{q_1+\cdots+q_m=q}\lTor_p^{S'}\bigl(
+  f'_1,\ldots,f'_m,1_{S'};
+  \termTor_{q_1}^{S}(\mathscr P^{(1)}_\bullet,\OO_{S'}),\ldots,\\[-.6em]
+ &\hspace{10em}\termTor_{q_m}^{S}(\mathscr P^{(m)}_\bullet,\OO_{S'}),
+  \mathscr Q'_\bullet\bigr).
+\end{align*}
+这里 $\mathrm{term}$ 沿用（6.7.3）译校注中的记号约定，表示逐项构成的复形。
+
+谱序列 $(e)$ 就是（6.8.2）在 $r=m$ 时的结合性谱序列。为定义另外两个谱序列，仍只处理 $S,S'$ 和各 $Y^{(i)}$ 仿射的情形；通过（6.7.1）、（6.7.2）的方法过渡到一般情形，留给读者。因此证明下述推论。
+
+\egas{6.9.4}{推论}
+设 $A$ 为环，$A'$ 为 $A$-代数，$S=\Spec A$、$S'=\Spec A'$；$X^{(i)}$（$1\leq i\leq m$）为拟紧 $S$-概形，且置 $X'^{(i)}=X^{(i)}_{(S')}$，它是拟紧 $S'$-概形。对每个 $i$，取拟凝聚 $\OO_{X^{(i)}}$-模复形 $\mathscr P^{(i)}_\bullet$；再取 $A'$-模复形 $Q'_\bullet$，所有这些复形均下有界。存在关于各复形的三个双正则谱函子，共同终值为
+\[
+ \bTor_*^S(X^{(1)},\ldots,X^{(m)},S';
+         \mathscr P^{(1)}_\bullet,\ldots,\mathscr P^{(m)}_\bullet,\widetilde{Q'_\bullet}),
+\]
+且 $E^2$ 项分别为
+\begin{align*}
+ {}^{(e)}E^2_{pq}
+ &=\bigoplus_{q'+q''=q}\Tor_p^A\bigl(
+     \bTor_{q'}^S(X^{(1)},\ldots,X^{(m)};
+          \mathscr P^{(1)}_\bullet,\ldots,\mathscr P^{(m)}_\bullet),H_{q''}(Q'_\bullet)\bigr),\\
+ {}^{(f)}E^2_{pq}
+ &=\bigoplus_{q_1+\cdots+q_{m+1}=q}\Tor_p^{A'}\bigl(
+      \bTor_{q_1}^S(X^{(1)},S';\mathscr P^{(1)}_\bullet,\OO_{S'}),\ldots,\\[-.6em]
+ &\hspace{8em}\bTor_{q_m}^S(X^{(m)},S';\mathscr P^{(m)}_\bullet,\OO_{S'}),
+        H_{q_{m+1}}(Q'_\bullet)\bigr),\\
+ {}^{(f')}E^2_{pq}
+ &=\bigoplus_{q_1+\cdots+q_m=q}\bTor_p^{S'}\bigl(
+   X'^{(1)},\ldots,X'^{(m)},S';
+   \termTor_{q_1}^S(\mathscr P^{(1)}_\bullet,\OO_{S'}),\ldots,\\[-.6em]
+ &\hspace{10em}\termTor_{q_m}^S(\mathscr P^{(m)}_\bullet,\OO_{S'}),
+       \widetilde{Q'_\bullet}\bigr).
+\end{align*}
+\begin{proof}
+第一个谱函子已在（6.8.3）处理，此处仅为备查而重列。为定义另外两个，对每个 $i$ 取 $X^{(i)}$ 的有限仿射开覆盖 $\mathfrak U^{(i)}$；若 $u_i:X'^{(i)}\to X^{(i)}$ 为典范投影，则相应有限仿射开覆盖为 $\mathfrak U'^{(i)}=u_i^{-1}(\mathfrak U^{(i)})$。由（6.6.6），上述超 Tor 可如下计算：对每个 $i$ 取 $L^{(i)}=C^\bullet(\mathfrak U^{(i)},\mathscr P^{(i)}_\bullet)$ 按（0，11.7.1）意义的投射 Cartan--Eilenberg 解消 $M^{(i)}$，形成三重复形
+\[
+ M_{\bullet\bullet\bullet}
+ =M^{(1)}_{\bullet\bullet\bullet}\otimes_A\cdots\otimes_AM^{(m)}_{\bullet\bullet\bullet}\otimes_AQ'_\bullet,
+\]
+其中 $Q'_\bullet$ 被视为后两个次数均为零的三重复形，然后取同调。置 $M'^{(i)}=M^{(i)}\otimes_AA'$；因为 $Q'_\bullet$ 是 $A'$-模复形，有
+\[
+ M=M'^{(1)}\otimes_{A'}\cdots\otimes_{A'}M'^{(m)}\otimes_{A'}Q'_\bullet.
+\]
+将每个 $M'^{(i)}$ 按总次数视为单复形，其各项都是投射 $A'$-模。由（6.3.7）对任意有限个复形的推广，$H_*(M)$ 也等于
+$\Tor_*^{A'}(M'^{(1)},\ldots,M'^{(m)},Q'_\bullet)$。因此它是（6.5.15）中某个谱序列的终值；其 $E^2$ 项为
+\[
+ E^2_{pq}=\bigoplus_{q_1+\cdots+q_{m+1}=q}
+ \Tor_p^{A'}\bigl(H_{q_1}(M'^{(1)}),\ldots,H_{q_m}(M'^{(m)}),
+                   H_{q_{m+1}}(Q'_\bullet)\bigr).
+\]
+由整体超 Tor 的定义，
+\[
+ H_{q_i}(M'^{(i)})=H_{q_i}(M^{(i)}\otimes_AA')
+ =\bTor_{q_i}^S(X^{(i)},S';\mathscr P^{(i)}_\bullet,\OO_{S'}),
+\]
+故得到所求 $(f)$。当 $\mathscr P^{(i)}_\bullet$ 下有界时，$M^{(i)}$ 的三个次数均下有界，这也给出所需的正则性。
+
+另一方面，可把 $M'^{(i)}$ 看作双复形：第一次数为原三重复形的第一、第二次数之和，第二次数为原第三次数。各项为投射 $A'$-模，故由一般超同调理论，其张量积双复形的同调典范同构于超同调（0，11.6.5）。因此它是一个 $E^2$ 项为
+\[
+ E^2_{pq}=\bigoplus_{q_1+\cdots+q_{m+1}=q}\Tor_p^{A'}
+ \bigl(H^{\mathrm{II}}_{q_1}(M'^{(1)}),\ldots,
+       H^{\mathrm{II}}_{q_m}(M'^{(m)}),H^{\mathrm{II}}_{q_{m+1}}(Q'_\bullet)\bigr)
+\]
+的谱序列的终值。因 $Q'_\bullet$ 的第二次数只为零，$H_n^{\mathrm{II}}(Q'_\bullet)=0$（$n\ne0$），而 $H_0^{\mathrm{II}}(Q'_\bullet)=Q'_\bullet$，所以该式成为
+\[
+ E^2_{pq}=\bigoplus_{q_1+\cdots+q_m=q}\Tor_p^{A'}
+ \bigl(H^{\mathrm{II}}_{q_1}(M'^{(1)}),\ldots,
+       H^{\mathrm{II}}_{q_m}(M'^{(m)}),Q'_\bullet\bigr).
+\]
+又由（6.3.4），$H^{\mathrm{II}}_{q_i}(M'^{(i)})=
+H^{\mathrm{III}}_{q_i}(M^{(i)}\otimes_AA')=\Tor_{q_i}^A(L^{(i)},A')$。各 $L^{(i)}_{jk}=C^j(\mathfrak U^{(i)},\mathscr P^{(i)}_k)$ 是模 $\Gamma(V,\mathscr P^{(i)}_k)$ 的直和，其中 $V$ 遍历覆盖中 $j+1$ 个开集的仿射交。令 $V'=u_i^{-1}(V)$，它在 $X'^{(i)}$ 中仿射，由（6.4.1.1），
+\[
+ \Gamma(V',\lTor_{q_i}^S(\mathscr P^{(i)}_k,\OO_{S'}))
+ =\Tor_{q_i}^A(\Gamma(V,\mathscr P^{(i)}_k),A').
+\]
+从而该同调双复形可写成
+\[
+ C^\bullet\bigl(\mathfrak U'^{(i)},
+                \termTor_{q_i}^S(\mathscr P^{(i)}_\bullet,\OO_{S'})\bigr),
+\]
+最终给出 $(f')$ 的 $E^2$ 项。双正则性照常由各 $M^{(i)}$ 的三个次数下有界验证。
+\end{proof}
+
+\egas{6.9.5}{注记}
+如（6.7.6）所示，将各 $\mathscr P^{(i)}_\bullet$ 及 $\mathscr Q'_\bullet$ 分别替换为与其同伦等价的复形，不改变 $(e),(f),(f')$，只相差典范同构。此外，对于 $(f)$，若复形同态
+$\mathscr P^{(i)}_\bullet\to\mathscr R^{(i)}_\bullet$、
+$\mathscr Q'_\bullet\to\mathscr T'_\bullet$ 在同调上给出同构，则它们也给出相应 $(f)$ 谱序列的同构。证明与（6.7.6）相同，并使用该处结果以及 $(f)$ 的正则性。
+\cmt{C3-T02}{本段三次引（6.7.6）；对应“同伦等价”和“同调同构”比较的一般命题实际为（6.7.5）。保留底本引号，并在此提示其可能错引；不得把同伦等价与仅同调同构当作同一个条件。}
+
+\egas{6.9.6}{推论}
+在（6.9.1）的条件下，设：一、各 $\mathscr P^{(i)}_\bullet$ 的项均在 $S$ 上平坦，且各
+$\lTor_n^S(f_1,\ldots,f_m;\mathscr P^{(1)}_\bullet,\ldots,\mathscr P^{(m)}_\bullet)$ 在 $S$ 上平坦；二、各 $\mathscr P^{(i)}_\bullet$ 及 $\mathscr Q'_\bullet$ 下有界。置
+$\mathscr P'^{(i)}_\bullet=\mathscr P^{(i)}_\bullet\otimes_{\OO_S}\OO_{S'}$，则有函子性的典范同构
+\begin{equation}\tag{6.9.6.1}
+\begin{aligned}
+ &\lTor_n^{S'}(f'_1,\ldots,f'_m,1_{S'};
+      \mathscr P'^{(1)}_\bullet,\ldots,\mathscr P'^{(m)}_\bullet,\mathscr Q'_\bullet)\\
+ &\quad\simeq\bigoplus_{n'+n''=n}
+ \lTor_{n'}^S(f_1,\ldots,f_m;
+       \mathscr P^{(1)}_\bullet,\ldots,\mathscr P^{(m)}_\bullet)
+          \otimes_{\OO_S}\HH_{n''}(\mathscr Q'_\bullet).
+\end{aligned}
+\end{equation}
+特别地，当 $\mathscr Q'_\bullet$ 仅在次数0处等于 $\F'$ 时，
+\begin{equation}\tag{6.9.6.2}
+\begin{aligned}
+ &\lTor_n^{S'}(f'_1,\ldots,f'_m,1_{S'};
+     \mathscr P'^{(1)}_\bullet,\ldots,\mathscr P'^{(m)}_\bullet,\F')\\
+ &\qquad\simeq\lTor_n^S(f_1,\ldots,f_m;
+     \mathscr P^{(1)}_\bullet,\ldots,\mathscr P^{(m)}_\bullet)\otimes_{\OO_S}\F'.
+\end{aligned}
+\end{equation}
+再取 $\F'=\OO_{S'}$，则
+\begin{equation}\tag{6.9.6.3}
+\begin{aligned}
+ &\lTor_n^{S'}(f'_1,\ldots,f'_m;
+     \mathscr P'^{(1)}_\bullet,\ldots,\mathscr P'^{(m)}_\bullet)\\
+ &\qquad\simeq\lTor_n^S(f_1,\ldots,f_m;
+     \mathscr P^{(1)}_\bullet,\ldots,\mathscr P^{(m)}_\bullet)\otimes_{\OO_S}\OO_{S'}.
+\end{aligned}
+\end{equation}
+\begin{proof}
+各项的平坦性使逐项复形 $\termTor^S_q(\mathscr P^{(i)}_\bullet,\OO_{S'})$ 在 $q\ne0$ 时为零（6.5.8）。因此 $(f')$ 退化；由条件二，它双正则（6.9.3），所以边缘同态
+\begin{equation}\tag{6.9.6.4}
+\begin{aligned}
+ &\lTor_n^S(f_1,\ldots,f_m,1_{S'};
+     \mathscr P^{(1)}_\bullet,\ldots,\mathscr P^{(m)}_\bullet,\mathscr Q'_\bullet)\\
+ &\quad\longrightarrow{}^{(f')}\spE^2_{n0}
+ =\lTor_n^{S'}(f'_1,\ldots,f'_m,1_{S'};
+     \mathscr P'^{(1)}_\bullet,\ldots,\mathscr P'^{(m)}_\bullet,\mathscr Q'_\bullet)
+\end{aligned}
+\end{equation}
+双射（0，11.1.6）。整体超 Tor 模的平坦性又使 ${}^{(e)}\spE^2_{pq}=0$（$p\ne0$）（6.5.8），所以 $(e)$ 也退化且双正则，其边缘同态
+\begin{equation}\tag{6.9.6.5}
+\begin{aligned}
+ &\lTor_n^S(f_1,\ldots,f_m,1_{S'};
+     \mathscr P^{(1)}_\bullet,\ldots,\mathscr P^{(m)}_\bullet,\mathscr Q'_\bullet)\\
+ &\quad\longrightarrow{}^{(e)}\spE^2_{0n}
+ =\bigoplus_{n'+n''=n}\lTor_{n'}^S(f_1,\ldots,f_m;
+     \mathscr P^{(1)}_\bullet,\ldots,\mathscr P^{(m)}_\bullet)
+       \otimes_{\OO_S}\HH_{n''}(\mathscr Q'_\bullet)
+\end{aligned}
+\end{equation}
+也双射（0，11.1.6）。组合这两个同构便得（6.9.6.1）。若只剩第零项 $\F'$，同调只在次数0处非零，故得（6.9.6.2）；再用（6.7.12）得到（6.9.6.3）。
+\end{proof}
+
+\egas{6.9.7}{推论}
+在（6.9.1）的条件下，设 $S,S'$ 仿射，对每个 $i$ 给定整数 $d_i$（$1\leq i\leq m$）。存在只依赖于 $S$、各 $X^{(i)}$ 和 $d_i$ 的整数 $N$，具有如下性质：对每个整数 $n_0$，以及满足下列条件的任意一组复形，当 $n\leq n_0$ 时有（6.9.6.3）的典范同构：一、$\mathscr P^{(i)}_k=0$（$k<d_i$）；二、$\mathscr P^{(i)}_k$ 在 $S$ 上平坦（$k<n_0+N$）；三、整体超 Tor 模在次数 $q<n_0+N$ 时在 $S$ 上平坦。
+\begin{proof}
+若 $\mathscr P^{(i)}_k$ 在 $k<r$ 时在 $S$ 上平坦，则
+$\lTor^S_{q_i}(\mathscr P^{(i)}_k,\OO_{S'})=0$（$k<r$ 且 $q_i\ne0$）。按（6.6.2）的方法，借助 $X^{(i)}$ 上某个固定有限仿射覆盖 $\mathfrak U^{(i)}$ 的逆像来计算
+\begin{equation}\tag{6.9.7.1}
+ \lTor_p^{S'}\bigl(f'_1,\ldots,f'_m;
+    \termTor^S_{q_1}(\mathscr P^{(1)}_\bullet,\OO_{S'}),\ldots,
+    \termTor^S_{q_m}(\mathscr P^{(m)}_\bullet,\OO_{S'})\bigr).
+\end{equation}
+这些覆盖与 $S'$ 和各复形无关。相应 $L^{(i)}_{jk}$ 在 $j<-N_i$ 时为零，其中 $N_i$ 只依赖于覆盖。若某个 $q_i\ne0$，则用于计算（6.9.7.1）的单复形在所有次数
+\[
+ <r+\sum_{j\ne i}d_j-\sum_{j=1}^mN_j
+\]
+处为零。因此（6.9.7.1）在 $p<r-N$ 时为零，其中 $N$ 取各数
+$\sum_jN_j-\sum_{j\ne i}d_j$ 的最大值。于是 ${}^{(f')}\spE^2_{pq}=0$，只要 $q\ne0$ 且 $p<r-N$；又它在 $q<0$ 时为零，故边缘同态（6.9.6.4）在 $n<r-N$ 时双射（M，XV，5.6），此处取 $\mathscr Q'_\bullet=\OO_{S'}$。另一方面，若整体超 Tor 模在 $q<r$ 时在 $S$ 上平坦，则 ${}^{(e)}\spE^2_{pq}=0$（$p\ne0$ 且 $q<r$）；它还在 $p<0$ 时为零，所以（6.9.6.5）在 $n<r$ 时双射。这完成证明。
+\cmt{C3-H02}{底本陈述使用 $n\leq n_0$，证明的估计使用严格不等式。因结论仅断言某个常数 $N$ 存在，可以先把所得常数增大1，从而把 $n<n_0+1$ 写为 $n\leq n_0$。这里不把端点的记号差异当作反例。}
+\end{proof}
+
+应用中（6.9.3）最重要的情形是 $m=1$，且 $\mathscr Q'_\bullet$ 仅含次数0的项 $\F'$。为便于以后引用，重新陈述如下。
+\orig{（6.9.8）所处理的情形，特别是谱序列（6.9.8.3）、（6.9.8.4），是J.-P. Serre于1957年向我们指出的。}
+\egas{6.9.8}{命题}
+设 $S$ 为预概形，$g:S'\to S$ 为态射，$f:X\to Y$ 为 $S$-预概形间的分离拟紧 $S$-态射，$\PP_\bullet$ 为下有界拟凝聚 $\OO_X$-模复形，$\F'$ 为拟凝聚 $\OO_{S'}$-模。存在关于 $\PP_\bullet,\F'$ 的两个双正则谱函子，取值于拟凝聚 $\OO_{Y_{(S')}}$-模范畴，共同终值为 $\lTor_*^S(f,1_{S'};\PP_\bullet,\F')$，其 $E^2$ 项为
+\begin{align}
+ {}'\spE^2_{pq}&=\lTor_p^S(\cH^{-q}(f,\PP_\bullet),\F'),\tag{6.9.8.1}\\
+ {}''\spE^2_{pq}&=\cH^{-p}(f',\termTor_q^S(\PP_\bullet,\F')),\tag{6.9.8.2}
+\end{align}
+其中 $f'=f_{(S')}:X_{(S')}\to Y_{(S')}$。
+
+这两个谱序列也可不经（6.9.3），而直接从（6.7.3）的 $(a),(b')$ 得到：取 $X^{(1)}=X$、$Y^{(1)}=Y$、$X^{(2)}=Y^{(2)}=S'$、$f_1=f$、$f_2=1_{S'}$。当 $S=S'=Y$ 且 $Y$ 仿射时，得到 $E^2$ 项为
+\begin{align}
+ {}'\spE^2_{pq}&=\lTor_p^Y(\cH^{-q}(f,\PP_\bullet),\F),\tag{6.9.8.3}\\
+ {}''\spE^2_{pq}&=\cH^{-p}(f,\termTor_q^Y(\PP_\bullet,\F))\tag{6.9.8.4}
+\end{align}
+的两个谱序列。对任意拟凝聚且 $Y$-平坦的 $\OO_Y$-模 $\F$，或当 $\PP_\bullet$ 由 $Y$-平坦 $\OO_X$-模组成时对任意拟凝聚 $\OO_Y$-模 $\F$，它们由（6.7.6）收敛到函子 $f_*$ 关于复形 $\PP_\bullet\otimes_Y\F$ 的超上同调。这些谱序列不同于（6.2.1）的谱序列。
+
+\egas{6.9.9}{推论}
+在（6.9.8）的条件下，设 $\PP_\bullet$ 下有界，且由 $S$-平坦模组成，并设各 $\cH^n(f,\PP_\bullet)$ 在 $S$ 上平坦。则有函子性的典范同构
+\begin{equation}\tag{6.9.9.1}
+ \lTor_n^{S'}(f',1_{S'};\PP'_\bullet,\F')
+ \simeq\cH^{-n}(f,\PP_\bullet)\otimes_{\OO_S}\F',
+\end{equation}
+其中 $\PP'_\bullet=\PP_\bullet\otimes_{\OO_S}\OO_{S'}$；特别地，当 $\F'=\OO_{S'}$ 时，
+\begin{equation}\tag{6.9.9.2}
+ \cH^n(f',\PP'_\bullet)\simeq\cH^n(f,\PP_\bullet)\otimes_{\OO_S}\OO_{S'}.
+\end{equation}
+这是（6.9.6）的 $m=1$ 特例。进一步得到：
+
+\egas{6.9.10}{推论}
+设 $S$ 为预概形，$f:X\to Y$ 为 $S$-预概形间的分离拟紧 $S$-态射，$\PP_\bullet$ 为由拟凝聚且 $S$-平坦的 $\OO_X$-模组成的下有界复形。又设各 $\cH^n(f,\PP_\bullet)$ 在 $S$ 上平坦。对每个 $s\in S$，以 $X_s,Y_s$ 表示纤维，$f_s:X_s\to Y_s$ 表示 $f\times_S1$，$\PP^s_\bullet=\PP_\bullet\otimes_{\OO_S}k(s)$。则有函子性的典范同构
+\begin{equation}\tag{6.9.10.1}
+ \cH^n(f_s,\PP^s_\bullet)\simeq\cH^n(f,\PP_\bullet)\otimes_{\OO_S}k(s).
+\end{equation}
+由此，在适当的平坦性假设下，导出函子 $R^nf_*$ 的形成“与取纤维交换”。第7节还将用另一种方法重新得到这一情形。

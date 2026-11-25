@@ -1,0 +1,41 @@
+{
+  "edition": 19,
+  "changes": [
+    {
+      "path": "reports/v19_8_end_audit.tex",
+      "before_sha256": "6c407db24eaa75761a262b1fd0fe015186c1ecb896fe4649f5e42e4056d97dd5",
+      "after_sha256": "117e983abff77e55a28e8698396232ef8fef6060ec512ea3d436e33575fb9de3",
+      "change": "Correct running header only; no body, note or proof changed."
+    },
+    {
+      "path": "reports/v19_sections9_10_audit.tex",
+      "before_sha256": "411094b31c636b0f098a35feb086e78996b94ba64cff5434937246207ebb6258",
+      "after_sha256": "19eb14527fd128e1e89c5a498f47d64bf81d8df779b211ea0daff973c5f84688",
+      "change": "Correct running header only; no body, note or proof changed."
+    },
+    {
+      "path": "reports/audit_section11.tex",
+      "before_sha256": "27563fa2338c16a28f9b4d434299513bcc4ebdf474642ae9e063bb6f20efd407",
+      "after_sha256": "0716c36010512e47c0f36d81514c6a47a04fa6002c9b5efffd548654a893cd79",
+      "change": "Correct running header only; no body, note or proof changed."
+    }
+  ],
+  "additional_layout_changes": [
+    {
+      "path": "continuations/v19_section11.tex",
+      "change": "Add Needspace of 10 baselines before section11 heading to keep heading, source and opening paragraph together."
+    },
+    {
+      "path": "reports/v19_integration_audit.tex",
+      "change": "Use breakable path typesetting for four verification-record paths; resolves observed overfull line."
+    },
+    {
+      "path": "continuations/v19_8_end.tex",
+      "change": "Attach 12 M19-8E note markers without preceding linebreak opportunity, resolving observed isolated markers on pages1038 and1039."
+    },
+    {
+      "path": "continuations/v19_section9.tex",
+      "change": "Separate adjacent note markers with superscript comma; move the editorial calculation note from after display to its introductory clause."
+    }
+  ]
+}

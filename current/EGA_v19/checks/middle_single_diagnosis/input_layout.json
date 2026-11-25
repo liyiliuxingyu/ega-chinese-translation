@@ -1,0 +1,841 @@
+{
+  "files_in_closure": 168,
+  "input_directives": [
+    {
+      "from": "report.tex",
+      "line": 2,
+      "to": "preamble.tex"
+    },
+    {
+      "from": "report.tex",
+      "line": 29,
+      "to": "reports/v18_integration_audit.tex"
+    },
+    {
+      "from": "report.tex",
+      "line": 30,
+      "to": "reports/v18_late_notes.tex"
+    },
+    {
+      "from": "report.tex",
+      "line": 31,
+      "to": "reports/v18_early_notes.tex"
+    },
+    {
+      "from": "report.tex",
+      "line": 32,
+      "to": "reports/v18_middle_notes.tex"
+    },
+    {
+      "from": "report.tex",
+      "line": 37,
+      "to": "reports/supplement_III_audit.tex"
+    },
+    {
+      "from": "report.tex",
+      "line": 38,
+      "to": "reports/seventeenth_integration.tex"
+    },
+    {
+      "from": "report.tex",
+      "line": 39,
+      "to": "reports/dot_early_audit.tex"
+    },
+    {
+      "from": "report.tex",
+      "line": 40,
+      "to": "reports/dot_middle_audit.tex"
+    },
+    {
+      "from": "report.tex",
+      "line": 41,
+      "to": "reports/dot_late_audit.tex"
+    },
+    {
+      "from": "report.tex",
+      "line": 42,
+      "to": "reports/short_collation_audit.tex"
+    },
+    {
+      "from": "report.tex",
+      "line": 47,
+      "to": "reports/sixteenth_audit.tex"
+    },
+    {
+      "from": "report.tex",
+      "line": 52,
+      "to": "reports/fifteenth_audit.tex"
+    },
+    {
+      "from": "report.tex",
+      "line": 57,
+      "to": "reports/fourteenth_audit.tex"
+    },
+    {
+      "from": "report.tex",
+      "line": 62,
+      "to": "reports/thirteenth_audit.tex"
+    },
+    {
+      "from": "report.tex",
+      "line": 67,
+      "to": "reports/twelfth_audit.tex"
+    },
+    {
+      "from": "report.tex",
+      "line": 72,
+      "to": "reports/eleventh_audit.tex"
+    },
+    {
+      "from": "report.tex",
+      "line": 77,
+      "to": "reports/tenth_audit.tex"
+    },
+    {
+      "from": "report.tex",
+      "line": 82,
+      "to": "reports/ninth_audit.tex"
+    },
+    {
+      "from": "report.tex",
+      "line": 87,
+      "to": "reports/eighth_audit.tex"
+    },
+    {
+      "from": "report.tex",
+      "line": 92,
+      "to": "reports/seventh_audit.tex"
+    },
+    {
+      "from": "report.tex",
+      "line": 97,
+      "to": "reports/sixth_audit.tex"
+    },
+    {
+      "from": "report.tex",
+      "line": 102,
+      "to": "reports/fifth_audit.tex"
+    },
+    {
+      "from": "report.tex",
+      "line": 107,
+      "to": "reports/fourth_audit.tex"
+    },
+    {
+      "from": "report.tex",
+      "line": 112,
+      "to": "reports/third_order_audit.tex"
+    },
+    {
+      "from": "report.tex",
+      "line": 117,
+      "to": "reports/current_audit.tex"
+    },
+    {
+      "from": "report.tex",
+      "line": 122,
+      "to": "reports/batch1_audit.tex"
+    },
+    {
+      "from": "report.tex",
+      "line": 127,
+      "to": "reports/legacy_I_II.tex"
+    },
+    {
+      "from": "reports/seventh_audit.tex",
+      "line": 227,
+      "to": "reports/withdrawn_19312_history.tex"
+    },
+    {
+      "from": "main.tex",
+      "line": 2,
+      "to": "preamble.tex"
+    },
+    {
+      "from": "main.tex",
+      "line": 5,
+      "to": "frontmatter.tex"
+    },
+    {
+      "from": "main.tex",
+      "line": 7,
+      "to": "text/introduction.tex"
+    },
+    {
+      "from": "main.tex",
+      "line": 8,
+      "to": "text/ch0_01_07.tex"
+    },
+    {
+      "from": "main.tex",
+      "line": 9,
+      "to": "text/ch0_08_13.tex"
+    },
+    {
+      "from": "main.tex",
+      "line": 11,
+      "to": "text/ch0_14_15a.tex"
+    },
+    {
+      "from": "main.tex",
+      "line": 12,
+      "to": "text/ch0_15b.tex"
+    },
+    {
+      "from": "main.tex",
+      "line": 13,
+      "to": "continuations/iv0_16_12.tex"
+    },
+    {
+      "from": "main.tex",
+      "line": 14,
+      "to": "continuations/iv0_16_3.tex"
+    },
+    {
+      "from": "main.tex",
+      "line": 15,
+      "to": "continuations/iv0_16_45.tex"
+    },
+    {
+      "from": "main.tex",
+      "line": 16,
+      "to": "continuations/iv0_17_1.tex"
+    },
+    {
+      "from": "main.tex",
+      "line": 17,
+      "to": "continuations/iv0_17_2.tex"
+    },
+    {
+      "from": "main.tex",
+      "line": 18,
+      "to": "continuations/iv0_17_3.tex"
+    },
+    {
+      "from": "main.tex",
+      "line": 19,
+      "to": "continuations/iv0_18_1.tex"
+    },
+    {
+      "from": "main.tex",
+      "line": 20,
+      "to": "continuations/iv0_18_2.tex"
+    },
+    {
+      "from": "main.tex",
+      "line": 21,
+      "to": "continuations/iv0_18_3.tex"
+    },
+    {
+      "from": "main.tex",
+      "line": 22,
+      "to": "continuations/iv0_18_4.tex"
+    },
+    {
+      "from": "main.tex",
+      "line": 23,
+      "to": "continuations/iv0_18_5.tex"
+    },
+    {
+      "from": "main.tex",
+      "line": 24,
+      "to": "continuations/iv0_19_01.tex"
+    },
+    {
+      "from": "main.tex",
+      "line": 25,
+      "to": "continuations/iv0_19_23.tex"
+    },
+    {
+      "from": "main.tex",
+      "line": 26,
+      "to": "continuations/iv0_19_4.tex"
+    },
+    {
+      "from": "main.tex",
+      "line": 27,
+      "to": "continuations/iv0_19_5a.tex"
+    },
+    {
+      "from": "main.tex",
+      "line": 28,
+      "to": "continuations/iv0_19_5b.tex"
+    },
+    {
+      "from": "main.tex",
+      "line": 29,
+      "to": "continuations/iv0_19_6.tex"
+    },
+    {
+      "from": "main.tex",
+      "line": 30,
+      "to": "continuations/iv0_19_7.tex"
+    },
+    {
+      "from": "main.tex",
+      "line": 31,
+      "to": "continuations/iv0_19_8.tex"
+    },
+    {
+      "from": "main.tex",
+      "line": 32,
+      "to": "continuations/iv0_19_9_10.tex"
+    },
+    {
+      "from": "main.tex",
+      "line": 33,
+      "to": "continuations/iv0_20_12.tex"
+    },
+    {
+      "from": "main.tex",
+      "line": 34,
+      "to": "continuations/iv0_20_3.tex"
+    },
+    {
+      "from": "main.tex",
+      "line": 35,
+      "to": "continuations/iv0_20_4.tex"
+    },
+    {
+      "from": "main.tex",
+      "line": 36,
+      "to": "continuations/iv0_20_5.tex"
+    },
+    {
+      "from": "main.tex",
+      "line": 37,
+      "to": "continuations/iv0_20_6a.tex"
+    },
+    {
+      "from": "main.tex",
+      "line": 38,
+      "to": "continuations/iv0_20_6b.tex"
+    },
+    {
+      "from": "main.tex",
+      "line": 39,
+      "to": "continuations/iv0_20_7a.tex"
+    },
+    {
+      "from": "main.tex",
+      "line": 40,
+      "to": "continuations/iv0_20_7b.tex"
+    },
+    {
+      "from": "main.tex",
+      "line": 41,
+      "to": "continuations/iv0_21_1.tex"
+    },
+    {
+      "from": "main.tex",
+      "line": 42,
+      "to": "continuations/iv0_21_2.tex"
+    },
+    {
+      "from": "main.tex",
+      "line": 43,
+      "to": "continuations/iv0_21_3.tex"
+    },
+    {
+      "from": "main.tex",
+      "line": 44,
+      "to": "continuations/iv0_21_4.tex"
+    },
+    {
+      "from": "main.tex",
+      "line": 45,
+      "to": "continuations/iv0_21_5.tex"
+    },
+    {
+      "from": "main.tex",
+      "line": 46,
+      "to": "continuations/iv0_21_6.tex"
+    },
+    {
+      "from": "main.tex",
+      "line": 47,
+      "to": "continuations/iv0_21_7.tex"
+    },
+    {
+      "from": "main.tex",
+      "line": 48,
+      "to": "continuations/iv0_21_8.tex"
+    },
+    {
+      "from": "main.tex",
+      "line": 49,
+      "to": "continuations/iv0_21_9a.tex"
+    },
+    {
+      "from": "main.tex",
+      "line": 50,
+      "to": "continuations/iv0_21_9b.tex"
+    },
+    {
+      "from": "main.tex",
+      "line": 51,
+      "to": "continuations/iv0_21_9c.tex"
+    },
+    {
+      "from": "main.tex",
+      "line": 52,
+      "to": "continuations/iv0_22_1.tex"
+    },
+    {
+      "from": "main.tex",
+      "line": 53,
+      "to": "continuations/iv0_22_2a.tex"
+    },
+    {
+      "from": "main.tex",
+      "line": 54,
+      "to": "continuations/iv0_22_2b.tex"
+    },
+    {
+      "from": "main.tex",
+      "line": 55,
+      "to": "continuations/iv0_22_3.tex"
+    },
+    {
+      "from": "main.tex",
+      "line": 56,
+      "to": "continuations/iv0_22_4a.tex"
+    },
+    {
+      "from": "main.tex",
+      "line": 57,
+      "to": "continuations/iv0_22_4b.tex"
+    },
+    {
+      "from": "main.tex",
+      "line": 58,
+      "to": "continuations/iv0_22_5a.tex"
+    },
+    {
+      "from": "main.tex",
+      "line": 59,
+      "to": "continuations/iv0_22_5b.tex"
+    },
+    {
+      "from": "main.tex",
+      "line": 60,
+      "to": "continuations/iv0_22_6.tex"
+    },
+    {
+      "from": "main.tex",
+      "line": 61,
+      "to": "continuations/iv0_22_7.tex"
+    },
+    {
+      "from": "main.tex",
+      "line": 62,
+      "to": "continuations/iv0_23_1.tex"
+    },
+    {
+      "from": "main.tex",
+      "line": 63,
+      "to": "continuations/iv0_23_2.tex"
+    },
+    {
+      "from": "main.tex",
+      "line": 66,
+      "to": "text/ch1.tex"
+    },
+    {
+      "from": "main.tex",
+      "line": 67,
+      "to": "text/ch2.tex"
+    },
+    {
+      "from": "main.tex",
+      "line": 68,
+      "to": "text/ch3_01_05.tex"
+    },
+    {
+      "from": "main.tex",
+      "line": 70,
+      "to": "text/ch3_06a.tex"
+    },
+    {
+      "from": "main.tex",
+      "line": 71,
+      "to": "text/ch3_06b.tex"
+    },
+    {
+      "from": "main.tex",
+      "line": 72,
+      "to": "text/ch3_06c.tex"
+    },
+    {
+      "from": "main.tex",
+      "line": 73,
+      "to": "continuations/iii2_67.tex"
+    },
+    {
+      "from": "main.tex",
+      "line": 74,
+      "to": "continuations/iii2_68.tex"
+    },
+    {
+      "from": "main.tex",
+      "line": 75,
+      "to": "continuations/iii2_69.tex"
+    },
+    {
+      "from": "main.tex",
+      "line": 76,
+      "to": "continuations/iii2_610.tex"
+    },
+    {
+      "from": "main.tex",
+      "line": 77,
+      "to": "continuations/iii2_71_72.tex"
+    },
+    {
+      "from": "main.tex",
+      "line": 78,
+      "to": "continuations/iii2_73.tex"
+    },
+    {
+      "from": "main.tex",
+      "line": 79,
+      "to": "continuations/iii2_74.tex"
+    },
+    {
+      "from": "main.tex",
+      "line": 80,
+      "to": "continuations/iii2_75_76.tex"
+    },
+    {
+      "from": "main.tex",
+      "line": 81,
+      "to": "continuations/iii2_77.tex"
+    },
+    {
+      "from": "main.tex",
+      "line": 82,
+      "to": "continuations/iii2_78_79.tex"
+    },
+    {
+      "from": "main.tex",
+      "line": 83,
+      "to": "text/remaining.tex"
+    },
+    {
+      "from": "main.tex",
+      "line": 88,
+      "to": "text/v1_2.tex"
+    },
+    {
+      "from": "main.tex",
+      "line": 89,
+      "to": "continuations/v_suppIII_63.tex"
+    },
+    {
+      "from": "main.tex",
+      "line": 90,
+      "to": "continuations/v_suppIII_64.tex"
+    },
+    {
+      "from": "main.tex",
+      "line": 91,
+      "to": "continuations/v_suppIII_65.tex"
+    },
+    {
+      "from": "main.tex",
+      "line": 92,
+      "to": "continuations/v_suppIII_66.tex"
+    },
+    {
+      "from": "main.tex",
+      "line": 93,
+      "to": "continuations/v_suppIII_67.tex"
+    },
+    {
+      "from": "main.tex",
+      "line": 94,
+      "to": "continuations/v_suppIII_68.tex"
+    },
+    {
+      "from": "main.tex",
+      "line": 96,
+      "to": "continuations/v18_batch069.tex"
+    },
+    {
+      "from": "main.tex",
+      "line": 97,
+      "to": "continuations/v18_batch070.tex"
+    },
+    {
+      "from": "main.tex",
+      "line": 98,
+      "to": "continuations/v18_batch071.tex"
+    },
+    {
+      "from": "main.tex",
+      "line": 99,
+      "to": "continuations/v18_batch072.tex"
+    },
+    {
+      "from": "main.tex",
+      "line": 101,
+      "to": "continuations/v18_first_preface.tex"
+    },
+    {
+      "from": "main.tex",
+      "line": 102,
+      "to": "continuations/v18_batch088.tex"
+    },
+    {
+      "from": "main.tex",
+      "line": 103,
+      "to": "continuations/v18_batch089.tex"
+    },
+    {
+      "from": "main.tex",
+      "line": 104,
+      "to": "continuations/v18_batch090.tex"
+    },
+    {
+      "from": "main.tex",
+      "line": 105,
+      "to": "continuations/v18_batch091.tex"
+    },
+    {
+      "from": "main.tex",
+      "line": 106,
+      "to": "continuations/v18_batch092.tex"
+    },
+    {
+      "from": "main.tex",
+      "line": 107,
+      "to": "continuations/v18_batch093.tex"
+    },
+    {
+      "from": "main.tex",
+      "line": 108,
+      "to": "continuations/v18_batch094.tex"
+    },
+    {
+      "from": "main.tex",
+      "line": 109,
+      "to": "continuations/v18_batch095.tex"
+    },
+    {
+      "from": "main.tex",
+      "line": 110,
+      "to": "continuations/v18_batch096.tex"
+    },
+    {
+      "from": "main.tex",
+      "line": 111,
+      "to": "continuations/v18_batch097.tex"
+    },
+    {
+      "from": "main.tex",
+      "line": 112,
+      "to": "continuations/v18_batch098.tex"
+    },
+    {
+      "from": "main.tex",
+      "line": 113,
+      "to": "continuations/v18_batch099.tex"
+    },
+    {
+      "from": "main.tex",
+      "line": 114,
+      "to": "continuations/v18_batch100.tex"
+    },
+    {
+      "from": "main.tex",
+      "line": 115,
+      "to": "continuations/v18_batch101.tex"
+    },
+    {
+      "from": "main.tex",
+      "line": 116,
+      "to": "continuations/v18_batch102.tex"
+    },
+    {
+      "from": "main.tex",
+      "line": 117,
+      "to": "continuations/v18_batch103.tex"
+    },
+    {
+      "from": "main.tex",
+      "line": 118,
+      "to": "continuations/v18_batch104.tex"
+    },
+    {
+      "from": "main.tex",
+      "line": 119,
+      "to": "continuations/v18_batch105.tex"
+    },
+    {
+      "from": "main.tex",
+      "line": 120,
+      "to": "continuations/v18_batch106.tex"
+    },
+    {
+      "from": "main.tex",
+      "line": 121,
+      "to": "continuations/v18_batch107.tex"
+    },
+    {
+      "from": "main.tex",
+      "line": 122,
+      "to": "continuations/v18_batch108.tex"
+    },
+    {
+      "from": "main.tex",
+      "line": 123,
+      "to": "continuations/v18_first_8_14_onward.tex"
+    },
+    {
+      "from": "main.tex",
+      "line": 124,
+      "to": "continuations/v_dot_middle.tex"
+    },
+    {
+      "from": "main.tex",
+      "line": 125,
+      "to": "continuations/v_dot_late.tex"
+    },
+    {
+      "from": "main.tex",
+      "line": 127,
+      "to": "continuations/v18_batch073.tex"
+    },
+    {
+      "from": "main.tex",
+      "line": 128,
+      "to": "continuations/v18_batch074.tex"
+    },
+    {
+      "from": "main.tex",
+      "line": 129,
+      "to": "continuations/v18_batch075.tex"
+    },
+    {
+      "from": "main.tex",
+      "line": 130,
+      "to": "continuations/v18_batch076.tex"
+    },
+    {
+      "from": "main.tex",
+      "line": 131,
+      "to": "continuations/v18_batch077.tex"
+    },
+    {
+      "from": "main.tex",
+      "line": 132,
+      "to": "continuations/v18_batch078.tex"
+    },
+    {
+      "from": "main.tex",
+      "line": 133,
+      "to": "continuations/v18_batch079.tex"
+    },
+    {
+      "from": "main.tex",
+      "line": 134,
+      "to": "continuations/v18_batch080.tex"
+    },
+    {
+      "from": "main.tex",
+      "line": 135,
+      "to": "continuations/v18_batch081.tex"
+    },
+    {
+      "from": "main.tex",
+      "line": 136,
+      "to": "continuations/v18_batch082.tex"
+    },
+    {
+      "from": "main.tex",
+      "line": 137,
+      "to": "continuations/v18_batch083.tex"
+    },
+    {
+      "from": "main.tex",
+      "line": 138,
+      "to": "continuations/v18_batch084.tex"
+    },
+    {
+      "from": "main.tex",
+      "line": 139,
+      "to": "continuations/v18_batch085.tex"
+    },
+    {
+      "from": "main.tex",
+      "line": 140,
+      "to": "continuations/v18_batch086.tex"
+    },
+    {
+      "from": "main.tex",
+      "line": 141,
+      "to": "continuations/v18_batch087.tex"
+    },
+    {
+      "from": "main.tex",
+      "line": 143,
+      "to": "continuations/v18_deleted_addenda.tex"
+    },
+    {
+      "from": "main.tex",
+      "line": 148,
+      "to": "backmatter/volume_I.tex"
+    },
+    {
+      "from": "main.tex",
+      "line": 149,
+      "to": "backmatter/volume_II.tex"
+    },
+    {
+      "from": "main.tex",
+      "line": 150,
+      "to": "backmatter/volume_III_1.tex"
+    },
+    {
+      "from": "main.tex",
+      "line": 151,
+      "to": "backmatter/volume_III_2.tex"
+    },
+    {
+      "from": "main.tex",
+      "line": 152,
+      "to": "backmatter/errata_III_2.tex"
+    },
+    {
+      "from": "main.tex",
+      "line": 153,
+      "to": "backmatter/bibliography_IV_1.tex"
+    },
+    {
+      "from": "main.tex",
+      "line": 154,
+      "to": "backmatter/errata_IV_selected.tex"
+    },
+    {
+      "from": "main.tex",
+      "line": 160,
+      "to": "backmatter/old_note_I.tex"
+    },
+    {
+      "from": "main.tex",
+      "line": 161,
+      "to": "backmatter/old_note_II.tex"
+    },
+    {
+      "from": "main.tex",
+      "line": 162,
+      "to": "backmatter/old_note_III_1.tex"
+    },
+    {
+      "from": "main.tex",
+      "line": 163,
+      "to": "backmatter/additional_sources.tex"
+    }
+  ],
+  "non_standalone_inputs": []
+}

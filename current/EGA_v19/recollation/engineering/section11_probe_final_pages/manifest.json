@@ -1,0 +1,54 @@
+{
+  "pdf": "/workspace/scratch/a886fd56dd2f/edition19_work/engineering/section11_probe_build/section11_probe.pdf",
+  "pdf_sha256": "9839eabb515fedd246b1ef568ab5e16c10d34c8cbf77fb6b9e69ad1af0356417",
+  "pages": [
+    {
+      "physical_page": 1,
+      "path": "/workspace/scratch/a886fd56dd2f/edition19_work/engineering/section11_probe_final_pages/page_01.png",
+      "sha256": "4c1a2e7aca6496ae5f3db58f949bc01e455799d8bbc4ee213c5bed4ea29c2672",
+      "identical_to_initial_render": true
+    },
+    {
+      "physical_page": 2,
+      "path": "/workspace/scratch/a886fd56dd2f/edition19_work/engineering/section11_probe_final_pages/page_02.png",
+      "sha256": "0ceccc976afb754104215fefe5866306a69c279b2adc5301ab43b1afe2655498",
+      "identical_to_initial_render": true
+    },
+    {
+      "physical_page": 3,
+      "path": "/workspace/scratch/a886fd56dd2f/edition19_work/engineering/section11_probe_final_pages/page_03.png",
+      "sha256": "1ab80d15a67e47e4a5241595dcf65c6bcff045a317d7c183aea75e5392e731e1",
+      "identical_to_initial_render": true
+    },
+    {
+      "physical_page": 4,
+      "path": "/workspace/scratch/a886fd56dd2f/edition19_work/engineering/section11_probe_final_pages/page_04.png",
+      "sha256": "de2dcf7360d7696ae4f05e02eb3ee5fcafa589f329f3ab0118ced824b7676b9b",
+      "identical_to_initial_render": true
+    },
+    {
+      "physical_page": 5,
+      "path": "/workspace/scratch/a886fd56dd2f/edition19_work/engineering/section11_probe_final_pages/page_05.png",
+      "sha256": "f18b3a484289bd737341ec5471177ad61ba95e1643dfc6ce4e056eb7fd58967c",
+      "identical_to_initial_render": false
+    },
+    {
+      "physical_page": 6,
+      "path": "/workspace/scratch/a886fd56dd2f/edition19_work/engineering/section11_probe_final_pages/page_06.png",
+      "sha256": "4c694ee63fb43883327f7ef682da65cdbb15f91bfc9b6d09c0f7f92c9863f684",
+      "identical_to_initial_render": false
+    },
+    {
+      "physical_page": 7,
+      "path": "/workspace/scratch/a886fd56dd2f/edition19_work/engineering/section11_probe_final_pages/page_07.png",
+      "sha256": "fc71986cc20dc695196a1dbd0635305945356fb7510b05c4d8abb5bd42fafb13",
+      "identical_to_initial_render": false
+    },
+    {
+      "physical_page": 8,
+      "path": "/workspace/scratch/a886fd56dd2f/edition19_work/engineering/section11_probe_final_pages/page_08.png",
+      "sha256": "bfe8ab747548f3c7890ab871e769faf3755d4d6cb3261293deb43b60a36ea2ea",
+      "identical_to_initial_render": false
+    }
+  ]
+}

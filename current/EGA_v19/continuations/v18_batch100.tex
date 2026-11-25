@@ -1,0 +1,38 @@
+% V18 integration from immutable Dot batch 100: EGA第五卷_法文覆盖审计_例外超平面余维.tex
+\begingroup
+\def\PP{\mathbb P}\def\OO{\mathcal O}\def\Ocal{\mathcal O}
+\def\F{\mathcal F}\def\G{\mathcal G}\def\N{\mathcal N}
+\def\PD{\check P}\def\Pdual{\check P}
+\def\Ys{Y^{\mathrm{sing}}}\def\Ysing{Y^{\mathrm{sing}}}
+\def\Ds{Y^{\mathrm{sup\,sing}}}\def\Ysup{Y^{\mathrm{sup\,sing}}}
+\def\cod{\operatorname{codim}}\def\Sing{\operatorname{Sing}}
+\def\depth{\operatorname{depth}}\def\coprof{\operatorname{coprof}}
+\def\Ass{\operatorname{Ass}}\def\Supp{\operatorname{Supp}}
+\def\Gr{\operatorname{Gr}}\def\Spec{\operatorname{Spec}}\def\Proj{\operatorname{Proj}}
+\source{Dot第100批；法文底本物理第30--32页，英编稿物理第21--22页}
+\egasection{§8\quad 例外超平面集合的维数}
+\egap{8.1}
+在前面的各节，特别是第2、3节，我们曾给出一些断言：在对偶射影空间 $P^\vee$ 中，使超平面截面 $Y_\xi$ 具有某一性质 $\mathcal P$ 的参数 $\xi$ 构成可构造集，并包含泛点 $\eta$。换言之，对性质 $\mathcal P$ 而言的例外参数集 $Z_{\mathcal P}$ 是可构造且稀薄的，即其闭包的余维至少为 $1$。这里假设 $S=\Spec k$。
+
+在某些情形下，可以为这个余维给出更强的下界，从而细化上述断言。\transnote{法稿使用表示上界的 \emph{majoration}，英稿也写作上界；而下一句实际用的是余维 $\ge 2$，故正文改作下界。若改说例外闭包的维数，才是更强的上界。}
+这对若干问题是重要的。例如，若该余维至少为 $2$，则 $P^\vee$ 中一条充分一般的直线 $D$ 不与 $Z_{\mathcal P}$ 相遇。因而，若 $k$ 是无限域，就存在由 $D$ 的几何点 $\xi$ 参数化的超平面截面线性束，其每个成员 $Y_\xi$ 都有性质 $\mathcal P$。\transnote{法稿此处引用的节号没有定稿；英稿的“29”是其脚注号，不是所指节号。}\textsuperscript{,}\ednote{节号遗漏，请询问 A.G.。〔英编稿脚注29。〕}
+
+从编写角度看，本节的结果细化了前面若干断言。究竟应单列一节（或一条）补充这些细化，还是在前文逐次给出更精确的版本？\emph{Redactor decidetur}〔作者的拉丁语附记〕。\ednote{由编辑决定。〔英编稿脚注30。〕}
+\egap{8.2}
+设 $f:X\to P$ 是前文的态射。记 $Z$ 为使 $\dim Y_\xi>\dim X-1$ 的参数 $\xi\in P^\vee$ 所成的集合。假设对 $X$ 的每个不可约分支 $X_i$，均有 $\dim f(X_i)>0$，则 $Z$ 的闭包在 $P^\vee$ 中余维至少为 $2$。\transnote{法31的右缘裁掉了严格不等号后的阈值，英21也存疑；同段明写相关分支的正维条件，且这一条件对应下文的线性方程证明。此处按正维复原。法31首段把余维写作“2”，英21亦然；一般只能断言至少2。法31同段的模断言则明写“$\ge2$”。像张成一个平面时，包含该像的超平面参数余维已经是3；不存在此类超平面时例外集为空。}
+作者指出，可由2.1、2.2（它们保证通用关联概形 $Y$ 的每个不可约分支支配 $P^\vee$）及 $Y\to P^\vee$ 的维数理论得出这一点。
+
+作为推论，可从 $X$ 的闭子集 $T$ 出发，考察其在各个 $Y_\xi$ 中的逆像 $T_\xi$ 的维数。还可以把 $Z$ 定义为如下参数的集合：$T_{k(\xi)}$ 有一个不可约分支，它在 $Y_\xi$ 上的截面维数过大。仍假设 $T$ 的每个不可约分支的像均为正维。\transnote{法31的措辞是截面维数“过大”；英21误导为“取最大维数”。此处按相对于正常截面维数的跳跃理解。}
+
+最后，作者把该方向上更精细的结论写为模的版本，并指向第一个断言的不可约情形和2.7。设 $\mathcal F$ 是 $X$ 上的凝聚模。若对 $\mathcal F$ 的每一个关联素循环 $T$ 都有 $\dim f(T)>0$，则使 $\varphi_\xi$ 不是 $\mathcal F_{k(\xi)}$-正则的参数 $\xi$ 组成可构造集，闭包的余维至少为 $2$。$\varphi_\xi$ 的记号沿用第5节。作者提议把它当作主命题，把前述断言列为推论；实际证明可先经由其中一个推论。
+
+用前述记号，若 $\xi\in P^\vee\setminus Z$（这里 $Z$ 是上文模的非正则参数集），则对每个 $y\in Y_\xi$，取截面之前的模和取截面后的模 $\mathcal G_\xi$ 在 $y$ 的余深度相同，即
+\[
+ \coprof_y\mathcal F_{k(\xi)}=\coprof_y\mathcal G_\xi .
+\]
+因此，若 $\coprof\mathcal F\le n$，则 $\coprof\mathcal G_\xi\le n$；特别地，若 $\mathcal F$ 是 Cohen--Macaulay 模，则 $\mathcal G_\xi$ 也是。最后，若 $\mathcal F$ 满足 $(S_k)$，则在上述参数范围内 $\mathcal G_\xi$ 满足 $(S_{k-1})$，参见第四章。\transnote{附记在法32开头。法稿等式左端的字形近似 $B_{k(\xi)}$，英22作 $G_{k(\xi)}$，下一行又将截面模一度误排为 $T_\xi$。按本段及第5节的正则截面语义，正文明确写出取截面前后的两个模；不将字形差异当作新对象。}
+\subsection*{校记：两个划销片段}
+法30下部旧8.2从 $X$ 的一个局部闭子集 $T$ 出发，考察 $T_\xi$ 比泛纤维维数大之处：当 $\dim\overline{f(T)}>0$ 时，所写的比较目标是截后仍为 $\dim T$；当 $\dim\overline{f(T)}=0$ 时，则改为考察截面非空。旧稿随后直接写例外集余维2，并提议推广到模的支集和 $T$ 的几何不可约分支。末句在指到某个不可约分支时截断。此段整块划销；正稿由法31页首另起，不能将它的结论倒接到旧稿。尤其若 $f$ 将非空 $T$ 映到 $k$-有理点，例外恰为过该点的参数超平面，余维仅为1。
+
+法31页末另有整块框划的“T、$T'$ 的另一个推论”。可辨读出它比较两个闭集、提到2.4、再试图约化为 $T$ 不可约并考察余维2的闭例外集；右缘和底部裁切使关系符号及结句不足以可靠复原。这段不纳入正稿，不把可辨关键词拼成新命题。\transnote{直线参数、正维像及正则商的独立核算完整保存于核查报告“D18-100”项，属译校文字，不是原文。}
+\endgroup

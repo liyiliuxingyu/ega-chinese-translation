@@ -1,0 +1,102 @@
+{
+  "scope": "Independent read-only logic review of actual draft sources; no implementation changes, no fixture reruns, no external writes or runner execution.",
+  "reviewed_sha256": {
+    "edition19_work/engineering/publishing19/tools/apply_edition19_update.py": "ca2d4b081bc7b3cf50f4929209b62e6646c586602c9e0f385207590f952dd326",
+    "edition19_work/engineering/publishing19/tools/package_edition19.py": "d3ab459266b791888613d2d8fedcc1f732b0cda70285037ce172570b723a26b7",
+    "edition19_work/engineering/publishing19/.github/workflows/publish-edition19.yml": "0488fce07927f8b245497823e6ed0c5d6afee903a3be0c279af5f499429c51e1",
+    "ega-recovery/tools/verify_repository.py": "8c6ccb3ab9185b43bc0d147e69fb57e1d4a87329c15b102d8b955adbfdae9f45"
+  },
+  "conclusion": "No deterministic first-run blocker or silent omission of baseline manifest payload identified, assuming final six overlay measurements and approved workflow-only pre-apply change.",
+  "findings": [
+    {
+      "id": "PUB19-R1",
+      "severity": "bounded robustness gap, not observed failure",
+      "location": "publish-edition19.yml final release edit command and upload/download-by-tag commands",
+      "issue": "The draft release is initially bound by numeric ID and later verified by ID, but gh release upload/download/edit resolve it again by tag. Successful final verification still requires the original ID. Thus no silent wrong-release success was found, but the final write itself does not carry the pinned ID.",
+      "minimal_change": "Replace only final gh release edit with gh api --method PATCH repos/$EXPECTED_REPOSITORY/releases/$DRAFT_RELEASE_ID --field draft=false --raw-field target_commitish=$PUBLISH_COMMIT_SHA, retaining all existing post-verification. For upload/download, optionally require exactly one tag match across all release states before the operation; no need to rewrite the pipeline for an unobserved duplicate.",
+      "status": "Recommendation only; frozen implementation unchanged"
+    },
+    {
+      "id": "PUB19-R2",
+      "severity": "history packaging precondition, resolved in observed workspace",
+      "location": "applier ROOT_UPDATES and snapshots/20261125",
+      "issue": "Old mutable root docs are allowed to change; preservation in the downloadable archive relies on explicit snapshots. Git history alone is not part of a payload-only ZIP.",
+      "observed": "All three root snapshots and REPOSITORY_MANIFEST snapshot now exist and match the baseline exactly. They must be included in the new manifest and overlay.",
+      "status": "Verified actual files; final manifest inclusion pending root freeze"
+    },
+    {
+      "id": "PUB19-R3",
+      "severity": "execution boundary",
+      "location": "applier --verify-only vs actual apply; runner strict gate",
+      "issue": "verify-only validates reconstructed listed bytes but does not execute Git ancestry/dirty-check or baseline subset preservation gate. Those gates run in actual apply.",
+      "observed": "Workflow calls real apply followed by verify_repository.py --strict; no local limited verification can replace these steps.",
+      "status": "No change needed; accurately limit local claims"
+    },
+    {
+      "id": "PUB19-R4",
+      "severity": "intentional fail-closed operational conditions",
+      "location": "baseline diff guard; draft query; remote_tag_target; existing-asset cmp",
+      "issue": "Unexpected main changes, a published release instead of draft, an existing tag targeting a different commit, or an incomplete/different existing asset stop the job. They are not auto-overwritten.",
+      "minimal_change": "No relaxation recommended. Do not create actual v19 tag before the job; do not add other remote payload commits before application. Inspect observed asset failures before any targeted repair.",
+      "status": "Correct fail-closed behavior"
+    }
+  ],
+  "invariant_checks": [
+    "First gate rejects unfilled SHA/count/size/part placeholders before network.",
+    "Exact named 32MiB ordered parts are selected by asset ID, size-checked and combined; ZIP SHA verified before executing its applier.",
+    "Fresh apply requires fixed baseline ancestor, only publish-edition19.yml changed from baseline, and clean checkout.",
+    "New applier and packager agree on six exact metadata names; metadata and manifest cannot be payload rows.",
+    "Actual apply preserves every baseline payload row except approved mutable root docs; added paths are restricted.",
+    "Runner full checkout, full byte validation and strict-extra-file check precede commit.",
+    "Commit uses only manifest literal paths plus manifest and new receipt. Branch push is not forced.",
+    "Packager includes every manifest payload plus manifest and all six metadata in full ZIP, verifies CRC and each member hash; current project ZIP uses only current/EGA_v19.",
+    "Eight output filenames agree between packager and workflow; no clobber flag; existing bytes must match.",
+    "Every expected uploaded asset is uniquely found by name in pinned release ID, size/state and SHA256 or downloaded cmp verified.",
+    "Tag is created only if absent, otherwise must already resolve to final commit; annotated dereference supported; post-publication tag and release ID rechecked."
+  ],
+  "baseline_manifest_rows_observed": 3099,
+  "baseline_root_snapshots": {
+    "README.md": {
+      "sha256": "f08f54bc77686d6400b4d5652585e78bb4bdf1aaac9eff11748ea5d42040cf65",
+      "matches_baseline_row": true
+    },
+    "AGENTS.md": {
+      "sha256": "037ec2336c5960f6dab8058888e39d7437fca0980f51fc6a7694ef0fcf5b953e",
+      "matches_baseline_row": true
+    },
+    "CONTINUE_HERE.md": {
+      "sha256": "4dab1b5388f517e4b5fb14cca7185d1168ab3b2dbc018b8b783aee75c6639995",
+      "matches_baseline_row": true
+    },
+    "REPOSITORY_MANIFEST.json": {
+      "sha256": "3caf6fee99246cd543b3bd65e399aecd01166bfc8d097584ef396a88ee5ac48e",
+      "matches_baseline_bytes": true
+    }
+  },
+  "official_references": [
+    {
+      "url": "https://cli.github.com/manual/gh_release_upload",
+      "supports": "Upload interface is tag-based; clobber deletes before reupload."
+    },
+    {
+      "url": "https://cli.github.com/manual/gh_release_edit",
+      "supports": "Edit interface is tag-based; draft=false publication and target option."
+    },
+    {
+      "url": "https://docs.github.com/en/rest/releases/releases?apiVersion=latest",
+      "supports": "Update endpoint is PATCH by numeric release_id; draft false publishes; target differing in workflows from default branch may require extra workflow authorization."
+    },
+    {
+      "url": "https://docs.github.com/en/rest/releases/assets",
+      "supports": "Asset binary retrieval via asset ID with Accept application/octet-stream; SHA256 digest metadata."
+    }
+  ],
+  "permissions_reasoning": "Workflow pushes verified commit to main before release update. In this intended state target is default-branch commit, so no workflow-file difference relative to default branch is introduced by release update. Current runner write ability was not probed by this reviewer.",
+  "limitations": [
+    "No real overlay or final new manifest available to this review",
+    "No GitHub write or runner execution",
+    "No proof that a future network upload succeeds",
+    "No full local historic payload checkout",
+    "No mathematical claims"
+  ]
+}

@@ -1,0 +1,142 @@
+{
+  "created_utc": "2026-11-24T17:17:35.566387+00:00",
+  "status": "selective visual review completed; observations bound to the recorded PDF versions",
+  "scope": "Final module-based main.pdf and report.pdf, representative pages for batches088–099. These are fresh renders of the whole compiled documents, not reused probe images.",
+  "method": {
+    "locating": "PyMuPDF text search for exact phrases, followed by recorded physical pages.",
+    "rendering": "fitz.open(pdf)[physical_page-1].get_pixmap(dpi=180).save(png)",
+    "visual_review": "All 11 PNGs actually opened and inspected individually.",
+    "hash": "SHA-256 over complete PDF bytes and each generated PNG."
+  },
+  "files": [
+    {
+      "path": "main.pdf",
+      "bytes": 5982587,
+      "page_count": 1210,
+      "reviewed_version_sha256": "c524e85b036fad4427f5798e52b317b356c51b10ea535a058ad04daccb0a9074",
+      "path_sha256_at_record_write": "c524e85b036fad4427f5798e52b317b356c51b10ea535a058ad04daccb0a9074",
+      "path_unchanged_at_record_write": true,
+      "reviewed_pages": [
+        {
+          "physical_page": 993,
+          "path": "checks/early_final_visual/main_physical_0993.png",
+          "sha256": "af2942f12a19c5e2cba09365a9b59a3b3e30b87f54707e88a45670adec62891c",
+          "printed_page": 973,
+          "actually_viewed": true,
+          "view_method": "functions tools.view_image of the recorded 180 dpi PNG, explicitly emitted for visual inspection",
+          "observation": "§1评价配对、转置式及校正后的P((Sym^k E)^∨)清晰；秩条件、预告身份、原式及任意特征限制脚注完整留在本页，未见越界或重叠。"
+        },
+        {
+          "physical_page": 994,
+          "path": "checks/early_final_visual/main_physical_0994.png",
+          "sha256": "76c3b78058473ef00d470207946e8ba2872e6e01c8853ee1bbe9ac987f2fee49",
+          "printed_page": 974,
+          "actually_viewed": true,
+          "view_method": "functions tools.view_image of the recorded 180 dpi PNG, explicitly emitted for visual inspection",
+          "observation": "关联概形公式和交换图完整，图中垂直/水平/斜箭头与对象没有碰撞；正文及两条长脚注分离。"
+        },
+        {
+          "physical_page": 996,
+          "path": "checks/early_final_visual/main_physical_0996.png",
+          "sha256": "f85a9ad7f4273f5e522459a308b17a155ca7fb5553e59b4aadb82b268022561d",
+          "printed_page": 976,
+          "actually_viewed": true,
+          "view_method": "functions tools.view_image of the recorded 180 dpi PNG, explicitly emitted for visual inspection",
+          "observation": "2.4的包含判据、对称差等号判据和反例脚注完整；2.5—2.6过渡与脚注引标有对应正文，未见孤立引标、裁切或重叠。"
+        },
+        {
+          "physical_page": 999,
+          "path": "checks/early_final_visual/main_physical_0999.png",
+          "sha256": "d2f9a1e34b417071da1bf01668ff000ef8a1e23738bb5deddedd43568e94e2d8",
+          "printed_page": 979,
+          "actually_viewed": true,
+          "view_method": "functions tools.view_image of the recorded 180 dpi PNG, explicitly emitted for visual inspection",
+          "observation": "2.12陈述和“译校订正证明，非原文”标识清楚；线性方程及坏参数维数公式完整，三条脚注没有碰撞，证明自然续到1000页。"
+        },
+        {
+          "physical_page": 1000,
+          "path": "checks/early_final_visual/main_physical_1000.png",
+          "sha256": "de2f2e3b431e974d3cdf748ecd8c5cb0675be6629476f5219e6ebcb804a70728",
+          "printed_page": 980,
+          "actually_viewed": true,
+          "view_method": "functions tools.view_image of the recorded 180 dpi PNG, explicitly emitted for visual inspection",
+          "observation": "页首接完2.12的结论并显示证毕标记，接续没有缺行或覆盖；2.13、2.14列表、等价式及长脚注清晰。"
+        },
+        {
+          "physical_page": 1015,
+          "path": "checks/early_final_visual/main_physical_1015.png",
+          "sha256": "f28c26a8b76fe24b7c401bd33bff8d9445157f4239c682a8123e035375bbf633",
+          "printed_page": 995,
+          "actually_viewed": true,
+          "view_method": "functions tools.view_image of the recorded 180 dpi PNG, explicitly emitted for visual inspection",
+          "observation": "7.4明确标为译校采用的附加条件版本；正文假设、译校补证和关于法稿<n/英稿≤n的长脚注清楚；证明末句分到1016页，未见裁切。"
+        },
+        {
+          "physical_page": 1016,
+          "path": "checks/early_final_visual/main_physical_1016.png",
+          "sha256": "cd57cfe9a982374fc6378036f0fc2d0093bf0ffda22b7bbd63b8994bb68e32d0",
+          "printed_page": 996,
+          "actually_viewed": true,
+          "view_method": "functions tools.view_image of the recorded 180 dpi PNG, explicitly emitted for visual inspection",
+          "observation": "7.4证明接续并正常收束；7.5及两条相关脚注完整，随后接§8，没有局部探针止于§7导致的留白；脚注与正文不重叠。"
+        }
+      ]
+    },
+    {
+      "path": "report.pdf",
+      "bytes": 1770945,
+      "page_count": 357,
+      "reviewed_version_sha256": "ff2122b0a7c7306c79b7c15f6b09e7013eb33eab222c346795ae4c7be4051fb0",
+      "path_sha256_at_record_write": "ff2122b0a7c7306c79b7c15f6b09e7013eb33eab222c346795ae4c7be4051fb0",
+      "path_unchanged_at_record_write": true,
+      "reviewed_pages": [
+        {
+          "physical_page": 41,
+          "path": "checks/early_final_visual/report_physical_0041.png",
+          "sha256": "2b4568e95508692378813326da36cc2fb30c1436f26cbeea611003ae43704cb6",
+          "printed_page": 23,
+          "actually_viewed": true,
+          "view_method": "functions tools.view_image of the recorded 180 dpi PNG, explicitly emitted for visual inspection",
+          "observation": "报告章标题完整单行显示，来源、核验范围限制、2.12异文公式及脚注清楚，未见裁切或碰撞。"
+        },
+        {
+          "physical_page": 42,
+          "path": "checks/early_final_visual/report_physical_0042.png",
+          "sha256": "e40fbc58710a7f033aa9426f96a34220012c67aa49cf5f93bf798d567e21fee4",
+          "printed_page": 24,
+          "actually_viewed": true,
+          "view_method": "functions tools.view_image of the recorded 180 dpi PNG, explicitly emitted for visual inspection",
+          "observation": "2.12完整旧证明明确标“仅供对照，不予采用”；多个显示公式和错误说明脚注完整，未见重叠。"
+        },
+        {
+          "physical_page": 49,
+          "path": "checks/early_final_visual/report_physical_0049.png",
+          "sha256": "a1987b2a4c3ad05579518704e65208f8b2cc9f7e8eefc57a9f5cd67107220419",
+          "printed_page": 31,
+          "actually_viewed": true,
+          "view_method": "functions tools.view_image of the recorded 180 dpi PNG, explicitly emitted for visual inspection",
+          "observation": "D18-099一般原陈述、严格不等号、原归纳路线、英译编者疑问与纯不可分反例层次清楚；脚注完整。"
+        },
+        {
+          "physical_page": 50,
+          "path": "checks/early_final_visual/report_physical_0050.png",
+          "sha256": "637871048ba4d2dc3df0cfc39f7df82aa144143f0dc71db137d9e0a8de35593e",
+          "printed_page": 32,
+          "actually_viewed": true,
+          "view_method": "functions tools.view_image of the recorded 180 dpi PNG, explicitly emitted for visual inspection",
+          "observation": "零维基例、局部结论、拟射影反例公式及D18-OLD历史注释入口清楚；未见裁切或碰撞。"
+        }
+      ]
+    }
+  ],
+  "actually_viewed_page_count": 11,
+  "observed_layout_issues": [],
+  "conclusion": "On these selected pages no visible clipping, formula/diagram collision, missing footnote continuation, or detached footnote marker requiring correction was observed. The selected long notes remain on their corresponding pages; the proofs of2.12 and7.4 continue correctly across the inspected adjacent pages.",
+  "pending_parent_version_binding": "Parent announced a frontmatter-only page-break adjustment after these images were inspected. If main.pdf changes, its new version must be bound through the parent’s actual page/pixel comparison; this report does not claim that future bytes were viewed.",
+  "limitations": [
+    "This is a finite visual sample, not every page of either PDF.",
+    "No new mathematical proof validation or full source collation is claimed.",
+    "The standalone build was not inspected in this subtask.",
+    "No TeX, existing freeze record, or PDF was edited or compiled by this visual-review subtask."
+  ]
+}

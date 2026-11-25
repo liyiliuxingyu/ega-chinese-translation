@@ -1,0 +1,651 @@
+{
+  "schema_version": 1,
+  "reviewer": "dot_middle",
+  "created_utc": "2026-11-25T07:29:44.658516+00:00",
+  "status": "specified_pages_rechecked_one_known_main_1038_fix_pending",
+  "prior_review": "../visual_middle_review.json",
+  "pdf_identities": [
+    {
+      "pdf": "main.pdf",
+      "path": "/workspace/scratch/a886fd56dd2f/ega-recovery/current/EGA_v19/main.pdf",
+      "sha256": "a837e71e9373b8b44aa3e00ebe7c5f64e5c41e03769645b668149dde202df14e",
+      "pages": 1214,
+      "independently_hashed_at_start_of_review": true,
+      "final_publication_identity": "awaiting root final footnote-1038 rebuild"
+    },
+    {
+      "pdf": "report.pdf",
+      "path": "/workspace/scratch/a886fd56dd2f/ega-recovery/current/EGA_v19/report.pdf",
+      "sha256": "21bb0187a85ab01aaee6bc01b0d0c0d10d346471b81538c9dab219a5441a08a1",
+      "pages": 389,
+      "independently_hashed_at_start_of_review": true,
+      "final_publication_identity": "bound to this observed PDF; no future identity inferred"
+    }
+  ],
+  "render_manifest": {
+    "path": "/workspace/scratch/a886fd56dd2f/edition19_work/rendered/final_after_fixes/manifest.json",
+    "sha256": "8d980dc155e50242763526b5270861542d6c12d7e50b112b6918e7b14c118325",
+    "dpi": 115.2
+  },
+  "scope": {
+    "main_physical_pages": [
+      1038,
+      1039,
+      1043,
+      1044,
+      1045,
+      1046,
+      1047,
+      1048,
+      1049
+    ],
+    "report_physical_pages": [
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39,
+      40,
+      41
+    ],
+    "images_actually_viewed": 20,
+    "all_book_pages_reviewed": false,
+    "all_report_pages_reviewed": false
+  },
+  "issues_status": [
+    {
+      "id": "M19-VIS-MID-01",
+      "status": "still_visible_in_this_generation_root_handling",
+      "page": 1038
+    },
+    {
+      "id": "M19-VIS-MID-02",
+      "status": "fixed_and_actually_rechecked",
+      "page": 1039
+    },
+    {
+      "id": "M19-VIS-MID-03",
+      "status": "fixed_and_actually_rechecked",
+      "page": 1043
+    },
+    {
+      "id": "M19-VIS-MID-04",
+      "status": "fixed_and_actually_rechecked",
+      "page": 1043
+    },
+    {
+      "id": "M19-VIS-MID-05",
+      "status": "fixed_and_actually_rechecked",
+      "pages": [
+        1048,
+        1049
+      ]
+    },
+    {
+      "id": "M19-VIS-MID-06",
+      "status": "fixed_and_actually_rechecked",
+      "pages": [
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41
+      ]
+    }
+  ],
+  "new_issues": [],
+  "pages": [
+    {
+      "pdf": "main.pdf",
+      "pdf_sha256": "a837e71e9373b8b44aa3e00ebe7c5f64e5c41e03769645b668149dde202df14e",
+      "physical_page": 1038,
+      "image": "main_1038.png",
+      "image_sha256": "1c93961d02a23609ce565206f0c5c9af1553171c40123cc4dce45d2c79b846c1",
+      "same_image_bytes_as_pre_fix": true,
+      "printed_page": 1018,
+      "image_path": "/workspace/scratch/a886fd56dd2f/edition19_work/rendered/final_after_fixes/main_1038.png",
+      "actual_opened_with_view_image": true,
+      "image_sha256_verified": true,
+      "observations": "实际重新查看：M19-8E03上标1仍位于独立下一行；主代理已在处理该项。除这项外，公式、脚注及版心未见新增异常。"
+    },
+    {
+      "pdf": "main.pdf",
+      "pdf_sha256": "a837e71e9373b8b44aa3e00ebe7c5f64e5c41e03769645b668149dde202df14e",
+      "physical_page": 1039,
+      "image": "main_1039.png",
+      "image_sha256": "eef990ebccf7a9d11afdeafb9004a4a45e8ccd87124f7f379e5588ddd5a3128d",
+      "same_image_bytes_as_pre_fix": true,
+      "printed_page": 1019,
+      "image_path": "/workspace/scratch/a886fd56dd2f/edition19_work/rendered/final_after_fixes/main_1039.png",
+      "actual_opened_with_view_image": true,
+      "image_sha256_verified": true,
+      "observations": "实际重新查看：M19-8E09上标5已直接附于“泛纤维几何不可约。”句末同一行，原孤立标号问题消除。"
+    },
+    {
+      "pdf": "main.pdf",
+      "pdf_sha256": "a837e71e9373b8b44aa3e00ebe7c5f64e5c41e03769645b668149dde202df14e",
+      "physical_page": 1043,
+      "image": "main_1043.png",
+      "image_sha256": "def1aeeffbbd2b61cf45d307c86befa16d4caca32952b101bfbce54105b2fdb6",
+      "same_image_bytes_as_pre_fix": false,
+      "changed_pixel_bounds": [
+        159,
+        268,
+        710,
+        753
+      ],
+      "printed_page": 1023,
+      "image_path": "/workspace/scratch/a886fd56dd2f/edition19_work/rendered/final_after_fixes/main_1043.png",
+      "actual_opened_with_view_image": true,
+      "image_sha256_verified": true,
+      "observations": "实际重新查看：相邻脚注显示为2,3，上标逗号可辨；原公式后独立的标号7已移到“并令”引导句后。三组多项式均完整，后面的译校补充正常接续。"
+    },
+    {
+      "pdf": "main.pdf",
+      "pdf_sha256": "a837e71e9373b8b44aa3e00ebe7c5f64e5c41e03769645b668149dde202df14e",
+      "physical_page": 1044,
+      "image": "main_1044.png",
+      "image_sha256": "8b96e7883189a84d14637164c5e6559f10d39a5d52a21a3be85946be2649a806",
+      "same_image_bytes_as_pre_fix": false,
+      "changed_pixel_bounds": [
+        241,
+        202,
+        792,
+        1156
+      ],
+      "printed_page": 1024,
+      "image_path": "/workspace/scratch/a886fd56dd2f/edition19_work/rendered/final_after_fixes/main_1044.png",
+      "actual_opened_with_view_image": true,
+      "image_sha256_verified": true,
+      "observations": "实际重新查看：由1043延续的译校补充、9.4/9.5残文、§10标题和10.1开头排列正常。脚注内容在版心内，无新增重叠。"
+    },
+    {
+      "pdf": "main.pdf",
+      "pdf_sha256": "a837e71e9373b8b44aa3e00ebe7c5f64e5c41e03769645b668149dde202df14e",
+      "physical_page": 1045,
+      "image": "main_1045.png",
+      "image_sha256": "ff6eef9bef9898a53edce88b05dbcc8293dd71ba249918e4c588c9a354b89973",
+      "same_image_bytes_as_pre_fix": false,
+      "changed_pixel_bounds": [
+        159,
+        369,
+        710,
+        1044
+      ],
+      "printed_page": 1025,
+      "image_path": "/workspace/scratch/a886fd56dd2f/edition19_work/rendered/final_after_fixes/main_1045.png",
+      "actual_opened_with_view_image": true,
+      "image_sha256_verified": true,
+      "observations": "实际重新查看：10.1续文、10.2及T、F_X、J相关同态均完整；页末“的像。”已与前面的显示公式在同页。无新增孤立标号。"
+    },
+    {
+      "pdf": "main.pdf",
+      "pdf_sha256": "a837e71e9373b8b44aa3e00ebe7c5f64e5c41e03769645b668149dde202df14e",
+      "physical_page": 1046,
+      "image": "main_1046.png",
+      "image_sha256": "e19f77f15e83943065b1bf4cc0d7ba55fd837ecefae43777d7c9cf0e974c12f0",
+      "same_image_bytes_as_pre_fix": false,
+      "changed_pixel_bounds": [
+        241,
+        202,
+        792,
+        933
+      ],
+      "printed_page": 1026,
+      "image_path": "/workspace/scratch/a886fd56dd2f/edition19_work/rendered/final_after_fixes/main_1046.png",
+      "actual_opened_with_view_image": true,
+      "image_sha256_verified": true,
+      "observations": "实际重新查看：正则性限定、J/J²公式、10.2和作者应用说明正常；页脚译注1–3在版心内。"
+    },
+    {
+      "pdf": "main.pdf",
+      "pdf_sha256": "a837e71e9373b8b44aa3e00ebe7c5f64e5c41e03769645b668149dde202df14e",
+      "physical_page": 1047,
+      "image": "main_1047.png",
+      "image_sha256": "0cc2d4bd5d7a4c934974d08c4e1c63a34650843a41ac735da549a05e386b3f15",
+      "same_image_bytes_as_pre_fix": false,
+      "changed_pixel_bounds": [
+        159,
+        202,
+        710,
+        901
+      ],
+      "printed_page": 1027,
+      "image_path": "/workspace/scratch/a886fd56dd2f/edition19_work/rendered/final_after_fixes/main_1047.png",
+      "actual_opened_with_view_image": true,
+      "image_sha256_verified": true,
+      "observations": "实际重新查看：10.3的已划去状态、爆破记号、正合列、K定义和正则性末句正常；没有公式或脚注重叠。"
+    },
+    {
+      "pdf": "main.pdf",
+      "pdf_sha256": "a837e71e9373b8b44aa3e00ebe7c5f64e5c41e03769645b668149dde202df14e",
+      "physical_page": 1048,
+      "image": "main_1048.png",
+      "image_sha256": "e455ba03772c8043faf7fbd0b766a076d57d4c8ffb0d31829e81d9de9957f6ee",
+      "same_image_bytes_as_pre_fix": false,
+      "changed_pixel_bounds": [
+        241,
+        355,
+        793,
+        901
+      ],
+      "printed_page": 1028,
+      "image_path": "/workspace/scratch/a886fd56dd2f/edition19_work/rendered/final_after_fixes/main_1048.png",
+      "actual_opened_with_view_image": true,
+      "image_sha256_verified": true,
+      "observations": "实际重新查看：10.4及Spec(k′[t]/(t²))公式正常；原孤立§11标题已从本页移走。"
+    },
+    {
+      "pdf": "main.pdf",
+      "pdf_sha256": "a837e71e9373b8b44aa3e00ebe7c5f64e5c41e03769645b668149dde202df14e",
+      "physical_page": 1049,
+      "image": "main_1049.png",
+      "image_sha256": "f6b020185963fc0026343e9937e1224a937f6fefa268eb615dc7f1d2f2f6d43b",
+      "same_image_bytes_as_pre_fix": false,
+      "changed_pixel_bounds": [
+        159,
+        199,
+        712,
+        1156
+      ],
+      "printed_page": 1029,
+      "image_path": "/workspace/scratch/a886fd56dd2f/edition19_work/rendered/final_after_fixes/main_1049.png",
+      "actual_opened_with_view_image": true,
+      "image_sha256_verified": true,
+      "observations": "为核实标题落点额外实际查看：§11在页首开始，来源说明后同页紧接实质正文、Grassmann函子及映射公式；标题孤立问题已消除。"
+    },
+    {
+      "pdf": "report.pdf",
+      "pdf_sha256": "21bb0187a85ab01aaee6bc01b0d0c0d10d346471b81538c9dab219a5441a08a1",
+      "physical_page": 31,
+      "image": "report_0031.png",
+      "image_sha256": "c2a6b7347ae328045b912ec6f58908193e2f1e8ed2133932988e240395480a1b",
+      "same_image_bytes_as_pre_fix": false,
+      "changed_pixel_bounds": [
+        160,
+        157,
+        515,
+        175
+      ],
+      "printed_page": 13,
+      "image_path": "/workspace/scratch/a886fd56dd2f/edition19_work/rendered/final_after_fixes/report_0031.png",
+      "actual_opened_with_view_image": true,
+      "image_sha256_verified": true,
+      "observations": "实际重新查看整页；页眉现为“第十九版：第8节末回校”。正文、公式及表格未见新增排版异常。"
+    },
+    {
+      "pdf": "report.pdf",
+      "pdf_sha256": "21bb0187a85ab01aaee6bc01b0d0c0d10d346471b81538c9dab219a5441a08a1",
+      "physical_page": 32,
+      "image": "report_0032.png",
+      "image_sha256": "5b39aef7f44d6de4353e18d3558581c085620f142ba59ece983c969ce24ebc3f",
+      "same_image_bytes_as_pre_fix": false,
+      "changed_pixel_bounds": [
+        436,
+        158,
+        791,
+        175
+      ],
+      "printed_page": 14,
+      "image_path": "/workspace/scratch/a886fd56dd2f/edition19_work/rendered/final_after_fixes/report_0032.png",
+      "actual_opened_with_view_image": true,
+      "image_sha256_verified": true,
+      "observations": "实际重新查看整页；页眉现为“第十九版：第8节末回校”。正文、公式及表格未见新增排版异常。"
+    },
+    {
+      "pdf": "report.pdf",
+      "pdf_sha256": "21bb0187a85ab01aaee6bc01b0d0c0d10d346471b81538c9dab219a5441a08a1",
+      "physical_page": 33,
+      "image": "report_0033.png",
+      "image_sha256": "67377e81c068caa421355981a30520ca9affad4f11cffcdd454955928a461dca",
+      "same_image_bytes_as_pre_fix": false,
+      "changed_pixel_bounds": [
+        160,
+        157,
+        515,
+        175
+      ],
+      "printed_page": 15,
+      "image_path": "/workspace/scratch/a886fd56dd2f/edition19_work/rendered/final_after_fixes/report_0033.png",
+      "actual_opened_with_view_image": true,
+      "image_sha256_verified": true,
+      "observations": "实际重新查看整页；页眉现为“第十九版：第8节末回校”。正文、公式及表格未见新增排版异常。"
+    },
+    {
+      "pdf": "report.pdf",
+      "pdf_sha256": "21bb0187a85ab01aaee6bc01b0d0c0d10d346471b81538c9dab219a5441a08a1",
+      "physical_page": 34,
+      "image": "report_0034.png",
+      "image_sha256": "9a531f50f4b8ea53f35d245bb5205d23ca18b8ebec7774caf7a07c4b1610db33",
+      "same_image_bytes_as_pre_fix": false,
+      "changed_pixel_bounds": [
+        436,
+        158,
+        791,
+        175
+      ],
+      "printed_page": 16,
+      "image_path": "/workspace/scratch/a886fd56dd2f/edition19_work/rendered/final_after_fixes/report_0034.png",
+      "actual_opened_with_view_image": true,
+      "image_sha256_verified": true,
+      "observations": "实际重新查看整页；页眉现为“第十九版：第8节末回校”。正文、公式及表格未见新增排版异常。"
+    },
+    {
+      "pdf": "report.pdf",
+      "pdf_sha256": "21bb0187a85ab01aaee6bc01b0d0c0d10d346471b81538c9dab219a5441a08a1",
+      "physical_page": 35,
+      "image": "report_0035.png",
+      "image_sha256": "31ded2db4691494be660bffeacad46d6537f8bc09c168ab364990669bca8339d",
+      "same_image_bytes_as_pre_fix": false,
+      "changed_pixel_bounds": [
+        160,
+        157,
+        515,
+        175
+      ],
+      "printed_page": 17,
+      "image_path": "/workspace/scratch/a886fd56dd2f/edition19_work/rendered/final_after_fixes/report_0035.png",
+      "actual_opened_with_view_image": true,
+      "image_sha256_verified": true,
+      "observations": "实际重新查看整页；页眉现为“第十九版：第8节末回校”。正文、公式及表格未见新增排版异常。"
+    },
+    {
+      "pdf": "report.pdf",
+      "pdf_sha256": "21bb0187a85ab01aaee6bc01b0d0c0d10d346471b81538c9dab219a5441a08a1",
+      "physical_page": 36,
+      "image": "report_0036.png",
+      "image_sha256": "28f2c55c52a69d47aaddffa1dd3766373a043a598b9901ad1f0cde2dcdc099a7",
+      "same_image_bytes_as_pre_fix": false,
+      "changed_pixel_bounds": [
+        436,
+        158,
+        791,
+        175
+      ],
+      "printed_page": 18,
+      "image_path": "/workspace/scratch/a886fd56dd2f/edition19_work/rendered/final_after_fixes/report_0036.png",
+      "actual_opened_with_view_image": true,
+      "image_sha256_verified": true,
+      "observations": "实际重新查看整页；页眉现为“第十九版：第8节末回校”。正文、公式及表格未见新增排版异常。"
+    },
+    {
+      "pdf": "report.pdf",
+      "pdf_sha256": "21bb0187a85ab01aaee6bc01b0d0c0d10d346471b81538c9dab219a5441a08a1",
+      "physical_page": 37,
+      "image": "report_0037.png",
+      "image_sha256": "7a5e996dee96712265f13f8a3234fe4fcc71065f680534c109818a82a7b1ba50",
+      "same_image_bytes_as_pre_fix": false,
+      "changed_pixel_bounds": [
+        160,
+        157,
+        515,
+        175
+      ],
+      "printed_page": 19,
+      "image_path": "/workspace/scratch/a886fd56dd2f/edition19_work/rendered/final_after_fixes/report_0037.png",
+      "actual_opened_with_view_image": true,
+      "image_sha256_verified": true,
+      "observations": "实际重新查看整页；页眉现为“第十九版：第9、10节回校”。正文、公式及表格未见新增排版异常。"
+    },
+    {
+      "pdf": "report.pdf",
+      "pdf_sha256": "21bb0187a85ab01aaee6bc01b0d0c0d10d346471b81538c9dab219a5441a08a1",
+      "physical_page": 38,
+      "image": "report_0038.png",
+      "image_sha256": "a5ea81a2e39fa65ac4cd7aa5d1ee3407f99312e26ed274c01c141dc987609974",
+      "same_image_bytes_as_pre_fix": false,
+      "changed_pixel_bounds": [
+        436,
+        157,
+        791,
+        175
+      ],
+      "printed_page": 20,
+      "image_path": "/workspace/scratch/a886fd56dd2f/edition19_work/rendered/final_after_fixes/report_0038.png",
+      "actual_opened_with_view_image": true,
+      "image_sha256_verified": true,
+      "observations": "实际重新查看整页；页眉现为“第十九版：第9、10节回校”。正文、公式及表格未见新增排版异常。"
+    },
+    {
+      "pdf": "report.pdf",
+      "pdf_sha256": "21bb0187a85ab01aaee6bc01b0d0c0d10d346471b81538c9dab219a5441a08a1",
+      "physical_page": 39,
+      "image": "report_0039.png",
+      "image_sha256": "a08577e3a72edef51a83c33b578c0c8ad806e6b8b47375414a50fb30121690f1",
+      "same_image_bytes_as_pre_fix": false,
+      "changed_pixel_bounds": [
+        160,
+        157,
+        515,
+        175
+      ],
+      "printed_page": 21,
+      "image_path": "/workspace/scratch/a886fd56dd2f/edition19_work/rendered/final_after_fixes/report_0039.png",
+      "actual_opened_with_view_image": true,
+      "image_sha256_verified": true,
+      "observations": "实际重新查看整页；页眉现为“第十九版：第9、10节回校”。正文、公式及表格未见新增排版异常。"
+    },
+    {
+      "pdf": "report.pdf",
+      "pdf_sha256": "21bb0187a85ab01aaee6bc01b0d0c0d10d346471b81538c9dab219a5441a08a1",
+      "physical_page": 40,
+      "image": "report_0040.png",
+      "image_sha256": "c7f84a5a8c693b95ef6d4ae81a592dc04b096f171148f266b487ab5c1494ddc6",
+      "same_image_bytes_as_pre_fix": false,
+      "changed_pixel_bounds": [
+        436,
+        157,
+        791,
+        175
+      ],
+      "printed_page": 22,
+      "image_path": "/workspace/scratch/a886fd56dd2f/edition19_work/rendered/final_after_fixes/report_0040.png",
+      "actual_opened_with_view_image": true,
+      "image_sha256_verified": true,
+      "observations": "实际重新查看整页；页眉现为“第十九版：第9、10节回校”。正文、公式及表格未见新增排版异常。"
+    },
+    {
+      "pdf": "report.pdf",
+      "pdf_sha256": "21bb0187a85ab01aaee6bc01b0d0c0d10d346471b81538c9dab219a5441a08a1",
+      "physical_page": 41,
+      "image": "report_0041.png",
+      "image_sha256": "673e80c4e7a03fc19584348c92cfdacf4cb0d9e452461682f408cca9e6c5f98d",
+      "same_image_bytes_as_pre_fix": false,
+      "changed_pixel_bounds": [
+        160,
+        157,
+        515,
+        175
+      ],
+      "printed_page": 23,
+      "image_path": "/workspace/scratch/a886fd56dd2f/edition19_work/rendered/final_after_fixes/report_0041.png",
+      "actual_opened_with_view_image": true,
+      "image_sha256_verified": true,
+      "observations": "实际重新查看整页；页眉现为“第十九版：第11节回校”。正文、公式及表格未见新增排版异常。"
+    }
+  ],
+  "report_body_pixel_comparison": [
+    {
+      "physical_page": 31,
+      "old_image_sha256": "8fdb54b2604d1b40f8db02b47ab69649659b1e59a57c8d5ea8f0a1b0220e5923",
+      "new_image_sha256": "c2a6b7347ae328045b912ec6f58908193e2f1e8ed2133932988e240395480a1b",
+      "full_image_pixel_difference_bbox": [
+        160,
+        157,
+        515,
+        175
+      ],
+      "coordinate_unit": "PNG pixel",
+      "body_crop_y_start": 190,
+      "body_pixels_identical": true,
+      "interpretation": "所见差异完全位于页眉区；此像素比较是对实际打开观察的补充，不是代替。"
+    },
+    {
+      "physical_page": 32,
+      "old_image_sha256": "2061ebbeab05a8afc11b3af2460bf71e412393e1c29686ce7345e7088121db15",
+      "new_image_sha256": "5b39aef7f44d6de4353e18d3558581c085620f142ba59ece983c969ce24ebc3f",
+      "full_image_pixel_difference_bbox": [
+        436,
+        158,
+        791,
+        175
+      ],
+      "coordinate_unit": "PNG pixel",
+      "body_crop_y_start": 190,
+      "body_pixels_identical": true,
+      "interpretation": "所见差异完全位于页眉区；此像素比较是对实际打开观察的补充，不是代替。"
+    },
+    {
+      "physical_page": 33,
+      "old_image_sha256": "39fc61f0038ea3f3b1e9178db0723b664cc2bec7ac7f71f8639010b401d61006",
+      "new_image_sha256": "67377e81c068caa421355981a30520ca9affad4f11cffcdd454955928a461dca",
+      "full_image_pixel_difference_bbox": [
+        160,
+        157,
+        515,
+        175
+      ],
+      "coordinate_unit": "PNG pixel",
+      "body_crop_y_start": 190,
+      "body_pixels_identical": true,
+      "interpretation": "所见差异完全位于页眉区；此像素比较是对实际打开观察的补充，不是代替。"
+    },
+    {
+      "physical_page": 34,
+      "old_image_sha256": "79e43ad42457d9a769ce15ab803438fa6c81736c3275bb1f4a08da2ebb11bd3d",
+      "new_image_sha256": "9a531f50f4b8ea53f35d245bb5205d23ca18b8ebec7774caf7a07c4b1610db33",
+      "full_image_pixel_difference_bbox": [
+        436,
+        158,
+        791,
+        175
+      ],
+      "coordinate_unit": "PNG pixel",
+      "body_crop_y_start": 190,
+      "body_pixels_identical": true,
+      "interpretation": "所见差异完全位于页眉区；此像素比较是对实际打开观察的补充，不是代替。"
+    },
+    {
+      "physical_page": 35,
+      "old_image_sha256": "6947b3f4bb04526268abfff95c99fe62a7a0547be4707140b5017da79d539317",
+      "new_image_sha256": "31ded2db4691494be660bffeacad46d6537f8bc09c168ab364990669bca8339d",
+      "full_image_pixel_difference_bbox": [
+        160,
+        157,
+        515,
+        175
+      ],
+      "coordinate_unit": "PNG pixel",
+      "body_crop_y_start": 190,
+      "body_pixels_identical": true,
+      "interpretation": "所见差异完全位于页眉区；此像素比较是对实际打开观察的补充，不是代替。"
+    },
+    {
+      "physical_page": 36,
+      "old_image_sha256": "6d54cf43e9afe08dc09da7c0b69243dc43b732fcae0e3d7a4e83f6a5a1e15fcb",
+      "new_image_sha256": "28f2c55c52a69d47aaddffa1dd3766373a043a598b9901ad1f0cde2dcdc099a7",
+      "full_image_pixel_difference_bbox": [
+        436,
+        158,
+        791,
+        175
+      ],
+      "coordinate_unit": "PNG pixel",
+      "body_crop_y_start": 190,
+      "body_pixels_identical": true,
+      "interpretation": "所见差异完全位于页眉区；此像素比较是对实际打开观察的补充，不是代替。"
+    },
+    {
+      "physical_page": 37,
+      "old_image_sha256": "55079c786b60a414b708921bdbb4380db1a139e7767ce6ff5e19e8ae01c8d893",
+      "new_image_sha256": "7a5e996dee96712265f13f8a3234fe4fcc71065f680534c109818a82a7b1ba50",
+      "full_image_pixel_difference_bbox": [
+        160,
+        157,
+        515,
+        175
+      ],
+      "coordinate_unit": "PNG pixel",
+      "body_crop_y_start": 190,
+      "body_pixels_identical": true,
+      "interpretation": "所见差异完全位于页眉区；此像素比较是对实际打开观察的补充，不是代替。"
+    },
+    {
+      "physical_page": 38,
+      "old_image_sha256": "42656cc2a1728730b5c71d6926c19546ee00cc4f172fa352b336f06d434243ca",
+      "new_image_sha256": "a5ea81a2e39fa65ac4cd7aa5d1ee3407f99312e26ed274c01c141dc987609974",
+      "full_image_pixel_difference_bbox": [
+        436,
+        157,
+        791,
+        175
+      ],
+      "coordinate_unit": "PNG pixel",
+      "body_crop_y_start": 190,
+      "body_pixels_identical": true,
+      "interpretation": "所见差异完全位于页眉区；此像素比较是对实际打开观察的补充，不是代替。"
+    },
+    {
+      "physical_page": 39,
+      "old_image_sha256": "cca181217d3711a6b629ca7400a3370d57ece96b610707ff0c1513bab3742393",
+      "new_image_sha256": "a08577e3a72edef51a83c33b578c0c8ad806e6b8b47375414a50fb30121690f1",
+      "full_image_pixel_difference_bbox": [
+        160,
+        157,
+        515,
+        175
+      ],
+      "coordinate_unit": "PNG pixel",
+      "body_crop_y_start": 190,
+      "body_pixels_identical": true,
+      "interpretation": "所见差异完全位于页眉区；此像素比较是对实际打开观察的补充，不是代替。"
+    },
+    {
+      "physical_page": 40,
+      "old_image_sha256": "5d3d6a1486735410b9de918431ad38a045ee3f3bacbec50b41099e01adb64f92",
+      "new_image_sha256": "c7f84a5a8c693b95ef6d4ae81a592dc04b096f171148f266b487ab5c1494ddc6",
+      "full_image_pixel_difference_bbox": [
+        436,
+        157,
+        791,
+        175
+      ],
+      "coordinate_unit": "PNG pixel",
+      "body_crop_y_start": 190,
+      "body_pixels_identical": true,
+      "interpretation": "所见差异完全位于页眉区；此像素比较是对实际打开观察的补充，不是代替。"
+    },
+    {
+      "physical_page": 41,
+      "old_image_sha256": "c16001c378b46f3847ec95aa7cdb04bb69bc5a34233e7f51977d35bd1694eb5f",
+      "new_image_sha256": "673e80c4e7a03fc19584348c92cfdacf4cb0d9e452461682f408cca9e6c5f98d",
+      "full_image_pixel_difference_bbox": [
+        160,
+        157,
+        515,
+        175
+      ],
+      "coordinate_unit": "PNG pixel",
+      "body_crop_y_start": 190,
+      "body_pixels_identical": true,
+      "interpretation": "所见差异完全位于页眉区；此像素比较是对实际打开观察的补充，不是代替。"
+    }
+  ],
+  "limitations": [
+    "仅为列出的20张页图进行视觉复查；没有审阅整本1214页/389页。",
+    "不声称此次视觉检查重新证明数学命题或逐字检查完整原文对应。",
+    "本次主稿散列仍有已知1038脚注标号待修；不得直接当作最终发布PDF身份。",
+    "若整本PDF散列因其他页修复而变化，可由明确绑定两代PDF的逐页像素一致证据继承未变页面结论；本记录尚未自行声称这种未来一致性。"
+  ],
+  "final_identity_inheritance": null
+}

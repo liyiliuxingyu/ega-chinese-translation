@@ -1,0 +1,1434 @@
+{
+  "status": "inventory_only_not_a_completed_source_audit",
+  "sources": [
+    {
+      "source": "/workspace/scratch/a886fd56dd2f/ega-recovery/archive_20261121/03_sources/EGA5_francais.pdf",
+      "sha256": "24cf8204184b58b18a46e5f63ecc36d6e791b3c8c96a09daac93de96ebd8e830",
+      "physical_page_count": 171,
+      "pages": [
+        {
+          "physical_page": 1,
+          "review_status": "not_yet_reviewed_in_edition19",
+          "segments": []
+        },
+        {
+          "physical_page": 2,
+          "review_status": "not_yet_reviewed_in_edition19",
+          "segments": []
+        },
+        {
+          "physical_page": 3,
+          "review_status": "not_yet_reviewed_in_edition19",
+          "segments": []
+        },
+        {
+          "physical_page": 4,
+          "review_status": "not_yet_reviewed_in_edition19",
+          "segments": []
+        },
+        {
+          "physical_page": 5,
+          "review_status": "not_yet_reviewed_in_edition19",
+          "segments": []
+        },
+        {
+          "physical_page": 6,
+          "review_status": "not_yet_reviewed_in_edition19",
+          "segments": []
+        },
+        {
+          "physical_page": 7,
+          "review_status": "not_yet_reviewed_in_edition19",
+          "segments": []
+        },
+        {
+          "physical_page": 8,
+          "review_status": "not_yet_reviewed_in_edition19",
+          "segments": []
+        },
+        {
+          "physical_page": 9,
+          "review_status": "not_yet_reviewed_in_edition19",
+          "segments": []
+        },
+        {
+          "physical_page": 10,
+          "review_status": "not_yet_reviewed_in_edition19",
+          "segments": []
+        },
+        {
+          "physical_page": 11,
+          "review_status": "not_yet_reviewed_in_edition19",
+          "segments": []
+        },
+        {
+          "physical_page": 12,
+          "review_status": "not_yet_reviewed_in_edition19",
+          "segments": []
+        },
+        {
+          "physical_page": 13,
+          "review_status": "not_yet_reviewed_in_edition19",
+          "segments": []
+        },
+        {
+          "physical_page": 14,
+          "review_status": "not_yet_reviewed_in_edition19",
+          "segments": []
+        },
+        {
+          "physical_page": 15,
+          "review_status": "not_yet_reviewed_in_edition19",
+          "segments": []
+        },
+        {
+          "physical_page": 16,
+          "review_status": "not_yet_reviewed_in_edition19",
+          "segments": []
+        },
+        {
+          "physical_page": 17,
+          "review_status": "not_yet_reviewed_in_edition19",
+          "segments": []
+        },
+        {
+          "physical_page": 18,
+          "review_status": "not_yet_reviewed_in_edition19",
+          "segments": []
+        },
+        {
+          "physical_page": 19,
+          "review_status": "not_yet_reviewed_in_edition19",
+          "segments": []
+        },
+        {
+          "physical_page": 20,
+          "review_status": "not_yet_reviewed_in_edition19",
+          "segments": []
+        },
+        {
+          "physical_page": 21,
+          "review_status": "not_yet_reviewed_in_edition19",
+          "segments": []
+        },
+        {
+          "physical_page": 22,
+          "review_status": "not_yet_reviewed_in_edition19",
+          "segments": []
+        },
+        {
+          "physical_page": 23,
+          "review_status": "not_yet_reviewed_in_edition19",
+          "segments": []
+        },
+        {
+          "physical_page": 24,
+          "review_status": "not_yet_reviewed_in_edition19",
+          "segments": []
+        },
+        {
+          "physical_page": 25,
+          "review_status": "not_yet_reviewed_in_edition19",
+          "segments": []
+        },
+        {
+          "physical_page": 26,
+          "review_status": "not_yet_reviewed_in_edition19",
+          "segments": []
+        },
+        {
+          "physical_page": 27,
+          "review_status": "not_yet_reviewed_in_edition19",
+          "segments": []
+        },
+        {
+          "physical_page": 28,
+          "review_status": "not_yet_reviewed_in_edition19",
+          "segments": []
+        },
+        {
+          "physical_page": 29,
+          "review_status": "not_yet_reviewed_in_edition19",
+          "segments": []
+        },
+        {
+          "physical_page": 30,
+          "review_status": "not_yet_reviewed_in_edition19",
+          "segments": []
+        },
+        {
+          "physical_page": 31,
+          "review_status": "not_yet_reviewed_in_edition19",
+          "segments": []
+        },
+        {
+          "physical_page": 32,
+          "review_status": "not_yet_reviewed_in_edition19",
+          "segments": []
+        },
+        {
+          "physical_page": 33,
+          "review_status": "not_yet_reviewed_in_edition19",
+          "segments": []
+        },
+        {
+          "physical_page": 34,
+          "review_status": "not_yet_reviewed_in_edition19",
+          "segments": []
+        },
+        {
+          "physical_page": 35,
+          "review_status": "not_yet_reviewed_in_edition19",
+          "segments": []
+        },
+        {
+          "physical_page": 36,
+          "review_status": "not_yet_reviewed_in_edition19",
+          "segments": []
+        },
+        {
+          "physical_page": 37,
+          "review_status": "not_yet_reviewed_in_edition19",
+          "segments": []
+        },
+        {
+          "physical_page": 38,
+          "review_status": "not_yet_reviewed_in_edition19",
+          "segments": []
+        },
+        {
+          "physical_page": 39,
+          "review_status": "not_yet_reviewed_in_edition19",
+          "segments": []
+        },
+        {
+          "physical_page": 40,
+          "review_status": "not_yet_reviewed_in_edition19",
+          "segments": []
+        },
+        {
+          "physical_page": 41,
+          "review_status": "not_yet_reviewed_in_edition19",
+          "segments": []
+        },
+        {
+          "physical_page": 42,
+          "review_status": "not_yet_reviewed_in_edition19",
+          "segments": []
+        },
+        {
+          "physical_page": 43,
+          "review_status": "not_yet_reviewed_in_edition19",
+          "segments": []
+        },
+        {
+          "physical_page": 44,
+          "review_status": "not_yet_reviewed_in_edition19",
+          "segments": []
+        },
+        {
+          "physical_page": 45,
+          "review_status": "not_yet_reviewed_in_edition19",
+          "segments": []
+        },
+        {
+          "physical_page": 46,
+          "review_status": "not_yet_reviewed_in_edition19",
+          "segments": []
+        },
+        {
+          "physical_page": 47,
+          "review_status": "not_yet_reviewed_in_edition19",
+          "segments": []
+        },
+        {
+          "physical_page": 48,
+          "review_status": "not_yet_reviewed_in_edition19",
+          "segments": []
+        },
+        {
+          "physical_page": 49,
+          "review_status": "not_yet_reviewed_in_edition19",
+          "segments": []
+        },
+        {
+          "physical_page": 50,
+          "review_status": "not_yet_reviewed_in_edition19",
+          "segments": []
+        },
+        {
+          "physical_page": 51,
+          "review_status": "not_yet_reviewed_in_edition19",
+          "segments": []
+        },
+        {
+          "physical_page": 52,
+          "review_status": "not_yet_reviewed_in_edition19",
+          "segments": []
+        },
+        {
+          "physical_page": 53,
+          "review_status": "not_yet_reviewed_in_edition19",
+          "segments": []
+        },
+        {
+          "physical_page": 54,
+          "review_status": "not_yet_reviewed_in_edition19",
+          "segments": []
+        },
+        {
+          "physical_page": 55,
+          "review_status": "not_yet_reviewed_in_edition19",
+          "segments": []
+        },
+        {
+          "physical_page": 56,
+          "review_status": "not_yet_reviewed_in_edition19",
+          "segments": []
+        },
+        {
+          "physical_page": 57,
+          "review_status": "not_yet_reviewed_in_edition19",
+          "segments": []
+        },
+        {
+          "physical_page": 58,
+          "review_status": "not_yet_reviewed_in_edition19",
+          "segments": []
+        },
+        {
+          "physical_page": 59,
+          "review_status": "not_yet_reviewed_in_edition19",
+          "segments": []
+        },
+        {
+          "physical_page": 60,
+          "review_status": "not_yet_reviewed_in_edition19",
+          "segments": []
+        },
+        {
+          "physical_page": 61,
+          "review_status": "not_yet_reviewed_in_edition19",
+          "segments": []
+        },
+        {
+          "physical_page": 62,
+          "review_status": "not_yet_reviewed_in_edition19",
+          "segments": []
+        },
+        {
+          "physical_page": 63,
+          "review_status": "not_yet_reviewed_in_edition19",
+          "segments": []
+        },
+        {
+          "physical_page": 64,
+          "review_status": "not_yet_reviewed_in_edition19",
+          "segments": []
+        },
+        {
+          "physical_page": 65,
+          "review_status": "not_yet_reviewed_in_edition19",
+          "segments": []
+        },
+        {
+          "physical_page": 66,
+          "review_status": "not_yet_reviewed_in_edition19",
+          "segments": []
+        },
+        {
+          "physical_page": 67,
+          "review_status": "not_yet_reviewed_in_edition19",
+          "segments": []
+        },
+        {
+          "physical_page": 68,
+          "review_status": "not_yet_reviewed_in_edition19",
+          "segments": []
+        },
+        {
+          "physical_page": 69,
+          "review_status": "not_yet_reviewed_in_edition19",
+          "segments": []
+        },
+        {
+          "physical_page": 70,
+          "review_status": "not_yet_reviewed_in_edition19",
+          "segments": []
+        },
+        {
+          "physical_page": 71,
+          "review_status": "not_yet_reviewed_in_edition19",
+          "segments": []
+        },
+        {
+          "physical_page": 72,
+          "review_status": "not_yet_reviewed_in_edition19",
+          "segments": []
+        },
+        {
+          "physical_page": 73,
+          "review_status": "not_yet_reviewed_in_edition19",
+          "segments": []
+        },
+        {
+          "physical_page": 74,
+          "review_status": "not_yet_reviewed_in_edition19",
+          "segments": []
+        },
+        {
+          "physical_page": 75,
+          "review_status": "not_yet_reviewed_in_edition19",
+          "segments": []
+        },
+        {
+          "physical_page": 76,
+          "review_status": "not_yet_reviewed_in_edition19",
+          "segments": []
+        },
+        {
+          "physical_page": 77,
+          "review_status": "not_yet_reviewed_in_edition19",
+          "segments": []
+        },
+        {
+          "physical_page": 78,
+          "review_status": "not_yet_reviewed_in_edition19",
+          "segments": []
+        },
+        {
+          "physical_page": 79,
+          "review_status": "not_yet_reviewed_in_edition19",
+          "segments": []
+        },
+        {
+          "physical_page": 80,
+          "review_status": "not_yet_reviewed_in_edition19",
+          "segments": []
+        },
+        {
+          "physical_page": 81,
+          "review_status": "not_yet_reviewed_in_edition19",
+          "segments": []
+        },
+        {
+          "physical_page": 82,
+          "review_status": "not_yet_reviewed_in_edition19",
+          "segments": []
+        },
+        {
+          "physical_page": 83,
+          "review_status": "not_yet_reviewed_in_edition19",
+          "segments": []
+        },
+        {
+          "physical_page": 84,
+          "review_status": "not_yet_reviewed_in_edition19",
+          "segments": []
+        },
+        {
+          "physical_page": 85,
+          "review_status": "not_yet_reviewed_in_edition19",
+          "segments": []
+        },
+        {
+          "physical_page": 86,
+          "review_status": "not_yet_reviewed_in_edition19",
+          "segments": []
+        },
+        {
+          "physical_page": 87,
+          "review_status": "not_yet_reviewed_in_edition19",
+          "segments": []
+        },
+        {
+          "physical_page": 88,
+          "review_status": "not_yet_reviewed_in_edition19",
+          "segments": []
+        },
+        {
+          "physical_page": 89,
+          "review_status": "not_yet_reviewed_in_edition19",
+          "segments": []
+        },
+        {
+          "physical_page": 90,
+          "review_status": "not_yet_reviewed_in_edition19",
+          "segments": []
+        },
+        {
+          "physical_page": 91,
+          "review_status": "not_yet_reviewed_in_edition19",
+          "segments": []
+        },
+        {
+          "physical_page": 92,
+          "review_status": "not_yet_reviewed_in_edition19",
+          "segments": []
+        },
+        {
+          "physical_page": 93,
+          "review_status": "not_yet_reviewed_in_edition19",
+          "segments": []
+        },
+        {
+          "physical_page": 94,
+          "review_status": "not_yet_reviewed_in_edition19",
+          "segments": []
+        },
+        {
+          "physical_page": 95,
+          "review_status": "not_yet_reviewed_in_edition19",
+          "segments": []
+        },
+        {
+          "physical_page": 96,
+          "review_status": "not_yet_reviewed_in_edition19",
+          "segments": []
+        },
+        {
+          "physical_page": 97,
+          "review_status": "not_yet_reviewed_in_edition19",
+          "segments": []
+        },
+        {
+          "physical_page": 98,
+          "review_status": "not_yet_reviewed_in_edition19",
+          "segments": []
+        },
+        {
+          "physical_page": 99,
+          "review_status": "not_yet_reviewed_in_edition19",
+          "segments": []
+        },
+        {
+          "physical_page": 100,
+          "review_status": "not_yet_reviewed_in_edition19",
+          "segments": []
+        },
+        {
+          "physical_page": 101,
+          "review_status": "not_yet_reviewed_in_edition19",
+          "segments": []
+        },
+        {
+          "physical_page": 102,
+          "review_status": "not_yet_reviewed_in_edition19",
+          "segments": []
+        },
+        {
+          "physical_page": 103,
+          "review_status": "not_yet_reviewed_in_edition19",
+          "segments": []
+        },
+        {
+          "physical_page": 104,
+          "review_status": "not_yet_reviewed_in_edition19",
+          "segments": []
+        },
+        {
+          "physical_page": 105,
+          "review_status": "not_yet_reviewed_in_edition19",
+          "segments": []
+        },
+        {
+          "physical_page": 106,
+          "review_status": "not_yet_reviewed_in_edition19",
+          "segments": []
+        },
+        {
+          "physical_page": 107,
+          "review_status": "not_yet_reviewed_in_edition19",
+          "segments": []
+        },
+        {
+          "physical_page": 108,
+          "review_status": "not_yet_reviewed_in_edition19",
+          "segments": []
+        },
+        {
+          "physical_page": 109,
+          "review_status": "not_yet_reviewed_in_edition19",
+          "segments": []
+        },
+        {
+          "physical_page": 110,
+          "review_status": "not_yet_reviewed_in_edition19",
+          "segments": []
+        },
+        {
+          "physical_page": 111,
+          "review_status": "not_yet_reviewed_in_edition19",
+          "segments": []
+        },
+        {
+          "physical_page": 112,
+          "review_status": "not_yet_reviewed_in_edition19",
+          "segments": []
+        },
+        {
+          "physical_page": 113,
+          "review_status": "not_yet_reviewed_in_edition19",
+          "segments": []
+        },
+        {
+          "physical_page": 114,
+          "review_status": "not_yet_reviewed_in_edition19",
+          "segments": []
+        },
+        {
+          "physical_page": 115,
+          "review_status": "not_yet_reviewed_in_edition19",
+          "segments": []
+        },
+        {
+          "physical_page": 116,
+          "review_status": "not_yet_reviewed_in_edition19",
+          "segments": []
+        },
+        {
+          "physical_page": 117,
+          "review_status": "not_yet_reviewed_in_edition19",
+          "segments": []
+        },
+        {
+          "physical_page": 118,
+          "review_status": "not_yet_reviewed_in_edition19",
+          "segments": []
+        },
+        {
+          "physical_page": 119,
+          "review_status": "not_yet_reviewed_in_edition19",
+          "segments": []
+        },
+        {
+          "physical_page": 120,
+          "review_status": "not_yet_reviewed_in_edition19",
+          "segments": []
+        },
+        {
+          "physical_page": 121,
+          "review_status": "not_yet_reviewed_in_edition19",
+          "segments": []
+        },
+        {
+          "physical_page": 122,
+          "review_status": "not_yet_reviewed_in_edition19",
+          "segments": []
+        },
+        {
+          "physical_page": 123,
+          "review_status": "not_yet_reviewed_in_edition19",
+          "segments": []
+        },
+        {
+          "physical_page": 124,
+          "review_status": "not_yet_reviewed_in_edition19",
+          "segments": []
+        },
+        {
+          "physical_page": 125,
+          "review_status": "not_yet_reviewed_in_edition19",
+          "segments": []
+        },
+        {
+          "physical_page": 126,
+          "review_status": "not_yet_reviewed_in_edition19",
+          "segments": []
+        },
+        {
+          "physical_page": 127,
+          "review_status": "not_yet_reviewed_in_edition19",
+          "segments": []
+        },
+        {
+          "physical_page": 128,
+          "review_status": "not_yet_reviewed_in_edition19",
+          "segments": []
+        },
+        {
+          "physical_page": 129,
+          "review_status": "not_yet_reviewed_in_edition19",
+          "segments": []
+        },
+        {
+          "physical_page": 130,
+          "review_status": "not_yet_reviewed_in_edition19",
+          "segments": []
+        },
+        {
+          "physical_page": 131,
+          "review_status": "not_yet_reviewed_in_edition19",
+          "segments": []
+        },
+        {
+          "physical_page": 132,
+          "review_status": "not_yet_reviewed_in_edition19",
+          "segments": []
+        },
+        {
+          "physical_page": 133,
+          "review_status": "not_yet_reviewed_in_edition19",
+          "segments": []
+        },
+        {
+          "physical_page": 134,
+          "review_status": "not_yet_reviewed_in_edition19",
+          "segments": []
+        },
+        {
+          "physical_page": 135,
+          "review_status": "not_yet_reviewed_in_edition19",
+          "segments": []
+        },
+        {
+          "physical_page": 136,
+          "review_status": "not_yet_reviewed_in_edition19",
+          "segments": []
+        },
+        {
+          "physical_page": 137,
+          "review_status": "not_yet_reviewed_in_edition19",
+          "segments": []
+        },
+        {
+          "physical_page": 138,
+          "review_status": "not_yet_reviewed_in_edition19",
+          "segments": []
+        },
+        {
+          "physical_page": 139,
+          "review_status": "not_yet_reviewed_in_edition19",
+          "segments": []
+        },
+        {
+          "physical_page": 140,
+          "review_status": "not_yet_reviewed_in_edition19",
+          "segments": []
+        },
+        {
+          "physical_page": 141,
+          "review_status": "not_yet_reviewed_in_edition19",
+          "segments": []
+        },
+        {
+          "physical_page": 142,
+          "review_status": "not_yet_reviewed_in_edition19",
+          "segments": []
+        },
+        {
+          "physical_page": 143,
+          "review_status": "not_yet_reviewed_in_edition19",
+          "segments": []
+        },
+        {
+          "physical_page": 144,
+          "review_status": "not_yet_reviewed_in_edition19",
+          "segments": []
+        },
+        {
+          "physical_page": 145,
+          "review_status": "not_yet_reviewed_in_edition19",
+          "segments": []
+        },
+        {
+          "physical_page": 146,
+          "review_status": "not_yet_reviewed_in_edition19",
+          "segments": []
+        },
+        {
+          "physical_page": 147,
+          "review_status": "not_yet_reviewed_in_edition19",
+          "segments": []
+        },
+        {
+          "physical_page": 148,
+          "review_status": "not_yet_reviewed_in_edition19",
+          "segments": []
+        },
+        {
+          "physical_page": 149,
+          "review_status": "not_yet_reviewed_in_edition19",
+          "segments": []
+        },
+        {
+          "physical_page": 150,
+          "review_status": "not_yet_reviewed_in_edition19",
+          "segments": []
+        },
+        {
+          "physical_page": 151,
+          "review_status": "not_yet_reviewed_in_edition19",
+          "segments": []
+        },
+        {
+          "physical_page": 152,
+          "review_status": "not_yet_reviewed_in_edition19",
+          "segments": []
+        },
+        {
+          "physical_page": 153,
+          "review_status": "not_yet_reviewed_in_edition19",
+          "segments": []
+        },
+        {
+          "physical_page": 154,
+          "review_status": "not_yet_reviewed_in_edition19",
+          "segments": []
+        },
+        {
+          "physical_page": 155,
+          "review_status": "not_yet_reviewed_in_edition19",
+          "segments": []
+        },
+        {
+          "physical_page": 156,
+          "review_status": "not_yet_reviewed_in_edition19",
+          "segments": []
+        },
+        {
+          "physical_page": 157,
+          "review_status": "not_yet_reviewed_in_edition19",
+          "segments": []
+        },
+        {
+          "physical_page": 158,
+          "review_status": "not_yet_reviewed_in_edition19",
+          "segments": []
+        },
+        {
+          "physical_page": 159,
+          "review_status": "not_yet_reviewed_in_edition19",
+          "segments": []
+        },
+        {
+          "physical_page": 160,
+          "review_status": "not_yet_reviewed_in_edition19",
+          "segments": []
+        },
+        {
+          "physical_page": 161,
+          "review_status": "not_yet_reviewed_in_edition19",
+          "segments": []
+        },
+        {
+          "physical_page": 162,
+          "review_status": "not_yet_reviewed_in_edition19",
+          "segments": []
+        },
+        {
+          "physical_page": 163,
+          "review_status": "not_yet_reviewed_in_edition19",
+          "segments": []
+        },
+        {
+          "physical_page": 164,
+          "review_status": "not_yet_reviewed_in_edition19",
+          "segments": []
+        },
+        {
+          "physical_page": 165,
+          "review_status": "not_yet_reviewed_in_edition19",
+          "segments": []
+        },
+        {
+          "physical_page": 166,
+          "review_status": "not_yet_reviewed_in_edition19",
+          "segments": []
+        },
+        {
+          "physical_page": 167,
+          "review_status": "not_yet_reviewed_in_edition19",
+          "segments": []
+        },
+        {
+          "physical_page": 168,
+          "review_status": "not_yet_reviewed_in_edition19",
+          "segments": []
+        },
+        {
+          "physical_page": 169,
+          "review_status": "not_yet_reviewed_in_edition19",
+          "segments": []
+        },
+        {
+          "physical_page": 170,
+          "review_status": "not_yet_reviewed_in_edition19",
+          "segments": []
+        },
+        {
+          "physical_page": 171,
+          "review_status": "not_yet_reviewed_in_edition19",
+          "segments": []
+        }
+      ]
+    },
+    {
+      "source": "/workspace/scratch/a886fd56dd2f/ega-recovery/archive_20261121/03_sources/EGAVaiello.pdf",
+      "sha256": "23a20ef32fd16a1bd623c0c08ac080d04fc94f248de12133b713a19d6b0330d9",
+      "physical_page_count": 112,
+      "pages": [
+        {
+          "physical_page": 1,
+          "review_status": "not_yet_reviewed_in_edition19",
+          "segments": []
+        },
+        {
+          "physical_page": 2,
+          "review_status": "not_yet_reviewed_in_edition19",
+          "segments": []
+        },
+        {
+          "physical_page": 3,
+          "review_status": "not_yet_reviewed_in_edition19",
+          "segments": []
+        },
+        {
+          "physical_page": 4,
+          "review_status": "not_yet_reviewed_in_edition19",
+          "segments": []
+        },
+        {
+          "physical_page": 5,
+          "review_status": "not_yet_reviewed_in_edition19",
+          "segments": []
+        },
+        {
+          "physical_page": 6,
+          "review_status": "not_yet_reviewed_in_edition19",
+          "segments": []
+        },
+        {
+          "physical_page": 7,
+          "review_status": "not_yet_reviewed_in_edition19",
+          "segments": []
+        },
+        {
+          "physical_page": 8,
+          "review_status": "not_yet_reviewed_in_edition19",
+          "segments": []
+        },
+        {
+          "physical_page": 9,
+          "review_status": "not_yet_reviewed_in_edition19",
+          "segments": []
+        },
+        {
+          "physical_page": 10,
+          "review_status": "not_yet_reviewed_in_edition19",
+          "segments": []
+        },
+        {
+          "physical_page": 11,
+          "review_status": "not_yet_reviewed_in_edition19",
+          "segments": []
+        },
+        {
+          "physical_page": 12,
+          "review_status": "not_yet_reviewed_in_edition19",
+          "segments": []
+        },
+        {
+          "physical_page": 13,
+          "review_status": "not_yet_reviewed_in_edition19",
+          "segments": []
+        },
+        {
+          "physical_page": 14,
+          "review_status": "not_yet_reviewed_in_edition19",
+          "segments": []
+        },
+        {
+          "physical_page": 15,
+          "review_status": "not_yet_reviewed_in_edition19",
+          "segments": []
+        },
+        {
+          "physical_page": 16,
+          "review_status": "not_yet_reviewed_in_edition19",
+          "segments": []
+        },
+        {
+          "physical_page": 17,
+          "review_status": "not_yet_reviewed_in_edition19",
+          "segments": []
+        },
+        {
+          "physical_page": 18,
+          "review_status": "not_yet_reviewed_in_edition19",
+          "segments": []
+        },
+        {
+          "physical_page": 19,
+          "review_status": "not_yet_reviewed_in_edition19",
+          "segments": []
+        },
+        {
+          "physical_page": 20,
+          "review_status": "not_yet_reviewed_in_edition19",
+          "segments": []
+        },
+        {
+          "physical_page": 21,
+          "review_status": "not_yet_reviewed_in_edition19",
+          "segments": []
+        },
+        {
+          "physical_page": 22,
+          "review_status": "not_yet_reviewed_in_edition19",
+          "segments": []
+        },
+        {
+          "physical_page": 23,
+          "review_status": "not_yet_reviewed_in_edition19",
+          "segments": []
+        },
+        {
+          "physical_page": 24,
+          "review_status": "not_yet_reviewed_in_edition19",
+          "segments": []
+        },
+        {
+          "physical_page": 25,
+          "review_status": "not_yet_reviewed_in_edition19",
+          "segments": []
+        },
+        {
+          "physical_page": 26,
+          "review_status": "not_yet_reviewed_in_edition19",
+          "segments": []
+        },
+        {
+          "physical_page": 27,
+          "review_status": "not_yet_reviewed_in_edition19",
+          "segments": []
+        },
+        {
+          "physical_page": 28,
+          "review_status": "not_yet_reviewed_in_edition19",
+          "segments": []
+        },
+        {
+          "physical_page": 29,
+          "review_status": "not_yet_reviewed_in_edition19",
+          "segments": []
+        },
+        {
+          "physical_page": 30,
+          "review_status": "not_yet_reviewed_in_edition19",
+          "segments": []
+        },
+        {
+          "physical_page": 31,
+          "review_status": "not_yet_reviewed_in_edition19",
+          "segments": []
+        },
+        {
+          "physical_page": 32,
+          "review_status": "not_yet_reviewed_in_edition19",
+          "segments": []
+        },
+        {
+          "physical_page": 33,
+          "review_status": "not_yet_reviewed_in_edition19",
+          "segments": []
+        },
+        {
+          "physical_page": 34,
+          "review_status": "not_yet_reviewed_in_edition19",
+          "segments": []
+        },
+        {
+          "physical_page": 35,
+          "review_status": "not_yet_reviewed_in_edition19",
+          "segments": []
+        },
+        {
+          "physical_page": 36,
+          "review_status": "not_yet_reviewed_in_edition19",
+          "segments": []
+        },
+        {
+          "physical_page": 37,
+          "review_status": "not_yet_reviewed_in_edition19",
+          "segments": []
+        },
+        {
+          "physical_page": 38,
+          "review_status": "not_yet_reviewed_in_edition19",
+          "segments": []
+        },
+        {
+          "physical_page": 39,
+          "review_status": "not_yet_reviewed_in_edition19",
+          "segments": []
+        },
+        {
+          "physical_page": 40,
+          "review_status": "not_yet_reviewed_in_edition19",
+          "segments": []
+        },
+        {
+          "physical_page": 41,
+          "review_status": "not_yet_reviewed_in_edition19",
+          "segments": []
+        },
+        {
+          "physical_page": 42,
+          "review_status": "not_yet_reviewed_in_edition19",
+          "segments": []
+        },
+        {
+          "physical_page": 43,
+          "review_status": "not_yet_reviewed_in_edition19",
+          "segments": []
+        },
+        {
+          "physical_page": 44,
+          "review_status": "not_yet_reviewed_in_edition19",
+          "segments": []
+        },
+        {
+          "physical_page": 45,
+          "review_status": "not_yet_reviewed_in_edition19",
+          "segments": []
+        },
+        {
+          "physical_page": 46,
+          "review_status": "not_yet_reviewed_in_edition19",
+          "segments": []
+        },
+        {
+          "physical_page": 47,
+          "review_status": "not_yet_reviewed_in_edition19",
+          "segments": []
+        },
+        {
+          "physical_page": 48,
+          "review_status": "not_yet_reviewed_in_edition19",
+          "segments": []
+        },
+        {
+          "physical_page": 49,
+          "review_status": "not_yet_reviewed_in_edition19",
+          "segments": []
+        },
+        {
+          "physical_page": 50,
+          "review_status": "not_yet_reviewed_in_edition19",
+          "segments": []
+        },
+        {
+          "physical_page": 51,
+          "review_status": "not_yet_reviewed_in_edition19",
+          "segments": []
+        },
+        {
+          "physical_page": 52,
+          "review_status": "not_yet_reviewed_in_edition19",
+          "segments": []
+        },
+        {
+          "physical_page": 53,
+          "review_status": "not_yet_reviewed_in_edition19",
+          "segments": []
+        },
+        {
+          "physical_page": 54,
+          "review_status": "not_yet_reviewed_in_edition19",
+          "segments": []
+        },
+        {
+          "physical_page": 55,
+          "review_status": "not_yet_reviewed_in_edition19",
+          "segments": []
+        },
+        {
+          "physical_page": 56,
+          "review_status": "not_yet_reviewed_in_edition19",
+          "segments": []
+        },
+        {
+          "physical_page": 57,
+          "review_status": "not_yet_reviewed_in_edition19",
+          "segments": []
+        },
+        {
+          "physical_page": 58,
+          "review_status": "not_yet_reviewed_in_edition19",
+          "segments": []
+        },
+        {
+          "physical_page": 59,
+          "review_status": "not_yet_reviewed_in_edition19",
+          "segments": []
+        },
+        {
+          "physical_page": 60,
+          "review_status": "not_yet_reviewed_in_edition19",
+          "segments": []
+        },
+        {
+          "physical_page": 61,
+          "review_status": "not_yet_reviewed_in_edition19",
+          "segments": []
+        },
+        {
+          "physical_page": 62,
+          "review_status": "not_yet_reviewed_in_edition19",
+          "segments": []
+        },
+        {
+          "physical_page": 63,
+          "review_status": "not_yet_reviewed_in_edition19",
+          "segments": []
+        },
+        {
+          "physical_page": 64,
+          "review_status": "not_yet_reviewed_in_edition19",
+          "segments": []
+        },
+        {
+          "physical_page": 65,
+          "review_status": "not_yet_reviewed_in_edition19",
+          "segments": []
+        },
+        {
+          "physical_page": 66,
+          "review_status": "not_yet_reviewed_in_edition19",
+          "segments": []
+        },
+        {
+          "physical_page": 67,
+          "review_status": "not_yet_reviewed_in_edition19",
+          "segments": []
+        },
+        {
+          "physical_page": 68,
+          "review_status": "not_yet_reviewed_in_edition19",
+          "segments": []
+        },
+        {
+          "physical_page": 69,
+          "review_status": "not_yet_reviewed_in_edition19",
+          "segments": []
+        },
+        {
+          "physical_page": 70,
+          "review_status": "not_yet_reviewed_in_edition19",
+          "segments": []
+        },
+        {
+          "physical_page": 71,
+          "review_status": "not_yet_reviewed_in_edition19",
+          "segments": []
+        },
+        {
+          "physical_page": 72,
+          "review_status": "not_yet_reviewed_in_edition19",
+          "segments": []
+        },
+        {
+          "physical_page": 73,
+          "review_status": "not_yet_reviewed_in_edition19",
+          "segments": []
+        },
+        {
+          "physical_page": 74,
+          "review_status": "not_yet_reviewed_in_edition19",
+          "segments": []
+        },
+        {
+          "physical_page": 75,
+          "review_status": "not_yet_reviewed_in_edition19",
+          "segments": []
+        },
+        {
+          "physical_page": 76,
+          "review_status": "not_yet_reviewed_in_edition19",
+          "segments": []
+        },
+        {
+          "physical_page": 77,
+          "review_status": "not_yet_reviewed_in_edition19",
+          "segments": []
+        },
+        {
+          "physical_page": 78,
+          "review_status": "not_yet_reviewed_in_edition19",
+          "segments": []
+        },
+        {
+          "physical_page": 79,
+          "review_status": "not_yet_reviewed_in_edition19",
+          "segments": []
+        },
+        {
+          "physical_page": 80,
+          "review_status": "not_yet_reviewed_in_edition19",
+          "segments": []
+        },
+        {
+          "physical_page": 81,
+          "review_status": "not_yet_reviewed_in_edition19",
+          "segments": []
+        },
+        {
+          "physical_page": 82,
+          "review_status": "not_yet_reviewed_in_edition19",
+          "segments": []
+        },
+        {
+          "physical_page": 83,
+          "review_status": "not_yet_reviewed_in_edition19",
+          "segments": []
+        },
+        {
+          "physical_page": 84,
+          "review_status": "not_yet_reviewed_in_edition19",
+          "segments": []
+        },
+        {
+          "physical_page": 85,
+          "review_status": "not_yet_reviewed_in_edition19",
+          "segments": []
+        },
+        {
+          "physical_page": 86,
+          "review_status": "not_yet_reviewed_in_edition19",
+          "segments": []
+        },
+        {
+          "physical_page": 87,
+          "review_status": "not_yet_reviewed_in_edition19",
+          "segments": []
+        },
+        {
+          "physical_page": 88,
+          "review_status": "not_yet_reviewed_in_edition19",
+          "segments": []
+        },
+        {
+          "physical_page": 89,
+          "review_status": "not_yet_reviewed_in_edition19",
+          "segments": []
+        },
+        {
+          "physical_page": 90,
+          "review_status": "not_yet_reviewed_in_edition19",
+          "segments": []
+        },
+        {
+          "physical_page": 91,
+          "review_status": "not_yet_reviewed_in_edition19",
+          "segments": []
+        },
+        {
+          "physical_page": 92,
+          "review_status": "not_yet_reviewed_in_edition19",
+          "segments": []
+        },
+        {
+          "physical_page": 93,
+          "review_status": "not_yet_reviewed_in_edition19",
+          "segments": []
+        },
+        {
+          "physical_page": 94,
+          "review_status": "not_yet_reviewed_in_edition19",
+          "segments": []
+        },
+        {
+          "physical_page": 95,
+          "review_status": "not_yet_reviewed_in_edition19",
+          "segments": []
+        },
+        {
+          "physical_page": 96,
+          "review_status": "not_yet_reviewed_in_edition19",
+          "segments": []
+        },
+        {
+          "physical_page": 97,
+          "review_status": "not_yet_reviewed_in_edition19",
+          "segments": []
+        },
+        {
+          "physical_page": 98,
+          "review_status": "not_yet_reviewed_in_edition19",
+          "segments": []
+        },
+        {
+          "physical_page": 99,
+          "review_status": "not_yet_reviewed_in_edition19",
+          "segments": []
+        },
+        {
+          "physical_page": 100,
+          "review_status": "not_yet_reviewed_in_edition19",
+          "segments": []
+        },
+        {
+          "physical_page": 101,
+          "review_status": "not_yet_reviewed_in_edition19",
+          "segments": []
+        },
+        {
+          "physical_page": 102,
+          "review_status": "not_yet_reviewed_in_edition19",
+          "segments": []
+        },
+        {
+          "physical_page": 103,
+          "review_status": "not_yet_reviewed_in_edition19",
+          "segments": []
+        },
+        {
+          "physical_page": 104,
+          "review_status": "not_yet_reviewed_in_edition19",
+          "segments": []
+        },
+        {
+          "physical_page": 105,
+          "review_status": "not_yet_reviewed_in_edition19",
+          "segments": []
+        },
+        {
+          "physical_page": 106,
+          "review_status": "not_yet_reviewed_in_edition19",
+          "segments": []
+        },
+        {
+          "physical_page": 107,
+          "review_status": "not_yet_reviewed_in_edition19",
+          "segments": []
+        },
+        {
+          "physical_page": 108,
+          "review_status": "not_yet_reviewed_in_edition19",
+          "segments": []
+        },
+        {
+          "physical_page": 109,
+          "review_status": "not_yet_reviewed_in_edition19",
+          "segments": []
+        },
+        {
+          "physical_page": 110,
+          "review_status": "not_yet_reviewed_in_edition19",
+          "segments": []
+        },
+        {
+          "physical_page": 111,
+          "review_status": "not_yet_reviewed_in_edition19",
+          "segments": []
+        },
+        {
+          "physical_page": 112,
+          "review_status": "not_yet_reviewed_in_edition19",
+          "segments": []
+        }
+      ]
+    }
+  ]
+}

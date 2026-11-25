@@ -1,0 +1,202 @@
+{
+  "status": "initial_unified_pdf_review_complete; awaiting parent final rebuild to verify known fixes",
+  "reviewed_pdf_versions": {
+    "main": {
+      "path": "ega-recovery/current/EGA_v19/main.pdf",
+      "sha256": "e58f934310fb94747e3c46349ca7a5524ffe97dbea2554c267782d5af3bdd912",
+      "pages": 1214
+    },
+    "report": {
+      "path": "ega-recovery/current/EGA_v19/report.pdf",
+      "sha256": "967410f2f830875aced1b84ff8359093c93e9e0fdd6977f7521bfcb2177a4816",
+      "pages": 389
+    }
+  },
+  "requested_pages_actually_viewed": {
+    "main": [
+      1049,
+      1050,
+      1051,
+      1052,
+      1053,
+      1054
+    ],
+    "report": [
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49
+    ]
+  },
+  "extra_page_actually_viewed": {
+    "main": [
+      1048
+    ]
+  },
+  "page_reviews": [
+    {
+      "file": "edition19_work/engineering/visual_section11_render/before_headers/main_1048.png",
+      "sha256": "6571d390d02856445e528e1278c36a45d5818f1db7e187f7fa6f443f16a54a53",
+      "kind": "main",
+      "physical_page": 1048,
+      "printed_page": 1028,
+      "actually_viewed": true,
+      "observation": "Extra boundary page actually rendered and viewed: section11 title and two-line source statement alone at page bottom, first paragraph begins next physical page. Reported immediately; parent accepted local Needspace fix."
+    },
+    {
+      "file": "edition19_work/engineering/visual_section11_render/before_headers/main_1049.png",
+      "sha256": "bf2d6fe8239b80ef2b7a274200093423f8293a6184069f1ec9144d55caf389e2",
+      "kind": "main",
+      "physical_page": 1049,
+      "printed_page": 1029,
+      "actually_viewed": true,
+      "observation": "All opening functor/Pluecker formulas and seven footnotes legible and inside margins; no overlapping superscript markers. Heading orphan is on preceding page, not this page."
+    },
+    {
+      "file": "edition19_work/engineering/visual_section11_render/before_headers/main_1050.png",
+      "sha256": "2076f373b5ddcffc2023ec9fd90f59de1c6134ab50e7186d3ac8d4c5f8e71ae2",
+      "kind": "main",
+      "physical_page": 1050,
+      "printed_page": 1030,
+      "actually_viewed": true,
+      "observation": "Finite-rank affine charts, exact sequence, subfunctor and Hom vector-bundle formula fit; footnotes and text distinct."
+    },
+    {
+      "file": "edition19_work/engineering/visual_section11_render/before_headers/main_1051.png",
+      "sha256": "95c43e400b6fc5f7fb641d457428b37148e3e6f0b67dfa40a32f3e2cff9df178",
+      "kind": "main",
+      "physical_page": 1051,
+      "printed_page": 1031,
+      "actually_viewed": true,
+      "observation": "Recovered intrinsic conditions, duality/dimension formulas, L-zero and inclusion statement fit; five footnotes legible."
+    },
+    {
+      "file": "edition19_work/engineering/visual_section11_render/before_headers/main_1052.png",
+      "sha256": "31bc75336b80cbecc6ca4b4bb9e8e9deab51b8949485d4ff45077fe60e6415d8",
+      "kind": "main",
+      "physical_page": 1052,
+      "printed_page": 1032,
+      "actually_viewed": true,
+      "observation": "Section11 handwritten closing material and disjoint union precede section12 title/source/notation supplement in coherent order. Section12 formulas and six footnotes fit."
+    },
+    {
+      "file": "edition19_work/engineering/visual_section11_render/before_headers/main_1053.png",
+      "sha256": "4cc8ba6c9479a72998a95441f4bdf8b649c028e06bac8d3686c719c20ba86f45",
+      "kind": "main",
+      "physical_page": 1053,
+      "printed_page": 1033,
+      "actually_viewed": true,
+      "observation": "Section12 incidence scheme and paired morphism formulas fit; no collision with five long footnotes."
+    },
+    {
+      "file": "edition19_work/engineering/visual_section11_render/before_headers/main_1054.png",
+      "sha256": "092b450208c156b185b15082c75b1db6da7be333019e3708c0e5eb6f0ccfd32d",
+      "kind": "main",
+      "physical_page": 1054,
+      "printed_page": 1034,
+      "actually_viewed": true,
+      "observation": "Section12 fiber notation, kernel/Euler expression and dimension formula fit; footnote block inside margins."
+    },
+    {
+      "file": "edition19_work/engineering/visual_section11_render/before_headers/report_0042.png",
+      "sha256": "990799ffae99de586d1804e63b9798895d90044e523ce2d48b267bf22b0eaf1e",
+      "kind": "report",
+      "physical_page": 42,
+      "printed_page": 24,
+      "actually_viewed": true,
+      "observation": "Recovered-conditions discussion and longtable opening fit. Known wrong running header D19-8.14-8.18 remains; parent will replace marks."
+    },
+    {
+      "file": "edition19_work/engineering/visual_section11_render/before_headers/report_0043.png",
+      "sha256": "2527212ecb37cf949e2b6b6fa7a0147e08492c0f1e3103f0388b8831f41d32ed",
+      "kind": "report",
+      "physical_page": 43,
+      "printed_page": 25,
+      "actually_viewed": true,
+      "observation": "Longtable repeats column header properly at continuation; finite-presentation discussion and subsection4 introduction fit. Same known running-header error."
+    },
+    {
+      "file": "edition19_work/engineering/visual_section11_render/before_headers/report_0044.png",
+      "sha256": "d4071d878e59e35bf64ffba8e14bd649e29e9164009b84a99e058c091567d52d",
+      "kind": "report",
+      "physical_page": 44,
+      "printed_page": 26,
+      "actually_viewed": true,
+      "observation": "Counterexample, finite-rank discussion, two Hom/coordinate formulas and polarity discussion fit. Same known running-header error."
+    },
+    {
+      "file": "edition19_work/engineering/visual_section11_render/before_headers/report_0045.png",
+      "sha256": "e9f01d8b4b78ee25a18647c00bc5696cd220e81e72a4a61443d6bb18f3783d0a",
+      "kind": "report",
+      "physical_page": 45,
+      "printed_page": 27,
+      "actually_viewed": true,
+      "observation": "Final limitations subsection complete and legible; no clipping. Same known running-header error."
+    },
+    {
+      "file": "edition19_work/engineering/visual_section11_render/before_headers/report_0046.png",
+      "sha256": "f5f94a93f6a4c10474b5eb06850d7410250f0855c890e9d1d49a7b1678d4dfed",
+      "kind": "report",
+      "physical_page": 46,
+      "printed_page": 28,
+      "actually_viewed": true,
+      "observation": "Blank verso with running header and printed page28; no body text. Known running header to be updated by parent; no added body omission inferred."
+    },
+    {
+      "file": "edition19_work/engineering/visual_section11_render/before_headers/report_0047.png",
+      "sha256": "b963a29305f00f85e68f9257de2ffb622a399d9df241a88c6489366659ced395",
+      "kind": "report",
+      "physical_page": 47,
+      "printed_page": 29,
+      "actually_viewed": true,
+      "observation": "Historical edition18 audit separator, centered title and printed page29; no header or collision."
+    },
+    {
+      "file": "edition19_work/engineering/visual_section11_render/before_headers/report_0048.png",
+      "sha256": "dfb81a6f3b80a7f523fa2d137827e30f6a7f6e3c15219589faa046cc4bccc04d",
+      "kind": "report",
+      "physical_page": 48,
+      "printed_page": 30,
+      "actually_viewed": true,
+      "observation": "Blank verso after part separator, no content collision."
+    },
+    {
+      "file": "edition19_work/engineering/visual_section11_render/before_headers/report_0049.png",
+      "sha256": "ddb4ca5bf6571603f7facade782603281f79373fba207c76dd5b4a1b05a64de9",
+      "kind": "report",
+      "physical_page": 49,
+      "printed_page": 31,
+      "actually_viewed": true,
+      "observation": "Three-line historical editorial note at page31, no overflow; page break before inherited historical chapter preserves existing organization."
+    }
+  ],
+  "findings": [
+    {
+      "id": "VIS11-01",
+      "status": "confirmed; parent accepted fix; final render pending",
+      "kind": "orphan_section_heading",
+      "page": 1048,
+      "printed_page": 1028,
+      "details": "Section11 title/source statement ends prior page without any first-paragraph line. Needspace10baselineskip accepted by parent."
+    },
+    {
+      "id": "VIS11-02",
+      "status": "known before task; parent fixing; final render pending",
+      "kind": "wrong_running_header",
+      "pages": [
+        42,
+        43,
+        44,
+        45,
+        46
+      ],
+      "details": "Section11 report inherits D19-8.14-8.18 header. Parent will mark sections separately."
+    }
+  ],
+  "other_layout_problems_found": [],
+  "scope_limit": "Visual checks only for listed pages and versions. No source-text changes or full-book review by this agent. Final new PDF hashes/pages remain pending."
+}

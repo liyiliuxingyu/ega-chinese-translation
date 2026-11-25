@@ -1,0 +1,126 @@
+{
+  "created_utc": "2026-11-24T16:59:34.324251+00:00",
+  "scope": "Actual selective source-image inspection; not all of French pp3--29 or all proofs.",
+  "inspected_pages": [
+    {
+      "source": "archive_20261121/03_sources/EGA5_francais.pdf",
+      "source_sha256": "24cf8204184b58b18a46e5f63ecc36d6e791b3c8c96a09daac93de96ebd8e830",
+      "source_total_pages": 171,
+      "physical_page": 4,
+      "render_dpi": 180,
+      "image": "integration/early_source_renders/EGA5_francais_physical_004.png",
+      "image_sha256": "02396f6be39d04a9c8eede183b3988c3324d1aa15ceec471beef9db3ab02e28f",
+      "actually_viewed": true,
+      "observation": "相对除子预告原式：对偶在E上，Sym上标k；第III章引用。"
+    },
+    {
+      "source": "archive_20261121/03_sources/EGA5_francais.pdf",
+      "source_sha256": "24cf8204184b58b18a46e5f63ecc36d6e791b3c8c96a09daac93de96ebd8e830",
+      "source_total_pages": 171,
+      "physical_page": 8,
+      "render_dpi": 180,
+      "image": "integration/early_source_renders/EGA5_francais_physical_008.png",
+      "image_sha256": "fcd010f102c83196677aed87239076c6147241f6b806eb60f5492c5ae73320ca",
+      "actually_viewed": true,
+      "observation": "2.4仅Z不可约的手改，原等号判据未随改；2.5后维数过渡句。"
+    },
+    {
+      "source": "archive_20261121/03_sources/EGA5_francais.pdf",
+      "source_sha256": "24cf8204184b58b18a46e5f63ecc36d6e791b3c8c96a09daac93de96ebd8e830",
+      "source_total_pages": 171,
+      "physical_page": 11,
+      "render_dpi": 180,
+      "image": "integration/early_source_renders/EGA5_francais_physical_011.png",
+      "image_sha256": "a838e205dd4c7790b14033b3022e333654608a382550f76a0d8b192e0d628f6d",
+      "actually_viewed": true,
+      "observation": "2.12浸入被划去、非分歧手改；原证明仍在环境开集用方程。"
+    },
+    {
+      "source": "archive_20261121/03_sources/EGA5_francais.pdf",
+      "source_sha256": "24cf8204184b58b18a46e5f63ecc36d6e791b3c8c96a09daac93de96ebd8e830",
+      "source_total_pages": 171,
+      "physical_page": 12,
+      "render_dpi": 180,
+      "image": "integration/early_source_renders/EGA5_francais_physical_012.png",
+      "image_sha256": "944ddb7fff666ea3044c7e4757fdb2e4f645dedbd645fe0fd9b0a4af2bdc60aa",
+      "actually_viewed": true,
+      "observation": "2.12原商式求和上界n、p≤n和非零泛线性组合断言；2.14手写双向式。"
+    },
+    {
+      "source": "archive_20261121/03_sources/EGA5_francais.pdf",
+      "source_sha256": "24cf8204184b58b18a46e5f63ecc36d6e791b3c8c96a09daac93de96ebd8e830",
+      "source_total_pages": 171,
+      "physical_page": 29,
+      "render_dpi": 180,
+      "image": "integration/early_source_renders/EGA5_francais_physical_029.png",
+      "image_sha256": "875c498c401e696ada20cc6f7a2a221a6f3db8295044ba832a9f9c2b0c4d0a22",
+      "actually_viewed": true,
+      "observation": "7.4严格<n；一般固有平坦陈述与归纳路线；7.5作者声称、页末难辨手记仍不复原。"
+    },
+    {
+      "source": "archive_20261121/03_sources/EGAVaiello.pdf",
+      "source_sha256": "23a20ef32fd16a1bd623c0c08ac080d04fc94f248de12133b713a19d6b0330d9",
+      "source_total_pages": 112,
+      "physical_page": 7,
+      "render_dpi": 180,
+      "image": "integration/early_source_renders/EGAVaiello_physical_007.png",
+      "image_sha256": "43b440cfed48927b61ab7a25556cb7d144663fca7e693ace63749bf3aff500de",
+      "actually_viewed": true,
+      "observation": "2.4仅Z不可约并仍有原等号判据，脚注5下划线记号疑问。"
+    },
+    {
+      "source": "archive_20261121/03_sources/EGAVaiello.pdf",
+      "source_sha256": "23a20ef32fd16a1bd623c0c08ac080d04fc94f248de12133b713a19d6b0330d9",
+      "source_total_pages": 112,
+      "physical_page": 10,
+      "render_dpi": 180,
+      "image": "integration/early_source_renders/EGAVaiello_physical_010.png",
+      "image_sha256": "dc5686f4d41ac320a032b385053d7f9c2b5f7cfc71965b1010e29715baa00cad",
+      "actually_viewed": true,
+      "observation": "2.12非分歧陈述、仍用浸入坐标的证明、商模和辅助断言。"
+    },
+    {
+      "source": "archive_20261121/03_sources/EGAVaiello.pdf",
+      "source_sha256": "23a20ef32fd16a1bd623c0c08ac080d04fc94f248de12133b713a19d6b0330d9",
+      "source_total_pages": 112,
+      "physical_page": 20,
+      "render_dpi": 180,
+      "image": "integration/early_source_renders/EGAVaiello_physical_020.png",
+      "image_sha256": "aec73d87008d3753c7d1b5bba71ad6223de5680c1c04411f3c9aa8d32e2bbf02",
+      "actually_viewed": true,
+      "observation": "7.4英译≤n及原证明、脚注27；7.2/7.3旁列可见但未全篇数学审定。"
+    },
+    {
+      "source": "archive_20261121/03_sources/EGAVaiello.pdf",
+      "source_sha256": "23a20ef32fd16a1bd623c0c08ac080d04fc94f248de12133b713a19d6b0330d9",
+      "source_total_pages": 112,
+      "physical_page": 21,
+      "render_dpi": 180,
+      "image": "integration/early_source_renders/EGAVaiello_physical_021.png",
+      "image_sha256": "d1251e7b800ce7d736ba300c7a344059d5699fb9bbfb776cd6cd82b205519f7a",
+      "actually_viewed": true,
+      "observation": "7.5完整作者声称与脚注28；后续§8只作为边界。"
+    },
+    {
+      "source": "archive_20261121/03_sources/EGAVaiello.pdf",
+      "source_sha256": "23a20ef32fd16a1bd623c0c08ac080d04fc94f248de12133b713a19d6b0330d9",
+      "source_total_pages": 112,
+      "physical_page": 46,
+      "render_dpi": 180,
+      "image": "integration/early_source_renders/EGAVaiello_physical_046.png",
+      "image_sha256": "32e8ee3f4b27b0bce577c3b83748604d11a079efb790eddb538bf4d1b07138b6",
+      "actually_viewed": true,
+      "observation": "7.4可直接取余维m=n线性截面的作者后文意见。"
+    }
+  ],
+  "rendered_but_not_claimed_viewed": [
+    "integration/early_source_renders/EGAVaiello_physical_008.png"
+  ],
+  "unresolved": [
+    "法29页末手写尾句不作确译。",
+    "2.14左缘暗边旁注未独立辨完；本轮不扩大到一般特征零推广。",
+    "法稿7.4一般固有平坦版本未由所给归纳路线证成。",
+    "§1一般相对除子函子的表示性未在此证明；参数模订正不能充当完整表示性证明。",
+    "3.1.1外部引理、2.16根重数定义引用、AQT以及批次所列其他未核范围均不由此次整合消除。"
+  ]
+}

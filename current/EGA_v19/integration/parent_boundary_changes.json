@@ -1,0 +1,12 @@
+[
+  {
+    "path": "continuations/v18_first_preface.tex",
+    "source": "text/v5_01_02.tex",
+    "operation": "保留§1以前卷首，底本页号缩为实际卷首1—3，更新非原文范围说明"
+  },
+  {
+    "path": "continuations/v18_first_8_14_onward.tex",
+    "source": "continuations/v_dot_early.tex",
+    "operation": "保留DOT_IMPORT 08起全部后文，仅更新一条译注的历史状态；数学陈述及证明不变"
+  }
+]

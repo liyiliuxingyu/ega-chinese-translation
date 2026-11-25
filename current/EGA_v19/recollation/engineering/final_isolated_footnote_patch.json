@@ -1,0 +1,6 @@
+{
+  "fix": "Move M19-8E03 callout after L~Q^vee within the same paragraph; footnote wording and body wording unchanged. This avoids a superscript stranded on its own line by CJK line breaking.",
+  "before_paragraph_sha256": "c5e7becfd2563b3043ffca074f6eff67bbca999447573787ee92b506072b8dc9",
+  "after_paragraph_sha256": "e342fd3152d33b09897f2868cb4a05117d8d770238546f4a4ae9fff724a6df97",
+  "source_sha256": "3cf8a0d671d390bb9234304f129b81c957996e74179b96cd655cac633a7dd682"
+}

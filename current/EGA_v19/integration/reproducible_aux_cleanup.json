@@ -1,0 +1,94 @@
+{
+  "scope": "Removed only newly generated reproducible auxiliary/cache files from the edition18 work copy before packaging. Original archive and Dot files not touched.",
+  "removed_files": [
+    {
+      "path": "report.aux",
+      "bytes": 89506
+    },
+    {
+      "path": "report.toc",
+      "bytes": 59839
+    },
+    {
+      "path": "main.aux",
+      "bytes": 259209
+    },
+    {
+      "path": "main.toc",
+      "bytes": 46704
+    },
+    {
+      "path": "report.xdv",
+      "bytes": 3585048
+    },
+    {
+      "path": "main.xdv",
+      "bytes": 19079904
+    },
+    {
+      "path": "integration/middle_probe_report.aux",
+      "bytes": 15197
+    },
+    {
+      "path": "integration/early_probe.aux",
+      "bytes": 16917
+    },
+    {
+      "path": "integration/middle_probe_body.aux",
+      "bytes": 3972
+    },
+    {
+      "path": "__pycache__/flatten_sources.cpython-312.pyc",
+      "bytes": 2169
+    },
+    {
+      "path": "single_build/book_single.aux",
+      "bytes": 259209
+    },
+    {
+      "path": "single_build/audit_single.aux",
+      "bytes": 89506
+    },
+    {
+      "path": "single_build/book_single.xdv",
+      "bytes": 19079904
+    },
+    {
+      "path": "single_build/audit_single.xdv",
+      "bytes": 3585052
+    },
+    {
+      "path": "single_build/book_single.toc",
+      "bytes": 46704
+    },
+    {
+      "path": "single_build/audit_single.toc",
+      "bytes": 59839
+    },
+    {
+      "path": "integration/late_probe_build/late_probe.toc",
+      "bytes": 6218
+    },
+    {
+      "path": "integration/late_probe_build/late_probe.aux",
+      "bytes": 14755
+    },
+    {
+      "path": "runtime/texmf-var/web2c/xetex/texsys.aux",
+      "bytes": 18
+    },
+    {
+      "path": "runtime/texmf-var/web2c/xetex/xelatex.log",
+      "bytes": 44906
+    },
+    {
+      "path": "runtime/texmf-var/web2c/xetex/xelatex.fmt",
+      "bytes": 4095529
+    },
+    {
+      "path": "runtime/texmf-var/web2c/xetex/format-init.stdout.txt",
+      "bytes": 5741
+    }
+  ],
+  "retained": "Final PDFs, sources, original source manifests, all final pass logs and actual inspection/failed-comparison evidence retained."
+}

@@ -1,0 +1,157 @@
+{
+  "scope": "Static checks plus tiny byte fixtures only. No external writes, no full repository checkout, no real overlay application, no actual publication.",
+  "baseline_commit": "f1ade3db412d2167779d4b8f9fa2ed04a4daf0c3",
+  "workflow_measurements": "unfilled; first gate rejects placeholders",
+  "checks": [
+    {
+      "check": "python_syntax",
+      "path": "tools/apply_edition19_update.py",
+      "passed": true
+    },
+    {
+      "check": "python_syntax",
+      "path": "tools/package_edition19.py",
+      "passed": true
+    },
+    {
+      "check": "bash_syntax",
+      "step": "Check identity, branch, and all pinned overlay values",
+      "passed": true
+    },
+    {
+      "check": "bash_syntax",
+      "step": "Download only the exact draft parts and verify the reconstructed ZIP before extracting code",
+      "passed": true
+    },
+    {
+      "check": "bash_syntax",
+      "step": "Apply the reviewed overlay and verify the complete repository strictly",
+      "passed": true
+    },
+    {
+      "check": "bash_syntax",
+      "step": "Commit only listed payloads and the import receipt, then push main",
+      "passed": true
+    },
+    {
+      "check": "bash_syntax",
+      "step": "Build and fully re-read the project and all-history export packages",
+      "passed": true
+    },
+    {
+      "check": "bash_syntax",
+      "step": "Upload every export and checksum, comparing any existing asset exactly",
+      "passed": true
+    },
+    {
+      "check": "bash_syntax",
+      "step": "Verify every uploaded asset against its local complete bytes",
+      "passed": true
+    },
+    {
+      "check": "bash_syntax",
+      "step": "Bind the tag to the verified commit and publish the draft",
+      "passed": true
+    },
+    {
+      "check": "embedded_python_syntax",
+      "blocks": 8,
+      "passed": true
+    },
+    {
+      "check": "runner_full_repository_and_package_gates_retained",
+      "passed": true
+    },
+    {
+      "check": "unfilled_measurement_gate_fails_before_network",
+      "passed": true,
+      "exit_code": 1,
+      "message": "Fill the exact reviewed overlay SHA-256 before dispatch."
+    },
+    {
+      "check": "applier_verify_only_minimal_reconstructed_fixture",
+      "passed": true,
+      "result": {
+        "ok": true,
+        "overlay_files": 8,
+        "overlay_bytes": 17758,
+        "repository_records_checked": 8,
+        "scope": "Overlay and reconstructed repository bytes only"
+      },
+      "limit": "Byte-only fixture, no real full-repository application or Git ancestry check"
+    },
+    {
+      "check": "reject_wrong_metadata_set",
+      "passed": true,
+      "message": "Unexpected publication metadata paths"
+    },
+    {
+      "check": "reject_unsafe_overlay_path",
+      "passed": true,
+      "message": "Unexpected or unsafe overlay path: ../outside.txt"
+    },
+    {
+      "check": "reject_changed_unchanged_payload",
+      "passed": true,
+      "message": "New manifest mismatch: archive_20261121/tiny_fixture.bin"
+    },
+    {
+      "check": "packager_byte_fixture_all_eight_assets_and_sums",
+      "passed": true,
+      "result": {
+        "edition": 19,
+        "date": "2026-11-25",
+        "repository_manifest_sha256": "1207da09d1828bb5f6ad1c4928f4007717602a8e0f610715060f72538e0eb61c",
+        "repository_files_checked": 8,
+        "bundles": [
+          {
+            "file": "EGA-v19-project.zip",
+            "size": 689,
+            "sha256": "1a386419917eed64c905c3592a988c482cb84f961ba6b026a0996c4e6296e2fe",
+            "members": 4,
+            "uncompressed_bytes": 122,
+            "all_member_hashes_verified": true
+          },
+          {
+            "file": "EGA-all-projects-with-Dot-v19-20261125.zip",
+            "size": 8726,
+            "sha256": "957cb3ed9f55c40695f10a9a1879876e1ad6ca939757ec2feded38fbe4fbb42f",
+            "members": 15,
+            "uncompressed_bytes": 17955,
+            "all_member_hashes_verified": true
+          }
+        ],
+        "exports": [
+          {
+            "file": "EGA-v19-book.pdf",
+            "size": 34,
+            "sha256": "6f792c6f20e051cae790c9c270645f572a73b8e329f70b7c7dd1f5f5d3a6bcf8"
+          },
+          {
+            "file": "EGA-v19-book.tex",
+            "size": 20,
+            "sha256": "b3a7aa2548d917b33b3d30133053c477906d387d351b3e3f65db11147402c229"
+          },
+          {
+            "file": "EGA-v19-audit.pdf",
+            "size": 41,
+            "sha256": "dac4f9629d2d1b3fceee84771e9a3552913288f0ab0c544e4aeb6eca483b1d18"
+          },
+          {
+            "file": "EGA-v19-audit.tex",
+            "size": 27,
+            "sha256": "c9b2366ab036a14aec1d66d34f43885cfaf659bfc31ab09397c437d3e09c6fb1"
+          }
+        ],
+        "scope": "Byte-verified packages of the published engineering files; no claim of full mathematical proof verification"
+      },
+      "limit": "Tiny byte fixtures are not publication PDFs or actual repository exports"
+    }
+  ],
+  "all_checks_passed": true,
+  "draft_sha256": {
+    "tools/apply_edition19_update.py": "ca2d4b081bc7b3cf50f4929209b62e6646c586602c9e0f385207590f952dd326",
+    "tools/package_edition19.py": "d3ab459266b791888613d2d8fedcc1f732b0cda70285037ce172570b723a26b7",
+    ".github/workflows/publish-edition19.yml": "0488fce07927f8b245497823e6ed0c5d6afee903a3be0c279af5f499429c51e1"
+  }
+}

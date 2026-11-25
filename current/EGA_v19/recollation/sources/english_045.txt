@@ -1,0 +1,36 @@
+is replaced by dim X −m (and by implying that the dimension < 0 m the formula means
+that the considered set is empty).
+Corollary 2.3 is read by replacing ‘ﬁnite’ by “of dimension ≤m −1.” Corollary 2.4
+[similar]. The same for 2.5, replacing dim f(Xi) > 0 by dim f(Xi) ≥m and the same
+change in 2.7.
+the Proposition 2.8 remains true as stated in 2.9 replace ﬁnite by dim ≤m −1. The
+same for 2.10, 2.11.
+The statement 2.12 remains valid as such with a proof essentially unchanged (compare
+also further down comments to No. 8); 2.13 replace ﬁnite by dim ≤m −1. The 2.14 stays
+valid as such, 2.15 by replacing ﬁnite by dim ≤m−1. 2.16 is valid as stated in 2.17 replace
+ﬁnite by dim ≤m −1. 2.18 as it is.
+For 3.1, we can state it for any m, supposing tht dim f(X) ≥m + 1, but I propose to
+keep the principal statement in the case of a hypersurface and to give the general case as
+a corollary as a remark (it can be deduced immediately by the usual procedure of taking
+independent generic hyperplanes).
+At least it would be amusing to make explicit (state) the generalized version of Lemma
+3.1.1. . . . For (3.2) read dim f(X) ≥m + 1 in 3.3 replace dim f(Xi) ≥2 by dim f(Xi) ≥
+m + 1 and in the deﬁnition of G dim f(Z) = 0 by dim f(Z) ≤m −1.
+The general considerations of No. 4 apply as such to the case of any m. The same
+is true about 4.2 and 4.3 by replacing in b) (v) and (vi) the dimension condition by
+dim f(X) ≥m −1 or m + 1 (illegible, ask AG). Analogous change in 4.4 b).
+[Le laius 5.1 Fr or Latin 67] goes as such. In 5.2 it is necessary to remember that
+φ becomes a section φ(m) of GT (1) (where T = XSxGrm) inducing the sections φ(m)ξ of
+OXk(ξ)(1)k(ξ) ⊗G(ξ) (for ξ ∈Grm).
+But in general we shall explain in par. 19 that if we have a section φ of a locally free
+module of rank n over a prescheme this means that such a section if F regular for a given
+module F in terms of a local basis, this means that we have an F-regular sequence of m
+sections of OX (and it will be necessary to verify that this is independent of the chosen
+basis). In the case m = 1 we have the intrinsic evident interpretation mentioned in 5.2.
+With this language convention 5.3 remains valid as such, also 5.4 the same.
+The ﬁrst part of Remark 5.5 admits a generalization to the case of m arbitrary: If
+FSis (Sm) then the condition of regularity mentioned for φξ can be expressed in a purely
+dimensional manner.
+The second part of Remark 5.5 is valid as such for any m. Theorem 5.6 extends as
+such, so does 5.7.
+45
