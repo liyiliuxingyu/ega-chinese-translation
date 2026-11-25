@@ -1,0 +1,135 @@
+% 底本：EGAIV.1.pdf，PDF第161--163页，分册印刷第162--164页。
+\subsection{域扩张的情形}
+\egap{21.4.0}
+设 $K$ 为特征 $p>0$ 的域，$k\subseteq K$ 为子域。
+环 $k[K^p]=K^p[k]$ 等于复合域 $k(K^p)$：它是 $K$ 中在域 $K^p$ 上整的子环，因而本身就是域。
+\cmt{K11-T04}{原文理由写作“$k$ 在 $K^p$ 上代数”；但 $K^p$ 未必包含于 $k$，故不能无条件把 $k/K^p$ 看成一个域扩张。正确的是每个$a\in k$满足 $X^p-a^p\in K^p[X]$，从而 $K^p[k]$ 在 $K^p$ 上整且为域。也可直接验证：若 $0\ne z\in K^p[k]$，则 $z^p\in K^p$，所以 $z^{-1}=z^{p-1}/z^p$ 仍在该环中。本条结论未改。}
+因此，在应用前几小节的结果时，可以把其中的 $A,B,A[B^p]$ 分别换成 $k,K,k(K^p)$。
+
+\egas{21.4.1}{引理}
+设 $k$ 为特征 $p>0$ 的域，$K/k$ 为域扩张。元素 $x\in K$ 在 $k$ 上 $p$-无关，
+当且仅当 $x\notin k(K^p)$。
+
+\eproof
+$x$ 是 $k(K^p)[X]$ 中多项式 $X^p-x^p$ 的根。
+若 $x\notin k(K^p)$，这个多项式不可约
+（Bourbaki，\textit{Alg.}，第V章，§8，第1节，命题1），
+所以 $1,x,\ldots,x^{p-1}$ 是 $k(K^p)$-向量空间 $k(K^p)(x)$ 的基。
+反过来，若 $x\in k(K^p)$，则 $1,x$ 在该系数域上线性相关，故 $x$ 不是 $p$-无关元素。
+\finishproof
+
+\egas{21.4.2}{定理}
+设 $k$ 为特征 $p>0$ 的域，$K/k$ 为域扩张，$S$ 为 $K$ 在 $k$ 上的 $p$-生成系，
+$L\subseteq S$ 为在 $k$ 上 $p$-无关的子集。则存在 $K$ 在 $k$ 上的 $p$-基 $\mathcal B$，使
+\[
+ L\subseteq\mathcal B\subseteq S.
+\]
+特别地，$k$ 的每个扩张都具有一组在 $k$ 上的 $p$-基。
+
+\eproof
+可以把 $k$ 换为 $k(K^p)$，因此假设 $K^p\subseteq k$。
+由Zorn引理，存在 $S$ 的子集 $\mathcal B$，包含 $L$，在 $k$ 上 $p$-无关，
+并在满足这些条件的子集中极大。
+\cmt{K11-G04}{Zorn引理所需的上界来自链的并：一个有限线性关系只涉及有限多个受限单项式，因而只涉及有限多个元素；这些元素都落在链的某一成员中，其$p$-无关性排除了非平凡关系。这里补出原文未展开的有限支撑论证。}
+只须证明由 $k$ 和 $\mathcal B$ 生成的子域 $K'$ 等于 $K$。
+若不等，则由 $S$ 的生成性质，存在 $x\in S\setminus K'$。
+因为 $K^p\subseteq k\subseteq K'$，有 $K'(K^p)=K'$，所以 $x$ 在 $K'$ 上 $p$-无关（21.4.1）。
+由（21.1.10），$\mathcal B\cup\{x\}$ 在 $k$ 上 $p$-无关，与极大性矛盾。
+最后取 $L=\varnothing$、$S=K$，即得存在性。
+\finishproof
+
+\egas{21.4.3}{推论}
+设 $k$ 为特征 $p>0$ 的域，$K/k$ 为域扩张。元素族 $(x_\alpha)$ 在 $k$ 上 $p$-无关，
+当且仅当对每个 $\alpha$，$x_\alpha$ 不属于由 $k(K^p)$ 和所有 $x_\beta$（$\beta\ne\alpha$）
+生成的子域 $K_\alpha$。
+
+\eproof
+必要性由（21.1.10）得到。
+反过来，假定上述条件成立。先把基域换为 $k(K^p)$，再把 $K$ 换为由这一基域和所有
+$x_\alpha$ 生成的子域，就可假定 $(x_\alpha)$ 是一个 $p$-生成系。
+由（21.4.2），其中有一个子族是 $p$-基；若该子族漏掉某个 $x_\alpha$，
+其生成性质就会使 $x_\alpha\in K_\alpha$，与假设矛盾。因此原族本身为 $p$-基，尤其 $p$-无关。
+\finishproof
+
+\egas{21.4.4}{推论}
+设 $k$ 为特征 $p>0$ 的域，$K/k$ 为域扩张。则
+\[
+ \Omega^1_{K/k}=0\quad\Longleftrightarrow\quad K=k(K^p).
+\]
+特别地，$\Omega^1_K=0$ 当且仅当 $K$ 为完美域。
+
+事实上，若 $(x_\alpha)$ 为 $K$ 在 $k$ 上的 $p$-基，则 $d_{K/k}(x_\alpha)$ 为
+$K$-向量空间 $\Omega^1_{K/k}$ 的基（21.2.5）。
+\cmt{K11-N06}{本条不把 $\Omega^1_{K/k}=0$ 等同于任意扩张 $K/k$ 可分。例：$k=\mathbf F_p(t)$，$K=\bigcup_{n\ge0}\mathbf F_p(t^{1/p^n})$，则 $K^p=K$，所以 $\Omega^1_{K/k}=0$，但 $K/k$ 是非平凡纯不可分代数扩张。关于可分性的无条件判据是（20.6.3）中的非完美性模 $\Upsilon_{K/k}=0$；这里不能把两个不同的模混同。}
+
+\egas{21.4.5}{定理}
+设 $k$ 为特征 $p>0$ 的域，$K/k$ 为域扩张，$(x_\alpha)$ 为 $K$ 的一族元素。
+则 $(x_\alpha)$ 在 $k$ 上 $p$-无关（分别为 $p$-生成系、$p$-基），
+当且仅当 $(d_{K/k}(x_\alpha))$ 在 $K$-向量空间 $\Omega^1_{K/k}$ 中线性无关
+（分别为生成系、基）。
+
+\eproof
+令 $K'$ 为由 $k(K^p)$ 和所有 $x_\alpha$ 生成的子域；由（21.4.0），也可以说是生成的子环。
+按（20.4.7），$d_{K'/k(K^p)}(x_\alpha)$ 生成
+$\Omega^1_{K'/k(K^p)}$。
+\cmt{K11-T05}{原文在这里把 $\Omega^1_{K'/k(K^p)}$ 与 $\Omega^1_{K'/k}$ 等同；对中间域 $K'$ 一般不成立。例如取 $k=\mathbf F_p$、$K=\mathbf F_p(t)$，并取空元素族，则 $K'=K^p=\mathbf F_p(t^p)$，前一个微分模为零，后一个却为一维 $K'$-向量空间。正文只使用实际需要的 $k(K^p)$-相对微分模；随后 $\Omega^1_{K/k}=\Omega^1_{K/k(K^p)}$ 的识别仍然成立。这修正证明中的一个等式，不改变本定理结论。}
+若 $d_{K/k}(x_\alpha)$ 生成 $\Omega^1_{K/k}=\Omega^1_{K/k(K^p)}$，
+则正合列（20.5.7.1）
+\[
+ \Omega^1_{K'/k(K^p)}\otimes_{K'}K
+ \longrightarrow\Omega^1_{K/k(K^p)}
+ \longrightarrow\Omega^1_{K/K'}\longrightarrow0
+\]
+的左箭头满射，所以 $\Omega^1_{K/K'}=0$；由（21.4.4），
+$K=K'(K^p)=K'$。
+相反，$p$-生成性质推出微分生成性质，已由（21.1.7）证明。
+
+若 $(x_\alpha)$ 为 $p$-无关族，则由（21.4.2）它可以补成 $K$ 在 $k$ 上的 $p$-基；
+所以 $d_{K/k}(x_\alpha)$ 是 $\Omega^1_{K/k}$ 的某组基的一部分（21.2.5），因而线性无关。
+
+最后，假设 $d_{K/k}(x_\alpha)$ 在 $K$ 上线性无关。按（21.4.3），
+只须对每个 $\alpha$ 证明 $x_\alpha\notin K_\alpha$。
+在正合列
+\[
+ \Omega^1_{K_\alpha/k(K^p)}\otimes_{K_\alpha}K
+ \longrightarrow\Omega^1_{K/k(K^p)}
+ \longrightarrow\Omega^1_{K/K_\alpha}\longrightarrow0
+\]
+中，左箭头的像由所有 $d_{K/k}(x_\beta)$（$\beta\ne\alpha$）生成。
+由假设，该子空间不含 $d_{K/k}(x_\alpha)$；而它恰为右箭头的核。
+所以 $d_{K/K_\alpha}(x_\alpha)\ne0$，因而 $x_\alpha\notin K_\alpha$。
+这证明了 $p$-无关的反向蕴含；将独立性和生成性合起来，即得关于基的等价。
+\finishproof
+
+\egas{21.4.6}{推论}
+设 $k$ 为特征 $p>0$ 的域，$K/k$ 为域扩张，$x\in K$。以下三条件等价：
+
+$a)$ $x\notin k(K^p)$；
+
+$b)$ $d_{K/k}(x)\ne0$；
+
+$c)$ 元素 $x$ 在 $k$ 上 $p$-无关。
+
+\egas{21.4.7}{命题}
+设 $L$ 为特征 $p>0$ 的域，$K\subseteq L$ 为满足 $L^p\subseteq K$ 的子域。
+则以下 $L$-向量空间序列正合：
+\begin{equation}
+ 0\longrightarrow\Omega^1_{K/L^p}\otimes_K L
+ \longrightarrow\Omega^1_{L/L^p}
+ \longrightarrow\Omega^1_{L/K}\longrightarrow0.
+ \tag{21.4.7.1}
+\end{equation}
+换言之，$\Upsilon_{L/K/L^p}=0$。
+
+结合（21.4.2），这是（21.2.4）的特例。
+
+\egas{21.4.8}{命题}
+在（21.4.7）的假设下，典范同态
+\begin{equation}
+ (\Omega^1_{L/K})^{(p)}\longrightarrow\Upsilon_{L/K}
+ \tag{21.4.8.1}
+\end{equation}
+为双射。若 $(x_\alpha)$ 为 $L$ 在 $K$ 上的一组 $p$-基，
+则 $d_K(x_\alpha^p)\otimes1$ 构成 $L$-向量空间 $\Upsilon_{L/K}$ 的一组基。
+
+这是（21.3.5）的特例。

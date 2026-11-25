@@ -1,0 +1,702 @@
+% V18 early-manuscript integration report. Source archives remain unchanged.
+\head{第一篇 §§1—7 回校整合}
+\source{Dot第88—99批；法文物理第3—29页、英文物理第4—21页；（7.4）的后文说明另见英文第46页}
+本章收入原批次的译校补证、反例及被替换的旧注释。正文中的法文删划层继续按其原位置标明。
+整合核验读取了12份实际主源码与进度，逐段保存其内容；只对（2.4）、（2.12）、（7.4）等列明的源页作本轮独立图像核对，
+不宣称已独立重审这12批全部证明或正式 EGA 的全部引用。
+（2.12）的新增证明、（7.4）的射影附加条件版本以及各项明确标示的补证均属译校文字，不是原作者已写成的证明。
+旧报告中关于未取得法文、只见英文等记录仍按历史原样保存；当前校勘结论以本版所列来源与范围为限。
+\subsec{D18-089：（2.12）的原证明异文及订正依据}
+\hypertarget{D18-089-notes}{}
+\begingroup
+% These definitions have only group-local scope; the shared preamble is untouched.
+\def\OO{\mathcal O}\def\FF{\mathcal F}\def\GG{\mathcal G}
+\def\PP{\mathbf P}\def\calP{\mathcal P}\def\dd{\delta}
+\def\Div{\operatorname{Div}}\def\depth{\operatorname{depth}}
+\def\pr{\operatorname{pr}}\def\coker{\operatorname{coker}}
+\noindent\emph{原证明异文。}
+法11--12页及英10页沿用了浸入情形的坐标法：
+在 $P$ 的开集 $U$ 中用 $f_1,\ldots,f_p$ 切出 $X$，
+再附加 $\sum_iS_iT_i-1$，欲证明
+\[
+ df_1,\ldots,df_p,\sum_iS_i\,dT_i
+\]
+线性无关。原稿写商模
+$\Omega^1_{U/k}/\sum_{i=1}^n\OO_Udf_i$ 非零并列条件 $p\le n$；
+这里求和应至 $p$，在微分独立处商秩为 $n-p$，非零须 $p<n$。
+稿上进一步声称：任一非零局部自由模的一组生成元 $a_i$，
+其泛线性组合 $\sum_i S_i a_i$ 在整个扩域概形上都不消失。
+这个辅助断言不成立：平凡线丛由 $1,t$ 生成，
+$S_1+S_2t$ 却在 $t=-S_1/S_2$ 处为零。
+原稿最后另说 $p=n$ 时（该局部零维情形）泛超平面截面为空。
+订正证明只在截面的零点考察微分，把值和一阶微分条件同时计入，不使用这条错误断言。%
+\footnote{现代参考：\href{https://stacks.math.columbia.edu/tag/05AW}{Stacks Project 05AW}（平坦态射下几何正则性下降），
+\href{https://stacks.math.columbia.edu/tag/0FD4}{0FD4}（Bertini 与关联族方法），
+\href{https://stacks.math.columbia.edu/tag/07R6}{07R6}（正则态射的定义与性质）。
+这里的维数证明明确写出非分歧态射情形，不把任何仅对闭浸入陈述的结论直接套用。}
+
+\endgroup
+\subsection*{（2.12）原证明完整旧译（仅供对照，不予采用）}
+\begin{proof}[原文证明]
+可设 $k$ 代数闭。若 $Y_\eta$ 在 $y$ 处对 $k(\eta)$ 光滑，则它在该点正则；$Y_\eta\to X$ 平坦，所以 $X$ 在 $x$ 处正则〔参考待补〕。由于 $k$ 代数闭，因而完美，$X$ 在 $x$ 处对 $k$ 光滑〔参考待补〕。
+
+反过来，可将 $X$ 换成 $x$ 的开邻域而设 $X$ 光滑；原文进而说，由光滑性的 Jacobian 判据，可以在 $P$ 的某个开子集 $U$ 中用 $p$ 个方程表示为
+\[
+ X=V(f_1,\ldots,f_p),
+\]
+其中 $df_1,\ldots,df_p$ 处处线性无关。\cmt{G01}{非分歧态射不自动在 Zariski 局部成为浸入；此处还需适当的 étale 局部化或另作论证。详见G01。}
+在 $P^\vee$ 中引入仿射坐标 $S_1,\ldots,S_n$，在 $x$ 的邻域中引入 $P$ 的仿射坐标 $T_1,\ldots,T_n$（选取不包含 $x$ 的无穷远超平面 $H_\infty$），则 $Y_\eta\hookrightarrow U_{k(\eta)}$ 为
+\[
+ V\left(f_1,\ldots,f_p,\sum_iS_iT_i-1\right).
+\]
+只须验证 $f_1,\ldots,f_p,\sum_iS_iT_i-1$ 相对于 $k(\eta)$ 的微分线性无关。这些微分是 $\Omega^1_{U/k}\otimes_kk(\eta)$ 的截面
+\[
+ df_1,\ldots,df_p,\sum_iS_i\,dT_i.
+\]
+由于 $df_i$ 在 $U$ 的每一点线性无关，而且 $dT_i$ 处处构成 $\Omega^1_{U/S}$ 的基，因而构成生成系，原文断言这些微分在 $U_{k(\eta)}$ 的每一点都线性无关，至少在 $p\leq n$、即
+\[
+ E=\Omega^1_{U/k}\Big/\sum_{1\leq i\leq n}\OO_Udf_i\ne0
+\]
+时如此。\cmt{T06}{底本在商的求和范围写到 $n$，而已列出的方程只有 $f_1,\ldots,f_p$；此外，商的秩为 $n-p$，非零对应 $p<n$，不是 $p\leq n$。}
+这是关于非零局部自由模 $E$ 的一族生成元 $a_i$（$1\leq i\leq n$）的“小引理”：截面 $\sum_iS_ia_i$ 在 $E\otimes_kk(\eta)$ 中处处不消失。\cmt{E04}{这条辅助断言为假：在 $\mathbf A^1_k$ 的平凡线丛上取生成元 $1,t$，$S_1+S_2t$ 在 $t=-S_1/S_2$ 处为零。此反例否定这一步，不否定定理本身。详见E04及G01。}
+另一方面，$p=n$ 时是平凡情形，因为 $Y_\eta=\varnothing$。
+\end{proof}
+
+
+\subsec{D18-090：几何性质的两项限制与反例}
+\hypertarget{D18-090-notes}{}
+\begingroup
+% These definitions have only group-local scope; the shared preamble is untouched.
+\def\OO{\mathcal O}\def\FF{\mathcal F}\def\GG{\mathcal G}
+\def\PP{\mathbf P}\def\calP{\mathcal P}\def\dd{\delta}
+\def\Div{\operatorname{Div}}\def\depth{\operatorname{depth}}
+\def\pr{\operatorname{pr}}\def\coker{\operatorname{coker}}
+\subsection*{补充核查：两个不能省略的限制}
+\begin{enumerate}
+ \item \textbf{纯不可分覆盖。} 设 $k$ 是特征 $p>0$ 的完美域，取
+ $f:\PP^1_k\to\PP^1_k$，在仿射图上由 $u=t^p$ 给出。
+ 超平面泛截面的坐标环为 $k(u)[t]/(t^p-u)$。
+ $u$ 在 $u=0$ 的赋值为 $1$，不是 $p$ 的倍数，故 $u$ 不是 $k(u)$ 中的 $p$ 次幂；
+ 上述环为纯不可分域扩张，正则却不几何约化。
+ 在代数闭包中取 $\alpha^p=u$，多项式变为 $(t-\alpha)^p$，故截面不光滑，而 $X$ 光滑。
+ \item \textbf{特征零不能替代拟有限。} 取 $k=\mathbb Q$，
+ $X=\Spec k[a,b,c]/(ab)$，$f:X\to\PP^1_k$ 为值恒为某个 $k$-点的态射。
+ 非光滑轨迹 $V(a,b)\simeq\mathbb A^1_k$ 不有限，但其像是单点。
+ 泛超平面不经过该像，所以 $Y_\eta=\varnothing$，在泛参数域上光滑。
+\end{enumerate}
+
+\endgroup
+
+
+\subsec{D18-092：充分一般的三个等价条件}
+\hypertarget{D18-092-notes}{}
+\begingroup
+% These definitions have only group-local scope; the shared preamble is untouched.
+\def\OO{\mathcal O}\def\FF{\mathcal F}\def\GG{\mathcal G}
+\def\PP{\mathbf P}\def\calP{\mathcal P}\def\dd{\delta}
+\def\Div{\operatorname{Div}}\def\depth{\operatorname{depth}}
+\def\pr{\operatorname{pr}}\def\coker{\operatorname{coker}}
+\subsection*{译校补证：充分一般的三个等价条件}
+设 $T=P^\vee$ 是域上的对偶射影空间，$\eta$ 是其泛点，$E\subseteq T$ 可构造。则
+\[
+\eta\in E
+\ \Longleftrightarrow\
+\text{$E$ 含有非空开集}
+\ \Longleftrightarrow\
+\text{某非空开集的所有闭点均在 $E$ 中}.
+\]
+证明：把 $E$ 写成有限个局部闭集的并。若其中一项含 $\eta$，该项的闭包就是 $T$，
+因而该项就是 $T$ 的非空开集。反之，$T$ 不可约，任何非空开集都含 $\eta$。
+最后，若非空开集 $U$ 的闭点都在 $E$ 中，而 $U\setminus E$ 非空，
+则后者作为可构造集含非空局部闭子集。由于 $T$ 是 Jacobson 概形，该局部闭子集
+含一个在 $T$ 中闭的点，且该点在 $U$ 中。这与假设矛盾，故 $U\subseteq E$。
+域代数闭时，有限型 $k$-概形的闭点的剩余域是 $k$，所以可用 $k$-有理点替换闭点。
+参看 \href{https://stacks.math.columbia.edu/tag/005K}{Stacks 005K}、
+\href{https://stacks.math.columbia.edu/tag/005X}{005X} 和
+\href{https://stacks.math.columbia.edu/tag/01T9}{01T9}。
+
+命题的逻辑是先利用泛截面定理得到 $\eta\in E$，再使用以上等价；并不是
+直接证明每一个超平面都能继承性质。特别地，4.3 的(v)对应3.2，
+(vi)对应3.1；只有(v)同时用到关于可分性的附加假设和像维数下界。
+
+\endgroup
+
+
+\subsec{D18-093：（4.4）的像维数补证及反例}
+\hypertarget{D18-093-notes}{}
+\begingroup
+% These definitions have only group-local scope; the shared preamble is untouched.
+\def\OO{\mathcal O}\def\FF{\mathcal F}\def\GG{\mathcal G}
+\def\PP{\mathbf P}\def\calP{\mathcal P}\def\dd{\delta}
+\def\Div{\operatorname{Div}}\def\depth{\operatorname{depth}}
+\def\pr{\operatorname{pr}}\def\coker{\operatorname{coker}}
+\subsection*{译校补证：为什么要量像的维数}
+在一个代数闭底域上，对闭子集 $W\subset X$ 记
+$\dd_f(W)=\dim\overline{f(W)}$，并置 $\dd_f(\varnothing)=-\infty$。
+换底到代数闭包后能否被一个 $\dd_f\leq m$ 的闭子集断开，
+是一般态射的\emph{像维数版本}。这里证明它在泛截面上的传递，
+不以此替代4.4(a)的可构造性论证。
+
+\paragraph{拟有限情形。}
+若 $f$ 拟有限，对任一不可约闭子集 $W$，其泛点在像闭包泛点上方的剩余域扩张有限。
+所以两个剩余域在底域上的超越次数相同，得到
+$\dim W=\dim\overline{f(W)}$。对可约的 $W$ 取各分支维数的最大值。
+拟有限性对基变换和限制到截面保持，故两种维数判据对 $X$、$Y_\xi$ 均相同。
+
+\paragraph{图判据。}
+设 $X$ 的不可约分支为 $X_i$。给 $\dd_f(X_i\cap X_j)>a$ 的两分支连一条边。
+若图不连通，将顶点划分为两个非空、没有跨边的部分。删去全部跨部交集的并；
+这是一闭集，$\dd_f\leq a$。两侧仍非空，因为一个不可约分支不包含在其他分支的有限并中。
+两侧是互不相交的相对闭集，故删去后不连通。
+反之，若图连通，删去任意 $\dd_f\leq a$ 的闭集，不会删掉任何一条边的全部交集；
+每个留下的分支是不可约开子集，所以由边连接的并仍连通。
+单分支时用不可约性直接判断，空集按拓扑学惯例视为连通。
+
+\paragraph{泛截面。}
+可以在 $\overline k$ 上做图判据，并用同时包含 $\overline k$ 和 $k(\eta)$
+的 $k(\eta)$ 的代数闭包判定截面的几何性质。每个 $k$ 上的不可约分支上方，
+$\overline k$ 上各分支由 Galois 作用传递置换（可分闭包到代数闭包的纯不可分扩张
+不改变分支的拓扑），故它们的像维数相同，而且这个共同维数就是原分支的像维数。
+因此假设的像维数下界也适用于每个几何分支。按3.1，每个几何分支的泛截面
+在再扩到代数闭包后仍不可约。
+
+对任意闭集 $W$，像闭包的最高维分支若维数为 $d\geq1$，
+则泛超平面使这个像维数恰降为 $d-1$：
+每个最高维分支中都有包含在 $f(W)$ 里的稠密开子集，因为像是可构造集
+（参见 \href{https://stacks.math.columbia.edu/tag/054K}{Chevalley 定理}）。
+按2.3、2.6，泛超平面与其闭包相交为纯 $d-1$ 维，
+而补集的闭包维数至多为 $d-1$，其截面至多为 $d-2$；
+零维部分泛截面不遇到。取闭包后，$W$ 的截面的像因此仍为 $d-1$ 维。
+这些维数不会因进一步扩域而改变。关于几何分支的 Galois 作用，参见
+\href{https://stacks.math.columbia.edu/tag/0364}{Stacks 项目第33.8节}。
+
+现在若 $X_{\overline k}$ 不能被一个 $\dd_f\leq m+1$ 的闭集断开，
+图判据给出一张连通图，每条边的交集像维数至少为 $m+2$。
+截面后同一交集的像维数至少为 $m+1$。
+因此删去 $\dd_{f_\eta}\leq m$ 的闭集仍留有这些连接，
+各分支仍由原连通图串起来。这就证明了所需的泛截面断言。
+若相应的参数集合已知可构造，再据4.1推出它含稠密开集。
+这里没有将 AQT 认作某一已辨明的定理，也未独立证明任意底上的可构造性。
+
+\paragraph{一般态射不能直接保留原维数：一个反例。}
+取代数闭域上的 $X=V(uv)\subset\mathbf A^4_{u,v,w,z}$，
+以及 $f:X\to\PP^2$，$f=[1:u+v:(u+v)w]$。
+两个三维分支相交于平面 $u=v=0$；删去维数至多1的闭集后，
+两分支的剩余部分仍不可约且交集非空，故 $X$ 满足 $(C_1)$。
+每个分支的像都在仿射图的第一坐标非零处包含稠密开集，故像闭包为二维；
+但 $f$ 把交平面压为一点。泛截面方程
+\[
+ a+(u+v)(b+cw)=0
+\]
+中 $a\ne0$；它避开交平面，两分支各自的截面都非空
+（例如先选 $w$ 使 $b+cw\ne0$）。所以泛截面分成两个不相交的非空闭部，
+连不删点都不连通，因而不满足 $(C_0)$。
+这不是拟有限版本的反例；它说明为什么一般情形须改用像维数。
+
+\endgroup
+
+
+\subsec{D18-094：（5.2）—（5.4）的补证}
+\hypertarget{D18-094-notes}{}
+\begingroup
+% These definitions have only group-local scope; the shared preamble is untouched.
+\def\OO{\mathcal O}\def\FF{\mathcal F}\def\GG{\mathcal G}
+\def\PP{\mathbf P}\def\calP{\mathcal P}\def\dd{\delta}
+\def\Div{\operatorname{Div}}\def\depth{\operatorname{depth}}
+\def\pr{\operatorname{pr}}\def\coker{\operatorname{coker}}
+\subsection*{译校补证}
+\paragraph{零概形与余核。}
+在平凡化 $L$ 的仿射开集上，$\phi$ 对应 $a\in A$。
+闭子概形为 $\Spec(A/(a))$，$\FF$ 对应的模 $M$ 的拉回为
+$M\otimes_A A/(a)=M/aM$，即 $M\xrightarrow{a} M$ 的余核。
+这不要求 $a$ 在 $M$ 上为非零因子。例：$A=k[\epsilon]/(\epsilon^2)$、$a=\epsilon$，
+零概形存在，但 $\epsilon$ 零化非零元 $\epsilon$，所以不是有效 Cartier 除子。
+
+\paragraph{5.3(b)的局部代数证明。}
+在任意一个 $s$ 上换底到 $k=k(s)$，选定对偶射影空间的仿射图；
+泛超平面的局部方程为
+$a_0+a_1t_1+\dots+a_nt_n$，其中 $t_i$ 独立。
+在 $X_s$ 上，按 $P_s$ 的各个标准仿射图的逆像作覆盖，
+将 $f^*\OO_{P_s}(1)$ 平凡化，于每个仿射开集至少有一个系数 $a_j$ 是单位。
+设该开集上模为 $M$。若某个 $j>0$ 的 $a_j$ 是单位，
+按 $t_j$ 最高次数比较：乘积的最高系数是 $a_j$ 乘原最高系数，不能为零。
+若 $a_0$ 是单位，则用总次数最低的非零齐次部分：
+乘积在这个次数的部分正是 $a_0$ 乘该部分，也不为零。
+所以乘法在 $M[t_1,\ldots,t_n]$ 上单射。局部化到 $k(t_1,\ldots,t_n)$
+仍单射，恰是泛参数的纤维。这个证明也处理 $n=0$（方程为单位）。
+
+\paragraph{5.4的可构造性和开性。}
+记 $p:T\to P^\vee$ 为投影，则 $V=P^\vee\setminus p(T\setminus U)$。
+若 $\FF$ 相对 $S$ 平坦且有限表示，由5.3(a)知 $U$ 开；
+若 $X/S$ 固有，则 $p$ 闭，所以 $V$ 开。
+为了只凭有限表示推出局部可构造性，先局部考虑仿射源和仿射参数底。
+有限表示的环、两模和同态可由有限多系数写出，因此可下降到一个有限型
+$\mathbb Z$-代数上的模型。纤维上的局部单射性经剩余域扩张保持且可下降，
+这是因为纤维各点处的相应局部环映射忠实平坦。
+在诺特模型的底上作有限个局部闭分层，使目标模在每层平坦：
+在各不可约分支的稠密开上用泛平坦性，再对闭补集作诺特归纳。
+由11.3.7，$U$ 在各层的逆像中开，故在该仿射模型内可构造。
+拉回得 $U$ 局部可构造；$p$ 为有限表示，故由 Chevalley 定理
+$p(T\setminus U)$ 局部可构造。泛点落在 $V$ 中则直接由5.3(b)得到。
+参见 \href{https://stacks.math.columbia.edu/tag/0H3Y}{Stacks 的泛平坦分层}
+及 \href{https://stacks.math.columbia.edu/tag/054K}{Chevalley 定理}。
+
+\endgroup
+
+
+\subsec{D18-095：（5.5）—（5.7）的出版对应及补证}
+\hypertarget{D18-095-notes}{}
+\begingroup
+% These definitions have only group-local scope; the shared preamble is untouched.
+\def\OO{\mathcal O}\def\FF{\mathcal F}\def\GG{\mathcal G}
+\def\PP{\mathbf P}\def\calP{\mathcal P}\def\dd{\delta}
+\def\Div{\operatorname{Div}}\def\depth{\operatorname{depth}}
+\def\pr{\operatorname{pr}}\def\coker{\operatorname{coker}}
+\subsection*{正式出版对应与译校补证}
+\paragraph{5.6的引用。}
+\href{https://www.numdam.org/item/PMIHES_1966__28__5_0/}{正式 EGA IV 第三部分}
+印刷页174的12.1.1确有八项，依次是：过该点的关联素循环的维数属于指定有限集、
+这些维数全为指定值、没有过该点的嵌入关联素循环、等维且满足 $(S_k)$、
+$\coprof$ 不超过指定值、Cohen--Macaulay、几何约化、几何逐点整。
+最后一项是纤维的局部性质，不是整条纤维几何不可约。
+印刷页177的12.1.4只是关于纤维维数上半连续的备注。
+印刷页178的12.1.6才有与本处结构吻合的四项：
+$(S_k)$；几何 $(R_k)$ 且等维且无过该点的嵌入关联素循环；
+几何正则（即光滑）；几何正规。
+它们适用于平坦且局部有限表示的概形态射。
+这是正式版本中的数学对应，不宣称已查明手稿当时的编号沿革。
+
+\paragraph{5.5的等价和 Cohen--Macaulay 商。}
+在诺特纤维上，乘法不单射当且仅当方程落入某个关联素理想。
+由域扩张下的关联点公式，扩域后的关联点是原关联点的原像闭包的泛点：
+底变换的相应纤维是域张量积的局部化，Cohen--Macaulay，故无嵌入关联点。
+所以无嵌入时只需查看支撑各不可约分支的泛点。乘法单射本身也可由扩域的
+忠实平坦性保持和反映。比如 $\FF=i_*\OO_D$，
+其中 $D$ 为 $\mathbf P^2$ 中的一条直线，选 $H_\xi=D$ 时截面乘法为零，
+虽然 $\FF$ 没有嵌入关联点。若 $M$ 是非零 Cohen--Macaulay 局部模、$a$ 是
+极大理想中的 $M$-正则元，则 $\depth(M/aM)=\depth M-1$ 且
+$\dim(M/aM)=\dim M-1$，所以商仍 Cohen--Macaulay；截面外的商为零。
+参见 \href{https://stacks.math.columbia.edu/tag/0346}{Stacks 0346}、
+\href{https://stacks.math.columbia.edu/tag/05DC}{05DC} 及
+\href{https://stacks.math.columbia.edu/tag/00N2}{00N2}。
+
+\paragraph{5.7中为何只需支撑固有。}
+记 $p:T\to P^\vee$ 为投影，$Z=(\Supp\FF)\times_S P^\vee$。
+有限型模的支撑随换底拉回。截面正则性的坏点只出现在 $Z$ 内；
+截面上的模性质也只需看其支撑，在概形版本 $\FF=\OO_X$ 时则 $Z=T$。
+因此 $V_{\calP}=P^\vee\setminus p(B)$，其中 $B$ 是 $Z$ 内不满足正则性
+或不满足相应截面性质的点集。
+在平坦假设下，5.3(a)使正则处开；在该开集与 $Y$ 的交内，
+上述12.1.1或12.1.6给出性质开性，故 $B$ 在 $Z$ 中闭。
+由于 $Z\to P^\vee$ 固有，$p(B)$ 闭。
+不假定平坦时，用5.4补证中正则处的局部可构造性，以及正式 EGA IV 第9段中
+这些纤维性质的局部可构造性，再沿有限表示的 $p$ 用 Chevalley 定理即可。
+这里对坏集使用 $T$ 的投影；单用 $h:Y\to P^\vee$ 会漏写正则条件的检验范围。
+
+\endgroup
+
+
+\subsec{D18-096：（6.1）的补证和固有性反例}
+\hypertarget{D18-096-notes}{}
+\begingroup
+% These definitions have only group-local scope; the shared preamble is untouched.
+\def\OO{\mathcal O}\def\FF{\mathcal F}\def\GG{\mathcal G}
+\def\PP{\mathbf P}\def\calP{\mathcal P}\def\dd{\delta}
+\def\Div{\operatorname{Div}}\def\depth{\operatorname{depth}}
+\def\pr{\operatorname{pr}}\def\coker{\operatorname{coker}}
+\subsection*{译校补证：如何从泛纤维推出全部纤维}
+令 $q:Y\to B=P^\vee$。关联族 $Y$ 是 $X\times_k B$ 内的闭子概形，所以 $q$ 是固有的。投影 $Y\to X$ 在局部是射影空间丛：关联方程描述经过 $f(x)$ 的超平面，在固定一点的仿射坐标片上可消去一个超平面系数。因此，在每个不可约分支 $X_i$ 上的逆像是不可约的，这些逆像给出 $Y$ 的不可约分支。任意 $k$-超平面都与正维闭射影集 $f(X_i)$ 相交。这些逆像对 $B$ 的像是闭集，含全部 $k$-点，故为整个 $B$。特别地，$q$ 满射。
+
+记 $n(\xi)$ 为 $Y_\xi$ 在 $k(\xi)$ 的代数闭包上换底后的连通分支数。正式 EGA~IV\textsubscript{3}（15.5.3）断言：在不可约、局部诺特基底上，若态射固有且源的每个不可约分支都占优于基底，则 $n$ 在几何单支点下半连续。这里每个点都是几何单支点，且泛点 $\eta$ 是每个点的泛化，故 $n(\xi)\leq n(\eta)=1$。又由满射性 $n(\xi)\ge1$，所以 $n(\xi)=1$。这一步并不把“泛纤维几何连通”替换成“泛纤维的全局函数环就是泛点剩余域”。例如非平凡有限纯不可分域扩张的谱几何连通，却不满足后一条件。
+
+出版对照：\href{https://www.numdam.org/item/PMIHES_1966__28__5_0/}{EGA IV第三分册，命题（15.5.3），印刷页233；比较（15.6.3），印刷页237}。正式证明经过 Stein 分解，联系有限态射各纤维的几何点数与原态射的几何连通分支数；亦可对照 \href{https://stacks.math.columbia.edu/tag/03GX}{Stacks Project，§37.53}。
+
+\subsection*{译校补证：固有性为何不能省略}
+第三辑旧核查报告 B2-H09 的反例可直接验证。令
+\[
+ X=\Spec\bigl(\mathbf C[x,y,z]/(xy-1)\bigr)
+   \simeq \mathbf G_m\times\mathbf A^1,
+ \qquad
+ f:X\hookrightarrow\mathbf A^3\hookrightarrow\mathbf P^3.
+\]
+这是二维不可约非固有概形。任何像的闭包至多零维的闭子集 $Z$ 都只含有限个点，因为 $f$ 是浸入；去掉这些点仍是非空不可约空间。可是超平面 $x+y=0$ 的逆像具有坐标环
+\[
+ \mathbf C[x,z]/(x^2+1)\simeq \mathbf C[z]\times\mathbf C[z] .
+\]
+两条仿射直线是不相交的，故截面不连通。这个例子只反驳删去固有性的版本。
+
+\endgroup
+
+
+\subsec{D18-097：（7.1）的参数提升与有限平展换底}
+\hypertarget{D18-097-notes}{}
+\begingroup
+% These definitions have only group-local scope; the shared preamble is untouched.
+\def\OO{\mathcal O}\def\FF{\mathcal F}\def\GG{\mathcal G}
+\def\PP{\mathbf P}\def\calP{\mathcal P}\def\dd{\delta}
+\def\Div{\operatorname{Div}}\def\depth{\operatorname{depth}}
+\def\pr{\operatorname{pr}}\def\coker{\operatorname{coker}}
+\subsection*{译校补证}
+\paragraph{无限域与局部提升.}
+$P^\vee$ 的标准仿射图上，非空主开集由一个非零多项式 $f$ 不消失来刻画。无限域上这样的多项式不可能在所有仿射有理点上消失，这可按变量个数用一元多项式的根数界归纳。又 $P^\vee$ 不可约，包含泛点的可构造子集含一个非空开集。故该步骤先由可构造性得开集，再用无限域取得有理点，两步不能混同。
+
+在 $s$ 附近平凡化参数射影丛，并选取含 $\xi_0$ 的标准仿射图。将 $\xi_0$ 在这张图的坐标分别从 $k(s)$ 提升到 $\mathcal O_{S,s}$；有限个局部环元素可在同一个开邻域上表示成正则函数，于是得到 $\xi$。当 $E$ 开时，把邻域限制到 $\xi^{-1}(E)$ 即可。仅知道 $E$ 可构造，不能保证这个逆像含邻域。
+
+\paragraph{有限域与有限 \'{e}tale 覆盖.}
+例如 $\mathbf P^1_{\mathbf F_q}\setminus\mathbf P^1(\mathbf F_q)$ 非空，却没有 $\mathbf F_q$-有理点。非空开集中的闭点具有有限剩余域扩张，而有限域是完美的。若 $k'=k(s)[T]/(\overline F)$，其中 $\overline F$ 首一、可分且不可约，在 $s$ 的一个仿射邻域 $\Spec A$ 上把系数提升为首一多项式 $F\in A[T]$。$A[T]/(F)$ 是正秩有限自由 $A$-模；其判别式在 $s$ 不为零，缩小基底使判别式可逆，就得到所需有限 étale 满射，且在 $s$ 的纤维正是 $\Spec k'$。所选参数经此换底成为 $k'$-有理点。这里仍要在新基底上核验好参数开性及平坦性判据，不从这个换底本身推出任意性质 $\calP$ 的保持。可对照 \href{https://stacks.math.columbia.edu/tag/02LF}{Stacks Project，有限可分剩余域的 étale 邻域}。
+
+\endgroup
+
+
+\subsec{D18-098：（7.2）—（7.3）的适用范围与补证}
+\hypertarget{D18-098-notes}{}
+\begingroup
+% These definitions have only group-local scope; the shared preamble is untouched.
+\def\OO{\mathcal O}\def\FF{\mathcal F}\def\GG{\mathcal G}
+\def\PP{\mathbf P}\def\calP{\mathcal P}\def\dd{\delta}
+\def\Div{\operatorname{Div}}\def\depth{\operatorname{depth}}
+\def\pr{\operatorname{pr}}\def\coker{\operatorname{coker}}
+\subsection*{译校补证：从单纤维选取截面}
+\paragraph{可构造与开性不可混用.}
+在统一关联截面 $Y\to P^\vee$ 上，若坏轨迹可构造，可在局部有限表示情形按有限个局部闭片分解；对每片应用纤维维数的可构造性，各纤维坏集的维数为各片维数的最大值。这说明维数条件怎能给出可构造集合。对于泛纤维，先核性质在原坏集以外由泛截面定理传递，并核其余假设。含泛点的参数好集可构造时才推出它含非空开集。
+
+\paragraph{维数至多降一，并非必须恰降一.}
+考虑原坏集闭包的每个不可约分支。若其像只在一个闭点上，泛超平面避开该像；否则泛截面不含整个分支，交集是其真闭子集，维数至多降一。故在继承性质的前提下，原来维数至多 $m+1$ 的坏集，在泛截面上可缩到维数至多 $m$。截面方程的正则性要另外验证，可用泛超平面避开有限多个关联点像；不从坏集维数界直接推出正则性。
+
+\paragraph{为何可缩小 $U$ 并得到模平坦.}
+在第5节的平坦有限表示假设下，先取“全纤维正则”的开参数域；在此域上，关联截面的余核相对参数域平坦。对于具备相应纤维开性定理的局部性质，截面余核的总坏轨迹是闭的。由于关联截面相对参数域固有，坏轨迹亦固有，因而其纤维维数上半连续。在 $s$ 的纤维里选到满足维数界与正则性的参数后，按7.1提升局部截面，再缩到这个开参数域。将平坦余核沿 $\xi$ 换底即得 $\GG_\xi$ 相对 $U$ 平坦。这里依赖坏轨迹闭性；不能把一般可构造集直接当作固有闭子概形。纤维维数参见 \href{https://stacks.math.columbia.edu/tag/05F6}{Stacks Project，§37.30}。
+
+\paragraph{省去7.2(v)的限制确会出错.}
+令 $k$ 为特征 $p>0$ 的代数闭域，取 $S=\Spec k$、$X=\mathbf P_k^2$、$\FF=\OO_X$，以
+$[x_0:x_1:x_2]\mapsto[x_0^p:x_1^p:x_2^p]$ 为 $f$。
+原概形光滑，故初始几何约化坏集为空。任一 $k$-超平面的拉回方程为
+\[
+ a_0x_0^p+a_1x_1^p+a_2x_2^p
+   =\bigl(a_0^{1/p}x_0+a_1^{1/p}x_1+a_2^{1/p}x_2\bigr)^p .
+\]
+这是 $p$ 重直线，截面余核沿整条直线都不几何约化；坏集维数为1。即使取 $m=0$，维数结论也失败。方程在原概形上是正则的，因此反例不是由取消正则条件造成的。这个例子也说明单独的正则乘法、固有和平坦不足以给出(v)。
+
+\endgroup
+
+
+\subsec{D18-099：（7.4）一般原陈述、证明路线及限制}
+\hypertarget{D18-099-notes}{}
+\begingroup
+% These definitions have only group-local scope; the shared preamble is untouched.
+\def\OO{\mathcal O}\def\FF{\mathcal F}\def\GG{\mathcal G}
+\def\PP{\mathbf P}\def\calP{\mathcal P}\def\dd{\delta}
+\def\Div{\operatorname{Div}}\def\depth{\operatorname{depth}}
+\def\pr{\operatorname{pr}}\def\coker{\operatorname{coker}}
+\subsection*{7.4\quad 原稿的命题与证明设想}
+\textbf{命题（手稿所述）.}
+设 $g:X\to S$ 固有且平坦，取 $s\in S$，令 $n=\dim X_s$。假设 $X_s$ 上不对 $k(s)$ 可分的点所成集合，其维数\textbf{严格小于} $n$（例如 $X_s$ 可分）。那么存在 $s$ 的开邻域 $U$ 和有限、étale、满射的 $S'\to U$，使 $X\times_S S'\to S'$ 有截面。若 $k(s)$ 无限，原稿还说可取 $S'$ 为 $X_U$ 的闭子概形。\footnote{法29清楚印为“$<n$”，英20误作“$\le n$”；下文给出反例。断言及新增旁注均为手稿材料，不能略去下面指出的适用范围。}
+
+\textbf{原稿的证明路线.}
+先设 $k(s)$ 无限。对 $n$ 归纳：$n=0$ 时，原稿称缩小 $U$ 后 $X_U\to U$ 本身即有限、étale、满射。$n>0$ 时，作者提议对“可分”应用7.3，用一个超平面截面 $Y$ 替代 $X$，使维数由 $n$ 降为 $n-1$ 并保留所需条件。若未假设 $k(s)$ 无限，则先作适当的 étale 换底。
+
+这段归纳需要有可用的射影嵌入与控维条件；仅由固有和平坦并不能得到这种超平面截面。因此保留为原稿的证明路线，不据此认定一般固有情形已经证明。正文（7.4）采用另有明确附加假设的译校版本。
+
+\par\noindent\textbf{英译编辑层。}英文第20页在原命题末有脚注27：“不清楚，请询问 A.G.”；原证明的完整旧译仍见既有核查报告 D17-E01（该历史译文的 $\le n$ 只代表英文读法）。
+\subsection*{译校补证}
+\paragraph{英译放宽为 $\le n$ 会出错.}
+取 $k=\mathbf F_p(t)$，令 $X=\Spec(k[u]/(u^p-t))$、$S=\Spec k$。
+由 $t$-进赋值 $v_t(t)=1$，$t$ 不是 $k$ 的 $p$ 次幂；该代数是次数 $p$ 的纯不可分域扩张。因此 $X\to S$ 有限、平坦且固有。$n=0$，唯一点不具几何约化性，坏集也是零维，满足英译的 $\le n$。然而若 $S'\to S$ 非空且有限 étale，它是有限可分域扩张的谱之有限不交并，其中任何一个域都不能含 $t$ 的 $p$ 次根。因此换底后无截面。反例不适用于法稿严格不等号。
+
+\paragraph{零维基例与较弱的局部结论.}
+若 $g$ 有限表示且 $X_s$ 非空零维，严格 $<0$ 使坏集为空。于是 $X_s$ 有限 étale。由平坦和有限表示，纤维上的点都属于 $g$ 的 étale 轨迹；利用固有性，把其补集的闭像从底去掉。缩小后 $g$ 固有且 étale，因而固有且拟有限，所以有限；再利用 étale 态射是开的，把底限制到其包含 $s$ 的像即可得到满射。一般维数时，如果 $X_s$ 中存在一个 $g$-光滑点，则有经适当 étale 邻域的局部截面（\href{https://stacks.math.columbia.edu/tag/055U}{Stacks 37.38.6}）；这条结论并不把该邻域变成底开集的有限 étale 覆盖。
+
+
+\paragraph{拟射影但无此类多截面的具体反例.}
+令 $A=\mathbf Q[t]_{(t)}$，$S=\Spec A$，令
+\[
+ D=\Spec\bigl(A[z]/(z^2-(1+t))\bigr).
+\]
+$1+t$ 是单位，$2z$ 在该代数中可逆，故 $D\to S$ 有限 étale。$1+t$ 在 $\mathbf Q(t)$ 不是平方，而该代数是自由 $A$-模，故它嵌入其泛纤维的域，因而 $D$ 整且连通。闭纤维有两点 $z=\pm1$；去掉其中一点得 $X\subset D$。于是 $X\to S$ 是满射、拟射影、étale 的，但不固有。
+
+若存在有限 étale 满射 $T\to S$ 和一个 $S$-态射 $T\to X$，则 $T\to D$ 有限（两者都仿射有限于 $S$），也 étale（\href{https://stacks.math.columbia.edu/tag/0HB1}{Stacks 29.37.18}）。其像非空且在连通的 $D$ 中既开又闭，只能是整个 $D$，与被删点不在像中矛盾。$S$ 的任一含闭点的开邻域已是整个 $S$，故缩小邻域也无法补救。这是对“以拟射影替代射影”并丢掉固有性的反例，不是对一般固有、光滑非射影情形的反例。
+
+\endgroup
+
+
+\subsec{D18-OLD：被替换的 §§1—7 旧注释保全清单}
+
+下列各条逐字保留旧稿中的英译编注、译校注及原脚注内容，供核对修订沿革。
+它们不是本版的新结论。其中“未见法文”“仍待核”“底本写”等说法只描述当时所据的英文载体；
+第88—99批及上列本版源页核验给出的后续证据另行适用。旧报告的全部正文仍由原报告输入链保留。
+特别是关于（7.4）的旧错误判定只针对英稿 $\le n$，不得迁移成对法稿 $<n$ 的判定。
+
+\paragraph{旧注 01：§1／节首，ednote}
+
+这里使用 EGA I 新版的记号；第19段指 EGA IV。
+
+\paragraph{旧注 02：§1／节首，ednote}
+
+比较 Mumford 的 \textit{Lectures on Curves on an Algebraic Surface}。
+
+\paragraph{旧注 03：§1／节首，cmt〔P03〕}
+
+底本此处在一般底预概形 $S$ 上使用了未定义的下标 $k$，对称幂的对偶位置和秩的退化情形也需核对。这段是后文拟证明的宣告，不能仅据此视为已完成证明。本文按所上传英文稿保留表达。
+
+\paragraph{旧注 04：§1／节首，ednote}
+
+或者应当是“在 $S$ 上有限型”，我不能确定。
+
+\paragraph{旧注 05：§1／节首，ednote}
+
+询问 A. G.：这里的模是否始终指凝聚或拟凝聚模层。
+
+\paragraph{旧注 06：§1／节首，cmt〔T04〕}
+
+这里 $\G$ 应当定义在 $Y=X\times_PH$ 上，而非一般没有典范态射到 $X$ 的 $H$ 上。下面的图也把 $\G$ 标在 $Y$ 上，提供了同一底本内部的更正依据。
+
+\paragraph{旧注 07：2.1，ednote}
+
+向 Grothendieck 询问：例如第一节中带下划线的大写字母的含义和作用是什么？
+
+\paragraph{旧注 08：2.4，cmt〔E03〕}
+
+后一断言按现有假设不成立。可以给 $Z$ 添加一个与它不相交的闭点而不改变泛截面。详见E03；若再假设 $Z'$ 也不可约，才能用前一断言的对称应用得到所写等号判据。
+
+\paragraph{旧注 09：2.5，cmt〔记号〕}
+
+此句底本省略了 $\eta$。依上下文应指 $Y_{i\eta}$，不能误读为普遍关联空间中位于 $X_i$ 上的整族。
+
+\paragraph{旧注 10：2.6，ednote}
+
+法文为“ou que”；我认为应当译为“where”。
+
+\paragraph{旧注 11：2.8，ednote}
+
+澄清这一参考：是 EGA IV 吗？
+
+\paragraph{旧注 12：2.8，cmt〔T04〕}
+
+要推出所写局部环同态正则，此处应援引刚在（2.7）讨论的 $Y_\eta\to X$；底本把靶写为 $Y$，需核对并区分两条态射。
+
+\paragraph{旧注 13：2.9，cmt〔T05〕}
+
+“有限”包括空集，而按第0章约定 $\dim\varnothing=-\infty$；若要包含无坏点的情形，应写维数 $\leq0$，或单独说明 $Z$ 为空的情况。
+
+\paragraph{旧注 14：2.10，cmt〔P01〕}
+
+英文底本在此只有这一句，没有完整陈述或证明。本译稿不补造原文。
+
+\paragraph{旧注 15：2.11，cmt〔T05〕}
+
+最后的等号仍需像（2.9）一样处理空集。底本中还将一次 $R_k$ 排成了 $E_k$。
+
+\paragraph{旧注 16：2.12，cmt〔G01〕}
+
+非分歧态射不自动在 Zariski 局部成为浸入；此处还需适当的 étale 局部化或另作论证。详见G01。
+
+\paragraph{旧注 17：2.12，cmt〔T06〕}
+
+底本在商的求和范围写到 $n$，而已列出的方程只有 $f_1,\ldots,f_p$；此外，商的秩为 $n-p$，非零对应 $p<n$，不是 $p\leq n$。
+
+\paragraph{旧注 18：2.12，cmt〔E04〕}
+
+这条辅助断言为假：在 $\mathbf A^1_k$ 的平凡线丛上取生成元 $1,t$，$S_1+S_2t$ 在 $t=-S_1/S_2$ 处为零。此反例否定这一步，不否定定理本身。详见E04及G01。
+
+\paragraph{旧注 19：2.13，cmt〔假设继承〕}
+
+这里继承（2.12）的非分歧假设；非分歧有限型态射拟有限，因此有限的 $f(Z)$ 与有限的 $Z$ 在此可联系起来。不能把这一推论脱离其前提独立引用。
+
+\paragraph{旧注 20：2.14，cmt〔T07〕}
+
+右端底域应核为 $k(\eta)$，不是 $k(y)$。局部环有到剩余域 $k(y)$ 的商映射，却一般没有相反方向的典范系数域嵌入；因而底本右端甚至没有给出所需的代数结构。
+
+\paragraph{旧注 21：2.14，ednote}
+
+旁注：“$X$ 非分歧，或 $k$ 的特征为0。”〔这里按与上下文相符的意义，应理解为态射 $f$ 非分歧。〕
+
+\paragraph{旧注 22：2.15，cmt〔P04〕}
+
+本句的最后一项左侧只写“非正规”，右侧却写“几何正规”，应核对是否漏掉“几何”；又若采用脚注允许的“特征0而 $f$ 任意”的版本，不能把“$f(Z)$ 有限”不加条件地换成“$Z$ 有限”。详见E05及P04。
+
+\paragraph{旧注 23：2.16，cmt〔用语〕}
+
+底本写“should not be immersed”；在关联素循环语境中，这里应理解为“不是嵌入分支”，不是态射的浸入性质。由于未核对法文手稿，此处明确标示这一译校理解。
+
+\paragraph{旧注 24：2.16，ednote}
+
+无法理解。
+
+\paragraph{旧注 25：2.16，cmt〔P01〕}
+
+此句在所上传英译中语法和数学衔接均未完整；这里不擅自补成一个有效的下降论证。
+
+\paragraph{旧注 26：3.1，cmt〔B2-P01〕}
+
+定理只假设几何不可约，没有假设约化。这里的“函数域”应先在约化不可约预概形 $X_{\mathrm{red}}$ 上解释，或使用泛点的剩余域。这样补足不改变所研究的几何不可约性；不是把原假设偷偷加强为几何整。
+
+\paragraph{旧注 27：3.1，ednote}
+
+大概应是把 $S_i$ 映到它在 $L$ 中的等价类 $[S_i]$。
+
+\paragraph{旧注 28：3.1.1，ednote}
+
+primary extension 大概表示较小的域在较大的域中代数闭，或者准代数闭。参见 Jouanolou，定理3.6。
+
+\paragraph{旧注 29：3.1.1，cmt〔B2-H07〕}
+
+这里保留英译编者的猜测，但它不能替代定义。所上传 EGA IV 第二部分（4.3.1），PDF第55页，明确说：$L/k$ 为准素扩张，当且仅当 $L$ 内包含的 $k$ 的最大可分代数扩张就是 $k$ 本身。它不要求一切代数元素都已在 $k$ 中；非平凡纯不可分扩张就说明二者不同。
+
+\paragraph{旧注 30：3.1.1，cmt〔B2-P02〕}
+
+这句话正是上传笔记的内容；此处没有引理的证明。故（3.1）在本载体内只是归结到一个外部引理，不能宣称本节已经给出了自足的完整证明。这里不补造原文未写的证明。
+
+\paragraph{旧注 31：3.3，ednote}
+
+询问 A. G.。
+
+\paragraph{旧注 32：3.3，cmt〔B2-T06〕}
+
+本段英译稿把链的首项写成“$X_0$ and $X'$”，又在末句写 $Y_\eta=X_\eta$。这里分别按同句定义明确排为 $X_0=X'$ 和 $Y_\eta=\bigcup_iX_{i\eta}$，记录这一记号整理，不将其另算为定理反例。
+
+\paragraph{旧注 33：3.3，ednote}
+
+指 EGA IV。
+
+\paragraph{旧注 34：3.3，cmt〔B2-T07〕}
+
+此处前后使用的载体、变动指标不一致。按§1，$F$ 在 $X$ 上，$G$ 在 $Y$ 上；而讨论随 $\xi$ 变化的纤维时，应写 $P(Y_\xi,G_\xi,k(\xi))$。保持底本措辞可看清这一问题，不能据此把一个固定泛纤维性质直接当成各纤维性质。
+
+\paragraph{旧注 35：4.2，cmt〔B2-T07续〕}
+
+底本此处确实写 $G$，随后的(b)又写 $F$；这里仍标明此处原字母，后文按各自原文保留。原稿没有单独印出“4.1”条目标记，虽然以后用4.1指本节开头的讨论，译文不补造一个新的原编号。
+
+\paragraph{旧注 36：4.2，cmt〔B2-T07续〕}
+
+这里的参数应在 $P^\vee$ 而不是 $P$ 中；(a)以及§1的参数空间定义已给出内部依据。
+
+\paragraph{旧注 37：4.3，cmt〔B2-H08〕}
+
+本段英文使用 and，译文保留“并且”。前面（3.2）使用 or；把两个充分条件同时要求只是更强的假设，不能仅因其较强就断言这里的定理为假，也不应静默把 and 改成 or。
+
+\paragraph{旧注 38：4.4，cmt〔B2-E02〕}
+
+底本此处还有 $f(X)$ 与 $f(X_i)$、$P$ 与 $P^\vee$ 的记号错置；但即便把这两个记号整理成预期形式，一般态射下的连通性断言仍不成立。报告给出 $X=V(uv)\subset\mathbf A^4$、$f=[1:u+v:(u+v)w]$ 的具体反例：$X$ 满足 $(C_1)$，而泛截面不满足 $(C_0)$。
+
+\paragraph{旧注 39：4.4，ednote}
+
+AQT 是什么？询问 AG。
+
+\paragraph{旧注 40：4.4，ednote}
+
+拉丁文；待翻译。
+
+\paragraph{旧注 41：4.4，cmt〔B2-P03〕}
+
+所上传英文确实写“not valid as such if $f$ is quasi-finite”，这一句与随后“在一般情形应看像维数”的说明关系可疑，可能缺少否定或限制词；未见法文手稿，不能替作者裁定。拉丁语短句也保留原字，暂不强作可靠译释。明确反例针对一般非拟有限态射，不宣称它同时推翻拟有限版本。
+
+\paragraph{旧注 42：5.1，ednote}
+
+须查明引用；很可能是 EGA IV。是的。
+
+\paragraph{旧注 43：5.1，ednote}
+
+旁注：因为 $Y$ 在 $X$ 上固有，而 $P^\vee$ 在 $S$ 上分离。
+
+\paragraph{旧注 44：5.2，cmt〔B2-T08〕}
+
+这里应把 $\OO_X(1)$ 先限制到 $X_s$，而扩张到的纤维是 $X_{k(\xi)}$，不是右端所印的 $X_{k(s)}$。这是载体及底域的记号问题。
+
+\paragraph{旧注 45：5.2，ednote}
+
+我猜这里指 Mike Artin。——P. B.
+
+\paragraph{旧注 46：5.2，cmt〔B2-T08续〕}
+
+参数点所在的 $P$ 应为 $P^\vee$，同段下一句已经再次使用后者。
+
+\paragraph{旧注 47：5.2，ednote}
+
+底本此处有“??”，同态的另一张量因子缺失。
+
+\paragraph{旧注 48：5.2，cmt〔B2-T08续〕}
+
+可在局部平凡化的是可逆模 $L$，不是任意的 $F$。例如 $F=\OO_X^{\oplus2}$ 一般不可能同构于 $\OO_X$。将 $L$ 平凡化后，$\phi$ 给出函数，以此函数在 $F$ 上的乘法是否单射来定义 $F$-正则。$\phi^{-1}$ 在这里是诱导的对偶同态记号，并不表示一个处处存在的倒数函数。
+
+\paragraph{旧注 49：5.3，cmt〔B2-T09〕}
+
+底本在此写 $X_P$，但参数化的空间为 $X_{P^\vee}$；(b)中要谈 $P^\vee$ 在 $s$ 上的纤维，应有 $s\in S$。此外 $G$ 原定义在 $Y$ 上，写 $G|_U$ 时应理解为限制到 $Y\cap U$，或先沿闭浸入直接像延拓到 $X_{P^\vee}$。
+
+\paragraph{旧注 50：5.3，ednote}
+
+查明这一引文。指 EGA IV。
+
+\paragraph{旧注 51：5.3，ednote}
+
+字迹不清；询问 AG 或自行辨认——大概是 $\phi^{-1}$。
+
+\paragraph{旧注 52：5.3，cmt〔B2-T10〕}
+
+上一句等号与下一句结论相反；这里应是 $Z_{i,k(\eta)}\cap Y\ne Z_{i,k(\eta)}$。等号意味着整个相伴循环被包含在零点集内，恰不能证明非零因子性。译文保留所上传英文的等号，并在此明示问题。
+
+\paragraph{旧注 53：5.5，cmt〔B2-E03〕}
+
+按字面，“没有嵌入相伴循环”不推出任意 $\xi\in V$。取 $F=i_*\OO_L$ 为 $\mathbf P^2$ 中直线 $L$ 的结构层，选 $H_\xi=L$，截面在 $F$ 上的乘法为零，因而不正则。合理的读法是把后半句作为 $\xi\in V$ 的充要条件，而不是从无嵌入循环自动推出它；详见报告。
+
+\paragraph{旧注 54：5.5，cmt〔B2-E03续〕}
+
+这里使用模去正则元素的结论，仍须保留“截面正则”这一条件；不能只靠 Cohen--Macaulay 性就略去它。纤维下标 $s$ 与 $\xi$ 也应按具体基变换区分。
+
+\paragraph{旧注 55：5.5，ednote}
+
+询问 AG 这些引文——大概是 EGA IV。12.1.4核对不上。
+
+\paragraph{旧注 56：5.6，cmt〔B2-P04〕}
+
+英译编者已经明确说引文核对不上，所列性质未在这里实际展开；证明最后写 $F_{P^\vee}|_U$，而结论涉及除子上的余核 $G$，也需与引用的原命题逐项对应。本次不把未确定的八项、四项性质凭常识补进正文。
+
+\paragraph{旧注 57：5.7，cmt〔B2-P04续〕}
+
+“正则”的主语应为截面 $\phi_\xi$；谈该参数对应的纤维时应为 $Y_\xi$。此处仍受（5.6）未明确列出性质清单的限制，未据这一句话作超出来源的普遍推广。
+
+\paragraph{旧注 58：5.7，ednote}
+
+或者意为“为稳妥起见”。
+
+\paragraph{旧注 59：6.1，ednote}
+
+这一处字迹不清。
+
+\paragraph{旧注 60：6.1，cmt〔B2-H09〕}
+
+方括号中的固有性出自上传英译稿的补读，不能省去。报告给出删去它后特殊超平面截面不连通的例子；该例不是对保留固有性版本的反例。
+
+\paragraph{旧注 61：6.1，ednote}
+
+指 EGA IV。
+
+\paragraph{旧注 62：7.1，transnote}
+
+底本先将纤维中的点写为 $\xi$，末尾却写为 $\xi_0$，并且又以 $\xi$ 表示截面。正文将纤维点统一为 $\xi_0$，截面仍记为 $\xi$。这是同句源靶所确定的记号校正。
+
+\paragraph{旧注 63：7.1，ednote}
+
+法文为 \textit{de proche en proche}。〔底本脚注26。〕
+
+\paragraph{旧注 64：7.1，transnote}
+
+上式底本印作 $S_s^1$，上下文中的有限平展扩张始终为 $S'$，且所述对象是其在 $s$ 上的纤维，故正文订为 $S'_s$。该段回指（6.1）开头，而那里假设 $k$ 代数闭，此处却讨论 $k$ 有限；回指不一致仍待核，不擅自更改引用编号。原文又把参数空间的开子集与基底邻域均记为 $U$，正文用文字区分。
+
+\paragraph{旧注 65：7.2，footnote}
+
+Dot译校注：英文正文为 ``of finite presentation finite and flat over $S$''，其中第二个 ``finite'' 的语法关系不明。未据这个重复的词添加独立有限性假设。
+
+\paragraph{旧注 66：7.2，transnote}
+
+底本先后印作 $S\in S$、“在 $E$ 中”、$x\in U$、$Y_{\xi,s}$、$G_{\xi(s)}$ 和 $F_{\xi,s}$，点变量和纤维指标不相容。正文按本段所述基底邻域及相应超平面截面，统一为 $s\in S$、$U\subset S$，并用 $t\in U$ 遍历纤维；正则性针对 $X_t$ 上的 $F_t$。这里只修复对象和指标，不将前文未核实的性质推广一并视作已经审定。
+
+\paragraph{旧注 67：7.4，cmt〔D17-E01〕}
+
+取 $k=\mathbf F_p(t)$，$L=k(t^{1/p})$，$X=\Spec L$、$S=\Spec k$。态射有限、平坦且固有，$n=0$，满足所印维数上界；但若在某非空有限平展 $S'$ 上有截面，则 $L$ 可嵌入一个有限可分 $k$-扩张，矛盾。这证明所印命题本身不成立。底本证明中“$n=0$ 时 $X$ 本身平展”的步骤也不成立，见报告中的双数例子。此项处理是译校决定，不表示作者正式撤销该条。
+
+\paragraph{旧注 68：7.5，ednote}
+
+字迹不清。〔底本脚注28。〕
+
+\paragraph{旧注 69：7.5，transnote}
+
+（7.4）只明写固有性，而（7.5）又强调非射影情形可以失败；这反映出草稿上下文或假设尚未定型。必须在确定“局部”“多截面”的精确意义及前文嵌入条件后才能整理成定理，不能把这些句子当作已完成的统一证明。

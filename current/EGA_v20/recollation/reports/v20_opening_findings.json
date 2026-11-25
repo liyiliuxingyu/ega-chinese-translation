@@ -1,0 +1,316 @@
+{
+  "edition": 20,
+  "component": "first essay, section12 opening",
+  "status": "source_collation_and_local_mathematical_audit_complete; integration_and_final_pdf_review_owned_by_root",
+  "source_files": [
+    {
+      "file": "archive_20261121/03_sources/EGA5_francais.pdf",
+      "sha256": "24cf8204184b58b18a46e5f63ecc36d6e791b3c8c96a09daac93de96ebd8e830",
+      "physical_pages": [
+        64,
+        65,
+        66
+      ],
+      "coverage": "64--65 complete effective text; 66 first large paragraph only, before the 2.1 paragraph"
+    },
+    {
+      "file": "archive_20261121/03_sources/EGAVaiello.pdf",
+      "sha256": "23a20ef32fd16a1bd623c0c08ac080d04fc94f248de12133b713a19d6b0330d9",
+      "physical_pages": [
+        43,
+        44
+      ],
+      "coverage": "43 section12 heading onward; 44 through the paragraph ending X^(m) over Gr^m, before the 2.1 paragraph"
+    }
+  ],
+  "inspected_images": [
+    "translation_v20/source_text/fr_064.png",
+    "translation_v20/source_text/fr_065.png",
+    "translation_v20/source_text/fr_066.png",
+    "translation_v20/source_text/en_043.png",
+    "translation_v20/source_text/en_044.png",
+    "translation_v20/source_text/opening_detail_64.png",
+    "translation_v20/source_text/opening_detail_65.png",
+    "translation_v20/source_text/opening_detail_64_transpose.png",
+    "translation_v20/source_text/opening_detail_65_insertions.png",
+    "translation_v20/source_text/opening_detail_65_top.png"
+  ],
+  "source_map": [
+    {
+      "anchor": "V20-12O-P01",
+      "body_line": 8,
+      "french": "64 upper",
+      "english": "43 middle",
+      "contents": "heading and the two Grassmann notation conventions"
+    },
+    {
+      "anchor": "V20-12O-P02",
+      "body_line": 24,
+      "french": "64 upper-middle",
+      "english": "43 middle",
+      "contents": "rank r+1, change to rank r, codimension m"
+    },
+    {
+      "anchor": "V20-12O-P03",
+      "body_line": 34,
+      "french": "64 middle",
+      "english": "43 lower",
+      "contents": "universal quotient and incidence subfunctor"
+    },
+    {
+      "anchor": "V20-12O-P04",
+      "body_line": 41,
+      "french": "64 middle-bottom",
+      "english": "43 bottom--44 top",
+      "contents": "arbitrary T, two composites, transpose and section"
+    },
+    {
+      "anchor": "V20-12O-P05",
+      "body_line": 59,
+      "french": "65 top",
+      "english": "44 top",
+      "contents": "zero prescheme, H^(m), m=1 comparison"
+    },
+    {
+      "anchor": "V20-12O-P06",
+      "body_line": 63,
+      "french": "65 upper",
+      "english": "44 upper",
+      "contents": "Y^(m), Y^m_xi, handwritten base explanations"
+    },
+    {
+      "anchor": "V20-12O-P07",
+      "body_line": 74,
+      "french": "65 middle",
+      "english": "44 middle",
+      "contents": "notational self-criticism, tentative iteration, future use"
+    },
+    {
+      "anchor": "V20-12O-P08",
+      "body_line": 80,
+      "french": "65 bottom",
+      "english": "44 middle",
+      "contents": "handwritten P-isomorphism, Grassmann presentation, Euler kernel"
+    },
+    {
+      "anchor": "V20-12O-P09",
+      "body_line": 91,
+      "french": "66 beginning",
+      "english": "44 middle-lower",
+      "contents": "smooth geometric integral rational fibres, dimension, reduction to X=P"
+    },
+    {
+      "anchor": "V20-12O-P10",
+      "body_line": 99,
+      "french": "66 end of first large paragraph",
+      "english": "44 before 2.1",
+      "contents": "projective bundle over Gr^m and original limitation"
+    }
+  ],
+  "replacement": {
+    "source": "continuations/v_dot_middle.tex",
+    "begin_marker": "% BEGIN DOT-MIDDLE BATCH 01:",
+    "end_marker": "% END DOT-MIDDLE BATCH 02",
+    "source_next_marker": "% BEGIN DOT-MIDDLE BATCH 03:",
+    "exact_french_next_anchor": "La proposition 2.1. se transpose sans changement.",
+    "exact_english_next_anchor": "The proposition 2.1 [se transpose Fr] translates (?) without change.",
+    "next_anchor_not_included": true
+  },
+  "corrections": [
+    {
+      "id": "D20-12O-01",
+      "legacy": "D17-M001",
+      "classification": "notation_and_finite_rank_scope",
+      "finding": "Finite rank dual convention retained; source deletes unfinished de rang; empty codimension-r convention kept."
+    },
+    {
+      "id": "D20-12O-02",
+      "legacy": "D17-M002",
+      "classification": "english_error_only",
+      "finding": "French says codimension donnée m. Both r+1 and the subsequent r are legible and intentionally occur in separate conventions."
+    },
+    {
+      "id": "D20-12O-03",
+      "legacy": "D17-M003",
+      "classification": "french_naming_conflict_and_necessary_object_correction",
+      "finding": "French inserts G but retains soit F. The quotient source reads E_Gr without a securely identifiable dual mark. Body uses E_Gr^vee onto G as required by the stated functor; does not pretend the tiny mark is recovered."
+    },
+    {
+      "id": "D20-12O-04",
+      "legacy": "D17-M004",
+      "classification": "english_error_only",
+      "finding": "French products have base S and the functor sentence has S-prime. English introduces X and mixes S/S-prime."
+    },
+    {
+      "id": "D20-12O-05",
+      "legacy": "D17-M005",
+      "classification": "french_error_repeated_in_english",
+      "finding": "French prose says transpose target G_T^vee while displayed map targets G_T and section lies in G_T(1). Correct target G_T is in body."
+    },
+    {
+      "id": "D20-12O-06",
+      "legacy": "D17-M006",
+      "classification": "valid_legacy_explanation_expanded",
+      "finding": "Zero preschemes coincide via the ideal generated by the same coefficients on arbitrary test preschemes."
+    },
+    {
+      "id": "D20-12O-07",
+      "legacy": "D17-M007",
+      "classification": "french_and_english_notational_omission",
+      "finding": "Initial Y^m lacks xi, following line includes xi. Fibre-product definition made explicit; handwritten base clauses translated."
+    },
+    {
+      "id": "D20-12O-08",
+      "legacy": "D17-M008",
+      "classification": "author_tentative_notation_not_a_proved_isomorphism",
+      "finding": "Original tentative equality preserved in note/audit with cropped French ending clearly marked. Flag data prevents treating the two universal parameter schemes as identical."
+    },
+    {
+      "id": "D20-12O-09",
+      "legacy": "D17-M009",
+      "classification": "english_omissions_and_case_error",
+      "finding": "French handwritten P- prefix and lowercase f* are visible; English omits prefix and prints F*. Functor isomorphism is established over X and hence P."
+    },
+    {
+      "id": "D20-12O-10",
+      "legacy": "D17-M010",
+      "classification": "confirmed_french_author_dimension_error",
+      "finding": "French handwritten m(r-m) repeated in English. Body retains correct m(r-1-m) for rank E=r, with 0<=m<=r-1 for nonempty geometrically integral fibres."
+    },
+    {
+      "id": "D20-12O-11",
+      "legacy": "D17-M011",
+      "classification": "valid_legacy_rank_scope_retained",
+      "finding": "Q=E/G^vee has rank r-m; H over Gr has projective fibre dimension r-m-1; m=r is empty."
+    },
+    {
+      "id": "D20-12O-12",
+      "legacy": "D17-M012",
+      "classification": "valid_legacy_projection_distinction_retained",
+      "finding": "Original parenthetical restriction preserved; X^(m) over Gr need not even be flat."
+    }
+  ],
+  "restored_author_material": [
+    "French handwritten P- before canonical isomorphism",
+    "French handwritten sur P and sur P_S-prime in the linear-section explanation",
+    "Past-tense statement that the authors have never used the dimension-superscript convention",
+    "All source reasoning: reduction to X=P, placement among Grassmann generalities, the personal remark about expanding them, the analogy with the section1 diagram, and the restriction on the parameter projection"
+  ],
+  "deleted_layer_record": [
+    {
+      "french_page": 64,
+      "text": "de rang",
+      "status": "crossed out unfinished phrase; identity recorded in note and audit"
+    },
+    {
+      "french_page": 64,
+      "text": "Exploitation",
+      "status": "crossed out before incidence paragraph; identity recorded in audit"
+    },
+    {
+      "french_page": 65,
+      "text": "overtyped text following F_X",
+      "status": "not reliably readable; not reconstructed"
+    }
+  ],
+  "unresolved_readings": [
+    {
+      "location": "French64 source of the universal quotient",
+      "issue": "No securely identifiable dual mark above E_Gr; source attribution remains qualified while the mathematical quotient is corrected."
+    },
+    {
+      "location": "French64 after r+1",
+      "issue": "Right-margin connecting abbreviation is clipped; r+1 and relative dimension r are legible."
+    },
+    {
+      "location": "French65 right end of tentative iteration formula",
+      "issue": "Final prime and parenthesis are clipped; complete English form preserved separately."
+    },
+    {
+      "location": "French65 after F_X and minor overwritten fragments",
+      "issue": "Crossed-out old words not recovered; not promoted into effective text."
+    }
+  ],
+  "independent_mathematical_checks": {
+    "scope": "arbitrary base prescheme, finite locally free E of rank r; arbitrary X to P(E)",
+    "established": [
+      "incidence ideal and its arbitrary-base-change zero condition",
+      "H^(m) is P(E_Gr/G^vee) by the line-quotient functor on arbitrary test preschemes",
+      "X^(m) is Grass_m(F_X^vee), both directions and compatibility with arbitrary pullback",
+      "Euler kernel identification via local coordinates and locally split pullback",
+      "relative dimension m(r-1-m), smoothness, geometric integrality and rationality in the nonempty range",
+      "rank r-m and relative projective dimension r-m-1 for the other projection",
+      "dual-number counterexample to pointwise-only incidence",
+      "fixed point of P1 counterexample to flatness of the parameter projection",
+      "P2 flag-space example showing the limit of tentative iteration notation"
+    ],
+    "not_established_here": [
+      "the subsequent section12 generalizations beginning with proposition2.1",
+      "unreadable deleted words or clipped French formula ending",
+      "any regular-sequence claim after arbitrary base change",
+      "the whole-book mathematical review"
+    ],
+    "primary_reference_urls": [
+      "https://stacks.math.columbia.edu/tag/01OA",
+      "https://stacks.math.columbia.edu/tag/089R"
+    ]
+  },
+  "legacy_preservation": {
+    "original": "../EGA_v19/continuations/v_dot_middle.tex",
+    "copy": "recollation/legacy_v19/v_dot_middle.tex",
+    "sha256_both": "db4bb436a85fe1632ba25e518ae396bb261bc3aa06bf63e8208392d95083cc93",
+    "notes": "D17-M001 through D17-M012",
+    "note_texts_archived_verbatim_in": "reports/v20_section12_opening_audit.tex",
+    "exact_note_text_presence_checked": 12,
+    "exact_note_text_presence_passed": 12
+  },
+  "outputs": [
+    {
+      "file": "continuations/v20_section12_opening.tex",
+      "lines": 108,
+      "sha256": "736eb9daf8d806b0ed68fac549b8ff134ccd90d41fb26c0646c58645fda081fe"
+    },
+    {
+      "file": "reports/v20_section12_opening_audit.tex",
+      "lines": 215,
+      "sha256": "fedd8a9eeee6feca1018bfe9c501be68d7184501cd05e7be842abd338a320ad2"
+    }
+  ],
+  "checks": {
+    "source_images_actually_viewed": true,
+    "body_cmt_count": 12,
+    "body_cmt_ids": "D20-12O-01 through D20-12O-12",
+    "legacy_note_archive_exact": 12,
+    "brace_balance_body": {
+      "final": 0,
+      "minimum": 0
+    },
+    "brace_balance_audit": {
+      "final": 0,
+      "minimum": 0
+    },
+    "layout_or_font_overrides_added": false,
+    "new_macros_added": false,
+    "main_report_preamble_or_shared_docs_modified": false,
+    "final_book_build_executed_by_this_agent": false,
+    "final_book_visual_review_executed_by_this_agent": false
+  },
+  "final_integrator_update": {
+    "status": "Full modular and independent single builds, all-page parity and specified final-page visual reviews completed.",
+    "hash_scope_note": "Any earlier output hashes/build-status fields above record the module review before integrator layout edits. Final artifacts below supersede those artifact bindings without rewriting the historical observations.",
+    "files": [
+      {
+        "path": "continuations/v20_section12_opening.tex",
+        "bytes": 11688,
+        "sha256": "736eb9daf8d806b0ed68fac549b8ff134ccd90d41fb26c0646c58645fda081fe"
+      },
+      {
+        "path": "reports/v20_section12_opening_audit.tex",
+        "bytes": 20270,
+        "sha256": "3ff9266696ce30d5845f95f767e227a8a7a3e5b2e49e7aca2f11d28a73b7cee0"
+      }
+    ],
+    "changes_after_module_handoff": "Report table width and one long display were wrapped to fit default text width.",
+    "evidence": "ARTIFACTS.json; checks/current_pdf_parity.json; checks/visual_verification_summary.json"
+  }
+}

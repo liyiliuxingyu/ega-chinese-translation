@@ -1,0 +1,140 @@
+{
+  "edition": 20,
+  "status": "built_and_reviewed",
+  "recorded_at_utc": "2026-11-25T15:20:59.029953+00:00",
+  "scope": "Actual local final artifacts and explicitly scoped technical reviews; not a claim of whole-book mathematical completeness or remote publication.",
+  "files": [
+    {
+      "path": "main.pdf",
+      "bytes": 6020373,
+      "sha256": "88a14afceccf2316efe47dabc4658756e1cd0b16e4a40112aacaa8156abefa2f",
+      "physical_pages": 1216
+    },
+    {
+      "path": "single.tex",
+      "bytes": 3220996,
+      "sha256": "2966333f879cf6d42ac213d0beb8c395df7d957871aec708d652d9ec9391712c"
+    },
+    {
+      "path": "report.pdf",
+      "bytes": 2021723,
+      "sha256": "e908b3cdae5673eafc94a853bd4586cce4b53d53b9e6a08c2b9d9cb74b2b8a38",
+      "physical_pages": 431
+    },
+    {
+      "path": "report_single.tex",
+      "bytes": 710074,
+      "sha256": "f5fde149eda207f8d31c216c962d398b67ac0b3db11311263a8ce0adf8702528"
+    },
+    {
+      "path": "main.tex",
+      "bytes": 6306,
+      "sha256": "497b36eb95dca4c8a7d88933e3339f3de78e7a6aeedca1096904352ac94615af"
+    },
+    {
+      "path": "report.tex",
+      "bytes": 7870,
+      "sha256": "7768f08af99b9f7b00b3cbbbf7ded2fdc20716077aaf4b7caafc6151c756e081"
+    },
+    {
+      "path": "preamble.tex",
+      "bytes": 8757,
+      "sha256": "1b096d39924010e5a1f55e4a8944da9425e7d2959b0522e7d746ce943913b7c1"
+    },
+    {
+      "path": "frontmatter.tex",
+      "bytes": 5828,
+      "sha256": "566a055d087f301ab92a4d1b84de74a926568dcdf0cf51cdd5b3846d3c12c539"
+    },
+    {
+      "path": "single_build/book_single.pdf",
+      "bytes": 6020375,
+      "sha256": "e5a39dd2bb58891100d10a4fdd8746dd17963e9836633dc3bab523e1f8345dd7",
+      "physical_pages": 1216
+    },
+    {
+      "path": "single_build/audit_single.pdf",
+      "bytes": 2021716,
+      "sha256": "946adc91180ff4df788c57f6fe1712f793b446e59c8bb209b45b99d4f5bd5109",
+      "physical_pages": 431
+    },
+    {
+      "path": "main.log",
+      "bytes": 73656,
+      "sha256": "55dd5b446ece29d9fc8e63fc7699dc6600c4e062089a5a1fdbb981434f2e4ece"
+    },
+    {
+      "path": "report.log",
+      "bytes": 59935,
+      "sha256": "7ddbffc71e70361f6cb9186b663678b303f99e68cf6ee55af1f2b0ea93d0efe6"
+    },
+    {
+      "path": "single_build/book_single.log",
+      "bytes": 69257,
+      "sha256": "430d8a0814f8f0028ce2b61ee04a948d44c7f35065228efd9b68a36333f0f0bc"
+    },
+    {
+      "path": "single_build/audit_single.log",
+      "bytes": 58936,
+      "sha256": "28c1e691583d210a9c95117962383ce888bb6e9a50fa054f7cd5a6e65cb4aca3"
+    },
+    {
+      "path": "continuations/v20_section12_opening.tex",
+      "bytes": 11688,
+      "sha256": "736eb9daf8d806b0ed68fac549b8ff134ccd90d41fb26c0646c58645fda081fe"
+    },
+    {
+      "path": "continuations/v20_section12_extensions.tex",
+      "bytes": 8601,
+      "sha256": "e2a88c07c339f8bb03a7cc78cfb71de0e2a98ffb9a87c5d9326f2aeb5b1e9609"
+    },
+    {
+      "path": "continuations/v20_section12_degeneracy.tex",
+      "bytes": 11180,
+      "sha256": "2f804d8b6c6e527d2a88b2ab10eb99ba7b2041e98d769f020fcf88856230bcd5"
+    },
+    {
+      "path": "continuations/v20_section12_families.tex",
+      "bytes": 11205,
+      "sha256": "de755068d20ef9954d3c52756989c1e7ac60bd1bbb01029b4aa479433250dffd"
+    },
+    {
+      "path": "reports/v20_section12_opening_audit.tex",
+      "bytes": 20270,
+      "sha256": "3ff9266696ce30d5845f95f767e227a8a7a3e5b2e49e7aca2f11d28a73b7cee0"
+    },
+    {
+      "path": "reports/v20_section12_extensions_audit.tex",
+      "bytes": 20529,
+      "sha256": "2492649b17e6eaf110322e215eaf6b0827c2c47887916308be64b2d0f6b6d9c8"
+    },
+    {
+      "path": "reports/v20_section12_degeneracy_audit.tex",
+      "bytes": 20859,
+      "sha256": "11bfef9e4821a3030f8b7e43dd95dc61967a3287f2dfdb1667482bf46f75d443"
+    },
+    {
+      "path": "reports/v20_section12_families_audit.tex",
+      "bytes": 13105,
+      "sha256": "8710e4a4cd4f9a1eb90874d8d60a5176d4311bcfac9a5842df63ce04147cbd64"
+    }
+  ],
+  "checks": {
+    "current_structure_verification.json": {
+      "pass": true,
+      "sha256": "4a3d4f152858acce2553cffb5c19281b62d78fccc712e5dfc63c23c855c5b284"
+    },
+    "current_build_log_summary.json": {
+      "pass": true,
+      "sha256": "746357ce47278535b3c695ffb7b2369decc22ab8437f969c597e2d9d12516e0b"
+    },
+    "current_pdf_parity.json": {
+      "pass": true,
+      "sha256": "0b037db21a84e434717ad6c14c8ed6c9bc7b193bee6f43f8f35f3db3d9ba8f3c"
+    },
+    "visual_verification_summary.json": {
+      "pass": true,
+      "sha256": "38667b5594c509db057edb704a8fc66db56ff3da1febb6c52750996c13786a4e"
+    }
+  }
+}

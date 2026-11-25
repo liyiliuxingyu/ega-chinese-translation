@@ -1,0 +1,100 @@
+% V18 integration from immutable Dot batch 104: EGA第五卷_余法射影丛与奇异零概形.tex
+\begingroup
+\def\PP{\mathbb P}\def\OO{\mathcal O}\def\Ocal{\mathcal O}
+\def\F{\mathcal F}\def\G{\mathcal G}\def\N{\mathcal N}
+\def\PD{\check P}\def\Pdual{\check P}
+\def\Ys{Y^{\mathrm{sing}}}\def\Ysing{Y^{\mathrm{sing}}}
+\def\Ds{Y^{\mathrm{sup\,sing}}}\def\Ysup{Y^{\mathrm{sup\,sing}}}
+\def\cod{\operatorname{codim}}\def\Sing{\operatorname{Sing}}
+\def\depth{\operatorname{depth}}\def\coprof{\operatorname{coprof}}
+\def\Ass{\operatorname{Ass}}\def\Supp{\operatorname{Supp}}
+\def\Gr{\operatorname{Gr}}\def\Spec{\operatorname{Spec}}\def\Proj{\operatorname{Proj}}
+\source{Dot第104批；法文底本物理第36--39页，英编稿物理第25--27页}
+\subsection*{余法模及其射影化}
+\noindent〔原稿段首编号有覆写，本段沿原先的无编号主题位置收入，不据猜测另造编号。〕
+
+现在考察 $Y$ 中的点 $y$ 在纤维 $Y_\xi/k(\xi)$ 中的光滑性。限于 $f:X\to P$ 无分歧（实际应用中通常为浸入）、$X\to S$ 光滑的情形；不要求 $S$ 是域的谱。取 $P=\PP_S(E)$，其中 $E$ 局部自由，射影化参数化秩一局部自由商；记 $\Pdual=\PP_S(E^\vee)$，$B=X\times_S\Pdual$，而 $Y=V(\varphi)\subset B$ 为普适超平面截面。记 $\Ocal_X(1)=f^*\Ocal_P(1)$。
+
+由于 $f$ 无分歧，$f^*\Omega^1_{P/S}\to\Omega^1_{X/S}$ 满射；它的核是 $X$ 上局部自由的模，记为 $\N^\vee_{X/P}$。若 $f$ 是浸入，这正是定义理想 $\mathcal J$ 的 $\mathcal J/\mathcal J^2$；一般仍称它为余法模：
+\begin{equation*}\tag{a}
+0\longrightarrow \N^\vee_{X/P}\longrightarrow f^*\Omega^1_{P/S}
+ \longrightarrow \Omega^1_{X/S}\longrightarrow0.
+\end{equation*}
+\noindent\textbf{译校说明。}这里目标 $\Omega^1_{X/S}$ 局部自由，所以序列局部分裂，核为局部自由。对于非全局闭浸入，$\mathcal J$ 在把 $X$ 视为闭子概形的开邻域内取。此时 $\mathcal J/\mathcal J^2$ 向中项的单射来自 $X/S$ 的光滑性。\transnote{英25的(a)把中项写成 $f^*\Omega^1_{P/X}$；依法36旁述和陈列式纠正。浸入的余法正合列及左端单射可分别参看 \href{https://stacks.math.columbia.edu/tag/06B7}{Stacks，37.11.12} 及 \href{https://stacks.math.columbia.edu/tag/01V4}{29.35.17}。}
+
+在 $P$ 上另有正合列，作者建议可列为第16段的例子：
+\begin{equation*}\tag{b}
+0\longrightarrow\Omega^1_{P/S}(1)\longrightarrow E_P
+ \longrightarrow\Ocal_P(1)\longrightarrow0.
+\end{equation*}
+也就是说，$\Omega^1_{P/S}$ 典范同构于 $E_P(-1)\to\Ocal_P$ 的核。对(b)施行 $f^*$ 得
+\begin{equation*}\tag{b$'$}
+0\longrightarrow f^*(\Omega^1_{P/S})(1)\longrightarrow E_X
+ \longrightarrow\Ocal_X(1)\longrightarrow0.
+\end{equation*}
+(a)、(b$'$)说明 $\N^\vee_{X/P}(1)$ 是 $E_X$ 的局部直和因子；对偶给出典范商 $E_X^\vee\twoheadrightarrow\N_{X/P}(-1)$。因此作为 $X$ 上的射影子丛，有闭浸入
+\[
+ \PP_X(\N_{X/P})\simeq \PP_X(\N_{X/P}(-1))
+ \lhook\joinrel\longrightarrow \PP_X(E_X^\vee)\simeq B.
+\]
+该子概形包含于 $Y$：普适直线 $\Ocal_B(0,-1)$ 在其上先落入余法子丛，而余法子丛在 $E_B\to\Ocal_B(1,0)$ 的核内。\transnote{法36末的括注和英25留下 $\Omega_{X/P}(1)$ 一类读法；无分歧时 $\Omega^1_{X/P}=0$，不能给出这里所用的注入。由(a)、(b$'$)及法39图知，实际子模为 $\N^\vee_{X/P}(1)$。法36底部划掉的是旧段，以截面正则且纤维光滑来说明非奇异；本译采用法37未划销的重写，不把旧段并入正文。}
+
+
+\subsection*{奇异零点与切超平面}
+该子概形的底集，就是截面
+$\varphi\in\Gamma(B,\Ocal_B(1,1))$ 相对于 $\Pdual$ 的奇异零点集（原稿指向第16段）。\ednote{参见这些笔记的第二部分。〔英编稿脚注35。〕}具体地，给定域值点 $\operatorname{Spec}K\to\Pdual$，相应的 $K$-值点 $x\in Y_K\subset X_K$ 属于这个集合，当且仅当 $\varphi_K$ 在 $x$ 至少二阶消失。换言之，$Y_K$ 在 $x$ 不具备光滑且相对维数为 $d-1$ 的性质，其中 $d$ 是 $X_K$ 在该处的相对维数。\transnote{法36段首只说“不光滑”，法37首公式附近又写 $r-1$，英25照录。法37随后的命题写 $d-1$，法38明确区分 $d$ 和射影空间维数 $r$，故正文采用 $d-1$。若截面恒等为零于某个开分支，整个分支可光滑而维数仍为 $d$；奇异零不能只理解为零概形的非光滑点。}
+
+上述底集描述来自下列可作预备命题的论断。设 $S=\operatorname{Spec}k$，$H$ 是 $P$ 的超平面，$x\in (X\times_P H)(k)$。则 $X\times_P H$ 在 $x$ 光滑且相对维数为 $d-1$，即 $x$ 是 $H$ 所定截面的几何非奇异零点，当且仅当 $H$ 不包含 $df_x(T_xX)$ 所对应的过 $a=f(x)$ 的射影线性子空间。若 $f$ 是浸入，这就是说 $H$ 在 $x$ 不与 $X$ 相切。\transnote{法37把切向像写在类似 $\varphi'$ 的符号之后，英26用 $\varphi$。截面不是这里的映射；按前文语境记为 $df_x$。}
+
+
+
+
+一旦把这个陈述的含义说清楚，也就是说，说明 $P$ 在 $a=f(x)$ 处的切空间的一个向量子空间怎样确定 $P$ 的一个线性子空间，使“$H$ 不包含这个子空间”有意义，结论便立即由光滑性的雅可比判据或奇异零点的定义得出。这一对应来自正合列(b)：它给出 $a$ 处切空间的向量子空间与 $P$ 中包含 $a$ 的线性子空间之间的一一对应。无论如何，这一对应就是将经过 $a$ 的线性子簇送到它在 $a$ 处的切空间，并将后者视为 $P$ 在 $a$ 处切空间的子空间。\transnote{英编稿称“factor subspaces”；在域上每个向量子空间均有补空间。本译按紧接的说明译为向量子空间。展开的局部坐标与线性代数核算完整收入核查报告“D18-104”，不是原稿新增证明。}
+
+这类“连锁事实”，连同有关线性子簇和 Grassmann 簇的各项类似事实，应当集中在一两个预备编号或预备段落中，当然要对任意基底陈述。
+
+\subsection*{奇异零的闭子概形}
+事实上有更强的结论：第16段定义的奇异零子概形 $\Ysing$ 就是上面的 $\PP_X(\N_{X/P})$。设 $r$ 为 $P/S$ 的相对维数，$d$ 为 $X/S$ 的相对维数（均可按局部常值理解）。在射影丛非空的部分，其相对维数为
+\[
+ d+(r-d-1)=r-1,
+\]
+且它在 $S$ 上光滑，因而处于第16段所讨论的情形。\ednote{请询问 A.G. 这个引文的位置：应在这些笔记稍后的部分。〔英编稿脚注36。〕}若 $r=d$，相应射影丛为空，无须给空纤维赋予通常的维数。\transnote{法38将一段拟借零集维数推出平坦、光滑的备用论证整体划销；其中还保留倒置的维数式。本批不据此推出任何结论，以下用作者保留的概形函子证明。英注36和37未补出确切交叉编号或末字，正文仍用作者暂定的第16段。}
+
+按定义，$\Ysing$ 是 $Y$ 内截面
+\[
+ \Psi=\mathrm d_{B/\Pdual}\varphi\big|_Y
+ \in\Gamma\bigl(Y,\Omega^1_{B/\Pdual}\otimes\Ocal_Y(1,1)\bigr)
+\]
+的零概形，其中\ednote{此处有难辨内容，请询问 A.G.。〔英编稿脚注37。〕} $\Omega^1_{B/\Pdual}$ 由 $\Omega^1_{X/S}$ 拉回。此写法在 $Y$ 上才与截面的局部标架无关：标架变更导致的额外微分项带有 $\varphi$ 的局部函数因子，限制到 $Y$ 后为零。
+
+现在用另一种方式表示 $\Psi$。对任意 $Z\to B$，以下的模和扭转均取拉回到 $Z$；第一列是(a)扭转 $(1,0)$，横行是(b)，中列是 $\Pdual$ 的对偶欧拉列，即将其欧拉列对偶后拉回：
+\[
+\begin{tikzcd}[row sep=3.3ex,column sep=1.6em]
+ &0\arrow[d] &0\arrow[d] \\
+ &\N^\vee_{X/P}\otimes\Ocal_Z(1,0)\arrow[d] &
+ \Ocal_Z(0,-1)\arrow[d]\arrow[dl,dashed,swap,"\beta"]\arrow[dr,"\alpha"] \\
+0\arrow[r]&\Omega^1_{P/S}\otimes\Ocal_Z(1,0)\arrow[r]\arrow[d] &
+ E_Z\arrow[r]\arrow[d] &\Ocal_Z(1,0)\arrow[r]&0\\
+ &\Omega^1_{X/S}\otimes\Ocal_Z(1,0)\arrow[d] &
+ T_{\Pdual/S}\otimes\Ocal_Z(0,-1)\arrow[d]\\
+ &0&0
+\end{tikzcd}
+\]
+\noindent 横行及两条竖列均正合；$\alpha$ 是经过 $E_Z$ 的复合，$\beta$ 仅当 $\alpha=0$ 时存在。各短正合列局部分裂，故任意拉回仍正合。\transnote{法39及英27第一列出现 $\Omega^1_{X/Y}$，据(a)及法38的相对微分判定应为 $\Omega^1_{X/S}$。中列难辨符号（英注38）由对偶欧拉列确定为 $T_{\Pdual/S}$；法39正文在微分复合及将域移入扭转两处必须区分 $(1,0)$ 与 $(1,1)$。图把原稿自下而上的列改为向下，并保持箭头方向与对应映射。第104批排版漏画中列从 $E_Z$ 到 $T_{\Pdual/S}\otimes\Ocal_Z(0,-1)$ 的箭头；本版依法39页、英27页的原图和对偶欧拉列补齐。}\textsuperscript{,}\ednote{请询问 A.G.：上面的 $G$ 实际是一个难辨的字母，后接 $P^\vee/S$；这是什么？〔英编稿脚注38。〕}
+
+
+\subsection*{概形等同的验证}
+依 $Y$ 的定义，$Z\to B$ 通过 $Y$ 当且仅当 $\alpha=0$，也即 $\Ocal_Z(0,-1)\to E_Z$ 唯一分解为 $\beta$ 后接欧拉核的包含。此时合成
+\[
+ \Ocal_Z(0,-1)\xrightarrow{\beta}
+ \Omega^1_{P/S}\otimes\Ocal_Z(1,0)
+ \longrightarrow\Omega^1_{X/S}\otimes\Ocal_Z(1,0)
+\]
+可看作 $\Omega^1_{X/S}\otimes\Ocal_Z(1,1)$ 的截面，正是 $\Psi$ 的拉回。\ednote{Blass：请检查这里的字母是否正确。〔英编稿脚注39。〕}\textsuperscript{,}\transnote{欧拉核坐标下的局部比对完整保存于核查报告“D18-104”项，属译校文字，不是原文。}
+
+（这一验证应当基本上是机械的。）由零概形的定义，复合为零当且仅当 $Z\to Y$ 通过 $\Ysing$；由第一列的正合性，这又当且仅当 $\beta$ 进一步经过 $\N^\vee_{X/P}\otimes\Ocal_Z(1,0)$。对偶化，该条件就是普适秩一商 $E_Z^\vee\twoheadrightarrow\Ocal_Z(0,1)$ 经过 $\N_{X/P}(-1)|_Z$；所得秩一商仍满射，因为原商已满射。由射影丛的表示性质，这等价于 $Z\to B$ 通过 $\PP_X(\N_{X/P}(-1))$。\transnote{法39末和英27把射影化的条目写成余法模扭转一类表达；图中是直线落入余法子丛，按本稿始终采用的秩一商约定，对该子丛取对偶才得到射影化的模。}
+以上适用于任意 $Z$，不要求它约化，也不只核验域值点，故得到闭子概形的等式
+\[
+ \Ysing=\PP_X(\N_{X/P}(-1))\simeq\PP_X(\N_{X/P}).
+\]
+\endgroup

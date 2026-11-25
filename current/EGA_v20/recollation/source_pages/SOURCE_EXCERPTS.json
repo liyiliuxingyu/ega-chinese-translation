@@ -1,0 +1,28 @@
+[
+  {
+    "source": "archive_20261121/03_sources/EGA5_francais.pdf",
+    "source_sha256": "24cf8204184b58b18a46e5f63ecc36d6e791b3c8c96a09daac93de96ebd8e830",
+    "excerpt": "recollation/source_pages/french_physical_064_074.pdf",
+    "physical_pages": [
+      64,
+      74
+    ],
+    "excerpt_sha256": "39aded091ea05874324d969ad4e2a170b73e010e110faa152192779bf5ba7cfc",
+    "boundary_pages_not_counted_as_recollated": [
+      74
+    ]
+  },
+  {
+    "source": "archive_20261121/03_sources/EGAVaiello.pdf",
+    "source_sha256": "23a20ef32fd16a1bd623c0c08ac080d04fc94f248de12133b713a19d6b0330d9",
+    "excerpt": "recollation/source_pages/english_physical_043_049.pdf",
+    "physical_pages": [
+      43,
+      49
+    ],
+    "excerpt_sha256": "7ca362fda50683e04cd534d41e6123dd23672537539658c7f14a5f5ce694c570",
+    "boundary_pages_not_counted_as_recollated": [
+      49
+    ]
+  }
+]

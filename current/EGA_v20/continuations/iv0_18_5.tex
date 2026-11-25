@@ -1,0 +1,114 @@
+% Source: EGAIV.1.pdf, PDF pp.65--67; printed pp.66--68.
+\subsection{拓扑环的情形}
+\source{EGA IV第一部分，印刷第66--68页；上传PDF第65--67页}
+\egap{18.5.1}
+设 $A,B$ 是两个具有线性拓扑的拓扑环，$\rho:A\to B$ 是连续同态，$L$ 是拓扑 $B$-双模，并假设 $B$ 中存在开双边理想 $\mathfrak k_0$，使 $\mathfrak k_0L=L\mathfrak k_0=0$。于是，对每个开理想 $\mathfrak k\subset\mathfrak k_0$，都可将 $L$ 看作 $(B/\mathfrak k)$-双模。
+
+令 $\mathfrak k\subset\mathfrak k_0$ 为 $B$ 的开双边理想，$\mathfrak j$ 为 $A$ 的开双边理想，且 $\rho(\mathfrak j)\subset\mathfrak k$；于是 $B/\mathfrak k$ 可看作离散的 $(A/\mathfrak j)$-环。由上述讨论，群 $\Exan_{A/\mathfrak j}(B/\mathfrak k,L)$ 有定义。再设 $\mathfrak k'\subset\mathfrak k$、$\mathfrak j'\subset\mathfrak j$ 分别是 $B,A$ 的开双边理想，满足 $\rho(\mathfrak j')\subset\mathfrak k'$，则由（18.3.5.1）有典范同态
+\begin{equation}
+ \Exan_{A/\mathfrak j}(B/\mathfrak k,L)
+ \longrightarrow\Exan_{A/\mathfrak j'}(B/\mathfrak k',L).
+ \tag{18.5.1.1}
+\end{equation}
+\cmt{E5-T08}{原版在本句“分别属于”后写成 $A,B$，但 $\mathfrak k'$ 属于 $B$，$\mathfrak j'$ 属于 $A$；本处按前后定义明确换回 $B,A$。}
+满足 $\rho(\mathfrak j)\subset\mathfrak k\subset\mathfrak k_0$ 的开理想偶对 $(\mathfrak j,\mathfrak k)$，对于关系“$\mathfrak j\supset\mathfrak j'$ 且 $\mathfrak k\supset\mathfrak k'$”显然构成向右滤过的有序集；（18.5.1.1）在这一指标集上定义了加法群的归纳系。略用记号，置
+\begin{equation}
+ \Exantop_A(B,L)=
+ \varinjlim_{(\mathfrak j,\mathfrak k)}
+ \Exan_{A/\mathfrak j}(B/\mathfrak k,L).
+ \tag{18.5.1.2}
+\end{equation}
+这里称为略用记号，是因为不再有一个扩张集合与此群自然地一一对应。
+
+说（18.5.1.2）右端为零，意味着：对满足 $\rho(\mathfrak j)\subset\mathfrak k\subset\mathfrak k_0$ 的每一对开理想 $\mathfrak j\subset A$、$\mathfrak k\subset B$，以及 $B/\mathfrak k$ 的每个以 $L$ 为核的 $(A/\mathfrak j)$-扩张 $E$，都存在开理想 $\mathfrak j'\subset\mathfrak j$、$\mathfrak k'\subset\mathfrak k$，满足 $\rho(\mathfrak j')\subset\mathfrak k'$，使 $E$ 沿 $B/\mathfrak k'\to B/\mathfrak k$ 的逆像平凡。
+
+在 $A$ 交换、$B$ 为拓扑 $A$-代数（分别地，交换拓扑 $A$-代数）的情形，从 $\Exal_{A/\mathfrak j}(B/\mathfrak k,L)$、$\Exalcom_{A/\mathfrak j}(B/\mathfrak k,L)$ 类似定义归纳极限 $\Exaltop_A(B,L)$、$\Exalcotop_A(B,L)$；其细节留给读者。
+
+\egap{18.5.2}
+若给定连续环同态的交换图
+\[
+\begin{tikzcd}[column sep=large]
+B'\arrow[r]&B\\
+A'\arrow[r]\arrow[u]&A\arrow[u],
+\end{tikzcd}
+\]
+则由（18.3.5.1）取归纳极限，典范地得到两个加法群同态
+\[
+ \Exantop_A(B,L)\longrightarrow\Exantop_{A'}(B,L)
+ \longrightarrow\Exantop_{A'}(B',L).
+\]
+由于归纳极限函子在交换群范畴中正合，同态
+\[
+ \Exantop_A(B,L)\longrightarrow\Exantop_{A'}(B,L)
+\]
+的核是下列各同态之核的归纳极限：
+\[
+ \Exan_{A/\mathfrak j}(B/\mathfrak k,L)
+ \longrightarrow\Exan_{A'/\mathfrak j'}(B/\mathfrak k,L),
+\]
+其中 $\mathfrak j'$ 取为 $\mathfrak j$ 在 $A'$ 中的逆像。将此核记为 $\Exantop_{A/A'}(B,L)$；同样定义 $\Exaltop_{A/A'}(B,L)$ 和 $\Exalcotop_{A/A'}(B,L)$。最后，若有连续的 $B$-双模同态 $L\to L'$，则由（18.3.6.1）取归纳极限，典范地得到加法群同态
+\[
+ \Exantop_A(B,L)\longrightarrow\Exantop_A(B,L').
+\]
+
+\egap{18.5.3}
+给定拓扑环 $C$ 及两个拓扑 $C$-双模 $M,N$，将从 $M$ 到 $N$ 的连续 $C$-同态所成的加法群记为 $\HomCont_C(M,N)$。
+
+\egas{18.5.3.1}{引理}
+设 $C$ 是拓扑环，$E,L$ 是两个拓扑 $C$-双模。假设所考虑的拓扑均为线性拓扑，$L$ 离散，且被 $C$ 的某个开双边理想零化。则有典范同构
+\begin{equation}
+ \varinjlim_{(\mathfrak k,V)}\Hom_{C/\mathfrak k}(E/V,L)
+ \xrightarrow{\sim}\HomCont_C(E,L),
+ \tag{18.5.3.2}
+\end{equation}
+其中左端沿如下偶对 $(\mathfrak k,V)$ 所成的滤过有序集取归纳极限：$\mathfrak k$ 为 $C$ 的开双边理想，$V$ 为 $E$ 的开 $C$-子双模，并且
+\[
+ \mathfrak kL=L\mathfrak k=0,\qquad
+ \mathfrak kE\subset V,\qquad E\mathfrak k\subset V.
+\]
+\begin{proof}
+由于 $C/\mathfrak k$ 与 $E/V$ 都离散，存在典范同态
+\[
+ u_{\mathfrak k,V}:\Hom_{C/\mathfrak k}(E/V,L)
+ \longrightarrow\HomCont_C(E,L).
+\]
+这些同态形成归纳系，因此取归纳极限得到（18.5.3.2）。当 $V'\subset V$ 时，$E/V'\to E/V$ 满射，故由定义，同态
+\[
+ \Hom_{C/\mathfrak k}(E/V,L)\longrightarrow
+ \Hom_{C/\mathfrak k}(E/V',L)
+\]
+为单射；这里假设 $\mathfrak kL=L\mathfrak k=0$，并有 $\mathfrak kE\subset V'$、$E\mathfrak k\subset V'$。当 $\mathfrak k'\subset\mathfrak k$ 时，同态
+\[
+ \Hom_{C/\mathfrak k}(E/V,L)\longrightarrow
+ \Hom_{C/\mathfrak k'}(E/V,L)
+\]
+也单射。因此（18.5.3.2）为单射。
+
+另一方面，若 $u:E\to L$ 是连续 $C$-同态，则其核是 $E$ 的开子双模 $V_0$。若 $\mathfrak k_0$ 是 $C$ 的开双边理想，满足
+\[
+ \mathfrak k_0L=L\mathfrak k_0=0,\qquad
+ \mathfrak k_0E\subset V_0,\qquad E\mathfrak k_0\subset V_0,
+\]
+则 $u$ 显然是从 $E/V_0$ 到 $L$ 的某个 $(C/\mathfrak k_0)$-同态的典范像，故（18.5.3.2）满射。
+\end{proof}
+
+于是（18.3.8）可以如下推广到拓扑环。
+
+\egas{18.5.4}{命题}
+设 $B$ 是线性拓扑环，$\mathfrak j$ 是其双边理想，$C=B/\mathfrak j$ 为商拓扑环。则 $\mathfrak j/\mathfrak j^2$ 典范地具有拓扑 $C$-双模结构；这里 $\mathfrak j$ 取 $B$ 诱导的拓扑，$\mathfrak j/\mathfrak j^2$ 取 $\mathfrak j$ 的商拓扑。对每个被 $C$ 的某个开理想零化的离散 $C$-双模 $L$，都有典范同构
+\begin{equation}
+ \HomCont_C(\mathfrak j/\mathfrak j^2,L)
+ \xrightarrow{\sim}\Exantop_B(C,L).
+ \tag{18.5.4.1}
+\end{equation}
+\begin{proof}
+对 $B$ 的每个开理想 $\mathfrak k$，若 $(\mathfrak j+\mathfrak k)/\mathfrak j$ 零化 $L$，则由（18.3.8）有典范同构
+\[
+ \Hom_{B/(\mathfrak j+\mathfrak k)}
+ \bigl((\mathfrak j+\mathfrak k)/(\mathfrak j^2+\mathfrak k),L\bigr)
+ \simeq
+ \Exan_{B/\mathfrak k}\bigl(B/(\mathfrak j+\mathfrak k),L\bigr).
+\]
+再取归纳极限，并利用（18.5.3.1）即可。
+\cmt{E5-T09}{原版将这里调用的命题编号印为（18.3.9）；本节18.3止于（18.3.8），所需商环扩张同构也正是（18.3.8.1），故此处明确订正。关于上述单指标子系在（18.5.1.2）双指标系中的共尾性，见核查报告的补充验证；该补充不属于原文。}
+\end{proof}

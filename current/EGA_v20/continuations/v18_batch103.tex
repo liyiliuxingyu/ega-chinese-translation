@@ -1,0 +1,60 @@
+% V18 integration from immutable Dot batch 103: EGA第五卷_法文覆盖审计_Serre原阶保持判据.tex
+\begingroup
+\def\PP{\mathbb P}\def\OO{\mathcal O}\def\Ocal{\mathcal O}
+\def\F{\mathcal F}\def\G{\mathcal G}\def\N{\mathcal N}
+\def\PD{\check P}\def\Pdual{\check P}
+\def\Ys{Y^{\mathrm{sing}}}\def\Ysing{Y^{\mathrm{sing}}}
+\def\Ds{Y^{\mathrm{sup\,sing}}}\def\Ysup{Y^{\mathrm{sup\,sing}}}
+\def\cod{\operatorname{codim}}\def\Sing{\operatorname{Sing}}
+\def\depth{\operatorname{depth}}\def\coprof{\operatorname{coprof}}
+\def\Ass{\operatorname{Ass}}\def\Supp{\operatorname{Supp}}
+\def\Gr{\operatorname{Gr}}\def\Spec{\operatorname{Spec}}\def\Proj{\operatorname{Proj}}
+\source{Dot第103批；法文底本物理第32、34--35页，英编稿物理第24--25页}
+\paragraph{先前删稿。}
+法32和法34前一个框划的推论都写的是降阶性质 $(S_{k-1})$：若 $\F$ 为 $(S_k)$，考虑同时满足 $\varphi_\xi$ 为 $\F_{K(\xi)}$-正则以及 $\G_\xi$ 为 $(S_{k-1})$ 的参数，原打字稿拟称其补集余维至少二。法34有在关联循环上限制像维数的手写增补，并把证明指向8.4、5.7.4和8.2末；整个旧陈述仍是删稿。法32页底另起短注则可辨为问保持原阶 $(S_k)$ 时何以使补集余维至少二，与下文新推论相合。\transnote{所见页边文字并非各字都清楚。新旧两处下标可由法34打字稿及法32页底分别核对；不把删稿与新稿合成一句。旧打字句若不限制正则性例外，结论不成立：取 $X=\mathbb A^1$，$f$ 常值，$\F=\mathcal O_X$，经过该像点的所有超平面都给出零截面，参数余维为一。}
+
+\egas{8.5}{推论}
+沿用8.4的有限型底域记号，$k\ge1$，设 $\F$ 为满足 $(S_k)$ 的凝聚模。假定对 $\F$ 的每个几何关联循环 $R$，其像满足 $\dim f(R)>0$。\transnote{英24的前提留下未辨读注33；法34的补写可见“每个关联素循环”及像维数条件的开头，边缘有裁切。$>0$ 由 8.2 最终命题及法34边注所引的 8.2 末互证。几何一语沿用8.4证明末对底域的说明。}\textsuperscript{,}\ednote{字迹不清，请询问 A.G.。〔英编稿脚注33。〕}
+令 $T=\Supp\F$，对每个整数 $n\ge0$，置
+\[
+ Z_n=\{x\in T:\coprof(\F_x)>n\},\qquad
+ \coprof(\F_x)=\dim\F_x-\depth\F_x .
+\]
+使 $\varphi_\xi$ 为 $\F_{K(\xi)}$-正则且 $\G_\xi$ 为 $(S_k)$ 的参数构成可构造集。它的补集有余维至少二，当且仅当：
+\begin{quote}
+对每个 $Z_n$ 的几何不可约分支 $Z_{ni}$，若 $\codim(Z_{ni},T)=n+k+1$ 且 $\dim f(Z_{ni})=0$，则存在 $T$ 的一个含 $Z_{ni}$ 的几何不可约分支 $T_j$，使
+\[
+ \codim(Z_{ni},T_j)=n+k+1,\qquad \dim f(T_j)=0.
+\]
+\end{quote}
+这里按作者移写的承接语使用8.4、\href{https://webusers.imj-prg.fr/~leila.schneps/grothendieckcircle/EGA/EGAIV.2.pdf}{印本 EGA IV.2 (5.7.4)} 与8.2末。\transnote{英24注34和法34右缘都未给清楚的余深度末式；法35等维段仍保留严格的 $>$，印本 (5.7.4) 明确用 $\coprof>n$，并以 $\codim(Z_n,T)>n+k$ 为判准，即 $\ge n+k+1$。不能改作 $\coprof\ge n$。}\textsuperscript{,}\ednote{请询问 A.G.。〔英编稿脚注34。〕}
+
+
+\subsection*{拟有限情形}
+若 $f$ 拟有限，则对任何闭集 $R\subseteq T$，$\dim f(R)=\dim R$。于是判据变为：任何 $Z_n$ 都没有满足
+\[
+ \dim\mathcal O_{T,z}=\dim\F_z=n+k+1
+\]
+的几何孤立点 $z$。
+
+若 $\F$ 等维，支撑维数为 $d$，那么 $d\le k$ 时此条件为空条件；在这种情况下，$(S_k)$ 本来就是 Cohen--Macaulay 条件。若 $d\ge k+1$，则等价于 $Z_{d-(k+1)}$ 为空。按 $(S_k)$，这个集合若非空，其余维至少为 $d$，因此只含有限多个闭点。也就是说，要求
+\[
+ \coprof\F\le d-(k+1),\qquad
+ \text{亦即闭点上的最小深度至少为 } k+1.
+\]
+单从 $(S_k)$ 与 $k\le d$ 先验只得到闭点上的最小深度至少为 $k$。\transnote{法35写明该集合应为空，并写有整个 $\F$ 的余深度上界；英24在此省掉空集和该上界。“真实深度”在这个等维、有限型语境中是闭点上的最小深度；不可读成包含泛点在内的所有深度的下确界。}
+
+不再要求等维时，仍可把拟有限情形的条件写成：
+
+\egap{8.6}
+对支撑 $T$ 的每个几何闭点 $x$，若 $\dim\F_x\ge k+1$，则 $\depth\F_x\ge k+1$。
+
+取 $z=x$，立即看出这个条件是充分的。\transnote{这一简短原句的展开，以及余深度集的闭性、换底和参数判据补证完整保存于核查报告“D18-103”项，属译校文字，不是原文。}
+
+必要性如下。对任意过 $f(x)$ 的超平面，如果截面方程不正则，该参数本来就是例外；若正则，则在 $x$ 处有
+\[
+ \dim(\G_\xi)_x=\dim\F_x-1,\qquad
+ \depth(\G_\xi)_x=\depth\F_x-1 .
+\]
+若 $x$ 违反8.6，则在后一种情况下 $\depth(\G_\xi)_x<k$，而 $\dim(\G_\xi)_x\ge k$，所以截面不满足 $(S_k)$。过 $f(x)$ 的超平面给出余维一的参数集。这里是在代数闭域上取闭点。\transnote{英24在反证式把深度读成 $\ge k$，与应证的“不满足 $(S_k)$”相反；法35的关系是 $<k$，也由正则截面使深度减一得到。英稿的 $X_{K(\xi)}$-正则是省略或误写；本处需要的是 $\F_{K(\xi)}$-正则。}\par\noindent〔法文物理第35页末关于一般判据的承接句带有删改、边缘裁切和覆写；未能可靠辨读的部分仍留缺，不补成原文结论。〕
+\endgroup

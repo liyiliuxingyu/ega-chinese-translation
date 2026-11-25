@@ -1,0 +1,126 @@
+% Source: EGAIV.1.pdf, PDF pp.63--65; printed pp.64--66.
+\subsection{代数的扩张}
+\source{EGA IV第一部分，印刷第64--66页；上传PDF第63--65页}
+\egap{18.4.1}
+设 $A$ 为交换环。$A$-代数范畴是 $A$-环范畴的满子范畴，其特征是结构同态 $\rho:A\to B$ 的像包含于 $B$ 的中心。
+
+若 $B$ 是 $A$-代数，$L$ 是 $B$-双模，则标准平凡 $A$-扩张 $D_B(L)$ 是 $A$-代数。
+\cmt{E5-H03}{按允许左右作用不同的一般双模定义，此断言须增加 $\rho(a)\ell=\ell\rho(a)$（$a\in A,\ell\in L$），即 $L$ 对 $A$ 的作用对称。若“$B$-双模”在此已隐含“在 $A$ 上的双模”，则是须明说的约定；若按前文任意环的双模理解，字面断言有反例。报告取 $A=B=\mathbb Q[t]$、右作用经 $t\mapsto t+1$ 扭曲，直接验证 $D_B(L)$ 不是该结构下的 $A$-代数。不把这一约定问题说成交换代数扩张理论失效。}
+同样，在（18.2.5）的构造中，若 $B,B',E'$ 都是 $A$-代数，则 $E'\times_{B'}B$ 也是 $A$-代数；在（18.2.8）的构造中，若 $B,E$ 都是 $A$-代数，则 $E\oplus_LL'$ 也是 $A$-代数。
+最后，若 $E$ 是 $B$ 的以 $B$-双模 $L$ 为核的一个 $A$-扩张，并且是 $A$-代数，则与 $E$ $A$-等价的每个 $A$-扩张也是 $A$-代数。
+
+由定义（18.3.4）便得：那些作为环是 $A$-代数的 $A$-扩张，其等价类在 $\Exan_A(B,L)$ 中形成一个子群，记为 $\Exal_A(B,L)$。令 $\mathbf K'$ 是（18.3.5）中范畴 $\mathbf K$ 的满子范畴，其对象 $(A,B,L)$ 满足 $A$ 交换、$B$ 是 $A$-代数。上述讨论说明
+\[
+ (A,B,L)\longmapsto\Exal_A(B,L)
+\]
+是从 $\mathbf K'$ 到 $\mathbf{Ab}$ 的协变函子。将（18.3.7）中的 $\Exan$ 全部换成 $\Exal$，结果保持不变。\cmt{E5-H04}{本段关于子群和函子的表述也须连同E5-H03的相容条件理解；特别是（18.2.8）的 $L'$ 也须对 $A$ 的作用对称。本译文保留原段组织，并在此明示这一适用界限。}
+
+\egap{18.4.2}
+仍设 $A$ 为交换环。在（18.4.1）中将“代数”换成“交换代数”，将“双模”换成“模”，上述讨论仍成立。若 $B$ 是交换 $A$-代数，$L$ 是 $B$-模，则那些是交换 $A$-代数的 $A$-扩张（等价地，是交换 $A$-环的扩张），其等价类在 $\Exal_A(B,L)$ 中形成子群，记为 $\Exalcom_A(B,L)$。若 $\mathbf K''$ 是 $\mathbf K'$ 中由 $A,B$ 交换且 $L$ 为 $B$-模的三元组组成的满子范畴，则
+\[
+ (A,B,L)\longmapsto\Exalcom_A(B,L)
+\]
+仍是从 $\mathbf K''$ 到 $\mathbf{Ab}$ 的协变函子。也可在（18.3.7）中将 $\Exan$ 全部换成 $\Exalcom$。最后，若在（18.3.8）中假设 $B$ 交换且 $L$ 为 $C$-模，则同一论证给出典范同构
+\begin{equation}
+ \Hom_C(\mathfrak j/\mathfrak j^2,L)\xrightarrow{\sim}\Exalcom_B(C,L),
+ \tag{18.4.2.1}
+\end{equation}
+其中左端是 $C$-模同态群。
+
+\egap{18.4.3}
+设 $A$ 为交换环。一类重要的 $A$-代数扩张如下：$E$ 是 $A$-代数 $B$ 的以 $B$-双模 $L$ 为核的 $A$-代数扩张，并且 $E$ 作为 $A$-模，是 $A$-模 $B$ 的以 $A$-模 $L$ 为核的平凡扩张。也就是说，$A$-模正合列
+\[
+ 0\longrightarrow L\longrightarrow E\longrightarrow B\longrightarrow0
+\]
+分裂。\cmt{E5-T06}{原版此处把正合列印作 $0\to E\to L\to B\to0$。按本节扩张的定义及紧接着的 $E\simeq B\times L$，前两个对象应交换；本处明确订正。}
+这时称 $E$ 为 $B$ 的以 $L$ 为核的\emph{Hochschild扩张}。当 $B$ 是射影 $A$-模时总是如此，特别地，$A$ 是交换域时总是如此。
+
+作为 $A$-模，可以把 $E$ 与 $B\times L$ 等同；$E$ 中的乘法则写为
+\[
+ (x,s)(y,t)=(xy,xt+sy+f(x,y)),\qquad f(x,y)\in L.
+\]
+写出此乘法在 $B\times L$ 上定义 $A$-代数结构的条件，可得（M，XIV，2）：$f$ 必须是从 $B\times B$ 到 $L$ 的 $A$-双线性映射，且
+\begin{equation}
+ f(xy,z)+f(x,y)z=xf(y,z)+f(x,yz).
+ \tag{18.4.3.1}
+\end{equation}
+换言之，$f$ 是 $B$ 上取值于 $L$ 的一个Hochschild意义下的 $2$-余循环。扩张 $E$ 为 $A$-平凡，当且仅当
+\begin{equation}
+ f(x,y)=xg(y)-g(xy)+g(x)y,
+ \tag{18.4.3.2}
+\end{equation}
+其中 $g:B\to L$ 是 $A$-线性映射；也就是说，$f$ 必须是Hochschild意义下的一个 $2$-余边界。于是，$B$ 的以 $L$ 为核的Hochschild扩张类形成 $\Exal_A(B,L)$ 的一个子群，同构于Hochschild上同调群 $H_A^2(B,L)$。
+\cmt{E5-H05}{这里的分裂只是 $A$-模分裂，不先验保持单位。在未经归一化的坐标中，单位可为 $(1,-f(1,1))$，不必是 $(1,0)$。这不反驳原段：归一化余循环或选取保持单位的分裂后可写成常用形式；报告说明两个写法的关系，不向原文添入未给出的归一化假设。}
+
+若 $B$ 是交换 $A$-代数，$L$ 是 $B$-模，则 $B$ 的以 $L$ 为核的交换Hochschild扩张对应于\emph{对称}的 $2$-余循环，即满足 $f(y,x)=f(x,y)$ 的那些余循环。这些交换Hochschild扩张的类在 $\Exalcom_A(B,L)$ 中形成子群，同构于对称 $2$-余循环群在 $H_A^2(B,L)$ 中的像；将这一子群记为 $H_A^2(B,L)^s$。
+
+\egap{18.4.4}
+现在限于 $A,B$ 交换且 $L$ 为 $B$-模的情形，并回顾此时Hochschild群 $H_A^i(B,L)$ 的一个等价定义（M，IX，6）。考虑 $B$-模复形 $P_\bullet=(P_n)_{n\geq0}$，其中
+\[
+ P_n=B^{\otimes_A(n+1)}=B\otimes_AB\otimes_A\cdots\otimes_AB
+ \quad\text{（共 $n+1$ 个因子）},
+\]
+其 $B$-模结构由
+\[
+ x(y_1\otimes\cdots\otimes y_{n+1})=(xy_1)\otimes y_2\otimes\cdots\otimes y_{n+1}
+\]
+定义。次数为 $-1$ 的微分 $d_n:P_n\to P_{n-1}$ 定义为
+\[
+\begin{aligned}
+ d_n(x_1\otimes\cdots\otimes x_{n+1})
+ ={}&(x_1x_2)\otimes x_3\otimes\cdots\otimes x_{n+1}\\
+ &-x_1\otimes(x_2x_3)\otimes\cdots\otimes x_{n+1}+\cdots\\
+ &+(-1)^{n-1}x_1\otimes\cdots\otimes x_{n-1}\otimes(x_nx_{n+1})\\
+ &+(-1)^n(x_{n+1}x_1)\otimes x_2\otimes\cdots\otimes x_n.
+\end{aligned}
+\]
+因为 $B$ 交换，这确实是 $B$-线性的。
+
+这个复形的取值于 $L$ 的 $2$-余循环，是满足 $h(d_3(x\otimes y\otimes z\otimes t))=0$ 的 $B$-线性映射 $h:B\otimes_AB\otimes_AB\to L$。由于
+\[
+ h(x\otimes y\otimes z)=xh(1\otimes y\otimes z),
+\]
+余循环 $h$ 由 $A$-双线性映射
+\[
+ (y,z)\longmapsto f(y,z)=h(1\otimes y\otimes z)
+\]
+确定；将前述关于 $h$ 的条件写出，就对 $f$ 重新得到（18.4.3.1）。同样，$2$-余边界是形如
+\[
+ x\otimes y\otimes z\longmapsto h'(d_2(x\otimes y\otimes z))
+\]
+的映射，其中 $h':B\otimes_AB\to L$ 是线性映射。这里 $h'$ 仍由 $A$-线性映射 $g:y\mapsto h'(1\otimes y)$ 确定；并有
+\[
+ h'(d_2(1\otimes x\otimes y))=xg(y)-g(xy)+yg(x),
+\]
+这就重新得到（18.4.3.2）。\cmt{E5-T07}{原版称 $g$ 为“$B$-线性”，本处改为“$A$-线性”。$h'$ 对第一个张量因子 $B$-线性，并不使 $y\mapsto h'(1\otimes y)$ 对 $B$-线性；例如在 $A=\mathbb Q,B=L=\mathbb Q[t]$ 时取 $h'(x\otimes y)=x\,dy/dt$，便得到仅 $A$-线性的导数映射。此修订与前段（18.4.3.2）的条件一致。}
+对每个 $i$ 作同样处理，可见
+\begin{equation}
+ H_A^i(B,L)=H^i\bigl(\Hom_B(P_\bullet,L)\bigr).
+ \tag{18.4.4.1}
+\end{equation}
+
+\egap{18.4.5}
+在（18.4.4）的条件下，也可用同样方式解释群 $H_A^2(B,L)^s$（18.4.3）。为此，将 $P_\bullet$ 在次数 $3$ 处修改，考虑新复形
+\[
+ P'_\bullet:\quad P'_3\xrightarrow{d'_3}P_2\xrightarrow{d_2}P_1.
+\]
+取 $P'_3=P_3\oplus(B\otimes_AB\otimes_AB)$，令 $d'_3$ 在 $P_3$ 上与 $d_3$ 一致，并在 $B\otimes_AB\otimes_AB$ 上由
+\[
+ d'_3(x\otimes y\otimes z)=x\otimes y\otimes z-x\otimes z\otimes y
+\]
+给出。关系 $d_2d'_3=0$ 由 $B$ 的交换性得到。用前面的记号，$P'_\bullet$ 的一个 $2$-余循环现在对应于一个对称且满足（18.4.3.1）的 $A$-双线性映射 $f:B\times B\to L$；因此
+\[
+ H_A^2(B,L)^s=H^2\bigl(\Hom_B(P'_\bullet,L)\bigr).
+\]
+
+\egap{18.4.6}
+在特殊情形下，若给定一个交换域 $k$ 及其扩域 $K$，则对任意 $K$-向量空间 $L,M$ 都有 $\Ext_K^1(M,L)=0$；所以（M，VI，3.3 a））有典范同构
+\begin{equation}
+ H_k^i(K,L)\simeq\Hom_K(H_i(P_\bullet),L),
+ \tag{18.4.6.1}
+\end{equation}
+以及
+\begin{equation}
+ H_k^2(K,L)^s\simeq\Hom_K(H_2(P'_\bullet),L).
+ \tag{18.4.6.2}
+\end{equation}

@@ -1,0 +1,189 @@
+% 底本：EGAIV.1.pdf，PDF第152--156页，分册印刷第153--157页。
+\setcounter{section}{20}
+\section{\texorpdfstring{特征$p$的环中的微分}{特征p的环中的微分}}
+\source{第四卷第一部分；本轮从分册印刷第153页的章首说明译至第164页的（21.4.8），对应上传PDF第152--163页的相关部分}
+本节的结果比§§19、20和22中的结果更特殊，也更具技术性；在第IV章中，只有少数场合会用到它们。它们在这里的主要作用，是用于证明§22的三个定理（22.3.3）、（22.5.8）和（22.7.3）；其中第一个和最后一个在第IV章§7关于诺特局部环的精细理论中具有根本作用。
+
+\subsection{\texorpdfstring{$p$-生成系与$p$-基}{p-生成系与p-基}}
+\egap{21.1.1}
+给定一个数 $p$，它或者为零，或者为素数。\emph{本节称}环 $A$ 具有特征 $p$，如果存在环同态 $P\to A$，其中 $P$ 为特征 $p$ 的素域。这个同态如果存在便是唯一的，因为复合 $\mathbf Z\to P\to A$ 是从 $\mathbf Z$ 到 $A$ 的唯一环同态。若 $A\ne0$，这也等价于说 $A$ 含有一个特征 $p$ 的子域；此时 $P$ 的像必为一个与 $P$ 同构的域，而且是 $A$ 中唯一一个与 $P$ 同构的子域。
+\cmt{K11-N01}{这里保留原著专门约定，不将其悄然替换为通常用 $1_A$ 的加法阶定义的环特征。尤其在 $p=0$ 时，原著要求 $A$ 为 $\mathbf Q$-代数；例如 $\mathbf Z$ 在通常意义下特征为零，却不满足本条约定。下一条关于零环的说法也须按这一约定理解。这是定义差别，不判为定理错误。}
+
+\egap{21.1.2}
+若 $p>0$，称 $A$ 具有特征 $p$，等价于在 $A$ 中有 $p\cdot1=0$，也等价于 $pA=0$。若 $p=0$，则等价于：对每个非零整数 $n$，元素 $n\cdot1$ 在 $A$ 中可逆。若 $A\ne0$，至多存在一个这样的 $p$（素数或零）；这由上面的讨论以及不同素数 $p,q$ 的Bézout等式 $ap+bq=1$ 得到。相反，零环按本节约定对每个 $p$ 都具有特征 $p$。
+
+\egap{21.1.3}
+若 $A$ 具有特征 $p$，则每个 $A$-代数也具有特征 $p$。特别地，对 $A$ 的任意素理想 $\mathfrak p$，$A$ 在 $\mathfrak p$ 处的剩余域具有特征 $p$。
+反过来，若 $p=0$，并且 $A$ 的每个极大理想 $\mathfrak m$ 处的剩余域都具有特征零，则 $A$ 也具有特征零：对任意非零整数 $n$，$n\cdot1$ 在所有 $A_{\mathfrak m}$ 中可逆，因而在 $A$ 中可逆。
+但若 $p>0$，局部环的剩余域可能具有特征 $p$，而局部环本身并不具有特征 $p$；素整环 $\mathbf Z_{p\mathbf Z}$（19.8.3）以及 $n\ge2$ 时的阿廷局部环 $\mathbf Z/p^n\mathbf Z$ 就是例子，它们不含子域。
+最后，即使一个环约化，它在不同素理想处的剩余域也可能具有不同特征，例如 $\mathbf Z$。
+
+\egap{21.1.4}
+在本节以下各处，除非特别说明，均固定一个素数 $p$，并假设所有环都具有特征 $p$。对这样的环 $A$，映射 $x\mapsto x^p$ 是环自同态，记作 $F_A$；若 $A$ 约化，则 $F_A$ 单射。记 $A^p=F_A(A)$，即由所有 $x^p$（$x\in A$）构成的子环；自然可以将 $A$ 看作一个 $A^p$-代数。
+
+也可以借助同态 $F_A:A\to A$ 将 $A$ 看作一个 $A$-代数：其标量乘法由
+$\lambda\cdot x=\lambda^p x$ 给出，右边是在原环中的乘法。将这一 $A$-代数记为 $A^{(p)}$。
+对任意环同态 $u:A\to B$，二元组 $(u,u)$ 是代数的双同态 $A^{(p)}\to B^{(p)}$。
+对每个 $A$-模 $E$，令
+\[
+ E^{(p)}=E\otimes_A A^{(p)},
+\]
+其中将 $A^{(p)}$ 视为一个 $(A,A)$-双模：左作用为刚刚定义的Frobenius作用，右作用为 $A$ 中通常的乘法。$E^{(p)}$ 上的 $A$-模结构取自后一右作用。因此，对 $x\in E$、$\alpha,\beta\in A$，有
+\[
+ \alpha(x\otimes\beta)=x\otimes(\alpha\beta),\qquad
+ (\alpha x)\otimes\beta=\alpha^p(x\otimes\beta)=x\otimes\alpha^p\beta.
+\]
+记 $x^{(p)}=x\otimes1$，便有 $(\alpha x)^{(p)}=\alpha^p x^{(p)}$。
+当 $F_A$ 单射时，通过 $F_A:A\simeq A^p$ 对标量作识别，$A^{(p)}$ 可看作以 $A^p$ 为基环的环 $A$。
+\cmt{K11-N02}{$A^{(p)}$ 的底层环仍为 $A$；改变的是结构同态。对模的记号 $E^{(p)}$ 则表示沿Frobenius扩张标量，并不只是把 $E$ 的标量作用改写。正文保留原式，并明确左右作用，以免在（21.3.6）的基变换中把半线性映射误当作通常线性映射。}
+
+\egas{21.1.5}{命题}
+设 $A,B$ 为两个环，$u:A\to B$ 为环同态。
+
+$(i)$ 从 $B$ 到任意 $B$-模 $L$ 的每个 $A$-导子，都在 $A[B^p]$ 上为零，因而也是 $A[B^p]$-导子。
+
+$(ii)$ 对 $A[B^p]$ 的任意 $A$-子代数 $A'$，若 $j:A'\hookrightarrow B$ 为典范包含，则典范同态
+\[
+ j_{B/A'/A}:\Omega^1_{B/A}\longrightarrow\Omega^1_{B/A'}
+\]
+为双射。
+
+$(iii)$ 假设存在整数 $s\ge0$ 使 $u(A)\supseteq B^{p^s}$。则在环 $B\otimes_A B$ 中，乘法同态的核 $\mathfrak J_{B/A}$ 是幂零元理想。
+
+\eproof
+$(i)$ 由（20.1.1.1）归纳得到，对每个 $A$-导子 $D:B\to L$，
+$D(x^k)=kx^{k-1}D(x)$；特别地 $D(x^p)=0$。
+
+$(ii)$ 由（20.4.8），这一断言正是 $(i)$ 的表述：对每个 $B$-模 $L$，
+$\Der_A(B,L)=\Der_{A[B^p]}(B,L)$；若 $u(A)\subseteq A'\subseteq A[B^p]$，在 $A$ 上为零与在 $A'$ 上为零也给出同一导子集合。
+
+$(iii)$ 对每个 $x\in B$，由于 $x^{p^s}\in u(A)$，
+\[
+ (x\otimes1-1\otimes x)^{p^s}
+ =x^{p^s}\otimes1-1\otimes x^{p^s}=0.
+\]
+而 $1\otimes x-x\otimes1$ 生成 $\mathfrak J_{B/A}$（20.4.4），故结论成立。
+\cmt{K11-N03}{“幂零元理想”在此表示其每个元素都幂零，不表示存在一个统一指数使整个理想的该次幂为零。下一条会借助有限生成性，才进一步得到理想幂零。}
+\finishproof
+
+由（21.1.5），对任意两个环同态 $A\to B\to C$ 以及 $B$ 中满足 $A'\subseteq A[B^p]$ 的任意 $A$-子代数 $A'$，有典范识别
+\begin{equation}
+ \Upsilon_{C/B/A}=\Upsilon_{C/B/A'}.
+ \tag{21.1.5.1}
+\end{equation}
+特别地，对绝对微分模，
+\begin{equation}
+ \Omega^1_A=\Omega^1_{A/A^p}.
+ \tag{21.1.5.2}
+\end{equation}
+
+\egas{21.1.6}{推论}
+假设 $B$ 为有限型 $A$-代数，且存在整数 $s\ge0$ 使 $u(A)\supseteq B^{p^s}$。若 $\Omega^1_{B/A}=0$，则 $u$ 满射。
+
+\eproof
+由（21.1.5，iii），$\mathfrak J_{B/A}$ 为幂零元理想；又由（20.4.4）和有限型假设，它有限生成，因而幂零。
+关系 $\Omega^1_{B/A}=0$ 等价于 $\mathfrak J_{B/A}=\mathfrak J_{B/A}^2$，所以 $\mathfrak J_{B/A}=0$，即乘法同态
+$\pi:B\otimes_A B\to B$ 为双射。
+另一方面，$B$ 的每个元素的 $p^s$ 次幂都在 $u(A)$ 中，所以 $B$ 在 $A$ 上整；结合有限型假设，$B$ 为有限 $A$-代数。因此只须证明以下引理；引理本身不要求环具有特征 $p$。
+\finishproof
+
+\egas{21.1.6.1}{引理}
+设 $R$ 为环，$S$ 为有限 $R$-代数。若乘法同态 $\pi:S\otimes_R S\to S$ 为双射，则结构同态 $u:R\to S$ 满射。
+
+\eproof
+只须对 $R$ 的每个极大理想 $\mathfrak m$，令 $T=R\setminus\mathfrak m$，证明
+$u_{\mathfrak m}:R_{\mathfrak m}\to T^{-1}S$ 满射
+（Bourbaki，\textit{Alg. comm.}，第II章，§3，第3节，定理1）。
+局部化后，乘法同态
+\[
+ (T^{-1}S)\otimes_{R_{\mathfrak m}}(T^{-1}S)\longrightarrow T^{-1}S
+\]
+仍为双射（$0_{\mathrm I}$，1.3.4），且 $T^{-1}S$ 在 $R_{\mathfrak m}$ 上有限。因此可设 $R$ 为局部环，仍以 $\mathfrak m$ 记其极大理想。
+由Nakayama引理，只须证明 $R/\mathfrak m\to S/\mathfrak mS$ 满射：这里应用于有限模 $\Coker(u)$。
+而
+\[
+ (S/\mathfrak mS)\otimes_{R/\mathfrak m}(S/\mathfrak mS)
+ \longrightarrow S/\mathfrak mS
+\]
+仍为双射，故最终可设 $R$ 为域。
+若 $r=\dim_R S<\infty$，假设给出 $r^2=r$，所以 $r=0$ 或 $r=1$；两种情况下 $u:R\to S$ 都满射。
+\finishproof
+
+\egas{21.1.7}{命题}
+设 $A$ 为环，$B$ 为 $A$-代数，$(x_\alpha)_{\alpha\in I}$ 为 $B$ 的一族元素。考虑以下性质：
+
+$a)$ $B=A[B^p,(x_\alpha)]$，即 $A[B^p]$-代数 $B$ 由 $(x_\alpha)$ 生成。
+
+$b)$ $A[B^p]$-模 $B$ 由所有单项式 $\prod_\alpha x_\alpha^{n(\alpha)}$ 生成，其中 $(n(\alpha))_{\alpha\in I}$ 为有限支撑的整数族，且 $0\le n(\alpha)<p$。
+
+$c)$ $B$-模 $\Omega^1_{B/A}$ 由 $d_{B/A}(x_\alpha)$（$\alpha\in I$）生成。
+
+则 $a)$ 与 $b)$ 等价，并蕴含 $c)$；若此外 $B$ 为有限型 $A[B^p]$-代数，则三者等价。
+
+\eproof
+$b)$ 蕴含 $a)$。反过来，对每个有限支撑的非负整数族 $(m(\alpha))$，作带余除法
+$m(\alpha)=pq(\alpha)+r(\alpha)$，其中 $0\le r(\alpha)<p$，便有
+\[
+ \prod_\alpha x_\alpha^{m(\alpha)}
+ =\left(\prod_\alpha x_\alpha^{q(\alpha)}\right)^p
+   \prod_\alpha x_\alpha^{r(\alpha)}.
+\]
+这证明 $a)$ 蕴含 $b)$。由（21.1.5，ii）和（20.4.7），$a)$ 蕴含 $c)$。
+
+现在假设 $c)$ 成立，且 $B$ 为有限型 $A[B^p]$-代数。令 $B'$ 为 $B$ 中由所有 $x_\alpha$ 生成的 $A[B^p]$-子代数。
+在正合列（20.5.7.1）
+\[
+ \Omega^1_{B'/A[B^p]}\otimes_{B'} B
+ \longrightarrow\Omega^1_{B/A[B^p]}
+ \longrightarrow\Omega^1_{B/B'}\longrightarrow0
+\]
+中，左边的同态由假设及（21.1.5，ii）满射。因此 $\Omega^1_{B/B'}=0$。
+又 $B^p\subseteq B'\subseteq B$，且 $B$ 为有限型 $B'$-代数，故（21.1.6）给出 $B'=B$。
+\finishproof
+
+\egas{21.1.8}{注}
+当 $B$ 为域时，我们将在（21.4.5）中证明：无须任何有限性假设，$a)$、$b)$ 和 $c)$ 仍等价。
+
+\egas{21.1.9}{定义}
+设 $A$ 为特征 $p$ 的环，$B$ 为 $A$-代数。若由一族元素 $(x_\alpha)_{\alpha\in I}$ 构成的所有单项式
+\[
+ \prod_\alpha x_\alpha^{n(\alpha)},\qquad
+ 0\le n(\alpha)<p,\quad (n(\alpha))\text{具有有限支撑},
+\]
+在 $A[B^p]$-模 $B$ 中组成线性无关族（分别为生成系、基），则称 $(x_\alpha)$ 在 $A$ 上\emph{$p$-无关}（分别称为 $B$ 在 $A$ 上的\emph{$p$-生成系}、\emph{$p$-基}）。
+
+对 $B$ 的元素集合 $M$，以典范包含 $M\hookrightarrow B$ 定义的族来作同样定义。
+若取 $A=\mathbf F_p$，则 $A[B^p]=B^p$，此时省去“在 $A$ 上”的说明；也称“绝对 $p$-无关”、绝对 $p$-生成系或绝对 $p$-基。
+
+上述关于 $B$ 的概念，在把 $A$ 换成 $B$ 的子环 $A[B^p]$ 后不变；因此研究单个扩张时可假设 $B^p\subseteq A\subseteq B$。
+若 $M$ 在 $A$ 上 $p$-无关，则 $M$ 的每个子集也在 $A$ 上 $p$-无关。
+
+\egas{21.1.10}{引理（校订表述）}
+设 $C$ 为 $B$ 的一个 $A$-子代数，$B^p\subseteq C$，$M\subseteq C$，$N\subseteq B$。
+
+$(i)$ 若 $M$ 为 $C$ 在 $A$ 上的 $p$-生成系，$N$ 为 $B$ 在 $C$ 上的 $p$-生成系，则 $M\cup N$ 为 $B$ 在 $A$ 上的 $p$-生成系。
+
+$(ii)$ 令 $R=A[B^p]\subseteq C$。假设 $M$ 为 $C$ 在 $R$ 上的 $p$-基，并且 $M\cap N=\varnothing$。则 $N$ 在 $C$ 上 $p$-无关，当且仅当 $M\cup N$ 在 $A$ 上 $p$-无关。
+\cmt{K11-E01}{原文$(ii)$只写 $M$ 为 $C$ 在 $A$ 上的 $p$-基，并未要求 $M\cap N=\varnothing$；其证明还直接将三个环的情形归结为 $B^p\subseteq A$，这会改变中间扩张的系数环，不能无条件进行。两项缺漏彼此独立。例一：取 $A=\mathbf F_p(t^p)$、$B=C=\mathbf F_p(t)$、$M=N=\{t\}$，并集 $p$-无关，却不能推出 $N$ 在 $C$ 上 $p$-无关。例二：取 $A=\mathbf F_p$、$C=\mathbf F_p(t^p)$、$B=\mathbf F_p(t)$、$M=\{t^p\}$、$N=\{t\}$，原文关于两级扩张的条件成立且两集合不交，但并集在 $A$ 上不 $p$-无关。正文采用使原乘积基论证成立的修订形式；完整核对见报告K11-E01。}
+
+\eproof
+对 $(i)$，因为 $C^p\subseteq B^p$，有
+$C=A[C^p,M]=R[M]$；又 $B=C[B^p,N]=C[N]$，所以
+$B=R[M,N]$，即得到所需的 $p$-生成性质。
+
+对 $(ii)$，设 $P$ 为由 $M$ 构成、每个指数小于 $p$ 的单项式族，
+$Q$ 为由 $N$ 构成的相应单项式族。
+因 $C^p\subseteq B^p\subseteq R$，$P$ 是 $R$-模 $C$ 的基。
+因 $B^p\subseteq C$，$N$ 在 $C$ 上 $p$-无关恰是 $Q$ 在 $C$ 上线性无关。
+任意有限关系
+\[
+ \sum_{\lambda,\mu}a_{\lambda\mu}x_\lambda y_\mu=0,
+ \qquad a_{\lambda\mu}\in R,\quad x_\lambda\in P,\quad y_\mu\in Q,
+\]
+在 $Q$ 于 $C$ 上线性无关时，等价于对每个 $\mu$ 都有
+$\sum_\lambda a_{\lambda\mu}x_\lambda=0$；由 $P$ 是基，这等价于所有 $a_{\lambda\mu}=0$。
+反过来，若所有乘积 $x_\lambda y_\mu$ 在 $R$ 上线性无关，
+把任何 $C$-系数的 $Q$ 的有限关系中的系数按 $P$ 展开，就得到该关系的所有系数为零。
+最后，因 $M\cap N=\varnothing$，这些乘积恰好是 $M\cup N$ 的受限单项式族；
+其系数环是 $A[B^p]=R$。这证明 $(ii)$。
+\finishproof

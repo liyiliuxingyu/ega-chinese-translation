@@ -1,0 +1,284 @@
+{
+  "schema": "ega-v20-visual-review-2",
+  "record_status": "current_after_anchor_fix",
+  "reviewer": "/root/v20_extensions",
+  "review_time_utc": "2026-11-25T15:18:28.163727+00:00",
+  "scope": "修复脚注锚点后的主稿物理页 1053—1058；六张均重新渲染并实际逐张查看，实见印刷页码 1033—1038。",
+  "main_pdf": {
+    "path": "main.pdf",
+    "sha256": "88a14afceccf2316efe47dabc4658756e1cd0b16e4a40112aacaa8156abefa2f",
+    "page_count": 1216,
+    "bytes": 6020373,
+    "modified_utc": "2026-11-25T15:13:18.014715+00:00"
+  },
+  "rendering": {
+    "library": "PyMuPDF",
+    "version": "1.26.6",
+    "matrix_scale": 1.65,
+    "output_dir": "checks/rendered_main_extensions_final",
+    "source_sha256_verified_before_and_after": true
+  },
+  "overall_verdict": "pass",
+  "blocking_findings": [],
+  "nonblocking_findings": [],
+  "resolved_previous_findings": [
+    {
+      "id": "V20-VIS-EXT-01",
+      "anchor": "V20-EXT001",
+      "physical_page": 1056,
+      "status": "resolved",
+      "observed_fix": "标号 1 置于点闭包公式的引导句末。"
+    },
+    {
+      "id": "V20-VIS-EXT-02",
+      "anchor": "V20-EXT010",
+      "physical_page": 1057,
+      "status": "resolved",
+      "observed_fix": "标号 5 置于纤维截面公式的引导句末；下方独占行的标号消失。"
+    }
+  ],
+  "content_corruption_observed": false,
+  "overflow_or_clipping_observed": false,
+  "tex_modified_by_this_reviewer": false,
+  "source_fix_performed_by": "/root",
+  "pre_anchor_fix_record": {
+    "json_path": "checks/v20_opening_extensions_visual_pre_anchor_fix.json",
+    "md_path": "checks/v20_opening_extensions_visual_pre_anchor_fix.md",
+    "main_pdf_sha256": "d6dcafc5ce7b1059d9c451e1917e8da331bbe926a637c7ab7724417f4f5e603f",
+    "original_json_sha256_before_status_annotation": "6a92f7146d2e3f031db1e3d9bf10b2b83caa304c52c607a3ecc3f533dbfc4f51",
+    "original_md_sha256_before_status_annotation": "ad6d43b49171f3488eabe2fa5ceca6d33edb1b5689894a914def2257d8e2b3dc",
+    "old_pngs_preserved_in": "checks/rendered_main"
+  },
+  "pagination_change": {
+    "observed": true,
+    "description": "正则截面定义的开头两行从物理 1058 移到 1057；1058 余下正文在页内上移，但该页仍以原 8.2 维数公式结束。",
+    "loss_or_duplication_observed": false,
+    "page_1059_boundary": {
+      "physical_page": 1059,
+      "purpose": "检查局部移页是否传递到下一页边界",
+      "old_png": "checks/rendered_main/main_1059.png",
+      "old_sha256": "257745a8adb765f2bf5f0db297204838f130775468319a3fdd4f60212a151943",
+      "new_png": "checks/rendered_main_extensions_final/main_1059.png",
+      "new_sha256": "257745a8adb765f2bf5f0db297204838f130775468319a3fdd4f60212a151943",
+      "pixel_equal": true,
+      "difference_bbox": null,
+      "actual_visual_inspection": false,
+      "method": "同渲染器同 1.65 比例重渲染，PIL 全页像素比较"
+    }
+  },
+  "pages": [
+    {
+      "physical_page": 1053,
+      "observed_printed_page": 1033,
+      "image_path": "checks/rendered_main_extensions_final/main_1053.png",
+      "image_sha256": "ccacb6223c73592544e29d6009b7c6cc4cefd21d8fdb1d11fb9cd669b5b3047d",
+      "image_bytes": 206878,
+      "image_size_px": [
+        983,
+        1390
+      ],
+      "image_dpi_metadata": [
+        96.012,
+        96.012
+      ],
+      "actual_visual_inspection": true,
+      "inspection_method": "从修复后的最终 main.pdf 以 PyMuPDF Matrix(1.65,1.65) 独立重渲染，六张均再次逐张调用 view_image 实际查看。",
+      "verdict": "pass",
+      "formula_checks": [
+        "Grass^n(P)=Grass_{n-1}(P^vee)=Grass_n(E^vee) 的上标、下标和对偶号清晰。",
+        "泛商 E^vee_{Gr^m} → G、T=P×_S Gr^m 及 G_T^vee → E_T → O_T(1) 均无裁切或符号碰撞。"
+      ],
+      "layout_checks": [
+        "印刷页码 1033，页眉和正文正常。",
+        "本页 1—5 脚注横线、标号与正文清晰，未见脚注正文溢出或裁切。",
+        "本轮已再次实际查看；与旧 PNG 的全页像素及文件 SHA-256 完全一致。"
+      ],
+      "issues": [],
+      "pixel_equal_to_pre_anchor_fix": true,
+      "difference_bbox_vs_pre_anchor_fix": null
+    },
+    {
+      "physical_page": 1054,
+      "observed_printed_page": 1034,
+      "image_path": "checks/rendered_main_extensions_final/main_1054.png",
+      "image_sha256": "96af6b70c89f5878e75c67d97c8225154e948c4fc9011ceacad465ca72638e4d",
+      "image_bytes": 236082,
+      "image_size_px": [
+        983,
+        1390
+      ],
+      "image_dpi_metadata": [
+        96.012,
+        96.012
+      ],
+      "actual_visual_inspection": true,
+      "inspection_method": "从修复后的最终 main.pdf 以 PyMuPDF Matrix(1.65,1.65) 独立重渲染，六张均再次逐张调用 view_image 实际查看。",
+      "verdict": "pass",
+      "formula_checks": [
+        "转置序列 O_T(-1) → E_T^vee → G_T 与 φ^m∈Γ(T,G_T(1)) 清晰。",
+        "Y^(m)=X×_P H^(m) 以及 Y_ξ^m 的基变换公式中 ξ、m、S′ 均可辨认。"
+      ],
+      "layout_checks": [
+        "印刷页码 1034；页末关于记号的句子正常续入下一页。",
+        "本页 1—4 脚注均可阅读，没有横向溢出、文字与公式重叠。",
+        "本轮已再次实际查看；与旧 PNG 的全页像素及文件 SHA-256 完全一致。"
+      ],
+      "issues": [],
+      "pixel_equal_to_pre_anchor_fix": true,
+      "difference_bbox_vs_pre_anchor_fix": null
+    },
+    {
+      "physical_page": 1055,
+      "observed_printed_page": 1035,
+      "image_path": "checks/rendered_main_extensions_final/main_1055.png",
+      "image_sha256": "36a18f0a39ce221f217d4e5970f4b8e69da5377ba0abb234013ede6f32b91ecc",
+      "image_bytes": 228334,
+      "image_size_px": [
+        983,
+        1390
+      ],
+      "image_dpi_metadata": [
+        96.012,
+        96.012
+      ],
+      "actual_visual_inspection": true,
+      "inspection_method": "从修复后的最终 main.pdf 以 PyMuPDF Matrix(1.65,1.65) 独立重渲染，六张均再次逐张调用 view_image 实际查看。",
+      "verdict": "pass",
+      "formula_checks": [
+        "X^(m)≃Grass_m(F_X^vee) 与 F_X=ker(E_X→O_X(1))≃f^*(Ω^1_{P/S}(1)) 清晰。",
+        "维数 m(r−1−m)、界 0≤m≤r−1 以及 P(E_{Gr^m}/G^vee) 正确显示。"
+      ],
+      "layout_checks": [
+        "印刷页码 1035。",
+        "新模块来源行分为两行，未溢出版心；本页 1—4 脚注的公式、对偶号及下标可辨。",
+        "本轮已再次实际查看；与旧 PNG 的全页像素及文件 SHA-256 完全一致。"
+      ],
+      "issues": [],
+      "pixel_equal_to_pre_anchor_fix": true,
+      "difference_bbox_vs_pre_anchor_fix": null
+    },
+    {
+      "physical_page": 1056,
+      "observed_printed_page": 1036,
+      "image_path": "checks/rendered_main_extensions_final/main_1056.png",
+      "image_sha256": "f8c2a48071fabe5037959a7054266f58398d131fe6300ea2843cf68ccb306f3c",
+      "image_bytes": 231118,
+      "image_size_px": [
+        983,
+        1390
+      ],
+      "image_dpi_metadata": [
+        96.012,
+        96.012
+      ],
+      "actual_visual_inspection": true,
+      "inspection_method": "从修复后的最终 main.pdf 以 PyMuPDF Matrix(1.65,1.65) 独立重渲染，六张均再次逐张调用 view_image 实际查看。",
+      "verdict": "pass",
+      "formula_checks": [
+        "dim overline({x})≤m−1 中点闭包横线可见，没有降为 dim x。",
+        "dim X−1 替换为 dim X−m，dim f(X_i)>0 替换为 dim f(X_i)≥m，比较号与各下标均清晰。",
+        "跨页续接 2.12—2.18 的内容完整，没有因公式或脚注挤压而丢字。"
+      ],
+      "layout_checks": [
+        "印刷页码 1036。",
+        "EXT001 标号 1 已移到公式前“对每个 x∈Z 都有”的引导句末，原先下段行首的孤立标号消失。",
+        "变化限于首个公式的引导句及其后证明段的断行；页面其余正文与脚注正常。",
+        "本页 1—5 脚注完整，无溢出或裁切。"
+      ],
+      "issues": [],
+      "pixel_equal_to_pre_anchor_fix": false,
+      "difference_bbox_vs_pre_anchor_fix": [
+        249,
+        235,
+        816,
+        367
+      ],
+      "resolved_issue_ids": [
+        "V20-VIS-EXT-01"
+      ]
+    },
+    {
+      "physical_page": 1057,
+      "observed_printed_page": 1037,
+      "image_path": "checks/rendered_main_extensions_final/main_1057.png",
+      "image_sha256": "8fc96e8c3a1a336c956a20ceccedf2c7b8609084a9a0821c21bbe693d4f838f0",
+      "image_bytes": 230129,
+      "image_size_px": [
+        983,
+        1390
+      ],
+      "image_dpi_metadata": [
+        96.012,
+        96.012
+      ],
+      "actual_visual_inspection": true,
+      "inspection_method": "从修复后的最终 main.pdf 以 PyMuPDF Matrix(1.65,1.65) 独立重渲染，六张均再次逐张调用 view_image 实际查看。",
+      "verdict": "pass",
+      "formula_checks": [
+        "3.1、3.2、3.3 与 4.3(b)(v),(vi) 的 m+1 下界显示清楚；σ 的维数条件为 m−1。",
+        "φ^(m)、T=X×_S Gr^m 与 φ_ξ^(m)∈Γ(X_{k(ξ)},O_{X_{k(ξ)}}(1)⊗_{k(ξ)}G(ξ)) 的上下标、张量基域和括号清晰。",
+        "V20-EXT008 脚注保留 m−1 or m+1 的原始字形歧义及采用 m+1 的理由，没有排版丢失。"
+      ],
+      "layout_checks": [
+        "印刷页码 1037。",
+        "EXT010 标号 5 已移到“对于 ξ∈Gr^m，它诱导截面”的引导句末，公式下方不再有单独占行的脚注标号。",
+        "局部重新分页后，正则截面定义开头两行从下一页移到本页末；两行正文与脚注横线有正常间距。",
+        "纤维公式、m+1 与 m−1 各条件及本页 1—5 脚注完整，无溢出、碰撞或裁切。"
+      ],
+      "issues": [],
+      "pixel_equal_to_pre_anchor_fix": false,
+      "difference_bbox_vs_pre_anchor_fix": [
+        165,
+        248,
+        732,
+        816
+      ],
+      "resolved_issue_ids": [
+        "V20-VIS-EXT-02"
+      ]
+    },
+    {
+      "physical_page": 1058,
+      "observed_printed_page": 1038,
+      "image_path": "checks/rendered_main_extensions_final/main_1058.png",
+      "image_sha256": "d3703d591c79c243ced01e9102f1b5197ee855feae43a5b016ef73163f8e750b",
+      "image_bytes": 211155,
+      "image_size_px": [
+        983,
+        1390
+      ],
+      "image_dpi_metadata": [
+        96.012,
+        96.012
+      ],
+      "actual_visual_inspection": true,
+      "inspection_method": "从修复后的最终 main.pdf 以 PyMuPDF Matrix(1.65,1.65) 独立重渲染，六张均再次逐张调用 view_image 实际查看。",
+      "verdict": "pass",
+      "formula_checks": [
+        "秩 m、m 个截面、F_s 与 (S_m) 均正确显示；s 没有变成大写 S。",
+        "相对纤维 X_{k(ξ)}、F_{k(ξ)} 的脚注下标与 Koszul 字样清晰。",
+        "同页后续模块的 ≥m+1、≤m−1、dim Y_ξ>dim X−m 也无符号裁切；这些条目不扩大本次推广模块的数学复核范围。"
+      ],
+      "layout_checks": [
+        "印刷页码 1038。",
+        "本页以正则截面定义的续文“来表达，就是……”开头；前两行已移至 1057 页，语句顺序连续，未发现漏文或重文。",
+        "第 6—8 节标题及其正文在页内上移，页末仍是原来的 dim Y_ξ>dim X−m 公式。",
+        "本页四条脚注与旧图处于相同位置，内容完整；公式下方留白正常，没有文字进入页边距。"
+      ],
+      "issues": [],
+      "pixel_equal_to_pre_anchor_fix": false,
+      "difference_bbox_vs_pre_anchor_fix": [
+        249,
+        208,
+        816,
+        872
+      ]
+    }
+  ],
+  "notes": [
+    "1053—1055 的新旧 PNG 文件 SHA-256 及全页像素完全一致，仍已再次逐张实际查看。",
+    "1056—1058 存在预期的锚点、断行和局部分页变化，逐张复看未见新问题。",
+    "1059 仅作独立重渲染后的全页像素比较，未宣称本轮实际看过该页；新旧 PNG 完全相同。",
+    "更后页面的像素比较由 root 执行，本记录不将其算入本轮核验。"
+  ]
+}

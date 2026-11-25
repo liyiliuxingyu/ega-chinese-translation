@@ -1,0 +1,199 @@
+\head{第十六版：第0章\S23译校核查}
+\source{用户上传的EGAIV.1.pdf，PDF第212--220页，原分册印刷第213--221页；作者清单三对照EGAIV.4.pdf的PDF第345页／印刷第346页}
+
+\section*{实际范围与结论性质}
+\addcontentsline{toc}{section}{实际范围与结论性质}
+本轮连续译入\S23“日本环”全文。23.1止于（23.1.7），23.2止于（23.2.10）。
+连同子编号引理（23.1.3.1）、（23.2.7.1），共19个原著编号条目。
+结尾保留原著“待续”。现有底本中第0章\S\S1--23的正文至此连续收入；
+这不表示第IV章主体已经翻译，也不表示原著所有证明均经独立审定。
+
+本轮确认（23.2.7）附带结论中的“局部环 $C$”应为“半局部环 $C$”，并给出具体反例。
+另补明忠实平坦情形的整性下降、Tate定理应用所需的完备性及高度1局部化的步骤。
+这与“定理结论被反驳”不同：本轮没有给出Tate定理、Nagata完备局部环定理或Mori的Krull性结论的反例。
+原文、作者正式勘误、译者校订与文本抽取失误分开处理。
+
+\begin{longtable}{@{}p{.18\linewidth}p{.20\linewidth}p{.52\linewidth}@{}}
+\toprule 标识&位置&判定与正文处理\\\midrule\endhead
+P16-E01&23.2.7&“局部”过强；改为“半局部”，有结点反例。\\
+P16-G01&23.1.5&展开极大理想完备到主理想完备的论证。\\
+P16-G02&23.2.7.1&补出模幂零根后首一方程的提升与整性下降。\\
+P16-G03&23.2.9&补出有限生成元清分母、素理想高度与取交。\\
+P16-T01&23.1.3&作者正式勘误两项：元素范围和幂所属的环。\\
+P16-T02&23.1.3&证明最后的 $A$ 改为所需的 $A'$。\\
+P16-T03&23.2.3&公式原误编号（23.1.3.1）改为（23.2.3.1）。\\
+P16-T04&23.2.8&不存在的引文（23.1.13）改为（23.2.7）。\\
+P16-N01--04&若干位置&零环边界、分式环记号、应用假设及扫描识读。\\
+\bottomrule
+\end{longtable}
+
+\audit{P16-E01}{有限中间环不一定局部}{附带断言的限定错误；半局部版本成立}
+\oldauditsrc{原分册第219页，（23.2.7）陈述末句}
+扫描页写的是“de l'anneau local C”，不是文本识读造成的差异。
+已给条件是 $A$ 局部、$C$ 有限于 $A$；这只保证 $C$ 半局部。
+后文证明选择的 $C$ 还须使 $\Spec A'\to\Spec C$ 为同胚，
+所以一旦 $A'$ 有两个极大理想，$C$ 不可能是局部环。
+下面同时说明，即使不预先要求这项同胚，原陈述所说的离散赋值环表示也不允许一般地取局部 $C$。
+
+\lead{一个完全显式的例子}
+取 $k=\mathbb Q$，在 $k[t]$ 中置
+\[
+ x=t^2-1,\qquad y=t(t^2-1),\qquad R=k[x,y],\qquad\mathfrak m=(x,y).
+\]
+$R$ 是整环，且 $R/\mathfrak m=k$。
+有
+\[
+ y^2=x^2(x+1),\qquad
+ R\simeq k[X,Y]/\bigl(Y^2-X^2(X+1)\bigr).
+\]
+后一个同构也可直接验证：$X+1$ 在 $k(X)$ 中不是平方，因它在 $X=-1$ 处的阶为1；
+故相应二次多项式不可约。
+令 $A=R_{\mathfrak m}$，这是一个一维诺特局部整环。
+由于 $t=y/x$，$A$ 的分式域为 $k(t)$。
+
+令 $S=R\setminus\mathfrak m$，并置 $B=S^{-1}k[t]$。
+$t$ 满足 $t^2-(x+1)=0$，而 $R[t]=k[t]$，所以 $B$ 是有限 $A$-代数。
+$B$ 是主理想整环的局部化，故整闭；又 $\operatorname{Frac}(B)=k(t)$。
+因此 $B$ 正是 $A$ 在分式域中的整闭包 $A'$。
+
+在 $k[t]$ 中有
+\[
+ (x,y)k[t]=(t^2-1),\qquad
+ k[t]/(t^2-1)\simeq k\times k.
+\]
+故 $B$ 有两个极大理想
+\[
+ \mathfrak n_+=(t-1)B,\qquad\mathfrak n_-=(t+1)B,
+\]
+两者均位于 $\mathfrak m$ 上方。由此 $A'=B$ 半局部但不局部。
+
+若存在原陈述所说的\emph{局部}有限中间环 $A\subset C\subset A'$，
+则 $C$ 也是一维局部整环，只有一个高度1素理想，即其极大理想 $\mathfrak n$。
+所以 $C_{\mathfrak n}=C$。
+$A'$ 同时是 $C$ 的整闭包：整性传递及 $A\subset C\subset A'$ 给出两向包含。
+于是 $C_{\mathfrak n}$ 的整闭包就是具有两个极大理想的 $A'$，不是离散赋值环。
+这与原陈述对 $V_\lambda$ 的要求矛盾。
+
+\lead{修订后为什么成立}
+由（23.2.5）选取有限 $A$-子代数 $C$，使 $\Spec A'\to\Spec C$ 根式，且整、满，因而为同胚。
+$C$ 半局部。该同胚保持素理想的包含和高度，
+所以 $A'$ 的高度1局部环正是各高度1的 $C_{\mathfrak p}$ 的整闭包。
+这些局部环为离散赋值环，给出原命题所需的Krull表示。
+正文只将“局部”校为“半局部”，没有削弱“$A'$ 为半局部Krull环”的主要结论。
+
+\audit{P16-G02}{模幂零根后的整性怎样返回原环}{原证明略写；补足后结论成立}
+\oldauditsrc{原分册第219页，引理（23.2.7.1）证明}
+原文将 $x\in K$ 对 $C=B_{\mathrm{red}}$ 整直接写成“a fortiori sur B”。
+$C$ 是商环，不能仅把它当成 $B$ 的子环而用传递性；应明确两个环境中的 $x$。
+设 $S=A\setminus\{0\}$、$\mathfrak N=\sqrt{0_B}$。
+由忠实平坦性，$A\hookrightarrow B$，$S$ 中每个元素在 $B$ 和 $C$ 上都是正则的。
+因此有相容嵌入 $K\hookrightarrow S^{-1}B$ 和 $K\hookrightarrow S^{-1}C\hookrightarrow R$。
+
+取首一多项式 $\overline P(T)\in C[T]$，使 $\overline P(x)=0$。
+逐个提升系数，得到首一的 $P(T)\in B[T]$。
+于是
+\[
+ P(x)\in\Ker(S^{-1}B\to S^{-1}C)=S^{-1}\mathfrak N.
+\]
+该理想的每个元素都幂零，所以存在依赖于 $P(x)$ 的整数 $N>0$，使 $P(x)^N=0$。
+首一多项式 $P(T)^N$ 便证明 $x$ 对 $B$ 整。
+这里不要求 $B$ 诺特，也不要求存在使 $\mathfrak N^N=0$ 的统一指数。
+
+由 $B$ 对 $A$ 平坦，$A[x]\subset K$ 张量后仍单射，故
+\[
+ B\otimes_A A[x]\simeq B[x]\subset S^{-1}B.
+\]
+右侧有限生成，如何推出左侧下降后的 $A[x]$ 有限生成也可写得很具体：
+取有限个 $B[x]$ 的 $B$-生成元，将各生成元写成有限个简单张量之和，
+收集其中出现的所有 $a_j\in A[x]$，令 $M=\sum_jAa_j$。
+则 $B\otimes_AM\to B\otimes_AA[x]$ 满射，因而
+$B\otimes_A(A[x]/M)=0$。由忠实平坦性，$A[x]/M=0$，即 $A[x]=M$ 有限生成。
+所以 $x$ 对 $A$ 整，得到 $C'\cap K=A'$。
+
+\audit{P16-G01}{Nagata定理中主理想进制完备性的核对}{应用条件补证}
+\oldauditsrc{原分册第216页，（23.1.5）证明末段}
+Tate定理（23.1.3）要求 $A$ 对 $(x)$-进制拓扑分离完备；
+Nagata定理起初给的是极大理想 $\mathfrak m$-进制完备性。
+在本处诺特局部环的假设下，这个转换成立，但不是“任何两种完备性都相同”。
+
+设 $x\in\mathfrak m$，取一个相容系 $(a_n+x^nA)_n\in\varprojlim A/x^nA$。
+选择代表元 $a_n$，满足 $a_{n+1}-a_n\in x^nA$。
+因 $x^nA\subseteq\mathfrak m^n$，$(a_n)$ 是 $\mathfrak m$-进制柯西列，故有极限 $a\in A$。
+固定 $r$，对所有 $n\ge r$ 有 $a_n-a_r\in x^rA$；
+诺特局部环的理想在 $\mathfrak m$-进制拓扑下闭，故 $a-a_r\in x^rA$。
+所以 $a$ 实现给定相容系，证明 $A\to\varprojlim A/x^nA$ 满射。
+又
+\[
+ \bigcap_{n\ge1}x^nA\subseteq\bigcap_{n\ge1}\mathfrak m^n=0,
+\]
+故该同态单射。
+这补足了原证明对Tate定理的应用，不改变归纳中的维数、正则性及日本环结论。
+
+\audit{P16-G03}{高度1局部化与有限中间环的下降}{清分母及包含关系补证}
+\oldauditsrc{原分册第220--221页，（23.2.9）}
+固定 $A$ 的极大理想 $\mathfrak m$。
+由（23.2.7）得到有限 $A_{\mathfrak m}$-子代数
+$B\subseteq A'_{\mathfrak m}$。取有限个代数生成元
+$b_i=a'_i/s_i$，其中 $a'_i\in A'$、$s_i\in A\setminus\mathfrak m$。
+令 $C=A[a'_1,\ldots,a'_r]$。因各 $a'_i$ 对 $A$ 整，$C$ 为有限 $A$-代数。
+在 $A_{\mathfrak m}$ 中 $s_i$ 都可逆，所以 $C_{\mathfrak m}=B$。
+
+设 $\mathfrak q\in\Spec B$ 高度1，$\widetilde{\mathfrak q}=\mathfrak q\cap C$。
+$\widetilde{\mathfrak q}$ 与 $A\setminus\mathfrak m$ 不交；
+任何包含于 $\widetilde{\mathfrak q}$ 的素理想也不与此乘法集相交。
+故局部化保留 $\widetilde{\mathfrak q}$ 下方的全部素理想链，
+$\htp\widetilde{\mathfrak q}=\htp\mathfrak q=1$。
+由命题假设，$\mathfrak p=\widetilde{\mathfrak q}\cap A$ 亦高度1，且 $\mathfrak p\subseteq\mathfrak m$。
+
+由 $A_{\mathfrak p}\subseteq B_{\mathfrak q}\subseteq K$，
+取在共同分式域中的整闭包得
+\[
+ A'_{\mathfrak m}\subseteq A'_{\mathfrak p}\subseteq\overline{B_{\mathfrak q}}.
+\]
+又 $A'_{\mathfrak m}=\bigcap_{\htp\mathfrak q=1}\overline{B_{\mathfrak q}}$。
+把所有 $\mathfrak p\subseteq\mathfrak m$、$\htp\mathfrak p=1$ 都放入左侧交集，得到两向包含，
+遂有 $A'_{\mathfrak m}=\bigcap_{\mathfrak p\subseteq\mathfrak m,\ \htp\mathfrak p=1}A'_{\mathfrak p}$。
+再对极大理想 $\mathfrak m$ 取交，正好得到原结论。
+
+\audit{P16-T01--04}{作者勘误与译者排印校订}{分别登记，不混称原定理错误}
+\lead{作者正式勘误P16-T01}
+《勘误与增补（清单三）》A部，第四卷第四部分印刷第346页，对（$0_{\mathrm{IV}}$，23.1.3）列明：
+第215页第4行将 $x'^q\in K'$ 改为 $x'\in K'$；
+第9行将 $x'^q\in A'$ 改为 $x'^q\in A$。
+这两项已落实在正文，并追加到书末相关勘误选译。
+
+\lead{译者校订P16-T02}
+Tate定理证明结束时“因此 $A$ 也有限型”应为“因此 $A'$ 也有限型”。
+原证明已经得到 $\widehat{A'}$ 是有限型 $A$-模，继而必须使用
+$A'\subseteq\widehat{A'}$ 和 $A$ 诺特，才能结束所需证明。
+
+\lead{译者校订P16-T03}
+（23.2.3）中的公式在扫描底本误编为（23.1.3.1）。正文按位置改为（23.2.3.1），
+旧号在脚注保留，避免与真实存在的引理（23.1.3.1）混淆。
+
+\lead{译者校订P16-T04}
+（23.2.8，ii）用“（23.1.13）”支持局部诺特整环整闭包的Krull性，
+但23.1止于（23.1.7）；实际依据是（23.2.7）。正文改引后者。
+
+\section*{识读、术语与范围核对}
+\addcontentsline{toc}{section}{识读、术语与范围核对}
+（23.2.9）的 $P$ 是 $A$ 的高度1素理想集合。
+抽取文本曾误给 $A'$，扫描页明确给出 $A$，因此没有把这项登记为作者错误。
+（23.1.7）中的 $\widehat A$、$A'_1$，以及（23.2.5）中两个 $C$ 上的完备化符号，都按扫描页恢复。
+（23.2.6）只给出半局部性与剩余域有限性，不能擅自加强成整闭包有限生成或诺特；
+原文（23.2.8，i）明确提醒存在非诺特整闭包。
+
+日本环定义中的“有限”指模有限；“普遍日本”不能简写成“整闭”。
+分式环仍须是整环，故（23.1.1）正文明确 $0\notin S$。
+源文引用Nagata的非诺特例子但未在本节给出构造，本译稿保留原引用，
+没有用新的例子替换原著尚未在这里展开的例子。
+
+\section*{外部交叉核对与本轮边界}
+\addcontentsline{toc}{section}{外部交叉核对与本轮边界}
+为检查主要结论的表述，另对照The Stacks Project的
+\href{https://stacks.math.columbia.edu/tag/0BI1}{Japanese rings（标签0BI1）}
+中日本环的定义、有限纯不可分扩张的检测和Tate引理，以及
+\href{https://stacks.math.columbia.edu/tag/0335}{Nagata环的例子（标签0335）}中的完备诺特局部环情形。
+外部材料仅作交叉核对；译文仍以用户上传的EGA原版为底本，未以现代证明替换未说明的原文内容。
+
+技术核验另见工程包的\texttt{checks/}；旧版待核事项保持原状态。

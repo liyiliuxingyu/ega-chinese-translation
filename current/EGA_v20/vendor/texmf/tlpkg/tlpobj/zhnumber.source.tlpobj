@@ -1,0 +1,8 @@
+name zhnumber.source
+category Package
+revision 66115
+shortdesc source files of zhnumber
+relocated 1
+srcfiles size=18
+ RELOC/source/latex/zhnumber/zhnumber.dtx
+ RELOC/source/latex/zhnumber/zhnumber.ins

@@ -1,0 +1,92 @@
+{
+  "edition": 20,
+  "scope": "First essay section12 final paragraphs, French physical71 lower–73 end; English47 lower–48 end. French74/English49 inspected only to verify next boundary.",
+  "source_evidence": "Original source pages were actually viewed, including enlarged French72 marginal annotation and French73 family/last-lemma handwriting.",
+  "source_files": [
+    {
+      "path": "../../archive_20261121/03_sources/EGA5_francais.pdf",
+      "sha256": "24cf8204184b58b18a46e5f63ecc36d6e791b3c8c96a09daac93de96ebd8e830"
+    },
+    {
+      "path": "../../archive_20261121/03_sources/EGAVaiello.pdf",
+      "sha256": "23a20ef32fd16a1bd623c0c08ac080d04fc94f248de12133b713a19d6b0330d9"
+    }
+  ],
+  "completed": [
+    "Recovered French cela implique encore que, pourvu que, V^1, S=Spec(k), fiber product, f and T^1 without inventing unresolved §8 hypotheses.",
+    "Translated all family, general-center and final handwritten paragraphs; original last Z sufficiently general retained, not silently changed to C.",
+    "Discriminant geometric irreducibility refuted by the degree2 Veronese conic and every center outside that conic. Author-added unramified and Veronese conditions explicitly checked.",
+    "Flag-incidence proof of the general codimension estimate supplied separately under stated field/dimension/closed-subscheme assumptions, with genuine projective-bundle identifications and geometric fibers."
+  ],
+  "status_limits": [
+    "No proof claimed of general supersingular-scheme theory, author’s unfinished Bertini extensions or earlier missing §8.7(c)/8.8 material.",
+    "No artificial dim X>=2 assumption added to evade the counterexample.",
+    "This is full recollation of existing §12, not from-scratch translation of all books."
+  ],
+  "current_body": "continuations/v20_section12_families.tex",
+  "current_report": "reports/v20_section12_families_audit.tex",
+  "body_sha256": "de755068d20ef9954d3c52756989c1e7ac60bd1bbb01029b4aa479433250dffd",
+  "report_sha256": "8710e4a4cd4f9a1eb90874d8d60a5176d4311bcfac9a5842df63ce04147cbd64",
+  "old_note_preservation": [
+    {
+      "id": "D17-M036",
+      "body_verbatim_in_current_report": true,
+      "body_sha256": "3f33131caee79118aa0fa53814278e0af2d798960cc48c2d03e797ca5bfc184a"
+    },
+    {
+      "id": "D17-M037",
+      "body_verbatim_in_current_report": true,
+      "body_sha256": "4099164e68dc604eb68e0090f45e15e2eb7d54308b67b3eb9e7a911a101f3f8f"
+    },
+    {
+      "id": "D17-M038",
+      "body_verbatim_in_current_report": true,
+      "body_sha256": "1f1de94e1a8567ca9c502a50e91152ec0e50cb2713d2950fdcce18ca3dae8899"
+    },
+    {
+      "id": "D17-M039",
+      "body_verbatim_in_current_report": true,
+      "body_sha256": "e4cca0f57d57525efd3ce5f462dddaf13993b90dcb97db5a9974923a2edb00c5"
+    },
+    {
+      "id": "D17-M040",
+      "body_verbatim_in_current_report": true,
+      "body_sha256": "e3f6914857a167f4e97f8f343cbe046cf0dee844dfdc7f2ec46de1a1c2028e4f"
+    },
+    {
+      "id": "D17-M041",
+      "body_verbatim_in_current_report": true,
+      "body_sha256": "ba08fcf250e91dc039c05546bc73fd0ee2dd5a577f68e8b1261752641f1203b1"
+    },
+    {
+      "id": "D17-M042",
+      "body_verbatim_in_current_report": true,
+      "body_sha256": "86806c73343f4039d927caeda7029bf8b7bbd5e6ec544b299f9654439e029ba3"
+    },
+    {
+      "id": "D17-M043",
+      "body_verbatim_in_current_report": true,
+      "body_sha256": "507b98891eda7b1983d5f2865091da7940c7b09dc392d724d94051ecf984240b"
+    },
+    {
+      "id": "D17-M044",
+      "body_verbatim_in_current_report": true,
+      "body_sha256": "460fabb90419c9b710506c9721b4fd5a026a275f4f0570529ff54f49edeefa97"
+    },
+    {
+      "id": "D17-M045",
+      "body_verbatim_in_current_report": true,
+      "body_sha256": "685d6a5df5176d0109550e9c40613d57675e21d0961a2eaee2a6feef87c78d09"
+    }
+  ],
+  "independent_reviews": [
+    "v20_family_counterexample_independent_review.md",
+    "v20_flag_codimension_independent_review.md"
+  ],
+  "next": {
+    "french_physical_page": 74,
+    "english_physical_page": 49,
+    "anchor": "§13 title and definition13.1",
+    "existing_file": "continuations/v20_section13_inherited.tex"
+  }
+}

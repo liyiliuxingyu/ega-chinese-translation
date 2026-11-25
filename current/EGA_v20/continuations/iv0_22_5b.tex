@@ -1,0 +1,163 @@
+% 底本：EGAIV.1.pdf，PDF第202--204页，原分册印刷第203--205页。
+\egap{22.5.5}
+设 $k$ 为特征 $p>0$ 的域，$A$ 为局部 $k$-代数，$k'/k$ 为满足 $k'^p\subseteq k$ 的有限纯不可分扩张。
+记 $\mathfrak m$ 为 $A$ 的极大理想，$K=A/\mathfrak m$。
+回顾：$A'=A\otimes_kk'$ 为局部环，其剩余域与 $K\otimes_kk'$ 的剩余域相同（Bourbaki，\textit{交换代数}，第五章，§2，第3目，引理4）。
+这里
+\[
+ A'_{(K)}=A'\otimes_AK=K\otimes_kk'.
+\]
+由（21.3.6），有典范同构
+\begin{equation}
+ \Theta_{A'_{(K)}/K}\simeq\Theta_{k'/k}\otimes_kK.
+ \tag{22.5.5.1}
+\end{equation}
+又由（21.3.5）及（21.4.8），$\Xi_{k'/k}=0$；换言之，典范同态
+\[
+ \pi_{k'/k}:\Theta_{k'/k}\longrightarrow\Omega^1_k
+\]
+单射，所以有典范单射
+\begin{equation}
+ \Theta_{A'_{(K)}/K}\longrightarrow\Omega^1_k\otimes_kK.
+ \tag{22.5.5.2}
+\end{equation}
+具体地，对 $x'\in k'$，它把
+\[
+ d_{A'_{(K)}/K}(x'\otimes1_K)\otimes1_K
+ \in\Omega^1_{A'_{(K)}/K}\otimes_{A'_{(K)}}K
+\]
+映到 $d_k(x'^p)\otimes1_K$。
+\cmt{N14-N03}{原文开头只写“$A$ 为局部环”，其后的 $A\otimes_kk'$ 已经要求指定 $k\to A$；正文明确这个结构。$\Theta$ 的张量结构始终采用21.3中的Frobenius扭曲，而不是把 $p$ 次幂同态当作通常的 $k$-线性同态。原文以（21.4.7）支持 $\Xi_{k'/k}=0$，这里列出直接涉及该核的前述条目。}
+
+\egas{22.5.6}{引理}
+使用（22.5.5）的记号。
+
+\noindent（i）在（22.5.5.2）的识别下，典范同态
+$\pi_{A'_{(K)}/K}$（21.3.2.2）的核识别为
+\[
+ (\Theta_{k'/k}\otimes_kK)\cap\Upsilon_{K/k}.
+\]
+
+\noindent（ii）令 $A_1=A/\mathfrak m^2$，$A'_1=A_1\otimes_kk'=A'/\mathfrak m^2A'$。
+则特征同态 $\chi_{A'_1/A_1}$（22.4.6.2）识别为
+\[
+ \chi_{A/k}:\Upsilon_{K/k}\longrightarrow V=\mathfrak m/\mathfrak m^2
+\]
+（20.6.24）在 $(\Theta_{k'/k}\otimes_kK)\cap\Upsilon_{K/k}$ 上的限制。
+
+\eproof
+（i）将（20.6.9）用于素域、$k$、$K$ 以及平方零扩张 $A_1$。
+记 $u_1:k\to A_1$ 为指定的结构同态。对 $x'\in k'$，必须取
+\[
+ z=u_1(x'^p)\in A_1.
+\]
+由微分的自然性，$d_k(x'^p)\otimes1_K$ 在
+$\Omega^1_{A_1}\otimes_{A_1}K$ 中的像正为 $d_{A_1}z\otimes1_K$；再映到 $\Omega^1_K$，得到 $\pi_{A'_{(K)}/K}$ 的值。
+因此该核恰为所述交空间。
+\cmt{N14-E02}{原证明只要求 $z$ 模 $\mathfrak m/\mathfrak m^2$ 的类为 $x'^p$，这不足以保证所写微分等式；应取由 $k$-代数结构指定的提升。例：$k=\mathbb F_p(s)$、$A_1=k[\epsilon]/(\epsilon^2)$，取 $x'^p=s$。$z=s+\epsilon$ 虽有正确剩余类，却满足 $dz\otimes1=ds\otimes1+d\epsilon\otimes1\ne ds\otimes1$。正文改为 $z=u_1(x'^p)$；引理结论不变。}
+
+（ii）有 $A'_{(K)}=K\otimes_kk'=(A'_1)_{(K)}$，故相应的 $\Theta$ 典范相同。
+（22.4.5.2）中的 $\pi'$，在上述生成元上的值也是 $d_{A_1}u_1(x'^p)\otimes1_K$。
+把该映射限制到（i）的核，并用（20.6.9.1）中平方零扩张的特征同态描述，就得到（ii）。
+\finishproof
+
+\egas{22.5.7}{命题}
+设 $k$ 为特征 $p>0$ 的域，$A$ 为正则局部 $k$-代数，极大理想为 $\mathfrak m$，剩余域为 $K$。
+置 $V=\mathfrak m/\mathfrak m^2$。设 $k'/k$ 为满足 $k'^p\subseteq k$ 的有限扩张，且 $A'=A\otimes_kk'$。
+则局部环 $A'$ 正则，当且仅当特征同态
+\[
+ \chi_{A/k}:\Upsilon_{K/k}\longrightarrow V
+\]
+在 $(\Theta_{k'/k}\otimes_kK)\cap\Upsilon_{K/k}$ 上的限制单射。
+
+\eproof
+只须证明所述条件等价于（22.5.1.1）。沿用（22.5.2，i）的记号，有 $A'_1=A_1\otimes_kk'$。
+取 $k'/k$ 的一组 $p$-基 $(a_i)_{1\le i\le r}$，置 $b_i=a_i^p\in k$，则
+\[
+ k'\simeq k[T_1,\ldots,T_r]/(T_1^p-b_1,\ldots,T_r^p-b_r).
+\]
+因此 $A'_1$ 是以相同关系在 $A_1$ 上构造的商环。
+由（22.4.7），余切维数相等当且仅当 $\chi_{A'_1/A_1}$ 单射；再用（22.5.6，ii）即得结论。
+\cmt{N14-N04}{这一步直接使用等特征 $p$ 的（22.4.7），并未使用（22.5.4）未经修订的混合特征等价关系；所以N14-E01的反例不否定本命题。}
+\finishproof
+
+现在可以证明（19.6.5）的逆命题。
+\egas{22.5.8}{定理}
+设 $k$ 为域，$p$ 为其特征指数，$A$ 为诺特局部 $k$-代数。以下条件等价：
+
+\noindent a）$A$ 对其极大理想预进制拓扑是形式光滑的 $k$-代数。
+
+\noindent b）$A$ 在 $k$ 上几何正则。
+
+\noindent b$'$）对每个满足 $k'^p\subseteq k$ 的有限扩张 $k'/k$，$A'=A\otimes_kk'$ 为正则环。
+
+\eproof
+由（19.6.6），只须考虑 $p>1$ 的情形。
+a）推出 b）就是（19.6.5），而 b）直接推出 b$'$）。
+我们证明 b$'$）蕴涵（22.2.2）的两项条件。
+取 $k'=k$，b$'$）先给出 $A$ 正则，故（22.2.2）的第一条件由（17.1.1）成立。
+
+设 $(x_\alpha)_{\alpha\in I}$ 为 $k^{1/p}/k$ 的一组 $p$-基。
+由（21.4.5）及Frobenius搬移结构，$d_k(x_\alpha^p)$ 构成 $\Omega^1_k$ 的一组 $k$-基，
+所以 $d_k(x_\alpha^p)\otimes1_K$ 构成 $\Omega^1_k\otimes_kK$ 的一组 $K$-基。
+于是，随着 $k'$ 遍历 $k^{1/p}$ 中在 $k$ 上有限的子扩张，各子空间
+\[
+ \Theta_{k'/k}\otimes_kK\subseteq\Omega^1_k\otimes_kK
+\]
+构成滤过递增族，其并等于整个 $\Omega^1_k\otimes_kK$（参见22.5.5）。
+由（22.5.7），b$'$）使 $\chi_{A/k}$ 在它与 $\Upsilon_{K/k}$ 的每个交空间上的限制单射。
+任取 $\Ker\chi_{A/k}$ 中一个元素，它只涉及上述基中的有限个元素，故属于某个这样的交空间，因而必为零。
+这证明 $\chi_{A/k}$ 单射，即（22.2.2）的条件（ii）。
+\cmt{N14-G02}{末尾显式写出“有限支持落在某个有限子扩张中”，以免将任意无穷维向量空间的条件与单个一维扩域测试混同。原文紧接着的（22.5.10）说明，仅检验单生成的扩张确实不够。}
+\finishproof
+
+\egas{22.5.9}{推论}
+设 $k$ 为域，$A$ 为对预进制拓扑形式光滑的诺特局部 $k$-代数。
+则对每个素理想 $\mathfrak p\subset A$，$A_{\mathfrak p}$ 对其 $\mathfrak pA_{\mathfrak p}$-预进制拓扑也是形式光滑的 $k$-代数。
+
+\eproof
+使用（22.5.8，b$'$），只须证明 $A_{\mathfrak p}\otimes_kk'$ 正则。
+它是正则环 $A\otimes_kk'$ 的局部化，因此由（17.3.6）为正则环。
+\finishproof
+
+\egas{22.5.10}{注}
+（i）在（22.5.8）的 b$'$）中，若只检验 $k'=k(x)$、$x^p\in k$ 这样的单生成扩张，结论便不再成立。
+事实上可能对所有这些 $k'$ 都有
+\[
+ \Upsilon_{K/k}\cap(\Theta_{k'/k}\otimes_kK)=0,
+\]
+而 $\Upsilon_{K/k}\ne0$。
+这表示：对每个 $x\in k^{1/p}\setminus k$，$d_k(x^p)\otimes1_K$ 不在 $\Upsilon_{K/k}$ 中；
+等价地，$d_K(x^p)\ne0$，即 $x^p\notin K^p$。
+也就是说，可能有 $K^p\cap k=k^p$，但 $K/k$ 仍不可分。
+
+可按如下方式构造这样的扩张。取特征 $p>0$ 的完美域 $k_0$，令 $X,Y,Z$ 为三个不定元，并置
+\[
+ k=k_0(X,Y),\qquad W=X^{1/p}+ZY^{1/p},\qquad K=k(Z,W).
+\]
+\cmt{N14-E03}{原文印作 $K=k(X^{1/p}+ZY^{1/p})$，没有把 $Z$ 列入生成元。按字面该域是 $k(W)$；因 $W$ 超越于 $k$，这是纯超越扩张，不能提供原文所需的不可分反例。正文采用经验证的修补 $K=k(Z,W)$，并在下文核实全部所需性质。原写法及对照计算见报告N14-E03。}
+有 $W^p=X+Z^pY$。
+$K$ 上的微分关系
+\[
+ d_KX+Z^p d_KY=0
+\]
+说明 $d_kX\otimes1+Z^p d_kY\otimes1$ 是 $\Upsilon_{K/k}$ 的非零元素，因此 $K/k$ 不可分。
+另一方面，令 $U=Z^p$，则
+\[
+ K^p=k_0(X^p,Y^p,U,X+UY)\subset k_0(X,Y,U).
+\]
+在右侧有理函数域上，导子 $D=\partial_Y-U\partial_X$ 在 $K^p$ 上恒为零。
+若 $a\in k\cap K^p$，则
+\[
+ \partial_Ya-U\partial_Xa=0.
+\]
+因 $U$ 超越于 $k$，得到 $\partial_Xa=\partial_Ya=0$，从而 $a\in k_0(X^p,Y^p)=k^p$。
+反向包含显然，所以 $K^p\cap k=k^p$。
+\cmt{N14-G03}{这两段是译者补入的反例核对，而非初版已有的完整计算。$d_kX,d_kY$ 是 $\Omega^1_k$ 的 $k$-基；上述关系因此确实给出非零核。又由表示 $K=k(Z,W)$ 及唯一关系 $W^p-X-Z^pY=0$，$\Omega^1_{K/k}$ 的 $K$-维数为2，而 $\operatorname{trdeg}_kK=1$；Cartier等式给出 $\dim_K\Upsilon_{K/k}=1$，与后面的构造相容。}
+
+现在应用引理（22.2.5.2），取 $V=K$，并令 $h:\Upsilon_{K/k}\to V$ 为零同态。
+所得 $A$ 是剩余域为 $K$ 的完备离散赋值环，且 $\chi_{A/k}=0$。
+因为 $\Upsilon_{K/k}\ne0$，由（22.2.2），$A$ 在 $k$ 上并非形式光滑。
+但是，对每个单生成子扩张 $k'\subset k^{1/p}$，上述交空间为零，所以（22.5.7）说明 $A\otimes_kk'$ 仍正则。
+
+（ii）（22.5.9）引出以下问题：若 $A$ 为诺特 $k$-代数，在什么条件下，使 $A_{\mathfrak p}$ 在 $k$ 上形式光滑的素理想 $\mathfrak p$ 构成 $\Spec A$ 的开集？我们以后将讨论它的一些特殊情形。

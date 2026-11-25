@@ -1,0 +1,222 @@
+% 底本：EGAIV.1.pdf，PDF第192--195页，原分册印刷第193--196页。
+\subsection{极大理想平方为零的局部环的有限扩张：预备结果}
+\egas{22.4.1}{命题}
+设 $A$ 为局部环，其极大理想 $\mathfrak m$ 满足 $\mathfrak m^2=0$，剩余域为 $K=A/\mathfrak m$；以 $V$ 表示视为 $K$-向量空间的理想 $\mathfrak m$。
+设 $T_i$（$1\le i\le r$）为不定元，且对每个 $i$，$F_i\in A[T_i]$ 是次数为 $d_i$ 的首一多项式。
+令 $A'$ 为 $A[T_1,\ldots,T_r]$ 对由 $F_1,\ldots,F_r$ 生成的理想 $\mathfrak b$ 的商环。
+假设 $A'$ 为局部环，记其极大理想为 $\mathfrak m'$，剩余域为 $K'=A'/\mathfrak m'$。则：
+
+\noindent（i）置 $d=\prod_{i=1}^r d_i$，则 $A'$ 为秩 $d$ 的自由 $A$-模，且 $[K':K]\le d$。
+
+\noindent（ii）$[K':K]=d$ 当且仅当 $A'\otimes_A K=A'/\mathfrak mA'$ 为域（此时必同构于 $K'$），亦即当且仅当 $\mathfrak m'=\mathfrak mA'$。
+在这种情形，$\mathfrak m'^2=0$；若 $V'$ 为视作 $K'$-向量空间的理想 $\mathfrak m'$，则典范同态
+\[
+ V\otimes_K K'\longrightarrow V'
+\]
+为双射，因而 $\rk_{K'}V'=\rk_KV$。
+
+\eproof
+即使不假设 $A'$ 为局部环，逐次作首一多项式的除法，并对 $r$ 归纳，也可知：若 $t_i$ 为 $T_i$ 模 $\mathfrak b$ 的类，则单项式
+\[
+ t_1^{\nu_1}\cdots t_r^{\nu_r},\qquad 0\le\nu_i\le d_i-1,
+\]
+构成 $A$-模 $A'$ 的一组基。若 $A'$ 为局部环，则 $K'$ 是 $A'/\mathfrak mA'=A'\otimes_AK$ 的商，所以
+\[
+ [K':K]\le\dim_K(A'\otimes_AK)=d.
+\]
+等号成立，当且仅当这个商映射的核 $\mathfrak m'/\mathfrak mA'$ 为零。这证明（i）及（ii）的前半部。
+当 $\mathfrak m'=\mathfrak mA'$ 时，$\mathfrak m'^2=0$；又因 $A'$ 在 $A$ 上自由而平坦，
+\[
+ V\otimes_KK'\simeq\mathfrak m\otimes_AA'\simeq\mathfrak mA'=V',
+\]
+从而得到其余结论。
+\finishproof
+
+\egas{22.4.2}{注}
+当 $A$ 为阿廷环（亦即 $\rk_KV$ 有限）时，$A'$ 为局部环这一假设总能推出
+\[
+ \rk_{K'}(\mathfrak m'/\mathfrak m'^2)\ge\rk_KV,
+\]
+我们将在（22.5.2）中证明这一点。应注意：即使这两个秩相等，也不一定有 $\mathfrak m'=\mathfrak mA'$。
+
+\egas{22.4.3}{命题}
+对 $A$ 的假设及记号同（22.4.1）。假设各 $F_i$ 具有形式
+\begin{equation}
+ F_i(T_i)=T_i^{d_i}+\sum_{1\le k\le d_i}c_{ik}T_i^{d_i-k},
+ \qquad d_i\ge2,\quad c_{ik}\in\mathfrak m.
+ \tag{22.4.3.1}
+\end{equation}
+原文称其为“Eisenstein多项式”。则：
+
+\noindent（i）$A'$ 是局部环，且其剩余域 $K'$ 同构于 $K$。
+
+\noindent（ii）典范同态 $V\to V'=\mathfrak m'/\mathfrak m'^2$ 的核，是 $A$ 中由 $\xi_i=c_{i,d_i}$（各 $F_i$ 的“常数项”）生成的理想 $\mathfrak n$；其余核以各 $T_i$ 的像为 $K$-基。
+特别地，若 $r'=\dim_K\mathfrak n$，则
+\begin{equation}
+ \rk_KV'=\rk_K(V/\mathfrak n)+r;
+ \qquad
+ \rk_KV'=\rk_KV+r-r'\quad\text{若 $\rk_KV$ 有限}.
+ \tag{22.4.3.2}
+\end{equation}
+当 $A$ 为阿廷环时，$\rk_KV'=\rk_KV$ 当且仅当 $\xi_1,\ldots,\xi_r$ 在 $K$ 上线性无关。
+\cmt{N14-N01}{原文直接写成 $\rk V'=\rk V+r-r'$，随后另讨论秩有限的情形。正文首先用商空间的维数书写，使无限维时不必对基数作减法；有限维公式及结论不变。“Eisenstein”沿用原文称呼，此处没有暗中加入常数项不属于 $\mathfrak m^2$ 等通常判据中的额外要求。}
+
+\eproof
+（i）商环 $A'/\mathfrak mA'$ 同构于
+\[
+ K[T_1,\ldots,T_r]/(T_1^{d_1},\ldots,T_r^{d_r}).
+\]
+这是剩余域为 $K$ 的局部环，其极大理想由各 $T_i$ 的类生成。理想 $\mathfrak mA'$ 平方为零，因而所有素理想均包含它；这给出（i）。
+
+（ii）记 $t_i$ 为 $T_i$ 在 $A'$ 中的像。由（i），
+\[
+ \mathfrak m'=\mathfrak mA'+\sum_i t_iA',\qquad
+ \mathfrak m'^2=\sum_{i,j}t_it_jA'+\sum_i t_i\mathfrak mA',
+\]
+其中使用了 $\mathfrak m^2=0$。
+所以 $A'/\mathfrak m'^2$ 同构于 $A[T_1,\ldots,T_r]/\mathfrak c$，这里 $\mathfrak c$ 由
+\[
+ F_i,\quad T_iT_j,\quad xT_i
+ \qquad(1\le i,j\le r,\ x\in\mathfrak m)
+\]
+生成。因 $d_i\ge2$ 且所有 $c_{ik}\in\mathfrak m$，也可改以
+\[
+ \xi_i,\quad T_iT_j,\quad xT_i
+\]
+为生成元。
+令
+\[
+ \mathfrak c_1=(T_iT_j)_{i,j},\qquad
+ \mathfrak c_2=\mathfrak c_1+\sum_i\mathfrak mT_iA[T_1,\ldots,T_r].
+\]
+则 $\mathfrak c=\mathfrak c_2+\sum_i\xi_iA[T_1,\ldots,T_r]$。
+作为 $A$-模，$A[T]/\mathfrak c_1$ 是 $A$ 与各 $At_i^{(1)}$ 的直和；继续取商得到
+\[
+ A[T]/\mathfrak c_2\simeq A\oplus\bigoplus_i Kt_i^{(2)},
+ \qquad
+ A[T]/\mathfrak c\simeq (A/\mathfrak n)\oplus\bigoplus_i Kt_i^{(3)}.
+\]
+在后一识别下，$V$ 在 $A'/\mathfrak m'^2$ 中的像为 $\mathfrak m/\mathfrak n$，且极大理想的其余部分以各 $t_i^{(3)}$ 为基。这就证明（ii）。
+\finishproof
+
+\egas{22.4.4}{命题}
+对 $A$ 的假设及记号同（22.4.1）。假设 $K$ 的特征为 $p>0$，即 $p\cdot1\in\mathfrak m$，且
+\begin{equation}
+ F_i(T_i)=T_i^p+p\sum_{k=1}^{p-1}c_{ik}T_i^{p-k}-f_i,
+ \qquad c_{ik},f_i\in A.
+ \tag{22.4.4.1}
+\end{equation}
+若 $a_i$ 为 $f_i$ 模 $\mathfrak m$ 的类，进一步假设 $(a_i)_{1\le i\le r}$ 在 $K^p$ 上 $p$-无关（“绝对 $p$-无关”）。则：
+
+\noindent（i）$A'$ 为局部环，其极大理想为 $\mathfrak mA'$，剩余域 $K'$ 同构于由 $K$ 添入各 $a_i^{1/p}$ 得到的扩张。
+
+\noindent（ii）各 $d_Af_i\otimes1_{K'}$ 构成典范同态
+\[
+ \Omega^1_A\otimes_AK'\longrightarrow\Omega^1_{A'}\otimes_{A'}K'
+\]
+之核 $N=\Upsilon^{K'}_{A'/A}$ 的一组基。
+
+\eproof
+（i）$A'/\mathfrak mA'$ 同构于
+\[
+ K[T_1,\ldots,T_r]/(T_1^p-a_1,\ldots,T_r^p-a_r).
+\]
+对 $a_i$ 的假设使这个商环成为域（21.1.8），故（i）成立。
+在证明（ii）之前，先证明下列引理。
+
+\egas{22.4.4.2}{引理}
+设 $\Lambda$ 为环，$A$ 为 $\Lambda$-代数，$\mathfrak J$ 为 $A$ 的理想，且 $C=A/\mathfrak J$ 的特征为 $p>0$，即 $p\cdot1\in\mathfrak J$。
+以 $\pi$ 表示 $p\cdot1$ 在 $\mathfrak J/\mathfrak J^2$ 中的像。
+若离散 $\Lambda/p\Lambda$-代数 $C$ 形式光滑，则有典范正合列
+\begin{equation}
+ 0\longrightarrow(\mathfrak J/\mathfrak J^2)/C\pi
+ \longrightarrow\Omega^1_{A/\Lambda}\otimes_AC
+ \longrightarrow\Omega^1_{C/\Lambda}\longrightarrow0.
+ \tag{22.4.4.3}
+\end{equation}
+
+\eproof
+置 $\bar A=A/pA$、$\bar\Lambda=\Lambda/p\Lambda$、$\bar{\mathfrak J}=\mathfrak J/pA$，则 $C=\bar A/\bar{\mathfrak J}$。
+因 $\bar A=A\otimes_\Lambda\bar\Lambda$，有典范同构
+\[
+ \Omega^1_{A/\Lambda}\otimes_A\bar A\simeq\Omega^1_{\bar A/\bar\Lambda}
+\]
+（20.5.5）。将（20.5.14.1）应用于形式光滑的 $\bar\Lambda$-代数 $C$，得到
+\[
+ 0\longrightarrow\bar{\mathfrak J}/\bar{\mathfrak J}^{\,2}
+ \longrightarrow\Omega^1_{\bar A/\bar\Lambda}\otimes_{\bar A}C
+ \longrightarrow\Omega^1_{C/\bar\Lambda}\longrightarrow0.
+\]
+$\Lambda\to\bar\Lambda$ 满射，所以 $\Omega^1_{C/\bar\Lambda}\simeq\Omega^1_{C/\Lambda}$（20.5.15）。再用
+\[
+ \bar{\mathfrak J}/\bar{\mathfrak J}^{\,2}
+ \simeq\mathfrak J/(\mathfrak J^2+pA)
+ \simeq(\mathfrak J/\mathfrak J^2)/C\pi,
+\]
+即得所述正合列。
+\finishproof
+
+\noindent\textbf{续证（22.4.4，ii）。}
+已知 $\mathfrak m'^2=0$，以 $V'$ 表示 $\mathfrak m'$，并置
+\begin{equation}
+ V_0=V/Kp=\mathfrak m/(\mathfrak m^2+pA),\qquad
+ V'_0=V'/K'p=\mathfrak m'/(\mathfrak m'^2+pA').
+ \tag{22.4.4.4}
+\end{equation}
+把（22.4.4.3）用于 $\Lambda=\mathbb Z$、环 $A$ 与 $A'$ 及其极大理想。
+$K,K'$ 均可分于素域 $\mathbb F_p$，因而在 $\mathbb F_p$ 上形式光滑（19.6.1）；于是
+\begin{equation}
+ \begin{aligned}
+ 0&\longrightarrow V_0\longrightarrow\Omega^1_A\otimes_AK
+       \longrightarrow\Omega^1_K\longrightarrow0,\\
+ 0&\longrightarrow V'_0\longrightarrow\Omega^1_{A'}\otimes_{A'}K'
+       \longrightarrow\Omega^1_{K'}\longrightarrow0.
+ \end{aligned}
+ \tag{22.4.4.5}
+\end{equation}
+考虑下图。两个中央列分别是（22.4.4.5）的第一列张量 $K'$ 所得正合列，以及第二列；首行由（22.4.1，ii）得到。
+\begin{equation}
+\begin{adjustbox}{max width=\linewidth}
+\begin{tikzcd}[column sep=small,row sep=large]
+ &&0\arrow[d]&0\arrow[d]\\
+ &0\arrow[r]&V_0\otimes_KK'\arrow[r]\arrow[d]&V'_0\arrow[r]\arrow[d]&0\\
+ 0\arrow[r]&N\arrow[r]\arrow[d]&\Omega^1_A\otimes_AK'\arrow[r]\arrow[d]&
+ \Omega^1_{A'}\otimes_{A'}K'\arrow[r]\arrow[d]&
+ \Omega^1_{A'/A}\otimes_{A'}K'\arrow[r]\arrow[d]&0\\
+ 0\arrow[r]&\Upsilon_{K'/K}\arrow[r]&\Omega^1_K\otimes_KK'\arrow[r]\arrow[d]&
+ \Omega^1_{K'}\arrow[r]\arrow[d]&\Omega^1_{K'/K}\arrow[r]&0\\
+ &&0&0
+\end{tikzcd}
+\end{adjustbox}
+\tag{22.4.4.6}
+\end{equation}
+中间两列与横箭头组成的方块，由（22.4.4.2）的证明及（20.5.11.3）交换。
+末行由（20.6.1.1）取 $(A,B,C)=(\mathbb Z,K,K')$ 得到；中行由相应的 $A\to A'$ 微分正合列张量 $K'$ 后，按定义补入左端的核 $N$ 得到。
+这些箭头的相容性亦由（20.6.4.3）给出；两外列取相应的核与余核，即得全图交换。
+\cmt{N14-T01}{原文在叙述中行来源时，将用于（20.6.1.1）的三个环列作 $\mathbb Z,A,K$；这与图中的 $\Omega^1_{A'}$ 不合，应为 $\mathbb Z,A,A'$。正文按图的实际对象修正。中行的右正合性来自张量的右正合性，左端 $N$ 是新取的核；不能据此声称张量 $K'$ 总保持原左端正合。}
+
+\egas{22.4.4.7}{引理}
+图（22.4.4.6）中的同态
+\[
+ N\longrightarrow\Upsilon_{K'/K},\qquad
+ \Omega^1_{A'/A}\otimes_{A'}K'\longrightarrow\Omega^1_{K'/K}
+\]
+均为双射。
+
+\eproof
+将蛇引理（Bourbaki，\textit{交换代数}，第一章，§1，第4目，命题2）用于两个中央列。由于其首项之间的映射为同构，所得正合列为
+\[
+ 0\longrightarrow N\longrightarrow\Upsilon_{K'/K}\longrightarrow0
+ \longrightarrow\Omega^1_{A'/A}\otimes_{A'}K'
+ \longrightarrow\Omega^1_{K'/K}\longrightarrow0,
+\]
+从而得证。
+\finishproof
+
+若 $t_i$ 是 $T_i$ 在 $A'$ 中的像，由 $F_i(t_i)=0$ 及 $p\in\mathfrak m'$, 微分后在 $\Omega^1_{A'}\otimes_{A'}K'$ 中得到
+\[
+ d_{A'}f_i\otimes1_{K'}=0.
+\]
+因此 $d_Af_i\otimes1_{K'}\in N$。这些元素在 $\Upsilon_{K'/K}$ 中的像为 $d_Ka_i\otimes1_{K'}$；后者由（21.4.8）构成一组 $K'$-基。结合（22.4.4.7），即完成（22.4.4）的证明。
+\cmt{N14-T02}{原文此处引（21.4.7），但给出非完美性模基的是（21.4.8）。微分 $F_i(t_i)$ 时，正次数项系数中的因子 $p$ 在张量 $K'$ 后消失，且 $d(p)=0$；这里不要求 $A$ 本身为特征 $p$。}
+\finishproof

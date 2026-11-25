@@ -1,0 +1,41 @@
+% V18 integration of Dot batch 098; immutable source SHA256 715e3b6a29a9022f8a3e06b19c0bd25f017b27ece6a3b8d7a73e8959b55eed1f
+\begingroup
+% These definitions have only group-local scope; the shared preamble is untouched.
+\def\OO{\mathcal O}\def\FF{\mathcal F}\def\GG{\mathcal G}
+\def\PP{\mathbf P}\def\calP{\mathcal P}\def\dd{\delta}
+\def\Div{\operatorname{Div}}\def\depth{\operatorname{depth}}
+\def\pr{\operatorname{pr}}\def\coker{\operatorname{coker}}
+\par\medskip\noindent\textbf{（7.1）末尾的作者补记：允许一部分坏点。}
+关于4.2和4.3，至少应在备注中给出略一般的形式。给定整数 $m$，令 $E$ 为满足下述条件的 $\xi\in P^\vee$：除去某个维数不超过 $m$ 的闭子集后，$\GG_\xi$（或 $Y_\xi$）满足 $\calP$。对于由局部良点性质定义的坏集，这意味着 $\calP$-坏点集 $Z$ 的闭包维数不超过 $m$。\footnote{法28明写“闭子集”及 $\le m$；英19末的表达易被误解为余维。对于几何整性等并非逐点定义的性质，不能无定义地使用这个等价说法。空坏集按 $\dim\varnothing=-\infty$ 处理。}
+
+\begin{enumerate}[label=\alph*)]
+\item $E$ 是 $P^\vee$ 的可构造子集。
+\item 在 $S=\Spec k$ 时，若 $\FF$（或 $X$）除维数不超过 $m+1$ 的集合外满足 $\calP$，并满足所引用的泛截面定理的其余适用条件，则 $E$ 包含非空开集。
+\end{enumerate}
+\noindent 原稿这一段是对4.2、4.3的改写建议，并未逐项给出证明；上面的维数记法首先适用于逐点定义且坏点集可构造的性质。任意底下，可构造性按相应有限表示条件下的局部意义理解。
+
+\egas{7.2}{命题（模层版本）}
+假设 $X$ 在 $S$ 上固有，$\FF$ 有限表示且相对 $S$ 平坦。令 $\calP$ 是4.2的(i)至(v)之一，$m$ 为整数。给定 $s\in S$，设
+\[
+ Z_s=\{x\in X_s:\FF_s\text{ 在 }x\text{ 处不满足 }\calP\},
+ \qquad \dim\overline{Z_s}\le m+1.
+\]
+沿用相应泛截面结论的适用条件。\footnote{法、英7.2本身只列出性质编号，没有重述4.2(v)的特征零或非分歧限制。正文保留必要的适用范围，不把省略的限制当成已经消除；后附纯不可分覆盖反例。}
+
+若 $k(s)$ 无限，则存在 $s$ 在 $S$ 中的开邻域 $U$ 和参数射影丛在 $U$ 上的截面 $\xi$，使得对每个 $t\in U$：
+\begin{enumerate}[label=(\roman*)]
+\item $Y_{\xi(t)}$ 上 $\GG_{\xi(t)}$ 不满足 $\calP$ 的点集，其闭包维数不超过 $m$；
+\item 截面方程 $\phi_{\xi(t)}$ 对 $\FF_t$ 正则。
+\end{enumerate}
+在这些条件下，$Y_\xi$ 上的模 $\GG_\xi$ 相对 $U$ 平坦。若 $k(s)$ 未假设无限，则可先作7.1所述的有限 étale 换底，再作相应构造。\footnote{法、英底本均误写 $s$ 在 $E$ 中的邻域。$\xi$ 是基底 $S$ 的局部参数截面，故 $U\subset S$；良参数在 $P^\vee$ 中。法28首处设定点是 $s$、后处量化点也写 $s$，这里用 $t$ 分开，并统一纤维下标。}
+
+\egas{7.3}{命题（概形版本及其范围）}
+作者称相应的概形版本本质相同：不再单列 $\FF$，改假设 $X\to S$ 平坦，并参照4.3的性质。保留 $k(s)$ 特征为零\emph{或} $f:X\to P$ 为浸入这一条件。若讨论(v)，手稿加上如下条件：对每个 $t\in S$ 及 $X_t$ 的每个不可约分支 $Z$，都有 $\dim\overline{f_t(Z)}\ge2$。\footnote{法28的性质末编号叠改，英译排作(v)，且同行手增确称“在(v)情形”；这里只明确记下这一分支的附加条件。法28左缘可辨(v)、12.2.1及若干子项，余字受黑边遮损；不复造完整旁注。}
+
+\par\noindent\textit{译校范围说明（非原文）。}对4.3中逐点定义且能应用第5节开性判据的(i)至(iv)，可按7.2的局部坏集方法处理：以 $\OO_X$ 代替环境模、以 $\OO_{Y_\xi}$ 代替截面余核。4.3(v)的几何整性是整体性质，不能直接套用同一个逐点坏集公式。出版的 EGA~IV 第三分册12.2.1(x)给出固有平坦有限表示族的几何整性开性；(xi)涉及无嵌入关联素循环及总重数上界。该出处说明这些整体条件另有开性定理，\emph{不}自动证明对维数容错后的7.3(v)。\footnote{正式印本12.2.1跨印179--180页；(x)、(xi)见印180。原英编注试读这两个子项，所引正式定理可核，但旁注的其余意义仍未定。}
+
+\par\noindent\textit{译校补证另见核查报告。}\cmt{D18-098-R}{单纤维选择、坏集维数、模平坦性和缺少（7.2）(v)限制的反例完整保存在本版核查报告“D18-098”条；其中译校补证为非原文。}
+\subsection*{法28末至法29开头：划销的另一条证明思路}
+旧稿原先指出，(v)、(vi)并非纯局部，故先把它们排除；然后建议让所得截面族平坦并有可分纤维，再用 Stein 分解中的有限 étale 因子讨论几何连通分支数的局部常值，并以此试图收回(v)。法稿的这一整段已划销；靠页边的部分字词有损，不据此补写证明。即使几何连通分支数等于一，也不能仅凭几何约化便推出几何整；例如两条相交的直线约化且连通，却非不可约。下接（7.4）的译校采用版本与原稿范围说明。
+
+\endgroup
