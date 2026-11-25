@@ -1,5 +1,12 @@
 # EGA 中文译校仓库协作规则
 
+## 归档补充提示（2026-11-25）
+
+新增 `archive_supplement_20261125/` 保存15个旧合订工程原ZIP、Dot109—119批11个原ZIP和本次漏传核查报告。先读其中 `AUDIT_REPORT.md`、`ARCHIVE_INDEX.json`；另7个早期独立卷册原ZIP确实不可恢复，不得宣称最初所有附件已原样保存。
+
+现行合订源码仍为 `current/EGA_v19/`；本次没有修改其正文或进度。Dot109—116与第十九版回校内容重叠，只作为原始独立档案；117—119可供§12整合回校时优先复用，必须对照实际底本、现行脚注和未决项，不直接覆盖。合订稿下一整合点仍为法64页§12／英43页中段；独立119批的下一位置是法71页末 “D’autre part, dans X_Grass^m - V''”／英47页。两种进度分别记录。
+
+
 当前入口`current/EGA_v19/`。先读根README和CONTINUE_HERE，再读当前PROGRESS、HANDOVER_STATE、ARTIFACTS、SOURCE_MAP、PENDING_ISSUES和真实源码。只据实际文件与执行记录确认进度，不以聊天声称或文件名“全译”认定完成。
 
 ## 原件与工作副本

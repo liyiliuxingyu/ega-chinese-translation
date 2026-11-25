@@ -1,0 +1,14 @@
+{
+  "checked_at_utc": "2026-11-25T14:06:18.633595+00:00",
+  "commit": "4daf708a87069e2a6e28c22a29d3e3af26880f0b",
+  "archive": "EGA-all-projects-with-Dot-v19-20261125.zip",
+  "archive_sha256": "948266faf60bac27b18c5569ead4fb268e7c98428260b7d2d7b697cbb23e4a48",
+  "members_checked": 4191,
+  "uncompressed_bytes": 996488017,
+  "missing": [],
+  "extra": [],
+  "duplicate_member_names": 0,
+  "mismatches": [],
+  "pass": true,
+  "seconds": 6.95
+}

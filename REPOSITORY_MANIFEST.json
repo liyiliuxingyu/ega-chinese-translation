@@ -1,19 +1,22 @@
 {
-  "schema_version": 3,
+  "schema_version": 4,
   "snapshot_date": "2026-11-25",
   "time_zone": "Asia/Shanghai",
-  "created_at_utc": "2026-11-25T07:34:35.720698+00:00",
-  "source_cutoff": "2026-11-24T23:04:26+08:00",
-  "scope": "Preserve every previous engineering payload and all Dot archives; add edition19 French/English recollation of first essay8.14 through section11, actual build/review records and continuation state. No claim of all volumes or all proofs finished.",
-  "baseline_commit": "f1ade3db412d2167779d4b8f9fa2ed04a4daf0c3",
-  "baseline_manifest_sha256": "3caf6fee99246cd543b3bd65e399aecd01166bfc8d097584ef396a88ee5ac48e",
+  "created_at_utc": "2026-11-25T14:16:35.046744+00:00",
+  "source_cutoff": "2026-11-25T21:08:06.973293+08:00",
+  "scope": "Archive-only supplement: 15 recovered historical projects and 11 Dot batches109-119; 7 original early containers remain unavailable. No translated source changes.",
+  "baseline_commit": "4daf708a87069e2a6e28c22a29d3e3af26880f0b",
+  "baseline_manifest_sha256": "29e0e36b9aceb1513fd4ec36f3a890bbd5f99e9313f394d6183c885d1015bbe1",
+  "archive_supplement_tag": "v19-archive1-20261125",
   "allowed_publication_metadata": [
     ".github/workflows/import-20261124.yml",
-    "IMPORT_RECEIPT.json",
+    ".github/workflows/publish-archive-supplement-20261125.yml",
     ".github/workflows/publish-edition18.yml",
-    "EDITION_18_IMPORT.json",
     ".github/workflows/publish-edition19.yml",
-    "EDITION_19_IMPORT.json"
+    "ARCHIVE_SUPPLEMENT_IMPORT.json",
+    "EDITION_18_IMPORT.json",
+    "EDITION_19_IMPORT.json",
+    "IMPORT_RECEIPT.json"
   ],
   "files": [
     {
@@ -23,18 +26,18 @@
     },
     {
       "path": "AGENTS.md",
-      "size": 2610,
-      "sha256": "eb11c34543f9d86ad91d2a01ad26aa1f16a34a3f81d9e430205ecb12a3aa6700"
+      "size": 3410,
+      "sha256": "ec068e50b7c6748b0c65e17022c1c683b186dad1f2ddcceb7c5be250b44e9639"
     },
     {
       "path": "CONTINUE_HERE.md",
-      "size": 2818,
-      "sha256": "43de1db9c87f81a1d70de4773284bb7be4be21c26cddf8345bf659970b4aa7f2"
+      "size": 3618,
+      "sha256": "654aaed2c4d9cd47220fc268efa7d4ad446d3e6eb909f4688f04137a8cb22db9"
     },
     {
       "path": "README.md",
-      "size": 6257,
-      "sha256": "2cc2be8a0c6250c6fc920cdf2d317bf9fa2ffd2b21b374224db34f931b12ba2f"
+      "size": 7487,
+      "sha256": "f3f2db06d3776d3cb3211bfbd46d217a648f6509b9569bfb1274f920f1c77902"
     },
     {
       "path": "archive_20261121/00_START_HERE/历史恢复工具说明.md",
@@ -9045,6 +9048,256 @@
       "path": "archive_20261121/verify_package.py",
       "size": 1566,
       "sha256": "1a37981e2beeef3f508b105146f17e0db352a86184a1e08a71ecb927a4a25862"
+    },
+    {
+      "path": "archive_supplement_20261125/ARCHIVE_INDEX.json",
+      "size": 25943,
+      "sha256": "3c9559b51e85921268b82a9eab09b48f07069693bd54019b019bb7e7b24fadfe"
+    },
+    {
+      "path": "archive_supplement_20261125/AUDIT_REPORT.md",
+      "size": 6255,
+      "sha256": "26f61ff35e0c829cd700521ba18c322676bbf75c25c39912ebbabc9cc97e1f84"
+    },
+    {
+      "path": "archive_supplement_20261125/AUDIT_SUMMARY.json",
+      "size": 4230,
+      "sha256": "dc5b78548034ee0f2d8581dfdd87c71ba56c39b7bba1c642da466143b14c3b68"
+    },
+    {
+      "path": "archive_supplement_20261125/README.md",
+      "size": 613,
+      "sha256": "3deedcbe5da519a4d3785ea36734337dd9ffcfd7a3b000ee50c4fab7bdf04ce2"
+    },
+    {
+      "path": "archive_supplement_20261125/checks/FULL_RELEASE_MEMBER_RECHECK.json",
+      "size": 441,
+      "sha256": "b4af81e227dffb767c912f4c5a56b20156d47db9ccd45af1a354aa1856a79a7f"
+    },
+    {
+      "path": "archive_supplement_20261125/checks/REPOSITORY_BASELINE_RECHECK.json",
+      "size": 266,
+      "sha256": "42c1300b5ae71a026633a4cca9601d785724d7e2048374416286824b80fabe66"
+    },
+    {
+      "path": "archive_supplement_20261125/checks/dot/DOT_UPLOAD_AUDIT.md",
+      "size": 2935,
+      "sha256": "71eb90bf86419452e6f3fa92063a1706cae69f9f14aab0b45545ca62a74c76b8"
+    },
+    {
+      "path": "archive_supplement_20261125/checks/dot/NEW_DOT_109_119_AUDIT.md",
+      "size": 3251,
+      "sha256": "b872ab3d409ecd46070e72351d783f615fe47daaf65eb949bd6de943aff33307"
+    },
+    {
+      "path": "archive_supplement_20261125/checks/dot/NEW_DOT_109_119_INDEX.tsv",
+      "size": 2277,
+      "sha256": "d96ec2a47cb433a918fe0f55f6997b584aee45e61a4292ce5d8eb5d621a140f8"
+    },
+    {
+      "path": "archive_supplement_20261125/checks/dot/NEW_DOT_109_119_VERIFICATION.json",
+      "size": 65756,
+      "sha256": "462bc436fecd836049c8a7b1a23b095484b2e9685a74d01518c04da763670170"
+    },
+    {
+      "path": "archive_supplement_20261125/checks/dot/NEW_DOT_BYTES_AUDIT.json",
+      "size": 8952,
+      "sha256": "f6a94142ad6e04f41fd620f01a36e03861933f1e6eccdbd5ec6fd69e58ef444c"
+    },
+    {
+      "path": "archive_supplement_20261125/checks/dot/OLD_DOT_BYTES_AUDIT.json",
+      "size": 63498,
+      "sha256": "97d6878097db4d3e2e5671a550b7f22b9084647f2235dd786f6c62306a55b1d8"
+    },
+    {
+      "path": "archive_supplement_20261125/checks/dot/OLD_DOT_ORIGINAL_MEMBERS.json",
+      "size": 126905,
+      "sha256": "058d400a6b2715bc64f33bfc795ffbcd15594be209835c0371ed118e02545973"
+    },
+    {
+      "path": "archive_supplement_20261125/checks/dot/REMOTE_DOT_PATH_AUDIT.json",
+      "size": 798,
+      "sha256": "1550ef17ec5906d0bac766de2d74e2232eb3177212519045041a46943144f0c6"
+    },
+    {
+      "path": "archive_supplement_20261125/checks/engineering/SYNTHETIC_PRESERVATION_TESTS.json",
+      "size": 3684,
+      "sha256": "bbedc7e8fecd69154a7bd24d1a97142de3da1db36474847e57771c81c250ed88"
+    },
+    {
+      "path": "archive_supplement_20261125/checks/history/HISTORY_UPLOAD_AUDIT.md",
+      "size": 3067,
+      "sha256": "95c4ceffa43e6711167d396bfc314aaab53eae8ee105c39e1d3b0203aeab5572"
+    },
+    {
+      "path": "archive_supplement_20261125/checks/history/nested_zip_name_size_scan.json",
+      "size": 12141,
+      "sha256": "12b2525f3ce6c6157281270e9af0db8e0e7bb1023db1f801a1c7a6b561b83200"
+    },
+    {
+      "path": "archive_supplement_20261125/checks/history/recovered_history_member_comparison.json",
+      "size": 1138264,
+      "sha256": "21bb6deef84b02455ea49d4d435f4c163bb2e7fac0d21061de9cc22620294208"
+    },
+    {
+      "path": "archive_supplement_20261125/checks/history/v16_actual_435_check.json",
+      "size": 155832,
+      "sha256": "3fcd2a9c5523c5710e8d1e1c9822875b0cfabf19efb0cf5efad915b50dc729ba"
+    },
+    {
+      "path": "archive_supplement_20261125/checks/history/v16_manifest_chain_check.json",
+      "size": 265,
+      "sha256": "c0bf3799419440a587df036f0880b1b5f2ae3a4b943ef08f49c7cf44377ab41d"
+    },
+    {
+      "path": "archive_supplement_20261125/checks/history/v16_original_project_zip_check.json",
+      "size": 768,
+      "sha256": "f2ef4d603cd7fdbfe2ad0b60f0fedd2e4b14e574226c47dd87c84241494d80c5"
+    },
+    {
+      "path": "archive_supplement_20261125/checks/history/volume_history_preservation_and_limits.json",
+      "size": 6656,
+      "sha256": "66eec968285d137ca43c34c2e86685f0aa4744cd53b829d54d4da171989e522f"
+    },
+    {
+      "path": "archive_supplement_20261125/checks/resume/RESUME_DEPENDENCY_AUDIT.json",
+      "size": 36393,
+      "sha256": "38f4108b6be2597fa710158d69c2e2595a82ef23f2d96710ac2ff1d0769b3d6f"
+    },
+    {
+      "path": "archive_supplement_20261125/checks/resume/RESUME_DEPENDENCY_AUDIT.md",
+      "size": 3479,
+      "sha256": "9b90625d647c6ca599fc049b014fcc91f3efacdc8fb776501b86ea9162171d21"
+    },
+    {
+      "path": "archive_supplement_20261125/dot/EGA第五卷_Veronese变换与二阶奇点_续译工程.zip",
+      "size": 647505,
+      "sha256": "8c284469f39fa400fa8507c15a11707d7f0b22d92dc1a8590085b802a06e5415"
+    },
+    {
+      "path": "archive_supplement_20261125/dot/EGA第五卷_不可约超平面截面的判据与反例_续译工程.zip",
+      "size": 493051,
+      "sha256": "28435b1fbe1ac76a546a2dae0b4c05b32063e2765c228484a292c9743ffe04b4"
+    },
+    {
+      "path": "archive_supplement_20261125/dot/EGA第五卷_余维m线性截面与关联概形_续译工程.zip",
+      "size": 647708,
+      "sha256": "2fcfe699a2ea53370d0b6e86850a67534d44736766b9148e324884f6de9810b5"
+    },
+    {
+      "path": "archive_supplement_20261125/dot/EGA第五卷_例外集与超平面截面束_续译工程.zip",
+      "size": 668394,
+      "sha256": "ca4731ec15f46dd0e178b22f393d62b3d7a3237069795e318299af49f206596b"
+    },
+    {
+      "path": "archive_supplement_20261125/dot/EGA第五卷_可分与几何正规截面的判据_续译工程.zip",
+      "size": 598164,
+      "sha256": "d10bb991988b766ee21ed2982e58aa835919a8d1c2042e8d4683b914de0a7976"
+    },
+    {
+      "path": "archive_supplement_20261125/dot/EGA第五卷_奇异线性截面与秩退化_续译工程.zip",
+      "size": 697737,
+      "sha256": "2cd62fc5b66de3721d9a81a784f25e072d061524c2d954aee265cdbd761c4e08"
+    },
+    {
+      "path": "archive_supplement_20261125/dot/EGA第五卷_带基址线性系与投影判据_续译工程.zip",
+      "size": 724336,
+      "sha256": "33e00cdc64432a9634d47afe7f9f5f74382f72fd7aa024138cecc2891e48d369"
+    },
+    {
+      "path": "archive_supplement_20261125/dot/EGA第五卷_正规超平面截面的反例与修正_续译工程.zip",
+      "size": 569337,
+      "sha256": "1b0f18498208a63ee0fbca37a829ca085733a8012483b4009e074d1f8a1f5462"
+    },
+    {
+      "path": "archive_supplement_20261125/dot/EGA第五卷_约束截面与固定分支_续译工程.zip",
+      "size": 581131,
+      "sha256": "043157019bccf57ef5e975633d145ee5fe76201b9d1dc1c7d228bb9023189cca"
+    },
+    {
+      "path": "archive_supplement_20261125/dot/EGA第五卷_线性截面的维数条件与正则性_续译工程.zip",
+      "size": 730608,
+      "sha256": "ce99b2df3eaf0d284aaddcb1b34c0fb1356828db8d3cdd5a59b01b28bc23329a"
+    },
+    {
+      "path": "archive_supplement_20261125/dot/EGA第五卷_线性束与沿基址的吹起_续译工程.zip",
+      "size": 692820,
+      "sha256": "7b9217d836d43c9d07acbcf80414f74454cf02bbf0b5e849d9d3278c54d0cdc3"
+    },
+    {
+      "path": "archive_supplement_20261125/history/代数几何基础_中文合订本_工程.zip",
+      "size": 4431001,
+      "sha256": "9153b857a734ef063d56fa1c76d4893abb16de568a573b2062bf96047c8bb90d"
+    },
+    {
+      "path": "archive_supplement_20261125/history/代数几何基础_内容顺序合订第七版_工程.zip",
+      "size": 10634493,
+      "sha256": "8eb6e2781ccdd56700a35499bcecadc1758a08c7ece28699327b2d75ebeb367b"
+    },
+    {
+      "path": "archive_supplement_20261125/history/代数几何基础_内容顺序合订第三版_工程.zip",
+      "size": 6251457,
+      "sha256": "80c18fc7a9528de079e481c0c1827da129979e1748eb63664076e93613e21017"
+    },
+    {
+      "path": "archive_supplement_20261125/history/代数几何基础_内容顺序合订第九版_工程.zip",
+      "size": 13644051,
+      "sha256": "089aded4fae7bdfa980f8e8ef3d179ec75fa8d4b01d3892f326e7dcb3ff12bd7"
+    },
+    {
+      "path": "archive_supplement_20261125/history/代数几何基础_内容顺序合订第五版_工程.zip",
+      "size": 8589082,
+      "sha256": "86d46a1200cd546fc31123edab46fac52ee49058de5e9b88f6eabc4e72a8d73b"
+    },
+    {
+      "path": "archive_supplement_20261125/history/代数几何基础_内容顺序合订第八版_工程.zip",
+      "size": 13643517,
+      "sha256": "cb64244407075278974cd88f77feec788fda5cdfb90df74b609d9123cc7c051a"
+    },
+    {
+      "path": "archive_supplement_20261125/history/代数几何基础_内容顺序合订第六版_工程.zip",
+      "size": 15858615,
+      "sha256": "cf43c7ee8ce98fd2d48b14ff7856d2c6c7aac1829b84109d9c3b6e1493bcd181"
+    },
+    {
+      "path": "archive_supplement_20261125/history/代数几何基础_内容顺序合订第十一版_工程.zip",
+      "size": 18925001,
+      "sha256": "a59e3f5476a9054bd890a7420c971f2505536aef0eefc57b550fe8f7acf85d60"
+    },
+    {
+      "path": "archive_supplement_20261125/history/代数几何基础_内容顺序合订第十三版_工程.zip",
+      "size": 31219378,
+      "sha256": "f7af7d272c3ac84f9fe167e8be976328f51dd9b693005966f409782368e9d084"
+    },
+    {
+      "path": "archive_supplement_20261125/history/代数几何基础_内容顺序合订第十二版_工程.zip",
+      "size": 26167700,
+      "sha256": "7f56eaabcf8439c94d84a19cb90bbda7e32e74cddc513b5e0c33206b05ab9802"
+    },
+    {
+      "path": "archive_supplement_20261125/history/代数几何基础_内容顺序合订第十五版_工程.zip",
+      "size": 32934497,
+      "sha256": "d203c5555cfa302c4c2e2069f8b70b6b0a09064f4c43598d8676549a11a45023"
+    },
+    {
+      "path": "archive_supplement_20261125/history/代数几何基础_内容顺序合订第十四版_工程.zip",
+      "size": 18645622,
+      "sha256": "2e400d74783be82c8e1cc297f32f8e90c65488e0721b3fc366c5a06e0fb3587d"
+    },
+    {
+      "path": "archive_supplement_20261125/history/代数几何基础_内容顺序合订第十版_工程.zip",
+      "size": 16128796,
+      "sha256": "4e70cd955a2aa8dfa2edfbe7ce53ed5f3973dd4b1de799b8dbbc659da32b038a"
+    },
+    {
+      "path": "archive_supplement_20261125/history/代数几何基础_内容顺序合订第四版_工程.zip",
+      "size": 6548946,
+      "sha256": "01c436f19b45e7543ac620758fd36a87ba7a4041853783731eaed2858dcf3cd4"
+    },
+    {
+      "path": "archive_supplement_20261125/history/代数几何基础_续译整合第二版_工程.zip",
+      "size": 11271740,
+      "sha256": "3325c51b497f1307692c7c2184dac5e76edf5acb2c21609122eacc419b76c1d3"
     },
     {
       "path": "current/EGA_v18/AGENTS.md",
@@ -20887,6 +21140,26 @@
       "sha256": "1f6582fc88e022b93b9a635a9d0f871552605fa15f4606e4711adb6167cd183c"
     },
     {
+      "path": "snapshots/20261125-archive1/AGENTS.md",
+      "size": 2610,
+      "sha256": "eb11c34543f9d86ad91d2a01ad26aa1f16a34a3f81d9e430205ecb12a3aa6700"
+    },
+    {
+      "path": "snapshots/20261125-archive1/CONTINUE_HERE.md",
+      "size": 2818,
+      "sha256": "43de1db9c87f81a1d70de4773284bb7be4be21c26cddf8345bf659970b4aa7f2"
+    },
+    {
+      "path": "snapshots/20261125-archive1/README.md",
+      "size": 6257,
+      "sha256": "2cc2be8a0c6250c6fc920cdf2d317bf9fa2ffd2b21b374224db34f931b12ba2f"
+    },
+    {
+      "path": "snapshots/20261125-archive1/REPOSITORY_MANIFEST.json",
+      "size": 848498,
+      "sha256": "29e0e36b9aceb1513fd4ec36f3a890bbd5f99e9313f394d6183c885d1015bbe1"
+    },
+    {
       "path": "snapshots/20261125/AGENTS.md",
       "size": 2862,
       "sha256": "037ec2336c5960f6dab8058888e39d7437fca0980f51fc6a7694ef0fcf5b953e"
@@ -20907,6 +21180,11 @@
       "sha256": "3caf6fee99246cd543b3bd65e399aecd01166bfc8d097584ef396a88ee5ac48e"
     },
     {
+      "path": "tools/apply_archive1_update.py",
+      "size": 11341,
+      "sha256": "ab7ee0a14186a6d7309d8cc59b8fb254c1b038feea3f8ed084567044a9c3ad76"
+    },
+    {
       "path": "tools/apply_edition18_update.py",
       "size": 8739,
       "sha256": "b8f5d3a65bb32b097e5cc9a19f4411b5b700e690e5421334e4611aec7a19ea3f"
@@ -20920,6 +21198,11 @@
       "path": "tools/import_release_snapshot.py",
       "size": 5556,
       "sha256": "10e9bf7f0bc41b5b91df7ae53f88717e7176f6c3f0b9beed2c265e4f8527d5e0"
+    },
+    {
+      "path": "tools/package_archive1.py",
+      "size": 9016,
+      "sha256": "6d1bce2b724fe2a6df91a34dca0089123aa05ceaed77f5c2288068b7bc020952"
     },
     {
       "path": "tools/package_edition18.py",

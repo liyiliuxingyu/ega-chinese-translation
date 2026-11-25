@@ -1,0 +1,132 @@
+{
+  "commit": "4daf708a87069e2a6e28c22a29d3e3af26880f0b",
+  "preserved_standalone_and_audits": [
+    {
+      "original_path": "04_history/special_audits/EGAII_逻辑核查标注版.pdf",
+      "stored_path": "archive_20261121/04_history/content/43/43804b8920b7072e47fc865261b0ea7a63dd4b0f56a1311daf8eb52da972359f",
+      "bytes": 24929684,
+      "sha256": "43804b8920b7072e47fc865261b0ea7a63dd4b0f56a1311daf8eb52da972359f",
+      "verified": true
+    },
+    {
+      "original_path": "04_history/special_audits/EGAI_第一轮校订报告_V2.pdf",
+      "stored_path": "archive_20261121/04_history/content/c6/c65bd129d143d48d600280eeae3c028127a6ac11233d3ef59551f81ee71749ff",
+      "bytes": 339205,
+      "sha256": "c65bd129d143d48d600280eeae3c028127a6ac11233d3ef59551f81ee71749ff",
+      "verified": true
+    },
+    {
+      "original_path": "04_history/special_audits/EGAI_逻辑核查标注版.pdf",
+      "stored_path": "archive_20261121/04_history/content/c7/c7920b04a8494ca8fc2d4ace2949b9858d628d8258183cbb1c4b60a7c18ac4bb",
+      "bytes": 28883472,
+      "sha256": "c7920b04a8494ca8fc2d4ace2949b9858d628d8258183cbb1c4b60a7c18ac4bb",
+      "verified": true
+    },
+    {
+      "original_path": "04_history/special_audits/EGA_I_II_逻辑核查_资料包.zip",
+      "stored_path": "archive_20261121/04_history/content/e1/e141123398dee31b5764f8432d3a3abd76e21a6eb0668d0f758131b6f92698f6",
+      "bytes": 470612,
+      "sha256": "e141123398dee31b5764f8432d3a3abd76e21a6eb0668d0f758131b6f92698f6",
+      "verified": true
+    },
+    {
+      "original_path": "04_history/special_audits/EGA_I_II_逻辑核查报告.pdf",
+      "stored_path": "archive_20261121/04_history/content/43/430219a8c4d6ba5682e032e8b817feacbdba62029f4e32fda958d2e14190eb8e",
+      "bytes": 436607,
+      "sha256": "430219a8c4d6ba5682e032e8b817feacbdba62029f4e32fda958d2e14190eb8e",
+      "verified": true
+    },
+    {
+      "original_path": "04_history/special_audits/EGA_I_II_逻辑核查报告.tex",
+      "stored_path": "archive_20261121/04_history/content/2c/2c2731b62473b634c8d81ddf8fe9f6583c985bfbd80a81687ff9bf694ff8d813",
+      "bytes": 34031,
+      "sha256": "2c2731b62473b634c8d81ddf8fe9f6583c985bfbd80a81687ff9bf694ff8d813",
+      "verified": true
+    },
+    {
+      "original_path": "04_history/standalone_projects/EGAIII_第一部分_中文全译稿_工程.zip",
+      "stored_path": "archive_20261121/04_history/content/d0/d0e5deca4d8560f1860894ed871617f23aa680a8603dd1f4e781ada3181e0ee9",
+      "bytes": 1418187,
+      "sha256": "d0e5deca4d8560f1860894ed871617f23aa680a8603dd1f4e781ada3181e0ee9",
+      "verified": true
+    },
+    {
+      "original_path": "04_history/standalone_projects/EGAII_独立译稿/main.pdf",
+      "stored_path": "archive_20261121/04_history/content/b4/b4ece0c4694d47efff73345b1b7c737be9d2faec76b18ac94d9b9f959e40e5b0",
+      "bytes": 1346209,
+      "sha256": "b4ece0c4694d47efff73345b1b7c737be9d2faec76b18ac94d9b9f959e40e5b0",
+      "verified": true
+    },
+    {
+      "original_path": "04_history/standalone_projects/EGAII_独立译稿/single.tex",
+      "stored_path": "archive_20261121/04_history/content/68/68c8662b1c2d94a335eeb160ccfb1e76153ce14f025d8cd7e3a55e3a0624b55b",
+      "bytes": 554317,
+      "sha256": "68c8662b1c2d94a335eeb160ccfb1e76153ce14f025d8cd7e3a55e3a0624b55b",
+      "verified": true
+    },
+    {
+      "original_path": "04_history/standalone_projects/EGAI_中文全译稿_V2_工程.zip",
+      "stored_path": "archive_20261121/04_history/content/95/95be69ceb7b786443df3e9415156cf8aa3ebd89d82b6dd76e8545125b186d447",
+      "bytes": 2520924,
+      "sha256": "95be69ceb7b786443df3e9415156cf8aa3ebd89d82b6dd76e8545125b186d447",
+      "verified": true
+    },
+    {
+      "original_path": "04_history/standalone_projects/EGA_新增文稿_译校工程_第一批.zip",
+      "stored_path": "archive_20261121/04_history/content/6c/6c3c1b2f5bd0a3c98efbf8b215aae3dc7e0383209f949d8f4e3577008b19f36c",
+      "bytes": 2163814,
+      "sha256": "6c3c1b2f5bd0a3c98efbf8b215aae3dc7e0383209f949d8f4e3577008b19f36c",
+      "verified": true
+    }
+  ],
+  "unrecoverable_original_early_engineering_archives": [
+    {
+      "file_name": "EGAI_中文译稿_第1分册_工程.zip",
+      "recovery_result": "content_missing",
+      "retryable": false,
+      "interpretation": "Original historical ZIP bytes are unavailable via retained attachment identifiers; do not assert original container recovered."
+    },
+    {
+      "file_name": "EGAI_中文译稿_第2分册_工程.zip",
+      "recovery_result": "content_missing",
+      "retryable": false,
+      "interpretation": "Original historical ZIP bytes are unavailable via retained attachment identifiers; do not assert original container recovered."
+    },
+    {
+      "file_name": "EGAI_中文译稿_第3分册_工程.zip",
+      "recovery_result": "content_missing",
+      "retryable": false,
+      "interpretation": "Original historical ZIP bytes are unavailable via retained attachment identifiers; do not assert original container recovered."
+    },
+    {
+      "file_name": "EGAI_中文译稿_第4分册_工程.zip",
+      "recovery_result": "content_missing",
+      "retryable": false,
+      "interpretation": "Original historical ZIP bytes are unavailable via retained attachment identifiers; do not assert original container recovered."
+    },
+    {
+      "file_name": "EGAI_中文全译稿_工程.zip",
+      "recovery_result": "content_missing",
+      "retryable": false,
+      "interpretation": "Original historical ZIP bytes are unavailable via retained attachment identifiers; do not assert original container recovered."
+    },
+    {
+      "file_name": "EGAII_中文译稿_第1分册_工程.zip",
+      "recovery_result": "content_missing",
+      "retryable": false,
+      "interpretation": "Original historical ZIP bytes are unavailable via retained attachment identifiers; do not assert original container recovered."
+    },
+    {
+      "file_name": "EGAII_中文全译稿_工程.zip",
+      "recovery_result": "content_missing",
+      "retryable": false,
+      "interpretation": "Original historical ZIP bytes are unavailable via retained attachment identifiers; do not assert original container recovered."
+    }
+  ],
+  "limitations": [
+    "This is preservation checking, not a mathematical audit.",
+    "No statement of whole EGA translation completion.",
+    "Initial standalone EGA II main.pdf/single.tex are preserved through the historical restoration map; this does not prove equal bytes to the unavailable full-translation ZIP.",
+    "EGA I V2 and EGA III part 1 original ZIPs are preserved; earlier EGA I partial ZIPs are not proven reconstructed from them."
+  ]
+}

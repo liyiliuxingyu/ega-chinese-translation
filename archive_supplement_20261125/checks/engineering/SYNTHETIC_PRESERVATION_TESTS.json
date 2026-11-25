@@ -1,0 +1,62 @@
+{
+  "pass": true,
+  "scope": "Actual isolated synthetic overlay and preservation tests against the full fixed base; not verification of the final real historical/Dot payload overlay.",
+  "base_commit": "4daf708a87069e2a6e28c22a29d3e3af26880f0b",
+  "fixture_path": "/workspace/scratch/a886fd56dd2f/ega-upload-audit/engineering/dry_fixture",
+  "source_checkout_modified": false,
+  "tests": {
+    "valid_overlay_verify_only": {
+      "exit_code": 0,
+      "stdout": "{\n  \"ok\": true,\n  \"mode\": \"verify-only\",\n  \"base_commit\": \"4daf708a87069e2a6e28c22a29d3e3af26880f0b\",\n  \"overlay_sha256\": \"747ec61b2cd94854816bb50b4f9557ea7b34fe9d948c40fdad21444e2a4df6f9\",\n  \"overlay_files\": 13,\n  \"overlay_uncompressed_bytes\": 1742662,\n  \"repository_payloads_verified\": 4193,\n  \"old_tracked_files_protected\": 4191,\n  \"current_translation_unchanged\": true\n}\n",
+      "stderr": ""
+    },
+    "verify_only_left_checkout_clean": {
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    "reject_omitted_old_manuscript": {
+      "exit_code": 1,
+      "stdout": "",
+      "stderr": "New manifest paths differ from the exact preserved-plus-added tree\n"
+    },
+    "reject_changed_old_manuscript": {
+      "exit_code": 1,
+      "stdout": "",
+      "stderr": "Old payload record would change: current/EGA_v19/main.tex\n"
+    },
+    "reject_wrong_root_snapshot": {
+      "exit_code": 1,
+      "stdout": "",
+      "stderr": "Snapshot is not the exact previous root file: README.md\n"
+    },
+    "reject_unsafe_path": {
+      "exit_code": 1,
+      "stdout": "",
+      "stderr": "Unexpected or unsafe overlay member: '../escape.txt'\n"
+    },
+    "apply_to_isolated_fixture": {
+      "exit_code": 0,
+      "stdout": "{\n  \"ok\": true,\n  \"mode\": \"apply\",\n  \"base_commit\": \"4daf708a87069e2a6e28c22a29d3e3af26880f0b\",\n  \"overlay_sha256\": \"747ec61b2cd94854816bb50b4f9557ea7b34fe9d948c40fdad21444e2a4df6f9\",\n  \"overlay_files\": 13,\n  \"overlay_uncompressed_bytes\": 1742662,\n  \"repository_payloads_verified\": 4193,\n  \"old_tracked_files_protected\": 4191,\n  \"current_translation_unchanged\": true,\n  \"release_tag\": \"v19-archive1-20261125\",\n  \"translation_edition\": 19,\n  \"applied_at_utc\": \"2026-11-25T14:13:38.140268+00:00\",\n  \"scope\": \"Archive-only historical and Dot supplement; current/EGA_v19 unchanged; no new translation claimed\"\n}\n",
+      "stderr": ""
+    },
+    "already_applied_verify_only": {
+      "exit_code": 0,
+      "stdout": "{\n  \"ok\": true,\n  \"mode\": \"verify-only\",\n  \"base_commit\": \"4daf708a87069e2a6e28c22a29d3e3af26880f0b\",\n  \"overlay_sha256\": \"747ec61b2cd94854816bb50b4f9557ea7b34fe9d948c40fdad21444e2a4df6f9\",\n  \"overlay_files\": 13,\n  \"overlay_uncompressed_bytes\": 1742662,\n  \"repository_payloads_verified\": 4193,\n  \"old_tracked_files_protected\": 4191,\n  \"current_translation_unchanged\": true\n}\n",
+      "stderr": ""
+    },
+    "packager_full_input_verify_only": {
+      "exit_code": 0,
+      "stdout": "{\n  \"pass\": true,\n  \"base_commit\": \"4daf708a87069e2a6e28c22a29d3e3af26880f0b\",\n  \"publication_commit\": \"232d530258c77bb322e1643756c357d02c676a7d\",\n  \"translation_edition\": 19,\n  \"current_project_unchanged\": true,\n  \"repository_payloads_verified\": 4193,\n  \"full_archive_members\": 4202,\n  \"supplement_archive_members\": 3\n}\n",
+      "stderr": ""
+    },
+    "zip_pack_and_reread": {
+      "file": "dry-supplement-export.zip",
+      "size": 745,
+      "sha256": "c8d2bf770fb42fb222523cd6b45a1c06a8e0e14736bfc242eaeedcbd3bc9560a",
+      "members": 3,
+      "uncompressed_bytes": 139,
+      "all_member_hashes_verified": true
+    }
+  }
+}

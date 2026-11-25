@@ -1,0 +1,1815 @@
+{
+  "pass": true,
+  "created_at_utc": "2026-11-25T14:02:54.998157+00:00",
+  "commit": "4daf708a87069e2a6e28c22a29d3e3af26880f0b",
+  "scope": "Read-only verification of published continuation inputs, documentation, dependencies and evidence; no new TeX compilation or mathematical audit.",
+  "entrypoints": {
+    "expected": 4,
+    "present": 4,
+    "missing": []
+  },
+  "current_documents": {
+    "expected": 7,
+    "present": 7,
+    "missing": []
+  },
+  "build_tools": {
+    "expected": 7,
+    "present": 7,
+    "missing": []
+  },
+  "history_restore_tools": {
+    "expected": 4,
+    "present": 4,
+    "missing": []
+  },
+  "input_graphs": {
+    "main.tex": {
+      "pass": true,
+      "input_count_including_driver": 143,
+      "single": "single.tex",
+      "duplicates": {},
+      "residual_external_inputs": [],
+      "matches_flattening": true
+    },
+    "report.tex": {
+      "pass": true,
+      "input_count_including_driver": 35,
+      "single": "report_single.tex",
+      "duplicates": {},
+      "residual_external_inputs": [],
+      "matches_flattening": true
+    }
+  },
+  "source_records": 177,
+  "source_file_checks": [
+    {
+      "path": "backmatter/additional_sources.tex",
+      "pass": true
+    },
+    {
+      "path": "backmatter/bibliography_IV_1.tex",
+      "pass": true
+    },
+    {
+      "path": "backmatter/errata_III_2.tex",
+      "pass": true
+    },
+    {
+      "path": "backmatter/errata_IV_selected.tex",
+      "pass": true
+    },
+    {
+      "path": "backmatter/old_note_I.tex",
+      "pass": true
+    },
+    {
+      "path": "backmatter/old_note_II.tex",
+      "pass": true
+    },
+    {
+      "path": "backmatter/old_note_III_1.tex",
+      "pass": true
+    },
+    {
+      "path": "backmatter/volume_I.tex",
+      "pass": true
+    },
+    {
+      "path": "backmatter/volume_II.tex",
+      "pass": true
+    },
+    {
+      "path": "backmatter/volume_III_1.tex",
+      "pass": true
+    },
+    {
+      "path": "backmatter/volume_III_2.tex",
+      "pass": true
+    },
+    {
+      "path": "continuations/iii2_610.tex",
+      "pass": true
+    },
+    {
+      "path": "continuations/iii2_67.tex",
+      "pass": true
+    },
+    {
+      "path": "continuations/iii2_68.tex",
+      "pass": true
+    },
+    {
+      "path": "continuations/iii2_69.tex",
+      "pass": true
+    },
+    {
+      "path": "continuations/iii2_71_72.tex",
+      "pass": true
+    },
+    {
+      "path": "continuations/iii2_73.tex",
+      "pass": true
+    },
+    {
+      "path": "continuations/iii2_74.tex",
+      "pass": true
+    },
+    {
+      "path": "continuations/iii2_75_76.tex",
+      "pass": true
+    },
+    {
+      "path": "continuations/iii2_77.tex",
+      "pass": true
+    },
+    {
+      "path": "continuations/iii2_78_79.tex",
+      "pass": true
+    },
+    {
+      "path": "continuations/iv0_16_12.tex",
+      "pass": true
+    },
+    {
+      "path": "continuations/iv0_16_3.tex",
+      "pass": true
+    },
+    {
+      "path": "continuations/iv0_16_45.tex",
+      "pass": true
+    },
+    {
+      "path": "continuations/iv0_17_1.tex",
+      "pass": true
+    },
+    {
+      "path": "continuations/iv0_17_2.tex",
+      "pass": true
+    },
+    {
+      "path": "continuations/iv0_17_3.tex",
+      "pass": true
+    },
+    {
+      "path": "continuations/iv0_18_1.tex",
+      "pass": true
+    },
+    {
+      "path": "continuations/iv0_18_2.tex",
+      "pass": true
+    },
+    {
+      "path": "continuations/iv0_18_3.tex",
+      "pass": true
+    },
+    {
+      "path": "continuations/iv0_18_4.tex",
+      "pass": true
+    },
+    {
+      "path": "continuations/iv0_18_5.tex",
+      "pass": true
+    },
+    {
+      "path": "continuations/iv0_19_01.tex",
+      "pass": true
+    },
+    {
+      "path": "continuations/iv0_19_23.tex",
+      "pass": true
+    },
+    {
+      "path": "continuations/iv0_19_4.tex",
+      "pass": true
+    },
+    {
+      "path": "continuations/iv0_19_5a.tex",
+      "pass": true
+    },
+    {
+      "path": "continuations/iv0_19_5b.tex",
+      "pass": true
+    },
+    {
+      "path": "continuations/iv0_19_6.tex",
+      "pass": true
+    },
+    {
+      "path": "continuations/iv0_19_7.tex",
+      "pass": true
+    },
+    {
+      "path": "continuations/iv0_19_8.tex",
+      "pass": true
+    },
+    {
+      "path": "continuations/iv0_19_9_10.tex",
+      "pass": true
+    },
+    {
+      "path": "continuations/iv0_20_12.tex",
+      "pass": true
+    },
+    {
+      "path": "continuations/iv0_20_3.tex",
+      "pass": true
+    },
+    {
+      "path": "continuations/iv0_20_4.tex",
+      "pass": true
+    },
+    {
+      "path": "continuations/iv0_20_5.tex",
+      "pass": true
+    },
+    {
+      "path": "continuations/iv0_20_6a.tex",
+      "pass": true
+    },
+    {
+      "path": "continuations/iv0_20_6b.tex",
+      "pass": true
+    },
+    {
+      "path": "continuations/iv0_20_7a.tex",
+      "pass": true
+    },
+    {
+      "path": "continuations/iv0_20_7b.tex",
+      "pass": true
+    },
+    {
+      "path": "continuations/iv0_21_1.tex",
+      "pass": true
+    },
+    {
+      "path": "continuations/iv0_21_2.tex",
+      "pass": true
+    },
+    {
+      "path": "continuations/iv0_21_3.tex",
+      "pass": true
+    },
+    {
+      "path": "continuations/iv0_21_4.tex",
+      "pass": true
+    },
+    {
+      "path": "continuations/iv0_21_5.tex",
+      "pass": true
+    },
+    {
+      "path": "continuations/iv0_21_6.tex",
+      "pass": true
+    },
+    {
+      "path": "continuations/iv0_21_7.tex",
+      "pass": true
+    },
+    {
+      "path": "continuations/iv0_21_8.tex",
+      "pass": true
+    },
+    {
+      "path": "continuations/iv0_21_9a.tex",
+      "pass": true
+    },
+    {
+      "path": "continuations/iv0_21_9b.tex",
+      "pass": true
+    },
+    {
+      "path": "continuations/iv0_21_9c.tex",
+      "pass": true
+    },
+    {
+      "path": "continuations/iv0_22_1.tex",
+      "pass": true
+    },
+    {
+      "path": "continuations/iv0_22_2a.tex",
+      "pass": true
+    },
+    {
+      "path": "continuations/iv0_22_2b.tex",
+      "pass": true
+    },
+    {
+      "path": "continuations/iv0_22_3.tex",
+      "pass": true
+    },
+    {
+      "path": "continuations/iv0_22_4a.tex",
+      "pass": true
+    },
+    {
+      "path": "continuations/iv0_22_4b.tex",
+      "pass": true
+    },
+    {
+      "path": "continuations/iv0_22_5a.tex",
+      "pass": true
+    },
+    {
+      "path": "continuations/iv0_22_5b.tex",
+      "pass": true
+    },
+    {
+      "path": "continuations/iv0_22_6.tex",
+      "pass": true
+    },
+    {
+      "path": "continuations/iv0_22_7.tex",
+      "pass": true
+    },
+    {
+      "path": "continuations/iv0_23_1.tex",
+      "pass": true
+    },
+    {
+      "path": "continuations/iv0_23_2.tex",
+      "pass": true
+    },
+    {
+      "path": "continuations/v18_batch069.tex",
+      "pass": true
+    },
+    {
+      "path": "continuations/v18_batch070.tex",
+      "pass": true
+    },
+    {
+      "path": "continuations/v18_batch071.tex",
+      "pass": true
+    },
+    {
+      "path": "continuations/v18_batch072.tex",
+      "pass": true
+    },
+    {
+      "path": "continuations/v18_batch073.tex",
+      "pass": true
+    },
+    {
+      "path": "continuations/v18_batch074.tex",
+      "pass": true
+    },
+    {
+      "path": "continuations/v18_batch075.tex",
+      "pass": true
+    },
+    {
+      "path": "continuations/v18_batch076.tex",
+      "pass": true
+    },
+    {
+      "path": "continuations/v18_batch077.tex",
+      "pass": true
+    },
+    {
+      "path": "continuations/v18_batch078.tex",
+      "pass": true
+    },
+    {
+      "path": "continuations/v18_batch079.tex",
+      "pass": true
+    },
+    {
+      "path": "continuations/v18_batch080.tex",
+      "pass": true
+    },
+    {
+      "path": "continuations/v18_batch081.tex",
+      "pass": true
+    },
+    {
+      "path": "continuations/v18_batch082.tex",
+      "pass": true
+    },
+    {
+      "path": "continuations/v18_batch083.tex",
+      "pass": true
+    },
+    {
+      "path": "continuations/v18_batch084.tex",
+      "pass": true
+    },
+    {
+      "path": "continuations/v18_batch085.tex",
+      "pass": true
+    },
+    {
+      "path": "continuations/v18_batch086.tex",
+      "pass": true
+    },
+    {
+      "path": "continuations/v18_batch087.tex",
+      "pass": true
+    },
+    {
+      "path": "continuations/v18_batch088.tex",
+      "pass": true
+    },
+    {
+      "path": "continuations/v18_batch089.tex",
+      "pass": true
+    },
+    {
+      "path": "continuations/v18_batch090.tex",
+      "pass": true
+    },
+    {
+      "path": "continuations/v18_batch091.tex",
+      "pass": true
+    },
+    {
+      "path": "continuations/v18_batch092.tex",
+      "pass": true
+    },
+    {
+      "path": "continuations/v18_batch093.tex",
+      "pass": true
+    },
+    {
+      "path": "continuations/v18_batch094.tex",
+      "pass": true
+    },
+    {
+      "path": "continuations/v18_batch095.tex",
+      "pass": true
+    },
+    {
+      "path": "continuations/v18_batch096.tex",
+      "pass": true
+    },
+    {
+      "path": "continuations/v18_batch097.tex",
+      "pass": true
+    },
+    {
+      "path": "continuations/v18_batch098.tex",
+      "pass": true
+    },
+    {
+      "path": "continuations/v18_batch099.tex",
+      "pass": true
+    },
+    {
+      "path": "continuations/v18_batch100.tex",
+      "pass": true
+    },
+    {
+      "path": "continuations/v18_batch101.tex",
+      "pass": true
+    },
+    {
+      "path": "continuations/v18_batch102.tex",
+      "pass": true
+    },
+    {
+      "path": "continuations/v18_batch103.tex",
+      "pass": true
+    },
+    {
+      "path": "continuations/v18_batch104.tex",
+      "pass": true
+    },
+    {
+      "path": "continuations/v18_batch105.tex",
+      "pass": true
+    },
+    {
+      "path": "continuations/v18_batch106.tex",
+      "pass": true
+    },
+    {
+      "path": "continuations/v18_batch107.tex",
+      "pass": true
+    },
+    {
+      "path": "continuations/v18_batch108.tex",
+      "pass": true
+    },
+    {
+      "path": "continuations/v18_deleted_addenda.tex",
+      "pass": true
+    },
+    {
+      "path": "continuations/v18_first_preface.tex",
+      "pass": true
+    },
+    {
+      "path": "continuations/v19_8_14_18.tex",
+      "pass": true
+    },
+    {
+      "path": "continuations/v19_8_end.tex",
+      "pass": true
+    },
+    {
+      "path": "continuations/v19_section10.tex",
+      "pass": true
+    },
+    {
+      "path": "continuations/v19_section11.tex",
+      "pass": true
+    },
+    {
+      "path": "continuations/v19_section9.tex",
+      "pass": true
+    },
+    {
+      "path": "continuations/v_dot_late.tex",
+      "pass": true
+    },
+    {
+      "path": "continuations/v_dot_middle.tex",
+      "pass": true
+    },
+    {
+      "path": "continuations/v_suppIII_63.tex",
+      "pass": true
+    },
+    {
+      "path": "continuations/v_suppIII_64.tex",
+      "pass": true
+    },
+    {
+      "path": "continuations/v_suppIII_65.tex",
+      "pass": true
+    },
+    {
+      "path": "continuations/v_suppIII_66.tex",
+      "pass": true
+    },
+    {
+      "path": "continuations/v_suppIII_67.tex",
+      "pass": true
+    },
+    {
+      "path": "continuations/v_suppIII_68.tex",
+      "pass": true
+    },
+    {
+      "path": "frontmatter.tex",
+      "pass": true
+    },
+    {
+      "path": "main.tex",
+      "pass": true
+    },
+    {
+      "path": "preamble.tex",
+      "pass": true
+    },
+    {
+      "path": "report.tex",
+      "pass": true
+    },
+    {
+      "path": "reports/audit_section11.tex",
+      "pass": true
+    },
+    {
+      "path": "reports/batch1_audit.tex",
+      "pass": true
+    },
+    {
+      "path": "reports/current_audit.tex",
+      "pass": true
+    },
+    {
+      "path": "reports/dot_early_audit.tex",
+      "pass": true
+    },
+    {
+      "path": "reports/dot_late_audit.tex",
+      "pass": true
+    },
+    {
+      "path": "reports/dot_middle_audit.tex",
+      "pass": true
+    },
+    {
+      "path": "reports/eighth_audit.tex",
+      "pass": true
+    },
+    {
+      "path": "reports/eleventh_audit.tex",
+      "pass": true
+    },
+    {
+      "path": "reports/fifteenth_audit.tex",
+      "pass": true
+    },
+    {
+      "path": "reports/fifth_audit.tex",
+      "pass": true
+    },
+    {
+      "path": "reports/fourteenth_audit.tex",
+      "pass": true
+    },
+    {
+      "path": "reports/fourth_audit.tex",
+      "pass": true
+    },
+    {
+      "path": "reports/legacy_I_II.tex",
+      "pass": true
+    },
+    {
+      "path": "reports/ninth_audit.tex",
+      "pass": true
+    },
+    {
+      "path": "reports/seventeenth_integration.tex",
+      "pass": true
+    },
+    {
+      "path": "reports/seventh_audit.tex",
+      "pass": true
+    },
+    {
+      "path": "reports/short_collation_audit.tex",
+      "pass": true
+    },
+    {
+      "path": "reports/sixteenth_audit.tex",
+      "pass": true
+    },
+    {
+      "path": "reports/sixth_audit.tex",
+      "pass": true
+    },
+    {
+      "path": "reports/supplement_III_audit.tex",
+      "pass": true
+    },
+    {
+      "path": "reports/tenth_audit.tex",
+      "pass": true
+    },
+    {
+      "path": "reports/third_order_audit.tex",
+      "pass": true
+    },
+    {
+      "path": "reports/thirteenth_audit.tex",
+      "pass": true
+    },
+    {
+      "path": "reports/twelfth_audit.tex",
+      "pass": true
+    },
+    {
+      "path": "reports/v18_early_notes.tex",
+      "pass": true
+    },
+    {
+      "path": "reports/v18_integration_audit.tex",
+      "pass": true
+    },
+    {
+      "path": "reports/v18_late_notes.tex",
+      "pass": true
+    },
+    {
+      "path": "reports/v18_middle_notes.tex",
+      "pass": true
+    },
+    {
+      "path": "reports/v19_8_14_18_audit.tex",
+      "pass": true
+    },
+    {
+      "path": "reports/v19_8_end_audit.tex",
+      "pass": true
+    },
+    {
+      "path": "reports/v19_integration_audit.tex",
+      "pass": true
+    },
+    {
+      "path": "reports/v19_sections9_10_audit.tex",
+      "pass": true
+    },
+    {
+      "path": "reports/withdrawn_19312_history.tex",
+      "pass": true
+    },
+    {
+      "path": "text/ch0_01_07.tex",
+      "pass": true
+    },
+    {
+      "path": "text/ch0_08_13.tex",
+      "pass": true
+    },
+    {
+      "path": "text/ch0_14_15a.tex",
+      "pass": true
+    },
+    {
+      "path": "text/ch0_15b.tex",
+      "pass": true
+    },
+    {
+      "path": "text/ch1.tex",
+      "pass": true
+    },
+    {
+      "path": "text/ch2.tex",
+      "pass": true
+    },
+    {
+      "path": "text/ch3_01_05.tex",
+      "pass": true
+    },
+    {
+      "path": "text/ch3_06a.tex",
+      "pass": true
+    },
+    {
+      "path": "text/ch3_06b.tex",
+      "pass": true
+    },
+    {
+      "path": "text/ch3_06c.tex",
+      "pass": true
+    },
+    {
+      "path": "text/introduction.tex",
+      "pass": true
+    },
+    {
+      "path": "text/remaining.tex",
+      "pass": true
+    },
+    {
+      "path": "text/v1_2.tex",
+      "pass": true
+    }
+  ],
+  "source_graph_matches_manifest": true,
+  "artifacts": [
+    {
+      "path": "main.pdf",
+      "pass": true
+    },
+    {
+      "path": "single.tex",
+      "pass": true
+    },
+    {
+      "path": "report.pdf",
+      "pass": true
+    },
+    {
+      "path": "report_single.tex",
+      "pass": true
+    },
+    {
+      "path": "main.tex",
+      "pass": true
+    },
+    {
+      "path": "report.tex",
+      "pass": true
+    },
+    {
+      "path": "preamble.tex",
+      "pass": true
+    },
+    {
+      "path": "frontmatter.tex",
+      "pass": true
+    },
+    {
+      "path": "single_build/book_single.pdf",
+      "pass": true
+    },
+    {
+      "path": "single_build/audit_single.pdf",
+      "pass": true
+    }
+  ],
+  "bound_check_records": [
+    {
+      "path": "checks/current_structure_verification.json",
+      "pass": true
+    },
+    {
+      "path": "checks/current_build_log_summary.json",
+      "pass": true
+    },
+    {
+      "path": "checks/current_pdf_parity.json",
+      "pass": true
+    },
+    {
+      "path": "checks/visual_verification_summary.json",
+      "pass": true
+    }
+  ],
+  "final_visual_evidence_files": [
+    {
+      "path": "checks/v19_visual_final/main_0001.png",
+      "pass": true
+    },
+    {
+      "path": "checks/v19_visual_final/main_0003.png",
+      "pass": true
+    },
+    {
+      "path": "checks/v19_visual_final/main_0005.png",
+      "pass": true
+    },
+    {
+      "path": "checks/v19_visual_final/main_0007.png",
+      "pass": true
+    },
+    {
+      "path": "checks/v19_visual_final/main_1031.png",
+      "pass": true
+    },
+    {
+      "path": "checks/v19_visual_final/main_1032.png",
+      "pass": true
+    },
+    {
+      "path": "checks/v19_visual_final/main_1033.png",
+      "pass": true
+    },
+    {
+      "path": "checks/v19_visual_final/main_1034.png",
+      "pass": true
+    },
+    {
+      "path": "checks/v19_visual_final/main_1035.png",
+      "pass": true
+    },
+    {
+      "path": "checks/v19_visual_final/main_1036.png",
+      "pass": true
+    },
+    {
+      "path": "checks/v19_visual_final/main_1037.png",
+      "pass": true
+    },
+    {
+      "path": "checks/v19_visual_final/main_1038.png",
+      "pass": true
+    },
+    {
+      "path": "checks/v19_visual_final/main_1039.png",
+      "pass": true
+    },
+    {
+      "path": "checks/v19_visual_final/main_1040.png",
+      "pass": true
+    },
+    {
+      "path": "checks/v19_visual_final/main_1041.png",
+      "pass": true
+    },
+    {
+      "path": "checks/v19_visual_final/main_1042.png",
+      "pass": true
+    },
+    {
+      "path": "checks/v19_visual_final/main_1043.png",
+      "pass": true
+    },
+    {
+      "path": "checks/v19_visual_final/main_1044.png",
+      "pass": true
+    },
+    {
+      "path": "checks/v19_visual_final/main_1045.png",
+      "pass": true
+    },
+    {
+      "path": "checks/v19_visual_final/main_1046.png",
+      "pass": true
+    },
+    {
+      "path": "checks/v19_visual_final/main_1047.png",
+      "pass": true
+    },
+    {
+      "path": "checks/v19_visual_final/main_1048.png",
+      "pass": true
+    },
+    {
+      "path": "checks/v19_visual_final/main_1049.png",
+      "pass": true
+    },
+    {
+      "path": "checks/v19_visual_final/main_1050.png",
+      "pass": true
+    },
+    {
+      "path": "checks/v19_visual_final/main_1051.png",
+      "pass": true
+    },
+    {
+      "path": "checks/v19_visual_final/main_1052.png",
+      "pass": true
+    },
+    {
+      "path": "checks/v19_visual_final/main_1053.png",
+      "pass": true
+    },
+    {
+      "path": "checks/v19_visual_final/main_1054.png",
+      "pass": true
+    },
+    {
+      "path": "checks/v19_visual_final/report_0001.png",
+      "pass": true
+    },
+    {
+      "path": "checks/v19_visual_final/report_0003.png",
+      "pass": true
+    },
+    {
+      "path": "checks/v19_visual_final/report_0005.png",
+      "pass": true
+    },
+    {
+      "path": "checks/v19_visual_final/report_0019.png",
+      "pass": true
+    },
+    {
+      "path": "checks/v19_visual_final/report_0020.png",
+      "pass": true
+    },
+    {
+      "path": "checks/v19_visual_final/report_0021.png",
+      "pass": true
+    },
+    {
+      "path": "checks/v19_visual_final/report_0022.png",
+      "pass": true
+    },
+    {
+      "path": "checks/v19_visual_final/report_0023.png",
+      "pass": true
+    },
+    {
+      "path": "checks/v19_visual_final/report_0024.png",
+      "pass": true
+    },
+    {
+      "path": "checks/v19_visual_final/report_0025.png",
+      "pass": true
+    },
+    {
+      "path": "checks/v19_visual_final/report_0026.png",
+      "pass": true
+    },
+    {
+      "path": "checks/v19_visual_final/report_0027.png",
+      "pass": true
+    },
+    {
+      "path": "checks/v19_visual_final/report_0028.png",
+      "pass": true
+    },
+    {
+      "path": "checks/v19_visual_final/report_0029.png",
+      "pass": true
+    },
+    {
+      "path": "checks/v19_visual_final/report_0030.png",
+      "pass": true
+    },
+    {
+      "path": "checks/v19_visual_final/report_0031.png",
+      "pass": true
+    },
+    {
+      "path": "checks/v19_visual_final/report_0032.png",
+      "pass": true
+    },
+    {
+      "path": "checks/v19_visual_final/report_0033.png",
+      "pass": true
+    },
+    {
+      "path": "checks/v19_visual_final/report_0034.png",
+      "pass": true
+    },
+    {
+      "path": "checks/v19_visual_final/report_0035.png",
+      "pass": true
+    },
+    {
+      "path": "checks/v19_visual_final/report_0036.png",
+      "pass": true
+    },
+    {
+      "path": "checks/v19_visual_final/report_0037.png",
+      "pass": true
+    },
+    {
+      "path": "checks/v19_visual_final/report_0038.png",
+      "pass": true
+    },
+    {
+      "path": "checks/v19_visual_final/report_0039.png",
+      "pass": true
+    },
+    {
+      "path": "checks/v19_visual_final/report_0040.png",
+      "pass": true
+    },
+    {
+      "path": "checks/v19_visual_final/report_0041.png",
+      "pass": true
+    },
+    {
+      "path": "checks/v19_visual_final/report_0042.png",
+      "pass": true
+    },
+    {
+      "path": "checks/v19_visual_final/report_0043.png",
+      "pass": true
+    },
+    {
+      "path": "checks/v19_visual_final/report_0044.png",
+      "pass": true
+    },
+    {
+      "path": "checks/v19_visual_final/report_0045.png",
+      "pass": true
+    },
+    {
+      "path": "checks/v19_visual_final/report_0046.png",
+      "pass": true
+    },
+    {
+      "path": "checks/v19_visual_final/report_0047.png",
+      "pass": true
+    },
+    {
+      "path": "checks/v19_visual_final/report_0048.png",
+      "pass": true
+    },
+    {
+      "path": "checks/v19_visual_final/report_0049.png",
+      "pass": true
+    }
+  ],
+  "final_log_evidence_files": [
+    {
+      "original": "main.log",
+      "preserved": "checks/current_build_logs/main.log",
+      "pass": true
+    },
+    {
+      "original": "report.log",
+      "preserved": "checks/current_build_logs/report.log",
+      "pass": true
+    },
+    {
+      "original": "single_build/book_single.log",
+      "preserved": "checks/current_build_logs/book_single.log",
+      "pass": true
+    },
+    {
+      "original": "single_build/audit_single.log",
+      "preserved": "checks/current_build_logs/audit_single.log",
+      "pass": true
+    }
+  ],
+  "inherited_tex_files": [
+    {
+      "path": "text/ch0_01_07.tex",
+      "pass": true
+    },
+    {
+      "path": "text/ch0_08_13.tex",
+      "pass": true
+    },
+    {
+      "path": "text/ch0_14_15a.tex",
+      "pass": true
+    },
+    {
+      "path": "text/ch0_15b.tex",
+      "pass": true
+    },
+    {
+      "path": "text/ch1.tex",
+      "pass": true
+    },
+    {
+      "path": "text/ch2.tex",
+      "pass": true
+    },
+    {
+      "path": "text/ch3_01_05.tex",
+      "pass": true
+    },
+    {
+      "path": "text/ch3_06a.tex",
+      "pass": true
+    },
+    {
+      "path": "text/ch3_06b.tex",
+      "pass": true
+    },
+    {
+      "path": "text/ch3_06c.tex",
+      "pass": true
+    },
+    {
+      "path": "text/introduction.tex",
+      "pass": true
+    },
+    {
+      "path": "text/remaining.tex",
+      "pass": true
+    },
+    {
+      "path": "text/v1_2.tex",
+      "pass": true
+    },
+    {
+      "path": "text/v5_01_02.tex",
+      "pass": true
+    },
+    {
+      "path": "text/v5_03_06.tex",
+      "pass": true
+    },
+    {
+      "path": "continuations/iii2_610.tex",
+      "pass": true
+    },
+    {
+      "path": "continuations/iii2_67.tex",
+      "pass": true
+    },
+    {
+      "path": "continuations/iii2_68.tex",
+      "pass": true
+    },
+    {
+      "path": "continuations/iii2_69.tex",
+      "pass": true
+    },
+    {
+      "path": "continuations/iii2_71_72.tex",
+      "pass": true
+    },
+    {
+      "path": "continuations/iii2_73.tex",
+      "pass": true
+    },
+    {
+      "path": "continuations/iii2_74.tex",
+      "pass": true
+    },
+    {
+      "path": "continuations/iii2_75_76.tex",
+      "pass": true
+    },
+    {
+      "path": "continuations/iii2_77.tex",
+      "pass": true
+    },
+    {
+      "path": "continuations/iii2_78_79.tex",
+      "pass": true
+    },
+    {
+      "path": "continuations/iv0_16_12.tex",
+      "pass": true
+    },
+    {
+      "path": "continuations/iv0_16_3.tex",
+      "pass": true
+    },
+    {
+      "path": "continuations/iv0_16_45.tex",
+      "pass": true
+    },
+    {
+      "path": "continuations/iv0_17_1.tex",
+      "pass": true
+    },
+    {
+      "path": "continuations/iv0_17_2.tex",
+      "pass": true
+    },
+    {
+      "path": "continuations/iv0_17_3.tex",
+      "pass": true
+    },
+    {
+      "path": "continuations/iv0_18_1.tex",
+      "pass": true
+    },
+    {
+      "path": "continuations/iv0_18_2.tex",
+      "pass": true
+    },
+    {
+      "path": "continuations/iv0_18_3.tex",
+      "pass": true
+    },
+    {
+      "path": "continuations/iv0_18_4.tex",
+      "pass": true
+    },
+    {
+      "path": "continuations/iv0_18_5.tex",
+      "pass": true
+    },
+    {
+      "path": "continuations/iv0_19_01.tex",
+      "pass": true
+    },
+    {
+      "path": "continuations/iv0_19_23.tex",
+      "pass": true
+    },
+    {
+      "path": "continuations/iv0_19_4.tex",
+      "pass": true
+    },
+    {
+      "path": "continuations/iv0_19_5a.tex",
+      "pass": true
+    },
+    {
+      "path": "continuations/iv0_19_5b.tex",
+      "pass": true
+    },
+    {
+      "path": "continuations/iv0_19_6.tex",
+      "pass": true
+    },
+    {
+      "path": "continuations/iv0_19_7.tex",
+      "pass": true
+    },
+    {
+      "path": "continuations/iv0_19_8.tex",
+      "pass": true
+    },
+    {
+      "path": "continuations/iv0_19_9_10.tex",
+      "pass": true
+    },
+    {
+      "path": "continuations/iv0_20_12.tex",
+      "pass": true
+    },
+    {
+      "path": "continuations/iv0_20_3.tex",
+      "pass": true
+    },
+    {
+      "path": "continuations/iv0_20_4.tex",
+      "pass": true
+    },
+    {
+      "path": "continuations/iv0_20_5.tex",
+      "pass": true
+    },
+    {
+      "path": "continuations/iv0_20_6a.tex",
+      "pass": true
+    },
+    {
+      "path": "continuations/iv0_20_6b.tex",
+      "pass": true
+    },
+    {
+      "path": "continuations/iv0_20_7a.tex",
+      "pass": true
+    },
+    {
+      "path": "continuations/iv0_20_7b.tex",
+      "pass": true
+    },
+    {
+      "path": "continuations/iv0_21_1.tex",
+      "pass": true
+    },
+    {
+      "path": "continuations/iv0_21_2.tex",
+      "pass": true
+    },
+    {
+      "path": "continuations/iv0_21_3.tex",
+      "pass": true
+    },
+    {
+      "path": "continuations/iv0_21_4.tex",
+      "pass": true
+    },
+    {
+      "path": "continuations/iv0_21_5.tex",
+      "pass": true
+    },
+    {
+      "path": "continuations/iv0_21_6.tex",
+      "pass": true
+    },
+    {
+      "path": "continuations/iv0_21_7.tex",
+      "pass": true
+    },
+    {
+      "path": "continuations/iv0_21_8.tex",
+      "pass": true
+    },
+    {
+      "path": "continuations/iv0_21_9a.tex",
+      "pass": true
+    },
+    {
+      "path": "continuations/iv0_21_9b.tex",
+      "pass": true
+    },
+    {
+      "path": "continuations/iv0_21_9c.tex",
+      "pass": true
+    },
+    {
+      "path": "continuations/iv0_22_1.tex",
+      "pass": true
+    },
+    {
+      "path": "continuations/iv0_22_2a.tex",
+      "pass": true
+    },
+    {
+      "path": "continuations/iv0_22_2b.tex",
+      "pass": true
+    },
+    {
+      "path": "continuations/iv0_22_3.tex",
+      "pass": true
+    },
+    {
+      "path": "continuations/iv0_22_4a.tex",
+      "pass": true
+    },
+    {
+      "path": "continuations/iv0_22_4b.tex",
+      "pass": true
+    },
+    {
+      "path": "continuations/iv0_22_5a.tex",
+      "pass": true
+    },
+    {
+      "path": "continuations/iv0_22_5b.tex",
+      "pass": true
+    },
+    {
+      "path": "continuations/iv0_22_6.tex",
+      "pass": true
+    },
+    {
+      "path": "continuations/iv0_22_7.tex",
+      "pass": true
+    },
+    {
+      "path": "continuations/iv0_23_1.tex",
+      "pass": true
+    },
+    {
+      "path": "continuations/iv0_23_2.tex",
+      "pass": true
+    },
+    {
+      "path": "continuations/v18_batch069.tex",
+      "pass": true
+    },
+    {
+      "path": "continuations/v18_batch070.tex",
+      "pass": true
+    },
+    {
+      "path": "continuations/v18_batch071.tex",
+      "pass": true
+    },
+    {
+      "path": "continuations/v18_batch072.tex",
+      "pass": true
+    },
+    {
+      "path": "continuations/v18_batch073.tex",
+      "pass": true
+    },
+    {
+      "path": "continuations/v18_batch074.tex",
+      "pass": true
+    },
+    {
+      "path": "continuations/v18_batch075.tex",
+      "pass": true
+    },
+    {
+      "path": "continuations/v18_batch076.tex",
+      "pass": true
+    },
+    {
+      "path": "continuations/v18_batch077.tex",
+      "pass": true
+    },
+    {
+      "path": "continuations/v18_batch078.tex",
+      "pass": true
+    },
+    {
+      "path": "continuations/v18_batch079.tex",
+      "pass": true
+    },
+    {
+      "path": "continuations/v18_batch080.tex",
+      "pass": true
+    },
+    {
+      "path": "continuations/v18_batch081.tex",
+      "pass": true
+    },
+    {
+      "path": "continuations/v18_batch082.tex",
+      "pass": true
+    },
+    {
+      "path": "continuations/v18_batch083.tex",
+      "pass": true
+    },
+    {
+      "path": "continuations/v18_batch084.tex",
+      "pass": true
+    },
+    {
+      "path": "continuations/v18_batch085.tex",
+      "pass": true
+    },
+    {
+      "path": "continuations/v18_batch086.tex",
+      "pass": true
+    },
+    {
+      "path": "continuations/v18_batch087.tex",
+      "pass": true
+    },
+    {
+      "path": "continuations/v18_batch088.tex",
+      "pass": true
+    },
+    {
+      "path": "continuations/v18_batch089.tex",
+      "pass": true
+    },
+    {
+      "path": "continuations/v18_batch090.tex",
+      "pass": true
+    },
+    {
+      "path": "continuations/v18_batch091.tex",
+      "pass": true
+    },
+    {
+      "path": "continuations/v18_batch092.tex",
+      "pass": true
+    },
+    {
+      "path": "continuations/v18_batch093.tex",
+      "pass": true
+    },
+    {
+      "path": "continuations/v18_batch094.tex",
+      "pass": true
+    },
+    {
+      "path": "continuations/v18_batch095.tex",
+      "pass": true
+    },
+    {
+      "path": "continuations/v18_batch096.tex",
+      "pass": true
+    },
+    {
+      "path": "continuations/v18_batch097.tex",
+      "pass": true
+    },
+    {
+      "path": "continuations/v18_batch098.tex",
+      "pass": true
+    },
+    {
+      "path": "continuations/v18_batch099.tex",
+      "pass": true
+    },
+    {
+      "path": "continuations/v18_batch100.tex",
+      "pass": true
+    },
+    {
+      "path": "continuations/v18_batch101.tex",
+      "pass": true
+    },
+    {
+      "path": "continuations/v18_batch102.tex",
+      "pass": true
+    },
+    {
+      "path": "continuations/v18_batch103.tex",
+      "pass": true
+    },
+    {
+      "path": "continuations/v18_batch104.tex",
+      "pass": true
+    },
+    {
+      "path": "continuations/v18_batch105.tex",
+      "pass": true
+    },
+    {
+      "path": "continuations/v18_batch106.tex",
+      "pass": true
+    },
+    {
+      "path": "continuations/v18_batch107.tex",
+      "pass": true
+    },
+    {
+      "path": "continuations/v18_batch108.tex",
+      "pass": true
+    },
+    {
+      "path": "continuations/v18_deleted_addenda.tex",
+      "pass": true
+    },
+    {
+      "path": "continuations/v18_first_8_14_onward.tex",
+      "pass": true
+    },
+    {
+      "path": "continuations/v18_first_preface.tex",
+      "pass": true
+    },
+    {
+      "path": "continuations/v_dot_early.tex",
+      "pass": true
+    },
+    {
+      "path": "continuations/v_dot_late.tex",
+      "pass": true
+    },
+    {
+      "path": "continuations/v_dot_middle.tex",
+      "pass": true
+    },
+    {
+      "path": "continuations/v_suppIII_63.tex",
+      "pass": true
+    },
+    {
+      "path": "continuations/v_suppIII_64.tex",
+      "pass": true
+    },
+    {
+      "path": "continuations/v_suppIII_65.tex",
+      "pass": true
+    },
+    {
+      "path": "continuations/v_suppIII_66.tex",
+      "pass": true
+    },
+    {
+      "path": "continuations/v_suppIII_67.tex",
+      "pass": true
+    },
+    {
+      "path": "continuations/v_suppIII_68.tex",
+      "pass": true
+    },
+    {
+      "path": "backmatter/additional_sources.tex",
+      "pass": true
+    },
+    {
+      "path": "backmatter/bibliography_IV_1.tex",
+      "pass": true
+    },
+    {
+      "path": "backmatter/errata_III_2.tex",
+      "pass": true
+    },
+    {
+      "path": "backmatter/errata_IV_selected.tex",
+      "pass": true
+    },
+    {
+      "path": "backmatter/old_note_I.tex",
+      "pass": true
+    },
+    {
+      "path": "backmatter/old_note_II.tex",
+      "pass": true
+    },
+    {
+      "path": "backmatter/old_note_III_1.tex",
+      "pass": true
+    },
+    {
+      "path": "backmatter/volume_I.tex",
+      "pass": true
+    },
+    {
+      "path": "backmatter/volume_II.tex",
+      "pass": true
+    },
+    {
+      "path": "backmatter/volume_III_1.tex",
+      "pass": true
+    },
+    {
+      "path": "backmatter/volume_III_2.tex",
+      "pass": true
+    },
+    {
+      "path": "reports/batch1_audit.tex",
+      "pass": true
+    },
+    {
+      "path": "reports/current_audit.tex",
+      "pass": true
+    },
+    {
+      "path": "reports/dot_early_audit.tex",
+      "pass": true
+    },
+    {
+      "path": "reports/dot_late_audit.tex",
+      "pass": true
+    },
+    {
+      "path": "reports/dot_middle_audit.tex",
+      "pass": true
+    },
+    {
+      "path": "reports/eighth_audit.tex",
+      "pass": true
+    },
+    {
+      "path": "reports/eleventh_audit.tex",
+      "pass": true
+    },
+    {
+      "path": "reports/fifteenth_audit.tex",
+      "pass": true
+    },
+    {
+      "path": "reports/fifth_audit.tex",
+      "pass": true
+    },
+    {
+      "path": "reports/fourteenth_audit.tex",
+      "pass": true
+    },
+    {
+      "path": "reports/fourth_audit.tex",
+      "pass": true
+    },
+    {
+      "path": "reports/legacy_I_II.tex",
+      "pass": true
+    },
+    {
+      "path": "reports/ninth_audit.tex",
+      "pass": true
+    },
+    {
+      "path": "reports/seventeenth_integration.tex",
+      "pass": true
+    },
+    {
+      "path": "reports/seventh_audit.tex",
+      "pass": true
+    },
+    {
+      "path": "reports/short_collation_audit.tex",
+      "pass": true
+    },
+    {
+      "path": "reports/sixteenth_audit.tex",
+      "pass": true
+    },
+    {
+      "path": "reports/sixth_audit.tex",
+      "pass": true
+    },
+    {
+      "path": "reports/supplement_III_audit.tex",
+      "pass": true
+    },
+    {
+      "path": "reports/tenth_audit.tex",
+      "pass": true
+    },
+    {
+      "path": "reports/third_order_audit.tex",
+      "pass": true
+    },
+    {
+      "path": "reports/thirteenth_audit.tex",
+      "pass": true
+    },
+    {
+      "path": "reports/twelfth_audit.tex",
+      "pass": true
+    },
+    {
+      "path": "reports/v18_early_notes.tex",
+      "pass": true
+    },
+    {
+      "path": "reports/v18_integration_audit.tex",
+      "pass": true
+    },
+    {
+      "path": "reports/v18_late_notes.tex",
+      "pass": true
+    },
+    {
+      "path": "reports/v18_middle_notes.tex",
+      "pass": true
+    },
+    {
+      "path": "reports/withdrawn_19312_history.tex",
+      "pass": true
+    }
+  ],
+  "restore_index_references": [
+    {
+      "version": "v17",
+      "file_references": 1827,
+      "missing": []
+    },
+    {
+      "version": "supplement_III",
+      "file_references": 753,
+      "missing": []
+    },
+    {
+      "version": "supplement_III_delta",
+      "file_references": 40,
+      "missing": []
+    }
+  ],
+  "bundled_fonts": {
+    "expected": 8,
+    "present": 8,
+    "missing": []
+  },
+  "postpublication_local_reports": {
+    "entries": [
+      {
+        "filename": "PUBLICATION_VERIFICATION.json",
+        "paths": []
+      },
+      {
+        "filename": "REMOTE_TREE_VERIFICATION.json",
+        "paths": []
+      },
+      {
+        "filename": "REMOTE_ENTRYPOINT_REVIEW.json",
+        "paths": []
+      },
+      {
+        "filename": "REMOTE_ENTRYPOINT_REVIEW.md",
+        "paths": []
+      },
+      {
+        "filename": "REMOTE_RELEASE_METADATA.json",
+        "paths": []
+      },
+      {
+        "filename": "PUBLISH_WORKFLOW_VERIFICATION.json",
+        "paths": []
+      },
+      {
+        "filename": "OVERLAY_VERIFICATION.json",
+        "paths": []
+      }
+    ],
+    "classification": "Not committed in the original frozen project. They are independent, regenerable remote-publication check copies; their absence does not remove manuscript or build dependencies. A fresh audit may be added separately without changing the frozen release."
+  },
+  "environment_dependencies": "Bash, Python, XeLaTeX/TeX packages are documented requirements. PyMuPDF is needed for page comparison and SymPy for the separate finite symbolic checks. A full TeX distribution is not claimed to be bundled.",
+  "errors": []
+}

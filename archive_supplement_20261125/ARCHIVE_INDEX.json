@@ -1,0 +1,684 @@
+{
+  "base_commit": "4daf708a87069e2a6e28c22a29d3e3af26880f0b",
+  "scope": "26 exact recovered original ZIPs; source bytes unchanged",
+  "archives": [
+    {
+      "kind": "history",
+      "original_filename": "代数几何基础_中文合订本_工程.zip",
+      "repository_path": "archive_supplement_20261125/history/代数几何基础_中文合订本_工程.zip",
+      "size": 4431001,
+      "sha256": "9153b857a734ef063d56fa1c76d4893abb16de568a573b2062bf96047c8bb90d",
+      "ordinary_zip_members": 19,
+      "crc_pass": true,
+      "classification": "historical_archive_omitted",
+      "previously_absent_member_records": 19
+    },
+    {
+      "kind": "history",
+      "original_filename": "代数几何基础_内容顺序合订第七版_工程.zip",
+      "repository_path": "archive_supplement_20261125/history/代数几何基础_内容顺序合订第七版_工程.zip",
+      "size": 10634493,
+      "sha256": "8eb6e2781ccdd56700a35499bcecadc1758a08c7ece28699327b2d75ebeb367b",
+      "ordinary_zip_members": 174,
+      "crc_pass": true,
+      "classification": "historical_archive_omitted",
+      "previously_absent_member_records": 42
+    },
+    {
+      "kind": "history",
+      "original_filename": "代数几何基础_内容顺序合订第三版_工程.zip",
+      "repository_path": "archive_supplement_20261125/history/代数几何基础_内容顺序合订第三版_工程.zip",
+      "size": 6251457,
+      "sha256": "80c18fc7a9528de079e481c0c1827da129979e1748eb63664076e93613e21017",
+      "ordinary_zip_members": 67,
+      "crc_pass": true,
+      "classification": "historical_archive_omitted",
+      "previously_absent_member_records": 28
+    },
+    {
+      "kind": "history",
+      "original_filename": "代数几何基础_内容顺序合订第九版_工程.zip",
+      "repository_path": "archive_supplement_20261125/history/代数几何基础_内容顺序合订第九版_工程.zip",
+      "size": 13644051,
+      "sha256": "089aded4fae7bdfa980f8e8ef3d179ec75fa8d4b01d3892f326e7dcb3ff12bd7",
+      "ordinary_zip_members": 208,
+      "crc_pass": true,
+      "classification": "historical_archive_omitted",
+      "previously_absent_member_records": 32
+    },
+    {
+      "kind": "history",
+      "original_filename": "代数几何基础_内容顺序合订第五版_工程.zip",
+      "repository_path": "archive_supplement_20261125/history/代数几何基础_内容顺序合订第五版_工程.zip",
+      "size": 8589082,
+      "sha256": "86d46a1200cd546fc31123edab46fac52ee49058de5e9b88f6eabc4e72a8d73b",
+      "ordinary_zip_members": 102,
+      "crc_pass": true,
+      "classification": "historical_archive_omitted",
+      "previously_absent_member_records": 28
+    },
+    {
+      "kind": "history",
+      "original_filename": "代数几何基础_内容顺序合订第八版_工程.zip",
+      "repository_path": "archive_supplement_20261125/history/代数几何基础_内容顺序合订第八版_工程.zip",
+      "size": 13643517,
+      "sha256": "cb64244407075278974cd88f77feec788fda5cdfb90df74b609d9123cc7c051a",
+      "ordinary_zip_members": 214,
+      "crc_pass": true,
+      "classification": "historical_archive_omitted",
+      "previously_absent_member_records": 59
+    },
+    {
+      "kind": "history",
+      "original_filename": "代数几何基础_内容顺序合订第六版_工程.zip",
+      "repository_path": "archive_supplement_20261125/history/代数几何基础_内容顺序合订第六版_工程.zip",
+      "size": 15858615,
+      "sha256": "cf43c7ee8ce98fd2d48b14ff7856d2c6c7aac1829b84109d9c3b6e1493bcd181",
+      "ordinary_zip_members": 182,
+      "crc_pass": true,
+      "classification": "historical_archive_omitted",
+      "previously_absent_member_records": 81
+    },
+    {
+      "kind": "history",
+      "original_filename": "代数几何基础_内容顺序合订第十一版_工程.zip",
+      "repository_path": "archive_supplement_20261125/history/代数几何基础_内容顺序合订第十一版_工程.zip",
+      "size": 18925001,
+      "sha256": "a59e3f5476a9054bd890a7420c971f2505536aef0eefc57b550fe8f7acf85d60",
+      "ordinary_zip_members": 285,
+      "crc_pass": true,
+      "classification": "historical_archive_omitted",
+      "previously_absent_member_records": 59
+    },
+    {
+      "kind": "history",
+      "original_filename": "代数几何基础_内容顺序合订第十三版_工程.zip",
+      "repository_path": "archive_supplement_20261125/history/代数几何基础_内容顺序合订第十三版_工程.zip",
+      "size": 31219378,
+      "sha256": "f7af7d272c3ac84f9fe167e8be976328f51dd9b693005966f409782368e9d084",
+      "ordinary_zip_members": 395,
+      "crc_pass": true,
+      "classification": "historical_archive_omitted",
+      "previously_absent_member_records": 136
+    },
+    {
+      "kind": "history",
+      "original_filename": "代数几何基础_内容顺序合订第十二版_工程.zip",
+      "repository_path": "archive_supplement_20261125/history/代数几何基础_内容顺序合订第十二版_工程.zip",
+      "size": 26167700,
+      "sha256": "7f56eaabcf8439c94d84a19cb90bbda7e32e74cddc513b5e0c33206b05ab9802",
+      "ordinary_zip_members": 365,
+      "crc_pass": true,
+      "classification": "historical_archive_omitted",
+      "previously_absent_member_records": 128
+    },
+    {
+      "kind": "history",
+      "original_filename": "代数几何基础_内容顺序合订第十五版_工程.zip",
+      "repository_path": "archive_supplement_20261125/history/代数几何基础_内容顺序合订第十五版_工程.zip",
+      "size": 32934497,
+      "sha256": "d203c5555cfa302c4c2e2069f8b70b6b0a09064f4c43598d8676549a11a45023",
+      "ordinary_zip_members": 452,
+      "crc_pass": true,
+      "classification": "historical_archive_omitted",
+      "previously_absent_member_records": 136
+    },
+    {
+      "kind": "history",
+      "original_filename": "代数几何基础_内容顺序合订第十四版_工程.zip",
+      "repository_path": "archive_supplement_20261125/history/代数几何基础_内容顺序合订第十四版_工程.zip",
+      "size": 18645622,
+      "sha256": "2e400d74783be82c8e1cc297f32f8e90c65488e0721b3fc366c5a06e0fb3587d",
+      "ordinary_zip_members": 335,
+      "crc_pass": true,
+      "classification": "historical_archive_omitted",
+      "previously_absent_member_records": 24
+    },
+    {
+      "kind": "history",
+      "original_filename": "代数几何基础_内容顺序合订第十版_工程.zip",
+      "repository_path": "archive_supplement_20261125/history/代数几何基础_内容顺序合订第十版_工程.zip",
+      "size": 16128796,
+      "sha256": "4e70cd955a2aa8dfa2edfbe7ce53ed5f3973dd4b1de799b8dbbc659da32b038a",
+      "ordinary_zip_members": 249,
+      "crc_pass": true,
+      "classification": "historical_archive_omitted",
+      "previously_absent_member_records": 49
+    },
+    {
+      "kind": "history",
+      "original_filename": "代数几何基础_内容顺序合订第四版_工程.zip",
+      "repository_path": "archive_supplement_20261125/history/代数几何基础_内容顺序合订第四版_工程.zip",
+      "size": 6548946,
+      "sha256": "01c436f19b45e7543ac620758fd36a87ba7a4041853783731eaed2858dcf3cd4",
+      "ordinary_zip_members": 75,
+      "crc_pass": true,
+      "classification": "historical_archive_omitted",
+      "previously_absent_member_records": 16
+    },
+    {
+      "kind": "history",
+      "original_filename": "代数几何基础_续译整合第二版_工程.zip",
+      "repository_path": "archive_supplement_20261125/history/代数几何基础_续译整合第二版_工程.zip",
+      "size": 11271740,
+      "sha256": "3325c51b497f1307692c7c2184dac5e76edf5acb2c21609122eacc419b76c1d3",
+      "ordinary_zip_members": 65,
+      "crc_pass": true,
+      "classification": "historical_archive_omitted",
+      "previously_absent_member_records": 60
+    },
+    {
+      "kind": "dot",
+      "original_filename": "EGA第五卷_可分与几何正规截面的判据_续译工程.zip",
+      "repository_path": "archive_supplement_20261125/dot/EGA第五卷_可分与几何正规截面的判据_续译工程.zip",
+      "size": 598164,
+      "sha256": "d10bb991988b766ee21ed2982e58aa835919a8d1c2042e8d4683b914de0a7976",
+      "ordinary_zip_members": 15,
+      "crc_pass": true,
+      "batch": 109,
+      "classification": "pre_release_omission",
+      "original_created_at_utc": "2026-11-24T17:04:33.441733Z",
+      "integration_status": "independent_archive_not_merged_by_this_update",
+      "original_progress": {
+        "batch": 109,
+        "mode": "french_english_recollation_of_existing_008",
+        "done": "8.14, 8.15 and Remords; FR46-48, EN32",
+        "next": {
+          "french_physical": 48,
+          "english_physical": 33,
+          "anchor": "Proposition 8.16"
+        },
+        "new": "French manuscript corrections, separate proof comments, closed-point caveat, alignment with public snapshot",
+        "old_bib_alias": "旧英稿译校_第008批.tex",
+        "not_done": [
+          "Unconditional removal of earlier assumptions",
+          "Full integration into 1158-page master PDF",
+          "Printed EGA IV.1"
+        ],
+        "unreadable": [
+          "Remark 8.15 printed right margin",
+          "Stray marked character at 46/47"
+        ]
+      }
+    },
+    {
+      "kind": "dot",
+      "original_filename": "EGA第五卷_正规超平面截面的反例与修正_续译工程.zip",
+      "repository_path": "archive_supplement_20261125/dot/EGA第五卷_正规超平面截面的反例与修正_续译工程.zip",
+      "size": 569337,
+      "sha256": "1b0f18498208a63ee0fbca37a829ca085733a8012483b4009e074d1f8a1f5462",
+      "ordinary_zip_members": 15,
+      "crc_pass": true,
+      "batch": 110,
+      "classification": "pre_release_omission",
+      "original_created_at_utc": "2026-11-24T19:05:42.288282Z",
+      "integration_status": "independent_archive_not_merged_by_this_update",
+      "original_progress": {
+        "batch": 110,
+        "kind": "法英回校及反例、已证明的充分条件修正",
+        "french_pages": [
+          48,
+          49
+        ],
+        "english_pages": [
+          18,
+          33
+        ],
+        "completed": [
+          "8.16",
+          "8.17(a,b)及附记"
+        ],
+        "not_verified": [
+          "8.17手稿页首否定作用范围",
+          "8.18及后文未进入本轮",
+          "正式IV章主体未进入本轮"
+        ],
+        "next": {
+          "text": "命题8.18",
+          "french_physical_page": 49,
+          "english_physical_page": 34
+        },
+        "formal_IV_next": {
+          "french_physical_page": 221,
+          "resume_number": "1.1.1，物理223页"
+        },
+        "public_baseline": {
+          "version": 18,
+          "commit": "f1ade3db412d2167779d4b8f9fa2ed04a4daf0c3",
+          "main_pages": 1210,
+          "last_merged_batch": 108,
+          "was_modified": false
+        }
+      }
+    },
+    {
+      "kind": "dot",
+      "original_filename": "EGA第五卷_不可约超平面截面的判据与反例_续译工程.zip",
+      "repository_path": "archive_supplement_20261125/dot/EGA第五卷_不可约超平面截面的判据与反例_续译工程.zip",
+      "size": 493051,
+      "sha256": "28435b1fbe1ac76a546a2dae0b4c05b32063e2765c228484a292c9743ffe04b4",
+      "ordinary_zip_members": 15,
+      "crc_pass": true,
+      "batch": 111,
+      "classification": "pre_release_omission",
+      "original_created_at_utc": "2026-11-24T21:04:44.207000Z",
+      "integration_status": "independent_archive_not_merged_by_this_update",
+      "original_progress": {
+        "batch": 111,
+        "status": "命题8.18法英回校及纠错",
+        "french_physical_pages": [
+          49,
+          50
+        ],
+        "english_physical_pages": [
+          34
+        ],
+        "next": {
+          "physical_page": 50,
+          "english_physical_page": 34,
+          "anchor": "Il reste à expliciter les conditions a) et b) de 8.18",
+          "then_french_page": 51,
+          "then_english_page": 35
+        },
+        "public_baseline": {
+          "version": 18,
+          "commit": "f1ade3db412d2167779d4b8f9fa2ed04a4daf0c3",
+          "merged_through": 108,
+          "main_pages": 1210,
+          "modified": false
+        },
+        "formal_IV1": {
+          "unchanged": true,
+          "physical_page": 221,
+          "resume_1.1.1_page": 223
+        }
+      }
+    },
+    {
+      "kind": "dot",
+      "original_filename": "EGA第五卷_带基址线性系与投影判据_续译工程.zip",
+      "repository_path": "archive_supplement_20261125/dot/EGA第五卷_带基址线性系与投影判据_续译工程.zip",
+      "size": 724336,
+      "sha256": "33e00cdc64432a9634d47afe7f9f5f74382f72fd7aa024138cecc2891e48d369",
+      "ordinary_zip_members": 15,
+      "crc_pass": true,
+      "batch": 112,
+      "classification": "pre_release_omission",
+      "original_created_at_utc": "2026-11-24T23:05:37.545747Z",
+      "integration_status": "independent_archive_not_merged_by_this_update",
+      "original_progress": {
+        "batch": 112,
+        "status": "第8节末线性系、投影和域论法英回校；勘误与补证",
+        "french_physical_pages": [
+          50,
+          51,
+          52
+        ],
+        "english_physical_pages": [
+          34,
+          35,
+          36
+        ],
+        "covered_start": "法50 Il reste à expliciter les conditions a) et b) de 8.18",
+        "covered_end": "法52 changement d’immersion projective；英36小节标题前",
+        "next": {
+          "physical_page": 53,
+          "english_physical_page": 36,
+          "anchor": "9. Changement d'immersion projective；9.1",
+          "continuation": "法54页首续9.2附记；9.3另行"
+        },
+        "public_baseline": {
+          "version": 18,
+          "commit": "f1ade3db412d2167779d4b8f9fa2ed04a4daf0c3",
+          "merged_through": 108,
+          "main_pages": 1210,
+          "modified": false
+        },
+        "old_translation": {
+          "batches": [
+            11,
+            12
+          ],
+          "full_remote_blob": "194239aea0874798940da3b6d70551c860633e04",
+          "locally_archived": "摘录，不是远端全文"
+        },
+        "formal_IV1": {
+          "unchanged": true,
+          "physical_page": 221,
+          "resume_1.1.1_page": 223
+        }
+      }
+    },
+    {
+      "kind": "dot",
+      "original_filename": "EGA第五卷_Veronese变换与二阶奇点_续译工程.zip",
+      "repository_path": "archive_supplement_20261125/dot/EGA第五卷_Veronese变换与二阶奇点_续译工程.zip",
+      "size": 647505,
+      "sha256": "8c284469f39fa400fa8507c15a11707d7f0b22d92dc1a8590085b802a06e5415",
+      "ordinary_zip_members": 15,
+      "crc_pass": true,
+      "batch": 113,
+      "classification": "pre_release_omission",
+      "original_created_at_utc": "2026-11-25T01:06:06.434435Z",
+      "integration_status": "independent_archive_not_merged_by_this_update",
+      "original_progress": {
+        "batch": 113,
+        "checked_french_physical": [
+          53,
+          54
+        ],
+        "checked_english_physical": [
+          36
+        ],
+        "cross_reference_english_physical": [
+          28,
+          31
+        ],
+        "start": "法53 9. Changement d’immersion projective",
+        "stop": "法54首行：9.2附记末句",
+        "next": {
+          "french": 54,
+          "english": 37,
+          "anchor": "Proposition 9.3",
+          "do_not_repeat": "法54首行"
+        },
+        "correction": "特征2且奇维时极化型退化；光滑射影切锥不保证奇点剩余域可分或有理",
+        "public_baseline": {
+          "version": 18,
+          "commit": "f1ade3db412d2167779d4b8f9fa2ed04a4daf0c3",
+          "merged_through": 108,
+          "main_pages": 1210,
+          "changed": false
+        },
+        "old_translation": {
+          "batch": 13,
+          "full_remote_blob": "194239aea0874798940da3b6d70551c860633e04",
+          "local": "excerpt"
+        },
+        "formal_IV1": {
+          "changed": false,
+          "overview": 221,
+          "start_1.1.1": 223
+        }
+      }
+    },
+    {
+      "kind": "dot",
+      "original_filename": "EGA第五卷_约束截面与固定分支_续译工程.zip",
+      "repository_path": "archive_supplement_20261125/dot/EGA第五卷_约束截面与固定分支_续译工程.zip",
+      "size": 581131,
+      "sha256": "043157019bccf57ef5e975633d145ee5fe76201b9d1dc1c7d228bb9023189cca",
+      "ordinary_zip_members": 15,
+      "crc_pass": true,
+      "batch": 114,
+      "classification": "pre_release_omission",
+      "original_created_at_utc": "2026-11-25T03:04:51.844348Z",
+      "integration_status": "independent_archive_not_merged_by_this_update",
+      "original_progress": {
+        "batch": 114,
+        "french_physical": [
+          54,
+          55
+        ],
+        "english_physical": [
+          37,
+          38
+        ],
+        "start": "法54命题9.3题头",
+        "stop": "法55结合8.18引9.4之前，英38相应边界",
+        "next": {
+          "french": 55,
+          "english": 38,
+          "anchor": "Conjuguant avec 8.18… Corollaire 9.4",
+          "note": "9.4、9.5残稿不要补造；第10节视实际边界另译"
+        },
+        "public_baseline": {
+          "version": 18,
+          "commit": "f1ade3db412d2167779d4b8f9fa2ed04a4daf0c3",
+          "merged_through": 108,
+          "changed": false
+        },
+        "old_translation": {
+          "batch": 14,
+          "full_remote_blob": "194239aea0874798940da3b6d70551c860633e04",
+          "local": "excerpt"
+        },
+        "formal_IV1": {
+          "changed": false,
+          "overview": 221,
+          "start_1.1.1": 223
+        }
+      }
+    },
+    {
+      "kind": "dot",
+      "original_filename": "EGA第五卷_例外集与超平面截面束_续译工程.zip",
+      "repository_path": "archive_supplement_20261125/dot/EGA第五卷_例外集与超平面截面束_续译工程.zip",
+      "size": 668394,
+      "sha256": "ca4731ec15f46dd0e178b22f393d62b3d7a3237069795e318299af49f206596b",
+      "ordinary_zip_members": 15,
+      "crc_pass": true,
+      "batch": 115,
+      "classification": "pre_release_omission",
+      "original_created_at_utc": "2026-11-25T05:00:48.955629Z",
+      "integration_status": "independent_archive_not_merged_by_this_update",
+      "original_progress": {
+        "batch": 115,
+        "status": "translated_lacunae_9_4_to_end_of_10_1",
+        "fr_physical": [
+          55,
+          56,
+          57
+        ],
+        "fr_start": "55 下页，Conjuguant avec 8.18",
+        "fr_end": "57 页首第三行 applications géométriques",
+        "en_physical": [
+          38,
+          39
+        ],
+        "next": {
+          "fr": 57,
+          "en": 39,
+          "section": "10.2",
+          "anchor": "Par polarité, une droite L de P∨"
+        },
+        "scope_limit": "9.4 没有可译陈述；9.5 不补写结论；10.2 未译入；正式 IV.1 未动",
+        "baseline": "公开第十八版合入第69–108批；第109–115批独立",
+        "verification": [
+          "两遍 XeLaTeX",
+          "三页版面检查",
+          "源摘页像素一致",
+          "实解压 SHA 校验",
+          "清洁重编像素与文本比对",
+          "有限域模型"
+        ]
+      }
+    },
+    {
+      "kind": "dot",
+      "original_filename": "EGA第五卷_线性束与沿基址的吹起_续译工程.zip",
+      "repository_path": "archive_supplement_20261125/dot/EGA第五卷_线性束与沿基址的吹起_续译工程.zip",
+      "size": 692820,
+      "sha256": "7b9217d836d43c9d07acbcf80414f74454cf02bbf0b5e849d9d3278c54d0cdc3",
+      "ordinary_zip_members": 15,
+      "crc_pass": true,
+      "batch": 116,
+      "classification": "pre_release_omission",
+      "original_created_at_utc": "2026-11-25T07:10:27.477571Z",
+      "integration_status": "independent_archive_not_merged_by_this_update",
+      "original_progress": {
+        "batch": 116,
+        "status": "translated_and_audited_10_2",
+        "fr_physical": [
+          57,
+          58,
+          59
+        ],
+        "fr_start": "57页 10.2. Par polarité, une droite L de P∨",
+        "fr_end": "59页首未划销过渡段的末尾 immersions régulières",
+        "en_physical": [
+          39,
+          40
+        ],
+        "next": {
+          "fr": 59,
+          "en": 40,
+          "section": "10.3",
+          "anchor": "被交叉划去的 Proposition 10.3. Soit X un préschéma"
+        },
+        "after_next": {
+          "fr": [
+            59,
+            60
+          ],
+          "en": [
+            40,
+            41
+          ],
+          "section": "10.4"
+        },
+        "scope_limit": "只翻校10.2及其过渡；下一篇10.3原文划去，10.4未译入；不补9.5，不变更正式IV.1",
+        "baseline": "公开第十八版合入第69–108批；第109–116批独立",
+        "verification": [
+          "两遍XeLaTeX",
+          "四页版面检查",
+          "源摘页像素一致",
+          "实解压SHA核验",
+          "清洁重编像素及文本核验",
+          "有限模型和关系消元"
+        ]
+      }
+    },
+    {
+      "kind": "dot",
+      "original_filename": "EGA第五卷_余维m线性截面与关联概形_续译工程.zip",
+      "repository_path": "archive_supplement_20261125/dot/EGA第五卷_余维m线性截面与关联概形_续译工程.zip",
+      "size": 647708,
+      "sha256": "2fcfe699a2ea53370d0b6e86850a67534d44736766b9148e324884f6de9810b5",
+      "ordinary_zip_members": 15,
+      "crc_pass": true,
+      "batch": 117,
+      "classification": "post_release_new",
+      "original_created_at_utc": "2026-11-25T09:04:20.779984Z",
+      "integration_status": "independent_archive_not_merged_by_this_update",
+      "original_progress": {
+        "batch": 117,
+        "status": "section_12_opening_collated_against_french_english_and_pinned_v19",
+        "fr_physical": [
+          64,
+          65,
+          66
+        ],
+        "en_physical": [
+          43,
+          44
+        ],
+        "fr_end": "66页第1段末 Gr^m 之前述不能类推",
+        "next": {
+          "fr": 66,
+          "en": 44,
+          "section": "12",
+          "anchor": "La proposition 2.1 se transpose sans changement"
+        },
+        "scope_limit": "第12节编号推广未回校；不重新译入v19已回校的第10–11节；正式EGA IV.1独立",
+        "baseline": "公开v19固定4daf708a87069e2a6e28c22a29d3e3af26880f0b；本批是回校，不改公开版本",
+        "verification": [
+          "双次XeLaTeX",
+          "摘页像素一致",
+          "目检",
+          "有限域与双数模型",
+          "SHA校验和清洁重编"
+        ]
+      }
+    },
+    {
+      "kind": "dot",
+      "original_filename": "EGA第五卷_线性截面的维数条件与正则性_续译工程.zip",
+      "repository_path": "archive_supplement_20261125/dot/EGA第五卷_线性截面的维数条件与正则性_续译工程.zip",
+      "size": 730608,
+      "sha256": "ce99b2df3eaf0d284aaddcb1b34c0fb1356828db8d3cdd5a59b01b28bc23329a",
+      "ordinary_zip_members": 15,
+      "crc_pass": true,
+      "batch": 118,
+      "classification": "post_release_new",
+      "original_created_at_utc": "2026-11-25T11:07:16.031894Z",
+      "integration_status": "independent_archive_not_merged_by_this_update",
+      "original_progress": {
+        "batch": 118,
+        "status": "section_12_numbered_extensions_2_1_through_5_7_collated",
+        "fr_physical": [
+          66,
+          67,
+          68,
+          69
+        ],
+        "en_physical": [
+          44,
+          45
+        ],
+        "fr_end": "原法物理69页上部，Théorème 5.6 s'étend tel quel, de même 5.7",
+        "duplicate_scan": [
+          67,
+          68
+        ],
+        "next": {
+          "fr": 69,
+          "en": 46,
+          "section": "12",
+          "anchor": "Proposition 6.1"
+        },
+        "scope_limit": "不译6.1及以下，不重译正式EGA IV.1；第十九版已有早期译稿，本批是独立校订",
+        "baseline": "公开v19固定4daf708a87069e2a6e28c22a29d3e3af26880f0b；未修改公开版本。",
+        "verification": [
+          "两遍XeLaTeX",
+          "摘页渲染一致",
+          "目检",
+          "有限域交维数与Koszul示例",
+          "SHA和清洁重编"
+        ]
+      }
+    },
+    {
+      "kind": "dot",
+      "original_filename": "EGA第五卷_奇异线性截面与秩退化_续译工程.zip",
+      "repository_path": "archive_supplement_20261125/dot/EGA第五卷_奇异线性截面与秩退化_续译工程.zip",
+      "size": 697737,
+      "sha256": "2cd62fc5b66de3721d9a81a784f25e072d061524c2d954aee265cdbd761c4e08",
+      "ordinary_zip_members": 15,
+      "crc_pass": true,
+      "batch": 119,
+      "classification": "post_release_new",
+      "original_created_at_utc": "2026-11-25T13:08:06.973293Z",
+      "integration_status": "independent_archive_not_merged_by_this_update",
+      "original_progress": {
+        "batch": 119,
+        "status": "section_12_singular_incidence_through_rank_two_image_bound",
+        "fr_physical": [
+          69,
+          70,
+          71
+        ],
+        "en_physical": [
+          46,
+          47
+        ],
+        "fr_end": "法71中后段，on peut oublier V''",
+        "next": {
+          "fr": 71,
+          "en": 47,
+          "section": "12",
+          "anchor": "D’autre part, dans X_Grass^m - V''"
+        },
+        "scope_limit": "第16段补篇的后续应用未译校；其引理尚未恢复。本批未修改公开版本或正式EGA IV.1",
+        "baseline": "公开v19，4daf708a87069e2a6e28c22a29d3e3af26880f0b",
+        "verification": [
+          "两遍XeLaTeX",
+          "摘页渲染一致",
+          "目检",
+          "有限Grassmann分层和极小矩阵子式示例",
+          "SHA和清洁重编"
+        ]
+      }
+    }
+  ]
+}

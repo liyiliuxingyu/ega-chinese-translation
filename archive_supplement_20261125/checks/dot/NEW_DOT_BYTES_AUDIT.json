@@ -1,0 +1,296 @@
+{
+  "status": "passed",
+  "run_utc": "2026-11-25T14:03:02.510010+00:00",
+  "index_sha256": "49417f6d7980c0c31b40352b733a00b48587333f7d6158118227acc36a65ee9c",
+  "verifier_sha256": "b5875ffbea2376a353718da618f555a69e6c51463b31dcfad782398813ece700",
+  "totals": {
+    "archives": 40,
+    "members": 492,
+    "internal_sha256_records": 452,
+    "zip_bytes": 29406203,
+    "uncompressed_bytes": 31516025
+  },
+  "records": [
+    {
+      "id": "batch069",
+      "zip_sha256": "bae5ff6cacf62531b51dfadf014f2bfb0005bf7ea7af51dbc8328d13cf01d868",
+      "member_count": 11,
+      "internal_sha256_records": 10,
+      "passed": true
+    },
+    {
+      "id": "batch070",
+      "zip_sha256": "4090b6d31008d3d8e0b5f599b8668f781f1f06daf8419f732401110bf6391df5",
+      "member_count": 12,
+      "internal_sha256_records": 11,
+      "passed": true
+    },
+    {
+      "id": "batch071",
+      "zip_sha256": "223e3a3a7b2be1fd63ed0f87939043485b23afd75aa96e714dcc5b2d699dccd7",
+      "member_count": 11,
+      "internal_sha256_records": 10,
+      "passed": true
+    },
+    {
+      "id": "batch072",
+      "zip_sha256": "329b749099db44b1b8530b59444715f4a8a866df770e3955e081ad581b641e8a",
+      "member_count": 11,
+      "internal_sha256_records": 10,
+      "passed": true
+    },
+    {
+      "id": "batch073",
+      "zip_sha256": "0729f896ff87ebe37490ac517d30570abc581c750244cd285bfe217269d1cc09",
+      "member_count": 11,
+      "internal_sha256_records": 10,
+      "passed": true
+    },
+    {
+      "id": "batch074",
+      "zip_sha256": "3397667cb90ca76735cf144d3ad892381803ecd5ff87e5fb9830837a1de35562",
+      "member_count": 11,
+      "internal_sha256_records": 10,
+      "passed": true
+    },
+    {
+      "id": "batch075",
+      "zip_sha256": "d9d30f198885523c6ff728f4403922479cb9ddb7ee8efb7cfedd525ea98176c0",
+      "member_count": 11,
+      "internal_sha256_records": 10,
+      "passed": true
+    },
+    {
+      "id": "batch076",
+      "zip_sha256": "f847f38422f308de020f2e0d52165258860d491a2a7d8f825db134b89f689486",
+      "member_count": 11,
+      "internal_sha256_records": 10,
+      "passed": true
+    },
+    {
+      "id": "batch077",
+      "zip_sha256": "66bffe8f95eef5f00ca056032caa0276de753138770a6e6e84fb02353bcc652a",
+      "member_count": 11,
+      "internal_sha256_records": 10,
+      "passed": true
+    },
+    {
+      "id": "batch078",
+      "zip_sha256": "d5a0d2769afdd9d25d6792bbfd6072fc136b9a80e9d007502d21e026dd7cc4e9",
+      "member_count": 11,
+      "internal_sha256_records": 10,
+      "passed": true
+    },
+    {
+      "id": "batch079",
+      "zip_sha256": "5723c7b9073864c86b452ccfeb6812bd8aeed200a155e470664c4021a238a269",
+      "member_count": 11,
+      "internal_sha256_records": 10,
+      "passed": true
+    },
+    {
+      "id": "batch080",
+      "zip_sha256": "e2a502a078540c69e7296ff997163c849f65717841f36f97dd4b17f5c67891db",
+      "member_count": 11,
+      "internal_sha256_records": 10,
+      "passed": true
+    },
+    {
+      "id": "batch081",
+      "zip_sha256": "2226f0a8295f940c4b2203a8c3c469ad9850a179ce47b8f3a93745570055a1f4",
+      "member_count": 11,
+      "internal_sha256_records": 10,
+      "passed": true
+    },
+    {
+      "id": "batch082",
+      "zip_sha256": "ab7fd8623fd02a9c58598213756c445ff4e2af7e1ef6e2ac1b6af9e39962daca",
+      "member_count": 11,
+      "internal_sha256_records": 10,
+      "passed": true
+    },
+    {
+      "id": "batch083",
+      "zip_sha256": "b854a22cb420cd777d5272fda33483815b12055f90ff1e43a10d469c90d33a7b",
+      "member_count": 11,
+      "internal_sha256_records": 10,
+      "passed": true
+    },
+    {
+      "id": "batch084",
+      "zip_sha256": "fa6b656ccebdc9bca39a5db5676ca1222721bf65934410bb0217198a6241069f",
+      "member_count": 11,
+      "internal_sha256_records": 10,
+      "passed": true
+    },
+    {
+      "id": "batch085",
+      "zip_sha256": "fbeb79c5b1a8d81587fba4831af84958ab11bc64dce10a503dc1792cea15d791",
+      "member_count": 11,
+      "internal_sha256_records": 10,
+      "passed": true
+    },
+    {
+      "id": "batch086",
+      "zip_sha256": "89c82e0d7686549381bad7f75000ad4c8dd87a5254176ea09f86c05b2dff027f",
+      "member_count": 12,
+      "internal_sha256_records": 11,
+      "passed": true
+    },
+    {
+      "id": "batch087",
+      "zip_sha256": "57112fa43cfbe7d21ed9f7e1571253b9e6900480450bd6b9e26bc49eb5b9e7db",
+      "member_count": 13,
+      "internal_sha256_records": 12,
+      "passed": true
+    },
+    {
+      "id": "batch088",
+      "zip_sha256": "5e2d93f55c7fa27e68bf9df0568fde92feff463716b89fe0a1be807f02a31692",
+      "member_count": 13,
+      "internal_sha256_records": 12,
+      "passed": true
+    },
+    {
+      "id": "batch089",
+      "zip_sha256": "c8235d86d6deabbb20cef90b4080f3229d63ed7fbb8449a26f52285e331d1d4d",
+      "member_count": 13,
+      "internal_sha256_records": 12,
+      "passed": true
+    },
+    {
+      "id": "batch090",
+      "zip_sha256": "a281e3987b248c459144a4623d7d214611ee09c13dc840129f2e790aa2fdfbfd",
+      "member_count": 13,
+      "internal_sha256_records": 12,
+      "passed": true
+    },
+    {
+      "id": "batch091",
+      "zip_sha256": "39c030eb4bb28ef9066732306eca8f09496c7b9ce64561837a115364db4811f5",
+      "member_count": 13,
+      "internal_sha256_records": 12,
+      "passed": true
+    },
+    {
+      "id": "batch092",
+      "zip_sha256": "79d3bddd6e46412f380189bd1e8173baf4c06f2a440cf70727c23ac65024a1f9",
+      "member_count": 13,
+      "internal_sha256_records": 12,
+      "passed": true
+    },
+    {
+      "id": "batch093",
+      "zip_sha256": "6b0e755f6bb1a68125885db61fdc5d312a6d8d7ede2e16a3d73b6106ecd293ae",
+      "member_count": 13,
+      "internal_sha256_records": 12,
+      "passed": true
+    },
+    {
+      "id": "batch094",
+      "zip_sha256": "1771c9a51f8a1e55ebe3793f3315a076fd791bc946edb2d4cecd62bc5363f3b9",
+      "member_count": 13,
+      "internal_sha256_records": 12,
+      "passed": true
+    },
+    {
+      "id": "batch095",
+      "zip_sha256": "16961859e722c0b6280fd85c61e54048bb89a8fce284babf53a876a7fa1c0444",
+      "member_count": 13,
+      "internal_sha256_records": 12,
+      "passed": true
+    },
+    {
+      "id": "batch096",
+      "zip_sha256": "878a3067c32797b31aefa78247243512a4c1ba190e30a82c0af655ab07152615",
+      "member_count": 14,
+      "internal_sha256_records": 13,
+      "passed": true
+    },
+    {
+      "id": "batch097",
+      "zip_sha256": "0134fc3e6d59d9a5f6cad852885ea332643124b4beef81feffbc3745c0bff634",
+      "member_count": 14,
+      "internal_sha256_records": 13,
+      "passed": true
+    },
+    {
+      "id": "batch098",
+      "zip_sha256": "9d55a8ebbc0a0f9acbb2562ca12ddce17476ac369c4a295f44134fdafe351d41",
+      "member_count": 14,
+      "internal_sha256_records": 13,
+      "passed": true
+    },
+    {
+      "id": "batch099",
+      "zip_sha256": "f8c353eb4d5bd43d4d0789b404478b749c61bda6ca1d6d5838b38fd343e65ed0",
+      "member_count": 13,
+      "internal_sha256_records": 12,
+      "passed": true
+    },
+    {
+      "id": "batch100",
+      "zip_sha256": "c9e592ead4fbd605913ef88672b456be36e6fc08b671d59b0277119089d06935",
+      "member_count": 13,
+      "internal_sha256_records": 12,
+      "passed": true
+    },
+    {
+      "id": "batch101",
+      "zip_sha256": "886f273abee40374a95dd8350aacc5b1a3bc0c3d216fd1ca2e80fef81bfb4f7d",
+      "member_count": 13,
+      "internal_sha256_records": 12,
+      "passed": true
+    },
+    {
+      "id": "batch102",
+      "zip_sha256": "d5a95e25a6b6f398dfc1e1339c157dfd20bfa22b9ef9a9ae1ba9d909b8926fa7",
+      "member_count": 13,
+      "internal_sha256_records": 12,
+      "passed": true
+    },
+    {
+      "id": "batch103",
+      "zip_sha256": "0e13b1dc71216e55ad242fb5af7f48d232e468488be54702fbfde2c21887247e",
+      "member_count": 13,
+      "internal_sha256_records": 12,
+      "passed": true
+    },
+    {
+      "id": "batch104",
+      "zip_sha256": "f4b9ff61309e95d5d6f400154249ac19414369ca56580a921a4feb9575670219",
+      "member_count": 13,
+      "internal_sha256_records": 12,
+      "passed": true
+    },
+    {
+      "id": "batch105",
+      "zip_sha256": "2e85335b27e433bdb2c2082ded914775e1fe0c1bcf6508a31990100280b284bd",
+      "member_count": 13,
+      "internal_sha256_records": 12,
+      "passed": true
+    },
+    {
+      "id": "batch106",
+      "zip_sha256": "3ad80475d3192042655d2caa592e47a29e29e8860bdce47f262ba796edd31b70",
+      "member_count": 14,
+      "internal_sha256_records": 13,
+      "passed": true
+    },
+    {
+      "id": "batch107",
+      "zip_sha256": "24e7571554b8b8f67b2d778698d6923e621962f5f7c58264ba8201447be216d1",
+      "member_count": 15,
+      "internal_sha256_records": 14,
+      "passed": true
+    },
+    {
+      "id": "batch108",
+      "zip_sha256": "40007dce16802a60a37bcf5200fc5fa4356f970b696a3523850c626441022258",
+      "member_count": 13,
+      "internal_sha256_records": 12,
+      "passed": true
+    }
+  ],
+  "boundary": "Archive bytes, CRC, safe paths, member/extraction identity and internal checksums only. No TeX compilation, mathematical review or PDF visual review."
+}

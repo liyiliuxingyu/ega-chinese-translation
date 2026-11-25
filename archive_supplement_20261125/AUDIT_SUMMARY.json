@@ -1,0 +1,121 @@
+{
+  "audit_date": "2026-11-25",
+  "time_zone": "Asia/Shanghai",
+  "base_commit": "4daf708a87069e2a6e28c22a29d3e3af26880f0b",
+  "scope": "Upload completeness and archival recovery; no new translation or mathematical certification",
+  "base_publication_manifest": {
+    "files": 4184,
+    "all_actual_bytes_verified": true
+  },
+  "base_release_archive": {
+    "members": 4191,
+    "all_members_match_git_checkout": true
+  },
+  "historical_originals_added": 15,
+  "historical_original_bytes": 234893896,
+  "historical_member_records_previously_absent": 897,
+  "historical_unique_byte_objects_previously_absent": 609,
+  "historical_tex_member_records_previously_absent": 108,
+  "dot_originals_added": 11,
+  "dot_batches_added": [
+    109,
+    110,
+    111,
+    112,
+    113,
+    114,
+    115,
+    116,
+    117,
+    118,
+    119
+  ],
+  "dot_before_prior_release": [
+    109,
+    110,
+    111,
+    112,
+    113,
+    114,
+    115,
+    116
+  ],
+  "dot_after_prior_release": [
+    117,
+    118,
+    119
+  ],
+  "dot_original_bytes": 7050791,
+  "new_original_archives_total": 26,
+  "new_original_bytes_total": 241944687,
+  "current_translation": "current/EGA_v19",
+  "current_translation_files_changed": false,
+  "current_translation_next": {
+    "french_physical_page": 64,
+    "english_physical_page": 43,
+    "section": "12"
+  },
+  "independent_dot_latest": {
+    "batch": 119,
+    "french_physical_page": 71,
+    "english_physical_page": 47,
+    "next_anchor": "D’autre part, dans X_Grass^m - V''",
+    "not_a_merged_progress_claim": true
+  },
+  "unrecoverable_original_archives": [
+    {
+      "file_name": "EGAI_中文译稿_第1分册_工程.zip",
+      "recovery_result": "content_missing",
+      "retryable": false,
+      "interpretation": "Original historical ZIP bytes are unavailable via retained attachment identifiers; do not assert original container recovered."
+    },
+    {
+      "file_name": "EGAI_中文译稿_第2分册_工程.zip",
+      "recovery_result": "content_missing",
+      "retryable": false,
+      "interpretation": "Original historical ZIP bytes are unavailable via retained attachment identifiers; do not assert original container recovered."
+    },
+    {
+      "file_name": "EGAI_中文译稿_第3分册_工程.zip",
+      "recovery_result": "content_missing",
+      "retryable": false,
+      "interpretation": "Original historical ZIP bytes are unavailable via retained attachment identifiers; do not assert original container recovered."
+    },
+    {
+      "file_name": "EGAI_中文译稿_第4分册_工程.zip",
+      "recovery_result": "content_missing",
+      "retryable": false,
+      "interpretation": "Original historical ZIP bytes are unavailable via retained attachment identifiers; do not assert original container recovered."
+    },
+    {
+      "file_name": "EGAI_中文全译稿_工程.zip",
+      "recovery_result": "content_missing",
+      "retryable": false,
+      "interpretation": "Original historical ZIP bytes are unavailable via retained attachment identifiers; do not assert original container recovered."
+    },
+    {
+      "file_name": "EGAII_中文译稿_第1分册_工程.zip",
+      "recovery_result": "content_missing",
+      "retryable": false,
+      "interpretation": "Original historical ZIP bytes are unavailable via retained attachment identifiers; do not assert original container recovered."
+    },
+    {
+      "file_name": "EGAII_中文全译稿_工程.zip",
+      "recovery_result": "content_missing",
+      "retryable": false,
+      "interpretation": "Original historical ZIP bytes are unavailable via retained attachment identifiers; do not assert original container recovered."
+    }
+  ],
+  "all_original_chat_attachments_recovered": false,
+  "all_books_finished": false,
+  "dot_search_boundary": {
+    "query": "EGA第五卷",
+    "search_title_only": true,
+    "modified_after": "2026-11-24T00:00:00Z",
+    "top_k": 100,
+    "returned": 57,
+    "next_cursor": null,
+    "boundary": "This targeted search does not claim an exhaustive inventory of all user files."
+  },
+  "publication_evidence": "ARCHIVE_SUPPLEMENT_IMPORT.json and the matching GitHub Release PACKAGE_VERIFICATION.json are the publication records; this report records the source/recovery audit."
+}

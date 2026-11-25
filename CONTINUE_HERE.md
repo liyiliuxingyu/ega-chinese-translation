@@ -1,5 +1,12 @@
 # 新对话从这里接续
 
+## 归档补充提示（2026-11-25）
+
+新增 `archive_supplement_20261125/` 保存15个旧合订工程原ZIP、Dot109—119批11个原ZIP和本次漏传核查报告。先读其中 `AUDIT_REPORT.md`、`ARCHIVE_INDEX.json`；另7个早期独立卷册原ZIP确实不可恢复，不得宣称最初所有附件已原样保存。
+
+现行合订源码仍为 `current/EGA_v19/`；本次没有修改其正文或进度。Dot109—116与第十九版回校内容重叠，只作为原始独立档案；117—119可供§12整合回校时优先复用，必须对照实际底本、现行脚注和未决项，不直接覆盖。合订稿下一整合点仍为法64页§12／英43页中段；独立119批的下一位置是法71页末 “D’autre part, dans X_Grass^m - V''”／英47页。两种进度分别记录。
+
+
 当前工程：`current/EGA_v19/`。先读本页、根`AGENTS.md`，再读当前工程的`PROGRESS.md`、`HANDOVER_STATE.json`、`ARTIFACTS.json`、`SOURCE_MAP.md`、`PENDING_ISSUES.md`及真实源码。仅以实际文件和核验记录确认完成范围。
 
 ## 下一实际位置

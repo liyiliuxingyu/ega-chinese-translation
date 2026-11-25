@@ -1,0 +1,1302 @@
+{
+  "checked_utc": "2026-11-25T14:03:37.422975+00:00",
+  "repository_commit": "4daf708a87069e2a6e28c22a29d3e3af26880f0b",
+  "pass": true,
+  "old75_main_tex_rehashed": 75,
+  "old75_found_byte_identical_in_original_zips": 75,
+  "old_top_level_zip_archives_crc_checked": 22,
+  "old_nested_ega_zip_archives_crc_checked": 54,
+  "direct_old19_zip_sha256_checked": 19,
+  "current_batch69_108_input_once_and_file_present": true,
+  "old_dot_total_archive_does_not_contain_historical_combined_book_project_zip": true,
+  "sources": [
+    {
+      "id": "old001",
+      "path": "archive_20261121/05_Dot/batches/001/EGA第五卷_第7节_独立续译.tex",
+      "sha256": "7ecc1b94344f524354206092830aa7d1542aeed2bc403f2cf6057a298c29363a",
+      "matches_index": true,
+      "original_zip_locations": [
+        "archive_20261121/05_Dot/original_archives/Dot对话_续作工程_20261119.zip!/EGA V 各批续译/EGA第五卷_第7节_独立续译工程.zip!/EGA第五卷_第7节_独立续译.tex"
+      ]
+    },
+    {
+      "id": "old002",
+      "path": "archive_20261121/05_Dot/batches/002/EGA第五卷_8.1至8.6_独立续译.tex",
+      "sha256": "2e445f596f61687678830809979c6e5d679dc0a7174a8ddb0093fb372a4f1ec7",
+      "matches_index": true,
+      "original_zip_locations": [
+        "archive_20261121/05_Dot/original_archives/Dot对话_续作工程_20261119.zip!/EGA V 各批续译/EGA第五卷_8.1至8.6_独立续译工程.zip!/EGA第五卷_8.1至8.6_独立续译.tex"
+      ]
+    },
+    {
+      "id": "old003",
+      "path": "archive_20261121/05_Dot/batches/003/EGA第五卷_8.6后预备论证_校订续译.tex",
+      "sha256": "df1b4ba93846a592c302effcbabbadbb8cbf2a62eb277b9db2084b4dd2a8bdb8",
+      "matches_index": true,
+      "original_zip_locations": [
+        "archive_20261121/05_Dot/original_archives/Dot对话_续作工程_20261119.zip!/EGA V 各批续译/EGA第五卷_8.6后预备论证_校订续译工程.zip!/EGA第五卷_8.6后预备论证_校订续译.tex"
+      ]
+    },
+    {
+      "id": "old004",
+      "path": "archive_20261121/05_Dot/batches/004/EGA第五卷_8.7及相邻残段_校订续译.tex",
+      "sha256": "fc2d7fa40d01cfd639dee8d1b9e46d8b855acfcc9b22579c1dbf13faa2009526",
+      "matches_index": true,
+      "original_zip_locations": [
+        "archive_20261121/05_Dot/original_archives/Dot对话_续作工程_20261119.zip!/EGA V 各批续译/EGA第五卷_8.7及相邻残段_校订续译工程.zip!/EGA第五卷_8.7及相邻残段_校订续译.tex"
+      ]
+    },
+    {
+      "id": "old005",
+      "path": "archive_20261121/05_Dot/batches/005/EGA第五卷_8.9至8.11_校订续译.tex",
+      "sha256": "73ac6c0ada39af4afcb73c73e5767b92ed5d13b3a3e1a5e479cc349fe209b847",
+      "matches_index": true,
+      "original_zip_locations": [
+        "archive_20261121/05_Dot/original_archives/Dot对话_续作工程_20261119.zip!/EGA V 各批续译/EGA第五卷_8.9至8.11_校订续译工程.zip!/EGA第五卷_8.9至8.11_校订续译.tex"
+      ]
+    },
+    {
+      "id": "old006",
+      "path": "archive_20261121/05_Dot/batches/006/EGA第五卷_8.12_校订续译.tex",
+      "sha256": "23e47b11c2fa2d4b0a1ab221ecb2d6e8e6c4d72124989f86e965c51ac1dc1076",
+      "matches_index": true,
+      "original_zip_locations": [
+        "archive_20261121/05_Dot/original_archives/Dot对话_续作工程_20261119.zip!/EGA V 各批续译/EGA第五卷_8.12_校订续译工程.zip!/EGA第五卷_8.12_校订续译.tex"
+      ]
+    },
+    {
+      "id": "old007",
+      "path": "archive_20261121/05_Dot/batches/007/EGA第五卷_8.13_校订续译.tex",
+      "sha256": "4c7f72e07f2701f123ea43af17675af301c8f291a195a2a4b503d9c46be14380",
+      "matches_index": true,
+      "original_zip_locations": [
+        "archive_20261121/05_Dot/original_archives/Dot对话_续作工程_20261119.zip!/EGA V 各批续译/EGA第五卷_8.13_校订续译工程.zip!/EGA第五卷_8.13_校订续译.tex",
+        "archive_20261121/05_Dot/original_archives/Dot对话_续作工程_20261119.zip!/EGA V 各批续译/EGA第五卷_8.14至8.15_校订续译工程.zip!/前批8.13.tex"
+      ]
+    },
+    {
+      "id": "old008",
+      "path": "archive_20261121/05_Dot/batches/008/EGA第五卷_8.14至8.15_校订续译.tex",
+      "sha256": "801ea6d17f9d89cc133d7f7982bf6d729c69454cd12c923e2027a3a977af0bb0",
+      "matches_index": true,
+      "original_zip_locations": [
+        "archive_20261121/05_Dot/original_archives/Dot对话_续作工程_20261119.zip!/EGA V 各批续译/EGA第五卷_8.14至8.15_校订续译工程.zip!/EGA第五卷_8.14至8.15_校订续译.tex"
+      ]
+    },
+    {
+      "id": "old009",
+      "path": "archive_20261121/05_Dot/batches/009/EGA第五卷_8.16至8.17_校订续译.tex",
+      "sha256": "950072c77726bfe4017b8166c3f025c6914db5c2df9e29cbecd0d3509d48bc71",
+      "matches_index": true,
+      "original_zip_locations": [
+        "archive_20261121/05_Dot/original_archives/Dot对话_续作工程_20261119.zip!/EGA V 各批续译/EGA第五卷_8.16至8.17_校订续译工程.zip!/EGA第五卷_8.16至8.17_校订续译.tex"
+      ]
+    },
+    {
+      "id": "old010",
+      "path": "archive_20261121/05_Dot/batches/010/EGA第五卷_8.18_校订续译.tex",
+      "sha256": "2e26a0d1614b48c785c96d879d6fe461600d685cc8e25931930fe49e62126962",
+      "matches_index": true,
+      "original_zip_locations": [
+        "archive_20261121/05_Dot/original_archives/Dot对话_续作工程_20261119.zip!/EGA V 各批续译/EGA第五卷_8.18_校订续译工程.zip!/EGA第五卷_8.18_校订续译.tex"
+      ]
+    },
+    {
+      "id": "old011",
+      "path": "archive_20261121/05_Dot/batches/011/EGA第五卷_8.18后线性系讨论_第一批.tex",
+      "sha256": "c72d4728edc987cb39aa4e8eeca5eff951940107628e5b05f9383e496e68b36a",
+      "matches_index": true,
+      "original_zip_locations": [
+        "archive_20261121/05_Dot/original_archives/Dot对话_续作工程_20261119.zip!/EGA V 各批续译/EGA第五卷_8.18后线性系讨论_第一批_工程.zip!/EGA第五卷_8.18后线性系讨论_第一批.tex"
+      ]
+    },
+    {
+      "id": "old012",
+      "path": "archive_20261121/05_Dot/batches/012/EGA第五卷_第8节末域论讨论.tex",
+      "sha256": "34d60dc1c655448afa767c327ce00ee78771539780df22f9e7f4a3109a5ab4d9",
+      "matches_index": true,
+      "original_zip_locations": [
+        "archive_20261121/05_Dot/original_archives/Dot对话_续作工程_20261119.zip!/EGA V 各批续译/EGA第五卷_第8节末域论讨论_工程.zip!/EGA第五卷_第8节末域论讨论.tex"
+      ]
+    },
+    {
+      "id": "old013",
+      "path": "archive_20261121/05_Dot/batches/013/EGA第五卷_9.1至9.2_校订续译.tex",
+      "sha256": "a25a7c0a369d1b722a24884b8e75d4772ec37abab201c8c4b602657a467eb2f3",
+      "matches_index": true,
+      "original_zip_locations": [
+        "archive_20261121/05_Dot/original_archives/Dot对话_续作工程_20261119.zip!/EGA V 各批续译/EGA第五卷_9.1至9.2_校订续译_工程.zip!/EGA第五卷_9.1至9.2_校订续译.tex"
+      ]
+    },
+    {
+      "id": "old014",
+      "path": "archive_20261121/05_Dot/batches/014/EGA第五卷_9.3_校订续译.tex",
+      "sha256": "debd6212dce1b295319f4158585fe5205b2b6d5ccbd58a81ac62bcaa3df403ea",
+      "matches_index": true,
+      "original_zip_locations": [
+        "archive_20261121/05_Dot/original_archives/Dot对话_续作工程_20261119.zip!/EGA V 各批续译/EGA第五卷_9.3_校订续译_工程.zip!/EGA第五卷_9.3_校订续译.tex"
+      ]
+    },
+    {
+      "id": "old015",
+      "path": "archive_20261121/05_Dot/batches/015/EGA第五卷_9.4至10.1_校订续译.tex",
+      "sha256": "e3592ca0b3e051b57481b2d1fb3103616306ba8de3bd28c90a5c40c7b4e80a0f",
+      "matches_index": true,
+      "original_zip_locations": [
+        "archive_20261121/05_Dot/original_archives/Dot对话_续作工程_20261119.zip!/EGA V 各批续译/EGA第五卷_9.4至10.1_校订续译_工程.zip!/EGA第五卷_9.4至10.1_校订续译.tex"
+      ]
+    },
+    {
+      "id": "old016",
+      "path": "archive_20261121/05_Dot/batches/016/EGA第五卷_10.2_校订续译.tex",
+      "sha256": "306a200b352c163da234da79ad8b85311b9e4c57dea58f27ce8ba37eb0a19eec",
+      "matches_index": true,
+      "original_zip_locations": [
+        "archive_20261121/05_Dot/original_archives/Dot对话_续作工程_20261119.zip!/EGA V 各批续译/EGA第五卷_10.2_校订续译_工程.zip!/EGA第五卷_10.2_校订续译.tex"
+      ]
+    },
+    {
+      "id": "old017",
+      "path": "archive_20261121/05_Dot/batches/017/EGA第五卷_10.3_校订续译.tex",
+      "sha256": "1f75071362315418f5c6871b9e72068d0f61df92c781267cd9a845782dd807a0",
+      "matches_index": true,
+      "original_zip_locations": [
+        "archive_20261121/05_Dot/original_archives/Dot对话_续作工程_20261119.zip!/EGA V 各批续译/EGA第五卷_10.3_校订续译_工程.zip!/EGA第五卷_10.3_校订续译.tex"
+      ]
+    },
+    {
+      "id": "old018",
+      "path": "archive_20261121/05_Dot/batches/018/EGA第五卷_10.4_校订续译.tex",
+      "sha256": "1edb09b445ca9384329051b551a2e188464d6fd70f9eadfb43a3bb39a35fc476",
+      "matches_index": true,
+      "original_zip_locations": [
+        "archive_20261121/05_Dot/original_archives/Dot对话_续作工程_20261119.zip!/EGA V 各批续译/EGA第五卷_10.4_校订续译_工程.zip!/EGA第五卷_10.4_校订续译.tex"
+      ]
+    },
+    {
+      "id": "old019",
+      "path": "archive_20261121/05_Dot/batches/019/EGA第五卷_12节关联概形_校订续译.tex",
+      "sha256": "4db1b0865036e71bc89fc83473ec7ca5f40c818026e783627660424e82b96e22",
+      "matches_index": true,
+      "original_zip_locations": [
+        "archive_20261121/05_Dot/original_archives/Dot对话_续作工程_20261119.zip!/EGA V 各批续译/EGA第五卷_12节关联概形_续译工程.zip!/EGA第五卷_12节关联概形_校订续译.tex"
+      ]
+    },
+    {
+      "id": "old020",
+      "path": "archive_20261121/05_Dot/batches/020/EGA第五卷_12节纤维结构_校订续译.tex",
+      "sha256": "76e06e0fa9ff2353d5735a0521629e97b3a9c59069bb01e24020d044e7608e11",
+      "matches_index": true,
+      "original_zip_locations": [
+        "archive_20261121/05_Dot/original_archives/Dot对话_续作工程_20261119.zip!/EGA V 各批续译/EGA第五卷_12节纤维结构_续译工程.zip!/EGA第五卷_12节纤维结构_校订续译.tex"
+      ]
+    },
+    {
+      "id": "old021",
+      "path": "archive_20261121/05_Dot/batches/021/EGA第五卷_12节一般截面推广_校订续译.tex",
+      "sha256": "b083faab147c7cafa0c98b6dbb869e39c21bdd614c42cc2d0d02e912abc8b6fc",
+      "matches_index": true,
+      "original_zip_locations": [
+        "archive_20261121/05_Dot/original_archives/Dot对话_续作工程_20261119.zip!/EGA V 各批续译/EGA第五卷_12节一般截面推广_续译工程.zip!/EGA第五卷_12节一般截面推广_校订续译.tex"
+      ]
+    },
+    {
+      "id": "old022",
+      "path": "archive_20261121/05_Dot/batches/022/EGA第五卷_12节正则截面_校订续译.tex",
+      "sha256": "416f5d7cb0095455889accb5678c45916b38d8955f383f42ef996e48cd11c2c7",
+      "matches_index": true,
+      "original_zip_locations": [
+        "archive_20261121/05_Dot/original_archives/Dot对话_续作工程_20261119.zip!/EGA V 各批续译/EGA第五卷_12节正则截面_续译工程.zip!/EGA第五卷_12节正则截面_校订续译.tex"
+      ]
+    },
+    {
+      "id": "old023",
+      "path": "archive_20261121/05_Dot/batches/023/EGA第五卷_12节维数条件与推广计划_校订续译.tex",
+      "sha256": "ae9474892ca1f54877ed21ccdd76d08877c9e180a7b7397d1dd5675aee7fcf1a",
+      "matches_index": true,
+      "original_zip_locations": [
+        "archive_20261121/05_Dot/original_archives/Dot对话_续作工程_20261119.zip!/EGA V 各批续译/EGA第五卷_12节维数条件与推广计划_续译工程.zip!/EGA第五卷_12节维数条件与推广计划_校订续译.tex"
+      ]
+    },
+    {
+      "id": "old024",
+      "path": "archive_20261121/05_Dot/batches/024/EGA第五卷_12节奇异关联簇_校订续译.tex",
+      "sha256": "05b11edba58c1d40df1ebe7eb0e63de8682df3bd9f578605982fbb2e017f0d8f",
+      "matches_index": true,
+      "original_zip_locations": [
+        "archive_20261121/05_Dot/original_archives/Dot对话_续作工程_20261119.zip!/EGA V 各批续译/EGA第五卷_12节奇异关联簇_续译工程.zip!/EGA第五卷_12节奇异关联簇_校订续译.tex"
+      ]
+    },
+    {
+      "id": "old025",
+      "path": "archive_20261121/05_Dot/batches/025/EGA第五卷_12节退化层维数_校订续译.tex",
+      "sha256": "2bdb76b3c9428ba1dd64d14a14b81889fb357d00d1661aa9be1759c34cf4b846",
+      "matches_index": true,
+      "original_zip_locations": [
+        "archive_20261121/05_Dot/original_archives/Dot对话_续作工程_20261119.zip!/EGA V 各批续译/EGA第五卷_12节退化层维数_续译工程.zip!/EGA第五卷_12节退化层维数_校订续译.tex"
+      ]
+    },
+    {
+      "id": "old026",
+      "path": "archive_20261121/05_Dot/batches/026/EGA第五卷_12节线性截面族_校订续译.tex",
+      "sha256": "71aa279bd6b79795f8141eaf76cd262a58180bcedf5147d49d2b49b7f1ef0daa",
+      "matches_index": true,
+      "original_zip_locations": [
+        "archive_20261121/05_Dot/original_archives/Dot对话_续作工程_20261119.zip!/EGA V 各批续译/EGA第五卷_12节线性截面族_续译工程.zip!/EGA第五卷_12节线性截面族_校订续译.tex"
+      ]
+    },
+    {
+      "id": "old027",
+      "path": "archive_20261121/05_Dot/batches/027/EGA第五卷_12节末与13节定义_校订续译.tex",
+      "sha256": "c015be64ee4be922698065e7997e1b0c5ad5de9a492dd0978414a6b2e64055b5",
+      "matches_index": true,
+      "original_zip_locations": [
+        "archive_20261121/05_Dot/original_archives/Dot对话_续作工程_20261119.zip!/EGA V 各批续译/EGA第五卷_12节末与13节定义_续译工程.zip!/EGA第五卷_12节末与13节定义_校订续译.tex"
+      ]
+    },
+    {
+      "id": "old028",
+      "path": "archive_20261121/05_Dot/batches/028/EGA第五卷_13.2归约_校订续译.tex",
+      "sha256": "de983faef363680872db2b888bd7a285f5eca26e001ceb1941cd487f5cd2ab05",
+      "matches_index": true,
+      "original_zip_locations": [
+        "archive_20261121/05_Dot/original_archives/Dot对话_续作工程_20261119.zip!/EGA V 各批续译/EGA第五卷_13.2归约_续译工程.zip!/EGA第五卷_13.2归约_校订续译.tex"
+      ]
+    },
+    {
+      "id": "old029",
+      "path": "archive_20261121/05_Dot/batches/029/EGA第五卷_13.3陈述_校订续译.tex",
+      "sha256": "3376b2a0316e6da711b3134bb5ae281a8822803baf7ecc00ab5fcb1c7b3d9feb",
+      "matches_index": true,
+      "original_zip_locations": [
+        "archive_20261121/05_Dot/original_archives/Dot对话_续作工程_20261119.zip!/EGA V 各批续译/EGA第五卷_13.3陈述_续译工程.zip!/EGA第五卷_13.3陈述_校订续译.tex"
+      ]
+    },
+    {
+      "id": "old030",
+      "path": "archive_20261121/05_Dot/batches/030/EGA第五卷_13.2初等邻域构造_校订续译.tex",
+      "sha256": "cc0b44c8f61c0862424ba98e015d963f3b38a679cd01b08c273608c32ad11307",
+      "matches_index": true,
+      "original_zip_locations": [
+        "archive_20261121/05_Dot/original_archives/Dot对话_续作工程_20261119.zip!/EGA V 各批续译/EGA第五卷_13.2初等邻域构造_续译工程.zip!/EGA第五卷_13.2初等邻域构造_校订续译.tex"
+      ]
+    },
+    {
+      "id": "old031",
+      "path": "archive_20261121/05_Dot/batches/031/EGA第五卷_13.3证明归约_校订续译.tex",
+      "sha256": "a814d857f3fff278b30459906e4a8a0b54512dd92061ff100eabf9de1cb877d1",
+      "matches_index": true,
+      "original_zip_locations": [
+        "archive_20261121/05_Dot/original_archives/Dot对话_续作工程_20261119.zip!/EGA V 各批续译/EGA第五卷_13.3证明归约_续译工程.zip!/EGA第五卷_13.3证明归约_校订续译.tex"
+      ]
+    },
+    {
+      "id": "old032",
+      "path": "archive_20261121/05_Dot/batches/032/EGA第五卷_13.3一般截面归纳_校订续译.tex",
+      "sha256": "2fc10527e50375e75d4688252e69da38e9391ccfb8b78fdb5c0658ff40f2bf79",
+      "matches_index": true,
+      "original_zip_locations": [
+        "archive_20261121/05_Dot/original_archives/Dot对话_续作工程_20261119.zip!/EGA V 各批续译/EGA第五卷_13.3一般截面归纳_续译工程.zip!/EGA第五卷_13.3一般截面归纳_校订续译.tex"
+      ]
+    },
+    {
+      "id": "old033",
+      "path": "archive_20261121/05_Dot/batches/033/EGA第五卷_13.3超平面情形证明_校订续译.tex",
+      "sha256": "7b2ee65dbd3a00d5e1c6fb527f410a63b2bb850f45f9305fc5b4a8ce3042fdd3",
+      "matches_index": true,
+      "original_zip_locations": [
+        "archive_20261121/05_Dot/original_archives/Dot对话_续作工程_20261119.zip!/EGA V 各批续译/EGA第五卷_13.3超平面情形证明_续译工程.zip!/EGA第五卷_13.3超平面情形证明_校订续译.tex"
+      ]
+    },
+    {
+      "id": "old034",
+      "path": "archive_20261121/05_Dot/batches/034/EGA第五卷_13.4有限域与连通性_校订续译.tex",
+      "sha256": "536434aad8cedf4a1974ca068579c7baebf5d073be4ae315c2d8f5d6c728e98c",
+      "matches_index": true,
+      "original_zip_locations": [
+        "archive_20261121/05_Dot/original_archives/Dot对话_续作工程_20261119.zip!/EGA V 各批续译/EGA第五卷_13.4有限域与连通性_续译工程.zip!/EGA第五卷_13.4有限域与连通性_校订续译.tex"
+      ]
+    },
+    {
+      "id": "old035",
+      "path": "archive_20261121/05_Dot/batches/035/EGA第五卷_13.4有限点集邻域_校订续译.tex",
+      "sha256": "2d2a1e910613c34df21af18c0b345bc7e6ed0173d6257ff761969eea62d2a183",
+      "matches_index": true,
+      "original_zip_locations": [
+        "archive_20261121/05_Dot/original_archives/Dot对话_续作工程_20261119.zip!/EGA V 各批续译/EGA第五卷_13.4有限点集邻域_续译工程.zip!/EGA第五卷_13.4有限点集邻域_校订续译.tex"
+      ]
+    },
+    {
+      "id": "old036",
+      "path": "archive_20261121/05_Dot/batches/036/EGA第五卷_13.4一般基底_校订续译.tex",
+      "sha256": "46c7f159b8987d395817e0b4b60947395d2c2ff3de9e880b8aed17a7026670eb",
+      "matches_index": true,
+      "original_zip_locations": [
+        "archive_20261121/05_Dot/original_archives/Dot对话_续作工程_20261119.zip!/EGA V 各批续译/EGA第五卷_13.4一般基底_续译工程.zip!/EGA第五卷_13.4一般基底_校订续译.tex"
+      ]
+    },
+    {
+      "id": "old037",
+      "path": "archive_20261121/05_Dot/batches/037/EGA第五卷_13.4拓扑结构_校订续译.tex",
+      "sha256": "919e37af0df931f0e0dda7651aa35a6ec66ac8412adde70c03201dfb96ae26c3",
+      "matches_index": true,
+      "original_zip_locations": [
+        "archive_20261121/05_Dot/original_archives/Dot对话_续作工程_20261119.zip!/EGA V 各批续译/EGA第五卷_13.4拓扑结构_续译工程.zip!/EGA第五卷_13.4拓扑结构_校订续译.tex"
+      ]
+    },
+    {
+      "id": "old038",
+      "path": "archive_20261121/05_Dot/batches/038/EGA第五卷_14锥投影构造_校订续译.tex",
+      "sha256": "9c33dc5c2b130e6e7811d2e13dd27552dbfe7b5f96f81efa38deb60baf84feb0",
+      "matches_index": true,
+      "original_zip_locations": [
+        "archive_20261121/05_Dot/original_archives/Dot对话_续作工程_20261119.zip!/EGA V 各批续译/EGA第五卷_14锥投影构造_续译工程.zip!/EGA第五卷_14锥投影构造_校订续译.tex"
+      ]
+    },
+    {
+      "id": "old039",
+      "path": "archive_20261121/05_Dot/batches/039/EGA第五卷_14一般中心_校订续译.tex",
+      "sha256": "528c086837501cb3c44f6ade1ea0238ce1c397e36ea167b3d11eaae5d1988895",
+      "matches_index": true,
+      "original_zip_locations": [
+        "archive_20261121/05_Dot/original_archives/Dot对话_续作工程_20261119.zip!/EGA V 各批续译/EGA第五卷_14一般中心_续译工程.zip!/EGA第五卷_14一般中心_校订续译.tex"
+      ]
+    },
+    {
+      "id": "old040",
+      "path": "archive_20261121/05_Dot/batches/040/EGA第五卷_14正则截面与爆破_校订续译.tex",
+      "sha256": "2125248b6dccc418efb2adaa991e936741fa5fd12a293a9265e9b39d71f88173",
+      "matches_index": true,
+      "original_zip_locations": [
+        "archive_20261121/05_Dot/original_archives/Dot对话_续作工程_20261119.zip!/EGA V 各批续译/EGA第五卷_14正则截面与爆破_续译工程.zip!/EGA第五卷_14正则截面与爆破_校订续译.tex"
+      ]
+    },
+    {
+      "id": "old041",
+      "path": "archive_20261121/05_Dot/batches/041/EGA第五卷_14.1命题陈述_校订续译.tex",
+      "sha256": "6b490867b908d4ce7e811f22e23c73b3b50f5ff9d562ab958696598429e05df9",
+      "matches_index": true,
+      "original_zip_locations": [
+        "archive_20261121/05_Dot/original_archives/Dot对话_续作工程_20261119.zip!/EGA V 各批续译/EGA第五卷_14.1命题陈述_续译工程.zip!/EGA第五卷_14.1命题陈述_校订续译.tex"
+      ]
+    },
+    {
+      "id": "old042",
+      "path": "archive_20261121/05_Dot/batches/042/EGA第五卷_14.1证明残文_校订续译.tex",
+      "sha256": "ba0b36fd3d0a72d080218b9b31275eb560f40d7b573b7ba35d1f3a0cadf974a1",
+      "matches_index": true,
+      "original_zip_locations": [
+        "archive_20261121/05_Dot/original_archives/Dot对话_续作工程_20261119.zip!/EGA V 各批续译/EGA第五卷_14.1证明残文_续译工程.zip!/EGA第五卷_14.1证明残文_校订续译.tex"
+      ]
+    },
+    {
+      "id": "old043",
+      "path": "archive_20261121/05_Dot/batches/043/EGA第五卷_14.2有限投影_校订续译.tex",
+      "sha256": "187c503878e1a5e52df36469c8e94035447f6ea348e518da915d80b21fb38f91",
+      "matches_index": true,
+      "original_zip_locations": [
+        "archive_20261121/05_Dot/original_archives/Dot对话_续作工程_20261119.zip!/EGA V 各批续译/EGA第五卷_14.2有限投影_续译工程.zip!/EGA第五卷_14.2有限投影_校订续译.tex"
+      ]
+    },
+    {
+      "id": "old044",
+      "path": "archive_20261121/05_Dot/batches/044/EGA第五卷_14.3平坦性_校订续译.tex",
+      "sha256": "1654ddb2ac525ff5f71e84b3f23dd7221e8553bc1e0be9778d544ab953c1322e",
+      "matches_index": true,
+      "original_zip_locations": [
+        "archive_20261121/05_Dot/original_archives/Dot对话_续作工程_20261119.zip!/EGA V 各批续译/EGA第五卷_14.3平坦性_续译工程.zip!/EGA第五卷_14.3平坦性_校订续译.tex"
+      ]
+    },
+    {
+      "id": "old045",
+      "path": "archive_20261121/05_Dot/batches/045/EGA第五卷_锥投影微分性质导言_校订续译.tex",
+      "sha256": "801e7d7102be174922ad04617bf594708570d42f6d8521e670bdcb0a0a0d3dd7",
+      "matches_index": true,
+      "original_zip_locations": [
+        "archive_20261121/05_Dot/original_archives/Dot对话_续作工程_20261119.zip!/EGA V 各批续译/EGA第五卷_锥投影微分性质导言_续译工程.zip!/EGA第五卷_锥投影微分性质导言_校订续译.tex"
+      ]
+    },
+    {
+      "id": "old046",
+      "path": "archive_20261121/05_Dot/batches/046/EGA第五卷_命题14.4_校订续译.tex",
+      "sha256": "79857c686155f64b9e822a342f34a8325f0f8bcbe066bff8340535b7cd12594f",
+      "matches_index": true,
+      "original_zip_locations": [
+        "archive_20261121/05_Dot/original_archives/Dot对话_续作工程_20261119.zip!/EGA V 各批续译/EGA第五卷_命题14.4_续译工程.zip!/EGA第五卷_命题14.4_校订续译.tex"
+      ]
+    },
+    {
+      "id": "old047",
+      "path": "archive_20261121/05_Dot/batches/047/EGA第五卷_命题14.5与推论14.6_校订续译.tex",
+      "sha256": "d0146ca2199e9860bf4b4d5590ce1e3bdf4f0e2fa552530bdbc210625c5ce7c6",
+      "matches_index": true,
+      "original_zip_locations": [
+        "archive_20261121/05_Dot/original_archives/Dot对话_续作工程_20261119.zip!/EGA V 各批续译/EGA第五卷_命题14.5与推论14.6_续译工程.zip!/EGA第五卷_命题14.5与推论14.6_校订续译.tex"
+      ]
+    },
+    {
+      "id": "old048",
+      "path": "archive_20261121/05_Dot/batches/048/EGA第五卷_锥投影性质辨析_校订续译.tex",
+      "sha256": "597f7eb71d806b520de0938d9350ca216fe18587721824ddfc70004373157a73",
+      "matches_index": true,
+      "original_zip_locations": [
+        "archive_20261121/05_Dot/original_archives/Dot对话_续作工程_20261119.zip!/EGA V 各批续译/EGA第五卷_锥投影性质辨析_续译工程.zip!/EGA第五卷_锥投影性质辨析_校订续译.tex"
+      ]
+    },
+    {
+      "id": "old049",
+      "path": "archive_20261121/05_Dot/batches/049/EGA第五卷_锥投影普遍图式_校订续译.tex",
+      "sha256": "8e97ae6de5c4393a338b65a8a6bef34aaa6ea460b523324c22ef262d793c7da4",
+      "matches_index": true,
+      "original_zip_locations": [
+        "archive_20261121/05_Dot/original_archives/Dot对话_续作工程_20261119.zip!/EGA V 各批续译/EGA第五卷_锥投影普遍图式_续译工程.zip!/EGA第五卷_锥投影普遍图式_校订续译.tex"
+      ]
+    },
+    {
+      "id": "old050",
+      "path": "archive_20261121/05_Dot/batches/050/EGA第五卷_第15节公理化导言_校订续译.tex",
+      "sha256": "70800fe0770bbb4069e09c03e3718218b4ecfac773f766c8d82c2074af1a2829",
+      "matches_index": true,
+      "original_zip_locations": [
+        "archive_20261121/05_Dot/original_archives/Dot对话_续作工程_20261119.zip!/EGA V 各批续译/EGA第五卷_第15节公理化导言_续译工程.zip!/EGA第五卷_第15节公理化导言_校订续译.tex"
+      ]
+    },
+    {
+      "id": "old051",
+      "path": "archive_20261121/05_Dot/batches/051/EGA第五卷_参数族与基变换_校订续译.tex",
+      "sha256": "46ec1b59637022d52c9ff76509112e4382d3f4f0491d48175a8b6b3dee4db239",
+      "matches_index": true,
+      "original_zip_locations": [
+        "archive_20261121/05_Dot/original_archives/Dot对话_续作工程_20261119.zip!/EGA V 各批续译/EGA第五卷_参数族与基变换_续译工程.zip!/EGA第五卷_参数族与基变换_校订续译.tex"
+      ]
+    },
+    {
+      "id": "old052",
+      "path": "archive_20261121/05_Dot/batches/052/EGA第五卷_平坦性假设与非空性公理_校订续译.tex",
+      "sha256": "19d70c6dcb987f55b58bfa8cc1511a3c8773eeb6fcc4e49961688f55a1a8a2c5",
+      "matches_index": true,
+      "original_zip_locations": [
+        "archive_20261121/05_Dot/original_archives/Dot对话_续作工程_20261119.zip!/EGA V 各批续译/EGA第五卷_平坦性假设与非空性公理_续译工程.zip!/EGA第五卷_平坦性假设与非空性公理_校订续译.tex"
+      ]
+    },
+    {
+      "id": "old053",
+      "path": "archive_20261121/05_Dot/batches/053/EGA第五卷_泛截面光滑性条件_校订续译.tex",
+      "sha256": "172f4da4df5d27a42b6d55d9578de87a431e17438c6c511bc63399a4070d625b",
+      "matches_index": true,
+      "original_zip_locations": [
+        "archive_20261121/05_Dot/original_archives/Dot对话_续作工程_20261119.zip!/EGA V 各批续译/EGA第五卷_泛截面光滑性条件_续译工程.zip!/EGA第五卷_泛截面光滑性条件_校订续译.tex"
+      ]
+    },
+    {
+      "id": "old054",
+      "path": "archive_20261121/05_Dot/batches/054/EGA第五卷_第15节推广计划结语_校订续译.tex",
+      "sha256": "4714381ca38c99ddf8961f384c677fe3dae8d777c2db0834f26c747d18989b6c",
+      "matches_index": true,
+      "original_zip_locations": [
+        "archive_20261121/05_Dot/original_archives/Dot对话_续作工程_20261119.zip!/EGA V 各批续译/EGA第五卷_第15节推广计划结语_续译工程.zip!/EGA第五卷_第15节推广计划结语_校订续译.tex"
+      ]
+    },
+    {
+      "id": "old055",
+      "path": "archive_20261121/05_Dot/batches/055/EGA第五卷_第16节奇异零点定义_校订续译.tex",
+      "sha256": "880fdb71fdab73b7f4fb7cb08395cfacf9a3b0ee2f722c748209f5e34e714ad4",
+      "matches_index": true,
+      "original_zip_locations": [
+        "archive_20261121/05_Dot/original_archives/EGA第五卷_第16节奇异零点定义_续译工程.zip!/EGA第五卷_第16节奇异零点定义_校订续译.tex"
+      ]
+    },
+    {
+      "id": "old056",
+      "path": "archive_20261121/05_Dot/batches/056/EGA第五卷_第16节几何奇异零点_校订续译.tex",
+      "sha256": "cbeb9dcf18feeadba8681bf2b7013e6e0b9c544a528ea5e05afee2ec90152ec4",
+      "matches_index": true,
+      "original_zip_locations": [
+        "archive_20261121/05_Dot/original_archives/EGA第五卷_第16节几何奇异零点_续译工程.zip!/EGA第五卷_第16节几何奇异零点_校订续译.tex"
+      ]
+    },
+    {
+      "id": "new001",
+      "path": "archive_20261121/05_Dot/new_20261121/batches/new001/EGA第五卷_第66页行列式交换图_校订续译.tex",
+      "sha256": "d47b2d5f7d52ad18bc65cebfbf4c91a724893b964bb38642b5c66396ef5dd291",
+      "matches_index": true,
+      "original_zip_locations": [
+        "archive_20261121/05_Dot/new_20261121/original_archives/EGA第五卷_第66页行列式交换图_续译工程.zip!/EGA第五卷_第66页行列式交换图_校订续译.tex"
+      ]
+    },
+    {
+      "id": "new002",
+      "path": "archive_20261121/05_Dot/new_20261121/batches/new002/EGA第五卷_行列式线丛与判别式_校订续译.tex",
+      "sha256": "0280bf24a079fe91b07ee6ef05f044b729d46c20304d05c0b20c5720c4e55ddc",
+      "matches_index": true,
+      "original_zip_locations": [
+        "archive_20261121/05_Dot/new_20261121/original_archives/EGA第五卷_行列式线丛与判别式_续译工程.zip!/EGA第五卷_行列式线丛与判别式_校订续译.tex"
+      ]
+    },
+    {
+      "id": "new003",
+      "path": "archive_20261121/05_Dot/new_20261121/batches/new003/EGA第五卷_非超奇异点正合列_校订续译.tex",
+      "sha256": "60ffbd3539ac7b9d51f98684e60f8811ab7fab6d48f87e57f48762145f15f3fa",
+      "matches_index": true,
+      "original_zip_locations": [
+        "archive_20261121/05_Dot/new_20261121/original_archives/EGA第五卷_非超奇异点正合列_续译工程.zip!/EGA第五卷_非超奇异点正合列_校订续译.tex"
+      ]
+    },
+    {
+      "id": "new004",
+      "path": "archive_20261121/05_Dot/new_20261121/batches/new004/EGA第五卷_可逆模扭曲与单位变换_校订续译.tex",
+      "sha256": "ca2c505dfd1f5e5e244d981b1ef0777952d8e34d4d1d7443044f5e7064502301",
+      "matches_index": true,
+      "original_zip_locations": [
+        "archive_20261121/05_Dot/new_20261121/original_archives/EGA第五卷_可逆模扭曲与单位变换_续译工程.zip!/EGA第五卷_可逆模扭曲与单位变换_校订续译.tex"
+      ]
+    },
+    {
+      "id": "new005",
+      "path": "archive_20261121/05_Dot/new_20261121/batches/new005/EGA第五卷_普通奇异零点备注_校订续译.tex",
+      "sha256": "b8e1014f4bbaaeb016e240e27d6626617b65440d342c3959894044dbfbda49e7",
+      "matches_index": true,
+      "original_zip_locations": [
+        "archive_20261121/05_Dot/new_20261121/original_archives/EGA第五卷_普通奇异零点备注_续译工程.zip!/EGA第五卷_普通奇异零点备注_校订续译.tex"
+      ]
+    },
+    {
+      "id": "new006",
+      "path": "archive_20261121/05_Dot/new_20261121/batches/new006/EGA第五卷_可逆模截面类比图_校订续译.tex",
+      "sha256": "065fa251ce4fadafb896b4e0763d4ed3e7a5a8774dffb78501b04e426bc2a16d",
+      "matches_index": true,
+      "original_zip_locations": [
+        "archive_20261121/05_Dot/new_20261121/original_archives/EGA第五卷_可逆模截面类比图_续译工程.zip!/EGA第五卷_可逆模截面类比图_校订续译.tex"
+      ]
+    },
+    {
+      "id": "new007",
+      "path": "archive_20261121/05_Dot/new_20261121/batches/new007/EGA第五卷_划去稿的增广定义_校订续译.tex",
+      "sha256": "738c4daafd158361337e7ed41d9e2d179dd3e1b86157f8d6aa7b2887cf3adcf4",
+      "matches_index": true,
+      "original_zip_locations": [
+        "archive_20261121/05_Dot/new_20261121/original_archives/EGA第五卷_划去稿的增广定义_续译工程.zip!/EGA第五卷_划去稿的增广定义_校订续译.tex"
+      ]
+    },
+    {
+      "id": "new008",
+      "path": "archive_20261121/05_Dot/new_20261121/batches/new008/EGA第五卷_划去稿命题8及引理_校订续译.tex",
+      "sha256": "3695ee1e613ece7b836e77555783a0056e279414541e47626ee5a759bc8a5826",
+      "matches_index": true,
+      "original_zip_locations": [
+        "archive_20261121/05_Dot/new_20261121/original_archives/EGA第五卷_划去稿命题8及引理_续译工程.zip!/EGA第五卷_划去稿命题8及引理_校订续译.tex"
+      ]
+    },
+    {
+      "id": "new009",
+      "path": "archive_20261121/05_Dot/new_20261121/batches/new009/EGA第五卷_划去稿命题9_校订续译.tex",
+      "sha256": "dab05b98d4ee1886c23b82026a2383c42939abf0fe89f6c63174d6b3b9cde37c",
+      "matches_index": true,
+      "original_zip_locations": [
+        "archive_20261121/05_Dot/new_20261121/original_archives/EGA第五卷_划去稿命题9_续译工程.zip!/EGA第五卷_划去稿命题9_校订续译.tex"
+      ]
+    },
+    {
+      "id": "new010",
+      "path": "archive_20261121/05_Dot/new_20261121/batches/new010/EGA第五卷_划去稿推论10_校订续译.tex",
+      "sha256": "fc5a7169350f7a17e4c77f909290039044120a5468cfada2edc5605310a5e826",
+      "matches_index": true,
+      "original_zip_locations": [
+        "archive_20261121/05_Dot/new_20261121/original_archives/EGA第五卷_划去稿推论10_续译工程.zip!/EGA第五卷_划去稿推论10_校订续译.tex"
+      ]
+    },
+    {
+      "id": "new011",
+      "path": "archive_20261121/05_Dot/new_20261121/batches/new011/EGA第五卷_奇异零点与外幂判别_校订续译.tex",
+      "sha256": "9d18de33dfce1192eb5a6f13fa849e8807401c90ee5689f1ebd09a5e206e7521",
+      "matches_index": true,
+      "original_zip_locations": [
+        "archive_20261121/05_Dot/new_20261121/original_archives/EGA第五卷_奇异零点与外幂判别_续译工程.zip!/EGA第五卷_奇异零点与外幂判别_校订续译.tex"
+      ]
+    },
+    {
+      "id": "new012",
+      "path": "archive_20261121/05_Dot/new_20261121/batches/new012/EGA第五卷_二阶判别与恒秩引理_校订续译.tex",
+      "sha256": "46db6b36b931816d0b3a4443a4de259cb87b4f6880dede34b81a54f87dc032dd",
+      "matches_index": true,
+      "original_zip_locations": [
+        "archive_20261121/05_Dot/new_20261121/original_archives/EGA第五卷_二阶判别与恒秩引理_续译工程.zip!/EGA第五卷_二阶判别与恒秩引理_校订续译.tex"
+      ]
+    },
+    {
+      "id": "new013",
+      "path": "archive_20261121/05_Dot/new_20261121/batches/new013/EGA第五卷_光滑塔与分歧概形_校订续译.tex",
+      "sha256": "e42bbb7455e8a3eb9e5084b5d7e9ca0addd7e44ff2cf5705f40905c8eb153879",
+      "matches_index": true,
+      "original_zip_locations": [
+        "archive_20261121/05_Dot/new_20261121/original_archives/EGA第五卷_光滑塔与分歧概形_续译工程.zip!/EGA第五卷_光滑塔与分歧概形_校订续译.tex"
+      ]
+    },
+    {
+      "id": "new014",
+      "path": "archive_20261121/05_Dot/new_20261121/batches/new014/EGA第五卷_特征二与奇异术语_校订续译.tex",
+      "sha256": "5d370dd42be383589d7dce656686be084a120de29f2817c83f8c01335719d321",
+      "matches_index": true,
+      "original_zip_locations": [
+        "archive_20261121/05_Dot/new_20261121/original_archives/EGA第五卷_特征二与奇异术语_续译工程.zip!/EGA第五卷_特征二与奇异术语_校订续译.tex"
+      ]
+    },
+    {
+      "id": "new015",
+      "path": "archive_20261121/05_Dot/new_20261121/batches/new015/EGA第五卷_切超曲面与勘误_校订续译.tex",
+      "sha256": "862ae06823b3db607e3f8dad77bacc0f49022b44c3b25e98cc08c215f0d37d06",
+      "matches_index": true,
+      "original_zip_locations": [
+        "archive_20261121/05_Dot/new_20261121/original_archives/EGA第五卷_切超曲面与勘误_续译工程.zip!/EGA第五卷_切超曲面与勘误_校订续译.tex"
+      ]
+    },
+    {
+      "id": "new016",
+      "path": "archive_20261121/05_Dot/new_20261121/batches/new016/EGA第五卷_151光滑型与雅可比判据_校订续译.tex",
+      "sha256": "b406e5ae7365b61e11a5ae99aec2552c144c1e82ddb9de71d6edb31a5bb76566",
+      "matches_index": true,
+      "original_zip_locations": [
+        "archive_20261121/05_Dot/new_20261121/original_archives/EGA第五卷_151光滑型与雅可比判据_续译工程.zip!/EGA第五卷_151光滑型与雅可比判据_校订续译.tex"
+      ]
+    },
+    {
+      "id": "new017",
+      "path": "archive_20261121/05_Dot/new_20261121/batches/new017/EGA第五卷_152初等增广与几何奇点_校订续译.tex",
+      "sha256": "52b096cc2b56d6b2cb47db6d9c2fbf6a707d5a0e10646610a0d9b2df87a72998",
+      "matches_index": true,
+      "original_zip_locations": [
+        "archive_20261121/05_Dot/new_20261121/original_archives/EGA第五卷_152初等增广与几何奇点_续译工程.zip!/EGA第五卷_152初等增广与几何奇点_校订续译.tex"
+      ]
+    },
+    {
+      "id": "new018",
+      "path": "archive_20261121/05_Dot/new_20261121/batches/new018/EGA第五卷_153至156_初等奇点局部刻画.tex",
+      "sha256": "df516c6405e6365dc7569e3cfcbe046747a07e93d880d2cc90e79136b79c2dde",
+      "matches_index": true,
+      "original_zip_locations": [
+        "archive_20261121/05_Dot/new_20261121/original_archives/EGA第五卷_153至156_初等奇点局部刻画_续译工程.zip!/EGA第五卷_153至156_初等奇点局部刻画.tex"
+      ]
+    },
+    {
+      "id": "new019",
+      "path": "archive_20261121/05_Dot/new_20261121/batches/new019/EGA第五卷_157_初等奇点几何变式.tex",
+      "sha256": "611b371c0b7a5d1c6fc87f259c18b7706960ef2643916b0ed86328ca77d3209d",
+      "matches_index": true,
+      "original_zip_locations": [
+        "archive_20261121/05_Dot/new_20261121/original_archives/EGA第五卷_157_初等奇点几何变式_续译工程.zip!/EGA第五卷_157_初等奇点几何变式.tex"
+      ]
+    }
+  ],
+  "archives": [
+    {
+      "path": "archive_20261121/05_Dot/original_archives/Dot对话_续作工程_20261119.zip",
+      "sha256": "2169db9e55be324b8618f91b4f63361557e0baf7fbcb4a57343d9ba35a1e41a9",
+      "bytes": 41711082,
+      "members": 60,
+      "crc_ok": true,
+      "nested": false
+    },
+    {
+      "path": "archive_20261121/05_Dot/original_archives/Dot对话_续作工程_20261119.zip!/EGA V 各批续译/EGA第五卷_10.2_校订续译_工程.zip",
+      "sha256": "4c7ab6d5e36dcdda8f99e00af000b16fb2805c9589bf1d2fb1afd7af92a6eec3",
+      "bytes": 788651,
+      "members": 8,
+      "crc_ok": true,
+      "nested": true
+    },
+    {
+      "path": "archive_20261121/05_Dot/original_archives/Dot对话_续作工程_20261119.zip!/EGA V 各批续译/EGA第五卷_10.3_校订续译_工程.zip",
+      "sha256": "fce4bc83634046a55d01b0f709c445f3dd66fbe14ab03bd1d2f2d99044d12922",
+      "bytes": 750930,
+      "members": 8,
+      "crc_ok": true,
+      "nested": true
+    },
+    {
+      "path": "archive_20261121/05_Dot/original_archives/Dot对话_续作工程_20261119.zip!/EGA V 各批续译/EGA第五卷_10.4_校订续译_工程.zip",
+      "sha256": "7d45a86363b8dd0189997a15fd1c757ed0a594140aa1bd79bfb59c6992d4d150",
+      "bytes": 749392,
+      "members": 11,
+      "crc_ok": true,
+      "nested": true
+    },
+    {
+      "path": "archive_20261121/05_Dot/original_archives/Dot对话_续作工程_20261119.zip!/EGA V 各批续译/EGA第五卷_12节一般截面推广_续译工程.zip",
+      "sha256": "d2ac9ba42437f3fa3e76d4642033b945d014ed5552f7e455f361c27e5a8a21e1",
+      "bytes": 781283,
+      "members": 9,
+      "crc_ok": true,
+      "nested": true
+    },
+    {
+      "path": "archive_20261121/05_Dot/original_archives/Dot对话_续作工程_20261119.zip!/EGA V 各批续译/EGA第五卷_12节关联概形_续译工程.zip",
+      "sha256": "ed29139102459baaf727e5c01a36322f15f9fde0a0b0f3be56607a99552d12f5",
+      "bytes": 771723,
+      "members": 9,
+      "crc_ok": true,
+      "nested": true
+    },
+    {
+      "path": "archive_20261121/05_Dot/original_archives/Dot对话_续作工程_20261119.zip!/EGA V 各批续译/EGA第五卷_12节奇异关联簇_续译工程.zip",
+      "sha256": "0ecf2f9109fcde98b6367eb93a7300a4363a2f144d540819171e86ff339cc669",
+      "bytes": 764184,
+      "members": 9,
+      "crc_ok": true,
+      "nested": true
+    },
+    {
+      "path": "archive_20261121/05_Dot/original_archives/Dot对话_续作工程_20261119.zip!/EGA V 各批续译/EGA第五卷_12节末与13节定义_续译工程.zip",
+      "sha256": "f02e3ece3791b0116a474e7628294e1d49fd8f15130406da67f38bb0d798dfab",
+      "bytes": 741195,
+      "members": 9,
+      "crc_ok": true,
+      "nested": true
+    },
+    {
+      "path": "archive_20261121/05_Dot/original_archives/Dot对话_续作工程_20261119.zip!/EGA V 各批续译/EGA第五卷_12节正则截面_续译工程.zip",
+      "sha256": "289d692242bfac7ae707ceca96dc2a46c4dfa01cc5744385087a25631accde05",
+      "bytes": 747491,
+      "members": 9,
+      "crc_ok": true,
+      "nested": true
+    },
+    {
+      "path": "archive_20261121/05_Dot/original_archives/Dot对话_续作工程_20261119.zip!/EGA V 各批续译/EGA第五卷_12节纤维结构_续译工程.zip",
+      "sha256": "1a868fbcad4034ab211f716aacb86dcefbd098ab93bcec547fee6b3686f6c77c",
+      "bytes": 792847,
+      "members": 9,
+      "crc_ok": true,
+      "nested": true
+    },
+    {
+      "path": "archive_20261121/05_Dot/original_archives/Dot对话_续作工程_20261119.zip!/EGA V 各批续译/EGA第五卷_12节线性截面族_续译工程.zip",
+      "sha256": "51eed51b2eb79f303fe5d213d12fe862f3eaf7947e55181338c64d72bd99eb28",
+      "bytes": 785227,
+      "members": 9,
+      "crc_ok": true,
+      "nested": true
+    },
+    {
+      "path": "archive_20261121/05_Dot/original_archives/Dot对话_续作工程_20261119.zip!/EGA V 各批续译/EGA第五卷_12节维数条件与推广计划_续译工程.zip",
+      "sha256": "b96aa0063be53bb5ff3f607ca936cb02b27b1f284c4f13dae2eb22eff71a5b42",
+      "bytes": 778096,
+      "members": 9,
+      "crc_ok": true,
+      "nested": true
+    },
+    {
+      "path": "archive_20261121/05_Dot/original_archives/Dot对话_续作工程_20261119.zip!/EGA V 各批续译/EGA第五卷_12节退化层维数_续译工程.zip",
+      "sha256": "56729398a9263520639d4ae8762cf9874027a9b96a506293e154a3c198e2a5d0",
+      "bytes": 762052,
+      "members": 9,
+      "crc_ok": true,
+      "nested": true
+    },
+    {
+      "path": "archive_20261121/05_Dot/original_archives/Dot对话_续作工程_20261119.zip!/EGA V 各批续译/EGA第五卷_13.2初等邻域构造_续译工程.zip",
+      "sha256": "05592d366cb51e2ebf74db3a265490f6620c400b8ef86dce016bc40604ea52ec",
+      "bytes": 763348,
+      "members": 9,
+      "crc_ok": true,
+      "nested": true
+    },
+    {
+      "path": "archive_20261121/05_Dot/original_archives/Dot对话_续作工程_20261119.zip!/EGA V 各批续译/EGA第五卷_13.2归约_续译工程.zip",
+      "sha256": "8389b916b0c194097b0766a4e915ac4b5328c889332734c67be3d54d8c5358bf",
+      "bytes": 759059,
+      "members": 9,
+      "crc_ok": true,
+      "nested": true
+    },
+    {
+      "path": "archive_20261121/05_Dot/original_archives/Dot对话_续作工程_20261119.zip!/EGA V 各批续译/EGA第五卷_13.3一般截面归纳_续译工程.zip",
+      "sha256": "0b9033abbbb1b61c67dff2f94d80df247d123043de23f3a2d684679b5d6956a8",
+      "bytes": 772286,
+      "members": 9,
+      "crc_ok": true,
+      "nested": true
+    },
+    {
+      "path": "archive_20261121/05_Dot/original_archives/Dot对话_续作工程_20261119.zip!/EGA V 各批续译/EGA第五卷_13.3证明归约_续译工程.zip",
+      "sha256": "ea1a792af926e7ef54e6a410661712cec5f4b6aea26da6b0d3cfc35fe3b71b23",
+      "bytes": 756897,
+      "members": 9,
+      "crc_ok": true,
+      "nested": true
+    },
+    {
+      "path": "archive_20261121/05_Dot/original_archives/Dot对话_续作工程_20261119.zip!/EGA V 各批续译/EGA第五卷_13.3超平面情形证明_续译工程.zip",
+      "sha256": "9bbf56ee1021234d57f82618661f9778489d360894da61ad0e7238d841702294",
+      "bytes": 768155,
+      "members": 9,
+      "crc_ok": true,
+      "nested": true
+    },
+    {
+      "path": "archive_20261121/05_Dot/original_archives/Dot对话_续作工程_20261119.zip!/EGA V 各批续译/EGA第五卷_13.3陈述_续译工程.zip",
+      "sha256": "5457e51766b59cd31cc4fb7a0a5d428c2e469ad2601a871447795416316f6b7f",
+      "bytes": 752276,
+      "members": 9,
+      "crc_ok": true,
+      "nested": true
+    },
+    {
+      "path": "archive_20261121/05_Dot/original_archives/Dot对话_续作工程_20261119.zip!/EGA V 各批续译/EGA第五卷_13.4一般基底_续译工程.zip",
+      "sha256": "4fdcaaa097f65886e827adebebc061c206c119ae3abf06692b72527311db2ed7",
+      "bytes": 748709,
+      "members": 10,
+      "crc_ok": true,
+      "nested": true
+    },
+    {
+      "path": "archive_20261121/05_Dot/original_archives/Dot对话_续作工程_20261119.zip!/EGA V 各批续译/EGA第五卷_13.4拓扑结构_续译工程.zip",
+      "sha256": "964ca24ecf81ce6bb880dbd90c47d430b7d0d85069dcb5aacfb9a0d46ee0e400",
+      "bytes": 741888,
+      "members": 10,
+      "crc_ok": true,
+      "nested": true
+    },
+    {
+      "path": "archive_20261121/05_Dot/original_archives/Dot对话_续作工程_20261119.zip!/EGA V 各批续译/EGA第五卷_13.4有限域与连通性_续译工程.zip",
+      "sha256": "cc30c98735eba886e2a5cb7e7f4fa0f827fde21a2eb1fca1591f49d9e43c809e",
+      "bytes": 772840,
+      "members": 10,
+      "crc_ok": true,
+      "nested": true
+    },
+    {
+      "path": "archive_20261121/05_Dot/original_archives/Dot对话_续作工程_20261119.zip!/EGA V 各批续译/EGA第五卷_13.4有限点集邻域_续译工程.zip",
+      "sha256": "c4a134b1d18b714c055e6309599aa8a53f3413ae2f6f8455954215108111a603",
+      "bytes": 746331,
+      "members": 10,
+      "crc_ok": true,
+      "nested": true
+    },
+    {
+      "path": "archive_20261121/05_Dot/original_archives/Dot对话_续作工程_20261119.zip!/EGA V 各批续译/EGA第五卷_14.1命题陈述_续译工程.zip",
+      "sha256": "2a88cdd9b1bb3ae74f1ad5f2f3513a6fcb8f41973281adee27be13deb0c6d1f9",
+      "bytes": 738744,
+      "members": 10,
+      "crc_ok": true,
+      "nested": true
+    },
+    {
+      "path": "archive_20261121/05_Dot/original_archives/Dot对话_续作工程_20261119.zip!/EGA V 各批续译/EGA第五卷_14.1证明残文_续译工程.zip",
+      "sha256": "a2e0ebab59f99ac4b3465436f7c8623d3fd49b1bba314000d1b54a9abd3ec13e",
+      "bytes": 762131,
+      "members": 10,
+      "crc_ok": true,
+      "nested": true
+    },
+    {
+      "path": "archive_20261121/05_Dot/original_archives/Dot对话_续作工程_20261119.zip!/EGA V 各批续译/EGA第五卷_14.2有限投影_续译工程.zip",
+      "sha256": "2b634b49d64836fe4170e4ad28e3d51d671275ea16a78ac3bc5c0acb4380b6a8",
+      "bytes": 717456,
+      "members": 10,
+      "crc_ok": true,
+      "nested": true
+    },
+    {
+      "path": "archive_20261121/05_Dot/original_archives/Dot对话_续作工程_20261119.zip!/EGA V 各批续译/EGA第五卷_14.3平坦性_续译工程.zip",
+      "sha256": "53a5cee775690a4aef7d489acb2ca1863733cadd1b8660ac5c7b12b70b5e5698",
+      "bytes": 762139,
+      "members": 10,
+      "crc_ok": true,
+      "nested": true
+    },
+    {
+      "path": "archive_20261121/05_Dot/original_archives/Dot对话_续作工程_20261119.zip!/EGA V 各批续译/EGA第五卷_14一般中心_续译工程.zip",
+      "sha256": "b8250410af4844bc77362b55dd29e93364804d2919969308d9f5856e8a8a2de7",
+      "bytes": 762770,
+      "members": 10,
+      "crc_ok": true,
+      "nested": true
+    },
+    {
+      "path": "archive_20261121/05_Dot/original_archives/Dot对话_续作工程_20261119.zip!/EGA V 各批续译/EGA第五卷_14正则截面与爆破_续译工程.zip",
+      "sha256": "df911a6c24a21589488e083e6776ba1f5b2d3281fba4eb21e6ef65acba074e93",
+      "bytes": 765149,
+      "members": 10,
+      "crc_ok": true,
+      "nested": true
+    },
+    {
+      "path": "archive_20261121/05_Dot/original_archives/Dot对话_续作工程_20261119.zip!/EGA V 各批续译/EGA第五卷_14锥投影构造_续译工程.zip",
+      "sha256": "4e31efd342b96c5fbe30e2ecad5010785b0cbf4b0b900c289eb272c8762a53f8",
+      "bytes": 754627,
+      "members": 10,
+      "crc_ok": true,
+      "nested": true
+    },
+    {
+      "path": "archive_20261121/05_Dot/original_archives/Dot对话_续作工程_20261119.zip!/EGA V 各批续译/EGA第五卷_8.12_校订续译工程.zip",
+      "sha256": "b70b15171b03ac90b36e4b592b3bcf90b9633738785139d89dd5b2d1c3544bb3",
+      "bytes": 274284,
+      "members": 8,
+      "crc_ok": true,
+      "nested": true
+    },
+    {
+      "path": "archive_20261121/05_Dot/original_archives/Dot对话_续作工程_20261119.zip!/EGA V 各批续译/EGA第五卷_8.13_校订续译工程.zip",
+      "sha256": "1f163a246af9c3849e6b9e5acc63064345309c6707636938fe7f5a307c7de7c1",
+      "bytes": 757772,
+      "members": 7,
+      "crc_ok": true,
+      "nested": true
+    },
+    {
+      "path": "archive_20261121/05_Dot/original_archives/Dot对话_续作工程_20261119.zip!/EGA V 各批续译/EGA第五卷_8.14至8.15_校订续译工程.zip",
+      "sha256": "985d9b0b8403bc167b9de27aea8e99fa9a74ddc0d372b3244b6f56723a6abbd3",
+      "bytes": 779722,
+      "members": 8,
+      "crc_ok": true,
+      "nested": true
+    },
+    {
+      "path": "archive_20261121/05_Dot/original_archives/Dot对话_续作工程_20261119.zip!/EGA V 各批续译/EGA第五卷_8.16至8.17_校订续译工程.zip",
+      "sha256": "387a26dd18bd0902a120b577290910bffd30fb241a077715665864e8bcfc114c",
+      "bytes": 766633,
+      "members": 7,
+      "crc_ok": true,
+      "nested": true
+    },
+    {
+      "path": "archive_20261121/05_Dot/original_archives/Dot对话_续作工程_20261119.zip!/EGA V 各批续译/EGA第五卷_8.18_校订续译工程.zip",
+      "sha256": "f821bbd05f42cb17bae5e7837851074d7673431285a302988b494ae809a82d1f",
+      "bytes": 781143,
+      "members": 8,
+      "crc_ok": true,
+      "nested": true
+    },
+    {
+      "path": "archive_20261121/05_Dot/original_archives/Dot对话_续作工程_20261119.zip!/EGA V 各批续译/EGA第五卷_8.18后线性系讨论_第一批_工程.zip",
+      "sha256": "3d5f7f649546428200bebe8924cebc9e58e925d8b247706c7c38244d1f78427c",
+      "bytes": 761088,
+      "members": 6,
+      "crc_ok": true,
+      "nested": true
+    },
+    {
+      "path": "archive_20261121/05_Dot/original_archives/Dot对话_续作工程_20261119.zip!/EGA V 各批续译/EGA第五卷_8.1至8.6_独立续译工程.zip",
+      "sha256": "5b95a078fb64b1444ec1a0295c35ae0e45d944390e810a95259ac9bacfc0039b",
+      "bytes": 356556,
+      "members": 8,
+      "crc_ok": true,
+      "nested": true
+    },
+    {
+      "path": "archive_20261121/05_Dot/original_archives/Dot对话_续作工程_20261119.zip!/EGA V 各批续译/EGA第五卷_8.6后预备论证_校订续译工程.zip",
+      "sha256": "60712697c0c784107dc8294a72b6148a52456d1b1df188164666e6406fa9850c",
+      "bytes": 369294,
+      "members": 8,
+      "crc_ok": true,
+      "nested": true
+    },
+    {
+      "path": "archive_20261121/05_Dot/original_archives/Dot对话_续作工程_20261119.zip!/EGA V 各批续译/EGA第五卷_8.7及相邻残段_校订续译工程.zip",
+      "sha256": "e5f772eaf9b802847694dc458b85c13a2bafe05f8716e4e668b8b75f5f1d20b7",
+      "bytes": 407326,
+      "members": 9,
+      "crc_ok": true,
+      "nested": true
+    },
+    {
+      "path": "archive_20261121/05_Dot/original_archives/Dot对话_续作工程_20261119.zip!/EGA V 各批续译/EGA第五卷_8.9至8.11_校订续译工程.zip",
+      "sha256": "55849a4c1136f272be289b7eb96b610e4a3bd67709155c63a8b8a3415f7233ef",
+      "bytes": 347868,
+      "members": 8,
+      "crc_ok": true,
+      "nested": true
+    },
+    {
+      "path": "archive_20261121/05_Dot/original_archives/Dot对话_续作工程_20261119.zip!/EGA V 各批续译/EGA第五卷_9.1至9.2_校订续译_工程.zip",
+      "sha256": "d46847da0cb8a4e40b22d6eede9e5d288b74bd5aaed5867d49b1cfb0d517158c",
+      "bytes": 768243,
+      "members": 8,
+      "crc_ok": true,
+      "nested": true
+    },
+    {
+      "path": "archive_20261121/05_Dot/original_archives/Dot对话_续作工程_20261119.zip!/EGA V 各批续译/EGA第五卷_9.3_校订续译_工程.zip",
+      "sha256": "281c7224fa1ea230bcafd95f4f5e06430755fd7bb11af3cb3f463e15674a6fad",
+      "bytes": 797255,
+      "members": 8,
+      "crc_ok": true,
+      "nested": true
+    },
+    {
+      "path": "archive_20261121/05_Dot/original_archives/Dot对话_续作工程_20261119.zip!/EGA V 各批续译/EGA第五卷_9.4至10.1_校订续译_工程.zip",
+      "sha256": "d706b7dcce4038ec00966ccd961869e3c2fbdd1c48b061661fbe62961467e4e6",
+      "bytes": 780937,
+      "members": 8,
+      "crc_ok": true,
+      "nested": true
+    },
+    {
+      "path": "archive_20261121/05_Dot/original_archives/Dot对话_续作工程_20261119.zip!/EGA V 各批续译/EGA第五卷_参数族与基变换_续译工程.zip",
+      "sha256": "67786a5f95ed4f07e260d46ca855491dd78602ef189e0cc8356b740ab08086d2",
+      "bytes": 755958,
+      "members": 10,
+      "crc_ok": true,
+      "nested": true
+    },
+    {
+      "path": "archive_20261121/05_Dot/original_archives/Dot对话_续作工程_20261119.zip!/EGA V 各批续译/EGA第五卷_命题14.4_续译工程.zip",
+      "sha256": "f16ad0e9c9fe17763aea6ac1681cd272b9292eb56acbea2997d611994f38a692",
+      "bytes": 750645,
+      "members": 10,
+      "crc_ok": true,
+      "nested": true
+    },
+    {
+      "path": "archive_20261121/05_Dot/original_archives/Dot对话_续作工程_20261119.zip!/EGA V 各批续译/EGA第五卷_命题14.5与推论14.6_续译工程.zip",
+      "sha256": "1b25d2671c5dbfc33e0e1c9faeca92ac24807ddd9c8a5a090af0778e5c31e0f0",
+      "bytes": 729238,
+      "members": 10,
+      "crc_ok": true,
+      "nested": true
+    },
+    {
+      "path": "archive_20261121/05_Dot/original_archives/Dot对话_续作工程_20261119.zip!/EGA V 各批续译/EGA第五卷_平坦性假设与非空性公理_续译工程.zip",
+      "sha256": "13e937539794ac13bcf0d7364c44c19968a1ff5fd1ae7ca2012bb83db3e48745",
+      "bytes": 760850,
+      "members": 10,
+      "crc_ok": true,
+      "nested": true
+    },
+    {
+      "path": "archive_20261121/05_Dot/original_archives/Dot对话_续作工程_20261119.zip!/EGA V 各批续译/EGA第五卷_泛截面光滑性条件_续译工程.zip",
+      "sha256": "d4141216e3357f47e85424751754827da2366af6929d2e558e73de0fc2c64b37",
+      "bytes": 765353,
+      "members": 10,
+      "crc_ok": true,
+      "nested": true
+    },
+    {
+      "path": "archive_20261121/05_Dot/original_archives/Dot对话_续作工程_20261119.zip!/EGA V 各批续译/EGA第五卷_第15节公理化导言_续译工程.zip",
+      "sha256": "9d544c9346a8a3f81f387409c22abdacb02ca53f9ef6d68dfa38470f4706a156",
+      "bytes": 745929,
+      "members": 10,
+      "crc_ok": true,
+      "nested": true
+    },
+    {
+      "path": "archive_20261121/05_Dot/original_archives/Dot对话_续作工程_20261119.zip!/EGA V 各批续译/EGA第五卷_第15节推广计划结语_续译工程.zip",
+      "sha256": "ffe0c79692d9a7b78b035d6cddaa8b8cd10c11ea4b58a1698a4d5a252cd47b04",
+      "bytes": 753725,
+      "members": 10,
+      "crc_ok": true,
+      "nested": true
+    },
+    {
+      "path": "archive_20261121/05_Dot/original_archives/Dot对话_续作工程_20261119.zip!/EGA V 各批续译/EGA第五卷_第7节_独立续译工程.zip",
+      "sha256": "cd4b2aba4d1559aa53719e9b19d0f53854f65e317f9a0288033df47a8ae2b370",
+      "bytes": 322395,
+      "members": 8,
+      "crc_ok": true,
+      "nested": true
+    },
+    {
+      "path": "archive_20261121/05_Dot/original_archives/Dot对话_续作工程_20261119.zip!/EGA V 各批续译/EGA第五卷_第8节末域论讨论_工程.zip",
+      "sha256": "0d2bc6e27c517416ae73c88dc82d2cbfebd737008f5297440f926c28620f1a61",
+      "bytes": 776132,
+      "members": 7,
+      "crc_ok": true,
+      "nested": true
+    },
+    {
+      "path": "archive_20261121/05_Dot/original_archives/Dot对话_续作工程_20261119.zip!/EGA V 各批续译/EGA第五卷_锥投影微分性质导言_续译工程.zip",
+      "sha256": "b2ff78833d906deb4990fcf5207bf9fed47c483ccd0a631e3a4566401b84f72c",
+      "bytes": 740641,
+      "members": 10,
+      "crc_ok": true,
+      "nested": true
+    },
+    {
+      "path": "archive_20261121/05_Dot/original_archives/Dot对话_续作工程_20261119.zip!/EGA V 各批续译/EGA第五卷_锥投影性质辨析_续译工程.zip",
+      "sha256": "8705c575218aa751a326894aa4eb2d555e0c73b412abdc85524c228b5e711ea1",
+      "bytes": 771974,
+      "members": 10,
+      "crc_ok": true,
+      "nested": true
+    },
+    {
+      "path": "archive_20261121/05_Dot/original_archives/Dot对话_续作工程_20261119.zip!/EGA V 各批续译/EGA第五卷_锥投影普遍图式_续译工程.zip",
+      "sha256": "784345f1631b7757e814366ac8761e5158039bfe0a17a28e2f543903f2086a9a",
+      "bytes": 752497,
+      "members": 10,
+      "crc_ok": true,
+      "nested": true
+    },
+    {
+      "path": "archive_20261121/05_Dot/original_archives/EGA第五卷_第16节几何奇异零点_续译工程.zip",
+      "sha256": "4bb4e9880f5b37fb4ccbfa72c4f7595d30837d319199cfa1fcfce865097a0f15",
+      "bytes": 752240,
+      "members": 12,
+      "crc_ok": true,
+      "nested": false
+    },
+    {
+      "path": "archive_20261121/05_Dot/original_archives/EGA第五卷_第16节奇异零点定义_续译工程.zip",
+      "sha256": "6c650798bbc72ed772c559a7d8c32d5f1c84805d82c48c2c2d67c192398a4d21",
+      "bytes": 762147,
+      "members": 11,
+      "crc_ok": true,
+      "nested": false
+    },
+    {
+      "path": "archive_20261121/05_Dot/new_20261121/original_archives/EGA第五卷_151光滑型与雅可比判据_续译工程.zip",
+      "sha256": "505ccb964b7fa38b8bd2fb3a66c95daa022caa6c085cc0be582aef7721b09cb3",
+      "bytes": 963175,
+      "members": 11,
+      "crc_ok": true,
+      "nested": false
+    },
+    {
+      "path": "archive_20261121/05_Dot/new_20261121/original_archives/EGA第五卷_152初等增广与几何奇点_续译工程.zip",
+      "sha256": "7a773e1f2593e0e073777323109bd3f14c8dbb6b2efc1a61d5edb095485a7922",
+      "bytes": 973740,
+      "members": 11,
+      "crc_ok": true,
+      "nested": false
+    },
+    {
+      "path": "archive_20261121/05_Dot/new_20261121/original_archives/EGA第五卷_153至156_初等奇点局部刻画_续译工程.zip",
+      "sha256": "b1ca34519d60039d0dc1d34d504396e7ee63f76f3371c398bbc8ef880ef83769",
+      "bytes": 1018574,
+      "members": 11,
+      "crc_ok": true,
+      "nested": false
+    },
+    {
+      "path": "archive_20261121/05_Dot/new_20261121/original_archives/EGA第五卷_157_初等奇点几何变式_续译工程.zip",
+      "sha256": "56b2cd5c99bcba70138e6d54fb87a420c5f8328e391fe7e5dcc18ede03635ee4",
+      "bytes": 1030869,
+      "members": 11,
+      "crc_ok": true,
+      "nested": false
+    },
+    {
+      "path": "archive_20261121/05_Dot/new_20261121/original_archives/EGA第五卷_二阶判别与恒秩引理_续译工程.zip",
+      "sha256": "017d9e9f51e602989dbed5ca039876b57012f67ec62401ef1824dba1a4d62910",
+      "bytes": 972214,
+      "members": 11,
+      "crc_ok": true,
+      "nested": false
+    },
+    {
+      "path": "archive_20261121/05_Dot/new_20261121/original_archives/EGA第五卷_光滑塔与分歧概形_续译工程.zip",
+      "sha256": "53732703f0099ad4ce473e642160867949bac63f49193aae4f2cc71485b655af",
+      "bytes": 1053890,
+      "members": 11,
+      "crc_ok": true,
+      "nested": false
+    },
+    {
+      "path": "archive_20261121/05_Dot/new_20261121/original_archives/EGA第五卷_切超曲面与勘误_续译工程.zip",
+      "sha256": "9386a9ccf9f690c8c3cbd1272cf3c9f9c8ce99303111cb61e479555f2e1fd0f1",
+      "bytes": 980628,
+      "members": 11,
+      "crc_ok": true,
+      "nested": false
+    },
+    {
+      "path": "archive_20261121/05_Dot/new_20261121/original_archives/EGA第五卷_划去稿命题8及引理_续译工程.zip",
+      "sha256": "8ae071d764a395acaeda87b7d66f60bee8744d7bec250fbf8f112e4c5cab0d61",
+      "bytes": 1164751,
+      "members": 11,
+      "crc_ok": true,
+      "nested": false
+    },
+    {
+      "path": "archive_20261121/05_Dot/new_20261121/original_archives/EGA第五卷_划去稿命题9_续译工程.zip",
+      "sha256": "93c4a69f03f64a53ed5ff83cc16669d7151e1262a811459f8ab183e5ad5f737b",
+      "bytes": 1168590,
+      "members": 11,
+      "crc_ok": true,
+      "nested": false
+    },
+    {
+      "path": "archive_20261121/05_Dot/new_20261121/original_archives/EGA第五卷_划去稿推论10_续译工程.zip",
+      "sha256": "3098e49de8039f71eff16bb099105a5fcbe53d9a3fe4255b233010e813a867bc",
+      "bytes": 1145952,
+      "members": 11,
+      "crc_ok": true,
+      "nested": false
+    },
+    {
+      "path": "archive_20261121/05_Dot/new_20261121/original_archives/EGA第五卷_划去稿的增广定义_续译工程.zip",
+      "sha256": "a2b960054e3d3a6e776095d84e0a1a12260d8d47d928fe20b1538ccbedeff869",
+      "bytes": 1173226,
+      "members": 11,
+      "crc_ok": true,
+      "nested": false
+    },
+    {
+      "path": "archive_20261121/05_Dot/new_20261121/original_archives/EGA第五卷_可逆模截面类比图_续译工程.zip",
+      "sha256": "b2f39e3ed0d8df00074ec0580502bf4a9715dba4c63dacf1498062a88f5cae1b",
+      "bytes": 1107042,
+      "members": 11,
+      "crc_ok": true,
+      "nested": false
+    },
+    {
+      "path": "archive_20261121/05_Dot/new_20261121/original_archives/EGA第五卷_可逆模扭曲与单位变换_续译工程.zip",
+      "sha256": "893be941ab376eb5c46133d9fe603ad1da9cebb3bbeb5ffbcc6601b95cb280c0",
+      "bytes": 1009338,
+      "members": 11,
+      "crc_ok": true,
+      "nested": false
+    },
+    {
+      "path": "archive_20261121/05_Dot/new_20261121/original_archives/EGA第五卷_奇异零点与外幂判别_续译工程.zip",
+      "sha256": "e236dfca3fa42189733863bbb8c0816b2857b28581b6ce85fbf143a0172af1f9",
+      "bytes": 1086440,
+      "members": 11,
+      "crc_ok": true,
+      "nested": false
+    },
+    {
+      "path": "archive_20261121/05_Dot/new_20261121/original_archives/EGA第五卷_普通奇异零点备注_续译工程.zip",
+      "sha256": "eafdf41bd4ecaa8d803fd21e295cd2ce085585941c4af15dc62e50a6e5af2ccd",
+      "bytes": 1020804,
+      "members": 11,
+      "crc_ok": true,
+      "nested": false
+    },
+    {
+      "path": "archive_20261121/05_Dot/new_20261121/original_archives/EGA第五卷_特征二与奇异术语_续译工程.zip",
+      "sha256": "13119ed6f9506b65238e1e11a6a2c899ff1a7c33a8ec5d0a1ef98b6321dfdb25",
+      "bytes": 1003313,
+      "members": 11,
+      "crc_ok": true,
+      "nested": false
+    },
+    {
+      "path": "archive_20261121/05_Dot/new_20261121/original_archives/EGA第五卷_第66页行列式交换图_续译工程.zip",
+      "sha256": "d57f89d3a047655c40576242d72f41cfc9d71bb743f9894b28f9bb0714a155f9",
+      "bytes": 741236,
+      "members": 12,
+      "crc_ok": true,
+      "nested": false
+    },
+    {
+      "path": "archive_20261121/05_Dot/new_20261121/original_archives/EGA第五卷_行列式线丛与判别式_续译工程.zip",
+      "sha256": "c525ff60d17d75bdf4cd2759f6bf50454d1b58449d8776be7683f2d4c9d13563",
+      "bytes": 734374,
+      "members": 11,
+      "crc_ok": true,
+      "nested": false
+    },
+    {
+      "path": "archive_20261121/05_Dot/new_20261121/original_archives/EGA第五卷_非超奇异点正合列_续译工程.zip",
+      "sha256": "4ce4c4c1cf59df6c17068e7251bf9f333226c3b4fa1932eb297c1c23564e780e",
+      "bytes": 1009487,
+      "members": 11,
+      "crc_ok": true,
+      "nested": false
+    }
+  ],
+  "errors": [],
+  "scope": "Exact archive/source preservation checks; no math audit or new TeX compilation."
+}

@@ -1,0 +1,13 @@
+{
+  "file_name": "代数几何基础_内容顺序合订第十六版_工程.zip",
+  "original_path_in_v17": "04_history/v16_outputs/代数几何基础_内容顺序合订第十六版_工程.zip",
+  "stored_repository_path": "archive_20261121/04_history/content/1d/1d8a3cc9b44d6025d87b1f5351e0a2de364f1220ce164bd381c38814708fa38d",
+  "bytes": 22384038,
+  "sha256": "1d8a3cc9b44d6025d87b1f5351e0a2de364f1220ce164bd381c38814708fa38d",
+  "expected_bytes": 22384038,
+  "expected_sha256": "1d8a3cc9b44d6025d87b1f5351e0a2de364f1220ce164bd381c38814708fa38d",
+  "byte_check_pass": true,
+  "zip_crc_error": null,
+  "regular_members": 393,
+  "interpretation": "Original ZIP container is already stored byte-for-byte at a content-addressed path; no additional download required."
+}

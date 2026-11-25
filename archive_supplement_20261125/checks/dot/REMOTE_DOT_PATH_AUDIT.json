@@ -1,0 +1,15 @@
+{
+  "checked_utc": "2026-11-25T14:01:45.219053+00:00",
+  "repository": "liyiliuxingyu/ega-chinese-translation",
+  "commit": "4daf708a87069e2a6e28c22a29d3e3af26880f0b",
+  "pass": true,
+  "verification": "Fresh GitHub directory trees and actual main.tex; path, length and input occurrence checks, not yet new byte rehash",
+  "new_archives_checked": 40,
+  "new_members_checked": 492,
+  "old_source_paths_checked": 75,
+  "old_direct_archives_checked": 19,
+  "old_top_level_archives": 3,
+  "current_batch69_108_modules": 40,
+  "errors": [],
+  "scope_note": "The old archive namespace is old001–old056 plus new001–new019; source labels 50–68 are not cumulative counts. The later batch069–108 set is continuous. Unexpanded binary members of old archives can remain inside intact original ZIPs."
+}

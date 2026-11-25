@@ -1,0 +1,15 @@
+{
+  "ok": true,
+  "mode": "apply",
+  "base_commit": "4daf708a87069e2a6e28c22a29d3e3af26880f0b",
+  "overlay_sha256": "2f75c1466698e019b0f464a6e9016a058dfbb4c99f5c29fc171f27e35c5d495a",
+  "overlay_files": 60,
+  "overlay_uncompressed_bytes": 245372815,
+  "repository_payloads_verified": 4240,
+  "old_tracked_files_protected": 4191,
+  "current_translation_unchanged": true,
+  "release_tag": "v19-archive1-20261125",
+  "translation_edition": 19,
+  "applied_at_utc": "2026-11-25T14:27:32.346937+00:00",
+  "scope": "Archive-only historical and Dot supplement; current/EGA_v19 unchanged; no new translation claimed"
+}
