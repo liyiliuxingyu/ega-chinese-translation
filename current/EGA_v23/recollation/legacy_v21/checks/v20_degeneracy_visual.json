@@ -1,0 +1,59 @@
+{
+  "reviewer": "/root/v20_degeneracy",
+  "checked_at_utc": "2026-11-25 15:03:48 UTC",
+  "method": "Opened each of the three rendered PNGs with view_image and visually inspected body formulas, upper/lower indices, footnotes, running heads and the outgoing module boundary; read PDF page metadata separately.",
+  "main_pdf": {
+    "path": "main.pdf",
+    "sha256": "d6dcafc5ce7b1059d9c451e1917e8da331bbe926a637c7ab7724417f4f5e603f",
+    "physical_page_count": 1216
+  },
+  "pages": [
+    {
+      "physical_page": 1059,
+      "printed_page": 1039,
+      "image": "checks/rendered_main/main_1059.png",
+      "sha256": "257745a8adb765f2bf5f0db297204838f130775468319a3fdd4f60212a151943",
+      "observations": [
+        "Author's paragraph visibly reads 第8节自8.6起 and retains the full writing-plan prose.",
+        "V^0 and V^1 in the incidence/singular-family display are distinct and legible; phi^m and Grass^m display correctly.",
+        "Source line and section heading have reasonable spacing; footnotes V20-D02, D03 and D04 remain within the text block.",
+        "Page begins and ends with continuing paragraphs; no duplicated or omitted line is visible at the inspected boundary."
+      ],
+      "result": "pass"
+    },
+    {
+      "physical_page": 1060,
+      "printed_page": 1040,
+      "image": "checks/rendered_main/main_1060.png",
+      "sha256": "8beef82b010aab08f5c753ae71eb5937479c4e0601ca074380c2f04f293c2d8c",
+      "observations": [
+        "Continuation from the prior page closes the excess-intersection sentence correctly.",
+        "Display dim(T_x intersect L_xi)>=n-m+2 is legible; V^1 and V'' remain distinct and the smoothness base is X.",
+        "Six page footnotes, including English editorial notes61/62 and V20-D08, are visible with no overlap or clipping.",
+        "The long final footnote stays inside the page area; running head and page number are clear."
+      ],
+      "result": "pass"
+    },
+    {
+      "physical_page": 1061,
+      "printed_page": 1041,
+      "image": "checks/rendered_main/main_1061.png",
+      "sha256": "9abaa42d39bb0d3c40ccbfc88a47089fada05b4f4125633ca53084a934dc161a",
+      "observations": [
+        "N=r-1, 0<=m<=n<=N and 0<=k<=min(m,N-n) render correctly.",
+        "The full dimension formula (k-1)(n-m)+k^2 fits on one display line without clipping.",
+        "Finite-type/conditional V'' image-closure paragraph and its two footnotes are legible.",
+        "Exact stop at 可以不考虑 V'' is followed by the next module's source line and 另一方面; no duplicated continuation or stranded heading is visible."
+      ],
+      "result": "pass"
+    }
+  ],
+  "scope_limitations": [
+    "This record certifies visual inspection of the listed three representative pages only; it does not claim all 1216 pages have been viewed.",
+    "The incoming Proposition6.1 boundary is outside these three sampled images and is not separately certified by this record.",
+    "Final report.pdf physical41,43,44,46,47,48,49 have since been reviewed; see checks/v20_degeneracy_report_visual.json/md for their independent final-report hash binding."
+  ],
+  "tex_changes_by_reviewer": "none",
+  "issues_found": []
+}
+

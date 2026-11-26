@@ -1,0 +1,83 @@
+{
+  "reason": "French page 93 visibly continues same paragraph; suppress only extra parent input endline, retain all five reviewed mathematical source bytes and exact standalone TeX bytes.",
+  "before": [
+    {
+      "path": "main.tex",
+      "sha256": "4f5d8665e831a2cd9ced9016e365ac7700ea922be91ed62549b885b9c3478824",
+      "bytes": 6895
+    },
+    {
+      "path": "main.pdf",
+      "sha256": "7de3aee3cb4e924a06ed99dcca3cf38c89ed74941c084b38787d07d6600fbf22",
+      "bytes": 6024216
+    },
+    {
+      "path": "main.log",
+      "sha256": "8eccb04441d62e2803cda8ec3605bf482dc964db7088279667ed35c940041f24",
+      "bytes": 73531
+    },
+    {
+      "path": "checks/current_pdf_parity.json",
+      "sha256": "39033fede0b5906e35cd42926afa56a02391f77215479935f09eb8a8ba7b7f34",
+      "bytes": 1119
+    },
+    {
+      "path": "checks/current_build_log_summary.json",
+      "sha256": "80efb88b4a44b03236b7dd22d03933358c1d4e8a1dd2b40f409a014d90c1e968",
+      "bytes": 25554
+    },
+    {
+      "path": "checks/current_structure_verification.json",
+      "sha256": "d41d6f860644c464eb4ac3b9b69d8f09edc1e3957fb48760e513e95f3ceca052",
+      "bytes": 66264
+    },
+    {
+      "path": "checks/v23_setup_main_visual.json",
+      "sha256": "6b2009de720ba0bbea49a7ee471e8fd74971ce336a62513dd9c8c8d99afe28a2",
+      "bytes": 3100
+    },
+    {
+      "path": "checks/v23_smoothness_main_visual.json",
+      "sha256": "a62a522cc7194c6ecbc527e1063c612aa03bce4628b88302888b094bc053aac4",
+      "bytes": 2250
+    },
+    {
+      "path": "checks/visual_v23/setup/main_1083.png",
+      "sha256": "820b88006ef70eeb3120a466a3e104b97a8eb48977ebd868d80d9809efc8b289",
+      "bytes": 244770
+    },
+    {
+      "path": "checks/visual_v23/setup/main_1084.png",
+      "sha256": "381bba2d6d57159e73375dd61155b5fd319476443e2fc0b64c3e0ec430036f95",
+      "bytes": 230315
+    },
+    {
+      "path": "checks/visual_v23/setup/main_1085.png",
+      "sha256": "05625a506dae61035f7541679c0531b47ff0bf4657cf1d60de4e62f8e4ee97ff",
+      "bytes": 237164
+    },
+    {
+      "path": "checks/visual_v23/setup/main_1086.png",
+      "sha256": "86b0ae29a41a3830eccb4b7b6f009fa3ef3586021445ed8aaa9b4a2b01c5cdeb",
+      "bytes": 232810
+    },
+    {
+      "path": "checks/visual_v23/smoothness/main_1086.png",
+      "sha256": "86b0ae29a41a3830eccb4b7b6f009fa3ef3586021445ed8aaa9b4a2b01c5cdeb",
+      "bytes": 232810
+    },
+    {
+      "path": "checks/visual_v23/smoothness/main_1087.png",
+      "sha256": "302de7e85da15053c9bb9242504b70842c4e1328db5ac65a3202e2dbfa4ec3f0",
+      "bytes": 263545
+    },
+    {
+      "path": "checks/visual_v23/smoothness/main_1088.png",
+      "sha256": "11000a5b04174ec8aaa226d1eb55bd5a58f164e04f9743fae06fafd869113272",
+      "bytes": 123245
+    }
+  ],
+  "standalone_source_unchanged_sha256": "db5b5451ec0e509efe51f3f9818f84e88437ed1739cb9340e49b439fc759ab41",
+  "single_pdf_unchanged_sha256": "7c6a970254d9bb9bcc1f81d0581edc85a6e80c78c3d10addd24cf4f07ddb7639",
+  "source_image_viewed": "recollation/v23/setup/evidence/fr93_full.png"
+}

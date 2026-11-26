@@ -1,0 +1,150 @@
+{
+  "recorded_utc": "2026-11-26T03:15:40.640492+00:00",
+  "reviewer": "/root/v23_setup",
+  "kind": "isolated module preview; not final integrated edition",
+  "build_environment_script": "/workspace/scratch/a886fd56dd2f/v23_work/EGA_v23/scripts/tex_environment.sh",
+  "preamble": {
+    "path": "/workspace/scratch/a886fd56dd2f/repository/current/EGA_v22/preamble.tex",
+    "bytes": 8757,
+    "sha256": "1b096d39924010e5a1f55e4a8944da9425e7d2959b0522e7d746ce943913b7c1"
+  },
+  "previews": [
+    {
+      "pdf": {
+        "path": "preview_body.pdf",
+        "bytes": 227086,
+        "sha256": "3d640544b0a9bc8b0450e9462c8fb3759225d8ce4c92fe32c8ef87337298d27d"
+      },
+      "source": {
+        "path": "v23_section15_setup.tex",
+        "bytes": 11229,
+        "sha256": "002dcbfc52a2786247016cafcb6f92da1349c7e35553851d70e0c951e8a6ca0f"
+      },
+      "driver": {
+        "path": "preview_body.tex",
+        "bytes": 156,
+        "sha256": "e4fcc4340faca1da4673faaf0373c2338c8bcc46093e7acb8d1a98dc40bf48fa"
+      },
+      "log": {
+        "path": "preview_body.log",
+        "bytes": 42589,
+        "sha256": "8117938366cace7df66f2cd700bcf08a343511c36e81be5d803ebd0bb65ba291"
+      },
+      "stdout": {
+        "path": "preview_body.stdout",
+        "bytes": 13446,
+        "sha256": "38471cde5731ffcc73031dc482254470282838811462cbf825273133d15cbc28"
+      },
+      "pages": 4,
+      "compile_exit_code": 0,
+      "overfull_count": 0,
+      "underfull_count": 0,
+      "fatal_or_error": false,
+      "render_scale": 1.2,
+      "all_pages_actually_viewed": true,
+      "rendered_pages": [
+        {
+          "path": "preview_images/body/01.png",
+          "bytes": 147414,
+          "sha256": "e080a4714f8a57ee79bd664a9bee3fd8fae186cc90eed9ed0c134b082e83a661"
+        },
+        {
+          "path": "preview_images/body/02.png",
+          "bytes": 142879,
+          "sha256": "0ffc531f6eebab971899b29cf2797f3fc033ee3e75a380eb6db9348935c471f1"
+        },
+        {
+          "path": "preview_images/body/03.png",
+          "bytes": 141315,
+          "sha256": "45c39074326e3792e4ae0f68d8a028fad373ae979caa57d3caf38c82cc76cedc"
+        },
+        {
+          "path": "preview_images/body/04.png",
+          "bytes": 17588,
+          "sha256": "3d4875468c885684267439637d39f3ec8ef5432269db4046b2650398a1734061"
+        }
+      ]
+    },
+    {
+      "pdf": {
+        "path": "preview_audit.pdf",
+        "bytes": 310529,
+        "sha256": "fd791c52758902a8d1bda860f97ee814ba184e214c3a943c47473078258823b2"
+      },
+      "source": {
+        "path": "v23_section15_setup_audit.tex",
+        "bytes": 18506,
+        "sha256": "240eb816b4f62ca2c359c42ed5db08d45eef6e7d2886124a9ede205d7f1d70e0"
+      },
+      "driver": {
+        "path": "preview_audit.tex",
+        "bytes": 162,
+        "sha256": "20da2b61ea072886835cf42c85c4f128f5efa60479c2d3f1e839eb5a402a433a"
+      },
+      "log": {
+        "path": "preview_audit.log",
+        "bytes": 44662,
+        "sha256": "101f1ed9bae8d6324548c5ce2548a64566c697aaa0f9a897f7285fa7d564a9f2"
+      },
+      "stdout": {
+        "path": "preview_audit.stdout",
+        "bytes": 14535,
+        "sha256": "d837ebb1f23dbae6d117f6e8cc92378b7127013f51e8e2e12d61507252e4c325"
+      },
+      "pages": 8,
+      "compile_exit_code": 0,
+      "overfull_count": 0,
+      "underfull_count": 4,
+      "fatal_or_error": false,
+      "render_scale": 1.2,
+      "all_pages_actually_viewed": true,
+      "rendered_pages": [
+        {
+          "path": "preview_images/audit/01.png",
+          "bytes": 103018,
+          "sha256": "8acf035b1d4af1aa73de46ea2b3d41f2edfa8bce087e87b8fd1d3ca0dd0caf76"
+        },
+        {
+          "path": "preview_images/audit/02.png",
+          "bytes": 143205,
+          "sha256": "5e322fa4b9df5166773aa7fcbb92197b2ef0b91a380ed952cd78436a78cc2507"
+        },
+        {
+          "path": "preview_images/audit/03.png",
+          "bytes": 151925,
+          "sha256": "8d183b7017c967e078c754bfb1351672f59fb1f28366c965f56097f15733301c"
+        },
+        {
+          "path": "preview_images/audit/04.png",
+          "bytes": 140854,
+          "sha256": "ff9804e106273ed048a377f4375e89d0fd4515361c526ec0935f3eb256b17a2d"
+        },
+        {
+          "path": "preview_images/audit/05.png",
+          "bytes": 153462,
+          "sha256": "4fe856e9dd7bdd58e0ee8e5cbc2d964da72194c68f7f5f48ed491061abfc9bdd"
+        },
+        {
+          "path": "preview_images/audit/06.png",
+          "bytes": 126440,
+          "sha256": "fbdfccc7cd37460e6be50ac9d6f3dedc693f9e5090a3b9888fb9f57c1431a344"
+        },
+        {
+          "path": "preview_images/audit/07.png",
+          "bytes": 136322,
+          "sha256": "1aa08f5b2182fe05d3f6bea8cc31e2457bb3d64316404dd26ea92837ee188966"
+        },
+        {
+          "path": "preview_images/audit/08.png",
+          "bytes": 86549,
+          "sha256": "9739bc376083136628e2e0c4faea2da9d2b6f8db01fa60bb2129b0d498f934c0"
+        }
+      ]
+    }
+  ],
+  "visual_result": "All 4 body pages and all 8 report pages were actually displayed and checked. No clipped formulas, diagram arrows, overlapping text or missing Chinese glyphs were observed. Report has four Underfull warnings but no visual overflow. Isolated body page 4 only continues the last footnote; the combined volume must be rechecked after the following module is appended.",
+  "superseded_body_sha256": "201a971aa174aa618a4ed2b3aa925c91182117d1716cac53d17d9e0adc006d21",
+  "final_body_sha256": "002dcbfc52a2786247016cafcb6f92da1349c7e35553851d70e0c951e8a6ca0f",
+  "source_was_rebuilt_after_last_change": true,
+  "claim_limit": "Does not attest to final combined PDF or single-file TeX build."
+}

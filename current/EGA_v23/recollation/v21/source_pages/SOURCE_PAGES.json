@@ -1,0 +1,44 @@
+[
+  {
+    "source": "archive_20261121/03_sources/EGA5_francais.pdf",
+    "source_pages": 171,
+    "source_sha256": "24cf8204184b58b18a46e5f63ecc36d6e791b3c8c96a09daac93de96ebd8e830",
+    "extract": "fr_physical_74_83.pdf",
+    "source_physical_pages": [
+      74,
+      75,
+      76,
+      77,
+      78,
+      79,
+      80,
+      81,
+      82,
+      83
+    ],
+    "extract_sha256": "06687eb3379ed3451144d3308b85e184eb89caeae62db604f62c567ec47b6a2a",
+    "next_boundary_pages_only": [
+      83
+    ],
+    "note": "French83 and English54 used only for next-boundary check; English53 includes next title after completed13.4(e)."
+  },
+  {
+    "source": "archive_20261121/03_sources/EGAVaiello.pdf",
+    "source_pages": 112,
+    "source_sha256": "23a20ef32fd16a1bd623c0c08ac080d04fc94f248de12133b713a19d6b0330d9",
+    "extract": "en_physical_49_54.pdf",
+    "source_physical_pages": [
+      49,
+      50,
+      51,
+      52,
+      53,
+      54
+    ],
+    "extract_sha256": "e5bb640fa52730e958caef446fc035c611bc17c9dce3806d948d41c42f239938",
+    "next_boundary_pages_only": [
+      54
+    ],
+    "note": "French83 and English54 used only for next-boundary check; English53 includes next title after completed13.4(e)."
+  }
+]

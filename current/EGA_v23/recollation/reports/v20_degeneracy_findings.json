@@ -1,0 +1,260 @@
+{
+  "edition": 20,
+  "module": "v20_section12_degeneracy",
+  "owner": "/root/v20_degeneracy",
+  "scope": {
+    "french_pdf": "archive_20261121/03_sources/EGA5_francais.pdf",
+    "french_physical_pages": [
+      69,
+      70,
+      71
+    ],
+    "english_pdf": "archive_20261121/03_sources/EGAVaiello.pdf",
+    "english_pages": [
+      46,
+      47
+    ],
+    "start": "Proposition 6.1",
+    "stop_inclusive": "on peut oublier V''",
+    "next_excluded": "D'autre part, dans X_{Grass^m} - V''"
+  },
+  "actual_visual_review": {
+    "french_full_pages": [
+      69,
+      70,
+      71
+    ],
+    "english_full_pages": [
+      46,
+      47
+    ],
+    "french_high_resolution_crops": [
+      "69 lower: 8.2 and handwritten exercise remark",
+      "70 lower: singular incidence and passant par x et qui",
+      "71 upper: adhérence, V^1, lisse sur X",
+      "71 middle/lower: deleted dimension line, final formula, image codimension"
+    ],
+    "prior_8_2_check": "English physical21 extracted directly from source PDF and its 8.2 paragraph independently rendered and visually inspected; old threshold is dim X - 1"
+  },
+  "changed_files": [
+    "continuations/v20_section12_degeneracy.tex",
+    "reports/v20_section12_degeneracy_audit.tex",
+    "recollation/reports/v20_degeneracy_findings.json",
+    "recollation/reports/v20_degeneracy_findings.md"
+  ],
+  "notation": {
+    "french_original_singular_family": "V^1",
+    "english_variant": "V'",
+    "rejected_candidate_reading": "Dot119 incorrectly describes English47 as V^0; actual image has V'",
+    "double_prime": "V'' remains the author's supplement object; identification with the rank-two degeneracy support is conditional",
+    "parenthesized_superscript": "V^{(k)} denotes the intersection/rank degeneracy filtration",
+    "following_unparenthesized_V2": "Not covered here; must not be identified with V^{(2)}"
+  },
+  "findings": [
+    {
+      "id": "V20-D01",
+      "kind": "scope_and_preservation",
+      "source": {
+        "fr": 69,
+        "en": 46
+      },
+      "snippet": "Proposition 6.1 ... dim f(X_i) >= m+1 ... dim f(Z) <= m-1; codimension m=n",
+      "decision": "Preserve both replacement inequalities, all 7.1–7.4 instructions and the local role of m=n; retain original hypotheses."
+    },
+    {
+      "id": "V20-D02",
+      "kind": "manuscript_error_and_paleographic_limit",
+      "source": {
+        "fr": 69,
+        "en": [
+          21,
+          46
+        ]
+      },
+      "snippet": "dim Y_xi > dim X ... dim X - [overwritten letter]",
+      "decision": "Do not repeat the erroneous old threshold lacking -1. Body gives expected threshold dim X-m, while footnote retains the overwritten glyph/English illegible marker. Original 8.2 proof and hypothesis ambiguities remain unreviewed."
+    },
+    {
+      "id": "V20-D03",
+      "kind": "handwritten_recovery",
+      "source": {
+        "fr": 69,
+        "en": 46
+      },
+      "snippet": "il n'est d'ailleurs sans doute pas indispensable de faire cet exercice, s'il te barbe de le faire",
+      "decision": "Restore author’s handwritten optional-exercise aside and added page30; mark 'Dieudonné or Blass' as English editor speculation."
+    },
+    {
+      "id": "V20-D04",
+      "kind": "english_translation_error",
+      "source": {
+        "fr": 70,
+        "en": 46
+      },
+      "french_snippet": "à partir de 8.6; également",
+      "english_snippet": "except 8.6",
+      "decision": "Body now reads 自8.6起. Retract old D17-M029 explanation attributing a contradictory scope choice to the author."
+    },
+    {
+      "id": "V20-D05",
+      "kind": "scheme_structure_and_fiber_boundary",
+      "source": {
+        "fr": 70,
+        "en": 46
+      },
+      "decision": "Define natural D_k by minors of the tangent-subspace to universal quotient map, identify Fitting ideals and exact scheme fibers, and prove compatibility with base change. Retain singular zeros rather than unconditional intrinsic fiber singularity.",
+      "counterexample": "X is a line in P^2, m=1 and L_xi=X. The section fiber is smooth X, but the zero-section differential vanishes, so (D_1)_xi=X."
+    },
+    {
+      "id": "V20-D06",
+      "kind": "source_recovery",
+      "source": {
+        "fr": [
+          70,
+          71
+        ],
+        "en": 46
+      },
+      "french_snippet": "passant par x et qui; est seulement l'adhérence de la sous-variété lisse",
+      "english_snippet": "only the loneve",
+      "decision": "Restore passing through x and closure of the smooth precise-intersection stratum. Do not call its closure smooth or infer a scheme equality from closure of supports."
+    },
+    {
+      "id": "V20-D07",
+      "kind": "notation_and_error_attribution",
+      "source": {
+        "fr": [
+          70,
+          71
+        ],
+        "en": [
+          46,
+          47
+        ]
+      },
+      "french_snippet": "V^1 - V'' ... lisse sur X ... points de V^1 lisses sur X",
+      "english_snippet": "V' - V'' is smooth over S",
+      "decision": "Use V^1 and X in body. English S is a mistranslation although its smoothness consequence follows here. Correct Dot119's false claim that English has V^0. Preserve both sauf erreur qualifications concerning supplement V''."
+    },
+    {
+      "id": "V20-D08",
+      "kind": "filtration_hypothesis_and_scheme_limit",
+      "source": {
+        "fr": 71,
+        "en": 47
+      },
+      "french_snippet": "le cran suivant ... points non lisses du cran précédent",
+      "decision": "Add k>=1 restriction for the nontrivial closed degeneracy filtration. Prove nonsmooth support(D_k/X)=support(D_{k+1}) via arbitrary-rank Grassmann matrix charts. Do not claim equality with a chosen Fitting singular scheme.",
+      "counterexample_to_scheme_equality": "For generic 2x3 rank<=1 matrices, Fitt_4(Omega) is generated by quadratic Jacobian minors, contains a^2 but not a; the next rank-zero degeneracy scheme has ideal (a,b,c,d,e,f)."
+    },
+    {
+      "id": "V20-D09",
+      "kind": "manuscript_range_error_reverified",
+      "source": {
+        "fr": 71,
+        "en": 47
+      },
+      "original_bounds": "k<=m, k<=r-m",
+      "correct_bounds": "0<=m<=n<=N=r-1 and 0<=k<=min(m,N-n)",
+      "formula": "dim Grass^m(P)-dim D_k=(k-1)(n-m)+k^2",
+      "decision": "Reprove D17-M-E02 through subspace/intersection parameter counts, higher-rank-stratum comparison and local splitting of tangent subbundle. Preserve the polynomial and correct its nonempty range.",
+      "counterexample": "X=P=P^2, r=3,n=2,m=k=1 satisfies original bounds but D_1 is empty."
+    },
+    {
+      "id": "V20-D10",
+      "kind": "image_closure_hypotheses",
+      "source": {
+        "fr": 71,
+        "en": 47
+      },
+      "decision": "For a finite-type pure-dimensional geometric fiber, derive codim closure(image D_2)>=n-m+4>=4; handle empty D_2 separately. State V'' conclusion conditionally on author's set identification. Do not assert image closed without properness."
+    },
+    {
+      "id": "V20-D11",
+      "kind": "deleted_material_and_preservation_ledger",
+      "source": {
+        "fr": [
+          69,
+          70,
+          71
+        ],
+        "en": [
+          46,
+          47
+        ]
+      },
+      "decision": "Record all recoverable mathematical marginal additions and deleted fragments without reconstructing obliterated text.",
+      "unresolved_fragments": [
+        "French69 target-formula final letter overwritten",
+        "French70 top two densely crossed-out lines",
+        "French70 old restriction after m obliterated and replaced by est quelconque",
+        "French71 crossed-out old dimension line begins dim V^{(k)}, right side not reliably legible",
+        "Supplement paragraph16 page16 lemma still unlocated"
+      ],
+      "preserved_editor_notes": [
+        61,
+        62
+      ]
+    }
+  ],
+  "proof_hypotheses": {
+    "family": "P=P(E), rank E=r, N=r-1; X/S smooth of locally constant relative dimension n; f:X->P unramified over S; 0<=m<=n<=N.",
+    "scheme_structure": "Natural minors of q|T_{X/S}; D_k=V(Fitt_{n-m+k-1}(Omega_{Y/Grass})) for 1<=k<=m+1; D_0=Y.",
+    "nonempty_strata": "0<=k<=min(m,N-n); deeper strata empty.",
+    "filtration": "For 1<=k<=min(m,N-n), support of nonsmooth locus of D_k->X equals support D_{k+1}; no assertion of arbitrary singular-scheme equality.",
+    "dimension": "Fixed nonempty pure-n geometric fiber; mixed dimensions handled componentwise.",
+    "image_closure": "Geometric fiber finite type over its field; V'' conclusion further conditional on author's identification.",
+    "intrinsic_fiber_singular_scheme": "Equality with Fitt_{n-m} intrinsic nonsmooth fiber scheme requires expected codimension m local complete intersection; not claimed for excess-dimensional fibers."
+  },
+  "verification_status": {
+    "source_images": "completed",
+    "general_mathematical_proofs": "written and independently checked as algebraic arguments; no finite computation used as a general proof",
+    "independent_review": {
+      "reviewer": "/root/v20_extensions",
+      "scope": "V20-D05, V20-D08, V20-D09, V20-D10",
+      "core_result": "No concrete mathematical error found in the Fitting indices/base change, degeneracy smooth-support proof, 2x3 scheme-structure counterexample, nonempty range, dimension calculation or finite-type image-closure estimate.",
+      "wording_item": "Root changed D05 to 'in the expected-codimension lci case ...', removing the only-if wording. The corrected sufficient-case wording was visually verified on final report physical44."
+    },
+    "tex_static_validation": {
+      "brace_balance": "both zero; no negative prefix",
+      "environment_balance": "both balanced",
+      "display_math_pairs": "main 10/10; report 23/23",
+      "main_lines": 74,
+      "report_lines": 224,
+      "main_sha256": "2f804d8b6c6e527d2a88b2ab10eb99ba7b2041e98d769f020fcf88856230bcd5",
+      "report_sha256": "f8fa5ee7c4044f25797c7ff8cfd2711d2808ba7e07152ba115d0b28e07bce6d2"
+    },
+    "tex_compile": "Root completed main and final report compilation; this agent did not run the whole-book build.",
+    "rendered_output_review": "Main physical1059,1060,1061 and final report physical41,43,44,46,47,48,49 actually inspected and passed. Complete bound hashes and observations are in checks/v20_degeneracy_visual.json/md and checks/v20_degeneracy_report_visual.json/md. Main final-rebuild pixel-identity check remains with root.",
+    "root_final_report_changes": {
+      "changes": [
+        "source-line break after French page range",
+        "D05 sufficient-case wording, deleting only/then"
+      ],
+      "report_tex_sha256": "11bfef9e4821a3030f8b7e43dd95dc61967a3287f2dfdb1667482bf46f75d443",
+      "report_pdf_sha256": "e908b3cdae5673eafc94a853bd4586cce4b53d53b9e6a08c2b9d9cb74b2b8a38",
+      "report_physical_page_count": 431,
+      "static_hash_note": "The earlier tex_static_validation report hash records the source before root's two final edits; the final report source hash is recorded here."
+    },
+    "shared_files_or_baseline_mutated": false,
+    "external_publishing": false
+  },
+  "final_integrator_update": {
+    "status": "Full modular and independent single builds, all-page parity and specified final-page visual reviews completed.",
+    "hash_scope_note": "Any earlier output hashes/build-status fields above record the module review before integrator layout edits. Final artifacts below supersede those artifact bindings without rewriting the historical observations.",
+    "files": [
+      {
+        "path": "continuations/v20_section12_degeneracy.tex",
+        "bytes": 11180,
+        "sha256": "2f804d8b6c6e527d2a88b2ab10eb99ba7b2041e98d769f020fcf88856230bcd5"
+      },
+      {
+        "path": "reports/v20_section12_degeneracy_audit.tex",
+        "bytes": 20859,
+        "sha256": "11bfef9e4821a3030f8b7e43dd95dc61967a3287f2dfdb1667482bf46f75d443"
+      }
+    ],
+    "changes_after_module_handoff": "Report source-line and bookmark formatting; D05 only-if phrasing removed to state the reviewed sufficient case accurately.",
+    "evidence": "ARTIFACTS.json; checks/current_pdf_parity.json; checks/visual_verification_summary.json"
+  }
+}

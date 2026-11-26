@@ -1,0 +1,31 @@
+{
+  "edition": 23,
+  "pass": true,
+  "errors": [],
+  "source_records": 203,
+  "new_section15_modules": [
+    "continuations/v23_section15_setup.tex",
+    "continuations/v23_section15_smoothness.tex"
+  ],
+  "new_report_modules": [
+    "reports/v23_integration_audit.tex",
+    "reports/v23_section15_setup_audit.tex",
+    "reports/v23_section15_smoothness_audit.tex"
+  ],
+  "inherited_source_files_unchanged": 202,
+  "inherited_source_files_expected": 202,
+  "dot_modules_input_once": 40,
+  "baseline_commit": "a1e4d5b58aee845096b7bae25e7e1e7e9482d7fa",
+  "baseline_comparison_mode": "recorded_baseline_hashes_only",
+  "previous_project_actually_read_this_run": false,
+  "previous_project_files_preserved": 1002,
+  "section13_preserved_original_bytes": 33351,
+  "original_v_dot_late_bytes": 49224,
+  "section14_preserved_original_bytes": 34610,
+  "section15_inherited_bytes": 14614,
+  "section15_remainder_byte_identical": true,
+  "section14_15_concatenation_matches_original": true,
+  "current_section15_footnotes": 27,
+  "current_audit_items": 15,
+  "scope": "Actual preserved bytes, current wiring, default preamble and exact single-source expansion; no mathematical-completeness claim"
+}

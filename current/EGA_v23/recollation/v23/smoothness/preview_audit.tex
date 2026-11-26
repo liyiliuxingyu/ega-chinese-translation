@@ -1,0 +1,327 @@
+% !TeX program = xelatex
+\documentclass[UTF8,a4paper]{ctexbook}
+% The class determines paper geometry, type size, Chinese fonts, heading layout,
+% double-sided pagination and chapter opening. No geometry, fancyhdr or font override.
+\usepackage{amsmath,amssymb,amsthm,mathtools,mathrsfs}
+\usepackage{tikz-cd}
+\usepackage{enumitem,longtable,booktabs,array,needspace}
+\usepackage[perpage,bottom]{footmisc}
+\usepackage{graphicx,adjustbox}
+\usepackage[unicode,hidelinks,bookmarksnumbered,hypertexnames=false]{hyperref}
+\usepackage{bookmark}
+% Retain EGA's historical chapter and paragraph numbering.
+\ctexset{part={name={第,卷},number=\Roman{part}},chapter={number={\ifnum\value{chapter}=0 0\else\Roman{chapter}\fi}},section={name={\texorpdfstring{\S\,}{§},}}}
+\renewcommand{\thesection}{\arabic{section}}
+\renewcommand{\thesubsection}{\thesection.\arabic{subsection}}
+\setcounter{secnumdepth}{2}
+\setcounter{tocdepth}{2}
+% Four-digit TOC page numbers: extend only their reserved width.
+% Fonts, body geometry, heading styles and page numbering remain class defaults.
+\makeatletter
+\renewcommand{\@pnumwidth}{2.4em}
+\renewcommand{\@tocrmarg}{3.4em}
+\makeatother
+\setlength{\emergencystretch}{2em}
+\allowdisplaybreaks[2]
+\newcommand{\egapar}[1]{\par\addvspace{0.55\baselineskip}\Needspace{3\baselineskip}\noindent\hypertarget{para:\arabic{chapter}:#1}{}\hypertarget{entry:\arabic{chapter}:#1}{}\label{entry:\arabic{chapter}:#1}\textbf{（#1）}\quad\ignorespaces}
+\newcommand{\egastatement}[2]{\par\addvspace{0.55\baselineskip}\Needspace{3\baselineskip}\noindent\hypertarget{para:\arabic{chapter}:#1}{}\hypertarget{entry:\arabic{chapter}:#1}{}\label{entry:\arabic{chapter}:#1}\textbf{#2（#1）}\quad\ignorespaces}
+\newcommand{\eref}[1]{\hyperlink{entry:\arabic{chapter}:#1}{（#1）}}
+\newcommand{\erritem}[2]{\par\addvspace{0.6\baselineskip}\Needspace{3\baselineskip}\noindent\hypertarget{errata:I:#1}{}\textbf{#2（#1）}\quad\ignorespaces}
+\newcommand{\unnumberedchapter}[1]{\chapter*{#1}\addcontentsline{toc}{chapter}{#1}\markboth{#1}{#1}}
+\newcommand{\src}[1]{\par\nobreak\noindent{\small 原文印刷页码：#1。}\par\nobreak\vspace{0.25\baselineskip}}
+\newcommand{\origfootnote}[1]{\ifhmode\unskip\nobreak\fi\footnote{\textbf{原注：}#1}}
+\newcommand{\transnote}[1]{\ifhmode\unskip\nobreak\fi\footnote{\textbf{译注：}#1}}
+\newcommand{\separation}{\par\medskip\centerline{$*\qquad *\qquad *$}\medskip}
+\newcommand{\F}{\mathscr F}
+\newcommand{\G}{\mathscr G}
+\newcommand{\HH}{\mathscr H}
+\newcommand{\B}{\mathfrak B}
+\newcommand{\OO}{\mathscr O}
+\newcommand{\Kcat}{\boldsymbol K}
+\newcommand{\restrict}[2]{#1\vert_{#2}}
+\newcommand{\restmod}[2]{#1_{[#2]}}
+\DeclareMathOperator{\Hom}{Hom}
+\DeclareMathOperator{\Supp}{Supp}
+\DeclareMathOperator{\Ker}{Ker}
+\DeclareMathOperator{\Ann}{Ann}
+\DeclareMathOperator{\Spec}{Spec}
+\newcommand{\ilim}{\varinjlim}
+\newcommand{\plim}{\varprojlim}
+\newcommand{\A}{\mathscr A}
+\newcommand{\BB}{\mathscr B}
+\newcommand{\C}{\mathscr C}
+\newcommand{\E}{\mathscr E}
+\newcommand{\LL}{\mathscr L}
+\newcommand{\M}{\mathscr M}
+\newcommand{\N}{\mathscr N}
+\newcommand{\PP}{\mathscr P}
+\newcommand{\J}{\mathscr J}
+\newcommand{\shHom}{\mathscr{H}\!om}
+\newcommand{\dual}[1]{\check{#1}}
+\DeclareMathOperator{\Coker}{Coker}
+\let\Im\relax
+\DeclareMathOperator{\Im}{Im}
+\DeclareMathOperator{\Tor}{Tor}
+\newcommand{\frJ}{\mathfrak J}
+\newcommand{\frK}{\mathfrak K}
+\newcommand{\frQ}{\mathfrak Q}
+\newcommand{\frT}{\mathfrak T}
+\newcommand{\frR}{\mathfrak R}
+\newcommand{\frS}{\mathfrak S}
+\newcommand{\comp}[1]{\widehat{#1}}
+\newcommand{\ctensor}{\mathbin{\widehat{\otimes}}}
+\DeclareMathOperator{\grad}{grad}
+\newcommand{\wt}[1]{\widetilde{#1}}
+\newcommand{\jj}{\mathfrak j}
+\newcommand{\rr}{\mathfrak r}
+\newcommand{\mm}{\mathfrak m}
+\newcommand{\nrad}{\mathfrak N}
+\newcommand{\aphi}{{}^{a}\varphi}
+\DeclareMathOperator{\Spf}{Spf}
+\newcommand{\frX}{\mathfrak X}
+\newcommand{\frY}{\mathfrak Y}
+\newcommand{\frZ}{\mathfrak Z}
+\newcommand{\frU}{\mathfrak U}
+\newcommand{\frV}{\mathfrak V}
+\newcommand{\frW}{\mathfrak W}
+\newcommand{\frD}{\mathfrak D}
+\newcommand{\SSS}{\mathscr S}
+\newcommand{\nn}{\mathfrak n}
+\newcommand{\pp}{\mathfrak p}
+\newcommand{\qq}{\mathfrak q}
+\newcommand{\frj}{\mathfrak j}
+\newcommand{\frk}{\mathfrak k}
+\DeclareMathOperator{\Proj}{Proj}
+\DeclareMathOperator{\Tr}{Tr}
+\DeclareMathOperator{\Sym}{S}
+\DeclareMathOperator{\gr}{gr}
+\newcommand{\red}{\mathrm{red}}
+\newcommand{\Gstar}{\Gamma_*}
+\newcommand{\Tstar}{\Gamma_*}
+\newcommand{\R}{\mathscr R}
+\newcommand{\TT}{\mathscr T}
+\newcommand{\I}{\mathscr I}
+\newcommand{\K}{\mathscr K}
+\newcommand{\V}{\mathbf V}
+\newcommand{\Pb}{\mathbf P}
+\newcommand{\Z}{\mathbf Z}
+\newcommand{\Gr}{\operatorname{Gr}}
+\newcommand{\id}{\mathrm{id}}
+\DeclareMathOperator{\codim}{codim}
+\DeclareMathOperator{\rk}{rg}
+\DeclareMathOperator{\Pic}{Pic}
+\newcommand{\sProj}{\mathscr{P}\!roj}
+\newcommand{\catHom}{\mathscr{H}\!om}
+\newcommand{\Ens}{\mathbf{Ens}}
+\newcommand{\OI}{0_{\mathrm I}}
+\newcommand{\OIII}{0_{\mathrm{III}}}
+\newcommand{\Ext}{\operatorname{Ext}}
+\newcommand{\shExt}{\mathscr{E}\!xt}
+\newcommand{\shTor}{\mathscr{T}\!or}
+\newcommand{\Hh}{\mathbb H}
+\newcommand{\len}{\operatorname{long}}
+\newcommand{\cplx}[1]{#1^{\bullet}}
+\newcommand{\Cat}{\mathbf C}
+\newcommand{\ra}{\longrightarrow}
+\newcommand{\la}{\longleftarrow}
+\newcommand{\iso}{\xrightarrow{\sim}}
+\newcommand{\eproof}{\par\noindent\textbf{证明。}\ignorespaces}
+\newcommand{\finishproof}{\hfill$\square$\par}
+\newcommand{\srcpage}[1]{\par\noindent{\small\itshape〔底本第#1页〕}\par\nobreak}
+\newcommand{\cocomp}[1]{\complement #1}
+\DeclareMathOperator{\Aut}{Aut}
+\DeclareMathOperator{\GL}{GL}
+\DeclareMathOperator{\trdeg}{trdeg}
+
+% Macros for the reviewed continuation. Existing mathematical macros are unchanged.
+\newcommand{\kk}{\mathfrak k}
+\newcommand{\cH}{\mathscr H}
+\newcommand{\hTor}{\mathbb{T}\!or}
+\newcommand{\lTor}{\mathscr{T}\!or}
+\newcommand{\spE}{\mathscr E}
+\DeclareMathOperator{\coprof}{coprof}
+\newcommand{\source}[1]{\par\smallskip\noindent\textit{底本位置：#1。}\par\smallskip}
+\newcommand{\newscope}{new}
+\newcommand{\egap}[1]{\par\addvspace{.6\baselineskip}\Needspace{3\baselineskip}\noindent\hypertarget{new:\newscope:#1}{}\textbf{（#1）}\quad\ignorespaces}
+\newcommand{\egas}[2]{\par\addvspace{.6\baselineskip}\Needspace{3\baselineskip}\noindent\hypertarget{new:\newscope:#1}{}\textbf{#2（#1）}\quad\ignorespaces}
+\newcommand{\cmt}[2]{\footnote{\textbf{译校注〔#1〕：}#2}}
+\newcommand{\ednote}[1]{\footnote{\textbf{英译编者注：}#1}}
+\newcommand{\orig}[1]{\footnote{\textbf{原注：}#1}}
+\newcommand{\head}[1]{\chapter*{#1}\addcontentsline{toc}{chapter}{#1}\markboth{#1}{#1}}
+\newcommand{\egasection}[1]{\section*{#1}\addcontentsline{toc}{section}{#1}}
+\newcommand{\subsec}[1]{\subsection*{#1}\addcontentsline{toc}{subsection}{#1}}
+\newcommand{\audit}[3]{\Needspace{5\baselineskip}\hypertarget{audit:#1}{}\section*{#1\quad #2}\addcontentsline{toc}{section}{#1\quad #2}\noindent\textbf{判定：#3。}\par\smallskip}
+\pdfstringdefDisableCommands{\def\quad{ }\def\qquad{ }\def\S{§}}
+
+\newcommand{\bTor}{\operatorname{\mathbf{Tor}}}
+\newcommand{\termTor}{\mathop{\mathscr{T}\!or^{\mathrm{term}}}\nolimits}
+\newcommand{\NewNote}[1]{\par\smallskip\noindent\textbf{编排说明。}#1\par\smallskip}
+\hypersetup{pdftitle={代数几何基础：按内容顺序编排的中文译校合订本（第二十版·第一篇第12节法英回校）},pdfauthor={原著 A. Grothendieck；与 J. Dieudonné 合作；预备笔记英译编者见各篇},pdfsubject={第0章归并；正文连续；已译范围和未译范围分开列明}}
+\title{代数几何基础\\中文译校合订本\\[1em]\large 按内容顺序编排·第二十版（第一篇第12节续校）}
+\author{A. Grothendieck\\与 J. Dieudonné 合作撰写\\[.6em]\normalsize 预备笔记英译及编辑：Piotr Blass、Joseph Blass}
+\date{}
+
+% Additions for the fourth continuation; no font or page-geometry overrides.
+\DeclareMathOperator{\Ass}{Ass}
+\DeclareMathOperator{\prof}{prof}
+\DeclareMathOperator{\htp}{ht}
+\newcommand{\pd}{\operatorname{dim.proj}}
+\newcommand{\injdim}{\operatorname{dim.inj}}
+\newcommand{\gldim}{\operatorname{dim.coh}}
+\newcommand{\Salg}{\mathrm S}
+
+\DeclareMathOperator{\End}{End}
+
+% Additions for chapter 0, section 18. Keep class defaults.
+\DeclareMathOperator{\Exan}{Exan}
+\DeclareMathOperator{\Exal}{Exal}
+\DeclareMathOperator{\Exalcom}{Exalcom}
+\DeclareMathOperator{\Exantop}{Exantop}
+\DeclareMathOperator{\Exaltop}{Exaltop}
+\DeclareMathOperator{\Exalcotop}{Exalcotop}
+\newcommand{\HomCont}{\operatorname{Hom.cont}}
+
+% Section 20 additions, no layout/font changes.
+\DeclareMathOperator{\Der}{\text{Dér}}
+\newcommand{\DerCont}{\operatorname{\text{Dér.cont}}}
+
+\newcommand{\lead}[1]{\par\smallskip\noindent\textbf{#1}\quad}
+\begin{document}
+\head{第15节后半：坏参数、公理化光滑性与未完成的推广计划}
+\source{法文手稿物理93页“Il faut une condition sur”起至94页末；英文整理稿物理61页相应段落至页末；旧译校注V-H-L061--069}
+
+\audit{V23-B01}{法稿读法、漏译与编者疑问的归属}{两页法稿和英文对应页已实际看图；可恢复文字与未写出的对象分别处理}
+法93在“Il faut une condition sur”后直接接一个没有闭合的左括号，下一行进入“assurant la validité de 2.12”。此处未见可可靠辨读的条件对象，正文保留缺口，不把数学推断当作原文恢复。紧接的带下划线$X$省略了$\eta$；总空间$\mathcal X$在$k$上光滑已由$\mathcal X\to X$光滑推出，因此本段所需的新结论只能是下文法94明确写出的泛截面光滑性。正文给出这个有依据的明确化，并在V23-SMO001中保留原写法。
+
+法93手添的$\mathcal P\to P\times_kG$拟有限、$k$代数闭、$\dim V=n\geq m$和点名$z$都属于原稿。作者将先写的肯定条件划去，改为“不满足整组条件”；正文必须保留“存在一个坏点”的量词。三个好条件不全成立即算坏，不能误成三者同时失败。切空间原行仍漏写纤维下标，依前后的$\mathcal P_\xi\to P$改为$T_z(\mathcal P_\xi)$。可构造性一词经手改但清楚，英文括加的三个问号不属于法文原稿。法文“Moyennant”是这里“借助”的正常连接语，不是待恢复的数学条件。原稿末行的“总空间$\mathcal P\to P$分歧”则确实是原写法，须作数学订正，见下一项。
+
+法94的$N=\dim G$可辨；英文漏掉$G$。更重要的是，法稿随后完整写出“这一点取得后，立即得到2.12至2.18的相应变式”，英文却换成第5节的概括。本版恢复2.12至2.18的编号范围和整句。这个恢复不等于已经为其中每个结果提供独立证明。
+
+同页的“7.2., 7.3.; quant aux résultats 7.4.”没有7.3后的数学撇号，“quant aux”也不是不可辨数学记号。末段明确有“不是8.7(c)直接推论”的否定，后面所建议的变式同样指8.7(c)，不是不带(c)的8.7。原稿的“或许”“我觉得”“愿意在需要时再说明”均保留；信件作者与收信人的叙述不能转成译者已完成的研究。
+
+\audit{V23-B02}{坏集中的分歧态射写错了对象}{总空间投影必须改为纤维态射，或等价的关联态射}
+沿用正文$q:\mathcal P\to P$、$p:\mathcal P\to G$，并令$j=(q,p):\mathcal P\to P\times_kG$。原稿已假设$q$光滑且纤维维数为$N-m$。如果$N-m>0$，则$\Omega_{\mathcal P/P}$在每一点都是正秩局部自由模，故$q$处处不是非分歧的。把$q$的“分歧点”放进坏集，会错误地把整个$\mathcal X$判坏。
+
+一个同时满足坏参数公理的明确反例是标准点线关联族。取$k$代数闭，
+\[
+P=\mathbb P^2_k,\qquad G=(\mathbb P^2_k)^*,\qquad
+\mathcal P=\{(x,H):x\in H\}\subset P\times_kG,
+\]
+并取$N=2,m=1,X=P,f=\id$。$q$是纤维为$\mathbb P^1$的光滑态射，$j$是闭浸入。每条射影曲线与泛直线相交，故前面的非空公理成立。固定$x$，若$V=T_xP$、$n=2$，没有坏直线，故$E(x,V)=\varnothing$，满足上界$2-2-1=-1$；若$\dim V=1$，坏直线恰为过$x$且切方向为$V$的唯一一条，维数为0，等于$2-1-1$。这涵盖了该例中所有$n\geq m$。
+
+然而原文最后一项把$\mathcal X=\mathcal P$的所有点都计入$E$，所以$\dim E=3$，不可能满足$N-1=1$。这个反例中的$G$已经光滑约化，因而问题不能用约化底来解释。
+
+应检查的是$q_\xi:\mathcal P_\xi\to P_{k(\xi)}$，在$k$有理参数处目标就是$P$。由相对微分的基变换，
+\[
+\Omega_{\mathcal P/(P\times_kG)}
+   \otimes_{\mathcal O_{\mathcal P}}\mathcal O_{\mathcal P_\xi}
+\simeq
+\Omega_{\mathcal P_\xi/P_{k(\xi)}}.
+\]
+在点$z$再取剩余域，右端为零与左端为零等价；相对微分有限，Nakayama引理给出这与$j$在$z$处非分歧等价。故正文采用$j_U$，也就是在参数开集上的正确关联态射。非分歧性与有限型相对微分消失的判别、非分歧点集的开放性，参见\href{https://stacks.math.columbia.edu/tag/02G3}{Stacks Project，Tag 02G3}；这里没有把$q$本身改成非分歧态射。
+
+\audit{V23-B03}{坏参数集的可构造性及维数公理}{可构造性可补证，所需上界仍是独立假设}
+先固定$k$有理点$x\in P$和一个$n$维子空间$V\subset T_xP$。所有概形和态射处于有限型范围，故其底空间诺特。对$G_{\mathrm{red}}$反复使用泛平坦性，在每个剩余闭集的有限个不可约分支上取稠密开，得到有限个局部闭的约化层$G_i$，使
+\[
+p_i:\mathcal P\times_GG_i\longrightarrow G_i
+\]
+平坦。这类有限分层也见\href{https://stacks.math.columbia.edu/tag/0H3Y}{Stacks Project，Tag 0H3Y}。取约化层不改变对应点的剩余域和纤维。
+
+在每一层，纤维在$z$处光滑等价于$p_i$在$z$处光滑，因为$p_i$平坦且局部有限表现。故第一项好条件在该层的总空间中给出开集。第二项好条件等价于相应$j_i$非分歧，也是开条件。在两项都成立的地方，$\Omega_{\mathcal P_i/G_i}$局部自由。限制到$q^{-1}(x)$，第三项好条件等价于
+\[
+V^\perp\otimes_k\mathcal O
+\longrightarrow \Omega_{\mathcal P_i/G_i}\big|_{q^{-1}(x)}
+\]
+在剩余域上具有秩$r-n$；这里$r=\dim_x P$是$P$在闭点$x$附近的维数，$V^\perp\subset T_x(P)^*$为消灭$V$的子空间。这个矩阵满列秩条件由相应极大子式给出开集。于是三项好条件的补集在每层都可构造。有限层的并仍可构造，沿$p$的像由Chevalley定理可构造，参见\href{https://stacks.math.columbia.edu/tag/054K}{Stacks Project，Tag 054K}。它在$G(k)$上的迹正是$E(x,V)$。有限型代数闭域上的可构造集由闭点的迹唯一确定，故“良定义”在这里有精确含义。
+
+不过，可构造性并不给出$\dim E(x,V)\leq N-n-1$。为见上界是实质假设，在特征$p>0$的代数闭域上取
+\[
+P=\mathbb A^1_x,\quad G=\mathbb A^1_t,\quad
+\mathcal P=\mathbb A^1_s,\qquad q^*x=s,\quad p^*t=s^p,
+\]
+并令$N=m=1$。$q$为同构、$j$为闭浸入，初始平坦、光滑和非空公理均成立。固定$x=a$、$V=T_aP$时，唯一关联参数为$t=a^p$，相应纤维为
+\[
+\Spec k[s]/((s-a)^p),
+\]
+不是光滑的。因此$E(a,V)$是一个点，维数为0，违反本段要求的$N-n-1=-1$。泛纤维是$k(t)$的纯不可分扩域$k(t)[s]/(s^p-t)$；它作为域是正则的，却不在$k(t)$上光滑。这个例子同时防止把“光滑”弱化为未作域扩张检验的“正则”。
+
+\audit{V23-B04}{仅有光滑纤维不足以计算原来的非光滑坏集}{非约化参数底给出反例；泛平坦开集修补证明}
+取$k$代数闭并令
+\[
+P=\mathbb A^1_x,\quad
+G=\Spec k[t,\epsilon]/(\epsilon^2),\quad
+\mathcal P=\mathbb A^1_t,
+\]
+其中$q^*x=t$，$p^*\epsilon=0$，并取$X=P,f=\id,N=m=1$。$P,G$都在$k$上平坦；$G$几何不可约而不约化。$q$为同构，几何纤维为一点；$j$为由$x-t,\epsilon$定义的闭浸入。维数为1的闭不可约子集$Z\subset P$只能是$P$，而$\mathcal P_\eta=\Spec k(t)$非空，故非空公理也成立。
+
+对任何$x=a\in P(k)$和$n=1$的$V=T_aP$，唯一关联点位于参数$t=a$；其纤维是一个约化点，切映射为$0\to T_aP$，且$0+V=T_aP$。所以$E(x,V)=\varnothing$，坏参数公理成立。然而$\mathcal X=\mathcal P\to G$是约化闭子概形的嵌入，在每个点都不平坦。具体说，局部环中的非零理想$(\epsilon)$张量$\mathcal O_{\mathcal X}$后仍非零，而它到$\mathcal O_G\otimes\mathcal O_{\mathcal X}$的单射张量后变成零映射，违反平坦性。因此原稿按“相对$G$不光滑”定义的$E$等于整个一维$\mathcal X$，而$N-1=0$。
+
+本版的修补不把原假设“几何不可约”静默换成“几何整”。在本段$P$和$X$光滑，$q$及其基变换$q_X$光滑，故$\mathcal P$与$\mathcal X$都在$k$上光滑、从而约化。因此$p$和$p_X$确实因子化经过$G_{\mathrm{red}}$；并且
+\[
+\mathcal P\times_GG_{\mathrm{red}}=\mathcal P,
+\qquad
+\mathcal X\times_GG_{\mathrm{red}}=\mathcal X.
+\]
+$G_{\mathrm{red}}$不可约且约化，所以是整概形。由\href{https://stacks.math.columbia.edu/tag/052A}{Stacks Project，Tag 052A，泛平坦性}，对$p$和$p_X$各取一个非空平坦开集，再取其交，得到$U\subset G_{\mathrm{red}}$，使两态射都平坦且有限表现。$G$与$G_{\mathrm{red}}$具有同一个泛点及剩余域，因此这一步不改变原泛纤维。
+
+在$U$上，相对光滑性等价于纤维光滑性，所用准确判别见\href{https://stacks.math.columbia.edu/tag/01V9}{Stacks Project，Tag 01V9}。这才允许把原来的纤维条件用于相对非光滑坏集。不能倒过来将缩底后的结论宣称为非约化$G$上的平坦性或光滑性；上述例子正好排除了这种推论。
+
+\audit{V23-B05}{雅可比判据与全体坏点的统一维数估计}{有限型、非分歧、拟有限性和共同平坦开集给出完整补证}
+以下是译者对原证明概要的补充，不冒充手稿已写出的证明。取$X$为在$k$上光滑、纯$n$维的有限型预概形，$f:X\to P$非分歧，$n\geq m$。取V23-B04的$U$，并定义
+\[
+E=\operatorname{NSm}(p_{X,U})\ \cup\
+\widetilde f^{-1}\operatorname{NSm}(p_U)\ \cup\
+\widetilde f^{-1}\operatorname{NUnr}(j_U)
+\subset\mathcal X_U.
+\]
+符号$\operatorname{NSm}$与$\operatorname{NUnr}$分别表示非光滑点和非分歧性失败的点集合。这三个集合都是闭集，因为相应的光滑或非分歧轨迹为开集；$\widetilde f$是诱导态射。因此$E$确为$\mathcal X_U$中的闭集。
+
+\lead{横截的两个光滑对象的纤维积。}
+固定$x\in X(k)$，设$a=f(x)$。因$f$非分歧，$df_x$单射，故
+\[
+V=df_x(T_xX)\subset T_aP,\qquad \dim V=n.
+\]
+设$\xi\in U(k)$且$\xi\notin E(a,V)$。对于每个$z\in\mathcal P_\xi$且$q_\xi(z)=a$，三个好条件均成立。尤其$X$及$\mathcal P_\xi$在$x,z$处光滑，且
+\[
+T_xX\oplus T_z\mathcal P_\xi\longrightarrow T_aP,
+\qquad(v,w)\longmapsto df_x(v)-dq_\xi(w)
+\]
+满射。
+
+令$r=\dim_aP$。在$(x,z)$附近，$X\times_P\mathcal P_\xi$由光滑空间$X\times_k\mathcal P_\xi$中的对角条件给出；光滑目标$P$的对角在其自身附近由$r$个方程定义。上述满射正是这些方程的微分线性无关的条件。雅可比判据于是说明纤维积在对应点$u$处光滑，其局部维数为
+\[
+n+\dim_z\mathcal P_\xi-r.
+\]
+这里只需这一点处的光滑性，不先假设所有特殊纤维有同一维数。共同平坦开集保证由两纤维的光滑性分别推出$p_U$及$p_{X,U}$在所涉点光滑。又由V23-B02，$q_\xi$在$z$处非分歧等价于$j_U$在$z$处非分歧。因此$u\notin E$。
+
+\lead{固定$x$时从坏参数到坏点。}
+态射
+\[
+\mathcal X_U\longrightarrow X\times_kU
+\]
+是拟有限态射$j_U$沿$f\times\id_U$的基变换，所以拟有限。故$E_x\to U$也拟有限。上段证明其像的$k$点包含在$E(a,V)\cap U(k)$中。两边均可构造，且$k$代数闭、对象有限型，闭点的迹决定这些集合，于是这一包含对整个可构造像成立。因此
+\[
+\dim E_x=\dim \overline{\operatorname{Im}(E_x\to U)}
+\leq\dim E(a,V)\leq N-n-1
+\]
+（$E_x$为空时按空集处理）。第一个等式可逐个不可约分支用函数域超越次数验证：拟有限意味着到像闭包的泛纤维为零维。若删去拟有限性，坏参数的维数并不控制每个参数上方的整片坏点维数。
+
+\lead{沿$X$的统一计数。}
+若$N-n-1<0$，上式迫使每个闭点$x$的$E_x$为空，而非空有限型$k$-预概形必有闭点，故$E$为空。现在设$N-n-1\geq0$。取$E$的任一不可约分支$C$，令$Y$为其在$X$中像的闭包。泛纤维维数等于$\delta=\dim C-\dim Y$；有限型态射在$Y$的某个非空开集上有常数纤维维数$\delta$，参见\href{https://stacks.math.columbia.edu/tag/05F6}{Stacks Project，Tag 05F6}。在该开集中取一个$k$有理闭点$x$，即得$\delta\leq N-n-1$。于是
+\[
+\dim C=\dim Y+\delta\leq n+(N-n-1)=N-1.
+\]
+对有限个分支取最大值得$\dim E\leq N-1$。$E$在$U$中的像是可构造集，其闭包也至多$N-1$维，不能含$N$维整概形$U$的泛点。故$E_\eta=\varnothing$，$\mathcal X_\eta$在$k(\eta)$上光滑。更进一步，删除这个坏像的闭包可得到一个非空参数开集，其对应的各个几何纤维光滑；这里并不要求原始参数底$G$约化。
+
+$n<m$时，前半的维数计数直接给出空泛截面；无须把不适用的$n\geq m$微分公理套进去。对于光滑而不纯维的有限型$X$，可以分别对有限个维数分支应用对应的$n$和同一组公理，再取有限个参数开集的交；正文依原稿保持纯$n$维写法。
+
+\audit{V23-B06}{从泛参数到一般参数及末尾研究建议}{可核查的拓扑和有理点步骤已说明，整组推广未冒称完成}
+若有限型不可约参数空间中的一个可构造集含泛点，它包含一个非空开集。理由是把可构造集写成有限个局部闭集，包含泛点的那一项在整个不可约空间中稠密，所以其闭包为全空间，而该项包含一个非空开集。这个结论说明作者从泛到一般的过渡为什么必须带有可构造性条件；不是任意性质都满足该过渡。
+
+在代数闭域上，有限型预概形的每个非空开集都有$k$有理闭点。若$k$只是无限域，而$G$在通常的有理性意义下与$\mathbb A^N_k$双有理，则它有一个非空开子概形同构于仿射空间的一个非空开子概形。将任何给定的非空好开集与这个有理开片相交后，问题归结为$k^N$中非零多项式不可能处处为零；对变量数归纳即可证明。因此每个非空好开集有$k$点，有限多个好条件可同时实现。这并不适用于任意无限多个开集的交，也不等于“参数空间存在一个$k$点”这一弱得多的条件。
+
+法94所说2.12至2.18的“相应变式”、第4、5、7节的整体推广，仍应逐项检查其原命题及需要的附加条件。本版的正面补证是V23-B05的泛截面光滑性，不能替代前半已经指出的局部性质等价所需的正则态射条件。第7.4仍被作者明确标为超平面截面的特殊应用；第3和第6节仍等待Bertini--Zariski方向的推广；第8、12节的进一步公理化以及8.7(c)变式仍是研究建议。旧8.7(c)、8.8和9.5的历史缺文没有在本次回校中凭数学常识补出。
+
+本节原文在法文物理94页末的建议句结束；下一页物理95页另起“nouveau EGA V”，英稿物理62页另起Part II和第16节。该边界已与实际扫描核对；不能把英文61页末误当作整份手稿末尾。
+
+\end{document}

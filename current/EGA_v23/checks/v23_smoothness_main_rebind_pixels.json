@@ -1,0 +1,47 @@
+{
+  "prior_pdf_sha256": "7de3aee3cb4e924a06ed99dcca3cf38c89ed74941c084b38787d07d6600fbf22",
+  "final_pdf_sha256": "9396741a30df30bc5950e3cae1a7c3b9f809351eed777797c59d382c3aa9f3de",
+  "checked_at_utc": "2026-11-26T03:27:29.931785+00:00",
+  "rendering": {
+    "renderer": "PyMuPDF",
+    "scale": 1.65,
+    "colorspace": "RGB",
+    "alpha": false
+  },
+  "pages": [
+    {
+      "physical_page": 1086,
+      "prior_image_sha256": "86b0ae29a41a3830eccb4b7b6f009fa3ef3586021445ed8aaa9b4a2b01c5cdeb",
+      "prior_rgb_samples_sha256": "773bfff39790e11966f3ee7e8ef1aceba62e031d113468f0db1b3ca46fd49ded",
+      "new_rgb_samples_sha256": "5ca260d5719549f3ccf80033a8073356932998482bc044b091f71b38f1bed645",
+      "pixel_dimensions": [
+        983,
+        1390
+      ],
+      "pixels_equal": false
+    },
+    {
+      "physical_page": 1087,
+      "prior_image_sha256": "302de7e85da15053c9bb9242504b70842c4e1328db5ac65a3202e2dbfa4ec3f0",
+      "prior_rgb_samples_sha256": "e022d47c661e3757caa033aa57150074874903c9e31a837a219353fefbe21553",
+      "new_rgb_samples_sha256": "e022d47c661e3757caa033aa57150074874903c9e31a837a219353fefbe21553",
+      "pixel_dimensions": [
+        983,
+        1390
+      ],
+      "pixels_equal": true
+    },
+    {
+      "physical_page": 1088,
+      "prior_image_sha256": "11000a5b04174ec8aaa226d1eb55bd5a58f164e04f9743fae06fafd869113272",
+      "prior_rgb_samples_sha256": "1a31f97369cd9969bc8216a10dfc91e3a8daa105dd7367e499a8375fde697d42",
+      "new_rgb_samples_sha256": "1a31f97369cd9969bc8216a10dfc91e3a8daa105dd7367e499a8375fde697d42",
+      "pixel_dimensions": [
+        983,
+        1390
+      ],
+      "pixels_equal": true
+    }
+  ],
+  "scope": "Only physical pages 1086–1088. Page1086 is re-rendered and will be actually viewed; unchanged 1087–1088 prior actual views may be rebound only after the recorded exact RGB sample comparison."
+}

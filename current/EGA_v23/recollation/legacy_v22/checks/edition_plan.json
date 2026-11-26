@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "edition": 22,
+  "baseline_commit": "79c1100b13427e447fad5525f27d9b64e4d4ead7",
+  "new_book_modules": [
+    "continuations/v22_section14_geometry.tex",
+    "continuations/v22_section14_fibers.tex",
+    "continuations/v22_section14_differential.tex"
+  ],
+  "new_report_modules": [
+    "reports/v22_integration_audit.tex",
+    "reports/v22_section14_geometry_audit.tex",
+    "reports/v22_section14_fibers_audit.tex",
+    "reports/v22_section14_differential_audit.tex"
+  ],
+  "replaced_old_input": "continuations/v_dot_late.tex",
+  "preserved_remainder_input": "continuations/v22_section15_inherited.tex",
+  "status": "New translation and audit modules must be supplied before flattening/building; absence is an error."
+}

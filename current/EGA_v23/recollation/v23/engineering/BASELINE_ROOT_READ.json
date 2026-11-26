@@ -1,0 +1,29 @@
+{
+  "commit": "a1e4d5b58aee845096b7bae25e7e1e7e9482d7fa",
+  "files": [
+    {
+      "path": "README.md",
+      "bytes": 5803,
+      "sha256": "fa6fb449e574ea7e2cbe413be3a45b2e623db97d350df5c7dab7a9cd906897cc",
+      "matches_published_git_object": true
+    },
+    {
+      "path": "AGENTS.md",
+      "bytes": 1799,
+      "sha256": "fa8bd28f04b37e3ec23368ecedbd619311135da8da14aff0f1443bd68e00a2ea",
+      "matches_published_git_object": true
+    },
+    {
+      "path": "CONTINUE_HERE.md",
+      "bytes": 3876,
+      "sha256": "e1aa6c4a6db9f28f555b386600f547251a9cc0c4e397471bea0d462b89c7ca56",
+      "matches_published_git_object": true
+    },
+    {
+      "path": "REPOSITORY_MANIFEST.json",
+      "bytes": 1316901,
+      "sha256": "201dbe76bf75eb8e3363a55a944d7e289b7bbb028fcf9b685ebaebb5c1749836",
+      "matches_published_git_object": true
+    }
+  ]
+}

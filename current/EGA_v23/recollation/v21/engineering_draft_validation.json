@@ -1,0 +1,79 @@
+{
+  "recorded_at_utc": "2026-11-25T23:47:48.180907+00:00",
+  "scope": "Actual syntax/help and synthetic rejection checks of draft programs only. Not a production build, math review, artifact freeze or remote publication record.",
+  "scripts": [
+    {
+      "script": "apply_edition21_update.py",
+      "sha256": "37fd6c58c5b90c8b960934e11416af0361ec902aa8e51255862260f4533f1fd9",
+      "syntax_valid": true,
+      "help_exit_code": 0
+    },
+    {
+      "script": "finalize_edition21_records.py",
+      "sha256": "292cf95bf7646a645b03fe5fa37921e82e5659718000e20272b60e38f0f428ef",
+      "syntax_valid": true,
+      "help_exit_code": 0,
+      "post_validation_edit": "Added an explicit dpi==72 gate before claiming the declared all-page comparison; syntax/help rechecked. Prior rejection fixtures fail earlier or independently."
+    },
+    {
+      "script": "freeze_edition21_delivery.py",
+      "sha256": "02969edc7fc045a36a66d608c1843aafd79c53c490b8b5c74d337cfcc726ccaf",
+      "syntax_valid": true,
+      "help_exit_code": 0
+    },
+    {
+      "script": "package_edition21.py",
+      "sha256": "883c369963adcc8693d267ebf9d27cecc465fa7f0ad0f7ffdc601a7497450879",
+      "syntax_valid": true,
+      "help_exit_code": 0
+    },
+    {
+      "script": "render_edition21_workflow.py",
+      "sha256": "008171baddc989c2e197da03d87e8f448dec3ea0f511afb9d5ac8d1bb899b885",
+      "syntax_valid": true,
+      "help_exit_code": 0
+    }
+  ],
+  "negative_cases": [
+    {
+      "case": "prior_edition_overwrite",
+      "rejected_as_required": true,
+      "exit_code": 1,
+      "diagnostic": "Unexpected or unsafe overlay path: current/EGA_v20/main.tex"
+    },
+    {
+      "case": "path_traversal",
+      "rejected_as_required": true,
+      "exit_code": 1,
+      "diagnostic": "Unexpected or unsafe overlay path: ../outside.txt"
+    },
+    {
+      "case": "wrong_archive_sha256",
+      "rejected_as_required": true,
+      "exit_code": 1,
+      "diagnostic": "Overlay SHA-256 mismatch"
+    },
+    {
+      "case": "inherited_state_not_finalizable",
+      "rejected_as_required": true,
+      "exit_code": 1,
+      "diagnostic": "Prepare an accurate edition-21 HANDOVER_STATE.json before finalization"
+    },
+    {
+      "case": "unfinished_checks_not_freezable",
+      "rejected_as_required": true,
+      "exit_code": 1,
+      "diagnostic": "Required actual verification has not passed: current_structure_verification.json"
+    },
+    {
+      "case": "old_only_repository_not_packageable_as_v21",
+      "rejected_as_required": true,
+      "exit_code": 1,
+      "diagnostic": "ValueError: No current project files"
+    }
+  ],
+  "historical_fixture_bytes_preserved": true,
+  "real_deliverable_package_generated": false,
+  "remote_actions_performed": false,
+  "draft_validation_passed": true
+}

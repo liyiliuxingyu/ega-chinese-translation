@@ -1,0 +1,218 @@
+% 底本 EGAIV.1.pdf，上传PDF第146--149页。
+\subsection{向拓扑环的推广}
+\source{第四卷第一部分，分册印刷第147--153页；上传PDF第146--152页，20.7全文}
+
+\egap{20.7.1}
+若在（20.5.2）、（20.5.3）中，$A,B,C$ 为拓扑环且环同态 $u,v$ 连续，
+则由定义，$u_{C/B/A}$ 与 $v_{C/B/A}$ 均连续；这里
+$\Omega^1_{B/A}\otimes_B C$ 取张量积拓扑。
+
+此外，$u_{C/B/A}:\Omega^1_{C/A}\to\Omega^1_{C/B}$ 是拓扑 $C$-模的严格满态射。
+事实上，由张量积拓扑的定义，$C\otimes_A C\to C\otimes_B C$ 为严格满态射；
+取商得到的 $P^1_{C/A}\to P^1_{C/B}$ 也如此。
+它保持拓扑直和分解中的 $C$ 项，且在该项上为恒等；
+限制到增广核，便得到所述的严格满态射。
+
+在（20.5.5）中，若 $A'$、$B$ 均为拓扑 $A$-代数，且
+$B'=B\otimes_A A'$ 及 $\Omega^1_{B/A}\otimes_B B'$ 均赋张量积拓扑，
+则（20.5.5.1）的典范同态是拓扑同构。这里使用
+$P^1_{B/A}$ 为 $B$ 与 $\Omega^1_{B/A}$ 的拓扑直和（20.4.8）。
+
+\egas{20.7.2}{命题}
+设 $u:A\to B$、$v:B\to C$ 为拓扑环之间的连续同态。
+连续同态
+\[
+ v_{C/B/A}:\Omega^1_{B/A}\otimes_B C\longrightarrow\Omega^1_{C/A}
+\]
+形式上有左逆（19.1.5），当且仅当 $C$ 是相对于 $A$ 形式光滑的
+$B$-代数（19.9.1）。特别地，$C$ 对 $B$ 形式光滑是一个充分条件。
+
+由于 $\Omega^1_{C/A}$ 及 $\Omega^1_{B/A}\otimes_B C$ 的拓扑不比从 $C$
+所导出的拓扑细（20.4.5），由（19.1.5），形式上有左逆等价于：
+对每个被某个开理想零化的离散 $C$-模 $L$，典范同态
+\[
+ \HomCont_C(\Omega^1_{C/A},L)
+ \longrightarrow\HomCont_C(\Omega^1_{B/A}\otimes_B C,L)
+\]
+满射。由张量积拓扑的定义，
+\[
+ \HomCont_C(\Omega^1_{B/A}\otimes_B C,L)
+ \simeq\HomCont_B(\Omega^1_{B/A},L).
+\]
+\cmt{J10-T03}{原文在这个同构的右端写 $\HomCont_C(\Omega^1_{B/A},L)$。
+$\Omega^1_{B/A}$ 的给定标量环是 $B$，一般并无 $C$-模结构，故应为
+$\HomCont_B$。这是标量环下标订正，典范同构来自张量积的伴随性质。}
+结合（20.4.8），上述满射性等价于
+\[
+ \DerCont_A(C,L)\longrightarrow\DerCont_A(B,L)
+\]
+满射。而由正合列（20.3.8.2），这又等价于
+$\Exalcotop_{B/A}(C,L)=0$，即 $C$ 相对于 $A$ 形式光滑（19.9.8）。
+
+\egas{20.7.3}{推论}
+假定 $B,C$ 中每个开理想的平方仍开。
+设 $(\mathfrak m_\lambda)$ 为由 $C$ 的开理想组成的零邻域基。
+$C$ 是相对于 $A$ 形式光滑的 $B$-代数，当且仅当对每个 $\lambda$，
+同态
+\begin{equation}
+ \begin{aligned}
+ v_{C/B/A}\otimes1_{C/\mathfrak m_\lambda}:
+ \Omega^1_{B/A}\otimes_B(C/\mathfrak m_\lambda)
+ \longrightarrow
+ \Omega^1_{C/A}\otimes_C(C/\mathfrak m_\lambda)
+ \end{aligned}
+ \tag{20.7.3.1}
+\end{equation}
+有左逆。
+
+事实上，此时 $\Omega^1_{B/A}$、$\Omega^1_{C/A}$ 的拓扑分别由
+$B,C$ 的拓扑导出（20.4.5），因而 $\Omega^1_{B/A}\otimes_B C$
+的拓扑也由 $C$ 导出。结论来自（20.7.2）及（19.1.7）。
+
+\egas{20.7.4}{命题}
+设 $A$ 为拓扑环，$B$ 为拓扑 $A$-代数。
+$B$ 对 $A$ 形式非分歧（19.10.2），当且仅当
+$\Omega^1_{B/A}$ 的分离完备化 $\widehat{\Omega}^1_{B/A}$ 为零。
+
+由（19.10.4）及（20.1.1），形式非分歧等价于：
+对 $B$ 的每个开理想 $\mathfrak k$、$A$ 的每个满足
+$\mathfrak jB\subseteq\mathfrak k$ 的开理想 $\mathfrak j$，
+以及每个 $B/\mathfrak k$-模 $L$，都有
+\[
+ \Der_{A/\mathfrak j}(B/\mathfrak k,L)=0 .
+\]
+这又等价于对每个被开理想零化的离散 $B$-模 $L$，
+$\DerCont_A(B,L)=0$。由（20.4.8），也就是
+$\HomCont_B(\Omega^1_{B/A},L)=0$ 对所有这样的 $L$ 成立。
+将 $L$ 取为微分模的各个离散开商，即得命题。
+
+当 $B$ 离散时，这一条件就是 $\Omega^1_{B/A}=0$。
+
+\egas{20.7.5}{推论}
+设 $A$ 为环，$\mathfrak m$ 为其理想，$B$ 为 $A$-代数。
+给 $A$ 赋 $\mathfrak m$-预进制拓扑，给 $B$ 赋从 $A$ 导出的拓扑。
+令 $A_0=A/\mathfrak m$、$B_0=B/\mathfrak mB=B\otimes_A A_0$。
+则 $B$ 对 $A$ 形式非分歧，当且仅当 $\Omega^1_{B_0/A_0}=0$，
+也就是当且仅当 $B_0$ 对 $A_0$ 形式非分歧。
+
+根据（20.5.5），
+\[
+ \Omega^1_{B/A}\otimes_B B_0
+ =\Omega^1_{B/A}/\mathfrak m\Omega^1_{B/A}
+ \simeq\Omega^1_{B_0/A_0}.
+\]
+由（20.4.5），$\Omega^1_{B/A}$ 的每个开子模都等于全模，
+等价于 $\mathfrak m\Omega^1_{B/A}=\Omega^1_{B/A}$，故由（20.7.4）得结论。
+
+\egas{20.7.6}{命题}
+设 $u:A\to B$、$v:B\to C$ 为拓扑环之间的连续同态，
+且 $v$ 使 $C$ 成为形式平展的 $B$-代数。
+则
+\[
+ v_{C/B/A}:\Omega^1_{B/A}\otimes_B C\longrightarrow\Omega^1_{C/A}
+\]
+是形式双态射（19.1.2）。
+
+对每个被开理想零化的离散 $C$-模 $L$，
+由（20.7.4）有 $\DerCont_B(C,L)=0$，故（20.3.6.1）中的
+\[
+ \DerCont_A(C,L)\longrightarrow\DerCont_A(B,L)
+\]
+单射；它又由（20.7.2）满射，因而双射。这迫使
+$\Im(v_{C/B/A})$ 在 $\Omega^1_{C/A}$ 中稠密：
+否则对该像的闭包取商，所得非零分离模便有一个非零离散商 $L$，
+与上述导子映射的单射性及（20.4.8）矛盾。
+由（20.7.2），$v_{C/B/A}$ 是形式单态射；由像的稠密性，
+它也是形式满态射（19.1.2），故为形式双态射。
+
+\egas{20.7.7}{推论}
+若 $B,C$ 中每个开理想的平方仍开，且 $C$ 对 $B$ 形式平展，
+则对 $C$ 的每个开理想 $\mathfrak m_\lambda$，
+（20.7.3.1）双射。
+
+由（20.7.6）及（19.1.1），这个同态满射；
+由（20.7.3），它有左逆，故单射。
+
+\egas{20.7.8}{命题}
+设 $u:A\to B$ 为连续的拓扑环同态，$\mathfrak k$ 为 $B$ 的理想，
+$C=B/\mathfrak k$ 赋商拓扑，$v:B\to C$ 为典范同态。则：
+
+$(i)$ 在正合列（20.5.12.1）
+\[
+ \mathfrak k/\mathfrak k^2\xrightarrow{\delta_{C/B/A}}
+ \Omega^1_{B/A}\otimes_B C\xrightarrow{v_{C/B/A}}
+ \Omega^1_{C/A}\longrightarrow0
+\]
+中，$\delta_{C/B/A}$ 连续，且 $v_{C/B/A}$ 为拓扑 $C$-模的严格态射。
+
+$(ii)$ $\delta_{C/B/A}$ 形式上有左逆，当且仅当对每个被 $C$ 的开理想
+零化的离散 $C$-模 $L$，典范同态
+\begin{equation}
+ \Exalcotop_A(C,L)\longrightarrow\Exalcotop_A(B,L)
+ \tag{20.7.8.1}
+\end{equation}
+单射。
+
+$(i)$ 第一项由定义得到。根据张量积拓扑的定义，
+$v\otimes v:B\otimes_A B\to C\otimes_A C$ 是严格态射；
+取商并限制到相应增广核，可知 $v_{C/B/A}$ 也严格（20.5.2）。
+
+$(ii)$ 形式上有左逆等价于：对上述每个 $L$，
+\[
+ \HomCont_C(\Omega^1_{B/A}\otimes_B C,L)
+ \longrightarrow\HomCont_C(\mathfrak k/\mathfrak k^2,L)
+\]
+满射。结合（18.5.4）及（20.4.8），这就是
+\[
+ \DerCont_A(B,L)\longrightarrow\Exalcotop_B(C,L)
+\]
+满射。再由（20.3.6.1）得到所述等价关系。
+
+结合（18.5.1）的定义，（20.7.8.1）的单射性还可以表述为：
+对 $A$ 的每个开理想 $\mathfrak m$、$B$ 的每个满足
+$\mathfrak mB\subseteq\mathfrak n$ 的开理想 $\mathfrak n$，
+以及以 $B/(\mathfrak k+\mathfrak n)$-模 $L$ 为核的
+$B/(\mathfrak k+\mathfrak n)$ 的每个 $(A/\mathfrak m)$-扩张 $E$，
+若其通过 $B/\mathfrak n\to B/(\mathfrak k+\mathfrak n)$ 的逆像为
+$(A/\mathfrak m)$-平凡扩张，则存在开理想
+$\mathfrak m'\subseteq\mathfrak m$、$\mathfrak n'\subseteq\mathfrak n$，
+满足 $\mathfrak m'B\subseteq\mathfrak n'$，使 $E$ 通过
+\[
+ B/(\mathfrak k+\mathfrak n')\longrightarrow
+ B/(\mathfrak k+\mathfrak n)
+\]
+的逆像成为 $(A/\mathfrak m')$-平凡扩张。
+\cmt{J10-C01}{作者正式《勘误与增补（清单三）》A类要求：
+本证明的（18.4.3）改为（18.5.4），随后定义的（18.4.1）改为（18.5.1）。
+正文已按正式勘误修正。这是作者已有订正，不作为译者新发现。}
+
+\egas{20.7.9}{推论}
+若拓扑 $A$-代数 $C=B/\mathfrak k$ 形式光滑，
+则典范同态 $\delta_{C/B/A}$ 形式上有左逆。
+
+\egap{20.7.10}
+在（20.6.1）中，若 $A,B,C$ 为拓扑环且 $u,v$ 连续，
+则给 $\Upsilon_{C/B/A}$ 赋由 $\Omega^1_{B/A}\otimes_B C$ 诱导的子空间拓扑。
+只要（20.6.4.1）中的各环同态连续，（20.6.4.2）和（20.6.4.4）也连续。
+
+再在（20.6.7）中假定 $L$ 是被 $C$ 的一个开理想零化的离散 $C$-模。
+通过归纳极限，并使用（18.5.3.1），得到典范的 $C$-线性同态
+\begin{equation}
+ \Exalcotop_{B/A}(C,L)\longrightarrow
+ \HomCont_C(\Upsilon_{C/B/A},L).
+ \tag{20.7.10.1}
+\end{equation}
+具体地，设 $\mathfrak m\subseteq A$、$\mathfrak n\subseteq B$、
+$\mathfrak p\subseteq C$ 为开理想，满足
+\[
+ \mathfrak mB\subseteq\mathfrak n,\qquad
+ \mathfrak nC\subseteq\mathfrak p,\qquad \mathfrak pL=0 .
+\]
+每个以 $L$ 为核且为 $(A/\mathfrak m)$-平凡的 $C/\mathfrak p$ 的
+$(B/\mathfrak n)$-扩张 $E$，都由某个连续的 $C$-线性同态
+\[
+ f:\Omega^1_{B/A}\otimes_B C\longrightarrow L
+\]
+给出。（20.7.10.1）将 $E$ 的类在 $\Exalcotop_{B/A}(C,L)$ 中的像，
+映到 $f|_{\Upsilon_{C/B/A}}$。仍称这个限制为 $E$ 的特征同态，
+并记作 $\chi_E$。

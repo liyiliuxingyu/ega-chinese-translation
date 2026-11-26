@@ -1,0 +1,31 @@
+% V18 integration from immutable Dot batch 105: EGA第五卷_奇异参数维数与超奇异判据.tex
+\begingroup
+\def\PP{\mathbb P}\def\OO{\mathcal O}\def\Ocal{\mathcal O}
+\def\F{\mathcal F}\def\G{\mathcal G}\def\N{\mathcal N}
+\def\PD{\check P}\def\Pdual{\check P}
+\def\Ys{Y^{\mathrm{sing}}}\def\Ysing{Y^{\mathrm{sing}}}
+\def\Ds{Y^{\mathrm{sup\,sing}}}\def\Ysup{Y^{\mathrm{sup\,sing}}}
+\def\cod{\operatorname{codim}}\def\Sing{\operatorname{Sing}}
+\def\depth{\operatorname{depth}}\def\coprof{\operatorname{coprof}}
+\def\Ass{\operatorname{Ass}}\def\Supp{\operatorname{Supp}}
+\def\Gr{\operatorname{Gr}}\def\Spec{\operatorname{Spec}}\def\Proj{\operatorname{Proj}}
+\source{Dot第105批；法文底本物理第39--40；另对读41--42页，英编稿物理第27--29页}
+\subsection*{奇异截面的参数像}
+在这番颇费力的符号推演之前，只看点集也可以先作如下观察。若 $S=\operatorname{Spec} k$，则在非空情形 $\dim\Ysing=r-1$，而 $\dim\Pdual=r$；所以 $\Ysing$ 在 $\Pdual$ 中的像闭包余维至少为一。这又给出(2.12)在这里的结论；所用论证与(2.12)的论证本质上没有区别。\transnote{法40说像，正文用像闭包来定义其余维，不预设像闭。若 $\Ysing$ 为空，则所有参数都避开奇异零；不能给空集赋通常的维数 $r-1$。这里重新得到的是(2.12)的相应方向：光滑处的泛截面光滑且具期望维数；(2.12)的逆向见第89批的平坦下降论证。}
+
+注意，在许多情形下，这个集合的确是余维一（见下文）。因此一般不能指望找到所有成员都几何光滑的超平面截面线性笔。不过往往仍能找到一个没有任何超奇异点的截面笔，因为 $\Ysup$ 在 $\Pdual$ 中的像通常为余维二；避开该像只需要其闭包余维至少为二。\transnote{法40说常见情形为余维二，不是普遍等式；例如坏集为空时也不是余维恰好二。原稿“光滑”在此针对截面具有期望维数的情形。法40边上移入的首行给出后述(b)中源、靶的相对维数。} 下面先归纳这一问题中与微分有关的要点。
+
+\egas{8.7}{定理}
+\paragraph{(a)}
+这里由第16段定义的 $\Ysing$，正是前述嵌入 $Y$ 的 $\PP_X(\mathcal N_{X/P})$。这是闭子概形的等同，而非仅为底集等同。
+
+\paragraph{(b)}
+$\Ysup$ 的底集，正是以下态射的分歧点集：
+\[
+ \pi:\Ysing=\PP_X(\mathcal N_{X/P})\longrightarrow\Pdual.
+\]
+源、靶俱为 $S$-光滑概形，非空处的相对维数分别为 $r-1$ 与 $r$。设 $y$ 在 $\Pdual$ 中的像为 $\xi$；则 $\pi$ 在 $y$ 无分歧，当且仅当 $y$ 对纤维截面 $\varphi_\xi$ 几何上是普通奇异零点。\transnote{这里的分歧是“不无分歧”，不是“不\'etale”；源、靶相对维数本来就不同。参看法40正文及页顶移写行，并与 \href{https://webusers.imj-prg.fr/~leila.schneps/grothendieckcircle/EGA/EGA5trans.pdf}{英编稿的第16段、物理62--65页} 互校。该段判别二次型的极化是否非退化；特征二时不能改用除以2的公式。英编稿后文物理73--74页另说明，这里的“普通”与惯常用语有冲突，宜称“非超奇异的奇异零”或“二次型非退化的奇异零”。因此本处普通奇异零只按极化型非退化理解；例如特征二的 $u^2+vw$ 可给出通常的普通二次奇异点，但其极化型退化，不能混同。}
+
+\paragraph{(c) 可辨起笔}
+设 $S=\operatorname{Spec} k$，$y\in\Ysing(k)$ 在 $X$ 和 $\Pdual$ 中的投影分别为 $x$ 和 $\xi$；考察由 $d\pi_y$ 的像所确定的、经过 $\xi$ 的射影线性子空间 $H'$。［法40止于切映射所属态射的引出语；(c)的后半原句在现存页缝未找到。］\transnote{英28注40的第一投影可由法40及语法判为 $x$。英28紧接“其像的闭包”及支配态射 $g$，与法41开头相同，不能据此认定它仍属(c)。法41、42已分别回指8.7(b)、8.7(c)、8.8，可知定理条目与后续命题应分开。}\textsuperscript{,}\ednote{请询问 A.G.。〔英编稿脚注40。〕}\textsuperscript{,}\transnote{像维数、极化型以及后文所需对偶切空间事实的独立补证完整保存于核查报告“D18-105”项，属译校文字，不是原文。}
+\par\endgroup

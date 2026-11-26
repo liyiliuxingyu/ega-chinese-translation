@@ -1,0 +1,105 @@
+{
+  "edition": 23,
+  "agent": "v23_smoothness",
+  "verified_at_utc": "2026-11-26T03:10:23.751578+00:00",
+  "scope": "Isolated section-15 latter-half module previews only; not the final integrated edition PDF.",
+  "engine": "XeLaTeX; actual two-pass successful builds with the unchanged current ctexbook preamble; own disposable format cache",
+  "build_note": "The initial direct invocation could not find xelatex.fmt. A local format cache was initialized and compile_previews.sh completed successfully with exit code 0. This was an actual recovery, not a claimed skipped build.",
+  "source_artifacts": {
+    "v23_section15_smoothness.tex": {
+      "bytes": 8568,
+      "sha256": "7fe9357f60d1bda1243ae2fe81cc12279946f5dd4ebaadfd02b1890554ea28b6"
+    },
+    "v23_section15_smoothness_audit.tex": {
+      "bytes": 14898,
+      "sha256": "aa53c8be5bd9138317aa5ded569999cfc3b9c411320d22d39a4f635e5fd465eb"
+    }
+  },
+  "previews": {
+    "preview_body": {
+      "pages": 3,
+      "pdf_sha256": "eeb1451dfcdde973b8fdaffc47baff194d9ae42b05bd188c4452646a3036dab6",
+      "log_sha256": "ffaa6ad9cb9b6e5afd0d8f1e139b8af4883d3323d4c838e9cd37dc972e903870",
+      "compiler_error_lines": [],
+      "overfull_lines": [],
+      "missing_character_lines": [],
+      "actual_visual_review_pages": [
+        1,
+        2,
+        3
+      ],
+      "render_images": [
+        {
+          "page": 1,
+          "path": "/workspace/scratch/a886fd56dd2f/v23_work/contributions/smoothness/preview_renders/preview_body_1.png",
+          "sha256": "e344a9dd51d79f56860a7c6c4ecb1ad84b3a9275a3967fd60b7f55dcaae41ed5"
+        },
+        {
+          "page": 2,
+          "path": "/workspace/scratch/a886fd56dd2f/v23_work/contributions/smoothness/preview_renders/preview_body_2.png",
+          "sha256": "cdca0f998fc2cd2f2afbc53831be00c2f80e64bdda2bedfab0c1ed49bd69dfa6"
+        },
+        {
+          "page": 3,
+          "path": "/workspace/scratch/a886fd56dd2f/v23_work/contributions/smoothness/preview_renders/preview_body_3.png",
+          "sha256": "812576cf1cf98111136145ac9eb4f5e8c8012a7bfade6d797756b9b2d725e15b"
+        }
+      ]
+    },
+    "preview_audit": {
+      "pages": 7,
+      "pdf_sha256": "1b2787cc5a4ade53269a23396e98d6da5d62bf3d05e90993d6a0dd28971a85f1",
+      "log_sha256": "2cb4dfca19198ba092c81ec5136d6f5cd0e396427fef16ff24941e07c8db55eb",
+      "compiler_error_lines": [],
+      "overfull_lines": [],
+      "missing_character_lines": [],
+      "actual_visual_review_pages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "render_images": [
+        {
+          "page": 1,
+          "path": "/workspace/scratch/a886fd56dd2f/v23_work/contributions/smoothness/preview_renders/preview_audit_1.png",
+          "sha256": "6e06b8267500a569c82f98bcd371eaa1f3db9b5ab5bd9f055faf93907fefae9f"
+        },
+        {
+          "page": 2,
+          "path": "/workspace/scratch/a886fd56dd2f/v23_work/contributions/smoothness/preview_renders/preview_audit_2.png",
+          "sha256": "e1afc9a47d4feeeb721c5e1b2b259957e419b0f515b83c7af0ca3dd9ea17fc97"
+        },
+        {
+          "page": 3,
+          "path": "/workspace/scratch/a886fd56dd2f/v23_work/contributions/smoothness/preview_renders/preview_audit_3.png",
+          "sha256": "1a866bffe727f9d98710249b4fecddc6e23077ef1195a9beeb8c1acd81b87461"
+        },
+        {
+          "page": 4,
+          "path": "/workspace/scratch/a886fd56dd2f/v23_work/contributions/smoothness/preview_renders/preview_audit_4.png",
+          "sha256": "b9d2717383dd3d733dd7055a2ebea1d22237692fe2cca261f293c831c19265e5"
+        },
+        {
+          "page": 5,
+          "path": "/workspace/scratch/a886fd56dd2f/v23_work/contributions/smoothness/preview_renders/preview_audit_5.png",
+          "sha256": "54cd8169f32162e404e3eda2ac94930f5851edd86a19c7dba3a6bf9548c2dd4a"
+        },
+        {
+          "page": 6,
+          "path": "/workspace/scratch/a886fd56dd2f/v23_work/contributions/smoothness/preview_renders/preview_audit_6.png",
+          "sha256": "50874c6618d0d1a1ef51b029ff12bddf43f071d723e39f43a2844541e7ce56ea"
+        },
+        {
+          "page": 7,
+          "path": "/workspace/scratch/a886fd56dd2f/v23_work/contributions/smoothness/preview_renders/preview_audit_7.png",
+          "sha256": "852ffa3ad3f126feda14d1d0a53a7e36fb9740b005b79ff0303a6bba69a273dc"
+        }
+      ]
+    }
+  },
+  "visual_result": "All final module preview pages actually viewed. No clipped text, overlapping formulae, isolated footnote-marker rows, missing glyphs, or visibly broken mathematical notation found. Body notes SMO003 and SMO007 attach to running prose. Full-edition review remains a separate required step."
+}

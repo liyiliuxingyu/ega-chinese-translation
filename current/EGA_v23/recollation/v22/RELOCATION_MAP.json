@@ -1,0 +1,498 @@
+{
+  "edition": 22,
+  "purpose": "Exact copies of module source, source-page evidence and author-owned historical review records; original draft paths are mapped here for recovery. Preview records are module-only, not final-book validation.",
+  "files": [
+    {
+      "original_workspace_path": "v22_work/drafts/geometry/EGA5_francais_geometry_source.pdf",
+      "project_relative_path": "recollation/v22/geometry/EGA5_francais_geometry_source.pdf",
+      "bytes": 305090,
+      "sha256": "2579389c1b5e79137b84590cea52e146a856493647d7bd9451b483055ccf52d9"
+    },
+    {
+      "original_workspace_path": "v22_work/drafts/geometry/EGAVaiello_geometry_source.pdf",
+      "project_relative_path": "recollation/v22/geometry/EGAVaiello_geometry_source.pdf",
+      "bytes": 129415,
+      "sha256": "da7760bcfa4c1c90ce0d15ae98c517034ac4a4ce5490580dbf062f6112bdecc7"
+    },
+    {
+      "original_workspace_path": "v22_work/drafts/geometry/EVIDENCE_MANIFEST.json",
+      "project_relative_path": "recollation/v22/geometry/EVIDENCE_MANIFEST.json",
+      "bytes": 9889,
+      "sha256": "37cb43c63c2af52ad5d8201fb57ae6465970f44de906f41a1ff721673258a4de"
+    },
+    {
+      "original_workspace_path": "v22_work/drafts/geometry/HISTORICAL_NOTES.json",
+      "project_relative_path": "recollation/v22/geometry/HISTORICAL_NOTES.json",
+      "bytes": 9079,
+      "sha256": "5ccfb44ed9861217706029612f46273af0921aa650125b1a8eb87f040baeb090"
+    },
+    {
+      "original_workspace_path": "v22_work/drafts/geometry/INDEPENDENT_REVIEW_DIFFERENTIAL.md",
+      "project_relative_path": "recollation/v22/geometry/INDEPENDENT_REVIEW_DIFFERENTIAL.md",
+      "bytes": 5649,
+      "sha256": "e25ee914196c173debb246161da54b775a6677e503c3ed91670a14408ece3db4"
+    },
+    {
+      "original_workspace_path": "v22_work/drafts/geometry/INDEPENDENT_REVIEW_FIBERS.md",
+      "project_relative_path": "recollation/v22/geometry/INDEPENDENT_REVIEW_FIBERS.md",
+      "bytes": 7325,
+      "sha256": "7276b91028412a1a46e3b00d96ee70cdfe7e76324087e106e1c5a91930435629"
+    },
+    {
+      "original_workspace_path": "v22_work/drafts/geometry/PREVIEW_VISUAL_CHECK.json",
+      "project_relative_path": "recollation/v22/geometry/PREVIEW_VISUAL_CHECK.json",
+      "bytes": 7077,
+      "sha256": "486bf9e99707e67474246288d27b323f6c6dc379bff907b09f997951bfca63c9"
+    },
+    {
+      "original_workspace_path": "v22_work/drafts/geometry/PREVIEW_VISUAL_CHECK_before_boundary_patch.json",
+      "project_relative_path": "recollation/v22/geometry/PREVIEW_VISUAL_CHECK_before_boundary_patch.json",
+      "bytes": 5572,
+      "sha256": "a74d92645240cd9583dd00894312659ac95cb1c52efac8d9b226b57c50360540"
+    },
+    {
+      "original_workspace_path": "v22_work/drafts/geometry/REVIEWED_FIBERS_SOURCES.json",
+      "project_relative_path": "recollation/v22/geometry/REVIEWED_FIBERS_SOURCES.json",
+      "bytes": 1207,
+      "sha256": "425caf39e97762a4a4c17f1c58262d2ff45d1a75df3f67de69760b3e49f0924a"
+    },
+    {
+      "original_workspace_path": "v22_work/drafts/geometry/SOURCE_MAP.md",
+      "project_relative_path": "recollation/v22/geometry/SOURCE_MAP.md",
+      "bytes": 6732,
+      "sha256": "ee69d709620209e41356c7ff71ad7b8161fe7fa84853d540472f1e4156582cc0"
+    },
+    {
+      "original_workspace_path": "v22_work/drafts/geometry/inherited_geometry_exact.tex",
+      "project_relative_path": "recollation/v22/geometry/inherited_geometry_exact.tex",
+      "bytes": 9292,
+      "sha256": "c9f3148bb661d2b0b9f3ae966d69f17d7c2ff477134f5aebe5485e3aeb380687"
+    },
+    {
+      "original_workspace_path": "v22_work/drafts/geometry/preview_audit.log",
+      "project_relative_path": "recollation/v22/geometry/preview_audit.log",
+      "bytes": 43656,
+      "sha256": "5c2eaadaf6264f520726206820174a8f8e93050dbe3b455bb8ebb30a05580e22"
+    },
+    {
+      "original_workspace_path": "v22_work/drafts/geometry/preview_audit.pdf",
+      "project_relative_path": "recollation/v22/geometry/preview_audit.pdf",
+      "bytes": 273541,
+      "sha256": "07c92ebe52a044f35f5cd1cd18a5846d98e7c60c04d0dab2452978d1ee1a47c3"
+    },
+    {
+      "original_workspace_path": "v22_work/drafts/geometry/preview_audit.stdout.txt",
+      "project_relative_path": "recollation/v22/geometry/preview_audit.stdout.txt",
+      "bytes": 13374,
+      "sha256": "b5a30f997b6b99809e3708caee26cc26ab776da6a29ed9a0a09943946daf0ef0"
+    },
+    {
+      "original_workspace_path": "v22_work/drafts/geometry/preview_audit.tex",
+      "project_relative_path": "recollation/v22/geometry/preview_audit.tex",
+      "bytes": 21224,
+      "sha256": "89c274bbcc4c7b43d283a80afdf0f40bda3f5d3a329b99d8882c11aed83b50ac"
+    },
+    {
+      "original_workspace_path": "v22_work/drafts/geometry/preview_book.log",
+      "project_relative_path": "recollation/v22/geometry/preview_book.log",
+      "bytes": 42758,
+      "sha256": "dd20e8d5d8dbf8fa6d9e26191b4473e90d100c3974015d7678aab9823fd56763"
+    },
+    {
+      "original_workspace_path": "v22_work/drafts/geometry/preview_book.pdf",
+      "project_relative_path": "recollation/v22/geometry/preview_book.pdf",
+      "bytes": 213368,
+      "sha256": "7b47a9db96ced0b8eeb4bd5fbf28c0349078569114fa37dafd9a6375ab48d710"
+    },
+    {
+      "original_workspace_path": "v22_work/drafts/geometry/preview_book.stdout.txt",
+      "project_relative_path": "recollation/v22/geometry/preview_book.stdout.txt",
+      "bytes": 13495,
+      "sha256": "0c34a54c3a1e0a9d2d5d61626e43b1451ace329e01af542fd002ec4b68c9a414"
+    },
+    {
+      "original_workspace_path": "v22_work/drafts/geometry/preview_book.tex",
+      "project_relative_path": "recollation/v22/geometry/preview_book.tex",
+      "bytes": 18757,
+      "sha256": "9a4a94a953425e56569c2807479a26e609439da94ab972d989271b996db55139"
+    },
+    {
+      "original_workspace_path": "v22_work/drafts/geometry/source_pages/83_middle.png",
+      "project_relative_path": "recollation/v22/geometry/source_pages/83_middle.png",
+      "bytes": 84864,
+      "sha256": "92f878d3bfe702b38778d54bc659a519cb34797e6c746b7d59d8c36524382cef"
+    },
+    {
+      "original_workspace_path": "v22_work/drafts/geometry/source_pages/84_diagram.png",
+      "project_relative_path": "recollation/v22/geometry/source_pages/84_diagram.png",
+      "bytes": 80021,
+      "sha256": "dba78301c64f16bf50b6dbddf862e5c9dcc33f72a560a4dded19e3cebf6709f3"
+    },
+    {
+      "original_workspace_path": "v22_work/drafts/geometry/source_pages/85_crossouts.png",
+      "project_relative_path": "recollation/v22/geometry/source_pages/85_crossouts.png",
+      "bytes": 120073,
+      "sha256": "3993f7f794dcdf50baae0959cfa45ab1c59230221fcf73875eb3fc24be0d2fca"
+    },
+    {
+      "original_workspace_path": "v22_work/drafts/geometry/source_pages/85_notation.png",
+      "project_relative_path": "recollation/v22/geometry/source_pages/85_notation.png",
+      "bytes": 141575,
+      "sha256": "c7e2613079df1cdbdea39c31436a883765ea1c18521fe3db8b149b7a5a5c77f5"
+    },
+    {
+      "original_workspace_path": "v22_work/drafts/geometry/source_pages/EGA5_francais_082_boundary.png",
+      "project_relative_path": "recollation/v22/geometry/source_pages/EGA5_francais_082_boundary.png",
+      "bytes": 263387,
+      "sha256": "ffb504e2567305e878a9f25d5bd14d09829279fe7b1bb91a780ee87d4b1b93b7"
+    },
+    {
+      "original_workspace_path": "v22_work/drafts/geometry/source_pages/EGA5_francais_083.png",
+      "project_relative_path": "recollation/v22/geometry/source_pages/EGA5_francais_083.png",
+      "bytes": 453003,
+      "sha256": "d1ff6bf715e973231f1550a1904af449d44742aa3a5399c2f5be1a82d3a34794"
+    },
+    {
+      "original_workspace_path": "v22_work/drafts/geometry/source_pages/EGA5_francais_083_top_boundary.png",
+      "project_relative_path": "recollation/v22/geometry/source_pages/EGA5_francais_083_top_boundary.png",
+      "bytes": 208388,
+      "sha256": "937285dee49732f3521bff7c16bd778186e7a39f7c6b7bb86d68a42302f3545e"
+    },
+    {
+      "original_workspace_path": "v22_work/drafts/geometry/source_pages/EGA5_francais_084.png",
+      "project_relative_path": "recollation/v22/geometry/source_pages/EGA5_francais_084.png",
+      "bytes": 409983,
+      "sha256": "5015b6d16c02869205754d4b48c0282a3a0d1ac4118a792dddf7f1e143a17b1d"
+    },
+    {
+      "original_workspace_path": "v22_work/drafts/geometry/source_pages/EGA5_francais_085.png",
+      "project_relative_path": "recollation/v22/geometry/source_pages/EGA5_francais_085.png",
+      "bytes": 490380,
+      "sha256": "efa0000d1eeb61de9d667d7ba2331f5f449c6023c19fda6daed584a45cd1d7cf"
+    },
+    {
+      "original_workspace_path": "v22_work/drafts/geometry/source_pages/EGA5_francais_086.png",
+      "project_relative_path": "recollation/v22/geometry/source_pages/EGA5_francais_086.png",
+      "bytes": 485550,
+      "sha256": "baa655f6dda9352eb04e3e8ce9489955f606e954f2fd0deca677f3c5c4e69e39"
+    },
+    {
+      "original_workspace_path": "v22_work/drafts/geometry/source_pages/EGAVaiello_053_bottom_boundary.png",
+      "project_relative_path": "recollation/v22/geometry/source_pages/EGAVaiello_053_bottom_boundary.png",
+      "bytes": 98428,
+      "sha256": "0ca042c91b2b57990187d63e17c146f5ecd5eb09bcb3587415ae4437576ed5d8"
+    },
+    {
+      "original_workspace_path": "v22_work/drafts/geometry/source_pages/EGAVaiello_054.png",
+      "project_relative_path": "recollation/v22/geometry/source_pages/EGAVaiello_054.png",
+      "bytes": 208022,
+      "sha256": "045a7d02c063051c775731496406c624c9b28a64f840cd347cd20ff82b2b1d35"
+    },
+    {
+      "original_workspace_path": "v22_work/drafts/geometry/source_pages/EGAVaiello_054.txt",
+      "project_relative_path": "recollation/v22/geometry/source_pages/EGAVaiello_054.txt",
+      "bytes": 2495,
+      "sha256": "09e1f6b1cc12fb78e99226978eb731a314c454c73a5ffe4fe72bf956d94c4f37"
+    },
+    {
+      "original_workspace_path": "v22_work/drafts/geometry/source_pages/EGAVaiello_055.png",
+      "project_relative_path": "recollation/v22/geometry/source_pages/EGAVaiello_055.png",
+      "bytes": 205267,
+      "sha256": "e940a639aa413ca4c99da76f4c82d46c03578feaa41cc4f1ef2a16b6e5951152"
+    },
+    {
+      "original_workspace_path": "v22_work/drafts/geometry/source_pages/EGAVaiello_055.txt",
+      "project_relative_path": "recollation/v22/geometry/source_pages/EGAVaiello_055.txt",
+      "bytes": 2524,
+      "sha256": "55ea6a6a9952454f8d45c9b09070c5c86bdd2fa497715d2de8f19d012983253f"
+    },
+    {
+      "original_workspace_path": "v22_work/drafts/geometry/source_pages/preview_audit_1.png",
+      "project_relative_path": "recollation/v22/geometry/source_pages/preview_audit_1.png",
+      "bytes": 131955,
+      "sha256": "8a19632c313b19771209ad8ca40fd876f30dcf1136bf44ffdf3f42090a59b8b5"
+    },
+    {
+      "original_workspace_path": "v22_work/drafts/geometry/source_pages/preview_audit_2.png",
+      "project_relative_path": "recollation/v22/geometry/source_pages/preview_audit_2.png",
+      "bytes": 163012,
+      "sha256": "5b223360ce2f7acfa9c177ea4ecf89598c3238e92f90e431578cdc0c9eb9a0c6"
+    },
+    {
+      "original_workspace_path": "v22_work/drafts/geometry/source_pages/preview_audit_3.png",
+      "project_relative_path": "recollation/v22/geometry/source_pages/preview_audit_3.png",
+      "bytes": 162399,
+      "sha256": "2dcd7c01cb809b0c7fd65977d3cc7762cc2aae707b36719bfb4fcb5cd146de3e"
+    },
+    {
+      "original_workspace_path": "v22_work/drafts/geometry/source_pages/preview_audit_3_bottom.png",
+      "project_relative_path": "recollation/v22/geometry/source_pages/preview_audit_3_bottom.png",
+      "bytes": 27921,
+      "sha256": "663d65dd45e84a0c01312d2db73ec22cb1bcf5bca6ae9d0d817f37db2a7c2954"
+    },
+    {
+      "original_workspace_path": "v22_work/drafts/geometry/source_pages/preview_audit_4.png",
+      "project_relative_path": "recollation/v22/geometry/source_pages/preview_audit_4.png",
+      "bytes": 165539,
+      "sha256": "91f81b42e5179940c78e1fcd9c29459aab24ccd56194dfac6672a689d3a060a1"
+    },
+    {
+      "original_workspace_path": "v22_work/drafts/geometry/source_pages/preview_audit_5.png",
+      "project_relative_path": "recollation/v22/geometry/source_pages/preview_audit_5.png",
+      "bytes": 176511,
+      "sha256": "ca8a298d754368a957af022e341eb9a2078a1a3156c126f392f0f1967b7fb5b9"
+    },
+    {
+      "original_workspace_path": "v22_work/drafts/geometry/source_pages/preview_audit_6.png",
+      "project_relative_path": "recollation/v22/geometry/source_pages/preview_audit_6.png",
+      "bytes": 82529,
+      "sha256": "dc2dc8ae1d35808c5a8d5fac0110a61eda778d6c15123e44d7dfa69de9b271f4"
+    },
+    {
+      "original_workspace_path": "v22_work/drafts/geometry/source_pages/preview_book_1.png",
+      "project_relative_path": "recollation/v22/geometry/source_pages/preview_book_1.png",
+      "bytes": 181008,
+      "sha256": "c7ab3342a936aa8c426498c283e51f93e637712e55aac7584ad9eb08dab9c799"
+    },
+    {
+      "original_workspace_path": "v22_work/drafts/geometry/source_pages/preview_book_2.png",
+      "project_relative_path": "recollation/v22/geometry/source_pages/preview_book_2.png",
+      "bytes": 155707,
+      "sha256": "fa83a20cd62cc9ad3c2e6d0a9d3088663bc056d87c46b484dc74eaedc5d13749"
+    },
+    {
+      "original_workspace_path": "v22_work/drafts/geometry/source_pages/preview_book_3.png",
+      "project_relative_path": "recollation/v22/geometry/source_pages/preview_book_3.png",
+      "bytes": 182891,
+      "sha256": "3698175be67f4d4aefeaac49a3232bec71baa27b00e8eadd73d2549a5efddae4"
+    },
+    {
+      "original_workspace_path": "v22_work/drafts/geometry/v22_section14_geometry.tex",
+      "project_relative_path": "recollation/v22/geometry/v22_section14_geometry.tex",
+      "bytes": 9954,
+      "sha256": "4ebb35b1e644b9bc1c0c4cfbadbb3a8318565d7793980ecbe683b9658e9eca6c"
+    },
+    {
+      "original_workspace_path": "v22_work/drafts/geometry/v22_section14_geometry_audit.tex",
+      "project_relative_path": "recollation/v22/geometry/v22_section14_geometry_audit.tex",
+      "bytes": 12421,
+      "sha256": "62c304584ed8e112908b5de81d7d92480dcc31c16219a086ca308fa4c5d08683"
+    },
+    {
+      "original_workspace_path": "v22_work/drafts/fibers/EVIDENCE_MANIFEST.json",
+      "project_relative_path": "recollation/v22/fibers/EVIDENCE_MANIFEST.json",
+      "bytes": 8783,
+      "sha256": "4743c75e38ef95c0005662a31ec693b2c5d9fe9d61be14d8841d8d06e251d42c"
+    },
+    {
+      "original_workspace_path": "v22_work/drafts/fibers/HISTORICAL_NOTES.json",
+      "project_relative_path": "recollation/v22/fibers/HISTORICAL_NOTES.json",
+      "bytes": 9071,
+      "sha256": "bfca3fc93c147426a2557f2f06a8e0eb29ff14baa17e2f027653b61d92528ee3"
+    },
+    {
+      "original_workspace_path": "v22_work/drafts/fibers/SOURCE_MAP.md",
+      "project_relative_path": "recollation/v22/fibers/SOURCE_MAP.md",
+      "bytes": 6810,
+      "sha256": "27e4d2b07fe0b2d4cc4d02b1c2488ffd03275a24824fd41e17182d87d8ed9487"
+    },
+    {
+      "original_workspace_path": "v22_work/drafts/fibers/en55.png",
+      "project_relative_path": "recollation/v22/fibers/en55.png",
+      "bytes": 145774,
+      "sha256": "7ff50c9f390ca47f16bf6aa6f44816b4227ae53d18359cae1287d636cfb4119c"
+    },
+    {
+      "original_workspace_path": "v22_work/drafts/fibers/en55_57_source.pdf",
+      "project_relative_path": "recollation/v22/fibers/en55_57_source.pdf",
+      "bytes": 229457,
+      "sha256": "0c31b61acac276c4a13d2177701b565c603c0fce6c61b85c5ebdc995bb74defc"
+    },
+    {
+      "original_workspace_path": "v22_work/drafts/fibers/en56.png",
+      "project_relative_path": "recollation/v22/fibers/en56.png",
+      "bytes": 159423,
+      "sha256": "f13de9a56f00cefc1c3809607e4c9633deba77fe4f0e24b676e8e0fb58dd1a4b"
+    },
+    {
+      "original_workspace_path": "v22_work/drafts/fibers/en57.png",
+      "project_relative_path": "recollation/v22/fibers/en57.png",
+      "bytes": 163484,
+      "sha256": "0d00a227d59543da4edf88cda45eebc3a5674948f65a44544390de28efeb7514"
+    },
+    {
+      "original_workspace_path": "v22_work/drafts/fibers/fr21.png",
+      "project_relative_path": "recollation/v22/fibers/fr21.png",
+      "bytes": 369379,
+      "sha256": "7c8b235d5cf6f70522c8135901348031bfaedfa232db1c85d3e24868080b26fe"
+    },
+    {
+      "original_workspace_path": "v22_work/drafts/fibers/fr84.png",
+      "project_relative_path": "recollation/v22/fibers/fr84.png",
+      "bytes": 310790,
+      "sha256": "be0d594a53aaf0a3da1ed177ce741e39818a0bc267455771f91fda993665e6cd"
+    },
+    {
+      "original_workspace_path": "v22_work/drafts/fibers/fr85.png",
+      "project_relative_path": "recollation/v22/fibers/fr85.png",
+      "bytes": 370709,
+      "sha256": "07b56ef0a379d5ab7dabb3c8563adb92651dc22d1fdddbb46552fbe92f4ac319"
+    },
+    {
+      "original_workspace_path": "v22_work/drafts/fibers/fr85_88_source.pdf",
+      "project_relative_path": "recollation/v22/fibers/fr85_88_source.pdf",
+      "bytes": 455583,
+      "sha256": "77702ce441092f27bd3f0430ff07ef569f252766ad49eec8306de50d52868e57"
+    },
+    {
+      "original_workspace_path": "v22_work/drafts/fibers/fr86.png",
+      "project_relative_path": "recollation/v22/fibers/fr86.png",
+      "bytes": 367506,
+      "sha256": "574d3e7ffae0128729b883aca74aaa3a43a12b6733ef4d8bd4a9717d56e3bc0f"
+    },
+    {
+      "original_workspace_path": "v22_work/drafts/fibers/fr86_crop400.png",
+      "project_relative_path": "recollation/v22/fibers/fr86_crop400.png",
+      "bytes": 313961,
+      "sha256": "c2febe1e4f658cbbb5ed5650dd6b5c6c09c58600e502abf4302c81e4129bbd96"
+    },
+    {
+      "original_workspace_path": "v22_work/drafts/fibers/fr87.png",
+      "project_relative_path": "recollation/v22/fibers/fr87.png",
+      "bytes": 392715,
+      "sha256": "1b52e62bcbb6dbbf11d060efee2d66fb194d4611e8cf545e3a89d621080052af"
+    },
+    {
+      "original_workspace_path": "v22_work/drafts/fibers/fr87_crop0.png",
+      "project_relative_path": "recollation/v22/fibers/fr87_crop0.png",
+      "bytes": 482510,
+      "sha256": "9522bae79e5c5a24eaef46a34ac7d5357c8b50f507fe466cf3a637eaba5420d7"
+    },
+    {
+      "original_workspace_path": "v22_work/drafts/fibers/fr87_crop550.png",
+      "project_relative_path": "recollation/v22/fibers/fr87_crop550.png",
+      "bytes": 203297,
+      "sha256": "060fa8136b9922c188de7572775e39c98eb34951460f6746409b140a69e43b90"
+    },
+    {
+      "original_workspace_path": "v22_work/drafts/fibers/fr88.png",
+      "project_relative_path": "recollation/v22/fibers/fr88.png",
+      "bytes": 374007,
+      "sha256": "a687a81f285872a3b8615a7574698941bc2755fc2f7c700813f00fd9597c43b1"
+    },
+    {
+      "original_workspace_path": "v22_work/drafts/fibers/fr89.png",
+      "project_relative_path": "recollation/v22/fibers/fr89.png",
+      "bytes": 378388,
+      "sha256": "98b008a333bb9e2d2033cdd3d949e7d66a685fc3f16f2cbad383b6ba983fa080"
+    },
+    {
+      "original_workspace_path": "v22_work/drafts/fibers/inherited_fibers_exact.tex",
+      "project_relative_path": "recollation/v22/fibers/inherited_fibers_exact.tex",
+      "bytes": 13268,
+      "sha256": "bce510f914321f70d2c29d75fcfe79373502d54f944445763649639e170b5a69"
+    },
+    {
+      "original_workspace_path": "v22_work/drafts/fibers/v22_section14_fibers.tex",
+      "project_relative_path": "recollation/v22/fibers/v22_section14_fibers.tex",
+      "bytes": 11770,
+      "sha256": "06a4dac5ca264064ed6b5a6c92cf17877bd1108812f8435c3eb051e72d29777f"
+    },
+    {
+      "original_workspace_path": "v22_work/drafts/fibers/v22_section14_fibers_audit.tex",
+      "project_relative_path": "recollation/v22/fibers/v22_section14_fibers_audit.tex",
+      "bytes": 17027,
+      "sha256": "07d019bf740ba368e50ae0e161b2d0873a08e13a5a9b76bffc6605ccbc553c3a"
+    },
+    {
+      "original_workspace_path": "v22_work/drafts/differential/SOURCE_EVIDENCE.json",
+      "project_relative_path": "recollation/v22/differential/SOURCE_EVIDENCE.json",
+      "bytes": 1674,
+      "sha256": "90bb645eed4e299db49d30c665f961e269cda217047026368cfd401d43180880"
+    },
+    {
+      "original_workspace_path": "v22_work/drafts/differential/SOURCE_MAP.md",
+      "project_relative_path": "recollation/v22/differential/SOURCE_MAP.md",
+      "bytes": 1596,
+      "sha256": "f94ee6c41ae351e9f97d30228420d9b10711558426fb27bf2614e526f2c9f3ba"
+    },
+    {
+      "original_workspace_path": "v22_work/drafts/differential/en57_59_source.pdf",
+      "project_relative_path": "recollation/v22/differential/en57_59_source.pdf",
+      "bytes": 86212,
+      "sha256": "0d9de1802de478f2f76e2f19043999f894733874708696dac8feb6c234f602a5"
+    },
+    {
+      "original_workspace_path": "v22_work/drafts/differential/fr88_90_source.pdf",
+      "project_relative_path": "recollation/v22/differential/fr88_90_source.pdf",
+      "bytes": 316093,
+      "sha256": "7c1aed1119001c7bffc8f4f015138e318b84d3f84d5c068902a9a76f45df7e17"
+    },
+    {
+      "original_workspace_path": "v22_work/drafts/differential/inherited_segment_differential_exact.tex",
+      "project_relative_path": "recollation/v22/differential/inherited_segment_differential_exact.tex",
+      "bytes": 12050,
+      "sha256": "5c532be7d638b3c25f217ea37f90dd2410fbd0276c37c875bb9b3930737dff15"
+    },
+    {
+      "original_workspace_path": "v22_work/drafts/differential/v22_section14_differential.tex",
+      "project_relative_path": "recollation/v22/differential/v22_section14_differential.tex",
+      "bytes": 11631,
+      "sha256": "d89e6d704ad743ebe017facce29a63561a0bc68522ea09aee1a4ca8b2d502971"
+    },
+    {
+      "original_workspace_path": "v22_work/drafts/differential/v22_section14_differential_audit.tex",
+      "project_relative_path": "recollation/v22/differential/v22_section14_differential_audit.tex",
+      "bytes": 16235,
+      "sha256": "c9e757f11b246f7c082677117d80204a2a2d14e9c0bd6c17333a45ef071c8f89"
+    },
+    {
+      "original_workspace_path": "v22_work/root_source/fr_088.png",
+      "project_relative_path": "recollation/v22/differential/source_pages/fr_088.png",
+      "bytes": 738755,
+      "sha256": "55f6fc7ae155315dffbae471774076d05ef68ee3cda5d776a27679918b06b9c2"
+    },
+    {
+      "original_workspace_path": "v22_work/root_source/fr_089.png",
+      "project_relative_path": "recollation/v22/differential/source_pages/fr_089.png",
+      "bytes": 752549,
+      "sha256": "382e5ada414412f69765ed3aaefea11630a615328532061135feb8b74b14ad18"
+    },
+    {
+      "original_workspace_path": "v22_work/root_source/fr_090.png",
+      "project_relative_path": "recollation/v22/differential/source_pages/fr_090.png",
+      "bytes": 605971,
+      "sha256": "c52e86284b31bdf31297f24e13e378005ec3f3cc82dce86318989c9942d189e6"
+    },
+    {
+      "original_workspace_path": "v22_work/root_source/en_057.png",
+      "project_relative_path": "recollation/v22/differential/source_pages/en_057.png",
+      "bytes": 300341,
+      "sha256": "fdc5efc7168d157ab14e562df6332eeb9a3a635bbfe595fbe7b5b65cc7ef60b5"
+    },
+    {
+      "original_workspace_path": "v22_work/root_source/en_058.png",
+      "project_relative_path": "recollation/v22/differential/source_pages/en_058.png",
+      "bytes": 282111,
+      "sha256": "e236e4e937f0582936f01f49cb410243de18008989a7da2d8c9adc7af2edca7a"
+    },
+    {
+      "original_workspace_path": "v22_work/root_source/en_059.png",
+      "project_relative_path": "recollation/v22/differential/source_pages/en_059.png",
+      "bytes": 209246,
+      "sha256": "785a6cc0c7d58dbe8dde1f2602484fa7edb3caf5029195fd1c5c3a60ac8931ad"
+    },
+    {
+      "original_workspace_path": "v22_work/root_source/fr082_boundary.png",
+      "project_relative_path": "recollation/v22/differential/source_pages/fr082_boundary.png",
+      "bytes": 89609,
+      "sha256": "44976346392d53e8ce88f1f5196010358cecff94a970abda78a141438fef0e55"
+    },
+    {
+      "original_workspace_path": "v22_work/root_source/en053_boundary.png",
+      "project_relative_path": "recollation/v22/differential/source_pages/en053_boundary.png",
+      "bytes": 84398,
+      "sha256": "55619ff5e51649ddb89dab1caecd5c216bbb3a7866768123178b7869e3c3d86e"
+    }
+  ]
+}

@@ -1,0 +1,104 @@
+% Source: EGAIV.1.pdf, PDF pp.50--53; printed pp.51--54.
+\setcounter{section}{17}
+\section{代数扩张的补充知识}
+\source{EGA IV第一部分，印刷第51--68页；上传PDF第50--67页}
+本节汇集若干关于环的函子性构造，这些构造将在§§19、20中反复使用；本节不包含非平凡的结果。
+
+\subsection{增广环的逆像}
+\egap{18.1.1}
+给定一个环 $A$（不必交换），$A$-环范畴的对象是由环 $B$ 和环同态 $\rho:A\to B$ 组成的偶对 $(B,\rho)$。其态射（也称为 $A$-同态）是环同态 $u:B\to C$，满足：若 $\rho:A\to B$ 和 $\sigma:A\to C$ 分别是定义 $B,C$ 的 $A$-环结构的同态（称为结构同态），则下图交换：
+\begin{equation}
+\begin{tikzcd}[column sep=large]
+ B\arrow[rr,"u"] && C\\
+ & A\arrow[ul,"\rho"]\arrow[ur,"\sigma"'] &
+\end{tikzcd}
+\tag{18.1.1.1}
+\end{equation}
+$u$ 的核 $\mathfrak j$ 是一个双边理想，并经由 $\rho$ 成为 $A$-双模。
+
+若 $f:A'\to A$ 是环同态，则对每个 $A$-环 $(B,\rho)$，$(B,\rho\circ f)$ 是一个 $A'$-环。若 $u:B\to C$ 是从 $A$-环 $(B,\rho)$ 到 $A$-环 $(C,\sigma)$ 的 $A$-同态，它也是从 $A'$-环 $(B,\rho\circ f)$ 到 $A'$-环 $(C,\sigma\circ f)$ 的 $A'$-同态。这样就定义了从 $A$-环范畴到 $A'$-环范畴的一个典范函子。
+
+\egap{18.1.2}
+设 $B,E,F$ 是三个 $A$-环，$f:E\to B$、$g:F\to B$ 是两个 $A$-同态。回顾：$E$ 与 $F$ 在 $B$ 上的\emph{纤维积}（相对于 $f,g$）记为 $E\times_BF$，是乘积环 $E\times F$ 中由满足 $f(x)=g(y)$ 的偶对 $(x,y)$ 组成的子环 $G$。投影 $\operatorname{pr}_1,\operatorname{pr}_2$ 在 $G$ 上的限制
+\[
+ p_1:G\longrightarrow E,\qquad p_2:G\longrightarrow F
+\]
+仍称为\emph{典范投影}。$G$ 的 $A$-环结构由同态 $a\mapsto(\rho(a),\sigma(a))$ 定义，其中 $\rho:A\to E$、$\sigma:A\to F$ 是结构同态；由（18.1.1），该同态确实取值于 $G$。
+
+$E\times_BF$ 的特征性质如下：对每一对满足 $f\circ u=g\circ v$ 的 $A$-同态 $u:C\to E$、$v:C\to F$，恰有一个 $A$-同态 $w:C\to G$，使 $u=p_1\circ w$、$v=p_2\circ w$。也可以说，$E\times_BF$ 是由 $B,E,F$ 以及 $f,g$ 组成的射影系在 $A$-环范畴中的射影极限（$0_{\mathrm{III}}$，8.1.9）。
+
+\egap{18.1.3}
+令 $\mathfrak j=\Ker f$ 为 $E$ 的双边理想。$p_2:G\to F$ 的核 $\mathfrak j'$ 由 $(x,0)$（$x\in\mathfrak j$）组成；因此 $p_1$ 的限制 $i_1:\mathfrak j'\to\mathfrak j$ 是不要求含幺的环之间的同构，同时也是 $A$-双模同构。同样，若 $\mathfrak k=\Ker g$，则 $p_1:G\to E$ 的核 $\mathfrak k'$ 由 $(0,y)$（$y\in\mathfrak k$）组成；$p_2$ 的限制 $i_2:\mathfrak k'\to\mathfrak k$ 是同样意义下的同构。最后，$A$-同态 $\varphi=f\circ p_1=g\circ p_2:G\to B$ 的核为
+\[
+ \mathfrak j\times\mathfrak k=\mathfrak j'\oplus\mathfrak k',
+\]
+因而有交换图
+\begin{equation}
+\begin{tikzcd}[column sep=1.8em,row sep=1.5em]
+ & 0\arrow[d] & 0\arrow[d] & 0\arrow[d]\\
+ & \mathfrak j'\arrow[r]\arrow[d,equal] &
+ \mathfrak j'\oplus\mathfrak k'\arrow[r]\arrow[d] &
+ \mathfrak k\arrow[d]\\
+ 0\arrow[r] & \mathfrak j'\arrow[r]\arrow[d,"i_1"'] &
+ G\arrow[r,"p_2"]\arrow[d,"p_1"]\arrow[dr,"\varphi",description] &
+ F\arrow[d,"g"]\\
+ 0\arrow[r] & \mathfrak j\arrow[r] & E\arrow[r,"f"] & B
+\end{tikzcd}
+\tag{18.1.3.1}
+\end{equation}
+\cmt{E5-A01}{图中的 $p_2$ 已按作者正式勘误移至 $G\to F$ 旁，见第四卷第四部分勘误清单三A部，印刷第345页；本书书末亦收入该条。图中未假定 $f,g$ 满射，不能在各行右端擅加 $\to0$。}
+\cmt{E5-D01}{本译图按本段的核计算重排：上行使用 $0\to\mathfrak j\,{}^{\prime}\to\mathfrak j\,{}^{\prime}\oplus\mathfrak k\,{}^{\prime}\to\mathfrak k\to0$，其中通过 $i_2$ 识别 $\mathfrak k\,{}^{\prime}$ 与 $\mathfrak k$。这是对初版左上角未标名箭头组合的明示重绘，不是初版图形的逐箭头复制；核查报告另作说明。}（18.1.2）、（18.1.3）的定义和结果立即推广到由一族 $A$-同态 $f_\alpha:E_\alpha\to B$ 所定义的任意族 $(E_\alpha)_{\alpha\in I}$ 的纤维积。这些结果的表述留给读者。
+
+\egap{18.1.4}
+依照（M，VIII）的术语，我们称配备了一个满的 $A$-同态 $f:E\to B$ 的 $A$-环 $E$ 为\emph{在 $B$ 上增广的 $A$-环}；$f$ 称为 $E$ 的\emph{增广}，其核 $\mathfrak j$ 称为\emph{增广理想}。若存在 $A$-环同态 $s:B\to E$，它是 $f$ 的右逆，即 $f\circ s=1_B$，则称这个增广 $A$-环\emph{平凡}。这时，$A$-双模的正合列
+\[
+ 0\longrightarrow\mathfrak j\longrightarrow E\longrightarrow B\longrightarrow0
+\]
+分裂；也就是说，可以将 $A$-双模 $E$ 等同于 $B\times\mathfrak j$，且 $E$ 中的乘法写为
+\[
+ (b,z)(b',z')=(bb',\,bz'+zb'+zz'),
+\]
+其中经由 $s:B\to E$ 把 $\mathfrak j$ 看作 $B$-双模。
+
+\egap{18.1.5}
+沿用（18.1.2）的记号，并设 $f$ 满射，即 $f$ 使 $E$ 成为在 $B$ 上增广的 $A$-环。这时 $p_2:G\to F$ 也满射，即它在 $G$ 上定义了一个在 $F$ 上增广的 $A$-环结构；称其为增广环 $E$ 沿 $g:F\to B$ 的\emph{逆像}。
+
+\egas{18.1.6}{命题}
+增广 $A$-环 $E$ 沿 $g:F\to B$ 的逆像 $G=E\times_BF$ 平凡，当且仅当存在一个 $A$-同态 $u:F\to E$，使下图交换：
+\[
+\begin{tikzcd}[column sep=large]
+ & F\arrow[dl,"u"']\arrow[dr,"g"] &\\
+ E\arrow[rr,"f"'] && B.
+\end{tikzcd}
+\]
+\begin{proof}
+必要性由 $u=p_1\circ s$ 得到，其中 $s:F\to G$ 是 $p_2$ 的一个 $A$-同态右逆。反之，若存在满足命题条件的 $u$，则将纤维积的泛性质（18.1.2）应用于 $u:F\to E$ 与 $1_F:F\to F$，便得到 $p_2$ 的右逆 $s$。
+\end{proof}
+特别地，若 $E$ 是平凡增广环，则它的每个逆像也平凡。
+
+\egap{18.1.7}
+回到（18.1.2）、（18.1.3）的情形。$\mathfrak k$ 通过其 $F$-双模结构和环同态 $p_2:G\to F$，自然具有 $G$-双模结构。由于 $i_2$ 双射，还有一个单射 $\theta=j\circ i_2^{-1}:\mathfrak k\to G$，它是 $G$-双模同态，其中 $j:\mathfrak k'\hookrightarrow G$ 是包含映射。我们将反过来说明：若另假设 $f,g$ 都满射，即 $E,F$ 都是在 $B$ 上增广的 $A$-环，那么给出这样的同态 $\theta$，便可由在 $F$ 上增广的 $G$ 重建在 $B$ 上增广的 $E$。
+
+确切地说，给定在 $B$ 上增广的 $A$-环 $F$，以及在 $F$ 上增广的 $A$-环 $G$；分别将其增广理想记为 $\mathfrak k$ 和 $\mathfrak j'$：
+\begin{equation}
+\begin{tikzcd}[column sep=1.9em,row sep=1.5em]
+ &&&0\arrow[d] &\\
+ &&&\mathfrak k\arrow[d,hook]\arrow[dl,"\theta"'] &\\
+ 0\arrow[r]&\mathfrak j'\arrow[r]&G\arrow[r,"h"]&F\arrow[r]\arrow[d,"g"]&0\\
+ &&&B\arrow[d]&\\
+ &&&0&
+\end{tikzcd}
+\tag{18.1.7.1}
+\end{equation}
+同态 $h$ 在 $F$ 的每个理想上，特别是在 $\mathfrak k$ 上，定义一个 $G$-双模结构。设 $\theta:\mathfrak k\to G$ 是使图（18.1.7.1）交换的 $G$-双模同态。于是 $\theta$ 单射，且 $\mathfrak j'\cap\theta(\mathfrak k)=0$。由于 $\theta(\mathfrak k)$ 是 $G$ 的双边理想，并且 $h(\theta(\mathfrak k))=\mathfrak k$，复合同态 $g\circ h:G\to B$ 分解为
+\[
+ G\xrightarrow{q}G/\theta(\mathfrak k)\xrightarrow{f}B,
+\]
+其中 $f$ 满射。再令 $E=G/\theta(\mathfrak k)$，则 $\mathfrak j'$ 在 $E$ 中的像 $\mathfrak j$ 为 $f$ 的核，因为 $g\circ h$ 的核为 $\mathfrak j'\oplus\theta(\mathfrak k)$；且典范同态 $q:G\to E$ 在 $\mathfrak j'$ 上的限制单射。
+
+于是可以形成纤维积 $G'=E\times_BF$。两个 $A$-同态 $q:G\to E$ 和 $h:G\to F$ 满足 $f\circ q=g\circ h$，故由 $G'$ 的泛性质（18.1.2），它们定义唯一的 $A$-同态
+\[
+ u:G\longrightarrow G'.
+\]
+\cmt{E5-T01}{原版此处把泛性质产生的箭头印成 $u:G'\to G$，后面的相伴分次映射方向也随之反写。本译文明确改为 $u(g)=(q(g),h(g))$，因而下一句中的一级分次映射为 $\mathfrak j'\to\mathfrak j''$；报告给出不依赖滤过记号的直接双射验证。这里修订的是构造方向，不是否定重建结论。}
+我们来说明 $u$ 双射。只须将其作为 $A$-双模同态证明这一点。注意 $u$ 与 $G$ 上由 $G,\mathfrak j'$ 组成的有限滤过，以及 $G'$ 上由 $G',\mathfrak j''=\Ker(G'\to F)$ 组成的有限滤过相容。由（18.1.3），$\gr_0u:F\to F$ 为恒等映射，$\gr_1u:\mathfrak j'\to\mathfrak j''$ 双射，因此 $u$ 本身双射（Bourbaki，\textit{交换代数}，第三章，§2，第8目，定理1的推论3）。

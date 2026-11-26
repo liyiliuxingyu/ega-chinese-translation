@@ -1,0 +1,56 @@
+{
+  "time_utc": "2026-11-26T03:02:18.715126+00:00",
+  "source_images_actually_viewed": [
+    {
+      "path": "/workspace/scratch/a886fd56dd2f/v23_work/source/EGA5_francais_90.png",
+      "sha256": "224f7a74eaf3be19530456977db31e1c526593cbc450dd27a5af283c7f78f963",
+      "observation": "Root displayed and read this source image in the current turn; source collation only, not final PDF visual QA."
+    },
+    {
+      "path": "/workspace/scratch/a886fd56dd2f/v23_work/source/EGA5_francais_91.png",
+      "sha256": "90cd80333a34c46b972b3cc5ba013a4bfd025ad886ce009c4b0696832d2a59fb",
+      "observation": "Root displayed and read this source image in the current turn; source collation only, not final PDF visual QA."
+    },
+    {
+      "path": "/workspace/scratch/a886fd56dd2f/v23_work/source/EGA5_francais_92.png",
+      "sha256": "1a49d1b3ff6e58c8e70d3911faa6d9c55449c5720d7356e01eac3bd972880450",
+      "observation": "Root displayed and read this source image in the current turn; source collation only, not final PDF visual QA."
+    },
+    {
+      "path": "/workspace/scratch/a886fd56dd2f/v23_work/source/EGA5_francais_93.png",
+      "sha256": "cb9ac681cd4fcad62ab6d9ff52601976db3f9f1d97970de8c6c048d6695feb60",
+      "observation": "Root displayed and read this source image in the current turn; source collation only, not final PDF visual QA."
+    },
+    {
+      "path": "/workspace/scratch/a886fd56dd2f/v23_work/source/EGA5_francais_94.png",
+      "sha256": "a4f5bb8a5a92bbb1e6c2723b10e32833d56a44c9cea027d7d565e40c3aa90210",
+      "observation": "Root displayed and read this source image in the current turn; source collation only, not final PDF visual QA."
+    },
+    {
+      "path": "/workspace/scratch/a886fd56dd2f/v23_work/source/EGA5_francais_95.png",
+      "sha256": "8d0ea815f6bb823b3619d131cf112ccfaa1bad0c8ab4f734464c53c01d727db2",
+      "observation": "Root displayed and read this source image in the current turn; source collation only, not final PDF visual QA."
+    },
+    {
+      "path": "/workspace/scratch/a886fd56dd2f/v23_work/source/fr92_insert.png",
+      "sha256": "13d2636cf853ee36145964e39b1288558e28d4b3d789cc4981d18916561c79b7",
+      "observation": "Root displayed and read this source image in the current turn; source collation only, not final PDF visual QA."
+    },
+    {
+      "path": "/workspace/scratch/a886fd56dd2f/v23_work/source/fr93_lower.png",
+      "sha256": "b1c64c78df68ab35bdb6566ba85b0102bb1228d68cca68cc4c7123d9b7301a6c",
+      "observation": "Root displayed and read this source image in the current turn; source collation only, not final PDF visual QA."
+    },
+    {
+      "path": "/workspace/scratch/a886fd56dd2f/v23_work/source/fr94_top.png",
+      "sha256": "587b88298296fd31fbc1ffcc3926099e1c18cd34233b4be42e846517139f1d32",
+      "observation": "Root displayed and read this source image in the current turn; source collation only, not final PDF visual QA."
+    },
+    {
+      "path": "/workspace/scratch/a886fd56dd2f/v23_work/contributions/setup/evidence/fr92_deletion_expanded.png",
+      "sha256": "9da432e3ce0e6abcf3a5d0797b20fce3e974e702b698c7b18a795bf438178c1d",
+      "observation": "Root actually displayed this enlarged French p92 deletion. The deleted formula has an underlined Z without eta; the originally proposed note transcribed an intended generic-fibre subscript not present on this deleted line. Requested the source note to state the visible original precisely; this is source collation, not final PDF QA.",
+      "viewed_at_utc": "2026-11-26T03:14:43.003832+00:00"
+    }
+  ]
+}

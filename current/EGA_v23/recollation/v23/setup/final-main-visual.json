@@ -1,0 +1,81 @@
+{
+  "schema_version": 1,
+  "edition": 23,
+  "reviewer": "/root/v23_setup",
+  "review_method": "actual_image_view",
+  "reviewed_utc": "2026-11-26T03:27:47.757548+00:00",
+  "document": "main",
+  "pdf": {
+    "path": "main.pdf",
+    "sha256": "9396741a30df30bc5950e3cae1a7c3b9f809351eed777797c59d382c3aa9f3de"
+  },
+  "rendering": {
+    "renderer": "PyMuPDF",
+    "scale": 1.65,
+    "colorspace": "RGB",
+    "alpha": false,
+    "full_page": true
+  },
+  "pages": [
+    {
+      "physical_page": 1083,
+      "image": "checks/visual_v23/setup/main_1083.png",
+      "image_sha256": "820b88006ef70eeb3120a466a3e104b97a8eb48977ebd868d80d9809efc8b289",
+      "verdict": "pass",
+      "notes": "实际查看整页：第15节标题、公理化引言和图(D)完整；图中 q,p 标记与四条箭头清楚，mathcal P 与 P 可区分，关联闭浸入展示式正常。页末含前节续脚注及 SET001—003、原英编68；脚注正文与正文间有分隔线，没有裁切、重叠或缺字。印刷页码1063完整。 重绑定说明：此页已在上一轮实际看图；本次对新PDF重新渲染并独立核验整页像素与已看图完全一致，沿用同一图像的观察，没有声称本次再次目检。",
+      "actual_view_event": {
+        "viewed_utc": "2026-11-26T03:23:11.446156+00:00",
+        "rendered_from_pdf_sha256": "7de3aee3cb4e924a06ed99dcca3cf38c89ed74941c084b38787d07d6600fbf22",
+        "updated_pdf_re_render_pixels_identical": true,
+        "repeated_image_view_in_this_update": false
+      }
+    },
+    {
+      "physical_page": 1084,
+      "image": "checks/visual_v23/setup/main_1084.png",
+      "image_sha256": "381bba2d6d57159e73375dd61155b5fd319476443e2fc0b64c3e0ec430036f95",
+      "verdict": "pass",
+      "notes": "实际查看整页：页首承接 T 值点参数说明，P_xi→P_T 及 mathcal X=X×_P mathcal P 完整；第二幅方形图 q_X,p_X 标签和箭头未重叠。平坦、光滑、几何不可约及 0≤m≤N 文字排版清楚；脚注 SET004—009 和原英编69—70 位于版心，SET009 正常续至下一页。印刷页码1064完整。 重绑定说明：此页已在上一轮实际看图；本次对新PDF重新渲染并独立核验整页像素与已看图完全一致，沿用同一图像的观察，没有声称本次再次目检。",
+      "actual_view_event": {
+        "viewed_utc": "2026-11-26T03:23:11.446156+00:00",
+        "rendered_from_pdf_sha256": "7de3aee3cb4e924a06ed99dcca3cf38c89ed74941c084b38787d07d6600fbf22",
+        "updated_pdf_re_render_pixels_identical": true,
+        "repeated_image_view_in_this_update": false
+      }
+    },
+    {
+      "physical_page": 1085,
+      "image": "checks/visual_v23/setup/main_1085.png",
+      "image_sha256": "05625a506dae61035f7541679c0531b47ff0bf4657cf1d60de4e62f8e4ee97ff",
+      "verdict": "pass",
+      "notes": "实际查看整页：页首承接“逆像”的后半字，逆像维数、非空公理、不可约情形及一般闭集 max 存活分支公式全部可见；max 下限清楚且未压到正文。末次订正 SET012 已实际读到原删式无 eta，并明注未写泛纤维下标。SET010—014 与承接的 SET009 脚注均无裁切或重叠；正文在相应正则性处自然续页。印刷页码1065完整。 重绑定说明：此页已在上一轮实际看图；本次对新PDF重新渲染并独立核验整页像素与已看图完全一致，沿用同一图像的观察，没有声称本次再次目检。",
+      "actual_view_event": {
+        "viewed_utc": "2026-11-26T03:23:11.446156+00:00",
+        "rendered_from_pdf_sha256": "7de3aee3cb4e924a06ed99dcca3cf38c89ed74941c084b38787d07d6600fbf22",
+        "updated_pdf_re_render_pixels_identical": true,
+        "repeated_image_view_in_this_update": false
+      }
+    },
+    {
+      "physical_page": 1086,
+      "image": "checks/visual_v23/setup/main_1086.png",
+      "image_sha256": "ab618a1727788bf7049d065b74182eb4b19a8247cb307a83433bd5ec6513670f",
+      "verdict": "pass",
+      "notes": "本次在input边界修补后的最终PDF上重新实际查看整页：页首“条件。”、SET015上标与“还需要”之间的多余输入空白已去除，文字接续正常；没有产生断行错位、缺文或重叠。三项条件、切空间映射、维数不等式、G_red缩底段以及SET015、SMO001—004脚注仍完整可读，印刷页码1066清楚。",
+      "actual_view_event": {
+        "viewed_utc": "2026-11-26T03:27:47.757548+00:00",
+        "rendered_from_pdf_sha256": "9396741a30df30bc5950e3cae1a7c3b9f809351eed777797c59d382c3aa9f3de",
+        "updated_pdf_re_render_pixels_identical": false,
+        "repeated_image_view_in_this_update": true
+      }
+    }
+  ],
+  "scope": "最终合订正文物理1083—1086页：1086在input边界修补后重新实际看图；1083—1085已经实际看过的整页图像与新PDF重渲染逐像素相同，据此准确重绑定。不等同整册1216页逐页人工核验。",
+  "source_body_sha256": "002dcbfc52a2786247016cafcb6f92da1349c7e35553851d70e0c951e8a6ca0f",
+  "superseded_binding": {
+    "pdf_sha256": "7de3aee3cb4e924a06ed99dcca3cf38c89ed74941c084b38787d07d6600fbf22",
+    "review_record_sha256": "6b2009de720ba0bbea49a7ee471e8fd74971ce336a62513dd9c8c8d99afe28a2",
+    "previous_actual_image_view_utc": "2026-11-26T03:23:11.446156+00:00"
+  },
+  "rebinding_pixel_comparison": "checks/visual_v23/setup/main_rebinding_pixel_check.json"
+}

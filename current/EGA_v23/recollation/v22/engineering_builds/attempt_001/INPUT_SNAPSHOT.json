@@ -1,0 +1,68 @@
+{
+  "edition": 22,
+  "started_at_utc": "2026-11-26T01:16:54.099783+00:00",
+  "command": [
+    "bash",
+    "build.sh",
+    "--verify-single"
+  ],
+  "source_files": [
+    {
+      "path": "main.tex",
+      "bytes": 6848,
+      "sha256": "6397a9fbf923a83c294bbf6bd97144681138373da9ca22e1e48bb004abb968fa"
+    },
+    {
+      "path": "report.tex",
+      "bytes": 8619,
+      "sha256": "6eee4d6b21062a3eab2945e9dd4cd1b120dab6f45c27d0b870a7d8aa70c0c667"
+    },
+    {
+      "path": "frontmatter.tex",
+      "bytes": 6179,
+      "sha256": "b9ae3c34a7b1946881c05bf8d6d1d028a4ba91eb70675c7a90bc16cab9e1da40"
+    },
+    {
+      "path": "preamble.tex",
+      "bytes": 8757,
+      "sha256": "1b096d39924010e5a1f55e4a8944da9425e7d2959b0522e7d746ce943913b7c1"
+    },
+    {
+      "path": "reports/v22_integration_audit.tex",
+      "bytes": 6588,
+      "sha256": "c5344c61c4f278b4a60e370ccc3e080124eb7194070871bd6663bff3c1f1b2cc"
+    },
+    {
+      "path": "continuations/v22_section14_geometry.tex",
+      "bytes": 9954,
+      "sha256": "4ebb35b1e644b9bc1c0c4cfbadbb3a8318565d7793980ecbe683b9658e9eca6c"
+    },
+    {
+      "path": "continuations/v22_section14_fibers.tex",
+      "bytes": 11770,
+      "sha256": "06a4dac5ca264064ed6b5a6c92cf17877bd1108812f8435c3eb051e72d29777f"
+    },
+    {
+      "path": "continuations/v22_section14_differential.tex",
+      "bytes": 11631,
+      "sha256": "d89e6d704ad743ebe017facce29a63561a0bc68522ea09aee1a4ca8b2d502971"
+    },
+    {
+      "path": "reports/v22_section14_geometry_audit.tex",
+      "bytes": 12421,
+      "sha256": "62c304584ed8e112908b5de81d7d92480dcc31c16219a086ca308fa4c5d08683"
+    },
+    {
+      "path": "reports/v22_section14_fibers_audit.tex",
+      "bytes": 17027,
+      "sha256": "07d019bf740ba368e50ae0e161b2d0873a08e13a5a9b76bffc6605ccbc553c3a"
+    },
+    {
+      "path": "reports/v22_section14_differential_audit.tex",
+      "bytes": 16235,
+      "sha256": "c9e757f11b246f7c082677117d80204a2a2d14e9c0bd6c17333a45ef071c8f89"
+    }
+  ],
+  "confirmed_four_author_hashes_match": true,
+  "status": "starting_actual_build"
+}

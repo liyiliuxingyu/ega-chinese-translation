@@ -1,0 +1,275 @@
+\subsection{对固有态射的应用：II．上同调平坦性判据}
+\source{第三卷第二部分，原印刷第72--76页}
+
+\egas{7.8.1}{定义}
+设 $f:X\to Y$ 为拟紧且分离的预概形态射，$\PP_\bullet$ 为拟凝聚且 $Y$-平坦的 $\OO_X$-模复形，$\TT_\bullet$ 为（7.7.1.1）定义的同调函子，$y\in Y$。若 $y$ 在 $Y$ 中存在开邻域 $U$，使 $\M\mapsto\TT_p^U(\M)$ 正合，则称 $\PP_\bullet$ 在 $y$ 处关于 $Y$ 在维数 $p$ 上\emph{同调平坦}，或在维数 $-p$ 上\emph{上同调平坦}。若在每个 $y\in Y$ 都如此，则称它关于 $Y$ 在维数 $p$ 上同调平坦，或在维数 $-p$ 上上同调平坦。
+
+若对所有维数 $p$ 都同调平坦（分别在 $y$ 处同调平坦），则简称关于 $Y$ 同调平坦（分别在 $y$ 处同调平坦），也称关于 $Y$ 上同调平坦（分别在 $y$ 处上同调平坦）。
+
+\egap{7.8.2}
+由定义，同调平坦性在 $Y$ 上是局部性质。若 $Y$ 局部诺特，或 $Y$ 是概形，则关于 $Y$ 在维数 $p$ 上同调平坦，当且仅当 $\TT_p$ 正合。局部诺特情形已在（7.7.5）的证明中说明；概形情形用同一论证，将（I，9.4.2）用于拟紧概形中的仿射开集。
+
+\egas{7.8.3}{命题}
+沿用（7.8.1）的记号与假设。以下条件等价：
+\begin{enumerate}[label=\alph*)]
+\item $\PP_\bullet$ 在 $y$ 处关于 $Y$ 在维数 $p$ 上同调平坦。
+\item 存在 $y$ 的开邻域 $U$，使 $\TT_p^U,\TT_{p+1}^U$ 均右正合。
+\item 存在 $y$ 的开邻域 $U$，使 $\TT_p^U,\TT_{p-1}^U$ 均左正合。
+\item 存在 $y$ 的开邻域 $U$，使 $\TT_{p+1}^U$ 右正合且 $\TT_{p-1}^U$ 左正合。
+\end{enumerate}
+考虑 $Y$ 仿射时 $\TT_\bullet$ 的解释，这只是（7.3.3）的部分结论的译写。
+
+\egas{7.8.4}{命题}
+设 $Y$ 局部诺特，$f:X\to Y$ 固有，$\PP_\bullet$ 下有界且各项凝聚、$Y$-平坦，$\TT_\bullet$ 由（7.7.1.1）定义。对每个 $y\in Y$，以下条件等价：
+\begin{enumerate}[label=\alph*)]
+\item $\PP_\bullet$ 在 $y$ 处关于 $Y$ 在维数 $p$ 上同调平坦。
+\item $T_p^{\OO_y}$ 正合。
+\item 存在 $n_0$，使 $n\geq n_0$ 时
+\begin{equation}
+ \begin{aligned}
+ \len_{\OO_y}T_p^{\OO_y}(\OO_y/\mathfrak m_y^{n+1})
+ &=\dim_{k(y)}T_p^{\OO_y}(k(y))\\
+ &\quad\cdot\len_{\OO_y}(\OO_y/\mathfrak m_y^{n+1}).
+ \end{aligned}\tag{7.8.4.1}
+\end{equation}
+\item 存在 $y$ 的开邻域 $U$，使 $\cH^{-p}(f,\PP^\bullet)|U$ 同构于某个 $(\OO_Y|U)^r$，并对任意拟凝聚 $\OO_U$-模 $\M$，典范同态
+\begin{equation}
+ \cH^{-p}(f,\PP^\bullet)|U\otimes_{\OO_U}\M
+ \longrightarrow\cH^{-p}(f_U,\PP^\bullet|f^{-1}(U)\otimes_{\OO_U}\M)
+ \tag{7.8.4.2}
+\end{equation}
+为双射。
+\end{enumerate}
+这些条件成立时，还具有以下性质：
+
+\noindent e) $y$ 有一个邻域，使其中 $z\mapsto d_p(z)$（7.7.5.1）恒定。
+
+若 $Y$ 在 $y$ 处约化（$0_{\mathrm I}$，4.1.4），则 e) 也与上述条件等价。
+
+由（7.3.3），b) 等价于 $T_p^{\OO_y},T_{p+1}^{\OO_y}$ 均右正合。a)、b) 等价来自（7.7.10）及（7.8.3）。$\OO_y/\mathfrak m_y^{n+1}$ 阿廷，相关模由（7.7.4）有限型，因而有限长度；b)、c) 的等价性来自（7.7.10）及（7.3.5.7）。a) 蕴含 e)，以及局部环约化时二者等价，来自（7.6.9）。a) 又由（7.7.5）给出（7.8.4.2）双射；同时 $\cH^{-p}(f,\PP^\bullet)_y$ 平坦（7.3.3，f），且有限型，故自由（0，10.1.3）。该层凝聚，遂在 $y$ 的某邻域局部自由（$0_{\mathrm I}$，5.2.7）。反之，由（7.7.2.2）中函子的定义，d) 蕴含 a)。
+
+\egas{7.8.5}{命题}
+在（7.8.4）的假设下，以下条件等价：
+\begin{enumerate}[label=\alph*)]
+\item $\PP_\bullet$ 关于 $Y$ 在每个维数 $i\leq p$ 上同调平坦。
+\item $i\leq p+1$ 时，各 $\TT_i$ 均右正合。
+\item $i\geq-p$ 时，各 $\cH^i(f,\PP^\bullet)$ 均局部自由。
+\end{enumerate}
+a)、b) 等价由（7.8.3）得到，a) 蕴含 c) 由（7.8.4）得到。反之，设 c) 成立。由（7.7.4），表示复形在充分小的次数为零，同样相应 $\TT_i$ 为零。每个 $y$ 有仿射邻域 $U=\Spec A$，使 $i\leq p$ 时 $T_i^A(A)$ 自由；由（7.3.7），$\TT_i^U$ 在这些次数均正合。
+
+我们主要将这些判据用于 $\PP_\bullet$ 仅在次数0有一个凝聚且 $Y$-平坦模 $\F$ 的情形。此时 $\TT_p(\M)=R^{-p}f_*(\F\otimes_{\OO_Y}\M)$。
+
+\egas{7.8.6}{命题}
+设 $Y$ 为局部诺特预概形，$f:X\to Y$ 固有且平坦，$y\in Y$，$X_y=f^{-1}(y)=X\otimes_Y k(y)$。若 $R=\Gamma(X_y,\OO_{X_y})$ 是可分 $k(y)$-代数（Bourbaki，\textit{Alg.}，第VIII章，§7，第5目），即有限个 $k(y)$ 的有限次可分扩张的直积，则 $\OO_X$ 在 $y$ 处关于 $Y$ 在维数0上上同调平坦。
+
+由（7.8.4），可设 $Y=\Spec A$，$A=\OO_y$。因 $f$ 平坦，$\TT_1=0$，所以 $T_0^A$ 左正合；只须证明它右正合。由（7.7.10，c），可进一步设 $A$ 阿廷。取 $k(y)$ 的有限扩张 $k'$，使 $R\otimes_{k(y)}k'$ 为有限个 $k'$ 的直积。存在局部同态 $A\to A'$，使 $A'$ 为有限自由 $A$-代数，且其剩余域同构于 $k'$（0，10.3.2）。由（7.6.1），可归结为 $R$ 已是 $m$ 个 $k(y)$ 的直积。使用以下初等引理。
+
+\egas{7.8.6.1}{引理}
+局部赋环空间 $Z$ 连通，当且仅当 $\Gamma(Z,\OO_Z)$ 不是两个非零环的直积。
+
+若 $Z=Z_1\sqcup Z_2$ 为两个非空开集的并，则全局截面环就是两个非零截面环的直积。反之，环有这种直积分解，当且仅当存在异于0、1的幂等元 $s$。对每个 $z\in Z$，其芽 $s_z$ 在局部环中为0或1。$s_z=0$ 的点形成开集；而 $s_z=1$ 时 $s(z)\ne0$，这类点也形成开集（$0_{\mathrm I}$，5.5.2），从而得到断言。
+
+由引理，$X_y$ 恰有 $m$ 个连通分支 $X'_i$，每个满足 $\Gamma(X'_i,\OO_{X'_i})=k(y)$。因为 $A$ 局部阿廷，其谱仅含一点，$X,X_y$ 具有相同底空间；故 $X$ 有 $m$ 个连通分支 $X_i$，且 $X'_i=X_i\otimes_Yk(y)$。于是归结为 $R=k(y)$。由（7.7.10，b），只须证明 $\Gamma(X,\OO_X)\to\Gamma(X_y,\OO_{X_y})$ 满射；复合
+\[
+ A=\Gamma(Y,\OO_Y)\longrightarrow\Gamma(X,\OO_X)
+ \longrightarrow\Gamma(X_y,\OO_{X_y})=k(y)
+\]
+已满射，故所需结论成立。
+
+\egas{7.8.7}{推论}
+在（7.8.6）的假设下，存在 $y$ 的开邻域 $U$，使得：
+\begin{enumerate}[label=(\roman*)]
+\item $f_*(\OO_X)|U\simeq(\OO_Y|U)^m$；
+\item 对任意 $z\in U$，典范同态
+\[
+ (f_*(\OO_X))_z\otimes_{\OO_z}k(z)
+ \longrightarrow\Gamma(X_z,\OO_{X_z})
+\]
+为双射。
+\end{enumerate}
+（i）由（7.8.6）、（7.8.4）得到；（ii）由适当 $U$ 上 $\TT_0^U$ 正合及（7.7.5.3）得到。
+
+\egas{7.8.8}{推论}
+在（7.8.6）的条件下，若还有 $\Gamma(X_y,\OO_{X_y})=k(y)$，则存在 $y$ 的开邻域 $U$，使典范同态 $\OO_Y|U\to f_*(\OO_X)|U$ 为双射。
+
+由（7.8.7，（ii）），其（i）中的整数 $m$ 必为1。
+
+\egas{7.8.9}{推论}
+在（7.8.6）的假设下，存在 $y$ 的开邻域 $U$、凝聚 $\OO_U$-模 $\mathscr Q$（确定至唯一同构），以及关于拟凝聚 $\OO_U$-模 $\M$ 的函子同构
+\begin{equation}
+ R^1(f_U)_*(f_U^*\M)\simeq\shHom_{\OO_U}(\mathscr Q,\M).
+ \tag{7.8.9.1}
+\end{equation}
+事实上，适当 $U$ 上 $\TT_0^U$ 正合。令 $p=0$、$\PP_\bullet$ 仅在次数0为 $\OO_X$，应用（7.7.5，a）与 b') 的等价性即可。
+
+\egas{7.8.10}{注记}
+（i）在（7.8.6）的条件下，考虑 Stein 分解（4.3.3）
+\[
+ X\xrightarrow{f'}Y'\xrightarrow{g}Y,
+ \qquad Y'=\Spec(f_*\OO_X).
+\]
+有限态射 $g$ 满足 $g_*\OO_{Y'}=f_*\OO_X$ 在 $y$ 附近局部自由，其在 $y$ 处的纤维是一个可分 $k(y)$-代数的谱（II，1.5.1）。将在第IV章推出：存在 $y$ 的开邻域 $U$，使对限制 $g^{-1}(U)\to U$，每个纤维 $g^{-1}(z)$ 都是可分 $k(z)$-代数的谱；这将称为 $U$ 的 étale 覆盖。因此由（7.8.7，（ii）），（7.8.6）对 $y$ 所作假设也在 $y$ 的某邻域所有点成立。
+
+（ii）将在第V章看到：即使 $X$ 在 $Y$ 上射影，并且在 $Y$ 上“简单”（此性质将在第IV章定义），（7.8.9）的 $\mathscr Q$ 也未必局部自由。换言之，$\OO_X$ 未必在维数1上关于 $Y$ 在 $y$ 处上同调平坦。第V章将把 $\mathscr Q$ 解释为 $X/Y$ 的 Picard 概形沿单位截面的1-微分层。
+
+\subsection{对固有态射的应用：III．Euler--Poincaré 特征数与 Hilbert 多项式的不变性}
+\source{第三卷第二部分，原印刷第76--80页}
+
+\egap{7.9.1}
+设 $A$ 为环，$M$ 为有限型投射 $A$-模。回顾（Bourbaki，\textit{Alg. comm.}，第II章，§5，第2目），这等价于其在 $X=\Spec A$ 上的相伴层 $\widetilde M$ 有限型局部自由。对每个 $\mathfrak p\in\Spec A$，称自由 $A_{\mathfrak p}$-模 $M_{\mathfrak p}$ 的秩为 $M$ 在 $\mathfrak p$ 处的秩，记 $\rk_{\mathfrak p}M$。它也是 $\widetilde M$ 在该点的秩。因此
+\begin{equation}
+ \rk_{\mathfrak p}M=\rk_{A_{\mathfrak p}}M_{\mathfrak p}
+ =\dim_{k(\mathfrak p)}(M\otimes_A k(\mathfrak p)).\tag{7.9.1.1}
+\end{equation}
+
+\egas{7.9.2}{命题}
+设 $P_\bullet$ 为有限型投射 $A$-模的有限复形，$T_\bullet(M)=H_\bullet(P_\bullet\otimes_A M)$。则对每个 $\mathfrak p\in\Spec A$，有
+\begin{equation}
+ \sum_i(-1)^i\dim_{k(\mathfrak p)}T_i(k(\mathfrak p))
+ =\sum_i(-1)^i\rk_{\mathfrak p}P_i.\tag{7.9.2.1}
+\end{equation}
+由定义，$T_i(k(\mathfrak p))=H_i(P_\bullet\otimes_A k(\mathfrak p))$。结合（7.9.1.1），该公式就是有限维向量空间的有限复形在取同调时 Euler--Poincaré 特征数不变（0，11.10.2）。
+\cmt{C3-T05}{底本证明将本式引为（7.9.1.2）；此处应为（7.9.2.1）。本节其他引文和符号误植集中见核查报告。}
+
+\egas{7.9.3}{推论}
+函数 $\mathfrak p\mapsto\sum_i(-1)^i\dim_{k(\mathfrak p)}T_i(k(\mathfrak p))$ 在 $\Spec A$ 上局部恒定。
+
+\egas{7.9.4}{定理}
+设 $Y$ 局部诺特，$f:X\to Y$ 固有，$\PP_\bullet$ 为凝聚且 $Y$-平坦 $\OO_X$-模的有限复形。以（7.7.1.1）定义 $\TT_\bullet$，则函数
+\begin{equation}
+ y\longmapsto\sum_i(-1)^i\dim_{k(y)}T_i(k(y))\tag{7.9.4.1}
+\end{equation}
+在 $Y$ 上局部恒定。
+
+可设 $Y=\Spec A$ 仿射诺特。因 $\PP_\bullet$ 有限，由（7.7.12，（i））可写 $\TT_\bullet(\M)=\HH_\bullet(\LL_\bullet\otimes\M)$，其中 $\LL_\bullet=\widetilde{L_\bullet}$，$L_\bullet$ 为有限型投射 $A$-模的有限复形。结论来自（7.9.3）。
+\cmt{C3-T06}{底本本条引入 $\TT_p$ 时写成 $\cH^p$，而（7.7.1.1）采用 $\cH^{-p}$；译文明确沿用后者。对这里的有限交错和，把指标 $p$ 换为 $-p$ 不改变数值。}
+
+\egap{7.9.5}
+在（7.9.4）的条件下，若 $Y$ 连通，则（7.9.4.1）恒定。若 $Y$ 连通且非空，将其唯一整数值记为 $\operatorname{EP}(f,\PP_\bullet)$、$\operatorname{EP}(Y,\PP_\bullet)$，或在不致混淆时记 $\operatorname{EP}(\PP_\bullet)$，并称之为 $\PP_\bullet$ 关于 $f$（或关于 $Y$）的 Euler--Poincaré 特征数。一般情形中，（7.9.4.1）的值记为 $\operatorname{EP}(f,\PP_\bullet;y)$、$\operatorname{EP}(Y,\PP_\bullet;y)$ 或 $\operatorname{EP}(\PP_\bullet;y)$。
+
+\egap{7.9.6}
+设 $X,Y,f$ 满足（7.9.4）的假设，并设
+\[
+ 0\longrightarrow\PP'_\bullet\xrightarrow{u}\PP_\bullet
+ \xrightarrow{v}\PP''_\bullet\longrightarrow0
+\]
+为凝聚且 $Y$-平坦模的有限复形正合列，其中 $u,v$ 的次数分别为偶数 $2d,2d'$。因 $\TT_\bullet$ 为同调函子，有仅含有限项的长正合列
+\[
+\begin{aligned}
+ \cdots\to\TT_i(\PP'_\bullet,k(y))
+ &\to\TT_{i+2d}(\PP_\bullet,k(y))\\
+ &\to\TT_{i+2d+2d'}(\PP''_\bullet,k(y))\\
+ &\to\TT_{i-1}(\PP'_\bullet,k(y))\to\cdots.
+\end{aligned}
+\]
+该复形的 Euler--Poincaré 特征数为零（0，11.10.1），故
+\begin{equation}
+ \operatorname{EP}(\PP_\bullet;y)
+ =\operatorname{EP}(\PP'_\bullet;y)+\operatorname{EP}(\PP''_\bullet;y).
+ \tag{7.9.6.1}
+\end{equation}
+例如设 $\PP_i=0$（$i<0$）。底本给出下列逐项正合图：
+\[
+ \begin{tikzcd}[column sep=small,row sep=small]
+ \cdots\arrow[r]&0\arrow[r]\arrow[d]&0\arrow[r]\arrow[d]&0\arrow[r]\arrow[d]&0\arrow[r]\arrow[d]&\cdots\\
+ \cdots\arrow[r]&0\arrow[r]\arrow[d]&0\arrow[r]\arrow[d]&\PP_1\arrow[r]\arrow[d,equal]&\PP_2\arrow[r]\arrow[d,equal]&\cdots\\
+ \cdots\arrow[r]&0\arrow[r]\arrow[d]&\PP_0\arrow[r]\arrow[d,equal]&\PP_1\arrow[r]\arrow[d]&\PP_2\arrow[r]\arrow[d]&\cdots\\
+ \cdots\arrow[r]&0\arrow[r]\arrow[d]&\PP_0\arrow[r]\arrow[d]&0\arrow[r]\arrow[d]&0\arrow[r]\arrow[d]&\cdots\\
+ \cdots\arrow[r]&0\arrow[r]&0\arrow[r]&0\arrow[r]&0\arrow[r]&\cdots
+ \end{tikzcd}
+\]
+非零竖箭头均为恒等同态。应用（7.9.6.1），对复形长度归纳，得到
+\begin{equation}
+ \operatorname{EP}(\PP_\bullet;y)
+ =\sum_i(-1)^i\operatorname{EP}(\PP_i;y).\tag{7.9.6.2}
+\end{equation}
+这里对凝聚且 $Y$-平坦的模 $\F$，$\operatorname{EP}(\F;y)$ 指将其置于次数0、其余项为零所定义的值。因而可归结为研究单个模的 Euler--Poincaré 特征数。
+\cmt{C3-T07}{上图忠实保留底本的右向箭头。若严格沿用本章同调次数 $d:P_i\to P_{i-1}$，应使用截断短正合列 $0\to P_0[0]\to P_\bullet\to P_{\geq1}\to0$，而不是把右向图当作下标递减的微分图。交错和公式不受影响；详见报告。}
+
+\egas{7.9.7}{命题}
+在（7.9.4）的假设下，设 $Y'$ 局部诺特，$g:Y'\to Y$ 为态射，$X'=X\times_Y Y'$，$f'=f_{(Y')}$，$\PP'_\bullet=\PP_\bullet\otimes_{\OO_X}\OO_{X'}$。则 $\PP'_\bullet$ 的各项凝聚且 $Y'$-平坦，对每个 $y'\in Y'$ 有
+\begin{equation}
+ \operatorname{EP}(\PP'_\bullet;y')
+ =\operatorname{EP}(\PP_\bullet;g(y')).\tag{7.9.7.1}
+\end{equation}
+各项为原凝聚模的逆像，故凝聚；平坦性由（$0_{\mathrm I}$，6.2.1）及（1.4.14.5）局部验证。由（II，5.4.2），$f'$ 固有，左边遂有定义。归结到 $Y,Y'$ 仿射后，所述公式由底本引用的“（6.10.4.2）”、（7.7.2）和（7.6.7）得到。
+\cmt{C3-T08}{本分册（6.10.4）没有编号为（6.10.4.2）的公式，属待订正的引文。这里仅凭（7.7.2）、（7.6.7）逐项保持余域上的维数，已足以推出有限交错和相等。}
+
+\egas{7.9.8}{命题}
+在（7.9.4）的假设下，再设存在整数 $i_0$，使每个 $y\in Y$ 及每个 $i\ne i_0$ 均有 $T_i(k(y))=0$。则
+\[
+ \TT_{i_0}(\OO_Y)=\cH^{-i_0}(f,\PP^\bullet)
+\]
+局部自由，其在 $y$ 处的秩为 $(-1)^{i_0}\operatorname{EP}(f,\PP_\bullet;y)$。
+
+各 $T^{\OO_y}$ 满足（7.4.4），故可用（7.4.7）；由（7.5.3），$i\ne i_0$ 时 $T_i^{\OO_y}=0$。由（7.3.3），$\TT_{i_0}$ 正合，再由（7.8.4）知相应上同调层局部自由。由特征数定义，其秩为 $\dim_{k(y)}T_{i_0}(k(y))$，也就是 $(-1)^{i_0}\operatorname{EP}(f,\PP_\bullet;y)$。
+\cmt{C3-T09}{底本本条陈述包含正确的因子 $(-1)^{i_0}$，但证明最后一行漏印该因子。译文此处按定义写全，并明确记录；未把正确的命题称为错误。}
+
+\egas{7.9.9}{推论}
+设 $Y$ 局部诺特，$f:X\to Y$ 固有，$\F$ 凝聚且 $Y$-平坦。若存在整数 $i_0$，使每个 $y\in Y$ 及每个 $i\ne i_0$ 均有
+\[
+ H^i(f^{-1}(y),\F\otimes_{\OO_Y}k(y))=0,
+\]
+则 $R^{i_0}f_*(\F)$ 局部自由，其在 $y$ 处的秩为 $(-1)^{i_0}\operatorname{EP}(f,\F;y)$。
+
+\egas{7.9.10}{推论}
+设 $X,Y,\F$ 满足（7.9.9）的基本条件，并设 $i>0$ 时 $R^if_*(\F)=0$。则 $f_*(\F)$ 局部自由，其在 $y$ 处的秩为 $\operatorname{EP}(f,\F;y)$。
+
+由（7.9.9），只须证明下述引理。
+
+\egas{7.9.10.1}{引理}
+在（7.9.10）的假设下，对每个 $i>0$ 和 $y\in Y$，有
+\[
+ H^i(f^{-1}(y),\F\otimes_{\OO_Y}k(y))=0.
+\]
+可设 $Y=\Spec A$。在（7.9.4）中取只在次数0为 $\F$ 的复形，依假设，$p<0$ 时 $\TT_p(\OO_Y)=0$。由（7.3.7）知 $p<0$ 时 $\TT_p$ 正合，再由（7.7.5，a）与 d) 的等价性得到引理。
+
+\egas{7.9.11}{命题}
+在（7.9.4）的假设下，设 $\LL$ 为关于 $Y$ 非常丰沛的可逆 $\OO_X$-模，对每个 $n\in\mathbf Z$ 置 $\PP_\bullet(n)=\PP_\bullet\otimes_{\OO_X}\LL^{\otimes n}$。则对每个 $y\in Y$，函数
+\begin{equation}
+ n\longmapsto\operatorname{EP}(f,\PP_\bullet(n);y)\tag{7.9.11.1}
+\end{equation}
+是有理系数多项式，且在 $Y$ 的同一连通分支各点为同一个多项式。
+
+$\PP_\bullet(n)$ 仍由 $Y$-平坦模组成。由（7.9.6.2），可归结为单个非零项 $\F$ 在次数0的情形；因问题对 $Y$ 局部，可设 $Y$ 仿射、$f$ 射影（II，5.5.3）。置 $X_y=f^{-1}(y)$、$\LL_y=\LL\otimes_{\OO_Y}k(y)$，它非常丰沛（II，4.4.10）。对 $\PP_\bullet(n)$ 的相应函子，由（7.7.2）有
+\[
+ T_i(k(y))=H^{-i}(X_y,\F_y\otimes\LL_y^{\otimes n}),
+ \qquad\F_y=\F\otimes_{\OO_Y}k(y).
+\]
+因此所述特征数就是（2.5.1）定义的 $\chi(\F_y\otimes\LL_y^{\otimes n})$；多项式性来自（2.5.3），而每个 $n$ 的值在连通分支上由（7.9.4）恒定，故得命题。
+
+记此有理系数多项式为 $\operatorname{PH}(f,\PP_\bullet;y)$ 或 $\operatorname{PH}(\PP_\bullet;y)$，称为关于 $\PP_\bullet,f,\LL$ 的在 $y$ 处的 Hilbert 多项式；不致混淆时也称 $\PP_\bullet$ 或 $f$ 的 Hilbert 多项式。若 $Y$ 连通且非空，省去 $y$。它将在第V章研究给定凝聚层的凝聚商层之“模空间”时发挥关键作用。
+
+\egap{7.9.12}
+沿用（7.9.6）及（7.9.11）的记号，有
+\begin{align}
+ \operatorname{PH}(\PP_\bullet;y)
+ &=\operatorname{PH}(\PP'_\bullet;y)+\operatorname{PH}(\PP''_\bullet;y),\tag{7.9.12.1}\\
+ \operatorname{PH}(\PP_\bullet;y)
+ &=\sum_i(-1)^i\operatorname{PH}(\PP_i;y).\tag{7.9.12.2}
+\end{align}
+这直接来自（7.9.6.1）、（7.9.6.2）。在（7.9.7）的记号与假设下，同样有
+\begin{equation}
+ \operatorname{PH}(\PP'_\bullet;y')
+ =\operatorname{PH}(\PP_\bullet;g(y')).\tag{7.9.12.3}
+\end{equation}
+（7.9.12.2）将复形的 Hilbert 多项式归结为单个 $Y$-平坦模的情形；后者有不依赖同调考虑的解释。
+
+\egas{7.9.13}{推论}
+设 $Y$ 诺特，$f:X\to Y$ 固有，$\LL$ 为关于 $Y$ 非常丰沛的可逆模，$\F$ 凝聚且 $Y$-平坦。则存在 $n_0$，使 $n\geq n_0$ 时 $f_*(\F(n))$ 局部自由，其在 $y$ 处的秩等于 $\operatorname{PH}(f,\F;y)(n)$。
+
+由（II，5.5.3），$f$ 射影；故由（2.2.1），存在 $n_0$ 使 $n\geq n_0$、$i>0$ 时 $R^if_*(\F(n))=0$。应用（7.9.10）即得结论。
+
+以下平坦性判据将在第V章凝聚层“模空间”的理论中十分重要。
+
+\egas{7.9.14}{命题}
+设 $Y$ 诺特，$f:X\to Y$ 射影，$\LL$ 为 $f$-丰沛可逆模，且对每个 $\OO_X$-模 $\F$ 及整数 $n$ 置 $\F(n)=\F\otimes\LL^{\otimes n}$。则凝聚模 $\F$ 在 $Y$ 上平坦，当且仅当存在 $n_0$，使所有 $n\geq n_0$ 的 $f_*(\F(n))$ 都局部自由。
+
+必要性与（7.9.13）同证，因为当 $f$ 射影时，（2.2.1）也适用于丰沛可逆层。为证充分性，可设 $Y=\Spec A$。由假设及（2.2.2，（i）），各 $\Gamma(X,\F(n))$（$n\geq n_0$）为有限型投射 $A$-模（Bourbaki，\textit{Alg. comm.}，第II章，§5，第2目，定理1）。令
+\[
+ S=\bigoplus_{n\geq0}\Gamma(X,\LL^{\otimes n}),\qquad
+ M=\bigoplus_{n\geq n_0}\Gamma(X,\F(n)).
+\]
+由（II，4.5.2，b；5.4.4），$X$ 典范同构于 $\Proj S$。必要时以 $\LL$ 的某正次幂代替它，可设 $S$ 由有限个一次元素生成（2.3.5.1）；由（II，2.7.5、2.7.2），$\F$ 与 $M$ 的相伴层同一。对正次齐次元 $g\in S$，因此有 $\Gamma(X_g,\F)=M_{(g)}$。$M$ 为投射 $A$-模的直和，故平坦；由（$0_{\mathrm I}$，6.3.2），$M_g$ 也平坦；$M_{(g)}$ 为其直和因子，故仍平坦（同章6.1.2）。由（1.4.14.5），$\F$ 在 $X_g$ 的每点 $Y$-平坦；这些 $X_g$ 覆盖 $X$，故命题得证。
+
+\begin{flushright}（待续。）\end{flushright}

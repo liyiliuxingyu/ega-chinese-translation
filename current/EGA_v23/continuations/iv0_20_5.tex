@@ -1,0 +1,414 @@
+% 底本 EGAIV.1.pdf，上传PDF第127--135页，分册印刷第128--136页。
+\subsection{微分模的基本函子性质}
+\source{第四卷第一部分，分册印刷第128--136页；上传PDF第127--135页，止于（20.5.15）}
+\egap{20.5.1}
+在本小节及下一小节中，除非明确说明，所讨论的环和模都赋予离散拓扑。
+
+\egap{20.5.2}
+设 $A$ 为环，$B,C$ 为 $A$-代数，$u:B\to C$ 为 $A$-同态。有交换图
+\begin{equation}
+\begin{tikzcd}[column sep=large]
+ B\otimes_A B\arrow[r,"u\otimes u"]\arrow[d,"p_{B/A}"']&C\otimes_A C\arrow[d,"p_{C/A}"]\\
+ B\arrow[r,"u"']&C.
+\end{tikzcd}
+\tag{20.5.2.1}
+\end{equation}
+通过商得到 $A$-代数同态
+\begin{equation}
+ u':P^1_{B/A}\longrightarrow P^1_{C/A},
+ \tag{20.5.2.2}
+\end{equation}
+并使下图交换：
+\[
+\begin{tikzcd}
+ P^1_{B/A}\arrow[r,"u'"]&P^1_{C/A}\\
+ B\arrow[u,"p_1"]\arrow[r,"u"']&C\arrow[u,"p_1"'].
+\end{tikzcd}
+\]
+因为 $u\otimes u$ 将 $\mathfrak J_{B/A}$ 映入 $\mathfrak J_{C/A}$，将 $u'$ 限制到 $\Omega^1_{B/A}$，得到映射
+\begin{equation}
+ u'':\Omega^1_{B/A}\longrightarrow\Omega^1_{C/A}.
+ \tag{20.5.2.3}
+\end{equation}
+它与 $u$ 一起构成从 $B$-模 $\Omega^1_{B/A}$ 到 $C$-模 $\Omega^1_{C/A}$ 的双同态，因而典范地诱导 $C$-模同态
+\begin{equation}
+ u_{C/B/A}:\Omega^1_{B/A}\otimes_B C\longrightarrow\Omega^1_{C/A}.
+ \tag{20.5.2.4}
+\end{equation}
+又因为
+\begin{equation}
+\begin{tikzcd}
+ P^1_{B/A}\arrow[r,"u'"]&P^1_{C/A}\\
+ B\arrow[u,"p_2"]\arrow[r,"u"']&C\arrow[u,"p_2"']
+\end{tikzcd}
+\tag{20.5.2.5}
+\end{equation}
+也交换，所以
+\begin{equation}
+\begin{tikzcd}
+ \Omega^1_{B/A}\arrow[r,"u''"]&\Omega^1_{C/A}\\
+ B\arrow[u,"d_{B/A}"]\arrow[r,"u"']&C\arrow[u,"d_{C/A}"']
+\end{tikzcd}
+\tag{20.5.2.6}
+\end{equation}
+交换。若 $w:C\to D$ 是第二个 $A$-代数同态，定义给出传递性
+\begin{equation}
+ (w\circ u)_{D/B/A}
+ =w_{D/C/A}\circ(u_{C/B/A}\otimes_C1_D),
+ \tag{20.5.2.7}
+\end{equation}
+其中已使用典范的张量积结合识别。
+
+\egap{20.5.3}
+现设 $A,B$ 为环，$v:A\to B$ 为环同态，$C$ 为 $B$-代数，并通过 $v$ 成为 $A$-代数。典范满射 $v_0:C\otimes_A C\to C\otimes_B C$ 是关于 $v$ 的代数双同态，且
+\begin{equation}
+\begin{tikzcd}
+ C\otimes_A C\arrow[r,"v_0"]\arrow[d,"p_{C/A}"']&C\otimes_B C\arrow[d,"p_{C/B}"]\\
+ C\arrow[r,"1_C"']&C
+\end{tikzcd}
+\tag{20.5.3.1}
+\end{equation}
+交换。通过商得到代数双同态
+\begin{equation}
+ v':P^1_{C/A}\longrightarrow P^1_{C/B},
+ \tag{20.5.3.2}
+\end{equation}
+使图
+\[
+\begin{tikzcd}
+ P^1_{C/A}\arrow[r,"v'"]&P^1_{C/B}\\
+ C\arrow[u,"p_1"]\arrow[r,"1_C"']&C\arrow[u,"p_1"']
+\end{tikzcd}
+\]
+交换。将 $v'$ 限制到 $\Omega^1_{C/A}$，得到 $C$-模同态
+\begin{equation}
+ v_{C/B/A}:\Omega^1_{C/A}\longrightarrow\Omega^1_{C/B}.
+ \tag{20.5.3.3}
+\end{equation}
+此外，交换图
+\begin{equation}
+\begin{tikzcd}
+ P^1_{C/A}\arrow[r,"v'"]&P^1_{C/B}\\
+ C\arrow[u,"p_2"]\arrow[r,"1_C"']&C\arrow[u,"p_2"']
+\end{tikzcd}
+\tag{20.5.3.4}
+\end{equation}
+给出交换图
+\begin{equation}
+\begin{tikzcd}
+ \Omega^1_{C/A}\arrow[r,"v_{C/B/A}"]&\Omega^1_{C/B}\\
+ C\arrow[u,"d_{C/A}"]\arrow[r,"1_C"']&C\arrow[u,"d_{C/B}"'].
+\end{tikzcd}
+\tag{20.5.3.5}
+\end{equation}
+若 $s:A'\to A$ 为第二个环同态，则有
+\begin{equation}
+ (v\circ s)_{C/B/A'}=v_{C/B/A}\circ s_{C/A/A'}.
+ \tag{20.5.3.6}
+\end{equation}
+
+\egap{20.5.4}
+现在设有交换的环同态图
+\[
+\begin{tikzcd}
+ B\arrow[r,"v"]&B'\\
+ A\arrow[u,"f"]\arrow[r,"u"']&A'\arrow[u,"g"'].
+\end{tikzcd}
+\]
+由（20.5.2.4）及（20.5.3.3）复合，得到 $B'$-模同态
+\begin{equation}
+ \Omega^1_{B/A}\otimes_B B'
+ \xrightarrow{v_{B'/B/A}}\Omega^1_{B'/A}
+ \xrightarrow{u_{B'/A'/A}}\Omega^1_{B'/A'}.
+ \tag{20.5.4.1}
+\end{equation}
+记此复合为 $\theta$。它使如下 $A$-线性映射图交换：
+\begin{equation}
+\begin{tikzcd}[column sep=huge]
+ \Omega^1_{B/A}\otimes_B B'\arrow[r,"\theta"]&\Omega^1_{B'/A'}\\
+ B\arrow[u,"{b\mapsto d_{B/A}b\otimes1}"]\arrow[r,"v"']&B'\arrow[u,"d_{B'/A'}"'].
+\end{tikzcd}
+\tag{20.5.4.2}
+\end{equation}
+\cmt{I9-E02}{原图下行写成 $B'\xrightarrow{1_{B'}}B'$，左竖箭头标 $d_{B/A}\otimes1$，且称为 $A'$-同态图。对一般交换方块，这个左竖箭头并无所声称的定义。正文用实际成立的自然性方块替换。取 $A=B=A'=k$、$B'=k[t]$，原图若成立就会强迫 $d_{k[t]/k}=0$，而 $dt\ne0$。在张量积基变换的特殊情形中另有延拓导子，但不能提前用于本条一般情形。作者勘误在这里另补了目标微分模漏掉的上标 $1$，该排印修正不解决此源对象问题。}
+同态（20.5.4.1）也对应于关于 $v$ 的模的双同态
+\begin{equation}
+ \Omega^1_{B/A}\longrightarrow\Omega^1_{B'/A'}.
+ \tag{20.5.4.3}
+\end{equation}
+
+\egas{20.5.5}{命题}
+若 $A',B$ 为 $A$-代数，且 $B'=B\otimes_A A'$，则典范同态
+\begin{equation}
+ \Omega^1_{B/A}\otimes_B B'\longrightarrow\Omega^1_{B'/A'}
+ \tag{20.5.5.1}
+\end{equation}
+为同构。
+
+左边可典范识别为 $\Omega^1_{B/A}\otimes_A A'$。又有典范同构
+\[
+ B'\otimes_{A'}B'\simeq(B\otimes_A B)\otimes_A A',
+\]
+在此识别下 $p_{B'/A'}=p_{B/A}\otimes_A1_{A'}$。乘法映射 $p_{B/A}$ 有 $A$-线性截面 $j_1$，故其核的正合列分裂，在任意 $A\to A'$ 下张量后仍正合。因此
+\[
+ \mathfrak J_{B'/A'}=\Im(\mathfrak J_{B/A}\otimes_A A'),\qquad
+ \mathfrak J_{B'/A'}^2=\Im(\mathfrak J_{B/A}^2\otimes_A A').
+\]
+由此得到 $P^1_{B'/A'}\simeq P^1_{B/A}\otimes_A A'$，且此同构保持增广理想。再用典范直和分解 $P^1_{B/A}\simeq B\oplus\Omega^1_{B/A}$，得到
+\begin{equation}
+ \Omega^1_{B/A}\otimes_A A'\simeq\Omega^1_{B'/A'}.
+ \tag{20.5.5.2}
+\end{equation}
+与典范结合识别复合，即为（20.5.5.1）。
+\cmt{I9-N04}{这里补明 $p_{B/A}$ 的截面，避免把“满射”误当作任意张量积保持核的理由。本命题不要求 $A'$ 对 $A$ 平坦。证明使用分裂正合列，结论保持原来的任意基变换范围。}
+
+\egap{20.5.6}
+对 $A\to B\to C$，由（20.5.2.4）、（20.5.3.3）的函子性，对任意 $C$-模 $L$ 有典范同态
+\begin{equation}
+ \Hom_C(\Omega^1_{C/A},L)
+ \longrightarrow\Hom_C(\Omega^1_{B/A}\otimes_B C,L)
+ \simeq\Hom_B(\Omega^1_{B/A},L),
+ \tag{20.5.6.1}
+\end{equation}
+\begin{equation}
+ \Hom_C(\Omega^1_{C/B},L)\longrightarrow\Hom_C(\Omega^1_{C/A},L).
+ \tag{20.5.6.2}
+\end{equation}
+结合（20.4.8.2）及交换图（20.5.2.6）、（20.5.3.5），它们分别对应于（20.2.1.2）、（20.2.1.3）的导子同态。
+
+\egas{20.5.7}{定理}
+设 $u:A\to B$、$v:B\to C$ 为环同态。
+
+$(i)$ 以下 $C$-模序列正合：
+\begin{equation}
+ \Omega^1_{B/A}\otimes_B C\xrightarrow{v_{C/B/A}}
+ \Omega^1_{C/A}\xrightarrow{u_{C/B/A}}\Omega^1_{C/B}\longrightarrow0.
+ \tag{20.5.7.1}
+\end{equation}
+
+$(ii)$ $v_{C/B/A}$ 有左逆，当且仅当 $C$ 是\emph{相对于 $A$ 形式光滑的 $B$-代数}，这里均取离散拓扑，见（19.9.1）。特别地，$C$ 对 $B$ 形式光滑是一个充分条件。
+
+$(i)$ 由（20.2.4.2）的正合性及（20.5.6），对所有 $C$-模 $L$，
+\[
+0\longrightarrow\Hom_C(\Omega^1_{C/B},L)
+\longrightarrow\Hom_C(\Omega^1_{C/A},L)
+\longrightarrow\Hom_C(\Omega^1_{B/A}\otimes_B C,L)
+\]
+正合。这蕴涵（20.5.7.1）正合（Bourbaki，\textit{代数}，第二章，第3版，§2，第1目，定理1）。
+
+$(ii)$ 在 $(i)$ 的正合性下，首箭头有左逆等价于
+\begin{equation}
+0\longrightarrow\Omega^1_{B/A}\otimes_B C
+ \xrightarrow{v_{C/B/A}}\Omega^1_{C/A}
+ \xrightarrow{u_{C/B/A}}\Omega^1_{C/B}\longrightarrow0
+\tag{20.5.7.2}
+\end{equation}
+正合且分裂；又等价于对所有 $C$-模 $L$，对应的反向 $\Hom_C(-,L)$ 序列正合并在最后满射（同书同目，命题1）。由（20.5.6）、（20.2.4.2），这正是
+$\Exalcom_{B/A}(C,L)=0$ 对所有 $L$ 成立。结论因而来自（19.9.8.1）。
+
+此外，一个交换的环同态图
+\[
+\begin{tikzcd}
+ A'\arrow[r]&B'\arrow[r]&C'\\
+ A\arrow[u]\arrow[r]&B\arrow[u]\arrow[r]&C\arrow[u]
+\end{tikzcd}
+\]
+给出正合列之间的交换图
+\begin{equation}
+\begin{tikzcd}[column sep=large]
+ \Omega^1_{B/A}\otimes_B C\arrow[r]\arrow[d]&\Omega^1_{C/A}\arrow[r]\arrow[d]&\Omega^1_{C/B}\arrow[r]\arrow[d]&0\\
+ \Omega^1_{B'/A'}\otimes_{B'} C'\arrow[r]&\Omega^1_{C'/A'}\arrow[r]&\Omega^1_{C'/B'}\arrow[r]&0,
+\end{tikzcd}
+\tag{20.5.7.3}
+\end{equation}
+其中竖箭头来自（20.5.4.3）的双同态。
+
+\egas{20.5.8}{推论}
+若 $v:B\to C$ 使 $C$ 在离散拓扑下成为形式平展的 $B$-代数（19.10.2），则典范同态
+\[
+ v_{C/B/A}:\Omega^1_{B/A}\otimes_B C\longrightarrow\Omega^1_{C/A}
+\]
+双射。
+\cmt{I9-T06}{原文将该箭头引作（20.5.3.3），但其源为 $\Omega^1_{B/A}\otimes_B C$，实际是（20.5.2.4）在同态 $v$ 下的情形。正文保留实际源靶，并纠正引用。}
+若 $C$ 对 $B$ 形式非分歧，则由（19.10.4）、（20.4.8）和（20.1.1），对所有 $C$-模 $L$ 有 $\Hom_C(\Omega^1_{C/B},L)=0$，从而 $\Omega^1_{C/B}=0$（另见20.7.4）。形式光滑性又使（20.5.7.2）正合，故得结论。
+
+\egas{20.5.9}{推论}
+设 $A$ 为环，$B$ 为 $A$-代数，$S\subseteq B$ 为乘法集，则典范同态
+\begin{equation}
+ S^{-1}\Omega^1_{B/A}\longrightarrow\Omega^1_{S^{-1}B/A}
+ \tag{20.5.9.1}
+\end{equation}
+双射。
+
+只须在（20.5.8）中取 $C=S^{-1}B$；它对 $B$ 在离散拓扑下形式平展（19.10.3，ii）。若乘法集 $S$ 取自 $A$，并将它在 $B$ 中的像仍记为 $S$，结合（20.5.5）可写为
+\begin{equation}
+ \Omega^1_{S^{-1}B/S^{-1}A}
+ \simeq S^{-1}\Omega^1_{B/A}
+ \simeq\Omega^1_{S^{-1}B/A}.
+ \tag{20.5.9.2}
+\end{equation}
+\cmt{I9-T07}{原文上一句只给定 $S\subseteq B$，随后却使用 $S^{-1}A$。正文为这个附加公式明确 $S\subseteq A$ 的作用范围；首个局部化结论（20.5.9.1）仍适用于任意 $S\subseteq B$。}
+
+\egas{20.5.10}{推论}
+若 $k$ 为域，$K=k(X_\alpha)_{\alpha\in I}$ 为其纯超越扩张，则各 $dX_\alpha$ 构成 $K$-向量空间 $\Omega^1_{K/k}$ 的一组基。
+
+$K$ 是多项式环 $k[X_\alpha]_{\alpha\in I}$ 的分式域，故此结论来自（20.4.13，i）及（20.5.9）。
+
+\egap{20.5.11}
+设 $A$ 为环，$B$ 为 $A$-代数，$\mathfrak k$ 为 $B$ 的理想，$C=B/\mathfrak k$。考虑 $A$-模同态的复合
+\begin{equation}
+ \delta:\mathfrak k\lhook\joinrel\longrightarrow B
+ \xrightarrow{d_{B/A}}\Omega^1_{B/A}.
+ \tag{20.5.11.1}
+\end{equation}
+由 $d(xy)=xdy+ydx$，有 $\delta(\mathfrak k^2)\subseteq\mathfrak k\Omega^1_{B/A}$，故得到
+\begin{equation}
+ \delta_{C/B/A}:\mathfrak k/\mathfrak k^2
+ \longrightarrow\Omega^1_{B/A}\otimes_B C
+ =\Omega^1_{B/A}/\mathfrak k\Omega^1_{B/A}.
+ \tag{20.5.11.2}
+\end{equation}
+事实上，它是 $C$-模同态。因为对 $x\in B$、$y\in\mathfrak k$，$y\,dx\in\mathfrak k\Omega^1_{B/A}$，所以 $d(xy)\equiv xdy$；这先给出 $B$-线性，而两端都被 $\mathfrak k$ 零化。
+
+若 $B'$ 是另一 $A$-代数，$u:B\to B'$ 是 $A$-同态，$\mathfrak k'\subseteq B'$ 满足 $u(\mathfrak k)\subseteq\mathfrak k'$，$C'=B'/\mathfrak k'$，则有交换图
+\begin{equation}
+\begin{tikzcd}[column sep=huge]
+ \mathfrak k/\mathfrak k^2\arrow[r,"\delta_{C/B/A}"]\arrow[d]&\Omega^1_{B/A}\otimes_B C\arrow[d]\\
+ \mathfrak k'/\mathfrak k'^2\arrow[r,"\delta_{C'/B'/A}"']&\Omega^1_{B'/A}\otimes_{B'} C',
+\end{tikzcd}
+\tag{20.5.11.3}
+\end{equation}
+竖箭头由 $u$ 诱导，见（20.5.2.4）。
+
+\egas{20.5.12}{定理}
+设 $A$ 为环，$B$ 为 $A$-代数，$C=B/\mathfrak k$ 为商 $A$-代数，$u:B\to C$ 为典范同态。
+
+$(i)$ 有 $C$-模正合列
+\begin{equation}
+ \mathfrak k/\mathfrak k^2\xrightarrow{\delta_{C/B/A}}
+ \Omega^1_{B/A}\otimes_B C\xrightarrow{u_{C/B/A}}
+ \Omega^1_{C/A}\longrightarrow0,
+ \tag{20.5.12.1}
+\end{equation}
+其中两同态分别由（20.5.11.2）、（20.5.2.4）定义。
+
+$(ii)$ 令 $E=B/\mathfrak k^2$，则典范同态
+\[
+ \Omega^1_{B/A}\otimes_B C\longrightarrow\Omega^1_{E/A}\otimes_E C
+\]
+为同构。
+
+$(iii)$ 下列三个条件等价：
+
+$a)$ $\delta_{C/B/A}$ 有左逆；
+
+$b)$ 对每个 $C$-模 $L$，一个以 $L$ 为核的 $C$ 的交换 $A$-扩张，若通过 $u:B\to C$ 的逆像为 $A$-平凡扩张，则该扩张本身为 $A$-平凡扩张；
+
+$c)$ $E=B/\mathfrak k^2$ 是以 $\mathfrak k/\mathfrak k^2$ 为核的 $C$ 的一个 $A$-平凡扩张。
+
+$(iv)$ $\delta_{C/B/A}$ 的左逆与典范映射 $E\to C$ 的 $A$-代数同态右逆之间存在典范双射。
+
+$(i)$ 因为 $u$ 满射，$\Der_B(C,L)=0$。记结构同态 $A\to B$ 为 $v$，则（20.2.3.1）变为
+\begin{equation}
+\begin{aligned}
+0\longrightarrow\Der_A(C,L)&\xrightarrow{u^0}\Der_A(B,L)
+ \xrightarrow{\partial}\Exalcom_B(C,L)\xrightarrow{v^1}\\[-.3em]
+ &\Exalcom_A(C,L)\xrightarrow{u^1}\Exalcom_A(B,L).
+\end{aligned}
+\tag{20.5.12.2}
+\end{equation}
+由（18.3.8），有典范同构
+\[
+ \eta:\Hom_C(\mathfrak k/\mathfrak k^2,L)
+ \xrightarrow{\sim}\Exalcom_B(C,L).
+\]
+结合（20.4.8）得到
+\begin{equation}
+\begin{aligned}
+0\longrightarrow\Hom_C(\Omega^1_{C/A},L)&\longrightarrow
+ \Hom_C(\Omega^1_{B/A}\otimes_B C,L)\xrightarrow{\varphi}\\[-.3em]
+ &\Hom_C(\mathfrak k/\mathfrak k^2,L)
+ \xrightarrow{\psi}\Ker(u^1)\longrightarrow0.
+\end{aligned}
+\tag{20.5.12.3}
+\end{equation}
+在将中间的 $\Hom$ 与导子识别后，$\varphi=\eta^{-1}\circ\partial$，$\psi=v^1\circ\eta$。按 $\partial$、$\eta$ 的定义，$\varphi$ 就是预复合 $\delta_{C/B/A}$ 的映射 $\Hom(\delta_{C/B/A},1_L)$。前四项组成的正合列对一切 $L$ 成立，因而（20.5.12.1）正合（Bourbaki，\textit{代数}，第二章，第3版，§2，第1目，定理1）。
+\cmt{I9-T08}{原文在（20.5.12.3）后写 $\varphi=\partial\circ\eta^{-1}$。由（18.3.8.1）可见 $\eta$ 的方向为 $\Hom\to\Exan$，故该复合次序不合源靶；正文改为 $\eta^{-1}\circ\partial$，并明确已经使用导子与 $\Hom$ 的识别。$\psi=v^1\circ\eta$ 保持不变。}
+
+$(ii)$ 将 $(i)$ 应用于理想 $\mathfrak k^2\subseteq B$，得到
+\begin{equation}
+ \mathfrak k^2/\mathfrak k^4\longrightarrow
+ \Omega^1_{B/A}\otimes_B E\longrightarrow\Omega^1_{E/A}\longrightarrow0.
+ \tag{20.5.12.4}
+\end{equation}
+再在 $E$ 上与 $C$ 张量，得到正合列
+\[
+ (\mathfrak k^2/\mathfrak k^4)\otimes_E C
+ \xrightarrow{\delta'}\Omega^1_{B/A}\otimes_B C
+ \longrightarrow\Omega^1_{E/A}\otimes_E C\longrightarrow0.
+\]
+对 $x,y\in\mathfrak k$，若 $\xi$ 为 $xy$ 模 $\mathfrak k^4$ 的类，则
+\[
+ \delta'(\xi\otimes1)=d_{B/A}(xy)\otimes1
+ =(x\,d_{B/A}y+y\,d_{B/A}x)\otimes1=0,
+\]
+因为 $x,y$ 在 $C$ 中的像为零。这样的积生成 $\mathfrak k^2$，故 $\delta'=0$，遂得 $(ii)$。
+
+$(iii)$ 由 $(i)$，$a)$ 等价于
+\begin{equation}
+0\longrightarrow\mathfrak k/\mathfrak k^2
+ \xrightarrow{\delta_{C/B/A}}\Omega^1_{B/A}\otimes_B C
+ \xrightarrow{u_{C/B/A}}\Omega^1_{C/A}\longrightarrow0
+\tag{20.5.12.5}
+\end{equation}
+正合且分裂。由（20.5.12.3），这又等价于对所有 $L$ 有 $\Ker(u^1)=0$，也就是 $b)$。
+
+$b)\Rightarrow c)$：$E$ 通过 $u$ 的逆像是 $A$-平凡的，因为 $u$ 分解为 $B\to E\to C$（18.1.6）。
+
+$c)\Rightarrow b)$：每个以 $L$ 为核的 $C$ 的 $B$-扩张都 $B$-等价于沿某个 $w:\mathfrak k/\mathfrak k^2\to L$ 从 $E$ 推出的扩张（18.3.8）。它的类为 $E$ 的类经 $w_*$ 的像。利用（18.3.6.5）的交换图
+\[
+\begin{tikzcd}[column sep=large]
+ \Exalcom_B(C,\mathfrak k/\mathfrak k^2)\arrow[r,"w_*"]\arrow[d,"v^1"']&\Exalcom_B(C,L)\arrow[d,"v^1"]\\
+ \Exalcom_A(C,\mathfrak k/\mathfrak k^2)\arrow[r,"w_*"']&\Exalcom_A(C,L),
+\end{tikzcd}
+\]
+若 $E$ 的 $A$-扩张类为零，则其每个推出的 $A$-扩张类亦为零。结合（20.5.12.2）的正合性，得到 $b)$。
+
+$(iv)$ 由（20.1.7），$E\to C$ 的 $A$-同态右逆，典范地对应于满足 $D|_{\mathfrak k/\mathfrak k^2}=1$ 的导子
+$D\in\Der_A(E,\mathfrak k/\mathfrak k^2)$。再由（20.4.8），它们对应于 $E$-同态
+\[
+ h:\Omega^1_{E/A}\longrightarrow\mathfrak k/\mathfrak k^2
+\]
+使复合 $\mathfrak k/\mathfrak k^2\to\Omega^1_{E/A}\xrightarrow{h}\mathfrak k/\mathfrak k^2$ 为恒等。由于目标是 $C$-模，$h$ 唯一对应于
+\[
+ \Omega^1_{E/A}\otimes_E C\longrightarrow\mathfrak k/\mathfrak k^2.
+\]
+其与 $\delta_{C/E/A}$ 的复合为恒等。由 $(ii)$ 的典范识别，$\delta_{C/E/A}$ 对应于 $\delta_{C/B/A}$，故得所需双射。
+
+\egas{20.5.13}{例}
+设 $B=A[X_\alpha]_{\alpha\in I}$，$\mathfrak k$ 为 $B$ 的理想，$(P_\lambda)$ 为其一组生成元，$C=B/\mathfrak k$。由（20.4.13，i），$\Omega^1_{B/A}$ 为以各 $dX_\alpha$ 为基的自由 $B$-模，故 $\Omega^1_{B/A}\otimes_B C$ 为以相同符号为基的自由 $C$-模。$\delta_{C/B/A}$ 的像由
+\[
+ dP_\lambda=\sum_\alpha
+ \overline{\frac{\partial P_\lambda}{\partial X_\alpha}}\,dX_\alpha
+\]
+生成，其中横线表示在 $C$ 中取像，每个和只有有限个非零项。因此 $\Omega^1_{C/A}$ 就是这个自由 $C$-模除以所有 $dP_\lambda$ 生成的子模。由于任意 $A$-代数都能以这种方式表示，这给出任意代数的微分模的一种描述。
+
+\egas{20.5.14}{推论}
+沿用（20.5.12）的商表示。若 $C$ 在离散拓扑下对 $A$ 形式光滑，则序列
+\begin{equation}
+0\longrightarrow\mathfrak k/\mathfrak k^2
+ \xrightarrow{\delta_{C/B/A}}\Omega^1_{B/A}\otimes_B C
+ \xrightarrow{u_{C/B/A}}\Omega^1_{C/A}\longrightarrow0
+\tag{20.5.14.1}
+\end{equation}
+正合且分裂。
+
+因为此时以任意 $C$-模为核的交换 $A$-扩张均平凡（19.4.4.1），可应用（20.5.12，iii）。
+
+\egas{20.5.15}{备注}
+设 $u:A\to B$ 为满环同态。则对任意环同态 $v:B\to C$，典范同态
+\begin{equation}
+ u_{C/B/A}:\Omega^1_{C/A}\longrightarrow\Omega^1_{C/B}
+ \tag{20.5.15.1}
+\end{equation}
+双射。这由（20.5.7.1）的正合性及 $\Omega^1_{B/A}=0$（20.4.12）得到。

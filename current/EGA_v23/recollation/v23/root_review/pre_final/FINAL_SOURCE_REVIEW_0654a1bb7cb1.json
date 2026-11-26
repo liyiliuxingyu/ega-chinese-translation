@@ -1,0 +1,76 @@
+{
+  "edition": 23,
+  "reviewed_at_utc": "2026-11-26T03:13:54.577460+00:00",
+  "reviewer": "root",
+  "status": "full_read_and_independent_mathematical_review_of_these_five_sources_passed",
+  "files": [
+    {
+      "source_path_at_review": "contributions/setup/v23_section15_setup.tex",
+      "bytes": 11186,
+      "sha256": "201a971aa174aa618a4ed2b3aa925c91182117d1716cac53d17d9e0adc006d21",
+      "scope_read_in_full": "continuous translation and corrections, first half",
+      "new_cmt_count": 15,
+      "new_audit_count": 0
+    },
+    {
+      "source_path_at_review": "contributions/setup/v23_section15_setup_audit.tex",
+      "bytes": 18506,
+      "sha256": "240eb816b4f62ca2c359c42ed5db08d45eef6e7d2886124a9ede205d7f1d70e0",
+      "scope_read_in_full": "six setup mathematical and textual audits",
+      "new_cmt_count": 0,
+      "new_audit_count": 6
+    },
+    {
+      "source_path_at_review": "contributions/smoothness/v23_section15_smoothness.tex",
+      "bytes": 8568,
+      "sha256": "7fe9357f60d1bda1243ae2fe81cc12279946f5dd4ebaadfd02b1890554ea28b6",
+      "scope_read_in_full": "continuous translation and corrections, second half",
+      "new_cmt_count": 12,
+      "new_audit_count": 0
+    },
+    {
+      "source_path_at_review": "contributions/smoothness/v23_section15_smoothness_audit.tex",
+      "bytes": 14898,
+      "sha256": "aa53c8be5bd9138317aa5ded569999cfc3b9c411320d22d39a4f635e5fd465eb",
+      "scope_read_in_full": "six smoothness mathematical and textual audits",
+      "new_cmt_count": 0,
+      "new_audit_count": 6
+    },
+    {
+      "source_path_at_review": "EGA_v23/reports/v23_integration_audit.tex",
+      "bytes": 6538,
+      "sha256": "ee5558769cd9b8392c0b02a2ba1c8638d33ed3b956cb79e5a2f8442c94b7d296",
+      "scope_read_in_full": "three integration audit entries",
+      "new_cmt_count": 0,
+      "new_audit_count": 3
+    }
+  ],
+  "actual_source_visual_evidence": "SOURCE_VIEW_EVIDENCE.json",
+  "actual_primary_references": "PRIMARY_REFERENCES_CHECKED.json",
+  "independent_checks": [
+    "Finite type hypothesis is separated from arbitrary fibre-product construction.",
+    "Nonempty m-dimensional closed-subset axiom does not follow from initial smoothness; dense constructible image U and a closed m-dimensional W meeting U make the general dominance argument valid.",
+    "Mixed-dimensional generic intersection dimension is the maximum over surviving irreducible components; the disjoint union P1 and A2 example satisfies the hypotheses and disproves the original unrestricted formula.",
+    "Initial geometrically irreducible but nonreduced G need not yield a regular generic-section morphism; the dual-numbers example disproves the unconditional local regularity equivalence. G reduced at its generic point suffices for the stated regular-morphism premise.",
+    "Unramifiedness must concern the fibre morphism or incidence morphism j. The standard point-line incidence example disproves the original total-projection ramification locus.",
+    "A smooth fibre alone does not ensure smoothness over a nonreduced parameter base. The explicit dual-number parameter example disproves the original bad-locus estimate while leaving the generic smoothness conclusion true.",
+    "With smooth P and X, the incidence spaces are reduced and factor through G_red; a common generic-flat open permits the corrected closed bad locus, tangent transversality, quasi-finite fibre estimates and the uniform dimension argument.",
+    "Chevalley, generic flatness, regular morphisms and other cited primary statements were actually opened and matched to their uses.",
+    "Negative or zero dimension edge cases and nonpure smooth X are explicitly scoped.",
+    "The author's unproved generalization plans, missing object, recoverable English transcription omissions and older unresolved manuscript gaps remain distinctly attributed."
+  ],
+  "corrections_during_root_review": [
+    "Required the general reducible max formula in the main text, not only in a note.",
+    "Clarified that q,p,f, not all structural arrows, are identities in the dual-numbers example.",
+    "Removed standalone note placement risks by asking notes to attach to prose.",
+    "Caught and corrected literal ,quad in the setup audit display.",
+    "Unified the generic incidence notation mathcal X_eta in the integration audit."
+  ],
+  "new_maintext_notes_count": 27,
+  "new_report_entries_count": 15,
+  "limits": [
+    "This is review of the identified new edition-23 sources, not a complete re-audit of all inherited mathematics.",
+    "No claim here that all variants 2.1--2.11 or 2.12--2.18 have been individually proved.",
+    "Final combined PDF rendering, build and publication verification are separate pending operations; this record does not assert their completion."
+  ]
+}

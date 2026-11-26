@@ -1,0 +1,123 @@
+{
+  "edition": 20,
+  "date": "2026-11-25",
+  "time_zone": "Asia/Shanghai",
+  "status": "build_and_review_verified",
+  "all_books_finished": false,
+  "current_project": "current/EGA_v20",
+  "base_commit": "997597a5476cb07338a9b2feef61077ae795774e",
+  "base_project": "current/EGA_v19",
+  "integrated_existing_dot_batches": [
+    69,
+    70,
+    71,
+    72,
+    73,
+    74,
+    75,
+    76,
+    77,
+    78,
+    79,
+    80,
+    81,
+    82,
+    83,
+    84,
+    85,
+    86,
+    87,
+    88,
+    89,
+    90,
+    91,
+    92,
+    93,
+    94,
+    95,
+    96,
+    97,
+    98,
+    99,
+    100,
+    101,
+    102,
+    103,
+    104,
+    105,
+    106,
+    107,
+    108
+  ],
+  "dot_candidates_consulted_this_round": [
+    117,
+    118,
+    119
+  ],
+  "immutable_newer_dot_source": "archive_supplement_20261125/dot",
+  "recollated_this_round": {
+    "work": "EGA V preparatory manuscript, first essay",
+    "range": "Entire section12",
+    "french_physical_pages": "64–73; 67/68 are duplicate scans, translated once",
+    "english_physical_pages": "43 middle–48 end",
+    "classification": "Recollation and correction of existing translation; not from-scratch translation of new book pages"
+  },
+  "next": {
+    "work": "EGA V first essay §13 title and definition13.1",
+    "french_physical_page": 74,
+    "english_physical_page": 49,
+    "existing_source": "continuations/v20_section13_inherited.tex"
+  },
+  "other_unfinished_branch": "EGAIV.1 physical221 synopsis,222–223 introduction,223 (1.1.1)",
+  "technical_checks": {
+    "source_records": 186,
+    "inherited_source_files_unchanged": 177,
+    "previous_project_actually_read_this_run": true,
+    "section13_exact_inherited_bytes": 33351,
+    "dot_modules_input_once": 40,
+    "current_section12_footnotes": 47,
+    "book_pages": 1216,
+    "report_pages": 431,
+    "all_modular_vs_single_pages_text_dimensions_and_72dpi_pixels_equal": true,
+    "actual_visual_sample_pages": 45,
+    "all_pdf_pages_human_reviewed": false,
+    "fatal_log_errors": 0,
+    "overfull_boxes": 0,
+    "nonfatal_log_diagnostics": [
+      {
+        "name": "main",
+        "overfull": 0,
+        "underfull": 49,
+        "font_warnings": 4,
+        "bookmark_token_warnings": 0
+      },
+      {
+        "name": "report",
+        "overfull": 0,
+        "underfull": 60,
+        "font_warnings": 4,
+        "bookmark_token_warnings": 14
+      },
+      {
+        "name": "single_build/book_single",
+        "overfull": 0,
+        "underfull": 49,
+        "font_warnings": 4,
+        "bookmark_token_warnings": 0
+      },
+      {
+        "name": "single_build/audit_single",
+        "overfull": 0,
+        "underfull": 60,
+        "font_warnings": 4,
+        "bookmark_token_warnings": 14
+      }
+    ],
+    "evidence": "ARTIFACTS.json; checks/current_*.json; checks/visual_verification_summary.json"
+  },
+  "publication": {
+    "repository": "https://github.com/liyiliuxingyu/ega-chinese-translation",
+    "release_tag": "v20-20261125",
+    "record_status": "Frozen before upload. Actual remote import/publication must be established by root EDITION_20_IMPORT.json, the workflow result, remote tag and release PACKAGE_VERIFICATION.json, not inferred from this local file."
+  }
+}

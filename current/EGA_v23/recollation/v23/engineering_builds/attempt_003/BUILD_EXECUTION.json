@@ -1,0 +1,28 @@
+{
+  "edition": 23,
+  "command": [
+    "bash",
+    "/workspace/scratch/a886fd56dd2f/v23_work/build_runs/attempt_003/rebuild_main_only.sh"
+  ],
+  "cwd": "/workspace/scratch/a886fd56dd2f/v23_work/EGA_v23",
+  "reason": "Suppress parent input endline at same-paragraph setup/smoothness boundary; all five mathematical sources and standalone TeX bytes unchanged.",
+  "started_at_utc": "2026-11-26T03:24:57.250147+00:00",
+  "finished_at_utc": "2026-11-26T03:26:22.881671+00:00",
+  "elapsed_seconds": 85.632,
+  "exit_code": 0,
+  "stdout_file": "build_stdout.log",
+  "rebuilt_targets": [
+    "main"
+  ],
+  "reused_unchanged_targets": [
+    "report",
+    "single_build/book_single",
+    "single_build/audit_single"
+  ],
+  "pdf_sha256": {
+    "main": "9396741a30df30bc5950e3cae1a7c3b9f809351eed777797c59d382c3aa9f3de",
+    "report": "611f26e969163d63dcae1645bed7625abce3750e1a791d59954dcf6a44da8985",
+    "single_build/book_single": "7c6a970254d9bb9bcc1f81d0581edc85a6e80c78c3d10addd24cf4f07ddb7639",
+    "single_build/audit_single": "8014efb246cbaa771643bdb0a8aee3f69ea9c398b53898ab25e0297a0d979f7f"
+  }
+}

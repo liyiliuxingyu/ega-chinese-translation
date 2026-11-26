@@ -1,0 +1,45 @@
+obtained (with the help) using the diﬀerent C ∈Grassm+1(S) and more generally the ones
+obtained after a base change T →S for the points ξ ∈Grassm+1(P)
+XT ←−−−−e
+X(Cξ) = XT (Cξ)
+y
+y
+T
+←−−−−
+Q(Cξ)
+as deduced by base change ξ: T →Grassm+1J(P) = T, of the universal diagram (relative
+to the canonical point of Grassm+1 in T):
+XT ←−−−−e
+X(C)
+y
+y
+T
+←−−−−Q(C)
+where C is the canonical linear subvariety of PT . Then the above e
+X(Cη) →Q(Cη) is
+nothing else but the morhism of the generic ﬁbers for the T morphism e
+X(C) →Q(C)
+of the latter diagram and every constructible property for the morhism of generic ﬁbers
+implies the same property for neighboring ﬁbers.
+From the notational point of view,
+Q should be considered (and even introduced) as the name of the natural morphism of
+functors Grassm+1(P) →Subschemes of Grassm(P).
+§15 Axiomatization of certain of the previous results
+I think overall, tht results of No. 2 to 8 which are all mostly true under more general
+conditions than for the family of hyperplanes (or for hypersurfaces of given degree) in
+projective space.
+It seems to me proper to adopt an axiomatic point of view.
+I am
+not quite sure right now if we can make a generalization in this sense of Bertini-Zariski
+(therefore of the result sof No. 4 and 6) and I have written to the (competent people
+Tr) authorities on this subject (Serre-Zariski) to ask them if they had a knowledge of
+such an extension. I have anyway the impression in eﬀect that the hypotheses of simple
+diﬀerential nature of the type of those given above should suﬃce to imply Bertini-Zariski.
+If the (experts) competent people cannot inform us in a satisfactory manner, we should
+try to clear the matter up by our own means. We start from a commutative diagram of
+morphisms of ﬁnite presentation
+P ←−−−−P
+y
+y
+S ←−−−−G
+59

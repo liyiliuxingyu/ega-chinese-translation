@@ -1,0 +1,408 @@
+{
+  "schema_version": 1,
+  "edition": 22,
+  "generated_at_utc": "2026-11-26T01:29:09.955821+00:00",
+  "method": "Actual PDF outline and extracted text; not a declaration of image viewing",
+  "pdfs": {
+    "main": {
+      "path": "main.pdf",
+      "pages": 1216,
+      "sha256": "bc4c27cc042e1e1e9ddef4b0152369d491876dc0e81fa357110025ea68d77504"
+    },
+    "report": {
+      "path": "report.pdf",
+      "pages": 503,
+      "sha256": "4cced0b1907d27f0806a74d3ad525016bc002e191165674c5c687a2dd1a2b53c"
+    }
+  },
+  "main": {
+    "section_heading_start_pages": [
+      {
+        "title": "§13 初等态射与 M. Artin 定理",
+        "physical_page": 1064
+      },
+      {
+        "title": "§14 锥投影",
+        "physical_page": 1073
+      },
+      {
+        "title": "§15 前述若干结果的公理化",
+        "physical_page": 1083
+      }
+    ],
+    "frontmatter": {
+      "scope_description_pages": [
+        3,
+        4,
+        5
+      ],
+      "following_blank_page": 6,
+      "table_of_contents_physical_page_range": [
+        7,
+        20
+      ]
+    },
+    "new_module_first_paragraph_pages": {
+      "geometry": 1073,
+      "fibers": 1076,
+      "differential": 1079
+    },
+    "new_module_narrative_page_ranges": {
+      "geometry": [
+        1073,
+        1076
+      ],
+      "fibers": [
+        1076,
+        1079
+      ],
+      "differential": [
+        1079,
+        1082
+      ]
+    },
+    "new_section14_narrative_page_range": [
+      1073,
+      1082
+    ],
+    "new_section14_including_all_footnote_text_page_range": [
+      1073,
+      1083
+    ],
+    "interfaces": {
+      "section13_14_shared_page": 1073,
+      "section15_heading_page": 1083,
+      "section14_final_footnote_continues_on_section15_page": {
+        "note_id": "V22-DIF016",
+        "start_page": 1082,
+        "continuation_page": 1083,
+        "continuation_opening": "是子预概形函子的语言"
+      }
+    },
+    "new_footnote_marker_pages": {
+      "V22-GEO001": [
+        1073
+      ],
+      "V22-GEO002": [
+        1074
+      ],
+      "V22-GEO003": [
+        1074
+      ],
+      "V22-GEO004": [
+        1074
+      ],
+      "V22-GEO005": [
+        1074
+      ],
+      "V22-GEO006": [
+        1075
+      ],
+      "V22-GEO007": [
+        1075
+      ],
+      "V22-GEO008": [
+        1075
+      ],
+      "V22-GEO009": [
+        1075
+      ],
+      "V22-GEO010": [
+        1075
+      ],
+      "V22-GEO011": [
+        1076
+      ],
+      "V22-FIB001": [
+        1076
+      ],
+      "V22-FIB002": [
+        1076
+      ],
+      "V22-FIB003": [
+        1076
+      ],
+      "V22-FIB004": [
+        1076
+      ],
+      "V22-FIB005": [
+        1077
+      ],
+      "V22-FIB006": [
+        1077
+      ],
+      "V22-FIB007": [
+        1077
+      ],
+      "V22-FIB008": [
+        1077
+      ],
+      "V22-FIB009": [
+        1078
+      ],
+      "V22-FIB010": [
+        1078
+      ],
+      "V22-FIB011": [
+        1078
+      ],
+      "V22-FIB012": [
+        1079
+      ],
+      "V22-FIB013": [
+        1079
+      ],
+      "V22-FIB014": [
+        1079
+      ],
+      "V22-DIF001": [
+        1079
+      ],
+      "V22-DIF002": [
+        1080
+      ],
+      "V22-DIF003": [
+        1080
+      ],
+      "V22-DIF004": [
+        1080
+      ],
+      "V22-DIF005": [
+        1080
+      ],
+      "V22-DIF006": [
+        1080
+      ],
+      "V22-DIF007": [
+        1080
+      ],
+      "V22-DIF008": [
+        1081
+      ],
+      "V22-DIF009": [
+        1081
+      ],
+      "V22-DIF010": [
+        1081
+      ],
+      "V22-DIF011": [
+        1081
+      ],
+      "V22-DIF012": [
+        1081
+      ],
+      "V22-DIF013": [
+        1082
+      ],
+      "V22-DIF014": [
+        1082
+      ],
+      "V22-DIF015": [
+        1082
+      ],
+      "V22-DIF016": [
+        1082
+      ]
+    },
+    "distinct_new_footnote_markers": 41
+  },
+  "report": {
+    "frontmatter": {
+      "scope_description_page": 3,
+      "table_of_contents_physical_page_range": [
+        5,
+        20
+      ]
+    },
+    "audit_item_start_pages": [
+      {
+        "id": "V22-INT01",
+        "physical_page": 21,
+        "title": "V22-INT01 实际接续点与逐段范围",
+        "method": "actual_PDF_bookmark"
+      },
+      {
+        "id": "V22-INT02",
+        "physical_page": 22,
+        "title": "V22-INT02 原错、转写错与补证的分界",
+        "method": "actual_PDF_bookmark"
+      },
+      {
+        "id": "V22-INT03",
+        "physical_page": 23,
+        "title": "V22-INT03 源码保留、构建与交接",
+        "method": "actual_PDF_bookmark"
+      },
+      {
+        "id": "V22-GEO-E01",
+        "physical_page": 26,
+        "title": "V22-GEO-E01 法英文本的订正归属",
+        "method": "actual_PDF_bookmark"
+      },
+      {
+        "id": "V22-GEO-E02",
+        "physical_page": 26,
+        "title": "V22-GEO-E02 商函子及闭浸入",
+        "method": "actual_PDF_bookmark"
+      },
+      {
+        "id": "V22-GEO-E03",
+        "physical_page": 27,
+        "title": "V22-GEO-E03 截面唯一性、关联图和拉回层",
+        "method": "actual_PDF_bookmark"
+      },
+      {
+        "id": "V22-GEO-E04",
+        "physical_page": 28,
+        "title": "V22-GEO-E04 仿射丛与向量丛的区别",
+        "method": "actual_PDF_bookmark"
+      },
+      {
+        "id": "V22-GEO-E05",
+        "physical_page": 29,
+        "title": "V22-GEO-E05 一般中心与无限域的量词",
+        "method": "actual_PDF_bookmark"
+      },
+      {
+        "id": "V22-FIB-E01",
+        "physical_page": 31,
+        "title": "V22-FIB-E01：法英对照与错误归属",
+        "method": "actual_PDF_text_heading"
+      },
+      {
+        "id": "V22-FIB-E02",
+        "physical_page": 32,
+        "title": "V22-FIB-E02：一般中心的正则性与爆破识别",
+        "method": "actual_PDF_text_heading"
+      },
+      {
+        "id": "V22-FIB-E03",
+        "physical_page": 33,
+        "title": "V22-FIB-E03：14.1(a) 原泛纤维条件不足的反例",
+        "method": "actual_PDF_text_heading"
+      },
+      {
+        "id": "V22-FIB-E04",
+        "physical_page": 34,
+        "title": "V22-FIB-E04：订正14.1 及14.2 的独立补证",
+        "method": "actual_PDF_text_heading"
+      },
+      {
+        "id": "V22-FIB-E05",
+        "physical_page": 35,
+        "title": "V22-FIB-E05：14.3 的分支限制与完整CM 补证",
+        "method": "actual_PDF_text_heading"
+      },
+      {
+        "id": "V22-FIB-E06",
+        "physical_page": 37,
+        "title": "V22-FIB-E06：CM 条件不能换成纯粹维数条件",
+        "method": "actual_PDF_text_heading"
+      },
+      {
+        "id": "V22-DIF-E01",
+        "physical_page": 39,
+        "title": "V22-DIF-E01 原稿、手改与英文转写的归属",
+        "method": "actual_PDF_bookmark"
+      },
+      {
+        "id": "V22-DIF-E02",
+        "physical_page": 40,
+        "title": "V22-DIF-E02 14.4(a)的两个缺失条件",
+        "method": "actual_PDF_bookmark"
+      },
+      {
+        "id": "V22-DIF-E03",
+        "physical_page": 41,
+        "title": "V22-DIF-E03 14.4(b)的有效部分与手写加强句",
+        "method": "actual_PDF_bookmark"
+      },
+      {
+        "id": "V22-DIF-E04",
+        "physical_page": 42,
+        "title": "V22-DIF-E04 14.5任意闭点处平展的反例",
+        "method": "actual_PDF_bookmark"
+      },
+      {
+        "id": "V22-DIF-E05",
+        "physical_page": 42,
+        "title": "V22-DIF-E05 14.5的订正范围与独立补证",
+        "method": "actual_PDF_bookmark"
+      },
+      {
+        "id": "V22-DIF-E06",
+        "physical_page": 44,
+        "title": "V22-DIF-E06 14.6与由泛中心到一般中心",
+        "method": "actual_PDF_bookmark"
+      },
+      {
+        "id": "V22-DIF-E07",
+        "physical_page": 44,
+        "title": "V22-DIF-E07 作者关于非浸入、非非分歧的警告",
+        "method": "actual_PDF_bookmark"
+      },
+      {
+        "id": "V22-DIF-E08",
+        "physical_page": 45,
+        "title": "V22-DIF-E08 保存与未决边界",
+        "method": "actual_PDF_bookmark"
+      }
+    ],
+    "scope_ranges": [
+      {
+        "name": "integration",
+        "physical_pages": [
+          21,
+          22,
+          23,
+          24
+        ],
+        "blank_following_page": 24
+      },
+      {
+        "name": "geometry",
+        "physical_pages": [
+          25,
+          26,
+          27,
+          28,
+          29,
+          30
+        ]
+      },
+      {
+        "name": "fibers",
+        "physical_pages": [
+          31,
+          32,
+          33,
+          34,
+          35,
+          36,
+          37,
+          38
+        ],
+        "blank_following_page": 38
+      },
+      {
+        "name": "differential",
+        "physical_pages": [
+          39,
+          40,
+          41,
+          42,
+          43,
+          44,
+          45,
+          46
+        ],
+        "blank_following_page": 46
+      }
+    ],
+    "topical_audit_items": 19,
+    "integration_audit_items": 3,
+    "historical_edition21_divider_page": 47,
+    "actual_last_page": 503,
+    "contents_granularity": "The six V22-FIB-E headings are actual PDF text headings, not PDF-outline entries; their chapter is in the outline."
+  }
+}

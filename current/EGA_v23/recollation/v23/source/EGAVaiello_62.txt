@@ -1,0 +1,41 @@
+Part II [Tr]
+§16 New EGA V
+New # Singular and supersingular set of a function and diﬀerential criteria
+This No. will be used in Par. 20 of hyperplane sections but its natural place is I think
+[Grothendieck] in Par. 16.
+Deﬁnition 1. Let X be a regular prescheme φ a section of OX. A point x ∈X is called
+a singular zero (or root) of φ if we have φx ∈m2
+X, it is called a supersingular zero if it
+is a singular zero (or root) and if in addition the element of m2
+X/m3
+X ∼= Sym(mX/m2
+X)
+which it deﬁnes interpreted as a quadratic form on the dual tx of mX/m2
+X over k(x) is a
+degenerate form. (A singular zero (or root) which is not supersingular is sometimes called
+an ordinary singular zero.)
+Remarks 2. If x ∈V (φ) then x is a non-singular zero of φ if and only if φx ̸= 0 and x
+is a non-singular point, i.e. x is a regular point of V (φ), i.e. if and only if x is a regular
+point of V (φ) and V (φ) ̸= X in a neighborhood of x.
+Deﬁnition 3. Let X be a smooth prescheme over a ﬁeld k, φ a section of OX, x ∈V (φ).
+We say that x is a geometrically singular (resp. geometrically supersingular) zero of φ
+relative to k if for every extension k′ of k and every point ξ of X with values in k, localized
+at x, the corresponding point x′ of X′
+k is a singular zero (resp. supersingular) of φ′
+k.
+Remark 4.
+a) From the criterion that will be developed later it follows that in Deﬁnition 3 it suﬃces
+to test with a single point with values in a k′ we can for example take k′ = k(x) or
+k(x) and the canonical point with values in such k′.
+b) It follows from Remark 2 that x is geometrically non-singular for φ if and onlyif φx ̸= 0
+and V (φ) is smooth at x.
+c) Let us suppose that we have a prescheme X smooth over another one Y a section φ of
+OX and an x ∈V (φ) then we say that x is a singular zero (or supersingular) relative
+to Y if it is such relative to k(s) over the ﬁber Xs (s being the image of x in Y ).
+d) Under the conditions of Deﬁnition 1, we see at once that the singularity resp. super-
+singularity of an x ∈V (φ) for φ is not modiﬁed if we replace φ by φ′ = uφ where u is
+a unit at x. It follows, furthermore, that Deﬁnition 1 and consequently also Deﬁnition
+3 can be extended in an evident way to the case where φ is a section of an invertible
+module L (in a way so that to reproduce the initial deﬁnition for L = OX). Let X be
+a prescheme smooth over another one Y and let φ be a section of OX whence a section
+62

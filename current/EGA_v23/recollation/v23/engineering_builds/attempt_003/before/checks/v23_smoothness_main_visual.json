@@ -1,0 +1,42 @@
+{
+  "schema_version": 1,
+  "edition": 23,
+  "reviewer": "/root/v23_smoothness",
+  "review_method": "actual_image_view",
+  "document": "main",
+  "pdf": {
+    "path": "main.pdf",
+    "sha256": "7de3aee3cb4e924a06ed99dcca3cf38c89ed74941c084b38787d07d6600fbf22"
+  },
+  "rendering": {
+    "renderer": "PyMuPDF",
+    "scale": 1.65,
+    "colorspace": "RGB",
+    "alpha": false
+  },
+  "reviewed_at_utc": "2026-11-26T03:23:01.606695+00:00",
+  "scope": "Only physical pages 1086–1088 of the actual integrated edition-23 main PDF, including the first-half/latter-half junction. Each final full-page RGB render was actually displayed and inspected. The isolated preview was not substituted.",
+  "pages": [
+    {
+      "physical_page": 1086,
+      "image": "checks/visual_v23/smoothness/main_1086.png",
+      "image_sha256": "86b0ae29a41a3830eccb4b7b6f009fa3ef3586021445ed8aaa9b4a2b01c5cdeb",
+      "verdict": "pass",
+      "notes": "实际查看完整页：前半末句及 SET015 脚注与后半正文连续衔接；三项好条件和切映射公式全部可辨；E(x,V) 的维数界显示完整。SMO003 贴在列表前的语句，未出现单独占行的脚注标号；页底五条脚注未溢出或碰撞。"
+    },
+    {
+      "physical_page": 1087,
+      "image": "checks/visual_v23/smoothness/main_1087.png",
+      "image_sha256": "302de7e85da15053c9bb9242504b70842c4e1328db5ac65a3202e2dbfa4ec3f0",
+      "verdict": "pass",
+      "notes": "实际查看完整页：G_red 上共同泛平坦开集论证跨页续句正常；tilde f、j_U、dim E 估计及 E_eta 为空的公式完整；SMO007 附在估计前的句子。恢复的 2.12 至 2.18 句、7.1/7.2/7.3 无撇号的正文及六条脚注排版可辨，无裁切或重叠。"
+    },
+    {
+      "physical_page": 1088,
+      "image": "checks/visual_v23/smoothness/main_1088.png",
+      "image_sha256": "11000a5b04174ec8aaa226d1eb55bd5a58f164e04f9743fae06fafd869113272",
+      "verdict": "pass",
+      "notes": "实际查看完整页：7.4 续句、第3/6节待推广状态、8.7(c) 否定与建议口吻均完整保留；SMO011、012 位于页底且与对应正文连接，脚注线及页眉页码正常；章尾空白由短末段和页底脚注组成，无遗漏符号或额外正文。"
+    }
+  ]
+}

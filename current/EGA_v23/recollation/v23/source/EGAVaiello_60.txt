@@ -1,0 +1,38 @@
+(in the case of the principal application P is a projective ﬁbration, G a deduced grassmanian
+(grasmanienne-adjective!)68 P the incidence prescheme. In the most important cases the
+corresponding morphism P →PS × G should be a closed immersion and we consider G as
+a parameter scheme of a family of closed ﬁber subpreschemes of P over S, more precisely if
+ξ ∈G then Pξ is a closed subprescheme of Ps, k(ξ) where s is the point of S over ξ besides
+for most statements in this context we have no doubt S = Spec(k).) In the general case
+we may again consider G as a parameter scheme of a family of preschemes over the ﬁbers
+of P over S with ξ corresponding to Pξ over Ps, k(ξ). Of course, in place of taking for ξ
+a point (absolute) of G we may also take a point with values in an S-prescheme T, and
+we obtain then Pξ →BT (T morphism which si a closed immersion in the case presented
+above).
+If f: X →P is a morphism we put X = XP × P and we obtain a diagram of the same
+type as the preceding square.
+X ←−−−−X
+y
+y
+S ←−−−−G
+It is therefore evident that all the questions studied in No. 2 to 8 preserve a meaning in
+the general context that we just enunciated and there is a good reason to69 the axiomatic
+conditions that insure the conclusions drawn in the above Nos.
+We will assume that P and G are ﬂat over S, G being with geometrically irreducible
+ﬁbers (to be able to consider the generic points!) of dimension N, the morphism P →P is
+assumed to be smooth with geometrically irreducible ﬁbers of dimension N −m. Therefore
+the morphism X →X has the same properties. All the properties mentioned [(illegible
+and long)]70 are stable under base change (preserved by) over S and can in particular be
+applied to the ﬁbers.
+Let us assume initially S = Spec(k). Let Z be a closed subset of X of dim d so that
+its inverse image Z in X is a closed subset of dimension d + (N −m) = N + d −m. If
+d < m then Z is of dimension < N so that Z →G cannot be dominant therefore if η is
+a generic point of G we have Zη = φ; indeed this reasoning shows even (by replacing Z
+by f(Z)) tht if dim f(X) < m then Zη = φ. We want a condition on (D) insuring that if
+dim f(Z) ≥m then Zη ̸= φ. It seems that when it must form a primitive axiom in this
+situation (in the setting of No. 2.2 it would result from a global argument rather (quite)
+special) for every closed irreducible subset Z of P of dimension m, Zη = φ.
+68possibly grassmanian ﬁbration [Tr].
+69Fr degager + unravel, make explicit ?? [Tr]
+70illegible later
+60

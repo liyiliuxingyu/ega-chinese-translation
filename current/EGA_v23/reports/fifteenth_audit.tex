@@ -1,0 +1,277 @@
+\head{第十五版：22.6—22.7译校核查}
+\source{用户上传第四卷第一部分，原分册第205--213页；作者清单三见第四卷第四部分第346页}
+
+\section*{范围与结论分层}
+\addcontentsline{toc}{section}{范围与结论分层}
+本轮从（22.6.1）连续译至（22.7.7，ii）末尾，共17个原著编号条目，其中包括引理（22.7.2.4）。
+这使第0章§22的正文连续译完；§23尚未译入。
+本报告记录四组需要实质处理的问题：张量目标错误、任意扩域导致的诺特性缺失、不可分底域下的Jacobian判据适用范围，以及原反例中的单位与不可约性问题。
+这四组问题不是四个核心Jacobian定理被推翻；分别有明确的校订、范围限制或反例修补。
+
+正文采用本轮核实的表述，原写法与修改依据置于脚注。原作者的正式勘误、底本识读、译者分析与外部交叉核对分开登记。
+本轮没有重新审定旧稿全部判断；特别是历史报告中原有的待核事项，不因合订而变为已解决。
+
+\begin{longtable}{@{}p{.18\linewidth}p{.20\linewidth}p{.52\linewidth}@{}}
+\toprule 标识&位置&处理性质\\\midrule\endhead
+O15-E01&22.6.2&典范映射的目标错误；改用商环 $C_\lambda$，给出修订判据。\\
+O15-E02&22.6.7，ii d&任意扩域后的环可以不诺特；改为有限扩域的等价判据。\\
+O15-E03&22.6.9，i&不能把前条（iii）的Jacobian条件原样推广到不可分系数域。\\
+O15-E04&22.7.7，ii&原幂级数是单位；移去常数项并重证素性、可分性及判据失败。\\
+O15-T01&22.7.3&作者已刊出的核记号和张量底环勘误；正文落实。\\
+O15-G01&22.7.2&展开导子连续性、配对矩阵及由稠密到相等的步骤。\\
+O15-N05/06&22.7.3--4&明确底域线性与预先指定的子域族；补出复合域族的交。\\
+\bottomrule
+\end{longtable}
+
+\audit{O15-E01}{余切映射的张量目标}{确证的公式错误及相应修订}
+\oldauditsrc{原分册第205--206页，（22.6.2）}
+前一定理给出的同态是
+\[
+ \delta:\mathfrak J/\mathfrak J^2\longrightarrow\Omega^1_{B/A}\otimes_BC,
+ \qquad C=B/\mathfrak J.
+\]
+原文令 $B_\lambda=B/\mathfrak b_\lambda$，却把与 $B_\lambda$ 张量后的目标写为
+$\Omega^1_{B/A}\otimes_BB_\lambda$。
+按照张量积的结合律，正确的目标是
+\[
+ (\Omega^1_{B/A}\otimes_BC)\otimes_BB_\lambda
+ \simeq\Omega^1_{B/A}\otimes_BB/(\mathfrak J+\mathfrak b_\lambda).
+\]
+只有在另有 $\mathfrak J\subseteq\mathfrak b_\lambda$ 时，才能把最后的商环换成 $B_\lambda$。
+原文并没有这一假设；特别是 $\mathfrak J$-预进制拓扑中的 $\mathfrak b_\lambda=\mathfrak J^n$ 一般也不满足它。
+
+\lead{检验例}
+取离散环 $A=\mathbb Q$、$B=\mathbb Q[x]$、$\mathfrak J=(x)$、$\mathfrak b_\lambda=0$。
+$B/A$ 与 $C=\mathbb Q$ 对 $A$ 都形式光滑；原文其他拓扑条件也都成立。
+原目标为 $B\,dx$，原源为 $\mathfrak J/\mathfrak J^2\simeq B/(x)$。
+若 $h:B/(x)\to B\,dx$ 是 $B$-线性映射，则
+\[
+ xh(\overline1)=h(x\overline1)=0.
+\]
+由于 $B\,dx$ 无 $x$-挠元，$h(\overline1)=0$，故每个这样的映射都为零，不可能左可逆。
+直接把 $\overline f$ 映到 $df$ 也不是良定义的：$x$ 与 $x+x^2$ 给出同一余类，微分却相差 $2x\,dx$。
+
+\lead{修订及证明}
+令 $C_\lambda=B/(\mathfrak J+\mathfrak b_\lambda)$。则
+\[
+ (\mathfrak J/\mathfrak J^2)\otimes_CC_\lambda
+ \longrightarrow\Omega^1_{B/A}\otimes_BC_\lambda
+\]
+才是张量所得的典范映射。商拓扑的开理想基本系为 $(\mathfrak b_\lambda C)$；
+原文关于诱导模拓扑的假设，使（19.1.7）适用于上述两个 $C$-模。
+所以“形式左可逆”恰等价于这些模每个基本开理想之后的映射左可逆，仍得到（22.6.2，i）的等价条件。
+对定义理想的判据（ii）由同样的投射商模性质及（19.1.9）给出。
+在检验例中，修订映射就是 $\mathbb Q\overline x\to\mathbb Q\,dx$，确为同构。
+
+\audit{O15-E02}{任意扩域不保证诺特性}{原量词过强；有限扩域版本成立}
+\oldauditsrc{原分册第207--208页，（22.6.7，ii d）；第50页，（17.3.6）}
+（17.3.6）明确把“正则环”定义在诺特环范围内。
+（22.6.7）只要求 $k/k_0$ 可分、$C$ 为有限型 $k$-代数，没有要求 $k/k_0$ 有限生成。
+因此“$C$ 有限型于 $k$”不能替代“$C$ 有限型于 $k_0$”。
+
+\lead{反例的构造}
+取 $k_0=\mathbb Q$，$k=\mathbb Q(t_1,t_2,\ldots)$，$C=k$。
+$C$ 是秩一的有限型 $k$-代数。它作为 $\mathbb Q$-代数形式光滑：
+多项式环 $\mathbb Q[t_1,t_2,\ldots]$ 的任意平方零提升问题可逐个选择变量的提升，
+而局部化所要取逆的元素在平方零商中为单位时，其任意提升仍为单位，故提升延拓到分式域。
+
+取原文允许的扩域 $k'=k$，置 $R=k\otimes_{\mathbb Q}k$，考虑乘法映射 $\mu:R\to k$，$I=\Ker\mu$。
+对角理想的标准描述（20.4.4--20.4.8）给出
+\[
+ I/I^2\simeq\Omega^1_{k/\mathbb Q}
+ =\bigoplus_{n\ge1}k\,dt_n.
+\]
+右端无限维。若 $R$ 诺特，$I$ 必为有限生成理想，$I/I^2$ 因而是有限型 $R/I=k$-模，矛盾。
+所以原 d）在一个满足 a）的例子上已经失败。
+
+\lead{为何有限扩域修订正确}
+若 $k'/k_0$ 有限，则 $C\otimes_{k_0}k'$ 是有限型 $C$-模，因而诺特。
+其每个局部环均由某个 $C_{\mathfrak p}\otimes_{k_0}k'$ 局部化得到。
+反过来，$C_{\mathfrak p}\otimes_{k_0}k'$ 是 $C\otimes_{k_0}k'$ 的局部化。
+因此对所有有限扩域检测正则性，与对全部 $C_{\mathfrak p}$ 检测（19.6.5）中的几何正则性等价。
+再用（22.5.8），正得到（22.6.7）其余各条件。
+这并不反驳有限型 $k_0$-代数在任意扩域后的通常几何正则性结论；该较强有限型假设在原条目中不存在。
+
+\audit{O15-E03}{不可分系数域下不能原样使用前条的Jacobian矩阵}{推广的适用范围错误}
+\oldauditsrc{原分册第208页，（22.6.9，i）}
+原文把“（22.6.7）的陈述”整体推广到有限纯不可分重数的扩张。
+性质的等价性与开性可通过文中给出的扩域和下降路线处理，但（iii）直接使用的环境
+$B=k[T_1,\ldots,T_r]$ 不再一定对 $k_0$ 形式光滑；矩阵判据原样推广会漏掉底域上的障碍。
+
+\lead{非空Jacobian矩阵的反例}
+固定素数 $p$，取
+\[
+ k_0=\mathbb F_p(s),\qquad k=\mathbb F_p(u),\qquad u^p=s,
+ \qquad B=k[T],\quad\mathfrak J=(T),\quad C=k.
+\]
+在 $\mathfrak q=(T)$ 处，$f_1=T$ 生成 $\mathfrak J_{\mathfrak q}$，
+$D_1=\partial/\partial T$ 是 $k_0$-导子，且 $D_1f_1=1\notin\mathfrak q$。
+这不是利用空行列式的边界例。
+然而 $k/k_0$ 是非平凡纯不可分扩张，不形式光滑。
+
+\lead{直接的平方零提升障碍}
+令 $h(V)=V^p-s$，$G=k_0[V]/(h(V)^2)$，$I=(h)/(h^2)$。
+则 $I^2=0$、$G/I\simeq k$，且 $h$ 在 $G$ 中非零。
+若恒等映射 $k\to G/I$ 可提升，则 $u$ 的像为 $V+ha$，其中 $a\in G$。
+但
+\[
+ (V+ha)^p-s=V^p-s+h^pa^p=h\ne0,
+\]
+因为 $p\ge2$、$h^2=0$。这与 $u^p=s$ 矛盾。
+此外，该扩张确有有限纯不可分重数：取 $k'_0=k$，
+$k\otimes_{k_0}k\simeq k[\epsilon]/(\epsilon^p)$，其剩余域就是 $k$，对 $k'_0$ 可分。
+
+\lead{正文的处理}
+保留原文通过 $k'_0$、其阿廷张量积的系数域 $k'$ 及（19.4.7）下降的论证路线，
+明确其支持（i）、（ii）的性质判据。
+对Jacobian矩阵必须先选用对所测试底域形式光滑的环境；不能在系数域不可分时仍把任意 $k$-多项式环当成这种环境。
+这一校订没有把原著留给读者的下降细节冒充为原文写出的证明。
+
+\audit{O15-E04}{无限p次数反例中的单位与不可约性}{原例按字面失效；给出完整修补}
+\oldauditsrc{原分册第213页，（22.7.7，ii）}
+原文取 $k=\mathbb F_p(X_n)_{n\ge0}$、$A=k[[T,U]]$，并写
+\[
+ f_{\rm old}=U^p-\sum_{n=0}^{\infty}X_nT^{np}.
+\]
+它的常数项是 $-X_0\ne0$，故在 $A$ 中可逆。因而 $(f_{\rm old})=A$，不能取作素理想。
+原文又说“在 $k((T))[U]$ 中不可约，所以在 $k((T))[[U]]$ 中不可约”。
+即使先修正求和起点，这一步仍不成立：$g\ne0$ 在域 $k((T))$ 中可逆，所以 $U^p-g$ 在以 $U$ 为变量的该形式幂级数环中是单位。
+
+\lead{第一步：修正构造并证明素性}
+保留 $k$ 和 $A$，改置
+\[
+ R=k[[T]],\quad F=k((T)),\quad
+ g=\sum_{n=1}^{\infty}X_nT^{np},\quad f=U^p-g.
+\]
+$g\in TR$，所以 $f$ 是 $R[[U]]$ 中的首一Weierstrass多项式。
+Weierstrass除法给出 $A/(f)\simeq R[U]/(f)$，后者由 $1,U,\ldots,U^{p-1}$ 自由生成。
+又 $F^p=k^p((T^p))$，而系数 $X_n\notin k^p$，故 $g\notin F^p$，$f$ 在 $F[U]$ 中不可约。
+$R[U]/(f)$ 是无挠 $R$-模，故嵌入 $F[U]/(f)$；后者为域，前者因此为整环。
+所以 $\mathfrak q=(f)$ 是 $A$ 的素理想。
+其分式域为 $E=F(u)$，$u^p=g$；取 $\mathfrak p=\mathfrak q$ 时，$B_{\mathfrak p}=E$。
+
+\lead{第二步：证明E对k可分，而不是仅仅对F可分}
+$E/F$ 明明是纯不可分扩张，不能由此断言 $E/k$ 不可分：这里 $F/k$ 不是代数扩张，底域改变十分关键。
+由（21.9.6.4），$F/k$ 可分，因此
+\[
+ \Omega^1_k\otimes_kE\longrightarrow\Omega^1_F\otimes_FE
+\]
+单射。所有绝对微分都相对于素域 $\mathbb F_p$。
+多项式商的微分表示给出
+\[
+ \Omega^1_E\simeq
+ \bigl((\Omega^1_F\otimes_FE)\oplus E\,du\bigr)/(E\,dg).
+\]
+这里 $d(u^p-g)=-dg$，没有 $du$ 项。
+故从 $\Omega^1_F\otimes_FE$ 到 $\Omega^1_E$ 的核是 $E\,dg$。
+
+任意 $\omega\in\Omega^1_k\otimes_kE$ 都可写成有限和 $\sum_{n\in S}a_n\,dX_n$。
+若其像等于 $\lambda dg$，取 $N\ge1$ 且 $N\notin S$。
+在 $k$ 上的导子 $\partial/\partial X_N$ 逐系数延拓为 $F$ 的导子，并满足
+\[
+ \frac{\partial g}{\partial X_N}=T^{Np},\qquad
+ \frac{\partial X_n}{\partial X_N}=0\quad(n\in S).
+\]
+将所对应的 $F$-线性微分泛映射与 $E$ 张量，得到一个 $E$-线性映射
+$\Omega^1_F\otimes_FE\to E$。
+应用它得到 $\lambda T^{Np}=0$，从而 $\lambda=0$、$\omega=0$。
+注意这里不需要把 $\partial/\partial X_N$ 延拓为 $E$ 的导子；使用的是张量后的线性映射。
+于是 $\Omega^1_k\otimes_kE\to\Omega^1_E$ 单射。由（20.6.3），$E/k$ 可分，因而 $E/k$ 形式光滑（19.6.1）。
+
+\lead{第三步：所有所需Jacobian矩阵仍退化}
+任意 $k$-导子 $D:A\to A$ 对极大理想 $\mathfrak m=(T,U)$ 都满足
+$D(\mathfrak m^{n+1})\subseteq\mathfrak m^n$，所以连续，并有
+\[
+ D=D(T)\frac{\partial}{\partial T}+D(U)\frac{\partial}{\partial U}.
+\]
+由于 $\partial f/\partial T=\partial f/\partial U=0$，有 $D(f)=0$。
+对任意 $h=af\in\mathfrak q$，
+\[
+ D(h)=D(a)f+aD(f)\in\mathfrak q.
+\]
+因此任意由 $\mathfrak q$ 中元素和这些导子组成的Jacobian矩阵，模 $\mathfrak q$ 后为零矩阵。
+它不可能满足（22.7.3，b）的非零行列式条件。
+本例 $[k:k^p]=\infty$，其余用于反例的条件成立；故修补后仍证明原著要说明的结论：有限 $p$-次数假设不能直接删除。
+
+\audit{O15-T01}{作者正式勘误的落实}{已有正式修订，不计为译者新发现}
+\oldauditsrc{第四卷第四部分原分册第346页，清单三A部}
+与（22.7.3）直接相关的两项为：第一部分第212页倒数第21行，$\Ker(i)$ 改为 $\Ker(i_0)$；
+倒数第12行，$(\mathfrak p/\mathfrak p^2)\otimes_LL$ 改为 $(\mathfrak p/\mathfrak p^2)\otimes_AL$。
+本版按扫描页核读，正文已落实，并以 $i_0$ 统一未完备微分映射的记号。
+最后证明使用的是
+\[
+ \Ker i_0\subseteq\Ker i',\qquad
+ \dim_L\Ker i_0=\dim_L\Upsilon_{L/k}=\dim_L\Ker i'.
+\]
+这些空间有限维，所以包含与同维合起来才能推出两个核相等；单独的“秩相等”没有消去包含条件。
+
+\audit{O15-G01}{导子、完备微分与Jacobian矩阵}{原结论保留，补明所用步骤}
+\oldauditsrc{原分册第209--212页，（22.7.2）与（22.7.3）}
+在 $A=k[[T_1,\ldots,T_r]]$ 中，$D(\mathfrak m^{n+1})\subseteq\mathfrak m^n$ 来自Leibniz公式：
+每个长度 $n+1$ 的生成元乘积求导后，每项仍含至少 $n$ 个极大理想因子。
+由线性与有限生成表达，此包含对整个理想成立。
+因此 $D$ 连续；截断幂级数收敛到原级数，便得到 $D=\sum D(T_i)\partial/\partial T_i$。
+这解释了为何可以使用 $\widehat\Omega^1_{A/k}$ 的对偶。
+
+设 $F_1,\ldots,F_m$ 为自由模 $P$ 与剩余域张量后的一组线性无关向量。
+在 $P$ 的基下，它们组成秩 $m$ 的矩阵，所以有一个 $m$ 阶子式非零；
+选取相应的对偶坐标函数即可获得所需的 $D_j$。
+这里不必把任意剩余域系数随意提升成 $A$ 中的元素；用坐标子式就足够。
+反方向，配对矩阵可逆直接迫使这些向量线性无关，再结合 $f_i$ 的生成性才得到整个余切映射单射。
+
+另外，（20.7.20）最初只给出像在核中稠密。
+本处 $A$ 完备诺特、相关微分模有限生成，子模在极大理想进制拓扑中闭，才得到真正的正合列。
+译文没有把一般的稠密像无条件升级为正合性。
+
+\audit{O15-N05}{底域线性不能隐去}{术语与作用域澄清}
+原文 b$'$）称 $k'$ 为 $K_0$ 的子扩张，证明又使用 b$'$）推出 b）。
+必须保留相对于 $k$ 的线性条件。
+例如 $k=\mathbb F_p(s)$、$A=k[[T,U]]$、$f=T^p-sU^p$、$\mathfrak q=(f)$，取 $\mathfrak p=\mathfrak q$。
+这个首一多项式在 $k((U))[T]$ 中不可约，故相应商域含有 $T/U$，其 $p$ 次幂为 $s$，不是 $k$ 的可分扩张。
+因此 a）失败。但 $\partial/\partial s$ 是 $k^p$-导子，并有
+\[
+ (\partial/\partial s)(f)=-U^p\notin\mathfrak q.
+\]
+所以若把 b$'$）改读为“任意子域 $k'$ 的导子”，且不要求仍为 $k$-导子，就会产生错误的判据。
+正文用联合线性表述，并解释它与取复合中间域的等价性。
+
+\audit{O15-N06}{预先指定子域族的正确用法}{保留原子域族，补出复合域论证}
+在特征 $p>0$ 下，置 $F=K_0^p$、$E=kF$。
+由 $[k:k^p]<\infty$，$E/F$ 是有限的指数一纯不可分扩张。
+设原文给定的向下滤过子域族满足 $F\subseteq k_\alpha$、$[K_0:k_\alpha]<\infty$、$\bigcap k_\alpha=F$。
+令 $h_\alpha=kk_\alpha$，则这些是真正含 $k$ 的中间域，且仍有 $[K_0:h_\alpha]<\infty$。
+需要核实的关键是
+\[
+ \bigcap_\alpha h_\alpha=E.
+\]
+取 $E/F$ 的一组有限 $p$-基 $a_1,\ldots,a_s$。
+若 $z\in K_0\setminus E$，则 $a_1,\ldots,a_s,z$ 在 $F$ 上 $p$-无关：
+前 $s$ 个元素的单项式给出 $E/F$ 的基，而 $z^p\in F$、$z\notin E$，所以 $[E(z):E]=p$。
+应用（21.8.2）于这一有限族与 $(k_\alpha)$，可取某个 $\alpha$，使它仍在 $k_\alpha$ 上 $p$-无关。
+因此 $z\notin k_\alpha(a_1,\ldots,a_s)=h_\alpha$，证明所需的交等式。
+
+现在可把（21.9.6，ii）及（22.7.3）的秩论证用于 $(h_\alpha)$，获得对某个 $h_\alpha$ 线性的导子。
+它们同时是 $k$-导子与原来的 $k_\alpha$-导子。
+这样既保留了原文任意给定子域族的范围，也没有把“不含 $k$ 的子域上的线性”误当作“$k$-线性”。
+特征零时 $F=K_0$，子域族只可能由 $K_0$ 组成，无须上述论证。
+
+\section*{底本识读与外部交叉核对}
+\addcontentsline{toc}{section}{底本识读与外部交叉核对}
+（22.6.4）中 a$'$）、d）的 $C_{\mathfrak p}$ 在扫描页可见；抽取文本漏下标不算原著错误。
+（22.7.7）的 $n=0$ 求和起点及非零常数项已经对照扫描原页，不是仅凭OCR推测。
+
+外部交叉核对只用于两条标准框架，没有替代法文底本：
+Stacks Project，Tag 00TH，命题10.138.8给出形式光滑代数的余切正合列分裂判据；
+Tag 045K，定义10.166.2与引理10.166.1将诺特代数的几何正则性写成有限纯不可分或有限生成扩域判据。
+可核对 \url{https://stacks.math.columbia.edu/tag/00TH} 与
+\url{https://stacks.math.columbia.edu/tag/045K}。
+本报告的四组具体反例、修订步骤和子域族证明是本轮分析，不冒称这些网页已经讨论过原书的这些错误。
+
+\section*{覆盖与检查边界}
+\addcontentsline{toc}{section}{覆盖与检查边界}
+17个原编号条目及相应陈述、证明、注全部连续收入；保留12个原编号公式／交换图标签。
+两幅交换图均用TikZ-cd重排。翻译终点为（22.7.7，ii）最后一段；§23标题以下未算作本轮译文。
+原文省略的推广细节仍说明省略，原著的历史性“尚不知道”没有被当作当前研究状态。
+
+实际编译、日志与渲染结果以工程包 \texttt{checks/} 中本轮生成的记录为准。
+源码能够编译、编号未丢失及两种构建输出一致，不构成全书全部证明的独立数学审定。

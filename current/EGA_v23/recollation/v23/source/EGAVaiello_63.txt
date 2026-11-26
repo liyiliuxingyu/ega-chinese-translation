@@ -1,0 +1,60 @@
+d2
+X/Y φ of P 2
+X/Y , which reduces to a section of d1
+X/Y φ of P 1
+X/Y which itself reduces to
+a section d0
+φ = φ of PX/Y = OX. This assumed, we have:
+Proposition 5. The set of zeros of d0
+φ (resp. d1
+φ) is respectively equal to the set V (φ) of
+zeros of φ (resp. to the set V (φ)sing of singular zeros of φ relative to S). The ﬁrst assertion
+is trivial. The second one is nothing else but the Jacobian criterion or if one prefers it
+results from the canonical isomorhism mX/m2
+X ∼= Ω1
+X/k(x) since x is a point rational over
+k of a prescheme x over k.
+Let us note that gr1(P 1
+X/Y ) ∼= Ω1
+X/Y so that consequently the restriction d1φ
+V (φ)
+can be interpreted as a section of Ω1
+X/Y ⊗OV (φ) which is nothing else than the restriction
+of dX/Y φ to V (φ). We can therefore consider the prescheme of zeros of this section which
+we denote V (φ)sing, and whose underlying set is nothing else but the set of zeros of φ
+singular relative to Y by Proposition 5. (N.B. If Ψ is a section of a locally feee module E
+of ﬁnite type over a prescheme X, it deﬁnes in an obvious way; the prescheme of zeros of
+Ψ for example as deﬁned by the image ideal of EV →OX transpose of Ψ; if E = On
+X and
+Ψ = (Ψ1, . . . , Ψn) then this ideal is nothing else but ΣΨiOX which deﬁnes V (Ψ1, . . . , Ψn).
+Now taking the restriction d2φ
+V (φ)sing and noting that gr2(P 2
+X/Y ) ∼= Sym2(Ω1
+X/Y ), we
+ﬁnd a canonical section M(φ) of Sym2(Ω1
+X/Y ) ⊗Osing
+V
+. We verify immeditely (taking a
+point of X with value in a ﬁeld. . . ) that this section is precisely the one which determines
+the quadratic form given in Deﬁnition 1 (in the case of a Xk deduced from X/S by
+Spec(k) →S). We deduce a description of the set V (φ)sup sing in terms of this section in
+the following manner: interpreting M(φ) as deﬁning a homomorphism
+M(φ)′: GX/Y ⊗OX Osing
+V
+→Ω1
+X/Y ⊗OX Osing
+V
+we must take the set of points where this homomorphism is not an isomorphism. This
+proves in particular that V (φ)sup sing is a closed set. We can make the latter precise by
+introducing
+D(φ) = det M(φ) ∈Γ(Ωd
+X/Y )⊗2 ⊗Osing
+V
+and supposing that X has relative dimension d over Y at every point. We need to denote
+by V (φ)sup sing the closed subschemes of V (φ)sing therefore of X deﬁned by the vanishing of
+this section (of an invertible module here) thus the underlying set is that which is needed.
+It is proper to summarize this construction in a Proposition 6 (to be supplied by the editor
+[Tr]).
+In the general case we can say nothing more precise about V (φ)sing and V (φ)sup sing.
+We now examine the particular case interesting for some applications. We suppose that Y
+63

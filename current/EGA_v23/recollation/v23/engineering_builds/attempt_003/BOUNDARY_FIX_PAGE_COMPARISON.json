@@ -1,0 +1,67 @@
+{
+  "edition": 23,
+  "scope": "Actual all-page comparison before and after suppression of parent input endline. No image-view claim.",
+  "before_sha256": "7de3aee3cb4e924a06ed99dcca3cf38c89ed74941c084b38787d07d6600fbf22",
+  "after_sha256": "9396741a30df30bc5950e3cae1a7c3b9f809351eed777797c59d382c3aa9f3de",
+  "before_pages": 1216,
+  "after_pages": 1216,
+  "dpi": 72,
+  "differences": {
+    "text": [],
+    "page_size": [],
+    "pixels": [
+      1086
+    ]
+  },
+  "actual_review_image_rebinding_comparison_scale": 1.65,
+  "existing_review_images": {
+    "1083": [
+      {
+        "path": "checks/visual_v23/setup/main_1083.png",
+        "pixels_equal_new_final": true,
+        "old_image_sha256": "820b88006ef70eeb3120a466a3e104b97a8eb48977ebd868d80d9809efc8b289"
+      }
+    ],
+    "1084": [
+      {
+        "path": "checks/visual_v23/setup/main_1084.png",
+        "pixels_equal_new_final": true,
+        "old_image_sha256": "381bba2d6d57159e73375dd61155b5fd319476443e2fc0b64c3e0ec430036f95"
+      }
+    ],
+    "1085": [
+      {
+        "path": "checks/visual_v23/setup/main_1085.png",
+        "pixels_equal_new_final": true,
+        "old_image_sha256": "05625a506dae61035f7541679c0531b47ff0bf4657cf1d60de4e62f8e4ee97ff"
+      }
+    ],
+    "1086": [
+      {
+        "path": "checks/visual_v23/setup/main_1086.png",
+        "pixels_equal_new_final": false,
+        "old_image_sha256": "86b0ae29a41a3830eccb4b7b6f009fa3ef3586021445ed8aaa9b4a2b01c5cdeb"
+      },
+      {
+        "path": "checks/visual_v23/smoothness/main_1086.png",
+        "pixels_equal_new_final": false,
+        "old_image_sha256": "86b0ae29a41a3830eccb4b7b6f009fa3ef3586021445ed8aaa9b4a2b01c5cdeb"
+      }
+    ],
+    "1087": [
+      {
+        "path": "checks/visual_v23/smoothness/main_1087.png",
+        "pixels_equal_new_final": true,
+        "old_image_sha256": "302de7e85da15053c9bb9242504b70842c4e1328db5ac65a3202e2dbfa4ec3f0"
+      }
+    ],
+    "1088": [
+      {
+        "path": "checks/visual_v23/smoothness/main_1088.png",
+        "pixels_equal_new_final": true,
+        "old_image_sha256": "11000a5b04174ec8aaa226d1eb55bd5a58f164e04f9743fae06fafd869113272"
+      }
+    ]
+  },
+  "elapsed_seconds": 14.199
+}

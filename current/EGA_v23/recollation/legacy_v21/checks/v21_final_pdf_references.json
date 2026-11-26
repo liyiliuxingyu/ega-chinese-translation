@@ -1,0 +1,14 @@
+{
+  "main": {
+    "path": "main.pdf",
+    "sha256": "e1910166b502c3cf0da4cad59c3c3c44320aad054b55092b9af0a6c6950770ed",
+    "pages": 1216,
+    "mtime": "2026-11-26T00:03:00.146165+00:00"
+  },
+  "report": {
+    "path": "report.pdf",
+    "sha256": "f88d2cd3059fd75f7a86f9348ac272c2d975e68998e9ca714d3cfac56e8773f3",
+    "pages": 473,
+    "mtime": "2026-11-25T23:59:46.083828+00:00"
+  }
+}

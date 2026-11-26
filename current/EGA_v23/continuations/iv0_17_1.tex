@@ -1,0 +1,122 @@
+% EGAIV.1.pdf, PDF pp.38--41, printed pp.39--42.
+\section{正则环}
+\subsection{正则环的定义}
+\source{EGA IV 第一部分，印刷第39--42页；上传PDF第38--41页}
+
+\egas{17.1.1}{命题}
+设 $A$ 为维数 $n$ 的诺特局部环，$\mm$ 为其极大理想，$k=A/\mm$ 为其剩余域。以下条件等价：
+\begin{enumerate}[label=\alph*)]
+ \item 典范满的分次 $k$-模同态（15.1.1.1）
+ \[
+  \varphi:\Salg^\bullet(\mm/\mm^2)\longrightarrow\gr_\bullet A
+ \]
+ 是双射；这里右端是 $A$ 关于 $\mm$-预进制滤过的相伴分次 $k$-模。
+ \item $\rk_k(\mm/\mm^2)=n$。
+ \item $\mm$ 有一个由 $n$ 个元素组成的生成系。
+ \item $\mm$ 有一个生成系，它是 $A$-正则序列。
+\end{enumerate}
+\begin{proof}
+由Nakayama引理，$\rk_k(\mm/\mm^2)$ 等于生成 $\mm$ 所需的最少元素数，故b）与c）等价。另一方面，若 $(x_i)_{1\leq i\leq m}$ 生成 $\mm$，且它们的模 $\mm^2$ 类 $\overline x_i$ 组成 $\mm/\mm^2$ 的 $k$-基，则
+$\Salg^\bullet(\mm/\mm^2)\simeq k[T_1,\ldots,T_m]$。又任意有限型 $A$-模的 $\mm$-预进制滤过都是分离的（$0_{\mathrm I}$，7.3.5），所以由（15.1.9），a）与d）等价。由 $\mm$ 中元素组成的 $A$-正则序列长度至多为 $n$（16.4.1），故d）推出c）。
+
+只须证明c）推出a）。简记
+$S=\Salg^\bullet(\mm/\mm^2)=k[T_1,\ldots,T_n]$、$G=\gr_\bullet A$。考虑正合列
+\[
+ 0\longrightarrow\jj\longrightarrow S\xrightarrow{\varphi}G\longrightarrow0,
+\]
+其中 $\jj=\Ker\varphi$ 为 $S$ 的分次理想。对每个整数 $s>0$，
+\begin{equation}
+ \binom{s+n-1}{n-1}=\len(S_s)=\len(G_s)+\len(\jj_s).
+ \tag{17.1.1.1}
+\end{equation}
+若 $\jj\ne0$，则有 $\jj$ 中的齐次元 $u$，次数为 $h>0$。当 $s\geq h$ 时，$\jj_s$ 包含 $uS_{s-h}$；因为 $u\ne0$ 且 $S$ 为整环，$uS_{s-h}$ 与 $S_{s-h}$ 作为 $k$-向量空间同构。因此
+$\len\jj_s\geq\len S_{s-h}=\binom{s-h+n-1}{n-1}$，从而
+\begin{equation}
+ \len G_s\leq\binom{s+n-1}{n-1}-\binom{s-h+n-1}{n-1}
+ \qquad(s\geq h).
+ \tag{17.1.1.2}
+\end{equation}
+右端是次数至多为 $n-2$ 的关于 $s$ 的多项式。可是
+$G_s=\mm^s/\mm^{s+1}$；对于充分大的 $s$，$\len G_s$ 是次数恰为 $n-1$、首项系数为正的多项式（16.2.1）。这与（17.1.1.2）矛盾。
+\end{proof}
+
+\egas{17.1.2}{定义}
+满足（17.1.1）的等价条件的诺特局部环称为\textbf{正则局部环}。
+
+\egas{17.1.3}{推论}
+正则局部环是整环、整闭环，也是Cohen--Macaulay环。
+\begin{proof}
+最后一个断言由（17.1.1 d））得到。另一方面，若 $A$ 正则，则 $\gr_\bullet A\simeq k[T_1,\ldots,T_n]$，故为完全整闭的整环。于是 $A$ 也具有这两种性质（Bourbaki，\textit{交换代数}，第三章，§2，第3目，命题1的推论；第五章，§1，第5目，命题15）。
+\end{proof}
+
+\egas{17.1.4}{例}
+（i）维数零的正则局部环由（17.1.3）为整环，故必为域；反过来也成立。
+
+（ii）维数1的诺特局部环正则，当且仅当它是离散赋值环。事实上，维数1的诺特局部环正则，表示其极大理想是主理想；结论由Bourbaki，\textit{交换代数}，第六章，§3，第6目，命题9得到。
+
+（iii）设 $k$ 为域。形式幂级数环 $A=k[[T_1,\ldots,T_n]]$ 是维数 $n$ 的正则环。事实上，$T_i$（$1\leq i\leq n$）生成 $A$ 的极大理想 $\mm$，并组成 $A$-正则序列，因为
+\[
+ A/(T_1A+\cdots+T_iA)\simeq k[[T_{i+1},\ldots,T_n]].
+\]
+
+\egas{17.1.5}{命题}
+诺特局部环 $A$ 正则，当且仅当其完备化 $\widehat A$ 正则。
+\begin{proof}
+$\widehat A$ 的极大理想为 $\mm\widehat A$，且已知
+$\mm^h/\mm^{h+1}$ 与 $(\mm\widehat A)^h/(\mm\widehat A)^{h+1}$ 为同构的 $k$-向量空间。因此（17.1.1 a））对 $A$ 和 $\widehat A$ 是同一个条件。
+\end{proof}
+
+\egas{17.1.6}{定义}
+给定极大理想为 $\mm$ 的诺特局部环 $A$，称一个生成 $\mm$ 的 $A$ 的参数系（原文引（16.3.5））为 $A$ 的\textbf{正则参数系}。
+
+这样的参数系存在，当且仅当 $A$ 正则（17.1.1）。若 $(x_i)_{1\leq i\leq n}$ 为正则参数系，则它是 $\mm$ 的极小生成系，且其模 $\mm^2$ 类组成 $\mm/\mm^2$ 的 $k$-基。由（17.1.1 a））及（15.1.9），$(x_i)$ 为极大 $A$-正则序列，这也解释了术语的来源。
+
+但应注意：在正则环中，一个同时为 $A$-正则序列的参数系，不一定是正则参数系；正则参数系各元素的 $k$ 次幂给出例子（15.1.20）。\cmt{D4-H07}{“正则序列构成的参数系”与“生成极大理想的正则参数系”须区分。例如 $k[[t]]$ 中 $(t^2)$ 为正则序列和参数系，却不生成极大理想 $(t)$。这里的幂次反例应取 $k\geq2$；$k=1$ 时当然仍为原正则参数系。}
+
+\egas{17.1.7}{命题}
+设 $A$ 为诺特局部环，$\mm$ 为其极大理想，$k=A/\mm$ 为其剩余域，$(x_i)_{1\leq i\leq r}$ 为 $\mm$ 中元素的序列，$\jj=x_1A+\cdots+x_rA$。以下条件等价：
+\begin{enumerate}[label=\alph*)]
+ \item $A$ 正则，且 $x_i$ 为 $A$ 的正则参数系的一部分；
+ \item[$\mathrm a')$] $A$ 正则，且 $x_i$ 的模 $\mm^2$ 类 $\overline x_i$ 在 $k$ 上线性无关；
+ \item[\(\mathrm b)\)] $x_i$ 为 $A$ 的参数系的一部分，且 $A/\jj$ 为正则环。
+\end{enumerate}
+此外，在这些条件下，$\jj$ 是素理想。
+\begin{proof}
+最后的断言由 $A/\jj$ 正则从而为整环（17.1.3）得到。令 $n=\dim A$。a）与a'）的等价是直接的：正则参数系的模 $\mm^2$ 类构成 $\mm/\mm^2$ 的一组 $k$-基。反过来，若 $\overline x_1,\ldots,\overline x_r$ 线性无关，可在 $\mm$ 中取另外 $n-r$ 个元素 $x_i$（$r+1\leq i\leq n$），使全部 $\overline x_i$ 构成 $\mm/\mm^2$ 的基；则 $(x_i)_{1\leq i\leq n}$ 为正则参数系。
+
+为证明a）推出b），注意 $x_i$ 为参数系的一部分，故 $\dim(A/\jj)=n-r$（原文引（16.3.6））。令 $\mathfrak n=\mm/\jj$ 为 $A/\jj$ 的极大理想。因为 $\mathfrak n^2=(\mm^2+\jj)/\jj$，有正合列
+\begin{equation}
+ 0\longrightarrow(\mm^2+\jj)/\mm^2\longrightarrow\mm/\mm^2
+ \longrightarrow\mathfrak n/\mathfrak n^2\longrightarrow0.
+ \tag{17.1.7.1}
+\end{equation}
+a）表明 $\rk_k((\mm^2+\jj)/\mm^2)=r$，于是
+$\rk_k(\mathfrak n/\mathfrak n^2)=n-r=\dim(A/\jj)$。由（17.1.1 b））得到b）。
+
+反过来，假定b）。仍有 $\dim(A/\jj)=n-r$。$A/\jj$ 正则，故 $\rk_k(\mathfrak n/\mathfrak n^2)=n-r$；又
+$\rk_k((\mm^2+\jj)/\mm^2)\leq r$。由（17.1.7.1），
+$\rk_k(\mm/\mm^2)\leq r+(n-r)=n$。结合（16.2.6）和（17.1.1），$A$ 正则。此外，$\rk_k(\mm/\mm^2)=n$ 迫使
+$\rk_k((\mm^2+\jj)/\mm^2)=r$，所以 $\overline x_i$ 在 $k$ 上线性无关。
+\end{proof}
+
+\egas{17.1.8}{推论}
+设 $A$ 为诺特局部环，$\mm$ 为其极大理想，$t\in\mm$。以下条件等价：
+\begin{enumerate}[label=\alph*)]
+ \item $A/tA$ 正则，且 $t$ 在 $A$ 中不是零因子；
+ \item $A$ 正则且 $t\notin\mm^2$。
+\end{enumerate}
+这是（17.1.7）在 $r=1$ 时的情形，并用到 $\mm$ 中的非零因子为参数系的一部分（16.4.1）。
+
+\egas{17.1.9}{推论}
+设 $A$ 为正则局部环，$\mm$ 为其极大理想，$\jj\subset\mm$ 为理想。以下条件等价：
+\begin{enumerate}[label=\alph*)]
+ \item $A/\jj$ 正则；
+ \item $\jj$ 由为 $A$ 的某个正则参数系的一部分的序列 $(x_i)_{1\leq i\leq r}$ 生成。
+\end{enumerate}
+\begin{proof}
+b）推出a）已由（17.1.7）证明。反过来，假定 $A/\jj$ 正则，所以 $\jj$ 是素理想。令 $n=\dim A$、$n-r=\dim(A/\jj)$。沿用（17.1.7）的记号，由（17.1.7.1）得到
+$\rk_k((\mm^2+\jj)/\mm^2)=r$。故可选取 $\jj$ 中元素 $x_1,\ldots,x_r$，为 $A$ 的正则参数系的一部分。
+
+令 $\jj'=x_1A+\cdots+x_rA$。由（17.1.7），$\jj'$ 为素理想，且 $A/\jj'$ 是维数 $n-r$ 的正则环。但是
+$A/\jj=(A/\jj')/(\jj/\jj')$，而 $\jj/\jj'$ 为整环 $A/\jj'$ 的素理想。因此由（16.1.2.2），$A/\jj$ 与 $A/\jj'$ 维数相等只能在 $\jj=\jj'$ 时发生。
+\end{proof}

@@ -1,0 +1,64 @@
+{
+  "recorded_utc": "2026-11-26T03:15:40.640492+00:00",
+  "reviewer": "/root/v23_setup",
+  "reviewed_owner": "/root/v23_smoothness",
+  "reviewed_sources": [
+    {
+      "path": "/workspace/scratch/a886fd56dd2f/v23_work/contributions/smoothness/v23_section15_smoothness.tex",
+      "bytes": 8568,
+      "sha256": "7fe9357f60d1bda1243ae2fe81cc12279946f5dd4ebaadfd02b1890554ea28b6"
+    },
+    {
+      "path": "/workspace/scratch/a886fd56dd2f/v23_work/contributions/smoothness/v23_section15_smoothness_audit.tex",
+      "bytes": 14898,
+      "sha256": "aa53c8be5bd9138317aa5ded569999cfc3b9c411320d22d39a4f635e5fd465eb"
+    }
+  ],
+  "scope": "Full read-only review of SMO001–012 and B01–06 against French physical pages 93–94 and English physical page 61.",
+  "source_images_actually_viewed": [
+    {
+      "path": "evidence/fr93_full.png",
+      "bytes": 452378,
+      "sha256": "cb9ac681cd4fcad62ab6d9ff52601976db3f9f1d97970de8c6c048d6695feb60"
+    },
+    {
+      "path": "evidence/fr94_full.png",
+      "bytes": 393670,
+      "sha256": "a4f5bb8a5a92bbb1e6c2723b10e32833d56a44c9cea027d7d565e40c3aa90210"
+    },
+    {
+      "path": "evidence/en61.png",
+      "bytes": 230614,
+      "sha256": "30f6631869ec5b37ffec6f949ca60d1d63a46e8520e843ffa71dd2b9f8780ae2"
+    }
+  ],
+  "mathematical_checks": [
+    "The original smooth projection q cannot be the unramified map when N−m>0; the point-line incidence counterexample meets all initial and bad-parameter axioms.",
+    "The fiber map q_xi is unramified at z iff the incidence map j is unramified there, via base change for relative differentials and Nakayama.",
+    "The three good fiber conditions are simultaneous; their failure is not simultaneous failure of all three.",
+    "For fixed x,V, flattening strata and the rank condition on V-perp to relative differentials give constructibility; the dimension inequality remains an independent axiom.",
+    "The Frobenius example correctly separates regularity of a field from smoothness over its ground field.",
+    "In the smooth-P and smooth-X part, mathcal P and mathcal X are smooth over k and therefore reduced. Their maps factor through G_red and the displayed base change identifications are valid.",
+    "The nonreduced-parameter counterexample satisfies the fiberwise bad-parameter axiom yet fails flatness everywhere; generic flatness over G_red gives a common nonempty open U for the two families.",
+    "On U, tangent transversality gives smooth fiber products. Quasi-finiteness bounds bad-point fibers by bad-parameter images, and the componentwise generic fiber dimension argument supplies the uniform bound dim E≤N−1.",
+    "The local-property regularity condition established in the front half is not replaced by the later smoothness conclusion.",
+    "French 2.12–2.18, 7.3 without prime, and the negation and (c) in both 8.7(c) mentions were checked in actual page images."
+  ],
+  "reference_pages_opened": [
+    {
+      "url": "https://stacks.math.columbia.edu/tag/0H3Y",
+      "result": "finite generic flatness stratification supports B03"
+    },
+    {
+      "url": "https://stacks.math.columbia.edu/tag/01V9",
+      "result": "flatness plus smooth fiber is the precise relative smoothness criterion in B04/B05"
+    },
+    {
+      "url": "https://stacks.math.columbia.edu/tag/05F6",
+      "result": "generic fiber dimension is constant on a nonempty open; supports B05 counting"
+    }
+  ],
+  "decision": "Pass; no additional source or mathematical correction requested.",
+  "modifications_to_reviewed_files": false,
+  "not_claimed": "No independent proof of every historical analogue 2.12–2.18 or 4/5/7. No recovery of the unfinished object after Il faut une condition sur. No final integrated rendering approval."
+}

@@ -1,0 +1,108 @@
+% EDITION20_COLLATION: first essay, section 12 opening only.
+% French physical64--66, ending before "La proposition 2.1. se transpose".
+% English physical/printed43--44. Replaces DOT-MIDDLE BATCH01--02 only.
+% The author's text, English editorial remarks, and translator checks remain distinct.
+\egasection{§12\quad 将前面的结果推广到线性截面}
+\source{法文手稿物理第64--66页前段；对读\texttt{EGAVaiello.pdf}物理及印刷第43--44页。第二十版逐段回校；本模块止于命题2.1的推广指示之前}
+
+% V20-12O-P01: French64, "Compléments de notations" through Grass^n.
+\subsec{记号补充}
+若 $P=\mathbf P(E)$，其中 $E$ 是任意拟凝聚模，则另记
+\[
+\operatorname{Grass}_n(P)=\operatorname{Grass}_{n+1}(E).
+\]
+这样，$\operatorname{Grass}_n(P)$ 对应于 $P$ 中相对维数为 $n$ 的线性子簇。约定维数 $-1$ 表示空子簇，则这一记法对 $n\geq-1$ 都适用。
+
+若 $E$ 局部自由且秩有限，也宜引入
+\[
+\operatorname{Grass}^{n}(P)
+=\operatorname{Grass}_{n-1}(P^\vee)
+=\operatorname{Grass}_{n}(E^\vee),
+\]
+它对应于 $P$ 中相对余维为 $n$ 的线性子簇。\cmt{D20-12O-01}{沿用第11节的 $P^\vee=\mathbf P(E^\vee)$ 以及有限秩对偶约定。法文在“局部自由”之后划去未写完的“de rang”（“秩为”）；此处明确所用的有限秩范围。下标对 $P$ 表示相对维数，对 $E$ 表示局部自由商的秩；上标表示相对余维。若 $E$ 秩为 $r$，则 $0\leq n\leq r-1$ 对应非空线性子簇，$n=r$ 对应按约定赋予维数 $-1$ 的空子簇。旧注D17-M001的这一说明继续成立，原注全文另存本节核查报告。}
+
+% V20-12O-P02: French64, rank r+1 then the new rank r convention.
+若 $E$ 的秩为 $r+1$，即 $P$ 的相对维数为 $r$，则有典范同构\ednote{英文在 $r+1$ 后附“字迹不清，请询问 A.G.”；法文第64页的 $r+1$ 及下一行的相对维数 $r$ 均可辨。右缘连接字受裁边影响，正文只译出两者的关系。}
+\[
+\operatorname{Grass}^{n}(P)\simeq\operatorname{Grass}_{r-n}(P).
+\]
+以下重新固定 $E$ 为秩 $r$ 的局部自由模。我们研究 $P$ 中给定相对余维 $m$ 的线性子簇，因而考虑\cmt{D20-12O-02}{法文第64页明确写“codimension donnée $m$”，并确实从前句的秩 $r+1$ 改取秩 $r$。英文第43页把“余维”误译为“given dimension $m$”；旧D17-M002所说的这项错误仅属于英译，不能归给法文。两处 $r$ 的重新约定均保留，不把前句的相对维数 $r$ 沿用到以下构造。}
+\[
+\Gr^{m}=\Gr^{m}(P)=\operatorname{Grass}_{m}(E^\vee).
+\]
+
+% V20-12O-P03: French64, universal quotient and incidence functor.
+在这个预概形上，因而有一个典范的、局部自由且秩为 $m$ 的商模 $G$：\cmt{D20-12O-03}{法文第64页在“商”之后手添 $G$，但仍保留打字的“soit $F$”（“记为 $F$”）；商的底模排作 $E_{\Gr}$，其上未见可确认的对偶号。英文也保留这两处不协调。由紧前的 $\Gr^m=\operatorname{Grass}_m(E^\vee)$，泛商应来自 $E^\vee$，其对偶才是 $E$ 的子模；正文据此写成 $E^\vee_{\Gr^m}\twoheadrightarrow G$，并统一使用下文的 $G$。不把未辨清的微小笔迹当作法文已补足对偶号的证据。旧D17-M003原文保存在报告中。}
+\[
+E^\vee_{\Gr^{m}}\twoheadrightarrow G.
+\]
+乘积 $P\times_S\Gr^{m}$ 上的自然关联预概形，表示乘积函子的下述子函子：其取值于 $S'$ 的对象是一对数据，由一条 $P_{S'}\to S'$ 的截面，以及 $P_{S'}$ 中一个包含该截面像的余维 $m$ 线性子簇组成。\cmt{D20-12O-04}{法文第64页两次写出的乘积均可读为 $P\times_S\Gr^m$，截面和线性子簇也都用 $S'$ 作底标。英文第43页第一次把乘积排成“$P_X\,X\Gr^m$”，并混排 $S,S'$。旧D17-M004的订正适用于这些英文错误；法文此处没有先引入尚未定义的 $X$。}
+
+% V20-12O-P04: French64, the two composite homomorphisms and the section.
+这个关联预概形可如下显式描述。取
+\[
+T=P\times_S\Gr^{m},
+\]
+或者，若愿意，取该乘积上的任意预概形 $T$。在 $T$ 上，有 $E_T$ 的商模 $\mathcal O_T(1)$，以及它的局部直和因子子模 $G_T^\vee$。考虑诸典范同态的复合
+\[
+G_T^\vee\longrightarrow E_T\longrightarrow\mathcal O_T(1).
+\]
+经转置，它也对应于从 $E_T^\vee$ 的子模 $\mathcal O_T(-1)$ 到商模 $G_T$ 的类似复合同态：\cmt{D20-12O-05}{法文第64页与英文第43页的说明文字都把转置后的商写作 $G_T^\vee$，但紧随的显示箭头均明确指向 $G_T$，随后截面也属于 $G_T(1)$。正文按对偶关系订正目标；这是法文已有的不协调，不只是英文转写错误。$\mathcal O_T(1)$ 指沿 $T\to P$ 拉回的可逆模；泛商列局部分裂，故 $G_T^\vee$ 确为 $E_T$ 的局部直和因子。}
+\[
+\mathcal O_T(-1)\longrightarrow E_T^\vee\longrightarrow G_T.
+\]
+它还可以看作由 $G_T(1)$ 的一个截面所定义：
+\[
+\phi^m\in\Gamma\bigl(T,G_T(1)\bigr).
+\]
+
+% V20-12O-P05: French65 opening, zero prescheme and the notation H^(m).
+于是，关联预概形（相应地，它在 $T$ 中的逆像）无非就是上述任一个同态的零点预概形，也就是截面 $\phi^m$ 的零点预概形。\cmt{D20-12O-06}{保留旧D17-M006的概形层面说明：局部平凡化 $G_T$ 与 $\mathcal O_T(1)$ 后，两个同态和该截面均由同一组 $m$ 个系数给出，三个零点预概形都由这些系数生成的理想定义。因而这里不只是几何点集合相同；亦没有额外断言这些系数在任意基变换后仍为正则列。报告中在任意检验预概形上核验此构造。}
+可以把这个关联预概形记作 $H^{(m)}$；取 $m=1$，便恢复第1节中的那个关联预概形。
+
+% V20-12O-P06: French65, Y^(m), Y^m_xi and the meaning of linear sections.
+若 $X$ 是 $P$ 上的预概形，可置
+\[
+Y^{(m)}=X\times_P H^{(m)}.
+\]
+当 $\xi$ 是 $\Gr^m$ 的一个 $S'$-值点时，同样定义记号
+\[
+Y^m_\xi=Y^{(m)}\times_{\Gr^m,\,\xi}S'.
+\]
+这样，各个 $Y^m_\xi$ 就是 $P$ 上的 $X$（更准确地说，是 $P_{S'}$ 上的 $X_{S'}$）被 $P$（相应地，$P_{S'}$）中余维 $m$ 的线性子簇所截得的“线性截面”。\cmt{D20-12O-07}{法文第65页首次引入记号时只写 $Y^m$，下一行才写 $Y^m_\xi$；英文也如此。正文补齐下标，显示纤维积式只是把原定义展开。法稿手添的“在 $P$ 上”及“在 $P_{S'}$ 上”均已译入。若对应的线性子簇为 $L_\xi\subseteq P_{S'}$，则 $Y^m_\xi=X_{S'}\times_{P_{S'}}L_\xi$；任意态射 $X\to P$ 都可使用这一构造，不要求 $X$ 嵌入 $P$。旧D17-M007的这一限制继续保留。}
+
+% V20-12O-P07: French65, the author's notational self-criticism.
+我借此机会对记号作一番自我批评，这段话也可以从第1节起就写出。问题在于：为了表示与 $X$ 对应的对象 $Y$，任意把字母 $Y$ 与 $X$ 配在一起；这样，一旦 $X$ 改成 $Z$，就不大清楚该改用什么字母了。这种不便已经使我在中途采用过一些彼此不一致的记号。
+
+也许，这里带有整数 $m$ 的稍一般的情形提示了一个合理办法：用 $X^{(m)}$ 代替 $Y^{(m)}$，从而用 $X^{(1)}$ 代替第1节的 $Y$。这样，大体说来……迭代截取的记号便可以与余维相加相协调。\cmt{D20-12O-08}{法文第65页明确把这写成“à peu de choses près”（“大体说来”）的记号设想；可辨左式为 $X^{(m)(m')}$，右式从 $X^{(m+m}$ 起而末端受扫描裁边影响。英文第44页完整排作 $X^{(m)(m_1)}=X^{m+m_1}$。正文保留作者的试拟语气，不把这条等式当作普遍族的同构：若先选一个截面，再在其中截取，通常保留中间线性子簇的旗标数据；一次选取总余维截面则不保留。例如在 $\mathbf P^2$ 中，点线旗标到点的遗忘映射有 $\mathbf P^1$ 纤维。旧D17-M008的原式和说明完整保存在报告中。}
+我将在下文试用这个记号。显然，这个上标本身也可以受到批评，因为代数几何中常用上标表示所讨论的簇的维数。不过，我们从未采用过这类约定，所以我想在这一点上仍可自由选择。
+
+% V20-12O-P08: French65 bottom, the Grassmann bundle and Euler kernel.
+由上述 $X^{(m)}$ 的构造立即看出，有一个典范的 $P$-同构
+\[
+X^{(m)}\simeq\operatorname{Grass}_{m}(F_X^\vee),
+\]
+其中，若以 $f:X\to P$ 表示给定态射，则 $F_X$ 是 $E_X\twoheadrightarrow\mathcal O_X(1)$ 的核，并有\cmt{D20-12O-09}{法文第65页在“典范同构”之前手添 $P$-，并在 Euler 式中写小写 $f^*$；英文第44页漏去前者，又把后者排成 $F^*$。旧D17-M009所指的态射与核模字母混用应限归于英译。法稿显示的 Grassmann 式写 $F^\vee$，随后明确说明 $F_X$，正文把下标写齐。该同构实际上在 $X$ 上成立，从而也在 $P$ 上成立：关联条件使 $G_T^\vee$ 落入 $F_T$，且 $F_T/G_T^\vee$ 是局部自由模 $E_T/G_T^\vee$ 到可逆模 $\mathcal O_T(1)$ 的满射之核，故仍局部自由。反向构造及任意基变换相容性详见核查报告；这是译者核验，不是原稿另有一段证明。}
+\[
+F_X=\ker\bigl(E_X\twoheadrightarrow\mathcal O_X(1)\bigr)
+\simeq f^*\bigl(\Omega^1_{P/S}(1)\bigr).
+\]
+
+% V20-12O-P09: French66 first paragraph, corrected dimension and source reasoning.
+特别地，当 $0\leq m\leq r-1$ 时，$X^{(m)}$ 在 $X$ 上光滑，且其纤维几何整；事实上，它们是维数
+\[
+m(r-1-m)
+\]
+的有理簇。\cmt{D20-12O-10}{法文第66页手添的维数明确为 $m(r-m)$，英文第44页也这样写；此处确是法稿原错。第64页已重新规定 $\operatorname{rank}E=r$，故 $F_X$ 的秩为 $r-1$，正确维数为 $m((r-1)-m)$。例如 $r=2,m=1$ 时，射影直线上经过给定点的超平面只有该点，所算纤维为零维。若 $m=r$，$\operatorname{Grass}_m(F_X^\vee)$ 为空，不能称纤维几何整；正文据此列出非空范围。两端 $m=0,r-1$ 的纤维均为一点。旧D17-M010的订正继续采用；报告给出矩阵开图及几何整性的独立核验。}
+当然，验证可以归约到 $X=P$ 的情形；因此，和前面的讨论一样，这属于 Grassmann 预概形的一般事实（我已经预见，你最终会把这些事实扩充铺陈成单独一个段落）。
+
+% V20-12O-P10: French66, ending at the parenthesis "... X^(m) sur Gr^m".
+现在我们得到了与第1节图式完全相似的图式。还有一点先前忘了提：作为 $\Gr^m$ 上的预概形，$H^{(m)}$ 典范地同构于
+\[
+\mathbf P\bigl(E_{\Gr^m}/G^\vee\bigr).
+\]
+因此，在 $0\leq m\leq r-1$ 时，它是一个很好的射影丛。\cmt{D20-12O-11}{这里保留旧D17-M011的秩核对：$G^\vee$ 是秩 $m$ 的局部直和因子，故 $E_{\Gr^m}/G^\vee$ 的秩为 $r-m$，此射影丛的相对维数为 $r-m-1$。$m=r$ 时是零模的射影化，得到空预概形。原词“excellent fibré projectif”在这里是通常赞语，不是关于优良预概形的术语。}
+（当然，一般不能由此把同样的结论用于 $\Gr^m$ 上的 $X^{(m)}$。）\cmt{D20-12O-12}{保留旧D17-M012对两种投影的区分。$X^{(m)}\to X$ 是上面的 Grassmann 预概形；$H^{(m)}\to\Gr^m$ 是这里的射影丛；$X^{(m)}\to\Gr^m$ 的纤维则是 $X$ 的线性截面，可能奇异、可约或为空，甚至不必平坦。报告给出 $X$ 为 $\mathbf P^1$ 中一个点的核验例。}
+% EXACT NEXT SOURCE ANCHOR (not included):
+% French physical66: "La proposition 2.1. se transpose sans changement."
+% English physical44: "The proposition 2.1 [se transpose Fr] translates (?) without change."
