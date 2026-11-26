@@ -1,0 +1,76 @@
+{
+  "edition": 23,
+  "reviewer": "/root/v23_smoothness",
+  "reviewed_at_utc": "2026-11-26T03:15:28.705831+00:00",
+  "scope": "Independent paragraph-by-paragraph review of the two frozen section-15 first-half contribution sources and actual reinspection of French physical pages 91–93. This is not a review of all historical proofs in the book and is not final integrated PDF QA.",
+  "sources_reviewed": [
+    {
+      "path": "/workspace/scratch/a886fd56dd2f/v23_work/contributions/setup/v23_section15_setup.tex",
+      "bytes": 11229,
+      "sha256": "002dcbfc52a2786247016cafcb6f92da1349c7e35553851d70e0c951e8a6ca0f"
+    },
+    {
+      "path": "/workspace/scratch/a886fd56dd2f/v23_work/contributions/setup/v23_section15_setup_audit.tex",
+      "bytes": 18506,
+      "sha256": "240eb816b4f62ca2c359c42ed5db08d45eef6e7d2886124a9ede205d7f1d70e0"
+    }
+  ],
+  "actual_source_images_viewed": [
+    {
+      "path": "/workspace/scratch/a886fd56dd2f/v23_work/source/EGA5_francais_91.png",
+      "sha256": "90cd80333a34c46b972b3cc5ba013a4bfd025ad886ce009c4b0696832d2a59fb"
+    },
+    {
+      "path": "/workspace/scratch/a886fd56dd2f/v23_work/source/EGA5_francais_92.png",
+      "sha256": "1a49d1b3ff6e58c8e70d3911faa6d9c55449c5720d7356e01eac3bd972880450"
+    },
+    {
+      "path": "/workspace/scratch/a886fd56dd2f/v23_work/source/EGA5_francais_93.png",
+      "sha256": "cb9ac681cd4fcad62ab6d9ff52601976db3f9f1d97970de8c6c048d6695feb60"
+    },
+    {
+      "path": "/workspace/scratch/a886fd56dd2f/v23_work/contributions/setup/evidence/fr92_end.png",
+      "sha256": "6c21a22eb274fa7d2f1eeacbe10c759c99007d911463ffd11ee2555ded517e2e",
+      "purpose": "Focused final delta review of SET012: the struck-out dimension formula itself omits eta."
+    }
+  ],
+  "findings": [
+    {
+      "item": "V23-A04",
+      "status": "verified",
+      "reason": "The finite-type image f(Z) is constructible and contains a nonempty open U of its irreducible closure T. Noether normalization of an affine open inside U supplies an m-dimensional closed irreducible W of T meeting U. Smooth surjective q with irreducible fibers gives irreducible q^{-1}(W); its nonempty open over W∩U remains dominant over G by axiom (A). The surjection from f^{-1}(U)∩Z survives base change and yields dominance of mathcal Z over G."
+    },
+    {
+      "item": "V23-A05",
+      "status": "verified",
+      "reason": "Only irreducible components Zi with dim f(Zi)≥m survive in the generic fiber; their generic points remain distinct and cannot be contained in another component. The maximum of dim Zi−m over surviving components is correct. P¹⊔A² with identity and constant maps provides the stated finite-type counterexample to the unconditional dim Z−m formula."
+    },
+    {
+      "item": "V23-A06",
+      "status": "verified",
+      "reason": "The dual-number example satisfies the initial geometric-irreducibility and nonemptiness axioms but gives a nonflat regular-point generic section over a nonregular point. Generic reducedness of irreducible G makes Spec k(eta)→G locally a localization. Its base change and composition with smooth q_X give a flat map with geometrically regular, locally Noetherian fibers. This is a sufficient repair for the regular-morphism premise; it does not by itself verify every claim in 2.1–2.11."
+    },
+    {
+      "item": "Source attribution and setup",
+      "status": "verified",
+      "reason": "The reviewed Chinese text distinguishes author deletion, English transcription errors, restored underlines, added arrow labels, finite-type hypotheses, nonempty geometric fibers, and translator mathematical supplements. The original French 4/6 versus later 3/6 numbering is retained and attributed rather than silently harmonized."
+    },
+    {
+      "item": "Known TeX typo",
+      "status": "resolved",
+      "reason": "The already reported literal ,quad in axiom (A) has been corrected to ,\\quad in the frozen audit source; the expected corrected source SHA was verified directly."
+    },
+    {
+      "item": "Final SET012 source-quotation delta",
+      "status": "verified",
+      "reason": "Read the revised SET012 note and actually inspected the enlarged FR92 end crop. The struck-out formula reads dim mathcal Z = dim Z−m without a generic-fiber subscript eta. The updated note faithfully reports this deleted wording and explicitly notes the missing eta; it does not silently repair a quotation. This focused delta changes the frozen body SHA but leaves the earlier mathematical review valid."
+    }
+  ],
+  "primary_references_actually_opened": [
+    "https://stacks.math.columbia.edu/tag/037A",
+    "https://stacks.math.columbia.edu/tag/053X",
+    "https://stacks.math.columbia.edu/tag/07R6",
+    "https://stacks.math.columbia.edu/tag/02FW"
+  ],
+  "overall_result": "No additional mathematical or source-attribution revision requested. Final integrated PDF visual QA is still to be performed separately."
+}

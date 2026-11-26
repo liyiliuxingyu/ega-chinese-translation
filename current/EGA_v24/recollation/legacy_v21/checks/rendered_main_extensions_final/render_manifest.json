@@ -1,0 +1,107 @@
+{
+  "source_pdf_sha256": "88a14afceccf2316efe47dabc4658756e1cd0b16e4a40112aacaa8156abefa2f",
+  "source_page_count": 1216,
+  "renderer": "PyMuPDF 1.26.6",
+  "matrix_scale": 1.65,
+  "images": [
+    {
+      "physical_page": 1053,
+      "new_png": "checks/rendered_main_extensions_final/main_1053.png",
+      "new_png_sha256": "ccacb6223c73592544e29d6009b7c6cc4cefd21d8fdb1d11fb9cd669b5b3047d",
+      "old_png_sha256": "ccacb6223c73592544e29d6009b7c6cc4cefd21d8fdb1d11fb9cd669b5b3047d",
+      "size_px": [
+        983,
+        1390
+      ],
+      "pixel_equal_to_old": true,
+      "difference_bbox": null
+    },
+    {
+      "physical_page": 1054,
+      "new_png": "checks/rendered_main_extensions_final/main_1054.png",
+      "new_png_sha256": "96af6b70c89f5878e75c67d97c8225154e948c4fc9011ceacad465ca72638e4d",
+      "old_png_sha256": "96af6b70c89f5878e75c67d97c8225154e948c4fc9011ceacad465ca72638e4d",
+      "size_px": [
+        983,
+        1390
+      ],
+      "pixel_equal_to_old": true,
+      "difference_bbox": null
+    },
+    {
+      "physical_page": 1055,
+      "new_png": "checks/rendered_main_extensions_final/main_1055.png",
+      "new_png_sha256": "36a18f0a39ce221f217d4e5970f4b8e69da5377ba0abb234013ede6f32b91ecc",
+      "old_png_sha256": "36a18f0a39ce221f217d4e5970f4b8e69da5377ba0abb234013ede6f32b91ecc",
+      "size_px": [
+        983,
+        1390
+      ],
+      "pixel_equal_to_old": true,
+      "difference_bbox": null
+    },
+    {
+      "physical_page": 1056,
+      "new_png": "checks/rendered_main_extensions_final/main_1056.png",
+      "new_png_sha256": "f8c2a48071fabe5037959a7054266f58398d131fe6300ea2843cf68ccb306f3c",
+      "old_png_sha256": "73999d9ddc92547d406f69d899c8d562e4920d622d99d94625252cc3796779e4",
+      "size_px": [
+        983,
+        1390
+      ],
+      "pixel_equal_to_old": false,
+      "difference_bbox": [
+        249,
+        235,
+        816,
+        367
+      ]
+    },
+    {
+      "physical_page": 1057,
+      "new_png": "checks/rendered_main_extensions_final/main_1057.png",
+      "new_png_sha256": "8fc96e8c3a1a336c956a20ceccedf2c7b8609084a9a0821c21bbe693d4f838f0",
+      "old_png_sha256": "cc062b1009e40f3801dcaf7fd6fe2abe5167a60c6a8935c727eb70b3fc309f5d",
+      "size_px": [
+        983,
+        1390
+      ],
+      "pixel_equal_to_old": false,
+      "difference_bbox": [
+        165,
+        248,
+        732,
+        816
+      ]
+    },
+    {
+      "physical_page": 1058,
+      "new_png": "checks/rendered_main_extensions_final/main_1058.png",
+      "new_png_sha256": "d3703d591c79c243ced01e9102f1b5197ee855feae43a5b016ef73163f8e750b",
+      "old_png_sha256": "e0baf31b9cc45e4390796846d8a764ff1a0a1fd04aed8d84aa141dac2610aaca",
+      "size_px": [
+        983,
+        1390
+      ],
+      "pixel_equal_to_old": false,
+      "difference_bbox": [
+        249,
+        208,
+        816,
+        872
+      ]
+    }
+  ],
+  "boundary_page_comparison": {
+    "physical_page": 1059,
+    "purpose": "检查局部移页是否传递到下一页边界",
+    "old_png": "checks/rendered_main/main_1059.png",
+    "old_sha256": "257745a8adb765f2bf5f0db297204838f130775468319a3fdd4f60212a151943",
+    "new_png": "checks/rendered_main_extensions_final/main_1059.png",
+    "new_sha256": "257745a8adb765f2bf5f0db297204838f130775468319a3fdd4f60212a151943",
+    "pixel_equal": true,
+    "difference_bbox": null,
+    "actual_visual_inspection": false,
+    "method": "同渲染器同 1.65 比例重渲染，PIL 全页像素比较"
+  }
+}

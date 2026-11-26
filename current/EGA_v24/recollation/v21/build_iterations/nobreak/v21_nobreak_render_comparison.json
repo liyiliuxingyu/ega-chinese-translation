@@ -1,0 +1,24 @@
+{
+  "pdf_sha256": "d64f8df17e3037da38a9373a59b9826eff00742d2f5a898304caa2704d06b95a",
+  "physical_pages": 1216,
+  "changed_selected_pages": [],
+  "pixel_identical_selected_pages": [
+    1,
+    3,
+    4,
+    5,
+    1063,
+    1064,
+    1065,
+    1066,
+    1067,
+    1068,
+    1069,
+    1070,
+    1071,
+    1072,
+    1073,
+    1074
+  ],
+  "source_change": "Local nobreak before INI006 and INI010 only"
+}

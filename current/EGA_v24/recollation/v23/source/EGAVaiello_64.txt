@@ -1,0 +1,48 @@
+is also smooth over a prescheme S with constant relative dimension m to ﬁx ideas. Also,
+we suppose that V (φ)sing which we denote simply V ′ for simplicity deﬁned by the vanishing
+of the section d1 of the module P 1
+X/Y locally free of rank d + 1 is smooth over S of relative
+dimension (m + 1) −(d + 1) = m −1 (N.B. Note of course that the notations V (φ)sing
+and V (φ)sup sing are ambiguous in the sense that there does not intervent the prescheme
+to which they are related; in the actual case it is assumed (sous entendu Fr) that it is
+Y and we also notice that it follows form the assumptions tht every singular zero of φ in
+non-singular relative to S. In this situation we can write down the following diagram of
+locally free (sheaves) of modules over V 1):
+0
+x
+Ω1
+X/Y ⊗OV ′
+µ↗
+0 −−−−→
+P 1
+X/Y ⊗OV ′
+−−−−→Ω1
+X/Y ⊗OV ′ −−−−→Ω1V 1/S −−−−→0
+x
+x
+ν↗
+OV ′
+−−−−→Ω1
+X/Y ⊗OV ′
+x
+x
+L = ω−2
+X/Y ⊗OV ′
+0
+The columns come from the exact sequence of transitivity for the smooth morphisms
+X →Y and Y →S and tensoring with OV ′ (this remains exact since all the modules in
+the sequence are locally free). The horizontal line is a particular case of an exact sequence
+obtained every time when over X over S we have a section ψ of a locally free module F
+and if we take the scheme of zeros W we ﬁnd an exact sequence
+F v ⊗OX →Ω1
+X/S ⊗OW →Ω1
+W/S →0
+and if X/S is smooth the ﬁrst homomorphism is injective exactly at the point where W
+is smooth over X with a “good” relative dimension (i.e. everywhere in the present case).
+This exact sequence is an immediate consequence of the exact sequence
+J/J2 →Ω1
+X/S ⊗OW →Ω1
+X/S →0
+which appears in Par. 16 (we could state [mettre en corollaire] the version mentioned
+here).
+64

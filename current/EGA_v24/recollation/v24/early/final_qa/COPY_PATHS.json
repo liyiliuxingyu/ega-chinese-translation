@@ -1,0 +1,120 @@
+{
+  "edition": 24,
+  "scope": "Actual byte-exact relocation of final visual records and source images. No new human verdict invented.",
+  "images": [
+    {
+      "original_path": "v24_work/early/final_qa/images/body_0947.png",
+      "project_relative_path": "checks/visual_v24_early/body_0947.png",
+      "sha256": "d1325401e3cf92628d26951cb14585c04ab219fa54cf802039991b1d3b613e17",
+      "bytes": 131591
+    },
+    {
+      "original_path": "v24_work/early/final_qa/images/body_0948.png",
+      "project_relative_path": "checks/visual_v24_early/body_0948.png",
+      "sha256": "c7da2090a25916aa189f6f2f0e762c85b95cecc53f1e817ce66c96af2deaf102",
+      "bytes": 233711
+    },
+    {
+      "original_path": "v24_work/early/final_qa/images/body_0949.png",
+      "project_relative_path": "checks/visual_v24_early/body_0949.png",
+      "sha256": "eec65828c4fa64eba01138a8c9e2b215b0775584ef4d75d0463d0567060090ce",
+      "bytes": 198430
+    },
+    {
+      "original_path": "v24_work/early/final_qa/images/body_0950.png",
+      "project_relative_path": "checks/visual_v24_early/body_0950.png",
+      "sha256": "447a04f782ad55b573450858a55f6f95d64601575e305c08d9caf405aff4939e",
+      "bytes": 202382
+    },
+    {
+      "original_path": "v24_work/early/final_qa/images/body_0951.png",
+      "project_relative_path": "checks/visual_v24_early/body_0951.png",
+      "sha256": "a4717656fa5613defe1fc4d57e35980dd79f19c71824ad68ba67b83a75f66a5f",
+      "bytes": 157799
+    },
+    {
+      "original_path": "v24_work/early/final_qa/images/body_0952.png",
+      "project_relative_path": "checks/visual_v24_early/body_0952.png",
+      "sha256": "7d8dc62fdb1c52ce4f0043f3f4c14157844c09516430e2d8f46c48f86ff646b2",
+      "bytes": 179020
+    },
+    {
+      "original_path": "v24_work/early/final_qa/images/body_0953.png",
+      "project_relative_path": "checks/visual_v24_early/body_0953.png",
+      "sha256": "3fb0ee922368120a9e57274fb08a7ef11aaee004860d45cfd9ddbd1a691f8a2a",
+      "bytes": 164227
+    },
+    {
+      "original_path": "v24_work/early/final_qa/images/body_0954.png",
+      "project_relative_path": "checks/visual_v24_early/body_0954.png",
+      "sha256": "882fdde5910e3a2aabe87e80fca749d9cea1be9e06d425ce6a4e9dc2baa8f5d6",
+      "bytes": 150742
+    },
+    {
+      "original_path": "v24_work/early/final_qa/images/body_0955.png",
+      "project_relative_path": "checks/visual_v24_early/body_0955.png",
+      "sha256": "c0e072920f98d635ddee14322a9625b6b175713502517979c0eeb24d44eadd22",
+      "bytes": 237581
+    },
+    {
+      "original_path": "v24_work/early/final_qa/images/body_0956.png",
+      "project_relative_path": "checks/visual_v24_early/body_0956.png",
+      "sha256": "08cd2edbcc78533925e2b66e1732a4ceccf27b75558dc59636a1917284098471",
+      "bytes": 179474
+    },
+    {
+      "original_path": "v24_work/early/final_qa/images/audit_0027.png",
+      "project_relative_path": "checks/visual_v24_early/audit_0027.png",
+      "sha256": "cf72434d3bec730b5c972d1e6fd34b8df0008a16d6253d5893657f081d6f4d8a",
+      "bytes": 133632
+    },
+    {
+      "original_path": "v24_work/early/final_qa/images/audit_0028.png",
+      "project_relative_path": "checks/visual_v24_early/audit_0028.png",
+      "sha256": "2059e521e6092c50cfa7e3c82b383893429e16f04512cf4e9629aef48861b121",
+      "bytes": 165341
+    },
+    {
+      "original_path": "v24_work/early/final_qa/images/audit_0029.png",
+      "project_relative_path": "checks/visual_v24_early/audit_0029.png",
+      "sha256": "2545ab70041668cb242992b5865641702edafd5d2445eea69bde7c87e2f739df",
+      "bytes": 169856
+    },
+    {
+      "original_path": "v24_work/early/final_qa/images/audit_0030.png",
+      "project_relative_path": "checks/visual_v24_early/audit_0030.png",
+      "sha256": "565f96ac25a10ff13ac61764f9d87e85bdc6c1dc103fee3c950e046336aabf76",
+      "bytes": 169262
+    },
+    {
+      "original_path": "v24_work/early/final_qa/images/audit_0031.png",
+      "project_relative_path": "checks/visual_v24_early/audit_0031.png",
+      "sha256": "329a96afed0a9c3657bb0db4106065ef2bd4db5adfdf55a10d6c03d3bc9f2b51",
+      "bytes": 156573
+    },
+    {
+      "original_path": "v24_work/early/final_qa/images/audit_0032.png",
+      "project_relative_path": "checks/visual_v24_early/audit_0032.png",
+      "sha256": "8c96d10bcd5da1abad5909c52717b6a751480959463b74fc65936c16f968d848",
+      "bytes": 152762
+    },
+    {
+      "original_path": "v24_work/early/final_qa/images/audit_0033.png",
+      "project_relative_path": "checks/visual_v24_early/audit_0033.png",
+      "sha256": "a31b39a21525cb24fb57de3a35b3c663a51bbe5eadb51a447d37aee273312b0a",
+      "bytes": 222736
+    },
+    {
+      "original_path": "v24_work/early/final_qa/images/audit_0034.png",
+      "project_relative_path": "checks/visual_v24_early/audit_0034.png",
+      "sha256": "ff194ce6045e0c5356fa523929e4d961b77d93d099477099d451401f33db0f09",
+      "bytes": 186397
+    },
+    {
+      "original_path": "v24_work/early/final_qa/images/audit_0035.png",
+      "project_relative_path": "checks/visual_v24_early/audit_0035.png",
+      "sha256": "0794f82f89ffce8990ce38df81adebdf510f02653a902f321d7b4e41a1f90d82",
+      "bytes": 62053
+    }
+  ]
+}

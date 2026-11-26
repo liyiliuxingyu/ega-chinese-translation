@@ -1,0 +1,15 @@
+{
+  "main.tex": "6397a9fbf923a83c294bbf6bd97144681138373da9ca22e1e48bb004abb968fa",
+  "preamble.tex": "1b096d39924010e5a1f55e4a8944da9425e7d2959b0522e7d746ce943913b7c1",
+  "frontmatter.tex": "b9ae3c34a7b1946881c05bf8d6d1d028a4ba91eb70675c7a90bc16cab9e1da40",
+  "continuations/v22_section14_geometry.tex": "4ebb35b1e644b9bc1c0c4cfbadbb3a8318565d7793980ecbe683b9658e9eca6c",
+  "continuations/v22_section14_fibers.tex": "06a4dac5ca264064ed6b5a6c92cf17877bd1108812f8435c3eb051e72d29777f",
+  "continuations/v22_section14_differential.tex": "0cdfc5d838fe7838e08822b2013c45ca0a598a3c6f1910dcb869fdd7998d27cc",
+  "continuations/v22_section15_inherited.tex": "62ccad5d15ceb0b55a6f28c2e9d98ac14326eee748e46249e86b5735ea8cf3f4",
+  "report.pdf": "4cced0b1907d27f0806a74d3ad525016bc002e191165674c5c687a2dd1a2b53c",
+  "report.log": "1dc0b4ad13d6c36289fbb37546d8a97b9194e8e8f9cd517c924d4354ef828d9e",
+  "report_single.tex": "8594279fb6445fc6119649ce29ac64f64a27b95538cbc84c607dd4f9c389d8d4",
+  "single_build/audit_single.tex": "8594279fb6445fc6119649ce29ac64f64a27b95538cbc84c607dd4f9c389d8d4",
+  "single_build/audit_single.pdf": "0a149c736b1e057e0a8703f9d9005e9880e471a4492a5d4a731ea9cab09dc57c",
+  "single_build/audit_single.log": "c7cb16c5212da98bc262c1c450c2ea7b23295cd8efcd3fd24495d30e8162a0ab"
+}

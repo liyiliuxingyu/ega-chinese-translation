@@ -1,0 +1,33 @@
+N.B. We have already used Conic Projections in diﬀerent contexts, notably at the
+end of No. 8, formulation of 10.4 and others and the “sorite” that follows should without
+a doubt come sooner in the beginning of the paragraph and eventually in the auxillary
+paragraph “grassmanian”. Let C = P(F) be a linear subvariety of P(E) = P of relative
+dimension r −m −1 over S, i.e. of codimension (m + 1) in P so that F is a quotient of
+E locally free of rank r −m, F = E/G where G is locally free of rank m + 1. We have
+deﬁned in the algebraic way of Chapter II a morphism
+pc: P −C = P(E) −P(E/G) →P(G)
+which we will interpret geometrically and which will be called (because of the description
+that follows) the conic projection with center C. (N.B. We assume r −m −1 is contained
+between −1 and r −1, i.e. m is between 0 and r, nothing more. For this let us begin
+by interpreting P(G) as a closed subscheme of Grassm(P) = Grassr−m+1(P) due to the
+obvious homomorphism of functors P(G) →Grassr−m+1(E) obtained by considering for
+every invertible quotient G/G′ of G the locally free module of rank (r −m) + 1 E/G′
+of E and the same after every base change). The above homomorphism of functors is a
+homomorphism and since the ﬁrst one is proper over S the second one separated it is a
+closed immersion. More generally we may need to make explicit the closed immersion of
+grassmanians of G, i.e. of P(G) (in the sense of functors) into those of E, i.e. of P(E). The
+image (in the sense of functors) of the obtained morphism is formed from linar subvarieties
+L of the desired dimension of P that contain C. Let us denote by Q(C) this image in the
+case that we are studying (i.e. for the dimensions speciﬁed above) and identifying P(G)
+with Q(C) the morphism of conic projection
+pc: P −C →Q(C) ⊂Grassm(P)
+is nothing else but the one that associated with every sectin of P −C the unique linar
+subvariety L of P of codimension m containing at the same time C and the given section
+(note, obviously that by containing a section we mean that the section factors by L). If
+not, we have an f: X →P it makes sense to consider the composition
+X −f −1(C) →P −C →Q(C)
+which we may call conic projection of X relative to f and with center C denoted pX
+c or
+simply pc. We point out that it is not in general deﬁned over all of X, precisely it is such
+if and only if f −1(C) = φ, i.e. f(x) does not meet the center of the projection C. We shall
+54

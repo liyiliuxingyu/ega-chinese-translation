@@ -1,0 +1,14 @@
+{
+  "edition": 23,
+  "command": [
+    "bash",
+    "build.sh",
+    "--verify-single"
+  ],
+  "cwd": "/workspace/scratch/a886fd56dd2f/v23_work/EGA_v23",
+  "started_at_utc": "2026-11-26T03:13:41.835801+00:00",
+  "finished_at_utc": "2026-11-26T03:17:10.501630+00:00",
+  "elapsed_seconds": 208.666,
+  "exit_code": 0,
+  "stdout_file": "build_stdout.log"
+}

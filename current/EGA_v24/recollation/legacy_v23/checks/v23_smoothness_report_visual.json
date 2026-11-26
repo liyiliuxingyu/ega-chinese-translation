@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "edition": 23,
+  "reviewer": "/root/v23_smoothness",
+  "review_method": "actual_image_view",
+  "document": "report",
+  "pdf": {
+    "path": "report.pdf",
+    "sha256": "611f26e969163d63dcae1645bed7625abce3750e1a791d59954dcf6a44da8985"
+  },
+  "rendering": {
+    "renderer": "PyMuPDF",
+    "scale": 1.65,
+    "colorspace": "RGB",
+    "alpha": false
+  },
+  "reviewed_at_utc": "2026-11-26T03:17:52.819717+00:00",
+  "scope": "Only physical pages 33–40 of the actual integrated edition-23 report PDF. Each full-page RGB render was actually displayed and inspected; preview results were not substituted.",
+  "pages": [
+    {
+      "physical_page": 33,
+      "image": "checks/visual_v23/smoothness/report_0033.png",
+      "image_sha256": "b29b40cc43f49c1edc4a270368a9d47406f66c769f40e8d7ed7dd6569a6fb8a5",
+      "verdict": "pass",
+      "notes": "实际查看全页：本模块章题与底本位置清楚；V23-B01 开头和段落完整，数学花体、下标 eta 及法文引号正确显示；标题按 ctex 默认换行，正文未越界。"
+    },
+    {
+      "physical_page": 34,
+      "image": "checks/visual_v23/smoothness/report_0034.png",
+      "image_sha256": "007e0ff33bf76a934b731c269029ad4964b2ff2f3873aa4d099ca1b91866340c",
+      "verdict": "pass",
+      "notes": "实际查看全页：B01 续段至 B02 的标题、P² 关联族反例及相对微分基变换公式均完整；Omega 公式上下标与张量积没有重叠，页眉页码正常。"
+    },
+    {
+      "physical_page": 35,
+      "image": "checks/visual_v23/smoothness/report_0035.png",
+      "image_sha256": "a47ae7730574edaf3bfe5558435dc38111d70d726f423abe7ab16711d27da1f7",
+      "verdict": "pass",
+      "notes": "实际查看全页：V23-B03 分层态射、V 的正交消去子空间到相对微分层的秩公式及 Frobenius 反例均可辨；display 间距正常，末段未裁切。"
+    },
+    {
+      "physical_page": 36,
+      "image": "checks/visual_v23/smoothness/report_0036.png",
+      "image_sha256": "2a2478a4554afd6948b6b4022a7449a9028a451234ac9d29f19757ff13ce62c4",
+      "verdict": "pass",
+      "notes": "实际查看全页：V23-B04 双数参数底反例、两条 G_red 基变换恒等式、泛平坦性修补文字完整；B05 标题后保有引导段，未出现独立标题遗留。"
+    },
+    {
+      "physical_page": 37,
+      "image": "checks/visual_v23/smoothness/report_0037.png",
+      "image_sha256": "3e8d2ec290a8157c6f024b53bf655241f47e6780f32d6c290ced1445fb3e6d57",
+      "verdict": "pass",
+      "notes": "实际查看全页：V23-B05 坏集三项并式、切映射、局部维数及 E_x 像维数估计排列清楚；上横线、逆像和希腊字形可辨，无碰撞或溢出。"
+    },
+    {
+      "physical_page": 38,
+      "image": "checks/visual_v23/smoothness/report_0038.png",
+      "image_sha256": "e5cc8f4a86e5390dd91f165b43bf7d980f0ca63e76e48f47b704185965d5937b",
+      "verdict": "pass",
+      "notes": "实际查看全页：沿 X 的统一计数显示公式及负维数界讨论完整；B06 泛参数到一般参数、有限开集求交和合理范围说明清楚，页末续段正常。"
+    },
+    {
+      "physical_page": 39,
+      "image": "checks/visual_v23/smoothness/report_0039.png",
+      "image_sha256": "1c13a2c091ac221e4dc657eae7505dec02d4873fbd62d60a9cdaf34fb713a81c",
+      "verdict": "pass",
+      "notes": "实际查看全页：B06 续段完整交代未完成推广与下一 FR95/EN62 边界；短章尾留下正常空白，未误入下一篇原文或截断末句。"
+    },
+    {
+      "physical_page": 40,
+      "image": "checks/visual_v23/smoothness/report_0040.png",
+      "image_sha256": "7241d9a2f1d7cb35ce5a43edf4eee834cba2d8710988afce262c137e97a3f8df",
+      "verdict": "pass",
+      "notes": "实际查看全页：ctexbook 默认章间偶数边界页，仅保留页码 20 与当前页眉，正文区空白；未发现残留文字、图像或异常裁切。"
+    }
+  ]
+}

@@ -1,0 +1,298 @@
+% V24 §16 early: FR physical 95–103; EN 62–68 through diagram (D_K).
+% Source paragraphs EAR-P00–EAR-P30. Existing v1_2.tex is retained inactive.
+\begingroup
+\def\Sym{\operatorname{Sym}}
+\def\gr{\operatorname{gr}}
+\providecommand{\Oa}{\mathcal O}
+\providecommand{\Pp}{\mathcal P}
+\providecommand{\Tt}{\mathcal T}
+\head{EGA V 短篇：函数的奇异零点与超奇异零点}
+\label{ega:V-short}
+\source{法文预备笔记\texttt{EGA5\_francais.pdf}物理第95--103页；合并英文稿\texttt{EGAVaiello.pdf}第62--68页至可逆模图结束；独立载体\texttt{EGAV1-2.ps}的6页全件（标题页及印刷第1--5页）覆盖本篇开头至第66页行列式交换图前}
+\noindent\textbf{载体标题。}EGA V：\S1及\S\S2.15、2.16（原编号为EGA IV：\S16及\S\S17.15、17.16）。Grothendieck 的 EGA V“预备笔记”的编辑英译，由 Piotr Blass 与 Joseph Blass 完成。
+\cmt{V24-EAR001}{法稿此处仍以IV.16及“新EGA V”标识；独立PS标题页采用后来的V.1编号。本版以法文打字、手改的可辨最终文本为底，保留英文特有编注，并以PS核对与合并英文稿重合部分。PS在“有下图的交换性”后结束，图及后文由法稿与合并英文稿连续接上；这不是原文缺图。下文所有FR页数均指PDF物理页序。}
+
+\egasection{V.1（原IV.16）：函数的奇异集、超奇异集与微分判据}
+% EAR-P00
+这一节将在关于超平面截面的第20节中使用，不过在我看来，它自然的位置应在第16节。\cmt{V24-EAR002}{这句话依FR95的原稿编号译出。独立PS重编号为V.5（原IV.20）及本节V.1；两个编号体系指同一安排。}
+
+% EAR-P01–P02
+\egas{1}{定义}
+设$X$为正则预概形，$\varphi$为$\Oa_X$的一个截面。若点$x\in X$满足
+\[
+ \varphi_x\in\mathfrak m_x^2,
+\]
+则称$x$为$\varphi$的一个\emph{奇异零点（或根）}。若它是一个奇异零点（或根），而且它所确定的元素
+\[
+ [\varphi_x]\in\mathfrak m_x^2/\mathfrak m_x^3
+ \simeq\Sym^2_{k(x)}(\mathfrak m_x/\mathfrak m_x^2),
+\]
+解释为$k(x)$上$\mathfrak m_x/\mathfrak m_x^2$的对偶空间$t_x$上的二次型时，是退化的，就称$x$为一个\emph{超奇异零点}。\cmt{V24-EAR003}{FR95在“非退化”中的“非”字上已有删除线，最终应读“退化”；EN62与PS也已读作退化，不能把这一已改正处再归为英译错误。法稿及两英文载体的$\Sym$漏了二次分次上标；此处取正则局部环伴随分次同构的二次部分。$\mathfrak m_x$是$\Oa_{X,x}$的极大理想，$\varphi_x$是局部函数芽。依本节后文的极化同态及作者FR112--113的术语说明，“退化”在此指相关双线性型退化；特征2时不能据射影二次曲面的光滑性改写此定义。}
+\cmt{V24-EAR034}{零维边界须单独保留：若$\Oa_{X,x}$是域且$\varphi_x=0$，则$\mathfrak m_x/\mathfrak m_x^2=0$，极化映射$0\to0$是同构，因此这个零点按字面的代数定义为“奇异而非超奇异”；它却不是一个由非零二次方程定义的超曲面奇点。下文把非退化二次零点当作实际奇点、使用维数下降1时明确要求相关余切空间正秩。此项揭示历史定义的零秩边界，不在此处静默另改定义。}
+（这种奇异而非超奇异的零点，在相关余切空间正秩时，也称为\emph{非退化二次奇异零点}。）\cmt{V24-EAR004}{此处原词为“普通奇异零点”。作者在其后的FR112--113（EN73--74）明确撤回这一称谓，建议改为“奇异而非超奇异的零点”或“非退化二次奇异零点”。本版在本节后续出现的同一原词中一并落实该订正；这是作者后续的术语修订，不是法稿此页已经采用的新词。特征2下$q=X^2+YZ$的极化矩阵秩为2，故按本节定义为退化；但射影曲线$q=0$光滑，原点是通常所称的普通二次奇点。这正是作者改名的原因，详见本版专项核查。}
+
+% EAR-P03–P04
+\egas{2}{注}
+若$x\in V(\varphi)$，则$x$是$\varphi$的一个非奇异零点，当且仅当$\varphi_x\ne0$且$x$是$V(\varphi)$的一个正则点；换言之，当且仅当$x$是$V(\varphi)$的正则点，并且$V(\varphi)$在$x$处的局部子概形不等于$X$在$x$处的局部概形。\cmt{V24-EAR005}{FR95及EN62的末句说“在$x$的一个邻域内$V(\varphi)\ne X$”；此处应读作函数芽不为零，而不能只要求存在一个较大的邻域使两闭子概形不相等。$x\in V(\varphi)$时，$\varphi$的余域值必为零，故$\varphi_x\ne0$绝不指余域值非零。正则局部环$A$中，非零$f\in\mathfrak m$满足$A/(f)$正则，当且仅当$f\notin\mathfrak m^2$；这给出这里的等价。}
+\cmt{V24-EAR006}{\textbf{作者已划去的段落。}FR95在本注后还有一整块划去文字，EN和PS均未收。可辨内容译为：“可以证明：若$x$对于$\varphi$是奇异的，则它是普通奇异的，当且仅当$\varphi_x\ne0$且$\Oa_{V(\varphi),x}$的重数等于2（也有时说$x$是预概形$V(\varphi)$的一个普通奇点）；因此，$x\in V(\varphi)$对于$\varphi$非超奇异，当且仅当$\varphi_x\ne0$且$\Oa_{V(\varphi),x}$的重数不大于2。”这些已撤去的断言不作为正文成立的命题。其错误可由特征0的尖点$y^2-x^3=0$看出：重数为2，但二次初始项$y^2$退化。这里保留其可辨数学内容，也保留作者删除的文献事实；不推测删除原因。}
+
+% EAR-P05
+\egas{3}{定义}
+设$X$为域$k$上的光滑预概形，$\varphi$为$\Oa_X$的一个截面，$x\in V(\varphi)$。若对$k$的每个扩域$k'$以及$X$的每个以$k'$为值域、位于$x$的点$\xi$，其在$X_{k'}$中对应的点$x'$都是$\varphi_{k'}$的一个奇异零点（分别为超奇异零点），则称$x$为$\varphi$相对于$k$的一个\emph{几何奇异零点}（分别为\emph{几何超奇异零点}）。\cmt{V24-EAR007}{FR95、EN62及PS印刷第1页在扩域$k'/k$之后均写“以$k$为值域”；应为$k'$。这里$\xi:\Spec k'\to X$是一个$k$态射，其像为$x$，并确定$X\times_k\Spec k'$的$k'$有理点。量词只遍历实际存在的这样的$\xi$；原撇号排法统一为$X_{k'}$、$\varphi_{k'}$。}
+
+% EAR-P06–P09
+\egas{4}{注}
+\begin{enumerate}
+\item[(a)] 由下面将给出的判据可知，在定义3中，只用一个以某个$k'$为值域的点作检验就够了。例如可取$k'=k(x)$或$\overline{k(x)}$，并取以这个$k'$为值域的典范点。
+\item[(b)] 由注2可知，$x$是$\varphi$的一个几何非奇异零点，当且仅当$\varphi_x\ne0$且$V(\varphi)$在$x$处对$k$光滑。
+\item[(c)] 假设预概形$X$对另一个预概形$Y$光滑，$\varphi$为$\Oa_X$的一个截面，$x\in V(\varphi)$。若$x$在纤维$X_s$上对于$k(s)$具有这种奇异零点性质（或超奇异零点性质），就称它为相对于$Y$的奇异零点（或超奇异零点）；$s$表示$x$在$Y$中的像。\cmt{V24-EAR008}{FR96在此用“相对于$k(s)$”承接定义3的几何版本，EN/PS也未重复geometrically。正文仍保留这一承接；检验的是$\varphi$在$X_s$上的限制，经域值点作基变换后的性质，而不是省去扩域检验的任意正则局部环版本。下文相对$Y$的奇异集统一用此含义。}
+\item[(d)] 在定义1的条件下，一眼可见：若将$\varphi$换成$\varphi'=u\varphi$，其中$u$在$x$处可逆，则$x\in V(\varphi)$的奇异性或超奇异性不变。因而定义1以及定义3都可自然地推广到$\varphi$是某个可逆模$L$的截面的情形，并在$L=\Oa_X$时恢复原定义。
+\end{enumerate}
+
+% EAR-P10
+设预概形$X$对另一个预概形$Y$光滑，$\varphi$为$\Oa_X$的一个截面。由此得到$\Pp^2_{X/Y}$的截面$d^2_{X/Y}\varphi$，它约化为$\Pp^1_{X/Y}$的截面$d^1_{X/Y}\varphi$，后者再约化为$\Pp^0_{X/Y}=\Oa_X$的截面$d^0\varphi=\varphi$。在这些条件下，有：
+
+% EAR-P11
+\egas{5}{命题}
+$d^0\varphi$的零点集等于$\varphi$的零点集$V(\varphi)$；$d^1\varphi$的零点集等于$\varphi$相对于$Y$的奇异零点集$V(\varphi)^{\mathrm{sing}}$。\cmt{V24-EAR009}{FR96此处写相对于$S$，EN及PS照录；$S$尚未引入，相对底应为$Y$。下面二阶初始项一段中FR97的$X/S$及$\Spec k\to S$也是同一相对底笔误，正文一并校为$Y$。这些是法稿已有的笔误，不能仅归于英译。}
+\begin{proof}[原文证明]
+第一个断言显然。第二个断言就是Jacobian判据；或者，也可由典范同构
+\[
+ \mathfrak m_x/\mathfrak m_x^2\simeq\Omega^1_{X/k}(x)
+\]
+得出，此处$x$是$k$上的预概形$X$的一个$k$有理点。
+\end{proof}
+
+% EAR-P12
+注意$\gr^1(\Pp^1_{X/Y})\simeq\Omega^1_{X/Y}$；因此，限制$d^1\varphi|_{V(\varphi)}$可以解释为$\Omega^1_{X/Y}\otimes\Oa_{V(\varphi)}$的一个截面，正是$d_{X/Y}\varphi$在$V(\varphi)$上的限制。于是可考虑此截面的零点预概形，记为$V(\varphi)^{\mathrm{sing}}$；由命题5，其底集正是$\varphi$相对于$Y$的奇异零点集。\cmt{V24-EAR010}{FR97页首在有理点同构的证明末尾有两行被打叉划去，不能可靠辨认其全部词句；英文载体未收。这里完整保留可辨的有效证明及随后段落，不以数学推测补写被删难辨文字。}
+
+% EAR-P13
+（注意：若$\psi$是预概形$X$上有限型局部自由模$E$的一个截面，它自然地定义自己的零点子预概形，例如可取$\psi$的转置同态$E^\vee\to\Oa_X$的像理想所定义的子预概形。若$E=\Oa_X^n$、$\psi=(\psi_1,\ldots,\psi_n)$，则这个理想就是$\sum_i\psi_i\Oa_X$，而所定义的子预概形为$V(\psi_1,\ldots,\psi_n)$。）
+
+% EAR-P14
+现在把$d^2\varphi$限制到$V(\varphi)^{\mathrm{sing}}$，并注意
+\[
+ \gr^2(\Pp^2_{X/Y})\simeq\Sym^2(\Omega^1_{X/Y}),
+\]
+就得到$\Sym^2(\Omega^1_{X/Y})\otimes\Oa_{V(\varphi)^{\mathrm{sing}}}$的一个典范截面$M(\varphi)$。通过取$X$的域值点，立即可验证：在由$X/Y$沿$\Spec k\to Y$得到$X_k$的情形，这个截面正是决定定义1中二次型的截面。由此可按下述方式用它描述$V(\varphi)^{\mathrm{sup\,sing}}$：把$M(\varphi)$的相关双线性型解释为同态
+\[
+ M(\varphi)' :
+ \Tt_{X/Y}\otimes_{\Oa_X}\Oa_{V(\varphi)^{\mathrm{sing}}}
+ \longrightarrow
+ \Omega^1_{X/Y}\otimes_{\Oa_X}\Oa_{V(\varphi)^{\mathrm{sing}}},
+\]
+便应取此同态不是同构的点集。\cmt{V24-EAR011}{这里$\Tt_{X/Y}=\mathscr Hom_{\Oa_X}(\Omega^1_{X/Y},\Oa_X)$为相对切层。FR97的手写符号在EN63及PS被记作拉长的$G$；下文英译编者关于它是否是切层的疑问仍原样保留。相关双线性型取$b_q(v,w)=q(v+w)-q(v)-q(w)$，不除以2；所以本式在特征2仍有定义，但不等价于$q=0$所定义射影二次曲面的光滑性。}
+特别地，这证明$V(\varphi)^{\mathrm{sup\,sing}}$是闭集。若$X$在$Y$上每一点的相对维数都是$d$，可引入
+\[
+ D(\varphi)=\det M(\varphi)'
+ \in\Gamma\bigl(V(\varphi)^{\mathrm{sing}},
+       (\Omega^d_{X/Y})^{\otimes2}|_{V(\varphi)^{\mathrm{sing}}}\bigr),
+\]
+使这个描述更精确。于是也用$V(\varphi)^{\mathrm{sup\,sing}}$表示$V(\varphi)^{\mathrm{sing}}$、从而也表示$X$的一个闭子预概形：它由上述截面的消失定义，而这一次截面属于一个可逆模，其底集正是所要的集合。\cmt{V24-EAR012}{FR97及英文写$\det M(\varphi)$；正文补撇号以明确所取的是相关双线性型所给同态的行列式，并非把二次齐次多项式直接取行列式。坐标中就是Hessian极化矩阵的行列式，类型为$\omega_{X/Y}^{\otimes2}$。以后仍可按原稿简记为$D$。}
+
+% EAR-P15
+\noindent\textbf{原稿编写提示。}应当把这个构造归纳为一个“命题6”。\ednote{命题6有待编辑者补写。}\cmt{V24-EAR013}{FR98仅有“应归纳”及“命题6”的占位；PS也只有这一提示，EN63另加编者补写说明。本版保留占位及原编注，不自行编造一个已成稿的命题6。}
+
+% EAR-P16
+在一般情形下，关于$V(\varphi)^{\mathrm{sing}}$与$V(\varphi)^{\mathrm{sup\,sing}}$不能说得更具体。现在考察一个对某些应用有意义的特殊情形。假设$Y$也对某个预概形$S$光滑，为明确起见，设其相对维数恒为$m$。再假设$V(\varphi)^{\mathrm{sing}}$（为简便记作$V'$）在$S$上光滑，相对维数为
+\[
+ (m+d)-(d+1)=m-1;
+\]
+这里$V'$是秩为$d+1$的局部自由模$\Pp^1_{X/Y}$的截面$d^1\varphi$的零点预概形。\cmt{V24-EAR014}{FR98明写$(m+d)-(d+1)=m-1$，是正确的；EN64与PS印刷第3页却录成$(m+1)-(d+1)=m-1$。本次法英回校确认：这一维数算式错误属于英文载体，不应继续说成法文原作者的算错。}
+
+（注意，记号$V(\varphi)^{\mathrm{sing}}$与$V(\varphi)^{\mathrm{sup\,sing}}$未显示所涉及的基预概形，因而有歧义；当前约定它是$Y$。还应指出，由这些假设立即可得：$\varphi$的每个相对于$Y$的奇异零点，相对于$S$都是非奇异的。）
+
+% EAR-P17
+在这种情形下，我们可以写出下列$V'$上的局部自由模层图（D）。为在默认版心内保留图的全部箭头，使用如下缩写\cmt{V24-EAR015}{FR98手写图的中央为$\Omega^1_{X/S}$、下部为$\Omega^1_{Y/S}$，PS印刷第3页也正确；EN64却把这两项录成$\Omega^1_{X/Y}$，且对偶上标排法不清。正文依FR及PS恢复。$A,B,C,Q,R,L$仅为本译稿的排图缩写，右侧和中央的两条正合列、斜箭头$\mu,\nu$、左下行列式线丛箭头全部保留；所有在$Y$或$X$上的模均已沿相关态射拉回$V'$。}：
+\begin{gather*}
+ A=(\Pp^1_{X/Y})^\vee|_{V'},\qquad B=\Omega^1_{X/S}|_{V'},
+ \qquad C=\Omega^1_{X/Y}|_{V'},\\
+ Q=\Omega^1_{Y/S}|_{V'},\qquad R=\Omega^1_{V'/S},
+ \qquad L=\omega_{X/Y}^{-2}|_{V'}.
+\end{gather*}
+\[
+\begin{tikzcd}[row sep=1.6em,column sep=1.7em]
+ &&0\\
+ &&C\arrow[u]\\
+ 0\arrow[r]&A\arrow[r]\arrow[ur,"\mu"]&B\arrow[u]\arrow[r]&R\arrow[r]&0\\
+ &\Oa_{V'}\arrow[u]\arrow[r]&Q\arrow[u]\arrow[ur,"\nu"']\\
+ L\arrow[ur]&&0\arrow[u]
+\end{tikzcd}\tag{D}
+\]
+
+
+% EAR-P18
+竖直列来自光滑态射$X\to Y$及$Y\to S$的传递性正合列，再与$\Oa_{V'}$张量；因为列中各模都局部自由，所以张量后仍正合。横行是以下一般正合列的特例：在$X/S$上有一个局部自由模$F$的截面$\psi$，并取其零点概形$W$，则有
+\[
+ F^\vee\otimes_{\Oa_X}\Oa_W\longrightarrow
+ \Omega^1_{X/S}\otimes_{\Oa_X}\Oa_W\longrightarrow
+ \Omega^1_{W/S}\longrightarrow0.
+\]
+若$X/S$光滑，则第一个同态在点$w\in W$的余域纤维上单射，当且仅当$W/S$在$w$处光滑并具有“正确的”相对维数，即$X/S$的相对维数减去$F$的秩（在当前情形，这在每一点都成立）。\cmt{V24-EAR016}{FR99与EN64/PS都把“第一个同态单射”直接等同于光滑，并将光滑的相对底写成$X$；这不正确。Jacobian判据要求的是余域纤维上单射及所列预期余维，相对底应为$S$；它保证局部为分裂单射。原式首项还写$F^\vee\otimes\Oa_X$，应限制到$W$。反例：在特征0的尖点$B=k[x,y]/(y^2-x^3)$上，$B\to B^2$的$1\mapsto(-3x^2,2y)$是模单射，但原点纤维为零映射，曲线不光滑。故不能用抽象的层单射代替纤维秩条件。}
+这个正合列是第16节中下列正合列的直接结果（可以把这里的版本写成一个推论）\cmt{V24-EAR017}{$J$是$W$在$X$中的理想。FR99的末项误写$\Omega^1_{X/S}$，EN及PS照录；余法正合列的末项应为$\Omega^1_{W/S}$。由$F^\vee|_W\twoheadrightarrow J/J^2$复合即可得到前列。本注与上一注分开：修正末项类型并不能自行修正光滑判据。}：
+\[
+ J/J^2\longrightarrow\Omega^1_{X/S}\otimes\Oa_W
+ \longrightarrow\Omega^1_{W/S}\longrightarrow0.
+\]
+
+能够按上述纤维秩条件在列左端添上一个零的点，由Jacobian判据刻画。
+
+% EAR-P19
+注意，有典范同构\ednote{原稿中的$G$是拉长的字形。这个拉长的$G$是否就是切层？}\cmt{V24-EAR018}{FR99这段把相对下标写成$X/S$，两英文载体沿袭；但这里拆分的是图（D）中的$\Pp^1_{X/Y}$，其秩为$d+1$，故须全段校为$X/Y$。一阶主部的这个拆分来自增广$\Pp^1_{X/Y}\to\Oa_X$及第一因子的典范截面；不是对任意可逆模主部列宣称存在典范拆分。原英文编注保留，同时正文将确定的切层写作$\Tt$。}
+\[
+ \Pp^1_{X/Y}=\Omega^1_{X/Y}\oplus\Oa_X,
+ \qquad (\Pp^1_{X/Y})^\vee=\Tt_{X/Y}\oplus\Oa_X.
+\]
+
+
+另一方面，验证可知，图（D）中的复合同态$\mu$在因子$\Oa_{V'}$上为零，而在因子$\Tt_{X/Y}|_{V'}$上化为由前述截面$M(\varphi)$所给的同态$M(\varphi)'$。因此，在$x\in V'$处，$M(\varphi)$非退化，即$M(\varphi)'$满射，当且仅当$\mu$在$x$处满射。从图（D）又可看出，这等价于$\nu$在$x$处满射：两者都表示$\Omega^1_{X/S}|_{V'}$的上述两个子模之和到该模的典范同态在$x$处满射。\cmt{V24-EAR019}{FR99可辨为$\mu$、$\nu$；EN65及PS将两者分别录成$M$和$V$，并在$M(\varphi)'$附近标“字迹不清”。本版据法图及同态类型恢复可辨记号，不把英译误读移入正文。这里满射可在茎或余域纤维上检验；本段的等价来自同一环境模对两个局部直和因子的商，并不需要除以2。}
+由此得到：
+
+% EAR-P20
+\egas{7}{命题}
+在以上条件下（应在正式陈述中重新列出），$V(\varphi)^{\mathrm{sup\,sing}}$的底集恰为$V(\varphi)^{\mathrm{sing}}$中使态射
+\[
+ V(\varphi)^{\mathrm{sing}}\longrightarrow Y
+\]
+分歧的点集；这里源与靶都是在$S$上光滑的预概形，相对维数分别为$m-1$与$m$。
+
+用前辈的说法（可把这一点写成一条注），点$x\in V(\varphi)$相对于$Y$超奇异，当且仅当“它由至少两个重合的奇异点组成”……\cmt{V24-EAR020}{FR100只写“重合”；EN65及PS添加括号内“无穷邻近”的解释。此处是作者刻意保留的旧式形象说法，不是两个不同拓扑点相等的定义，也不应替代命题7的分歧判据。}
+
+% EAR-P21
+可以而且必须把命题7精确化为子预概形的相等，而不仅是子集的相等。事实上，$V(\varphi)^{\mathrm{sup\,sing}}$已定义为$X$的闭子预概形；同样也可以自然地定义$V'$的一个闭子预概形，其底集为相对于$Y$的分歧点集。只须描述局部自由模同态
+\[
+ Q=\Omega^1_{Y/S}|_{V'}\longrightarrow R=\Omega^1_{V'/S}
+\]
+不满射的点集。若它们的秩分别为$q,r$，这也就是
+\[
+ \bigwedge^r Q\longrightarrow\bigwedge^r R
+\]
+不满射的点集，亦即相应截面
+\begin{align*}
+ \mathscr Hom(\bigwedge^r Q,\bigwedge^r R)
+ &\simeq(\bigwedge^r Q)^\vee\otimes\det R\\
+ &\simeq\bigwedge^{q-r}Q\otimes\det R\otimes(\det Q)^{-1}
+\end{align*}
+的零点集。\cmt{V24-EAR021}{FR100的外幂上标$r$及$q-r$可以辨认，其右式是外幂对偶的标准类型；EN65及PS却出现$\Lambda^1Q$、$\Lambda\sqrt{M}$等破损式，并把目标模在$R,M$之间混写。正文统一目标为$R$，保留法稿给出的两种同构表达。所定义的理想是同态矩阵的$r$阶子式理想；若$r=0$，按$0$阶子式为1的约定，零点子概形为空。}
+于是得到上述截面的闭零点子预概形，记为$\operatorname{Ram}(V'/Y)$。我断言，这个子概形等于$V(\varphi)^{\mathrm{sup\,sing}}$。这是关于前图的一个简单练习：由$\mu$的上述描述，$V(\varphi)^{\mathrm{sup\,sing}}$是对同态
+\[
+ P=(\Pp^1_{X/Y})^\vee|_{V'}\longrightarrow
+ S_0=\Omega^1_{X/Y}|_{V'}
+\]
+使用刚才对$Q\to R$所用的相同构造而定义的。于是归结为下面的一般情形。\cmt{V24-EAR022}{法稿把这个商模也记为$S$，与基预概形$S$重名。本版在下面的线性代数论证中记作$S_0$，仅为区分对象。$\mu$相对于$P=\Tt_{X/Y}|_{V'}\oplus\Oa_{V'}$的矩阵是$(M(\varphi)'\;0)$，所以其$d$阶子式理想就是$(D(\varphi))$，不是仅在底集层面作比较。}
+
+% EAR-P22–P23
+在一个赋环空间$W$上有秩为$m_0$的局部自由模$M$，以及秩分别为$p,q$的两个局部自由子模$P,Q$，它们在$M$中各自局部为直和因子，并满足
+\[
+ p+q=m_0+1.
+\]
+对态射$P\to M/Q=S_0$及$Q\to M/P=R$应用上述构造，得到两个截面$a,b$，分别属于\cmt{V24-EAR023}{FR100--101的秩式为$p+q=m+1$、商模为$M/Q$；EN65--66和PS误录为$p+1=m+1$、$M/W$。本版用$m_0$区别于几何情形$Y/S$的维数$m$。法稿在证明理想相等时明确用到$P,Q$局部为直和因子，故这里在首次取商及行列式前列明该条件；仅要求子模本身局部自由，不足以保证商模局部自由。}
+\begin{align*}
+ &P\otimes\det S_0\otimes(\det P)^{-1}\\
+ &\quad\simeq P\otimes\det M\otimes(\det P)^{-1}\otimes(\det Q)^{-1},\\
+ &Q\otimes\det M\otimes(\det P)^{-1}\otimes(\det Q)^{-1}.
+\end{align*}
+
+也可把这两个截面视为从
+\[
+ L=\det P\otimes\det Q\otimes(\det M)^{-1}
+\]
+分别到$P,Q$的同态。\cmt{V24-EAR024}{EN66及PS在这句末因子漏去逆号，写作$\det M$；FR101正文该处的上标不够清楚，但同页图中明确写$\det M^{-1}$。行列式类型也唯一决定这里是$(\det M)^{-1}$，故正文采用逆线丛，不把法稿难辨字强认成同一英译错字。}
+（注意：对局部自由模$F$，以$\det F$表示其最高外幂；并使用如下事实：对这类模的短正合列
+\[
+ 0\longrightarrow F'\longrightarrow F\longrightarrow F''\longrightarrow0,
+\]
+有典范同构$\det F\simeq\det F'\otimes\det F''$。）
+
+% EAR-P24
+在此条件下，下图交换：
+\[
+\begin{tikzcd}[row sep=large,column sep=large]
+ P\arrow[r]&M\\
+ L=\det P\otimes\det Q\otimes(\det M)^{-1}\arrow[u,"a"]
+ \arrow[r,"b"]&Q\arrow[u]
+\end{tikzcd}
+\]
+（也许相差一个符号；这可能取决于定义所用某些典范同构时采用的约定，而这些约定涉及符号的选取……。）因此，理想$\mathscr I(a)$与$\mathscr I(b)$相等，因为$P,Q$在$M$中局部都是直和因子。\cmt{V24-EAR025}{FR101的记号是理想$\mathscr I(a),\mathscr I(b)$；EN66写“the ideals $V(a)$ and $V(b)$”，混用了理想和零点记号。正文恢复法稿区分。局部平凡化$L$后，$a$和$b$在$M$中的像至多相差符号；局部直和包含有左逆，所以向量在子模内和环境模内的坐标生成同一理想，得到理想相等。此解释不擅自固定作者仍保留的符号约定。PS末页在图前的“交换性”一句结束；本图及后文依FR101与EN66继续。}
+注意，在不属于$V(a)=V(b)$的点处，$L$恰好可认同于$P$与$Q$在$M$中的交。
+
+% EAR-P25
+为了把涉及$X/Y/S$及$\varphi$、由前图（D）描述的特殊情形完全说清，还须明确写出$a,b$。首先得到
+\begin{align*}
+ \det P&=\omega_{X/Y}^{-1}|_{V'},\\
+ \det Q&=\omega_{Y/S}|_{V'},\\
+ \det M&=\omega_{X/S}|_{V'}
+       =(\omega_{X/Y}\otimes\omega_{Y/S})|_{V'}.
+\end{align*}
+最后一个同构来自光滑态射$X\to Y$及$Y\to S$的$\Omega^1$传递性正合列。因此
+\[
+ L\simeq\omega_{X/Y}^{-2}|_{V'}.
+\]
+（注意，$\omega_{X/Y}$表示$\det\Omega^1_{X/Y}$。）
+
+% EAR-P26
+于是，同态$a$经过$(\Pp^1_{X/Y})^\vee|_{V'}$的因子$\Oa_{V'}$分解；作为到这个因子的同态，它恰由前面已经出现的截面$D=\det M(\varphi)'$确定（仍可能相差一个有待确定的符号）。当然，考虑引理所述的交换性，便可得到同态$b$。
+
+因此，非超奇异点恰好是使
+\[
+ a:\omega_{X/Y}^{-2}|_{V'}\longrightarrow\Oa_{V'}
+\]
+成为同构的点。在这些点处，因子$\Oa_{V'}$便恰好与
+$(\Pp^1_{X/Y})^\vee|_{V'}$和$\Omega^1_{Y/S}|_{V'}$
+在$\Omega^1_{X/S}|_{V'}$中的交相认同。
+\cmt{V24-EAR026}{FR102在交模一处漏去主部的对偶记号；EN67沿袭，并把前式的$\omega$录为$W$。只有$(\Pp^1_{X/Y})^\vee|_{V'}$经图（D）的余法映射嵌入环境模，故正文补回对偶。该同态的源是行列式线丛$\omega_{X/Y}^{-2}|_{V'}$。}
+于是，在由$V'$的非超奇异点组成的开子集$U$上，有正合列
+\[
+ 0\longrightarrow\Oa_U\longrightarrow
+ \Omega^1_{Y/S}|_U\longrightarrow\Omega^1_{V'/S}|_U
+ \longrightarrow0,
+\]
+以及正合列\cmt{V24-EAR027}{FR102及EN67第二列把末项写成$(\Omega^1_{X/Y}\oplus\Omega^1_{Y/S})|_{V'}$，这有实质错误：中项秩为$d+m$，原末项也是$d+m$，不可能再有秩1的核。正确末项为$M/Q\oplus M/P$，即$\Omega^1_{X/Y}|_U\oplus\Omega^1_{V'/S}|_U$，秩$d+m-1$。在$U$上$P+Q=M$、$P\cap Q\simeq\Oa_U$，故对两个商的映射满射且核正是此交。第一列的$\otimes$及下标$S$也按法稿及类型规范排印，不沿用旧中文中的$\times$、小写$s$。}
+\[
+ 0\longrightarrow\Oa_U\longrightarrow
+ \Omega^1_{X/S}|_U\longrightarrow
+ \Omega^1_{X/Y}|_U\oplus\Omega^1_{V'/S}|_U
+ \longrightarrow0.
+\]
+
+
+% EAR-P27
+应当用一个总结性命题归纳整个情形，并采用稍一般的形式，即从$X$上的某个可逆模$K$的截面$\varphi$出发；这要求把前面引入的若干模用$K$作扭曲。这正是超平面截面那一节中会遇到的情形。还应指出：把$\varphi$换成$u\varphi$，其中$u$为单位，并不改变$V(\varphi)^{\mathrm{sing}}$及$V(\varphi)^{\mathrm{sup\,sing}}$。事实上，$d\varphi|_{V(\varphi)}$和$M(\varphi)$都乘以$u$，而$D(\varphi)$乘以$u^d$，这里$d$是$X$相对于$Y$的维数。\cmt{V24-EAR028}{FR102页边手注给出单位倍的这一变化；EN67另用$M$表示相对维数，与本段环境模$M$冲突。本版沿全节记$d$。二阶初始项的单位缩放只在一阶主部已经消失的$V'$上使用；在整个$X$上直接写$d^2(u\varphi)=u\,d^2\varphi$会漏项。判别式乘一个单位的$d$次幂，所以连同其闭子概形结构也不变。}
+
+% EAR-P28–P29
+\noindent\textbf{注。}
+在上述关于$X,Y,S,\varphi$的条件下，并在以下将零点作为超曲面奇点讨论时假设$d\ge1$，
+\[
+ U=V(\varphi)^{\mathrm{sing}}\setminus
+ V(\varphi)^{\mathrm{sup\,sing}}
+\]
+在$Y$上非分歧，所以它在$Y$上的纤维是离散的。这意味着，对每个$y\in Y$，$X_y$中$\varphi_y$的每个奇异而非超奇异的零点，在奇异零点集合中都是孤立的；也就是说，它在$V(\varphi_y)/k(y)$的非光滑点集合中是孤立的。
+
+由此得出：若$d\ge3$，即所讨论的几何纤维超曲面局部维数$d-1\ge2$，这个点就是$V_y$在$k(y)$上的几何正规点（因为在此点附近，$V_y$是Cohen--Macaulay的）。\cmt{V24-EAR029}{FR102末至103首及EN67原写$d\ge2$；本节$d$是环境$X/Y$的相对维数，故阈值少了1。取$Y=\mathbb A^1_k$、$X=\mathbb A^2_k\times Y$、$S=\Spec k$、$\varphi=uv-t$，则$V'=\{u=v=t=0\}$在$S$上光滑且具有预期维数0，极化矩阵$\bigl(\begin{smallmatrix}0&1\\1&0\end{smallmatrix}\bigr)$可逆；但$t=0$纤维的节点$uv=0$是非正规的曲线奇点。因此不能在$d=2$保留原结论。正确论证是：几何扩域后，孤立超曲面奇点在维数至少2时满足$R_1$；超曲面满足$S_2$，由Serre判据得正规。原手写插入缩写“p.c.x.”仍未可靠解读，未据它补造一句证明。}
+
+更一般地，在定义1的条件下，并假设$\dim\Oa_{X,x}>0$，可以证明：若$x$是奇异而非超奇异的零点，则$x$是$V(\varphi)$的一个孤立奇点，所指的局部意义是$x$在$V(\varphi)$中的每个\emph{严格泛化点}$x'$都是$V(\varphi)$的正则点。\cmt{V24-EAR030}{FR103写“每个泛化点”，若包括$x$本身会与奇异性相矛盾，故明确为严格泛化点。原稿在这里只宣布可证，没有给证明；正文保留其陈述层次。本版的域上光滑情形补证与一般正则局部环境的断言分别记录，未把前者冒充后者在所有混合特征、非优良情形下的完整证明。}
+因而，若$V(\varphi)$的奇异点集是闭的，例如$X$是优良概形，并且$x$还是该奇异点集的闭点，则$x$也是这个奇异点集中的一个孤立点。\cmt{V24-EAR031}{FR103及EN67遗漏了$x$闭点这一限制。反例：特征不为2的域上取$X=\mathbb A^3_k$、$\varphi=uv$，并取奇异直线$u=v=0$的泛点$x$。$\Oa_{X,x}=k(w)[u,v]_{(u,v)}$中二次型$uv$非退化，$x$的严格泛化点都正则；然而$X$优良，奇异集仍是整条闭直线，$x$并不是其拓扑中的孤立点。加上$x$为闭点后，在局部诺特闭奇异集内，既没有严格泛化也没有严格特化的该点才给出孤立分支。}
+（若求周全，应当把这一结果收入第四章，但第16节似乎并不是适当的位置。应放在哪里呢？）
+
+于是，若$X$在域$k$上光滑且在所论点处具有正的相对维数，且$x$是一个几何奇异而非超奇异的零点，则$x$是$V(\varphi)$的非光滑点集合中的一个孤立点；而且，当相应几何超曲面在该点的局部维数至少为2，即光滑环境的相对维数至少为3时，该点几何正规。当这个超曲面的局部维数为1时，该奇点不正规；典型情形是仿射平面上的$\varphi=uv$，$u,v$为其坐标函数。\cmt{V24-EAR032}{FR103及EN68把两处维数对象都写成环境$X$，分别为$\dim_xX\ge2$和$\dim_xX=1$，但紧随的$uv$例的环境明明是二维仿射平面。应将阈值落实到超曲面：维数至少2时用$R_1+S_2$；一维诺特正规局部环为正则环，所以一维奇点不能正规。本版用几何纤维的局部维数消除原$\dim_x$在非闭点处的歧义。域上情形的孤立性可在几何点的光滑参数中用Hessian可逆及Nakayama引理验证，详见专项补证。}
+
+% EAR-P30
+下面给出一个类似于（D）的图，不过这一次取可逆模$K$的一个截面$\varphi$，并仍作相应的光滑性和预期维数假设。令$V'$为一阶主部截面$d^1\varphi$的零点预概形，并写\cmt{V24-EAR033}{EN68把左下项写作$\omega_{X/Y}^{-2}\otimes K^{-1}|_{V'}$；旧中文照录。FR103的手写$K$指数有覆盖修改，4倍裁切仍不足以可靠逐字判定作者最终指数，因此不将英文的$-1$武断归为法稿最终写法。类型计算唯一给出正文：主部正合列$0\to\Omega^1_{X/Y}\otimes K\to\Pp^1_{X/Y}(K)\to K\to0$使$\det A_K=(\omega_{X/Y}^{-1}\otimes K^{-(d+1)})|_{V'}$；再取$\det A_K\otimes\det Q\otimes(\det B)^{-1}$即为$L_K$。它到$K^{-1}|_{V'}$的箭头由属于$(\omega_{X/Y}^{\otimes2}\otimes K^d)|_{V'}$的判别式给出。原图所有箭头已保留，未将一般可逆模主部列擅自拆分。}
+\begin{gather*}
+ A_K=(\Pp^1_{X/Y}(K))^\vee|_{V'},\qquad
+ B=\Omega^1_{X/S}|_{V'},\quad C=\Omega^1_{X/Y}|_{V'},\\
+ Q=\Omega^1_{Y/S}|_{V'},\qquad R=\Omega^1_{V'/S},\qquad
+ L_K=(\omega_{X/Y}^{-2}\otimes K^{-(d+1)})|_{V'}.
+\end{gather*}
+\[
+\begin{tikzcd}[row sep=1.6em,column sep=1.7em]
+ &&0\\
+ &&C\arrow[u]\\
+ 0\arrow[r]&A_K\arrow[r]\arrow[ur,"\mu"]&B\arrow[u]\arrow[r]&R\arrow[r]&0\\
+ &K^{-1}|_{V'}\arrow[u]\arrow[r]&Q\arrow[u]\arrow[ur,"\nu"']\\
+ L_K\arrow[ur]&&0\arrow[u]
+\end{tikzcd}\tag{$D_K$}
+\]
+
+\endgroup
+% End early: next source is crossed-out editorial introduction, FR104 / EN68 below diagram.

@@ -1,0 +1,104 @@
+{
+  "schema_version": 1,
+  "edition": 24,
+  "reviewer": "/root/v24_early",
+  "review_method": "actual_image_view",
+  "document": "report",
+  "pdf": {
+    "path": "report.pdf",
+    "sha256": "880401177de97018c46ca7a8cd5d67fc0fcc5f81798c7d10f4ecdfc5f678f9e9"
+  },
+  "rendering": {
+    "renderer": "PyMuPDF",
+    "scale": 1.5,
+    "colorspace": "RGB",
+    "alpha": false
+  },
+  "date": "2026-11-26",
+  "scope": "Final integrated edition 24; only the explicitly listed newly revised early-section pages. This record is separate from standalone preview review.",
+  "pages": [
+    {
+      "physical_page": 27,
+      "printed_page": 5,
+      "image": "checks/visual_v24_early/audit_0027.png",
+      "workspace_image": "/workspace/scratch/a886fd56dd2f/v24_work/early/final_qa/images/audit_0027.png",
+      "image_sha256": "cf72434d3bec730b5c972d1e6fd34b8df0008a16d6253d5893657f081d6f4d8a",
+      "verdict": "pass",
+      "notes": "报告标题、范围和A01开头完整；三列表格首段行宽适合版心，表头和第一组来源行未见裁切。"
+    },
+    {
+      "physical_page": 28,
+      "printed_page": 6,
+      "image": "checks/visual_v24_early/audit_0028.png",
+      "workspace_image": "/workspace/scratch/a886fd56dd2f/v24_work/early/final_qa/images/audit_0028.png",
+      "image_sha256": "2059e521e6092c50cfa7e3c82b383893429e16f04512cf4e9629aef48861b121",
+      "verdict": "pass",
+      "notes": "A01三列表格续页完整、表头重复正常；末端FR103行、表格底线和A02标题均清楚。"
+    },
+    {
+      "physical_page": 29,
+      "printed_page": 7,
+      "image": "checks/visual_v24_early/audit_0029.png",
+      "workspace_image": "/workspace/scratch/a886fd56dd2f/v24_work/early/final_qa/images/audit_0029.png",
+      "image_sha256": "2545ab70041668cb242992b5865641702edafd5d2445eea69bde7c87e2f739df",
+      "verdict": "pass",
+      "notes": "特征2极化矩阵、射影光滑反例、尖点重数与零秩例外完整；A03标题和主部分解式可读。"
+    },
+    {
+      "physical_page": 30,
+      "printed_page": 8,
+      "image": "checks/visual_v24_early/audit_0030.png",
+      "workspace_image": "/workspace/scratch/a886fd56dd2f/v24_work/early/final_qa/images/audit_0030.png",
+      "image_sha256": "565f96ac25a10ff13ac61764f9d87e85bdc6c1dc103fee3c950e046336aabf76",
+      "verdict": "pass",
+      "notes": "常数因子、Hessian矩阵、Jacobian纤维条件及尖点映射完整；A04秩条件和行列式类型开头未见截断。"
+    },
+    {
+      "physical_page": 31,
+      "printed_page": 9,
+      "image": "checks/visual_v24_early/audit_0031.png",
+      "workspace_image": "/workspace/scratch/a886fd56dd2f/v24_work/early/final_qa/images/audit_0031.png",
+      "image_sha256": "329a96afed0a9c3657bb0db4106065ef2bd4db5adfdf55a10d6c03d3bc9f2b51",
+      "verdict": "pass",
+      "notes": "最大子式/Fitting理想证明和闭子概形等式完整；A05共同线及两种商模构造含页末公式均可读。"
+    },
+    {
+      "physical_page": 32,
+      "printed_page": 10,
+      "image": "checks/visual_v24_early/audit_0032.png",
+      "workspace_image": "/workspace/scratch/a886fd56dd2f/v24_work/early/final_qa/images/audit_0032.png",
+      "image_sha256": "8c96d10bcd5da1abad5909c52717b6a751480959463b74fc65936c16f968d848",
+      "verdict": "pass",
+      "notes": "A05末段和A06全部扭曲计算完整；主部正合列、det公式、Hom类型及手写指数保留说明未见越界。"
+    },
+    {
+      "physical_page": 33,
+      "printed_page": 11,
+      "image": "checks/visual_v24_early/audit_0033.png",
+      "workspace_image": "/workspace/scratch/a886fd56dd2f/v24_work/early/final_qa/images/audit_0033.png",
+      "image_sha256": "a31b39a21525cb24fb57de3a35b3c663a51bbe5eadb51a447d37aee273312b0a",
+      "verdict": "pass",
+      "notes": "A07独立域上Hessian证明、正规维数阈值、uv-t反例及非闭泛点反例完整；长段落与公式未裁切。"
+    },
+    {
+      "physical_page": 34,
+      "printed_page": 12,
+      "image": "checks/visual_v24_early/audit_0034.png",
+      "workspace_image": "/workspace/scratch/a886fd56dd2f/v24_work/early/final_qa/images/audit_0034.png",
+      "image_sha256": "ff194ce6045e0c5356fa523929e4d961b77d93d099477099d451401f33db0f09",
+      "verdict": "pass",
+      "notes": "A07证明限度明确可读；A08旧附记迁移表第一部分完整，无表格重叠或超出版心。"
+    },
+    {
+      "physical_page": 35,
+      "printed_page": 13,
+      "image": "checks/visual_v24_early/audit_0035.png",
+      "workspace_image": "/workspace/scratch/a886fd56dd2f/v24_work/early/final_qa/images/audit_0035.png",
+      "image_sha256": "0794f82f89ffce8990ce38df81adebdf510f02653a902f321d7b4e41a1f90d82",
+      "verdict": "pass",
+      "notes": "A08迁移表续页表头与最后一行正常；继承说明末段完整，后方为正常留白。"
+    }
+  ],
+  "unresolved_visual_findings": [],
+  "whole_book_human_page_by_page_review": false
+}

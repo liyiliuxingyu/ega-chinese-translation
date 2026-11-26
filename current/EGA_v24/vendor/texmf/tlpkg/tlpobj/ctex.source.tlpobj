@@ -1,0 +1,10 @@
+name ctex.source
+category Package
+revision 66115
+shortdesc source files of ctex
+relocated 1
+srcfiles size=122
+ RELOC/source/latex/ctex/ctex-zhconv-make.lua
+ RELOC/source/latex/ctex/ctex.dtx
+ RELOC/source/latex/ctex/ctex.ins
+ RELOC/source/latex/ctex/ctexpunct.spa

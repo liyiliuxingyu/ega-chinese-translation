@@ -1,0 +1,137 @@
+{
+  "edition": 24,
+  "source_record_sha256": "db8867b8690874abcdf694cc985b2bfe229812e4e43f8360f249519ecb3792dd",
+  "purpose": "Mechanical schema/path normalization of root actual observations; no human judgement added.",
+  "images": [
+    {
+      "original_image": "v24_work/root_review/final_qa/main_0001.png",
+      "project_relative_image": "checks/visual_v24_root/main_0001.png",
+      "sha256": "fb265ce1f8fd59bcb39e547258a2a24e68f201915fa6d4f9bb220c2efb894878"
+    },
+    {
+      "original_image": "v24_work/root_review/final_qa/main_0003.png",
+      "project_relative_image": "checks/visual_v24_root/main_0003.png",
+      "sha256": "29c2c2908208473e4d9af8943cf4d824787f7caaa4fd14208fee9f14be306b37"
+    },
+    {
+      "original_image": "v24_work/root_review/final_qa/main_0004.png",
+      "project_relative_image": "checks/visual_v24_root/main_0004.png",
+      "sha256": "aa7193e172f270b6ccb5c9e9dcdb24f7a26909cd03b66a6bd7f7b2e84da9f1da"
+    },
+    {
+      "original_image": "v24_work/root_review/final_qa/main_0005.png",
+      "project_relative_image": "checks/visual_v24_root/main_0005.png",
+      "sha256": "bf2dface43cb7b7223cf61ff804cd6f5cb5120239406dc6d664145142b5d0755"
+    },
+    {
+      "original_image": "v24_work/root_review/final_qa/main_0017.png",
+      "project_relative_image": "checks/visual_v24_root/main_0017.png",
+      "sha256": "e222292446557e6132a7c39c76edfaf5d7a882180485cefd5d74a346536fafef"
+    },
+    {
+      "original_image": "v24_work/root_review/final_qa/main_0946.png",
+      "project_relative_image": "checks/visual_v24_root/main_0946.png",
+      "sha256": "1bca0900cf909b0834130e95107784d9a80d351515e0813019cf712f4bf790e1"
+    },
+    {
+      "original_image": "v24_work/root_review/final_qa/main_0947.png",
+      "project_relative_image": "checks/visual_v24_root/main_0947.png",
+      "sha256": "d1325401e3cf92628d26951cb14585c04ab219fa54cf802039991b1d3b613e17"
+    },
+    {
+      "original_image": "v24_work/root_review/final_qa/main_0956.png",
+      "project_relative_image": "checks/visual_v24_root/main_0956.png",
+      "sha256": "08cd2edbcc78533925e2b66e1732a4ceccf27b75558dc59636a1917284098471"
+    },
+    {
+      "original_image": "v24_work/root_review/final_qa/main_0964.png",
+      "project_relative_image": "checks/visual_v24_root/main_0964.png",
+      "sha256": "c2662843cbba91bbd40fb7161084d24edca4243259c7ba05e91a02577a342314"
+    },
+    {
+      "original_image": "v24_work/root_review/final_qa/main_0965.png",
+      "project_relative_image": "checks/visual_v24_root/main_0965.png",
+      "sha256": "dea8886830ad5a26c612bc1d80162cd3cc6e32421806a90a3d1527c71a1ba1e8"
+    },
+    {
+      "original_image": "v24_work/root_review/final_qa/report_0001.png",
+      "project_relative_image": "checks/visual_v24_root/report_0001.png",
+      "sha256": "94c7d5791ddeb503aee5bd5d1ba379e693d2ab7ed2653f58066b586660958629"
+    },
+    {
+      "original_image": "v24_work/root_review/final_qa/report_0003.png",
+      "project_relative_image": "checks/visual_v24_root/report_0003.png",
+      "sha256": "c271d7117f3496c4f5c3a16139ffd63bac60c2844fc770fc7b75494775d2c223"
+    },
+    {
+      "original_image": "v24_work/root_review/final_qa/report_0005.png",
+      "project_relative_image": "checks/visual_v24_root/report_0005.png",
+      "sha256": "7d3aff54323bb57f31c16881d221e27f2ef2ac60140af31b9669df215b9a6a86"
+    },
+    {
+      "original_image": "v24_work/root_review/final_qa/report_0006.png",
+      "project_relative_image": "checks/visual_v24_root/report_0006.png",
+      "sha256": "7472960312d189a7ba59db25ef7e99cc390f4932d3e141505bbdb0699e4c8523"
+    },
+    {
+      "original_image": "v24_work/root_review/final_qa/report_0023.png",
+      "project_relative_image": "checks/visual_v24_root/report_0023.png",
+      "sha256": "825cbc7b802221bcb1cc41e1a7baa540d82b8e3222d10b8adb4674106a8b67b7"
+    },
+    {
+      "original_image": "v24_work/root_review/final_qa/report_0024.png",
+      "project_relative_image": "checks/visual_v24_root/report_0024.png",
+      "sha256": "b386ecff73e6f40a4d11d3ed52ed8ef851c095562fa2bceb2a88df01863c8480"
+    },
+    {
+      "original_image": "v24_work/root_review/final_qa/report_0025.png",
+      "project_relative_image": "checks/visual_v24_root/report_0025.png",
+      "sha256": "b5315e1f74b1c509dc6a3e1738693c2f6349d62ee270bc47b3d833a686667fcb"
+    },
+    {
+      "original_image": "v24_work/root_review/final_qa/report_0026.png",
+      "project_relative_image": "checks/visual_v24_root/report_0026.png",
+      "sha256": "f305e3d906fbd6dd47d8535f3335e8921accba701b97838281420f064683083c"
+    },
+    {
+      "original_image": "v24_work/root_review/final_qa/report_0027.png",
+      "project_relative_image": "checks/visual_v24_root/report_0027.png",
+      "sha256": "cf72434d3bec730b5c972d1e6fd34b8df0008a16d6253d5893657f081d6f4d8a"
+    },
+    {
+      "original_image": "v24_work/root_review/final_qa/report_0035.png",
+      "project_relative_image": "checks/visual_v24_root/report_0035.png",
+      "sha256": "0794f82f89ffce8990ce38df81adebdf510f02653a902f321d7b4e41a1f90d82"
+    },
+    {
+      "original_image": "v24_work/root_review/final_qa/report_0036.png",
+      "project_relative_image": "checks/visual_v24_root/report_0036.png",
+      "sha256": "3d1924bf2a4bfaffb4745c90e042664d4d5c25ef0a9a70ec6fc9dc99f94adbb4"
+    },
+    {
+      "original_image": "v24_work/root_review/final_qa/report_0037.png",
+      "project_relative_image": "checks/visual_v24_root/report_0037.png",
+      "sha256": "0fbfb06baac574df71978dc27dfe9516cf747ff103360ecdf15771b4461948f4"
+    },
+    {
+      "original_image": "v24_work/root_review/final_qa/report_0045.png",
+      "project_relative_image": "checks/visual_v24_root/report_0045.png",
+      "sha256": "ddd13971af9e5d9084d0a1d1907d12d30c7b006f48f284c97f59bdd8e2e7da60"
+    },
+    {
+      "original_image": "v24_work/root_review/final_qa/report_0046.png",
+      "project_relative_image": "checks/visual_v24_root/report_0046.png",
+      "sha256": "b8aea34b4634da90a15ca6e7c71ee3624f26a6193bb1d3f06369772ee31f115c"
+    },
+    {
+      "original_image": "v24_work/root_review/final_qa/report_0047.png",
+      "project_relative_image": "checks/visual_v24_root/report_0047.png",
+      "sha256": "fdefb0b82b6129ef6d2423c6d1f7b6bb1f0b1b4a5d78702fb44880a7aeb794d2"
+    },
+    {
+      "original_image": "v24_work/root_review/final_qa/report_0048.png",
+      "project_relative_image": "checks/visual_v24_root/report_0048.png",
+      "sha256": "1bca0900cf909b0834130e95107784d9a80d351515e0813019cf712f4bf790e1"
+    }
+  ]
+}

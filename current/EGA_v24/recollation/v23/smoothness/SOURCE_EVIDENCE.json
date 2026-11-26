@@ -1,0 +1,212 @@
+{
+  "edition": 23,
+  "agent": "/root/v23_smoothness",
+  "recorded_at_utc": "2026-11-26T03:07:40.713161+00:00",
+  "scope": {
+    "french": "physical93 from Il faut une condition sur through physical94 end",
+    "english": "physical61 corresponding passage through section15 end",
+    "next_french_physical": 95,
+    "next_english_physical": 62,
+    "next_title": "New EGA V / Singular and supersingular set of a function and differential criteria"
+  },
+  "source_files": [
+    {
+      "path": "/workspace/scratch/a886fd56dd2f/repository/archive_20261121/03_sources/EGA5_francais.pdf",
+      "sha256": "24cf8204184b58b18a46e5f63ecc36d6e791b3c8c96a09daac93de96ebd8e830",
+      "physical_pages": 171
+    },
+    {
+      "path": "/workspace/scratch/a886fd56dd2f/repository/archive_20261121/03_sources/EGAVaiello.pdf",
+      "sha256": "23a20ef32fd16a1bd623c0c08ac080d04fc94f248de12133b713a19d6b0330d9",
+      "physical_pages": 112
+    }
+  ],
+  "actual_source_image_views": [
+    {
+      "path": "/workspace/scratch/a886fd56dd2f/v23_work/source/EGA5_francais_93.png",
+      "sha256": "cb9ac681cd4fcad62ab6d9ff52601976db3f9f1d97970de8c6c048d6695feb60",
+      "physical_page": 93,
+      "actual_view_image_used": true,
+      "role": "body source"
+    },
+    {
+      "path": "/workspace/scratch/a886fd56dd2f/v23_work/source/EGA5_francais_94.png",
+      "sha256": "a4f5bb8a5a92bbb1e6c2723b10e32833d56a44c9cea027d7d565e40c3aa90210",
+      "physical_page": 94,
+      "actual_view_image_used": true,
+      "role": "body source"
+    },
+    {
+      "path": "/workspace/scratch/a886fd56dd2f/v23_work/source/EGA5_francais_95.png",
+      "sha256": "8d0ea815f6bb823b3619d131cf112ccfaa1bad0c8ab4f734464c53c01d727db2",
+      "physical_page": 95,
+      "actual_view_image_used": true,
+      "role": "next-section boundary only"
+    },
+    {
+      "path": "/workspace/scratch/a886fd56dd2f/v23_work/source/EGAVaiello_61.png",
+      "sha256": "c118cc5d92f89e767a14d095e2309b0057ba086e30517761694e86202734b53e",
+      "physical_page": 61,
+      "actual_view_image_used": true,
+      "role": "body source"
+    },
+    {
+      "path": "/workspace/scratch/a886fd56dd2f/v23_work/source/EGAVaiello_62.png",
+      "sha256": "6db6d60dc9904b7bc02c27ac855cf82b7e9afc66e7e4b4bb72cb99e61e96bf74",
+      "physical_page": 62,
+      "actual_view_image_used": true,
+      "role": "next-section boundary only"
+    },
+    {
+      "path": "/workspace/scratch/a886fd56dd2f/v23_work/contributions/smoothness/fr93_mid.png",
+      "sha256": "88f41208fb6853166c0d5563131c6db62015a11df760ac56ccc46133b5c02cc4",
+      "physical_page": 93,
+      "actual_view_image_used": true,
+      "role": "high-resolution reread of source handwriting and wrong morphism"
+    },
+    {
+      "path": "/workspace/scratch/a886fd56dd2f/v23_work/contributions/smoothness/fr93_bottom.png",
+      "sha256": "39cd55f66692358aa989f241c32b4f3ac4b2f2fe856ba375a3035177ec2d19ec",
+      "physical_page": 93,
+      "actual_view_image_used": true,
+      "role": "high-resolution reread of source handwriting and wrong morphism"
+    }
+  ],
+  "body": {
+    "path": "/workspace/scratch/a886fd56dd2f/v23_work/contributions/smoothness/v23_section15_smoothness.tex",
+    "bytes": 8568,
+    "sha256": "7fe9357f60d1bda1243ae2fe81cc12279946f5dd4ebaadfd02b1890554ea28b6",
+    "new_notes": 12
+  },
+  "report": {
+    "path": "/workspace/scratch/a886fd56dd2f/v23_work/contributions/smoothness/v23_section15_smoothness_audit.tex",
+    "bytes": 14898,
+    "sha256": "aa53c8be5bd9138317aa5ded569999cfc3b9c411320d22d39a4f635e5fd465eb",
+    "new_audits": 6
+  },
+  "paragraph_map": [
+    {
+      "note": "V23-SMO001",
+      "source": "FR93: Il faut une condition sur through non ramifié; EN61 same paragraph",
+      "classification": "unfilled original object and generic fiber qualification"
+    },
+    {
+      "note": "V23-SMO002",
+      "source": "FR93 handwritten quasi-finite and algebraically closed insertions; EN61",
+      "classification": "original assumptions, retained"
+    },
+    {
+      "note": "V23-SMO003",
+      "source": "FR93 middle good conditions and negated quantifier; EN61",
+      "classification": "source typo/omitted fiber subscript and quantifier restoration"
+    },
+    {
+      "note": "V23-SMO004",
+      "source": "FR93 constructible and dimension bound; EN61 ???",
+      "classification": "English editorial question marks removed from body; constructibility independently proved"
+    },
+    {
+      "note": "V23-SMO005",
+      "source": "FR93 last paragraph proof transition; EN61",
+      "classification": "translator proof repair using reduction and common generic-flatness open; nonreduced-base counterexample"
+    },
+    {
+      "note": "V23-SMO006",
+      "source": "FR93 final three lines: underlined P -> P ramifié; EN61",
+      "classification": "confirmed original wrong morphism, corrected to incidence j / fiber q_xi"
+    },
+    {
+      "note": "V23-SMO007",
+      "source": "FR93 final dimension estimate; EN61",
+      "classification": "independent Jacobian and quasi-finite uniform dimension proof"
+    },
+    {
+      "note": "V23-SMO008",
+      "source": "FR94 first line N=dimG and generic smoothness; EN61 missing G",
+      "classification": "English omission restored; corrected proof uses dimU=dimG"
+    },
+    {
+      "note": "V23-SMO009",
+      "source": "FR94 second and third lines: 2.12 à 2.18; EN61 replacement by No.5",
+      "classification": "complete omitted French sentence restored, blanket generalization not claimed proved"
+    },
+    {
+      "note": "V23-SMO010",
+      "source": "FR94 next paragraph through par.8,9,12; EN61",
+      "classification": "full author research prose, conditional constructible transfer explained"
+    },
+    {
+      "note": "V23-SMO011",
+      "source": "FR94 7.1,7.2,7.3; quant aux ...7.4 through Zariski; EN61",
+      "classification": "misplaced prime and English uncertainty corrected; rational-point condition explained"
+    },
+    {
+      "note": "V23-SMO012",
+      "source": "FR94 final paragraph through final sentence; EN61",
+      "classification": "negative n'est pas verified, second 8.7(c) restored; historical gap remains"
+    }
+  ],
+  "layout_adjustments": [
+    {
+      "note": "V23-SMO003",
+      "action": "moved unchanged complete footnote from after itemize to the preceding introductory sentence before itemize"
+    },
+    {
+      "note": "V23-SMO007",
+      "action": "moved unchanged complete footnote from after display to the preceding dimension-estimate introductory sentence"
+    }
+  ],
+  "independent_math_checks": [
+    "P2 incidence counterexample for wrong total-space ramification condition",
+    "dual-number parameter counterexample for relative smoothness without flatness",
+    "Frobenius family showing dimension axiom independent and generic regular field not smooth",
+    "finite flattening stratification and rank conditions prove constructibility",
+    "common generic-flatness open in G_red preserves generic fiber",
+    "transverse fiber product by Jacobian and quasi-finite dimension count",
+    "rationality plus infinite field implies density of rational points in nonempty opens"
+  ],
+  "uncertainties": [
+    "object after original sur remains unfilled/unrecoverable",
+    "blanket 2.12--2.18 and other paragraph generalizations not all individually proved",
+    "historical 8.7(c),8.8,9.5 gaps remain"
+  ],
+  "references": [
+    {
+      "tag": "052A",
+      "url": "https://stacks.math.columbia.edu/tag/052A",
+      "actually_opened": true,
+      "access_date": "2026-11-26"
+    },
+    {
+      "tag": "01V9",
+      "url": "https://stacks.math.columbia.edu/tag/01V9",
+      "actually_opened": true,
+      "access_date": "2026-11-26"
+    },
+    {
+      "tag": "054K",
+      "url": "https://stacks.math.columbia.edu/tag/054K",
+      "actually_opened": true,
+      "access_date": "2026-11-26"
+    },
+    {
+      "tag": "02G3",
+      "url": "https://stacks.math.columbia.edu/tag/02G3",
+      "actually_opened": true,
+      "access_date": "2026-11-26"
+    },
+    {
+      "tag": "05F6",
+      "url": "https://stacks.math.columbia.edu/tag/05F6",
+      "actually_opened": true,
+      "access_date": "2026-11-26"
+    },
+    {
+      "tag": "0H3Y",
+      "url": "https://stacks.math.columbia.edu/tag/0H3Y",
+      "actually_opened": true,
+      "access_date": "2026-11-26"
+    }
+  ],
+  "verification_scope": "Module preview only; final integrated PDF review remains a separate required step."
+}

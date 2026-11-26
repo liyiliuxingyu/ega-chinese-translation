@@ -1,0 +1,14 @@
+{
+  "edition": 23,
+  "baseline_commit": "a1e4d5b58aee845096b7bae25e7e1e7e9482d7fa",
+  "actual_strict_verification": {
+    "ok": true,
+    "files_checked": 6578,
+    "verified_bytes": 1634724281,
+    "problems": []
+  },
+  "copied_at_utc": "2026-11-26T02:57:28.767391+00:00",
+  "source": "/workspace/scratch/a886fd56dd2f/repository/current/EGA_v22",
+  "work": "/workspace/scratch/a886fd56dd2f/v23_work/EGA_v23",
+  "scope": "Actual repository verification followed by a separate working copy; no new mathematical review or build claimed."
+}

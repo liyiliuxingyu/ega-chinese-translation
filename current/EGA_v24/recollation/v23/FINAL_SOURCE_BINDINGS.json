@@ -1,0 +1,39 @@
+{
+  "edition": 23,
+  "pass": true,
+  "root_review_record": "recollation/v23/root_review/FINAL_SOURCE_REVIEW.json",
+  "root_review_sha256": "de472e9e4034289929056dba6d500bfcd025133b84ce21211cb3cf89de8168ed",
+  "files": [
+    {
+      "root_review_source_path": "contributions/setup/v23_section15_setup.tex",
+      "project_relative_path": "continuations/v23_section15_setup.tex",
+      "bytes": 11229,
+      "sha256": "002dcbfc52a2786247016cafcb6f92da1349c7e35553851d70e0c951e8a6ca0f"
+    },
+    {
+      "root_review_source_path": "contributions/setup/v23_section15_setup_audit.tex",
+      "project_relative_path": "reports/v23_section15_setup_audit.tex",
+      "bytes": 18506,
+      "sha256": "240eb816b4f62ca2c359c42ed5db08d45eef6e7d2886124a9ede205d7f1d70e0"
+    },
+    {
+      "root_review_source_path": "contributions/smoothness/v23_section15_smoothness.tex",
+      "project_relative_path": "continuations/v23_section15_smoothness.tex",
+      "bytes": 8568,
+      "sha256": "7fe9357f60d1bda1243ae2fe81cc12279946f5dd4ebaadfd02b1890554ea28b6"
+    },
+    {
+      "root_review_source_path": "contributions/smoothness/v23_section15_smoothness_audit.tex",
+      "project_relative_path": "reports/v23_section15_smoothness_audit.tex",
+      "bytes": 14898,
+      "sha256": "aa53c8be5bd9138317aa5ded569999cfc3b9c411320d22d39a4f635e5fd465eb"
+    },
+    {
+      "root_review_source_path": "EGA_v23/reports/v23_integration_audit.tex",
+      "project_relative_path": "reports/v23_integration_audit.tex",
+      "bytes": 6538,
+      "sha256": "ee5558769cd9b8392c0b02a2ba1c8638d33ed3b956cb79e5a2f8442c94b7d296"
+    }
+  ],
+  "scope": "Current active mathematical sources match actually reviewed frozen source bytes. This does not stand in for PDF layout review."
+}

@@ -1,0 +1,127 @@
+{
+  "schema_version": 1,
+  "edition": 23,
+  "reviewer": "/root",
+  "review_method": "actual_image_view",
+  "reviewed_utc": "2026-11-26T03:18:45.138228+00:00",
+  "document": "report",
+  "pdf": {
+    "path": "report.pdf",
+    "sha256": "611f26e969163d63dcae1645bed7625abce3750e1a791d59954dcf6a44da8985"
+  },
+  "rendering": {
+    "renderer": "PyMuPDF",
+    "scale": 1.55,
+    "colorspace": "RGB",
+    "alpha": false,
+    "full_page": true
+  },
+  "pages": [
+    {
+      "physical_page": 1,
+      "image": "checks/visual_v23/root_report/report-0001.png",
+      "image_sha256": "cf45a76d22561c1afd780d9348eba374aad937170121aa6df551dc16ceda22d9",
+      "verdict": "pass",
+      "notes": "实际显示整页：第二十三版标题、第一篇第15节回校副题及作者说明均居中、完整，未见缺字或裁切。"
+    },
+    {
+      "physical_page": 3,
+      "image": "checks/visual_v23/root_report/report-0003.png",
+      "image_sha256": "61f10b63ec0626c01ed2e6d4435b03a17ce849cb3dfadce03cff375de9636f93",
+      "verdict": "pass",
+      "notes": "实际显示整页：范围说明明确新回校与历史核查的界限，段落、页码iii和留白正常，没有重叠。"
+    },
+    {
+      "physical_page": 5,
+      "image": "checks/visual_v23/root_report/report-0005.png",
+      "image_sha256": "73db74c46dba0932399bff3b20e2547561353543a5f67ef0974e3afaac6d66e3",
+      "verdict": "pass",
+      "notes": "实际显示整页：新15项报告目录及两专题章题均显示，点线与页码列分开，长标题在版心内；开始接第二十二版目录。"
+    },
+    {
+      "physical_page": 6,
+      "image": "checks/visual_v23/root_report/report-0006.png",
+      "image_sha256": "663a3c78ce69e8ca18d01c91c30abde84986c3584b79c80840fd3435c88296ee",
+      "verdict": "pass",
+      "notes": "实际显示整页：承接第二十二版目录并进入第二十一版目录，长条目正常换行，右侧页码没有遮挡或越界。"
+    },
+    {
+      "physical_page": 20,
+      "image": "checks/visual_v23/root_report/report-0020.png",
+      "image_sha256": "1acdd478f0a611d7b000c9c8555c21f8e7a2e34047b4f206ea48dbca69407c8e",
+      "verdict": "pass",
+      "notes": "实际显示整页：目录末页包含第一、第二卷历史核查和核验来源，编号、点线和页码507完整；未见条目裁切。"
+    },
+    {
+      "physical_page": 21,
+      "image": "checks/visual_v23/root_report/report-0021.png",
+      "image_sha256": "17cc46dae086beac8466388edbe36d0cd7007bea88bde7cfe13a09600a22b26a",
+      "verdict": "pass",
+      "notes": "实际显示整页：综合报告章题正常分两行；V23-INT01至INT02的实际范围和正文订正开头连续，长路径在版心内。"
+    },
+    {
+      "physical_page": 22,
+      "image": "checks/visual_v23/root_report/report-0022.png",
+      "image_sha256": "b3ef8b4083ebb5a214846348af1602d4ef15fd1899ada80ad6a67209b14c25c2",
+      "verdict": "pass",
+      "notes": "实际显示整页：混维例续文、双数底、正确非分歧态射及缩底修补清楚；底部INT03有标题与首段，无标题孤悬或裁切。"
+    },
+    {
+      "physical_page": 23,
+      "image": "checks/visual_v23/root_report/report-0023.png",
+      "image_sha256": "ab32f2d25b1b65778d998091ae22370e594072f901fcef175d16ba8a3886c495",
+      "verdict": "pass",
+      "notes": "实际显示整页：保留202源和40Dot模块说明、默认类格式核查、下一V.1接点与未完成边界完整，路径正常换行，无重叠。"
+    },
+    {
+      "physical_page": 24,
+      "image": "checks/visual_v23/root_report/report-0024.png",
+      "image_sha256": "8716662dab2406c299ecfa58a557111848abefc204326a9a12f0158cd2a87062",
+      "verdict": "pass",
+      "notes": "实际显示整页：只有页眉与印刷页码4，符合下一报告章从奇数页开始的ctexbook分页，不是内容丢失。"
+    },
+    {
+      "physical_page": 41,
+      "image": "checks/visual_v23/root_report/report-0041.png",
+      "image_sha256": "c9e6c679c21c53b38802914909cb3e2be48272371692c84c976ab6e3501617e9",
+      "verdict": "pass",
+      "notes": "实际显示整页：第二十二版历史报告分部页标题和印刷页码21居中完整，留白符合默认分部页。"
+    },
+    {
+      "physical_page": 42,
+      "image": "checks/visual_v23/root_report/report-0042.png",
+      "image_sha256": "6dbbb363c4176d14b08bd8b5d218d6859d286ea823292ad1d502fbe583faf841",
+      "verdict": "pass",
+      "notes": "实际显示整页：全白的默认分部背面页，无残留正文或意外图形；与前后物理41/43页衔接一致。"
+    },
+    {
+      "physical_page": 43,
+      "image": "checks/visual_v23/root_report/report-0043.png",
+      "image_sha256": "a4a3bfe9d56f9e6ed767f41ec684567f7bfa7cc6fe2ae874c72a1a553a8587a7",
+      "verdict": "pass",
+      "notes": "实际显示整页：历史报告编排说明与印刷页码23完整，明确旧“本轮”指原版次。"
+    },
+    {
+      "physical_page": 44,
+      "image": "checks/visual_v23/root_report/report-0044.png",
+      "image_sha256": "9566b9b96349343b86bcc11b8c64c39a458c914615e3896b72ddbb4109c11364",
+      "verdict": "pass",
+      "notes": "实际显示整页：仅有印刷页码24的默认章前偶数页；后页历史章起正常，不把此页当作缺文。"
+    },
+    {
+      "physical_page": 45,
+      "image": "checks/visual_v23/root_report/report-0045.png",
+      "image_sha256": "216d681f62ad6762f5e3ec76dcc3d193acdaa8f5923891600e97d7b220dded75",
+      "verdict": "pass",
+      "notes": "实际显示整页：第二十二版旧综合报告起页、三栏来源对照表和表下范围文字均完整，表内换行正常无挤出。"
+    },
+    {
+      "physical_page": 527,
+      "image": "checks/visual_v23/root_report/report-0527.png",
+      "image_sha256": "7c38c5d572356e3e5d843da17692e8cd5e570b1234cd86a67f6059c537f867d7",
+      "verdict": "pass",
+      "notes": "实际显示整页：继承核验来源末页507的4条文献和范围说明完整，法文标题、年份、网址和汉字均可辨；没有裁切。"
+    }
+  ],
+  "scope": "Only these 15 full pages actually displayed through view_image and visually inspected. Does not claim manual review of all 527 report pages; the new specialist pages are independently reviewed by the corresponding other reviewers."
+}

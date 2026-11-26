@@ -1,0 +1,10 @@
+{
+  "edition": 24,
+  "base_commit": "aaa56a394186471c071e9d9cc686401becadf98e",
+  "snapshot_date": "2026-11-26",
+  "overlay_sha256": "e1ec81330ce7ea25dcb09882cb666e38b3d28c32fdc54e65afd0223c4430a0a9",
+  "overlay_files": 1595,
+  "overlay_uncompressed_bytes": 294927218,
+  "applied_at_utc": "2026-11-26T08:52:35.981757+00:00",
+  "scope": "Publication of locally built, source-mapped edition 24; no claim of a complete mathematical audit"
+}

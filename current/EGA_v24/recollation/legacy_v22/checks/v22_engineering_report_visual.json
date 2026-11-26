@@ -1,0 +1,114 @@
+{
+  "schema_version": 1,
+  "edition": 22,
+  "reviewer": "/root/v21_engineering",
+  "review_method": "actual_image_view",
+  "document": "report",
+  "pdf": {
+    "path": "report.pdf",
+    "sha256": "4cced0b1907d27f0806a74d3ad525016bc002e191165674c5c687a2dd1a2b53c",
+    "pages": 503
+  },
+  "rendering": {
+    "renderer": "PyMuPDF",
+    "version": "1.26.6",
+    "scale": 1.5,
+    "colorspace": "RGB",
+    "alpha": false
+  },
+  "reviewed_at_utc": "2026-11-26T01:24:40.223483+00:00",
+  "pages": [
+    {
+      "physical_page": 1,
+      "image": "checks/visual_v22/engineering/report_0001.png",
+      "image_sha256": "9b144fed012ff36bd253723ef1d0062aff7d28daa883f7f1759b23d0b550d29d",
+      "verdict": "pass",
+      "notes": "实际查看完整封面：书名、译校核查报告、第二十二版及第14节回校副题居中清楚，未见缺字、裁切或重叠。"
+    },
+    {
+      "physical_page": 3,
+      "image": "checks/visual_v22/engineering/report_0003.png",
+      "image_sha256": "8bdd8d6871a4a6c5d7275ffe4fc77e90c2af3e37deca52c982e278033c16106e",
+      "verdict": "pass",
+      "notes": "实际查看报告范围页：两段范围说明均在版心内，明确保留历史报告且不等于全书人工审定；章题和罗马页码位置正常。"
+    },
+    {
+      "physical_page": 5,
+      "image": "checks/visual_v22/engineering/report_0005.png",
+      "image_sha256": "364f8a1ae77e5869bc0c3a5481a166bcdbebfc6849b382f667ebcbdb3f94152a",
+      "verdict": "pass",
+      "notes": "实际查看目录首页：新增整合三项、几何五项和微分八项的编号、引导点和页码未重叠；纤维专题此页显示章级目录，未把其六个无目录子题声称为已有目录条目。"
+    },
+    {
+      "physical_page": 6,
+      "image": "checks/visual_v22/engineering/report_0006.png",
+      "image_sha256": "123f472f5cc8558730adea6290f5655ba8716c20738c63a06f82a66c96edc20a",
+      "verdict": "pass",
+      "notes": "实际查看历史报告目录续页：第二十一版及第二十版层级、长标题、公式与右侧页码均可读，未见超出版心。"
+    },
+    {
+      "physical_page": 19,
+      "image": "checks/visual_v22/engineering/report_0019.png",
+      "image_sha256": "5e996e0888893ec59f21b3c49377a0be5734ab874a61f345dae394aa3580f564",
+      "verdict": "pass",
+      "notes": "实际查看目录倒数第二页：旧报告条目、第一卷与第二卷章级标题及条目页码排列完整，页底最后一条未裁切。"
+    },
+    {
+      "physical_page": 20,
+      "image": "checks/visual_v22/engineering/report_0020.png",
+      "image_sha256": "2c8b28bd7e74b496968a40cca21d994084440b95fcb870d9dfb29f7304805b29",
+      "verdict": "pass",
+      "notes": "实际查看目录末页：历史报告末两章及其小节页码完整，剩余留白为目录自然结束，无缺字和悬挂编号。"
+    },
+    {
+      "physical_page": 21,
+      "image": "checks/visual_v22/engineering/report_0021.png",
+      "image_sha256": "20d2a1df072954ecfda2292cf146346d20917faf0d00e9a78f86b36d179377a3",
+      "verdict": "pass",
+      "notes": "实际查看V22-INT01及来源对应表：三模块的法英页码、连续内容边界在表格各列中正常换行，表格横线、代码路径和正文均在版心内；章题两行换行可读。"
+    },
+    {
+      "physical_page": 22,
+      "image": "checks/visual_v22/engineering/report_0022.png",
+      "image_sha256": "e484522ac17b3b8e015c24729f9b3ce39b1b9d14d070a3903debefd0bedbe18f",
+      "verdict": "pass",
+      "notes": "实际查看V22-INT02：爆破、纤维、反例及充分条件的各段标题与公式清楚，未见重叠和溢出；末段自然接到下一页。"
+    },
+    {
+      "physical_page": 23,
+      "image": "checks/visual_v22/engineering/report_0023.png",
+      "image_sha256": "5e0288c617deae5980711ef0c7c172901e8e820aad382cd6271f6598230a9ea3",
+      "verdict": "pass",
+      "notes": "实际查看V22-INT02续文及V22-INT03：续文衔接、继承文件字节数、Dot数和长TeX路径排版完整；检查范围与数学审定限制明确，未见路径溢出版心。"
+    },
+    {
+      "physical_page": 24,
+      "image": "checks/visual_v22/engineering/report_0024.png",
+      "image_sha256": "85a6756165c0d5cec5a11e1e7e57544b7823141aa2103761593c1c6b63a27225",
+      "verdict": "pass",
+      "notes": "实际查看整合章后的偶数页：仅有页眉与页码，为默认双面分页空白页，未见意外正文残片。"
+    },
+    {
+      "physical_page": 47,
+      "image": "checks/visual_v22/engineering/report_0047.png",
+      "image_sha256": "43b5a252b1700169f66a44a70002211a17aab71506742d5fe3ad572e464180e3",
+      "verdict": "pass",
+      "notes": "实际查看第二十一版历史记录分隔页：标题居中、标记页码27完整，明确属于历史记录。"
+    },
+    {
+      "physical_page": 48,
+      "image": "checks/visual_v22/engineering/report_0048.png",
+      "image_sha256": "1bca0900cf909b0834130e95107784d9a80d351515e0813019cf712f4bf790e1",
+      "verdict": "pass",
+      "notes": "实际查看历史记录分隔页背面的整页留白：无正文碎片、缺字方框或异常墨迹，符合双面分隔页。"
+    },
+    {
+      "physical_page": 503,
+      "image": "checks/visual_v22/engineering/report_0503.png",
+      "image_sha256": "8477558ae1eefa134604b358d67891fa10069b6be25f2b31f3651c6815a31bef",
+      "verdict": "pass",
+      "notes": "实际查看真实报告末页：底本与核验来源四条的法文重音、卷次、页码、URL及末段说明均完整可读，未见越界；印刷页码483正常。"
+    }
+  ],
+  "scope": "Only the thirteen explicitly listed full-page images were actually viewed; this is layout review, not independent mathematical certification or review of all report pages."
+}

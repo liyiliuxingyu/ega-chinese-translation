@@ -1,0 +1,109 @@
+% SOURCE: unpacked/dot_batches/EGA第五卷_锥投影微分性质导言_续译工程/EGA第五卷_锥投影微分性质导言_校订续译.tex
+锥投影的微分性质更为微妙，尤其是在$X$在$k$上光滑且$f:X\to P$非分歧的情形；第12节研究的正是这种情形。回顾一下：在$Q(C)$的某个余维为1的子集$Z$之外，定义在$\widetilde X(C_\eta)$上的态射$p_{C_\eta}$是光滑的。\cmt{V-H-L029}{底本此处两次写目标为$Q(C)$，同时把态射及源写为$p_{C_\eta}$、$\widetilde X(C_\eta)$。正文保留这一记号切换，不未经说明把一般中心与泛中心的对象全部等同；本段应结合前文关于泛中心的约定阅读。}
+而第12节所概述的更细致分析表明（若我们尚未作出这一分析，则将会表明）：如果$X$的各分支的维数均$\geq m$，那么在$Q(C)$的某个余维$\geq2$的子集$Z'\subset Z$之外，纤维
+\[
+p_C^{-1}(\xi)=X^{(m)}_\xi
+\]
+至多只能具有几何意义下的普通奇点；而且，若$f$是浸入且$X$几何不可约，则这样的点至多只有一个，并且该点必为$k(\xi)$上的有理点。这些断言至少在$k$的特征为0时成立；或者，如第9节那样，以$\varphi_n f$（$n\geq2$）代替$f$，在此条件下也成立。\cmt{V-H-L030}{“shows or will show if we do not do it”是底本自身的未完成语气，正文没有把它改写为已证明的结论。“普通奇点”对应ordinary singular points；本段译校不添加原文未给出的局部标准方程，也不把上述替换条件解释为无条件的任意特征定理。}
+
+也应当给出$\dim X\leq m$、从而$p_{C_\eta}$定义在$X_{k(\eta)}$上时，$p_{C_\eta}$的微分性质。我这里只指出下列性质。证明应该是容易的，留给Dieudonné（或Blass）。[Tr]\cmt{V-H-L031}{底本这一段将投影记作大写$P_{C_\eta}$；与相邻段落及下一命题表示同一态射的小写$p_{C_\eta}$统一。原文的“[Tr]”照存；其证明委托语属于底本内容，并非本译文声称已经完成证明。}
+
+% SOURCE: unpacked/dot_batches/EGA第五卷_命题14.4_续译工程/EGA第五卷_命题14.4_校订续译.tex
+\egas{14.4}{命题}
+设$f:X\to P$非分歧，且$\dim X\leq m$。设$T$是$X$的一个有限子概形。则：
+
+\noindent(a) 若$f$是浸入，则$p_C$在$T_{k(\eta)}$上的限制是根态射，即“几何单射”。\cmt{V-H-L032}{底本用radical，并立即释为“geometrically injective”。这里指通常的radicial性质，即普遍单射，不是指根理想；“有限子概形”沿用底本finite subscheme的表述。}
+若再设$Y$为$X$的一个维数$\leq m-1$的闭子集，原稿在此所列的空交断言按所印假设不成立，译校暂不将这一条款作为可用结论。\cmt{V-H-L033}{底本在这里写“we have”，并断言
+\[
+p_{C_\eta}^{-1}\bigl(p_{C_\eta}(Y_{k(\eta)})\bigr)
+\cap T_{k(\eta)}=\varnothing.
+\]
+原式以“$\phi$ = empty set”表示空集。只要$Y\cap|T|\ne\varnothing$，基变换后的交点就属于所写交集，故所列前提不足。例如取$k$为域、$m=1$、$X=\mathbb A^1_k\hookrightarrow\mathbb P^2_k$为一条直线中的标准仿射开集，$T=Y=\{0\}$，则$f$为浸入、$\dim X\leq m$、$\dim Y\leq m-1$，但交集仍含$T_{k(\eta)}$。至少需要$Y\cap|T|=\varnothing$；这只是必要条件，不将它冒充原稿缺失假设的完整恢复。原条款保存在本注及核查报告中。}
+
+\noindent(b) 若$X$在$T$的各点光滑，则$p_{C_\eta}$在$T_{k(\eta)}$的所有点非分歧。
+
+\noindent[字迹不清，询问A.G.]\cmt{V-H-L034}{底本此处原样标注“[illegible, ask A.G.]”，下一行单列下式。它可能涉及更大的非分歧点集，但缺失的连接语无法确定，故不擅补成“在整个逆像上非分歧”，也不删除这个公式。前一完整句和残缺部分分别保留。本命题在此没有给出证明。}
+\[
+p_{C_\eta}^{-1}p_{C_\eta}(T_{k(\eta)}).
+\]
+
+% SOURCE: unpacked/dot_batches/EGA第五卷_命题14.5与推论14.6_续译工程/EGA第五卷_命题14.5与推论14.6_校订续译.tex
+\egas{14.5}{命题}
+设$\dim X\leq m-1$，$f:X\to P$为浸入，并且$X$在$k$上可分。\cmt{V-H-L035}{底本为“$X$ separable over $k$”。正文保留“可分”这一原有术语，不把它擅改为“光滑”或“几何不可约”，也不额外添加这些更强的假设。}
+设$Y_\eta$为$X_{k(\eta)}$在$Q(C_\eta)$中的概形论像。则诱导态射
+\[
+p_{C_\eta}:X_{k(\eta)}\longrightarrow Y_\eta
+\]
+是双有理的；而且，对$X_{k(\eta)}$中位于$X$的某个闭点之上的每一点$x$，$p_{C_\eta}$在$x$处，以及在
+\[
+p_{C_\eta}^{-1}\bigl(p_{C_\eta}(x)\bigr)
+\]
+的各点处，都是平展的。\cmt{V-H-L036}{底本最后一句写“$p_{c_\eta}$ is étale at $x$ and in at the points of $p_{C_\eta}^{-1}p_{C_\eta}(x)$”。正文统一中心字母为$C$，并将“and in at”这一重复介词译为“以及在……处”。这里平展的是目标为概形论像$Y_\eta$的诱导态射，不能误读成向整个$Q(C_\eta)$的态射平展。“位于闭点之上”也不改成“$X_{k(\eta)}$的任意闭点”。}
+
+注意以下推论：
+
+\egas{14.6}{推论}
+设$X$为无限域$k$上的一个不可约且可分的$n$维射影代数概形。则存在一个从$X$到$\mathbb P^{n+1}_k$中某个超曲面的满射双有理态射。\cmt{V-H-L037}{底本原文为“a birational morphism of $X$ onto a hypersurface in $P^{n+1}$”。“onto”译作满射；$\mathbb P^{n+1}_k$将底域明确写出，没有把双有理态射加强成同构或闭浸入。原文在此仅给出推论陈述，未展开从泛中心到$k$上中心的专门化论证，本段译校不声称已经补全。}
+
+% SOURCE: unpacked/dot_batches/EGA第五卷_锥投影性质辨析_续译工程/EGA第五卷_锥投影性质辨析_校订续译.tex
+即使$X$是$P$中一个光滑、几何不可约、维数为$m-1=n$的闭子概形，也不要认为锥投影$(p_C)$（？字迹不清）必定是浸入。事实上，若$k$无限，这就意味着存在一个在$k$上有理的中心$C$，具有同样的性质；从而$X$同构于$\mathbb P^{n+1}$中的一个非奇异超曲面。但即使在$n=1$时（即$X$为代数闭域上的光滑连通射影代数曲线），也容易构造不能嵌入$\mathbb P^2$的$X$的例子。\cmt{V-H-L038}{底本把射影空间分别写作$p$、$p^2$，正文统一为$P$及$\mathbb P^2$；把$(P_c)$统一为$(p_C)$，但其后“(? Illegible)”照译保留。括注“ne peat s’immerge”随英语“cannot be embedded”译出，不将原文未给出的具体曲线例子另行插入。}
+
+同样，对于14.4，不要把其中的陈述与下列一般不成立的断言混为一谈：$p_C$本身是单态射（前面的反例，若$X$光滑且维数为$m$），或者$p_C$应当非分歧。\cmt{V-H-L039}{括号内底本写“preceding counterexample if $X$ is smooth if dimension $m$”。前面曲线及超曲面讨论使用的是$m-1=n$；这里的$m$与其衔接有疑点。正文保留原维数，不擅改为$m-1$，也不据此宣称已有一个完全写明的反例。}
+关于后一项，为使自己确信这一点，取$X$为一个光滑、不可约、维数为$m$的闭子概形（在代数闭域$k$上，？字迹不清）。若有一个非分歧态射
+\[
+X\longrightarrow Q\simeq\mathbb P^m,
+\]
+则由维数的理由，它将是平展的；但可以证明（见第VIII章），这意味着
+\[
+X\xrightarrow{\sim}\mathbb P^m
+\]
+（因为$\mathbb P^m$是单连通的）。\cmt{V-H-L040}{原文“over $k$ algebraically closed ?illegible?”的缺文提示照存。本段的$X$承接为射影空间的闭子概形；若脱离这一真性背景，仅凭“平展”和“单连通”不能直接得出同构。正文转述原论证，没有把它推广到任意平展态射；第VIII章的引用亦按原文保留，未补造该章证明。}
+
+
+14.4的直观几何意义是：$p_{C_\eta}$的分歧集在$k$上是“可变的”；更确切地说，当$\xi$在$\operatorname{Grass}^{m+1}(\bar k)$的一个开集中变化时，$p_{C_\xi}$的分歧集在$X(\bar k)$中变化，并且没有任何“固定点”……\cmt{V-H-L041}{底本记号为“$p_{c\xi}$”及“$\operatorname{Grass}^{m+1}(\bar k)$”。前者按本节中心$C_\xi$的记法规范为$p_{C_\xi}$；后者照存，不擅补一个未明写的环境空间。这是原文的直观解释，不把它读作完整的分歧集构造或新的严格等价命题。}
+当然，为了在本节中说明从泛点$\eta$到$\operatorname{Grass}^{m+1}(P)$的邻近点的过渡是成立的，并且在需要时重新采用7.1的一般考虑，我们必须考察下列图式：\cmt{V-H-L042}{底本第58页图式左下角印为$X$。第59页紧接着明确说明作基变换$T\to S$，并在对应图式左下写$T$、左上写$X_T$；故此处基变换前的左下应为$S$，左竖箭头是$X$的结构态射。本次整合据该跨页证据订正，原印$X$保留在本注中。}
+\[
+\begin{tikzcd}
+X \arrow[d] & \widetilde X(C) \arrow[l] \arrow[d] \\
+S & Q(C) \arrow[l]
+\end{tikzcd}
+\]
+
+% SOURCE: unpacked/dot_batches/EGA第五卷_锥投影普遍图式_续译工程/EGA第五卷_锥投影普遍图式_校订续译.tex
+这些图式是利用各个$C\in\operatorname{Grass}^{m+1}(P)(S)$得到的；更一般地，还要考虑作基变换$T\to S$之后，由$\operatorname{Grass}^{m+1}(P)$的$T$值点$\xi$得到的图式：\cmt{V-H-L043}{底本首句写“$C\in\operatorname{Grass}^{m+1}(S)$”，随后说“for the points $\xi\in\operatorname{Grass}^{m+1}(P)$”。根据紧随的$\xi:T\to\operatorname{Grass}^{m+1}(P)$，正文明确写成相对Grassmann函子的$S$值点及$T$值点，避免把$T$值点误读成拓扑点。上一页原始相对图式的左下已据此订为$S$，其左上仍为$X$，左竖箭头是结构态射；原误印及订正依据见前一译校注。}
+\[
+\begin{tikzcd}
+X_T \arrow[d] & \widetilde X(C_\xi)=X_T(C_\xi) \arrow[l] \arrow[d] \\
+T & Q(C_\xi) \arrow[l]
+\end{tikzcd}
+\]
+它们由下面的普遍图式经基变换
+\[
+\xi:T\longrightarrow G,\qquad G=\operatorname{Grass}^{m+1}(P)
+\]
+导出。\cmt{V-H-L044}{右上角等式是底本原有的记号，第二项$X_T(C_\xi)$原文没有波浪号，正文照存；这里不另外定义一个不同的对象。}普遍图式对应于$\operatorname{Grass}^{m+1}(P)$的典范$G$值点：\cmt{V-H-L045}{底本写“$\xi:T\to\operatorname{Grass}^{m+1}J(P)=T$”，并说“the canonical point of $\operatorname{Grass}^{m+1}$ in $T$”。其中多出的$J$无说明，且$T$同时用于试验概形和普遍参数空间。正文删去无所指的$J$，将普遍参数空间改记$G$；以下相应将普遍图式的$X_T,P_T$和底空间$T$写成$X_G,P_G,G$。这只是消除记号冲突，不是给任意$T$强加等于Grassmann概形的条件。}
+\[
+\begin{tikzcd}
+X_G \arrow[d] & \widetilde X(C) \arrow[l] \arrow[d] \\
+G & Q(C) \arrow[l]
+\end{tikzcd}
+\]
+
+
+这里$C$是$P_G$的典范线性子簇。于是，上述态射
+\[
+\widetilde X(C_\eta)\longrightarrow Q(C_\eta)
+\]
+正是后一图式中$G$态射
+\[
+\widetilde X(C)\longrightarrow Q(C)
+\]
+在泛纤维上诱导的态射；而泛纤维态射所具有的每一个可构造性质，都蕴含邻近纤维具有相同性质。\cmt{V-H-L046}{底本此处仍用$T$表示普遍底空间，正文按前述约定改为$G$。“constructible property”的断言照译；它必须在相应性质的成立点集可构造等适用前提下理解，不能读作任意性质都从泛纤维自动传到邻近纤维。本段没有给出这些前提的逐项证明，本段译校亦未补造。}
+从记号的角度看，应当把$Q$看作（甚至一开始就把它引入为）自然函子态射
+\[
+\operatorname{Grass}^{m+1}(P)
+\longrightarrow
+\text{$\operatorname{Grass}^{m}(P)$的子概形}
+\]
+的名称。\cmt{V-H-L047}{底本目标写作“Subschemes of $\operatorname{Grass}^{m}(P)$”。这里按其函子语言直译，不擅自改成某个固定Hilbert概形，也不添加底本未列的平坦性或Hilbert多项式条件。}
+

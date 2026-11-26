@@ -1,0 +1,23 @@
+{
+  "edition": 24,
+  "checked_utc": "2026-11-26T08:36:23.673492+00:00",
+  "reviewed_pages": 18,
+  "pass": true,
+  "records": [
+    {
+      "document": "main",
+      "record": "v24_late_main_visual.json",
+      "record_sha256": "4901ba759f5cf942702ac18968af4856a633a432b67cd880c1f848836a1e96a7",
+      "pages": 9,
+      "pdf_sha256": "1a7af9a8ce697e4361a77c21b249a8c2e2042876e190c97f39aa66a1ccd2b993"
+    },
+    {
+      "document": "report",
+      "record": "v24_late_report_visual.json",
+      "record_sha256": "9d1eaaaf84a1eae19668976d63e180697d8b574677a81a270edb713b4db79299",
+      "pages": 9,
+      "pdf_sha256": "880401177de97018c46ca7a8cd5d67fc0fcc5f81798c7d10f4ecdfc5f678f9e9"
+    }
+  ],
+  "report_sha256": "7b081120aba8cace35a1010ae0ce5e93803ac4a875dfd2c26048707a75408880"
+}

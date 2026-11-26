@@ -1,0 +1,256 @@
+{
+  "recorded_at_utc": "2026-11-26T01:17:43.583627+00:00",
+  "baseline_commit": "79c1100b13427e447fad5525f27d9b64e4d4ead7",
+  "module": "v22_geometry",
+  "source_files": [
+    {
+      "path": "repository/archive_20261121/03_sources/EGA5_francais.pdf",
+      "bytes": 16097021,
+      "sha256": "24cf8204184b58b18a46e5f63ecc36d6e791b3c8c96a09daac93de96ebd8e830"
+    },
+    {
+      "path": "repository/archive_20261121/03_sources/EGAVaiello.pdf",
+      "bytes": 677332,
+      "sha256": "23a20ef32fd16a1bd623c0c08ac080d04fc94f248de12133b713a19d6b0330d9"
+    },
+    {
+      "path": "repository/current/EGA_v21/continuations/v_dot_late.tex",
+      "bytes": 49224,
+      "sha256": "b07e3ebdfecbb1f1c832e5310c5e7d7f4dab51e89d5fc449f161f1a498cebb21"
+    }
+  ],
+  "artifacts": [
+    {
+      "path": "v22_work/drafts/geometry/v22_section14_geometry.tex",
+      "bytes": 9954,
+      "sha256": "4ebb35b1e644b9bc1c0c4cfbadbb3a8318565d7793980ecbe683b9658e9eca6c"
+    },
+    {
+      "path": "v22_work/drafts/geometry/v22_section14_geometry_audit.tex",
+      "bytes": 12421,
+      "sha256": "62c304584ed8e112908b5de81d7d92480dcc31c16219a086ca308fa4c5d08683"
+    },
+    {
+      "path": "v22_work/drafts/geometry/inherited_geometry_exact.tex",
+      "bytes": 9292,
+      "sha256": "c9f3148bb661d2b0b9f3ae966d69f17d7c2ff477134f5aebe5485e3aeb380687"
+    },
+    {
+      "path": "v22_work/drafts/geometry/HISTORICAL_NOTES.json",
+      "bytes": 9079,
+      "sha256": "5ccfb44ed9861217706029612f46273af0921aa650125b1a8eb87f040baeb090"
+    },
+    {
+      "path": "v22_work/drafts/geometry/EGA5_francais_geometry_source.pdf",
+      "bytes": 305090,
+      "sha256": "2579389c1b5e79137b84590cea52e146a856493647d7bd9451b483055ccf52d9"
+    },
+    {
+      "path": "v22_work/drafts/geometry/EGAVaiello_geometry_source.pdf",
+      "bytes": 129415,
+      "sha256": "da7760bcfa4c1c90ce0d15ae98c517034ac4a4ce5490580dbf062f6112bdecc7"
+    },
+    {
+      "path": "v22_work/drafts/geometry/SOURCE_MAP.md",
+      "bytes": 6732,
+      "sha256": "ee69d709620209e41356c7ff71ad7b8161fe7fa84853d540472f1e4156582cc0"
+    },
+    {
+      "path": "v22_work/drafts/geometry/PREVIEW_VISUAL_CHECK.json",
+      "bytes": 7077,
+      "sha256": "486bf9e99707e67474246288d27b323f6c6dc379bff907b09f997951bfca63c9"
+    },
+    {
+      "path": "v22_work/drafts/geometry/INDEPENDENT_REVIEW_DIFFERENTIAL.md",
+      "bytes": 5649,
+      "sha256": "e25ee914196c173debb246161da54b775a6677e503c3ed91670a14408ece3db4"
+    },
+    {
+      "path": "v22_work/drafts/geometry/preview_book.pdf",
+      "bytes": 213368,
+      "sha256": "7b47a9db96ced0b8eeb4bd5fbf28c0349078569114fa37dafd9a6375ab48d710"
+    },
+    {
+      "path": "v22_work/drafts/geometry/preview_audit.pdf",
+      "bytes": 273541,
+      "sha256": "07c92ebe52a044f35f5cd1cd18a5846d98e7c60c04d0dab2452978d1ee1a47c3"
+    },
+    {
+      "path": "v22_work/drafts/geometry/preview_book.log",
+      "bytes": 42758,
+      "sha256": "dd20e8d5d8dbf8fa6d9e26191b4473e90d100c3974015d7678aab9823fd56763"
+    },
+    {
+      "path": "v22_work/drafts/geometry/preview_audit.log",
+      "bytes": 43656,
+      "sha256": "5c2eaadaf6264f520726206820174a8f8e93050dbe3b455bb8ebb30a05580e22"
+    },
+    {
+      "path": "v22_work/drafts/geometry/preview_book.tex",
+      "bytes": 18757,
+      "sha256": "9a4a94a953425e56569c2807479a26e609439da94ab972d989271b996db55139"
+    },
+    {
+      "path": "v22_work/drafts/geometry/preview_audit.tex",
+      "bytes": 21224,
+      "sha256": "89c274bbcc4c7b43d283a80afdf0f40bda3f5d3a329b99d8882c11aed83b50ac"
+    },
+    {
+      "path": "v22_work/drafts/geometry/INDEPENDENT_REVIEW_FIBERS.md",
+      "bytes": 7325,
+      "sha256": "7276b91028412a1a46e3b00d96ee70cdfe7e76324087e106e1c5a91930435629"
+    },
+    {
+      "path": "v22_work/drafts/geometry/REVIEWED_FIBERS_SOURCES.json",
+      "bytes": 1207,
+      "sha256": "425caf39e97762a4a4c17f1c58262d2ff45d1a75df3f67de69760b3e49f0924a"
+    },
+    {
+      "path": "v22_work/drafts/geometry/PREVIEW_VISUAL_CHECK_before_boundary_patch.json",
+      "bytes": 5572,
+      "sha256": "a74d92645240cd9583dd00894312659ac95cb1c52efac8d9b226b57c50360540"
+    },
+    {
+      "path": "v22_work/drafts/geometry/preview_book.stdout.txt",
+      "bytes": 13495,
+      "sha256": "0c34a54c3a1e0a9d2d5d61626e43b1451ace329e01af542fd002ec4b68c9a414"
+    },
+    {
+      "path": "v22_work/drafts/geometry/preview_audit.stdout.txt",
+      "bytes": 13374,
+      "sha256": "b5a30f997b6b99809e3708caee26cc26ab776da6a29ed9a0a09943946daf0ef0"
+    }
+  ],
+  "source_evidence": [
+    {
+      "path": "v22_work/drafts/geometry/source_pages/83_middle.png",
+      "bytes": 84864,
+      "sha256": "92f878d3bfe702b38778d54bc659a519cb34797e6c746b7d59d8c36524382cef"
+    },
+    {
+      "path": "v22_work/drafts/geometry/source_pages/84_diagram.png",
+      "bytes": 80021,
+      "sha256": "dba78301c64f16bf50b6dbddf862e5c9dcc33f72a560a4dded19e3cebf6709f3"
+    },
+    {
+      "path": "v22_work/drafts/geometry/source_pages/85_crossouts.png",
+      "bytes": 120073,
+      "sha256": "3993f7f794dcdf50baae0959cfa45ab1c59230221fcf73875eb3fc24be0d2fca"
+    },
+    {
+      "path": "v22_work/drafts/geometry/source_pages/85_notation.png",
+      "bytes": 141575,
+      "sha256": "c7e2613079df1cdbdea39c31436a883765ea1c18521fe3db8b149b7a5a5c77f5"
+    },
+    {
+      "path": "v22_work/drafts/geometry/source_pages/EGA5_francais_082_boundary.png",
+      "bytes": 263387,
+      "sha256": "ffb504e2567305e878a9f25d5bd14d09829279fe7b1bb91a780ee87d4b1b93b7"
+    },
+    {
+      "path": "v22_work/drafts/geometry/source_pages/EGA5_francais_083.png",
+      "bytes": 453003,
+      "sha256": "d1ff6bf715e973231f1550a1904af449d44742aa3a5399c2f5be1a82d3a34794"
+    },
+    {
+      "path": "v22_work/drafts/geometry/source_pages/EGA5_francais_083_top_boundary.png",
+      "bytes": 208388,
+      "sha256": "937285dee49732f3521bff7c16bd778186e7a39f7c6b7bb86d68a42302f3545e"
+    },
+    {
+      "path": "v22_work/drafts/geometry/source_pages/EGA5_francais_084.png",
+      "bytes": 409983,
+      "sha256": "5015b6d16c02869205754d4b48c0282a3a0d1ac4118a792dddf7f1e143a17b1d"
+    },
+    {
+      "path": "v22_work/drafts/geometry/source_pages/EGA5_francais_085.png",
+      "bytes": 490380,
+      "sha256": "efa0000d1eeb61de9d667d7ba2331f5f449c6023c19fda6daed584a45cd1d7cf"
+    },
+    {
+      "path": "v22_work/drafts/geometry/source_pages/EGA5_francais_086.png",
+      "bytes": 485550,
+      "sha256": "baa655f6dda9352eb04e3e8ce9489955f606e954f2fd0deca677f3c5c4e69e39"
+    },
+    {
+      "path": "v22_work/drafts/geometry/source_pages/EGAVaiello_053_bottom_boundary.png",
+      "bytes": 98428,
+      "sha256": "0ca042c91b2b57990187d63e17c146f5ecd5eb09bcb3587415ae4437576ed5d8"
+    },
+    {
+      "path": "v22_work/drafts/geometry/source_pages/EGAVaiello_054.png",
+      "bytes": 208022,
+      "sha256": "045a7d02c063051c775731496406c624c9b28a64f840cd347cd20ff82b2b1d35"
+    },
+    {
+      "path": "v22_work/drafts/geometry/source_pages/EGAVaiello_054.txt",
+      "bytes": 2495,
+      "sha256": "09e1f6b1cc12fb78e99226978eb731a314c454c73a5ffe4fe72bf956d94c4f37"
+    },
+    {
+      "path": "v22_work/drafts/geometry/source_pages/EGAVaiello_055.png",
+      "bytes": 205267,
+      "sha256": "e940a639aa413ca4c99da76f4c82d46c03578feaa41cc4f1ef2a16b6e5951152"
+    },
+    {
+      "path": "v22_work/drafts/geometry/source_pages/EGAVaiello_055.txt",
+      "bytes": 2524,
+      "sha256": "55ea6a6a9952454f8d45c9b09070c5c86bdd2fa497715d2de8f19d012983253f"
+    }
+  ],
+  "independent_review_read_snapshot": {
+    "path": "v22_work/drafts/differential/v22_section14_differential.tex",
+    "bytes": 11631,
+    "sha256": "d89e6d704ad743ebe017facce29a63561a0bc68522ea09aee1a4ca8b2d502971"
+  },
+  "original_source_byte_interval": [
+    0,
+    9292
+  ],
+  "original_interval_preserved_exactly": true,
+  "translation_notes": [
+    "V22-GEO001",
+    "V22-GEO002",
+    "V22-GEO003",
+    "V22-GEO004",
+    "V22-GEO005",
+    "V22-GEO006",
+    "V22-GEO007",
+    "V22-GEO008",
+    "V22-GEO009",
+    "V22-GEO010",
+    "V22-GEO011"
+  ],
+  "audit_entries": [
+    "V22-GEO-E01",
+    "V22-GEO-E02",
+    "V22-GEO-E03",
+    "V22-GEO-E04",
+    "V22-GEO-E05"
+  ],
+  "preview_cache_exclusion": "Do not copy preview_runtime or preview_config to final source artifacts; they are local build caches. Preview wrappers and PDFs are separate module QA, not full-book output.",
+  "independent_review_fibers": {
+    "recorded_at_utc": "2026-11-26T01:17:43.583627+00:00",
+    "kind": "independent_mathematical_review_of_actual_drafts",
+    "review": {
+      "path": "v22_work/drafts/geometry/INDEPENDENT_REVIEW_FIBERS.md",
+      "bytes": 7325,
+      "sha256": "7276b91028412a1a46e3b00d96ee70cdfe7e76324087e106e1c5a91930435629"
+    },
+    "final_read_sources": [
+      {
+        "path": "v22_work/drafts/fibers/v22_section14_fibers.tex",
+        "bytes": 11770,
+        "sha256": "06a4dac5ca264064ed6b5a6c92cf17877bd1108812f8435c3eb051e72d29777f"
+      },
+      {
+        "path": "v22_work/drafts/fibers/v22_section14_fibers_audit.tex",
+        "bytes": 17027,
+        "sha256": "07d019bf740ba368e50ae0e161b2d0873a08e13a5a9b76bffc6605ccbc553c3a"
+      }
+    ],
+    "recommendations_status": "Both wording recommendations in the review were adopted by the module author and the exact modified paragraphs were reread: field-extension purity; pure n-dimensional charts with local dimension n only at closed points. No edits made to the author files by reviewer.",
+    "scope": "Corrected 14.1 constant pure d-dimensional geometric fibres; E04 projective-image closure and boundary; E05 CM and flatness, including finite CM modules; not full-book certification."
+  },
+  "preview_status": "Both independent previews were actually regenerated and recompiled after the title-source mapping patch, not merely relabelled. Current preview hashes, wrapper hashes and reread records are in PREVIEW_VISUAL_CHECK.json; prior build evidence is explicitly historical."
+}

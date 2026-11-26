@@ -1,0 +1,6 @@
+EGA V: §1 and §§2.15, 2.16
+(formerly numbered as EGA IV: §16 and §§17.15, 17.16)
+Edited translation of of Grothendieck’s ‘prenotes’ for EGA V
+by
+Piotr Blass and Joseph Blass
+1

@@ -1,0 +1,55 @@
+% V18 integration from immutable Dot batch 102: EGA第五卷_法文覆盖审计_截面余维下降.tex
+\begingroup
+\def\PP{\mathbb P}\def\OO{\mathcal O}\def\Ocal{\mathcal O}
+\def\F{\mathcal F}\def\G{\mathcal G}\def\N{\mathcal N}
+\def\PD{\check P}\def\Pdual{\check P}
+\def\Ys{Y^{\mathrm{sing}}}\def\Ysing{Y^{\mathrm{sing}}}
+\def\Ds{Y^{\mathrm{sup\,sing}}}\def\Ysup{Y^{\mathrm{sup\,sing}}}
+\def\cod{\operatorname{codim}}\def\Sing{\operatorname{Sing}}
+\def\depth{\operatorname{depth}}\def\coprof{\operatorname{coprof}}
+\def\Ass{\operatorname{Ass}}\def\Supp{\operatorname{Supp}}
+\def\Gr{\operatorname{Gr}}\def\Spec{\operatorname{Spec}}\def\Proj{\operatorname{Proj}}
+\source{Dot第102批；法文底本物理第33--34页，英编稿物理第22--24页}
+\noindent\textbf{译校记号约定。}记 $K$ 为底域，$k\ge0$ 为整数门槛。沿用本章记号：$X$ 是 $K$ 上有限型概形，$f:X\to\PP^r_K$，$\check{\PP}^{\,r}$ 参数化超平面。对参数 $\xi$，$H_\xi$ 是 $K(\xi)$ 上的超平面，$Y_\xi$ 是其逆像，$T_\xi$ 是换底后的 $T$ 在 $Y_\xi$ 中截出的闭集。像的维数指其闭包的维数。
+
+\egas{8.4}{命题}
+设 $T$ 为 $X$ 的闭子集，且 $\codim(T,X)\ge k$。则对每个 $\xi\in\check{\PP}^{\,r}$，均有
+\[
+ \codim(T_\xi,Y_\xi)\ge k-1.
+\]
+使 $\codim(T_\xi,Y_\xi)=k-1$（也即 $\codim(T_\xi,Y_\xi)<k$）的参数集合 $Z$ 可构造而且无处稠密，亦即 $\overline Z$ 的余维至少为一。
+
+$Z$ 的余维至少为二，当且仅当对每个满足 $\codim(T_i,X)=k$ 且 $\dim f(T_i)=0$ 的几何不可约分支 $T_i$，都有一个含 $T_i$ 的几何不可约分支 $X_j$，满足
+\[
+ \codim(T_i,X_j)=k,\qquad \dim f(X_j)=0.
+\]
+这里 $T_i$ 是 $T$ 的分支，$X_j$ 是 $X$ 的分支。\transnote{法33行间改为“等于 $k$”，但该行及英22误写把 $T_i$ 当作 $X$ 的分支；依8.4.1(b)和法34证文明定为 $T$ 的分支。法33页顶该句的补尾有涂写，英23在 $f(X_j)$ 后也不清；等于零的读法由法34的正反两种情形确认。几何分支的限定依作者法34末的说明。}
+
+特别地，若 $f$ 拟有限且 $k>0$，这个判据等价于：$T_{\overline K}$ 没有局部维数 $\dim\OO_{X_{\overline K},x}=k$ 的孤立点 $x$。第一项余维不等式直接来自以下引理(a)；作者说这是对第5节的一处补记。
+
+
+\egas{8.4.1}{引理}
+设 $X$ 局部 Noether，$\mathcal L$ 为其上的可逆模，$\varphi$ 为 $\mathcal L$ 的截面，$Y=V(\varphi)$，$T$ 为 $X$ 的闭子集。假定 $\codim(T,X)\ge k$。\transnote{法33圈入的假设及英23写的是 $\codim(Y,X)\ge k$，不能推出(b)。例如 $X=\mathbb A^2$、$Y$ 为一直线、$T=X$、$k=1$，左端等于零，而 $T$ 无余维为一的分支。应如命题8.4及下证，以 $T$ 为该假设的对象。}
+\begin{enumerate}
+\renewcommand{\labelenumi}{\alph{enumi})}
+\item $\codim(T\cap Y,Y)\ge k-1$。
+\item 上式取等（也即余维 $<k$），当且仅当存在 $T$ 的一个不可约分支 $T_i\subseteq Y$，满足 $\codim(T_i,X)=k$，使得每个含 $T_i$ 且满足
+\[
+ \dim\OO_{X_j,\eta_i}=\dim\OO_{X,\eta_i}=k
+\]
+的 $X$ 的不可约分支 $X_j$ 都不包含在 $Y$ 中。此处 $\eta_i$ 是 $T_i$ 的泛点。
+\end{enumerate}
+原稿把引理的证明归于 EGA IV 的一般维数理论，独立补证完整列于核查报告“D18-102”，不作为作者原证明。
+
+\subsection*{命题8.4的原稿证明（校订）}
+用引理(b)来辨认例外超平面。先排除集合 $Z_0$：若 $R$ 是 $T$ 或 $X$ 的不可约分支，且 $\dim f(R)>0$，而 $\xi$ 的截面含整个换底后的 $R$，则将 $\xi$ 放入 $Z_0$。按8.2，$Z_0$ 的余维至少为二。对 $\xi\notin Z_0$，成为例外，恰须有一个 $\codim(T_i,X)=k$ 的 $T_i$ 满足
+\[
+ \dim f(T_i)=0,\quad f(T_i)\subseteq H_\xi,\qquad
+ f(X_j)\not\subseteq H_\xi
+\]
+（最后一项对每个含 $T_i$ 且 $\codim(T_i,X_j)=k$ 的 $X_j$ 成立）。\transnote{法33末写“维数过大”，此处只需其含住整个正维像的情形，由8.2的线性包含条件可得。法34明确用 $f(T_i)\subseteq H_\xi$，与英23末两处误写的不包含符号相反；$X_j$ 的相关余维就是 $k$，不是英23留下的问号。}\textsuperscript{,}\ednote{大概是 $H_\xi$。〔英编稿脚注32；保留原编者的疑读层。〕}
+
+固定这样一个 $T_i$。若某个相关 $X_j$ 的像为零维，则 $f(X_j)=f(T_i)$，因而一旦 $H_\xi$ 包含 $f(T_i)$，也会包含 $f(X_j)$，所以不能由该 $T_i$ 造成例外。反之，若所有相关 $X_j$ 的像都是正维，则在 $Z_0$ 外，只要 $H_\xi$ 通过点 $f(T_i)$，这个 $T_i$ 就造成例外。于是，相应参数是一个对偶超平面在 $\check{\PP}^{\,r}\setminus Z_0$ 上的迹。这不只证明了8.4，也说明 $Z$ 在 $Z_0$ 外是有限个这样的迹之并。\transnote{法34收束一句（英24同）称 $Z$ 本身是若干完整超平面与一余维至少二的集合之并；前句已限定为在 $Z_0$ 外的迹。完整超平面可用于 $\overline Z$，不能一般用于 $Z$；核查报告“D18-102”给出反例。}
+
+（恐怕这段写法很松散，或者说很潦草〔英译者措辞说明〕，因为我一直在几何意义下推理，却没有说出来，即取值于代数闭域的点。当然，（8.4）中所陈述的条件确实是几何的，所以可以假设 $k$ 代数闭，并对 $k$-有理点进行论证。）利用（8.4）、（5.7.4）以及（8.2）的末尾，得到：
+\endgroup

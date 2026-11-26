@@ -1,0 +1,135 @@
+{
+  "schema_version": 1,
+  "edition": 24,
+  "purpose": "Portability map of already existing root source-inspection evidence; this copy operation does not perform or claim visual review.",
+  "original_record": "recollation/v24/root_review/SOURCE_VISUAL_CHECK.json",
+  "original_record_sha256": "a0a0ffcd92fdf12123ba36ea030a15658d236432e7bfde12a96ffd1e7b5350e4",
+  "files": [
+    {
+      "original_record_path": "v24_work/source/fr_095.png",
+      "project_relative_path": "recollation/v24/source/fr_095.png",
+      "physical_page": 95,
+      "bytes": 455745,
+      "sha256": "8d0ea815f6bb823b3619d131cf112ccfaa1bad0c8ab4f734464c53c01d727db2"
+    },
+    {
+      "original_record_path": "v24_work/source/fr_096.png",
+      "project_relative_path": "recollation/v24/source/fr_096.png",
+      "physical_page": 96,
+      "bytes": 452443,
+      "sha256": "0abc00a2eb16bc08c285badfda03205aae066bc482ce5c34c7de82a0269a93b4"
+    },
+    {
+      "original_record_path": "v24_work/source/fr_097.png",
+      "project_relative_path": "recollation/v24/source/fr_097.png",
+      "physical_page": 97,
+      "bytes": 449100,
+      "sha256": "115b8a17d5fe97bdebda19ac8aec404c425fab8de9300fa0ffb71a9603884056"
+    },
+    {
+      "original_record_path": "v24_work/source/fr_098.png",
+      "project_relative_path": "recollation/v24/source/fr_098.png",
+      "physical_page": 98,
+      "bytes": 403456,
+      "sha256": "493938aa02b1a8c70504d943df857dccd89791bb8efca067dc7e40fd8066ae3a"
+    },
+    {
+      "original_record_path": "v24_work/source/fr_099.png",
+      "project_relative_path": "recollation/v24/source/fr_099.png",
+      "physical_page": 99,
+      "bytes": 433013,
+      "sha256": "ea6cbc2dd48eeda3978ac4ccd827e1a1729a4c953b35332fbd71d06b2ee414d9"
+    },
+    {
+      "original_record_path": "v24_work/source/fr_100.png",
+      "project_relative_path": "recollation/v24/source/fr_100.png",
+      "physical_page": 100,
+      "bytes": 418196,
+      "sha256": "ea9ac98b9d507224c7ac16726425f75855469440e5132a759e035f343e56742f"
+    },
+    {
+      "original_record_path": "v24_work/source/fr_101.png",
+      "project_relative_path": "recollation/v24/source/fr_101.png",
+      "physical_page": 101,
+      "bytes": 400824,
+      "sha256": "58da021b15999a5ddaadb275cff641db29102c2c5e32425e25748a1f10c77fe3"
+    },
+    {
+      "original_record_path": "v24_work/source/fr_102.png",
+      "project_relative_path": "recollation/v24/source/fr_102.png",
+      "physical_page": 102,
+      "bytes": 439609,
+      "sha256": "e74bec4ed186b47b56ecf735c939661b4cf55e4eab4c647e5c7ae643a269efd4"
+    },
+    {
+      "original_record_path": "v24_work/source/fr_103.png",
+      "project_relative_path": "recollation/v24/source/fr_103.png",
+      "physical_page": 103,
+      "bytes": 340467,
+      "sha256": "6beccd68006e43060efa1d515b0c2b215601de5a2a446f290cfec12ced8fb6b3"
+    },
+    {
+      "original_record_path": "v24_work/source/fr_104.png",
+      "project_relative_path": "recollation/v24/source/fr_104.png",
+      "physical_page": 104,
+      "bytes": 429604,
+      "sha256": "887a56e4c47021cbf871a490ad7996b0fe1bb46bc3110619838c9d7e0c2100bb"
+    },
+    {
+      "original_record_path": "v24_work/source/fr_105.png",
+      "project_relative_path": "recollation/v24/source/fr_105.png",
+      "physical_page": 105,
+      "bytes": 417568,
+      "sha256": "71f6c5c385dd636c1613506848271dbe632fda9329b2a7e7e6b1cfabcc4acc5f"
+    },
+    {
+      "original_record_path": "v24_work/source/fr_106.png",
+      "project_relative_path": "recollation/v24/source/fr_106.png",
+      "physical_page": 106,
+      "bytes": 450369,
+      "sha256": "9759de3579c184097e3a3b522387bf882098b2dfc38e7df8853a2934ef1fc5fa"
+    },
+    {
+      "original_record_path": "v24_work/source/fr_107.png",
+      "project_relative_path": "recollation/v24/source/fr_107.png",
+      "physical_page": 107,
+      "bytes": 438673,
+      "sha256": "9d7adcbed7d15601cf70561c27f6403a32b264f4943866d9db0b4cf60d7c7821"
+    },
+    {
+      "original_record_path": "v24_work/source/fr_108.png",
+      "project_relative_path": "recollation/v24/source/fr_108.png",
+      "physical_page": 108,
+      "bytes": 452974,
+      "sha256": "4f0784d639cc7f206ed87701e8d9cf0a1c1973a47dc8d67a8b8faab0ec5fb63a"
+    },
+    {
+      "original_record_path": "v24_work/source/fr_109.png",
+      "project_relative_path": "recollation/v24/source/fr_109.png",
+      "physical_page": 109,
+      "bytes": 400427,
+      "sha256": "d74a99687339427e254aa701c3672835ba0a37b949b584905706700334c8254f"
+    },
+    {
+      "original_record_path": "v24_work/source/fr_110.png",
+      "project_relative_path": "recollation/v24/source/fr_110.png",
+      "physical_page": 110,
+      "bytes": 430131,
+      "sha256": "df6c9ea15faedcbe63299ec7bb351037e10b3c3ae5c3dcc126e8166f96b3d1f9"
+    },
+    {
+      "original_record_path": "v24_work/source/fr_111.png",
+      "project_relative_path": "recollation/v24/source/fr_111.png",
+      "physical_page": 111,
+      "bytes": 318010,
+      "sha256": "cc7f0cb6a5785fbce6d6ca0ed824a44456c154befe7e51dd1ede54f072aa2558"
+    },
+    {
+      "original_record_path": "v24_work/source/fr_112.png",
+      "project_relative_path": "recollation/v24/source/fr_112.png",
+      "physical_page": 112,
+      "bytes": 424767,
+      "sha256": "6d285c9c30623ecced3f22f22a07a113b57a7672c19df8f248cb3d3f797a8d32"
+    }
+  ]
+}

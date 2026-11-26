@@ -1,0 +1,239 @@
+% !TeX program = xelatex
+\documentclass[UTF8,a4paper]{ctexbook}
+% The class determines paper geometry, type size, Chinese fonts, heading layout,
+% double-sided pagination and chapter opening. No geometry, fancyhdr or font override.
+\usepackage{amsmath,amssymb,amsthm,mathtools,mathrsfs}
+\usepackage{tikz-cd}
+\usepackage{enumitem,longtable,booktabs,array,needspace}
+\usepackage[perpage,bottom]{footmisc}
+\usepackage{graphicx,adjustbox}
+\usepackage[unicode,hidelinks,bookmarksnumbered,hypertexnames=false]{hyperref}
+\usepackage{bookmark}
+% Retain EGA's historical chapter and paragraph numbering.
+\ctexset{part={name={第,卷},number=\Roman{part}},chapter={number={\ifnum\value{chapter}=0 0\else\Roman{chapter}\fi}},section={name={\texorpdfstring{\S\,}{§},}}}
+\renewcommand{\thesection}{\arabic{section}}
+\renewcommand{\thesubsection}{\thesection.\arabic{subsection}}
+\setcounter{secnumdepth}{2}
+\setcounter{tocdepth}{2}
+% Four-digit TOC page numbers: extend only their reserved width.
+% Fonts, body geometry, heading styles and page numbering remain class defaults.
+\makeatletter
+\renewcommand{\@pnumwidth}{2.4em}
+\renewcommand{\@tocrmarg}{3.4em}
+\makeatother
+\setlength{\emergencystretch}{2em}
+\allowdisplaybreaks[2]
+\newcommand{\egapar}[1]{\par\addvspace{0.55\baselineskip}\Needspace{3\baselineskip}\noindent\hypertarget{para:\arabic{chapter}:#1}{}\hypertarget{entry:\arabic{chapter}:#1}{}\label{entry:\arabic{chapter}:#1}\textbf{（#1）}\quad\ignorespaces}
+\newcommand{\egastatement}[2]{\par\addvspace{0.55\baselineskip}\Needspace{3\baselineskip}\noindent\hypertarget{para:\arabic{chapter}:#1}{}\hypertarget{entry:\arabic{chapter}:#1}{}\label{entry:\arabic{chapter}:#1}\textbf{#2（#1）}\quad\ignorespaces}
+\newcommand{\eref}[1]{\hyperlink{entry:\arabic{chapter}:#1}{（#1）}}
+\newcommand{\erritem}[2]{\par\addvspace{0.6\baselineskip}\Needspace{3\baselineskip}\noindent\hypertarget{errata:I:#1}{}\textbf{#2（#1）}\quad\ignorespaces}
+\newcommand{\unnumberedchapter}[1]{\chapter*{#1}\addcontentsline{toc}{chapter}{#1}\markboth{#1}{#1}}
+\newcommand{\src}[1]{\par\nobreak\noindent{\small 原文印刷页码：#1。}\par\nobreak\vspace{0.25\baselineskip}}
+\newcommand{\origfootnote}[1]{\ifhmode\unskip\nobreak\fi\footnote{\textbf{原注：}#1}}
+\newcommand{\transnote}[1]{\ifhmode\unskip\nobreak\fi\footnote{\textbf{译注：}#1}}
+\newcommand{\separation}{\par\medskip\centerline{$*\qquad *\qquad *$}\medskip}
+\newcommand{\F}{\mathscr F}
+\newcommand{\G}{\mathscr G}
+\newcommand{\HH}{\mathscr H}
+\newcommand{\B}{\mathfrak B}
+\newcommand{\OO}{\mathscr O}
+\newcommand{\Kcat}{\boldsymbol K}
+\newcommand{\restrict}[2]{#1\vert_{#2}}
+\newcommand{\restmod}[2]{#1_{[#2]}}
+\DeclareMathOperator{\Hom}{Hom}
+\DeclareMathOperator{\Supp}{Supp}
+\DeclareMathOperator{\Ker}{Ker}
+\DeclareMathOperator{\Ann}{Ann}
+\DeclareMathOperator{\Spec}{Spec}
+\newcommand{\ilim}{\varinjlim}
+\newcommand{\plim}{\varprojlim}
+\newcommand{\A}{\mathscr A}
+\newcommand{\BB}{\mathscr B}
+\newcommand{\C}{\mathscr C}
+\newcommand{\E}{\mathscr E}
+\newcommand{\LL}{\mathscr L}
+\newcommand{\M}{\mathscr M}
+\newcommand{\N}{\mathscr N}
+\newcommand{\PP}{\mathscr P}
+\newcommand{\J}{\mathscr J}
+\newcommand{\shHom}{\mathscr{H}\!om}
+\newcommand{\dual}[1]{\check{#1}}
+\DeclareMathOperator{\Coker}{Coker}
+\let\Im\relax
+\DeclareMathOperator{\Im}{Im}
+\DeclareMathOperator{\Tor}{Tor}
+\newcommand{\frJ}{\mathfrak J}
+\newcommand{\frK}{\mathfrak K}
+\newcommand{\frQ}{\mathfrak Q}
+\newcommand{\frT}{\mathfrak T}
+\newcommand{\frR}{\mathfrak R}
+\newcommand{\frS}{\mathfrak S}
+\newcommand{\comp}[1]{\widehat{#1}}
+\newcommand{\ctensor}{\mathbin{\widehat{\otimes}}}
+\DeclareMathOperator{\grad}{grad}
+\newcommand{\wt}[1]{\widetilde{#1}}
+\newcommand{\jj}{\mathfrak j}
+\newcommand{\rr}{\mathfrak r}
+\newcommand{\mm}{\mathfrak m}
+\newcommand{\nrad}{\mathfrak N}
+\newcommand{\aphi}{{}^{a}\varphi}
+\DeclareMathOperator{\Spf}{Spf}
+\newcommand{\frX}{\mathfrak X}
+\newcommand{\frY}{\mathfrak Y}
+\newcommand{\frZ}{\mathfrak Z}
+\newcommand{\frU}{\mathfrak U}
+\newcommand{\frV}{\mathfrak V}
+\newcommand{\frW}{\mathfrak W}
+\newcommand{\frD}{\mathfrak D}
+\newcommand{\SSS}{\mathscr S}
+\newcommand{\nn}{\mathfrak n}
+\newcommand{\pp}{\mathfrak p}
+\newcommand{\qq}{\mathfrak q}
+\newcommand{\frj}{\mathfrak j}
+\newcommand{\frk}{\mathfrak k}
+\DeclareMathOperator{\Proj}{Proj}
+\DeclareMathOperator{\Tr}{Tr}
+\DeclareMathOperator{\Sym}{S}
+\DeclareMathOperator{\gr}{gr}
+\newcommand{\red}{\mathrm{red}}
+\newcommand{\Gstar}{\Gamma_*}
+\newcommand{\Tstar}{\Gamma_*}
+\newcommand{\R}{\mathscr R}
+\newcommand{\TT}{\mathscr T}
+\newcommand{\I}{\mathscr I}
+\newcommand{\K}{\mathscr K}
+\newcommand{\V}{\mathbf V}
+\newcommand{\Pb}{\mathbf P}
+\newcommand{\Z}{\mathbf Z}
+\newcommand{\Gr}{\operatorname{Gr}}
+\newcommand{\id}{\mathrm{id}}
+\DeclareMathOperator{\codim}{codim}
+\DeclareMathOperator{\rk}{rg}
+\DeclareMathOperator{\Pic}{Pic}
+\newcommand{\sProj}{\mathscr{P}\!roj}
+\newcommand{\catHom}{\mathscr{H}\!om}
+\newcommand{\Ens}{\mathbf{Ens}}
+\newcommand{\OI}{0_{\mathrm I}}
+\newcommand{\OIII}{0_{\mathrm{III}}}
+\newcommand{\Ext}{\operatorname{Ext}}
+\newcommand{\shExt}{\mathscr{E}\!xt}
+\newcommand{\shTor}{\mathscr{T}\!or}
+\newcommand{\Hh}{\mathbb H}
+\newcommand{\len}{\operatorname{long}}
+\newcommand{\cplx}[1]{#1^{\bullet}}
+\newcommand{\Cat}{\mathbf C}
+\newcommand{\ra}{\longrightarrow}
+\newcommand{\la}{\longleftarrow}
+\newcommand{\iso}{\xrightarrow{\sim}}
+\newcommand{\eproof}{\par\noindent\textbf{证明。}\ignorespaces}
+\newcommand{\finishproof}{\hfill$\square$\par}
+\newcommand{\srcpage}[1]{\par\noindent{\small\itshape〔底本第#1页〕}\par\nobreak}
+\newcommand{\cocomp}[1]{\complement #1}
+\DeclareMathOperator{\Aut}{Aut}
+\DeclareMathOperator{\GL}{GL}
+\DeclareMathOperator{\trdeg}{trdeg}
+
+% Macros for the reviewed continuation. Existing mathematical macros are unchanged.
+\newcommand{\kk}{\mathfrak k}
+\newcommand{\cH}{\mathscr H}
+\newcommand{\hTor}{\mathbb{T}\!or}
+\newcommand{\lTor}{\mathscr{T}\!or}
+\newcommand{\spE}{\mathscr E}
+\DeclareMathOperator{\coprof}{coprof}
+\newcommand{\source}[1]{\par\smallskip\noindent\textit{底本位置：#1。}\par\smallskip}
+\newcommand{\newscope}{new}
+\newcommand{\egap}[1]{\par\addvspace{.6\baselineskip}\Needspace{3\baselineskip}\noindent\hypertarget{new:\newscope:#1}{}\textbf{（#1）}\quad\ignorespaces}
+\newcommand{\egas}[2]{\par\addvspace{.6\baselineskip}\Needspace{3\baselineskip}\noindent\hypertarget{new:\newscope:#1}{}\textbf{#2（#1）}\quad\ignorespaces}
+\newcommand{\cmt}[2]{\footnote{\textbf{译校注〔#1〕：}#2}}
+\newcommand{\ednote}[1]{\footnote{\textbf{英译编者注：}#1}}
+\newcommand{\orig}[1]{\footnote{\textbf{原注：}#1}}
+\newcommand{\head}[1]{\chapter*{#1}\addcontentsline{toc}{chapter}{#1}\markboth{#1}{#1}}
+\newcommand{\egasection}[1]{\section*{#1}\addcontentsline{toc}{section}{#1}}
+\newcommand{\subsec}[1]{\subsection*{#1}\addcontentsline{toc}{subsection}{#1}}
+\newcommand{\audit}[3]{\Needspace{5\baselineskip}\hypertarget{audit:#1}{}\section*{#1\quad #2}\addcontentsline{toc}{section}{#1\quad #2}\noindent\textbf{判定：#3。}\par\smallskip}
+\pdfstringdefDisableCommands{\def\quad{ }\def\qquad{ }\def\S{§}}
+
+\newcommand{\bTor}{\operatorname{\mathbf{Tor}}}
+\newcommand{\termTor}{\mathop{\mathscr{T}\!or^{\mathrm{term}}}\nolimits}
+\newcommand{\NewNote}[1]{\par\smallskip\noindent\textbf{编排说明。}#1\par\smallskip}
+\hypersetup{pdftitle={代数几何基础：按内容顺序编排的中文译校合订本（第二十版·第一篇第12节法英回校）},pdfauthor={原著 A. Grothendieck；与 J. Dieudonné 合作；预备笔记英译编者见各篇},pdfsubject={第0章归并；正文连续；已译范围和未译范围分开列明}}
+\title{代数几何基础\\中文译校合订本\\[1em]\large 按内容顺序编排·第二十版（第一篇第12节续校）}
+\author{A. Grothendieck\\与 J. Dieudonné 合作撰写\\[.6em]\normalsize 预备笔记英译及编辑：Piotr Blass、Joseph Blass}
+\date{}
+
+% Additions for the fourth continuation; no font or page-geometry overrides.
+\DeclareMathOperator{\Ass}{Ass}
+\DeclareMathOperator{\prof}{prof}
+\DeclareMathOperator{\htp}{ht}
+\newcommand{\pd}{\operatorname{dim.proj}}
+\newcommand{\injdim}{\operatorname{dim.inj}}
+\newcommand{\gldim}{\operatorname{dim.coh}}
+\newcommand{\Salg}{\mathrm S}
+
+\DeclareMathOperator{\End}{End}
+
+% Additions for chapter 0, section 18. Keep class defaults.
+\DeclareMathOperator{\Exan}{Exan}
+\DeclareMathOperator{\Exal}{Exal}
+\DeclareMathOperator{\Exalcom}{Exalcom}
+\DeclareMathOperator{\Exantop}{Exantop}
+\DeclareMathOperator{\Exaltop}{Exaltop}
+\DeclareMathOperator{\Exalcotop}{Exalcotop}
+\newcommand{\HomCont}{\operatorname{Hom.cont}}
+
+% Section 20 additions, no layout/font changes.
+\DeclareMathOperator{\Der}{\text{Dér}}
+\newcommand{\DerCont}{\operatorname{\text{Dér.cont}}}
+
+\begin{document}
+\egasection{§15后半预览}
+% Edition 23: French physical pp.93 (Il faut une condition...)--94, complete.
+% English physical p.61, corresponding passage through section15 end.
+% The inherited source remains unchanged in v22_section15_inherited.tex.
+还需要一个关于〔原稿此处未写出对象〕的条件，以保证2.12成立，即在假设$f:X\to P$非分歧时，若$X$光滑，则泛截面$\mathcal X_\eta$也光滑。\cmt{V23-SMO001}{法93在“Il faut une condition sur”之后直接接未闭合的左括号，没有可可靠恢复的条件对象；英文将这里标成“illegible”。法稿接着只写带下划线的$X$，没有$\eta$。若指总空间$\mathcal X$在$k$上光滑，这早已由$\mathcal X\to X$光滑推出，不需要新的微分条件；下文法94的结论明确是$\mathcal X_\eta$在$k(\eta)$上光滑，正文据此明确泛截面，保留原处的省略于本注。}
+现在假设$P$在$k$上光滑，$\mathcal P\to P\times_kG$拟有限，并且满足下述条件；这里假设$k$代数闭。\cmt{V23-SMO002}{“拟有限”及“$k$代数闭”都是法93的手添假设，不是本版为补证而新加。以下沿用前文明确的有限型范围，并在应用时取$X$处处光滑、纯$n$维。不能删去$f$非分歧：它保证$T_xX$的像是$n$维向量子空间，才能代入本段的条件。}
+对于每个$x\in P(k)$，以及$T_x(P)$中每个维数$n\geq m$的向量子空间$V$，考虑如下参数$\xi\in G(k)$组成的集合$E(x,V)$：$\mathcal P_\xi$中存在位于$x$上方的点$z$，使下列条件不能全体成立：\cmt{V23-SMO003}{法93已经用手改的否定“ne satisfaisant pas l'ensemble de conditions”替代先写的肯定条件，并在$\mathcal P$上加了纤维下标$\xi$和点名$z$。本版保留这个量词：存在一个使三项不全成立的点，而不是存在一个使三项全部失败的点。切空间处原稿仍省写为$T_z(\mathcal P)$，正文按所讨论的纤维态射补齐下标；不得以总空间切空间替代纤维切空间。}
+\begin{itemize}
+\item $\mathcal P_\xi$在$z$处光滑；
+\item $\mathcal P_\xi\to P$在$z$处的切映射
+\[
+T_z(\mathcal P_\xi)\longrightarrow T_x(P)
+\]
+为单射，即$\mathcal P_\xi\to P$在$z$处非分歧；
+\item 该切映射的像与$V$横截，即二者之和为$T_x(P)$。
+\end{itemize}
+
+所要求的条件是
+\[
+\dim E(x,V)\leq N-n-1.
+\]
+我们知道，$E(x,V)$是$G$中一个良定义的可构造集在$G(k)$上的迹。\cmt{V23-SMO004}{法93的“constructible”虽经手改，仍可辨认；原稿没有英文整理稿在括号中加的三个问号。本版恢复原句，并在报告V23-B03中补证可构造性；维数指这个可构造集的闭包维数。上式是要求另加的公理，不是从平坦性或拟有限性自动推出来的估计。当右端为负数时，它要求坏参数集为空。}
+
+借助这一条件，应用雅可比判据并作维数计算，可以得到如下结论。这里先将参数底限制到$G_{\mathrm{red}}$的一个适当非空开集$U$，使$\mathcal P_U\to U$和$\mathcal X_U\to U$都平坦；这不改变泛点的剩余域及所讨论的泛纤维。\cmt{V23-SMO005}{这一约化并缩小参数底的步骤是本版补入的证明修正，原稿直接在整个$G$上论证。几何不可约并不蕴含约化，而仅有光滑纤维也不蕴含态射光滑。反例：取$P=\mathbb A^1_x$、$G=\Spec k[t,\epsilon]/(\epsilon^2)$、$\mathcal P=\mathbb A^1_t$，令$x=t,\epsilon=0$，并取$X=P,f=\id,N=m=1$；所有$E(x,V)$为空，但$\mathcal X\to G$处处不平坦，原文所定义的非光滑坏集等于一维的整个$\mathcal X$，不满足$N-1=0$的上界。因$P,\mathcal P,X,\mathcal X$在本段均在$k$上光滑，后两者约化，故到$G$的态射因子化经过$G_{\mathrm{red}}$；在这个整底上由泛平坦性可以同时选择$U$。完整证明见V23-B04、B05。}
+记
+\[
+\widetilde f:\mathcal X_U\longrightarrow\mathcal P_U,
+\qquad
+j_U:\mathcal P_U\longrightarrow P\times_kU
+\]
+为诱导态射。由下列点$u\in\mathcal X_U$组成的闭子集$E$的维数不超过$n+(N-n-1)=N-1$：$\mathcal X_U\to U$在$u$处不光滑，或$\mathcal P_U\to U$在$\widetilde f(u)$处不光滑，或$j_U$在$\widetilde f(u)$处非分歧性不成立。\cmt{V23-SMO006}{法93最后一项确实写成总空间态射$\mathcal P\to P$“分歧”，并非只是英文丢掉了下标。然而它已被假设光滑、相对维数$N-m$，在$N-m>0$时处处不是非分歧的；原坏集便会包含整个$\mathcal X$。正确对象是纤维态射$\mathcal P_\xi\to P$，等价地是这里的$j_U$。报告V23-B02以$\mathbb P^2$中直线的标准关联族给出满足坏参数公理的反例，并用相对微分的基变换说明此等价。}
+这里$X$处处光滑、纯$n$维；\cmt{V23-SMO007}{原稿把这一估计归于雅可比判据和维数计数，未展开中间步骤。补证使用两点：横截的光滑纤维积仍光滑；拟有限态射$\mathcal X_U\to X\times_kU$使固定$x\in X(k)$时坏点纤维的维数不超过其坏参数像的维数，后者至多$N-n-1$。再沿$X$作维数计数才得到上式；不能由“对每个点分别成立”直接略去这一统一估计。若$n<m$，前面的维数结论已经给出空泛截面，无须代入此处$n\geq m$的公理。}维数估计为
+\[
+\dim E\leq n+(N-n-1)=N-1.
+\]
+
+因此
+\[
+\dim E<N=\dim U,
+\qquad E_\eta=\varnothing,
+\]
+从而特别得到$\mathcal X_\eta$在$k(\eta)$上光滑。\cmt{V23-SMO008}{法94原式右端清楚为$\dim G$，英文漏掉了对象$G$；采用上述修补后，$\dim U=\dim G=N$。这里排除的是坏集在参数空间中像的闭包：其维数小于$N$，所以不含泛点。结论关乎原族的泛纤维，不意味着原来的非约化底$G$上整个态射已经光滑。}
+这一点一经取得，便立即得到2.12至2.18的相应变式在当前背景中的有效性。\cmt{V23-SMO009}{法94有这一完整句子，且明确写“2.12. à 2.18.”；英文整理稿把它换成“第5节的论述……有效”，漏掉原来的编号范围。本版恢复原句。作者称这些变式“显然”；本轮补证的是光滑$X$的泛截面光滑性；这不能推出任意奇异$X$所涉及的全部双向局部性质等价，也不把这句概括或第2节各项的全部公理化推广计作本轮逐项完成的证明。}
+
+第4节中从泛截面到一般截面的过渡，以及第5节的论述，在当前背景中显然有效；不过，它们已经如此接近同义反复或第8、9、12节的重述，以至于我们都犹豫是否要正式把它们写成陈述。\cmt{V23-SMO010}{按法94保留作者的判断和犹豫语气。这里“从泛到一般”应使用相应性质的参数集可构造并包含泛点，从而包含一个非空开集的事实；不能把任意性质都宣布为一般成立，也不能据此把本版缩底后的相对光滑性恢复成原$G$上的相对光滑性。}
+同样，7.1的论述在$k$代数闭时总是有效；若假设$G$在$k$上有理，那么即使$k$仅仅是无限域也有效。特殊情形7.2、7.3也是如此。至于7.4的结果，它显然是超平面截面情形中的一种特殊应用。如我已经说过的，第3节和第6节仍有待Zariski定理的推广。\cmt{V23-SMO011}{法94清楚写“7.2., 7.3.; quant aux résultats 7.4.”，7.3后没有数学撇号，“quant aux”就是“至于”；英文的撇号与问号无需继续保留在正文。有理性是关于整个参数概形的条件，不等于仅存在一个$k$有理点。报告V23-B06说明无限域和有理性如何保证每个非空参数开集有$k$点；原文对第3、6节的等待状态保持不变。}
+
+还应当推广第8节的结果（第12节曾重新加以讨论）；这样，它们或许会呈现出更令人满意的面貌。我甚至建议你先从在这个背景下撰写这些结果着手，并尝试沿这条路尽可能推进。我觉得，我们至少应当能够重新得到那些不是8.7(c)直接推论的结果；甚至还可以尝试提炼出一些公理化条件，使8.7(c)的一个变式成立。\cmt{V23-SMO012}{法94明确写“tout ce qui n'est pas conséquence directe de 8.7. c)”：否定词确实存在，不能擅删；句末又明确写“une variante de 8.7. c)”，英文在后一处漏掉了(c)。法稿的“peut-être”及“J'ai l'impression”均保留为设想语气。本轮没有恢复8.7(c)原有的历史缺文，也没有把这个研究建议变成已证明的定理。}
+我这里只提出这些建议；如果你遇到特殊困难，我愿意再回到这些问题上，给出更多细节。
+
+\end{document}

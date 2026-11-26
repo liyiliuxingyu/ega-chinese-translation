@@ -1,0 +1,16 @@
+{
+  "schema_version": 2,
+  "edition": 24,
+  "baseline_commit": "aaa56a394186471c071e9d9cc686401becadf98e",
+  "new_book_modules": [
+    "continuations/v24_section16_early.tex",
+    "continuations/v24_section16_late.tex"
+  ],
+  "new_report_modules": [
+    "reports/v24_integration_audit.tex",
+    "reports/v24_section16_early_audit.tex",
+    "reports/v24_section16_late_audit.tex"
+  ],
+  "replaced_old_input": "text/v1_2.tex",
+  "status": "Module interface only. Actual source review and build checks are required; absent modules fail verification."
+}

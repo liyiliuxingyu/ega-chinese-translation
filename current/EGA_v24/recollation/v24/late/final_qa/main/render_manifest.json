@@ -1,0 +1,154 @@
+{
+  "created_utc": "2026-11-26T08:31:37.229061+00:00",
+  "pdf_path": "/workspace/scratch/a886fd56dd2f/v24_work/EGA_v24/main.pdf",
+  "pdf_bytes": 6012544,
+  "pdf_sha256": "1a7af9a8ce697e4361a77c21b249a8c2e2042876e190c97f39aa66a1ccd2b993",
+  "pdf_total_physical_pages": 1210,
+  "range": [
+    956,
+    964
+  ],
+  "scope": "final integrated PDF, separate from independent preview",
+  "all_visual_checks_complete": true,
+  "pages": [
+    {
+      "pdf_physical_page": 956,
+      "png": "/workspace/scratch/a886fd56dd2f/v24_work/late/final_qa/main/physical_0956.png",
+      "png_sha256": "08cd2edbcc78533925e2b66e1732a4ceccf27b75558dc59636a1917284098471",
+      "text": "/workspace/scratch/a886fd56dd2f/v24_work/late/final_qa/main/physical_0956.txt",
+      "text_sha256": "1441f7054915953b72f70d3bfdb096a219372e1f6835e85f358af8cdc3e7585d",
+      "page_size_pt": [
+        595.280029296875,
+        841.8900146484375
+      ],
+      "visual_status": "pass"
+    },
+    {
+      "pdf_physical_page": 957,
+      "png": "/workspace/scratch/a886fd56dd2f/v24_work/late/final_qa/main/physical_0957.png",
+      "png_sha256": "548ddb7cf8e4eed7654431eb4a678e2d0eb4aec102e928da4612550a85ab6709",
+      "text": "/workspace/scratch/a886fd56dd2f/v24_work/late/final_qa/main/physical_0957.txt",
+      "text_sha256": "8e08fc9e8a66d4bae5ea238dfc0947b96b3deb714c3ebc6f681e0e3a2594c4a4",
+      "page_size_pt": [
+        595.280029296875,
+        841.8900146484375
+      ],
+      "visual_status": "pass"
+    },
+    {
+      "pdf_physical_page": 958,
+      "png": "/workspace/scratch/a886fd56dd2f/v24_work/late/final_qa/main/physical_0958.png",
+      "png_sha256": "85558d814ec6bcd8a4ac8134e383d0d409f11e94869a8853ff28599ede422ac9",
+      "text": "/workspace/scratch/a886fd56dd2f/v24_work/late/final_qa/main/physical_0958.txt",
+      "text_sha256": "34d00b77e2608bca81edd35cfcd40549e2defb8d8a91c84bcffd70ae1a036c1e",
+      "page_size_pt": [
+        595.280029296875,
+        841.8900146484375
+      ],
+      "visual_status": "pass"
+    },
+    {
+      "pdf_physical_page": 959,
+      "png": "/workspace/scratch/a886fd56dd2f/v24_work/late/final_qa/main/physical_0959.png",
+      "png_sha256": "574d4f18ea3b8e9e2038d5b1af3d1e1ce50f44935fdc8d67614640d381104fe5",
+      "text": "/workspace/scratch/a886fd56dd2f/v24_work/late/final_qa/main/physical_0959.txt",
+      "text_sha256": "0310146364261f53087f025dc823466c9bb427710e435ee3c312fd4b20a7e103",
+      "page_size_pt": [
+        595.280029296875,
+        841.8900146484375
+      ],
+      "visual_status": "pass"
+    },
+    {
+      "pdf_physical_page": 960,
+      "png": "/workspace/scratch/a886fd56dd2f/v24_work/late/final_qa/main/physical_0960.png",
+      "png_sha256": "c6f7eefadd2fea17149148fe4df1db5b14f0a97f9ad2cab1fb720151c2810b73",
+      "text": "/workspace/scratch/a886fd56dd2f/v24_work/late/final_qa/main/physical_0960.txt",
+      "text_sha256": "a13d551e13f57a9def06ce117aff166f0c91949f635b0642aa2be9814c6efcfc",
+      "page_size_pt": [
+        595.280029296875,
+        841.8900146484375
+      ],
+      "visual_status": "pass"
+    },
+    {
+      "pdf_physical_page": 961,
+      "png": "/workspace/scratch/a886fd56dd2f/v24_work/late/final_qa/main/physical_0961.png",
+      "png_sha256": "ff43ae00b4bc4c163d84af3ee441be1879c84327f6e5d6a5d0f91940a161f51c",
+      "text": "/workspace/scratch/a886fd56dd2f/v24_work/late/final_qa/main/physical_0961.txt",
+      "text_sha256": "63d30ca342699099840aafa08608f5a25cc48acaa1b006cae2b1b8860fc00cf6",
+      "page_size_pt": [
+        595.280029296875,
+        841.8900146484375
+      ],
+      "visual_status": "pass"
+    },
+    {
+      "pdf_physical_page": 962,
+      "png": "/workspace/scratch/a886fd56dd2f/v24_work/late/final_qa/main/physical_0962.png",
+      "png_sha256": "679077f8a9ee964fa333b432fe1f9ef60863bd9387eccfecb4ff817c1a925f27",
+      "text": "/workspace/scratch/a886fd56dd2f/v24_work/late/final_qa/main/physical_0962.txt",
+      "text_sha256": "a2285996e43dbdf0ef21d362a7f7196960d85771f45ea4d5e7e80ce0f449da7b",
+      "page_size_pt": [
+        595.280029296875,
+        841.8900146484375
+      ],
+      "visual_status": "pass"
+    },
+    {
+      "pdf_physical_page": 963,
+      "png": "/workspace/scratch/a886fd56dd2f/v24_work/late/final_qa/main/physical_0963.png",
+      "png_sha256": "89d3eedcd04a4e591a9c91678a9379f173e6e02e11111ea9bc8ce4d3b5d6dd1f",
+      "text": "/workspace/scratch/a886fd56dd2f/v24_work/late/final_qa/main/physical_0963.txt",
+      "text_sha256": "26e6c07746fb54c897a5e2b555ec751d5fac52fe796e43471ac0bf6f560b7c64",
+      "page_size_pt": [
+        595.280029296875,
+        841.8900146484375
+      ],
+      "visual_status": "pass"
+    },
+    {
+      "pdf_physical_page": 964,
+      "png": "/workspace/scratch/a886fd56dd2f/v24_work/late/final_qa/main/physical_0964.png",
+      "png_sha256": "c2662843cbba91bbd40fb7161084d24edca4243259c7ba05e91a02577a342314",
+      "text": "/workspace/scratch/a886fd56dd2f/v24_work/late/final_qa/main/physical_0964.txt",
+      "text_sha256": "b589df418eea2468eaf289a3f11326e1c968af816c7c743220eb5c3a5c671575",
+      "page_size_pt": [
+        595.280029296875,
+        841.8900146484375
+      ],
+      "visual_status": "pass"
+    }
+  ],
+  "sheets": [
+    {
+      "path": "/workspace/scratch/a886fd56dd2f/v24_work/late/final_qa/main/sheet_01.png",
+      "sha256": "12b5c453982b5fee92633b05b4824ac8da3f2ebe347e801eb4ea784b6cccbb2d",
+      "pages": [
+        956,
+        957,
+        958,
+        959
+      ]
+    },
+    {
+      "path": "/workspace/scratch/a886fd56dd2f/v24_work/late/final_qa/main/sheet_02.png",
+      "sha256": "a9721bcdda1d84d9e1020c147fa5f3712a765e80ca65f50a3d89433519bb5130",
+      "pages": [
+        960,
+        961,
+        962,
+        963
+      ]
+    },
+    {
+      "path": "/workspace/scratch/a886fd56dd2f/v24_work/late/final_qa/main/sheet_03.png",
+      "sha256": "ab8f5a5ce588a1ad5800b02fc0411ee4391346f2562a790780ff27cd67a46cd5",
+      "pages": [
+        964
+      ]
+    }
+  ],
+  "actual_visual_review_record": "v24_late_main_visual.json",
+  "actual_visual_review_completed_utc": "2026-11-26T08:36:23.673492+00:00"
+}

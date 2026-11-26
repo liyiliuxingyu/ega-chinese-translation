@@ -1,0 +1,72 @@
+{
+  "retrieved_at_utc": "2026-11-26T03:07:10.711918+00:00",
+  "method": "Root opened all twelve official pages through web retrieval in this turn and checked the claimed statements, not just search snippets. Six added pages were opened after full reading of the setup report.",
+  "references": [
+    {
+      "tag": "0H3Y",
+      "url": "https://stacks.math.columbia.edu/tag/0H3Y",
+      "title": "Generic flatness stratification"
+    },
+    {
+      "tag": "054K",
+      "url": "https://stacks.math.columbia.edu/tag/054K",
+      "title": "Chevalley theorem"
+    },
+    {
+      "tag": "052A",
+      "url": "https://stacks.math.columbia.edu/tag/052A",
+      "title": "Generic flatness"
+    },
+    {
+      "tag": "05F6",
+      "url": "https://stacks.math.columbia.edu/tag/05F6",
+      "title": "Dimension of fibres"
+    },
+    {
+      "tag": "02G3",
+      "url": "https://stacks.math.columbia.edu/tag/02G3",
+      "title": "Unramified morphisms"
+    },
+    {
+      "tag": "01V9",
+      "url": "https://stacks.math.columbia.edu/tag/01V9",
+      "title": "Local fiberwise criterion for smoothness"
+    },
+    {
+      "tag": "01UA",
+      "url": "https://stacks.math.columbia.edu/tag/01UA",
+      "title": "Flat morphisms locally of finite presentation are universally open",
+      "root_retrieved_at_utc": "2026-11-26T03:11:38.107161+00:00"
+    },
+    {
+      "tag": "037A",
+      "url": "https://stacks.math.columbia.edu/tag/037A",
+      "title": "Open maps with irreducible fibres induce bijections on irreducible components",
+      "root_retrieved_at_utc": "2026-11-26T03:11:38.107170+00:00"
+    },
+    {
+      "tag": "00P0",
+      "url": "https://stacks.math.columbia.edu/tag/00P0",
+      "title": "Dimension equals transcendence degree for finite type integral algebras over fields",
+      "root_retrieved_at_utc": "2026-11-26T03:11:38.107175+00:00"
+    },
+    {
+      "tag": "02FW",
+      "url": "https://stacks.math.columbia.edu/tag/02FW",
+      "title": "Morphisms and dimensions of fibres, including flat dimension equality",
+      "root_retrieved_at_utc": "2026-11-26T03:11:38.107177+00:00"
+    },
+    {
+      "tag": "053X",
+      "url": "https://stacks.math.columbia.edu/tag/053X",
+      "title": "Constructible sets and Noetherian spaces, dense constructible subsets contain nonempty opens",
+      "root_retrieved_at_utc": "2026-11-26T03:11:38.107179+00:00"
+    },
+    {
+      "tag": "07R6",
+      "url": "https://stacks.math.columbia.edu/tag/07R6",
+      "title": "Regular morphisms: flat with geometrically regular fibres; smooth morphisms are regular",
+      "root_retrieved_at_utc": "2026-11-26T03:11:38.107181+00:00"
+    }
+  ]
+}

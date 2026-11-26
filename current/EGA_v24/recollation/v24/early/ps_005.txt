@@ -1,0 +1,51 @@
+Let us note that we have a canonical isomoprhism P 1
+X/S = Ω1
+X/S + OX hence P V 1
+X/S =
+GX/S + OX (in the original the G is elongated). * On the other hand, we verify that
+the composed homomorphism µ of the diagram 1 is zero on the factor OV ′ and on the
+factor GX/S ⊗OV 1 it reduces to the homomorphism M(φ) (illegible) deduced from the
+section M(φ) of Sym 2 (Ω1
+X/S) ⊗OV ′ already mentioned. Thus at point x of X, M(φ)
+is non-degenerate, i.e. M(φ)′ is surjective if and only if M is surjective at x and we see
+that in the diagram 1 this is also equivalent to saying that V is surjective at x (since one
+and the other mean that the canonical homomoprhism of the sum of the two mentioned
+submodules of Ω1
+X/S ⊗OV ′ into the latter is surjective at x.)
+We ﬁnd therefore:
+Proposition 7.
+Under the preceding conditions (to be recalled) the underlying set of
+V (φ)sup sing is nothing else but the set of points of V (φ)sing where the morhism V (φ)sing →
+Y (of smooth preschemes over S of relative dimension m−1 and m respectively) is ramiﬁed.
+In the language of the fathers (en termes de papa Fr) (which we should give as a
+remark) a point X ∈V (φ) is thus supersingular relative to Y if and onlyif “it consists of
+at least two coinciding (inﬁnite near) singular points (confondus Fr). . .
+We may and we have to make precise Proposition 7 from the point of view of an identity
+of sub-preschemes and not just of subsets. Indeed, V (φ)sup sing has been deﬁned as a closed
+pre-subscheme of X or (Fr) we could equally well deﬁne a natual closed subscheme of V in
+such a way that the underlying subset should be the set of ramiﬁcation points with respect
+to Y . Indeed it is enough to express the set of points where a certain homomorphism of
+locally free modules Q = Ω1
+Y/S ⊗OV ′ →M(= Ω1
+V ′/S) is not surjective. If q and r are their
+respective ranks this is also the set of points where Λ1Q →Λ
+√
+M is not surjective this
+is also the zero set of the evident section of Hom(Λ1Q, Λ
+√M) ≃(≈)(Λ
+√Q) ⊗(ΛrR) ⊗
+(Λ1Q)v, thus the underlying set of a closed sub-prescheme of zeros of this section, let us call
+it Ram(V ′/Y ). I say that the latter subscheme is identical to V (φ)sup sing. This is a simple
+exercise about the diagram above, taking into account that V (φ)sup sing is deﬁned by the
+same procedure as the one made explicit for Q →R but in terms of the homomoprhism
+P(= P v1
+X/Y ⊗OV ′) →S(= Ω1
+X/Y ⊗OV ′) as follows from the description of µ given above.
+We are therefore reduced to the following general situation:
+We have on a ringed space W a locally free module M of rank m and two locally free
+submodules P and Q of respective ranks p and q such that p + 1 = m + 1, we use the
+previous construction relative to morphisms P →M/W = S and Q →M/P = R to ﬁnd
+the sections a) of
+P ⊗det S ⊗det P −1 = P ⊗det M ⊗det P −1 ⊗det Q−1
+* Is the elongated G the tangent sheaf? [Tr]
+4

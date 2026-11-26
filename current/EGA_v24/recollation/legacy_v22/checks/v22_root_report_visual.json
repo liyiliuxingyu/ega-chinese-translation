@@ -1,0 +1,73 @@
+{
+  "schema_version": 1,
+  "edition": 22,
+  "reviewer": "root",
+  "review_method": "actual_image_view",
+  "document": "report",
+  "pdf": {
+    "path": "report.pdf",
+    "sha256": "4cced0b1907d27f0806a74d3ad525016bc002e191165674c5c687a2dd1a2b53c"
+  },
+  "rendering": {
+    "renderer": "PyMuPDF",
+    "scale": 1.5
+  },
+  "pages": [
+    {
+      "physical_page": 39,
+      "image": "checks/visual_v22/root/report_0039.png",
+      "image_sha256": "a3f126198339dd04128480fc19cebee439bec2aed27fe2aac00cc6be6d909daf",
+      "verdict": "pass",
+      "notes": "实际查看专题标题、来源说明及E01；标题分行完整，法英归因段落和页脚均在版心内。"
+    },
+    {
+      "physical_page": 40,
+      "image": "checks/visual_v22/root/report_0040.png",
+      "image_sha256": "59fad2b917c7ca5216525f27211b718c3f6d7490cbb33ad4438e08961cd8df79",
+      "verdict": "pass",
+      "notes": "实际查看E02全页；m=0反例、Grassmann关联维数及末尾空交公式均完整，未见叠字或越界。"
+    },
+    {
+      "physical_page": 41,
+      "image": "checks/visual_v22/root/report_0041.png",
+      "image_sha256": "383a1fa0e58ec81d11318f57c9076b0fe7c325c3ff7fd32b07cc8e414d2f96c9",
+      "verdict": "pass",
+      "notes": "实际查看E02续段与E03；切空间条件、异面直线定义、投影与平方理想局部模型均清晰。"
+    },
+    {
+      "physical_page": 42,
+      "image": "checks/visual_v22/root/report_0042.png",
+      "image_sha256": "80f6945effdac4f801d2cb057b038dc22699bd3d8c22321837e1414447cc8ca3",
+      "verdict": "pass",
+      "notes": "实际查看E04奇异曲线反例及E05开头；指数3/4/5、嵌维公式、反例量词和补证范围完整。"
+    },
+    {
+      "physical_page": 43,
+      "image": "checks/visual_v22/root/report_0043.png",
+      "image_sha256": "361b43b6d4ff79b5dca67a6e1b7af75c6c28c3ed66af4d2c08281580a62589f9",
+      "verdict": "pass",
+      "notes": "实际查看E05四步补证；有限性、割线条件、剩余域/Nakayama公式及量词段落连续，无公式裁切。"
+    },
+    {
+      "physical_page": 44,
+      "image": "checks/visual_v22/root/report_0044.png",
+      "image_sha256": "bd9158c430a0fb7bb87957d68ae03ffbefd208efa07f5811481b2da7e24e166d",
+      "verdict": "pass",
+      "notes": "实际查看E06和E07；一般中心、有限双有理投影、超曲面论证及亏格公式清楚，长段落未越界。"
+    },
+    {
+      "physical_page": 45,
+      "image": "checks/visual_v22/root/report_0045.png",
+      "image_sha256": "e87b71586e0b28055d2093aeb37a1ac9d2cb84264a7aeec7d4fb4e29e458b62e",
+      "verdict": "pass",
+      "notes": "实际查看E07续段和E08；Riemann–Hurwitz矛盾、保留条件和真实未决范围完整，无截断。"
+    },
+    {
+      "physical_page": 46,
+      "image": "checks/visual_v22/root/report_0046.png",
+      "image_sha256": "a044d2f8207bee403ba65069bd70cda19c42fb6665915006904723fbead15618",
+      "verdict": "pass",
+      "notes": "实际查看章末留白；仅页眉与页码，无缺失正文或残余图式，符合默认双面分页。"
+    }
+  ]
+}

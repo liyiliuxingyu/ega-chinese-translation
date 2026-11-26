@@ -1,0 +1,54 @@
+{
+  "pdf_sha256": "e908b3cdae5673eafc94a853bd4586cce4b53d53b9e6a08c2b9d9cb74b2b8a38",
+  "scale": 1.65,
+  "pages": [
+    {
+      "page": 1,
+      "path": "checks/rendered_report_root/report_0001.png",
+      "sha256": "856e6be05bb636a7589d2f8dca138ea235f9bbeb99fb4628d07ff86848586ac5",
+      "pixels_sha256": "b21e5e6038f0536e9571e32ee1ce93f21ee6504b785616206f168d91fa46c638"
+    },
+    {
+      "page": 19,
+      "path": "checks/rendered_report_root/report_0019.png",
+      "sha256": "197faf827ecf6fd103242c91a112b4fb10350b77d29d68550f742227a1aa5489",
+      "pixels_sha256": "dbd03aa06b878b9fe1c96abfe1f2acac67054697184635bde7b86a1508f0df9d"
+    },
+    {
+      "page": 51,
+      "path": "checks/rendered_report_root/report_0051.png",
+      "sha256": "926ea7350d748c4869db0cb33fce32fd228b56245cc21434e64eb06f59246577",
+      "pixels_sha256": "290052c192e8c40e0779908c03afc29e3bdfe311616cb2f8969c0a933390412c"
+    },
+    {
+      "page": 52,
+      "path": "checks/rendered_report_root/report_0052.png",
+      "sha256": "b2aa72fb9b585b5f98ffafbdd69c7cab29035bd91ac1360b1ca7b3359c49ddb7",
+      "pixels_sha256": "6c591ac65b79b9e1d208a9eecceac7eb418913bc0e2499fb8618014bfa2fb516"
+    },
+    {
+      "page": 53,
+      "path": "checks/rendered_report_root/report_0053.png",
+      "sha256": "786a3e9b5ff89699e144886ec8367c79170f62d62c414fa36babe40044b6e0e6",
+      "pixels_sha256": "b1e9ad186e898f9f178e3cde7c5e3debd91f90ddf182e2e2cac2ce2dc937fedd"
+    },
+    {
+      "page": 54,
+      "path": "checks/rendered_report_root/report_0054.png",
+      "sha256": "d62d7dc9f1cfddd868e29cce93394589f4329c7803ef0c9490a021c50db3bd72",
+      "pixels_sha256": "6f77ea6f64ca9e65ff1e8932e84934867a78415aac9fc372d3a3f69585c86a1f"
+    },
+    {
+      "page": 55,
+      "path": "checks/rendered_report_root/report_0055.png",
+      "sha256": "d4960adebadc3bef489c272cb8bcbcf17ac42bec586791ca49ffb0ea8b818d9a",
+      "pixels_sha256": "374c111c7f5271c4494d36b0504bf5063a6c917551ff0100f7849fb84e4d3950"
+    },
+    {
+      "page": 56,
+      "path": "checks/rendered_report_root/report_0056.png",
+      "sha256": "b1636ada91b0e9007ef6e85bc09b9846ec5ff458636321a5de20011b11de9595",
+      "pixels_sha256": "a29c58e1f6ae32a0c8ddddcfef16a7ad9bf3b38caffb81d269c0853c1d17d56b"
+    }
+  ]
+}

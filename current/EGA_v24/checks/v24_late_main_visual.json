@@ -1,0 +1,112 @@
+{
+  "schema_version": 1,
+  "edition": 24,
+  "reviewer": "/root/v24_late",
+  "review_method": "actual_image_view",
+  "document": "main",
+  "pdf": {
+    "path": "main.pdf",
+    "sha256": "1a7af9a8ce697e4361a77c21b249a8c2e2042876e190c97f39aa66a1ccd2b993"
+  },
+  "rendering": {
+    "renderer": "PyMuPDF",
+    "scale": 1.5
+  },
+  "checked_utc": "2026-11-26T08:36:23.673492+00:00",
+  "review_scope": "Final integrated PDF; independent of earlier standalone preview QA",
+  "viewing_detail": "全部 9 页通过实际展示的全页拼图逐页查看；物理 959、960、964 另单独查看完整 PNG。",
+  "whole_book_human_page_by_page_review": false,
+  "unresolved_findings": [],
+  "pages": [
+    {
+      "physical_page": 956,
+      "printed_page": "936",
+      "image": "checks/v24_late/main/physical_0956.png",
+      "image_sha256": "08cd2edbcc78533925e2b66e1732a4ceccf27b75558dc59636a1917284098471",
+      "verdict": "pass",
+      "notes": "前后模块接缝页。可逆层 K 的交换图各箭头、零项及图号完整；紧随的底本范围、英译编者划去说明和作者划去稿标记清楚。EAR032、EAR033 与 LAT001 三条脚注均在页内，无叠压或裁切。",
+      "original_local_image": "/workspace/scratch/a886fd56dd2f/v24_work/late/final_qa/main/physical_0956.png",
+      "pixels_match_final_pdf_page": true
+    },
+    {
+      "physical_page": 957,
+      "printed_page": "937",
+      "image": "checks/v24_late/main/physical_0957.png",
+      "image_sha256": "548ddb7cf8e4eed7654431eb4a678e2d0eb4aec102e928da4612550a85ab6709",
+      "verdict": "pass",
+      "notes": "增广术语和条件 (a)、(b)、(b′) 层次清楚；θ、二次核 K、极化映射及 Hom 公式居中且未越出版心。LAT002–005 四条脚注可读，最后一句自然续到下一页。",
+      "original_local_image": "/workspace/scratch/a886fd56dd2f/v24_work/late/final_qa/main/physical_0957.png",
+      "pixels_match_final_pdf_page": true
+    },
+    {
+      "physical_page": 958,
+      "printed_page": "938",
+      "image": "checks/v24_late/main/physical_0958.png",
+      "image_sha256": "85558d814ec6bcd8a4ac8134e383d0d409f11e94869a8853ff28599ede422ac9",
+      "verdict": "pass",
+      "notes": "命题 8 的 Hilbert 函数两项二项式完整，d≥1 与 n<2 的约定均可见；引理 8.1 的 Sym^{n−2}→Sym^n 及余核秩公式排版正常。LAT006–009 四条脚注分明，页末正文续句可与下一页接合。",
+      "original_local_image": "/workspace/scratch/a886fd56dd2f/v24_work/late/final_qa/main/physical_0958.png",
+      "pixels_match_final_pdf_page": true
+    },
+    {
+      "physical_page": 959,
+      "printed_page": "939",
+      "image": "checks/v24_late/main/physical_0959.png",
+      "image_sha256": "574d4f18ea3b8e9e2038d5b1af3d1e1ce50f44935fdc8d67614640d381104fe5",
+      "verdict": "pass",
+      "notes": "命题 9 的 1≤m≤n、条件 (i)/(ii)、自然二次类和商模映射均完整。长商模公式分行正常，无出界；LAT010–012 与 LAT013 开头清楚，LAT013 在下一页继续。已单独放大全页核对该脚注起点。",
+      "original_local_image": "/workspace/scratch/a886fd56dd2f/v24_work/late/final_qa/main/physical_0959.png",
+      "pixels_match_final_pdf_page": true
+    },
+    {
+      "physical_page": 960,
+      "printed_page": "940",
+      "image": "checks/v24_late/main/physical_0960.png",
+      "image_sha256": "c6f7eefadd2fea17149148fe4df1db5b14f0a97f9ad2cab1fb720151c2810b73",
+      "verdict": "pass",
+      "notes": "推论 10 的 (i)、(ii)(a)/(b)、(ii bis)、(iii) 缩进与公式完整。划去稿结束说明及恢复未划去正文的标题独立清楚；上一页 LAT013 的续文位于本页脚注区最前，随后 LAT014–015，无重叠或断缺。已单独查看全页。",
+      "original_local_image": "/workspace/scratch/a886fd56dd2f/v24_work/late/final_qa/main/physical_0960.png",
+      "pixels_match_final_pdf_page": true
+    },
+    {
+      "physical_page": 961,
+      "printed_page": "941",
+      "image": "checks/v24_late/main/physical_0961.png",
+      "image_sha256": "ff43ae00b4bc4c163d84af3ee441be1879c84327f6e5d6a5d0f91940a161f51c",
+      "verdict": "pass",
+      "notes": "零点术语、相对平坦性段落与雅可比零概形构造完整；Λ^m E 到 Ω^m 的映射和末尾线丛截面公式上下标正常。LAT016–017 位于页脚，未与正文或页眉碰撞。",
+      "original_local_image": "/workspace/scratch/a886fd56dd2f/v24_work/late/final_qa/main/physical_0961.png",
+      "pixels_match_final_pdf_page": true
+    },
+    {
+      "physical_page": 962,
+      "printed_page": "942",
+      "image": "checks/v24_late/main/physical_0962.png",
+      "image_sha256": "679077f8a9ee964fa333b432fe1f9ef60863bd9387eccfecb4ff817c1a925f27",
+      "verdict": "pass",
+      "notes": "二阶判据的 1≤m≤d 限制明确可见；标记 (*)、外幂映射、二次类 M 和判别式线丛指数排版正常。奇异而非超奇异集合公式完整，LAT028 与 LAT018–021 脚注均无裁切。",
+      "original_local_image": "/workspace/scratch/a886fd56dd2f/v24_work/late/final_qa/main/physical_0962.png",
+      "pixels_match_final_pdf_page": true
+    },
+    {
+      "physical_page": 963,
+      "printed_page": "943",
+      "image": "checks/v24_late/main/physical_0963.png",
+      "image_sha256": "89d3eedcd04a4e591a9c91678a9379f173e6e02e11111ea9bc8ce4d3b5d6dd1f",
+      "verdict": "pass",
+      "notes": "超奇异集合的并集式、带 Λ^m u=0 假设的常秩引理、相对维数等式及高秩分歧建议均可读。V² 与分歧轨迹等式完整；作者未验证的说明保留，LAT026 的译者补证脚注自然续到下一页。",
+      "original_local_image": "/workspace/scratch/a886fd56dd2f/v24_work/late/final_qa/main/physical_0963.png",
+      "pixels_match_final_pdf_page": true
+    },
+    {
+      "physical_page": 964,
+      "printed_page": "944",
+      "image": "checks/v24_late/main/physical_0964.png",
+      "image_sha256": "c2662843cbba91bbd40fb7161084d24edca4243259c7ba05e91a02577a342314",
+      "verdict": "pass",
+      "notes": "本节末页原注将余维写为至多 d−m+1。LAT026 的续文和 LAT027 的反例及参考文献均完整，正文与脚注无叠压。中央留白来自本节结束和页脚排版，并非内容裁切；已单独查看全页。",
+      "original_local_image": "/workspace/scratch/a886fd56dd2f/v24_work/late/final_qa/main/physical_0964.png",
+      "pixels_match_final_pdf_page": true
+    }
+  ]
+}

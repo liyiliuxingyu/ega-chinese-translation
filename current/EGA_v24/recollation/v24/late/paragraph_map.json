@@ -1,0 +1,152 @@
+[
+  {
+    "id": "V24-L-P001",
+    "line": 5,
+    "source": "EN68 editor; FR104–107 deletion"
+  },
+  {
+    "id": "V24-L-P002",
+    "line": 17,
+    "source": "FR104 first paragraph; EN68"
+  },
+  {
+    "id": "V24-L-P003",
+    "line": 24,
+    "source": "FR104 second paragraph; EN68"
+  },
+  {
+    "id": "V24-L-P004",
+    "line": 27,
+    "source": "FR104 augmentation terminology; EN68"
+  },
+  {
+    "id": "V24-L-P005",
+    "line": 38,
+    "source": "FR104 quadratic augmentation; EN69"
+  },
+  {
+    "id": "V24-L-P006",
+    "line": 47,
+    "source": "FR104–105 polar map and residue fields; EN69"
+  },
+  {
+    "id": "V24-L-P007",
+    "line": 59,
+    "source": "FR105 proposition8; EN69"
+  },
+  {
+    "id": "V24-L-P008",
+    "line": 72,
+    "source": "FR105 proof transition and deleted phrase; EN69"
+  },
+  {
+    "id": "V24-L-P009",
+    "line": 75,
+    "source": "FR105 lemma8.1; EN69"
+  },
+  {
+    "id": "V24-L-P010",
+    "line": 87,
+    "source": "FR105 proof and degree-k parenthesis; EN69"
+  },
+  {
+    "id": "V24-L-P011",
+    "line": 90,
+    "source": "FR105 bottom–106 proposition9; EN69–70"
+  },
+  {
+    "id": "V24-L-P012",
+    "line": 108,
+    "source": "FR106 natural map construction; EN70"
+  },
+  {
+    "id": "V24-L-P013",
+    "line": 127,
+    "source": "FR106–107 corollary10; EN70–71"
+  },
+  {
+    "id": "V24-L-P014",
+    "line": 146,
+    "source": "EN71 editor; FR107 deletion end"
+  },
+  {
+    "id": "V24-L-P015",
+    "line": 150,
+    "source": "FR107 undeleted introduction; EN71"
+  },
+  {
+    "id": "V24-L-P016",
+    "line": 158,
+    "source": "FR107 singular zero terminology; EN71"
+  },
+  {
+    "id": "V24-L-P017",
+    "line": 161,
+    "source": "FR107–108 geometric and relative variants; EN71"
+  },
+  {
+    "id": "V24-L-P018",
+    "line": 164,
+    "source": "FR108 dual formulation; EN71"
+  },
+  {
+    "id": "V24-L-P019",
+    "line": 167,
+    "source": "FR108 differential singular scheme; EN71–72"
+  },
+  {
+    "id": "V24-L-P020",
+    "line": 183,
+    "source": "FR109 formal principal parts and order2; EN72"
+  },
+  {
+    "id": "V24-L-P021",
+    "line": 195,
+    "source": "FR109 rank test and Vdoubleprime; EN72"
+  },
+  {
+    "id": "V24-L-P022",
+    "line": 207,
+    "source": "FR109 K,W and quadratic map; EN72"
+  },
+  {
+    "id": "V24-L-P023",
+    "line": 212,
+    "source": "FR109–110 discriminant and V2; EN72"
+  },
+  {
+    "id": "V24-L-P024",
+    "line": 224,
+    "source": "FR110 lemma introduction; EN72"
+  },
+  {
+    "id": "V24-L-P025",
+    "line": 227,
+    "source": "FR110 constant-rank lemma; EN72"
+  },
+  {
+    "id": "V24-L-P026",
+    "line": 231,
+    "source": "FR110 proposal generalizing proposition6; EN72"
+  },
+  {
+    "id": "V24-L-P027",
+    "line": 234,
+    "source": "FR110 smooth tower; EN72"
+  },
+  {
+    "id": "V24-L-P028",
+    "line": 238,
+    "source": "FR110–111 dimensions and generic footnote cue; EN72–73"
+  },
+  {
+    "id": "V24-L-P029",
+    "line": 245,
+    "source": "FR111 ramification proposal; EN73 before section17"
+  },
+  {
+    "id": "V24-L-P030",
+    "line": 253,
+    "source": "FR111 footnote on maximal-minor codimension; EN73 moved before proposal"
+  }
+]

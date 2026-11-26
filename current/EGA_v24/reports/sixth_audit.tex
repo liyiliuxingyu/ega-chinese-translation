@@ -1,0 +1,261 @@
+% 本轮新核查：仅据所上传的EGA IV.1及IV.4原件。
+\head{第六版：第0章19.0--19.4译校与定点核查}
+\section*{范围、版本与判定原则}
+\addcontentsline{toc}{section}{范围、版本与判定原则}
+本轮从第五版实际源码的（18.5.4）之后接续，完整译入第0章19.0--19.4，即（19.0.1）至（19.4.7），并包括其中的四个子编号引理。底本为上传的\texttt{EGAIV.1.pdf}，上传PDF第68--88页，原分册印刷第69--89页；第85页跨越19.3与19.4，第88页以（19.4.7）的证明结束。19.5起的内容没有计入本轮完成范围。
+
+本轮共有46个新增原著编号条目，其中（19.3.12）是\textbf{原作者已正式要求删除的历史条目}。为保证对照译文完整，该条的原陈述和原证明仍译出，但前后均标为撤销状态；不能将其作为本版认可的有效命题引用。另新增原编号公式（19.4.4.1）。计数是结构覆盖记录，不是数学正确性的认证。
+
+核查直接比较原文陈述、证明、公式及页面图像，并对本轮相关的作者勘误作交叉核对。以下反例和补证均为译校分析，不冒充原著证明。F6-E01与F6-G02是\textbf{同一个引理的断言问题和证明问题}；F6-A01与F6-G03也指向\textbf{同一条被撤销的命题}。它们不得相加计算为四个不同的错误定理。
+
+\begin{longtable}{@{}p{.17\linewidth}p{.19\linewidth}p{.55\linewidth}@{}}
+\toprule 标识 & 类型 & 结论\\ \midrule\endhead
+F6-E01/G02 & 有反例的引理 & （19.3.10.1）只写理想像的包含不足；加强为相等可按原思路修补。\\
+F6-A01/G03 & 作者正式撤销 & （19.3.12）的原证明错误；本轮不声称已反驳其结论。\\
+F6-G01 & 证明步骤错误 & （19.3.5，v）的结论成立，但有限乘积同态的所写等价错误；补入幂等元提升。\\
+F6-G04 & 可补的选择步骤 & （19.4.1）须同时使基环理想零化测试代数；不需增加假设。\\
+F6-T01--T07 & 文字、类型或记号 & 秩的基域、商理想、自由模、局部化、撇号、复合方向和复合映射定义域。\\
+F6-H01--H03 & 使用范围提醒 & 仿射与局部提升；形式双态射；离散拓扑代数的连续结构同态。\\
+F6-V01 & 已核对、未判错 & （19.3.10.2）的纤维积公式及其引用替换。\\
+\bottomrule
+\end{longtable}
+
+\audit{F6-E01}{（19.3.10.1）：理想像仅有包含时，引理不成立}{在所列假设下有具体反例}
+\oldauditsrc{EGA IV第一部分，印刷第84页（上传PDF第83页），引理（19.3.10.1）}
+原引理假设 $B$ 为形式光滑的拓扑 $A$-代数，$E,E'$ 为离散拓扑 $A$-代数，$\mathfrak k\subset E$、$\mathfrak k'\subset E'$ 为幂零理想，$f:E\to E'$ 满射，且仅要求
+\[
+ f(\mathfrak k)\subseteq\mathfrak k'.
+\]
+给定相容的 $u:B\to E/\mathfrak k$ 与 $v':B\to E'$，原文声称存在 $v:B\to E$ 提升 $v'$。以下例子表明：甚至这一较弱的结论也不成立，更不用说同时要求 $v$ 提升 $u$。
+
+\lead{反例的全部数据}
+取任意域 $k$，全部环配备离散拓扑，并令
+\[
+\begin{gathered}
+ A=k,\qquad B=k[x,x^{-1}],\qquad E=k[t],\qquad E'=k[t]/(t^2),\\
+ f:E\twoheadrightarrow E',\qquad \mathfrak k=(0),\qquad
+ \mathfrak k'=(\bar t).
+\end{gathered}
+\]
+$\mathfrak k$、$\mathfrak k'$ 都幂零，$f$ 为满射，而
+$f(\mathfrak k)=0\subsetneq(\bar t)=\mathfrak k'$。
+定义
+\[
+ u:B\longrightarrow E=E/\mathfrak k,\qquad u(x)=1,
+\]
+并定义
+\[
+ v':B\longrightarrow E',\qquad
+ v'(x)=1+\bar t,\quad v'(x^{-1})=1-\bar t.
+\]
+由于 $(1+\bar t)(1-\bar t)=1$，$v'$ 确实是含幺 $k$-代数同态。$E'/\mathfrak k'=k$，两条到该商环的复合都把 $x$ 送到1，故所要求的相容性成立。全部同态连续。
+
+\lead{形式光滑性假设也满足}
+给定交换 $k$-代数 $D$、幂零理想 $I$ 及 $B\to D/I$，$x$ 的像是单位 $\bar a$。取 $a\in D$ 提升它，再取 $b$ 提升 $\bar a^{-1}$，则 $ab=1+j$，$j\in I$。若 $I^r=0$，则
+\[
+ (1+j)^{-1}=1-j+j^2-\cdots+(-j)^{r-1}.
+\]
+故 $a$ 为单位，令 $x\mapsto a$、$x^{-1}\mapsto a^{-1}$，即可提升该同态。这直接验证了 $B$ 的形式光滑性，不依赖有问题的引理。
+
+\lead{结论失败}
+若存在 $v:B\to E$ 使 $f\circ v=v'$，则 $v(x)$ 必为 $k[t]$ 的单位。但 $k[t]$ 的单位均为非零常数：两个非零多项式的乘积为1时，其次数之和为0。于是 $f(v(x))$ 必为常数，与 $v'(x)=1+\bar t$ 矛盾。
+
+\audit{F6-G02}{（19.3.10.1）的缺口、修补及对主命题的影响}{加强理想像条件后可补证}
+\oldauditsrc{同上，印刷第84--85页（上传PDF第83--84页）}
+令 $\mathfrak a=\Ker f$，则 $E'\simeq E/\mathfrak a$。原证明直接把 $\mathfrak k'$ 认作 $(\mathfrak k+\mathfrak a)/\mathfrak a$；实际上，已有条件只给出
+\[
+ (\mathfrak k+\mathfrak a)/\mathfrak a
+   =f(\mathfrak k)\subseteq\mathfrak k'.
+\]
+相等正是缺失的一步。
+
+\lead{一个充分的修订版本}
+将假设加强为 $f(\mathfrak k)=\mathfrak k'$，其他假设不变。则存在连续 $A$-同态 $v:B\to E$，同时满足
+\[
+ f\circ v=v',\qquad (E\to E/\mathfrak k)\circ v=u.
+\]
+这里不主张该加强条件在所有个别情形中都是必要的；它是使原来的纤维积论证成立的明确充分条件。
+
+\lead{完整补证}
+此时 $E'/\mathfrak k'\simeq E/(\mathfrak a+\mathfrak k)$，由（19.3.10.2）有
+\[
+ (E/\mathfrak k)\times_{E'/\mathfrak k'}E'
+ \simeq E/(\mathfrak k\cap\mathfrak a).
+\]
+相容对 $(u,v')$ 因而定义同态
+$w:B\to E/(\mathfrak k\cap\mathfrak a)$。因为目标为离散环，且
+\[
+ \Ker w=\Ker u\cap\Ker v',
+\]
+这是两个开理想的交，$w$ 连续。理想 $\mathfrak k\cap\mathfrak a$ 包含于幂零理想 $\mathfrak k$，因而幂零。形式光滑性给出连续提升 $v:B\to E$。再与纤维积的两条投影复合，便得上述两个等式。
+
+\lead{（19.3.10）不因此被反驳}
+主命题的应用取
+\[
+\begin{aligned}
+ E&=C/\mathfrak a_{n+1},&
+ E'&=C/\mathfrak a_n,\\
+ \mathfrak k&=(\mathfrak j+\mathfrak a_{n+1})/\mathfrak a_{n+1},&
+ \mathfrak k'&=(\mathfrak j+\mathfrak a_n)/\mathfrak a_n,
+\end{aligned}
+\]
+其中 $\mathfrak a_{n+1}\subseteq\mathfrak a_n$。这里确有 $f(\mathfrak k)=\mathfrak k'$。所以主命题可使用上面的修订引理，逐次选取相容提升，再取射影极限。\textbf{本轮反例针对原引理的一般表述，不针对（19.3.10）或（19.3.11）。}
+
+\audit{F6-A01}{（19.3.12）：原作者正式要求删除}{作者勘误，非本轮首次发现}
+\oldauditsrc{EGA IV第四部分，勘误清单三B部（Err\,$_{\mathrm{IV}}$，8），印刷第347页（上传PDF第346页）}
+该勘误要求：删去（$0_{\mathrm{IV}}$，19.3.12），因为其证明错误，集合 $W_\lambda,U_\lambda,V_\lambda$ 不是线性流形。该正式修订已经译入合订本书末，并在原条目旁添加跳转提示。
+
+本轮的处理是：完整保留原陈述和原证明的历史译文，同时在标题、正文前后和脚注中标注\textbf{作者已撤销}。这既避免省略底本，也避免读者把它当作经过修订的有效结果。删除一项有错证明的命题，不能仅凭删除动作推断其结论必然为假；本轮不作这种推断。
+
+\audit{F6-G03}{（19.3.12）：提升集合一般不是仿射线性子空间}{明确展示被撤销证明的线性化错误}
+\oldauditsrc{EGA IV第一部分，印刷第85--86页（上传PDF第84--85页）}
+原证明将代数同态集合放入逐点函数组成的模，继而把满足提升条件的集合当作闭线性流形，以调用线性紧性。代数同态不仅要满足加法与标量条件，还要满足乘法约束；后者是非线性的。
+
+取
+\[
+ k=\mathbb Q,\quad B=k[x],\quad
+ C=k[\varepsilon]/(\varepsilon^3),\quad J=(\varepsilon),
+\]
+并取剩余同态 $u:B\to C/J=k$，$u(x)=0$。令 $\phi_0,\phi_1:B\to C$ 分别由 $x\mapsto0$、$x\mapsto\varepsilon$ 给出。两者均为 $u$ 的提升。若提升集合为函数空间 $C^B$ 中的仿射线性子空间，则其算术中点
+\[
+ h=\tfrac12\phi_0+\tfrac12\phi_1
+\]
+也应在其中。但是
+\[
+ h(x)=\frac{\varepsilon}{2},\qquad
+ h(x^2)=\frac{\varepsilon^2}{2},\qquad
+ h(x)^2=\frac{\varepsilon^2}{4}.
+\]
+$\varepsilon^2\ne0$，所以 $h(x^2)\ne h(x)^2$。$h$ 不是代数同态。这一例子中 $B$ 是多项式代数，形式光滑性没有失败；失败的是\textbf{将提升集合当成线性对象}的步骤。
+
+本例本身存在提升，因此\textbf{不是（19.3.12）结论的反例}。它验证作者指出的证明障碍。工程中的有理数系数计算脚本只检查上述具体多项式等式，不代替一般定理的证明。
+
+\audit{F6-G01}{（19.3.5，v）：有限乘积的同态不能按原文方式拆开}{原证明步骤错误，结论可完整补证}
+\oldauditsrc{EGA IV第一部分，印刷第82页末至第83页首（上传PDF第81--82页）}
+原文把给出 $\prod_iB_i\to C$ 的含幺 $A$-代数同态，说成等价于给出各个 $B_i\to C$ 的含幺 $A$-代数同态。这不成立。取 $A=B_1=B_2=C=k$ 为域，则 $k\times k\to k$ 有两个 $k$-代数同态，即两个投影；而一对 $k\to k$ 的 $k$-代数同态只有一种选择。不能将投影的普遍性质与乘积作为同态源的性质混同。
+
+\lead{正确的分解数据}
+设 $B=\prod_{i=1}^nB_i$，$e_i$ 为它的标准正交幂等元。含幺同态 $u:B\to D$ 给出一组正交幂等元 $u(e_i)$，其和为1。故目标环同时分解为
+\[
+ D\simeq\prod_i u(e_i)D.
+\]
+各分量 $B_i\to u(e_i)D$ 才是相应的含幺同态；右端分量的单位是 $u(e_i)$，不是统一地以 $1_D$ 为单位。
+
+\lead{幂零理想模下幂等元的提升}
+设 $I$ 为交换环 $D$ 的幂零理想。首先当 $I^2=0$，若 $e\in D$ 提升一个幂等元 $\bar e\in D/I$，令 $d=e^2-e\in I$，并取
+\[
+ e'=e-(2e-1)d.
+\]
+因为 $d^2=0$ 且 $(2e-1)^2=1+4d$，直接展开得到
+\[
+ (e')^2-e'=d-(2e-1)^2d=0.
+\]
+对有限链 $D/I,D/I^2,\ldots,D/I^r=D$ 逐次应用平方零情形，得到一般的提升。
+若 $e,e'$ 为两个同剩余类的幂等元，则 $e(1-e')$、$e'(1-e)$ 是位于 $I$ 中的幂等元。幂零理想中的幂等元必为零：若 $z^2=z$ 且 $z^r=0$，则 $z=z^r=0$。所以 $e=ee'=e'$，证明唯一性。由此，有限族正交幂等元的提升仍正交，其和仍为1。
+
+\lead{充分性的补证}
+假定各 $B_i$ 都形式光滑。取离散拓扑 $A$-代数 $C$、幂零理想 $J$ 和连续同态
+$u:B\to C/J$。将 $u(e_i)$ 唯一提升为 $C$ 中的正交幂等元 $c_i$，令 $C_i=c_iC$、$J_i=c_iJ$。于是
+\[
+ C\simeq\prod_iC_i,\qquad C/J\simeq\prod_i(C_i/J_i).
+\]
+$u$ 分解为连续 $A$-同态 $u_i:B_i\to C_i/J_i$。由各 $B_i$ 的形式光滑性，有连续提升 $v_i:B_i\to C_i$。其有限乘积给出连续 $v:B\to C$，且模 $J$ 后为 $u$。
+
+\lead{必要性的补证}
+反之，设 $B$ 形式光滑，固定 $i$，给定连续 $u_i:B_i\to C/J$。与投影 $B\to B_i$ 复合，并由 $B$ 的形式光滑性提升到 $v:B\to C$。$v(e_i)$ 是1的幂等提升，$v(e_j)$（$j\ne i$）是0的幂等提升，故分别为1与0。于是 $v$ 通过 $B_i$ 分解，给出 $u_i$ 的连续提升。连续性可由各因子的连续坐标嵌入直接验证；此处的坐标嵌入作为加法映射使用，并不误称为含幺代数同态。命题结论因而成立。
+
+\audit{F6-G04}{（19.4.1）：选取指标时还须零化测试代数}{证明省略一步，可由原假设补足}
+\oldauditsrc{EGA IV第一部分，印刷第86页（上传PDF第85页）}
+为对 $B/\mathfrak k_\alpha$ 使用其作为 $(A/\mathfrak j_\alpha)$-代数的形式光滑性，测试对象 $C$ 必须本身是 $(A/\mathfrak j_\alpha)$-代数。仅知
+$\mathfrak j_\alpha B\subset\mathfrak k_\alpha\subset\mathfrak k$
+以及 $B/\mathfrak k\to C/\mathfrak a$，只能控制 $C/\mathfrak a$ 中的作用，不能保证 $\mathfrak j_\alpha C=0$。
+
+设 $\rho:A\to C$ 是连续结构同态。$C$ 离散，故 $H=\Ker\rho$ 是 $A$ 的开理想。因为 $\mathfrak j_\alpha\to0$、$\mathfrak k_\alpha\to0$，而指标族递降且滤过，可同时选择一个指标，使
+\[
+ \mathfrak j_\alpha\subset H,\qquad
+ \mathfrak k_\alpha\subset\mathfrak k.
+\]
+这时 $\mathfrak j_\alpha C=0$，$C$ 及 $C/\mathfrak a$ 都是所需基环上的代数；原来的提升论证随即成立。\textbf{无须新增假设，也没有得到命题反例。}
+
+\head{第六版：记号核对与条件提醒}
+\audit{F6-T01}{（19.0.2，II）：不完美模秩的基域}{由所指原文核正的下标}
+\oldauditsrc{EGA IV第一部分，印刷第70页（上传PDF第69页）；交叉核对印刷第188页（上传PDF第187页）的（22.2.6）}
+引言印作 $\dim(A)\ge\operatorname{rg}_k\Upsilon_{K/k}$，但其直接引用的（22.2.6）明确把 $\Upsilon_{K/k}$ 作为 $K$-向量空间，并以 $\operatorname{rg}_K$ 给出维数界。本版因此写作
+\[
+ \dim(A)\ge\operatorname{rg}_K\Upsilon_{K/k},
+\]
+并在脚注中保留原印下标及核对依据。核对这一个引文不等于§22已经翻译，也不借此认证该节所有结论。
+
+\audit{F6-T02}{（19.1.9）：基本系中的商理想须先有定义}{共尾收缩说明}
+\oldauditsrc{印刷第75页（上传PDF第74页）}
+原证明写 $\mathfrak a/\mathfrak j_\lambda$ 为 $A/\mathfrak j_\lambda$ 中的幂零理想，但原陈述未规定每个 $\mathfrak j_\lambda\subset\mathfrak a$。由于 $\mathfrak a$ 为开理想，可将基本系换成包含于 $\mathfrak a$ 的共尾基本系；也可直接使用像理想 $(\mathfrak a+\mathfrak j_\lambda)/\mathfrak j_\lambda$。定义理想的幂趋于零，保证这一像在各离散商中幂零。这是原假设许可的整理，不是新加有限性或完备性条件。
+
+\audit{F6-T03}{（19.1.10，ii）：选择辅助模时须说清自由性}{补出原证明随后使用的选择条件}
+\oldauditsrc{印刷第76页（上传PDF第75页）}
+原句只说取有限型模 $L$，随后以“这里 $L$ 自由”为据使用行列式。应先取剩余向量空间 $M/\mathfrak mM$ 的一组有限基，选其在 $M$ 中的提升，并令 $L=A^r$。这样得到 $L\to M$，模 $\mathfrak m$ 后为同构。Nakayama引理给出满射；原有分裂论证再给出单射。因此只需将选择写完整，无须改变结论。
+
+\audit{F6-T04}{（19.1.12）：局部同态与全局代表的等式}{明确分母与同态的类型}
+\oldauditsrc{印刷第77页（上传PDF第76页）}
+为避免同名 $w_{\mathfrak p}$ 的混淆，另记局部左逆为 $s$。从
+$(\Hom_A(N,M))_{\mathfrak p}\simeq\Hom_{A_{\mathfrak p}}(N_{\mathfrak p},M_{\mathfrak p})$
+得到 $s=w/f$，其中 $w:N\to M$ 为全局同态，$f\notin\mathfrak p$。于是
+\[
+ (w\circ u)_{\mathfrak p}=f\,1_{M_{\mathfrak p}}.
+\]
+利用 $M$ 有限型可选 $g\notin\mathfrak p$，使 $g(wu-f1_M)=0$。在 $A_{fg}$ 中除以 $f$，便得左逆。原印等式中全局与局部对象混写，本版用上述明确约定消除歧义，不改变证明。
+
+\audit{F6-T05}{（19.2.5，ii）：基环扩张后的撇号与理想像}{按源环、目标环恢复类型}
+\oldauditsrc{印刷第79页（上传PDF第78页）}
+应取 $A'$ 的开理想 $\mathfrak j'_\mu$，并写
+$\mathfrak j_\lambda A'\subset\mathfrak j'_\mu$，而不是不说明结构同态便比较不同环的理想。相应商为
+\[
+ \frac{M\otimes_AA'}{\Im(M\otimes_A\mathfrak j'_\mu)+\Im(V_\lambda\otimes_AA')}
+ \simeq (M/V_\lambda)\otimes_A(A'/\mathfrak j'_\mu).
+\]
+它是投射的 $(A'/\mathfrak j'_\mu)$-模。正文显式补齐初版遗漏的撇号，并标注处理依据。
+
+\audit{F6-T06}{（19.3.10）末尾：复合次序}{源靶决定的排印订正}
+\oldauditsrc{印刷第85页（上传PDF第84页）}
+$u:B\to C/\mathfrak j$、$v:B\to C$、$\varphi:C\to C/\mathfrak j$，所以所求关系是
+$u=\varphi\circ v$。原印作 $u=v\circ\varphi$，在这些源靶下甚至不能组成同态。本版更正方向，并保留说明。
+
+\audit{F6-T07}{（19.4.5，i）：拉回余循环的定义域}{商环应带撇号}
+\oldauditsrc{印刷第87页（上传PDF第86页）}
+若 $\varphi:B/\mathfrak k'\to B/\mathfrak k$，则
+\[
+ f\circ(\varphi\times\varphi):
+ (B/\mathfrak k')\times(B/\mathfrak k')\longrightarrow L.
+\]
+初版末处仍写未带撇号的乘积。本版明示订正；这不改变余边界条件的含义。
+
+\audit{F6-H01}{引言的几何提升描述}{须与仿射测试及局部条件一并阅读}
+\oldauditsrc{印刷第69页（上传PDF第68页）}
+引言先以“相差甚微”的预概形说明提升，再立刻限于仿射情形给出代数条件。这一启发性描述不应替代后文精确定义，更不能据此删去测试对象上的仿射或局部限定。本版保留原叙述，只作使用范围提醒，没有把说明文字改造成更强的全局定理。
+
+\audit{F6-H02}{形式双态射与实际双射}{完备化后的同构不等于原映射满射}
+\oldauditsrc{印刷第71页（上传PDF第70页），（19.1.1）--（19.1.2）}
+以 $A=k[t]$ 的 $(t)$-预进制拓扑为例，取拓扑 $A$-模 $M=A$、$N=k[[t]]$。包含同态 $u:M\to N$ 稠密，且从 $N$ 诱导的拓扑正是 $M$ 的原拓扑；两者分离完备化间的同态为恒等同构。所以 $u$ 是形式双态射。但幂级数 $\sum_{n\ge0}t^n$ 不属于 $k[t]$，故 $u$ 不满射。翻译中保留“形式”及完备化帽号具有数学意义。
+
+\audit{F6-H03}{（19.3.4.1）的离散拓扑代数约定}{不可遗失结构同态的连续性}
+\oldauditsrc{印刷第80--81页（上传PDF第79--80页）}
+这里的离散 $A$-代数仍是拓扑 $A$-代数，结构同态 $A\to E$ 连续。幂零元决定的多项式代数同态可连续延拓，是因为核含有合适的乘积拓扑零点邻域，且离散目标分离完备。仅规定变量的像、却任意采用不连续的基环作用，不是原引理的适用情形。此项是约定提醒，不列作原文错误。
+
+\audit{F6-V01}{（19.3.10.2）的纤维积公式}{核对成立，不作错误标记}
+\oldauditsrc{印刷第84页（上传PDF第83页）}
+对非必交换环 $F$ 的两个双边理想 $\mathfrak a,\mathfrak b$，典范同态
+\[
+ F\longrightarrow(F/\mathfrak a)\times_{F/(\mathfrak a+\mathfrak b)}(F/\mathfrak b)
+\]
+的核为 $\mathfrak a\cap\mathfrak b$。若 $(x+\mathfrak a,y+\mathfrak b)$ 属于该纤维积，则 $x-y=a+b$，其中 $a\in\mathfrak a$、$b\in\mathfrak b$。取 $z=x-a=y+b$，便得到该对的原像。因而
+\[
+ F/(\mathfrak a\cap\mathfrak b)\simeq
+ (F/\mathfrak a)\times_{F/(\mathfrak a+\mathfrak b)}(F/\mathfrak b).
+\]
+原证明引用（18.1.7）的替换表中，$\theta$ 使用的同构是
+$(\mathfrak a+\mathfrak b)/\mathfrak b\simeq\mathfrak a/(\mathfrak a\cap\mathfrak b)$；经重新检查页面，该替换与图相容。它不是F6-G02所指出的条件问题，二者不能混淆。
+
+\section*{本轮覆盖与尚未处理的部分}
+\addcontentsline{toc}{section}{本轮覆盖与尚未处理的部分}
+本轮的连续翻译止于（19.4.7）及其证明。19.5“形式光滑性与相伴分次环”、19.6--19.10，以及§§20--23均未连续译入。已定位但未译入的（19.8.7，iii）再次引用已撤销的（19.3.12），此处须在将来续译时联动标注；定位该引用不计作该段已经翻译。
+
+本轮未把编译成功当作逻辑正确，也未重复声称独立审定旧稿全部证明。技术检查的实际页数、日志结果、编号覆盖和渲染核对写入工程中的\texttt{checks/validation.json}及\texttt{PROGRESS.md}；本报告不预填尚未完成的检查结果。

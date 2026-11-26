@@ -1,0 +1,25 @@
+{
+  "pdf_sha256": "9396741a30df30bc5950e3cae1a7c3b9f809351eed777797c59d382c3aa9f3de",
+  "pages": [
+    {
+      "physical_page": 1083,
+      "pixels_same_as_previously_viewed_image": true,
+      "image_sha256": "820b88006ef70eeb3120a466a3e104b97a8eb48977ebd868d80d9809efc8b289"
+    },
+    {
+      "physical_page": 1084,
+      "pixels_same_as_previously_viewed_image": true,
+      "image_sha256": "381bba2d6d57159e73375dd61155b5fd319476443e2fc0b64c3e0ec430036f95"
+    },
+    {
+      "physical_page": 1085,
+      "pixels_same_as_previously_viewed_image": true,
+      "image_sha256": "05625a506dae61035f7541679c0531b47ff0bf4657cf1d60de4e62f8e4ee97ff"
+    },
+    {
+      "physical_page": 1086,
+      "pixels_same_as_previously_viewed_image": false,
+      "image_sha256": "ab618a1727788bf7049d065b74182eb4b19a8247cb307a83433bd5ec6513670f"
+    }
+  ]
+}

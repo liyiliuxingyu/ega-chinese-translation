@@ -1,0 +1,78 @@
+% Edition 22: first essay, section 14, geometric construction.
+% FR physical 83--85, stopping before "Grosso modo"; EN title at 53 end, prose 54--55, same endpoint.
+\egasection{§14\quad 锥投影}
+
+% GEO-P01: FR83 opening N.B.; EN54 opening.
+\noindent\textbf{附记。}
+我们已经多次使用锥投影，尤其是在第8节末尾、10.4的陈述以及其他地方；下面这一组连锁命题（sorite）无疑应较早放在本段的开头，也可能放在关于“Grassmann概形”的辅助段落中。
+
+% GEO-P02: FR83, centre and rank conventions.
+设$C=P(F)$是$P(E)=P$的一个线性子簇，它在$S$上的相对维数为$r-m-1$，也就是说，在$P$中的余维为$m+1$。于是$F$是$E$的一个秩为$r-m$的局部自由商模，$F=E/G$，其中$G$局部自由且秩为$m+1$。我们已在第二章中用代数方法定义态射
+\[
+p_C:P-C=P(E)-P(E/G)\longrightarrow P(G).
+\]
+下面将从几何上解释这个态射，并根据随后的描述，称它为以$C$为中心的\textbf{锥投影}。（附记：这里只假定$r-m-1$介于$-1$与$r-1$之间，即$m$介于$0$与$r$之间，不另加限制。）\cmt{V22-GEO001}{本段由$\operatorname{rk}F=r-m$及$\operatorname{rk}G=m+1$可知$\operatorname{rk}E=r+1$，所以$r$表示$P(E)$的相对维数。这里的$P(E)$参数化秩一局部自由商模；不能换用参数化子线的对偶约定而不调整公式。$m=r$时$F=0$、$C=P(0)=\varnothing$，维数$-1$是空射影空间的约定，原稿明确允许这一边界。}
+
+% GEO-P03: FR83, P(G) in the Grassmannian.
+为此，先把$P(G)$解释为
+\[
+\operatorname{Grass}^{m}(P)
+ =\operatorname{Grass}_{r-m+1}(E)
+\]
+的一个闭子预概形。\cmt{V22-GEO002}{法稿物理83页手添“pré”和“fermé”，故保留“闭子预概形”。法稿此等式右端确实排作$\operatorname{Grass}_{r-m+1}(P)$，英文54页照录；但下一行函子态射明确以$E$为参数，且所构造的是$E$的秩$r-m+1$的商模，故正文订为$E$。这是法稿已有的记号错误，不只归责于英译。}
+这是通过显然的函子同态
+\[
+P(G)\longrightarrow\operatorname{Grass}_{r-m+1}(E)
+\]
+得到的：对$G$的每个可逆商模$G/G'$，考虑$E$的秩为$(r-m)+1$的局部自由商模$E/G'$；在任意基变换之后也作完全相同的构造。
+
+上述函子同态是单态；又因第一个对象在$S$上固有，第二个对象在$S$上分离，所以它是闭浸入。\cmt{V22-GEO003}{法稿83页清楚写作并下划线强调“monomorphisme”；英文54页却将其误写为第二个“homomorphism”。正文直接恢复“单态”，不再把它视为译者推测补入的词。任意基变换后的商$E/G'$都能由其核恢复$G'$，故此单态断言确实成立；闭浸入的完整核验另列于本版报告。}
+更一般地，应当明确写出从$G$的Grassmann概形，也就是说从$P(G)$的Grassmann概形，到$E$的Grassmann概形，也就是说到$P(E)$的Grassmann概形的闭浸入。所得态射的像，在函子的意义下，由$P$中具有所需维数且包含$C$的线性子簇$L$组成。\cmt{V22-GEO004}{法稿83页“在函子的意义下”的手写插入连接到“像”，英文54页将它提前放在$P(G)$之后，容易误读。这里的包含须对任意试验预概形作概形论解释，不能只比较几何点集合；尤其在非约化基底上，仅有支集包含并不足够。}
+
+% GEO-P04: FR83 last paragraph--FR84 first paragraph.
+在当前所考察的情形，即维数如上指定的情形，把这个像记为$Q(C)$。把$P(G)$与$Q(C)$等同后，锥投影态射
+\[
+p_C:P-C\longrightarrow Q(C)\subset\operatorname{Grass}^{m}(P)
+\]
+无非是把$P-C$的每个截面对应到$P$中唯一一个余维为$m$、同时包含$C$和该截面的线性子簇$L$。（当然，“包含该截面”是指该截面通过$L$分解。）
+
+% GEO-P05: FR84, arbitrary f and restricted projection.
+现在，若给定$f:X\to P$，就应考虑复合态射
+\[
+X-f^{-1}(C)\longrightarrow P-C\longrightarrow Q(C),
+\]
+并可称之为$X$的相对于$f$、以$C$为中心的锥投影，记为$p_C^X$，或简记为$p_C$。须注意，它一般并不定义在整个$X$上；确切地说，它的这个定义域等于整个$X$，当且仅当$f^{-1}(C)=\varnothing$，也就是说，$f(X)$不与投影中心$C$相交。\cmt{V22-GEO005}{法稿84页的起句为“Si maintenant”，即“现在，若”，并明确写$f(X)$；英文54页误作“If not”和$f(x)$，旧中文虽已按意思改对，这里补正错误归属。“当且仅当”说的是所给复合态射的定义域$X-f^{-1}(C)$是否等于$X$，不是声称该态射只在此条件下才可能延拓到$X$；例如$m=0$时目标为基底，仍可能存在延拓。}
+
+% GEO-P06: FR84, incidence and the open isomorphism; EN55 top.
+我们将用前面各节中使用的构造，对这个态射给出另一种解释。为此，沿用别处已引入的记号，考虑
+\[
+\begin{tikzcd}[column sep=large]
+X & X^{(m)}_{Q(C)}\arrow[l,"q"']\arrow[d,"p"]\\
+  & Q(C).
+\end{tikzcd}
+\qquad
+X^{(m)}_{Q(C)}
+ =X^{(m)}\times_{\operatorname{Grass}^{m}(P)}Q(C).
+\]
+另一方面，注意到$q$诱导同构
+\[
+q':q^{-1}\bigl(X-f^{-1}(C)\bigr)
+ \xrightarrow{\ \sim\ }X-f^{-1}(C),
+\]
+并且立即可见，$p_C$正是$p'q'^{-1}$，其中$p'$是$p$在$q^{-1}\bigl(X-f^{-1}(C)\bigr)$上的限制。因此，利用$q'$直接作等同后，可以说$p_C$就是$p$在
+\[
+X-f^{-1}(C)\subset X^{(m)}_{Q(C)}
+\]
+上的限制。\cmt{V22-GEO006}{法稿84页的关联纤维积、两个投影、$q'$及$p'q'^{-1}$均可辨。英文55页将纤维积乘号排成字母$X$，又将末尾的关联空间误排成$X(M)^{p_c}_{Q(C)}$。正文恢复同一关联空间，并把基底简写补全为$\operatorname{Grass}^{m}(P)$；这些排式的错误不能归为法稿证明残缺。}
+
+% GEO-P07: FR84 end--FR85 beginning, extended projection and deletion layer.
+因此，为方便起见，仍把上述态射记作$p_C^X$或$p_C$，并称之为——姑且这样定名——$X$的相对于$f:X\to P$、以$C$为中心的\emph{扩展锥投影}。\cmt{V22-GEO007}{这里“上述态射”指$p:X^{(m)}_{Q(C)}\to Q(C)$。“姑且这样定名”译法稿括注“mettons”，不是英文编者额外的数学条件。法稿85页首接在“上述态射”之后的一句已划去，其可辨内容为：“同样将它记作$p_C$是方便的，以表明它对$C$的依赖。”这只是被删的重复记号说明，不作为有效正文再次排入。}
+这样，受限锥投影的性质就归结为扩展锥投影的性质；后者已在别处得到系统研究，或者应当已经得到研究（参看第10节和第12节）。\ednote{英文脚注67：“Ask A.G.”，即“询问A.G.”。}\cmt{V22-GEO008}{法稿85页在“归结为”之后删去“dans une large mesure”（“在很大程度上”）；删除层据实保存于此。法文“est sensée l'avoir été”表示“应当已经得到研究”，英文其后多出的“and it makes sense”把同一措辞误拆成另一句，正文不据此另造论断。英文的询问脚注则单独保留其编者身份。}
+
+% GEO-P08: FR85 generic-centre paragraph, retained continuously.
+主要的问题是：当$S=\operatorname{Spec}(k)$时，若在$\operatorname{Grass}^{m+1}(P)$中取一般中心$C$，那么$X$的锥投影具有什么性质？这要求作基变换$k\to k(\eta)$，也就是说，此时$C$实际上是$P_{k(\eta)}$中的一个线性子簇。\cmt{V22-GEO009}{法稿85页在此误写$X_{k(\eta)}$，英文55页沿用；但中心由$\operatorname{Grass}^{m+1}(P)$参数化，应位于$P_{k(\eta)}$，法稿86页首也明确写出$C_\eta\subset P_{k(\eta)}$。正文据此订正。英文在参数空间后附“[illegible, ask AG]”（“不可辨，询问AG”），本版保存这一编者询问记录；法稿此处可读的有效句是一般中心及所需扩域，未发现足以据此补造其他数学假设的缺句。}
+由已经反复使用过的标准论证，可以对上述Grassmann概形中某个非空开集的点所对应的锥投影，推出类似的性质；最后，若$k$是无限域，就可推出存在一个在$k$上定义的$C$，而当$m<r$时，事实上有无穷多个这样的$C$。它们是$P$本身中的线性子簇，不必改变基域，并给出具有所讨论性质的锥投影。\cmt{V22-GEO010}{法稿85页明确写“lorsque $k$ est infini”，是“若$k$无限”，不是英文的“since ... (if)”所造成的不确定语气。法稿也无条件写“事实上有无穷多个”，但本节允许$m=r$，此时只有唯一的空中心；因此正文保留存在性，只将“无穷多个”限于$0\le m<r$。从一般点推广到非空开集还须对所研究的性质另证相应的开放性或可构造性，不能把本段概括当成对任意性质成立的定理。}
+
+% GEO-P09: FR85 reference and sheaf notation; exact endpoint.
+宜将这一类一般性说明，同第4节和第7节中同类的说明汇集在一起；我们已或多或少地隐含使用了这些说明，例如在第13节中（参看13.4(c)）。此外，在这一联系下，也宜考察$X$上的层$F$的相对性质，并取它在$X^{(m)}_{Q(C)}$上的逆像$F^{(m)}_{Q(C)}$。在这里所考察的具体情形中，还需要更简单的记号。我建议写成$\widetilde X(C)$和$\widetilde F(C)$，或者在不会引起混淆时，简记为$\widetilde X$和$\widetilde F$。（注意：这里的$F$与本节开头的$F$不同。）\cmt{V22-GEO011}{法稿85页的交叉引用“cf. 13.4.c”及两个对象上方的波浪号都可辨，英文55页漏去它们，正文恢复。法稿第二个对象括号内的字母不够清楚，英编稿排作$F(S)$；按本段始终固定中心$C$并在$Q(C)$上拉回的构造，正文订为$\widetilde F(C)$，但不把这个数学订正冒称为模糊字形已经辨清。这里的“逆像”在模层语境中是结构层意义的拉回$q^*F$；它不自动给出任意态射或任意层的平坦性。}
+

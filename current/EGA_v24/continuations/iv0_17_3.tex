@@ -1,0 +1,222 @@
+% EGAIV.1.pdf, PDF pp.45--50, printed pp.46--51.
+\subsection{正则环的上同调理论}
+\source{EGA IV 第一部分，印刷第46--51页；上传PDF第45--50页}
+
+\egas{17.3.1}{定理（Hilbert--Serre）}
+设 $A$ 为诺特局部环。$A$ 的上同调维数有限，当且仅当 $A$ 正则；此时
+\begin{equation}
+ \gldim A=\dim A.
+ \tag{17.3.1.1}
+\end{equation}
+\begin{proof}
+先设 $A$ 正则。令 $\mm$ 为其极大理想，取正则参数系
+$x=(x_i)_{1\leq i\leq n}$（17.1.6），并考虑外代数复形 $K_\bullet(x)$（III，1.1.1）。它由自由 $A$-模构成，且 $i>n$ 时 $K_i(x)=0$。因为 $(x_i)$ 为正则序列，$i>0$ 时
+$H_i(K_\bullet(x))=0$（III，1.1.4及1.1.3.3），并且
+\[
+ H_0(K_\bullet(x))=A/(x_1A+\cdots+x_nA)=A/\mm=k.
+\]
+因此 $K_i(x)$ 构成 $k$ 的一个长度 $n$ 的自由解消。由于 $x_i\in\mm$，复形
+$K_\bullet(x,k)=K_\bullet(x)\otimes_A k$ 的边缘算子在每个次数上均为零。所以按定义，
+\[
+ \Tor_i^A(k,k)\simeq\bigwedge\nolimits^i(k^n).
+\]
+式（17.3.1.1）即由（17.2.11）得到；这个结果实质上就是Hilbert的“合冲定理”。
+
+现在证明：若 $A$ 为诺特局部环，极大理想为 $\mm$，并且 $\pd_A\mm$ 有限，则 $A$ 正则；这将完成（17.3.1）的证明。对 $n=\rk_k(\mm/\mm^2)$ 作归纳。$n=0$ 时 $\mm=0$，断言直接成立。需要以下引理。
+\renewcommand{\qedsymbol}{}
+\end{proof}
+
+\egas{17.3.1.2}{引理（Nagata）}
+若 $\mm-\mm^2$ 的每个元素都是 $A$ 中的零因子，则存在 $0\ne c\in A$，使 $c\mm=0$；也就是说，$\mm\in\Ass A$。
+\begin{proof}
+可限于 $\mm\ne0$，因而 $\mm\ne\mm^2$。假设表明，$\mm-\mm^2$ 包含于 $\Ass A$ 中各素理想 $\pp_i$ 的并（Bourbaki，\textit{交换代数}，第四章，§1，第1目，命题2的推论3）；故 $\mm$ 包含于 $\mm^2$ 与各 $\pp_i$ 的并。因 $\mm\not\subset\mm^2$，由素理想回避（同书，第二章，§1，第1目，命题2），$\mm$ 包含于某个 $\pp_i$。$\mm$ 极大，因而引理成立。
+\end{proof}
+
+\egas{17.3.1.3}{引理}
+若 $a\in\mm-\mm^2$，则 $\mm/Aa$ 同构于 $\mm/a\mm$ 的一个直和因子。
+\begin{proof}
+可取一个包含 $a$ 的 $\mm$ 的极小生成系，其模 $\mm^2$ 类为 $\mm/\mm^2$ 的基。令 $\mathfrak b$ 为该生成系中除 $a$ 以外的元素所生成的理想。若 $xa\in\mathfrak b$，考察模 $\mm^2$ 的像可知 $x\in\mm$，故
+$\mathfrak b\cap Aa\subset a\mm$。由包含 $\mathfrak b\to\mm$，取商得到单射
+\[
+ \mathfrak b/(\mathfrak b\cap Aa)\longrightarrow\mm/a\mm.
+\]
+又 $\mathfrak b+Aa=\mm$，复合同态
+\[
+ \mm/Aa=(\mathfrak b+Aa)/Aa
+ \simeq\mathfrak b/(\mathfrak b\cap Aa)
+ \longrightarrow\mm/a\mm\longrightarrow\mm/Aa
+\]
+为恒等，故引理成立。
+\end{proof}
+
+\egas{17.3.1.4}{引理}
+设 $A$ 为诺特局部环，$\mm$ 为其极大理想，$E$ 为有限型且射影维数有限的 $A$-模。若 $a\in\mm$ 同时为 $A$-正则及 $E$-正则元素，则 $E/aE$ 作为 $A/aA$-模的射影维数有限，且至多为 $\pd_AE$。
+\begin{proof}
+对 $h=\pd_AE$ 归纳。$h=0$ 时，$E$ 射影，所以 $E/aE$ 为射影 $A/aA$-模，结论成立。存在正合列
+$0\to N\to L\to E\to0$，其中 $L$ 自由、$N$ 有限型，且 $\pd_AN=h-1$（17.2.2（iii））。此外，
+\[
+ 0\longrightarrow N/aN\longrightarrow L/aL\longrightarrow E/aE\longrightarrow0
+\]
+正合（15.1.18）。由于 $a$ 是 $A$-正则元素，$L$ 自由，所以 $a$ 也是 $N$-正则元素。归纳假设表明 $N/aN$ 的 $A/aA$-射影维数至多为 $h-1$；而 $L/aL$ 是自由 $A/aA$-模，所以 $E/aE$ 的射影维数至多为 $h$。
+\end{proof}
+现分两种情形，继续定理的证明。
+
+\noindent\textbf{I.}
+假定 $\mm-\mm^2$ 的每个元素都是 $A$ 中的零因子。由（17.3.1.2），存在 $0\ne c\in A$，使 $c\mm=0$。证明此时 $\mm=0$。
+
+若不然，$\mm$ 不能是射影 $A$-模，否则它便自由（Bourbaki，\textit{交换代数}，第二章，§3，第2目，命题5的推论2），与 $c\mm=0$ 矛盾。因此 $\gldim A\geq1$。令 $d=\gldim A$。\cmt{D4-H10}{初版在此将同一个字母 $n$ 改用于 $\gldim A$，而前文 $n$ 表示嵌入维数 $\rk_k(\mm/\mm^2)$；为免混读，此处仅将前者改记为 $d$。其有限性来自 $\pd_A\mm<\infty$、正合列 $0\to\mm\to A\to k\to0$ 及（17.2.11），不依赖正在证明的正则性。}
+由于 $\mm\in\Ass A$，存在正合列
+\[
+ 0\longrightarrow k\longrightarrow A\longrightarrow E\longrightarrow0.
+\]
+因 $d\geq1$，Tor正合列给出
+\[
+ 0\longrightarrow\Tor_{d+1}^A(E,k)\longrightarrow\Tor_d^A(k,k)\longrightarrow0.
+\]
+但 $\Tor_{d+1}^A(E,k)=0$（17.2.2（ii）），而 $\Tor_d^A(k,k)\ne0$（17.2.11），矛盾。
+
+\noindent\textbf{II.}
+因此可限于存在 $a\in\mm-\mm^2$ 为 $A$-正则元素的情形。它也为 $\mm$-正则元素。令 $A'=A/aA$，其极大理想为 $\mm'=\mm/aA$，且
+$\rk_k(\mm'/\mm'^2)=n-1$。由（17.3.1.4），$\mm/a\mm$ 是射影维数有限的 $A'$-模；$\mm'=\mm/aA$ 是它的直和因子（17.3.1.3），所以也有有限射影维数（17.2.1）。由归纳假设，$A'$ 正则；再由（17.1.8），$A$ 正则。\hfill$\square$
+
+\egas{17.3.2}{推论}
+若 $A$ 为正则局部环，则对 $A$ 的每个素理想 $\pp$，$A_{\pp}$ 正则。
+
+由（17.2.10），$\gldim A_{\pp}\leq\gldim A$，所以结论由（17.3.1）得到。
+
+\egas{17.3.3}{命题}
+设 $A,B$ 为诺特局部环，$\rho:A\to B$ 为局部同态；$\mm,\mathfrak n$ 分别为其极大理想，$k=A/\mm$、$k'=B/\mathfrak n$ 分别为剩余域。由此有典范 $k'$-线性同态
+\begin{equation}
+ \psi:(\mm/\mm^2)\otimes_k k'\longrightarrow\mathfrak n/\mathfrak n^2.
+ \tag{17.3.3.1}
+\end{equation}
+\begin{enumerate}[label=(\roman*)]
+ \item 若 $B$ 正则且为平坦 $A$-模，则 $A$ 正则。
+ \item 以下条件等价：
+ \begin{enumerate}[label=\alph*)]
+  \item $B$ 正则且（17.3.3.1）中的 $\psi$ 单射；
+  \item $A,B$ 都正则，且对 $A$ 的一个正则参数系 $(x_i)_{1\leq i\leq m}$，$\rho(x_i)$ 为 $B$ 的正则参数系的一部分；此时对 $A$ 的每个正则参数系都如此；
+  \item $B$ 与 $B\otimes_A k$ 正则，且 $B$ 为平坦 $A$-模；
+  \item $A$ 与 $B\otimes_A k$ 正则，且 $B$ 为平坦 $A$-模；
+  \item $A$ 与 $B\otimes_A k$ 正则，且
+  \begin{equation}
+   \dim B=\dim A+\dim(B\otimes_A k).
+   \tag{17.3.3.2}
+  \end{equation}
+ \end{enumerate}
+\end{enumerate}
+\begin{proof}
+（i）由（17.2.13），$\gldim A\leq\gldim B$，故只须用（17.3.1）。
+
+（ii）当 $A$ 正则且 $(x_i)$ 为其正则参数系时，由（15.1.21），$B$ 为平坦 $A$-模等价于 $y_i=\rho(x_i)$ 组成 $B$-正则序列，因为 $B\otimes_A k$ 是平坦 $k$-模。又 $\dim A=m$，$y_i$ 生成 $\mm B$，所以
+$\dim(B/\mm B)=\dim B-m$，即（17.3.3.2），等价于 $(y_i)_{1\leq i\leq m}$ 为 $B$ 的参数系的一部分（16.3.7）。因此b）、d）、e）分别等价于：
+\begin{enumerate}
+ \item[b')] $A,B$ 正则，且 $(y_i)$ 为 $B$ 的正则参数系的一部分；
+ \item[d')] $A$ 正则，$B/(\sum_i y_iB)$ 正则，且 $(y_i)$ 为 $B$-正则序列；
+ \item[e')] $A$ 正则，$B/(\sum_i y_iB)$ 正则，且 $(y_i)$ 为 $B$ 的参数系的一部分。
+\end{enumerate}
+由（17.1.7），b'）与e'）等价；d'）推出e'）（16.4.1），且由b'）推出（17.1.7），所以三者等价。b）与d）的合取显然推出c），而c）由（i）推出d）；因此b）、c）、d）、e）等价。
+
+b）也推出a）：$x_i$ 的模 $\mm^2$ 类为 $\mm/\mm^2$ 的 $k$-基，而 $y_i$ 的模 $\mathfrak n^2$ 类在 $k'$ 上线性无关。只须证明a）推出e）。令
+$V=\mm/\mm^2$、$W=\mathfrak n/\mathfrak n^2$。有
+$\psi(V\otimes_k k')=(\mathfrak n^2+\mm B)/\mathfrak n^2$。由（16.3.9），
+\begin{equation}
+ \dim B\leq\dim A+\dim(B\otimes_A k).
+ \tag{17.3.3.3}
+\end{equation}
+由（16.2.6），
+\begin{equation}
+ \dim A\leq\rk_{k'}(V\otimes_k k').
+ \tag{17.3.3.4}
+\end{equation}
+在局部环 $B\otimes_A k=B/\mm B$ 中，极大理想为
+$\mathfrak n'=\mathfrak n/\mm B$，剩余域为 $k'$；且
+\[
+ \mathfrak n'/\mathfrak n'^2
+ \simeq\mathfrak n/(\mathfrak n^2+\mm B)
+ \simeq W/\psi(V\otimes_k k').
+\]
+再次用（16.2.6），
+\begin{equation}
+ \dim(B\otimes_A k)\leq\rk_{k'}W-\rk_{k'}\psi(V\otimes_k k').
+ \tag{17.3.3.5}
+\end{equation}
+又 $B$ 正则，故 $\dim B=\rk_{k'}W$（17.1.1）。结合以上三式，
+\[
+ \begin{aligned}
+ \rk_{k'}W
+ &\leq\dim A+\dim(B\otimes_A k)\\
+ &\leq\rk_{k'}W+\rk_{k'}(V\otimes_k k')
+       -\rk_{k'}\psi(V\otimes_k k').
+ \end{aligned}
+\]
+两端相等，等价于 $\psi$ 单射。故a）迫使（17.3.3.3）、（17.3.3.4）、（17.3.3.5）中的各不等式均为等式。而（17.3.3.4）与（17.3.3.5）取等号，分别表示 $A$ 与 $B\otimes_A k$ 正则（17.1.1）。因此a）推出e）。
+\end{proof}
+
+\egas{17.3.4}{命题}
+设 $A$ 为维数 $n$ 的正则局部环，$\mm$ 为其极大理想。对每个非零有限型 $A$-模 $M$，有
+\begin{equation}
+ \prof M+\pd M=n.
+ \tag{17.3.4.1}
+\end{equation}
+\begin{proof}
+对 $m=\prof M$ 作归纳。若 $m=0$，则存在 $M$ 的子模 $N\simeq k=A/\mm$（16.4.6（i））。将Tor正合列用于
+$0\to N\to M\to M/N\to0$，得到
+\[
+ \Tor_{n+1}^A(M/N,k)\longrightarrow\Tor_n^A(N,k)
+ \longrightarrow\Tor_n^A(M,k).
+\]
+$A$ 正则，故 $\Tor_{n+1}^A(M/N,k)=0$（17.3.1.1）、（17.2.6）。所以 $\Tor_n^A(k,k)$ 同构于 $\Tor_n^A(M,k)$ 的一个子模。再次用这两条结果，得 $\Tor_n^A(M,k)\ne0$，故 $\pd M\geq n$（17.2.6）。而 $\pd M\leq n$（17.3.1.1），于是 $\pd M=n$。
+
+若 $m>0$，取 $M$-正则元素 $x\in\mm$。有 $\prof(M/xM)=m-1$（原文引（16.4.6（i））），且 $\pd(M/xM)=\pd M+1$（17.2.7）。\cmt{D4-T05}{深度下降1的公式位于（16.4.6（ii）），不是原文所引的（i）。保留原引并在此指出。}
+由归纳假设即得（17.3.4.1）。
+\end{proof}
+
+\egas{17.3.5}{推论}
+（i）设 $A$ 为维数 $n$ 的正则局部环。非零有限型 $A$-模 $M$ 自由，当且仅当它是维数 $n$ 的Cohen--Macaulay $A$-模。
+
+（ii）设 $A$ 为正则局部环，$B$ 为局部环，$\rho:A\to B$ 为局部同态，使 $B$ 成为有限型 $A$-模。$B$ 是自由 $A$-模，当且仅当 $B$ 是Cohen--Macaulay环且 $\rho$ 单射；也可将后一个条件换成 $\dim B=\dim A$（16.1.5）。
+\begin{proof}
+（i）由（17.3.4.1），并用到有限型 $A$-模射影与自由等价（Bourbaki，\textit{交换代数}，第二章，§3，第2目，命题5的推论2）。有限型自由模的特征正是 $\pd M=0$（17.2.2（i））。
+
+（ii）$B$ 为Cohen--Macaulay环，等价于它为Cohen--Macaulay $A$-模（16.5.3）；因此在 $\dim B=\dim A$（16.1.5）的条件下，应用（i）即可。
+\end{proof}
+
+\egap{17.3.6}
+若诺特环 $A$ 满足：对每个素理想 $\pp$，局部环 $A_{\pp}$ 都正则，则称 $A$ 为\textbf{正则环}。当 $A$ 本身局部时，由（17.3.2），这一定义等价于（17.1.2）。仍由（17.3.2），只须对每个极大理想 $\mm$ 验证 $A_{\mm}$ 正则。由定义，对任意乘法子集 $S$，$A$ 正则蕴含 $S^{-1}A$ 正则。
+
+\egas{17.3.7}{命题}
+若 $A$ 为诺特正则环，则每个多项式环 $A[T_1,\ldots,T_n]$ 都正则。
+\begin{proof}
+只须证明 $B=A[T]$ 正则。$B$ 为自由 $A$-模，所以对 $B$ 的每个素理想 $\qq$，$B_{\qq}$ 为平坦 $A_{\pp}$-模，其中 $\pp=\qq\cap A$（$0_{\mathrm I}$，6.3.1）。由（17.3.3），只须证明 $B_{\qq}/\pp B_{\qq}$ 正则。\cmt{D4-A05}{初版这里引（17.1.10），而本节并无此条；作者勘误清单三A部将它明确改为（17.3.3）。本处采用该正式改正。}
+这个环是 $A_{\pp}[T]/\pp A_{\pp}[T]=k[T]$ 在一个素理想处的局部化，其中 $k=A_{\pp}/\pp A_{\pp}$。所以只须证明 $C=k[T]$ 正则。$C$ 为主理想环，其在素理想处的局部环，或是离散赋值环，或是域（在零理想处），故都正则（17.1.4）。
+\end{proof}
+
+\egas{17.3.8}{推论}
+若 $A$ 为正则环，则每个形式幂级数环 $A[[T_1,\ldots,T_n]]$ 都正则。
+
+令 $\jj$ 为多项式环 $A[T_1,\ldots,T_n]$ 中由 $T_i$ 生成的理想。多项式环由（17.3.7）正则，而形式幂级数环是它关于 $\jj$-预进制拓扑的完备化（Bourbaki，\textit{交换代数}，第三章，§2，第12目，例1）。结论由下述引理得到。
+
+\egas{17.3.8.1}{引理}
+设 $A$ 为正则环，$\jj$ 为 $A$ 的理想，$\widehat A$ 为 $A$ 关于 $\jj$-预进制拓扑的分离完备化。则 $\widehat A$ 正则。
+\begin{proof}
+由（17.3.6），只须对 $\widehat A$ 的每个极大理想 $\mathfrak n$，证明 $\widehat A_{\mathfrak n}$ 正则。已知（Bourbaki，\textit{交换代数}，第三章，§3，第4目，命题8），$\mathfrak n=\mm\widehat A$，其中 $\mm$ 为 $A$ 中包含 $\jj$ 的极大理想。典范同态 $A\to\widehat A$ 诱导单射
+$A_{\mm}\to\widehat A_{\mathfrak n}$；后者的 $\mathfrak n\widehat A_{\mathfrak n}$-预进制拓扑在 $A_{\mm}$ 上诱导 $\mm A_{\mm}$-预进制拓扑，且 $A_{\mm}$ 对该拓扑在 $\widehat A_{\mathfrak n}$ 中稠密。
+
+因此两个诺特局部环 $A_{\mm}$ 与 $\widehat A_{\mathfrak n}$ 的完备化典范同构。按假设，$A_{\mm}$ 正则，所以其完备化正则（17.1.5）；于是 $\widehat A_{\mathfrak n}$ 的完备化正则，再由（17.1.5），$\widehat A_{\mathfrak n}$ 正则。
+\end{proof}
+
+\egas{17.3.9}{推论}
+设 $A$ 为诺特环，且为某个诺特正则环 $B$ 的商环。若 $C$ 为有限型 $A$-代数，则 $C$ 的每个分式环 $S^{-1}C$ 都是正则环的商环。
+\begin{proof}
+$C$ 是多项式环 $A[T_1,\ldots,T_n]$ 的商环。若 $A=B/\jj$，则
+\[
+ A[T_1,\ldots,T_n]
+ =B[T_1,\ldots,T_n]/\jj B[T_1,\ldots,T_n].
+\]
+由（17.3.7），可归结到 $C$ 是正则环 $B'$ 的商环的情形。若 $S'$ 是 $S$ 在 $B'$ 中的逆像，则 $S'$ 为乘法子集，且 $S^{-1}C$ 为 $S'^{-1}B'$ 的商环。\cmt{D4-T06}{初版此句写成“$C$ 为 $S'^{-1}B'$ 的商环”；这里应为所讨论的 $S^{-1}C$。例如 $B'=C=\mathbf Z$、$S=\mathbf Z-\{0\}$ 时，$\mathbf Z$ 不是 $\mathbf Q$ 的商环，而 $S^{-1}C=\mathbf Q$ 是。正文采用所需对象，并在此记录原式。}
+故最后只须知道：正则环的分式环仍正则；这已在（17.3.6）指出。
+\end{proof}
+正则环商环的重要性，除上述性质外，还在于它们是悬链环（16.5.12）。
+
+在代数几何的应用中，一切重要的环都是正则环的商环。\cmt{D4-H11}{这是原著对应用范围的概括性叙述，不应读成“每一个环都是诺特正则环的商环”的无条件数学断言。原句作为原著叙述保留。}

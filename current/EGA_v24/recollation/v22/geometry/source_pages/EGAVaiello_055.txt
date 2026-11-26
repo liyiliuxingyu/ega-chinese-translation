@@ -1,0 +1,46 @@
+give another interpretation of this morphism in terms of construction used in previous Nos.
+For this with the notations introduced elsewhere let us consider
+X
+q
+←−−−−X(m)
+Q(C)=X(m)
+X
+Grassm Q(C)
+yp
+Q(C)
+Let us note on the other hand that q induces an isomorphism
+q′: q−1(X −f −1(C))
+∼
+−→X −f −1(C)
+and it is immediate that pc is nothing else but p′q′−1 where p′ is the restriction of p to
+q−1(X −f −1(C)). We may therefore say using q′ to identify purely and simply that pc
+is the restriction of the morhism p to X −f −1(C) ⊂X(M)pc
+Q(C). For that reason it is
+convenient to denote again by pX
+c or pc and to call the above morphism [(Mettons)] the
+extended conic projection of X relative to f: X →P with center C.
+In this way the
+properties of the restricted conic projection are reduced to those of the extended conic
+projection which has been systematically studied elsewhere or is supposed to have been
+studied67 and it makes sense (cf. No. 10 and No. 12). The main question that arises
+is if S = Spec(k) what are the properites of the conic projection of X if we take C to
+be generic in Grassm+1(p) [illegible, ask AG] which requires that we make a base change
+k →K(η), i.e. C is then indeed a linear subvariety of Xk(η) from standard arguments that
+have already been repeated several times allow us to conclude the analogous properties for
+the conic projections corresponding to the points of Grassm+1(P) belonging to an open
+non-empty set of the said grassmanian and ﬁnally since k is inﬁnite (if) we conclude the
+existence of a (in fact of an inﬁnity of) C deﬁned over k, i.e. a linear subvariety of P iself
+(without changing the base ﬁeld) giving rise to a conic projection having the properties in
+question. It is (will be) proper to group this type of general explainations with those of
+the same type given in No. 4, 7 and which we have already used more or less implicitly,
+for example in No. 13. It is also proper by the way in this connection to examine the
+relative properties of a sheaf F over X and taking its inverse image F (m)
+Q(C) over X(m)
+Q(C). It
+is necessary in addition in the precise situation described here to simplify the notation I
+propose X(C) and F(S) or simply e
+X and eF if there is no possibility of confusion (attention:
+the F is not the same as in the beginning of this No.). Grosso modo (roughly speaking)
+and if we, say, assume that f is an immersion the properties of the generic conic projection
+67Ask A.G.
+55

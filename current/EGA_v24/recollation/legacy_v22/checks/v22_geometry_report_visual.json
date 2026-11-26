@@ -1,0 +1,63 @@
+{
+  "schema_version": 1,
+  "edition": 22,
+  "reviewer": "/root/v22_geometry",
+  "review_method": "actual_image_view",
+  "document": "report",
+  "pdf": {
+    "path": "report.pdf",
+    "sha256": "4cced0b1907d27f0806a74d3ad525016bc002e191165674c5c687a2dd1a2b53c"
+  },
+  "rendering": {
+    "renderer": "PyMuPDF",
+    "scale": 1.5,
+    "colorspace": "RGB",
+    "alpha": false
+  },
+  "recorded_at_utc": "2026-11-26T01:22:45.807339+00:00",
+  "pages": [
+    {
+      "physical_page": 25,
+      "image": "checks/visual_v22/geometry/report_0025.png",
+      "image_sha256": "d0d374e37c844c429ef71626a6df6c11b734f1a58bb80b781d0728108e238a2f",
+      "verdict": "pass",
+      "notes": "实际查看本页：几何核查章节标题、实际范围和基线说明完整；法83首/英53末标题位置已准确显示。逐段映射表GEO-P01–04栏宽正常，边线和正文均在版心内。"
+    },
+    {
+      "physical_page": 26,
+      "image": "checks/visual_v22/geometry/report_0026.png",
+      "image_sha256": "f0eb4b2fb082e87d2ac12c5fd50cf958ed41f1829513c9b9475f526b33b17d8e",
+      "verdict": "pass",
+      "notes": "实际查看本页：映射表续页GEO-P05–09有重复表头，行文未截断；E01归因、法稿删改与英文编者身份可读。E02标题及判定在页底完整，具体证明续次页，无缺字和叠印。"
+    },
+    {
+      "physical_page": 27,
+      "image": "checks/visual_v22/geometry/report_0027.png",
+      "image_sha256": "52c34e471123a2f0a7ddff0107c18054d5026d2022355939e364f389b2dbbeab",
+      "verdict": "pass",
+      "notes": "实际查看本页：两条正合列、独立秩公式、泛核到F的复合及闭浸入论证均完整可读；E03标题与判定清楚。页末H=后的定义续到次页，连续文本未丢失，公式无越界。"
+    },
+    {
+      "physical_page": 28,
+      "image": "checks/visual_v22/geometry/report_0028.png",
+      "image_sha256": "e028b3d2b0caa00c23ff6f61685a23d91f4020e6a062ffb95c833ac294bdf76c",
+      "verdict": "pass",
+      "notes": "实际查看本页：页首接上E_Q/K定义；关联图P(E)←I、I→Q及q/p标记完整；开集同构、任意f拉回与p_C公式清楚；E04标题、判定及开头段正常，未见图式裁切。"
+    },
+    {
+      "physical_page": 29,
+      "image": "checks/visual_v22/geometry/report_0029.png",
+      "image_sha256": "1d7377386b75f89e083ad6260beea86a12b32474a04dfbdefe6d263c1717b614",
+      "verdict": "pass",
+      "notes": "实际查看本页：挠子向量丛表达式、EGA对偶约定、P¹上的正合列及两个带标号箭头均完整；Hom=H⁰=0公式在版心内。E05标题、N维仿射胞腔及一般中心说明清楚。"
+    },
+    {
+      "physical_page": 30,
+      "image": "checks/visual_v22/geometry/report_0030.png",
+      "image_sha256": "493caa299effd0192ecd70e8f6db332a92bdb056e36b268c479650ceb12a3719",
+      "verdict": "pass",
+      "notes": "实际查看本页：从上一页接续无限域稠密性论证，m=r唯一空中心端点以及可构造性限定完整；页下留白为本模块结束后的自然空白，页眉、页码与正文无重叠。"
+    }
+  ],
+  "scope": "Only the individually rendered and actually displayed final-PDF pages listed here; no substitution of module previews and no whole-book human review claim."
+}

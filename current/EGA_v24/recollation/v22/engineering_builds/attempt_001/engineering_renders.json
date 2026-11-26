@@ -1,0 +1,109 @@
+{
+  "schema_version": 1,
+  "edition": 22,
+  "pdf": {
+    "path": "report.pdf",
+    "sha256": "4cced0b1907d27f0806a74d3ad525016bc002e191165674c5c687a2dd1a2b53c",
+    "pages": 503
+  },
+  "rendering": {
+    "renderer": "PyMuPDF",
+    "version": "1.26.6",
+    "scale": 1.5,
+    "colorspace": "RGB",
+    "alpha": false
+  },
+  "pages": [
+    {
+      "physical_page": 1,
+      "image": "checks/visual_v22/engineering/report_0001.png",
+      "image_sha256": "9b144fed012ff36bd253723ef1d0062aff7d28daa883f7f1759b23d0b550d29d",
+      "width": 893,
+      "height": 1263
+    },
+    {
+      "physical_page": 3,
+      "image": "checks/visual_v22/engineering/report_0003.png",
+      "image_sha256": "8bdd8d6871a4a6c5d7275ffe4fc77e90c2af3e37deca52c982e278033c16106e",
+      "width": 893,
+      "height": 1263
+    },
+    {
+      "physical_page": 5,
+      "image": "checks/visual_v22/engineering/report_0005.png",
+      "image_sha256": "364f8a1ae77e5869bc0c3a5481a166bcdbebfc6849b382f667ebcbdb3f94152a",
+      "width": 893,
+      "height": 1263
+    },
+    {
+      "physical_page": 6,
+      "image": "checks/visual_v22/engineering/report_0006.png",
+      "image_sha256": "123f472f5cc8558730adea6290f5655ba8716c20738c63a06f82a66c96edc20a",
+      "width": 893,
+      "height": 1263
+    },
+    {
+      "physical_page": 19,
+      "image": "checks/visual_v22/engineering/report_0019.png",
+      "image_sha256": "5e996e0888893ec59f21b3c49377a0be5734ab874a61f345dae394aa3580f564",
+      "width": 893,
+      "height": 1263
+    },
+    {
+      "physical_page": 20,
+      "image": "checks/visual_v22/engineering/report_0020.png",
+      "image_sha256": "2c8b28bd7e74b496968a40cca21d994084440b95fcb870d9dfb29f7304805b29",
+      "width": 893,
+      "height": 1263
+    },
+    {
+      "physical_page": 21,
+      "image": "checks/visual_v22/engineering/report_0021.png",
+      "image_sha256": "20d2a1df072954ecfda2292cf146346d20917faf0d00e9a78f86b36d179377a3",
+      "width": 893,
+      "height": 1263
+    },
+    {
+      "physical_page": 22,
+      "image": "checks/visual_v22/engineering/report_0022.png",
+      "image_sha256": "e484522ac17b3b8e015c24729f9b3ce39b1b9d14d070a3903debefd0bedbe18f",
+      "width": 893,
+      "height": 1263
+    },
+    {
+      "physical_page": 23,
+      "image": "checks/visual_v22/engineering/report_0023.png",
+      "image_sha256": "5e0288c617deae5980711ef0c7c172901e8e820aad382cd6271f6598230a9ea3",
+      "width": 893,
+      "height": 1263
+    },
+    {
+      "physical_page": 24,
+      "image": "checks/visual_v22/engineering/report_0024.png",
+      "image_sha256": "85a6756165c0d5cec5a11e1e7e57544b7823141aa2103761593c1c6b63a27225",
+      "width": 893,
+      "height": 1263
+    },
+    {
+      "physical_page": 47,
+      "image": "checks/visual_v22/engineering/report_0047.png",
+      "image_sha256": "43b5a252b1700169f66a44a70002211a17aab71506742d5fe3ad572e464180e3",
+      "width": 893,
+      "height": 1263
+    },
+    {
+      "physical_page": 48,
+      "image": "checks/visual_v22/engineering/report_0048.png",
+      "image_sha256": "1bca0900cf909b0834130e95107784d9a80d351515e0813019cf712f4bf790e1",
+      "width": 893,
+      "height": 1263
+    },
+    {
+      "physical_page": 503,
+      "image": "checks/visual_v22/engineering/report_0503.png",
+      "image_sha256": "8477558ae1eefa134604b358d67891fa10069b6be25f2b31f3651c6815a31bef",
+      "width": 893,
+      "height": 1263
+    }
+  ]
+}

@@ -1,0 +1,79 @@
+{
+  "schema_version": 1,
+  "edition": 23,
+  "reviewer": "/root/v23_setup",
+  "review_method": "actual_image_view",
+  "reviewed_utc": "2026-11-26T03:17:51.337058+00:00",
+  "document": "report",
+  "pdf": {
+    "path": "report.pdf",
+    "sha256": "611f26e969163d63dcae1645bed7625abce3750e1a791d59954dcf6a44da8985"
+  },
+  "rendering": {
+    "renderer": "PyMuPDF",
+    "scale": 1.65,
+    "colorspace": "RGB",
+    "alpha": false,
+    "full_page": true
+  },
+  "pages": [
+    {
+      "physical_page": 25,
+      "image": "checks/visual_v23/setup/report_0025.png",
+      "image_sha256": "2dbe1def963bc2936726c476b741bc002f9bf0598ff2538868b8ecc5dba61501",
+      "verdict": "pass",
+      "notes": "实际查看整页：章题分两行居中；“实际范围”段起至逐段表 SET-P04 结束。来源路径、数学符号及表内文字均位于版心，续表分在下一页，没有裁切或重叠。印刷页码5完整。"
+    },
+    {
+      "physical_page": 26,
+      "image": "checks/visual_v23/setup/report_0026.png",
+      "image_sha256": "46edd6dd529e1f01bf8d24a012d84c0a70aa792f18344e61db9c58f07609d9bb",
+      "verdict": "pass",
+      "notes": "实际查看整页：续表 SET-P05—P09 有完整重复表头和底线；随后 V23-A01 从“能恢复的文字”判定至 B_T/P_T 归属说明。表格及长公式没有越过右边界，页眉与正文分离，印刷页码6完整。"
+    },
+    {
+      "physical_page": 27,
+      "image": "checks/visual_v23/setup/report_0027.png",
+      "image_sha256": "9eb90b2be68545310ebbf3e33b92c39d963835c7b03f0fd458598f07bd71fb1e",
+      "verdict": "pass",
+      "notes": "实际查看整页：由 dégager 和 ici et plus tard 的辨读续文起，进入 V23-A02；q,p,j 定义及 T 值点拉回公式居中清楚。末行停在负余维反例“没有任何对象可”，自然续至下一页，未见裁切或重叠。印刷页码7完整。"
+    },
+    {
+      "physical_page": 28,
+      "image": "checks/visual_v23/setup/report_0028.png",
+      "image_sha256": "5f298b391ae72fdc3e15594563f412aa8af46ee9cf3c4d97b09afcfa9c0d8a68",
+      "verdict": "pass",
+      "notes": "实际查看整页：页首“检查”接上页，随后不可约逆像证明和 V23-A03。两条维数公式与非有限型 Speck(t) 反例排版完整；页末 X_eta=Speck(t)≠空集显示未裁切。印刷页码8完整。"
+    },
+    {
+      "physical_page": 29,
+      "image": "checks/visual_v23/setup/report_0029.png",
+      "image_sha256": "240bd938a5c5f04fbfc0a4131eda61b8964d617fce5ecc7fb99e78e0135c54f9",
+      "verdict": "pass",
+      "notes": "实际查看整页：从非有限型反例的范围说明接入 V23-A04；(A) 公式的 W⊂P 后已正常空白，不再印出 quad 字母。U、W、不可约性和满射基变换证明连续，页底空性等价式完整可读，无越界。印刷页码9完整。"
+    },
+    {
+      "physical_page": 30,
+      "image": "checks/visual_v23/setup/report_0030.png",
+      "image_sha256": "10f44af1a023518ad6da70ce9b93e0276a5e3891aa34adb3dfa4467724cba408",
+      "verdict": "pass",
+      "notes": "实际查看整页：空集及固定域范围说明后进入 V23-A05；三行超越次数计算对齐，max 存活分支公式及右侧 (*) 标签都在版心内。P1 与 A2 不交并反例开始部分完整，没有重叠或裁切。印刷页码10完整。"
+    },
+    {
+      "physical_page": 31,
+      "image": "checks/visual_v23/setup/report_0031.png",
+      "image_sha256": "3c61202d21996c0750e9e62356ccbbbed651656d29c5b9b7c2c57e240fdb2991",
+      "verdict": "pass",
+      "notes": "实际查看整页：先完成混合维反例并区分原稿总空间/泛纤维，随后 V23-A06。双数环、q=p=f=id 和局部环公式清晰，非平坦性解释与末尾 O_G,eta=k(eta) 充分条件均未越界。印刷页码11完整。"
+    },
+    {
+      "physical_page": 32,
+      "image": "checks/visual_v23/setup/report_0032.png",
+      "image_sha256": "e7d502348e848a7fa128c9740dcdf75f223ec01fd0724140eaab2d7be4ce5184",
+      "verdict": "pass",
+      "notes": "实际查看整页：V23-A06 从含泛点的仿射开集局部化论证起，两个态射展示式分别独立排版；末段明确固定域、尚未逐项重证及后半报告边界。结束于“见本版后半报告”，未见遗漏、重叠或裁切，印刷页码12完整。"
+    }
+  ],
+  "scope": "最终报告物理25—32页逐页实际看图；不把单独模块预览或其他未阅页算入。",
+  "source_report_sha256": "240eb816b4f62ca2c359c42ed5db08d45eef6e7d2886124a9ede205d7f1d70e0"
+}

@@ -1,0 +1,13 @@
+{
+  "edition": 22,
+  "command": [
+    "bash",
+    "build.sh",
+    "--verify-single"
+  ],
+  "exit_code": 0,
+  "elapsed_seconds": 208.056,
+  "completed_at_utc": "2026-11-26T01:20:22.156332+00:00",
+  "snapshotted_tex_inputs_unchanged": true,
+  "scope": "Actual build command only; final logs, all-page comparison and visual review have not yet been certified by this wrapper."
+}

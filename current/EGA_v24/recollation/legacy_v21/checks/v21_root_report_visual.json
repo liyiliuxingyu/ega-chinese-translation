@@ -1,0 +1,78 @@
+{
+  "schema_version": 1,
+  "edition": 21,
+  "reviewer": "/root",
+  "review_method": "actual_image_view",
+  "document": "report",
+  "pdf": {
+    "path": "report.pdf",
+    "sha256": "f88d2cd3059fd75f7a86f9348ac272c2d975e68998e9ca714d3cfac56e8773f3"
+  },
+  "rendering": {
+    "renderer": "PyMuPDF",
+    "scale": 1.65
+  },
+  "pages": [
+    {
+      "physical_page": 1,
+      "image": "checks/rendered_v21/report_0001.png",
+      "image_sha256": "b05698817d9ee87fd7f458eb0c2de265993e519f0b2821a26b385b95e95ed5fe",
+      "verdict": "pass",
+      "notes": "第二十一版报告封面、题名及副题排版完整。"
+    },
+    {
+      "physical_page": 3,
+      "image": "checks/rendered_v21/report_0003.png",
+      "image_sha256": "9a114ea7a894c5e0e29107bab2c4fcd50f4a45700c6f72fe3f793bc73c6fa264",
+      "verdict": "pass",
+      "notes": "报告说明区分反例、补证和未证明事项，文本完整，无脚注或行尾截断。"
+    },
+    {
+      "physical_page": 5,
+      "image": "checks/rendered_v21/report_0005.png",
+      "image_sha256": "6436a8b07681276604e1f6c43054261e985fae717b29a1dbc5a8a7991c5fe93c",
+      "verdict": "pass",
+      "notes": "目录首面含本版四部分和历史第二十版入口，点线及页码对齐。"
+    },
+    {
+      "physical_page": 21,
+      "image": "checks/rendered_v21/report_0021.png",
+      "image_sha256": "fe132ab4a1c3d84a6efbc1dc47157fb5838524f13d2404eec19ea47dbf5cdff0",
+      "verdict": "pass",
+      "notes": "实际范围页的三行来源表均可读，范围及边界说明完整。"
+    },
+    {
+      "physical_page": 22,
+      "image": "checks/rendered_v21/report_0022.png",
+      "image_sha256": "0f030b34bb7368adff8fb30cd5b028f2b1a35e81b1f4e89fd6256a9464c8c78d",
+      "verdict": "pass",
+      "notes": "订正性质的六段分类及源码保留段落清晰，数学上下标正常。"
+    },
+    {
+      "physical_page": 23,
+      "image": "checks/rendered_v21/report_0023.png",
+      "image_sha256": "c770652a8110255972baba1daeb700e371e855b80a48a3e4b318b2dd6fc8cdf0",
+      "verdict": "pass",
+      "notes": "构建、范围限制和后续位置续文完整；短章的留白属于自然分页。"
+    },
+    {
+      "physical_page": 24,
+      "image": "checks/rendered_v21/report_0024.png",
+      "image_sha256": "e2fda71c21a7ff42db33e107ee8905a72b818cac64d468d91982a87c39ffaae3",
+      "verdict": "pass",
+      "notes": "ctexbook双面新章前留白页，仅页眉和页码，未误把空白当作缺文。"
+    }
+  ],
+  "final_pdf_pixel_revalidation_after_book_only_layout_changes": {
+    "pass": true,
+    "unchanged_pages": [
+      1,
+      3,
+      5,
+      21,
+      22,
+      23,
+      24
+    ]
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "pass": true,
+  "errors": [],
+  "source_records": 186,
+  "new_section12_modules": [
+    "continuations/v20_section12_opening.tex",
+    "continuations/v20_section12_extensions.tex",
+    "continuations/v20_section12_degeneracy.tex",
+    "continuations/v20_section12_families.tex"
+  ],
+  "inherited_source_files_unchanged": 177,
+  "dot_modules_input_once": 40,
+  "baseline_comparison_mode": "actual_previous_project_and_recorded_hashes",
+  "previous_project_actually_read_this_run": true,
+  "section13_exact_inherited_bytes": 33351,
+  "current_section12_footnotes": 47,
+  "scope": "File preservation and TeX input consistency, not proof of mathematical completeness"
+}

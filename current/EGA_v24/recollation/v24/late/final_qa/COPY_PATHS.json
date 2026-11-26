@@ -1,0 +1,114 @@
+{
+  "edition": 24,
+  "scope": "Actual byte-exact relocation of final visual records and source images. No new human verdict invented.",
+  "images": [
+    {
+      "original_path": "v24_work/late/final_qa/main/physical_0956.png",
+      "project_relative_path": "checks/v24_late/main/physical_0956.png",
+      "sha256": "08cd2edbcc78533925e2b66e1732a4ceccf27b75558dc59636a1917284098471",
+      "bytes": 179474
+    },
+    {
+      "original_path": "v24_work/late/final_qa/main/physical_0957.png",
+      "project_relative_path": "checks/v24_late/main/physical_0957.png",
+      "sha256": "548ddb7cf8e4eed7654431eb4a678e2d0eb4aec102e928da4612550a85ab6709",
+      "bytes": 171467
+    },
+    {
+      "original_path": "v24_work/late/final_qa/main/physical_0958.png",
+      "project_relative_path": "checks/v24_late/main/physical_0958.png",
+      "sha256": "85558d814ec6bcd8a4ac8134e383d0d409f11e94869a8853ff28599ede422ac9",
+      "bytes": 202241
+    },
+    {
+      "original_path": "v24_work/late/final_qa/main/physical_0959.png",
+      "project_relative_path": "checks/v24_late/main/physical_0959.png",
+      "sha256": "574d4f18ea3b8e9e2038d5b1af3d1e1ce50f44935fdc8d67614640d381104fe5",
+      "bytes": 167773
+    },
+    {
+      "original_path": "v24_work/late/final_qa/main/physical_0960.png",
+      "project_relative_path": "checks/v24_late/main/physical_0960.png",
+      "sha256": "c6f7eefadd2fea17149148fe4df1db5b14f0a97f9ad2cab1fb720151c2810b73",
+      "bytes": 200651
+    },
+    {
+      "original_path": "v24_work/late/final_qa/main/physical_0961.png",
+      "project_relative_path": "checks/v24_late/main/physical_0961.png",
+      "sha256": "ff43ae00b4bc4c163d84af3ee441be1879c84327f6e5d6a5d0f91940a161f51c",
+      "bytes": 205419
+    },
+    {
+      "original_path": "v24_work/late/final_qa/main/physical_0962.png",
+      "project_relative_path": "checks/v24_late/main/physical_0962.png",
+      "sha256": "679077f8a9ee964fa333b432fe1f9ef60863bd9387eccfecb4ff817c1a925f27",
+      "bytes": 182963
+    },
+    {
+      "original_path": "v24_work/late/final_qa/main/physical_0963.png",
+      "project_relative_path": "checks/v24_late/main/physical_0963.png",
+      "sha256": "89d3eedcd04a4e591a9c91678a9379f173e6e02e11111ea9bc8ce4d3b5d6dd1f",
+      "bytes": 224981
+    },
+    {
+      "original_path": "v24_work/late/final_qa/main/physical_0964.png",
+      "project_relative_path": "checks/v24_late/main/physical_0964.png",
+      "sha256": "c2662843cbba91bbd40fb7161084d24edca4243259c7ba05e91a02577a342314",
+      "bytes": 78802
+    },
+    {
+      "original_path": "v24_work/late/final_qa/report/physical_0037.png",
+      "project_relative_path": "checks/v24_late/report/physical_0037.png",
+      "sha256": "0fbfb06baac574df71978dc27dfe9516cf747ff103360ecdf15771b4461948f4",
+      "bytes": 160104
+    },
+    {
+      "original_path": "v24_work/late/final_qa/report/physical_0038.png",
+      "project_relative_path": "checks/v24_late/report/physical_0038.png",
+      "sha256": "0bc2ba62982deff2bb93a93f94eeee4f5b40f32b4c9ea91cebdcad1b95e5475f",
+      "bytes": 211596
+    },
+    {
+      "original_path": "v24_work/late/final_qa/report/physical_0039.png",
+      "project_relative_path": "checks/v24_late/report/physical_0039.png",
+      "sha256": "ba3dbe43fdfd0dc4d1ded2ad18b08bb3d4326395cb855b244bfe870f3323ab51",
+      "bytes": 211433
+    },
+    {
+      "original_path": "v24_work/late/final_qa/report/physical_0040.png",
+      "project_relative_path": "checks/v24_late/report/physical_0040.png",
+      "sha256": "1c67edaf02a0a12058ef795fc9e5d5bc4e2413d74e31e1f20d14294c43152298",
+      "bytes": 205355
+    },
+    {
+      "original_path": "v24_work/late/final_qa/report/physical_0041.png",
+      "project_relative_path": "checks/v24_late/report/physical_0041.png",
+      "sha256": "42e6fbbaa5bd92cd363ba883feabfc92779c0fe1d89c46be5ab6db882fec9220",
+      "bytes": 223559
+    },
+    {
+      "original_path": "v24_work/late/final_qa/report/physical_0042.png",
+      "project_relative_path": "checks/v24_late/report/physical_0042.png",
+      "sha256": "de077c428ae206bc235498ed459f9b9d08515c6e155ed2affc8f4973199e3d3c",
+      "bytes": 197952
+    },
+    {
+      "original_path": "v24_work/late/final_qa/report/physical_0043.png",
+      "project_relative_path": "checks/v24_late/report/physical_0043.png",
+      "sha256": "5f260ba36838d0d59e786285f24c154885ad58102c3eacce9544dc6e0c308404",
+      "bytes": 188299
+    },
+    {
+      "original_path": "v24_work/late/final_qa/report/physical_0044.png",
+      "project_relative_path": "checks/v24_late/report/physical_0044.png",
+      "sha256": "ef24998136e1286f7a1eaa1f0a0029a0f6c6284edff24de496aec75fe1bc307a",
+      "bytes": 183001
+    },
+    {
+      "original_path": "v24_work/late/final_qa/report/physical_0045.png",
+      "project_relative_path": "checks/v24_late/report/physical_0045.png",
+      "sha256": "ddd13971af9e5d9084d0a1d1907d12d30c7b006f48f284c97f59bdd8e2e7da60",
+      "bytes": 159449
+    }
+  ]
+}

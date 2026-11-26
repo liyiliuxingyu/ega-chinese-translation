@@ -1,0 +1,40 @@
+{
+  "edition": 23,
+  "project_files_copied_and_byte_compared": 1284,
+  "project_bytes_copied": 231700289,
+  "excluded_new_reproducible_runtime_files": [
+    "main.aux",
+    "main.toc",
+    "main.xdv",
+    "report.aux",
+    "report.toc",
+    "report.xdv",
+    "runtime/texmf-var/web2c/xetex/format-init.stdout.txt",
+    "runtime/texmf-var/web2c/xetex/texsys.aux",
+    "runtime/texmf-var/web2c/xetex/xelatex.fmt",
+    "runtime/texmf-var/web2c/xetex/xelatex.log",
+    "single_build/audit_single.aux",
+    "single_build/audit_single.toc",
+    "single_build/audit_single.xdv",
+    "single_build/book_single.aux",
+    "single_build/book_single.toc",
+    "single_build/book_single.xdv"
+  ],
+  "snapshot_old_root_files": [
+    "README.md",
+    "AGENTS.md",
+    "CONTINUE_HERE.md",
+    "REPOSITORY_MANIFEST.json"
+  ],
+  "root_documents_replaced": [
+    "README.md",
+    "AGENTS.md",
+    "CONTINUE_HERE.md"
+  ],
+  "new_tools": [
+    "tools/apply_edition23_update.py",
+    "tools/package_edition23.py"
+  ],
+  "git_commands_performed": [],
+  "old_project_paths_mutated": []
+}

@@ -1,0 +1,33 @@
+{
+  "edition": 24,
+  "pass": true,
+  "root_review_record": "recollation/v24/root_review/FINAL_SOURCE_REVIEW.md",
+  "root_review_sha256": "389b1d900d3f6f2b51aa8dc418ae19c42ea700a3b598322208eb582c46884059",
+  "files": [
+    {
+      "project_relative_path": "continuations/v24_section16_early.tex",
+      "bytes": 30917,
+      "sha256": "5d7ec3073f921a23b05c87905c8d800cff580f49eb3490f7f7561a1f659fb553"
+    },
+    {
+      "project_relative_path": "continuations/v24_section16_late.tex",
+      "bytes": 26151,
+      "sha256": "93d23d0ea48564d859778665853c10b330e63171578103ef6a440e33e7441937"
+    },
+    {
+      "project_relative_path": "reports/v24_section16_early_audit.tex",
+      "bytes": 17895,
+      "sha256": "77f27fe61dc37f6386fc3191a24c4fcda4dd0e8cbac78a617ffbd82f0beed2c4"
+    },
+    {
+      "project_relative_path": "reports/v24_section16_late_audit.tex",
+      "bytes": 21904,
+      "sha256": "8df6892462aa3cd96146f69586a0e85a0933f2f79ec58eb30c94fb9b169ddc1c"
+    },
+    {
+      "project_relative_path": "reports/v24_integration_audit.tex",
+      "bytes": 4576,
+      "sha256": "212b08d5515c1c45792d435509d54e3a4a1981b9f2831cb03ae25f3294aa1b08"
+    }
+  ]
+}

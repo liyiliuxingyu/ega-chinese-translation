@@ -1,0 +1,137 @@
+{
+  "schema_version": 1,
+  "edition": 22,
+  "reviewer": "v22_fibers",
+  "review_method": "actual_image_view",
+  "document": "main",
+  "pdf": {
+    "path": "main.pdf",
+    "sha256": "bc4c27cc042e1e1e9ddef4b0152369d491876dc0e81fa357110025ea68d77504",
+    "physical_page_count": 1216
+  },
+  "rendering": {
+    "renderer": "PyMuPDF",
+    "scale": 1.5,
+    "colorspace": "RGB",
+    "alpha": false
+  },
+  "pages": [
+    {
+      "physical_page": 1076,
+      "printed_page": "1056",
+      "image": "checks/visual_v22/fibers/main_1076.png",
+      "image_sha256": "4aa6766961cd2d4c238ca2078a43f12ec7913a4210c249da4edd270ea15c7529",
+      "image_dimensions_px": [
+        893,
+        1263
+      ],
+      "actually_viewed": true,
+      "verdict": "pass",
+      "notes": "物理1076页、印刷1056页：实际显示整页。页首承接geometry的层记号与两个F的区别，随后完整进入Grosso modo段、一般中心的Koszul正则性和爆破识别。秩m+1、截面上下标、中心逆像纤维积、同构及投影显示式均清楚；GEO011与FIB001—004五条脚注分隔正常，末条脚注完整落在版心内，未见缺字、裁切或正文脚注重叠。 主PDF重编后，本页重渲染与上述已实际查看的图像逐像素完全一致，因此沿用同一实际看图记录并更新PDF绑定。",
+      "pixels_reverified_against_bound_pdf": true,
+      "retained_actual_view_with_unchanged_image_bytes": true,
+      "new_final_pdf_pixels_equal_previously_viewed_image": true
+    },
+    {
+      "physical_page": 1077,
+      "printed_page": "1057",
+      "image": "checks/visual_v22/fibers/main_1077.png",
+      "image_sha256": "4eaf02e6b40e8db27b365ed65503a22b16fd6c62f2b1ac46455cd2a02a85dbb0",
+      "image_dimensions_px": [
+        893,
+        1263
+      ],
+      "actually_viewed": true,
+      "verdict": "pass",
+      "notes": "物理1077页、印刷1057页：实际显示整页。命题14.1标题及加强条件完整，各Xi所有非空几何纤维纯共同d维清楚；(a)(b)、我希望如此的作者语气、反证不等式及中心纤维积显示式连续。FIB005—008四条脚注完整，公式与长脚注均未越出版心，页末反证结句正常。 主PDF重编后，本页重渲染与上述已实际查看的图像逐像素完全一致，因此沿用同一实际看图记录并更新PDF绑定。",
+      "pixels_reverified_against_bound_pdf": true,
+      "retained_actual_view_with_unchanged_image_bytes": true,
+      "new_final_pdf_pixels_equal_previously_viewed_image": true
+    },
+    {
+      "physical_page": 1078,
+      "printed_page": "1058",
+      "image": "checks/visual_v22/fibers/main_1078.png",
+      "image_sha256": "bb46067113fb4264614b5ac59059230a007e1d673a0393faa7ab6706988e7753",
+      "image_dimensions_px": [
+        893,
+        1263
+      ],
+      "actually_viewed": true,
+      "verdict": "pass",
+      "notes": "物理1078页、印刷1058页：实际显示整页。14.1(b)证明以像与Lξ的交集公式接续；14.2有限满射／拟有限优势两种结论和14.3每个分支像维≥m的条件清晰。三个投影／维数显示式与FIB009—011脚注没有裁切、错位或重叠；页末证明提示在可字之后正常续至下一页。 主PDF重编后，本页重渲染与上述已实际查看的图像逐像素完全一致，因此沿用同一实际看图记录并更新PDF绑定。",
+      "pixels_reverified_against_bound_pdf": true,
+      "retained_actual_view_with_unchanged_image_bytes": true,
+      "new_final_pdf_pixels_equal_previously_viewed_image": true
+    },
+    {
+      "physical_page": 1079,
+      "printed_page": "1059",
+      "image": "checks/visual_v22/fibers/main_1079.png",
+      "image_sha256": "2bbe27fbb106c907a634e79d35bf614851b54758a565bc87bfe42bd3edf22b0a",
+      "image_dimensions_px": [
+        893,
+        1263
+      ],
+      "actually_viewed": true,
+      "verdict": "pass",
+      "notes": "物理1079页、印刷1059页：实际显示整页。页首接上页证明提示，F正则性范围、CM凝聚模版本和CM必要性段完整；随后进入微分性质导言，跨模块接缝连续。FIB012—014及DIF001脚注都可读，长FIB012脚注未遮盖正文，显示纤维公式及章页眉完整，没有缺失字形或越界。 主PDF重编后，本页重渲染与上述已实际查看的图像逐像素完全一致，因此沿用同一实际看图记录并更新PDF绑定。",
+      "pixels_reverified_against_bound_pdf": true,
+      "retained_actual_view_with_unchanged_image_bytes": true,
+      "new_final_pdf_pixels_equal_previously_viewed_image": true
+    }
+  ],
+  "binding_check": {
+    "initial_pdf_sha256_at_actual_image_views": "496ae494c805cbdd2ae645fd2ea8ff5e62c2fb62800ab23ebbc6199361df27b3",
+    "new_final_pdf_sha256_verified_before_pixel_comparison": "bc4c27cc042e1e1e9ddef4b0152369d491876dc0e81fa357110025ea68d77504",
+    "sha256_when_writing_record": "bc4c27cc042e1e1e9ddef4b0152369d491876dc0e81fa357110025ea68d77504",
+    "sha256_after_pixel_check": "bc4c27cc042e1e1e9ddef4b0152369d491876dc0e81fa357110025ea68d77504",
+    "bound_pdf_unchanged_during_pixel_check": true,
+    "all_four_previously_viewed_images_match_final_pdf_pixels": true,
+    "reused_actual_view_basis": "Identical full-page RGB samples, dimensions, and alpha=False at PyMuPDF scale1.5 for each of physical1076–1079."
+  },
+  "recorded_utc": "2026-11-26T01:23:57.103133+00:00",
+  "limitations": [
+    "Only the explicitly listed full-page images were actually displayed and visually inspected.",
+    "No claim of whole-book or whole-report human page-by-page review.",
+    "Visual inspection is separate from the mathematical proof review; no source files were edited during this check.",
+    "The images actually viewed before recompilation were retained only after each matched the corresponding new final PDF page pixel-for-pixel. No new display is claimed for the unchanged images."
+  ],
+  "review_history": [
+    {
+      "pdf_sha256": "496ae494c805cbdd2ae645fd2ea8ff5e62c2fb62800ab23ebbc6199361df27b3",
+      "actual_image_views": [
+        1076,
+        1077,
+        1078,
+        1079
+      ],
+      "notes": "These full-page images were individually displayed and visually reviewed before the neighboring DIF footnote adjustments."
+    }
+  ],
+  "recompilation_rebinding": {
+    "old_pdf_sha256": "496ae494c805cbdd2ae645fd2ea8ff5e62c2fb62800ab23ebbc6199361df27b3",
+    "new_pdf_sha256": "bc4c27cc042e1e1e9ddef4b0152369d491876dc0e81fa357110025ea68d77504",
+    "method": "pixel_equality_to_previously_actually_displayed_images",
+    "comparisons": [
+      {
+        "physical_page": 1076,
+        "pixels_identical_to_actually_viewed_image": true
+      },
+      {
+        "physical_page": 1077,
+        "pixels_identical_to_actually_viewed_image": true
+      },
+      {
+        "physical_page": 1078,
+        "pixels_identical_to_actually_viewed_image": true
+      },
+      {
+        "physical_page": 1079,
+        "pixels_identical_to_actually_viewed_image": true
+      }
+    ],
+    "new_actual_image_views_required": [],
+    "recorded_utc": "2026-11-26T01:27:56.115612+00:00"
+  }
+}

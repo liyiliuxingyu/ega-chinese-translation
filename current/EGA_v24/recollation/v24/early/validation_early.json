@@ -1,0 +1,310 @@
+{
+  "date": "2026-11-26",
+  "agent": "/root/v24_early",
+  "baseline_commit": "aaa56a394186471c071e9d9cc686401becadf98e",
+  "scope": {
+    "fr_physical": [
+      95,
+      103
+    ],
+    "en_physical": [
+      62,
+      68
+    ],
+    "end": "End of invertible sheaf K diagram D_K; before crossed-out augmentation draft",
+    "ps_converted_pages": 6
+  },
+  "files": [
+    {
+      "path": "/workspace/scratch/a886fd56dd2f/v24_work/early/v24_section16_early.tex",
+      "bytes": 30917,
+      "sha256": "5d7ec3073f921a23b05c87905c8d800cff580f49eb3490f7f7561a1f659fb553"
+    },
+    {
+      "path": "/workspace/scratch/a886fd56dd2f/v24_work/early/v24_section16_early_audit.tex",
+      "bytes": 17895,
+      "sha256": "77f27fe61dc37f6386fc3191a24c4fcda4dd0e8cbac78a617ffbd82f0beed2c4"
+    },
+    {
+      "path": "/workspace/scratch/a886fd56dd2f/v24_work/early/preview.pdf",
+      "bytes": 380725,
+      "sha256": "f7d1715f06346d0e6cf16a93e91a8775fcf067e797fb160826a38725a77c67ef",
+      "pages": 10
+    },
+    {
+      "path": "/workspace/scratch/a886fd56dd2f/v24_work/early/audit_preview.pdf",
+      "bytes": 326357,
+      "sha256": "856aba30dbfd4cbc25fab747cc6c004273ccb49ea80942bda5776d731351e169",
+      "pages": 9
+    }
+  ],
+  "sources": [
+    {
+      "path": "/workspace/scratch/a886fd56dd2f/repository/archive_20261121/03_sources/EGA5_francais.pdf",
+      "bytes": 16097021,
+      "sha256": "24cf8204184b58b18a46e5f63ecc36d6e791b3c8c96a09daac93de96ebd8e830",
+      "pages": 171
+    },
+    {
+      "path": "/workspace/scratch/a886fd56dd2f/repository/archive_20261121/03_sources/EGAVaiello.pdf",
+      "bytes": 677332,
+      "sha256": "23a20ef32fd16a1bd623c0c08ac080d04fc94f248de12133b713a19d6b0330d9",
+      "pages": 112
+    },
+    {
+      "path": "/workspace/scratch/a886fd56dd2f/repository/archive_20261121/03_sources/EGAV1-2.ps",
+      "bytes": 184244,
+      "sha256": "9cf40f1f074c0dd8322a904a0e1008bc6bc858675ae7e0056d637567006bf0ee"
+    }
+  ],
+  "legacy_source": {
+    "path": "/workspace/scratch/a886fd56dd2f/repository/current/EGA_v23/text/v1_2.tex",
+    "bytes": 61675,
+    "sha256": "28e9a07cef4982bcaaba67b9d5b2f96d2e39e5cf6aa0bccf2ba8afc7cf1b1dc5"
+  },
+  "compile": {
+    "environment_script": "/workspace/scratch/a886fd56dd2f/v24_work/EGA_v24/scripts/tex_environment.sh",
+    "engine": "XeLaTeX / TeX Live 2025",
+    "body_command": "xelatex -interaction=nonstopmode -halt-on-error -file-line-error preview.tex (two successful final passes)",
+    "audit_command": "xelatex -interaction=nonstopmode -halt-on-error -file-line-error audit_preview.tex (successful after longtable correction)",
+    "observed_exit_code": 0,
+    "body_pages": 10,
+    "audit_pages": 9,
+    "logs": [
+      {
+        "file": "preview.log",
+        "sha256": "ea509c3782296d9b8bcabd1e39193def9e4b96e0d70438fad33681674c89db51",
+        "errors": 0,
+        "overfull": 0,
+        "underfull": 0,
+        "missing_character": 0,
+        "unresolved_reference": 0,
+        "output": [
+          "Output written on preview.pdf (10 pages)."
+        ],
+        "font_warning": "Standard rsfs font size substitution; default ctexbook/Fandol retained."
+      },
+      {
+        "file": "audit_preview.log",
+        "sha256": "22fcae83c1245f7dccc1414376c8acaabe6efc2161c4092feee03887a5989c73",
+        "errors": 0,
+        "overfull": 0,
+        "underfull": 1,
+        "missing_character": 0,
+        "unresolved_reference": 0,
+        "output": [
+          "Output written on audit_preview.pdf (9 pages)."
+        ],
+        "font_warning": "Standard rsfs font size substitution; default ctexbook/Fandol retained."
+      }
+    ]
+  },
+  "visual_qa": {
+    "body": [
+      {
+        "path": "/workspace/scratch/a886fd56dd2f/v24_work/early/preview_01.png",
+        "bytes": 131125,
+        "sha256": "3a044852d6f6665fb5fa2c00b30a1a216c4740c7b2ed45f0adf3012a7e22b8c8",
+        "page": 1,
+        "actually_viewed": true,
+        "review_stage": "final layout after footnote anchor correction",
+        "result": "No clipping, missing text, cut formula or displaced footnote marker observed."
+      },
+      {
+        "path": "/workspace/scratch/a886fd56dd2f/v24_work/early/preview_02.png",
+        "bytes": 233445,
+        "sha256": "825b808975615c271f9c77f3b7f4d9017bbc1f4a5c5d885bb81f4f94a788fa7d",
+        "page": 2,
+        "actually_viewed": true,
+        "review_stage": "final layout after footnote anchor correction",
+        "result": "No clipping, missing text, cut formula or displaced footnote marker observed."
+      },
+      {
+        "path": "/workspace/scratch/a886fd56dd2f/v24_work/early/preview_03.png",
+        "bytes": 198189,
+        "sha256": "528530b3fdbc9649cb635b4d2f74e0b679b5e82928b3c784151cc631eab2941e",
+        "page": 3,
+        "actually_viewed": true,
+        "review_stage": "final layout after footnote anchor correction",
+        "result": "No clipping, missing text, cut formula or displaced footnote marker observed."
+      },
+      {
+        "path": "/workspace/scratch/a886fd56dd2f/v24_work/early/preview_04.png",
+        "bytes": 202155,
+        "sha256": "92831742c013248f7051f4087d96aadb7706b80ce7f092c957ef342a69ec561e",
+        "page": 4,
+        "actually_viewed": true,
+        "review_stage": "final layout after footnote anchor correction",
+        "result": "No clipping, missing text, cut formula or displaced footnote marker observed."
+      },
+      {
+        "path": "/workspace/scratch/a886fd56dd2f/v24_work/early/preview_05.png",
+        "bytes": 157583,
+        "sha256": "bafb8d9174834b721ba6de7415e7422267f306f99d6ba5e2367c3b4acb9032aa",
+        "page": 5,
+        "actually_viewed": true,
+        "review_stage": "final layout after footnote anchor correction",
+        "result": "No clipping, missing text, cut formula or displaced footnote marker observed."
+      },
+      {
+        "path": "/workspace/scratch/a886fd56dd2f/v24_work/early/preview_06.png",
+        "bytes": 178765,
+        "sha256": "5eb9f0c49a5ae0664e0534aaea4c34cb285641936b950d655bb7b634d37180ca",
+        "page": 6,
+        "actually_viewed": true,
+        "review_stage": "final layout after footnote anchor correction",
+        "result": "No clipping, missing text, cut formula or displaced footnote marker observed."
+      },
+      {
+        "path": "/workspace/scratch/a886fd56dd2f/v24_work/early/preview_07.png",
+        "bytes": 163904,
+        "sha256": "a1f9d931ce9a26ede91eb8c4299a8154c23735cb13dab90714c2a0ebe2bf2c9e",
+        "page": 7,
+        "actually_viewed": true,
+        "review_stage": "final layout after footnote anchor correction",
+        "result": "No clipping, missing text, cut formula or displaced footnote marker observed."
+      },
+      {
+        "path": "/workspace/scratch/a886fd56dd2f/v24_work/early/preview_08.png",
+        "bytes": 150516,
+        "sha256": "93d58e8aafcbc5196647b8046338da1622234389229dbdf6c44c7413aa1f19f8",
+        "page": 8,
+        "actually_viewed": true,
+        "review_stage": "final layout after footnote anchor correction",
+        "result": "No clipping, missing text, cut formula or displaced footnote marker observed."
+      },
+      {
+        "path": "/workspace/scratch/a886fd56dd2f/v24_work/early/preview_09.png",
+        "bytes": 237266,
+        "sha256": "c22fc7d63017baf870ef05789a275100385a8a7113f9e923e33efeb795a22084",
+        "page": 9,
+        "actually_viewed": true,
+        "review_stage": "final layout after footnote anchor correction",
+        "result": "No clipping, missing text, cut formula or displaced footnote marker observed."
+      },
+      {
+        "path": "/workspace/scratch/a886fd56dd2f/v24_work/early/preview_10.png",
+        "bytes": 140545,
+        "sha256": "58b01fae13804a86cdb44e759079cbef9a5f393c86ae4ddd9509c751c01c219a",
+        "page": 10,
+        "actually_viewed": true,
+        "review_stage": "final layout after footnote anchor correction",
+        "result": "No clipping, missing text, cut formula or displaced footnote marker observed."
+      }
+    ],
+    "audit": [
+      {
+        "path": "/workspace/scratch/a886fd56dd2f/v24_work/early/audit_preview_01.png",
+        "bytes": 133496,
+        "sha256": "52da83a39c0418ed8e62e6c57e18852f4dab0f2d2768995da7a290d3628b6504",
+        "page": 1,
+        "actually_viewed": true,
+        "review_stage": "final audit after longtable edge-padding correction; audit not changed in later body-only rebuild",
+        "result": "No clipping, missing text or cut formula observed."
+      },
+      {
+        "path": "/workspace/scratch/a886fd56dd2f/v24_work/early/audit_preview_02.png",
+        "bytes": 165307,
+        "sha256": "961f1c53a95d2863b3184acebbcf821b8c28181e2cc642d386ffb3759fb25cfb",
+        "page": 2,
+        "actually_viewed": true,
+        "review_stage": "final audit after longtable edge-padding correction; audit not changed in later body-only rebuild",
+        "result": "No clipping, missing text or cut formula observed."
+      },
+      {
+        "path": "/workspace/scratch/a886fd56dd2f/v24_work/early/audit_preview_03.png",
+        "bytes": 169912,
+        "sha256": "f5be4b008db658db4b4d5e9e813dcaa69a383783655ddf49b515a5653bb33059",
+        "page": 3,
+        "actually_viewed": true,
+        "review_stage": "final audit after longtable edge-padding correction; audit not changed in later body-only rebuild",
+        "result": "No clipping, missing text or cut formula observed."
+      },
+      {
+        "path": "/workspace/scratch/a886fd56dd2f/v24_work/early/audit_preview_04.png",
+        "bytes": 169206,
+        "sha256": "1910199fde981c3430cf5b2dbe8c23dc715786475f60ebb783dc3affc22ea659",
+        "page": 4,
+        "actually_viewed": true,
+        "review_stage": "final audit after longtable edge-padding correction; audit not changed in later body-only rebuild",
+        "result": "No clipping, missing text or cut formula observed."
+      },
+      {
+        "path": "/workspace/scratch/a886fd56dd2f/v24_work/early/audit_preview_05.png",
+        "bytes": 156547,
+        "sha256": "bcca64880293c368708b22959908141a4c9f7034181af4641ba50874b3de4eae",
+        "page": 5,
+        "actually_viewed": true,
+        "review_stage": "final audit after longtable edge-padding correction; audit not changed in later body-only rebuild",
+        "result": "No clipping, missing text or cut formula observed."
+      },
+      {
+        "path": "/workspace/scratch/a886fd56dd2f/v24_work/early/audit_preview_06.png",
+        "bytes": 152704,
+        "sha256": "b608fc486ed3ffa8fe6c06c001b4e86cc07dcb560a31f9fcf617b1efc170ebea",
+        "page": 6,
+        "actually_viewed": true,
+        "review_stage": "final audit after longtable edge-padding correction; audit not changed in later body-only rebuild",
+        "result": "No clipping, missing text or cut formula observed."
+      },
+      {
+        "path": "/workspace/scratch/a886fd56dd2f/v24_work/early/audit_preview_07.png",
+        "bytes": 222729,
+        "sha256": "a79cd9febca9582ac573c68e81967f4d02dd0cfa8b69ca90d723a6eeed771fbe",
+        "page": 7,
+        "actually_viewed": true,
+        "review_stage": "final audit after longtable edge-padding correction; audit not changed in later body-only rebuild",
+        "result": "No clipping, missing text or cut formula observed."
+      },
+      {
+        "path": "/workspace/scratch/a886fd56dd2f/v24_work/early/audit_preview_08.png",
+        "bytes": 186359,
+        "sha256": "b64db2dc5f4c3c369c6c0e4b3d38792fe2a27dbd9b01b7ab32e2fa81c9c1c985",
+        "page": 8,
+        "actually_viewed": true,
+        "review_stage": "final audit after longtable edge-padding correction; audit not changed in later body-only rebuild",
+        "result": "No clipping, missing text or cut formula observed."
+      },
+      {
+        "path": "/workspace/scratch/a886fd56dd2f/v24_work/early/audit_preview_09.png",
+        "bytes": 62008,
+        "sha256": "ec1142c5bd5ae949c8ea9a5c9b1cd28ee70ae27d77b80585910169e76f53bd10",
+        "page": 9,
+        "actually_viewed": true,
+        "review_stage": "final audit after longtable edge-padding correction; audit not changed in later body-only rebuild",
+        "result": "No clipping, missing text or cut formula observed."
+      }
+    ],
+    "is_final_combined_volume_qa": false
+  },
+  "open_limits": [
+    "FR103 overwritten K exponent is not reliably decipherable; correction follows independently checked determinant type, not a claim of exact handwriting reading.",
+    "Author announced the strict-generization regularity result for arbitrary regular local rings without proof; this report independently proves the field-smooth case, not every mixed-characteristic or nonexcellent case.",
+    "FR112–113 were inspected for the author terminology change only; they are outside this module translation scope."
+  ],
+  "inheritance_map": "INHERITANCE_MAP.md",
+  "source_map": "SOURCE_MAP.md",
+  "supporting_records": [
+    {
+      "file": "SOURCE_MAP.md",
+      "bytes": 6814,
+      "sha256": "536d6b50bcc78d92038ffc0b1a8e4c157c7e9e650f879cf1056e0d78f2737a15"
+    },
+    {
+      "file": "INHERITANCE_MAP.md",
+      "bytes": 4447,
+      "sha256": "e462098f0ba9360b6b37494c2943ea54cd025571e65e13a4349c4a8a1db0e6c2"
+    },
+    {
+      "file": "PREVIEW_CHECK.md",
+      "bytes": 2330,
+      "sha256": "929911fa5b99bba47d066f69a1a27fc23dbf5fffe7ed44234ece52e96eaa3ab7"
+    }
+  ],
+  "editorial_note_integrity": {
+    "cmt_count": 34,
+    "unique_count": 34,
+    "expected_001_through_034": true,
+    "ednote_count": 2
+  }
+}

@@ -1,0 +1,252 @@
+{
+  "recorded_utc": "2026-11-26T03:15:40.640492+00:00",
+  "reviewer": "/root/v23_setup",
+  "status": "front-half sources frozen after literal deleted-formula correction",
+  "source_pdfs": [
+    {
+      "path": "/workspace/scratch/a886fd56dd2f/repository/archive_20261121/03_sources/EGA5_francais.pdf",
+      "bytes": 16097021,
+      "sha256": "24cf8204184b58b18a46e5f63ecc36d6e791b3c8c96a09daac93de96ebd8e830",
+      "physical_pages": 171
+    },
+    {
+      "path": "/workspace/scratch/a886fd56dd2f/repository/archive_20261121/03_sources/EGAVaiello.pdf",
+      "bytes": 677332,
+      "sha256": "23a20ef32fd16a1bd623c0c08ac080d04fc94f248de12133b713a19d6b0330d9",
+      "physical_pages": 112
+    }
+  ],
+  "inherited_source": {
+    "path": "/workspace/scratch/a886fd56dd2f/repository/current/EGA_v22/continuations/v22_section15_inherited.tex",
+    "bytes": 14614,
+    "sha256": "62ccad5d15ceb0b55a6f28c2e9d98ac14326eee748e46249e86b5735ea8cf3f4"
+  },
+  "deliverables": [
+    {
+      "path": "v23_section15_setup.tex",
+      "bytes": 11229,
+      "sha256": "002dcbfc52a2786247016cafcb6f92da1349c7e35553851d70e0c951e8a6ca0f"
+    },
+    {
+      "path": "v23_section15_setup_audit.tex",
+      "bytes": 18506,
+      "sha256": "240eb816b4f62ca2c359c42ed5db08d45eef6e7d2886124a9ede205d7f1d70e0"
+    }
+  ],
+  "scope": {
+    "french": "physical page 90, section 15 heading, through page 93 sentence les résultats correspondant à 2.1. à 2.11.",
+    "english": "physical page 59 section 15 heading through corresponding sentence on page 61",
+    "next_sentence_excluded": "Il faut une condition sur",
+    "kind": "recollation and correction of an inherited translation, not first translation"
+  },
+  "counts": {
+    "translator_body_notes": 15,
+    "body_note_ids": "V23-SET001–V23-SET015",
+    "preserved_english_editor_notes": 3,
+    "english_editor_original_numbers": [
+      68,
+      69,
+      70
+    ],
+    "audit_entries": 6,
+    "audit_ids": "V23-A01–V23-A06",
+    "paragraph_map_rows": 9,
+    "diagrams": 2
+  },
+  "paragraph_map": [
+    {
+      "id": "SET-P01",
+      "pages": "FR90 end–91 opening / EN59 bottom",
+      "content": "§15 heading, research plan, formal write-up from first sections; preserve 4/6"
+    },
+    {
+      "id": "SET-P02",
+      "pages": "FR91 middle / EN59 end",
+      "content": "Finite-presentation commutative diagram D; distinguish underlined objects"
+    },
+    {
+      "id": "SET-P03",
+      "pages": "FR91 bottom–92 top / EN60 top",
+      "content": "Parameter family, residue extensions and T-valued point; B_T corrected to P_T; English editor note 68"
+    },
+    {
+      "id": "SET-P04",
+      "pages": "FR92 upper / EN60 middle",
+      "content": "mathcal X=X times_P mathcal P; second diagram; dégager restored; editor note 69"
+    },
+    {
+      "id": "SET-P05",
+      "pages": "FR92 middle / EN60 middle–bottom",
+      "content": "Flat, smooth, geometrically irreducible fibers; ici et plus tard restored; editor note 70"
+    },
+    {
+      "id": "SET-P06",
+      "pages": "FR92 bottom / EN60 bottom",
+      "content": "Dimension of inverse image and low-image-dimension emptiness; finite-type and 0≤m≤N range made explicit"
+    },
+    {
+      "id": "SET-P07",
+      "pages": "FR92 end–93 top / EN60 end",
+      "content": "Primitive nonemptiness axiom, inequality correctly in French; deleted strengthening recorded literally without eta"
+    },
+    {
+      "id": "SET-P08",
+      "pages": "FR93 upper middle / EN61 opening",
+      "content": "Dominance and generic fiber dimension; surviving-component maximum formula"
+    },
+    {
+      "id": "SET-P09",
+      "pages": "FR93 middle / EN61 upper",
+      "content": "Corresponding results 2.1 through 2.11; added regularity condition for local-property transfer"
+    }
+  ],
+  "images_actually_viewed": [
+    {
+      "path": "evidence/en59.png",
+      "bytes": 160926,
+      "sha256": "cc435043a2ac4c01ad004e7b35098ee4742b745b1ad702103a438f7c4d966638",
+      "purpose": "source collation or finite-type-context check"
+    },
+    {
+      "path": "evidence/en60.png",
+      "bytes": 213247,
+      "sha256": "b94b410255fb64ddfa651eb581e2ce5328ec631ef1d034cb89a2408471ac4090",
+      "purpose": "source collation or finite-type-context check"
+    },
+    {
+      "path": "evidence/en61.png",
+      "bytes": 230614,
+      "sha256": "30f6631869ec5b37ffec6f949ca60d1d63a46e8520e843ffa71dd2b9f8780ae2",
+      "purpose": "source collation or finite-type-context check"
+    },
+    {
+      "path": "evidence/fr2_context.png",
+      "bytes": 146241,
+      "sha256": "ba4a4ae0390149a1d620d317b3fd7c3863c1962d39976fd7a38f94ecb5b4247d",
+      "purpose": "source collation or finite-type-context check"
+    },
+    {
+      "path": "evidence/fr3_context.png",
+      "bytes": 257997,
+      "sha256": "29cab66cddd0ce229b0d43bc2e31cc920db92724ddbd1545d6b4a07665cf4d47",
+      "purpose": "source collation or finite-type-context check"
+    },
+    {
+      "path": "evidence/fr4_context.png",
+      "bytes": 282150,
+      "sha256": "94b38985ced74c3e32ed3d81862b23fefaef04d6460e6626337a1371fc5fbe12",
+      "purpose": "source collation or finite-type-context check"
+    },
+    {
+      "path": "evidence/fr5_context.png",
+      "bytes": 293626,
+      "sha256": "b74f7826e56ab9d866a4c00512d3ff80e72ecf70c434f6773a88c899d84fa44b",
+      "purpose": "source collation or finite-type-context check"
+    },
+    {
+      "path": "evidence/fr90_full.png",
+      "bytes": 370116,
+      "sha256": "224f7a74eaf3be19530456977db31e1c526593cbc450dd27a5af283c7f78f963",
+      "purpose": "source collation or finite-type-context check"
+    },
+    {
+      "path": "evidence/fr91_full.png",
+      "bytes": 426611,
+      "sha256": "90cd80333a34c46b972b3cc5ba013a4bfd025ad886ce009c4b0696832d2a59fb",
+      "purpose": "source collation or finite-type-context check"
+    },
+    {
+      "path": "evidence/fr91_opening.png",
+      "bytes": 379416,
+      "sha256": "e0bbf8fc5233ebaa56dacb02e869af5bbbc00a39d0554bed51a6ac4faaa5bc41",
+      "purpose": "source collation or finite-type-context check"
+    },
+    {
+      "path": "evidence/fr92_deletion_expanded.png",
+      "bytes": 221583,
+      "sha256": "9da432e3ce0e6abcf3a5d0797b20fce3e974e702b698c7b18a795bf438178c1d",
+      "purpose": "source collation or finite-type-context check"
+    },
+    {
+      "path": "evidence/fr92_end.png",
+      "bytes": 219664,
+      "sha256": "6c21a22eb274fa7d2f1eeacbe10c759c99007d911463ffd11ee2555ded517e2e",
+      "purpose": "source collation or finite-type-context check"
+    },
+    {
+      "path": "evidence/fr92_full.png",
+      "bytes": 409964,
+      "sha256": "1a49d1b3ff6e58c8e70d3911faa6d9c55449c5720d7356e01eac3bd972880450",
+      "purpose": "source collation or finite-type-context check"
+    },
+    {
+      "path": "evidence/fr92_margin.png",
+      "bytes": 210251,
+      "sha256": "44b95ac096cc6e9bb7869a7fed1bef1d8b0c656d9924a9abebb9f1ccf59cffdc",
+      "purpose": "source collation or finite-type-context check"
+    },
+    {
+      "path": "evidence/fr92_top.png",
+      "bytes": 197802,
+      "sha256": "81cecd06ad365cb4f0de2b7cafaacbb9a194241a3e59ce9727e331610fc9bc92",
+      "purpose": "source collation or finite-type-context check"
+    },
+    {
+      "path": "evidence/fr93_begin.png",
+      "bytes": 314650,
+      "sha256": "29f81d6b79d9516fe40644aca9b85afe7eb1d3965d62c75e773429de45850bee",
+      "purpose": "source collation or finite-type-context check"
+    },
+    {
+      "path": "evidence/fr93_full.png",
+      "bytes": 452378,
+      "sha256": "cb9ac681cd4fcad62ab6d9ff52601976db3f9f1d97970de8c6c048d6695feb60",
+      "purpose": "source collation or finite-type-context check"
+    },
+    {
+      "path": "evidence/fr94_full.png",
+      "bytes": 393670,
+      "sha256": "a4f5bb8a5a92bbb1e6c2723b10e32833d56a44c9cea027d7d565e40c3aa90210",
+      "purpose": "independent latter-half cross-review"
+    }
+  ],
+  "image_note": "Full-page French copies are byte-identical copies of images displayed from v23_work/source. Crops and English images were separately displayed. fr92_deletion_expanded.png was inspected after an initial freeze and prompted a literal-record correction in SET012.",
+  "primary_mathematical_sources": [
+    {
+      "url": "https://stacks.math.columbia.edu/tag/037A",
+      "verified_use": "open maps with nonempty irreducible fibers and components"
+    },
+    {
+      "url": "https://stacks.math.columbia.edu/tag/01UA",
+      "verified_use": "flat and locally finitely presented implies universally open"
+    },
+    {
+      "url": "https://stacks.math.columbia.edu/tag/00P0",
+      "verified_use": "dimension and transcendence degree for finite-type domains over a field"
+    },
+    {
+      "url": "https://stacks.math.columbia.edu/tag/02FW",
+      "verified_use": "local dimension formula"
+    },
+    {
+      "url": "https://stacks.math.columbia.edu/tag/054K",
+      "verified_use": "Chevalley constructibility"
+    },
+    {
+      "url": "https://stacks.math.columbia.edu/tag/053X",
+      "verified_use": "a dense constructible subset contains a dense open"
+    },
+    {
+      "url": "https://stacks.math.columbia.edu/tag/07R6",
+      "verified_use": "definition of regular morphism and smooth morphisms being regular; localization argument explicitly proved in report, not misattributed to this section"
+    }
+  ],
+  "unresolved_or_limited": [
+    "French page 93 has three densely overtyped deleted lines which were not completely recovered.",
+    "French opening 4/6 and closing 3/6 references are both preserved; no silent correction or full reassessment of the historical references.",
+    "The statement of finite type on French page 5 is legible; the partly clipped final relative target P/S is not newly decided.",
+    "General local-property analogues 2.1–2.11 have not all been independently reproved; regularity obstruction, counterexample and sufficient condition are established.",
+    "Authorial claims of stability for all considered axioms under arbitrary base change are not silently promoted to a newly proved universal theorem.",
+    "This is source and module-preview evidence; final integrated PDF evidence must be separately recorded."
+  ]
+}

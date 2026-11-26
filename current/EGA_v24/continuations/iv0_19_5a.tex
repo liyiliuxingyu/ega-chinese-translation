@@ -1,0 +1,214 @@
+% 底本 EGAIV.1.pdf，PDF第89--93页，分册印刷第90--94页。
+\subsection{形式光滑性与相伴分次环}
+\source{第四卷第一部分，印刷第90--100页；上传PDF第89--99页}
+\egap{19.5.1}
+设 $C$ 为交换拓扑环，$V$ 为拓扑 $C$-模。考虑对称代数
+\[
+ \Salg_C(V)=\bigoplus_{n\geq0}\Salg_C^n(V).
+\]
+我们将典范地在它上面赋予一个与其 $C$-代数结构相容的线性拓扑。为此，取 $V$ 的开子模 $U$，以及它在 $\Salg_C(V)$ 中生成的分次理想 $U\Salg_C(V)$；令
+\[
+ \mathfrak a\Salg_C(V)+U\Salg_C(V)
+\]
+构成 $\Salg_C(V)$ 的零点基本邻域系，其中 $\mathfrak a$ 与 $U$ 分别遍历 $C$ 的开理想基本系和 $V$ 的开子模基本系。
+
+若 $V$ 的拓扑不比由 $C$ 的拓扑诱导的模拓扑更细，就可以只取满足 $\mathfrak aV\subset U$ 的偶对 $(\mathfrak a,U)$。此时
+\[
+ \mathfrak a\Salg_C(V)+U\Salg_C(V)
+   =\mathfrak a\,1_C+U\Salg_C(V).
+\]
+因此，对每个 $n\geq1$，在 $\Salg_C^n(V)$ 上的诱导拓扑以 $U\Salg_C^{n-1}(V)$ 为零点基本邻域，其中 $U$ 遍历 $V$ 的开子模。特别地，它在 $V=\Salg_C^1(V)$ 上诱导的拓扑就是原给定拓扑；在一般情形中，诱导拓扑可能比原拓扑更粗。
+
+在所有情形中，这样定义的拓扑代数 $\Salg_C(V)$，在拓扑 $C$-模与拓扑 $C$-代数的范畴之间，解决与不带拓扑时相同的泛问题。事实上，设 $E$ 为拓扑 $C$-代数，$u:V\to E$ 为 $C$-模同态，$\Salg(u)=v$ 为它在 $\Salg_C(V)$ 上的典范延拓。若 $u$ 连续，对 $E$ 的任意开理想 $\mathfrak b$，其逆像 $U=u^{-1}(\mathfrak b)$ 是 $V$ 的开子模，且
+\[
+ v\bigl(U\Salg_C(V)\bigr)\subset\mathfrak b.
+\]
+另一方面，存在 $C$ 的开理想 $\mathfrak a$，使 $\mathfrak aE\subset\mathfrak b$，从而
+$v(\mathfrak a\Salg_C(V))\subset\mathfrak b$。这就证明了 $v$ 连续。
+反之，若 $v$ 连续，对 $E$ 的任意开理想 $\mathfrak b$，存在 $V$ 的开子模 $U$，使
+$v(U\Salg_C(V))\subset\mathfrak b$；特别有 $v(U\cdot1_C)\subset\mathfrak b$，即 $u(U)\subset\mathfrak b$，故 $u$ 连续。
+
+还应记住，对 $n\geq1$，有典范的 $C$-模同构
+\begin{equation}
+ \Salg_C^n(V)\big/\bigl(U\Salg_C^{n-1}(V)\bigr)
+       \simeq\Salg_C^n(V/U).
+ \tag{19.5.1.1}
+\end{equation}
+在上述 $\mathfrak aV\subset U$ 的情形中，两端带相应商拓扑时都是离散拓扑模。\cmt{G7-H01}{原文不加限制地在此称两端为“离散”拓扑模。代数同构总成立，但按本段刚定义的拓扑，离散性并非自动；存在开理想 $\mathfrak a$ 满足 $\mathfrak aV\subset U$ 足以保证它，前面所讨论的模拓扑条件正提供这一点。本版将该条件写入正文。一般反例见核查报告G7-H01；后文用于 $V=\mathfrak j/\mathfrak j^2$ 的情形满足此条件。}
+
+\egap{19.5.2}
+设 $A$ 为拓扑环，$B$ 为交换拓扑 $A$-代数，$\mathfrak j$ 为 $B$ 的理想，不要求开或闭。在以下各段中，$\mathfrak j$ 及其幂 $\mathfrak j^n$（$n\geq2$）均取 $B$ 的诱导拓扑，而
+\[
+ C=B/\mathfrak j,\qquad
+ \mathfrak j^n/\mathfrak j^{n+1}=\gr_{\mathfrak j}^n(B)
+\]
+取商拓扑。于是各 $\mathfrak j^n/\mathfrak j^{n+1}$ 都是拓扑 $C$-模。典范包含
+$\mathfrak j/\mathfrak j^2\to\gr_{\mathfrak j}^{\bullet}(B)$ 延拓为一个先不计拓扑的 $C$-代数同态
+\[
+ \varphi:\Salg_C(\mathfrak j/\mathfrak j^2)
+        \longrightarrow\gr_{\mathfrak j}^{\bullet}(B),
+\]
+并在每个次数 $n$ 给出满 $C$-模同态
+\begin{equation}
+ \varphi_n:\Salg_C^n(\mathfrak j/\mathfrak j^2)
+         \longrightarrow\gr_{\mathfrak j}^n(B).
+ \tag{19.5.2.1}
+\end{equation}
+给对称代数赋予（19.5.1）中的拓扑后，各 $\varphi_n$ 连续。这可以将该段的泛性质应用于拓扑 $A$-代数
+\[
+ E=\gr_{\mathfrak j}^{\bullet}(B/\mathfrak j^{n+1}),
+\]
+其中有限个分次部分 $\mathfrak j^h/\mathfrak j^{h+1}$ 配备乘积拓扑，再应用于典范包含 $\mathfrak j/\mathfrak j^2\to E$ 而得到。这里 $\mathfrak j/\mathfrak j^2$ 的拓扑不比由 $C$ 诱导的模拓扑更细；后者也就是由 $B$ 诱导的模拓扑。
+
+\egas{19.5.3}{定理}
+设 $A$ 为拓扑环，$B$ 为拓扑 $A$-代数，$\mathfrak j$ 为 $B$ 的理想，$C=B/\mathfrak j$ 为商拓扑 $A$-代数。假设 $C$ 为形式光滑 $A$-代数。则：
+
+（i）若 $B$ 为形式光滑 $A$-代数，则 $\mathfrak j/\mathfrak j^2$ 是形式投射的拓扑 $C$-模（19.2.1）。
+
+（ii）若 $B$ 为形式光滑 $A$-代数，且为预可容许环（$0_{\mathrm I}$，7.1.2），则（19.5.2）中的各 $\varphi_n$ 是形式双态射（19.1.2）。
+
+（iii）反之，若 $B$ 预可容许，$\mathfrak j^n\to0$，$\mathfrak j/\mathfrak j^2$ 为形式投射 $C$-模，且各 $\varphi_n$ 为形式双态射，则 $B$ 为形式光滑 $A$-代数。
+
+此定理的证明较长，并牵涉许多技术细节。因此，我们先证明一个更简单的推论，使主要思想显现出来；这个推论也是以后最常使用的（19.5.3）的特殊情形。
+
+\egas{19.5.4}{推论}
+设 $A$ 为拓扑环，$B$ 为拓扑 $A$-代数，$\mathfrak j$ 为 $B$ 的理想，且 $B$ 的拓扑就是 $\mathfrak j$-预进制拓扑。假设离散 $A$-代数 $C=B/\mathfrak j$ 形式光滑。则以下三条件等价：
+
+$a)$ $B$ 为形式光滑 $A$-代数；
+
+$b)$ $\mathfrak j/\mathfrak j^2$ 是投射 $C$-模，且典范同态
+\[
+ \varphi:\Salg_C(\mathfrak j/\mathfrak j^2)
+           \longrightarrow\gr_{\mathfrak j}^{\bullet}(B)
+\]
+为双射；
+
+$c)$ $B$ 的分离完备化 $\widehat B$，作为拓扑 $A$-代数，同构于某个 $\widehat{B'}$。这里 $B'=\Salg_C(V)$，$V$ 为投射 $C$-模，而 $B'$ 取由其增广理想 $B'^+$ 定义的预进制拓扑。
+
+\egap{19.5.4.1}
+先证明 $a)$ 蕴含 $\mathfrak j/\mathfrak j^2$ 是投射 $C$-模。设 $P,Q$ 为 $C$-模，$u:P\to Q$ 为满 $C$-同态，$v:\mathfrak j/\mathfrak j^2\to Q$ 为 $C$-同态。将 $B/\mathfrak j^2$ 看作 $C$ 以 $\mathfrak j/\mathfrak j^2$ 为核的 $B$-扩张，由 $v$ 得到 $C$ 以 $Q$ 为核的 $B$-扩张
+\[
+ E=(B/\mathfrak j^2)\boxplus_{\mathfrak j/\mathfrak j^2}Q
+\]
+（18.2.8）。因 $C$ 是形式光滑的离散 $A$-代数，$E$ 为 $A$-平凡扩张（19.4.4），因而可识别为 $D_C(Q)$（18.2.3）。由 $u$ 典范得到满 $A$-同态
+$\theta:D_C(P)\to D_C(Q)$（18.2.9），其核 $\mathfrak a$ 包含于 $P$，故平方为零。令 $E'=D_C(P)$，并令 $f:B\to E=E'/\mathfrak a$ 为定义 $E$ 的 $B$-代数结构的同态。$f$ 连续；由 $B$ 形式光滑，它分解为
+\[
+ B\xrightarrow{g}E'\xrightarrow{\theta}E,
+\]
+其中 $g$ 是连续 $A$-同态。若 $v':B/\mathfrak j^2\to E$ 是由 $v$ 得到的同态，则
+\[
+\begin{tikzcd}
+ E'\arrow[r,"\theta"]&E\\
+ B\arrow[u,"g"]\arrow[r]&B/\mathfrak j^2\arrow[u,"v'"']
+\end{tikzcd}
+\]
+交换。因 $(\theta g)(\mathfrak j)\subset Q$，有 $g(\mathfrak j)\subset P+\mathfrak a=P$，故 $g(\mathfrak j^2)=0$。限制到 $\mathfrak j$，得到交换图
+\[
+\begin{tikzcd}
+ P\arrow[r,"u"]&Q\\
+ &\mathfrak j/\mathfrak j^2\arrow[ul,"w"]\arrow[u,"v"']
+\end{tikzcd}
+\]
+这证明了 $\mathfrak j/\mathfrak j^2$ 的投射性。
+
+\egap{19.5.4.2}
+再证明 $a)$ 蕴含 $\varphi$ 双射，从而证明 $a)\Rightarrow b)$。令
+\[
+ E_n=B/\mathfrak j^{n+1},\qquad
+ F_n=\Salg_C(\mathfrak j/\mathfrak j^2)/(\Salg_C^+(\mathfrak j/\mathfrak j^2))^{n+1}.
+\]
+$\mathfrak j/\mathfrak j^{n+1}$ 是 $E_n$ 的幂零理想，而离散 $A$-代数 $C$ 形式光滑，因此 $C$ 的恒等同态分解为
+\[
+ C\xrightarrow{f}E_n\longrightarrow C=E_n/(\mathfrak j/\mathfrak j^{n+1}),
+\]
+其中 $f$ 为 $A$-同态。再由（19.5.4.1），$\mathfrak j/\mathfrak j^2$ 的恒等映射可分解为
+\[
+ \mathfrak j/\mathfrak j^2\xrightarrow{g}\mathfrak j/\mathfrak j^{n+1}
+          \longrightarrow\mathfrak j/\mathfrak j^2,
+\]
+其中 $g$ 为 $C$-线性映射。$f,g$ 典范地给出 $C$-代数同态
+$\Salg_C(\mathfrak j/\mathfrak j^2)\to E_n$，它将增广理想的 $(n+1)$ 次幂送到零，故诱导满 $A$-代数同态
+\[
+ v:F_n\longrightarrow E_n.
+\]
+这里 $\gr^0(v),\gr^1(v)$ 分别为 $C$、$\mathfrak j/\mathfrak j^2$ 的恒等同态，且由 $\varphi$ 的定义，对 $j\leq n$ 有 $\gr^j(v)=\varphi_j$。
+
+$\mathfrak N=\Ker v$ 是 $F_n$ 的幂零理想，故 $E_n=F_n/\mathfrak N$。由 $B$ 形式光滑，连续典范同态 $p_n:B\to E_n$ 分解为
+\[
+ B\xrightarrow{w}F_n\xrightarrow{v}E_n,
+\]
+$w$ 连续。由于 $\gr^0(v)$ 为恒等映射，$w(\mathfrak j)\subset F_n^+$，所以 $w(\mathfrak j^{n+1})=0$。于是 $w=w' p_n$，其中 $w':E_n\to F_n$，且 $vw'=1_{E_n}$。$\gr^0(w'),\gr^1(w')$ 也为恒等映射。
+因 $\gr^\bullet(F_n)$ 作为 $C$-代数由一次部分生成，复合
+\[
+ \gr^j(F_n)\xrightarrow{\gr^j(v)}\gr^j(E_n)
+       \xrightarrow{\gr^j(w')}\gr^j(F_n)
+\]
+对每个 $j\leq n$ 都为恒等映射：它在零次、一次上为恒等映射，而乘法决定其余次数。\cmt{G7-T01}{原文在这一步写“$\gr^\bullet(E_n)$ 由一次部分生成”，而所要判断的是 $\gr^\bullet(F_n)$ 上的复合自同态。正文将对象改为 $F_n$。两种分次代数确实都由一次部分生成，但此处的源、靶必须与复合一致。}
+取 $j=n$ 得 $\varphi_n$ 单射；它本已满射，因此 $a)\Rightarrow b)$ 得证。
+
+\egap{19.5.4.3}
+接着证明 $b)\Rightarrow a)$。如（19.5.4.2）开头所构造的满 $A$-同态 $v:F_n\to E_n$ 满足 $\gr^j(v)=\varphi_j$。由 $b)$，这些同态均双射；两个滤过都有限，所以 $v$ 双射（Bourbaki，\textit{交换代数}，第三章，§2，第8目，定理1的推论3）。
+
+设 $G$ 为离散拓扑 $A$-代数，$\mathfrak N^2=0$，且 $f:B\to G/\mathfrak N$ 为连续 $A$-同态。存在 $m\geq1$ 使 $f(\mathfrak j^m)=0$；取 $n=2m$，则 $f$ 分解为 $B\to E_n\xrightarrow{f_n}G/\mathfrak N$。复合
+\[
+ r:C\longrightarrow F_n\xrightarrow{v}E_n\xrightarrow{f_n}G/\mathfrak N
+\]
+是连续 $A$-同态。由 $C$ 形式光滑，$r$ 可提升为 $r':C\to G$，使 $G$ 成为 $C$-代数。
+将 $f_n v$ 限制到 $\mathfrak j/\mathfrak j^2$ 得 $C$-线性映射 $g:\mathfrak j/\mathfrak j^2\to G/\mathfrak N$；由投射性，它提升为 $C$-线性 $h:\mathfrak j/\mathfrak j^2\to G$。延拓后得 $C$-代数同态
+\[
+ w:\Salg_C(\mathfrak j/\mathfrak j^2)\to G.
+\]
+由构造，每个 $m$ 次齐次元素在 $w$ 下的像属于 $\mathfrak N$，所以每个 $2m$ 次齐次元素的像为零。因而 $w$ 通过 $F_n$ 分解为 $w':F_n\to G$。复合 $F_n\xrightarrow{w'}G\to G/\mathfrak N$ 与 $f_n v$ 在 $C$ 及 $\mathfrak j/\mathfrak j^2$ 上相同，故相等。于是
+\[
+ B\longrightarrow E_n\xrightarrow{v^{-1}}F_n\xrightarrow{w'}G\longrightarrow G/\mathfrak N
+\]
+等于 $f$；中间的提升连续，因为它通过离散商 $E_n$。由（19.4.3），$B$ 形式光滑。
+
+\egap{19.5.4.4}
+最后证明 $a)$ 与 $c)$ 等价。先设 $c)$ 成立。$B'=\Salg_C(V)$ 在离散拓扑下是形式光滑 $C$-代数（19.3.2），故在 $B'^+$-预进制拓扑下也形式光滑（19.3.8）。$C$ 作为 $A$-代数形式光滑，故 $B'$ 作为 $A$-代数形式光滑（19.3.5，ii）；再由（19.3.6），$\widehat{B'}$、从而 $\widehat B$ 和 $B$ 均形式光滑。
+
+反之，设 $a)$ 成立。由 $C$ 形式光滑，（19.3.10）给出分解
+\[
+ C\longrightarrow\widehat B\longrightarrow B/\mathfrak j=C
+\]
+为恒等同态，其中第一箭头为 $A$-同态。\cmt{G7-H02}{此处按原版页面保留 $\widehat B$ 上的帽号；不是断言 $C\to B/\mathfrak j$ 可直接提升到尚未完备的 $B$。解析文本多次漏识该帽号，已与原图核对，不列为原作者错误。}
+因此 $\widehat B$ 以及所有 $B/\mathfrak j^{n+1}$ 都有相容的 $C$-代数结构。
+因 $\mathfrak j/\mathfrak j^2$ 投射，可以从其到 $B/\mathfrak j^2$ 的典范包含出发，逐次选取相容的 $C$-同态
+\[
+ u_n:\mathfrak j/\mathfrak j^2\longrightarrow B/\mathfrak j^{n+1}
+ \qquad(n\geq1),
+\]
+并使像落在 $\mathfrak j/\mathfrak j^{n+1}$ 中。由对称代数的泛性质，得到相容的 $C$-代数同态
+\[
+ v_n:B'=\Salg_C(\mathfrak j/\mathfrak j^2)\longrightarrow B/\mathfrak j^{n+1}.
+\]
+$v_n$ 在 $(B'^+)^{n+1}$ 上为零，且 $\gr^j(v_n)=\varphi_j$（$0\leq j\leq n$）。由 $b)$ 和有限滤过判据，诱导同态
+\[
+ B'/(B'^+)^{n+1}\longrightarrow B/\mathfrak j^{n+1}
+\]
+对每个 $n$ 都是同构。取射影极限，便得到 $c)$。
+
+\egas{19.5.5}{注}
+在（19.5.4）的一般假设下，进一步假设 $\mathfrak j$ 是 $B$ 的极大理想，因而 $C=B/\mathfrak j$ 是域，并假设 $\mathfrak j/\mathfrak j^2$ 为有限维 $C$-向量空间。则该推论的三个条件还等价于：
+
+$d)$ 对每个多项式代数 $E=C[T_1,\ldots,T_n]$，令 $\mathfrak n=(T_1,\ldots,T_n)$；对每个包含某个 $\mathfrak n^k$ 的理想 $\mathfrak b$，每个保持 $C$-增广的 $A$-代数同态 $v:B\to E/\mathfrak b$ 均分解为
+\[
+ B\xrightarrow{w}E/\mathfrak n^k\longrightarrow E/\mathfrak b,
+\]
+其中 $w$ 为 $A$-同态。这里 $E/\mathfrak b$ 的 $C$-增广要求 $\mathfrak b\subseteq\mathfrak n$。\cmt{G7-H03}{“$C$-增广代数”本身要求增广能通过商环；这里将其包含条件写明。由保持增广及 $\mathfrak n^k\subset\mathfrak b$ 可得 $v(\mathfrak j^k)=0$，因此所用同态对预进制拓扑连续；这不是省略连续性后任意环同态的提升断言。}
+
+必要性来自形式光滑性；商同态 $E/\mathfrak n^k\to E/\mathfrak b$ 的核幂零。为证充分性，由 $\mathfrak j/\mathfrak j^2$ 是自由 $C$-模，只须证明典范 $\varphi$ 双射。此时
+\[
+ \Salg_C(\mathfrak j/\mathfrak j^2)\simeq C[T_1,\ldots,T_n],
+ \qquad n=\rk_C(\mathfrak j/\mathfrak j^2).
+\]
+对每个 $k\geq0$，如（19.5.4.2），$C$ 形式光滑给出满 $A$-同态
+\[
+ f:E/\mathfrak n^{k+1}\longrightarrow B/\mathfrak j^{k+1},
+ \qquad \gr^j(f)=\varphi_j\quad(j\leq k).
+\]
+若 $\mathfrak b/\mathfrak n^{k+1}=\Ker f$，则 $B/\mathfrak j^{k+1}\simeq E/\mathfrak b$；由 $d)$，典范同态 $B\to B/\mathfrak j^{k+1}$ 分解为
+\[
+ B\xrightarrow{w}E/\mathfrak n^{k+1}\xrightarrow{f}B/\mathfrak j^{k+1}.
+\]
+因 $\gr^0(f)$ 为恒等映射，$w(\mathfrak j)\subset\mathfrak n/\mathfrak n^{k+1}$，故 $w(\mathfrak j^{k+1})=0$。如（19.5.4.2），得到 $\varphi_k$ 对每个 $k$ 都单射，从而得到断言。

@@ -1,0 +1,65 @@
+% V18 integration from immutable Dot batch 106: EGA第五卷_对偶超曲面的泛双有理性.tex
+\begingroup
+\def\PP{\mathbb P}\def\OO{\mathcal O}\def\Ocal{\mathcal O}
+\def\F{\mathcal F}\def\G{\mathcal G}\def\N{\mathcal N}
+\def\PD{\check P}\def\Pdual{\check P}
+\def\Ys{Y^{\mathrm{sing}}}\def\Ysing{Y^{\mathrm{sing}}}
+\def\Ds{Y^{\mathrm{sup\,sing}}}\def\Ysup{Y^{\mathrm{sup\,sing}}}
+\def\cod{\operatorname{codim}}\def\Sing{\operatorname{Sing}}
+\def\depth{\operatorname{depth}}\def\coprof{\operatorname{coprof}}
+\def\Ass{\operatorname{Ass}}\def\Supp{\operatorname{Supp}}
+\def\Gr{\operatorname{Gr}}\def\Spec{\operatorname{Spec}}\def\Proj{\operatorname{Proj}}
+\source{Dot第106批；法文底本物理第41--43页，英编稿物理第28--30页}
+\egas{8.8}{命题（明示译校工作假设）}
+在 $S=\Spec k$ 的情形，设 $P=\mathbb P^r_k$，$X$ 光滑且几何整、以局部闭浸入 $f$ 置于 $P$，正余维。\transnote{法文物理第40页止于8.7(c)的切映射引出语，第41页从“像的闭包”起，8.8的标题和设定起首未完整保存；英编稿第28页将这两处误接。本段的“几何整、局部闭浸入、正余维”是第106批为使陈述及证明有明确适用范围而补入的工作假设，不声称恢复了遗失的法文原句。后证由 $f(x)$ 恢复 $x$ 用到浸入；仅无分歧时，旧稿所列二次平展覆盖反例使泛平展推出双有理失败，完整反例保存在本版报告的旧注档案中。}记 $Z=\Ys=\mathbb P_X(\mathcal N_{X/P})$，$D=\Ds\subset Z$。令 $T$ 为 $Z$ 在 $\PD$ 中像的闭包，赋予诱导的约化结构。考虑所诱导的整概形间的支配态射
+\[
+ g:Z\longrightarrow T,\qquad K=k(T)\ \,\subset\,\ L=k(Z).
+\]
+以下条件等价：
+\begin{enumerate}
+\renewcommand{\labelenumi}{\textnormal{(\roman{enumi})}}
+\item $g$ 泛 étale，即至少在一点为 étale；等价地，在 $Z$ 的泛点无分歧。\transnote{法41把若干处的“无分歧”手改为 étale。此处两个泛点的局部环都是域，故泛点处平坦；等价不是说任一点处无分歧就 étale。}
+\item[(i bis)] $L/K$ 是有限可分扩张。
+\item[(i ter)] $g$ 为双有理态射，即 $L/K$ 是平凡扩张。
+\item[(ii)] $Z$ 与 $D$ 的底集不同。
+\item[(ii bis)] 存在 $x\in X(\bar k)$，以及在 $x$ 处与 $X_{\bar k}$ 相切但不密切的超平面 $H$；准确地说，$x$ 不是由 $H$ 定义的 $\mathcal O_{X_{\bar k}}(1)$ 截面的超奇异点。\transnote{法41的底域上划线在英28转写中丢失。几何点的存在不要求原底域上有理；这里的“不密切”只表示原稿给出的二次型判据。}
+\end{enumerate}
+这些条件还推出：$D$ 为空，或 $\dim D=r-2$；因而 $D$ 在 $\PD$ 中的像闭包余维至少为二；同时有
+\[
+ \text{(iii)}\qquad \dim T=r-1,
+\]
+即 $T$ 在 $\PD$ 中余维为一。\transnote{法41在 $r-2$ 附近有覆写，法43回顾中可见“空或等号”的修正；英28、29前后读法不一。正文依行列式截面及法43的回顾取“空或等号”，不把维数等式用于空集。}
+
+
+\subsection*{证明及推论的引出}
+(i) 与 (i bis) 等价；由8.7(b)，(i) 又与 (ii) 等价；而 (ii) 与 (ii bis) 的等价来自超奇异点的定义。(i ter) 推出 (i)。剩下要证明的是 (i) 推出 (i ter)。原稿在代数闭域上论证：在 (i) 下，只需找 $T$ 的一个非空开集，使其中每个几何闭点 $\xi$ 上恰有 $Z$ 的一个点。由8.7(c)将得到下述更强的结论。\transnote{这是原稿的回指；8.7(c)的后半原句仍缺。证明在此需要的对偶切空间事实，由核查报告“D18-105”另列完整译校补证。泛点微分判据及几何底扩的详细核算收入“D18-106”；均不冒称作者遗失的文字。}
+
+\egas{8.9}{推论}
+设8.8的条件 (i) 成立，令 $U\subset T$ 为 $T/k$ 的光滑点开集。则 $U\ne\varnothing$，并且
+\[
+ g_U: g^{-1}(U)\longrightarrow U
+\]
+是开浸入。特别地，$g^{-1}(U)$ 不含超奇异点。如果 $X/k$ 适当，那么 $g$ 满射，$g_U$ 是同构，且 $U$ 是 $T$ 上具有这一性质的最大开集。\transnote{法42的句序明确：$X/k$ 适当先推出 $g$ 满射，再由开浸入推出同构。英29该句重复并夹入适当性的误接，正文按法42与法43修复。}
+
+\paragraph{证明第一步：在稠密开上降到度一。}
+由于 $g$ 支配且泛 étale，可以选非空开 $V\subset T$，使 $g^{-1}(V)\to V$ 有限 étale 且满射。\transnote{“有限”是译校补足：泛纤维是有限可分域的谱，且 $g$ 拟紧、拟分离，故可按 \href{https://stacks.math.columbia.edu/tag/02NW}{Stacks 02NW} 缩小靶到有限处。有限态射为闭映射，删去非 étale 点之像，仍含靶泛点；有限支配保证满射。} $g^{-1}(V)$ 光滑，沿此 étale 满射下降得 $V/k$ 光滑，所以 $V\subset U$。
+
+
+对任一几何点 $\xi$ 属于 $V$ 及其上任一点 $y$，8.7(c)中切映射的射影像 $H'$，正是 $T$ 在 $\xi$ 处的嵌入射影切超平面。事实上，$g$ 在 $y$ 处 étale，故其切映射是同构，再复合 $T\hookrightarrow\PD$ 就给出该像。由8.7(c)所回指的切空间事实（本版的独立补证见核查报告），$x=\operatorname{pr}_X(y)$ 在 $P$ 中的像 $f(x)$，正是与 $H'$ 正交的唯一点。因为 $f$ 是浸入，$x$ 唯一；又因为 $Z\subset X\times_k\PD$，在给定 $x,\xi$ 后 $y$ 唯一。这样，每个有限 étale 几何纤维恰有一个点。其点数就是秩，故 $[L:K]=1$，从而 $g$ 双有理，且 $g^{-1}(V)\to V$ 是同构。这同时完成8.8所余的蕴涵。
+
+\paragraph{证明第二步：由切超平面得到整个光滑开集上的图。}
+记 $\psi:U\to P$ 为把 $\xi$ 送到其嵌入射影切超平面的正交点的态射。在 $V$ 上它等于
+$V\simeq g^{-1}(V)\xrightarrow{\operatorname{pr}_X}X\xrightarrow{f}P$。
+令
+\[
+ h=(\psi,\operatorname{id}):U\longrightarrow P\times_k T,
+ \qquad g_U=g|_{g^{-1}(U)}.
+\]
+复合 $h\circ g_U$ 等于 $g^{-1}(U)$ 的自然浸入，因为二者在 $g^{-1}(V)$ 上相等。于是 $h$ 经由 $Z$ 在 $P\times_k T$ 中的概形闭包 $\overline Z$ 分解。$Z$ 是 $\overline Z$ 的开子概形，故 $U'=h^{-1}(Z)$ 是 $U$ 的开集。由 $h\circ g_U$ 是自然浸入，以及 $\operatorname{pr}_T\circ h=\operatorname{id}$，可知 $g_U$ 诱导 $g^{-1}(U)\simeq U'$，其逆为 $h|_{U'}$ 到 $Z$ 的分解。于是 $g_U$ 为开浸入。\transnote{法43将 $g^{-1}(U)\simeq U'$、适当情形与最大性接为三步，英29中此处跳接至最大性的条件句。本译保留法稿三步。符号 $Y^1$ 和其概形闭包在此分别写作 $Z$ 和 $\overline Z$。}\textsuperscript{,}\ednote{请询问 A.G.。〔英编稿脚注41，原图态射及闭包段的疑读标记。〕}\textsuperscript{,}\transnote{从点的描述落实为态射及闭子概形分解的译校补证完整保存于核查报告“D18-106”项，属译校文字，不是原文。}
+
+\paragraph{证明第三步：适当性和最大性。}
+若 $X/k$ 适当，则其在 $P$ 中为闭子概形，$Z$ 为 $X\times_k\PD$ 的闭子概形，因此 $Z\to\PD$ 适当；它经闭子概形 $T$ 分解，$g$ 也适当。其像既闭又稠密，故满射。此时 $U'=U$，$g_U$ 是同构。若开集 $W\subset T$ 使 $g^{-1}(W)\to W$ 为同构，则 $W$ 与光滑概形 $Z$ 的开子概形同构，从而 $W/k$ 光滑，$W\subset U$。
+
+\subsection*{8.8 末尾维数结论的证明}
+$Z$ 整且维数 $r-1$；$D$ 是刻画二次型退化的行列式截面的零概形。若 (ii) 成立，行列式不是零截面；它或者处处可逆，或者给出有效 Cartier 除子，其每个不可约分支的余维为一，因此非空时 $\dim D=r-2$。其像闭包维数不会增加。\ednote{请询问 A.G.。〔英编稿脚注42，原稿此处的截面与零集记号。〕}又因 $L/K$ 有限，$\operatorname{trdeg}_k L=\operatorname{trdeg}_k K$，故 $\dim T=\dim Z=r-1$。
+\par\endgroup

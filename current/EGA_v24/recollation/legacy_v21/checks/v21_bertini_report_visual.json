@@ -1,0 +1,157 @@
+{
+  "schema_version": 1,
+  "edition": 21,
+  "reviewer": "v21_bertini",
+  "review_method": "actual_image_view",
+  "document": "report",
+  "pdf": {
+    "path": "report.pdf",
+    "sha256": "f88d2cd3059fd75f7a86f9348ac272c2d975e68998e9ca714d3cfac56e8773f3",
+    "physical_page_count": 473
+  },
+  "rendering": {
+    "renderer": "PyMuPDF",
+    "scale": 1.65,
+    "colorspace": "RGB",
+    "alpha": false
+  },
+  "pages": [
+    {
+      "physical_page": 37,
+      "printed_page": "17",
+      "image": "checks/rendered_v21/report_0037.png",
+      "image_sha256": "4081607ee8032000a5a93e0aa8ae532a6c8bb930175b01d0ed94a7fe5178a0ec",
+      "image_dimensions_px": [
+        983,
+        1390
+      ],
+      "actually_viewed": true,
+      "verdict": "pass",
+      "notes": "物理37页、印刷17页：B段章标题按默认版心分成两行，字形完整；底本位置、BER-E01标题和源页归属段排版清楚。法文斜体、希腊字母、下划线与上标正常，页末段落自然续页，没有裁切或覆盖。",
+      "pixels_reverified_against_bound_pdf": true
+    },
+    {
+      "physical_page": 38,
+      "printed_page": "18",
+      "image": "checks/rendered_v21/report_0038.png",
+      "image_sha256": "c7c8291a3227f762bfa964acb98c105800b488025275ee8c4af83b1d5beeb95a",
+      "image_dimensions_px": [
+        983,
+        1390
+      ],
+      "actually_viewed": true,
+      "verdict": "pass",
+      "notes": "物理38页、印刷18页：承接上一页末句；BER-E02、E03的标题、判定及说明层次清楚。ν_d映射、N的二项式和W的定义式完整，固定点假设与维数说明在版心内；补证引入及末尾公式正常跨页衔接。",
+      "pixels_reverified_against_bound_pdf": true
+    },
+    {
+      "physical_page": 39,
+      "printed_page": "19",
+      "image": "checks/rendered_v21/report_0039.png",
+      "image_sha256": "fdcb81e0069d131d5dfbc77b6183167634852ee63895cfc58bace16ec9982657",
+      "image_dimensions_px": [
+        983,
+        1390
+      ],
+      "actually_viewed": true,
+      "verdict": "pass",
+      "notes": "物理39页、印刷19页：jet补证第一至第三步完整可读。ℓh^(d−2)q、余切满射、同时消失条件、n+1余维和M−1维数界等显示式间距正常；上下标、双箭头及矩阵大小符号未见缺失或错位。",
+      "pixels_reverified_against_bound_pdf": true
+    },
+    {
+      "physical_page": 40,
+      "printed_page": "20",
+      "image": "checks/rendered_v21/report_0040.png",
+      "image_sha256": "b992e3c78b359d2970a8788e5a923cb2f5b391e3da45e6920a2a8002d44a6f9e",
+      "image_dimensions_px": [
+        983,
+        1390
+      ],
+      "actually_viewed": true,
+      "verdict": "pass",
+      "notes": "物理40页、印刷20页：有限基点与低维分量段、k上X_n分层、GL_m标架下降和F→Gr(m,W)完整。Stacks网址及随后限制说明均在版心内；未见正文或公式重叠、缺字或越界。",
+      "pixels_reverified_against_bound_pdf": true
+    },
+    {
+      "physical_page": 41,
+      "printed_page": "21",
+      "image": "checks/rendered_v21/report_0041.png",
+      "image_sha256": "3420762af37abd24d65a54bcc09a7840bb112352a8cdead8738c049c40572a2c",
+      "image_dimensions_px": [
+        983,
+        1390
+      ],
+      "actually_viewed": true,
+      "verdict": "pass",
+      "notes": "物理41页、印刷21页：二次曲面例及Veronese反例标题分层清楚；X、C、平面束及v²(au+bv)显示式完整。二项式符号、P¹/P³上下标及局部环表达可辨，证明末句自然继续至下一页。",
+      "pixels_reverified_against_bound_pdf": true
+    },
+    {
+      "physical_page": 42,
+      "printed_page": "22",
+      "image": "checks/rendered_v21/report_0042.png",
+      "image_sha256": "55370ccb26c73139fd5e144f8e397ed9df13cfdea5218e904458835d9626f8e2",
+      "image_dimensions_px": [
+        983,
+        1390
+      ],
+      "actually_viewed": true,
+      "verdict": "pass",
+      "notes": "物理42页、印刷22页：反例结尾与C相交的范围限制完整；BER-E06标题清楚。两列历史注映射表各行无压栏、断字丢失或越界，横线完整；未决事项段在页末继续至下一页。",
+      "pixels_reverified_against_bound_pdf": true
+    },
+    {
+      "physical_page": 43,
+      "printed_page": "23",
+      "image": "checks/rendered_v21/report_0043.png",
+      "image_sha256": "06033f7f0a8935a767de04ae4813580f123509ad387fae468a8d1e67b465dd50",
+      "image_dimensions_px": [
+        983,
+        1390
+      ],
+      "actually_viewed": true,
+      "verdict": "pass",
+      "notes": "物理43页、印刷23页：仅有上页未决事项段的两行结尾，内容完整、无裁切，其余为章末留白。页眉及页码正常；没有把这一留白误记成缺文。",
+      "pixels_reverified_against_bound_pdf": true
+    },
+    {
+      "physical_page": 44,
+      "printed_page": "24",
+      "image": "checks/rendered_v21/report_0044.png",
+      "image_sha256": "775f89370f8d1b43d54740428110497ddafb253dde570351829f2ad5dca22187",
+      "image_dimensions_px": [
+        983,
+        1390
+      ],
+      "actually_viewed": true,
+      "verdict": "pass",
+      "notes": "物理44页、印刷24页：实际查看为只有页眉页码的留白页，与ctexbook双面奇数页起章及下一章开始位置一致。没有正文、表格或公式被截断的迹象；此处留白为默认章节分页，而非漏看或缺页。",
+      "pixels_reverified_against_bound_pdf": true
+    }
+  ],
+  "binding_check": {
+    "sha256_verified_before_image_views": true,
+    "sha256_when_writing_record": "032d3d55eb2f707ceb9d0a5b2b387654c380226dfd58f5c4edec85eeb9329964",
+    "sha256_after_pixel_check": "032d3d55eb2f707ceb9d0a5b2b387654c380226dfd58f5c4edec85eeb9329964",
+    "bound_pdf_unchanged_during_pixel_check": true
+  },
+  "limitations": [
+    "Only the explicitly listed full-page PNGs were actually viewed.",
+    "The parent subsequently announced local nonbreaking-footnote fixes in the initial module; these records preserve the PDF binding actually viewed. Any rebinding must verify unchanged page pixels, and any changed page must be viewed again.",
+    "No claim of whole-book or whole-report human page-by-page review.",
+    "Visual inspection is separate from the mathematical-review record."
+  ],
+  "final_pdf_pixel_revalidation_after_book_only_layout_changes": {
+    "pass": true,
+    "unchanged_pages": [
+      37,
+      38,
+      39,
+      40,
+      41,
+      42,
+      43,
+      44
+    ]
+  }
+}

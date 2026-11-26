@@ -1,0 +1,113 @@
+{
+  "schema_version": 1,
+  "edition": 24,
+  "reviewer": "/root/v24_early",
+  "review_method": "actual_image_view",
+  "document": "main",
+  "pdf": {
+    "path": "main.pdf",
+    "sha256": "1a7af9a8ce697e4361a77c21b249a8c2e2042876e190c97f39aa66a1ccd2b993"
+  },
+  "rendering": {
+    "renderer": "PyMuPDF",
+    "scale": 1.5,
+    "colorspace": "RGB",
+    "alpha": false
+  },
+  "date": "2026-11-26",
+  "scope": "Final integrated edition 24; only the explicitly listed newly revised early-section pages. This record is separate from standalone preview review.",
+  "pages": [
+    {
+      "physical_page": 947,
+      "printed_page": 927,
+      "image": "checks/visual_v24_early/body_0947.png",
+      "workspace_image": "/workspace/scratch/a886fd56dd2f/v24_work/early/final_qa/images/body_0947.png",
+      "image_sha256": "d1325401e3cf92628d26951cb14585c04ab219fa54cf802039991b1d3b613e17",
+      "verdict": "pass",
+      "notes": "篇标题、载体说明、原编号及定义1开头完整；正文、分次公式、两条脚注和印刷页码927均未见裁切。"
+    },
+    {
+      "physical_page": 948,
+      "printed_page": 928,
+      "image": "checks/visual_v24_early/body_0948.png",
+      "workspace_image": "/workspace/scratch/a886fd56dd2f/v24_work/early/final_qa/images/body_0948.png",
+      "image_sha256": "c7da2090a25916aa189f6f2f0e762c85b95cecc53f1e817ce66c96af2deaf102",
+      "verdict": "pass",
+      "notes": "定义1续文、零秩例外、定义3与注4(a)完整；删除段和术语修订长脚注均可读，无重叠或越界。"
+    },
+    {
+      "physical_page": 949,
+      "printed_page": 929,
+      "image": "checks/visual_v24_early/body_0949.png",
+      "workspace_image": "/workspace/scratch/a886fd56dd2f/v24_work/early/final_qa/images/body_0949.png",
+      "image_sha256": "eec65828c4fa64eba01138a8c9e2b215b0775584ef4d75d0463d0567060090ce",
+      "verdict": "pass",
+      "notes": "注4(b)–(d)、命题5、原证明及主部初始项排版完整；余切同构、证明结束符和脚注完整。"
+    },
+    {
+      "physical_page": 950,
+      "printed_page": 930,
+      "image": "checks/visual_v24_early/body_0950.png",
+      "workspace_image": "/workspace/scratch/a886fd56dd2f/v24_work/early/final_qa/images/body_0950.png",
+      "image_sha256": "447a04f782ad55b573450858a55f6f95d64601575e305c08d9caf405aff4939e",
+      "verdict": "pass",
+      "notes": "二阶主部、极化映射、判别式与光滑塔维数式均完整；编写提示和原英编注可见，无公式截断。"
+    },
+    {
+      "physical_page": 951,
+      "printed_page": 931,
+      "image": "checks/visual_v24_early/body_0951.png",
+      "workspace_image": "/workspace/scratch/a886fd56dd2f/v24_work/early/final_qa/images/body_0951.png",
+      "image_sha256": "a4717656fa5613defe1fc4d57e35980dd79f19c71824ad68ba67b83a75f66a5f",
+      "verdict": "pass",
+      "notes": "图(D)全部对象和箭头、上下零对象、两个余法列及Jacobian条件可读；三条脚注完整，无图形裁切。"
+    },
+    {
+      "physical_page": 952,
+      "printed_page": 932,
+      "image": "checks/visual_v24_early/body_0952.png",
+      "workspace_image": "/workspace/scratch/a886fd56dd2f/v24_work/early/final_qa/images/body_0952.png",
+      "image_sha256": "7d8dc62fdb1c52ce4f0043f3f4c14157844c09516430e2d8f46c48f86ff646b2",
+      "verdict": "pass",
+      "notes": "主部拆分、命题7及分歧外幂公式完整；页面下方长公式保持在版心内，脚注未与公式重叠。"
+    },
+    {
+      "physical_page": 953,
+      "printed_page": 933,
+      "image": "checks/visual_v24_early/body_0953.png",
+      "workspace_image": "/workspace/scratch/a886fd56dd2f/v24_work/early/final_qa/images/body_0953.png",
+      "image_sha256": "3fb0ee922368120a9e57274fb08a7ef11aaee004860d45cfd9ddbd1a691f8a2a",
+      "verdict": "pass",
+      "notes": "一般线性代数秩条件、行列式线丛和短正合列完整；所有det逆幂和两条长等式可读。"
+    },
+    {
+      "physical_page": 954,
+      "printed_page": 934,
+      "image": "checks/visual_v24_early/body_0954.png",
+      "workspace_image": "/workspace/scratch/a886fd56dd2f/v24_work/early/final_qa/images/body_0954.png",
+      "image_sha256": "882fdde5910e3a2aabe87e80fca749d9cea1be9e06d425ce6a4e9dc2baa8f5d6",
+      "verdict": "pass",
+      "notes": "行列式交换图四条箭头完整；det P、det Q、det M、共同线丛与第一条正合列完整。"
+    },
+    {
+      "physical_page": 955,
+      "printed_page": 935,
+      "image": "checks/visual_v24_early/body_0955.png",
+      "workspace_image": "/workspace/scratch/a886fd56dd2f/v24_work/early/final_qa/images/body_0955.png",
+      "image_sha256": "c0e072920f98d635ddee14322a9625b6b175713502517979c0eeb24d44eadd22",
+      "verdict": "pass",
+      "notes": "第二条订正正合列、单位缩放、孤立性与正规维数条件完整；五条脚注没有裁切或相互重叠。"
+    },
+    {
+      "physical_page": 956,
+      "printed_page": 936,
+      "image": "checks/visual_v24_early/body_0956.png",
+      "workspace_image": "/workspace/scratch/a886fd56dd2f/v24_work/early/final_qa/images/body_0956.png",
+      "image_sha256": "08cd2edbcc78533925e2b66e1732a4ceccf27b75558dc59636a1917284098471",
+      "verdict": "pass",
+      "notes": "K图的全部箭头、零对象和K^{-(d+1)}可读；与后半共享接缝完整，图后接来源说明、英编划去说明及LAT001脚注，未见重叠或缺文。"
+    }
+  ],
+  "unresolved_visual_findings": [],
+  "whole_book_human_page_by_page_review": false
+}

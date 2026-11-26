@@ -1,0 +1,23 @@
+{
+  "recorded_at_utc": "2026-11-26T01:17:43.583627+00:00",
+  "kind": "independent_mathematical_review_of_actual_drafts",
+  "review": {
+    "path": "v22_work/drafts/geometry/INDEPENDENT_REVIEW_FIBERS.md",
+    "bytes": 7325,
+    "sha256": "7276b91028412a1a46e3b00d96ee70cdfe7e76324087e106e1c5a91930435629"
+  },
+  "final_read_sources": [
+    {
+      "path": "v22_work/drafts/fibers/v22_section14_fibers.tex",
+      "bytes": 11770,
+      "sha256": "06a4dac5ca264064ed6b5a6c92cf17877bd1108812f8435c3eb051e72d29777f"
+    },
+    {
+      "path": "v22_work/drafts/fibers/v22_section14_fibers_audit.tex",
+      "bytes": 17027,
+      "sha256": "07d019bf740ba368e50ae0e161b2d0873a08e13a5a9b76bffc6605ccbc553c3a"
+    }
+  ],
+  "recommendations_status": "Both wording recommendations in the review were adopted by the module author and the exact modified paragraphs were reread: field-extension purity; pure n-dimensional charts with local dimension n only at closed points. No edits made to the author files by reviewer.",
+  "scope": "Corrected 14.1 constant pure d-dimensional geometric fibres; E04 projective-image closure and boundary; E05 CM and flatness, including finite CM modules; not full-book certification."
+}

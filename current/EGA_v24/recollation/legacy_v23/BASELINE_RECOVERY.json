@@ -1,0 +1,8 @@
+{
+  "baseline_commit": "aaa56a394186471c071e9d9cc686401becadf98e",
+  "git_status_porcelain": "",
+  "repository_manifest_sha256": "15bf14a8a4a1b5a8f359555501aec4244c3a12acb7e13776ee354e3225ec4074",
+  "recovery": "Ordinary git clone then explicit checkout performed by root; previous scratch working tree was absent.",
+  "read_at_utc": "2026-11-26T08:00:57.174147+00:00",
+  "baseline_repository_check_exit_code": 0
+}

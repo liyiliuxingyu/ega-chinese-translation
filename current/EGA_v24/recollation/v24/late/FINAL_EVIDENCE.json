@@ -1,0 +1,309 @@
+{
+  "created_utc": "2026-11-26T08:25:44.606339+00:00",
+  "status": "ready_for_root_integration",
+  "frozen_body": "v24_section16_late.tex",
+  "frozen_audit": "audit.tex",
+  "body_paragraphs": 30,
+  "numbered_cmt_notes": 28,
+  "audit_items": [
+    "V24-B01",
+    "V24-B02",
+    "V24-B03",
+    "V24-B04",
+    "V24-B05",
+    "V24-B06",
+    "V24-B07",
+    "V24-B08",
+    "V24-B09",
+    "V24-B10",
+    "V24-B11",
+    "V24-B12"
+  ],
+  "scope": {
+    "fr_physical_pages": [
+      104,
+      111
+    ],
+    "en_start": "68: editor deletion notice after invertible-sheaf diagram",
+    "en_end": "73: before EGA V – Section 17",
+    "boundary_only_fr_pages": [
+      103,
+      112
+    ],
+    "new_section17_translation": false
+  },
+  "sources": [
+    {
+      "path": "/workspace/scratch/a886fd56dd2f/repository/archive_20261121/03_sources/EGA5_francais.pdf",
+      "bytes": 16097021,
+      "sha256": "24cf8204184b58b18a46e5f63ecc36d6e791b3c8c96a09daac93de96ebd8e830"
+    },
+    {
+      "path": "/workspace/scratch/a886fd56dd2f/repository/archive_20261121/03_sources/EGAVaiello.pdf",
+      "bytes": 677332,
+      "sha256": "23a20ef32fd16a1bd623c0c08ac080d04fc94f248de12133b713a19d6b0330d9"
+    },
+    {
+      "path": "/workspace/scratch/a886fd56dd2f/repository/current/EGA_v23/text/v1_2.tex",
+      "bytes": 61675,
+      "sha256": "28e9a07cef4982bcaaba67b9d5b2f96d2e39e5cf6aa0bccf2ba8afc7cf1b1dc5"
+    }
+  ],
+  "source_views": {
+    "fr_individually_viewed": [
+      103,
+      104,
+      105,
+      106,
+      107,
+      108,
+      109,
+      110,
+      111,
+      112
+    ],
+    "fr105_additional_crop": {
+      "path": "/workspace/scratch/a886fd56dd2f/v24_work/late/fr105_lemma_crop.png",
+      "bytes": 362056,
+      "sha256": "c691a145a4c0d89a1967e5ff9567ec5f14c7ffa7b0877b93c1d9e0fb594ecff3"
+    },
+    "en_text_read": [
+      68,
+      69,
+      70,
+      71,
+      72,
+      73
+    ],
+    "en_additional_image_views": [
+      69,
+      70,
+      73
+    ]
+  },
+  "compilation": {
+    "engine": "XeLaTeX",
+    "class": "\\documentclass[UTF8,a4paper]{ctexbook}",
+    "font_overrides": false,
+    "final_revision_successful_runs": [
+      "compile7.stdout.txt",
+      "compile8.stdout.txt"
+    ],
+    "pdf_pages": 17,
+    "body_preview_pages": [
+      1,
+      8
+    ],
+    "audit_preview_pages": [
+      9,
+      17
+    ],
+    "overfull": 0,
+    "underfull": 2,
+    "missing_characters": 0,
+    "latex_warning_count": 0,
+    "package_warning_count": 0
+  },
+  "visual_review": {
+    "method": "PyMuPDF 1.5x raster; 4-page contact sheets plus full-page views. Every preview page viewed.",
+    "pages_viewed": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17
+    ],
+    "last_revision_rechecked_pages": [
+      12,
+      13,
+      14,
+      15,
+      16,
+      17
+    ],
+    "last_revision_change": "Audit B05 restored the inherited k[t]^2 matrix counterexample; only report page12 onward changed. Earlier pages were already visually inspected.",
+    "findings": "No clipping, overlapping formulas/footnotes, missing glyphs, or broken table cells observed; default class line/page breaks retained.",
+    "does_not_certify_final_integrated_pdf": true
+  },
+  "deliverable_files": [
+    {
+      "path": "/workspace/scratch/a886fd56dd2f/v24_work/late/v24_section16_late.tex",
+      "bytes": 26151,
+      "sha256": "93d23d0ea48564d859778665853c10b330e63171578103ef6a440e33e7441937"
+    },
+    {
+      "path": "/workspace/scratch/a886fd56dd2f/v24_work/late/audit.tex",
+      "bytes": 21904,
+      "sha256": "8df6892462aa3cd96146f69586a0e85a0933f2f79ec58eb30c94fb9b169ddc1c"
+    },
+    {
+      "path": "/workspace/scratch/a886fd56dd2f/v24_work/late/SOURCE_MAP.md",
+      "bytes": 5221,
+      "sha256": "34607b171d21e395d718b99f647407e61022d2df97daebdd4c4ad51fbd375777"
+    },
+    {
+      "path": "/workspace/scratch/a886fd56dd2f/v24_work/late/OLD_NOTES_MAP.md",
+      "bytes": 4247,
+      "sha256": "d16a9251b592707566f122283fb858980fcc0ace66eb9e974e02a56f908b62a2"
+    },
+    {
+      "path": "/workspace/scratch/a886fd56dd2f/v24_work/late/paragraph_map.json",
+      "bytes": 3137,
+      "sha256": "be845d703c823175ca16b416c96838b80e4bfa38ddcdf7dfe5e7cc2588c656b0"
+    },
+    {
+      "path": "/workspace/scratch/a886fd56dd2f/v24_work/late/preview.tex",
+      "bytes": 186,
+      "sha256": "faeff19290dfadfb6f1aaf61cdbd56d7808bbb4b5841b741114488c4f2edd962"
+    },
+    {
+      "path": "/workspace/scratch/a886fd56dd2f/v24_work/late/preview_preamble.tex",
+      "bytes": 8757,
+      "sha256": "1b096d39924010e5a1f55e4a8944da9425e7d2959b0522e7d746ce943913b7c1"
+    },
+    {
+      "path": "/workspace/scratch/a886fd56dd2f/v24_work/late/preview.pdf",
+      "bytes": 480933,
+      "sha256": "60662d90ded24a5c1437d5541e59bedadddf7b2a83219bad7a857ffb8afa00e2"
+    },
+    {
+      "path": "/workspace/scratch/a886fd56dd2f/v24_work/late/preview.log",
+      "bytes": 44659,
+      "sha256": "a8bda5724661c84694f2b3cd57b16a6eed3ca78f90603127b2c4fd7364096a8b"
+    },
+    {
+      "path": "/workspace/scratch/a886fd56dd2f/v24_work/late/compile7.stdout.txt",
+      "bytes": 14365,
+      "sha256": "81f5a810c324d0bbce94aab5150f22dd6e888e57dc7b4d9f4ef2b84c3dd6ce07"
+    },
+    {
+      "path": "/workspace/scratch/a886fd56dd2f/v24_work/late/compile8.stdout.txt",
+      "bytes": 14365,
+      "sha256": "81f5a810c324d0bbce94aab5150f22dd6e888e57dc7b4d9f4ef2b84c3dd6ce07"
+    },
+    {
+      "path": "/workspace/scratch/a886fd56dd2f/v24_work/late/HANDOFF.md",
+      "bytes": 2556,
+      "sha256": "4896aa5aec8315bb0c691e9bf682e14729c3161ecaf44764abe8e401a71a1cbd"
+    }
+  ],
+  "rendered_pages": [
+    {
+      "path": "/workspace/scratch/a886fd56dd2f/v24_work/late/rendered/page_001.png",
+      "bytes": 140288,
+      "sha256": "e44868f848a1a409f6732962667fa0920203c20009ce9437927064d45b1fc6b5"
+    },
+    {
+      "path": "/workspace/scratch/a886fd56dd2f/v24_work/late/rendered/page_002.png",
+      "bytes": 178463,
+      "sha256": "48ede3236805037f0da7fc843ce38394f44e7e618c237abc1b03db5c65ae95a0"
+    },
+    {
+      "path": "/workspace/scratch/a886fd56dd2f/v24_work/late/rendered/page_003.png",
+      "bytes": 175701,
+      "sha256": "4aef50119301baee4f84ff7d00b28a2e4bee5c4e56a4d4adb39eda1b3ca471d3"
+    },
+    {
+      "path": "/workspace/scratch/a886fd56dd2f/v24_work/late/rendered/page_004.png",
+      "bytes": 176303,
+      "sha256": "964d79d366a3d60493e868533079297ade4040eab5413981e7716b4443f0dc99"
+    },
+    {
+      "path": "/workspace/scratch/a886fd56dd2f/v24_work/late/rendered/page_005.png",
+      "bytes": 195829,
+      "sha256": "e0044698fbb390d5d55a3232359a61b7c65ccd7f2e705691e9e38f5468a69e16"
+    },
+    {
+      "path": "/workspace/scratch/a886fd56dd2f/v24_work/late/rendered/page_006.png",
+      "bytes": 168959,
+      "sha256": "4b5ef18a45377e8d5cd72a039c5c776a01ceff461975f61685e65fb141d08f7f"
+    },
+    {
+      "path": "/workspace/scratch/a886fd56dd2f/v24_work/late/rendered/page_007.png",
+      "bytes": 199574,
+      "sha256": "b03c35c0b1f767707fabf09c3c79b9550db0f31110e4c3b6b276f7de3d316834"
+    },
+    {
+      "path": "/workspace/scratch/a886fd56dd2f/v24_work/late/rendered/page_008.png",
+      "bytes": 208283,
+      "sha256": "5f9a0e07d7d1fefc49e8de7c2b51fd58be5a88cda00c7453bfa9e98f787ae3cf"
+    },
+    {
+      "path": "/workspace/scratch/a886fd56dd2f/v24_work/late/rendered/page_009.png",
+      "bytes": 160058,
+      "sha256": "fc7ff16294ffb23e7a0aec40795b53523c0f94fb38f0f4927dc8964667c9ecd5"
+    },
+    {
+      "path": "/workspace/scratch/a886fd56dd2f/v24_work/late/rendered/page_010.png",
+      "bytes": 211603,
+      "sha256": "b6db62a4096ec6e47268239b7ceb1bd6e0f520587cf51e7f67f7d0568e92c1e9"
+    },
+    {
+      "path": "/workspace/scratch/a886fd56dd2f/v24_work/late/rendered/page_011.png",
+      "bytes": 211386,
+      "sha256": "7d31ff5ed82d32563d79e060273c29a2af0bebaf9674cbd217c5afe00a1dbfc8"
+    },
+    {
+      "path": "/workspace/scratch/a886fd56dd2f/v24_work/late/rendered/page_012.png",
+      "bytes": 205335,
+      "sha256": "0f83ac656155e1ca3a94e70271a18f15986275028d9afb937ee3c44bc8b397a3"
+    },
+    {
+      "path": "/workspace/scratch/a886fd56dd2f/v24_work/late/rendered/page_013.png",
+      "bytes": 223539,
+      "sha256": "0935faef3b4ab871b7180080f899da45f9ac9942884f86bfc0961172bb399663"
+    },
+    {
+      "path": "/workspace/scratch/a886fd56dd2f/v24_work/late/rendered/page_014.png",
+      "bytes": 197821,
+      "sha256": "f60b92c2b4495ea2e9174c4fc33443e2d435ed63abcb9caa74f080b44ed3fefa"
+    },
+    {
+      "path": "/workspace/scratch/a886fd56dd2f/v24_work/late/rendered/page_015.png",
+      "bytes": 188334,
+      "sha256": "ecb0f508699dde85715920ea862725d91ec2a3785b16814ccec465ca452de7f6"
+    },
+    {
+      "path": "/workspace/scratch/a886fd56dd2f/v24_work/late/rendered/page_016.png",
+      "bytes": 183084,
+      "sha256": "e4acf6c3e260b994ce615fa58c2be2c1b36f590b13f13d8c071b80d593c35e68"
+    },
+    {
+      "path": "/workspace/scratch/a886fd56dd2f/v24_work/late/rendered/page_017.png",
+      "bytes": 159334,
+      "sha256": "0253efd3626360bc87b3e1800b1b657d03903ff1c3e20b3c3e11bd2c984b4189"
+    }
+  ],
+  "references": [
+    {
+      "title": "A generalized principal ideal theorem",
+      "authors": "D. Eisenbud and E. G. Evans, Jr.",
+      "year": 1976,
+      "journal": "Nagoya Mathematical Journal 62, 41–53",
+      "locator": "Corollary 2.3",
+      "url": "https://doi.org/10.1017/S0027763000024740"
+    },
+    {
+      "title": "Stacks Project, Lemma 10.128.6",
+      "tag": "0470",
+      "url": "https://stacks.math.columbia.edu/tag/0470"
+    },
+    {
+      "title": "Stacks Project, Fitting ideals",
+      "tag": "07Z6",
+      "url": "https://stacks.math.columbia.edu/tag/07Z6"
+    }
+  ]
+}

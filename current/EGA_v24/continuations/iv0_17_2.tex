@@ -1,0 +1,204 @@
+% EGAIV.1.pdf, PDF pp.41--45, printed pp.42--46.
+\subsection{模的射影维数与内射维数回顾}
+\source{EGA IV 第一部分，印刷第42--46页；上传PDF第41--45页}
+
+\egap{17.2.1}
+设 $A$ 为环，$M$ 为 $A$-模。回忆（M，第六章，§2），$M$ 的\textbf{射影维数}（分别地，\textbf{内射维数}），记作 $\pd M$ 或 $\pd_A M$（分别地，$\injdim M$ 或 $\injdim_A M$），是存在长度为 $n$ 的射影左解消（分别地，内射右解消）的最小 $n$，取值为非负整数或 $+\infty$。
+
+等价地（同处），$n$ 是使任意 $A$-模 $N$ 均满足
+$\Ext_A^i(M,N)=0$（分别地，$\Ext_A^i(N,M)=0$）对所有 $i>n$ 成立的最小数；只要求 $i=n+1$ 时消失也等价。
+
+对 $M$ 的每个直和因子 $M'$，因 $\Ext_A^i(M',N)$ 为 $\Ext_A^i(M,N)$ 的直和因子，有
+$\pd M'\leq\pd M$；同样有 $\injdim M'\leq\injdim M$。
+
+还可如下刻画 $\pd M=n$（分别地，$\injdim M=n$）：$n$ 是使每个正合列
+\[
+ 0\longrightarrow R\longrightarrow P_{n-1}\longrightarrow\cdots
+ \longrightarrow P_0\longrightarrow M\longrightarrow0
+\]
+中，只要 $P_i$（$0\leq i<n$）都射影，便有 $R$ 射影的最小数；分别地，对于正合列
+\[
+ 0\longrightarrow M\longrightarrow Q_0\longrightarrow\cdots
+ \longrightarrow Q_{n-1}\longrightarrow C\longrightarrow0,
+\]
+只要各 $Q_i$ 都内射，便有 $C$ 内射。
+
+\egas{17.2.2}{备注}
+（i）$M$ 为射影模（分别地，内射模），等价于 $\pd M=0$（分别地，$\injdim M=0$）。
+
+（ii）设 $T$ 为从 $A$-模范畴到一个阿贝尔范畴的协变加性函子。由（17.2.1）及导出函子的定义，若 $\pd M\leq n$（分别地，$\injdim M\leq n$），则对所有 $i>n$，有 $L_iT(M)=0$（分别地，$R^iT(M)=0$）。
+
+（iii）若 $A$ 诺特且 $M$ 有限型，则（17.2.1）中最后的解释表明，当 $\pd M=n$ 时，$M$ 有一个长度 $n$ 的左解消，由有限型射影模构成。若 $A$ 还局部，则此解消可取为有限型自由模构成，因为有限型射影 $A$-模是自由的（Bourbaki，\textit{交换代数}，第二章，§3，第2目，命题5的推论2）。
+
+\egas{17.2.3}{引理}
+设 $A$ 为环，$M$ 为 $A$-模。$\injdim M\leq n$ 的充要条件是对每个单生成 $A$-模 $N$，有 $\Ext_A^{n+1}(N,M)=0$。
+\begin{proof}
+沿用（17.2.1）的记号，只须证明 $C$ 内射。对任意 $A$-模 $N$，$\Ext_A^{n+1}(N,M)\simeq\Ext_A^1(N,C)$（M，第五章，§7），所以对所有形如 $N=A/\jj$ 的模，均有 $\Ext_A^1(N,C)=0$。由Ext正合列，对 $A$ 的每个理想 $\jj$，典范同态
+$\Hom_A(A,C)\to\Hom_A(\jj,C)$ 都满射。这表明 $C$ 内射（M，第一章，3.2）。
+\end{proof}
+
+\egas{17.2.4}{引理}
+设 $A$ 为诺特环，$M$ 为有限型 $A$-模。$\pd M\leq n$ 的充要条件是对每个单生成 $A$-模 $N$，有 $\Ext_A^{n+1}(M,N)=0$。
+\begin{proof}
+已知 $\pd M\leq n$ 等价于对每个有限型 $A$-模 $N$，有
+\[
+ \Ext_A^{n+1}(M,N)=0
+\]
+（M，第六章，2.5）。为证明命题中的条件也充分，对 $N$ 的生成元个数 $m$ 归纳。取一个由 $m-1$ 个元素生成的子模 $N_1$，使 $N_2=N/N_1$ 单生成。正合列 $0\to N_1\to N\to N_2\to0$ 给出
+\[
+ \Ext_A^{n+1}(M,N_1)\longrightarrow\Ext_A^{n+1}(M,N)
+ \longrightarrow\Ext_A^{n+1}(M,N_2).
+\]
+归纳假设表明，中间项为零。
+\end{proof}
+
+\egas{17.2.5}{推论}
+设 $A$ 为诺特环，$M$ 为 $A$-模。则
+\begin{equation}
+ \injdim_A M=\sup_{\mm}\injdim_{A_{\mm}}M_{\mm}.
+ \tag{17.2.5.1}
+\end{equation}
+若 $M$ 有限型，还有
+\begin{equation}
+ \pd_A M=\sup_{\mm}\pd_{A_{\mm}}M_{\mm},
+ \tag{17.2.5.2}
+\end{equation}
+其中 $\mm$ 遍历 $A$ 的所有素理想，或只遍历所有极大理想。
+\begin{proof}
+若 $N$ 为有限型 $A$-模，因而有有限表示，则对任意乘法子集 $S$ 及 $i\geq0$，有
+\[
+ S^{-1}\Ext_A^i(N,M)
+ \simeq\Ext_{S^{-1}A}^i(S^{-1}N,S^{-1}M).
+\]
+原文说，由平坦性，考虑 $M$ 的一个自由解消，并利用 $i=0$ 时上式成立（Bourbaki，\textit{交换代数}，第二章，§2，第7目，命题19），即可得到这一同构。\cmt{D4-T03}{原文这里写“$M$ 的自由解消”。要以自由解消计算 $\Ext_A^i(N,M)$，应解消第一变量 $N$；因 $A$ 诺特、$N$ 有限型，可取逐项有限自由的解消，从而局部化与各项Hom交换。报告给出具体核对。}
+特别地，对任意素理想 $\mm$ 及理想 $\jj$，
+\[
+ \Ext_{A_{\mm}}^i(A_{\mm}/\jj A_{\mm},M_{\mm})
+ =(\Ext_A^i(A/\jj,M))_{\mm}.
+\]
+结合（17.2.3）、$A_{\mm}$ 的每个理想都形如 $\jj A_{\mm}$，以及Bourbaki，同书，第二章，§3，第3目，定理1，得到（17.2.5.1）。用（17.2.4），并交换 $M,N$ 的地位，可同样证明（17.2.5.2）。
+\end{proof}
+因此，对于诺特环及有限型模，射影维数或内射维数的研究，由（17.2.5）归结到局部环。此时有：
+
+\egas{17.2.6}{引理}
+设 $A$ 为诺特局部环，$k$ 为其剩余域，$M$ 为有限型 $A$-模。$\pd M\leq n$ 的必要条件是 $\Tor_i^A(M,k)=0$ 对所有 $i>n$ 成立；充分条件是 $\Tor_{n+1}^A(M,k)=0$。
+\begin{proof}
+必要性是（17.2.2（ii））用于协变函子 $M\mapsto k\otimes_A M$ 的特例。为证明充分性，沿用（17.2.1）的记号，令 $P_i$ 有限型，只须证明 $R$ 射影。又 $\Tor_{n+1}^A(M,k)\simeq\Tor_1^A(R,k)$（M，第五章，§7）；由于 $R$ 有限型，$\Tor_1^A(R,k)=0$ 蕴含 $R$ 自由（Bourbaki，\textit{交换代数}，第二章，§3，第2目，命题5的推论2）。
+\end{proof}
+
+\egas{17.2.7}{推论}
+在（17.2.6）的假设下，设 $x$ 是属于 $A$ 的极大理想的 $M$-正则元素。则
+\cmt{D4-E02}{按（17.2.1）、（17.2.2）的约定，零模也是射影模，故其射影维数为0。于是本式须加 $M\ne0$；否则 $M=0$ 时成为 $0=1$。本处保留初版陈述并注明边界条件。非零模且射影维数无限的情形，也可由下面的短正合列验证。}
+\begin{equation}
+ \pd(M/xM)=\pd M+1.
+ \tag{17.2.7.1}
+\end{equation}
+\begin{proof}
+乘以 $x$ 给出的正合列 $0\to M\xrightarrow{x}M\to M/xM\to0$ 导出Tor正合列：对 $i\geq1$，
+\[
+ \begin{aligned}
+ \Tor_i^A(M,k)&\xrightarrow{x}\Tor_i^A(M,k)
+ \longrightarrow\Tor_i^A(M/xM,k)\\
+ &\longrightarrow\Tor_{i-1}^A(M,k)
+ \xrightarrow{x}\Tor_{i-1}^A(M,k).
+ \end{aligned}
+\]
+对任意 $A$-模 $N$，乘以 $x$ 在 $M\otimes_A N$ 上的同态，既可由 $M$ 上的数乘产生，也可由 $N$ 上的数乘产生。由于 $x$ 在 $k$ 上的数乘为零，所有 $\Tor_i^A(M,k)$ 上由 $x$ 诱导的同态也为零。因此有短正合列
+\[
+ 0\longrightarrow\Tor_i^A(M,k)\longrightarrow\Tor_i^A(M/xM,k)
+ \longrightarrow\Tor_{i-1}^A(M,k)\longrightarrow0.
+\]
+若 $\pd M=n$，则由（17.2.6），$\Tor_n^A(M,k)\ne0$ 且
+$\Tor_{n+1}^A(M,k)=\Tor_{n+2}^A(M,k)=0$。所以
+$\Tor_{n+1}^A(M/xM,k)\ne0$、$\Tor_{n+2}^A(M/xM,k)=0$；再用（17.2.6），得到 $\pd(M/xM)=n+1$。
+\end{proof}
+
+\egas{17.2.8}{命题（M. Auslander）}
+设 $A$ 为环。以下条件等价：
+\begin{enumerate}[label=\alph*)]
+ \item 每个 $A$-模的射影维数都至多为 $n$；
+ \item[$\mathrm a')$] 每个有限型 $A$-模的射影维数都至多为 $n$；
+ \item[\(\mathrm b)\)] 每个 $A$-模的内射维数都至多为 $n$；
+ \item[\(\mathrm c)\)] 对每对 $A$-模 $M,N$，有 $\Ext_A^{n+1}(M,N)=0$；
+ \item[$\mathrm c')$] 对每对 $A$-模 $M,N$，只要 $M$ 有限型，甚至仅单生成，就有
+ \[\Ext_A^{n+1}(M,N)=0.\]
+\end{enumerate}
+这由（17.2.1）、（17.2.3）直接得到。
+
+使这些等价条件成立的最小数 $n$（整数或 $+\infty$），称为 $A$ 的\textbf{整体上同调维数}，或简称\textbf{上同调维数}，记作 $\gldim A$。
+
+\egas{17.2.9}{命题}
+设 $A$ 为诺特环。以下条件等价：
+\begin{enumerate}[label=\alph*)]
+ \item $\gldim A\leq n$；
+ \item 每个有限型 $A$-模的内射维数都至多为 $n$；
+ \item 对任意两个有限型 $A$-模 $M,N$，有 $\Ext_A^{n+1}(M,N)=0$。
+\end{enumerate}
+这由定义和（17.2.4）直接得到。
+
+\egas{17.2.10}{推论}
+若 $A$ 为诺特环，则
+\begin{equation}
+ \gldim A=\sup_{\mm}\gldim A_{\mm},
+ \tag{17.2.10.1}
+\end{equation}
+其中 $\mm$ 遍历 $A$ 的谱，或遍历其所有极大理想。
+
+这由（17.2.9）、（17.2.5）得到。
+
+\egas{17.2.11}{命题}
+设 $A$ 为诺特局部环，$k$ 为其剩余域。$\gldim A\leq n$ 的必要条件是对所有 $i>n$，有 $\Tor_i^A(k,k)=0$；充分条件是 $\Tor_{n+1}^A(k,k)=0$。
+\begin{proof}
+结合（17.2.6），只须证明 $\gldim A\leq n$ 与 $\pd_A k\leq n$ 等价。第一条件由定义蕴含第二条件。反过来，若 $\pd_A k\leq n$，则由（17.2.2（ii）），对每个 $A$-模 $M$ 及 $i>n$，$\Tor_i^A(M,k)=0$，从而 $\pd M\leq n$，并由（17.2.8）得到结论。\cmt{D4-H08}{使用（17.2.6）作最后一步时，应先令 $M$ 遍历有限型模；这已足以应用（17.2.8 a'））。不能把“剩余域检测射影维数”不加条件地直接推广为任意模的判据。}
+\end{proof}
+
+\egas{17.2.12}{推论}
+设 $A$ 为诺特环。$\gldim A\leq n$ 的必要条件是对 $A$ 的每个极大理想 $\mm$ 及 $i>n$，有
+$\Tor_i^{A_{\mm}}(A/\mm,A/\mm)=0$；这些等式只在 $i=n+1$ 成立，便已充分。
+
+这由（17.2.11）、（17.2.10）得到。
+
+\egas{17.2.13}{命题}
+设 $A,B$ 为诺特局部环，$\varphi:A\to B$ 为局部同态，使 $B$ 成为平坦 $A$-模。则
+\begin{equation}
+ \gldim A\leq\gldim B.
+ \tag{17.2.13.1}
+\end{equation}
+\begin{proof}
+设 $n=\gldim B$ 有限。只须证明，对任意两个有限型 $A$-模 $M,N$，$i>n$ 时有 $\Tor_i^A(M,N)=0$（17.2.11）。$B$ 是忠实平坦 $A$-模（$0_{\mathrm I}$，6.6.2），故这等价于证明（$0_{\mathrm I}$，6.4.1）
+\begin{equation}
+ \Tor_i^A(M,N)\otimes_A B=0.
+ \tag{17.2.13.2}
+\end{equation}
+取 $M$ 的自由左解消 $L_\bullet=(L_j)$。由于 $B$ 平坦，$L_\bullet\otimes_A B$ 是 $B$-模 $M\otimes_A B$ 的自由左解消。\cmt{D4-T04}{初版在本段两次写“右解消”（résolution droite）。这里按Tor的构造排为“左解消”，并明示所作改正；这不是新的定理条件。}
+又
+\[
+ (L_\bullet\otimes_A B)\otimes_B(N\otimes_A B)
+ =(L_\bullet\otimes_A N)\otimes_A B.
+\]
+所以（17.2.13.2）的左端等于 $\Tor_i^B(M\otimes_A B,N\otimes_A B)$。由 $\gldim B=n$，此模在 $i>n$ 时为零（17.2.2（ii）），结论得证。
+\end{proof}
+
+\egap{17.2.14}
+设 $(X,\OO_X)$ 为赋环空间，$\F$ 为 $\OO_X$-模。称
+\[
+ \sup_{x\in X}\pd_{\OO_{X,x}}\F_x
+ \quad\text{（分别地，}\sup_{x\in X}\injdim_{\OO_{X,x}}\F_x\text{）}
+\]
+为 $\F$ 的\textbf{逐点射影维数}（分别地，\textbf{逐点内射维数}），记作 $\pd\F$（分别地，$\injdim\F$）。称
+$\sup_{x\in X}\gldim\OO_{X,x}$ 为 $X$ 的\textbf{逐点上同调维数}，记作 $\gldim X$。
+
+由（17.2.5）、（17.2.10），当 $A$ 为诺特环、$M$ 为有限型 $A$-模、$X=\Spec A$ 时，有
+\[
+ \begin{aligned}
+ \pd\widetilde M&=\pd M,\\
+ \injdim\widetilde M&=\injdim M,\\
+ \gldim X&=\gldim A.
+ \end{aligned}
+\]
+称 $\F_x$ 的射影维数（分别地，内射维数）为 $\F$ 在点 $x$ 的射影维数（分别地，内射维数）；称 $\OO_{X,x}$ 的上同调维数为 $X$ 在点 $x$ 的上同调维数。
+
+\egas{17.2.15}{命题}
+设 $X,Y$ 为茎环均是诺特局部环的赋环空间，$f:X\to Y$ 为平坦态射。若 $\gldim X\leq n$，则 $Y$ 在 $f(X)$ 的每一点的上同调维数都至多为 $n$。
+
+这由（17.2.13）直接得到。\cmt{D4-H09}{应用（17.2.13）需各茎同态为局部同态。本句应在局部赋环空间及其局部态射的语境中使用；仅说茎环各自局部而允许任意赋环空间态射，不足以推出结论。此项列作适用条件提醒，不因省略重申约定而直接判为作者定理错误。}

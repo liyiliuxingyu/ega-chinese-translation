@@ -1,0 +1,10 @@
+and b) of
+= Q ⊗det M ⊗det P −1 ⊗det Q−1
+which we may also consider as homomorphisms of L = det P ⊗det Q ⊗det M into P
+respectively Q. (Nota bene: we denote for a locally free module F by det F its highest
+exterior power and we use the fact that for a short exact sequence
+0 →F 1 →F →F 11 →0
+of such modules we hae a canonical isomoprhism
+det F = det F 1 ⊗det F 11,
+This being given [Fr], we have the commutativity of the diagram
+5

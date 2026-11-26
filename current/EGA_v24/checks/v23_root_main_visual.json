@@ -1,0 +1,134 @@
+{
+  "schema_version": 1,
+  "edition": 23,
+  "reviewer": "/root",
+  "review_method": "actual_image_view",
+  "reviewed_utc": "2026-11-26T03:29:01.667700+00:00",
+  "document": "main",
+  "pdf": {
+    "path": "main.pdf",
+    "sha256": "9396741a30df30bc5950e3cae1a7c3b9f809351eed777797c59d382c3aa9f3de"
+  },
+  "rendering": {
+    "renderer": "PyMuPDF",
+    "scale": 1.55,
+    "colorspace": "RGB",
+    "alpha": false,
+    "full_page": true
+  },
+  "pages": [
+    {
+      "physical_page": 1,
+      "image": "checks/visual_v23/root_main/main-0001.png",
+      "image_sha256": "c834bece518f8823a551dcaf136dd1a49354a4c02fa5aa8ad1551c8c26d0982f",
+      "verdict": "pass",
+      "notes": "实际重新显示最终PDF完整封面：第二十三版副题、作者及英译编辑署名均居中完整，无裁切或缺字。"
+    },
+    {
+      "physical_page": 3,
+      "image": "checks/visual_v23/root_main/main-0003.png",
+      "image_sha256": "688d91c06bbb9382ca71245eefbd25b32f08b20370f46b4a58fb800a4ea9371f",
+      "verdict": "pass",
+      "notes": "实际显示整页：本版编排说明明确§15回校的法英页段及未完成界限；正文次序、汉字和印刷页码iii正常。"
+    },
+    {
+      "physical_page": 4,
+      "image": "checks/visual_v23/root_main/main-0004.png",
+      "image_sha256": "135d0c132de27bed3544a8c9379531e262744125c307d47e168644ee1a1dc608",
+      "verdict": "pass",
+      "notes": "实际显示整页：连续收录范围表的六行、较长第五卷说明和表后本轮订正性质均在版心内，表线及换行正常。"
+    },
+    {
+      "physical_page": 5,
+      "image": "checks/visual_v23/root_main/main-0005.png",
+      "image_sha256": "6d7ea11118249167cd27a5a97da5f2a1fe26915a26d9bc7f7aa1edc9acf6cdbf",
+      "verdict": "pass",
+      "notes": "实际显示整页：续作定位、现有text/v1_2.tex入口与格式说明清楚；ctexbook命令、路径与默认字体说明无重叠。题目按既有短篇总题简称，精确节题由续作文件另列。"
+    },
+    {
+      "physical_page": 6,
+      "image": "checks/visual_v23/root_main/main-0006.png",
+      "image_sha256": "efe6d9497eb009f97ef55d167efa9657d42dd6b313977218db0c818d061ed00c",
+      "verdict": "pass",
+      "notes": "实际显示整页：仅有页眉与罗马页码vi，符合默认双面排版的章前留白，与下一页目录衔接正常。"
+    },
+    {
+      "physical_page": 7,
+      "image": "checks/visual_v23/root_main/main-0007.png",
+      "image_sha256": "7889e62a196cb1eea6915c81d3d9fa529d1603ced6321059121b509590447057",
+      "verdict": "pass",
+      "notes": "实际显示整页：总目录首面、导言和第0章入口、点线及页码列清楚；数学记号与汉字正常。"
+    },
+    {
+      "physical_page": 17,
+      "image": "checks/visual_v23/root_main/main-0017.png",
+      "image_sha256": "f655ebd568622ca0ef670a3624dd209cc6ebd355cc9ebaf2f9afd7484762ac61",
+      "verdict": "pass",
+      "notes": "实际显示整页：已有V.1短篇先于第一篇的次序明确，§15目录指向印刷1063；四位页码列与长标题没有相互遮挡。"
+    },
+    {
+      "physical_page": 18,
+      "image": "checks/visual_v23/root_main/main-0018.png",
+      "image_sha256": "24c6db45c6ef5723d438cf77142e4961a3d9c604ceb8d14301ff16975457999b",
+      "verdict": "pass",
+      "notes": "实际显示整页：第三篇从印刷1069开始，其后第四篇和书末资料条目连续，长标题正常换行且页码列对齐。"
+    },
+    {
+      "physical_page": 20,
+      "image": "checks/visual_v23/root_main/main-0020.png",
+      "image_sha256": "b8beb9847a5e326bfa26ff93e141f37a69708157d882358a509edbaba6fadb03",
+      "verdict": "pass",
+      "notes": "实际显示整页：目录末页含第二、三卷已有译稿说明和来源版权章节，终页印刷1196完整，没有条目裁切。"
+    },
+    {
+      "physical_page": 947,
+      "image": "checks/visual_v23/root_main/main-0947.png",
+      "image_sha256": "2456e056f19c579885d15183f9a9f3af6e06511eb838adbcb390a0f7b743baa3",
+      "verdict": "pass",
+      "notes": "实际显示整页：既有EGA V短篇总题、V.1完整节题及定义1正常，公式的平方/立方和Sym二次分次清楚；底部旧注向后延续符合默认分页。"
+    },
+    {
+      "physical_page": 1082,
+      "image": "checks/visual_v23/root_main/main-1082.png",
+      "image_sha256": "3160cd8609b649d97f539b1909270bd46ee4df02aefe62e5dea22110b69163e6",
+      "verdict": "pass",
+      "notes": "实际显示整页：§14末尾三幅交换图、泛参数说明和V22-DIF013—016旧脚注完整；DIF016在本页起并向1083延续。"
+    },
+    {
+      "physical_page": 1083,
+      "image": "checks/visual_v23/root_main/main-1083.png",
+      "image_sha256": "b13d99528f9a1c92e44188a0f5fa53de9f9f7c97fbe7b7865e866dd3d487008b",
+      "verdict": "pass",
+      "notes": "实际显示整页：新§15章题、开头原作者计划及第一幅关联图正常；上页DIF016脚注续文与SET001—003及英编注68有清楚分隔，无丢失或覆盖。"
+    },
+    {
+      "physical_page": 1088,
+      "image": "checks/visual_v23/root_main/main-1088.png",
+      "image_sha256": "325c67a1421ea8f2442dc3306bf9cc0ea11d4f5a0d2a8e414fda7c485bbd6015",
+      "verdict": "pass",
+      "notes": "实际显示整页：§15最后研究建议及SMO011—012脚注完整；8.7(c)否定语气和原作者未证计划保留，页底脚注及留白正常。"
+    },
+    {
+      "physical_page": 1089,
+      "image": "checks/visual_v23/root_main/main-1089.png",
+      "image_sha256": "be705dbc04b105903151744210afc85961da369b04b17402de8b472ea00d9dec",
+      "verdict": "pass",
+      "notes": "实际显示整页：第三篇章首、§0标题、四项目录及原译导言完整，与§15终点衔接正确，页底两条历史校注正常。"
+    },
+    {
+      "physical_page": 1090,
+      "image": "checks/visual_v23/root_main/main-1090.png",
+      "image_sha256": "040fd2a52df26bb77522a4739af77bfc0672bc863cc42114adc18a10bb08860f",
+      "verdict": "pass",
+      "notes": "实际显示整页：第三篇§1起、原删段编辑说明、定理1.1/评注1.2/推论1.3及图式(*)完整，继承正文未被新节挤压或覆盖。"
+    },
+    {
+      "physical_page": 1216,
+      "image": "checks/visual_v23/root_main/main-1216.png",
+      "image_sha256": "fe497415c947692ac9fecf02103c86d41ba5ff6170f1fb8a09435ed1c1c278b8",
+      "verdict": "pass",
+      "notes": "实际显示整页：全书末页1196的外部核查资料和版权保留说明完整，法文重音、英文字体及长网址相关正文均无裁切。"
+    }
+  ],
+  "scope": "Only these 16 full pages of the final main PDF were actually displayed with view_image and visually inspected. The final boundary-fix PDF was rendered afresh. This is not manual review of all 1216 pages or of all inherited mathematics; specialist new pages have separate review records."
+}

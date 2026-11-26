@@ -1,0 +1,112 @@
+{
+  "schema_version": 1,
+  "edition": 24,
+  "reviewer": "/root/v24_late",
+  "review_method": "actual_image_view",
+  "document": "report",
+  "pdf": {
+    "path": "report.pdf",
+    "sha256": "880401177de97018c46ca7a8cd5d67fc0fcc5f81798c7d10f4ecdfc5f678f9e9"
+  },
+  "rendering": {
+    "renderer": "PyMuPDF",
+    "scale": 1.5
+  },
+  "checked_utc": "2026-11-26T08:36:23.673492+00:00",
+  "review_scope": "Final integrated PDF; independent of earlier standalone preview QA",
+  "viewing_detail": "全部 9 页通过实际展示的全页拼图逐页查看；物理 45 另单独查看完整 PNG。",
+  "whole_book_human_page_by_page_review": false,
+  "unresolved_findings": [],
+  "pages": [
+    {
+      "physical_page": 37,
+      "printed_page": "15",
+      "image": "checks/v24_late/report/physical_0037.png",
+      "image_sha256": "0fbfb06baac574df71978dc27dfe9516cf747ff103360ecdf15771b4461948f4",
+      "verdict": "pass",
+      "notes": "独立章标题为第二十四版专项核查：第二篇第16节后半，正常换成两行；B01 的范围和划去稿核查完整。B02 标题与首段同页，后文自然续到下一页，未挂在前半章标题下。",
+      "original_local_image": "/workspace/scratch/a886fd56dd2f/v24_work/late/final_qa/report/physical_0037.png",
+      "pixels_match_final_pdf_page": true
+    },
+    {
+      "physical_page": 38,
+      "printed_page": "16",
+      "image": "checks/v24_late/report/physical_0038.png",
+      "image_sha256": "0bc2ba62982deff2bb93a93f94eeee4f5b40f32b4c9ea91cebdcad1b95e5475f",
+      "verdict": "pass",
+      "notes": "B02 的 ker θ=(K) 公式和完备性说明完整；B03 的局部裂正合列、Hilbert 函数及两个方向的补证均在版心内。页眉正确显示第16节后半。",
+      "original_local_image": "/workspace/scratch/a886fd56dd2f/v24_work/late/final_qa/report/physical_0038.png",
+      "pixels_match_final_pdf_page": true
+    },
+    {
+      "physical_page": 39,
+      "printed_page": "17",
+      "image": "checks/v24_late/report/physical_0039.png",
+      "image_sha256": "ba3dbe43fdfd0dc4d1ded2ad18b08bb3d4326395cb855b244bfe870f3323ab51",
+      "verdict": "pass",
+      "notes": "B04 的次数订正、正秩例外和局部裂单射证明可读；B05 两行标题及自然二次类映射完整。页末零维反例段自然续到下一页，公式及正文未裁切。",
+      "original_local_image": "/workspace/scratch/a886fd56dd2f/v24_work/late/final_qa/report/physical_0039.png",
+      "pixels_match_final_pdf_page": true
+    },
+    {
+      "physical_page": 40,
+      "printed_page": "18",
+      "image": "checks/v24_late/report/physical_0040.png",
+      "image_sha256": "1c67edaf02a0a12058ef795fc9e5d5bc4e2413d74e31e1f20d14294c43152298",
+      "verdict": "pass",
+      "notes": "B05 从极化同构推出有限投射的因子分解、旧 t-矩阵反例、有限阶初始项消元公式以及 (ii)⇒(i)、(i)⇒(ii) 均完整可读。双向证明的小标题清楚，长公式未出界。",
+      "original_local_image": "/workspace/scratch/a886fd56dd2f/v24_work/late/final_qa/report/physical_0040.png",
+      "pixels_match_final_pdf_page": true
+    },
+    {
+      "physical_page": 41,
+      "printed_page": "19",
+      "image": "checks/v24_late/report/physical_0041.png",
+      "image_sha256": "42e6fbbaa5bd92cd363ba883feabfc92779c0fe1d89c46be5ab6db882fec9220",
+      "verdict": "pass",
+      "notes": "B06 的维数、正则序列及 r=n−m+1 的秩匹配补证可见，非正则环反例完整。B07 的相对平坦性说明正常流至下一页，无孤立公式或遮挡。",
+      "original_local_image": "/workspace/scratch/a886fd56dd2f/v24_work/late/final_qa/report/physical_0041.png",
+      "pixels_match_final_pdf_page": true
+    },
+    {
+      "physical_page": 42,
+      "printed_page": "20",
+      "image": "checks/v24_late/report/physical_0042.png",
+      "image_sha256": "de077c428ae206bc235498ed459f9b9d08515c6e155ed2affc8f4973199e3d3c",
+      "verdict": "pass",
+      "notes": "B08 的 1≤m≤d、零秩边界、判别式线丛指数和 V″∪V² 的集合说明清楚；B09 的 Λ^m u=0 作为层同态的假设及局部矩阵推导完整，续句在下一页接合。",
+      "original_local_image": "/workspace/scratch/a886fd56dd2f/v24_work/late/final_qa/report/physical_0042.png",
+      "pixels_match_final_pdf_page": true
+    },
+    {
+      "physical_page": 43,
+      "printed_page": "21",
+      "image": "checks/v24_late/report/physical_0043.png",
+      "image_sha256": "5f260ba36838d0d59e786285f24c154885ad58102c3eacce9544dc6e0c308404",
+      "verdict": "pass",
+      "notes": "B09 的非约化基底 ε 反例完整；B10 保留作者未验证状态的说明、局部 étale 坐标、T 与 f 的定义、雅可比理想和 Hessian 表示均可读。Fitting 理想公式排在版心内。",
+      "original_local_image": "/workspace/scratch/a886fd56dd2f/v24_work/late/final_qa/report/physical_0043.png",
+      "pixels_match_final_pdf_page": true
+    },
+    {
+      "physical_page": 44,
+      "printed_page": "22",
+      "image": "checks/v24_late/report/physical_0044.png",
+      "image_sha256": "ef24998136e1286f7a1eaa1f0a0029a0f6c6284edff24de496aec75fe1bc307a",
+      "verdict": "pass",
+      "notes": "B10 的 V²=V(Fitt₀ Ω¹) 等式及无需除以 2 的说明完整；B11 的余维上界反例、一手文献条号及最大子式高度公式清楚。B12 标题和迁移说明与下一页表格衔接正常。",
+      "original_local_image": "/workspace/scratch/a886fd56dd2f/v24_work/late/final_qa/report/physical_0044.png",
+      "pixels_match_final_pdf_page": true
+    },
+    {
+      "physical_page": 45,
+      "printed_page": "23",
+      "image": "checks/v24_late/report/physical_0045.png",
+      "image_sha256": "ddd13971af9e5d9084d0a1d1907d12d30c7b006f48f284c97f59bdd8e2e7da60",
+      "verdict": "pass",
+      "notes": "旧附记 56–62 的七行迁移表全部显示，列宽和换行正常，无表格截断；表后关于前半模块及核查范围的说明完整。页眉归属正确，已单独查看完整 PNG。",
+      "original_local_image": "/workspace/scratch/a886fd56dd2f/v24_work/late/final_qa/report/physical_0045.png",
+      "pixels_match_final_pdf_page": true
+    }
+  ]
+}

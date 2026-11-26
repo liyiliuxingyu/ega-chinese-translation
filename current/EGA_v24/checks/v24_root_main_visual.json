@@ -1,0 +1,99 @@
+{
+  "schema_version": 1,
+  "edition": 24,
+  "reviewer": "root",
+  "review_method": "actual_image_view",
+  "document": "main",
+  "pdf": {
+    "path": "main.pdf",
+    "sha256": "1a7af9a8ce697e4361a77c21b249a8c2e2042876e190c97f39aa66a1ccd2b993"
+  },
+  "rendering": {
+    "renderer": "PyMuPDF",
+    "scale": 1.5
+  },
+  "pages": [
+    {
+      "physical_page": 1,
+      "image": "checks/visual_v24_root/main_0001.png",
+      "image_sha256": "fb265ce1f8fd59bcb39e547258a2a24e68f201915fa6d4f9bb220c2efb894878",
+      "verdict": "pass",
+      "notes": "No clipping, missing glyph, overlap, or unintended blank content observed in actual image review."
+    },
+    {
+      "physical_page": 3,
+      "image": "checks/visual_v24_root/main_0003.png",
+      "image_sha256": "29c2c2908208473e4d9af8943cf4d824787f7caaa4fd14208fee9f14be306b37",
+      "verdict": "pass",
+      "notes": "No clipping, missing glyph, overlap, or unintended blank content observed in actual image review."
+    },
+    {
+      "physical_page": 4,
+      "image": "checks/visual_v24_root/main_0004.png",
+      "image_sha256": "aa7193e172f270b6ccb5c9e9dcdb24f7a26909cd03b66a6bd7f7b2e84da9f1da",
+      "verdict": "pass",
+      "notes": "No clipping, missing glyph, overlap, or unintended blank content observed in actual image review."
+    },
+    {
+      "physical_page": 5,
+      "image": "checks/visual_v24_root/main_0005.png",
+      "image_sha256": "bf2dface43cb7b7223cf61ff804cd6f5cb5120239406dc6d664145142b5d0755",
+      "verdict": "pass",
+      "notes": "No clipping, missing glyph, overlap, or unintended blank content observed in actual image review."
+    },
+    {
+      "physical_page": 17,
+      "image": "checks/visual_v24_root/main_0017.png",
+      "image_sha256": "e222292446557e6132a7c39c76edfaf5d7a882180485cefd5d74a346536fafef",
+      "verdict": "pass",
+      "notes": "No clipping, missing glyph, overlap, or unintended blank content observed in actual image review."
+    },
+    {
+      "physical_page": 946,
+      "image": "checks/visual_v24_root/main_0946.png",
+      "image_sha256": "1bca0900cf909b0834130e95107784d9a80d351515e0813019cf712f4bf790e1",
+      "verdict": "pass",
+      "notes": "No clipping, missing glyph, overlap, or unintended blank content observed in actual image review."
+    },
+    {
+      "physical_page": 947,
+      "image": "checks/visual_v24_root/main_0947.png",
+      "image_sha256": "d1325401e3cf92628d26951cb14585c04ab219fa54cf802039991b1d3b613e17",
+      "verdict": "pass",
+      "notes": "No clipping, missing glyph, overlap, or unintended blank content observed in actual image review."
+    },
+    {
+      "physical_page": 956,
+      "image": "checks/visual_v24_root/main_0956.png",
+      "image_sha256": "08cd2edbcc78533925e2b66e1732a4ceccf27b75558dc59636a1917284098471",
+      "verdict": "pass",
+      "notes": "No clipping, missing glyph, overlap, or unintended blank content observed in actual image review."
+    },
+    {
+      "physical_page": 964,
+      "image": "checks/visual_v24_root/main_0964.png",
+      "image_sha256": "c2662843cbba91bbd40fb7161084d24edca4243259c7ba05e91a02577a342314",
+      "verdict": "pass",
+      "notes": "No clipping, missing glyph, overlap, or unintended blank content observed in actual image review."
+    },
+    {
+      "physical_page": 965,
+      "image": "checks/visual_v24_root/main_0965.png",
+      "image_sha256": "dea8886830ad5a26c612bc1d80162cd3cc6e32421806a90a3d1527c71a1ba1e8",
+      "verdict": "pass",
+      "notes": "No clipping, missing glyph, overlap, or unintended blank content observed in actual image review."
+    }
+  ],
+  "normalized_from": {
+    "record": "recollation/v24/root_review/final_qa/ROOT_FINAL_QA.json",
+    "sha256": "db8867b8690874abcdf694cc985b2bfe229812e4e43f8360f249519ecb3792dd"
+  },
+  "observations": [
+    "Root actually viewed all 26 listed final-PDF page images, including covers, scope statements, changed table of contents, section16/17 seam, integration report, and report/history seams.",
+    "main physical946 and report physical26,36,46,48 are expected default book opening or blank pages; headers/page numbers where present are expected.",
+    "main physical956 keeps the complete invertible-module K diagram followed by the late-module source statement and deletion marker without overlap.",
+    "main physical964 has a continued translator footnote and the final original note, followed by the distinct inherited section17 opening on965; no missing seam text observed.",
+    "report physical23–25 integration narrative and the source-inheritance tables inspected at27,35,45 are within the text block.",
+    "This is visual evidence for the listed pages only. It is not a claim of manual review of all1210+557 pages or an audit of all inherited mathematics."
+  ]
+}

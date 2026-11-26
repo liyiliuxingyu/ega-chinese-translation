@@ -1,0 +1,178 @@
+{
+  "recorded_at_utc": "2026-11-26T01:17:43.583627+00:00",
+  "kind": "actual_view_of_recompiled_standalone_previews_after_title_source_mapping_patch",
+  "scope_excludes_final_integrated_book": true,
+  "documents": [
+    {
+      "pdf": {
+        "path": "v22_work/drafts/geometry/preview_book.pdf",
+        "bytes": 213368,
+        "sha256": "7b47a9db96ced0b8eeb4bd5fbf28c0349078569114fa37dafd9a6375ab48d710"
+      },
+      "physical_pages": 3,
+      "compiled_wrapper": {
+        "path": "v22_work/drafts/geometry/preview_book.tex",
+        "bytes": 18757,
+        "sha256": "9a4a94a953425e56569c2807479a26e609439da94ab972d989271b996db55139"
+      },
+      "input_module": {
+        "path": "v22_work/drafts/geometry/v22_section14_geometry.tex",
+        "bytes": 9954,
+        "sha256": "4ebb35b1e644b9bc1c0c4cfbadbb3a8318565d7793980ecbe683b9658e9eca6c"
+      },
+      "final_log": {
+        "path": "v22_work/drafts/geometry/preview_book.log",
+        "bytes": 42758,
+        "sha256": "dd20e8d5d8dbf8fa6d9e26191b4473e90d100c3974015d7678aab9823fd56763"
+      },
+      "stdout": {
+        "path": "v22_work/drafts/geometry/preview_book.stdout.txt",
+        "bytes": 13495,
+        "sha256": "0c34a54c3a1e0a9d2d5d61626e43b1451ace329e01af542fd002ec4b68c9a414"
+      },
+      "overfull_count": 0,
+      "fatal_error_present": false,
+      "nonfatal_warnings": "Math-font size substitution warnings remain; no claim of zero warnings.",
+      "pages": [
+        {
+          "physical_page": 1,
+          "image": {
+            "path": "v22_work/drafts/geometry/source_pages/preview_book_1.png",
+            "bytes": 181008,
+            "sha256": "c7ab3342a936aa8c426498c283e51f93e637712e55aac7584ad9eb08dab9c799"
+          },
+          "raster_scale": 1.4,
+          "actually_displayed_and_read": true,
+          "latest_rebuild_image_sha256_identical_to_previously_displayed_image": true
+        },
+        {
+          "physical_page": 2,
+          "image": {
+            "path": "v22_work/drafts/geometry/source_pages/preview_book_2.png",
+            "bytes": 155707,
+            "sha256": "fa83a20cd62cc9ad3c2e6d0a9d3088663bc056d87c46b484dc74eaedc5d13749"
+          },
+          "raster_scale": 1.4,
+          "actually_displayed_and_read": true,
+          "latest_rebuild_image_sha256_identical_to_previously_displayed_image": true
+        },
+        {
+          "physical_page": 3,
+          "image": {
+            "path": "v22_work/drafts/geometry/source_pages/preview_book_3.png",
+            "bytes": 182891,
+            "sha256": "3698175be67f4d4aefeaac49a3232bec71baa27b00e8eadd73d2549a5efddae4"
+          },
+          "raster_scale": 1.4,
+          "actually_displayed_and_read": true,
+          "latest_rebuild_image_sha256_identical_to_previously_displayed_image": true
+        }
+      ]
+    },
+    {
+      "pdf": {
+        "path": "v22_work/drafts/geometry/preview_audit.pdf",
+        "bytes": 273541,
+        "sha256": "07c92ebe52a044f35f5cd1cd18a5846d98e7c60c04d0dab2452978d1ee1a47c3"
+      },
+      "physical_pages": 6,
+      "compiled_wrapper": {
+        "path": "v22_work/drafts/geometry/preview_audit.tex",
+        "bytes": 21224,
+        "sha256": "89c274bbcc4c7b43d283a80afdf0f40bda3f5d3a329b99d8882c11aed83b50ac"
+      },
+      "input_module": {
+        "path": "v22_work/drafts/geometry/v22_section14_geometry_audit.tex",
+        "bytes": 12421,
+        "sha256": "62c304584ed8e112908b5de81d7d92480dcc31c16219a086ca308fa4c5d08683"
+      },
+      "final_log": {
+        "path": "v22_work/drafts/geometry/preview_audit.log",
+        "bytes": 43656,
+        "sha256": "5c2eaadaf6264f520726206820174a8f8e93050dbe3b455bb8ebb30a05580e22"
+      },
+      "stdout": {
+        "path": "v22_work/drafts/geometry/preview_audit.stdout.txt",
+        "bytes": 13374,
+        "sha256": "b5a30f997b6b99809e3708caee26cc26ab776da6a29ed9a0a09943946daf0ef0"
+      },
+      "overfull_count": 0,
+      "fatal_error_present": false,
+      "nonfatal_warnings": "Math-font size substitution warnings remain; no claim of zero warnings.",
+      "pages": [
+        {
+          "physical_page": 1,
+          "image": {
+            "path": "v22_work/drafts/geometry/source_pages/preview_audit_1.png",
+            "bytes": 131955,
+            "sha256": "8a19632c313b19771209ad8ca40fd876f30dcf1136bf44ffdf3f42090a59b8b5"
+          },
+          "raster_scale": 1.4,
+          "actually_displayed_and_read": true,
+          "actually_redisplayed_after_latest_rebuild": true
+        },
+        {
+          "physical_page": 2,
+          "image": {
+            "path": "v22_work/drafts/geometry/source_pages/preview_audit_2.png",
+            "bytes": 163012,
+            "sha256": "5b223360ce2f7acfa9c177ea4ecf89598c3238e92f90e431578cdc0c9eb9a0c6"
+          },
+          "raster_scale": 1.4,
+          "actually_displayed_and_read": true,
+          "actually_redisplayed_after_latest_rebuild": true
+        },
+        {
+          "physical_page": 3,
+          "image": {
+            "path": "v22_work/drafts/geometry/source_pages/preview_audit_3.png",
+            "bytes": 162399,
+            "sha256": "2dcd7c01cb809b0c7fd65977d3cc7762cc2aae707b36719bfb4fcb5cd146de3e"
+          },
+          "raster_scale": 1.4,
+          "actually_displayed_and_read": true,
+          "actually_redisplayed_after_latest_rebuild": true
+        },
+        {
+          "physical_page": 4,
+          "image": {
+            "path": "v22_work/drafts/geometry/source_pages/preview_audit_4.png",
+            "bytes": 165539,
+            "sha256": "91f81b42e5179940c78e1fcd9c29459aab24ccd56194dfac6672a689d3a060a1"
+          },
+          "raster_scale": 1.4,
+          "actually_displayed_and_read": true,
+          "actually_redisplayed_after_latest_rebuild": true
+        },
+        {
+          "physical_page": 5,
+          "image": {
+            "path": "v22_work/drafts/geometry/source_pages/preview_audit_5.png",
+            "bytes": 176511,
+            "sha256": "ca8a298d754368a957af022e341eb9a2078a1a3156c126f392f0f1967b7fb5b9"
+          },
+          "raster_scale": 1.4,
+          "actually_displayed_and_read": true,
+          "actually_redisplayed_after_latest_rebuild": true
+        },
+        {
+          "physical_page": 6,
+          "image": {
+            "path": "v22_work/drafts/geometry/source_pages/preview_audit_6.png",
+            "bytes": 82529,
+            "sha256": "dc2dc8ae1d35808c5a8d5fac0110a61eda778d6c15123e44d7dfa69de9b271f4"
+          },
+          "raster_scale": 1.4,
+          "actually_displayed_and_read": true,
+          "actually_redisplayed_after_latest_rebuild": true
+        }
+      ]
+    }
+  ],
+  "prior_build_record": {
+    "path": "v22_work/drafts/geometry/PREVIEW_VISUAL_CHECK_before_boundary_patch.json",
+    "bytes": 5572,
+    "sha256": "a74d92645240cd9583dd00894312659ac95cb1c52efac8d9b226b57c50360540"
+  },
+  "superseded_image": "source_pages/preview_audit_3_bottom.png belongs to previous standalone audit PDF hash in the historical record, not the current PDF. The incidence diagram is now on current audit physical page 4, which was actually displayed and read."
+}

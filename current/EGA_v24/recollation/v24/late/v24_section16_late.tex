@@ -1,0 +1,258 @@
+% V24 §16 second half. Verified sources: French physical 104–111; English 68–73 before §17.
+% This file is a full active replacement, not an appendix to the inherited §16.
+\begingroup
+\source{法文扫描第104—111页；英译第68页划去说明至第73页第17节标题前}
+% V24-L-P001 | EN68 editor; FR104–107 deletion
+\noindent\textbf{英译编者说明：} [以下部分被格罗滕迪克划去，英译者不确定原因。为求完整，仍将其转载；到划去部分结束之处，将标明“不再是划去内容”。]\cmt{V24-LAT001}{法文第104—107页确有贯页划线；第107页推论10（iii）结束之后，不再有这条划去线。这里保留被划去文字的全文及其地位；不把它当成已收入定稿的命题。}
+
+\def\Sym{\operatorname{Sym}}
+\def\gr{\operatorname{gr}}
+\def\im{\operatorname{im}}
+\def\Spec{\operatorname{Spec}}
+\def\m{\mathfrak m}
+\def\n{\mathfrak n}
+\def\Oa{\mathcal O}
+\def\Pp{\mathcal P}
+\par\medskip\noindent\textbf{作者划去稿（以下至英译编者结束标记）。}\par
+% V24-L-P002 | FR104 first paragraph; EN68
+写到这个在一般性上堪称可观的地步，我却遗憾地发现，前面这些展开仍过于特殊；应当考虑由$m$个截面定义的子预概形，以取代由$\mathcal O_X$的一个截面定义的子预概形。等价地，可以用一个同态
+\[
+E\longrightarrow\mathcal O_X
+\]
+定义它，其中$E$是秩为$m$的局部自由模。
+
+% V24-L-P003 | FR104 second paragraph; EN68
+是否从一开始就处理一般情形，留由你来决定，所依循的是从一般走向特殊的原则。\cmt{V24-LAT002}{英译以方括号补出受话人迪厄多内；法文扫描此处只写“你”。}
+
+% V24-L-P004 | FR104 augmentation terminology; EN68
+先为带有增广$A\to A/I$的环$A$引入一套术语，以便也在层的情形中使用。若满足以下条件，就称此增广为\emph{正则的}（还是按照第19节采用的定义，称为拟正则的？）：\cmt{V24-LAT003}{法文这里是“régulière”和“quasi-régulière”，故分别译为“正则”和“拟正则”；旧译“正规”“拟正规”改正。作者提出的名称选择仍保留。以下定义只规定一次分量与伴随分次代数，不另行假设$I$-进完备或分离。}
+\begin{enumerate}
+\item[(a)] $I/I^2$是有限型投射$A/I$-模；
+\item[(b)] 同态
+\[
+\theta:\operatorname{Sym}(I/I^2)\longrightarrow\operatorname{gr}_I(A)
+\]
+是同构。
+\end{enumerate}
+
+% V24-L-P005 | FR104 quadratic augmentation; EN69
+若上面的（a）及下述（b$'$）成立，就称这一增广为\emph{非退化二次型}的：\cmt{V24-LAT004}{法文原称“quadratique ordinaire”（普通二次型）；本节其判据是极化映射为同构。作者在下一节法文第112页撤回把“普通”与该判据等同的叫法，并把原来的“普通奇异零点”改称“奇异而非超奇异的零点”。本译将此处的增广称为“非退化二次型”，并对零点采用作者后改的名称，原名在此注明；该后续说明仅供校勘，并不计入本轮续译。特征$2$时，$q=X^2+YZ$定义的射影二次曲线光滑，而极化有$X$方向的核，故两种判据确实不同。}
+\begin{enumerate}
+\item[(b$'$)] 前述典范同态的核作为齐次理想，由其二次分量
+\[
+K=\ker\bigl(\theta^2:\Sym^2(I/I^2)\longrightarrow\gr_I^2(A)\bigr)
+\]
+生成；这个$K$是$\Sym^2(I/I^2)$的一个“非退化”的可逆子模。\cmt{V24-LAT005}{法文第104页写“核由$\theta^2$生成”，随即把“这个核”说成二次对称幂的可逆子模，混同了映射、全次数的核及其二次分量。第105页命题8明确给出$K=\ker\theta^2$。正文据此作类型明确的订正：$\ker\theta=(K)$。这是依据后文作出的数学订正，不声称原稿已经逐字写明了该等式。}
+\end{enumerate}
+% V24-L-P006 | FR104–105 polar map and residue fields; EN69
+所谓“非退化”，是指相应的同态
+\[
+K\otimes (I/I^2)^\vee\longrightarrow I/I^2
+\]
+为双射。这个同态由典范同态
+\[
+\operatorname{Sym}^2(I/I^2)\longrightarrow
+\operatorname{Hom}((I/I^2)^\vee,I/I^2)
+\]
+导出。说它是双射，也等价于说它是满射，因为这里讨论的是$A/I$上在各点秩相同的投射模。换言之，局部取$K$的一个基，则$(I/I^2)^\vee$上相应的二次型非退化。其实，对$A/I$的各个素理想处的约化纤维检验后面这些条件就够了，乃至只在极大理想处检验也足够。
+
+% V24-L-P007 | FR105 proposition8; EN69
+\noindent\textbf{命题8。}
+增广$A\to A/I$为非退化二次型的充要条件，是满足以下各条：
+\begin{enumerate}
+\item[$1^\circ$] 各$\gr_I^n(A)$都是有限型投射$A/I$-模。
+\item[$2^\circ$] 若以$d$表示$\gr_I^1(A)=I/I^2$在$p\in\operatorname{Spec}(A/I)$处的秩，则要求$d\ge1$，且对每个$n\ge0$，$\gr_I^n(A)$在同一点处的秩等于
+\[
+h_d(n)=\binom{n+d-1}{d-1}-\binom{n+d-3}{d-1},
+\]
+其中$n<2$时第二项按零计。\cmt{V24-LAT006}{法文第105页及英译均把这里写成$\binom{n+d}{d}-\binom{n-2+d}{d}$，与$d=\operatorname{rk}(I/I^2)$不相容；仅取$n=1$便得到$d+1$而非$d$。正文按$d$个变量的对称代数订正。原文还允许把等号换为“$\ge$”，并声称这样已能推出下一项中的$K$为可逆模；这不成立：多项式环的正则增广满足订正后的秩下界，却有$K=0$。等号版本可保留；若要仅用下界，则须另加$K$可逆且非退化，或至少在$n=2$处保留等号。正秩限制排除无二次关系的零变量情形。}
+\item[$3^\circ$] （$1^\circ$及$2^\circ$已蕴含$K=\ker\theta^2$是可逆模，在$\Sym^2(I/I^2)$中局部为直和因子。）$\Sym^2(I/I^2)$的子模$K=\ker\theta^2$是非退化的。
+\end{enumerate}
+
+% V24-L-P008 | FR105 proof transition and deleted phrase; EN69
+借助下述引理，证明是直接的。\cmt{V24-LAT007}{法文第105页在此划去“留给你来证明”一句；它是划去稿内部的再次删改，不作为现行正文断言。}
+
+% V24-L-P009 | FR105 lemma8.1; EN69
+\noindent\textbf{引理8.1。}
+设$B$是一个环，$M$是一个在各点秩为正的有限型投射$B$-模，$\phi\in\Sym^2(M)$是一个“非退化”元素。那么，对$n\ge2$，乘以$\phi$的同态
+\[
+\Sym^{n-2}(M)\xrightarrow{\ \cdot\phi\ }\Sym^n(M)
+\]
+是到某个直和因子子模的同构。因此，若$M$的秩为$d$，其余核是秩为
+\[
+\binom{n+d-1}{d-1}-\binom{n+d-3}{d-1}
+\]
+的投射模。\cmt{V24-LAT008}{法文第105页两处次数上标有叠写；英译编者也注明难辨。正文固定目标次数为$n$，把乘二次式写成$n-2\to n$，这是由运算次数确定的订正，不冒称读清了涂改笔画。原稿余核秩也写成命题8中的错误公式，英译还把第一项$n+d$误排为$n+3$。此外，正秩条件不可省略：若$B$为域、$M=0$，零极化$0\to0$是同构，但$n=2$时乘零映射$B\to0$非单射。真正所需的条件是每个剩余域纤维中的$\phi(x)\ne0$；对正秩$M$，极化非退化蕴含它。}
+
+% V24-L-P010 | FR105 proof and degree-k parenthesis; EN69
+我们立刻归结到$B$是一个域的情形，这时结论是平凡的。\cmt{V24-LAT009}{法文原写“$B$是一个域的谱”，但$B$是环，正文改为域。补证：在各剩余域上，多项式环中乘非零齐次式为单射；把源、目标局部平凡化后，每一点附近都有一个满列秩子式可逆，故映射局部裂单，余核有限局部自由，亦即有限投射。这个论证也适用于任意正次数$k$、且所有纤维中均非零的齐次式，正是作者括号内建议的推广。}（实际上，“非退化”只用来保证各个$\phi(x)$，$x\in\operatorname{Spec}(B)$，都不为零。用任意整数$k\ge1$代替$2$，而不提非退化，或许能更合理地表述本引理。）
+
+% V24-L-P011 | FR105 bottom–106 proposition9; EN69–70
+\noindent\textbf{命题9。}
+设环$A$带有正则增广$A\to A/I$，并且$I/I^2$是秩为$n$的投射$A/I$-模。设$E$是秩为$m$的投射$A$-模，其中$1\le m\le n$，$u:E\to I$是一个同态，因此有同态\cmt{V24-LAT010}{法文未明确限制$m\le n$；若容许$m=n+1$，条件（ii）可能落入零维二次型的空泛情形。取$A=k[t]_{(t)}$、$I=(t)$、$E=A^2$、$u(a,b)=at$，则$n=1,m=2$、$B=k$、$W=0$、$K=k$；极化$K\otimes W^\vee\to W$是$0\to0$的同构，但$B\to B$的二次关系核为零，非可逆模，故（i）不成立。正文补明$1\le m\le n$，从而相关二次空间具有正秩。}
+\[
+\bar u=u\otimes\operatorname{id}_{A/I}:
+E\otimes_A A/I\longrightarrow I/I^2.
+\]
+令$B=A/u(E)A$，赋以增广$B\to B/J=A/I$，其中$J=I/u(E)A$。下列条件等价：
+\begin{enumerate}
+\item[(i)] 环$B$的增广$B\to B/J$为非退化二次型，且秩为$n-(m-1)=n-m+1$。（增广的秩，按定义是投射模$J/J^2$的秩。）
+\item[(ii)] $K=\ker\bar u$是可逆模，并且自然同态
+\[
+K\longrightarrow\Sym^2(J/J^2)
+        =\Sym^2((I/I^2)/\im\bar u)
+\]
+是“非退化”的。\cmt{V24-LAT011}{这里“非退化”指极化$K\otimes W^\vee\to W$为同构。即使起初尚未知道$W$投射，这一条件也蕴含它：局部平凡化$K$，极化由一个有限二次张量给出，因而分解为$W^\vee\to R^a\to W$（$R=A/I$）；与极化的逆复合，得到$\operatorname{id}_W$分解过$R^a$。所以$W$是有限自由模的直和因子。继而$\operatorname{im}\bar u$与$K$的相关正合列局部裂开，得$\operatorname{rk}W=n-m+1$。不能仅从“$K$可逆”就断言纤维恒秩。}
+\end{enumerate}
+
+% V24-L-P012 | FR106 natural map construction; EN70
+如果记$V=I/I^2$、$W=J/J^2=V/\im\bar u$，也许更清楚。为得到（ii）中称为自然的那个同态，只须注意$K$无论如何都映入
+\begin{align*}
+I^2/(I^3+u(IE))
+ &= (I^2/I^3)/\im(IE)\\
+ &\simeq\Sym^2(I/I^2)/
+       \im\bigl((I/I^2)\otimes_{A/I}(E\otimes_A A/I)\bigr),
+\end{align*}
+其中同态
+\[
+(I/I^2)\otimes_{A/I}(E\otimes_A A/I)
+        \longrightarrow\Sym^2(I/I^2)
+\]
+是借助典范乘法同态
+\[
+(I/I^2)\otimes_{A/I}(I/I^2)\longrightarrow\Sym^2(I/I^2)
+\]
+定义的。\cmt{V24-LAT012}{对$k\in K$选提升$e\in E$，则$u(e)\in I^2$；换提升只改变一个$u(IE)$中的元素，故此二次类定义良好。正则增广给$I^2/I^3\simeq\Sym^2(V)$，$u(IE)$的像为$V\cdot\operatorname{im}\bar u$，商即$\Sym^2(W)$。法文第106页先列完（i）、（ii），再给这段商式；英译把解释插在两条件之间并漏排一个商号，正文按法文次序还原。}作出这些说明之后，命题9的证明几乎是平凡的。\cmt{V24-LAT013}{译者补证要点：沿$\Spec(A/I)$局部化，利用上注的裂开选基，使前$m-1$个方程的初始项为独立一次变量。逐一消去它们后，剩余方程$f$属于平方滤层；其二次初始项正是$K\to\Sym^2(W)$的像。若（ii）成立，引理8.1使该初始二次式在各次乘法中都是非零因子，故商的分次代数为$\Sym(W)/(q)$。反之，（i）给$W$投射及指定秩；同样消去一次变量，二次关系核由$f$的二次类生成，$K$到这条关系线的满射是同构，得（ii）。这里用到的滤层事实是：若$g\in I^r$的初始项为非零因子，则$ag\in I^N$且$N\ge r$蕴含$a\in I^{N-r}$，逐次察看次数小于$N-r$的初始类即可。因此商的分次环由该初始项给出；这一有限阶论证无需$I$-进完备、分离或Noetherian假设。完整推导收入核查报告。}
+
+% V24-L-P013 | FR106–107 corollary10; EN70–71
+\noindent\textbf{推论10。}
+设$A$是维数为$n$的正则局部环，$\m$为其极大理想，$k=A/\m$。设$E$为秩$m$的自由$A$-模，其中$1\le m\le n$，$u:E\to\m$为一同态。\cmt{V24-LAT014}{法文第106页明确有“正则”，英译第70页漏掉；正文据法文保留。正秩限制沿用命题9，避免（iii）把零维空间上的零极化误作奇点判据。秩$m$、极大理想$\m,\n$、剩余域$k$及核$K$按法文区分；这些字形在英译中多次混排。}令
+\[
+\begin{gathered}B=A/u(E)A,\qquad \n=\m/u(E)A,\\ V=\m/\m^2,
+\qquad W=\n/\n^2=V/\im\bar u,\end{gathered}
+\]
+其中$\n$是$B$的极大理想，$\bar u:E\otimes_A k\to V$由$u$诱导。下列条件等价：
+\begin{enumerate}
+\item[(i)] $B$的维数是$n-m$（也就是说，用$E$的一组基$(\phi_i)$来表述，这些$\phi_i$在$A$中的像组成一条$A$-正则序列），并且$\Spec(B)$的闭点是一个非退化二次奇点。这里所谓非退化二次奇点，是指增广$B\to B/\n$为非退化二次型。\cmt{V24-LAT015}{原名称是“普通二次奇点”，其在本稿中的定义仍是极化非退化；与后续“光滑二次型”所定义的普通二次奇点须区别。维数等式与正则序列的等价用到$A$为正则局部环，因而为Cohen--Macaulay环；并非任意局部环中仅按生成元数就能推出。}
+\item[(ii)] 存在$E$的一组基$\phi_1,\ldots,\phi_m$，使得：
+\begin{enumerate}
+\item[(a)] $A_{m-1}=A/(\sum_{i=1}^{m-1}A\,u(\phi_i))$是维数为$n-(m-1)$的正则环；
+\item[(b)] $u(\phi_m)$在$A_{m-1}$中的像以$\Spec(A_{m-1})$的闭点为奇异而非超奇异的零点（见定义1）。
+\end{enumerate}
+\item[(ii bis)] $\im\bar u$的秩为$m-1$；对$E$的任意一组基$(\phi_i)_{1\le i\le m}$，只要$\phi_i$（$1\le i\le m-1$）在$V$中的像线性无关，（ii）的（a）和（b）就成立。
+\item[(iii)] $\bar u:E\otimes_A k\to V$的核$K$是维数为一的向量空间；对任意$\phi\in K\setminus\{0\}$，由$\phi$所确定的$\Sym^2(W)$中的元素是一个非退化二次型。
+\end{enumerate}
+
+% V24-L-P014 | EN71 editor; FR107 deletion end
+\noindent〔英译者按：划去的部分到此结束。以下不再是划去内容。〕
+
+\par\medskip\noindent\textbf{零点的术语与奇异子预概形（恢复未划去正文）。}\par
+% V24-L-P015 | FR107 undeleted introduction; EN71
+请注意，（ii）和（ii bis）的类似条件，本可以提前放到命题9中。应当引入如下术语。设$X$为正则预概形，$E$是$X$上的局部自由模，$u:E\to\Oa_X$是同态，即$E^\vee$的一个截面。对
+$x\in V(u)=V(u(E)\Oa_X)$，若$u$是$\Oa_X$-正则的，即
+\[
+\dim\Oa_{V(u),x}=\dim\Oa_{X,x}-\operatorname{rank}_x E,
+\]
+并且$x$是$V(u)$的正则点，就称$x$为$u$的\emph{非奇异零点}。取$x$的一个邻域上$E$的一组基$\phi_1,\ldots,\phi_m$，这也可以表述为：各$u(\phi_i)$是$\Oa_{X,x}$的某个正则参数系的一部分。否则，称$x$为\emph{奇异零点}。
+
+% V24-L-P016 | FR107 singular zero terminology; EN71
+若$x$满足推论10中的等价条件，就称$x$为\emph{奇异而非超奇异的零点}（因此它确实是奇异零点）；这里自然取$A=\Oa_{X,x}$，其余记号相应解释。若$x$是奇异零点，却不是奇异而非超奇异的零点，就称为\emph{超奇异零点}。因此，非超奇异零点就是非奇异零点或奇异而非超奇异的零点。
+
+% V24-L-P017 | FR107–108 geometric and relative variants; EN71
+最后，当$X$在域$k$上光滑时，可以用显然的方式引入这些概念的几何版本。注意，撇开维数条件，也就是$\Oa_X$-正则性条件不谈，$x$的性质实际上可从它作为$V(u)$上的点的性质看出，即可从局部环$\Oa_{V(u),x}$看出（必要时将它视为$k$-代数）。在基域为$k$的情形，若$x$是$k$-有理点，则相对于$k$的概念与绝对概念一致，这可像$E$为可逆模时那样看出。最后，若$X$在预概形$S$上光滑，而$u:E\to\Oa_X$仍为同态，$E$为有限型局部自由模，就逐纤维地定义相对于$S$的对应概念。注意，若$x$相对于$S$非超奇异，则$V(u)$在$x$处在$S$上平坦（因为$u$相对于$S$是$\Oa_X$-正则的……）。\cmt{V24-LAT016}{法文第108页清楚写“plat”（平坦），英译误作“is that”。此处的平坦性确可从纤维正则序列推出：光滑态射在局部环上平坦且本质有限表示；逐个商去纤维上的正则序列仍平坦，见\href{https://stacks.math.columbia.edu/tag/0470}{Stacks Project，Tag 0470}。维数条件不可省略。本段把法文改写的基底字母一致记为$S$，下一段微分构造记为$Y$。}
+
+% V24-L-P018 | FR108 dual formulation; EN71
+当然（在定义正式写定以后，至少应把这点作为备注指出），也完全可以从局部自由模$E$的截面$u$出发，把$u$理解为同态$E^\vee\to\Oa_X$，即可应用前述定义。
+
+% V24-L-P019 | FR108 differential singular scheme; EN71–72
+当$X$在$Y$上光滑，给定同态$u:E\to\Oa_X$且$E$为秩$m$的局部自由模时，$u$相对于$Y$的奇异零点集是$V(u)=V^0$中一个确定的闭子预概形$V(u)^{\mathrm{sing}}=V^1$的底层集合。构造如下：取$\mathrm d^1u$，即$\mathcal P^1_{X/Y}(E^\vee)$的一个截面。它在$V^0$上的限制可以解释为同态
+\[
+E\otimes\Oa_{V^0}\longrightarrow
+\Omega^1_{X/Y}\otimes\Oa_{V^0}.
+\]
+于是$V(u)^{\mathrm{sing}}=V^1$表示相应同态
+\[
+(\bigwedge^m E)\otimes\Oa_{V^0}\longrightarrow
+\Omega^m_{X/Y}\otimes\Oa_{V^0}
+\]
+的零点预概形，也就是以下线丛扭曲的微分模中一个确定截面的零点预概形：\cmt{V24-LAT017}{法文第108页在源模$E$前明确有$\bigwedge^m$；英译漏排。源应为$\det E$，而$\Omega^m_{X/Y}=\bigwedge^m\Omega^1_{X/Y}$未必是线丛。局部坐标中该截面的分量就是相对微分矩阵的$m$阶子式；此处给出的是零子预概形的理想，不只是纤维秩所定义的点集。}
+\[
+\Omega^m_{X/Y}\otimes(\det E)^{-1}\otimes\Oa_{V^0}.
+\]
+
+% V24-L-P020 | FR109 formal principal parts and order2; EN72
+以下在$1\le m\le d$的范围内，\cmt{V24-LAT028}{原稿未明说这个范围。它与命题9中二次空间正秩的限制相对应。若$m=d+1$，可能有$W=0$且空行列式$D=1$，却不存在预期余维为$m$的零点；例如$X=\mathbb A^1_k$上$u=(t,0)$。因此本套二阶判据只在所列正秩范围内陈述；$m>d$时仍可构造$V^1$，但不套用下文的空维行列式判别。此前单方程定义1在零维情形另有字面例外，见前半模块V24-EAR034；不能把原稿在这些边界处互不兼容的定义悄悄认作等价。}要用微分方法刻画相对于$Y$的奇异而非超奇异的零点，只需对从$u$导出的同态
+\[
+\Pp^\infty_{X/Y}(E)|_{V^1}\longrightarrow
+\Pp^\infty_{X/Y}|_{V^1}
+\]
+表达命题9的条件。实际上，这又化为一个“二阶”条件，只涉及相应的同态
+\[
+\Pp^2_{X/Y}(E)|_{V^1}\longrightarrow
+\Pp^2_{X/Y}|_{V^1}.
+\]
+
+% V24-L-P021 | FR109 rank test and Vdoubleprime; EN72
+首先应表达同态
+\[
+(*)\qquad E|_{V^1}\longrightarrow\Omega^1_{X/Y}|_{V^1}
+\]
+的核$K$在$x$处可逆且为直和因子。换言之，该同态在$x$处的秩（因$x\in V^1$而至多为$m-1$）恰好为$m-1$。\cmt{V24-LAT018}{法文第109页及英译此处直接写“秩为$m-1$”，但$x\in V^1$只给秩$\le m-1$，正文补明“至多”。恰为$m-1$须由接下来的非消失条件另行保证。}（注意：局部自由模间同态在一点的秩，按定义就是它在$k(x)$上的相应向量空间同态的秩。）为表达这一点，取同态
+\[
+(\bigwedge^{m-1}E)|_{V^1}\longrightarrow
+\Omega^{m-1}_{X/Y}|_{V^1}
+\]
+的零概形$V''\subset V^1$，并只须写$x\notin V''$。\cmt{V24-LAT019}{法文第109页明确为$x\notin V''$；英译误排成$x\in V''$。其定义及下一段所用的开集也都要求“不属于”。本段的$V^1$按法文统一，英译中形似撇号的排字不另设概形。}
+
+% V24-L-P022 | FR109 K,W and quadratic map; EN72
+$V''$的定义确保$K|_{V^1\setminus V''}$是可逆模，且$(*)$的余核$W$在$V^1\setminus V''$上局部自由，秩为$d-(m-1)$（其中$d$是$X$在$Y$上的相对维数，等于$\Omega^1_{X/Y}$的秩）。\cmt{V24-LAT020}{此处法文维数叙述有印字$S$，相邻相对微分的底符有手改。英译者也指出这里的$S$应为$Y$。本段指同一相对构造。}应用命题9中说明的构造，得到同态
+\[
+M:K\longrightarrow\Sym^2(W).
+\]
+% V24-L-P023 | FR109–110 discriminant and V2; EN72
+只剩下表达它在$x$处是“非退化”的。为此，引入判别式
+\[
+D\in\Gamma\bigl(V^1\setminus V'',\,
+ K^{-d+m-1}\otimes(\det W)^2\bigr)
+\]
+（指数表示可逆模的张量幂）。\cmt{V24-LAT021}{法文第109页及英译原式均为$K^{-n+m-1}$；前文的秩却是$r=d-m+1$。极化为$K\otimes W^\vee\to W$，行列式属于$\operatorname{Hom}(K^{\otimes r}\otimes(\det W)^{-1},\det W)=K^{-r}\otimes(\det W)^2$，故指数改为$-d+m-1$。这里的判别式始终检测极化退化，不能在特征$2$中换成光滑二次型的判据。}令$V^2=V(D)$。它是$V^1\setminus V''$的闭子预概形。于是相对于$Y$的奇异而非超奇异的零点集就是
+\[
+V^1\setminus(V''\cup V^2),
+\]
+也就是说，相对超奇异零点的集合为$V''\cup V^2$。\cmt{V24-LAT022}{法文第110页及英译末句在$V''$和$V^2$之间未清楚印出并号；按前一句补集关系应为并集。$V^2$只先定义为开层$V^1\setminus V''$中的闭子预概形，不能由此单独称它为$V^1$的闭子预概形。这里对$V''\cup V^2$只辨认底层集合，未指定合并的闭子概形结构。}
+
+% V24-L-P024 | FR110 lemma introduction; EN72
+引入$V''$时，我在断言$W$与$K$在$V^1\setminus V''$上局部自由时用了一个一般事实；现在将它单列为引理（其中$V^1\setminus V''$变成$X$）。
+
+% V24-L-P025 | FR110 constant-rank lemma; EN72
+\noindent\textbf{引理。}
+设$u:E\to F$是预概形$X$上局部自由模之间的一个同态，$m>0$为整数，并假设$\bigwedge^m u=0$。那么以下条件等价：$\bigwedge^{m-1}u$在任一点都不消失（当然按各点的约化纤维理解）；$u(E)$是$F$的一个局部直和因子，并局部自由且秩为$m-1$；$u$在$X$的每一点秩都为$m-1$。\cmt{V24-LAT023}{假设$\bigwedge^m u=0$是结构层上的同态为零，不仅指每个剩余域上的值为零。局部取一个可逆的$(m-1)$阶子式，把矩阵化为$\operatorname{diag}(I_{m-1},C)$；各$m$阶子式为零迫使$C=0$，从而像、核、余核局部裂开。若删掉层同态为零的假设，$k[\varepsilon]/(\varepsilon^2)$上乘$\varepsilon$的映射在所有纤维上秩为零，但其像不为零，也非秩零直和因子。}
+
+% V24-L-P026 | FR110 proposal generalizing proposition6; EN72
+宜把这些构造概括为一个推广命题6的命题。
+
+% V24-L-P027 | FR110 smooth tower; EN72
+还须看一看怎样同样推广命题7。为此，假设$Y$本身在预概形$S$上光滑，相对维数为$N$。于是$X$在$S$上光滑，相对维数为$N+d$，其中$d$是$X$在$Y$上的相对维数。\cmt{V24-LAT024}{英译把$d$说成$Y$的相对维数；法文跨行读作“其中$d$是〔$X$〕在$Y$上的相对维数”，对象在扫描右缘不清，但由$N$已为$Y/S$维数及前文$d=\operatorname{rank}\Omega^1_{X/Y}$可确定此订正。}
+沿用前面的记号，再假设$V''=\varnothing$，于是$W$是秩为$d-m+1$的局部自由模（当$m=1$时总是如此！）。
+
+% V24-L-P028 | FR110–111 dimensions and generic footnote cue; EN72–73
+最后，假设$X$的闭子预概形$V^0$和$V^1$都在$S$上光滑，并且在每一点都具有给定$d,N,m$时所设定的最小相对维数，也就是分别具有相对维数
+\[
+(N+d)-m,\qquad (N+d)-m-(d-m+1)=N-1.
+\]
+（从行文上说，最好直接给出这些数，或许改用逐纤维余维表述：$V^0$在$X$中的余维为$m$，$V^1$在$V^0$中的余维为$d-m+1$；再在备注中用“泛型”最小维数原则说明这样选取的理由。）\cmt{V24-LAT025}{法文第110页手写列出$V^0$和$V^1$；英译跨第72—73页写$V^0$和$V'$，此处按法文统一记作$V^1$。光滑性及预期余维等式是独立假设。尤其$V^1$作为$V^0$中的最大子式退化轨迹，未必达到预期余维，下面的高度上界不能推出等号。法文的“即$W$局部自由”应在前述退化理想与指定秩条件下理解；$V''=\varnothing$是这里实际使用的假设。}
+
+% V24-L-P029 | FR111 ramification proposal; EN73 before section17
+设定这些条件之后，应当验证：$u$相对于$Y$的超奇异点集$V^2$恰是$V^1\to Y$发生分歧的点集，并把这一点精确表述为$X$的闭子预概形的恒等式：
+\[
+V^2=\text{$V^1\to Y$的分歧子预概形}.
+\]
+我没有详细做过这个验证，但相信基本上可以沿用命题7之后的那种分解方法。\cmt{V24-LAT026}{这句是作者明确留下的验证建议，本文保留其未完成性质。译者另作补证：在可逆的$(m-1)$阶相对雅可比子式附近，先消去前$m-1$个方程，归结到光滑的$T/Y$上单个函数$f$；在相对étale坐标$t_i$中，$V^1$的理想为$(f,\partial_1f,\ldots,\partial_rf)$，$r=d-m+1$。于是$\Omega^1_{V^1/Y}$由Hessian方阵表示，其第零Fitting理想为$(\det(\partial_i\partial_jf))$。二次初始项的极化也由同一矩阵给出，不需除以$2$。因此若把源端分歧子预概形定义为$V(\operatorname{Fitt}_0\Omega^1_{V^1/Y})$，便有上述概形等式。完整局部与粘合论证列入报告；此补证并非作者原稿中已有的证明。}
+
+\medskip
+% V24-L-P030 | FR111 footnote on maximal-minor codimension; EN73 moved before proposal
+\noindent\textbf{原注。}
+设$u:E\to F$是正则预概形$X$上局部自由模之间的同态，$E,F$的秩分别为$m,d$（$1\le m\le d$）。若$Z$由$u$的秩至多为$m-1$的点组成，则$Z$的每个不可约分支在$X$中的余维至多为$d-m+1$。\cmt{V24-LAT027}{法111和英73都写余维$\ge d-m+1$。该方向一般错误：在$X=\operatorname{Spec}k[t]$上取$\OO_X\to\OO_X^2$，$1\mapsto(t,0)$，则$Z=V(t)$的余维是$1$，而$d-m+1=2$。正文改为行列式理想高度定理给出的上界。参见 Eisenbud--Evans, \emph{A generalized principal ideal theorem}, \emph{Nagoya Math. J.}~62（1976），41--53，Cor.~2.3（Eagon--Macaulay--Northcott），\href{https://doi.org/10.1017/S0027763000024740}{DOI 10.1017/S0027763000024740}；在每个分支的泛点局部化，取子式次数$m$。英译把这则附注提前，法111置于分歧段之后，本稿从法文次序。}
+
+
+\endgroup

@@ -1,0 +1,262 @@
+{
+  "module": "v20_section12_extensions",
+  "recorded_at_utc": "2026-11-25T14:57:15.679874+00:00",
+  "scope": {
+    "start": "French physical 66: La proposition 2.1. se transpose sans changement",
+    "end": "French physical 69 upper: Théorème 5.6 s’étend tel quel, de même 5.7",
+    "next_excluded": "Proposition 6.1",
+    "english_physical_pages": [
+      44,
+      45
+    ]
+  },
+  "source_files": [
+    {
+      "path": "/workspace/scratch/a886fd56dd2f/ega-upload-audit/repository/archive_20261121/03_sources/EGA5_francais.pdf",
+      "sha256": "24cf8204184b58b18a46e5f63ecc36d6e791b3c8c96a09daac93de96ebd8e830"
+    },
+    {
+      "path": "/workspace/scratch/a886fd56dd2f/ega-upload-audit/repository/archive_20261121/03_sources/EGAVaiello.pdf",
+      "sha256": "23a20ef32fd16a1bd623c0c08ac080d04fc94f248de12133b713a19d6b0330d9"
+    },
+    {
+      "path": "/workspace/scratch/a886fd56dd2f/ega-upload-audit/repository/archive_20261121/03_sources/EGAIV.2.pdf",
+      "sha256": "9588bedb000e9a9f24685c0bb146aa2384209b14b1928b984d81794499d1226b"
+    }
+  ],
+  "actual_visual_inspection": {
+    "french_main": [
+      66,
+      67,
+      68,
+      69
+    ],
+    "english_main": [
+      44,
+      45
+    ],
+    "french_cross_references": [
+      16,
+      18,
+      19,
+      20,
+      23
+    ],
+    "ega_iv2_physical": [
+      142,
+      143
+    ],
+    "ega_iv2_printed": [
+      145,
+      146
+    ],
+    "original_pdf_crops": [
+      "fr067_section4_4x",
+      "fr068_section4_4x",
+      "fr067_section5_3x",
+      "fr068_section5_3x",
+      "fr069_section5_4x"
+    ],
+    "duplicate_scans": {
+      "pages": [
+        67,
+        68
+      ],
+      "finding": "Same leaf, same amendments and crossed-out passages; no substantive textual variant found; translated once"
+    }
+  },
+  "confirmed_corrections": [
+    {
+      "id": "V20-EXT001",
+      "origin": "English transcription omission",
+      "original": "dim x <= m-1",
+      "corrected": "dim closure({x}) <= m-1",
+      "evidence": "bar above x visible French66"
+    },
+    {
+      "id": "V20-EXT006",
+      "origin": "English mistranslation inherited by v19",
+      "original": "At least / 至少",
+      "corrected": "除非觉得……",
+      "evidence": "À moins qu’il soit amusant d’expliciter on French67/68"
+    },
+    {
+      "id": "V20-EXT007",
+      "origin": "Inconsistent transcription of handwritten closed-set family",
+      "original": "G in English45 vs sigma in English13",
+      "corrected": "sigma throughout the cross-reference to 3.3",
+      "evidence": "Same handwritten glyph in French16 and French67/68; object is the family of closed subsets, not universal quotient G"
+    },
+    {
+      "id": "V20-EXT008",
+      "origin": "Mathematical resolution of English alternative, not definitive palaeographic resolution",
+      "original": "m-1 or m+1 (illegible, ask AG)",
+      "corrected": "m+1 in body; glyph ambiguity explicitly retained in footnote",
+      "evidence": "French19 4.3(b)(v),(vi) bound 2 at m=1; French67/68 3.1/3.2 bound m+1; generic conic section refutes m-1"
+    },
+    {
+      "id": "V20-EXT011",
+      "origin": "English transcription error",
+      "original": "locally free module of rank n ... m sections",
+      "corrected": "rank m ... m components",
+      "evidence": "Both French67/68 print rank m and m sections"
+    },
+    {
+      "id": "V20-EXT012",
+      "origin": "English transcription case error",
+      "original": "F_S",
+      "corrected": "F_s",
+      "evidence": "lowercase s and handwritten (S_m) French69"
+    },
+    {
+      "id": "V20-EXT-A04",
+      "origin": "Dot118 supplementary reference mismatch",
+      "original": "Stacks062I cited for local regular/Koszul equivalence",
+      "corrected": "Stacks09CC",
+      "evidence": "actual062I is H1-regular implies quasi-regular;09CC states equivalence with Noetherian local finite nonzero module and maximal-ideal entries"
+    }
+  ],
+  "unresolved_or_qualified": [
+    "French67/68 hand-overwritten sign in the 4.3 bound remains palaeographically ambiguous; mathematical statement uses m+1 with separate rationale.",
+    "French67/68 several crossed-out short strings and a superseded object in 5.2 cannot be fully read; location recorded, not silently restored.",
+    "French69 condition overwritten by (S_m) looks like CM before deletion but is not asserted as a certain reading.",
+    "Rank-m regular section on arbitrary preschemes/modules needs a convention outside the zero locus; the supplementary Koszul equivalence is restricted to Noetherian local finite modules at zero points.",
+    "No claim to prove all generalized results2.1--5.7 or to supply the suggested generalization of3.1.1."
+  ],
+  "supplementary_evidence": {
+    "conic_counterexample": "Smooth conic YZ=X^2 in P2, generic line Y=aX+bZ gives u^2-au-b, discriminant a^2+4b nonzero; geometric fibre has two distinct points. Refutes m-1 and m for m=1 in4.3(v),(vi).",
+    "module_counterexample": "R=k[x,y]_(x,y), M=R is CM; (x,xy) has H1=R/(x), generator(-y,1), boundaries x(-y,1).",
+    "fibre_counterexample": "R=k[t,x], phi=tx is nonzerodivisor on total space but zero on t=0 fibre; quotient has t-torsion[x].",
+    "primary_reference_local": "EGAIV.2 proposition6.7.1(ii), printed145--146, actual pages142--143, for coherent-module(S_m) field-extension stability under local Noetherian plus local finite-type or finite-type extension hypothesis.",
+    "primary_reference_web": [
+      "https://stacks.math.columbia.edu/tag/0B2N",
+      "https://stacks.math.columbia.edu/tag/09CC",
+      "https://stacks.math.columbia.edu/tag/062D",
+      "https://stacks.math.columbia.edu/tag/00LE",
+      "https://stacks.math.columbia.edu/tag/031O"
+    ],
+    "web_reference_ids": [
+      "turn376335218view2",
+      "turn216418400view0",
+      "turn216418400view2",
+      "turn558081020view2",
+      "turn558081020view1"
+    ]
+  },
+  "actual_computations": [
+    {
+      "command": "python3 verify_local.py",
+      "cwd": "/workspace/scratch/a886fd56dd2f/ega-upload-audit/translation_v20/dot_sources/118",
+      "script_sha256": "3c8ca0d5786bafd30a8324905d831b4c9faabb85c8253e0048054a93f392164b",
+      "exit_code": 0,
+      "stdout": "PASS 50534 finite pairs of linear sections; independent tuple image checked in ranks 2–3\nPASS symbolic exterior-power change of Koszul basis; (x,xy) has a nonzero H1 class",
+      "scope": "q=2,3 and r=2,3,4 finite linear subspaces; tuple image only r<=3; universal rank-two chain identity. Not a proof of all geometric extensions."
+    },
+    {
+      "command": "Inline SymPy symbolic verification",
+      "exit_code": 0,
+      "results": [
+        "discriminant(u^2-a*u-b,u)=a^2+4*b",
+        "A*d2(f*A)=det(A)*d2(f)",
+        "(x,x*y)*(-y,1)^t=0; d2(x,x*y)=x*(-y,1)^t",
+        "Groebner remainder of t*x mod(t*x)=0 and remainder of x=x"
+      ],
+      "scope": "Checks explicit identities supporting the written proofs; non-boundary and nonflat conclusions explained algebraically in audit."
+    }
+  ],
+  "legacy": {
+    "v19_source": "/workspace/scratch/a886fd56dd2f/ega-upload-audit/repository/current/EGA_v19/continuations/v_dot_middle.tex",
+    "v19_sha256": "db4bb436a85fe1632ba25e518ae396bb261bc3aa06bf63e8208392d95083cc93",
+    "exact_footnotes_archived_in_report": [
+      {
+        "id": "D17-M013",
+        "exact_text": "底本简写为“$\\dim x\\leq m-1$”。前文2.2讨论 $P$ 中子集在一般超平面中的逆像何时为空，其 $m=1$ 情形要求每一点都闭；证明也明确取点的闭包。因此这里把点的维数解释为其在 $P$ 中闭包的维数，而不是局部环维数或余维。对于域上有限型射影空间，这也等于该点剩余域在底域上的超越次数。此为记号澄清，不是在此补造全部推广证明。"
+      },
+      {
+        "id": "D17-M014",
+        "exact_text": "保留这句编写者之间的插语及原英译者对语种、语气的疑问；它不构成数学论证步骤。"
+      },
+      {
+        "id": "D17-M015",
+        "exact_text": "这是一条对原命题2.6的编写指示，必须连同该命题原有适用条件以及本节相应的非空性条件阅读。不能抽离条件后声称任意 $X$ 的任意余维 $m$ 截面都具有维数 $\\dim X-m$。底本第8页2.6本身还有标为字迹不清的附语，本译稿没有将其恢复。"
+      },
+      {
+        "id": "D17-M016",
+        "exact_text": "2.7原文实际用 $Z_i$ 表示关联素循环，条件写为 $\\dim f(Z_i)>0$；“同样的替换”是把这里的下界改为 $m$，不是将 $Z_i$ 改名为 $X_i$。本段各“有限”替换均针对相应原条目中的像集或例外集，仍须保留原条目的构造性、有限型等假设。"
+      },
+      {
+        "id": "D17-M017",
+        "exact_text": "本段逐项保留原稿对2.8—2.18的指示，并未将各条的假设删去或重新统一。例如2.12原文有 $f$ 无分歧的假设。“证明基本不变”是原稿判断，不是本译稿对全部推广证明完成独立验证的声明。"
+      },
+      {
+        "id": "D17-M018",
+        "exact_text": "这里保留原稿的省略号及编写建议，没有凭引理编号补造3.1.1的推广陈述。此处 $G$ 是3.3中定义的对象，不应与本节开篇的泛商模 $G$ 混同。"
+      },
+      {
+        "id": "D17-M019",
+        "exact_text": "底本明确留下“$m-1$ or $m+1$ (illegible, ask AG)”的两种读法。本译稿未取得可消除歧义的原手稿，因此不选择其中一个作为正确正文条件，也不凭邻近条目的 $m+1$ 猜补；这一项仍待核。"
+      },
+      {
+        "id": "D17-M020",
+        "exact_text": "底本作“[Le laius 5.1 Fr or Latin 67]”，保留着英译编辑者对语言及页码的标记；这里按其语境译作“那段论述”，不把67当作数学条目号。"
+      },
+      {
+        "id": "D17-M021",
+        "exact_text": "底本的$T$排作“$X_Sx\\mathrm{Gr}^m$”，此处展开为纤维积；截面所在模排作$\\mathcal O_{X_{k(\\xi)}}(1)_{k(\\xi)}\\otimes G(\\xi)$，重复的基变换下标在正文整理为通常写法。$G$仍指本节开头的泛秩$m$商模，$G(\\xi)$是其在$\\xi$处的纤维；并非第5节中作为限制模所用的同名字母。"
+      },
+      {
+        "id": "D17-M022",
+        "exact_text": "底本前半句写“rank $n$”，后半句却写“$m$ sections”；本段及相邻两段以$m$表示截面的秩。秩$m$的局部自由模在一组基下恰有$m$个分量，故正文将前一处$n$统一为$m$，而非改变所需序列的长度。底本还留有“this means that such a section if $F$ regular”的句法残损，按后文定义性语境译出。基无关性仍按原稿保留为待验证事项，不在这里宣称已给出证明。"
+      },
+      {
+        "id": "D17-M023",
+        "exact_text": "底本此处排作$F_S$。所指5.5先固定$\\xi$在$s\\in S$之上，再假设纤维模$F_s$满足$(S_1)$；此处推广的是同一个纤维上的条件，故正文写$F_s$。原稿没有在本段给出具体维数判据，本译稿不凭概括性指示补造公式或删减前文假设。"
+      },
+      {
+        "id": "D17-M024",
+        "exact_text": "“照原样”是原作者的推广指示，并不意味着可以丢弃5.6中的有限表示、相对于$S$平坦等假设或5.7中的固有性条件；本译稿仅译出指示本身，未重写这些条目的完整陈述和证明。"
+      }
+    ],
+    "dot118_source": "/workspace/scratch/a886fd56dd2f/ega-upload-audit/translation_v20/dot_sources/118/EGA第五卷_线性截面的维数条件与正则性.tex",
+    "dot118_sha256": "1ad2352b89439763e15d9128baaf357321bfa522939e3aef75b29fc3b677d01f",
+    "candidate_supplementary_proofs": "Not original French; separately reviewed in audit; original candidate preserved by root integration."
+  },
+  "owned_outputs": [
+    {
+      "path": "continuations/v20_section12_extensions.tex",
+      "sha256": "48eca7d72d53016437d70ae29b63504a8c12b443e6890eb2d4c5f7477231ceb1"
+    },
+    {
+      "path": "reports/v20_section12_extensions_audit.tex",
+      "sha256": "0ec6a41d2aee5ac68f687986c3dab34eda5e1e5ed86e1482d943990ef8fd9f75"
+    }
+  ],
+  "build_status": "Not claimed here; root integrates and builds final volume/report.",
+  "source_structure_checks": {
+    "performed": true,
+    "brace_balance": "passed for both TeX files",
+    "environment_balance": "passed for both TeX files",
+    "new_footnotes": 13,
+    "legacy_footnotes_exactly_once": 12,
+    "next_proposition_not_introduced": "6.1",
+    "tex_frozen_for_root_build": true
+  },
+  "final_integrator_update": {
+    "status": "Full modular and independent single builds, all-page parity and specified final-page visual reviews completed.",
+    "hash_scope_note": "Any earlier output hashes/build-status fields above record the module review before integrator layout edits. Final artifacts below supersede those artifact bindings without rewriting the historical observations.",
+    "files": [
+      {
+        "path": "continuations/v20_section12_extensions.tex",
+        "bytes": 8601,
+        "sha256": "e2a88c07c339f8bb03a7cc78cfb71de0e2a98ffb9a87c5d9326f2aeb5b1e9609"
+      },
+      {
+        "path": "reports/v20_section12_extensions_audit.tex",
+        "bytes": 20529,
+        "sha256": "2492649b17e6eaf110322e215eaf6b0827c2c47887916308be64b2d0f6b6d9c8"
+      }
+    ],
+    "changes_after_module_handoff": "Report source-line, table and local criterion display were wrapped; two intact body footnotes moved before their respective displays to remove isolated markers.",
+    "evidence": "ARTIFACTS.json; checks/current_pdf_parity.json; checks/visual_verification_summary.json"
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "schema_version": 1,
+  "edition": 23,
+  "reviewer": "/root/v23_smoothness",
+  "review_method": "actual_image_view",
+  "document": "main",
+  "pdf": {
+    "path": "main.pdf",
+    "sha256": "9396741a30df30bc5950e3cae1a7c3b9f809351eed777797c59d382c3aa9f3de"
+  },
+  "rendering": {
+    "renderer": "PyMuPDF",
+    "scale": 1.65,
+    "colorspace": "RGB",
+    "alpha": false
+  },
+  "reviewed_at_utc": "2026-11-26T03:27:44.035063+00:00",
+  "scope": "Only physical pages 1086–1088 of the final integrated edition-23 main PDF. After the input-boundary whitespace fix, page1086 was re-rendered and actually viewed again; prior actually viewed full-page RGB renders for pages1087–1088 were independently verified pixel-for-pixel identical to new final-PDF renders and rebound. The isolated preview was not substituted.",
+  "pages": [
+    {
+      "physical_page": 1086,
+      "image": "checks/visual_v23/smoothness/main_1086.png",
+      "image_sha256": "ab618a1727788bf7049d065b74182eb4b19a8247cb307a83433bd5ec6513670f",
+      "verdict": "pass",
+      "notes": "边界空白修复后重新实际查看新PDF完整页：前半末句及SET015脚注与后半正文衔接正常；三项好条件、切映射、E(x,V)维数界全部可辨；SMO003附于列表前，页底五条脚注无裁切、重叠、缺字或独立标号行。"
+    },
+    {
+      "physical_page": 1087,
+      "image": "checks/visual_v23/smoothness/main_1087.png",
+      "image_sha256": "302de7e85da15053c9bb9242504b70842c4e1328db5ac65a3202e2dbfa4ec3f0",
+      "verdict": "pass",
+      "notes": "实际查看完整页：G_red 上共同泛平坦开集论证跨页续句正常；tilde f、j_U、dim E 估计及 E_eta 为空的公式完整；SMO007 附在估计前的句子。恢复的 2.12 至 2.18 句、7.1/7.2/7.3 无撇号的正文及六条脚注排版可辨，无裁切或重叠。 此页沿用此前实际看图结论：本轮已独立将该PNG的尺寸、RGB样本逐像素与新最终PDF渲染比较，完全相同后重绑；没有把未查看的新图记为已看。"
+    },
+    {
+      "physical_page": 1088,
+      "image": "checks/visual_v23/smoothness/main_1088.png",
+      "image_sha256": "11000a5b04174ec8aaa226d1eb55bd5a58f164e04f9743fae06fafd869113272",
+      "verdict": "pass",
+      "notes": "实际查看完整页：7.4 续句、第3/6节待推广状态、8.7(c) 否定与建议口吻均完整保留；SMO011、012 位于页底且与对应正文连接，脚注线及页眉页码正常；章尾空白由短末段和页底脚注组成，无遗漏符号或额外正文。 此页沿用此前实际看图结论：本轮已独立将该PNG的尺寸、RGB样本逐像素与新最终PDF渲染比较，完全相同后重绑；没有把未查看的新图记为已看。"
+    }
+  ],
+  "rebinding": {
+    "prior_pdf_sha256": "7de3aee3cb4e924a06ed99dcca3cf38c89ed74941c084b38787d07d6600fbf22",
+    "prior_actual_reviewed_at_utc": "2026-11-26T03:23:01.606695+00:00",
+    "method": "Physical1086 actually re-rendered and re-viewed; physical1087–1088 exact dimensions/colorspace/RGB-sample equality against the new final PDF.",
+    "comparison_record": "checks/v23_smoothness_main_rebind_pixels.json",
+    "comparison_record_sha256": "451265b15953750c03a4ebf2c931eac4bf3c13681db102fa0a542bdbaba91d7b",
+    "page1086_actual_reinspection": "pass",
+    "unchanged_prior_actual_views_rebound": [
+      1087,
+      1088
+    ]
+  }
+}

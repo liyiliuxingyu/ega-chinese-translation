@@ -1,0 +1,131 @@
+{
+  "edition": 23,
+  "pdf_path_at_review": "/workspace/scratch/a886fd56dd2f/v23_work/EGA_v23/report.pdf",
+  "pdf_sha256": "611f26e969163d63dcae1645bed7625abce3750e1a791d59954dcf6a44da8985",
+  "total_pages": 527,
+  "render_scale": 1.55,
+  "pages": [
+    {
+      "physical_page": 1,
+      "image_path_at_review": "/workspace/scratch/a886fd56dd2f/v23_work/root_review/final_report_pages/report-0001.png",
+      "png_sha256": "cf45a76d22561c1afd780d9348eba374aad937170121aa6df551dc16ceda22d9",
+      "rgb_sha256": "f04339c5ff36faa138d09656283642d515dae8bc135eac927d0cd75e1c30f647",
+      "width": 923,
+      "height": 1305
+    },
+    {
+      "physical_page": 3,
+      "image_path_at_review": "/workspace/scratch/a886fd56dd2f/v23_work/root_review/final_report_pages/report-0003.png",
+      "png_sha256": "61f10b63ec0626c01ed2e6d4435b03a17ce849cb3dfadce03cff375de9636f93",
+      "rgb_sha256": "4f582521c69bfd5a96d040f4ea0a5ac55fa72edd4b2c17629978750ac3a8f38a",
+      "width": 923,
+      "height": 1305
+    },
+    {
+      "physical_page": 5,
+      "image_path_at_review": "/workspace/scratch/a886fd56dd2f/v23_work/root_review/final_report_pages/report-0005.png",
+      "png_sha256": "73db74c46dba0932399bff3b20e2547561353543a5f67ef0974e3afaac6d66e3",
+      "rgb_sha256": "2c69051477eceedb327a799169a1a8942856daefffea24b775bd0db1377a79ac",
+      "width": 923,
+      "height": 1305
+    },
+    {
+      "physical_page": 6,
+      "image_path_at_review": "/workspace/scratch/a886fd56dd2f/v23_work/root_review/final_report_pages/report-0006.png",
+      "png_sha256": "663a3c78ce69e8ca18d01c91c30abde84986c3584b79c80840fd3435c88296ee",
+      "rgb_sha256": "8bf73d1533f6d9d99db74c8c681b6d29462f1e147fbedc459bd02d50c1edfdcf",
+      "width": 923,
+      "height": 1305
+    },
+    {
+      "physical_page": 20,
+      "image_path_at_review": "/workspace/scratch/a886fd56dd2f/v23_work/root_review/final_report_pages/report-0020.png",
+      "png_sha256": "1acdd478f0a611d7b000c9c8555c21f8e7a2e34047b4f206ea48dbca69407c8e",
+      "rgb_sha256": "08c8d98448a6f4c6d3979bb50060099034031d591bb6a8f44d7fb8b26e149c22",
+      "width": 923,
+      "height": 1305
+    },
+    {
+      "physical_page": 21,
+      "image_path_at_review": "/workspace/scratch/a886fd56dd2f/v23_work/root_review/final_report_pages/report-0021.png",
+      "png_sha256": "17cc46dae086beac8466388edbe36d0cd7007bea88bde7cfe13a09600a22b26a",
+      "rgb_sha256": "8070bdc59590c95539e091814e71344d67c068331c6a3c03a83c8f3bac56ddad",
+      "width": 923,
+      "height": 1305
+    },
+    {
+      "physical_page": 22,
+      "image_path_at_review": "/workspace/scratch/a886fd56dd2f/v23_work/root_review/final_report_pages/report-0022.png",
+      "png_sha256": "b3ef8b4083ebb5a214846348af1602d4ef15fd1899ada80ad6a67209b14c25c2",
+      "rgb_sha256": "ebeed86764e7888cca99e690cfd800f1bd1ea6c26f4536c0b675158c559e052e",
+      "width": 923,
+      "height": 1305
+    },
+    {
+      "physical_page": 23,
+      "image_path_at_review": "/workspace/scratch/a886fd56dd2f/v23_work/root_review/final_report_pages/report-0023.png",
+      "png_sha256": "ab32f2d25b1b65778d998091ae22370e594072f901fcef175d16ba8a3886c495",
+      "rgb_sha256": "07f33c64a04edb4c11cef9fe122e7bcf0a4556aaae93bf990c662c922d3f9d8b",
+      "width": 923,
+      "height": 1305
+    },
+    {
+      "physical_page": 24,
+      "image_path_at_review": "/workspace/scratch/a886fd56dd2f/v23_work/root_review/final_report_pages/report-0024.png",
+      "png_sha256": "8716662dab2406c299ecfa58a557111848abefc204326a9a12f0158cd2a87062",
+      "rgb_sha256": "8310cc3f498ce5b0a0475dccd597dcf647e8b86aa40cecfdfd24bcb2f071ab3c",
+      "width": 923,
+      "height": 1305
+    },
+    {
+      "physical_page": 41,
+      "image_path_at_review": "/workspace/scratch/a886fd56dd2f/v23_work/root_review/final_report_pages/report-0041.png",
+      "png_sha256": "c9e6c679c21c53b38802914909cb3e2be48272371692c84c976ab6e3501617e9",
+      "rgb_sha256": "816cd6fe64b61444d934dc6a6fd324614c3579ebc3a13f1ab16b58183ae2e165",
+      "width": 923,
+      "height": 1305
+    },
+    {
+      "physical_page": 42,
+      "image_path_at_review": "/workspace/scratch/a886fd56dd2f/v23_work/root_review/final_report_pages/report-0042.png",
+      "png_sha256": "6dbbb363c4176d14b08bd8b5d218d6859d286ea823292ad1d502fbe583faf841",
+      "rgb_sha256": "e4406c7af23c538170164711c92c9d2a001b694061488d00562253dd23dac225",
+      "width": 923,
+      "height": 1305
+    },
+    {
+      "physical_page": 43,
+      "image_path_at_review": "/workspace/scratch/a886fd56dd2f/v23_work/root_review/final_report_pages/report-0043.png",
+      "png_sha256": "a4a3bfe9d56f9e6ed767f41ec684567f7bfa7cc6fe2ae874c72a1a553a8587a7",
+      "rgb_sha256": "b66f41fb17bd93c5bf57f9d5ca1b049650f56e95d745d1df40c4c73b97d77cd5",
+      "width": 923,
+      "height": 1305
+    },
+    {
+      "physical_page": 44,
+      "image_path_at_review": "/workspace/scratch/a886fd56dd2f/v23_work/root_review/final_report_pages/report-0044.png",
+      "png_sha256": "9566b9b96349343b86bcc11b8c64c39a458c914615e3896b72ddbb4109c11364",
+      "rgb_sha256": "6f3393344972107f4b907039f3d81586360ad9cfce7d7f7fd416cdeb6f679b90",
+      "width": 923,
+      "height": 1305
+    },
+    {
+      "physical_page": 45,
+      "image_path_at_review": "/workspace/scratch/a886fd56dd2f/v23_work/root_review/final_report_pages/report-0045.png",
+      "png_sha256": "216d681f62ad6762f5e3ec76dcc3d193acdaa8f5923891600e97d7b220dded75",
+      "rgb_sha256": "699c36b69a196e3d1729686a08d87b4e7846c01b0568474c3eab7e0e1bb2e530",
+      "width": 923,
+      "height": 1305
+    },
+    {
+      "physical_page": 527,
+      "image_path_at_review": "/workspace/scratch/a886fd56dd2f/v23_work/root_review/final_report_pages/report-0527.png",
+      "png_sha256": "7c38c5d572356e3e5d843da17692e8cd5e570b1234cd86a67f6059c537f867d7",
+      "rgb_sha256": "638fd8eef4552672de3c9100494823010f26e54a93336d7a8efcb2da52c62f86",
+      "width": 923,
+      "height": 1305
+    }
+  ],
+  "status": "all_15_rendered_pages_actually_displayed_and_visually_reviewed",
+  "final_check_record": "checks/v23_root_report_visual.json"
+}

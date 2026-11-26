@@ -1,0 +1,35 @@
+Let us again take a closed subset Z of X such that dim f(Z) ≥m we see that Zη →G
+is dominant and consequently Z is of dimension equal to dim Z −dim G = dim Z −m.
+These properties allow us to develop in the present context the resdults corresponding to
+2.1 and 2.11. There is a condition over [illegible] (insuring the validity of 2.12, i.e. that if
+X is smooth then X is also such if we assume f: X →P unramiﬁed). We assume now that
+P is smooth over k, P →Pk × G quasi-ﬁnite, and that the following condition is satisﬁed
+(where we assume k algebraically closed) for every x ∈P(k) and for every vector subspace
+V of dimension n ≥m of the tangent space Tx(P) to P at x, we consider the set E(x, V ) of
+ξ ∈G(k) such that P has a point over x not satisfying the following set of conditions: Pξ
+is smooth at z, the tangent morphism of Pξ →P at z mapping Tz(P) →Tx(P) is injective
+(i.e. Pξ →P unramiﬁed at z) and its image is “transversal” to V , i.e. its sum with V is
+Tx(P). Then E(x, V ) (which weknow to be the trace of a constructible well deﬁned set
+of G in G(k) ???) is of dimension ≤N −n −1. using [(Moyennant)] this condition, an
+application of the Jacobian criterion and a dimension count shows that the closed subset
+E of points x of X such tht X →G should be non-smooth at x or P →Gis not smooth
+at f(x) or P →P is ramiﬁed at f(x) is of dimension ≤n + (N −n −1) = N −1 (X being
+smooth everywhere of dimension n). Therefore dim E < N = dim so that Eη = φ and a
+fortiori Xη is smooth over k(η) and the developments of No. 5 are evidently valid in this
+current context.
+The passage in No. 4 from a generic section to a general section and the developments
+of No. 5 are evidently valid in the present context (but are at this point tautologies or a
+reformulation of paraagraphs 8, 9, 12 which we hesitate to announce in their form). Also
+the development sof 7.1 valid in every case if k is algebraically closed (and even if k is
+simply inﬁnite if we assume G rational over k) and the special cases 7.2, 7.3’ quant (???)
+the result 7.4 is evidently an application of special nature for the situation of hyperplane
+sections. As I have said, the numbers 3 and 6 are (suspended pending) to the extension of
+the theorem of Zariski.
+It remains to extend also the results of No. 8 (reconsidered in No. 12) which take on
+such a more pleasant allure. I advise you to begin formulating these results in this context
+in rying to go as far as possible in this way. I have the impression that we have to be able
+to recover at least that is not a direct consequence of 8.7 c) (even we could attempt to
+abstract the axiomatic conditions that allow you to go through a variant of 8.7. I limit
+myself to these recommendations but I am ready to go back to these with more details if
+you have special diﬃculties.
+61

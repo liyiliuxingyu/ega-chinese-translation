@@ -1,0 +1,19 @@
+{
+  "edition": 24,
+  "purpose": "Copy-path map only; original root inspection record retained verbatim. Not an output-PDF review.",
+  "original_record_sha256": "d1ce09598df9163cf902527d1bbc8b6502a6d2c26411282a9832f3f20c1ce923",
+  "images": [
+    {
+      "original_image": "v24_work/root_review/en_073.png",
+      "project_relative_image": "recollation/v24/root_review/en_073.png",
+      "bytes": 228060,
+      "sha256": "33a2111b2886d5d20b43de26c1a7a7d0089553d37428028cfb553d5790ed44ed"
+    },
+    {
+      "original_image": "v24_work/early/ps_001.png",
+      "project_relative_image": "recollation/v24/root_review/ps_001.png",
+      "bytes": 29245,
+      "sha256": "fd8b6f18c3b767e18882d36bc3750bb8832392677ffeb24b90b5298348e9d81a"
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+[
+  {
+    "carrier": "repository/archive_20261121/03_sources/EGAVaiello.pdf",
+    "carrier_sha256": "23a20ef32fd16a1bd623c0c08ac080d04fc94f248de12133b713a19d6b0330d9",
+    "physical_page": 73,
+    "rendered_image": "v24_work/root_review/en_073.png",
+    "image_sha256": "33a2111b2886d5d20b43de26c1a7a7d0089553d37428028cfb553d5790ed44ed",
+    "actual_root_visual_read": true,
+    "purpose": "Confirmed V-prime at top continues V-zero and across EN72–73, not a repeated V-zero; §17 begins midway."
+  },
+  {
+    "carrier": "repository/archive_20261121/03_sources/EGAV1-2.ps",
+    "carrier_sha256": "9cf40f1f074c0dd8322a904a0e1008bc6bc858675ae7e0056d637567006bf0ee",
+    "physical_page": 1,
+    "rendered_image": "v24_work/early/ps_001.png",
+    "image_sha256": "fd8b6f18c3b767e18882d36bc3750bb8832392677ffeb24b90b5298348e9d81a",
+    "actual_root_visual_read": true,
+    "purpose": "Confirmed independent PS title, authors, and historical numbering."
+  }
+]
