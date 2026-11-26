@@ -1,0 +1,446 @@
+# Edition21 exact measured overlay values; all members and ordered parts locally verified.
+name: Publish EGA edition 21
+
+on:
+  workflow_dispatch:
+
+permissions: {}
+
+concurrency:
+  group: ega-publish-edition21-20261126
+  cancel-in-progress: false
+
+jobs:
+  publish-edition21:
+    if: ${{ github.repository == 'liyiliuxingyu/ega-chinese-translation' }}
+    runs-on: ubuntu-24.04
+    timeout-minutes: 90
+    permissions:
+      contents: write
+    outputs:
+      commit_sha: ${{ steps.commit.outputs.commit_sha }}
+    env:
+      EXPECTED_REPOSITORY: liyiliuxingyu/ega-chinese-translation
+      RELEASE_TAG: v21-20261126
+      SNAPSHOT_DATE: "2026-11-26"
+      OVERLAY_ASSET: "EGA-v21-overlay-20261126.zip"
+      OVERLAY_SHA256: "9ccec2a076a4cc35095c3fe075de12746971555a363a48c53004c46118abd0ae"
+      OVERLAY_ZIP_BYTES: "96788521"
+      OVERLAY_FILE_COUNT: "772"
+      OVERLAY_UNCOMPRESSED_BYTES: "125212221"
+      OVERLAY_PART_COUNT: "3"
+      OVERLAY_PART_SIZES_JSON: "[33554432, 33554432, 29679657]"
+    defaults:
+      run:
+        shell: bash
+
+    steps:
+      - name: Check identity, branch, and all pinned overlay values
+        run: |
+          set -euo pipefail
+          test "$GITHUB_REPOSITORY" = "$EXPECTED_REPOSITORY"
+          test "$GITHUB_REF" = refs/heads/main
+          test "$GITHUB_EVENT_NAME" = workflow_dispatch
+          python3 - <<'PY'
+          import json
+          import os
+          import re
+
+          if not re.fullmatch(r'[0-9a-f]{64}', os.environ['OVERLAY_SHA256']):
+              raise SystemExit('Fill the exact reviewed overlay SHA-256 before dispatch.')
+          for key in ('OVERLAY_ZIP_BYTES', 'OVERLAY_FILE_COUNT', 'OVERLAY_UNCOMPRESSED_BYTES', 'OVERLAY_PART_COUNT'):
+              value = os.environ[key]
+              if not re.fullmatch(r'[1-9][0-9]*', value):
+                  raise SystemExit(f'Fill the exact positive decimal value for {key}.')
+          if not re.fullmatch(r'[A-Za-z0-9][A-Za-z0-9._-]*\.zip', os.environ['OVERLAY_ASSET']):
+              raise SystemExit('Expected a literal reconstructed ZIP basename, without glob syntax.')
+          part_count = int(os.environ['OVERLAY_PART_COUNT'])
+          if not 1 <= part_count <= 999:
+              raise SystemExit('Part count must fit the reviewed part001..part999 naming range.')
+          try:
+              sizes = json.loads(os.environ['OVERLAY_PART_SIZES_JSON'])
+          except json.JSONDecodeError:
+              raise SystemExit('Fill OVERLAY_PART_SIZES_JSON with the exact ordered decimal byte-size list.')
+          part_bytes = 32 * 1024 * 1024
+          zip_bytes = int(os.environ['OVERLAY_ZIP_BYTES'])
+          if not isinstance(sizes, list) or len(sizes) != part_count:
+              raise SystemExit('Part-size list must have exactly OVERLAY_PART_COUNT entries.')
+          if any(type(size) is not int or not 1 <= size <= part_bytes for size in sizes):
+              raise SystemExit('Every part size must be a positive integer no larger than 32 MiB.')
+          if any(size != part_bytes for size in sizes[:-1]):
+              raise SystemExit('Every part except the last must be exactly 33554432 bytes.')
+          if sum(sizes) != zip_bytes or part_count != (zip_bytes + part_bytes - 1) // part_bytes:
+              raise SystemExit('The ordered part sizes must exactly partition the pinned ZIP byte count.')
+          PY
+
+      - name: Check out main with history for the base-ancestor check
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+        with:
+          ref: main
+          fetch-depth: 0
+          persist-credentials: true
+
+      - name: Download only the exact draft parts and verify the reconstructed ZIP before extracting code
+        id: overlay
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          download_root="$(mktemp -d "$RUNNER_TEMP/ega-v21-overlay.XXXXXX")"
+          export OVERLAY_DOWNLOAD_ROOT="$download_root"
+          mkdir "$download_root/parts"
+          gh api "repos/$EXPECTED_REPOSITORY/releases?per_page=100" \
+            > "$download_root/releases-before.json"
+          python3 - <<'PY'
+          import hashlib
+          import json
+          import os
+          from pathlib import Path
+          import shutil
+          import stat
+          import subprocess
+          import zipfile
+
+          root = Path(os.environ['OVERLAY_DOWNLOAD_ROOT'])
+          releases = json.loads((root / 'releases-before.json').read_text())
+          if not isinstance(releases, list):
+              raise SystemExit('Expected a release-list response.')
+          matching_drafts = [release for release in releases
+                             if isinstance(release, dict)
+                             and release.get('tag_name') == os.environ['RELEASE_TAG']
+                             and release.get('draft') is True]
+          if len(matching_drafts) != 1:
+              raise SystemExit('Expected exactly one edition-21 draft among the first 100 releases; refusing to guess.')
+          release = matching_drafts[0]
+          release_id = release.get('id')
+          if type(release_id) is not int or release_id <= 0:
+              raise SystemExit('Invalid draft release ID.')
+          asset_basename = os.environ['OVERLAY_ASSET']
+          count = int(os.environ['OVERLAY_PART_COUNT'])
+          expected_sizes = json.loads(os.environ['OVERLAY_PART_SIZES_JSON'])
+          expected_names = [f'{asset_basename}.part{number:03d}' for number in range(1, count + 1)]
+          prefix = asset_basename + '.part'
+          part_assets = [asset for asset in release.get('assets', [])
+                         if isinstance(asset.get('name'), str) and asset['name'].startswith(prefix)]
+          actual_names = [asset['name'] for asset in part_assets]
+          if len(actual_names) != count or set(actual_names) != set(expected_names):
+              missing = sorted(set(expected_names) - set(actual_names))
+              extra = sorted(set(actual_names) - set(expected_names))
+              raise SystemExit(f'Unexpected draft part set: missing={missing}, extra={extra}; duplicates also rejected.')
+          by_name = {asset['name']: asset for asset in part_assets}
+          for name, expected_size in zip(expected_names, expected_sizes, strict=True):
+              asset = by_name[name]
+              if asset.get('state') != 'uploaded' or asset.get('size') != expected_size:
+                  raise SystemExit(f'Draft part is incomplete or has the wrong exact size: {name}')
+              if type(asset.get('id')) is not int or asset['id'] <= 0:
+                  raise SystemExit(f'Invalid draft asset ID: {name}')
+
+          # All names and metadata sizes have been checked before downloading
+          # anything. Select only these exact asset IDs, with no glob download.
+          parts = root / 'parts'
+          for name in expected_names:
+              endpoint = f'repos/{os.environ["EXPECTED_REPOSITORY"]}/releases/assets/{by_name[name]["id"]}'
+              with (parts / name).open('xb') as destination:
+                  subprocess.run(['gh', 'api', '--header', 'Accept: application/octet-stream', endpoint],
+                                 stdout=destination, check=True)
+          if {path.name for path in parts.iterdir()} != set(expected_names):
+              raise SystemExit('Downloaded part directory does not contain exactly the expected parts.')
+          for name, size in zip(expected_names, expected_sizes, strict=True):
+              part = parts / name
+              if part.is_symlink() or not part.is_file() or part.stat().st_size != size:
+                  raise SystemExit(f'Downloaded part type or exact byte count mismatch: {name}')
+
+          archive = root / asset_basename
+          with archive.open('xb') as destination:
+              for name in expected_names:
+                  with (parts / name).open('rb') as source:
+                      shutil.copyfileobj(source, destination, length=1024 * 1024)
+          if archive.is_symlink() or not archive.is_file():
+              raise SystemExit('Reconstructed overlay must be a regular file.')
+          if archive.stat().st_size != int(os.environ['OVERLAY_ZIP_BYTES']):
+              raise SystemExit('Reconstructed ZIP byte count mismatch.')
+          with archive.open('rb') as source:
+              actual = hashlib.file_digest(source, 'sha256').hexdigest()
+          if actual != os.environ['OVERLAY_SHA256']:
+              raise SystemExit('Reconstructed ZIP SHA-256 mismatch; no code will be extracted or executed.')
+
+          # Only after the complete pinned archive has matched do we read its
+          # bootstrap tool. No archive member is extracted into the checkout.
+          member = 'tools/apply_edition21_update.py'
+          with zipfile.ZipFile(archive) as zipped:
+              matches = [info for info in zipped.infolist() if info.filename == member]
+              if len(matches) != 1:
+                  raise SystemExit('Expected exactly one overlay applier.')
+              info = matches[0]
+              if info.is_dir() or stat.S_IFMT(info.external_attr >> 16) not in (0, stat.S_IFREG):
+                  raise SystemExit('The pinned applier is not a regular ZIP member.')
+              bootstrap = root / 'verified-apply-edition21.py'
+              with bootstrap.open('xb') as destination:
+                  destination.write(zipped.read(info))
+          with open(os.environ['GITHUB_OUTPUT'], 'a', encoding='utf-8') as output:
+              output.write(f'archive_path={archive}\nbootstrap_path={bootstrap}\nrelease_id={release_id}\n')
+          print(f'Reconstructed and verified {count} ordered parts: {archive.stat().st_size} bytes, SHA-256 {actual}')
+          with open(os.environ['GITHUB_STEP_SUMMARY'], 'a', encoding='utf-8') as summary:
+              summary.write(f'Overlay reconstructed from `{count}` exact named parts; ZIP bytes `{archive.stat().st_size}`, SHA-256 `{actual}`.\n')
+          PY
+
+      - name: Apply the reviewed overlay and verify the complete repository strictly
+        env:
+          OVERLAY_ARCHIVE_PATH: ${{ steps.overlay.outputs.archive_path }}
+          VERIFIED_APPLIER_PATH: ${{ steps.overlay.outputs.bootstrap_path }}
+        run: |
+          set -euo pipefail
+          python3 "$VERIFIED_APPLIER_PATH" "$OVERLAY_ARCHIVE_PATH" \
+            --root "$GITHUB_WORKSPACE" \
+            --sha256 "$OVERLAY_SHA256" \
+            --file-count "$OVERLAY_FILE_COUNT" \
+            --total-bytes "$OVERLAY_UNCOMPRESSED_BYTES" \
+            --snapshot-date "$SNAPSHOT_DATE"
+          python3 tools/verify_repository.py --root "$GITHUB_WORKSPACE" --strict
+
+      - name: Commit only listed payloads and the import receipt, then push main
+        id: commit
+        run: |
+          set -euo pipefail
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          python3 - <<'PY'
+          import json
+          from pathlib import Path
+          import subprocess
+
+          manifest = json.loads(Path('REPOSITORY_MANIFEST.json').read_text(encoding='utf-8'))
+          paths = [row['path'] for row in manifest['files']]
+          paths += ['REPOSITORY_MANIFEST.json', 'EDITION_21_IMPORT.json']
+          data = b''.join(path.encode('utf-8') + b'\0' for path in paths)
+          subprocess.run(['git', '--literal-pathspecs', 'add', '--force',
+                          '--pathspec-from-file=-', '--pathspec-file-nul'], input=data, check=True)
+          PY
+          if git diff --cached --quiet; then
+            printf '%s\n' 'The same verified overlay is already committed; retaining its commit.'
+          else
+            diff_status=$?
+            if [ "$diff_status" -ne 1 ]; then
+              exit "$diff_status"
+            fi
+            git commit -m 'Publish edition 21 section13 source recollation with Dot and scoped mathematical reviews'
+          fi
+          test -z "$(git status --porcelain --untracked-files=all)"
+          git push origin HEAD:main
+          final_commit="$(git rev-parse --verify HEAD)"
+          printf 'commit_sha=%s\n' "$final_commit" >> "$GITHUB_OUTPUT"
+          printf 'Verified edition-21 commit: `%s`\n' "$final_commit" >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Build and fully re-read the project and all-history export packages
+        id: packages
+        run: |
+          set -euo pipefail
+          export_root="$(mktemp -d "$RUNNER_TEMP/ega-v21-exports.XXXXXX")"
+          python3 tools/package_edition21.py \
+            --root "$GITHUB_WORKSPACE" \
+            --output "$export_root" \
+            --full
+          (
+            cd "$export_root"
+            sha256sum --check SHA256SUMS.txt
+          )
+          printf 'directory=%s\n' "$export_root" >> "$GITHUB_OUTPUT"
+
+      - name: Upload every export and checksum, comparing any existing asset exactly
+        env:
+          GH_TOKEN: ${{ github.token }}
+          EXPORT_DIRECTORY: ${{ steps.packages.outputs.directory }}
+          DRAFT_RELEASE_ID: ${{ steps.overlay.outputs.release_id }}
+        run: |
+          set -euo pipefail
+          release_inventory="$(mktemp "$RUNNER_TEMP/ega-v21-assets.XXXXXX.json")"
+          gh api "repos/$EXPECTED_REPOSITORY/releases/$DRAFT_RELEASE_ID" > "$release_inventory"
+          python3 - "$release_inventory" <<'PY'
+          import json
+          import os
+          from pathlib import Path
+          import sys
+
+          release = json.loads(Path(sys.argv[1]).read_text())
+          if (release.get('id') != int(os.environ['DRAFT_RELEASE_ID'])
+                  or release.get('tag_name') != os.environ['RELEASE_TAG'] or release.get('draft') is not True):
+              raise SystemExit('Refusing to upload into a release that is no longer the expected draft.')
+          root = Path(os.environ['EXPORT_DIRECTORY'])
+          expected = {'EGA-v21-project.zip', 'EGA-all-projects-with-Dot-v21-20261126.zip',
+                      'EGA-v21-book.pdf', 'EGA-v21-book.tex', 'EGA-v21-audit.pdf',
+                      'EGA-v21-audit.tex', 'PACKAGE_VERIFICATION.json', 'SHA256SUMS.txt'}
+          if {p.name for p in root.iterdir()} != expected:
+              raise SystemExit('Package output set differs from the reviewed packager interface.')
+          if any(p.is_symlink() or not p.is_file() for p in root.iterdir()):
+              raise SystemExit('Package outputs must all be regular files.')
+          PY
+          verify_existing_asset() {
+            local publish_path="$1"
+            local asset_name="$2"
+            local existing_directory
+            existing_directory="$(mktemp -d "$RUNNER_TEMP/ega-v21-existing.XXXXXX")"
+            gh release download "$RELEASE_TAG" \
+              --repo "$EXPECTED_REPOSITORY" \
+              --pattern "$asset_name" \
+              --dir "$existing_directory"
+            cmp -- "$publish_path" "$existing_directory/$asset_name"
+            printf 'Existing asset is byte-identical: %s\n' "$asset_name"
+          }
+          for publish_path in "$EXPORT_DIRECTORY"/*; do
+            asset_name="$(basename -- "$publish_path")"
+            if python3 - "$release_inventory" "$asset_name" <<'PY'
+          import json
+          from pathlib import Path
+          import sys
+          release = json.loads(Path(sys.argv[1]).read_text())
+          raise SystemExit(0 if any(a.get('name') == sys.argv[2] for a in release['assets']) else 1)
+          PY
+            then
+              verify_existing_asset "$publish_path" "$asset_name"
+            elif gh release upload "$RELEASE_TAG" "$publish_path" --repo "$EXPECTED_REPOSITORY"; then
+              printf 'Uploaded %s\n' "$asset_name"
+            else
+              # A competing upload may have created it since the inventory was
+              # read. Never use --clobber: only identical bytes allow progress.
+              verify_existing_asset "$publish_path" "$asset_name"
+            fi
+          done
+
+      - name: Verify every uploaded asset against its local complete bytes
+        env:
+          GH_TOKEN: ${{ github.token }}
+          EXPORT_DIRECTORY: ${{ steps.packages.outputs.directory }}
+          DRAFT_RELEASE_ID: ${{ steps.overlay.outputs.release_id }}
+        run: |
+          set -euo pipefail
+          uploaded_inventory="$(mktemp "$RUNNER_TEMP/ega-v21-uploaded.XXXXXX.json")"
+          gh api "repos/$EXPECTED_REPOSITORY/releases/$DRAFT_RELEASE_ID" > "$uploaded_inventory"
+          python3 - "$uploaded_inventory" <<'PY'
+          import hashlib
+          import json
+          import os
+          from pathlib import Path
+          import re
+          import subprocess
+          import sys
+          import tempfile
+
+          release = json.loads(Path(sys.argv[1]).read_text())
+          if (release.get('id') != int(os.environ['DRAFT_RELEASE_ID'])
+                  or release.get('tag_name') != os.environ['RELEASE_TAG'] or release.get('draft') is not True):
+              raise SystemExit('Expected the draft release while verifying uploaded assets.')
+          output = Path(os.environ['EXPORT_DIRECTORY'])
+          verified = []
+          for local in sorted(output.iterdir()):
+              if local.is_symlink() or not local.is_file():
+                  raise SystemExit('Unexpected export file type.')
+              matches = [asset for asset in release.get('assets', []) if asset.get('name') == local.name]
+              if len(matches) != 1:
+                  raise SystemExit(f'Expected exactly one uploaded asset: {local.name}')
+              asset = matches[0]
+              if asset.get('state') != 'uploaded' or asset.get('size') != local.stat().st_size:
+                  raise SystemExit(f'Uploaded asset state or size mismatch: {local.name}')
+              with local.open('rb') as source:
+                  local_sha256 = hashlib.file_digest(source, 'sha256').hexdigest()
+              remote_digest = asset.get('digest')
+              if isinstance(remote_digest, str) and remote_digest.lower().startswith('sha256:'):
+                  match = re.fullmatch(r'sha256:([0-9a-fA-F]{64})', remote_digest, flags=re.IGNORECASE)
+                  if match is None or match.group(1).lower() != local_sha256:
+                      raise SystemExit(f'GitHub asset SHA-256 mismatch: {local.name}')
+                  method = 'GitHub asset SHA-256 digest'
+              else:
+                  asset_id = asset.get('id')
+                  if type(asset_id) is not int or asset_id <= 0:
+                      raise SystemExit(f'Invalid release asset ID: {local.name}')
+                  # The asset ID comes from the freshly read release inventory;
+                  # downloads and cmp remain on the runner, outside the repo.
+                  with tempfile.TemporaryDirectory(prefix='ega-v21-asset-check-', dir=os.environ['RUNNER_TEMP']) as temporary:
+                      downloaded = Path(temporary) / 'asset.bin'
+                      endpoint = f'repos/{os.environ["EXPECTED_REPOSITORY"]}/releases/assets/{asset_id}'
+                      with downloaded.open('xb') as destination:
+                          subprocess.run(['gh', 'api', '--header', 'Accept: application/octet-stream', endpoint],
+                                         stdout=destination, check=True)
+                      subprocess.run(['cmp', '--', str(local), str(downloaded)], check=True)
+                  method = 'Downloaded by asset ID and compared with cmp'
+              verified.append((local.name, local.stat().st_size, local_sha256, method))
+          if len(verified) != 8:
+              raise SystemExit('Expected all eight reviewed packager outputs to be verified.')
+          with open(os.environ['GITHUB_STEP_SUMMARY'], 'a', encoding='utf-8') as summary:
+              summary.write('\n### Uploaded asset verification\n\n')
+              summary.write('| Asset | Bytes | Local SHA-256 | Verification |\n|---|---:|---|---|\n')
+              for name, size, digest, method in verified:
+                  summary.write(f'| `{name}` | {size} | `{digest}` | {method} |\n')
+          print(f'Verified all {len(verified)} uploaded assets against their local complete bytes.')
+          PY
+
+      - name: Bind the tag to the verified commit and publish the draft
+        env:
+          GH_TOKEN: ${{ github.token }}
+          PUBLISH_COMMIT_SHA: ${{ steps.commit.outputs.commit_sha }}
+          DRAFT_RELEASE_ID: ${{ steps.overlay.outputs.release_id }}
+        run: |
+          set -euo pipefail
+          python3 - <<'PY'
+          import os
+          import re
+          import subprocess
+
+          commit = os.environ['PUBLISH_COMMIT_SHA']
+          tag = os.environ['RELEASE_TAG']
+          if not re.fullmatch(r'[0-9a-f]{40}', commit):
+              raise SystemExit('Invalid verified commit SHA.')
+          ref = f'refs/tags/{tag}'
+
+          def remote_tag_target():
+              text = subprocess.check_output(['git', 'ls-remote', '--tags', 'origin', ref, ref + '^{}'], text=True)
+              mapping = {}
+              for line in text.splitlines():
+                  digest, name = line.split('\t', 1)
+                  if name not in {ref, ref + '^{}'} or name in mapping:
+                      raise SystemExit('Unexpected remote tag response.')
+                  mapping[name] = digest
+              return mapping.get(ref + '^{}', mapping.get(ref))
+
+          existing = remote_tag_target()
+          if existing is None:
+              subprocess.run(['git', 'push', 'origin', f'{commit}:{ref}'], check=True)
+          elif existing != commit:
+              raise SystemExit('The release tag already points elsewhere; refusing to move it.')
+          if remote_tag_target() != commit:
+              raise SystemExit('Remote tag does not resolve to the verified commit.')
+          PY
+          gh api --method PATCH \
+            "repos/$EXPECTED_REPOSITORY/releases/$DRAFT_RELEASE_ID" \
+            --field draft=false \
+            --raw-field target_commitish="$PUBLISH_COMMIT_SHA" \
+            >/dev/null
+          published_json="$(mktemp "$RUNNER_TEMP/ega-v21-published.XXXXXX.json")"
+          gh api "repos/$EXPECTED_REPOSITORY/releases/$DRAFT_RELEASE_ID" > "$published_json"
+          python3 - "$published_json" <<'PY'
+          import json
+          import os
+          from pathlib import Path
+          import subprocess
+          import sys
+
+          release = json.loads(Path(sys.argv[1]).read_text())
+          if (release.get('id') != int(os.environ['DRAFT_RELEASE_ID'])
+                  or release.get('tag_name') != os.environ['RELEASE_TAG'] or release.get('draft') is not False):
+              raise SystemExit('Release publication could not be confirmed.')
+          ref = f'refs/tags/{os.environ["RELEASE_TAG"]}'
+          actual_refs = subprocess.check_output(['git', 'ls-remote', '--tags', 'origin', ref, ref + '^{}'], text=True)
+          mapping = {}
+          for line in actual_refs.splitlines():
+              digest, name = line.split('\t', 1)
+              if name not in {ref, ref + '^{}'} or name in mapping:
+                  raise SystemExit('Unexpected post-publication tag response.')
+              mapping[name] = digest
+          actual_commit = mapping.get(ref + '^{}', mapping.get(ref))
+          if actual_commit != os.environ['PUBLISH_COMMIT_SHA']:
+              raise SystemExit('Published tag does not resolve to the verified commit.')
+          with open(os.environ['GITHUB_STEP_SUMMARY'], 'a', encoding='utf-8') as output:
+              output.write(f'Published `{os.environ["RELEASE_TAG"]}` for commit `{os.environ["PUBLISH_COMMIT_SHA"]}`.\n')
+              output.write('The actual remote tag was checked again after publication, including any annotated-tag dereference.\n')
+              output.write('All eight packager outputs passed uploaded-asset size and SHA-256 or download/cmp verification.\n')
+              output.write('This verifies engineering bytes and publication, not every mathematical proof.\n')
+          PY
