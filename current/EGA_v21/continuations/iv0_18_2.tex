@@ -1,0 +1,201 @@
+% Source: EGAIV.1.pdf, PDF pp.53--58; printed pp.54--59.
+\subsection{以双模为核的环扩张}
+\source{EGA IV第一部分，印刷第54--59页；上传PDF第53--58页}
+\egap{18.2.1}
+设 $E$ 是在 $B$ 上增广的 $A$-环，$f:E\to B$ 为增广，$\mathfrak j=\Ker f$ 为增广理想。若 $\mathfrak j^2=0$，则 $\mathfrak j$ 不仅是 $E$-双模，也是 $B$-双模，因为 $B\simeq E/\mathfrak j$。具体地，每个 $b\in B$ 可写成 $f(x)$，其中 $x\in E$。若 $z,z'\in\mathfrak j$，则
+\[
+ (x+z)z'=xz',\qquad z'(x+z)=z'x.
+\]
+因此 $xz'$（分别地，$z'x$）的值不依赖于所选的 $x\in f^{-1}(b)$，可以写作 $bz'$（分别地，$z'b$）；这就定义了所说的 $B$-双模结构。反过来，若 $\mathfrak j$ 配备了一个 $B$-双模结构，且对 $x\in E,z'\in\mathfrak j$ 有 $xz'=f(x)z'$、$z'x=z'f(x)$，则 $\mathfrak j^2=0$。
+
+\egap{18.2.2}
+称 $A$-双模同态的正合列
+\[
+ 0\longrightarrow L\xrightarrow{j}E\xrightarrow{f}B\longrightarrow0
+\]
+为 $A$-环 $B$ 的一个\emph{以 $B$-双模 $L$ 为核的 $A$-扩张}，若 $E$ 是 $A$-环，$f$ 是 $A$-环同态，并且对 $x\in E,z\in L$ 有
+\[
+ j(f(x)z)=xj(z),\qquad j(zf(x))=j(z)x.
+\]
+由（18.2.1），$j(L)$ 是 $E$ 中平方为零的双边理想。略用术语时，也说 $E$ 是 $B$ 的一个以 $L$ 为核的扩张。若存在 $A$-环同构 $u:E\xrightarrow{\sim}E'$，使下图交换，则称 $B$ 的两个以 $L$ 为核的 $A$-扩张 $E,E'$ 为\emph{$A$-等价}；$u$ 也称为 $A$-扩张的一个\emph{$A$-等价}：
+\begin{equation}
+\begin{tikzcd}[column sep=1.7em]
+0\arrow[r]&L\arrow[r,"j"]\arrow[d,equal]&E\arrow[r,"f"]\arrow[d,"u","\sim"']&B\arrow[r]\arrow[d,equal]&0\\
+0\arrow[r]&L\arrow[r,"j'"']&E'\arrow[r,"f'"']&B\arrow[r]&0.
+\end{tikzcd}
+\tag{18.2.2.1}
+\end{equation}
+
+\egap{18.2.3}
+若以 $B$-双模 $L$ 为核的 $A$-扩张 $E$ 作为在 $B$ 上增广的 $A$-环是平凡的（18.1.4），则称它为\emph{$A$-平凡}。在乘积 $A$-双模 $B\times L$ 上置
+\[
+ (x,s)(y,t)=(xy,xt+sy),
+\]
+即可定义一个 $A$-环结构。典范映射 $j:L\to B\times L$ 和 $f:B\times L\to B$ 定义了一个以 $L$ 为核的 $B$ 的 $A$-平凡扩张：典范映射 $g:B\to B\times L$ 就是 $f$ 的一个 $A$-同态右逆。这个扩张称为 $B$ 的以 $L$ 为核的\emph{标准平凡扩张}，记为 $D_B(L)$。$B$ 的每个以 $L$ 为核的 $A$-平凡扩张均与 $D_B(L)$ $A$-等价。
+
+还应注意：$A$-环 $A$ 自身的每个以 $A$-双模为核的扩张，都必为 $A$-平凡。
+
+\egap{18.2.4}
+给定两个 $A$-扩张 $L\xrightarrow{j}E\xrightarrow{f}B$、$L'\xrightarrow{j'}E'\xrightarrow{f'}B'$。从前者到后者的\emph{态射}，按定义是一个由 $A$-双模同态组成的三元组 $(u,v,w)$，使下图交换：
+\begin{equation}
+\begin{tikzcd}[column sep=1.7em]
+0\arrow[r]&L\arrow[r,"j"]\arrow[d,"w"']&E\arrow[r,"f"]\arrow[d,"u"]&B\arrow[r]\arrow[d,"v"]&0\\
+0\arrow[r]&L'\arrow[r,"j'"']&E'\arrow[r,"f'"']&B'\arrow[r]&0,
+\end{tikzcd}
+\tag{18.2.4.1}
+\end{equation}
+其中 $u,v$ 是 $A$-环同态，且对 $z\in L,b\in B$ 有
+\[
+ w(bz)=v(b)w(z),\qquad w(zb)=w(z)v(b).
+\]
+换言之，$(v,w)$ 是从 $B$-双模 $L$ 到 $B'$-双模 $L'$ 的双同态。若 $(u',v',w')$ 是从 $L'\to E'\to B'$ 到另一 $A$-扩张 $L''\to E''\to B''$ 的态射，那么 $(u'\circ u,v'\circ v,w'\circ w)$ 仍是态射，这说明上述术语是适当的。图（18.2.4.1）中两个交换正方形的考察，将导出 $A$-环扩张上的两种运算。
+
+\egap{18.2.5}
+先考虑 $B'$ 的一个以 $L'$ 为核的 $A$-扩张
+\[
+ 0\longrightarrow L'\xrightarrow{j'}E'\xrightarrow{f'}B'\longrightarrow0
+\]
+以及一个 $A$-环同态 $v:B\to B'$。令 $F=E'\times_{B'}B$ 为增广 $A$-环 $E'$ 沿 $v$ 的逆像（18.1.5），于是有交换图
+\[
+\begin{tikzcd}[column sep=1.7em]
+0\arrow[r]&L_0\arrow[r]\arrow[d,"i"',"\sim"]&F\arrow[r,"p_2"]\arrow[d,"p_1"]&B\arrow[r]\arrow[d,"v"]&0\\
+0\arrow[r]&L'\arrow[r,"j'"']&E'\arrow[r,"f'"']&B'\arrow[r]&0,
+\end{tikzcd}
+\]
+其两行正合，$p_1,p_2$ 是典范同态。由（18.1.3），$i$ 双射；由定义（18.1.2），$L_0^2=0$。因此可将 $F$ 看作 $B$ 的以 $L'$ 为核的 $A$-扩张，称为扩张 $E'$ 沿 $v$ 的\emph{逆像}；这里借助环同态 $v$ 将 $L'$ 看作 $B$-双模。
+
+纤维积对每个因子的函子性表明，若有扩张态射
+\[
+\begin{tikzcd}[column sep=1.7em]
+0\arrow[r]&L'_1\arrow[r]\arrow[d,"h"]&E'_1\arrow[r]\arrow[d,"g"]&B'\arrow[r]\arrow[d,equal]&0\\
+0\arrow[r]&L'_2\arrow[r]&E'_2\arrow[r]&B'\arrow[r]&0,
+\end{tikzcd}
+\]
+则可导出逆像态射
+\[
+\begin{tikzcd}[column sep=1.2em]
+0\arrow[r]&L'_1\arrow[r]\arrow[d,"h"]&E'_1\times_{B'}B\arrow[r]\arrow[d,"g\times_{B'}1_B"]&B\arrow[r]\arrow[d,equal]&0\\
+0\arrow[r]&L'_2\arrow[r]&E'_2\times_{B'}B\arrow[r]&B\arrow[r]&0.
+\end{tikzcd}
+\]
+特别地，若 $E'_1,E'_2$ 是 $B'$ 的两个以 $L'$ 为核的 $A$-等价扩张，则其沿 $v$ 的逆像也是 $A$-等价的。
+
+由纤维积的定义，（18.2.4.1）中的任意 $A$-扩张态射都经由 $E'$ 沿 $v$ 的逆像分解。具体地，恰有一个 $A$-同态 $u_0:E\to F=E'\times_{B'}B$，使下图交换：
+\[
+\begin{tikzcd}[column sep=1.8em,row sep=1.9em]
+0\arrow[r]&L\arrow[r,"j"]\arrow[d,"w_0"']&E\arrow[r,"f"]\arrow[d,"u_0"]&B\arrow[r]\arrow[d,equal]&0\\
+0\arrow[r]&L_0\arrow[r]\arrow[d,"i"',"\sim"]&F\arrow[r,"p_2"]\arrow[d,"p_1"]&B\arrow[r]\arrow[d,"v"]&0\\
+0\arrow[r]&L'\arrow[r,"j'"']&E'\arrow[r,"f'"']&B'\arrow[r]&0,
+\end{tikzcd}
+\]
+其中 $w_0$ 是 $u_0$ 在 $L$ 上的限制，且 $p_1\circ u_0=u$、$i\circ w_0=w$。
+
+\egap{18.2.6}
+特别研究沿满的 $A$-同态的扩张逆像。设 $v:B\to B'$ 是满的 $A$-同态，$F$ 是 $B$ 的以 $B$-双模 $L$ 为核的一个 $A$-扩张，$\mathfrak k=\Ker v$ 是 $B$ 的双边理想；经由增广 $F\to B$，它可以看作 $F$-双模。由（18.1.7），每个使下图交换的 $F$-双模同态 $\theta:\mathfrak k\to F$
+\[
+\begin{tikzcd}[column sep=large]
+ &\mathfrak k\arrow[dl,"\theta"']\arrow[dr,hook]&\\
+ F\arrow[rr]&&B
+\end{tikzcd}
+\]
+都确定 $B'=B/\mathfrak k$ 的一个以 $L$ 为核的扩张 $E'$，其沿 $v$ 的逆像与 $F$ 等价；而具有后一性质的每个 $A$-扩张 $E'$，在 $A$-等价意义下都由这种方式得到。
+
+此外，两个从 $\mathfrak k$ 到 $F$ 的 $F$-双模同态 $\theta_1,\theta_2$ 给出 $B'$ 的以 $L$ 为核的 $A$-等价扩张，当且仅当存在 $A$-扩张 $F$ 到自身的一个 $A$-等价 $u$，使 $\theta_2=u\circ\theta_1$。
+\cmt{E5-T02}{原版在“两个同态给出等价扩张”一句把商环写为 $B$；这里按该句的构造对象明确改为 $B'$。由 $F/\theta(\mathfrak k)$ 得到的是 $B/\mathfrak k=B'$ 的扩张，并非 $B$ 的扩张。若这样的 $\theta$ 存在，$\mathfrak k$ 对 $L$ 的左右作用均为零，故 $L$ 可下降为 $B'$-双模；不能在没有这一步时预先作该识别。}
+这立即由（18.2.5）和 $F$ 到纤维积 $E'\times_{B'}B$ 的典范双射的定义（18.1.7）得出。
+
+\egap{18.2.7}
+现在考察（18.2.4.1）左侧的正方形。先回顾 $A$-双模范畴中的\emph{并和}：给定三个 $A$-双模 $X,Y,Z$ 以及两个 $A$-同态 $f:X\to Y$、$g:X\to Z$，并和 $Y\oplus_X Z$ 是由 $X,Y,Z$ 和 $f,g$ 组成的归纳系在 $A$-双模范畴中的归纳极限（$0_{\mathrm{III}}$，8.1.11）。它定义为乘积 $Y\times Z$ 对 $A$-子双模 $M$ 的商，其中 $M$ 是同态 $x\mapsto(f(x),-g(x))$ 的像。
+
+其特征性质是：对每一对满足 $u\circ f=v\circ g$ 的 $A$-双模同态 $u:Y\to T$、$v:Z\to T$，恰有一个同态 $w:Y\oplus_X Z\to T$，满足 $u=w\circ j_1$、$v=w\circ j_2$，其中 $j_1:Y\to Y\oplus_X Z$、$j_2:Z\to Y\oplus_X Z$ 是典范映射。
+\cmt{E5-T03}{原版第二个等式印作 $u=w\circ j_2$；按定义，$j_2$ 的定义域为 $Z$，故左端应为 $v$。本处已据泛性质作此明确订正。}
+
+\egap{18.2.8}
+现给定 $B$ 的一个以 $B$-双模 $L$ 为核的 $A$-扩张
+\[
+ 0\longrightarrow L\xrightarrow{j}E\xrightarrow{f}B\longrightarrow0,
+\]
+以及一个 $B$-双模同态 $w:L\to L'$。令 $H$ 为并和 $A$-双模 $E\oplus_L L'$。说明如何在 $H$ 上赋予 $A$-环结构，并定义一个 $A$-扩张
+\[
+ 0\longrightarrow L'\longrightarrow H\longrightarrow B\longrightarrow0.
+\]
+为此注意：经由增广同态 $E\to B$，$L'$ 具有 $E$-双模结构，因而可构造标准平凡 $A$-扩张 $G=D_E(L')$（18.2.3）。考虑映射
+\[
+ \theta:L\longrightarrow G,\qquad z\longmapsto(j(z),-w(z)).
+\]
+这是 $G$-双模同态，这里经由典范同态 $p:G\to E$ 将 $L$ 看作 $G$-双模。事实上，对 $(x,z')\in G,z\in L$，有
+\[
+ (j(z),-w(z))(x,z')=(j(z)x,\,j(z)z'-w(z)x).
+\]
+按照 $L'$ 的 $E$-双模结构的定义，$j(z)z'=f(j(z))z'=0$；又有 $j(z)x=j(zf(x))$、$w(z)x=w(zf(x))$。同样验证 $\theta$ 是左 $G$-模同态。于是可对交换图
+\[
+\begin{tikzcd}[column sep=1.7em,row sep=1.3em]
+ &&&0\arrow[d]&\\
+ &&&L\arrow[d,"j"]\arrow[dl,"\theta"']&\\
+0\arrow[r]&L'\arrow[r]&G\arrow[r,"p"]&E\arrow[r]\arrow[d,"f"]&0\\
+ &&&B\arrow[d]&\\
+ &&&0&
+\end{tikzcd}
+\]
+应用（18.1.7）。由于按定义 $H=G/\theta(L)$，所需断言立即由（18.1.7）得出。
+
+称 $B$ 的以 $L'$ 为核的 $A$-扩张 $H$ 为\emph{由 $E$ 借助同态 $w:L\to L'$ 导出的扩张}。并和对各个加项的函子性还表明，若有扩张态射
+\[
+\begin{tikzcd}[column sep=1.7em]
+0\arrow[r]&L\arrow[r]\arrow[d,equal]&E_1\arrow[r]\arrow[d,"g"]&B_1\arrow[r]\arrow[d,"h"]&0\\
+0\arrow[r]&L\arrow[r]&E_2\arrow[r]&B_2\arrow[r]&0,
+\end{tikzcd}
+\]
+则可典范地导出扩张态射
+\[
+\begin{tikzcd}[column sep=1.2em]
+0\arrow[r]&L'\arrow[r]\arrow[d,equal]&E_1\oplus_LL'\arrow[r]\arrow[d,"g\oplus_L1_{L'}"]&B_1\arrow[r]\arrow[d,"h"]&0\\
+0\arrow[r]&L'\arrow[r]&E_2\oplus_LL'\arrow[r]&B_2\arrow[r]&0.
+\end{tikzcd}
+\]
+\cmt{E5-H01}{这两个图在改变商环时，须将 $L'$ 配备相容的 $B_2$-双模结构，并经 $h:B_1\to B_2$ 限制为 $B_1$-双模，且要求 $w$ 相容。否则仅有 $A$-双模的并和，还不足以调用上面的环扩张构造。商环固定为 $B$ 的应用没有这一歧义。}
+特别地，若 $E_1,E_2$ 是 $B$ 的以 $L$ 为核的两个 $A$-等价扩张，则借助 $w$ 导出的两个以 $L'$ 为核的扩张也 $A$-等价。
+
+若给定一个 $A$-扩张态射（18.2.4.1），它就经由上述由 $E$ 借助 $w:L\to L'$ 导出的扩张 $H$ 分解；此时通过 $v:B\to B'$ 将 $L'$ 看作 $B$-双模。事实上，并和的定义表明，存在唯一的 $A$-双模同态 $u_0:H\to E'$，使下图交换：
+\[
+\begin{tikzcd}[column sep=1.8em,row sep=1.8em]
+0\arrow[r]&L\arrow[r,"j"]\arrow[d,"w_0"']&E\arrow[r,"f"]\arrow[d,"j_1"]&B\arrow[r]\arrow[d,equal]&0\\
+0\arrow[r]&L'_0\arrow[r,"j_2"']\arrow[d,"j_0"',"\sim"]&H\arrow[r,"f_0"]\arrow[d,"u_0"]&B\arrow[r]\arrow[d,"v"]&0\\
+0\arrow[r]&L'\arrow[r,"j'"']&E'\arrow[r,"f'"']&B'\arrow[r]&0,
+\end{tikzcd}
+\]
+且 $u=u_0\circ j_1$、$w=j_0\circ w_0$。这里 $j_1,j_2$ 为典范同态。直接验证可知，$u_0$ 也是环同态。
+
+\egas{18.2.9}{命题}
+设 $B,B'$ 是两个 $A$-环，$L$ 是 $B$-双模，$L'$ 是 $B'$-双模，$v:B\to B'$ 是 $A$-环同态，$w:L\to L'$ 是 $A$-双模同态，且 $(v,w)$ 为双模的双同态。则存在唯一的 $A$-环同态 $u:D_B(L)\to D_{B'}(L')$，使下列两图交换：
+\[
+\begin{tikzcd}[column sep=large]
+D_B(L)\arrow[r,"u"]&D_{B'}(L')\\
+B\arrow[u,hook]\arrow[r,"v"']&B'\arrow[u,hook]
+\end{tikzcd}
+\qquad
+\begin{tikzcd}[column sep=large]
+D_B(L)\arrow[r,"u"]&D_{B'}(L')\\
+L\arrow[u,hook]\arrow[r,"w"']&L'\arrow[u,hook]
+\end{tikzcd}
+\]
+其中竖直箭头均为典范单射。
+\begin{proof}
+$u$ 只能是映射 $(x,s)\mapsto(v(x),w(s))$。其为 $A$-环同态直接由定义（18.2.3）验证。还应注意，$u$ 同样使下图交换：
+\[
+\begin{tikzcd}[column sep=large]
+D_B(L)\arrow[r,"u"]\arrow[d]&D_{B'}(L')\arrow[d]\\
+B\arrow[r,"v"']&B',
+\end{tikzcd}
+\]
+这次竖直箭头为增广。
+\end{proof}
+
+\egas{18.2.10}{命题}
+设 $B$ 是 $A$-环，$L$ 是 $B$-双模，$E$ 是 $B$ 的一个以 $L$ 为核的 $A$-扩张。令 $G$ 为从 $B$ 到 $E$ 的 $B$-环同态的集合（也就是说，增广 $E\to B$ 的 $A$-同态右逆的集合）。令 $G'$ 为从 $D_B(L)$ 到 $E$ 的 $A$-等价的集合。将每个 $g\in G$ 对应于
+\[
+ g':(x,s)\longmapsto g(x)+s
+\]
+定义了从 $G$ 到 $G'$ 的双射；其逆映射将 $g'\in G'$ 对应于 $B$-同态 $x\mapsto g'(x,0)$。
+\cmt{E5-T04}{这里保留原版两处“$B$-同态”的措辞，但其精确定义以原文括号内说明为准：$g:B\to E$ 必须是满足 $f\circ g=1_B$ 的 $A$-环同态。选择 $g$ 以前并未给 $E$ 指定一个 $B$-环结构；不能把此处读成预先固定该结构的下范畴中的同态。式中将 $L$ 通过 $j$ 与其像等同。}
+这由定义立即得到。

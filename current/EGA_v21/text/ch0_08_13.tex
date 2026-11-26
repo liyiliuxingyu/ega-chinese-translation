@@ -1,0 +1,2800 @@
+\renewcommand{\B}{\mathscr B}
+\NewNote{以下§§8--13原载第三卷第一部分，现接在本章§7之后。原编号及原注保留。}
+\origfootnote{为便于查找引文，今后引用与第一章一同发表的第0章各节时，采用记号 $0_{\mathrm I}$。}
+\setcounter{section}{7}
+\section{可表函子}
+\subsection{可表函子}
+\src{5--8}
+\egapar{8.1.1}
+以 $\Ens$ 表示集合范畴。设 $C$ 为一个范畴；对 $C$ 中的两个对象 $X,Y$，令 $h_X(Y)=\Hom(Y,X)$；对 $C$ 中任一态射 $u:Y\to Y'$，以 $h_X(u)$ 表示从 $\Hom(Y',X)$ 到 $\Hom(Y,X)$ 的映射 $v\mapsto vu$。由这些定义立即可见，$h_X:C\to\Ens$ 是反变函子，即由 $C$ 的对偶范畴 $C^\circ$ 到 $\Ens$ 的协变函子所成范畴 $\catHom(C^\circ,\Ens)$ 中的一个对象（T，1.7，d）及 [29]）。
+
+\egapar{8.1.2}
+现在设 $w:X\to X'$ 是 $C$ 中的一个态射；对每个 $Y\in C$ 及每个 $v\in\Hom(Y,X)=h_X(Y)$，有 $wv\in\Hom(Y,X')=h_{X'}(Y)$。以 $h_w(Y)$ 表示从 $h_X(Y)$ 到 $h_{X'}(Y)$ 的映射 $v\mapsto wv$。立即可见，对每个态射 $u:Y\to Y'$，图
+\[
+\begin{tikzcd}[column sep=large]
+h_X(Y')\arrow[r,"h_X(u)"]\arrow[d,"h_w(Y')"']&h_X(Y)\arrow[d,"h_w(Y)"]\\
+h_{X'}(Y')\arrow[r,"h_{X'}(u)"']&h_{X'}(Y)
+\end{tikzcd}
+\]
+交换；换言之，$h_w$ 是函子态射 $h_X\to h_{X'}$（T，1.2），也就是范畴 $\catHom(C^\circ,\Ens)$ 中的态射（T，1.7，d））。因此，$h_X$ 和 $h_w$ 的定义给出一个典范协变函子
+\begin{equation}\tag{8.1.2.1}
+h:C\longrightarrow\catHom(C^\circ,\Ens).
+\end{equation}
+
+\egapar{8.1.3}
+设 $X$ 是 $C$ 中的对象，$F$ 是从 $C$ 到 $\Ens$ 的反变函子（即 $\catHom(C^\circ,\Ens)$ 中的对象）。设 $g:h_X\to F$ 为函子态射：于是对每个 $Y\in C$，$g(Y)$ 是映射 $h_X(Y)\to F(Y)$，而且对 $C$ 中每个态射 $u:Y\to Y'$，图
+\begin{equation}\tag{8.1.3.1}
+\begin{tikzcd}[column sep=large]
+h_X(Y')\arrow[r,"h_X(u)"]\arrow[d,"g(Y')"']&h_X(Y)\arrow[d,"g(Y)"]\\
+F(Y')\arrow[r,"F(u)"']&F(Y)
+\end{tikzcd}
+\end{equation}
+交换。特别地，有映射 $g(X):h_X(X)=\Hom(X,X)\to F(X)$，从而有元素
+\begin{equation}\tag{8.1.3.2}
+\alpha(g)=(g(X))(1_X)\in F(X),
+\end{equation}
+进而有典范映射
+\begin{equation}\tag{8.1.3.3}
+\alpha:\Hom(h_X,F)\longrightarrow F(X).
+\end{equation}
+反过来，取一个元素 $\xi\in F(X)$；对 $C$ 中每个态射 $v:Y\to X$，$F(v)$ 是从 $F(X)$ 到 $F(Y)$ 的映射。考虑从 $h_X(Y)$ 到 $F(Y)$ 的映射
+\begin{equation}\tag{8.1.3.4}
+v\longmapsto(F(v))(\xi).
+\end{equation}
+若以 $(\beta(\xi))(Y)$ 表示此映射，则
+\begin{equation}\tag{8.1.3.5}
+\beta(\xi):h_X\longrightarrow F
+\end{equation}
+是函子态射，因为对 $C$ 中每个态射 $u:Y\to Y'$，有
+\[
+(F(vu))(\xi)=(F(v)\circ F(u))(\xi),
+\]
+这就验证了在 $g=\beta(\xi)$ 时（8.1.3.1）的交换性。\transnote{此处底本右端确实印作 $F(v)\circ F(u)$。按本段的反变函子约定，当 $v:Y'\to X$ 时，应读作 $F(u)\circ F(v)$；这里保留底本的式样，并明确标出复合次序疑误。}
+这样就定义了典范映射
+\begin{equation}\tag{8.1.3.6}
+\beta:F(X)\longrightarrow\Hom(h_X,F).
+\end{equation}
+
+\egastatement{8.1.4}{命题}
+映射 $\alpha$ 和 $\beta$ 是互为逆映射的双射。
+\begin{proof}
+对 $\xi\in F(X)$ 计算 $\alpha(\beta(\xi))$。对每个 $Y\in C$，$(\beta(\xi))(Y)$ 是从 $h_X(Y)$ 到 $F(Y)$ 的映射 $g_1(Y):v\mapsto(F(v))(\xi)$。因此
+\[
+\alpha(\beta(\xi))=(g_1(X))(1_X)=(F(1_X))(\xi)=1_{F(X)}(\xi)=\xi.
+\]
+现在对 $g\in\Hom(h_X,F)$ 计算 $\beta(\alpha(g))$。对每个 $Y\in C$，$(\beta(\alpha(g)))(Y)$ 是映射
+\[
+v\longmapsto(F(v))\bigl((g(X))(1_X)\bigr).
+\]
+由（8.1.3.1）的交换性，此映射就是
+\[
+v\longmapsto(g(Y))\bigl((h_X(v))(1_X)\bigr)=(g(Y))(v),
+\]
+最后的等式来自 $h_X(v)$ 的定义。也就是说，此映射等于 $g(Y)$，命题得证。
+\end{proof}
+
+\egapar{8.1.5}
+回顾一下：范畴 $C$ 的一个\textbf{子范畴} $C'$，由以下条件定义：其对象是 $C$ 的对象；若 $X',Y'$ 是 $C'$ 中的两个对象，则 $C'$ 中从 $X'$ 到 $Y'$ 的态射集合 $\Hom_{C'}(X',Y')$ 是 $C$ 中态射集合 $\Hom_C(X',Y')$ 的一个子集，而且“态射复合”的典范映射
+\[
+\Hom_{C'}(X',Y')\times\Hom_{C'}(Y',Z')\longrightarrow\Hom_{C'}(X',Z')
+\]
+是典范映射
+\[
+\Hom_C(X',Y')\times\Hom_C(Y',Z')\longrightarrow\Hom_C(X',Z')
+\]
+的限制。
+
+若对 $C'$ 中每一对对象都有 $\Hom_{C'}(X',Y')=\Hom_C(X',Y')$，则称 $C'$ 是 $C$ 的\textbf{满子范畴}。由 $C$ 中所有同构于 $C'$ 的对象的对象组成的子范畴 $C''$，这时也为 $C$ 的满子范畴，并且容易验证，它与 $C'$ 等价（T，1.2）。
+
+协变函子 $F:C_1\to C_2$ 称为\textbf{全忠实}的，若对 $C_1$ 中每一对对象 $X_1,Y_1$，映射
+\[
+u\longmapsto F(u):\Hom(X_1,Y_1)\longrightarrow\Hom(F(X_1),F(Y_1))
+\]
+为双射。这蕴含 $C_2$ 的子范畴 $F(C_1)$ 是满的。此外，若两个对象 $X_1,X'_1$ 有同一个像 $X_2$，则存在唯一同构 $u:X_1\to X'_1$，使 $F(u)=1_{X_2}$。对 $F(C_1)$ 中每个对象 $X_2$，取满足 $F(X_1)=X_2$ 的对象 $X_1$ 之一，记为 $G(X_2)$（这里用选择公理定义 $G$）；对 $F(C_1)$ 中任一态射 $v:X_2\to Y_2$，以 $G(v)$ 表示满足 $F(u)=v$ 的唯一态射 $u:G(X_2)\to G(Y_2)$。于是 $G$ 是从 $F(C_1)$ 到 $C_1$ 的函子，$FG$ 是 $F(C_1)$ 上的恒等函子。上述论述又表明，存在函子同构 $\varphi:1_{C_1}\to GF$，使 $F,G,\varphi$ 与恒等同构 $1_{F(C_1)}\to FG$ 给出范畴 $C_1$ 与 $C_2$ 的满子范畴 $F(C_1)$ 之间的等价（T，1.2）。
+
+\egapar{8.1.6}
+将命题（8.1.4）用于 $F=h_{X'}$ 的情形，其中 $X'$ 是 $C$ 的任意对象。映射
+\[
+\beta:\Hom(X,X')\longrightarrow\Hom(h_X,h_{X'})
+\]
+在这里正是（8.1.2）定义的 $w\mapsto h_w$。此映射为双射，故依（8.1.5）的术语，有：
+
+\egastatement{8.1.7}{命题}
+典范函子 $h:C\to\catHom(C^\circ,\Ens)$ 是全忠实的。
+
+\egapar{8.1.8}
+设 $F$ 为从 $C$ 到 $\Ens$ 的反变函子；若存在对象 $X\in C$，使 $F$ 同构于 $h_X$，就称 $F$ 是\textbf{可表}的。由（8.1.7）可知，给定 $X\in C$ 和函子同构 $g:h_X\to F$，便在唯一同构意义下确定了 $X$。命题（8.1.7）还意味着，$h$ 给出 $C$ 与 $\catHom(C^\circ,\Ens)$ 中由所有反变可表函子组成的满子范畴之间的等价。另一方面，由（8.1.4），给定函子态射 $g:h_X\to F$ 等价于给定一个元素 $\xi\in F(X)$；$g$ 为同构等价于 $\xi$ 满足以下条件：\emph{对 $C$ 的每个对象 $Y$，从 $\Hom(Y,X)$ 到 $F(Y)$ 的映射 $v\mapsto(F(v))(\xi)$ 为双射。} 当 $\xi$ 满足此条件时，就说偶对 $(X,\xi)$ \textbf{表示}可表函子 $F$。若存在这样的 $\xi\in F(X)$，也常略称对象 $X\in C$ 表示 $F$，即 $h_X$ 同构于 $F$。
+
+设 $F,F'$ 是从 $C$ 到 $\Ens$ 的两个反变可表函子，且给定函子同构 $h_X\to F$ 与 $h_{X'}\to F'$。由（8.1.6），$\Hom(X,X')$ 与函子态射 $F\to F'$ 的集合 $\Hom(F,F')$ 之间有典范的一一对应。
+
+\egapar{8.1.9}
+\textbf{例 I：射影极限。} 反变可表函子的概念，特别包含通常所谓“泛问题的解”的对偶概念。更一般地，我们将看到，射影极限是可表函子的一个特例。回顾一下：在范畴 $C$ 中，给定一个预序集 $I$、一族对象 $(A_\alpha)_{\alpha\in I}$，以及对每对满足 $\alpha\leq\beta$ 的指标给定态射 $u_{\alpha\beta}:A_\beta\to A_\alpha$，便定义一个射影系。此系在 $C$ 中的一个射影极限，由对象 $B$（记作 $\plim A_\alpha$）及对每个 $\alpha\in I$ 给定的态射 $u_\alpha:B\to A_\alpha$ 组成，满足：1° 当 $\alpha\leq\beta$ 时，$u_\alpha=u_{\alpha\beta}u_\beta$；2° 对 $C$ 中每个对象 $X$ 及每族满足 $v_\alpha=u_{\alpha\beta}v_\beta$（$\alpha\leq\beta$）的态射 $v_\alpha:X\to A_\alpha$，存在唯一态射 $v:X\to B$（记作 $\plim v_\alpha$），使每个 $\alpha$ 都有 $v_\alpha=u_\alpha v$（T，1.8）。可以作如下解释：$u_{\alpha\beta}$ 典范地定义映射
+\[
+\overline u_{\alpha\beta}:\Hom(X,A_\beta)\longrightarrow\Hom(X,A_\alpha),
+\]
+这些映射给出集合的射影系 $(\Hom(X,A_\alpha),\overline u_{\alpha\beta})$；按定义，$(v_\alpha)$ 是集合 $\plim_\alpha\Hom(X,A_\alpha)$ 的一个元素。显然 $X\mapsto\plim_\alpha\Hom(X,A_\alpha)$ 是从 $C$ 到 $\Ens$ 的反变函子；射影极限 $B$ 的存在，等价于 $(v_\alpha)\mapsto\plim v_\alpha$ 是关于 $X$ 的函子同构
+\begin{equation}\tag{8.1.9.1}
+\plim_\alpha\Hom(X,A_\alpha)\simeq\Hom(X,B),
+\end{equation}
+即函子 $X\mapsto\plim_\alpha\Hom(X,A_\alpha)$ 可表。
+
+\egapar{8.1.10}
+\textbf{例 II：终对象。} 设 $C$ 为一个范畴，$\{a\}$ 为单元素集合。考虑反变函子 $F:C\to\Ens$：它把每个对象 $X$ 对应于集合 $\{a\}$，把每个态射 $X\to X'$ 对应于唯一映射 $\{a\}\to\{a\}$。此函子可表，意味着存在对象 $e\in C$，使每个 $Y\in C$ 都满足 $\Hom(Y,e)=h_e(Y)$ 为单元素集合；称 $e$ 为 $C$ 的一个\textbf{终对象}。显然，$C$ 的任意两个终对象同构（这就容许通常借助选择公理，选定 $C$ 的一个终对象并记为 $C_e$）。例如，集合范畴 $\Ens$ 中的终对象是单元素集合；在域 $K$ 上的增广代数范畴中（态射为与增广相容的代数同态），$K$ 是一个终对象；在 $S$-预概形范畴中（I，2.5.1），$S$ 是一个终对象。
+
+\egapar{8.1.11}
+对范畴 $C$ 中两个对象 $X,Y$，令 $h^X(Y)=\Hom(X,Y)$；对每个态射 $u:Y\to Y'$，以 $h^X(u)$ 表示从 $\Hom(X,Y)$ 到 $\Hom(X,Y')$ 的映射 $v\mapsto uv$。于是 $h^X$ 是协变函子 $C\to\Ens$。如同（8.1.2），可由此定义一个典范协变函子 $h':C^\circ\to\catHom(C,\Ens)$。从 $C$ 到 $\Ens$ 的协变函子 $F$，即 $\catHom(C,\Ens)$ 中的对象，若存在对象 $X\in C$（必在唯一同构意义下唯一），使 $F$ 同构于 $h^X$，便称为可表函子。与上述论述“对偶”的考虑留给读者展开；这一概念所涵盖的，此时是归纳极限，尤其是通常“泛问题的解”的概念。\transnote{这里及下文“在唯一同构意义下唯一”均须连同表示同构（或泛元素）理解；不带这一结构的对象本身未必没有非平凡自同构。}
+
+\subsection{范畴中的代数结构}
+\src{9--12}
+\egapar{8.2.1}
+给定从 $C$ 到 $\Ens$ 的两个反变函子 $F,F'$，回顾其乘积的定义：对每个 $Y\in C$，令 $(F\times F')(Y)=F(Y)\times F'(Y)$；对每个态射 $u:Y\to Y'$，令 $(F\times F')(u)=F(u)\times F'(u)$，即从 $F(Y')\times F'(Y')$ 到 $F(Y)\times F'(Y)$ 的映射
+\[
+(\xi,\xi')\longmapsto\bigl((F(u))(\xi),(F'(u))(\xi')\bigr).
+\]
+于是 $F\times F':C\to\Ens$ 是反变函子（它也正是范畴 $\catHom(C^\circ,\Ens)$ 中对象 $F,F'$ 的乘积）。给定对象 $X\in C$，把函子态射
+\begin{equation}\tag{8.2.1.1}
+\gamma_X:h_X\times h_X\longrightarrow h_X
+\end{equation}
+称为 $X$ 上的\textbf{内合成律}。
+
+换言之（T，1.2），对每个 $Y\in C$，$\gamma_X(Y)$ 是映射 $h_X(Y)\times h_X(Y)\to h_X(Y)$，因此按定义是集合 $h_X(Y)$ 上的一个内合成律；它满足：对 $C$ 中每个态射 $u:Y\to Y'$，图
+\[
+\begin{tikzcd}[column sep=huge]
+h_X(Y')\times h_X(Y')\arrow[r,"h_X(u)\times h_X(u)"]\arrow[d,"\gamma_X(Y')"']&h_X(Y)\times h_X(Y)\arrow[d,"\gamma_X(Y)"]\\
+h_X(Y')\arrow[r,"h_X(u)"']&h_X(Y)
+\end{tikzcd}
+\]
+交换。这意味着，关于合成律 $\gamma_X(Y')$ 与 $\gamma_X(Y)$，$h_X(u)$ 是从 $h_X(Y')$ 到 $h_X(Y)$ 的同态。
+
+同样，给定 $C$ 中两个对象 $Z,X$，将函子态射
+\begin{equation}\tag{8.2.1.2}
+\omega_{X,Z}:h_Z\times h_X\longrightarrow h_X
+\end{equation}
+称为 $X$ 上\textbf{以 $Z$ 为算子域的外合成律}。如上可见，对每个 $Y\in C$，$\omega_{X,Z}(Y)$ 是 $h_X(Y)$ 上以 $h_Z(Y)$ 为算子域的外合成律；而且对每个态射 $u:Y\to Y'$，$h_Z(u)$ 与 $h_X(u)$ 构成从 $(h_Z(Y'),h_X(Y'))$ 到 $(h_Z(Y),h_X(Y))$ 的双同态。
+
+\egapar{8.2.2}
+设 $X'$ 是 $C$ 的另一个对象，并在 $X'$ 上给定内合成律 $\gamma_{X'}$。若对每个 $Y\in C$，$h_w(Y):h_X(Y)\to h_{X'}(Y)$ 都是关于合成律 $\gamma_X(Y)$ 与 $\gamma_{X'}(Y)$ 的同态，则称 $C$ 中态射 $w:X\to X'$ 是关于这些合成律的\textbf{同态}。若第三个对象 $X''$ 带有内合成律 $\gamma_{X''}$，且态射 $w':X'\to X''$ 为关于 $\gamma_{X'}$ 与 $\gamma_{X''}$ 的同态，则显然 $w'w:X\to X''$ 是关于 $\gamma_X$ 与 $\gamma_{X''}$ 的同态。若 $C$ 中同构 $w:X\iso X'$ 及其逆态射 $w^{-1}$ 分别为关于两方向合成律的同态，就称 $w$ 为关于合成律 $\gamma_X,\gamma_{X'}$ 的\textbf{同构}。
+
+对于带外合成律的 $C$ 中对象偶对，同样定义双同态。
+
+\egapar{8.2.3}
+若对象 $X\in C$ 上的内合成律 $\gamma_X$ 满足：对每个 $Y\in C$，$\gamma_X(Y)$ 都是 $h_X(Y)$ 上的群律，则称带此合成律的 $X$ 为一个 \textbf{$C$-群}，或一个 \textbf{$C$-群对象}。同样定义 $C$-环、$C$-模等等。
+
+\egapar{8.2.4}
+假设对象 $X\in C$ 与自身的乘积 $X\times X$ 在 $C$ 中存在。按定义，在典范同构意义下有 $h_{X\times X}=h_X\times h_X$，因为乘积是射影极限的特例（8.1.9）。因此，$X$ 上的内合成律可视为函子态射 $\gamma_X:h_{X\times X}\to h_X$，从而典范地确定（8.1.6）一个满足 $h_{c_X}=\gamma_X$ 的元素 $c_X\in\Hom(X\times X,X)$。所以在此情形下，给定 $X$ 上的内合成律等价于给定态射 $X\times X\to X$；当 $C=\Ens$ 时，就得到集合上内合成律的通常概念。对于外合成律，当乘积 $Z\times X$ 在 $C$ 中存在时，也有类似结果。
+
+\egapar{8.2.5}
+在上述记号下，进一步假设 $X\times X\times X$ 在 $C$ 中存在。由乘积作为表示函子的对象的刻画（8.1.9），存在典范同构
+\[
+(X\times X)\times X\simeq X\times X\times X\simeq X\times(X\times X).
+\]
+若将 $X\times X\times X$ 典范地等同于 $(X\times X)\times X$，则对每个 $Y\in C$，映射 $\gamma_X(Y)\times1_{h_X(Y)}$ 等同于 $h_{c_X\times1_X}(Y)$。因此，下面的说法彼此等价：对每个 $Y\in C$，内合成律 $\gamma_X(Y)$ 是结合的；映射图
+\[
+\begin{tikzcd}[column sep=large]
+h_X(Y)\times h_X(Y)\times h_X(Y)\arrow[r,"\gamma_X(Y)\times1"]\arrow[d,"1\times\gamma_X(Y)"']&h_X(Y)\times h_X(Y)\arrow[d,"\gamma_X(Y)"]\\
+h_X(Y)\times h_X(Y)\arrow[r,"\gamma_X(Y)"']&h_X(Y)
+\end{tikzcd}
+\]
+交换；态射图
+\[
+\begin{tikzcd}[column sep=large]
+X\times X\times X\arrow[r,"c_X\times1_X"]\arrow[d,"1_X\times c_X"']&X\times X\arrow[d,"c_X"]\\
+X\times X\arrow[r,"c_X"']&X
+\end{tikzcd}
+\]
+交换。
+
+\egapar{8.2.6}
+在（8.2.5）的假设下，要表达每个 $Y\in C$ 上的内合成律 $\gamma_X(Y)$ 是群律，一方面须表达其结合性，另一方面须表达存在具有群中取逆性质的映射 $\alpha_X(Y):h_X(Y)\to h_X(Y)$。由于对每个态射 $u:Y\to Y'$，已知 $h_X(u)$ 必须是群同态 $h_X(Y')\to h_X(Y)$，首先可见 $\alpha_X:h_X\to h_X$ 必须是函子态射。另一方面，群 $G$ 中取逆映射 $s\mapsto s^{-1}$ 的特征性质可以不借助单位元表达，只需写出下列两个复合映射
+\[
+\begin{aligned}
+(s,t)&\longmapsto(s,s^{-1},t)\longmapsto(s,s^{-1}t)\longmapsto s(s^{-1}t),\\
+(s,t)&\longmapsto(s,s^{-1},t)\longmapsto(s,ts^{-1})\longmapsto(ts^{-1})s
+\end{aligned}
+\]
+均等于第二投影 $(s,t)\mapsto t$。由（8.1.3），有 $\alpha_X=h_{a_X}$，其中 $a_X\in\Hom(X,X)$。于是上述第一个条件表示复合态射
+\[
+X\times X\xrightarrow{(1_X,a_X)\times1_X}X\times X\times X
+\xrightarrow{1_X\times c_X}X\times X\xrightarrow{c_X}X
+\]
+为 $C$ 中的第二投影 $X\times X\to X$；第二个条件也有同样的翻译。\transnote{本段不借助单位元的描述按底本保留。若把其中的等式单独作为集合上的公理，尚须排除空集情形；这里不把这一补充静默加入原文。}
+
+\egapar{8.2.7}
+现在假设 $C$ 中存在终对象 $e$（8.1.10）。仍假设每个 $Y\in C$ 上的 $\gamma_X(Y)$ 是 $h_X(Y)$ 的群律，以 $\eta_X(Y)$ 表示该群律的单位元。因为对每个态射 $u:Y\to Y'$，$h_X(u)$ 都为群同态，故
+\[
+\eta_X(Y)=(h_X(u))(\eta_X(Y')).
+\]
+特别取 $Y'=e$；这时 $u$ 为 $\Hom(Y,e)$ 中唯一元素 $\varepsilon$，可见 $\eta_X(e)$ 完全确定了所有的 $\eta_X(Y)$。令 $e_X=\eta_X(X)$，即群 $h_X(X)=\Hom(X,X)$ 的单位元。图
+\[
+\begin{tikzcd}[column sep=large]
+h_X(e)\arrow[r,"h_X(\varepsilon)"]\arrow[d,"h_{e_X}(e)"']&h_X(Y)\arrow[d,"h_{e_X}(Y)"]\\
+h_X(e)\arrow[r,"h_X(\varepsilon)"']&h_X(Y)
+\end{tikzcd}
+\]
+的交换性（参见8.1.2）表明，在集合 $h_X(Y)$ 上，$h_{e_X}(Y)$ 正是把每个元素送到单位元的映射 $s\mapsto\eta_X(Y)$。于是可验证：对每个 $Y\in C$，$\eta_X(Y)$ 是 $\gamma_X(Y)$ 的单位元，等价于复合态射
+\[
+X\xrightarrow{(1_X,1_X)}X\times X
+\xrightarrow{1_X\times e_X}X\times X\xrightarrow{c_X}X
+\]
+以及交换其中 $1_X$ 和 $e_X$ 所得的类似复合，都等于 $1_X$。
+
+\egapar{8.2.8}
+当然，范畴中代数结构的例子还很容易列举许多。这里对群的例子作了相当详细的处理；今后遇到其他代数结构的例子时，通常将类似考虑留给读者自行展开。\par
+
+% ---- END c0_s08.tex ----
+% ---- BEGIN c0_s09.tex ----
+\section{可构造集}
+\subsection{可构造集}
+\src{12--14}
+\egastatement{9.1.1}{定义}
+连续映射 $f:X\to Y$ 称为\textbf{拟紧}的，若对 $Y$ 的每个拟紧开集 $U$，$f^{-1}(U)$ 都是拟紧的。拓扑空间 $X$ 的子集 $Z$ 称为在 $X$ 中\textbf{逆紧}的（rétrocompact），若典范嵌入 $Z\to X$ 为拟紧映射；换言之，对 $X$ 的每个拟紧开集 $U$，$U\cap Z$ 都拟紧。
+
+$X$ 的闭子集在 $X$ 中逆紧；但 $X$ 的拟紧子集不一定在 $X$ 中逆紧。若 $X$ 拟紧，则在 $X$ 中逆紧的每个开子集都拟紧。显然，有限个在 $X$ 中逆紧的集合之并仍在 $X$ 中逆紧，因为有限个拟紧集之并拟紧。有限个在 $X$ 中逆紧的开集之交，仍是在 $X$ 中逆紧的开集。在局部诺特空间 $X$ 中，每个拟紧集都是诺特子空间，从而 $X$ 的每个子集都在 $X$ 中逆紧。
+
+\egastatement{9.1.2}{定义}
+给定拓扑空间 $X$。若 $X$ 的一个子集属于满足下述条件的最小的子集族 $\mathfrak F$，便称它为\textbf{可构造}的：$\mathfrak F$ 包含 $X$ 中所有逆紧开子集，且对有限交与取补集封闭（这也蕴含 $\mathfrak F$ 对有限并封闭）。
+
+\egastatement{9.1.3}{命题}
+$X$ 的一个子集可构造，当且仅当它是有限个形如 $U\cap\complement V$ 的集合之并，其中 $U,V$ 为在 $X$ 中逆紧的开集。
+\begin{proof}
+充分性显然。为证明必要性，考虑所有上述形状的有限并组成的集合族 $\mathfrak G$；只须证明 $\mathfrak G$ 中每个集合的补集仍属于 $\mathfrak G$。设
+\[
+Z=\bigcup_{i\in I}(U_i\cap\complement V_i),
+\]
+其中 $I$ 有限，$U_i,V_i$ 都是在 $X$ 中逆紧的开集。则
+\[
+\complement Z=\bigcap_{i\in I}(V_i\cup\complement U_i).
+\]
+因此 $\complement Z$ 是一些集合的有限并，而其中每个集合，是若干 $V_i$ 与若干 $\complement U_i$ 的交，故可写为 $V\cap\complement U$，其中 $U$ 是若干 $U_i$ 的并，$V$ 是若干 $V_i$ 的交。前面已经指出，在 $X$ 中逆紧的开集的有限并与有限交，仍是这样的开集，故结论成立。
+\end{proof}
+
+\egastatement{9.1.4}{推论}
+$X$ 的每个可构造子集都在 $X$ 中逆紧。
+\begin{proof}
+只须证明：若 $U,V$ 是在 $X$ 中逆紧的开集，则 $U\cap\complement V$ 在 $X$ 中逆紧。事实上，若 $W$ 为 $X$ 的拟紧开集，则 $W\cap U\cap\complement V$ 在拟紧空间 $W\cap U$ 中为闭集，因而拟紧。
+\end{proof}
+特别地：
+
+\egastatement{9.1.5}{推论}
+$X$ 的开子集 $U$ 可构造，当且仅当它在 $X$ 中逆紧。$X$ 的闭子集 $F$ 可构造，当且仅当开集 $\complement F$ 逆紧。
+
+\egapar{9.1.6}
+一个重要情形是：$X$ 的每个拟紧开子集都逆紧；换言之，$X$ 的任意两个拟紧开子集之交都拟紧（参见 I，5.5.6）。当 $X$ 自身拟紧时，这意味着 $X$ 中的逆紧开子集恰好就是拟紧开子集，而 $X$ 的可构造子集恰好是有限个形如 $U\cap\complement V$ 的集合之并，其中 $U,V$ 为拟紧开集。
+
+\egastatement{9.1.7}{推论}
+诺特空间 $X$ 的一个子集可构造，当且仅当它是 $X$ 的有限个局部闭子集之并。
+
+\egastatement{9.1.8}{命题}
+设 $X$ 为拓扑空间，$U$ 是其开子集。
+\begin{enumerate}[label=(\roman*)]
+\item 若 $T$ 为 $X$ 的可构造子集，则 $T\cap U$ 是 $U$ 的可构造子集。
+\item 进一步假设 $U$ 在 $X$ 中逆紧。则 $U$ 的子集 $Z$ 在 $X$ 中可构造，当且仅当它在 $U$ 中可构造。
+\end{enumerate}
+\begin{proof}
+（i）利用（9.1.3），归结为证明：若 $T$ 为在 $X$ 中逆紧的开集，则 $T\cap U$ 为在 $U$ 中逆紧的开集。也就是说，对每个拟紧开集 $W\subset U$，$T\cap U\cap W=T\cap W$ 拟紧；这由假设立即得出。
+
+（ii）必要性由（i）得出，故只须证明充分性。由（9.1.3），只需考虑 $Z$ 为在 $U$ 中逆紧的开集的情形：因为这样便知 $U-Z$ 在 $X$ 中可构造；若 $Z,Z'$ 都是在 $U$ 中逆紧的开集，$Z\cap(U-Z')$ 就也在 $X$ 中可构造。若 $W$ 为 $X$ 的拟紧开集，$Z$ 为在 $U$ 中逆紧的开集，则 $Z\cap W=Z\cap(W\cap U)$；由假设，$W\cap U$ 为 $U$ 的拟紧开集。因此 $W\cap Z$ 拟紧，故 $Z$ 在 $X$ 中为逆紧开集，特别地在 $X$ 中可构造。
+\end{proof}
+
+\egastatement{9.1.9}{推论}
+设 $X$ 为拓扑空间，$(U_i)_{i\in I}$ 是由在 $X$ 中逆紧的开集组成的有限覆盖。$X$ 的子集 $Z$ 在 $X$ 中可构造，当且仅当对每个 $i\in I$，$Z\cap U_i$ 在 $U_i$ 中可构造。
+
+\egapar{9.1.10}
+特别假设 $X$ 拟紧，并且 $X$ 的每一点都有由在 $X$ 中逆紧的开邻域组成的基本邻域系（这些邻域也拟紧）。那么，子集 $Z$ 在 $X$ 中可构造是一个局部性质；也就是说，这等价于：对每个 $x\in X$，存在 $x$ 的开邻域 $V$，使 $V\cap Z$ 在 $V$ 中可构造。事实上，若满足此条件，则由对 $X$ 的假设以及（9.1.8，i），对每个 $x\in X$ 可取一个在 $X$ 中逆紧的开邻域 $V$，使 $V\cap Z$ 在 $V$ 中可构造。再用有限个这样的邻域覆盖 $X$，并应用（9.1.9）即可。
+
+\egastatement{9.1.11}{定义}
+设 $X$ 为拓扑空间。若对每个 $x\in X$，存在 $x$ 的开邻域 $V$，使 $T\cap V$ 在 $V$ 中可构造，则称 $X$ 的子集 $T$ 在 $X$ 中\textbf{局部可构造}。
+
+由（9.1.8，i）立即可知：若 $V\cap T$ 在 $V$ 中可构造，则对每个开集 $W\subset V$，$W\cap T$ 在 $W$ 中可构造。若 $T$ 在 $X$ 中局部可构造，则对 $X$ 的每个开集 $U$，$T\cap U$ 在 $U$ 中局部可构造，这也是上述论述的推论。同样的论述表明，$X$ 中局部可构造子集的全体对有限并和有限交封闭；显然，对取补集也封闭。
+
+\egastatement{9.1.12}{命题}
+设 $X$ 为拓扑空间。在 $X$ 中可构造的每个集合都局部可构造。若 $X$ 拟紧且其拓扑具有由在 $X$ 中逆紧的集合组成的基，则逆命题也成立。
+\begin{proof}
+第一断言由定义（9.1.11）得出，第二断言由（9.1.10）得出。
+\end{proof}
+
+\egastatement{9.1.13}{推论}
+设拓扑空间 $X$ 的拓扑具有由在 $X$ 中逆紧的集合组成的基。则 $X$ 中每个局部可构造子集 $T$ 都在 $X$ 中逆紧。
+\begin{proof}
+设 $U$ 为 $X$ 的拟紧开集；$T\cap U$ 在 $U$ 中局部可构造，故由（9.1.12），它在 $U$ 中可构造，因而由（9.1.4）拟紧。
+\end{proof}
+
+\subsection{诺特空间中的可构造集}
+\src{14--16}
+\egapar{9.2.1}
+已经看到（9.1.7），在诺特空间 $X$ 中，可构造子集就是局部闭子集的有限并。
+
+若 $X'$ 也是诺特空间，则 $X$ 中可构造集在连续映射 $X'\to X$ 下的逆像在 $X'$ 中可构造。若 $Y$ 为诺特空间 $X$ 的可构造子集，则 $Y$ 的子集中，那些作为 $Y$ 的子空间可构造的，恰好就是作为 $X$ 的子空间可构造的。
+
+\egastatement{9.2.2}{命题}
+设 $X$ 为不可约诺特空间，$E$ 是 $X$ 的可构造子集。$E$ 在 $X$ 中稠密，当且仅当 $E$ 包含 $X$ 的一个非空开子集。
+\begin{proof}
+因为每个非空开集都在 $X$ 中稠密，充分性显然。反过来，设
+\[
+E=\bigcup_{i=1}^{n}(U_i\cap F_i),
+\]
+其中 $U_i$ 非空开、$F_i$ 闭。则 $\overline E\subset\bigcup_iF_i$。所以若 $\overline E=X$，$X$ 就等于某个 $F_i$，从而 $E\supset U_i$，证明完成。
+\end{proof}
+当 $X$ 有泛点 $x$（$0_{\mathrm I}$，2.1.2）时，（9.2.2）的条件也等价于 $x\in E$。
+
+\egastatement{9.2.3}{命题}
+设 $X$ 为诺特空间。$X$ 的子集 $E$ 可构造，当且仅当对 $X$ 的每个不可约闭子集 $Y$，$E\cap Y$ 或者在 $Y$ 中稀疏，或者包含 $Y$ 的一个非空开子集。
+\begin{proof}
+必要性由 $E\cap Y$ 须为 $Y$ 的可构造子集及（9.2.2）得出，因为不可约空间 $Y$ 的非稠密子集必为稀疏集（$0_{\mathrm I}$，2.1.1）。为证明充分性，对由满足 $Y\cap E$ 可构造（相对于 $Y$ 或相对于 $X$，二者等价）的闭子集 $Y$ 所成集合 $\mathfrak M$ 应用诺特归纳原理（$0_{\mathrm I}$，2.2.2）。于是可假设，对 $X$ 的每个真闭子集 $Y$，$E\cap Y$ 均可构造。
+
+首先，若 $X$ 不是不可约的，设 $X_i$（$1\leq i\leq m$）为其不可约分支；它们只有有限个（$0_{\mathrm I}$，2.2.5）。由假设，各 $E\cap X_i$ 可构造，故其并 $E$ 也可构造。其次，若 $X$ 不可约，则由假设，或是 $E$ 稀疏，因而 $\overline E\ne X$，于是 $E=E\cap\overline E$ 可构造；或是 $E$ 包含一个非空开集 $U$，此时 $E$ 为 $U$ 与 $E\cap(X-U)$ 之并。$X-U$ 是不同于 $X$ 的闭集，故 $E\cap(X-U)$ 可构造，因此 $E$ 也可构造，证明完成。
+\end{proof}
+
+\egastatement{9.2.4}{推论}
+设 $X$ 为诺特空间，$(E_\alpha)$ 是 $X$ 的可构造子集的滤过递增族，满足：
+\begin{enumerate}[label=\arabic*°]
+\item $X$ 为此族 $(E_\alpha)$ 的并。
+\item $X$ 的每个不可约闭子集都包含于某个 $E_\alpha$ 的闭包中。
+\end{enumerate}
+那么存在指标 $\alpha$，使 $X=E_\alpha$。
+
+当每个不可约闭子集都具有泛点时，可以去掉假设2°。
+\begin{proof}
+对由至少包含于某个 $E_\alpha$ 的闭子集组成的集合 $\mathfrak M$ 应用诺特归纳原理（$0_{\mathrm I}$，2.2.2）。于是可假设，$X$ 的每个真闭子集 $Y$ 都包含于某个 $E_\alpha$。若 $X$ 不是不可约的，结论显然：因为每个不可约分支 $X_i$（$1\leq i\leq m$）都包含于某个 $E_{\alpha_i}$，而存在一个 $E_\alpha$ 包含所有这些 $E_{\alpha_i}$。
+
+现设 $X$ 不可约。由假设，存在 $\beta$ 使 $X=\overline{E_\beta}$；所以由（9.2.2），$E_\beta$ 包含 $X$ 的一个非空开集 $U$。闭集 $X-U$ 包含于某个 $E_\gamma$，只须取同时包含 $E_\beta,E_\gamma$ 的 $E_\alpha$ 即可。若每个不可约闭子集 $Y$ 都有泛点 $y$，则存在 $\alpha$ 使 $y\in E_\alpha$，故 $Y=\overline{\{y\}}\subset\overline{E_\alpha}$，即条件2°是条件1°的推论。
+\end{proof}
+
+\egastatement{9.2.5}{命题}
+设 $X$ 为诺特空间，$x\in X$，$E$ 为 $X$ 的可构造子集。$E$ 是 $x$ 的邻域，当且仅当对每个包含 $x$ 的不可约闭子集 $Y$，$E\cap Y$ 在 $Y$ 中稠密（若 $Y$ 有泛点 $y$，由9.2.2，这也表示 $y\in E$）。
+\begin{proof}
+必要性显然，证明充分性。对由满足 $x\in Y$ 且 $E\cap Y$ 是 $x$ 在 $Y$ 中的邻域的闭子集 $Y$ 所成集合 $\mathfrak M$，应用诺特归纳原理。于是可假设：每个包含 $x$ 的真闭子集 $Y\ne X$ 都属于 $\mathfrak M$。
+
+若 $X$ 不是不可约的，则每个包含 $x$ 的不可约分支 $X_i$ 均不同于 $X$，故 $E\cap X_i$ 是 $x$ 相对于 $X_i$ 的邻域。因此 $E$ 是 $x$ 在所有包含 $x$ 的不可约分支之并中的邻域；而此并是 $x$ 在 $X$ 中的邻域，故 $E$ 也是。
+
+若 $X$ 不可约，则由假设，$E$ 在 $X$ 中稠密，故包含一个非空开子集 $U$（9.2.2）。当 $x\in U$ 时结论显然；否则，由归纳假设，$x$ 相对于 $X-U$ 是 $E\cap(X-U)$ 的内点。因此 $X-E$ 在 $X$ 中的闭包不包含 $x$；该闭包的补集就是包含于 $E$ 的 $x$ 的邻域，证明完成。
+\end{proof}
+
+\egastatement{9.2.6}{推论}
+设 $X$ 为诺特空间，$E$ 为其子集。$E$ 在 $X$ 中开，当且仅当对每个与 $E$ 相交的不可约闭子集 $Y$，$E\cap Y$ 包含 $Y$ 的一个非空开子集。
+\begin{proof}
+必要性显然。反过来，若此条件成立，由（9.2.3）便知 $E$ 可构造；而（9.2.5）表明 $E$ 是其每一点的邻域，故结论成立。
+\end{proof}
+
+\subsection{可构造函数}
+\src{16--17}
+\egastatement{9.3.1}{定义}
+设 $h$ 为从拓扑空间 $X$ 到集合 $T$ 的映射。若每个 $t\in T$ 的逆像 $h^{-1}(t)$ 可构造，且除了有限个 $t$ 外这些逆像均为空集，则称 $h$ 为\textbf{可构造}映射。这时对 $T$ 的任一子集 $S$，$h^{-1}(S)$ 都可构造。若每个 $x\in X$ 都有开邻域 $V$，使 $h|V$ 可构造，则称 $h$ 为\textbf{局部可构造}映射。
+
+每个可构造函数都局部可构造。当 $X$ 拟紧且有由在 $X$ 中逆紧的开集组成的基时（特别当 $X$ 诺特时），逆命题也成立。
+
+\egastatement{9.3.2}{命题}
+设 $h$ 为从诺特空间 $X$ 到集合 $T$ 的映射。$h$ 可构造，当且仅当对 $X$ 的每个不可约闭子集 $Y$，存在一个相对于 $Y$ 开的非空子集 $U\subset Y$，使 $h$ 在 $U$ 上为常值。
+\begin{proof}
+此条件必要：由假设，$h$ 在 $Y$ 上只取有限多个值 $t_i$，且每个 $h^{-1}(t_i)\cap Y$ 在 $Y$ 中可构造（9.2.1）。这些集合不可能全为 $Y$ 中的稀疏集，故至少一个包含非空开集（9.2.3）。
+
+为证明充分性，对由满足 $h|Y$ 可构造的闭子集 $Y$ 所成集合 $\mathfrak M$ 应用诺特归纳原理。于是可假设，对每个真闭子集 $Y\ne X$，$h|Y$ 都可构造。若 $X$ 不是不可约的，则 $h$ 在每个不可约分支 $X_i$ 上的限制都可构造；分支只有有限个，故由定义（9.3.1）立即得到 $h$ 可构造。若 $X$ 不可约，则由假设存在非空开子集 $U$，使 $h$ 在其上为常值；另一方面，$h|X-U$ 由假设可构造，所以 $h$ 可构造。
+\end{proof}
+
+\egastatement{9.3.3}{推论}
+设 $X$ 是每个不可约闭子集均有泛点的诺特空间。若映射 $h:X\to T$ 满足对每个 $t\in T$，$h^{-1}(t)$ 都可构造，则 $h$ 可构造。
+\begin{proof}
+若 $Y$ 为 $X$ 的不可约闭子集，$y$ 是其泛点，则 $Y\cap h^{-1}(h(y))$ 可构造且包含 $y$；由（9.2.2），此集包含 $Y$ 的一个非空开子集。应用（9.3.2）即可。
+\end{proof}
+
+\egastatement{9.3.4}{命题}
+设 $X$ 为每个不可约闭子集均有泛点的诺特空间，$h$ 是从 $X$ 到一个有序集的可构造映射。$h$ 在 $X$ 上上半连续，当且仅当对每个 $x\in X$ 及 $x$ 的每个泛化 $x'$（$0_{\mathrm I}$，2.1.2），有 $h(x')\leq h(x)$。
+\begin{proof}
+函数 $h$ 只取有限多个值。因此，上半连续表示：对每个 $x\in X$，由满足 $h(y)\leq h(x)$ 的 $y\in X$ 组成的集合 $E$ 是 $x$ 的邻域。由假设，$E$ 是 $X$ 的可构造子集；另一方面，不可约闭子集 $Y$ 包含 $x$，意味着 $Y$ 的泛点 $y$ 是 $x$ 的泛化。结论由（9.2.5）得出。
+\end{proof}\par
+
+% ---- END c0_s09.tex ----
+% ---- BEGIN c0_s10.tex ----
+\section{平坦模的补充知识}
+第10.1和10.2小节中只陈述而未证明的性质，其证明请参见 Bourbaki，\textit{Algèbre commutative}，第二章和第三章。
+\subsection{平坦模与自由模之间的关系}
+\src{17--18}
+\egapar{10.1.1}
+设 $A$ 为环，$\frj$ 为 $A$ 的理想，$M$ 为 $A$-模。对每个整数 $p\geq0$，有典范的 $(A/\frj)$-模同态
+\begin{equation}\tag{10.1.1.1}
+\varphi_p:(M/\frj M)\otimes_{A/\frj}(\frj^p/\frj^{p+1})\longrightarrow\frj^pM/\frj^{p+1}M,
+\end{equation}
+它显然满射。以 $\gr(A)=\bigoplus_{p\geq0}\frj^p/\frj^{p+1}$ 表示 $A$ 对滤过 $(\frj^p)$ 的相伴分次环，以 $\gr(M)=\bigoplus_{p\geq0}\frj^pM/\frj^{p+1}M$ 表示 $M$ 对滤过 $(\frj^pM)$ 的相伴分次 $\gr(A)$-模。于是 $\gr^p(A)=\frj^p/\frj^{p+1}$，$\gr^0(M)=M/\frj M$；各 $\varphi_p$ 给出分次 $\gr(A)$-模的满同态
+\begin{equation}\tag{10.1.1.2}
+\varphi:\gr^0(M)\otimes_{A/\frj}\gr(A)\longrightarrow\gr(M).
+\end{equation}
+
+\egapar{10.1.2}
+假设满足下列两种假设之一：
+\begin{enumerate}[label=(\roman*)]
+\item $\frj$ 幂零；
+\item $A$ 诺特，$\frj$ 包含于 $A$ 的根基，且 $M$ 为有限型模。
+\end{enumerate}
+那么，下列性质等价：
+\begin{enumerate}[label=\alph*)]
+\item $M$ 是自由 $A$-模。
+\item $M/\frj M=M\otimes_A(A/\frj)$ 是自由 $(A/\frj)$-模，且 $\Tor_1^A(M,A/\frj)=0$。
+\item $M/\frj M$ 是自由 $(A/\frj)$-模，而且典范同态（10.1.1.2）单射（因而双射）。
+\end{enumerate}
+
+\egapar{10.1.3}
+假设 $A/\frj$ 为域（即 $\frj$ 为极大理想），且满足（10.1.2）的假设（i）或（ii）之一。那么，下列性质等价：
+\begin{enumerate}[label=\alph*)]
+\item $M$ 是自由 $A$-模。
+\item $M$ 是投射 $A$-模。
+\item $M$ 是平坦 $A$-模。
+\item $\Tor_1^A(M,A/\frj)=0$。
+\item 典范同态（10.1.1.2）为双射。
+\end{enumerate}
+此结果特别适用于下列两种情形：
+\begin{enumerate}[label=(\roman*)]
+\item $M$ 是局部环 $A$ 上的任意模，而 $A$ 的极大理想 $\frj$ 幂零（例如 $A$ 是阿廷局部环）。
+\item $M$ 是诺特局部环上的有限型模。
+\end{enumerate}
+
+\subsection{平坦性的局部判别准则}
+\src{18--20}
+\egapar{10.2.1}
+假设与记号同（10.1.1），考虑以下条件：
+\begin{enumerate}[label=\alph*)]
+\item $M$ 是平坦 $A$-模。
+\item $M/\frj M$ 是平坦 $(A/\frj)$-模，且 $\Tor_1^A(M,A/\frj)=0$。
+\item $M/\frj M$ 是平坦 $(A/\frj)$-模，而且典范同态（10.1.1.2）为双射。
+\item 对每个 $n\geq1$，$M/\frj^nM$ 是平坦 $(A/\frj^n)$-模。
+\end{enumerate}
+有蕴含关系
+\[
+\mathrm{a)}\Longrightarrow\mathrm{b)}\Longrightarrow\mathrm{c)}\Longrightarrow\mathrm{d)}.
+\]
+若 $\frj$ 幂零，则 a）、b）、c）、d）四个条件等价。如果 $A$ 诺特且 $M$ \textbf{理想分离}，也有相同结论；这里理想分离是指：对 $A$ 的每个理想 $\mathfrak a$，$A$-模 $\mathfrak a\otimes_A M$ 对 $\frj$-预进拓扑分离。
+
+\egapar{10.2.2}
+设 $A$ 为诺特环，$B$ 为诺特交换 $A$-代数，$\frj$ 为 $A$ 的理想且 $\frj B$ 包含于 $B$ 的根基，$M$ 为有限型 $B$-模。那么，当把 $M$ 看成 $A$-模时，（10.2.1）的条件 a）、b）、c）、d）等价。
+
+此结果尤其适用于 $A,B$ 均为诺特局部环而 $A\to B$ 为局部同态的情形。更特别地，若 $\frj$ 为 $A$ 的极大理想，则在条件 b）与 c）中，可以去掉 $M/\frj M$ 平坦的假设，因为它自动满足；而条件 d）表示各 $M/\frj^nM$ 都是 $A/\frj^n$ 上的自由模。
+
+\egapar{10.2.3}
+对 $A,B,\frj,M$ 的假设同（10.2.2）开头。设 $\widehat A$ 为 $A$ 对 $\frj$-预进拓扑的分离完备化，$\widehat M$ 为 $M$ 对 $\frj B$-预进拓扑的分离完备化。那么，$M$ 为平坦 $A$-模，当且仅当 $\widehat M$ 为平坦 $\widehat A$-模。
+
+\egapar{10.2.4}
+设 $\rho:A\to B$ 为诺特局部环的局部同态，$k$ 为 $A$ 的剩余域，$M,N$ 为有限型 $B$-模，并假设 $N$ 是 $A$-平坦的。设 $u:M\to N$ 为 $B$-同态。那么以下条件等价：
+\begin{enumerate}[label=\alph*)]
+\item $u$ 单射，且 $\Coker(u)$ 为平坦 $A$-模。
+\item $u\otimes1:M\otimes_Ak\to N\otimes_Ak$ 单射。
+\end{enumerate}
+
+\egapar{10.2.5}
+设 $\rho:A\to B$、$\sigma:B\to C$ 为诺特局部环的局部同态，$k$ 为 $A$ 的剩余域，$M$ 为有限型 $C$-模。假设 $B$ 为平坦 $A$-模。那么以下条件等价：
+\begin{enumerate}[label=\alph*)]
+\item $M$ 为平坦 $B$-模。
+\item $M$ 为平坦 $A$-模，且 $M\otimes_Ak$ 为平坦 $(B\otimes_Ak)$-模。
+\end{enumerate}
+
+\egastatement{10.2.6}{命题}
+设 $A,B$ 为诺特局部环，$\rho:A\to B$ 为局部同态，$\frj$ 为包含于 $B$ 的极大理想的一个理想，$M$ 为有限型 $B$-模。假设对每个 $n\geq0$，$M_n=M/\frj^{n+1}M$ 都为平坦 $A$-模。那么 $M$ 为平坦 $A$-模。
+\begin{proof}
+须证明：对有限型 $A$-模之间的每个单同态 $u:N'\to N$，$v=1\otimes u:M\otimes_AN'\to M\otimes_AN$ 单射。$M\otimes_AN'$ 与 $M\otimes_AN$ 都为有限型 $B$-模，故对 $\frj$-预进拓扑分离（$0_{\mathrm I}$，7.3.5）。所以只须证明分离完备化之间的同态
+\[
+\widehat v:(M\otimes_AN')^{\wedge}\longrightarrow(M\otimes_AN)^{\wedge}
+\]
+单射。这里 $\widehat v=\plim v_n$，其中 $v_n$ 为同态 $1\otimes u:M_n\otimes_AN'\to M_n\otimes_AN$。由假设，$M_n$ 是 $A$-平坦的，故每个 $v_n$ 都单射；函子 $\plim$ 左正合，因此 $\widehat v$ 也单射。
+\end{proof}
+
+\egastatement{10.2.7}{推论}
+设 $A$ 为诺特环，$B$ 为诺特局部环，$\rho:A\to B$ 为同态，$f$ 为 $B$ 的极大理想中的元素，$M$ 为有限型 $B$-模。假设 $M$ 的位似 $f_M:x\mapsto fx$ 单射，且 $M/fM$ 为平坦 $A$-模。那么 $M$ 为平坦 $A$-模。
+\begin{proof}
+对 $i\geq0$，令 $M_i=f^iM$。因为 $f_M$ 单射，$M_i/M_{i+1}$ 同构于 $M/fM$，故对每个 $i\geq0$ 都是 $A$-平坦的。从正合列
+\[
+0\longrightarrow M_i/M_{i+1}\longrightarrow M/M_{i+1}\longrightarrow M/M_i\longrightarrow0
+\]
+出发，对 $i$ 归纳，得到每个 $M/M_i$ 都为 $A$-平坦的（$0_{\mathrm I}$，6.1.2）。于是可以应用（10.2.6）。\transnote{底本此处直接引用（10.2.6），而该命题假设 $A$ 局部且同态局部；本推论只假设 $A$ 诺特。若采用这一路证明，需要先在 $B$ 的极大理想的逆像处局部化 $A$。下文是原著另给的直接证明，不依赖这一步省略。}
+也可直接作如下论证。对每个有限型 $A$-模 $N$，$M\otimes_AN$ 为有限型 $B$-模。因为 $f$ 属于 $B$ 的根基 $\nn$，$M\otimes_AN$ 上的 $(f)$-进拓扑比 $\nn$-进拓扑细，而后者已知是分离的（$0_{\mathrm I}$，7.3.5）。又因 $M/M_i$ 是 $A$-平坦的，有
+\[
+\begin{aligned}
+f^i(M\otimes_AN)
+&=\Im(M_i\otimes_AN\longrightarrow M\otimes_AN)\\
+&=\Ker(M\otimes_AN\longrightarrow(M/M_i)\otimes_AN)
+\end{aligned}
+\]
+（$0_{\mathrm I}$，6.1.2）。取有限型 $A$-模 $N$、其子模 $N'$，以 $j:N'\to N$ 为典范嵌入。在交换图
+\[
+\begin{tikzcd}[column sep=large]
+M\otimes_AN'\arrow[r]\arrow[d,"M\otimes j"']&(M/M_i)\otimes_AN'\arrow[d,"(M/M_i)\otimes j"]\\
+M\otimes_AN\arrow[r]&(M/M_i)\otimes_AN
+\end{tikzcd}
+\]
+中，因为 $M/M_i$ 为 $A$-平坦，右侧箭头单射。于是对任意 $i$ 都有
+\[
+\Ker(M\otimes_AN'\to M\otimes_AN)
+\subset\Ker(M\otimes_AN'\to(M/M_i)\otimes_AN').
+\]
+如上所见，右端各核的交为零，左端也只能为零；所以 $M$ 为 $A$-平坦的。
+\end{proof}
+
+\egastatement{10.2.8}{命题}
+设 $A$ 为约化诺特环，$M$ 为有限型 $A$-模。假设对每个同时为离散赋值环的 $A$-代数 $B$，$M\otimes_AB$ 都为平坦 $B$-模（因而为自由模，10.1.3）。那么 $M$ 为平坦 $A$-模。
+\begin{proof}
+已知 $M$ 平坦，当且仅当对 $A$ 的每个极大理想 $\mm$，$M_\mm$ 为平坦 $A_\mm$-模（$0_{\mathrm I}$，6.3.3）；所以可以归结到 $A$ 局部的情形（$0_{\mathrm I}$，1.2.8）。设 $\mm$ 为 $A$ 的极大理想，$\pp_i$（$1\leq i\leq r$）为其极小素理想，$k=A/\mm$ 为剩余域。已知（II，7.1.7），对每个 $i$，存在一个离散赋值环 $B_i$，它支配整环 $A/\pp_i$，并与后者有相同的分式域 $K_i$。令 $M_i=M\otimes_AB_i$。由假设，$M_i$ 在 $B_i$ 上自由；因此，以 $k_i$ 为 $B_i$ 的剩余域，有
+\begin{equation}\tag{10.2.8.1}
+\rk_{k_i}(M_i\otimes_{B_i}k_i)=\rk_{K_i}(M_i\otimes_{B_i}K_i).
+\end{equation}
+显然复合同态 $A\to A/\pp_i\to B_i$ 为局部同态，故 $k_i$ 是 $k$ 的扩张，并且
+\[
+M_i\otimes_{B_i}k_i=M\otimes_Ak_i=(M\otimes_Ak)\otimes_kk_i,
+\qquad M_i\otimes_{B_i}K_i=M\otimes_AK_i.
+\]
+等式（10.2.8.1）于是给出
+\[
+\rk_k(M\otimes_Ak)=\rk_{K_i}(M\otimes_AK_i)\qquad(1\leq i\leq r).
+\]
+因为 $A$ 约化，已知此条件推出 $M$ 为自由 $A$-模（Bourbaki，\textit{Algèbre commutative}，第二章，§3，第2小节，命题7）。
+\end{proof}
+
+\subsection{局部环的平坦扩张的存在性}
+\src{20--23}
+\egastatement{10.3.1}{命题}
+设 $A$ 为诺特局部环，$\frj$ 为其极大理想，$k=A/\frj$ 为其剩余域。设 $K$ 为 $k$ 的扩张。则存在从 $A$ 到某个诺特局部环 $B$ 的局部同态，使 $B/\frj B$ 与 $K$ 作为 $k$-代数同构，且 $B$ 为平坦 $A$-模。
+
+我们分几个步骤证明此命题。
+
+\egapar{10.3.1.1}
+首先假设 $K=k(T)$，其中 $T$ 为不定元。在多项式环 $A'=A[T]$ 中，考虑由所有系数均属于 $\frj$ 的多项式组成的素理想 $\frj'=\frj A'$；显然 $A'/\frj'$ 典范地同构于 $k[T]$。证明分式环 $B=A'_{\frj'}$ 符合要求：它显然为诺特局部环，极大理想为 $\frk=\frj B$。此外，
+\[
+B/\frk=(A'/\frj')_{\frj'}=(k[T])_{(0)}
+\]
+就是 $k[T]$ 的分式域 $K$。最后，$B$ 为平坦 $A'$-模，$A'$ 为自由 $A$-模，故 $B$ 为平坦 $A$-模（$0_{\mathrm I}$，6.2.1）。
+
+\egapar{10.3.1.2}
+其次假设 $K=k(t)=k[t]$，其中 $t$ 在 $k$ 上代数；设 $f\in k[T]$ 为 $t$ 的极小多项式。存在首一多项式 $F\in A[T]$，其在 $k[T]$ 中的典范像为 $f$。仍令 $A'=A[T]$，并令 $\frj'=\frj A'+(F)$。这次我们证明商环 $B=A'/(F)$ 符合要求。首先，显然 $B$ 为自由 $A$-模，因而平坦。环 $A'/\frj'$ 同构于
+\[
+(A'/\frj A')\big/\bigl((\frj A'+(F))/\frj A'\bigr)=k[T]/(f)=K.
+\]
+所以 $\frj'$ 在 $B$ 中的像 $\frk$ 为极大理想，且显然 $\frk=\frj B$。最后，$B$ 为半局部环，因为它是有限型 $A$-模（Bourbaki，\textit{Algèbre commutative}，第四章，§2，第5小节，命题9的推论3）；其极大理想与 $B/\frj B$ 的极大理想一一对应（[13]，第一卷，第259页）。因此上述论述表明 $B$ 为局部环。
+
+\egastatement{10.3.1.3}{引理}
+设 $(A_\lambda,f_{\mu\lambda})$ 为局部环的滤过归纳系，且各 $f_{\mu\lambda}$ 均为局部同态。令 $\mm_\lambda$ 为 $A_\lambda$ 的极大理想，$K_\lambda=A_\lambda/\mm_\lambda$。则 $A'=\ilim A_\lambda$ 为局部环，其极大理想为 $\mm'=\ilim\mm_\lambda$，剩余域为 $K=\ilim K_\lambda$。此外，若 $\lambda<\mu$ 时有 $\mm_\mu=\mm_\lambda A_\mu$，则对每个 $\lambda$，有 $\mm'=\mm_\lambda A'$。若再假设当 $\lambda<\mu$ 时 $A_\mu$ 为平坦 $A_\lambda$-模，且各 $A_\lambda$ 均诺特，则 $A'$ 诺特，且对每个 $\lambda$ 都为平坦 $A_\lambda$-模。
+\begin{proof}
+由假设，当 $\lambda<\mu$ 时，$f_{\mu\lambda}(\mm_\lambda)\subset\mm_\mu$；故各 $\mm_\lambda$ 组成归纳系，其极限 $\mm'$ 显然为 $A'$ 的理想。若 $x'\notin\mm'$，存在 $\lambda$ 及 $x_\lambda\in A_\lambda$，使 $x'=f_\lambda(x_\lambda)$，其中 $f_\lambda:A_\lambda\to A'$ 是典范同态。因为 $x'\notin\mm'$，必有 $x_\lambda\notin\mm_\lambda$，故 $x_\lambda$ 在 $A_\lambda$ 中有逆元 $y_\lambda$，而 $y'=f_\lambda(y_\lambda)$ 为 $x'$ 在 $A'$ 中的逆元。这就证明了 $A'$ 为以 $\mm'$ 为极大理想的局部环。关于 $K$ 的断言由 $\ilim$ 的正合性立即得到。
+
+假设 $\mm_\mu=\mm_\lambda A_\mu$ 表示典范映射 $\mm_\lambda\otimes_{A_\lambda}A_\mu\to\mm_\mu$ 满射。因此，由 $\ilim$ 的正合性及其与张量积的可交换性，得到 $\mm'=\mm_\lambda A'$。
+
+现在假设当 $\lambda<\mu$ 时有 $\mm_\mu=\mm_\lambda A_\mu$，并且 $A_\mu$ 为平坦 $A_\lambda$-模。由（$0_{\mathrm I}$，6.2.3），$A'$ 对每个 $\lambda$ 都为平坦 $A_\lambda$-模。因为 $A',A_\lambda$ 均为局部环且 $\mm'=\mm_\lambda A'$，$A'$ 甚至是忠实平坦 $A_\lambda$-模（$0_{\mathrm I}$，6.6.2）。最后再假设所有 $A_\lambda$ 诺特；这时各 $\mm_\lambda$-预进拓扑分离（$0_{\mathrm I}$，7.3.5）。先证明这推出 $A'$ 上的 $\mm'$-进拓扑分离。若 $x'\in A'$ 属于每个 $\mm'^n$（$n>0$），它是某个 $x_\mu\in A_\mu$ 的像。$\mm'^n=\mm_\mu^nA'$ 在 $A_\mu$ 中的逆像为 $\mm_\mu^n$（$0_{\mathrm I}$，6.6.1），故 $x_\mu$ 属于所有 $\mm_\mu^n$；于是 $x_\mu=0$，从而 $x'=0$。
+
+以 $\widehat{A'}$ 表示 $A'$ 对 $\mm'$-进拓扑的完备化。由上可知 $A'\subset\widehat{A'}$。我们将证明 $\widehat{A'}$ 诺特，且对每个 $\lambda$ 都为 $A_\lambda$-平坦。由此将推出 $\widehat{A'}$ 为 $A'$-平坦（$0_{\mathrm I}$，6.2.3）；又因 $\mm'\widehat{A'}\ne\widehat{A'}$，它为忠实平坦 $A'$-模（$0_{\mathrm I}$，6.6.2），最终便可推出 $A'$ 诺特（$0_{\mathrm I}$，6.5.2），从而完成引理的证明。
+
+有 $\widehat{A'}=\plim_n A'/\mm'^n$。因为 $A'$ 为 $A_\lambda$-平坦，
+\[
+\begin{aligned}
+\mm'^n/\mm'^{n+1}
+&=(\mm_\lambda^n/\mm_\lambda^{n+1})\otimes_{A_\lambda}A'\\
+&=(\mm_\lambda^n/\mm_\lambda^{n+1})\otimes_{K_\lambda}(A'/\mm')\\
+&=(\mm_\lambda^n/\mm_\lambda^{n+1})\otimes_{K_\lambda}K.
+\end{aligned}
+\]
+$\mm_\lambda^n/\mm_\lambda^{n+1}$ 是有限维 $K_\lambda$-向量空间，故每个 $\mm'^n/\mm'^{n+1}$ 都为有限维 $K$-向量空间。由（$0_{\mathrm I}$，7.2.12）及（$0_{\mathrm I}$，7.2.8），$\widehat{A'}$ 诺特。又已知 $\widehat{A'}$ 的极大理想为 $\mm'\widehat{A'}$，而且 $\widehat{A'}/\mm'^n\widehat{A'}$ 同构于 $A'/\mm'^n$。因
+\[
+A'/\mm'^n=(A_\lambda/\mm_\lambda^n)\otimes_{A_\lambda}A',
+\]
+$A'/\mm'^n$ 为平坦 $(A_\lambda/\mm_\lambda^n)$-模（$0_{\mathrm I}$，6.2.1）。因此可以对诺特 $A_\lambda$-代数 $\widehat{A'}$ 应用判别准则（10.2.2），从而得到 $\widehat{A'}$ 为 $A_\lambda$-平坦。证毕。
+\end{proof}
+
+\egapar{10.3.1.4}
+现在处理一般情形。存在一个序数 $\gamma$，并对每个序数 $\lambda\leq\gamma$ 存在 $K$ 的含 $k$ 的子域 $k_\lambda$，满足：1° 对每个 $\lambda<\gamma$，$k_{\lambda+1}$ 是由一个元素生成的 $k_\lambda$ 的扩张；2° 对每个无前驱的序数 $\mu$，$k_\mu=\bigcup_{\lambda<\mu}k_\lambda$；3° $K=k_\gamma$。事实上，只须取从所有 $\xi\leq\beta$ 的序数组成的集合到 $K$ 的一个双射 $\xi\mapsto t_\xi$（$\beta$ 适当），然后用超限归纳定义各 $k_\lambda$（$\lambda\leq\beta$）：若 $\lambda$ 无前驱，取为所有 $\mu<\lambda$ 的 $k_\mu$ 之并；若 $\lambda=\nu+1$，则取 $k_\lambda=k_\nu(t_\xi)$，其中 $\xi$ 为使 $t_\xi\notin k_\nu$ 的最小序数。按定义，$\gamma$ 就是满足 $k_\gamma=K$ 的最小序数 $\gamma\leq\beta$。
+
+现在以超限归纳定义诺特局部环族 $A_\lambda$（$\lambda\leq\gamma$），以及对 $\lambda\leq\mu$ 的局部同态 $f_{\mu\lambda}:A_\lambda\to A_\mu$，使满足：
+\begin{enumerate}[label=(\roman*)]
+\item $(A_\lambda,f_{\mu\lambda})$ 为归纳系，且 $A_0=A$。
+\item 对每个 $\lambda$，有 $k$-同构 $A_\lambda/\frj A_\lambda\simeq k_\lambda$。
+\item 对 $\lambda\leq\mu$，$A_\mu$ 是平坦 $A_\lambda$-模。
+\end{enumerate}
+假定 $\lambda<\mu<\zeta$ 时的 $A_\lambda$ 与 $f_{\mu\lambda}$ 已定义。首先设 $\zeta=\xi+1$，故 $k_\zeta=k_\xi(t)$。若 $t$ 在 $k_\xi$ 上超越，就按（10.3.1.1）的方法令
+\[
+A_\zeta=(A_\xi[T])_{\frj A_\xi[T]}.
+\]
+以典范同态为 $f_{\zeta\xi}$；当 $\lambda<\xi$ 时，令 $f_{\zeta\lambda}=f_{\zeta\xi}\circ f_{\xi\lambda}$。由（10.3.1.1）的证明，立即可验证条件（i）至（iii）。若 $t$ 在 $k_\xi$ 上代数，设 $h$ 为其在 $k_\xi[T]$ 中的极小多项式，$H$ 为 $A_\xi[T]$ 中在 $k_\xi[T]$ 内的像为 $h$ 的首一多项式；取 $A_\zeta=A_\xi[T]/(H)$，各 $f_{\zeta\lambda}$ 同前定义。条件（i）至（iii）的验证由（10.3.1.2）得出。
+
+现设 $\zeta$ 无前驱。以局部环归纳系 $(A_\lambda,f_{\mu\lambda})_{\lambda<\mu<\zeta}$ 的归纳极限为 $A_\zeta$；当 $\lambda<\zeta$ 时，$f_{\zeta\lambda}$ 定义为典范同态。$A_\zeta$ 为诺特局部环、各 $f_{\zeta\lambda}$ 为局部同态，以及对 $\lambda\leq\zeta$ 的条件（i）至（iii），都由归纳假设及引理（10.3.1.3）得出。完成此构造后，显然 $B=A_\gamma$ 满足（10.3.1）的断言。
+
+注意，由（10.2.1，c）），有典范同构
+\begin{equation}\tag{10.3.1.5}
+\gr(A)\otimes_kK\simeq\gr(B).
+\end{equation}
+另一方面，可以把 $B$ 换成它的 $\frj B$-进完备化 $\widehat B$ 而不改变（10.3.1）的结论，因为 $\widehat B$ 为平坦 $B$-模（$0_{\mathrm I}$，7.3.3），从而为平坦 $A$-模（$0_{\mathrm I}$，6.2.1）。
+
+此外，还证明了：
+\egastatement{10.3.2}{推论}
+若 $K$ 是有限次扩张，可以假设 $B$ 为有限 $A$-代数。\par
+
+% ---- END c0_s10.tex ----
+% ---- BEGIN c0_s11a.tex ----
+\section{同调代数的补充知识}
+\subsection{谱序列回顾}
+\src{23--27}
+\egapar{11.1.1}
+今后要使用比（T，2.4）所定义的更一般的谱序列概念。沿用（T，2.4）的记号，把由下列数据组成的系 $E$ 称为阿贝尔范畴 $C$ 中的一个\textbf{谱序列}：
+\begin{enumerate}[label=\alph*)]
+\item 一族 $C$ 的对象 $(E_r^{pq})$，对 $p,q\in\mathbf Z$ 及 $r\geq2$ 定义。
+\item 一族态射 $d_r^{pq}:E_r^{pq}\to E_r^{p+r,q-r+1}$，满足
+\[
+d_r^{p+r,q-r+1}d_r^{pq}=0.
+\]
+令 $Z_{r+1}(E_r^{pq})=\Ker(d_r^{pq})$，$B_{r+1}(E_r^{pq})=\Im(d_r^{p+r,q-r+1})$，于是
+\[
+B_{r+1}(E_r^{pq})\subset Z_{r+1}(E_r^{pq})\subset E_r^{pq}.
+\]
+\transnote{底本在定义 $B_{r+1}(E_r^{pq})$ 时确实将微分上标印作 $p+r,q-r+1$。若要使其像成为 $E_r^{pq}$ 的子对象，上标应为 $p-r,q+r-1$。正文保留底本印式，以本注标明疑误。}
+\item 一族同构
+\[
+\alpha_r^{pq}:Z_{r+1}(E_r^{pq})/B_{r+1}(E_r^{pq})\iso E_{r+1}^{pq}.
+\]
+\end{enumerate}
+当 $k\geq r+1$ 时，再对 $k$ 归纳定义子对象 $B_k(E_r^{pq})$ 与 $Z_k(E_r^{pq})$：它们分别是在典范态射 $E_r^{pq}\to E_r^{pq}/B_{r+1}(E_r^{pq})$ 下，对应于商对象中由 $\alpha_r^{pq}$ 等同为 $B_k(E_{r+1}^{pq})$ 与 $Z_k(E_{r+1}^{pq})$ 的子对象的逆像。显然，在同构意义下，有
+\begin{equation}\tag{11.1.1.1}
+Z_k(E_r^{pq})/B_k(E_r^{pq})=E_k^{pq}\qquad(k\geq r+1).
+\end{equation}
+若再令 $B_r(E_r^{pq})=0$，$Z_r(E_r^{pq})=E_r^{pq}$，则有包含关系
+\begin{equation}\tag{11.1.1.2}
+\begin{aligned}
+0=B_r(E_r^{pq})&\subset B_{r+1}(E_r^{pq})\subset B_{r+2}(E_r^{pq})\subset\cdots\\
+&\cdots\subset Z_{r+2}(E_r^{pq})\subset Z_{r+1}(E_r^{pq})\subset Z_r(E_r^{pq})=E_r^{pq}.
+\end{aligned}
+\end{equation}
+系 $E$ 的其余数据如下：
+\begin{enumerate}[label=\alph*),start=4]
+\item $E_2^{pq}$ 的两个子对象 $B_\infty(E_2^{pq})$、$Z_\infty(E_2^{pq})$，使
+\[
+B_\infty(E_2^{pq})\subset Z_\infty(E_2^{pq}),
+\]
+而且对每个 $k\geq2$，
+\[
+B_k(E_2^{pq})\subset B_\infty(E_2^{pq}),\qquad
+Z_\infty(E_2^{pq})\subset Z_k(E_2^{pq}).
+\]
+令
+\begin{equation}\tag{11.1.1.3}
+E_\infty^{pq}=Z_\infty(E_2^{pq})/B_\infty(E_2^{pq}).
+\end{equation}
+\item 一族 $C$ 的对象 $(E^n)$，每个都带有递降滤过 $(F^p(E^n))_{p\in\mathbf Z}$。如常，以 $\gr(E^n)$ 表示滤过对象 $E^n$ 的相伴分次对象，即各 $\gr_p(E^n)=F^p(E^n)/F^{p+1}(E^n)$ 的直和。
+\item 对每对 $(p,q)\in\mathbf Z\times\mathbf Z$，给定同构 $\beta^{pq}:E_\infty^{pq}\iso\gr_p(E^{p+q})$。
+\end{enumerate}
+不计各滤过时，对象族 $(E^n)$ 称为谱序列 $E$ 的\textbf{终项}。
+
+假设范畴 $C$ 具有无限直和，或者对每个 $r\geq2$ 和 $n\in\mathbf Z$，满足 $p+q=n$ 且 $E_r^{pq}\ne0$ 的偶对 $(p,q)$ 只有有限个（只须对 $r=2$ 如此）。那么 $E_r^n=\bigoplus_{p+q=n}E_r^{pq}$ 有定义。以 $d_r^n$ 表示从 $E_r^n$ 到 $E_r^{n+1}$ 的态射，其在每个满足 $p+q=n$ 的分量 $E_r^{pq}$ 上的限制为 $d_r^{pq}$。则 $d_r^{n+1}d_r^n=0$，即 $(E_r^n)_{n\in\mathbf Z}$ 构成 $C$ 中微分算子次数为 $+1$ 的复形 $E_r^\bullet$；由 c），$\mathrm H^n(E_r^\bullet)$ 对每个 $r\geq2$ 都同构于 $E_{r+1}^n$。
+
+\egapar{11.1.2}
+从谱序列 $E$ 到谱序列 $E'=(E_r'{}^{pq},E'^n)$ 的\textbf{态射} $u:E\to E'$，由一族态射
+\[
+u_r^{pq}:E_r^{pq}\to E_r'{}^{pq},\qquad u^n:E^n\to E'^n
+\]
+组成，其中各 $u^n$ 与 $E^n,E'^n$ 的滤过相容，并且下图交换：
+\[
+\begin{tikzcd}[column sep=large]
+E_r^{pq}\arrow[r,"d_r^{pq}"]\arrow[d,"u_r^{pq}"']&E_r^{p+r,q-r+1}\arrow[d,"u_r^{p+r,q-r+1}"]\\
+E_r'{}^{pq}\arrow[r,"d_r'{}^{pq}"']&E_r'{}^{p+r,q-r+1}.
+\end{tikzcd}
+\]
+此外，经由商对象，$u_r^{pq}$ 给出态射
+\[
+\overline u_r^{pq}:Z_{r+1}(E_r^{pq})/B_{r+1}(E_r^{pq})\longrightarrow
+Z_{r+1}(E_r'{}^{pq})/B_{r+1}(E_r'{}^{pq}),
+\]
+须有 $\alpha_r'{}^{pq}\circ\overline u_r^{pq}=u_{r+1}^{pq}\circ\alpha_r^{pq}$。最后须有
+\[
+u_2^{pq}(B_\infty(E_2^{pq}))\subset B_\infty(E_2'{}^{pq}),\qquad
+u_2^{pq}(Z_\infty(E_2^{pq}))\subset Z_\infty(E_2'{}^{pq}).
+\]
+经由商对象，$u_2^{pq}$ 给出态射 $u_\infty^{pq}:E_\infty^{pq}\to E_\infty'{}^{pq}$，且下图必须交换：
+\[
+\begin{tikzcd}[column sep=large]
+E_\infty^{pq}\arrow[r,"u_\infty^{pq}"]\arrow[d,"\beta^{pq}"']&E_\infty'{}^{pq}\arrow[d,"\beta'{}^{pq}"]\\
+\gr_p(E^{p+q})\arrow[r,"\gr_p(u^{p+q})"']&\gr_p(E'^{p+q}).
+\end{tikzcd}
+\]
+由上述定义，对 $r$ 归纳可知：若各 $u_2^{pq}$ 为同构，则对 $r\geq2$，各 $u_r^{pq}$ 都为同构。若进一步知道
+\[
+u_2^{pq}(B_\infty(E_2^{pq}))=B_\infty(E_2'{}^{pq}),\qquad
+u_2^{pq}(Z_\infty(E_2^{pq}))=Z_\infty(E_2'{}^{pq}),
+\]
+且各 $u^n$ 为同构，就可以断定 $u$ 为同构。
+
+\egapar{11.1.3}
+回顾一下，对对象 $X\in C$ 的递降滤过 $(F^p(X))_{p\in\mathbf Z}$，若 $\inf_pF^p(X)=0$，称滤过\textbf{分离}；若存在 $p$ 使 $F^p(X)=0$，称\textbf{离散}；若 $\sup_pF^p(X)=X$，称\textbf{穷尽}（或\textbf{余分离}）；若存在 $p$ 使 $F^p(X)=X$，称\textbf{余离散}。
+
+若
+\[
+B_\infty(E_2^{pq})=\sup_k B_k(E_2^{pq}),\qquad
+Z_\infty(E_2^{pq})=\inf_k Z_k(E_2^{pq}),
+\]
+称谱序列 $E=(E_r^{pq},E^n)$ \textbf{弱收敛}（也就是说，$B_\infty$ 和 $Z_\infty$ 由 $E$ 的数据 a）至 c）决定）。若 $E$ 弱收敛，并满足下列条件，就称其\textbf{正则}：
+\begin{enumerate}[label=\arabic*°]
+\item 对每个偶对 $(p,q)$，递降列 $(Z_k(E_2^{pq}))_{k\geq2}$ 稳定。弱收敛性这时蕴含，当 $k$ 足够大时（依赖于 $p,q$），$Z_k(E_2^{pq})=Z_\infty(E_2^{pq})$。
+\item 对每个 $n$，$E^n$ 的滤过 $(F^p(E^n))$ 离散且穷尽。
+\end{enumerate}
+若 $E$ 弱收敛并满足以下条件，则称其\textbf{余正则}：
+\begin{enumerate}[label=\arabic*°,start=3]
+\item 对每个 $(p,q)$，递增列 $(B_k(E_2^{pq}))$ 稳定，这蕴含 $B_\infty(E_2^{pq})=B_k(E_2^{pq})$，从而 $E_\infty^{pq}=\inf_k E_k^{pq}$。
+\item 对每个 $n$，$E^n$ 的滤过余离散。
+\end{enumerate}
+最后，若 $E$ 同时正则且余正则，称其\textbf{双正则}。换言之，满足以下条件：
+\begin{enumerate}[label=\alph*)]
+\item 对每个 $(p,q)$，列 $(B_r(E_2^{pq}))_{r\geq2}$ 与 $(Z_r(E_2^{pq}))_{r\geq2}$ 均稳定，且当 $r$ 足够大时，$B_r(E_2^{pq})=B_\infty(E_2^{pq})$、$Z_r(E_2^{pq})=Z_\infty(E_2^{pq})$（这蕴含 $E_r^{pq}=E_\infty^{pq}$）。
+\item 对每个 $n$，滤过 $(F^p(E^n))$ 离散且余离散（也称此滤过\textbf{有限}）。
+\end{enumerate}
+因此，（T，2.4）定义的谱序列就是双正则谱序列。
+
+\egapar{11.1.4}
+假设范畴 $C$ 中存在滤过归纳极限，而且函子 $\ilim$ 正合（这等价于（T，1.5）的公理 AB5）成立，参见 T，1.8）。对象 $X\in C$ 的滤过 $(F^p(X))$ 穷尽这件事，也可写为 $\ilim_{p\to-\infty}F^p(X)=X$。若谱序列 $E$ 弱收敛，则
+\[
+B_\infty(E_2^{pq})=\ilim_{k\to\infty}B_k(E_2^{pq}).
+\]
+若再有从 $E$ 到 $C$ 中另一个弱收敛谱序列 $E'$ 的态射 $u:E\to E'$，则由 $\ilim$ 的正合性，有
+\[
+u_2^{pq}(B_\infty(E_2^{pq}))=B_\infty(E_2'{}^{pq}).
+\]
+\transnote{此等号按底本保留。仅假设 $u$ 为态射时，一般只能得到包含关系；下一命题另有各 $u_2^{pq}$ 为同构的假设，在该假设下可得到这里需要的等号。}
+此外：
+
+\egastatement{11.1.5}{命题}
+设 $C$ 为滤过归纳极限正合的阿贝尔范畴，$E,E'$ 为 $C$ 中两个正则谱序列，$u:E\to E'$ 为谱序列态射。若各 $u_2^{pq}$ 为同构，则 $u$ 也为同构。
+\begin{proof}
+已知（11.1.2）各 $u_r^{pq}$ 为同构，且
+\[
+u_2^{pq}(B_\infty(E_2^{pq}))=B_\infty(E_2'{}^{pq}).
+\]
+$E,E'$ 正则的假设又推出
+\[
+u_2^{pq}(Z_\infty(E_2^{pq}))=Z_\infty(E_2'{}^{pq}).
+\]
+因 $u_2^{pq}$ 为同构，$u_\infty^{pq}$ 也为同构，故 $\gr_p(u^{p+q})$ 为同构。$E^n,E'^n$ 的滤过均离散且穷尽，所以各 $u^n$ 也为同构（Bourbaki，\textit{Algèbre commutative}，第三章，§2，第8小节，定理1）。
+\end{proof}
+
+\egapar{11.1.6}
+由（11.1.1.2）与定义（11.1.1.3），在谱序列 $E$ 中，若 $E_r^{pq}=0$，则 $k\geq r$ 时 $E_k^{pq}=0$，并且 $E_\infty^{pq}=0$。若存在整数 $r\geq2$，并对每个整数 $n\in\mathbf Z$ 存在整数 $q(n)$，使每个 $q\ne q(n)$ 都有 $E_r^{n-q,q}=0$，则称谱序列\textbf{退化}。由上述论述首先可知，当 $k\geq r$（包括 $k=\infty$）且 $q\ne q(n)$ 时，也有 $E_k^{n-q,q}=0$。此外，由 $E_{r+1}^{pq}$ 的定义，有
+\[
+E_{r+1}^{n-q(n),q(n)}=E_r^{n-q(n),q(n)}.
+\]
+若 $E$ 弱收敛，便还有 $E_\infty^{n-q(n),q(n)}=E_r^{n-q(n),q(n)}$；换言之，对每个 $n\in\mathbf Z$，$p\ne q(n)$ 时 $\gr_p(E^n)=0$，且 $\gr_{q(n)}(E^n)=E_r^{n-q(n),q(n)}$。若 $E^n$ 的滤过又离散且穷尽，则 $E$ 正则，且在同构意义下 $E^n=E_r^{n-q(n),q(n)}$。\transnote{本条的退化定义、稳定性断言及 $\gr_{q(n)}$ 下标均按底本保留，没有以通常的“某一页后所有微分为零”的定义替换。按（11.1.1，f）的约定，$E_\infty^{n-q(n),q(n)}$ 对应的滤过次数应为 $n-q(n)$；原文下标应谨慎核对。本译稿在此只标明文本疑点，不把额外条件补写成原著内容。}
+
+\egapar{11.1.7}
+假设范畴 $C$ 中滤过归纳极限存在且正合，设 $(E_\lambda,u_{\mu\lambda})$ 为 $C$ 中谱序列的归纳系，其指标集滤过。那么，此归纳系的归纳极限在 $C$ 中对象的谱序列所成加法范畴中存在。只须分别把
+\[
+E_r^{pq},d_r^{pq},\alpha_r^{pq},B_\infty(E_2^{pq}),Z_\infty(E_2^{pq}),E^n,F^p(E^n),\beta^{pq}
+\]
+定义为相应各
+\[
+E_{r,\lambda}^{pq},d_{r,\lambda}^{pq},\alpha_{r,\lambda}^{pq},
+B_\infty(E_{2,\lambda}^{pq}),Z_\infty(E_{2,\lambda}^{pq}),E_\lambda^n,F^p(E_\lambda^n),\beta_\lambda^{pq}
+\]
+的归纳极限。条件（11.1.1）的验证由 $\ilim$ 在 $C$ 中的正合性得出。
+
+\egastatement{11.1.8}{注}
+假设 $C$ 为诺特环 $A$ 上的 $A$-模范畴（分别地，为环 $A$ 上的模范畴）。定义（11.1.1）表明：若对某个给定的 $r$，各 $E_r^{pq}$ 为有限型 $A$-模（分别地，有限长度模），则对每个 $s\geq r$，各 $E_s^{pq}$ 以及 $E_\infty^{pq}$ 都有同样性质。若进一步对每个 $n$，终项 $E^n$ 的滤过离散且余离散，则每个 $E^n$ 也为有限型 $A$-模（分别地，有限长度模）。
+
+\egapar{11.1.9}
+我们将要考虑保证谱序列 $E$ 关于 $p+q=n$“一致”双正则的条件，为此使用下列引理。
+
+\egastatement{11.1.10}{引理}
+设 $(E_r^{pq})$ 是由（11.1.1）的数据 a）、b）、c）联系起来的一族 $C$ 的对象。对一个固定整数 $n$，下列性质等价：
+\begin{enumerate}[label=\alph*)]
+\item 存在整数 $r(n)$，使当 $r\geq r(n)$ 且 $p+q=n$ 或 $p+q=n-1$ 时，各态射 $d_r^{pq}$ 均为零。
+\item 存在整数 $r(n)$，使当 $p+q=n$ 或 $p+q=n+1$ 且 $s\geq r\geq r(n)$ 时，有 $B_r(E_2^{pq})=B_s(E_2^{pq})$。
+\item 存在整数 $r(n)$，使当 $p+q=n$ 或 $p+q=n-1$ 且 $s\geq r\geq r(n)$ 时，有 $Z_r(E_2^{pq})=Z_s(E_2^{pq})$。
+\item 存在整数 $r(n)$，使当 $p+q=n$ 且 $s\geq r\geq r(n)$ 时，有 $B_r(E_2^{pq})=B_s(E_2^{pq})$ 和 $Z_r(E_2^{pq})=Z_s(E_2^{pq})$。
+\end{enumerate}
+\begin{proof}
+由（11.1.1）的条件 a）、b）、c），$Z_{r+1}(E_2^{pq})=Z_r(E_2^{pq})$ 等价于 $d_r^{pq}=0$，而
+\[
+B_r(E_2^{p+r,q-r+1})=B_{r+1}(E_2^{p+r,q-r+1})
+\]
+也等价于 $d_r^{pq}=0$。引理由此立即得出。
+\end{proof}
+
+\subsection{滤过复形的谱序列}
+\src{27--29}
+\egapar{11.2.1}
+给定阿贝尔范畴 $C$，约定用 $K^\bullet$ 这样的记号表示微分算子次数为 $+1$ 的 $C$ 中对象的复形 $(K^i)_{i\in\mathbf Z}$，用 $K_\bullet$ 这样的记号表示微分算子次数为 $-1$ 的复形 $(K_i)_{i\in\mathbf Z}$。对微分 $d$ 次数为 $+1$ 的复形 $K^\bullet=(K^i)$，令 $K'_i=K^{-i}$，并以 $d:K^{-i}\to K^{-i+1}$ 为微分 $K'_i\to K'_{i-1}$，便得到复形 $K'_\bullet$；反之亦然。这样可根据情形选用其中一种复形，并把关于一种类型的结果转述为另一种类型的结果。
+
+同样，用 $K^{\bullet\bullet}=(K^{ij})$（分别地，$K_{\bullet\bullet}=(K_{ij})$）表示两个微分算子次数均为 $+1$（分别地，$-1$）的双复形；改变指标的符号就可在两种类型之间转换。对任意多重复形，也采用相应记号并有类似说明。$K^\bullet$ 或 $K_\bullet$ 还用来表示未必为复形的、以 $\mathbf Z$ 分次的 $C$ 中对象（也可令其微分为零而把它看作复形）。例如，以
+\[
+\mathrm H^\bullet(K^\bullet)=(\mathrm H^i(K^\bullet))_{i\in\mathbf Z}
+\]
+表示微分次数为 $+1$ 的复形的上同调；以 $\mathrm H_\bullet(K_\bullet)=(\mathrm H_i(K_\bullet))_{i\in\mathbf Z}$ 表示微分次数为 $-1$ 的复形的同调。按上述方法从 $K^\bullet$ 变成 $K'_\bullet$ 时，有 $\mathrm H_i(K'_\bullet)=\mathrm H^{-i}(K^\bullet)$。
+
+还要指出，对复形 $K^\bullet$，通常写
+\[
+Z^i(K^\bullet)=\Ker(K^i\to K^{i+1}),\qquad
+B^i(K^\bullet)=\Im(K^{i-1}\to K^i),
+\]
+分别称为\textbf{上闭链对象}与\textbf{上边界对象}；对 $K_\bullet$，写
+\[
+Z_i(K_\bullet)=\Ker(K_i\to K_{i-1}),\qquad
+B_i(K_\bullet)=\Im(K_{i+1}\to K_i),
+\]
+分别称为\textbf{闭链对象}与\textbf{边界对象}。于是
+\[
+\mathrm H^i(K^\bullet)=Z^i(K^\bullet)/B^i(K^\bullet),\qquad
+\mathrm H_i(K_\bullet)=Z_i(K_\bullet)/B_i(K_\bullet).
+\]
+若 $K^\bullet=(K^i)$（分别地，$K_\bullet=(K_i)$）是 $C$ 中复形，$T:C\to C'$ 为到阿贝尔范畴 $C'$ 的函子，则以 $T(K^\bullet)$（分别地，$T(K_\bullet)$）表示 $C'$ 中的复形 $(T(K^i))$（分别地，$(T(K_i))$）。
+
+这里不再重复 $\partial$-函子的定义（T，2.1），只指出：当态射 $\partial$ 将次数降低一时，也称“$\partial$-函子”，而不另称“$\partial^*$-函子”；若有疑问，每次均由上下文明确这一点。
+最后，若存在 $i_0$，使 $i<i_0$（分别地，$i>i_0$）时 $A^i=0$，便称分次对象 $(A^i)_{i\in\mathbf Z}$ \textbf{有下界}（分别地，\textbf{有上界}）。
+
+\egapar{11.2.2}
+设 $K^\bullet$ 为 $C$ 中微分 $d$ 的次数为 $+1$ 的复形，带有由分次子对象组成的滤过 $F(K^\bullet)=(F^p(K^\bullet))_{p\in\mathbf Z}$，即
+\[
+F^p(K^\bullet)=(K^i\cap F^p(K^\bullet))_{i\in\mathbf Z};
+\]
+并假设对每个 $p\in\mathbf Z$，有 $d(F^p(K^\bullet))\subset F^p(K^\bullet)$。现在简要回顾如何由 $K^\bullet$ 函子地定义一个谱序列 $E(K^\bullet)$（M，XV，4；G，I，4.3）。对 $r\geq2$，典范态射
+\[
+F^p(K^\bullet)/F^{p+r}(K^\bullet)\longrightarrow F^p(K^\bullet)/F^{p+1}(K^\bullet)
+\]
+给出上同调态射
+\[
+\mathrm H^{p+q}(F^p(K^\bullet)/F^{p+r}(K^\bullet))\longrightarrow
+\mathrm H^{p+q}(F^p(K^\bullet)/F^{p+1}(K^\bullet)).
+\]
+以 $Z_r^{pq}(K^\bullet)$ 表示其像。同样，从正合列
+\[
+\begin{aligned}
+0\longrightarrow F^p(K^\bullet)/F^{p+1}(K^\bullet)
+&\longrightarrow F^{p-r+1}(K^\bullet)/F^{p+1}(K^\bullet)\\
+&\longrightarrow F^{p-r+1}(K^\bullet)/F^p(K^\bullet)\longrightarrow0
+\end{aligned}
+\]
+由上同调正合列得到态射
+\[
+\mathrm H^{p+q-1}(F^{p-r+1}(K^\bullet)/F^p(K^\bullet))\longrightarrow
+\mathrm H^{p+q}(F^p(K^\bullet)/F^{p+1}(K^\bullet)),
+\]
+以 $B_r^{pq}(K^\bullet)$ 表示其像。可以证明 $B_r^{pq}(K^\bullet)\subset Z_r^{pq}(K^\bullet)$；令
+\[
+E_r^{pq}(K^\bullet)=Z_r^{pq}(K^\bullet)/B_r^{pq}(K^\bullet).
+\]
+这里不具体写出 $d_r^{pq}$ 和 $\alpha_r^{pq}$ 的定义。
+
+注意，对固定 $p,q$，各 $Z_r^{pq}(K^\bullet)$ 与 $B_r^{pq}(K^\bullet)$ 都是同一个对象
+\[
+\mathrm H^{p+q}(F^p(K^\bullet)/F^{p+1}(K^\bullet))
+\]
+的子对象；把该对象记为 $Z_1^{pq}(K^\bullet)$，并令 $B_1^{pq}(K^\bullet)=0$。这样，前述定义也适用于 $r=1$；再令 $E_1^{pq}(K^\bullet)=Z_1^{pq}(K^\bullet)$。也定义 $d_1^{pq}$、$\alpha_1^{pq}$，使（11.1.1）的条件对 $r=1$ 成立。另一方面，把态射
+\[
+\mathrm H^{p+q}(F^p(K^\bullet))\longrightarrow
+\mathrm H^{p+q}(F^p(K^\bullet)/F^{p+1}(K^\bullet))=E_1^{pq}(K^\bullet)
+\]
+的像记为 $Z_\infty^{pq}(K^\bullet)$；把如前由上同调正合列所得态射
+\[
+\mathrm H^{p+q-1}(K^\bullet/F^p(K^\bullet))\longrightarrow
+\mathrm H^{p+q}(F^p(K^\bullet)/F^{p+1}(K^\bullet))=E_1^{pq}(K^\bullet)
+\]
+的像记为 $B_\infty^{pq}(K^\bullet)$。以这两个子对象在 $E_2^{pq}(K^\bullet)$ 中的典范像，分别作为 $Z_\infty(E_2^{pq}(K^\bullet))$ 与 $B_\infty(E_2^{pq}(K^\bullet))$。
+
+最后，以 $F^p(\mathrm H^n(K^\bullet))$ 表示由典范嵌入 $F^p(K^\bullet)\to K^\bullet$ 所得态射
+\[
+\mathrm H^n(F^p(K^\bullet))\longrightarrow\mathrm H^n(K^\bullet)
+\]
+的像。由上同调正合列，这也等于态射 $\mathrm H^n(K^\bullet)\to\mathrm H^n(K^\bullet/F^p(K^\bullet))$ 的核。这样就在 $E^n(K^\bullet)=\mathrm H^n(K^\bullet)$ 上定义了滤过；这里也不写出各同构 $\beta^{pq}$ 的定义。
+
+\egapar{11.2.3}
+$E(K^\bullet)$ 的函子性应作如下理解：给定 $C$ 中两个滤过复形 $K^\bullet,K'^\bullet$ 和一个与滤过相容的复形态射 $u:K^\bullet\to K'^\bullet$，便显然得到各 $u_r^{pq}$（$r\geq1$）和 $u^n$；可证明这些态射在（11.1.2）的意义下与 $d_r^{pq}$、$\alpha_r^{pq}$ 及 $\beta^{pq}$ 相容，因此给出谱序列态射 $E(u):E(K^\bullet)\to E(K'^\bullet)$。此外，可证明：若 $u,v:K^\bullet\to K'^\bullet$ 为上述类型的态射，并以阶数 $\leq k$ 同伦，则 $r>k$ 时 $u_r^{pq}=v_r^{pq}$，且对每个 $n$，$u^n=v^n$（M，XV，3.1）。
+
+\egapar{11.2.4}
+假设 $C$ 中滤过归纳极限正合。若 $K^\bullet$ 的滤过 $(F^p(K^\bullet))$ 穷尽，则对每个 $n$，滤过 $(F^p(\mathrm H^n(K^\bullet)))$ 也穷尽；因为由假设，$K^\bullet=\ilim_{p\to-\infty}F^p(K^\bullet)$，而对 $C$ 的假设使上同调与归纳极限交换。同理，有
+\[
+B_\infty(E_2^{pq}(K^\bullet))=\sup_k B_k(E_2^{pq}(K^\bullet)).
+\]
+若对每个 $n$ 存在整数 $u(n)$，使 $p>u(n)$ 时 $\mathrm H^n(F^p(K^\bullet))=0$，则称 $K^\bullet$ 的滤过\textbf{正则}。特别地，离散滤过具有此性质。可证明（M，XV，4）：当 $K^\bullet$ 的滤过正则且穷尽，且 $C$ 中滤过归纳极限正合时，谱序列 $E(K^\bullet)$ 正则。
+
+\subsection{双复形的谱序列}
+\src{29--32}
+\egapar{11.3.1}
+关于双复形的约定，这里采用（T，2.4）而不是（M）的约定；因此，对双复形 $K^{\bullet\bullet}=(K^{ij})$，假设两个次数为 $+1$ 的微分 $d',d''$ 可交换。假设以下条件之一成立：1° $C$ 中存在无限直和；2° 对每个 $n\in\mathbf Z$，满足 $p+q=n$ 且 $K^{pq}\ne0$ 的偶对 $(p,q)$ 只有有限个。那么双复形给出一个（单）复形 $(K^n)_{n\in\mathbf Z}$，其中 $K^n=\bigoplus_{i+j=n}K^{ij}$，次数为 $+1$ 的微分由
+\[
+dx=d'x+(-1)^i d''x\qquad(x\in K^{ij})
+\]
+定义。今后提到双复形 $K^{\bullet\bullet}$ 定义的（单）复形时，总是默认满足上述条件之一。对多重复形采用类似约定。
+
+以 $K^{i,\bullet}$（分别地，$K^{\bullet,j}$）表示单复形 $(K^{ij})_{j\in\mathbf Z}$（分别地，$(K^{ij})_{i\in\mathbf Z}$），并以
+\[
+Z_{\mathrm{II}}^p(K^{i,\bullet}),\ B_{\mathrm{II}}^p(K^{i,\bullet}),\ \mathrm H_{\mathrm{II}}^p(K^{i,\bullet})
+\]
+（分别地，$Z_{\mathrm I}^p(K^{\bullet,j}), B_{\mathrm I}^p(K^{\bullet,j}),\mathrm H_{\mathrm I}^p(K^{\bullet,j})$）表示其第 $p$ 个上闭链、上边界和上同调对象。微分 $d':K^{i,\bullet}\to K^{i+1,\bullet}$ 为复形态射，故在上闭链、上边界和上同调上给出算子
+\[
+\begin{aligned}
+d'&:Z_{\mathrm{II}}^p(K^{i,\bullet})\to Z_{\mathrm{II}}^p(K^{i+1,\bullet}),\\
+d'&:B_{\mathrm{II}}^p(K^{i,\bullet})\to B_{\mathrm{II}}^p(K^{i+1,\bullet}),\\
+d'&:\mathrm H_{\mathrm{II}}^p(K^{i,\bullet})\to\mathrm H_{\mathrm{II}}^p(K^{i+1,\bullet}).
+\end{aligned}
+\]
+显然，以这些算子为微分，各相应的 $i$-指标对象族都是复形。将复形 $(\mathrm H_{\mathrm{II}}^p(K^{i,\bullet}))_{i\in\mathbf Z}$ 记为 $\mathrm H_{\mathrm{II}}^p(K^{\bullet\bullet})$；其第 $q$ 个上闭链、上边界和上同调对象分别记为 $Z_{\mathrm I}^q(\mathrm H_{\mathrm{II}}^p(K^{\bullet\bullet}))$、$B_{\mathrm I}^q(\mathrm H_{\mathrm{II}}^p(K^{\bullet\bullet}))$、$\mathrm H_{\mathrm I}^q(\mathrm H_{\mathrm{II}}^p(K^{\bullet\bullet}))$。同样定义复形 $\mathrm H_{\mathrm I}^p(K^{\bullet\bullet})$ 及其上同调对象 $\mathrm H_{\mathrm{II}}^q(\mathrm H_{\mathrm I}^p(K^{\bullet\bullet}))$。回顾 $\mathrm H^n(K^{\bullet\bullet})$ 表示由该双复形定义的单复形的第 $n$ 个上同调对象。
+
+\egapar{11.3.2}
+在由双复形定义的复形上，可以考虑两个典范滤过 $(F_{\mathrm I}^p)$、$(F_{\mathrm{II}}^p)$，定义为
+\begin{equation}\tag{11.3.2.1}
+F_{\mathrm I}^p(K^{\bullet\bullet})=
+\left(\bigoplus_{i+j=n,\ i\geq p}K^{ij}\right)_n,
+\qquad
+F_{\mathrm{II}}^p(K^{\bullet\bullet})=
+\left(\bigoplus_{i+j=n,\ j\geq p}K^{ij}\right)_n.
+\end{equation}
+按定义，它们确为相应单复形的分次子对象，从而使之成为滤过复形；显然这些滤过穷尽且分离。
+
+每个滤过对应一个谱序列（11.2.2）；分别以 $'E(K^{\bullet\bullet})$、$''E(K^{\bullet\bullet})$ 表示对应于 $(F_{\mathrm I}^p)$ 和 $(F_{\mathrm{II}}^p)$ 的谱序列，称为双复形 $K^{\bullet\bullet}$ 的\textbf{谱序列}；二者均以上同调 $(\mathrm H^n(K^{\bullet\bullet}))$ 为终项。还可证明（M，XV，6）：
+\begin{equation}\tag{11.3.2.2}
+\begin{aligned}
+'E_2^{pq}(K^{\bullet\bullet})&=\mathrm H_{\mathrm I}^p(\mathrm H_{\mathrm{II}}^q(K^{\bullet\bullet})),\\
+''E_2^{pq}(K^{\bullet\bullet})&=\mathrm H_{\mathrm{II}}^p(\mathrm H_{\mathrm I}^q(K^{\bullet\bullet})).
+\end{aligned}
+\end{equation}
+每个双复形态射 $u:K^{\bullet\bullet}\to K'^{\bullet\bullet}$ 自动与同类型的滤过相容，因此对两个谱序列分别给出态射。此外，两个同伦态射在相应滤过单复形之间给出阶数 $\leq1$ 的同伦，因此在每个谱序列上诱导同一态射（M，XV，6.1）。
+
+\egastatement{11.3.3}{命题}
+设 $K^{\bullet\bullet}=(K^{ij})$ 为阿贝尔范畴 $C$ 中的双复形。
+\begin{enumerate}[label=(\roman*)]
+\item 若存在 $i_0,j_0$，使 $i<i_0$ 或 $j<j_0$（分别地，$i>i_0$ 或 $j>j_0$）时 $K^{ij}=0$，则两个谱序列 $'E$ 与 $''E$ 均双正则。
+\item 若存在 $i_0,i_1$，使 $i<i_0$ 或 $i>i_1$ 时 $K^{ij}=0$（分别地，存在 $j_0,j_1$，使 $j<j_0$ 或 $j>j_1$ 时 $K^{ij}=0$），则两个谱序列均双正则。
+\end{enumerate}
+再假设 $C$ 中滤过归纳极限存在且正合。那么：
+\begin{enumerate}[label=(\roman*),start=3]
+\item 若存在 $i_0$，使 $i>i_0$ 时 $K^{ij}=0$（分别地，存在 $j_0$，使 $j<j_0$ 时 $K^{ij}=0$），则 $'E$ 正则。
+\item 若存在 $i_0$，使 $i<i_0$ 时 $K^{ij}=0$（分别地，存在 $j_0$，使 $j>j_0$ 时 $K^{ij}=0$），则 $''E$ 正则。
+\end{enumerate}
+\begin{proof}
+命题由定义（11.1.3）、（11.2.4）以及下述关于滤过 $F_{\mathrm I}$ 的观察立即得到；交换 $K^{\bullet\bullet}$ 的两指标，就得到关于 $F_{\mathrm{II}}$ 的类似观察。
+
+1° 若 $i>i_0$ 时 $K^{ij}=0$，则滤过 $F_{\mathrm I}$ 离散。
+
+2° 若 $i<i_0$ 时 $K^{ij}=0$，则 $F_{\mathrm I}$ 余离散。于是对每个 $n$，相应的上同调滤过也余离散；而由相应的 $B_r^{pq}$ 的定义（11.2.2），每个固定 $(p,q)$ 上的列 $(B_r^{pq})_{r\geq2}$ 稳定。
+
+3° 若 $j<j_0$ 时 $K^{ij}=0$，则
+\[
+F_{\mathrm I}^{p+r}(K^{\bullet\bullet})\cap\left(\bigoplus_{i+j=n}K^{ij}\right)=0
+\]
+只要 $p+r+j_0>n$。因此当 $r\geq q-j_0+1$ 时，$Z_r^{pq}=Z_\infty(E_2^{pq})$；另一方面，$p>n-j_0+1$ 时 $\mathrm H^n(F_{\mathrm I}^p(K^{\bullet\bullet}))=0$。
+
+4° 若 $j>j_0$ 时 $K^{ij}=0$，则
+\[
+F_{\mathrm I}^{p-r+1}(K^{\bullet\bullet})\cap\left(\bigoplus_{i+j=n}K^{ij}\right)
+=\bigoplus_{i+j=n}K^{ij}
+\]
+只要 $p-r+1+j_0<n$。于是，底本写作当 $r<j_0-q+1$ 时 $B_r^{pq}=B_\infty(E_2^{pq})$；另一方面，$p+j_0<n-1$ 时，$\mathrm H^n(F_{\mathrm I}^p(K^{\bullet\bullet}))=\mathrm H^n(K^{\bullet\bullet})$。\transnote{这里关于 $r$ 的不等号按底本第31页保留。由上一句 $p-r+1+j_0<n$ 解得的是 $r>p+j_0+1-n$；令 $n=p+q$，应是 $r>j_0-q+1$。}
+\end{proof}
+
+\egapar{11.3.4}
+假设双复形 $K^{\bullet\bullet}=(K^{ij})$ 满足 $i<0$ 或 $j<0$ 时 $K^{ij}=0$。已知此时对每个 $p\in\mathbf Z$ 可以定义典范的\textbf{边缘同态}
+\begin{equation}\tag{11.3.4.1}
+'E_2^{p0}(K^{\bullet\bullet})\longrightarrow\mathrm H^p(K^{\bullet\bullet})
+\end{equation}
+（M，XV，6）。简要回顾其理由：一方面，在谱序列 $'E$ 中，当 $2\leq r\leq+\infty$ 时有 $Z_r^{p0}=Z_2^{p0}=Z^p(Z_{\mathrm{II}}^0(K^{\bullet\bullet}))$；另一方面，$\mathrm H^p(F_{
+\mathrm I}^{p+1}(K^{\bullet\bullet}))=0$，因此同构
+\[
+\beta^{p0}:'E_\infty^{p0}\iso\mathrm H^p(F_{\mathrm I}^p)/\mathrm H^p(F_{\mathrm I}^{p+1})
+\]
+给出同态 $'E_\infty^{p0}\to\mathrm H^p(F_{\mathrm I}^p(K^{\bullet\bullet}))\to\mathrm H^p(K^{\bullet\bullet})$。所有 $Z_r^{p0}$ 相等，又给出当 $r\leq s$ 时的典范同态 $'E_r^{p0}\to'E_s^{p0}$，特别给出 $'E_2^{p0}\to'E_\infty^{p0}$；复合即得边缘同态（11.3.4.1）。此外，立即可验证：若 $z\in Z_{\mathrm{II}}^0(K^{p,\bullet})\subset K^{p0}$ 且 $d'z=0$，则此边缘同态先把 $z$ 模 $B_2^{p0}$ 的类送到 $'E_\infty^{p0}$ 中模 $B_\infty^{p0}$ 的类，再送到 $\mathrm H^p(K^{\bullet\bullet})$ 中 $z$ 的上同调类。
+
+所以最终可见，（11.3.4.1）来自典范嵌入 $Z_{\mathrm{II}}^0(K^{\bullet\bullet})\to K^{\bullet\bullet}$（后者视为单复形）在上同调上诱导的映射。同样，边缘同态
+\begin{equation}\tag{11.3.4.2}
+''E_2^{p0}(K^{\bullet\bullet})\longrightarrow\mathrm H^p(K^{\bullet\bullet})
+\end{equation}
+来自典范嵌入 $Z_{\mathrm I}^0(K^{\bullet\bullet})\to K^{\bullet\bullet}$。
+
+\egapar{11.3.5}
+现设 $K_{\bullet\bullet}=(K_{ij})$ 为 $C$ 中两个微分次数均为 $-1$ 的双复形。以 $K_{i,\bullet}$（分别地，$K_{\bullet,j}$）表示单复形 $(K_{ij})_{j\in\mathbf Z}$（分别地，$(K_{ij})_{i\in\mathbf Z}$）；以 $\mathrm H_p^{\mathrm{II}}(K_{i,\bullet})$（分别地，$\mathrm H_p^{\mathrm I}(K_{\bullet,j})$）表示其第 $p$ 个同调对象，以 $\mathrm H_p^{\mathrm{II}}(K_{\bullet\bullet})$（分别地，$\mathrm H_p^{\mathrm I}(K_{\bullet\bullet})$）表示复形 $(\mathrm H_p^{\mathrm{II}}(K_{i,\bullet}))_i$（分别地，$(\mathrm H_p^{\mathrm I}(K_{\bullet,j}))_j$），并以 $\mathrm H_q^{\mathrm I}(\mathrm H_p^{\mathrm{II}}(K_{\bullet\bullet}))$（分别地，$\mathrm H_q^{\mathrm{II}}(\mathrm H_p^{\mathrm I}(K_{\bullet\bullet}))$）表示其第 $q$ 个同调对象。对闭链和边界对象采用类似记号；最后，$\mathrm H_n(K_{\bullet\bullet})$ 表示由此双复形定义的微分次数为 $-1$ 的单复形的第 $n$ 个同调对象（若存在）。
+
+令 $K'^{ij}=K_{-i,-j}$，得到与之相伴的微分次数均为 $+1$ 的双复形 $K'^{\bullet\bullet}$。按定义，$K_{\bullet\bullet}$ 的谱序列就是 $K'^{\bullet\bullet}$ 的谱序列，记为 $'E(K_{\bullet\bullet})$ 和 $''E(K_{\bullet\bullet})$，但改变记号，令
+\[
+'E^r_{pq}(K_{\bullet\bullet})='E_r^{-p,-q}(K'^{\bullet\bullet}),\qquad
+''E^r_{pq}(K_{\bullet\bullet})=''E_r^{-p,-q}(K'^{\bullet\bullet})
+\]
+（$2\leq r\leq\infty$）。于是
+\[
+'E^2_{pq}=\mathrm H_p^{\mathrm I}(\mathrm H_q^{\mathrm{II}}(K_{\bullet\bullet})),\qquad
+''E^2_{pq}=\mathrm H_p^{\mathrm{II}}(\mathrm H_q^{\mathrm I}(K_{\bullet\bullet})).
+\]
+为避免符号错误，在讨论这些谱序列与终项的关系时，一般宜回到复形 $K'^{\bullet\bullet}$。不过仍记下与（11.3.3）对应的准则。
+
+\egapar{11.3.6}
+在下列情形中，$'E(K_{\bullet\bullet})$ 与 $''E(K_{\bullet\bullet})$ 都双正则：a）存在 $i_0,j_0$，使 $i>i_0$ 或 $j>j_0$（分别地，$i<i_0$ 或 $j<j_0$）时 $K_{ij}=0$；b）存在 $i_0,i_1$，使 $i<i_0$ 与 $i>i_1$ 的各情形中均有 $K_{ij}=0$；c）存在 $j_0,j_1$，使 $j<j_0$ 与 $j>j_1$ 的各情形中均有 $K_{ij}=0$。
+
+若存在 $i_0$，使 $i<i_0$ 时 $K_{ij}=0$，或存在 $j_0$，使 $j>j_0$ 时 $K_{ij}=0$，则 $'E(K_{\bullet\bullet})$ 正则。
+
+若存在 $i_0$，使 $i>i_0$ 时 $K_{ij}=0$，或存在 $j_0$，使 $j<j_0$ 时 $K_{ij}=0$，则 $''E(K_{\bullet\bullet})$ 正则。\par
+
+% ---- END c0_s11a.tex ----
+% ---- BEGIN c0_s11b.tex ----
+\subsection{函子相对于复形的超上同调}
+\src{32--35}
+\egapar{11.4.1}
+设 $C$ 为阿贝尔范畴。回顾 $C$ 中对象 $A$ 的\textbf{右解消}（或\textbf{上同调解消}）：它是微分次数为 $+1$ 的 $C$ 中复形
+\[
+0\longrightarrow L^0\longrightarrow L^1\longrightarrow L^2\longrightarrow\cdots,
+\]
+配有一个称为解消的\textbf{增广}的态射 $\varepsilon:A\to L^0$（可把它看作复形态射
+\[
+\begin{tikzcd}[column sep=small]
+0\arrow[r]&A\arrow[r]\arrow[d,"\varepsilon"]&0\arrow[r]\arrow[d]&0\arrow[r]\arrow[d]&\cdots\\
+0\arrow[r]&L^0\arrow[r]&L^1\arrow[r]&L^2\arrow[r]&\cdots
+\end{tikzcd}
+\]
+），使序列 $0\to A\to L^0\to L^1\to\cdots$ 正合。同样，$A$ 的\textbf{左解消}（或\textbf{同调解消}）是微分次数为 $-1$ 的复形 $0\leftarrow L_0\leftarrow L_1\leftarrow\cdots$，配有增广 $\varepsilon:L_0\to A$，使序列 $0\leftarrow A\leftarrow L_0\leftarrow L_1\leftarrow\cdots$ 正合。
+
+若对象 $A$ 的右解消 $(L^i)_{i\geq0}$ 满足 $i\geq n+1$ 时 $L^i=0$，就称其\textbf{长度 $\leq n$}。同样定义长度 $\leq n$ 的左解消。若对某个整数 $n$，解消长度 $\leq n$，就称其\textbf{有限}。
+
+若组成解消的除 $A$ 外的对象全为投射对象（分别地，内射对象），就称该解消为\textbf{投射解消}（分别地，\textbf{内射解消}）。当 $C$ 是某环上例如左模的范畴时，若解消中除 $A$ 外的各模全为平坦模（分别地，自由模），则相应称该解消为\textbf{平坦解消}（分别地，\textbf{自由解消}）。
+
+\egapar{11.4.2}
+设 $K^\bullet=(K^i)_{i\in\mathbf Z}$ 为 $C$ 中微分次数为 $+1$ 的复形。
+
+$K^\bullet$ 的\textbf{右 Cartan--Eilenberg 解消}是由双复形 $L^{\bullet\bullet}=(L^{ij})$ 和单复形态射 $\varepsilon:K^\bullet\to L^{\bullet,0}$ 组成的偶对；其中双复形的两个微分次数均为 $+1$，$j<0$ 时 $L^{ij}=0$，并满足下列条件：
+\begin{enumerate}[label=(\roman*)]
+\item 对每个指标 $i$，下列序列正合：
+\[
+\begin{aligned}
+0&\longrightarrow K^i\longrightarrow L^{i0}\longrightarrow L^{i1}\longrightarrow\cdots,\\
+0&\longrightarrow B^i(K^\bullet)\longrightarrow B_{\mathrm I}^i(L^{\bullet,0})\longrightarrow B_{\mathrm I}^i(L^{\bullet,1})\longrightarrow\cdots,\\
+0&\longrightarrow Z^i(K^\bullet)\longrightarrow Z_{\mathrm I}^i(L^{\bullet,0})\longrightarrow Z_{\mathrm I}^i(L^{\bullet,1})\longrightarrow\cdots,\\
+0&\longrightarrow\mathrm H^i(K^\bullet)\longrightarrow\mathrm H_{\mathrm I}^i(L^{\bullet,0})\longrightarrow\mathrm H_{\mathrm I}^i(L^{\bullet,1})\longrightarrow\cdots.
+\end{aligned}
+\]
+即 $L^{i,\bullet}$、$B_{\mathrm I}^i(L^{\bullet\bullet})$、$Z_{\mathrm I}^i(L^{\bullet\bullet})$、$\mathrm H_{\mathrm I}^i(L^{\bullet\bullet})$ 分别是 $K^i,B^i(K^\bullet),Z^i(K^\bullet),\mathrm H^i(K^\bullet)$ 的解消。
+\item 对每个 $j$，单复形 $L^{\bullet,j}$ 分裂；也就是说，正合列
+\begin{equation}\tag{11.4.2.1}
+0\longrightarrow B_{\mathrm I}^i(L^{\bullet,j})\longrightarrow Z_{\mathrm I}^i(L^{\bullet,j})\longrightarrow\mathrm H_{\mathrm I}^i(L^{\bullet,j})\longrightarrow0
+\end{equation}
+和
+\begin{equation}\tag{11.4.2.2}
+0\longrightarrow Z_{\mathrm I}^i(L^{\bullet,j})\longrightarrow L^{ij}\longrightarrow B_{\mathrm I}^{i+1}(L^{\bullet,j})\longrightarrow0
+\end{equation}
+均分裂。
+\end{enumerate}
+可证明（M，XVII，1.2）：若 $C$ 的每个对象都是某个内射对象的子对象，则 $C$ 中每个复形 $K^\bullet$ 都有内射 Cartan--Eilenberg 解消，即由内射对象 $L^{ij}$ 组成的解消（上述条件（ii）这时又推出 $B_{\mathrm I}^i(L^{\bullet,j}),Z_{\mathrm I}^i(L^{\bullet,j}),\mathrm H_{\mathrm I}^i(L^{\bullet,j})$ 也内射）。此外，对 $C$ 中每个复形态射 $f:K^\bullet\to K'^\bullet$、$K^\bullet$ 的任意 Cartan--Eilenberg 解消 $L^{\bullet\bullet}$ 及 $K'^\bullet$ 的任意内射 Cartan--Eilenberg 解消 $L'^{\bullet\bullet}$，存在与 $f$ 和增广相容的双复形态射 $F:L^{\bullet\bullet}\to L'^{\bullet\bullet}$。若 $f,g:K^\bullet\to K'^\bullet$ 同伦，则相应的双复形态射也同伦（同上）。
+
+当 $K^\bullet$ 有下界（分别地，有上界）时，若 $i<i_0$（分别地，$i>i_0$）时 $K^i=0$，则可取 $L^{\bullet\bullet}$ 使相同范围内 $L^{ij}=0$（M，XVII，1.3）。另一方面，若存在整数 $n$，使 $C$ 的每个对象都有长度 $\leq n$ 的内射解消，则可假设 $j>n$ 时 $L^{ij}=0$（M，XVII，1.4）。
+
+\egapar{11.4.3}
+现在设 $T$ 为从 $C$ 到阿贝尔范畴 $C'$ 的协变加法函子。给定 $C$ 中复形 $K^\bullet$ 及其内射 Cartan--Eilenberg 解消 $L^{\bullet\bullet}$，假设双复形 $T(L^{\bullet\bullet})$ 定义的单复形存在（参见11.3.1）。则此双复形的两个谱序列 $'E(T(L^{\bullet\bullet}))$ 和 $''E(T(L^{\bullet\bullet}))$，称为 $T$ 相对于复形 $K^\bullet$ 的\textbf{超上同调谱序列}。由（11.4.2）与（11.3.2），它们确实只依赖于 $K^\bullet$，不依赖所选的内射 Cartan--Eilenberg 解消；并且它们函子地依赖于 $K^\bullet$。二者具有共同终项 $\mathrm H^\bullet(T(L^{\bullet\bullet}))$，称为 $T$ 相对于 $K^\bullet$ 的\textbf{超上同调}，记为 $\mathrm R^\bullet T(K^\bullet)$。可以证明，这两个谱序列的 $E_2$ 项分别为
+\begin{equation}\tag{11.4.3.1}
+'E_2^{pq}=\mathrm H^p(\mathrm R^qT(K^\bullet)),
+\end{equation}
+\begin{equation}\tag{11.4.3.2}
+''E_2^{pq}=\mathrm R^pT(\mathrm H^q(K^\bullet)).
+\end{equation}
+如常，$\mathrm R^pT$ 表示 $T$ 的第 $p$ 个导出函子（$p\in\mathbf Z$）；$\mathrm R^qT(K^\bullet)$ 表示复形 $(\mathrm R^qT(K^i))_{i\in\mathbf Z}$。除非明确声明例外，今后假设 $C$ 的每个对象都是 $C$ 中某个内射对象的子对象，因此每个复形都有内射 Cartan--Eilenberg 解消。由于 $j<0$ 时 $L^{ij}=0$，由（11.3.3）的准则可知，在下列任一情形中，两个超上同调谱序列都存在且双正则：1° $K^\bullet$ 有下界；2° 存在与对象无关的整数 $n$，使 $C$ 的每个对象都有长度 $\leq n$ 的内射解消。事实上，在第一种情形，可以假设（11.4.2）存在 $i_0$ 使 $i<i_0$ 时 $L^{ij}=0$；在第二种情形，可以假设存在 $j_1$ 使 $j>j_1$ 时 $L^{ij}=0$。在两种情形中，对固定 $n$，满足 $L^{ij}\ne0$ 及 $i+j=n$ 的偶对 $(i,j)$ 显然都只有有限个，这就证明了上述断言。
+
+若假设 $C'$ 中滤过归纳极限存在且正合（这尤其蕴含 $C'$ 中无限直和存在），则双复形 $T(L^{\bullet\bullet})$ 定义的复形存在；准则（11.3.3）表明，第一个谱序列 $'E(T(L^{\bullet\bullet}))$ 总是正则的。
+
+若 $K^\bullet$ 除唯一一项 $K^{i_0}$ 外全为零，则 $\mathrm R^nT(K^\bullet)$ 同构于 $\mathrm R^{n-i_0}T(K^{i_0})$；取在 $i\ne i_0$ 时 $L^{ij}=0$ 的 Cartan--Eilenberg 解消，便从定义立即得到此结论。
+
+若 $K^\bullet,K'^\bullet$ 是 $C$ 中两个复形，$f,g:K^\bullet\to K'^\bullet$ 为两个同伦态射，则由 $f,g$ 得到的态射 $\mathrm R^\bullet T(K^\bullet)\to\mathrm R^\bullet T(K'^\bullet)$ 相同，相应上同调谱序列的态射也相同。\transnote{底本此后直接列出（11.4.5），未另印（11.4.4）；后文引用（11.4.4）时，指向这里关于正则性等性质的说明。本译稿不补造该编号。}
+
+\egastatement{11.4.5}{命题}
+假设 $C'$ 中滤过归纳极限存在且正合。若对每个 $n>0$ 和 $i\in\mathbf Z$，有 $\mathrm R^nT(K^i)=0$，则有函子同构
+\begin{equation}\tag{11.4.5.1}
+\mathrm R^iT(K^\bullet)\simeq\mathrm H^i(T(K^\bullet))\qquad(i\in\mathbf Z).
+\end{equation}
+\begin{proof}
+此时第一个谱序列（11.4.3.1）中仅有可能非零的 $E_2$ 项为 $'E_2^{p0}=\mathrm H^p(T(K^\bullet))$；换言之，该谱序列退化。又因其正则（11.4.4），结论由（11.1.6）得出。
+\end{proof}
+
+\egapar{11.4.6}
+现在例如考虑从 $C\times C'$ 到 $C''$ 的协变双函子 $(M,N)\mapsto T(M,N)$，其中 $C,C',C''$ 均为阿贝尔范畴。为简便起见，假设 $T$ 关于每个变元都加法；再假设 $C,C'$ 的每个对象都是某个内射对象的子对象，而且 $C''$ 中滤过归纳极限存在且正合。给定分别属于 $C,C'$、微分次数为 $+1$ 的复形 $K^\bullet,K'^\bullet$，取其内射 Cartan--Eilenberg 解消 $L^{\bullet\bullet},L'^{\bullet\bullet}$。则 $T(L^{\bullet\bullet},L'^{\bullet\bullet})$ 为 $C''$ 中的四重复形；令 $T(L^{ij},L'^{hk})$ 的两个次数为 $i+h$ 与 $j+k$，将它视为双复形。按定义，$T$ 相对于 $K^\bullet,K'^\bullet$ 的超上同调，就是此双复形（也就是相应单复形）的上同调
+\[
+\mathrm H^\bullet(T(L^{\bullet\bullet},L'^{\bullet\bullet})),
+\]
+记作 $\mathrm R^\bullet T(K^\bullet,K'^\bullet)$。它为两个谱序列的共同终项，其 $E_2$ 项如下（参见 M，XVII，2）：
+\begin{equation}\tag{11.4.6.1}
+'E_2^{pq}=\mathrm H^p(\mathrm R^qT(K^\bullet,K'^\bullet)),
+\end{equation}
+\begin{equation}\tag{11.4.6.2}
+''E_2^{pq}=\bigoplus_{q'+q''=q}\mathrm R^pT(\mathrm H^{q'}(K^\bullet),\mathrm H^{q''}(K'^\bullet)).
+\end{equation}
+这里 $\mathrm R^qT(K^\bullet,K'^\bullet)$ 是双复形 $(\mathrm R^qT(K^i,K'^j))_{i,j\in\mathbf Z}$，（11.4.6.1）右端表示将其视为单复形时的上同调。
+
+此外，第一个谱序列总正则；若存在 $n$，使 $C,C'$ 的每个对象都有长度 $\leq n$ 的内射解消，或若 $K^\bullet,K'^\bullet$ 均有下界，则两个谱序列均双正则。在后一情形，还可省去底本所说 $C$ 与 $C''$ 中归纳极限存在的假设。
+
+若 $K_1^\bullet,K_1'^\bullet$ 分别为 $C,C'$ 中的另外两个复形，$f,g:K^\bullet\to K_1^\bullet$ 同伦，$f',g':K'^\bullet\to K_1'^\bullet$ 同伦，则分别由 $(f,f')$ 与 $(g,g')$ 得到的态射
+\[
+\mathrm R^\bullet T(K^\bullet,K'^\bullet)\longrightarrow\mathrm R^\bullet T(K_1^\bullet,K_1'^\bullet)
+\]
+相同；两个超上同调谱序列的相应态射也相同。容易推广到任意协变加法多函子。
+
+\egastatement{11.4.7}{命题}
+假设对 $C$ 的每个内射对象 $I$（分别地，$C'$ 的每个内射对象 $I'$），$A'\mapsto T(I,A')$（分别地，$A\mapsto T(A,I')$）为正合函子。那么，在（11.4.6）的记号下，有典范同构
+\begin{equation}\tag{11.4.7.1}
+\begin{aligned}
+\mathrm R^\bullet T(K^\bullet,K'^\bullet)
+&\simeq\mathrm H^\bullet(T(L^{\bullet\bullet},K'^\bullet))\\
+&\simeq\mathrm H^\bullet(T(K^\bullet,L'^{\bullet\bullet})),
+\end{aligned}
+\end{equation}
+其中后两项分别为三重复形 $T(L^{\bullet\bullet},K'^\bullet)$ 与 $T(K^\bullet,L'^{\bullet\bullet})$ 定义的单复形的上同调。
+\begin{proof}
+例如定义第一个同构。可以把四重复形 $T(L^{\bullet\bullet},L'^{\bullet\bullet})$ 视为双复形，令 $T(L^{ij},L'^{hk})$ 的次数为 $i+j+h$ 与 $k$。因每个 $h$ 所对应的 $L'^{h,\bullet}$ 是 $K'^h$ 的解消，由对 $T$ 的假设，对此双复形有 $\mathrm H_{\mathrm{II}}^q=0$（$q\ne0$），并且
+\[
+\mathrm H_{\mathrm{II}}^0(T(L^{\bullet\bullet},L'^{\bullet\bullet}))=T(L^{\bullet\bullet},K'^\bullet).
+\]
+所以其第一个谱序列退化；又因 $k<0$ 时 $L'^{hk}=0$，此谱序列正则（11.3.3）。结论由（11.1.6）得出。
+\end{proof}
+对于任意 $n$ 个变元的协变多函子，也有类似结果：计算超上同调时，不必把所有复形都换成 Cartan--Eilenberg 解消，只须替换其中 $n-1$ 个；条件是，当把任意 $n-1$ 个变元固定为内射对象时，关于余下变元的协变函子正合。
+
+\subsection{超上同调中的归纳极限}
+\src{35--39}
+\egastatement{11.5.1}{引理}
+设 $K^\bullet=(K^i)_{i\in\mathbf Z}$ 为 $C$ 中的复形，对每个整数 $r\in\mathbf Z$，令 $K_{(r)}^\bullet$ 为满足 $i<r$ 时 $K_{(r)}^i=0$、$i\geq r$ 时 $K_{(r)}^i=K^i$ 的复形。设 $T:C\to C'$ 为与归纳极限交换的协变加法函子（假设 $C,C'$ 中滤过归纳极限存在且正合）。则 $\mathrm R^\bullet T(K^\bullet)$ 同构于当 $r\to-\infty$ 时的归纳极限 $\ilim_r\mathrm R^\bullet T(K_{(r)}^\bullet)$。
+\begin{proof}
+构造 $K^\bullet$ 的内射 Cartan--Eilenberg 解消时，可对每个 $i$ 任意选择 $B^i(K^\bullet)$ 的内射解消 $(X_B^{ij})_{j\geq0}$ 及 $\mathrm H^i(K^\bullet)$ 的内射解消 $(X_H^{ij})_{j\geq0}$。构造方法表明，$K^i$ 的内射解消 $(L^{ij})_{j\geq0}$ 及微分 $L^{ij}\to L^{i+1,j}$，只依赖于解消 $(X_B^{i,\bullet})$、$(X_H^{i,\bullet})$ 与 $(X_B^{i+1,\bullet})$（M，XVII，1.2）。显然，$i\geq r+1$ 时有
+\[
+B^i(K_{(r)}^\bullet)=B^i(K^\bullet),\qquad
+\mathrm H^i(K_{(r)}^\bullet)=\mathrm H^i(K^\bullet).
+\]
+另一方面，每个 $r$ 都有典范嵌入 $\varphi_{r-1,r}^\bullet:K_{(r)}^\bullet\to K_{(r-1)}^\bullet$，其在 $i\ne r-1$ 的次数上为恒等映射。因此，若 $L^{\bullet\bullet}=(L^{ij})$ 是 $K^\bullet$ 的内射 Cartan--Eilenberg 解消，则对每个 $r$，可以定义 $K_{(r)}^\bullet$ 的内射 Cartan--Eilenberg 解消 $L_{(r)}^{\bullet\bullet}$，使 $i<r$ 时 $L_{(r)}^{ij}=0$，$i\geq r+1$ 时 $L_{(r)}^{ij}=L^{ij}$。
+
+又可定义对应于 $\varphi_{r-1,r}^\bullet$ 的双复形态射 $\Phi_{r-1,r}:L_{(r)}^{\bullet\bullet}\to L_{(r-1)}^{\bullet\bullet}$；此态射的构造方法（同上）表明，可使 $i\ne r$ 且 $i\ne r-1$ 时的 $\Phi_{r-1,r}^{ij}$ 为恒等映射。这样得到双复形的归纳系 $(L_{(r)}^{\bullet\bullet})$，当 $r\to-\infty$ 时，其归纳极限显然为 $L^{\bullet\bullet}$。因为直和与归纳极限可交换，$L^{\bullet\bullet}$ 的相伴单复形也是各 $L_{(r)}^{\bullet\bullet}$ 的相伴单复形的归纳极限。由假设，$T$ 与归纳极限交换；上同调也如此（由于 $\ilim$ 正合）。于是，在同构意义下，确有
+\[
+\mathrm H^\bullet(T(L^{\bullet\bullet}))=\ilim_r\mathrm H^\bullet(T(L_{(r)}^{\bullet\bullet})).
+\]
+\end{proof}
+引理（11.5.1）允许通过归纳极限，把对有下界复形成立的性质推广到任意复形。作为第一个例子，证明下列命题。
+
+\egastatement{11.5.2}{命题}
+关于 $C,C',T$ 的假设同（11.5.1）。则 $\mathrm R^\bullet T(K^\bullet)$ 是 $C$ 中复形所成阿贝尔范畴上的上同调函子。
+\eproof
+先说明可归结到有下界复形。若有复形的正合列 $0\to K'^\bullet\to K^\bullet\to K''^\bullet\to0$，则对每个 $r$ 显然得到正合列 $0\to K'_{(r)}{}^\bullet\to K_{(r)}^\bullet\to K''_{(r)}{}^\bullet\to0$，因此按所假定的有下界情形，有正合列
+\[
+\cdots\to\mathrm R^nT(K'_{(r)}{}^\bullet)\to\mathrm R^nT(K_{(r)}^\bullet)
+\to\mathrm R^nT(K''_{(r)}{}^\bullet)\xrightarrow{\partial}\mathrm R^{n+1}T(K'_{(r)}{}^\bullet)\to\cdots.
+\]
+这些正合列组成归纳系。引理（11.5.1）与 $\ilim$ 的正合性表明，得到正合列
+\[
+\cdots\to\mathrm R^nT(K'^\bullet)\to\mathrm R^nT(K^\bullet)
+\to\mathrm R^nT(K''^\bullet)\xrightarrow{\partial}\mathrm R^{n+1}T(K'^\bullet)\to\cdots.
+\]
+处理有下界复形时，可只考虑 $i<0$ 时 $K^i=0$ 的那些复形；它们显然组成阿贝尔范畴 $\mathbf K$。
+
+\egastatement{11.5.2.1}{引理}
+在 $\mathbf K$ 中，令 $\mathfrak I$ 为具有以下性质的复形 $Q^\bullet=(Q^i)_{i\geq0}$ 的全体：1° 每个 $Q^i$ 为 $C$ 的内射对象；2° 对每个 $i\geq0$，$Z^i(Q^\bullet)=B^i(Q^\bullet)$，且 $Z^i(Q^\bullet)$ 为 $Q^i$ 的直因子。那么：
+\begin{enumerate}[label=(\roman*)]
+\item 每个 $Q^\bullet\in\mathfrak I$ 都是 $\mathbf K$ 中的内射对象。
+\item $\mathbf K$ 的每个对象都同构于某个属于 $\mathfrak I$ 的复形的子复形。
+\end{enumerate}
+\begin{proof}
+（i）设 $A^\bullet=(A^i)$ 为 $\mathbf K$ 的对象，$A'^\bullet=(A'^i)$ 为其子对象，$Q^\bullet=(Q^i)$ 为 $\mathfrak I$ 的对象，且给定态射 $f=(f^i):A'^\bullet\to Q^\bullet$。须将其延拓为态射 $g=(g^i):A^\bullet\to Q^\bullet$。为简化叙述，使用模范畴的语言（参见 [27]）。
+
+将 $Q^i$ 等同于 $B^i(Q^\bullet)\oplus B^{i+1}(Q^\bullet)$。对 $i$ 归纳，假设各 $g^j$ 已在 $j<i$ 时定义，并对 $j<i-1$ 与微分 $d^j:A^j\to A^{j+1}$、$d'^j:Q^j\to Q^{j+1}$ 相容；又满足：1° $g^{i-1}(Z^{i-1}(A^\bullet))\subset Z^{i-1}(Q^\bullet)$；2° 若对每个 $j$ 令 $C^j=(d^j)^{-1}(A'^{j+1})$，则 $d'^{i-1}\circ g^{i-1}$ 在 $C^{i-1}$ 上与 $f^i\circ d^{i-1}$ 一致。
+
+态射 $f^i:A'^i\to Q^i$ 与两个投影复合，给出 $f'^i:A'^i\to B^i(Q^\bullet)$ 和 $f''^i:A'^i\to B^{i+1}(Q^\bullet)$。因为 $d'^{i-1}\circ g^{i-1}$ 把 $A^{i-1}$ 送入 $B^i(Q^\bullet)$，并在 $Z^{i-1}(A^\bullet)$ 上为零，便给出态射 $h^i:B^i(A^\bullet)\to B^i(Q^\bullet)$；由其在 $C^{i-1}$ 上与 $f^i\circ d^{i-1}$ 一致，$h^i$ 与 $f'^i$ 在 $B^i(A^\bullet)\cap A'^i$ 上一致。$B^i(Q^\bullet)$ 为 $Q^i$ 的直因子，因而内射；故存在态射 $g'^i:A^i\to B^i(Q^\bullet)$，分别在 $B^i(A^\bullet)$ 和 $A'^i$ 上与 $h^i$ 和 $f'^i$ 一致。
+
+另一方面，考虑态射 $f''^{i+1}\circ d^i:C^i\to B^{i+1}(Q^\bullet)$，它在 $Z^i(A^\bullet)$ 上为零。因为 $B^{i+1}(Q^\bullet)$ 内射，存在态射 $g''^i:A^i\to B^{i+1}(Q^\bullet)$，在 $C^i$ 上与 $f''^{i+1}\circ d^i$ 一致，在 $Z^i(A^\bullet)$ 上为零。取 $g^i=g'^i+g''^i$，即可继续归纳。\transnote{底本此处在 $f'$、$f''$ 的上标与撇号上存在源靶不一致的印式，本文照录其段落构造；尤其按本段定义，$f''^{i+1}$ 的靶是 $B^{i+2}(Q^\bullet)$，与这里所写 $B^{i+1}(Q^\bullet)$ 不同。应把这一印式与前述投影分解对照使用。}
+
+（ii）为了把 $A^\bullet=(A^i)$ 嵌入一个属于 $\mathfrak I$ 的复形，对每个 $i\geq1$，取 $C$ 的内射对象 $Q'^i$ 及嵌入 $f'^i:A^i\to Q'^i$。令 $i<0$ 时 $Q^i=0$，令 $Q^0=Q'^1$，并令 $i\geq1$ 时 $Q^i=Q'^i\oplus Q'^{i+1}$，采用显然的微分算子。对每个 $i$ 令
+\[
+f^i=f'^i+(f'^{i+1}\circ d^i),
+\]
+其中 $i\leq0$ 时取 $f'^i=0$。立即可见，每个 $f^i$ 单射，且这些 $f^i$ 与微分算子相容。\transnote{本引理的零次条件及 $Q^0$ 的构造按底本第37页保留。例如一般复形的 $d^0$ 未必单射，故末句在第0次不能仅由所写公式推出。这里未用另一种内射复形构造替换原文。}
+\end{proof}
+
+\egastatement{11.5.2.2}{推论}
+$\mathbf K$ 的每个对象 $K^\bullet$ 都有由 $\mathfrak I$ 的对象组成的右解消。若 $L^{\bullet\bullet}$ 是这样的解消，则对 $K^\bullet$ 的任意由 $\mathbf K$ 的对象组成的解消 $L'^{\bullet\bullet}$，存在与增广相容的双复形态射 $F:L'^{\bullet\bullet}\to L^{\bullet\bullet}$；任意两个这样的态射 $F,F'$ 同伦。
+\begin{proof}
+这正是（M，V，1.1 a））应用于阿贝尔范畴 $\mathbf K$。
+\end{proof}
+
+\egapar{11.5.2.3}
+有了这些预备结果，考虑 $K^\bullet$ 的内射 Cartan--Eilenberg 解消 $L'^{\bullet\bullet}$ 及由 $\mathfrak I$ 的对象组成的解消 $L^{\bullet\bullet}$，并证明
+\[
+\mathrm H^\bullet(T(L'^{\bullet\bullet}))\simeq\mathrm H^\bullet(T(L^{\bullet\bullet})).
+\]
+由（11.5.2.2），得到双复形态射 $T(L'^{\bullet\bullet})\to T(L^{\bullet\bullet})$，从而得到其第一个谱序列之间的态射 $'E(T(L'^{\bullet\bullet}))\to'E(T(L^{\bullet\bullet}))$。这些谱序列由（11.3.3）正则，所以由（11.1.5），只须证明它在 $E_2$ 项上为同构；也就是证明 $\mathrm H_{\mathrm{II}}^q(T(L^{i,\bullet}))=\mathrm R^qT(K^i)$。由于 $L^{i,\bullet}$ 为 $K^i$ 的右解消，归结为下面的引理。
+
+\egastatement{11.5.2.4}{引理}
+若 $L^\bullet=(L^i)_{i\in\mathbf Z}$ 是 $C$ 中对象 $A$ 的右解消，且对每个 $i\in\mathbf Z$、$n>0$ 有 $\mathrm R^nT(L^i)=0$，则
+\[
+\mathrm H^\bullet(T(L^\bullet))=\mathrm R^\bullet T(A).
+\]
+这是（T，2.5.2）的特例。
+
+\egapar{11.5.2.5}
+现在，（11.5.2）的证明立即完成：因为 $L^{\bullet\bullet}$ 为 $K^\bullet$ 在阿贝尔范畴 $\mathbf K$ 中的内射解消，换言之，$K^\bullet\mapsto\mathrm H^\bullet(T(L^{\bullet\bullet}))$ 就是 $T$ 在范畴 $\mathbf K$ 中的右导出上同调函子（T，2.3）。\finishproof
+
+\egastatement{11.5.3}{命题}
+关于 $C,C',T$ 的假设同（11.5.1）。设 $L^{\bullet\bullet}=(L^{ij})$ 为双复形，满足 $j<0$ 时 $L^{ij}=0$，并且对每个 $i$，$L^{i,\bullet}$ 为 $K^i$ 的解消；再假设对每对 $(i,j)$ 及每个 $n>0$，有 $\mathrm R^nT(L^{ij})=0$。那么存在函子同构
+\begin{equation}\tag{11.5.3.1}
+\mathrm R^\bullet T(K^\bullet)\simeq\mathrm H^\bullet(T(L^{\bullet\bullet})).
+\end{equation}
+\begin{proof}
+令 $L_{(r)}^{\bullet\bullet}$ 为满足 $i<r$ 时 $L_{(r)}^{ij}=0$、$i\geq r$ 时 $L_{(r)}^{ij}=L^{ij}$ 的双复形。显然，当 $r\to-\infty$ 时，$L^{\bullet\bullet}$ 是这些双复形的归纳极限。由对 $T$ 的假设及（11.5.1），只须在 $K^\bullet$ 有下界的情形证明命题；例如可设 $i<0$ 时 $K^i=0$，并有 $L^{ij}=0$。取一个由 $\mathfrak I$ 的对象组成的 $K^\bullet$ 的右解消 $L'^{\bullet\bullet}$（11.5.2.2）。存在与增广相容的双复形态射 $L^{\bullet\bullet}\to L'^{\bullet\bullet}$，从而得到第一个谱序列之间的态射 $'E(T(L^{\bullet\bullet}))\to'E(T(L'^{\bullet\bullet}))$。如同（11.5.2.3），引理（11.5.2.4）表明此态射为同构，故结论成立。
+\end{proof}
+
+\egastatement{11.5.4}{注}
+上述论证表明，在有下界复形的范畴中，（11.5.2）和（11.5.3）的结论成立而不必假设 $T$ 与滤过归纳极限交换。此外，当仅考虑满足 $i<0$ 时 $K^i=0$ 的复形所成范畴 $\mathbf K$ 时，把 $\mathrm R^\bullet T(K^\bullet)$ 刻画为 $T$ 在 $\mathbf K$ 中的右导出函子系，便说明此上同调函子是泛的（T，2.3）。
+
+还有一种无需对 $T$ 另加假设而（11.5.2）仍成立的情形：存在整数 $m>0$，使 $C$ 中每个对象都有长度 $\leq m$ 的内射解消。事实上，在（11.5.1）的证明中，所出现的各对象的内射解消都可取为长度 $\leq m$。于是立即可见，当 $r$ 足够大时，$T(L_{(r)}^{\bullet\bullet})$ 中总次数为 $n$ 的项与 $T(L^{\bullet\bullet})$ 的相应项相等，且只有有限个；这推出对每个 $n$，当 $r$ 足够大时，$\mathrm H^n(T(L^{\bullet\bullet}))=\mathrm H^n(T(L_{(r)}^{\bullet\bullet}))$。按（11.5.2）的记号，于是当 $r$ 足够大（依赖于 $n$）时，$\mathrm R^nT(K_{(r)}^\bullet)=\mathrm R^nT(K^\bullet)$，对 $K'^\bullet,K''^\bullet$ 亦然，结论随之得到。\transnote{本段底本写“$r$ 足够大”；按照（11.5.1）对 $K_{(r)}$ 的定义和 $r\to-\infty$ 的方向，实际须理解为 $r$ 充分小（或 $-r$ 充分大）。这里保留原文用语并说明方向。}
+同理，当 $C$ 满足上述假设且各解消 $L^{i,\bullet}$ 的长度 $\leq m$ 时，（11.5.3）也无需对 $T$ 另加条件。
+
+\egapar{11.5.5}
+（11.5.2）的结果可推广到协变多函子。例如考虑（11.4.6）的情形，再假设 $C,C',C''$ 中滤过归纳极限存在且正合，且 $T$ 与归纳极限交换。那么 $\mathrm R^\bullet T(K^\bullet,K'^\bullet)$ 关于每个复形 $K^\bullet,K'^\bullet$ 都为上同调双函子。证明时，像（11.5.2）那样先归结到两个复形都有下界的情形，再为二者取（11.5.2.2）所述类型的内射解消，便归结到（M，V，4.1）的普遍性质。
+
+\egapar{11.5.6}
+同样，（11.4.7）和（11.5.3）可作如下推广。在（11.5.5）的假设下，设有两个双复形 $L^{\bullet\bullet}=(L^{ij})$、$L'^{\bullet\bullet}=(L'^{ij})$，当 $j<0$ 时二者的项均为零，对每个 $i$，$L^{i,\bullet}$ 为 $K^i$ 的解消，$L'^{i,\bullet}$ 为 $K'^i$ 的解消；并假设对任意 $(i,j,h,k)$ 及 $n>0$，有 $\mathrm R^nT(L^{ij},L'^{hk})=0$。那么存在关于 $K^\bullet,K'^\bullet$ 的函子同构
+\begin{equation}\tag{11.5.6.1}
+\mathrm R^\bullet T(K^\bullet,K'^\bullet)\simeq\mathrm H^\bullet(T(L^{\bullet\bullet},L'^{\bullet\bullet})).
+\end{equation}
+像（11.5.3）那样，归结到两个复形都有下界的情形即可证明。
+
+进一步假设对每对 $(i,j)$ 及 $(h,k)$，函子 $A\mapsto T(A,L'^{hk})$ 与 $A'\mapsto T(L^{ij},A')$ 分别在 $C,C'$ 中正合。那么还有函子同构
+\begin{equation}\tag{11.5.6.2}
+\begin{aligned}
+\mathrm R^\bullet T(K^\bullet,K'^\bullet)
+&\simeq\mathrm H^\bullet(T(L^{\bullet\bullet},K'^\bullet))\\
+&\simeq\mathrm H^\bullet(T(K^\bullet,L'^{\bullet\bullet})).
+\end{aligned}
+\end{equation}
+证明与（11.4.7）相同。
+
+\egapar{11.5.7}
+还要指出，只要限制于有下界复形 $K^\bullet,K'^\bullet$，或假设 $C$（分别地，$C'$）的各对象具有长度一致有界的内射解消，且在（11.5.6）中两个双复形的第二次数有上界，则（11.5.5）与（11.5.6）的结果无需假设 $T$ 与归纳极限交换也成立。\par
+
+% ---- END c0_s11b.tex ----
+% ---- BEGIN c0_s11c.tex ----
+\subsection{函子相对于复形的超同调}
+\src{39--41}
+\egapar{11.6.1}
+设 $C$ 为阿贝尔范畴，$K_\bullet=(K_i)_{i\in\Z}$ 为 $C$ 中微分算子次数为 $-1$ 的复形。$K_\bullet$ 的一个\textbf{左 Cartan--Eilenberg 解消}由一个微分算子次数均为 $-1$ 的双复形 $L_{\bullet\bullet}=(L_{ij})$ 和一个单复形态射 $\varepsilon:L_{\bullet0}\to K_\bullet$ 组成，其中 $j<0$ 时 $L_{ij}=0$，并且满足将（11.4.2）的条件中的“箭头反向”所得的条件。如果 $C$ 的每个对象都是一个投射对象的商，则 $C$ 的每个复形 $K_\bullet$ 都有一个\textbf{投射 Cartan--Eilenberg 解消}，即由投射对象 $L_{ij}$ 组成的解消；它具有类似于（11.4.2）的函子性质。此外，若 $K_\bullet$ 有下界（分别地，有上界），可以在 $i<i_0$（分别地，$i>i_0$）时 $K_i=0$ 的条件下，令相应的 $L_{ij}=0$。若 $C$ 的每个对象都有长度 $\leq n$ 的投射解消，则可以令 $j>n$ 时 $L_{ij}=0$。
+
+\egapar{11.6.2}
+设 $T$ 为从 $C$ 到阿贝尔范畴 $C'$ 的加性协变函子。相对于 $C$ 的复形 $K_\bullet$ 的\textbf{超同调} $\mathrm L_\bullet T(K_\bullet)$ 及\textbf{超同调谱序列}（在它们存在时），仍由（11.4.3）经“箭头反向”来定义；这样得到的两个谱序列的 $E^2$ 项为
+\begin{equation}\tag{11.6.2.1}
+{}'E^2_{pq}=\mathrm H_p(\mathrm L_qT(K_\bullet)),
+\end{equation}
+\begin{equation}\tag{11.6.2.2}
+{}''E^2_{pq}=\mathrm L_pT(\mathrm H_q(K_\bullet)),
+\end{equation}
+其中 $\mathrm L_pT$ 在 $p\geq0$ 时表示 $T$ 的第 $p$ 个导出函子，在 $p<0$ 时为零；$\mathrm L_qT(K_\bullet)$ 表示复形 $(\mathrm L_qT(K_i))_{i\in\Z}$。
+
+超同调的性质并不全能由超上同调的性质简单地经“箭头反向”得到（除非对范畴 $C'$ 作（T，1.5）中 AB~5* 型的附加假设），这是由于上述两个谱序列的正则性条件不同；这次必须对它们应用（11.3.4）的判别准则。\transnote{此处原文引作（11.3.4）；关于同调型双复形正则性的对应判别见（11.3.6）。保留原引文编号。}这些判别说明，若 $C'$ 中滤过归纳极限存在且正合，则由双复形 $T(L_{\bullet\bullet})$ 定义的复形存在，而这次是\emph{第二个}谱序列 ${}''E(T(L_{\bullet\bullet}))$ 正则。若假设 $K_\bullet$ 有下界，或存在整数 $n$ 使 $C$ 的每个对象都有长度 $\leq n$ 的投射解消，则两个超同调谱序列都存在（无需对 $C'$ 作假设）且双正则。
+
+\egastatement{11.6.3}{命题}
+设 $C,C'$ 为两个阿贝尔范畴，$T:C\to C'$ 为加性协变函子。则：
+\begin{enumerate}[label=(\roman*)]
+\item 超同调 $\mathrm L_\bullet T(K_\bullet)$ 是 $C$ 的有下界复形所成阿贝尔范畴上的同调函子。
+\item 设 $K_\bullet$ 为 $C$ 的有下界复形。若对每个 $n>0$ 及 $i\in\Z$ 都有 $\mathrm L_nT(K_i)=0$，则存在函子同构
+\begin{equation}\tag{11.6.3.1}
+\mathrm L_iT(K_\bullet)\simeq\mathrm H_i(T(K_\bullet))\qquad(i\in\Z).
+\end{equation}
+\item 设 $K_\bullet$ 为 $C$ 的有下界复形，$L_{\bullet\bullet}=(L_{ij})$ 为双复形，满足 $j<0$ 时 $L_{ij}=0$，且对每个 $i$，$L_{i\bullet}$ 是 $K_i$ 的一个解消；再假设对每对 $(i,j)$ 及每个 $n>0$ 都有 $\mathrm L_nT(L_{ij})=0$。则存在函子同构
+\begin{equation}\tag{11.6.3.2}
+\mathrm L_\bullet T(K_\bullet)\simeq\mathrm H_\bullet(T(L_{\bullet\bullet})).
+\end{equation}
+\end{enumerate}
+\begin{proof}
+证明与（11.5.2）、（11.4.5）及（11.5.3）在有下界复形情形下的证明相同。这些论证的细节留给读者。
+\end{proof}
+
+\egapar{11.6.4}
+对于在每个变元上加性的协变多函子，有完全类似的结果。例如，对双函子 $T$，两个超同调谱序列的 $E^2$ 项为
+\begin{equation}\tag{11.6.4.1}
+{}'E^2_{pq}=\mathrm H_p(\mathrm L_qT(K_\bullet,K'_\bullet)),
+\end{equation}
+\begin{equation}\tag{11.6.4.2}
+{}''E^2_{pq}=\bigoplus_{q'+q''=q}\mathrm L_pT\bigl(\mathrm H_{q'}(K_\bullet),\mathrm H_{q''}(K'_\bullet)\bigr).
+\end{equation}
+这里仍是第二个谱序列正则；当复形 $K_\bullet,K'_\bullet$ 有下界，或所考虑的阿贝尔范畴的对象具有长度有固定上界的投射解消时，两个谱序列均双正则。此外：
+
+\egastatement{11.6.5}{命题}
+设 $C,C',C''$ 为三个阿贝尔范畴，$T:C\times C'\to C''$ 为双加性协变双函子。
+\begin{enumerate}[label=(\roman*)]
+\item $\mathrm L_\bullet T(K_\bullet,K'_\bullet)$ 对分别由 $C,C'$ 的对象组成的有下界复形 $K_\bullet,K'_\bullet$ 中的每一个而言都是同调函子。
+\item 设 $K_\bullet,K'_\bullet$ 有下界。设 $L_{\bullet\bullet}=(L_{ij})$、$L'_{\bullet\bullet}=(L'_{ij})$ 为两个双复形，满足 $j<0$ 时 $L_{ij}=L'_{ij}=0$，对每个 $i$，$L_{i\bullet}$ 是 $K_i$ 的解消而 $L'_{i\bullet}$ 是 $K'_i$ 的解消；并且对 $n>0$ 及每组 $(i,j,h,k)$ 都有 $\mathrm L_nT(L_{ij},L'_{hk})=0$。则有函子同构
+\begin{equation}\tag{11.6.5.1}
+\mathrm L_\bullet T(K_\bullet,K'_\bullet)\simeq\mathrm H_\bullet(T(L_{\bullet\bullet},L'_{\bullet\bullet})).
+\end{equation}
+\item 再假设对每对 $(i,j)$ 及 $(h,k)$，函子 $A\mapsto T(A,L'_{hk})$、$A'\mapsto T(L_{ij},A')$ 分别在 $C,C'$ 中正合。则存在函子同构
+\begin{equation}\tag{11.6.5.2}
+\begin{aligned}
+\mathrm L_\bullet T(K_\bullet,K'_\bullet)
+&\simeq\mathrm H_\bullet(T(L_{\bullet\bullet},K'_\bullet))\\
+&\simeq\mathrm H_\bullet(T(K_\bullet,L'_{\bullet\bullet})).
+\end{aligned}
+\end{equation}
+\end{enumerate}
+\begin{proof}
+证明与（11.5.5）及（11.5.6）的证明类似。
+\end{proof}
+
+\subsection{函子相对于双复形的超同调}
+\src{41--43}
+\egapar{11.7.1}
+设 $C$ 为每个对象都是某个投射对象之商的阿贝尔范畴。考虑由 $C$ 的对象组成、两个次数都有下界的双复形 $K_{\bullet\bullet}=(K_{ij})$；总可以归结到 $i<0$ 或 $j<0$ 时 $K_{ij}=0$ 的情形，以下就这样假设。可以把 $K_{\bullet\bullet}$ 看成由阿贝尔范畴 $\mathbf K$ 的对象 $K_{i\bullet}=(K_{ij})_{j\geq0}$ 组成的单复形，其中 $\mathbf K$ 是 $C$ 的非负次数复形范畴。
+
+由引理（11.5.2.1）（更准确地说，由将其“箭头反向”所得的对偶引理）及（M，V，2.2），$K_{\bullet\bullet}$ 在范畴 $\mathbf K$ 中有一个投射 Cartan--Eilenberg 解消。这样的解消是一个由投射对象组成、各次数均非负的三重复形 $M_{\bullet\bullet\bullet}=(M_{ijk})$，使对每个 $i$，$M_{i\bullet\bullet}$、$\mathrm B_i^{\mathrm I}(M_{\bullet\bullet\bullet})$、$\mathrm Z_i^{\mathrm I}(M_{\bullet\bullet\bullet})$、$\mathrm H_i^{\mathrm I}(M_{\bullet\bullet\bullet})$ 分别在 $\mathbf K$ 中构成 $K_{i\bullet}$、$\mathrm B_i^{\mathrm I}(K_{\bullet\bullet})$、$\mathrm Z_i^{\mathrm I}(K_{\bullet\bullet})$、$\mathrm H_i^{\mathrm I}(K_{\bullet\bullet})$ 的投射解消；特别地，对每对 $(i,j)$，$M_{ij\bullet}$ 是 $K_{ij}$ 在 $C$ 中的投射解消。
+
+\egastatement{11.7.2}{命题}
+设 $T$ 为从 $C$ 到阿贝尔范畴 $C'$ 的加性协变函子。采用（11.7.1）的记号，则三重复形 $T(M_{\bullet\bullet\bullet})$ 所对应单复形的同调 $\mathrm H_\bullet(T(M_{\bullet\bullet\bullet}))$，典范地同构于 $K_{\bullet\bullet}$ 所对应单复形的超同调 $\mathrm L_\bullet T(K_{\bullet\bullet})$（11.6.2）；它也是六个双正则谱序列 ${}^{(t)}E$（$t=a,b,a',b',c,d$）的共同终项，其 $E^2$ 项由下列公式给出：
+\[
+\begin{aligned}
+{}^{(a)}E^2_{pq}&=\mathrm L_pT(\mathrm H_q(K_{\bullet\bullet})),\\
+{}^{(b)}E^2_{pq}&=\mathrm H_p(\mathrm L_q^{\mathrm{II}}T(K_{\bullet\bullet})),\\
+{}^{(a')}E^2_{pq}&=\mathrm L_pT(\mathrm H_q^{\mathrm I}(K_{\bullet\bullet})),\\
+{}^{(b')}E^2_{pq}&=\mathrm H_p(\mathrm L_qT(K_{\bullet\bullet})),\\
+{}^{(c)}E^2_{pq}&=\mathrm L_pT(\mathrm H_q^{\mathrm{II}}(K_{\bullet\bullet})),\\
+{}^{(d)}E^2_{pq}&=\mathrm H_p(\mathrm L_q^{\mathrm I}T(K_{\bullet\bullet})).
+\end{aligned}
+\]
+这里再次提醒：对任意复形 $A_\bullet=(A_i)$，用 $F(A_\bullet)$ 表示由 $F(A_i)$ 组成的复形。例如，$\mathrm L_q^{\mathrm{II}}T(K_{\bullet\bullet})$ 表示复形 $(\mathrm L_q^{\mathrm{II}}T(K_{i\bullet}))_{i\geq0}$，其中 $\mathrm L_q^{\mathrm{II}}T(K_{i\bullet})$ 是函子 $T$ 相对于单复形 $K_{i\bullet}$ 的第 $q$ 个超同调。
+\begin{proof}
+以 $L_\bullet$ 表示与 $K_{\bullet\bullet}$ 相伴的单复形，从而 $L_i=\bigoplus_{r+s=i}K_{rs}$；令 $N_{ij}=\bigoplus_{r+s=i}M_{rsj}$。显然每个 $N_{i\bullet}$ 都是 $L_i$ 在 $C$ 中的投射解消；由（11.6.3）及（11.6.4），有函子同构
+\[
+\mathrm L_\bullet T(L_\bullet)\simeq\mathrm H_\bullet(T(N_{\bullet\bullet})).
+\]
+由于与双复形 $T(N_{\bullet\bullet})$ 相伴的单复形也与三重复形 $T(M_{\bullet\bullet\bullet})$ 相伴，第一断言得证。
+
+此外，$\mathrm L_\bullet T(L_\bullet)$ 是函子 $T$ 相对于单复形 $L_\bullet$ 的两个超同调谱序列（11.6.2）的终项；这两个谱序列分别就是 ${}^{(b')}E$ 与 ${}^{(a)}E$。
+
+再将 $M_{\bullet\bullet\bullet}$ 视为双复形 $U_{\bullet\bullet}$，其中 $U_{ij}=\bigoplus_{r+s=j}M_{irs}$。$\mathrm H_\bullet(T(M_{\bullet\bullet\bullet}))$ 仍是双复形 $T(U_{\bullet\bullet})$ 的两个谱序列的终项。对每个 $i$，$M_{i\bullet\bullet}$ 相对于单复形 $K_{i\bullet}$ 满足（11.6.3）的条件，故
+\[
+\mathrm H_q^{\mathrm{II}}(T(U_{i\bullet}))=\mathrm L_q^{\mathrm{II}}T(K_{i\bullet});
+\]
+所以 $T(U_{\bullet\bullet})$ 的第一个谱序列正是 ${}^{(b)}E$。另一方面，对每个 $r$，$M_{\bullet r\bullet}$ 是单复形 $K_{\bullet r}$ 的一个 Cartan--Eilenberg 解消；（M，XV，2）的计算给出
+\[
+\mathrm H_q^{\mathrm I}(T(M_{\bullet rs}))=T(\mathrm H_q^{\mathrm I}(M_{\bullet rs})),
+\]
+从而
+\[
+\mathrm H_q^{\mathrm I}(T(U_{\bullet j}))
+=\bigoplus_{r+s=j}T(\mathrm H_q^{\mathrm I}(M_{\bullet rs})).
+\]
+换言之，单复形 $\mathrm H_q^{\mathrm I}(T(U_{\bullet\bullet}))$ 就是双复形 $T(\mathrm H_q^{\mathrm I}(M_{\bullet\bullet\bullet}))$ 所对应的单复形。对每个 $q$，$\mathrm H_q^{\mathrm I}(M_{\bullet\bullet\bullet})$ 在范畴 $\mathbf K$ 中是单复形 $\mathrm H_q^{\mathrm I}(K_{\bullet\bullet})$ 的投射解消；应用（11.6.3）可得
+\[
+\mathrm H_p^{\mathrm{II}}\bigl(T(\mathrm H_q^{\mathrm I}(M_{\bullet\bullet\bullet}))\bigr)
+=\mathrm L_pT(\mathrm H_q^{\mathrm I}(K_{\bullet\bullet})),
+\]
+因而得到谱序列 ${}^{(a')}E$。最后，在三重复形 $M_{\bullet\bullet\bullet}$ 的定义中交换下标 $i,j$，并对所得三重复形应用上述论证，就得到 ${}^{(c)}E$ 与 ${}^{(d)}E$。
+\end{proof}
+称 $\mathrm L_\bullet T(K_{\bullet\bullet})$ 为 $T$ 相对于双复形 $K_{\bullet\bullet}$ 的\textbf{超同调}。
+
+\egastatement{11.7.3}{注}
+（i）由（11.6.3），$\mathrm L_\bullet T(K_{\bullet\bullet})$ 是 $C$ 中各次数都有下界的双复形范畴上的同调函子。
+
+（ii）设 $M_{\bullet\bullet\bullet}$ 为 $C$ 的三重复形，对每对 $(r,s)$，$M_{rs\bullet}$ 是 $K_{rs}$ 的解消，且对每个三元组 $(i,j,k)$ 及 $n>0$ 都有 $\mathrm L_nT(M_{ijk})=0$。则有同构
+\[
+\mathrm L_\bullet T(K_{\bullet\bullet})\simeq\mathrm H_\bullet(T(M_{\bullet\bullet\bullet})).
+\]
+事实上，用（11.7.2）证明中的记号，$N_{i\bullet}$ 是 $L_i$ 的解消，且对 $n>0$ 及每对 $(i,j)$ 有 $\mathrm L_nT(N_{ij})=0$，故只需应用（11.6.3，iii）。
+
+（iii）（11.7.2）的结果立即可推广到协变多函子。例如，设 $C'$ 为第二个每个对象都是投射对象之商的阿贝尔范畴，$K'_{\bullet\bullet}$ 为 $C'$ 中两个次数都有下界的双复形，$T:C\times C'\to C''$ 为到阿贝尔范畴 $C''$ 的加性协变双函子。若 $L_\bullet,L'_\bullet$ 分别为与 $K_{\bullet\bullet},K'_{\bullet\bullet}$ 相伴的单复形，则把 $T$ 相对于两个双复形的超同调定义为 $\mathrm L_\bullet T(L_\bullet,L'_\bullet)$；应用（11.6.4）、（11.6.5），像（11.7.2）一样可得六个以此超同调为终项的谱序列，其具体写法留给读者。\par
+
+% ---- END c0_s11c.tex ----
+% ---- BEGIN c0_s11d.tex ----
+\subsection{单纯复形上同调的补充知识}
+\src{43--46}
+\egapar{11.8.1}
+设 $A$ 为有限集，$\Sigma(A)$ 为由 $A$ 的元素组成的有限序列 $\sigma=(\alpha_0,\ldots,\alpha_h)$ 的集合（称为 $A$ 的“单形”）；置 $|\sigma|=\{\alpha_0,\ldots,\alpha_h\}$。回顾链复形 $C_\bullet(A)$：它是以 $\Sigma(A)$ 的元素为生成元的分次自由阿贝尔群，$(\alpha_0,\ldots,\alpha_h)$ 的次数为 $h$，微分定义为
+\[
+d(\alpha_0,\ldots,\alpha_h)
+=\sum_{j=0}^h(-1)^j(\alpha_0,\ldots,\widehat{\alpha_j},\ldots,\alpha_h).
+\]
+在 $C_\bullet(A)$ 中，以两项相等的链 $\sigma=(\alpha_0,\ldots,\alpha_h)$ 及链 $\pi(\sigma)-\varepsilon_\pi\sigma$ 生成的子群 $D_\bullet(A)$ 是子复形；这里 $\pi$ 为任意置换，$\pi(\sigma)=(\alpha_{\pi(0)},\ldots,\alpha_{\pi(h)})$，$\varepsilon_\pi$ 是 $\pi$ 的符号。$D_\bullet(A)$ 的元素称为退化链。置 $L_\bullet(A)=C_\bullet(A)/D_\bullet(A)$，有自然的复形同态 $p:C_\bullet(A)\to L_\bullet(A)$。
+
+另一方面，按如下方法定义复形同态 $j:L_\bullet(A)\to C_\bullet(A)$：在 $A$ 上选定全序；对于单形 $\sigma=(\alpha_0,\ldots,\alpha_h)$ 模 $D_\bullet(A)$ 的类，若有两项相等，则对应于零，否则对应于将各 $\alpha_i$ 按递增次序排列所得的序列 $(\beta_0,\ldots,\beta_h)$。显然 $p\circ j$ 是 $L_\bullet(A)$ 的恒等映射。\transnote{原文此处未写出排序置换的符号。若将其理解为对任意代表单形的规则，须计入该符号；等价地，可以只对严格递增单形所给的基规定 $j$，再线性延拓。这里保留原文表述。}
+
+\egapar{11.8.2}
+设 $B$ 为另一个有限集。若 $d',d''$ 分别为 $C_\bullet(A),C_\bullet(B)$ 的微分，则张量积复形 $C_\bullet(A)\otimes C_\bullet(B)$ 可以看成以 $\Sigma(A)\times\Sigma(B)$ 的元素为生成元的自由阿贝尔群，其微分为
+\[
+d(\sigma,\tau)=(d'\sigma,\tau)+(-1)^{h+1}(\sigma,d''\tau)
+\quad\text{若 }\operatorname{Card}|\sigma|=h+1.
+\]
+\transnote{上式及其条件按原版排印保留。以（11.8.1）的次数约定写通常张量积微分时，符号应依单形的次数而定；含重复顶点时，$\operatorname{Card}|\sigma|$ 也不能代替序列长度。}
+自然同态 $C_\bullet(A)\to L_\bullet(A)$ 与 $C_\bullet(B)\to L_\bullet(B)$ 给出同态
+\[
+p:C_\bullet(A)\otimes C_\bullet(B)\longrightarrow L_\bullet(A)\otimes L_\bullet(B),
+\]
+其右端同构于
+\[
+\frac{C_\bullet(A)\otimes C_\bullet(B)}
+{C_\bullet(A)\otimes D_\bullet(B)+D_\bullet(A)\otimes C_\bullet(B)}.
+\]
+同样，利用（11.8.1）中通过 $A,B$ 上的全序定义的同态 $L_\bullet(A)\to C_\bullet(A)$、$L_\bullet(B)\to C_\bullet(B)$，可定义同态
+\[
+j:L_\bullet(A)\otimes L_\bullet(B)\longrightarrow C_\bullet(A)\otimes C_\bullet(B),
+\]
+使 $p\circ j$ 为恒等映射。采用这些记号：
+
+\egastatement{11.8.3}{命题}
+存在同伦
+\[
+h:C_\bullet(A)\otimes C_\bullet(B)\longrightarrow C_\bullet(A)\otimes C_\bullet(B),
+\]
+使 $h(\sigma,\tau)$ 是满足 $|\sigma_i|\subset|\sigma|$、$|\tau_i|\subset|\tau|$ 的单形对 $(\sigma_i,\tau_i)$ 的线性组合，且令 $f=j\circ p$，则有
+\begin{equation}\tag{11.8.3.1}
+f-1=h\circ d+d\circ h.
+\end{equation}
+\begin{proof}
+只需按 $\sigma,\tau$ 次数之和归纳，定义每个单形对上的 $h$；次数之和为零时可取 $h=0$。令
+\[
+\omega=f(\sigma,\tau)-(\sigma,\tau)-h(d(\sigma,\tau)).
+\]
+由归纳假设及 $d$ 的定义，$\omega\in C_\bullet(|\sigma|)\otimes C_\bullet(|\tau|)$。又由（11.8.3.1）及归纳假设，
+\[
+d\omega=f(d(\sigma,\tau))-d(\sigma,\tau)-dh(d(\sigma,\tau))
+=h(d(d(\sigma,\tau)))=0.
+\]
+对于 $q>0$，有 $\mathrm H_q(C_\bullet(A))=0$（G，I，3.7.4）；故由 Künneth 公式（G，I，5.5.2），也有 $\mathrm H_q(C_\bullet(A)\otimes C_\bullet(B))=0$。将这一事实中的 $A,B$ 换成 $|\sigma|,|\tau|$，可知存在 $\omega'\in C_\bullet(|\sigma|)\otimes C_\bullet(|\tau|)$，使 $\omega=d\omega'$。取 $h(\sigma,\tau)=\omega'$，即对该单形对满足（11.8.3.1），从而归纳可以继续。
+\end{proof}
+
+\egapar{11.8.4}
+采用（11.8.2）的记号，若 $|\sigma|\subset|\sigma'|$、$|\tau|\subset|\tau'|$，就置 $(\sigma,\tau)\leq(\sigma',\tau')$。$\Sigma(A)\times\Sigma(B)$ 上的一个\textbf{系数系统} $\SSS$ 由阿贝尔群族 $(\Gamma_{\sigma,\tau})$ 及对 $(\sigma,\tau)\leq(\sigma',\tau')$ 给定的同态 $\Gamma_{\sigma,\tau}\to\Gamma_{\sigma',\tau'}$ 组成；其中 $\Gamma_{\sigma,\tau}$ 只依赖集合 $|\sigma|,|\tau|$，且这些同态对于上述预序构成归纳系统。
+
+定义上链复形 $C^\bullet(A,B;\SSS)$ 为各族 $\lambda=(\lambda(\sigma,\tau))$ 所成的复形，其中 $(\sigma,\tau)$ 遍历 $\Sigma(A)\times\Sigma(B)$，且 $\lambda(\sigma,\tau)\in\Gamma_{\sigma,\tau}$。微分如下给出：若 $d(\sigma,\tau)=\sum_i\pm(\sigma_i,\tau_i)$，则对每个 $i$，有 $|\sigma_i|\subset|\sigma|$、$|\tau_i|\subset|\tau|$，并令
+\[
+d\lambda(\sigma,\tau)=\sum_i\pm\lambda(\sigma_i,\tau_i),
+\]
+右端的各项表示它们在 $\Gamma_{\sigma,\tau}$ 中的典范像。
+
+若上链 $\lambda\in C^\bullet(A,B;\SSS)$ 满足：当 $\sigma,\tau$ 中任一单形有两项相等时 $\lambda(\sigma,\tau)=0$，并且对任意下标置换 $\pi,\pi'$，有
+\[
+\lambda(\pi(\sigma),\tau)=\varepsilon_\pi\lambda(\sigma,\tau),\qquad
+\lambda(\sigma,\pi'(\tau))=\varepsilon_{\pi'}\lambda(\sigma,\tau),
+\]
+\begin{sloppypar}
+则称它为\textbf{双交错上链}。显然这些上链构成 $C^\bullet(A,B;\SSS)$ 的子复形 $L^\bullet(A,B;\SSS)$。
+\end{sloppypar}
+
+
+\egastatement{11.8.5}{命题}
+典范嵌入 $L^\bullet(A,B;\SSS)\to C^\bullet(A,B;\SSS)$ 在这两个复形的上同调之间给出同构。
+\begin{proof}
+若 $p,j$ 取（11.8.2）中的意义，则映射 ${}^tp:\lambda\mapsto\lambda\circ p$、${}^tj:\lambda\mapsto\lambda\circ j$ 分别在 $L^\bullet(A,B;\SSS)$ 与 $C^\bullet(A,B;\SSS)$ 上有定义；前一个就是典范嵌入。由于 ${}^tj\circ{}^tp$ 为恒等映射，只需证明 ${}^tp\circ{}^tj$ 与恒等映射同伦。由（11.8.3），${}^th:\lambda\mapsto\lambda\circ h$ 在 $C^\bullet(A,B;\SSS)$ 中有定义，故可转置恒等式（11.8.3.1），得到所需结果。
+\end{proof}
+
+\egapar{11.8.6}
+命题（11.8.5）将 $L^\bullet(A,B;\SSS)$ 的上同调计算归结为 $C^\bullet(A,B;\SSS)$ 的上同调计算。另一方面，回顾 Eilenberg--Zilber 定理（G，I，3.10.2）：后一个上同调典范地同构于如下定义的上链复形的上同调。构造链复形 $P_\bullet(A,B)$，其元素是满足 $\sigma,\tau$ 次数相同的 $(\sigma,\tau)\in\Sigma(A)\times\Sigma(B)$ 的线性组合。其微分给为
+\[
+\begin{gathered}
+d:(\sigma,\tau)\longmapsto\sum_{j,k}(-1)^{j+k}(\sigma_j,\tau_k),\\
+\text{其中 }d\sigma=\sum_j(-1)^j\sigma_j,\quad d\tau=\sum_k(-1)^k\tau_k.
+\end{gathered}
+\]
+\transnote{此处双重求和公式照录原版；按通常的对角单纯复形构造，应同步取两因子的第 $i$ 个面并以 $(-1)^i$ 求和。原版后面的上链公式亦采用上述双重求和，译文同样保留而不静默改写。}
+于是有两个典范复形同态
+\[
+f:P_\bullet(A,B)\to C_\bullet(A)\otimes C_\bullet(B),\qquad
+g:C_\bullet(A)\otimes C_\bullet(B)\to P_\bullet(A,B),
+\]
+并可证明（同上）存在同伦 $h,h'$，使
+\[
+f\circ g-1=d\circ h+h\circ d,\qquad
+g\circ f-1=d\circ h'+h'\circ d.
+\]
+此外，$f(\sigma,\tau)\in C_\bullet(|\sigma|)\otimes C_\bullet(|\tau|)$、$g(\sigma,\tau)\in P_\bullet(|\sigma|,|\tau|)$；同伦还可选为满足
+\[
+h(\sigma,\tau)\in C_\bullet(|\sigma|)\otimes C_\bullet(|\tau|),\qquad
+h'(\sigma,\tau)\in P_\bullet(|\sigma|,|\tau|).
+\]
+这是因为 $h(\sigma,\tau)$、$h'(\sigma,\tau)$ 可以按次数之和归纳定义，并且 $q>0$ 时 $\mathrm H_q(C_\bullet(|\sigma|)\otimes C_\bullet(|\tau|))$ 与 $\mathrm H_q(P_\bullet(|\sigma|,|\tau|))$ 都为零（同上）；像（11.8.3）那样论证即可。
+
+定义 $P^\bullet(A,B;\SSS)$ 为各族 $\lambda=(\lambda(\sigma,\tau))$ 所成的复形，其中 $(\sigma,\tau)$ 遍历次数相同的单形对，且 $\lambda(\sigma,\tau)\in\Gamma_{\sigma,\tau}$。由于
+\[
+d\sigma=\sum_j(-1)^j\sigma_j\in C_\bullet(|\sigma|),\qquad
+d\tau=\sum_k(-1)^k\tau_k\in C_\bullet(|\tau|),
+\]
+故
+\[
+d\lambda(\sigma,\tau)=\sum_{j,k}(-1)^{j+k}\lambda(\sigma_j,\tau_k)
+\]
+有定义，并给出 $P^\bullet(A,B;\SSS)$ 的微分。由上述说明，${}^tf:\lambda\mapsto\lambda\circ f$、${}^tg:\lambda\mapsto\lambda\circ g$、${}^th:\lambda\mapsto\lambda\circ h$、${}^th':\lambda\mapsto\lambda\circ h'$ 均有定义；因此 ${}^tf\circ{}^tg$、${}^tg\circ{}^tf$ 都与恒等映射同伦。这就得到 $C^\bullet(A,B;\SSS)$ 与 $P^\bullet(A,B;\SSS)$ 的上同调之间所需的同构。
+
+\egastatement{11.8.7}{注}
+将（11.8.3）的同一论证应用于 $C_\bullet(A),L_\bullet(A)$，可知：若 $j,p$ 按（11.8.1）定义，则 $f=j\circ p$ 仍满足（11.8.3.1）型关系，其中 $|h(\sigma)|\subset|\sigma|$。像（11.8.5）那样，可由此得到 $L^\bullet(A;\SSS)$ 到 $C^\bullet(A;\SSS)$ 的上同调同构；这两个复形以显然的方式定义。这就是（G，I，3.8.1）中概述证明的结果。
+
+\egapar{11.8.8}
+再采用（11.8.2）的记号与假设，考虑 $\Sigma(A)\times\Sigma(B)$ 上系数系统的复形 $\SSS^\bullet=(\SSS^k)$。对每个 $(\sigma,\tau)$，$\Gamma^k_{\sigma,\tau}$（$k\in\Z$）构成阿贝尔群复形；当 $(\sigma,\tau)\leq(\sigma',\tau')$ 时，有交换图
+\[
+\begin{tikzcd}
+\Gamma^k_{\sigma,\tau}\arrow[r]\arrow[d]&\Gamma^{k+1}_{\sigma,\tau}\arrow[d]\\
+\Gamma^k_{\sigma',\tau'}\arrow[r]&\Gamma^{k+1}_{\sigma',\tau'}.
+\end{tikzcd}
+\]
+立即可验证
+\[
+C^\bullet(A,B;\SSS^\bullet)=(C^h(A,B;\SSS^k))_{(h,k)\in\Z^2}
+\]
+是阿贝尔群双复形，且 $L^\bullet(A,B;\SSS^\bullet)=(L^h(A,B;\SSS^k))$ 是其子双复形。
+
+\egastatement{11.8.9}{命题}
+典范嵌入 $L^\bullet(A,B;\SSS^\bullet)\to C^\bullet(A,B;\SSS^\bullet)$ 在两个双复形的上同调之间给出同构。
+\begin{proof}
+简记 $C^{\bullet\bullet}=C^\bullet(A,B;\SSS^\bullet)$、$L^{\bullet\bullet}=L^\bullet(A,B;\SSS^\bullet)$。由于 $h<0$ 时 $C^{hk}=L^{hk}=0$，两个双复形的第二谱序列正则（11.3.3）；同态 $L^{\bullet\bullet}\to C^{\bullet\bullet}$ 因而给出谱序列态射 ${}''E(L^{\bullet\bullet})\to{}''E(C^{\bullet\bullet})$，其在 $E_2$ 项上为
+\begin{equation}\tag{11.8.9.1}
+\mathrm H_{\mathrm{II}}^p(\mathrm H_{\mathrm I}^q(L^{\bullet\bullet}))
+\longrightarrow\mathrm H_{\mathrm{II}}^p(\mathrm H_{\mathrm I}^q(C^{\bullet\bullet})).
+\end{equation}
+对每个 $k\in\Z$，（11.8.3）说明同态 $\mathrm H^q(L^{\bullet k})\to\mathrm H^q(C^{\bullet k})$ 为双射；故结论由（11.1.5）得出。
+\end{proof}
+
+\egapar{11.8.10}
+同样，采用（11.8.6）的记号，有典范双复形同态 $C^\bullet(A,B;\SSS^\bullet)\to P^\bullet(A,B;\SSS^\bullet)$（记号的含义是显然的）；将（11.8.9）的同一论证改为以（11.8.6）为基础，便知此同态仍在上同调上给出同构。
+
+\subsection{关于有限型复形的一个引理}
+\src{46--48}
+\egastatement{11.9.1}{命题}
+设 $C$ 为阿贝尔范畴，$K',K''$ 为其对象集合的子集，$K''\subset K'$，并满足：
+\begin{enumerate}[label=(\roman*)]
+\item 对每个对象 $A'\in K'$ 及每个满态射 $u:A\to A'$，存在对象 $B\in K''$ 和态射 $v:B\to A$，使 $uv$ 为满态射。
+\item 对每对对象 $A\in K''$、$B\in K'$ 及每个满态射 $u:A\to B$，$\Ker u$ 属于 $K'$。
+\item 两个 $K''$ 中对象的积仍属于 $K''$。
+\end{enumerate}
+设 $P_\bullet=(P_i)_{i\in\Z}$ 为 $C$ 的复形，对每个 $i$ 都有 $\mathrm H_i(P_\bullet)\in K'$，并存在 $d$ 使 $i<d$ 时 $\mathrm H_i(P_\bullet)=0$。则存在 $C$ 的复形 $Q_\bullet=(Q_i)$ 及复形态射 $u:Q_\bullet\to P_\bullet$，使每个 $Q_i\in K''$，$i<d$ 时 $Q_i=0$，且相应的态射 $\mathrm H_\bullet(Q_\bullet)\to\mathrm H_\bullet(P_\bullet)$ 为同构。
+\begin{proof}
+先证明性质（i）的下述推论。
+
+（i bis）设 $u:C\to B$ 为 $C$ 中的满态射，$A\in K'$，$v:A\to B$ 为态射。则存在对象 $D\in K''$、满态射 $u':D\to A$ 及态射 $v':D\to C$，使图
+\begin{equation}\tag{11.9.1.1}
+\begin{tikzcd}
+D\arrow[r,"u'"]\arrow[d,"v'"']&A\arrow[d,"v"]\\
+C\arrow[r,"u"']&B
+\end{tikzcd}
+\end{equation}
+交换。
+
+事实上，考虑 $C$ 中的纤维积 $C\times_B A$ 及典范投影 $p:C\times_B A\to C$、$q:C\times_B A\to A$，给出交换图
+\begin{equation}\tag{11.9.1.2}
+\begin{tikzcd}
+C\times_B A\arrow[r,"q"]\arrow[d,"p"']&A\arrow[d,"v"]\\
+C\arrow[r,"u"']&B.
+\end{tikzcd}
+\end{equation}
+已知 $q$ 的余核为 $A/v^{-1}(u(C))$（[27]，第1--12页）。由于 $u$ 满，$u(C)=B$、$v^{-1}(u(C))=A$，故 $q$ 为满态射。将（i）应用于 $q$，可得 $D\in K''$ 及 $w:D\to C\times_B A$，使 $qw$ 满；取 $u'=qw$、$v'=pw$ 即可。
+
+现在归纳证明命题。对某个 $i\geq d-1$，设已对 $j\leq i$ 构造了对象 $Q_j$、态射 $d_j:Q_j\to Q_{j-1}$ 及 $u_j:Q_j\to P_j$，满足 $j<d$ 时 $Q_j=0$，且对 $j\leq i$，有 $d_{j-1}d_j=0$、$d'_ju_j=u_{j-1}d_j$。另假设以下条件成立：
+
+$(\mathrm I_i)$：$j\leq i$ 时 $Q_j\in K''$，$j<i$ 时 $\mathrm B_j(Q_\bullet)\in K'$。
+
+$(\mathrm{II}_i)$：$j<i$ 时，族 $(u_k)_{k\leq i}$ 给出的同态 $\mathrm H_j(Q_\bullet)\to\mathrm H_j(P_\bullet)$ 为同构。
+
+$(\mathrm{III}_i)$：复合态射
+\[
+v_i:\mathrm Z_i(Q_\bullet)\longrightarrow\mathrm Z_i(P_\bullet)
+\longrightarrow\mathrm H_i(P_\bullet)
+\]
+为满态射；这里第一箭头是 $u_i$ 的限制，第二箭头是典范态射。
+
+由（ii）及 $(\mathrm I_i)$，满态射 $Q_i\to\mathrm B_{i-1}(Q_\bullet)$ 的核 $\mathrm Z_i(Q_\bullet)$ 属于 $K'$。再由（ii）及 $(\mathrm{III}_i)$，$N_i=\Ker v_i$ 也属于 $K'$。\transnote{此句按原文保留；（ii）只对来源对象属于 $K''$ 的满态射作出保证，而上句只得到 $\mathrm Z_i(Q_\bullet)\in K'$。一般表述下这一引用需要补充论证或相应的核稳定性假设。}
+由（i bis），存在 $Q'_{i+1}\in K''$、满态射 $d'_{i+1}:Q'_{i+1}\to N_i$ 和态射 $u'_{i+1}:Q'_{i+1}\to P_{i+1}$，使图
+\begin{equation}\tag{11.9.1.3}
+\begin{tikzcd}
+Q'_{i+1}\arrow[r,"d'_{i+1}"]\arrow[d,"u'_{i+1}"']&N_i\arrow[d,"u_i"]\\
+P_{i+1}\arrow[r,"d'_{i+1}"']&\mathrm B_i(P_\bullet)
+\end{tikzcd}
+\end{equation}
+交换。\transnote{原文在微分及新构造映射上重复使用带撇号的 $d$；此图保留原记号，箭头的定义域和值域可区分它们。}
+
+典范态射 $\mathrm Z_{i+1}(P_\bullet)\to\mathrm H_{i+1}(P_\bullet)$ 为满态射，而 $\mathrm H_{i+1}(P_\bullet)\in K'$，故由（i），存在 $Q''_{i+1}\in K''$ 及态射 $u''_{i+1}:Q''_{i+1}\to\mathrm Z_{i+1}(P_\bullet)$，使复合态射到 $\mathrm H_{i+1}(P_\bullet)$ 为满态射。取 $d''_{i+1}:Q''_{i+1}\to N_i$ 为零，则图
+\begin{equation}\tag{11.9.1.4}
+\begin{tikzcd}
+Q''_{i+1}\arrow[r,"d''_{i+1}"]\arrow[d,"u''_{i+1}"']&N_i\arrow[d,"u_i"]\\
+\mathrm Z_{i+1}(P_\bullet)\arrow[r,"d'_{i+1}"']&P_i
+\end{tikzcd}
+\end{equation}
+交换，其中下面的水平箭头为零。
+
+取 $Q_{i+1}=Q'_{i+1}\times Q''_{i+1}$，由（iii）它属于 $K''$；置 $d_{i+1}=d'_{i+1}+d''_{i+1}$、$u_{i+1}=u'_{i+1}+u''_{i+1}$。由于 $d_{i+1}(Q_{i+1})=d'_{i+1}(Q'_{i+1})=N_i\subset\mathrm Z_i(Q_\bullet)$，有 $d_id_{i+1}=0$，并按通常记号有 $\mathrm B_i(Q_\bullet)=N_i$，这就验证了 $(\mathrm I_{i+1})$。两个图的交换性给出 $d'_{i+1}u_{i+1}=u_id_{i+1}$。
+
+由 $N_i$ 的定义，族 $(u_k)_{k\leq i+1}$ 给出的态射
+\[
+\mathrm H_i(Q_\bullet)=\mathrm Z_i(Q_\bullet)/N_i\longrightarrow\mathrm H_i(P_\bullet)
+\]
+正是 $v_i$ 经商得到的态射；由于 $v_i$ 满，它为同构，故 $(\mathrm{II}_{i+1})$ 成立。最后，按定义 $Q''_{i+1}\subset\mathrm Z_{i+1}(Q_\bullet)$；$u''_{i+1}$ 的选择说明态射
+\[
+v_{i+1}:\mathrm Z_{i+1}(Q_\bullet)\to\mathrm Z_{i+1}(P_\bullet)\to\mathrm H_{i+1}(P_\bullet)
+\]
+为满态射，因为其在 $Q''_{i+1}$ 上的限制已是满态射。这验证了 $(\mathrm{III}_{i+1})$；归纳可以继续，命题得证。
+\end{proof}
+
+\egastatement{11.9.2}{推论}
+设 $A$ 为不必交换的诺特环，$P_\bullet=(P_i)_{i\in\Z}$ 为右 $A$-模复形。假设各 $\mathrm H_i(P_\bullet)$ 是有限型 $A$-模，并存在 $d$ 使 $i<d$ 时 $\mathrm H_i(P_\bullet)=0$。则存在由有限秩自由右 $A$-模组成的复形 $Q_\bullet=(Q_i)$ 及复形同态 $u:Q_\bullet\to P_\bullet$，使 $i<d$ 时 $Q_i=0$，且相应的同调同态 $\mathrm H_\bullet(Q_\bullet)\to\mathrm H_\bullet(P_\bullet)$ 为双射。
+\begin{proof}
+在（11.9.1）中取 $C$ 为右 $A$-模范畴，$K'$ 为有限型 $A$-模的集合，$K''$ 为有限秩自由 $A$-模的集合。由 $A$ 诺特，（i）、（ii）、（iii）的验证是直接的。
+\end{proof}
+
+\egastatement{11.9.3}{注}
+（i）在（11.9.2）的条件下，再假设各 $P_i$ 为平坦右 $A$-模。则对每个左 $A$-模 $M$，复形同态 $u\otimes1:Q_\bullet\otimes_A M\to P_\bullet\otimes_A M$ 仍给出同调同构
+\[
+\mathrm H_\bullet(Q_\bullet\otimes_A M)\simeq\mathrm H_\bullet(P_\bullet\otimes_A M),
+\]
+这一点将在第 III 章中证明。
+
+（ii）若不假设 $A$ 诺特，（11.9.2）的结论未必正确。事实上，将它应用于除一个项外其余均为零的复形，就会推出每个有限型左 $A$-模都有由有限型自由模组成的解消；一般并非如此（见 Bourbaki，《交换代数》，第 I 章，§2，习题6）。不过，可以把 $A$ 诺特的假设换成较弱的假设：各 $\mathrm H_i(P_\bullet)$ 都具有有限 $\infty$-表现（见第 IV 章）。
+
+\subsection{有限长度模复形的 Euler--Poincaré 示性数}
+\src{48--49}
+\egapar{11.10.1}
+设 $A$ 为不必交换的环，
+\begin{equation}\tag{11.10.1.1}
+M^\bullet:0\longrightarrow M^0\longrightarrow M^1\longrightarrow\cdots\longrightarrow M^n\longrightarrow0
+\end{equation}
+为有限长度左 $A$-模组成的复形。此复形的\textbf{Euler--Poincaré 示性数}定义为数
+\begin{equation}\tag{11.10.1.2}
+\chi(M^\bullet)=\sum_{i=0}^n(-1)^i\len M^i.
+\end{equation}
+
+\egastatement{11.10.2}{命题}
+对每个由有限长度左 $A$-模组成的有限复形 $M^\bullet$，有
+\[
+\chi(M^\bullet)=\chi(\mathrm H^\bullet(M^\bullet)),
+\]
+其中把 $\mathrm H^\bullet(M^\bullet)$ 看成微分为零的复形。特别地，若（11.10.1.1）正合，则 $\chi(M^\bullet)=0$。
+\begin{proof}
+简记 $B^i=\mathrm B^i(M^\bullet)$、$Z^i=\mathrm Z^i(M^\bullet)$、$H^i=\mathrm H^i(M^\bullet)=Z^i/B^i$；它们都是有限长度模。由正合列
+\[
+0\to B^i\to Z^i\to H^i\to0,\qquad
+0\to Z^i\to M^i\to B^{i+1}\to0
+\]
+可得
+\[
+\len Z^i=\len H^i+\len B^i,\qquad
+\len M^i=\len Z^i+\len B^{i+1},
+\]
+故
+\[
+\len M^i-\len H^i=\len B^{i+1}+\len B^i.
+\]
+将这一关系乘以 $(-1)^i$，再对 $0\leq i\leq n$ 求和，注意 $B^0=B^{n+1}=0$，即得所需等式。
+\end{proof}
+
+\egastatement{11.10.3}{推论}
+设 $E=(E_r^{pq})$ 为环 $A$ 上模范畴中的谱序列。假设各 $E_2^{pq}$ 为有限长度 $A$-模，且只有有限多个 $(p,q)$ 满足 $E_2^{pq}\ne0$。则所有复形 $E_r^\bullet=(E_r^n)_{n\in\Z}$（11.1.1）的 Euler--Poincaré 示性数 $\chi(E_r^\bullet)$ 都相等。若再假设 $E$ 弱收敛，并对每个 $n\in\Z$ 置 $E_\infty^n=\bigoplus_{p+q=n}E_\infty^{pq}$，则还有 $\chi(E_r^\bullet)=\chi(E_\infty^\bullet)$，其中 $E_\infty^\bullet=(E_\infty^n)_{n\in\Z}$ 看成微分为零的复形。
+\begin{proof}
+若 $E_2^{pq}=0$，则 $2\leq r<+\infty$ 时 $E_r^{pq}=0$；因此所有 $E_r^\bullet$ 都是由有限长度 $A$-模组成的有限复形。对于有限的 $r$，关系 $\chi(E_r^\bullet)=\chi(E_{r+1}^\bullet)$ 由（11.10.2）及 $\mathrm H^\bullet(E_r^\bullet)$ 与 $E_{r+1}^\bullet$ 的同构（看成微分为零的复形）得出。各 $E_2^{pq}$ 的有限长度性保证对每对 $(p,q)$，序列 $(\mathrm B_k(E_2^{pq}))_k$ 与 $(\mathrm Z_k(E_2^{pq}))_k$ 都稳定；再由弱收敛性及只有有限多个非零 $E_2^{pq}$，可知存在 $r\geq2$，使对每对 $(p,q)$ 均有 $E_r^{pq}=E_\infty^{pq}$。这就证明了关于 $\chi(E_\infty^\bullet)$ 的断言。
+\end{proof}\par
+
+% ---- END c0_s11d.tex ----
+% ---- BEGIN c0_s12a.tex ----
+\section{层上同调的补充知识}
+\subsection{赋环空间上模层的上同调}
+\src{49--57}
+\egapar{12.1.1}
+设 $(X,\OO_X)$ 为赋环空间。回顾：对每个 $\OO_X$-模 $\F$，定义了上同调 $\mathrm H^\bullet(X,\F)$；这是从 $\OO_X$-模范畴 $C(X)$ 到阿贝尔群范畴的泛上同调函子（T，2.2），亦即左正合函子 $\F\mapsto\Gamma(X,\F)$ 的导出函子。函子 $\mathrm H^\bullet(X,\F)$ 同构于在 $X$ 上阿贝尔群层范畴中以同样方式定义的上同调函子在 $C(X)$ 上的限制（G，II，7.2.1）。
+
+\egapar{12.1.2}
+置 $A=\Gamma(X,\OO_X)$。由于 $A$ 的每个元素都定义阿贝尔群 $\Gamma(X,\F)$ 的一个自同态，由函子性，它也定义 $\mathrm H^\bullet(X,\F)$ 的一个 $\partial$-函子自同态；这些自同态在每个 $\mathrm H^p(X,\F)$ 上定义 $A$-模结构，且算子 $\partial$ 是 $A$-线性的。此外，对任意两个非负整数 $p,q$ 及两个 $\OO_X$-模 $\F,\G$，有称为\textbf{杯积}的 $A$-模同态
+\begin{equation}\tag{12.1.2.1}
+\mathrm H^p(X,\F)\otimes_A\mathrm H^q(X,\G)
+\longrightarrow\mathrm H^{p+q}(X,\F\otimes_{\OO_X}\G)
+\end{equation}
+（G，II，6.6）。这些同态使 $S=\bigoplus_{p\geq0}\mathrm H^p(X,\OO_X)$ 成为反交换分次 $A$-代数，并使 $\bigoplus_{p\geq0}\mathrm H^p(X,\F)$ 成为分次 $S$-模。
+
+对 $X$ 的任意开覆盖 $\mathfrak U$，我们总用 $C^\bullet(\mathfrak U,\F)$ 表示其神经在系数系统 $\Gamma(U_\sigma,\F)$ 中取值的\emph{交错上链}复形（这一约定与（G，II，5.1）不同）。显然它是分次 $A$-模，因而它的上同调群 $\mathrm H^p(\mathfrak U,\F)$ 都具有 $A$-模结构；此外，典范映射 $\mathrm H^p(\mathfrak U,\F)\to\mathrm H^p(X,\F)$（G，II，5.4）都是 $A$-线性的。
+
+\egapar{12.1.3}
+设 $(X',\OO_{X'})$ 为第二个赋环空间，$f=(\psi,\theta):X'\to X$ 为态射。置 $A'=\Gamma(X',\OO_{X'})$；$\psi$-态射 $\theta$ 典范地定义环同态 $A\to A'$。设 $\F$ 为 $\OO_X$-模，$\F'$ 为 $\OO_{X'}$-模。对每个 $f$-态射 $u:\F\to\F'$（$\OI$，4.4.1），将证明：对每个 $p\geq0$，可定义双同态
+\begin{equation}\tag{12.1.3.1}
+u_p:\mathrm H^p(X,\F)\longrightarrow\mathrm H^p(X',\F').
+\end{equation}
+事实上，由于 $\psi^*$ 在 $X$ 上阿贝尔群层范畴中正合，$\F\mapsto\mathrm H^\bullet(X',\psi^*\F)$ 是该范畴上的 $\partial$-函子；已知有典范的 $\partial$-函子同态
+\begin{equation}\tag{12.1.3.2}
+\mathrm H^\bullet(X,\F)\longrightarrow\mathrm H^\bullet(X',\psi^*\F),
+\end{equation}
+它由在零次上等于典范同态 $\Gamma(X,\F)\to\Gamma(X',\psi^*\F)$ 的条件唯一确定（T，3.2.2）。此外，$A$ 的每个元素都确定 $\Gamma(X,\F)$ 的自同态 $\mu$ 及 $\Gamma(X',\psi^*\F)$ 的自同态 $\mu'$，使图
+\begin{equation}\tag{12.1.3.3}
+\begin{tikzcd}
+\Gamma(X,\F)\arrow[r]\arrow[d,"\mu"']&\Gamma(X',\psi^*\F)\arrow[d,"\mu'"]\\
+\Gamma(X,\F)\arrow[r]&\Gamma(X',\psi^*\F)
+\end{tikzcd}
+\end{equation}
+交换。由泛上同调函子态射延拓的唯一性（T，2.2），$\mu,\mu'$ 唯一延拓到上同调，并使类似于（12.1.3.3）的图交换；这意味着（12.1.3.2）是 $A$-模同态。
+
+再注意 $f^*\F=\psi^*\F\otimes_{\psi^*\OO_X}\OO_{X'}$，故有从 $\psi^*\OO_X$-模 $\psi^*\F$ 到 $\OO_{X'}$-模 $f^*\F$ 的典范双同态。由函子性，可得函子性双同态
+\begin{equation}\tag{12.1.3.4}
+\mathrm H^p(X',\psi^*\F)\longrightarrow\mathrm H^p(X',f^*\F),
+\end{equation}
+相应的环为 $A,A'$。将它与（12.1.3.2）复合，得到对 $\F$ 具有函子性的典范双同态
+\begin{equation}\tag{12.1.3.5}
+\theta_p:\mathrm H^p(X,\F)\longrightarrow\mathrm H^p(X',f^*\F).
+\end{equation}
+最后，由 $u^\sharp:f^*\F\to\F'$ 的函子性，得到 $A'$-模同态 $\mathrm H^p(X',f^*\F)\to\mathrm H^p(X',\F')$；与（12.1.3.5）复合即得（12.1.3.1）。
+
+设 $f'=(\psi',\theta'):X''\to X'$ 为第二个赋环空间态射，$f''=f\circ f'$。利用 $\psi'^*$ 与张量积的可交换性（$\OI$，4.3.3），立即可验证：将双同态 $\mathrm H^p(X',f^*\F)\to\mathrm H^p(X'',f'^*(f^*\F))$ 与（12.1.3.5）复合，所得就是相应的双同态 $\mathrm H^p(X,\F)\to\mathrm H^p(X'',f''^*\F)$。
+
+\egapar{12.1.4}
+（12.1.3.2）还可以直接定义如下。取 $\F$ 在 $X$ 上阿贝尔群层范畴中的内射解消 $\LL^\bullet=(\LL^i)$；由于 $\psi^*$ 正合，$\psi^*(\LL^\bullet)$ 是 $\psi^*\F$ 的一个层解消。若 $\LL'^\bullet=(\LL'^i)$ 是 $\psi^*\F$ 在 $X'$ 上阿贝尔群层范畴中的内射解消，则存在与增广相容的阿贝尔群层复形态射 $\psi^*(\LL^\bullet)\to\LL'^\bullet$（M，V，1.1 a）），它在同伦意义下唯一确定。于是有阿贝尔群复形同态
+\[
+\Gamma(X,\LL^\bullet)\longrightarrow\Gamma(X',\psi^*\LL^\bullet)
+\longrightarrow\Gamma(X',\LL'^\bullet).
+\]
+其复合在上同调上给出 $\partial$-函子态射 $\mathrm H^\bullet(X,\F)\to\mathrm H^\bullet(X',\psi^*\F)$；由于在零次上与（12.1.3.2）一致，它就是该同态（T，2.2）。
+
+考虑 $X$ 的开覆盖 $\mathfrak U=(U_\alpha)$，及其逆像覆盖 $\mathfrak U'=(f^{-1}(U_\alpha))$。对 $X$ 的各开集 $V$，典范同态 $\Gamma(V,\F)\to\Gamma(f^{-1}(V),f^*\F)$ 立即定义复形同态（G，II，5.1）
+\[
+C^\bullet(\mathfrak U,\F)\longrightarrow C^\bullet(\mathfrak U',f^*\F),
+\]
+故得到典范同态
+\begin{equation}\tag{12.1.4.1}
+\theta'_p:\mathrm H^p(\mathfrak U,\F)\longrightarrow\mathrm H^p(\mathfrak U',f^*\F).
+\end{equation}
+并且有交换图
+\begin{equation}\tag{12.1.4.2}
+\begin{tikzcd}
+\mathrm H^p(\mathfrak U,\F)\arrow[r,"\theta'_p"]\arrow[d]&\mathrm H^p(\mathfrak U',f^*\F)\arrow[d]\\
+\mathrm H^p(X,\F)\arrow[r,"\theta_p"']&\mathrm H^p(X',f^*\F),
+\end{tikzcd}
+\end{equation}
+竖直箭头为（G，II，5.2）的典范同态。
+
+为证明交换性，考虑 $\F$ 相对于 $\mathfrak U$ 的交错上链层复形 $\C^\bullet(\mathfrak U,\F)$，满足
+\[
+\Gamma(X,\C^\bullet(\mathfrak U,\F))=C^\bullet(\mathfrak U,\F)
+\]
+（G，II，5.2）。典范同态 $\Gamma(V,\F)\to\Gamma(f^{-1}(V),\psi^*\F)$ 定义一个 $\psi$-态射
+\[
+\C^\bullet(\mathfrak U,\F)\longrightarrow\C^\bullet(\mathfrak U',\psi^*\F).
+\]
+采用上述记号，有交换图
+\[
+\begin{tikzcd}[column sep=small]
+\Gamma(X,\C^\bullet(\mathfrak U,\F))\arrow[r]\arrow[d]&\Gamma(X',\C^\bullet(\mathfrak U',\psi^*\F))\arrow[d]&{}\\
+\Gamma(X,\LL^\bullet)\arrow[r]&\Gamma(X',\psi^*\LL^\bullet)\arrow[r]&\Gamma(X',\LL'^\bullet).
+\end{tikzcd}
+\]
+在上同调上得到交换图
+\[
+\begin{tikzcd}
+\mathrm H^p(\mathfrak U,\F)\arrow[r]\arrow[d]&\mathrm H^p(\mathfrak U',\psi^*\F)\arrow[d]\\
+\mathrm H^p(X,\F)\arrow[r]&\mathrm H^p(X',\psi^*\F),
+\end{tikzcd}
+\]
+其中竖直箭头仍为（G，II，5.2）的典范同态。将它与交换图
+\[
+\begin{tikzcd}
+\mathrm H^p(\mathfrak U',\psi^*\F)\arrow[r]\arrow[d]&\mathrm H^p(\mathfrak U',f^*\F)\arrow[d]\\
+\mathrm H^p(X',\psi^*\F)\arrow[r]&\mathrm H^p(X',f^*\F)
+\end{tikzcd}
+\]
+组合即可；后者由同态 $\psi^*\F\to f^*\F$ 及（G，II，5.2）的典范同态的函子性得出。
+
+注意，若 $A=\Gamma(X,\OO_X)$、$A'=\Gamma(X',\OO_{X'})$，则同态（12.1.4.3）是与环 $A,A'$ 相应的模的双同态。\transnote{此处原文引为（12.1.4.3），但本条列出的编号只有（12.1.4.1）、（12.1.4.2）；所指同态依上下文应为（12.1.4.1）。}对两个态射的复合，（12.1.4.1）也有类似于（12.1.3.5）的传递性。最后，在上述定义中，也可以不用内射解消 $\LL^\bullet$，而从满足对每个 $i$ 及 $p>0$ 都有 $\mathrm H^p(X,\LL^i)=0$ 的解消出发（G，II，4.7.1）。
+
+\egapar{12.1.5}
+设 $\F,\G,\K$ 为三个 $\OO_X$-模，并考虑 $\OO_X$-同态 $u:\F\otimes_{\OO_X}\G\to\K$。由杯积（12.1.2.1），它在上同调上给出同态
+\begin{equation}\tag{12.1.5.1}
+\mathrm H^p(X,\F)\otimes_A\mathrm H^q(X,\G)
+\longrightarrow\mathrm H^{p+q}(X,\K).
+\end{equation}
+将证明，在（12.1.3）的假设及记号下，有交换图
+\begin{equation}\tag{12.1.5.2}
+\begin{tikzcd}[column sep=small]
+\mathrm H^p(X,\F)\otimes_A\mathrm H^q(X,\G)\arrow[r]\arrow[d]&\mathrm H^{p+q}(X,\K)\arrow[d]\\
+\mathrm H^p(X',f^*\F)\otimes_{A'}\mathrm H^q(X',f^*\G)\arrow[r]&\mathrm H^{p+q}(X',f^*\K),
+\end{tikzcd}
+\end{equation}
+其中竖直箭头来自典范同态（12.1.3.5）。
+
+为此，回顾（12.1.5.1）的构造：取 $\F,\G,\K$ 的典范解消（G，II，4.3）$\LL^\bullet,\M^\bullet,\N^\bullet$（它们由 $\OO_X$-模组成）；与 $u$ 相应的 $\OO_X$-模复形的线性映射 $\LL^\bullet\otimes_{\OO_X}\M^\bullet\to\N^\bullet$ 给出 $A$-模复形同态
+\[
+\Gamma(X,\LL^\bullet)\otimes_A\Gamma(X,\M^\bullet)\longrightarrow\Gamma(X,\N^\bullet).
+\]
+再经由上同调同态
+\[
+\mathrm H^p(\Gamma(X,\LL^\bullet))\otimes_A\mathrm H^q(\Gamma(X,\M^\bullet))
+\longrightarrow\mathrm H^{p+q}(\Gamma(X,\N^\bullet))
+\]
+即可（G，II，6.6）。显然有交换图
+\begin{equation}\tag{12.1.5.3}
+\begin{tikzcd}[column sep=small]
+\Gamma(X,\LL^\bullet)\otimes_A\Gamma(X,\M^\bullet)\arrow[r]\arrow[d]&\Gamma(X,\N^\bullet)\arrow[d]\\
+\Gamma(X',\psi^*\LL^\bullet)\otimes_{\Gamma(X',\psi^*\OO_X)}\Gamma(X',\psi^*\M^\bullet)\arrow[r]&\Gamma(X',\psi^*\N^\bullet).
+\end{tikzcd}
+\end{equation}
+它在上同调上给出交换图
+\begin{equation}\tag{12.1.5.4}
+\adjustbox{max width=\dimexpr\linewidth-5em\relax}{\begin{tikzcd}[column sep=small]
+\mathrm H^p(X,\F)\otimes_A\mathrm H^q(X,\G)\arrow[r]\arrow[d]&\mathrm H^{p+q}(X,\K)\arrow[d]\\
+\mathrm H^p(\Gamma(X',\psi^*\LL^\bullet))\otimes_{\Gamma(X',\psi^*\OO_X)}\mathrm H^q(\Gamma(X',\psi^*\M^\bullet))\arrow[r]&\mathrm H^{p+q}(\Gamma(X',\psi^*\N^\bullet)).
+\end{tikzcd}}
+\end{equation}
+由于 $\psi^*\LL^\bullet,\psi^*\M^\bullet,\psi^*\N^\bullet$ 分别是 $\psi^*\F,\psi^*\G,\psi^*\K$ 的解消，故有交换图（G，II，6.6.1）
+\begin{equation}\tag{12.1.5.5}
+\adjustbox{max width=\dimexpr\linewidth-5em\relax}{\begin{tikzcd}[column sep=small]
+\mathrm H^p(\Gamma(X',\psi^*\LL^\bullet))\otimes_{\Gamma(X',\psi^*\OO_X)}\mathrm H^q(\Gamma(X',\psi^*\M^\bullet))\arrow[r]\arrow[d]&\mathrm H^{p+q}(\Gamma(X',\psi^*\N^\bullet))\arrow[d]\\
+\mathrm H^p(X',\psi^*\F)\otimes_{\Gamma(X',\psi^*\OO_X)}\mathrm H^q(X',\psi^*\G)\arrow[r]&\mathrm H^{p+q}(X',\psi^*\K).
+\end{tikzcd}}
+\end{equation}
+最后，由函子性，有交换图
+\begin{equation}\tag{12.1.5.6}
+\begin{tikzcd}[column sep=small]
+\mathrm H^p(X',\psi^*\F)\otimes_{\Gamma(X',\psi^*\OO_X)}\mathrm H^q(X',\psi^*\G)\arrow[r]\arrow[d]&\mathrm H^{p+q}(X',\psi^*\K)\arrow[d]\\
+\mathrm H^p(X',f^*\F)\otimes_{A'}\mathrm H^q(X',f^*\G)\arrow[r]&\mathrm H^{p+q}(X',f^*\K).
+\end{tikzcd}
+\end{equation}
+组合（12.1.5.4）、（12.1.5.5）、（12.1.5.6）三个图，即得到所需交换图（12.1.5.2）。
+
+\egastatement{12.1.6}{注}
+采用（12.1.3）的记号，设有交换图
+\begin{equation}\tag{12.1.6.1}
+\begin{tikzcd}
+0\arrow[r]&\F\arrow[r,"r"]\arrow[d,"u"]&\G\arrow[r,"s"]\arrow[d,"v"]&\K\arrow[r]\arrow[d,"w"]&0\\
+0\arrow[r]&\F'\arrow[r,"r'"']&\G'\arrow[r,"s'"']&\K'\arrow[r]&0,
+\end{tikzcd}
+\end{equation}
+其中 $r,s$ 为 $\OO_X$-模同态，$r',s'$ 为 $\OO_{X'}$-模同态，$u,v,w$ 为 $f$-态射，各行正合。于是得到交换图
+\begin{equation}\tag{12.1.6.2}
+\begin{tikzcd}[column sep=tiny]
+\cdots\arrow[r]&\mathrm H^p(X,\F)\arrow[r]\arrow[d,"u_p"]&\mathrm H^p(X,\G)\arrow[r]\arrow[d,"v_p"]&\mathrm H^p(X,\K)\arrow[r,"\partial"]\arrow[d,"w_p"]&\mathrm H^{p+1}(X,\F)\arrow[r]\arrow[d,"u_{p+1}"]&\cdots\\
+\cdots\arrow[r]&\mathrm H^p(X',\F')\arrow[r]&\mathrm H^p(X',\G')\arrow[r]&\mathrm H^p(X',\K')\arrow[r]&\mathrm H^{p+1}(X',\F')\arrow[r]&\cdots.
+\end{tikzcd}
+\end{equation}
+事实上，（12.1.6.1）可分解为
+\[
+\begin{tikzcd}[column sep=small]
+0\arrow[r]&\F\arrow[r]\arrow[d]&\G\arrow[r]\arrow[d]&\K\arrow[r]\arrow[d]&0\\
+0\arrow[r]&\psi^*\F\arrow[r]\arrow[d]&\psi^*\G\arrow[r]\arrow[d]&\psi^*\K\arrow[r]\arrow[d]&0\\
+0\arrow[r]&\F'\arrow[r]&\G'\arrow[r]&\K'\arrow[r]&0,
+\end{tikzcd}
+\]
+其中中间一行正合（$\OI$，3.7.2）。只需利用（12.1.3.2）是 $\partial$-函子同态，以及各 $\mathrm H^p(X',\F')$ 关于 $\F'$ 构成 $\partial$-函子这两个事实即可。
+
+\egapar{12.1.7}
+采用（12.1.3）的假设及记号，现在考虑 $\F=f_*\F'=\psi_*\F'$ 的情形。将证明，（12.1.3）中定义的双同态
+\begin{equation}\tag{12.1.7.1}
+\mathrm H^p(X,f_*\F')\longrightarrow\mathrm H^p(X',\F')
+\end{equation}
+可作为复合函子 $\F'\mapsto\Gamma(X,\psi_*\F')$ 的谱序列的边缘同态得到\transnote{本段开始处原著把直像层的截面所取的空间写成 $X'$；直像 $\psi_*\F'$ 是 $X$ 上的层，故此处明确写作 $\Gamma(X,\psi_*\F')$。}（允许在 $\mathrm H^p(X',\F')$ 上复合一个自同构）（T，2.4）。
+
+按（12.1.4）的描述，可取 $\psi_*\F'$ 与 $\F'$ 的内射解消 $\LL^\bullet,\LL'^\bullet$，然后取位于典范同态 $\psi^*(\psi_*\F')\to\F'$ 之上的复形同态 $v:\psi^*\LL^\bullet\to\LL'^\bullet$。注意 $\Gamma(X',\LL'^\bullet)=\Gamma(X,\psi_*\LL'^\bullet)$，并且复合同态
+\[
+\Gamma(X,\LL^\bullet)\to\Gamma(X',\psi^*\LL^\bullet)\to\Gamma(X',\LL'^\bullet)
+\]
+就是
+\begin{equation}\tag{12.1.7.2}
+\Gamma(v^\flat):\Gamma(X,\LL^\bullet)\longrightarrow\Gamma(X,\psi_*\LL'^\bullet)
+\end{equation}
+（$\OI$，3.7.1）；（12.1.7.1）由它取上同调而得。
+
+另一方面，取复形 $\psi_*\LL'^\bullet$ 在 $X$ 上阿贝尔群层范畴中的内射 Cartan--Eilenberg 解消 $\M^{\bullet\bullet}=(\M^{ij})$。复合函子的谱序列就是双复形 $\Gamma(X,\M^{\bullet\bullet})$ 的谱序列；由于 $i<0$ 或 $j<0$ 时 $\M^{ij}=0$，它们双正则。其中第一个谱序列退化：因为各 $\psi_*\LL'^i$ 是松弛层（G，II，3.1.1），故
+\[
+\mathrm H^q(\Gamma(X,\M^{i\bullet}))
+\simeq\mathrm H^q(X,\psi_*\LL'^i)=0\qquad(q>0)
+\]
+（G，II，4.4.3）。于是有双射的边缘同态（11.1.6）
+\begin{equation}\tag{12.1.7.3}
+{}'E_2^{p0}=\mathrm H_{\mathrm I}^p(\mathrm H_{\mathrm{II}}^0(\Gamma(X,\M^{\bullet\bullet})))
+\longrightarrow\mathrm H^p(\Gamma(X,\M^{\bullet\bullet})).
+\end{equation}
+已知（11.3.4）它由增广
+\begin{equation}\tag{12.1.7.4}
+\Gamma(X,\psi_*\LL'^\bullet)\longrightarrow\Gamma(X,\M^{\bullet\bullet})
+\end{equation}
+取上同调得到；后者本身来自增广 $\eta:\psi_*\LL'^\bullet\to\M^{\bullet\bullet}$。
+
+对于第二个谱序列，则有边缘同态
+\begin{equation}\tag{12.1.7.5}
+{}''E_2^{p0}=\mathrm H_{\mathrm{II}}^p(\mathrm H_{\mathrm I}^0(\Gamma(X,\M^{\bullet\bullet})))
+\longrightarrow\mathrm H^p(\Gamma(X,\M^{\bullet\bullet})),
+\end{equation}
+由复形同态 $\mathrm Z_{\mathrm I}^0(\Gamma(X,\M^{\bullet\bullet}))\to\Gamma(X,\M^{\bullet\bullet})$ 取上同调而得（11.3.4）。由于 $\psi_*$ 左正合，列
+\[
+0\longrightarrow\psi_*\F'\longrightarrow\psi_*\LL'^0\longrightarrow\psi_*\LL'^1
+\]
+正合；依 Cartan--Eilenberg 解消的定义（11.4.2），可取 $\mathrm B_{\mathrm I}^0(\M^{\bullet\bullet})=0$、$\mathrm Z_{\mathrm I}^0(\M^{\bullet\bullet})=\LL^\bullet$。由于图
+\[
+\begin{tikzcd}
+\LL^0\arrow[r,"i_0"]&\M^{00}\\
+\psi_*\F'\arrow[u,"\varepsilon"]\arrow[r,"\varepsilon'"']&\psi_*\LL'^0\arrow[u,"\eta_0"']
+\end{tikzcd}
+\]
+交换，复形嵌入 $i:\LL^\bullet\to\M^{\bullet\bullet}$ 与增广 $\varepsilon,\varepsilon'$ 相容。因而有两个与增广相容的复形同态：
+\[
+\begin{tikzcd}
+\LL^\bullet\arrow[rr,"i"]\arrow[dr,"v^\flat"']&&\M^{\bullet\bullet}\\
+&\psi_*\LL'^\bullet\arrow[ur,"\eta"']&
+\end{tikzcd}
+\]
+由于 $\LL^\bullet$ 是内射解消而 $\M^{\bullet\bullet}$ 由内射层组成，由（M，V，1.1 a）），这两个同态同伦。因此相应的两个同态 $\Gamma(X,\LL^\bullet)\to\Gamma(X,\M^{\bullet\bullet})$ 也同伦，在上同调上给出同一同态。换言之，已证明边缘同态（12.1.7.5）
+\[
+\mathrm H^p(X,\psi_*\F')\to\mathrm H^p(\Gamma(X,\M^{\bullet\bullet}))
+\]
+\begin{sloppypar}
+等于（12.1.7.1）与（12.1.7.3）之复合；而后者即 $\mathrm H^p(X',\F')\to\mathrm H^p(\Gamma(X,\M^{\bullet\bullet}))$，已经证明是同构。这就得到所述断言。\par
+\end{sloppypar}
+
+
+% ---- END c0_s12a.tex ----
+% ---- BEGIN c0_s12b.tex ----
+\subsection{高阶直像}
+\src{57--60}
+\egapar{12.2.1}
+设 $(X,\OO_X),(Y,\OO_Y)$ 为赋环空间，$f=(\psi,\theta):X\to Y$ 为态射；它定义直像函子 $f_*:C(X)\to C(Y)$，其底层阿贝尔群层函子与 $\psi_*$ 在 $C(X)$ 上的限制相同。$\psi_*$ 加性且左正合；又由于每个阿贝尔群层都同构于某个内射阿贝尔群层的子层，可以定义 $\psi_*$ 的右导出函子 $\F\mapsto\mathrm R^p\psi_*\F$。这些是 $Y$ 上的阿贝尔群层，且各 $\mathrm R^p\psi_*$ 构成泛上同调函子（T，2.3）。
+
+此外，$\mathrm R^p\psi_*\F$ 是预层 $V\mapsto\mathrm H^p(f^{-1}(V),\F)$ 的相伴层（T，3.7.2）。若 $\F$ 是 $\OO_X$-模，则 $\mathrm H^p(f^{-1}(V),\F)$ 自然具有 $\Gamma(f^{-1}(V),\OO_X)$-模结构，即 $\Gamma(V,\psi_*\OO_X)$-模结构；再利用 $\theta:\OO_Y\to\psi_*\OO_X$，得到 $\Gamma(V,\OO_Y)$-模结构。对于这些结构，从开集 $V$ 限制到 $V'\subset V$ 显然给出双同态，所以它们在各 $\mathrm R^p\psi_*\F$ 上定义 $\OO_Y$-模结构。我们以 $\mathrm R^pf_*\F$ 表示这个 $\OO_Y$-模，从而得到加性函子 $\mathrm R^pf_*:C(X)\to C(Y)$。
+
+这些函子构成 $\partial$-函子。事实上，若 $0\to\F'\to\F\to\F''\to0$ 是 $\OO_X$-模正合列，由上述高阶直像及模结构的描述立即可知，同态 $\partial:\mathrm R^p\psi_*\F''\to\mathrm R^{p+1}\psi_*\F'$ 是 $\OO_Y$-模同态。最后，各 $\mathrm R^pf_*$ 就是 $f_*$ 的右导出函子：每个 $\OO_X$-模都有由 $\OO_X$-模组成的内射解消，而这样的解消由松弛阿贝尔群层组成（G，II，7.1），所以能用来计算 $\mathrm R^p\psi_*\F$，因为对每个松弛层 $\G$ 及 $n\geq1$，都有 $\mathrm R^n\psi_*\G=0$（T，2.4.1，注3，以及命题3.3.2的推论）。因此，各 $\mathrm R^pf_*$ 构成从 $C(X)$ 到 $C(Y)$ 的泛上同调函子（T，2.3）。
+
+\egapar{12.2.2}
+设 $\F,\G$ 为两个 $\OO_X$-模。采用（12.2.1）的记号，对 $Y$ 的每个开集 $V$，有杯积同态（12.1.2.1）
+\[
+\mathrm H^p(f^{-1}(V),\F)\otimes_{\Gamma(f^{-1}(V),\OO_X)}
+\mathrm H^q(f^{-1}(V),\G)
+\longrightarrow\mathrm H^{p+q}(f^{-1}(V),\F\otimes_{\OO_X}\G).
+\]
+由杯积的定义（G，II，6.6），这些同态与从 $V$ 到开子空间 $V'$ 的限制交换。另一方面，$\theta$ 给出环同态
+\[
+\Gamma(V,\OO_Y)\to\Gamma(V,\psi_*\OO_X)=\Gamma(f^{-1}(V),\OO_X),
+\]
+故给出典范张量积同态
+\[
+\begin{aligned}
+&\mathrm H^p(f^{-1}(V),\F)\otimes_{\Gamma(V,\OO_Y)}\mathrm H^q(f^{-1}(V),\G)\\
+&\hspace{2em}\longrightarrow
+\mathrm H^p(f^{-1}(V),\F)\otimes_{\Gamma(f^{-1}(V),\OO_X)}\mathrm H^q(f^{-1}(V),\G),
+\end{aligned}
+\]
+它同样与限制相容。复合后得到 $\Gamma(V,\OO_Y)$-模同态；在相伴层上，它定义关于 $\F,\G$ 的典范函子同态
+\begin{equation}\tag{12.2.2.1}
+\mathrm R^pf_*\F\otimes_{\OO_Y}\mathrm R^qf_*\G
+\longrightarrow\mathrm R^{p+q}f_*(\F\otimes_{\OO_X}\G).
+\end{equation}
+当 $p=q=0$ 时，此同态即为（$\OI$，4.2.2.1）。
+
+\egastatement{12.2.3}{命题}
+对每个 $\OO_X$-模 $\F$ 及每个有限秩局部自由 $\OO_Y$-模 $\LL$，有典范的函子同构
+\begin{equation}\tag{12.2.3.1}
+\mathrm R^pf_*\F\otimes_{\OO_Y}\LL
+\iso\mathrm R^pf_*(\F\otimes_{\OO_X}f^*\LL).
+\end{equation}
+\begin{proof}
+（12.2.2.1）的一个特例为
+\begin{equation}\tag{12.2.3.2}
+\mathrm R^pf_*\F\otimes_{\OO_Y}f_*(f^*\LL)
+\longrightarrow\mathrm R^pf_*(\F\otimes_{\OO_X}f^*\LL).
+\end{equation}
+将它与由典范同态（$\OI$，4.4.3.2）导出的、从（12.2.3.1）左端到（12.2.3.2）左端的同态复合，即得（12.2.3.1）。为验证局部自由情形下它为同构，由于问题在 $Y$ 上局部，且所涉及函子对 $\LL$ 加性，可立即归结到 $\LL=\OO_Y$。由（12.2.2.1）的定义，只需验证相应的预层同态为双射；而由 $f^*\OO_Y=\OO_X$，这一点显然成立。
+\end{proof}
+
+\egapar{12.2.4}
+设 $(Z,\OO_Z)$ 为第三个赋环空间，$g:Y\to Z$ 为赋环空间态射。已知（G，II，7.1及3.1.1），对于每个内射 $\OO_X$-模 $\G$，$f_*\G$ 是松弛阿贝尔群层，故 $p>0$ 时 $\mathrm R^pg_*(f_*\G)=0$（12.2.1）。因此可对复合函子 $g_*f_*$ 应用 Leray 复合函子谱序列（T，2.4.1）：令 $h=g\circ f$，则存在以函子 $\mathrm R^\bullet h_*$ 为终项的双正则谱序列，其 $E_2$ 项为
+\begin{equation}\tag{12.2.4.1}
+E_2^{pq}=\mathrm R^pg_*(\mathrm R^qf_*\F).
+\end{equation}
+
+\egapar{12.2.5}
+在（12.2.4）的条件下，将直接定义典范 $\OO_Z$-模同态
+\begin{equation}\tag{12.2.5.1}
+\mathrm R^ng_*(f_*\F)\longrightarrow\mathrm R^nh_*\F,
+\end{equation}
+\begin{equation}\tag{12.2.5.2}
+\mathrm R^nh_*\F\longrightarrow g_*(\mathrm R^nf_*\F).
+\end{equation}
+它们可以与 Leray 谱序列的边缘同态相识别（见12.1.7）。只需在高阶直像所对应的预层上进行构造（12.2.1）。对 $Z$ 的任意开集 $W$，及其在 $Y$ 中的逆像 $g^{-1}(W)$，有典范双同态
+\begin{equation}\tag{12.2.5.3}
+\mathrm H^n(g^{-1}(W),f_*\F)
+\longrightarrow\mathrm H^n(f^{-1}(g^{-1}(W)),f^*(f_*\F)),
+\end{equation}
+相应的环为 $\Gamma(g^{-1}(W),\OO_Y)$ 与 $\Gamma(h^{-1}(W),\OO_X)$。另一方面，典范同态（$\OI$，4.4.3.3）由函子性给出
+\begin{equation}\tag{12.2.5.4}
+\mathrm H^n(h^{-1}(W),f^*(f_*\F))\longrightarrow\mathrm H^n(h^{-1}(W),\F),
+\end{equation}
+这是 $\Gamma(h^{-1}(W),\OO_X)$-模同态。考虑环同态 $\Gamma(W,\OO_Z)\to\Gamma(h^{-1}(W),\OO_X)$，可知复合（12.2.5.3）与（12.2.5.4）得到预层同态，进而得到（12.2.5.1）。
+
+（12.2.5.2）的定义更简单。按定义，$\mathrm R^nh_*\F$ 对应于预层 $W\mapsto\mathrm H^n(f^{-1}(g^{-1}(W)),\F)$，而 $\mathrm R^nf_*\F$ 对应于 $V\mapsto\mathrm H^n(f^{-1}(V),\F)$；故有典范同态
+\[
+\mathrm H^n(f^{-1}(g^{-1}(W)),\F)
+\longrightarrow\Gamma(g^{-1}(W),\mathrm R^nf_*\F).
+\]
+它们显然定义预层同态，后者又定义（12.2.5.2）。
+
+\egapar{12.2.6}
+在（12.2.4）的假设下，设 $\F,\G,\K$ 为三个 $\OO_X$-模，$u:\F\otimes_{\OO_X}\G\to\K$ 为 $\OO_X$-同态。则有交换图
+\begin{equation}\tag{12.2.6.1}
+\begin{tikzcd}[column sep=small]
+\mathrm R^pg_*(f_*\F)\otimes_{\OO_Z}\mathrm R^qg_*(f_*\G)\arrow[r]\arrow[d]&\mathrm R^{p+q}g_*(f_*\K)\arrow[d]\\
+\mathrm R^ph_*\F\otimes_{\OO_Z}\mathrm R^qh_*\G\arrow[r]&\mathrm R^{p+q}h_*\K
+\end{tikzcd}
+\end{equation}
+及
+\begin{equation}\tag{12.2.6.2}
+\begin{tikzcd}[column sep=small]
+\mathrm R^ph_*\F\otimes_{\OO_Z}\mathrm R^qh_*\G\arrow[r]\arrow[d]&\mathrm R^{p+q}h_*\K\arrow[d]\\
+g_*(\mathrm R^pf_*\F)\otimes_{\OO_Z}g_*(\mathrm R^qf_*\G)\arrow[r]&g_*(\mathrm R^{p+q}f_*\K).
+\end{tikzcd}
+\end{equation}
+水平箭头来自（12.2.2.1）（最后一个还结合（$\OI$，4.2.2.1）），两个图的竖直箭头分别来自（12.2.5.1）、（12.2.5.2）。只需对相应的预层同态验证。回到（12.2.2）及（12.2.5）的定义，（12.2.6.1）立即归结为交换图（12.1.5.2）；（12.2.6.2）的验证更为简单。
+
+\subsection{层的 \texorpdfstring{$\Ext$}{Ext} 函子的补充知识}
+\src{60--62}
+\egapar{12.3.1}
+考虑赋环空间 $(X,\OO_X)$。这里不再重复双函子 $\Ext^p_{\OO_X}(X;\F,\G)$ 与 $\shExt^p_{\OO_X}(\F,\G)$ 的定义和主要性质；前者从 $\OO_X$-模范畴取值于 $\Gamma(X,\OO_X)$-模范畴，后者取值于 $\OO_X$-模范畴本身。也不再重复将它们联系起来的双正则谱序列 $E(\F,\G)$ 的定义（T，4.2及G，II，7.3）。
+
+\egapar{12.3.2}
+与（M，XIV，1）中一样，可以定义 $\OO_X$-模 $\F$ 被 $\OO_X$-模 $\G$ 扩张的概念，以及等价扩张类之间的合成律：对于模所作的论证，显然适用于任意阿贝尔范畴。（M，XIV，1.1）的第二个证明只用到嵌入内射对象的存在性，故也适用于 $\OO_X$-模范畴。因此 $\Ext^p_{\OO_X}(X;\F,\G)$ 典范地识别为 $\F$ 被 $\G$ 扩张的等价类所成阿贝尔群。
+
+\egastatement{12.3.3}{命题}
+设 $(X,\OO_X)$ 为赋环空间，且环层 $\OO_X$ 凝聚。则对每对凝聚 $\OO_X$-模 $\F,\G$ 及每个 $p\geq0$，$\shExt^p_{\OO_X}(\F,\G)$ 都是凝聚 $\OO_X$-模。
+\begin{proof}
+注意各 $\shExt^p_{\OO_X}(\F,\G)$ 关于 $\F$ 构成反变上同调函子。由于 $\F$ 凝聚，对每个 $p$ 及每点 $x\in X$，存在 $x$ 的开邻域 $U$ 及 $\OO_X|U$-模正合列
+\[
+0\longrightarrow\R\longrightarrow\LL_{p-1}\longrightarrow\cdots
+\longrightarrow\LL_0\longrightarrow\F|U\longrightarrow0,
+\]
+其中每个 $\LL_i$（$0\leq i\leq p-1$）同构于某个 $\OO_X^{n_i}|U$，且 $\R$ 凝聚。这由（$\OI$，5.3.2、5.3.4）对 $p$ 归纳得出，使用了 $\OO_X$ 凝聚的假设。
+
+对于 $p\geq1$，当 $\LL|U$ 同构于 $\OO_X^n|U$ 时，\transnote{原文紧接的消失式用直立的 $\Ext$，但本证明讨论的是层 $\shExt$；这里依上下文使用层的记号，不能将其解释为任意开集上全局 $\Ext$ 的消失。}$\shExt^p_{\OO_X|U}(\LL|U,\G|U)=0$（T，4.2.3）。因此（M，V，7.2）的论证可用于反变上同调函子，从而得到正合列
+\[
+\begin{gathered}
+\shHom_{\OO_X|U}(\LL_{p-1},\G|U)
+\longrightarrow\shHom_{\OO_X|U}(\R,\G|U)\\
+\longrightarrow\shExt^p_{\OO_X|U}(\F|U,\G|U)\longrightarrow0.
+\end{gathered}
+\]
+其前两项凝聚（$\OI$，5.3.5），故第三项也凝聚（$\OI$，5.3.4）。
+\end{proof}
+
+\egastatement{12.3.4}{命题}
+设 $f:X\to Y$ 为赋环空间的平坦态射，$\F,\G$ 为两个 $\OO_Y$-模。
+\begin{enumerate}[label=(\roman*)]
+\item 存在上同调双函子的同态
+\begin{equation}\tag{12.3.4.1}
+f^*(\shExt^p_{\OO_Y}(\F,\G))
+\longrightarrow\shExt^p_{\OO_X}(f^*\F,f^*\G),
+\end{equation}
+在零次上等于典范同态（$\OI$，4.4.6）。
+\item 存在典范谱序列态射
+\begin{equation}\tag{12.3.4.2}
+E(\F,\G)\longrightarrow E(f^*\F,f^*\G),
+\end{equation}
+其在 $E_2$ 项上为由（12.3.4.1）及（12.1.3.1）导出的同态
+\begin{equation}\tag{12.3.4.3}
+\mathrm H^p(Y,\shExt^q_{\OO_Y}(\F,\G))
+\longrightarrow\mathrm H^p(X,\shExt^q_{\OO_X}(f^*\F,f^*\G)).
+\end{equation}
+\end{enumerate}
+\begin{proof}
+（i）由于 $f^*$ 在 $\OO_Y$-模范畴中正合（$\OI$，6.7.2），函子 $\G\mapsto f^*(\shHom_{\OO_Y}(\F,\G))$ 与 $\G\mapsto\shHom_{\OO_X}(f^*\F,f^*\G)$ 左正合；从（$\OI$，4.4.6）典范地得到它们的导出函子之间的同态。取 $\G$ 的内射解消 $\LL^\bullet=(\LL^i)$ 来计算，得到层复形上同调的态射
+\[
+\HH^p(f^*(\shHom_{\OO_Y}(\F,\LL^\bullet)))
+\longrightarrow\HH^p(\shHom_{\OO_X}(f^*\F,f^*\LL^\bullet)).
+\]
+由 $f^*$ 的正合性，左端按定义等于
+\[
+f^*(\HH^p(\shHom_{\OO_Y}(\F,\LL^\bullet)))
+=f^*(\shExt^p_{\OO_Y}(\F,\G)).
+\]
+另一方面，$f^*\LL^\bullet$ 是 $f^*\G$ 的解消。若 $\LL'^\bullet=(\LL'^i)$ 为 $f^*\G$ 在 $\OO_X$-模范畴中的内射解消，则有在同伦意义下确定的复形同态 $f^*\LL^\bullet\to\LL'^\bullet$，因此在上同调上给出确定的同态。与上面构造的同态复合，即得到（12.3.4.1）。
+
+（ii）采用上述记号，有 $\OO_X$-模层复形同态
+\[
+f^*(\shHom_{\OO_Y}(\F,\LL^\bullet))
+\longrightarrow\shHom_{\OO_X}(f^*\F,\LL'^\bullet).
+\]
+设 $\M^{\bullet\bullet}$ 为复形 $\shHom_{\OO_Y}(\F,\LL^\bullet)$ 在 $\OO_Y$-模范畴中的内射 Cartan--Eilenberg 解消。由 $f^*$ 正合，$f^*\M^{\bullet\bullet}$ 是复形 $f^*(\shHom_{\OO_Y}(\F,\LL^\bullet))$ 的 Cartan--Eilenberg 解消。若 $\M'^{\bullet\bullet}$ 是 $\shHom_{\OO_X}(f^*\F,\LL'^\bullet)$ 的内射 Cartan--Eilenberg 解消，则有与上述同态相容、在同伦意义下确定的同态 $f^*\M^{\bullet\bullet}\to\M'^{\bullet\bullet}$（11.4.2），即层双复形的 $f$-态射 $\M^{\bullet\bullet}\to\M'^{\bullet\bullet}$。
+
+\begin{sloppypar}
+由此得到在同伦意义下确定的模双复形双同态 $\Gamma(Y,\M^{\bullet\bullet})\to\Gamma(X,\M'^{\bullet\bullet})$，因而得到确定的谱序列态射（11.3.2）；它就是所需的（12.3.4.2）。（12.3.4.3）的描述立即由定义得出。
+\end{sloppypar}
+\end{proof}
+
+\egastatement{12.3.5}{命题}
+在（12.3.4）的假设下，再假设环层 $\OO_Y$ 凝聚；则对每个凝聚 $\OO_Y$-模 $\F$，典范同态（12.3.4.1）均为双射。
+\begin{proof}
+问题在 $Y$ 上局部，可设存在正合列 $0\to\R\to\OO_Y^n\to\F\to0$，此时 $\R$ 也是凝聚 $\OO_Y$-模（$\OI$，5.3.4）。对 $p$ 归纳证明同态
+\[
+f^*(\shExt^p_{\OO_Y}(\F,\G))\longrightarrow\shExt^p_{\OO_X}(f^*\F,f^*\G)
+\]
+为双射；$p=0$ 时由（$\OI$，6.7.6.1）成立。有交换图
+\[
+\adjustbox{max width=\linewidth}{\begin{tikzcd}[column sep=tiny]
+f^*\shExt^{p-1}_{\OO_Y}(\OO_Y^n,\G)\arrow[r]\arrow[d]&f^*\shExt^{p-1}_{\OO_Y}(\R,\G)\arrow[r]\arrow[d]&f^*\shExt^p_{\OO_Y}(\F,\G)\arrow[r]\arrow[d]&f^*\shExt^p_{\OO_Y}(\OO_Y^n,\G)\arrow[d]\\
+\shExt^{p-1}_{\OO_X}(\OO_X^n,f^*\G)\arrow[r]&\shExt^{p-1}_{\OO_X}(f^*\R,f^*\G)\arrow[r]&\shExt^p_{\OO_X}(f^*\F,f^*\G)\arrow[r]&\shExt^p_{\OO_X}(\OO_X^n,f^*\G).
+\end{tikzcd}}
+\]
+这里使用 $f^*\OO_Y=\OO_X$；由于 $f^*$ 正合，两行正合。又对 $p>0$，有 $\shExt^p_{\OO_Y}(\OO_Y,\G)=0$，同样 $\shExt^p_{\OO_X}(\OO_X,f^*\G)=0$（T，4.2.3）。由归纳假设，前两个竖直箭头为同构，最右两项为零，因而第三个竖直箭头也为同构。
+\end{proof}
+
+\subsection{直像函子的超上同调}
+\src{62--64}
+\egapar{12.4.1}
+设 $(X,\OO_X),(Y,\OO_Y)$ 为赋环空间，$f:X\to Y$ 为态射。可以取 $f_*$ 相对于任意 $\OO_X$-模复形 $\K^\bullet=(\K^i)_{i\in\Z}$ 的超上同调（11.4.4），因为在阿贝尔范畴 $C(Y)$ 中滤过归纳极限存在且正合（T，3.1.1）。超上同调 $\OO_Y$-模 $\mathrm R^pf_*(\K^\bullet)$ 也记作 $\HH^p(f,\K^\bullet)$ 或 $\HH^p(\K^\bullet)$。
+
+回顾 $\HH^\bullet(f,\K^\bullet)$ 是 $\OO_Y$-模双复形 $f_*\LL^{\bullet\bullet}$ 的上同调，其中 $\LL^{\bullet\bullet}$ 为 $\K^\bullet$ 在 $\OO_X$-模范畴中的内射 Cartan--Eilenberg 解消。它是两个谱序列 ${}'\E(f,\K^\bullet)$、${}''\E(f,\K^\bullet)$ 的终项；其 $E_2$ 项为
+\begin{equation}\tag{12.4.1.1}
+{}'\E_2^{pq}=\HH^p(\HH^q(f,\K^\bullet)),
+\end{equation}
+\begin{equation}\tag{12.4.1.2}
+{}''\E_2^{pq}=\HH^p(f,\HH^q(\K^\bullet))
+=\mathrm R^pf_*(\HH^q(\K^\bullet)).
+\end{equation}
+这里采用函子作用于复形的一般记号 $T(A^\bullet)$（11.2.1），并对单个 $\OO_X$-模 $\F$，用 $\HH^p(f,\F)$ 表示 $\mathrm R^pf_*\F$。还要回顾，第一个谱序列总正则；若 $\K^\bullet$ 有下界，或存在整数 $m$ 使每个 $\OO_X$-模都有长度 $\leq m$ 的松弛解消，则两个谱序列均双正则（11.4.4）。
+
+\egapar{12.4.2}
+同样，以 $\mathrm H^\bullet(X,\K^\bullet)$ 表示截面函子 $\Gamma$ 相对于 $\OO_X$-模复形 $\K^\bullet$ 的超上同调；因此各 $\mathrm H^p(X,\K^\bullet)$ 是 $\Gamma(X,\OO_X)$-模。它也可视为 $\HH^\bullet(f,\K^\bullet)$ 的特例，其中 $f$ 从 $(X,\OO_X)$ 映向底空间只有一点、环为 $\Gamma(X,\OO_X)$ 的赋环空间。对 $X$ 的开集 $V$，简记 $\mathrm H^\bullet(V,\K^\bullet)=\mathrm H^\bullet(V,\K^\bullet|V)$。
+
+\egastatement{12.4.3}{命题}
+对每个整数 $p\in\Z$，$\OO_Y$-模 $\HH^p(f,\K^\bullet)$ 典范地同构于 $Y$ 上预层 $U\mapsto\mathrm H^p(f^{-1}(U),\K^\bullet)$ 的相伴层。
+\begin{proof}
+用（12.4.1）的记号，上同调层 $\HH^p(f_*\LL^{\bullet\bullet})$ 对应于预层
+\[
+U\longmapsto\mathrm H^p(\Gamma(U,f_*\LL^{\bullet\bullet}))
+=\mathrm H^p(\Gamma(f^{-1}(U),\LL^{\bullet\bullet})).
+\]
+$\LL^{\bullet\bullet}|f^{-1}(U)$ 显然是 $\K^\bullet|f^{-1}(U)$ 的内射 Cartan--Eilenberg 解消（T，3.1.3），所以按定义，右端等于 $\mathrm H^p(f^{-1}(U),\K^\bullet)$。
+\end{proof}
+
+\egastatement{12.4.4}{命题}
+在以下每一种情形下，超上同调 $\HH^\bullet(f,\K^\bullet)$ 都是关于 $\K^\bullet$ 的上同调函子：
+\begin{enumerate}[label=\alph*)]
+\item $\K^\bullet$ 在有下界复形范畴中变化；
+\item 存在整数 $m$，使每个 $\OO_X$-模都有长度 $\leq m$ 的松弛解消；
+\item $X$ 是诺特空间。
+\end{enumerate}
+\begin{proof}
+情形 a）、b）是（11.5.4）的特例。情形 c）由（11.5.2）得出，因为已知此时 $f_*$ 与归纳极限交换（G，II，3.10.1）。
+\end{proof}
+
+\egapar{12.4.5}
+考虑 $X$ 的开覆盖 $\mathfrak U=(U_\alpha)$。对 $X$ 上每个预层复形 $\K^\bullet=(\K^j)$，考虑双复形 $C^\bullet(\mathfrak U,\K^\bullet)$，其 $(i,j)$ 分量为 $C^i(\mathfrak U,\K^j)$，即覆盖神经在 $\K^j$ 中取值的交错 $i$-上链群（G，II，5.1）。称此双复形的上同调为覆盖 $\mathfrak U$ 在 $\K^\bullet$ 中取系数的\textbf{超上同调}，记为
+\[
+\mathrm H^\bullet(\mathfrak U,\K^\bullet)
+=\mathrm H^\bullet(C^\bullet(\mathfrak U,\K^\bullet)).
+\]
+覆盖的 Leray 谱序列（T，3.8.1及G，II，5.9.1）推广到超上同调如下。
+
+\egastatement{12.4.6}{命题}
+设 $\K^\bullet=(\K^j)$ 为 $\OO_X$-模复形。存在关于 $\K^\bullet$ 的正则谱函子，以超上同调 $\mathrm H^\bullet(X,\K^\bullet)$ 为终项，其 $E_2$ 项为
+\begin{equation}\tag{12.4.6.1}
+E_2^{pq}=\mathrm H^p(\mathfrak U,h^q(\K^\bullet)),
+\end{equation}
+其中 $h^q(\K^\bullet)$ 表示 $X$ 上由预层 $V\mapsto\mathrm H^q(V,\K^j)$ 组成的复形。\transnote{原文在这一定义中写 $V\mapsto H^q(V,\K^\bullet)$，易与已定义的超上同调混淆；由随后证明中的 $h^q(\K^j)$ 可知，此处指逐项取第 $q$ 次普通上同调所成的预层复形，本译文将指标 $j$ 明写。}当 $\K^\bullet$ 有下界时，此谱序列双正则。
+\begin{proof}
+\begin{sloppypar}
+取 $\K^\bullet$ 的内射 Cartan--Eilenberg 解消 $\LL^{\bullet\bullet}$，及三重复形 $C^\bullet(\mathfrak U,\LL^{\bullet\bullet})=(C^i(\mathfrak U,\LL^{jk}))$。先将它按次数 $i,j+k$ 视为双复形。由于 $i$ 只取非负值，其第二谱序列正则（11.3.3）且退化：各 $\LL^{jk}$ 为松弛层，故对 $q>0$ 有 $\mathrm H^q(\mathfrak U,\LL^{jk})=0$（G，II，5.2.3）。因此有典范同构（11.1.6）
+\end{sloppypar}
+\[
+\mathrm H^\bullet(C^\bullet(\mathfrak U,\LL^{\bullet\bullet}))
+\simeq\mathrm H^\bullet(\Gamma(X,\LL^{\bullet\bullet}))
+\]
+（G，II，5.2.2），亦即按（12.4.2）有
+\[
+\mathrm H^\bullet(C^\bullet(\mathfrak U,\LL^{\bullet\bullet}))
+\simeq\mathrm H^\bullet(X,\K^\bullet).
+\]
+再将三重复形按次数 $i+j,k$ 视为双复形。由于 $k$ 只取非负值，其第一谱序列总正则；若 $j<j_0$ 时 $\LL^{jk}=0$，即 $\K^\bullet$ 有下界时，它双正则（11.3.3）。这就是所求谱序列：对每个 $j$，$\LL^{j\bullet}$ 是 $\K^j$ 的内射解消，所以 $\mathrm H^q(C^\bullet(\mathfrak U,\LL^{j\bullet}))$ 正是上链复形 $C^\bullet(\mathfrak U,h^q(\K^j))$。命题得证。
+\end{proof}
+
+\egastatement{12.4.7}{推论}
+若对覆盖神经的每个单形 $\sigma$ 及每个整数 $i$，均有 $q>0$ 时 $\mathrm H^q(U_\sigma,\K^i)=0$，则有典范同构
+\begin{equation}\tag{12.4.7.1}
+\mathrm H^\bullet(\mathfrak U,\K^\bullet)\simeq\mathrm H^\bullet(X,\K^\bullet).
+\end{equation}
+\begin{proof}
+假设说明 $q>0$ 时 $C^\bullet(\mathfrak U,h^q(\K^\bullet))=0$，故 $E_2^{pq}=0$。谱序列（12.4.6.1）退化且正则，所以结论由定义（12.4.5）及（11.1.6）得出。
+\end{proof}
+
+\egapar{12.4.8}
+设 $(X',\OO_{X'})$ 为第二个赋环空间，$f=(\psi,\theta):X'\to X$ 为态射。用（12.1.3）、（12.1.4）的同一方法，对 $\OO_X$-模复形 $\K^\bullet$ 的超上同调定义双同态
+\begin{equation}\tag{12.4.8.1}
+\mathrm H^p(X,\K^\bullet)\longrightarrow\mathrm H^p(X',f^*\K^\bullet).
+\end{equation}
+从 $\K^\bullet$ 的内射 Cartan--Eilenberg 解消 $\LL^{\bullet\bullet}$ 出发。由于 $\psi^*$ 正合，$\psi^*\LL^{\bullet\bullet}$ 是 $\psi^*\K^\bullet$ 在 $\psi^*\OO_X$-模范畴中的 Cartan--Eilenberg 解消；于是有态射 $\psi^*\LL^{\bullet\bullet}\to\LL'^{\bullet\bullet}$，其中 $\LL'^{\bullet\bullet}$ 为 $\psi^*\K^\bullet$ 的内射 Cartan--Eilenberg 解消，因而得到上同调态射
+\[
+\mathrm H^\bullet(X,\K^\bullet)\longrightarrow\mathrm H^\bullet(X',\psi^*\K^\bullet).
+\]
+与由 $\psi^*\K^\bullet\to f^*\K^\bullet$ 的函子性导出的态射复合，即得（12.4.8.1）。
+
+由（12.4.8.1）、（12.4.3）出发，像（12.2.5）那样论证，对赋环空间态射 $f:X\to Y$、$g:Y\to Z$，可定义 $\OO_X$-模复形 $\K^\bullet$ 的超上同调同态
+\begin{equation}\tag{12.4.8.2}
+\HH^p(g,f_*\K^\bullet)\longrightarrow\HH^p(g\circ f,\K^\bullet),
+\end{equation}
+\begin{equation}\tag{12.4.8.3}
+\HH^p(g\circ f,\K^\bullet)\longrightarrow g_*\HH^p(f,\K^\bullet).
+\end{equation}
+定义的细节留给读者。\par
+
+% ---- END c0_s12b.tex ----
+% ---- BEGIN c0_s13a.tex ----
+\section{同调代数中的射影极限}
+\subsection{Mittag--Leffler 条件}
+\src{64--65}
+\egapar{13.1.1}
+设 $C$ 为存在无限积的阿贝尔范畴（T，1.5的公理 AB~3*）。则 $C$ 的任一对象的一族子对象有下确界；每个 $C$-对象射影系统都有射影极限，并且射影极限是关于所考虑射影系统的左正合函子（T，1.8）。
+
+设 $(A_\alpha,f_{\alpha\beta})$ 为 $C$ 的对象射影系统，其指标集 $I$ 向右滤过。令 $A=\plim A_\alpha$，并令 $f_\alpha:A\to A_\alpha$ 为典范态射。对每个 $\alpha$，子对象 $f_{\alpha\beta}(A_\beta)$（$\beta\geq\alpha$）构成滤过递减族；子对象
+\[
+A'_\alpha=\inf_{\beta\geq\alpha}f_{\alpha\beta}(A_\beta)
+\]
+称为 $A_\alpha$ 中的“普遍像”子对象。显然 $f_\alpha(A)\subset A'_\alpha$，且 $\alpha\leq\beta$ 时 $f_{\alpha\beta}(A'_\beta)\subset A'_\alpha$；因此 $(A'_\alpha,f_{\alpha\beta}|A'_\beta)$ 是射影系统，且 $A=\plim A'_\alpha$。
+
+\egapar{13.1.2}
+给定 $C$ 中的射影系统 $(A_\alpha,f_{\alpha\beta})$，称以下条件为\textbf{Mittag--Leffler 条件}：
+
+\noindent（ML）对每个指标 $\alpha$，存在 $\beta\geq\alpha$，使对每个 $\gamma\geq\beta$ 都有
+\[
+f_{\alpha\gamma}(A_\gamma)=f_{\alpha\beta}(A_\beta).
+\]
+显然，若各 $f_{\alpha\beta}$ 均为满态射，则（ML）成立。反过来，若（ML）成立，且 $A'_\alpha$ 为普遍像子对象，则 $\alpha\leq\beta$ 时，$f_{\alpha\beta}$ 在 $A'_\beta$ 上的限制是满态射 $A'_\beta\to A'_\alpha$。事实上，若 $\gamma\geq\beta$ 满足 $\delta\geq\gamma$ 时 $f_{\beta\delta}(A_\delta)=f_{\beta\gamma}(A_\gamma)$，则 $A'_\beta=f_{\beta\gamma}(A_\gamma)$；而这又说明 $\delta\geq\gamma$ 时 $f_{\alpha\delta}(A_\delta)=f_{\alpha\gamma}(A_\gamma)$，故
+\[
+A'_\alpha=f_{\alpha\gamma}(A_\gamma)=f_{\alpha\beta}(A'_\beta).
+\]
+还要指出，当各 $A_\alpha$ 在 $C$ 中是阿廷对象，即其任意子对象族均有极小元时，（ML）成立。因为滤过递减子对象族 $(f_{\alpha\beta}(A_\beta))$ 的一个极小元，必为该族的最小子对象。
+
+\egastatement{13.1.3}{注}
+例如当 $C$ 是集合范畴时，也可以表述（ML）条件；这时仍可定义 $A_\alpha$ 的“普遍像”子集，而（13.1.1）、（13.1.2）中的有关说明仍成立。
+
+\subsection{阿贝尔群的 Mittag--Leffler 条件}
+\src{65--67}
+\egastatement{13.2.1}{命题}
+设
+\[
+0\longrightarrow A_\alpha\xrightarrow{u_\alpha}B_\alpha
+\xrightarrow{v_\alpha}C_\alpha\longrightarrow0
+\]
+是阿贝尔群射影系统的正合列，具有同一滤过指标集 $I$。
+\begin{enumerate}[label=(\roman*)]
+\item 若 $(B_\alpha)$ 满足（ML），则 $(C_\alpha)$ 也满足。
+\item 若 $(A_\alpha)$ 与 $(C_\alpha)$ 满足（ML），则 $(B_\alpha)$ 也满足。
+\end{enumerate}
+\begin{proof}
+以 $(f_{\alpha\beta})$、$(g_{\alpha\beta})$、$(h_{\alpha\beta})$ 分别表示定义三个射影系统的同态。
+
+（i）设 $\lambda\geq\beta$ 时 $g_{\alpha\beta}(B_\beta)=g_{\alpha\lambda}(B_\lambda)$。由 $v_\beta,v_\lambda$ 满射，
+\[
+h_{\alpha\beta}(C_\beta)
+=v_\alpha(g_{\alpha\beta}(B_\beta))
+=v_\alpha(g_{\alpha\lambda}(B_\lambda))
+=h_{\alpha\lambda}(C_\lambda).
+\]
+（ii）给定 $\alpha$，取 $\beta\geq\alpha$，使 $\lambda\geq\beta$ 时 $f_{\alpha\beta}(A_\beta)=f_{\alpha\lambda}(A_\lambda)$；再取 $\gamma\geq\beta$，使 $\lambda\geq\gamma$ 时 $h_{\beta\lambda}(C_\lambda)=h_{\beta\gamma}(C_\gamma)$。设 $y_\alpha\in g_{\alpha\gamma}(B_\gamma)$，即 $y_\alpha=g_{\alpha\gamma}(y_\gamma)$，其中 $y_\gamma\in B_\gamma$。置 $y_\beta=g_{\beta\gamma}(y_\gamma)$，则 $v_\beta(y_\beta)=h_{\beta\gamma}(v_\gamma(y_\gamma))$。
+
+对任意 $\lambda\geq\gamma$，由假设存在 $y_\lambda\in B_\lambda$，使
+\[
+h_{\beta\gamma}(v_\gamma(y_\gamma))
+=h_{\beta\lambda}(v_\lambda(y_\lambda))
+=v_\beta(g_{\beta\lambda}(y_\lambda)).
+\]
+故 $v_\beta(y_\beta-g_{\beta\lambda}(y_\lambda))=0$，存在 $x_\beta\in A_\beta$，使 $y_\beta=g_{\beta\lambda}(y_\lambda)+u_\beta(x_\beta)$。于是
+\[
+y_\alpha=g_{\alpha\lambda}(y_\lambda)+u_\alpha(f_{\alpha\beta}(x_\beta)).
+\]
+因 $\lambda\geq\beta$，存在 $x_\lambda\in A_\lambda$，使 $f_{\alpha\beta}(x_\beta)=f_{\alpha\lambda}(x_\lambda)$，所以
+\[
+y_\alpha=g_{\alpha\lambda}(y_\lambda+u_\lambda(x_\lambda))
+\in g_{\alpha\lambda}(B_\lambda).
+\]
+证明完成。
+\end{proof}
+
+\egastatement{13.2.2}{命题}
+设 $I$ 为具有可数共尾子集的滤过有序集，且
+\[
+0\longrightarrow A_\alpha\xrightarrow{u_\alpha}B_\alpha
+\xrightarrow{v_\alpha}C_\alpha\longrightarrow0
+\]
+是以 $I$ 为指标集的阿贝尔群射影系统正合列。若 $(A_\alpha)$ 满足（ML），则列
+\[
+0\longrightarrow\plim A_\alpha\longrightarrow\plim B_\alpha
+\longrightarrow\plim C_\alpha\longrightarrow0
+\]
+正合。
+\begin{proof}
+只需证明 $v=\plim v_\alpha:\plim B_\alpha\to\plim C_\alpha$ 满射。取 $z=(z_\alpha)\in\plim C_\alpha$，置 $E_\alpha=v_\alpha^{-1}(z_\alpha)$。各 $E_\alpha$ 在 $g_{\alpha\beta}$ 的限制下构成非空集合射影系统。证明此系统满足（ML）：通过 $u_\alpha$ 将 $A_\alpha$ 识别为 $B_\alpha$ 的子群，取 $\beta\geq\alpha$，使 $\lambda\geq\beta$ 时 $g_{\alpha\beta}(A_\beta)=g_{\alpha\lambda}(A_\lambda)$。将证明同时有 $g_{\alpha\beta}(E_\beta)=g_{\alpha\lambda}(E_\lambda)$。
+
+事实上，取 $y_\lambda\in E_\lambda$，置 $y_\beta=g_{\beta\lambda}(y_\lambda)$、$y_\alpha=g_{\alpha\lambda}(y_\lambda)$。若 $y'_\alpha\in g_{\alpha\beta}(E_\beta)$，写成 $y'_\alpha=g_{\alpha\beta}(y'_\beta)$，则 $x_\beta=y'_\beta-y_\beta\in A_\beta$；存在 $x_\lambda\in A_\lambda$，使 $g_{\alpha\beta}(x_\beta)=g_{\alpha\lambda}(x_\lambda)$。因此
+\[
+\begin{aligned}
+y'_\alpha&=g_{\alpha\beta}(y_\beta)+g_{\alpha\beta}(x_\beta)\\
+&=g_{\alpha\lambda}(y_\lambda)+g_{\alpha\lambda}(x_\lambda)
+=g_{\alpha\lambda}(y_\lambda+x_\lambda)\in g_{\alpha\lambda}(E_\lambda).
+\end{aligned}
+\]
+这证明了（ML）。已知在上述对 $I$ 的假设下，满足（ML）的非空集合射影系统有非空射影极限（Bourbaki，《一般拓扑》，第 II 章，第3版，§3，定理1）。故存在 $y=(y_\alpha)\in\plim E_\alpha$；按定义每个 $v_\alpha(y_\alpha)=z_\alpha$，所以 $v(y)=z$。
+\end{proof}
+
+\egastatement{13.2.3}{命题}
+对 $I$ 作（13.2.2）的假设。设 $(K_\alpha^\bullet)_{\alpha\in I}$ 为阿贝尔群复形的射影系统，各复形 $K_\alpha^\bullet=(K_\alpha^n)_{n\in\Z}$ 的微分次数为 $+1$。对每个 $n$，存在典范的函子同态
+\begin{equation}\tag{13.2.3.1}
+h_n:\mathrm H^n(\plim K_\alpha^\bullet)\longrightarrow\plim\mathrm H^n(K_\alpha^\bullet).
+\end{equation}
+若对每个次数 $n$，$(K_\alpha^n)_{\alpha\in I}$ 满足（ML），则所有 $h_n$ 均满射。若再对某个 $n$，$(\mathrm H^{n-1}(K_\alpha^\bullet))_{\alpha\in I}$ 满足（ML），则 $h_n$ 为双射。
+\begin{proof}
+对每个 $n$ 置 $K^n=\plim K_\alpha^n$。由交换图
+\[
+\begin{tikzcd}[column sep=small]
+\cdots\arrow[r]&K^{n-1}\arrow[r]\arrow[d]&K^n\arrow[r]\arrow[d]&K^{n+1}\arrow[r]\arrow[d]&\cdots\\
+\cdots\arrow[r]&K_\alpha^{n-1}\arrow[r]&K_\alpha^n\arrow[r]&K_\alpha^{n+1}\arrow[r]&\cdots
+\end{tikzcd}
+\]
+即可定义 $h_n$，其中 $K^\bullet$ 的微分是各 $K_\alpha^\bullet$ 相应微分的射影极限。考虑正合列
+\[
+(*_n)\qquad0\to\mathrm B^n(K_\alpha^\bullet)\to\mathrm Z^n(K_\alpha^\bullet)
+\to\mathrm H^n(K_\alpha^\bullet)\to0,
+\]
+\[
+(**_n)\qquad0\to\mathrm Z^{n-1}(K_\alpha^\bullet)\to K_\alpha^{n-1}
+\to\mathrm B^n(K_\alpha^\bullet)\to0.
+\]
+由假设及（13.2.1，i），每个 $(\mathrm B^n(K_\alpha^\bullet))_\alpha$ 满足（ML）；于是由（13.2.2），列
+\[
+(***_n)\quad0\to\plim\mathrm B^n(K_\alpha^\bullet)
+\to\plim\mathrm Z^n(K_\alpha^\bullet)
+\to\plim\mathrm H^n(K_\alpha^\bullet)\to0
+\]
+正合。显然 $\plim\mathrm B^n(K_\alpha^\bullet)$ 可识别为 $K^n$ 中包含 $\mathrm B^n(K^\bullet)$ 的子群，而 $\plim\mathrm Z^n(K_\alpha^\bullet)$ 可识别为 $\mathrm Z^n(K^\bullet)$ 的子群，所以 $h_n$ 满射。\transnote{原版此处将包含 $\plim\mathrm B^n(K_\alpha^\bullet)$ 的群印作 $K^{n+1}$；按本段定义应为 $K^n$，这里据其定义明示订正。}
+
+再假设 $(\mathrm H^{n-1}(K_\alpha^\bullet))_\alpha$ 满足（ML）。由 $(*_{n-1})$ 及（13.2.1，ii），$(\mathrm Z^{n-1}(K_\alpha^\bullet))_\alpha$ 满足（ML）；将（13.2.2）应用于 $(**_n)$，得到正合列
+\[
+0\to\plim\mathrm Z^{n-1}(K_\alpha^\bullet)\to K^{n-1}
+\xrightarrow{u}\plim\mathrm B^n(K_\alpha^\bullet)\to0.
+\]
+由于将 $u$ 与嵌入 $\plim\mathrm B^n(K_\alpha^\bullet)\to K^n$ 复合就是微分 $K^{n-1}\to K^n$，$u$ 的满射性说明 $\plim\mathrm B^n(K_\alpha^\bullet)=\mathrm B^n(K^\bullet)$，故 $h_n$ 单射。
+\end{proof}
+
+\egastatement{13.2.4}{注}
+（i）（13.2.2）的论证（见 Bourbaki，同上）说明，其结论在以下较弱的假设下仍成立：各 $A_\alpha$ 能赋予完备可度量空间结构，使平移为同胚，定义射影系统的 $f_{\alpha\beta}:A_\beta\to A_\alpha$ 对所取距离一致连续，并且满足
+
+\noindent（ML$'$）对每个 $\alpha$，存在 $\beta\geq\alpha$，使每个 $\gamma\geq\beta$ 的 $f_{\alpha\gamma}(A_\gamma)$ 在 $f_{\alpha\beta}(A_\beta)$ 中稠密。
+
+这也可给（13.2.3）作相应补充：假设对每个 $\alpha$，$n<0$ 时 $K_\alpha^n=0$；又假设对 $n\geq0$，$(K_\alpha^n)_\alpha$ 满足（ML），并且 $A_\alpha=\mathrm H^0(K_\alpha^\bullet)$ 能赋予满足上述性质的度量空间结构。那么（13.2.3）对于 $n\geq2$ 的结论不变，且 $h_1$ 为双射。因为（13.2.2）的论证仍说明 $(\mathrm B^1(K_\alpha^\bullet))_\alpha$ 满足（ML），$(***_1)$ 正合，并由以上说明有 $\plim\mathrm B^1(K_\alpha^\bullet)=\mathrm B^1(K^\bullet)$。这样特别证明了（T，3.10.2）中的断言。
+
+（ii）可以引入函子 $\plim$ 的右导出函子 $\plim{}^{(p)}$，从而得到比上述更完整的陈述 [28]。
+
+\subsection{应用：层的射影极限的上同调}
+\src{68--69}
+\egastatement{13.3.1}{命题}
+设 $X$ 为拓扑空间，$(\F_k)_{k\in\mathbf N}$ 为 $X$ 上阿贝尔群层的射影系统，$\F=\plim\F_k$。假设：
+\begin{enumerate}[label=(\roman*)]
+\item $X$ 的拓扑有基 $\mathfrak B$，使对每个 $U\in\mathfrak B$ 及每个 $i\geq0$，射影系统 $(\mathrm H^i(U,\F_k))_k$ 满足（ML）。
+\item 对每个 $x\in X$ 及 $i>0$，有
+\[
+\ilim_U\bigl(\plim_k\mathrm H^i(U,\F_k)\bigr)=0,
+\]
+其中 $U$ 遍历 $\mathfrak B$ 中的 $x$ 的邻域。
+\item 定义射影系统的同态 $u_{hk}:\F_k\to\F_h$（$h\leq k$）均满射。
+\end{enumerate}
+则对每个 $i>0$，典范同态 $h_i:\mathrm H^i(X,\F)\to\plim_k\mathrm H^i(X,\F_k)$ 满射。若再对某个 $i$，$(\mathrm H^{i-1}(X,\F_k))_k$ 满足（ML），则 $h_i$ 为双射。
+\begin{proof}
+a）先假设各 $\F_k$ 以及 $u_{hk}$ 的核 $\J_{hk}$ 都为松弛层。将证明此时（iii）推出 $i>0$ 时 $\mathrm H^i(X,\F)=0$。只需证明对 $X$ 的每个开集 $U$ 及 $U$ 的任意开覆盖 $\mathfrak U$，$i>0$ 时都有 $\mathrm H^i(\mathfrak U,\F)=0$。这首先说明 Čech 上同调 $\check{\mathrm H}^i(U,\F)=0$，再将（G，II，5.9.2）应用于 $X$ 的所有开集，即得 $\mathrm H^i(X,\F)=0$。
+
+由于各 $\F_k$ 松弛，$i>0$ 时 $\mathrm H^i(\mathfrak U,\F_k)=0$（G，II，5.2.3）。对每个 $k$，取覆盖神经的交错上链复形 $C^\bullet(\mathfrak U,\F_k)$（G，II，5.1），它们显然构成阿贝尔群复形射影系统。将证明所有映射 $C^\bullet(\mathfrak U,\F_k)\to C^\bullet(\mathfrak U,\F_h)$（$h\leq k$）均满射。依定义，只需证明对每个开集 $V$，$\Gamma(V,\F_k)\to\Gamma(V,\F_h)$ 满射；但由正合列 $0\to\J_{hk}\to\F_k\to\F_h\to0$，得到
+\[
+\Gamma(V,\F_k)\to\Gamma(V,\F_h)\to\mathrm H^1(V,\J_{hk})=0,
+\]
+因为 $\J_{hk}$ 松弛。故 $(C^i(\mathfrak U,\F_k))_k$ 满足（ML）。各 $(\mathrm H^i(\mathfrak U,\F_k))_k$ 也满足（ML）：$i>0$ 时显然，而 $i=0$ 时，因 $\mathrm H^0(\mathfrak U,\F_k)=\Gamma(U,\F_k)$（G，II，5.2.2），由刚才的结论成立。因此可用（13.2.3），得到 $i>0$ 时
+\[
+\mathrm H^i(\mathfrak U,\F)=\plim_k\mathrm H^i(\mathfrak U,\F_k)=0.
+\]
+
+b）转到一般情形。对每个 $k$，取 $\F_k$ 的典范松弛解消 $\C^\bullet(X,\F_k)=(\C^i(X,\F_k))_{i\geq0}$（G，II，4.3）。对每个 $i\geq0$，$(\C^i(X,\F_k))_k$ 显然是松弛层射影系统，且满足 a）的条件：若 $\J_{hk}=\Ker u_{hk}$，由（iii），列 $0\to\J_{hk}\to\F_k\to\F_h\to0$ 正合；而函子 $\F\mapsto\C^i(X,\F)$ 正合（G，II，4.3）。
+
+置 $\G^i=\plim_k\C^i(X,\F_k)$；由 a），$j>0$、$i\geq0$ 时 $\mathrm H^j(X,\G^i)=0$。将证明 $\G^\bullet=(\G^i)_{i\geq0}$ 是 $\F$ 的解消；于是由上述消失性，$\mathrm H^\bullet(X,\F)=\mathrm H^\bullet(\Gamma(X,\G^\bullet))$（G，II，4.7.1）。
+
+对正合列 $0\to\F_k\to\C^0(X,\F_k)\to\C^1(X,\F_k)\to\cdots$ 取射影极限，显然得到层复形 $0\to\F\to\G^0\to\G^1\to\cdots$。只需证明 $i>0$ 时 $\HH^i(\G^\bullet)=0$；此层由预层 $U\mapsto\mathrm H^i(\Gamma(U,\G^\bullet))$ 生成（G，II，4.1）。而 $\Gamma(U,\G^\bullet)$ 是复形系统 $(\Gamma(U,\C^\bullet(X,\F_k)))_k$ 的射影极限（$\OI$，3.2.6）。由 a），各项间映射都满射；又因典范解消的限制仍为典范解消，
+\[
+\mathrm H^i(U,\F_k)=\mathrm H^i(\Gamma(U,\C^\bullet(X,\F_k))).
+\]
+由（i），对每个 $U\in\mathfrak B$ 可应用（13.2.3），故 $i\geq0$ 时
+\[
+\mathrm H^i(\Gamma(U,\G^\bullet))=\plim_k\mathrm H^i(U,\F_k).
+\]
+（ii）于是按定义说明 $i>0$ 时 $\HH^i(\G^\bullet)=0$。
+
+现在 $\mathrm H^i(X,\F)=\mathrm H^i(\Gamma(X,\G^\bullet))$，且
+\[
+\Gamma(X,\G^\bullet)=\plim_k\Gamma(X,\C^\bullet(X,\F_k)).
+\]
+刚才已经说明此系统在每个次数上的映射都满射；再次应用（13.2.3）即得结论。
+\end{proof}
+
+\egastatement{13.3.2}{注}
+（i）（13.3.1）只有在 $i>0$ 时才有实质内容，因为 $i=0$ 时，不作假设，$h_0$ 也总为同构（$\OI$，3.2.6）。
+
+（ii）特别地，若对每个 $k$、$i>0$、$U\in\mathfrak B$ 都有 $\mathrm H^i(U,\F_k)=0$，且各 $\Gamma(U,\F_k)\to\Gamma(U,\F_h)$ 满射，则（13.3.1）的（i）、（ii）成立。这将是（13.3.1）最常用的应用情形。\par
+
+% ---- END c0_s13a.tex ----
+% ---- BEGIN c0_s13b.tex ----
+\subsection{Mittag--Leffler 条件与射影系统的相伴分次对象}
+\src{69--71}
+\egapar{13.4.1}
+设 $\mathbf A=(A_k,u_{hk})_{k\in\Z}$ 为阿贝尔范畴 $C$ 中的射影系统；若存在 $k_0$ 使 $k<k_0$ 时 $A_k=0$，则称它\textbf{有下界}。在每个 $A_k$ 上以下列公式定义滤过 $(F^p(A_k))_{p\in\Z}$：
+\begin{equation}\tag{13.4.1.1}
+\begin{cases}
+F^p(A_k)=\Ker(A_k\to A_{p-1}),&p\leq k+1,\\
+F^p(A_k)=0,&p\geq k+1.
+\end{cases}
+\end{equation}
+依假设 $F^{k_0}(A_k)=A_k$ 且 $F^{k+1}(A_k)=0$，所以这是有限滤过（11.1.3）。相伴分次对象为
+\[
+\gr^p(A_k)=\Ker(A_k\to A_{p-1})/\Ker(A_k\to A_p),
+\]
+因而同构于 $\Ker(A_k\to A_{p-1})$ 经 $A_k\to A_p$ 的像。由射影系统态射的传递性，
+\begin{equation}\tag{13.4.1.2}
+\gr^p(A_k)=\Ker(A_p\to A_{p-1})\cap\Im(A_k\to A_p).
+\end{equation}
+由（13.4.1.1），$\Ker(A_p\to A_{p-1})=\gr^p(A_p)$，所以也有
+\begin{equation}\tag{13.4.1.3}
+\gr^p(A_k)=\gr^p(A_p)\cap\Im(A_k\to A_p).
+\end{equation}
+此外，这些定义说明，当 $k\geq h$ 时 $u_{hk}(F^p(A_k))\subset F^p(A_h)$；故对每个 $p\in\Z$，各 $\gr^p(u_{hk})$ 定义射影系统 $(\gr^p(A_k))_k$。
+
+\egapar{13.4.2}
+若 $k$ 充分大时态射 $A_{k+1}\to A_k$ 都为同构，则称射影系统 $\mathbf A$ \textbf{最终常值}。若各 $A_j\to A_i$（$j\geq i$）均为满态射，则称 $\mathbf A$ \textbf{严格}。
+
+当 $\mathbf A$ 严格时，由（13.4.1.3），对 $p\leq k\leq h$，典范态射 $\gr^p(A_h)\to\gr^p(A_k)$ 为同构；换言之，$(\gr^p(A_k))_k$ 最终常值。这时，对每个 $p$，把 $\gr^p(A_p)$ 与 $\plim_k\gr^p(A_k)$ 相识别，所成的对象列记为 $\gr^\bullet(\mathbf A)$，称为严格射影系统 $\mathbf A$ 的\textbf{相伴分次对象}。
+
+现在设有下界射影系统 $\mathbf A$ 满足（ML）。已知其普遍像对象构成的系统 $\mathbf A'=(A'_k)$ 严格（13.1.2），且仍有下界。将 $\mathbf A'$ 的相伴分次对象 $\gr^\bullet(\mathbf A')$ 也称为 $\mathbf A$ 的相伴分次对象，并记作 $\gr^\bullet(\mathbf A)$。
+
+\egastatement{13.4.3}{命题}
+设 $\mathbf A=(A_k)_{k\in\Z}$ 为阿贝尔范畴 $C$ 中有下界的射影系统。下列条件等价：
+
+\noindent a）$\mathbf A$ 满足（ML）。\qquad
+b）对每个 $p\in\Z$，$(\gr^p(A_k))_{k\in\Z}$ 最终常值。
+
+这些条件成立时，对每个 $p\in\Z$ 有典范同构
+\begin{equation}\tag{13.4.3.1}
+\gr^p(\mathbf A)\simeq\plim_k\gr^p(A_k).
+\end{equation}
+\begin{proof}
+由（13.4.1.2），a）立即推出 b）；将同一公式应用于 $\mathbf A'$（记号见13.4.2），按定义即得（13.4.3.1）。对 $k\leq h$，置 $A_{kh}=\Im(A_h\to A_k)$；若 $k\leq h\leq j$，则 $A_{kj}\subset A_{kh}\subset A_k$。
+
+在 $A_{kh}$ 上取由 $(F^p(A_k))$ 诱导的滤过。由定义系统的态射的传递性，立即可验证它也是 $(F^p(A_h))$ 的商滤过；故
+\begin{equation}\tag{13.4.3.2}
+\gr^p(A_{kh})=\Im(\gr^p(A_h)\to\gr^p(A_k)).
+\end{equation}
+设 b）成立。对每个 $p\in\Z$ 及 $k\geq p$，存在整数 $L(p,k)$，使 $h\geq L(p,k)$ 时（13.4.3.2）右端恒定。由于 $p<k_0$ 时 $\gr^p(A_{kh})=0$，对于给定 $k$，只有有限多个 $p\leq k$ 的 $L(p,k)$ 非零。以 $L(k)=m$ 表示这些整数的最大值。则 $h\geq m$ 时 $A_{kh}\subset A_{km}$，且由 $m$ 的定义，典范嵌入 $A_{kh}\to A_{km}$ 给出同构 $\gr^\bullet(A_{kh})\simeq\gr^\bullet(A_{km})$。由于滤过有限，嵌入本身为双射（Bourbaki，《交换代数》，第 III 章，§2，第8小节，定理1），所以 $\mathbf A$ 满足（ML）。
+\end{proof}
+
+\egapar{13.4.4}
+设 $C$ 中存在射影极限 $A=\plim A_k$。在（13.4.1）的定义中可以把 $A_k$ 换成 $A$，如此得到的滤过仍满足
+\begin{equation}\tag{13.4.4.1}
+\gr^p(A)=\gr^p(A_p)\cap\Im(A\to A_p).
+\end{equation}
+
+\egastatement{13.4.5}{推论}
+设 $C$ 为阿贝尔群范畴。若 $\mathbf A$ 满足（ML），且 $A=\plim A_k$，则对每个 $p\in\Z$ 有典范同构
+\begin{equation}\tag{13.4.5.1}
+\gr^p(A)\simeq\plim_k\gr^p(A_k).
+\end{equation}
+\begin{proof}
+当 $k$ 充分大时，$\Im(A_k\to A_p)=\Im(A\to A_p)$（Bourbaki，《一般拓扑》，第 II 章，第3版，§3，第5小节，定理1）。因此结论由（13.4.1.3）、（13.4.4.1）得出。
+\end{proof}
+
+\subsection{滤过复形谱序列的射影极限}
+\src{71--73}
+\egapar{13.5.1}
+设 $C$ 为阿贝尔范畴，$X^\bullet$ 为 $C$ 的复形，赋有滤过 $(F^p(X^\bullet))_p$，且存在 $p_0$ 使 $F^{p_0}(X^\bullet)=X^\bullet$。对每个 $k\in\Z$，考虑 $X_k^\bullet=X^\bullet/F^{k+1}(X^\bullet)$。它典范地具有由下列各项组成的滤过：$p\leq k$ 时
+\[
+F^p(X_k^\bullet)=F^p(X^\bullet)/F^{k+1}(X^\bullet),
+\]
+$p\geq k+1$ 时 $F^p(X_k^\bullet)=0$。此外，有典范态射 $X_{k+1}^\bullet\to X_k^\bullet$，使 $\mathbf X^\bullet=(X_k^\bullet)_{k\in\Z}$ 成为 $C$ 的滤过复形射影系统。注意它严格，且 $k<p_0$ 时 $X_k^\bullet=0$。
+
+\egapar{13.5.2}
+更一般地，考虑 $C$ 中有下界的严格复形射影系统 $\mathbf X^\bullet=(X_k^\bullet)_{k\in\Z}$；在每个 $X_k^\bullet$ 上取（13.4.1）定义的滤过（在 $C$ 的有下界复形所成阿贝尔范畴中进行）。各 $X_k^\bullet\to X_p^\bullet$（$p\leq k$）成为有限滤过复形的态射。滤过复形谱序列的函子性（11.2.3）说明，定义 $\mathbf X^\bullet$ 的各态射也给出谱序列之间的态射，从而 $E(\mathbf X^\bullet)=(E(X_k^\bullet))$ 成为谱序列的射影系统。
+
+\egastatement{13.5.3}{引理}
+设滤过复形射影系统 $\mathbf X^\bullet=(X_k^\bullet)_{k\in\Z}$ 按（13.5.2）得到。则：
+\begin{enumerate}[label=\alph*)]
+\item 当 $r>p-p_0$ 时，对每个 $k\in\Z$，有 $B_r^{pq}(X_k^\bullet)=B_\infty^{pq}(X_k^\bullet)$。
+\item 当 $k+1\leq p+r$ 时，有 $Z_r^{pq}(X_k^\bullet)=Z_\infty^{pq}(X_k^\bullet)$。
+\item 当 $k+1\geq p+r$ 时，对每个 $h\geq k$，态射
+\[
+Z_r^{pq}(X_h^\bullet)\to Z_r^{pq}(X_k^\bullet),\qquad
+B_r^{pq}(X_h^\bullet)\to B_r^{pq}(X_k^\bullet)
+\]
+均为同构。
+\end{enumerate}
+\begin{proof}
+这三个性质立即由（11.2.2）的定义得出，并使用 $p-r<p_0$ 时 $F^{p-r+1}(X_k^\bullet)=X_k^\bullet$。
+\end{proof}
+
+\egapar{13.5.4}
+设（13.5.3）的假设成立。对固定 $p,q,r$（$r$ 有限），射影系统 $(Z_r^{pq}(X_k^\bullet))_k$、$(B_r^{pq}(X_k^\bullet))_k$、$(E_r^{pq}(X_k^\bullet))_k$ 都最终常值；分别以 $Z_r^{pq}(\mathbf X^\bullet)$、$B_r^{pq}(\mathbf X^\bullet)$ 及
+\[
+E_r^{pq}(\mathbf X^\bullet)=Z_r^{pq}(\mathbf X^\bullet)/B_r^{pq}(\mathbf X^\bullet)
+\]
+表示它们的射影极限。前两个对象典范地识别为 $E_1^{pq}(\mathbf X^\bullet)$ 的子对象。$d_r^{pq}$ 的定义（M，XV，1）说明，相对于 $X_k^\bullet$ 的这些态射也最终常值，因而定义态射
+\begin{equation}\tag{13.5.4.1}
+d_r^{pq}:E_r^{pq}(\mathbf X^\bullet)\to E_r^{p+r,q-r+1}(\mathbf X^\bullet),
+\end{equation}
+满足 $d_r^{p+r,q-r+1}\circ d_r^{pq}=0$。此外，$\Ker d_r^{pq}$ 典范地同构于 $Z_{r+1}^{pq}(\mathbf X^\bullet)/B_r^{pq}(\mathbf X^\bullet)$，而 $\Im d_r^{pq}$ 典范地同构于
+\[
+B_{r+1}^{p+r,q-r+1}(\mathbf X^\bullet)/B_r^{p+r,q-r+1}(\mathbf X^\bullet).
+\]
+
+\egastatement{13.5.5}{引理}
+在（13.5.3）的假设下，对 $s\geq r>p-p_0$，有典范单态射
+\begin{equation}\tag{13.5.5.1}
+i:E_s^{pq}(\mathbf X^\bullet)\to E_r^{pq}(\mathbf X^\bullet)
+\end{equation}
+及典范同构
+\begin{equation}\tag{13.5.5.2}
+j_r:E_r^{pq}(\mathbf X^\bullet)\iso E_\infty^{pq}(X_{p+r-1}^\bullet),
+\end{equation}
+使图
+\begin{equation}\tag{13.5.5.3}
+\begin{tikzcd}
+E_s^{pq}(\mathbf X^\bullet)\arrow[r,"j_s"]\arrow[d,"i"']&E_\infty^{pq}(X_{p+s-1}^\bullet)\arrow[d]\\
+E_r^{pq}(\mathbf X^\bullet)\arrow[r,"j_r"']&E_\infty^{pq}(X_{p+r-1}^\bullet)
+\end{tikzcd}
+\end{equation}
+交换；右边的竖直箭头来自 $X_{p+s-1}^\bullet\to X_{p+r-1}^\bullet$。
+\begin{proof}
+$i$ 的存在性来自 $r>p-p_0$ 时 $B_r^{pq}(X_k^\bullet)=B_\infty^{pq}(X_k^\bullet)$（13.5.3，a）。当 $k+1\leq p+r$ 时，$Z_r^{pq}(X_k^\bullet)=Z_\infty^{pq}(X_k^\bullet)$（13.5.3，b）；特别地，对 $k=p+r-1$ 成立。另一方面，由（13.5.3，c），$Z_r^{pq}(X_{p+r-1}^\bullet)$、$B_r^{pq}(X_{p+r-1}^\bullet)$ 分别典范地识别为 $Z_r^{pq}(\mathbf X^\bullet)$、$B_r^{pq}(\mathbf X^\bullet)$。这就得到 $j_r$ 的存在性及图的交换性。
+\end{proof}
+
+\egastatement{13.5.6}{推论}
+在（13.5.3）的假设下，若 $\plim_rE_r^{pq}(\mathbf X^\bullet)$、$\plim_kE_\infty^{pq}(X_k^\bullet)$ 中一个存在，则另一个也存在，并有典范同构
+\begin{equation}\tag{13.5.6.1}
+j_\infty:\plim_rE_r^{pq}(\mathbf X^\bullet)\iso\plim_kE_\infty^{pq}(X_k^\bullet).
+\end{equation}
+此外，第一个射影系统最终常值，当且仅当第二个射影系统最终常值。
+
+\egapar{13.5.7}
+以 $B_\infty^{pq}(\mathbf X^\bullet)$、$Z_\infty^{pq}(\mathbf X^\bullet)$ 表示 $E_1^{pq}(\mathbf X^\bullet)$ 中分别等于 $r>p-p_0$ 时 $B_r^{pq}(\mathbf X^\bullet)$，及 $\inf_r Z_r^{pq}(\mathbf X^\bullet)$（在其存在时）的子对象。于是 $\plim_rE_r^{pq}(\mathbf X^\bullet)$ 典范地识别为
+\[
+E_\infty^{pq}(\mathbf X^\bullet)
+=Z_\infty^{pq}(\mathbf X^\bullet)/B_\infty^{pq}(\mathbf X^\bullet).
+\]
+注意各 $Z_r^{pq}(\mathbf X^\bullet)$、$B_r^{pq}(\mathbf X^\bullet)$、$E_r^{pq}(\mathbf X^\bullet)$（$1\leq r\leq+\infty$）及 $d_r^{pq}$，都以函子方式依赖于满足（13.5.5）限制条件的系统 $\mathbf X^\bullet$；而（13.5.5）、（13.5.6）所定义的态射也具有函子性。
+
+\subsection{函子相对于有限滤过对象的谱序列}
+\src{73--75}
+\egapar{13.6.1}
+设 $C,C'$ 为阿贝尔范畴，$T:C\to C'$ 为加性协变函子。假设 $C$ 的每个对象都同构于某个内射对象的子对象，故右导出函子 $\mathrm R^pT$（$p\geq0$）存在。
+
+\egastatement{13.6.2}{引理}
+设对象 $A\in C$ 具有有限滤过 $(F^i(A))_{i\in\Z}$。则存在 $A$ 的内射解消 $X^\bullet=(X^n)_{n\geq0}$，并具有有限滤过 $(F^i(X^\bullet))_{i\in\Z}$，使 $F^i(A)=A$（分别地，$F^i(A)=0$）推出 $F^i(X^\bullet)=X^\bullet$（分别地，$F^i(X^\bullet)=0$），且对每个 $i$，$F^i(X^\bullet)$ 是 $F^i(A)$ 的内射解消。
+\begin{proof}
+设 $p$ 为满足 $F^p(A)=A$ 的最大指标，$q>p$ 为满足 $F^q(A)=0$ 的最小指标。对 $q-p$ 归纳；$q-p=1$ 时显然。已构造好 $A/F^{q-1}(A)$ 的满足所需性质的内射解消 $X''^\bullet$ 后，考虑正合列
+\[
+0\to F^{q-1}(A)\to A\to A/F^{q-1}(A)\to0.
+\]
+取 $F^{q-1}(A)$ 的内射解消 $X'^\bullet$，再确定 $A$ 的内射解消 $X^\bullet$，使有与上述列相容的正合列 $0\to X'^\bullet\to X^\bullet\to X''^\bullet\to0$（M，V，2.2）；显然所得 $X^\bullet$ 满足要求。
+\end{proof}
+
+\egastatement{13.6.3}{推论}
+设 $B$ 为 $C$ 的另一个有限滤过对象，$s$ 为整数，$u:A\to B$ 满足对每个 $i\in\Z$ 有 $u(F^i(A))\subset F^{i+s}(B)$。若 $Y^\bullet=(Y^n)_{n\geq0}$ 是 $B$ 的内射解消，赋有满足（13.6.2）性质的滤过，则存在与 $u$ 相容的态射 $v:X^\bullet\to Y^\bullet$，使 $v(F^i(X^\bullet))\subset F^{i+s}(Y^\bullet)$。此外，任意两个这样的态射 $v,v'$ 都同伦。
+\begin{proof}
+由上述构造及（M，V，2.3），对 $q-p$ 归纳即得。
+\end{proof}
+
+\egapar{13.6.4}
+在（13.6.2）的假设下，考虑 $C'$ 中的复形 $T(X^\bullet)$。由于各 $F^p(X^\bullet)$ 逐项是 $X^\bullet$ 的直和因子，$T(F^p(X^\bullet))$ 显然给它一个滤过。由（13.6.3），该滤过复形的谱序列在同构意义下只依赖于滤过对象 $A$。其终项为 $\mathrm R^\bullet T(A)$，所带滤过为
+\begin{equation}\tag{13.6.4.1}
+\begin{aligned}
+F^p(\mathrm R^nT(A))
+&=\Im(\mathrm R^nT(F^p(A))\to\mathrm R^nT(A))\\
+&=\Ker(\mathrm R^nT(A)\to\mathrm R^nT(A/F^p(A)))
+\end{aligned}
+\end{equation}
+（11.2.2），其 $E_1$ 项为
+\begin{equation}\tag{13.6.4.2}
+E_1^{pq}=\mathrm R^{p+q}T(\gr^p(A)),
+\end{equation}
+这里照例 $\gr^p(A)=F^p(A)/F^{p+1}(A)$。由（11.2.2），终项的滤过有限；对给定 $p,q$，$B_r^{pq}(A)=B_r^{pq}(T(X^\bullet))$ 与 $Z_r^{pq}(A)=Z_r^{pq}(T(X^\bullet))$ 的序列都稳定，因此谱序列双正则（11.1.3）。将它记为 $E(A)=(E_r^{pq}(A))$，称作\textbf{函子 $T$ 相对于滤过对象 $A$ 的谱序列}。
+
+\egapar{13.6.5}
+现在设（13.6.3）的假设成立，并沿用其记号。各 $F^i(X^\bullet)$、$F^i(Y^\bullet)$ 分别逐项为 $X^\bullet$、$Y^\bullet$ 的直和因子，故对每个 $i$，
+\[
+(Tv)(T(F^i(X^\bullet)))\subset T(F^{i+s}(Y^\bullet)).
+\]
+由（11.2.2）的定义，对 $1\leq r\leq+\infty$，$Tv$ 给出态射
+\[
+B_r^{pq}(T(X^\bullet))\to B_r^{p+s,q-s}(T(Y^\bullet)),\qquad
+Z_r^{pq}(T(X^\bullet))\to Z_r^{p+s,q-s}(T(Y^\bullet)),
+\]
+从而得到 $w_r:E_r^{pq}(A)\to E_r^{p+s,q-s}(B)$。同样在终项上得到 $u_n:\mathrm R^nT(A)\to\mathrm R^nT(B)$，满足
+\[
+u_n(F^p(\mathrm R^nT(A)))\subset F^{p+s}(\mathrm R^nT(B)).
+\]
+$d_r^{pq}$ 的定义（M，XV，1）还说明以下图交换：
+\[
+\begin{tikzcd}
+E_r^{pq}(A)\arrow[r,"d_r^{pq}"]\arrow[d,"w_r"']&E_r^{p+r,q-r+1}(A)\arrow[d,"w_r"]\\
+E_r^{p+s,q-s}(B)\arrow[r,"d_r^{p+s,q-s}"']&E_r^{p+r+s,q-r-s+1}(B).
+\end{tikzcd}
+\]
+由此得到涉及 $\alpha_r^{pq}$ 的类似交换图，具体写法留给读者。最后，对终项也有交换图（同上）：
+\[
+\begin{tikzcd}
+E_\infty^{pq}(A)\arrow[r,"\beta^{pq}"]\arrow[d]&\gr^p(\mathrm R^{p+q}T(A))\arrow[d,"u_{p+q}"]\\
+E_\infty^{p+s,q-s}(B)\arrow[r,"\beta^{p+s,q-s}"']&\gr^{p+s}(\mathrm R^{p+q}T(B)).
+\end{tikzcd}
+\]
+
+\egapar{13.6.6}
+特别地，设存在赋有滤过 $(F^i(S))_{i\in\Z}$ 的环 $S$ 及环同态
+\begin{equation}\tag{13.6.6.1}
+h:S\longrightarrow\Hom_C(A,A),
+\end{equation}
+使对 $t\in F^j(S)$ 及任意 $i,j$，均有 $h_t(F^i(A))\subset F^{i+j}(A)$。简言之，称 $A$ 具有滤过环 $S$ 上的\textbf{滤过 $S$-$C$-模}结构。
+
+取相伴分次对象，$t\in F^j(S)$ 给出的每个 $h_t$ 都在 $\gr^\bullet(A)$ 上定义次数为 $j$ 的齐次分次自同态 $\bar h_t$，且它只依赖于 $t$ 在 $\gr^j(S)$ 中的类。这样得到分次环同态
+\[
+\bar h:\gr^\bullet(S)\longrightarrow\Hom_C(\gr^\bullet(A),\gr^\bullet(A)),
+\]
+右端为分次自同态环。称 $\gr^\bullet(A)$ 具有\textbf{分次 $\gr^\bullet(S)$-$C$-模}结构。
+
+由（13.6.5），对 $1\leq r\leq+\infty$，每个 $t\in\gr^s(S)$ 在双分次对象 $(B_r^{pq}(A))_{p,q}$、$(Z_r^{pq}(A))_{p,q}$、$E_r(A)=(E_r^{pq}(A))_{p,q}$ 上典范地定义双次数为 $(s,-s)$ 的自同态；当 $r$ 有限时，$E_r(A)$ 上此自同态与由 $d_r^{pq}$ 定义的双分次自同态交换。由于这些自同态满足通常的结合性及关于环和对象加法的分配性，简言之，称这些对象为\textbf{双分次 $\gr^\bullet(S)$-$C'$-模}；各 $\alpha_r^{pq}$ 显然给出这种结构的同构。
+
+对每个整数 $n$，用 $B_r^n(A)$（分别地，$Z_r^n(A),E_r^n(A)$）表示只取 $p+q=n$ 的各 $B_r^{pq}(A)$（分别地，$Z_r^{pq}(A),E_r^{pq}(A)$）所成的分次子对象，$1\leq r<+\infty$。它们显然为分次 $\gr^\bullet(S)$-$C'$-模。最后，每个 $t\in\gr^j(S)$ 也在 $\gr^\bullet(\mathrm R^nT(A))$ 上定义次数为 $j$ 的分次自同态，使它成为分次 $\gr^\bullet(S)$-$C'$-模；$p+q=n$ 的各 $\beta^{pq}$ 给出 $E_\infty^n(A)$ 到 $\gr^\bullet(\mathrm R^nT(A))$ 的这种结构的同构。
+
+当 $C'$ 为阿贝尔群范畴时，$S$-$C'$-模、分次或双分次 $\gr^\bullet(S)$-$C'$-模结构，就是通常的 $S$-模、分次或双分次 $\gr^\bullet(S)$-模结构。\par
+
+% ---- END c0_s13b.tex ----
+% ---- BEGIN c0_s13c.tex ----
+\subsection{变元的射影极限与导出函子}
+\src{75--79}
+\egapar{13.7.1}
+设 $C,C'$ 为阿贝尔范畴，且 $C$ 的每个对象都是某个内射对象的子对象；设 $T:C\to C'$ 为加性协变函子。考虑 $C$ 中有下界的严格射影系统 $\mathbf A=(A_k)_{k\in\Z}$；具体假设 $k<k_0$ 时 $A_k=0$。依公式（13.4.1.1），在每个 $A_k$ 上典范地赋予滤过 $(F^i(A_k))_{i\in\Z}$。由于系统严格，对 $i\leq j\leq k+1$，典范态射
+\begin{equation}\tag{13.7.1.1}
+F^i(A_h)/F^j(A_h)\longrightarrow F^i(A_k)/F^j(A_k)\qquad(h\geq k)
+\end{equation}
+均为同构。还要回顾，对每个 $k$，$F^{k_0}(A_k)=A_k$、$F^{k+1}(A_k)=0$。
+
+\egapar{13.7.2}
+对每个 $k$，构造 $A_k$ 的具有（13.6.2）性质的内射解消 $X_k^\bullet=(X_k^n)_{n\geq0}$。典范态射 $A_{k+1}\to A_k$ 使得可以为每个 $k$ 定义与滤过相容的复形态射 $X_{k+1}^\bullet\to X_k^\bullet$（13.6.3），从而 $\mathbf X^\bullet=(X_k^\bullet)_{k\in\Z}$ 成为复形射影系统。
+
+还可以假设此系统严格。事实上，由同构（13.7.1.1），$A_k\simeq A_{k+1}/F^{k+1}(A_{k+1})$；因此构造 $X_{k+1}^\bullet$ 时，可把该商对象的内射解消取为 $X_k^\bullet$。由（M，V，2.3），可以将复形态射构造为经商给出保持滤过的同构
+\[
+X_{k+1}^\bullet/F^{k+1}(X_{k+1}^\bullet)\iso X_k^\bullet,
+\]
+这就是（13.5.1）的条件。
+
+\egapar{13.7.3}
+按构造，复形 $T(X_k^\bullet)$ 的射影系统 $T(\mathbf X^\bullet)$ 满足（13.5.3）的假设。因此（13.5.4）、（13.5.5）、（13.5.6）可用于谱序列 $E(T(X_k^\bullet))=E(A_k)$。对 $1\leq r\leq+\infty$，用 $E_r^{pq}(\mathbf A)$ 表示 $E_r^{pq}(T(\mathbf X^\bullet))$（$r=+\infty$ 时见13.5.7），其他类似记号亦然。特别地，由（13.6.4.2）及 $(\gr^p(A_k))_k$ 最终常值，
+\begin{equation}\tag{13.7.3.1}
+E_1^{pq}(\mathbf A)=\mathrm R^{p+q}T(\gr^p(\mathbf A)).
+\end{equation}
+这些结果与（13.4.3）给出下述命题，它首先由施维术（Shih Weishu）用另一种未发表的方法证明。
+
+\egastatement{13.7.4}{命题（Shih）}
+设 $n$ 为整数。下列两个条件等价：
+
+\noindent a）对每对满足 $p+q=n$ 的 $(p,q)$，射影系统 $(E_r^{pq}(\mathbf A))_{r\geq2}$ 最终常值。
+
+\noindent b）射影系统 $\mathrm R^nT(\mathbf A)=(\mathrm R^nT(A_k))_{k\in\Z}$ 满足（ML）。
+
+当这些条件成立时，对每个 $p\in\Z$ 有典范同构
+\begin{equation}\tag{13.7.4.1}
+\gr^p(\mathrm R^nT(\mathbf A))\simeq E_\infty^{p,n-p}(\mathbf A).
+\end{equation}
+\begin{proof}
+由（13.5.6），a）等价于 $p+q=n$ 时 $(E_\infty^{pq}(A_k))_k$ 最终常值。另一方面，$\gr^p(\mathrm R^nT(A_k))$ 典范地同构于 $E_\infty^{p,n-p}(A_k)$，所以由（13.4.3），a）、b）等价。同构（13.7.4.1）就是将（13.5.6.1）应用于当前情形所得。
+\end{proof}
+
+\egastatement{13.7.5}{推论}
+设 $\mathbf F=(\F_k)_{k\in\mathbf N}$ 为满足（13.3.1）的（i）、（ii）、（iii）的阿贝尔群层射影系统，$\F=\plim\F_k$。对于函子 $\G\mapsto\Gamma(X,\G)$，假设每对满足 $p+q=n$ 或 $p+q=n+1$ 的 $(p,q)$，其射影系统 $(E_r^{pq}(\mathbf F))_r$ 都最终常值。在 $\mathrm H^{n+1}(X,\F)$ 上取滤过
+\[
+F^p(\mathrm H^{n+1}(X,\F))
+=\Ker(\mathrm H^{n+1}(X,\F)\to\mathrm H^{n+1}(X,\F_{p-1})).
+\]
+则对每个 $p\in\Z$ 有典范同构
+\begin{equation}\tag{13.7.5.1}
+\gr^p(\mathrm H^{n+1}(X,\F))\simeq E_\infty^{p,n-p+1}(\mathbf F).
+\end{equation}
+\begin{proof}
+在（13.7.4）中取 $C$ 为 $X$ 上阿贝尔群层范畴，$C'$ 为阿贝尔群范畴，$T=\Gamma$，得到对每个 $p$ 的典范同构
+\[
+\gr^p(\mathrm R^{n+1}T(\mathbf F))\simeq E_\infty^{p,n-p+1}(\mathbf F).
+\]
+另一方面，由（13.7.4），$(\mathrm H^n(X,\F_k))_k$ 满足（ML），故由（13.3.1）有典范同构
+\begin{equation}\tag{13.7.5.1}
+\mathrm H^{n+1}(X,\F)\iso\plim_k\mathrm H^{n+1}(X,\F_k).
+\end{equation}
+\transnote{原版将这一中间公式也编号为（13.7.5.1），与推论陈述中的公式重号；这里保留重号。}
+又由（13.7.4），$\mathrm R^{n+1}\Gamma(\mathbf F)$ 满足（ML），故有典范同构
+\[
+\gr^p(\mathrm R^{n+1}\Gamma(\mathbf F))
+\simeq\plim_k\gr^p(\mathrm H^{n+1}(X,\F_k))
+\]
+（13.4.3），以及
+\[
+\plim_k\gr^p(\mathrm H^{n+1}(X,\F_k))
+\simeq\gr^p(\plim_k\mathrm H^{n+1}(X,\F_k))
+\]
+（13.4.5）。因此只需证明中间的同构（13.7.5.1）与两端的滤过相容；这立即由定义及对每个 $p$ 的交换图得出：
+\[
+\begin{tikzcd}
+\mathrm H^{n+1}(X,\F)\arrow[rr,"\sim"]\arrow[dr]&&\plim_k\mathrm H^{n+1}(X,\F_k)\arrow[dl]\\
+&\mathrm H^{n+1}(X,\F_{p-1})&
+\end{tikzcd}
+\]
+\end{proof}
+
+\egapar{13.7.6}
+设环 $S$ 具有滤过 $(F^i(S))_{i\in\Z}$，且 $F^0(S)=S$（故 $i<0$ 时 $\gr^i(S)=0$）。假设每个 $A_k$ 连同（13.7.1）的滤过都是滤过 $S$-$C$-模（13.6.6），且 $A_k\to A_h$（$k\geq h$）均为这种结构的态射；简言之，称 $\mathbf A$ 为\textbf{滤过 $S$-$C$-模的射影系统}。
+
+立即可知，对 $k\geq h$、$1\leq r\leq+\infty$，态射 $B_r^{pq}(A_k)\to B_r^{pq}(A_h)$、$Z_r^{pq}(A_k)\to Z_r^{pq}(A_h)$ 都是双分次 $\gr^\bullet(S)$-$C'$-模的态射（13.6.5）；而对有限的 $r$，族 $(Z_r^{pq}(\mathbf A))$、$(B_r^{pq}(\mathbf A))$、$(E_r^{pq}(\mathbf A))$ 也为双分次 $\gr^\bullet(S)$-$C'$-模，前两个是 $(E_1^{pq}(\mathbf A))$ 的子模。仍以 $Z_r^n(\mathbf A)$、$B_r^n(\mathbf A)$、$E_r^n(\mathbf A)$ 表示只取 $p+q=n$ 各项所得的子对象；它们是分次 $\gr^\bullet(S)$-$C'$-模。
+
+当 $(E_r^{pq}(\mathbf A))_r$ 最终常值时，$(E_\infty^{pq}(\mathbf A))$ 也是双分次 $\gr^\bullet(S)$-$C'$-模，每个 $E_\infty^n(\mathbf A)$ 是分次模。此外，对每个 $k$，各
+\[
+\beta^{p,n-p}:E_\infty^{p,n-p}(A_k)\iso\gr^p(\mathrm R^nT(A_k))
+\]
+构成 $E_\infty^n(A_k)\to\gr^\bullet(\mathrm R^nT(A_k))$ 的分次 $\gr^\bullet(S)$-$C'$-模同构。在上述条件下，相应的
+\[
+E_\infty^n(\mathbf A)\iso\plim_k\gr^\bullet(\mathrm R^nT(A_k))
+\]
+也为这种结构的同构；而典范同构
+\[
+\gr^\bullet(\mathrm R^nT(\mathbf A))\iso\plim_k\gr^\bullet(\mathrm R^nT(A_k))
+\]
+显然亦然。因此，（13.7.4.1）的各同构合成一个分次 $\gr^\bullet(S)$-$C'$-模同构。
+
+\NewNote{\textbf{作者勘误提示：}本命题的有限性假设与若干次数范围已有作者正式修正。 参见\hyperlink{errIII:24}{《勘误与增补（清单二）》第24条}。}
+\egastatement{13.7.7}{命题}
+设 $S$ 为诺特 $\frj$-进环。设 $C$ 为阿贝尔范畴，每个对象都同构于某个内射对象的子对象；$T$ 为从 $C$ 到阿贝尔群范畴的加性协变函子。设 $\mathbf A=(A_k)_{k\in\Z}$ 为有下界的严格滤过 $S$-$C$-模射影系统（$S$ 上取 $\frj$-进滤过）。对于给定整数 $n$，假设：
+
+\noindent（$\mathrm F_n$）当 $m=n$ 及 $m=n+1$ 时，分次 $\gr^\bullet(S)$-模
+\[
+E_1^{(m)}(\mathbf A)
+=(\mathrm R^mT(\gr^p(\mathbf A)))_{p\in\Z}
+\]
+为有限型（见13.7.3.1）。则：
+\begin{enumerate}[label=(\roman*)]
+\item 射影系统 $(\mathrm R^nT(A_k))_k$ 与 $(\mathrm R^{n+1}T(A_k))_k$ 满足（ML）。
+\item 若置 $\mathrm R'^nT(\mathbf A)=\plim_k\mathrm R^nT(A_k)$，则 $\mathrm R'^nT(\mathbf A)$ 是有限型 $S$-模。
+\item 在 $\mathrm R'^nT(\mathbf A)$ 上以
+\[
+F^p(\mathrm R'^nT(\mathbf A))
+=\Ker(\mathrm R'^nT(\mathbf A)\to\mathrm R^nT(A_{p-1}))
+\]
+定义的滤过是 $\frj$-好滤过，即对每个 $p$，
+\[
+\frj F^p(\mathrm R'^nT(\mathbf A))\subset F^{p+1}(\mathrm R'^nT(\mathbf A)),
+\]
+且当 $p$ 充分大时等号成立。特别地，此滤过所定义的拓扑就是 $\frj$-进拓扑。
+\item $p+q=n$ 或 $p+q=n+1$ 时，射影系统 $(E_r^{pq}(\mathbf A))_r$ 最终常值。因此 $E_\infty^{pq}(\mathbf A)$ 有定义（13.5.7），并有典范的分次 $\gr^\bullet(S)$-模同构
+\begin{equation}\tag{13.7.7.1}
+\gr^p(\mathrm R'^nT(\mathbf A))\simeq E_\infty^{p,n-p}(\mathbf A)\qquad(p\in\Z).
+\end{equation}
+\end{enumerate}
+注意，利用（13.7.4.1），同构（13.7.7.1）允许我们略滥用记号，将射影系统 $\mathrm R^nT(\mathbf A)$ 的极限 $\mathrm R'^nT(\mathbf A)$ 也写成 $\mathrm R^nT(\mathbf A)$。
+
+\eproof
+由于分次环 $\gr^\bullet(S)$ 诺特（Bourbaki，《交换代数》，第 III 章，§2，第9小节，定理2的推论5），当 $m=n,n+1$ 时，$E_1^{(m)}(\mathbf A)$ 的分次子模递增列 $B_r^{(m)}(\mathbf A)$（13.6.6）稳定，所以（11.1.10）的条件 b）成立。因而（13.7.4）的条件 a）对 $n,n+1$ 成立，这已证明（i）。
+
+此外，由（13.7.4.1）及（13.7.6）的说明，$\gr^\bullet(\mathrm R^nT(\mathbf A))$ 是同构于
+\[
+E_\infty^{(n)}(\mathbf A)=Z_\infty^{(n)}(\mathbf A)/B_\infty^{(n)}(\mathbf A)
+\]
+的分次 $\gr^\bullet(S)$-模。由于 $Z_\infty^{(n)}(\mathbf A)$ 为 $E_1^{(n)}(\mathbf A)$ 的子模，它有限型，故 $E_\infty^{(n)}(\mathbf A)$ 也有限型。又对于滤过 $(F^p(\mathrm R'^nT(\mathbf A)))$，（13.4.5）给出 $\gr^\bullet(\mathrm R'^nT(\mathbf A))$ 与 $\gr^\bullet(\mathrm R^nT(\mathbf A))$ 作为 $\gr^\bullet(S)$-模的同构，因此（iv）得证。（ii）、（iii）将由这些结果及下述引理得出。
+
+\egastatement{13.7.7.2}{引理}
+设 $S$ 为诺特 $\frj$-进环，$M$ 为赋有余离散滤过 $(F^p(M))_{p\in\Z}$ 的 $S$-模，并满足 $\frj F^p(M)\subset F^{p+1}(M)$（即 $M$ 是带有 $\frj$-进滤过的 $S$ 上的滤过模）。再假设 $M$ 对此滤过所定义的拓扑分离。则下列条件等价：
+\begin{enumerate}[label=\alph*)]
+\item $M$ 为有限型 $S$-模，且 $(F^p(M))$ 为 $\frj$-好滤过；
+\item $\gr^\bullet(M)$ 为有限型 $\gr^\bullet(S)$-模；
+\item 各 $\gr^p(M)$ 为有限型 $S$-模，且 $p$ 充分大时典范同态
+\begin{equation}\tag{13.7.7.3}
+\frj\otimes_S\gr^p(M)\longrightarrow\gr^{p+1}(M)
+\end{equation}
+均满射。
+\end{enumerate}
+这些典范同态由 $\frj\otimes_S F^p(M)\to F^{p+1}(M)$ 导出，因为复合同态
+\[
+\frj\otimes_S F^{p+1}(M)\to\frj\otimes_S F^p(M)\to F^{p+1}(M)
+\]
+的像是 $\frj F^{p+1}(M)\subset F^{p+2}(M)$。
+
+证明见 Bourbaki，《交换代数》，第 III 章，§3，第1小节，命题3。
+
+\egapar{13.7.7.4}
+为应用引理（13.7.7.2），只需注意：上述滤过在 $\mathrm R'^nT(\mathbf A)$ 上定义的拓扑使它成为分离完备 $S$-模，因为这正是离散群 $\mathrm R^nT(A_k)$ 的射影极限拓扑。另一方面，若 $k<k_0$ 时 $A_k=0$，则此时 $\mathrm R^nT(A_k)=0$，故
+\[
+F^{k_0}(\mathrm R'^nT(\mathbf A))=\mathrm R'^nT(\mathbf A).
+\]
+因此引理的条件都满足。
+\finishproof
+
+\egastatement{13.7.8}{推论}
+若假设（$\mathrm F_n$）成立，则对每个 $f\in S$，有典范同构
+\begin{equation}\tag{13.7.8.1}
+\plim_k((\mathrm R^nT(A_k))_f)
+\simeq\mathrm R^nT(\mathbf A)\otimes_S S_{\{f\}}.
+\end{equation}
+\begin{proof}
+$\mathrm R^nT(\mathbf A)$ 为有限型 $S$-模；$S_{\{f\}}$ 为诺特进 $S$-代数（$\OI$，7.6.11），是 $S_f$ 对 $\frj$-预进拓扑的分离完备化（$\OI$，7.6.2）。由（$\OI$，7.7.8、7.7.1），$\mathrm R^nT(\mathbf A)\otimes_S S_{\{f\}}$ 同构于 $\mathrm R^nT(\mathbf A)\otimes_S S_f$ 对 $\frj$-预进拓扑的分离完备化。
+
+该拓扑的零邻域基为 $(\frj^p\mathrm R^nT(\mathbf A))\otimes_S S_f$，所以 $F^p(\mathrm R^nT(\mathbf A))\otimes_S S_f$ 也是零邻域基；后者是典范映射
+\[
+(\mathrm R^nT(\mathbf A))_f\longrightarrow(\mathrm R^nT(A_{p-1}))_f
+\]
+的核。因此，与 $\mathrm R^nT(\mathbf A)\otimes_S S_f$ 相伴的分离群可识别为 $\plim_k((\mathrm R^nT(A_k))_f)$ 的子群 $G$。
+
+系统 $((\mathrm R^nT(A_k))_f)_k$ 显然满足（ML）；而 $(\mathrm R^nT(\mathbf A))_f$ 在每个 $(\mathrm R^nT(A_k))_f$ 中的像，等于 $h\geq k$ 充分大时各 $(\mathrm R^nT(A_h))_f$ 的共同像。所以 $G$ 在此射影极限中稠密；又该极限分离且完备，推论得证。
+\end{proof}
+\begin{flushright}（待续。）\end{flushright}\par
+
+% ---- END c0_s13c.tex ----
+% ---- BEGIN c3_s01a.tex ----

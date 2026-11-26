@@ -1,0 +1,1 @@
+此记录属于无效的局部nobreak排版尝试。实际重编后PNG像素没有改变，两处脚注孤行仍在。随后撤去控制并作等义中文压缩，最终证据见checks/v21_final_layout_render_comparison.json及实际看图记录。这里的PDF散列不是最终交付散列。

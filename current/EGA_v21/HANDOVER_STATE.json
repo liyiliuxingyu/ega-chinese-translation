@@ -1,0 +1,137 @@
+{
+  "edition": 21,
+  "date": "2026-11-26",
+  "time_zone": "Asia/Shanghai",
+  "status": "build_and_review_verified",
+  "all_books_finished": false,
+  "current_project": "current/EGA_v21",
+  "base_commit": "99cd048abd72adad984613aaa4f5fef86cd5a6c8",
+  "base_project": "current/EGA_v20",
+  "recollated_this_round": {
+    "work": "EGA V preparatory manuscript, first essay",
+    "range": "Entire section13",
+    "french_physical_pages": "74–82",
+    "english_physical_pages": "49–53; stops before §14 title at end of53",
+    "classification": "Recollation and correction of existing translation; not newly translated book pages"
+  },
+  "next": {
+    "work": "EGA V first essay §14",
+    "french_physical_page": 83,
+    "english_physical_page_title": 53,
+    "english_physical_page_body": 54,
+    "existing_source": "continuations/v_dot_late.tex"
+  },
+  "technical_checks": {
+    "source_records": 192,
+    "inherited_source_files_unchanged": 187,
+    "inherited_source_files_expected": 187,
+    "previous_project_actually_read_this_run": true,
+    "section13_preserved_original_bytes": 33351,
+    "dot_modules_input_once": 40,
+    "current_section13_footnotes": 42,
+    "book_pages": 1216,
+    "report_pages": 473,
+    "all_modular_vs_single_pages_text_dimensions_and_72dpi_pixels_equal": true,
+    "actual_visual_sample_pages": 55,
+    "actual_visual_pages": {
+      "main": [
+        1,
+        3,
+        4,
+        5,
+        1063,
+        1064,
+        1065,
+        1066,
+        1067,
+        1068,
+        1069,
+        1070,
+        1071,
+        1072,
+        1073,
+        1074
+      ],
+      "report": [
+        1,
+        3,
+        5,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49,
+        50,
+        51,
+        52,
+        53,
+        54,
+        55,
+        56
+      ]
+    },
+    "all_pdf_pages_human_reviewed": false,
+    "fatal_log_errors": 0,
+    "overfull_boxes": 0,
+    "nonfatal_log_diagnostics": [
+      {
+        "name": "main",
+        "overfull": 0,
+        "underfull": 49,
+        "font_warnings": 4,
+        "bookmark_token_warnings": 0
+      },
+      {
+        "name": "report",
+        "overfull": 0,
+        "underfull": 65,
+        "font_warnings": 4,
+        "bookmark_token_warnings": 14
+      },
+      {
+        "name": "single_build/book_single",
+        "overfull": 0,
+        "underfull": 49,
+        "font_warnings": 4,
+        "bookmark_token_warnings": 0
+      },
+      {
+        "name": "single_build/audit_single",
+        "overfull": 0,
+        "underfull": 65,
+        "font_warnings": 4,
+        "bookmark_token_warnings": 14
+      }
+    ],
+    "evidence": "ARTIFACTS.json; checks/current_*.json; checks/visual_verification_summary.json"
+  },
+  "publication": {
+    "repository": "https://github.com/liyiliuxingyu/ega-chinese-translation",
+    "release_tag": "v21-20261126",
+    "record_status": "Frozen before upload. Remote publication must be established by EDITION_21_IMPORT.json, the workflow result, the actual remote tag and release PACKAGE_VERIFICATION.json; not inferred here."
+  }
+}

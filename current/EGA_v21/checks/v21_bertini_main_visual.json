@@ -1,0 +1,108 @@
+{
+  "schema_version": 1,
+  "edition": 21,
+  "reviewer": "v21_bertini",
+  "review_method": "actual_image_view",
+  "document": "main",
+  "pdf": {
+    "path": "main.pdf",
+    "sha256": "e1910166b502c3cf0da4cad59c3c3c44320aad054b55092b9af0a6c6950770ed",
+    "physical_page_count": 1216
+  },
+  "rendering": {
+    "renderer": "PyMuPDF",
+    "scale": 1.65,
+    "colorspace": "RGB",
+    "alpha": false
+  },
+  "pages": [
+    {
+      "physical_page": 1068,
+      "printed_page": "1048",
+      "image": "checks/rendered_v21/main_1068.png",
+      "image_sha256": "3cf213299a8f929b4c9098ffe6ce6fa101ca74094b13be133b1be8d5ac26333d",
+      "image_dimensions_px": [
+        983,
+        1390
+      ],
+      "actually_viewed": true,
+      "verdict": "pass",
+      "notes": "物理1068页、印刷1048页：2026-11-26对最终新图重新实际查看。页首接续前一页的曲线维数句；边界、两条关联族同构显示式及13.3证明起首连续。INI015—018与BER001五条脚注完整留在本页，未见孤行脚注、裁切、重叠或缺字；源页说明和B段接点清楚。",
+      "pixels_reverified_against_bound_pdf": true,
+      "previously_viewed_image_sha256": "a872dc5e479211c67fbaaecc47c03928c57e8e3543f383ac06c8a92ee73225a3",
+      "new_image_actually_reopened": true
+    },
+    {
+      "physical_page": 1069,
+      "printed_page": "1049",
+      "image": "checks/rendered_v21/main_1069.png",
+      "image_sha256": "436492720a87c270be7fbcf77fd988c7e4e856a00a6636f4d6c44bbc6cce8eeb",
+      "image_dimensions_px": [
+        983,
+        1390
+      ],
+      "actually_viewed": true,
+      "verdict": "pass",
+      "notes": "物理1069页、印刷1049页：作者方括号编写建议、固定有理点陈述、一般纤维下标及下划线、κ(η)、Veronese次数与codim T≥2均清楚。BER002—006脚注密集但分隔正常；归纳段在页底继续至下一页，无公式或脚注越界。",
+      "pixels_reverified_against_bound_pdf": true,
+      "retained_actual_view_with_unchanged_image_bytes": true
+    },
+    {
+      "physical_page": 1070,
+      "printed_page": "1050",
+      "image": "checks/rendered_v21/main_1070.png",
+      "image_sha256": "d366dc2bdfa00a83ec39ebdf12c6285d171671b7118f0f009a2e675d8e18f00d",
+      "image_dimensions_px": [
+        983,
+        1390
+      ],
+      "actually_viewed": true,
+      "verdict": "pass",
+      "notes": "物理1070页、印刷1050页：承接L′、H归纳，先H后L′的顺序、Q=T对偶论证及BER007—012脚注均清楚。附记开始于页末，其后半在下一物理页继续；本页没有缺失字形、正文/脚注覆盖或出界。",
+      "pixels_reverified_against_bound_pdf": true,
+      "retained_actual_view_with_unchanged_image_bytes": true
+    }
+  ],
+  "binding_check": {
+    "sha256_verified_before_final_image_view": true,
+    "sha256_when_writing_record": "e1910166b502c3cf0da4cad59c3c3c44320aad054b55092b9af0a6c6950770ed",
+    "sha256_after_pixel_check": "e1910166b502c3cf0da4cad59c3c3c44320aad054b55092b9af0a6c6950770ed",
+    "bound_pdf_unchanged_during_pixel_check": true,
+    "all_three_viewed_images_match_final_pdf_pixels": true
+  },
+  "limitations": [
+    "Only the explicitly listed full-page PNGs were actually viewed.",
+    "Physical page1068 changed after local layout adjustments and was actually reopened; pages1069 and1070 retain earlier actual image views and their unchanged PNG bytes were reverified pixel-for-pixel against the final PDF.",
+    "No claim of whole-book or whole-report human page-by-page review.",
+    "Visual inspection is separate from the mathematical-review record."
+  ],
+  "review_history": [
+    {
+      "pdf_sha256": "3b9e7f7a1d26db3b51791bc664f23f93d795049bfa75cc89c96691e1e76671cd",
+      "actual_image_views": [
+        1068,
+        1069,
+        1070
+      ],
+      "scope": "Original actual full-page views before the initial-module local layout fixes."
+    },
+    {
+      "pdf_sha256": "d64f8df17e3037da38a9373a59b9826eff00742d2f5a898304caa2704d06b95a",
+      "binding_check": {
+        "sha256_verified_before_image_views": true,
+        "sha256_when_writing_record": "9a9f28b9bf42ba527151b8f1f4275d4a7bd1bf8b2f3eb284a27c67ebc352c184",
+        "sha256_after_pixel_check": "bea0b317ed0f97c89becac262009840852a2d7c9022e2edb7cb2958edf160989",
+        "bound_pdf_unchanged_during_pixel_check": false
+      },
+      "local_nobreak_pixel_revalidation": {
+        "pass": true,
+        "unchanged_pages": [
+          1068,
+          1069,
+          1070
+        ],
+        "scope": "Images actually viewed before the two local no-break corrections are pixel-identical to the corresponding new PDF pages."
+      }
+    }
+  ]
+}

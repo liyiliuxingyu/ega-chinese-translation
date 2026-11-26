@@ -1,0 +1,262 @@
+\subsection{拟凝聚模复形的整体超 Tor 函子与 Künneth 谱序列：仿射底的情形}
+\source{\texttt{EGAIII.2.pdf}，PDF第20--24页，原书第21--25页的相应部分}
+\egap{6.6.1}
+考虑仿射概形 $S=\Spec A$ 和两个拟紧 $S$-概形 $X^{(i)}$（$i=1,2$）。设 $\mathscr P^{(i)}_\bullet$ 是拟凝聚 $\OO_{X^{(i)}}$-模组成的下有界复形，其微分算子的次数为 $-1$（$i=1,2$）。另取 $X^{(i)}$ 的一个有限仿射开覆盖 $\mathfrak U^{(i)}=(U^{(i)}_\alpha)$。令
+\[
+ X=X^{(1)}\times_SX^{(2)},\qquad
+ \mathfrak U=\mathfrak U^{(1)}\times_S\mathfrak U^{(2)},
+\]
+其中 $X$ 是拟紧 $S$-概形（I，5.5.1及6.6.4），而 $\mathfrak U$ 由仿射开集 $U^{(1)}_\alpha\times_SU^{(2)}_\beta$ 组成。对于每一对整数 $p\leq0$、$q\in\mathbf Z$，覆盖 $\mathfrak U^{(i)}$ 以层 $\mathscr P^{(i)}_q$ 为系数的交错 $(-p)$-上链群
+\[
+ C^{-p}(\mathfrak U^{(i)},\mathscr P^{(i)}_q)
+\]
+是一个 $A$-模（G，II，5.1）；对于 $p>0$，置此模为零。由此定义 $A$-模的双复形 $C^\bullet(\mathfrak U^{(i)},\mathscr P^{(i)}_\bullet)$，其两个微分算子的次数均为 $-1$。由定义（0，12.1.2），把这一双复形按总次数视为单复形时，其同调模
+\[
+ H_n\bigl(C^\bullet(\mathfrak U^{(i)},\mathscr P^{(i)}_\bullet)\bigr)
+\]
+就是超上同调模 $\mathbb H^{-n}(\mathfrak U^{(i)},\mathscr P^{(i)\bullet})$，其中微分次数为 $+1$ 的复形 $\mathscr P^{(i)\bullet}$ 以 $\mathscr P^{(i)}_{-q}$ 为第 $q$ 次分量。滥用记号，将此超上同调写为 $\mathbb H^{-n}(\mathfrak U^{(i)},\mathscr P^{(i)}_\bullet)$。由（6.2.2），这个 $A$-模典范同构于 $\mathbb H^{-n}(X^{(i)},\mathscr P^{(i)\bullet})$，后者也写作 $\mathbb H^{-n}(X^{(i)},\mathscr P^{(i)}_\bullet)$；因此它与所选的有限覆盖 $\mathfrak U^{(i)}$ 无关。
+
+\egap{6.6.2}
+我们将关于双复形的函子超同调一般理论（0，11.7.4），应用于两个 $A$-模双复形
+\[
+ L^{(i)}_{\bullet\bullet}=C^\bullet(\mathfrak U^{(i)},\mathscr P^{(i)}_\bullet),\qquad i=1,2,
+\]
+以及关于这两个双复形的协变双函子 $L^{(1)}_{\bullet\bullet}\otimes_AL^{(2)}_{\bullet\bullet}$。由于上链取成交错上链，且覆盖 $\mathfrak U^{(i)}$ 有限，模 $C^{-p}(\mathfrak U^{(i)},\mathscr P^{(i)}_q)$ 只可能在有限多个 $p$ 值上非零，而且这些 $p$ 值与 $q$ 无关；特别地，每个 $L^{(i)}_{\bullet\bullet}$ 的两个次数都下有界。以
+\[
+ \bTor^A_n(L^{(1)}_{\bullet\bullet},L^{(2)}_{\bullet\bullet})
+ \quad\text{或}\quad
+ \bTor^S_n(\mathfrak U^{(1)},\mathfrak U^{(2)};
+             \mathscr P^{(1)}_\bullet,\mathscr P^{(2)}_\bullet)
+\]
+表示 $L^{(1)}_{\bullet\bullet}\otimes_AL^{(2)}_{\bullet\bullet}$ 的第 $n$ 个超同调模，称为两个复形关于覆盖 $\mathfrak U^{(1)},\mathfrak U^{(2)}$ 的第 $n$ 个\textbf{超 Tor}。
+\cmt{排印记号}{本小节用粗体 $\bTor$ 区分超 Tor 与逐项普通 $\Tor$；用 $\mathbb H$ 区分超上同调与逐项上同调 $H$。这只是恢复底本所区分的对象，不改变其定义。双复形的上标 $\mathrm I,\mathrm{II}$ 指相应方向，沿用第0章的约定。}
+若两个复形各自只有第零项 $\F^{(1)},\F^{(2)}$ 非零，则写作 $\Tor^S_n(\mathfrak U^{(1)},\mathfrak U^{(2)};\F^{(1)},\F^{(2)})$。按照一般约定，
+\[
+ \Tor^S_n(\mathfrak U^{(1)},\mathfrak U^{(2)};
+          \mathscr P^{(1)}_\bullet,\mathscr P^{(2)}_\bullet)
+\]
+则表示双次数 $(j,k)$ 的分量为
+$\Tor^S_n(\mathfrak U^{(1)},\mathfrak U^{(2)};\mathscr P^{(1)}_j,\mathscr P^{(2)}_k)$ 的双复形。
+
+覆盖中开集的交均仿射，故 $L^{(i)}_{\bullet\bullet}$ 关于 $\mathscr P^{(i)}_\bullet$ 是正合函子（I，5.5.6及1.3.11）。因此上述超 Tor 关于两个复形构成取值于 $A$-模范畴的协变双 $\delta$-函子（0，11.7.3）。又由（0，11.7.2），这一双函子是六个双正则谱函子的共同终值；记为
+\[
+ {}^{(t)}E(\mathfrak U^{(1)},\mathfrak U^{(2)};
+             \mathscr P^{(1)}_\bullet,\mathscr P^{(2)}_\bullet),
+ \qquad t=a,b,a',b',c,d,
+\]
+或简记 ${}^{(t)}E(\mathfrak U^{(1)},\mathfrak U^{(2)};\mathscr P^{(1)},\mathscr P^{(2)})$。其 $E^2$ 项如下；为免横向过宽，在这些公式中简写 $L^{(i)}=L^{(i)}_{\bullet\bullet}$：
+\begin{align*}
+ {}^{(a)}E^2_{pq}
+ &=\bigoplus_{q_1+q_2=q}\Tor^A_p
+       \bigl(H_{q_1}(L^{(1)}),H_{q_2}(L^{(2)})\bigr),\\
+ {}^{(b)}E^2_{pq}
+ &=H_p\bigl(\bTor^{A,\mathrm{II}}_q(L^{(1)},L^{(2)})\bigr),\\
+ {}^{(a')}E^2_{pq}
+ &=\bigoplus_{q_1+q_2=q}\bTor^A_p
+       \bigl(H^{\mathrm I}_{q_1}(L^{(1)}),H^{\mathrm I}_{q_2}(L^{(2)})\bigr),\\
+ {}^{(b')}E^2_{pq}
+ &=H_p\bigl(\Tor^A_q(L^{(1)},L^{(2)})\bigr),\\
+ {}^{(c)}E^2_{pq}
+ &=\bigoplus_{q_1+q_2=q}\bTor^A_p
+       \bigl(H^{\mathrm{II}}_{q_1}(L^{(1)}),H^{\mathrm{II}}_{q_2}(L^{(2)})\bigr),\\
+ {}^{(d)}E^2_{pq}
+ &=H_p\bigl(\bTor^{A,\mathrm I}_q(L^{(1)},L^{(2)})\bigr).
+\end{align*}
+记号符合超同调一般理论的约定。下面进一步明确这些初始项。
+
+\egap{6.6.3}
+\textbf{谱序列 $(a)$ 与 $(a')$。}由（6.6.1），双复形 $L^{(i)}$ 的同调模 $H_{q_i}(L^{(i)})$ 等于 $\mathbb H^{-q_i}(X^{(i)},\mathscr P^{(i)}_\bullet)$，故
+\[
+ {}^{(a)}E^2_{pq}=
+ \bigoplus_{q_1+q_2=q}\Tor^A_p
+ \bigl(\mathbb H^{-q_1}(X^{(1)},\mathscr P^{(1)}_\bullet),
+       \mathbb H^{-q_2}(X^{(2)},\mathscr P^{(2)}_\bullet)\bigr).
+\]
+按定义，复形 $H^{\mathrm I}_{q_i}(L^{(i)})$ 的第 $k$ 项是同调模
+$H_{q_i}(C^\bullet(\mathfrak U^{(i)},\mathscr P^{(i)}_k))$，即上同调模
+$H^{-q_i}(\mathfrak U^{(i)},\mathscr P^{(i)}_k)$。由（1.4.1），它典范同构于
+$H^{-q_i}(X^{(i)},\mathscr P^{(i)}_k)$。所以
+\[
+ {}^{(a')}E^2_{pq}=
+ \bigoplus_{q_1+q_2=q}\bTor^A_p
+ \bigl(H^{-q_1}(X^{(1)},\mathscr P^{(1)}_\bullet),
+       H^{-q_2}(X^{(2)},\mathscr P^{(2)}_\bullet)\bigr).
+\]
+
+\egap{6.6.4}
+\textbf{谱序列 $(b)$ 与 $(b')$。}按定义，$\bTor^{A,\mathrm{II}}_q(L^{(1)},L^{(2)})$ 的双次数 $(h,k)$ 分量是
+\[
+ \bTor^A_q\bigl(C^{-h}(\mathfrak U^{(1)},\mathscr P^{(1)}_\bullet),
+                  C^{-k}(\mathfrak U^{(2)},\mathscr P^{(2)}_\bullet)\bigr).
+\]
+设 $\Phi^{(i)}$ 为覆盖 $\mathfrak U^{(i)}$ 的指标集。按定义，复形
+$C^j(\mathfrak U^{(i)},\mathscr P^{(i)}_\bullet)$（$j\geq0$）是各复形
+$\Gamma(U^{(i)}_\rho,\mathscr P^{(i)}_\bullet)$ 的直和，其中
+$U^{(i)}_\rho$ 为各 $\alpha\in\rho$ 对应的 $U^{(i)}_\alpha$ 之交，而 $\rho$ 遍历相应的有限指标子集。因此上述 $A$-模是各模
+\[
+ \bTor^A_q\bigl(\Gamma(U^{(1)}_\sigma,\mathscr P^{(1)}_\bullet),
+                  \Gamma(U^{(2)}_\tau,\mathscr P^{(2)}_\bullet)\bigr)
+\]
+的直和。底本在此规定
+$\#\sigma=-(h+1)$、$\#\tau=-(k+1)$。
+\cmt{B2-T03}{这两个基数公式是底本所印表达；对于通常的 Čech 上链 $C^r$，应有 $r+1$ 个指标，因此这里应是 $\#\sigma=1-h$、$\#\tau=1-k$。后文的基数总和也有对应的符号错误。详见核查报告；本处不把负基数当成有效定义使用。}
+因 $X^{(1)},X^{(2)}$ 为概形，各 $U^{(i)}_\rho$ 仿射，由（6.4.1.1）得
+\begin{align*}
+ &\bTor^A_q\bigl(\Gamma(U^{(1)}_\sigma,\mathscr P^{(1)}_\bullet),
+                  \Gamma(U^{(2)}_\tau,\mathscr P^{(2)}_\bullet)\bigr)\\
+ &\hspace{1em}=\Gamma\bigl(U^{(1)}_\sigma\times_SU^{(2)}_\tau,
+                  \lTor^S_q(\mathscr P^{(1)}_\bullet,\mathscr P^{(2)}_\bullet)\bigr).
+\end{align*}
+因此 ${}^{(b)}E^2_{pq}$ 是 $\Phi^{(1)},\Phi^{(2)}$ 上以系数系统
+\[
+ \mathscr V:(\sigma,\tau)\longmapsto
+ \Gamma\bigl(U^{(1)}_\sigma\times_SU^{(2)}_\tau,
+                  \lTor^S_q(\mathscr P^{(1)}_\bullet,\mathscr P^{(2)}_\bullet)\bigr)
+\]
+为值的双交错上链复形 $L^\bullet(\Phi^{(1)},\Phi^{(2)};\mathscr V)$ 的第 $(-p)$ 个上同调模（0，11.8.4）。由（0，11.8.5及11.8.6），其上同调与所有上链组成的复形 $C^\bullet(\Phi^{(1)},\Phi^{(2)};\mathscr V)$ 相同，也与复形 $P^\bullet(\Phi^{(1)},\Phi^{(2)};\mathscr V)$ 相同；后者的元素为
+\[
+ \lambda(\sigma,\tau)\in
+ \Gamma\bigl(U^{(1)}_\sigma\times_SU^{(2)}_\tau,
+                  \lTor^S_q(\mathscr P^{(1)}_\bullet,\mathscr P^{(2)}_\bullet)\bigr)
+\]
+的线性组合，$\sigma=(\alpha_0,\ldots,\alpha_m)$ 与
+$\tau=(\beta_0,\ldots,\beta_m)$ 是项数相同的序列。此时
+\[
+ U^{(1)}_\sigma\times_SU^{(2)}_\tau
+ =\bigcap_{r=0}^m\bigl(U^{(1)}_{\alpha_r}\times_SU^{(2)}_{\beta_r}\bigr)
+\]
+（I，3.2.7）。以 $\mathfrak U$ 表示 $Z=X^{(1)}\times_SX^{(2)}$ 的这一仿射开覆盖；考虑到 $Z$ 为概形，最后由（1.3.1）得到
+\[
+ {}^{(b)}E^2_{pq}=H^{-p}\bigl(X^{(1)}\times_SX^{(2)},
+               \lTor^S_q(\mathscr P^{(1)}_\bullet,\mathscr P^{(2)}_\bullet)\bigr).
+\]
+
+其次，$\Tor^A_q(L^{(1)},L^{(2)})$ 的双次数 $(h,k)$ 分量，是满足
+$h_1+h_2=h$、$k_1+k_2=k$ 的各模
+\[
+ \Tor^A_q\bigl(C^{-h_1}(\mathfrak U^{(1)},\mathscr P^{(1)}_{k_1}),
+                 C^{-h_2}(\mathfrak U^{(2)},\mathscr P^{(2)}_{k_2})\bigr)
+\]
+之直和。如上明确各上链模后，可见这一分量又是各模
+\[
+ \Gamma\bigl(U^{(1)}_\sigma\times_SU^{(2)}_\tau,
+             \lTor^S_q(\mathscr P^{(1)}_{k_1},\mathscr P^{(2)}_{k_2})\bigr)
+\]
+之直和，其中 $k_1+k_2=k$；底本写 $\#\sigma+\#\tau=-h-2$。
+\cmt{B2-T03续}{沿用同一 Čech 次数约定，总和应为 $2-h$，而不是 $-h-2$。这与前一处是同一类基数符号误植，未重复计为另一项定理错误。}
+我们计算的 ${}^{(b')}E^2_{pq}$ 是双复形 $N^{\bullet\bullet}=(N^{hk})$ 的第 $(-p)$ 个上同调模，其中单复形 $N^{\bullet,k}$ 为 $\Phi^{(1)},\Phi^{(2)}$ 上以
+\[
+ \mathscr V_k:(\sigma,\tau)\longmapsto
+ \Gamma\left(U^{(1)}_\sigma\times_SU^{(2)}_\tau,
+       \bigoplus_{k_1+k_2=k}\lTor^S_q
+                (\mathscr P^{(1)}_{-k_1},\mathscr P^{(2)}_{-k_2})\right)
+\]
+为系数系统的双交错上链复形。这些系数系统构成复形 $\mathscr V^\bullet$，其微分来自逐项 Tor 双复形所对应单复形的微分。由（0，11.8.9），$N^{\bullet\bullet}$ 的上同调与
+$C^\bullet(\Phi^{(1)},\Phi^{(2)};\mathscr V^\bullet)$ 相同；也与
+$P^\bullet(\Phi^{(1)},\Phi^{(2)};\mathscr V^\bullet)$ 相同，后者的双次数 $(h,k)$ 元素为
+\[
+ \lambda(\sigma,\tau)\in
+ \Gamma\left(U^{(1)}_\sigma\times_SU^{(2)}_\tau,
+       \bigoplus_{k_1+k_2=k}\lTor^S_q
+                (\mathscr P^{(1)}_{-k_1},\mathscr P^{(2)}_{-k_2})\right)
+\]
+的线性组合，$\sigma$、$\tau$ 是项数相同的序列（0，11.8.10）。如上可见，${}^{(b')}E^2_{pq}$ 是双复形 $C^\bullet(\mathfrak U,\mathscr Q^\bullet)$ 的第 $(-p)$ 个上同调模，其中 $\mathscr Q^\bullet$ 为逐项 Tor 双复形对应的单复形。按照（6.6.1）的约定，故有
+\[
+ {}^{(b')}E^2_{pq}=\mathbb H^{-p}\bigl(X^{(1)}\times_SX^{(2)},
+                    \lTor^S_q(\mathscr P^{(1)}_\bullet,\mathscr P^{(2)}_\bullet)\bigr),
+\]
+这里第二个变量中的 $\lTor$ 指上述逐项构成的双复形。
+
+\egap{6.6.5}
+\textbf{谱序列 $(c)$ 与 $(d)$。}由上链函子 $C^{-h}$ 的正合性，复形
+$H^{\mathrm{II}}_{q_i}(L^{(i)})$ 的第 $h$ 项是
+$C^{-h}(\mathfrak U^{(i)},\HH_{q_i}(\mathscr P^{(i)}_\bullet))$。由两个覆盖对应的超 Tor 定义（6.6.2），得到
+\[
+ {}^{(c)}E^2_{pq}=\bigoplus_{q_1+q_2=q}
+ \Tor^S_p\bigl(\mathfrak U^{(1)},\mathfrak U^{(2)};
+       \HH_{q_1}(\mathscr P^{(1)}_\bullet),\HH_{q_2}(\mathscr P^{(2)}_\bullet)\bigr).
+\]
+最后，按定义，$\bTor^{A,\mathrm I}_q(L^{(1)},L^{(2)})$ 的双次数 $(h,k)$ 分量是
+\[
+ \Tor^S_q(\mathfrak U^{(1)},\mathfrak U^{(2)};\mathscr P^{(1)}_h,\mathscr P^{(2)}_k),
+\]
+故
+\[
+ {}^{(d)}E^2_{pq}=H_p\bigl(\Tor^S_q(\mathfrak U^{(1)},\mathfrak U^{(2)};
+                    \mathscr P^{(1)}_\bullet,\mathscr P^{(2)}_\bullet)\bigr).
+\]
+
+\egap{6.6.6}
+关于双复形函子的超同调理论（0，11.7.3）表明，如同（6.3.4），若
+$M^{(i)}_{\bullet\bullet\bullet}$ 是 $L^{(i)}_{\bullet\bullet}$ 在下有界模复形范畴中的一个平坦 Cartan--Eilenberg 解消（$i=1,2$），则有双 $\delta$-函子的典范同构
+\begin{equation}\tag{6.6.6.1}
+\begin{aligned}
+ &\bTor^S_*(\mathfrak U^{(1)},\mathfrak U^{(2)};
+                    \mathscr P^{(1)}_\bullet,\mathscr P^{(2)}_\bullet)\\
+ &\quad\simeq H_*(M^{(1)}_{\bullet\bullet\bullet}\otimes_AM^{(2)}_{\bullet\bullet\bullet})\\
+ &\quad\simeq H_*(M^{(1)}_{\bullet\bullet\bullet}\otimes_AL^{(2)}_{\bullet\bullet})
+ \simeq H_*(L^{(1)}_{\bullet\bullet}\otimes_AM^{(2)}_{\bullet\bullet\bullet}).
+\end{aligned}
+\end{equation}
+
+\egap{6.6.7}
+现在证明（6.6.2）定义的整体超 Tor 及相应六个谱序列，在典范同构意义下，与定义时使用的有限仿射开覆盖无关。只须证明：若 $\mathfrak V^{(i)}$ 是另两个同类覆盖，且分别比 $\mathfrak U^{(i)}$ 更细，则有谱函子的典范同构
+\begin{equation}\tag{6.6.7,$t$}
+\begin{aligned}
+ &{}^{(t)}E(\mathfrak U^{(1)},\mathfrak U^{(2)};
+                  \mathscr P^{(1)}_\bullet,\mathscr P^{(2)}_\bullet)\\
+ &\hspace{2em}\simeq{}^{(t)}E(\mathfrak V^{(1)},\mathfrak V^{(2)};
+                  \mathscr P^{(1)}_\bullet,\mathscr P^{(2)}_\bullet),
+\end{aligned}
+\end{equation}
+其中 $t=a,b,a',b',c,d$。
+
+对 $i=1,2$，有在同伦意义下良好定义的双复形同态
+\[
+ C^\bullet(\mathfrak U^{(i)},\mathscr P^{(i)}_\bullet)
+ \longrightarrow C^\bullet(\mathfrak V^{(i)},\mathscr P^{(i)}_\bullet)
+\]
+（G，II，5.7.1）。所以（6.6.7，$t$）中的同态已有典范定义，并在终值上与边缘算子相容（0，11.3.2）。此外，上面对 $(a),(b),(a'),(b')$ 的 $E^2$ 项的计算表明，对这些谱序列，（6.6.7，$t$）在 $E^2$ 项上是同构；由于这些谱序列双正则，便知它对这“三个谱函子”是同构，因而在共同终值上是双 $\delta$-函子的同构（0，11.1.5）。
+\cmt{B2-T04}{底本这里印为“这三个”（ces trois），但前一句明确列举 $(a),(b),(a'),(b')$ 四个。应理解为“四个”；不影响所用的谱序列比较论证。}
+特别地，对于拟凝聚 $\OO_{X^{(i)}}$-模 $\F^{(i)}$（$i=1,2$），典范同态
+\[
+ \Tor^S_n(\mathfrak U^{(1)},\mathfrak U^{(2)};\F^{(1)},\F^{(2)})
+ \longrightarrow
+ \Tor^S_n(\mathfrak V^{(1)},\mathfrak V^{(2)};\F^{(1)},\F^{(2)})
+\]
+双射。由（6.6.5）的计算，（6.6.7，$t$）在 $t=c,d$ 时也在 $E^2$ 项上给出同构。如上即可推出它在 $t=c,d$ 时也是谱序列的同构。
+
+可把这些同构视为：在由 $X^{(1)},X^{(2)}$ 的有限仿射开覆盖对组成的滤过指标集上，定义了谱函子的归纳系统。以
+\[
+ {}^{(t)}E(X^{(1)},X^{(2)};\mathscr P^{(1)}_\bullet,\mathscr P^{(2)}_\bullet)
+\]
+表示此系统的归纳极限；也可略去 $\bullet$。以
+\[
+ \bTor^S_n(X^{(1)},X^{(2)};\mathscr P^{(1)}_\bullet,\mathscr P^{(2)}_\bullet)
+\]
+表示这一谱函子的终值，称为两个复形的\textbf{整体超 Tor}。当两个复形只在第零项非零时，写作
+$\Tor^S_n(X^{(1)},X^{(2)};\F^{(1)},\F^{(2)})$。依一般约定，
+$\Tor^S_n(X^{(1)},X^{(2)};\mathscr P^{(1)}_\bullet,\mathscr P^{(2)}_\bullet)$ 则表示由逐项的 $\Tor^S_n(X^{(1)},X^{(2)};\mathscr P^{(1)}_j,\mathscr P^{(2)}_k)$ 组成的双复形。
+
+\egap{6.6.8}
+保持（6.6.1）的假设，另考虑两个 $S$-态射
+$f_i:X^{(i)}\to Y^{(i)}$，其中 $Y^{(i)}=\Spec B_i$ 是仿射 $S$-概形，故 $B_i$ 为 $A$-代数（$i=1,2$）。这给出 $A$-同态
+$B_i\to\Gamma(X^{(i)},\OO_{X^{(i)}})$（I，2.2.4），所以（6.6.2）中的每个 $L^{(i)}$ 都是 $B_i$-模双复形。因而 $L^{(1)}\otimes_AL^{(2)}$ 为 $(B_1\otimes_AB_2)$-模的四重复形，其六个超同调谱函子可看成取值于 $(B_1\otimes_AB_2)$-模谱序列范畴的函子。置
+\[
+ Y=Y^{(1)}\times_SY^{(2)}=\Spec(B_1\otimes_AB_2),
+\]
+并考虑这些模所对应的拟凝聚 $\OO_Y$-模（I，1.3.4）。记六个 $\OO_Y$-模谱序列
+\[
+ \bigl({}^{(t)}E(X^{(1)},X^{(2)};
+                  \mathscr P^{(1)}_\bullet,\mathscr P^{(2)}_\bullet)\bigr)^\sim
+\]
+为 ${}^{(t)}\spE(f_1,f_2;\mathscr P^{(1)}_\bullet,\mathscr P^{(2)}_\bullet)$；其中
+$t=a,b,a',b',c,d$。其共同终值
+\[
+ \bigl(\bTor^S_n(X^{(1)},X^{(2)};
+                  \mathscr P^{(1)}_\bullet,\mathscr P^{(2)}_\bullet)\bigr)^\sim
+\]
+记为 $\lTor^S_n(f_1,f_2;\mathscr P^{(1)}_\bullet,\mathscr P^{(2)}_\bullet)$。若 $\mathscr P^{(i)}_\bullet$ 只在第零项 $\F^{(i)}$ 非零，则记为
+$\lTor^S_n(f_1,f_2;\F^{(1)},\F^{(2)})$。
+
+

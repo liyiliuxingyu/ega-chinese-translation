@@ -1,0 +1,174 @@
+% 底本：EGAIV.1.pdf，PDF第175--177页，原分册印刷第176--178页。
+\subsection{形式幂级数环中的完备微分模}
+本小节不再要求域具有正特征。
+
+\egas{21.9.1}{引理}
+设 $k$ 为域，$A$ 为一个完备诺特局部 $k$-代数，$K$ 为其剩余域。
+若 $K/k$ 为有限型扩张，则 $\widehat\Omega^1_{A/k}$ 是有限型 $A$-模。
+
+由（20.7.15），只须证明 $\Omega^1_{K/k}$ 是有限维 $K$-向量空间。
+按假设，$K$ 是某个有限型 $k$-整代数 $B$ 的分式域；
+$\Omega^1_{B/k}$ 由（20.4.7）为有限型 $B$-模，再应用（20.5.9）即可。
+
+\egas{21.9.2}{命题}
+设 $k_0$ 为域，$A$ 为一个在极大理想拓扑下形式光滑的完备诺特局部 $k_0$-代数，
+$\mathfrak m$ 为其极大理想，$K=A/\mathfrak m$ 为剩余域。
+因此作为环，$A$ 同构于某个形式幂级数环 $K[[T_1,\ldots,T_r]]$（19.6.5）。
+若 $K/k_0$ 为有限型扩张，则 $\widehat\Omega^1_{A/k_0}$ 是自由 $A$-模，秩为
+$\dim(A)+\trdeg_{k_0}K$。
+此外，对每个满足 $\dim_{k_0}\Omega^1_{k_0/k}<\infty$ 的子域 $k\subseteq k_0$，
+$\widehat\Omega^1_{A/k}$ 是秩为
+\[
+ \dim(A)+\trdeg_{k_0}K+\rk_{k_0}\Omega^1_{k_0/k}
+\]
+的自由 $A$-模。
+
+\eproof
+若 $P$ 为 $k_0$ 的素域，则 $K/P$ 形式光滑（19.6.1）。
+先指出 $\Upsilon^{K}_{A/k_0/P}=0$：按（20.6.14.5），这等价于典范同态
+\[
+ u_{A/k_0/P}\otimes1_K:
+ \Omega^1_{k_0/P}\otimes_{k_0}K
+ \longrightarrow\Omega^1_{A/P}\otimes_AK
+\]
+单射。
+$A/k_0$ 形式光滑，故由（20.7.2），$u_{A/k_0/P}$ 形式左可逆；
+由（19.1.7），模去 $\mathfrak m$ 后的同态左可逆，因而单射。
+将（20.6.22.1）中的 $\Lambda,A,B,C$ 分别替换为 $P,k_0,A,K$，得到正合列
+\[
+ 0\longrightarrow\Upsilon_{K/k_0}
+ \longrightarrow\mathfrak m/\mathfrak m^2
+ \longrightarrow\Omega^1_{A/k_0}\otimes_AK
+ \longrightarrow\Omega^1_{K/k_0}\longrightarrow0.
+\]
+因此由（21.7.1），
+\begin{align*}
+ \rk_K(\Omega^1_{A/k_0}\otimes_AK)
+ &=\rk_K(\mathfrak m/\mathfrak m^2)
+   +\rk_K\Omega^1_{K/k_0}-\rk_K\Upsilon_{K/k_0}\\
+ &=\rk_K(\mathfrak m/\mathfrak m^2)+\trdeg_{k_0}K.
+\end{align*}
+又因 $A$ 正则（19.6.5），$\rk_K(\mathfrak m/\mathfrak m^2)=\dim(A)$。
+另一方面，$\Omega^1_{A/k_0}$ 是形式投射 $A$-模（20.4.9），
+而其拓扑是 $\mathfrak m$-预进制拓扑（20.4.5），
+故对每个 $j$，$\Omega^1_{A/k_0}/\mathfrak m^{j+1}\Omega^1_{A/k_0}$
+为投射 $A/\mathfrak m^{j+1}$-模（19.2.4），
+于是为自由模（$0_{\mathrm{III}}$，10.1.2），其秩均为
+$n=\rk_K(\Omega^1_{A/k_0}\otimes_AK)$。
+由（21.9.1），$\widehat\Omega^1_{A/k_0}$ 有限型；
+由（$0_{\mathrm{III}}$，10.2.1）它平坦，
+因而是秩为 $n$ 的自由模（$0_{\mathrm{III}}$，10.1.3）。第一项断言得证。
+
+再看第二项。$\Omega^1_{k_0/k}$ 有限维，故完备张量积
+$\Omega^1_{k_0/k}\widehat\otimes_{k_0}A$
+等于普通张量积 $\Omega^1_{k_0/k}\otimes_{k_0}A$。
+由 $A/k_0$ 形式光滑及（20.7.18），典范同态
+\[
+ \Omega^1_{k_0/k}\otimes_{k_0}A\longrightarrow\widehat\Omega^1_{A/k}
+\]
+具有连续的 $A$-线性左逆，特别地其像为闭集。
+因此（20.7.17）中的序列在这里成为正合列
+\[
+ 0\longrightarrow\Omega^1_{k_0/k}\otimes_{k_0}A
+ \longrightarrow\widehat\Omega^1_{A/k}
+ \longrightarrow\widehat\Omega^1_{A/k_0}\longrightarrow0.
+\]
+右端已知自由，故该列分裂；秩相加便得到第二项断言。
+\cmt{L12-N05}{原文及这里都区分普通微分模与其分离完备化。
+把“像在核中稠密”加强为正合，使用的是已得到的连续左逆使该像闭，
+不能在一般完备化序列中省略这一步。
+此处完备局部环的极大理想拓扑固定不变。}
+\finishproof
+
+\egas{21.9.3}{推论}
+设 $k$ 为域，$A=k[[T_1,\ldots,T_r]]$ 配备通常的 $k$-代数结构。
+则 $\widehat\Omega^1_{A/k}$ 是秩为 $r=\dim(A)$ 的自由 $A$-模。
+
+只须注意 $A/k$ 形式光滑（19.3.4），再将（21.9.2）用于 $k_0=k=K$。
+
+\egas{21.9.4}{引理}
+设 $k$ 为特征 $p>0$ 的域，$A$ 为一个完备诺特局部 $k$-代数。
+设 $B\subseteq A$ 是一个拓扑 $k$-子代数，同构于
+$k[[T_1,\ldots,T_r]]$，并且 $A$ 是有限型 $B$-代数。
+若 $B_1=k[[T_1^p,\ldots,T_r^p]]\subseteq B$，
+则 $\widehat\Omega^1_{A/k}$ 典范地识别为普通微分模 $\Omega^1_{A/B_1}$。
+
+\eproof
+令 $P$ 为用来检验完备微分模泛性质的分离完备拓扑 $A$-模。
+一个连续 $k$-导子 $A\to P$ 在 $B_1$ 上的限制为零：
+它在多项式子环 $k[T_1^p,\ldots,T_r^p]$ 上为零，
+该子环在 $B_1$ 中稠密，故连续性与 $P$ 的分离性给出断言。
+于是由正合列（20.3.7.1），典范映射
+\[
+ \DerCont_{B_1}(A,P)\longrightarrow\DerCont_k(A,P)
+\]
+为双射。
+由（20.7.14.4）及微分模的泛性质，两个完备微分模由此同构。
+$B$ 对 $B_1$ 有限自由，且 $A$ 对 $B$ 有限型，故 $A$ 对 $B_1$ 亦有限型；
+所以 $\Omega^1_{A/B_1}$ 是有限型 $A$-模（20.4.7），
+在其极大理想进制拓扑下分离且完备，与其分离完备化相同。
+这就得到所述识别。
+\cmt{L12-G11}{原证明对一般“拓扑模 $P$”使用稠密性推出导子为零，
+该推理需要分离目标。正文明确使用分离完备测试模（或被开理想消去的离散测试模），
+这些已足以表征（20.7.14.4）的完备微分模。
+这不是增加 $A$ 的假设，也不把普通微分模 $\Omega^1_{A/k}$ 误认成有限型。}
+\finishproof
+
+\egas{21.9.5}{命题}
+设 $A$ 为完备诺特局部整环，$A_0\subseteq A$ 同构于域 $k$ 上的形式幂级数环
+$k[[T_1,\ldots,T_r]]$。
+假设 $A$ 是有限 $A_0$-代数，且 $A$ 的分式域 $E$ 是 $A_0$ 的分式域 $L_0$ 的可分扩张。
+则
+\begin{equation}
+ \rk_A\widehat\Omega^1_{A/k}
+ =\rk_E(\widehat\Omega^1_{A/k}\otimes_AE)=\dim(A).
+ \tag{21.9.5.1}
+\end{equation}
+
+\eproof
+以 $\mathfrak m_0$ 记 $A_0$ 的极大理想。
+由于 $A/A_0$ 有限，$A$ 的拓扑也是 $\mathfrak m_0$-进制拓扑
+（Bourbaki，\textit{Alg. comm.}，第IV章，§2，第5节，命题9的推论3），
+且在 $A_0$ 上诱导其原拓扑（同书第III章，§3，第4节，定理3）。
+$\widehat\Omega^1_{A/k}$ 由（21.9.1）为有限型 $A$-模。
+由（21.9.3），$\widehat\Omega^1_{A_0/k}$ 是秩为
+$r=\dim(A_0)=\dim(A)$（16.1.5）的自由 $A_0$-模。
+于是 $\widehat\Omega^1_{A_0/k}\otimes_{A_0}A$ 为秩 $r$ 的自由 $A$-模，并已分离完备。
+$\Omega^1_{A/A_0}$ 也是有限型 $A$-模（20.4.7），
+故与其分离完备化相同（$0_{\mathrm I}$，7.3.6）。
+考虑序列
+\begin{equation}
+ \widehat\Omega^1_{A_0/k}\otimes_{A_0}A
+ \xrightarrow{u}\widehat\Omega^1_{A/k}
+ \xrightarrow{v}\Omega^1_{A/A_0}\longrightarrow0.
+ \tag{21.9.5.2}
+\end{equation}
+由（20.7.17），$v$ 满射，$\Im(u)$ 在 $\Ker(v)$ 中稠密。
+但 $\widehat\Omega^1_{A/k}$ 是有限型 $A_0$-模，
+其任意 $A_0$-子模对 $\mathfrak m_0$-进制拓扑均闭（$0_{\mathrm I}$，7.3.5），
+所以（21.9.5.2）正合。
+$A$ 在 $A_0$ 上整，$A_0$ 整闭，且 $E/L_0$ 可分，
+故 $\Omega^1_{A/A_0}$ 为挠 $A$-模（20.4.13，iv）。
+以 $E$ 张量后得到满射
+\[
+ \widehat\Omega^1_{A_0/k}\otimes_{A_0}E
+ \longrightarrow\widehat\Omega^1_{A/k}\otimes_AE\longrightarrow0,
+\]
+因此右端维数不大于 $r$。
+
+只须再找出 $r$ 个线性无关的微分。
+取 $A_0$ 上的典范导子 $D_i=\partial/\partial T_i$（$1\le i\le r$）。
+它们先延拓至 $L_0$，再因 $E/L_0$ 有限可分而唯一延拓为 $E$ 的导子。
+将这些导子限制在 $A$ 上，它们的值包含于 $E$ 的同一个有限型 $A$-子模 $P$。
+事实上可用 $A_0$-代数的有限组生成元 $a_j$，
+取由 $1$ 及所有 $D_i(a_j)$ 生成的 $A$-子模作为 $P$。
+这些导子在 $A_0$ 上连续，而 $A$ 的拓扑是 $\mathfrak m_0$-进制拓扑；
+Leibniz公式给出 $D_i(\mathfrak m_0^nA)\subseteq\mathfrak m_0^{n-1}P$，
+故 $D_i:A\to P$ 连续。
+\cmt{L12-G12}{原文以“立即”概括导子值落在一个有限型模中以及连续性。
+正文写出一个共同的有限型值域 $P$ 与所需的幂次估计。
+若只把 $E$ 当作未指定拓扑的目标，不能直接应用完备微分模的连续泛性质。}
+由 $D_i(T_j)=\delta_{ij}$，相应线性泛函证明
+$dT_1,\ldots,dT_r$ 在 $\widehat\Omega^1_{A/k}\otimes_AE$ 中线性无关。
+于是其维数至少为 $r$，命题得证。
+\finishproof

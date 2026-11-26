@@ -1,0 +1,10 @@
+{
+  "file": "continuations/v20_section12_extensions.tex",
+  "before_sha256": "48eca7d72d53016437d70ae29b63504a8c12b443e6890eb2d4c5f7477231ceb1",
+  "after_sha256": "e2a88c07c339f8bb03a7cc78cfb71de0e2a98ffb9a87c5d9326f2aeb5b1e9609",
+  "change": "Move two intact footnotes from after display math to the preceding introducing clause, removing isolated footnote markers. Mathematical text and footnote strings unchanged.",
+  "footnote_string_sha256": {
+    "V20-EXT001": "0e0fde4bb4bd5186ebf07c8eae079379e7ddb749044ce22f8ed9568d38fef44b",
+    "V20-EXT010": "304845acdff430907f77099379c9b01bf6257b2ad7354d93289e5c949fa1ec65"
+  }
+}

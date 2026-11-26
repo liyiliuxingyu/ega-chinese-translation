@@ -1,0 +1,90 @@
+{
+  "schema_version": 1,
+  "edition": 21,
+  "reviewer": "/root/v21_initial",
+  "review_method": "actual_image_view",
+  "document": "main",
+  "pdf": {
+    "path": "main.pdf",
+    "sha256": "e1910166b502c3cf0da4cad59c3c3c44320aad054b55092b9af0a6c6950770ed"
+  },
+  "rendering": {
+    "renderer": "PyMuPDF",
+    "scale": 1.65
+  },
+  "review_state": "All four assigned main pages pass: changed pages 1065–1067 actually re-viewed; unchanged 1064 retained after exact pixel equality.",
+  "pages": [
+    {
+      "physical_page": 1064,
+      "image": "checks/rendered_v21/main_1064.png",
+      "image_sha256": "9dbb66f789658e5856ec3567b07a1e66fd1991ca2df0b7e6baa9bdec630b7d1f",
+      "verdict": "pass",
+      "notes": "实际看图：印刷1044页，§12末段接§13标题与来源行，定义13.1及边界条件可辨；V20-FAM010–012和V21-INI001脚注均在版心内。末句“多重初”正常续至次页“等的。”，未见裁切、缺字、公式或脚注重叠。",
+      "review_basis": "Prior actual image view retained only after unchanged PNG bytes and exact RGB pixel equality to final PDF page."
+    },
+    {
+      "physical_page": 1065,
+      "image": "checks/rendered_v21/main_1065.png",
+      "image_sha256": "88f711327e3ed843dbcd34e493f4f19abf905fefbf0128cec909362e38ea6295",
+      "verdict": "pass",
+      "notes": "已实际重看最终重排图：印刷1045页，定理13.2、零维与曲线归约和所有脚注均清楚。V21-INI006的标号7现在与“现讨论一般情形，可假设 n≥2。”保持同一行，原孤立标号已消除。相邻段落及英编脚注63/64、INI002–006未见裁切、缺字、公式或脚注重叠。",
+      "review_basis": "Actual image view of final re-rendered changed page."
+    },
+    {
+      "physical_page": 1066,
+      "image": "checks/rendered_v21/main_1066.png",
+      "image_sha256": "2fefe1bdeb69e706670a069b160e4287dcc2311732924f135ab253568524d1c3",
+      "verdict": "pass",
+      "notes": "已实际重看最终重排图：印刷1046页承接上页U→V，射影紧化、正规化、Y/Z选择、引理13.3及a/b/c条件完整；包含链、重复维数界、φ_d复合和d≥2条件可辨。英编脚注65及INI007–009均正常，未因前页重排出现越界、孤立标号或遮挡。",
+      "review_basis": "Actual image view of final re-rendered changed page."
+    },
+    {
+      "physical_page": 1067,
+      "image": "checks/rendered_v21/main_1067.png",
+      "image_sha256": "41aa404510f2ccd4e9b5abc4f684f51219c7304eb94c63a5ab47093ee9c10584",
+      "verdict": "pass",
+      "notes": "已实际重看最终重排图：印刷1047页首段V21-INI010标号1现在与“使得存在初等态射U→V。”同在句末行，原孤立标号已消除。中心C与T、Q/ξ₀、三个关联族、p/q/r、连通性、V限制公式及INI010–014脚注清楚。页底接续至下一页自然，无裁切或重叠；本记录不声称查看1068页模块出口。",
+      "review_basis": "Actual image view of final re-rendered changed page."
+    }
+  ],
+  "pixel_equivalence_rebinding": {
+    "previous_reviewed_pdf_sha256": "3b9e7f7a1d26db3b51791bc664f23f93d795049bfa75cc89c96691e1e76671cd",
+    "current_pdf_sha256": "e1910166b502c3cf0da4cad59c3c3c44320aad054b55092b9af0a6c6950770ed",
+    "fresh_render_comparisons": [
+      {
+        "physical_page": 1064,
+        "pixels_equal": true,
+        "rgb_sha256": "a72fbd7f3a42c85234d3e51fea896fa92134a2ebc4498a2cc7f584c3cbe4cdfe"
+      },
+      {
+        "physical_page": 1065,
+        "pixels_equal": true,
+        "rgb_sha256": "c78edbba72894499ab372817f6ef153a0b31e2f4638d48fa770a7fc478f45498"
+      },
+      {
+        "physical_page": 1066,
+        "pixels_equal": true,
+        "rgb_sha256": "058b980d455da651ab2630ac621f625ddef0de630d10f81f9df1418491ac7af0"
+      },
+      {
+        "physical_page": 1067,
+        "pixels_equal": true,
+        "rgb_sha256": "598a24ada719b63a0ee57022a5b167b39f3731407762054eab809c9f7226e9c7"
+      }
+    ]
+  },
+  "resolved_layout_issues": [
+    {
+      "physical_page": 1065,
+      "note_id": "V21-INI006",
+      "issue": "Footnote marker 7 orphaned on its own line.",
+      "resolution": "Two equivalent phrases locally shortened by root; actual final-image view confirms marker is on the same line as its sentence."
+    },
+    {
+      "physical_page": 1067,
+      "note_id": "V21-INI010",
+      "issue": "Footnote marker 1 orphaned on its own line.",
+      "resolution": "Existence phrase locally shortened by root; actual final-image view confirms marker is on the same line as its sentence."
+    }
+  ]
+}

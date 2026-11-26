@@ -1,0 +1,110 @@
+{
+  "schema_version": 1,
+  "edition": 21,
+  "reviewer": "/root",
+  "review_method": "actual_image_view",
+  "document": "main",
+  "pdf": {
+    "path": "main.pdf",
+    "sha256": "e1910166b502c3cf0da4cad59c3c3c44320aad054b55092b9af0a6c6950770ed"
+  },
+  "rendering": {
+    "renderer": "PyMuPDF",
+    "scale": 1.65
+  },
+  "pages": [
+    {
+      "physical_page": 1,
+      "image": "checks/rendered_v21/main_0001.png",
+      "image_sha256": "45f251de922478d575703bc3d1e82d1fde85203c0955927421e12dd38b70923e",
+      "verdict": "pass",
+      "notes": "第二十一版标题、作者和英译编者署名清晰，居中与默认留白正常。"
+    },
+    {
+      "physical_page": 3,
+      "image": "checks/rendered_v21/main_0003.png",
+      "image_sha256": "ec307059b0c076411ed20dbc98256809c9d4450393a3f97d27a06d4a498772b5",
+      "verdict": "pass",
+      "notes": "编排说明及正文次序完整，法英范围与新回校终点可辨，无截断。"
+    },
+    {
+      "physical_page": 4,
+      "image": "checks/rendered_v21/main_0004.png",
+      "image_sha256": "ed382c56be9483b270d397f86a9908a9dc9ff97985f5942f2beab555ff4ecfd4",
+      "verdict": "pass",
+      "notes": "实际收录范围表清晰，六行材料与各卷状态对齐；末段延续正常。"
+    },
+    {
+      "physical_page": 5,
+      "image": "checks/rendered_v21/main_0005.png",
+      "image_sha256": "7030f1c18411bd0f366b9348d41da159bac8c7185ce732d9c29ef194ac42865e",
+      "verdict": "pass",
+      "notes": "接续位置、默认ctexbook说明和单文件构建说明清晰；长路径及类声明均留在版心。"
+    },
+    {
+      "physical_page": 1063,
+      "image": "checks/rendered_v21/main_1063.png",
+      "image_sha256": "d264bf6bc3be8ada97b891b62816b4e26fb4b4bc63bd8b5856839fdb7e85387c",
+      "verdict": "pass",
+      "notes": "旧第12节末页保留，正文公式及五条旧译注清晰，没有新旧段重排冲突。"
+    },
+    {
+      "physical_page": 1071,
+      "image": "checks/rendered_v21/main_1071.png",
+      "image_sha256": "4b4c52b7ede549deb4d1ba94b354f0d9b59c63de9a46eca755dc5f167e6f9f8f",
+      "verdict": "pass",
+      "notes": "第13节Bertini附记末及13.4前三项开头清晰，四条脚注与正文均无重叠。"
+    },
+    {
+      "physical_page": 1072,
+      "image": "checks/rendered_v21/main_1072.png",
+      "image_sha256": "3f120089d2c94deccdd5f45c0e165745c08b925c239ab82c2211d9c1a92c5b8a",
+      "verdict": "pass",
+      "notes": "13.4(c)有限几何点、(d)几何纤维与维数公式清晰；五条脚注完整位于版心内。"
+    },
+    {
+      "physical_page": 1073,
+      "image": "checks/rendered_v21/main_1073.png",
+      "image_sha256": "e5fbb709d71bf1ddce438b4735658b5b2ca88044ab49afa5c0c660fbeeca896a",
+      "verdict": "pass",
+      "notes": "13.4(e)同伦公式和三条新脚注完整；第14节旧译标题及后续公式衔接正常。"
+    },
+    {
+      "physical_page": 1074,
+      "image": "checks/rendered_v21/main_1074.png",
+      "image_sha256": "ce54f9bbfa6de70a831142533a29f1cecf4306b34352da00d7a95905ee1bdbde",
+      "verdict": "pass",
+      "notes": "旧第14节正文及三条旧译注连续，投影公式、Grassmann下标清晰且无裁切。"
+    }
+  ],
+  "final_pdf_pixel_revalidation_after_local_nobreak": {
+    "pass": true,
+    "unchanged_pages": [
+      1,
+      3,
+      4,
+      5,
+      1063,
+      1071,
+      1072,
+      1073,
+      1074
+    ],
+    "scope": "Images actually viewed before the two local no-break corrections are pixel-identical to the corresponding new PDF pages."
+  },
+  "final_pdf_pixel_revalidation_after_wording_refinement": {
+    "pass": true,
+    "unchanged_pages": [
+      1,
+      3,
+      4,
+      5,
+      1063,
+      1071,
+      1072,
+      1073,
+      1074
+    ],
+    "scope": "Actual-view images are pixel-identical after two equivalent Chinese sentence refinements."
+  }
+}

@@ -1,0 +1,119 @@
+{
+  "schema_version": 1,
+  "edition": 21,
+  "reviewer": "/root/v21_engineering",
+  "review_method": "actual_image_view",
+  "document": "report",
+  "pdf": {
+    "path": "report.pdf",
+    "sha256": "f88d2cd3059fd75f7a86f9348ac272c2d975e68998e9ca714d3cfac56e8773f3",
+    "physical_pages": 473
+  },
+  "rendering": {
+    "renderer": "PyMuPDF",
+    "scale": 1.65
+  },
+  "pages": [
+    {
+      "physical_page": 45,
+      "image": "checks/rendered_v21/report_0045.png",
+      "image_sha256": "17e21b94ec34b4175a42a53fa39d25ca39010e3c423996cfaa8a8e7828a0eb83",
+      "verdict": "pass",
+      "notes": "已实际看图。印刷第25页：章标题自然分两行，底本位置、V21-REM-E01与E02标题清晰；正文中的上标an、en、C的上下标及π0、i≥2均可辨认，无缺字、裁切或重叠。本页未见页底脚注。"
+    },
+    {
+      "physical_page": 46,
+      "image": "checks/rendered_v21/report_0046.png",
+      "image_sha256": "2e3b4e01ac062de6185d013c7c3d68371bf693a6503bd78b02f86ccb553e4d7e",
+      "verdict": "pass",
+      "notes": "已实际看图。印刷第26页：有限域下降与几何不可约性的正文、X_{k′}→X及Spec L等行内公式完整；粗体小标题与段落间距正常，页眉和版心无相碰。本页未见页底脚注。"
+    },
+    {
+      "physical_page": 47,
+      "image": "checks/rendered_v21/report_0047.png",
+      "image_sha256": "53e81feb1fee4ab9db645faa3764e9130afec7568a2136bd99369c452475cd98",
+      "verdict": "pass",
+      "notes": "已实际看图。印刷第27页：共同邻域命题、Φ⊂U⊂W和Φ⊂D(f)⊂W∩A两处居中公式完整。V21-REM-E03长标题末字“域”自然换到第二行，已向主整合者报告并确认保留默认格式；该处可读且无缺字、越界或重叠。本页未见页底脚注。"
+    },
+    {
+      "physical_page": 48,
+      "image": "checks/rendered_v21/report_0048.png",
+      "image_sha256": "7f187179fc359663466be7dc31b035c5ee392e05fcfb78cfbcac8250cfbfa9ad",
+      "verdict": "pass",
+      "notes": "已实际看图。印刷第28页：Z=Sing(X̄)∪Sing(Y)、σ_i映射、Hom(V_i/ℓ_i,ℓ_i)以及T=C∩X̄均完整显示；各步标题与正文衔接正常，底部公式留在版心内。本页未见页底脚注。"
+    },
+    {
+      "physical_page": 49,
+      "image": "checks/rendered_v21/report_0049.png",
+      "image_sha256": "495706f7fbf402263592ef644036c396ae52aa54a5087c3b103fd6f718e6d754",
+      "verdict": "pass",
+      "notes": "已实际看图。印刷第29页：有限几何点条件、共同初等曲线族、关联簇集合公式及Bertini维数不等式显示完整。文献题名在页末接至次页，正文无裁切，页眉清楚。本页未见页底脚注。"
+    },
+    {
+      "physical_page": 50,
+      "image": "checks/rendered_v21/report_0050.png",
+      "image_sha256": "3cc286455f3cde7a8ad88e47fcee1b4e72441edaf91fc917dcd44f9a1db38147",
+      "verdict": "pass",
+      "notes": "已实际看图。印刷第30页：承接上一页的英文文献题名、定理1.1及arXiv地址可读；U0→B和U=U0×_B V两式清楚。V21-REM-E04标题、判定和一般基底说明均在版心内。本页未见页底脚注。"
+    },
+    {
+      "physical_page": 51,
+      "image": "checks/rendered_v21/report_0051.png",
+      "image_sha256": "652cc4dd464632d7d379b1425d19418b6026efe463d18ec9646d959c0c7e7c4f",
+      "verdict": "pass",
+      "notes": "已实际看图。印刷第31页：V21-REM-E05标题与底本位置完整；实光滑微分同胚、初等态射塔、紧化与边界的三组公式清楚，an上标、覆盖波浪号和R的维数均可辨。本页未见页底脚注。"
+    },
+    {
+      "physical_page": 52,
+      "image": "checks/rendered_v21/report_0052.png",
+      "image_sha256": "adcb81ee414ca73d0b9db01247b77f5d54a0664f777e2dd0f9b50a8ce0b6e7eb",
+      "verdict": "pass",
+      "notes": "已实际看图。印刷第32页：切丛正合列、边界分裂s_D、H|_D=TD、紧路径原像、局部平凡化及曲面群关系式均完整；上下标、限制竖线和乘积号可辨，页面底部关系式没有被裁切。本页未见页底脚注。"
+    },
+    {
+      "physical_page": 53,
+      "image": "checks/rendered_v21/report_0053.png",
+      "image_sha256": "461ab9b0ceb6f0f8b05f9f6f8f267a3876b4c2f6c91a9b47d1f86d9a1260ee01",
+      "verdict": "pass",
+      "notes": "已实际看图。印刷第33页：纤维普遍覆盖R²、归纳底空间、拉回三式、全局平凡化和覆盖复合的箭头与波浪号均清晰；两行平凡化公式间距正常，段落与下边界无重叠。本页未见页底脚注。"
+    },
+    {
+      "physical_page": 54,
+      "image": "checks/rendered_v21/report_0054.png",
+      "image_sha256": "7cf1ec67d91321165f7d8e2c36fb2fd0c98945c9041b730530723a181a055996",
+      "verdict": "pass",
+      "notes": "已实际看图。印刷第34页：高同伦消失、两行低阶正合列及自由群短正合列完整显示；分类空间说明和四条限制的序号、缩进、行内公式均可读，未见越界或裁切。本页未见页底脚注。"
+    },
+    {
+      "physical_page": 55,
+      "image": "checks/rendered_v21/report_0055.png",
+      "image_sha256": "91ce5368f4bc39a1e76799fb88957dbad9a4c8dfad9f0e3a058dde2c22d7fc11",
+      "verdict": "pass",
+      "notes": "已实际看图。印刷第35页：第五条限制与一手参考材料清楚；[E]、[U]、[H]、[D]条目的作者、定理号和页码完整；两条可见长URL在版心内，前两条作者讲义PDF链接文字清楚。本页未见页底脚注。"
+    },
+    {
+      "physical_page": 56,
+      "image": "checks/rendered_v21/report_0056.png",
+      "image_sha256": "0c98cc18e1400a266f27675ff187f59e01a0664afa62a8c31b8d0cbe7dc9fe8a",
+      "verdict": "pass",
+      "notes": "已实际看图。印刷第36页：本页只有正常页眉与页码，正文区域为空，符合本章结束后的双面排版留白；未见残余孤字、脚注或被截断的公式。"
+    }
+  ],
+  "final_pdf_pixel_revalidation_after_book_only_layout_changes": {
+    "pass": true,
+    "unchanged_pages": [
+      45,
+      46,
+      47,
+      48,
+      49,
+      50,
+      51,
+      52,
+      53,
+      54,
+      55,
+      56
+    ]
+  }
+}

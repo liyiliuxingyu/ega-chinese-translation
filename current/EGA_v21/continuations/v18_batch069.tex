@@ -1,0 +1,32 @@
+% Dot batch 69; source SHA-256: 550202d4d4271647e078c898a87b6849dec7fe6ee4ea2c3cfd93533d8f780dea
+% Archived source: dot_updates_20261124/batches/batch069/EGA第五卷_161至163_光滑二次型.tex
+% Original body lines: 16--35; integration map: integration/late_integration.json
+\begingroup
+\def\newscope{V-Q}
+\def\OO{\mathcal O}
+\def\Sym{\operatorname{Sym}}
+\def\rk{\operatorname{rk}}
+\head{附录 17.16：光滑二次型}
+\egap{16.1}
+设$Q$是$\Sym^2(E)$的一个截面，其中$E$为有限秩局部自由模。$Q$也可视为$E^\vee$上的二次型，它定义$E^\vee$上的对称双线性型$B$，从而给出同态$E^\vee\to E$。取行列式模，便得到$\det(E^\vee)\to\det(E)$，最终得到一个截面
+\[
+d(Q)\in\Gamma\!\left(S,(\det E)^{\otimes 2}\right),
+\]
+称为二次型$Q$的\emph{判别式}（如果没有弄错的话）。若$E=\OO_S^n$，它就是$\OO_S$的一个截面，即表示这一配对的$n\times n$矩阵的行列式，矩阵系数在$\Gamma(S,\OO_S)$中。先立即指出：
+
+\egas{16.2}{命题}
+设$E$的秩处处为正，并且对每个$s\in S$，有$\operatorname{char}\kappa(s)\ne2$，或者$E\otimes\kappa(s)$的秩为偶数。则$Q$光滑的充要条件是$Q$“非退化”，即$d(Q)$可逆。事实上，在正秩约定下，非退化总是充分条件，不必对$S$或$E$再加限制。\cmt{L18-069-01}{原稿未写“秩处处为正”，且充分性原作“不限制$S$或$E$”。正文明确采用正秩。若允许秩零，空矩阵行列式为$1$，而$\mathbf P(0)=V(Q)=\varnothing$，违反15.1中零概形不能等于整条射影纤维的要求。}
+
+最后一句只是便于以后引用：它已包含在前一断言里，因为二次型非退化就蕴含$E$在剩余域特征为$2$的每一点都是偶秩。也可以不区分特征而直接证明：在代数闭域上取一组基，非退化就是说各$\partial Q/\partial X_i$没有共同的非零零点，自然也就没有与$Q$共同的非零零点。若特征不为$2$，反过来也成立；因为
+\[
+2Q=\sum_i X_i\frac{\partial Q}{\partial X_i},
+\]
+各偏导数的任何公共零点也都是$Q$的零点。
+
+最后，若特征为$2$，则与$Q$关联的双线性型$B$（其矩阵是各线性型$\partial Q/\partial X_i$的系数矩阵）是交替型，其“核”$N\subseteq E^\vee$满足$E^\vee/N$为偶秩。若$E$也为偶秩，$N$便同样为偶秩。因此，若$N\ne0$，其秩至少是$2$，故在$N$中至少有一个$Q$的非零零点（仍在代数闭域上），即$Q$不光滑。
+
+注意：这样借助坐标实在有失我们的体面；应当只在简单证明下列引理时使用坐标：
+
+\egas{16.3}{引理}
+设$E$是域$k$上的有限秩向量空间，$Q\in\Sym^2(E)$，$x$是$E^\vee$中的非零向量，$x'$是它在$\mathbf P(E)$中的像。设$Q(x)=0$，即$x'\in V(Q)$。则$V(Q)$在$x'$处光滑且局部维数为$\rk E-2$的充要条件是$x$不属于关联对称双线性型$B$所定义的同态$E^\vee\to E$的核。\cmt{L18-069-02}{法文及英译都写$Q(x,x)=0$和$\rk E-1$。前者按二次型本身写作$Q(x)=0$，不能换成$B(x,x)=0$（特征$2$时后者对所有$x$成立）。后者改为射影超曲面的维数$\rk E-2$；$\rk E-1$是非零方程所定义的仿射锥的维数。两底本还注明$Q\ne0$；它是维数要求或非零极化微分所蕴含的条件。非退化秩一型的射影零概形为空，故没有引理所设的$x'$。}
+\par\endgroup

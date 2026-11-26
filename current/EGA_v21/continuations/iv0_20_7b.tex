@@ -1,0 +1,297 @@
+% 底本 EGAIV.1.pdf，上传PDF第149--152页。
+\egas{20.7.11}{命题}
+假定 $C$ 中每个开理想的平方仍开。若 $C$ 是形式光滑的拓扑 $A$-代数，
+且 $\Omega^1_{C/B}$ 是形式投射的 $C$-模，则对每个被 $C$ 的开理想
+零化的离散 $C$-模 $L$，有典范同构
+\begin{equation}
+ \Exalcotop_B(C,L)\simeq\HomCont_C(\Upsilon_{C/B/A},L).
+ \tag{20.7.11.1}
+\end{equation}
+
+事实上，由（19.4.4），正合列（20.3.7.1）中的
+$\Exalcotop_A(C,L)$ 为零，故
+$\Exalcotop_B(C,L)=\Exalcotop_{B/A}(C,L)$。
+所讨论的同态正是（20.7.10.1）。其双射性由（20.6.13）通过归纳极限得到；
+这里要使用 $\Omega^1_{C/B}$ 的拓扑由 $C$ 导出（20.4.5），
+以及（19.2.4）的形式投射判据。
+\cmt{J10-T04}{原文在证明中将正在讨论的同态误引为（20.7.8.1）；
+后者的目标是另一个扩张类群，并非连续 $\Hom$ 模。
+正文按实际源靶改引（20.7.10.1）。本条使用归纳极限，不应据此断言
+后文完备化所用的逆极限无条件保持右正合。}
+
+\egap{20.7.12}
+在（20.6.14）中，也给 $\Upsilon^C_{B/A/\Lambda}$ 赋由
+$\Omega^1_{A/\Lambda}\otimes_A C$ 诱导的子空间拓扑。
+若所考虑的环都是拓扑环且环同态连续，
+则（20.6.14.6）的同态连续。
+
+\egap{20.7.13}
+若在（20.6.25）中，$\Lambda,A,B,C$ 都是拓扑环，$s,u,v$ 连续，
+且 $L$ 是被 $C$ 的开理想零化的离散 $C$-模，
+则可像（20.3.6）一样通过归纳极限，得到正合列
+\begin{equation}
+\begin{aligned}
+&0\longrightarrow\DerCont_B(C,L)\longrightarrow\DerCont_A(C,L)
+ \longrightarrow\DerCont_A(B,L)\\
+&\longrightarrow\Exalcotop_{B/\Lambda}(C,L)\longrightarrow
+ \Exalcotop_{A/\Lambda}(C,L)\\
+&\longrightarrow\Exalcotop_{A/\Lambda}(B,L)\longrightarrow0 .
+\end{aligned}
+\tag{20.7.13.1}
+\end{equation}
+\cmt{J10-T05}{原文开头引用（20.6.23），而该条是关于余法模的正合列，
+没有这里的系数模 $L$ 和导子项。这里推广的是（20.6.25.1），正文据此更正引用。}
+
+\egap{20.7.14}
+设 $A$ 为拓扑环，$B$ 为拓扑 $A$-代数。
+取开理想 $\mathfrak m'\subseteq A$、$\mathfrak n'\subseteq B$，
+使 $\mathfrak m'B\subseteq\mathfrak n'$；令
+$A'=A/\mathfrak m'$、$B'=B/\mathfrak n'$。
+典范同态 $B\otimes_A B\to B'\otimes_{A'}B'$ 的核为
+\[
+ U'=\Im(\mathfrak n'\otimes_A B)+\Im(B\otimes_A\mathfrak n').
+\]
+若 $\mathfrak J=\Ker(B\otimes_A B\to B)$，则由此得到
+\begin{equation}
+ \varphi_{(\mathfrak m',\mathfrak n')}:
+ \Omega^1_{B/A}\longrightarrow\Omega^1_{B'/A'}
+ \tag{20.7.14.1}
+\end{equation}
+的核为
+\[
+ \bigl((\mathfrak J\cap U')+\mathfrak J^2\bigr)/\mathfrak J^2 .
+\]
+此外，（20.7.14.1）满射，这由（20.4.7）得到。
+
+若 $\mathfrak m''\subseteq\mathfrak m'$、$\mathfrak n''\subseteq\mathfrak n'$
+为另一对满足 $\mathfrak m''B\subseteq\mathfrak n''$ 的开理想，
+并置 $A''=A/\mathfrak m''$、$B''=B/\mathfrak n''$，则同样有满同态
+\[
+ \varphi_{(\mathfrak m',\mathfrak n'),(\mathfrak m'',\mathfrak n'')}:
+ \Omega^1_{B''/A''}\longrightarrow\Omega^1_{B'/A'} .
+\]
+这些同态构成逆系统。而
+$\bigl((\mathfrak J\cap U')+\mathfrak J^2\bigr)/\mathfrak J^2$
+构成 $\Omega^1_{B/A}$ 的零邻域基，因此其分离完备化满足典范同构
+\begin{equation}
+ \widehat{\Omega}^1_{B/A}
+ \simeq\varprojlim_{(\mathfrak m',\mathfrak n')}\Omega^1_{B'/A'} .
+ \tag{20.7.14.2}
+\end{equation}
+典范映射 $j:\Omega^1_{B/A}\to\widehat{\Omega}^1_{B/A}$ 是各
+$\varphi_{(\mathfrak m',\mathfrak n')}$ 的逆极限，因而每个
+$\varphi_{(\mathfrak m',\mathfrak n')}$ 分解为
+\[
+ \Omega^1_{B/A}\xrightarrow{j}\widehat{\Omega}^1_{B/A}
+ \longrightarrow\Omega^1_{B'/A'} .
+\]
+由于这个复合满射，典范映射
+\begin{equation}
+ \widehat{\Omega}^1_{B/A}\longrightarrow\Omega^1_{B'/A'}
+ \tag{20.7.14.3}
+\end{equation}
+也满射。上述叙述中的 $A'$ 还可以处处换为 $A$。
+
+最后，设 $L$ 为分离完备的拓扑 $B$-模。
+每个连续的 $B$-线性同态 $\Omega^1_{B/A}\to L$ 唯一延拓为连续的
+$\widehat B$-线性同态 $\widehat{\Omega}^1_{B/A}\to L$；
+反之，与 $j$ 复合就返回原同态。
+因此有典范同构
+\[
+ \HomCont_B(\Omega^1_{B/A},L)
+ \simeq\HomCont_{\widehat B}(\widehat{\Omega}^1_{B/A},L).
+\]
+特别地，若 $L$ 离散且被 $B$ 的某个开理想零化，
+则（20.4.8.2）可写为
+\begin{equation}
+ \HomCont_{\widehat B}(\widehat{\Omega}^1_{B/A},L)
+ \simeq\DerCont_A(B,L).
+ \tag{20.7.14.4}
+\end{equation}
+
+\egas{20.7.15}{命题}
+设 $A$ 为离散环，$B$ 为进制拓扑 $A$-代数（$0_{\mathrm I}$，7.1.9），
+$\mathfrak n$ 为其定义理想，$B_0=B/\mathfrak n$。
+若 $\Omega^1_{B_0/A}$ 与 $\mathfrak n/\mathfrak n^2$ 都是有限型 $B_0$-模，
+则 $\widehat{\Omega}^1_{B/A}$ 是有限型 $B$-模。
+
+因为开理想的平方仍开，$\Omega^1_{B/A}$ 的拓扑就是
+$\mathfrak n$-预进制拓扑（20.4.5）。
+$B$ 是进制环，故由（$0_{\mathrm I}$，7.2.7及7.2.9），
+只需证明
+\[
+ \Omega^1_{B/A}/\mathfrak n\Omega^1_{B/A}
+ =\Omega^1_{B/A}\otimes_B B_0
+\]
+为有限型 $B_0$-模。而这由假设及正合列（20.5.12.1）
+\[
+ \mathfrak n/\mathfrak n^2\longrightarrow
+ \Omega^1_{B/A}\otimes_B B_0\longrightarrow
+ \Omega^1_{B_0/A}\longrightarrow0
+\]
+得到。
+
+\egap{20.7.16}
+例如，若 $A=k$ 为域，$k'/k$ 为有限扩张，
+\[
+ B=k'[[T_1,\ldots,T_n]]
+\]
+赋通常拓扑，则（20.7.15）适用（参见21.9.2）。
+当 $n\ge1$ 时，$B$ 的分式域 $K$ 在 $k$ 上具有无限超越次数。
+若 $k$ 的特征为零，便可由（20.4.13，i）及（20.5.9），
+并使用特征零的域上的每个导子都可延拓到任意扩张，
+推出未完备化的 $\Omega^1_{B/k}$ 不是有限型 $B$-模。
+\cmt{J10-T06}{“分式域在 $k$ 上具有无限超越次数”及随后“不有限生成”的断言
+须排除 $n=0$。零变量时 $B=k'$ 是 $k$ 的有限扩张；若特征为零，
+$\Omega^1_{k'/k}=0$。正文把 $n\ge1$ 明写在这两项断言之前，
+并未限制前一句关于（20.7.15）适用性的说明。}
+
+\egap{20.7.17}
+设 $A,B,C$ 为拓扑环，$u:A\to B$、$v:B\to C$ 连续。
+以开理想商
+\[
+ A'=A/\mathfrak m',\quad B'=B/\mathfrak n',\quad C'=C/\mathfrak p'
+\]
+替换它们，其中
+$u(\mathfrak m')\subseteq\mathfrak n'$、
+$v(\mathfrak n')\subseteq\mathfrak p'$。
+由诱导的 $u':A'\to B'$、$v':B'\to C'$，
+得到典范同态 $u'_{C'/B'/A'}$、$v'_{C'/B'/A'}$。
+按（20.5.4），这些构成逆系统，故在逆极限上得到
+\begin{equation}
+ \widehat v_{C/B/A}:
+ \Omega^1_{B/A}\ctensor_B C\longrightarrow\widehat{\Omega}^1_{C/A},
+ \tag{20.7.17.1}
+\end{equation}
+\begin{equation}
+ \widehat u_{C/B/A}:
+ \widehat{\Omega}^1_{C/A}\longrightarrow\widehat{\Omega}^1_{C/B}.
+ \tag{20.7.17.2}
+\end{equation}
+它们分别是正合列（20.5.7.1）中同态在分离完备化上的延拓。
+因此在序列
+\begin{equation}
+ \Omega^1_{B/A}\ctensor_B C
+ \xrightarrow{\widehat v_{C/B/A}}\widehat{\Omega}^1_{C/A}
+ \xrightarrow{\widehat u_{C/B/A}}\widehat{\Omega}^1_{C/B}
+ \longrightarrow0
+ \tag{20.7.17.3}
+\end{equation}
+中，相邻两个同态的复合为零，但该序列不一定正合。
+
+不过，若 $B,C$ 可度量，则 $\widehat u_{C/B/A}$ 满射，且
+$\Im(\widehat v_{C/B/A})$ 在 $\Ker(\widehat u_{C/B/A})$ 中稠密。
+事实上，取分别由 $B,C$ 的开理想组成的递减零邻域基
+$(\mathfrak m_k)$、$(\mathfrak n_k)$，并使
+$v(\mathfrak m_k)\subseteq\mathfrak n_k$；令
+$B_k=B/\mathfrak m_k$、$C_k=C/\mathfrak n_k$。
+各级微分模的转移同态均满射（20.7.14）。
+每一级的像模也形成满转移的逆系统，因为它们由
+$\Omega^1_{B_k/A}\otimes_{B_k}C_k$ 的满转移系统取像而得。
+据此逐级调整提升，可以构造 $\widehat u_{C/B/A}$ 下的相容提升；
+而对其核中一个给定元素，在每个固定离散商中可以选取首项的原像，
+再提升到首项的完备化。这分别给出满射性及像的稠密性
+（比较 $0_{\mathrm I}$，7.3.1）。
+\cmt{J10-G03}{正文展开了原文“由转移同态满射立即得到”的两项不同结论。
+“在核中稠密”没有改写为“等于核”；前者不足以保证完备化后序列的中间正合性。
+这也是本条原文已明确保留的限制。}
+
+\egas{20.7.18}{命题}
+设 $A,B,C$ 为拓扑环，$u:A\to B$、$v:B\to C$ 连续，
+且 $B,C$ 均可容许（$0_{\mathrm I}$，7.1.2）并可度量。
+则典范同态
+\[
+ \widehat v_{C/B/A}:
+ \Omega^1_{B/A}\ctensor_B C\longrightarrow\widehat{\Omega}^1_{C/A}
+\]
+有连续的 $C$-线性左逆，当且仅当
+$C$ 是相对于 $A$ 形式光滑的 $B$-代数。
+
+必要性由（20.7.2）及（19.1.6）得到。
+为证充分性，令
+\[
+ L=\Omega^1_{B/A}\ctensor_B C .
+\]
+由假设，$L$ 为可度量的完备拓扑模，故
+$E=D_C(L)=C\oplus L$ 赋乘积拓扑后也可度量且完备。
+它还是可容许环：若 $\mathfrak k$ 为 $C$ 的定义理想，则
+\[
+ (\mathfrak k\oplus L)^m
+ =\mathfrak k^m\oplus\mathfrak k^{m-1}L
+\]
+趋于零。
+
+复合
+\[
+ D:B\xrightarrow{d_{B/A}}\Omega^1_{B/A}
+ \longrightarrow\Omega^1_{B/A}\ctensor_B C=L
+\]
+是连续 $A$-导子。因此
+\[
+ f:B\longrightarrow E,\qquad x\longmapsto(v(x),D(x))
+\]
+是连续 $A$-代数同态，并给 $E$ 赋予 $B$-扩张结构。
+$L$ 是 $E$ 的闭理想；由（19.9.5）及相对形式光滑的假设，
+恒等映射 $C\to E/L$ 可以分解为
+\[
+ C\xrightarrow{g}E\longrightarrow E/L ,
+ \qquad gv=f,
+\]
+其中 $g$ 连续。由（20.1.3），$g$ 具有形式
+\[
+ g(y)=(y,D'(y)),
+\]
+其中 $D':C\to L$ 是连续 $A$-导子，且 $D'v=D$。
+\cmt{J10-T07}{原文此处写“连续 $B$-导子”，应为“连续 $A$-导子”。
+若是 $B$-导子，就必须在 $v(B)$ 上为零，与所需 $D'v=D$ 一般矛盾。
+$g$ 对所赋 $B$-结构的相容性给出的是 $D'v=D$，不是 $D'v=0$。
+正文据此订正；报告用 $A=k,\ B=C=k[t]$ 的恒等同态作具体核对。}
+由（20.7.14.4）及其前面的完备目标版本，
+$D'=h\,\widehat d_{C/A}$，其中
+$h:\widehat{\Omega}^1_{C/A}\to L$ 连续且 $C$-线性。
+按定义，
+$\widehat d_{C/A}v=\widehat v_{C/B/A}D$；
+而 $D(B)$ 的 $C$-线性组合在 $L$ 中稠密（20.4.7）。
+因此 $D'v=D$ 蕴涵
+\[
+ h\,\widehat v_{C/B/A}=1_L ,
+\]
+这证明充分性。
+
+\egas{20.7.19}{推论}
+在（20.7.18）的假设下，若再假定 $B,C$ 中每个开理想的平方仍开，
+则 $C$ 相对于 $A$ 形式光滑，当且仅当
+$\widehat v_{C/B/A}$ 有 $C$-线性左逆。
+
+此时所用两个完备微分模的拓扑由 $C$ 导出（20.4.5），
+因而两者之间的 $C$-线性同态自动连续，故可应用（20.7.18）。
+
+\egap{20.7.20}
+设 $A$ 为拓扑环，$B$ 为可度量的完备拓扑 $A$-代数，
+$\mathfrak k$ 为 $B$ 的闭理想，$C=B/\mathfrak k$ 赋商拓扑；
+则 $C$ 也可度量且完备。
+取由 $B$ 的开理想组成的递减零邻域基 $(\mathfrak m_k)$，
+并令
+\[
+ B_k=B/\mathfrak m_k,\qquad
+ \mathfrak k_k=(\mathfrak k+\mathfrak m_k)/\mathfrak m_k,\qquad
+ C_k=B_k/\mathfrak k_k .
+\]
+存在逆系统的同态
+\[
+ \delta_{C_k/B_k/A}:\mathfrak k_k/\mathfrak k_k^2
+ \longrightarrow\Omega^1_{B_k/A}\otimes_{B_k}C_k
+ \qquad\text{（20.5.11.3）}.
+\]
+通过逆极限，得到典范同态
+\[
+ \widehat\delta_{C/B/A}:
+ \widehat{\mathfrak k/\mathfrak k^2}
+ \longrightarrow\Omega^1_{B/A}\ctensor_B C .
+\]
+像（20.7.17）那样推理，可知典范同态
+\[
+ \widehat v_{C/B/A}:
+ \Omega^1_{B/A}\ctensor_B C\longrightarrow\widehat{\Omega}^1_{C/A}
+\]
+满射，且 $\Im(\widehat\delta_{C/B/A})$ 在其核中稠密。

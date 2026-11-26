@@ -1,0 +1,388 @@
+\NewNote{以下为第三卷第二部分；其§6直接接续本章§5。第一部分的书末资料已移至全书附录，原稿“待续”仍保留。}
+\source{\texttt{EGAIII.2.pdf}，PDF第4--13页，原书第5--14页的相应部分}
+\setcounter{section}{5}\section{局部与整体 Tor 函子；Künneth 公式}
+\subsection{引言}
+\egap{6.1.1}
+设 $f:X\to Y$ 为预概形态射，$\F$ 为拟凝聚 $\OO_X$-模。在研究“高阶直接像”$R^nf_*(\F)$ 时，会遇到下列一般问题：给定一个“基变换”态射 $g:Y'\to Y$，令
+\[
+ X'=X_{(Y')}=X\times_Y Y',\qquad
+ \F'=\F\otimes_{\OO_Y}\OO_{Y'},\qquad
+ f'=f_{(Y')}:X'\to Y',
+\]
+并在假定已经知道各 $R^nf_*(\F)$ 的情况下，求得关于高阶直接像 $R^nf'_*(\F')$ 的信息。容易看出（例如参见（7.7.2）），这归结为研究：当拟凝聚 $\OO_Y$-模 $\G$ 变化时，$R^nf_*(\F\otimes_{\OO_Y}\G)$ 如何变化；换言之，研究函子
+\[
+ \G\longmapsto R^nf_*(\F\otimes_{\OO_Y}\G).
+\]
+若 $\F$ 在 $Y$ 上平坦，则 $\G\mapsto\F\otimes_{\OO_Y}\G$ 是正合函子（$0_{\mathrm I}$，6.7.4），因而复合函子 $\G\mapsto R^nf_*(\F\otimes_{\OO_Y}\G)$ 仍构成上同调函子。但一般情形不再如此；为了应用上同调方法，便需要用另一些总是构成上同调函子的函子，替代上述函子。这些函子推广模论中的“Tor”函子，将在6.3至6.7中定义。实际上有“局部”和“整体”两种推广，它们由6.7讨论的谱序列相联系。作为这些谱序列的应用，在一定条件下可得到“Künneth公式”，用 $R^pf_{1*}(\F_1)$ 与 $R^qf_{2*}(\F_2)$ 表示
+\[
+ R^n(f_1\times f_2)_*(\F_1\otimes_Y\F_2).
+\]
+另外一些谱序列（6.8）推广模的 Tor 函子的结合性谱序列；基变换问题本身也引出谱序列（6.9）。
+
+\egap{6.1.2}
+此外，将会看到（6.10），这样定义的上同调函子 $\G\mapsto\mathcal T_*(\G)$，局部地（在 $Y$ 上）具有
+\[
+ \G\longmapsto H_*(\LL_\bullet\otimes_Y\G)
+\]
+的形式，其中 $\LL_\bullet$ 是局部自由 $\OO_Y$-模组成的复形（确定到同伦），$H_*$ 表示同调。因而，值得暂且忘掉产生 $\LL_\bullet$ 的特殊情形，而一般地研究上述形式的函子；必要时，再对 $\LL_i$ 或 $H_i(\LL_\bullet)$ 加上适当的有限性假设。这正是§7的对象，该节的主要部分可以独立于§6阅读。
+
+这些函子最重要的性质涉及 $\mathcal T_*$ 的某个分量 $\mathcal T_n$ 的正合性。我们将给出判定此类性质的若干准则。作为应用，将得到保证函子
+\[
+ \G\longmapsto R^nf_*(\F\otimes_{\OO_Y}\G)
+\]
+正合的条件（使用（6.1.1）的记号）；这时称 $\F$ 在维数 $n$ 上对 $Y$ 上同调平坦。另一重要性质是函数
+\[
+ y\longmapsto\dim_{k(y)}\bigl(\mathcal T_n(k(y))\bigr)
+\]
+的半连续性。若 $\mathcal T_n$ 正合，这一性质成为连续性；根据 Grauert 的结果，当 $Y$ 约化时，逆命题也成立（7.8.4）。
+
+\egap{6.1.3}
+在§§6、7中，我们系统地使用超上同调，处处以层的复形而非单个层作为变量，尽管这一观点的必要性要到以后各章才会显现。这里发展的上同调形式体系，在本论著专门建立凝聚层上同调函子演算、并纳入对偶形式体系的章节中，将变得更为清晰。但这需要超出本章范围的展开。
+
+\egap{6.1.4}
+为简便起见，设 $K'^\bullet,K''^\bullet$ 是阿贝尔范畴 $\mathbf C$ 中的两个复形。如果复形态射 $f:K'^\bullet\to K''^\bullet$ 存在一个复形态射 $g:K''^\bullet\to K'^\bullet$，使 $f\circ g$、$g\circ f$ 都与恒等态射同伦，则称 $f$ 为\textbf{同伦等价}（原文 homotopisme）。存在这样的态射时，也滥用语言说两个复形“同伦”。当可以定义从 $\mathbf C$ 到阿贝尔范畴 $\mathbf C'$ 的协变加性函子 $T$ 关于 $\mathbf C$ 中复形的超上同调时（0，11.4.3），复形的同伦等价 $K'^\bullet\to K''^\bullet$ 显然典范地诱导超上同调同构
+\[
+ R^*T(K'^\bullet)\longrightarrow R^*T(K''^\bullet)
+\]
+（同上）。
+
+\subsection{预概形上模复形的超上同调}
+\egap{6.2.1}
+设 $X$ 为预概形，$\K^\bullet=(\K^i)_{i\in\mathbf Z}$ 是微分算子次数为 $+1$ 的 $\OO_X$-模复形。回顾：对于每个预概形态射 $f:X\to Y$，已经定义了超上同调 $\OO_Y$-模 $\mathbb H^n(f,\K^\bullet)$（也记为 $\mathbb H^n(\K^\bullet)$ 或 $\mathbf R^nf_*(\K^\bullet)$），其中 $n\in\mathbf Z$（0，12.4.1）。\cmt{记号}{这里用 $\mathbb H$ 排印原文的超上同调记号，以区别于复形的上同调层 $\HH$；数学对象、次数与公式编号均不改变。}
+超上同调 $\mathbb H^*(f,\K^\bullet)$ 是两个谱函子 ${}'\mathscr E(f,\K^\bullet)$、${}''\mathscr E(f,\K^\bullet)$ 的终值，其 $E_2$ 项为
+\begin{align}
+ {}'\mathscr E_2^{pq}&=\HH^p\bigl(\HH^q(f,\K^\bullet)\bigr),\tag{6.2.1.1}\\
+ {}''\mathscr E_2^{pq}&=\HH^p\bigl(f,\HH^q(\K^\bullet)\bigr)
+ =R^pf_*\bigl(\HH^q(\K^\bullet)\bigr).\tag{6.2.1.2}
+\end{align}
+在（6.2.1.1）中，$\HH^q(f,\K^\bullet)$ 表示其第 $i$ 次分量为
+$\HH^q(f,\K^i)=R^qf_*(\K^i)$ 的复形（同上）。还要回顾：若 $Y$ 只有一个点，相应超上同调记为 $\mathbb H^*(X,\K^\bullet)$，它由 $\Gamma(X,\OO_X)$-模组成，且与所选单点预概形 $Y$ 无关；若 $Y=X$ 且 $f=1_X$，则
+\[
+ \mathbb H^n(f,\K^\bullet)=\HH^n(\K^\bullet).
+\]
+若除 $i=i_0$ 外，均有 $\K^i=0$，则
+\[
+ \mathbb H^n(f,\K^\bullet)\simeq R^{n-i_0}f_*(\K^{i_0}).
+\]
+谱序列 ${}'\mathscr E(f,\K^\bullet)$ 总是正则的；若 $\K^\bullet$ 下有界，两谱序列均为双正则（0，12.4.1）。
+
+每个同伦等价 $h:\K^\bullet\to\K'^\bullet$（6.1.4）诱导超上同调的同构。若仅假设 $\HH^*(h):\HH^*(\K^\bullet)\to\HH^*(\K'^\bullet)$ 是同构，而 $\K^\bullet,\K'^\bullet$ 都下有界，结论仍成立；这是把（0，11.1.5）应用于（6.2.1.2）及 $\K'^\bullet$ 的相应谱序列所得。最后，对于 $X$ 的每个开覆盖 $\mathfrak U=(U_\alpha)$，也已把 $\mathbb H^*(\mathfrak U,\K^\bullet)$ 定义为双复形 $C^\bullet(\mathfrak U,\K^\bullet)$ 的上同调（0，12.4.5）；其双次数 $(i,j)$ 的分量按定义为 $C^i(\mathfrak U,\K^j)$。各 $\mathbb H^n(\mathfrak U,\K^\bullet)$ 仍是 $\Gamma(X,\OO_X)$-模。
+
+\egas{6.2.2}{命题}
+设 $X$ 为概形，$\mathfrak U=(U_\alpha)$ 为 $X$ 的仿射开覆盖。对于每个拟凝聚 $\OO_X$-模复形 $\K^\bullet$，超上同调模 $\mathbb H^*(X,\K^\bullet)$ 与 $\mathbb H^*(\mathfrak U,\K^\bullet)$ 典范同构。
+\begin{proof}
+覆盖中开集的任意有限交 $V$ 都是仿射的（I，5.5.6），所以对每个 $i$ 与每个 $q>0$，有 $H^q(V,\K^i)=0$（1.3.1）。因此本命题是（0，12.4.7）的特殊情形。
+\end{proof}
+
+\egas{6.2.3}{命题}
+设 $f:X\to Y$ 为预概形的拟紧分离态射。对于每个拟凝聚 $\OO_X$-模复形 $\K^\bullet$，各 $\OO_Y$-模 $\mathbb H^n(f,\K^\bullet)$ 都拟凝聚。
+\begin{proof}
+各 $\HH^q(f,\K^i)=R^qf_*(\K^i)$ 都是拟凝聚 $\OO_Y$-模（1.4.10），因而 ${}'\mathscr E_2^{pq}$ 也拟凝聚，因为按（6.2.1.1），它是拟凝聚模之间同态的核模去像（I，4.1.1）。同理，第一谱序列中所有的 ${}'\mathscr E_r^{pq}$、$B_k^{pq}({}'\mathscr E)$、$Z_k^{pq}({}'\mathscr E)$ 都拟凝聚。谱序列的正则性说明 $Z_\infty^{pq}({}'\mathscr E)$ 等于某个 $Z_k^{pq}({}'\mathscr E)$，因而拟凝聚；而
+\[
+ B_\infty^{pq}({}'\mathscr E)=\ilim_k B_k^{pq}({}'\mathscr E)
+\]
+也拟凝聚（0，11.2.4及I，4.1.1）。于是各 ${}'\mathscr E_\infty^{pq}$ 都拟凝聚。正则性还说明 $\mathbb H^n(f,\K^\bullet)$ 上的滤过是离散且穷尽的：它是一个递增序列 $(\G_k)_{k\geq0}$ 的并，$\G_0=0$，且每个商 $\G_k/\G_{k-1}$ 都是某个 ${}'\mathscr E_\infty^{pq}$，因而拟凝聚。由（1.4.17）对 $k$ 归纳，各 $\G_k$ 都拟凝聚；再由
+$\mathbb H^n(f,\K^\bullet)=\ilim_k\G_k$ 和（I，4.1.1）即得结论。
+\end{proof}
+
+\egas{6.2.4}{推论}
+在（6.2.3）的假设下，对于 $Y$ 的每个仿射开集 $V$，典范同态
+\begin{equation}
+ \mathbb H^n(f^{-1}(V),\K^\bullet)
+ \longrightarrow\Gamma(V,\mathbb H^n(f,\K^\bullet))\tag{6.2.4.1}
+\end{equation}
+对每个 $n\in\mathbf Z$ 都双射。
+\begin{proof}
+证明与（1.4.11）相同：使用（6.2.2），依次将其中的 $\F$ 换成 $\K^\bullet$，$\K^\bullet$ 换成 $\bigl(C^\bullet(\mathfrak U,\K^\bullet)\bigr)^\sim$，$\HH^n(\K^\bullet)$ 换成 $\mathbb H^n(f,\K^\bullet)$；并注意到根据（6.2.3），最后这个模是拟凝聚的。
+\end{proof}
+
+\egas{6.2.5}{命题}
+设 $Y$ 为局部诺特预概形，$f:X\to Y$ 为本征态射，$\K^\bullet$ 为 $\OO_X$-模复形，并且各 $\OO_X$-模 $\HH^n(\K^\bullet)$ 凝聚。则各 $\OO_Y$-模 $\mathbb H^n(f,\K^\bullet)$ 凝聚。\cmt{P02}{原陈述只假设上同调层凝聚，以下证明却直接使用（6.2.2）、（6.2.4）及各项拟凝聚时的 Čech 正合性。需要核对是否已建立适用的拟凝聚复形替代或更广版本；本批不把此处直接宣判为命题错误。详见核查说明P02。}
+\begin{proof}
+问题在 $Y$ 上是局部的，可设 $Y$ 为诺特仿射概形。由（6.2.4），只需证明各 $\mathbb H^n(X,\K^\bullet)$ 是有限型 $\Gamma(Y,\OO_Y)$-模。根据（6.2.2），
+\[
+ \mathbb H^n(X,\K^\bullet)=\mathbb H^n(\mathfrak U,\K^\bullet),
+\]
+其中，由于 $X$ 拟紧，可取有限仿射开覆盖 $\mathfrak U$。各复形 $C^\bullet(\mathfrak U,\K^j)$ 的余链按定义是交替的，因此存在整数 $r>0$，使其在 $i<0$ 及 $i>r$ 时第 $i$ 项为零。由（0，11.3.3），双复形 $C^\bullet(\mathfrak U,\K^\bullet)$ 的两个谱序列都双正则。
+
+各覆盖开集的交都是仿射开集（I，5.5.6），所以每个函子 $\F\mapsto C^i(\mathfrak U,\F)$ 在拟凝聚 $\OO_X$-模范畴中正合。因此
+\[
+ H^q(C^i(\mathfrak U,\K^\bullet))=C^i(\mathfrak U,\HH^q(\K^\bullet)),
+\]
+第二谱序列的 $E_2$ 项（0，11.3.2）为
+\begin{align*}
+ {}''E_2^{pq}
+ &=H^p(C^\bullet(\mathfrak U,\HH^q(\K^\bullet)))\\
+ &=H^p(\mathfrak U,\HH^q(\K^\bullet))
+ =H^p(X,\HH^q(\K^\bullet)),
+\end{align*}
+最后一步由（1.4.1）。由于 $f$ 本征，这些都是有限型 $\Gamma(Y,\OO_Y)$-模（3.2.1）。第二谱序列双正则，于是各 $\mathbb H^n(X,\K^\bullet)$ 都有限型（0，11.1.8）。
+\end{proof}
+特别地，如果 $\K^\bullet$ 是凝聚 $\OO_X$-模复形，则在（6.2.5）关于 $Y,f$ 的假设下，各 $\mathbb H^n(f,\K^\bullet)$ 凝聚（$0_{\mathrm I}$，5.3.4）。
+
+\egap{6.2.6}
+超上同调 $\mathbb H^*(f,\K^\bullet)$ 在下有界 $\OO_X$-模复形范畴中构成上同调函子（0，12.4.4）。当 $f$ 拟紧、$X$ 的底空间局部诺特时，它在所有 $\OO_X$-模复形的范畴中也构成上同调函子：由（G，II，3.10.1），$f_*$ 与归纳极限交换（问题在 $Y$ 上局部），故可应用（0，11.5.2）。
+
+最后，如果 $f$ 分离，则 $\mathbb H^*(f,\K^\bullet)$ 在拟凝聚 $\OO_X$-模复形范畴中构成上同调函子。当 $Y$ 仿射时，这是直接的，因为此时 $X$ 是概形，由（6.2.2）的典范同构，归结为验证 $\K^\bullet\mapsto\mathbb H^n(\mathfrak U,\K^\bullet)$ 是上同调函子；而 $\K^\bullet\mapsto C^\bullet(\mathfrak U,\K^\bullet)$ 在该范畴中正合（I，1.3.7），故结论立即成立。
+
+一般情形下，对于 $Y$ 的每个仿射开集 $V$，$f^{-1}(V)$ 是概形。为了应用以上论证，只需验证：对于拟凝聚模复形的短正合列
+\[
+ 0\longrightarrow\K'^\bullet\longrightarrow\K^\bullet
+ \longrightarrow\K''^\bullet\longrightarrow0,
+\]
+连接同态
+\[
+ \delta:\mathbb H^n(f,\K''^\bullet)|_V
+ \longrightarrow\mathbb H^{n+1}(f,\K'^\bullet)|_V
+\]
+不依赖于定义它时所用的 $f^{-1}(V)$ 的仿射开覆盖 $\mathfrak U$。这是因为，如果 $\mathfrak U'$ 是一个更细的仿射开覆盖，则下列由典范同构组成的图交换：
+\[
+\begin{tikzcd}[column sep=large]
+\mathbb H^n(\mathfrak U,\K^\bullet) \arrow[r,"\sim"] \arrow[d,"\sim"'] & \mathbb H^n(f^{-1}(V),\K^\bullet)\\
+\mathbb H^n(\mathfrak U',\K^\bullet) \arrow[ur,"\sim"'] &
+\end{tikzcd}
+\]
+而且下面的图也交换：
+\[
+\begin{tikzcd}[column sep=large]
+\mathbb H^n(\mathfrak U,\K''^\bullet) \arrow[r,"\delta"] \arrow[d] & \mathbb H^{n+1}(\mathfrak U,\K'^\bullet) \arrow[d]\\
+\mathbb H^n(\mathfrak U',\K''^\bullet) \arrow[r,"\delta"] & \mathbb H^{n+1}(\mathfrak U',\K'^\bullet).
+\end{tikzcd}
+\]
+当上述条件之一成立且 $\K^\bullet\to\K'^\bullet$ 是同伦等价（6.1.4）时，相应同构是一个 $\delta$-函子同构（0，11.4.4）。
+
+\egap{6.2.7}
+以上全部结果，自然也适用于微分次数为 $-1$ 的拟凝聚 $\OO_X$-模复形 $\K_\bullet$，除记号外无需改变；只须考虑 $\K^i=\K_{-i}$ 的上标复形即可。
+
+\subsection{两个模复形的超 Tor}
+\egap{6.3.1}
+设 $A$ 为交换环，$P_\bullet,Q_\bullet$ 是微分次数为 $-1$ 的两个 $A$-模复形。取 $P_\bullet$、$Q_\bullet$ 的 Cartan--Eilenberg 投射解消 $L_{\bullet\bullet}$、$M_{\bullet\bullet}$（0，11.6.1）。按第一次数相加、第二次数相加，$L_{\bullet\bullet}\otimes_A M_{\bullet\bullet}$ 是一个微分次数为 $-1$ 的双复形。它的同调不依赖所选解消，按定义就是双函子 $P_\bullet\otimes_AQ_\bullet$ 关于两个变量的超同调（0，11.6.5）。定义
+\begin{equation}
+ \Tor_n^A(P_\bullet,Q_\bullet)
+ =H_n(L_{\bullet\bullet}\otimes_A M_{\bullet\bullet}).\tag{6.3.1.1}
+\end{equation}
+称此 $A$-模为两个复形的第 $n$ 个\textbf{超 Tor}。在下有界 $A$-模复形范畴中，各 $\Tor_n^A$ 在两个变量中构成同调双函子（0，11.6.5）。此外：
+
+\egas{6.3.2}{命题}
+双函子 $\Tor_*^A(P_\bullet,Q_\bullet)$ 是两个谱双函子 ${}'E(P_\bullet,Q_\bullet)$、${}''E(P_\bullet,Q_\bullet)$ 的公共终值，其 $E_2$ 项为
+\begin{align}
+ {}'E^2_{pq}&=H_p\bigl(\Tor_q^A(P_\bullet,Q_\bullet)\bigr),\tag{6.3.2.1}\\
+ {}''E^2_{pq}&=\bigoplus_{i+j=q}\Tor_p^A\bigl(H_i(P_\bullet),H_j(Q_\bullet)\bigr).\tag{6.3.2.2}
+\end{align}
+在（6.3.2.1）中，$\Tor_q^A(P_\bullet,Q_\bullet)$ 指由各普通 Tor 模 $\Tor_q^A(P_i,Q_j)$ 构成的双复形。谱序列（6.3.2.2）总是正则的；如果两个复形都下有界，或者 $A$ 的上同调维数有限，则两个谱序列都双正则。
+\begin{proof}
+这是（0，11.6.5）的结果；当 $A$ 的上同调维数为有限整数 $n$ 时，每个 $A$-模都存在长度为 $n$ 的投射解消（M，VI，2.1）。
+\end{proof}
+
+\egas{6.3.3}{推论}
+设 $P'_\bullet,Q'_\bullet$ 为两个 $A$-模复形，$u:P_\bullet\to P'_\bullet$、$v:Q_\bullet\to Q'_\bullet$ 为复形同态。如果诱导的同调同态 $H_*(u)$ 与 $H_*(v)$ 都双射，则所诱导的同态
+\[
+ \Tor_*^A(P_\bullet,Q_\bullet)\longrightarrow
+ \Tor_*^A(P'_\bullet,Q'_\bullet)
+\]
+也双射。
+\begin{proof}
+由 $u,v$ 诱导的第二谱序列同态在 $E_2$ 项上是同构；由（6.3.2），这些谱序列正则，结论遂由（0，11.1.5）得出。
+\end{proof}
+
+\egas{6.3.4}{命题}
+设 $P_\bullet,Q_\bullet$ 为下有界 $A$-模复形。设 $L_{\bullet\bullet}$、$M_{\bullet\bullet}$ 是由平坦 $A$-模构成的双复形，且每个 $L_{i,\bullet}$、$M_{i,\bullet}$ 分别是 $P_i$、$Q_i$ 的解消。则有典范同构
+\begin{equation}
+\begin{split}
+ \Tor_*^A(P_\bullet,Q_\bullet)
+ &\simeq H_*(L_{\bullet\bullet}\otimes_AQ_\bullet)\\
+ &\simeq H_*(P_\bullet\otimes_AM_{\bullet\bullet})\\
+ &\simeq H_*(L_{\bullet\bullet}\otimes_AM_{\bullet\bullet}).
+\end{split}\tag{6.3.4.1}
+\end{equation}
+\begin{proof}
+由（0，11.6.5，（ii）、（iii））及平坦模的定义得出。
+\end{proof}
+
+\egas{6.3.5}{备注}
+（i）使用（6.3.1）的记号，双复形 $L_{\bullet\bullet}\otimes_AM_{\bullet\bullet}$ 与 $M_{\bullet\bullet}\otimes_AL_{\bullet\bullet}$ 典范同构，从而
+\[
+ \Tor_*^A(P_\bullet,Q_\bullet)\simeq\Tor_*^A(Q_\bullet,P_\bullet).
+\]
+（ii）若 $F,G$ 为两个 $A$-模，$P_\bullet,Q_\bullet$ 分别只在次数0处为 $F,G$ 而其他次数为零，则它们的普通投射解消 $L_\bullet,M_\bullet$ 通过补零可视为 Cartan--Eilenberg 解消。因此，此时 $\Tor_*^A(P_\bullet,Q_\bullet)=\Tor_*^A(F,G)$。
+
+\egas{6.3.6}{命题}
+设 $(P_\bullet^\lambda)$、$(Q_\bullet^\mu)$ 为两个 $A$-模复形的滤过归纳系统。则有典范同构
+\begin{equation}
+ \ilim_{\lambda,\mu}\Tor_*^A(P_\bullet^\lambda,Q_\bullet^\mu)
+ \simeq\Tor_*^A\left(\ilim_\lambda P_\bullet^\lambda,
+                         \ilim_\mu Q_\bullet^\mu\right).\tag{6.3.6.1}
+\end{equation}
+\begin{proof}
+令 $P_\bullet=\ilim_\lambda P_\bullet^\lambda$、$Q_\bullet=\ilim_\mu Q_\bullet^\mu$。由函子性，各 $\Tor_*^A(P_\bullet^\lambda,Q_\bullet^\mu)$ 构成归纳系统，典范同态到 $\Tor_*^A(P_\bullet,Q_\bullet)$ 也构成归纳系统。由此得到（6.3.6.1）的同态；更一般地，还得到
+\[
+ \ilim_{\lambda,\mu}{}''E(P_\bullet^\lambda,Q_\bullet^\mu)
+ \longrightarrow{}''E(P_\bullet,Q_\bullet),
+\]
+（6.3.6.1）就是其终值的同态。第二谱序列正则（6.3.2），其归纳极限也正则，这是定义（0，11.1.7）和（0，11.3.3）的证明的结果。所以由（0，11.1.5），只需证明
+\begin{equation}
+ \ilim_{\lambda,\mu}{}''E(P_\bullet^\lambda,Q_\bullet^\mu)
+ \longrightarrow{}''E(P_\bullet,Q_\bullet)\tag{6.3.6.2}
+\end{equation}
+在 $E_2$ 项上双射。
+
+由于同调函子 $H_*$ 与模复形的归纳极限交换，最后归结为证明：对于模的两个滤过归纳系统 $(F^\lambda)$、$(G^\mu)$，典范同态
+\[
+ \ilim_{\lambda,\mu}\Tor_*^A(F^\lambda,G^\mu)
+ \longrightarrow\Tor_*^A(\ilim_\lambda F^\lambda,\ilim_\mu G^\mu)
+\]
+双射。对每个 $F^\lambda$，取其典范自由解消
+\[
+ \cdots\longrightarrow L_{i+1}^\lambda\longrightarrow L_i^\lambda
+ \longrightarrow\cdots\longrightarrow L_0^\lambda\longrightarrow F^\lambda
+ \longrightarrow0,
+\]
+其中 $L_0^\lambda$ 是以 $F^\lambda$ 的元素为基的形式线性组合模，而 $L_{i+1}^\lambda$ 是以相应核 $\Ker(L_i^\lambda\to L_{i-1}^\lambda)$ 的元素为基的形式线性组合模。\cmt{记号}{在 $i=0$ 处，核取增广映射 $L_0^\lambda\to F^\lambda$ 的核；这是原文“典范自由解消”的约定。}
+容易验证这些复形组成归纳系统。置 $F=\ilim F^\lambda$、$L_\bullet=\ilim L_\bullet^\lambda$；滤过归纳极限正合，所以 $L_\bullet$ 是 $F$ 的解消。各 $L_i$ 是自由模的滤过归纳极限，因而平坦（$0_{\mathrm I}$，6.1.2）。同样构造 $G^\mu$ 的典范自由解消 $M_\bullet^\mu$，其极限 $M_\bullet$ 是 $G=\ilim G^\mu$ 的平坦解消。由（6.3.5）和（6.3.4），
+\[
+ \Tor_*^A(F,G)=H_*(L_\bullet\otimes_AM_\bullet).
+\]
+又因为 $H_*$ 与模复形的归纳极限交换，
+\[
+ H_*(L_\bullet\otimes_AM_\bullet)
+ =\ilim_{\lambda,\mu}H_*(L_\bullet^\lambda\otimes_AM_\bullet^\mu).
+\]
+右边各项就是 $\Tor_*^A(F^\lambda,G^\mu)$，证明完成。
+\end{proof}
+若还存在统一整数 $i_0$，使对所有 $\lambda,\mu$ 及 $i<i_0$ 都有 $P_i^\lambda=Q_i^\mu=0$，则同样证明典范同态
+\begin{equation}
+ \ilim_{\lambda,\mu}{}'E(P_\bullet^\lambda,Q_\bullet^\mu)
+ \longrightarrow{}'E(P_\bullet,Q_\bullet)\tag{6.3.6.3}
+\end{equation}
+双射。
+
+\egas{6.3.7}{命题}
+假设 $P_\bullet,Q_\bullet$ 下有界。若 $P_\bullet$ 由平坦 $A$-模组成，则关于变量 $Q_\bullet$ 有典范的 $\delta$-函子 $A$-同构
+\begin{equation}
+ \Tor_*^A(P_\bullet,Q_\bullet)\simeq H_*(P_\bullet\otimes_AQ_\bullet).\tag{6.3.7.1}
+\end{equation}
+\begin{proof}
+谱序列（6.3.2.1）双正则且退化，故同构存在（0，11.1.6）。从 $P_\bullet$ 的 Cartan--Eilenberg 投射解消计算超 Tor（6.3.4），也立即看出该同构与连接同态相容，因而是 $\delta$-函子同构。
+\end{proof}
+
+\egap{6.3.8}
+设 $\rho:A\to A'$ 为环同态。我们要定义一个与 $\rho$ 典范相伴、具有函子性的零次 $A$-同态
+\begin{equation}
+ \rho_{P_\bullet,Q_\bullet}:\Tor_*^A(P_\bullet,Q_\bullet)
+ \longrightarrow\Tor_*^{A'}(P_\bullet\otimes_AA',Q_\bullet\otimes_AA').\tag{6.3.8.1}
+\end{equation}
+为此，取 $P_\bullet$ 的 Cartan--Eilenberg 投射解消 $L_{\bullet\bullet}$，以及 $P_\bullet\otimes_AA'$ 的 Cartan--Eilenberg 投射解消 $L'_{\bullet\bullet}$。我们将说明，可以定义一个确定到同伦的 $A'$-复形同态
+\[
+ L_{\bullet\bullet}\otimes_AA'\longrightarrow L'_{\bullet\bullet}.
+\]
+事实上，对于每个 $i$，任意给定 $B_i(P_\bullet)$ 的投射解消 $(X^B_{ij})_{j\geq0}$ 与 $H_i(P_\bullet)$ 的投射解消 $(X^H_{ij})_{j\geq0}$ 后，$L_{\bullet\bullet}$ 的构造便完全确定；它们分别等于 $B_i^{\mathrm I}(L_{\bullet\bullet})$ 与 $H_i^{\mathrm I}(L_{\bullet\bullet})$。依次得到
+\[
+ Z_i^{\mathrm I}(L_{\bullet\bullet})
+ =H_i^{\mathrm I}(L_{\bullet\bullet})\oplus B_i^{\mathrm I}(L_{\bullet\bullet}),
+\quad
+ L_{i,\bullet}=Z_i^{\mathrm I}(L_{\bullet\bullet})\oplus B_{i-1}^{\mathrm I}(L_{\bullet\bullet}).
+\]
+此时 $X^B_{i,\bullet}\otimes_AA'$ 一般不再是 $P_i\otimes_AA'$ 的解消，但仍是投射 $A'$-模复形。\cmt{T03}{原文此处确实写 $P_i\otimes_AA'$，而 $X^B_{i,\bullet}$ 原本是 $B_i(P_\bullet)$ 的解消。该说明的对象下标混淆；应区分它增广到 $B_i(P_\bullet)\otimes_AA'$，以及后续到新复形边界的典范映射。这里保留原句，不用其错误对象作为推论依据。}
+故存在一个与增广相容且确定到同伦的 $A'$-同态
+\[
+ X^B_{i,\bullet}\otimes_AA'\longrightarrow B_i^{\mathrm I}(L'_{\bullet\bullet})
+\]
+（M，V，1.1）。同样存在确定到同伦的同态
+$X^H_{i,\bullet}\otimes_AA'\to H_i^{\mathrm I}(L'_{\bullet\bullet})$。由上述构造，对每个 $i$ 得到 $A'$-同态 $L_{i,\bullet}\otimes_AA'\to L'_{i,\bullet}$；它们与微分 $L_{i,\bullet}\to L_{i-1,\bullet}$ 及 $L'$ 的相应微分相容，遂构成所求同态。
+
+为了定义（6.3.8.1），同样取 $Q_\bullet$ 与 $Q_\bullet\otimes_AA'$ 的 Cartan--Eilenberg 投射解消 $M_{\bullet\bullet}$、$M'_{\bullet\bullet}$ 及同态 $M_{\bullet\bullet}\otimes_AA'\to M'_{\bullet\bullet}$。由这些同态得到
+\[
+ (L_{\bullet\bullet}\otimes_AA')\otimes_{A'}
+ (M_{\bullet\bullet}\otimes_AA')
+ \longrightarrow L'_{\bullet\bullet}\otimes_{A'}M'_{\bullet\bullet},
+\]
+再经复合，得到 $A$-双复形同态
+\[
+ L_{\bullet\bullet}\otimes_AM_{\bullet\bullet}
+ \longrightarrow L'_{\bullet\bullet}\otimes_{A'}M'_{\bullet\bullet}.
+\]
+取同调便得到（6.3.8.1）；由于它来自确定到同伦的复形态射，所以定义良好。
+
+若 $\rho':A'\to A''$ 为另一个环同态，$\rho''=\rho'\circ\rho$，则显然
+\[
+ \rho''_{P_\bullet,Q_\bullet}
+ =\rho'_{P'_\bullet,Q'_\bullet}\circ\rho_{P_\bullet,Q_\bullet},
+ \qquad P'_\bullet=P_\bullet\otimes_AA',\quad Q'_\bullet=Q_\bullet\otimes_AA'.
+\]
+还须注意，上述双复形态射在两个变量中函子性地定义谱序列同态
+\begin{align*}
+ {}'E^r_{pq}(P_\bullet,Q_\bullet)&\longrightarrow{}'E^r_{pq}(P_\bullet\otimes_AA',Q_\bullet\otimes_AA'),\\
+ {}''E^r_{pq}(P_\bullet,Q_\bullet)&\longrightarrow{}''E^r_{pq}(P_\bullet\otimes_AA',Q_\bullet\otimes_AA'),
+\end{align*}
+它们不依赖所取的 Cartan--Eilenberg 解消，也满足上述传递性。
+
+\egas{6.3.9}{命题}
+设 $\rho:A\to A'$ 为环同态，并且 $A'$ 是平坦 $A$-模。则有函子性的典范同构
+\begin{equation}
+ \Tor_*^{A'}(P_\bullet\otimes_AA',Q_\bullet\otimes_AA')
+ \simeq\Tor_*^A(P_\bullet,Q_\bullet)\otimes_AA',\tag{6.3.9.1}
+\end{equation}
+以及
+\begin{equation}
+\begin{aligned}
+ {}'E(P_\bullet\otimes_AA',Q_\bullet\otimes_AA')&\simeq{}'E(P_\bullet,Q_\bullet)\otimes_AA',\\
+ {}''E(P_\bullet\otimes_AA',Q_\bullet\otimes_AA')&\simeq{}''E(P_\bullet,Q_\bullet)\otimes_AA'.
+\end{aligned}\tag{6.3.9.2}
+\end{equation}
+\begin{proof}
+由函子 $M\mapsto M\otimes_AA'$ 的正合性，$L_{\bullet\bullet}\otimes_AA'$ 与 $M_{\bullet\bullet}\otimes_AA'$ 分别仍是 $P_\bullet\otimes_AA'$ 与 $Q_\bullet\otimes_AA'$ 的 Cartan--Eilenberg 投射解消，结论即得。
+\end{proof}
+
+\egap{6.3.10}
+设 $\rho:A\to A'$ 为环同态。对于每个 $A'$-模复形 $P'_\bullet$，$P'_{\bullet[\rho]}$ 是限制标量所得的 $A$-模复形；恒等映射 $P'_{\bullet[\rho]}\to P'_\bullet$ 可看作典范映射的复合
+\[
+ P'_{\bullet[\rho]}\longrightarrow P'_\bullet\otimes_AA'
+ \xrightarrow{\mu}P'_\bullet,
+ \qquad\mu(x\otimes a')=a'x.
+\]
+若 $Q'_\bullet$ 为另一个 $A'$-模复形，则有函子性的零次典范同态
+\begin{equation}
+\begin{split}
+ \Tor_*^A(P'_{\bullet[\rho]},Q'_{\bullet[\rho]})
+ &\longrightarrow\Tor_*^{A'}(P'_\bullet\otimes_AA',Q'_\bullet\otimes_AA')\\
+ &\longrightarrow\Tor_*^{A'}(P'_\bullet,Q'_\bullet).
+\end{split}\tag{6.3.10.1}
+\end{equation}
+第一箭头是（6.3.8）定义的 $A$-同态；第二箭头由两个乘法同态及函子性得到。对于（6.3.2）的谱序列也有类似同态，并有显然的传递性性质，其表述留给读者。
+
+\egas{6.3.11}{命题}
+设 $\rho:A\to A'$ 使 $A'$ 成为平坦 $A$-模。对于下有界的 $A'$-模复形 $P'_\bullet$ 与 $A$-模复形 $Q_\bullet$，有函子性的典范同构
+\begin{equation}
+ \Tor_*^A(P'_{\bullet[\rho]},Q_\bullet)
+ \simeq\Tor_*^{A'}(P'_\bullet,Q_\bullet\otimes_AA').\tag{6.3.11.1}
+\end{equation}
+\begin{proof}
+若 $M_{\bullet\bullet}$ 是 $Q_\bullet$ 的 Cartan--Eilenberg 投射解消，则 $M_{\bullet\bullet}\otimes_AA'$ 是 $Q_\bullet\otimes_AA'$ 的相应解消，且有典范同构
+\[
+ P'_{\bullet[\rho]}\otimes_AM_{\bullet\bullet}
+ \simeq P'_\bullet\otimes_{A'}(M_{\bullet\bullet}\otimes_AA').
+\]
+由（6.3.4）得出结论。
+\end{proof}
+
+\egas{6.3.12}{备注}
+设 $(A^\lambda)$ 为环的滤过归纳系统，$(P_\bullet^\lambda)$、$(Q_\bullet^\lambda)$ 是 $A^\lambda$-模复形的两个归纳系统。则有推广（6.3.6.1）的典范同构
+\begin{equation}
+ \ilim_\lambda\Tor_*^{A^\lambda}(P_\bullet^\lambda,Q_\bullet^\lambda)
+ \simeq\Tor_*^A(P_\bullet,Q_\bullet),\tag{6.3.12.1}
+\end{equation}
+其中 $A=\ilim A^\lambda$、$P_\bullet=\ilim P_\bullet^\lambda$、$Q_\bullet=\ilim Q_\bullet^\lambda$。用（6.3.10）定义了 $\lambda\leq\mu$ 时的过渡同态后，证明就是（6.3.6）的证明。
+
+\egas{6.3.13}{命题}
+设 $S$ 为 $A$ 的乘性子集，$P_\bullet,Q_\bullet$ 是两个 $A$-模复形，其中由 $S$ 中每个元素定义的数乘都双射。因此，若 $A'=S^{-1}A$，两个复形都由 $A'$-模组成。则有典范同构
+\[
+ \Tor_*^A(P_\bullet,Q_\bullet)\simeq\Tor_*^{A'}(P_\bullet,Q_\bullet).
+\]
+\begin{proof}
+假设说明典范同态 $P_\bullet\to P_\bullet\otimes_AA'$、$Q_\bullet\to Q_\bullet\otimes_AA'$ 都双射。另一方面，超 Tor 的函子性说明每个 $s\in S$ 在 $\Tor_*^A(P_\bullet,Q_\bullet)$ 上都定义双射的数乘，因而典范同态
+\[
+ \Tor_*^A(P_\bullet,Q_\bullet)
+ \longrightarrow\Tor_*^A(P_\bullet,Q_\bullet)\otimes_AA'
+\]
+也双射。由于 $A'$ 是平坦 $A$-模，结论由（6.3.9）得到；相应谱序列也有典范同构。
+\end{proof}

@@ -1,0 +1,196 @@
+{
+  "reviewer": "root",
+  "scope": "Actually viewed listed main/report samples; unchanged main samples are rebound to final PDF through exact same-scale pixel comparison. Not a whole-book human review.",
+  "main_pdf": {
+    "path": "main.pdf",
+    "sha256": "88a14afceccf2316efe47dabc4658756e1cd0b16e4a40112aacaa8156abefa2f",
+    "pages": 1216
+  },
+  "report_pdf": {
+    "path": "report.pdf",
+    "sha256": "e908b3cdae5673eafc94a853bd4586cce4b53d53b9e6a08c2b9d9cb74b2b8a38",
+    "pages": 431
+  },
+  "main_pages": [
+    {
+      "physical_page": 1,
+      "observations": [
+        "实际查看最终封面：书名、第二十版及§12续校范围完整。"
+      ],
+      "result": "pass",
+      "actual_viewed_image": "checks/rendered_main_final_root/main_0001.png",
+      "actual_viewed_image_sha256": "35120af0d6a24c24d28603dedaf5b159d6bc95074c0f0ce671b6e7c5d9d01473",
+      "final_image": "checks/rendered_main_final_root/main_0001.png",
+      "final_image_sha256": "35120af0d6a24c24d28603dedaf5b159d6bc95074c0f0ce671b6e7c5d9d01473",
+      "final_pdf_binding": "Direct final image inspection"
+    },
+    {
+      "physical_page": 3,
+      "observations": [
+        "本版导言、范围及身份说明完整，无裁切。"
+      ],
+      "result": "pass",
+      "actual_viewed_image": "checks/rendered_main/main_0003.png",
+      "actual_viewed_image_sha256": "b7085525c33a9f36c49a869d6a3b7b86eba29e8d0b038d6239e13f2673216a4b",
+      "final_image": "checks/rendered_main_final_root/main_0003.png",
+      "final_image_sha256": "b7085525c33a9f36c49a869d6a3b7b86eba29e8d0b038d6239e13f2673216a4b",
+      "final_pdf_binding": "Earlier actual inspection in this turn; final 1.65-scale pixels proved identical by main_visual_rebinding.json"
+    },
+    {
+      "physical_page": 4,
+      "observations": [
+        "已译内容范围表格列宽及跨行正常。"
+      ],
+      "result": "pass",
+      "actual_viewed_image": "checks/rendered_main/main_0004.png",
+      "actual_viewed_image_sha256": "b444e82009b4c230c11d2268ae1b7da056397929febc5bab43322ca6df0c0b40",
+      "final_image": "checks/rendered_main_final_root/main_0004.png",
+      "final_image_sha256": "b444e82009b4c230c11d2268ae1b7da056397929febc5bab43322ca6df0c0b40",
+      "final_pdf_binding": "Earlier actual inspection in this turn; final 1.65-scale pixels proved identical by main_visual_rebinding.json"
+    },
+    {
+      "physical_page": 5,
+      "observations": [
+        "下一真实位置和默认CTeX构建说明清楚。"
+      ],
+      "result": "pass",
+      "actual_viewed_image": "checks/rendered_main/main_0005.png",
+      "actual_viewed_image_sha256": "9b3de35614f2111b2db8d40faeb82ae7308cfcda6eaaff0d239603e62e3f07f3",
+      "final_image": "checks/rendered_main_final_root/main_0005.png",
+      "final_image_sha256": "9b3de35614f2111b2db8d40faeb82ae7308cfcda6eaaff0d239603e62e3f07f3",
+      "final_pdf_binding": "Earlier actual inspection in this turn; final 1.65-scale pixels proved identical by main_visual_rebinding.json"
+    },
+    {
+      "physical_page": 1052,
+      "observations": [
+        "§11末与§12标题接缝正常，段落、公式、脚注无重复或裁切。"
+      ],
+      "result": "pass",
+      "actual_viewed_image": "checks/rendered_main/main_1052.png",
+      "actual_viewed_image_sha256": "50562b002b9c836608db3a020f6547a7355f668c843c5cf84d0c471fdbe81bc2",
+      "final_image": "checks/rendered_main_final_root/main_1052.png",
+      "final_image_sha256": "50562b002b9c836608db3a020f6547a7355f668c843c5cf84d0c471fdbe81bc2",
+      "final_pdf_binding": "Earlier actual inspection in this turn; final 1.65-scale pixels proved identical by main_visual_rebinding.json"
+    },
+    {
+      "physical_page": 1062,
+      "observations": [
+        "超奇异点记号、上下标和长脚注清楚，正文均在版心内。"
+      ],
+      "result": "pass",
+      "actual_viewed_image": "checks/rendered_main/main_1062.png",
+      "actual_viewed_image_sha256": "1bf0105ce07a57e5f41a8467586685a6925ec8449a2dfa3d18ec1929b3f33f02",
+      "final_image": "checks/rendered_main_final_root/main_1062.png",
+      "final_image_sha256": "1bf0105ce07a57e5f41a8467586685a6925ec8449a2dfa3d18ec1929b3f33f02",
+      "final_pdf_binding": "Earlier actual inspection in this turn; final 1.65-scale pixels proved identical by main_visual_rebinding.json"
+    },
+    {
+      "physical_page": 1063,
+      "observations": [
+        "判别集合反例及作者条件记录完整，密集脚注可读。"
+      ],
+      "result": "pass",
+      "actual_viewed_image": "checks/rendered_main/main_1063.png",
+      "actual_viewed_image_sha256": "d264bf6bc3be8ada97b891b62816b4e26fb4b4bc63bd8b5856839fdb7e85387c",
+      "final_image": "checks/rendered_main_final_root/main_1063.png",
+      "final_image_sha256": "d264bf6bc3be8ada97b891b62816b4e26fb4b4bc63bd8b5856839fdb7e85387c",
+      "final_pdf_binding": "Earlier actual inspection in this turn; final 1.65-scale pixels proved identical by main_visual_rebinding.json"
+    },
+    {
+      "physical_page": 1064,
+      "observations": [
+        "§12末与§13标题、定义13.1的继承边界完整。"
+      ],
+      "result": "pass",
+      "actual_viewed_image": "checks/rendered_main/main_1064.png",
+      "actual_viewed_image_sha256": "5a3693460e4a324439b3a9d247baca4e36ec5548fc434c4d5c4ab599f2371985",
+      "final_image": "checks/rendered_main_final_root/main_1064.png",
+      "final_image_sha256": "5a3693460e4a324439b3a9d247baca4e36ec5548fc434c4d5c4ab599f2371985",
+      "final_pdf_binding": "Earlier actual inspection in this turn; final 1.65-scale pixels proved identical by main_visual_rebinding.json"
+    }
+  ],
+  "report_pages": [
+    {
+      "physical_page": 1,
+      "image": "checks/rendered_report_root/report_0001.png",
+      "sha256": "856e6be05bb636a7589d2f8dca138ea235f9bbeb99fb4628d07ff86848586ac5",
+      "actual_visual_inspection": true,
+      "observations": [
+        "报告封面版号、范围及标题完整。"
+      ],
+      "result": "pass"
+    },
+    {
+      "physical_page": 19,
+      "image": "checks/rendered_report_root/report_0019.png",
+      "sha256": "197faf827ecf6fd103242c91a112b4fb10350b77d29d68550f742227a1aa5489",
+      "actual_visual_inspection": true,
+      "observations": [
+        "整合范围、归责说明、长归档路径与提交号断行正常。"
+      ],
+      "result": "pass"
+    },
+    {
+      "physical_page": 51,
+      "image": "checks/rendered_report_root/report_0051.png",
+      "sha256": "926ea7350d748c4869db0cb33fce32fd228b56245cc21434e64eb06f59246577",
+      "actual_visual_inspection": true,
+      "observations": [
+        "章节标题、来源范围与对象记号说明完整，无裁切。"
+      ],
+      "result": "pass"
+    },
+    {
+      "physical_page": 52,
+      "image": "checks/rendered_report_root/report_0052.png",
+      "sha256": "b2aa72fb9b585b5f98ffafbdd69c7cab29035bd91ac1360b1ca7b3359c49ddb7",
+      "actual_visual_inspection": true,
+      "observations": [
+        "Veronese映射、一般直线束、T=V(ac)反例全部公式显示完整。"
+      ],
+      "result": "pass"
+    },
+    {
+      "physical_page": 53,
+      "image": "checks/rendered_report_root/report_0053.png",
+      "sha256": "786a3e9b5ff89699e144886ec8367c79170f62d62c414fa36babe40044b6e0e6",
+      "actual_visual_inspection": true,
+      "observations": [
+        "一般中心论证与旗簇两个投影及射影丛同构正常。"
+      ],
+      "result": "pass"
+    },
+    {
+      "physical_page": 54,
+      "image": "checks/rendered_report_root/report_0054.png",
+      "sha256": "d62d7dc9f1cfddd868e29cce93394589f4329c7803ef0c9490a021c50db3bd72",
+      "actual_visual_inspection": true,
+      "observations": [
+        "维数三式、W的界、几何纤维余维及有限域说明完整。"
+      ],
+      "result": "pass"
+    },
+    {
+      "physical_page": 55,
+      "image": "checks/rendered_report_root/report_0055.png",
+      "sha256": "d4960adebadc3bef489c272cb8bcbcf17ac42bec586791ca49ffb0ea8b818d9a",
+      "actual_visual_inspection": true,
+      "observations": [
+        "下一真实§13位置、未决项和历史脚注区分明确。"
+      ],
+      "result": "pass"
+    },
+    {
+      "physical_page": 56,
+      "image": "checks/rendered_report_root/report_0056.png",
+      "sha256": "b1636ada91b0e9007ef6e85bc09b9846ec5ff458636321a5de20011b11de9595",
+      "actual_visual_inspection": true,
+      "observations": [
+        "十条旧注存档的后半完整，英文长句正常换行。"
+      ],
+      "result": "pass"
+    }
+  ],
+  "pass": true,
+  "unresolved_visual_issues": []
+}

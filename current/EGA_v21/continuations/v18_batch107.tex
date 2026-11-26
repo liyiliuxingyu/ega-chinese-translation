@@ -1,0 +1,51 @@
+% V18 integration from immutable Dot batch 107: EGA第五卷_双切超平面与特征零判据.tex
+\begingroup
+\def\PP{\mathbb P}\def\OO{\mathcal O}\def\Ocal{\mathcal O}
+\def\F{\mathcal F}\def\G{\mathcal G}\def\N{\mathcal N}
+\def\PD{\check P}\def\Pdual{\check P}
+\def\Ys{Y^{\mathrm{sing}}}\def\Ysing{Y^{\mathrm{sing}}}
+\def\Ds{Y^{\mathrm{sup\,sing}}}\def\Ysup{Y^{\mathrm{sup\,sing}}}
+\def\cod{\operatorname{codim}}\def\Sing{\operatorname{Sing}}
+\def\depth{\operatorname{depth}}\def\coprof{\operatorname{coprof}}
+\def\Ass{\operatorname{Ass}}\def\Supp{\operatorname{Supp}}
+\def\Gr{\operatorname{Gr}}\def\Spec{\operatorname{Spec}}\def\Proj{\operatorname{Proj}}
+\source{Dot第107批；法文底本物理第43--45页，英编稿物理第30--31页}
+\noindent\textbf{记号。}承接8.8、8.9所明示的工作假设：$X/k$ 光滑、几何整且在 $P=\mathbb P^r_k$ 中局部闭浸入，正余维；$Z=\Ys$，$D=\Ds$，$T$ 是 $Z$ 在 $\PD$ 中像的约化闭包，$g:Z\to T$ 为诱导态射，$L=k(Z)$、$K=k(T)$。$U\subset T$ 为相对 $k$ 光滑处。像的余维均指其闭包的余维。
+
+\egas{8.10}{备注}
+在推论8.9的假设下，已有 $g^{-1}(U)\subset Z\setminus D$。即使 $X$ 在 $P$ 中闭，此包含也不必为等号。$g^{-1}(U)$ 恰是 $g$ 为 étale 的点集，$Z\setminus D$ 则是 $g$ 无分歧的点集。因此，可以有 $g$ 在其处无分歧而不 étale 的 $y\in Z$；这时 $g(y)$ 处的 $T$ 不是几何单支的，因而也不是几何正规的。\transnote{英30在两个点集之后误把差别归给整个 $Z\setminus D$，即把“无分歧”读成“无分歧但不 étale”。法43的原句是先定义两个点集，再说明差集可以非空。}
+
+几何上，这对应于以下情形：某个超平面在 $x$ 处与 $X$ 相切而不密切，同时也在另一个点 $x'$ 处与 $X$ 相切。平面中次数至少四的非奇异曲线提供双切线的例子；双切线对应于对偶曲线上有两个局部分支的情形。\transnote{法44第二个切点处，打字末尾仍作 $x$，却紧接在“另一个点 $x'$”之后，故正文改为 $x'$。原稿另称“任意特征”，其双切线现象不可无条件当作8.9假设下的反例：特征二、$\dim X=1$ 时，极化型为一维交错型，只能为零，不能给出8.7(b)的普通奇异判据。这里正文叙述双切几何，例子的 étale 对比由核查报告“D18-107”的特征零实例核实。双切线的存在也不自动断言对偶点恰为普通节点。}\textsuperscript{,}\ednote{字迹不清。〔英编稿脚注43，第二接触点处的 $x/x^1$ 读法。〕}
+
+\egas{8.11}{推论}
+设 $k$ 的特征为零。
+\begin{enumerate}
+\renewcommand{\labelenumi}{(\alph{enumi})}
+\item $D$ 在 $\PD$ 中的像余维至少为二。
+\item 8.8的条件 (iii) 与其余条件等价。换言之，其余条件的否定 $Z=D$（就底集而言），也意味着 $Z$ 在 $\PD$ 中的像余维至少为二。
+\end{enumerate}
+结合8.8，由 (b) 推出 (a)。而由维数理论，(iii) 等价于 $L/K$ 为有限扩张（可把这写成8.8的 (iii bis)）；在特征零下它自动可分，于是得到8.8的 (i bis)。\transnote{法44在(b)末回到奇异零集的像，即 $Z$；如果写作 $D$ 就退回(a)，不能表达(b)对全部奇异参数的结论。英30在此并列了两种转写。}
+
+\egas{8.12}{备注}
+\paragraph{(a)}
+几何上，8.11(a)表示：取足够一般的超平面截面线性笔，每一个成员不是光滑，就是只有几何普通奇异点；事实上至多有一个这样的几何奇异点，因此可将(a)稍微加强。8.11(b)还表示，在特征零情形，如果 $Z=D$，那么足够一般的笔的所有成员都光滑。$Z=D$ 可用一个可逆模的行列式截面恒等于零来表达；这个可逆模为\transnote{法44及英30可辨为 $\omega_{X/k}^{\otimes2}\otimes\mathcal O_Z(1,1)$ 一类写法，未见一般秩幂次。按二次型定义，令 $\mathcal L=\mathcal O_Z(1,1)$、$d=\dim X$，则相对极化型给出 $T_{X/k}|_Z\to\Omega^1_{X/k}|_Z\otimes\mathcal L$，其行列式属于 $\omega_{X/k}^{\otimes2}|_Z\otimes\mathcal L^{\otimes d}$。此处限制符号表示沿 $Z\to X$ 拉回。正文按行列式的实际变换规律写出一般秩的公式，并在本注保留原稿一次扭转的读法；不把一次扭转误当作任意 $d$ 的公式。}
+\[
+ \omega_{X/k}^{\otimes2}|_Z\otimes
+       \mathcal O_Z(1,1)^{\otimes d},\qquad d=\dim X .
+\]
+
+
+这第二种情形，无论我们是否处于特征零，都应当完全视为例外情形。〔页顶手迹残段：“簇 $L$ 在 $1\ldots T=L$”；其余字迹不清。〕\ednote{字迹不清。〔英编稿脚注44。〕}
+用古典语言来说，如果没有弄错，就是说：相对于所考虑的射影浸入，$X$ 是“直纹的”（ruled）。\transnote{这是作者此处暂用的术语，不能径直等同于通常的直纹簇。后文8.17也提醒此处用法与传统用法不同。上句对“很例外”的评价可以不依特征，但“足够一般的笔全光滑”在任意特征下都需全部奇异参数像的闭包余维至少二，不能只由 $Z=D$ 推出。}
+〔而且，如果我们愿意，〕由8.5及其推论，这里已有把这一术语明确化并加以论证所需的一切；如果你有兴致，也可把它同〔法文：\emph{la taupe}〕联系起来。\transnote{法45页保留这一词组，英31页照录而未说明指代；不猜作某个数学定理或术语。}
+例如，若 $\dim X=1$，这意味着 $X$ 是一条直线〔字迹不清〕\ednote{字迹不清。〔英编稿脚注45。〕}，$x\in X(k)$，所以 $T$ 包含〔缺文〕\ednote{字迹不清。〔英编稿脚注46。〕}。\transnote{法45页有“在一条直线上”一类手写补句以及 $T=L$ 边注，连接关系仍未完全读定。这里保留可辨原句和缺文标记，不将其提升为任意浸入下完整的分类定理。}
+
+
+\paragraph{(b)}
+若特征为 $p>0$，按理应给出这样的光滑平面曲线例子：8.8的等价条件不成立，即 $Z=D$，但仍有 $\dim T=r-1$；亦即 $L/K$ 为有限不可分扩张。我太懒了，不愿构造这些例子，但我不怀疑它们存在。\ednote{把它做出来。——Blass。〔英编稿脚注47。〕}\textsuperscript{,}\transnote{法45打字回指8.6，英31照录。按同句 $Z=D$ 和 $\dim T=r-1$，应分别对应8.8的 (ii) 的否定和 (iii)，正文因而改为8.8。}
+
+\subsection*{原稿编排备忘}
+在(a)中加一条脚注，指向后面的编号小节或段落；在那里我们证明：如果出现这一例外的“直纹”情形，那么对射影浸入作一个简单的修改，就能重新回到8.8的“一般”情形。\transnote{这是作者对后文的编排指示，不是本版在此另行宣称已经完成该修改及证明。}
+
+本节从8.6到这里的部分，无疑可以独立成一个具有微分性质的小节；而本编号小节的开头，应当与接下来的部分合并成一个讨论例外〔超平面？〕\ednote{请询问 A.G.。〔英编稿脚注48。〕}之维数的小节。我这里只用了 $\Ys$ 的维数是 $r-1$ 这一事实。\transnote{两个点集的比较、特征零双切线、一般笔的至多一个奇异点及正特征 Fermat 曲线完整保存于核查报告“D18-107”项，属译校文字，不是原文。}
+\endgroup

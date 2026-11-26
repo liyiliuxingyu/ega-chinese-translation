@@ -1,0 +1,284 @@
+% 本次续译：EGA III 第二部分，6.4--6.5。严格依上传法文底本。
+\subsection{拟凝聚模复形的局部超 Tor 函子：仿射概形情形}
+\source{\texttt{EGAIII.2.pdf}，PDF第13--15页，原书第14--16页的相应部分}
+\egap{6.4.1}
+设 $S$ 是环为 $A$ 的仿射概形，$X,Y$ 是两个仿射 $S$-概形，其环分别为 $B,C$；于是 $B,C$ 都是 $A$-代数。每个拟凝聚 $\OO_X$-模复形 $\PP_\bullet$（分别地，拟凝聚 $\OO_Y$-模复形 $\mathscr Q_\bullet$）都具有 $\widetilde{P_\bullet}$（分别地，$\widetilde{Q_\bullet}$）的形式，其中 $P_\bullet$ 是 $B$-模复形，$Q_\bullet$ 是 $C$-模复形（I，1.3.7、1.3.8）。自然可以把两者看作 $A$-模复形，形成 $\Tor_n^A(P_\bullet,Q_\bullet)$。此外，由超 Tor 的双函子性，$A$-代数 $B$ 和 $C$ 在这个 $A$-模上作用；这些作用使它成为一个 $(B,C)$-双模，等价地，成为
+\[
+ B\otimes_A C=A(X\times_S Y)
+\]
+上的模。因此定义了拟凝聚 $\OO_{X\times_S Y}$-模
+\begin{equation}
+ \lTor_n^S(\PP_\bullet,\mathscr Q_\bullet)
+ =\bigl(\Tor_n^A(P_\bullet,Q_\bullet)\bigr)^{\sim}.
+ \tag{6.4.1.1}
+\end{equation}
+称它为复形 $\PP_\bullet,\mathscr Q_\bullet$ 的第 $n$ 个\textbf{局部超 Tor}；也记作 $\lTor_n(\PP_\bullet,\mathscr Q_\bullet)$。
+
+\egas{6.4.2}{引理}
+采用（6.4.1）的记号。设 $A=R^{-1}A'$，其中 $A'$ 是环，$R$ 是 $A'$ 的乘法子集。令 $S'=\Spec(A')$，于是 $X,Y$ 都可看作 $S'$-预概形，且
+\[
+ X\times_{S'}Y=X\times_S Y
+\]
+（I，1.6.2、3.2.4）。则
+\[
+ \lTor_n^{S'}(\PP_\bullet,\mathscr Q_\bullet)
+ =\lTor_n^S(\PP_\bullet,\mathscr Q_\bullet).
+\]
+\begin{proof}
+由公式（6.4.1.1）及（6.3.13）得出。
+\end{proof}
+
+\egap{6.4.3}
+采用（6.4.1）的记号和假设，设 $\F=\widetilde F$、$\G=\widetilde G$ 分别是拟凝聚 $\OO_X$-模和 $\OO_Y$-模。把它们看作模复形后，将其第 $n$ 个超 Tor 记为 $\lTor_n^S(\F,\G)$ 或 $\lTor_n(\F,\G)$。由（6.3.5，（ii）），
+\begin{equation}
+ \lTor_n^S(\F,\G)=\bigl(\Tor_n^A(F,G)\bigr)^{\sim}.
+ \tag{6.4.3.1}
+\end{equation}
+现在回到两个拟凝聚模复形 $\PP_\bullet,\mathscr Q_\bullet$ 的一般情形。由公式（6.4.1.1）、（6.4.3.1）及命题（6.3.2），$\lTor_*^S(\PP_\bullet,\mathscr Q_\bullet)$ 是两个谱序列 ${}'\spE(\PP_\bullet,\mathscr Q_\bullet)$、${}''\spE(\PP_\bullet,\mathscr Q_\bullet)$ 的终值，其 $E_2$ 项为
+\begin{align}
+ {}'\spE^2_{pq}
+ &=\HH_p\bigl(\lTor_q^S(\PP_\bullet,\mathscr Q_\bullet)\bigr),
+ \tag{6.4.3.2}\\
+ {}''\spE^2_{pq}
+ &=\bigoplus_{i+j=q}\lTor_p^S\bigl(\HH_i(\PP_\bullet),
+                         \HH_j(\mathscr Q_\bullet)\bigr).
+ \tag{6.4.3.3}
+\end{align}
+其中，（6.4.3.2）中的 $\lTor_q^S(\PP_\bullet,\mathscr Q_\bullet)$ 指由拟凝聚 $\OO_{X\times_S Y}$-模 $\lTor_q^S(\PP_i,\mathscr Q_j)$ 组成的双复形。
+
+\egap{6.4.4}
+再考虑两个仿射概形 $X^{(1)}=\Spec(B^{(1)})$、$Y^{(1)}=\Spec(C^{(1)})$，其中 $B^{(1)},C^{(1)}$ 是 $A$-代数。设给定两个 $S$-态射
+\[
+ u:X^{(1)}\longrightarrow X,\qquad v:Y^{(1)}\longrightarrow Y,
+\]
+对应于 $A$-同态 $\varphi:B\to B^{(1)}$、$\psi:C\to C^{(1)}$。考虑 $\OO_{X^{(1)}}$-模复形
+$u^*(\PP_\bullet)=(P_\bullet\otimes_B B^{(1)})^{\sim}$ 和 $\OO_{Y^{(1)}}$-模复形
+$v^*(\mathscr Q_\bullet)=(Q_\bullet\otimes_C C^{(1)})^{\sim}$。
+典范 $A$-同态
+\[
+ P_\bullet\longrightarrow P_\bullet\otimes_B B^{(1)},\qquad
+ Q_\bullet\longrightarrow Q_\bullet\otimes_C C^{(1)}
+\]
+由函子性给出 $A$-同态
+\[
+ \Tor_n^A(P_\bullet,Q_\bullet)\longrightarrow
+ \Tor_n^A(P_\bullet\otimes_B B^{(1)},Q_\bullet\otimes_C C^{(1)}).
+\]
+仍由函子性，这实际上是 $(B\otimes_A C)$-模同态。因此得到一个 $(u\times_S v)$-态射
+\begin{equation}
+ \theta:\lTor_n^S(\PP_\bullet,\mathscr Q_\bullet)
+ \longrightarrow\lTor_n^S(u^*\PP_\bullet,v^*\mathscr Q_\bullet),
+ \tag{6.4.4.1}
+\end{equation}
+进而得到 $\OO_{X^{(1)}\times_S Y^{(1)}}$-模同态
+\begin{equation}
+ \theta^\sharp:(u\times_S v)^*\lTor_n^S(\PP_\bullet,\mathscr Q_\bullet)
+ \longrightarrow\lTor_n^S(u^*\PP_\bullet,v^*\mathscr Q_\bullet).
+ \tag{6.4.4.2}
+\end{equation}
+在下有界拟凝聚模复形的范畴中，这显然是双 $\delta$-函子的态射。同态（6.4.4.2）未必双射，不过有：
+
+\egas{6.4.5}{引理}
+采用（6.4.4）的记号，若 $u,v$ 都是开浸入，则（6.4.4.2）双射。
+\begin{proof}
+把 $X^{(1)}$、$Y^{(1)}$ 分别与 $X,Y$ 的开集等同。前者是形如 $D(f)$（$f\in B$）的开集的并，后者是形如 $D(g)$（$g\in C$）的开集的并；诱导预概形 $D(\varphi(f))$ 与 $D(f)$、$D(\psi(g))$ 与 $D(g)$ 分别同构。
+
+只须在 $X^{(1)}=D(f)$、$Y^{(1)}=D(g)$ 时证明引理。确实，若这一点已经证明，则回到一般情形，只需证明 $\theta^\sharp$ 在每个 $D(f)\times_S D(g)$ 上的限制是同构。设 $u_1:D(f)\to X^{(1)}$、$v_1:D(g)\to Y^{(1)}$ 是典范嵌入，则这一限制就是 $(u_1\times_S v_1)^*(\theta^\sharp)$。令 $u'=u\circ u_1$、$v'=v\circ v_1$，由定义（6.4.4）及（$0_{\mathrm I}$，4.4.8），将它与典范同态
+\begin{equation}
+\begin{split}
+ (u_1\times_S v_1)^*\lTor_n^S(u^*\PP_\bullet,v^*\mathscr Q_\bullet)
+ \longrightarrow\lTor_n^S(u'^*\PP_\bullet,v'^*\mathscr Q_\bullet)
+\end{split}\tag{6.4.5.1}
+\end{equation}
+复合，就得到典范同态
+\begin{equation}
+ (u'\times_S v')^*\lTor_n^S(\PP_\bullet,\mathscr Q_\bullet)
+ \longrightarrow\lTor_n^S(u'^*\PP_\bullet,v'^*\mathscr Q_\bullet).
+ \tag{6.4.5.2}
+\end{equation}
+所以若（6.4.5.1）、（6.4.5.2）都是同构，则 $(u_1\times_S v_1)^*(\theta^\sharp)$ 也是同构。
+
+现在设 $X^{(1)}=D(f)$、$Y^{(1)}=D(g)$，从而 $B^{(1)}=B_f$、$C^{(1)}=C_g$。于是 $u^*\PP_\bullet$、$v^*\mathscr Q_\bullet$ 分别与 $\widetilde{(P_\bullet)_f}$、$\widetilde{(Q_\bullet)_g}$ 等同；而 $X^{(1)}\times_S Y^{(1)}$ 与 $X\times_S Y=\Spec(B\otimes_A C)$ 的开子概形 $D(f\otimes g)$ 等同（II，4.3.2.4）。所要证明的是由典范映射按函子性得到的同态
+\begin{equation}
+ \bigl(\Tor_n^A(P_\bullet,Q_\bullet)\bigr)_{f\otimes g}
+ \longrightarrow\Tor_n^A((P_\bullet)_f,(Q_\bullet)_g)
+ \tag{6.4.5.3}
+\end{equation}
+双射。由（$0_{\mathrm I}$，1.6.1），可以写
+$(P_\bullet)_f=\ilim_m P_\bullet^{(m)}$，其中每个 $P_\bullet^{(m)}$ 都是与 $P_\bullet$ 相同的 $B$-模复形，而 $m\leq n$ 时的过渡映射是乘以 $f^{n-m}$。对 $Q_\bullet$ 用 $g$ 代替 $f$，也有同样描述。相应同态
+\[
+ \Tor_n^A(P_\bullet^{(m)},Q_\bullet^{(m)})
+ \longrightarrow\Tor_n^A(P_\bullet^{(r)},Q_\bullet^{(r)})
+ \qquad(m\leq r)
+\]
+按定义就是乘以 $(f\otimes g)^{r-m}$。对（6.4.5.3）左端应用（$0_{\mathrm I}$，1.6.1），再用（6.3.6），即得结论。
+\end{proof}
+
+\egap{6.4.6}
+采用（6.4.4）的记号，同样定义谱函子的典范同态
+\begin{equation}
+\begin{aligned}
+ (u\times_S v)^*{}'\spE(\PP_\bullet,\mathscr Q_\bullet)
+ &\longrightarrow{}'\spE(u^*\PP_\bullet,v^*\mathscr Q_\bullet),\\
+ (u\times_S v)^*{}''\spE(\PP_\bullet,\mathscr Q_\bullet)
+ &\longrightarrow{}''\spE(u^*\PP_\bullet,v^*\mathscr Q_\bullet).
+\end{aligned}\tag{6.4.6.1}
+\end{equation}
+（6.4.5）的论证表明，当 $u,v$ 是开浸入时，这两个同态双射。事实上，结合（6.3.6.2）、（6.3.6.3），可知它们在 $E_2$ 项上是同构，而（6.4.5）表明它们在终值上是同构；再由（0，11.1.2、11.2.4）得到结论。
+
+\subsection{拟凝聚模复形的局部超 Tor 函子：一般情形}
+\source{\texttt{EGAIII.2.pdf}，PDF第15--20页，原书第16--21页的相应部分}
+\egap{6.5.1}
+现在设 $S$ 为任意预概形，$X,Y$ 为任意两个 $S$-预概形，$\PP_\bullet$、$\mathscr Q_\bullet$ 分别是拟凝聚 $\OO_X$-模复形和 $\OO_Y$-模复形。置 $Z=X\times_S Y$。我们将定义拟凝聚 $\OO_Z$-模 $\lTor_n^S(\PP_\bullet,\mathscr Q_\bullet)$，称为两复形的\textbf{局部超 Tor}；当 $S,X,Y$ 均仿射时，它回到（6.4）中已给出的定义。当两个复形分别只在次数0处为 $\F,\G$，而其他次数为零时，仍写 $\lTor_n^S(\F,\G)$。
+
+\egap{6.5.2}
+先设 $S$ 仿射，取 $X,Y$ 的仿射开覆盖 $(X_\lambda)$、$(Y_\mu)$。则 $Z_{\lambda\mu}=X_\lambda\times_S Y_\mu$ 是 $Z$ 的一个仿射开覆盖。置
+$\PP_\bullet^\lambda=\PP_\bullet|_{X_\lambda}$、$\mathscr Q_\bullet^\mu=\mathscr Q_\bullet|_{Y_\mu}$。于是对每一对 $(\lambda,\mu)$，有拟凝聚 $\OO_{Z_{\lambda\mu}}$-模
+\[
+ \F_{\lambda\mu}=\lTor_n^S(\PP_\bullet^\lambda,\mathscr Q_\bullet^\mu).
+\]
+需证明这些模满足粘合条件（$0_{\mathrm I}$，3.3.1）。只须验证：对任意仿射开集
+$U\subset X_\lambda\cap X_{\lambda'}$、$V\subset Y_\mu\cap Y_{\mu'}$，
+$\F_{\lambda\mu}$ 和 $\F_{\lambda'\mu'}$ 在 $U\times_S V$ 上的限制典范同构。由（6.4.5），这两个限制都有到 $\lTor_n^S(\PP_\bullet|_U,\mathscr Q_\bullet|_V)$ 的典范同构，故结论成立。
+
+由此定义和（6.4.5），所得 $\OO_Z$-模在同构意义下不依赖所取覆盖，故记为 $\lTor_n^S(\PP_\bullet,\mathscr Q_\bullet)$。最后，（6.4.5）还说明，对 $X,Y$ 的任意开集 $U,V$，它在 $U\times_S V$ 上的限制典范同构于 $\lTor_n^S(\PP_\bullet|_U,\mathscr Q_\bullet|_V)$。
+
+\egap{6.5.3}
+再设 $S$ 任意，取它的仿射开覆盖 $(S_\alpha)$，以 $X_\alpha,Y_\alpha$ 表示 $S_\alpha$ 在 $X,Y$ 中的逆像。还需证明各层
+\[
+ \F_\alpha=\lTor_n^{S_\alpha}
+ (\PP_\bullet|_{X_\alpha},\mathscr Q_\bullet|_{Y_\alpha})
+\]
+满足粘合条件。设 $T$ 是 $S_\alpha\cap S_\beta$ 中的仿射开集，$U,V$ 分别为它在 $X,Y$ 中的逆像；只须构造两层在 $U\times_S V$ 上的限制到 $\lTor_n^T(\PP_\bullet|_U,\mathscr Q_\bullet|_V)$ 的典范同构。还可限于 $T$ 同时写为 $D(f_\alpha)$ 和 $D(f_\beta)$ 的情形，其中 $f_\alpha,f_\beta$ 分别是 $S_\alpha,S_\beta$ 上的结构层截面。由（6.4.2），$\lTor_n^T$ 分别典范同构于以 $S_\alpha,S_\beta$ 为底的相应超 Tor；而（6.5.2）已给出 $\F_\alpha,\F_\beta$ 的限制到后两者的典范同构。这就完成了 $\OO_Z$-模 $\lTor_n^S(\PP_\bullet,\mathscr Q_\bullet)$ 的定义。对任意开集 $U\subset X$、$V\subset Y$，它在 $U\times_S V$ 上的限制仍与 $\lTor_n^S(\PP_\bullet|_U,\mathscr Q_\bullet|_V)$ 典范同构。
+
+在下有界拟凝聚模复形范畴中，这样定义了一个取值于 $\OO_Z$-模范畴的双 $\delta$-函子 $\lTor_*^S$。由（6.4.5）以及（6.4.4.2）是双 $\delta$-函子态射的事实，问题在 $X,Y,S$ 上都是局部的，故这一断言立即成立。若两个复形分别只在次数0处为 $\F,\G$，则由（6.4.1.1），$\lTor_0^S(\F,\G)$ 恰是（I，9.1.2）定义的外张量积 $\F\otimes_S\G$；这由（I，9.1.3）得出。
+
+\egap{6.5.4}
+由上述构造和（6.4.6）的说明，局部超 Tor 是两个谱函子 ${}'\spE$、${}''\spE$ 的终值，其 $E_2$ 项为
+\begin{align}
+ {}'\spE^2_{pq}&=\HH_p\bigl(\lTor_q^S(\PP_\bullet,\mathscr Q_\bullet)\bigr),
+ \tag{6.5.4.1}\\
+ {}''\spE^2_{pq}&=\bigoplus_{i+j=q}\lTor_p^S
+ \bigl(\HH_i(\PP_\bullet),\HH_j(\mathscr Q_\bullet)\bigr).
+ \tag{6.5.4.2}
+\end{align}
+谱序列（6.5.4.2）总是正则的；若两复形都下有界，则两个谱序列都双正则。下面给出另一种双正则情形。
+
+\egap{6.5.5}
+对于拓扑空间 $T$ 上的环层 $\A$，若每个 $t\in T$ 处的环 $\A_t$ 的上同调维数都 $\leq n$，则称 $\A$ 的\textbf{上同调维数 $\leq n$}；也称赋环空间 $(T,\A)$ 的上同调维数 $\leq n$。若存在这样的整数 $n$，则称环层（或赋环空间）的上同调维数\textbf{有限}。
+
+若各 $\A_t$ 都是诺特交换局部环，那么它们的上同调维数 $\leq n$，等价于它们都是正则环且 Krull 维数 $\leq n$（$0_{\mathrm{IV}}$，17.3.1）。用第IV章将引入的维数理论术语，局部诺特预概形 $T$ 的上同调维数 $\leq n$，等价于它正则（$0_{\mathrm I}$，4.1.4）且维数 $\leq n$；这又表示对每个仿射开集 $U\subset T$，环 $\Gamma(U,\OO_T)$ 的上同调维数 $\leq n$（$0_{\mathrm{IV}}$，17.2.6）。结合（6.3.2），可知若 $S$ 局部诺特且上同调维数有限，则 ${}'\spE,{}''\spE$ 都双正则。\cmt{B2-H01}{本条“上同调维数”按各茎环的模论同调维数定义，不是结构层上同调消失的最高次数；不能将二者混用。}
+
+通过 $X\times_S Y\simeq Y\times_S X$ 的典范同构，$\lTor_n^S(\PP_\bullet,\mathscr Q_\bullet)$ 显然转化为 $\lTor_n^S(\mathscr Q_\bullet,\PP_\bullet)$（在同构意义下）。
+
+\egas{6.5.6}{命题}
+设 $(\PP_{\bullet\alpha})$ 是拟凝聚 $\OO_X$-模复形的一个滤过归纳系统，则有典范同构
+\begin{equation}
+ \ilim_\alpha\lTor_n^S(\PP_{\bullet\alpha},\mathscr Q_\bullet)
+ \simeq\lTor_n^S(\ilim_\alpha\PP_{\bullet\alpha},\mathscr Q_\bullet).
+ \tag{6.5.6.1}
+\end{equation}
+\begin{proof}
+问题在 $S,X,Y$ 上局部，故可设三者均仿射，此时命题归结为（6.3.6）。
+\end{proof}
+
+\egas{6.5.7}{备注}
+（i）特别考虑 $S=X=Y$ 的情形，$\PP_\bullet,\mathscr Q_\bullet$ 都是拟凝聚 $\OO_S$-模复形。此时各局部超 Tor 是拟凝聚 $\OO_S$-模。对每个 $s\in S$，由（6.5.6）得到典范同构
+\begin{equation}
+ \bigl(\lTor_n^S(\PP_\bullet,\mathscr Q_\bullet)\bigr)_s
+ \simeq\Tor_n^{\OO_{S,s}}((\PP_\bullet)_s,(\mathscr Q_\bullet)_s).
+ \tag{6.5.7.1}
+\end{equation}
+因为问题是局部的，利用（6.4.1.1）就归结为模的情形。
+
+（ii）定义可推广到同一个赋环空间 $(X,\OO_X)$ 上的两个 $\OO_X$-模复形 $\PP_\bullet,\mathscr Q_\bullet$。对每个开集 $U$，置
+\[
+ A(U)=\Gamma(U,\OO_X),\quad P_\bullet(U)=\Gamma(U,\PP_\bullet),\quad
+ Q_\bullet(U)=\Gamma(U,\mathscr Q_\bullet).
+\]
+这些 $A(U)$-模 $\Tor_n^{A(U)}(P_\bullet(U),Q_\bullet(U))$ 构成 $X$ 上的预层；以 $\lTor_n^X(\PP_\bullet,\mathscr Q_\bullet)$ 表示其相伴 $\OO_X$-模。当 $X$ 是预概形时，由（6.3.12），这个模与上面定义的超 Tor 典范同构。这里不再进一步展开这一推广。
+
+\egas{6.5.8}{命题}
+设 $X,Y$ 为两个 $S$-预概形，$\F,\G$ 分别是拟凝聚 $\OO_X$-模和 $\OO_Y$-模。如果其中之一是 $S$-平坦的，则对于 $n\ne0$，有 $\lTor_n^S(\F,\G)=0$。
+\begin{proof}
+问题在 $X,Y$ 上局部，可设 $X,Y,S$ 均仿射，其环分别为 $B,C,A$，且 $\F=\widetilde M$、$\G=\widetilde N$，其中 $M$ 是 $B$-模，$N$ 是 $C$-模。例如设 $\F$ 是 $S$-平坦的；原文以局部化表述说，对于每个 $s\in S$，$M_s$ 是平坦 $A_s$-模（$0_{\mathrm I}$，6.7.1），故 $M$ 是平坦 $A$-模（$0_{\mathrm I}$，6.3.3）。已知对于 $n>0$ 及每个 $C$-模 $N$，有 $\Tor_n^A(M,N)=0$（$0_{\mathrm I}$，6.1.1），由（6.4.1.1）得出结论。\cmt{B2-H02}{这里 $M_s$ 是底环 $A$ 在 $s$ 处局部化后的模，不是 $X$ 上某个未指定点的茎；仿射情形的等价性亦见III（1.4.15.1）。负次数的普通Tor按定义为零。}
+\end{proof}
+
+\egas{6.5.9}{推论}
+设 $X,Y$ 为两个 $S$-预概形，$\PP_\bullet,\mathscr Q_\bullet$ 分别为下有界拟凝聚 $\OO_X$-模复形和 $\OO_Y$-模复形。若所有 $\PP_i$ 均 $S$-平坦，则关于 $\mathscr Q_\bullet$ 有典范的 $\delta$-函子同构
+\begin{equation}
+ \lTor_*^S(\PP_\bullet,\mathscr Q_\bullet)
+ \simeq\HH_*(\PP_\bullet\otimes_S\mathscr Q_\bullet).
+ \tag{6.5.9.1}
+\end{equation}
+\begin{proof}
+当 $S,X,Y$ 仿射时，这就是（6.3.7）；一般情形由（6.5.2）、（6.5.3）的论证得到。
+\end{proof}
+
+\egas{6.5.10}{推论}
+若 $X$ 对 $S$ 平坦（$0_{\mathrm I}$，6.7.1），两复形下有界，且所有 $\PP_i$ 都是局部自由的 $\OO_X$-模（不必有限型），则（6.5.9.1）双射。
+\begin{proof}
+平坦性按定义是 $X$ 上逐点的性质，而任意一族平坦模的直和仍平坦（$0_{\mathrm I}$，6.1.2），故（6.5.9）的假设满足。
+\end{proof}
+
+\egas{6.5.11}{命题}
+设 $X',Y'$ 为两个 $S$-预概形，$f:X\to X'$、$g:Y\to Y'$ 是仿射 $S$-态射。对于拟凝聚模复形 $\PP_\bullet,\mathscr Q_\bullet$，有典范且具有函子性的同构
+\begin{equation}
+ (f\times_S g)_*\lTor_n^S(\PP_\bullet,\mathscr Q_\bullet)
+ \simeq\lTor_n^S(f_*\PP_\bullet,g_*\mathscr Q_\bullet).
+ \tag{6.5.11.1}
+\end{equation}
+\begin{proof}
+由于 $f,g$ 仿射，$f_*\PP_\bullet$、$g_*\mathscr Q_\bullet$ 是拟凝聚模复形（II，1.2.6）；置 $Z'=X'\times_S Y'$，两边都是拟凝聚 $\OO_{Z'}$-模（6.5.1）。容易归结到 $S,X',Y'$ 仿射，此时 $X,Y$ 也仿射，结论由（6.4.1.1）和（I，1.6.3）立即得到。
+\end{proof}
+
+\egas{6.5.12}{备注}
+设 $X',Y'$ 为两个 $S$-预概形，并设 $X'$ 对 $S$ 平坦。令 $X$ 为 $X'$ 的闭子预概形，$i:X\to X'$ 为典范嵌入；设 $\PP_\bullet$、$\mathscr Q_\bullet$ 分别为下有界拟凝聚 $\OO_X$-模复形和 $\OO_{Y'}$-模复形。再设 $\LL_{\bullet\bullet}$ 为 $i_*\PP_\bullet$ 的一个由局部自由 $\OO_{X'}$-模组成的解消，且 $X'$ 的每一点都有仿射开邻域 $U$，使每个 $\LL_{j,\bullet}|_U$ 都是 $(i_*\PP_j)|_U$ 的自由解消。则有典范同构
+\begin{equation}
+ (i\times_S1_{Y'})_*\lTor_n^S(\PP_\bullet,\mathscr Q_\bullet)
+ \simeq\HH_n(\LL_{\bullet\bullet}\otimes_S\mathscr Q_\bullet).
+ \tag{6.5.12.1}
+\end{equation}
+若 $S,X',Y'$ 都仿射且每个 $\LL_{j,\bullet}$ 是 $i_*\PP_j$ 的自由解消，则由（6.5.11）归结到 $X'=X$ 且它对 $S$ 平坦的情形，应用（6.3.4）即可。一般情形下先局部定义此同构，再验证它是整体同构。为此，须回顾（6.3.4.1）中第一个同构的定义：它来自谱序列的同构（0，11.6.5、11.5.3），后者又来自双复形态射 $L_{\bullet\bullet}\to L'_{\bullet\bullet}$，其中 $L$ 为所给解消，$L'$ 为 $P_\bullet$ 在下有界 $A$-模复形范畴中的投射解消（参见0，11.5.2.2）。两个这样的投射解消之间存在同伦等价（M，V，1.2），因而（6.3.4.1）的同构不依赖所选的 $L'$，所需断言由此得出。
+
+\egas{6.5.13}{命题}
+设 $X,Y$ 是两个 $S$-预概形，并满足下列条件之一：
+\begin{enumerate}[label=(\roman*)]
+\item $X$ 和 $Z=X\times_S Y$ 局部诺特，且 $X$ 对 $S$ 平坦；
+\item $S,X$ 局部诺特，且 $Y$ 对 $S$ 有限型。
+\end{enumerate}
+设 $\PP_\bullet,\mathscr Q_\bullet$ 分别是下有界拟凝聚 $\OO_X$-模复形和 $\OO_Y$-模复形，并且对每个 $n$，$\HH_n(\PP_\bullet)$、$\HH_n(\mathscr Q_\bullet)$ 分别为有限型模。那么各 $\lTor_n^S(\PP_\bullet,\mathscr Q_\bullet)$ 都是凝聚 $\OO_Z$-模。
+\begin{proof}
+两复形下有界，故第二谱序列双正则（6.5.4）。在两种情况下 $Z$ 均局部诺特；由（0，11.1.8），只需证明各 ${}''\spE^2_{pq}$ 凝聚。由同调层有限型的假设及（6.5.4.2），这归结为两个复形均集中在次数0的特殊情形，也就是以下推论。
+\end{proof}
+
+\egas{6.5.14}{推论}
+满足（6.5.13）的（i）或（ii），且 $\F,\G$ 分别为拟凝聚有限型 $\OO_X$-模和 $\OO_Y$-模时，各 $\lTor_n^S(\F,\G)$ 凝聚。
+\begin{proof}
+问题在 $X,Y$ 上局部，可设 $S,X,Y$ 均仿射。
+
+（i）原文接着写：“在（i）的假设下，$S,X,Z$ 是诺特的。”\cmt{B2-G02}{其中 $S$ 诺特不能由（i）推出；本证明实际只需要 $X,Z$ 诺特。报告给出非诺特底环的反例，并说明去掉这项多余断言后，证明仍成立。}
+于是存在 $\F$ 的一个由有限型 $\OO_X$-模组成的局部自由解消 $\LL_\bullet$（I，1.3.7）。由于 $X$ 对 $S$ 平坦，由（6.3.4），
+\[
+ \lTor_n^S(\F,\G)=\HH_n(\LL_\bullet\otimes_S\G).
+\]
+各 $\LL_i\otimes_S\G$ 是拟凝聚有限型 $\OO_Z$-模（I，9.1.1），因而凝聚；于是其同调凝聚（$0_{\mathrm I}$，5.3.4）。
+
+（ii）环 $A(Y)$ 是 $A(S)$ 上有限个未定元的多项式代数的商（I，6.3.3），因此 $Y$ 是某个对 $S$ 平坦且有限型的仿射 $S$-预概形 $Y'$ 的闭子预概形。$Y'$ 诺特（I，6.3.7），故对典范嵌入 $j:Y\to Y'$，存在 $j_*\G$ 的一个由有限型 $\OO_{Y'}$-模组成的局部自由解消 $\LL_\bullet$。由（6.5.12），$\lTor_n^S(\F,\G)$ 是 $\OO_{Z'}$-模 $\HH_n(\F\otimes_S\LL_\bullet)$ 沿 $1_X\times_Sj$ 的逆像，其中 $Z'=X\times_S Y'$。与（i）一样，各 $\F\otimes_S\LL_i$ 凝聚，再用（$0_{\mathrm I}$，5.3.4）即得结论。
+\end{proof}
+
+\egap{6.5.15}
+以上关于两个 $S$-预概形上的拟凝聚模复形的理论，可直接推广到任意有限个 $S$-预概形 $X_i$（$1\leq i\leq m$），以及各 $X_i$ 上的拟凝聚 $\OO_{X_i}$-模复形 $\PP_\bullet^{(i)}$。置 $Z=X_1\times_S\cdots\times_S X_m$，就定义出拟凝聚 $\OO_Z$-模
+\[
+ \lTor_n^S(\PP_\bullet^{(1)},\ldots,\PP_\bullet^{(m)}).
+\]
+一般情形的理论留给读者展开；为以后引用，这里只写出以该超 Tor 为终值的第二个正则谱序列的 $E_2$ 项：
+\begin{equation}
+ {}''\spE^2_{pq}
+ =\bigoplus_{q_1+\cdots+q_m=q}\lTor_p^S
+ \bigl(\HH_{q_1}(\PP_\bullet^{(1)}),\ldots,
+       \HH_{q_m}(\PP_\bullet^{(m)})\bigr).
+ \tag{6.5.15.1}
+\end{equation}
+（6.8）将研究任意有限多个复形的这些超 Tor 函子所给出的结合性谱序列。
+\par
