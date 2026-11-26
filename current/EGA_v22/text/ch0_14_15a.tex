@@ -1,0 +1,286 @@
+\NewNote{以下为原载第四卷第一部分的第0章补篇。原章首预告§§14--23；当前只有已译出的§§14--15收入正文。}
+\source{\texttt{EGAIV.1.pdf}，PDF第4--12页，原书第5--13页}
+\subsection*{原补篇内容提要与章首说明}
+\noindent §14\quad 拓扑空间的组合维数。\\
+§15\quad $M$-正则序列与 $\F$-正则序列。\\
+§16\quad 诺特局部环中的维数与深度。\\
+§17\quad 正则环。\\
+§18\quad 代数扩张的补充知识。\\
+§19\quad 形式光滑代数与 Cohen 环。\\
+§20\quad 导子与微分。\\
+§21\quad 特征 $p$ 环中的微分。\\
+§22\quad 形式光滑性与正则性的微分判据。\\
+§23\quad 日本环。
+
+上述各节几乎全部用于阐述第IV章中将使用的交换代数概念。尽管这些概念中的相当一部分已见于若干部著作（[1]、[12]、[13]、[17]、[30]），我们仍认为，为读者提供一个连贯、且大致独立的阐述会更加方便。与使用概形语言的第IV章§§5、6、7合在一起，这些节在本论著内部构成一部小型专论，基本独立于第I至III章；它旨在连贯地表述那些在完备化、整闭包等运算下“表现良好”的环的性质，并把这些性质系统地联系到少数一般观念上。\orig{这里回顾：符号 $0_N$（分别地，$\mathrm{Err}_N$）指随第 $N$ 章刊行的第0章部分（分别地，勘误表）。}\orig{这里讨论的大多数性质由 Chevalley、Zariski、Nagata 和 Serre 发现。此处采用的方法最初由 A. Grothendieck 于1961年秋在 Harvard University 的课程中发展。}
+
+\setcounter{section}{13}\section{拓扑空间的组合维数}
+\subsection{拓扑空间的组合维数}
+\egap{14.1.1}
+设 $I$ 为有序集。按定义，$I$ 中元素的一条链是一个有限严格递增序列
+$i_0<i_1<\cdots<i_n$（$n\geq0$），这条链的长度定义为 $n$。若 $X$ 为拓扑空间，它的不可约闭子集按包含关系构成有序集，从而得到 $X$ 的不可约闭子集链的概念。
+
+\egas{14.1.2}{定义}
+拓扑空间 $X$ 的\textbf{组合维数}（不致混淆时简称\textbf{维数}），记为 $\dim_c(X)$ 或 $\dim(X)$，是 $X$ 的不可约闭子集链长度的上确界。对于 $x\in X$，$X$ 在 $x$ 处的\textbf{组合维数}（简称\textbf{维数}），记为 $\dim_x(X)$，定义为
+\[
+ \dim_x(X)=\inf_U\dim(U),
+\]
+其中 $U$ 遍历 $x$ 在 $X$ 中的所有开邻域。
+由定义，$\dim(\varnothing)=-\infty$（实数空集的上确界约定为 $-\infty$）。若 $(X_\alpha)$ 为 $X$ 的不可约分支族，则
+\begin{equation}
+ \dim(X)=\sup_\alpha\dim(X_\alpha).\tag{14.1.2.1}
+\end{equation}
+这是因为每条不可约闭子集链都包含在某个不可约分支中；反过来，各分支在 $X$ 中闭，所以分支内的不可约闭子集也是 $X$ 的不可约闭子集。
+
+\egas{14.1.3}{定义}
+若拓扑空间 $X$ 的所有不可约分支具有同一维数，则称 $X$ \textbf{等维}。由（14.1.2.1），这个共同维数等于 $\dim(X)$。
+
+\egas{14.1.4}{命题}
+（i）对于拓扑空间 $X$ 的任意子集 $Y$，有 $\dim(Y)\leq\dim(X)$。
+
+（ii）若 $X$ 是有限个闭子集 $X_i$ 的并，则 $\dim(X)=\sup_i\dim(X_i)$。
+\begin{proof}
+对于 $Y$ 的每个不可约闭子集 $Z$，它在 $X$ 中的闭包 $\overline Z$ 不可约（$0_{\mathrm I}$，2.1.2），且 $\overline Z\cap Y=Z$，故得（i）。另一方面，若 $X=\bigcup_{i=1}^nX_i$ 且各 $X_i$ 闭，则 $X$ 的每个不可约闭子集都包含于某个 $X_i$（$0_{\mathrm I}$，2.1.1）；于是每条不可约闭子集链都包含于某个 $X_i$，得（ii）。
+\end{proof}
+由（i），对于每个 $x\in X$，还可写
+\begin{equation}
+ \dim_x(X)=\lim_U\dim(U),\tag{14.1.4.1}
+\end{equation}
+极限沿 $x$ 的开邻域的递减滤过系统取。
+
+\egas{14.1.5}{推论}
+设 $X$ 为拓扑空间，$x\in X$，$U$ 为 $x$ 的邻域；设 $Y_i$（$1\leq i\leq n$）为 $U$ 的闭子集，都包含 $x$，并且 $U=\bigcup_iY_i$。则
+\begin{equation}
+ \dim_x(X)=\sup_i\dim_x(Y_i).\tag{14.1.5.1}
+\end{equation}
+\begin{proof}
+由（14.1.4，（ii）），$\dim_x(X)=\inf_V\sup_i\dim(Y_i\cap V)$，其中 $V$ 遍历包含于 $U$ 的 $x$ 的开邻域；同样，$\dim_x(Y_i)=\inf_V\dim(Y_i\cap V)$。若 $\sup_i\dim_x(Y_i)=+\infty$，结论显然；否则存在开邻域 $V_0\subset U$，使对所有 $i$ 及所有开邻域 $V\subset V_0$，有 $\dim(Y_i\cap V)=\dim_x(Y_i)$，于是结论成立。
+\end{proof}
+
+\egas{14.1.6}{命题}
+对于每个拓扑空间 $X$，有 $\dim(X)=\sup_{x\in X}\dim_x(X)$。
+\begin{proof}
+定义及（14.1.4）说明对所有 $x$ 都有 $\dim_x(X)\leq\dim(X)$。反过来，取不可约闭子集链 $Z_0\subsetneq Z_1\subsetneq\cdots\subsetneq Z_n$，并取 $x\in Z_0$。对于包含 $x$ 的每个开集 $U$，各 $U\cap Z_i$ 都不可约（$0_{\mathrm I}$，2.1.6）且在 $U$ 中闭；它们在 $X$ 中的闭包分别为 $Z_i$，所以彼此不同。因此 $\dim(U)\geq n$，证明完成。
+\end{proof}
+
+\egas{14.1.7}{推论}
+若 $(X_\alpha)$ 是 $X$ 的开覆盖，或局部有限闭覆盖，则
+$\dim(X)=\sup_\alpha\dim(X_\alpha)$。
+\begin{proof}
+若 $X_\alpha$ 是 $x$ 的邻域，则 $\dim_x(X)\leq\dim(X_\alpha)$，得第一断言。若各 $X_\alpha$ 闭，且 $x$ 的邻域 $U$ 只与有限多个 $X_\alpha$ 相交，则由（14.1.4）
+\[
+ \dim_x(X)\leq\dim(U)=\sup_\alpha\dim(U\cap X_\alpha)
+ \leq\sup_\alpha\dim(X_\alpha),
+\]
+得到第二断言。
+\end{proof}
+
+\egas{14.1.8}{推论}
+设 $X$ 为诺特 Kolmogoroff 空间（$0_{\mathrm I}$，2.1.3），$F$ 为其闭点集。则
+$\dim(X)=\sup_{x\in F}\dim_x(X)$。
+\begin{proof}
+在（14.1.6）的证明中，只须注意 $Z_0$ 中存在闭点（$0_{\mathrm I}$，2.1.3）。
+\end{proof}
+
+\egas{14.1.9}{命题}
+设 $X$ 为非空诺特 Kolmogoroff 空间。则 $\dim(X)=0$ 当且仅当 $X$ 有限且离散。
+\begin{proof}
+若空间 $X$ 是 Hausdorff 的，特别地若它离散，则其不可约闭子集只能是单点，因而 $\dim(X)=0$。反之，若 $X$ 诺特、为 Kolmogoroff 空间且维数为0，则每个不可约分支都包含闭点（$0_{\mathrm I}$，2.1.3），故这个分支只能等于该闭点。$X$ 只有有限多个不可约分支，因此有限且离散。
+\end{proof}
+
+\egas{14.1.10}{推论}
+设 $X$ 为诺特 Kolmogoroff 空间。点 $x\in X$ 孤立，当且仅当 $\dim_x(X)=0$。
+\begin{proof}
+必要性显然，且不需对 $X$ 作额外假设。充分性如下：存在 $x$ 的开邻域 $U$ 使 $\dim(U)=0$；$U$ 仍是诺特 Kolmogoroff 空间，故有限且离散。
+\end{proof}
+
+\egas{14.1.11}{命题}
+函数 $x\mapsto\dim_x(X)$ 在 $X$ 上上半连续。
+\begin{proof}
+在其值为 $+\infty$ 的点处，上半连续性是显然的。设 $\dim_x(X)=n<+\infty$。由（14.1.4.1），存在 $x$ 的开邻域 $U_0$，使每个包含于 $U_0$ 的 $x$ 的开邻域 $U$ 都满足 $\dim(U)=n$。于是，对于每个 $y\in U_0$ 及其开邻域 $V\subset U_0$，有
+$\dim(V)\leq\dim(U_0)=n$（14.1.4）；再由（14.1.4.1），$\dim_y(X)\leq n$。
+\end{proof}
+
+\egas{14.1.12}{备注}
+若 $f:X\to Y$ 是拓扑空间之间的连续映射，可能有 $\dim(f(X))>\dim(X)$。例如，取 $X$ 为两点 $a,b$ 的离散空间；$Y$ 为同一个集合，闭集规定为 $\varnothing,\{a\},\{a,b\}$。恒等集合映射 $f:X\to Y$ 连续，而 $\dim(Y)=1$、$\dim(X)=0$。注意，$Y$ 是一个离散赋值环 $A$ 的谱，其中 $a$ 是唯一闭点，$b$ 是泛点。若 $K,k$ 分别为 $A$ 的分式域和剩余域，则 $X$ 是环 $k\times K$ 的谱，$f$ 对应于典范同态组成的环同态
+\[
+ (\varphi,\psi):A\longrightarrow k\times K,\qquad
+ \varphi:A\to k,\quad\psi:A\to K
+\]
+（参见IV，5.4.3）。
+
+\subsection{闭子集的余维数}
+\egas{14.2.1}{定义}
+给定拓扑空间 $X$ 的不可约闭子集 $Y$，称以 $Y$ 为最小项的 $X$ 的不可约闭子集链长度的上确界为 $Y$ 在 $X$ 中的\textbf{组合余维数}，简称\textbf{余维数}，记为 $\codim(Y,X)$。若 $Y$ 为任意闭子集，则其余维数定义为它的不可约分支在 $X$ 中余维数的下确界。若 $X$ 的所有极小不可约闭子集在 $X$ 中具有相同余维数，则称 $X$ \textbf{等余维}。
+
+由此，$\codim(\varnothing,X)=+\infty$，因为实数空集的下确界约定为 $+\infty$。设 $(X_\alpha)$、$(Y_\beta)$ 分别为 $X,Y$ 的不可约分支族。每个 $Y_\beta$ 包含于某个 $X_\alpha$；更一般地，以 $Y_\beta$ 为最小项的链完全包含于某个 $X_\alpha$。于是
+\begin{equation}
+ \codim(Y,X)=\inf_\beta\sup_{\alpha:\,Y_\beta\subset X_\alpha}
+                      \codim(Y_\beta,X_\alpha).\tag{14.2.1.1}
+\end{equation}
+
+\egas{14.2.2}{命题}
+设 $X$ 为拓扑空间。
+
+（i）若 $\Phi$ 为 $X$ 的不可约闭子集族，则
+\begin{equation}\dim(X)=\sup_{Y\in\Phi}\codim(Y,X).\tag{14.2.2.1}\end{equation}
+（ii）对于每个非空闭子集 $Y\subset X$，
+\begin{equation}\dim(Y)+\codim(Y,X)\leq\dim(X).\tag{14.2.2.2}\end{equation}
+（iii）若 $Y\subset Z\subset T$ 为 $X$ 的闭子集，则
+\begin{equation}\codim(Y,Z)+\codim(Z,T)\leq\codim(Y,T).\tag{14.2.2.3}\end{equation}
+（iv）闭子集 $Y$ 满足 $\codim(Y,X)=0$ 当且仅当它包含 $X$ 的某个不可约分支。
+\begin{proof}
+（i）、（iv）直接来自定义。对于（ii），可归结为 $Y$ 不可约，此时公式由定义（14.1.1）、（14.2.1）得出。对于（iii），按定义先可设 $Y$ 不可约；这时
+$\codim(Y,Z)=\sup_\alpha\codim(Y,Z_\alpha)$，$Z_\alpha$ 遍历包含 $Y$ 的 $Z$ 的不可约分支。显然 $\codim(Y,T)\geq\codim(Y,Z)$，所以当 $\codim(Y,Z)=+\infty$ 时不等式成立。否则，存在 $\alpha$ 使该上确界在 $Z_\alpha$ 处达到；由（14.2.1），可再归结为 $Z$ 也不可约，而此时（14.2.2.3）直接来自定义。
+\end{proof}
+
+\egas{14.2.3}{命题}
+设 $Y$ 为拓扑空间 $X$ 的闭子集。对于每个开集 $U\subset X$，有
+\begin{equation}
+ \codim(Y\cap U,U)\geq\codim(Y,X).\tag{14.2.3.1}
+\end{equation}
+此外，两边相等，当且仅当对与 $U$ 相交的 $Y$ 的不可约分支族 $(Y_\alpha)$，有
+$\codim(Y,X)=\inf_\alpha\codim(Y_\alpha,X)$。
+\begin{proof}
+已知（$0_{\mathrm I}$，2.1.6），取闭包 $Z\mapsto\overline Z$ 给出 $U$ 的不可约闭子集与 $X$ 中和 $U$ 相交的不可约闭子集之间的双射；特别地，对应 $Y\cap U$ 的不可约分支与和 $U$ 相交的 $Y$ 的不可约分支。对于这样的 $Y_\alpha$，
+$\codim(Y_\alpha,X)=\codim(Y_\alpha\cap U,U)$；结论由定义得出。
+\end{proof}
+
+\egas{14.2.4}{定义}
+设 $Y$ 为 $X$ 的闭子集，$x\in X$。$Y$ 在 $X$ 中于 $x$ 处的余维数定义为
+\[
+ \codim_x(Y,X)=\sup_U\codim(Y\cap U,U),
+\]
+其中 $U$ 遍历 $x$ 的开邻域。由（14.2.3），也可写为
+\begin{equation}
+ \codim_x(Y,X)=\lim_U\codim(Y\cap U,U).\tag{14.2.4.1}
+\end{equation}
+此极限沿开邻域的递减滤过系统取。若 $x\in X\setminus Y$，则 $\codim_x(Y,X)=+\infty$。
+
+\egas{14.2.5}{命题}
+若 $(Y_i)_{1\leq i\leq n}$ 是 $X$ 的有限闭子集族，$Y=\bigcup_iY_i$，则
+\begin{equation}
+ \codim(Y,X)=\inf_i\codim(Y_i,X).\tag{14.2.5.1}
+\end{equation}
+\begin{proof}
+每个 $Y_i$ 的不可约分支都包含于 $Y$ 的某个不可约分支；反过来，$Y$ 的每个不可约分支也都是某个 $Y_i$ 的不可约分支（$0_{\mathrm I}$，2.1.1）。所以结论来自余维数的定义与（14.2.2.3）。
+\end{proof}
+
+\egas{14.2.6}{推论}
+设 $Y$ 为 $X$ 的局部诺特闭子空间。
+
+（i）每个 $x\in X$ 只包含于 $Y$ 的有限多个不可约分支 $Y_i$（$1\leq i\leq n$）中，并且
+$\codim_x(Y,X)=\inf_i\codim(Y_i,X)$。
+
+（ii）函数 $x\mapsto\codim_x(Y,X)$ 在 $X$ 上下半连续。
+\begin{proof}
+按假设，有 $x$ 的开邻域 $U_0$，使 $Y\cap U_0$ 诺特，因而只有有限多个不可约分支；它们是 $Y$ 的分支在 $U_0$ 上的迹。所以包含 $x$ 的 $Y$ 的分支只有有限多个。缩小 $U_0$，可避开不包含 $x$ 的那些分支，从而设 $Y_i\cap U$ 正是 $Y\cap U$ 的所有不可约分支。对每个开邻域 $V\subset U$，$Y_i\cap V$ 仍是 $Y\cap V$ 的分支，且由（14.2.3），
+$\codim(Y_i,X)=\codim(Y_i\cap V,V)$，得到（i）。对于每个 $x'\in V$，包含 $x'$ 的分支只可能是这些 $Y_i$ 中的一部分，因此
+$\codim_{x'}(Y,X)\geq\codim_x(Y,X)$，得到（ii）。
+\end{proof}
+
+\subsection{链条件}
+\egap{14.3.1}
+在拓扑空间 $X$ 中，称不可约闭子集链
+$Z_0\subsetneq Z_1\subsetneq\cdots\subsetneq Z_n$ 为\textbf{饱和链}，如果对于每个相邻的两项，不存在严格介于它们之间的不可约闭子集。
+
+\egas{14.3.2}{命题}
+设 $X$ 为拓扑空间，且每当不可约闭子集 $Y\subset Z$ 时都有 $\codim(Y,Z)<+\infty$。以下条件等价：
+
+（a）具有相同端点的任意两条饱和不可约闭子集链长度相同。
+
+（b）若 $Y\subset Z\subset T$ 是三个不可约闭子集，则
+\begin{equation}
+ \codim(Y,T)=\codim(Y,Z)+\codim(Z,T).\tag{14.3.2.1}
+\end{equation}
+\begin{proof}
+（a）推出（b）是直接的。反过来，设（b）成立。证明两条具有相同端点、长度为 $m,n$（取 $n\leq m$）的饱和链必有 $m=n$。对 $n$ 归纳，$n=1$ 时由定义成立。设 $n>1$，并反设 $n<m$；取饱和链
+$Z_0\subsetneq Z_1\subsetneq\cdots\subsetneq Z_n$，且存在端点 $Z_0,Z_n$、长度 $m$ 的另一饱和链。因为 $\codim(Z_0,Z_n)\geq m>n$，而 $\codim(Z_0,Z_1)=1$，由（b）得到
+\[
+ \codim(Z_1,Z_n)=\codim(Z_0,Z_n)-1>n-1,
+\]
+与归纳假设矛盾。
+\end{proof}
+满足上述等价条件时，称 $X$ 满足\textbf{链条件}，或称 $X$ 为\textbf{悬链空间}。悬链空间的每个闭子空间仍是悬链空间。
+
+\egas{14.3.3}{命题〔原文；存在实质性错误〕}
+设 $X$ 为有限维诺特 Kolmogoroff 空间。原文声称以下条件等价：\cmt{E01}{这一等价性有误。正确关系为（a）$\Longleftrightarrow$（c）$\Longleftrightarrow$（d）$\Longrightarrow$（b），而（b）不推出其余条件。反例、修正及文献核对见E01。}
+
+（a）$X$ 的任意两条极大不可约闭子集链具有相同长度。
+
+（b）$X$ 等维、等余维且悬链。
+
+（c）$X$ 等维，且每当不可约闭子集 $Y\subset Z$ 时，
+\begin{equation}\dim(Z)=\dim(Y)+\codim(Y,Z).\tag{14.3.3.1}\end{equation}
+（d）$X$ 等余维，且每当不可约闭子集 $Y\subset Z$ 时，
+\begin{equation}\codim(Y,X)=\codim(Y,Z)+\codim(Z,X).\tag{14.3.3.2}\end{equation}
+\begin{proof}[原文证明]
+对 $X$ 的假设说明，每条极大不可约闭子集链的两端必为闭点和不可约分支（$0_{\mathrm I}$，2.1.3）；而端点为 $Y,Z$（$Y\subset Z$）的每条饱和链都包含于一条极大链中，极大链新增的项不是包含于 $Y$，就是包含 $Z$。原文据此断言（a）与（b）的等价性立即成立。\cmt{E01}{问题正出在这里：不同闭点在不同不可约分支中的余维数不由“整个空间等余维”统一控制。}
+这些说明还表明，（a）成立时，对于任意不可约闭子集 $Y$，
+\begin{equation}\dim(Y)+\codim(Y,X)=\dim(X).\tag{14.3.3.3}\end{equation}
+结合（14.3.2.1），即得（14.3.3.1）、（14.3.3.2）。反之，（14.3.3.1）推出（14.3.2.1），所以由（14.3.2）得到链条件；再取 $Y$ 为闭点 $x$、$Z$ 为包含它的不可约分支，得到 $\codim(\{x\},X)=\dim(Z)$，所以（c）推出（b）。同样，（14.3.3.2）推出链条件；取同样的 $Y,Z$，也得 $\codim(\{x\},X)=\dim(Z)$，从而（d）推出（b）（每个分支都包含闭点）。
+\end{proof}
+原文把有限维且满足“（14.3.3）的等价条件”的诺特 Kolmogoroff 空间称为\textbf{双等维}。\cmt{E01}{因上述条件并不等价，此定义必须明确采用（a）这一较强条件。只满足（b）应称“弱双等维”，参见E01。}
+
+\egas{14.3.4}{推论}
+设 $X$ 为诺特 Kolmogoroff 双等维空间。则对于任意闭点 $x$ 和任意不可约分支 $Z$，
+\begin{equation}
+ \dim(X)=\dim(Z)=\codim(\{x\},X)=\dim_x(X).\tag{14.3.4.1}
+\end{equation}
+\begin{proof}
+最后一个等号来自以下事实：若
+$Y_0=\{x\}\subsetneq Y_1\subsetneq\cdots\subsetneq Y_n$
+为极大链，且 $U$ 为 $x$ 的邻域，则各 $U\cap Y_i$ 在 $U$ 中闭且不可约，因其在 $X$ 中的闭包为 $Y_i$ 而彼此不同；于是由（14.1.4），$\dim(U)=\dim(X)$。
+\end{proof}
+
+\egas{14.3.5}{推论}
+设 $X$ 为诺特 Kolmogoroff 空间。若 $X$ 双等维，则它的任意不可约分支之并，以及任意不可约闭子集，也双等维。另对每个闭子集 $Y$，有\cmt{边界约定}{对非空 $Y$ 按有限维公式理解。若 $Y=\varnothing$，本节既有约定给出 $-\infty+(+\infty)$，此和未定义；因此这一等式还需明确排除空集，或另行制定不同的扩展算术约定。}
+\begin{equation}
+ \dim(Y)+\codim(Y,X)=\dim(X).\tag{14.3.5.1}
+\end{equation}
+
+\begin{proof}
+每条不可约闭子集链都包含于某个不可约分支，故第一断言来自（14.3.3）。若 $X'$ 是不可约闭子集，它满足（14.3.3，（c）），得第二断言。最后，在（14.3.3）的证明中已经验证了 $Y$ 不可约时的（14.3.5.1）；若 $Y_i$（$1\leq i\leq m$）是 $Y$ 的不可约分支，则维数最大的分支也是在 $X$ 中余维数最小的分支，故该公式来自维数和余维数的定义。
+\end{proof}
+
+\egas{14.3.6}{备注}
+读者会注意到，（14.3.2）的证明适用于任意有序集，其证明并未使用这些元素是拓扑空间不可约闭子集这一事实。（14.3.3）的证明也同样适用于满足以下条件的有序集 $E$：每个 $x\in E$ 之下都有一个极小元素 $y\leq x$，且元素链的长度有界。\cmt{E01}{关于（14.3.3）的这一概括仍受同一错误影响；本册的反例本来就是有限有序集。}
+
+\section{正则序列}
+\subsection{\texorpdfstring{$M$}{M}-正则序列与 \texorpdfstring{$M$}{M}-拟正则序列}
+\egap{15.1.1}
+设 $A$ 为环，$N$ 为 $A$-模。以下将分次模 $N\otimes_AA[T_1,\ldots,T_n]$ 简记为 $N[T_1,\ldots,T_n]$，其中 $N$ 取平凡分次，多项式环按总次数分次。设 $M$ 为 $A$-模，$f_i\in A$（$1\leq i\leq n$），$\jj=\sum_{i=1}^nf_iA$，赋予 $M$ 以 $\jj$-预进制滤过。定义零次分次满同态
+\begin{equation}
+ \varphi:(\operatorname{gr}_0(M))[T_1,\ldots,T_n]
+ \longrightarrow\operatorname{gr}_\bullet(M)\tag{15.1.1.1}
+\end{equation}
+如下：若 $\xi$ 是 $x\in M$ 模 $\jj M$ 的类，$P[T_1,\ldots,T_n]$ 为次数 $k$ 的齐次多项式，则把 $\xi,P$ 对应到 $P(f_1,\ldots,f_n)x$ 模 $\jj^{k+1}M$ 的类。这个类显然只依赖 $\xi,P$。若 $S_k$ 为齐次次数 $k$ 的多项式组成的模，得到 $A$-线性映射
+\[
+ \varphi_k:\operatorname{gr}_0(M)\otimes_AS_k\longrightarrow\operatorname{gr}_k(M),
+\]
+它由 $\jj^kM$ 的定义而满射。以下称 $f\in A$ 在 $M$ 中为非零因子，如果数乘 $f_M:x\mapsto fx$ 单射。
+
+\egas{15.1.2}{引理}
+设 $M$ 为 $A$-模，$f\in A$，赋予 $M$ 以 $(fA)$-预进制滤过。若 $f$ 在 $M$ 中为非零因子，则典范同态
+\begin{equation}
+ \varphi:(M/fM)[T]\longrightarrow\operatorname{gr}_\bullet(M)\tag{15.1.2.1}
+\end{equation}
+双射。如果 $M$ 对 $(fA)$-预进制拓扑分离，则逆命题也成立。
+\begin{proof}
+这里 $\operatorname{gr}_k(M)=f^kM/f^{k+1}M$。$\varphi$ 单射意味着，对每个 $x,k$，$f^kx\in f^{k+1}M$ 推出 $x\in fM$；当 $f$ 是非零因子时显然如此。反过来，数乘 $f_M$ 在商上诱导 $\operatorname{gr}_k(M)\to\operatorname{gr}_{k+1}(M)$，从而诱导一个次数1的分次同态 $g$。$\varphi$ 单射亦可表述为 $g$ 单射；滤过分离时，由此得到 $f_M$ 单射（Bourbaki，\textit{Alg. comm.}，III，§2，8，定理1推论1）。
+\end{proof}
+
+\egas{15.1.3}{推论}
+设 $A$ 为诺特环，$M$ 为有限型 $A$-模。则 $f$ 在 $M$ 中为非零因子，当且仅当 $\varphi$ 双射。
+\begin{proof}
+只需证明充分性。要证明 $f_M$ 单射，只须对每个素理想 $\mathfrak p$，证明 $M'=M_\mathfrak p$ 上由 $f'=f/1\in A'=A_\mathfrak p$ 定义的数乘单射（Bourbaki，\textit{Alg. comm.}，II，§3，4，定理1）。有
+\[
+ f'^kM'/f'^{k+1}M'=(f^kM/f^{k+1}M)\otimes_AA',
+\]
+且相应 $\varphi'$ 就是 $\varphi\otimes1_{A'}$；局部化正合，所以 $\varphi$ 单射时 $\varphi'$ 也单射（$0_{\mathrm I}$，1.3.2）。于是归结到 $A$ 为诺特局部环，极大理想记为 $\mm$。若 $f\notin\mm$，它可逆，无须再证。若 $f\in\mm$，则 $M$ 对 $(fA)$-预进制拓扑分离（$0_{\mathrm I}$，7.3.5），应用（15.1.2）即可。
+\end{proof}
+
+\egas{15.1.4}{定义}
+若 $f$ 在 $M$ 中为非零因子，则称 $f$ \textbf{$M$-正则}；若（15.1.2.1）双射，则称 $f$ \textbf{$M$-拟正则}。
+
+我们已经证明，每个 $M$-正则元素都 $M$-拟正则；若 $A$ 诺特且 $M$ 有限型，逆命题成立。不再假设 $M$ 有限型时，逆命题可能失败。例如，设 $A$ 为不是域的主理想整环，$K$ 为其分式域，$M=K/A$。对于任意 $f\ne0$，有 $fM=M$，所以（15.1.2.1）的两边都为0；原文接着说，“但是 $f$ 此时是 $M$ 中的零因子”。\cmt{E02}{最后一句必须限定 $f$ 为非零非单位。取 $f=1$ 时，数乘是恒等映射，当然单射；而若 $f$ 非单位，则 $1/f+A\ne0$，但被 $f$ 乘后为0。见E02。}

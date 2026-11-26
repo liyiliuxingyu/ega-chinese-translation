@@ -1,0 +1,49 @@
+{
+  "files": [
+    {
+      "file": "v21_section13_bertini.tex",
+      "bytes": 11219,
+      "sha256": "31aa08d2fc79e7538b3472e8b3aec63d1ff6a2949d9a00c1d52f906c28654f13"
+    },
+    {
+      "file": "v21_section13_bertini_audit.tex",
+      "bytes": 13856,
+      "sha256": "e01b4bf33bbc995c6a8c9f7a13d8f8ca474946d753146d7b963254269d2b5878"
+    },
+    {
+      "file": "HISTORICAL_NOTES.json",
+      "bytes": 23176,
+      "sha256": "da0be89c9ed688728b2ca14e7a0861ecc3a189b8831481f2c455a2d2e122111a"
+    },
+    {
+      "file": "inherited_segment_B_exact.tex",
+      "bytes": 12622,
+      "sha256": "35305696d9399cc0a14f45e75d5ceef622b89c93256095a81240802b389c02f4"
+    },
+    {
+      "file": "SOURCE_MAP.md",
+      "bytes": 5827,
+      "sha256": "1ed5277dce6ca332213da3f0cc80c197d244a9a3270a3a83ba31e7eb585ccf87"
+    },
+    {
+      "file": "EVIDENCE_MANIFEST.json",
+      "bytes": 3930,
+      "sha256": "44b2d0bcc70745bf802062da5bf0138d7376a6a04c851d0091f5f43ed0e33c4f"
+    },
+    {
+      "file": "fr78_80_source.pdf",
+      "bytes": 313703,
+      "sha256": "27b007d69ea9d7c7a4fb7d3e626624f9b089c75960539c6b1df34e8b4af6698b"
+    },
+    {
+      "file": "en51_52_source.pdf",
+      "bytes": 117438,
+      "sha256": "eea72ed75483c8224564e07092e55427e6cbba5a0380c7060b5880b0f0bff129"
+    },
+    {
+      "file": "INDEPENDENT_REVIEW.md",
+      "bytes": 8537,
+      "sha256": "6497848a23c566e41291e3d2e9f12a3aaa2fa992ef2732073fdf35feb3e77868"
+    }
+  ]
+}

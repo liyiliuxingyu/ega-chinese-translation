@@ -1,0 +1,377 @@
+% Integrated original source: EGAVaiello.pdf, pages 53--61.
+% Dot: 17 archived batches. Two subsequent section-16 batches are collated separately.
+\egasection{§14\quad 锥投影}
+
+% SOURCE: unpacked/dot_batches/EGA第五卷_14锥投影构造_续译工程/EGA第五卷_14锥投影构造_校订续译.tex
+\noindent\textbf{附记。}
+我们已经在不同情境中使用过锥投影，尤其是在第8节末尾、10.4的表述以及其他地方。下面这组汇集的命题（“sorite”）无疑应提前放在本段的开头，也可能放在关于“Grassmann概形”的辅助段落中。
+
+设$C=P(F)$是$P(E)=P$的一个线性子簇，它在$S$上的相对维数为$r-m-1$，即在$P$中的余维为$m+1$。于是$F$是$E$的一个秩为$r-m$的局部自由商模，$F=E/G$，其中$G$局部自由且秩为$m+1$。我们已用第二章的代数方法定义了态射
+\[
+p_c:P-C=P(E)-P(E/G)\longrightarrow P(G).
+\]
+我们将对它作几何解释，并依据下面的描述，将其称为以$C$为中心的\textbf{锥投影}。（附记：只假设$r-m-1$介于$-1$与$r-1$之间，即$m$介于$0$与$r$之间，并无其他限制。\cmt{V-H-L001}{本节的$r$表示$P(E)$的相对维数，因$\operatorname{rk}F=r-m$和$\operatorname{rk}G=m+1$，此处$\operatorname{rk}E=r+1$。第12节在第43页另以$r$表示$E$的秩，故本节记号已切换；不能把此处$r-m-1$静默改为$r-m-2$，也不能把整个$P(E)$的相对维数误读成$r-1$。这里$P(E)$采用局部自由秩一商模的约定；因此中心$P(E/G)$对应商模$E/G$。当$m=r$时，该商模为零，中心为空，射影维数$-1$是空射影空间的约定。保留原文的整个指标范围，不额外要求中心非空。}
+
+为此，先将$P(G)$解释为
+\[
+\operatorname{Grass}^{m}(P)=\operatorname{Grass}_{r-m+1}(E)
+\]
+的一个闭子概形。\cmt{V-H-L002}{底本等式右端印为$\operatorname{Grass}_{r-m+1}(P)$，但随后的函子态射右端明确写$\operatorname{Grass}_{r-m+1}(E)$，并使用$E$的秩为$r-m+1$的商模。因此正文改为$E$；上标$m$表示射影线性子空间的余维，下标$r-m+1$表示局部自由商模的秩，不混用二者。}
+这是由显然的函子同态
+\[
+P(G)\longrightarrow\operatorname{Grass}_{r-m+1}(E)
+\]
+得到的：对于$G$的每个可逆商模$G/G'$，取$E$的局部自由商模$E/G'$，其秩为$(r-m)+1$；在任意基变换之后也作同样的构造。）
+
+上述函子同态是单态；又因源在$S$上固有、靶在$S$上分离，所以它是闭浸入。\cmt{V-H-L003}{底本重复写“The above homomorphism of functors is a homomorphism”，但仅说是同态不足以作出闭浸入结论。由商$E\twoheadrightarrow E/G'$的核可恢复$G'\subset G$及商$G/G'$；任意基变换后仍如此，故此函子态射是单态。源固有、靶分离使该态射固有，固有单态为闭浸入。这是本处将第二个“homomorphism”订为“单态”的理由，并不增补后续定理。}
+
+更一般地，我们可能需要明确说明，如何将$G$的Grassmann概形，也就是$P(G)$的Grassmann概形（在函子的意义下），闭浸入到$E$的Grassmann概形，也就是$P(E)$的Grassmann概形中。所得态射的像（在函子的意义下）由$P$中具有所需维数、且包含$C$的线性子簇$L$组成。
+
+在我们所考察的情形，即维数如上指定的情形，将这个像记为$Q(C)$。把$P(G)$与$Q(C)$等同后，锥投影态射
+\[
+p_c:P-C\longrightarrow Q(C)\subset\operatorname{Grass}^{m}(P)
+\]
+无非是把$P-C$的每个截面对应到$P$中唯一一个同时包含$C$和该截面、且余维为$m$的线性子簇$L$。（当然，所谓包含一个截面，是指该截面通过$L$分解。）
+
+% RESTORED DIRECTLY FROM SOURCE, pages 54--55:
+现在，若给定态射$f:X\to P$，便可考虑复合态射
+\[
+X-f^{-1}(C)\longrightarrow P-C\longrightarrow Q(C).
+\]
+我们可将它称为$X$的相对于$f$、以$C$为中心的锥投影，记为$p_c^X$，或简记为$p_c$。须指出，这个态射一般并不定义在整个$X$上；更确切地说，它定义在整个$X$上，当且仅当$f^{-1}(C)=\varnothing$，也就是说，$f(X)$与投影中心$C$不相交。\cmt{V-H-L004}{本段至下文“参看第10节和第12节”原未进入已恢复的Dot分批正文，本次据底本第54页末至第55页逐段补译。底本起句“If not, we have an $f:X\to P$”的连接词有误，本句按随后明确给出的构造译为“现在，若给定”；同段的$f(x)$按所说态射定义域应为像集$f(X)$。原空集符号$\phi$按其意义统一为$\varnothing$。}
+
+我们将用前面各节中使用的构造，对这个态射给出另一种解释。为此，沿用别处已经引入的记号，考察
+\[
+\begin{tikzcd}[column sep=large]
+X & X^{(m)}_{Q(C)}
+   =X^{(m)}\times_{\operatorname{Grass}^{m}(P)}Q(C)
+   \arrow[l,"q"'] \arrow[d,"p"] \\
+  & Q(C).
+\end{tikzcd}
+\]
+另一方面，注意到$q$诱导同构
+\[
+q':q^{-1}\bigl(X-f^{-1}(C)\bigr)
+\xrightarrow{\ \sim\ }X-f^{-1}(C),
+\]
+而且立即可见，$p_c$正是$p'q'^{-1}$，其中$p'$表示$p$在
+$q^{-1}\bigl(X-f^{-1}(C)\bigr)$上的限制。因此，利用$q'$直接作上述等同后，我们可以说，$p_c$就是态射$p$在
+\[
+X-f^{-1}(C)\subset X^{(m)}_{Q(C)}
+\]
+上的限制。\cmt{V-H-L005}{底本图式把纤维积的乘号排成字母$X$，基底简写为$\operatorname{Grass}^{m}$；正文按所述基变换写成$\times_{\operatorname{Grass}^{m}(P)}$。本段末尾的环境空间印作$X(M)^{p_c}_{Q(C)}$，与本段唯一已定义的关联空间不合；由$q'$所给开集等同可确定其应为$X^{(m)}_{Q(C)}$，正文据此订正，不把原排式另立为对象。}
+
+因此，为方便起见，仍把上述态射记为$p_c^X$或$p_c$，并称之为$X$相对于$f:X\to P$、以$C$为中心的\emph{扩展锥投影}〔Mettons〕。\cmt{V-H-L006}{底本在此夹有“[(Mettons)]”，意为“姑且这样说／定名”；正文保留这一编写痕迹。这里“上述态射”指关联空间到$Q(C)$的$p$，不把扩展投影的定义域仍写成$X-f^{-1}(C)$。}
+这样，受限锥投影的性质就归结为扩展锥投影的性质；后者已在别处得到系统研究，或者应当已经得到研究\footnote{底本脚注67：“Ask A.G.”，即“询问A.G.”。}；这也是有意义的（参看第10节和第12节）。
+
+% SOURCE: unpacked/dot_batches/EGA第五卷_14一般中心_续译工程/EGA第五卷_14一般中心_校订续译.tex
+主要的问题是：若$S=\operatorname{Spec}(k)$，并取$C$为$\operatorname{Grass}^{m+1}(P)$中的一般中心，\cmt{V-H-L007}{底本在这里附“[illegible, ask AG]”，译为：［不可辨，询问AG］。这条编者批注不提供可恢复的数学条件，不能据此猜补。原式的射影空间小写$p$统一为本节$P$。}那么$X$的锥投影具有什么性质？这要求作基变换$k\to k(\eta)$；也就是说，此时$C$确实是$P_{k(\eta)}$中的线性子簇。\cmt{V-H-L008}{底本先写$k\to K(\eta)$，随后使用$k(\eta)$，这里统一为一般点$\eta$的剩余域$k(\eta)$。底本本句写“a linear subvariety of $X_{k(\eta)}$”；但中心由$\operatorname{Grass}^{m+1}(P)$参数化，须位于$P$的基变换中，并不要求包含于$X$。第56页紧接着明确写$C_\eta\subset P_{k(\eta)}$，故正文据此改为$P_{k(\eta)}$。}
+
+由已经重复过多次的标准论证，可以对上述Grassmann概形中某个非空开集的点所对应的锥投影，推出类似的性质；最后，若$k$是无限域，就可推出存在一个在$k$上定义的$C$，而当$m<r$时事实上有无穷多个这样的$C$。它们是$P$本身中的线性子簇，不必改变基域，并给出具有所讨论性质的锥投影。\cmt{V-H-L009}{底本写“since $k$ is infinite (if)”以及“a (in fact of an infinity of) $C$”。前者按其括注译为“若$k$是无限域”。后者须排除本节允许的$m=r$边界：此时中心为唯一的空线性子空间，参数Grassmann概形仅为一点，不存在无穷多个不同中心。$0\le m<r$时，该Grassmann概形维数$(m+1)(r-m)>0$，其标准仿射胞腔与任一非空开集相交为非空开集，在无限域上有无穷多个有理点，故正文补明这一范围。这里保留作者对“所讨论性质”的概括，不宣称每种性质都自动满足从一般点推广到开集的条件。}
+
+宜将（或将来应将）这类一般性说明，同第4节和第7节中同类的说明汇集在一起；这些说明我们已经或多或少地隐含使用过，例如在第13节中。
+
+此外，在这一联系下，也宜考察$X$上的一个层$F$的相对性质，并取它在$X^{(m)}_{Q(C)}$上的逆像$F^{(m)}_{Q(C)}$。在这里所述的具体情形中，还需要简化记号。我建议使用$X(C)$和$F(C)$，或者在不会混淆时，简记为$\widetilde X$和$\widetilde F$（注意：这里的$F$与本节开头的$F$不同）。\cmt{V-H-L010}{底本建议“$X(C)$ and $F(S)$”，但本句的对象是固定中心$C$所给关联空间及其上的逆像层，紧前均以$Q(C)$作下标，$S$则是既定基底而非这里变化的中心。因此正文统一为$F(C)$；底本$F(S)$原写法保留于此。这里的层$F$不与第54页定义中心$C=P(F)$的局部自由商模混同，原作者的警告完整保留。}
+
+% SOURCE: unpacked/dot_batches/EGA第五卷_14正则截面与爆破_续译工程/EGA第五卷_14正则截面与爆破_校订续译.tex
+粗略地说，假设$f$是一个浸入，那么一般锥投影的性质，会因假设$\dim X\geq m$还是$\dim X\leq m$而大不相同，另见$\dim X<m$。\cmt{V-H-L011}{底本跨页原句为“according as to whether we assume $\dim X\geq m$ or $\dim X\leq m$ see $\dim<m$”。两个范围在等号处交叠，“see”的确切连接关系亦不明。正文保留这些比较式，不擅将其中一个不等号改成严格不等号，也不猜补等维情形的分类。末个维数补写对象$X$，依据是同一句前两项。}
+以下考虑与$\operatorname{Grass}^{m+1}(P)$的一般点$\eta$对应的$C_\eta\subset P_{k(\eta)}$，而不再把所得结果逐一解释成关于“几乎所有点……”的说法。
+
+首先，我们已在5.3中指出（第12节对一般情形作了补述），$C$与$X$正则相交。更确切、也更一般地，对于$X$上的每个拟凝聚层$F$，在$X_{k(\eta)}$上定义中心逆像的那个秩为$m+1$的局部自由模的截面$\varphi(m+1)$，是相对于$F_{k(\eta)}$正则的；其零点子概形为$f_{k(\eta)}^{-1}(C_\eta)$。\cmt{V-H-L012}{底本写“the section $\varphi(m+1)$ ... over $X_{k(\eta)}$ whose scheme of zeros $\eta$ is $C$, is $F$-regular”。但该截面位于$X_{k(\eta)}$上，而$C_\eta$是$P_{k(\eta)}$中的中心，所以其零点对象应为中心的逆像；紧后爆破中心也明确使用$f^{-1}(C_\eta)$。正文据此订正，并将$F$的基变换写明。原文游离的“$\eta$”不另解释成一个零点子概形。记号$\varphi(m+1)$照存，不擅改为幂。对于任意拟凝聚层的正则性断言及所引5.3、12节的条件，尚未在本段译校独立逐项验证。}
+
+由10.2，例如可知，态射
+\[
+\widetilde X(C_\eta)\longrightarrow X_{k(\eta)}
+\]
+将$\widetilde X(C_\eta)$等同于沿
+\[
+f_{k(\eta)}^{-1}(C_\eta)
+=X_{k(\eta)}\times_{P_{k(\eta)}}C_\eta
+\]
+爆破$X_{k(\eta)}$所得到的预概形。\cmt{V-H-L013}{底本这里混用$\widetilde X(C_\eta)$与$X(C_\eta)$，按前文简化记号的建议，两者均指关联空间，本段译校统一排作$\widetilde X(C_\eta)$。原式“$X_P\,x\,C_\eta$”按纤维积整理，并补齐基变换。正文保存“由10.2”的原引用，不将这次记号整理说成已经重新证明爆破识别。}
+
+
+在$\dim f(X)\leq m$的情形，还有$f_{k(\eta)}^{-1}(C_\eta)=\varnothing$，因而
+\[
+\widetilde X(C_\eta)\xrightarrow{\ \sim\ }X_{k(\eta)}
+\]
+是同构（事实上，此时受限锥投影本来就定义在整个$X_{k(\eta)}$上）。\cmt{V-H-L014}{底本此处简写$f^{-1}(C)=\phi$及“over all of $X$”。因中心在一般点的剩余域上，正文补写基变换并将空集记为$\varnothing$；不声称一般中心本身已在原基域$k$上定义。}
+于是出现了态射
+\[
+p_c:\widetilde X(C_\eta)\longrightarrow Q(C_\eta)
+\]
+的纤维维数问题，并得到这一态射的平坦性［此断言待核］。我们得到：\cmt{V-H-L015}{底本写“and we find the flatness of this morphism. We find:”。此句是后续命题的引导，尚未在这里给出平坦性的精确假设或结论。正文保留原作者“得到平坦性”的断言并显式标待核，不把它当作本段译校已经验证的无条件平坦性定理。}
+
+% SOURCE: unpacked/dot_batches/EGA第五卷_14.1命题陈述_续译工程/EGA第五卷_14.1命题陈述_校订续译.tex
+\egas{14.1}{命题}
+假设$X$不可约；更一般地，假设对于$X$的每个不可约分支$X_i$，$X_i$在点$f(x_i)$处的纤维具有一个与$i$无关的维数$d$，其中$x_i$是$X_i$的一般点。例如，当$f:X\to P$拟有限时，这一条件成立，且$d=0$。则：\cmt{V-H-L016}{底本前提只写“has a dimension (independent of $i$)”，没有写出该维数的字母，而同句例子和(b)项均使用$d$；正文将这个共同维数明确记为$d$。这里是态射$X_i\to P$在其像的一般点$f(x_i)$处的纤维维数，不是自动假定所有点上纤维维数都相同。原文声称的“更一般地”是否足以推出下述全部结论，尚未独立验证；不能擅加等维、固有或其他假设使其成为另一个命题。}
+
+\noindent a) 若$\dim f(X)>m$，则
+\[
+p_c:X(C_\eta)\longrightarrow Q(C_\eta)
+\]
+的纤维维数都等于$\dim X-m$。\cmt{V-H-L017}{本项照译“the dimension of the fibers ... are all equal”。底本在本项没有额外写“非空纤维”，也未说明对可约且分支维数不同的情形如何应用共同的一般纤维维数条件。这些适用范围不能仅凭此陈述判定为已核实。本段译校保留$X(C_\eta)$的原记号，它与前文的$\widetilde X(C_\eta)$同指扩展锥投影的关联空间，不是原来的$X$。}
+
+\noindent b) 若$\dim X\leq m$，并且$X_i$在$P$上的非空纤维［原文缺词：???］维数为$d$，则$p_c$的纤维全都具有维数$d$［原文：???］，于是$p_c$是有限的，分别地，是拟有限的……$f:X\to P$是有限的。\cmt{V-H-L018}{底本完整可辨条款为：“If $\dim x\leq m$ and if the non-empty fibers of $X^i$ over $P$ are ??? of dim $d$ then the fibers of $p_c$ are all of dimension $d$ ??? so $p_c$ is finite resp. quasi-finite\ldots\ $f:X\to P$ is finite.” 正文仅将未定义的小写$x$整理为$X$、分支上标$X^i$整理为前提所用的$X_i$，保留两组问号及省略号。上文引导段使用的是$\dim f(X)\leq m$，故这里的$\dim x$也可能涉及漏去$f(\ )$，但本条证据不足，不据猜测改写为像维数。末尾有限性与拟有限性之间的条件对应已经残缺，不能把它读成在任意$d$下单由“纤维维数为$d$”就推出有限或拟有限，也不能恢复一个原文未明确给出的“当且仅当”。}
+
+% SOURCE: unpacked/dot_batches/EGA第五卷_14.1证明残文_续译工程/EGA第五卷_14.1证明残文_校订续译.tex
+\eproof\textbf{〔底本残文〕}
+在(a)的情形，我们已经看到（我希望如此），对于$\operatorname{Grass}^{m}(P)$的每个点$\xi$，$X^{(m)}_\xi$的维数至少为$\dim X-m$；特别地，当$\xi$给出$Q(C_\eta)$的一个点时，也是如此。\cmt{V-H-L019}{底本保留“I hope”，正文不删除这一编写核对语气。“每个点”的范围照译；此处并未重新核实原引用对空截面、非固有情形或一般可约情形的适用性，不能据本段认为这些问题已经解决。}
+
+对于反向的不等式，注意（我们置身于域$k'=k(\xi)$之上）：$C_{\eta,k'}$是$L_\xi$中的一个超平面；若［底本条件句残缺］，则中心逆像
+\[
+X_{k(\eta)}\times_{P_{k(\eta)}}C_\eta
+\]
+的维数将会（是）至少为$\dim X-m$。\cmt{V-H-L020}{底本可辨原句为“since $C_{\eta k'}L_\xi$ is a hyperplane of $L$ if the dimension of $X^{(m)}=X_P\,x\,C_\eta$ will be (is) $\geq\dim X-m$”。其中$C_{\eta,k'}\subset L_\xi$由$\xi\in Q(C_\eta)$和第54页的定义确定，故正文明确写出包含关系；但“if the dimension of”后的条件或连接已经残缺，不能擅补为某个严格不等式。原文把中心截面标为$X^{(m)}$，与中心余维$m+1$及本段后式不相容，正文直接写出它明确给出的中心逆像纤维积，而不把它误作$X^{(m)}_\xi$。}
+
+（因为基变换$k(\eta)\to k'$把后一个预概形变为
+\[
+\bigl(X_P\times L_\xi\times\xi L(c_{\eta k'})\bigr)
+\quad\text{［底本排式残缺］}.
+\]
+）另一方面，按第2节（在第10节中复查过），却有\cmt{V-H-L021}{括号中的原排式为“$(X_P\times L_\xi\times\xi L(c_{\eta k'}))$”，下标及符号关系不全，故正文按可辨符号保留，不擅恢复成一个声称来自底本的完整纤维积公式。其后连接语为“or since we have in the contrary case”，译作“另一方面……却有”，保留它与前一维数估计相对照的结构，但不宣称残缺的反证链已补全。末式$X^{(m+1)}$在这里指一般中心所给截面，原文的简写照存；其维数等式所需条件亦仍待核。}
+\[
+\dim X^{(m+1)}=\dim X-m-1.
+\]
+
+
+
+(b)的情形用类似的方法处理：若
+\[
+\dim(X\times_P L)\geq d+1,
+\]
+或者等价地，$f_{k'}(X_{k'})\to L$的维数至少为$1$，那么由与上述相同的论证，将有
+\[
+X^{(m+1)}\ne\varnothing,
+\]
+这与我们在14.1之前指出的事实矛盾。\cmt{V-H-L022}{底本写“$\dim X_P\times L\geq d+1$, or what is the same $f_{k'}(X_{k'})\to L$ of dim $\geq1$”。正文只将第一式排成纤维积，第二个带箭头的维数措辞照存；它究竟指像维数还是另一个相对维数，原句不完整，不擅将$f_{k'}(X_{k'})$换成某个未写出的截面像。其“等价”依赖于前提中纤维维数条件，而14.1(b)本身有缺文；由正维像推出与超平面相交还涉及相应的几何条件。本段译校不据此宣布(b)的有限性或拟有限性结论已经证明。空集符号由原$\phi$统一为$\varnothing$。}
+
+% SOURCE: unpacked/dot_batches/EGA第五卷_14.2有限投影_续译工程/EGA第五卷_14.2有限投影_校订续译.tex
+\egas{14.2}{推论}
+假设$X$的维数为$m$，且$f:X\to P$是有限的，分别地，是拟有限的。则态射
+\[
+p_{C_\eta}:X_{k(\eta)}\longrightarrow Q(C_\eta)
+\]
+是有限满射，分别地，是拟有限优势态射。\cmt{V-H-L023}{底本第56页写“and that $:X\to P$ is finite”，冒号前漏去态射名称；按本节固定态射补为$f$。跨页的“respectively quasi-finite”与结论“finite surjective (resp. quasi-finite dominant)”分别对应，不能把两种结论合并成拟有限时也满射。底本的$P_{C_\eta}$、$p_{C_\eta}$统一为小写$p_{C_\eta}$。“优势”表示像稠密，不等于满射。}
+
+事实上，这个态射是拟有限的；又因为
+\[
+\dim X_{k(\eta)}=\dim Q(C_\eta),
+\]
+所以它是优势态射。若$f$是有限的，则$p_{C_\eta}$也是有限的，因而固有；既然它是优势的，便是满射。\cmt{V-H-L024}{以上为底本完整的证明文字，其开头的拟有限性和“若$f$有限则$p_{C_\eta}$有限”均未在本段展开论证。目标$Q(C_\eta)$由第54页识别为$m$维射影空间；“固有且优势，故满射”使用固有态射像闭这一事实。这里并未重新审定前述拟有限性、有限性及等维推论所需的全部条件，尤其不据本推论的简短引用消除14.1(b)陈述和证明的缺文。}
+
+% SOURCE: unpacked/dot_batches/EGA第五卷_14.3平坦性_续译工程/EGA第五卷_14.3平坦性_校订续译.tex
+\egas{14.3}{推论}
+在14.1(a)的条件下，若$X$是Cohen--Macaulay的，则态射
+\[
+p_C:X(C_\eta)\longrightarrow Q(C_\eta)
+\]
+是Cohen--Macaulay态射，因而特别是平坦的。\cmt{V-H-L025}{底本拼作“Cohen-Macauley”，正文统一为通常的“Cohen--Macaulay”，下文缩写CM保持。原文在此依赖14.1(a)的条件，译文不额外添加或删去前提，也不认为14.1尚待核的适用范围已因此解决。}
+
+关于证明，参看上文第21页第5项之前的注（译者：订正此处）；考虑到对于$\xi\in Q(C_\eta)$，$C^{(m)}_\xi$是$F_{k(\eta)}$-正则的，这条注给出了一个更强的结果（包含14.3在内，???）。\cmt{V-H-L026}{底本引用原文为“on page 21 before 5. (Tr - correct this)”，其编号或页码尚不能由该句唯一确定，故正文保留订正提醒，不虚构一个确定的交叉引用。底本写“$C^{(m)}_\xi$ for $\xi\in\varphi(\eta)$ are $F_{k(\eta)}$ regular”。这里$\xi$为锥投影目标中的点，按本节定义将目标写作$Q(C_\eta)$；但$C^{(m)}_\xi$究竟表示哪一截面或正则序列，本段未清楚定义，故照存，不擅改成$X^{(m)}_\xi$或某个新构造。前面的三问号也属原文，未消除。}
+
+这个推论必须修改。不过，为简单起见，可以假设$f$拟有限：若$F$是$X$上的一个Cohen--Macaulay模，并且对于$\operatorname{Supp}F$的每个不可约分支$Z$都有$\dim Z\geq m$，那么$\widetilde F(C_\eta)$相对于$Q(C_\eta)$是Cohen--Macaulay的，因而特别是平坦的。\cmt{V-H-L027}{底本说“This corollary must be modified”，正文保留其修订状态，不把随后层版本标作已经完成的正式修订。原目标写$\varphi(C_\eta)$，据前面投影的目标统一为$Q(C_\eta)$；$\widetilde F(C_\eta)$是前述关联空间上的逆像层，不是直接位于$X$上的新层。其相对CM性及平坦性的证明在此未展开，本段译校未独立验证。}
+
+
+注意，要得到同样的结论，即$p_C$平坦，不能把$X$上的CM假设仅仅换成一个维数假设。例如，假设$f$是浸入，且$X$不可约、维数为$m$。于是$p_C$拟有限；又因为$X_{k(\eta)}$和$Q(C_\eta)$不可约且维数相同，而后者正则，所以只有当$X_{k(\eta)}$为CM时，$p_C$才可能平坦。\cmt{V-H-L028}{底本写“$f$ is irreducible of dimension $m$”，但不可约性和这里的维数是源概形的性质，下一句也明确使用$X_{k(\eta)}$不可约，故正文改为$X$。原目标仍写$\varphi(C_\eta)$，统一为$Q(C_\eta)$。本段是原文对CM假设必要性的解释，不是一个已具体给出的非CM反例；正文不另添反例，也不将必要条件误说成无条件充分性。}
+
+% SOURCE: unpacked/dot_batches/EGA第五卷_锥投影微分性质导言_续译工程/EGA第五卷_锥投影微分性质导言_校订续译.tex
+锥投影的微分性质更为微妙，尤其是在$X$在$k$上光滑且$f:X\to P$非分歧的情形；第12节研究的正是这种情形。回顾一下：在$Q(C)$的某个余维为1的子集$Z$之外，定义在$\widetilde X(C_\eta)$上的态射$p_{C_\eta}$是光滑的。\cmt{V-H-L029}{底本此处两次写目标为$Q(C)$，同时把态射及源写为$p_{C_\eta}$、$\widetilde X(C_\eta)$。正文保留这一记号切换，不未经说明把一般中心与泛中心的对象全部等同；本段应结合前文关于泛中心的约定阅读。}
+而第12节所概述的更细致分析表明（若我们尚未作出这一分析，则将会表明）：如果$X$的各分支的维数均$\geq m$，那么在$Q(C)$的某个余维$\geq2$的子集$Z'\subset Z$之外，纤维
+\[
+p_C^{-1}(\xi)=X^{(m)}_\xi
+\]
+至多只能具有几何意义下的普通奇点；而且，若$f$是浸入且$X$几何不可约，则这样的点至多只有一个，并且该点必为$k(\xi)$上的有理点。这些断言至少在$k$的特征为0时成立；或者，如第9节那样，以$\varphi_n f$（$n\geq2$）代替$f$，在此条件下也成立。\cmt{V-H-L030}{“shows or will show if we do not do it”是底本自身的未完成语气，正文没有把它改写为已证明的结论。“普通奇点”对应ordinary singular points；本段译校不添加原文未给出的局部标准方程，也不把上述替换条件解释为无条件的任意特征定理。}
+
+也应当给出$\dim X\leq m$、从而$p_{C_\eta}$定义在$X_{k(\eta)}$上时，$p_{C_\eta}$的微分性质。我这里只指出下列性质。证明应该是容易的，留给Dieudonné（或Blass）。[Tr]\cmt{V-H-L031}{底本这一段将投影记作大写$P_{C_\eta}$；与相邻段落及下一命题表示同一态射的小写$p_{C_\eta}$统一。原文的“[Tr]”照存；其证明委托语属于底本内容，并非本译文声称已经完成证明。}
+
+% SOURCE: unpacked/dot_batches/EGA第五卷_命题14.4_续译工程/EGA第五卷_命题14.4_校订续译.tex
+\egas{14.4}{命题}
+设$f:X\to P$非分歧，且$\dim X\leq m$。设$T$是$X$的一个有限子概形。则：
+
+\noindent(a) 若$f$是浸入，则$p_C$在$T_{k(\eta)}$上的限制是根态射，即“几何单射”。\cmt{V-H-L032}{底本用radical，并立即释为“geometrically injective”。这里指通常的radicial性质，即普遍单射，不是指根理想；“有限子概形”沿用底本finite subscheme的表述。}
+若再设$Y$为$X$的一个维数$\leq m-1$的闭子集，原稿在此所列的空交断言按所印假设不成立，译校暂不将这一条款作为可用结论。\cmt{V-H-L033}{底本在这里写“we have”，并断言
+\[
+p_{C_\eta}^{-1}\bigl(p_{C_\eta}(Y_{k(\eta)})\bigr)
+\cap T_{k(\eta)}=\varnothing.
+\]
+原式以“$\phi$ = empty set”表示空集。只要$Y\cap|T|\ne\varnothing$，基变换后的交点就属于所写交集，故所列前提不足。例如取$k$为域、$m=1$、$X=\mathbb A^1_k\hookrightarrow\mathbb P^2_k$为一条直线中的标准仿射开集，$T=Y=\{0\}$，则$f$为浸入、$\dim X\leq m$、$\dim Y\leq m-1$，但交集仍含$T_{k(\eta)}$。至少需要$Y\cap|T|=\varnothing$；这只是必要条件，不将它冒充原稿缺失假设的完整恢复。原条款保存在本注及核查报告中。}
+
+\noindent(b) 若$X$在$T$的各点光滑，则$p_{C_\eta}$在$T_{k(\eta)}$的所有点非分歧。
+
+\noindent[字迹不清，询问A.G.]\cmt{V-H-L034}{底本此处原样标注“[illegible, ask A.G.]”，下一行单列下式。它可能涉及更大的非分歧点集，但缺失的连接语无法确定，故不擅补成“在整个逆像上非分歧”，也不删除这个公式。前一完整句和残缺部分分别保留。本命题在此没有给出证明。}
+\[
+p_{C_\eta}^{-1}p_{C_\eta}(T_{k(\eta)}).
+\]
+
+% SOURCE: unpacked/dot_batches/EGA第五卷_命题14.5与推论14.6_续译工程/EGA第五卷_命题14.5与推论14.6_校订续译.tex
+\egas{14.5}{命题}
+设$\dim X\leq m-1$，$f:X\to P$为浸入，并且$X$在$k$上可分。\cmt{V-H-L035}{底本为“$X$ separable over $k$”。正文保留“可分”这一原有术语，不把它擅改为“光滑”或“几何不可约”，也不额外添加这些更强的假设。}
+设$Y_\eta$为$X_{k(\eta)}$在$Q(C_\eta)$中的概形论像。则诱导态射
+\[
+p_{C_\eta}:X_{k(\eta)}\longrightarrow Y_\eta
+\]
+是双有理的；而且，对$X_{k(\eta)}$中位于$X$的某个闭点之上的每一点$x$，$p_{C_\eta}$在$x$处，以及在
+\[
+p_{C_\eta}^{-1}\bigl(p_{C_\eta}(x)\bigr)
+\]
+的各点处，都是平展的。\cmt{V-H-L036}{底本最后一句写“$p_{c_\eta}$ is étale at $x$ and in at the points of $p_{C_\eta}^{-1}p_{C_\eta}(x)$”。正文统一中心字母为$C$，并将“and in at”这一重复介词译为“以及在……处”。这里平展的是目标为概形论像$Y_\eta$的诱导态射，不能误读成向整个$Q(C_\eta)$的态射平展。“位于闭点之上”也不改成“$X_{k(\eta)}$的任意闭点”。}
+
+注意以下推论：
+
+\egas{14.6}{推论}
+设$X$为无限域$k$上的一个不可约且可分的$n$维射影代数概形。则存在一个从$X$到$\mathbb P^{n+1}_k$中某个超曲面的满射双有理态射。\cmt{V-H-L037}{底本原文为“a birational morphism of $X$ onto a hypersurface in $P^{n+1}$”。“onto”译作满射；$\mathbb P^{n+1}_k$将底域明确写出，没有把双有理态射加强成同构或闭浸入。原文在此仅给出推论陈述，未展开从泛中心到$k$上中心的专门化论证，本段译校不声称已经补全。}
+
+% SOURCE: unpacked/dot_batches/EGA第五卷_锥投影性质辨析_续译工程/EGA第五卷_锥投影性质辨析_校订续译.tex
+即使$X$是$P$中一个光滑、几何不可约、维数为$m-1=n$的闭子概形，也不要认为锥投影$(p_C)$（？字迹不清）必定是浸入。事实上，若$k$无限，这就意味着存在一个在$k$上有理的中心$C$，具有同样的性质；从而$X$同构于$\mathbb P^{n+1}$中的一个非奇异超曲面。但即使在$n=1$时（即$X$为代数闭域上的光滑连通射影代数曲线），也容易构造不能嵌入$\mathbb P^2$的$X$的例子。\cmt{V-H-L038}{底本把射影空间分别写作$p$、$p^2$，正文统一为$P$及$\mathbb P^2$；把$(P_c)$统一为$(p_C)$，但其后“(? Illegible)”照译保留。括注“ne peat s’immerge”随英语“cannot be embedded”译出，不将原文未给出的具体曲线例子另行插入。}
+
+同样，对于14.4，不要把其中的陈述与下列一般不成立的断言混为一谈：$p_C$本身是单态射（前面的反例，若$X$光滑且维数为$m$），或者$p_C$应当非分歧。\cmt{V-H-L039}{括号内底本写“preceding counterexample if $X$ is smooth if dimension $m$”。前面曲线及超曲面讨论使用的是$m-1=n$；这里的$m$与其衔接有疑点。正文保留原维数，不擅改为$m-1$，也不据此宣称已有一个完全写明的反例。}
+关于后一项，为使自己确信这一点，取$X$为一个光滑、不可约、维数为$m$的闭子概形（在代数闭域$k$上，？字迹不清）。若有一个非分歧态射
+\[
+X\longrightarrow Q\simeq\mathbb P^m,
+\]
+则由维数的理由，它将是平展的；但可以证明（见第VIII章），这意味着
+\[
+X\xrightarrow{\sim}\mathbb P^m
+\]
+（因为$\mathbb P^m$是单连通的）。\cmt{V-H-L040}{原文“over $k$ algebraically closed ?illegible?”的缺文提示照存。本段的$X$承接为射影空间的闭子概形；若脱离这一真性背景，仅凭“平展”和“单连通”不能直接得出同构。正文转述原论证，没有把它推广到任意平展态射；第VIII章的引用亦按原文保留，未补造该章证明。}
+
+
+14.4的直观几何意义是：$p_{C_\eta}$的分歧集在$k$上是“可变的”；更确切地说，当$\xi$在$\operatorname{Grass}^{m+1}(\bar k)$的一个开集中变化时，$p_{C_\xi}$的分歧集在$X(\bar k)$中变化，并且没有任何“固定点”……\cmt{V-H-L041}{底本记号为“$p_{c\xi}$”及“$\operatorname{Grass}^{m+1}(\bar k)$”。前者按本节中心$C_\xi$的记法规范为$p_{C_\xi}$；后者照存，不擅补一个未明写的环境空间。这是原文的直观解释，不把它读作完整的分歧集构造或新的严格等价命题。}
+当然，为了在本节中说明从泛点$\eta$到$\operatorname{Grass}^{m+1}(P)$的邻近点的过渡是成立的，并且在需要时重新采用7.1的一般考虑，我们必须考察下列图式：\cmt{V-H-L042}{底本第58页图式左下角印为$X$。第59页紧接着明确说明作基变换$T\to S$，并在对应图式左下写$T$、左上写$X_T$；故此处基变换前的左下应为$S$，左竖箭头是$X$的结构态射。本次整合据该跨页证据订正，原印$X$保留在本注中。}
+\[
+\begin{tikzcd}
+X \arrow[d] & \widetilde X(C) \arrow[l] \arrow[d] \\
+S & Q(C) \arrow[l]
+\end{tikzcd}
+\]
+
+% SOURCE: unpacked/dot_batches/EGA第五卷_锥投影普遍图式_续译工程/EGA第五卷_锥投影普遍图式_校订续译.tex
+这些图式是利用各个$C\in\operatorname{Grass}^{m+1}(P)(S)$得到的；更一般地，还要考虑作基变换$T\to S$之后，由$\operatorname{Grass}^{m+1}(P)$的$T$值点$\xi$得到的图式：\cmt{V-H-L043}{底本首句写“$C\in\operatorname{Grass}^{m+1}(S)$”，随后说“for the points $\xi\in\operatorname{Grass}^{m+1}(P)$”。根据紧随的$\xi:T\to\operatorname{Grass}^{m+1}(P)$，正文明确写成相对Grassmann函子的$S$值点及$T$值点，避免把$T$值点误读成拓扑点。上一页原始相对图式的左下已据此订为$S$，其左上仍为$X$，左竖箭头是结构态射；原误印及订正依据见前一译校注。}
+\[
+\begin{tikzcd}
+X_T \arrow[d] & \widetilde X(C_\xi)=X_T(C_\xi) \arrow[l] \arrow[d] \\
+T & Q(C_\xi) \arrow[l]
+\end{tikzcd}
+\]
+它们由下面的普遍图式经基变换
+\[
+\xi:T\longrightarrow G,\qquad G=\operatorname{Grass}^{m+1}(P)
+\]
+导出。\cmt{V-H-L044}{右上角等式是底本原有的记号，第二项$X_T(C_\xi)$原文没有波浪号，正文照存；这里不另外定义一个不同的对象。}普遍图式对应于$\operatorname{Grass}^{m+1}(P)$的典范$G$值点：\cmt{V-H-L045}{底本写“$\xi:T\to\operatorname{Grass}^{m+1}J(P)=T$”，并说“the canonical point of $\operatorname{Grass}^{m+1}$ in $T$”。其中多出的$J$无说明，且$T$同时用于试验概形和普遍参数空间。正文删去无所指的$J$，将普遍参数空间改记$G$；以下相应将普遍图式的$X_T,P_T$和底空间$T$写成$X_G,P_G,G$。这只是消除记号冲突，不是给任意$T$强加等于Grassmann概形的条件。}
+\[
+\begin{tikzcd}
+X_G \arrow[d] & \widetilde X(C) \arrow[l] \arrow[d] \\
+G & Q(C) \arrow[l]
+\end{tikzcd}
+\]
+
+
+这里$C$是$P_G$的典范线性子簇。于是，上述态射
+\[
+\widetilde X(C_\eta)\longrightarrow Q(C_\eta)
+\]
+正是后一图式中$G$态射
+\[
+\widetilde X(C)\longrightarrow Q(C)
+\]
+在泛纤维上诱导的态射；而泛纤维态射所具有的每一个可构造性质，都蕴含邻近纤维具有相同性质。\cmt{V-H-L046}{底本此处仍用$T$表示普遍底空间，正文按前述约定改为$G$。“constructible property”的断言照译；它必须在相应性质的成立点集可构造等适用前提下理解，不能读作任意性质都从泛纤维自动传到邻近纤维。本段没有给出这些前提的逐项证明，本段译校亦未补造。}
+从记号的角度看，应当把$Q$看作（甚至一开始就把它引入为）自然函子态射
+\[
+\operatorname{Grass}^{m+1}(P)
+\longrightarrow
+\text{$\operatorname{Grass}^{m}(P)$的子概形}
+\]
+的名称。\cmt{V-H-L047}{底本目标写作“Subschemes of $\operatorname{Grass}^{m}(P)$”。这里按其函子语言直译，不擅自改成某个固定Hilbert概形，也不添加底本未列的平坦性或Hilbert多项式条件。}
+
+\egasection{§15\quad 前述若干结果的公理化}
+
+% SOURCE: unpacked/dot_batches/EGA第五卷_第15节公理化导言_续译工程/EGA第五卷_第15节公理化导言_校订续译.tex
+我总的看法是，第2至第8节的结果大多在比射影空间中的超平面族（或给定次数的超曲面族）更一般的条件下仍然成立。采用公理化的观点似乎是合适的。\cmt{V-H-L048}{底本首句有“tht”等拼写及句法缺陷，正文按其可辨意义译出。“大多”保留“mostly”的限定，不把第2至第8节的全部结果无条件推广。}
+我目前还不十分确定，能否在这个意义上推广Bertini--Zariski（从而推广第4节和第6节的结果）；我已经写信给这方面的权威（译者：有能力的人），即Serre和Zariski，询问他们是否知道这样的推广。不过，我的确有这样的印象：上述那类简单的微分性质的假设，应当足以推出Bertini--Zariski。如果这些专家（有能力的人）不能给我们满意的答复，我们就应当设法用自己的办法把这件事弄清楚。\cmt{V-H-L049}{底本的“(competent people Tr)”以及“(experts) competent people”作为编辑痕迹译出。“我”指原作者；写信及请教的叙述不是本译者已实施的行动。原文“not quite sure”及“impression”均保留，不据此宣称Bertini--Zariski推广已建立。}
+我们从一个由有限表现态射组成的交换图式出发：\cmt{V-H-L050}{底本图式上方两个对象都印为$P$。紧接第60页说明其中一个为射影纤维空间、另一个为关联预概形，并讨论它到$P\times_S G$的态射。故正文保留左上$P$，将右上关联预概形记作$\mathcal P$，以免误读为同一对象的自映射。这里仍只是交换图式，没有把它擅自加强成笛卡尔图式。}
+\[
+\begin{tikzcd}
+P \arrow[d] & \mathcal P \arrow[l] \arrow[d] \\
+S & G \arrow[l]
+\end{tikzcd}
+\]
+
+% SOURCE: unpacked/dot_batches/EGA第五卷_参数族与基变换_续译工程/EGA第五卷_参数族与基变换_校订续译.tex
+（在主要应用中，$P$是射影纤维空间，$G$是由它导出的Grassmann空间〔“grassmannienne”是形容词！〕\footnote{底本脚注68：可能是Grassmann纤维空间。[原英译者注]}，$\mathcal P$是关联预概形。在最重要的情形中，相应态射
+\[
+\mathcal P\longrightarrow P\times_S G
+\]
+应当是闭浸入；我们把$G$看作$P$在$S$上的各纤维中的一族闭子预概形的参数概形。更确切地说，若$\xi\in G$，则$\mathcal P_\xi$是$P_s\times_{k(s)}k(\xi)$的闭子预概形，其中$s$是$\xi$在$S$中的像。此外，对于这里的大多数陈述，我们无疑取$S=\operatorname{Spec}(k)$。）\cmt{V-H-L051}{底本写“$P\to P_S\times G$”，正文依上一页交换图式规范为$\mathcal P\to P\times_S G$。底本“$s$ is the point of $S$ over $\xi$”把方向倒置，按结构态射$G\to S$改为$s$是$\xi$的像。$P_s,k(\xi)$明确写为剩余域扩张后的纤维，不把$\mathcal P_\xi$直接当作$P_s$上的闭子概形。}
+在一般情形中，仍可把$G$看作$P$在$S$上的各纤维之上的一族预概形的参数概形，$\xi$对应于$P_s\times_{k(s)}k(\xi)$之上的$\mathcal P_\xi$。当然，不必把$\xi$取为$G$的一个（绝对）点，也可以取它为一个以$S$预概形$T$为值的点。于是得到
+\[
+\mathcal P_\xi\longrightarrow P_T
+\]
+这一$T$态射；在上述特殊情形中，它是闭浸入。\cmt{V-H-L052}{底本此处目标写作$B_T$，而本段及交换图式没有引入$B$。由$\xi:T\to G$拉回$\mathcal P\to P\times_S G$，其目标是$P_T$，故正文订正为$P_T$并保留原写法于此。这里$T$值点不要求$T$为一个域的谱。}
+
+
+若$f:X\to P$是态射，令
+\[
+\mathcal X=X\times_P\mathcal P,
+\]
+就得到与前面的方形同类型的图式：\cmt{V-H-L053}{底本写“we put $X=X_P\times P$”，图式上方两个对象也都印作$X$。依沿$f$作基变换的构造，正文用$\mathcal X$表示新的纤维积，并规范下标位置；原来的$X$保持不变。此处所画方形仅断言交换，不另加笛卡尔性。}
+\[
+\begin{tikzcd}
+X \arrow[d] & \mathcal X \arrow[l] \arrow[d] \\
+S & G \arrow[l]
+\end{tikzcd}
+\]
+因此，第2至第8节研究的所有问题，在我们刚刚陈述的一般背景下仍有意义；并且有充分理由去明确那些保证上述各节结论成立的公理化条件。\footnote{底本脚注69：“Fr dégager + unravel, make explicit ?? [Tr]”，即法语dégager，疏解、明确表述？？[原英译者注]。正文中的“明确”据此恢复底本“there is a good reason to”之后缺失的动词含义，保留词义选择的问号。}\cmt{V-H-L054}{原句有“It is therefore evident”这一概括用语；译文写“因此”承接前面的构造，不把该句当作全部推广结论的证明。作者在这里提出的是寻找充分公理条件的任务，条件本身尚待下文列出。}
+
+% SOURCE: unpacked/dot_batches/EGA第五卷_平坦性假设与非空性公理_续译工程/EGA第五卷_平坦性假设与非空性公理_校订续译.tex
+我们将假设$P$和$G$在$S$上平坦，且$G$的纤维几何不可约、维数为$N$（以便能够考虑泛点！）；假设态射$\mathcal P\to P$光滑，其纤维几何不可约、维数为$N-m$。于是态射$\mathcal X\to X$也具有同样的性质。\cmt{V-H-L055}{沿用$\mathcal X=X\times_P\mathcal P$的记号；底本将这两个态射分别印作$P\to P$和$X\to X$。正文按其基变换关系区别源与目标，不改动光滑性、几何不可约性及维数假设。}
+所有提到的性质〔字迹不清，且内容较长〕\footnote{底本脚注70：后面的字迹不清。}在$S$上的基变换下都是稳定的（保持不变），特别可以应用于纤维。\cmt{V-H-L056}{底本括注为“[(illegible and long)]”。缺失部分不补写；原文对基变换稳定性的概括照译，不把未能辨出的内容视作已经逐项核验。}
+
+首先设$S=\operatorname{Spec}(k)$。令$Z$为$X$的一个$d$维闭子集；于是它在$\mathcal X$中的逆像$\mathcal Z$是一个维数为
+\[
+d+(N-m)=N+d-m
+\]
+的闭子集。\cmt{V-H-L057}{底本把闭子集及其逆像都印为$Z$，正文以$\mathcal Z$区别逆像。原文直接使用这一维数等式；若允许$\mathcal P\to P$有空纤维，还须注意逆像非空及所涉及分支是否遇到其像，不能仅凭“光滑”无条件宣称任意闭集的逆像具有该维数。这里保留原论证并标明适用性待核。}
+若$d<m$，则$\mathcal Z$的维数小于$N$，所以$\mathcal Z\to G$不可能占优。因此，若$\eta$是$G$的泛点，就有$\mathcal Z_\eta=\varnothing$。
+
+
+事实上，这个推理还表明（将$Z$换成$\overline{f(Z)}$）：若$\dim f(Z)<m$，则$\mathcal Z_\eta=\varnothing$。\cmt{V-H-L058}{底本括号内印有$f(Z)$的上划线，正文保留闭包。紧接的条件原为“$\dim f(X)<m$”；这本身是更强的充分条件，但与“将$Z$换成$\overline{f(Z)}$”及下句所讨论的$\dim f(Z)$不对应，故按本段论证对象改为$\dim f(Z)<m$，并在此保留原写法。仍沿用底本对像维数的记法，不引入新的证明。}
+我们希望对图式$(D)$提出一个条件，以保证当$\dim f(Z)\geq m$时，$\mathcal Z_\eta\ne\varnothing$。看来，在这里应当把下述要求作为一条基本公理（在2.2的情形中，它会由一个相当特殊的整体论证得出）：对$P$的每个维数为$m$的闭不可约子集$Z$，都有\cmt{V-H-L059}{底本末句实际印作“$Z_\eta=\phi$”。但紧邻前句明确要求$\dim f(Z)\geq m$时的非空性，而第61页又据此讨论占优性；故此处等号为与段意相反的误写，正文订为$\ne\varnothing$。本句$Z$改取为$P$中的闭集，$\mathcal Z$相应指其在$\mathcal P$中的逆像。这里是作者建议加入的公理，不是已由前述光滑、平坦假设推出的定理；从维数恰为$m$的闭集推广到其他情形的细节尚未在本段译校补证。}
+\[
+\mathcal Z_\eta\ne\varnothing.
+\]
+
+% SOURCE: unpacked/dot_batches/EGA第五卷_泛截面光滑性条件_续译工程/EGA第五卷_泛截面光滑性条件_校订续译.tex
+再取$X$的闭子集$Z$，使得$\dim f(Z)\geq m$。我们看到$\mathcal Z\to G$占优，因而$\mathcal Z_\eta$的维数为\cmt{V-H-L060}{底本写“$Z_\eta\to G$ is dominant”，继而说“$Z$ is of dimension equal to $\dim Z-\dim G=\dim Z-m$”。按上页$\dim\mathcal Z=N+\dim Z-m$及$\dim G=N$，占优的应是总空间$\mathcal Z\to G$，维数等式左边应指泛纤维$\mathcal Z_\eta$。正文据此区别总空间、原闭集和泛纤维。闭集可能有多个分支，哪些分支占优以及前文逆像维数等式的适用性仍须核对，不据此宣称任意闭集的全部分支均满足同一纯维数结论。}
+\[
+\dim\mathcal Z-\dim G=\dim Z-m.
+\]
+这些性质使我们能够在当前背景下展开与2.1和2.11相应的结果。还有一个关于〔字迹不清〕的条件（保证2.12成立，即假设$f:X\to P$非分歧时，若$X$光滑，则相应截面也光滑）。\cmt{V-H-L061}{底本括注写“if $X$ is smooth then $X$ is also such”，两个对象没有区别。结合本段最终结论$\mathcal X_\eta$光滑，这里译作“相应截面”；不把它解释成整个族$\mathcal X\to G$处处光滑，亦不补出不可辨处的条件。}
+
+现在假设$P$在$k$上光滑，$\mathcal P\to P\times_kG$拟有限，并满足以下条件（这里假设$k$代数闭）。对于每个$x\in P(k)$和切空间$T_x(P)$的每个维数$n\geq m$的向量子空间$V$，考虑由如下$\xi\in G(k)$组成的集合$E(x,V)$：$\mathcal P_\xi$中存在位于$x$之上的点$z$，它不满足以下整组条件：\cmt{V-H-L062}{底本先说“$P$ has a point over $x$”，下文才出现$z$和$P_\xi$；切空间源又印作$T_z(P)$。正文依所指定的纤维态射统一为$z\in\mathcal P_\xi$及$T_z(\mathcal P_\xi)$。“不满足以下整组条件”表示三项不全成立，不是要求三项全部失败。}
+\begin{itemize}
+\item $\mathcal P_\xi$在$z$处光滑；
+\item $\mathcal P_\xi\to P$在$z$处诱导的切映射
+\[
+T_z(\mathcal P_\xi)\longrightarrow T_x(P)
+\]
+是单射（即$\mathcal P_\xi\to P$在$z$处非分歧）；
+\item 该切映射的像与$V$“横截”，即二者之和为$T_x(P)$。
+\end{itemize}
+
+
+
+所要求的条件是：$E(x,V)$的维数$\leq N-n-1$（我们知道它是$G$中一个良定义的可构造集在$G(k)$上的迹，???）。\cmt{V-H-L063}{底本的三个问号原样保留。正文没有据此宣布可构造性或坏参数集的维数估计已经证明；该维数上界是本段要求加入的条件。}
+借助〔Moyennant〕这个条件，应用雅可比判据并作维数计算，可知由下列点构成的闭子集$E$的维数不超过
+\[
+n+(N-n-1)=N-1:
+\]
+这些点是$\mathcal X$中使$\mathcal X\to G$不光滑的点，或其在$\mathcal P$中的像使$\mathcal P\to G$不光滑的点，或其像使原文所写“$P\to P$”分歧的点（这里$X$处处光滑、维数为$n$）。\cmt{V-H-L064}{底本将$\mathcal X$与$X$以及$\mathcal P$与$P$均印作同一字母，并将诱导映射$\mathcal X\to\mathcal P$仍记作$f$，正文明确了像所在的空间。但最后“$P\to P$ is ramified”究竟指总空间态射还是各纤维态射不能直接确定：前面假设的是$\mathcal P\to P$光滑，而本段切映射条件涉及$\mathcal P_\xi\to P$非分歧。故此处保留原写法并标歧义，不将它默改为一个已验证的坏点集定义。该集合的闭性和维数估计尚待连同缺文核对。}
+因此$\dim E<N=\dim G$，从而$E_\eta=\varnothing$；特别地，$\mathcal X_\eta$在$k(\eta)$上光滑，第5节的论述在当前背景下也有效。\cmt{V-H-L065}{底本“$N=\dim$”缺少对象，按前文$\dim G=N$补为$N=\dim G$。这段是在所设条件下的原论证概要，未展开雅可比判据和维数计数；上述歧义不因翻译完成而消除。}
+
+% SOURCE: unpacked/dot_batches/EGA第五卷_第15节推广计划结语_续译工程/EGA第五卷_第15节推广计划结语_校订续译.tex
+第4节中从泛截面到一般截面的过渡，以及第5节的论述，在当前背景下也有效（不过，到这里，它们已成为同义反复，或只是对第8、9、12节的重新表述；我们对于以这种形式陈述它们仍有所犹豫）。\cmt{V-H-L066}{底本有“evidently valid”，此处按原句结论译为“也有效”，不将其当作本译者已补全的一般化证明。“paragraphs 8, 9, 12”沿用本稿编号体系译为第8、9、12节。}
+同样，若$k$代数闭，7.1的论述在所有情形中都有效；若再假设$G$在$k$上有理，那么即使只要求$k$无限也成立。特殊情形7.2、7.3$'$也是如此；至于〔quant，???〕7.4的结果，则是针对超平面截面情形的特殊应用。如我已经说过的，第3节和第6节仍须暂缓，等待Zariski定理的推广。\cmt{V-H-L067}{底本原句为“and the special cases 7.2, 7.3' quant (???) the result 7.4”。正文保留7.3后的撇号和“quant”旁的问号，仅按句意以“至于”作暂定连接，不把编号改成另一个确定条目。“rational over $k$”译为“在$k$上有理”，不是指$G$仅有一个$k$有理点；括号“suspended pending”明确保留为等待推广的状态。}
+
+还须推广第8节的结果（第12节曾重新考虑过），它们由此呈现出更令人满意的面貌。我建议你先在这个背景下表述这些结果，并尝试沿这条路尽可能推进。我觉得，我们至少应当能够重新得到那些不是8.7(c)直接推论的结果（甚至可以尝试提炼出一些公理化条件，使你能够完成8.7的一个变式）。\cmt{V-H-L068}{底本此句实际为“recover at least that is not a direct consequence of 8.7 c)”，主语或先行词不完整，正文补出最低限度的“那些……结果”以成句；其中“not”照译为“不是”，没有擅自删去否定词。底本括号在下一句前未闭合，正文按语义在“变式”后补右括号。原文究竟意欲恢复哪些结果及否定词是否可靠仍待核，不据此修复8.7(c)的历史缺文。}
+我这里只提出这些建议；不过，若你遇到特殊困难，我愿意再回到这些问题上，给出更多细节。\cmt{V-H-L069}{这里的“我”和“你”是原稿作者与收信人之间的叙述，保留建议、印象及愿意进一步说明的语气，不把它改写成本译者已经执行的研究或承诺。}

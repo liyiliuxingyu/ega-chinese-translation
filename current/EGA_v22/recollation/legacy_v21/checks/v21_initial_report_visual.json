@@ -1,0 +1,186 @@
+{
+  "schema_version": 1,
+  "edition": 21,
+  "reviewer": "/root/v21_initial",
+  "review_method": "actual_image_view",
+  "document": "report",
+  "pdf": {
+    "path": "report.pdf",
+    "sha256": "f88d2cd3059fd75f7a86f9348ac272c2d975e68998e9ca714d3cfac56e8773f3"
+  },
+  "rendering": {
+    "renderer": "PyMuPDF",
+    "scale": 1.65
+  },
+  "review_state": "All 12 assigned report pages were actually viewed; final PDF binding updated only after exact RGB pixel equality with each viewed PNG.",
+  "pages": [
+    {
+      "physical_page": 25,
+      "image": "checks/rendered_v21/report_0025.png",
+      "image_sha256": "59fcf049e677055c28edd326e538c72feb2fb20b3fbab9ffb765dcdf66ad7a12",
+      "verdict": "pass",
+      "notes": "实际看图：印刷5页，初段报告章标题、核查范围及来源段落清楚；继承源码长路径已正常置于版心内。逐段对照表P01–P03起始部分完整，表头和列内文字无裁切或重叠。"
+    },
+    {
+      "physical_page": 26,
+      "image": "checks/rendered_v21/report_0026.png",
+      "image_sha256": "b9aaef411f8da9f783783373b808e4265d490461f991222c4f778fe102be6b10",
+      "verdict": "pass",
+      "notes": "实际看图：印刷6页，对照表P04–P10续表有重复表头并正常收尾；错误归属表V21-INI001–009开始。列内中文、公式和换行均可辨，未见表格越界。"
+    },
+    {
+      "physical_page": 27,
+      "image": "checks/rendered_v21/report_0027.png",
+      "image_sha256": "bca2e26dac9a128c2e645909bfc796e05e6cd023fc27a748f7b320624077b0bc",
+      "verdict": "pass",
+      "notes": "实际看图：印刷7页，错误归属表V21-INI010–018续表收尾完整；原删改层说明和补证一标题后均有正文。有限表示邻域论证清楚，无孤立标题、裁切或公式重叠。"
+    },
+    {
+      "physical_page": 28,
+      "image": "checks/rendered_v21/report_0028.png",
+      "image_sha256": "73d5250faf7319fc35c69f621dbcf2cbd46806760452f825c7377d5db521822e",
+      "verdict": "pass",
+      "notes": "实际看图：印刷8页，光滑有限表示归约、零维/归纳拉回、正规化与几何正规性、边界B的定义及相应公式均可辨；正文和页眉页码正常，未见缺字或越界。"
+    },
+    {
+      "physical_page": 29,
+      "image": "checks/rendered_v21/report_0029.png",
+      "image_sha256": "04e2066a2286b6de0106bf78cbaa17e65287d73da1bde3fe3c2a6613683355d2",
+      "verdict": "pass",
+      "notes": "实际看图：印刷9页，Y维数界接续、完美域曲线边界及特征3反例的射影方程、坐标环A、几何尖点方程和偏导数完整。各上下标及显示公式均在版心内，未见碰撞或裁切。"
+    },
+    {
+      "physical_page": 30,
+      "image": "checks/rendered_v21/report_0030.png",
+      "image_sha256": "28d7468f042370ac6a1a18599157da0e81ae2dc110da6d19b977a6b91b30435d",
+      "verdict": "pass",
+      "notes": "实际看图：印刷10页，q处非光滑性、W的光滑性、正规射影模型唯一性及多重初等维数论证排版清楚；横截中心补证的D/F/L₀和坏关联维数条件可辨，页底续段自然。"
+    },
+    {
+      "physical_page": 31,
+      "image": "checks/rendered_v21/report_0031.png",
+      "image_sha256": "ab80af160dac0bdf5717ef520187e5efdd0732be4d0e3e7fef3cec9716f52271",
+      "verdict": "pass",
+      "notes": "实际看图：印刷11页，中心非空、T=X∩C=D∩C、一般闭点限制、关联族与相对Jacobian论证完整；Q和T×Q等公式无越界，正文段落与标题分隔清楚。"
+    },
+    {
+      "physical_page": 32,
+      "image": "checks/rendered_v21/report_0032.png",
+      "image_sha256": "07f33f4e79683fbd3da591822fff27bd6340d9a215828284b6409fdfb24158a3",
+      "verdict": "pass",
+      "notes": "实际看图并单独复看：印刷12页，MNP连通性文献/DOI及维数不等式清楚，边界有限展性论证与线性投影图像同构公式完整；最后显示公式无裁切、脚注遮挡或溢出。"
+    },
+    {
+      "physical_page": 33,
+      "image": "checks/rendered_v21/report_0033.png",
+      "image_sha256": "2699da3d7d7a854c99ca2ba647f6c1ed8afc30d2bca37cbacbad0d052c609fdb",
+      "verdict": "pass",
+      "notes": "实际看图：印刷13页，X双撇号的删界同构及U所含截面公式完整；“一般点衔接与本模块核验限度”准确分段、可读，旧注存档标题后有两行说明正文，无孤立标题或越界。"
+    },
+    {
+      "physical_page": 34,
+      "image": "checks/rendered_v21/report_0034.png",
+      "image_sha256": "e705e3a24209fb26c3c917622b154d5b1cc416ebe45c36d244c1d4f8b1c3e1cf",
+      "verdict": "pass",
+      "notes": "实际看图：印刷14页，存档说明接续后逐字旧注D17-M046–M050依次排版；英文引文、初等/多重初等术语及U→V公式清楚，页底文字完整，未见裁切或行间重叠。"
+    },
+    {
+      "physical_page": 35,
+      "image": "checks/rendered_v21/report_0035.png",
+      "image_sha256": "3a5ef689269e4dfc9cfc18b6f584a2294167f14ab49977e2a8033f10db6be46e",
+      "verdict": "pass",
+      "notes": "实际看图：印刷15页，逐字旧注D17-M051–M056依次出现；包含链、替换浸入复合、空集符号及横截C的公式均可辨。原历史判断身份由标题明确，版面未见缺字、溢出或重叠。"
+    },
+    {
+      "physical_page": 36,
+      "image": "checks/rendered_v21/report_0036.png",
+      "image_sha256": "818711da95083dcd1870563afe911683bc5ad64579909e6a5847b18a223e8f26",
+      "verdict": "pass",
+      "notes": "实际看图：印刷16页，逐字旧注D17-M057–M060完整；ξ/ξ₀、T族、V开邻域及X双撇号删界式上下标清楚，最后一段正常收束。页眉、页码、正文间距和页面留白正常，无裁切或重叠。"
+    }
+  ],
+  "final_pdf_pixel_revalidation_after_book_only_layout_changes": {
+    "pass": true,
+    "unchanged_pages": [
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36
+    ]
+  },
+  "pixel_equivalence_rebinding": {
+    "previous_reviewed_pdf_sha256": "f88d2cd3059fd75f7a86f9348ac272c2d975e68998e9ca714d3cfac56e8773f3",
+    "current_pdf_sha256": "f88d2cd3059fd75f7a86f9348ac272c2d975e68998e9ca714d3cfac56e8773f3",
+    "method": "Fresh full-page PyMuPDF RGB rendering at scale 1.65, alpha=False, equality of width, height and all RGB samples against the actually viewed unchanged PNG.",
+    "pages": [
+      {
+        "physical_page": 25,
+        "pixels_equal": true,
+        "rgb_sha256": "ddc3df48375fdab5d61935b63455f3e421c5faffb16db877705938fef2910804"
+      },
+      {
+        "physical_page": 26,
+        "pixels_equal": true,
+        "rgb_sha256": "ba3f77e426adf2c02db193efffcc2f0d3a7169214273b344dddf11843bfc7ef3"
+      },
+      {
+        "physical_page": 27,
+        "pixels_equal": true,
+        "rgb_sha256": "c31ff74ee6057b6084b147f64ce7015226a6b12c5fb2191ded8cba8f497f5e05"
+      },
+      {
+        "physical_page": 28,
+        "pixels_equal": true,
+        "rgb_sha256": "affcfa5567307d4a193515137dd9d3e5ce31acacb7b475c4ef3299f0eb6dda61"
+      },
+      {
+        "physical_page": 29,
+        "pixels_equal": true,
+        "rgb_sha256": "33d74a5a01b35278fbfd15524224af819970899a2a8bb05966d22659d9d11c10"
+      },
+      {
+        "physical_page": 30,
+        "pixels_equal": true,
+        "rgb_sha256": "7d01a4bbfef983b86d7ed371f94607d1c1216afa8b7f9cef93cba249065b7ed2"
+      },
+      {
+        "physical_page": 31,
+        "pixels_equal": true,
+        "rgb_sha256": "d72155b6fd942ab95eec6087834c24a4692b68f6886138af48f9373f9d75299f"
+      },
+      {
+        "physical_page": 32,
+        "pixels_equal": true,
+        "rgb_sha256": "92815d5b256db7ecbd5d713f3372db13b20cfc142bcd9ba5af8f74f014910a6a"
+      },
+      {
+        "physical_page": 33,
+        "pixels_equal": true,
+        "rgb_sha256": "7e3c5602c28f3cde20af8cff433555d268edec680a9048db45410b0d6b3d4f10"
+      },
+      {
+        "physical_page": 34,
+        "pixels_equal": true,
+        "rgb_sha256": "8466739cf23f49f8f8f565b268a4b9c38e2e4bd9f2ececadbf7e78f6b8d8affe"
+      },
+      {
+        "physical_page": 35,
+        "pixels_equal": true,
+        "rgb_sha256": "7dd51f60f235c63a69c2889afc31722a3b0bfc2d2e231f366050bb5d0b79be58"
+      },
+      {
+        "physical_page": 36,
+        "pixels_equal": true,
+        "rgb_sha256": "c1aaa6589ab942f089634a683855c748732f4cffca535667488de83dbea6f940"
+      }
+    ]
+  }
+}

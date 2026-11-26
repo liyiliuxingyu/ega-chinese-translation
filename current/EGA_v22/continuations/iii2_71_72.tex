@@ -1,0 +1,206 @@
+% 依据 EGAIII.2.pdf，第42--47页（原印刷43--48页）逐段翻译。
+\section{模的协变同调函子中的基变换研究}
+\subsection{\texorpdfstring{$A$-模的函子}{A-模的函子}}
+\source{第三卷第二部分，原印刷第43--44页}
+
+\egap{7.1.1}
+给定一个环 $A$（不必交换），我们用 $\mathbf{Ab}_A$ 表示左 $A$-模范畴，用 $\mathbf{Ab}$ 表示 $\mathbf Z$-模范畴，即交换群范畴。设 $T:\mathbf{Ab}_A\to\mathbf{Ab}$ 是协变加性函子，$M$ 是一个 $(A,A)$-双模；则 $T(M)$ 自然带有右 $A$-模结构。事实上，对每个 $a\in A$，记 $h_a^M$（或简记 $h_a$）为左 $A$-模 $M$ 的自同态 $x\mapsto xa$。依假设，$T(h_a)$ 是 $\mathbf Z$-模 $T(M)$ 的自同态；又因 $T$ 是协变加性函子，对 $a,b\in A$ 有
+\[
+\begin{aligned}
+ T(h_{ab})&=T(h_b\circ h_a)=T(h_b)\circ T(h_a),\\
+ T(h_{a+b})&=T(h_a+h_b)=T(h_a)+T(h_b).
+\end{aligned}
+\]
+因此，$(a,y)\mapsto T(h_a)(y)$ 给出一个右 $A$-模的外部运算。特别地，$T(A_{\mathrm s})$ 是右 $A$-模。
+\cmt{C3-N03}{沿用底本的 $A_{\mathrm s}$，表示把 $A$ 看成左 $A$-模；右模结构来自右乘映射，不应与输入函子时的左模结构混淆。}
+
+\egap{7.1.2}
+当 $A$ 交换时，由（7.1.1），对任意 $A$-模 $M$，$T(M)$ 自然带有 $A$-模结构。若 $u:M\to N$ 为 $A$-线性同态，则对任意 $a\in A$ 有
+\[
+ u\circ h_a^M=h_a^N\circ u,
+ \qquad T(u)\circ T(h_a^M)=T(h_a^N)\circ T(u),
+\]
+所以 $T(u):T(M)\to T(N)$ 为 $A$-线性同态。因此可把 $T$ 看成 $\mathbf{Ab}_A$ 到自身的协变加性函子。更准确地说，这样就在协变加性函子 $\mathbf{Ab}_A\to\mathbf{Ab}$ 的范畴与协变 $A$-线性函子 $T:\mathbf{Ab}_A\to\mathbf{Ab}_A$ 的范畴之间定义了典范等价；这里 $A$-线性指对每个 $a\in A$ 有 $T(h_a^M)=h_a^{T(M)}$。由于将 $A$-模送到其底层 $\mathbf Z$-模的遗忘函子 $\mathbf{Ab}_A\to\mathbf{Ab}$ 正合且忠实，上述等价所对应的两个函子具有相同的正合性性质。
+
+\egap{7.1.3}
+仍设 $A$ 交换，$B$ 为一个 $A$-代数（不必交换），$\rho:A\to B$ 为给出此代数结构的环同态。它定义一个协变加性函子
+\[
+ \rho_*:\mathbf{Ab}_B\longrightarrow\mathbf{Ab}_A,
+ \qquad M\longmapsto M_{[\rho]}.
+\]
+复合后得到显然协变且加性的函子
+\[
+ T_{(B)}:\mathbf{Ab}_B\xrightarrow{\rho_*}\mathbf{Ab}_A
+ \xrightarrow{T}\mathbf{Ab},
+\]
+出于排印便利，也记作 $T^{(B)}$ 或 $T\otimes_A B$，并称它由 $T$ 经从 $A$ 到 $B$ 的标量扩张得到。若 $B$ 交换，当然可把 $T_{(B)}$ 看作 $\mathbf{Ab}_B$ 到自身的函子（7.1.2）。当 $B$ 交换而 $C$ 为 $B$-代数时，立即有 $T_{(C)}=(T_{(B)})_{(C)}$。标量扩张对 $T$ 函子性且加性；若 $T$ 与归纳极限或直和交换（分别若 $T$ 左正合、右正合或正合），则 $T_{(B)}$ 亦然，因为 $\rho_*$ 正合，并与归纳极限和直和交换。
+
+\egap{7.1.4}
+仍设 $A$ 交换，并设 $T:\mathbf{Ab}_A\to\mathbf{Ab}_A$ 为与归纳极限交换的协变加性 $A$-线性函子。那么对 $A$ 的任一乘法子集 $S$ 和任一 $A$-模 $M$，有关于 $M$ 函子性的典范 $A$-模同构
+\begin{equation}
+ T(S^{-1}M)\simeq S^{-1}T(M).\tag{7.1.4.1}
+\end{equation}
+先设 $S$ 为某个 $f\in A$ 的各次幂 $f^n$（$n\geq0$）组成的集合。已知 $M_f=\varinjlim M_n$，其中每个 $M_n=M$，过渡同态 $M_n\to M_m$ 为乘以 $f^{m-n}$（$m\geq n$）（$0_{\mathrm I}$，1.6.1）；因此，由关于 $T$ 的假设得到（7.1.4.1）。对一般 $S$，$S^{-1}M$ 是各 $M_f$（$f\in S$）的归纳极限（$0_{\mathrm I}$，1.4.5），同理得证。同构（7.1.4.1）的函子性还说明它为 $S^{-1}A$-模同构，因此，在相差一个典范同构的意义下，可写成
+\begin{equation}
+ T_{(S^{-1}A)}(S^{-1}M)=S^{-1}T(M)=T(M)_{(S^{-1}A)}.
+ \tag{7.1.4.2}
+\end{equation}
+若 $S=A-\mathfrak p$ 为素理想的补集，则以 $T_{\mathfrak p}$ 代替 $T^{(A_{\mathfrak p})}$。
+
+\egas{7.1.5}{命题}
+在（7.1.4）的假设下，若对 $A$ 的每个极大理想 $\mathfrak m$，$T_{\mathfrak m}$ 均左正合（分别右正合、正合），则 $T$ 左正合（分别右正合、正合）。
+
+事实上，已知当 $A$-模 $M$ 的两个子模 $N,P$ 对每个极大理想 $\mathfrak m$ 都满足 $N_{\mathfrak m}=P_{\mathfrak m}$ 时，有 $N=P$（Bourbaki，\textit{Alg. comm.}，第II章，§3，第3目，定理1）。
+
+\subsection{张量积函子的刻画}
+\source{第三卷第二部分，原印刷第44--48页}
+
+\egap{7.2.1}
+设 $A$ 是环（不必交换），$M$ 为左 $A$-模，$N$ 为右 $A$-模，$P$ 为 $\mathbf Z$-模。回顾：给定一个 $\mathbf Z$-线性同态 $v:N\otimes_A M\to P$，等价于给定一个 $\mathbf Z$-双线性映射 $u:N\times M\to P$，满足
+\[
+ u(ta,x)=u(t,ax)\qquad(a\in A,\ t\in N,\ x\in M),
+\]
+二者由 $v(t\otimes x)=u(t,x)$ 联系。另一方面，给定 $u$ 又等价于给定 $\mathbf Z$-线性同态 $x\mapsto f_x$，从 $M$ 到 $\Hom_{\mathbf Z}(N,P)$，使得 $f_{ax}(t)=f_x(ta)$；联系式为 $u(t,x)=f_x(t)$。
+
+\egap{7.2.2}
+设 $T:\mathbf{Ab}_A\to\mathbf{Ab}$ 为协变加性函子。对每个左 $A$-模 $M$，我们将定义一个关于 $M$ 函子性的典范 $\mathbf Z$-线性同态
+\begin{equation}
+ t_M:T(A_{\mathrm s})\otimes_A M\longrightarrow T(M).
+ \tag{7.2.2.1}
+\end{equation}
+由（7.2.1），只须定义 $\mathbf Z$-线性同态
+\[
+ x\longmapsto t_M^\#(x):M\longrightarrow
+ \Hom_{\mathbf Z}(T(A_{\mathrm s}),T(M)),
+\]
+满足 $t_M^\#(ax)(y)=t_M^\#(x)(ya)$。注意右模 $T(A_{\mathrm s})$ 的结构在该 Hom 群上给出左 $A$-模结构，规定
+\[
+ (a\cdot v)(y)=v(ya).
+\]
+把 $t_M^\#$ 定义为两个典范同态的复合
+\[
+ M\longrightarrow\Hom_A(A_{\mathrm s},M)
+ \longrightarrow\Hom_{\mathbf Z}(T(A_{\mathrm s}),T(M)),
+\]
+其中第二个映射是 $u\mapsto T(u)$，第一个是 $x\mapsto\theta_x$，$\theta_x(\xi)=\xi x$，给出典范 $A$-模同构。由 $\theta_{ax}=\theta_x\circ h_a$，有
+\[
+ T(\theta_{ax})(y)=T(\theta_x)(T(h_a)(y))=T(\theta_x)(ya),
+\]
+这就证明了 $t_M$ 的存在。直接验证它关于 $M$ 函子性：对左 $A$-模同态 $w:M\to M'$，图
+\begin{equation}
+ \begin{tikzcd}
+ T(A_{\mathrm s})\otimes_A M\arrow[r,"t_M"]\arrow[d,"1\otimes w"']&T(M)\arrow[d,"T(w)"]\\
+ T(A_{\mathrm s})\otimes_A M'\arrow[r,"t_{M'}"']&T(M')
+ \end{tikzcd}\tag{7.2.2.2}
+\end{equation}
+交换。当 $A$ 交换时，由此函子性知（7.2.2.1）为 $A$-线性同态（参见7.1.2）。
+
+\egap{7.2.3}
+当 $A$ 交换时，更一般地，对每个 $A$-模 $N$ 可定义典范 $A$-线性同态
+\begin{equation}
+ T(N)\otimes_A M\longrightarrow T(N\otimes_A M).
+ \tag{7.2.3.1}
+\end{equation}
+只须在（7.2.2）的构造中，把 $\theta_x$ 换成 $A$-线性同态 $N\to N\otimes_A M$，$y\mapsto y\otimes x$。该同态对 $M,N$ 均函子性。
+
+特别地，若 $B$ 为 $A$-代数（不必交换），则有关于 $M$ 函子性的同态
+\begin{equation}
+ \begin{aligned}
+ (T(M))_{(B)}=T(M)\otimes_A B
+ &\longrightarrow T(M\otimes_A B)\\
+ &=T^{(B)}(M_{(B)}),
+ \end{aligned}\tag{7.2.3.2}
+\end{equation}
+由（7.2.3.1）对 $M$ 的函子性，它为 $B$-线性同态。还有交换图
+\begin{equation}
+ \begin{tikzcd}[column sep=large]
+ T(A)\otimes_A M\arrow[r,"t_M"]\arrow[d]&T(M)\arrow[d]\\
+ T_{(B)}(B_{\mathrm s})\otimes_B M_{(B)}\arrow[r]&T_{(B)}(M_{(B)})
+ \end{tikzcd}\tag{7.2.3.3}
+\end{equation}
+右侧竖箭头为典范同态与（7.2.3.2）的复合
+\[
+ T(M)\longrightarrow T(M)\otimes_A B\longrightarrow
+ T(M\otimes_A B).
+\]
+左侧竖箭头为
+\[
+ \begin{aligned}
+ T(A)\otimes_A M&\longrightarrow
+ T_{(B)}(B_{\mathrm s})\otimes_B(B\otimes_A M)\\
+ &=T_{(B)}(B_{\mathrm s})\otimes_A M,
+ \end{aligned}
+\]
+其中 $T(A)\to T_{(B)}(B_{\mathrm s})=T(B)$ 是 $T(\rho)$，把 $\rho$ 看作 $A$-模同态 $A\to B_{[\rho]}$。
+
+\egas{7.2.4}{引理}
+若 $T:\mathbf{Ab}_A\to\mathbf{Ab}$ 是与直和交换的协变加性函子，则对每个自由 $A$-模 $L$，典范同态 $t_L$（7.2.2.1）为同构。
+
+事实上，写 $L=\bigoplus_{\alpha\in I}L_\alpha$，各 $L_\alpha\simeq A_{\mathrm s}$。由（7.2.2）的定义及 $T$ 与直和交换，$t_L=\bigoplus_\alpha t_{L_\alpha}$；其中作用于 Hom 的映射由各个 $\mathbf Z$-线性映射
+\[
+ T_\alpha:\Hom_A(A_{\mathrm s},L_\alpha)\longrightarrow
+ \Hom_{\mathbf Z}(T(A_{\mathrm s}),T(L_\alpha))
+\]
+给出。因此归结为 $L=A_{\mathrm s}$，此时 $t_L$ 就是对任意右模成立的典范同构 $T(A_{\mathrm s})\otimes_A A\simeq T(A_{\mathrm s})$。
+
+\egas{7.2.5}{命题}
+设 $T:\mathbf{Ab}_A\to\mathbf{Ab}$ 为与直和交换的协变加性函子。下列条件等价：
+\begin{enumerate}[label=\alph*)]
+\item $T$ 右正合。
+\item 对每个左 $A$-模 $M$，典范同态 $t_M$（7.2.2.1）为同构。
+\item[\textup{b')}] $T$ 半正合，且对每个左 $A$-模 $M$，$t_M$ 满射。
+\item[\textup{c)}] $T$ 同构于某个形如 $M\mapsto N\otimes_A M$ 的函子，其中 $N$ 为右 $A$-模。
+\end{enumerate}
+\cmt{C3-N04}{这里“半正合”指把短正合列送为在中间项正合的列；不能将它译成左正合、右正合或完全正合。}
+
+b) 蕴含 c)，c) 蕴含 a)。证明 a) 蕴含 b)。令 $T'(M)=T(A_{\mathrm s})\otimes_A M$。取自由表示 $L'\to L\to M\to0$。因 $T,T'$ 右正合，得到两行正合的交换图
+\[
+ \begin{tikzcd}
+ T'(L')\arrow[r]\arrow[d,"t_{L'}"']&T'(L)\arrow[r]\arrow[d,"t_L"']&T'(M)\arrow[r]\arrow[d,"t_M"]&0\\
+ T(L')\arrow[r]&T(L)\arrow[r]&T(M)\arrow[r]&0.
+ \end{tikzcd}
+\]
+由（7.2.4），$t_{L'},t_L$ 为同构，故五引理给出 $t_M$ 为同构。b) 显然蕴含 b')；为证明 b') 蕴含 a)，只须证明下述引理。
+
+\egas{7.2.5.1}{引理}
+设 $\mathbf K,\mathbf K'$ 为阿贝尔范畴，$F,G:\mathbf K\to\mathbf K'$ 为协变加性函子，$f:F\to G$ 为函子态射（T，I，1.2），且对每个对象 $E$，$f_E:F(E)\to G(E)$ 为满态射。若 $F$ 右正合而 $G$ 半正合，则 $G$ 右正合。
+
+只须证明：对 $\mathbf K$ 中每个满态射 $v:E'\to E$，$G(v)$ 也是满态射。在交换图
+\[
+ \begin{tikzcd}
+ F(E')\arrow[r,"F(v)"]\arrow[d,"f_{E'}"']&F(E)\arrow[d,"f_E"]\\
+ G(E')\arrow[r,"G(v)"']&G(E)
+ \end{tikzcd}
+\]
+中，$F(v),f_{E'},f_E$ 都是满态射，故 $G(v)$ 也是满态射。
+
+\egas{7.2.6}{注记}
+对每个右 $A$-模 $N$，置 $T_N(M)=N\otimes_A M$。它是从 $\mathbf{Ab}_A$ 到 $\mathbf{Ab}$ 的右正合、与直和交换的协变加性函子。将 $T_N(A_{\mathrm s})$ 典范地认作 $N$ 后，直接验证相应的（7.2.2.1）变成恒等同态。因此（7.2.5，c）中的右模 $N$ 由该性质确定至唯一同构，并典范同构于 $T(A_{\mathrm s})$。也可说，$T\mapsto T(A_{\mathrm s})$ 与 $N\mapsto T_N$ 定义右 $A$-模范畴和右正合且与直和交换的协变加性函子 $\mathbf{Ab}_A\to\mathbf{Ab}$ 的范畴之间的等价（T，I，1.2）。
+
+\egas{7.2.7}{命题}
+设 $A$ 为左阿廷环，其模根基 $\mathfrak m$ 的商为一个域 $k$。设 $T:\mathbf{Ab}_A\to\mathbf{Ab}$ 为与直和交换的协变加性函子。则（7.2.5）的条件还等价于：
+
+\noindent d) $T$ 半正合，且由典范同态 $\varepsilon:A_{\mathrm s}\to k$ 导出的 $T(\varepsilon):T(A_{\mathrm s})\to T(k)$ 满射。
+
+（7.2.5）的 b') 显然蕴含 d)。证明 d) 蕴含 b')。存在整数 $n$ 使 $\mathfrak m^n=0$。对任意 $A$-模 $M$ 置 $M_h=\mathfrak m^hM$，按 $h$ 作下降归纳证明 $t_{M_h}$ 满射。$h=n$ 时显然；当 $h<n$ 时有短正合列
+\[
+ 0\longrightarrow M_{h+1}\longrightarrow M_h
+ \longrightarrow M_h/M_{h+1}\longrightarrow0.
+\]
+归纳假设给出 $t_{M_{h+1}}$ 满射。商 $M_h/M_{h+1}$ 被 $\mathfrak m$ 消去，故为 $k$-模，即若干个 $k$ 的直和。因 $T$ 与直和交换，只须证明 $t_k$ 满射。考虑交换图
+\[
+ \begin{tikzcd}
+ T(A_{\mathrm s})\otimes_A A_{\mathrm s}\arrow[r,"t_A"]\arrow[d,"1\otimes\varepsilon"']&T(A_{\mathrm s})\arrow[d,"T(\varepsilon)"]\\
+ T(A_{\mathrm s})\otimes_A k\arrow[r,"t_k"']&T(k).
+ \end{tikzcd}
+\]
+由（7.2.4）与 d)，$t_k$ 满射。
+
+最后，只须证明：对短正合列 $0\to M'\to M\xrightarrow{v}M''\to0$，若 $t_{M'},t_{M''}$ 满射，则 $t_M$ 满射。令 $T'=T(A_{\mathrm s})\otimes_A-$；有交换图
+\[
+ \begin{tikzcd}[column sep=small]
+ T'(M')\arrow[r]\arrow[d]&T'(M)\arrow[r]\arrow[d]&T'(M'')\arrow[r]\arrow[d]&0\arrow[d]\\
+ T(M')\arrow[r]&T(M)\arrow[r]&T(M'')\arrow[r]&\Coker T(v).
+ \end{tikzcd}
+\]
+因 $T$ 半正合，两行均正合。外侧两个 $t$ 为满态射，最右竖箭头为单态射，五引理（M，I，1.1）遂给出 $t_M$ 满射。

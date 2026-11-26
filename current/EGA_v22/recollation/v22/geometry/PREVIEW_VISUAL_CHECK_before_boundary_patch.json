@@ -1,0 +1,153 @@
+{
+  "recorded_at_utc": "2026-11-26T01:09:35.226399+00:00",
+  "kind": "actual_view_of_standalone_previews",
+  "scope_excludes_final_integrated_book": true,
+  "source_view_basis": "French and English full-page and crop images listed in SOURCE_MAP.md were actually returned as image outputs and read.",
+  "documents": [
+    {
+      "pdf": {
+        "path": "v22_work/drafts/geometry/preview_book.pdf",
+        "bytes": 213364,
+        "sha256": "b6270f8104aec557e39ef6b47aa676572f243f0f038e14feb15fa602d341ccae"
+      },
+      "physical_pages": 3,
+      "pages": [
+        {
+          "physical_page": 1,
+          "actually_displayed_and_read": true,
+          "image": {
+            "path": "v22_work/drafts/geometry/source_pages/preview_book_1.png",
+            "bytes": 181008,
+            "sha256": "c7ab3342a936aa8c426498c283e51f93e637712e55aac7584ad9eb08dab9c799"
+          },
+          "raster_scale": 1.4
+        },
+        {
+          "physical_page": 2,
+          "actually_displayed_and_read": true,
+          "image": {
+            "path": "v22_work/drafts/geometry/source_pages/preview_book_2.png",
+            "bytes": 155707,
+            "sha256": "fa83a20cd62cc9ad3c2e6d0a9d3088663bc056d87c46b484dc74eaedc5d13749"
+          },
+          "raster_scale": 1.4
+        },
+        {
+          "physical_page": 3,
+          "actually_displayed_and_read": true,
+          "image": {
+            "path": "v22_work/drafts/geometry/source_pages/preview_book_3.png",
+            "bytes": 182891,
+            "sha256": "3698175be67f4d4aefeaac49a3232bec71baa27b00e8eadd73d2549a5efddae4"
+          },
+          "raster_scale": 1.4
+        }
+      ],
+      "final_log": {
+        "path": "v22_work/drafts/geometry/preview_book.log",
+        "bytes": 42758,
+        "sha256": "00f2a5f4ac918d236127e0dce4a65f88e970a581045dff53ca072caf03118e13"
+      },
+      "overfull_count": 0,
+      "fatal_error_present": false,
+      "nonfatal_warnings": "Math-font size substitution warnings remain; no claim of zero warnings."
+    },
+    {
+      "pdf": {
+        "path": "v22_work/drafts/geometry/preview_audit.pdf",
+        "bytes": 273843,
+        "sha256": "f76ac3ee90666d17142ae1101617826d4050686b7a7038ede0b68c2b31d857c9"
+      },
+      "physical_pages": 6,
+      "pages": [
+        {
+          "physical_page": 1,
+          "actually_displayed_and_read": true,
+          "image": {
+            "path": "v22_work/drafts/geometry/source_pages/preview_audit_1.png",
+            "bytes": 136269,
+            "sha256": "d193bf36ccf81798e363aa0252cfaaa9d2ab770bbaa40c0691c1e55ff4d7f76c"
+          },
+          "raster_scale": 1.4
+        },
+        {
+          "physical_page": 2,
+          "actually_displayed_and_read": true,
+          "image": {
+            "path": "v22_work/drafts/geometry/source_pages/preview_audit_2.png",
+            "bytes": 161019,
+            "sha256": "280d80167c001c4ad93496978c6732b6ef7946f370f3cb919d74fab3366cd698"
+          },
+          "raster_scale": 1.4
+        },
+        {
+          "physical_page": 3,
+          "actually_displayed_and_read": true,
+          "image": {
+            "path": "v22_work/drafts/geometry/source_pages/preview_audit_3.png",
+            "bytes": 163184,
+            "sha256": "2619e4f4eef167935271b0ebf29d781c403a0b198cdfae3909551f54fa606444"
+          },
+          "raster_scale": 1.4
+        },
+        {
+          "physical_page": 4,
+          "actually_displayed_and_read": true,
+          "image": {
+            "path": "v22_work/drafts/geometry/source_pages/preview_audit_4.png",
+            "bytes": 176067,
+            "sha256": "a194d676264e70f85fc182a7bb08462be92e3c8a6d26e51e5a07ce6a4d19f516"
+          },
+          "raster_scale": 1.4
+        },
+        {
+          "physical_page": 5,
+          "actually_displayed_and_read": true,
+          "image": {
+            "path": "v22_work/drafts/geometry/source_pages/preview_audit_5.png",
+            "bytes": 177808,
+            "sha256": "af6d64c0f5ecadd2aa91d16db126735c595337f5c6abf290967c38fed42750f9"
+          },
+          "raster_scale": 1.4
+        },
+        {
+          "physical_page": 6,
+          "actually_displayed_and_read": true,
+          "image": {
+            "path": "v22_work/drafts/geometry/source_pages/preview_audit_6.png",
+            "bytes": 64420,
+            "sha256": "39fce6046e2e576498511449791d263c8edfc52386697e68167a872ab5378199"
+          },
+          "raster_scale": 1.4
+        }
+      ],
+      "final_log": {
+        "path": "v22_work/drafts/geometry/preview_audit.log",
+        "bytes": 43656,
+        "sha256": "6b046a58141779f1980b55c6b93a37fafd4115bd2231d676aa2f9a7b7f5c6ea5"
+      },
+      "overfull_count": 0,
+      "fatal_error_present": false,
+      "nonfatal_warnings": "Math-font size substitution warnings remain; no claim of zero warnings."
+    }
+  ],
+  "additional_view": {
+    "physical_page": 3,
+    "pdf": "preview_audit.pdf",
+    "crop_pdf_coordinates": [
+      65,
+      610,
+      560,
+      842
+    ],
+    "raster_scale": 2,
+    "actually_displayed_and_read": true,
+    "image": {
+      "path": "v22_work/drafts/geometry/source_pages/preview_audit_3_bottom.png",
+      "bytes": 27921,
+      "sha256": "663d65dd45e84a0c01312d2db73ec22cb1bcf5bca6ae9d0d817f37db2a7c2954"
+    },
+    "finding": "Incidence diagram including target Q is fully within the page; no cropped arrow or target."
+  },
+  "historical_status": "Superseded standalone preview build. PDF and wrapper paths now hold an actually rebuilt later standalone preview; this record preserves prior hashes and actual image-view history only."
+}

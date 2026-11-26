@@ -1,0 +1,268 @@
+{
+  "module": "v21_initial",
+  "base_commit": "99cd048abd72adad984613aaa4f5fef86cd5a6c8",
+  "sources": [
+    {
+      "path": "archive_20261121/03_sources/EGA5_francais.pdf",
+      "sha256": "24cf8204184b58b18a46e5f63ecc36d6e791b3c8c96a09daac93de96ebd8e830",
+      "pages": 171
+    },
+    {
+      "path": "archive_20261121/03_sources/EGAVaiello.pdf",
+      "sha256": "23a20ef32fd16a1bd623c0c08ac080d04fc94f248de12133b713a19d6b0330d9",
+      "pages": 112
+    }
+  ],
+  "scope": {
+    "french_physical": [
+      74,
+      75,
+      76,
+      77
+    ],
+    "english_physical": [
+      49,
+      50,
+      51
+    ],
+    "english_stop": "physical51 first paragraph end, before It remains only to prove Lemma13.3",
+    "french_next": "physical78 opening proof of Lemma13.3"
+  },
+  "visual_reads": {
+    "french_full_pages": [
+      74,
+      75,
+      76,
+      77,
+      78
+    ],
+    "french_closeups": [
+      "fr_76_detail.png"
+    ],
+    "english_full_pages": [
+      49,
+      50,
+      51
+    ],
+    "note": "French78 inspected as next boundary only. Other generated crops are not counted as viewed."
+  },
+  "footnote_ids": [
+    "V21-INI001",
+    "V21-INI002",
+    "V21-INI003",
+    "V21-INI004",
+    "V21-INI005",
+    "V21-INI006",
+    "V21-INI007",
+    "V21-INI008",
+    "V21-INI009",
+    "V21-INI010",
+    "V21-INI011",
+    "V21-INI012",
+    "V21-INI013",
+    "V21-INI014",
+    "V21-INI015",
+    "V21-INI016",
+    "V21-INI017",
+    "V21-INI018"
+  ],
+  "source_errors_confirmed": [
+    {
+      "id": "V21-INI001",
+      "french_page": 74,
+      "original": "Xprime -> X",
+      "correction": "Xprime -> Y",
+      "english": "already corrected"
+    },
+    {
+      "id": "V21-INI004",
+      "french_page": 74,
+      "original": "elementary final neighbourhood in arbitrary dimension",
+      "correction": "polyelementary"
+    },
+    {
+      "id": "V21-INI010",
+      "french_page": 76,
+      "original": "lemma statement omits L0 passing through x but later proof and construction require it",
+      "correction": "call states needed stronger form; rational case and finitepoint generalization explicitly separated"
+    },
+    {
+      "id": "V21-INI011",
+      "french_page": 76,
+      "original": "retained C-selection mentions finite-set avoidance but then asserts intersection etale",
+      "correction": "transversality inserted and proved separately; deleted precursor not treated as active text"
+    },
+    {
+      "id": "V21-INI015",
+      "french_page": 77,
+      "original": "V neighbourhood of xi0 in X",
+      "correction": "in Q"
+    },
+    {
+      "id": "V21-INI017",
+      "french_page": 77,
+      "original": "Xdoubleprime subtracts Z_Q",
+      "correction": "subtract T_Q"
+    },
+    {
+      "id": "V21-INI018",
+      "french_page": 77,
+      "original": "U contains entire L0 intersection X",
+      "correction": "contains that intersection minus Y union T"
+    }
+  ],
+  "english_only_or_editorial": [
+    "X superset Y subset Z (French chain correct)",
+    "phi_n^i (French composition)",
+    "some? after any (French quelconque unambiguous)",
+    "C inside L instead of L0 (French has L0)",
+    "xi instead of xi0 (French has xi0)",
+    "missing T object at English50 end (French77 has T)",
+    "U neighbourhood of Q in X: English adds U and point-name errors beyond French wrong ambient X"
+  ],
+  "unresolved_transcription": [
+    {
+      "french_page": 74,
+      "location": "end of first reduction sentence after dans",
+      "handling": "X supplied contextually; English illegibility question preserved"
+    },
+    {
+      "french_page": 76,
+      "location": "single overprinted letter after contenant in Q definition",
+      "handling": "C from fixed-centre context and English; no claim glyph fully deciphered"
+    },
+    {
+      "location": "struck-through/overtyped former terminology and clauses",
+      "handling": "deletion status recorded; unreadable former wording not invented"
+    }
+  ],
+  "supplemental_proofs": [
+    "smooth-point affine finite-presentation reduction",
+    "n=0 and induction pullback",
+    "finite normalization, geometric normality and projective boundary",
+    "perfect-field curve case with nonempty finite etale boundary",
+    "F3(t) regular nonsmooth projective cubic counterexample to dropping perfection",
+    "transverse centre avoiding finite set",
+    "relative Jacobian smoothness",
+    "MNP Theorem1.1 connectedness application with full hypotheses",
+    "finite etale boundary constant positive degree",
+    "centre-free incidence graph isomorphism"
+  ],
+  "dependencies": {
+    "bertini": "other agent v21_section13_bertini_audit.tex E03 independently reviewed",
+    "finitepoint": "root13.4(c) full finitepoint construction and descent; initial report crossreferences",
+    "original_old_general_results": "8.7(c)/8.8 residual source gaps not claimed recovered"
+  },
+  "independent_reviews": [
+    {
+      "reviewer": "/root/v21_bertini",
+      "reviewed": "initial_audit.tex supplemental proofs",
+      "result": "no substantive gap; clarify y closed in local W rather than arbitrary original X; clarification applied"
+    },
+    {
+      "reviewer": "/root/v21_initial",
+      "reviewed": "v21_section13_bertini_audit.tex V21-BER-E03",
+      "result": "no substantive gap found in jets, rank count, nonproper image closure, k-defined dimension strata, GL_m frame descent"
+    }
+  ],
+  "historical_notes": {
+    "count": 15,
+    "range": [
+      "D17-M046",
+      "D17-M060"
+    ],
+    "source_sha256": "76c5cf0bd3f3a0937e91533db1c57bb91bbb4ba606f50bf63d02df3faa3047fa",
+    "all_bodies_verified_in_audit": true,
+    "separate_exact_json": "historical_notes.json"
+  },
+  "external_sources": [
+    {
+      "title": "Connectedness Bertini Theorem via numerical equivalence",
+      "authors": [
+        "Diletta Martinelli",
+        "Juan Carlos Naranjo",
+        "Gian Pietro Pirola"
+      ],
+      "publication": "Advances in Geometry17(1)(2017),31–38",
+      "theorem": "1.1",
+      "doi": "10.1515/advgeom-2016-0028",
+      "url": "https://diposit.ub.edu/server/api/core/bitstreams/d9e33fe8-dd1c-42a4-a579-a349a203ca25/content",
+      "tool_ref": "turn426248551view0"
+    },
+    {
+      "title": "The Stacks Project, smooth morphisms",
+      "tag": "01V4",
+      "url": "https://stacks.math.columbia.edu/tag/01V4",
+      "tool_ref": "turn300513929view1"
+    },
+    {
+      "title": "The Stacks Project, normalization",
+      "tag": "0BXQ",
+      "url": "https://stacks.math.columbia.edu/tag/0BXQ",
+      "tool_ref": "turn300513929view3"
+    },
+    {
+      "title": "The Stacks Project, geometric normality criterion",
+      "tag": "038N",
+      "url": "https://stacks.math.columbia.edu/tag/038N",
+      "tool_ref": "turn300513929view2"
+    },
+    {
+      "title": "The Stacks Project, curves and function fields",
+      "tag": "0BY1",
+      "url": "https://stacks.math.columbia.edu/tag/0BY1",
+      "tool_ref": "turn300513929view0"
+    }
+  ],
+  "draft_artifacts": {
+    "initial.tex": {
+      "bytes": 15941,
+      "sha256": "cb17ac19ebc908737c80b883d4ffb4e98fc5afe446a4d7b61f5bbf6f5eeaa01c"
+    },
+    "initial_audit.tex": {
+      "bytes": 29009,
+      "sha256": "0787579350172c2bc34f1b46319f86fe028059a5b2f82c6f31b991cdcb75b7a7"
+    },
+    "historical_notes.tex": {
+      "bytes": 5959,
+      "sha256": "35bde4313de8558cee6fff79175c2f238c416afbc35302874ff5680a6ed9b223"
+    },
+    "historical_notes.json": {
+      "bytes": 7131,
+      "sha256": "0c8c684ef2eac1d52d66b55f63dbb73fa63b14236b38f993de674f10b16290f2"
+    },
+    "FINAL_REVIEW.md": {
+      "bytes": 10988,
+      "sha256": "4a97abbd09a6cd2ddf277a175f2954893e1fc9c4c4634b4cca9731b88006ac71"
+    }
+  },
+  "compile": {
+    "type": "minimal wrapper using unchanged current20 preamble; not the integrated book",
+    "command": "bash build_check.sh",
+    "engine": "XeLaTeX",
+    "runs": 2,
+    "pages": 17,
+    "exit_code": 0,
+    "overfull": 0,
+    "undefined_control": 0,
+    "missing_character": 0,
+    "undefined_references": 0,
+    "remaining_warnings": "Inherited rsfs font sizes substituted; no font/default geometry overrides",
+    "pdf_sha256": "4115658111ed34d08d469dd12756293d15fdc545488936590669f40322589693",
+    "log_sha256": "8a9f8e11dd6c9906a49230133c721b68808d2a4f13e1800799dba9bd03b85dac"
+  },
+  "local_pdf_visual_review": {
+    "pdf": "check.pdf",
+    "physical_pages": [
+      1,
+      4,
+      6,
+      10,
+      13,
+      16
+    ],
+    "result": "No clipping, overlapping formulas or missing symbols observed on these pages; ordinary footnote continuations seen",
+    "not_claimed": "integrated final book review"
+  },
+  "final_source_fidelity_review": "FINAL_REVIEW.md"
+}

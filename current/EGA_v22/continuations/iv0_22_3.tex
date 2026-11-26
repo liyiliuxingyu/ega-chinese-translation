@@ -1,0 +1,114 @@
+% 底本：EGAIV.1.pdf，PDF第190--192页，原分册印刷第191--193页。
+\subsection{应用：某些局部环与其完备化之间的关系}
+\egas{22.3.1}{引理}
+设 $A_0$ 为诺特半局部环，$A$ 为有限 $A_0$-代数；因此 $A$ 也为诺特半局部环（Bourbaki，\textit{交换代数}，第四章，§2，第5目，命题9的推论3）。以 $\widehat A_0,\widehat A$ 分别表示它们对各自预进制拓扑的完备化。将 $A_0,A,\widehat A$ 都赋予\emph{离散拓扑}后，$\widehat A$ 相对于 $A_0$ 是形式光滑的 $A$-代数（19.9.1）。\cmt{M13-N07}{本引理只断言“相对于 $A_0$”形式光滑，不能去掉这个限定而断言任意诺特局部环到其完备化都对离散拓扑形式光滑。后续证明先利用这个相对结论，再用22.2的判据得到所需的绝对形式光滑性。}
+
+\eproof
+有 $\widehat A=A\otimes_{A_0}\widehat A_0$（Bourbaki，同上，以及第三章，§3，第4目，定理1），所以结论由（19.9.3）得到。
+\finishproof
+
+\egas{22.3.2}{命题}
+设 $A$ 为正则诺特局部环，$K$ 为它的分式域，$p$ 为 $K$ 的特征。假设下列两个条件之一成立：
+
+\noindent（i）$p=0$；
+
+\noindent（ii）$p>0$，并存在滤过递减的诺特子环族 $(A_\alpha)$，使对每个 $\alpha$，$A$ 为有限 $A_\alpha$-代数；存在适当的整数 $h(\alpha)$ 使
+\[
+ A^{p^{h(\alpha)}}\subseteq A_\alpha;
+\]
+若 $K_\alpha$ 为 $A_\alpha$ 的分式域，则 $\bigcap_\alpha K_\alpha(K^p)=K^p$。
+
+设 $B$ 是包含 $A$ 的有限整 $A$-代数，$\mathfrak n$ 为 $B$ 的素理想，$C=B_{\mathfrak n}$。取完备化 $\widehat C$ 的素理想 $\mathfrak q$，满足 $\mathfrak q\cap C=0$。于是 $\widehat C_{\mathfrak q}$ 是 $B$ 的分式域 $L$ 上的代数。它对自身极大理想的预进制拓扑是形式光滑的 $L$-代数，因而在 $L$ 上几何正则（19.6.5）。\cmt{M13-N08}{“整”在这里表示 $B$ 是整环，另有 $B$ 对 $A$ 有限的假设；不是只要求整扩张而省去无零因子。这里的 $p$ 是分式域特征，故（i）还包括混合特征的局部环。}
+
+\eproof
+分两种情形。
+
+\noindent\textbf{I）$\mathfrak n$ 包含 $A$ 的极大理想 $\mathfrak m$。}
+此时 $\mathfrak n\cap A=\mathfrak m$。因为 $B/A$ 整，$\mathfrak n$ 是极大理想（Bourbaki，\textit{交换代数}，第五章，§2，第1目，命题1）。设 $\mathfrak r$ 为半局部环 $B$ 的Jacobson根。则 $\widehat C$ 可视为 $B$ 的 $\mathfrak n$-预进制分离完备化，同时也是 $B$ 的 $\mathfrak r$-预进制完备化 $\widehat B$ 的一个局部分量（同书第三章，§3，第4目，命题8）。因此，若 $\mathfrak q'$ 是 $\mathfrak q$ 在 $\widehat B$ 中的逆像，则
+\[
+ \widehat C_{\mathfrak q}=\widehat B_{\mathfrak q'}.
+\]
+$B$ 嵌入 $\widehat B$，而 $\mathfrak q\cap C=0$ 给出 $\mathfrak q'\cap B=0$。故 $\widehat B_{\mathfrak q'}$ 也是 $\widehat B\otimes_B L$ 在某个素理想 $\mathfrak q''$ 处的局部化。
+
+又有
+\[
+ \widehat B=\widehat A\otimes_A B,
+ \qquad\widehat B\otimes_B L=\widehat A\otimes_A L.
+\]
+令 $\mathfrak p$ 是 $\mathfrak q''$ 在 $\widehat A$ 中的逆像。由 $A\hookrightarrow B$ 的单射性及交换图
+\[
+\begin{tikzcd}[column sep=large,row sep=large]
+ B\arrow[r]&\widehat B\\
+ A\arrow[u]\arrow[r]&\widehat A\arrow[u]
+\end{tikzcd}
+\]
+可知 $\mathfrak p\cap A=0$。因此所讨论的局部环也是
+\[
+ \widehat A_{\mathfrak p}\otimes_A L
+ =\bigl(\widehat A_{\mathfrak p}\otimes_A K\bigr)\otimes_K L
+\]
+在一个素理想处的局部化。由形式光滑性的基变换与局部化性质（19.3.5，iii、iv），只须证明 $\widehat A_{\mathfrak p}\otimes_A K$ 在 $K$ 上形式光滑。由于 $\mathfrak p\cap A=0$，这个环就是 $\widehat A_{\mathfrak p}$。
+
+我们应用（22.2.2）和（22.2.8）。因 $A$ 正则，$\widehat A$ 正则（17.1.5），其局部化 $\widehat A_{\mathfrak p}$ 也正则（17.3.2）。因此（22.2.2，i）由（17.1.1）成立。
+
+当 $p>0$ 时，只须核实（22.2.8，b）。由（22.3.1），对每个 $\alpha$，$\widehat A$ 对离散拓扑相对于 $A_\alpha$ 是形式光滑的 $A$-代数。基变换给出
+\[
+ \widehat A\otimes_{A_\alpha}K_\alpha
+ =\widehat A\otimes_A(A\otimes_{A_\alpha}K_\alpha),
+\]
+它相对于 $K_\alpha$，对离散拓扑是形式光滑的 $(A\otimes_{A_\alpha}K_\alpha)$-代数（19.9.2，iii）。因为 $A$ 是有限 $A_\alpha$-代数且为整环，
+\[
+ A\otimes_{A_\alpha}K_\alpha=K.
+\]
+而 $\widehat A_{\mathfrak p}$ 是 $\widehat A\otimes_A K$ 的局部化，故它对离散拓扑相对于 $K_\alpha$ 是形式光滑的 $K$-代数（19.9.2，iv）；于是对其极大理想预进制拓扑也如此（19.3.8及19.9.5）。这正是（22.2.8，b），从而得证。
+
+当 $p=0$ 时，$\widehat A_{\mathfrak p}$ 的剩余域在 $K$ 上可分，而该局部环正则；由（19.6.4）得到其在 $K$ 上形式光滑。
+
+\noindent\textbf{II）一般情形。}
+令 $\mathfrak s=\mathfrak n\cap A$，$S=A\setminus\mathfrak s$。于是 $S^{-1}A=A_{\mathfrak s}$，且
+\[
+ C=(S^{-1}B)_{S^{-1}\mathfrak n}.
+\]
+这时 $S^{-1}\mathfrak n$ 包含 $A_{\mathfrak s}$ 的极大理想 $\mathfrak sA_{\mathfrak s}$。$A_{\mathfrak s}$ 正则（17.3.2），$S^{-1}B$ 是包含它的有限整代数，所以当 $p>0$ 时，只须验证条件（ii）在 $A_{\mathfrak s}$ 上仍成立。
+
+置 $\mathfrak s_\alpha=\mathfrak s\cap A_\alpha$，考察 $(A_\alpha)_{\mathfrak s_\alpha}$。对 $t\in A\setminus\mathfrak s$，令 $q=p^{h(\alpha)}$。由假设，$t^q\in A_\alpha$，且 $t^q\notin\mathfrak s_\alpha$。若 $S_\alpha=A_\alpha\setminus\mathfrak s_\alpha$，则
+\[
+ A_{\mathfrak s}=S_\alpha^{-1}A,
+\]
+因为在右边有 $t^{-1}=t^{q-1}/t^q$。因此 $A_{\mathfrak s}$ 对 $(A_\alpha)_{\mathfrak s_\alpha}$ 有限；其元素的同一次 $q$ 幂落在后者中，而后者的分式域仍为 $K_\alpha$。这些局部化子环仍滤过递减，故条件（ii）的全部要求都成立。\cmt{M13-G07}{正文展开了原文从幂次条件推出局部化相等的步骤；对分式 $a/t$，其 $q$ 次幂为 $a^q/t^q\in(A_\alpha)_{\mathfrak s_\alpha}$。若不保留这一幂次条件，仅凭“有限扩张”不能直接采用此处相同的局部化子环。}
+\finishproof
+
+\egas{22.3.3}{定理}
+设 $A$ 为完备诺特局部环，$\mathfrak p$ 为其素理想，$B=A_{\mathfrak p}$。令 $\mathfrak q$ 为 $B$ 的完备化 $\widehat B$ 的素理想，并置 $\mathfrak r=\mathfrak q\cap B$。则局部环
+\[
+ \widehat B_{\mathfrak q}
+\]
+对各自的预进制拓扑是形式光滑的 $B_{\mathfrak r}$-代数。\cmt{M13-A03}{初版定理行将所论的局部环误排为 $\widehat B_{\mathfrak p}$。作者《勘误与增补（清单三）》A部，原分册第346页，明确将其改为 $\widehat B_{\mathfrak q}$。正文采用正式修订；结构基环原本就是 $B_{\mathfrak r}$，不是本项勘误所改的对象。此处已核对勘误扫描页，而不采用抽取文本中丢失尖帽或误识下标的结果。}
+
+\eproof
+$B$ 的素理想 $\mathfrak r$ 为 $\mathfrak nB$，其中 $\mathfrak n\subseteq\mathfrak p$ 是 $A$ 的素理想；并且 $B_{\mathfrak r}=A_{\mathfrak n}$。令 $k$ 为 $B_{\mathfrak r}$ 的剩余域，它也是完备局部整环 $A''=A/\mathfrak n$ 的分式域。
+
+$\widehat B$ 对 $B$ 平坦（$0_{\mathrm I}$，7.3.5），所以 $\widehat B_{\mathfrak q}$ 对 $B_{\mathfrak r}$ 平坦（$0_{\mathrm I}$，6.3.2）。由（19.7.1），只须证明闭纤维
+\[
+ \widehat B_{\mathfrak q}\otimes_{B_{\mathfrak r}}k
+ =\widehat B_{\mathfrak q}/\mathfrak r\widehat B_{\mathfrak q}
+\]
+在 $k$ 上形式光滑。若 $\mathfrak q'$ 是 $\mathfrak q$ 在 $\widehat B/\mathfrak r\widehat B$ 中的像，则这个纤维等于
+\[
+ (\widehat B/\mathfrak r\widehat B)_{\mathfrak q'}.
+\]
+依定义，$\mathfrak q'\cap(B/\mathfrak r)=0$；又有
+\[
+ B/\mathfrak r=(A/\mathfrak n)_{\mathfrak p/\mathfrak n},
+\]
+而 $\widehat B/\mathfrak r\widehat B$ 是 $B/\mathfrak r$ 的完备化。因此问题归结为下面的推论。
+\finishproof
+
+\egas{22.3.4}{推论}
+设 $A$ 为完备诺特局部整环，$K$ 为其分式域，$\mathfrak p$ 为 $A$ 的素理想，$B=A_{\mathfrak p}$。对 $\widehat B$ 的每个满足 $\mathfrak q\cap B=0$ 的素理想 $\mathfrak q$，局部环 $\widehat B_{\mathfrak q}$ 对其极大理想预进制拓扑是形式光滑的 $K$-代数，因而在 $K$ 上几何正则。
+
+\eproof
+由（19.8.9），$A$ 含有子环 $A_0$，它或者是特征 $p>0$ 的域上的形式幂级数环，或者是Cohen环上的形式幂级数环，并且 $A$ 是有限 $A_0$-代数。这里记得，Cohen环的分式域特征为零。
+
+$A_0$ 正则（17.3.8），并满足（22.3.2）的条件（i）或（ii）：分式域特征零时用（i）；正特征时用（21.8.8），该处构造的子环还包含 $A_0^p$，所以满足所需幂次条件。只须在（22.3.2）中以这里的 $A,A_0$ 分别代替 $B,A$，即可得到结论。\cmt{M13-G08}{虽然本条按原著编号称为“推论”，它在逻辑上由（22.3.2）直接证明，然后补完上一定理的纤维论证；这里没有用（22.3.3）证明（22.3.4）再反过来证明（22.3.3）的循环。完备性是对起始环 $A$ 的假设，不是断言 $A_{\mathfrak p}$ 本身完备。}
+\finishproof

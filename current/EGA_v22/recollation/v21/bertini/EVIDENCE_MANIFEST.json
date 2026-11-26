@@ -1,0 +1,130 @@
+{
+  "baseline_commit": "99cd048abd72adad984613aaa4f5fef86cd5a6c8",
+  "sources": [
+    {
+      "language": "fr",
+      "path": "archive_20261121/03_sources/EGA5_francais.pdf",
+      "bytes": 16097021,
+      "sha256": "24cf8204184b58b18a46e5f63ecc36d6e791b3c8c96a09daac93de96ebd8e830",
+      "pdf_pages": 171,
+      "physical_pages_used": [
+        78,
+        79,
+        80
+      ],
+      "excerpt_file": "fr78_80_source.pdf",
+      "excerpt_pdf_pages": 3
+    },
+    {
+      "language": "en",
+      "path": "archive_20261121/03_sources/EGAVaiello.pdf",
+      "bytes": 677332,
+      "sha256": "23a20ef32fd16a1bd623c0c08ac080d04fc94f248de12133b713a19d6b0330d9",
+      "pdf_pages": 112,
+      "physical_pages_used": [
+        51,
+        52
+      ],
+      "excerpt_file": "en51_52_source.pdf",
+      "excerpt_pdf_pages": 2
+    }
+  ],
+  "viewed_images": [
+    {
+      "file": "source_pages/fr-077.png",
+      "sha256": "f5cf9af5183dc9bc7efb4a93f317a0779cafb6db23b69e76d4821c0770ef1000",
+      "visual_review": true,
+      "scope": "previous-boundary only"
+    },
+    {
+      "file": "source_pages/fr-078.png",
+      "sha256": "370ec16ebf8b8239950d0f7bb9e8e21ba266c1ccd256ae08a20cc13c0425cacc",
+      "visual_review": true,
+      "scope": "source reading"
+    },
+    {
+      "file": "source_pages/fr-079.png",
+      "sha256": "c7d464906fab37acafd9cd971ba8190f3939230fea1b2f3958da18937329a224",
+      "visual_review": true,
+      "scope": "source reading"
+    },
+    {
+      "file": "source_pages/fr-080.png",
+      "sha256": "fda53e1906fe819856097e552fd51a7d2e153e9cb9a00d4ed6d7237d82bdcf95",
+      "visual_review": true,
+      "scope": "NB only translated; lower 13.4 is adjacent context"
+    },
+    {
+      "file": "source_pages/en-051.png",
+      "sha256": "64bf21cec1481f8f4e07b68ec2af0eb9c427e059f891169ef39ff0445b61d711",
+      "visual_review": true,
+      "scope": "source reading"
+    },
+    {
+      "file": "source_pages/en-052.png",
+      "sha256": "4213b963a3457120a0c82d18760690f6406d73485aa73b1f60d7e3c9f0a358f0",
+      "visual_review": true,
+      "scope": "source reading"
+    },
+    {
+      "file": "source_pages/fr-78-crop.png",
+      "sha256": "d3efda9406127a541775ccc2e67b5181cd46999e755b4b8078fecaf89ed8e8e5",
+      "visual_review": true,
+      "scope": "source reading"
+    },
+    {
+      "file": "source_pages/fr-79-crop.png",
+      "sha256": "df376585c2c08f6fe5a31bdb272e5ba2fb0e6acc4872fe2656bd66f3a58eca0d",
+      "visual_review": true,
+      "scope": "source reading"
+    },
+    {
+      "file": "source_pages/fr-80-crop.png",
+      "sha256": "39b7fb8d3efdf63836e4d63fdddb9227a2cabc64bf6d2aa4408041a0d3a4e09c",
+      "visual_review": true,
+      "scope": "source reading"
+    }
+  ],
+  "other_rendered_images": [
+    "source_pages/fr-076.png",
+    "source_pages/fr-081.png",
+    "source_pages/fr-082.png"
+  ],
+  "other_rendered_images_visual_review": false,
+  "new_main_note_ids": [
+    "V21-BER001",
+    "V21-BER002",
+    "V21-BER003",
+    "V21-BER004",
+    "V21-BER005",
+    "V21-BER006",
+    "V21-BER007",
+    "V21-BER008",
+    "V21-BER009",
+    "V21-BER010",
+    "V21-BER011",
+    "V21-BER012",
+    "V21-BER013",
+    "V21-BER014"
+  ],
+  "new_audit_ids": [
+    "V21-BER-E01",
+    "V21-BER-E02",
+    "V21-BER-E03",
+    "V21-BER-E04",
+    "V21-BER-E05",
+    "V21-BER-E06"
+  ],
+  "checks": {
+    "main_and_audit_brace_balance": true,
+    "main_exact_scope_stops_before_13_4": true,
+    "new_main_ids_unique_and_contiguous": true,
+    "historical_note_count": 20,
+    "historical_note_utf8_byte_comparison": true
+  },
+  "compilation_status": "XeLaTeX was not run by this subagent. Parent project owns build and all-page parity records; later final-page visual inspection is separately recorded in checks/v21_bertini_main_visual.json and checks/v21_bertini_report_visual.json.",
+  "later_final_visual_review_records": [
+    "checks/v21_bertini_main_visual.json",
+    "checks/v21_bertini_report_visual.json"
+  ]
+}

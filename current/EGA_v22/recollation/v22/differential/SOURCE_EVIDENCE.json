@@ -1,0 +1,68 @@
+{
+  "source_french_sha256": "24cf8204184b58b18a46e5f63ecc36d6e791b3c8c96a09daac93de96ebd8e830",
+  "source_english_sha256": "23a20ef32fd16a1bd623c0c08ac080d04fc94f248de12133b713a19d6b0330d9",
+  "source_actual_viewed_pages": {
+    "french": [
+      88,
+      89,
+      90
+    ],
+    "english": [
+      57,
+      58,
+      59
+    ]
+  },
+  "french_scope": "88 paragraph2 through90 before§15",
+  "english_scope": "57 More delicate through59 before§15",
+  "old_segment_bytes": 12050,
+  "old_notes": [
+    "V-H-L029",
+    "V-H-L030",
+    "V-H-L031",
+    "V-H-L032",
+    "V-H-L033",
+    "V-H-L034",
+    "V-H-L035",
+    "V-H-L036",
+    "V-H-L037",
+    "V-H-L038",
+    "V-H-L039",
+    "V-H-L040",
+    "V-H-L041",
+    "V-H-L042",
+    "V-H-L043",
+    "V-H-L044",
+    "V-H-L045",
+    "V-H-L046",
+    "V-H-L047"
+  ],
+  "files": [
+    {
+      "file": "en57_59_source.pdf",
+      "size": 86212,
+      "sha256": "0d9de1802de478f2f76e2f19043999f894733874708696dac8feb6c234f602a5"
+    },
+    {
+      "file": "fr88_90_source.pdf",
+      "size": 316093,
+      "sha256": "7c1aed1119001c7bffc8f4f015138e318b84d3f84d5c068902a9a76f45df7e17"
+    },
+    {
+      "file": "inherited_segment_differential_exact.tex",
+      "size": 12050,
+      "sha256": "5c532be7d638b3c25f217ea37f90dd2410fbd0276c37c875bb9b3930737dff15"
+    },
+    {
+      "file": "v22_section14_differential.tex",
+      "size": 11631,
+      "sha256": "d89e6d704ad743ebe017facce29a63561a0bc68522ea09aee1a4ca8b2d502971"
+    },
+    {
+      "file": "v22_section14_differential_audit.tex",
+      "size": 16235,
+      "sha256": "c9e757f11b246f7c082677117d80204a2a2d14e9c0bd6c17333a45ef071c8f89"
+    }
+  ],
+  "full_book_validation": false
+}

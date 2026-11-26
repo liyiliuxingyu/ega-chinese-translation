@@ -1,0 +1,261 @@
+{
+  "edition": 22,
+  "module": "section14_fibers",
+  "frozen_utc": "2026-11-26T01:14:49.725477+00:00",
+  "baseline_remote_main": "79c1100b13427e447fad5525f27d9b64e4d4ead7",
+  "scope": {
+    "fr_physical": "85:Grosso modo through 88:first paragraph end",
+    "en_physical": "55:Grosso modo through 57:before More delicate",
+    "kind": "recollation_of_existing_translation",
+    "includes": "14.1,14.2,14.3,CM necessity paragraph"
+  },
+  "sources": [
+    {
+      "path": "repository/archive_20261121/03_sources/EGA5_francais.pdf",
+      "bytes": 16097021,
+      "sha256": "24cf8204184b58b18a46e5f63ecc36d6e791b3c8c96a09daac93de96ebd8e830",
+      "pages": 171
+    },
+    {
+      "path": "repository/archive_20261121/03_sources/EGAVaiello.pdf",
+      "bytes": 677332,
+      "sha256": "23a20ef32fd16a1bd623c0c08ac080d04fc94f248de12133b713a19d6b0330d9",
+      "pages": 112
+    }
+  ],
+  "source_extracts": [
+    {
+      "path": "v22_work/drafts/fibers/fr85_88_source.pdf",
+      "bytes": 455583,
+      "sha256": "77702ce441092f27bd3f0430ff07ef569f252766ad49eec8306de50d52868e57",
+      "source_physical_pages": [
+        85,
+        86,
+        87,
+        88
+      ],
+      "pages": 4
+    },
+    {
+      "path": "v22_work/drafts/fibers/en55_57_source.pdf",
+      "bytes": 229457,
+      "sha256": "0c31b61acac276c4a13d2177701b565c603c0fce6c61b85c5ebdc995bb74defc",
+      "source_physical_pages": [
+        55,
+        56,
+        57
+      ],
+      "pages": 3
+    }
+  ],
+  "source_images_actually_displayed": [
+    {
+      "path": "v22_work/drafts/fibers/fr85.png",
+      "bytes": 370709,
+      "sha256": "07b56ef0a379d5ab7dabb3c8563adb92651dc22d1fdddbb46552fbe92f4ac319",
+      "actually_displayed": true,
+      "translation_scope_image": true,
+      "note": "Rendered from source PDF and visually read"
+    },
+    {
+      "path": "v22_work/drafts/fibers/fr86.png",
+      "bytes": 367506,
+      "sha256": "574d3e7ffae0128729b883aca74aaa3a43a12b6733ef4d8bd4a9717d56e3bc0f",
+      "actually_displayed": true,
+      "translation_scope_image": true,
+      "note": "Rendered from source PDF and visually read"
+    },
+    {
+      "path": "v22_work/drafts/fibers/fr87.png",
+      "bytes": 392715,
+      "sha256": "1b52e62bcbb6dbbf11d060efee2d66fb194d4611e8cf545e3a89d621080052af",
+      "actually_displayed": true,
+      "translation_scope_image": true,
+      "note": "Rendered from source PDF and visually read"
+    },
+    {
+      "path": "v22_work/drafts/fibers/fr88.png",
+      "bytes": 374007,
+      "sha256": "a687a81f285872a3b8615a7574698941bc2755fc2f7c700813f00fd9597c43b1",
+      "actually_displayed": true,
+      "translation_scope_image": true,
+      "note": "Rendered from source PDF and visually read"
+    },
+    {
+      "path": "v22_work/drafts/fibers/en55.png",
+      "bytes": 145774,
+      "sha256": "7ff50c9f390ca47f16bf6aa6f44816b4227ae53d18359cae1287d636cfb4119c",
+      "actually_displayed": true,
+      "translation_scope_image": true,
+      "note": "Rendered from source PDF and visually read"
+    },
+    {
+      "path": "v22_work/drafts/fibers/en56.png",
+      "bytes": 159423,
+      "sha256": "f13de9a56f00cefc1c3809607e4c9633deba77fe4f0e24b676e8e0fb58dd1a4b",
+      "actually_displayed": true,
+      "translation_scope_image": true,
+      "note": "Rendered from source PDF and visually read"
+    },
+    {
+      "path": "v22_work/drafts/fibers/en57.png",
+      "bytes": 163484,
+      "sha256": "0d00a227d59543da4edf88cda45eebc3a5674948f65a44544390de28efeb7514",
+      "actually_displayed": true,
+      "translation_scope_image": true,
+      "note": "Rendered from source PDF and visually read"
+    },
+    {
+      "path": "v22_work/drafts/fibers/fr86_crop400.png",
+      "bytes": 313961,
+      "sha256": "c2febe1e4f658cbbb5ed5650dd6b5c6c09c58600e502abf4302c81e4129bbd96",
+      "actually_displayed": true,
+      "translation_scope_image": true,
+      "note": "Rendered from source PDF and visually read"
+    },
+    {
+      "path": "v22_work/drafts/fibers/fr87_crop0.png",
+      "bytes": 482510,
+      "sha256": "9522bae79e5c5a24eaef46a34ac7d5357c8b50f507fe466cf3a637eaba5420d7",
+      "actually_displayed": true,
+      "translation_scope_image": true,
+      "note": "Rendered from source PDF and visually read"
+    },
+    {
+      "path": "v22_work/drafts/fibers/fr87_crop550.png",
+      "bytes": 203297,
+      "sha256": "060fa8136b9922c188de7572775e39c98eb34951460f6746409b140a69e43b90",
+      "actually_displayed": true,
+      "translation_scope_image": true,
+      "note": "Rendered from source PDF and visually read"
+    },
+    {
+      "path": "v22_work/drafts/fibers/fr21.png",
+      "bytes": 369379,
+      "sha256": "7c8b235d5cf6f70522c8135901348031bfaedfa232db1c85d3e24868080b26fe",
+      "actually_displayed": true,
+      "translation_scope_image": false,
+      "note": "Cross-reference only; excluded from completed translation scope"
+    }
+  ],
+  "rendered_but_not_displayed": [
+    {
+      "path": "v22_work/drafts/fibers/fr84.png",
+      "bytes": 310790,
+      "sha256": "be0d594a53aaf0a3da1ed177ce741e39818a0bc267455771f91fda993665e6cd",
+      "actually_displayed": false,
+      "translation_scope_image": false
+    },
+    {
+      "path": "v22_work/drafts/fibers/fr89.png",
+      "bytes": 378388,
+      "sha256": "98b008a333bb9e2d2033cdd3d949e7d66a685fc3f16f2cbad383b6ba983fa080",
+      "actually_displayed": false,
+      "translation_scope_image": false
+    }
+  ],
+  "baseline_source": {
+    "path": "repository/current/EGA_v21/continuations/v_dot_late.tex",
+    "bytes": 49224,
+    "sha256": "b07e3ebdfecbb1f1c832e5310c5e7d7f4dab51e89d5fc449f161f1a498cebb21"
+  },
+  "exact_old_segment": {
+    "path": "v22_work/drafts/fibers/inherited_fibers_exact.tex",
+    "bytes": 13268,
+    "sha256": "bce510f914321f70d2c29d75fcfe79373502d54f944445763649639e170b5a69",
+    "start_byte": 9292,
+    "end_byte_exclusive": 22560,
+    "byte_equality_verified": true
+  },
+  "old_notes": {
+    "path": "v22_work/drafts/fibers/HISTORICAL_NOTES.json",
+    "bytes": 9071,
+    "sha256": "bfca3fc93c147426a2557f2f06a8e0eb29ff14baa17e2f027653b61d92528ee3",
+    "ids": [
+      "V-H-L011",
+      "V-H-L012",
+      "V-H-L013",
+      "V-H-L014",
+      "V-H-L015",
+      "V-H-L016",
+      "V-H-L017",
+      "V-H-L018",
+      "V-H-L019",
+      "V-H-L020",
+      "V-H-L021",
+      "V-H-L022",
+      "V-H-L023",
+      "V-H-L024",
+      "V-H-L025",
+      "V-H-L026",
+      "V-H-L027",
+      "V-H-L028"
+    ],
+    "count": 18
+  },
+  "new_sources": [
+    {
+      "path": "v22_work/drafts/fibers/v22_section14_fibers.tex",
+      "bytes": 11770,
+      "sha256": "06a4dac5ca264064ed6b5a6c92cf17877bd1108812f8435c3eb051e72d29777f",
+      "footnotes": [
+        "V22-FIB001",
+        "V22-FIB002",
+        "V22-FIB003",
+        "V22-FIB004",
+        "V22-FIB005",
+        "V22-FIB006",
+        "V22-FIB007",
+        "V22-FIB008",
+        "V22-FIB009",
+        "V22-FIB010",
+        "V22-FIB011",
+        "V22-FIB012",
+        "V22-FIB013",
+        "V22-FIB014"
+      ]
+    },
+    {
+      "path": "v22_work/drafts/fibers/v22_section14_fibers_audit.tex",
+      "bytes": 17027,
+      "sha256": "07d019bf740ba368e50ae0e161b2d0873a08e13a5a9b76bffc6605ccbc553c3a",
+      "audit_sections": [
+        "V22-FIB-E01",
+        "V22-FIB-E02",
+        "V22-FIB-E03",
+        "V22-FIB-E04",
+        "V22-FIB-E05",
+        "V22-FIB-E06"
+      ]
+    },
+    {
+      "path": "v22_work/drafts/fibers/SOURCE_MAP.md",
+      "bytes": 6810,
+      "sha256": "27e4d2b07fe0b2d4cc4d02b1c2488ffd03275a24824fd41e17182d87d8ed9487"
+    }
+  ],
+  "unresolved": [
+    "Original page21/before section5 cross-reference not located",
+    "Dense overwritten handwritten text in French14.1(b) not all individually recoverable; no invented diplomatic transcription"
+  ],
+  "sufficient_hypotheses": [
+    "Each irreducible component Xi has all nonempty geometric f-fibers pure of the same d",
+    "For corrected14.3 all dim f(Xi)>=m and X is CM",
+    "Module version is coherent CM, f quasi-finite, every support component has dimension>=m"
+  ],
+  "independent_proofs_are_translator_owned": true,
+  "standalone_tex_compiled": false,
+  "final_integrated_pdf_visually_checked_by_this_module": false,
+  "primary_external_checks": [
+    "https://stacks.math.columbia.edu/tag/01OF",
+    "https://stacks.math.columbia.edu/tag/00R4",
+    "https://stacks.math.columbia.edu/tag/00ML",
+    "https://stacks.math.columbia.edu/tag/045Q",
+    "https://stacks.math.columbia.edu/tag/00N2"
+  ],
+  "independent_mathematical_review": {
+    "agent": "/root/v22_geometry",
+    "result": "E04 and E05 accepted; two clarifications incorporated: pure dimensions after arbitrary field extension; distinction between pure dimension of chart and local ring dimension at closed points",
+    "record_pending": "v22_work/drafts/geometry/INDEPENDENT_REVIEW_FIBERS.md"
+  }
+}

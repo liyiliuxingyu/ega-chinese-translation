@@ -1,0 +1,285 @@
+% 底本：EGAIV.1.pdf，PDF第216--220页（分册印刷第217--221页）。
+\subsec{23.2. 诺特局部整环的整闭包}
+\source{第四卷第一部分，原分册第217--221页}
+
+\egap{23.2.1}
+以下对任意环 $A$，简记 $A_{\mathrm{red}}$ 为 $A$ 模去其幂零根所得的商环；
+因此若 $X=\Spec A$，则 $X_{\mathrm{red}}=\Spec(A_{\mathrm{red}})$。
+
+称局部环 $A$ 为\emph{单支的}，如果 $A_{\mathrm{red}}$ 是整环，且它的整闭包是局部环；
+这推广了（III，4.3.6）中的定义。
+称 $A$ 为\emph{几何单支的}，如果它单支，并且 $A_{\mathrm{red}}$ 的整闭包这个局部环的剩余域
+是 $A$ 的剩余域的纯不可分扩张。
+整闭局部整环是几何单支的。
+由（23.1.6），完备诺特局部整环是单支的。
+
+\egas{23.2.2}{引理}
+\orig{本小节以下使用第IV章\S\S2、5中阐述的概念和结果；由于本小节的结果在第IV章\S6之前不被使用，这不会造成循环论证。}
+设 $A$ 为整环，$A'$ 为其整闭包。
+典范态射 $f:\Spec A'\to\Spec A$ 为根式态射，当且仅当对每个 $\mathfrak p\in\Spec A$，
+$A_{\mathfrak p}$ 都几何单支。在此情形，$f$ 为同胚。
+
+\eproof
+对每个 $\mathfrak p\in\Spec A$，$A_{\mathfrak p}$ 的整闭包是
+$A'_{\mathfrak p}=(A\setminus\mathfrak p)^{-1}A'$
+（Bourbaki，《交换代数》第V章，\S1，第5目，命题16）。
+$A'_{\mathfrak p}$ 中位于 $\mathfrak pA_{\mathfrak p}$ 上方的素理想都为极大理想
+（同书\S2，第1目，命题1）。
+因此 $f$ 单射，当且仅当每个 $A'_{\mathfrak p}$ 为局部环，也就是每个 $A_{\mathfrak p}$ 单支。
+再由（I，3.5.8），要求所有 $A_{\mathfrak p}$ 几何单支，恰好等价于 $f$ 为根式态射。
+此时 $f$ 又满且闭（II，6.1.10），故为同胚。
+\cmt{P16-N02}{这里的 $A'_{\mathfrak p}$ 是按 $A\setminus\mathfrak p$ 局部化，不是预先在 $A'$ 的某个素理想处局部化；它是否为局部环正是待判定的性质。下文（23.2.9）沿用同一记法。}
+\finishproof
+
+\egas{23.2.3}{引理}
+设 $A$ 为整环，$K$ 为其分式域，$B$ 为诺特环，$\varphi:A\to B$ 使 $B$ 成为平坦 $A$-模。
+设 $K'/K$ 为扩张，令 $B_1=B_{\mathrm{red}}$，以 $R$ 表示 $B_1$ 的全分式环。
+则对 $K'$ 的每个 $A$-子代数 $A'$，典范同态
+\begin{equation}
+ (A'\otimes_AB)_{\mathrm{red}}
+ \longrightarrow (K'\otimes_AR)_{\mathrm{red}}
+ \tag{23.2.3.1}
+\end{equation}
+均为单射。
+\cmt{P16-T03}{扫描底本将此式编号误排为（23.1.3.1），与前面的引理编号重合，且不属于当前小节；正文按所在条目校为（23.2.3.1）。式的内容未改变。}
+
+\eproof
+典范同态 $h:A'\otimes_AB\to K'\otimes_AR$ 可分解为
+\[
+ A'\otimes_AB\xrightarrow{u}K'\otimes_AB
+ \xrightarrow{v}K'\otimes_AB_1
+ \xrightarrow{w}K'\otimes_AR.
+\]
+由 $B$ 对 $A$ 平坦，$u$ 单射。
+$K'$ 对 $K$ 平坦，$K$ 对 $A$ 平坦，所以 $K'$ 对 $A$ 平坦；
+$B_1\to R$ 单射，故 $w$ 单射。
+令 $\mathfrak N$ 为 $B$ 的幂零根，则 $\Ker v=K'\otimes_A\mathfrak N$。
+由于 $B$ 诺特，$\mathfrak N$ 幂零，从而 $\Ker v$ 幂零。
+因此若 $h(z)$ 幂零，则 $v(u(z))$ 幂零，进而 $u(z)$ 幂零，最后由 $u$ 单射得 $z$ 幂零。
+这正是模去幂零根后的同态为单射。
+\finishproof
+
+\egas{23.2.4}{命题}
+设 $A$ 为整环，$K$ 为其分式域，$B$ 为诺特环，
+$\mathfrak q_i$（$1\le i\le n$）为 $B$ 的极小素理想，$\varphi:A\to B$ 为环同态。
+假设各 $B/\mathfrak q_i$ 都是日本环，且 $B$ 为平坦 $A$-模。
+设 $K'/K$ 为有限扩张；以 $(C_\lambda)$ 表示 $K'$ 中所有有限 $A$-子代数中
+以 $K'$ 为分式域者组成的滤过递增族。其并 $A'$ 为 $A$ 在 $K'$ 中的整闭包。则：
+
+\noindent（i）存在指标 $\alpha$，使对每个 $\lambda\ge\alpha$，典范同态
+\begin{equation}
+ (C_\alpha\otimes_AB)_{\mathrm{red}}
+ \longrightarrow(C_\lambda\otimes_AB)_{\mathrm{red}}
+ \tag{23.2.4.1}
+\end{equation}
+均为双射。
+
+\noindent（ii）若 $B$ 还是忠实平坦 $A$-模，则 $\Spec A'\to\Spec C_\alpha$ 为根式态射。
+
+\eproof
+（i）令 $B_1=B_{\mathrm{red}}$，$R$ 为 $B_1$ 的全分式环。
+$A$ 为整环，$B$ 对 $A$ 平坦，所以 $A$ 中非零元素在 $B$ 上正则（$0_{\mathrm I}$，6.3.4），
+在 $B_1$ 上也正则。复合同态 $A\to B\to B_1$ 因而延拓为 $K\to R$。
+故可写为
+\[
+ K'\otimes_AR=(K'\otimes_AK)\otimes_KR=K'\otimes_KR.
+\]
+$R$ 为各 $B/\mathfrak q_i$ 的分式域 $L_i$ 的直积，所以
+$(K'\otimes_AR)_{\mathrm{red}}$ 为有限多个 $L_i$ 的有限扩域的直积。
+由假设，$B/\mathfrak q_i$ 在这些有限扩域中的整闭包有限于 $B/\mathfrak q_i$，从而有限于 $B$。
+因此 $B$ 在 $(K'\otimes_AR)_{\mathrm{red}}$ 中的整闭包 $B'$ 是有限型 $B$-模。
+
+由（23.2.3），各 $(C_\lambda\otimes_AB)_{\mathrm{red}}$ 典范地识别为
+$(K'\otimes_AR)_{\mathrm{red}}$ 的有限 $B$-子代数，因而包含于 $B'$。
+$B$ 诺特且 $B'$ 有限型，所以这些子模组成的滤过族有最大元素
+$(C_\alpha\otimes_AB)_{\mathrm{red}}$，证明了（i）。
+
+（ii）由于 $B$ 对 $A$ 忠实平坦，根据（IV，2.6.1，v），只须证明
+\[
+ \Spec(A'\otimes_AB)\longrightarrow\Spec(C_\alpha\otimes_AB)
+\]
+为根式态射；等价地，只须证明其约化态射为根式态射（I，5.1.6）。
+有 $A'\otimes_AB=\varinjlim_\lambda(C_\lambda\otimes_AB)$，所以（IV，5.13.2）
+\[
+ (A'\otimes_AB)_{\mathrm{red}}
+ =\varinjlim_\lambda(C_\lambda\otimes_AB)_{\mathrm{red}}.
+\]
+由（i），这个直极限等于 $(C_\alpha\otimes_AB)_{\mathrm{red}}$，结论随之得到。
+\finishproof
+
+\egas{23.2.5}{推论}
+设 $A$ 为诺特局部整环，$K$ 为其分式域，$K'/K$ 为有限扩张。
+令 $(C_\lambda)$ 为 $K'$ 中以 $K'$ 为分式域的所有有限 $A$-子代数组成的滤过递增族。
+这些 $C_\lambda$ 是诺特半局部环
+（Bourbaki，《交换代数》第IV章，\S2，第5目，命题9的推论3）。
+则存在 $\alpha$，使对 $\lambda\ge\alpha$，
+\[
+ (\widehat C_\alpha)_{\mathrm{red}}
+ \longrightarrow(\widehat C_\lambda)_{\mathrm{red}}
+\]
+为同构；并且若 $A'$ 为 $A$ 在 $K'$ 中的整闭包，则 $\Spec A'\to\Spec C_\alpha$ 为根式态射
+（参见23.2.2）。
+
+\eproof
+在（23.2.4）中取 $B=\widehat A$。
+各 $B/\mathfrak q_i$ 是完备诺特局部整环，所以为日本环（23.1.5）；
+$B$ 对 $A$ 忠实平坦（$0_{\mathrm I}$，7.3.5）。
+此外 $C_\lambda\otimes_AB=\widehat C_\lambda$
+（Bourbaki，《交换代数》第III章，\S3，第4目，定理3；第IV章，\S2，第5目，命题9的推论3）。
+故所述结论由该命题给出。
+\finishproof
+
+\egas{23.2.6}{推论}
+在（23.2.5）的假设下，$A$ 在 $K'$ 中的整闭包 $A'$ 为半局部环。
+若 $\mathfrak m$ 为 $A$ 的极大理想，则对 $A'$ 的每个极大理想 $\mathfrak m'$，
+$A'/\mathfrak m'$ 都是 $A/\mathfrak m$ 的有限扩张。
+
+\eproof
+对 $\lambda\ge\alpha$，$({\widehat C_\alpha})_{\mathrm{red}}
+\to({\widehat C_\lambda})_{\mathrm{red}}$ 为双射，说明 $C_\lambda$ 的极大理想个数在此后保持不变。
+若 $\mathfrak m_\alpha$ 是 $C_\alpha$ 的极大理想，$\mathfrak m_\lambda$ 是其上方唯一的
+$C_\lambda$ 的极大理想，则 $C_\lambda/\mathfrak m_\lambda$ 与
+$C_\alpha/\mathfrak m_\alpha$ 典范同构。
+结合
+\[
+ \mathfrak m'=\varinjlim\mathfrak m_\lambda,
+ \qquad
+ A'/\mathfrak m'=\varinjlim(C_\lambda/\mathfrak m_\lambda)
+\]
+（$0_{\mathrm{III}}$，10.3.1.3），即得结论。
+\finishproof
+
+\egas{23.2.7}{命题（Y. Mori）}
+设 $A$ 为诺特局部整环，$K$ 为其分式域，$A'$ 为其整闭包。
+则 $A'$ 为半局部Krull环（Bourbaki，《交换代数》第VII章，\S1）。
+换言之，存在一族以 $K$ 为分式域的离散赋值环 $(V_\lambda)$，使
+$A'=\bigcap_\lambda V_\lambda$，并且每个 $x\in K$ 除有限多个 $\lambda$ 外都属于 $V_\lambda$。
+此外，可取 $K$ 中的有限 $A$-子代数 $C$，使 $V_\lambda$ 为 $C_{\mathfrak p_\lambda}$ 的整闭包，
+其中 $(\mathfrak p_\lambda)$ 遍历这个\emph{半局部环} $C$ 的高度1素理想。
+\cmt{P16-E01}{原文末句称 $C$ 为“局部环”，应为“半局部环”。有限于局部环仅保证半局部；这里的证明还要求 $\Spec A'\to\Spec C$ 为同胚，所以一般不能选取局部的 $C$。报告用一维结点局部整环给出反例，并保留不变的Krull性结论。}
+
+先证明下述引理。
+
+\egas{23.2.7.1}{引理}
+设 $A,B$ 为环，$\varphi:A\to B$ 使 $B$ 为忠实平坦 $A$-模，并假设 $A$ 为整环。
+令 $C=B_{\mathrm{red}}$，则复合同态 $\psi:A\to B\to C$ 单射，且可延拓为
+$A$ 的分式域 $K$ 到 $C$ 的全分式环 $R$ 的单同态。
+若 $C'$ 为 $C$ 在 $R$ 中的整闭包，则 $C'\cap K$ 就是 $A$ 的整闭包。
+
+\eproof
+由于 $A$ 是整环，且 $\varphi$ 单射，$\varphi(A)$ 与 $B$ 的幂零根 $\mathfrak N$ 的交为零。
+因 $C=B/\mathfrak N$，$\psi$ 单射。
+每个 $a\in A\setminus\{0\}$ 在 $B$ 上正则（$0_{\mathrm I}$，6.3.4），在 $C$ 上也正则：
+若 $ab\in\mathfrak N$ 而 $b\notin\mathfrak N$，则某个 $n>0$ 满足 $a^nb^n=0$，
+与 $a^n$ 正则而 $b^n\ne0$ 矛盾。因此 $\psi$ 延拓为 $K\hookrightarrow R$。
+
+显然 $A$ 的整闭包 $A'$ 包含于 $C'\cap K$。
+反之，取 $x\in C'\cap K$，令 $S=A\setminus\{0\}$。
+在 $S^{-1}C$ 中，$x$ 满足某个 $C$ 系数首一多项式。
+将其系数提升到 $B$，得到首一多项式 $P\in B[T]$。
+在 $S^{-1}B$ 中，$P(x)$ 的像在 $S^{-1}C$ 中为零；
+由于 $\Ker(S^{-1}B\to S^{-1}C)=S^{-1}\mathfrak N$ 中每个元素均幂零，$P(x)$ 因而是幂零元。
+存在 $N>0$ 使 $P(x)^N=0$，于是首一多项式 $P(T)^N$ 说明 $x$ 对 $B$ 整。
+\cmt{P16-G02}{原文把“$x$ 对 $C$ 整”直接写成“从而对 $B$ 整”，但 $C=B_{\mathrm{red}}$ 是商环而非指定子环。这里补入提升首一方程并取幂的步骤；不假设 $B$ 诺特，也不假设整个幂零根有统一幂零指数，只使用这个元素 $P(x)$ 幂零。该引理结论保持不变。}
+
+故 $B[x]\subset S^{-1}B=B\otimes_AK$ 是有限 $B$-代数。
+由平坦性，$B[x]$ 与 $B\otimes_AA[x]$ 典范同构。
+由忠实平坦下降（Bourbaki，《交换代数》第I章，\S3，第6目，命题11），
+$A[x]$ 是有限型 $A$-模，故 $x\in A'$。
+\finishproof
+
+\eproof
+回到（23.2.7）。将引理用于 $A\hookrightarrow\widehat A$；此同态忠实平坦。
+记 $B=(\widehat A)_{\mathrm{red}}=\widehat A/\mathfrak N$，其中 $\mathfrak N$ 为 $\widehat A$ 的幂零根。
+$B$ 是约化的完备诺特局部环，其全分式环 $R$ 是有限多个域 $L_i$ 的直积。
+$B$ 在 $L_i$ 中的典范像 $B_i$ 为完备诺特局部整环，且以 $L_i$ 为分式域。
+$B$ 在 $R$ 中的整闭包 $B'$ 是各 $B_i$ 的整闭包 $B'_i$ 的直积。
+
+由（23.1.5），$B'_i$ 是有限 $B_i$-代数；由（23.1.6），它还是局部环。
+因此 $B'_i$ 为诺特整闭局部整环，从而为Krull环
+（Bourbaki，《交换代数》第VII章，\S1，第3目，定理2的推论）。
+对每个 $i$，有单同态 $\varphi_i:K\hookrightarrow L_i$，所以
+$\varphi_i^{-1}(B'_i)$ 是 $K$ 中的Krull环。
+由引理，$A'=B'\cap K$，即
+\[
+ A'=\bigcap_i\varphi_i^{-1}(B'_i).
+\]
+有限多个Krull环的交仍为Krull环；再由（23.2.6），$A'$ 半局部。
+
+为证明最后一个断言，利用（23.2.5）选取有限 $A$-子代数 $C\subset K$，
+使 $\Spec A'\to\Spec C$ 为根式态射，且为同胚。
+对任意 $\mathfrak p'\in\Spec A'$，它是位于 $\mathfrak p=\mathfrak p'\cap C$ 上方的唯一素理想；
+并且 $A'_{\mathfrak p'}$ 为 $C_{\mathfrak p}$ 的整闭包。
+上述同胚保持素理想链，故 $\mathfrak p'\mapsto\mathfrak p'\cap C$
+给出两环高度1素理想之间的双射。
+结合Krull环的高度1离散赋值环表示
+（Bourbaki，《交换代数》第VII章，\S1，第6目，定理4），即得结论。
+\cmt{P16-N03}{原文在这里引用（23.2.4）；其应用需取 $B=\widehat A$，正是推论（23.2.5）的内容，正文改引后者以明确假设。上一段原文用同一 $\varphi_i$ 兼写 $K\to L_i$ 与 $R\to L_i$ 的投影，正文用交式避免对象混用。}
+\finishproof
+
+\egas{23.2.8}{注}
+（i）应用（23.2.6）和（23.2.7）时，须注意 $A'$ 不一定诺特；Nagata在 $\dim A=3$ 时的例子说明了这一点［30］。
+
+（ii）若 $A'$ 为 $A$ 在 $K$ 的有限扩张 $K'$ 中的整闭包，则（23.2.7）的结论仍成立。
+事实上，可取以 $K'$ 为分式域的有限 $A$-代数 $B$。
+$B$ 为诺特半局部环，因而为其有限多个极大理想 $\mathfrak m_i$ 处的局部环 $B_{\mathfrak m_i}$ 的交；
+它的整闭包等于 $A'$，并且
+\[
+ A'=\bigcap_i A'_{\mathfrak m_i}
+\]
+（Bourbaki，《交换代数》第II章，\S3，第3目，定理1的推论4）。
+各 $A'_{\mathfrak m_i}$ 为 $B_{\mathfrak m_i}$ 的整闭包，由（23.2.7）为Krull环，
+故 $A'$ 为Krull环。半局部性由（23.2.6）给出；同一推论族也提供有限中间环的表示。
+\cmt{P16-T04}{原文把此处的Krull性依据写成（23.1.13）；本节不存在该条目，按证明实际所用内容改为（23.2.7）。}
+
+（iii）可以证明（［30］，3.3.10），任意诺特整环 $A$（不一定局部）的整闭包都是Krull环。
+
+\egas{23.2.9}{推论}
+设 $A$ 为诺特整环，$A'$ 为其整闭包。
+假设对每个满足 $A\subseteq C\subseteq A'$ 的有限 $A$-代数 $C$，
+以及每个 $C$ 的高度1素理想 $\mathfrak q$，$\mathfrak q\cap A$ 都是 $A$ 的高度1素理想。
+令 $P$ 为 $A$ 中高度1素理想的集合。\cmt{P16-N04}{已核对扫描页：原文在这里确实写的是“$A$ 中”，不是文本抽取结果中的“$A'$ 中”。$A'_{\mathfrak p}$ 指 $(A\setminus\mathfrak p)^{-1}A'$。若 $A$ 为域，交的指标集为空，约定在共同环境域 $K$ 内空交为 $K$。这是识读及记号说明，不是原文错误。}
+则
+\[
+ A'=\bigcap_{\mathfrak p\in P}A'_{\mathfrak p}.
+\]
+
+\eproof
+由于 $A'$ 是无挠 $A$-模，有
+\[
+ A'=\bigcap_{\mathfrak m\in\operatorname{Max}(A)}A'_{\mathfrak m}
+\]
+（Bourbaki，《交换代数》第II章，\S3，第3目，定理1的推论4）。
+故只须证明：对每个极大理想 $\mathfrak m$，$A'_{\mathfrak m}$ 是所有
+$\mathfrak p\subseteq\mathfrak m$、$\htp\mathfrak p=1$ 的 $A'_{\mathfrak p}$ 之交。
+$A'_{\mathfrak m}$ 是 $A_{\mathfrak m}$ 的整闭包，可对 $A_{\mathfrak m}$ 应用（23.2.7）。
+于是存在有限 $A_{\mathfrak m}$-子代数 $B\subseteq A'_{\mathfrak m}$，
+使 $A'_{\mathfrak m}$ 为各 $B_{\mathfrak q}$ 的整闭包之交，$\mathfrak q$ 遍历 $B$ 的高度1素理想。
+
+可将 $B$ 写为 $C_{\mathfrak m}$，其中 $C\subseteq A'$ 为有限 $A$-代数。
+因此，对上述每个 $\mathfrak q$，令 $\mathfrak p=\mathfrak q\cap A$，由假设有
+$\htp\mathfrak p=1$ 且 $\mathfrak p\subseteq\mathfrak m$。
+$B_{\mathfrak q}$ 的整闭包包含 $A_{\mathfrak p}$ 的整闭包 $A'_{\mathfrak p}$，
+后者又包含 $A'_{\mathfrak m}$。
+取交即得
+\[
+ A'_{\mathfrak m}
+ \subseteq\bigcap_{\substack{\mathfrak p\subseteq\mathfrak m\\\htp\mathfrak p=1}}A'_{\mathfrak p}
+ \subseteq\bigcap_{\htp\mathfrak q=1}\overline{B_{\mathfrak q}}
+ =A'_{\mathfrak m},
+\]
+从而证明所需等式。
+\cmt{P16-G03}{这里 $B=C_{\mathfrak m}$ 可由有限个生成元逐一清分母得到；素理想高度不变，是因为在收缩素理想之下的所有素理想仍与局部化乘法集不交。正文写出最后的两个包含；报告补出清分母及高度的细节，未加强推论结论。}
+\finishproof
+
+\egas{23.2.10}{注}
+（i）我们将在（IV，5.6.3及5.6.10）看到：若 $A$ 普遍悬链，则（23.2.9）的假设成立；
+特别地，若 $A$ 为正则环的商环，则成立（IV，5.10.17及5.11.2）。
+最后，若 $\Spec A'\to\Spec A$ 为同胚，该假设也成立；特别包括此态射为根式态射的情形（23.2.2）。
+
+（ii）若删去对 $A'$ 的有限 $A$-子代数的假设，（23.2.9）的结论不一定成立。
+事实上，可构造一个二维诺特局部整环 $A$，其整闭包 $A'$ 有限于 $A$，
+但 $A'$ 中存在位于 $A$ 的高度2极大理想 $\mathfrak m$ 上方的高度1素理想 $\mathfrak p'$；
+同时对 $A$ 的每个高度1素理想 $\mathfrak p$，$A_{\mathfrak p}$ 均整闭（IV，5.6.11）。
+这些 $A_{\mathfrak p}$ 的交不可能等于 $A'$，因为 $A'$ 为Krull环
+（Bourbaki，《交换代数》第VII章，\S1，第5目，命题9）。\hfill（待续。）\par

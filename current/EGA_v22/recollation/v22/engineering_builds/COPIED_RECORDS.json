@@ -1,0 +1,128 @@
+{
+  "schema_version": 1,
+  "edition": 22,
+  "archived_at_utc": "2026-11-26T01:32:23.125212+00:00",
+  "source_root_at_execution": "/workspace/scratch/a886fd56dd2f/v22_work/build_runs",
+  "copied_file_count": 16,
+  "copied_bytes": 200371,
+  "large_or_duplicate_intermediate_pdfs_copied": 0,
+  "attempt_roles": {
+    "attempt_001": "pre-footnote-anchor-layout-fix; historical modular/book result, unchanged final report result",
+    "attempt_002": "final modular/book rebuild; final four-log and all-page comparison outputs"
+  },
+  "files": [
+    {
+      "path": "attempt_001/BUILD_EXECUTION.json",
+      "bytes": 376,
+      "sha256": "41657cea6633704bff2562b18b4f0cc91df29e6123d6884fe1a40250b6e78f98",
+      "source_relative_to_build_runs": "attempt_001/BUILD_EXECUTION.json",
+      "copied_byte_identically": true
+    },
+    {
+      "path": "attempt_001/INPUT_SNAPSHOT.json",
+      "bytes": 2065,
+      "sha256": "551fa708ca8e66e36793b3e1f23e25201413bc7231205a5e1313903c9bb83bdc",
+      "source_relative_to_build_runs": "attempt_001/INPUT_SNAPSHOT.json",
+      "copied_byte_identically": true
+    },
+    {
+      "path": "attempt_001/build_stdout.log",
+      "bytes": 22212,
+      "sha256": "f0a6b55226b80678cc5e093d46bfa5313e755fcc119db30f4d7ab489df32107a",
+      "source_relative_to_build_runs": "attempt_001/build_stdout.log",
+      "copied_byte_identically": true
+    },
+    {
+      "path": "attempt_001/engineering_renders.json",
+      "bytes": 3389,
+      "sha256": "b2f64e62cbbc535fd4628ee0fb43961e76a68a5680b1882a08625c6a0e862f4e",
+      "source_relative_to_build_runs": "attempt_001/engineering_renders.json",
+      "copied_byte_identically": true
+    },
+    {
+      "path": "attempt_001/log_check_stdout.json",
+      "bytes": 24782,
+      "sha256": "a287f30bd90f3ee903cdc2c6b1d2a4743ccdad0cfb0b4dd737073f705d7f5a08",
+      "source_relative_to_build_runs": "attempt_001/log_check_stdout.json",
+      "copied_byte_identically": true
+    },
+    {
+      "path": "attempt_001/parity_stdout.log",
+      "bytes": 1369,
+      "sha256": "cc7e68007999f0350bf0d604169783985ed4df7c3909ec6790737cf35bb08860",
+      "source_relative_to_build_runs": "attempt_001/parity_stdout.log",
+      "copied_byte_identically": true
+    },
+    {
+      "path": "attempt_002/BUILD_EXECUTION.json",
+      "bytes": 994,
+      "sha256": "5387b0bb4ebbce15fe615af3043f6dd0ccca827d7c9e9839597a29ce6ad561a3",
+      "source_relative_to_build_runs": "attempt_002/BUILD_EXECUTION.json",
+      "copied_byte_identically": true
+    },
+    {
+      "path": "attempt_002/INPUT_SNAPSHOT.json",
+      "bytes": 1287,
+      "sha256": "26207c25a845f6b4619b05835bfacd810c4058be3fe94b2ccf3dc538c018242b",
+      "source_relative_to_build_runs": "attempt_002/INPUT_SNAPSHOT.json",
+      "copied_byte_identically": true
+    },
+    {
+      "path": "attempt_002/REPORT_PAGE_MAP.json",
+      "bytes": 4764,
+      "sha256": "0307c0f07ad4485b721af0301a644c2525f834cb09b72835b108bd111adb676e",
+      "source_relative_to_build_runs": "attempt_002/REPORT_PAGE_MAP.json",
+      "copied_byte_identically": true
+    },
+    {
+      "path": "attempt_002/before_current_build_log_summary.json",
+      "bytes": 24782,
+      "sha256": "a287f30bd90f3ee903cdc2c6b1d2a4743ccdad0cfb0b4dd737073f705d7f5a08",
+      "source_relative_to_build_runs": "attempt_002/before_current_build_log_summary.json",
+      "copied_byte_identically": true
+    },
+    {
+      "path": "attempt_002/before_current_pdf_parity.json",
+      "bytes": 1093,
+      "sha256": "468b8c8df45ae85fda00edc04a5a530113ae8771f349f0ff2f23df96152f47b0",
+      "source_relative_to_build_runs": "attempt_002/before_current_pdf_parity.json",
+      "copied_byte_identically": true
+    },
+    {
+      "path": "attempt_002/before_current_structure_verification.json",
+      "bytes": 64132,
+      "sha256": "e65f8ee231d8469759d15f189337219409f48b99e47b4eb31cdd815ec47092d9",
+      "source_relative_to_build_runs": "attempt_002/before_current_structure_verification.json",
+      "copied_byte_identically": true
+    },
+    {
+      "path": "attempt_002/build_stdout.log",
+      "bytes": 22212,
+      "sha256": "dd82f1f47ebc165e410de44ec5d68e0264a216241708b444b84e6e31021f2307",
+      "source_relative_to_build_runs": "attempt_002/build_stdout.log",
+      "copied_byte_identically": true
+    },
+    {
+      "path": "attempt_002/log_check_stdout.json",
+      "bytes": 24782,
+      "sha256": "1c8bbce332098c0dfa97c79d16de87221a60bbbd87eec6e8457d47a3f7d6caa4",
+      "source_relative_to_build_runs": "attempt_002/log_check_stdout.json",
+      "copied_byte_identically": true
+    },
+    {
+      "path": "attempt_002/parity_stdout.log",
+      "bytes": 1369,
+      "sha256": "4bb0a6e1824cd0e43ef385544b148ce3440ed5f9049dc450b746af6e2c75d1c9",
+      "source_relative_to_build_runs": "attempt_002/parity_stdout.log",
+      "copied_byte_identically": true
+    },
+    {
+      "path": "attempt_002/rebuild_book_only.sh",
+      "bytes": 763,
+      "sha256": "a6daf0d523c19227fc32e6fe093b67a368295455cde58846c37c5b8fd741d167",
+      "source_relative_to_build_runs": "attempt_002/rebuild_book_only.sh",
+      "copied_byte_identically": true
+    }
+  ],
+  "readme_sha256": "af5641068d1eb0fab3901f87ec638009e071497538118ac693407fc1a193635b"
+}

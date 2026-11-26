@@ -1,0 +1,305 @@
+% 底本：EGAIV.1.pdf，PDF第170--175页，原分册印刷第171--176页。
+\subsection{可容许性判据}
+回到先前的约定：本小节所考虑的域均具有特征 $p>0$。
+
+\egas{21.8.1}{引理}
+设 $K$ 为域，$k\subseteq K$ 为子域，$(k_\alpha)_{\alpha\in I}$ 为 $K$ 的一族向下滤过的子域，
+且 $k=\bigcap_\alpha k_\alpha$。
+设 $V$ 为 $K$-向量空间，$(a_i)_{1\le i\le n}$ 为有限个向量。
+若它们在 $k$ 上线性无关，则存在 $\gamma\in I$，使它们在 $k_\gamma$ 上也线性无关。
+
+\eproof
+设这族向量在 $K$ 上的秩为 $r$，对 $n-r$ 递推。
+若 $n=r$，它们在 $K$ 上已经线性无关，故在任意子域上均线性无关。
+否则重排后可假定 $a_1,\ldots,a_r$ 在 $K$ 上线性无关，并写成
+\[
+ a_{r+1}=\sum_{i=1}^r\lambda_i a_i,\qquad\lambda_i\in K.
+\]
+由于 $a_1,\ldots,a_{r+1}$ 在 $k$ 上线性无关，这些 $\lambda_i$ 不可能全在 $k$ 中。
+例如设 $\lambda_1\notin k$，便存在 $\beta$，使 $\lambda_1\notin k_\beta$。
+于是 $a_1,\ldots,a_{r+1}$ 在 $k_\beta$ 上线性无关：
+否则 $a_{r+1}$ 可写为前 $r$ 个向量的 $k_\beta$-线性组合，
+而由 $K$-线性无关性，其系数必为上述 $\lambda_i$，产生矛盾。
+将标量域 $K$ 换成 $k_\beta$，并把子域族换成包含于 $k_\beta$ 的共尾子族，
+新的秩至少为 $r+1$，故可应用递推假设。
+\finishproof
+
+\egas{21.8.2}{引理}
+设 $K$ 为域，$p$ 为其特征指数，$k_0\subseteq K$ 为子域，
+$(k_\alpha)$ 为向下滤过的子域族，满足
+\[
+ \bigcap_\alpha k_\alpha(K^p)=k_0(K^p).
+\]
+若 $x_1,\ldots,x_n\in K$ 在 $k_0$ 上 $p$-无关，
+则存在 $\alpha$，使它们在 $k_\alpha$ 上 $p$-无关。
+
+事实上，所谓在子域 $k$ 上 $p$-无关，恰好表示有限族单项式
+\[
+ \prod_{i=1}^n x_i^{m(i)},\qquad0\le m(i)<p,
+\]
+在 $k(K^p)$ 上线性无关。对 $V=K$ 中这一有限向量族以及子域
+$k_\alpha(K^p)$、$k_0(K^p)$ 应用（21.8.1），即得结论。
+
+\egas{21.8.3}{定理}
+设 $K$ 为特征 $p>0$ 的域，$k_0\subseteq K$ 为子域，
+$(k_\alpha)$ 为包含 $k_0$ 的向下滤过的子域族。
+下列条件等价：
+
+\noindent a) $\displaystyle\bigcap_\alpha k_\alpha(K^p)=k_0(K^p)$。
+
+\noindent b) 对每个满足 $\dim_L\Upsilon_{L/K/k_0}<\infty$ 的扩张 $L/K$
+（由（21.7.2），有限型扩张尤其满足这一条件），
+都存在 $\alpha$，使 $k_\alpha$ 是 $L/K$ 的 $k_0$-可容许域。
+
+\noindent b') 对每个形如 $L=K(x)$、其中 $x^p\in K$ 的扩张，
+都存在 $\alpha$，使 $k_\alpha$ 是 $L/K$ 的 $k_0$-可容许域。
+
+\noindent c) 典范映射
+\begin{equation}
+ \Omega^1_{K/k_0}\longrightarrow\varprojlim_\alpha\Omega^1_{K/k_\alpha}
+ \tag{21.8.3.1}
+\end{equation}
+是单射。
+
+典范映射（21.8.3.1）是由典范同态组成的逆系统
+$\Omega^1_{K/k_0}\to\Omega^1_{K/k_\alpha}$（20.5.3.3）取逆极限得到的。
+我们按 $\mathrm c)\Rightarrow\mathrm b)\Rightarrow\mathrm b')\Rightarrow\mathrm a)\Rightarrow\mathrm c)$ 证明。
+
+\eproof
+$k_\alpha$ 为 $L/K$ 的 $k_0$-可容许域，意味着
+$\Upsilon_{L/K/k_0}\to\Upsilon_{L/K/k_\alpha}$ 单射。
+若 $N_\alpha$ 为其核，则 $(N_\alpha)$ 是有限维 $L$-向量空间
+$\Upsilon_{L/K/k_0}$ 中一族向下滤过的子空间。
+因此某个 $N_\alpha$ 为零，等价于它们的交为零。
+这个交正是
+$\Upsilon_{L/K/k_0}\to\varprojlim_\alpha\Upsilon_{L/K/k_\alpha}$ 的核。
+考虑交换图
+\[
+\begin{tikzcd}[column sep=large,row sep=large]
+ \Upsilon_{L/K/k_0}\arrow[r]\arrow[d,hook]
+ &\varprojlim_\alpha\Upsilon_{L/K/k_\alpha}\arrow[d]\\
+ \Omega^1_{K/k_0}\otimes_KL\arrow[r]
+ &\varprojlim_\alpha(\Omega^1_{K/k_\alpha}\otimes_KL).
+\end{tikzcd}
+\]
+左侧竖箭头按定义是单射。
+要证明c)推出b)，只须证明：c)蕴涵对任意 $K$-向量空间 $V$，映射
+\begin{equation}
+ \Omega^1_{K/k_0}\otimes_KV
+ \longrightarrow\varprojlim_\alpha(\Omega^1_{K/k_\alpha}\otimes_KV)
+ \tag{21.8.3.2}
+\end{equation}
+单射。
+当 $V=K^n$ 时，$W\otimes_KV=W^n$ 对任意 $K$-向量空间 $W$ 成立，
+而有限积与逆极限交换，所以结论成立。
+对一般 $V$，任意非零张量 $z$ 都属于
+$\Omega^1_{K/k_0}\otimes_KV'$，其中 $V'\subseteq V$ 有限维。
+它在 $\varprojlim_\alpha(\Omega^1_{K/k_\alpha}\otimes_KV')$ 中的像不为零。
+由逆极限函子的左正合性，这一逆极限向以 $V$ 为系数的逆极限的典范映射为单射，
+故 $z$ 在（21.8.3.2）中的像也不为零。这证明c)推出b)。
+\cmt{L12-N03}{这里只证明典范映射的单射性，不声称无限维 $V$ 的张量积与任意逆极限交换。
+证明利用的是每个张量的有限支撑及逆极限的左正合性；一般的交换同构并非这里的结论。}
+
+b)推出b')直接成立。再证明b')推出a)。在b')中可假设 $L\ne K$。
+由（21.4.8），$\dim_L\Upsilon_{L/K}=\dim_L\Omega^1_{L/K}=1$，
+而 $\Upsilon_{L/K/k_0}$ 是 $\Upsilon_{L/K}$ 的商。
+若前者为零，由（21.6.1.1）不再有需证明的事项。
+否则，二者典范同构；置 $a=x^p$，则 $\Upsilon_{L/K}$ 的一组基为
+$d_K(a)\otimes1$（21.4.8），
+故 $\Upsilon_{L/K/k_0}$ 的一组基为 $d_{K/k_0}(a)\otimes1$。
+于是 $k_\alpha$ 对 $L/K$ 为 $k_0$-可容许，恰好表示 $d_{K/k_\alpha}(a)\ne0$，
+也即 $a\notin k_\alpha(K^p)$（21.4.6）。
+对每个 $a\notin k_0(K^p)$，都有 $d_{K/k_0}(a)\ne0$ 且 $K(a^{1/p})\ne K$，
+故b')保证存在 $\alpha$，使 $a\notin k_\alpha(K^p)$；这正是a)。
+\cmt{L12-T05}{原文在本段两次引（21.4.7），但所用的非完美性模的维数与基公式在（21.4.8）。
+正文分别按（21.4.8）及元素微分非零判据（21.4.6）定位。
+当 $\Upsilon_{L/K/k_0}=0$ 时所有 $k_\alpha$ 已可容许，不应在这一情形假造非零基向量。}
+
+最后证明a)推出c)。选取 $K/k_0$ 的一组 $p$-基 $(x_\lambda)_{\lambda\in J}$，
+则 $(d_{K/k_0}(x_\lambda))$ 是 $\Omega^1_{K/k_0}$ 的一组 $K$-基（21.4.5）。
+对任意有限子集 $H\subseteq J$，由a)和（21.8.2），存在 $\alpha$，
+使 $(x_\lambda)_{\lambda\in H}$ 在 $k_\alpha$ 上 $p$-无关。
+由（21.4.5），相应的 $d_{K/k_\alpha}(x_\lambda)$ 线性无关。
+任意非零微分只含有限多个基向量，故在某个分量 $\Omega^1_{K/k_\alpha}$ 中的像仍非零；
+因此（21.8.3.1）单射。
+\finishproof
+
+\egas{21.8.4}{推论}
+设 $K$ 为特征 $p>0$ 的域，$k_0\subseteq K$ 为子域，
+$(k_\alpha)$ 为包含 $k_0$ 的向下滤过的子域族，满足
+$\bigcap_\alpha k_\alpha(K^p)=k_0(K^p)$。
+若扩张 $L/K$ 满足 $\dim_L\Upsilon_{L/K/k_0}<\infty$，
+则对每个 $K\subseteq K'\subseteq L$，都存在 $\alpha$，
+使 $k_\alpha$ 对 $L/K'$ 是 $k_0$-可容许的。
+
+只须应用（21.8.3）和（21.6.6）。
+
+\egas{21.8.5}{推论}
+在（21.8.4）关于 $K,k_0,(k_\alpha)$ 的假设下，
+对任意满足 $\dim_L\Upsilon_{L/K/k_0}<\infty$ 的扩张 $L/K$，有
+\[
+ \bigcap_\alpha k_\alpha(L^p)=k_0(L^p).
+\]
+
+\eproof
+设 $M/L$ 是使 $\Upsilon_{M/L/k_0}$ 有限维的扩张。
+正合列（21.6.1.1）给出
+\[
+ 0\longrightarrow\Upsilon_{L/K/k_0}\otimes_LM
+ \longrightarrow\Upsilon_{M/K/k_0}
+ \longrightarrow\Upsilon_{M/L/k_0}.
+\]
+假设遂表明 $\Upsilon_{M/K/k_0}$ 也有限维。
+由（21.8.3），存在 $\alpha$，使 $k_\alpha$ 对 $M/K$ 是 $k_0$-可容许的，
+因而对 $M/L$ 也是如此（21.6.6）。
+这对每个使 $\Upsilon_{M/L/k_0}$ 有限维的 $M$ 成立；
+由（21.8.3）中a)与b)的等价性，即得所需交集等式。
+\finishproof
+
+\egas{21.8.6}{推论}
+设 $K$ 为域，$p$ 为其特征指数，$k_0\subseteq K$ 为子域。
+若扩张 $L/K$ 满足 $\dim_L\Upsilon_{L/K/k_0}<\infty$，
+则存在子域 $k\subseteq K$，包含 $k_0(K^p)$，使 $[K:k]<\infty$，
+且 $k$ 对 $L/K$ 为 $k_0$-可容许的。
+
+\eproof
+由（21.8.3），只须构造一族向下滤过的子域 $k_\alpha$，使每个都包含
+$K^p$ 和 $k_0$，且 $[K:k_\alpha]<\infty$，交等于 $k_0(K^p)$。
+选取 $K/k_0$ 的一组 $p$-基 $(x_\lambda)_{\lambda\in J}$。
+对每个有限子集 $H\subseteq J$，令 $k_H$ 为由 $k_0(K^p)$ 及所有
+$x_\lambda$（$\lambda\in J\setminus H$）生成的子域。
+由定义，$(x_\lambda)_{\lambda\in H}$ 为 $K/k_H$ 的一组 $p$-基，
+于是 $[K:k_H]=p^{|H|}$，且 $k_{H\cup H'}\subseteq k_H\cap k_{H'}$。
+$K$ 在 $k_0(K^p)$ 上的受限 $p$-单项式展开唯一，
+而 $k_H$ 只含对 $H$ 中变量的指数全为零的展开；故
+$\bigcap_Hk_H=k_0(K^p)$，所需条件均已满足。
+\cmt{L12-G08}{原文对最后的交集等式只说“立即得到”。
+正文补出 $p$-单项式唯一展开的依据，避免把无限多个子域的交与某种未经证明的极限交换混同。
+在特征指数 $p=1$ 的情形可直接取 $k=K$；本小节的 $p$-基构造用于正特征。}
+\finishproof
+
+\egas{21.8.7}{注记}
+（i）已经看到（21.7.2）：若 $L/K$ 有限型，
+则对每个子域 $k_0\subseteq K$，$\Upsilon_{L/K/k_0}$ 都有限维。
+当 $L/K$ 可分时亦然，因为此时 $\Upsilon_{L/K/k_0}=0$（20.6.19）。
+最后，若 $L$ 是 $K$ 的某个可分扩张 $L_0$ 的有限型扩张，
+同（21.8.5）的论证仍表明 $\Upsilon_{L/K/k_0}$ 有限维；
+事实上，它可以与 $\Upsilon_{L/L_0}$ 的一个子空间同构。
+
+（ii）在（21.8.5）及（21.8.3，b）的陈述中，
+不能删除 $\Upsilon_{L/K/k_0}$ 有限维的假设。
+取 $k_0=\mathbf F_p$，并取 $[K:K^p]$ 为可数无限的域 $K$，
+例如可数无限个不定元的有理函数域
+$\mathbf F_p(X_1,X_2,\ldots)$。
+用（21.8.6）的构造，可找到严格递减的子域列 $(K_n)_{n\ge0}$，
+使 $K_0=K$ 且 $\bigcap_nK_n=K^p$。
+
+我们将构造包含于 $K$ 的、在 $K^p$ 上有限的扩张组成的递增列 $(M_n)$，
+使得若 $M=\bigcup_nM_n$、$L=M^{1/p}$，则 $L$ 是 $K$ 的一个扩张，且使（21.8.5）的结论失效。
+\cmt{L12-T06}{原文误写“$K$ 的有限扩张 $M_n$”，但随后明确置 $M_0=K^p$，
+并把所有 $M_n$ 构造为 $K$ 的子域；相容且实际使用的表述是“$K^p$ 的有限扩张，包含于 $K$”。
+正文据后续公式修正。此处只修正反例构造的基域，不能把作者本来给出的反例称为本次新发现。}
+取 $x\in K\setminus K^p$，置
+\[
+ M_0=K^p,\qquad M_n=K^p(a_1x,\ldots,a_nx)\quad(n\ge1),
+\]
+逐步选择
+\[
+ a_{n+1}\in K_{n+1}\setminus M_n(x).
+\]
+这是可能的，因为 $M_n(x)$ 在 $K^p$ 上有限，而 $K_{n+1}$ 在 $K^p$ 上无限。
+由此得到 $x\notin M=L^p$，但
+\[
+ x=(a_nx)a_n^{-1}\in K_n(M)=K_n(L^p)\qquad(n\ge1).
+\]
+所以 $x\in\bigcap_nK_n(L^p)$ 而 $x\notin k_0(L^p)=L^p$，正是所需反例。
+\cmt{L12-G09}{原文未展开 $x\notin M_n$ 的递推。
+若 $F=M_n$、$x\notin F$，并取 $a=a_{n+1}\notin F(x)$，
+则因 $K^p\subseteq F$，有 $[F(x,a):F]=p^2$，而 $[F(ax):F]\le p$。
+若 $x\in F(ax)$，便有 $a=(ax)/x\in F(ax)$，矛盾；故 $x\notin M_{n+1}$。
+又因 $K^p\subseteq M$，每个 $z\in K$ 都满足 $z^p\in M$，所以 $K\subseteq M^{1/p}$。
+这两点保证所构造对象确实满足反例所需的域包含关系。}
+
+\egas{21.8.8}{命题}
+设 $k$ 为特征 $p>0$ 的域，
+$A=k[[T_1,\ldots,T_r]]$ 为形式幂级数环，
+$K=k((T_1,\ldots,T_r))$ 为其分式域。
+则存在一族向下滤过的诺特子环 $A_\alpha\subseteq A$，
+使 $A$ 对每个 $\alpha$ 都是有限型自由 $A_\alpha$-模，
+且若 $K_\alpha=\operatorname{Frac}(A_\alpha)$，则
+$\bigcap_\alpha K_\alpha=K^p$。
+\cmt{L12-N04}{这里沿用原著记号 $k((T_1,\ldots,T_r))=\operatorname{Frac}(k[[T_1,\ldots,T_r]])$。
+当 $r>1$ 时，不应把它自动解释成逐次Laurent级数域 $k((T_1))\cdots((T_r))$；
+原命题明确指定的是形式幂级数环的分式域。}
+
+\eproof
+有 $K^p=k^p((T_1^p,\ldots,T_r^p))$。
+由（21.8.6）的证明，存在一族向下滤过的子域 $k_\alpha\subseteq k$，
+使每个 $[k:k_\alpha]$ 有限，且 $\bigcap_\alpha k_\alpha=k^p$。
+令
+\[
+ A_\alpha=k_\alpha[[T_1^p,\ldots,T_r^p]].
+\]
+这些是诺特环；若 $(e_j)_{1\le j\le d_\alpha}$ 为 $k/k_\alpha$ 的基，
+则 $e_jT_1^{i_1}\cdots T_r^{i_r}$（$0\le i_\nu<p$）组成 $A$ 的一组 $A_\alpha$-基，
+故 $A$ 对 $A_\alpha$ 有限自由。
+只须证明
+\begin{equation}
+ \bigcap_\alpha k_\alpha((T_1^p,\ldots,T_r^p))
+ =k^p((T_1^p,\ldots,T_r^p)).
+ \tag{21.8.8.1}
+\end{equation}
+由于 $\bigcap_\alpha k_\alpha=k^p$，该等式将由下面两个引理得到。
+\finishproof
+
+\egas{21.8.8.2}{引理}
+若 $k'/k$ 为域扩张，则
+\[
+ k'[[T_1,\ldots,T_r]]\cap k((T_1,\ldots,T_r))=k[[T_1,\ldots,T_r]].
+\]
+
+\eproof
+置 $C=k[[T_1,\ldots,T_r]]$、$D=k'[[T_1,\ldots,T_r]]$。
+因为 $k((T_1,\ldots,T_r))$ 是 $C$ 的分式域，
+只须证明 $D$ 为忠实平坦 $C$-模
+（Bourbaki，\textit{Alg. comm.}，第I章，§3，第5节，命题10）。
+$C,D$ 均为诺特局部环，若 $\mathfrak m$ 是 $C$ 的极大理想，则
+\[
+ D/\mathfrak m^iD\simeq(C/\mathfrak m^i)\otimes_kk'
+\]
+为平坦 $C/\mathfrak m^i$-模。
+应用（$0_{\mathrm{III}}$，10.2.1）和（$0_{\mathrm I}$，6.6.2），即得忠实平坦性。
+\finishproof
+
+\egas{21.8.8.3}{引理}
+设 $k$ 为域，$(k_\alpha)$ 为向下滤过的子域族，置 $k_0=\bigcap_\alpha k_\alpha$。
+假设存在 $k$ 的特征指数的一个幂 $q$，使 $k^q\subseteq k_0$。
+则
+\begin{equation}
+ \bigcap_\alpha k_\alpha((T_1,\ldots,T_r))=k_0((T_1,\ldots,T_r)).
+ \tag{21.8.8.4}
+\end{equation}
+
+\eproof
+只须证明左端的任意非零元素 $f$ 属于右端。
+固定 $\gamma$，选取非零 $g\in k_\gamma[[T_1,\ldots,T_r]]$，
+使 $gf\in k_\gamma[[T_1,\ldots,T_r]]$。
+把 $g$ 换为 $g^q$ 后，仍有 $g^qf\in k_\gamma[[T_1,\ldots,T_r]]$，
+而由特征 $p$ 下的Frobenius公式，$g^q\in k_0[[T_1,\ldots,T_r]]$。
+故不妨从一开始就假设 $g\in k_0[[T_1,\ldots,T_r]]$。
+对每个 $\alpha$ 满足 $k_\alpha\subseteq k_\gamma$，由（21.8.8.2）有
+\[
+ k_\gamma[[T_1,\ldots,T_r]]\cap k_\alpha((T_1,\ldots,T_r))
+ =k_\alpha[[T_1,\ldots,T_r]].
+\]
+$gf$ 属于上式左端，故属于右端。
+这些 $\alpha$ 构成共尾子族，而形式幂级数环的交可逐系数计算，所以
+\[
+ gf\in\bigcap_\alpha k_\alpha[[T_1,\ldots,T_r]]
+       =k_0[[T_1,\ldots,T_r]].
+\]
+于是 $f=(gf)/g\in k_0((T_1,\ldots,T_r))$。
+\cmt{L12-G10}{正文写出了替换分母后仍保留 $g^qf=g^{q-1}(gf)$ 为幂级数这一点，
+以及最后对 $gf$ 而非 $f$ 本身应用逐系数交集。
+分式域通常不能不加条件就与任意交集交换；这里统一分母的步骤依赖 $k^q\subseteq k_0$。}
+\finishproof

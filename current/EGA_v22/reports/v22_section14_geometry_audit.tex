@@ -1,0 +1,124 @@
+% Translator-owned collation and independent geometric checks.
+\head{第14节初段：锥投影、关联预概形与基变换}
+
+\noindent\textbf{实际范围。}
+本模块完整处理法文手稿物理83、84页，以及85页从页首至“这里的$F$与本节开头的$F$不同”为止；英文对应53页末标题、54页全文和55页同一句之前的连续内容。法85页末的“Grosso modo”属于下一模块。本轮实际查看法83--86和英54--55页；法86仅作接点及$C_\eta$环境空间的旁证。另实看法82全页、83页首及英53页末：法82下部为空，法83首有“14. Projections coniques.”，英标题在53末。法83的Grassmann式、84的关联图及85的删划、层记号另经放大读取。原正文、作者可辨删改、英文脚注67分别保留。
+
+基线是公开提交\texttt{79c1100b}所对应的第二十一版实际文件\path{current/EGA_v21/continuations/v_dot_late.tex}。旧段精确字节副本和V-H-L001--010十条旧译校注另存于本模块档案；旧文件不改写。以下“补证”均属本轮译者核验，不是对原稿未写内容的复原。
+
+\subsection*{一、逐段对照与错误归属}
+\begin{longtable}{@{}p{.14\linewidth}p{.19\linewidth}p{.56\linewidth}@{}}
+\toprule 标记 & 法／英物理页 & 内容及本轮实际处理\\\midrule\endhead
+GEO-P01 & 83上／53末、54上 & 第14节标题、附记、连锁命题应前移的编排建议。\\
+GEO-P02 & 83上中／54上 & 中心、局部自由商、$0\le m\le r$、代数定义的投影；保留空中心。\\
+GEO-P03 & 83中／54中 & 闭子预概形、商函子与单态；$P$改$E$属法稿原错，“单态”恢复法稿原字。\\
+GEO-P04 & 83末--84首／54中下 & $Q(C)$与唯一包含中心及截面的线性子簇。\\
+GEO-P05 & 84上／54末 & 一般$f$的受限投影；恢复Si maintenant和$f(X)$，澄清所说定义域。\\
+GEO-P06 & 84中下／55首 & 关联图、$q'$同构与$p'q'^{-1}$；修复英文排式，不视作法文缺文。\\
+GEO-P07 & 84末--85首／55上 & 扩展投影、作者mettons、已删重复句及“在很大程度上”、英文编者脚注67。\\
+GEO-P08 & 85中／55中 & 一般中心的基变换、法稿$X_{k(\eta)}$原错、无限域和空中心边界。\\
+GEO-P09 & 85下／55末段 & 恢复13.4(c)与波浪号，层拉回；$F(S)$按构造订正但不夸大字形辨认。\\
+\bottomrule
+\end{longtable}
+
+\audit{V22-GEO-E01}{法英文本的订正归属}{可恢复文字、原错、删改与数学释义分开}
+法83页在“sous-schéma”处手添“pré”和“fermé”，故应保留“闭子预概形”。同页$\operatorname{Grass}_{r-m+1}(P)$与下一行$\operatorname{Grass}_{r-m+1}(E)$冲突，正确参数是$E$；这个错确实见于法稿。相反，闭浸入论证中的“monomorphisme”在法稿清楚可见并有下划线，英文才误为同态，不能把正确词归为本版猜补。
+
+法84页写“Si maintenant”及$f(X)$，两个投影图和$q'$的逆都明确；英文的“If not”、$f(x)$及$X(M)^{p_c}_{Q(C)}$是不同性质的转写错误。法85页关于中心的环境空间确实误写$X_{k(\eta)}$，所以改$P_{k(\eta)}$应归为法稿订正。法85页的13.4(c)及波浪号已恢复；层记号括号中的字母仍不够清楚，正文按中心变量$C$订正不代表字形审定。
+
+法85页首两行划去的重复说明可辨：“同样将它记作$p_C$是方便的，以表明它对$C$的依赖”；随后“在很大程度上”亦被划去。正文采用作者改后的有效叙述，删去文字放入脚注。法83、85的少量密集覆打旧字未可靠辨出，不把它们重构为新的数学条件。英文脚注67保留为编者询问，和作者正文分开。
+
+\audit{V22-GEO-E02}{商函子及闭浸入}{任意基变换后仍成立的独立补证}
+设$S$为任意基预概形，并有局部自由模的正合列
+\[
+0\longrightarrow G\longrightarrow E\longrightarrow F\longrightarrow0,
+\]
+\[
+\operatorname{rk}E=r+1,\quad
+\operatorname{rk}G=m+1,\quad
+\operatorname{rk}F=r-m.
+\]
+由于$F$局部自由，此正合列局部分裂，故任意基变换后仍正合。本文使用$P(E)$参数化秩一商的约定；可与\href{https://stacks.math.columbia.edu/tag/01OA}{Stacks Project，Tag 01OA，射影丛的泛商描述}核对，而不混入其对偶的子线约定。
+
+对任意$T\to S$，给定商$G_T\twoheadrightarrow L$，其中$L$可逆，令$K$为其核。$K$局部自由秩$m$，并有
+\[
+0\longrightarrow L=G_T/K
+ \longrightarrow E_T/K\longrightarrow F_T\longrightarrow0.
+\]
+故$E_T/K$局部自由秩$r-m+1$，定义所需Grassmann点。反过来，若$E_T\twoheadrightarrow H$是该秩的局部自由商，$K$为其核，且$K\subset G_T$，则它诱导满射$H\twoheadrightarrow F_T$；其核$G_T/K$为局部自由秩一。因此该构造把$P(G)$精确识别为Grassmann函子中满足$K\subset G_T$的子函子，而且两个构造互逆。
+
+这个子函子还是闭的。记Grassmann预概形上的泛核为$K_{\mathrm{univ}}$；条件$K\subset G_T$就是复合
+\[
+K_{\mathrm{univ}}\longrightarrow E_{\mathrm{univ}}
+ \longrightarrow F_{\mathrm{univ}}
+\]
+在基变换后为零。局部取基后，这正是一个有限矩阵的所有系数同时为零，故由闭子预概形表示，并与任意基变换相容。这直接证明闭浸入，不需对基底加约化、诺特或域的假设。
+
+原稿采用的另一条论证也正确：函子上核的可恢复性给出单态；$P(G)$在$S$上固有、Grassmann对象在$S$上分离，使此单态固有；固有单态为闭浸入。最后一步的现代准确表述见\href{https://stacks.math.columbia.edu/tag/04XV}{Stacks Project，Tag 04XV}。这里的证明与上述矩阵定义相互校验，不能用“几何点上单射”替代对所有$T$的单态。
+
+对更一般的秩$t$商$G_T\twoheadrightarrow L$，同理得到秩$r-m+t$的商$E_T/K$。这给出原稿所说从$G$的Grassmann预概形到$E$的Grassmann预概形的闭浸入。线性子预概形$P(E_T/K)$包含$C_T=P(F_T)$，恰好表示$E_T\to F_T$经$E_T/K$分解，也就是$K\subset G_T$。这解释原文为何强调“在函子的意义下”。
+
+\audit{V22-GEO-E03}{截面唯一性、关联图和拉回层}{不只核对几何纤维}
+记$Q=P(G)$，其泛商为$G_Q\twoheadrightarrow L=\mathscr O_Q(1)$，泛核为$K$，并令$H=E_Q/K$。关联预概形由秩一商函子自然识别为
+\[
+I=P_Q(H),\qquad
+\begin{tikzcd}[column sep=large]
+P(E) & I\arrow[l,"q"']\arrow[d,"p"]\\
+     & Q.
+\end{tikzcd}
+\]
+$p$为相对维数$r-m$的射影丛。它上的一个$T$值点给出线商$E_T\twoheadrightarrow M$及线商$G_T\twoheadrightarrow L_T$，并满足$\Ker(G_T\to L_T)\subset\Ker(E_T\to M)$。这正是某一包含$C_T$的余维$m$线性子预概形连同其上的一个截面。
+
+令$U=P(E)\setminus P(F)$。对$T\to U$，线商$E_T\twoheadrightarrow M$在$G_T$上的限制满射：$P(F)$正是这一限制为零的闭零点概形，其补集是像生成可逆模的开集。更具体地，局部取$M$的基后，$G_T\to M$由若干函数给出；映入补集意味着这些函数生成单位理想，故该映射满射。取$K_T=\Ker(G_T\to M)$便得到唯一的$Q$值点及$P(E_T/K_T)$。反之，关联点位于$q^{-1}(U)$时，$L_T\to M$是两个可逆模间的满射，故是同构。因此
+\[
+q^{-1}(U)\xrightarrow{\sim}U
+\]
+在函子意义下成立，并与任意基变换相容。这既证明了原文“唯一的$L$”，也证明了$q'$不是仅在几何点上的双射。
+
+对任意$f:X\to P(E)$，取$\widetilde X=X\times_{P(E)}I$。由关联族的定义，它就是$X^{(m)}_{Q(C)}$。前一个开集同构经$f$拉回，立即得到
+\[
+q_X^{-1}\bigl(X-f^{-1}(C)\bigr)
+ \simeq X-f^{-1}(C),
+\qquad
+p_C^X=p'\circ(q')^{-1}.
+\]
+这里不要求$f$是浸入、有限、平坦或有限型。若$\mathcal M$是$X$上的模层，则它在关联空间上的逆像为$q_X^*\mathcal M$；在上述开集上，拉回经$q'$等同于$\mathcal M$的限制。拉回的函子性给出任意进一步基变换的相容性，不能从这一形式相容性推出$q_X$平坦或推出$\mathcal M$的任何深度性质。
+
+所给复合的定义域是$X-f^{-1}(C)$。说它等于$X$当且仅当$f^{-1}(C)$为空是集合及开子预概形的恒等事实，不应误读为任何延拓的障碍判据。比如$m=0$时$Q\simeq S$，受限锥投影就是结构态射的限制，即使$X$与中心相交，结构态射仍定义在整个$X$上。
+
+\audit{V22-GEO-E04}{仿射丛与向量丛的区别}{不能由局部分裂擅定全局零截面}
+原段没有宣称$P(E)\setminus P(F)\to P(G)$是一个带指定零截面的向量丛。为防止将它的几何解释过度加强，以下说明其准确结构。
+
+沿用上节的$Q,L,H$。存在局部分裂正合列
+\[
+0\longrightarrow L\longrightarrow H\longrightarrow F_Q\longrightarrow0.
+\]
+$P_Q(H)\setminus P_Q(F_Q)$的$T$值点，是$H_T$的线商，其在$L_T$上的限制为同构。用此同构将商线识别为$L_T$后，这恰好是上述包含$L_T\hookrightarrow H_T$的一个收缩映射。任意两个收缩的差是唯一的$F_T\to L_T$；反过来，将此类同态加到一个收缩上仍为收缩。因此这个开集是加法向量丛
+\[
+\mathbf V_Q\!\left(
+ \mathscr H\!om(F_Q,L)^\vee\right)
+\]
+的一个挠子，这里的$\mathbf V(A)=\operatorname{Spec}\operatorname{Sym}(A)$沿用EGA约定。其在每个局部分裂上等同于相对$r-m$维仿射空间，故为Zariski局部平凡仿射丛；过渡映射一般含平移项。只有选择收缩（例如选择原正合列的分裂）后，才得到带零截面的向量丛识别。为避免向量丛与其模的对偶混淆，也可完全用其试验对象上的加法群$\Hom(F_T,L_T)$描述这一作用。
+
+这一差别确有实际例子。取$S=\mathbf P^1_k$，齐次坐标$[s:t]$，并取正合列
+\[
+0\longrightarrow\mathscr O_S(-2)
+ \xrightarrow{\,(-t,s)\,}\mathscr O_S(-1)^{\oplus2}
+ \xrightarrow{\,(s,t)\,}\mathscr O_S\longrightarrow0.
+\]
+在$s\ne0$及$t\ne0$的两张图中可直接检查正合性。令$G=\mathscr O_S(-2)$、$E=\mathscr O_S(-1)^{\oplus2}$、$F=\mathscr O_S$，则$m=0$、$r=1$、$Q=P(G)\simeq S$。如果$P(E)\setminus P(F)\to S$有截面，这个截面给出的线商在$G$上为同构，就给出$E\to G$的收缩。但
+\[
+\Hom_S\bigl(\mathscr O_S(-1),\mathscr O_S(-2)\bigr)
+ =H^0\bigl(S,\mathscr O_S(-1)\bigr)=0,
+\]
+所以根本不存在非零的$E\to G$，更不可能有收缩。最后的上同调等式也可核对\href{https://stacks.math.columbia.edu/tag/01XS}{Stacks Project，Tag 01XS，射影空间扭曲层上同调}。此仿射丛没有截面，因而不可能作为$S$概形同构于任何向量丛的全空间。该例只反驳未经分裂就声称全局向量丛的加强说法，不反驳原稿的锥投影或关联族构造。
+
+\audit{V22-GEO-E05}{一般中心与无限域的量词}{空中心端点及推广条件}
+现在令$S=\Spec(k)$，固定$\dim P=r$。参数Grassmann概形$B=\operatorname{Grass}^{m+1}(P)$是整的，具有标准开仿射胞腔$\mathbb A_k^{(m+1)(r-m)}$。在其一般点$\eta$上谈论中心，须先扩域到$k(\eta)$；中心位于$P_{k(\eta)}$而非$X_{k(\eta)}$。这个区分是构造性的，和$X$是否浸入$P$无关。
+
+假定某一具体性质已经证明在参数空间的非空开集$B^\circ$上成立。胞腔与$B^\circ$的交仍是非空开集。若$k$无限，非零多项式不能在$k^N$的所有点上消失；对$N$归纳即可证明这一点。因此$k$点在$\mathbb A_k^N$中稠密，$B^\circ$中存在$k$点。若$N>0$，该非空开集有无穷多个$k$点：否则删去这有限多个闭点仍是非空开集，又应有$k$点，矛盾。在本节$0\le m\le r$的范围中，$N>0$恰好等价于$m<r$。
+
+若$m=r$，则$B$只有一点，中心是唯一的空线性子空间；$Q(C)=P(E)$、$p_C$为恒等态射。这说明原稿无条件的“事实上无穷多个”需要上述端点修正。
+
+本论证的前提是好参数集合已经包含非空开集。由一般点成立推出这一前提，必须针对所讨论的性质证明适用的开放性、可构造性或推广引理；任意性质没有这样的结论。例如“参数点恰好为一般点”本身虽在一般点成立，却不包含正维参数概形的任何非空开集。原段是对后来将用到的几何性质的概括和编排建议，不是对任意性质的无条件推广定理；本模块不据其措辞解除后续14.1--14.6各自的假设审查。
+

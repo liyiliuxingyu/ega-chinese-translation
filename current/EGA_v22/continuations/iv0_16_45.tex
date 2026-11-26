@@ -1,0 +1,299 @@
+% EGAIV.1.pdf, PDF pp.31--38, printed pp.32--39.
+\subsection{深度与余深度}
+\source{EGA IV 第一部分，印刷第32--36页；上传PDF第31--35页\orig{在第III章第三部分中，我们将从上同调的观点，并在更一般的框架中，发展深度的概念。}}
+
+\egas{16.4.1}{命题}
+设 $A$ 为诺特局部环，$\mm$ 为其极大理想，$M$ 为有限型 $A$-模。则每个由 $\mm$ 的元素组成的 $M$-正则序列 $(x_i)_{1\leq i\leq r}$（15.1.7），都为 $M$ 的一个参数系的一部分。
+\begin{proof}
+对 $r$ 作归纳。考虑 $A$-模 $N=M/(x_1M+\cdots+x_{r-1}M)$。由归纳假设，$x_1,\ldots,x_{r-1}$ 为 $M$ 的参数系的一部分，所以 $\dim N=\dim M-(r-1)$（16.3.7）。由于乘以 $x_r$ 在 $N$ 上单射，$x_r$ 不属于 $N$ 的任何伴随素理想。由（16.3.4），
+\[
+ \dim(N/x_rN)=\dim N-1,
+\]
+也就是
+\[
+ \dim\bigl(M/(x_1M+\cdots+x_rM)\bigr)=\dim M-r.
+\]
+结论因而由（16.3.7）得到。
+\end{proof}
+因此，当 $M\ne0$ 时，由 $\mm$ 的元素组成的 $M$-正则序列，至多有 $\dim M$ 个元素。\cmt{D4-H05}{与（16.3.6）相同，前面的“为参数系的一部分”须按 $M\ne0$ 阅读。对零模，任意有限序列在本书的正则性定义下都正则，而其维数为 $-\infty$。原文紧接着明确在长度界中加入了 $M\ne0$。}
+
+\egas{16.4.2}{引理}
+设 $A$ 为诺特局部环，$\mm$ 为其极大理想，$k=A/\mm$ 为其剩余域，$M$ 为一个 $A$-模。由 $\mm$ 的元素组成的 $M$-正则序列 $(x_i)_{1\leq i\leq n}$ 为极大序列，当且仅当
+\cmt{D4-E01}{此处原文没有假定 $M$ 有限型。按这样的字面范围，引理不成立：在 $A=k[x,y]_{(x,y)}$ 上取所有高度1素理想商模的直和，空正则序列已极大，却没有非零 $\Hom_A(k,M)$。错误在于对可能无限的伴随素理想族使用有限素理想回避。加入 $M$ 有限型可修补；本版报告给出完整反例及修补证明。}
+\[
+ \Hom_A\bigl(k,M/(x_1M+\cdots+x_nM)\bigr)\ne0.
+\]
+\begin{proof}
+说 $(x_i)$ 极大，表示对任何 $x\in\mm$，乘以 $x$ 在
+$N=M/(x_1M+\cdots+x_nM)$ 上都不单射；等价地，$\mm$ 包含于 $N$ 的伴随素理想之并（Bourbaki，\textit{交换代数}，第四章，§1，第1目，命题2的推论2）。原文随后由 $\mm$ 极大，断言它必等于其中一个伴随素理想（同书，第二章，§1，第1目，命题2）。于是存在 $\xi\in N$，其零化理想为 $\mm$；故 $N$ 的子模 $A\xi$ 同构于 $A/\mm=k$，由此得到引理。
+\end{proof}
+
+\egas{16.4.3}{引理}
+设 $A$ 为诺特局部环，$\mm$ 为其极大理想，$k=A/\mm$ 为其剩余域，$M$ 为 $A$-模，$(x_i)_{1\leq i\leq n}$ 为由 $\mm$ 的元素组成的 $M$-正则序列。则 $A$-模
+\[
+ \Hom_A\bigl(k,M/(x_1M+\cdots+x_nM)\bigr)
+ \quad\text{与}\quad \Ext_A^n(k,M)
+\]
+同构；当 $n\geq1$ 时，它们还同构于 $\Ext_A^{n-1}(k,M/x_1M)$。
+\begin{proof}
+对 $n$ 作归纳；$n=0$ 时结论直接成立。令 $N=M/x_1M$。序列 $(x_i)_{2\leq i\leq n}$ 为 $N$-正则序列，故
+\[
+ \Hom_A\bigl(k,M/(x_1M+\cdots+x_nM)\bigr)
+ =\Hom_A\bigl(k,N/(x_2N+\cdots+x_nN)\bigr)
+\]
+由归纳假设同构于 $\Ext_A^{n-1}(k,N)$。正合列
+$0\to M\xrightarrow{x_1}M\to N\to0$ 给出Ext正合列
+\begin{equation}
+ \begin{aligned}
+ \Ext_A^{n-1}(k,M)&\longrightarrow\Ext_A^{n-1}(k,N)\\
+ &\longrightarrow\Ext_A^n(k,M)\xrightarrow{x_1}\Ext_A^n(k,M).
+ \end{aligned}
+ \tag{16.4.3.1}
+\end{equation}
+归纳假设表明，$\Ext_A^{n-1}(k,M)$ 同构于
+$\Hom_A(k,M/(x_1M+\cdots+x_{n-1}M))$；后者为零，因为 $(x_i)_{1\leq i\leq n-1}$ 不是极大的 $M$-正则序列（16.4.2）。\cmt{D4-H06}{这里仅用到（16.4.2）中正确的一个方向：若存在非零 $\Hom_A(k,N)$，则 $\mm$ 中每个元素都在 $N$ 上为零因子。因而上一引理在任意模情形的反例，不直接反驳本引理；报告作了区分。}
+
+另一方面，$x_1\in\mm$，故对任意 $A$-模 $T$，乘以 $x_1$ 在 $\Hom_A(k,T)$ 上为零，从而在所有 $\Ext_A^i(k,T)$ 上也为零。由（16.4.3.1）得到引理的各断言。
+\end{proof}
+
+\egas{16.4.4}{推论}
+设 $A$ 为诺特局部环，$\mm$ 为其极大理想，$k=A/\mm$ 为其剩余域，$M\ne0$ 为有限型 $A$-模。所有由 $\mm$ 的元素组成的极大 $M$-正则序列都有相同的元素个数；这个数等于使 $\Ext_A^n(k,M)\ne0$ 的最小整数 $n$。
+
+\egas{16.4.5}{定义}
+设 $A$ 为诺特局部环，$\mm$ 为其极大理想，$M$ 为有限型 $A$-模。称由 $\mm$ 中元素组成的 $M$-正则序列的元素个数的上确界为 $M$ 的\textbf{深度}，记作 $\prof_A M$ 或 $\prof M$。
+
+所以 $\prof M=+\infty$ 当且仅当 $M=0$，而由（16.4.1），
+\begin{equation}
+ \prof M\leq\dim M\qquad(M\ne0).
+ \tag{16.4.5.1}
+\end{equation}
+对任意 $k>0$，有 $\prof(M^k)=\prof M$。
+
+\egas{16.4.6}{命题}
+设 $A$ 为诺特局部环，$\mm$ 为其极大理想，$M$ 为有限型 $A$-模。
+\begin{enumerate}[label=(\roman*)]
+ \item $\prof M=0$ 的充要条件是 $\mm\in\Ass M$，也就是 $M$ 含有同构于剩余域 $k=A/\mm$ 的子模。
+ \item 对每个属于 $\mm$ 的 $M$-正则元素 $x$，有
+ \begin{equation}
+  \prof(M/xM)=\prof M-1.
+  \tag{16.4.6.1}
+ \end{equation}
+ \item 若 $M\ne0$，则
+ \begin{equation}
+  \prof M\leq\inf_{\pp\in\Ass M}\dim(A/\pp)\leq\dim M.
+  \tag{16.4.6.2}
+ \end{equation}
+ \item 有 $\prof_A M=\prof_{\widehat A}\widehat M$。
+\end{enumerate}
+\begin{proof}
+（i）$\prof M=0$ 表示不存在 $x\in\mm$ 使数乘在 $M$ 上单射，即每个 $x\in\mm$ 都属于 $M$ 的某个伴随素理想（Bourbaki，\textit{交换代数}，第四章，§1，第1目，命题2的推论2）。而 $\mm$ 只有在等于某个伴随素理想时，才能被这些理想的并覆盖（同书，第二章，§1，第1目，命题2）。
+
+（ii）若 $(x_i)_{1\leq i\leq m}$ 是由 $\mm$ 中元素组成的 $(M/xM)$-正则序列，则将 $x$ 放在这些元素之前，得到 $M$-正则序列。根据定义，前一序列极大时，所得序列也极大。由此得到结论。
+
+（iii）对 $n=\prof M$ 作归纳，$n=0$ 时结论直接成立。使用下面的引理。
+\renewcommand{\qedsymbol}{}
+\end{proof}
+
+\egas{16.4.6.3}{引理}
+设 $A$ 为诺特环，$M$ 为有限型 $A$-模，$t\in A$ 为 $M$-正则元素。则对每个 $\pp\in\Ass M$，包含 $\pp+At$ 的素理想中的每个极小者都属于 $\Ass(M/tM)$。
+\begin{proof}
+已知有正合列 $0\to M'\to M\to M''\to0$，其中
+$\Ass M'=\{\pp\}$、$\Ass M''=\Ass M-\{\pp\}$（Bourbaki，\textit{交换代数}，第四章，§1，第1目，命题4）。由于 $t$ 为 $M$-正则，它也是 $M'$-正则和 $M''$-正则的（同处，命题2的推论2）。由此，（15.1.18）给出正合列
+\[
+ 0\longrightarrow M'/tM'\longrightarrow M/tM\longrightarrow M''/tM''\longrightarrow0.
+\]
+因此 $\Ass(M'/tM')\subset\Ass(M/tM)$。又包含 $\pp$ 的素理想正是 $\Supp M'$ 的点（同处，第3目，命题7），所以包含 $\pp+At$ 的素理想正是
+$M'/tM'=M'\otimes_A(A/tA)$ 的支集的点（$0_{\mathrm I}$，1.7.5）。这些素理想中的极小元属于 $\Ass(M'/tM')$（Bourbaki，同处，第3目，命题7的推论1），从而也属于 $\Ass(M/tM)$。
+\end{proof}
+回到（iii）的证明。取 $M$-正则元素 $x\in\mm$，由（ii），有 $\prof(M/xM)=n-1$。对任意 $\pp\in\Ass M$，引理给出属于 $\Ass(M/xM)$ 且包含 $\pp+xA$ 的素理想 $\pp'$。因 $x$ 为 $M$-正则，$x\notin\pp$，故 $\pp'\ne\pp$，从而
+$\dim(A/\pp')\leq\dim(A/\pp)-1$。归纳假设给出 $n-1\leq\dim(A/\pp')$，所以 $n\leq\dim(A/\pp)$。
+
+（iv）可限于 $M\ne0$。回忆 $\widehat M\simeq M\otimes_A\widehat A$（$0_{\mathrm I}$，7.3.3）；由于 $\widehat A$ 在 $A$ 上平坦，有典范同构
+\[
+ \Ext_A^i(k,M)\otimes_A\widehat A
+ \simeq\Ext_{\widehat A}^i(k,M\otimes_A\widehat A),
+\]
+因为 $k\simeq k\otimes_A\widehat A$（$0_{\mathrm{III}}$，12.3.5）。由（16.4.4）及 $\widehat A$ 在 $A$ 上忠实平坦（$0_{\mathrm I}$，7.3.5），得到（iv）。
+
+\egap{16.4.6.4}
+若 $\pp$ 是 $A$ 的素理想，既可能有
+$\prof_{A_{\pp}}M_{\pp}<\prof_A M$，也可能有反向的严格不等式。
+第一种情形的例子：取维数至少为1的局部整环 $A$。则 $\prof A\geq1$，但其分式域 $K$ 满足 $\prof K=0$。
+
+第二种情形：取维数至少为2的诺特局部整环 $A_0$，极大理想为 $\mm_0$，剩余域为 $k=A_0/\mm_0$。令 $A=A_0\oplus\jj$ 为 $A_0$ 由 $A_0$-模 $k$ 作出的平凡扩张（18.2.3），其中理想 $\jj$ 在 $A_0$-模意义下同构于 $k$。乘法为
+\[
+ (x,\xi)(x',\xi')=(xx',x\xi'+x'\xi).
+\]
+$\jj$ 是 $A$ 的幂零根，且 $A/\jj\simeq A_0$。因此 $A$ 的每个素理想都形如 $\pp_0\oplus\jj$，其中 $\pp_0$ 为 $A_0$ 的素理想；特别地，$\mm=\mm_0\oplus\jj$ 是唯一极大理想。$\mm$ 的每个元素都零化 $\jj$，所以 $\prof A=\prof A_{\mm}=0$。但若 $\pp_0\ne\mm_0$，$\jj$ 中的元素被 $\mm_0-\pp_0$ 中的元素零化，因此 $A_{\pp}$ 典范同构于 $(A_0)_{\pp_0}$；由于 $A_0$ 为整环，在 $\pp_0\ne0$ 时 $\prof A_{\pp}=\prof(A_0)_{\pp_0}\geq1$。
+
+\egas{16.4.7}{推论}
+诺特约化局部环 $A$ 的深度为零，当且仅当 $A$ 是域。
+\begin{proof}
+由于 $A$ 的所有极小素理想之交为零，$A$ 没有嵌入伴随素理想。由（16.4.6（i）），若 $\prof A=0$，则极大理想 $\mm$ 也是极小素理想，因而是唯一素理想。由于 $A$ 约化，有 $\mm=0$。
+\end{proof}
+
+\egas{16.4.8}{命题}
+设 $A,B$ 为诺特局部环，$\rho:A\to B$ 为局部同态，$M$ 为 $B$-模，且 $M_{[\rho]}$ 为有限型 $A$-模。则
+\begin{equation}
+ \prof_A M_{[\rho]}=\prof_B M.
+ \tag{16.4.8.1}
+\end{equation}
+\begin{proof}
+可限于 $M\ne0$。设 $\prof_A M_{[\rho]}=n$，取由 $A$ 的极大理想中元素组成的极大 $M_{[\rho]}$-正则序列 $(x_i)_{1\leq i\leq n}$。则 $\rho(x_i)$ 组成由 $B$ 的极大理想中元素构成的 $M$-正则序列。令
+$N=M/(\rho(x_1)M+\cdots+\rho(x_n)M)$，由（16.4.6（ii）），
+$\prof_B N=\prof_B M-n$。同样，
+$N_{[\rho]}=M_{[\rho]}/(x_1M_{[\rho]}+\cdots+x_nM_{[\rho]})$，且 $\prof_A N_{[\rho]}=0$。故只须证明 $n=0$ 的情形。
+
+令 $k$ 为 $A$ 的剩余域。由于 $k$ 是 $A$ 的商模，
+$P=\Hom_A(k,M_{[\rho]})$ 是 $\Hom_A(A,M_{[\rho]})=M_{[\rho]}$ 的子模，且由假设与（16.4.6（i）），$P\ne0$。$P$ 有限型，并被 $A$ 的极大理想零化，故它是有限维 $k$-向量空间，因而是有限长度 $A$-模。另一方面，$P$ 也是 $B$-模 $M$ 的子模；作为 $A$-模长度有限，作为 $B$-模更是如此。因为非零，它含有一个简单 $B$-子模，即同构于 $B$ 的剩余域的子模。于是由（16.4.6（i）），$\prof_B M=0$。
+\end{proof}
+
+\egas{16.4.9}{定义}
+设 $A$ 为诺特局部环，$M$ 为有限型 $A$-模。若 $M\ne0$，称有限非负整数
+$\dim_A M-\prof_A M$（16.4.5.1）为 $M$ 的\textbf{余深度}，记作 $\coprof_A M$ 或 $\coprof M$。若 $M=0$，置 $\coprof M=0$。
+
+对每个 $k>0$，有 $\coprof(M^k)=\coprof M$。
+
+\egas{16.4.10}{命题}
+设 $A$ 为诺特局部环，$M$ 为有限型 $A$-模。
+\begin{enumerate}[label=(\roman*)]
+ \item 对每个属于 $A$ 的极大理想的 $M$-正则元素 $x$，有
+ $\coprof(M/xM)=\coprof M$。
+ \item $\coprof_A M=\coprof_{\widehat A}\widehat M$。
+\end{enumerate}
+事实上，（i）由（16.3.4）、（16.4.6（ii））得到；（ii）由（16.2.4）、（16.4.6（iv））得到。
+以后将证明（IV，6.11.5），对 $A$ 的每个素理想 $\pp$，有
+$\coprof_{A_{\pp}}M_{\pp}\leq\coprof_A M$。
+
+\egas{16.4.11}{命题}
+在（16.4.8）的假设下，
+\begin{equation}
+ \coprof_A M_{[\rho]}=\coprof_B M.
+ \tag{16.4.11.1}
+\end{equation}
+这由（16.1.9）、（16.4.8）得到。
+
+\subsection{Cohen--Macaulay模}
+\source{EGA IV 第一部分，印刷第36--39页；上传PDF第35--38页}
+
+\egas{16.5.1}{定义}
+设 $A$ 为诺特局部环。若有限型 $A$-模 $M$ 满足 $\coprof M=0$，则称其为\textbf{Cohen--Macaulay模}。也就是说，或者 $M=0$，或者 $M\ne0$ 且 $\dim M=\prof M$。若 $A$-模 $A$ 为Cohen--Macaulay模，则称 $A$ 为\textbf{Cohen--Macaulay环}。
+
+有限长度 $A$-模是Cohen--Macaulay模，因为其维数为零（16.1.10）。维数1的约化局部环 $A$ 是Cohen--Macaulay环：它的极大理想 $\mm$ 不可能属于 $\Ass A$（Bourbaki，\textit{交换代数}，第四章，§2，第5目，命题10），因而由（16.4.6（i））有 $\prof A=1$。
+
+若 $A$ 是维数至少为2的整闭局部整环，则 $\prof A\geq2$。事实上，若 $0\ne x\in\mm$，已知 $A/xA$ 的伴随素理想高度为1（同书，第七章，§1，第4目，命题8），因而都不等于 $\mm$；它们的并因此也不等于 $\mm$（同书，第二章，§1，第1目，命题2）。所以存在由 $\mm$ 中元素组成的 $A$-正则序列 $(x,y)$，这证明了上述断言。由此，维数2的整闭局部环是Cohen--Macaulay环。
+
+\egas{16.5.2}{命题}
+设 $A$ 为诺特局部环，$M$ 为有限型 $A$-模。$M$ 是Cohen--Macaulay模，当且仅当 $\widehat M$ 是Cohen--Macaulay $\widehat A$-模。
+
+这直接由（16.4.10（ii））得到。
+
+\egas{16.5.3}{命题}
+在（16.4.8）的假设下，$M$ 是Cohen--Macaulay $B$-模，当且仅当 $M_{[\rho]}$ 是Cohen--Macaulay $A$-模。
+
+这由（16.4.11）得到。
+
+\egas{16.5.4}{命题}
+设 $A$ 为诺特局部环，$M\ne0$ 为有限型 $A$-模。若 $M$ 是Cohen--Macaulay模，则对每个 $\pp\in\Ass M$，有 $\dim(A/\pp)=\dim M$；特别地，$M$ 没有嵌入伴随素理想。
+
+这由（16.4.6.2）直接得到。也可以说，$M$（或 $\Supp M$）等维（16.1.7）。
+
+\egas{16.5.5}{命题}
+设 $A$ 为诺特局部环，$\mm$ 为其极大理想，$M\ne0$ 为有限型 $A$-模，$x\in\mm$。假定 $M$ 是Cohen--Macaulay模。以下条件等价：
+\begin{enumerate}[label=\alph*)]
+ \item $x$ 是 $M$-正则元素；
+ \item $\dim(M/xM)=\dim M-1$；
+ \item $x$ 不属于 $\Supp M$ 的任何极小元。
+\end{enumerate}
+此外，在这些条件下，$M/xM$ 也是Cohen--Macaulay模。
+\begin{proof}
+由（16.5.4），$\Ass M$ 的所有元素都是 $\Supp M$ 的极小元，且满足 $\dim(A/\pp)=\dim M$。因此a）与c）的等价来自Bourbaki，\textit{交换代数}，第四章，§1，第1目，命题2的推论2；b）与c）的等价来自（16.3.4）。最后，$M/xM$ 为Cohen--Macaulay模，由（16.4.10（i））得到。
+\end{proof}
+
+\egas{16.5.6}{推论}
+在（16.5.5）的假设下，设 $(x_i)_{1\leq i\leq r}$ 为 $\mm$ 中元素的序列。以下条件等价：
+\begin{enumerate}[label=\alph*)]
+ \item $(x_i)$ 是 $M$-正则序列；
+ \item $\dim(M/(x_1M+\cdots+x_rM))=\dim M-r$；
+ \item $x_i$ 为 $M$ 的一个参数系的一部分。
+\end{enumerate}
+此外，当这些条件成立时，$N=M/(x_1M+\cdots+x_rM)$ 是Cohen--Macaulay模；故对每个 $\pp\in\Ass N$，有 $\dim(A/\pp)=\dim M-r$。
+\begin{proof}
+不需对 $M$ 加Cohen--Macaulay假设，就已知道b）与c）等价（原文引（16.3.6）），且a）推出c）（16.4.1）。为证明c）推出a）并证明最后的断言，对 $r$ 归纳，$r=0$ 时结论直接成立。
+
+由于 $x_1$ 为参数系的一部分，有 $\dim(M/x_1M)=\dim M-1$（原文引（16.3.6））；由（16.5.5），$x_1$ 是 $M$-正则元素，且 $P=M/x_1M$ 为Cohen--Macaulay模。$(x_i)_{2\leq i\leq r}$ 为 $P$ 的参数系的一部分，所以归纳假设表明它是 $P$-正则序列，而且 $P/(x_2P+\cdots+x_rP)=N$ 是Cohen--Macaulay模；于是整个 $(x_i)_{1\leq i\leq r}$ 是 $M$-正则序列。
+\end{proof}
+
+\egas{16.5.7}{备注}
+由（16.5.6），当 $M$ 为Cohen--Macaulay模时，$M$ 的参数系恰好就是由 $\mm$ 中元素组成的极大 $M$-正则序列。反过来，由（16.4.1），若某个非零有限型 $A$-模有一个 $M$-正则序列，同时又是其参数系，则 $M$ 为Cohen--Macaulay模。（16.5.6）中最后的性质也刻画Cohen--Macaulay模：
+
+\egas{16.5.8}{命题}
+设 $A$ 为诺特局部环，$M$ 为有限型 $A$-模。假定对于每个为 $M$ 的一个参数系的一部分的序列 $(x_i)_{1\leq i\leq r}$，以及每个属于
+$\Ass N$ 的素理想 $\pp$，其中 $N=M/(x_1M+\cdots+x_rM)$，都有 $\dim(A/\pp)=\dim N$。则 $M$ 是Cohen--Macaulay模。
+\begin{proof}
+取 $M$ 的参数系 $(y_i)_{1\leq i\leq n}$；只须证明它为 $M$-正则序列。对 $n=\dim M$ 作归纳，$n=0$ 时直接成立。将假设用于 $r=0$，可知 $\Ass M$ 的所有元素 $\pp_j$ 满足 $\dim(A/\pp_j)=\dim M$。由于 $y_1$ 为参数系的一部分，由（16.3.7）、（16.3.4），$y_1$ 不属于任何 $\pp_j$，故为 $M$-正则元素。令 $P=M/y_1M$；则 $(y_i)_{2\leq i\leq n}$ 为 $P$ 的参数系，并且 $P$ 满足命题的假设。应用归纳假设，得到 $(y_i)_{2\leq i\leq n}$ 为 $P$-正则序列，命题得证。
+\end{proof}
+
+\egas{16.5.9}{命题}
+设 $A$ 为诺特局部环，$M$ 为有限型Cohen--Macaulay $A$-模。取 $\pp\in\Supp M$，并置 $r=\dim M-\dim(M/\pp M)$。则存在由 $\pp$ 的元素组成的长度 $r$ 的 $M$-正则序列 $(x_i)_{1\leq i\leq r}$。对每个这样的序列，均有
+\[
+ \dim\bigl(M/(x_1M+\cdots+x_rM)\bigr)
+ =\dim(M/\pp M)=\dim(A/\pp),
+\]
+且 $\pp$ 是 $\Ass(M/(x_1M+\cdots+x_rM))$ 的极小元。
+\begin{proof}
+先证明 $x_i$ 的存在性。$r=0$ 时无须证明；$r>0$ 时对 $r$ 归纳。对每个 $\qq_j\in\Ass M$，有 $\dim(A/\qq_j)=\dim M$（16.5.4）。假设 $\dim(M/\pp M)<\dim M$ 表明 $\pp$ 不能包含于任何 $\qq_j$，这些 $\qq_j$ 正是包含 $\Ann M$ 的极小素理想（16.1.2.2）、（16.1.7）。由素理想回避，$\pp$ 也不包含于它们的并（Bourbaki，\textit{交换代数}，第二章，§1，第1目，命题2）。所以存在 $x_1\in\pp$，为 $M$-正则元素（同书，第四章，§1，第1目，命题2的推论2）。
+
+由（16.5.5），$N=M/x_1M$ 是维数 $\dim M-1$ 的Cohen--Macaulay模。因 $x_1\in\pp$，有 $N/\pp N=M/\pp M$，于是
+$\dim N-\dim(N/\pp N)=r-1$。将归纳假设用于 $N$；若 $(x_i)_{2\leq i\leq r}$ 为由 $\pp$ 的元素组成的 $N$-正则序列，则 $(x_i)_{1\leq i\leq r}$ 即为所需 $M$-正则序列。
+
+令 $P=M/(x_1M+\cdots+x_rM)$。因 $x_i\in\pp$，有 $P/\pp P=M/\pp M$；由（16.5.6），$\dim P=\dim(P/\pp P)$。又 $P$ 为Cohen--Macaulay模，故每个 $\pp'\in\Ass P$ 都满足 $\dim P=\dim(A/\pp')$（16.5.4）。由于 $\pp\in\Supp P$（$0_{\mathrm I}$，1.7.5），$\pp$ 包含某个 $\pp'\in\Ass P$（Bourbaki，同书，第四章，§1，第4目，定理2）。而
+\[
+ \dim P=\dim(P/\pp P)\leq\dim(A/\pp)
+ \leq\dim(A/\pp')=\dim P,
+\]
+故必有 $\pp=\pp'$（16.1.2.2），完成证明。
+\end{proof}
+
+\egas{16.5.10}{推论}
+在（16.5.9）的假设下：
+\begin{enumerate}[label=(\roman*)]
+ \item $M_{\pp}$ 是Cohen--Macaulay $A_{\pp}$-模；
+ \item 有
+ \begin{equation}
+  \dim M=\dim_A(M/\pp M)+\dim_{A_{\pp}}M_{\pp}.
+  \tag{16.5.10.1}
+ \end{equation}
+\end{enumerate}
+\begin{proof}
+沿用（16.5.9）的记号，令 $x'_i$ 为 $x_i$ 在 $A_{\pp}$ 中的像。$x'_i$ 属于 $A_{\pp}$ 的极大理想，并由平坦性组成 $M_{\pp}$-正则序列（15.1.14）。因此
+\[
+ \prof_{A_{\pp}}M_{\pp}\geq r
+ =\dim M-\dim(M/\pp M)\geq\dim_{A_{\pp}}M_{\pp},
+\]
+最后一个不等式来自（16.1.8.1）。结合（16.4.5.1），这些数必全相等，推论得证。
+\end{proof}
+
+\egas{16.5.11}{推论}
+设 $A$ 为诺特局部环。假定存在有限型Cohen--Macaulay $A$-模 $M$，其支集为整个 $\Spec A$。则对 $A$ 的每个素理想 $\pp$，有
+\begin{equation}
+ \dim A=\dim(A/\pp)+\dim A_{\pp}.
+ \tag{16.5.11.1}
+\end{equation}
+事实上，$\Supp(M/\pp M)=\Spec(A/\pp)$（$0_{\mathrm I}$，1.7.5），且 $\Supp M_{\pp}=\Spec A_{\pp}$，所以（16.5.11.1）是（16.5.10.1）的特例。
+
+\egas{16.5.12}{推论}
+满足（16.5.11）条件的诺特局部环 $A$ 的每个商环，都是悬链环。特别地，局部Cohen--Macaulay环的每个商环都悬链。
+\begin{proof}
+只须证明 $A$ 本身悬链，即对于两个素理想 $\pp\subset\qq$，有（16.1.4.2）
+\[
+ \dim A_{\qq}=\dim A_{\pp}+\dim(A_{\qq}/\pp A_{\qq}).
+\]
+由（16.5.10（i）），$A_{\qq}$ 满足与 $A$ 相同的假设，所以这一等式就是将（16.5.11.1）用于 $A_{\qq}$ 及其素理想 $\pp A_{\qq}$。
+\cmt{D4-A04}{作者正式勘误 \hyperlink{ErrIV:7}{Err$_{\mathrm{IV}}$，7}补充：式（16.5.11.1）等价于将 $A$ 换为 $A/\mathfrak r$ 后的同一公式，其中 $\mathfrak r$ 遍历 $A$ 的极小素理想。因此本证明可先归结到整环情形，再应用修正后的（16.1.4.2）。不应将（16.1.4）的初版缺条件误判为本推论结论错误。}
+\end{proof}
+
+\egap{16.5.13}
+设 $A$ 为诺特环，$M$ 为有限型 $A$-模。若对 $A$ 的每个素理想 $\pp$，$M_{\pp}$ 都是Cohen--Macaulay $A_{\pp}$-模，则称 $M$ 为Cohen--Macaulay $A$-模。由（16.5.10），$A$ 局部时，这一定义与（16.5.1）一致。若每个 $A_{\pp}$ 都为Cohen--Macaulay环，则称 $A$ 为Cohen--Macaulay环。
+
+若 $M$ 是Cohen--Macaulay $A$-模（分别地，$A$ 为Cohen--Macaulay环），则对任意乘法子集 $S$，$S^{-1}M$ 是Cohen--Macaulay $S^{-1}A$-模（分别地，$S^{-1}A$ 为Cohen--Macaulay环）。

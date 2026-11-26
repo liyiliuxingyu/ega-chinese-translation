@@ -1,0 +1,102 @@
+% SOURCE: unpacked/dot_batches/EGA第五卷_14正则截面与爆破_续译工程/EGA第五卷_14正则截面与爆破_校订续译.tex
+粗略地说，假设$f$是一个浸入，那么一般锥投影的性质，会因假设$\dim X\geq m$还是$\dim X\leq m$而大不相同，另见$\dim X<m$。\cmt{V-H-L011}{底本跨页原句为“according as to whether we assume $\dim X\geq m$ or $\dim X\leq m$ see $\dim<m$”。两个范围在等号处交叠，“see”的确切连接关系亦不明。正文保留这些比较式，不擅将其中一个不等号改成严格不等号，也不猜补等维情形的分类。末个维数补写对象$X$，依据是同一句前两项。}
+以下考虑与$\operatorname{Grass}^{m+1}(P)$的一般点$\eta$对应的$C_\eta\subset P_{k(\eta)}$，而不再把所得结果逐一解释成关于“几乎所有点……”的说法。
+
+首先，我们已在5.3中指出（第12节对一般情形作了补述），$C$与$X$正则相交。更确切、也更一般地，对于$X$上的每个拟凝聚层$F$，在$X_{k(\eta)}$上定义中心逆像的那个秩为$m+1$的局部自由模的截面$\varphi(m+1)$，是相对于$F_{k(\eta)}$正则的；其零点子概形为$f_{k(\eta)}^{-1}(C_\eta)$。\cmt{V-H-L012}{底本写“the section $\varphi(m+1)$ ... over $X_{k(\eta)}$ whose scheme of zeros $\eta$ is $C$, is $F$-regular”。但该截面位于$X_{k(\eta)}$上，而$C_\eta$是$P_{k(\eta)}$中的中心，所以其零点对象应为中心的逆像；紧后爆破中心也明确使用$f^{-1}(C_\eta)$。正文据此订正，并将$F$的基变换写明。原文游离的“$\eta$”不另解释成一个零点子概形。记号$\varphi(m+1)$照存，不擅改为幂。对于任意拟凝聚层的正则性断言及所引5.3、12节的条件，尚未在本段译校独立逐项验证。}
+
+由10.2，例如可知，态射
+\[
+\widetilde X(C_\eta)\longrightarrow X_{k(\eta)}
+\]
+将$\widetilde X(C_\eta)$等同于沿
+\[
+f_{k(\eta)}^{-1}(C_\eta)
+=X_{k(\eta)}\times_{P_{k(\eta)}}C_\eta
+\]
+爆破$X_{k(\eta)}$所得到的预概形。\cmt{V-H-L013}{底本这里混用$\widetilde X(C_\eta)$与$X(C_\eta)$，按前文简化记号的建议，两者均指关联空间，本段译校统一排作$\widetilde X(C_\eta)$。原式“$X_P\,x\,C_\eta$”按纤维积整理，并补齐基变换。正文保存“由10.2”的原引用，不将这次记号整理说成已经重新证明爆破识别。}
+
+
+在$\dim f(X)\leq m$的情形，还有$f_{k(\eta)}^{-1}(C_\eta)=\varnothing$，因而
+\[
+\widetilde X(C_\eta)\xrightarrow{\ \sim\ }X_{k(\eta)}
+\]
+是同构（事实上，此时受限锥投影本来就定义在整个$X_{k(\eta)}$上）。\cmt{V-H-L014}{底本此处简写$f^{-1}(C)=\phi$及“over all of $X$”。因中心在一般点的剩余域上，正文补写基变换并将空集记为$\varnothing$；不声称一般中心本身已在原基域$k$上定义。}
+于是出现了态射
+\[
+p_c:\widetilde X(C_\eta)\longrightarrow Q(C_\eta)
+\]
+的纤维维数问题，并得到这一态射的平坦性［此断言待核］。我们得到：\cmt{V-H-L015}{底本写“and we find the flatness of this morphism. We find:”。此句是后续命题的引导，尚未在这里给出平坦性的精确假设或结论。正文保留原作者“得到平坦性”的断言并显式标待核，不把它当作本段译校已经验证的无条件平坦性定理。}
+
+% SOURCE: unpacked/dot_batches/EGA第五卷_14.1命题陈述_续译工程/EGA第五卷_14.1命题陈述_校订续译.tex
+\egas{14.1}{命题}
+假设$X$不可约；更一般地，假设对于$X$的每个不可约分支$X_i$，$X_i$在点$f(x_i)$处的纤维具有一个与$i$无关的维数$d$，其中$x_i$是$X_i$的一般点。例如，当$f:X\to P$拟有限时，这一条件成立，且$d=0$。则：\cmt{V-H-L016}{底本前提只写“has a dimension (independent of $i$)”，没有写出该维数的字母，而同句例子和(b)项均使用$d$；正文将这个共同维数明确记为$d$。这里是态射$X_i\to P$在其像的一般点$f(x_i)$处的纤维维数，不是自动假定所有点上纤维维数都相同。原文声称的“更一般地”是否足以推出下述全部结论，尚未独立验证；不能擅加等维、固有或其他假设使其成为另一个命题。}
+
+\noindent a) 若$\dim f(X)>m$，则
+\[
+p_c:X(C_\eta)\longrightarrow Q(C_\eta)
+\]
+的纤维维数都等于$\dim X-m$。\cmt{V-H-L017}{本项照译“the dimension of the fibers ... are all equal”。底本在本项没有额外写“非空纤维”，也未说明对可约且分支维数不同的情形如何应用共同的一般纤维维数条件。这些适用范围不能仅凭此陈述判定为已核实。本段译校保留$X(C_\eta)$的原记号，它与前文的$\widetilde X(C_\eta)$同指扩展锥投影的关联空间，不是原来的$X$。}
+
+\noindent b) 若$\dim X\leq m$，并且$X_i$在$P$上的非空纤维［原文缺词：???］维数为$d$，则$p_c$的纤维全都具有维数$d$［原文：???］，于是$p_c$是有限的，分别地，是拟有限的……$f:X\to P$是有限的。\cmt{V-H-L018}{底本完整可辨条款为：“If $\dim x\leq m$ and if the non-empty fibers of $X^i$ over $P$ are ??? of dim $d$ then the fibers of $p_c$ are all of dimension $d$ ??? so $p_c$ is finite resp. quasi-finite\ldots\ $f:X\to P$ is finite.” 正文仅将未定义的小写$x$整理为$X$、分支上标$X^i$整理为前提所用的$X_i$，保留两组问号及省略号。上文引导段使用的是$\dim f(X)\leq m$，故这里的$\dim x$也可能涉及漏去$f(\ )$，但本条证据不足，不据猜测改写为像维数。末尾有限性与拟有限性之间的条件对应已经残缺，不能把它读成在任意$d$下单由“纤维维数为$d$”就推出有限或拟有限，也不能恢复一个原文未明确给出的“当且仅当”。}
+
+% SOURCE: unpacked/dot_batches/EGA第五卷_14.1证明残文_续译工程/EGA第五卷_14.1证明残文_校订续译.tex
+\eproof\textbf{〔底本残文〕}
+在(a)的情形，我们已经看到（我希望如此），对于$\operatorname{Grass}^{m}(P)$的每个点$\xi$，$X^{(m)}_\xi$的维数至少为$\dim X-m$；特别地，当$\xi$给出$Q(C_\eta)$的一个点时，也是如此。\cmt{V-H-L019}{底本保留“I hope”，正文不删除这一编写核对语气。“每个点”的范围照译；此处并未重新核实原引用对空截面、非固有情形或一般可约情形的适用性，不能据本段认为这些问题已经解决。}
+
+对于反向的不等式，注意（我们置身于域$k'=k(\xi)$之上）：$C_{\eta,k'}$是$L_\xi$中的一个超平面；若［底本条件句残缺］，则中心逆像
+\[
+X_{k(\eta)}\times_{P_{k(\eta)}}C_\eta
+\]
+的维数将会（是）至少为$\dim X-m$。\cmt{V-H-L020}{底本可辨原句为“since $C_{\eta k'}L_\xi$ is a hyperplane of $L$ if the dimension of $X^{(m)}=X_P\,x\,C_\eta$ will be (is) $\geq\dim X-m$”。其中$C_{\eta,k'}\subset L_\xi$由$\xi\in Q(C_\eta)$和第54页的定义确定，故正文明确写出包含关系；但“if the dimension of”后的条件或连接已经残缺，不能擅补为某个严格不等式。原文把中心截面标为$X^{(m)}$，与中心余维$m+1$及本段后式不相容，正文直接写出它明确给出的中心逆像纤维积，而不把它误作$X^{(m)}_\xi$。}
+
+（因为基变换$k(\eta)\to k'$把后一个预概形变为
+\[
+\bigl(X_P\times L_\xi\times\xi L(c_{\eta k'})\bigr)
+\quad\text{［底本排式残缺］}.
+\]
+）另一方面，按第2节（在第10节中复查过），却有\cmt{V-H-L021}{括号中的原排式为“$(X_P\times L_\xi\times\xi L(c_{\eta k'}))$”，下标及符号关系不全，故正文按可辨符号保留，不擅恢复成一个声称来自底本的完整纤维积公式。其后连接语为“or since we have in the contrary case”，译作“另一方面……却有”，保留它与前一维数估计相对照的结构，但不宣称残缺的反证链已补全。末式$X^{(m+1)}$在这里指一般中心所给截面，原文的简写照存；其维数等式所需条件亦仍待核。}
+\[
+\dim X^{(m+1)}=\dim X-m-1.
+\]
+
+
+
+(b)的情形用类似的方法处理：若
+\[
+\dim(X\times_P L)\geq d+1,
+\]
+或者等价地，$f_{k'}(X_{k'})\to L$的维数至少为$1$，那么由与上述相同的论证，将有
+\[
+X^{(m+1)}\ne\varnothing,
+\]
+这与我们在14.1之前指出的事实矛盾。\cmt{V-H-L022}{底本写“$\dim X_P\times L\geq d+1$, or what is the same $f_{k'}(X_{k'})\to L$ of dim $\geq1$”。正文只将第一式排成纤维积，第二个带箭头的维数措辞照存；它究竟指像维数还是另一个相对维数，原句不完整，不擅将$f_{k'}(X_{k'})$换成某个未写出的截面像。其“等价”依赖于前提中纤维维数条件，而14.1(b)本身有缺文；由正维像推出与超平面相交还涉及相应的几何条件。本段译校不据此宣布(b)的有限性或拟有限性结论已经证明。空集符号由原$\phi$统一为$\varnothing$。}
+
+% SOURCE: unpacked/dot_batches/EGA第五卷_14.2有限投影_续译工程/EGA第五卷_14.2有限投影_校订续译.tex
+\egas{14.2}{推论}
+假设$X$的维数为$m$，且$f:X\to P$是有限的，分别地，是拟有限的。则态射
+\[
+p_{C_\eta}:X_{k(\eta)}\longrightarrow Q(C_\eta)
+\]
+是有限满射，分别地，是拟有限优势态射。\cmt{V-H-L023}{底本第56页写“and that $:X\to P$ is finite”，冒号前漏去态射名称；按本节固定态射补为$f$。跨页的“respectively quasi-finite”与结论“finite surjective (resp. quasi-finite dominant)”分别对应，不能把两种结论合并成拟有限时也满射。底本的$P_{C_\eta}$、$p_{C_\eta}$统一为小写$p_{C_\eta}$。“优势”表示像稠密，不等于满射。}
+
+事实上，这个态射是拟有限的；又因为
+\[
+\dim X_{k(\eta)}=\dim Q(C_\eta),
+\]
+所以它是优势态射。若$f$是有限的，则$p_{C_\eta}$也是有限的，因而固有；既然它是优势的，便是满射。\cmt{V-H-L024}{以上为底本完整的证明文字，其开头的拟有限性和“若$f$有限则$p_{C_\eta}$有限”均未在本段展开论证。目标$Q(C_\eta)$由第54页识别为$m$维射影空间；“固有且优势，故满射”使用固有态射像闭这一事实。这里并未重新审定前述拟有限性、有限性及等维推论所需的全部条件，尤其不据本推论的简短引用消除14.1(b)陈述和证明的缺文。}
+
+% SOURCE: unpacked/dot_batches/EGA第五卷_14.3平坦性_续译工程/EGA第五卷_14.3平坦性_校订续译.tex
+\egas{14.3}{推论}
+在14.1(a)的条件下，若$X$是Cohen--Macaulay的，则态射
+\[
+p_C:X(C_\eta)\longrightarrow Q(C_\eta)
+\]
+是Cohen--Macaulay态射，因而特别是平坦的。\cmt{V-H-L025}{底本拼作“Cohen-Macauley”，正文统一为通常的“Cohen--Macaulay”，下文缩写CM保持。原文在此依赖14.1(a)的条件，译文不额外添加或删去前提，也不认为14.1尚待核的适用范围已因此解决。}
+
+关于证明，参看上文第21页第5项之前的注（译者：订正此处）；考虑到对于$\xi\in Q(C_\eta)$，$C^{(m)}_\xi$是$F_{k(\eta)}$-正则的，这条注给出了一个更强的结果（包含14.3在内，???）。\cmt{V-H-L026}{底本引用原文为“on page 21 before 5. (Tr - correct this)”，其编号或页码尚不能由该句唯一确定，故正文保留订正提醒，不虚构一个确定的交叉引用。底本写“$C^{(m)}_\xi$ for $\xi\in\varphi(\eta)$ are $F_{k(\eta)}$ regular”。这里$\xi$为锥投影目标中的点，按本节定义将目标写作$Q(C_\eta)$；但$C^{(m)}_\xi$究竟表示哪一截面或正则序列，本段未清楚定义，故照存，不擅改成$X^{(m)}_\xi$或某个新构造。前面的三问号也属原文，未消除。}
+
+这个推论必须修改。不过，为简单起见，可以假设$f$拟有限：若$F$是$X$上的一个Cohen--Macaulay模，并且对于$\operatorname{Supp}F$的每个不可约分支$Z$都有$\dim Z\geq m$，那么$\widetilde F(C_\eta)$相对于$Q(C_\eta)$是Cohen--Macaulay的，因而特别是平坦的。\cmt{V-H-L027}{底本说“This corollary must be modified”，正文保留其修订状态，不把随后层版本标作已经完成的正式修订。原目标写$\varphi(C_\eta)$，据前面投影的目标统一为$Q(C_\eta)$；$\widetilde F(C_\eta)$是前述关联空间上的逆像层，不是直接位于$X$上的新层。其相对CM性及平坦性的证明在此未展开，本段译校未独立验证。}
+
+
+注意，要得到同样的结论，即$p_C$平坦，不能把$X$上的CM假设仅仅换成一个维数假设。例如，假设$f$是浸入，且$X$不可约、维数为$m$。于是$p_C$拟有限；又因为$X_{k(\eta)}$和$Q(C_\eta)$不可约且维数相同，而后者正则，所以只有当$X_{k(\eta)}$为CM时，$p_C$才可能平坦。\cmt{V-H-L028}{底本写“$f$ is irreducible of dimension $m$”，但不可约性和这里的维数是源概形的性质，下一句也明确使用$X_{k(\eta)}$不可约，故正文改为$X$。原目标仍写$\varphi(C_\eta)$，统一为$Q(C_\eta)$。本段是原文对CM假设必要性的解释，不是一个已具体给出的非CM反例；正文不另添反例，也不将必要条件误说成无条件充分性。}
+

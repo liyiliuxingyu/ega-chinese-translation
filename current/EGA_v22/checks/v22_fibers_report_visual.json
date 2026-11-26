@@ -1,0 +1,144 @@
+{
+  "schema_version": 1,
+  "edition": 22,
+  "reviewer": "v22_fibers",
+  "review_method": "actual_image_view",
+  "document": "report",
+  "pdf": {
+    "path": "report.pdf",
+    "sha256": "4cced0b1907d27f0806a74d3ad525016bc002e191165674c5c687a2dd1a2b53c",
+    "physical_page_count": 503
+  },
+  "rendering": {
+    "renderer": "PyMuPDF",
+    "scale": 1.5,
+    "colorspace": "RGB",
+    "alpha": false
+  },
+  "pages": [
+    {
+      "physical_page": 31,
+      "printed_page": "11",
+      "image": "checks/visual_v22/fibers/report_0031.png",
+      "image_sha256": "511b2a30dde9938966fddc6fd74157078bc78f48d9baec5f35d202ee4f683bc2",
+      "image_dimensions_px": [
+        893,
+        1263
+      ],
+      "actually_viewed": true,
+      "verdict": "pass",
+      "notes": "物理31页、印刷11页：实际显示整页。专题标题分两行排印，实际范围与旧段保存路径完整。E01对照表开始，表头及FIB001、002—004、005、006各行对齐；秩m+1／英文n+1的归因可读。表格在行间续页，没有横向溢出、字符缺失或页面裁切。",
+      "pixels_reverified_against_bound_pdf": true
+    },
+    {
+      "physical_page": 32,
+      "printed_page": "12",
+      "image": "checks/visual_v22/fibers/report_0032.png",
+      "image_sha256": "dec4e0804755a0df8e02fd4f34946478114bcadadc58ac3e74f110f052c83d78",
+      "image_dimensions_px": [
+        893,
+        1263
+      ],
+      "actually_viewed": true,
+      "verdict": "pass",
+      "notes": "物理32页、印刷12页：实际显示整页。E01长表重复表头并续列FIB007—014，末横线完整；其后法稿删改说明和未定位引用段清楚。E02开始，泛系数线性式及求和上下标正常，正文连续，未见表格文字重叠或公式出界。",
+      "pixels_reverified_against_bound_pdf": true
+    },
+    {
+      "physical_page": 33,
+      "printed_page": "13",
+      "image": "checks/visual_v22/fibers/report_0033.png",
+      "image_sha256": "a143cb83ff48d265949722bfb2fa947aec159fc8057d43675e610cf63c581bf1",
+      "image_dimensions_px": [
+        893,
+        1263
+      ],
+      "actually_viewed": true,
+      "verdict": "pass",
+      "notes": "物理33页、印刷13页：实际显示整页。E02的Koszul下降、有限模界限、中心坐标图及(V22-FIB.1)完整。B[1/a0]与A[I/a0]的不同步骤和公式编号清楚，没有公式／编号相碰；E03标题及爆破反例起首正常接在下部，页末句子续页，无裁切或缺字。",
+      "pixels_reverified_against_bound_pdf": true
+    },
+    {
+      "physical_page": 34,
+      "printed_page": "14",
+      "image": "checks/visual_v22/fibers/report_0034.png",
+      "image_sha256": "86ae2e549ed5a29de85c7db85cc6c2d7d0bd84bed1ade7830e22e9f8248a39d5",
+      "image_dimensions_px": [
+        893,
+        1263
+      ],
+      "actually_viewed": true,
+      "verdict": "pass",
+      "notes": "物理34页、印刷14页：实际显示整页。例外平面反例的纤维维数2与预期1的对比公式清楚。E04开始，ni、Zi、ei=n_i−d的同排定义、扩域后纯维度说明及中心／边界维数界均在版心内；下部过中心截面证明连续，未见长显示式越界或遮字。",
+      "pixels_reverified_against_bound_pdf": true
+    },
+    {
+      "physical_page": 35,
+      "printed_page": "15",
+      "image": "checks/visual_v22/fibers/report_0035.png",
+      "image_sha256": "e9d6ec77c66c2e246b8d9189e41b14a547880d334f18b75bf0817dde20ffd669",
+      "image_dimensions_px": [
+        893,
+        1263
+      ],
+      "actually_viewed": true,
+      "verdict": "pass",
+      "notes": "物理35页、印刷15页：实际显示整页。页首续E04闭包边界证明，(V22-FIB.2)及有限性、拟有限性、优势性的三段完整。E05平面与孤立点反例、X=H并{p}显示式及标准图证明起首可读；已纳入纯n维且闭点局部环维数n的精确表述，无重叠、缺字或不当空白。",
+      "pixels_reverified_against_bound_pdf": true
+    },
+    {
+      "physical_page": 36,
+      "printed_page": "16",
+      "image": "checks/visual_v22/fibers/report_0036.png",
+      "image_sha256": "924aa5f51a80e2ccf096070c4f53331dae8cb982a416a25ffc0720041fb07b84",
+      "image_dimensions_px": [
+        893,
+        1263
+      ],
+      "actually_viewed": true,
+      "verdict": "pass",
+      "notes": "物理36页、印刷16页：实际显示整页。中心上方ni−1维的估计、纯纤维条件、目标局部参数、CM凝聚模版本及Tor局部平坦判据连续。两个参数商维数显示式及行内Tor上下标清楚，末段从闭点平坦推广到任意点并证明CM纤维，版心和页眉正常，无公式截断。",
+      "pixels_reverified_against_bound_pdf": true
+    },
+    {
+      "physical_page": 37,
+      "printed_page": "17",
+      "image": "checks/visual_v22/fibers/report_0037.png",
+      "image_sha256": "abf809d1add32d633723c1335d6d47f192d62cf323217cfc83904d0014eb740c",
+      "image_dimensions_px": [
+        893,
+        1263
+      ],
+      "actually_viewed": true,
+      "verdict": "pass",
+      "notes": "物理37页、印刷17页：实际显示整页。E05外部代数支点说明接续完整；E06单项式环、缺少u=x²y²、au与bu等式及参数商零因子计算均清楚。末尾仍保留的边界段完整，明确未定位引用与有限型范围，未见数学上标缺失、长公式越界或页底裁切。",
+      "pixels_reverified_against_bound_pdf": true
+    },
+    {
+      "physical_page": 38,
+      "printed_page": "18",
+      "image": "checks/visual_v22/fibers/report_0038.png",
+      "image_sha256": "ee36b627e5dbfcd3f0b3ba7f0015cc324d11dd9163e9b9fc95bcb071801a7b95",
+      "image_dimensions_px": [
+        893,
+        1263
+      ],
+      "actually_viewed": true,
+      "verdict": "pass",
+      "notes": "物理38页、印刷18页：实际显示整页。该页为专题结束后的留白页，只有本专题页眉及页码，正文区空白；没有残留公式、重叠文字或被裁切的上一页内容。该留白与本次要求核对的章间换页范围一致。",
+      "pixels_reverified_against_bound_pdf": true
+    }
+  ],
+  "binding_check": {
+    "sha256_verified_before_image_views": true,
+    "sha256_when_writing_record": "4cced0b1907d27f0806a74d3ad525016bc002e191165674c5c687a2dd1a2b53c",
+    "bound_pdf_unchanged_during_pixel_check": true,
+    "all_viewed_images_match_final_pdf_pixels": true
+  },
+  "recorded_utc": "2026-11-26T01:23:57.254541+00:00",
+  "limitations": [
+    "Only the explicitly listed full-page images were actually displayed and visually inspected.",
+    "No claim of whole-book or whole-report human page-by-page review.",
+    "Visual inspection is separate from the mathematical proof review; no source files were edited during this check."
+  ]
+}

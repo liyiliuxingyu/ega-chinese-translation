@@ -1,0 +1,131 @@
+% 底本：EGAIV.1.pdf，PDF第200--201页，原分册印刷第201--202页。
+% 避免上一小节的长脚注把新小节标题孤留在页末。
+\clearpage
+\subsection{几何正则代数与形式光滑代数}
+\egas{22.5.1}{命题}
+设 $A$ 为正则局部环，$A'$ 为包含 $A$ 的局部环，且为有限 $A$-代数。
+以 $\mathfrak m,\mathfrak m'$ 分别表示其极大理想，$K=A/\mathfrak m$、$K'=A'/\mathfrak m'$ 分别表示其剩余域。
+则 $A'$ 正则，当且仅当
+\begin{equation}
+ \rk_K(\mathfrak m/\mathfrak m^2)
+ =\rk_{K'}(\mathfrak m'/\mathfrak m'^2).
+ \tag{22.5.1.1}
+\end{equation}
+
+\eproof
+因为 $A$ 正则，左端等于 $\dim A$（17.1.1）。又因 $A\subseteq A'$ 且 $A'/A$ 有限，
+$\dim A'=\dim A$（16.1.5）。故所给等式恰为 $A'$ 正则的充要条件（17.1.1）。
+\finishproof
+
+\egas{22.5.2}{注}
+（i）令 $A_1=A/\mathfrak m^2$，$A'_1=A'\otimes_AA_1=A'/\mathfrak m^2A'$。
+因为 $\mathfrak m^2A'\subseteq\mathfrak m'^2$，$A'_1$ 的极大理想为
+\[
+ \mathfrak m'_1=\mathfrak m'/\mathfrak m^2A',
+\]
+且 $\mathfrak m'_1/\mathfrak m_1'^2\simeq\mathfrak m'/\mathfrak m'^2$。
+所以 $A'$ 的正则性判据只取决于 $A_1$-代数 $A'_1$ 的结构；这使我们可以运用22.4中关于阿廷环上有限代数的预备结果。
+\cmt{N14-T04}{原文将此处商的分母印作 $\mathfrak mA'$；按 $A'_1=A'/\mathfrak m^2A'$ 的定义，必须为 $\mathfrak m^2A'$。正文同时保留 $\mathfrak m^2A'\subseteq\mathfrak m'^2$，而不是将两者等同。}
+
+（ii）由（22.5.1）的证明与（16.2.6.1），总有
+\begin{equation}
+ \rk_K(\mathfrak m/\mathfrak m^2)
+ \le\rk_{K'}(\mathfrak m'/\mathfrak m'^2).
+ \tag{22.5.2.1}
+\end{equation}
+
+（iii）现在令 $A,A'$ 满足（22.4.1）的一般假设，仍记 $V=\mathfrak m$。
+先设 $A$ 为阿廷环。由（19.8.10），存在正则局部环 $R$，极大理想为 $\mathfrak n$，使 $A\simeq R/\mathfrak n^2$。
+对每个 $i$，取首一多项式 $G_i\in R[T_i]$，其在 $A[T_i]$ 中的像为 $F_i$。
+令 $R'=R[T_1,\ldots,T_r]/(G_1,\ldots,G_r)$，则 $R'$ 为秩 $d$ 的自由 $R$-模，且
+\[
+ A'\simeq R'\otimes_RA\simeq R'/\mathfrak n^2R'.
+\]
+由于 $R'/R$ 有限且 $A'$ 局部，$R'$ 也局部。若 $\mathfrak n'$ 是其极大理想，则
+$R'/\mathfrak n'\simeq K'$，且 $\mathfrak n'/\mathfrak n'^2\simeq\mathfrak m'/\mathfrak m'^2$。
+将（22.5.2.1）用于 $R,R'$，得到
+\begin{equation}
+ \rk_KV\le\rk_{K'}(\mathfrak m'/\mathfrak m'^2).
+ \tag{22.5.2.2}
+\end{equation}
+该不等式在 $V$ 无限维时仍成立，但不应在此时直接引用只适用于诺特环的（19.8.10）。
+事实上 $\mathfrak m'$ 幂零，且 $K'/K$ 有限；$V\hookrightarrow A'$ 的有限滤过
+$V\cap\mathfrak m'^i$ 的每个商都嵌入 $\mathfrak m'^i/\mathfrak m'^{i+1}$。
+后者由 $\mathfrak m'/\mathfrak m'^2$ 的 $i$ 次单项式生成，遂得无限基数意义下的（22.5.2.2）。
+\cmt{N14-G01}{原证明没有把应用（19.8.10）时所需的有限维条件单独写出。正文先证明阿廷情形，再补上无限维情形。具体地，$A'/\mathfrak mA'$ 为有限维局部 $K$-代数，故其根幂零；结合 $(\mathfrak mA')^2=0$ 得 $\mathfrak m'$ 幂零。若右端有限，有限滤过反而推出 $V$ 有限维；若右端为无限基数 $\kappa$，各有限次对称幂的维数不超过 $\kappa$，且有限扩域不改变此上界。完整论证见报告N14-G01。}
+
+\egas{22.5.3}{推论}
+设 $A$ 为正则局部环，极大理想为 $\mathfrak m$。对不定元 $T_i$（$1\le i\le r$），取首一多项式
+\begin{equation}
+ F_i(T_i)=T_i^{d_i}+\sum_{1\le k\le d_i}c_{ik}T_i^{d_i-k},
+ \qquad d_i\ge2,\quad c_{ik}\in\mathfrak m.
+ \tag{22.5.3.1}
+\end{equation}
+令 $A'=A[T_1,\ldots,T_r]/(F_1,\ldots,F_r)$。则：
+
+\noindent（i）$A'$ 为局部环，剩余域 $K'$ 同构于 $A$ 的剩余域 $K$。
+
+\noindent（ii）$A'$ 正则，当且仅当常数项 $c_{i,d_i}$ 在 $\mathfrak m/\mathfrak m^2$ 中的类 $\xi_i$ 在 $K$ 上线性无关。
+
+\eproof
+使用（22.5.2，i）的记号，令 $\bar F_i$ 为 $F_i$ 的系数模去 $\mathfrak m^2$ 后所得多项式。
+$A'_1$ 由 $A_1$ 与各 $\bar F_i$ 按（22.4.1）构成，故结论由（22.5.1）和（22.4.3）得到。
+\finishproof
+
+\egas{22.5.4}{定理（混合特征校订形式）}
+设 $A$ 为正则局部环，极大理想为 $\mathfrak m$，剩余域 $K$ 的特征为 $p>0$。令
+\begin{equation}
+ F_i(T_i)=T_i^p+p\sum_{k=1}^{p-1}c_{ik}T_i^{p-k}-f_i,
+ \qquad c_{ik},f_i\in A\quad(1\le i\le r),
+ \tag{22.5.4.1}
+\end{equation}
+并设 $B=A[T_1,\ldots,T_r]/(F_1,\ldots,F_r)$。
+则 $B$ 为局部环；记其极大理想为 $\mathfrak n$，剩余域为 $K'$。下列条件等价：
+
+\noindent a）$B$ 正则，且
+\[
+ p\in\mathfrak m^2\quad\Longleftrightarrow\quad p\in\mathfrak n^2.
+\]
+
+\noindent b）各 $d_Af_i\otimes1_K$（$1\le i\le r$）在 $\Omega^1_A\otimes_AK$ 中线性无关。
+
+\noindent c）令 $A_0=A/(\mathfrak m^2+pA)$、$B_0=B/(\mathfrak m^2B+pB)$，则特征同态
+\[
+ \chi_{B_0/A_0}:\Xi_{B_{(K)}/K}
+ \longrightarrow\mathfrak m/(\mathfrak m^2+pA)
+\]
+单射。这里 $B_{(K)}=B/\mathfrak mB$，该同态也就是（22.4.8.4）对 $A/\mathfrak m^2$ 及 $B/\mathfrak m^2B$ 的形式。
+
+特别地，若 $p\in\mathfrak m^2$，尤其若 $A$ 本身的特征为 $p$，则 a）中的附加条件自动满足，此时 a）就是“$B$ 正则”。
+\cmt{N14-E01}{原文 a）仅写“$B$ 正则”，c）的目标仍写 $\mathfrak m/\mathfrak m^2$；在一般混合特征下不成立。取 $A=\mathbb Z_{(p)}$、$r=1$、$F=T^p-p$：$B$ 为一维正则局部环，但 $d_Ap=0$，所以 b）不成立。原证明由（22.4.8）的模去 $p$ 的余切维数判据跳到了未模去 $p$ 的（22.5.1），丢失了 $p$ 的余切类。正文将 a）和 c）一起校正，并在下文给出完整证明；这不是作者正式勘误。原写法、反例及等特征推论见报告N14-E01。}
+
+\eproof
+$B$ 为有限自由 $A$-模。模去 $\mathfrak m$ 后，其代数由有限个 $p$ 次根生成，素谱只有一点，故 $B$ 为局部环。
+置
+\[
+ \begin{aligned}
+ e_A&=\dim_K(\mathfrak m/\mathfrak m^2)=\dim A,&
+ e_B&=\dim_{K'}(\mathfrak n/\mathfrak n^2),\\
+ \epsilon_A&=\dim_K\frac{pA+\mathfrak m^2}{\mathfrak m^2},&
+ \epsilon_B&=\dim_{K'}\frac{pB+\mathfrak n^2}{\mathfrak n^2}.
+ \end{aligned}
+\]
+$\epsilon_A,\epsilon_B$ 只能为 $0$ 或 $1$。因 $\mathfrak m^2B\subseteq\mathfrak n^2$，
+$\epsilon_B\le\epsilon_A$；又由（22.5.2，ii），$e_B\ge e_A$。
+
+$A_0$ 为极大理想平方为零的特征 $p$ 阿廷局部环，而 $B_0$ 在其上由
+$T_i^p-\bar f_i$ 定义。
+它们的余切维数分别为 $e_A-\epsilon_A$ 与 $e_B-\epsilon_B$。
+根据（22.4.7），条件 c）等价于
+\[
+ e_A-\epsilon_A=e_B-\epsilon_B.
+\]
+结合上述两个反向不等式，这又等价于
+\[
+ e_A=e_B\quad\text{且}\quad\epsilon_A=\epsilon_B.
+\]
+第一条件由（22.5.1）等价于 $B$ 正则；第二条件正是 a）所增补的条件。
+
+最后，$\Omega^1_A\otimes_AK\simeq\Omega^1_{A_0}\otimes_{A_0}K$：商去 $\mathfrak m^2$ 后的微分关系在张量 $K$ 后为零，而 $d_Ap=0$，故再商去 $p$ 也不增加关系。
+于是（22.4.7.4）应用于 $A_0,B_0$，给出 b）与 c）的等价性。
+\finishproof

@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "edition": 22,
+  "reviewer": "/root/v22_geometry",
+  "review_method": "actual_image_view",
+  "document": "main",
+  "pdf": {
+    "path": "main.pdf",
+    "sha256": "bc4c27cc042e1e1e9ddef4b0152369d491876dc0e81fa357110025ea68d77504"
+  },
+  "rendering": {
+    "renderer": "PyMuPDF",
+    "scale": 1.5,
+    "colorspace": "RGB",
+    "alpha": false
+  },
+  "recorded_at_utc": "2026-11-26T01:22:45.675871+00:00",
+  "pages": [
+    {
+      "physical_page": 1073,
+      "image": "checks/visual_v22/geometry/main_1073.png",
+      "image_sha256": "f86dc04dc77879cb0bd5ddeecf7857953b853d474021d6528251345723476df3",
+      "verdict": "pass",
+      "notes": "实际查看本页：§13(e)末段与§14锥投影标题连续接续，附记、秩约定、p_C定义及Grassmann等式清晰；上版三条脚注和V22-GEO001均在版心内，未见叠印、缺字或裁切。"
+    },
+    {
+      "physical_page": 1074,
+      "image": "checks/visual_v22/geometry/main_1074.png",
+      "image_sha256": "9ab4bdd04a213b7dad4d013e9e8a528824087c2119ff1495c1cdac99bfc05b86",
+      "verdict": "pass",
+      "notes": "实际查看本页：商函子、闭浸入及Q(C)公式完整；页下关联图的q向左、p向下及目标Q(C)均清楚，旁边纤维积公式不挤压图形；V22-GEO002–005脚注完整可读。"
+    },
+    {
+      "physical_page": 1075,
+      "image": "checks/visual_v22/geometry/main_1075.png",
+      "image_sha256": "168ab22b0b4e4619e4cc675322e7ca6553f3c4deb7584e4f78d09cc03d2fd8b7",
+      "verdict": "pass",
+      "notes": "实际查看本页：q′开集同构、p′q′^{-1}及限制公式排印完整；扩展投影、泛中心段与无穷中心的m<r限制可读；英文编者注67与六条本页注分开显示，无公式越界。末段层记号自然续到次页。"
+    },
+    {
+      "physical_page": 1076,
+      "image": "checks/visual_v22/geometry/main_1076.png",
+      "image_sha256": "4aa6766961cd2d4c238ca2078a43f12ec7913a4210c249da4edd270ea15c7529",
+      "verdict": "pass",
+      "notes": "实际查看本页：层拉回及F同名提醒在页首接续，随后“粗略地说”正确进入纤维模块；波浪号、中心逆像、爆破同构及p_C目标均清楚；V22-GEO011与FIB001–004脚注完整，未见孤立脚注标号或图文覆盖。"
+    }
+  ],
+  "scope": "Only the individually rendered and actually displayed final-PDF pages listed here; no substitution of module previews and no whole-book human review claim.",
+  "binding_update": {
+    "updated_at_utc": "2026-11-26T01:27:43.692082+00:00",
+    "previous_pdf_sha256": "496ae494c805cbdd2ae645fd2ea8ff5e62c2fb62800ab23ebbc6199361df27b3",
+    "current_pdf_sha256": "bc4c27cc042e1e1e9ddef4b0152369d491876dc0e81fa357110025ea68d77504",
+    "reason": "Main PDF was recompiled after relocating unrelated DIF footnote markers. Each of physical pages 1073–1076 was re-rendered from the new final PDF and its full RGB pixels were compared with the image actually displayed and read earlier. All pixels are identical. The earlier actual image views are therefore reused; no new actual viewing is claimed.",
+    "comparisons": [
+      {
+        "physical_page": 1073,
+        "previously_viewed_image_sha256": "f86dc04dc77879cb0bd5ddeecf7857953b853d474021d6528251345723476df3",
+        "rgb_pixels_identical_to_new_final_pdf": true
+      },
+      {
+        "physical_page": 1074,
+        "previously_viewed_image_sha256": "9ab4bdd04a213b7dad4d013e9e8a528824087c2119ff1495c1cdac99bfc05b86",
+        "rgb_pixels_identical_to_new_final_pdf": true
+      },
+      {
+        "physical_page": 1075,
+        "previously_viewed_image_sha256": "168ab22b0b4e4619e4cc675322e7ca6553f3c4deb7584e4f78d09cc03d2fd8b7",
+        "rgb_pixels_identical_to_new_final_pdf": true
+      },
+      {
+        "physical_page": 1076,
+        "previously_viewed_image_sha256": "4aa6766961cd2d4c238ca2078a43f12ec7913a4210c249da4edd270ea15c7529",
+        "rgb_pixels_identical_to_new_final_pdf": true
+      }
+    ]
+  }
+}

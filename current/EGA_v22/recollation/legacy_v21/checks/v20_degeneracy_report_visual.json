@@ -1,0 +1,121 @@
+{
+  "reviewer": "/root/v20_degeneracy",
+  "checked_at_utc": "2026-11-25 15:11:54 UTC",
+  "method": "Rendered the specified physical pages directly from the final report.pdf with PyMuPDF at 2x (144 dpi), then opened every PNG with view_image. Text extraction was used only for metadata and to locate the wording; visual observations below come from the page images.",
+  "report_pdf": {
+    "path": "report.pdf",
+    "sha256": "e908b3cdae5673eafc94a853bd4586cce4b53d53b9e6a08c2b9d9cb74b2b8a38",
+    "physical_page_count": 431
+  },
+  "render": {
+    "library": "PyMuPDF",
+    "matrix": [
+      2,
+      2
+    ],
+    "dpi": 144,
+    "alpha": false,
+    "directory": "checks/rendered_report_degeneracy"
+  },
+  "pages": [
+    {
+      "physical_page": 41,
+      "printed_page": 23,
+      "image": "checks/rendered_report_degeneracy/report_041.png",
+      "sha256": "e36b12e4db94de10ae0b8304b490165d7e47705120bae032cd2d76674e3fd5a3",
+      "observations": [
+        "Chapter heading wraps cleanly onto two lines using the existing class layout.",
+        "Root's source-line break after French physical69–71 is visible; long source filenames fit within the body width.",
+        "Coverage table is fully visible with intact rules, readable source-page mapping and no clipped row.",
+        "The excluded continuation and V^1/V'' mapping in the introductory section render correctly."
+      ],
+      "result": "pass"
+    },
+    {
+      "physical_page": 43,
+      "printed_page": 25,
+      "image": "checks/rendered_report_degeneracy/report_043.png",
+      "sha256": "fb34cdd26c59ce65e11e55c04486530fc263e1c77181c95bf0355176e8b5e788",
+      "observations": [
+        "V20-D04's French à partir de8.6 and English except8.6 comparison is legible.",
+        "V20-D05 heading and long verdict wrap without collision.",
+        "Bundle and quotient formulas display D, A, Q, duals and twists correctly.",
+        "Bottom display q restricted to pi*A -> Q is complete and stays within the page area."
+      ],
+      "result": "pass"
+    },
+    {
+      "physical_page": 44,
+      "printed_page": 26,
+      "image": "checks/rendered_report_degeneracy/report_044.png",
+      "sha256": "aa2ab1e10d97640d5bb7140b413626d0fe047fe8b4963d27b2408cb835f7776d",
+      "observations": [
+        "Rank condition, cotangent presentation and Fitting index n-m+k-1 display correctly.",
+        "Both scheme-fiber formulas and their residue-field subscripts are legible and unclipped.",
+        "The excess-dimensional smooth-line example is complete.",
+        "Root's wording correction is visibly present: 在纤维具有预期余维m的局部完全交情形，Fitt_{n-m}正好给出…; 只有 and 才 have been removed."
+      ],
+      "result": "pass"
+    },
+    {
+      "physical_page": 46,
+      "printed_page": 28,
+      "image": "checks/rendered_report_degeneracy/report_046.png",
+      "sha256": "d77f0a95b040a3d8d7fd835a5b933775290dca649c2fd5bdb6b6ef9e463b7739",
+      "observations": [
+        "Block matrix [I_rho U; 0 W], matrix size and determinantal ideal identity are correctly aligned.",
+        "The exact-rank codimension formula k(n-m+k) and the lower-rank argument are legible.",
+        "Nonsmooth-support equality includes 1<=k<=K0, and the k=0 exclusion is visible.",
+        "The bottom 2x3 matrix and six-variable quotient ring fit on the display line without right-edge clipping."
+      ],
+      "result": "pass"
+    },
+    {
+      "physical_page": 47,
+      "printed_page": 29,
+      "image": "checks/rendered_report_degeneracy/report_047.png",
+      "sha256": "14fd395eccf7a69b51d028c1178e048f162ad288f4cea5034613db1904ad0fa2",
+      "observations": [
+        "The 2x3 example's Fitt_4, a^2 and a terms remain distinct; continuation from page46 is coherent.",
+        "V20-D09 heading and verdict are not stranded.",
+        "The three-term parameter count and its two simplification lines are aligned and fully visible.",
+        "Both nonemptiness inequalities, including 0<=k<=min(m,N-n), render correctly."
+      ],
+      "result": "pass"
+    },
+    {
+      "physical_page": 48,
+      "printed_page": 30,
+      "image": "checks/rendered_report_degeneracy/report_048.png",
+      "sha256": "77d190bd6e2990d8182b8bedca533599f412233114723a03e7aca24d8cac4901",
+      "observations": [
+        "Strict codimension increase n-m+2k+1>0 and dimension D_k are legible.",
+        "The two-line Grassmann dimension difference ends in (k-1)(n-m)+k^2 correctly.",
+        "The P^2 empty-stratum counterexample and k=0/empty-layer distinctions are readable.",
+        "V20-D10's k=2 estimate and final image-closure codimension line fit within the page margins."
+      ],
+      "result": "pass"
+    },
+    {
+      "physical_page": 49,
+      "printed_page": 31,
+      "image": "checks/rendered_report_degeneracy/report_049.png",
+      "sha256": "8606dbf3d0498aa5f4b12aaf26b75ba995b9d43a482d8443c787109904089145",
+      "observations": [
+        "Finite-type versus locally finite-type caveat and properness/image-closure distinction are visible.",
+        "V'', V^{(2)} and V^2 retain distinct typography in the limitation paragraph.",
+        "V20-D11's marginal/deleted-material record and legacy-note preservation ledger are complete and readable.",
+        "No footer collision, clipping or overflow is visible at the end of the module."
+      ],
+      "result": "pass"
+    }
+  ],
+  "issues_found": [],
+  "no_tex_changes": true,
+  "scope_limitations": [
+    "Only the seven listed physical pages were rendered and visually reviewed in this record; no claim is made that all431 report pages or every unassigned module page was viewed.",
+    "Main-PDF visual observations remain bound to the earlier main hash until root's final rebuild and pixel-identity verification."
+  ],
+  "sufficient_condition_wording_confirmed": true
+}
+

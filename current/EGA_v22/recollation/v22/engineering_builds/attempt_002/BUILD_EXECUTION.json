@@ -1,0 +1,24 @@
+{
+  "edition": 22,
+  "operation": "Targeted three-pass modular/main and standalone/book rebuild after two footnote-anchor moves",
+  "started_utc": "2026-11-26T01:25:09.394702+00:00",
+  "finished_utc": "2026-11-26T01:27:52.000725+00:00",
+  "elapsed_seconds": 162.606,
+  "exit_code": 0,
+  "command_file": "rebuild_book_only.sh",
+  "input_and_unrebuilt_report_changes": [],
+  "unchanged_report_artifacts": [
+    "report.pdf",
+    "report.log",
+    "report_single.tex",
+    "single_build/audit_single.tex",
+    "single_build/audit_single.pdf",
+    "single_build/audit_single.log"
+  ],
+  "final_artifact_sha256": {
+    "main.pdf": "bc4c27cc042e1e1e9ddef4b0152369d491876dc0e81fa357110025ea68d77504",
+    "single_build/book_single.pdf": "45e648d5ea7bf9beaeccc994ef555cf3b039c622c7a9e679a8f645897ef3715a",
+    "report.pdf": "4cced0b1907d27f0806a74d3ad525016bc002e191165674c5c687a2dd1a2b53c",
+    "single_build/audit_single.pdf": "0a149c736b1e057e0a8703f9d9005e9880e471a4492a5d4a731ea9cab09dc57c"
+  }
+}

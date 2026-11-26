@@ -1,0 +1,88 @@
+% Dot batch 75; source SHA-256: 8a989855f2cf2144b33e1d561e7df139a31405e52290cf82e918693b5035806f
+% Archived source: dot_updates_20261124/batches/batch075/EGA第五卷_多重射影丛与多次数除子.tex
+% Original body lines: 25--93; integration map: integration/late_integration.json
+\begingroup
+\def\newscope{V-L}
+\def\OO{\mathcal O}
+\def\LL{\mathcal L}
+\def\MM{\mathcal M}
+\def\EE{\mathcal E}
+\def\nn{\boldsymbol n}
+\def\Pic{\operatorname{Pic}}
+\def\Sym{\operatorname{Sym}}
+\def\Div{\operatorname{Div}}
+\egap{2.5}
+
+现在给定 \(S\) 上有限族局部自由模 \((\EE_i)_{i\in I}\)。令 \(P_i=\mathbf P(\EE_i)\)，令 \(P\) 为各 \(P_i\) 在 \(S\) 上的纤维积，又称由 \((\EE_i)\) 定义的 \(S\) 上的\emph{多重射影丛}。记 \(f:P\to S\) 为结构态射，\(q_i:P\to P_i\) 为投影。为简化记号，用 \(\OO_i(n)\) 表示 \(P_i\) 上可逆模 \(\OO_{P_i}(n)\) 到 \(P\) 的拉回。对每组整数 \(\nn=(n_i)_{i\in I}\in\mathbb Z^I\)，置
+\[
+ \OO_P(\nn)
+ =\bigotimes_{i\in I}\OO_i(n_i)
+ =\bigotimes_{i\in I}q_i^*\OO_{P_i}(n_i).
+\]
+于是定理1.1推广如下。\cmt{L18-075-01}{法稿仅标“2.5”，并非推论。原稿的最后一项把外部张量积简记为底上张量积；这里写明各因子先拉回到 \(P\)，再作张量积。}
+
+\egas{2.6}{命题}
+
+设各 \(\EE_i\) 处处秩至少为 \(2\)。对多重射影丛 \(P\) 上的任一可逆模 \(\LL\)，存在 \(S\) 的开分割
+\[
+ S=\coprod_{\nn\in\mathbb Z^I}S_{\nn}
+\]
+及 \(S\) 上的可逆模 \(\MM\)，使得在每个 \(P|_{S_{\nn}}:=P\times_S S_{\nn}\) 上，
+\[
+ \LL|_{P|_{S_{\nn}}}
+ \ \simeq\ 
+ \bigl(f^*\MM\otimes_{\OO_P}\OO_P(\nn)\bigr)|_{P|_{S_{\nn}}}.
+\]
+而且，各 \(S_{\nn}\) 唯一确定；附有所给分解时，\(\MM\) 在唯一相容同构的意义下确定。\cmt{L18-075-02}{法物理122页与英物理94页都先引入 \(\MM\)，但在同构右边只写 \(\OO_P(\nn)\) 的限制，漏掉 \(f^*\MM\)。2.8和2.9再度使用这个因子。本版核查报告 L18-075 给出反例和迭代证明。}
+
+\egap{2.7}
+
+证明直接归结为定理1.1。\cmt{L18-075-03}{按法物理122页左侧手写的“2.7”恢复编号。英稿未录该编号，但译出了这一段。}
+在2.6的条件下，可以为 \(P\) 上的每个可逆模 \(\LL\) 指派一个\emph{多次数}
+\(\nn=(n_i)_{i\in I}\in\mathbb Z(S)^I\)，其中 \(\mathbb Z(S)\) 是 \(S\) 上的局部常值整数函数群。若 \(\Pic(S)=0\)，这个多次数确定 \(\LL\) 的同构类。
+
+第 \(i\) 个分量 \(n_i\) 称为 \(\LL\) 相对于因子 \(P_i\) 的\emph{部分次数}，还可以这样理解：对每个 \(i\) 选定 \(P_i\) 在 \(S\) 上的一个截面 \(g_i\)（至少在 \(S\) 的局部总存在这样的截面），用 \(P_i\) 自身的坐标和其他因子的截面构成
+\(h_i:P_i\to P\)。
+这时
+\[
+ n_i=\deg h_i^*\LL.
+\]
+应注意，一般而言 \(n_i\) 不是一个整数，而是 \(S\) 到 \(\mathbb Z\) 的局部常值函数。\cmt{L18-075-04}{用局部截面时，此式在相应的底开集上读取，不要求全局有截面。手稿说 \(\Pic(S)=0\) 时“至同构”；这里明确为确定同构类，而不声称线丛的任意自同构都平凡。}
+
+仿照第1小节，由2.6可以确定一个多重射影丛到另一个多重射影丛的态射，特别是一个多重射影丛的自同构。考虑到第25节关于多项式形式的结式和判别式的讨论，对我们更有意义的，是确定多重射影丛上的有效相对除子。
+
+\egap{2.8}
+
+若 \(D\) 是 \(P\) 上的相对除子，就把 \(\OO_P(D)\) 的多次数定义为 \(D\) 的多次数。与上文一样，确定 \(\Div^+(P/S)\) 归结为确定给定多次数 \(\nn\in\mathbb N^I\) 的 \(\Div^{\nn}(P/S)\)。此时有同构
+\[
+ \LL=\OO_P(D)\simeq f^*\MM\otimes_{\OO_P}\OO_P(\nn).
+\]
+再由第二章第2节得到\cmt{L18-075-05}{法、英两稿在左端都印作 \(f_*(D)\)，但 \(D\) 是除子，右端按投影公式对应的是 \(f_*\OO_P(D)=f_*\LL\)。法稿给出 \(\nn\in\mathbb N^I\)；英稿在2.8误写为 \(n\in I\)。}
+\[
+ (**)\qquad
+ f_*\LL\simeq\MM\otimes_{\OO_S} f_*\OO_P(\nn)
+       \simeq\MM\otimes_{\OO_S}
+                \bigotimes_{i\in I}\Sym^{n_i}(\EE_i).
+\]
+仿照2.2便得到：
+
+\egas{2.9}{命题}
+
+沿用以上记号。\(P\) 上多次数为 \(\nn\) 的有效相对除子集合 \(\Div^{\nn}(P/S)\)，与
+\[
+ \left(\bigotimes_{i\in I}\Sym^{n_i}(\EE_i)\right)^\vee
+\]
+的可逆商模 \(\MM\) 的集合，有一个典范的一一对应。等价地，可取其对偶模中的可逆子模，要求它局部为直和因子。若 \(D\) 和 \(\MM\) 对应，则
+\(\OO_P(D)\simeq f^*\MM\otimes\OO_P(\nn)\)
+是典范的；其标准截面 \(s_D\) 由商映射的对偶经 \((**)\) 确定。\cmt{L18-075-06}{保留2.2的商映射相容同构约定。手稿将各对称幂的对偶置于张量积内部；各因子有限局部自由，故也可写为整个张量积的对偶。}
+
+\egas{2.10}{推论}
+
+\(\Div^+_{P/S}\) 中对应于多次数 \(\nn\) 的子函子 \(\Div^{\nn}_{P/S}\)，典范地由射影丛
+\[
+ \mathbf P\left(
+ \left(\bigotimes_{i\in I}\Sym^{n_i}(\EE_i)\right)^\vee
+ \right)
+\]
+表示。全体有效相对除子函子 \(\Div^+_{P/S}\) 则由这些射影丛在 \(S\) 上的不交和典范地表示，其中指标为 \(\nn\in\mathbb N^I\)。这里 \(\mathbb N\) 包括 \(0\)。
+\par\endgroup

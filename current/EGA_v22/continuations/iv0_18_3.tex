@@ -1,0 +1,215 @@
+% Source: EGAIV.1.pdf, PDF pp.58--63; printed pp.59--64.
+\subsection{\texorpdfstring{$A$}{A}-扩张类的群}
+\source{EGA IV第一部分，印刷第59--64页；上传PDF第58--63页}
+\egap{18.3.1}
+固定一个 $A$-环 $B$ 和一个 $B$-双模 $L$。在 $B$ 的以 $L$ 为核的 $A$-扩张之间，“$E$ 与 $E'$ $A$-等价”是一个等价关系；对于这一关系，可以谈论 $B$ 的以 $L$ 为核的 $A$-扩张的等价类\emph{集合}。
+
+只须注意：对每个 $x\in B$，若选取 $E$ 中映到 $x$ 的一个元素 $c_x$，则每个 $z\in E$ 都恰有一种写法 $c_x+t$，其中 $t\in L$。而且可写
+\[
+ c_x+c_y=c_{x+y}+\varphi(x,y),\qquad
+ c_{xy}=c_xc_y+\psi(x,y),
+\]
+其中 $\varphi(x,y),\psi(x,y)\in L$。映射 $\varphi,\psi:B\times B\to L$ 必须满足一些表达 $E$ 为 $A$-环的条件，这里无须把这些条件写出。因此，每个这样的 $A$-扩张都与一个以 $B\times L$ 为底层集合的 $A$-扩张 $A$-等价，所说的结论随即得到。
+
+\egap{18.3.2}
+固定 $A$-环 $B$，暂将 $B$ 的以 $L$ 为核的 $A$-扩张类集合记为 $T(L)$。对每个 $B$-双模同态 $w:L\to L'$，将扩张 $E$ 的类对应于（18.2.8）中借助 $w$ 导出的扩张 $E\oplus_LL'$ 的类，便典范地定义了映射
+\[
+ T(w):T(L)\longrightarrow T(L').
+\]
+若 $w':L'\to L''$ 是另一个 $B$-双模同态，则还有
+\begin{equation}
+ T(w'\circ w)=T(w')\circ T(w).
+ \tag{18.3.2.1}
+\end{equation}
+事实上，由归纳极限的一般性质（例如参见I，3.3.9），有 $A$-双模的典范同构
+\[
+ E\oplus_LL''\simeq (E\oplus_LL')\oplus_{L'}L''.
+\]
+直接验证可知，这确实是 $A$-扩张的 $A$-等价，故得到（18.3.2.1）。若 $\mathbf C_B$ 表示 $B$-双模范畴，则这样就定义了一个协变函子 $T:\mathbf C_B\to\mathbf{Ens}$。
+
+\egap{18.3.3}
+考虑一族 $B$-双模 $(L_\alpha)_{\alpha\in I}$ 及其乘积 $L=\prod_\alpha L_\alpha$。投影 $\operatorname{pr}_\alpha:L\to L_\alpha$ 定义映射 $T(\operatorname{pr}_\alpha):T(L)\to T(L_\alpha)$，因而得到典范映射
+\begin{equation}
+ \prod_\alpha T(\operatorname{pr}_\alpha):
+ T(L)\longrightarrow\prod_{\alpha\in I}T(L_\alpha).
+ \tag{18.3.3.1}
+\end{equation}
+我们说明它是双射。对每个 $\alpha\in I$，设 $E_\alpha$ 是 $B$ 的以 $L_\alpha$ 为核的一个 $A$-扩张，并令 $F$ 是各 $E_\alpha$ 在 $B$ 上的纤维积（18.1.3）。则 $F$ 是 $B$ 的以 $L=\prod_\alpha L_\alpha$ 为核的一个 $A$-扩张。若将每个 $E_\alpha$ 换成与之 $A$-等价的 $E'_\alpha$，则所得纤维积 $F'$ 与 $F$ $A$-等价。这样定义了一个映射 $\prod_\alpha T(L_\alpha)\to T(L)$；它与（18.3.3.1）互逆，故断言成立。
+
+以后通过（18.3.3.1）典范地将 $T(L)$ 与 $\prod_
+\alpha T(L_\alpha)$ 等同。若 $(L'_\alpha)_{\alpha\in I}$ 是另一族 $B$-双模，对每个 $\alpha$ 给定 $B$-双模同态 $w_\alpha:L_\alpha\to L'_\alpha$，并置 $w=\prod_\alpha w_\alpha:L\to L'=\prod_\alpha L'_\alpha$，则在上述识别下，$T(w)$ 与 $\prod_\alpha T(w_\alpha)$ 等同。
+
+\egap{18.3.4}
+对于一个 $B$-双模 $L$，加法是一个 $B$-双模同态 $s:L\times L\to L$；加法群的取负映射 $t:L\to L$ 也是如此。由（18.3.3），得到 $T(L)$ 上的合成律
+\[
+ T(s):T(L)\times T(L)\longrightarrow T(L).
+\]
+此合成律是交换群的群律，取逆映射为 $T(t)$；这由借助交换图定义群对象的方式得到（$0_{\mathrm{III}}$，8.2.5、8.2.6）。将所得交换群记为 $\Exan_A(B,L)$，称为\emph{$B$ 的以 $L$ 为核的 $A$-扩张类群}。
+
+\egap{18.3.5}
+令 $\mathbf K$ 为如下范畴。对象是三元组 $(A,B,L)$，其中 $A$ 是环，$B$ 是 $A$-环，$L$ 是 $B$-双模。态射是三元组 $(u,v,w)$，其中 $u:A'\to A$、$v:B'\to B$ 是环同态，使下图左侧的正方形交换：
+\[
+\begin{tikzcd}[column sep=large]
+ A\arrow[r]&B&L\arrow[d,"w"]\\
+ A'\arrow[u,"u"]\arrow[r]&B'\arrow[u,"v"]&L'.
+\end{tikzcd}
+\]
+其中横箭头为结构同态；$w:L\to L'$ 是交换群同态，满足对所有 $z\in L,b'\in B'$ 有
+\[
+ w(v(b')z)=b'w(z),\qquad w(zv(b'))=w(z)b'.
+\]
+换言之，通过 $v$ 在 $L$ 上赋予 $B'$-双模结构后，$w$ 是 $B'$-双模同态。态射的合成定义为
+\[
+ (u',v',w')\circ(u,v,w)=(u\circ u',v\circ v',w'\circ w),
+\]
+其合理性可立即验证。我们的目的是证明
+\begin{equation}
+ (A,B,L)\longmapsto\Exan_A(B,L)
+ \tag{18.3.5.1}
+\end{equation}
+是从 $\mathbf K$ 到交换群范畴 $\mathbf{Ab}$ 的一个协变函子。因此，对每个上述三元组 $(u,v,w)$，需要定义一个交换群同态
+\[
+ (u,v,w)_*:\Exan_A(B,L)\longrightarrow\Exan_{A'}(B',L').
+\]
+由 $\mathbf K$ 中态射的定义，可写
+\[
+ (u,v,w)=(1_{A'},1_{B'},w)\circ(1_{A'},v,1_L)\circ(u,1_B,1_L),
+\]
+其中第一个因子里的 $L$ 具有由 $v$ 定义的 $B'$-双模结构。我们先在 $u,v,w$ 中有两个为恒等同态时定义 $(u,v,w)_*$。
+
+\egap{18.3.6}
+首先，取 $(1_A,1_B,w)_*$ 为（18.3.2）中记作 $T(w)$ 的映射
+\begin{equation}
+ w_*:\Exan_A(B,L)\longrightarrow\Exan_A(B,L').
+ \tag{18.3.6.1}
+\end{equation}
+它是群同态：这一性质可以用交换图表示，而这些图正是 $L,L'$ 上相应交换图经 $T$ 所得的像。
+
+取 $(1_A,v,1_L)_*$ 为如下映射
+\begin{equation}
+ v^*:\Exan_A(B,L)\longrightarrow\Exan_A(B',L).
+ \tag{18.3.6.2}
+\end{equation}
+若 $E$ 是 $B$ 的以 $L$ 为核的一个 $A$-扩张，由（18.2.5），$E\times_BB'$ 是 $B'$ 的以 $L$ 为核的一个 $A$-扩张；若以 $A$-等价的 $E'$ 替换 $E$，则 $E'\times_BB'$ 与 $E\times_BB'$ $A$-等价。定义 $v^*$ 将 $E$ 的类映到 $E\times_BB'$ 的类。对每个 $B$-双模同态 $w:L\to L'$，直接验证下图交换：
+\begin{equation}
+\begin{tikzcd}[column sep=large,row sep=large]
+\Exan_A(B,L)\arrow[r,"v^*"]\arrow[d,"w_*"']&
+\Exan_A(B',L)\arrow[d,"w_*"]\\
+\Exan_A(B,L')\arrow[r,"v^*"']&\Exan_A(B',L').
+\end{tikzcd}
+\tag{18.3.6.3}
+\end{equation}
+在右列中，通过 $v$ 把 $L,L'$ 看作 $B'$-双模。分别以 $L\times L,L$ 代替 $L,L'$，以加法 $s$ 代替 $w$，便得到 $v^*$ 确实是群同态。
+
+最后，取 $(u,1_B,1_L)_*$ 为映射
+\begin{equation}
+ u^*:\Exan_A(B,L)\longrightarrow\Exan_{A'}(B,L).
+ \tag{18.3.6.4}
+\end{equation}
+它将 $B$ 的一个以 $L$ 为核的 $A$-扩张 $E$ 对应于经 $u$ 看作 $A'$-环的同一个环 $E$（18.1.1）；这显然是 $B$ 的以 $L$ 为核的一个 $A'$-扩张，其中 $B$ 也经 $u$ 看作 $A'$-环。$A$-等价也是 $A'$-等价，故得到（18.3.6.4）。对每个 $B$-双模同态 $w:L\to L'$，它仍使下图交换：
+\begin{equation}
+\begin{tikzcd}[column sep=large,row sep=large]
+\Exan_A(B,L)\arrow[r,"u^*"]\arrow[d,"w_*"']&
+\Exan_{A'}(B,L)\arrow[d,"w_*"]\\
+\Exan_A(B,L')\arrow[r,"u^*"']&\Exan_{A'}(B,L').
+\end{tikzcd}
+\tag{18.3.6.5}
+\end{equation}
+因此仍可如上推出 $u^*$ 为群同态。
+
+现在置
+\[
+ (u,v,w)_*=(1_{A'},1_{B'},w)_*\circ(1_{A'},v,1_L)_*\circ(u,1_B,1_L)_*.
+\]
+利用（18.3.6.3）、（18.3.6.5）的交换性，容易验证
+\[
+ (u\circ u',v\circ v',w'\circ w)_*=(u',v',w')_*\circ(u,v,w)_*,
+\]
+这就证明（18.3.5.1）是函子。
+\cmt{E5-T05}{原版此处回指（18.3.4.1），但该编号未出现；所指的函子式为（18.3.5.1），本处明确据此前式订正。}
+
+群同态（18.3.6.1）的存在特别表明：若 $E$ 是 $B$ 的以 $L$ 为核的平凡 $A$-扩张，那么（18.2.8）中所定义的 $E\oplus_LL'$ 也平凡；当然，这一点也易于直接验证。
+
+另一方面，对于 $B$ 的中心 $Z$ 中每个元素 $z$，数乘
+\[
+ h_z:y\longmapsto yz=zy
+\]
+是 $B$-双模 $L$ 的自同态，故 $(h_z)_*$ 是交换群 $\Exan_A(B,L)$ 的自同态；由函子性，这些自同态在 $\Exan_A(B,L)$ 上定义一个典范的 $Z$-模结构。
+\cmt{E5-H02}{这里忠实保留原文的 $yz=zy$。对通常意义下的任意 $B$-双模，这个等式不由 $z\in Z(B)$ 推出：左右中心作用仍可能不同。若将“双模”约定为中心作用对称，则该句成立；否则须区分左、右作用，再另行论证它们在扩张类群上的关系。报告给出扭曲双模的直接检验例，但不据此否定可另行构造的中心作用。}
+
+\egap{18.3.7}
+设 $A,A'$ 为两个环，$u:A'\to A$ 为同态，$B$ 为 $A$-环，$L$ 为 $B$-双模。群同态
+\[
+ u^*:\Exan_A(B,L)\longrightarrow\Exan_{A'}(B,L)
+\]
+的核，按定义由那些经 $u$ 看作 $A'$-扩张后为 $A'$-平凡的 $A$-扩张类组成。不致混淆时，将这个核记为 $\Exan_{A/A'}(B,L)$。
+
+若 $\Lambda$ 是一个环，并给定 $\Lambda$-环的 $\Lambda$-同态交换图
+\begin{equation}
+\begin{tikzcd}[column sep=large]
+ B'\arrow[r]&B\\
+ A'\arrow[r]\arrow[u]&A\arrow[u],
+\end{tikzcd}
+\tag{18.3.7.1}
+\end{equation}
+则可典范地导出同态
+\begin{equation}
+ \Exan_{A/\Lambda}(B,L)\longrightarrow
+ \Exan_{A'/\Lambda}(B,L)\longrightarrow
+ \Exan_{A'/\Lambda}(B',L).
+ \tag{18.3.7.2}
+\end{equation}
+它们来自下图的交换性：
+\[
+\begin{tikzcd}[column sep=1.3em,row sep=large]
+\Exan_A(B,L)\arrow[r]\arrow[d]&\Exan_{A'}(B,L)\arrow[r]\arrow[d]&
+\Exan_{A'}(B',L)\arrow[d]\\
+\Exan_\Lambda(B,L)\arrow[r,equal]&\Exan_\Lambda(B,L)\arrow[r]&
+\Exan_\Lambda(B',L),
+\end{tikzcd}
+\]
+其中各箭头通过函子性由（18.3.7.1）中的箭头导出。
+
+\egas{18.3.8}{命题}
+设 $B$ 是一个环，$\mathfrak j$ 是其双边理想，$C=B/\mathfrak j$ 为商环；这时 $\mathfrak j/\mathfrak j^2$ 典范地具有 $C$-双模结构。对每个 $C$-双模 $L$，令 $\Hom_C(\mathfrak j/\mathfrak j^2,L)$ 表示 $C$-双模同态的加法群。将 $C$-双模同态 $w:\mathfrak j/\mathfrak j^2\to L$（它当然也是 $B$-同态）对应于由扩张 $B/\mathfrak j^2$ 借助 $w$ 导出的扩张
+\[
+ (B/\mathfrak j^2)\oplus_{\mathfrak j/\mathfrak j^2}L
+\]
+的类，便定义了交换群的一个典范同构
+\begin{equation}
+ \eta_L:\Hom_C(\mathfrak j/\mathfrak j^2,L)
+ \xrightarrow{\sim}\Exan_B(C,L).
+ \tag{18.3.8.1}
+\end{equation}
+其逆同构将 $C$ 的以 $L$ 为核的 $B$-扩张 $E$ 的类对应于同态 $w$；这里 $w$ 由如下条件确定：复合 $\mathfrak j\to\mathfrak j/\mathfrak j^2\xrightarrow{w}L$ 是结构同态 $B\to E$ 在 $\mathfrak j$ 上的限制。
+\begin{proof}
+令 $F=B/\mathfrak j^2$，它是 $C$ 的以 $\mathfrak j/\mathfrak j^2$ 为核的一个 $B$-扩张。对任意 $B$-扩张 $0\to L\xrightarrow{j}E\xrightarrow{p}C\to0$，结构同态 $f:B\to E$ 满足 $p\circ f:B\to C$ 为典范商同态。因为 $p\circ f$ 将 $\mathfrak j$ 映为零，$f(\mathfrak j)$ 包含在 $\Ker p=j(L)$ 中；而 $j(L)$ 平方为零，所以 $f(\mathfrak j^2)=0$。故 $f$ 分解为
+\[
+ B\longrightarrow B/\mathfrak j^2=F\xrightarrow{u}E.
+\]
+若 $w$ 是 $u$ 在 $\mathfrak j/\mathfrak j^2$ 上的限制，则有交换图
+\[
+\begin{tikzcd}[column sep=1.7em]
+0\arrow[r]&\mathfrak j/\mathfrak j^2\arrow[r]\arrow[d,"w"']&F\arrow[r]\arrow[d,"u"]&C\arrow[r]\arrow[d,equal]&0\\
+0\arrow[r]&L\arrow[r,"j"']&E\arrow[r,"p"']&C\arrow[r]&0.
+\end{tikzcd}
+\]
+换言之，$(u,1_C,w)$ 是扩张态射（18.2.4）。由此导出扩张态射
+\[
+\begin{tikzcd}[column sep=1.8em]
+0\arrow[r]&L\arrow[r]\arrow[d,equal]&E'\arrow[r]\arrow[d,"u'"]&C\arrow[r]\arrow[d,equal]&0\\
+0\arrow[r]&L\arrow[r,"j"']&E\arrow[r,"p"']&C\arrow[r]&0,
+\end{tikzcd}
+\]
+其中 $E'=F\oplus_{\mathfrak j/\mathfrak j^2}L$（18.2.8）。须证明 $u'$ 是 $B$-等价，这就证明 $\eta_L$ 双射。由（18.2.8）的构造，并考虑（18.1.7），只须证明扩张 $E$ 沿典范同态 $g:F\to C$ 的逆像 $G$ 是 $F$-平凡的。因为 $g$ 分解为 $F\xrightarrow{u}E\xrightarrow{p}C$，这由（18.1.6）得到。
+
+还须证明 $\eta_L$ 为群同态。对每个 $B$-同态 $h:L\to L'$，下图直接由定义交换：
+\[
+\begin{tikzcd}[column sep=large,row sep=large]
+\Hom_C(\mathfrak j/\mathfrak j^2,L)\arrow[r,"\eta_L"]\arrow[d,"{\Hom(1,h)}"']&
+\Exan_B(C,L)\arrow[d,"h_*"]\\
+\Hom_C(\mathfrak j/\mathfrak j^2,L')\arrow[r,"\eta_{L'}"']&\Exan_B(C,L').
+\end{tikzcd}
+\]
+将此用于定义加法的同态 $L\times L\to L$ 即得结论。
+\end{proof}
